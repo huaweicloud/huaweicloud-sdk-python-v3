@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class GslAsyncClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(GslAsyncClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkgsl.v3.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -54,14 +36,10 @@ class GslAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgsl.v3.ListBackPoolMembersRequest`
         :rtype: :class:`huaweicloudsdkgsl.v3.ListBackPoolMembersResponse`
         """
-        return self.list_back_pool_members_with_http_info(request)
+        return self._list_back_pool_members_with_http_info(request)
 
-    def list_back_pool_members_with_http_info(self, request):
-        all_params = ['back_pool_id', 'billing_cycle', 'cid', 'limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_back_pool_members_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -123,14 +101,10 @@ class GslAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgsl.v3.ListBackPoolsRequest`
         :rtype: :class:`huaweicloudsdkgsl.v3.ListBackPoolsResponse`
         """
-        return self.list_back_pools_with_http_info(request)
+        return self._list_back_pools_with_http_info(request)
 
-    def list_back_pools_with_http_info(self, request):
-        all_params = ['pool_name', 'limit', 'offset', 'billing_cycle', 'all_billing_cycle']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_back_pools_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -192,14 +166,10 @@ class GslAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgsl.v3.ListProPricePlansRequest`
         :rtype: :class:`huaweicloudsdkgsl.v3.ListProPricePlansResponse`
         """
-        return self.list_pro_price_plans_with_http_info(request)
+        return self._list_pro_price_plans_with_http_info(request)
 
-    def list_pro_price_plans_with_http_info(self, request):
-        all_params = ['limit', 'offset', 'main_search_key', 'flow_total', 'network_type', 'location_type', 'carrier_type', 'country_type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_pro_price_plans_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -267,14 +237,10 @@ class GslAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgsl.v3.BatchSetAttributesRequest`
         :rtype: :class:`huaweicloudsdkgsl.v3.BatchSetAttributesResponse`
         """
-        return self.batch_set_attributes_with_http_info(request)
+        return self._batch_set_attributes_with_http_info(request)
 
-    def batch_set_attributes_with_http_info(self, request):
-        all_params = ['batch_set_attributes_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_set_attributes_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -328,14 +294,10 @@ class GslAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgsl.v3.CreateAttributeRequest`
         :rtype: :class:`huaweicloudsdkgsl.v3.CreateAttributeResponse`
         """
-        return self.create_attribute_with_http_info(request)
+        return self._create_attribute_with_http_info(request)
 
-    def create_attribute_with_http_info(self, request):
-        all_params = ['create_attribute_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_attribute_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -389,14 +351,10 @@ class GslAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgsl.v3.DisableAttributeRequest`
         :rtype: :class:`huaweicloudsdkgsl.v3.DisableAttributeResponse`
         """
-        return self.disable_attribute_with_http_info(request)
+        return self._disable_attribute_with_http_info(request)
 
-    def disable_attribute_with_http_info(self, request):
-        all_params = ['attribute_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _disable_attribute_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -450,14 +408,10 @@ class GslAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgsl.v3.EnableAttributeRequest`
         :rtype: :class:`huaweicloudsdkgsl.v3.EnableAttributeResponse`
         """
-        return self.enable_attribute_with_http_info(request)
+        return self._enable_attribute_with_http_info(request)
 
-    def enable_attribute_with_http_info(self, request):
-        all_params = ['attribute_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _enable_attribute_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -511,14 +465,10 @@ class GslAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgsl.v3.ListAttributesRequest`
         :rtype: :class:`huaweicloudsdkgsl.v3.ListAttributesResponse`
         """
-        return self.list_attributes_with_http_info(request)
+        return self._list_attributes_with_http_info(request)
 
-    def list_attributes_with_http_info(self, request):
-        all_params = ['cust_attr_name', 'limit', 'offset', 'status']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_attributes_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -578,14 +528,10 @@ class GslAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgsl.v3.UpdateAttributeRequest`
         :rtype: :class:`huaweicloudsdkgsl.v3.UpdateAttributeResponse`
         """
-        return self.update_attribute_with_http_info(request)
+        return self._update_attribute_with_http_info(request)
 
-    def update_attribute_with_http_info(self, request):
-        all_params = ['attribute_id', 'update_attribute_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_attribute_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -641,14 +587,10 @@ class GslAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgsl.v3.DeleteRealNameRequest`
         :rtype: :class:`huaweicloudsdkgsl.v3.DeleteRealNameResponse`
         """
-        return self.delete_real_name_with_http_info(request)
+        return self._delete_real_name_with_http_info(request)
 
-    def delete_real_name_with_http_info(self, request):
-        all_params = ['sim_card_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_real_name_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -702,14 +644,10 @@ class GslAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgsl.v3.EnableSimCardRequest`
         :rtype: :class:`huaweicloudsdkgsl.v3.EnableSimCardResponse`
         """
-        return self.enable_sim_card_with_http_info(request)
+        return self._enable_sim_card_with_http_info(request)
 
-    def enable_sim_card_with_http_info(self, request):
-        all_params = ['sim_card_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _enable_sim_card_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -763,14 +701,10 @@ class GslAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgsl.v3.ListSimCardsRequest`
         :rtype: :class:`huaweicloudsdkgsl.v3.ListSimCardsResponse`
         """
-        return self.list_sim_cards_with_http_info(request)
+        return self._list_sim_cards_with_http_info(request)
 
-    def list_sim_cards_with_http_info(self, request):
-        all_params = ['main_search_type', 'main_search_key', 'limit', 'offset', 'sim_status', 'device_status', 'tag_id', 'sim_type', 'order', 'sort', 'msisdn', 'customer_attribute1', 'customer_attribute2', 'customer_attribute3', 'customer_attribute4', 'customer_attribute5', 'customer_attribute6', 'min_used_flow', 'max_used_flow', 'min_left_flow', 'max_left_flow', 'real_named', 'order_id', 'filter_downtime_period', 'order_ids', 'price_plan_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_sim_cards_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -877,14 +811,10 @@ class GslAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgsl.v3.RegisterImeiRequest`
         :rtype: :class:`huaweicloudsdkgsl.v3.RegisterImeiResponse`
         """
-        return self.register_imei_with_http_info(request)
+        return self._register_imei_with_http_info(request)
 
-    def register_imei_with_http_info(self, request):
-        all_params = ['sim_card_id', 'register_imei_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _register_imei_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -940,14 +870,10 @@ class GslAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgsl.v3.ResetSimCardRequest`
         :rtype: :class:`huaweicloudsdkgsl.v3.ResetSimCardResponse`
         """
-        return self.reset_sim_card_with_http_info(request)
+        return self._reset_sim_card_with_http_info(request)
 
-    def reset_sim_card_with_http_info(self, request):
-        all_params = ['sim_card_id', 'reset_sim_card_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _reset_sim_card_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1003,14 +929,10 @@ class GslAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgsl.v3.SetExceedCutNetRequest`
         :rtype: :class:`huaweicloudsdkgsl.v3.SetExceedCutNetResponse`
         """
-        return self.set_exceed_cut_net_with_http_info(request)
+        return self._set_exceed_cut_net_with_http_info(request)
 
-    def set_exceed_cut_net_with_http_info(self, request):
-        all_params = ['sim_card_id', 'set_exceed_cut_net_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _set_exceed_cut_net_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1066,14 +988,10 @@ class GslAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgsl.v3.SetSpeedValueRequest`
         :rtype: :class:`huaweicloudsdkgsl.v3.SetSpeedValueResponse`
         """
-        return self.set_speed_value_with_http_info(request)
+        return self._set_speed_value_with_http_info(request)
 
-    def set_speed_value_with_http_info(self, request):
-        all_params = ['sim_card_id', 'set_speed_value_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _set_speed_value_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1129,14 +1047,10 @@ class GslAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgsl.v3.ShowMonthUsagesRequest`
         :rtype: :class:`huaweicloudsdkgsl.v3.ShowMonthUsagesResponse`
         """
-        return self.show_month_usages_with_http_info(request)
+        return self._show_month_usages_with_http_info(request)
 
-    def show_month_usages_with_http_info(self, request):
-        all_params = ['show_month_usages_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_month_usages_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1190,14 +1104,10 @@ class GslAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgsl.v3.ShowRealNamedRequest`
         :rtype: :class:`huaweicloudsdkgsl.v3.ShowRealNamedResponse`
         """
-        return self.show_real_named_with_http_info(request)
+        return self._show_real_named_with_http_info(request)
 
-    def show_real_named_with_http_info(self, request):
-        all_params = ['sim_card_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_real_named_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1251,14 +1161,10 @@ class GslAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgsl.v3.ShowSimCardRequest`
         :rtype: :class:`huaweicloudsdkgsl.v3.ShowSimCardResponse`
         """
-        return self.show_sim_card_with_http_info(request)
+        return self._show_sim_card_with_http_info(request)
 
-    def show_sim_card_with_http_info(self, request):
-        all_params = ['sim_card_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_sim_card_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1312,14 +1218,10 @@ class GslAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgsl.v3.StartStopNetRequest`
         :rtype: :class:`huaweicloudsdkgsl.v3.StartStopNetResponse`
         """
-        return self.start_stop_net_with_http_info(request)
+        return self._start_stop_net_with_http_info(request)
 
-    def start_stop_net_with_http_info(self, request):
-        all_params = ['sim_card_id', 'start_stop_net_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _start_stop_net_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1375,14 +1277,10 @@ class GslAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgsl.v3.StopSimCardRequest`
         :rtype: :class:`huaweicloudsdkgsl.v3.StopSimCardResponse`
         """
-        return self.stop_sim_card_with_http_info(request)
+        return self._stop_sim_card_with_http_info(request)
 
-    def stop_sim_card_with_http_info(self, request):
-        all_params = ['sim_card_id', 'stop_sim_card_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _stop_sim_card_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1438,14 +1336,10 @@ class GslAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgsl.v3.ListSimPoolMembersRequest`
         :rtype: :class:`huaweicloudsdkgsl.v3.ListSimPoolMembersResponse`
         """
-        return self.list_sim_pool_members_with_http_info(request)
+        return self._list_sim_pool_members_with_http_info(request)
 
-    def list_sim_pool_members_with_http_info(self, request):
-        all_params = ['sim_pool_id', 'billing_cycle', 'cid', 'limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_sim_pool_members_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1507,14 +1401,10 @@ class GslAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgsl.v3.ListSimPoolsRequest`
         :rtype: :class:`huaweicloudsdkgsl.v3.ListSimPoolsResponse`
         """
-        return self.list_sim_pools_with_http_info(request)
+        return self._list_sim_pools_with_http_info(request)
 
-    def list_sim_pools_with_http_info(self, request):
-        all_params = ['pool_name', 'limit', 'offset', 'billing_cycle', 'all_billing_cycle']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_sim_pools_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1576,14 +1466,10 @@ class GslAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgsl.v3.ListFlowBySimCardsRequest`
         :rtype: :class:`huaweicloudsdkgsl.v3.ListFlowBySimCardsResponse`
         """
-        return self.list_flow_by_sim_cards_with_http_info(request)
+        return self._list_flow_by_sim_cards_with_http_info(request)
 
-    def list_flow_by_sim_cards_with_http_info(self, request):
-        all_params = ['list_flow_by_sim_cards_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_flow_by_sim_cards_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1637,14 +1523,10 @@ class GslAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgsl.v3.ListSimPricePlansRequest`
         :rtype: :class:`huaweicloudsdkgsl.v3.ListSimPricePlansResponse`
         """
-        return self.list_sim_price_plans_with_http_info(request)
+        return self._list_sim_price_plans_with_http_info(request)
 
-    def list_sim_price_plans_with_http_info(self, request):
-        all_params = ['sim_card_id', 'real_time', 'limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_sim_price_plans_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1704,14 +1586,10 @@ class GslAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgsl.v3.BatchSetTagsRequest`
         :rtype: :class:`huaweicloudsdkgsl.v3.BatchSetTagsResponse`
         """
-        return self.batch_set_tags_with_http_info(request)
+        return self._batch_set_tags_with_http_info(request)
 
-    def batch_set_tags_with_http_info(self, request):
-        all_params = ['batch_set_tags_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_set_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1765,14 +1643,10 @@ class GslAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgsl.v3.CreateTagRequest`
         :rtype: :class:`huaweicloudsdkgsl.v3.CreateTagResponse`
         """
-        return self.create_tag_with_http_info(request)
+        return self._create_tag_with_http_info(request)
 
-    def create_tag_with_http_info(self, request):
-        all_params = ['create_tag_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_tag_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1826,14 +1700,10 @@ class GslAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgsl.v3.DeleteTagRequest`
         :rtype: :class:`huaweicloudsdkgsl.v3.DeleteTagResponse`
         """
-        return self.delete_tag_with_http_info(request)
+        return self._delete_tag_with_http_info(request)
 
-    def delete_tag_with_http_info(self, request):
-        all_params = ['tag_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_tag_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1887,14 +1757,10 @@ class GslAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgsl.v3.ListTagsRequest`
         :rtype: :class:`huaweicloudsdkgsl.v3.ListTagsResponse`
         """
-        return self.list_tags_with_http_info(request)
+        return self._list_tags_with_http_info(request)
 
-    def list_tags_with_http_info(self, request):
-        all_params = ['tag_name', 'limit', 'offset', 'status']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1954,14 +1820,10 @@ class GslAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgsl.v3.ListSmsDetailsRequest`
         :rtype: :class:`huaweicloudsdkgsl.v3.ListSmsDetailsResponse`
         """
-        return self.list_sms_details_with_http_info(request)
+        return self._list_sms_details_with_http_info(request)
 
-    def list_sms_details_with_http_info(self, request):
-        all_params = ['limit', 'offset', 'cid', 'start_time', 'end_time']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_sms_details_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2023,14 +1885,10 @@ class GslAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgsl.v3.SendSmsRequest`
         :rtype: :class:`huaweicloudsdkgsl.v3.SendSmsResponse`
         """
-        return self.send_sms_with_http_info(request)
+        return self._send_sms_with_http_info(request)
 
-    def send_sms_with_http_info(self, request):
-        all_params = ['send_sms_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _send_sms_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

@@ -26,7 +26,6 @@ from huaweicloudsdkcbr.v1.model.backup_sync_req import BackupSyncReq
 from huaweicloudsdkcbr.v1.model.backup_sync_resp_body import BackupSyncRespBody
 from huaweicloudsdkcbr.v1.model.batch_create_and_delete_vault_tags_request import BatchCreateAndDeleteVaultTagsRequest
 from huaweicloudsdkcbr.v1.model.batch_create_and_delete_vault_tags_response import BatchCreateAndDeleteVaultTagsResponse
-from huaweicloudsdkcbr.v1.model.billbing_create_extra_info import BillbingCreateExtraInfo
 from huaweicloudsdkcbr.v1.model.billing import Billing
 from huaweicloudsdkcbr.v1.model.billing_create import BillingCreate
 from huaweicloudsdkcbr.v1.model.billing_update import BillingUpdate
@@ -70,6 +69,7 @@ from huaweicloudsdkcbr.v1.model.disassociate_vault_policy_response import Disass
 from huaweicloudsdkcbr.v1.model.image_data import ImageData
 from huaweicloudsdkcbr.v1.model.import_backup_request import ImportBackupRequest
 from huaweicloudsdkcbr.v1.model.import_backup_response import ImportBackupResponse
+from huaweicloudsdkcbr.v1.model.instances_resource_detail import InstancesResourceDetail
 from huaweicloudsdkcbr.v1.model.list_backups_request import ListBackupsRequest
 from huaweicloudsdkcbr.v1.model.list_backups_response import ListBackupsResponse
 from huaweicloudsdkcbr.v1.model.list_op_logs_request import ListOpLogsRequest

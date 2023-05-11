@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class CssClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(CssClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkcss.v2.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -53,14 +35,10 @@ class CssClient(Client):
         :type request: :class:`huaweicloudsdkcss.v2.CreateClusterRequest`
         :rtype: :class:`huaweicloudsdkcss.v2.CreateClusterResponse`
         """
-        return self.create_cluster_with_http_info(request)
+        return self._create_cluster_with_http_info(request)
 
-    def create_cluster_with_http_info(self, request):
-        all_params = ['create_cluster_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_cluster_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -113,14 +91,10 @@ class CssClient(Client):
         :type request: :class:`huaweicloudsdkcss.v2.RestartClusterRequest`
         :rtype: :class:`huaweicloudsdkcss.v2.RestartClusterResponse`
         """
-        return self.restart_cluster_with_http_info(request)
+        return self._restart_cluster_with_http_info(request)
 
-    def restart_cluster_with_http_info(self, request):
-        all_params = ['cluster_id', 'restart_cluster_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _restart_cluster_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -177,14 +151,10 @@ class CssClient(Client):
         :type request: :class:`huaweicloudsdkcss.v2.RollingRestartRequest`
         :rtype: :class:`huaweicloudsdkcss.v2.RollingRestartResponse`
         """
-        return self.rolling_restart_with_http_info(request)
+        return self._rolling_restart_with_http_info(request)
 
-    def rolling_restart_with_http_info(self, request):
-        all_params = ['cluster_id', 'rolling_restart_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _rolling_restart_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -239,14 +209,10 @@ class CssClient(Client):
         :type request: :class:`huaweicloudsdkcss.v2.StartAutoCreateSnapshotsRequest`
         :rtype: :class:`huaweicloudsdkcss.v2.StartAutoCreateSnapshotsResponse`
         """
-        return self.start_auto_create_snapshots_with_http_info(request)
+        return self._start_auto_create_snapshots_with_http_info(request)
 
-    def start_auto_create_snapshots_with_http_info(self, request):
-        all_params = ['cluster_id', 'start_auto_create_snapshots_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _start_auto_create_snapshots_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -301,14 +267,10 @@ class CssClient(Client):
         :type request: :class:`huaweicloudsdkcss.v2.StopAutoCreateSnapshotsRequest`
         :rtype: :class:`huaweicloudsdkcss.v2.StopAutoCreateSnapshotsResponse`
         """
-        return self.stop_auto_create_snapshots_with_http_info(request)
+        return self._stop_auto_create_snapshots_with_http_info(request)
 
-    def stop_auto_create_snapshots_with_http_info(self, request):
-        all_params = ['cluster_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _stop_auto_create_snapshots_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

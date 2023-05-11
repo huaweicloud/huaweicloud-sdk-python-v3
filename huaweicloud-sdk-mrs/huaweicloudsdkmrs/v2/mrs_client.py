@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class MrsClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(MrsClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkmrs.v2.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -53,14 +35,10 @@ class MrsClient(Client):
         :type request: :class:`huaweicloudsdkmrs.v2.BatchDeleteJobsRequest`
         :rtype: :class:`huaweicloudsdkmrs.v2.BatchDeleteJobsResponse`
         """
-        return self.batch_delete_jobs_with_http_info(request)
+        return self._batch_delete_jobs_with_http_info(request)
 
-    def batch_delete_jobs_with_http_info(self, request):
-        all_params = ['cluster_id', 'batch_delete_jobs_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_delete_jobs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -119,14 +97,10 @@ class MrsClient(Client):
         :type request: :class:`huaweicloudsdkmrs.v2.CreateClusterRequest`
         :rtype: :class:`huaweicloudsdkmrs.v2.CreateClusterResponse`
         """
-        return self.create_cluster_with_http_info(request)
+        return self._create_cluster_with_http_info(request)
 
-    def create_cluster_with_http_info(self, request):
-        all_params = ['create_cluster_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_cluster_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -185,14 +159,10 @@ class MrsClient(Client):
         :type request: :class:`huaweicloudsdkmrs.v2.CreateExecuteJobRequest`
         :rtype: :class:`huaweicloudsdkmrs.v2.CreateExecuteJobResponse`
         """
-        return self.create_execute_job_with_http_info(request)
+        return self._create_execute_job_with_http_info(request)
 
-    def create_execute_job_with_http_info(self, request):
-        all_params = ['cluster_id', 'create_execute_job_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_execute_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -251,14 +221,10 @@ class MrsClient(Client):
         :type request: :class:`huaweicloudsdkmrs.v2.RunJobFlowRequest`
         :rtype: :class:`huaweicloudsdkmrs.v2.RunJobFlowResponse`
         """
-        return self.run_job_flow_with_http_info(request)
+        return self._run_job_flow_with_http_info(request)
 
-    def run_job_flow_with_http_info(self, request):
-        all_params = ['run_job_flow_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _run_job_flow_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -311,14 +277,10 @@ class MrsClient(Client):
         :type request: :class:`huaweicloudsdkmrs.v2.ShowAgencyMappingRequest`
         :rtype: :class:`huaweicloudsdkmrs.v2.ShowAgencyMappingResponse`
         """
-        return self.show_agency_mapping_with_http_info(request)
+        return self._show_agency_mapping_with_http_info(request)
 
-    def show_agency_mapping_with_http_info(self, request):
-        all_params = ['cluster_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_agency_mapping_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -371,14 +333,10 @@ class MrsClient(Client):
         :type request: :class:`huaweicloudsdkmrs.v2.ShowAutoScalingPolicyRequest`
         :rtype: :class:`huaweicloudsdkmrs.v2.ShowAutoScalingPolicyResponse`
         """
-        return self.show_auto_scaling_policy_with_http_info(request)
+        return self._show_auto_scaling_policy_with_http_info(request)
 
-    def show_auto_scaling_policy_with_http_info(self, request):
-        all_params = ['cluster_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_auto_scaling_policy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -431,14 +389,10 @@ class MrsClient(Client):
         :type request: :class:`huaweicloudsdkmrs.v2.ShowJobExeListNewRequest`
         :rtype: :class:`huaweicloudsdkmrs.v2.ShowJobExeListNewResponse`
         """
-        return self.show_job_exe_list_new_with_http_info(request)
+        return self._show_job_exe_list_new_with_http_info(request)
 
-    def show_job_exe_list_new_with_http_info(self, request):
-        all_params = ['cluster_id', 'job_name', 'job_id', 'user', 'job_type', 'job_state', 'job_result', 'queue', 'limit', 'offset', 'sort_by', 'submitted_time_begin', 'submitted_time_end']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_job_exe_list_new_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -515,14 +469,10 @@ class MrsClient(Client):
         :type request: :class:`huaweicloudsdkmrs.v2.ShowSingleJobExeRequest`
         :rtype: :class:`huaweicloudsdkmrs.v2.ShowSingleJobExeResponse`
         """
-        return self.show_single_job_exe_with_http_info(request)
+        return self._show_single_job_exe_with_http_info(request)
 
-    def show_single_job_exe_with_http_info(self, request):
-        all_params = ['job_execution_id', 'cluster_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_single_job_exe_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -577,14 +527,10 @@ class MrsClient(Client):
         :type request: :class:`huaweicloudsdkmrs.v2.ShowSqlResultWithJobRequest`
         :rtype: :class:`huaweicloudsdkmrs.v2.ShowSqlResultWithJobResponse`
         """
-        return self.show_sql_result_with_job_with_http_info(request)
+        return self._show_sql_result_with_job_with_http_info(request)
 
-    def show_sql_result_with_job_with_http_info(self, request):
-        all_params = ['job_execution_id', 'cluster_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_sql_result_with_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -639,14 +585,10 @@ class MrsClient(Client):
         :type request: :class:`huaweicloudsdkmrs.v2.StopJobRequest`
         :rtype: :class:`huaweicloudsdkmrs.v2.StopJobResponse`
         """
-        return self.stop_job_with_http_info(request)
+        return self._stop_job_with_http_info(request)
 
-    def stop_job_with_http_info(self, request):
-        all_params = ['job_execution_id', 'cluster_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _stop_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -701,14 +643,10 @@ class MrsClient(Client):
         :type request: :class:`huaweicloudsdkmrs.v2.UpdateAgencyMappingRequest`
         :rtype: :class:`huaweicloudsdkmrs.v2.UpdateAgencyMappingResponse`
         """
-        return self.update_agency_mapping_with_http_info(request)
+        return self._update_agency_mapping_with_http_info(request)
 
-    def update_agency_mapping_with_http_info(self, request):
-        all_params = ['cluster_id', 'update_agency_mapping_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_agency_mapping_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -763,14 +701,10 @@ class MrsClient(Client):
         :type request: :class:`huaweicloudsdkmrs.v2.UpdateClusterNameRequest`
         :rtype: :class:`huaweicloudsdkmrs.v2.UpdateClusterNameResponse`
         """
-        return self.update_cluster_name_with_http_info(request)
+        return self._update_cluster_name_with_http_info(request)
 
-    def update_cluster_name_with_http_info(self, request):
-        all_params = ['cluster_id', 'update_cluster_name_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_cluster_name_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -825,14 +759,10 @@ class MrsClient(Client):
         :type request: :class:`huaweicloudsdkmrs.v2.ShowHdfsFileListRequest`
         :rtype: :class:`huaweicloudsdkmrs.v2.ShowHdfsFileListResponse`
         """
-        return self.show_hdfs_file_list_with_http_info(request)
+        return self._show_hdfs_file_list_with_http_info(request)
 
-    def show_hdfs_file_list_with_http_info(self, request):
-        all_params = ['cluster_id', 'path', 'offset', 'limit', 'sort_key', 'order']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_hdfs_file_list_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -895,14 +825,10 @@ class MrsClient(Client):
         :type request: :class:`huaweicloudsdkmrs.v2.CancelSqlRequest`
         :rtype: :class:`huaweicloudsdkmrs.v2.CancelSqlResponse`
         """
-        return self.cancel_sql_with_http_info(request)
+        return self._cancel_sql_with_http_info(request)
 
-    def cancel_sql_with_http_info(self, request):
-        all_params = ['cluster_id', 'sql_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _cancel_sql_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -957,14 +883,10 @@ class MrsClient(Client):
         :type request: :class:`huaweicloudsdkmrs.v2.ExecuteSqlRequest`
         :rtype: :class:`huaweicloudsdkmrs.v2.ExecuteSqlResponse`
         """
-        return self.execute_sql_with_http_info(request)
+        return self._execute_sql_with_http_info(request)
 
-    def execute_sql_with_http_info(self, request):
-        all_params = ['cluster_id', 'execute_sql_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _execute_sql_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1019,14 +941,10 @@ class MrsClient(Client):
         :type request: :class:`huaweicloudsdkmrs.v2.ShowSqlResultRequest`
         :rtype: :class:`huaweicloudsdkmrs.v2.ShowSqlResultResponse`
         """
-        return self.show_sql_result_with_http_info(request)
+        return self._show_sql_result_with_http_info(request)
 
-    def show_sql_result_with_http_info(self, request):
-        all_params = ['cluster_id', 'sql_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_sql_result_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

@@ -1,9 +1,6 @@
 # coding: utf-8
 
-import re
 import six
-
-
 
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
@@ -23,17 +20,19 @@ class ReinstallServerWithoutCloudInitOption:
         'adminpass': 'str',
         'keyname': 'str',
         'userid': 'str',
-        'mode': 'str'
+        'mode': 'str',
+        'metadata': 'ReinstallSeverMetadataWithoutCloudInitOption'
     }
 
     attribute_map = {
         'adminpass': 'adminpass',
         'keyname': 'keyname',
         'userid': 'userid',
-        'mode': 'mode'
+        'mode': 'mode',
+        'metadata': 'metadata'
     }
 
-    def __init__(self, adminpass=None, keyname=None, userid=None, mode=None):
+    def __init__(self, adminpass=None, keyname=None, userid=None, mode=None, metadata=None):
         """ReinstallServerWithoutCloudInitOption
 
         The model defined in huaweicloud sdk
@@ -46,6 +45,8 @@ class ReinstallServerWithoutCloudInitOption:
         :type userid: str
         :param mode: 取值为withStopServer ，支持开机状态下切换弹性云服务器操作系统。 mode取值为withStopServer时，对开机状态的弹性云服务器执行切换操作系统操作，系统自动对云服务器先执行关机，再切换操作系统。
         :type mode: str
+        :param metadata: 
+        :type metadata: :class:`huaweicloudsdkecs.v2.ReinstallSeverMetadataWithoutCloudInitOption`
         """
         
         
@@ -54,6 +55,7 @@ class ReinstallServerWithoutCloudInitOption:
         self._keyname = None
         self._userid = None
         self._mode = None
+        self._metadata = None
         self.discriminator = None
 
         if adminpass is not None:
@@ -64,6 +66,8 @@ class ReinstallServerWithoutCloudInitOption:
             self.userid = userid
         if mode is not None:
             self.mode = mode
+        if metadata is not None:
+            self.metadata = metadata
 
     @property
     def adminpass(self):
@@ -152,6 +156,24 @@ class ReinstallServerWithoutCloudInitOption:
         :type mode: str
         """
         self._mode = mode
+
+    @property
+    def metadata(self):
+        """Gets the metadata of this ReinstallServerWithoutCloudInitOption.
+
+        :return: The metadata of this ReinstallServerWithoutCloudInitOption.
+        :rtype: :class:`huaweicloudsdkecs.v2.ReinstallSeverMetadataWithoutCloudInitOption`
+        """
+        return self._metadata
+
+    @metadata.setter
+    def metadata(self, metadata):
+        """Sets the metadata of this ReinstallServerWithoutCloudInitOption.
+
+        :param metadata: The metadata of this ReinstallServerWithoutCloudInitOption.
+        :type metadata: :class:`huaweicloudsdkecs.v2.ReinstallSeverMetadataWithoutCloudInitOption`
+        """
+        self._metadata = metadata
 
     def to_dict(self):
         """Returns the model properties as a dict"""

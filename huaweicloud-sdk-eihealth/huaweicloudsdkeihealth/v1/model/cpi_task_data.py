@@ -1,9 +1,6 @@
 # coding: utf-8
 
-import re
 import six
-
-
 
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
@@ -24,7 +21,8 @@ class CpiTaskData:
         'fasta': 'str',
         'smiles_list': 'list[str]',
         'threshold': 'float',
-        'num_results': 'int'
+        'num_results': 'int',
+        'custom_props': 'list[CustomProp]'
     }
 
     attribute_map = {
@@ -32,10 +30,11 @@ class CpiTaskData:
         'fasta': 'fasta',
         'smiles_list': 'smiles_list',
         'threshold': 'threshold',
-        'num_results': 'num_results'
+        'num_results': 'num_results',
+        'custom_props': 'custom_props'
     }
 
-    def __init__(self, header=None, fasta=None, smiles_list=None, threshold=None, num_results=None):
+    def __init__(self, header=None, fasta=None, smiles_list=None, threshold=None, num_results=None, custom_props=None):
         """CpiTaskData
 
         The model defined in huaweicloud sdk
@@ -50,6 +49,8 @@ class CpiTaskData:
         :type threshold: float
         :param num_results: 期望最大返回条目数（排序后取Top）
         :type num_results: int
+        :param custom_props: 用户已开启的自定义属性集合
+        :type custom_props: list[:class:`huaweicloudsdkeihealth.v1.CustomProp`]
         """
         
         
@@ -59,6 +60,7 @@ class CpiTaskData:
         self._smiles_list = None
         self._threshold = None
         self._num_results = None
+        self._custom_props = None
         self.discriminator = None
 
         if header is not None:
@@ -69,6 +71,8 @@ class CpiTaskData:
             self.threshold = threshold
         if num_results is not None:
             self.num_results = num_results
+        if custom_props is not None:
+            self.custom_props = custom_props
 
     @property
     def header(self):
@@ -179,6 +183,28 @@ class CpiTaskData:
         :type num_results: int
         """
         self._num_results = num_results
+
+    @property
+    def custom_props(self):
+        """Gets the custom_props of this CpiTaskData.
+
+        用户已开启的自定义属性集合
+
+        :return: The custom_props of this CpiTaskData.
+        :rtype: list[:class:`huaweicloudsdkeihealth.v1.CustomProp`]
+        """
+        return self._custom_props
+
+    @custom_props.setter
+    def custom_props(self, custom_props):
+        """Sets the custom_props of this CpiTaskData.
+
+        用户已开启的自定义属性集合
+
+        :param custom_props: The custom_props of this CpiTaskData.
+        :type custom_props: list[:class:`huaweicloudsdkeihealth.v1.CustomProp`]
+        """
+        self._custom_props = custom_props
 
     def to_dict(self):
         """Returns the model properties as a dict"""

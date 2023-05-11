@@ -1,9 +1,6 @@
 # coding: utf-8
 
-import re
 import six
-
-
 
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
@@ -74,7 +71,9 @@ class QueryJobResp:
         'node_role': 'str',
         'period_order': 'PeriodOrderResp',
         'object_infos': 'list[DatabaseObjectInfo]',
-        'original_job_direction': 'str'
+        'original_job_direction': 'str',
+        'data_transformation': 'GetDataTransformationResp',
+        'tags': 'list[Tag]'
     }
 
     attribute_map = {
@@ -132,10 +131,12 @@ class QueryJobResp:
         'node_role': 'node_role',
         'period_order': 'period_order',
         'object_infos': 'object_infos',
-        'original_job_direction': 'original_job_direction'
+        'original_job_direction': 'original_job_direction',
+        'data_transformation': 'data_transformation',
+        'tags': 'tags'
     }
 
-    def __init__(self, id=None, parent_id=None, name=None, status=None, description=None, create_time=None, task_type=None, source_endpoint=None, dmq_endpoint=None, source_sharding=None, target_endpoint=None, net_type=None, failed_reason=None, inst_info=None, actual_start_time=None, full_transfer_complete_time=None, update_time=None, job_direction=None, db_use_type=None, need_restart=None, is_target_readonly=None, conflict_policy=None, filter_ddl_policy=None, speed_limit=None, schema_type=None, node_num=None, object_switch=None, master_job_id=None, full_mode=None, struct_trans=None, index_trans=None, replace_definer=None, migrate_user=None, sync_database=None, error_code=None, error_message=None, target_root_db=None, az_code=None, vpc_id=None, subnet_id=None, security_group_id=None, multi_write=None, support_ip_v6=None, inherit_id=None, gtid=None, alarm_notify=None, incre_start_position=None, is_multi_az=None, az_name=None, master_az=None, slave_az=None, node_role=None, period_order=None, object_infos=None, original_job_direction=None):
+    def __init__(self, id=None, parent_id=None, name=None, status=None, description=None, create_time=None, task_type=None, source_endpoint=None, dmq_endpoint=None, source_sharding=None, target_endpoint=None, net_type=None, failed_reason=None, inst_info=None, actual_start_time=None, full_transfer_complete_time=None, update_time=None, job_direction=None, db_use_type=None, need_restart=None, is_target_readonly=None, conflict_policy=None, filter_ddl_policy=None, speed_limit=None, schema_type=None, node_num=None, object_switch=None, master_job_id=None, full_mode=None, struct_trans=None, index_trans=None, replace_definer=None, migrate_user=None, sync_database=None, error_code=None, error_message=None, target_root_db=None, az_code=None, vpc_id=None, subnet_id=None, security_group_id=None, multi_write=None, support_ip_v6=None, inherit_id=None, gtid=None, alarm_notify=None, incre_start_position=None, is_multi_az=None, az_name=None, master_az=None, slave_az=None, node_role=None, period_order=None, object_infos=None, original_job_direction=None, data_transformation=None, tags=None):
         """QueryJobResp
 
         The model defined in huaweicloud sdk
@@ -250,6 +251,10 @@ class QueryJobResp:
         :type object_infos: list[:class:`huaweicloudsdkdrs.v3.DatabaseObjectInfo`]
         :param original_job_direction: 初始任务方向。 取值： - up：入云，灾备场景时对应本云为备。 - down：出云，灾备场景时对应本云为主。 - non-dbs：自建。
         :type original_job_direction: str
+        :param data_transformation: 
+        :type data_transformation: :class:`huaweicloudsdkdrs.v3.GetDataTransformationResp`
+        :param tags: DRS任务标签
+        :type tags: list[:class:`huaweicloudsdkdrs.v3.Tag`]
         """
         
         
@@ -309,6 +314,8 @@ class QueryJobResp:
         self._period_order = None
         self._object_infos = None
         self._original_job_direction = None
+        self._data_transformation = None
+        self._tags = None
         self.discriminator = None
 
         if id is not None:
@@ -421,6 +428,10 @@ class QueryJobResp:
             self.object_infos = object_infos
         if original_job_direction is not None:
             self.original_job_direction = original_job_direction
+        if data_transformation is not None:
+            self.data_transformation = data_transformation
+        if tags is not None:
+            self.tags = tags
 
     @property
     def id(self):
@@ -1603,6 +1614,46 @@ class QueryJobResp:
         :type original_job_direction: str
         """
         self._original_job_direction = original_job_direction
+
+    @property
+    def data_transformation(self):
+        """Gets the data_transformation of this QueryJobResp.
+
+        :return: The data_transformation of this QueryJobResp.
+        :rtype: :class:`huaweicloudsdkdrs.v3.GetDataTransformationResp`
+        """
+        return self._data_transformation
+
+    @data_transformation.setter
+    def data_transformation(self, data_transformation):
+        """Sets the data_transformation of this QueryJobResp.
+
+        :param data_transformation: The data_transformation of this QueryJobResp.
+        :type data_transformation: :class:`huaweicloudsdkdrs.v3.GetDataTransformationResp`
+        """
+        self._data_transformation = data_transformation
+
+    @property
+    def tags(self):
+        """Gets the tags of this QueryJobResp.
+
+        DRS任务标签
+
+        :return: The tags of this QueryJobResp.
+        :rtype: list[:class:`huaweicloudsdkdrs.v3.Tag`]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this QueryJobResp.
+
+        DRS任务标签
+
+        :param tags: The tags of this QueryJobResp.
+        :type tags: list[:class:`huaweicloudsdkdrs.v3.Tag`]
+        """
+        self._tags = tags
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class CloudPipelineAsyncClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(CloudPipelineAsyncClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkcloudpipeline.v2.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -54,14 +36,10 @@ class CloudPipelineAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcloudpipeline.v2.BatchShowPipelinesStatusRequest`
         :rtype: :class:`huaweicloudsdkcloudpipeline.v2.BatchShowPipelinesStatusResponse`
         """
-        return self.batch_show_pipelines_status_with_http_info(request)
+        return self._batch_show_pipelines_status_with_http_info(request)
 
-    def batch_show_pipelines_status_with_http_info(self, request):
-        all_params = ['pipeline_ids', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_show_pipelines_status_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -117,14 +95,10 @@ class CloudPipelineAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcloudpipeline.v2.CreatePipelineByTemplateRequest`
         :rtype: :class:`huaweicloudsdkcloudpipeline.v2.CreatePipelineByTemplateResponse`
         """
-        return self.create_pipeline_by_template_with_http_info(request)
+        return self._create_pipeline_by_template_with_http_info(request)
 
-    def create_pipeline_by_template_with_http_info(self, request):
-        all_params = ['create_pipeline_by_template_request_body', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_pipeline_by_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -180,14 +154,10 @@ class CloudPipelineAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcloudpipeline.v2.ListPipelineSimpleInfoRequest`
         :rtype: :class:`huaweicloudsdkcloudpipeline.v2.ListPipelineSimpleInfoResponse`
         """
-        return self.list_pipeline_simple_info_with_http_info(request)
+        return self._list_pipeline_simple_info_with_http_info(request)
 
-    def list_pipeline_simple_info_with_http_info(self, request):
-        all_params = ['x_language', 'list_pipeline_simple_info_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_pipeline_simple_info_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -243,14 +213,10 @@ class CloudPipelineAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcloudpipeline.v2.ListPipleineBuildResultRequest`
         :rtype: :class:`huaweicloudsdkcloudpipeline.v2.ListPipleineBuildResultResponse`
         """
-        return self.list_pipleine_build_result_with_http_info(request)
+        return self._list_pipleine_build_result_with_http_info(request)
 
-    def list_pipleine_build_result_with_http_info(self, request):
-        all_params = ['project_id', 'start_date', 'end_date', 'offset', 'limit', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_pipleine_build_result_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -314,14 +280,10 @@ class CloudPipelineAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcloudpipeline.v2.ListTemplatesRequest`
         :rtype: :class:`huaweicloudsdkcloudpipeline.v2.ListTemplatesResponse`
         """
-        return self.list_templates_with_http_info(request)
+        return self._list_templates_with_http_info(request)
 
-    def list_templates_with_http_info(self, request):
-        all_params = ['template_type', 'is_build_in', 'x_language', 'offset', 'limit', 'name', 'sort', 'asc']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_templates_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -389,14 +351,10 @@ class CloudPipelineAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcloudpipeline.v2.RemovePipelineRequest`
         :rtype: :class:`huaweicloudsdkcloudpipeline.v2.RemovePipelineResponse`
         """
-        return self.remove_pipeline_with_http_info(request)
+        return self._remove_pipeline_with_http_info(request)
 
-    def remove_pipeline_with_http_info(self, request):
-        all_params = ['pipeline_id', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _remove_pipeline_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -452,14 +410,10 @@ class CloudPipelineAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcloudpipeline.v2.ShowInstanceStatusRequest`
         :rtype: :class:`huaweicloudsdkcloudpipeline.v2.ShowInstanceStatusResponse`
         """
-        return self.show_instance_status_with_http_info(request)
+        return self._show_instance_status_with_http_info(request)
 
-    def show_instance_status_with_http_info(self, request):
-        all_params = ['task_id', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_instance_status_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -515,14 +469,10 @@ class CloudPipelineAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcloudpipeline.v2.ShowPipleineStatusRequest`
         :rtype: :class:`huaweicloudsdkcloudpipeline.v2.ShowPipleineStatusResponse`
         """
-        return self.show_pipleine_status_with_http_info(request)
+        return self._show_pipleine_status_with_http_info(request)
 
-    def show_pipleine_status_with_http_info(self, request):
-        all_params = ['pipeline_id', 'x_language', 'build_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_pipleine_status_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -580,14 +530,10 @@ class CloudPipelineAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcloudpipeline.v2.ShowTemplateDetailRequest`
         :rtype: :class:`huaweicloudsdkcloudpipeline.v2.ShowTemplateDetailResponse`
         """
-        return self.show_template_detail_with_http_info(request)
+        return self._show_template_detail_with_http_info(request)
 
-    def show_template_detail_with_http_info(self, request):
-        all_params = ['template_id', 'template_type', 'x_language', 'source']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_template_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -647,14 +593,10 @@ class CloudPipelineAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcloudpipeline.v2.StartNewPipelineRequest`
         :rtype: :class:`huaweicloudsdkcloudpipeline.v2.StartNewPipelineResponse`
         """
-        return self.start_new_pipeline_with_http_info(request)
+        return self._start_new_pipeline_with_http_info(request)
 
-    def start_new_pipeline_with_http_info(self, request):
-        all_params = ['pipeline_id', 'x_language', 'start_new_pipeline_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _start_new_pipeline_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -712,14 +654,10 @@ class CloudPipelineAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcloudpipeline.v2.StopPipelineNewRequest`
         :rtype: :class:`huaweicloudsdkcloudpipeline.v2.StopPipelineNewResponse`
         """
-        return self.stop_pipeline_new_with_http_info(request)
+        return self._stop_pipeline_new_with_http_info(request)
 
-    def stop_pipeline_new_with_http_info(self, request):
-        all_params = ['pipeline_id', 'build_id', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _stop_pipeline_new_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -777,14 +715,10 @@ class CloudPipelineAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcloudpipeline.v2.BatchShowPipelinesLatestStatusRequest`
         :rtype: :class:`huaweicloudsdkcloudpipeline.v2.BatchShowPipelinesLatestStatusResponse`
         """
-        return self.batch_show_pipelines_latest_status_with_http_info(request)
+        return self._batch_show_pipelines_latest_status_with_http_info(request)
 
-    def batch_show_pipelines_latest_status_with_http_info(self, request):
-        all_params = ['project_id', 'pipeline_ids', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_show_pipelines_latest_status_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -842,14 +776,10 @@ class CloudPipelineAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcloudpipeline.v2.CreatePipelineByTemplateIdRequest`
         :rtype: :class:`huaweicloudsdkcloudpipeline.v2.CreatePipelineByTemplateIdResponse`
         """
-        return self.create_pipeline_by_template_id_with_http_info(request)
+        return self._create_pipeline_by_template_id_with_http_info(request)
 
-    def create_pipeline_by_template_id_with_http_info(self, request):
-        all_params = ['project_id', 'template_id', 'pipeline_by_template_dto', 'x_language', 'component_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_pipeline_by_template_id_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -911,14 +841,10 @@ class CloudPipelineAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcloudpipeline.v2.DeletePipelineRequest`
         :rtype: :class:`huaweicloudsdkcloudpipeline.v2.DeletePipelineResponse`
         """
-        return self.delete_pipeline_with_http_info(request)
+        return self._delete_pipeline_with_http_info(request)
 
-    def delete_pipeline_with_http_info(self, request):
-        all_params = ['project_id', 'pipeline_id', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_pipeline_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -976,14 +902,10 @@ class CloudPipelineAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcloudpipeline.v2.ListPipelineRunsRequest`
         :rtype: :class:`huaweicloudsdkcloudpipeline.v2.ListPipelineRunsResponse`
         """
-        return self.list_pipeline_runs_with_http_info(request)
+        return self._list_pipeline_runs_with_http_info(request)
 
-    def list_pipeline_runs_with_http_info(self, request):
-        all_params = ['project_id', 'pipeline_id', 'x_language', 'list_pipeline_runs_query']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_pipeline_runs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1043,14 +965,10 @@ class CloudPipelineAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcloudpipeline.v2.ListPipelineTemplatesRequest`
         :rtype: :class:`huaweicloudsdkcloudpipeline.v2.ListPipelineTemplatesResponse`
         """
-        return self.list_pipeline_templates_with_http_info(request)
+        return self._list_pipeline_templates_with_http_info(request)
 
-    def list_pipeline_templates_with_http_info(self, request):
-        all_params = ['tenant_id', 'x_language', 'list_pipeline_templates_query']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_pipeline_templates_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1108,14 +1026,10 @@ class CloudPipelineAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcloudpipeline.v2.ListPipelinesRequest`
         :rtype: :class:`huaweicloudsdkcloudpipeline.v2.ListPipelinesResponse`
         """
-        return self.list_pipelines_with_http_info(request)
+        return self._list_pipelines_with_http_info(request)
 
-    def list_pipelines_with_http_info(self, request):
-        all_params = ['project_id', 'x_language', 'list_pipelines_query']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_pipelines_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1173,14 +1087,10 @@ class CloudPipelineAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcloudpipeline.v2.RunPipelineRequest`
         :rtype: :class:`huaweicloudsdkcloudpipeline.v2.RunPipelineResponse`
         """
-        return self.run_pipeline_with_http_info(request)
+        return self._run_pipeline_with_http_info(request)
 
-    def run_pipeline_with_http_info(self, request):
-        all_params = ['project_id', 'pipeline_id', 'x_language', 'run_pipeline_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _run_pipeline_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1240,14 +1150,10 @@ class CloudPipelineAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcloudpipeline.v2.ShowPipelineRunDetailRequest`
         :rtype: :class:`huaweicloudsdkcloudpipeline.v2.ShowPipelineRunDetailResponse`
         """
-        return self.show_pipeline_run_detail_with_http_info(request)
+        return self._show_pipeline_run_detail_with_http_info(request)
 
-    def show_pipeline_run_detail_with_http_info(self, request):
-        all_params = ['project_id', 'pipeline_id', 'pipeline_run_id', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_pipeline_run_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1307,14 +1213,10 @@ class CloudPipelineAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcloudpipeline.v2.ShowPipelineTemplateDetailRequest`
         :rtype: :class:`huaweicloudsdkcloudpipeline.v2.ShowPipelineTemplateDetailResponse`
         """
-        return self.show_pipeline_template_detail_with_http_info(request)
+        return self._show_pipeline_template_detail_with_http_info(request)
 
-    def show_pipeline_template_detail_with_http_info(self, request):
-        all_params = ['tenant_id', 'template_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_pipeline_template_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1370,14 +1272,10 @@ class CloudPipelineAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcloudpipeline.v2.StopPipelineRunRequest`
         :rtype: :class:`huaweicloudsdkcloudpipeline.v2.StopPipelineRunResponse`
         """
-        return self.stop_pipeline_run_with_http_info(request)
+        return self._stop_pipeline_run_with_http_info(request)
 
-    def stop_pipeline_run_with_http_info(self, request):
-        all_params = ['project_id', 'pipeline_id', 'pipeline_run_id', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _stop_pipeline_run_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

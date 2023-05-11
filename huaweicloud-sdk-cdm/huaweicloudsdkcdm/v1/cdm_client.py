@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class CdmClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(CdmClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkcdm.v1.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -53,14 +35,10 @@ class CdmClient(Client):
         :type request: :class:`huaweicloudsdkcdm.v1.CreateAndStartRandomClusterJobRequest`
         :rtype: :class:`huaweicloudsdkcdm.v1.CreateAndStartRandomClusterJobResponse`
         """
-        return self.create_and_start_random_cluster_job_with_http_info(request)
+        return self._create_and_start_random_cluster_job_with_http_info(request)
 
-    def create_and_start_random_cluster_job_with_http_info(self, request):
-        all_params = ['x_language', 'cdm_random_create_and_start_job_json_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_and_start_random_cluster_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -115,14 +93,10 @@ class CdmClient(Client):
         :type request: :class:`huaweicloudsdkcdm.v1.CreateClusterRequest`
         :rtype: :class:`huaweicloudsdkcdm.v1.CreateClusterResponse`
         """
-        return self.create_cluster_with_http_info(request)
+        return self._create_cluster_with_http_info(request)
 
-    def create_cluster_with_http_info(self, request):
-        all_params = ['x_language', 'cdm_create_cluster_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_cluster_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -177,14 +151,10 @@ class CdmClient(Client):
         :type request: :class:`huaweicloudsdkcdm.v1.CreateJobRequest`
         :rtype: :class:`huaweicloudsdkcdm.v1.CreateJobResponse`
         """
-        return self.create_job_with_http_info(request)
+        return self._create_job_with_http_info(request)
 
-    def create_job_with_http_info(self, request):
-        all_params = ['cluster_id', 'cdm_start_job_json_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -239,14 +209,10 @@ class CdmClient(Client):
         :type request: :class:`huaweicloudsdkcdm.v1.CreateLinkRequest`
         :rtype: :class:`huaweicloudsdkcdm.v1.CreateLinkResponse`
         """
-        return self.create_link_with_http_info(request)
+        return self._create_link_with_http_info(request)
 
-    def create_link_with_http_info(self, request):
-        all_params = ['cluster_id', 'cdm_create_link_req', 'validate']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_link_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -303,14 +269,10 @@ class CdmClient(Client):
         :type request: :class:`huaweicloudsdkcdm.v1.DeleteClusterRequest`
         :rtype: :class:`huaweicloudsdkcdm.v1.DeleteClusterResponse`
         """
-        return self.delete_cluster_with_http_info(request)
+        return self._delete_cluster_with_http_info(request)
 
-    def delete_cluster_with_http_info(self, request):
-        all_params = ['cluster_id', 'cdm_delete_cluster_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_cluster_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -365,14 +327,10 @@ class CdmClient(Client):
         :type request: :class:`huaweicloudsdkcdm.v1.DeleteJobRequest`
         :rtype: :class:`huaweicloudsdkcdm.v1.DeleteJobResponse`
         """
-        return self.delete_job_with_http_info(request)
+        return self._delete_job_with_http_info(request)
 
-    def delete_job_with_http_info(self, request):
-        all_params = ['cluster_id', 'job_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -427,14 +385,10 @@ class CdmClient(Client):
         :type request: :class:`huaweicloudsdkcdm.v1.DeleteLinkRequest`
         :rtype: :class:`huaweicloudsdkcdm.v1.DeleteLinkResponse`
         """
-        return self.delete_link_with_http_info(request)
+        return self._delete_link_with_http_info(request)
 
-    def delete_link_with_http_info(self, request):
-        all_params = ['cluster_id', 'link_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_link_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -489,14 +443,10 @@ class CdmClient(Client):
         :type request: :class:`huaweicloudsdkcdm.v1.ListClustersRequest`
         :rtype: :class:`huaweicloudsdkcdm.v1.ListClustersResponse`
         """
-        return self.list_clusters_with_http_info(request)
+        return self._list_clusters_with_http_info(request)
 
-    def list_clusters_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_clusters_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -547,14 +497,10 @@ class CdmClient(Client):
         :type request: :class:`huaweicloudsdkcdm.v1.RestartClusterRequest`
         :rtype: :class:`huaweicloudsdkcdm.v1.RestartClusterResponse`
         """
-        return self.restart_cluster_with_http_info(request)
+        return self._restart_cluster_with_http_info(request)
 
-    def restart_cluster_with_http_info(self, request):
-        all_params = ['cluster_id', 'cdm_restart_cluster_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _restart_cluster_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -609,14 +555,10 @@ class CdmClient(Client):
         :type request: :class:`huaweicloudsdkcdm.v1.ShowClusterDetailRequest`
         :rtype: :class:`huaweicloudsdkcdm.v1.ShowClusterDetailResponse`
         """
-        return self.show_cluster_detail_with_http_info(request)
+        return self._show_cluster_detail_with_http_info(request)
 
-    def show_cluster_detail_with_http_info(self, request):
-        all_params = ['cluster_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_cluster_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -669,14 +611,10 @@ class CdmClient(Client):
         :type request: :class:`huaweicloudsdkcdm.v1.ShowJobStatusRequest`
         :rtype: :class:`huaweicloudsdkcdm.v1.ShowJobStatusResponse`
         """
-        return self.show_job_status_with_http_info(request)
+        return self._show_job_status_with_http_info(request)
 
-    def show_job_status_with_http_info(self, request):
-        all_params = ['cluster_id', 'job_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_job_status_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -731,14 +669,10 @@ class CdmClient(Client):
         :type request: :class:`huaweicloudsdkcdm.v1.ShowJobsRequest`
         :rtype: :class:`huaweicloudsdkcdm.v1.ShowJobsResponse`
         """
-        return self.show_jobs_with_http_info(request)
+        return self._show_jobs_with_http_info(request)
 
-    def show_jobs_with_http_info(self, request):
-        all_params = ['cluster_id', 'job_name', 'filter', 'page_no', 'page_size', 'job_type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_jobs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -801,14 +735,10 @@ class CdmClient(Client):
         :type request: :class:`huaweicloudsdkcdm.v1.ShowLinkRequest`
         :rtype: :class:`huaweicloudsdkcdm.v1.ShowLinkResponse`
         """
-        return self.show_link_with_http_info(request)
+        return self._show_link_with_http_info(request)
 
-    def show_link_with_http_info(self, request):
-        all_params = ['cluster_id', 'link_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_link_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -863,14 +793,10 @@ class CdmClient(Client):
         :type request: :class:`huaweicloudsdkcdm.v1.ShowSubmissionsRequest`
         :rtype: :class:`huaweicloudsdkcdm.v1.ShowSubmissionsResponse`
         """
-        return self.show_submissions_with_http_info(request)
+        return self._show_submissions_with_http_info(request)
 
-    def show_submissions_with_http_info(self, request):
-        all_params = ['cluster_id', 'jname']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_submissions_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -925,14 +851,10 @@ class CdmClient(Client):
         :type request: :class:`huaweicloudsdkcdm.v1.StartClusterRequest`
         :rtype: :class:`huaweicloudsdkcdm.v1.StartClusterResponse`
         """
-        return self.start_cluster_with_http_info(request)
+        return self._start_cluster_with_http_info(request)
 
-    def start_cluster_with_http_info(self, request):
-        all_params = ['cluster_id', 'cdm_start_cluster_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _start_cluster_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -987,14 +909,10 @@ class CdmClient(Client):
         :type request: :class:`huaweicloudsdkcdm.v1.StartJobRequest`
         :rtype: :class:`huaweicloudsdkcdm.v1.StartJobResponse`
         """
-        return self.start_job_with_http_info(request)
+        return self._start_job_with_http_info(request)
 
-    def start_job_with_http_info(self, request):
-        all_params = ['cluster_id', 'job_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _start_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1049,14 +967,10 @@ class CdmClient(Client):
         :type request: :class:`huaweicloudsdkcdm.v1.StopClusterRequest`
         :rtype: :class:`huaweicloudsdkcdm.v1.StopClusterResponse`
         """
-        return self.stop_cluster_with_http_info(request)
+        return self._stop_cluster_with_http_info(request)
 
-    def stop_cluster_with_http_info(self, request):
-        all_params = ['cluster_id', 'cdm_stop_cluster_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _stop_cluster_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1111,14 +1025,10 @@ class CdmClient(Client):
         :type request: :class:`huaweicloudsdkcdm.v1.StopJobRequest`
         :rtype: :class:`huaweicloudsdkcdm.v1.StopJobResponse`
         """
-        return self.stop_job_with_http_info(request)
+        return self._stop_job_with_http_info(request)
 
-    def stop_job_with_http_info(self, request):
-        all_params = ['cluster_id', 'job_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _stop_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1173,14 +1083,10 @@ class CdmClient(Client):
         :type request: :class:`huaweicloudsdkcdm.v1.UpdateJobRequest`
         :rtype: :class:`huaweicloudsdkcdm.v1.UpdateJobResponse`
         """
-        return self.update_job_with_http_info(request)
+        return self._update_job_with_http_info(request)
 
-    def update_job_with_http_info(self, request):
-        all_params = ['cluster_id', 'job_name', 'cdm_update_job_json_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1237,14 +1143,10 @@ class CdmClient(Client):
         :type request: :class:`huaweicloudsdkcdm.v1.UpdateLinkRequest`
         :rtype: :class:`huaweicloudsdkcdm.v1.UpdateLinkResponse`
         """
-        return self.update_link_with_http_info(request)
+        return self._update_link_with_http_info(request)
 
-    def update_link_with_http_info(self, request):
-        all_params = ['cluster_id', 'link_name', 'cdm_update_link_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_link_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

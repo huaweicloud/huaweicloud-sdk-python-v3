@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class OcrAsyncClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(OcrAsyncClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkocr.v1.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -56,14 +38,10 @@ class OcrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeAutoClassificationRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeAutoClassificationResponse`
         """
-        return self.recognize_auto_classification_with_http_info(request)
+        return self._recognize_auto_classification_with_http_info(request)
 
-    def recognize_auto_classification_with_http_info(self, request):
-        all_params = ['auto_classification_request_body', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _recognize_auto_classification_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -121,14 +99,10 @@ class OcrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeBankcardRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeBankcardResponse`
         """
-        return self.recognize_bankcard_with_http_info(request)
+        return self._recognize_bankcard_with_http_info(request)
 
-    def recognize_bankcard_with_http_info(self, request):
-        all_params = ['bankcard_request_body', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _recognize_bankcard_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -184,14 +158,10 @@ class OcrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeBusinessCardRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeBusinessCardResponse`
         """
-        return self.recognize_business_card_with_http_info(request)
+        return self._recognize_business_card_with_http_info(request)
 
-    def recognize_business_card_with_http_info(self, request):
-        all_params = ['business_card_request_body', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _recognize_business_card_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -251,14 +221,10 @@ class OcrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeBusinessLicenseRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeBusinessLicenseResponse`
         """
-        return self.recognize_business_license_with_http_info(request)
+        return self._recognize_business_license_with_http_info(request)
 
-    def recognize_business_license_with_http_info(self, request):
-        all_params = ['business_license_request_body', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _recognize_business_license_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -314,14 +280,10 @@ class OcrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeCambodianIdCardRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeCambodianIdCardResponse`
         """
-        return self.recognize_cambodian_id_card_with_http_info(request)
+        return self._recognize_cambodian_id_card_with_http_info(request)
 
-    def recognize_cambodian_id_card_with_http_info(self, request):
-        all_params = ['cambodian_id_card_request_body', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _recognize_cambodian_id_card_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -377,14 +339,10 @@ class OcrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeChileIdCardRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeChileIdCardResponse`
         """
-        return self.recognize_chile_id_card_with_http_info(request)
+        return self._recognize_chile_id_card_with_http_info(request)
 
-    def recognize_chile_id_card_with_http_info(self, request):
-        all_params = ['chile_id_card_request_body', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _recognize_chile_id_card_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -444,14 +402,10 @@ class OcrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeDriverLicenseRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeDriverLicenseResponse`
         """
-        return self.recognize_driver_license_with_http_info(request)
+        return self._recognize_driver_license_with_http_info(request)
 
-    def recognize_driver_license_with_http_info(self, request):
-        all_params = ['driver_license_request_body', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _recognize_driver_license_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -507,14 +461,10 @@ class OcrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeExitEntryPermitRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeExitEntryPermitResponse`
         """
-        return self.recognize_exit_entry_permit_with_http_info(request)
+        return self._recognize_exit_entry_permit_with_http_info(request)
 
-    def recognize_exit_entry_permit_with_http_info(self, request):
-        all_params = ['exit_entry_permit_request_body', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _recognize_exit_entry_permit_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -570,14 +520,10 @@ class OcrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeFinancialStatementRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeFinancialStatementResponse`
         """
-        return self.recognize_financial_statement_with_http_info(request)
+        return self._recognize_financial_statement_with_http_info(request)
 
-    def recognize_financial_statement_with_http_info(self, request):
-        all_params = ['financial_statement_request_body', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _recognize_financial_statement_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -635,14 +581,10 @@ class OcrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeFlightItineraryRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeFlightItineraryResponse`
         """
-        return self.recognize_flight_itinerary_with_http_info(request)
+        return self._recognize_flight_itinerary_with_http_info(request)
 
-    def recognize_flight_itinerary_with_http_info(self, request):
-        all_params = ['enterprise_project_id', 'flight_itinerary_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _recognize_flight_itinerary_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -698,14 +640,10 @@ class OcrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeGeneralTableRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeGeneralTableResponse`
         """
-        return self.recognize_general_table_with_http_info(request)
+        return self._recognize_general_table_with_http_info(request)
 
-    def recognize_general_table_with_http_info(self, request):
-        all_params = ['enterprise_project_id', 'general_table_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _recognize_general_table_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -761,14 +699,10 @@ class OcrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeGeneralTextRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeGeneralTextResponse`
         """
-        return self.recognize_general_text_with_http_info(request)
+        return self._recognize_general_text_with_http_info(request)
 
-    def recognize_general_text_with_http_info(self, request):
-        all_params = ['enterprise_project_id', 'general_text_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _recognize_general_text_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -824,14 +758,10 @@ class OcrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeHandwritingRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeHandwritingResponse`
         """
-        return self.recognize_handwriting_with_http_info(request)
+        return self._recognize_handwriting_with_http_info(request)
 
-    def recognize_handwriting_with_http_info(self, request):
-        all_params = ['handwriting_request_body', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _recognize_handwriting_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -887,14 +817,10 @@ class OcrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeHealthCodeRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeHealthCodeResponse`
         """
-        return self.recognize_health_code_with_http_info(request)
+        return self._recognize_health_code_with_http_info(request)
 
-    def recognize_health_code_with_http_info(self, request):
-        all_params = ['enterprise_project_id', 'health_code_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _recognize_health_code_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -950,14 +876,10 @@ class OcrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeHkIdCardRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeHkIdCardResponse`
         """
-        return self.recognize_hk_id_card_with_http_info(request)
+        return self._recognize_hk_id_card_with_http_info(request)
 
-    def recognize_hk_id_card_with_http_info(self, request):
-        all_params = ['hk_id_card_request_body', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _recognize_hk_id_card_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1019,14 +941,10 @@ class OcrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeIdCardRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeIdCardResponse`
         """
-        return self.recognize_id_card_with_http_info(request)
+        return self._recognize_id_card_with_http_info(request)
 
-    def recognize_id_card_with_http_info(self, request):
-        all_params = ['id_card_request_body', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _recognize_id_card_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1106,14 +1024,10 @@ class OcrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeIdDocumentRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeIdDocumentResponse`
         """
-        return self.recognize_id_document_with_http_info(request)
+        return self._recognize_id_document_with_http_info(request)
 
-    def recognize_id_document_with_http_info(self, request):
-        all_params = ['id_document_request_body', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _recognize_id_document_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1169,14 +1083,10 @@ class OcrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeInsurancePolicyRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeInsurancePolicyResponse`
         """
-        return self.recognize_insurance_policy_with_http_info(request)
+        return self._recognize_insurance_policy_with_http_info(request)
 
-    def recognize_insurance_policy_with_http_info(self, request):
-        all_params = ['insurance_policy_request_body', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _recognize_insurance_policy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1232,14 +1142,10 @@ class OcrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeInvoiceVerificationRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeInvoiceVerificationResponse`
         """
-        return self.recognize_invoice_verification_with_http_info(request)
+        return self._recognize_invoice_verification_with_http_info(request)
 
-    def recognize_invoice_verification_with_http_info(self, request):
-        all_params = ['invoice_verification_request_body', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _recognize_invoice_verification_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1295,14 +1201,10 @@ class OcrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeLicensePlateRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeLicensePlateResponse`
         """
-        return self.recognize_license_plate_with_http_info(request)
+        return self._recognize_license_plate_with_http_info(request)
 
-    def recognize_license_plate_with_http_info(self, request):
-        all_params = ['license_plate_request_body', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _recognize_license_plate_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1358,14 +1260,10 @@ class OcrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeMacaoIdCardRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeMacaoIdCardResponse`
         """
-        return self.recognize_macao_id_card_with_http_info(request)
+        return self._recognize_macao_id_card_with_http_info(request)
 
-    def recognize_macao_id_card_with_http_info(self, request):
-        all_params = ['macao_id_card_request_body', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _recognize_macao_id_card_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1421,14 +1319,10 @@ class OcrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeMainlandTravelPermitRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeMainlandTravelPermitResponse`
         """
-        return self.recognize_mainland_travel_permit_with_http_info(request)
+        return self._recognize_mainland_travel_permit_with_http_info(request)
 
-    def recognize_mainland_travel_permit_with_http_info(self, request):
-        all_params = ['mainland_travel_permit_request_body', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _recognize_mainland_travel_permit_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1487,14 +1381,10 @@ class OcrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeMvsInvoiceRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeMvsInvoiceResponse`
         """
-        return self.recognize_mvs_invoice_with_http_info(request)
+        return self._recognize_mvs_invoice_with_http_info(request)
 
-    def recognize_mvs_invoice_with_http_info(self, request):
-        all_params = ['mvs_invoice_request_body', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _recognize_mvs_invoice_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1550,14 +1440,10 @@ class OcrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeMyanmarDriverLicenseRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeMyanmarDriverLicenseResponse`
         """
-        return self.recognize_myanmar_driver_license_with_http_info(request)
+        return self._recognize_myanmar_driver_license_with_http_info(request)
 
-    def recognize_myanmar_driver_license_with_http_info(self, request):
-        all_params = ['myanmar_driver_license_request_body', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _recognize_myanmar_driver_license_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1613,14 +1499,10 @@ class OcrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeMyanmarIdcardRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeMyanmarIdcardResponse`
         """
-        return self.recognize_myanmar_idcard_with_http_info(request)
+        return self._recognize_myanmar_idcard_with_http_info(request)
 
-    def recognize_myanmar_idcard_with_http_info(self, request):
-        all_params = ['myanmar_idcard_request_body', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _recognize_myanmar_idcard_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1678,14 +1560,10 @@ class OcrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkocr.v1.RecognizePassportRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizePassportResponse`
         """
-        return self.recognize_passport_with_http_info(request)
+        return self._recognize_passport_with_http_info(request)
 
-    def recognize_passport_with_http_info(self, request):
-        all_params = ['passport_request_body', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _recognize_passport_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1741,14 +1619,10 @@ class OcrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkocr.v1.RecognizePcrTestRecordRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizePcrTestRecordResponse`
         """
-        return self.recognize_pcr_test_record_with_http_info(request)
+        return self._recognize_pcr_test_record_with_http_info(request)
 
-    def recognize_pcr_test_record_with_http_info(self, request):
-        all_params = ['enterprise_project_id', 'pcr_test_record_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _recognize_pcr_test_record_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1804,14 +1678,10 @@ class OcrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeQualificationCertificateRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeQualificationCertificateResponse`
         """
-        return self.recognize_qualification_certificate_with_http_info(request)
+        return self._recognize_qualification_certificate_with_http_info(request)
 
-    def recognize_qualification_certificate_with_http_info(self, request):
-        all_params = ['qualification_certificate_request_body', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _recognize_qualification_certificate_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1871,14 +1741,10 @@ class OcrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeQuotaInvoiceRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeQuotaInvoiceResponse`
         """
-        return self.recognize_quota_invoice_with_http_info(request)
+        return self._recognize_quota_invoice_with_http_info(request)
 
-    def recognize_quota_invoice_with_http_info(self, request):
-        all_params = ['quota_invoice_request_body', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _recognize_quota_invoice_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1937,14 +1803,10 @@ class OcrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeTaxiInvoiceRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeTaxiInvoiceResponse`
         """
-        return self.recognize_taxi_invoice_with_http_info(request)
+        return self._recognize_taxi_invoice_with_http_info(request)
 
-    def recognize_taxi_invoice_with_http_info(self, request):
-        all_params = ['taxi_invoice_request_body', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _recognize_taxi_invoice_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2000,14 +1862,10 @@ class OcrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeThailandIdcardRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeThailandIdcardResponse`
         """
-        return self.recognize_thailand_idcard_with_http_info(request)
+        return self._recognize_thailand_idcard_with_http_info(request)
 
-    def recognize_thailand_idcard_with_http_info(self, request):
-        all_params = ['thailand_idcard_request_body', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _recognize_thailand_idcard_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2063,14 +1921,10 @@ class OcrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeThailandLicensePlateRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeThailandLicensePlateResponse`
         """
-        return self.recognize_thailand_license_plate_with_http_info(request)
+        return self._recognize_thailand_license_plate_with_http_info(request)
 
-    def recognize_thailand_license_plate_with_http_info(self, request):
-        all_params = ['thailand_license_plate_request_body', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _recognize_thailand_license_plate_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2128,14 +1982,10 @@ class OcrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeTollInvoiceRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeTollInvoiceResponse`
         """
-        return self.recognize_toll_invoice_with_http_info(request)
+        return self._recognize_toll_invoice_with_http_info(request)
 
-    def recognize_toll_invoice_with_http_info(self, request):
-        all_params = ['toll_invoice_request_body', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _recognize_toll_invoice_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2193,14 +2043,10 @@ class OcrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeTrainTicketRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeTrainTicketResponse`
         """
-        return self.recognize_train_ticket_with_http_info(request)
+        return self._recognize_train_ticket_with_http_info(request)
 
-    def recognize_train_ticket_with_http_info(self, request):
-        all_params = ['train_ticket_request_body', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _recognize_train_ticket_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2257,14 +2103,10 @@ class OcrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeTransportationLicenseRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeTransportationLicenseResponse`
         """
-        return self.recognize_transportation_license_with_http_info(request)
+        return self._recognize_transportation_license_with_http_info(request)
 
-    def recognize_transportation_license_with_http_info(self, request):
-        all_params = ['transportation_license_request_body', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _recognize_transportation_license_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2324,14 +2166,10 @@ class OcrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeVatInvoiceRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeVatInvoiceResponse`
         """
-        return self.recognize_vat_invoice_with_http_info(request)
+        return self._recognize_vat_invoice_with_http_info(request)
 
-    def recognize_vat_invoice_with_http_info(self, request):
-        all_params = ['vat_invoice_request_body', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _recognize_vat_invoice_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2389,14 +2227,10 @@ class OcrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeVehicleLicenseRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeVehicleLicenseResponse`
         """
-        return self.recognize_vehicle_license_with_http_info(request)
+        return self._recognize_vehicle_license_with_http_info(request)
 
-    def recognize_vehicle_license_with_http_info(self, request):
-        all_params = ['vehicle_license_request_body', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _recognize_vehicle_license_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2452,14 +2286,10 @@ class OcrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeWaybillElectronicRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeWaybillElectronicResponse`
         """
-        return self.recognize_waybill_electronic_with_http_info(request)
+        return self._recognize_waybill_electronic_with_http_info(request)
 
-    def recognize_waybill_electronic_with_http_info(self, request):
-        all_params = ['waybill_electronic_request_body', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _recognize_waybill_electronic_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2515,14 +2345,10 @@ class OcrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeWebImageRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeWebImageResponse`
         """
-        return self.recognize_web_image_with_http_info(request)
+        return self._recognize_web_image_with_http_info(request)
 
-    def recognize_web_image_with_http_info(self, request):
-        all_params = ['web_image_request_body', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _recognize_web_image_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2578,14 +2404,10 @@ class OcrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeCustomTemplateRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeCustomTemplateResponse`
         """
-        return self.recognize_custom_template_with_http_info(request)
+        return self._recognize_custom_template_with_http_info(request)
 
-    def recognize_custom_template_with_http_info(self, request):
-        all_params = ['custom_template_request_body', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _recognize_custom_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2641,14 +2463,10 @@ class OcrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeVinRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeVinResponse`
         """
-        return self.recognize_vin_with_http_info(request)
+        return self._recognize_vin_with_http_info(request)
 
-    def recognize_vin_with_http_info(self, request):
-        all_params = ['vin_request_body', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _recognize_vin_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

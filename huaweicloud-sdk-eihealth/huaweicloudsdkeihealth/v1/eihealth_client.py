@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class EiHealthClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(EiHealthClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkeihealth.v1.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -53,14 +35,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowAdmetPropertiesRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowAdmetPropertiesResponse`
         """
-        return self.show_admet_properties_with_http_info(request)
+        return self._show_admet_properties_with_http_info(request)
 
-    def show_admet_properties_with_http_info(self, request):
-        all_params = ['show_admet_properties_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_admet_properties_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -113,14 +91,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateCpiTaskRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateCpiTaskResponse`
         """
-        return self.create_cpi_task_with_http_info(request)
+        return self._create_cpi_task_with_http_info(request)
 
-    def create_cpi_task_with_http_info(self, request):
-        all_params = ['create_cpi_task_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_cpi_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -173,14 +147,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowCpiTaskResultRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowCpiTaskResultResponse`
         """
-        return self.show_cpi_task_result_with_http_info(request)
+        return self._show_cpi_task_result_with_http_info(request)
 
-    def show_cpi_task_result_with_http_info(self, request):
-        all_params = ['task_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_cpi_task_result_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -222,6 +192,118 @@ class EiHealthClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def create_custom_props_task(self, request):
+        """新建自定义属性任务接口
+
+        输入自定义属性的任务数据，创建自定义属性建模任务。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateCustomPropsTask
+        :type request: :class:`huaweicloudsdkeihealth.v1.CreateCustomPropsTaskRequest`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.CreateCustomPropsTaskResponse`
+        """
+        return self._create_custom_props_task_with_http_info(request)
+
+    def _create_custom_props_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/custom-props',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateCustomPropsTaskResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_custom_props_task_result(self, request):
+        """查询自定义属性任务
+
+        通过自定义属性任务ID查询任务状态及结果。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowCustomPropsTaskResult
+        :type request: :class:`huaweicloudsdkeihealth.v1.ShowCustomPropsTaskResultRequest`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.ShowCustomPropsTaskResultResponse`
+        """
+        return self._show_custom_props_task_result_with_http_info(request)
+
+    def _show_custom_props_task_result_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/custom-props/{task_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowCustomPropsTaskResultResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def create_generation_task(self, request):
         """新建分子生成任务接口
 
@@ -233,14 +315,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateGenerationTaskRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateGenerationTaskResponse`
         """
-        return self.create_generation_task_with_http_info(request)
+        return self._create_generation_task_with_http_info(request)
 
-    def create_generation_task_with_http_info(self, request):
-        all_params = ['create_generation_task_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_generation_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -293,14 +371,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowGenerationTaskResultRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowGenerationTaskResultResponse`
         """
-        return self.show_generation_task_result_with_http_info(request)
+        return self._show_generation_task_result_with_http_info(request)
 
-    def show_generation_task_result_with_http_info(self, request):
-        all_params = ['task_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_generation_task_result_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -353,14 +427,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.BatchImportAppRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.BatchImportAppResponse`
         """
-        return self.batch_import_app_with_http_info(request)
+        return self._batch_import_app_with_http_info(request)
 
-    def batch_import_app_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'import_app_src_dto']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_import_app_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -415,14 +485,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateAppRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateAppResponse`
         """
-        return self.create_app_with_http_info(request)
+        return self._create_app_with_http_info(request)
 
-    def create_app_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'app_dto']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_app_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -477,14 +543,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteAppRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.DeleteAppResponse`
         """
-        return self.delete_app_with_http_info(request)
+        return self._delete_app_with_http_info(request)
 
-    def delete_app_with_http_info(self, request):
-        all_params = ['app_id', 'eihealth_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_app_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -539,14 +601,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListAppRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListAppResponse`
         """
-        return self.list_app_with_http_info(request)
+        return self._list_app_with_http_info(request)
 
-    def list_app_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'name', 'version']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_app_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -603,14 +661,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.PublishAppRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.PublishAppResponse`
         """
-        return self.publish_app_with_http_info(request)
+        return self._publish_app_with_http_info(request)
 
-    def publish_app_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'app_id', 'publish_asset_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _publish_app_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -667,14 +721,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowAppRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowAppResponse`
         """
-        return self.show_app_with_http_info(request)
+        return self._show_app_with_http_info(request)
 
-    def show_app_with_http_info(self, request):
-        all_params = ['app_id', 'eihealth_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_app_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -729,14 +779,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.SubscribeAppRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.SubscribeAppResponse`
         """
-        return self.subscribe_app_with_http_info(request)
+        return self._subscribe_app_with_http_info(request)
 
-    def subscribe_app_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'subscribe_app_dto']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _subscribe_app_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -791,14 +837,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateAppRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateAppResponse`
         """
-        return self.update_app_with_http_info(request)
+        return self._update_app_with_http_info(request)
 
-    def update_app_with_http_info(self, request):
-        all_params = ['app_id', 'eihealth_project_id', 'app_dto']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_app_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -855,14 +897,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteAssetVersionRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.DeleteAssetVersionResponse`
         """
-        return self.delete_asset_version_with_http_info(request)
+        return self._delete_asset_version_with_http_info(request)
 
-    def delete_asset_version_with_http_info(self, request):
-        all_params = ['asset_id', 'version']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_asset_version_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -917,14 +955,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ExecuteAssetActionRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ExecuteAssetActionResponse`
         """
-        return self.execute_asset_action_with_http_info(request)
+        return self._execute_asset_action_with_http_info(request)
 
-    def execute_asset_action_with_http_info(self, request):
-        all_params = ['asset_id', 'version', 'manage_asset_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _execute_asset_action_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -981,14 +1015,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListAssetRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListAssetResponse`
         """
-        return self.list_asset_with_http_info(request)
+        return self._list_asset_with_http_info(request)
 
-    def list_asset_with_http_info(self, request):
-        all_params = ['scope', 'categories', 'key_word', 'labels', 'limit', 'offset', 'publishers', 'vendor_ids']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_asset_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1055,14 +1085,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListPropertyRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListPropertyResponse`
         """
-        return self.list_property_with_http_info(request)
+        return self._list_property_with_http_info(request)
 
-    def list_property_with_http_info(self, request):
-        all_params = ['_property']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_property_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1115,14 +1141,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowAssetRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowAssetResponse`
         """
-        return self.show_asset_with_http_info(request)
+        return self._show_asset_with_http_info(request)
 
-    def show_asset_with_http_info(self, request):
-        all_params = ['asset_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_asset_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1175,14 +1197,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowAssetVersionRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowAssetVersionResponse`
         """
-        return self.show_asset_version_with_http_info(request)
+        return self._show_asset_version_with_http_info(request)
 
-    def show_asset_version_with_http_info(self, request):
-        all_params = ['asset_id', 'version']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_asset_version_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1237,14 +1255,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateAssetVersionRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateAssetVersionResponse`
         """
-        return self.update_asset_version_with_http_info(request)
+        return self._update_asset_version_with_http_info(request)
 
-    def update_asset_version_with_http_info(self, request):
-        all_params = ['asset_id', 'version', 'update_asset_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_asset_version_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1301,14 +1315,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateAutoJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateAutoJobResponse`
         """
-        return self.create_auto_job_with_http_info(request)
+        return self._create_auto_job_with_http_info(request)
 
-    def create_auto_job_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'auto_job_dto']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_auto_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1363,14 +1373,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteAutoJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.DeleteAutoJobResponse`
         """
-        return self.delete_auto_job_with_http_info(request)
+        return self._delete_auto_job_with_http_info(request)
 
-    def delete_auto_job_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'auto_job_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_auto_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1425,14 +1431,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListAutoJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListAutoJobResponse`
         """
-        return self.list_auto_job_with_http_info(request)
+        return self._list_auto_job_with_http_info(request)
 
-    def list_auto_job_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'x_language', 'limit', 'offset', 'sort_key', 'sort_dir']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_auto_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1495,14 +1497,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowAutoJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowAutoJobResponse`
         """
-        return self.show_auto_job_with_http_info(request)
+        return self._show_auto_job_with_http_info(request)
 
-    def show_auto_job_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'auto_job_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_auto_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1557,14 +1555,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.StartAutoJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.StartAutoJobResponse`
         """
-        return self.start_auto_job_with_http_info(request)
+        return self._start_auto_job_with_http_info(request)
 
-    def start_auto_job_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'auto_job_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _start_auto_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1619,14 +1613,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.StopAutoJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.StopAutoJobResponse`
         """
-        return self.stop_auto_job_with_http_info(request)
+        return self._stop_auto_job_with_http_info(request)
 
-    def stop_auto_job_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'auto_job_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _stop_auto_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1681,14 +1671,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateAutoJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateAutoJobResponse`
         """
-        return self.update_auto_job_with_http_info(request)
+        return self._update_auto_job_with_http_info(request)
 
-    def update_auto_job_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'auto_job_id', 'auto_job_dto']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_auto_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1745,14 +1731,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateScaleOutPolicyRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateScaleOutPolicyResponse`
         """
-        return self.create_scale_out_policy_with_http_info(request)
+        return self._create_scale_out_policy_with_http_info(request)
 
-    def create_scale_out_policy_with_http_info(self, request):
-        all_params = ['create_scale_out_policy_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_scale_out_policy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1805,14 +1787,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteScaleOutPolicyRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.DeleteScaleOutPolicyResponse`
         """
-        return self.delete_scale_out_policy_with_http_info(request)
+        return self._delete_scale_out_policy_with_http_info(request)
 
-    def delete_scale_out_policy_with_http_info(self, request):
-        all_params = ['id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_scale_out_policy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1865,14 +1843,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListScaleOutPolicyRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListScaleOutPolicyResponse`
         """
-        return self.list_scale_out_policy_with_http_info(request)
+        return self._list_scale_out_policy_with_http_info(request)
 
-    def list_scale_out_policy_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_scale_out_policy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1923,14 +1897,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowScaleInPolicyRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowScaleInPolicyResponse`
         """
-        return self.show_scale_in_policy_with_http_info(request)
+        return self._show_scale_in_policy_with_http_info(request)
 
-    def show_scale_in_policy_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_scale_in_policy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1981,14 +1951,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowScaleOutPolicyRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowScaleOutPolicyResponse`
         """
-        return self.show_scale_out_policy_with_http_info(request)
+        return self._show_scale_out_policy_with_http_info(request)
 
-    def show_scale_out_policy_with_http_info(self, request):
-        all_params = ['id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_scale_out_policy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2041,14 +2007,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.StartScaleOutPolicyRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.StartScaleOutPolicyResponse`
         """
-        return self.start_scale_out_policy_with_http_info(request)
+        return self._start_scale_out_policy_with_http_info(request)
 
-    def start_scale_out_policy_with_http_info(self, request):
-        all_params = ['id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _start_scale_out_policy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2101,14 +2063,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.StopScaleOutPolicyRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.StopScaleOutPolicyResponse`
         """
-        return self.stop_scale_out_policy_with_http_info(request)
+        return self._stop_scale_out_policy_with_http_info(request)
 
-    def stop_scale_out_policy_with_http_info(self, request):
-        all_params = ['id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _stop_scale_out_policy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2161,14 +2119,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateScaleInPolicyRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateScaleInPolicyResponse`
         """
-        return self.update_scale_in_policy_with_http_info(request)
+        return self._update_scale_in_policy_with_http_info(request)
 
-    def update_scale_in_policy_with_http_info(self, request):
-        all_params = ['update_scale_in_policy_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_scale_in_policy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2221,14 +2175,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateScaleOutPolicyRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateScaleOutPolicyResponse`
         """
-        return self.update_scale_out_policy_with_http_info(request)
+        return self._update_scale_out_policy_with_http_info(request)
 
-    def update_scale_out_policy_with_http_info(self, request):
-        all_params = ['id', 'update_scale_out_policy_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_scale_out_policy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2283,14 +2233,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateComputingResourceRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateComputingResourceResponse`
         """
-        return self.create_computing_resource_with_http_info(request)
+        return self._create_computing_resource_with_http_info(request)
 
-    def create_computing_resource_with_http_info(self, request):
-        all_params = ['request']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_computing_resource_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2343,14 +2289,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteComputingResourceRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.DeleteComputingResourceResponse`
         """
-        return self.delete_computing_resource_with_http_info(request)
+        return self._delete_computing_resource_with_http_info(request)
 
-    def delete_computing_resource_with_http_info(self, request):
-        all_params = ['id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_computing_resource_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2403,14 +2345,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListComputingResourceFlavorsRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListComputingResourceFlavorsResponse`
         """
-        return self.list_computing_resource_flavors_with_http_info(request)
+        return self._list_computing_resource_flavors_with_http_info(request)
 
-    def list_computing_resource_flavors_with_http_info(self, request):
-        all_params = ['availability_zone_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_computing_resource_flavors_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2463,14 +2401,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListComputingResourcesRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListComputingResourcesResponse`
         """
-        return self.list_computing_resources_with_http_info(request)
+        return self._list_computing_resources_with_http_info(request)
 
-    def list_computing_resources_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_computing_resources_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2521,14 +2455,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.RebootNodeRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.RebootNodeResponse`
         """
-        return self.reboot_node_with_http_info(request)
+        return self._reboot_node_with_http_info(request)
 
-    def reboot_node_with_http_info(self, request):
-        all_params = ['id', 'force']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _reboot_node_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2583,14 +2513,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowBmsDevicesRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowBmsDevicesResponse`
         """
-        return self.show_bms_devices_with_http_info(request)
+        return self._show_bms_devices_with_http_info(request)
 
-    def show_bms_devices_with_http_info(self, request):
-        all_params = ['id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_bms_devices_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2643,14 +2569,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowEvsQuotaRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowEvsQuotaResponse`
         """
-        return self.show_evs_quota_with_http_info(request)
+        return self._show_evs_quota_with_http_info(request)
 
-    def show_evs_quota_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_evs_quota_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2701,14 +2623,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowLeftQuotaRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowLeftQuotaResponse`
         """
-        return self.show_left_quota_with_http_info(request)
+        return self._show_left_quota_with_http_info(request)
 
-    def show_left_quota_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_left_quota_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2759,14 +2677,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowScheduleRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowScheduleResponse`
         """
-        return self.show_schedule_with_http_info(request)
+        return self._show_schedule_with_http_info(request)
 
-    def show_schedule_with_http_info(self, request):
-        all_params = ['id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_schedule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2819,14 +2733,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.StartNodeRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.StartNodeResponse`
         """
-        return self.start_node_with_http_info(request)
+        return self._start_node_with_http_info(request)
 
-    def start_node_with_http_info(self, request):
-        all_params = ['id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _start_node_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2879,14 +2789,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.StopNodeRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.StopNodeResponse`
         """
-        return self.stop_node_with_http_info(request)
+        return self._stop_node_with_http_info(request)
 
-    def stop_node_with_http_info(self, request):
-        all_params = ['id', 'force']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _stop_node_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2941,14 +2847,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateScheduleRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateScheduleResponse`
         """
-        return self.update_schedule_with_http_info(request)
+        return self._update_schedule_with_http_info(request)
 
-    def update_schedule_with_http_info(self, request):
-        all_params = ['id', 'request']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_schedule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3003,14 +2905,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateBackupRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateBackupResponse`
         """
-        return self.create_backup_with_http_info(request)
+        return self._create_backup_with_http_info(request)
 
-    def create_backup_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'request']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_backup_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3065,14 +2963,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteBackupRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.DeleteBackupResponse`
         """
-        return self.delete_backup_with_http_info(request)
+        return self._delete_backup_with_http_info(request)
 
-    def delete_backup_with_http_info(self, request):
-        all_params = ['backup_id', 'eihealth_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_backup_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3127,14 +3021,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListBackupRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListBackupResponse`
         """
-        return self.list_backup_with_http_info(request)
+        return self._list_backup_with_http_info(request)
 
-    def list_backup_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'limit', 'offset', 'sort_dir', 'sort_key']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_backup_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3195,14 +3085,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.RestoreBackupRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.RestoreBackupResponse`
         """
-        return self.restore_backup_with_http_info(request)
+        return self._restore_backup_with_http_info(request)
 
-    def restore_backup_with_http_info(self, request):
-        all_params = ['backup_id', 'eihealth_project_id', 'request']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _restore_backup_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3259,14 +3145,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowBackupPathRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowBackupPathResponse`
         """
-        return self.show_backup_path_with_http_info(request)
+        return self._show_backup_path_with_http_info(request)
 
-    def show_backup_path_with_http_info(self, request):
-        all_params = ['backup_id', 'eihealth_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_backup_path_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3321,14 +3203,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.BatchDeleteDataRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.BatchDeleteDataResponse`
         """
-        return self.batch_delete_data_with_http_info(request)
+        return self._batch_delete_data_with_http_info(request)
 
-    def batch_delete_data_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'request']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_delete_data_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3383,14 +3261,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.CopyDataRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CopyDataResponse`
         """
-        return self.copy_data_with_http_info(request)
+        return self._copy_data_with_http_info(request)
 
-    def copy_data_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'request']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _copy_data_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3445,14 +3319,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateDataRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateDataResponse`
         """
-        return self.create_data_with_http_info(request)
+        return self._create_data_with_http_info(request)
 
-    def create_data_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'request']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_data_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3507,14 +3377,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ImportDataRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ImportDataResponse`
         """
-        return self.import_data_with_http_info(request)
+        return self._import_data_with_http_info(request)
 
-    def import_data_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'request']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _import_data_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3569,14 +3435,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ImportNetworkDataRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ImportNetworkDataResponse`
         """
-        return self.import_network_data_with_http_info(request)
+        return self._import_network_data_with_http_info(request)
 
-    def import_network_data_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'request']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _import_network_data_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3631,14 +3493,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListBucketRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListBucketResponse`
         """
-        return self.list_bucket_with_http_info(request)
+        return self._list_bucket_with_http_info(request)
 
-    def list_bucket_with_http_info(self, request):
-        all_params = ['eihealth_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_bucket_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3691,14 +3549,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListDataRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListDataResponse`
         """
-        return self.list_data_with_http_info(request)
+        return self._list_data_with_http_info(request)
 
-    def list_data_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'limit', 'offset', 'path', 'search_key', 'sort_dir', 'sort_key', 'marker']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_data_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3765,14 +3619,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.PublishDataRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.PublishDataResponse`
         """
-        return self.publish_data_with_http_info(request)
+        return self._publish_data_with_http_info(request)
 
-    def publish_data_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'publish_data_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _publish_data_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3827,14 +3677,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.QuoteDataRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.QuoteDataResponse`
         """
-        return self.quote_data_with_http_info(request)
+        return self._quote_data_with_http_info(request)
 
-    def quote_data_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'request']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _quote_data_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3889,14 +3735,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowBucketStorageRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowBucketStorageResponse`
         """
-        return self.show_bucket_storage_with_http_info(request)
+        return self._show_bucket_storage_with_http_info(request)
 
-    def show_bucket_storage_with_http_info(self, request):
-        all_params = ['eihealth_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_bucket_storage_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3949,14 +3791,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowDataRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowDataResponse`
         """
-        return self.show_data_with_http_info(request)
+        return self._show_data_with_http_info(request)
 
-    def show_data_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'path', 'x_need_content']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_data_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4013,14 +3851,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowDataPolicyRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowDataPolicyResponse`
         """
-        return self.show_data_policy_with_http_info(request)
+        return self._show_data_policy_with_http_info(request)
 
-    def show_data_policy_with_http_info(self, request):
-        all_params = ['eihealth_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_data_policy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4073,14 +3907,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.SubscribeDataRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.SubscribeDataResponse`
         """
-        return self.subscribe_data_with_http_info(request)
+        return self._subscribe_data_with_http_info(request)
 
-    def subscribe_data_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'request']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _subscribe_data_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4135,14 +3965,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateDataPathPolicyRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateDataPathPolicyResponse`
         """
-        return self.update_data_path_policy_with_http_info(request)
+        return self._update_data_path_policy_with_http_info(request)
 
-    def update_data_path_policy_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'path', 'request']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_data_path_policy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4199,14 +4025,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateDataPolicyRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateDataPolicyResponse`
         """
-        return self.update_data_policy_with_http_info(request)
+        return self._update_data_policy_with_http_info(request)
 
-    def update_data_policy_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'request']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_data_policy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4261,14 +4083,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.UploadDataRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.UploadDataResponse`
         """
-        return self.upload_data_with_http_info(request)
+        return self._upload_data_with_http_info(request)
 
-    def upload_data_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'file', 'target_folder', 'part_number', 'total_part', 'multipart_id', 'file_name', 'md5']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _upload_data_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4337,14 +4155,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.CancelDataJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CancelDataJobResponse`
         """
-        return self.cancel_data_job_with_http_info(request)
+        return self._cancel_data_job_with_http_info(request)
 
-    def cancel_data_job_with_http_info(self, request):
-        all_params = ['data_job_id', 'eihealth_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _cancel_data_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4399,14 +4213,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteDataJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.DeleteDataJobResponse`
         """
-        return self.delete_data_job_with_http_info(request)
+        return self._delete_data_job_with_http_info(request)
 
-    def delete_data_job_with_http_info(self, request):
-        all_params = ['data_job_id', 'eihealth_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_data_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4461,14 +4271,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.DownloadDataJobLogRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.DownloadDataJobLogResponse`
         """
-        return self.download_data_job_log_with_http_info(request)
+        return self._download_data_job_log_with_http_info(request)
 
-    def download_data_job_log_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'data_job_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _download_data_job_log_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4523,14 +4329,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListCheckpointRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListCheckpointResponse`
         """
-        return self.list_checkpoint_with_http_info(request)
+        return self._list_checkpoint_with_http_info(request)
 
-    def list_checkpoint_with_http_info(self, request):
-        all_params = ['data_job_id', 'eihealth_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_checkpoint_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4585,14 +4387,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListDataJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListDataJobResponse`
         """
-        return self.list_data_job_with_http_info(request)
+        return self._list_data_job_with_http_info(request)
 
-    def list_data_job_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'creator', 'from_time', 'limit', 'name', 'offset', 'status', 'to_time', 'type', 'finish_from_time', 'finish_to_time', 'sort_dir', 'sort_key']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_data_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4669,14 +4467,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.RetryDataJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.RetryDataJobResponse`
         """
-        return self.retry_data_job_with_http_info(request)
+        return self._retry_data_job_with_http_info(request)
 
-    def retry_data_job_with_http_info(self, request):
-        all_params = ['data_job_id', 'eihealth_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _retry_data_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4731,14 +4525,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowDataJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowDataJobResponse`
         """
-        return self.show_data_job_with_http_info(request)
+        return self._show_data_job_with_http_info(request)
 
-    def show_data_job_with_http_info(self, request):
-        all_params = ['data_job_id', 'eihealth_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_data_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4793,14 +4583,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateDatabaseDataRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateDatabaseDataResponse`
         """
-        return self.create_database_data_with_http_info(request)
+        return self._create_database_data_with_http_info(request)
 
-    def create_database_data_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'database_id', 'request']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_database_data_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4857,14 +4643,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateInstanceRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateInstanceResponse`
         """
-        return self.create_instance_with_http_info(request)
+        return self._create_instance_with_http_info(request)
 
-    def create_instance_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'request']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4919,14 +4701,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteDatabaseDataRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.DeleteDatabaseDataResponse`
         """
-        return self.delete_database_data_with_http_info(request)
+        return self._delete_database_data_with_http_info(request)
 
-    def delete_database_data_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'database_id', 'row_num']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_database_data_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4983,14 +4761,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteInstanceRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.DeleteInstanceResponse`
         """
-        return self.delete_instance_with_http_info(request)
+        return self._delete_instance_with_http_info(request)
 
-    def delete_instance_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'database_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5045,14 +4819,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ImportDatabaseDataRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ImportDatabaseDataResponse`
         """
-        return self.import_database_data_with_http_info(request)
+        return self._import_database_data_with_http_info(request)
 
-    def import_database_data_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'database_id', 'request']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _import_database_data_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5109,14 +4879,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListDatabaseDataRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListDatabaseDataResponse`
         """
-        return self.list_database_data_with_http_info(request)
+        return self._list_database_data_with_http_info(request)
 
-    def list_database_data_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'database_id', 'limit', 'query', 'offset', 'sort_key', 'sort_dir']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_database_data_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5181,14 +4947,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListInstanceRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListInstanceResponse`
         """
-        return self.list_instance_with_http_info(request)
+        return self._list_instance_with_http_info(request)
 
-    def list_instance_with_http_info(self, request):
-        all_params = ['eihealth_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5241,14 +5003,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.QuoteInstanceRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.QuoteInstanceResponse`
         """
-        return self.quote_instance_with_http_info(request)
+        return self._quote_instance_with_http_info(request)
 
-    def quote_instance_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'request']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _quote_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5303,14 +5061,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowInstanceRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowInstanceResponse`
         """
-        return self.show_instance_with_http_info(request)
+        return self._show_instance_with_http_info(request)
 
-    def show_instance_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'database_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5365,14 +5119,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateDatabaseDataRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateDatabaseDataResponse`
         """
-        return self.update_database_data_with_http_info(request)
+        return self._update_database_data_with_http_info(request)
 
-    def update_database_data_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'database_id', 'row_num', 'request']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_database_data_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5431,14 +5181,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateDatabaseResourceRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateDatabaseResourceResponse`
         """
-        return self.create_database_resource_with_http_info(request)
+        return self._create_database_resource_with_http_info(request)
 
-    def create_database_resource_with_http_info(self, request):
-        all_params = ['request']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_database_resource_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5491,14 +5237,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteDatabaseResourceRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.DeleteDatabaseResourceResponse`
         """
-        return self.delete_database_resource_with_http_info(request)
+        return self._delete_database_resource_with_http_info(request)
 
-    def delete_database_resource_with_http_info(self, request):
-        all_params = ['id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_database_resource_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5551,14 +5293,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListDatabaseResourceRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListDatabaseResourceResponse`
         """
-        return self.list_database_resource_with_http_info(request)
+        return self._list_database_resource_with_http_info(request)
 
-    def list_database_resource_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_database_resource_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5609,14 +5347,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListDatabaseResourceFlavorRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListDatabaseResourceFlavorResponse`
         """
-        return self.list_database_resource_flavor_with_http_info(request)
+        return self._list_database_resource_flavor_with_http_info(request)
 
-    def list_database_resource_flavor_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_database_resource_flavor_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5667,14 +5401,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListIamGroupUsersRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListIamGroupUsersResponse`
         """
-        return self.list_iam_group_users_with_http_info(request)
+        return self._list_iam_group_users_with_http_info(request)
 
-    def list_iam_group_users_with_http_info(self, request):
-        all_params = ['group_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_iam_group_users_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5727,14 +5457,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListIamGroupsRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListIamGroupsResponse`
         """
-        return self.list_iam_groups_with_http_info(request)
+        return self._list_iam_groups_with_http_info(request)
 
-    def list_iam_groups_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_iam_groups_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5785,14 +5511,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListIamUsersRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListIamUsersResponse`
         """
-        return self.list_iam_users_with_http_info(request)
+        return self._list_iam_users_with_http_info(request)
 
-    def list_iam_users_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_iam_users_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5843,14 +5565,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.BatchDeleteTagRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.BatchDeleteTagResponse`
         """
-        return self.batch_delete_tag_with_http_info(request)
+        return self._batch_delete_tag_with_http_info(request)
 
-    def batch_delete_tag_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'image_id', 'request']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_delete_tag_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5907,14 +5625,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateImageRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateImageResponse`
         """
-        return self.create_image_with_http_info(request)
+        return self._create_image_with_http_info(request)
 
-    def create_image_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'request']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_image_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5969,14 +5683,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteImageRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.DeleteImageResponse`
         """
-        return self.delete_image_with_http_info(request)
+        return self._delete_image_with_http_info(request)
 
-    def delete_image_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'image_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_image_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6031,14 +5741,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteTagRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.DeleteTagResponse`
         """
-        return self.delete_tag_with_http_info(request)
+        return self._delete_tag_with_http_info(request)
 
-    def delete_tag_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'image_id', 'tag']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_tag_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6095,14 +5801,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ImportImageRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ImportImageResponse`
         """
-        return self.import_image_with_http_info(request)
+        return self._import_image_with_http_info(request)
 
-    def import_image_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'request']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _import_image_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6157,14 +5859,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListImageRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListImageResponse`
         """
-        return self.list_image_with_http_info(request)
+        return self._list_image_with_http_info(request)
 
-    def list_image_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'type', 'name', 'show_empty']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_image_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6223,14 +5921,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListImageTagRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListImageTagResponse`
         """
-        return self.list_image_tag_with_http_info(request)
+        return self._list_image_tag_with_http_info(request)
 
-    def list_image_tag_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'image_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_image_tag_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6285,14 +5979,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.PublishImageRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.PublishImageResponse`
         """
-        return self.publish_image_with_http_info(request)
+        return self._publish_image_with_http_info(request)
 
-    def publish_image_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'publish_asset_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _publish_image_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6347,14 +6037,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowDockerLoginRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowDockerLoginResponse`
         """
-        return self.show_docker_login_with_http_info(request)
+        return self._show_docker_login_with_http_info(request)
 
-    def show_docker_login_with_http_info(self, request):
-        all_params = ['eihealth_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_docker_login_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6407,14 +6093,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.SubscribeImageRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.SubscribeImageResponse`
         """
-        return self.subscribe_image_with_http_info(request)
+        return self._subscribe_image_with_http_info(request)
 
-    def subscribe_image_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'subscribe_image_dto']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _subscribe_image_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6469,14 +6151,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateImageRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateImageResponse`
         """
-        return self.update_image_with_http_info(request)
+        return self._update_image_with_http_info(request)
 
-    def update_image_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'image_id', 'request']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_image_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6533,14 +6211,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowJobConfigRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowJobConfigResponse`
         """
-        return self.show_job_config_with_http_info(request)
+        return self._show_job_config_with_http_info(request)
 
-    def show_job_config_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_job_config_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6591,14 +6265,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateJobConfigRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateJobConfigResponse`
         """
-        return self.update_job_config_with_http_info(request)
+        return self._update_job_config_with_http_info(request)
 
-    def update_job_config_with_http_info(self, request):
-        all_params = ['job_config_dto']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_job_config_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6651,14 +6321,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.BatchCancelJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.BatchCancelJobResponse`
         """
-        return self.batch_cancel_job_with_http_info(request)
+        return self._batch_cancel_job_with_http_info(request)
 
-    def batch_cancel_job_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'job_ids', 'x_force']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_cancel_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6715,14 +6381,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.BatchDeleteJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.BatchDeleteJobResponse`
         """
-        return self.batch_delete_job_with_http_info(request)
+        return self._batch_delete_job_with_http_info(request)
 
-    def batch_delete_job_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'job_ids']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_delete_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6777,14 +6439,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.BatchRetryJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.BatchRetryJobResponse`
         """
-        return self.batch_retry_job_with_http_info(request)
+        return self._batch_retry_job_with_http_info(request)
 
-    def batch_retry_job_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'job_ids']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_retry_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6839,14 +6497,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.CancelJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CancelJobResponse`
         """
-        return self.cancel_job_with_http_info(request)
+        return self._cancel_job_with_http_info(request)
 
-    def cancel_job_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'job_id', 'terminate_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _cancel_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6903,14 +6557,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.DeleteJobResponse`
         """
-        return self.delete_job_with_http_info(request)
+        return self._delete_job_with_http_info(request)
 
-    def delete_job_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'job_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6965,14 +6615,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ExecuteJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ExecuteJobResponse`
         """
-        return self.execute_job_with_http_info(request)
+        return self._execute_job_with_http_info(request)
 
-    def execute_job_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'job_dto']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _execute_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7027,14 +6673,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListJobResponse`
         """
-        return self.list_job_with_http_info(request)
+        return self._list_job_with_http_info(request)
 
-    def list_job_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'end_time', 'job_name', 'labels', 'limit', 'offset', 'sort_dir', 'sort_key', 'start_time', 'status', 'tool_name', 'user_name', 'finish_start_time', 'finish_end_time']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7114,14 +6756,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.RetryJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.RetryJobResponse`
         """
-        return self.retry_job_with_http_info(request)
+        return self._retry_job_with_http_info(request)
 
-    def retry_job_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'job_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _retry_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7176,14 +6814,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowJobResponse`
         """
-        return self.show_job_with_http_info(request)
+        return self._show_job_with_http_info(request)
 
-    def show_job_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'job_id', 'x_addition_info']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7240,14 +6874,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowJobEventRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowJobEventResponse`
         """
-        return self.show_job_event_with_http_info(request)
+        return self._show_job_event_with_http_info(request)
 
-    def show_job_event_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'job_id', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_job_event_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7304,14 +6934,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowJobLogRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowJobLogResponse`
         """
-        return self.show_job_log_with_http_info(request)
+        return self._show_job_log_with_http_info(request)
 
-    def show_job_log_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'job_id', 'task_name', 'task_index']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_job_log_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7370,14 +6996,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowTaskEventsRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowTaskEventsResponse`
         """
-        return self.show_task_events_with_http_info(request)
+        return self._show_task_events_with_http_info(request)
 
-    def show_task_events_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'job_id', 'task_name', 'task_index']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_task_events_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7436,14 +7058,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowTaskInstanceEventsRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowTaskInstanceEventsResponse`
         """
-        return self.show_task_instance_events_with_http_info(request)
+        return self._show_task_instance_events_with_http_info(request)
 
-    def show_task_instance_events_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'job_id', 'task_name', 'instance_name', 'task_index']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_task_instance_events_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7504,14 +7122,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowTaskInstanceMetricDataRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowTaskInstanceMetricDataResponse`
         """
-        return self.show_task_instance_metric_data_with_http_info(request)
+        return self._show_task_instance_metric_data_with_http_info(request)
 
-    def show_task_instance_metric_data_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'job_id', 'task_name', 'instance_name', 'metric_name', 'task_index', 'from_time', 'to_time', 'method']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_task_instance_metric_data_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7580,14 +7194,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowTaskInstancePodRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowTaskInstancePodResponse`
         """
-        return self.show_task_instance_pod_with_http_info(request)
+        return self._show_task_instance_pod_with_http_info(request)
 
-    def show_task_instance_pod_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'job_id', 'task_name', 'instance_name', 'task_index']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_task_instance_pod_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7648,14 +7258,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowTaskInstancesRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowTaskInstancesResponse`
         """
-        return self.show_task_instances_with_http_info(request)
+        return self._show_task_instances_with_http_info(request)
 
-    def show_task_instances_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'job_id', 'task_name', 'task_index']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_task_instances_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7714,14 +7320,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateJobResponse`
         """
-        return self.update_job_with_http_info(request)
+        return self._update_job_with_http_info(request)
 
-    def update_job_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'job_id', 'update_job_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7778,14 +7380,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.BatchDeleteLabelRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.BatchDeleteLabelResponse`
         """
-        return self.batch_delete_label_with_http_info(request)
+        return self._batch_delete_label_with_http_info(request)
 
-    def batch_delete_label_with_http_info(self, request):
-        all_params = ['label_ids']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_delete_label_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7838,14 +7436,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateLabelRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateLabelResponse`
         """
-        return self.create_label_with_http_info(request)
+        return self._create_label_with_http_info(request)
 
-    def create_label_with_http_info(self, request):
-        all_params = ['label']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_label_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7898,14 +7492,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteLabelRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.DeleteLabelResponse`
         """
-        return self.delete_label_with_http_info(request)
+        return self._delete_label_with_http_info(request)
 
-    def delete_label_with_http_info(self, request):
-        all_params = ['label_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_label_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7958,14 +7548,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListLabelRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListLabelResponse`
         """
-        return self.list_label_with_http_info(request)
+        return self._list_label_with_http_info(request)
 
-    def list_label_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_label_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -8016,14 +7602,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateLabelPageRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateLabelPageResponse`
         """
-        return self.create_label_page_with_http_info(request)
+        return self._create_label_page_with_http_info(request)
 
-    def create_label_page_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'label_page_dto']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_label_page_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -8078,14 +7660,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteLabelPageRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.DeleteLabelPageResponse`
         """
-        return self.delete_label_page_with_http_info(request)
+        return self._delete_label_page_with_http_info(request)
 
-    def delete_label_page_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'label_page_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_label_page_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -8140,14 +7718,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListLabelPageRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListLabelPageResponse`
         """
-        return self.list_label_page_with_http_info(request)
+        return self._list_label_page_with_http_info(request)
 
-    def list_label_page_with_http_info(self, request):
-        all_params = ['eihealth_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_label_page_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -8200,14 +7774,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.BatchDeleteNoticeRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.BatchDeleteNoticeResponse`
         """
-        return self.batch_delete_notice_with_http_info(request)
+        return self._batch_delete_notice_with_http_info(request)
 
-    def batch_delete_notice_with_http_info(self, request):
-        all_params = ['notice_ids']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_delete_notice_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -8260,14 +7830,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.BatchUpdateNoticeRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.BatchUpdateNoticeResponse`
         """
-        return self.batch_update_notice_with_http_info(request)
+        return self._batch_update_notice_with_http_info(request)
 
-    def batch_update_notice_with_http_info(self, request):
-        all_params = ['notice_ids']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_update_notice_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -8320,14 +7886,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.CheckEmailConnectionRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CheckEmailConnectionResponse`
         """
-        return self.check_email_connection_with_http_info(request)
+        return self._check_email_connection_with_http_info(request)
 
-    def check_email_connection_with_http_info(self, request):
-        all_params = ['message_email_config_dto']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _check_email_connection_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -8380,14 +7942,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteMessageEmailConfigRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.DeleteMessageEmailConfigResponse`
         """
-        return self.delete_message_email_config_with_http_info(request)
+        return self._delete_message_email_config_with_http_info(request)
 
-    def delete_message_email_config_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_message_email_config_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -8438,14 +7996,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListMessageRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListMessageResponse`
         """
-        return self.list_message_with_http_info(request)
+        return self._list_message_with_http_info(request)
 
-    def list_message_with_http_info(self, request):
-        all_params = ['eihealth_project_name', 'limit', 'message_type', 'offset', 'operator', 'resource_type', 'status']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_message_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -8510,14 +8064,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListMessageStatisticsRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListMessageStatisticsResponse`
         """
-        return self.list_message_statistics_with_http_info(request)
+        return self._list_message_statistics_with_http_info(request)
 
-    def list_message_statistics_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_message_statistics_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -8568,14 +8118,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListNoticeRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListNoticeResponse`
         """
-        return self.list_notice_with_http_info(request)
+        return self._list_notice_with_http_info(request)
 
-    def list_notice_with_http_info(self, request):
-        all_params = ['is_read', 'limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_notice_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -8632,14 +8178,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowMessageClearRuleRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowMessageClearRuleResponse`
         """
-        return self.show_message_clear_rule_with_http_info(request)
+        return self._show_message_clear_rule_with_http_info(request)
 
-    def show_message_clear_rule_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_message_clear_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -8690,14 +8232,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowMessageEmailConfigRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowMessageEmailConfigResponse`
         """
-        return self.show_message_email_config_with_http_info(request)
+        return self._show_message_email_config_with_http_info(request)
 
-    def show_message_email_config_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_message_email_config_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -8748,14 +8286,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowMessageReceiveConfigRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowMessageReceiveConfigResponse`
         """
-        return self.show_message_receive_config_with_http_info(request)
+        return self._show_message_receive_config_with_http_info(request)
 
-    def show_message_receive_config_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_message_receive_config_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -8806,14 +8340,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateMessageClearRuleRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateMessageClearRuleResponse`
         """
-        return self.update_message_clear_rule_with_http_info(request)
+        return self._update_message_clear_rule_with_http_info(request)
 
-    def update_message_clear_rule_with_http_info(self, request):
-        all_params = ['message_clear_rules_dto']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_message_clear_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -8866,14 +8396,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateMessageEmailConfigRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateMessageEmailConfigResponse`
         """
-        return self.update_message_email_config_with_http_info(request)
+        return self._update_message_email_config_with_http_info(request)
 
-    def update_message_email_config_with_http_info(self, request):
-        all_params = ['message_email_config_dto']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_message_email_config_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -8926,14 +8452,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateMessageReceiveConfigRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateMessageReceiveConfigResponse`
         """
-        return self.update_message_receive_config_with_http_info(request)
+        return self._update_message_receive_config_with_http_info(request)
 
-    def update_message_receive_config_with_http_info(self, request):
-        all_params = ['message_receive_config_dto']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_message_receive_config_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -8986,14 +8508,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.CleanNextflowCacheRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CleanNextflowCacheResponse`
         """
-        return self.clean_nextflow_cache_with_http_info(request)
+        return self._clean_nextflow_cache_with_http_info(request)
 
-    def clean_nextflow_cache_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _clean_nextflow_cache_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -9044,14 +8562,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.InstallNextflowRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.InstallNextflowResponse`
         """
-        return self.install_nextflow_with_http_info(request)
+        return self._install_nextflow_with_http_info(request)
 
-    def install_nextflow_with_http_info(self, request):
-        all_params = ['file', 'part_number', 'total_part', 'multipart_id', 'file_name', 'version']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _install_nextflow_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -9116,14 +8630,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListNextflowVersionRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListNextflowVersionResponse`
         """
-        return self.list_nextflow_version_with_http_info(request)
+        return self._list_nextflow_version_with_http_info(request)
 
-    def list_nextflow_version_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_nextflow_version_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -9174,14 +8684,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowNextflowRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowNextflowResponse`
         """
-        return self.show_nextflow_with_http_info(request)
+        return self._show_nextflow_with_http_info(request)
 
-    def show_nextflow_with_http_info(self, request):
-        all_params = ['id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_nextflow_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -9234,14 +8740,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.UninstallNextflowRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.UninstallNextflowResponse`
         """
-        return self.uninstall_nextflow_with_http_info(request)
+        return self._uninstall_nextflow_with_http_info(request)
 
-    def uninstall_nextflow_with_http_info(self, request):
-        all_params = ['id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _uninstall_nextflow_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -9294,14 +8796,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateNextflowJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateNextflowJobResponse`
         """
-        return self.create_nextflow_job_with_http_info(request)
+        return self._create_nextflow_job_with_http_info(request)
 
-    def create_nextflow_job_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'name', 'workflow_id', 'description', 'labels', 'params']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_nextflow_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -9367,14 +8865,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteNextflowJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.DeleteNextflowJobResponse`
         """
-        return self.delete_nextflow_job_with_http_info(request)
+        return self._delete_nextflow_job_with_http_info(request)
 
-    def delete_nextflow_job_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'job_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_nextflow_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -9429,14 +8923,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListNextflowJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListNextflowJobResponse`
         """
-        return self.list_nextflow_job_with_http_info(request)
+        return self._list_nextflow_job_with_http_info(request)
 
-    def list_nextflow_job_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'limit', 'offset', 'sort_dir', 'sort_key', 'job_name', 'labels', 'status', 'workflow_name', 'user_name', 'create_start_time', 'create_end_time', 'finish_start_time', 'finish_end_time']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_nextflow_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -9516,14 +9006,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.RetryNextflowJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.RetryNextflowJobResponse`
         """
-        return self.retry_nextflow_job_with_http_info(request)
+        return self._retry_nextflow_job_with_http_info(request)
 
-    def retry_nextflow_job_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'job_id', 'params']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _retry_nextflow_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -9582,14 +9068,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowNextflowJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowNextflowJobResponse`
         """
-        return self.show_nextflow_job_with_http_info(request)
+        return self._show_nextflow_job_with_http_info(request)
 
-    def show_nextflow_job_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'job_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_nextflow_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -9644,14 +9126,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowNextflowJobLogRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowNextflowJobLogResponse`
         """
-        return self.show_nextflow_job_log_with_http_info(request)
+        return self._show_nextflow_job_log_with_http_info(request)
 
-    def show_nextflow_job_log_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'job_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_nextflow_job_log_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -9706,14 +9184,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowNextflowJobReportsRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowNextflowJobReportsResponse`
         """
-        return self.show_nextflow_job_reports_with_http_info(request)
+        return self._show_nextflow_job_reports_with_http_info(request)
 
-    def show_nextflow_job_reports_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'job_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_nextflow_job_reports_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -9768,14 +9242,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.StopNextflowJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.StopNextflowJobResponse`
         """
-        return self.stop_nextflow_job_with_http_info(request)
+        return self._stop_nextflow_job_with_http_info(request)
 
-    def stop_nextflow_job_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'job_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _stop_nextflow_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -9830,14 +9300,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListNextflowTaskRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListNextflowTaskResponse`
         """
-        return self.list_nextflow_task_with_http_info(request)
+        return self._list_nextflow_task_with_http_info(request)
 
-    def list_nextflow_task_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'job_id', 'search_key']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_nextflow_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -9894,14 +9360,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowNextflowTaskDetailRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowNextflowTaskDetailResponse`
         """
-        return self.show_nextflow_task_detail_with_http_info(request)
+        return self._show_nextflow_task_detail_with_http_info(request)
 
-    def show_nextflow_task_detail_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'job_id', 'task_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_nextflow_task_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -9958,14 +9420,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowNextflowTaskLogRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowNextflowTaskLogResponse`
         """
-        return self.show_nextflow_task_log_with_http_info(request)
+        return self._show_nextflow_task_log_with_http_info(request)
 
-    def show_nextflow_task_log_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'job_id', 'task_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_nextflow_task_log_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -10022,14 +9480,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateNextflowWorkflowRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateNextflowWorkflowResponse`
         """
-        return self.create_nextflow_workflow_with_http_info(request)
+        return self._create_nextflow_workflow_with_http_info(request)
 
-    def create_nextflow_workflow_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'workflow_file', 'name', 'main_file', 'description', 'labels', 'params']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_nextflow_workflow_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -10097,14 +9551,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteNextflowWorkflowRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.DeleteNextflowWorkflowResponse`
         """
-        return self.delete_nextflow_workflow_with_http_info(request)
+        return self._delete_nextflow_workflow_with_http_info(request)
 
-    def delete_nextflow_workflow_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'workflow_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_nextflow_workflow_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -10159,14 +9609,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListNextflowWorkflowRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListNextflowWorkflowResponse`
         """
-        return self.list_nextflow_workflow_with_http_info(request)
+        return self._list_nextflow_workflow_with_http_info(request)
 
-    def list_nextflow_workflow_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_nextflow_workflow_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -10221,14 +9667,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowNextflowWorkflowRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowNextflowWorkflowResponse`
         """
-        return self.show_nextflow_workflow_with_http_info(request)
+        return self._show_nextflow_workflow_with_http_info(request)
 
-    def show_nextflow_workflow_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'workflow_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_nextflow_workflow_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -10283,14 +9725,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateNextflowWorkflowRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateNextflowWorkflowResponse`
         """
-        return self.update_nextflow_workflow_with_http_info(request)
+        return self._update_nextflow_workflow_with_http_info(request)
 
-    def update_nextflow_workflow_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'workflow_id', 'workflow_file', 'description', 'labels', 'main_file', 'params']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_nextflow_workflow_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -10358,14 +9796,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.BatchUpdateNodeLabelRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.BatchUpdateNodeLabelResponse`
         """
-        return self.batch_update_node_label_with_http_info(request)
+        return self._batch_update_node_label_with_http_info(request)
 
-    def batch_update_node_label_with_http_info(self, request):
-        all_params = ['server_id', 'request']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_update_node_label_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -10420,14 +9854,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListClusterAllNodeLabelRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListClusterAllNodeLabelResponse`
         """
-        return self.list_cluster_all_node_label_with_http_info(request)
+        return self._list_cluster_all_node_label_with_http_info(request)
 
-    def list_cluster_all_node_label_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_cluster_all_node_label_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -10478,14 +9908,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListNodeLabelRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListNodeLabelResponse`
         """
-        return self.list_node_label_with_http_info(request)
+        return self._list_node_label_with_http_info(request)
 
-    def list_node_label_with_http_info(self, request):
-        all_params = ['server_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_node_label_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -10538,14 +9964,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListPresetLabelRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListPresetLabelResponse`
         """
-        return self.list_preset_label_with_http_info(request)
+        return self._list_preset_label_with_http_info(request)
 
-    def list_preset_label_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_preset_label_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -10596,14 +10018,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateNotebookRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateNotebookResponse`
         """
-        return self.create_notebook_with_http_info(request)
+        return self._create_notebook_with_http_info(request)
 
-    def create_notebook_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'request']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_notebook_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -10658,14 +10076,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteNotebookRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.DeleteNotebookResponse`
         """
-        return self.delete_notebook_with_http_info(request)
+        return self._delete_notebook_with_http_info(request)
 
-    def delete_notebook_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'notebook_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_notebook_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -10720,14 +10134,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListNotebookRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListNotebookResponse`
         """
-        return self.list_notebook_with_http_info(request)
+        return self._list_notebook_with_http_info(request)
 
-    def list_notebook_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'limit', 'name', 'offset', 'status']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_notebook_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -10788,14 +10198,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListNotebookToolRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListNotebookToolResponse`
         """
-        return self.list_notebook_tool_with_http_info(request)
+        return self._list_notebook_tool_with_http_info(request)
 
-    def list_notebook_tool_with_http_info(self, request):
-        all_params = ['eihealth_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_notebook_tool_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -10848,14 +10254,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowNotebookRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowNotebookResponse`
         """
-        return self.show_notebook_with_http_info(request)
+        return self._show_notebook_with_http_info(request)
 
-    def show_notebook_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'notebook_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_notebook_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -10910,14 +10312,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowNotebookTokenRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowNotebookTokenResponse`
         """
-        return self.show_notebook_token_with_http_info(request)
+        return self._show_notebook_token_with_http_info(request)
 
-    def show_notebook_token_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'notebook_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_notebook_token_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -10972,14 +10370,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.StopOrStartNotebookRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.StopOrStartNotebookResponse`
         """
-        return self.stop_or_start_notebook_with_http_info(request)
+        return self._stop_or_start_notebook_with_http_info(request)
 
-    def stop_or_start_notebook_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'notebook_id', 'request']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _stop_or_start_notebook_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -11036,14 +10430,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateNotebookRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateNotebookResponse`
         """
-        return self.update_notebook_with_http_info(request)
+        return self._update_notebook_with_http_info(request)
 
-    def update_notebook_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'notebook_id', 'request']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_notebook_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -11100,14 +10490,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListObsBucketRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListObsBucketResponse`
         """
-        return self.list_obs_bucket_with_http_info(request)
+        return self._list_obs_bucket_with_http_info(request)
 
-    def list_obs_bucket_with_http_info(self, request):
-        all_params = ['type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_obs_bucket_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -11160,14 +10546,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListObsBucketObjectRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListObsBucketObjectResponse`
         """
-        return self.list_obs_bucket_object_with_http_info(request)
+        return self._list_obs_bucket_object_with_http_info(request)
 
-    def list_obs_bucket_object_with_http_info(self, request):
-        all_params = ['bucket_name', 'limit', 'offset', 'path', 'search_key']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_obs_bucket_object_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -11228,14 +10610,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowOverviewRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowOverviewResponse`
         """
-        return self.show_overview_with_http_info(request)
+        return self._show_overview_with_http_info(request)
 
-    def show_overview_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_overview_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -11286,14 +10664,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.CreatePerformanceResourceRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreatePerformanceResourceResponse`
         """
-        return self.create_performance_resource_with_http_info(request)
+        return self._create_performance_resource_with_http_info(request)
 
-    def create_performance_resource_with_http_info(self, request):
-        all_params = ['request']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_performance_resource_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -11346,14 +10720,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.DeletePerformanceResourceRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.DeletePerformanceResourceResponse`
         """
-        return self.delete_performance_resource_with_http_info(request)
+        return self._delete_performance_resource_with_http_info(request)
 
-    def delete_performance_resource_with_http_info(self, request):
-        all_params = ['id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_performance_resource_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -11406,14 +10776,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListPerformanceResourcesRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListPerformanceResourcesResponse`
         """
-        return self.list_performance_resources_with_http_info(request)
+        return self._list_performance_resources_with_http_info(request)
 
-    def list_performance_resources_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_performance_resources_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -11464,14 +10830,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdatePerformanceResourceRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdatePerformanceResourceResponse`
         """
-        return self.update_performance_resource_with_http_info(request)
+        return self._update_performance_resource_with_http_info(request)
 
-    def update_performance_resource_with_http_info(self, request):
-        all_params = ['id', 'request']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_performance_resource_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -11526,14 +10888,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.BatchDeleteMemberRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.BatchDeleteMemberResponse`
         """
-        return self.batch_delete_member_with_http_info(request)
+        return self._batch_delete_member_with_http_info(request)
 
-    def batch_delete_member_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'request']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_delete_member_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -11588,14 +10946,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateProjectRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateProjectResponse`
         """
-        return self.create_project_with_http_info(request)
+        return self._create_project_with_http_info(request)
 
-    def create_project_with_http_info(self, request):
-        all_params = ['request']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_project_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -11648,14 +11002,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteMemberRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.DeleteMemberResponse`
         """
-        return self.delete_member_with_http_info(request)
+        return self._delete_member_with_http_info(request)
 
-    def delete_member_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'user_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_member_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -11710,14 +11060,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteProjectRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.DeleteProjectResponse`
         """
-        return self.delete_project_with_http_info(request)
+        return self._delete_project_with_http_info(request)
 
-    def delete_project_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'x_delete_now']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_project_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -11772,14 +11118,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListProjectRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListProjectResponse`
         """
-        return self.list_project_with_http_info(request)
+        return self._list_project_with_http_info(request)
 
-    def list_project_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_project_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -11830,14 +11172,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowProjectRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowProjectResponse`
         """
-        return self.show_project_with_http_info(request)
+        return self._show_project_with_http_info(request)
 
-    def show_project_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'x_bucket_name', 'x_namespace_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_project_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -11894,14 +11232,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.TransferProjectRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.TransferProjectResponse`
         """
-        return self.transfer_project_with_http_info(request)
+        return self._transfer_project_with_http_info(request)
 
-    def transfer_project_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'request']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _transfer_project_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -11956,14 +11290,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateMemberRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateMemberResponse`
         """
-        return self.update_member_with_http_info(request)
+        return self._update_member_with_http_info(request)
 
-    def update_member_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'user_id', 'request']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_member_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -12020,14 +11350,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateProjectRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateProjectResponse`
         """
-        return self.update_project_with_http_info(request)
+        return self._update_project_with_http_info(request)
 
-    def update_project_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'request']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_project_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -12082,14 +11408,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.DownloadDataTraceRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.DownloadDataTraceResponse`
         """
-        return self.download_data_trace_with_http_info(request)
+        return self._download_data_trace_with_http_info(request)
 
-    def download_data_trace_with_http_info(self, request):
-        all_params = ['x_language', 'eihealth_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _download_data_trace_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -12144,14 +11466,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowProjectTraceRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowProjectTraceResponse`
         """
-        return self.show_project_trace_with_http_info(request)
+        return self._show_project_trace_with_http_info(request)
 
-    def show_project_trace_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'path', 'limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_project_trace_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -12210,14 +11528,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowProjectTraceDataRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowProjectTraceDataResponse`
         """
-        return self.show_project_trace_data_with_http_info(request)
+        return self._show_project_trace_data_with_http_info(request)
 
-    def show_project_trace_data_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'path']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_project_trace_data_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -12272,14 +11586,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowProjectTrackerRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowProjectTrackerResponse`
         """
-        return self.show_project_tracker_with_http_info(request)
+        return self._show_project_tracker_with_http_info(request)
 
-    def show_project_tracker_with_http_info(self, request):
-        all_params = ['eihealth_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_project_tracker_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -12332,14 +11642,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateProjectTrackerRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateProjectTrackerResponse`
         """
-        return self.update_project_tracker_with_http_info(request)
+        return self._update_project_tracker_with_http_info(request)
 
-    def update_project_tracker_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'update_tracker_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_project_tracker_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -12394,14 +11700,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.BatchDownloadResourceStatDataRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.BatchDownloadResourceStatDataResponse`
         """
-        return self.batch_download_resource_stat_data_with_http_info(request)
+        return self._batch_download_resource_stat_data_with_http_info(request)
 
-    def batch_download_resource_stat_data_with_http_info(self, request):
-        all_params = ['batch_query_stat_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_download_resource_stat_data_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -12454,14 +11756,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowResourceMetricDataRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowResourceMetricDataResponse`
         """
-        return self.show_resource_metric_data_with_http_info(request)
+        return self._show_resource_metric_data_with_http_info(request)
 
-    def show_resource_metric_data_with_http_info(self, request):
-        all_params = ['metric_name', 'from_time', 'to_time', 'period', 'method', 'resource_id', 'device_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_resource_metric_data_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -12526,14 +11824,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteStarRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.DeleteStarResponse`
         """
-        return self.delete_star_with_http_info(request)
+        return self._delete_star_with_http_info(request)
 
-    def delete_star_with_http_info(self, request):
-        all_params = ['asset_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_star_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -12586,14 +11880,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListStarRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListStarResponse`
         """
-        return self.list_star_with_http_info(request)
+        return self._list_star_with_http_info(request)
 
-    def list_star_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_star_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -12644,14 +11934,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateStarRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateStarResponse`
         """
-        return self.update_star_with_http_info(request)
+        return self._update_star_with_http_info(request)
 
-    def update_star_with_http_info(self, request):
-        all_params = ['asset_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_star_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -12704,14 +11990,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListGlobalWorkflowStatisticRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListGlobalWorkflowStatisticResponse`
         """
-        return self.list_global_workflow_statistic_with_http_info(request)
+        return self._list_global_workflow_statistic_with_http_info(request)
 
-    def list_global_workflow_statistic_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_global_workflow_statistic_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -12762,14 +12044,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListPerformanceResourceStatRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListPerformanceResourceStatResponse`
         """
-        return self.list_performance_resource_stat_with_http_info(request)
+        return self._list_performance_resource_stat_with_http_info(request)
 
-    def list_performance_resource_stat_with_http_info(self, request):
-        all_params = ['limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_performance_resource_stat_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -12824,14 +12102,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListWorkflowStatisticRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListWorkflowStatisticResponse`
         """
-        return self.list_workflow_statistic_with_http_info(request)
+        return self._list_workflow_statistic_with_http_info(request)
 
-    def list_workflow_statistic_with_http_info(self, request):
-        all_params = ['eihealth_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_workflow_statistic_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -12884,14 +12158,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListStorageResourcesRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListStorageResourcesResponse`
         """
-        return self.list_storage_resources_with_http_info(request)
+        return self._list_storage_resources_with_http_info(request)
 
-    def list_storage_resources_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_storage_resources_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -12942,14 +12212,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateStudyRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateStudyResponse`
         """
-        return self.create_study_with_http_info(request)
+        return self._create_study_with_http_info(request)
 
-    def create_study_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'create_study_dto']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_study_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -13004,14 +12270,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateStudyJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateStudyJobResponse`
         """
-        return self.create_study_job_with_http_info(request)
+        return self._create_study_job_with_http_info(request)
 
-    def create_study_job_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'study_id', 'record_study_result_dto']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_study_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -13068,14 +12330,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteStudyRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.DeleteStudyResponse`
         """
-        return self.delete_study_with_http_info(request)
+        return self._delete_study_with_http_info(request)
 
-    def delete_study_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'study_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_study_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -13130,14 +12388,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListStudyRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListStudyResponse`
         """
-        return self.list_study_with_http_info(request)
+        return self._list_study_with_http_info(request)
 
-    def list_study_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_study_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -13188,14 +12442,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListStudyJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListStudyJobResponse`
         """
-        return self.list_study_job_with_http_info(request)
+        return self._list_study_job_with_http_info(request)
 
-    def list_study_job_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'study_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_study_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -13250,14 +12500,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.Show3dStructureContentRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.Show3dStructureContentResponse`
         """
-        return self.show3d_structure_content_with_http_info(request)
+        return self._show3d_structure_content_with_http_info(request)
 
-    def show3d_structure_content_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'study_id', 'job_id', 'ligand', 'receptor']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show3d_structure_content_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -13318,14 +12564,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowExtremumInfoRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowExtremumInfoResponse`
         """
-        return self.show_extremum_info_with_http_info(request)
+        return self._show_extremum_info_with_http_info(request)
 
-    def show_extremum_info_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'study_id', 'job_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_extremum_info_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -13382,14 +12624,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListArchiveConfigsRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListArchiveConfigsResponse`
         """
-        return self.list_archive_configs_with_http_info(request)
+        return self._list_archive_configs_with_http_info(request)
 
-    def list_archive_configs_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_archive_configs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -13440,14 +12678,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowEnvRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowEnvResponse`
         """
-        return self.show_env_with_http_info(request)
+        return self._show_env_with_http_info(request)
 
-    def show_env_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_env_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -13498,14 +12732,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowVendorRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowVendorResponse`
         """
-        return self.show_vendor_with_http_info(request)
+        return self._show_vendor_with_http_info(request)
 
-    def show_vendor_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_vendor_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -13556,14 +12786,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateArchiveConfigRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateArchiveConfigResponse`
         """
-        return self.update_archive_config_with_http_info(request)
+        return self._update_archive_config_with_http_info(request)
 
-    def update_archive_config_with_http_info(self, request):
-        all_params = ['region_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_archive_config_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -13616,14 +12842,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateVendorRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateVendorResponse`
         """
-        return self.update_vendor_with_http_info(request)
+        return self._update_vendor_with_http_info(request)
 
-    def update_vendor_with_http_info(self, request):
-        all_params = ['file', 'name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_vendor_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -13680,14 +12902,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListQuotaRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListQuotaResponse`
         """
-        return self.list_quota_with_http_info(request)
+        return self._list_quota_with_http_info(request)
 
-    def list_quota_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_quota_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -13738,14 +12956,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateTemplateRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateTemplateResponse`
         """
-        return self.create_template_with_http_info(request)
+        return self._create_template_with_http_info(request)
 
-    def create_template_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'request']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -13800,14 +13014,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteTemplateRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.DeleteTemplateResponse`
         """
-        return self.delete_template_with_http_info(request)
+        return self._delete_template_with_http_info(request)
 
-    def delete_template_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'template_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -13862,14 +13072,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ImportTemplateRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ImportTemplateResponse`
         """
-        return self.import_template_with_http_info(request)
+        return self._import_template_with_http_info(request)
 
-    def import_template_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'request']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _import_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -13924,14 +13130,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListTemplateRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListTemplateResponse`
         """
-        return self.list_template_with_http_info(request)
+        return self._list_template_with_http_info(request)
 
-    def list_template_with_http_info(self, request):
-        all_params = ['eihealth_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -13984,14 +13186,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowTemplateRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowTemplateResponse`
         """
-        return self.show_template_with_http_info(request)
+        return self._show_template_with_http_info(request)
 
-    def show_template_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'template_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -14046,14 +13244,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.UploadTemplateRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.UploadTemplateResponse`
         """
-        return self.upload_template_with_http_info(request)
+        return self._upload_template_with_http_info(request)
 
-    def upload_template_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'file']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _upload_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -14110,14 +13304,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ChangePasswordRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ChangePasswordResponse`
         """
-        return self.change_password_with_http_info(request)
+        return self._change_password_with_http_info(request)
 
-    def change_password_with_http_info(self, request):
-        all_params = ['user_id', 'request']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _change_password_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -14172,14 +13362,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.CheckTokenVerificationRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CheckTokenVerificationResponse`
         """
-        return self.check_token_verification_with_http_info(request)
+        return self._check_token_verification_with_http_info(request)
 
-    def check_token_verification_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _check_token_verification_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -14230,14 +13416,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateCodeRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateCodeResponse`
         """
-        return self.create_code_with_http_info(request)
+        return self._create_code_with_http_info(request)
 
-    def create_code_with_http_info(self, request):
-        all_params = ['user_id', 'request']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_code_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -14292,14 +13474,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateUserRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateUserResponse`
         """
-        return self.create_user_with_http_info(request)
+        return self._create_user_with_http_info(request)
 
-    def create_user_with_http_info(self, request):
-        all_params = ['request']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_user_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -14352,14 +13530,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteUserRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.DeleteUserResponse`
         """
-        return self.delete_user_with_http_info(request)
+        return self._delete_user_with_http_info(request)
 
-    def delete_user_with_http_info(self, request):
-        all_params = ['user_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_user_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -14412,14 +13586,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ImportUserRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ImportUserResponse`
         """
-        return self.import_user_with_http_info(request)
+        return self._import_user_with_http_info(request)
 
-    def import_user_with_http_info(self, request):
-        all_params = ['request']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _import_user_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -14472,14 +13642,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListMfaRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListMfaResponse`
         """
-        return self.list_mfa_with_http_info(request)
+        return self._list_mfa_with_http_info(request)
 
-    def list_mfa_with_http_info(self, request):
-        all_params = ['user_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_mfa_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -14532,14 +13698,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListUserRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListUserResponse`
         """
-        return self.list_user_with_http_info(request)
+        return self._list_user_with_http_info(request)
 
-    def list_user_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_user_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -14590,14 +13752,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowUserRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowUserResponse`
         """
-        return self.show_user_with_http_info(request)
+        return self._show_user_with_http_info(request)
 
-    def show_user_with_http_info(self, request):
-        all_params = ['user_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_user_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -14650,14 +13808,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowUserSettingRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowUserSettingResponse`
         """
-        return self.show_user_setting_with_http_info(request)
+        return self._show_user_setting_with_http_info(request)
 
-    def show_user_setting_with_http_info(self, request):
-        all_params = ['user_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_user_setting_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -14710,14 +13864,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateInitPasswordRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateInitPasswordResponse`
         """
-        return self.update_init_password_with_http_info(request)
+        return self._update_init_password_with_http_info(request)
 
-    def update_init_password_with_http_info(self, request):
-        all_params = ['user_id', 'request']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_init_password_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -14772,14 +13922,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateUserRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateUserResponse`
         """
-        return self.update_user_with_http_info(request)
+        return self._update_user_with_http_info(request)
 
-    def update_user_with_http_info(self, request):
-        all_params = ['user_id', 'request']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_user_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -14834,14 +13980,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateUserByDomainRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateUserByDomainResponse`
         """
-        return self.update_user_by_domain_with_http_info(request)
+        return self._update_user_by_domain_with_http_info(request)
 
-    def update_user_by_domain_with_http_info(self, request):
-        all_params = ['user_id', 'request']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_user_by_domain_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -14896,14 +14038,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateUserRoleRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateUserRoleResponse`
         """
-        return self.update_user_role_with_http_info(request)
+        return self._update_user_role_with_http_info(request)
 
-    def update_user_role_with_http_info(self, request):
-        all_params = ['user_id', 'request']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_user_role_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -14958,14 +14096,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateUserSettingRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateUserSettingResponse`
         """
-        return self.update_user_setting_with_http_info(request)
+        return self._update_user_setting_with_http_info(request)
 
-    def update_user_setting_with_http_info(self, request):
-        all_params = ['user_id', 'request']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_user_setting_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -15020,14 +14154,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ValidateCodeRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ValidateCodeResponse`
         """
-        return self.validate_code_with_http_info(request)
+        return self._validate_code_with_http_info(request)
 
-    def validate_code_with_http_info(self, request):
-        all_params = ['user_id', 'request']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _validate_code_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -15082,14 +14212,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListVendorRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListVendorResponse`
         """
-        return self.list_vendor_with_http_info(request)
+        return self._list_vendor_with_http_info(request)
 
-    def list_vendor_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_vendor_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -15140,14 +14266,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateWorkflowRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateWorkflowResponse`
         """
-        return self.create_workflow_with_http_info(request)
+        return self._create_workflow_with_http_info(request)
 
-    def create_workflow_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'workflow_dto']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_workflow_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -15202,14 +14324,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteWorkflowRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.DeleteWorkflowResponse`
         """
-        return self.delete_workflow_with_http_info(request)
+        return self._delete_workflow_with_http_info(request)
 
-    def delete_workflow_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'workflow_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_workflow_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -15264,14 +14382,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ImportWorkflowRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ImportWorkflowResponse`
         """
-        return self.import_workflow_with_http_info(request)
+        return self._import_workflow_with_http_info(request)
 
-    def import_workflow_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'import_workflow_dto']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _import_workflow_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -15326,14 +14440,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListWorkflowRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListWorkflowResponse`
         """
-        return self.list_workflow_with_http_info(request)
+        return self._list_workflow_with_http_info(request)
 
-    def list_workflow_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'name', 'version']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_workflow_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -15390,14 +14500,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.PublishWorkflowRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.PublishWorkflowResponse`
         """
-        return self.publish_workflow_with_http_info(request)
+        return self._publish_workflow_with_http_info(request)
 
-    def publish_workflow_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'workflow_id', 'publish_asset_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _publish_workflow_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -15454,14 +14560,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowWorkflowRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowWorkflowResponse`
         """
-        return self.show_workflow_with_http_info(request)
+        return self._show_workflow_with_http_info(request)
 
-    def show_workflow_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'workflow_id', 'show_param_detail']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_workflow_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -15518,14 +14620,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.SubscribeWorkflowRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.SubscribeWorkflowResponse`
         """
-        return self.subscribe_workflow_with_http_info(request)
+        return self._subscribe_workflow_with_http_info(request)
 
-    def subscribe_workflow_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'subscribe_workflow_dto']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _subscribe_workflow_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -15580,14 +14678,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateWorkflowRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateWorkflowResponse`
         """
-        return self.update_workflow_with_http_info(request)
+        return self._update_workflow_with_http_info(request)
 
-    def update_workflow_with_http_info(self, request):
-        all_params = ['eihealth_project_id', 'workflow_id', 'workflow_dto']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_workflow_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -15644,14 +14738,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateOptimizationTaskRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateOptimizationTaskResponse`
         """
-        return self.create_optimization_task_with_http_info(request)
+        return self._create_optimization_task_with_http_info(request)
 
-    def create_optimization_task_with_http_info(self, request):
-        all_params = ['create_optimization_task_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_optimization_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -15704,14 +14794,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowOptimizationTaskResultRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowOptimizationTaskResultResponse`
         """
-        return self.show_optimization_task_result_with_http_info(request)
+        return self._show_optimization_task_result_with_http_info(request)
 
-    def show_optimization_task_result_with_http_info(self, request):
-        all_params = ['task_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_optimization_task_result_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -15764,14 +14850,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateSearchTaskRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateSearchTaskResponse`
         """
-        return self.create_search_task_with_http_info(request)
+        return self._create_search_task_with_http_info(request)
 
-    def create_search_task_with_http_info(self, request):
-        all_params = ['create_search_task_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_search_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -15824,14 +14906,10 @@ class EiHealthClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowSearchTaskResultRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowSearchTaskResultResponse`
         """
-        return self.show_search_task_result_with_http_info(request)
+        return self._show_search_task_result_with_http_info(request)
 
-    def show_search_task_result_with_http_info(self, request):
-        all_params = ['task_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_search_task_result_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -15868,6 +14946,118 @@ class EiHealthClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ShowSearchTaskResultResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_synthesis_task(self, request):
+        """新建分子合成路径规划任务接口
+
+        输入要进行合成路径规划的分子以及输出可行方案的个数。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateSynthesisTask
+        :type request: :class:`huaweicloudsdkeihealth.v1.CreateSynthesisTaskRequest`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.CreateSynthesisTaskResponse`
+        """
+        return self._create_synthesis_task_with_http_info(request)
+
+    def _create_synthesis_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/task/synthesis',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateSynthesisTaskResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_synthesis_task_result(self, request):
+        """查询分子合成路径规划任务
+
+        通过分子合成路径规划任务ID查询分子合成路径规划任务状态及结果。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowSynthesisTaskResult
+        :type request: :class:`huaweicloudsdkeihealth.v1.ShowSynthesisTaskResultRequest`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.ShowSynthesisTaskResultResponse`
+        """
+        return self._show_synthesis_task_result_with_http_info(request)
+
+    def _show_synthesis_task_result_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/task/synthesis/{task_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowSynthesisTaskResultResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

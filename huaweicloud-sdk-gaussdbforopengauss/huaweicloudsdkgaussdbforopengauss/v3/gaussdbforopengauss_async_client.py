@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class GaussDBforopenGaussAsyncClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(GaussDBforopenGaussAsyncClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkgaussdbforopengauss.v3.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -54,14 +36,10 @@ class GaussDBforopenGaussAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.AddInstanceTagsRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.AddInstanceTagsResponse`
         """
-        return self.add_instance_tags_with_http_info(request)
+        return self._add_instance_tags_with_http_info(request)
 
-    def add_instance_tags_with_http_info(self, request):
-        all_params = ['instance_id', 'add_tags_request_body', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _add_instance_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -119,14 +97,10 @@ class GaussDBforopenGaussAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.AllowDbPrivilegesRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.AllowDbPrivilegesResponse`
         """
-        return self.allow_db_privileges_with_http_info(request)
+        return self._allow_db_privileges_with_http_info(request)
 
-    def allow_db_privileges_with_http_info(self, request):
-        all_params = ['instance_id', 'grant_request', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _allow_db_privileges_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -184,14 +158,10 @@ class GaussDBforopenGaussAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.AttachEipRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.AttachEipResponse`
         """
-        return self.attach_eip_with_http_info(request)
+        return self._attach_eip_with_http_info(request)
 
-    def attach_eip_with_http_info(self, request):
-        all_params = ['instance_id', 'node_id', 'bind_eip_request_body', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _attach_eip_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -251,14 +221,10 @@ class GaussDBforopenGaussAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.CopyConfigurationRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.CopyConfigurationResponse`
         """
-        return self.copy_configuration_with_http_info(request)
+        return self._copy_configuration_with_http_info(request)
 
-    def copy_configuration_with_http_info(self, request):
-        all_params = ['config_id', 'param_group_copy_request_body', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _copy_configuration_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -316,14 +282,10 @@ class GaussDBforopenGaussAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.CreateConfigurationTemplateRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.CreateConfigurationTemplateResponse`
         """
-        return self.create_configuration_template_with_http_info(request)
+        return self._create_configuration_template_with_http_info(request)
 
-    def create_configuration_template_with_http_info(self, request):
-        all_params = ['create_configuration_template_requestbody', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_configuration_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -379,14 +341,10 @@ class GaussDBforopenGaussAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.CreateDatabaseRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.CreateDatabaseResponse`
         """
-        return self.create_database_with_http_info(request)
+        return self._create_database_with_http_info(request)
 
-    def create_database_with_http_info(self, request):
-        all_params = ['instance_id', 'create_database_request', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_database_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -444,14 +402,10 @@ class GaussDBforopenGaussAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.CreateDatabaseSchemasRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.CreateDatabaseSchemasResponse`
         """
-        return self.create_database_schemas_with_http_info(request)
+        return self._create_database_schemas_with_http_info(request)
 
-    def create_database_schemas_with_http_info(self, request):
-        all_params = ['instance_id', 'db_schema_req', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_database_schemas_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -509,14 +463,10 @@ class GaussDBforopenGaussAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.CreateDbUserRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.CreateDbUserResponse`
         """
-        return self.create_db_user_with_http_info(request)
+        return self._create_db_user_with_http_info(request)
 
-    def create_db_user_with_http_info(self, request):
-        all_params = ['instance_id', 'create_db_user_request', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_db_user_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -574,14 +524,10 @@ class GaussDBforopenGaussAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.CreateInstanceRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.CreateInstanceResponse`
         """
-        return self.create_instance_with_http_info(request)
+        return self._create_instance_with_http_info(request)
 
-    def create_instance_with_http_info(self, request):
-        all_params = ['create_instance_request', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -637,14 +583,10 @@ class GaussDBforopenGaussAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.CreateManualBackupRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.CreateManualBackupResponse`
         """
-        return self.create_manual_backup_with_http_info(request)
+        return self._create_manual_backup_with_http_info(request)
 
-    def create_manual_backup_with_http_info(self, request):
-        all_params = ['create_manual_backup_request_body', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_manual_backup_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -700,14 +642,10 @@ class GaussDBforopenGaussAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.CreateRestoreInstanceRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.CreateRestoreInstanceResponse`
         """
-        return self.create_restore_instance_with_http_info(request)
+        return self._create_restore_instance_with_http_info(request)
 
-    def create_restore_instance_with_http_info(self, request):
-        all_params = ['create_instance_request_body', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_restore_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -763,14 +701,10 @@ class GaussDBforopenGaussAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.DeleteConfigurationRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.DeleteConfigurationResponse`
         """
-        return self.delete_configuration_with_http_info(request)
+        return self._delete_configuration_with_http_info(request)
 
-    def delete_configuration_with_http_info(self, request):
-        all_params = ['config_id', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_configuration_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -826,14 +760,10 @@ class GaussDBforopenGaussAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.DeleteInstanceRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.DeleteInstanceResponse`
         """
-        return self.delete_instance_with_http_info(request)
+        return self._delete_instance_with_http_info(request)
 
-    def delete_instance_with_http_info(self, request):
-        all_params = ['instance_id', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -889,14 +819,10 @@ class GaussDBforopenGaussAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.DeleteJobRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.DeleteJobResponse`
         """
-        return self.delete_job_with_http_info(request)
+        return self._delete_job_with_http_info(request)
 
-    def delete_job_with_http_info(self, request):
-        all_params = ['job_id', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -952,14 +878,10 @@ class GaussDBforopenGaussAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.DeleteManualBackupRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.DeleteManualBackupResponse`
         """
-        return self.delete_manual_backup_with_http_info(request)
+        return self._delete_manual_backup_with_http_info(request)
 
-    def delete_manual_backup_with_http_info(self, request):
-        all_params = ['backup_id', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_manual_backup_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1015,14 +937,10 @@ class GaussDBforopenGaussAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListApplicableInstancesRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListApplicableInstancesResponse`
         """
-        return self.list_applicable_instances_with_http_info(request)
+        return self._list_applicable_instances_with_http_info(request)
 
-    def list_applicable_instances_with_http_info(self, request):
-        all_params = ['config_id', 'x_language', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_applicable_instances_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1082,14 +1000,10 @@ class GaussDBforopenGaussAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListAppliedHistoriesRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListAppliedHistoriesResponse`
         """
-        return self.list_applied_histories_with_http_info(request)
+        return self._list_applied_histories_with_http_info(request)
 
-    def list_applied_histories_with_http_info(self, request):
-        all_params = ['config_id', 'x_language', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_applied_histories_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1149,14 +1063,10 @@ class GaussDBforopenGaussAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListAvailableFlavorsRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListAvailableFlavorsResponse`
         """
-        return self.list_available_flavors_with_http_info(request)
+        return self._list_available_flavors_with_http_info(request)
 
-    def list_available_flavors_with_http_info(self, request):
-        all_params = ['instance_id', 'x_language', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_available_flavors_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1216,14 +1126,10 @@ class GaussDBforopenGaussAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListBackupsRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListBackupsResponse`
         """
-        return self.list_backups_with_http_info(request)
+        return self._list_backups_with_http_info(request)
 
-    def list_backups_with_http_info(self, request):
-        all_params = ['x_language', 'instance_id', 'backup_id', 'backup_type', 'offset', 'limit', 'begin_time', 'end_time']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_backups_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1291,14 +1197,10 @@ class GaussDBforopenGaussAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListBindedEipsRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListBindedEipsResponse`
         """
-        return self.list_binded_eips_with_http_info(request)
+        return self._list_binded_eips_with_http_info(request)
 
-    def list_binded_eips_with_http_info(self, request):
-        all_params = ['instance_id', 'x_language', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_binded_eips_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1358,14 +1260,10 @@ class GaussDBforopenGaussAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListComponentInfosRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListComponentInfosResponse`
         """
-        return self.list_component_infos_with_http_info(request)
+        return self._list_component_infos_with_http_info(request)
 
-    def list_component_infos_with_http_info(self, request):
-        all_params = ['instance_id', 'x_language', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_component_infos_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1425,14 +1323,10 @@ class GaussDBforopenGaussAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListConfigurationsRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListConfigurationsResponse`
         """
-        return self.list_configurations_with_http_info(request)
+        return self._list_configurations_with_http_info(request)
 
-    def list_configurations_with_http_info(self, request):
-        all_params = ['x_language', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_configurations_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1490,14 +1384,10 @@ class GaussDBforopenGaussAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListConfigurationsDiffRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListConfigurationsDiffResponse`
         """
-        return self.list_configurations_diff_with_http_info(request)
+        return self._list_configurations_diff_with_http_info(request)
 
-    def list_configurations_diff_with_http_info(self, request):
-        all_params = ['param_group_diff_request', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_configurations_diff_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1553,14 +1443,10 @@ class GaussDBforopenGaussAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListDatabaseSchemasRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListDatabaseSchemasResponse`
         """
-        return self.list_database_schemas_with_http_info(request)
+        return self._list_database_schemas_with_http_info(request)
 
-    def list_database_schemas_with_http_info(self, request):
-        all_params = ['instance_id', 'db_name', 'x_language', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_database_schemas_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1622,14 +1508,10 @@ class GaussDBforopenGaussAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListDatabasesRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListDatabasesResponse`
         """
-        return self.list_databases_with_http_info(request)
+        return self._list_databases_with_http_info(request)
 
-    def list_databases_with_http_info(self, request):
-        all_params = ['instance_id', 'x_language', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_databases_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1689,14 +1571,10 @@ class GaussDBforopenGaussAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListDatastoresRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListDatastoresResponse`
         """
-        return self.list_datastores_with_http_info(request)
+        return self._list_datastores_with_http_info(request)
 
-    def list_datastores_with_http_info(self, request):
-        all_params = ['x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_datastores_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1750,14 +1628,10 @@ class GaussDBforopenGaussAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListDbUsersRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListDbUsersResponse`
         """
-        return self.list_db_users_with_http_info(request)
+        return self._list_db_users_with_http_info(request)
 
-    def list_db_users_with_http_info(self, request):
-        all_params = ['instance_id', 'x_language', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_db_users_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1817,14 +1691,10 @@ class GaussDBforopenGaussAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListEpsQuotasRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListEpsQuotasResponse`
         """
-        return self.list_eps_quotas_with_http_info(request)
+        return self._list_eps_quotas_with_http_info(request)
 
-    def list_eps_quotas_with_http_info(self, request):
-        all_params = ['x_language', 'offset', 'limit', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_eps_quotas_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1884,14 +1754,10 @@ class GaussDBforopenGaussAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListFlavorsRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListFlavorsResponse`
         """
-        return self.list_flavors_with_http_info(request)
+        return self._list_flavors_with_http_info(request)
 
-    def list_flavors_with_http_info(self, request):
-        all_params = ['x_language', 'version', 'spec_code', 'ha_mode', 'limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_flavors_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1955,14 +1821,10 @@ class GaussDBforopenGaussAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListGaussDbDatastoresRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListGaussDbDatastoresResponse`
         """
-        return self.list_gauss_db_datastores_with_http_info(request)
+        return self._list_gauss_db_datastores_with_http_info(request)
 
-    def list_gauss_db_datastores_with_http_info(self, request):
-        all_params = ['x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_gauss_db_datastores_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2016,14 +1878,10 @@ class GaussDBforopenGaussAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListHistoryOperationsRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListHistoryOperationsResponse`
         """
-        return self.list_history_operations_with_http_info(request)
+        return self._list_history_operations_with_http_info(request)
 
-    def list_history_operations_with_http_info(self, request):
-        all_params = ['config_id', 'x_language', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_history_operations_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2083,14 +1941,10 @@ class GaussDBforopenGaussAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListInstanceTagsRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListInstanceTagsResponse`
         """
-        return self.list_instance_tags_with_http_info(request)
+        return self._list_instance_tags_with_http_info(request)
 
-    def list_instance_tags_with_http_info(self, request):
-        all_params = ['instance_id', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_instance_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2146,14 +2000,10 @@ class GaussDBforopenGaussAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListInstancesRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListInstancesResponse`
         """
-        return self.list_instances_with_http_info(request)
+        return self._list_instances_with_http_info(request)
 
-    def list_instances_with_http_info(self, request):
-        all_params = ['x_language', 'id', 'name', 'type', 'datastore_type', 'vpc_id', 'subnet_id', 'offset', 'limit', 'tags']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_instances_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2226,14 +2076,10 @@ class GaussDBforopenGaussAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListPredefinedTagsRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListPredefinedTagsResponse`
         """
-        return self.list_predefined_tags_with_http_info(request)
+        return self._list_predefined_tags_with_http_info(request)
 
-    def list_predefined_tags_with_http_info(self, request):
-        all_params = ['x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_predefined_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2287,14 +2133,10 @@ class GaussDBforopenGaussAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListProjectTagsRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListProjectTagsResponse`
         """
-        return self.list_project_tags_with_http_info(request)
+        return self._list_project_tags_with_http_info(request)
 
-    def list_project_tags_with_http_info(self, request):
-        all_params = ['x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_project_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2348,14 +2190,10 @@ class GaussDBforopenGaussAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListRecycleInstancesRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListRecycleInstancesResponse`
         """
-        return self.list_recycle_instances_with_http_info(request)
+        return self._list_recycle_instances_with_http_info(request)
 
-    def list_recycle_instances_with_http_info(self, request):
-        all_params = ['x_language', 'instance_name', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_recycle_instances_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2415,14 +2253,10 @@ class GaussDBforopenGaussAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListRestorableInstancesRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListRestorableInstancesResponse`
         """
-        return self.list_restorable_instances_with_http_info(request)
+        return self._list_restorable_instances_with_http_info(request)
 
-    def list_restorable_instances_with_http_info(self, request):
-        all_params = ['source_instance_id', 'x_language', 'backup_id', 'restore_time', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_restorable_instances_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2487,14 +2321,10 @@ class GaussDBforopenGaussAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListRestoreTimesRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListRestoreTimesResponse`
         """
-        return self.list_restore_times_with_http_info(request)
+        return self._list_restore_times_with_http_info(request)
 
-    def list_restore_times_with_http_info(self, request):
-        all_params = ['instance_id', 'date', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_restore_times_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2552,14 +2382,10 @@ class GaussDBforopenGaussAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListStorageTypesRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListStorageTypesResponse`
         """
-        return self.list_storage_types_with_http_info(request)
+        return self._list_storage_types_with_http_info(request)
 
-    def list_storage_types_with_http_info(self, request):
-        all_params = ['version', 'x_language', 'ha_mode']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_storage_types_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2617,14 +2443,10 @@ class GaussDBforopenGaussAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListTasksRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListTasksResponse`
         """
-        return self.list_tasks_with_http_info(request)
+        return self._list_tasks_with_http_info(request)
 
-    def list_tasks_with_http_info(self, request):
-        all_params = ['x_language', 'status', 'name', 'start_time', 'end_time', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_tasks_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2690,14 +2512,10 @@ class GaussDBforopenGaussAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ModifyEpsQuotaRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ModifyEpsQuotaResponse`
         """
-        return self.modify_eps_quota_with_http_info(request)
+        return self._modify_eps_quota_with_http_info(request)
 
-    def modify_eps_quota_with_http_info(self, request):
-        all_params = ['modify_eps_quota_requestbody', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _modify_eps_quota_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2753,14 +2571,10 @@ class GaussDBforopenGaussAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ResetConfigurationRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ResetConfigurationResponse`
         """
-        return self.reset_configuration_with_http_info(request)
+        return self._reset_configuration_with_http_info(request)
 
-    def reset_configuration_with_http_info(self, request):
-        all_params = ['config_id', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _reset_configuration_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2816,14 +2630,10 @@ class GaussDBforopenGaussAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ResetPwdRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ResetPwdResponse`
         """
-        return self.reset_pwd_with_http_info(request)
+        return self._reset_pwd_with_http_info(request)
 
-    def reset_pwd_with_http_info(self, request):
-        all_params = ['instance_id', 'pwd_reset_request_body', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _reset_pwd_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2881,14 +2691,10 @@ class GaussDBforopenGaussAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ResizeInstanceFlavorRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ResizeInstanceFlavorResponse`
         """
-        return self.resize_instance_flavor_with_http_info(request)
+        return self._resize_instance_flavor_with_http_info(request)
 
-    def resize_instance_flavor_with_http_info(self, request):
-        all_params = ['instance_id', 'create_instance_request', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _resize_instance_flavor_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2946,14 +2752,10 @@ class GaussDBforopenGaussAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.RestartInstanceRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.RestartInstanceResponse`
         """
-        return self.restart_instance_with_http_info(request)
+        return self._restart_instance_with_http_info(request)
 
-    def restart_instance_with_http_info(self, request):
-        all_params = ['instance_id', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _restart_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3009,14 +2811,10 @@ class GaussDBforopenGaussAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.RunInstanceActionRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.RunInstanceActionResponse`
         """
-        return self.run_instance_action_with_http_info(request)
+        return self._run_instance_action_with_http_info(request)
 
-    def run_instance_action_with_http_info(self, request):
-        all_params = ['instance_id', 'instance_action_request', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _run_instance_action_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3074,14 +2872,10 @@ class GaussDBforopenGaussAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.SetBackupPolicyRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.SetBackupPolicyResponse`
         """
-        return self.set_backup_policy_with_http_info(request)
+        return self._set_backup_policy_with_http_info(request)
 
-    def set_backup_policy_with_http_info(self, request):
-        all_params = ['instance_id', 'set_backup_policy_request_body', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _set_backup_policy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3139,14 +2933,10 @@ class GaussDBforopenGaussAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.SetDbUserPwdRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.SetDbUserPwdResponse`
         """
-        return self.set_db_user_pwd_with_http_info(request)
+        return self._set_db_user_pwd_with_http_info(request)
 
-    def set_db_user_pwd_with_http_info(self, request):
-        all_params = ['instance_id', 'db_user_pwd_request_body', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _set_db_user_pwd_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3204,14 +2994,10 @@ class GaussDBforopenGaussAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.SetRecyclePolicyRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.SetRecyclePolicyResponse`
         """
-        return self.set_recycle_policy_with_http_info(request)
+        return self._set_recycle_policy_with_http_info(request)
 
-    def set_recycle_policy_with_http_info(self, request):
-        all_params = ['recycle_policy_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _set_recycle_policy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3265,14 +3051,10 @@ class GaussDBforopenGaussAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ShowBackupPolicyRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ShowBackupPolicyResponse`
         """
-        return self.show_backup_policy_with_http_info(request)
+        return self._show_backup_policy_with_http_info(request)
 
-    def show_backup_policy_with_http_info(self, request):
-        all_params = ['instance_id', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_backup_policy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3328,14 +3110,10 @@ class GaussDBforopenGaussAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ShowBalanceStatusRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ShowBalanceStatusResponse`
         """
-        return self.show_balance_status_with_http_info(request)
+        return self._show_balance_status_with_http_info(request)
 
-    def show_balance_status_with_http_info(self, request):
-        all_params = ['instance_id', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_balance_status_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3391,14 +3169,10 @@ class GaussDBforopenGaussAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ShowConfigurationDetailRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ShowConfigurationDetailResponse`
         """
-        return self.show_configuration_detail_with_http_info(request)
+        return self._show_configuration_detail_with_http_info(request)
 
-    def show_configuration_detail_with_http_info(self, request):
-        all_params = ['config_id', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_configuration_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3454,14 +3228,10 @@ class GaussDBforopenGaussAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ShowDeploymentFormRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ShowDeploymentFormResponse`
         """
-        return self.show_deployment_form_with_http_info(request)
+        return self._show_deployment_form_with_http_info(request)
 
-    def show_deployment_form_with_http_info(self, request):
-        all_params = ['x_language', 'solution', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_deployment_form_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3519,14 +3289,10 @@ class GaussDBforopenGaussAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ShowInstanceConfigurationRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ShowInstanceConfigurationResponse`
         """
-        return self.show_instance_configuration_with_http_info(request)
+        return self._show_instance_configuration_with_http_info(request)
 
-    def show_instance_configuration_with_http_info(self, request):
-        all_params = ['instance_id', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_instance_configuration_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3582,14 +3348,10 @@ class GaussDBforopenGaussAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ShowInstanceDiskRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ShowInstanceDiskResponse`
         """
-        return self.show_instance_disk_with_http_info(request)
+        return self._show_instance_disk_with_http_info(request)
 
-    def show_instance_disk_with_http_info(self, request):
-        all_params = ['instance_id', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_instance_disk_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3645,14 +3407,10 @@ class GaussDBforopenGaussAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ShowInstanceSnapshotRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ShowInstanceSnapshotResponse`
         """
-        return self.show_instance_snapshot_with_http_info(request)
+        return self._show_instance_snapshot_with_http_info(request)
 
-    def show_instance_snapshot_with_http_info(self, request):
-        all_params = ['x_language', 'instance_id', 'restore_time', 'backup_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_instance_snapshot_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3712,14 +3470,10 @@ class GaussDBforopenGaussAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ShowJobDetailRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ShowJobDetailResponse`
         """
-        return self.show_job_detail_with_http_info(request)
+        return self._show_job_detail_with_http_info(request)
 
-    def show_job_detail_with_http_info(self, request):
-        all_params = ['id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_job_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3772,14 +3526,10 @@ class GaussDBforopenGaussAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ShowProjectQuotasRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ShowProjectQuotasResponse`
         """
-        return self.show_project_quotas_with_http_info(request)
+        return self._show_project_quotas_with_http_info(request)
 
-    def show_project_quotas_with_http_info(self, request):
-        all_params = ['x_language', 'type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_project_quotas_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3835,14 +3585,10 @@ class GaussDBforopenGaussAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ShowRecyclePolicyRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ShowRecyclePolicyResponse`
         """
-        return self.show_recycle_policy_with_http_info(request)
+        return self._show_recycle_policy_with_http_info(request)
 
-    def show_recycle_policy_with_http_info(self, request):
-        all_params = ['x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_recycle_policy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3896,14 +3642,10 @@ class GaussDBforopenGaussAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ShowSslCertDownloadLinkRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ShowSslCertDownloadLinkResponse`
         """
-        return self.show_ssl_cert_download_link_with_http_info(request)
+        return self._show_ssl_cert_download_link_with_http_info(request)
 
-    def show_ssl_cert_download_link_with_http_info(self, request):
-        all_params = ['instance_id', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_ssl_cert_download_link_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3959,14 +3701,10 @@ class GaussDBforopenGaussAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.SwitchConfigurationRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.SwitchConfigurationResponse`
         """
-        return self.switch_configuration_with_http_info(request)
+        return self._switch_configuration_with_http_info(request)
 
-    def switch_configuration_with_http_info(self, request):
-        all_params = ['config_id', 'apply_configuration_request_body', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _switch_configuration_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4024,14 +3762,10 @@ class GaussDBforopenGaussAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.SwitchShardRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.SwitchShardResponse`
         """
-        return self.switch_shard_with_http_info(request)
+        return self._switch_shard_with_http_info(request)
 
-    def switch_shard_with_http_info(self, request):
-        all_params = ['instance_id', 'switch_shard_request_body', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _switch_shard_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4089,14 +3823,10 @@ class GaussDBforopenGaussAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.UpdateInstanceConfigurationRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.UpdateInstanceConfigurationResponse`
         """
-        return self.update_instance_configuration_with_http_info(request)
+        return self._update_instance_configuration_with_http_info(request)
 
-    def update_instance_configuration_with_http_info(self, request):
-        all_params = ['instance_id', 'modify_instance_configuration_request', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_instance_configuration_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4154,14 +3884,10 @@ class GaussDBforopenGaussAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.UpdateInstanceNameRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.UpdateInstanceNameResponse`
         """
-        return self.update_instance_name_with_http_info(request)
+        return self._update_instance_name_with_http_info(request)
 
-    def update_instance_name_with_http_info(self, request):
-        all_params = ['instance_id', 'update_name_request_body', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_instance_name_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4219,14 +3945,10 @@ class GaussDBforopenGaussAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ValidateParaGroupNameRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ValidateParaGroupNameResponse`
         """
-        return self.validate_para_group_name_with_http_info(request)
+        return self._validate_para_group_name_with_http_info(request)
 
-    def validate_para_group_name_with_http_info(self, request):
-        all_params = ['name', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _validate_para_group_name_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4282,14 +4004,10 @@ class GaussDBforopenGaussAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ValidateWeakPasswordRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ValidateWeakPasswordResponse`
         """
-        return self.validate_weak_password_with_http_info(request)
+        return self._validate_weak_password_with_http_info(request)
 
-    def validate_weak_password_with_http_info(self, request):
-        all_params = ['weak_password_request_body', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _validate_weak_password_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

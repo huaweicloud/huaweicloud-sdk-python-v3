@@ -1,9 +1,6 @@
 # coding: utf-8
 
-import re
 import six
-
-
 
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
@@ -20,20 +17,24 @@ class CancelScriptRequest:
     sensitive_list = []
 
     openapi_types = {
+        'workspace': 'str',
         'script_name': 'str',
         'instance_id': 'str'
     }
 
     attribute_map = {
+        'workspace': 'workspace',
         'script_name': 'script_name',
         'instance_id': 'instance_id'
     }
 
-    def __init__(self, script_name=None, instance_id=None):
+    def __init__(self, workspace=None, script_name=None, instance_id=None):
         """CancelScriptRequest
 
         The model defined in huaweicloud sdk
 
+        :param workspace: 工作空间id
+        :type workspace: str
         :param script_name: 
         :type script_name: str
         :param instance_id: 
@@ -42,12 +43,37 @@ class CancelScriptRequest:
         
         
 
+        self._workspace = None
         self._script_name = None
         self._instance_id = None
         self.discriminator = None
 
+        if workspace is not None:
+            self.workspace = workspace
         self.script_name = script_name
         self.instance_id = instance_id
+
+    @property
+    def workspace(self):
+        """Gets the workspace of this CancelScriptRequest.
+
+        工作空间id
+
+        :return: The workspace of this CancelScriptRequest.
+        :rtype: str
+        """
+        return self._workspace
+
+    @workspace.setter
+    def workspace(self, workspace):
+        """Sets the workspace of this CancelScriptRequest.
+
+        工作空间id
+
+        :param workspace: The workspace of this CancelScriptRequest.
+        :type workspace: str
+        """
+        self._workspace = workspace
 
     @property
     def script_name(self):

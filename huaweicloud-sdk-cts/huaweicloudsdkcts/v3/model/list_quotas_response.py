@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import re
 import six
-
 
 from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
@@ -20,7 +18,7 @@ class ListQuotasResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'resources': 'list[Quota]'
+        'resources': 'list[CtsQuota]'
     }
 
     attribute_map = {
@@ -33,7 +31,7 @@ class ListQuotasResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param resources: 本次查询追踪器列表返回的追踪器数组。
-        :type resources: list[:class:`huaweicloudsdkcts.v3.Quota`]
+        :type resources: list[:class:`huaweicloudsdkcts.v3.CtsQuota`]
         """
         
         super(ListQuotasResponse, self).__init__()
@@ -51,7 +49,7 @@ class ListQuotasResponse(SdkResponse):
         本次查询追踪器列表返回的追踪器数组。
 
         :return: The resources of this ListQuotasResponse.
-        :rtype: list[:class:`huaweicloudsdkcts.v3.Quota`]
+        :rtype: list[:class:`huaweicloudsdkcts.v3.CtsQuota`]
         """
         return self._resources
 
@@ -62,7 +60,7 @@ class ListQuotasResponse(SdkResponse):
         本次查询追踪器列表返回的追踪器数组。
 
         :param resources: The resources of this ListQuotasResponse.
-        :type resources: list[:class:`huaweicloudsdkcts.v3.Quota`]
+        :type resources: list[:class:`huaweicloudsdkcts.v3.CtsQuota`]
         """
         self._resources = resources
 

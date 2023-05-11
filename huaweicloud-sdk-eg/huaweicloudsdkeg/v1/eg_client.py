@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class EgClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(EgClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkeg.v1.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -53,14 +35,10 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.CheckPutEventsRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.CheckPutEventsResponse`
         """
-        return self.check_put_events_with_http_info(request)
+        return self._check_put_events_with_http_info(request)
 
-    def check_put_events_with_http_info(self, request):
-        all_params = ['check_put_events_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _check_put_events_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -113,14 +91,10 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.CreateAgenciesRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.CreateAgenciesResponse`
         """
-        return self.create_agencies_with_http_info(request)
+        return self._create_agencies_with_http_info(request)
 
-    def create_agencies_with_http_info(self, request):
-        all_params = ['agency_create_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_agencies_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -173,14 +147,10 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.CreateChannelRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.CreateChannelResponse`
         """
-        return self.create_channel_with_http_info(request)
+        return self._create_channel_with_http_info(request)
 
-    def create_channel_with_http_info(self, request):
-        all_params = ['create_channel_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_channel_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -233,14 +203,10 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.CreateConnectionRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.CreateConnectionResponse`
         """
-        return self.create_connection_with_http_info(request)
+        return self._create_connection_with_http_info(request)
 
-    def create_connection_with_http_info(self, request):
-        all_params = ['create_connecton_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_connection_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -293,14 +259,10 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.CreateEndpointRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.CreateEndpointResponse`
         """
-        return self.create_endpoint_with_http_info(request)
+        return self._create_endpoint_with_http_info(request)
 
-    def create_endpoint_with_http_info(self, request):
-        all_params = ['create_endpoint_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_endpoint_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -353,14 +315,10 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.CreateEventSchemaRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.CreateEventSchemaResponse`
         """
-        return self.create_event_schema_with_http_info(request)
+        return self._create_event_schema_with_http_info(request)
 
-    def create_event_schema_with_http_info(self, request):
-        all_params = ['create_event_schema_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_event_schema_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -413,14 +371,10 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.CreateEventSchemaVersionRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.CreateEventSchemaVersionResponse`
         """
-        return self.create_event_schema_version_with_http_info(request)
+        return self._create_event_schema_version_with_http_info(request)
 
-    def create_event_schema_version_with_http_info(self, request):
-        all_params = ['schema_id', 'create_event_schema_version_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_event_schema_version_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -475,14 +429,10 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.CreateEventSourceRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.CreateEventSourceResponse`
         """
-        return self.create_event_source_with_http_info(request)
+        return self._create_event_source_with_http_info(request)
 
-    def create_event_source_with_http_info(self, request):
-        all_params = ['create_event_source_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_event_source_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -535,14 +485,10 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.CreateSubscriptionRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.CreateSubscriptionResponse`
         """
-        return self.create_subscription_with_http_info(request)
+        return self._create_subscription_with_http_info(request)
 
-    def create_subscription_with_http_info(self, request):
-        all_params = ['create_subscription_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_subscription_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -595,14 +541,10 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.CreateSubscriptionTargetRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.CreateSubscriptionTargetResponse`
         """
-        return self.create_subscription_target_with_http_info(request)
+        return self._create_subscription_target_with_http_info(request)
 
-    def create_subscription_target_with_http_info(self, request):
-        all_params = ['subscription_id', 'create_subscription_target_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_subscription_target_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -657,14 +599,10 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.DeleteChannelRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.DeleteChannelResponse`
         """
-        return self.delete_channel_with_http_info(request)
+        return self._delete_channel_with_http_info(request)
 
-    def delete_channel_with_http_info(self, request):
-        all_params = ['channel_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_channel_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -717,14 +655,10 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.DeleteConnectionRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.DeleteConnectionResponse`
         """
-        return self.delete_connection_with_http_info(request)
+        return self._delete_connection_with_http_info(request)
 
-    def delete_connection_with_http_info(self, request):
-        all_params = ['connection_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_connection_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -777,14 +711,10 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.DeleteEndpointRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.DeleteEndpointResponse`
         """
-        return self.delete_endpoint_with_http_info(request)
+        return self._delete_endpoint_with_http_info(request)
 
-    def delete_endpoint_with_http_info(self, request):
-        all_params = ['endpoint_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_endpoint_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -837,14 +767,10 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.DeleteEventSchemaRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.DeleteEventSchemaResponse`
         """
-        return self.delete_event_schema_with_http_info(request)
+        return self._delete_event_schema_with_http_info(request)
 
-    def delete_event_schema_with_http_info(self, request):
-        all_params = ['schema_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_event_schema_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -897,14 +823,10 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.DeleteEventSchemaVersionRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.DeleteEventSchemaVersionResponse`
         """
-        return self.delete_event_schema_version_with_http_info(request)
+        return self._delete_event_schema_version_with_http_info(request)
 
-    def delete_event_schema_version_with_http_info(self, request):
-        all_params = ['schema_id', 'version']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_event_schema_version_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -959,14 +881,10 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.DeleteEventSourceRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.DeleteEventSourceResponse`
         """
-        return self.delete_event_source_with_http_info(request)
+        return self._delete_event_source_with_http_info(request)
 
-    def delete_event_source_with_http_info(self, request):
-        all_params = ['source_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_event_source_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1019,14 +937,10 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.DeleteSubscriptionRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.DeleteSubscriptionResponse`
         """
-        return self.delete_subscription_with_http_info(request)
+        return self._delete_subscription_with_http_info(request)
 
-    def delete_subscription_with_http_info(self, request):
-        all_params = ['subscription_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_subscription_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1079,14 +993,10 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.DeleteSubscriptionTargetRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.DeleteSubscriptionTargetResponse`
         """
-        return self.delete_subscription_target_with_http_info(request)
+        return self._delete_subscription_target_with_http_info(request)
 
-    def delete_subscription_target_with_http_info(self, request):
-        all_params = ['subscription_id', 'target_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_subscription_target_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1141,14 +1051,10 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.DiscoverEventSchemaFromDataRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.DiscoverEventSchemaFromDataResponse`
         """
-        return self.discover_event_schema_from_data_with_http_info(request)
+        return self._discover_event_schema_from_data_with_http_info(request)
 
-    def discover_event_schema_from_data_with_http_info(self, request):
-        all_params = ['discover_event_schema_from_data_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _discover_event_schema_from_data_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1201,14 +1107,10 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.ListAgenciesRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.ListAgenciesResponse`
         """
-        return self.list_agencies_with_http_info(request)
+        return self._list_agencies_with_http_info(request)
 
-    def list_agencies_with_http_info(self, request):
-        all_params = ['type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_agencies_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1261,14 +1163,10 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.ListChannelsRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.ListChannelsResponse`
         """
-        return self.list_channels_with_http_info(request)
+        return self._list_channels_with_http_info(request)
 
-    def list_channels_with_http_info(self, request):
-        all_params = ['offset', 'limit', 'sort', 'provider_type', 'name', 'fuzzy_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_channels_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1331,14 +1229,10 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.ListConnectionsRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.ListConnectionsResponse`
         """
-        return self.list_connections_with_http_info(request)
+        return self._list_connections_with_http_info(request)
 
-    def list_connections_with_http_info(self, request):
-        all_params = ['offset', 'limit', 'sort', 'name', 'fuzzy_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_connections_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1399,14 +1293,10 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.ListEndpointsRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.ListEndpointsResponse`
         """
-        return self.list_endpoints_with_http_info(request)
+        return self._list_endpoints_with_http_info(request)
 
-    def list_endpoints_with_http_info(self, request):
-        all_params = ['offset', 'limit', 'sort', 'type', 'name', 'vpc_id', 'fuzzy_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_endpoints_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1471,14 +1361,10 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.ListEventSchemaRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.ListEventSchemaResponse`
         """
-        return self.list_event_schema_with_http_info(request)
+        return self._list_event_schema_with_http_info(request)
 
-    def list_event_schema_with_http_info(self, request):
-        all_params = ['offset', 'limit', 'sort', 'provider_type', 'name', 'fuzzy_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_event_schema_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1541,14 +1427,10 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.ListEventSchemaVersionsRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.ListEventSchemaVersionsResponse`
         """
-        return self.list_event_schema_versions_with_http_info(request)
+        return self._list_event_schema_versions_with_http_info(request)
 
-    def list_event_schema_versions_with_http_info(self, request):
-        all_params = ['schema_id', 'offset', 'limit', 'sort']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_event_schema_versions_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1607,14 +1489,10 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.ListEventSourcesRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.ListEventSourcesResponse`
         """
-        return self.list_event_sources_with_http_info(request)
+        return self._list_event_sources_with_http_info(request)
 
-    def list_event_sources_with_http_info(self, request):
-        all_params = ['channel_id', 'offset', 'limit', 'sort', 'provider_type', 'name', 'fuzzy_name', 'fuzzy_label']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_event_sources_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1681,14 +1559,10 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.ListEventTargetRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.ListEventTargetResponse`
         """
-        return self.list_event_target_with_http_info(request)
+        return self._list_event_target_with_http_info(request)
 
-    def list_event_target_with_http_info(self, request):
-        all_params = ['offset', 'limit', 'sort', 'fuzzy_label']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_event_target_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1747,14 +1621,10 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.ListPubMetricsRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.ListPubMetricsResponse`
         """
-        return self.list_pub_metrics_with_http_info(request)
+        return self._list_pub_metrics_with_http_info(request)
 
-    def list_pub_metrics_with_http_info(self, request):
-        all_params = ['start_time', 'channel_id', 'filter', 'period', 'end_time', 'provider_type', 'source_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_pub_metrics_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1819,14 +1689,10 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.ListQuotasRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.ListQuotasResponse`
         """
-        return self.list_quotas_with_http_info(request)
+        return self._list_quotas_with_http_info(request)
 
-    def list_quotas_with_http_info(self, request):
-        all_params = ['type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_quotas_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1879,14 +1745,10 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.ListSubMetricsRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.ListSubMetricsResponse`
         """
-        return self.list_sub_metrics_with_http_info(request)
+        return self._list_sub_metrics_with_http_info(request)
 
-    def list_sub_metrics_with_http_info(self, request):
-        all_params = ['start_time', 'subscription_id', 'filter', 'period', 'end_time', 'provider_type', 'target_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_sub_metrics_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1951,14 +1813,10 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.ListSubscriptionsRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.ListSubscriptionsResponse`
         """
-        return self.list_subscriptions_with_http_info(request)
+        return self._list_subscriptions_with_http_info(request)
 
-    def list_subscriptions_with_http_info(self, request):
-        all_params = ['channel_id', 'offset', 'limit', 'sort', 'name', 'fuzzy_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_subscriptions_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2021,14 +1879,10 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.ListTriggersRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.ListTriggersResponse`
         """
-        return self.list_triggers_with_http_info(request)
+        return self._list_triggers_with_http_info(request)
 
-    def list_triggers_with_http_info(self, request):
-        all_params = ['func_urn', 'offset', 'limit', 'sort']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_triggers_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2087,14 +1941,10 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.ListWorkflowTriggersRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.ListWorkflowTriggersResponse`
         """
-        return self.list_workflow_triggers_with_http_info(request)
+        return self._list_workflow_triggers_with_http_info(request)
 
-    def list_workflow_triggers_with_http_info(self, request):
-        all_params = ['workflow_id', 'offset', 'limit', 'sort']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_workflow_triggers_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2153,14 +2003,10 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.OperateSubscriptionRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.OperateSubscriptionResponse`
         """
-        return self.operate_subscription_with_http_info(request)
+        return self._operate_subscription_with_http_info(request)
 
-    def operate_subscription_with_http_info(self, request):
-        all_params = ['operate_subscription_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _operate_subscription_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2213,14 +2059,10 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.PutEventsRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.PutEventsResponse`
         """
-        return self.put_events_with_http_info(request)
+        return self._put_events_with_http_info(request)
 
-    def put_events_with_http_info(self, request):
-        all_params = ['channel_id', 'put_events_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _put_events_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2275,14 +2117,10 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.ShowDetailOfChannelRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.ShowDetailOfChannelResponse`
         """
-        return self.show_detail_of_channel_with_http_info(request)
+        return self._show_detail_of_channel_with_http_info(request)
 
-    def show_detail_of_channel_with_http_info(self, request):
-        all_params = ['channel_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_detail_of_channel_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2335,14 +2173,10 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.ShowDetailOfConnectionRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.ShowDetailOfConnectionResponse`
         """
-        return self.show_detail_of_connection_with_http_info(request)
+        return self._show_detail_of_connection_with_http_info(request)
 
-    def show_detail_of_connection_with_http_info(self, request):
-        all_params = ['connection_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_detail_of_connection_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2395,14 +2229,10 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.ShowDetailOfEventSchemaRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.ShowDetailOfEventSchemaResponse`
         """
-        return self.show_detail_of_event_schema_with_http_info(request)
+        return self._show_detail_of_event_schema_with_http_info(request)
 
-    def show_detail_of_event_schema_with_http_info(self, request):
-        all_params = ['schema_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_detail_of_event_schema_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2455,14 +2285,10 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.ShowDetailOfEventSchemaVersionRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.ShowDetailOfEventSchemaVersionResponse`
         """
-        return self.show_detail_of_event_schema_version_with_http_info(request)
+        return self._show_detail_of_event_schema_version_with_http_info(request)
 
-    def show_detail_of_event_schema_version_with_http_info(self, request):
-        all_params = ['schema_id', 'version']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_detail_of_event_schema_version_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2517,14 +2343,10 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.ShowDetailOfEventSourceRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.ShowDetailOfEventSourceResponse`
         """
-        return self.show_detail_of_event_source_with_http_info(request)
+        return self._show_detail_of_event_source_with_http_info(request)
 
-    def show_detail_of_event_source_with_http_info(self, request):
-        all_params = ['source_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_detail_of_event_source_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2577,14 +2399,10 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.ShowDetailOfSubscriptionRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.ShowDetailOfSubscriptionResponse`
         """
-        return self.show_detail_of_subscription_with_http_info(request)
+        return self._show_detail_of_subscription_with_http_info(request)
 
-    def show_detail_of_subscription_with_http_info(self, request):
-        all_params = ['subscription_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_detail_of_subscription_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2637,14 +2455,10 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.ShowDetailOfSubscriptionTargetRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.ShowDetailOfSubscriptionTargetResponse`
         """
-        return self.show_detail_of_subscription_target_with_http_info(request)
+        return self._show_detail_of_subscription_target_with_http_info(request)
 
-    def show_detail_of_subscription_target_with_http_info(self, request):
-        all_params = ['subscription_id', 'target_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_detail_of_subscription_target_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2699,14 +2513,10 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.UpdateChannelRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.UpdateChannelResponse`
         """
-        return self.update_channel_with_http_info(request)
+        return self._update_channel_with_http_info(request)
 
-    def update_channel_with_http_info(self, request):
-        all_params = ['channel_id', 'update_channel_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_channel_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2761,14 +2571,10 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.UpdateConnectionRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.UpdateConnectionResponse`
         """
-        return self.update_connection_with_http_info(request)
+        return self._update_connection_with_http_info(request)
 
-    def update_connection_with_http_info(self, request):
-        all_params = ['connection_id', 'update_connection_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_connection_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2823,14 +2629,10 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.UpdateEndpointRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.UpdateEndpointResponse`
         """
-        return self.update_endpoint_with_http_info(request)
+        return self._update_endpoint_with_http_info(request)
 
-    def update_endpoint_with_http_info(self, request):
-        all_params = ['endpoint_id', 'update_endpoint_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_endpoint_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2885,14 +2687,10 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.UpdateEventSchemaRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.UpdateEventSchemaResponse`
         """
-        return self.update_event_schema_with_http_info(request)
+        return self._update_event_schema_with_http_info(request)
 
-    def update_event_schema_with_http_info(self, request):
-        all_params = ['schema_id', 'update_event_schema_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_event_schema_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2947,14 +2745,10 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.UpdateEventSourceRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.UpdateEventSourceResponse`
         """
-        return self.update_event_source_with_http_info(request)
+        return self._update_event_source_with_http_info(request)
 
-    def update_event_source_with_http_info(self, request):
-        all_params = ['source_id', 'update_event_source_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_event_source_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3009,14 +2803,10 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.UpdateSubscriptionRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.UpdateSubscriptionResponse`
         """
-        return self.update_subscription_with_http_info(request)
+        return self._update_subscription_with_http_info(request)
 
-    def update_subscription_with_http_info(self, request):
-        all_params = ['subscription_id', 'update_subscription_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_subscription_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3071,14 +2861,10 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.UpdateSubscriptionSourceRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.UpdateSubscriptionSourceResponse`
         """
-        return self.update_subscription_source_with_http_info(request)
+        return self._update_subscription_source_with_http_info(request)
 
-    def update_subscription_source_with_http_info(self, request):
-        all_params = ['subscription_id', 'source_id', 'update_subscription_source_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_subscription_source_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3135,14 +2921,10 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.UpdateSubscriptionTargetRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.UpdateSubscriptionTargetResponse`
         """
-        return self.update_subscription_target_with_http_info(request)
+        return self._update_subscription_target_with_http_info(request)
 
-    def update_subscription_target_with_http_info(self, request):
-        all_params = ['subscription_id', 'target_id', 'update_subscription_target_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_subscription_target_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3199,14 +2981,10 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.ListApiVersionsRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.ListApiVersionsResponse`
         """
-        return self.list_api_versions_with_http_info(request)
+        return self._list_api_versions_with_http_info(request)
 
-    def list_api_versions_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_api_versions_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3257,14 +3035,10 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.ListObsBucketsRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.ListObsBucketsResponse`
         """
-        return self.list_obs_buckets_with_http_info(request)
+        return self._list_obs_buckets_with_http_info(request)
 
-    def list_obs_buckets_with_http_info(self, request):
-        all_params = ['offset', 'limit', 'sort']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_obs_buckets_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

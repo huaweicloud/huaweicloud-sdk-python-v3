@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class IecClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(IecClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkiec.v1.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -53,14 +35,10 @@ class IecClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.AddNicsRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.AddNicsResponse`
         """
-        return self.add_nics_with_http_info(request)
+        return self._add_nics_with_http_info(request)
 
-    def add_nics_with_http_info(self, request):
-        all_params = ['instance_id', 'add_nics_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _add_nics_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -115,14 +93,10 @@ class IecClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.AssociateSubnetRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.AssociateSubnetResponse`
         """
-        return self.associate_subnet_with_http_info(request)
+        return self._associate_subnet_with_http_info(request)
 
-    def associate_subnet_with_http_info(self, request):
-        all_params = ['routetable_id', 'associate_subnet_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _associate_subnet_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -177,14 +151,10 @@ class IecClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.BatchRebootInstanceRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.BatchRebootInstanceResponse`
         """
-        return self.batch_reboot_instance_with_http_info(request)
+        return self._batch_reboot_instance_with_http_info(request)
 
-    def batch_reboot_instance_with_http_info(self, request):
-        all_params = ['batch_reboot_instance_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_reboot_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -237,14 +207,10 @@ class IecClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.BatchStartInstanceRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.BatchStartInstanceResponse`
         """
-        return self.batch_start_instance_with_http_info(request)
+        return self._batch_start_instance_with_http_info(request)
 
-    def batch_start_instance_with_http_info(self, request):
-        all_params = ['batch_start_instance_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_start_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -297,14 +263,10 @@ class IecClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.BatchStopInstanceRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.BatchStopInstanceResponse`
         """
-        return self.batch_stop_instance_with_http_info(request)
+        return self._batch_stop_instance_with_http_info(request)
 
-    def batch_stop_instance_with_http_info(self, request):
-        all_params = ['batch_stop_instance_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_stop_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -359,14 +321,10 @@ class IecClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.ChangeOsRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.ChangeOsResponse`
         """
-        return self.change_os_with_http_info(request)
+        return self._change_os_with_http_info(request)
 
-    def change_os_with_http_info(self, request):
-        all_params = ['instance_id', 'change_os_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _change_os_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -427,14 +385,10 @@ class IecClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.CreateDeploymentRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.CreateDeploymentResponse`
         """
-        return self.create_deployment_with_http_info(request)
+        return self._create_deployment_with_http_info(request)
 
-    def create_deployment_with_http_info(self, request):
-        all_params = ['create_deployment_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_deployment_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -489,14 +443,10 @@ class IecClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.CreateKeypairRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.CreateKeypairResponse`
         """
-        return self.create_keypair_with_http_info(request)
+        return self._create_keypair_with_http_info(request)
 
-    def create_keypair_with_http_info(self, request):
-        all_params = ['create_keypair_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_keypair_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -549,14 +499,10 @@ class IecClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.CreatePortRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.CreatePortResponse`
         """
-        return self.create_port_with_http_info(request)
+        return self._create_port_with_http_info(request)
 
-    def create_port_with_http_info(self, request):
-        all_params = ['create_port_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_port_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -609,14 +555,10 @@ class IecClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.CreateRoutesRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.CreateRoutesResponse`
         """
-        return self.create_routes_with_http_info(request)
+        return self._create_routes_with_http_info(request)
 
-    def create_routes_with_http_info(self, request):
-        all_params = ['routetable_id', 'create_routes_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_routes_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -671,14 +613,10 @@ class IecClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.CreateRoutetableRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.CreateRoutetableResponse`
         """
-        return self.create_routetable_with_http_info(request)
+        return self._create_routetable_with_http_info(request)
 
-    def create_routetable_with_http_info(self, request):
-        all_params = ['create_routetable_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_routetable_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -731,14 +669,10 @@ class IecClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.CreateSecurityGroupRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.CreateSecurityGroupResponse`
         """
-        return self.create_security_group_with_http_info(request)
+        return self._create_security_group_with_http_info(request)
 
-    def create_security_group_with_http_info(self, request):
-        all_params = ['create_security_group_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_security_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -791,14 +725,10 @@ class IecClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.CreateSecurityGroupRuleRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.CreateSecurityGroupRuleResponse`
         """
-        return self.create_security_group_rule_with_http_info(request)
+        return self._create_security_group_rule_with_http_info(request)
 
-    def create_security_group_rule_with_http_info(self, request):
-        all_params = ['create_security_group_rule_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_security_group_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -851,14 +781,10 @@ class IecClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.CreateVpcRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.CreateVpcResponse`
         """
-        return self.create_vpc_with_http_info(request)
+        return self._create_vpc_with_http_info(request)
 
-    def create_vpc_with_http_info(self, request):
-        all_params = ['create_vpc_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_vpc_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -911,14 +837,10 @@ class IecClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.DeleteDeploymentRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.DeleteDeploymentResponse`
         """
-        return self.delete_deployment_with_http_info(request)
+        return self._delete_deployment_with_http_info(request)
 
-    def delete_deployment_with_http_info(self, request):
-        all_params = ['deployment_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_deployment_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -971,14 +893,10 @@ class IecClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.DeleteEdgeCloudRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.DeleteEdgeCloudResponse`
         """
-        return self.delete_edge_cloud_with_http_info(request)
+        return self._delete_edge_cloud_with_http_info(request)
 
-    def delete_edge_cloud_with_http_info(self, request):
-        all_params = ['edgecloud_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_edge_cloud_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1031,14 +949,10 @@ class IecClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.DeleteInstancesRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.DeleteInstancesResponse`
         """
-        return self.delete_instances_with_http_info(request)
+        return self._delete_instances_with_http_info(request)
 
-    def delete_instances_with_http_info(self, request):
-        all_params = ['delete_instances_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_instances_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1091,14 +1005,10 @@ class IecClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.DeleteKeypairRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.DeleteKeypairResponse`
         """
-        return self.delete_keypair_with_http_info(request)
+        return self._delete_keypair_with_http_info(request)
 
-    def delete_keypair_with_http_info(self, request):
-        all_params = ['keypair_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_keypair_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1151,14 +1061,10 @@ class IecClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.DeleteNicsRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.DeleteNicsResponse`
         """
-        return self.delete_nics_with_http_info(request)
+        return self._delete_nics_with_http_info(request)
 
-    def delete_nics_with_http_info(self, request):
-        all_params = ['instance_id', 'delete_nics_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_nics_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1213,14 +1119,10 @@ class IecClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.DeletePortRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.DeletePortResponse`
         """
-        return self.delete_port_with_http_info(request)
+        return self._delete_port_with_http_info(request)
 
-    def delete_port_with_http_info(self, request):
-        all_params = ['port_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_port_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1273,14 +1175,10 @@ class IecClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.DeleteRoutesRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.DeleteRoutesResponse`
         """
-        return self.delete_routes_with_http_info(request)
+        return self._delete_routes_with_http_info(request)
 
-    def delete_routes_with_http_info(self, request):
-        all_params = ['routetable_id', 'delete_routes_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_routes_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1335,14 +1233,10 @@ class IecClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.DeleteRoutetableRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.DeleteRoutetableResponse`
         """
-        return self.delete_routetable_with_http_info(request)
+        return self._delete_routetable_with_http_info(request)
 
-    def delete_routetable_with_http_info(self, request):
-        all_params = ['routetable_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_routetable_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1395,14 +1289,10 @@ class IecClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.DeleteSecurityGroupRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.DeleteSecurityGroupResponse`
         """
-        return self.delete_security_group_with_http_info(request)
+        return self._delete_security_group_with_http_info(request)
 
-    def delete_security_group_with_http_info(self, request):
-        all_params = ['security_group_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_security_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1455,14 +1345,10 @@ class IecClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.DeleteSecurityGroupRuleRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.DeleteSecurityGroupRuleResponse`
         """
-        return self.delete_security_group_rule_with_http_info(request)
+        return self._delete_security_group_rule_with_http_info(request)
 
-    def delete_security_group_rule_with_http_info(self, request):
-        all_params = ['security_group_rule_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_security_group_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1515,14 +1401,10 @@ class IecClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.DeleteSubnetRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.DeleteSubnetResponse`
         """
-        return self.delete_subnet_with_http_info(request)
+        return self._delete_subnet_with_http_info(request)
 
-    def delete_subnet_with_http_info(self, request):
-        all_params = ['subnet_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_subnet_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1575,14 +1457,10 @@ class IecClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.DeleteVpcRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.DeleteVpcResponse`
         """
-        return self.delete_vpc_with_http_info(request)
+        return self._delete_vpc_with_http_info(request)
 
-    def delete_vpc_with_http_info(self, request):
-        all_params = ['vpc_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_vpc_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1635,14 +1513,10 @@ class IecClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.DisassociateSubnetRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.DisassociateSubnetResponse`
         """
-        return self.disassociate_subnet_with_http_info(request)
+        return self._disassociate_subnet_with_http_info(request)
 
-    def disassociate_subnet_with_http_info(self, request):
-        all_params = ['routetable_id', 'disassociate_subnet_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _disassociate_subnet_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1697,14 +1571,10 @@ class IecClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.ExecuteDeploymentRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.ExecuteDeploymentResponse`
         """
-        return self.execute_deployment_with_http_info(request)
+        return self._execute_deployment_with_http_info(request)
 
-    def execute_deployment_with_http_info(self, request):
-        all_params = ['deployment_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _execute_deployment_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1757,14 +1627,10 @@ class IecClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.ExpandEdgecloudRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.ExpandEdgecloudResponse`
         """
-        return self.expand_edgecloud_with_http_info(request)
+        return self._expand_edgecloud_with_http_info(request)
 
-    def expand_edgecloud_with_http_info(self, request):
-        all_params = ['deployment_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _expand_edgecloud_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1817,14 +1683,10 @@ class IecClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.ListBandwidthsRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.ListBandwidthsResponse`
         """
-        return self.list_bandwidths_with_http_info(request)
+        return self._list_bandwidths_with_http_info(request)
 
-    def list_bandwidths_with_http_info(self, request):
-        all_params = ['limit', 'offset', 'site_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_bandwidths_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1881,14 +1743,10 @@ class IecClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.ListDeploymentsRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.ListDeploymentsResponse`
         """
-        return self.list_deployments_with_http_info(request)
+        return self._list_deployments_with_http_info(request)
 
-    def list_deployments_with_http_info(self, request):
-        all_params = ['offset', 'limit', 'status', 'id', 'edgecloud_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_deployments_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1949,14 +1807,10 @@ class IecClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.ListEdgeCloudRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.ListEdgeCloudResponse`
         """
-        return self.list_edge_cloud_with_http_info(request)
+        return self._list_edge_cloud_with_http_info(request)
 
-    def list_edge_cloud_with_http_info(self, request):
-        all_params = ['offset', 'limit', 'name', 'id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_edge_cloud_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2015,14 +1869,10 @@ class IecClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.ListFlavorsRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.ListFlavorsResponse`
         """
-        return self.list_flavors_with_http_info(request)
+        return self._list_flavors_with_http_info(request)
 
-    def list_flavors_with_http_info(self, request):
-        all_params = ['offset', 'limit', 'name', 'area', 'province', 'city', 'operator', 'id', 'site_ids']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_flavors_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2094,14 +1944,10 @@ class IecClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.ListImagesRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.ListImagesResponse`
         """
-        return self.list_images_with_http_info(request)
+        return self._list_images_with_http_info(request)
 
-    def list_images_with_http_info(self, request):
-        all_params = ['imagetype', 'protected', 'id', 'visibility', 'status', 'name', 'os_type', 'virtual_env_type', 'isregistered', 'limit', 'offset', 'sort_key', 'sort_dir', 'support_kvm', 'support_kvm_gpu_type', 'support_kvm_ascend_310', 'support_kvm_hi1822_hiovs', 'support_arm', 'support_gpu_t4']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_images_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2190,14 +2036,10 @@ class IecClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.ListInstancesRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.ListInstancesResponse`
         """
-        return self.list_instances_with_http_info(request)
+        return self._list_instances_with_http_info(request)
 
-    def list_instances_with_http_info(self, request):
-        all_params = ['offset', 'limit', 'status', 'name', 'area', 'province', 'city', 'edgecloud_id', 'site_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_instances_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2266,14 +2108,10 @@ class IecClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.ListKeypairsRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.ListKeypairsResponse`
         """
-        return self.list_keypairs_with_http_info(request)
+        return self._list_keypairs_with_http_info(request)
 
-    def list_keypairs_with_http_info(self, request):
-        all_params = ['limit', 'offset', 'name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_keypairs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2330,14 +2168,10 @@ class IecClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.ListPortsRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.ListPortsResponse`
         """
-        return self.list_ports_with_http_info(request)
+        return self._list_ports_with_http_info(request)
 
-    def list_ports_with_http_info(self, request):
-        all_params = ['limit', 'offset', 'network_id', 'id', 'name', 'admin_state_up', 'fixed_ips', 'mac_address', 'device_id', 'device_owner', 'status', 'security_groups']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_ports_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2413,14 +2247,10 @@ class IecClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.ListQuotaRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.ListQuotaResponse`
         """
-        return self.list_quota_with_http_info(request)
+        return self._list_quota_with_http_info(request)
 
-    def list_quota_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_quota_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2471,14 +2301,10 @@ class IecClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.ListRelatedRoutetablesRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.ListRelatedRoutetablesResponse`
         """
-        return self.list_related_routetables_with_http_info(request)
+        return self._list_related_routetables_with_http_info(request)
 
-    def list_related_routetables_with_http_info(self, request):
-        all_params = ['subnet_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_related_routetables_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2531,14 +2357,10 @@ class IecClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.ListRoutesRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.ListRoutesResponse`
         """
-        return self.list_routes_with_http_info(request)
+        return self._list_routes_with_http_info(request)
 
-    def list_routes_with_http_info(self, request):
-        all_params = ['routetable_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_routes_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2591,14 +2413,10 @@ class IecClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.ListRoutetablesRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.ListRoutetablesResponse`
         """
-        return self.list_routetables_with_http_info(request)
+        return self._list_routetables_with_http_info(request)
 
-    def list_routetables_with_http_info(self, request):
-        all_params = ['id', 'limit', 'name', 'offset', 'vpc_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_routetables_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2659,14 +2477,10 @@ class IecClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.ListSecurityGroupRulesRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.ListSecurityGroupRulesResponse`
         """
-        return self.list_security_group_rules_with_http_info(request)
+        return self._list_security_group_rules_with_http_info(request)
 
-    def list_security_group_rules_with_http_info(self, request):
-        all_params = ['limit', 'offset', 'security_group_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_security_group_rules_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2723,14 +2537,10 @@ class IecClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.ListSecurityGroupsRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.ListSecurityGroupsResponse`
         """
-        return self.list_security_groups_with_http_info(request)
+        return self._list_security_groups_with_http_info(request)
 
-    def list_security_groups_with_http_info(self, request):
-        all_params = ['limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_security_groups_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2788,14 +2598,10 @@ class IecClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.ListSitesRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.ListSitesResponse`
         """
-        return self.list_sites_with_http_info(request)
+        return self._list_sites_with_http_info(request)
 
-    def list_sites_with_http_info(self, request):
-        all_params = ['limit', 'offset', 'id', 'area', 'province', 'city', 'flavor', 'volume_type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_sites_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2862,14 +2668,10 @@ class IecClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.ListSubnetsRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.ListSubnetsResponse`
         """
-        return self.list_subnets_with_http_info(request)
+        return self._list_subnets_with_http_info(request)
 
-    def list_subnets_with_http_info(self, request):
-        all_params = ['vpc_id', 'limit', 'offset', 'site_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_subnets_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2928,14 +2730,10 @@ class IecClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.ListVpcsRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.ListVpcsResponse`
         """
-        return self.list_vpcs_with_http_info(request)
+        return self._list_vpcs_with_http_info(request)
 
-    def list_vpcs_with_http_info(self, request):
-        all_params = ['limit', 'offset', 'id', 'name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_vpcs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2994,14 +2792,10 @@ class IecClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.ShowBandwidthRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.ShowBandwidthResponse`
         """
-        return self.show_bandwidth_with_http_info(request)
+        return self._show_bandwidth_with_http_info(request)
 
-    def show_bandwidth_with_http_info(self, request):
-        all_params = ['bandwidth_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_bandwidth_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3054,14 +2848,10 @@ class IecClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.ShowEdgeCloudRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.ShowEdgeCloudResponse`
         """
-        return self.show_edge_cloud_with_http_info(request)
+        return self._show_edge_cloud_with_http_info(request)
 
-    def show_edge_cloud_with_http_info(self, request):
-        all_params = ['edgecloud_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_edge_cloud_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3114,14 +2904,10 @@ class IecClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.ShowImageRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.ShowImageResponse`
         """
-        return self.show_image_with_http_info(request)
+        return self._show_image_with_http_info(request)
 
-    def show_image_with_http_info(self, request):
-        all_params = ['image_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_image_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3174,14 +2960,10 @@ class IecClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.ShowInstanceRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.ShowInstanceResponse`
         """
-        return self.show_instance_with_http_info(request)
+        return self._show_instance_with_http_info(request)
 
-    def show_instance_with_http_info(self, request):
-        all_params = ['server_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3234,14 +3016,10 @@ class IecClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.ShowKeypairRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.ShowKeypairResponse`
         """
-        return self.show_keypair_with_http_info(request)
+        return self._show_keypair_with_http_info(request)
 
-    def show_keypair_with_http_info(self, request):
-        all_params = ['keypair_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_keypair_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3294,14 +3072,10 @@ class IecClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.ShowPortRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.ShowPortResponse`
         """
-        return self.show_port_with_http_info(request)
+        return self._show_port_with_http_info(request)
 
-    def show_port_with_http_info(self, request):
-        all_params = ['port_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_port_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3354,14 +3128,10 @@ class IecClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.ShowRoutetableRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.ShowRoutetableResponse`
         """
-        return self.show_routetable_with_http_info(request)
+        return self._show_routetable_with_http_info(request)
 
-    def show_routetable_with_http_info(self, request):
-        all_params = ['routetable_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_routetable_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3414,14 +3184,10 @@ class IecClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.ShowSecurityGroupRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.ShowSecurityGroupResponse`
         """
-        return self.show_security_group_with_http_info(request)
+        return self._show_security_group_with_http_info(request)
 
-    def show_security_group_with_http_info(self, request):
-        all_params = ['security_group_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_security_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3474,14 +3240,10 @@ class IecClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.ShowSecurityGroupRuleRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.ShowSecurityGroupRuleResponse`
         """
-        return self.show_security_group_rule_with_http_info(request)
+        return self._show_security_group_rule_with_http_info(request)
 
-    def show_security_group_rule_with_http_info(self, request):
-        all_params = ['security_group_rule_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_security_group_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3534,14 +3296,10 @@ class IecClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.ShowSubnetRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.ShowSubnetResponse`
         """
-        return self.show_subnet_with_http_info(request)
+        return self._show_subnet_with_http_info(request)
 
-    def show_subnet_with_http_info(self, request):
-        all_params = ['subnet_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_subnet_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3594,14 +3352,10 @@ class IecClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.ShowVolumeRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.ShowVolumeResponse`
         """
-        return self.show_volume_with_http_info(request)
+        return self._show_volume_with_http_info(request)
 
-    def show_volume_with_http_info(self, request):
-        all_params = ['volume_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_volume_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3654,14 +3408,10 @@ class IecClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.ShowVpcRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.ShowVpcResponse`
         """
-        return self.show_vpc_with_http_info(request)
+        return self._show_vpc_with_http_info(request)
 
-    def show_vpc_with_http_info(self, request):
-        all_params = ['vpc_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_vpc_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3714,14 +3464,10 @@ class IecClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.UpdateInstanceRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.UpdateInstanceResponse`
         """
-        return self.update_instance_with_http_info(request)
+        return self._update_instance_with_http_info(request)
 
-    def update_instance_with_http_info(self, request):
-        all_params = ['server_id', 'update_instance_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3776,14 +3522,10 @@ class IecClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.UpdatePortRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.UpdatePortResponse`
         """
-        return self.update_port_with_http_info(request)
+        return self._update_port_with_http_info(request)
 
-    def update_port_with_http_info(self, request):
-        all_params = ['port_id', 'update_port_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_port_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3838,14 +3580,10 @@ class IecClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.UpdateRoutesRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.UpdateRoutesResponse`
         """
-        return self.update_routes_with_http_info(request)
+        return self._update_routes_with_http_info(request)
 
-    def update_routes_with_http_info(self, request):
-        all_params = ['routetable_id', 'update_routes_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_routes_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3900,14 +3638,10 @@ class IecClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.UpdateRoutetableRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.UpdateRoutetableResponse`
         """
-        return self.update_routetable_with_http_info(request)
+        return self._update_routetable_with_http_info(request)
 
-    def update_routetable_with_http_info(self, request):
-        all_params = ['routetable_id', 'update_routetable_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_routetable_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3962,14 +3696,10 @@ class IecClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.UpdateSubnetRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.UpdateSubnetResponse`
         """
-        return self.update_subnet_with_http_info(request)
+        return self._update_subnet_with_http_info(request)
 
-    def update_subnet_with_http_info(self, request):
-        all_params = ['subnet_id', 'update_subnet_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_subnet_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4024,14 +3754,10 @@ class IecClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.UpdateVpcRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.UpdateVpcResponse`
         """
-        return self.update_vpc_with_http_info(request)
+        return self._update_vpc_with_http_info(request)
 
-    def update_vpc_with_http_info(self, request):
-        all_params = ['vpc_id', 'update_vpc_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_vpc_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4086,14 +3812,10 @@ class IecClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.CreateFirewallRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.CreateFirewallResponse`
         """
-        return self.create_firewall_with_http_info(request)
+        return self._create_firewall_with_http_info(request)
 
-    def create_firewall_with_http_info(self, request):
-        all_params = ['create_firewall_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_firewall_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4146,14 +3868,10 @@ class IecClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.DeleteFirewallRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.DeleteFirewallResponse`
         """
-        return self.delete_firewall_with_http_info(request)
+        return self._delete_firewall_with_http_info(request)
 
-    def delete_firewall_with_http_info(self, request):
-        all_params = ['firewall_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_firewall_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4206,14 +3924,10 @@ class IecClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.ListFirewallsRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.ListFirewallsResponse`
         """
-        return self.list_firewalls_with_http_info(request)
+        return self._list_firewalls_with_http_info(request)
 
-    def list_firewalls_with_http_info(self, request):
-        all_params = ['limit', 'offset', 'id', 'name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_firewalls_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4272,14 +3986,10 @@ class IecClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.ShowFirewallRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.ShowFirewallResponse`
         """
-        return self.show_firewall_with_http_info(request)
+        return self._show_firewall_with_http_info(request)
 
-    def show_firewall_with_http_info(self, request):
-        all_params = ['firewall_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_firewall_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4332,14 +4042,10 @@ class IecClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.UpdateFirewallRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.UpdateFirewallResponse`
         """
-        return self.update_firewall_with_http_info(request)
+        return self._update_firewall_with_http_info(request)
 
-    def update_firewall_with_http_info(self, request):
-        all_params = ['firewall_id', 'update_firewall_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_firewall_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4394,14 +4100,10 @@ class IecClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.UpdateFirewallRuleRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.UpdateFirewallRuleResponse`
         """
-        return self.update_firewall_rule_with_http_info(request)
+        return self._update_firewall_rule_with_http_info(request)
 
-    def update_firewall_rule_with_http_info(self, request):
-        all_params = ['firewall_id', 'update_firewall_rule_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_firewall_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4456,14 +4158,10 @@ class IecClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.CreatePublicIpRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.CreatePublicIpResponse`
         """
-        return self.create_public_ip_with_http_info(request)
+        return self._create_public_ip_with_http_info(request)
 
-    def create_public_ip_with_http_info(self, request):
-        all_params = ['create_public_ip_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_public_ip_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4516,14 +4214,10 @@ class IecClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.DeletePublicIpRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.DeletePublicIpResponse`
         """
-        return self.delete_public_ip_with_http_info(request)
+        return self._delete_public_ip_with_http_info(request)
 
-    def delete_public_ip_with_http_info(self, request):
-        all_params = ['publicip_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_public_ip_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4576,14 +4270,10 @@ class IecClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.ListPublicIpsRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.ListPublicIpsResponse`
         """
-        return self.list_public_ips_with_http_info(request)
+        return self._list_public_ips_with_http_info(request)
 
-    def list_public_ips_with_http_info(self, request):
-        all_params = ['limit', 'offset', 'site_id', 'port_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_public_ips_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4642,14 +4332,10 @@ class IecClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.ShowPublicIpRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.ShowPublicIpResponse`
         """
-        return self.show_public_ip_with_http_info(request)
+        return self._show_public_ip_with_http_info(request)
 
-    def show_public_ip_with_http_info(self, request):
-        all_params = ['publicip_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_public_ip_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4702,14 +4388,10 @@ class IecClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.UpdatePublicIpRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.UpdatePublicIpResponse`
         """
-        return self.update_public_ip_with_http_info(request)
+        return self._update_public_ip_with_http_info(request)
 
-    def update_public_ip_with_http_info(self, request):
-        all_params = ['publicip_id', 'update_public_ip_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_public_ip_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class IoTEdgeClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(IoTEdgeClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkiotedge.v3.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -53,14 +35,10 @@ class IoTEdgeClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v3.CreateAppRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v3.CreateAppResponse`
         """
-        return self.create_app_with_http_info(request)
+        return self._create_app_with_http_info(request)
 
-    def create_app_with_http_info(self, request):
-        all_params = ['create_app_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_app_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -113,14 +91,10 @@ class IoTEdgeClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v3.DeleteAppRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v3.DeleteAppResponse`
         """
-        return self.delete_app_with_http_info(request)
+        return self._delete_app_with_http_info(request)
 
-    def delete_app_with_http_info(self, request):
-        all_params = ['app_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_app_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -173,14 +147,10 @@ class IoTEdgeClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v3.ListAppsRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v3.ListAppsResponse`
         """
-        return self.list_apps_with_http_info(request)
+        return self._list_apps_with_http_info(request)
 
-    def list_apps_with_http_info(self, request):
-        all_params = ['app_type', 'provider_type', 'app_id', 'limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_apps_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -241,14 +211,10 @@ class IoTEdgeClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v3.ShowAppRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v3.ShowAppResponse`
         """
-        return self.show_app_with_http_info(request)
+        return self._show_app_with_http_info(request)
 
-    def show_app_with_http_info(self, request):
-        all_params = ['app_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_app_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -301,14 +267,10 @@ class IoTEdgeClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v3.CreateAppInstanceRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v3.CreateAppInstanceResponse`
         """
-        return self.create_app_instance_with_http_info(request)
+        return self._create_app_instance_with_http_info(request)
 
-    def create_app_instance_with_http_info(self, request):
-        all_params = ['cluster_id', 'create_app_instance_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_app_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -363,14 +325,10 @@ class IoTEdgeClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v3.DeleteAppInstanceRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v3.DeleteAppInstanceResponse`
         """
-        return self.delete_app_instance_with_http_info(request)
+        return self._delete_app_instance_with_http_info(request)
 
-    def delete_app_instance_with_http_info(self, request):
-        all_params = ['cluster_id', 'app_instance_id', 'namespace']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_app_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -427,14 +385,10 @@ class IoTEdgeClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v3.ListAppInstanceHistoryRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v3.ListAppInstanceHistoryResponse`
         """
-        return self.list_app_instance_history_with_http_info(request)
+        return self._list_app_instance_history_with_http_info(request)
 
-    def list_app_instance_history_with_http_info(self, request):
-        all_params = ['cluster_id', 'app_instance_id', 'namespace']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_app_instance_history_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -491,14 +445,10 @@ class IoTEdgeClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v3.ListAppInstancesRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v3.ListAppInstancesResponse`
         """
-        return self.list_app_instances_with_http_info(request)
+        return self._list_app_instances_with_http_info(request)
 
-    def list_app_instances_with_http_info(self, request):
-        all_params = ['cluster_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_app_instances_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -551,14 +501,10 @@ class IoTEdgeClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v3.UpdateAppInstanceRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v3.UpdateAppInstanceResponse`
         """
-        return self.update_app_instance_with_http_info(request)
+        return self._update_app_instance_with_http_info(request)
 
-    def update_app_instance_with_http_info(self, request):
-        all_params = ['cluster_id', 'app_instance_id', 'update_app_instance_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_app_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -615,14 +561,10 @@ class IoTEdgeClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v3.CreateAppVersionRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v3.CreateAppVersionResponse`
         """
-        return self.create_app_version_with_http_info(request)
+        return self._create_app_version_with_http_info(request)
 
-    def create_app_version_with_http_info(self, request):
-        all_params = ['app_id', 'version', 'chart', 'images']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_app_version_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -683,14 +625,10 @@ class IoTEdgeClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v3.DeleteAppVersionRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v3.DeleteAppVersionResponse`
         """
-        return self.delete_app_version_with_http_info(request)
+        return self._delete_app_version_with_http_info(request)
 
-    def delete_app_version_with_http_info(self, request):
-        all_params = ['app_id', 'version']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_app_version_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -745,14 +683,10 @@ class IoTEdgeClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v3.DownloadAppVersionRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v3.DownloadAppVersionResponse`
         """
-        return self.download_app_version_with_http_info(request)
+        return self._download_app_version_with_http_info(request)
 
-    def download_app_version_with_http_info(self, request):
-        all_params = ['app_id', 'version']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _download_app_version_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -807,14 +741,10 @@ class IoTEdgeClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v3.ListAppImageRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v3.ListAppImageResponse`
         """
-        return self.list_app_image_with_http_info(request)
+        return self._list_app_image_with_http_info(request)
 
-    def list_app_image_with_http_info(self, request):
-        all_params = ['app_id', 'version', 'limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_app_image_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -873,14 +803,10 @@ class IoTEdgeClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v3.ListAppVersionsRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v3.ListAppVersionsResponse`
         """
-        return self.list_app_versions_with_http_info(request)
+        return self._list_app_versions_with_http_info(request)
 
-    def list_app_versions_with_http_info(self, request):
-        all_params = ['app_id', 'version', 'limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_app_versions_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -939,14 +865,10 @@ class IoTEdgeClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v3.ShowAppVersionRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v3.ShowAppVersionResponse`
         """
-        return self.show_app_version_with_http_info(request)
+        return self._show_app_version_with_http_info(request)
 
-    def show_app_version_with_http_info(self, request):
-        all_params = ['app_id', 'version']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_app_version_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1001,14 +923,10 @@ class IoTEdgeClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v3.CreateClusterRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v3.CreateClusterResponse`
         """
-        return self.create_cluster_with_http_info(request)
+        return self._create_cluster_with_http_info(request)
 
-    def create_cluster_with_http_info(self, request):
-        all_params = ['create_cluster_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_cluster_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1050,25 +968,21 @@ class IoTEdgeClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-    def create_install_cmd(self, request):
+    def create_cluster_install_cmd(self, request):
         """生成边缘集群安装命令
 
         应用服务器可调用此接口生成边缘集群安装命令。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
-        :param request: Request instance for CreateInstallCmd
-        :type request: :class:`huaweicloudsdkiotedge.v3.CreateInstallCmdRequest`
-        :rtype: :class:`huaweicloudsdkiotedge.v3.CreateInstallCmdResponse`
+        :param request: Request instance for CreateClusterInstallCmd
+        :type request: :class:`huaweicloudsdkiotedge.v3.CreateClusterInstallCmdRequest`
+        :rtype: :class:`huaweicloudsdkiotedge.v3.CreateClusterInstallCmdResponse`
         """
-        return self.create_install_cmd_with_http_info(request)
+        return self._create_cluster_install_cmd_with_http_info(request)
 
-    def create_install_cmd_with_http_info(self, request):
-        all_params = ['cluster_id', 'arch', 'os']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_cluster_install_cmd_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1108,7 +1022,7 @@ class IoTEdgeClient(Client):
             body=body_params,
             post_params=form_params,
             cname=cname,
-            response_type='CreateInstallCmdResponse',
+            response_type='CreateClusterInstallCmdResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1125,14 +1039,10 @@ class IoTEdgeClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v3.DeleteClusterRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v3.DeleteClusterResponse`
         """
-        return self.delete_cluster_with_http_info(request)
+        return self._delete_cluster_with_http_info(request)
 
-    def delete_cluster_with_http_info(self, request):
-        all_params = ['cluster_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_cluster_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1185,14 +1095,10 @@ class IoTEdgeClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v3.ListClustersRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v3.ListClustersResponse`
         """
-        return self.list_clusters_with_http_info(request)
+        return self._list_clusters_with_http_info(request)
 
-    def list_clusters_with_http_info(self, request):
-        all_params = ['cluster_name', 'state', 'limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_clusters_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1251,14 +1157,10 @@ class IoTEdgeClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v3.ShowClusterRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v3.ShowClusterResponse`
         """
-        return self.show_cluster_with_http_info(request)
+        return self._show_cluster_with_http_info(request)
 
-    def show_cluster_with_http_info(self, request):
-        all_params = ['cluster_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_cluster_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

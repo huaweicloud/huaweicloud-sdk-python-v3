@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class GaAsyncClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(GaAsyncClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkga.v1.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -54,14 +36,10 @@ class GaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkga.v1.CreateAcceleratorRequest`
         :rtype: :class:`huaweicloudsdkga.v1.CreateAcceleratorResponse`
         """
-        return self.create_accelerator_with_http_info(request)
+        return self._create_accelerator_with_http_info(request)
 
-    def create_accelerator_with_http_info(self, request):
-        all_params = ['create_accelerator_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_accelerator_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -115,14 +93,10 @@ class GaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkga.v1.DeleteAcceleratorRequest`
         :rtype: :class:`huaweicloudsdkga.v1.DeleteAcceleratorResponse`
         """
-        return self.delete_accelerator_with_http_info(request)
+        return self._delete_accelerator_with_http_info(request)
 
-    def delete_accelerator_with_http_info(self, request):
-        all_params = ['accelerator_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_accelerator_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -176,14 +150,10 @@ class GaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkga.v1.ListAcceleratorsRequest`
         :rtype: :class:`huaweicloudsdkga.v1.ListAcceleratorsResponse`
         """
-        return self.list_accelerators_with_http_info(request)
+        return self._list_accelerators_with_http_info(request)
 
-    def list_accelerators_with_http_info(self, request):
-        all_params = ['limit', 'marker', 'page_reverse', 'id', 'name', 'status', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_accelerators_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -249,14 +219,10 @@ class GaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkga.v1.ShowAcceleratorRequest`
         :rtype: :class:`huaweicloudsdkga.v1.ShowAcceleratorResponse`
         """
-        return self.show_accelerator_with_http_info(request)
+        return self._show_accelerator_with_http_info(request)
 
-    def show_accelerator_with_http_info(self, request):
-        all_params = ['accelerator_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_accelerator_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -310,14 +276,10 @@ class GaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkga.v1.UpdateAcceleratorRequest`
         :rtype: :class:`huaweicloudsdkga.v1.UpdateAcceleratorResponse`
         """
-        return self.update_accelerator_with_http_info(request)
+        return self._update_accelerator_with_http_info(request)
 
-    def update_accelerator_with_http_info(self, request):
-        all_params = ['accelerator_id', 'update_accelerator_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_accelerator_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -373,14 +335,10 @@ class GaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkga.v1.CreateEndpointRequest`
         :rtype: :class:`huaweicloudsdkga.v1.CreateEndpointResponse`
         """
-        return self.create_endpoint_with_http_info(request)
+        return self._create_endpoint_with_http_info(request)
 
-    def create_endpoint_with_http_info(self, request):
-        all_params = ['endpoint_group_id', 'create_endpoint_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_endpoint_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -436,14 +394,10 @@ class GaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkga.v1.DeleteEndpointRequest`
         :rtype: :class:`huaweicloudsdkga.v1.DeleteEndpointResponse`
         """
-        return self.delete_endpoint_with_http_info(request)
+        return self._delete_endpoint_with_http_info(request)
 
-    def delete_endpoint_with_http_info(self, request):
-        all_params = ['endpoint_group_id', 'endpoint_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_endpoint_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -499,14 +453,10 @@ class GaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkga.v1.ListEndpointsRequest`
         :rtype: :class:`huaweicloudsdkga.v1.ListEndpointsResponse`
         """
-        return self.list_endpoints_with_http_info(request)
+        return self._list_endpoints_with_http_info(request)
 
-    def list_endpoints_with_http_info(self, request):
-        all_params = ['endpoint_group_id', 'limit', 'marker', 'page_reverse', 'id', 'status']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_endpoints_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -570,14 +520,10 @@ class GaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkga.v1.ShowEndpointRequest`
         :rtype: :class:`huaweicloudsdkga.v1.ShowEndpointResponse`
         """
-        return self.show_endpoint_with_http_info(request)
+        return self._show_endpoint_with_http_info(request)
 
-    def show_endpoint_with_http_info(self, request):
-        all_params = ['endpoint_group_id', 'endpoint_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_endpoint_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -633,14 +579,10 @@ class GaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkga.v1.UpdateEndpointRequest`
         :rtype: :class:`huaweicloudsdkga.v1.UpdateEndpointResponse`
         """
-        return self.update_endpoint_with_http_info(request)
+        return self._update_endpoint_with_http_info(request)
 
-    def update_endpoint_with_http_info(self, request):
-        all_params = ['endpoint_group_id', 'endpoint_id', 'update_endpoint_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_endpoint_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -698,14 +640,10 @@ class GaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkga.v1.CreateEndpointGroupRequest`
         :rtype: :class:`huaweicloudsdkga.v1.CreateEndpointGroupResponse`
         """
-        return self.create_endpoint_group_with_http_info(request)
+        return self._create_endpoint_group_with_http_info(request)
 
-    def create_endpoint_group_with_http_info(self, request):
-        all_params = ['create_endpoint_group_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_endpoint_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -759,14 +697,10 @@ class GaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkga.v1.DeleteEndpointGroupRequest`
         :rtype: :class:`huaweicloudsdkga.v1.DeleteEndpointGroupResponse`
         """
-        return self.delete_endpoint_group_with_http_info(request)
+        return self._delete_endpoint_group_with_http_info(request)
 
-    def delete_endpoint_group_with_http_info(self, request):
-        all_params = ['endpoint_group_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_endpoint_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -820,14 +754,10 @@ class GaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkga.v1.ListEndpointGroupsRequest`
         :rtype: :class:`huaweicloudsdkga.v1.ListEndpointGroupsResponse`
         """
-        return self.list_endpoint_groups_with_http_info(request)
+        return self._list_endpoint_groups_with_http_info(request)
 
-    def list_endpoint_groups_with_http_info(self, request):
-        all_params = ['limit', 'marker', 'page_reverse', 'id', 'name', 'status', 'listener_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_endpoint_groups_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -893,14 +823,10 @@ class GaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkga.v1.ShowEndpointGroupRequest`
         :rtype: :class:`huaweicloudsdkga.v1.ShowEndpointGroupResponse`
         """
-        return self.show_endpoint_group_with_http_info(request)
+        return self._show_endpoint_group_with_http_info(request)
 
-    def show_endpoint_group_with_http_info(self, request):
-        all_params = ['endpoint_group_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_endpoint_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -954,14 +880,10 @@ class GaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkga.v1.UpdateEndpointGroupRequest`
         :rtype: :class:`huaweicloudsdkga.v1.UpdateEndpointGroupResponse`
         """
-        return self.update_endpoint_group_with_http_info(request)
+        return self._update_endpoint_group_with_http_info(request)
 
-    def update_endpoint_group_with_http_info(self, request):
-        all_params = ['endpoint_group_id', 'update_endpoint_group_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_endpoint_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1017,14 +939,10 @@ class GaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkga.v1.CreateHealthCheckRequest`
         :rtype: :class:`huaweicloudsdkga.v1.CreateHealthCheckResponse`
         """
-        return self.create_health_check_with_http_info(request)
+        return self._create_health_check_with_http_info(request)
 
-    def create_health_check_with_http_info(self, request):
-        all_params = ['create_health_check_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_health_check_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1078,14 +996,10 @@ class GaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkga.v1.DeleteHealthCheckRequest`
         :rtype: :class:`huaweicloudsdkga.v1.DeleteHealthCheckResponse`
         """
-        return self.delete_health_check_with_http_info(request)
+        return self._delete_health_check_with_http_info(request)
 
-    def delete_health_check_with_http_info(self, request):
-        all_params = ['health_check_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_health_check_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1139,14 +1053,10 @@ class GaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkga.v1.ListHealthChecksRequest`
         :rtype: :class:`huaweicloudsdkga.v1.ListHealthChecksResponse`
         """
-        return self.list_health_checks_with_http_info(request)
+        return self._list_health_checks_with_http_info(request)
 
-    def list_health_checks_with_http_info(self, request):
-        all_params = ['limit', 'marker', 'page_reverse', 'id', 'status', 'endpoint_group_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_health_checks_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1210,14 +1120,10 @@ class GaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkga.v1.ShowHealthCheckRequest`
         :rtype: :class:`huaweicloudsdkga.v1.ShowHealthCheckResponse`
         """
-        return self.show_health_check_with_http_info(request)
+        return self._show_health_check_with_http_info(request)
 
-    def show_health_check_with_http_info(self, request):
-        all_params = ['health_check_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_health_check_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1271,14 +1177,10 @@ class GaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkga.v1.UpdateHealthCheckRequest`
         :rtype: :class:`huaweicloudsdkga.v1.UpdateHealthCheckResponse`
         """
-        return self.update_health_check_with_http_info(request)
+        return self._update_health_check_with_http_info(request)
 
-    def update_health_check_with_http_info(self, request):
-        all_params = ['health_check_id', 'update_health_check_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_health_check_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1334,14 +1236,10 @@ class GaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkga.v1.CreateListenerRequest`
         :rtype: :class:`huaweicloudsdkga.v1.CreateListenerResponse`
         """
-        return self.create_listener_with_http_info(request)
+        return self._create_listener_with_http_info(request)
 
-    def create_listener_with_http_info(self, request):
-        all_params = ['create_listener_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_listener_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1395,14 +1293,10 @@ class GaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkga.v1.DeleteListenerRequest`
         :rtype: :class:`huaweicloudsdkga.v1.DeleteListenerResponse`
         """
-        return self.delete_listener_with_http_info(request)
+        return self._delete_listener_with_http_info(request)
 
-    def delete_listener_with_http_info(self, request):
-        all_params = ['listener_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_listener_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1456,14 +1350,10 @@ class GaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkga.v1.ListListenersRequest`
         :rtype: :class:`huaweicloudsdkga.v1.ListListenersResponse`
         """
-        return self.list_listeners_with_http_info(request)
+        return self._list_listeners_with_http_info(request)
 
-    def list_listeners_with_http_info(self, request):
-        all_params = ['limit', 'marker', 'page_reverse', 'id', 'name', 'status', 'accelerator_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_listeners_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1529,14 +1419,10 @@ class GaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkga.v1.ShowListenerRequest`
         :rtype: :class:`huaweicloudsdkga.v1.ShowListenerResponse`
         """
-        return self.show_listener_with_http_info(request)
+        return self._show_listener_with_http_info(request)
 
-    def show_listener_with_http_info(self, request):
-        all_params = ['listener_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_listener_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1590,14 +1476,10 @@ class GaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkga.v1.UpdateListenerRequest`
         :rtype: :class:`huaweicloudsdkga.v1.UpdateListenerResponse`
         """
-        return self.update_listener_with_http_info(request)
+        return self._update_listener_with_http_info(request)
 
-    def update_listener_with_http_info(self, request):
-        all_params = ['listener_id', 'update_listener_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_listener_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1653,14 +1535,10 @@ class GaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkga.v1.ListRegionsRequest`
         :rtype: :class:`huaweicloudsdkga.v1.ListRegionsResponse`
         """
-        return self.list_regions_with_http_info(request)
+        return self._list_regions_with_http_info(request)
 
-    def list_regions_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_regions_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1712,14 +1590,10 @@ class GaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkga.v1.CreateTagsRequest`
         :rtype: :class:`huaweicloudsdkga.v1.CreateTagsResponse`
         """
-        return self.create_tags_with_http_info(request)
+        return self._create_tags_with_http_info(request)
 
-    def create_tags_with_http_info(self, request):
-        all_params = ['resource_type', 'resource_id', 'create_tags_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1777,14 +1651,10 @@ class GaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkga.v1.DeleteTagsRequest`
         :rtype: :class:`huaweicloudsdkga.v1.DeleteTagsResponse`
         """
-        return self.delete_tags_with_http_info(request)
+        return self._delete_tags_with_http_info(request)
 
-    def delete_tags_with_http_info(self, request):
-        all_params = ['resource_type', 'resource_id', 'delete_tags_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1842,14 +1712,10 @@ class GaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkga.v1.ShowResourceTagsRequest`
         :rtype: :class:`huaweicloudsdkga.v1.ShowResourceTagsResponse`
         """
-        return self.show_resource_tags_with_http_info(request)
+        return self._show_resource_tags_with_http_info(request)
 
-    def show_resource_tags_with_http_info(self, request):
-        all_params = ['resource_type', 'resource_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_resource_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

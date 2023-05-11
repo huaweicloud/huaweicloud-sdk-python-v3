@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class SisAsyncClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(SisAsyncClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdksis.v1.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -54,14 +36,10 @@ class SisAsyncClient(Client):
         :type request: :class:`huaweicloudsdksis.v1.CollectTranscriberJobRequest`
         :rtype: :class:`huaweicloudsdksis.v1.CollectTranscriberJobResponse`
         """
-        return self.collect_transcriber_job_with_http_info(request)
+        return self._collect_transcriber_job_with_http_info(request)
 
-    def collect_transcriber_job_with_http_info(self, request):
-        all_params = ['job_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _collect_transcriber_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -115,14 +93,10 @@ class SisAsyncClient(Client):
         :type request: :class:`huaweicloudsdksis.v1.CreateVocabularyRequest`
         :rtype: :class:`huaweicloudsdksis.v1.CreateVocabularyResponse`
         """
-        return self.create_vocabulary_with_http_info(request)
+        return self._create_vocabulary_with_http_info(request)
 
-    def create_vocabulary_with_http_info(self, request):
-        all_params = ['post_create_vocab_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_vocabulary_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -176,14 +150,10 @@ class SisAsyncClient(Client):
         :type request: :class:`huaweicloudsdksis.v1.DeleteVocabularyRequest`
         :rtype: :class:`huaweicloudsdksis.v1.DeleteVocabularyResponse`
         """
-        return self.delete_vocabulary_with_http_info(request)
+        return self._delete_vocabulary_with_http_info(request)
 
-    def delete_vocabulary_with_http_info(self, request):
-        all_params = ['vocabulary_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_vocabulary_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -246,14 +216,10 @@ class SisAsyncClient(Client):
         :type request: :class:`huaweicloudsdksis.v1.PushTranscriberJobsRequest`
         :rtype: :class:`huaweicloudsdksis.v1.PushTranscriberJobsResponse`
         """
-        return self.push_transcriber_jobs_with_http_info(request)
+        return self._push_transcriber_jobs_with_http_info(request)
 
-    def push_transcriber_jobs_with_http_info(self, request):
-        all_params = ['post_transcribe']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _push_transcriber_jobs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -308,14 +274,10 @@ class SisAsyncClient(Client):
         :type request: :class:`huaweicloudsdksis.v1.RecognizeFlashAsrRequest`
         :rtype: :class:`huaweicloudsdksis.v1.RecognizeFlashAsrResponse`
         """
-        return self.recognize_flash_asr_with_http_info(request)
+        return self._recognize_flash_asr_with_http_info(request)
 
-    def recognize_flash_asr_with_http_info(self, request):
-        all_params = ['_property', 'audio_format', 'add_punc', 'digit_norm', 'need_word_info', 'vocabulary_id', 'obs_bucket_name', 'obs_object_key', 'first_channel_only']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _recognize_flash_asr_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -385,14 +347,10 @@ class SisAsyncClient(Client):
         :type request: :class:`huaweicloudsdksis.v1.RecognizeShortAudioRequest`
         :rtype: :class:`huaweicloudsdksis.v1.RecognizeShortAudioResponse`
         """
-        return self.recognize_short_audio_with_http_info(request)
+        return self._recognize_short_audio_with_http_info(request)
 
-    def recognize_short_audio_with_http_info(self, request):
-        all_params = ['post_short_audio_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _recognize_short_audio_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -446,14 +404,10 @@ class SisAsyncClient(Client):
         :type request: :class:`huaweicloudsdksis.v1.RunAudioAssessmentRequest`
         :rtype: :class:`huaweicloudsdksis.v1.RunAudioAssessmentResponse`
         """
-        return self.run_audio_assessment_with_http_info(request)
+        return self._run_audio_assessment_with_http_info(request)
 
-    def run_audio_assessment_with_http_info(self, request):
-        all_params = ['post_short_audio_assessment_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _run_audio_assessment_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -507,14 +461,10 @@ class SisAsyncClient(Client):
         :type request: :class:`huaweicloudsdksis.v1.RunMultiModalAssessmentRequest`
         :rtype: :class:`huaweicloudsdksis.v1.RunMultiModalAssessmentResponse`
         """
-        return self.run_multi_modal_assessment_with_http_info(request)
+        return self._run_multi_modal_assessment_with_http_info(request)
 
-    def run_multi_modal_assessment_with_http_info(self, request):
-        all_params = ['post_short_video_assessment_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _run_multi_modal_assessment_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -568,14 +518,10 @@ class SisAsyncClient(Client):
         :type request: :class:`huaweicloudsdksis.v1.RunTtsRequest`
         :rtype: :class:`huaweicloudsdksis.v1.RunTtsResponse`
         """
-        return self.run_tts_with_http_info(request)
+        return self._run_tts_with_http_info(request)
 
-    def run_tts_with_http_info(self, request):
-        all_params = ['post_custom_tts_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _run_tts_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -629,14 +575,10 @@ class SisAsyncClient(Client):
         :type request: :class:`huaweicloudsdksis.v1.ShowVocabulariesRequest`
         :rtype: :class:`huaweicloudsdksis.v1.ShowVocabulariesResponse`
         """
-        return self.show_vocabularies_with_http_info(request)
+        return self._show_vocabularies_with_http_info(request)
 
-    def show_vocabularies_with_http_info(self, request):
-        all_params = ['show_vocabularies_params']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_vocabularies_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -690,14 +632,10 @@ class SisAsyncClient(Client):
         :type request: :class:`huaweicloudsdksis.v1.ShowVocabularyRequest`
         :rtype: :class:`huaweicloudsdksis.v1.ShowVocabularyResponse`
         """
-        return self.show_vocabulary_with_http_info(request)
+        return self._show_vocabulary_with_http_info(request)
 
-    def show_vocabulary_with_http_info(self, request):
-        all_params = ['vocabulary_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_vocabulary_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -751,14 +689,10 @@ class SisAsyncClient(Client):
         :type request: :class:`huaweicloudsdksis.v1.UpdateVocabularyRequest`
         :rtype: :class:`huaweicloudsdksis.v1.UpdateVocabularyResponse`
         """
-        return self.update_vocabulary_with_http_info(request)
+        return self._update_vocabulary_with_http_info(request)
 
-    def update_vocabulary_with_http_info(self, request):
-        all_params = ['vocabulary_id', 'put_update_vocab_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_vocabulary_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

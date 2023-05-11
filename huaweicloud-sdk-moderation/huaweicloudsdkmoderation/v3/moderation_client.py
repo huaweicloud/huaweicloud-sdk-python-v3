@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class ModerationClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(ModerationClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkmoderation.v3.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -53,14 +35,10 @@ class ModerationClient(Client):
         :type request: :class:`huaweicloudsdkmoderation.v3.CheckImageModerationRequest`
         :rtype: :class:`huaweicloudsdkmoderation.v3.CheckImageModerationResponse`
         """
-        return self.check_image_moderation_with_http_info(request)
+        return self._check_image_moderation_with_http_info(request)
 
-    def check_image_moderation_with_http_info(self, request):
-        all_params = ['run_image_moderation_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _check_image_moderation_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -113,14 +91,10 @@ class ModerationClient(Client):
         :type request: :class:`huaweicloudsdkmoderation.v3.RunCreateAudioModerationJobRequest`
         :rtype: :class:`huaweicloudsdkmoderation.v3.RunCreateAudioModerationJobResponse`
         """
-        return self.run_create_audio_moderation_job_with_http_info(request)
+        return self._run_create_audio_moderation_job_with_http_info(request)
 
-    def run_create_audio_moderation_job_with_http_info(self, request):
-        all_params = ['run_text_moderation_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _run_create_audio_moderation_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -173,14 +147,10 @@ class ModerationClient(Client):
         :type request: :class:`huaweicloudsdkmoderation.v3.RunCreateVideoModerationJobRequest`
         :rtype: :class:`huaweicloudsdkmoderation.v3.RunCreateVideoModerationJobResponse`
         """
-        return self.run_create_video_moderation_job_with_http_info(request)
+        return self._run_create_video_moderation_job_with_http_info(request)
 
-    def run_create_video_moderation_job_with_http_info(self, request):
-        all_params = ['run_video_moderation_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _run_create_video_moderation_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -232,14 +202,10 @@ class ModerationClient(Client):
         :type request: :class:`huaweicloudsdkmoderation.v3.RunQueryAudioModerationJobRequest`
         :rtype: :class:`huaweicloudsdkmoderation.v3.RunQueryAudioModerationJobResponse`
         """
-        return self.run_query_audio_moderation_job_with_http_info(request)
+        return self._run_query_audio_moderation_job_with_http_info(request)
 
-    def run_query_audio_moderation_job_with_http_info(self, request):
-        all_params = ['job_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _run_query_audio_moderation_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -292,14 +258,10 @@ class ModerationClient(Client):
         :type request: :class:`huaweicloudsdkmoderation.v3.RunQueryVideoModerationJobRequest`
         :rtype: :class:`huaweicloudsdkmoderation.v3.RunQueryVideoModerationJobResponse`
         """
-        return self.run_query_video_moderation_job_with_http_info(request)
+        return self._run_query_video_moderation_job_with_http_info(request)
 
-    def run_query_video_moderation_job_with_http_info(self, request):
-        all_params = ['job_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _run_query_video_moderation_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -352,14 +314,10 @@ class ModerationClient(Client):
         :type request: :class:`huaweicloudsdkmoderation.v3.RunTextModerationRequest`
         :rtype: :class:`huaweicloudsdkmoderation.v3.RunTextModerationResponse`
         """
-        return self.run_text_moderation_with_http_info(request)
+        return self._run_text_moderation_with_http_info(request)
 
-    def run_text_moderation_with_http_info(self, request):
-        all_params = ['run_text_moderation_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _run_text_moderation_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

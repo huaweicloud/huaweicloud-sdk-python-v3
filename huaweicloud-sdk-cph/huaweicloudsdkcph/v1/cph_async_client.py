@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class CphAsyncClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(CphAsyncClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkcph.v1.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -54,14 +36,10 @@ class CphAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcph.v1.BatchCreateTagsRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.BatchCreateTagsResponse`
         """
-        return self.batch_create_tags_with_http_info(request)
+        return self._batch_create_tags_with_http_info(request)
 
-    def batch_create_tags_with_http_info(self, request):
-        all_params = ['resource_type', 'resource_id', 'batch_create_tags_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_create_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -119,14 +97,10 @@ class CphAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcph.v1.BatchDeleteTagsRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.BatchDeleteTagsResponse`
         """
-        return self.batch_delete_tags_with_http_info(request)
+        return self._batch_delete_tags_with_http_info(request)
 
-    def batch_delete_tags_with_http_info(self, request):
-        all_params = ['resource_type', 'resource_id', 'batch_delete_tags_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_delete_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -184,14 +158,10 @@ class CphAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcph.v1.BatchExportCloudPhoneDataRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.BatchExportCloudPhoneDataResponse`
         """
-        return self.batch_export_cloud_phone_data_with_http_info(request)
+        return self._batch_export_cloud_phone_data_with_http_info(request)
 
-    def batch_export_cloud_phone_data_with_http_info(self, request):
-        all_params = ['batch_export_cloud_phone_data_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_export_cloud_phone_data_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -245,14 +215,10 @@ class CphAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcph.v1.BatchImportCloudPhoneDataRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.BatchImportCloudPhoneDataResponse`
         """
-        return self.batch_import_cloud_phone_data_with_http_info(request)
+        return self._batch_import_cloud_phone_data_with_http_info(request)
 
-    def batch_import_cloud_phone_data_with_http_info(self, request):
-        all_params = ['batch_import_cloud_phone_data_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_import_cloud_phone_data_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -306,14 +272,10 @@ class CphAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcph.v1.BatchMigrateCloudPhoneRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.BatchMigrateCloudPhoneResponse`
         """
-        return self.batch_migrate_cloud_phone_with_http_info(request)
+        return self._batch_migrate_cloud_phone_with_http_info(request)
 
-    def batch_migrate_cloud_phone_with_http_info(self, request):
-        all_params = ['batch_migrate_cloud_phone_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_migrate_cloud_phone_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -367,14 +329,10 @@ class CphAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcph.v1.ChangeCloudPhoneServerModelRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.ChangeCloudPhoneServerModelResponse`
         """
-        return self.change_cloud_phone_server_model_with_http_info(request)
+        return self._change_cloud_phone_server_model_with_http_info(request)
 
-    def change_cloud_phone_server_model_with_http_info(self, request):
-        all_params = ['change_cloud_phone_server_model_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _change_cloud_phone_server_model_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -428,14 +386,10 @@ class CphAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcph.v1.CreateCloudPhoneServerRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.CreateCloudPhoneServerResponse`
         """
-        return self.create_cloud_phone_server_with_http_info(request)
+        return self._create_cloud_phone_server_with_http_info(request)
 
-    def create_cloud_phone_server_with_http_info(self, request):
-        all_params = ['create_cloud_phone_server_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_cloud_phone_server_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -489,14 +443,10 @@ class CphAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcph.v1.CreateNet2CloudPhoneServerRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.CreateNet2CloudPhoneServerResponse`
         """
-        return self.create_net2_cloud_phone_server_with_http_info(request)
+        return self._create_net2_cloud_phone_server_with_http_info(request)
 
-    def create_net2_cloud_phone_server_with_http_info(self, request):
-        all_params = ['create_net2_cloud_phone_server_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_net2_cloud_phone_server_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -550,14 +500,10 @@ class CphAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcph.v1.DeleteShareAppsRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.DeleteShareAppsResponse`
         """
-        return self.delete_share_apps_with_http_info(request)
+        return self._delete_share_apps_with_http_info(request)
 
-    def delete_share_apps_with_http_info(self, request):
-        all_params = ['delete_share_apps_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_share_apps_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -611,14 +557,10 @@ class CphAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcph.v1.DeleteShareFilesRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.DeleteShareFilesResponse`
         """
-        return self.delete_share_files_with_http_info(request)
+        return self._delete_share_files_with_http_info(request)
 
-    def delete_share_files_with_http_info(self, request):
-        all_params = ['delete_share_files_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_share_files_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -672,14 +614,10 @@ class CphAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcph.v1.ImportTrafficRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.ImportTrafficResponse`
         """
-        return self.import_traffic_with_http_info(request)
+        return self._import_traffic_with_http_info(request)
 
-    def import_traffic_with_http_info(self, request):
-        all_params = ['import_traffic_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _import_traffic_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -733,14 +671,10 @@ class CphAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcph.v1.ListCloudPhoneImagesRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.ListCloudPhoneImagesResponse`
         """
-        return self.list_cloud_phone_images_with_http_info(request)
+        return self._list_cloud_phone_images_with_http_info(request)
 
-    def list_cloud_phone_images_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_cloud_phone_images_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -792,14 +726,10 @@ class CphAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcph.v1.ListCloudPhoneModelsRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.ListCloudPhoneModelsResponse`
         """
-        return self.list_cloud_phone_models_with_http_info(request)
+        return self._list_cloud_phone_models_with_http_info(request)
 
-    def list_cloud_phone_models_with_http_info(self, request):
-        all_params = ['status', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_cloud_phone_models_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -857,14 +787,10 @@ class CphAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcph.v1.ListCloudPhoneServerModelsRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.ListCloudPhoneServerModelsResponse`
         """
-        return self.list_cloud_phone_server_models_with_http_info(request)
+        return self._list_cloud_phone_server_models_with_http_info(request)
 
-    def list_cloud_phone_server_models_with_http_info(self, request):
-        all_params = ['product_type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_cloud_phone_server_models_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -918,14 +844,10 @@ class CphAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcph.v1.ListCloudPhoneServersRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.ListCloudPhoneServersResponse`
         """
-        return self.list_cloud_phone_servers_with_http_info(request)
+        return self._list_cloud_phone_servers_with_http_info(request)
 
-    def list_cloud_phone_servers_with_http_info(self, request):
-        all_params = ['offset', 'limit', 'server_name', 'server_id', 'network_version']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_cloud_phone_servers_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -987,14 +909,10 @@ class CphAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcph.v1.ListCloudPhonesRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.ListCloudPhonesResponse`
         """
-        return self.list_cloud_phones_with_http_info(request)
+        return self._list_cloud_phones_with_http_info(request)
 
-    def list_cloud_phones_with_http_info(self, request):
-        all_params = ['offset', 'limit', 'phone_name', 'server_id', 'status', 'type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_cloud_phones_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1058,14 +976,10 @@ class CphAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcph.v1.ListEncodeServersRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.ListEncodeServersResponse`
         """
-        return self.list_encode_servers_with_http_info(request)
+        return self._list_encode_servers_with_http_info(request)
 
-    def list_encode_servers_with_http_info(self, request):
-        all_params = ['offset', 'limit', 'type', 'status', 'server_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_encode_servers_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1127,14 +1041,10 @@ class CphAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcph.v1.ListJobsRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.ListJobsResponse`
         """
-        return self.list_jobs_with_http_info(request)
+        return self._list_jobs_with_http_info(request)
 
-    def list_jobs_with_http_info(self, request):
-        all_params = ['request_id', 'request_ids', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_jobs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1194,14 +1104,10 @@ class CphAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcph.v1.ListProjectTagsRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.ListProjectTagsResponse`
         """
-        return self.list_project_tags_with_http_info(request)
+        return self._list_project_tags_with_http_info(request)
 
-    def list_project_tags_with_http_info(self, request):
-        all_params = ['resource_type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_project_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1255,14 +1161,10 @@ class CphAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcph.v1.ListResourceInstancesRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.ListResourceInstancesResponse`
         """
-        return self.list_resource_instances_with_http_info(request)
+        return self._list_resource_instances_with_http_info(request)
 
-    def list_resource_instances_with_http_info(self, request):
-        all_params = ['resource_type', 'list_resource_instances_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_resource_instances_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1318,14 +1220,10 @@ class CphAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcph.v1.ListResourceTagsRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.ListResourceTagsResponse`
         """
-        return self.list_resource_tags_with_http_info(request)
+        return self._list_resource_tags_with_http_info(request)
 
-    def list_resource_tags_with_http_info(self, request):
-        all_params = ['resource_type', 'resource_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_resource_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1381,14 +1279,10 @@ class CphAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcph.v1.ListShareFilesRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.ListShareFilesResponse`
         """
-        return self.list_share_files_with_http_info(request)
+        return self._list_share_files_with_http_info(request)
 
-    def list_share_files_with_http_info(self, request):
-        all_params = ['server_ids', 'path', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_share_files_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1448,14 +1342,10 @@ class CphAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcph.v1.PushShareAppsRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.PushShareAppsResponse`
         """
-        return self.push_share_apps_with_http_info(request)
+        return self._push_share_apps_with_http_info(request)
 
-    def push_share_apps_with_http_info(self, request):
-        all_params = ['push_share_apps_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _push_share_apps_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1509,14 +1399,10 @@ class CphAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcph.v1.PushShareFilesRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.PushShareFilesResponse`
         """
-        return self.push_share_files_with_http_info(request)
+        return self._push_share_files_with_http_info(request)
 
-    def push_share_files_with_http_info(self, request):
-        all_params = ['push_share_files_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _push_share_files_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1570,14 +1456,10 @@ class CphAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcph.v1.ResetCloudPhoneRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.ResetCloudPhoneResponse`
         """
-        return self.reset_cloud_phone_with_http_info(request)
+        return self._reset_cloud_phone_with_http_info(request)
 
-    def reset_cloud_phone_with_http_info(self, request):
-        all_params = ['reset_cloud_phone_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _reset_cloud_phone_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1631,14 +1513,10 @@ class CphAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcph.v1.RestartCloudPhoneRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.RestartCloudPhoneResponse`
         """
-        return self.restart_cloud_phone_with_http_info(request)
+        return self._restart_cloud_phone_with_http_info(request)
 
-    def restart_cloud_phone_with_http_info(self, request):
-        all_params = ['restart_cloud_phone_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _restart_cloud_phone_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1692,14 +1570,10 @@ class CphAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcph.v1.RestartCloudPhoneServerRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.RestartCloudPhoneServerResponse`
         """
-        return self.restart_cloud_phone_server_with_http_info(request)
+        return self._restart_cloud_phone_server_with_http_info(request)
 
-    def restart_cloud_phone_server_with_http_info(self, request):
-        all_params = ['restart_cloud_phone_server_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _restart_cloud_phone_server_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1753,14 +1627,10 @@ class CphAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcph.v1.RestartEncodeServerRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.RestartEncodeServerResponse`
         """
-        return self.restart_encode_server_with_http_info(request)
+        return self._restart_encode_server_with_http_info(request)
 
-    def restart_encode_server_with_http_info(self, request):
-        all_params = ['restart_encode_server_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _restart_encode_server_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1814,14 +1684,10 @@ class CphAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcph.v1.ShowBandwidthDetailRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.ShowBandwidthDetailResponse`
         """
-        return self.show_bandwidth_detail_with_http_info(request)
+        return self._show_bandwidth_detail_with_http_info(request)
 
-    def show_bandwidth_detail_with_http_info(self, request):
-        all_params = ['offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_bandwidth_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1877,14 +1743,10 @@ class CphAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcph.v1.ShowCloudPhoneDetailRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.ShowCloudPhoneDetailResponse`
         """
-        return self.show_cloud_phone_detail_with_http_info(request)
+        return self._show_cloud_phone_detail_with_http_info(request)
 
-    def show_cloud_phone_detail_with_http_info(self, request):
-        all_params = ['phone_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_cloud_phone_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1938,14 +1800,10 @@ class CphAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcph.v1.ShowCloudPhoneServerDetailRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.ShowCloudPhoneServerDetailResponse`
         """
-        return self.show_cloud_phone_server_detail_with_http_info(request)
+        return self._show_cloud_phone_server_detail_with_http_info(request)
 
-    def show_cloud_phone_server_detail_with_http_info(self, request):
-        all_params = ['server_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_cloud_phone_server_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1999,14 +1857,10 @@ class CphAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcph.v1.ShowJobRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.ShowJobResponse`
         """
-        return self.show_job_with_http_info(request)
+        return self._show_job_with_http_info(request)
 
-    def show_job_with_http_info(self, request):
-        all_params = ['job_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2060,14 +1914,10 @@ class CphAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcph.v1.StopCloudPhoneRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.StopCloudPhoneResponse`
         """
-        return self.stop_cloud_phone_with_http_info(request)
+        return self._stop_cloud_phone_with_http_info(request)
 
-    def stop_cloud_phone_with_http_info(self, request):
-        all_params = ['stop_cloud_phone_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _stop_cloud_phone_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2121,14 +1971,10 @@ class CphAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcph.v1.UpdateBandwidthRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.UpdateBandwidthResponse`
         """
-        return self.update_bandwidth_with_http_info(request)
+        return self._update_bandwidth_with_http_info(request)
 
-    def update_bandwidth_with_http_info(self, request):
-        all_params = ['band_width_id', 'update_bandwidth_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_bandwidth_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2184,14 +2030,10 @@ class CphAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcph.v1.UpdateCloudPhonePropertyRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.UpdateCloudPhonePropertyResponse`
         """
-        return self.update_cloud_phone_property_with_http_info(request)
+        return self._update_cloud_phone_property_with_http_info(request)
 
-    def update_cloud_phone_property_with_http_info(self, request):
-        all_params = ['update_cloud_phone_property_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_cloud_phone_property_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2245,14 +2087,10 @@ class CphAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcph.v1.UpdateKeypairRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.UpdateKeypairResponse`
         """
-        return self.update_keypair_with_http_info(request)
+        return self._update_keypair_with_http_info(request)
 
-    def update_keypair_with_http_info(self, request):
-        all_params = ['update_keypair_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_keypair_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2306,14 +2144,10 @@ class CphAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcph.v1.UpdatePhoneNameRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.UpdatePhoneNameResponse`
         """
-        return self.update_phone_name_with_http_info(request)
+        return self._update_phone_name_with_http_info(request)
 
-    def update_phone_name_with_http_info(self, request):
-        all_params = ['phone_id', 'update_phone_name_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_phone_name_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2369,14 +2203,10 @@ class CphAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcph.v1.UpdateServerNameRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.UpdateServerNameResponse`
         """
-        return self.update_server_name_with_http_info(request)
+        return self._update_server_name_with_http_info(request)
 
-    def update_server_name_with_http_info(self, request):
-        all_params = ['server_id', 'update_server_name_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_server_name_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2433,14 +2263,10 @@ class CphAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcph.v1.InstallApkRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.InstallApkResponse`
         """
-        return self.install_apk_with_http_info(request)
+        return self._install_apk_with_http_info(request)
 
-    def install_apk_with_http_info(self, request):
-        all_params = ['install_apk_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _install_apk_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2494,14 +2320,10 @@ class CphAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcph.v1.PushFileRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.PushFileResponse`
         """
-        return self.push_file_with_http_info(request)
+        return self._push_file_with_http_info(request)
 
-    def push_file_with_http_info(self, request):
-        all_params = ['push_file_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _push_file_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2555,14 +2377,10 @@ class CphAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcph.v1.RunShellCommandRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.RunShellCommandResponse`
         """
-        return self.run_shell_command_with_http_info(request)
+        return self._run_shell_command_with_http_info(request)
 
-    def run_shell_command_with_http_info(self, request):
-        all_params = ['run_shell_command_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _run_shell_command_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2616,14 +2434,10 @@ class CphAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcph.v1.RunSyncCommandRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.RunSyncCommandResponse`
         """
-        return self.run_sync_command_with_http_info(request)
+        return self._run_sync_command_with_http_info(request)
 
-    def run_sync_command_with_http_info(self, request):
-        all_params = ['run_sync_command_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _run_sync_command_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2677,14 +2491,10 @@ class CphAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcph.v1.UninstallApkRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.UninstallApkResponse`
         """
-        return self.uninstall_apk_with_http_info(request)
+        return self._uninstall_apk_with_http_info(request)
 
-    def uninstall_apk_with_http_info(self, request):
-        all_params = ['uninstall_apk_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _uninstall_apk_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

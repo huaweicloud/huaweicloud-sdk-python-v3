@@ -24,7 +24,7 @@ from huaweicloudsdkcore.http.http_config import HttpConfig
 from huaweicloudsdkcore.auth.credentials import BasicCredentials
 from huaweicloudsdkcore.client import Client
 from huaweicloudsdkcore.sdk_stream_response import SdkStreamResponse
-from tests.data.file_response_mocker import mocked_file_response, mocked_file
+from tests.mocker.file_response_mocker import mocked_file_response, mocked_file
 
 
 def process_stream(stream):

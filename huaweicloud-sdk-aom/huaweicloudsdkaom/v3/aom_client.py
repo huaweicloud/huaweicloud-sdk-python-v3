@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class AomClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(AomClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkaom.v3.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -53,14 +35,10 @@ class AomClient(Client):
         :type request: :class:`huaweicloudsdkaom.v3.CreateAppRequest`
         :rtype: :class:`huaweicloudsdkaom.v3.CreateAppResponse`
         """
-        return self.create_app_with_http_info(request)
+        return self._create_app_with_http_info(request)
 
-    def create_app_with_http_info(self, request):
-        all_params = ['create_app_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_app_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -113,14 +91,10 @@ class AomClient(Client):
         :type request: :class:`huaweicloudsdkaom.v3.CreateComponentRequest`
         :rtype: :class:`huaweicloudsdkaom.v3.CreateComponentResponse`
         """
-        return self.create_component_with_http_info(request)
+        return self._create_component_with_http_info(request)
 
-    def create_component_with_http_info(self, request):
-        all_params = ['create_component_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_component_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -173,14 +147,10 @@ class AomClient(Client):
         :type request: :class:`huaweicloudsdkaom.v3.CreateEnvRequest`
         :rtype: :class:`huaweicloudsdkaom.v3.CreateEnvResponse`
         """
-        return self.create_env_with_http_info(request)
+        return self._create_env_with_http_info(request)
 
-    def create_env_with_http_info(self, request):
-        all_params = ['create_env_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_env_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -233,14 +203,10 @@ class AomClient(Client):
         :type request: :class:`huaweicloudsdkaom.v3.DeleteAppRequest`
         :rtype: :class:`huaweicloudsdkaom.v3.DeleteAppResponse`
         """
-        return self.delete_app_with_http_info(request)
+        return self._delete_app_with_http_info(request)
 
-    def delete_app_with_http_info(self, request):
-        all_params = ['application_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_app_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -293,14 +259,10 @@ class AomClient(Client):
         :type request: :class:`huaweicloudsdkaom.v3.DeleteComponentRequest`
         :rtype: :class:`huaweicloudsdkaom.v3.DeleteComponentResponse`
         """
-        return self.delete_component_with_http_info(request)
+        return self._delete_component_with_http_info(request)
 
-    def delete_component_with_http_info(self, request):
-        all_params = ['component_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_component_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -353,14 +315,10 @@ class AomClient(Client):
         :type request: :class:`huaweicloudsdkaom.v3.DeleteEnvRequest`
         :rtype: :class:`huaweicloudsdkaom.v3.DeleteEnvResponse`
         """
-        return self.delete_env_with_http_info(request)
+        return self._delete_env_with_http_info(request)
 
-    def delete_env_with_http_info(self, request):
-        all_params = ['environment_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_env_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -413,14 +371,10 @@ class AomClient(Client):
         :type request: :class:`huaweicloudsdkaom.v3.ListResourceUnderNodeRequest`
         :rtype: :class:`huaweicloudsdkaom.v3.ListResourceUnderNodeResponse`
         """
-        return self.list_resource_under_node_with_http_info(request)
+        return self._list_resource_under_node_with_http_info(request)
 
-    def list_resource_under_node_with_http_info(self, request):
-        all_params = ['rf_resource_type', 'type', 'list_resource_under_node_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_resource_under_node_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -477,14 +431,10 @@ class AomClient(Client):
         :type request: :class:`huaweicloudsdkaom.v3.ShowAppRequest`
         :rtype: :class:`huaweicloudsdkaom.v3.ShowAppResponse`
         """
-        return self.show_app_with_http_info(request)
+        return self._show_app_with_http_info(request)
 
-    def show_app_with_http_info(self, request):
-        all_params = ['application_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_app_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -537,14 +487,10 @@ class AomClient(Client):
         :type request: :class:`huaweicloudsdkaom.v3.ShowAppByNameRequest`
         :rtype: :class:`huaweicloudsdkaom.v3.ShowAppByNameResponse`
         """
-        return self.show_app_by_name_with_http_info(request)
+        return self._show_app_by_name_with_http_info(request)
 
-    def show_app_by_name_with_http_info(self, request):
-        all_params = ['name', 'display_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_app_by_name_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -599,14 +545,10 @@ class AomClient(Client):
         :type request: :class:`huaweicloudsdkaom.v3.ShowComponentRequest`
         :rtype: :class:`huaweicloudsdkaom.v3.ShowComponentResponse`
         """
-        return self.show_component_with_http_info(request)
+        return self._show_component_with_http_info(request)
 
-    def show_component_with_http_info(self, request):
-        all_params = ['component_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_component_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -659,14 +601,10 @@ class AomClient(Client):
         :type request: :class:`huaweicloudsdkaom.v3.ShowComponentByNameRequest`
         :rtype: :class:`huaweicloudsdkaom.v3.ShowComponentByNameResponse`
         """
-        return self.show_component_by_name_with_http_info(request)
+        return self._show_component_by_name_with_http_info(request)
 
-    def show_component_by_name_with_http_info(self, request):
-        all_params = ['application_id', 'component_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_component_by_name_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -721,14 +659,10 @@ class AomClient(Client):
         :type request: :class:`huaweicloudsdkaom.v3.ShowEnvRequest`
         :rtype: :class:`huaweicloudsdkaom.v3.ShowEnvResponse`
         """
-        return self.show_env_with_http_info(request)
+        return self._show_env_with_http_info(request)
 
-    def show_env_with_http_info(self, request):
-        all_params = ['environment_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_env_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -781,14 +715,10 @@ class AomClient(Client):
         :type request: :class:`huaweicloudsdkaom.v3.ShowEnvByNameRequest`
         :rtype: :class:`huaweicloudsdkaom.v3.ShowEnvByNameResponse`
         """
-        return self.show_env_by_name_with_http_info(request)
+        return self._show_env_by_name_with_http_info(request)
 
-    def show_env_by_name_with_http_info(self, request):
-        all_params = ['environment_name', 'region', 'component_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_env_by_name_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -845,14 +775,10 @@ class AomClient(Client):
         :type request: :class:`huaweicloudsdkaom.v3.UpdateAppRequest`
         :rtype: :class:`huaweicloudsdkaom.v3.UpdateAppResponse`
         """
-        return self.update_app_with_http_info(request)
+        return self._update_app_with_http_info(request)
 
-    def update_app_with_http_info(self, request):
-        all_params = ['application_id', 'update_app_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_app_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -907,14 +833,10 @@ class AomClient(Client):
         :type request: :class:`huaweicloudsdkaom.v3.UpdateComponentRequest`
         :rtype: :class:`huaweicloudsdkaom.v3.UpdateComponentResponse`
         """
-        return self.update_component_with_http_info(request)
+        return self._update_component_with_http_info(request)
 
-    def update_component_with_http_info(self, request):
-        all_params = ['component_id', 'update_component_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_component_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -969,14 +891,10 @@ class AomClient(Client):
         :type request: :class:`huaweicloudsdkaom.v3.UpdateEnvRequest`
         :rtype: :class:`huaweicloudsdkaom.v3.UpdateEnvResponse`
         """
-        return self.update_env_with_http_info(request)
+        return self._update_env_with_http_info(request)
 
-    def update_env_with_http_info(self, request):
-        all_params = ['environment_id', 'update_env_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_env_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

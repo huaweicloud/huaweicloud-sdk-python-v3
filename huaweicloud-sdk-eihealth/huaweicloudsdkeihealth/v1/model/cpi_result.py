@@ -1,9 +1,6 @@
 # coding: utf-8
 
-import re
 import six
-
-
 
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
@@ -23,17 +20,19 @@ class CpiResult:
         'header': 'str',
         'fasta': 'str',
         'prop_names': 'list[str]',
-        'result': 'list[CpiResultItem]'
+        'result': 'list[CpiResultItem]',
+        'custom_props': 'list[CustomProp]'
     }
 
     attribute_map = {
         'header': 'header',
         'fasta': 'fasta',
         'prop_names': 'prop_names',
-        'result': 'result'
+        'result': 'result',
+        'custom_props': 'custom_props'
     }
 
-    def __init__(self, header=None, fasta=None, prop_names=None, result=None):
+    def __init__(self, header=None, fasta=None, prop_names=None, result=None, custom_props=None):
         """CpiResult
 
         The model defined in huaweicloud sdk
@@ -46,6 +45,8 @@ class CpiResult:
         :type prop_names: list[str]
         :param result: 返回CPI的模型结果
         :type result: list[:class:`huaweicloudsdkeihealth.v1.CpiResultItem`]
+        :param custom_props: 用户已开启的自定义属性集合
+        :type custom_props: list[:class:`huaweicloudsdkeihealth.v1.CustomProp`]
         """
         
         
@@ -54,6 +55,7 @@ class CpiResult:
         self._fasta = None
         self._prop_names = None
         self._result = None
+        self._custom_props = None
         self.discriminator = None
 
         if header is not None:
@@ -62,6 +64,8 @@ class CpiResult:
         if prop_names is not None:
             self.prop_names = prop_names
         self.result = result
+        if custom_props is not None:
+            self.custom_props = custom_props
 
     @property
     def header(self):
@@ -150,6 +154,28 @@ class CpiResult:
         :type result: list[:class:`huaweicloudsdkeihealth.v1.CpiResultItem`]
         """
         self._result = result
+
+    @property
+    def custom_props(self):
+        """Gets the custom_props of this CpiResult.
+
+        用户已开启的自定义属性集合
+
+        :return: The custom_props of this CpiResult.
+        :rtype: list[:class:`huaweicloudsdkeihealth.v1.CustomProp`]
+        """
+        return self._custom_props
+
+    @custom_props.setter
+    def custom_props(self, custom_props):
+        """Sets the custom_props of this CpiResult.
+
+        用户已开启的自定义属性集合
+
+        :param custom_props: The custom_props of this CpiResult.
+        :type custom_props: list[:class:`huaweicloudsdkeihealth.v1.CustomProp`]
+        """
+        self._custom_props = custom_props
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class TmsAsyncClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(TmsAsyncClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdktms.v1.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -54,14 +36,10 @@ class TmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdktms.v1.CreatePredefineTagsRequest`
         :rtype: :class:`huaweicloudsdktms.v1.CreatePredefineTagsResponse`
         """
-        return self.create_predefine_tags_with_http_info(request)
+        return self._create_predefine_tags_with_http_info(request)
 
-    def create_predefine_tags_with_http_info(self, request):
-        all_params = ['req_create_predefine_tag']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_predefine_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -115,14 +93,10 @@ class TmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdktms.v1.CreateResourceTagRequest`
         :rtype: :class:`huaweicloudsdktms.v1.CreateResourceTagResponse`
         """
-        return self.create_resource_tag_with_http_info(request)
+        return self._create_resource_tag_with_http_info(request)
 
-    def create_resource_tag_with_http_info(self, request):
-        all_params = ['create_resource_tag_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_resource_tag_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -176,14 +150,10 @@ class TmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdktms.v1.DeletePredefineTagsRequest`
         :rtype: :class:`huaweicloudsdktms.v1.DeletePredefineTagsResponse`
         """
-        return self.delete_predefine_tags_with_http_info(request)
+        return self._delete_predefine_tags_with_http_info(request)
 
-    def delete_predefine_tags_with_http_info(self, request):
-        all_params = ['req_delete_predefine_tag']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_predefine_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -237,14 +207,10 @@ class TmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdktms.v1.DeleteResourceTagRequest`
         :rtype: :class:`huaweicloudsdktms.v1.DeleteResourceTagResponse`
         """
-        return self.delete_resource_tag_with_http_info(request)
+        return self._delete_resource_tag_with_http_info(request)
 
-    def delete_resource_tag_with_http_info(self, request):
-        all_params = ['delete_resource_tag_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_resource_tag_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -298,14 +264,10 @@ class TmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdktms.v1.ListApiVersionsRequest`
         :rtype: :class:`huaweicloudsdktms.v1.ListApiVersionsResponse`
         """
-        return self.list_api_versions_with_http_info(request)
+        return self._list_api_versions_with_http_info(request)
 
-    def list_api_versions_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_api_versions_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -357,14 +319,10 @@ class TmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdktms.v1.ListPredefineTagsRequest`
         :rtype: :class:`huaweicloudsdktms.v1.ListPredefineTagsResponse`
         """
-        return self.list_predefine_tags_with_http_info(request)
+        return self._list_predefine_tags_with_http_info(request)
 
-    def list_predefine_tags_with_http_info(self, request):
-        all_params = ['key', 'value', 'limit', 'marker', 'order_field', 'order_method']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_predefine_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -428,14 +386,10 @@ class TmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdktms.v1.ListProvidersRequest`
         :rtype: :class:`huaweicloudsdktms.v1.ListProvidersResponse`
         """
-        return self.list_providers_with_http_info(request)
+        return self._list_providers_with_http_info(request)
 
-    def list_providers_with_http_info(self, request):
-        all_params = ['locale', 'limit', 'offset', 'provider']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_providers_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -495,14 +449,10 @@ class TmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdktms.v1.ListResourceRequest`
         :rtype: :class:`huaweicloudsdktms.v1.ListResourceResponse`
         """
-        return self.list_resource_with_http_info(request)
+        return self._list_resource_with_http_info(request)
 
-    def list_resource_with_http_info(self, request):
-        all_params = ['list_resource_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_resource_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -556,14 +506,10 @@ class TmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdktms.v1.ListTagKeysRequest`
         :rtype: :class:`huaweicloudsdktms.v1.ListTagKeysResponse`
         """
-        return self.list_tag_keys_with_http_info(request)
+        return self._list_tag_keys_with_http_info(request)
 
-    def list_tag_keys_with_http_info(self, request):
-        all_params = ['region_id', 'limit', 'marker']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_tag_keys_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -621,14 +567,10 @@ class TmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdktms.v1.ListTagValuesRequest`
         :rtype: :class:`huaweicloudsdktms.v1.ListTagValuesResponse`
         """
-        return self.list_tag_values_with_http_info(request)
+        return self._list_tag_values_with_http_info(request)
 
-    def list_tag_values_with_http_info(self, request):
-        all_params = ['key', 'region_id', 'limit', 'marker']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_tag_values_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -688,14 +630,10 @@ class TmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdktms.v1.ShowApiVersionRequest`
         :rtype: :class:`huaweicloudsdktms.v1.ShowApiVersionResponse`
         """
-        return self.show_api_version_with_http_info(request)
+        return self._show_api_version_with_http_info(request)
 
-    def show_api_version_with_http_info(self, request):
-        all_params = ['api_version']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_api_version_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -749,14 +687,10 @@ class TmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdktms.v1.ShowResourceTagRequest`
         :rtype: :class:`huaweicloudsdktms.v1.ShowResourceTagResponse`
         """
-        return self.show_resource_tag_with_http_info(request)
+        return self._show_resource_tag_with_http_info(request)
 
-    def show_resource_tag_with_http_info(self, request):
-        all_params = ['resource_id', 'resource_type', 'project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_resource_tag_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -814,14 +748,10 @@ class TmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdktms.v1.ShowTagQuotaRequest`
         :rtype: :class:`huaweicloudsdktms.v1.ShowTagQuotaResponse`
         """
-        return self.show_tag_quota_with_http_info(request)
+        return self._show_tag_quota_with_http_info(request)
 
-    def show_tag_quota_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_tag_quota_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -873,14 +803,10 @@ class TmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdktms.v1.UpdatePredefineTagsRequest`
         :rtype: :class:`huaweicloudsdktms.v1.UpdatePredefineTagsResponse`
         """
-        return self.update_predefine_tags_with_http_info(request)
+        return self._update_predefine_tags_with_http_info(request)
 
-    def update_predefine_tags_with_http_info(self, request):
-        all_params = ['req_modify_predefine_tag']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_predefine_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

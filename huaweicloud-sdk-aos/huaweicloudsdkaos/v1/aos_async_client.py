@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class AosAsyncClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(AosAsyncClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkaos.v1.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -71,14 +53,10 @@ class AosAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaos.v1.ApplyExecutionPlanRequest`
         :rtype: :class:`huaweicloudsdkaos.v1.ApplyExecutionPlanResponse`
         """
-        return self.apply_execution_plan_with_http_info(request)
+        return self._apply_execution_plan_with_http_info(request)
 
-    def apply_execution_plan_with_http_info(self, request):
-        all_params = ['client_request_id', 'stack_name', 'execution_plan_name', 'apply_execution_plan_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _apply_execution_plan_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -152,14 +130,10 @@ class AosAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaos.v1.CreateExecutionPlanRequest`
         :rtype: :class:`huaweicloudsdkaos.v1.CreateExecutionPlanResponse`
         """
-        return self.create_execution_plan_with_http_info(request)
+        return self._create_execution_plan_with_http_info(request)
 
-    def create_execution_plan_with_http_info(self, request):
-        all_params = ['client_request_id', 'stack_name', 'create_execution_plan_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_execution_plan_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -221,14 +195,10 @@ class AosAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaos.v1.DeleteExecutionPlanRequest`
         :rtype: :class:`huaweicloudsdkaos.v1.DeleteExecutionPlanResponse`
         """
-        return self.delete_execution_plan_with_http_info(request)
+        return self._delete_execution_plan_with_http_info(request)
 
-    def delete_execution_plan_with_http_info(self, request):
-        all_params = ['client_request_id', 'stack_name', 'execution_plan_name', 'stack_id', 'execution_plan_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_execution_plan_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -300,14 +270,10 @@ class AosAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaos.v1.EstimateExecutionPlanPriceRequest`
         :rtype: :class:`huaweicloudsdkaos.v1.EstimateExecutionPlanPriceResponse`
         """
-        return self.estimate_execution_plan_price_with_http_info(request)
+        return self._estimate_execution_plan_price_with_http_info(request)
 
-    def estimate_execution_plan_price_with_http_info(self, request):
-        all_params = ['client_request_id', 'stack_name', 'execution_plan_name', 'stack_id', 'execution_plan_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _estimate_execution_plan_price_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -373,14 +339,10 @@ class AosAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaos.v1.GetExecutionPlanRequest`
         :rtype: :class:`huaweicloudsdkaos.v1.GetExecutionPlanResponse`
         """
-        return self.get_execution_plan_with_http_info(request)
+        return self._get_execution_plan_with_http_info(request)
 
-    def get_execution_plan_with_http_info(self, request):
-        all_params = ['client_request_id', 'stack_name', 'execution_plan_name', 'stack_id', 'execution_plan_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _get_execution_plan_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -448,14 +410,10 @@ class AosAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaos.v1.GetExecutionPlanMetadataRequest`
         :rtype: :class:`huaweicloudsdkaos.v1.GetExecutionPlanMetadataResponse`
         """
-        return self.get_execution_plan_metadata_with_http_info(request)
+        return self._get_execution_plan_metadata_with_http_info(request)
 
-    def get_execution_plan_metadata_with_http_info(self, request):
-        all_params = ['client_request_id', 'stack_name', 'execution_plan_name', 'stack_id', 'execution_plan_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _get_execution_plan_metadata_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -526,14 +484,10 @@ class AosAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaos.v1.ListExecutionPlansRequest`
         :rtype: :class:`huaweicloudsdkaos.v1.ListExecutionPlansResponse`
         """
-        return self.list_execution_plans_with_http_info(request)
+        return self._list_execution_plans_with_http_info(request)
 
-    def list_execution_plans_with_http_info(self, request):
-        all_params = ['client_request_id', 'stack_name', 'stack_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_execution_plans_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -579,6 +533,73 @@ class AosAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def continue_deploy_stack_async(self, request):
+        """继续部署资源栈
+
+        继续部署资源栈（ContinueDeployStack）
+        
+        此API用于继续部署一个已有的资源栈
+        
+        * 如果资源栈当前可以继续部署，即处于&#x60;DEPLOYMENT_FAILED&#x60;，则返回202与对应生成的deploymentId，否则将不允许继续部署并返回相应的错误码
+        
+        * 继续部署操作依然有可能部署失败，用户可以从ListStackEvents获取对应的log，解决后可再次调用此API触发继续部署
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ContinueDeployStack
+        :type request: :class:`huaweicloudsdkaos.v1.ContinueDeployStackRequest`
+        :rtype: :class:`huaweicloudsdkaos.v1.ContinueDeployStackResponse`
+        """
+        return self._continue_deploy_stack_with_http_info(request)
+
+    def _continue_deploy_stack_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'stack_name' in local_var_params:
+            path_params['stack_name'] = local_var_params['stack_name']
+
+        query_params = []
+
+        header_params = {}
+        if 'client_request_id' in local_var_params:
+            header_params['Client-Request-Id'] = local_var_params['client_request_id']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['token']
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/stacks/{stack_name}/continuations',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ContinueDeployStackResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def continue_rollback_stack_async(self, request):
         """继续回滚资源栈
 
@@ -598,14 +619,10 @@ class AosAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaos.v1.ContinueRollbackStackRequest`
         :rtype: :class:`huaweicloudsdkaos.v1.ContinueRollbackStackResponse`
         """
-        return self.continue_rollback_stack_with_http_info(request)
+        return self._continue_rollback_stack_with_http_info(request)
 
-    def continue_rollback_stack_with_http_info(self, request):
-        all_params = ['client_request_id', 'stack_name', 'continue_rollback_stack_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _continue_rollback_stack_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -666,14 +683,10 @@ class AosAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaos.v1.CreateStackRequest`
         :rtype: :class:`huaweicloudsdkaos.v1.CreateStackResponse`
         """
-        return self.create_stack_with_http_info(request)
+        return self._create_stack_with_http_info(request)
 
-    def create_stack_with_http_info(self, request):
-        all_params = ['client_request_id', 'create_stack_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_stack_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -742,14 +755,10 @@ class AosAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaos.v1.DeleteStackRequest`
         :rtype: :class:`huaweicloudsdkaos.v1.DeleteStackResponse`
         """
-        return self.delete_stack_with_http_info(request)
+        return self._delete_stack_with_http_info(request)
 
-    def delete_stack_with_http_info(self, request):
-        all_params = ['client_request_id', 'stack_name', 'stack_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_stack_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -819,14 +828,10 @@ class AosAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaos.v1.DeployStackRequest`
         :rtype: :class:`huaweicloudsdkaos.v1.DeployStackResponse`
         """
-        return self.deploy_stack_with_http_info(request)
+        return self._deploy_stack_with_http_info(request)
 
-    def deploy_stack_with_http_info(self, request):
-        all_params = ['client_request_id', 'stack_name', 'deploy_stack_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _deploy_stack_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -905,14 +910,10 @@ class AosAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaos.v1.GetStackMetadataRequest`
         :rtype: :class:`huaweicloudsdkaos.v1.GetStackMetadataResponse`
         """
-        return self.get_stack_metadata_with_http_info(request)
+        return self._get_stack_metadata_with_http_info(request)
 
-    def get_stack_metadata_with_http_info(self, request):
-        all_params = ['client_request_id', 'stack_name', 'stack_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _get_stack_metadata_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -977,14 +978,10 @@ class AosAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaos.v1.GetStackTemplateRequest`
         :rtype: :class:`huaweicloudsdkaos.v1.GetStackTemplateResponse`
         """
-        return self.get_stack_template_with_http_info(request)
+        return self._get_stack_template_with_http_info(request)
 
-    def get_stack_template_with_http_info(self, request):
-        all_params = ['client_request_id', 'stack_name', 'stack_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _get_stack_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1050,14 +1047,10 @@ class AosAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaos.v1.ListStackEventsRequest`
         :rtype: :class:`huaweicloudsdkaos.v1.ListStackEventsResponse`
         """
-        return self.list_stack_events_with_http_info(request)
+        return self._list_stack_events_with_http_info(request)
 
-    def list_stack_events_with_http_info(self, request):
-        all_params = ['client_request_id', 'stack_name', 'stack_id', 'deployment_id', 'filter', 'field']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_stack_events_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1132,14 +1125,10 @@ class AosAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaos.v1.ListStackOutputsRequest`
         :rtype: :class:`huaweicloudsdkaos.v1.ListStackOutputsResponse`
         """
-        return self.list_stack_outputs_with_http_info(request)
+        return self._list_stack_outputs_with_http_info(request)
 
-    def list_stack_outputs_with_http_info(self, request):
-        all_params = ['client_request_id', 'stack_name', 'stack_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_stack_outputs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1204,14 +1193,10 @@ class AosAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaos.v1.ListStackResourcesRequest`
         :rtype: :class:`huaweicloudsdkaos.v1.ListStackResourcesResponse`
         """
-        return self.list_stack_resources_with_http_info(request)
+        return self._list_stack_resources_with_http_info(request)
 
-    def list_stack_resources_with_http_info(self, request):
-        all_params = ['client_request_id', 'stack_name', 'stack_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_stack_resources_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1277,14 +1262,10 @@ class AosAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaos.v1.ListStacksRequest`
         :rtype: :class:`huaweicloudsdkaos.v1.ListStacksResponse`
         """
-        return self.list_stacks_with_http_info(request)
+        return self._list_stacks_with_http_info(request)
 
-    def list_stacks_with_http_info(self, request):
-        all_params = ['client_request_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_stacks_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1344,14 +1325,10 @@ class AosAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaos.v1.UpdateStackRequest`
         :rtype: :class:`huaweicloudsdkaos.v1.UpdateStackResponse`
         """
-        return self.update_stack_with_http_info(request)
+        return self._update_stack_with_http_info(request)
 
-    def update_stack_with_http_info(self, request):
-        all_params = ['client_request_id', 'stack_name', 'update_stack_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_stack_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1415,14 +1392,10 @@ class AosAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaos.v1.ParseTemplateVariablesRequest`
         :rtype: :class:`huaweicloudsdkaos.v1.ParseTemplateVariablesResponse`
         """
-        return self.parse_template_variables_with_http_info(request)
+        return self._parse_template_variables_with_http_info(request)
 
-    def parse_template_variables_with_http_info(self, request):
-        all_params = ['client_request_id', 'parse_template_variables_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _parse_template_variables_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1483,14 +1456,10 @@ class AosAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaos.v1.DeleteTemplateRequest`
         :rtype: :class:`huaweicloudsdkaos.v1.DeleteTemplateResponse`
         """
-        return self.delete_template_with_http_info(request)
+        return self._delete_template_with_http_info(request)
 
-    def delete_template_with_http_info(self, request):
-        all_params = ['client_request_id', 'template_name', 'template_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1555,14 +1524,10 @@ class AosAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaos.v1.DeleteTemplateVersionRequest`
         :rtype: :class:`huaweicloudsdkaos.v1.DeleteTemplateVersionResponse`
         """
-        return self.delete_template_version_with_http_info(request)
+        return self._delete_template_version_with_http_info(request)
 
-    def delete_template_version_with_http_info(self, request):
-        all_params = ['client_request_id', 'template_name', 'version_id', 'template_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_template_version_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1631,14 +1596,10 @@ class AosAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaos.v1.ListTemplatesRequest`
         :rtype: :class:`huaweicloudsdkaos.v1.ListTemplatesResponse`
         """
-        return self.list_templates_with_http_info(request)
+        return self._list_templates_with_http_info(request)
 
-    def list_templates_with_http_info(self, request):
-        all_params = ['client_request_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_templates_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1698,14 +1659,10 @@ class AosAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaos.v1.ShowTemplateMetadataRequest`
         :rtype: :class:`huaweicloudsdkaos.v1.ShowTemplateMetadataResponse`
         """
-        return self.show_template_metadata_with_http_info(request)
+        return self._show_template_metadata_with_http_info(request)
 
-    def show_template_metadata_with_http_info(self, request):
-        all_params = ['client_request_id', 'template_name', 'template_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_template_metadata_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1770,14 +1727,10 @@ class AosAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaos.v1.ShowTemplateVersionContentRequest`
         :rtype: :class:`huaweicloudsdkaos.v1.ShowTemplateVersionContentResponse`
         """
-        return self.show_template_version_content_with_http_info(request)
+        return self._show_template_version_content_with_http_info(request)
 
-    def show_template_version_content_with_http_info(self, request):
-        all_params = ['client_request_id', 'template_name', 'version_id', 'template_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_template_version_content_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1843,14 +1796,10 @@ class AosAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaos.v1.ShowTemplateVersionMetadataRequest`
         :rtype: :class:`huaweicloudsdkaos.v1.ShowTemplateVersionMetadataResponse`
         """
-        return self.show_template_version_metadata_with_http_info(request)
+        return self._show_template_version_metadata_with_http_info(request)
 
-    def show_template_version_metadata_with_http_info(self, request):
-        all_params = ['client_request_id', 'template_name', 'version_id', 'template_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_template_version_metadata_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1914,14 +1863,10 @@ class AosAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaos.v1.UpdateTemplateMetadataRequest`
         :rtype: :class:`huaweicloudsdkaos.v1.UpdateTemplateMetadataResponse`
         """
-        return self.update_template_metadata_with_http_info(request)
+        return self._update_template_metadata_with_http_info(request)
 
-    def update_template_metadata_with_http_info(self, request):
-        all_params = ['client_request_id', 'template_name', 'update_template_metadata_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_template_metadata_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

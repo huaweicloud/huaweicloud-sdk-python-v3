@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class EvsClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(EvsClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkevs.v2.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -56,14 +38,10 @@ class EvsClient(Client):
         :type request: :class:`huaweicloudsdkevs.v2.BatchCreateVolumeTagsRequest`
         :rtype: :class:`huaweicloudsdkevs.v2.BatchCreateVolumeTagsResponse`
         """
-        return self.batch_create_volume_tags_with_http_info(request)
+        return self._batch_create_volume_tags_with_http_info(request)
 
-    def batch_create_volume_tags_with_http_info(self, request):
-        all_params = ['volume_id', 'batch_create_volume_tags_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_create_volume_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -118,14 +96,10 @@ class EvsClient(Client):
         :type request: :class:`huaweicloudsdkevs.v2.BatchDeleteVolumeTagsRequest`
         :rtype: :class:`huaweicloudsdkevs.v2.BatchDeleteVolumeTagsResponse`
         """
-        return self.batch_delete_volume_tags_with_http_info(request)
+        return self._batch_delete_volume_tags_with_http_info(request)
 
-    def batch_delete_volume_tags_with_http_info(self, request):
-        all_params = ['volume_id', 'batch_delete_volume_tags_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_delete_volume_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -180,14 +154,10 @@ class EvsClient(Client):
         :type request: :class:`huaweicloudsdkevs.v2.CinderAcceptVolumeTransferRequest`
         :rtype: :class:`huaweicloudsdkevs.v2.CinderAcceptVolumeTransferResponse`
         """
-        return self.cinder_accept_volume_transfer_with_http_info(request)
+        return self._cinder_accept_volume_transfer_with_http_info(request)
 
-    def cinder_accept_volume_transfer_with_http_info(self, request):
-        all_params = ['transfer_id', 'cinder_accept_volume_transfer_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _cinder_accept_volume_transfer_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -243,14 +213,10 @@ class EvsClient(Client):
         :type request: :class:`huaweicloudsdkevs.v2.CinderCreateVolumeTransferRequest`
         :rtype: :class:`huaweicloudsdkevs.v2.CinderCreateVolumeTransferResponse`
         """
-        return self.cinder_create_volume_transfer_with_http_info(request)
+        return self._cinder_create_volume_transfer_with_http_info(request)
 
-    def cinder_create_volume_transfer_with_http_info(self, request):
-        all_params = ['cinder_create_volume_transfer_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _cinder_create_volume_transfer_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -303,14 +269,10 @@ class EvsClient(Client):
         :type request: :class:`huaweicloudsdkevs.v2.CinderDeleteVolumeTransferRequest`
         :rtype: :class:`huaweicloudsdkevs.v2.CinderDeleteVolumeTransferResponse`
         """
-        return self.cinder_delete_volume_transfer_with_http_info(request)
+        return self._cinder_delete_volume_transfer_with_http_info(request)
 
-    def cinder_delete_volume_transfer_with_http_info(self, request):
-        all_params = ['transfer_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _cinder_delete_volume_transfer_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -363,14 +325,10 @@ class EvsClient(Client):
         :type request: :class:`huaweicloudsdkevs.v2.CinderListAvailabilityZonesRequest`
         :rtype: :class:`huaweicloudsdkevs.v2.CinderListAvailabilityZonesResponse`
         """
-        return self.cinder_list_availability_zones_with_http_info(request)
+        return self._cinder_list_availability_zones_with_http_info(request)
 
-    def cinder_list_availability_zones_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _cinder_list_availability_zones_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -421,14 +379,10 @@ class EvsClient(Client):
         :type request: :class:`huaweicloudsdkevs.v2.CinderListQuotasRequest`
         :rtype: :class:`huaweicloudsdkevs.v2.CinderListQuotasResponse`
         """
-        return self.cinder_list_quotas_with_http_info(request)
+        return self._cinder_list_quotas_with_http_info(request)
 
-    def cinder_list_quotas_with_http_info(self, request):
-        all_params = ['target_project_id', 'usage']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _cinder_list_quotas_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -483,14 +437,10 @@ class EvsClient(Client):
         :type request: :class:`huaweicloudsdkevs.v2.CinderListVolumeTransfersRequest`
         :rtype: :class:`huaweicloudsdkevs.v2.CinderListVolumeTransfersResponse`
         """
-        return self.cinder_list_volume_transfers_with_http_info(request)
+        return self._cinder_list_volume_transfers_with_http_info(request)
 
-    def cinder_list_volume_transfers_with_http_info(self, request):
-        all_params = ['limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _cinder_list_volume_transfers_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -545,14 +495,10 @@ class EvsClient(Client):
         :type request: :class:`huaweicloudsdkevs.v2.CinderListVolumeTypesRequest`
         :rtype: :class:`huaweicloudsdkevs.v2.CinderListVolumeTypesResponse`
         """
-        return self.cinder_list_volume_types_with_http_info(request)
+        return self._cinder_list_volume_types_with_http_info(request)
 
-    def cinder_list_volume_types_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _cinder_list_volume_types_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -603,14 +549,10 @@ class EvsClient(Client):
         :type request: :class:`huaweicloudsdkevs.v2.CinderShowVolumeTransferRequest`
         :rtype: :class:`huaweicloudsdkevs.v2.CinderShowVolumeTransferResponse`
         """
-        return self.cinder_show_volume_transfer_with_http_info(request)
+        return self._cinder_show_volume_transfer_with_http_info(request)
 
-    def cinder_show_volume_transfer_with_http_info(self, request):
-        all_params = ['transfer_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _cinder_show_volume_transfer_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -663,14 +605,10 @@ class EvsClient(Client):
         :type request: :class:`huaweicloudsdkevs.v2.CreateSnapshotRequest`
         :rtype: :class:`huaweicloudsdkevs.v2.CreateSnapshotResponse`
         """
-        return self.create_snapshot_with_http_info(request)
+        return self._create_snapshot_with_http_info(request)
 
-    def create_snapshot_with_http_info(self, request):
-        all_params = ['create_snapshot_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_snapshot_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -728,14 +666,10 @@ class EvsClient(Client):
         :type request: :class:`huaweicloudsdkevs.v2.CreateVolumeRequest`
         :rtype: :class:`huaweicloudsdkevs.v2.CreateVolumeResponse`
         """
-        return self.create_volume_with_http_info(request)
+        return self._create_volume_with_http_info(request)
 
-    def create_volume_with_http_info(self, request):
-        all_params = ['create_volume_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_volume_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -788,14 +722,10 @@ class EvsClient(Client):
         :type request: :class:`huaweicloudsdkevs.v2.DeleteSnapshotRequest`
         :rtype: :class:`huaweicloudsdkevs.v2.DeleteSnapshotResponse`
         """
-        return self.delete_snapshot_with_http_info(request)
+        return self._delete_snapshot_with_http_info(request)
 
-    def delete_snapshot_with_http_info(self, request):
-        all_params = ['snapshot_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_snapshot_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -848,14 +778,10 @@ class EvsClient(Client):
         :type request: :class:`huaweicloudsdkevs.v2.DeleteVolumeRequest`
         :rtype: :class:`huaweicloudsdkevs.v2.DeleteVolumeResponse`
         """
-        return self.delete_volume_with_http_info(request)
+        return self._delete_volume_with_http_info(request)
 
-    def delete_volume_with_http_info(self, request):
-        all_params = ['volume_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_volume_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -908,14 +834,10 @@ class EvsClient(Client):
         :type request: :class:`huaweicloudsdkevs.v2.ListSnapshotsRequest`
         :rtype: :class:`huaweicloudsdkevs.v2.ListSnapshotsResponse`
         """
-        return self.list_snapshots_with_http_info(request)
+        return self._list_snapshots_with_http_info(request)
 
-    def list_snapshots_with_http_info(self, request):
-        all_params = ['offset', 'limit', 'name', 'status', 'volume_id', 'availability_zone', 'id', 'dedicated_storage_name', 'dedicated_storage_id', 'service_type', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_snapshots_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -988,14 +910,10 @@ class EvsClient(Client):
         :type request: :class:`huaweicloudsdkevs.v2.ListVolumeTagsRequest`
         :rtype: :class:`huaweicloudsdkevs.v2.ListVolumeTagsResponse`
         """
-        return self.list_volume_tags_with_http_info(request)
+        return self._list_volume_tags_with_http_info(request)
 
-    def list_volume_tags_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_volume_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1046,14 +964,10 @@ class EvsClient(Client):
         :type request: :class:`huaweicloudsdkevs.v2.ListVolumesRequest`
         :rtype: :class:`huaweicloudsdkevs.v2.ListVolumesResponse`
         """
-        return self.list_volumes_with_http_info(request)
+        return self._list_volumes_with_http_info(request)
 
-    def list_volumes_with_http_info(self, request):
-        all_params = ['marker', 'name', 'limit', 'sort_key', 'offset', 'sort_dir', 'status', 'metadata', 'availability_zone', 'multiattach', 'service_type', 'dedicated_storage_id', 'dedicated_storage_name', 'volume_type_id', 'id', 'ids', 'enterprise_project_id', 'server_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_volumes_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1140,14 +1054,10 @@ class EvsClient(Client):
         :type request: :class:`huaweicloudsdkevs.v2.ListVolumesByTagsRequest`
         :rtype: :class:`huaweicloudsdkevs.v2.ListVolumesByTagsResponse`
         """
-        return self.list_volumes_by_tags_with_http_info(request)
+        return self._list_volumes_by_tags_with_http_info(request)
 
-    def list_volumes_by_tags_with_http_info(self, request):
-        all_params = ['list_volumes_by_tags_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_volumes_by_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1205,14 +1115,10 @@ class EvsClient(Client):
         :type request: :class:`huaweicloudsdkevs.v2.ResizeVolumeRequest`
         :rtype: :class:`huaweicloudsdkevs.v2.ResizeVolumeResponse`
         """
-        return self.resize_volume_with_http_info(request)
+        return self._resize_volume_with_http_info(request)
 
-    def resize_volume_with_http_info(self, request):
-        all_params = ['volume_id', 'resize_volume_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _resize_volume_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1267,14 +1173,10 @@ class EvsClient(Client):
         :type request: :class:`huaweicloudsdkevs.v2.RollbackSnapshotRequest`
         :rtype: :class:`huaweicloudsdkevs.v2.RollbackSnapshotResponse`
         """
-        return self.rollback_snapshot_with_http_info(request)
+        return self._rollback_snapshot_with_http_info(request)
 
-    def rollback_snapshot_with_http_info(self, request):
-        all_params = ['snapshot_id', 'rollback_snapshot_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _rollback_snapshot_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1330,14 +1232,10 @@ class EvsClient(Client):
         :type request: :class:`huaweicloudsdkevs.v2.ShowJobRequest`
         :rtype: :class:`huaweicloudsdkevs.v2.ShowJobResponse`
         """
-        return self.show_job_with_http_info(request)
+        return self._show_job_with_http_info(request)
 
-    def show_job_with_http_info(self, request):
-        all_params = ['job_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1390,14 +1288,10 @@ class EvsClient(Client):
         :type request: :class:`huaweicloudsdkevs.v2.ShowSnapshotRequest`
         :rtype: :class:`huaweicloudsdkevs.v2.ShowSnapshotResponse`
         """
-        return self.show_snapshot_with_http_info(request)
+        return self._show_snapshot_with_http_info(request)
 
-    def show_snapshot_with_http_info(self, request):
-        all_params = ['snapshot_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_snapshot_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1450,14 +1344,10 @@ class EvsClient(Client):
         :type request: :class:`huaweicloudsdkevs.v2.ShowVolumeRequest`
         :rtype: :class:`huaweicloudsdkevs.v2.ShowVolumeResponse`
         """
-        return self.show_volume_with_http_info(request)
+        return self._show_volume_with_http_info(request)
 
-    def show_volume_with_http_info(self, request):
-        all_params = ['volume_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_volume_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1510,14 +1400,10 @@ class EvsClient(Client):
         :type request: :class:`huaweicloudsdkevs.v2.ShowVolumeTagsRequest`
         :rtype: :class:`huaweicloudsdkevs.v2.ShowVolumeTagsResponse`
         """
-        return self.show_volume_tags_with_http_info(request)
+        return self._show_volume_tags_with_http_info(request)
 
-    def show_volume_tags_with_http_info(self, request):
-        all_params = ['volume_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_volume_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1570,14 +1456,10 @@ class EvsClient(Client):
         :type request: :class:`huaweicloudsdkevs.v2.UpdateSnapshotRequest`
         :rtype: :class:`huaweicloudsdkevs.v2.UpdateSnapshotResponse`
         """
-        return self.update_snapshot_with_http_info(request)
+        return self._update_snapshot_with_http_info(request)
 
-    def update_snapshot_with_http_info(self, request):
-        all_params = ['snapshot_id', 'update_snapshot_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_snapshot_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1632,14 +1514,10 @@ class EvsClient(Client):
         :type request: :class:`huaweicloudsdkevs.v2.UpdateVolumeRequest`
         :rtype: :class:`huaweicloudsdkevs.v2.UpdateVolumeResponse`
         """
-        return self.update_volume_with_http_info(request)
+        return self._update_volume_with_http_info(request)
 
-    def update_volume_with_http_info(self, request):
-        all_params = ['volume_id', 'update_volume_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_volume_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1694,14 +1572,10 @@ class EvsClient(Client):
         :type request: :class:`huaweicloudsdkevs.v2.ListVersionsRequest`
         :rtype: :class:`huaweicloudsdkevs.v2.ListVersionsResponse`
         """
-        return self.list_versions_with_http_info(request)
+        return self._list_versions_with_http_info(request)
 
-    def list_versions_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_versions_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1752,14 +1626,10 @@ class EvsClient(Client):
         :type request: :class:`huaweicloudsdkevs.v2.ShowVersionRequest`
         :rtype: :class:`huaweicloudsdkevs.v2.ShowVersionResponse`
         """
-        return self.show_version_with_http_info(request)
+        return self._show_version_with_http_info(request)
 
-    def show_version_with_http_info(self, request):
-        all_params = ['version']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_version_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

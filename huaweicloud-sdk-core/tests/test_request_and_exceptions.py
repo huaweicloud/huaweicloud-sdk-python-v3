@@ -172,7 +172,7 @@ def test_client_request_exception(client, client_err_response):
 
 
 def test_client_request_exception2(client, client_err_response_type2):
-    with pytest.raises(ServerResponseException) as e:
+    with pytest.raises(ClientRequestException) as e:
         client.get_http_client().response_error_hook_factory()(client_err_response_type2)
 
     assert e.value.error_msg == "request-client-error-002"

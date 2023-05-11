@@ -1,0 +1,16 @@
+{
+  "AccessControlPolicy": {
+    "Owner": {
+      "ID": "ID"
+    },
+    "AccessControlList": {
+      "Grant": {
+        "Grantee": {
+          "ID": "domainId"
+        },
+        "Permission": "permission",
+        "Delivered": "false"
+      }
+    }
+  }
+}

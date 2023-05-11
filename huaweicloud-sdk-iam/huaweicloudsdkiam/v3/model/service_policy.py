@@ -1,9 +1,6 @@
 # coding: utf-8
 
-import re
 import six
-
-
 
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
@@ -36,7 +33,7 @@ class ServicePolicy:
 
         :param version: 权限版本号，创建自定义策略时，该字段值填为“1.1”。 &gt; - 1.0：系统预置的角色。以服务为粒度，提供有限的服务相关角色用于授权。 &gt; - 1.1：策略。IAM最新提供的一种细粒度授权的能力，可以精确到具体服务的操作、资源以及请求条件等。
         :type version: str
-        :param statement: 授权语句，描述自定义策略的具体内容，不超过8个。
+        :param statement: 授权语句，描述自定义策略的具体内容。
         :type statement: list[:class:`huaweicloudsdkiam.v3.ServiceStatement`]
         """
         
@@ -75,7 +72,7 @@ class ServicePolicy:
     def statement(self):
         """Gets the statement of this ServicePolicy.
 
-        授权语句，描述自定义策略的具体内容，不超过8个。
+        授权语句，描述自定义策略的具体内容。
 
         :return: The statement of this ServicePolicy.
         :rtype: list[:class:`huaweicloudsdkiam.v3.ServiceStatement`]
@@ -86,7 +83,7 @@ class ServicePolicy:
     def statement(self, statement):
         """Sets the statement of this ServicePolicy.
 
-        授权语句，描述自定义策略的具体内容，不超过8个。
+        授权语句，描述自定义策略的具体内容。
 
         :param statement: The statement of this ServicePolicy.
         :type statement: list[:class:`huaweicloudsdkiam.v3.ServiceStatement`]

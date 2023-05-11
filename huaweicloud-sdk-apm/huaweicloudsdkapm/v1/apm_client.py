@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class ApmClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(ApmClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkapm.v1.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -53,14 +35,10 @@ class ApmClient(Client):
         :type request: :class:`huaweicloudsdkapm.v1.CreateAkSkRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.CreateAkSkResponse`
         """
-        return self.create_ak_sk_with_http_info(request)
+        return self._create_ak_sk_with_http_info(request)
 
-    def create_ak_sk_with_http_info(self, request):
-        all_params = ['create_aksk_model']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_ak_sk_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -113,14 +91,10 @@ class ApmClient(Client):
         :type request: :class:`huaweicloudsdkapm.v1.DeleteAkSkRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.DeleteAkSkResponse`
         """
-        return self.delete_ak_sk_with_http_info(request)
+        return self._delete_ak_sk_with_http_info(request)
 
-    def delete_ak_sk_with_http_info(self, request):
-        all_params = ['ak']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_ak_sk_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -173,14 +147,10 @@ class ApmClient(Client):
         :type request: :class:`huaweicloudsdkapm.v1.ShowAkSksRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.ShowAkSksResponse`
         """
-        return self.show_ak_sks_with_http_info(request)
+        return self._show_ak_sks_with_http_info(request)
 
-    def show_ak_sks_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_ak_sks_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -231,14 +201,10 @@ class ApmClient(Client):
         :type request: :class:`huaweicloudsdkapm.v1.ListAlarmDataRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.ListAlarmDataResponse`
         """
-        return self.list_alarm_data_with_http_info(request)
+        return self._list_alarm_data_with_http_info(request)
 
-    def list_alarm_data_with_http_info(self, request):
-        all_params = ['x_business_id', 'alarm_data_list_request']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_alarm_data_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -293,14 +259,10 @@ class ApmClient(Client):
         :type request: :class:`huaweicloudsdkapm.v1.ListAlarmNotifyRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.ListAlarmNotifyResponse`
         """
-        return self.list_alarm_notify_with_http_info(request)
+        return self._list_alarm_notify_with_http_info(request)
 
-    def list_alarm_notify_with_http_info(self, request):
-        all_params = ['x_business_id', 'alarm_notify_list_request']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_alarm_notify_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -355,14 +317,10 @@ class ApmClient(Client):
         :type request: :class:`huaweicloudsdkapm.v1.ChangeAgentStatusRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.ChangeAgentStatusResponse`
         """
-        return self.change_agent_status_with_http_info(request)
+        return self._change_agent_status_with_http_info(request)
 
-    def change_agent_status_with_http_info(self, request):
-        all_params = ['x_business_id', 'agent_status_change_param']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _change_agent_status_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -417,14 +375,10 @@ class ApmClient(Client):
         :type request: :class:`huaweicloudsdkapm.v1.DeleteAgentRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.DeleteAgentResponse`
         """
-        return self.delete_agent_with_http_info(request)
+        return self._delete_agent_with_http_info(request)
 
-    def delete_agent_with_http_info(self, request):
-        all_params = ['x_business_id', 'agent_delete_param']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_agent_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -479,14 +433,10 @@ class ApmClient(Client):
         :type request: :class:`huaweicloudsdkapm.v1.ListAkSkRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.ListAkSkResponse`
         """
-        return self.list_ak_sk_with_http_info(request)
+        return self._list_ak_sk_with_http_info(request)
 
-    def list_ak_sk_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_ak_sk_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -537,14 +487,10 @@ class ApmClient(Client):
         :type request: :class:`huaweicloudsdkapm.v1.ListBusinessRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.ListBusinessResponse`
         """
-        return self.list_business_with_http_info(request)
+        return self._list_business_with_http_info(request)
 
-    def list_business_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_business_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -595,14 +541,10 @@ class ApmClient(Client):
         :type request: :class:`huaweicloudsdkapm.v1.ListEnvMonitorItemRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.ListEnvMonitorItemResponse`
         """
-        return self.list_env_monitor_item_with_http_info(request)
+        return self._list_env_monitor_item_with_http_info(request)
 
-    def list_env_monitor_item_with_http_info(self, request):
-        all_params = ['x_business_id', 'get_env_monitor_item_list_param']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_env_monitor_item_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -657,14 +599,10 @@ class ApmClient(Client):
         :type request: :class:`huaweicloudsdkapm.v1.SaveMonitorItemConfigRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.SaveMonitorItemConfigResponse`
         """
-        return self.save_monitor_item_config_with_http_info(request)
+        return self._save_monitor_item_config_with_http_info(request)
 
-    def save_monitor_item_config_with_http_info(self, request):
-        all_params = ['x_business_id', 'save_monitor_item_param']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _save_monitor_item_config_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -719,14 +657,10 @@ class ApmClient(Client):
         :type request: :class:`huaweicloudsdkapm.v1.SearchAgentRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.SearchAgentResponse`
         """
-        return self.search_agent_with_http_info(request)
+        return self._search_agent_with_http_info(request)
 
-    def search_agent_with_http_info(self, request):
-        all_params = ['x_business_id', 'agent_search_param']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _search_agent_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -781,14 +715,10 @@ class ApmClient(Client):
         :type request: :class:`huaweicloudsdkapm.v1.SearchApplicationRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.SearchApplicationResponse`
         """
-        return self.search_application_with_http_info(request)
+        return self._search_application_with_http_info(request)
 
-    def search_application_with_http_info(self, request):
-        all_params = ['x_business_id', 'app_search_param']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _search_application_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -843,14 +773,10 @@ class ApmClient(Client):
         :type request: :class:`huaweicloudsdkapm.v1.ShowMasterAddressRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.ShowMasterAddressResponse`
         """
-        return self.show_master_address_with_http_info(request)
+        return self._show_master_address_with_http_info(request)
 
-    def show_master_address_with_http_info(self, request):
-        all_params = ['region_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_master_address_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -903,14 +829,10 @@ class ApmClient(Client):
         :type request: :class:`huaweicloudsdkapm.v1.DeleteAppRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.DeleteAppResponse`
         """
-        return self.delete_app_with_http_info(request)
+        return self._delete_app_with_http_info(request)
 
-    def delete_app_with_http_info(self, request):
-        all_params = ['application_id', 'x_business_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_app_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -965,14 +887,10 @@ class ApmClient(Client):
         :type request: :class:`huaweicloudsdkapm.v1.ListAppEnvsRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.ListAppEnvsResponse`
         """
-        return self.list_app_envs_with_http_info(request)
+        return self._list_app_envs_with_http_info(request)
 
-    def list_app_envs_with_http_info(self, request):
-        all_params = ['app_id', 'x_business_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_app_envs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1027,14 +945,10 @@ class ApmClient(Client):
         :type request: :class:`huaweicloudsdkapm.v1.ListAppsRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.ListAppsResponse`
         """
-        return self.list_apps_with_http_info(request)
+        return self._list_apps_with_http_info(request)
 
-    def list_apps_with_http_info(self, request):
-        all_params = ['business_id', 'x_business_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_apps_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1089,14 +1003,10 @@ class ApmClient(Client):
         :type request: :class:`huaweicloudsdkapm.v1.ListEnvTagsRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.ListEnvTagsResponse`
         """
-        return self.list_env_tags_with_http_info(request)
+        return self._list_env_tags_with_http_info(request)
 
-    def list_env_tags_with_http_info(self, request):
-        all_params = ['x_business_id', 'tag_param']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_env_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1151,14 +1061,10 @@ class ApmClient(Client):
         :type request: :class:`huaweicloudsdkapm.v1.ShowBusinessDetailRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.ShowBusinessDetailResponse`
         """
-        return self.show_business_detail_with_http_info(request)
+        return self._show_business_detail_with_http_info(request)
 
-    def show_business_detail_with_http_info(self, request):
-        all_params = ['business_id', 'x_business_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_business_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1213,14 +1119,10 @@ class ApmClient(Client):
         :type request: :class:`huaweicloudsdkapm.v1.ShowSubBusinessDetailRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.ShowSubBusinessDetailResponse`
         """
-        return self.show_sub_business_detail_with_http_info(request)
+        return self._show_sub_business_detail_with_http_info(request)
 
-    def show_sub_business_detail_with_http_info(self, request):
-        all_params = ['sub_business_id', 'x_business_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_sub_business_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1275,14 +1177,10 @@ class ApmClient(Client):
         :type request: :class:`huaweicloudsdkapm.v1.ShowTopologyTreeRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.ShowTopologyTreeResponse`
         """
-        return self.show_topology_tree_with_http_info(request)
+        return self._show_topology_tree_with_http_info(request)
 
-    def show_topology_tree_with_http_info(self, request):
-        all_params = ['business_id', 'x_business_id', 'region_id', 'env_tag_id', 'env_keyword']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_topology_tree_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1343,14 +1241,10 @@ class ApmClient(Client):
         :type request: :class:`huaweicloudsdkapm.v1.ListOpenRegionRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.ListOpenRegionResponse`
         """
-        return self.list_open_region_with_http_info(request)
+        return self._list_open_region_with_http_info(request)
 
-    def list_open_region_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_open_region_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1401,14 +1295,10 @@ class ApmClient(Client):
         :type request: :class:`huaweicloudsdkapm.v1.ListSupportedRegionRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.ListSupportedRegionResponse`
         """
-        return self.list_supported_region_with_http_info(request)
+        return self._list_supported_region_with_http_info(request)
 
-    def list_supported_region_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_supported_region_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1459,14 +1349,10 @@ class ApmClient(Client):
         :type request: :class:`huaweicloudsdkapm.v1.SearchBusinessTopologyRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.SearchBusinessTopologyResponse`
         """
-        return self.search_business_topology_with_http_info(request)
+        return self._search_business_topology_with_http_info(request)
 
-    def search_business_topology_with_http_info(self, request):
-        all_params = ['x_business_id', 'business_topo_request']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _search_business_topology_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1521,14 +1407,10 @@ class ApmClient(Client):
         :type request: :class:`huaweicloudsdkapm.v1.SearchEnvTopologyRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.SearchEnvTopologyResponse`
         """
-        return self.search_env_topology_with_http_info(request)
+        return self._search_env_topology_with_http_info(request)
 
-    def search_env_topology_with_http_info(self, request):
-        all_params = ['x_business_id', 'env_topo_request']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _search_env_topology_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1583,14 +1465,10 @@ class ApmClient(Client):
         :type request: :class:`huaweicloudsdkapm.v1.ListBusinessEnvRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.ListBusinessEnvResponse`
         """
-        return self.list_business_env_with_http_info(request)
+        return self._list_business_env_with_http_info(request)
 
-    def list_business_env_with_http_info(self, request):
-        all_params = ['x_business_id', 'business_env_request']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_business_env_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1645,14 +1523,10 @@ class ApmClient(Client):
         :type request: :class:`huaweicloudsdkapm.v1.SearchTransactionRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.SearchTransactionResponse`
         """
-        return self.search_transaction_with_http_info(request)
+        return self._search_transaction_with_http_info(request)
 
-    def search_transaction_with_http_info(self, request):
-        all_params = ['x_business_id', 'tx_search_request']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _search_transaction_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1707,14 +1581,10 @@ class ApmClient(Client):
         :type request: :class:`huaweicloudsdkapm.v1.SearchTransactionConfigRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.SearchTransactionConfigResponse`
         """
-        return self.search_transaction_config_with_http_info(request)
+        return self._search_transaction_config_with_http_info(request)
 
-    def search_transaction_config_with_http_info(self, request):
-        all_params = ['x_business_id', 'transaction_config_search_request']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _search_transaction_config_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1769,14 +1639,10 @@ class ApmClient(Client):
         :type request: :class:`huaweicloudsdkapm.v1.ShowTransactionDetailRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.ShowTransactionDetailResponse`
         """
-        return self.show_transaction_detail_with_http_info(request)
+        return self._show_transaction_detail_with_http_info(request)
 
-    def show_transaction_detail_with_http_info(self, request):
-        all_params = ['x_business_id', 'tx_detail_request']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_transaction_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1831,14 +1697,10 @@ class ApmClient(Client):
         :type request: :class:`huaweicloudsdkapm.v1.ListEnvInstancesRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.ListEnvInstancesResponse`
         """
-        return self.list_env_instances_with_http_info(request)
+        return self._list_env_instances_with_http_info(request)
 
-    def list_env_instances_with_http_info(self, request):
-        all_params = ['x_business_id', 'instance_search_param']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_env_instances_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1893,14 +1755,10 @@ class ApmClient(Client):
         :type request: :class:`huaweicloudsdkapm.v1.ShowClobDetailRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.ShowClobDetailResponse`
         """
-        return self.show_clob_detail_with_http_info(request)
+        return self._show_clob_detail_with_http_info(request)
 
-    def show_clob_detail_with_http_info(self, request):
-        all_params = ['x_business_id', 'get_clob_detail_param']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_clob_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1955,14 +1813,10 @@ class ApmClient(Client):
         :type request: :class:`huaweicloudsdkapm.v1.ShowEnvMonitorItemsRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.ShowEnvMonitorItemsResponse`
         """
-        return self.show_env_monitor_items_with_http_info(request)
+        return self._show_env_monitor_items_with_http_info(request)
 
-    def show_env_monitor_items_with_http_info(self, request):
-        all_params = ['env_id', 'x_business_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_env_monitor_items_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2017,14 +1871,10 @@ class ApmClient(Client):
         :type request: :class:`huaweicloudsdkapm.v1.ShowEventDetailRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.ShowEventDetailResponse`
         """
-        return self.show_event_detail_with_http_info(request)
+        return self._show_event_detail_with_http_info(request)
 
-    def show_event_detail_with_http_info(self, request):
-        all_params = ['trace_id', 'span_id', 'event_id', 'env_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_event_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2083,14 +1933,10 @@ class ApmClient(Client):
         :type request: :class:`huaweicloudsdkapm.v1.ShowMonitorItemViewConfigRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.ShowMonitorItemViewConfigResponse`
         """
-        return self.show_monitor_item_view_config_with_http_info(request)
+        return self._show_monitor_item_view_config_with_http_info(request)
 
-    def show_monitor_item_view_config_with_http_info(self, request):
-        all_params = ['env_id', 'collector_id', 'x_business_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_monitor_item_view_config_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2147,14 +1993,10 @@ class ApmClient(Client):
         :type request: :class:`huaweicloudsdkapm.v1.ShowRawTableRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.ShowRawTableResponse`
         """
-        return self.show_raw_table_with_http_info(request)
+        return self._show_raw_table_with_http_info(request)
 
-    def show_raw_table_with_http_info(self, request):
-        all_params = ['x_business_id', 'raw_table_param']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_raw_table_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2209,14 +2051,10 @@ class ApmClient(Client):
         :type request: :class:`huaweicloudsdkapm.v1.ShowSpanSearchRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.ShowSpanSearchResponse`
         """
-        return self.show_span_search_with_http_info(request)
+        return self._show_span_search_with_http_info(request)
 
-    def show_span_search_with_http_info(self, request):
-        all_params = ['x_business_id', 'trace_search_param']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_span_search_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2271,14 +2109,10 @@ class ApmClient(Client):
         :type request: :class:`huaweicloudsdkapm.v1.ShowSumTableRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.ShowSumTableResponse`
         """
-        return self.show_sum_table_with_http_info(request)
+        return self._show_sum_table_with_http_info(request)
 
-    def show_sum_table_with_http_info(self, request):
-        all_params = ['x_business_id', 'sum_table_param']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_sum_table_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2333,14 +2167,10 @@ class ApmClient(Client):
         :type request: :class:`huaweicloudsdkapm.v1.ShowTopologyRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.ShowTopologyResponse`
         """
-        return self.show_topology_with_http_info(request)
+        return self._show_topology_with_http_info(request)
 
-    def show_topology_with_http_info(self, request):
-        all_params = ['trace_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_topology_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2393,14 +2223,10 @@ class ApmClient(Client):
         :type request: :class:`huaweicloudsdkapm.v1.ShowTraceEventsRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.ShowTraceEventsResponse`
         """
-        return self.show_trace_events_with_http_info(request)
+        return self._show_trace_events_with_http_info(request)
 
-    def show_trace_events_with_http_info(self, request):
-        all_params = ['trace_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_trace_events_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2453,14 +2279,10 @@ class ApmClient(Client):
         :type request: :class:`huaweicloudsdkapm.v1.ShowTrendRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.ShowTrendResponse`
         """
-        return self.show_trend_with_http_info(request)
+        return self._show_trend_with_http_info(request)
 
-    def show_trend_with_http_info(self, request):
-        all_params = ['x_business_id', 'trend_param']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_trend_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

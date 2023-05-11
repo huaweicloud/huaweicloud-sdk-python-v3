@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class BssAsyncClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(BssAsyncClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkbss.v2.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -54,14 +36,10 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListConversionsRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListConversionsResponse`
         """
-        return self.list_conversions_with_http_info(request)
+        return self._list_conversions_with_http_info(request)
 
-    def list_conversions_with_http_info(self, request):
-        all_params = ['x_language', 'measure_type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_conversions_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -117,14 +95,10 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListCostsRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListCostsResponse`
         """
-        return self.list_costs_with_http_info(request)
+        return self._list_costs_with_http_info(request)
 
-    def list_costs_with_http_info(self, request):
-        all_params = ['req', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_costs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -187,14 +161,10 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListCustomerBillsMonthlyBreakDownRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListCustomerBillsMonthlyBreakDownResponse`
         """
-        return self.list_customer_bills_monthly_break_down_with_http_info(request)
+        return self._list_customer_bills_monthly_break_down_with_http_info(request)
 
-    def list_customer_bills_monthly_break_down_with_http_info(self, request):
-        all_params = ['shared_month', 'x_language', 'service_type_code', 'resource_type_code', 'region_code', 'charging_mode', 'bill_type', 'offset', 'limit', 'resource_id', 'resource_name', 'enterprise_project_id', 'method', 'sub_customer_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_customer_bills_monthly_break_down_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -274,14 +244,10 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListFreeResourceInfosRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListFreeResourceInfosResponse`
         """
-        return self.list_free_resource_infos_with_http_info(request)
+        return self._list_free_resource_infos_with_http_info(request)
 
-    def list_free_resource_infos_with_http_info(self, request):
-        all_params = ['x_language', 'req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_free_resource_infos_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -337,14 +303,10 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListFreeResourceUsagesRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListFreeResourceUsagesResponse`
         """
-        return self.list_free_resource_usages_with_http_info(request)
+        return self._list_free_resource_usages_with_http_info(request)
 
-    def list_free_resource_usages_with_http_info(self, request):
-        all_params = ['req', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_free_resource_usages_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -400,14 +362,10 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListFreeResourcesUsageRecordsRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListFreeResourcesUsageRecordsResponse`
         """
-        return self.list_free_resources_usage_records_with_http_info(request)
+        return self._list_free_resources_usage_records_with_http_info(request)
 
-    def list_free_resources_usage_records_with_http_info(self, request):
-        all_params = ['deduct_time_begin', 'deduct_time_end', 'free_resource_id', 'product_id', 'resource_type_code', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_free_resources_usage_records_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -475,14 +433,10 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListIncentiveDiscountPoliciesRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListIncentiveDiscountPoliciesResponse`
         """
-        return self.list_incentive_discount_policies_with_http_info(request)
+        return self._list_incentive_discount_policies_with_http_info(request)
 
-    def list_incentive_discount_policies_with_http_info(self, request):
-        all_params = ['time', 'service_type_code', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_incentive_discount_policies_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -542,14 +496,10 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListMeasureUnitsRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListMeasureUnitsResponse`
         """
-        return self.list_measure_units_with_http_info(request)
+        return self._list_measure_units_with_http_info(request)
 
-    def list_measure_units_with_http_info(self, request):
-        all_params = ['x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_measure_units_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -603,14 +553,10 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListPartnerAccountChangeRecordsRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListPartnerAccountChangeRecordsResponse`
         """
-        return self.list_partner_account_change_records_with_http_info(request)
+        return self._list_partner_account_change_records_with_http_info(request)
 
-    def list_partner_account_change_records_with_http_info(self, request):
-        all_params = ['balance_type', 'trade_type', 'trade_time_begin', 'trade_time_end', 'offset', 'limit', 'indirect_partner_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_partner_account_change_records_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -676,14 +622,10 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListResourceTypesRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListResourceTypesResponse`
         """
-        return self.list_resource_types_with_http_info(request)
+        return self._list_resource_types_with_http_info(request)
 
-    def list_resource_types_with_http_info(self, request):
-        all_params = ['x_language', 'limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_resource_types_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -744,14 +686,10 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListResourceUsageRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListResourceUsageResponse`
         """
-        return self.list_resource_usage_with_http_info(request)
+        return self._list_resource_usage_with_http_info(request)
 
-    def list_resource_usage_with_http_info(self, request):
-        all_params = ['bill_cycle', 'service_type_code', 'resource_type_code', 'usage_type', 'resource_id', 'x_language', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_resource_usage_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -823,14 +761,10 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListResourceUsageSummaryRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListResourceUsageSummaryResponse`
         """
-        return self.list_resource_usage_summary_with_http_info(request)
+        return self._list_resource_usage_summary_with_http_info(request)
 
-    def list_resource_usage_summary_with_http_info(self, request):
-        all_params = ['bill_cycle', 'service_type_code', 'resource_type_code', 'usage_type', 'x_language', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_resource_usage_summary_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -896,14 +830,10 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListServiceTypesRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListServiceTypesResponse`
         """
-        return self.list_service_types_with_http_info(request)
+        return self._list_service_types_with_http_info(request)
 
-    def list_service_types_with_http_info(self, request):
-        all_params = ['x_language', 'limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_service_types_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -961,14 +891,10 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListStoredValueCardsRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListStoredValueCardsResponse`
         """
-        return self.list_stored_value_cards_with_http_info(request)
+        return self._list_stored_value_cards_with_http_info(request)
 
-    def list_stored_value_cards_with_http_info(self, request):
-        all_params = ['status', 'card_id', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_stored_value_cards_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1030,14 +956,10 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ChangeEnterpriseRealnameAuthenticationRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ChangeEnterpriseRealnameAuthenticationResponse`
         """
-        return self.change_enterprise_realname_authentication_with_http_info(request)
+        return self._change_enterprise_realname_authentication_with_http_info(request)
 
-    def change_enterprise_realname_authentication_with_http_info(self, request):
-        all_params = ['req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _change_enterprise_realname_authentication_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1094,14 +1016,10 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.CheckUserIdentityRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.CheckUserIdentityResponse`
         """
-        return self.check_user_identity_with_http_info(request)
+        return self._check_user_identity_with_http_info(request)
 
-    def check_user_identity_with_http_info(self, request):
-        all_params = ['req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _check_user_identity_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1155,14 +1073,10 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.CreateEnterpriseProjectAuthRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.CreateEnterpriseProjectAuthResponse`
         """
-        return self.create_enterprise_project_auth_with_http_info(request)
+        return self._create_enterprise_project_auth_with_http_info(request)
 
-    def create_enterprise_project_auth_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_enterprise_project_auth_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1216,14 +1130,10 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.CreateEnterpriseRealnameAuthenticationRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.CreateEnterpriseRealnameAuthenticationResponse`
         """
-        return self.create_enterprise_realname_authentication_with_http_info(request)
+        return self._create_enterprise_realname_authentication_with_http_info(request)
 
-    def create_enterprise_realname_authentication_with_http_info(self, request):
-        all_params = ['req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_enterprise_realname_authentication_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1282,14 +1192,10 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.CreatePartnerCouponsRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.CreatePartnerCouponsResponse`
         """
-        return self.create_partner_coupons_with_http_info(request)
+        return self._create_partner_coupons_with_http_info(request)
 
-    def create_partner_coupons_with_http_info(self, request):
-        all_params = ['req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_partner_coupons_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1345,14 +1251,10 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.CreatePersonalRealnameAuthRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.CreatePersonalRealnameAuthResponse`
         """
-        return self.create_personal_realname_auth_with_http_info(request)
+        return self._create_personal_realname_auth_with_http_info(request)
 
-    def create_personal_realname_auth_with_http_info(self, request):
-        all_params = ['req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_personal_realname_auth_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1408,14 +1310,10 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.CreatePostalRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.CreatePostalResponse`
         """
-        return self.create_postal_with_http_info(request)
+        return self._create_postal_with_http_info(request)
 
-    def create_postal_with_http_info(self, request):
-        all_params = ['req', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_postal_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1478,14 +1376,10 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.CreateSubCustomerRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.CreateSubCustomerResponse`
         """
-        return self.create_sub_customer_with_http_info(request)
+        return self._create_sub_customer_with_http_info(request)
 
-    def create_sub_customer_with_http_info(self, request):
-        all_params = ['req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_sub_customer_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1541,14 +1435,10 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.CreateSubEnterpriseAccountRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.CreateSubEnterpriseAccountResponse`
         """
-        return self.create_sub_enterprise_account_with_http_info(request)
+        return self._create_sub_enterprise_account_with_http_info(request)
 
-    def create_sub_enterprise_account_with_http_info(self, request):
-        all_params = ['req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_sub_enterprise_account_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1604,14 +1494,10 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.DeletePostalRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.DeletePostalResponse`
         """
-        return self.delete_postal_with_http_info(request)
+        return self._delete_postal_with_http_info(request)
 
-    def delete_postal_with_http_info(self, request):
-        all_params = ['address_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_postal_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1665,14 +1551,10 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListCitiesRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListCitiesResponse`
         """
-        return self.list_cities_with_http_info(request)
+        return self._list_cities_with_http_info(request)
 
-    def list_cities_with_http_info(self, request):
-        all_params = ['province_code', 'x_language', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_cities_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1735,14 +1617,10 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListConsumeSubCustomersRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListConsumeSubCustomersResponse`
         """
-        return self.list_consume_sub_customers_with_http_info(request)
+        return self._list_consume_sub_customers_with_http_info(request)
 
-    def list_consume_sub_customers_with_http_info(self, request):
-        all_params = ['req', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_consume_sub_customers_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1798,14 +1676,10 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListCountiesRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListCountiesResponse`
         """
-        return self.list_counties_with_http_info(request)
+        return self._list_counties_with_http_info(request)
 
-    def list_counties_with_http_info(self, request):
-        all_params = ['city_code', 'x_language', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_counties_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1870,14 +1744,10 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListCouponQuotasRecordsRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListCouponQuotasRecordsResponse`
         """
-        return self.list_coupon_quotas_records_with_http_info(request)
+        return self._list_coupon_quotas_records_with_http_info(request)
 
-    def list_coupon_quotas_records_with_http_info(self, request):
-        all_params = ['indirect_partner_id', 'quota_id', 'operation_time_begin', 'operation_time_end', 'parent_quota_id', 'operation_type', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_coupon_quotas_records_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1945,14 +1815,10 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListCustomerAccountChangeRecordsRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListCustomerAccountChangeRecordsResponse`
         """
-        return self.list_customer_account_change_records_with_http_info(request)
+        return self._list_customer_account_change_records_with_http_info(request)
 
-    def list_customer_account_change_records_with_http_info(self, request):
-        all_params = ['balance_type', 'revenue_expense_type', 'trade_type', 'trade_time_begin', 'trade_time_end', 'trade_id', 'payment_channel_id', 'payment_channel_no', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_customer_account_change_records_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2026,14 +1892,10 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListCustomerBillsFeeRecordsRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListCustomerBillsFeeRecordsResponse`
         """
-        return self.list_customer_bills_fee_records_with_http_info(request)
+        return self._list_customer_bills_fee_records_with_http_info(request)
 
-    def list_customer_bills_fee_records_with_http_info(self, request):
-        all_params = ['bill_cycle', 'x_language', 'provider_type', 'service_type_code', 'resource_type_code', 'region_code', 'charging_mode', 'bill_type', 'trade_id', 'enterprise_project_id', 'include_zero_record', 'status', 'method', 'sub_customer_id', 'offset', 'limit', 'bill_date_begin', 'bill_date_end']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_customer_bills_fee_records_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2121,14 +1983,10 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListCustomerOnDemandResourcesRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListCustomerOnDemandResourcesResponse`
         """
-        return self.list_customer_on_demand_resources_with_http_info(request)
+        return self._list_customer_on_demand_resources_with_http_info(request)
 
-    def list_customer_on_demand_resources_with_http_info(self, request):
-        all_params = ['req', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_customer_on_demand_resources_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2189,14 +2047,10 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListCustomersBalancesDetailRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListCustomersBalancesDetailResponse`
         """
-        return self.list_customers_balances_detail_with_http_info(request)
+        return self._list_customers_balances_detail_with_http_info(request)
 
-    def list_customers_balances_detail_with_http_info(self, request):
-        all_params = ['req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_customers_balances_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2255,14 +2109,10 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListCustomerselfResourceRecordDetailsRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListCustomerselfResourceRecordDetailsResponse`
         """
-        return self.list_customerself_resource_record_details_with_http_info(request)
+        return self._list_customerself_resource_record_details_with_http_info(request)
 
-    def list_customerself_resource_record_details_with_http_info(self, request):
-        all_params = ['req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_customerself_resource_record_details_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2318,14 +2168,10 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListCustomerselfResourceRecordsRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListCustomerselfResourceRecordsResponse`
         """
-        return self.list_customerself_resource_records_with_http_info(request)
+        return self._list_customerself_resource_records_with_http_info(request)
 
-    def list_customerself_resource_records_with_http_info(self, request):
-        all_params = ['cycle', 'x_language', 'cloud_service_type', 'region', 'charge_mode', 'bill_type', 'offset', 'limit', 'resource_id', 'enterprise_project_id', 'include_zero_record', 'method', 'sub_customer_id', 'trade_id', 'bill_date_begin', 'bill_date_end']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_customerself_resource_records_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2409,14 +2255,10 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListEnterpriseMultiAccountRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListEnterpriseMultiAccountResponse`
         """
-        return self.list_enterprise_multi_account_with_http_info(request)
+        return self._list_enterprise_multi_account_with_http_info(request)
 
-    def list_enterprise_multi_account_with_http_info(self, request):
-        all_params = ['sub_customer_id', 'balance_type', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_enterprise_multi_account_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2476,14 +2318,10 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListEnterpriseOrganizationsRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListEnterpriseOrganizationsResponse`
         """
-        return self.list_enterprise_organizations_with_http_info(request)
+        return self._list_enterprise_organizations_with_http_info(request)
 
-    def list_enterprise_organizations_with_http_info(self, request):
-        all_params = ['recursive_query', 'parent_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_enterprise_organizations_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2539,14 +2377,10 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListEnterpriseSubCustomersRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListEnterpriseSubCustomersResponse`
         """
-        return self.list_enterprise_sub_customers_with_http_info(request)
+        return self._list_enterprise_sub_customers_with_http_info(request)
 
-    def list_enterprise_sub_customers_with_http_info(self, request):
-        all_params = ['sub_customer_account_name', 'sub_customer_display_name', 'fuzzy_query', 'offset', 'limit', 'org_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_enterprise_sub_customers_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2612,14 +2446,10 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListIndirectPartnersRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListIndirectPartnersResponse`
         """
-        return self.list_indirect_partners_with_http_info(request)
+        return self._list_indirect_partners_with_http_info(request)
 
-    def list_indirect_partners_with_http_info(self, request):
-        all_params = ['req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_indirect_partners_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2678,14 +2508,10 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListIssuedCouponQuotasRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListIssuedCouponQuotasResponse`
         """
-        return self.list_issued_coupon_quotas_with_http_info(request)
+        return self._list_issued_coupon_quotas_with_http_info(request)
 
-    def list_issued_coupon_quotas_with_http_info(self, request):
-        all_params = ['quota_id', 'indirect_partner_id', 'parent_quota_id', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_issued_coupon_quotas_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2755,14 +2581,10 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListIssuedPartnerCouponsRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListIssuedPartnerCouponsResponse`
         """
-        return self.list_issued_partner_coupons_with_http_info(request)
+        return self._list_issued_partner_coupons_with_http_info(request)
 
-    def list_issued_partner_coupons_with_http_info(self, request):
-        all_params = ['coupon_id', 'customer_id', 'order_id', 'coupon_type', 'status', 'create_time_begin', 'create_time_end', 'effective_time_begin', 'effective_time_end', 'expire_time_begin', 'expire_time_end', 'offset', 'limit', 'indirect_partner_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_issued_partner_coupons_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2849,14 +2671,10 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListOnDemandResourceRatingsRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListOnDemandResourceRatingsResponse`
         """
-        return self.list_on_demand_resource_ratings_with_http_info(request)
+        return self._list_on_demand_resource_ratings_with_http_info(request)
 
-    def list_on_demand_resource_ratings_with_http_info(self, request):
-        all_params = ['req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_on_demand_resource_ratings_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2910,14 +2728,10 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListOrderDiscountsRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListOrderDiscountsResponse`
         """
-        return self.list_order_discounts_with_http_info(request)
+        return self._list_order_discounts_with_http_info(request)
 
-    def list_order_discounts_with_http_info(self, request):
-        all_params = ['order_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_order_discounts_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2973,14 +2787,10 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListPartnerAdjustRecordsRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListPartnerAdjustRecordsResponse`
         """
-        return self.list_partner_adjust_records_with_http_info(request)
+        return self._list_partner_adjust_records_with_http_info(request)
 
-    def list_partner_adjust_records_with_http_info(self, request):
-        all_params = ['customer_id', 'operation_type', 'operation_time_begin', 'operation_time_end', 'trans_id', 'offset', 'limit', 'indirect_partner_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_partner_adjust_records_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3048,14 +2858,10 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListPartnerBalancesRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListPartnerBalancesResponse`
         """
-        return self.list_partner_balances_with_http_info(request)
+        return self._list_partner_balances_with_http_info(request)
 
-    def list_partner_balances_with_http_info(self, request):
-        all_params = ['indirect_partner_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_partner_balances_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3111,14 +2917,10 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListPartnerCouponsRecordRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListPartnerCouponsRecordResponse`
         """
-        return self.list_partner_coupons_record_with_http_info(request)
+        return self._list_partner_coupons_record_with_http_info(request)
 
-    def list_partner_coupons_record_with_http_info(self, request):
-        all_params = ['operation_types', 'quota_id', 'quota_type', 'coupon_ids', 'customer_id', 'operation_time_begin', 'operation_time_end', 'result', 'offset', 'limit', 'indirect_partner_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_partner_coupons_record_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3196,14 +2998,10 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListPostalAddressRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListPostalAddressResponse`
         """
-        return self.list_postal_address_with_http_info(request)
+        return self._list_postal_address_with_http_info(request)
 
-    def list_postal_address_with_http_info(self, request):
-        all_params = ['offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_postal_address_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3259,14 +3057,10 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListProvincesRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListProvincesResponse`
         """
-        return self.list_provinces_with_http_info(request)
+        return self._list_provinces_with_http_info(request)
 
-    def list_provinces_with_http_info(self, request):
-        all_params = ['x_language', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_provinces_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3326,14 +3120,10 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListQuotaCouponsRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListQuotaCouponsResponse`
         """
-        return self.list_quota_coupons_with_http_info(request)
+        return self._list_quota_coupons_with_http_info(request)
 
-    def list_quota_coupons_with_http_info(self, request):
-        all_params = ['req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_quota_coupons_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3394,14 +3184,10 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListRateOnPeriodDetailRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListRateOnPeriodDetailResponse`
         """
-        return self.list_rate_on_period_detail_with_http_info(request)
+        return self._list_rate_on_period_detail_with_http_info(request)
 
-    def list_rate_on_period_detail_with_http_info(self, request):
-        all_params = ['req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_rate_on_period_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3455,14 +3241,10 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListRenewRateOnPeriodRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListRenewRateOnPeriodResponse`
         """
-        return self.list_renew_rate_on_period_with_http_info(request)
+        return self._list_renew_rate_on_period_with_http_info(request)
 
-    def list_renew_rate_on_period_with_http_info(self, request):
-        all_params = ['req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_renew_rate_on_period_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3516,14 +3298,10 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListServiceResourcesRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListServiceResourcesResponse`
         """
-        return self.list_service_resources_with_http_info(request)
+        return self._list_service_resources_with_http_info(request)
 
-    def list_service_resources_with_http_info(self, request):
-        all_params = ['service_type_code', 'x_language', 'limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_service_resources_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3590,14 +3368,10 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListSubCustomerBillDetailRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListSubCustomerBillDetailResponse`
         """
-        return self.list_sub_customer_bill_detail_with_http_info(request)
+        return self._list_sub_customer_bill_detail_with_http_info(request)
 
-    def list_sub_customer_bill_detail_with_http_info(self, request):
-        all_params = ['bill_cycle', 'customer_id', 'x_language', 'service_type_code', 'region_code', 'charging_mode', 'bill_detail_type', 'resource_id', 'resource_name', 'trade_id', 'account_manager_id', 'association_type', 'offset', 'limit', 'indirect_partner_id', 'bill_date_begin', 'bill_date_end']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_sub_customer_bill_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3685,14 +3459,10 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListSubCustomerCouponsRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListSubCustomerCouponsResponse`
         """
-        return self.list_sub_customer_coupons_with_http_info(request)
+        return self._list_sub_customer_coupons_with_http_info(request)
 
-    def list_sub_customer_coupons_with_http_info(self, request):
-        all_params = ['coupon_id', 'order_id', 'promotion_plan_id', 'coupon_type', 'status', 'active_start_time', 'active_end_time', 'offset', 'limit', 'source_id', 'indirect_partner_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_sub_customer_coupons_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3768,14 +3538,10 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListSubCustomersRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListSubCustomersResponse`
         """
-        return self.list_sub_customers_with_http_info(request)
+        return self._list_sub_customers_with_http_info(request)
 
-    def list_sub_customers_with_http_info(self, request):
-        all_params = ['req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_sub_customers_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3835,14 +3601,10 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListSubcustomerMonthlyBillsRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListSubcustomerMonthlyBillsResponse`
         """
-        return self.list_subcustomer_monthly_bills_with_http_info(request)
+        return self._list_subcustomer_monthly_bills_with_http_info(request)
 
-    def list_subcustomer_monthly_bills_with_http_info(self, request):
-        all_params = ['cycle', 'charge_mode', 'customer_id', 'cloud_service_type', 'offset', 'limit', 'bill_type', 'indirect_partner_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_subcustomer_monthly_bills_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3910,14 +3672,10 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListUsageTypesRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListUsageTypesResponse`
         """
-        return self.list_usage_types_with_http_info(request)
+        return self._list_usage_types_with_http_info(request)
 
-    def list_usage_types_with_http_info(self, request):
-        all_params = ['x_language', 'resource_type_code', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_usage_types_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3979,14 +3737,10 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ReclaimCouponQuotasRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ReclaimCouponQuotasResponse`
         """
-        return self.reclaim_coupon_quotas_with_http_info(request)
+        return self._reclaim_coupon_quotas_with_http_info(request)
 
-    def reclaim_coupon_quotas_with_http_info(self, request):
-        all_params = ['req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _reclaim_coupon_quotas_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4042,14 +3796,10 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ReclaimIndirectPartnerAccountRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ReclaimIndirectPartnerAccountResponse`
         """
-        return self.reclaim_indirect_partner_account_with_http_info(request)
+        return self._reclaim_indirect_partner_account_with_http_info(request)
 
-    def reclaim_indirect_partner_account_with_http_info(self, request):
-        all_params = ['req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _reclaim_indirect_partner_account_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4108,14 +3858,10 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ReclaimPartnerCouponsRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ReclaimPartnerCouponsResponse`
         """
-        return self.reclaim_partner_coupons_with_http_info(request)
+        return self._reclaim_partner_coupons_with_http_info(request)
 
-    def reclaim_partner_coupons_with_http_info(self, request):
-        all_params = ['req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _reclaim_partner_coupons_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4171,14 +3917,10 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ReclaimSubEnterpriseAmountRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ReclaimSubEnterpriseAmountResponse`
         """
-        return self.reclaim_sub_enterprise_amount_with_http_info(request)
+        return self._reclaim_sub_enterprise_amount_with_http_info(request)
 
-    def reclaim_sub_enterprise_amount_with_http_info(self, request):
-        all_params = ['req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _reclaim_sub_enterprise_amount_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4234,14 +3976,10 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ReclaimToPartnerAccountRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ReclaimToPartnerAccountResponse`
         """
-        return self.reclaim_to_partner_account_with_http_info(request)
+        return self._reclaim_to_partner_account_with_http_info(request)
 
-    def reclaim_to_partner_account_with_http_info(self, request):
-        all_params = ['req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _reclaim_to_partner_account_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4295,14 +4033,10 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.SendSmsVerificationCodeRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.SendSmsVerificationCodeResponse`
         """
-        return self.send_sms_verification_code_with_http_info(request)
+        return self._send_sms_verification_code_with_http_info(request)
 
-    def send_sms_verification_code_with_http_info(self, request):
-        all_params = ['req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _send_sms_verification_code_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4356,14 +4090,10 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.SendVerificationMessageCodeRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.SendVerificationMessageCodeResponse`
         """
-        return self.send_verification_message_code_with_http_info(request)
+        return self._send_verification_message_code_with_http_info(request)
 
-    def send_verification_message_code_with_http_info(self, request):
-        all_params = ['req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _send_verification_message_code_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4419,14 +4149,10 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ShowCustomerAccountBalancesRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ShowCustomerAccountBalancesResponse`
         """
-        return self.show_customer_account_balances_with_http_info(request)
+        return self._show_customer_account_balances_with_http_info(request)
 
-    def show_customer_account_balances_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_customer_account_balances_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4483,14 +4209,10 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ShowCustomerMonthlySumRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ShowCustomerMonthlySumResponse`
         """
-        return self.show_customer_monthly_sum_with_http_info(request)
+        return self._show_customer_monthly_sum_with_http_info(request)
 
-    def show_customer_monthly_sum_with_http_info(self, request):
-        all_params = ['bill_cycle', 'service_type_code', 'enterprise_project_id', 'offset', 'limit', 'method', 'sub_customer_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_customer_monthly_sum_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4556,14 +4278,10 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ShowMultiAccountTransferAmountRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ShowMultiAccountTransferAmountResponse`
         """
-        return self.show_multi_account_transfer_amount_with_http_info(request)
+        return self._show_multi_account_transfer_amount_with_http_info(request)
 
-    def show_multi_account_transfer_amount_with_http_info(self, request):
-        all_params = ['balance_type', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_multi_account_transfer_amount_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4621,14 +4339,10 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ShowRealnameAuthenticationReviewResultRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ShowRealnameAuthenticationReviewResultResponse`
         """
-        return self.show_realname_authentication_review_result_with_http_info(request)
+        return self._show_realname_authentication_review_result_with_http_info(request)
 
-    def show_realname_authentication_review_result_with_http_info(self, request):
-        all_params = ['customer_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_realname_authentication_review_result_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4684,14 +4398,10 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.UpdateCouponQuotasRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.UpdateCouponQuotasResponse`
         """
-        return self.update_coupon_quotas_with_http_info(request)
+        return self._update_coupon_quotas_with_http_info(request)
 
-    def update_coupon_quotas_with_http_info(self, request):
-        all_params = ['req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_coupon_quotas_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4747,14 +4457,10 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.UpdateCustomerAccountAmountRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.UpdateCustomerAccountAmountResponse`
         """
-        return self.update_customer_account_amount_with_http_info(request)
+        return self._update_customer_account_amount_with_http_info(request)
 
-    def update_customer_account_amount_with_http_info(self, request):
-        all_params = ['req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_customer_account_amount_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4810,14 +4516,10 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.UpdateIndirectPartnerAccountRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.UpdateIndirectPartnerAccountResponse`
         """
-        return self.update_indirect_partner_account_with_http_info(request)
+        return self._update_indirect_partner_account_with_http_info(request)
 
-    def update_indirect_partner_account_with_http_info(self, request):
-        all_params = ['req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_indirect_partner_account_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4880,14 +4582,10 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.UpdatePeriodToOnDemandRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.UpdatePeriodToOnDemandResponse`
         """
-        return self.update_period_to_on_demand_with_http_info(request)
+        return self._update_period_to_on_demand_with_http_info(request)
 
-    def update_period_to_on_demand_with_http_info(self, request):
-        all_params = ['req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_period_to_on_demand_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4943,14 +4641,10 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.UpdatePostalRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.UpdatePostalResponse`
         """
-        return self.update_postal_with_http_info(request)
+        return self._update_postal_with_http_info(request)
 
-    def update_postal_with_http_info(self, request):
-        all_params = ['req', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_postal_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5006,14 +4700,10 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.UpdateSubEnterpriseAmountRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.UpdateSubEnterpriseAmountResponse`
         """
-        return self.update_sub_enterprise_amount_with_http_info(request)
+        return self._update_sub_enterprise_amount_with_http_info(request)
 
-    def update_sub_enterprise_amount_with_http_info(self, request):
-        all_params = ['req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_sub_enterprise_amount_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5076,14 +4766,10 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.AutoRenewalResourcesRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.AutoRenewalResourcesResponse`
         """
-        return self.auto_renewal_resources_with_http_info(request)
+        return self._auto_renewal_resources_with_http_info(request)
 
-    def auto_renewal_resources_with_http_info(self, request):
-        all_params = ['resource_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _auto_renewal_resources_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5144,14 +4830,10 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.CancelAutoRenewalResourcesRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.CancelAutoRenewalResourcesResponse`
         """
-        return self.cancel_auto_renewal_resources_with_http_info(request)
+        return self._cancel_auto_renewal_resources_with_http_info(request)
 
-    def cancel_auto_renewal_resources_with_http_info(self, request):
-        all_params = ['resource_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _cancel_auto_renewal_resources_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5210,14 +4892,10 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.CancelCustomerOrderRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.CancelCustomerOrderResponse`
         """
-        return self.cancel_customer_order_with_http_info(request)
+        return self._cancel_customer_order_with_http_info(request)
 
-    def cancel_customer_order_with_http_info(self, request):
-        all_params = ['req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _cancel_customer_order_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5281,14 +4959,10 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.CancelResourcesSubscriptionRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.CancelResourcesSubscriptionResponse`
         """
-        return self.cancel_resources_subscription_with_http_info(request)
+        return self._cancel_resources_subscription_with_http_info(request)
 
-    def cancel_resources_subscription_with_http_info(self, request):
-        all_params = ['req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _cancel_resources_subscription_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5347,14 +5021,10 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListCustomerOrdersRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListCustomerOrdersResponse`
         """
-        return self.list_customer_orders_with_http_info(request)
+        return self._list_customer_orders_with_http_info(request)
 
-    def list_customer_orders_with_http_info(self, request):
-        all_params = ['order_id', 'customer_id', 'create_time_begin', 'create_time_end', 'service_type_code', 'status', 'order_type', 'limit', 'offset', 'order_by', 'payment_time_begin', 'payment_time_end', 'indirect_partner_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_customer_orders_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5432,14 +5102,10 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListOrderCouponsByOrderIdRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListOrderCouponsByOrderIdResponse`
         """
-        return self.list_order_coupons_by_order_id_with_http_info(request)
+        return self._list_order_coupons_by_order_id_with_http_info(request)
 
-    def list_order_coupons_by_order_id_with_http_info(self, request):
-        all_params = ['order_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_order_coupons_by_order_id_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5496,14 +5162,10 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListPayPerUseCustomerResourcesRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListPayPerUseCustomerResourcesResponse`
         """
-        return self.list_pay_per_use_customer_resources_with_http_info(request)
+        return self._list_pay_per_use_customer_resources_with_http_info(request)
 
-    def list_pay_per_use_customer_resources_with_http_info(self, request):
-        all_params = ['req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_pay_per_use_customer_resources_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5566,14 +5228,10 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.PayOrdersRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.PayOrdersResponse`
         """
-        return self.pay_orders_with_http_info(request)
+        return self._pay_orders_with_http_info(request)
 
-    def pay_orders_with_http_info(self, request):
-        all_params = ['req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _pay_orders_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5634,14 +5292,10 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.RenewalResourcesRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.RenewalResourcesResponse`
         """
-        return self.renewal_resources_with_http_info(request)
+        return self._renewal_resources_with_http_info(request)
 
-    def renewal_resources_with_http_info(self, request):
-        all_params = ['req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _renewal_resources_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5700,14 +5354,10 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ShowCustomerOrderDetailsRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ShowCustomerOrderDetailsResponse`
         """
-        return self.show_customer_order_details_with_http_info(request)
+        return self._show_customer_order_details_with_http_info(request)
 
-    def show_customer_order_details_with_http_info(self, request):
-        all_params = ['order_id', 'x_language', 'limit', 'offset', 'indirect_partner_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_customer_order_details_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5773,14 +5423,10 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ShowRefundOrderDetailsRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ShowRefundOrderDetailsResponse`
         """
-        return self.show_refund_order_details_with_http_info(request)
+        return self._show_refund_order_details_with_http_info(request)
 
-    def show_refund_order_details_with_http_info(self, request):
-        all_params = ['order_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_refund_order_details_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

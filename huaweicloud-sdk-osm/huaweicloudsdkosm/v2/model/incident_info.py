@@ -1,9 +1,6 @@
 # coding: utf-8
 
-import re
 import six
-
-
 
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
@@ -23,7 +20,7 @@ class IncidentInfo:
         'incident_id': 'str',
         'type': 'int',
         'business_type_name': 'str',
-        'incident_type_name': 'object',
+        'incident_type_name': 'str',
         'customer_id': 'str',
         'xcustomer_id': 'str',
         'xcustomer_name': 'str',
@@ -63,7 +60,7 @@ class IncidentInfo:
         :param business_type_name: 业务分类名称
         :type business_type_name: str
         :param incident_type_name: 工单类型名称
-        :type incident_type_name: object
+        :type incident_type_name: str
         :param customer_id: 客户id
         :type customer_id: str
         :param xcustomer_id: 客户id
@@ -201,7 +198,7 @@ class IncidentInfo:
         工单类型名称
 
         :return: The incident_type_name of this IncidentInfo.
-        :rtype: object
+        :rtype: str
         """
         return self._incident_type_name
 
@@ -212,7 +209,7 @@ class IncidentInfo:
         工单类型名称
 
         :param incident_type_name: The incident_type_name of this IncidentInfo.
-        :type incident_type_name: object
+        :type incident_type_name: str
         """
         self._incident_type_name = incident_type_name
 

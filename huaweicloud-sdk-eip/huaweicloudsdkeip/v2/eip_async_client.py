@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class EipAsyncClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(EipAsyncClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkeip.v2.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -54,14 +36,10 @@ class EipAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeip.v2.AddPublicipsIntoSharedBandwidthRequest`
         :rtype: :class:`huaweicloudsdkeip.v2.AddPublicipsIntoSharedBandwidthResponse`
         """
-        return self.add_publicips_into_shared_bandwidth_with_http_info(request)
+        return self._add_publicips_into_shared_bandwidth_with_http_info(request)
 
-    def add_publicips_into_shared_bandwidth_with_http_info(self, request):
-        all_params = ['bandwidth_id', 'bandwidth']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _add_publicips_into_shared_bandwidth_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -117,14 +95,10 @@ class EipAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeip.v2.BatchCreateSharedBandwidthsRequest`
         :rtype: :class:`huaweicloudsdkeip.v2.BatchCreateSharedBandwidthsResponse`
         """
-        return self.batch_create_shared_bandwidths_with_http_info(request)
+        return self._batch_create_shared_bandwidths_with_http_info(request)
 
-    def batch_create_shared_bandwidths_with_http_info(self, request):
-        all_params = ['bandwidth']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_create_shared_bandwidths_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -178,14 +152,10 @@ class EipAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeip.v2.ChangeBandwidthToPeriodRequest`
         :rtype: :class:`huaweicloudsdkeip.v2.ChangeBandwidthToPeriodResponse`
         """
-        return self.change_bandwidth_to_period_with_http_info(request)
+        return self._change_bandwidth_to_period_with_http_info(request)
 
-    def change_bandwidth_to_period_with_http_info(self, request):
-        all_params = ['ip_change_to_period_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _change_bandwidth_to_period_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -239,14 +209,10 @@ class EipAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeip.v2.CreateSharedBandwidthRequest`
         :rtype: :class:`huaweicloudsdkeip.v2.CreateSharedBandwidthResponse`
         """
-        return self.create_shared_bandwidth_with_http_info(request)
+        return self._create_shared_bandwidth_with_http_info(request)
 
-    def create_shared_bandwidth_with_http_info(self, request):
-        all_params = ['bandwidth']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_shared_bandwidth_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -300,14 +266,10 @@ class EipAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeip.v2.DeleteSharedBandwidthRequest`
         :rtype: :class:`huaweicloudsdkeip.v2.DeleteSharedBandwidthResponse`
         """
-        return self.delete_shared_bandwidth_with_http_info(request)
+        return self._delete_shared_bandwidth_with_http_info(request)
 
-    def delete_shared_bandwidth_with_http_info(self, request):
-        all_params = ['bandwidth_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_shared_bandwidth_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -361,14 +323,10 @@ class EipAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeip.v2.ListBandwidthPkgRequest`
         :rtype: :class:`huaweicloudsdkeip.v2.ListBandwidthPkgResponse`
         """
-        return self.list_bandwidth_pkg_with_http_info(request)
+        return self._list_bandwidth_pkg_with_http_info(request)
 
-    def list_bandwidth_pkg_with_http_info(self, request):
-        all_params = ['limit', 'marker', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_bandwidth_pkg_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -426,14 +384,10 @@ class EipAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeip.v2.ListBandwidthsRequest`
         :rtype: :class:`huaweicloudsdkeip.v2.ListBandwidthsResponse`
         """
-        return self.list_bandwidths_with_http_info(request)
+        return self._list_bandwidths_with_http_info(request)
 
-    def list_bandwidths_with_http_info(self, request):
-        all_params = ['marker', 'limit', 'enterprise_project_id', 'share_type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_bandwidths_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -493,14 +447,10 @@ class EipAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeip.v2.ListQuotasRequest`
         :rtype: :class:`huaweicloudsdkeip.v2.ListQuotasResponse`
         """
-        return self.list_quotas_with_http_info(request)
+        return self._list_quotas_with_http_info(request)
 
-    def list_quotas_with_http_info(self, request):
-        all_params = ['type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_quotas_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -554,14 +504,10 @@ class EipAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeip.v2.RemovePublicipsFromSharedBandwidthRequest`
         :rtype: :class:`huaweicloudsdkeip.v2.RemovePublicipsFromSharedBandwidthResponse`
         """
-        return self.remove_publicips_from_shared_bandwidth_with_http_info(request)
+        return self._remove_publicips_from_shared_bandwidth_with_http_info(request)
 
-    def remove_publicips_from_shared_bandwidth_with_http_info(self, request):
-        all_params = ['bandwidth_id', 'bandwidth']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _remove_publicips_from_shared_bandwidth_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -617,14 +563,10 @@ class EipAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeip.v2.ShowBandwidthRequest`
         :rtype: :class:`huaweicloudsdkeip.v2.ShowBandwidthResponse`
         """
-        return self.show_bandwidth_with_http_info(request)
+        return self._show_bandwidth_with_http_info(request)
 
-    def show_bandwidth_with_http_info(self, request):
-        all_params = ['bandwidth_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_bandwidth_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -678,14 +620,10 @@ class EipAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeip.v2.UpdateBandwidthRequest`
         :rtype: :class:`huaweicloudsdkeip.v2.UpdateBandwidthResponse`
         """
-        return self.update_bandwidth_with_http_info(request)
+        return self._update_bandwidth_with_http_info(request)
 
-    def update_bandwidth_with_http_info(self, request):
-        all_params = ['bandwidth_id', 'bandwidth']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_bandwidth_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -741,14 +679,10 @@ class EipAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeip.v2.UpdatePrePaidBandwidthRequest`
         :rtype: :class:`huaweicloudsdkeip.v2.UpdatePrePaidBandwidthResponse`
         """
-        return self.update_pre_paid_bandwidth_with_http_info(request)
+        return self._update_pre_paid_bandwidth_with_http_info(request)
 
-    def update_pre_paid_bandwidth_with_http_info(self, request):
-        all_params = ['bandwidth_id', 'update_bandwidth_information']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_pre_paid_bandwidth_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -804,14 +738,10 @@ class EipAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeip.v2.BatchCreatePublicipTagsRequest`
         :rtype: :class:`huaweicloudsdkeip.v2.BatchCreatePublicipTagsResponse`
         """
-        return self.batch_create_publicip_tags_with_http_info(request)
+        return self._batch_create_publicip_tags_with_http_info(request)
 
-    def batch_create_publicip_tags_with_http_info(self, request):
-        all_params = ['publicip_id', 'resource_tag_action']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_create_publicip_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -867,14 +797,10 @@ class EipAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeip.v2.BatchCreatePublicipsRequest`
         :rtype: :class:`huaweicloudsdkeip.v2.BatchCreatePublicipsResponse`
         """
-        return self.batch_create_publicips_with_http_info(request)
+        return self._batch_create_publicips_with_http_info(request)
 
-    def batch_create_publicips_with_http_info(self, request):
-        all_params = ['batch_create_publicips_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_create_publicips_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -928,14 +854,10 @@ class EipAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeip.v2.BatchDeletePublicIpRequest`
         :rtype: :class:`huaweicloudsdkeip.v2.BatchDeletePublicIpResponse`
         """
-        return self.batch_delete_public_ip_with_http_info(request)
+        return self._batch_delete_public_ip_with_http_info(request)
 
-    def batch_delete_public_ip_with_http_info(self, request):
-        all_params = ['batch_delete_public_ip_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_delete_public_ip_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -989,14 +911,10 @@ class EipAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeip.v2.BatchDeletePublicipTagsRequest`
         :rtype: :class:`huaweicloudsdkeip.v2.BatchDeletePublicipTagsResponse`
         """
-        return self.batch_delete_publicip_tags_with_http_info(request)
+        return self._batch_delete_publicip_tags_with_http_info(request)
 
-    def batch_delete_publicip_tags_with_http_info(self, request):
-        all_params = ['publicip_id', 'resource_tag_action']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_delete_publicip_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1052,14 +970,10 @@ class EipAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeip.v2.BatchDisassociatePublicipsRequest`
         :rtype: :class:`huaweicloudsdkeip.v2.BatchDisassociatePublicipsResponse`
         """
-        return self.batch_disassociate_publicips_with_http_info(request)
+        return self._batch_disassociate_publicips_with_http_info(request)
 
-    def batch_disassociate_publicips_with_http_info(self, request):
-        all_params = ['batch_disassociate_publicips_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_disassociate_publicips_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1113,14 +1027,10 @@ class EipAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeip.v2.ChangePublicipToPeriodRequest`
         :rtype: :class:`huaweicloudsdkeip.v2.ChangePublicipToPeriodResponse`
         """
-        return self.change_publicip_to_period_with_http_info(request)
+        return self._change_publicip_to_period_with_http_info(request)
 
-    def change_publicip_to_period_with_http_info(self, request):
-        all_params = ['ip_change_to_period_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _change_publicip_to_period_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1174,14 +1084,10 @@ class EipAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeip.v2.CountPublicIpRequest`
         :rtype: :class:`huaweicloudsdkeip.v2.CountPublicIpResponse`
         """
-        return self.count_public_ip_with_http_info(request)
+        return self._count_public_ip_with_http_info(request)
 
-    def count_public_ip_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _count_public_ip_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1233,14 +1139,10 @@ class EipAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeip.v2.CountPublicIpInstanceRequest`
         :rtype: :class:`huaweicloudsdkeip.v2.CountPublicIpInstanceResponse`
         """
-        return self.count_public_ip_instance_with_http_info(request)
+        return self._count_public_ip_instance_with_http_info(request)
 
-    def count_public_ip_instance_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _count_public_ip_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1292,14 +1194,10 @@ class EipAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeip.v2.CreatePrePaidPublicipRequest`
         :rtype: :class:`huaweicloudsdkeip.v2.CreatePrePaidPublicipResponse`
         """
-        return self.create_pre_paid_publicip_with_http_info(request)
+        return self._create_pre_paid_publicip_with_http_info(request)
 
-    def create_pre_paid_publicip_with_http_info(self, request):
-        all_params = ['create_period_publicip']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_pre_paid_publicip_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1354,14 +1252,10 @@ class EipAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeip.v2.CreatePublicipRequest`
         :rtype: :class:`huaweicloudsdkeip.v2.CreatePublicipResponse`
         """
-        return self.create_publicip_with_http_info(request)
+        return self._create_publicip_with_http_info(request)
 
-    def create_publicip_with_http_info(self, request):
-        all_params = ['create_publicip']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_publicip_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1415,14 +1309,10 @@ class EipAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeip.v2.CreatePublicipTagRequest`
         :rtype: :class:`huaweicloudsdkeip.v2.CreatePublicipTagResponse`
         """
-        return self.create_publicip_tag_with_http_info(request)
+        return self._create_publicip_tag_with_http_info(request)
 
-    def create_publicip_tag_with_http_info(self, request):
-        all_params = ['publicip_id', 'tag']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_publicip_tag_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1478,14 +1368,10 @@ class EipAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeip.v2.DeletePublicipRequest`
         :rtype: :class:`huaweicloudsdkeip.v2.DeletePublicipResponse`
         """
-        return self.delete_publicip_with_http_info(request)
+        return self._delete_publicip_with_http_info(request)
 
-    def delete_publicip_with_http_info(self, request):
-        all_params = ['publicip_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_publicip_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1539,14 +1425,10 @@ class EipAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeip.v2.DeletePublicipTagRequest`
         :rtype: :class:`huaweicloudsdkeip.v2.DeletePublicipTagResponse`
         """
-        return self.delete_publicip_tag_with_http_info(request)
+        return self._delete_publicip_tag_with_http_info(request)
 
-    def delete_publicip_tag_with_http_info(self, request):
-        all_params = ['publicip_id', 'key']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_publicip_tag_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1602,14 +1484,10 @@ class EipAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeip.v2.ListPublicipTagsRequest`
         :rtype: :class:`huaweicloudsdkeip.v2.ListPublicipTagsResponse`
         """
-        return self.list_publicip_tags_with_http_info(request)
+        return self._list_publicip_tags_with_http_info(request)
 
-    def list_publicip_tags_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_publicip_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1661,14 +1539,10 @@ class EipAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeip.v2.ListPublicipsRequest`
         :rtype: :class:`huaweicloudsdkeip.v2.ListPublicipsResponse`
         """
-        return self.list_publicips_with_http_info(request)
+        return self._list_publicips_with_http_info(request)
 
-    def list_publicips_with_http_info(self, request):
-        all_params = ['marker', 'limit', 'ip_version', 'enterprise_project_id', 'port_id', 'public_ip_address', 'private_ip_address', 'id', 'allow_share_bandwidth_type_any']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_publicips_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1743,14 +1617,10 @@ class EipAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeip.v2.ListPublicipsByTagsRequest`
         :rtype: :class:`huaweicloudsdkeip.v2.ListPublicipsByTagsResponse`
         """
-        return self.list_publicips_by_tags_with_http_info(request)
+        return self._list_publicips_by_tags_with_http_info(request)
 
-    def list_publicips_by_tags_with_http_info(self, request):
-        all_params = ['show_publicip_resource_instance']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_publicips_by_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1804,14 +1674,10 @@ class EipAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeip.v2.ShowPublicIpTypeRequest`
         :rtype: :class:`huaweicloudsdkeip.v2.ShowPublicIpTypeResponse`
         """
-        return self.show_public_ip_type_with_http_info(request)
+        return self._show_public_ip_type_with_http_info(request)
 
-    def show_public_ip_type_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_public_ip_type_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1863,14 +1729,10 @@ class EipAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeip.v2.ShowPublicipRequest`
         :rtype: :class:`huaweicloudsdkeip.v2.ShowPublicipResponse`
         """
-        return self.show_publicip_with_http_info(request)
+        return self._show_publicip_with_http_info(request)
 
-    def show_publicip_with_http_info(self, request):
-        all_params = ['publicip_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_publicip_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1924,14 +1786,10 @@ class EipAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeip.v2.ShowPublicipTagsRequest`
         :rtype: :class:`huaweicloudsdkeip.v2.ShowPublicipTagsResponse`
         """
-        return self.show_publicip_tags_with_http_info(request)
+        return self._show_publicip_tags_with_http_info(request)
 
-    def show_publicip_tags_with_http_info(self, request):
-        all_params = ['publicip_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_publicip_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1985,14 +1843,10 @@ class EipAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeip.v2.UpdatePublicipRequest`
         :rtype: :class:`huaweicloudsdkeip.v2.UpdatePublicipResponse`
         """
-        return self.update_publicip_with_http_info(request)
+        return self._update_publicip_with_http_info(request)
 
-    def update_publicip_with_http_info(self, request):
-        all_params = ['publicip_id', 'publicip']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_publicip_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2048,14 +1902,10 @@ class EipAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeip.v2.ShowResourcesJobDetailRequest`
         :rtype: :class:`huaweicloudsdkeip.v2.ShowResourcesJobDetailResponse`
         """
-        return self.show_resources_job_detail_with_http_info(request)
+        return self._show_resources_job_detail_with_http_info(request)
 
-    def show_resources_job_detail_with_http_info(self, request):
-        all_params = ['job_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_resources_job_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2109,14 +1959,10 @@ class EipAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeip.v2.NeutronCreateFloatingIpRequest`
         :rtype: :class:`huaweicloudsdkeip.v2.NeutronCreateFloatingIpResponse`
         """
-        return self.neutron_create_floating_ip_with_http_info(request)
+        return self._neutron_create_floating_ip_with_http_info(request)
 
-    def neutron_create_floating_ip_with_http_info(self, request):
-        all_params = ['floatingip']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _neutron_create_floating_ip_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2170,14 +2016,10 @@ class EipAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeip.v2.NeutronDeleteFloatingIpRequest`
         :rtype: :class:`huaweicloudsdkeip.v2.NeutronDeleteFloatingIpResponse`
         """
-        return self.neutron_delete_floating_ip_with_http_info(request)
+        return self._neutron_delete_floating_ip_with_http_info(request)
 
-    def neutron_delete_floating_ip_with_http_info(self, request):
-        all_params = ['floatingip_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _neutron_delete_floating_ip_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2231,14 +2073,10 @@ class EipAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeip.v2.NeutronListFloatingIpsRequest`
         :rtype: :class:`huaweicloudsdkeip.v2.NeutronListFloatingIpsResponse`
         """
-        return self.neutron_list_floating_ips_with_http_info(request)
+        return self._neutron_list_floating_ips_with_http_info(request)
 
-    def neutron_list_floating_ips_with_http_info(self, request):
-        all_params = ['limit', 'marker', 'page_reverse', 'id', 'floating_ip_address', 'router_id', 'port_id', 'fixed_ip_address', 'tenant_id', 'floating_network_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _neutron_list_floating_ips_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2310,14 +2148,10 @@ class EipAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeip.v2.NeutronShowFloatingIpRequest`
         :rtype: :class:`huaweicloudsdkeip.v2.NeutronShowFloatingIpResponse`
         """
-        return self.neutron_show_floating_ip_with_http_info(request)
+        return self._neutron_show_floating_ip_with_http_info(request)
 
-    def neutron_show_floating_ip_with_http_info(self, request):
-        all_params = ['floatingip_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _neutron_show_floating_ip_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2373,14 +2207,10 @@ class EipAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeip.v2.NeutronUpdateFloatingIpRequest`
         :rtype: :class:`huaweicloudsdkeip.v2.NeutronUpdateFloatingIpResponse`
         """
-        return self.neutron_update_floating_ip_with_http_info(request)
+        return self._neutron_update_floating_ip_with_http_info(request)
 
-    def neutron_update_floating_ip_with_http_info(self, request):
-        all_params = ['floatingip_id', 'neutron_update_floating_ip_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _neutron_update_floating_ip_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

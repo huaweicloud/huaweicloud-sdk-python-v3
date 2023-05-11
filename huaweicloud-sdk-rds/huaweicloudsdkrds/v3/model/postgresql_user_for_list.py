@@ -1,9 +1,6 @@
 # coding: utf-8
 
-import re
 import six
-
-
 
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
@@ -22,16 +19,18 @@ class PostgresqlUserForList:
     openapi_types = {
         'name': 'str',
         'attributes': 'object',
-        'memberof': 'list[str]'
+        'memberof': 'list[str]',
+        'comment': 'str'
     }
 
     attribute_map = {
         'name': 'name',
         'attributes': 'attributes',
-        'memberof': 'memberof'
+        'memberof': 'memberof',
+        'comment': 'comment'
     }
 
-    def __init__(self, name=None, attributes=None, memberof=None):
+    def __init__(self, name=None, attributes=None, memberof=None, comment=None):
         """PostgresqlUserForList
 
         The model defined in huaweicloud sdk
@@ -42,6 +41,8 @@ class PostgresqlUserForList:
         :type attributes: object
         :param memberof: 用户的默认权限。
         :type memberof: list[str]
+        :param comment: 数据库用户备注。
+        :type comment: str
         """
         
         
@@ -49,6 +50,7 @@ class PostgresqlUserForList:
         self._name = None
         self._attributes = None
         self._memberof = None
+        self._comment = None
         self.discriminator = None
 
         self.name = name
@@ -56,6 +58,8 @@ class PostgresqlUserForList:
             self.attributes = attributes
         if memberof is not None:
             self.memberof = memberof
+        if comment is not None:
+            self.comment = comment
 
     @property
     def name(self):
@@ -122,6 +126,28 @@ class PostgresqlUserForList:
         :type memberof: list[str]
         """
         self._memberof = memberof
+
+    @property
+    def comment(self):
+        """Gets the comment of this PostgresqlUserForList.
+
+        数据库用户备注。
+
+        :return: The comment of this PostgresqlUserForList.
+        :rtype: str
+        """
+        return self._comment
+
+    @comment.setter
+    def comment(self, comment):
+        """Sets the comment of this PostgresqlUserForList.
+
+        数据库用户备注。
+
+        :param comment: The comment of this PostgresqlUserForList.
+        :type comment: str
+        """
+        self._comment = comment
 
     def to_dict(self):
         """Returns the model properties as a dict"""

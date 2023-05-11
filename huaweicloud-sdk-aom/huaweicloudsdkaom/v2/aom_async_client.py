@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class AomAsyncClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(AomAsyncClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkaom.v2.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -54,14 +36,10 @@ class AomAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaom.v2.AddActionRuleRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.AddActionRuleResponse`
         """
-        return self.add_action_rule_with_http_info(request)
+        return self._add_action_rule_with_http_info(request)
 
-    def add_action_rule_with_http_info(self, request):
-        all_params = ['add_action_rule_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _add_action_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -115,14 +93,10 @@ class AomAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaom.v2.AddAlarmRuleRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.AddAlarmRuleResponse`
         """
-        return self.add_alarm_rule_with_http_info(request)
+        return self._add_alarm_rule_with_http_info(request)
 
-    def add_alarm_rule_with_http_info(self, request):
-        all_params = ['add_alarm_rule_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _add_alarm_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -176,14 +150,10 @@ class AomAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaom.v2.AddEvent2alarmRuleRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.AddEvent2alarmRuleResponse`
         """
-        return self.add_event2alarm_rule_with_http_info(request)
+        return self._add_event2alarm_rule_with_http_info(request)
 
-    def add_event2alarm_rule_with_http_info(self, request):
-        all_params = ['add_event2alarm_rule_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _add_event2alarm_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -237,14 +207,10 @@ class AomAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaom.v2.AddMetricDataRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.AddMetricDataResponse`
         """
-        return self.add_metric_data_with_http_info(request)
+        return self._add_metric_data_with_http_info(request)
 
-    def add_metric_data_with_http_info(self, request):
-        all_params = ['metric_data_param']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _add_metric_data_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -298,14 +264,10 @@ class AomAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaom.v2.AddMuteRulesRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.AddMuteRulesResponse`
         """
-        return self.add_mute_rules_with_http_info(request)
+        return self._add_mute_rules_with_http_info(request)
 
-    def add_mute_rules_with_http_info(self, request):
-        all_params = ['add_mute_rules_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _add_mute_rules_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -359,14 +321,10 @@ class AomAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaom.v2.AddOrUpdateServiceDiscoveryRulesRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.AddOrUpdateServiceDiscoveryRulesResponse`
         """
-        return self.add_or_update_service_discovery_rules_with_http_info(request)
+        return self._add_or_update_service_discovery_rules_with_http_info(request)
 
-    def add_or_update_service_discovery_rules_with_http_info(self, request):
-        all_params = ['app_rules']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _add_or_update_service_discovery_rules_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -420,14 +378,10 @@ class AomAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaom.v2.CountEventsRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.CountEventsResponse`
         """
-        return self.count_events_with_http_info(request)
+        return self._count_events_with_http_info(request)
 
-    def count_events_with_http_info(self, request):
-        all_params = ['count_events_request_body', 'type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _count_events_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -483,14 +437,10 @@ class AomAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaom.v2.DeleteActionRuleRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.DeleteActionRuleResponse`
         """
-        return self.delete_action_rule_with_http_info(request)
+        return self._delete_action_rule_with_http_info(request)
 
-    def delete_action_rule_with_http_info(self, request):
-        all_params = ['delete_action_rule_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_action_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -544,14 +494,10 @@ class AomAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaom.v2.DeleteAlarmRuleRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.DeleteAlarmRuleResponse`
         """
-        return self.delete_alarm_rule_with_http_info(request)
+        return self._delete_alarm_rule_with_http_info(request)
 
-    def delete_alarm_rule_with_http_info(self, request):
-        all_params = ['alarm_rule_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_alarm_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -605,14 +551,10 @@ class AomAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaom.v2.DeleteAlarmRulesRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.DeleteAlarmRulesResponse`
         """
-        return self.delete_alarm_rules_with_http_info(request)
+        return self._delete_alarm_rules_with_http_info(request)
 
-    def delete_alarm_rules_with_http_info(self, request):
-        all_params = ['alarm_rules']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_alarm_rules_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -666,14 +608,10 @@ class AomAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaom.v2.DeleteEvent2alarmRuleRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.DeleteEvent2alarmRuleResponse`
         """
-        return self.delete_event2alarm_rule_with_http_info(request)
+        return self._delete_event2alarm_rule_with_http_info(request)
 
-    def delete_event2alarm_rule_with_http_info(self, request):
-        all_params = ['delete_event2alarm_rule_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_event2alarm_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -727,14 +665,10 @@ class AomAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaom.v2.DeleteMuteRulesRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.DeleteMuteRulesResponse`
         """
-        return self.delete_mute_rules_with_http_info(request)
+        return self._delete_mute_rules_with_http_info(request)
 
-    def delete_mute_rules_with_http_info(self, request):
-        all_params = ['delete_mute_rules_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_mute_rules_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -788,14 +722,10 @@ class AomAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaom.v2.DeleteserviceDiscoveryRulesRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.DeleteserviceDiscoveryRulesResponse`
         """
-        return self.deleteservice_discovery_rules_with_http_info(request)
+        return self._deleteservice_discovery_rules_with_http_info(request)
 
-    def deleteservice_discovery_rules_with_http_info(self, request):
-        all_params = ['app_rules_ids']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _deleteservice_discovery_rules_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -850,14 +780,10 @@ class AomAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaom.v2.ListActionRuleRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.ListActionRuleResponse`
         """
-        return self.list_action_rule_with_http_info(request)
+        return self._list_action_rule_with_http_info(request)
 
-    def list_action_rule_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_action_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -909,14 +835,10 @@ class AomAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaom.v2.ListAlarmRuleRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.ListAlarmRuleResponse`
         """
-        return self.list_alarm_rule_with_http_info(request)
+        return self._list_alarm_rule_with_http_info(request)
 
-    def list_alarm_rule_with_http_info(self, request):
-        all_params = ['offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_alarm_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -972,14 +894,10 @@ class AomAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaom.v2.ListEvent2alarmRuleRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.ListEvent2alarmRuleResponse`
         """
-        return self.list_event2alarm_rule_with_http_info(request)
+        return self._list_event2alarm_rule_with_http_info(request)
 
-    def list_event2alarm_rule_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_event2alarm_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1031,14 +949,10 @@ class AomAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaom.v2.ListEventsRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.ListEventsResponse`
         """
-        return self.list_events_with_http_info(request)
+        return self._list_events_with_http_info(request)
 
-    def list_events_with_http_info(self, request):
-        all_params = ['list_events_request_body', 'type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_events_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1094,14 +1008,10 @@ class AomAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaom.v2.ListLogItemsRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.ListLogItemsResponse`
         """
-        return self.list_log_items_with_http_info(request)
+        return self._list_log_items_with_http_info(request)
 
-    def list_log_items_with_http_info(self, request):
-        all_params = ['type', 'list_log_items_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_log_items_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1157,14 +1067,10 @@ class AomAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaom.v2.ListMetricItemsRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.ListMetricItemsResponse`
         """
-        return self.list_metric_items_with_http_info(request)
+        return self._list_metric_items_with_http_info(request)
 
-    def list_metric_items_with_http_info(self, request):
-        all_params = ['query_item_param', 'type', 'limit', 'start']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_metric_items_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1224,14 +1130,10 @@ class AomAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaom.v2.ListMuteRuleRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.ListMuteRuleResponse`
         """
-        return self.list_mute_rule_with_http_info(request)
+        return self._list_mute_rule_with_http_info(request)
 
-    def list_mute_rule_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_mute_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1283,14 +1185,10 @@ class AomAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaom.v2.ListNotifiedHistoriesRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.ListNotifiedHistoriesResponse`
         """
-        return self.list_notified_histories_with_http_info(request)
+        return self._list_notified_histories_with_http_info(request)
 
-    def list_notified_histories_with_http_info(self, request):
-        all_params = ['event_sn']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_notified_histories_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1344,14 +1242,10 @@ class AomAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaom.v2.ListSampleRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.ListSampleResponse`
         """
-        return self.list_sample_with_http_info(request)
+        return self._list_sample_with_http_info(request)
 
-    def list_sample_with_http_info(self, request):
-        all_params = ['list_sample_request_body', 'fill_value']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_sample_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1407,14 +1301,10 @@ class AomAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaom.v2.ListSeriesRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.ListSeriesResponse`
         """
-        return self.list_series_with_http_info(request)
+        return self._list_series_with_http_info(request)
 
-    def list_series_with_http_info(self, request):
-        all_params = ['list_series_request_body', 'limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_series_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1472,14 +1362,10 @@ class AomAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaom.v2.ListServiceDiscoveryRulesRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.ListServiceDiscoveryRulesResponse`
         """
-        return self.list_service_discovery_rules_with_http_info(request)
+        return self._list_service_discovery_rules_with_http_info(request)
 
-    def list_service_discovery_rules_with_http_info(self, request):
-        all_params = ['id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_service_discovery_rules_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1533,14 +1419,10 @@ class AomAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaom.v2.PushEventsRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.PushEventsResponse`
         """
-        return self.push_events_with_http_info(request)
+        return self._push_events_with_http_info(request)
 
-    def push_events_with_http_info(self, request):
-        all_params = ['push_events_request_body', 'x_enterprise_prject_id', 'action']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _push_events_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1598,14 +1480,10 @@ class AomAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaom.v2.ShowActionRuleRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.ShowActionRuleResponse`
         """
-        return self.show_action_rule_with_http_info(request)
+        return self._show_action_rule_with_http_info(request)
 
-    def show_action_rule_with_http_info(self, request):
-        all_params = ['rule_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_action_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1659,14 +1537,10 @@ class AomAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaom.v2.ShowAlarmRuleRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.ShowAlarmRuleResponse`
         """
-        return self.show_alarm_rule_with_http_info(request)
+        return self._show_alarm_rule_with_http_info(request)
 
-    def show_alarm_rule_with_http_info(self, request):
-        all_params = ['alarm_rule_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_alarm_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1720,14 +1594,10 @@ class AomAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaom.v2.ShowMetricsDataRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.ShowMetricsDataResponse`
         """
-        return self.show_metrics_data_with_http_info(request)
+        return self._show_metrics_data_with_http_info(request)
 
-    def show_metrics_data_with_http_info(self, request):
-        all_params = ['query_metric_data_param', 'fill_value']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_metrics_data_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1783,14 +1653,10 @@ class AomAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaom.v2.UpdateActionRuleRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.UpdateActionRuleResponse`
         """
-        return self.update_action_rule_with_http_info(request)
+        return self._update_action_rule_with_http_info(request)
 
-    def update_action_rule_with_http_info(self, request):
-        all_params = ['update_action_rule_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_action_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1844,14 +1710,10 @@ class AomAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaom.v2.UpdateAlarmRuleRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.UpdateAlarmRuleResponse`
         """
-        return self.update_alarm_rule_with_http_info(request)
+        return self._update_alarm_rule_with_http_info(request)
 
-    def update_alarm_rule_with_http_info(self, request):
-        all_params = ['update_alarm_rule_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_alarm_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1905,14 +1767,10 @@ class AomAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaom.v2.UpdateEventRuleRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.UpdateEventRuleResponse`
         """
-        return self.update_event_rule_with_http_info(request)
+        return self._update_event_rule_with_http_info(request)
 
-    def update_event_rule_with_http_info(self, request):
-        all_params = ['update_event_rule_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_event_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1966,14 +1824,10 @@ class AomAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaom.v2.UpdateMuteRuleRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.UpdateMuteRuleResponse`
         """
-        return self.update_mute_rule_with_http_info(request)
+        return self._update_mute_rule_with_http_info(request)
 
-    def update_mute_rule_with_http_info(self, request):
-        all_params = ['update_mute_rule_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_mute_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2027,14 +1881,10 @@ class AomAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaom.v2.ListInstantQueryAomPromGetRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.ListInstantQueryAomPromGetResponse`
         """
-        return self.list_instant_query_aom_prom_get_with_http_info(request)
+        return self._list_instant_query_aom_prom_get_with_http_info(request)
 
-    def list_instant_query_aom_prom_get_with_http_info(self, request):
-        all_params = ['query', 'time']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_instant_query_aom_prom_get_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2090,14 +1940,10 @@ class AomAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaom.v2.ListInstantQueryAomPromPostRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.ListInstantQueryAomPromPostResponse`
         """
-        return self.list_instant_query_aom_prom_post_with_http_info(request)
+        return self._list_instant_query_aom_prom_post_with_http_info(request)
 
-    def list_instant_query_aom_prom_post_with_http_info(self, request):
-        all_params = ['query', 'time']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_instant_query_aom_prom_post_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2153,14 +1999,10 @@ class AomAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaom.v2.ListLabelValuesAomPromGetRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.ListLabelValuesAomPromGetResponse`
         """
-        return self.list_label_values_aom_prom_get_with_http_info(request)
+        return self._list_label_values_aom_prom_get_with_http_info(request)
 
-    def list_label_values_aom_prom_get_with_http_info(self, request):
-        all_params = ['label_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_label_values_aom_prom_get_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2214,14 +2056,10 @@ class AomAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaom.v2.ListLabelsAomPromGetRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.ListLabelsAomPromGetResponse`
         """
-        return self.list_labels_aom_prom_get_with_http_info(request)
+        return self._list_labels_aom_prom_get_with_http_info(request)
 
-    def list_labels_aom_prom_get_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_labels_aom_prom_get_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2273,14 +2111,10 @@ class AomAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaom.v2.ListLabelsAomPromPostRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.ListLabelsAomPromPostResponse`
         """
-        return self.list_labels_aom_prom_post_with_http_info(request)
+        return self._list_labels_aom_prom_post_with_http_info(request)
 
-    def list_labels_aom_prom_post_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_labels_aom_prom_post_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2332,14 +2166,10 @@ class AomAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaom.v2.ListMetadataAomPromGetRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.ListMetadataAomPromGetResponse`
         """
-        return self.list_metadata_aom_prom_get_with_http_info(request)
+        return self._list_metadata_aom_prom_get_with_http_info(request)
 
-    def list_metadata_aom_prom_get_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_metadata_aom_prom_get_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2391,14 +2221,10 @@ class AomAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaom.v2.ListRangeQueryAomPromGetRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.ListRangeQueryAomPromGetResponse`
         """
-        return self.list_range_query_aom_prom_get_with_http_info(request)
+        return self._list_range_query_aom_prom_get_with_http_info(request)
 
-    def list_range_query_aom_prom_get_with_http_info(self, request):
-        all_params = ['query', 'start', 'end', 'step']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_range_query_aom_prom_get_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2458,14 +2284,10 @@ class AomAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaom.v2.ListRangeQueryAomPromPostRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.ListRangeQueryAomPromPostResponse`
         """
-        return self.list_range_query_aom_prom_post_with_http_info(request)
+        return self._list_range_query_aom_prom_post_with_http_info(request)
 
-    def list_range_query_aom_prom_post_with_http_info(self, request):
-        all_params = ['query', 'start', 'end', 'step']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_range_query_aom_prom_post_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

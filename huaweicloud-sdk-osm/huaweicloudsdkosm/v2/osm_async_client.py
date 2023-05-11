@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class OsmAsyncClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(OsmAsyncClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkosm.v2.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -54,14 +36,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.CheckHostsRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.CheckHostsResponse`
         """
-        return self.check_hosts_with_http_info(request)
+        return self._check_hosts_with_http_info(request)
 
-    def check_hosts_with_http_info(self, request):
-        all_params = ['authorization_detail_id', 'x_site', 'x_language', 'x_time_zone', 'check_hosts_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _check_hosts_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -123,14 +101,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.CheckNeedVerifyRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.CheckNeedVerifyResponse`
         """
-        return self.check_need_verify_with_http_info(request)
+        return self._check_need_verify_with_http_info(request)
 
-    def check_need_verify_with_http_info(self, request):
-        all_params = ['contact_value', 'contact_way', 'area_code', 'x_site', 'x_language', 'x_time_zone']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _check_need_verify_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -194,14 +168,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.CheckVerifyCodesRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.CheckVerifyCodesResponse`
         """
-        return self.check_verify_codes_with_http_info(request)
+        return self._check_verify_codes_with_http_info(request)
 
-    def check_verify_codes_with_http_info(self, request):
-        all_params = ['x_site', 'x_language', 'x_time_zone', 'check_verify_codes_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _check_verify_codes_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -261,14 +231,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ConfirmAuthorizationsRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ConfirmAuthorizationsResponse`
         """
-        return self.confirm_authorizations_with_http_info(request)
+        return self._confirm_authorizations_with_http_info(request)
 
-    def confirm_authorizations_with_http_info(self, request):
-        all_params = ['authorization_id', 'x_site', 'x_language', 'x_time_zone', 'confirm_authorizations_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _confirm_authorizations_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -330,14 +296,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.CreateAskQuestionRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.CreateAskQuestionResponse`
         """
-        return self.create_ask_question_with_http_info(request)
+        return self._create_ask_question_with_http_info(request)
 
-    def create_ask_question_with_http_info(self, request):
-        all_params = ['x_service_key', 'x_site', 'x_language', 'create_ask_question_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_ask_question_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -397,14 +359,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.CreateAuthorizationRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.CreateAuthorizationResponse`
         """
-        return self.create_authorization_with_http_info(request)
+        return self._create_authorization_with_http_info(request)
 
-    def create_authorization_with_http_info(self, request):
-        all_params = ['case_id', 'create_authorization_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_authorization_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -460,14 +418,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.CreateCaseExtendsParamRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.CreateCaseExtendsParamResponse`
         """
-        return self.create_case_extends_param_with_http_info(request)
+        return self._create_case_extends_param_with_http_info(request)
 
-    def create_case_extends_param_with_http_info(self, request):
-        all_params = ['case_id', 'create_case_extends_param_request_body', 'x_site', 'x_language', 'x_time_zone']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_case_extends_param_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -529,14 +483,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.CreateCaseLabelsRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.CreateCaseLabelsResponse`
         """
-        return self.create_case_labels_with_http_info(request)
+        return self._create_case_labels_with_http_info(request)
 
-    def create_case_labels_with_http_info(self, request):
-        all_params = ['case_id', 'label_ids', 'x_site', 'x_language', 'x_time_zone']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_case_labels_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -599,14 +549,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.CreateCasesRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.CreateCasesResponse`
         """
-        return self.create_cases_with_http_info(request)
+        return self._create_cases_with_http_info(request)
 
-    def create_cases_with_http_info(self, request):
-        all_params = ['x_site', 'x_language', 'x_time_zone', 'x_phone_verifiedid', 'x_email_verifiedid', 'create_cases_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_cases_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -670,14 +616,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.CreateDiagnoseFeedbackRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.CreateDiagnoseFeedbackResponse`
         """
-        return self.create_diagnose_feedback_with_http_info(request)
+        return self._create_diagnose_feedback_with_http_info(request)
 
-    def create_diagnose_feedback_with_http_info(self, request):
-        all_params = ['create_diagnose_feedback_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_diagnose_feedback_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -731,14 +673,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.CreateDiagnoseJobRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.CreateDiagnoseJobResponse`
         """
-        return self.create_diagnose_job_with_http_info(request)
+        return self._create_diagnose_job_with_http_info(request)
 
-    def create_diagnose_job_with_http_info(self, request):
-        all_params = ['create_diagnose_job_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_diagnose_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -792,14 +730,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.CreateEvaluateRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.CreateEvaluateResponse`
         """
-        return self.create_evaluate_with_http_info(request)
+        return self._create_evaluate_with_http_info(request)
 
-    def create_evaluate_with_http_info(self, request):
-        all_params = ['x_service_key', 'session_id', 'request_id', 'x_site', 'x_language', 'create_evaluate_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_evaluate_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -863,14 +797,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.CreateFeedbackRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.CreateFeedbackResponse`
         """
-        return self.create_feedback_with_http_info(request)
+        return self._create_feedback_with_http_info(request)
 
-    def create_feedback_with_http_info(self, request):
-        all_params = ['create_feedback_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_feedback_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -924,14 +854,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.CreateLabelsRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.CreateLabelsResponse`
         """
-        return self.create_labels_with_http_info(request)
+        return self._create_labels_with_http_info(request)
 
-    def create_labels_with_http_info(self, request):
-        all_params = ['create_labels_request_body', 'x_site', 'x_language', 'x_time_zone']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_labels_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -991,14 +917,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.CreateMessagesRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.CreateMessagesResponse`
         """
-        return self.create_messages_with_http_info(request)
+        return self._create_messages_with_http_info(request)
 
-    def create_messages_with_http_info(self, request):
-        all_params = ['case_id', 'x_site', 'x_language', 'x_time_zone', 'create_messages_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_messages_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1060,14 +982,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.CreatePrivilegesRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.CreatePrivilegesResponse`
         """
-        return self.create_privileges_with_http_info(request)
+        return self._create_privileges_with_http_info(request)
 
-    def create_privileges_with_http_info(self, request):
-        all_params = ['x_site', 'x_language', 'x_time_zone', 'create_privileges_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_privileges_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1127,14 +1045,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.CreateQaAskRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.CreateQaAskResponse`
         """
-        return self.create_qa_ask_with_http_info(request)
+        return self._create_qa_ask_with_http_info(request)
 
-    def create_qa_ask_with_http_info(self, request):
-        all_params = ['x_service_key', 'x_site', 'x_language', 'create_qa_ask_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_qa_ask_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1194,14 +1108,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.CreateQaFeedbacksRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.CreateQaFeedbacksResponse`
         """
-        return self.create_qa_feedbacks_with_http_info(request)
+        return self._create_qa_feedbacks_with_http_info(request)
 
-    def create_qa_feedbacks_with_http_info(self, request):
-        all_params = ['feedback_type', 'x_service_key', 'x_site', 'x_language', 'create_qa_feedbacks_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_qa_feedbacks_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1263,14 +1173,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.CreateQuestionInSessionRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.CreateQuestionInSessionResponse`
         """
-        return self.create_question_in_session_with_http_info(request)
+        return self._create_question_in_session_with_http_info(request)
 
-    def create_question_in_session_with_http_info(self, request):
-        all_params = ['x_service_key', 'session_id', 'x_site', 'x_language', 'create_question_in_session_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_question_in_session_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1332,14 +1238,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.CreateRelationsRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.CreateRelationsResponse`
         """
-        return self.create_relations_with_http_info(request)
+        return self._create_relations_with_http_info(request)
 
-    def create_relations_with_http_info(self, request):
-        all_params = ['case_id', 'create_relations_request_body', 'x_site', 'x_language', 'x_time_zone']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_relations_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1401,14 +1303,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.CreateScoresRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.CreateScoresResponse`
         """
-        return self.create_scores_with_http_info(request)
+        return self._create_scores_with_http_info(request)
 
-    def create_scores_with_http_info(self, request):
-        all_params = ['case_id', 'x_site', 'x_language', 'x_time_zone', 'create_scores_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_scores_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1470,14 +1368,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.CreateSessionRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.CreateSessionResponse`
         """
-        return self.create_session_with_http_info(request)
+        return self._create_session_with_http_info(request)
 
-    def create_session_with_http_info(self, request):
-        all_params = ['x_service_key', 'x_site', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_session_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1535,14 +1429,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.DeleteAccessoriesRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.DeleteAccessoriesResponse`
         """
-        return self.delete_accessories_with_http_info(request)
+        return self._delete_accessories_with_http_info(request)
 
-    def delete_accessories_with_http_info(self, request):
-        all_params = ['accessory_id', 'x_site', 'x_language', 'x_time_zone']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_accessories_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1602,14 +1492,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.DeleteCaseLabelsRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.DeleteCaseLabelsResponse`
         """
-        return self.delete_case_labels_with_http_info(request)
+        return self._delete_case_labels_with_http_info(request)
 
-    def delete_case_labels_with_http_info(self, request):
-        all_params = ['case_id', 'label_ids', 'x_site', 'x_language', 'x_time_zone']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_case_labels_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1672,14 +1558,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.DeleteLabelsRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.DeleteLabelsResponse`
         """
-        return self.delete_labels_with_http_info(request)
+        return self._delete_labels_with_http_info(request)
 
-    def delete_labels_with_http_info(self, request):
-        all_params = ['label_id', 'x_site', 'x_language', 'x_time_zone']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_labels_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1739,14 +1621,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.DeleteRelationRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.DeleteRelationResponse`
         """
-        return self.delete_relation_with_http_info(request)
+        return self._delete_relation_with_http_info(request)
 
-    def delete_relation_with_http_info(self, request):
-        all_params = ['case_id', 'delete_relation_request_body', 'x_site', 'x_language', 'x_time_zone']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_relation_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1808,14 +1686,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.DownloadAccessoriesRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.DownloadAccessoriesResponse`
         """
-        return self.download_accessories_with_http_info(request)
+        return self._download_accessories_with_http_info(request)
 
-    def download_accessories_with_http_info(self, request):
-        all_params = ['accessory_id', 'group_id', 'x_site', 'x_language', 'x_time_zone']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _download_accessories_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1877,14 +1751,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.DownloadCasesRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.DownloadCasesResponse`
         """
-        return self.download_cases_with_http_info(request)
+        return self._download_cases_with_http_info(request)
 
-    def download_cases_with_http_info(self, request):
-        all_params = ['language', 'timezone', 'incident_id', 'query_start_time', 'query_end_time', 'x_customer_name', 'search_key', 'status', 'customer_id', 'tenant_source_id_list', 'sub_customer_id', 'offset', 'limit', 'x_site', 'x_language', 'x_time_zone']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _download_cases_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1969,14 +1839,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.DownloadImagesRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.DownloadImagesResponse`
         """
-        return self.download_images_with_http_info(request)
+        return self._download_images_with_http_info(request)
 
-    def download_images_with_http_info(self, request):
-        all_params = ['accessory_id', 'group_id', 'x_site', 'x_language', 'x_time_zone']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _download_images_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2038,14 +1904,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ListAccessoryAccessUrlsRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListAccessoryAccessUrlsResponse`
         """
-        return self.list_accessory_access_urls_with_http_info(request)
+        return self._list_accessory_access_urls_with_http_info(request)
 
-    def list_accessory_access_urls_with_http_info(self, request):
-        all_params = ['group_id', 'accessory_ids', 'x_site', 'x_language', 'x_time_zone']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_accessory_access_urls_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2108,14 +1970,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ListAgenciesRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListAgenciesResponse`
         """
-        return self.list_agencies_with_http_info(request)
+        return self._list_agencies_with_http_info(request)
 
-    def list_agencies_with_http_info(self, request):
-        all_params = ['x_site', 'x_language', 'x_time_zone']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_agencies_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2173,14 +2031,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ListAreaCodesRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListAreaCodesResponse`
         """
-        return self.list_area_codes_with_http_info(request)
+        return self._list_area_codes_with_http_info(request)
 
-    def list_area_codes_with_http_info(self, request):
-        all_params = ['x_site', 'x_language', 'x_time_zone']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_area_codes_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2238,14 +2092,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ListArticlesRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListArticlesResponse`
         """
-        return self.list_articles_with_http_info(request)
+        return self._list_articles_with_http_info(request)
 
-    def list_articles_with_http_info(self, request):
-        all_params = ['search_type', 'x_service_key', 'x_site', 'x_language', 'list_articles_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_articles_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2307,14 +2157,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ListAuthorizationsRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListAuthorizationsResponse`
         """
-        return self.list_authorizations_with_http_info(request)
+        return self._list_authorizations_with_http_info(request)
 
-    def list_authorizations_with_http_info(self, request):
-        all_params = ['sub_customer_name', 'incident_id', 'status', 'simple_description', 'offset', 'limit', 'group_id', 'x_site', 'x_language', 'x_time_zone']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_authorizations_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2386,14 +2232,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ListCaseCategoriesRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListCaseCategoriesResponse`
         """
-        return self.list_case_categories_with_http_info(request)
+        return self._list_case_categories_with_http_info(request)
 
-    def list_case_categories_with_http_info(self, request):
-        all_params = ['x_site', 'x_language', 'x_time_zone']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_case_categories_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2451,14 +2293,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ListCaseCcEmailsRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListCaseCcEmailsResponse`
         """
-        return self.list_case_cc_emails_with_http_info(request)
+        return self._list_case_cc_emails_with_http_info(request)
 
-    def list_case_cc_emails_with_http_info(self, request):
-        all_params = ['x_site', 'x_language', 'x_time_zone']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_case_cc_emails_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2516,14 +2354,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ListCaseCountsRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListCaseCountsResponse`
         """
-        return self.list_case_counts_with_http_info(request)
+        return self._list_case_counts_with_http_info(request)
 
-    def list_case_counts_with_http_info(self, request):
-        all_params = ['status', 'x_site', 'x_language', 'x_time_zone']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_case_counts_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2583,14 +2417,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ListCaseLabelsRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListCaseLabelsResponse`
         """
-        return self.list_case_labels_with_http_info(request)
+        return self._list_case_labels_with_http_info(request)
 
-    def list_case_labels_with_http_info(self, request):
-        all_params = ['case_id', 'x_site', 'x_language', 'x_time_zone']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_case_labels_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2650,14 +2480,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ListCaseLimitsRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListCaseLimitsResponse`
         """
-        return self.list_case_limits_with_http_info(request)
+        return self._list_case_limits_with_http_info(request)
 
-    def list_case_limits_with_http_info(self, request):
-        all_params = ['x_site', 'x_language', 'x_time_zone']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_case_limits_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2715,14 +2541,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ListCaseOperateLogsRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListCaseOperateLogsResponse`
         """
-        return self.list_case_operate_logs_with_http_info(request)
+        return self._list_case_operate_logs_with_http_info(request)
 
-    def list_case_operate_logs_with_http_info(self, request):
-        all_params = ['case_id', 'group_id', 'offset', 'limit', 'x_site', 'x_language', 'x_time_zone']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_case_operate_logs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2788,14 +2610,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ListCaseQuotasRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListCaseQuotasResponse`
         """
-        return self.list_case_quotas_with_http_info(request)
+        return self._list_case_quotas_with_http_info(request)
 
-    def list_case_quotas_with_http_info(self, request):
-        all_params = ['business_type_id', 'product_category_id', 'x_site', 'x_language', 'x_time_zone']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_case_quotas_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2857,14 +2675,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ListCaseTemplatesRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListCaseTemplatesResponse`
         """
-        return self.list_case_templates_with_http_info(request)
+        return self._list_case_templates_with_http_info(request)
 
-    def list_case_templates_with_http_info(self, request):
-        all_params = ['business_type_id', 'x_site', 'x_language', 'x_time_zone']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_case_templates_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2924,14 +2738,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ListCasesRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListCasesResponse`
         """
-        return self.list_cases_with_http_info(request)
+        return self._list_cases_with_http_info(request)
 
-    def list_cases_with_http_info(self, request):
-        all_params = ['search_key', 'label_id_list', 'app_key', 'incident_id', 'query_start_time', 'query_end_time', 'status', 'incident_status', 'x_customer_id', 'x_customer_name', 'group_id', 'offset', 'limit', 'x_site', 'x_language', 'x_time_zone']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_cases_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3017,14 +2827,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ListCustomersRegionsRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListCustomersRegionsResponse`
         """
-        return self.list_customers_regions_with_http_info(request)
+        return self._list_customers_regions_with_http_info(request)
 
-    def list_customers_regions_with_http_info(self, request):
-        all_params = ['x_site', 'x_language', 'x_time_zone']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_customers_regions_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3082,14 +2888,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ListDiagnoseItemsRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListDiagnoseItemsResponse`
         """
-        return self.list_diagnose_items_with_http_info(request)
+        return self._list_diagnose_items_with_http_info(request)
 
-    def list_diagnose_items_with_http_info(self, request):
-        all_params = ['list_diagnose_items_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_diagnose_items_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3143,14 +2945,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ListDiagnoseJobRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListDiagnoseJobResponse`
         """
-        return self.list_diagnose_job_with_http_info(request)
+        return self._list_diagnose_job_with_http_info(request)
 
-    def list_diagnose_job_with_http_info(self, request):
-        all_params = ['job_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_diagnose_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3204,14 +3002,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ListDiagnoseRecordsRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListDiagnoseRecordsResponse`
         """
-        return self.list_diagnose_records_with_http_info(request)
+        return self._list_diagnose_records_with_http_info(request)
 
-    def list_diagnose_records_with_http_info(self, request):
-        all_params = ['page_size', 'page_no', 'type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_diagnose_records_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3269,14 +3063,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ListDiagnoseResourcesRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListDiagnoseResourcesResponse`
         """
-        return self.list_diagnose_resources_with_http_info(request)
+        return self._list_diagnose_resources_with_http_info(request)
 
-    def list_diagnose_resources_with_http_info(self, request):
-        all_params = ['list_diagnose_resources_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_diagnose_resources_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3330,14 +3120,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ListExtendsParamsRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListExtendsParamsResponse`
         """
-        return self.list_extends_params_with_http_info(request)
+        return self._list_extends_params_with_http_info(request)
 
-    def list_extends_params_with_http_info(self, request):
-        all_params = ['business_type_id', 'incident_sub_type_id', 'product_category_id', 'x_site', 'x_language', 'x_time_zone']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_extends_params_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3401,14 +3187,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ListFeedbackOptionRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListFeedbackOptionResponse`
         """
-        return self.list_feedback_option_with_http_info(request)
+        return self._list_feedback_option_with_http_info(request)
 
-    def list_feedback_option_with_http_info(self, request):
-        all_params = ['status', 'x_service_key', 'x_site', 'x_language', 'feedback_source']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_feedback_option_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3470,14 +3252,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ListHasVerifiedContactsRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListHasVerifiedContactsResponse`
         """
-        return self.list_has_verified_contacts_with_http_info(request)
+        return self._list_has_verified_contacts_with_http_info(request)
 
-    def list_has_verified_contacts_with_http_info(self, request):
-        all_params = ['contact_way', 'customer_id', 'sub_customer_id', 'expired_time', 'verified_id', 'contact_value', 'area_code', 'offset', 'limit', 'x_site', 'x_language', 'x_time_zone']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_has_verified_contacts_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3553,14 +3331,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ListHistoryOperateLogsRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListHistoryOperateLogsResponse`
         """
-        return self.list_history_operate_logs_with_http_info(request)
+        return self._list_history_operate_logs_with_http_info(request)
 
-    def list_history_operate_logs_with_http_info(self, request):
-        all_params = ['authorization_id', 'authorization_detail_id', 'session_id', 'group_id', 'sort', 'offset', 'limit', 'x_site', 'x_language', 'x_time_zone']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_history_operate_logs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3632,14 +3406,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ListHistorySessionsRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListHistorySessionsResponse`
         """
-        return self.list_history_sessions_with_http_info(request)
+        return self._list_history_sessions_with_http_info(request)
 
-    def list_history_sessions_with_http_info(self, request):
-        all_params = ['authorization_id', 'authorization_detail_id', 'group_id', 'offset', 'limit', 'x_site', 'x_language', 'x_time_zone']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_history_sessions_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3707,14 +3477,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ListLabelsRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListLabelsResponse`
         """
-        return self.list_labels_with_http_info(request)
+        return self._list_labels_with_http_info(request)
 
-    def list_labels_with_http_info(self, request):
-        all_params = ['offset', 'limit', 'name', 'label_id', 'x_site', 'x_language', 'x_time_zone']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_labels_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3780,14 +3546,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ListMessagesRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListMessagesResponse`
         """
-        return self.list_messages_with_http_info(request)
+        return self._list_messages_with_http_info(request)
 
-    def list_messages_with_http_info(self, request):
-        all_params = ['case_id', 'group_id', 'offset', 'limit', 'x_site', 'x_language', 'x_time_zone']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_messages_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3853,14 +3615,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ListMoreInstantMessagesRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListMoreInstantMessagesResponse`
         """
-        return self.list_more_instant_messages_with_http_info(request)
+        return self._list_more_instant_messages_with_http_info(request)
 
-    def list_more_instant_messages_with_http_info(self, request):
-        all_params = ['case_id', 'create_time', 'type', 'limit', 'group_id', 'x_site', 'x_language', 'x_time_zone']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_more_instant_messages_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3928,14 +3686,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ListNewInstantMessagesRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListNewInstantMessagesResponse`
         """
-        return self.list_new_instant_messages_with_http_info(request)
+        return self._list_new_instant_messages_with_http_info(request)
 
-    def list_new_instant_messages_with_http_info(self, request):
-        all_params = ['case_ids', 'last_message_time_id', 'group_id', 'x_site', 'x_language', 'x_time_zone']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_new_instant_messages_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4000,14 +3754,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ListNoticesRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListNoticesResponse`
         """
-        return self.list_notices_with_http_info(request)
+        return self._list_notices_with_http_info(request)
 
-    def list_notices_with_http_info(self, request):
-        all_params = ['x_service_key', 'x_site', 'x_language', 'list_notices_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_notices_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4067,14 +3817,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ListOrderIncidentRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListOrderIncidentResponse`
         """
-        return self.list_order_incident_with_http_info(request)
+        return self._list_order_incident_with_http_info(request)
 
-    def list_order_incident_with_http_info(self, request):
-        all_params = ['version', 'search_key', 'label_id_list', 'app_key', 'incident_id', 'query_start_time', 'query_end_time', 'status', 'incident_status', 'x_customer_name', 'group_id', 'product_category_id', 'business_type_id', 'page_no', 'page_size', 'xcustomer_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_order_incident_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4115,14 +3861,14 @@ class OsmAsyncClient(Client):
             query_params.append(('pageNo', local_var_params['page_no']))
         if 'page_size' in local_var_params:
             query_params.append(('pageSize', local_var_params['page_size']))
+        if 'x_customer_id' in local_var_params:
+            query_params.append(('xCustomerId', local_var_params['x_customer_id']))
 
         header_params = {}
 
         form_params = {}
 
         body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
@@ -4160,14 +3906,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ListPrivilegesRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListPrivilegesResponse`
         """
-        return self.list_privileges_with_http_info(request)
+        return self._list_privileges_with_http_info(request)
 
-    def list_privileges_with_http_info(self, request):
-        all_params = ['privilege', 'x_site', 'x_language', 'x_time_zone']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_privileges_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4227,14 +3969,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ListProblemTypesRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListProblemTypesResponse`
         """
-        return self.list_problem_types_with_http_info(request)
+        return self._list_problem_types_with_http_info(request)
 
-    def list_problem_types_with_http_info(self, request):
-        all_params = ['product_category_id', 'x_site', 'x_language', 'x_time_zone']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_problem_types_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4294,14 +4032,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ListProductCategoriesRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListProductCategoriesResponse`
         """
-        return self.list_product_categories_with_http_info(request)
+        return self._list_product_categories_with_http_info(request)
 
-    def list_product_categories_with_http_info(self, request):
-        all_params = ['product_category_name', 'x_site', 'x_language', 'x_time_zone']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_product_categories_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4361,14 +4095,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ListRecommendWordsRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListRecommendWordsResponse`
         """
-        return self.list_recommend_words_with_http_info(request)
+        return self._list_recommend_words_with_http_info(request)
 
-    def list_recommend_words_with_http_info(self, request):
-        all_params = ['x_service_key', 'x_site', 'x_language', 'recommend_word_id', 'level_value', 'theme_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_recommend_words_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4432,14 +4162,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ListRegionsRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListRegionsResponse`
         """
-        return self.list_regions_with_http_info(request)
+        return self._list_regions_with_http_info(request)
 
-    def list_regions_with_http_info(self, request):
-        all_params = ['x_site', 'x_language', 'x_time_zone']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_regions_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4497,14 +4223,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ListRelationRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListRelationResponse`
         """
-        return self.list_relation_with_http_info(request)
+        return self._list_relation_with_http_info(request)
 
-    def list_relation_with_http_info(self, request):
-        all_params = ['case_id', 'x_site', 'x_language', 'x_time_zone']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_relation_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4564,14 +4286,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ListSatisfactionDimensionsRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListSatisfactionDimensionsResponse`
         """
-        return self.list_satisfaction_dimensions_with_http_info(request)
+        return self._list_satisfaction_dimensions_with_http_info(request)
 
-    def list_satisfaction_dimensions_with_http_info(self, request):
-        all_params = ['x_site', 'x_language', 'x_time_zone']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_satisfaction_dimensions_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4629,14 +4347,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ListSeveritiesRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListSeveritiesResponse`
         """
-        return self.list_severities_with_http_info(request)
+        return self._list_severities_with_http_info(request)
 
-    def list_severities_with_http_info(self, request):
-        all_params = ['product_category_id', 'business_type_id', 'x_site', 'x_language', 'x_time_zone']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_severities_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4698,14 +4412,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ListSubCustomersRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListSubCustomersResponse`
         """
-        return self.list_sub_customers_with_http_info(request)
+        return self._list_sub_customers_with_http_info(request)
 
-    def list_sub_customers_with_http_info(self, request):
-        all_params = ['sub_customer_name', 'sub_customer_id', 'x_site', 'x_language', 'x_time_zone']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_sub_customers_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4767,14 +4477,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ListToolsRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListToolsResponse`
         """
-        return self.list_tools_with_http_info(request)
+        return self._list_tools_with_http_info(request)
 
-    def list_tools_with_http_info(self, request):
-        all_params = ['x_service_key', 'x_site', 'x_language', 'list_tools_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_tools_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4834,14 +4540,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ListTransportHistoriesRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListTransportHistoriesResponse`
         """
-        return self.list_transport_histories_with_http_info(request)
+        return self._list_transport_histories_with_http_info(request)
 
-    def list_transport_histories_with_http_info(self, request):
-        all_params = ['authorization_id', 'authorization_detail_id', 'session_id', 'group_id', 'sort', 'offset', 'limit', 'x_site', 'x_language', 'x_time_zone']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_transport_histories_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4913,14 +4615,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ListUnreadNewInstantMessagesRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListUnreadNewInstantMessagesResponse`
         """
-        return self.list_unread_new_instant_messages_with_http_info(request)
+        return self._list_unread_new_instant_messages_with_http_info(request)
 
-    def list_unread_new_instant_messages_with_http_info(self, request):
-        all_params = ['case_ids', 'group_id', 'x_site', 'x_language', 'x_time_zone']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_unread_new_instant_messages_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4983,14 +4681,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.RevokeMessageRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.RevokeMessageResponse`
         """
-        return self.revoke_message_with_http_info(request)
+        return self._revoke_message_with_http_info(request)
 
-    def revoke_message_with_http_info(self, request):
-        all_params = ['case_id', 'message_id', 'x_site', 'x_language', 'x_time_zone']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _revoke_message_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5052,14 +4746,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.SendVerifyCodesRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.SendVerifyCodesResponse`
         """
-        return self.send_verify_codes_with_http_info(request)
+        return self._send_verify_codes_with_http_info(request)
 
-    def send_verify_codes_with_http_info(self, request):
-        all_params = ['x_site', 'x_language', 'x_time_zone', 'send_verify_codes_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _send_verify_codes_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5119,14 +4809,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ShowAccessoryLimitsRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ShowAccessoryLimitsResponse`
         """
-        return self.show_accessory_limits_with_http_info(request)
+        return self._show_accessory_limits_with_http_info(request)
 
-    def show_accessory_limits_with_http_info(self, request):
-        all_params = ['x_site', 'x_language', 'x_time_zone']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_accessory_limits_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5184,14 +4870,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ShowAssociatedQuestionsRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ShowAssociatedQuestionsResponse`
         """
-        return self.show_associated_questions_with_http_info(request)
+        return self._show_associated_questions_with_http_info(request)
 
-    def show_associated_questions_with_http_info(self, request):
-        all_params = ['x_service_key', 'x_site', 'x_language', 'show_associated_questions_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_associated_questions_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5251,14 +4933,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ShowAuthorizationDetailRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ShowAuthorizationDetailResponse`
         """
-        return self.show_authorization_detail_with_http_info(request)
+        return self._show_authorization_detail_with_http_info(request)
 
-    def show_authorization_detail_with_http_info(self, request):
-        all_params = ['authorization_id', 'group_id', 'x_site', 'x_language', 'x_time_zone']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_authorization_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5320,14 +4998,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ShowCaseDetailRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ShowCaseDetailResponse`
         """
-        return self.show_case_detail_with_http_info(request)
+        return self._show_case_detail_with_http_info(request)
 
-    def show_case_detail_with_http_info(self, request):
-        all_params = ['case_id', 'group_id', 'x_site', 'x_language', 'x_time_zone']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_case_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5389,14 +5063,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ShowCaseExtendsParamRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ShowCaseExtendsParamResponse`
         """
-        return self.show_case_extends_param_with_http_info(request)
+        return self._show_case_extends_param_with_http_info(request)
 
-    def show_case_extends_param_with_http_info(self, request):
-        all_params = ['group_id', 'case_id', 'x_site', 'x_language', 'x_time_zone']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_case_extends_param_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5458,14 +5128,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ShowCaseStatusRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ShowCaseStatusResponse`
         """
-        return self.show_case_status_with_http_info(request)
+        return self._show_case_status_with_http_info(request)
 
-    def show_case_status_with_http_info(self, request):
-        all_params = ['case_id', 'x_site', 'x_language', 'x_time_zone']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_case_status_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5525,14 +5191,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ShowConfigurationRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ShowConfigurationResponse`
         """
-        return self.show_configuration_with_http_info(request)
+        return self._show_configuration_with_http_info(request)
 
-    def show_configuration_with_http_info(self, request):
-        all_params = ['config_key']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_configuration_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5586,14 +5248,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ShowCustomerPrivilegePolicyRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ShowCustomerPrivilegePolicyResponse`
         """
-        return self.show_customer_privilege_policy_with_http_info(request)
+        return self._show_customer_privilege_policy_with_http_info(request)
 
-    def show_customer_privilege_policy_with_http_info(self, request):
-        all_params = ['x_site', 'x_language', 'x_time_zone']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_customer_privilege_policy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5651,14 +5309,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ShowDownloadAccessoryUrlRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ShowDownloadAccessoryUrlResponse`
         """
-        return self.show_download_accessory_url_with_http_info(request)
+        return self._show_download_accessory_url_with_http_info(request)
 
-    def show_download_accessory_url_with_http_info(self, request):
-        all_params = ['accessory_id', 'relation_type', 'relation_id', 'incident_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_download_accessory_url_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5718,14 +5372,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ShowLatestPublishedAgreementRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ShowLatestPublishedAgreementResponse`
         """
-        return self.show_latest_published_agreement_with_http_info(request)
+        return self._show_latest_published_agreement_with_http_info(request)
 
-    def show_latest_published_agreement_with_http_info(self, request):
-        all_params = ['agreement_type', 'x_site', 'x_language', 'x_time_zone']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_latest_published_agreement_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5785,14 +5435,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ShowPartnersCasesPrivilegeRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ShowPartnersCasesPrivilegeResponse`
         """
-        return self.show_partners_cases_privilege_with_http_info(request)
+        return self._show_partners_cases_privilege_with_http_info(request)
 
-    def show_partners_cases_privilege_with_http_info(self, request):
-        all_params = ['x_site', 'x_language', 'x_time_zone']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_partners_cases_privilege_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5850,14 +5496,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ShowPartnersServiceInfoRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ShowPartnersServiceInfoResponse`
         """
-        return self.show_partners_service_info_with_http_info(request)
+        return self._show_partners_service_info_with_http_info(request)
 
-    def show_partners_service_info_with_http_info(self, request):
-        all_params = ['case_sub_type_id', 'product_id', 'x_site', 'x_language', 'x_time_zone']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_partners_service_info_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5919,14 +5561,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ShowQaPairDetailRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ShowQaPairDetailResponse`
         """
-        return self.show_qa_pair_detail_with_http_info(request)
+        return self._show_qa_pair_detail_with_http_info(request)
 
-    def show_qa_pair_detail_with_http_info(self, request):
-        all_params = ['x_service_key', 'qa_pair_id', 'x_site', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_qa_pair_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5986,14 +5624,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ShowQaPairsRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ShowQaPairsResponse`
         """
-        return self.show_qa_pairs_with_http_info(request)
+        return self._show_qa_pairs_with_http_info(request)
 
-    def show_qa_pairs_with_http_info(self, request):
-        all_params = ['x_service_key', 'search_type', 'x_site', 'x_language', 'show_qa_pairs_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_qa_pairs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6055,14 +5689,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ShowSignedLatestPublishedAgreementRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ShowSignedLatestPublishedAgreementResponse`
         """
-        return self.show_signed_latest_published_agreement_with_http_info(request)
+        return self._show_signed_latest_published_agreement_with_http_info(request)
 
-    def show_signed_latest_published_agreement_with_http_info(self, request):
-        all_params = ['agreement_type', 'x_site', 'x_language', 'x_time_zone']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_signed_latest_published_agreement_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6122,14 +5752,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ShowThemeRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ShowThemeResponse`
         """
-        return self.show_theme_with_http_info(request)
+        return self._show_theme_with_http_info(request)
 
-    def show_theme_with_http_info(self, request):
-        all_params = ['x_service_key', 'x_site', 'x_language', 'product_type_id', 'product_type_name', 'product_type_short_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_theme_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6193,14 +5819,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.SignPublishedAgreementRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.SignPublishedAgreementResponse`
         """
-        return self.sign_published_agreement_with_http_info(request)
+        return self._sign_published_agreement_with_http_info(request)
 
-    def sign_published_agreement_with_http_info(self, request):
-        all_params = ['id', 'x_site', 'x_language', 'x_time_zone', 'sign_published_agreement_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _sign_published_agreement_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6262,14 +5884,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.UpdateAuthorizationsRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.UpdateAuthorizationsResponse`
         """
-        return self.update_authorizations_with_http_info(request)
+        return self._update_authorizations_with_http_info(request)
 
-    def update_authorizations_with_http_info(self, request):
-        all_params = ['authorization_id', 'action_id', 'x_site', 'x_language', 'x_time_zone', 'update_authorizations_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_authorizations_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6333,14 +5951,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.UpdateCaseContactInfoRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.UpdateCaseContactInfoResponse`
         """
-        return self.update_case_contact_info_with_http_info(request)
+        return self._update_case_contact_info_with_http_info(request)
 
-    def update_case_contact_info_with_http_info(self, request):
-        all_params = ['case_id', 'update_case_contact_info_request_body', 'x_site', 'x_language', 'x_time_zone']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_case_contact_info_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6402,14 +6016,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.UpdateCasesRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.UpdateCasesResponse`
         """
-        return self.update_cases_with_http_info(request)
+        return self._update_cases_with_http_info(request)
 
-    def update_cases_with_http_info(self, request):
-        all_params = ['case_id', 'action_id', 'x_site', 'x_language', 'x_time_zone', 'update_cases_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_cases_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6473,14 +6083,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.UpdateLabelsRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.UpdateLabelsResponse`
         """
-        return self.update_labels_with_http_info(request)
+        return self._update_labels_with_http_info(request)
 
-    def update_labels_with_http_info(self, request):
-        all_params = ['label_id', 'update_labels_request_body', 'x_site', 'x_language', 'x_time_zone']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_labels_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6542,14 +6148,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.UpdateNewInstantMessagesReadRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.UpdateNewInstantMessagesReadResponse`
         """
-        return self.update_new_instant_messages_read_with_http_info(request)
+        return self._update_new_instant_messages_read_with_http_info(request)
 
-    def update_new_instant_messages_read_with_http_info(self, request):
-        all_params = ['case_id', 'x_site', 'x_language', 'x_time_zone', 'update_new_instant_messages_read_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_new_instant_messages_read_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6611,14 +6213,10 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.UploadJsonAccessoriesRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.UploadJsonAccessoriesResponse`
         """
-        return self.upload_json_accessories_with_http_info(request)
+        return self._upload_json_accessories_with_http_info(request)
 
-    def upload_json_accessories_with_http_info(self, request):
-        all_params = ['x_site', 'x_language', 'x_time_zone', 'upload_json_accessories_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _upload_json_accessories_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

@@ -1,9 +1,6 @@
 # coding: utf-8
 
-import re
 import six
-
-
 
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
@@ -20,28 +17,57 @@ class ListSystemTasksRequest:
     sensitive_list = []
 
     openapi_types = {
+        'workspace': 'str',
         'task_id': 'str'
     }
 
     attribute_map = {
+        'workspace': 'workspace',
         'task_id': 'task_id'
     }
 
-    def __init__(self, task_id=None):
+    def __init__(self, workspace=None, task_id=None):
         """ListSystemTasksRequest
 
         The model defined in huaweicloud sdk
 
+        :param workspace: 工作空间id
+        :type workspace: str
         :param task_id: 系统任务id.
         :type task_id: str
         """
         
         
 
+        self._workspace = None
         self._task_id = None
         self.discriminator = None
 
+        if workspace is not None:
+            self.workspace = workspace
         self.task_id = task_id
+
+    @property
+    def workspace(self):
+        """Gets the workspace of this ListSystemTasksRequest.
+
+        工作空间id
+
+        :return: The workspace of this ListSystemTasksRequest.
+        :rtype: str
+        """
+        return self._workspace
+
+    @workspace.setter
+    def workspace(self, workspace):
+        """Sets the workspace of this ListSystemTasksRequest.
+
+        工作空间id
+
+        :param workspace: The workspace of this ListSystemTasksRequest.
+        :type workspace: str
+        """
+        self._workspace = workspace
 
     @property
     def task_id(self):

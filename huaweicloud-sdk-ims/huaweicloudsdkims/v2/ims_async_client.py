@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class ImsAsyncClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(ImsAsyncClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkims.v2.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -54,14 +36,10 @@ class ImsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.AddImageTagRequest`
         :rtype: :class:`huaweicloudsdkims.v2.AddImageTagResponse`
         """
-        return self.add_image_tag_with_http_info(request)
+        return self._add_image_tag_with_http_info(request)
 
-    def add_image_tag_with_http_info(self, request):
-        all_params = ['image_id', 'bodyparam']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _add_image_tag_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -118,14 +96,10 @@ class ImsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.BatchAddMembersRequest`
         :rtype: :class:`huaweicloudsdkims.v2.BatchAddMembersResponse`
         """
-        return self.batch_add_members_with_http_info(request)
+        return self._batch_add_members_with_http_info(request)
 
-    def batch_add_members_with_http_info(self, request):
-        all_params = ['members']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_add_members_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -179,14 +153,10 @@ class ImsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.BatchAddOrDeleteTagsRequest`
         :rtype: :class:`huaweicloudsdkims.v2.BatchAddOrDeleteTagsResponse`
         """
-        return self.batch_add_or_delete_tags_with_http_info(request)
+        return self._batch_add_or_delete_tags_with_http_info(request)
 
-    def batch_add_or_delete_tags_with_http_info(self, request):
-        all_params = ['image_id', 'bodyparam']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_add_or_delete_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -243,14 +213,10 @@ class ImsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.BatchDeleteMembersRequest`
         :rtype: :class:`huaweicloudsdkims.v2.BatchDeleteMembersResponse`
         """
-        return self.batch_delete_members_with_http_info(request)
+        return self._batch_delete_members_with_http_info(request)
 
-    def batch_delete_members_with_http_info(self, request):
-        all_params = ['members']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_delete_members_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -305,14 +271,10 @@ class ImsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.BatchUpdateMembersRequest`
         :rtype: :class:`huaweicloudsdkims.v2.BatchUpdateMembersResponse`
         """
-        return self.batch_update_members_with_http_info(request)
+        return self._batch_update_members_with_http_info(request)
 
-    def batch_update_members_with_http_info(self, request):
-        all_params = ['members']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_update_members_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -368,14 +330,10 @@ class ImsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.CopyImageCrossRegionRequest`
         :rtype: :class:`huaweicloudsdkims.v2.CopyImageCrossRegionResponse`
         """
-        return self.copy_image_cross_region_with_http_info(request)
+        return self._copy_image_cross_region_with_http_info(request)
 
-    def copy_image_cross_region_with_http_info(self, request):
-        all_params = ['image_id', 'bodyparam']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _copy_image_cross_region_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -432,14 +390,10 @@ class ImsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.CopyImageInRegionRequest`
         :rtype: :class:`huaweicloudsdkims.v2.CopyImageInRegionResponse`
         """
-        return self.copy_image_in_region_with_http_info(request)
+        return self._copy_image_in_region_with_http_info(request)
 
-    def copy_image_in_region_with_http_info(self, request):
-        all_params = ['image_id', 'bodyparam']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _copy_image_in_region_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -495,14 +449,10 @@ class ImsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.CreateDataImageRequest`
         :rtype: :class:`huaweicloudsdkims.v2.CreateDataImageResponse`
         """
-        return self.create_data_image_with_http_info(request)
+        return self._create_data_image_with_http_info(request)
 
-    def create_data_image_with_http_info(self, request):
-        all_params = ['bodyparam']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_data_image_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -567,14 +517,10 @@ class ImsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.CreateImageRequest`
         :rtype: :class:`huaweicloudsdkims.v2.CreateImageResponse`
         """
-        return self.create_image_with_http_info(request)
+        return self._create_image_with_http_info(request)
 
-    def create_image_with_http_info(self, request):
-        all_params = ['ec_sbodyparam']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_image_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -628,14 +574,10 @@ class ImsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.CreateOrUpdateTagsRequest`
         :rtype: :class:`huaweicloudsdkims.v2.CreateOrUpdateTagsResponse`
         """
-        return self.create_or_update_tags_with_http_info(request)
+        return self._create_or_update_tags_with_http_info(request)
 
-    def create_or_update_tags_with_http_info(self, request):
-        all_params = ['bodyparam']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_or_update_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -689,14 +631,10 @@ class ImsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.CreateWholeImageRequest`
         :rtype: :class:`huaweicloudsdkims.v2.CreateWholeImageResponse`
         """
-        return self.create_whole_image_with_http_info(request)
+        return self._create_whole_image_with_http_info(request)
 
-    def create_whole_image_with_http_info(self, request):
-        all_params = ['ec_smakewholeimagebody']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_whole_image_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -750,14 +688,10 @@ class ImsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.DeleteImageTagRequest`
         :rtype: :class:`huaweicloudsdkims.v2.DeleteImageTagResponse`
         """
-        return self.delete_image_tag_with_http_info(request)
+        return self._delete_image_tag_with_http_info(request)
 
-    def delete_image_tag_with_http_info(self, request):
-        all_params = ['image_id', 'key']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_image_tag_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -813,14 +747,10 @@ class ImsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.ExportImageRequest`
         :rtype: :class:`huaweicloudsdkims.v2.ExportImageResponse`
         """
-        return self.export_image_with_http_info(request)
+        return self._export_image_with_http_info(request)
 
-    def export_image_with_http_info(self, request):
-        all_params = ['image_id', 'bodyparam']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _export_image_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -878,14 +808,10 @@ class ImsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.ImportImageQuickRequest`
         :rtype: :class:`huaweicloudsdkims.v2.ImportImageQuickResponse`
         """
-        return self.import_image_quick_with_http_info(request)
+        return self._import_image_quick_with_http_info(request)
 
-    def import_image_quick_with_http_info(self, request):
-        all_params = ['file_create_ims']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _import_image_quick_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -939,14 +865,10 @@ class ImsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.ListImageByTagsRequest`
         :rtype: :class:`huaweicloudsdkims.v2.ListImageByTagsResponse`
         """
-        return self.list_image_by_tags_with_http_info(request)
+        return self._list_image_by_tags_with_http_info(request)
 
-    def list_image_by_tags_with_http_info(self, request):
-        all_params = ['bodyparam']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_image_by_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1000,14 +922,10 @@ class ImsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.ListImageTagsRequest`
         :rtype: :class:`huaweicloudsdkims.v2.ListImageTagsResponse`
         """
-        return self.list_image_tags_with_http_info(request)
+        return self._list_image_tags_with_http_info(request)
 
-    def list_image_tags_with_http_info(self, request):
-        all_params = ['image_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_image_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1062,14 +980,10 @@ class ImsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.ListImagesRequest`
         :rtype: :class:`huaweicloudsdkims.v2.ListImagesResponse`
         """
-        return self.list_images_with_http_info(request)
+        return self._list_images_with_http_info(request)
 
-    def list_images_with_http_info(self, request):
-        all_params = ['imagetype', 'isregistered', 'os_bit', 'os_type', 'platform', 'support_diskintensive', 'support_highperformance', 'support_kvm', 'support_kvm_gpu_type', 'support_kvm_infiniband', 'support_largememory', 'support_xen', 'support_xen_gpu_type', 'support_xen_hana', 'container_format', 'disk_format', 'enterprise_project_id', 'id', 'limit', 'marker', 'member_status', 'min_disk', 'min_ram', 'name', 'owner', 'protected', 'sort_dir', 'sort_key', 'status', 'tag', 'virtual_env_type', 'visibility', 'x_sdk_date', 'flavor_id', 'created_at', 'updated_at', 'architecture']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_images_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1195,14 +1109,10 @@ class ImsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.ListImagesTagsRequest`
         :rtype: :class:`huaweicloudsdkims.v2.ListImagesTagsResponse`
         """
-        return self.list_images_tags_with_http_info(request)
+        return self._list_images_tags_with_http_info(request)
 
-    def list_images_tags_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_images_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1254,14 +1164,10 @@ class ImsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.ListOsVersionsRequest`
         :rtype: :class:`huaweicloudsdkims.v2.ListOsVersionsResponse`
         """
-        return self.list_os_versions_with_http_info(request)
+        return self._list_os_versions_with_http_info(request)
 
-    def list_os_versions_with_http_info(self, request):
-        all_params = ['tag']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_os_versions_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1315,14 +1221,10 @@ class ImsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.ListTagsRequest`
         :rtype: :class:`huaweicloudsdkims.v2.ListTagsResponse`
         """
-        return self.list_tags_with_http_info(request)
+        return self._list_tags_with_http_info(request)
 
-    def list_tags_with_http_info(self, request):
-        all_params = ['limit', 'page', 'imagetype', 'id', 'status', 'name', 'min_disk', 'platform', 'os_type', 'member_status', 'virtual_env_type', 'enterprise_project_id', 'architecture', 'created_at', 'updated_at']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1410,14 +1312,10 @@ class ImsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.RegisterImageRequest`
         :rtype: :class:`huaweicloudsdkims.v2.RegisterImageResponse`
         """
-        return self.register_image_with_http_info(request)
+        return self._register_image_with_http_info(request)
 
-    def register_image_with_http_info(self, request):
-        all_params = ['image_id', 'bodyparam']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _register_image_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1473,14 +1371,10 @@ class ImsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.ShowImageQuotaRequest`
         :rtype: :class:`huaweicloudsdkims.v2.ShowImageQuotaResponse`
         """
-        return self.show_image_quota_with_http_info(request)
+        return self._show_image_quota_with_http_info(request)
 
-    def show_image_quota_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_image_quota_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1532,14 +1426,10 @@ class ImsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.ShowJobRequest`
         :rtype: :class:`huaweicloudsdkims.v2.ShowJobResponse`
         """
-        return self.show_job_with_http_info(request)
+        return self._show_job_with_http_info(request)
 
-    def show_job_with_http_info(self, request):
-        all_params = ['job_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1593,14 +1483,10 @@ class ImsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.ShowJobProgressRequest`
         :rtype: :class:`huaweicloudsdkims.v2.ShowJobProgressResponse`
         """
-        return self.show_job_progress_with_http_info(request)
+        return self._show_job_progress_with_http_info(request)
 
-    def show_job_progress_with_http_info(self, request):
-        all_params = ['job_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_job_progress_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1654,14 +1540,10 @@ class ImsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.UpdateImageRequest`
         :rtype: :class:`huaweicloudsdkims.v2.UpdateImageResponse`
         """
-        return self.update_image_with_http_info(request)
+        return self._update_image_with_http_info(request)
 
-    def update_image_with_http_info(self, request):
-        all_params = ['image_id', 'bodyparam']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_image_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1717,14 +1599,10 @@ class ImsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.ListVersionsRequest`
         :rtype: :class:`huaweicloudsdkims.v2.ListVersionsResponse`
         """
-        return self.list_versions_with_http_info(request)
+        return self._list_versions_with_http_info(request)
 
-    def list_versions_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_versions_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1776,14 +1654,10 @@ class ImsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.ShowVersionRequest`
         :rtype: :class:`huaweicloudsdkims.v2.ShowVersionResponse`
         """
-        return self.show_version_with_http_info(request)
+        return self._show_version_with_http_info(request)
 
-    def show_version_with_http_info(self, request):
-        all_params = ['version']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_version_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1837,14 +1711,10 @@ class ImsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.GlanceAddImageMemberRequest`
         :rtype: :class:`huaweicloudsdkims.v2.GlanceAddImageMemberResponse`
         """
-        return self.glance_add_image_member_with_http_info(request)
+        return self._glance_add_image_member_with_http_info(request)
 
-    def glance_add_image_member_with_http_info(self, request):
-        all_params = ['image_id', 'add_member_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _glance_add_image_member_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1900,14 +1770,10 @@ class ImsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.GlanceCreateImageMetadataRequest`
         :rtype: :class:`huaweicloudsdkims.v2.GlanceCreateImageMetadataResponse`
         """
-        return self.glance_create_image_metadata_with_http_info(request)
+        return self._glance_create_image_metadata_with_http_info(request)
 
-    def glance_create_image_metadata_with_http_info(self, request):
-        all_params = ['bodyparam']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _glance_create_image_metadata_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1961,14 +1827,10 @@ class ImsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.GlanceCreateTagRequest`
         :rtype: :class:`huaweicloudsdkims.v2.GlanceCreateTagResponse`
         """
-        return self.glance_create_tag_with_http_info(request)
+        return self._glance_create_tag_with_http_info(request)
 
-    def glance_create_tag_with_http_info(self, request):
-        all_params = ['image_id', 'tag']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _glance_create_tag_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2024,14 +1886,10 @@ class ImsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.GlanceDeleteImageRequest`
         :rtype: :class:`huaweicloudsdkims.v2.GlanceDeleteImageResponse`
         """
-        return self.glance_delete_image_with_http_info(request)
+        return self._glance_delete_image_with_http_info(request)
 
-    def glance_delete_image_with_http_info(self, request):
-        all_params = ['image_id', 'delete_image_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _glance_delete_image_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2087,14 +1945,10 @@ class ImsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.GlanceDeleteImageMemberRequest`
         :rtype: :class:`huaweicloudsdkims.v2.GlanceDeleteImageMemberResponse`
         """
-        return self.glance_delete_image_member_with_http_info(request)
+        return self._glance_delete_image_member_with_http_info(request)
 
-    def glance_delete_image_member_with_http_info(self, request):
-        all_params = ['image_id', 'member_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _glance_delete_image_member_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2150,14 +2004,10 @@ class ImsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.GlanceDeleteTagRequest`
         :rtype: :class:`huaweicloudsdkims.v2.GlanceDeleteTagResponse`
         """
-        return self.glance_delete_tag_with_http_info(request)
+        return self._glance_delete_tag_with_http_info(request)
 
-    def glance_delete_tag_with_http_info(self, request):
-        all_params = ['image_id', 'tag']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _glance_delete_tag_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2213,14 +2063,10 @@ class ImsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.GlanceListImageMemberSchemasRequest`
         :rtype: :class:`huaweicloudsdkims.v2.GlanceListImageMemberSchemasResponse`
         """
-        return self.glance_list_image_member_schemas_with_http_info(request)
+        return self._glance_list_image_member_schemas_with_http_info(request)
 
-    def glance_list_image_member_schemas_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _glance_list_image_member_schemas_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2272,14 +2118,10 @@ class ImsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.GlanceListImageMembersRequest`
         :rtype: :class:`huaweicloudsdkims.v2.GlanceListImageMembersResponse`
         """
-        return self.glance_list_image_members_with_http_info(request)
+        return self._glance_list_image_members_with_http_info(request)
 
-    def glance_list_image_members_with_http_info(self, request):
-        all_params = ['image_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _glance_list_image_members_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2333,14 +2175,10 @@ class ImsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.GlanceListImageSchemasRequest`
         :rtype: :class:`huaweicloudsdkims.v2.GlanceListImageSchemasResponse`
         """
-        return self.glance_list_image_schemas_with_http_info(request)
+        return self._glance_list_image_schemas_with_http_info(request)
 
-    def glance_list_image_schemas_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _glance_list_image_schemas_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2396,14 +2234,10 @@ class ImsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.GlanceListImagesRequest`
         :rtype: :class:`huaweicloudsdkims.v2.GlanceListImagesResponse`
         """
-        return self.glance_list_images_with_http_info(request)
+        return self._glance_list_images_with_http_info(request)
 
-    def glance_list_images_with_http_info(self, request):
-        all_params = ['imagetype', 'isregistered', 'os_bit', 'os_type', 'platform', 'support_diskintensive', 'support_highperformance', 'support_kvm', 'support_kvm_gpu_type', 'support_kvm_infiniband', 'support_largememory', 'support_xen', 'support_xen_gpu_type', 'support_xen_hana', 'container_format', 'disk_format', 'id', 'limit', 'marker', 'member_status', 'min_disk', 'min_ram', 'name', 'owner', 'protected', 'sort_dir', 'sort_key', 'status', 'tag', 'visibility', 'created_at', 'updated_at']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _glance_list_images_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2519,14 +2353,10 @@ class ImsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.GlanceShowImageRequest`
         :rtype: :class:`huaweicloudsdkims.v2.GlanceShowImageResponse`
         """
-        return self.glance_show_image_with_http_info(request)
+        return self._glance_show_image_with_http_info(request)
 
-    def glance_show_image_with_http_info(self, request):
-        all_params = ['image_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _glance_show_image_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2580,14 +2410,10 @@ class ImsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.GlanceShowImageMemberRequest`
         :rtype: :class:`huaweicloudsdkims.v2.GlanceShowImageMemberResponse`
         """
-        return self.glance_show_image_member_with_http_info(request)
+        return self._glance_show_image_member_with_http_info(request)
 
-    def glance_show_image_member_with_http_info(self, request):
-        all_params = ['image_id', 'member_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _glance_show_image_member_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2643,14 +2469,10 @@ class ImsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.GlanceShowImageMemberSchemasRequest`
         :rtype: :class:`huaweicloudsdkims.v2.GlanceShowImageMemberSchemasResponse`
         """
-        return self.glance_show_image_member_schemas_with_http_info(request)
+        return self._glance_show_image_member_schemas_with_http_info(request)
 
-    def glance_show_image_member_schemas_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _glance_show_image_member_schemas_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2702,14 +2524,10 @@ class ImsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.GlanceShowImageSchemasRequest`
         :rtype: :class:`huaweicloudsdkims.v2.GlanceShowImageSchemasResponse`
         """
-        return self.glance_show_image_schemas_with_http_info(request)
+        return self._glance_show_image_schemas_with_http_info(request)
 
-    def glance_show_image_schemas_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _glance_show_image_schemas_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2761,14 +2579,10 @@ class ImsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.GlanceUpdateImageRequest`
         :rtype: :class:`huaweicloudsdkims.v2.GlanceUpdateImageResponse`
         """
-        return self.glance_update_image_with_http_info(request)
+        return self._glance_update_image_with_http_info(request)
 
-    def glance_update_image_with_http_info(self, request):
-        all_params = ['image_id', 'bodyparam']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _glance_update_image_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2824,14 +2638,10 @@ class ImsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.GlanceUpdateImageMemberRequest`
         :rtype: :class:`huaweicloudsdkims.v2.GlanceUpdateImageMemberResponse`
         """
-        return self.glance_update_image_member_with_http_info(request)
+        return self._glance_update_image_member_with_http_info(request)
 
-    def glance_update_image_member_with_http_info(self, request):
-        all_params = ['image_id', 'member_id', 'member_status']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _glance_update_image_member_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

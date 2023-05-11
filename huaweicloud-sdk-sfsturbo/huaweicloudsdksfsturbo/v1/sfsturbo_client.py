@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class SFSTurboClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(SFSTurboClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdksfsturbo.v1.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -57,14 +39,10 @@ class SFSTurboClient(Client):
         :type request: :class:`huaweicloudsdksfsturbo.v1.BatchAddSharedTagsRequest`
         :rtype: :class:`huaweicloudsdksfsturbo.v1.BatchAddSharedTagsResponse`
         """
-        return self.batch_add_shared_tags_with_http_info(request)
+        return self._batch_add_shared_tags_with_http_info(request)
 
-    def batch_add_shared_tags_with_http_info(self, request):
-        all_params = ['share_id', 'batch_add_shared_tags_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_add_shared_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -119,14 +97,10 @@ class SFSTurboClient(Client):
         :type request: :class:`huaweicloudsdksfsturbo.v1.ChangeSecurityGroupRequest`
         :rtype: :class:`huaweicloudsdksfsturbo.v1.ChangeSecurityGroupResponse`
         """
-        return self.change_security_group_with_http_info(request)
+        return self._change_security_group_with_http_info(request)
 
-    def change_security_group_with_http_info(self, request):
-        all_params = ['share_id', 'change_security_group']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _change_security_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -181,14 +155,10 @@ class SFSTurboClient(Client):
         :type request: :class:`huaweicloudsdksfsturbo.v1.ChangeShareNameRequest`
         :rtype: :class:`huaweicloudsdksfsturbo.v1.ChangeShareNameResponse`
         """
-        return self.change_share_name_with_http_info(request)
+        return self._change_share_name_with_http_info(request)
 
-    def change_share_name_with_http_info(self, request):
-        all_params = ['share_id', 'change_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _change_share_name_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -232,6 +202,122 @@ class SFSTurboClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def create_fs_dir(self, request):
+        """创建目录
+
+        创建目录 (目前已上线的局点：上海一、上海二、北京二、北京四、乌兰察布一、广州、贵阳一、中国-香港、亚太-新加坡、亚太-曼谷)
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateFsDir
+        :type request: :class:`huaweicloudsdksfsturbo.v1.CreateFsDirRequest`
+        :rtype: :class:`huaweicloudsdksfsturbo.v1.CreateFsDirResponse`
+        """
+        return self._create_fs_dir_with_http_info(request)
+
+    def _create_fs_dir_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'share_id' in local_var_params:
+            path_params['share_id'] = local_var_params['share_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/sfs-turbo/shares/{share_id}/fs/dir',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateFsDirResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_fs_dir_quota(self, request):
+        """创建目标文件夹quota
+
+        创建目标文件夹quota。只支持对空目录设置目录quota (目前已上线的局点：上海一、上海二、北京二、北京四、乌兰察布一、广州、贵阳一、中国-香港、亚太-新加坡、亚太-曼谷)
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateFsDirQuota
+        :type request: :class:`huaweicloudsdksfsturbo.v1.CreateFsDirQuotaRequest`
+        :rtype: :class:`huaweicloudsdksfsturbo.v1.CreateFsDirQuotaResponse`
+        """
+        return self._create_fs_dir_quota_with_http_info(request)
+
+    def _create_fs_dir_quota_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'share_id' in local_var_params:
+            path_params['share_id'] = local_var_params['share_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/sfs-turbo/shares/{share_id}/fs/dir-quota',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateFsDirQuotaResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def create_share(self, request):
         """创建文件系统
 
@@ -243,14 +329,10 @@ class SFSTurboClient(Client):
         :type request: :class:`huaweicloudsdksfsturbo.v1.CreateShareRequest`
         :rtype: :class:`huaweicloudsdksfsturbo.v1.CreateShareResponse`
         """
-        return self.create_share_with_http_info(request)
+        return self._create_share_with_http_info(request)
 
-    def create_share_with_http_info(self, request):
-        all_params = ['create_share_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_share_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -306,14 +388,10 @@ class SFSTurboClient(Client):
         :type request: :class:`huaweicloudsdksfsturbo.v1.CreateSharedTagRequest`
         :rtype: :class:`huaweicloudsdksfsturbo.v1.CreateSharedTagResponse`
         """
-        return self.create_shared_tag_with_http_info(request)
+        return self._create_shared_tag_with_http_info(request)
 
-    def create_shared_tag_with_http_info(self, request):
-        all_params = ['share_id', 'create_shared_tag_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_shared_tag_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -357,6 +435,122 @@ class SFSTurboClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def delete_fs_dir(self, request):
+        """删除文件系统目录
+
+        删除文件系统目录 (目前已上线的局点：上海一、上海二、北京二、北京四、乌兰察布一、广州、贵阳一、中国-香港、亚太-新加坡、亚太-曼谷)
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteFsDir
+        :type request: :class:`huaweicloudsdksfsturbo.v1.DeleteFsDirRequest`
+        :rtype: :class:`huaweicloudsdksfsturbo.v1.DeleteFsDirResponse`
+        """
+        return self._delete_fs_dir_with_http_info(request)
+
+    def _delete_fs_dir_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'share_id' in local_var_params:
+            path_params['share_id'] = local_var_params['share_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/sfs-turbo/shares/{share_id}/fs/dir',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteFsDirResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_fs_dir_quota(self, request):
+        """删除目标文件夹quota
+
+        删除目标文件夹quota。只支持对空目录进行删除quota (目前已上线的局点：上海一、上海二、北京二、北京四、乌兰察布一、广州、贵阳一、中国-香港、亚太-新加坡、亚太-曼谷)
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteFsDirQuota
+        :type request: :class:`huaweicloudsdksfsturbo.v1.DeleteFsDirQuotaRequest`
+        :rtype: :class:`huaweicloudsdksfsturbo.v1.DeleteFsDirQuotaResponse`
+        """
+        return self._delete_fs_dir_quota_with_http_info(request)
+
+    def _delete_fs_dir_quota_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'share_id' in local_var_params:
+            path_params['share_id'] = local_var_params['share_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/sfs-turbo/shares/{share_id}/fs/dir-quota',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteFsDirQuotaResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def delete_share(self, request):
         """删除文件系统
 
@@ -368,14 +562,10 @@ class SFSTurboClient(Client):
         :type request: :class:`huaweicloudsdksfsturbo.v1.DeleteShareRequest`
         :rtype: :class:`huaweicloudsdksfsturbo.v1.DeleteShareResponse`
         """
-        return self.delete_share_with_http_info(request)
+        return self._delete_share_with_http_info(request)
 
-    def delete_share_with_http_info(self, request):
-        all_params = ['share_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_share_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -428,14 +618,10 @@ class SFSTurboClient(Client):
         :type request: :class:`huaweicloudsdksfsturbo.v1.DeleteSharedTagRequest`
         :rtype: :class:`huaweicloudsdksfsturbo.v1.DeleteSharedTagResponse`
         """
-        return self.delete_shared_tag_with_http_info(request)
+        return self._delete_shared_tag_with_http_info(request)
 
-    def delete_shared_tag_with_http_info(self, request):
-        all_params = ['share_id', 'key']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_shared_tag_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -490,14 +676,10 @@ class SFSTurboClient(Client):
         :type request: :class:`huaweicloudsdksfsturbo.v1.ExpandShareRequest`
         :rtype: :class:`huaweicloudsdksfsturbo.v1.ExpandShareResponse`
         """
-        return self.expand_share_with_http_info(request)
+        return self._expand_share_with_http_info(request)
 
-    def expand_share_with_http_info(self, request):
-        all_params = ['share_id', 'expand_share_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _expand_share_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -552,14 +734,10 @@ class SFSTurboClient(Client):
         :type request: :class:`huaweicloudsdksfsturbo.v1.ListSharedTagsRequest`
         :rtype: :class:`huaweicloudsdksfsturbo.v1.ListSharedTagsResponse`
         """
-        return self.list_shared_tags_with_http_info(request)
+        return self._list_shared_tags_with_http_info(request)
 
-    def list_shared_tags_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_shared_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -610,14 +788,10 @@ class SFSTurboClient(Client):
         :type request: :class:`huaweicloudsdksfsturbo.v1.ListSharesRequest`
         :rtype: :class:`huaweicloudsdksfsturbo.v1.ListSharesResponse`
         """
-        return self.list_shares_with_http_info(request)
+        return self._list_shares_with_http_info(request)
 
-    def list_shares_with_http_info(self, request):
-        all_params = ['limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_shares_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -661,6 +835,122 @@ class SFSTurboClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def show_fs_dir(self, request):
+        """查询目录是否存在
+
+        查询目录是否存在 (目前已上线的局点：上海一、上海二、北京二、北京四、乌兰察布一、广州、贵阳一、中国-香港、亚太-新加坡、亚太-曼谷)
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowFsDir
+        :type request: :class:`huaweicloudsdksfsturbo.v1.ShowFsDirRequest`
+        :rtype: :class:`huaweicloudsdksfsturbo.v1.ShowFsDirResponse`
+        """
+        return self._show_fs_dir_with_http_info(request)
+
+    def _show_fs_dir_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'share_id' in local_var_params:
+            path_params['share_id'] = local_var_params['share_id']
+
+        query_params = []
+        if 'path' in local_var_params:
+            query_params.append(('path', local_var_params['path']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/sfs-turbo/shares/{share_id}/fs/dir',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowFsDirResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_fs_dir_quota(self, request):
+        """查询目标文件夹quota
+
+        查询目标文件夹quota (目前已上线的局点：上海一、上海二、北京二、北京四、乌兰察布一、广州、贵阳一、中国-香港、亚太-新加坡、亚太-曼谷)
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowFsDirQuota
+        :type request: :class:`huaweicloudsdksfsturbo.v1.ShowFsDirQuotaRequest`
+        :rtype: :class:`huaweicloudsdksfsturbo.v1.ShowFsDirQuotaResponse`
+        """
+        return self._show_fs_dir_quota_with_http_info(request)
+
+    def _show_fs_dir_quota_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'share_id' in local_var_params:
+            path_params['share_id'] = local_var_params['share_id']
+
+        query_params = []
+        if 'path' in local_var_params:
+            query_params.append(('path', local_var_params['path']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/sfs-turbo/shares/{share_id}/fs/dir-quota',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowFsDirQuotaResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def show_share(self, request):
         """查询文件系统详细信息
 
@@ -672,14 +962,10 @@ class SFSTurboClient(Client):
         :type request: :class:`huaweicloudsdksfsturbo.v1.ShowShareRequest`
         :rtype: :class:`huaweicloudsdksfsturbo.v1.ShowShareResponse`
         """
-        return self.show_share_with_http_info(request)
+        return self._show_share_with_http_info(request)
 
-    def show_share_with_http_info(self, request):
-        all_params = ['share_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_share_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -732,14 +1018,10 @@ class SFSTurboClient(Client):
         :type request: :class:`huaweicloudsdksfsturbo.v1.ShowSharedTagsRequest`
         :rtype: :class:`huaweicloudsdksfsturbo.v1.ShowSharedTagsResponse`
         """
-        return self.show_shared_tags_with_http_info(request)
+        return self._show_shared_tags_with_http_info(request)
 
-    def show_shared_tags_with_http_info(self, request):
-        all_params = ['share_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_shared_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -776,6 +1058,64 @@ class SFSTurboClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ShowSharedTagsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_fs_dir_quota(self, request):
+        """更新目标文件夹quota
+
+        更新目标文件夹quota (目前已上线的局点：上海一、上海二、北京二、北京四、乌兰察布一、广州、贵阳一、中国-香港、亚太-新加坡、亚太-曼谷)
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateFsDirQuota
+        :type request: :class:`huaweicloudsdksfsturbo.v1.UpdateFsDirQuotaRequest`
+        :rtype: :class:`huaweicloudsdksfsturbo.v1.UpdateFsDirQuotaResponse`
+        """
+        return self._update_fs_dir_quota_with_http_info(request)
+
+    def _update_fs_dir_quota_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'share_id' in local_var_params:
+            path_params['share_id'] = local_var_params['share_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/sfs-turbo/shares/{share_id}/fs/dir-quota',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateFsDirQuotaResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

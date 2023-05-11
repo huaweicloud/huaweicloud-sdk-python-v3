@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class ErClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(ErClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdker.v3.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -53,14 +35,10 @@ class ErClient(Client):
         :type request: :class:`huaweicloudsdker.v3.AssociateRouteTableRequest`
         :rtype: :class:`huaweicloudsdker.v3.AssociateRouteTableResponse`
         """
-        return self.associate_route_table_with_http_info(request)
+        return self._associate_route_table_with_http_info(request)
 
-    def associate_route_table_with_http_info(self, request):
-        all_params = ['er_id', 'route_table_id', 'associate_route_table_request_body', 'x_client_token']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _associate_route_table_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -119,14 +97,10 @@ class ErClient(Client):
         :type request: :class:`huaweicloudsdker.v3.DisassociateRouteTableRequest`
         :rtype: :class:`huaweicloudsdker.v3.DisassociateRouteTableResponse`
         """
-        return self.disassociate_route_table_with_http_info(request)
+        return self._disassociate_route_table_with_http_info(request)
 
-    def disassociate_route_table_with_http_info(self, request):
-        all_params = ['er_id', 'route_table_id', 'disassociate_route_table_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _disassociate_route_table_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -183,14 +157,10 @@ class ErClient(Client):
         :type request: :class:`huaweicloudsdker.v3.ListAssociationsRequest`
         :rtype: :class:`huaweicloudsdker.v3.ListAssociationsResponse`
         """
-        return self.list_associations_with_http_info(request)
+        return self._list_associations_with_http_info(request)
 
-    def list_associations_with_http_info(self, request):
-        all_params = ['er_id', 'route_table_id', 'limit', 'marker', 'attachment_id', 'resource_type', 'state', 'sort_key', 'sort_dir']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_associations_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -264,14 +234,10 @@ class ErClient(Client):
         :type request: :class:`huaweicloudsdker.v3.ListAttachmentsRequest`
         :rtype: :class:`huaweicloudsdker.v3.ListAttachmentsResponse`
         """
-        return self.list_attachments_with_http_info(request)
+        return self._list_attachments_with_http_info(request)
 
-    def list_attachments_with_http_info(self, request):
-        all_params = ['er_id', 'limit', 'marker', 'state', 'resource_type', 'resource_id', 'sort_key', 'sort_dir']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_attachments_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -343,14 +309,10 @@ class ErClient(Client):
         :type request: :class:`huaweicloudsdker.v3.ShowAttachmentRequest`
         :rtype: :class:`huaweicloudsdker.v3.ShowAttachmentResponse`
         """
-        return self.show_attachment_with_http_info(request)
+        return self._show_attachment_with_http_info(request)
 
-    def show_attachment_with_http_info(self, request):
-        all_params = ['er_id', 'attachment_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_attachment_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -405,14 +367,10 @@ class ErClient(Client):
         :type request: :class:`huaweicloudsdker.v3.UpdateAttachmentRequest`
         :rtype: :class:`huaweicloudsdker.v3.UpdateAttachmentResponse`
         """
-        return self.update_attachment_with_http_info(request)
+        return self._update_attachment_with_http_info(request)
 
-    def update_attachment_with_http_info(self, request):
-        all_params = ['er_id', 'attachment_id', 'update_attachment_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_attachment_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -469,14 +427,10 @@ class ErClient(Client):
         :type request: :class:`huaweicloudsdker.v3.ListAvailabilityZoneRequest`
         :rtype: :class:`huaweicloudsdker.v3.ListAvailabilityZoneResponse`
         """
-        return self.list_availability_zone_with_http_info(request)
+        return self._list_availability_zone_with_http_info(request)
 
-    def list_availability_zone_with_http_info(self, request):
-        all_params = ['instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_availability_zone_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -529,14 +483,10 @@ class ErClient(Client):
         :type request: :class:`huaweicloudsdker.v3.ChangeAvailabilityZoneRequest`
         :rtype: :class:`huaweicloudsdker.v3.ChangeAvailabilityZoneResponse`
         """
-        return self.change_availability_zone_with_http_info(request)
+        return self._change_availability_zone_with_http_info(request)
 
-    def change_availability_zone_with_http_info(self, request):
-        all_params = ['er_id', 'enterprise_router_az']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _change_availability_zone_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -591,14 +541,10 @@ class ErClient(Client):
         :type request: :class:`huaweicloudsdker.v3.CreateEnterpriseRouterRequest`
         :rtype: :class:`huaweicloudsdker.v3.CreateEnterpriseRouterResponse`
         """
-        return self.create_enterprise_router_with_http_info(request)
+        return self._create_enterprise_router_with_http_info(request)
 
-    def create_enterprise_router_with_http_info(self, request):
-        all_params = ['create_enterprise_router_request_body', 'x_client_token']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_enterprise_router_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -653,14 +599,10 @@ class ErClient(Client):
         :type request: :class:`huaweicloudsdker.v3.DeleteEnterpriseRouterRequest`
         :rtype: :class:`huaweicloudsdker.v3.DeleteEnterpriseRouterResponse`
         """
-        return self.delete_enterprise_router_with_http_info(request)
+        return self._delete_enterprise_router_with_http_info(request)
 
-    def delete_enterprise_router_with_http_info(self, request):
-        all_params = ['er_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_enterprise_router_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -713,14 +655,10 @@ class ErClient(Client):
         :type request: :class:`huaweicloudsdker.v3.ListEnterpriseRoutersRequest`
         :rtype: :class:`huaweicloudsdker.v3.ListEnterpriseRoutersResponse`
         """
-        return self.list_enterprise_routers_with_http_info(request)
+        return self._list_enterprise_routers_with_http_info(request)
 
-    def list_enterprise_routers_with_http_info(self, request):
-        all_params = ['limit', 'marker', 'enterprise_project_id', 'state', 'id', 'resource_id', 'sort_key', 'sort_dir']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_enterprise_routers_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -793,14 +731,10 @@ class ErClient(Client):
         :type request: :class:`huaweicloudsdker.v3.ShowEnterpriseRouterRequest`
         :rtype: :class:`huaweicloudsdker.v3.ShowEnterpriseRouterResponse`
         """
-        return self.show_enterprise_router_with_http_info(request)
+        return self._show_enterprise_router_with_http_info(request)
 
-    def show_enterprise_router_with_http_info(self, request):
-        all_params = ['er_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_enterprise_router_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -853,14 +787,10 @@ class ErClient(Client):
         :type request: :class:`huaweicloudsdker.v3.UpdateEnterpriseRouterRequest`
         :rtype: :class:`huaweicloudsdker.v3.UpdateEnterpriseRouterResponse`
         """
-        return self.update_enterprise_router_with_http_info(request)
+        return self._update_enterprise_router_with_http_info(request)
 
-    def update_enterprise_router_with_http_info(self, request):
-        all_params = ['er_id', 'update_enterprise_router_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_enterprise_router_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -915,14 +845,10 @@ class ErClient(Client):
         :type request: :class:`huaweicloudsdker.v3.DisablePropagationRequest`
         :rtype: :class:`huaweicloudsdker.v3.DisablePropagationResponse`
         """
-        return self.disable_propagation_with_http_info(request)
+        return self._disable_propagation_with_http_info(request)
 
-    def disable_propagation_with_http_info(self, request):
-        all_params = ['er_id', 'route_table_id', 'disable_propagations_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _disable_propagation_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -979,14 +905,10 @@ class ErClient(Client):
         :type request: :class:`huaweicloudsdker.v3.EnablePropagationRequest`
         :rtype: :class:`huaweicloudsdker.v3.EnablePropagationResponse`
         """
-        return self.enable_propagation_with_http_info(request)
+        return self._enable_propagation_with_http_info(request)
 
-    def enable_propagation_with_http_info(self, request):
-        all_params = ['er_id', 'route_table_id', 'enable_propagations_request_body', 'x_client_token']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _enable_propagation_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1045,14 +967,10 @@ class ErClient(Client):
         :type request: :class:`huaweicloudsdker.v3.ListPropagationsRequest`
         :rtype: :class:`huaweicloudsdker.v3.ListPropagationsResponse`
         """
-        return self.list_propagations_with_http_info(request)
+        return self._list_propagations_with_http_info(request)
 
-    def list_propagations_with_http_info(self, request):
-        all_params = ['er_id', 'route_table_id', 'limit', 'marker', 'attachment_id', 'resource_type', 'state', 'sort_key', 'sort_dir']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_propagations_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1126,14 +1044,10 @@ class ErClient(Client):
         :type request: :class:`huaweicloudsdker.v3.CreateStaticRouteRequest`
         :rtype: :class:`huaweicloudsdker.v3.CreateStaticRouteResponse`
         """
-        return self.create_static_route_with_http_info(request)
+        return self._create_static_route_with_http_info(request)
 
-    def create_static_route_with_http_info(self, request):
-        all_params = ['route_table_id', 'create_static_route_request_body', 'x_client_token']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_static_route_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1190,14 +1104,10 @@ class ErClient(Client):
         :type request: :class:`huaweicloudsdker.v3.DeleteStaticRouteRequest`
         :rtype: :class:`huaweicloudsdker.v3.DeleteStaticRouteResponse`
         """
-        return self.delete_static_route_with_http_info(request)
+        return self._delete_static_route_with_http_info(request)
 
-    def delete_static_route_with_http_info(self, request):
-        all_params = ['route_table_id', 'route_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_static_route_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1252,14 +1162,10 @@ class ErClient(Client):
         :type request: :class:`huaweicloudsdker.v3.ListEffectiveRoutesRequest`
         :rtype: :class:`huaweicloudsdker.v3.ListEffectiveRoutesResponse`
         """
-        return self.list_effective_routes_with_http_info(request)
+        return self._list_effective_routes_with_http_info(request)
 
-    def list_effective_routes_with_http_info(self, request):
-        all_params = ['route_table_id', 'limit', 'marker', 'destination', 'resource_type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_effective_routes_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1322,14 +1228,10 @@ class ErClient(Client):
         :type request: :class:`huaweicloudsdker.v3.ListStaticRoutesRequest`
         :rtype: :class:`huaweicloudsdker.v3.ListStaticRoutesResponse`
         """
-        return self.list_static_routes_with_http_info(request)
+        return self._list_static_routes_with_http_info(request)
 
-    def list_static_routes_with_http_info(self, request):
-        all_params = ['route_table_id', 'limit', 'marker', 'destination', 'attachment_id', 'resource_type', 'sort_key', 'sort_dir']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_static_routes_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1401,14 +1303,10 @@ class ErClient(Client):
         :type request: :class:`huaweicloudsdker.v3.ShowStaticRouteRequest`
         :rtype: :class:`huaweicloudsdker.v3.ShowStaticRouteResponse`
         """
-        return self.show_static_route_with_http_info(request)
+        return self._show_static_route_with_http_info(request)
 
-    def show_static_route_with_http_info(self, request):
-        all_params = ['route_table_id', 'route_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_static_route_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1463,14 +1361,10 @@ class ErClient(Client):
         :type request: :class:`huaweicloudsdker.v3.UpdateStaticRouteRequest`
         :rtype: :class:`huaweicloudsdker.v3.UpdateStaticRouteResponse`
         """
-        return self.update_static_route_with_http_info(request)
+        return self._update_static_route_with_http_info(request)
 
-    def update_static_route_with_http_info(self, request):
-        all_params = ['route_table_id', 'route_id', 'update_static_route_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_static_route_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1527,14 +1421,10 @@ class ErClient(Client):
         :type request: :class:`huaweicloudsdker.v3.CreateRouteTableRequest`
         :rtype: :class:`huaweicloudsdker.v3.CreateRouteTableResponse`
         """
-        return self.create_route_table_with_http_info(request)
+        return self._create_route_table_with_http_info(request)
 
-    def create_route_table_with_http_info(self, request):
-        all_params = ['er_id', 'create_route_table_request_body', 'x_client_token']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_route_table_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1591,14 +1481,10 @@ class ErClient(Client):
         :type request: :class:`huaweicloudsdker.v3.DeleteRouteTableRequest`
         :rtype: :class:`huaweicloudsdker.v3.DeleteRouteTableResponse`
         """
-        return self.delete_route_table_with_http_info(request)
+        return self._delete_route_table_with_http_info(request)
 
-    def delete_route_table_with_http_info(self, request):
-        all_params = ['er_id', 'route_table_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_route_table_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1653,14 +1539,10 @@ class ErClient(Client):
         :type request: :class:`huaweicloudsdker.v3.ListRouteTablesRequest`
         :rtype: :class:`huaweicloudsdker.v3.ListRouteTablesResponse`
         """
-        return self.list_route_tables_with_http_info(request)
+        return self._list_route_tables_with_http_info(request)
 
-    def list_route_tables_with_http_info(self, request):
-        all_params = ['er_id', 'limit', 'marker', 'state', 'is_default_propagation_table', 'is_default_association_table', 'sort_key', 'sort_dir']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_route_tables_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1730,14 +1612,10 @@ class ErClient(Client):
         :type request: :class:`huaweicloudsdker.v3.ShowRouteTableRequest`
         :rtype: :class:`huaweicloudsdker.v3.ShowRouteTableResponse`
         """
-        return self.show_route_table_with_http_info(request)
+        return self._show_route_table_with_http_info(request)
 
-    def show_route_table_with_http_info(self, request):
-        all_params = ['er_id', 'route_table_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_route_table_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1792,14 +1670,10 @@ class ErClient(Client):
         :type request: :class:`huaweicloudsdker.v3.UpdateRouteTableRequest`
         :rtype: :class:`huaweicloudsdker.v3.UpdateRouteTableResponse`
         """
-        return self.update_route_table_with_http_info(request)
+        return self._update_route_table_with_http_info(request)
 
-    def update_route_table_with_http_info(self, request):
-        all_params = ['er_id', 'route_table_id', 'update_route_table_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_route_table_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1856,14 +1730,10 @@ class ErClient(Client):
         :type request: :class:`huaweicloudsdker.v3.CreateResourceTagRequest`
         :rtype: :class:`huaweicloudsdker.v3.CreateResourceTagResponse`
         """
-        return self.create_resource_tag_with_http_info(request)
+        return self._create_resource_tag_with_http_info(request)
 
-    def create_resource_tag_with_http_info(self, request):
-        all_params = ['resource_id', 'resource_type', 'create_resource_tag_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_resource_tag_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1920,14 +1790,10 @@ class ErClient(Client):
         :type request: :class:`huaweicloudsdker.v3.DeleteResourceTagRequest`
         :rtype: :class:`huaweicloudsdker.v3.DeleteResourceTagResponse`
         """
-        return self.delete_resource_tag_with_http_info(request)
+        return self._delete_resource_tag_with_http_info(request)
 
-    def delete_resource_tag_with_http_info(self, request):
-        all_params = ['key', 'resource_id', 'resource_type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_resource_tag_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1984,14 +1850,10 @@ class ErClient(Client):
         :type request: :class:`huaweicloudsdker.v3.ListProjectTagsRequest`
         :rtype: :class:`huaweicloudsdker.v3.ListProjectTagsResponse`
         """
-        return self.list_project_tags_with_http_info(request)
+        return self._list_project_tags_with_http_info(request)
 
-    def list_project_tags_with_http_info(self, request):
-        all_params = ['resource_type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_project_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2044,14 +1906,10 @@ class ErClient(Client):
         :type request: :class:`huaweicloudsdker.v3.ShowResourceTagRequest`
         :rtype: :class:`huaweicloudsdker.v3.ShowResourceTagResponse`
         """
-        return self.show_resource_tag_with_http_info(request)
+        return self._show_resource_tag_with_http_info(request)
 
-    def show_resource_tag_with_http_info(self, request):
-        all_params = ['resource_id', 'resource_type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_resource_tag_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2106,14 +1964,10 @@ class ErClient(Client):
         :type request: :class:`huaweicloudsdker.v3.CreateVpcAttachmentRequest`
         :rtype: :class:`huaweicloudsdker.v3.CreateVpcAttachmentResponse`
         """
-        return self.create_vpc_attachment_with_http_info(request)
+        return self._create_vpc_attachment_with_http_info(request)
 
-    def create_vpc_attachment_with_http_info(self, request):
-        all_params = ['er_id', 'create_vpc_attachment_body', 'x_client_token']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_vpc_attachment_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2170,14 +2024,10 @@ class ErClient(Client):
         :type request: :class:`huaweicloudsdker.v3.DeleteVpcAttachmentRequest`
         :rtype: :class:`huaweicloudsdker.v3.DeleteVpcAttachmentResponse`
         """
-        return self.delete_vpc_attachment_with_http_info(request)
+        return self._delete_vpc_attachment_with_http_info(request)
 
-    def delete_vpc_attachment_with_http_info(self, request):
-        all_params = ['er_id', 'vpc_attachment_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_vpc_attachment_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2232,14 +2082,10 @@ class ErClient(Client):
         :type request: :class:`huaweicloudsdker.v3.ListVpcAttachmentsRequest`
         :rtype: :class:`huaweicloudsdker.v3.ListVpcAttachmentsResponse`
         """
-        return self.list_vpc_attachments_with_http_info(request)
+        return self._list_vpc_attachments_with_http_info(request)
 
-    def list_vpc_attachments_with_http_info(self, request):
-        all_params = ['er_id', 'limit', 'marker', 'state', 'id', 'sort_key', 'sort_dir', 'vpc_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_vpc_attachments_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2311,14 +2157,10 @@ class ErClient(Client):
         :type request: :class:`huaweicloudsdker.v3.ShowVpcAttachmentRequest`
         :rtype: :class:`huaweicloudsdker.v3.ShowVpcAttachmentResponse`
         """
-        return self.show_vpc_attachment_with_http_info(request)
+        return self._show_vpc_attachment_with_http_info(request)
 
-    def show_vpc_attachment_with_http_info(self, request):
-        all_params = ['er_id', 'vpc_attachment_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_vpc_attachment_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2373,14 +2215,10 @@ class ErClient(Client):
         :type request: :class:`huaweicloudsdker.v3.UpdateVpcAttachmentRequest`
         :rtype: :class:`huaweicloudsdker.v3.UpdateVpcAttachmentResponse`
         """
-        return self.update_vpc_attachment_with_http_info(request)
+        return self._update_vpc_attachment_with_http_info(request)
 
-    def update_vpc_attachment_with_http_info(self, request):
-        all_params = ['er_id', 'vpc_attachment_id', 'update_vpc_attachment_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_vpc_attachment_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

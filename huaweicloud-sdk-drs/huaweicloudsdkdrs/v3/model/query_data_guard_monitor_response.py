@@ -1,9 +1,6 @@
 # coding: utf-8
 
-import re
 import six
-
-
 
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
@@ -38,7 +35,8 @@ class QueryDataGuardMonitorResponse:
         'src_rps': 'str',
         'trans_in_mb': 'str',
         'trans_lines': 'str',
-        'volume_used_in_gb': 'str'
+        'volume_used_in_gb': 'str',
+        'migration_bytes_per_second': 'int'
     }
 
     attribute_map = {
@@ -60,10 +58,11 @@ class QueryDataGuardMonitorResponse:
         'src_rps': 'src_rps',
         'trans_in_mb': 'trans_inMB',
         'trans_lines': 'trans_lines',
-        'volume_used_in_gb': 'volume_used_inGB'
+        'volume_used_in_gb': 'volume_used_inGB',
+        'migration_bytes_per_second': 'migration_bytes_per_second'
     }
 
-    def __init__(self, bandwidth=None, cpu_used_percent=None, dst_delay=None, dst_io=None, dst_normal=None, dst_offset=None, dst_rps=None, mem_used_in_mb=None, node_mem_in_mb=None, node_offset=None, node_volume_in_gb=None, sr_delay=None, sr_offset=None, src_io=None, src_normal=None, src_rps=None, trans_in_mb=None, trans_lines=None, volume_used_in_gb=None):
+    def __init__(self, bandwidth=None, cpu_used_percent=None, dst_delay=None, dst_io=None, dst_normal=None, dst_offset=None, dst_rps=None, mem_used_in_mb=None, node_mem_in_mb=None, node_offset=None, node_volume_in_gb=None, sr_delay=None, sr_offset=None, src_io=None, src_normal=None, src_rps=None, trans_in_mb=None, trans_lines=None, volume_used_in_gb=None, migration_bytes_per_second=None):
         """QueryDataGuardMonitorResponse
 
         The model defined in huaweicloud sdk
@@ -106,6 +105,8 @@ class QueryDataGuardMonitorResponse:
         :type trans_lines: str
         :param volume_used_in_gb: 磁盘使用。
         :type volume_used_in_gb: str
+        :param migration_bytes_per_second: 每秒迁移字节大小。
+        :type migration_bytes_per_second: int
         """
         
         
@@ -129,6 +130,7 @@ class QueryDataGuardMonitorResponse:
         self._trans_in_mb = None
         self._trans_lines = None
         self._volume_used_in_gb = None
+        self._migration_bytes_per_second = None
         self.discriminator = None
 
         if bandwidth is not None:
@@ -169,6 +171,8 @@ class QueryDataGuardMonitorResponse:
             self.trans_lines = trans_lines
         if volume_used_in_gb is not None:
             self.volume_used_in_gb = volume_used_in_gb
+        if migration_bytes_per_second is not None:
+            self.migration_bytes_per_second = migration_bytes_per_second
 
     @property
     def bandwidth(self):
@@ -587,6 +591,28 @@ class QueryDataGuardMonitorResponse:
         :type volume_used_in_gb: str
         """
         self._volume_used_in_gb = volume_used_in_gb
+
+    @property
+    def migration_bytes_per_second(self):
+        """Gets the migration_bytes_per_second of this QueryDataGuardMonitorResponse.
+
+        每秒迁移字节大小。
+
+        :return: The migration_bytes_per_second of this QueryDataGuardMonitorResponse.
+        :rtype: int
+        """
+        return self._migration_bytes_per_second
+
+    @migration_bytes_per_second.setter
+    def migration_bytes_per_second(self, migration_bytes_per_second):
+        """Sets the migration_bytes_per_second of this QueryDataGuardMonitorResponse.
+
+        每秒迁移字节大小。
+
+        :param migration_bytes_per_second: The migration_bytes_per_second of this QueryDataGuardMonitorResponse.
+        :type migration_bytes_per_second: int
+        """
+        self._migration_bytes_per_second = migration_bytes_per_second
 
     def to_dict(self):
         """Returns the model properties as a dict"""

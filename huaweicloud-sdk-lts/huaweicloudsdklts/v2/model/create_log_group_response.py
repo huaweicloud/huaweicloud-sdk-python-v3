@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import re
 import six
-
 
 from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization

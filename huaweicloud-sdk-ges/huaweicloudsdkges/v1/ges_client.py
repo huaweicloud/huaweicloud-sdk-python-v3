@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class GesClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(GesClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkges.v1.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -53,14 +35,10 @@ class GesClient(Client):
         :type request: :class:`huaweicloudsdkges.v1.AttachEipRequest`
         :rtype: :class:`huaweicloudsdkges.v1.AttachEipResponse`
         """
-        return self.attach_eip_with_http_info(request)
+        return self._attach_eip_with_http_info(request)
 
-    def attach_eip_with_http_info(self, request):
-        all_params = ['graph_id', 'action_id', 'bind_eip_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _attach_eip_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -117,14 +95,10 @@ class GesClient(Client):
         :type request: :class:`huaweicloudsdkges.v1.ClearGraphRequest`
         :rtype: :class:`huaweicloudsdkges.v1.ClearGraphResponse`
         """
-        return self.clear_graph_with_http_info(request)
+        return self._clear_graph_with_http_info(request)
 
-    def clear_graph_with_http_info(self, request):
-        all_params = ['graph_id', 'action_id', 'clear_metadata']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _clear_graph_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -181,14 +155,10 @@ class GesClient(Client):
         :type request: :class:`huaweicloudsdkges.v1.CreateBackupRequest`
         :rtype: :class:`huaweicloudsdkges.v1.CreateBackupResponse`
         """
-        return self.create_backup_with_http_info(request)
+        return self._create_backup_with_http_info(request)
 
-    def create_backup_with_http_info(self, request):
-        all_params = ['graph_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_backup_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -241,14 +211,10 @@ class GesClient(Client):
         :type request: :class:`huaweicloudsdkges.v1.CreateGraphRequest`
         :rtype: :class:`huaweicloudsdkges.v1.CreateGraphResponse`
         """
-        return self.create_graph_with_http_info(request)
+        return self._create_graph_with_http_info(request)
 
-    def create_graph_with_http_info(self, request):
-        all_params = ['create_graph_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_graph_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -301,14 +267,10 @@ class GesClient(Client):
         :type request: :class:`huaweicloudsdkges.v1.CreateMetadataRequest`
         :rtype: :class:`huaweicloudsdkges.v1.CreateMetadataResponse`
         """
-        return self.create_metadata_with_http_info(request)
+        return self._create_metadata_with_http_info(request)
 
-    def create_metadata_with_http_info(self, request):
-        all_params = ['create_metadata_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_metadata_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -361,14 +323,10 @@ class GesClient(Client):
         :type request: :class:`huaweicloudsdkges.v1.DeleteBackupRequest`
         :rtype: :class:`huaweicloudsdkges.v1.DeleteBackupResponse`
         """
-        return self.delete_backup_with_http_info(request)
+        return self._delete_backup_with_http_info(request)
 
-    def delete_backup_with_http_info(self, request):
-        all_params = ['backup_id', 'graph_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_backup_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -423,14 +381,10 @@ class GesClient(Client):
         :type request: :class:`huaweicloudsdkges.v1.DeleteGraphRequest`
         :rtype: :class:`huaweicloudsdkges.v1.DeleteGraphResponse`
         """
-        return self.delete_graph_with_http_info(request)
+        return self._delete_graph_with_http_info(request)
 
-    def delete_graph_with_http_info(self, request):
-        all_params = ['graph_id', 'keep_backup']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_graph_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -485,14 +439,10 @@ class GesClient(Client):
         :type request: :class:`huaweicloudsdkges.v1.DeleteMetadataRequest`
         :rtype: :class:`huaweicloudsdkges.v1.DeleteMetadataResponse`
         """
-        return self.delete_metadata_with_http_info(request)
+        return self._delete_metadata_with_http_info(request)
 
-    def delete_metadata_with_http_info(self, request):
-        all_params = ['metadata_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_metadata_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -545,14 +495,10 @@ class GesClient(Client):
         :type request: :class:`huaweicloudsdkges.v1.DetachEipRequest`
         :rtype: :class:`huaweicloudsdkges.v1.DetachEipResponse`
         """
-        return self.detach_eip_with_http_info(request)
+        return self._detach_eip_with_http_info(request)
 
-    def detach_eip_with_http_info(self, request):
-        all_params = ['graph_id', 'action_id', 'unbind_eip_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _detach_eip_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -610,14 +556,10 @@ class GesClient(Client):
         :type request: :class:`huaweicloudsdkges.v1.ExpandGraphRequest`
         :rtype: :class:`huaweicloudsdkges.v1.ExpandGraphResponse`
         """
-        return self.expand_graph_with_http_info(request)
+        return self._expand_graph_with_http_info(request)
 
-    def expand_graph_with_http_info(self, request):
-        all_params = ['graph_id', 'expand_graph_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _expand_graph_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -672,14 +614,10 @@ class GesClient(Client):
         :type request: :class:`huaweicloudsdkges.v1.ExportGraphRequest`
         :rtype: :class:`huaweicloudsdkges.v1.ExportGraphResponse`
         """
-        return self.export_graph_with_http_info(request)
+        return self._export_graph_with_http_info(request)
 
-    def export_graph_with_http_info(self, request):
-        all_params = ['graph_id', 'action_id', 'export_graph_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _export_graph_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -736,14 +674,10 @@ class GesClient(Client):
         :type request: :class:`huaweicloudsdkges.v1.ImportGraphRequest`
         :rtype: :class:`huaweicloudsdkges.v1.ImportGraphResponse`
         """
-        return self.import_graph_with_http_info(request)
+        return self._import_graph_with_http_info(request)
 
-    def import_graph_with_http_info(self, request):
-        all_params = ['graph_id', 'action_id', 'import_graph_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _import_graph_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -800,14 +734,10 @@ class GesClient(Client):
         :type request: :class:`huaweicloudsdkges.v1.ListBackupsRequest`
         :rtype: :class:`huaweicloudsdkges.v1.ListBackupsResponse`
         """
-        return self.list_backups_with_http_info(request)
+        return self._list_backups_with_http_info(request)
 
-    def list_backups_with_http_info(self, request):
-        all_params = ['limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_backups_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -862,14 +792,10 @@ class GesClient(Client):
         :type request: :class:`huaweicloudsdkges.v1.ListGraphBackupsRequest`
         :rtype: :class:`huaweicloudsdkges.v1.ListGraphBackupsResponse`
         """
-        return self.list_graph_backups_with_http_info(request)
+        return self._list_graph_backups_with_http_info(request)
 
-    def list_graph_backups_with_http_info(self, request):
-        all_params = ['graph_id', 'limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_graph_backups_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -926,14 +852,10 @@ class GesClient(Client):
         :type request: :class:`huaweicloudsdkges.v1.ListGraphMetadatasRequest`
         :rtype: :class:`huaweicloudsdkges.v1.ListGraphMetadatasResponse`
         """
-        return self.list_graph_metadatas_with_http_info(request)
+        return self._list_graph_metadatas_with_http_info(request)
 
-    def list_graph_metadatas_with_http_info(self, request):
-        all_params = ['metadata_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_graph_metadatas_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -986,14 +908,10 @@ class GesClient(Client):
         :type request: :class:`huaweicloudsdkges.v1.ListGraphsRequest`
         :rtype: :class:`huaweicloudsdkges.v1.ListGraphsResponse`
         """
-        return self.list_graphs_with_http_info(request)
+        return self._list_graphs_with_http_info(request)
 
-    def list_graphs_with_http_info(self, request):
-        all_params = ['offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_graphs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1048,14 +966,10 @@ class GesClient(Client):
         :type request: :class:`huaweicloudsdkges.v1.ListJobsRequest`
         :rtype: :class:`huaweicloudsdkges.v1.ListJobsResponse`
         """
-        return self.list_jobs_with_http_info(request)
+        return self._list_jobs_with_http_info(request)
 
-    def list_jobs_with_http_info(self, request):
-        all_params = ['end_time', 'graph_name', 'limit', 'offset', 'start_time', 'status']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_jobs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1118,14 +1032,10 @@ class GesClient(Client):
         :type request: :class:`huaweicloudsdkges.v1.ListMetadatasRequest`
         :rtype: :class:`huaweicloudsdkges.v1.ListMetadatasResponse`
         """
-        return self.list_metadatas_with_http_info(request)
+        return self._list_metadatas_with_http_info(request)
 
-    def list_metadatas_with_http_info(self, request):
-        all_params = ['limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_metadatas_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1180,14 +1090,10 @@ class GesClient(Client):
         :type request: :class:`huaweicloudsdkges.v1.ListQuotasRequest`
         :rtype: :class:`huaweicloudsdkges.v1.ListQuotasResponse`
         """
-        return self.list_quotas_with_http_info(request)
+        return self._list_quotas_with_http_info(request)
 
-    def list_quotas_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_quotas_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1238,14 +1144,10 @@ class GesClient(Client):
         :type request: :class:`huaweicloudsdkges.v1.ResizeGraphRequest`
         :rtype: :class:`huaweicloudsdkges.v1.ResizeGraphResponse`
         """
-        return self.resize_graph_with_http_info(request)
+        return self._resize_graph_with_http_info(request)
 
-    def resize_graph_with_http_info(self, request):
-        all_params = ['graph_id', 'resize_graph_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _resize_graph_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1300,14 +1202,10 @@ class GesClient(Client):
         :type request: :class:`huaweicloudsdkges.v1.RestartGraphRequest`
         :rtype: :class:`huaweicloudsdkges.v1.RestartGraphResponse`
         """
-        return self.restart_graph_with_http_info(request)
+        return self._restart_graph_with_http_info(request)
 
-    def restart_graph_with_http_info(self, request):
-        all_params = ['graph_id', 'action_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _restart_graph_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1362,14 +1260,10 @@ class GesClient(Client):
         :type request: :class:`huaweicloudsdkges.v1.ShowGraphRequest`
         :rtype: :class:`huaweicloudsdkges.v1.ShowGraphResponse`
         """
-        return self.show_graph_with_http_info(request)
+        return self._show_graph_with_http_info(request)
 
-    def show_graph_with_http_info(self, request):
-        all_params = ['graph_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_graph_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1422,14 +1316,10 @@ class GesClient(Client):
         :type request: :class:`huaweicloudsdkges.v1.ShowJobRequest`
         :rtype: :class:`huaweicloudsdkges.v1.ShowJobResponse`
         """
-        return self.show_job_with_http_info(request)
+        return self._show_job_with_http_info(request)
 
-    def show_job_with_http_info(self, request):
-        all_params = ['graph_id', 'job_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1484,14 +1374,10 @@ class GesClient(Client):
         :type request: :class:`huaweicloudsdkges.v1.StartGraphRequest`
         :rtype: :class:`huaweicloudsdkges.v1.StartGraphResponse`
         """
-        return self.start_graph_with_http_info(request)
+        return self._start_graph_with_http_info(request)
 
-    def start_graph_with_http_info(self, request):
-        all_params = ['graph_id', 'action_id', 'start_graph_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _start_graph_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1549,14 +1435,10 @@ class GesClient(Client):
         :type request: :class:`huaweicloudsdkges.v1.StopGraphRequest`
         :rtype: :class:`huaweicloudsdkges.v1.StopGraphResponse`
         """
-        return self.stop_graph_with_http_info(request)
+        return self._stop_graph_with_http_info(request)
 
-    def stop_graph_with_http_info(self, request):
-        all_params = ['graph_id', 'action_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _stop_graph_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1611,14 +1493,10 @@ class GesClient(Client):
         :type request: :class:`huaweicloudsdkges.v1.UpgradeGraphRequest`
         :rtype: :class:`huaweicloudsdkges.v1.UpgradeGraphResponse`
         """
-        return self.upgrade_graph_with_http_info(request)
+        return self._upgrade_graph_with_http_info(request)
 
-    def upgrade_graph_with_http_info(self, request):
-        all_params = ['graph_id', 'action_id', 'upgrade_graph_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _upgrade_graph_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1675,14 +1553,10 @@ class GesClient(Client):
         :type request: :class:`huaweicloudsdkges.v1.UploadFromObsRequest`
         :rtype: :class:`huaweicloudsdkges.v1.UploadFromObsResponse`
         """
-        return self.upload_from_obs_with_http_info(request)
+        return self._upload_from_obs_with_http_info(request)
 
-    def upload_from_obs_with_http_info(self, request):
-        all_params = ['upload_from_obs_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _upload_from_obs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class RamAsyncClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(RamAsyncClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkram.v1.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -54,14 +36,10 @@ class RamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkram.v1.AssociateResourceSharePermissionRequest`
         :rtype: :class:`huaweicloudsdkram.v1.AssociateResourceSharePermissionResponse`
         """
-        return self.associate_resource_share_permission_with_http_info(request)
+        return self._associate_resource_share_permission_with_http_info(request)
 
-    def associate_resource_share_permission_with_http_info(self, request):
-        all_params = ['resource_share_id', 'associate_permission_req_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _associate_resource_share_permission_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -117,14 +95,10 @@ class RamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkram.v1.DisassociateResourceSharePermissionRequest`
         :rtype: :class:`huaweicloudsdkram.v1.DisassociateResourceSharePermissionResponse`
         """
-        return self.disassociate_resource_share_permission_with_http_info(request)
+        return self._disassociate_resource_share_permission_with_http_info(request)
 
-    def disassociate_resource_share_permission_with_http_info(self, request):
-        all_params = ['resource_share_id', 'disassociate_permission_req_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _disassociate_resource_share_permission_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -180,14 +154,10 @@ class RamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkram.v1.ListResourceSharePermissionsRequest`
         :rtype: :class:`huaweicloudsdkram.v1.ListResourceSharePermissionsResponse`
         """
-        return self.list_resource_share_permissions_with_http_info(request)
+        return self._list_resource_share_permissions_with_http_info(request)
 
-    def list_resource_share_permissions_with_http_info(self, request):
-        all_params = ['resource_share_id', 'permission_name', 'limit', 'marker']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_resource_share_permissions_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -247,14 +217,10 @@ class RamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkram.v1.DisableOrganizationShareRequest`
         :rtype: :class:`huaweicloudsdkram.v1.DisableOrganizationShareResponse`
         """
-        return self.disable_organization_share_with_http_info(request)
+        return self._disable_organization_share_with_http_info(request)
 
-    def disable_organization_share_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _disable_organization_share_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -306,14 +272,10 @@ class RamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkram.v1.EnableOrganizationShareRequest`
         :rtype: :class:`huaweicloudsdkram.v1.EnableOrganizationShareResponse`
         """
-        return self.enable_organization_share_with_http_info(request)
+        return self._enable_organization_share_with_http_info(request)
 
-    def enable_organization_share_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _enable_organization_share_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -365,14 +327,10 @@ class RamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkram.v1.ShowOrganizationShareRequest`
         :rtype: :class:`huaweicloudsdkram.v1.ShowOrganizationShareResponse`
         """
-        return self.show_organization_share_with_http_info(request)
+        return self._show_organization_share_with_http_info(request)
 
-    def show_organization_share_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_organization_share_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -424,14 +382,10 @@ class RamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkram.v1.ListPermissionsRequest`
         :rtype: :class:`huaweicloudsdkram.v1.ListPermissionsResponse`
         """
-        return self.list_permissions_with_http_info(request)
+        return self._list_permissions_with_http_info(request)
 
-    def list_permissions_with_http_info(self, request):
-        all_params = ['limit', 'marker', 'resource_type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_permissions_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -489,14 +443,10 @@ class RamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkram.v1.ShowPermissionRequest`
         :rtype: :class:`huaweicloudsdkram.v1.ShowPermissionResponse`
         """
-        return self.show_permission_with_http_info(request)
+        return self._show_permission_with_http_info(request)
 
-    def show_permission_with_http_info(self, request):
-        all_params = ['permission_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_permission_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -550,14 +500,10 @@ class RamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkram.v1.SearchDistinctPrincipalsRequest`
         :rtype: :class:`huaweicloudsdkram.v1.SearchDistinctPrincipalsResponse`
         """
-        return self.search_distinct_principals_with_http_info(request)
+        return self._search_distinct_principals_with_http_info(request)
 
-    def search_distinct_principals_with_http_info(self, request):
-        all_params = ['search_distinct_shared_principals_req_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _search_distinct_principals_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -611,14 +557,10 @@ class RamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkram.v1.SearchSharedPrincipalsRequest`
         :rtype: :class:`huaweicloudsdkram.v1.SearchSharedPrincipalsResponse`
         """
-        return self.search_shared_principals_with_http_info(request)
+        return self._search_shared_principals_with_http_info(request)
 
-    def search_shared_principals_with_http_info(self, request):
-        all_params = ['search_shared_principals_req_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _search_shared_principals_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -672,14 +614,10 @@ class RamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkram.v1.SearchDistinctSharedResourcesRequest`
         :rtype: :class:`huaweicloudsdkram.v1.SearchDistinctSharedResourcesResponse`
         """
-        return self.search_distinct_shared_resources_with_http_info(request)
+        return self._search_distinct_shared_resources_with_http_info(request)
 
-    def search_distinct_shared_resources_with_http_info(self, request):
-        all_params = ['search_distinct_shared_resources_req_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _search_distinct_shared_resources_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -733,14 +671,10 @@ class RamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkram.v1.SearchSharedResourcesRequest`
         :rtype: :class:`huaweicloudsdkram.v1.SearchSharedResourcesResponse`
         """
-        return self.search_shared_resources_with_http_info(request)
+        return self._search_shared_resources_with_http_info(request)
 
-    def search_shared_resources_with_http_info(self, request):
-        all_params = ['search_shared_resources_req_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _search_shared_resources_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -794,14 +728,10 @@ class RamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkram.v1.CreateResourceShareRequest`
         :rtype: :class:`huaweicloudsdkram.v1.CreateResourceShareResponse`
         """
-        return self.create_resource_share_with_http_info(request)
+        return self._create_resource_share_with_http_info(request)
 
-    def create_resource_share_with_http_info(self, request):
-        all_params = ['create_resource_share_req_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_resource_share_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -855,14 +785,10 @@ class RamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkram.v1.DeleteResourceShareRequest`
         :rtype: :class:`huaweicloudsdkram.v1.DeleteResourceShareResponse`
         """
-        return self.delete_resource_share_with_http_info(request)
+        return self._delete_resource_share_with_http_info(request)
 
-    def delete_resource_share_with_http_info(self, request):
-        all_params = ['resource_share_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_resource_share_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -916,14 +842,10 @@ class RamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkram.v1.SearchResourceSharesRequest`
         :rtype: :class:`huaweicloudsdkram.v1.SearchResourceSharesResponse`
         """
-        return self.search_resource_shares_with_http_info(request)
+        return self._search_resource_shares_with_http_info(request)
 
-    def search_resource_shares_with_http_info(self, request):
-        all_params = ['search_resource_shares_req_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _search_resource_shares_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -977,14 +899,10 @@ class RamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkram.v1.UpdateResourceShareRequest`
         :rtype: :class:`huaweicloudsdkram.v1.UpdateResourceShareResponse`
         """
-        return self.update_resource_share_with_http_info(request)
+        return self._update_resource_share_with_http_info(request)
 
-    def update_resource_share_with_http_info(self, request):
-        all_params = ['resource_share_id', 'update_resource_share_req_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_resource_share_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1040,14 +958,10 @@ class RamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkram.v1.AssociateResourceShareRequest`
         :rtype: :class:`huaweicloudsdkram.v1.AssociateResourceShareResponse`
         """
-        return self.associate_resource_share_with_http_info(request)
+        return self._associate_resource_share_with_http_info(request)
 
-    def associate_resource_share_with_http_info(self, request):
-        all_params = ['resource_share_id', 'resource_share_association_req_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _associate_resource_share_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1103,14 +1017,10 @@ class RamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkram.v1.DisassociateResourceShareRequest`
         :rtype: :class:`huaweicloudsdkram.v1.DisassociateResourceShareResponse`
         """
-        return self.disassociate_resource_share_with_http_info(request)
+        return self._disassociate_resource_share_with_http_info(request)
 
-    def disassociate_resource_share_with_http_info(self, request):
-        all_params = ['resource_share_id', 'resource_share_association_req_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _disassociate_resource_share_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1166,14 +1076,10 @@ class RamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkram.v1.SearchResourceShareAssociationsRequest`
         :rtype: :class:`huaweicloudsdkram.v1.SearchResourceShareAssociationsResponse`
         """
-        return self.search_resource_share_associations_with_http_info(request)
+        return self._search_resource_share_associations_with_http_info(request)
 
-    def search_resource_share_associations_with_http_info(self, request):
-        all_params = ['search_resource_share_associations_req_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _search_resource_share_associations_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1227,14 +1133,10 @@ class RamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkram.v1.AcceptResourceShareInvitationRequest`
         :rtype: :class:`huaweicloudsdkram.v1.AcceptResourceShareInvitationResponse`
         """
-        return self.accept_resource_share_invitation_with_http_info(request)
+        return self._accept_resource_share_invitation_with_http_info(request)
 
-    def accept_resource_share_invitation_with_http_info(self, request):
-        all_params = ['resource_share_invitation_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _accept_resource_share_invitation_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1288,14 +1190,10 @@ class RamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkram.v1.RejectResourceShareInvitationRequest`
         :rtype: :class:`huaweicloudsdkram.v1.RejectResourceShareInvitationResponse`
         """
-        return self.reject_resource_share_invitation_with_http_info(request)
+        return self._reject_resource_share_invitation_with_http_info(request)
 
-    def reject_resource_share_invitation_with_http_info(self, request):
-        all_params = ['resource_share_invitation_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _reject_resource_share_invitation_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1349,14 +1247,10 @@ class RamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkram.v1.SearchResourceShareInvitationRequest`
         :rtype: :class:`huaweicloudsdkram.v1.SearchResourceShareInvitationResponse`
         """
-        return self.search_resource_share_invitation_with_http_info(request)
+        return self._search_resource_share_invitation_with_http_info(request)
 
-    def search_resource_share_invitation_with_http_info(self, request):
-        all_params = ['search_resource_share_invitation_req_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _search_resource_share_invitation_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1410,14 +1304,10 @@ class RamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkram.v1.BatchCreateResourceShareTagsRequest`
         :rtype: :class:`huaweicloudsdkram.v1.BatchCreateResourceShareTagsResponse`
         """
-        return self.batch_create_resource_share_tags_with_http_info(request)
+        return self._batch_create_resource_share_tags_with_http_info(request)
 
-    def batch_create_resource_share_tags_with_http_info(self, request):
-        all_params = ['resource_share_id', 'tag_resource_req_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_create_resource_share_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1473,14 +1363,10 @@ class RamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkram.v1.BatchDeleteResourceShareTagsRequest`
         :rtype: :class:`huaweicloudsdkram.v1.BatchDeleteResourceShareTagsResponse`
         """
-        return self.batch_delete_resource_share_tags_with_http_info(request)
+        return self._batch_delete_resource_share_tags_with_http_info(request)
 
-    def batch_delete_resource_share_tags_with_http_info(self, request):
-        all_params = ['resource_share_id', 'untag_resource_req_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_delete_resource_share_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1536,14 +1422,10 @@ class RamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkram.v1.ListResourceShareTagsRequest`
         :rtype: :class:`huaweicloudsdkram.v1.ListResourceShareTagsResponse`
         """
-        return self.list_resource_share_tags_with_http_info(request)
+        return self._list_resource_share_tags_with_http_info(request)
 
-    def list_resource_share_tags_with_http_info(self, request):
-        all_params = ['limit', 'marker']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_resource_share_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1599,14 +1481,10 @@ class RamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkram.v1.ListResourceSharesByTagsRequest`
         :rtype: :class:`huaweicloudsdkram.v1.ListResourceSharesByTagsResponse`
         """
-        return self.list_resource_shares_by_tags_with_http_info(request)
+        return self._list_resource_shares_by_tags_with_http_info(request)
 
-    def list_resource_shares_by_tags_with_http_info(self, request):
-        all_params = ['resource_shares_by_tags_req_body', 'limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_resource_shares_by_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1664,14 +1542,10 @@ class RamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkram.v1.SearchResourceShareCountByTagsRequest`
         :rtype: :class:`huaweicloudsdkram.v1.SearchResourceShareCountByTagsResponse`
         """
-        return self.search_resource_share_count_by_tags_with_http_info(request)
+        return self._search_resource_share_count_by_tags_with_http_info(request)
 
-    def search_resource_share_count_by_tags_with_http_info(self, request):
-        all_params = ['resource_shares_by_tags_req_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _search_resource_share_count_by_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class CloudDeployClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(CloudDeployClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkclouddeploy.v2.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -53,14 +35,10 @@ class CloudDeployClient(Client):
         :type request: :class:`huaweicloudsdkclouddeploy.v2.ListTaskSuccessRateRequest`
         :rtype: :class:`huaweicloudsdkclouddeploy.v2.ListTaskSuccessRateResponse`
         """
-        return self.list_task_success_rate_with_http_info(request)
+        return self._list_task_success_rate_with_http_info(request)
 
-    def list_task_success_rate_with_http_info(self, request):
-        all_params = ['project_id', 'list_task_success_rate_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_task_success_rate_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -115,14 +93,10 @@ class CloudDeployClient(Client):
         :type request: :class:`huaweicloudsdkclouddeploy.v2.ShowProjectSuccessRateRequest`
         :rtype: :class:`huaweicloudsdkclouddeploy.v2.ShowProjectSuccessRateResponse`
         """
-        return self.show_project_success_rate_with_http_info(request)
+        return self._show_project_success_rate_with_http_info(request)
 
-    def show_project_success_rate_with_http_info(self, request):
-        all_params = ['project_id', 'start_date', 'end_date']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_project_success_rate_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -179,14 +153,10 @@ class CloudDeployClient(Client):
         :type request: :class:`huaweicloudsdkclouddeploy.v2.CreateDeployTaskByTemplateRequest`
         :rtype: :class:`huaweicloudsdkclouddeploy.v2.CreateDeployTaskByTemplateResponse`
         """
-        return self.create_deploy_task_by_template_with_http_info(request)
+        return self._create_deploy_task_by_template_with_http_info(request)
 
-    def create_deploy_task_by_template_with_http_info(self, request):
-        all_params = ['create_deploy_task_by_template_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_deploy_task_by_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -239,14 +209,10 @@ class CloudDeployClient(Client):
         :type request: :class:`huaweicloudsdkclouddeploy.v2.DeleteDeployTaskRequest`
         :rtype: :class:`huaweicloudsdkclouddeploy.v2.DeleteDeployTaskResponse`
         """
-        return self.delete_deploy_task_with_http_info(request)
+        return self._delete_deploy_task_with_http_info(request)
 
-    def delete_deploy_task_with_http_info(self, request):
-        all_params = ['task_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_deploy_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -299,14 +265,10 @@ class CloudDeployClient(Client):
         :type request: :class:`huaweicloudsdkclouddeploy.v2.ListDeployTaskHistoryByDateRequest`
         :rtype: :class:`huaweicloudsdkclouddeploy.v2.ListDeployTaskHistoryByDateResponse`
         """
-        return self.list_deploy_task_history_by_date_with_http_info(request)
+        return self._list_deploy_task_history_by_date_with_http_info(request)
 
-    def list_deploy_task_history_by_date_with_http_info(self, request):
-        all_params = ['project_id', 'id', 'page', 'size', 'start_date', 'end_date']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_deploy_task_history_by_date_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -369,14 +331,10 @@ class CloudDeployClient(Client):
         :type request: :class:`huaweicloudsdkclouddeploy.v2.ListDeployTasksRequest`
         :rtype: :class:`huaweicloudsdkclouddeploy.v2.ListDeployTasksResponse`
         """
-        return self.list_deploy_tasks_with_http_info(request)
+        return self._list_deploy_tasks_with_http_info(request)
 
-    def list_deploy_tasks_with_http_info(self, request):
-        all_params = ['project_id', 'page', 'size']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_deploy_tasks_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -433,14 +391,10 @@ class CloudDeployClient(Client):
         :type request: :class:`huaweicloudsdkclouddeploy.v2.ShowDeployTaskDetailRequest`
         :rtype: :class:`huaweicloudsdkclouddeploy.v2.ShowDeployTaskDetailResponse`
         """
-        return self.show_deploy_task_detail_with_http_info(request)
+        return self._show_deploy_task_detail_with_http_info(request)
 
-    def show_deploy_task_detail_with_http_info(self, request):
-        all_params = ['task_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_deploy_task_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -493,14 +447,10 @@ class CloudDeployClient(Client):
         :type request: :class:`huaweicloudsdkclouddeploy.v2.StartDeployTaskRequest`
         :rtype: :class:`huaweicloudsdkclouddeploy.v2.StartDeployTaskResponse`
         """
-        return self.start_deploy_task_with_http_info(request)
+        return self._start_deploy_task_with_http_info(request)
 
-    def start_deploy_task_with_http_info(self, request):
-        all_params = ['task_id', 'start_deploy_task_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _start_deploy_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -555,14 +505,10 @@ class CloudDeployClient(Client):
         :type request: :class:`huaweicloudsdkclouddeploy.v2.CreateDeploymentHostRequest`
         :rtype: :class:`huaweicloudsdkclouddeploy.v2.CreateDeploymentHostResponse`
         """
-        return self.create_deployment_host_with_http_info(request)
+        return self._create_deployment_host_with_http_info(request)
 
-    def create_deployment_host_with_http_info(self, request):
-        all_params = ['group_id', 'create_deployment_host_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_deployment_host_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -617,14 +563,10 @@ class CloudDeployClient(Client):
         :type request: :class:`huaweicloudsdkclouddeploy.v2.DeleteDeploymentHostRequest`
         :rtype: :class:`huaweicloudsdkclouddeploy.v2.DeleteDeploymentHostResponse`
         """
-        return self.delete_deployment_host_with_http_info(request)
+        return self._delete_deployment_host_with_http_info(request)
 
-    def delete_deployment_host_with_http_info(self, request):
-        all_params = ['group_id', 'host_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_deployment_host_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -679,14 +621,10 @@ class CloudDeployClient(Client):
         :type request: :class:`huaweicloudsdkclouddeploy.v2.ListHostsRequest`
         :rtype: :class:`huaweicloudsdkclouddeploy.v2.ListHostsResponse`
         """
-        return self.list_hosts_with_http_info(request)
+        return self._list_hosts_with_http_info(request)
 
-    def list_hosts_with_http_info(self, request):
-        all_params = ['group_id', 'as_proxy', 'offset', 'limit', 'name', 'sort_key', 'sort_dir', 'with_auth']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_hosts_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -753,14 +691,10 @@ class CloudDeployClient(Client):
         :type request: :class:`huaweicloudsdkclouddeploy.v2.ShowDeploymentHostDetailRequest`
         :rtype: :class:`huaweicloudsdkclouddeploy.v2.ShowDeploymentHostDetailResponse`
         """
-        return self.show_deployment_host_detail_with_http_info(request)
+        return self._show_deployment_host_detail_with_http_info(request)
 
-    def show_deployment_host_detail_with_http_info(self, request):
-        all_params = ['group_id', 'host_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_deployment_host_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -815,14 +749,10 @@ class CloudDeployClient(Client):
         :type request: :class:`huaweicloudsdkclouddeploy.v2.UpdateDeploymentHostRequest`
         :rtype: :class:`huaweicloudsdkclouddeploy.v2.UpdateDeploymentHostResponse`
         """
-        return self.update_deployment_host_with_http_info(request)
+        return self._update_deployment_host_with_http_info(request)
 
-    def update_deployment_host_with_http_info(self, request):
-        all_params = ['group_id', 'host_id', 'update_deployment_host_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_deployment_host_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -879,14 +809,10 @@ class CloudDeployClient(Client):
         :type request: :class:`huaweicloudsdkclouddeploy.v2.CreateDeploymentGroupRequest`
         :rtype: :class:`huaweicloudsdkclouddeploy.v2.CreateDeploymentGroupResponse`
         """
-        return self.create_deployment_group_with_http_info(request)
+        return self._create_deployment_group_with_http_info(request)
 
-    def create_deployment_group_with_http_info(self, request):
-        all_params = ['create_deployment_group_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_deployment_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -939,14 +865,10 @@ class CloudDeployClient(Client):
         :type request: :class:`huaweicloudsdkclouddeploy.v2.DeleteDeploymentGroupRequest`
         :rtype: :class:`huaweicloudsdkclouddeploy.v2.DeleteDeploymentGroupResponse`
         """
-        return self.delete_deployment_group_with_http_info(request)
+        return self._delete_deployment_group_with_http_info(request)
 
-    def delete_deployment_group_with_http_info(self, request):
-        all_params = ['group_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_deployment_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -999,14 +921,10 @@ class CloudDeployClient(Client):
         :type request: :class:`huaweicloudsdkclouddeploy.v2.ListHostGroupsRequest`
         :rtype: :class:`huaweicloudsdkclouddeploy.v2.ListHostGroupsResponse`
         """
-        return self.list_host_groups_with_http_info(request)
+        return self._list_host_groups_with_http_info(request)
 
-    def list_host_groups_with_http_info(self, request):
-        all_params = ['region_name', 'project_id', 'os', 'offset', 'limit', 'name', 'sort_key', 'sort_dir']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_host_groups_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1073,14 +991,10 @@ class CloudDeployClient(Client):
         :type request: :class:`huaweicloudsdkclouddeploy.v2.ShowDeploymentGroupDetailRequest`
         :rtype: :class:`huaweicloudsdkclouddeploy.v2.ShowDeploymentGroupDetailResponse`
         """
-        return self.show_deployment_group_detail_with_http_info(request)
+        return self._show_deployment_group_detail_with_http_info(request)
 
-    def show_deployment_group_detail_with_http_info(self, request):
-        all_params = ['group_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_deployment_group_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1133,14 +1047,10 @@ class CloudDeployClient(Client):
         :type request: :class:`huaweicloudsdkclouddeploy.v2.UpdateDeploymentGroupRequest`
         :rtype: :class:`huaweicloudsdkclouddeploy.v2.UpdateDeploymentGroupResponse`
         """
-        return self.update_deployment_group_with_http_info(request)
+        return self._update_deployment_group_with_http_info(request)
 
-    def update_deployment_group_with_http_info(self, request):
-        all_params = ['group_id', 'update_deployment_group_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_deployment_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

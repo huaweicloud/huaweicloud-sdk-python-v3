@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class HiLensAsyncClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(HiLensAsyncClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkhilens.v3.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -54,14 +36,10 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.AddDeploymentNodesRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.AddDeploymentNodesResponse`
         """
-        return self.add_deployment_nodes_with_http_info(request)
+        return self._add_deployment_nodes_with_http_info(request)
 
-    def add_deployment_nodes_with_http_info(self, request):
-        all_params = ['deployment_id', 'deployment_add_nodes_request', 'provider']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _add_deployment_nodes_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -119,14 +97,10 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.BatchCreateNodeTagsRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.BatchCreateNodeTagsResponse`
         """
-        return self.batch_create_node_tags_with_http_info(request)
+        return self._batch_create_node_tags_with_http_info(request)
 
-    def batch_create_node_tags_with_http_info(self, request):
-        all_params = ['multi_resources_multi_tags']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_create_node_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -180,14 +154,10 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.CreateConfigMapRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.CreateConfigMapResponse`
         """
-        return self.create_config_map_with_http_info(request)
+        return self._create_config_map_with_http_info(request)
 
-    def create_config_map_with_http_info(self, request):
-        all_params = ['config_map_model_box_dto', 'provider']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_config_map_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -243,14 +213,10 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.CreateDeploymentRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.CreateDeploymentResponse`
         """
-        return self.create_deployment_with_http_info(request)
+        return self._create_deployment_with_http_info(request)
 
-    def create_deployment_with_http_info(self, request):
-        all_params = ['deployment_create_request', 'provider', 'x_expired_time']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_deployment_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -308,14 +274,10 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.CreateNodeRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.CreateNodeResponse`
         """
-        return self.create_node_with_http_info(request)
+        return self._create_node_with_http_info(request)
 
-    def create_node_with_http_info(self, request):
-        all_params = ['node_request', 'provider']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_node_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -371,14 +333,10 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.CreateOrderFormRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.CreateOrderFormResponse`
         """
-        return self.create_order_form_with_http_info(request)
+        return self._create_order_form_with_http_info(request)
 
-    def create_order_form_with_http_info(self, request):
-        all_params = ['create_skill_oder']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_order_form_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -432,14 +390,10 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.CreateResourceTagsRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.CreateResourceTagsResponse`
         """
-        return self.create_resource_tags_with_http_info(request)
+        return self._create_resource_tags_with_http_info(request)
 
-    def create_resource_tags_with_http_info(self, request):
-        all_params = ['resource_id', 'resource_type', 'tag_requeste_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_resource_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -497,14 +451,10 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.CreateSecretRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.CreateSecretResponse`
         """
-        return self.create_secret_with_http_info(request)
+        return self._create_secret_with_http_info(request)
 
-    def create_secret_with_http_info(self, request):
-        all_params = ['secret_model_box_dto', 'provider']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_secret_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -560,14 +510,10 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.CreateTaskRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.CreateTaskResponse`
         """
-        return self.create_task_with_http_info(request)
+        return self._create_task_with_http_info(request)
 
-    def create_task_with_http_info(self, request):
-        all_params = ['deployment_id', 'task_request']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -623,14 +569,10 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.CreateWorkSpaceRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.CreateWorkSpaceResponse`
         """
-        return self.create_work_space_with_http_info(request)
+        return self._create_work_space_with_http_info(request)
 
-    def create_work_space_with_http_info(self, request):
-        all_params = ['request_workspace']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_work_space_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -684,14 +626,10 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.DeleteConfigMapRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.DeleteConfigMapResponse`
         """
-        return self.delete_config_map_with_http_info(request)
+        return self._delete_config_map_with_http_info(request)
 
-    def delete_config_map_with_http_info(self, request):
-        all_params = ['config_map_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_config_map_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -745,14 +683,10 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.DeleteDeploymentRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.DeleteDeploymentResponse`
         """
-        return self.delete_deployment_with_http_info(request)
+        return self._delete_deployment_with_http_info(request)
 
-    def delete_deployment_with_http_info(self, request):
-        all_params = ['deployment_id', 'force_delete', 'provider', 'x_expired_time']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_deployment_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -812,14 +746,10 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.DeleteNodeRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.DeleteNodeResponse`
         """
-        return self.delete_node_with_http_info(request)
+        return self._delete_node_with_http_info(request)
 
-    def delete_node_with_http_info(self, request):
-        all_params = ['node_id', 'force_delete']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_node_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -875,14 +805,10 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.DeletePodRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.DeletePodResponse`
         """
-        return self.delete_pod_with_http_info(request)
+        return self._delete_pod_with_http_info(request)
 
-    def delete_pod_with_http_info(self, request):
-        all_params = ['deployment_id', 'pod_id', 'force_delete']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_pod_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -940,14 +866,10 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.DeleteResourceTagRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.DeleteResourceTagResponse`
         """
-        return self.delete_resource_tag_with_http_info(request)
+        return self._delete_resource_tag_with_http_info(request)
 
-    def delete_resource_tag_with_http_info(self, request):
-        all_params = ['resource_id', 'resource_type', 'key']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_resource_tag_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1005,14 +927,10 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.DeleteSecretRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.DeleteSecretResponse`
         """
-        return self.delete_secret_with_http_info(request)
+        return self._delete_secret_with_http_info(request)
 
-    def delete_secret_with_http_info(self, request):
-        all_params = ['secret_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_secret_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1066,14 +984,10 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.DeleteTaskRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.DeleteTaskResponse`
         """
-        return self.delete_task_with_http_info(request)
+        return self._delete_task_with_http_info(request)
 
-    def delete_task_with_http_info(self, request):
-        all_params = ['deployment_id', 'task_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1129,14 +1043,10 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.DeleteWorkSpaceRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.DeleteWorkSpaceResponse`
         """
-        return self.delete_work_space_with_http_info(request)
+        return self._delete_work_space_with_http_info(request)
 
-    def delete_work_space_with_http_info(self, request):
-        all_params = ['workspace_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_work_space_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1190,14 +1100,10 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.FreezeNodeRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.FreezeNodeResponse`
         """
-        return self.freeze_node_with_http_info(request)
+        return self._freeze_node_with_http_info(request)
 
-    def freeze_node_with_http_info(self, request):
-        all_params = ['node_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _freeze_node_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1251,14 +1157,10 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.ListConfigMapsRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.ListConfigMapsResponse`
         """
-        return self.list_config_maps_with_http_info(request)
+        return self._list_config_maps_with_http_info(request)
 
-    def list_config_maps_with_http_info(self, request):
-        all_params = ['provider', 'name', 'workspace_id', 'limit', 'offset', 'sort', 'tag_key']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_config_maps_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1324,14 +1226,10 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.ListFirmwaresRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.ListFirmwaresResponse`
         """
-        return self.list_firmwares_with_http_info(request)
+        return self._list_firmwares_with_http_info(request)
 
-    def list_firmwares_with_http_info(self, request):
-        all_params = ['device_type', 'arch', 'os_name', 'os_version', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_firmwares_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1395,14 +1293,10 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.ListPlatformManagerRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.ListPlatformManagerResponse`
         """
-        return self.list_platform_manager_with_http_info(request)
+        return self._list_platform_manager_with_http_info(request)
 
-    def list_platform_manager_with_http_info(self, request):
-        all_params = ['id', 'device_type', 'type', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_platform_manager_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1464,14 +1358,10 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.ListResourceTagsRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.ListResourceTagsResponse`
         """
-        return self.list_resource_tags_with_http_info(request)
+        return self._list_resource_tags_with_http_info(request)
 
-    def list_resource_tags_with_http_info(self, request):
-        all_params = ['resource_type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_resource_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1525,14 +1415,10 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.ListSecretsRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.ListSecretsResponse`
         """
-        return self.list_secrets_with_http_info(request)
+        return self._list_secrets_with_http_info(request)
 
-    def list_secrets_with_http_info(self, request):
-        all_params = ['offset', 'limit', 'name', 'workspace_id', 'tags', 'provider', 'sort']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_secrets_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1598,14 +1484,10 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.ListTasksRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.ListTasksResponse`
         """
-        return self.list_tasks_with_http_info(request)
+        return self._list_tasks_with_http_info(request)
 
-    def list_tasks_with_http_info(self, request):
-        all_params = ['deployment_id', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_tasks_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1663,14 +1545,10 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.ListWorkSpacesRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.ListWorkSpacesResponse`
         """
-        return self.list_work_spaces_with_http_info(request)
+        return self._list_work_spaces_with_http_info(request)
 
-    def list_work_spaces_with_http_info(self, request):
-        all_params = ['iam_user_id', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_work_spaces_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1728,14 +1606,10 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.SetDefaultOrderFormRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.SetDefaultOrderFormResponse`
         """
-        return self.set_default_order_form_with_http_info(request)
+        return self._set_default_order_form_with_http_info(request)
 
-    def set_default_order_form_with_http_info(self, request):
-        all_params = ['order_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _set_default_order_form_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1789,14 +1663,10 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.ShowConfigMapRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.ShowConfigMapResponse`
         """
-        return self.show_config_map_with_http_info(request)
+        return self._show_config_map_with_http_info(request)
 
-    def show_config_map_with_http_info(self, request):
-        all_params = ['config_map_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_config_map_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1850,14 +1720,10 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.ShowDeploymentRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.ShowDeploymentResponse`
         """
-        return self.show_deployment_with_http_info(request)
+        return self._show_deployment_with_http_info(request)
 
-    def show_deployment_with_http_info(self, request):
-        all_params = ['deployment_id', 'provider']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_deployment_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1913,14 +1779,10 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.ShowDeploymentPodsRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.ShowDeploymentPodsResponse`
         """
-        return self.show_deployment_pods_with_http_info(request)
+        return self._show_deployment_pods_with_http_info(request)
 
-    def show_deployment_pods_with_http_info(self, request):
-        all_params = ['cluster_id', 'node_id', 'provider', 'deployment_id', 'workspace_id', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_deployment_pods_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1986,14 +1848,10 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.ShowDeploymentsRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.ShowDeploymentsResponse`
         """
-        return self.show_deployments_with_http_info(request)
+        return self._show_deployments_with_http_info(request)
 
-    def show_deployments_with_http_info(self, request):
-        all_params = ['cluster_id', 'node_id', 'provider', 'name', 'sort', 'limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_deployments_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2059,14 +1917,10 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.ShowNodeRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.ShowNodeResponse`
         """
-        return self.show_node_with_http_info(request)
+        return self._show_node_with_http_info(request)
 
-    def show_node_with_http_info(self, request):
-        all_params = ['node_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_node_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2120,14 +1974,10 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.ShowNodeActivationRecordsRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.ShowNodeActivationRecordsResponse`
         """
-        return self.show_node_activation_records_with_http_info(request)
+        return self._show_node_activation_records_with_http_info(request)
 
-    def show_node_activation_records_with_http_info(self, request):
-        all_params = ['node_id', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_node_activation_records_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2185,14 +2035,10 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.ShowNodesRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.ShowNodesResponse`
         """
-        return self.show_nodes_with_http_info(request)
+        return self._show_nodes_with_http_info(request)
 
-    def show_nodes_with_http_info(self, request):
-        all_params = ['offset', 'limit', 'name', 'workspace_id', 'app_name', 'tags', 'provider', 'cluster_id', 'status', 'active_status']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_nodes_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2264,14 +2110,10 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.ShowResourceTagsRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.ShowResourceTagsResponse`
         """
-        return self.show_resource_tags_with_http_info(request)
+        return self._show_resource_tags_with_http_info(request)
 
-    def show_resource_tags_with_http_info(self, request):
-        all_params = ['resource_id', 'resource_type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_resource_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2327,14 +2169,10 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.ShowSecretRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.ShowSecretResponse`
         """
-        return self.show_secret_with_http_info(request)
+        return self._show_secret_with_http_info(request)
 
-    def show_secret_with_http_info(self, request):
-        all_params = ['secret_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_secret_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2388,14 +2226,10 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.ShowSkillInfoRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.ShowSkillInfoResponse`
         """
-        return self.show_skill_info_with_http_info(request)
+        return self._show_skill_info_with_http_info(request)
 
-    def show_skill_info_with_http_info(self, request):
-        all_params = ['skill_id', 'status', 'version']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_skill_info_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2453,14 +2287,10 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.ShowSkillListRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.ShowSkillListResponse`
         """
-        return self.show_skill_list_with_http_info(request)
+        return self._show_skill_list_with_http_info(request)
 
-    def show_skill_list_with_http_info(self, request):
-        all_params = ['limit', 'offset', 'skill_name', 'skill_form', 'permission', 'template_source', 'status', 'charge_model', 'platform', 'chip', 'type', 'charge_models', 'device_types', 'scenes']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_skill_list_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2540,14 +2370,10 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.ShowSkillOrderInfoRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.ShowSkillOrderInfoResponse`
         """
-        return self.show_skill_order_info_with_http_info(request)
+        return self._show_skill_order_info_with_http_info(request)
 
-    def show_skill_order_info_with_http_info(self, request):
-        all_params = ['order_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_skill_order_info_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2601,14 +2427,10 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.ShowSkillOrderListRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.ShowSkillOrderListResponse`
         """
-        return self.show_skill_order_list_with_http_info(request)
+        return self._show_skill_order_list_with_http_info(request)
 
-    def show_skill_order_list_with_http_info(self, request):
-        all_params = ['limit', 'offset', 'skill_name', 'skill_form']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_skill_order_list_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2668,14 +2490,10 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.ShowTaskRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.ShowTaskResponse`
         """
-        return self.show_task_with_http_info(request)
+        return self._show_task_with_http_info(request)
 
-    def show_task_with_http_info(self, request):
-        all_params = ['deployment_id', 'task_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2731,14 +2549,10 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.ShowUpgradeProgressRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.ShowUpgradeProgressResponse`
         """
-        return self.show_upgrade_progress_with_http_info(request)
+        return self._show_upgrade_progress_with_http_info(request)
 
-    def show_upgrade_progress_with_http_info(self, request):
-        all_params = ['node_id', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_upgrade_progress_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2796,14 +2610,10 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.ShowWorkSpaceRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.ShowWorkSpaceResponse`
         """
-        return self.show_work_space_with_http_info(request)
+        return self._show_work_space_with_http_info(request)
 
-    def show_work_space_with_http_info(self, request):
-        all_params = ['workspace_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_work_space_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2857,14 +2667,10 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.StartAndStopDeploymentRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.StartAndStopDeploymentResponse`
         """
-        return self.start_and_stop_deployment_with_http_info(request)
+        return self._start_and_stop_deployment_with_http_info(request)
 
-    def start_and_stop_deployment_with_http_info(self, request):
-        all_params = ['deployment_id', 'action']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _start_and_stop_deployment_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2920,14 +2726,10 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.StartAndStopDeploymentPodRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.StartAndStopDeploymentPodResponse`
         """
-        return self.start_and_stop_deployment_pod_with_http_info(request)
+        return self._start_and_stop_deployment_pod_with_http_info(request)
 
-    def start_and_stop_deployment_pod_with_http_info(self, request):
-        all_params = ['deployment_id', 'pod_id', 'action']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _start_and_stop_deployment_pod_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2985,14 +2787,10 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.SwitchNodeConnectionRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.SwitchNodeConnectionResponse`
         """
-        return self.switch_node_connection_with_http_info(request)
+        return self._switch_node_connection_with_http_info(request)
 
-    def switch_node_connection_with_http_info(self, request):
-        all_params = ['node_id', 'action', 'provider']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _switch_node_connection_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3050,14 +2848,10 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.UnfreezeNodeRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.UnfreezeNodeResponse`
         """
-        return self.unfreeze_node_with_http_info(request)
+        return self._unfreeze_node_with_http_info(request)
 
-    def unfreeze_node_with_http_info(self, request):
-        all_params = ['node_id', 'activate_node']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _unfreeze_node_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3113,14 +2907,10 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.UpdateConfigMapRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.UpdateConfigMapResponse`
         """
-        return self.update_config_map_with_http_info(request)
+        return self._update_config_map_with_http_info(request)
 
-    def update_config_map_with_http_info(self, request):
-        all_params = ['config_map_id', 'config_map_model_box_dto']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_config_map_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3176,14 +2966,10 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.UpdateDeploymentRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.UpdateDeploymentResponse`
         """
-        return self.update_deployment_with_http_info(request)
+        return self._update_deployment_with_http_info(request)
 
-    def update_deployment_with_http_info(self, request):
-        all_params = ['deployment_id', 'deployment_update_request', 'provider', 'x_expired_time']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_deployment_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3243,14 +3029,10 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.UpdateDeploymentUsingPatchRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.UpdateDeploymentUsingPatchResponse`
         """
-        return self.update_deployment_using_patch_with_http_info(request)
+        return self._update_deployment_using_patch_with_http_info(request)
 
-    def update_deployment_using_patch_with_http_info(self, request):
-        all_params = ['deployment_id', 'patch']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_deployment_using_patch_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3306,14 +3088,10 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.UpdateNodeRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.UpdateNodeResponse`
         """
-        return self.update_node_with_http_info(request)
+        return self._update_node_with_http_info(request)
 
-    def update_node_with_http_info(self, request):
-        all_params = ['node_id', 'update_node_request']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_node_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3369,14 +3147,10 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.UpdateNodeCertRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.UpdateNodeCertResponse`
         """
-        return self.update_node_cert_with_http_info(request)
+        return self._update_node_cert_with_http_info(request)
 
-    def update_node_cert_with_http_info(self, request):
-        all_params = ['node_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_node_cert_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3430,14 +3204,10 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.UpdateNodeFirmwareRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.UpdateNodeFirmwareResponse`
         """
-        return self.update_node_firmware_with_http_info(request)
+        return self._update_node_firmware_with_http_info(request)
 
-    def update_node_firmware_with_http_info(self, request):
-        all_params = ['node_id', 'firmware_id', 'x_expired_time']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_node_firmware_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3495,14 +3265,10 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.UpdateSecretRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.UpdateSecretResponse`
         """
-        return self.update_secret_with_http_info(request)
+        return self._update_secret_with_http_info(request)
 
-    def update_secret_with_http_info(self, request):
-        all_params = ['secret_id', 'secret_model_box_dto']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_secret_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3558,14 +3324,10 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.UpdateTaskRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.UpdateTaskResponse`
         """
-        return self.update_task_with_http_info(request)
+        return self._update_task_with_http_info(request)
 
-    def update_task_with_http_info(self, request):
-        all_params = ['deployment_id', 'task_id', 'task_request']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3623,14 +3385,10 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.UpdateWorkSpaceRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.UpdateWorkSpaceResponse`
         """
-        return self.update_work_space_with_http_info(request)
+        return self._update_work_space_with_http_info(request)
 
-    def update_work_space_with_http_info(self, request):
-        all_params = ['workspace_id', 'update_workspace_request']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_work_space_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

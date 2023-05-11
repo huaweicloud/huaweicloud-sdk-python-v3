@@ -76,7 +76,7 @@ def test_extract_error_message4():
     response = MockResponse(error_message)
     sdk_error = EXCEPTION_HANDLER.handle_exception(None, response)
     assert sdk_error.encoded_authorization_message is None
-    assert sdk_error.error_code is None
+    assert "400" == sdk_error.error_code
     assert '{"invalid_key":"invalid_value"}' == sdk_error.error_msg
     assert "97e2***11df" == sdk_error.request_id
 
@@ -86,7 +86,7 @@ def test_extract_error_message5():
     response = MockResponse(error_message)
     sdk_error = EXCEPTION_HANDLER.handle_exception(None, response)
     assert sdk_error.encoded_authorization_message is None
-    assert sdk_error.error_code is None
+    assert "400" == sdk_error.error_code
     assert "invalid json data" == sdk_error.error_msg
     assert "97e2***11df" == sdk_error.request_id
 

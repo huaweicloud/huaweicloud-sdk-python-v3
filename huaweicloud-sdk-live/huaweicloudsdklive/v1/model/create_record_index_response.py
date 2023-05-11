@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import re
 import six
-
 
 from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
@@ -27,7 +25,7 @@ class CreateRecordIndexResponse(SdkResponse):
         'start_time': 'datetime',
         'end_time': 'datetime',
         'duration': 'int',
-        'weight': 'int',
+        'width': 'int',
         'height': 'int',
         'location': 'str',
         'bucket': 'str',
@@ -43,7 +41,7 @@ class CreateRecordIndexResponse(SdkResponse):
         'start_time': 'start_time',
         'end_time': 'end_time',
         'duration': 'duration',
-        'weight': 'weight',
+        'width': 'width',
         'height': 'height',
         'location': 'location',
         'bucket': 'bucket',
@@ -51,7 +49,7 @@ class CreateRecordIndexResponse(SdkResponse):
         'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, index_url=None, publish_domain=None, app=None, stream=None, start_time=None, end_time=None, duration=None, weight=None, height=None, location=None, bucket=None, object=None, x_request_id=None):
+    def __init__(self, index_url=None, publish_domain=None, app=None, stream=None, start_time=None, end_time=None, duration=None, width=None, height=None, location=None, bucket=None, object=None, x_request_id=None):
         """CreateRecordIndexResponse
 
         The model defined in huaweicloud sdk
@@ -70,8 +68,8 @@ class CreateRecordIndexResponse(SdkResponse):
         :type end_time: datetime
         :param duration: 录制时长。单位：秒。
         :type duration: int
-        :param weight: 视频宽。
-        :type weight: int
+        :param width: 视频宽。
+        :type width: int
         :param height: 视频高。
         :type height: int
         :param location: OBS Bucket所在RegionID
@@ -93,7 +91,7 @@ class CreateRecordIndexResponse(SdkResponse):
         self._start_time = None
         self._end_time = None
         self._duration = None
-        self._weight = None
+        self._width = None
         self._height = None
         self._location = None
         self._bucket = None
@@ -115,8 +113,8 @@ class CreateRecordIndexResponse(SdkResponse):
             self.end_time = end_time
         if duration is not None:
             self.duration = duration
-        if weight is not None:
-            self.weight = weight
+        if width is not None:
+            self.width = width
         if height is not None:
             self.height = height
         if location is not None:
@@ -283,26 +281,26 @@ class CreateRecordIndexResponse(SdkResponse):
         self._duration = duration
 
     @property
-    def weight(self):
-        """Gets the weight of this CreateRecordIndexResponse.
+    def width(self):
+        """Gets the width of this CreateRecordIndexResponse.
 
         视频宽。
 
-        :return: The weight of this CreateRecordIndexResponse.
+        :return: The width of this CreateRecordIndexResponse.
         :rtype: int
         """
-        return self._weight
+        return self._width
 
-    @weight.setter
-    def weight(self, weight):
-        """Sets the weight of this CreateRecordIndexResponse.
+    @width.setter
+    def width(self, width):
+        """Sets the width of this CreateRecordIndexResponse.
 
         视频宽。
 
-        :param weight: The weight of this CreateRecordIndexResponse.
-        :type weight: int
+        :param width: The width of this CreateRecordIndexResponse.
+        :type width: int
         """
-        self._weight = weight
+        self._width = width
 
     @property
     def height(self):

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BucketLoggingStatus>
+    <Agency>agency-name</Agency>
+    <LoggingEnabled>
+        <TargetBucket>mybucketlogs</TargetBucket>
+        <TargetPrefix>mybucket-access_log-/</TargetPrefix>
+        <TargetGrants>
+            <Grant>
+                <Grantee>
+                    <ID>domainID</ID>
+                </Grantee>
+                <Permission>READ</Permission>
+            </Grant>
+        </TargetGrants>
+    </LoggingEnabled>
+</BucketLoggingStatus>

@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class CodeHubClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(CodeHubClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkcodehub.v3.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -53,14 +35,10 @@ class CodeHubClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.CreateCommitRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.CreateCommitResponse`
         """
-        return self.create_commit_with_http_info(request)
+        return self._create_commit_with_http_info(request)
 
-    def create_commit_with_http_info(self, request):
-        all_params = ['repo_id', 'create_commit_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_commit_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -115,14 +93,10 @@ class CodeHubClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.ListCommitsRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ListCommitsResponse`
         """
-        return self.list_commits_with_http_info(request)
+        return self._list_commits_with_http_info(request)
 
-    def list_commits_with_http_info(self, request):
-        all_params = ['repo_id', 'ref_name', 'since', 'until', 'path', 'all', 'with_stats', 'page', 'per_page']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_commits_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -191,14 +165,10 @@ class CodeHubClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.ShowDiffCommitRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ShowDiffCommitResponse`
         """
-        return self.show_diff_commit_with_http_info(request)
+        return self._show_diff_commit_with_http_info(request)
 
-    def show_diff_commit_with_http_info(self, request):
-        all_params = ['repo_id', 'sha']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_diff_commit_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -253,14 +223,10 @@ class CodeHubClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.ShowSingleCommitRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ShowSingleCommitResponse`
         """
-        return self.show_single_commit_with_http_info(request)
+        return self._show_single_commit_with_http_info(request)
 
-    def show_single_commit_with_http_info(self, request):
-        all_params = ['repo_id', 'sha', 'stats']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_single_commit_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -317,14 +283,10 @@ class CodeHubClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.ListFilesByQueryRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ListFilesByQueryResponse`
         """
-        return self.list_files_by_query_with_http_info(request)
+        return self._list_files_by_query_with_http_info(request)
 
-    def list_files_by_query_with_http_info(self, request):
-        all_params = ['repo_id', 'file_path', 'ref']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_files_by_query_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -381,14 +343,10 @@ class CodeHubClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.ShowFileRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ShowFileResponse`
         """
-        return self.show_file_with_http_info(request)
+        return self._show_file_with_http_info(request)
 
-    def show_file_with_http_info(self, request):
-        all_params = ['repo_id', 'file_path', 'ref']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_file_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -445,14 +403,10 @@ class CodeHubClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.GetAllRepositoryByProjectIdRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.GetAllRepositoryByProjectIdResponse`
         """
-        return self.get_all_repository_by_project_id_with_http_info(request)
+        return self._get_all_repository_by_project_id_with_http_info(request)
 
-    def get_all_repository_by_project_id_with_http_info(self, request):
-        all_params = ['project_uuid', 'page_index', 'page_size', 'search']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _get_all_repository_by_project_id_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -511,14 +465,10 @@ class CodeHubClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.GetProductTemplatesRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.GetProductTemplatesResponse`
         """
-        return self.get_product_templates_with_http_info(request)
+        return self._get_product_templates_with_http_info(request)
 
-    def get_product_templates_with_http_info(self, request):
-        all_params = ['project_uuid', 'page_no', 'page_size']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _get_product_templates_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -575,14 +525,10 @@ class CodeHubClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.ListProductTwoTemplatesRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ListProductTwoTemplatesResponse`
         """
-        return self.list_product_two_templates_with_http_info(request)
+        return self._list_product_two_templates_with_http_info(request)
 
-    def list_product_two_templates_with_http_info(self, request):
-        all_params = ['project_uuid', 'page_no', 'page_size']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_product_two_templates_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -639,14 +585,10 @@ class CodeHubClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.ShowRepositoryNameExistRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ShowRepositoryNameExistResponse`
         """
-        return self.show_repository_name_exist_with_http_info(request)
+        return self._show_repository_name_exist_with_http_info(request)
 
-    def show_repository_name_exist_with_http_info(self, request):
-        all_params = ['project_uuid', 'repository_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_repository_name_exist_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -701,14 +643,10 @@ class CodeHubClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.AddRepoMembersRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.AddRepoMembersResponse`
         """
-        return self.add_repo_members_with_http_info(request)
+        return self._add_repo_members_with_http_info(request)
 
-    def add_repo_members_with_http_info(self, request):
-        all_params = ['repository_uuid', 'create_repo_member_request']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _add_repo_members_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -763,14 +701,10 @@ class CodeHubClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.DeleteRepoMemberRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.DeleteRepoMemberResponse`
         """
-        return self.delete_repo_member_with_http_info(request)
+        return self._delete_repo_member_with_http_info(request)
 
-    def delete_repo_member_with_http_info(self, request):
-        all_params = ['member_id', 'repository_uuid']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_repo_member_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -825,14 +759,10 @@ class CodeHubClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.ListRepoMembersRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ListRepoMembersResponse`
         """
-        return self.list_repo_members_with_http_info(request)
+        return self._list_repo_members_with_http_info(request)
 
-    def list_repo_members_with_http_info(self, request):
-        all_params = ['repository_uuid', 'page_index', 'page_size', 'subject']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_repo_members_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -891,14 +821,10 @@ class CodeHubClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.SetRepoRoleRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.SetRepoRoleResponse`
         """
-        return self.set_repo_role_with_http_info(request)
+        return self._set_repo_role_with_http_info(request)
 
-    def set_repo_role_with_http_info(self, request):
-        all_params = ['member_id', 'repository_uuid', 'set_repo_role_request']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _set_repo_role_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -955,14 +881,10 @@ class CodeHubClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.AddDeployKeyRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.AddDeployKeyResponse`
         """
-        return self.add_deploy_key_with_http_info(request)
+        return self._add_deploy_key_with_http_info(request)
 
-    def add_deploy_key_with_http_info(self, request):
-        all_params = ['repository_id', 'add_deploy_key_request']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _add_deploy_key_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1017,14 +939,10 @@ class CodeHubClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.AddDeployKeyV2Request`
         :rtype: :class:`huaweicloudsdkcodehub.v3.AddDeployKeyV2Response`
         """
-        return self.add_deploy_key_v2_with_http_info(request)
+        return self._add_deploy_key_v2_with_http_info(request)
 
-    def add_deploy_key_v2_with_http_info(self, request):
-        all_params = ['repository_id', 'add_deploy_key_request']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _add_deploy_key_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1079,14 +997,10 @@ class CodeHubClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.AddProtectBranchV2Request`
         :rtype: :class:`huaweicloudsdkcodehub.v3.AddProtectBranchV2Response`
         """
-        return self.add_protect_branch_v2_with_http_info(request)
+        return self._add_protect_branch_v2_with_http_info(request)
 
-    def add_protect_branch_v2_with_http_info(self, request):
-        all_params = ['repository_id', 'branch_name', 'add_protect_request']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _add_protect_branch_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1143,14 +1057,10 @@ class CodeHubClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.AddTagV2Request`
         :rtype: :class:`huaweicloudsdkcodehub.v3.AddTagV2Response`
         """
-        return self.add_tag_v2_with_http_info(request)
+        return self._add_tag_v2_with_http_info(request)
 
-    def add_tag_v2_with_http_info(self, request):
-        all_params = ['repository_id', 'add_tags_request']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _add_tag_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1205,14 +1115,10 @@ class CodeHubClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.CreateRepositoryRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.CreateRepositoryResponse`
         """
-        return self.create_repository_with_http_info(request)
+        return self._create_repository_with_http_info(request)
 
-    def create_repository_with_http_info(self, request):
-        all_params = ['create_repo_request']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_repository_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1265,14 +1171,10 @@ class CodeHubClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.DeleteDeployKeyRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.DeleteDeployKeyResponse`
         """
-        return self.delete_deploy_key_with_http_info(request)
+        return self._delete_deploy_key_with_http_info(request)
 
-    def delete_deploy_key_with_http_info(self, request):
-        all_params = ['key_id', 'repository_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_deploy_key_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1327,14 +1229,10 @@ class CodeHubClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.DeleteDeployKeyV2Request`
         :rtype: :class:`huaweicloudsdkcodehub.v3.DeleteDeployKeyV2Response`
         """
-        return self.delete_deploy_key_v2_with_http_info(request)
+        return self._delete_deploy_key_v2_with_http_info(request)
 
-    def delete_deploy_key_v2_with_http_info(self, request):
-        all_params = ['key_id', 'repository_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_deploy_key_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1389,14 +1287,10 @@ class CodeHubClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.DeleteRepositoryRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.DeleteRepositoryResponse`
         """
-        return self.delete_repository_with_http_info(request)
+        return self._delete_repository_with_http_info(request)
 
-    def delete_repository_with_http_info(self, request):
-        all_params = ['repository_uuid']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_repository_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1449,14 +1343,10 @@ class CodeHubClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.GetRepositoryByProjectIdRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.GetRepositoryByProjectIdResponse`
         """
-        return self.get_repository_by_project_id_with_http_info(request)
+        return self._get_repository_by_project_id_with_http_info(request)
 
-    def get_repository_by_project_id_with_http_info(self, request):
-        all_params = ['repository_uuid']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _get_repository_by_project_id_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1509,14 +1399,10 @@ class CodeHubClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.GetTemplatesRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.GetTemplatesResponse`
         """
-        return self.get_templates_with_http_info(request)
+        return self._get_templates_with_http_info(request)
 
-    def get_templates_with_http_info(self, request):
-        all_params = ['page_no', 'page_size', 'platform', 'language', 'pipeline', 'entertype', 'search', 'dateorder', 'usedtimeorder', 'type', 'region']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _get_templates_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1589,14 +1475,10 @@ class CodeHubClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.ListBranchesByRepositoryIdRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ListBranchesByRepositoryIdResponse`
         """
-        return self.list_branches_by_repository_id_with_http_info(request)
+        return self._list_branches_by_repository_id_with_http_info(request)
 
-    def list_branches_by_repository_id_with_http_info(self, request):
-        all_params = ['repository_id', 'page', 'per_page', 'match']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_branches_by_repository_id_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1655,14 +1537,10 @@ class CodeHubClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.ListCommitStatisticsRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ListCommitStatisticsResponse`
         """
-        return self.list_commit_statistics_with_http_info(request)
+        return self._list_commit_statistics_with_http_info(request)
 
-    def list_commit_statistics_with_http_info(self, request):
-        all_params = ['branch_name', 'repository_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_commit_statistics_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1717,14 +1595,10 @@ class CodeHubClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.ListFilesRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ListFilesResponse`
         """
-        return self.list_files_with_http_info(request)
+        return self._list_files_with_http_info(request)
 
-    def list_files_with_http_info(self, request):
-        all_params = ['repository_uuid', 'branch_name', 'path']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_files_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1781,14 +1655,10 @@ class CodeHubClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.ListMergeRequestRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ListMergeRequestResponse`
         """
-        return self.list_merge_request_with_http_info(request)
+        return self._list_merge_request_with_http_info(request)
 
-    def list_merge_request_with_http_info(self, request):
-        all_params = ['repository_id', 'state', 'page', 'per_page', 'search']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_merge_request_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1849,14 +1719,10 @@ class CodeHubClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.ListRepositoryStatusRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ListRepositoryStatusResponse`
         """
-        return self.list_repository_status_with_http_info(request)
+        return self._list_repository_status_with_http_info(request)
 
-    def list_repository_status_with_http_info(self, request):
-        all_params = ['repository_uuid']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_repository_status_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1909,14 +1775,10 @@ class CodeHubClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.ListSubfilesRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ListSubfilesResponse`
         """
-        return self.list_subfiles_with_http_info(request)
+        return self._list_subfiles_with_http_info(request)
 
-    def list_subfiles_with_http_info(self, request):
-        all_params = ['repository_uuid', 'branch_name', 'path', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_subfiles_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1977,14 +1839,10 @@ class CodeHubClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.ListTemplatesTwoRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ListTemplatesTwoResponse`
         """
-        return self.list_templates_two_with_http_info(request)
+        return self._list_templates_two_with_http_info(request)
 
-    def list_templates_two_with_http_info(self, request):
-        all_params = ['repository_uuid', 'repository_template_vo2']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_templates_two_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2039,14 +1897,10 @@ class CodeHubClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.ListTwoTemplatesRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ListTwoTemplatesResponse`
         """
-        return self.list_two_templates_with_http_info(request)
+        return self._list_two_templates_with_http_info(request)
 
-    def list_two_templates_with_http_info(self, request):
-        all_params = ['page_no', 'page_size', 'platform', 'language', 'pipeline', 'enter_type', 'search', 'date_order', 'used_time_order', 'type', 'region']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_two_templates_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2119,14 +1973,10 @@ class CodeHubClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.ShareTemplatesRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ShareTemplatesResponse`
         """
-        return self.share_templates_with_http_info(request)
+        return self._share_templates_with_http_info(request)
 
-    def share_templates_with_http_info(self, request):
-        all_params = ['repository_uuid', 'repository_template_vo']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _share_templates_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2181,14 +2031,10 @@ class CodeHubClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.ShowBranchesByRepositoryIdRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ShowBranchesByRepositoryIdResponse`
         """
-        return self.show_branches_by_repository_id_with_http_info(request)
+        return self._show_branches_by_repository_id_with_http_info(request)
 
-    def show_branches_by_repository_id_with_http_info(self, request):
-        all_params = ['repository_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_branches_by_repository_id_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2241,14 +2087,10 @@ class CodeHubClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.ShowBranchesByTwoRepositoryIdRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ShowBranchesByTwoRepositoryIdResponse`
         """
-        return self.show_branches_by_two_repository_id_with_http_info(request)
+        return self._show_branches_by_two_repository_id_with_http_info(request)
 
-    def show_branches_by_two_repository_id_with_http_info(self, request):
-        all_params = ['repository_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_branches_by_two_repository_id_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2301,14 +2143,10 @@ class CodeHubClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.ShowCommitsByBranchRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ShowCommitsByBranchResponse`
         """
-        return self.show_commits_by_branch_with_http_info(request)
+        return self._show_commits_by_branch_with_http_info(request)
 
-    def show_commits_by_branch_with_http_info(self, request):
-        all_params = ['group_name', 'ref_name', 'repository_name', 'page_index', 'page_size']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_commits_by_branch_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2369,14 +2207,10 @@ class CodeHubClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.ShowCommitsByRepoIdRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ShowCommitsByRepoIdResponse`
         """
-        return self.show_commits_by_repo_id_with_http_info(request)
+        return self._show_commits_by_repo_id_with_http_info(request)
 
-    def show_commits_by_repo_id_with_http_info(self, request):
-        all_params = ['ref_name', 'repository_id', 'author', 'begin_date', 'end_date', 'message', 'page_index', 'page_size', 'path', 'stat_format']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_commits_by_repo_id_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2447,14 +2281,10 @@ class CodeHubClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.ShowHasPipelineRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ShowHasPipelineResponse`
         """
-        return self.show_has_pipeline_with_http_info(request)
+        return self._show_has_pipeline_with_http_info(request)
 
-    def show_has_pipeline_with_http_info(self, request):
-        all_params = ['repository_uuid']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_has_pipeline_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2507,14 +2337,10 @@ class CodeHubClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.ShowImageBlobRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ShowImageBlobResponse`
         """
-        return self.show_image_blob_with_http_info(request)
+        return self._show_image_blob_with_http_info(request)
 
-    def show_image_blob_with_http_info(self, request):
-        all_params = ['repository_uuid', 'branch_name', 'path']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_image_blob_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2571,14 +2397,10 @@ class CodeHubClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.ShowMasterRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ShowMasterResponse`
         """
-        return self.show_master_with_http_info(request)
+        return self._show_master_with_http_info(request)
 
-    def show_master_with_http_info(self, request):
-        all_params = ['repository_uuid']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_master_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2631,14 +2453,10 @@ class CodeHubClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.ShowMergeRequestRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ShowMergeRequestResponse`
         """
-        return self.show_merge_request_with_http_info(request)
+        return self._show_merge_request_with_http_info(request)
 
-    def show_merge_request_with_http_info(self, request):
-        all_params = ['repository_id', 'merge_request_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_merge_request_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2693,14 +2511,10 @@ class CodeHubClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.ShowRepoIdRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ShowRepoIdResponse`
         """
-        return self.show_repo_id_with_http_info(request)
+        return self._show_repo_id_with_http_info(request)
 
-    def show_repo_id_with_http_info(self, request):
-        all_params = ['group_name', 'repository_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_repo_id_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2755,14 +2569,10 @@ class CodeHubClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.ShowRepositoryArchiveRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ShowRepositoryArchiveResponse`
         """
-        return self.show_repository_archive_with_http_info(request)
+        return self._show_repository_archive_with_http_info(request)
 
-    def show_repository_archive_with_http_info(self, request):
-        all_params = ['repository_uuid', 'sha', 'format']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_repository_archive_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2819,14 +2629,10 @@ class CodeHubClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.ShowRepositoryByUuidRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ShowRepositoryByUuidResponse`
         """
-        return self.show_repository_by_uuid_with_http_info(request)
+        return self._show_repository_by_uuid_with_http_info(request)
 
-    def show_repository_by_uuid_with_http_info(self, request):
-        all_params = ['repository_uuid']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_repository_by_uuid_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2879,14 +2685,10 @@ class CodeHubClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.ShowRepositoryStatisticsRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ShowRepositoryStatisticsResponse`
         """
-        return self.show_repository_statistics_with_http_info(request)
+        return self._show_repository_statistics_with_http_info(request)
 
-    def show_repository_statistics_with_http_info(self, request):
-        all_params = ['repository_id', 'show_repository_statistics_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_repository_statistics_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2941,14 +2743,10 @@ class CodeHubClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.ShowStatisticCommitRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ShowStatisticCommitResponse`
         """
-        return self.show_statistic_commit_with_http_info(request)
+        return self._show_statistic_commit_with_http_info(request)
 
-    def show_statistic_commit_with_http_info(self, request):
-        all_params = ['repository_id', 'ref_name', 'begin_date', 'end_date']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_statistic_commit_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3007,14 +2805,10 @@ class CodeHubClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.ShowStatisticCommitV3Request`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ShowStatisticCommitV3Response`
         """
-        return self.show_statistic_commit_v3_with_http_info(request)
+        return self._show_statistic_commit_v3_with_http_info(request)
 
-    def show_statistic_commit_v3_with_http_info(self, request):
-        all_params = ['repository_id', 'ref_name', 'begin_date', 'end_date']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_statistic_commit_v3_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3073,14 +2867,10 @@ class CodeHubClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.ShowStatisticalDataRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ShowStatisticalDataResponse`
         """
-        return self.show_statistical_data_with_http_info(request)
+        return self._show_statistical_data_with_http_info(request)
 
-    def show_statistical_data_with_http_info(self, request):
-        all_params = ['repository_uuid']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_statistical_data_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3133,14 +2923,10 @@ class CodeHubClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.AddSshKeyRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.AddSshKeyResponse`
         """
-        return self.add_ssh_key_with_http_info(request)
+        return self._add_ssh_key_with_http_info(request)
 
-    def add_ssh_key_with_http_info(self, request):
-        all_params = ['public_key']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _add_ssh_key_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3193,14 +2979,10 @@ class CodeHubClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.DeleteSShkeyRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.DeleteSShkeyResponse`
         """
-        return self.delete_s_shkey_with_http_info(request)
+        return self._delete_s_shkey_with_http_info(request)
 
-    def delete_s_shkey_with_http_info(self, request):
-        all_params = ['id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_s_shkey_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3253,14 +3035,10 @@ class CodeHubClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.ListSshKeysRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ListSshKeysResponse`
         """
-        return self.list_ssh_keys_with_http_info(request)
+        return self._list_ssh_keys_with_http_info(request)
 
-    def list_ssh_keys_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_ssh_keys_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3311,14 +3089,10 @@ class CodeHubClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.ShowPrivateKeyVerifyRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ShowPrivateKeyVerifyResponse`
         """
-        return self.show_private_key_verify_with_http_info(request)
+        return self._show_private_key_verify_with_http_info(request)
 
-    def show_private_key_verify_with_http_info(self, request):
-        all_params = ['private_key']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_private_key_verify_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3371,14 +3145,10 @@ class CodeHubClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.ValidateHttpsInfoRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ValidateHttpsInfoResponse`
         """
-        return self.validate_https_info_with_http_info(request)
+        return self._validate_https_info_with_http_info(request)
 
-    def validate_https_info_with_http_info(self, request):
-        all_params = ['iam_user_uuid', 'password']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _validate_https_info_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3433,14 +3203,10 @@ class CodeHubClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.ValidateHttpsInfoV2Request`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ValidateHttpsInfoV2Response`
         """
-        return self.validate_https_info_v2_with_http_info(request)
+        return self._validate_https_info_v2_with_http_info(request)
 
-    def validate_https_info_v2_with_http_info(self, request):
-        all_params = ['iam_user_uuid', 'password']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _validate_https_info_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3495,14 +3261,10 @@ class CodeHubClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.AssociateIssuesRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.AssociateIssuesResponse`
         """
-        return self.associate_issues_with_http_info(request)
+        return self._associate_issues_with_http_info(request)
 
-    def associate_issues_with_http_info(self, request):
-        all_params = ['associate_issues_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _associate_issues_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3555,14 +3317,10 @@ class CodeHubClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.CreateProjectAndRepositoriesRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.CreateProjectAndRepositoriesResponse`
         """
-        return self.create_project_and_repositories_with_http_info(request)
+        return self._create_project_and_repositories_with_http_info(request)
 
-    def create_project_and_repositories_with_http_info(self, request):
-        all_params = ['create_info']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_project_and_repositories_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3615,14 +3373,10 @@ class CodeHubClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.CreateProjectAndforkRepositoriesRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.CreateProjectAndforkRepositoriesResponse`
         """
-        return self.create_project_andfork_repositories_with_http_info(request)
+        return self._create_project_andfork_repositories_with_http_info(request)
 
-    def create_project_andfork_repositories_with_http_info(self, request):
-        all_params = ['create_info']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_project_andfork_repositories_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3675,14 +3429,10 @@ class CodeHubClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.ListUserAllRepositoriesRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ListUserAllRepositoriesResponse`
         """
-        return self.list_user_all_repositories_with_http_info(request)
+        return self._list_user_all_repositories_with_http_info(request)
 
-    def list_user_all_repositories_with_http_info(self, request):
-        all_params = ['page_index', 'page_size', 'search']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_user_all_repositories_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3739,14 +3489,10 @@ class CodeHubClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.ShowAllRepositoryByTwoProjectIdRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ShowAllRepositoryByTwoProjectIdResponse`
         """
-        return self.show_all_repository_by_two_project_id_with_http_info(request)
+        return self._show_all_repository_by_two_project_id_with_http_info(request)
 
-    def show_all_repository_by_two_project_id_with_http_info(self, request):
-        all_params = ['project_uuid', 'page_index', 'page_size', 'search']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_all_repository_by_two_project_id_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3805,14 +3551,10 @@ class CodeHubClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.AddHooksRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.AddHooksResponse`
         """
-        return self.add_hooks_with_http_info(request)
+        return self._add_hooks_with_http_info(request)
 
-    def add_hooks_with_http_info(self, request):
-        all_params = ['group_name', 'repository_name', 'repository_hook_request']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _add_hooks_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3869,14 +3611,10 @@ class CodeHubClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.DeleteHooksRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.DeleteHooksResponse`
         """
-        return self.delete_hooks_with_http_info(request)
+        return self._delete_hooks_with_http_info(request)
 
-    def delete_hooks_with_http_info(self, request):
-        all_params = ['group_name', 'hook_id', 'repository_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_hooks_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3933,14 +3671,10 @@ class CodeHubClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.ListHooksRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ListHooksResponse`
         """
-        return self.list_hooks_with_http_info(request)
+        return self._list_hooks_with_http_info(request)
 
-    def list_hooks_with_http_info(self, request):
-        all_params = ['group_name', 'repository_name', 'hook_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_hooks_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3997,14 +3731,10 @@ class CodeHubClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.CreateNewBranchRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.CreateNewBranchResponse`
         """
-        return self.create_new_branch_with_http_info(request)
+        return self._create_new_branch_with_http_info(request)
 
-    def create_new_branch_with_http_info(self, request):
-        all_params = ['repository_id', 'branch_info']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_new_branch_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

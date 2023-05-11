@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class ProjectManAsyncClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(ProjectManAsyncClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkprojectman.v4.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -54,14 +36,10 @@ class ProjectManAsyncClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.AddApplyJoinProjectForAgcRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.AddApplyJoinProjectForAgcResponse`
         """
-        return self.add_apply_join_project_for_agc_with_http_info(request)
+        return self._add_apply_join_project_for_agc_with_http_info(request)
 
-    def add_apply_join_project_for_agc_with_http_info(self, request):
-        all_params = ['domain_id', 'user_id', 'project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _add_apply_join_project_for_agc_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -119,14 +97,10 @@ class ProjectManAsyncClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.AddMemberV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.AddMemberV4Response`
         """
-        return self.add_member_v4_with_http_info(request)
+        return self._add_member_v4_with_http_info(request)
 
-    def add_member_v4_with_http_info(self, request):
-        all_params = ['project_id', 'add_member_v4_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _add_member_v4_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -182,14 +156,10 @@ class ProjectManAsyncClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.BatchAddMembersV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.BatchAddMembersV4Response`
         """
-        return self.batch_add_members_v4_with_http_info(request)
+        return self._batch_add_members_v4_with_http_info(request)
 
-    def batch_add_members_v4_with_http_info(self, request):
-        all_params = ['project_id', 'batch_add_members_v4_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_add_members_v4_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -245,14 +215,10 @@ class ProjectManAsyncClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.BatchDeleteMembersV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.BatchDeleteMembersV4Response`
         """
-        return self.batch_delete_members_v4_with_http_info(request)
+        return self._batch_delete_members_v4_with_http_info(request)
 
-    def batch_delete_members_v4_with_http_info(self, request):
-        all_params = ['project_id', 'batch_delete_members_v4_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_delete_members_v4_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -308,14 +274,10 @@ class ProjectManAsyncClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.BatchUpdateChildNickNamesRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.BatchUpdateChildNickNamesResponse`
         """
-        return self.batch_update_child_nick_names_with_http_info(request)
+        return self._batch_update_child_nick_names_with_http_info(request)
 
-    def batch_update_child_nick_names_with_http_info(self, request):
-        all_params = ['batch_update_child_nick_names_requestbody']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_update_child_nick_names_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -369,14 +331,10 @@ class ProjectManAsyncClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.CheckProjectNameV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.CheckProjectNameV4Response`
         """
-        return self.check_project_name_v4_with_http_info(request)
+        return self._check_project_name_v4_with_http_info(request)
 
-    def check_project_name_v4_with_http_info(self, request):
-        all_params = ['check_project_name_v4_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _check_project_name_v4_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -430,14 +388,10 @@ class ProjectManAsyncClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.CreateProjectV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.CreateProjectV4Response`
         """
-        return self.create_project_v4_with_http_info(request)
+        return self._create_project_v4_with_http_info(request)
 
-    def create_project_v4_with_http_info(self, request):
-        all_params = ['create_project_v4_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_project_v4_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -491,14 +445,10 @@ class ProjectManAsyncClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.DeleteProjectV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.DeleteProjectV4Response`
         """
-        return self.delete_project_v4_with_http_info(request)
+        return self._delete_project_v4_with_http_info(request)
 
-    def delete_project_v4_with_http_info(self, request):
-        all_params = ['project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_project_v4_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -552,14 +502,10 @@ class ProjectManAsyncClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.ListDomainNotAddedProjectsV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ListDomainNotAddedProjectsV4Response`
         """
-        return self.list_domain_not_added_projects_v4_with_http_info(request)
+        return self._list_domain_not_added_projects_v4_with_http_info(request)
 
-    def list_domain_not_added_projects_v4_with_http_info(self, request):
-        all_params = ['offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_domain_not_added_projects_v4_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -615,14 +561,10 @@ class ProjectManAsyncClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.ListProjectBugStaticsV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ListProjectBugStaticsV4Response`
         """
-        return self.list_project_bug_statics_v4_with_http_info(request)
+        return self._list_project_bug_statics_v4_with_http_info(request)
 
-    def list_project_bug_statics_v4_with_http_info(self, request):
-        all_params = ['project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_project_bug_statics_v4_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -676,14 +618,10 @@ class ProjectManAsyncClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.ListProjectDemandStaticV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ListProjectDemandStaticV4Response`
         """
-        return self.list_project_demand_static_v4_with_http_info(request)
+        return self._list_project_demand_static_v4_with_http_info(request)
 
-    def list_project_demand_static_v4_with_http_info(self, request):
-        all_params = ['project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_project_demand_static_v4_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -737,14 +675,10 @@ class ProjectManAsyncClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.ListProjectMembersV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ListProjectMembersV4Response`
         """
-        return self.list_project_members_v4_with_http_info(request)
+        return self._list_project_members_v4_with_http_info(request)
 
-    def list_project_members_v4_with_http_info(self, request):
-        all_params = ['project_id', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_project_members_v4_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -802,14 +736,10 @@ class ProjectManAsyncClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.ListProjectsV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ListProjectsV4Response`
         """
-        return self.list_projects_v4_with_http_info(request)
+        return self._list_projects_v4_with_http_info(request)
 
-    def list_projects_v4_with_http_info(self, request):
-        all_params = ['offset', 'limit', 'search', 'project_type', 'sort', 'archive', 'query_type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_projects_v4_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -875,14 +805,10 @@ class ProjectManAsyncClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.ListWorkitemStatusRecordsV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ListWorkitemStatusRecordsV4Response`
         """
-        return self.list_workitem_status_records_v4_with_http_info(request)
+        return self._list_workitem_status_records_v4_with_http_info(request)
 
-    def list_workitem_status_records_v4_with_http_info(self, request):
-        all_params = ['project_id', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_workitem_status_records_v4_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -940,14 +866,10 @@ class ProjectManAsyncClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.ListWorkitemsRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ListWorkitemsResponse`
         """
-        return self.list_workitems_with_http_info(request)
+        return self._list_workitems_with_http_info(request)
 
-    def list_workitems_with_http_info(self, request):
-        all_params = ['project_id', 'offset', 'limit', 'created_time_interval']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_workitems_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1007,14 +929,10 @@ class ProjectManAsyncClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.RemoveProjectRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.RemoveProjectResponse`
         """
-        return self.remove_project_with_http_info(request)
+        return self._remove_project_with_http_info(request)
 
-    def remove_project_with_http_info(self, request):
-        all_params = ['project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _remove_project_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1068,14 +986,10 @@ class ProjectManAsyncClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.ShowBugDensityV2Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ShowBugDensityV2Response`
         """
-        return self.show_bug_density_v2_with_http_info(request)
+        return self._show_bug_density_v2_with_http_info(request)
 
-    def show_bug_density_v2_with_http_info(self, request):
-        all_params = ['project_id', 'show_bug_density_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_bug_density_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1131,14 +1045,10 @@ class ProjectManAsyncClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.ShowBugsPerDeveloperRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ShowBugsPerDeveloperResponse`
         """
-        return self.show_bugs_per_developer_with_http_info(request)
+        return self._show_bugs_per_developer_with_http_info(request)
 
-    def show_bugs_per_developer_with_http_info(self, request):
-        all_params = ['project_id', 'show_bugs_per_developer_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_bugs_per_developer_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1194,14 +1104,10 @@ class ProjectManAsyncClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.ShowCompletionRateRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ShowCompletionRateResponse`
         """
-        return self.show_completion_rate_with_http_info(request)
+        return self._show_completion_rate_with_http_info(request)
 
-    def show_completion_rate_with_http_info(self, request):
-        all_params = ['project_id', 'show_completion_rate_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_completion_rate_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1257,14 +1163,10 @@ class ProjectManAsyncClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.ShowCurUserInfoRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ShowCurUserInfoResponse`
         """
-        return self.show_cur_user_info_with_http_info(request)
+        return self._show_cur_user_info_with_http_info(request)
 
-    def show_cur_user_info_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_cur_user_info_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1316,14 +1218,10 @@ class ProjectManAsyncClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.ShowCurUserRoleRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ShowCurUserRoleResponse`
         """
-        return self.show_cur_user_role_with_http_info(request)
+        return self._show_cur_user_role_with_http_info(request)
 
-    def show_cur_user_role_with_http_info(self, request):
-        all_params = ['project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_cur_user_role_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1377,14 +1275,10 @@ class ProjectManAsyncClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.ShowProjectInfoV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ShowProjectInfoV4Response`
         """
-        return self.show_project_info_v4_with_http_info(request)
+        return self._show_project_info_v4_with_http_info(request)
 
-    def show_project_info_v4_with_http_info(self, request):
-        all_params = ['project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_project_info_v4_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1438,14 +1332,10 @@ class ProjectManAsyncClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.ShowProjectSummaryV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ShowProjectSummaryV4Response`
         """
-        return self.show_project_summary_v4_with_http_info(request)
+        return self._show_project_summary_v4_with_http_info(request)
 
-    def show_project_summary_v4_with_http_info(self, request):
-        all_params = ['project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_project_summary_v4_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1499,14 +1389,10 @@ class ProjectManAsyncClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.ShowWorkItemWrokflowConfigRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ShowWorkItemWrokflowConfigResponse`
         """
-        return self.show_work_item_wrokflow_config_with_http_info(request)
+        return self._show_work_item_wrokflow_config_with_http_info(request)
 
-    def show_work_item_wrokflow_config_with_http_info(self, request):
-        all_params = ['project_id', 'board_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_work_item_wrokflow_config_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1562,14 +1448,10 @@ class ProjectManAsyncClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.UpdateMembesRoleV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.UpdateMembesRoleV4Response`
         """
-        return self.update_membes_role_v4_with_http_info(request)
+        return self._update_membes_role_v4_with_http_info(request)
 
-    def update_membes_role_v4_with_http_info(self, request):
-        all_params = ['project_id', 'update_membes_role_v4_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_membes_role_v4_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1625,14 +1507,10 @@ class ProjectManAsyncClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.UpdateNickNameV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.UpdateNickNameV4Response`
         """
-        return self.update_nick_name_v4_with_http_info(request)
+        return self._update_nick_name_v4_with_http_info(request)
 
-    def update_nick_name_v4_with_http_info(self, request):
-        all_params = ['update_nick_name_v4_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_nick_name_v4_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1686,14 +1564,10 @@ class ProjectManAsyncClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.UpdateProjectV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.UpdateProjectV4Response`
         """
-        return self.update_project_v4_with_http_info(request)
+        return self._update_project_v4_with_http_info(request)
 
-    def update_project_v4_with_http_info(self, request):
-        all_params = ['project_id', 'update_project_v4_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_project_v4_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1749,14 +1623,10 @@ class ProjectManAsyncClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.BatchDeleteIssuesV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.BatchDeleteIssuesV4Response`
         """
-        return self.batch_delete_issues_v4_with_http_info(request)
+        return self._batch_delete_issues_v4_with_http_info(request)
 
-    def batch_delete_issues_v4_with_http_info(self, request):
-        all_params = ['project_id', 'batch_delete_issues_v4_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_delete_issues_v4_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1812,14 +1682,10 @@ class ProjectManAsyncClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.BatchDeleteIterationsV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.BatchDeleteIterationsV4Response`
         """
-        return self.batch_delete_iterations_v4_with_http_info(request)
+        return self._batch_delete_iterations_v4_with_http_info(request)
 
-    def batch_delete_iterations_v4_with_http_info(self, request):
-        all_params = ['project_id', 'batch_delete_iterations_v4_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_delete_iterations_v4_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1875,14 +1741,10 @@ class ProjectManAsyncClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.CancelProjectDomainRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.CancelProjectDomainResponse`
         """
-        return self.cancel_project_domain_with_http_info(request)
+        return self._cancel_project_domain_with_http_info(request)
 
-    def cancel_project_domain_with_http_info(self, request):
-        all_params = ['project_id', 'domain_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _cancel_project_domain_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1938,14 +1800,10 @@ class ProjectManAsyncClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.CreateCustomfieldsRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.CreateCustomfieldsResponse`
         """
-        return self.create_customfields_with_http_info(request)
+        return self._create_customfields_with_http_info(request)
 
-    def create_customfields_with_http_info(self, request):
-        all_params = ['project_id', 'create_custom_fields_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_customfields_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2001,14 +1859,10 @@ class ProjectManAsyncClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.CreateIssueV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.CreateIssueV4Response`
         """
-        return self.create_issue_v4_with_http_info(request)
+        return self._create_issue_v4_with_http_info(request)
 
-    def create_issue_v4_with_http_info(self, request):
-        all_params = ['project_id', 'create_issue_v4_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_issue_v4_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2064,14 +1918,10 @@ class ProjectManAsyncClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.CreateIterationV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.CreateIterationV4Response`
         """
-        return self.create_iteration_v4_with_http_info(request)
+        return self._create_iteration_v4_with_http_info(request)
 
-    def create_iteration_v4_with_http_info(self, request):
-        all_params = ['project_id', 'create_iteration_v4_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_iteration_v4_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2127,14 +1977,10 @@ class ProjectManAsyncClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.CreateProjectDomainRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.CreateProjectDomainResponse`
         """
-        return self.create_project_domain_with_http_info(request)
+        return self._create_project_domain_with_http_info(request)
 
-    def create_project_domain_with_http_info(self, request):
-        all_params = ['project_id', 'create_project_domain_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_project_domain_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2190,14 +2036,10 @@ class ProjectManAsyncClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.CreateProjectModuleRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.CreateProjectModuleResponse`
         """
-        return self.create_project_module_with_http_info(request)
+        return self._create_project_module_with_http_info(request)
 
-    def create_project_module_with_http_info(self, request):
-        all_params = ['project_id', 'create_project_module_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_project_module_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2253,14 +2095,10 @@ class ProjectManAsyncClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.CreateSystemIssueV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.CreateSystemIssueV4Response`
         """
-        return self.create_system_issue_v4_with_http_info(request)
+        return self._create_system_issue_v4_with_http_info(request)
 
-    def create_system_issue_v4_with_http_info(self, request):
-        all_params = ['project_id', 'create_system_issue_v4_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_system_issue_v4_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2316,14 +2154,10 @@ class ProjectManAsyncClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.DeleteAttachmentRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.DeleteAttachmentResponse`
         """
-        return self.delete_attachment_with_http_info(request)
+        return self._delete_attachment_with_http_info(request)
 
-    def delete_attachment_with_http_info(self, request):
-        all_params = ['project_id', 'issue_id', 'attachment_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_attachment_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2381,14 +2215,10 @@ class ProjectManAsyncClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.DeleteIssueV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.DeleteIssueV4Response`
         """
-        return self.delete_issue_v4_with_http_info(request)
+        return self._delete_issue_v4_with_http_info(request)
 
-    def delete_issue_v4_with_http_info(self, request):
-        all_params = ['project_id', 'issue_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_issue_v4_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2444,14 +2274,10 @@ class ProjectManAsyncClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.DeleteIterationV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.DeleteIterationV4Response`
         """
-        return self.delete_iteration_v4_with_http_info(request)
+        return self._delete_iteration_v4_with_http_info(request)
 
-    def delete_iteration_v4_with_http_info(self, request):
-        all_params = ['project_id', 'iteration_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_iteration_v4_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2507,14 +2333,10 @@ class ProjectManAsyncClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.DeleteProjectModuleRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.DeleteProjectModuleResponse`
         """
-        return self.delete_project_module_with_http_info(request)
+        return self._delete_project_module_with_http_info(request)
 
-    def delete_project_module_with_http_info(self, request):
-        all_params = ['project_id', 'module_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_project_module_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2570,14 +2392,10 @@ class ProjectManAsyncClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.DownloadAttachmentRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.DownloadAttachmentResponse`
         """
-        return self.download_attachment_with_http_info(request)
+        return self._download_attachment_with_http_info(request)
 
-    def download_attachment_with_http_info(self, request):
-        all_params = ['project_id', 'issue_id', 'attachment_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _download_attachment_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2635,14 +2453,10 @@ class ProjectManAsyncClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.DownloadImageFileRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.DownloadImageFileResponse`
         """
-        return self.download_image_file_with_http_info(request)
+        return self._download_image_file_with_http_info(request)
 
-    def download_image_file_with_http_info(self, request):
-        all_params = ['project_id', 'image_uri']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _download_image_file_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2698,14 +2512,10 @@ class ProjectManAsyncClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.ListAssociatedIssuesRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ListAssociatedIssuesResponse`
         """
-        return self.list_associated_issues_with_http_info(request)
+        return self._list_associated_issues_with_http_info(request)
 
-    def list_associated_issues_with_http_info(self, request):
-        all_params = ['project_id', 'issue_id', 'limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_associated_issues_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2765,14 +2575,10 @@ class ProjectManAsyncClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.ListAssociatedTestCasesRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ListAssociatedTestCasesResponse`
         """
-        return self.list_associated_test_cases_with_http_info(request)
+        return self._list_associated_test_cases_with_http_info(request)
 
-    def list_associated_test_cases_with_http_info(self, request):
-        all_params = ['project_id', 'issue_id', 'limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_associated_test_cases_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2832,14 +2638,10 @@ class ProjectManAsyncClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.ListAssociatedWikisRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ListAssociatedWikisResponse`
         """
-        return self.list_associated_wikis_with_http_info(request)
+        return self._list_associated_wikis_with_http_info(request)
 
-    def list_associated_wikis_with_http_info(self, request):
-        all_params = ['project_id', 'issue_id', 'limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_associated_wikis_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2899,14 +2701,10 @@ class ProjectManAsyncClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.ListChildIssuesV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ListChildIssuesV4Response`
         """
-        return self.list_child_issues_v4_with_http_info(request)
+        return self._list_child_issues_v4_with_http_info(request)
 
-    def list_child_issues_v4_with_http_info(self, request):
-        all_params = ['project_id', 'issue_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_child_issues_v4_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2962,14 +2760,10 @@ class ProjectManAsyncClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.ListIssueAssociatedCommitsRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ListIssueAssociatedCommitsResponse`
         """
-        return self.list_issue_associated_commits_with_http_info(request)
+        return self._list_issue_associated_commits_with_http_info(request)
 
-    def list_issue_associated_commits_with_http_info(self, request):
-        all_params = ['project_id', 'issue_id', 'type', 'limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_issue_associated_commits_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3031,14 +2825,10 @@ class ProjectManAsyncClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.ListIssueCommentsV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ListIssueCommentsV4Response`
         """
-        return self.list_issue_comments_v4_with_http_info(request)
+        return self._list_issue_comments_v4_with_http_info(request)
 
-    def list_issue_comments_v4_with_http_info(self, request):
-        all_params = ['project_id', 'issue_id', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_issue_comments_v4_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3098,14 +2888,10 @@ class ProjectManAsyncClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.ListIssueCustomFieldsRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ListIssueCustomFieldsResponse`
         """
-        return self.list_issue_custom_fields_with_http_info(request)
+        return self._list_issue_custom_fields_with_http_info(request)
 
-    def list_issue_custom_fields_with_http_info(self, request):
-        all_params = ['project_id', 'list_issue_custom_fields_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_issue_custom_fields_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3161,14 +2947,10 @@ class ProjectManAsyncClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.ListIssueRecordsV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ListIssueRecordsV4Response`
         """
-        return self.list_issue_records_v4_with_http_info(request)
+        return self._list_issue_records_v4_with_http_info(request)
 
-    def list_issue_records_v4_with_http_info(self, request):
-        all_params = ['project_id', 'issue_id', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_issue_records_v4_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3228,14 +3010,10 @@ class ProjectManAsyncClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.ListIssuesSfV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ListIssuesSfV4Response`
         """
-        return self.list_issues_sf_v4_with_http_info(request)
+        return self._list_issues_sf_v4_with_http_info(request)
 
-    def list_issues_sf_v4_with_http_info(self, request):
-        all_params = ['project_id', 'offset', 'limit', 'tracker_id', 'created_time_interval', 'updated_time_interval']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_issues_sf_v4_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3299,14 +3077,10 @@ class ProjectManAsyncClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.ListIssuesV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ListIssuesV4Response`
         """
-        return self.list_issues_v4_with_http_info(request)
+        return self._list_issues_v4_with_http_info(request)
 
-    def list_issues_v4_with_http_info(self, request):
-        all_params = ['project_id', 'list_issues_v4_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_issues_v4_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3362,14 +3136,10 @@ class ProjectManAsyncClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.ListIterationHistoriesRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ListIterationHistoriesResponse`
         """
-        return self.list_iteration_histories_with_http_info(request)
+        return self._list_iteration_histories_with_http_info(request)
 
-    def list_iteration_histories_with_http_info(self, request):
-        all_params = ['iteration_id', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_iteration_histories_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3427,14 +3197,10 @@ class ProjectManAsyncClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.ListProjectDomainsRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ListProjectDomainsResponse`
         """
-        return self.list_project_domains_with_http_info(request)
+        return self._list_project_domains_with_http_info(request)
 
-    def list_project_domains_with_http_info(self, request):
-        all_params = ['project_id', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_project_domains_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3492,14 +3258,10 @@ class ProjectManAsyncClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.ListProjectIssuesRecordsV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ListProjectIssuesRecordsV4Response`
         """
-        return self.list_project_issues_records_v4_with_http_info(request)
+        return self._list_project_issues_records_v4_with_http_info(request)
 
-    def list_project_issues_records_v4_with_http_info(self, request):
-        all_params = ['project_id', 'offset', 'limit', 'operated_time_interval']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_project_issues_records_v4_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3559,14 +3321,10 @@ class ProjectManAsyncClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.ListProjectIterationsV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ListProjectIterationsV4Response`
         """
-        return self.list_project_iterations_v4_with_http_info(request)
+        return self._list_project_iterations_v4_with_http_info(request)
 
-    def list_project_iterations_v4_with_http_info(self, request):
-        all_params = ['project_id', 'updated_time_interval', 'include_deleted']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_project_iterations_v4_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3624,14 +3382,10 @@ class ProjectManAsyncClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.ListProjectModulesRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ListProjectModulesResponse`
         """
-        return self.list_project_modules_with_http_info(request)
+        return self._list_project_modules_with_http_info(request)
 
-    def list_project_modules_with_http_info(self, request):
-        all_params = ['project_id', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_project_modules_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3689,14 +3443,10 @@ class ProjectManAsyncClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.ListProjectWorkHoursRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ListProjectWorkHoursResponse`
         """
-        return self.list_project_work_hours_with_http_info(request)
+        return self._list_project_work_hours_with_http_info(request)
 
-    def list_project_work_hours_with_http_info(self, request):
-        all_params = ['list_project_work_hours_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_project_work_hours_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3750,14 +3500,10 @@ class ProjectManAsyncClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.ListScrumProjectStatusesRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ListScrumProjectStatusesResponse`
         """
-        return self.list_scrum_project_statuses_with_http_info(request)
+        return self._list_scrum_project_statuses_with_http_info(request)
 
-    def list_scrum_project_statuses_with_http_info(self, request):
-        all_params = ['project_id', 'offset', 'limit', 'tracker_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_scrum_project_statuses_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3817,14 +3563,10 @@ class ProjectManAsyncClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.ListSpecIssueStayTimesRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ListSpecIssueStayTimesResponse`
         """
-        return self.list_spec_issue_stay_times_with_http_info(request)
+        return self._list_spec_issue_stay_times_with_http_info(request)
 
-    def list_spec_issue_stay_times_with_http_info(self, request):
-        all_params = ['list_spec_issue_stay_times_request']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_spec_issue_stay_times_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3878,14 +3620,10 @@ class ProjectManAsyncClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.ListStatusStatisticRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ListStatusStatisticResponse`
         """
-        return self.list_status_statistic_with_http_info(request)
+        return self._list_status_statistic_with_http_info(request)
 
-    def list_status_statistic_with_http_info(self, request):
-        all_params = ['project_id', 'iteration_id', 'tracker_id', 'status_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_status_statistic_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3945,14 +3683,10 @@ class ProjectManAsyncClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.ShowIssueCompletionRateRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ShowIssueCompletionRateResponse`
         """
-        return self.show_issue_completion_rate_with_http_info(request)
+        return self._show_issue_completion_rate_with_http_info(request)
 
-    def show_issue_completion_rate_with_http_info(self, request):
-        all_params = ['project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_issue_completion_rate_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4006,14 +3740,10 @@ class ProjectManAsyncClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.ShowIssueV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ShowIssueV4Response`
         """
-        return self.show_issue_v4_with_http_info(request)
+        return self._show_issue_v4_with_http_info(request)
 
-    def show_issue_v4_with_http_info(self, request):
-        all_params = ['project_id', 'issue_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_issue_v4_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4069,14 +3799,10 @@ class ProjectManAsyncClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.ShowIssuesWrokFlowConfigRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ShowIssuesWrokFlowConfigResponse`
         """
-        return self.show_issues_wrok_flow_config_with_http_info(request)
+        return self._show_issues_wrok_flow_config_with_http_info(request)
 
-    def show_issues_wrok_flow_config_with_http_info(self, request):
-        all_params = ['project_id', 'tracker_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_issues_wrok_flow_config_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4132,14 +3858,10 @@ class ProjectManAsyncClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.ShowIterationV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ShowIterationV4Response`
         """
-        return self.show_iteration_v4_with_http_info(request)
+        return self._show_iteration_v4_with_http_info(request)
 
-    def show_iteration_v4_with_http_info(self, request):
-        all_params = ['iteration_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_iteration_v4_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4193,14 +3915,10 @@ class ProjectManAsyncClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.ShowProjectWorkHoursRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ShowProjectWorkHoursResponse`
         """
-        return self.show_project_work_hours_with_http_info(request)
+        return self._show_project_work_hours_with_http_info(request)
 
-    def show_project_work_hours_with_http_info(self, request):
-        all_params = ['project_id', 'show_project_work_hours_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_project_work_hours_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4256,14 +3974,10 @@ class ProjectManAsyncClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.UpdateIssueV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.UpdateIssueV4Response`
         """
-        return self.update_issue_v4_with_http_info(request)
+        return self._update_issue_v4_with_http_info(request)
 
-    def update_issue_v4_with_http_info(self, request):
-        all_params = ['project_id', 'issue_id', 'update_issue_v4_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_issue_v4_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4321,14 +4035,10 @@ class ProjectManAsyncClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.UpdateIterationV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.UpdateIterationV4Response`
         """
-        return self.update_iteration_v4_with_http_info(request)
+        return self._update_iteration_v4_with_http_info(request)
 
-    def update_iteration_v4_with_http_info(self, request):
-        all_params = ['project_id', 'iteration_id', 'update_iteration_v4_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_iteration_v4_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4386,14 +4096,10 @@ class ProjectManAsyncClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.UpdateProjectDomainRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.UpdateProjectDomainResponse`
         """
-        return self.update_project_domain_with_http_info(request)
+        return self._update_project_domain_with_http_info(request)
 
-    def update_project_domain_with_http_info(self, request):
-        all_params = ['project_id', 'domain_id', 'update_project_domain_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_project_domain_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4451,14 +4157,10 @@ class ProjectManAsyncClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.UpdateProjectModuleRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.UpdateProjectModuleResponse`
         """
-        return self.update_project_module_with_http_info(request)
+        return self._update_project_module_with_http_info(request)
 
-    def update_project_module_with_http_info(self, request):
-        all_params = ['project_id', 'module_id', 'update_project_module_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_project_module_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4516,14 +4218,10 @@ class ProjectManAsyncClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.UploadAttachmentsRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.UploadAttachmentsResponse`
         """
-        return self.upload_attachments_with_http_info(request)
+        return self._upload_attachments_with_http_info(request)
 
-    def upload_attachments_with_http_info(self, request):
-        all_params = ['project_id', 'issue_id', 'attachment']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _upload_attachments_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4583,14 +4281,10 @@ class ProjectManAsyncClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.UploadIssueImgRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.UploadIssueImgResponse`
         """
-        return self.upload_issue_img_with_http_info(request)
+        return self._upload_issue_img_with_http_info(request)
 
-    def upload_issue_img_with_http_info(self, request):
-        all_params = ['project_id', 'file']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _upload_issue_img_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

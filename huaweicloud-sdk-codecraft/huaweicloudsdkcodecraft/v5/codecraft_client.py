@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class CodeCraftClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(CodeCraftClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkcodecraft.v5.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -53,14 +35,10 @@ class CodeCraftClient(Client):
         :type request: :class:`huaweicloudsdkcodecraft.v5.CreateCompetitionScoreRequest`
         :rtype: :class:`huaweicloudsdkcodecraft.v5.CreateCompetitionScoreResponse`
         """
-        return self.create_competition_score_with_http_info(request)
+        return self._create_competition_score_with_http_info(request)
 
-    def create_competition_score_with_http_info(self, request):
-        all_params = ['create_competition_score_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_competition_score_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -113,14 +91,10 @@ class CodeCraftClient(Client):
         :type request: :class:`huaweicloudsdkcodecraft.v5.ListCompetitionWorksRequest`
         :rtype: :class:`huaweicloudsdkcodecraft.v5.ListCompetitionWorksResponse`
         """
-        return self.list_competition_works_with_http_info(request)
+        return self._list_competition_works_with_http_info(request)
 
-    def list_competition_works_with_http_info(self, request):
-        all_params = ['competition_id', 'stage_id', 'read_time', 'time_unit', 'offset', 'limit', 'sort_key', 'sort_dir']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_competition_works_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -187,14 +161,10 @@ class CodeCraftClient(Client):
         :type request: :class:`huaweicloudsdkcodecraft.v5.RegisterCompetitionInfoRequest`
         :rtype: :class:`huaweicloudsdkcodecraft.v5.RegisterCompetitionInfoResponse`
         """
-        return self.register_competition_info_with_http_info(request)
+        return self._register_competition_info_with_http_info(request)
 
-    def register_competition_info_with_http_info(self, request):
-        all_params = ['register_competition_info_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _register_competition_info_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -247,14 +217,10 @@ class CodeCraftClient(Client):
         :type request: :class:`huaweicloudsdkcodecraft.v5.UpdateCompetitionScoreRequest`
         :rtype: :class:`huaweicloudsdkcodecraft.v5.UpdateCompetitionScoreResponse`
         """
-        return self.update_competition_score_with_http_info(request)
+        return self._update_competition_score_with_http_info(request)
 
-    def update_competition_score_with_http_info(self, request):
-        all_params = ['update_competition_score_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_competition_score_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

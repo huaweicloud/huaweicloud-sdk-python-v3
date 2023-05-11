@@ -1,9 +1,6 @@
 # coding: utf-8
 
-import re
 import six
-
-
 
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
@@ -20,28 +17,42 @@ class ExecuteGetFramsListByImagesIdRequest:
     sensitive_list = []
 
     openapi_types = {
-        'image_id': 'str'
+        'image_id': 'str',
+        'offset': 'int',
+        'limit': 'int'
     }
 
     attribute_map = {
-        'image_id': 'image_id'
+        'image_id': 'image_id',
+        'offset': 'offset',
+        'limit': 'limit'
     }
 
-    def __init__(self, image_id=None):
+    def __init__(self, image_id=None, offset=None, limit=None):
         """ExecuteGetFramsListByImagesIdRequest
 
         The model defined in huaweicloud sdk
 
         :param image_id: 图片id
         :type image_id: str
+        :param offset: 偏移量，默认为零
+        :type offset: int
+        :param limit: 分页限制数
+        :type limit: int
         """
         
         
 
         self._image_id = None
+        self._offset = None
+        self._limit = None
         self.discriminator = None
 
         self.image_id = image_id
+        if offset is not None:
+            self.offset = offset
+        if limit is not None:
+            self.limit = limit
 
     @property
     def image_id(self):
@@ -64,6 +75,50 @@ class ExecuteGetFramsListByImagesIdRequest:
         :type image_id: str
         """
         self._image_id = image_id
+
+    @property
+    def offset(self):
+        """Gets the offset of this ExecuteGetFramsListByImagesIdRequest.
+
+        偏移量，默认为零
+
+        :return: The offset of this ExecuteGetFramsListByImagesIdRequest.
+        :rtype: int
+        """
+        return self._offset
+
+    @offset.setter
+    def offset(self, offset):
+        """Sets the offset of this ExecuteGetFramsListByImagesIdRequest.
+
+        偏移量，默认为零
+
+        :param offset: The offset of this ExecuteGetFramsListByImagesIdRequest.
+        :type offset: int
+        """
+        self._offset = offset
+
+    @property
+    def limit(self):
+        """Gets the limit of this ExecuteGetFramsListByImagesIdRequest.
+
+        分页限制数
+
+        :return: The limit of this ExecuteGetFramsListByImagesIdRequest.
+        :rtype: int
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        """Sets the limit of this ExecuteGetFramsListByImagesIdRequest.
+
+        分页限制数
+
+        :param limit: The limit of this ExecuteGetFramsListByImagesIdRequest.
+        :type limit: int
+        """
+        self._limit = limit
 
     def to_dict(self):
         """Returns the model properties as a dict"""

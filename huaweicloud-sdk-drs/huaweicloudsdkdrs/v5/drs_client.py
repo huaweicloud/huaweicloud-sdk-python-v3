@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class DrsClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(DrsClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkdrs.v5.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -53,14 +35,10 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v5.BatchCreateJobsAsyncRequest`
         :rtype: :class:`huaweicloudsdkdrs.v5.BatchCreateJobsAsyncResponse`
         """
-        return self.batch_create_jobs_async_with_http_info(request)
+        return self._batch_create_jobs_async_with_http_info(request)
 
-    def batch_create_jobs_async_with_http_info(self, request):
-        all_params = ['request_body', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_create_jobs_async_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -115,14 +93,10 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v5.BatchDeleteJobsByIdRequest`
         :rtype: :class:`huaweicloudsdkdrs.v5.BatchDeleteJobsByIdResponse`
         """
-        return self.batch_delete_jobs_by_id_with_http_info(request)
+        return self._batch_delete_jobs_by_id_with_http_info(request)
 
-    def batch_delete_jobs_by_id_with_http_info(self, request):
-        all_params = ['request_body', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_delete_jobs_by_id_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -177,14 +151,10 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v5.BatchExecuteJobActionsRequest`
         :rtype: :class:`huaweicloudsdkdrs.v5.BatchExecuteJobActionsResponse`
         """
-        return self.batch_execute_job_actions_with_http_info(request)
+        return self._batch_execute_job_actions_with_http_info(request)
 
-    def batch_execute_job_actions_with_http_info(self, request):
-        all_params = ['request_body', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_execute_job_actions_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -242,14 +212,10 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v5.CollectDbObjectsAsyncRequest`
         :rtype: :class:`huaweicloudsdkdrs.v5.CollectDbObjectsAsyncResponse`
         """
-        return self.collect_db_objects_async_with_http_info(request)
+        return self._collect_db_objects_async_with_http_info(request)
 
-    def collect_db_objects_async_with_http_info(self, request):
-        all_params = ['job_id', 'type', 'x_language', 'offset', 'limit', 'is_refresh', 'db_names']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _collect_db_objects_async_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -315,14 +281,10 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v5.CommitAsyncJobRequest`
         :rtype: :class:`huaweicloudsdkdrs.v5.CommitAsyncJobResponse`
         """
-        return self.commit_async_job_with_http_info(request)
+        return self._commit_async_job_with_http_info(request)
 
-    def commit_async_job_with_http_info(self, request):
-        all_params = ['async_job_id', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _commit_async_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -377,14 +339,10 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v5.CreateJobRequest`
         :rtype: :class:`huaweicloudsdkdrs.v5.CreateJobResponse`
         """
-        return self.create_job_with_http_info(request)
+        return self._create_job_with_http_info(request)
 
-    def create_job_with_http_info(self, request):
-        all_params = ['request_body', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -439,14 +397,10 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v5.DeleteJobRequest`
         :rtype: :class:`huaweicloudsdkdrs.v5.DeleteJobResponse`
         """
-        return self.delete_job_with_http_info(request)
+        return self._delete_job_with_http_info(request)
 
-    def delete_job_with_http_info(self, request):
-        all_params = ['job_id', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -501,14 +455,10 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v5.DownloadDbObjectTemplateRequest`
         :rtype: :class:`huaweicloudsdkdrs.v5.DownloadDbObjectTemplateResponse`
         """
-        return self.download_db_object_template_with_http_info(request)
+        return self._download_db_object_template_with_http_info(request)
 
-    def download_db_object_template_with_http_info(self, request):
-        all_params = ['job_id', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _download_db_object_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -563,14 +513,10 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v5.ExecuteJobActionRequest`
         :rtype: :class:`huaweicloudsdkdrs.v5.ExecuteJobActionResponse`
         """
-        return self.execute_job_action_with_http_info(request)
+        return self._execute_job_action_with_http_info(request)
 
-    def execute_job_action_with_http_info(self, request):
-        all_params = ['job_id', 'request_body', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _execute_job_action_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -627,14 +573,10 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v5.ListAsyncJobDetailRequest`
         :rtype: :class:`huaweicloudsdkdrs.v5.ListAsyncJobDetailResponse`
         """
-        return self.list_async_job_detail_with_http_info(request)
+        return self._list_async_job_detail_with_http_info(request)
 
-    def list_async_job_detail_with_http_info(self, request):
-        all_params = ['async_job_id', 'x_language', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_async_job_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -693,14 +635,10 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v5.ListAsyncJobsRequest`
         :rtype: :class:`huaweicloudsdkdrs.v5.ListAsyncJobsResponse`
         """
-        return self.list_async_jobs_with_http_info(request)
+        return self._list_async_jobs_with_http_info(request)
 
-    def list_async_jobs_with_http_info(self, request):
-        all_params = ['x_language', 'async_job_id', 'status', 'domain_name', 'user_name', 'offset', 'limit', 'sort_key', 'sort_dir']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_async_jobs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -769,14 +707,10 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v5.ListDbObjectsRequest`
         :rtype: :class:`huaweicloudsdkdrs.v5.ListDbObjectsResponse`
         """
-        return self.list_db_objects_with_http_info(request)
+        return self._list_db_objects_with_http_info(request)
 
-    def list_db_objects_with_http_info(self, request):
-        all_params = ['job_id', 'type', 'x_language', 'offset', 'limit', 'db_names']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_db_objects_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -840,14 +774,10 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v5.ListJobsRequest`
         :rtype: :class:`huaweicloudsdkdrs.v5.ListJobsResponse`
         """
-        return self.list_jobs_with_http_info(request)
+        return self._list_jobs_with_http_info(request)
 
-    def list_jobs_with_http_info(self, request):
-        all_params = ['job_type', 'x_language', 'name', 'status', 'engine_type', 'net_type', 'enterprise_project_id', 'offset', 'limit', 'sort_key', 'sort_dir']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_jobs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -920,14 +850,10 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v5.ListLinksRequest`
         :rtype: :class:`huaweicloudsdkdrs.v5.ListLinksResponse`
         """
-        return self.list_links_with_http_info(request)
+        return self._list_links_with_http_info(request)
 
-    def list_links_with_http_info(self, request):
-        all_params = ['job_type', 'x_language', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_links_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -986,14 +912,10 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v5.ShowDbObjectCollectionStatusRequest`
         :rtype: :class:`huaweicloudsdkdrs.v5.ShowDbObjectCollectionStatusResponse`
         """
-        return self.show_db_object_collection_status_with_http_info(request)
+        return self._show_db_object_collection_status_with_http_info(request)
 
-    def show_db_object_collection_status_with_http_info(self, request):
-        all_params = ['job_id', 'query_id', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_db_object_collection_status_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1050,14 +972,10 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v5.ShowDbObjectTemplateProgressRequest`
         :rtype: :class:`huaweicloudsdkdrs.v5.ShowDbObjectTemplateProgressResponse`
         """
-        return self.show_db_object_template_progress_with_http_info(request)
+        return self._show_db_object_template_progress_with_http_info(request)
 
-    def show_db_object_template_progress_with_http_info(self, request):
-        all_params = ['job_id', 'x_language', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_db_object_template_progress_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1116,14 +1034,10 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v5.ShowDbObjectTemplateResultRequest`
         :rtype: :class:`huaweicloudsdkdrs.v5.ShowDbObjectTemplateResultResponse`
         """
-        return self.show_db_object_template_result_with_http_info(request)
+        return self._show_db_object_template_result_with_http_info(request)
 
-    def show_db_object_template_result_with_http_info(self, request):
-        all_params = ['job_id', 'type', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_db_object_template_result_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1180,14 +1094,10 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v5.ShowJobDetailRequest`
         :rtype: :class:`huaweicloudsdkdrs.v5.ShowJobDetailResponse`
         """
-        return self.show_job_detail_with_http_info(request)
+        return self._show_job_detail_with_http_info(request)
 
-    def show_job_detail_with_http_info(self, request):
-        all_params = ['job_id', 'type', 'x_language', 'query_id', 'offset', 'limit', 'compare_type', 'query_type', 'object_type', 'compare_task_id', 'source_db_name', 'target_db_name', 'compare_detail_type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_job_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1264,14 +1174,10 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v5.ShowUpdateObjectSavingStatusRequest`
         :rtype: :class:`huaweicloudsdkdrs.v5.ShowUpdateObjectSavingStatusResponse`
         """
-        return self.show_update_object_saving_status_with_http_info(request)
+        return self._show_update_object_saving_status_with_http_info(request)
 
-    def show_update_object_saving_status_with_http_info(self, request):
-        all_params = ['job_id', 'query_id', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_update_object_saving_status_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1328,14 +1234,10 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v5.UpdateBatchAsyncJobsRequest`
         :rtype: :class:`huaweicloudsdkdrs.v5.UpdateBatchAsyncJobsResponse`
         """
-        return self.update_batch_async_jobs_with_http_info(request)
+        return self._update_batch_async_jobs_with_http_info(request)
 
-    def update_batch_async_jobs_with_http_info(self, request):
-        all_params = ['async_job_id', 'request_body', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_batch_async_jobs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1393,14 +1295,10 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v5.UpdateJobRequest`
         :rtype: :class:`huaweicloudsdkdrs.v5.UpdateJobResponse`
         """
-        return self.update_job_with_http_info(request)
+        return self._update_job_with_http_info(request)
 
-    def update_job_with_http_info(self, request):
-        all_params = ['job_id', 'request_body', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1457,14 +1355,10 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v5.UploadDbObjectTemplateRequest`
         :rtype: :class:`huaweicloudsdkdrs.v5.UploadDbObjectTemplateResponse`
         """
-        return self.upload_db_object_template_with_http_info(request)
+        return self._upload_db_object_template_with_http_info(request)
 
-    def upload_db_object_template_with_http_info(self, request):
-        all_params = ['job_id', 'file', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _upload_db_object_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

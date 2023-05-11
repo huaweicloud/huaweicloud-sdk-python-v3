@@ -45,6 +45,8 @@ class SwrRegion:
                         "https://swr-api.na-mexico-1.myhuaweicloud.com")
     LA_NORTH_2 = Region("la-north-2",
                         "https://swr-api.la-north-2.myhuaweicloud.com")
+    TR_WEST_1 = Region("tr-west-1",
+                        "https://swr-api.tr-west-1.myhuaweicloud.com")
 
     static_fields = {
         "af-south-1": AF_SOUTH_1,
@@ -65,6 +67,7 @@ class SwrRegion:
         "cn-north-9": CN_NORTH_9,
         "na-mexico-1": NA_MEXICO_1,
         "la-north-2": LA_NORTH_2,
+        "tr-west-1": TR_WEST_1,
     }
 
     @classmethod

@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class ClassroomAsyncClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(ClassroomAsyncClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkclassroom.v3.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -54,14 +36,10 @@ class ClassroomAsyncClient(Client):
         :type request: :class:`huaweicloudsdkclassroom.v3.ApplyJudgementRequest`
         :rtype: :class:`huaweicloudsdkclassroom.v3.ApplyJudgementResponse`
         """
-        return self.apply_judgement_with_http_info(request)
+        return self._apply_judgement_with_http_info(request)
 
-    def apply_judgement_with_http_info(self, request):
-        all_params = ['apply_judgement_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _apply_judgement_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -115,14 +93,10 @@ class ClassroomAsyncClient(Client):
         :type request: :class:`huaweicloudsdkclassroom.v3.ShowJudgementDetailRequest`
         :rtype: :class:`huaweicloudsdkclassroom.v3.ShowJudgementDetailResponse`
         """
-        return self.show_judgement_detail_with_http_info(request)
+        return self._show_judgement_detail_with_http_info(request)
 
-    def show_judgement_detail_with_http_info(self, request):
-        all_params = ['judgement_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_judgement_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -176,14 +150,10 @@ class ClassroomAsyncClient(Client):
         :type request: :class:`huaweicloudsdkclassroom.v3.ShowJudgementFileRequest`
         :rtype: :class:`huaweicloudsdkclassroom.v3.ShowJudgementFileResponse`
         """
-        return self.show_judgement_file_with_http_info(request)
+        return self._show_judgement_file_with_http_info(request)
 
-    def show_judgement_file_with_http_info(self, request):
-        all_params = ['file_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_judgement_file_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -237,14 +207,10 @@ class ClassroomAsyncClient(Client):
         :type request: :class:`huaweicloudsdkclassroom.v3.ListClassroomMembersRequest`
         :rtype: :class:`huaweicloudsdkclassroom.v3.ListClassroomMembersResponse`
         """
-        return self.list_classroom_members_with_http_info(request)
+        return self._list_classroom_members_with_http_info(request)
 
-    def list_classroom_members_with_http_info(self, request):
-        all_params = ['classroom_id', 'offset', 'limit', 'filter']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_classroom_members_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -304,14 +270,10 @@ class ClassroomAsyncClient(Client):
         :type request: :class:`huaweicloudsdkclassroom.v3.ListClassroomsRequest`
         :rtype: :class:`huaweicloudsdkclassroom.v3.ListClassroomsResponse`
         """
-        return self.list_classrooms_with_http_info(request)
+        return self._list_classrooms_with_http_info(request)
 
-    def list_classrooms_with_http_info(self, request):
-        all_params = ['offset', 'limit', 'query_type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_classrooms_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -369,14 +331,10 @@ class ClassroomAsyncClient(Client):
         :type request: :class:`huaweicloudsdkclassroom.v3.ShowClassroomDetailRequest`
         :rtype: :class:`huaweicloudsdkclassroom.v3.ShowClassroomDetailResponse`
         """
-        return self.show_classroom_detail_with_http_info(request)
+        return self._show_classroom_detail_with_http_info(request)
 
-    def show_classroom_detail_with_http_info(self, request):
-        all_params = ['classroom_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_classroom_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -430,14 +388,10 @@ class ClassroomAsyncClient(Client):
         :type request: :class:`huaweicloudsdkclassroom.v3.ListClassroomMemberJobsRequest`
         :rtype: :class:`huaweicloudsdkclassroom.v3.ListClassroomMemberJobsResponse`
         """
-        return self.list_classroom_member_jobs_with_http_info(request)
+        return self._list_classroom_member_jobs_with_http_info(request)
 
-    def list_classroom_member_jobs_with_http_info(self, request):
-        all_params = ['classroom_id', 'member_id', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_classroom_member_jobs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -497,14 +451,10 @@ class ClassroomAsyncClient(Client):
         :type request: :class:`huaweicloudsdkclassroom.v3.ListJobsRequest`
         :rtype: :class:`huaweicloudsdkclassroom.v3.ListJobsResponse`
         """
-        return self.list_jobs_with_http_info(request)
+        return self._list_jobs_with_http_info(request)
 
-    def list_jobs_with_http_info(self, request):
-        all_params = ['source_from', 'source_id', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_jobs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -564,14 +514,10 @@ class ClassroomAsyncClient(Client):
         :type request: :class:`huaweicloudsdkclassroom.v3.ListMemberJobRecordsRequest`
         :rtype: :class:`huaweicloudsdkclassroom.v3.ListMemberJobRecordsResponse`
         """
-        return self.list_member_job_records_with_http_info(request)
+        return self._list_member_job_records_with_http_info(request)
 
-    def list_member_job_records_with_http_info(self, request):
-        all_params = ['job_id', 'exercise_id', 'member_id', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_member_job_records_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -633,14 +579,10 @@ class ClassroomAsyncClient(Client):
         :type request: :class:`huaweicloudsdkclassroom.v3.ShowJobDetailRequest`
         :rtype: :class:`huaweicloudsdkclassroom.v3.ShowJobDetailResponse`
         """
-        return self.show_job_detail_with_http_info(request)
+        return self._show_job_detail_with_http_info(request)
 
-    def show_job_detail_with_http_info(self, request):
-        all_params = ['job_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_job_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -694,14 +636,10 @@ class ClassroomAsyncClient(Client):
         :type request: :class:`huaweicloudsdkclassroom.v3.ShowJobExercisesRequest`
         :rtype: :class:`huaweicloudsdkclassroom.v3.ShowJobExercisesResponse`
         """
-        return self.show_job_exercises_with_http_info(request)
+        return self._show_job_exercises_with_http_info(request)
 
-    def show_job_exercises_with_http_info(self, request):
-        all_params = ['job_id', 'source_from', 'source_id', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_job_exercises_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class CesAsyncClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(CesAsyncClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkces.v2.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -54,14 +36,10 @@ class CesAsyncClient(Client):
         :type request: :class:`huaweicloudsdkces.v2.AddAlarmRuleResourcesRequest`
         :rtype: :class:`huaweicloudsdkces.v2.AddAlarmRuleResourcesResponse`
         """
-        return self.add_alarm_rule_resources_with_http_info(request)
+        return self._add_alarm_rule_resources_with_http_info(request)
 
-    def add_alarm_rule_resources_with_http_info(self, request):
-        all_params = ['alarm_id', 'add_alarm_rule_resources_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _add_alarm_rule_resources_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -117,14 +95,10 @@ class CesAsyncClient(Client):
         :type request: :class:`huaweicloudsdkces.v2.BatchCreateResourcesRequest`
         :rtype: :class:`huaweicloudsdkces.v2.BatchCreateResourcesResponse`
         """
-        return self.batch_create_resources_with_http_info(request)
+        return self._batch_create_resources_with_http_info(request)
 
-    def batch_create_resources_with_http_info(self, request):
-        all_params = ['group_id', 'batch_create_resources_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_create_resources_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -180,14 +154,10 @@ class CesAsyncClient(Client):
         :type request: :class:`huaweicloudsdkces.v2.BatchDeleteAlarmRulesRequest`
         :rtype: :class:`huaweicloudsdkces.v2.BatchDeleteAlarmRulesResponse`
         """
-        return self.batch_delete_alarm_rules_with_http_info(request)
+        return self._batch_delete_alarm_rules_with_http_info(request)
 
-    def batch_delete_alarm_rules_with_http_info(self, request):
-        all_params = ['batch_delete_alarm_rules_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_delete_alarm_rules_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -241,14 +211,10 @@ class CesAsyncClient(Client):
         :type request: :class:`huaweicloudsdkces.v2.BatchDeleteAlarmTemplatesRequest`
         :rtype: :class:`huaweicloudsdkces.v2.BatchDeleteAlarmTemplatesResponse`
         """
-        return self.batch_delete_alarm_templates_with_http_info(request)
+        return self._batch_delete_alarm_templates_with_http_info(request)
 
-    def batch_delete_alarm_templates_with_http_info(self, request):
-        all_params = ['batch_delete_alarm_templates_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_delete_alarm_templates_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -302,14 +268,10 @@ class CesAsyncClient(Client):
         :type request: :class:`huaweicloudsdkces.v2.BatchDeleteResourceGroupsRequest`
         :rtype: :class:`huaweicloudsdkces.v2.BatchDeleteResourceGroupsResponse`
         """
-        return self.batch_delete_resource_groups_with_http_info(request)
+        return self._batch_delete_resource_groups_with_http_info(request)
 
-    def batch_delete_resource_groups_with_http_info(self, request):
-        all_params = ['batch_delete_resource_groups_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_delete_resource_groups_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -363,14 +325,10 @@ class CesAsyncClient(Client):
         :type request: :class:`huaweicloudsdkces.v2.BatchDeleteResourcesRequest`
         :rtype: :class:`huaweicloudsdkces.v2.BatchDeleteResourcesResponse`
         """
-        return self.batch_delete_resources_with_http_info(request)
+        return self._batch_delete_resources_with_http_info(request)
 
-    def batch_delete_resources_with_http_info(self, request):
-        all_params = ['group_id', 'batch_delete_resources_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_delete_resources_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -426,14 +384,10 @@ class CesAsyncClient(Client):
         :type request: :class:`huaweicloudsdkces.v2.BatchEnableAlarmRulesRequest`
         :rtype: :class:`huaweicloudsdkces.v2.BatchEnableAlarmRulesResponse`
         """
-        return self.batch_enable_alarm_rules_with_http_info(request)
+        return self._batch_enable_alarm_rules_with_http_info(request)
 
-    def batch_enable_alarm_rules_with_http_info(self, request):
-        all_params = ['batch_enable_alarm_rules_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_enable_alarm_rules_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -487,14 +441,10 @@ class CesAsyncClient(Client):
         :type request: :class:`huaweicloudsdkces.v2.CreateAlarmRulesRequest`
         :rtype: :class:`huaweicloudsdkces.v2.CreateAlarmRulesResponse`
         """
-        return self.create_alarm_rules_with_http_info(request)
+        return self._create_alarm_rules_with_http_info(request)
 
-    def create_alarm_rules_with_http_info(self, request):
-        all_params = ['create_alarm_rules_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_alarm_rules_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -548,14 +498,10 @@ class CesAsyncClient(Client):
         :type request: :class:`huaweicloudsdkces.v2.CreateAlarmTemplateRequest`
         :rtype: :class:`huaweicloudsdkces.v2.CreateAlarmTemplateResponse`
         """
-        return self.create_alarm_template_with_http_info(request)
+        return self._create_alarm_template_with_http_info(request)
 
-    def create_alarm_template_with_http_info(self, request):
-        all_params = ['create_alarm_template_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_alarm_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -609,14 +555,10 @@ class CesAsyncClient(Client):
         :type request: :class:`huaweicloudsdkces.v2.CreateResourceGroupRequest`
         :rtype: :class:`huaweicloudsdkces.v2.CreateResourceGroupResponse`
         """
-        return self.create_resource_group_with_http_info(request)
+        return self._create_resource_group_with_http_info(request)
 
-    def create_resource_group_with_http_info(self, request):
-        all_params = ['create_resource_group_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_resource_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -670,14 +612,10 @@ class CesAsyncClient(Client):
         :type request: :class:`huaweicloudsdkces.v2.DeleteAlarmRuleResourcesRequest`
         :rtype: :class:`huaweicloudsdkces.v2.DeleteAlarmRuleResourcesResponse`
         """
-        return self.delete_alarm_rule_resources_with_http_info(request)
+        return self._delete_alarm_rule_resources_with_http_info(request)
 
-    def delete_alarm_rule_resources_with_http_info(self, request):
-        all_params = ['alarm_id', 'delete_alarm_rule_resources_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_alarm_rule_resources_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -733,14 +671,10 @@ class CesAsyncClient(Client):
         :type request: :class:`huaweicloudsdkces.v2.ListAgentDimensionInfoRequest`
         :rtype: :class:`huaweicloudsdkces.v2.ListAgentDimensionInfoResponse`
         """
-        return self.list_agent_dimension_info_with_http_info(request)
+        return self._list_agent_dimension_info_with_http_info(request)
 
-    def list_agent_dimension_info_with_http_info(self, request):
-        all_params = ['instance_id', 'dim_name', 'dim_value', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_agent_dimension_info_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -802,14 +736,10 @@ class CesAsyncClient(Client):
         :type request: :class:`huaweicloudsdkces.v2.ListAlarmHistoriesRequest`
         :rtype: :class:`huaweicloudsdkces.v2.ListAlarmHistoriesResponse`
         """
-        return self.list_alarm_histories_with_http_info(request)
+        return self._list_alarm_histories_with_http_info(request)
 
-    def list_alarm_histories_with_http_info(self, request):
-        all_params = ['alarm_id', 'name', 'status', 'level', 'namespace', 'resource_id', '_from', 'to', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_alarm_histories_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -881,14 +811,10 @@ class CesAsyncClient(Client):
         :type request: :class:`huaweicloudsdkces.v2.ListAlarmRulePoliciesRequest`
         :rtype: :class:`huaweicloudsdkces.v2.ListAlarmRulePoliciesResponse`
         """
-        return self.list_alarm_rule_policies_with_http_info(request)
+        return self._list_alarm_rule_policies_with_http_info(request)
 
-    def list_alarm_rule_policies_with_http_info(self, request):
-        all_params = ['alarm_id', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_alarm_rule_policies_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -946,14 +872,10 @@ class CesAsyncClient(Client):
         :type request: :class:`huaweicloudsdkces.v2.ListAlarmRuleResourcesRequest`
         :rtype: :class:`huaweicloudsdkces.v2.ListAlarmRuleResourcesResponse`
         """
-        return self.list_alarm_rule_resources_with_http_info(request)
+        return self._list_alarm_rule_resources_with_http_info(request)
 
-    def list_alarm_rule_resources_with_http_info(self, request):
-        all_params = ['alarm_id', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_alarm_rule_resources_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1011,14 +933,10 @@ class CesAsyncClient(Client):
         :type request: :class:`huaweicloudsdkces.v2.ListAlarmRulesRequest`
         :rtype: :class:`huaweicloudsdkces.v2.ListAlarmRulesResponse`
         """
-        return self.list_alarm_rules_with_http_info(request)
+        return self._list_alarm_rules_with_http_info(request)
 
-    def list_alarm_rules_with_http_info(self, request):
-        all_params = ['alarm_id', 'name', 'namespace', 'resource_id', 'enterprise_project_id', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_alarm_rules_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1084,14 +1002,10 @@ class CesAsyncClient(Client):
         :type request: :class:`huaweicloudsdkces.v2.ListAlarmTemplateAssociationAlarmsRequest`
         :rtype: :class:`huaweicloudsdkces.v2.ListAlarmTemplateAssociationAlarmsResponse`
         """
-        return self.list_alarm_template_association_alarms_with_http_info(request)
+        return self._list_alarm_template_association_alarms_with_http_info(request)
 
-    def list_alarm_template_association_alarms_with_http_info(self, request):
-        all_params = ['template_id', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_alarm_template_association_alarms_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1149,14 +1063,10 @@ class CesAsyncClient(Client):
         :type request: :class:`huaweicloudsdkces.v2.ListAlarmTemplatesRequest`
         :rtype: :class:`huaweicloudsdkces.v2.ListAlarmTemplatesResponse`
         """
-        return self.list_alarm_templates_with_http_info(request)
+        return self._list_alarm_templates_with_http_info(request)
 
-    def list_alarm_templates_with_http_info(self, request):
-        all_params = ['offset', 'limit', 'namespace', 'dim_name', 'template_type', 'template_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_alarm_templates_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1220,14 +1130,10 @@ class CesAsyncClient(Client):
         :type request: :class:`huaweicloudsdkces.v2.ListResourceGroupsRequest`
         :rtype: :class:`huaweicloudsdkces.v2.ListResourceGroupsResponse`
         """
-        return self.list_resource_groups_with_http_info(request)
+        return self._list_resource_groups_with_http_info(request)
 
-    def list_resource_groups_with_http_info(self, request):
-        all_params = ['enterprise_project_id', 'group_name', 'group_id', 'offset', 'limit', 'type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_resource_groups_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1291,14 +1197,10 @@ class CesAsyncClient(Client):
         :type request: :class:`huaweicloudsdkces.v2.ListResourceGroupsServicesResourcesRequest`
         :rtype: :class:`huaweicloudsdkces.v2.ListResourceGroupsServicesResourcesResponse`
         """
-        return self.list_resource_groups_services_resources_with_http_info(request)
+        return self._list_resource_groups_services_resources_with_http_info(request)
 
-    def list_resource_groups_services_resources_with_http_info(self, request):
-        all_params = ['group_id', 'service', 'dim_name', 'limit', 'offset', 'status', 'dim_value']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_resource_groups_services_resources_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1364,14 +1266,10 @@ class CesAsyncClient(Client):
         :type request: :class:`huaweicloudsdkces.v2.ShowAlarmTemplateRequest`
         :rtype: :class:`huaweicloudsdkces.v2.ShowAlarmTemplateResponse`
         """
-        return self.show_alarm_template_with_http_info(request)
+        return self._show_alarm_template_with_http_info(request)
 
-    def show_alarm_template_with_http_info(self, request):
-        all_params = ['template_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_alarm_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1425,14 +1323,10 @@ class CesAsyncClient(Client):
         :type request: :class:`huaweicloudsdkces.v2.ShowResourceGroupRequest`
         :rtype: :class:`huaweicloudsdkces.v2.ShowResourceGroupResponse`
         """
-        return self.show_resource_group_with_http_info(request)
+        return self._show_resource_group_with_http_info(request)
 
-    def show_resource_group_with_http_info(self, request):
-        all_params = ['group_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_resource_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1486,14 +1380,10 @@ class CesAsyncClient(Client):
         :type request: :class:`huaweicloudsdkces.v2.UpdateAlarmRulePoliciesRequest`
         :rtype: :class:`huaweicloudsdkces.v2.UpdateAlarmRulePoliciesResponse`
         """
-        return self.update_alarm_rule_policies_with_http_info(request)
+        return self._update_alarm_rule_policies_with_http_info(request)
 
-    def update_alarm_rule_policies_with_http_info(self, request):
-        all_params = ['alarm_id', 'update_alarm_rule_policies_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_alarm_rule_policies_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1549,14 +1439,10 @@ class CesAsyncClient(Client):
         :type request: :class:`huaweicloudsdkces.v2.UpdateAlarmTemplateRequest`
         :rtype: :class:`huaweicloudsdkces.v2.UpdateAlarmTemplateResponse`
         """
-        return self.update_alarm_template_with_http_info(request)
+        return self._update_alarm_template_with_http_info(request)
 
-    def update_alarm_template_with_http_info(self, request):
-        all_params = ['template_id', 'update_alarm_template_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_alarm_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1612,14 +1498,10 @@ class CesAsyncClient(Client):
         :type request: :class:`huaweicloudsdkces.v2.UpdateResourceGroupRequest`
         :rtype: :class:`huaweicloudsdkces.v2.UpdateResourceGroupResponse`
         """
-        return self.update_resource_group_with_http_info(request)
+        return self._update_resource_group_with_http_info(request)
 
-    def update_resource_group_with_http_info(self, request):
-        all_params = ['group_id', 'update_resource_group_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_resource_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

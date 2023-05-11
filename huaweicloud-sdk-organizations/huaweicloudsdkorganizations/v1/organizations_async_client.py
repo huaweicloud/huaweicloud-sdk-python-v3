@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class OrganizationsAsyncClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(OrganizationsAsyncClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkorganizations.v1.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -54,14 +36,10 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.InviteAccountRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.InviteAccountResponse`
         """
-        return self.invite_account_with_http_info(request)
+        return self._invite_account_with_http_info(request)
 
-    def invite_account_with_http_info(self, request):
-        all_params = ['invite_account_req_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _invite_account_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -115,14 +93,10 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.ListAccountsRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.ListAccountsResponse`
         """
-        return self.list_accounts_with_http_info(request)
+        return self._list_accounts_with_http_info(request)
 
-    def list_accounts_with_http_info(self, request):
-        all_params = ['parent_id', 'limit', 'marker']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_accounts_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -180,14 +154,10 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.ListCreateAccountStatusesRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.ListCreateAccountStatusesResponse`
         """
-        return self.list_create_account_statuses_with_http_info(request)
+        return self._list_create_account_statuses_with_http_info(request)
 
-    def list_create_account_statuses_with_http_info(self, request):
-        all_params = ['states', 'limit', 'marker']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_create_account_statuses_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -246,14 +216,10 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.MoveAccountRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.MoveAccountResponse`
         """
-        return self.move_account_with_http_info(request)
+        return self._move_account_with_http_info(request)
 
-    def move_account_with_http_info(self, request):
-        all_params = ['account_id', 'move_account_req_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _move_account_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -309,14 +275,10 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.RemoveAccountRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.RemoveAccountResponse`
         """
-        return self.remove_account_with_http_info(request)
+        return self._remove_account_with_http_info(request)
 
-    def remove_account_with_http_info(self, request):
-        all_params = ['account_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _remove_account_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -370,14 +332,10 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.ShowAccountRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.ShowAccountResponse`
         """
-        return self.show_account_with_http_info(request)
+        return self._show_account_with_http_info(request)
 
-    def show_account_with_http_info(self, request):
-        all_params = ['account_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_account_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -431,14 +389,10 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.ShowCreateAccountStatusRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.ShowCreateAccountStatusResponse`
         """
-        return self.show_create_account_status_with_http_info(request)
+        return self._show_create_account_status_with_http_info(request)
 
-    def show_create_account_status_with_http_info(self, request):
-        all_params = ['create_account_status_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_create_account_status_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -492,14 +446,10 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.DeregisterDelegatedAdministratorRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.DeregisterDelegatedAdministratorResponse`
         """
-        return self.deregister_delegated_administrator_with_http_info(request)
+        return self._deregister_delegated_administrator_with_http_info(request)
 
-    def deregister_delegated_administrator_with_http_info(self, request):
-        all_params = ['delegated_administrator_req_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _deregister_delegated_administrator_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -553,14 +503,10 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.ListDelegatedAdministratorsRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.ListDelegatedAdministratorsResponse`
         """
-        return self.list_delegated_administrators_with_http_info(request)
+        return self._list_delegated_administrators_with_http_info(request)
 
-    def list_delegated_administrators_with_http_info(self, request):
-        all_params = ['service_principal', 'limit', 'marker']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_delegated_administrators_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -618,14 +564,10 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.ListDelegatedServicesRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.ListDelegatedServicesResponse`
         """
-        return self.list_delegated_services_with_http_info(request)
+        return self._list_delegated_services_with_http_info(request)
 
-    def list_delegated_services_with_http_info(self, request):
-        all_params = ['account_id', 'limit', 'marker']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_delegated_services_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -683,14 +625,10 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.RegisterDelegatedAdministratorRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.RegisterDelegatedAdministratorResponse`
         """
-        return self.register_delegated_administrator_with_http_info(request)
+        return self._register_delegated_administrator_with_http_info(request)
 
-    def register_delegated_administrator_with_http_info(self, request):
-        all_params = ['delegated_administrator_req_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _register_delegated_administrator_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -744,14 +682,10 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.AcceptHandshakeRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.AcceptHandshakeResponse`
         """
-        return self.accept_handshake_with_http_info(request)
+        return self._accept_handshake_with_http_info(request)
 
-    def accept_handshake_with_http_info(self, request):
-        all_params = ['handshake_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _accept_handshake_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -805,14 +739,10 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.CancelHandshakeRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.CancelHandshakeResponse`
         """
-        return self.cancel_handshake_with_http_info(request)
+        return self._cancel_handshake_with_http_info(request)
 
-    def cancel_handshake_with_http_info(self, request):
-        all_params = ['handshake_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _cancel_handshake_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -866,14 +796,10 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.DeclineHandshakeRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.DeclineHandshakeResponse`
         """
-        return self.decline_handshake_with_http_info(request)
+        return self._decline_handshake_with_http_info(request)
 
-    def decline_handshake_with_http_info(self, request):
-        all_params = ['handshake_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _decline_handshake_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -927,14 +853,10 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.ListHandshakesRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.ListHandshakesResponse`
         """
-        return self.list_handshakes_with_http_info(request)
+        return self._list_handshakes_with_http_info(request)
 
-    def list_handshakes_with_http_info(self, request):
-        all_params = ['limit', 'marker']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_handshakes_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -990,14 +912,10 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.ListReceivedHandshakesRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.ListReceivedHandshakesResponse`
         """
-        return self.list_received_handshakes_with_http_info(request)
+        return self._list_received_handshakes_with_http_info(request)
 
-    def list_received_handshakes_with_http_info(self, request):
-        all_params = ['limit', 'marker']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_received_handshakes_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1053,14 +971,10 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.ShowHandshakeRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.ShowHandshakeResponse`
         """
-        return self.show_handshake_with_http_info(request)
+        return self._show_handshake_with_http_info(request)
 
-    def show_handshake_with_http_info(self, request):
-        all_params = ['handshake_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_handshake_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1114,14 +1028,10 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.ListEntitiesRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.ListEntitiesResponse`
         """
-        return self.list_entities_with_http_info(request)
+        return self._list_entities_with_http_info(request)
 
-    def list_entities_with_http_info(self, request):
-        all_params = ['parent_id', 'child_id', 'limit', 'marker']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_entities_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1181,14 +1091,10 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.ListServicesRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.ListServicesResponse`
         """
-        return self.list_services_with_http_info(request)
+        return self._list_services_with_http_info(request)
 
-    def list_services_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_services_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1240,14 +1146,10 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.ListTagPolicyServicesRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.ListTagPolicyServicesResponse`
         """
-        return self.list_tag_policy_services_with_http_info(request)
+        return self._list_tag_policy_services_with_http_info(request)
 
-    def list_tag_policy_services_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_tag_policy_services_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1299,14 +1201,10 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.ShowEffectivePoliciesRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.ShowEffectivePoliciesResponse`
         """
-        return self.show_effective_policies_with_http_info(request)
+        return self._show_effective_policies_with_http_info(request)
 
-    def show_effective_policies_with_http_info(self, request):
-        all_params = ['entity_id', 'policy_type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_effective_policies_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1362,14 +1260,10 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.CreateOrganizationRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.CreateOrganizationResponse`
         """
-        return self.create_organization_with_http_info(request)
+        return self._create_organization_with_http_info(request)
 
-    def create_organization_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_organization_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1421,14 +1315,10 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.DeleteOrganizationRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.DeleteOrganizationResponse`
         """
-        return self.delete_organization_with_http_info(request)
+        return self._delete_organization_with_http_info(request)
 
-    def delete_organization_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_organization_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1480,14 +1370,10 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.LeaveOrganizationRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.LeaveOrganizationResponse`
         """
-        return self.leave_organization_with_http_info(request)
+        return self._leave_organization_with_http_info(request)
 
-    def leave_organization_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _leave_organization_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1539,14 +1425,10 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.ListRootsRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.ListRootsResponse`
         """
-        return self.list_roots_with_http_info(request)
+        return self._list_roots_with_http_info(request)
 
-    def list_roots_with_http_info(self, request):
-        all_params = ['limit', 'marker']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_roots_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1602,14 +1484,10 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.ShowOrganizationRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.ShowOrganizationResponse`
         """
-        return self.show_organization_with_http_info(request)
+        return self._show_organization_with_http_info(request)
 
-    def show_organization_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_organization_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1661,14 +1539,10 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.CreateOrganizationalUnitRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.CreateOrganizationalUnitResponse`
         """
-        return self.create_organizational_unit_with_http_info(request)
+        return self._create_organizational_unit_with_http_info(request)
 
-    def create_organizational_unit_with_http_info(self, request):
-        all_params = ['create_organizational_unit_req_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_organizational_unit_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1722,14 +1596,10 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.DeleteOrganizationalUnitRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.DeleteOrganizationalUnitResponse`
         """
-        return self.delete_organizational_unit_with_http_info(request)
+        return self._delete_organizational_unit_with_http_info(request)
 
-    def delete_organizational_unit_with_http_info(self, request):
-        all_params = ['organizational_unit_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_organizational_unit_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1783,14 +1653,10 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.ListOrganizationalUnitsRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.ListOrganizationalUnitsResponse`
         """
-        return self.list_organizational_units_with_http_info(request)
+        return self._list_organizational_units_with_http_info(request)
 
-    def list_organizational_units_with_http_info(self, request):
-        all_params = ['parent_id', 'limit', 'marker']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_organizational_units_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1848,14 +1714,10 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.ShowOrganizationalUnitRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.ShowOrganizationalUnitResponse`
         """
-        return self.show_organizational_unit_with_http_info(request)
+        return self._show_organizational_unit_with_http_info(request)
 
-    def show_organizational_unit_with_http_info(self, request):
-        all_params = ['organizational_unit_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_organizational_unit_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1909,14 +1771,10 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.UpdateOrganizationalUnitRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.UpdateOrganizationalUnitResponse`
         """
-        return self.update_organizational_unit_with_http_info(request)
+        return self._update_organizational_unit_with_http_info(request)
 
-    def update_organizational_unit_with_http_info(self, request):
-        all_params = ['organizational_unit_id', 'update_organizational_unit_req_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_organizational_unit_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1972,14 +1830,10 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.AttachPolicyRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.AttachPolicyResponse`
         """
-        return self.attach_policy_with_http_info(request)
+        return self._attach_policy_with_http_info(request)
 
-    def attach_policy_with_http_info(self, request):
-        all_params = ['policy_id', 'policy_tach_req_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _attach_policy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2035,14 +1889,10 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.CreatePolicyRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.CreatePolicyResponse`
         """
-        return self.create_policy_with_http_info(request)
+        return self._create_policy_with_http_info(request)
 
-    def create_policy_with_http_info(self, request):
-        all_params = ['create_policy_req_body', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_policy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2098,14 +1948,10 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.DeletePolicyRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.DeletePolicyResponse`
         """
-        return self.delete_policy_with_http_info(request)
+        return self._delete_policy_with_http_info(request)
 
-    def delete_policy_with_http_info(self, request):
-        all_params = ['policy_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_policy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2159,14 +2005,10 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.DetachPolicyRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.DetachPolicyResponse`
         """
-        return self.detach_policy_with_http_info(request)
+        return self._detach_policy_with_http_info(request)
 
-    def detach_policy_with_http_info(self, request):
-        all_params = ['policy_id', 'policy_tach_req_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _detach_policy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2222,14 +2064,10 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.DisablePolicyTypeRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.DisablePolicyTypeResponse`
         """
-        return self.disable_policy_type_with_http_info(request)
+        return self._disable_policy_type_with_http_info(request)
 
-    def disable_policy_type_with_http_info(self, request):
-        all_params = ['policy_type_req_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _disable_policy_type_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2283,14 +2121,10 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.EnablePolicyTypeRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.EnablePolicyTypeResponse`
         """
-        return self.enable_policy_type_with_http_info(request)
+        return self._enable_policy_type_with_http_info(request)
 
-    def enable_policy_type_with_http_info(self, request):
-        all_params = ['policy_type_req_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _enable_policy_type_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2344,14 +2178,10 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.ListEntitiesForPolicyRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.ListEntitiesForPolicyResponse`
         """
-        return self.list_entities_for_policy_with_http_info(request)
+        return self._list_entities_for_policy_with_http_info(request)
 
-    def list_entities_for_policy_with_http_info(self, request):
-        all_params = ['policy_id', 'limit', 'marker']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_entities_for_policy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2409,14 +2239,10 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.ListPoliciesRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.ListPoliciesResponse`
         """
-        return self.list_policies_with_http_info(request)
+        return self._list_policies_with_http_info(request)
 
-    def list_policies_with_http_info(self, request):
-        all_params = ['attached_entity_id', 'limit', 'marker', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_policies_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2476,14 +2302,10 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.ShowPolicyRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.ShowPolicyResponse`
         """
-        return self.show_policy_with_http_info(request)
+        return self._show_policy_with_http_info(request)
 
-    def show_policy_with_http_info(self, request):
-        all_params = ['policy_id', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_policy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2539,14 +2361,10 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.UpdatePolicyRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.UpdatePolicyResponse`
         """
-        return self.update_policy_with_http_info(request)
+        return self._update_policy_with_http_info(request)
 
-    def update_policy_with_http_info(self, request):
-        all_params = ['policy_id', 'update_policy_req_body', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_policy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2604,14 +2422,10 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.CreateTagResourceRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.CreateTagResourceResponse`
         """
-        return self.create_tag_resource_with_http_info(request)
+        return self._create_tag_resource_with_http_info(request)
 
-    def create_tag_resource_with_http_info(self, request):
-        all_params = ['resource_type', 'resource_id', 'tag_resource_req_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_tag_resource_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2669,14 +2483,10 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.DeleteTagResourceRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.DeleteTagResourceResponse`
         """
-        return self.delete_tag_resource_with_http_info(request)
+        return self._delete_tag_resource_with_http_info(request)
 
-    def delete_tag_resource_with_http_info(self, request):
-        all_params = ['resource_type', 'resource_id', 'tag_resource_req_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_tag_resource_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2734,14 +2544,10 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.ListResourceInstancesRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.ListResourceInstancesResponse`
         """
-        return self.list_resource_instances_with_http_info(request)
+        return self._list_resource_instances_with_http_info(request)
 
-    def list_resource_instances_with_http_info(self, request):
-        all_params = ['resource_type', 'resource_instance_req_body', 'limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_resource_instances_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2801,14 +2607,10 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.ListResourceTagsRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.ListResourceTagsResponse`
         """
-        return self.list_resource_tags_with_http_info(request)
+        return self._list_resource_tags_with_http_info(request)
 
-    def list_resource_tags_with_http_info(self, request):
-        all_params = ['resource_type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_resource_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2862,14 +2664,10 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.ListTagResourcesRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.ListTagResourcesResponse`
         """
-        return self.list_tag_resources_with_http_info(request)
+        return self._list_tag_resources_with_http_info(request)
 
-    def list_tag_resources_with_http_info(self, request):
-        all_params = ['resource_type', 'resource_id', 'limit', 'marker']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_tag_resources_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2929,14 +2727,10 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.ListTagsForResourceRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.ListTagsForResourceResponse`
         """
-        return self.list_tags_for_resource_with_http_info(request)
+        return self._list_tags_for_resource_with_http_info(request)
 
-    def list_tags_for_resource_with_http_info(self, request):
-        all_params = ['resource_id', 'limit', 'marker']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_tags_for_resource_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2994,14 +2788,10 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.ShowResourceInstancesCountRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.ShowResourceInstancesCountResponse`
         """
-        return self.show_resource_instances_count_with_http_info(request)
+        return self._show_resource_instances_count_with_http_info(request)
 
-    def show_resource_instances_count_with_http_info(self, request):
-        all_params = ['resource_type', 'resource_instance_req_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_resource_instances_count_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3057,14 +2847,10 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.TagResourceRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.TagResourceResponse`
         """
-        return self.tag_resource_with_http_info(request)
+        return self._tag_resource_with_http_info(request)
 
-    def tag_resource_with_http_info(self, request):
-        all_params = ['resource_id', 'tag_resource_req_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _tag_resource_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3120,14 +2906,10 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.UntagResourceRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.UntagResourceResponse`
         """
-        return self.untag_resource_with_http_info(request)
+        return self._untag_resource_with_http_info(request)
 
-    def untag_resource_with_http_info(self, request):
-        all_params = ['resource_id', 'untag_resource_req_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _untag_resource_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3183,14 +2965,10 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.DisableTrustedServiceRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.DisableTrustedServiceResponse`
         """
-        return self.disable_trusted_service_with_http_info(request)
+        return self._disable_trusted_service_with_http_info(request)
 
-    def disable_trusted_service_with_http_info(self, request):
-        all_params = ['trusted_service_req_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _disable_trusted_service_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3244,14 +3022,10 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.EnableTrustedServiceRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.EnableTrustedServiceResponse`
         """
-        return self.enable_trusted_service_with_http_info(request)
+        return self._enable_trusted_service_with_http_info(request)
 
-    def enable_trusted_service_with_http_info(self, request):
-        all_params = ['trusted_service_req_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _enable_trusted_service_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3305,14 +3079,10 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.ListTrustedServicesRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.ListTrustedServicesResponse`
         """
-        return self.list_trusted_services_with_http_info(request)
+        return self._list_trusted_services_with_http_info(request)
 
-    def list_trusted_services_with_http_info(self, request):
-        all_params = ['limit', 'marker']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_trusted_services_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

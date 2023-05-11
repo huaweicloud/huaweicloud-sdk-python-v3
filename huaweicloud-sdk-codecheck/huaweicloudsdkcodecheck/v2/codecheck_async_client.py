@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class CodeCheckAsyncClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(CodeCheckAsyncClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkcodecheck.v2.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -54,14 +36,10 @@ class CodeCheckAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodecheck.v2.CheckParametersRequest`
         :rtype: :class:`huaweicloudsdkcodecheck.v2.CheckParametersResponse`
         """
-        return self.check_parameters_with_http_info(request)
+        return self._check_parameters_with_http_info(request)
 
-    def check_parameters_with_http_info(self, request):
-        all_params = ['project_id', 'task_id', 'ruleset_id', 'language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _check_parameters_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -121,14 +99,10 @@ class CodeCheckAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodecheck.v2.CheckRecordRequest`
         :rtype: :class:`huaweicloudsdkcodecheck.v2.CheckRecordResponse`
         """
-        return self.check_record_with_http_info(request)
+        return self._check_record_with_http_info(request)
 
-    def check_record_with_http_info(self, request):
-        all_params = ['project_id', 'task_id', 'offset', 'limit', 'start_time', 'end_time']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _check_record_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -192,14 +166,10 @@ class CodeCheckAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodecheck.v2.CheckRulesetParametersRequest`
         :rtype: :class:`huaweicloudsdkcodecheck.v2.CheckRulesetParametersResponse`
         """
-        return self.check_ruleset_parameters_with_http_info(request)
+        return self._check_ruleset_parameters_with_http_info(request)
 
-    def check_ruleset_parameters_with_http_info(self, request):
-        all_params = ['project_id', 'task_id', 'ruleset_id', 'language', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _check_ruleset_parameters_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -263,14 +233,10 @@ class CodeCheckAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodecheck.v2.CreateRulesetRequest`
         :rtype: :class:`huaweicloudsdkcodecheck.v2.CreateRulesetResponse`
         """
-        return self.create_ruleset_with_http_info(request)
+        return self._create_ruleset_with_http_info(request)
 
-    def create_ruleset_with_http_info(self, request):
-        all_params = ['create_ruleset_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_ruleset_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -324,14 +290,10 @@ class CodeCheckAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodecheck.v2.CreateTaskRequest`
         :rtype: :class:`huaweicloudsdkcodecheck.v2.CreateTaskResponse`
         """
-        return self.create_task_with_http_info(request)
+        return self._create_task_with_http_info(request)
 
-    def create_task_with_http_info(self, request):
-        all_params = ['project_id', 'create_task_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -387,14 +349,10 @@ class CodeCheckAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodecheck.v2.DeleteRulesetRequest`
         :rtype: :class:`huaweicloudsdkcodecheck.v2.DeleteRulesetResponse`
         """
-        return self.delete_ruleset_with_http_info(request)
+        return self._delete_ruleset_with_http_info(request)
 
-    def delete_ruleset_with_http_info(self, request):
-        all_params = ['project_id', 'ruleset_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_ruleset_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -450,14 +408,10 @@ class CodeCheckAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodecheck.v2.DeleteTaskRequest`
         :rtype: :class:`huaweicloudsdkcodecheck.v2.DeleteTaskResponse`
         """
-        return self.delete_task_with_http_info(request)
+        return self._delete_task_with_http_info(request)
 
-    def delete_task_with_http_info(self, request):
-        all_params = ['task_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -511,14 +465,10 @@ class CodeCheckAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodecheck.v2.ListRulesRequest`
         :rtype: :class:`huaweicloudsdkcodecheck.v2.ListRulesResponse`
         """
-        return self.list_rules_with_http_info(request)
+        return self._list_rules_with_http_info(request)
 
-    def list_rules_with_http_info(self, request):
-        all_params = ['rule_languages', 'rule_severity', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_rules_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -578,14 +528,10 @@ class CodeCheckAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodecheck.v2.ListRulesetsRequest`
         :rtype: :class:`huaweicloudsdkcodecheck.v2.ListRulesetsResponse`
         """
-        return self.list_rulesets_with_http_info(request)
+        return self._list_rulesets_with_http_info(request)
 
-    def list_rulesets_with_http_info(self, request):
-        all_params = ['project_id', 'category', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_rulesets_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -645,14 +591,10 @@ class CodeCheckAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodecheck.v2.ListTaskParameterRequest`
         :rtype: :class:`huaweicloudsdkcodecheck.v2.ListTaskParameterResponse`
         """
-        return self.list_task_parameter_with_http_info(request)
+        return self._list_task_parameter_with_http_info(request)
 
-    def list_task_parameter_with_http_info(self, request):
-        all_params = ['project_id', 'task_id', 'list_task_parameter_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_task_parameter_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -710,14 +652,10 @@ class CodeCheckAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodecheck.v2.ListTaskRulesetRequest`
         :rtype: :class:`huaweicloudsdkcodecheck.v2.ListTaskRulesetResponse`
         """
-        return self.list_task_ruleset_with_http_info(request)
+        return self._list_task_ruleset_with_http_info(request)
 
-    def list_task_ruleset_with_http_info(self, request):
-        all_params = ['project_id', 'task_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_task_ruleset_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -773,14 +711,10 @@ class CodeCheckAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodecheck.v2.ListTemplateRulesRequest`
         :rtype: :class:`huaweicloudsdkcodecheck.v2.ListTemplateRulesResponse`
         """
-        return self.list_template_rules_with_http_info(request)
+        return self._list_template_rules_with_http_info(request)
 
-    def list_template_rules_with_http_info(self, request):
-        all_params = ['project_id', 'ruleset_id', 'types', 'languages', 'tags', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_template_rules_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -846,14 +780,10 @@ class CodeCheckAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodecheck.v2.RunTaskRequest`
         :rtype: :class:`huaweicloudsdkcodecheck.v2.RunTaskResponse`
         """
-        return self.run_task_with_http_info(request)
+        return self._run_task_with_http_info(request)
 
-    def run_task_with_http_info(self, request):
-        all_params = ['task_id', 'run_task_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _run_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -909,14 +839,10 @@ class CodeCheckAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodecheck.v2.SetDefaulTemplateRequest`
         :rtype: :class:`huaweicloudsdkcodecheck.v2.SetDefaulTemplateResponse`
         """
-        return self.set_defaul_template_with_http_info(request)
+        return self._set_defaul_template_with_http_info(request)
 
-    def set_defaul_template_with_http_info(self, request):
-        all_params = ['project_id', 'ruleset_id', 'language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _set_defaul_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -974,14 +900,10 @@ class CodeCheckAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodecheck.v2.ShowProgressDetailRequest`
         :rtype: :class:`huaweicloudsdkcodecheck.v2.ShowProgressDetailResponse`
         """
-        return self.show_progress_detail_with_http_info(request)
+        return self._show_progress_detail_with_http_info(request)
 
-    def show_progress_detail_with_http_info(self, request):
-        all_params = ['task_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_progress_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1035,14 +957,10 @@ class CodeCheckAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodecheck.v2.ShowTaskCmetricsRequest`
         :rtype: :class:`huaweicloudsdkcodecheck.v2.ShowTaskCmetricsResponse`
         """
-        return self.show_task_cmetrics_with_http_info(request)
+        return self._show_task_cmetrics_with_http_info(request)
 
-    def show_task_cmetrics_with_http_info(self, request):
-        all_params = ['project_id', 'task_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_task_cmetrics_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1098,14 +1016,10 @@ class CodeCheckAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodecheck.v2.ShowTaskDefectsRequest`
         :rtype: :class:`huaweicloudsdkcodecheck.v2.ShowTaskDefectsResponse`
         """
-        return self.show_task_defects_with_http_info(request)
+        return self._show_task_defects_with_http_info(request)
 
-    def show_task_defects_with_http_info(self, request):
-        all_params = ['task_id', 'offset', 'limit', 'status_ids', 'severity']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_task_defects_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1167,14 +1081,10 @@ class CodeCheckAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodecheck.v2.ShowTaskDefectsStatisticRequest`
         :rtype: :class:`huaweicloudsdkcodecheck.v2.ShowTaskDefectsStatisticResponse`
         """
-        return self.show_task_defects_statistic_with_http_info(request)
+        return self._show_task_defects_statistic_with_http_info(request)
 
-    def show_task_defects_statistic_with_http_info(self, request):
-        all_params = ['task_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_task_defects_statistic_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1228,14 +1138,10 @@ class CodeCheckAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodecheck.v2.ShowTaskDetailRequest`
         :rtype: :class:`huaweicloudsdkcodecheck.v2.ShowTaskDetailResponse`
         """
-        return self.show_task_detail_with_http_info(request)
+        return self._show_task_detail_with_http_info(request)
 
-    def show_task_detail_with_http_info(self, request):
-        all_params = ['task_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_task_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1289,14 +1195,10 @@ class CodeCheckAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodecheck.v2.ShowTaskListByProjectIdRequest`
         :rtype: :class:`huaweicloudsdkcodecheck.v2.ShowTaskListByProjectIdResponse`
         """
-        return self.show_task_list_by_project_id_with_http_info(request)
+        return self._show_task_list_by_project_id_with_http_info(request)
 
-    def show_task_list_by_project_id_with_http_info(self, request):
-        all_params = ['project_id', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_task_list_by_project_id_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1354,14 +1256,10 @@ class CodeCheckAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodecheck.v2.ShowTaskPathTreeRequest`
         :rtype: :class:`huaweicloudsdkcodecheck.v2.ShowTaskPathTreeResponse`
         """
-        return self.show_task_path_tree_with_http_info(request)
+        return self._show_task_path_tree_with_http_info(request)
 
-    def show_task_path_tree_with_http_info(self, request):
-        all_params = ['project_id', 'task_id', 'current_path', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_task_path_tree_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1423,14 +1321,10 @@ class CodeCheckAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodecheck.v2.ShowTaskSettingsRequest`
         :rtype: :class:`huaweicloudsdkcodecheck.v2.ShowTaskSettingsResponse`
         """
-        return self.show_task_settings_with_http_info(request)
+        return self._show_task_settings_with_http_info(request)
 
-    def show_task_settings_with_http_info(self, request):
-        all_params = ['project_id', 'task_id', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_task_settings_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1490,14 +1384,10 @@ class CodeCheckAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodecheck.v2.ShowTasklogRequest`
         :rtype: :class:`huaweicloudsdkcodecheck.v2.ShowTasklogResponse`
         """
-        return self.show_tasklog_with_http_info(request)
+        return self._show_tasklog_with_http_info(request)
 
-    def show_tasklog_with_http_info(self, request):
-        all_params = ['project_id', 'task_id', 'execute_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_tasklog_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1555,14 +1445,10 @@ class CodeCheckAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodecheck.v2.ShowTasksRulesetsRequest`
         :rtype: :class:`huaweicloudsdkcodecheck.v2.ShowTasksRulesetsResponse`
         """
-        return self.show_tasks_rulesets_with_http_info(request)
+        return self._show_tasks_rulesets_with_http_info(request)
 
-    def show_tasks_rulesets_with_http_info(self, request):
-        all_params = ['project_id', 'task_id', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_tasks_rulesets_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1622,14 +1508,10 @@ class CodeCheckAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodecheck.v2.StopTaskByIdRequest`
         :rtype: :class:`huaweicloudsdkcodecheck.v2.StopTaskByIdResponse`
         """
-        return self.stop_task_by_id_with_http_info(request)
+        return self._stop_task_by_id_with_http_info(request)
 
-    def stop_task_by_id_with_http_info(self, request):
-        all_params = ['task_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _stop_task_by_id_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1683,14 +1565,10 @@ class CodeCheckAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodecheck.v2.UpdateDefectStatusRequest`
         :rtype: :class:`huaweicloudsdkcodecheck.v2.UpdateDefectStatusResponse`
         """
-        return self.update_defect_status_with_http_info(request)
+        return self._update_defect_status_with_http_info(request)
 
-    def update_defect_status_with_http_info(self, request):
-        all_params = ['task_id', 'update_defect_status_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_defect_status_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1746,14 +1624,10 @@ class CodeCheckAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodecheck.v2.UpdateIgnorePathRequest`
         :rtype: :class:`huaweicloudsdkcodecheck.v2.UpdateIgnorePathResponse`
         """
-        return self.update_ignore_path_with_http_info(request)
+        return self._update_ignore_path_with_http_info(request)
 
-    def update_ignore_path_with_http_info(self, request):
-        all_params = ['project_id', 'task_id', 'update_ignore_path_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_ignore_path_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1811,14 +1685,10 @@ class CodeCheckAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodecheck.v2.UpdateTaskRulesetRequest`
         :rtype: :class:`huaweicloudsdkcodecheck.v2.UpdateTaskRulesetResponse`
         """
-        return self.update_task_ruleset_with_http_info(request)
+        return self._update_task_ruleset_with_http_info(request)
 
-    def update_task_ruleset_with_http_info(self, request):
-        all_params = ['task_id', 'update_task_ruleset_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_task_ruleset_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1874,14 +1744,10 @@ class CodeCheckAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodecheck.v2.UpdateTaskSettingsRequest`
         :rtype: :class:`huaweicloudsdkcodecheck.v2.UpdateTaskSettingsResponse`
         """
-        return self.update_task_settings_with_http_info(request)
+        return self._update_task_settings_with_http_info(request)
 
-    def update_task_settings_with_http_info(self, request):
-        all_params = ['project_id', 'task_id', 'update_task_settings_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_task_settings_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class DmsAsyncClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(DmsAsyncClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkdms.v2.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -54,14 +36,10 @@ class DmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdms.v2.BatchCreateOrDeleteQueueTagRequest`
         :rtype: :class:`huaweicloudsdkdms.v2.BatchCreateOrDeleteQueueTagResponse`
         """
-        return self.batch_create_or_delete_queue_tag_with_http_info(request)
+        return self._batch_create_or_delete_queue_tag_with_http_info(request)
 
-    def batch_create_or_delete_queue_tag_with_http_info(self, request):
-        all_params = ['queue_id', 'batch_create_or_delete_queue_tag_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_create_or_delete_queue_tag_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -125,14 +103,10 @@ class DmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdms.v2.ConfirmConsumptionMessagesRequest`
         :rtype: :class:`huaweicloudsdkdms.v2.ConfirmConsumptionMessagesResponse`
         """
-        return self.confirm_consumption_messages_with_http_info(request)
+        return self._confirm_consumption_messages_with_http_info(request)
 
-    def confirm_consumption_messages_with_http_info(self, request):
-        all_params = ['queue_id', 'consumer_group_id', 'confirm_consumption_messages_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _confirm_consumption_messages_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -198,14 +172,10 @@ class DmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdms.v2.ConfirmDeadLettersMessagesRequest`
         :rtype: :class:`huaweicloudsdkdms.v2.ConfirmDeadLettersMessagesResponse`
         """
-        return self.confirm_dead_letters_messages_with_http_info(request)
+        return self._confirm_dead_letters_messages_with_http_info(request)
 
-    def confirm_dead_letters_messages_with_http_info(self, request):
-        all_params = ['queue_id', 'consumer_group_id', 'confirm_dead_letters_messages_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _confirm_dead_letters_messages_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -265,14 +235,10 @@ class DmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdms.v2.ConsumeDeadlettersMessageRequest`
         :rtype: :class:`huaweicloudsdkdms.v2.ConsumeDeadlettersMessageResponse`
         """
-        return self.consume_deadletters_message_with_http_info(request)
+        return self._consume_deadletters_message_with_http_info(request)
 
-    def consume_deadletters_message_with_http_info(self, request):
-        all_params = ['queue_id', 'consumer_group_id', 'max_msgs', 'time_wait', 'ack_wait']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _consume_deadletters_message_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -338,14 +304,10 @@ class DmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdms.v2.ConsumeMessagesRequest`
         :rtype: :class:`huaweicloudsdkdms.v2.ConsumeMessagesResponse`
         """
-        return self.consume_messages_with_http_info(request)
+        return self._consume_messages_with_http_info(request)
 
-    def consume_messages_with_http_info(self, request):
-        all_params = ['queue_id', 'consumer_group_id', 'max_msgs', 'time_wait', 'ack_wait', 'tag', 'tag_type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _consume_messages_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -415,14 +377,10 @@ class DmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdms.v2.CreateConsumerGroupRequest`
         :rtype: :class:`huaweicloudsdkdms.v2.CreateConsumerGroupResponse`
         """
-        return self.create_consumer_group_with_http_info(request)
+        return self._create_consumer_group_with_http_info(request)
 
-    def create_consumer_group_with_http_info(self, request):
-        all_params = ['queue_id', 'create_consumer_group_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_consumer_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -479,14 +437,10 @@ class DmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdms.v2.CreateQueueRequest`
         :rtype: :class:`huaweicloudsdkdms.v2.CreateQueueResponse`
         """
-        return self.create_queue_with_http_info(request)
+        return self._create_queue_with_http_info(request)
 
-    def create_queue_with_http_info(self, request):
-        all_params = ['create_queue_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_queue_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -540,14 +494,10 @@ class DmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdms.v2.DeleteQueueRequest`
         :rtype: :class:`huaweicloudsdkdms.v2.DeleteQueueResponse`
         """
-        return self.delete_queue_with_http_info(request)
+        return self._delete_queue_with_http_info(request)
 
-    def delete_queue_with_http_info(self, request):
-        all_params = ['queue_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_queue_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -601,14 +551,10 @@ class DmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdms.v2.DeleteSpecifiedConsumerGroupRequest`
         :rtype: :class:`huaweicloudsdkdms.v2.DeleteSpecifiedConsumerGroupResponse`
         """
-        return self.delete_specified_consumer_group_with_http_info(request)
+        return self._delete_specified_consumer_group_with_http_info(request)
 
-    def delete_specified_consumer_group_with_http_info(self, request):
-        all_params = ['queue_id', 'group_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_specified_consumer_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -664,14 +610,10 @@ class DmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdms.v2.ListConsumerGroupsRequest`
         :rtype: :class:`huaweicloudsdkdms.v2.ListConsumerGroupsResponse`
         """
-        return self.list_consumer_groups_with_http_info(request)
+        return self._list_consumer_groups_with_http_info(request)
 
-    def list_consumer_groups_with_http_info(self, request):
-        all_params = ['queue_id', 'include_deadletter', 'include_messages_num', 'page_size', 'current_page']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_consumer_groups_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -733,14 +675,10 @@ class DmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdms.v2.ListQueuesRequest`
         :rtype: :class:`huaweicloudsdkdms.v2.ListQueuesResponse`
         """
-        return self.list_queues_with_http_info(request)
+        return self._list_queues_with_http_info(request)
 
-    def list_queues_with_http_info(self, request):
-        all_params = ['include_deadletter']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_queues_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -798,14 +736,10 @@ class DmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdms.v2.SendMessagesRequest`
         :rtype: :class:`huaweicloudsdkdms.v2.SendMessagesResponse`
         """
-        return self.send_messages_with_http_info(request)
+        return self._send_messages_with_http_info(request)
 
-    def send_messages_with_http_info(self, request):
-        all_params = ['queue_id', 'send_messages_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _send_messages_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -861,14 +795,10 @@ class DmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdms.v2.ShowQueueRequest`
         :rtype: :class:`huaweicloudsdkdms.v2.ShowQueueResponse`
         """
-        return self.show_queue_with_http_info(request)
+        return self._show_queue_with_http_info(request)
 
-    def show_queue_with_http_info(self, request):
-        all_params = ['queue_id', 'include_deadletter']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_queue_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -924,14 +854,10 @@ class DmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdms.v2.ShowQueueProjectTagsRequest`
         :rtype: :class:`huaweicloudsdkdms.v2.ShowQueueProjectTagsResponse`
         """
-        return self.show_queue_project_tags_with_http_info(request)
+        return self._show_queue_project_tags_with_http_info(request)
 
-    def show_queue_project_tags_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_queue_project_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -983,14 +909,10 @@ class DmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdms.v2.ShowQueueTagsRequest`
         :rtype: :class:`huaweicloudsdkdms.v2.ShowQueueTagsResponse`
         """
-        return self.show_queue_tags_with_http_info(request)
+        return self._show_queue_tags_with_http_info(request)
 
-    def show_queue_tags_with_http_info(self, request):
-        all_params = ['queue_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_queue_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1044,14 +966,10 @@ class DmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdms.v2.ShowQuotasRequest`
         :rtype: :class:`huaweicloudsdkdms.v2.ShowQuotasResponse`
         """
-        return self.show_quotas_with_http_info(request)
+        return self._show_quotas_with_http_info(request)
 
-    def show_quotas_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_quotas_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

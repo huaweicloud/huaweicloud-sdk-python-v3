@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class DevStarClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(DevStarClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkdevstar.v1.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -53,14 +35,10 @@ class DevStarClient(Client):
         :type request: :class:`huaweicloudsdkdevstar.v1.ShowApplicationReleaseRepositoriesRequest`
         :rtype: :class:`huaweicloudsdkdevstar.v1.ShowApplicationReleaseRepositoriesResponse`
         """
-        return self.show_application_release_repositories_with_http_info(request)
+        return self._show_application_release_repositories_with_http_info(request)
 
-    def show_application_release_repositories_with_http_info(self, request):
-        all_params = ['application_id', 'x_language', 'parent_id', 'keyword', 'limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_application_release_repositories_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -123,14 +101,10 @@ class DevStarClient(Client):
         :type request: :class:`huaweicloudsdkdevstar.v1.ShowApplicationResDeleteStatusRequest`
         :rtype: :class:`huaweicloudsdkdevstar.v1.ShowApplicationResDeleteStatusResponse`
         """
-        return self.show_application_res_delete_status_with_http_info(request)
+        return self._show_application_res_delete_status_with_http_info(request)
 
-    def show_application_res_delete_status_with_http_info(self, request):
-        all_params = ['application_id', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_application_res_delete_status_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -185,14 +159,10 @@ class DevStarClient(Client):
         :type request: :class:`huaweicloudsdkdevstar.v1.ShowApplicationDependentResourcesRequest`
         :rtype: :class:`huaweicloudsdkdevstar.v1.ShowApplicationDependentResourcesResponse`
         """
-        return self.show_application_dependent_resources_with_http_info(request)
+        return self._show_application_dependent_resources_with_http_info(request)
 
-    def show_application_dependent_resources_with_http_info(self, request):
-        all_params = ['application_id', 'x_language', 'limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_application_dependent_resources_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -251,14 +221,10 @@ class DevStarClient(Client):
         :type request: :class:`huaweicloudsdkdevstar.v1.ShowApplicationV3Request`
         :rtype: :class:`huaweicloudsdkdevstar.v1.ShowApplicationV3Response`
         """
-        return self.show_application_v3_with_http_info(request)
+        return self._show_application_v3_with_http_info(request)
 
-    def show_application_v3_with_http_info(self, request):
-        all_params = ['application_id', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_application_v3_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -315,14 +281,10 @@ class DevStarClient(Client):
         :type request: :class:`huaweicloudsdkdevstar.v1.UpdateApplicationRequest`
         :rtype: :class:`huaweicloudsdkdevstar.v1.UpdateApplicationResponse`
         """
-        return self.update_application_with_http_info(request)
+        return self._update_application_with_http_info(request)
 
-    def update_application_with_http_info(self, request):
-        all_params = ['application_id', 'update_application_request_body', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_application_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -379,14 +341,10 @@ class DevStarClient(Client):
         :type request: :class:`huaweicloudsdkdevstar.v1.DeleteApplicationV4Request`
         :rtype: :class:`huaweicloudsdkdevstar.v1.DeleteApplicationV4Response`
         """
-        return self.delete_application_v4_with_http_info(request)
+        return self._delete_application_v4_with_http_info(request)
 
-    def delete_application_v4_with_http_info(self, request):
-        all_params = ['application_id', 'is_delete_repository', 'pipeline_ids']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_application_v4_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -444,14 +402,10 @@ class DevStarClient(Client):
         :type request: :class:`huaweicloudsdkdevstar.v1.ListApplicationsV6Request`
         :rtype: :class:`huaweicloudsdkdevstar.v1.ListApplicationsV6Response`
         """
-        return self.list_applications_v6_with_http_info(request)
+        return self._list_applications_v6_with_http_info(request)
 
-    def list_applications_v6_with_http_info(self, request):
-        all_params = ['x_language', 'attention', 'region_id', 'keyword', 'project_id', 'topic_id', 'is_created_by_self', 'sort_key', 'sort_dir', 'limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_applications_v6_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -526,14 +480,10 @@ class DevStarClient(Client):
         :type request: :class:`huaweicloudsdkdevstar.v1.DownloadApplicationCodeRequest`
         :rtype: :class:`huaweicloudsdkdevstar.v1.DownloadApplicationCodeResponse`
         """
-        return self.download_application_code_with_http_info(request)
+        return self._download_application_code_with_http_info(request)
 
-    def download_application_code_with_http_info(self, request):
-        all_params = ['job_id', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _download_application_code_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -588,14 +538,10 @@ class DevStarClient(Client):
         :type request: :class:`huaweicloudsdkdevstar.v1.ConfirmDeploymentJobRequest`
         :rtype: :class:`huaweicloudsdkdevstar.v1.ConfirmDeploymentJobResponse`
         """
-        return self.confirm_deployment_job_with_http_info(request)
+        return self._confirm_deployment_job_with_http_info(request)
 
-    def confirm_deployment_job_with_http_info(self, request):
-        all_params = ['application_id', 'environment_tag', 'confirm_deployment_job_request_body', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _confirm_deployment_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -657,14 +603,10 @@ class DevStarClient(Client):
         :type request: :class:`huaweicloudsdkdevstar.v1.CreateDeploymentJobsRequest`
         :rtype: :class:`huaweicloudsdkdevstar.v1.CreateDeploymentJobsResponse`
         """
-        return self.create_deployment_jobs_with_http_info(request)
+        return self._create_deployment_jobs_with_http_info(request)
 
-    def create_deployment_jobs_with_http_info(self, request):
-        all_params = ['application_id', 'environment_tag', 'create_deployment_jobs_request_body', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_deployment_jobs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -723,14 +665,10 @@ class DevStarClient(Client):
         :type request: :class:`huaweicloudsdkdevstar.v1.ShowDeploymentJobsRequest`
         :rtype: :class:`huaweicloudsdkdevstar.v1.ShowDeploymentJobsResponse`
         """
-        return self.show_deployment_jobs_with_http_info(request)
+        return self._show_deployment_jobs_with_http_info(request)
 
-    def show_deployment_jobs_with_http_info(self, request):
-        all_params = ['application_id', 'environment_tag', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_deployment_jobs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -795,14 +733,10 @@ class DevStarClient(Client):
         :type request: :class:`huaweicloudsdkdevstar.v1.RunCodehubTemplateJobRequest`
         :rtype: :class:`huaweicloudsdkdevstar.v1.RunCodehubTemplateJobResponse`
         """
-        return self.run_codehub_template_job_with_http_info(request)
+        return self._run_codehub_template_job_with_http_info(request)
 
-    def run_codehub_template_job_with_http_info(self, request):
-        all_params = ['run_codehub_template_job_request_body', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _run_codehub_template_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -865,14 +799,10 @@ class DevStarClient(Client):
         :type request: :class:`huaweicloudsdkdevstar.v1.RunDevstarTemplateJobRequest`
         :rtype: :class:`huaweicloudsdkdevstar.v1.RunDevstarTemplateJobResponse`
         """
-        return self.run_devstar_template_job_with_http_info(request)
+        return self._run_devstar_template_job_with_http_info(request)
 
-    def run_devstar_template_job_with_http_info(self, request):
-        all_params = ['run_devstar_template_job_request_body', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _run_devstar_template_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -936,14 +866,10 @@ class DevStarClient(Client):
         :type request: :class:`huaweicloudsdkdevstar.v1.ShowJobDetailRequest`
         :rtype: :class:`huaweicloudsdkdevstar.v1.ShowJobDetailResponse`
         """
-        return self.show_job_detail_with_http_info(request)
+        return self._show_job_detail_with_http_info(request)
 
-    def show_job_detail_with_http_info(self, request):
-        all_params = ['job_id', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_job_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -998,14 +924,10 @@ class DevStarClient(Client):
         :type request: :class:`huaweicloudsdkdevstar.v1.ListPipelineTemplatesRequest`
         :rtype: :class:`huaweicloudsdkdevstar.v1.ListPipelineTemplatesResponse`
         """
-        return self.list_pipeline_templates_with_http_info(request)
+        return self._list_pipeline_templates_with_http_info(request)
 
-    def list_pipeline_templates_with_http_info(self, request):
-        all_params = ['region_id', 'x_language', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_pipeline_templates_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1064,14 +986,10 @@ class DevStarClient(Client):
         :type request: :class:`huaweicloudsdkdevstar.v1.ShowPipelineLastStatusV2Request`
         :rtype: :class:`huaweicloudsdkdevstar.v1.ShowPipelineLastStatusV2Response`
         """
-        return self.show_pipeline_last_status_v2_with_http_info(request)
+        return self._show_pipeline_last_status_v2_with_http_info(request)
 
-    def show_pipeline_last_status_v2_with_http_info(self, request):
-        all_params = ['pipeline_id', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_pipeline_last_status_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1126,14 +1044,10 @@ class DevStarClient(Client):
         :type request: :class:`huaweicloudsdkdevstar.v1.StartPipelineRequest`
         :rtype: :class:`huaweicloudsdkdevstar.v1.StartPipelineResponse`
         """
-        return self.start_pipeline_with_http_info(request)
+        return self._start_pipeline_with_http_info(request)
 
-    def start_pipeline_with_http_info(self, request):
-        all_params = ['pipeline_id', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _start_pipeline_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1189,14 +1103,10 @@ class DevStarClient(Client):
         :type request: :class:`huaweicloudsdkdevstar.v1.ListProjectsV4Request`
         :rtype: :class:`huaweicloudsdkdevstar.v1.ListProjectsV4Response`
         """
-        return self.list_projects_v4_with_http_info(request)
+        return self._list_projects_v4_with_http_info(request)
 
-    def list_projects_v4_with_http_info(self, request):
-        all_params = ['x_language', 'keyword', 'limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_projects_v4_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1259,14 +1169,10 @@ class DevStarClient(Client):
         :type request: :class:`huaweicloudsdkdevstar.v1.CheckRepositoryDuplicateNameRequest`
         :rtype: :class:`huaweicloudsdkdevstar.v1.CheckRepositoryDuplicateNameResponse`
         """
-        return self.check_repository_duplicate_name_with_http_info(request)
+        return self._check_repository_duplicate_name_with_http_info(request)
 
-    def check_repository_duplicate_name_with_http_info(self, request):
-        all_params = ['project_id', 'name', 'region_id', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _check_repository_duplicate_name_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1327,14 +1233,10 @@ class DevStarClient(Client):
         :type request: :class:`huaweicloudsdkdevstar.v1.ShowRepositoryByCloudIdeRequest`
         :rtype: :class:`huaweicloudsdkdevstar.v1.ShowRepositoryByCloudIdeResponse`
         """
-        return self.show_repository_by_cloud_ide_with_http_info(request)
+        return self._show_repository_by_cloud_ide_with_http_info(request)
 
-    def show_repository_by_cloud_ide_with_http_info(self, request):
-        all_params = ['repository_id', 'repository_ssh_url', 'x_language', 'region_id', 'space_prefix', 'is_open_last', 'is_free']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_repository_by_cloud_ide_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1399,14 +1301,10 @@ class DevStarClient(Client):
         :type request: :class:`huaweicloudsdkdevstar.v1.ShowRepositoryStatisticalDataV2Request`
         :rtype: :class:`huaweicloudsdkdevstar.v1.ShowRepositoryStatisticalDataV2Response`
         """
-        return self.show_repository_statistical_data_v2_with_http_info(request)
+        return self._show_repository_statistical_data_v2_with_http_info(request)
 
-    def show_repository_statistical_data_v2_with_http_info(self, request):
-        all_params = ['repository_id', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_repository_statistical_data_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1461,14 +1359,10 @@ class DevStarClient(Client):
         :type request: :class:`huaweicloudsdkdevstar.v1.ShowTemplateFileRequest`
         :rtype: :class:`huaweicloudsdkdevstar.v1.ShowTemplateFileResponse`
         """
-        return self.show_template_file_with_http_info(request)
+        return self._show_template_file_with_http_info(request)
 
-    def show_template_file_with_http_info(self, request):
-        all_params = ['template_id', 'file_path', 'x_language', 'type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_template_file_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1527,14 +1421,10 @@ class DevStarClient(Client):
         :type request: :class:`huaweicloudsdkdevstar.v1.CreateTemplateViewHistoriesRequest`
         :rtype: :class:`huaweicloudsdkdevstar.v1.CreateTemplateViewHistoriesResponse`
         """
-        return self.create_template_view_histories_with_http_info(request)
+        return self._create_template_view_histories_with_http_info(request)
 
-    def create_template_view_histories_with_http_info(self, request):
-        all_params = ['create_template_view_histories_request_body', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_template_view_histories_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1589,14 +1479,10 @@ class DevStarClient(Client):
         :type request: :class:`huaweicloudsdkdevstar.v1.ListPublishedTemplatesRequest`
         :rtype: :class:`huaweicloudsdkdevstar.v1.ListPublishedTemplatesResponse`
         """
-        return self.list_published_templates_with_http_info(request)
+        return self._list_published_templates_with_http_info(request)
 
-    def list_published_templates_with_http_info(self, request):
-        all_params = ['x_language', 'keyword', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_published_templates_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1655,14 +1541,10 @@ class DevStarClient(Client):
         :type request: :class:`huaweicloudsdkdevstar.v1.ListTemplateViewHistoriesRequest`
         :rtype: :class:`huaweicloudsdkdevstar.v1.ListTemplateViewHistoriesResponse`
         """
-        return self.list_template_view_histories_with_http_info(request)
+        return self._list_template_view_histories_with_http_info(request)
 
-    def list_template_view_histories_with_http_info(self, request):
-        all_params = ['platform_source', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_template_view_histories_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1717,14 +1599,10 @@ class DevStarClient(Client):
         :type request: :class:`huaweicloudsdkdevstar.v1.ListTemplatesRequest`
         :rtype: :class:`huaweicloudsdkdevstar.v1.ListTemplatesResponse`
         """
-        return self.list_templates_with_http_info(request)
+        return self._list_templates_with_http_info(request)
 
-    def list_templates_with_http_info(self, request):
-        all_params = ['x_language', 'list_templates_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_templates_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1779,14 +1657,10 @@ class DevStarClient(Client):
         :type request: :class:`huaweicloudsdkdevstar.v1.ListTemplatesV2Request`
         :rtype: :class:`huaweicloudsdkdevstar.v1.ListTemplatesV2Response`
         """
-        return self.list_templates_v2_with_http_info(request)
+        return self._list_templates_v2_with_http_info(request)
 
-    def list_templates_v2_with_http_info(self, request):
-        all_params = ['action_id', 'x_language', 'list_templates_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_templates_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1843,14 +1717,10 @@ class DevStarClient(Client):
         :type request: :class:`huaweicloudsdkdevstar.v1.ShowTemplateV3Request`
         :rtype: :class:`huaweicloudsdkdevstar.v1.ShowTemplateV3Response`
         """
-        return self.show_template_v3_with_http_info(request)
+        return self._show_template_v3_with_http_info(request)
 
-    def show_template_v3_with_http_info(self, request):
-        all_params = ['template_id', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_template_v3_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1905,14 +1775,10 @@ class DevStarClient(Client):
         :type request: :class:`huaweicloudsdkdevstar.v1.ShowTemplateDetailRequest`
         :rtype: :class:`huaweicloudsdkdevstar.v1.ShowTemplateDetailResponse`
         """
-        return self.show_template_detail_with_http_info(request)
+        return self._show_template_detail_with_http_info(request)
 
-    def show_template_detail_with_http_info(self, request):
-        all_params = ['template_id', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_template_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

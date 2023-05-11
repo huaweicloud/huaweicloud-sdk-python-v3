@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class FunctionGraphClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(FunctionGraphClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkfunctiongraph.v2.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -53,14 +35,10 @@ class FunctionGraphClient(Client):
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.AsyncInvokeFunctionRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.AsyncInvokeFunctionResponse`
         """
-        return self.async_invoke_function_with_http_info(request)
+        return self._async_invoke_function_with_http_info(request)
 
-    def async_invoke_function_with_http_info(self, request):
-        all_params = ['function_urn', 'async_invoke_function_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _async_invoke_function_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -115,14 +93,10 @@ class FunctionGraphClient(Client):
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.AsyncInvokeReservedFunctionRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.AsyncInvokeReservedFunctionResponse`
         """
-        return self.async_invoke_reserved_function_with_http_info(request)
+        return self._async_invoke_reserved_function_with_http_info(request)
 
-    def async_invoke_reserved_function_with_http_info(self, request):
-        all_params = ['function_urn', 'async_invoke_reserved_function_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _async_invoke_reserved_function_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -181,14 +155,10 @@ class FunctionGraphClient(Client):
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.BatchDeleteFunctionTriggersRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.BatchDeleteFunctionTriggersResponse`
         """
-        return self.batch_delete_function_triggers_with_http_info(request)
+        return self._batch_delete_function_triggers_with_http_info(request)
 
-    def batch_delete_function_triggers_with_http_info(self, request):
-        all_params = ['function_urn']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_delete_function_triggers_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -241,14 +211,10 @@ class FunctionGraphClient(Client):
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.BatchDeleteWorkflowsRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.BatchDeleteWorkflowsResponse`
         """
-        return self.batch_delete_workflows_with_http_info(request)
+        return self._batch_delete_workflows_with_http_info(request)
 
-    def batch_delete_workflows_with_http_info(self, request):
-        all_params = ['batch_delete_workflows_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_delete_workflows_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -301,14 +267,10 @@ class FunctionGraphClient(Client):
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.CancelAsyncInvocationRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.CancelAsyncInvocationResponse`
         """
-        return self.cancel_async_invocation_with_http_info(request)
+        return self._cancel_async_invocation_with_http_info(request)
 
-    def cancel_async_invocation_with_http_info(self, request):
-        all_params = ['function_urn', 'cancel_async_invocation_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _cancel_async_invocation_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -363,14 +325,10 @@ class FunctionGraphClient(Client):
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.CreateDependencyRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.CreateDependencyResponse`
         """
-        return self.create_dependency_with_http_info(request)
+        return self._create_dependency_with_http_info(request)
 
-    def create_dependency_with_http_info(self, request):
-        all_params = ['create_dependency_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_dependency_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -423,14 +381,10 @@ class FunctionGraphClient(Client):
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.CreateDependencyVersionRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.CreateDependencyVersionResponse`
         """
-        return self.create_dependency_version_with_http_info(request)
+        return self._create_dependency_version_with_http_info(request)
 
-    def create_dependency_version_with_http_info(self, request):
-        all_params = ['create_dependency_version_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_dependency_version_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -483,14 +437,10 @@ class FunctionGraphClient(Client):
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.CreateEventRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.CreateEventResponse`
         """
-        return self.create_event_with_http_info(request)
+        return self._create_event_with_http_info(request)
 
-    def create_event_with_http_info(self, request):
-        all_params = ['function_urn', 'create_event_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_event_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -545,14 +495,10 @@ class FunctionGraphClient(Client):
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.CreateFunctionRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.CreateFunctionResponse`
         """
-        return self.create_function_with_http_info(request)
+        return self._create_function_with_http_info(request)
 
-    def create_function_with_http_info(self, request):
-        all_params = ['create_function_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_function_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -609,14 +555,10 @@ class FunctionGraphClient(Client):
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.CreateFunctionTriggerRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.CreateFunctionTriggerResponse`
         """
-        return self.create_function_trigger_with_http_info(request)
+        return self._create_function_trigger_with_http_info(request)
 
-    def create_function_trigger_with_http_info(self, request):
-        all_params = ['function_urn', 'create_function_trigger_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_function_trigger_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -671,14 +613,10 @@ class FunctionGraphClient(Client):
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.CreateFunctionVersionRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.CreateFunctionVersionResponse`
         """
-        return self.create_function_version_with_http_info(request)
+        return self._create_function_version_with_http_info(request)
 
-    def create_function_version_with_http_info(self, request):
-        all_params = ['function_urn', 'create_function_version_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_function_version_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -733,14 +671,10 @@ class FunctionGraphClient(Client):
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.CreateVersionAliasRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.CreateVersionAliasResponse`
         """
-        return self.create_version_alias_with_http_info(request)
+        return self._create_version_alias_with_http_info(request)
 
-    def create_version_alias_with_http_info(self, request):
-        all_params = ['function_urn', 'create_version_alias_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_version_alias_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -795,14 +729,10 @@ class FunctionGraphClient(Client):
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.CreateWorkflowRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.CreateWorkflowResponse`
         """
-        return self.create_workflow_with_http_info(request)
+        return self._create_workflow_with_http_info(request)
 
-    def create_workflow_with_http_info(self, request):
-        all_params = ['create_workflow_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_workflow_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -855,14 +785,10 @@ class FunctionGraphClient(Client):
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.DeleteDependencyRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.DeleteDependencyResponse`
         """
-        return self.delete_dependency_with_http_info(request)
+        return self._delete_dependency_with_http_info(request)
 
-    def delete_dependency_with_http_info(self, request):
-        all_params = ['depend_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_dependency_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -915,14 +841,10 @@ class FunctionGraphClient(Client):
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.DeleteDependencyVersionRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.DeleteDependencyVersionResponse`
         """
-        return self.delete_dependency_version_with_http_info(request)
+        return self._delete_dependency_version_with_http_info(request)
 
-    def delete_dependency_version_with_http_info(self, request):
-        all_params = ['depend_id', 'version']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_dependency_version_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -977,14 +899,10 @@ class FunctionGraphClient(Client):
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.DeleteEventRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.DeleteEventResponse`
         """
-        return self.delete_event_with_http_info(request)
+        return self._delete_event_with_http_info(request)
 
-    def delete_event_with_http_info(self, request):
-        all_params = ['function_urn', 'event_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_event_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1042,14 +960,10 @@ class FunctionGraphClient(Client):
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.DeleteFunctionRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.DeleteFunctionResponse`
         """
-        return self.delete_function_with_http_info(request)
+        return self._delete_function_with_http_info(request)
 
-    def delete_function_with_http_info(self, request):
-        all_params = ['function_urn']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_function_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1102,14 +1016,10 @@ class FunctionGraphClient(Client):
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.DeleteFunctionAsyncInvokeConfigRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.DeleteFunctionAsyncInvokeConfigResponse`
         """
-        return self.delete_function_async_invoke_config_with_http_info(request)
+        return self._delete_function_async_invoke_config_with_http_info(request)
 
-    def delete_function_async_invoke_config_with_http_info(self, request):
-        all_params = ['function_urn']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_function_async_invoke_config_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1162,14 +1072,10 @@ class FunctionGraphClient(Client):
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.DeleteFunctionTriggerRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.DeleteFunctionTriggerResponse`
         """
-        return self.delete_function_trigger_with_http_info(request)
+        return self._delete_function_trigger_with_http_info(request)
 
-    def delete_function_trigger_with_http_info(self, request):
-        all_params = ['function_urn', 'trigger_type_code', 'trigger_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_function_trigger_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1226,14 +1132,10 @@ class FunctionGraphClient(Client):
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.DeleteVersionAliasRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.DeleteVersionAliasResponse`
         """
-        return self.delete_version_alias_with_http_info(request)
+        return self._delete_version_alias_with_http_info(request)
 
-    def delete_version_alias_with_http_info(self, request):
-        all_params = ['function_urn', 'alias_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_version_alias_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1288,14 +1190,10 @@ class FunctionGraphClient(Client):
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.EnableLtsLogsRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.EnableLtsLogsResponse`
         """
-        return self.enable_lts_logs_with_http_info(request)
+        return self._enable_lts_logs_with_http_info(request)
 
-    def enable_lts_logs_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _enable_lts_logs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1346,14 +1244,10 @@ class FunctionGraphClient(Client):
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ExportFunctionRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ExportFunctionResponse`
         """
-        return self.export_function_with_http_info(request)
+        return self._export_function_with_http_info(request)
 
-    def export_function_with_http_info(self, request):
-        all_params = ['function_urn', 'config', 'code', 'type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _export_function_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1412,14 +1306,10 @@ class FunctionGraphClient(Client):
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ImportFunctionRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ImportFunctionResponse`
         """
-        return self.import_function_with_http_info(request)
+        return self._import_function_with_http_info(request)
 
-    def import_function_with_http_info(self, request):
-        all_params = ['import_function_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _import_function_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1472,14 +1362,10 @@ class FunctionGraphClient(Client):
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.InvokeFunctionRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.InvokeFunctionResponse`
         """
-        return self.invoke_function_with_http_info(request)
+        return self._invoke_function_with_http_info(request)
 
-    def invoke_function_with_http_info(self, request):
-        all_params = ['function_urn', 'invoke_function_request_body', 'x_cff_log_type', 'x_cff_request_version']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _invoke_function_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1538,14 +1424,10 @@ class FunctionGraphClient(Client):
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ListAsyncInvocationsRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ListAsyncInvocationsResponse`
         """
-        return self.list_async_invocations_with_http_info(request)
+        return self._list_async_invocations_with_http_info(request)
 
-    def list_async_invocations_with_http_info(self, request):
-        all_params = ['function_urn', 'request_id', 'marker', 'limit', 'status', 'query_begin_time', 'query_end_time']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_async_invocations_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1610,14 +1492,10 @@ class FunctionGraphClient(Client):
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ListDependenciesRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ListDependenciesResponse`
         """
-        return self.list_dependencies_with_http_info(request)
+        return self._list_dependencies_with_http_info(request)
 
-    def list_dependencies_with_http_info(self, request):
-        all_params = ['marker', 'maxitems', 'ispublic', 'dependency_type', 'runtime', 'name', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_dependencies_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1682,14 +1560,10 @@ class FunctionGraphClient(Client):
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ListDependencyVersionRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ListDependencyVersionResponse`
         """
-        return self.list_dependency_version_with_http_info(request)
+        return self._list_dependency_version_with_http_info(request)
 
-    def list_dependency_version_with_http_info(self, request):
-        all_params = ['depend_id', 'marker', 'maxitems']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_dependency_version_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1746,14 +1620,10 @@ class FunctionGraphClient(Client):
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ListEventsRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ListEventsResponse`
         """
-        return self.list_events_with_http_info(request)
+        return self._list_events_with_http_info(request)
 
-    def list_events_with_http_info(self, request):
-        all_params = ['function_urn']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_events_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1808,14 +1678,10 @@ class FunctionGraphClient(Client):
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ListFunctionAsMetricRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ListFunctionAsMetricResponse`
         """
-        return self.list_function_as_metric_with_http_info(request)
+        return self._list_function_as_metric_with_http_info(request)
 
-    def list_function_as_metric_with_http_info(self, request):
-        all_params = ['type', 'start_time', 'end_time', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_function_as_metric_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1874,14 +1740,10 @@ class FunctionGraphClient(Client):
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ListFunctionAsyncInvokeConfigRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ListFunctionAsyncInvokeConfigResponse`
         """
-        return self.list_function_async_invoke_config_with_http_info(request)
+        return self._list_function_async_invoke_config_with_http_info(request)
 
-    def list_function_async_invoke_config_with_http_info(self, request):
-        all_params = ['function_urn', 'marker', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_function_async_invoke_config_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1938,14 +1800,10 @@ class FunctionGraphClient(Client):
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ListFunctionReservedInstancesRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ListFunctionReservedInstancesResponse`
         """
-        return self.list_function_reserved_instances_with_http_info(request)
+        return self._list_function_reserved_instances_with_http_info(request)
 
-    def list_function_reserved_instances_with_http_info(self, request):
-        all_params = ['marker', 'limit', 'urn']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_function_reserved_instances_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2002,14 +1860,10 @@ class FunctionGraphClient(Client):
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ListFunctionStatisticsRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ListFunctionStatisticsResponse`
         """
-        return self.list_function_statistics_with_http_info(request)
+        return self._list_function_statistics_with_http_info(request)
 
-    def list_function_statistics_with_http_info(self, request):
-        all_params = ['func_urn', 'period']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_function_statistics_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2064,14 +1918,10 @@ class FunctionGraphClient(Client):
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ListFunctionTriggersRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ListFunctionTriggersResponse`
         """
-        return self.list_function_triggers_with_http_info(request)
+        return self._list_function_triggers_with_http_info(request)
 
-    def list_function_triggers_with_http_info(self, request):
-        all_params = ['function_urn']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_function_triggers_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2124,14 +1974,10 @@ class FunctionGraphClient(Client):
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ListFunctionVersionsRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ListFunctionVersionsResponse`
         """
-        return self.list_function_versions_with_http_info(request)
+        return self._list_function_versions_with_http_info(request)
 
-    def list_function_versions_with_http_info(self, request):
-        all_params = ['function_urn', 'marker', 'maxitems']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_function_versions_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2188,14 +2034,10 @@ class FunctionGraphClient(Client):
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ListFunctionsRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ListFunctionsResponse`
         """
-        return self.list_functions_with_http_info(request)
+        return self._list_functions_with_http_info(request)
 
-    def list_functions_with_http_info(self, request):
-        all_params = ['marker', 'maxitems', 'package_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_functions_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2252,14 +2094,10 @@ class FunctionGraphClient(Client):
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ListQuotasRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ListQuotasResponse`
         """
-        return self.list_quotas_with_http_info(request)
+        return self._list_quotas_with_http_info(request)
 
-    def list_quotas_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_quotas_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2310,14 +2148,10 @@ class FunctionGraphClient(Client):
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ListReservedInstanceConfigsRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ListReservedInstanceConfigsResponse`
         """
-        return self.list_reserved_instance_configs_with_http_info(request)
+        return self._list_reserved_instance_configs_with_http_info(request)
 
-    def list_reserved_instance_configs_with_http_info(self, request):
-        all_params = ['function_urn', 'marker', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_reserved_instance_configs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2377,14 +2211,10 @@ class FunctionGraphClient(Client):
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ListStatisticsRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ListStatisticsResponse`
         """
-        return self.list_statistics_with_http_info(request)
+        return self._list_statistics_with_http_info(request)
 
-    def list_statistics_with_http_info(self, request):
-        all_params = ['filter', 'period', 'option']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_statistics_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2441,14 +2271,10 @@ class FunctionGraphClient(Client):
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ListVersionAliasesRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ListVersionAliasesResponse`
         """
-        return self.list_version_aliases_with_http_info(request)
+        return self._list_version_aliases_with_http_info(request)
 
-    def list_version_aliases_with_http_info(self, request):
-        all_params = ['function_urn']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_version_aliases_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2501,14 +2327,10 @@ class FunctionGraphClient(Client):
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ListWorkflowRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ListWorkflowResponse`
         """
-        return self.list_workflow_with_http_info(request)
+        return self._list_workflow_with_http_info(request)
 
-    def list_workflow_with_http_info(self, request):
-        all_params = ['workflow_name', 'limit', 'offset', 'enterprise_project', 'mode']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_workflow_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2569,14 +2391,10 @@ class FunctionGraphClient(Client):
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ListWorkflowExecutionsRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ListWorkflowExecutionsResponse`
         """
-        return self.list_workflow_executions_with_http_info(request)
+        return self._list_workflow_executions_with_http_info(request)
 
-    def list_workflow_executions_with_http_info(self, request):
-        all_params = ['workflow_id', 'limit', 'status', 'start_time', 'end_time']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_workflow_executions_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2637,14 +2455,10 @@ class FunctionGraphClient(Client):
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.RetryWorkFlowRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.RetryWorkFlowResponse`
         """
-        return self.retry_work_flow_with_http_info(request)
+        return self._retry_work_flow_with_http_info(request)
 
-    def retry_work_flow_with_http_info(self, request):
-        all_params = ['workflow_id', 'execution_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _retry_work_flow_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2699,14 +2513,10 @@ class FunctionGraphClient(Client):
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ShowDependcyRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ShowDependcyResponse`
         """
-        return self.show_dependcy_with_http_info(request)
+        return self._show_dependcy_with_http_info(request)
 
-    def show_dependcy_with_http_info(self, request):
-        all_params = ['depend_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_dependcy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2759,14 +2569,10 @@ class FunctionGraphClient(Client):
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ShowDependencyVersionRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ShowDependencyVersionResponse`
         """
-        return self.show_dependency_version_with_http_info(request)
+        return self._show_dependency_version_with_http_info(request)
 
-    def show_dependency_version_with_http_info(self, request):
-        all_params = ['depend_id', 'version']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_dependency_version_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2821,14 +2627,10 @@ class FunctionGraphClient(Client):
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ShowEventRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ShowEventResponse`
         """
-        return self.show_event_with_http_info(request)
+        return self._show_event_with_http_info(request)
 
-    def show_event_with_http_info(self, request):
-        all_params = ['function_urn', 'event_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_event_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2883,14 +2685,10 @@ class FunctionGraphClient(Client):
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ShowFunctionAsyncInvokeConfigRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ShowFunctionAsyncInvokeConfigResponse`
         """
-        return self.show_function_async_invoke_config_with_http_info(request)
+        return self._show_function_async_invoke_config_with_http_info(request)
 
-    def show_function_async_invoke_config_with_http_info(self, request):
-        all_params = ['function_urn']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_function_async_invoke_config_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2943,14 +2741,10 @@ class FunctionGraphClient(Client):
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ShowFunctionCodeRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ShowFunctionCodeResponse`
         """
-        return self.show_function_code_with_http_info(request)
+        return self._show_function_code_with_http_info(request)
 
-    def show_function_code_with_http_info(self, request):
-        all_params = ['function_urn']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_function_code_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3003,14 +2797,10 @@ class FunctionGraphClient(Client):
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ShowFunctionConfigRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ShowFunctionConfigResponse`
         """
-        return self.show_function_config_with_http_info(request)
+        return self._show_function_config_with_http_info(request)
 
-    def show_function_config_with_http_info(self, request):
-        all_params = ['function_urn']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_function_config_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3063,14 +2853,10 @@ class FunctionGraphClient(Client):
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ShowFunctionTriggerRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ShowFunctionTriggerResponse`
         """
-        return self.show_function_trigger_with_http_info(request)
+        return self._show_function_trigger_with_http_info(request)
 
-    def show_function_trigger_with_http_info(self, request):
-        all_params = ['function_urn', 'trigger_type_code', 'trigger_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_function_trigger_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3127,14 +2913,10 @@ class FunctionGraphClient(Client):
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ShowLtsLogDetailsRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ShowLtsLogDetailsResponse`
         """
-        return self.show_lts_log_details_with_http_info(request)
+        return self._show_lts_log_details_with_http_info(request)
 
-    def show_lts_log_details_with_http_info(self, request):
-        all_params = ['function_urn']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_lts_log_details_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3187,14 +2969,10 @@ class FunctionGraphClient(Client):
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ShowTenantMetricRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ShowTenantMetricResponse`
         """
-        return self.show_tenant_metric_with_http_info(request)
+        return self._show_tenant_metric_with_http_info(request)
 
-    def show_tenant_metric_with_http_info(self, request):
-        all_params = ['period', 'start_time', 'end_time', 'metric_type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_tenant_metric_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3253,14 +3031,10 @@ class FunctionGraphClient(Client):
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ShowTracingRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ShowTracingResponse`
         """
-        return self.show_tracing_with_http_info(request)
+        return self._show_tracing_with_http_info(request)
 
-    def show_tracing_with_http_info(self, request):
-        all_params = ['function_urn']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_tracing_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3313,14 +3087,10 @@ class FunctionGraphClient(Client):
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ShowVersionAliasRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ShowVersionAliasResponse`
         """
-        return self.show_version_alias_with_http_info(request)
+        return self._show_version_alias_with_http_info(request)
 
-    def show_version_alias_with_http_info(self, request):
-        all_params = ['function_urn', 'alias_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_version_alias_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3375,14 +3145,10 @@ class FunctionGraphClient(Client):
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ShowWorkFlowRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ShowWorkFlowResponse`
         """
-        return self.show_work_flow_with_http_info(request)
+        return self._show_work_flow_with_http_info(request)
 
-    def show_work_flow_with_http_info(self, request):
-        all_params = ['workflow_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_work_flow_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3435,14 +3201,10 @@ class FunctionGraphClient(Client):
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ShowWorkFlowMetricRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ShowWorkFlowMetricResponse`
         """
-        return self.show_work_flow_metric_with_http_info(request)
+        return self._show_work_flow_metric_with_http_info(request)
 
-    def show_work_flow_metric_with_http_info(self, request):
-        all_params = ['workflow_urn', 'period', 'start_time', 'end_time']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_work_flow_metric_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3501,14 +3263,10 @@ class FunctionGraphClient(Client):
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ShowWorkflowExecutionRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ShowWorkflowExecutionResponse`
         """
-        return self.show_workflow_execution_with_http_info(request)
+        return self._show_workflow_execution_with_http_info(request)
 
-    def show_workflow_execution_with_http_info(self, request):
-        all_params = ['workflow_id', 'execution_id', 'x_get_workflow_full_history_data']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_workflow_execution_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3565,14 +3323,10 @@ class FunctionGraphClient(Client):
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ShowWorkflowExecutionForPageRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ShowWorkflowExecutionForPageResponse`
         """
-        return self.show_workflow_execution_for_page_with_http_info(request)
+        return self._show_workflow_execution_for_page_with_http_info(request)
 
-    def show_workflow_execution_for_page_with_http_info(self, request):
-        all_params = ['workflow_id', 'offset', 'limit', 'start_time', 'end_time']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_workflow_execution_for_page_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3633,14 +3387,10 @@ class FunctionGraphClient(Client):
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.StartSyncWorkflowExecutionRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.StartSyncWorkflowExecutionResponse`
         """
-        return self.start_sync_workflow_execution_with_http_info(request)
+        return self._start_sync_workflow_execution_with_http_info(request)
 
-    def start_sync_workflow_execution_with_http_info(self, request):
-        all_params = ['workflow_id', 'start_sync_workflow_execution_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _start_sync_workflow_execution_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3695,14 +3445,10 @@ class FunctionGraphClient(Client):
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.StartWorkflowExecutionRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.StartWorkflowExecutionResponse`
         """
-        return self.start_workflow_execution_with_http_info(request)
+        return self._start_workflow_execution_with_http_info(request)
 
-    def start_workflow_execution_with_http_info(self, request):
-        all_params = ['workflow_id', 'start_workflow_execution_request_body', 'x_create_time', 'x_workflow_run_id', 'x_workflow_run_merge_fn_parameters']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _start_workflow_execution_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3763,14 +3509,10 @@ class FunctionGraphClient(Client):
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.StopWorkFlowRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.StopWorkFlowResponse`
         """
-        return self.stop_work_flow_with_http_info(request)
+        return self._stop_work_flow_with_http_info(request)
 
-    def stop_work_flow_with_http_info(self, request):
-        all_params = ['workflow_id', 'execution_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _stop_work_flow_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3825,14 +3567,10 @@ class FunctionGraphClient(Client):
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.UpdateDependcyRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.UpdateDependcyResponse`
         """
-        return self.update_dependcy_with_http_info(request)
+        return self._update_dependcy_with_http_info(request)
 
-    def update_dependcy_with_http_info(self, request):
-        all_params = ['depend_id', 'update_dependcy_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_dependcy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3887,14 +3625,10 @@ class FunctionGraphClient(Client):
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.UpdateEventRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.UpdateEventResponse`
         """
-        return self.update_event_with_http_info(request)
+        return self._update_event_with_http_info(request)
 
-    def update_event_with_http_info(self, request):
-        all_params = ['function_urn', 'event_id', 'update_event_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_event_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3951,14 +3685,10 @@ class FunctionGraphClient(Client):
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.UpdateFunctionAsyncInvokeConfigRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.UpdateFunctionAsyncInvokeConfigResponse`
         """
-        return self.update_function_async_invoke_config_with_http_info(request)
+        return self._update_function_async_invoke_config_with_http_info(request)
 
-    def update_function_async_invoke_config_with_http_info(self, request):
-        all_params = ['function_urn', 'update_function_async_invoke_config_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_function_async_invoke_config_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4013,14 +3743,10 @@ class FunctionGraphClient(Client):
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.UpdateFunctionCodeRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.UpdateFunctionCodeResponse`
         """
-        return self.update_function_code_with_http_info(request)
+        return self._update_function_code_with_http_info(request)
 
-    def update_function_code_with_http_info(self, request):
-        all_params = ['function_urn', 'update_function_code_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_function_code_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4075,14 +3801,10 @@ class FunctionGraphClient(Client):
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.UpdateFunctionConfigRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.UpdateFunctionConfigResponse`
         """
-        return self.update_function_config_with_http_info(request)
+        return self._update_function_config_with_http_info(request)
 
-    def update_function_config_with_http_info(self, request):
-        all_params = ['function_urn', 'update_function_config_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_function_config_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4137,14 +3859,10 @@ class FunctionGraphClient(Client):
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.UpdateFunctionMaxInstanceConfigRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.UpdateFunctionMaxInstanceConfigResponse`
         """
-        return self.update_function_max_instance_config_with_http_info(request)
+        return self._update_function_max_instance_config_with_http_info(request)
 
-    def update_function_max_instance_config_with_http_info(self, request):
-        all_params = ['function_urn', 'update_function_max_instance_config_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_function_max_instance_config_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4199,14 +3917,10 @@ class FunctionGraphClient(Client):
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.UpdateFunctionReservedInstancesCountRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.UpdateFunctionReservedInstancesCountResponse`
         """
-        return self.update_function_reserved_instances_count_with_http_info(request)
+        return self._update_function_reserved_instances_count_with_http_info(request)
 
-    def update_function_reserved_instances_count_with_http_info(self, request):
-        all_params = ['function_urn', 'update_function_reserved_instances_count_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_function_reserved_instances_count_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4261,14 +3975,10 @@ class FunctionGraphClient(Client):
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.UpdateTracingRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.UpdateTracingResponse`
         """
-        return self.update_tracing_with_http_info(request)
+        return self._update_tracing_with_http_info(request)
 
-    def update_tracing_with_http_info(self, request):
-        all_params = ['function_urn', 'update_tracing_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_tracing_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4323,14 +4033,10 @@ class FunctionGraphClient(Client):
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.UpdateTriggerRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.UpdateTriggerResponse`
         """
-        return self.update_trigger_with_http_info(request)
+        return self._update_trigger_with_http_info(request)
 
-    def update_trigger_with_http_info(self, request):
-        all_params = ['function_urn', 'trigger_type_code', 'trigger_id', 'update_trigger_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_trigger_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4389,14 +4095,10 @@ class FunctionGraphClient(Client):
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.UpdateVersionAliasRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.UpdateVersionAliasResponse`
         """
-        return self.update_version_alias_with_http_info(request)
+        return self._update_version_alias_with_http_info(request)
 
-    def update_version_alias_with_http_info(self, request):
-        all_params = ['function_urn', 'alias_name', 'update_version_alias_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_version_alias_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4453,14 +4155,10 @@ class FunctionGraphClient(Client):
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.UpdateWorkFlowRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.UpdateWorkFlowResponse`
         """
-        return self.update_work_flow_with_http_info(request)
+        return self._update_work_flow_with_http_info(request)
 
-    def update_work_flow_with_http_info(self, request):
-        all_params = ['workflow_id', 'update_workflow_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_work_flow_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

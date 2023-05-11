@@ -1,3 +1,430 @@
+# 3.1.39 2023-05-11
+
+### HuaweiCloud SDK AOS
+
+- _新增特性_
+  - 支持接口`ContinueDeployStack`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK CBR
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowVaultResourceInstances**
+    - 响应参数变更
+      - `* resources.resource_detail: list<Vault> -> object<InstancesResourceDetail>`
+  - **ListPolicies**
+    - 响应参数变更
+      - `+ policies.operation_definition.full_backup_interval`
+  - **CreatePolicy**
+    - 请求参数变更
+      - `+ policy.operation_definition.full_backup_interval`
+    - 响应参数变更
+      - `+ policy.operation_definition.full_backup_interval`
+  - **ShowPolicy**
+    - 响应参数变更
+      - `+ policy.operation_definition.full_backup_interval`
+  - **UpdatePolicy**
+    - 请求参数变更
+      - `+ policy.operation_definition.full_backup_interval`
+    - 响应参数变更
+      - `+ policy.operation_definition.full_backup_interval`
+  - **CreateVault**
+    - 请求参数变更
+      - `- vault.billing.extra_info`
+
+### HuaweiCloud SDK CBS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ExecuteGetFramsListByImagesId**
+    - 请求参数变更
+      - `+ offset`
+      - `+ limit`
+
+### HuaweiCloud SDK CloudPipeline
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListPipelineTemplates**
+    - 响应参数变更
+      - `+ total`
+      - `+ offset`
+      - `+ templates`
+      - `+ limit`
+      - `- is_system`
+      - `- is_show_source`
+      - `- create_time`
+      - `- icon`
+      - `- description`
+      - `- language`
+      - `- domain_id`
+      - `- is_collect`
+      - `- update_time`
+      - `- name`
+      - `- manifest_version`
+      - `- creator_id`
+      - `- updater_id`
+      - `- stages`
+      - `- creator_name`
+      - `- id`
+      - `- region`
+
+### HuaweiCloud SDK DGC
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ExportConnections**
+    - 请求参数变更
+      - `+ workspace`
+  - **ExportJob**
+    - 请求参数变更
+      - `+ workspace`
+  - **StopJob**
+    - 请求参数变更
+      - `+ workspace`
+  - **StopJobInstance**
+    - 请求参数变更
+      - `+ workspace`
+  - **RestoreJobInstance**
+    - 请求参数变更
+      - `+ workspace`
+  - **CancelScript**
+    - 请求参数变更
+      - `+ workspace`
+  - **DeleteConnction**
+    - 请求参数变更
+      - `+ workspace`
+  - **ShowConnection**
+    - 请求参数变更
+      - `+ workspace`
+  - **UpdateConnection**
+    - 请求参数变更
+      - `+ workspace`
+  - **ExportJobList**
+    - 请求参数变更
+      - `+ workspace`
+  - **ImportJob**
+    - 请求参数变更
+      - `+ workspace`
+  - **DeleteScript**
+    - 请求参数变更
+      - `+ workspace`
+  - **ShowScript**
+    - 请求参数变更
+      - `+ workspace`
+  - **UpdateScript**
+    - 请求参数变更
+      - `+ workspace`
+  - **ExecuteScript**
+    - 请求参数变更
+      - `+ workspace`
+  - **CreateResource**
+    - 请求参数变更
+      - `+ workspace`
+  - **DeleteResource**
+    - 请求参数变更
+      - `+ workspace`
+  - **ShowResource**
+    - 请求参数变更
+      - `+ workspace`
+  - **UpdateResource**
+    - 请求参数变更
+      - `+ workspace`
+  - **CreateConnection**
+    - 请求参数变更
+      - `+ workspace`
+  - **ListConnections**
+    - 请求参数变更
+      - `+ workspace`
+  - **ImportConnections**
+    - 请求参数变更
+      - `+ workspace`
+  - **ShowFileInfo**
+    - 请求参数变更
+      - `+ workspace`
+  - **StartJob**
+    - 请求参数变更
+      - `+ workspace`
+  - **RunOnce**
+    - 请求参数变更
+      - `+ workspace`
+  - **ShowJobStatus**
+    - 请求参数变更
+      - `+ workspace`
+  - **ListJobInstances**
+    - 请求参数变更
+      - `+ workspace`
+  - **ShowJobInstance**
+    - 请求参数变更
+      - `+ workspace`
+  - **ListSystemTasks**
+    - 请求参数变更
+      - `+ workspace`
+  - **CreateScript**
+    - 请求参数变更
+      - `+ workspace`
+  - **ListScripts**
+    - 请求参数变更
+      - `+ workspace`
+  - **ListScriptResults**
+    - 请求参数变更
+      - `+ workspace`
+  - **DeleteJob**
+    - 请求参数变更
+      - `+ workspace`
+  - **ShowJob**
+    - 请求参数变更
+      - `+ workspace`
+  - **UpdateJob**
+    - 请求参数变更
+      - `+ workspace`
+  - **CreateJob**
+    - 请求参数变更
+      - `+ workspace`
+  - **ListJobs**
+    - 请求参数变更
+      - `+ workspace`
+
+### HuaweiCloud SDK DRS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowMonitoringData**
+    - 响应参数变更
+      - `+ results.data_guard_minitor.migration_bytes_per_second`
+  - **BatchListJobDetails**
+    - 响应参数变更
+      - `+ results.data_transformation`
+      - `+ results.tags`
+
+### HuaweiCloud SDK ECS
+
+- _新增特性_
+  - 支持接口`NovaAttachInterface`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ReinstallServerWithoutCloudInit**
+    - 请求参数变更
+      - `+ os-reinstall.metadata`
+  - **ChangeServerOsWithoutCloudInit**
+    - 请求参数变更
+      - `+ os-change.metadata`
+  - **ReinstallServerWithCloudInit**
+    - 请求参数变更
+      - `+ os-reinstall.metadata.__system__encrypted`
+      - `+ os-reinstall.metadata.__system__cmkid`
+  - **ChangeServerOsWithCloudInit**
+    - 请求参数变更
+      - `+ os-change.metadata.__system__encrypted`
+      - `+ os-change.metadata.__system__cmkid`
+  - **CreateServers**
+    - 请求参数变更
+      - `+ server.root_volume.extendparam.__system__encrypted`
+      - `+ server.root_volume.extendparam.__system__cmkid`
+  - **CreatePostPaidServers**
+    - 请求参数变更
+      - `+ server.root_volume.extendparam.__system__encrypted`
+      - `+ server.root_volume.extendparam.__system__cmkid`
+
+### HuaweiCloud SDK eiHealth
+
+- _新增特性_
+  - 支持接口`CreateSynthesisTask`、`ShowSynthesisTaskResult`、`CreateCustomPropsTask`、`ShowCustomPropsTaskResult`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateCpiTask**
+    - 请求参数变更
+      - `+ custom_props`
+  - **CreateGenerationTask**
+    - 请求参数变更
+      - `+ custom_props`
+  - **CreateOptimizationTask**
+    - 请求参数变更
+      - `+ custom_props`
+  - **ShowCpiTaskResult**
+    - 响应参数变更
+      - `+ task_data.custom_props`
+      - `+ result.custom_props`
+  - **ShowGenerationTaskResult**
+    - 响应参数变更
+      - `+ task_data.custom_props`
+      - `+ result.initial_dataset_size`
+      - `+ result.strong_constraints`
+      - `+ result.weak_constraints`
+      - `+ result.binding_site`
+      - `+ result.custom_props`
+  - **ShowOptimizationTaskResult**
+    - 响应参数变更
+      - `+ task_data.custom_props`
+      - `+ result.strong_constraints`
+      - `+ result.weak_constraints`
+      - `+ result.binding_site`
+      - `+ result.custom_props`
+
+### HuaweiCloud SDK GaussDB
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListGaussMySqlInstances**
+    - 请求参数变更
+      - `+ readonly_private_ip`
+      - `+ proxy_ip`
+    - 响应参数变更
+      - `+ instances.readonly_private_ips`
+      - `+ instances.proxy_ips`
+
+### HuaweiCloud SDK Image
+
+- _新增特性_
+  - 支持接口`CreateVideoTaggingMediaTask`、`ShowVideoTaggingMediaTask`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK IMS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListImages**
+    - 请求参数变更
+      - `+ __imagetype: enum value [market]`
+
+### HuaweiCloud SDK Live
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateRecordIndex**
+    - 响应参数变更
+      - `+ width`
+      - `- weight`
+  - **ListAreaDetail**
+    - 请求参数变更
+      - `* play_domains: required -> optional`
+
+### HuaweiCloud SDK LTS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **UpdateAomMappingRules**
+    - 请求参数变更
+      - `* body: object<AomMappingRequestInfo> -> object<UpdateAomMappingRequest>`
+
+### HuaweiCloud SDK MPC
+
+- _新增特性_
+  - 支持接口`ListEditingJobs`、`CreateEditingJobs`、`DeleteEditingJobs`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK OSM
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListOrderIncident**
+    - 请求参数变更
+      - `+ xCustomerId`
+    - 响应参数变更
+      - `* incidentInfoList.incidentTypeName: object -> string`
+
+### HuaweiCloud SDK RDS
+
+- _新增特性_
+  - 支持接口`UpdatePostgresqlDbUserComment`、`UpdatePostgresqlDatabase`、`DeletePostgresqlDbUser`、`DeletePostgresqlDatabase`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreatePostgresqlDatabase**
+    - 请求参数变更
+      - `+ comment`
+  - **CreatePostgresqlDbUser**
+    - 请求参数变更
+      - `+ comment`
+  - **ListPostgresqlDatabases**
+    - 响应参数变更
+      - `+ databases.comment`
+  - **ListPostgresqlDbUserPaginated**
+    - 响应参数变更
+      - `+ users.comment`
+
+### HuaweiCloud SDK RMS
+
+- _新增特性_
+  - 支持接口`ShowAggregatePolicyStateComplianceSummary`、`ListAggregateComplianceByPolicyAssignment`、`ShowAggregateComplianceDetailsByPolicyAssignment`、`ShowAggregatePolicyAssignmentDetail`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK SFSTurbo
+
+- _新增特性_
+  - 支持以下接口：
+    - `ShowFsDirQuota`
+    - `UpdateFsDirQuota`
+    - `CreateFsDirQuota`
+    - `DeleteFsDirQuota`
+    - `ShowFsDir`
+    - `CreateFsDir`
+    - `DeleteFsDir`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK UGO
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **RunSqlConversion**
+    - 请求参数变更
+      - `+ target_db_type: enum value [GaussDB Primary/Standby]`
+  - **ConfirmTargetDbType**
+    - 请求参数变更
+      - `- target_db_type: enum value [RDS for MySQL,GaussDB(for MySQL),RDS for PostgreSQL]`
+      - `- target_db_version: enum value [5.7,8.0,11,Enhanced Edition]`
+
 # 3.1.38 2023-04-27
 
 ### HuaweiCloud SDK MSGSMS

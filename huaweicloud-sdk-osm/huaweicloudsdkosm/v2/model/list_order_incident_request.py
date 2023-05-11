@@ -1,9 +1,6 @@
 # coding: utf-8
 
-import re
 import six
-
-
 
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
@@ -35,7 +32,7 @@ class ListOrderIncidentRequest:
         'business_type_id': 'str',
         'page_no': 'int',
         'page_size': 'int',
-        'body': 'str'
+        'x_customer_id': 'str'
     }
 
     attribute_map = {
@@ -54,10 +51,10 @@ class ListOrderIncidentRequest:
         'business_type_id': 'businessTypeId',
         'page_no': 'pageNo',
         'page_size': 'pageSize',
-        'body': 'body'
+        'x_customer_id': 'xCustomerId'
     }
 
-    def __init__(self, version=None, search_key=None, label_id_list=None, app_key=None, incident_id=None, query_start_time=None, query_end_time=None, status=None, incident_status=None, x_customer_name=None, group_id=None, product_category_id=None, business_type_id=None, page_no=None, page_size=None, body=None):
+    def __init__(self, version=None, search_key=None, label_id_list=None, app_key=None, incident_id=None, query_start_time=None, query_end_time=None, status=None, incident_status=None, x_customer_name=None, group_id=None, product_category_id=None, business_type_id=None, page_no=None, page_size=None, x_customer_id=None):
         """ListOrderIncidentRequest
 
         The model defined in huaweicloud sdk
@@ -92,8 +89,8 @@ class ListOrderIncidentRequest:
         :type page_no: int
         :param page_size: 分页大小
         :type page_size: int
-        :param body: Body of the ListOrderIncidentRequest
-        :type body: str
+        :param x_customer_id: 客户id
+        :type x_customer_id: str
         """
         
         
@@ -113,7 +110,7 @@ class ListOrderIncidentRequest:
         self._business_type_id = None
         self._page_no = None
         self._page_size = None
-        self._body = None
+        self._x_customer_id = None
         self.discriminator = None
 
         if version is not None:
@@ -146,8 +143,8 @@ class ListOrderIncidentRequest:
             self.page_no = page_no
         if page_size is not None:
             self.page_size = page_size
-        if body is not None:
-            self.body = body
+        if x_customer_id is not None:
+            self.x_customer_id = x_customer_id
 
     @property
     def version(self):
@@ -480,22 +477,26 @@ class ListOrderIncidentRequest:
         self._page_size = page_size
 
     @property
-    def body(self):
-        """Gets the body of this ListOrderIncidentRequest.
+    def x_customer_id(self):
+        """Gets the x_customer_id of this ListOrderIncidentRequest.
 
-        :return: The body of this ListOrderIncidentRequest.
+        客户id
+
+        :return: The x_customer_id of this ListOrderIncidentRequest.
         :rtype: str
         """
-        return self._body
+        return self._x_customer_id
 
-    @body.setter
-    def body(self, body):
-        """Sets the body of this ListOrderIncidentRequest.
+    @x_customer_id.setter
+    def x_customer_id(self, x_customer_id):
+        """Sets the x_customer_id of this ListOrderIncidentRequest.
 
-        :param body: The body of this ListOrderIncidentRequest.
-        :type body: str
+        客户id
+
+        :param x_customer_id: The x_customer_id of this ListOrderIncidentRequest.
+        :type x_customer_id: str
         """
-        self._body = body
+        self._x_customer_id = x_customer_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

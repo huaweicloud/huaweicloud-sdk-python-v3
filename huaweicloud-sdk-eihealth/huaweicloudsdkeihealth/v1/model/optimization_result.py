@@ -1,9 +1,6 @@
 # coding: utf-8
 
-import re
 import six
-
-
 
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
@@ -29,7 +26,11 @@ class OptimizationResult:
         'num_weak_constraints': 'int',
         'prop_names': 'list[str]',
         'original': 'PlainMoleculeItem',
-        'result': 'list[OptimizationResultItem]'
+        'result': 'list[OptimizationResultItem]',
+        'strong_constraints': 'list[MoleculeConstraint]',
+        'weak_constraints': 'list[MoleculeConstraint]',
+        'binding_site': 'BindingSite',
+        'custom_props': 'list[CustomProp]'
     }
 
     attribute_map = {
@@ -42,10 +43,14 @@ class OptimizationResult:
         'num_weak_constraints': 'num_weak_constraints',
         'prop_names': 'prop_names',
         'original': 'original',
-        'result': 'result'
+        'result': 'result',
+        'strong_constraints': 'strong_constraints',
+        'weak_constraints': 'weak_constraints',
+        'binding_site': 'binding_site',
+        'custom_props': 'custom_props'
     }
 
-    def __init__(self, name=None, smiles=None, num_rounds=None, num_trials_per_round=None, num_expected=None, num_strong_constraints=None, num_weak_constraints=None, prop_names=None, original=None, result=None):
+    def __init__(self, name=None, smiles=None, num_rounds=None, num_trials_per_round=None, num_expected=None, num_strong_constraints=None, num_weak_constraints=None, prop_names=None, original=None, result=None, strong_constraints=None, weak_constraints=None, binding_site=None, custom_props=None):
         """OptimizationResult
 
         The model defined in huaweicloud sdk
@@ -70,6 +75,14 @@ class OptimizationResult:
         :type original: :class:`huaweicloudsdkeihealth.v1.PlainMoleculeItem`
         :param result: 分子优化结果条目
         :type result: list[:class:`huaweicloudsdkeihealth.v1.OptimizationResultItem`]
+        :param strong_constraints: 强约束集合
+        :type strong_constraints: list[:class:`huaweicloudsdkeihealth.v1.MoleculeConstraint`]
+        :param weak_constraints: 弱约束集合
+        :type weak_constraints: list[:class:`huaweicloudsdkeihealth.v1.MoleculeConstraint`]
+        :param binding_site: 
+        :type binding_site: :class:`huaweicloudsdkeihealth.v1.BindingSite`
+        :param custom_props: 用户已开启的自定义属性集合
+        :type custom_props: list[:class:`huaweicloudsdkeihealth.v1.CustomProp`]
         """
         
         
@@ -84,6 +97,10 @@ class OptimizationResult:
         self._prop_names = None
         self._original = None
         self._result = None
+        self._strong_constraints = None
+        self._weak_constraints = None
+        self._binding_site = None
+        self._custom_props = None
         self.discriminator = None
 
         if name is not None:
@@ -106,6 +123,14 @@ class OptimizationResult:
             self.original = original
         if result is not None:
             self.result = result
+        if strong_constraints is not None:
+            self.strong_constraints = strong_constraints
+        if weak_constraints is not None:
+            self.weak_constraints = weak_constraints
+        if binding_site is not None:
+            self.binding_site = binding_site
+        if custom_props is not None:
+            self.custom_props = custom_props
 
     @property
     def name(self):
@@ -322,6 +347,90 @@ class OptimizationResult:
         :type result: list[:class:`huaweicloudsdkeihealth.v1.OptimizationResultItem`]
         """
         self._result = result
+
+    @property
+    def strong_constraints(self):
+        """Gets the strong_constraints of this OptimizationResult.
+
+        强约束集合
+
+        :return: The strong_constraints of this OptimizationResult.
+        :rtype: list[:class:`huaweicloudsdkeihealth.v1.MoleculeConstraint`]
+        """
+        return self._strong_constraints
+
+    @strong_constraints.setter
+    def strong_constraints(self, strong_constraints):
+        """Sets the strong_constraints of this OptimizationResult.
+
+        强约束集合
+
+        :param strong_constraints: The strong_constraints of this OptimizationResult.
+        :type strong_constraints: list[:class:`huaweicloudsdkeihealth.v1.MoleculeConstraint`]
+        """
+        self._strong_constraints = strong_constraints
+
+    @property
+    def weak_constraints(self):
+        """Gets the weak_constraints of this OptimizationResult.
+
+        弱约束集合
+
+        :return: The weak_constraints of this OptimizationResult.
+        :rtype: list[:class:`huaweicloudsdkeihealth.v1.MoleculeConstraint`]
+        """
+        return self._weak_constraints
+
+    @weak_constraints.setter
+    def weak_constraints(self, weak_constraints):
+        """Sets the weak_constraints of this OptimizationResult.
+
+        弱约束集合
+
+        :param weak_constraints: The weak_constraints of this OptimizationResult.
+        :type weak_constraints: list[:class:`huaweicloudsdkeihealth.v1.MoleculeConstraint`]
+        """
+        self._weak_constraints = weak_constraints
+
+    @property
+    def binding_site(self):
+        """Gets the binding_site of this OptimizationResult.
+
+        :return: The binding_site of this OptimizationResult.
+        :rtype: :class:`huaweicloudsdkeihealth.v1.BindingSite`
+        """
+        return self._binding_site
+
+    @binding_site.setter
+    def binding_site(self, binding_site):
+        """Sets the binding_site of this OptimizationResult.
+
+        :param binding_site: The binding_site of this OptimizationResult.
+        :type binding_site: :class:`huaweicloudsdkeihealth.v1.BindingSite`
+        """
+        self._binding_site = binding_site
+
+    @property
+    def custom_props(self):
+        """Gets the custom_props of this OptimizationResult.
+
+        用户已开启的自定义属性集合
+
+        :return: The custom_props of this OptimizationResult.
+        :rtype: list[:class:`huaweicloudsdkeihealth.v1.CustomProp`]
+        """
+        return self._custom_props
+
+    @custom_props.setter
+    def custom_props(self, custom_props):
+        """Sets the custom_props of this OptimizationResult.
+
+        用户已开启的自定义属性集合
+
+        :param custom_props: The custom_props of this OptimizationResult.
+        :type custom_props: list[:class:`huaweicloudsdkeihealth.v1.CustomProp`]
+        """
+        self._custom_props = custom_props
 
     def to_dict(self):
         """Returns the model properties as a dict"""

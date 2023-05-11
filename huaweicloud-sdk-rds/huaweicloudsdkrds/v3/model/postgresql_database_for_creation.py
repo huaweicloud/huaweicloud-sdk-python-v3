@@ -1,9 +1,6 @@
 # coding: utf-8
 
-import re
 import six
-
-
 
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
@@ -26,7 +23,8 @@ class PostgresqlDatabaseForCreation:
         'template': 'str',
         'lc_collate': 'str',
         'lc_ctype': 'str',
-        'is_revoke_public_privilege': 'bool'
+        'is_revoke_public_privilege': 'bool',
+        'comment': 'str'
     }
 
     attribute_map = {
@@ -36,10 +34,11 @@ class PostgresqlDatabaseForCreation:
         'template': 'template',
         'lc_collate': 'lc_collate',
         'lc_ctype': 'lc_ctype',
-        'is_revoke_public_privilege': 'is_revoke_public_privilege'
+        'is_revoke_public_privilege': 'is_revoke_public_privilege',
+        'comment': 'comment'
     }
 
-    def __init__(self, name=None, character_set=None, owner=None, template=None, lc_collate=None, lc_ctype=None, is_revoke_public_privilege=None):
+    def __init__(self, name=None, character_set=None, owner=None, template=None, lc_collate=None, lc_ctype=None, is_revoke_public_privilege=None, comment=None):
         """PostgresqlDatabaseForCreation
 
         The model defined in huaweicloud sdk
@@ -58,6 +57,8 @@ class PostgresqlDatabaseForCreation:
         :type lc_ctype: str
         :param is_revoke_public_privilege: 是否回收public schema的PUBLIC CREATE权限。 true，表示回收该权限。 false，表示不回收该权限。 缺省时默认是false。
         :type is_revoke_public_privilege: bool
+        :param comment: 数据库备注。 取值范围：长度1~512个字符。
+        :type comment: str
         """
         
         
@@ -69,6 +70,7 @@ class PostgresqlDatabaseForCreation:
         self._lc_collate = None
         self._lc_ctype = None
         self._is_revoke_public_privilege = None
+        self._comment = None
         self.discriminator = None
 
         self.name = name
@@ -84,6 +86,8 @@ class PostgresqlDatabaseForCreation:
             self.lc_ctype = lc_ctype
         if is_revoke_public_privilege is not None:
             self.is_revoke_public_privilege = is_revoke_public_privilege
+        if comment is not None:
+            self.comment = comment
 
     @property
     def name(self):
@@ -238,6 +242,28 @@ class PostgresqlDatabaseForCreation:
         :type is_revoke_public_privilege: bool
         """
         self._is_revoke_public_privilege = is_revoke_public_privilege
+
+    @property
+    def comment(self):
+        """Gets the comment of this PostgresqlDatabaseForCreation.
+
+        数据库备注。 取值范围：长度1~512个字符。
+
+        :return: The comment of this PostgresqlDatabaseForCreation.
+        :rtype: str
+        """
+        return self._comment
+
+    @comment.setter
+    def comment(self, comment):
+        """Sets the comment of this PostgresqlDatabaseForCreation.
+
+        数据库备注。 取值范围：长度1~512个字符。
+
+        :param comment: The comment of this PostgresqlDatabaseForCreation.
+        :type comment: str
+        """
+        self._comment = comment
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class IesClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(IesClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkies.v1.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -54,14 +36,10 @@ class IesClient(Client):
         :type request: :class:`huaweicloudsdkies.v1.CreateEdgeSiteRequest`
         :rtype: :class:`huaweicloudsdkies.v1.CreateEdgeSiteResponse`
         """
-        return self.create_edge_site_with_http_info(request)
+        return self._create_edge_site_with_http_info(request)
 
-    def create_edge_site_with_http_info(self, request):
-        all_params = ['create_edge_site_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_edge_site_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -114,14 +92,10 @@ class IesClient(Client):
         :type request: :class:`huaweicloudsdkies.v1.DeleteEdgeSiteRequest`
         :rtype: :class:`huaweicloudsdkies.v1.DeleteEdgeSiteResponse`
         """
-        return self.delete_edge_site_with_http_info(request)
+        return self._delete_edge_site_with_http_info(request)
 
-    def delete_edge_site_with_http_info(self, request):
-        all_params = ['site_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_edge_site_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -174,14 +148,10 @@ class IesClient(Client):
         :type request: :class:`huaweicloudsdkies.v1.ListEdgeSitesRequest`
         :rtype: :class:`huaweicloudsdkies.v1.ListEdgeSitesResponse`
         """
-        return self.list_edge_sites_with_http_info(request)
+        return self._list_edge_sites_with_http_info(request)
 
-    def list_edge_sites_with_http_info(self, request):
-        all_params = ['limit', 'marker', 'sort_key', 'sort_dir', 'id', 'name', 'availability_zone_id', 'status']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_edge_sites_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -254,14 +224,10 @@ class IesClient(Client):
         :type request: :class:`huaweicloudsdkies.v1.ShowEdgeSiteRequest`
         :rtype: :class:`huaweicloudsdkies.v1.ShowEdgeSiteResponse`
         """
-        return self.show_edge_site_with_http_info(request)
+        return self._show_edge_site_with_http_info(request)
 
-    def show_edge_site_with_http_info(self, request):
-        all_params = ['site_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_edge_site_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -315,14 +281,10 @@ class IesClient(Client):
         :type request: :class:`huaweicloudsdkies.v1.UpdateEdgeSiteRequest`
         :rtype: :class:`huaweicloudsdkies.v1.UpdateEdgeSiteResponse`
         """
-        return self.update_edge_site_with_http_info(request)
+        return self._update_edge_site_with_http_info(request)
 
-    def update_edge_site_with_http_info(self, request):
-        all_params = ['site_id', 'update_edge_site_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_edge_site_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -377,14 +339,10 @@ class IesClient(Client):
         :type request: :class:`huaweicloudsdkies.v1.ListEdgeSiteMetricsRequest`
         :rtype: :class:`huaweicloudsdkies.v1.ListEdgeSiteMetricsResponse`
         """
-        return self.list_edge_site_metrics_with_http_info(request)
+        return self._list_edge_site_metrics_with_http_info(request)
 
-    def list_edge_site_metrics_with_http_info(self, request):
-        all_params = ['site_id', 'dim']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_edge_site_metrics_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -439,14 +397,10 @@ class IesClient(Client):
         :type request: :class:`huaweicloudsdkies.v1.ListQuotasRequest`
         :rtype: :class:`huaweicloudsdkies.v1.ListQuotasResponse`
         """
-        return self.list_quotas_with_http_info(request)
+        return self._list_quotas_with_http_info(request)
 
-    def list_quotas_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_quotas_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -497,14 +451,10 @@ class IesClient(Client):
         :type request: :class:`huaweicloudsdkies.v1.ListRacksRequest`
         :rtype: :class:`huaweicloudsdkies.v1.ListRacksResponse`
         """
-        return self.list_racks_with_http_info(request)
+        return self._list_racks_with_http_info(request)
 
-    def list_racks_with_http_info(self, request):
-        all_params = ['limit', 'marker', 'sort_key', 'sort_dir', 'edge_site_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_racks_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -567,14 +517,10 @@ class IesClient(Client):
         :type request: :class:`huaweicloudsdkies.v1.ShowRackRequest`
         :rtype: :class:`huaweicloudsdkies.v1.ShowRackResponse`
         """
-        return self.show_rack_with_http_info(request)
+        return self._show_rack_with_http_info(request)
 
-    def show_rack_with_http_info(self, request):
-        all_params = ['id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_rack_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -627,14 +573,10 @@ class IesClient(Client):
         :type request: :class:`huaweicloudsdkies.v1.ListSupportedRegionsRequest`
         :rtype: :class:`huaweicloudsdkies.v1.ListSupportedRegionsResponse`
         """
-        return self.list_supported_regions_with_http_info(request)
+        return self._list_supported_regions_with_http_info(request)
 
-    def list_supported_regions_with_http_info(self, request):
-        all_params = ['x_language', 'limit', 'marker', 'sort_key', 'sort_dir']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_supported_regions_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -697,14 +639,10 @@ class IesClient(Client):
         :type request: :class:`huaweicloudsdkies.v1.ListStoragePoolsRequest`
         :rtype: :class:`huaweicloudsdkies.v1.ListStoragePoolsResponse`
         """
-        return self.list_storage_pools_with_http_info(request)
+        return self._list_storage_pools_with_http_info(request)
 
-    def list_storage_pools_with_http_info(self, request):
-        all_params = ['limit', 'marker', 'sort_key', 'sort_dir', 'edge_site_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_storage_pools_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -767,14 +705,10 @@ class IesClient(Client):
         :type request: :class:`huaweicloudsdkies.v1.ShowStoragePoolRequest`
         :rtype: :class:`huaweicloudsdkies.v1.ShowStoragePoolResponse`
         """
-        return self.show_storage_pool_with_http_info(request)
+        return self._show_storage_pool_with_http_info(request)
 
-    def show_storage_pool_with_http_info(self, request):
-        all_params = ['id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_storage_pool_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

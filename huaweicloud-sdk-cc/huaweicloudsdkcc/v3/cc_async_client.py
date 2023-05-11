@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class CcAsyncClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(CcAsyncClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkcc.v3.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -54,14 +36,10 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.AssociateBandwidthPackageRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.AssociateBandwidthPackageResponse`
         """
-        return self.associate_bandwidth_package_with_http_info(request)
+        return self._associate_bandwidth_package_with_http_info(request)
 
-    def associate_bandwidth_package_with_http_info(self, request):
-        all_params = ['id', 'associate_bandwidth_package_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _associate_bandwidth_package_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -117,14 +95,10 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.BatchCreateDeleteTagsRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.BatchCreateDeleteTagsResponse`
         """
-        return self.batch_create_delete_tags_with_http_info(request)
+        return self._batch_create_delete_tags_with_http_info(request)
 
-    def batch_create_delete_tags_with_http_info(self, request):
-        all_params = ['resource_id', 'resource_type', 'batch_create_delete_tags_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_create_delete_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -182,14 +156,10 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.CreateAuthorisationRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.CreateAuthorisationResponse`
         """
-        return self.create_authorisation_with_http_info(request)
+        return self._create_authorisation_with_http_info(request)
 
-    def create_authorisation_with_http_info(self, request):
-        all_params = ['create_authorisation_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_authorisation_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -243,14 +213,10 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.CreateBandwidthPackageRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.CreateBandwidthPackageResponse`
         """
-        return self.create_bandwidth_package_with_http_info(request)
+        return self._create_bandwidth_package_with_http_info(request)
 
-    def create_bandwidth_package_with_http_info(self, request):
-        all_params = ['create_bandwidth_package_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_bandwidth_package_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -304,14 +270,10 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.CreateCloudConnectionRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.CreateCloudConnectionResponse`
         """
-        return self.create_cloud_connection_with_http_info(request)
+        return self._create_cloud_connection_with_http_info(request)
 
-    def create_cloud_connection_with_http_info(self, request):
-        all_params = ['create_cloud_connection_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_cloud_connection_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -365,14 +327,10 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.CreateInterRegionBandwidthRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.CreateInterRegionBandwidthResponse`
         """
-        return self.create_inter_region_bandwidth_with_http_info(request)
+        return self._create_inter_region_bandwidth_with_http_info(request)
 
-    def create_inter_region_bandwidth_with_http_info(self, request):
-        all_params = ['create_inter_region_bandwidth_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_inter_region_bandwidth_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -426,14 +384,10 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.CreateNetworkInstanceRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.CreateNetworkInstanceResponse`
         """
-        return self.create_network_instance_with_http_info(request)
+        return self._create_network_instance_with_http_info(request)
 
-    def create_network_instance_with_http_info(self, request):
-        all_params = ['create_network_instance_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_network_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -487,14 +441,10 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.CreateTagRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.CreateTagResponse`
         """
-        return self.create_tag_with_http_info(request)
+        return self._create_tag_with_http_info(request)
 
-    def create_tag_with_http_info(self, request):
-        all_params = ['resource_id', 'resource_type', 'create_tag_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_tag_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -552,14 +502,10 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.DeleteAuthorisationRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.DeleteAuthorisationResponse`
         """
-        return self.delete_authorisation_with_http_info(request)
+        return self._delete_authorisation_with_http_info(request)
 
-    def delete_authorisation_with_http_info(self, request):
-        all_params = ['id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_authorisation_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -613,14 +559,10 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.DeleteBandwidthPackageRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.DeleteBandwidthPackageResponse`
         """
-        return self.delete_bandwidth_package_with_http_info(request)
+        return self._delete_bandwidth_package_with_http_info(request)
 
-    def delete_bandwidth_package_with_http_info(self, request):
-        all_params = ['id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_bandwidth_package_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -674,14 +616,10 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.DeleteCloudConnectionRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.DeleteCloudConnectionResponse`
         """
-        return self.delete_cloud_connection_with_http_info(request)
+        return self._delete_cloud_connection_with_http_info(request)
 
-    def delete_cloud_connection_with_http_info(self, request):
-        all_params = ['id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_cloud_connection_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -735,14 +673,10 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.DeleteInterRegionBandwidthRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.DeleteInterRegionBandwidthResponse`
         """
-        return self.delete_inter_region_bandwidth_with_http_info(request)
+        return self._delete_inter_region_bandwidth_with_http_info(request)
 
-    def delete_inter_region_bandwidth_with_http_info(self, request):
-        all_params = ['id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_inter_region_bandwidth_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -796,14 +730,10 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.DeleteNetworkInstanceRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.DeleteNetworkInstanceResponse`
         """
-        return self.delete_network_instance_with_http_info(request)
+        return self._delete_network_instance_with_http_info(request)
 
-    def delete_network_instance_with_http_info(self, request):
-        all_params = ['id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_network_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -857,14 +787,10 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.DeleteTagRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.DeleteTagResponse`
         """
-        return self.delete_tag_with_http_info(request)
+        return self._delete_tag_with_http_info(request)
 
-    def delete_tag_with_http_info(self, request):
-        all_params = ['resource_id', 'tag_key', 'resource_type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_tag_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -922,14 +848,10 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.DisassociateBandwidthPackageRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.DisassociateBandwidthPackageResponse`
         """
-        return self.disassociate_bandwidth_package_with_http_info(request)
+        return self._disassociate_bandwidth_package_with_http_info(request)
 
-    def disassociate_bandwidth_package_with_http_info(self, request):
-        all_params = ['id', 'disassociate_bandwidth_package_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _disassociate_bandwidth_package_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -986,14 +908,10 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.ListAuthorisationsRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.ListAuthorisationsResponse`
         """
-        return self.list_authorisations_with_http_info(request)
+        return self._list_authorisations_with_http_info(request)
 
-    def list_authorisations_with_http_info(self, request):
-        all_params = ['limit', 'marker', 'id', 'name', 'description', 'cloud_connection_id', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_authorisations_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1065,14 +983,10 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.ListBandwidthPackagesRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.ListBandwidthPackagesResponse`
         """
-        return self.list_bandwidth_packages_with_http_info(request)
+        return self._list_bandwidth_packages_with_http_info(request)
 
-    def list_bandwidth_packages_with_http_info(self, request):
-        all_params = ['limit', 'marker', 'id', 'name', 'status', 'enterprise_project_id', 'billing_mode', 'resource_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_bandwidth_packages_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1147,14 +1061,10 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.ListCloudConnectionRoutesRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.ListCloudConnectionRoutesResponse`
         """
-        return self.list_cloud_connection_routes_with_http_info(request)
+        return self._list_cloud_connection_routes_with_http_info(request)
 
-    def list_cloud_connection_routes_with_http_info(self, request):
-        all_params = ['limit', 'marker', 'id', 'cloud_connection_id', 'instance_id', 'region_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_cloud_connection_routes_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1221,14 +1131,10 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.ListCloudConnectionsRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.ListCloudConnectionsResponse`
         """
-        return self.list_cloud_connections_with_http_info(request)
+        return self._list_cloud_connections_with_http_info(request)
 
-    def list_cloud_connections_with_http_info(self, request):
-        all_params = ['limit', 'marker', 'id', 'name', 'description', 'status', 'enterprise_project_id', 'type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_cloud_connections_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1302,14 +1208,10 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.ListDomainTagsRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.ListDomainTagsResponse`
         """
-        return self.list_domain_tags_with_http_info(request)
+        return self._list_domain_tags_with_http_info(request)
 
-    def list_domain_tags_with_http_info(self, request):
-        all_params = ['resource_type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_domain_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1364,14 +1266,10 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.ListInterRegionBandwidthsRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.ListInterRegionBandwidthsResponse`
         """
-        return self.list_inter_region_bandwidths_with_http_info(request)
+        return self._list_inter_region_bandwidths_with_http_info(request)
 
-    def list_inter_region_bandwidths_with_http_info(self, request):
-        all_params = ['limit', 'marker', 'id', 'enterprise_project_id', 'cloud_connection_id', 'bandwidth_package_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_inter_region_bandwidths_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1440,14 +1338,10 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.ListNetworkInstancesRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.ListNetworkInstancesResponse`
         """
-        return self.list_network_instances_with_http_info(request)
+        return self._list_network_instances_with_http_info(request)
 
-    def list_network_instances_with_http_info(self, request):
-        all_params = ['limit', 'marker', 'id', 'name', 'description', 'status', 'type', 'cloud_connection_id', 'instance_id', 'region_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_network_instances_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1528,14 +1422,10 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.ListPermissionsRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.ListPermissionsResponse`
         """
-        return self.list_permissions_with_http_info(request)
+        return self._list_permissions_with_http_info(request)
 
-    def list_permissions_with_http_info(self, request):
-        all_params = ['limit', 'marker', 'id', 'name', 'description', 'cloud_connection_id', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_permissions_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1606,14 +1496,10 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.ListQuotasRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.ListQuotasResponse`
         """
-        return self.list_quotas_with_http_info(request)
+        return self._list_quotas_with_http_info(request)
 
-    def list_quotas_with_http_info(self, request):
-        all_params = ['limit', 'marker', 'quota_type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_quotas_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1671,14 +1557,10 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.ListResourceByFilterTagRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.ListResourceByFilterTagResponse`
         """
-        return self.list_resource_by_filter_tag_with_http_info(request)
+        return self._list_resource_by_filter_tag_with_http_info(request)
 
-    def list_resource_by_filter_tag_with_http_info(self, request):
-        all_params = ['resource_type', 'list_resource_by_filter_tag_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_resource_by_filter_tag_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1734,14 +1616,10 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.ListTagsRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.ListTagsResponse`
         """
-        return self.list_tags_with_http_info(request)
+        return self._list_tags_with_http_info(request)
 
-    def list_tags_with_http_info(self, request):
-        all_params = ['resource_type', 'resource_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1797,14 +1675,10 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.ShowBandwidthPackageRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.ShowBandwidthPackageResponse`
         """
-        return self.show_bandwidth_package_with_http_info(request)
+        return self._show_bandwidth_package_with_http_info(request)
 
-    def show_bandwidth_package_with_http_info(self, request):
-        all_params = ['id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_bandwidth_package_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1858,14 +1732,10 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.ShowCloudConnectionRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.ShowCloudConnectionResponse`
         """
-        return self.show_cloud_connection_with_http_info(request)
+        return self._show_cloud_connection_with_http_info(request)
 
-    def show_cloud_connection_with_http_info(self, request):
-        all_params = ['id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_cloud_connection_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1920,14 +1790,10 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.ShowCloudConnectionRoutesRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.ShowCloudConnectionRoutesResponse`
         """
-        return self.show_cloud_connection_routes_with_http_info(request)
+        return self._show_cloud_connection_routes_with_http_info(request)
 
-    def show_cloud_connection_routes_with_http_info(self, request):
-        all_params = ['id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_cloud_connection_routes_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1981,14 +1847,10 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.ShowInterRegionBandwidthRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.ShowInterRegionBandwidthResponse`
         """
-        return self.show_inter_region_bandwidth_with_http_info(request)
+        return self._show_inter_region_bandwidth_with_http_info(request)
 
-    def show_inter_region_bandwidth_with_http_info(self, request):
-        all_params = ['id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_inter_region_bandwidth_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2042,14 +1904,10 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.ShowNetworkInstanceRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.ShowNetworkInstanceResponse`
         """
-        return self.show_network_instance_with_http_info(request)
+        return self._show_network_instance_with_http_info(request)
 
-    def show_network_instance_with_http_info(self, request):
-        all_params = ['id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_network_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2103,14 +1961,10 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.UpdateAuthorisationRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.UpdateAuthorisationResponse`
         """
-        return self.update_authorisation_with_http_info(request)
+        return self._update_authorisation_with_http_info(request)
 
-    def update_authorisation_with_http_info(self, request):
-        all_params = ['id', 'update_authorisation_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_authorisation_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2166,14 +2020,10 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.UpdateBandwidthPackageRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.UpdateBandwidthPackageResponse`
         """
-        return self.update_bandwidth_package_with_http_info(request)
+        return self._update_bandwidth_package_with_http_info(request)
 
-    def update_bandwidth_package_with_http_info(self, request):
-        all_params = ['id', 'update_bandwidth_package_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_bandwidth_package_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2229,14 +2079,10 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.UpdateCloudConnectionRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.UpdateCloudConnectionResponse`
         """
-        return self.update_cloud_connection_with_http_info(request)
+        return self._update_cloud_connection_with_http_info(request)
 
-    def update_cloud_connection_with_http_info(self, request):
-        all_params = ['id', 'update_cloud_connection_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_cloud_connection_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2292,14 +2138,10 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.UpdateInterRegionBandwidthRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.UpdateInterRegionBandwidthResponse`
         """
-        return self.update_inter_region_bandwidth_with_http_info(request)
+        return self._update_inter_region_bandwidth_with_http_info(request)
 
-    def update_inter_region_bandwidth_with_http_info(self, request):
-        all_params = ['id', 'update_inter_region_bandwidth_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_inter_region_bandwidth_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2355,14 +2197,10 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.UpdateNetworkInstanceRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.UpdateNetworkInstanceResponse`
         """
-        return self.update_network_instance_with_http_info(request)
+        return self._update_network_instance_with_http_info(request)
 
-    def update_network_instance_with_http_info(self, request):
-        all_params = ['id', 'update_network_instance_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_network_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

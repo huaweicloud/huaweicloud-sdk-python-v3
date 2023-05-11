@@ -1,9 +1,6 @@
 # coding: utf-8
 
-import re
 import six
-
-
 
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
@@ -58,7 +55,8 @@ class AomMappingRequestInfo:
 
         self.project_id = project_id
         self.rule_name = rule_name
-        self.rule_id = rule_id
+        if rule_id is not None:
+            self.rule_id = rule_id
         self.rule_info = rule_info
 
     @property

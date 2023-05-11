@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class GaussDBAsyncClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(GaussDBAsyncClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkgaussdb.v3.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -54,14 +36,10 @@ class GaussDBAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.AddDatabasePermissionRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.AddDatabasePermissionResponse`
         """
-        return self.add_database_permission_with_http_info(request)
+        return self._add_database_permission_with_http_info(request)
 
-    def add_database_permission_with_http_info(self, request):
-        all_params = ['instance_id', 'grant_database_permission_request_body', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _add_database_permission_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -119,14 +97,10 @@ class GaussDBAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.BatchTagActionRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.BatchTagActionResponse`
         """
-        return self.batch_tag_action_with_http_info(request)
+        return self._batch_tag_action_with_http_info(request)
 
-    def batch_tag_action_with_http_info(self, request):
-        all_params = ['instance_id', 'batch_operate_instance_tag_request_body', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_tag_action_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -184,14 +158,10 @@ class GaussDBAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.CancelGaussMySqlInstanceEipRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.CancelGaussMySqlInstanceEipResponse`
         """
-        return self.cancel_gauss_my_sql_instance_eip_with_http_info(request)
+        return self._cancel_gauss_my_sql_instance_eip_with_http_info(request)
 
-    def cancel_gauss_my_sql_instance_eip_with_http_info(self, request):
-        all_params = ['instance_id', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _cancel_gauss_my_sql_instance_eip_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -247,14 +217,10 @@ class GaussDBAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.CancelScheduleTaskRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.CancelScheduleTaskResponse`
         """
-        return self.cancel_schedule_task_with_http_info(request)
+        return self._cancel_schedule_task_with_http_info(request)
 
-    def cancel_schedule_task_with_http_info(self, request):
-        all_params = ['cancel_schedule_task', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _cancel_schedule_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -310,14 +276,10 @@ class GaussDBAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.ChangeGaussMySqlInstanceSpecificationRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ChangeGaussMySqlInstanceSpecificationResponse`
         """
-        return self.change_gauss_my_sql_instance_specification_with_http_info(request)
+        return self._change_gauss_my_sql_instance_specification_with_http_info(request)
 
-    def change_gauss_my_sql_instance_specification_with_http_info(self, request):
-        all_params = ['instance_id', 'mysql_change_specification_request', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _change_gauss_my_sql_instance_specification_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -375,14 +337,10 @@ class GaussDBAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.ChangeGaussMySqlProxySpecificationRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ChangeGaussMySqlProxySpecificationResponse`
         """
-        return self.change_gauss_my_sql_proxy_specification_with_http_info(request)
+        return self._change_gauss_my_sql_proxy_specification_with_http_info(request)
 
-    def change_gauss_my_sql_proxy_specification_with_http_info(self, request):
-        all_params = ['instance_id', 'proxy_id', 'taurus_proxy_scale_request', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _change_gauss_my_sql_proxy_specification_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -442,14 +400,10 @@ class GaussDBAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.CreateGaussMySqlBackupRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.CreateGaussMySqlBackupResponse`
         """
-        return self.create_gauss_my_sql_backup_with_http_info(request)
+        return self._create_gauss_my_sql_backup_with_http_info(request)
 
-    def create_gauss_my_sql_backup_with_http_info(self, request):
-        all_params = ['mysql_create_backup_request', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_gauss_my_sql_backup_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -505,14 +459,10 @@ class GaussDBAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.CreateGaussMySqlConfigurationRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.CreateGaussMySqlConfigurationResponse`
         """
-        return self.create_gauss_my_sql_configuration_with_http_info(request)
+        return self._create_gauss_my_sql_configuration_with_http_info(request)
 
-    def create_gauss_my_sql_configuration_with_http_info(self, request):
-        all_params = ['create_configuration_request_body', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_gauss_my_sql_configuration_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -568,14 +518,10 @@ class GaussDBAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.CreateGaussMySqlDatabaseRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.CreateGaussMySqlDatabaseResponse`
         """
-        return self.create_gauss_my_sql_database_with_http_info(request)
+        return self._create_gauss_my_sql_database_with_http_info(request)
 
-    def create_gauss_my_sql_database_with_http_info(self, request):
-        all_params = ['instance_id', 'create_gauss_my_sql_database_request_body', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_gauss_my_sql_database_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -633,14 +579,10 @@ class GaussDBAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.CreateGaussMySqlDatabaseUserRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.CreateGaussMySqlDatabaseUserResponse`
         """
-        return self.create_gauss_my_sql_database_user_with_http_info(request)
+        return self._create_gauss_my_sql_database_user_with_http_info(request)
 
-    def create_gauss_my_sql_database_user_with_http_info(self, request):
-        all_params = ['instance_id', 'create_database_user_request', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_gauss_my_sql_database_user_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -698,14 +640,10 @@ class GaussDBAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.CreateGaussMySqlInstanceRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.CreateGaussMySqlInstanceResponse`
         """
-        return self.create_gauss_my_sql_instance_with_http_info(request)
+        return self._create_gauss_my_sql_instance_with_http_info(request)
 
-    def create_gauss_my_sql_instance_with_http_info(self, request):
-        all_params = ['create_instance_request', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_gauss_my_sql_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -761,14 +699,10 @@ class GaussDBAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.CreateGaussMySqlProxyRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.CreateGaussMySqlProxyResponse`
         """
-        return self.create_gauss_my_sql_proxy_with_http_info(request)
+        return self._create_gauss_my_sql_proxy_with_http_info(request)
 
-    def create_gauss_my_sql_proxy_with_http_info(self, request):
-        all_params = ['instance_id', 'x_language', 'create_mysql_proxy_request']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_gauss_my_sql_proxy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -826,14 +760,10 @@ class GaussDBAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.CreateGaussMySqlReadonlyNodeRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.CreateGaussMySqlReadonlyNodeResponse`
         """
-        return self.create_gauss_my_sql_readonly_node_with_http_info(request)
+        return self._create_gauss_my_sql_readonly_node_with_http_info(request)
 
-    def create_gauss_my_sql_readonly_node_with_http_info(self, request):
-        all_params = ['instance_id', 'mysql_create_readonly_node_request', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_gauss_my_sql_readonly_node_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -891,14 +821,10 @@ class GaussDBAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.DeleteDatabasePermissionRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.DeleteDatabasePermissionResponse`
         """
-        return self.delete_database_permission_with_http_info(request)
+        return self._delete_database_permission_with_http_info(request)
 
-    def delete_database_permission_with_http_info(self, request):
-        all_params = ['instance_id', 'grant_database_permission_request_body', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_database_permission_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -956,14 +882,10 @@ class GaussDBAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.DeleteGaussMySqlBackupRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.DeleteGaussMySqlBackupResponse`
         """
-        return self.delete_gauss_my_sql_backup_with_http_info(request)
+        return self._delete_gauss_my_sql_backup_with_http_info(request)
 
-    def delete_gauss_my_sql_backup_with_http_info(self, request):
-        all_params = ['backup_id', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_gauss_my_sql_backup_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1019,14 +941,10 @@ class GaussDBAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.DeleteGaussMySqlConfigurationRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.DeleteGaussMySqlConfigurationResponse`
         """
-        return self.delete_gauss_my_sql_configuration_with_http_info(request)
+        return self._delete_gauss_my_sql_configuration_with_http_info(request)
 
-    def delete_gauss_my_sql_configuration_with_http_info(self, request):
-        all_params = ['configuration_id', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_gauss_my_sql_configuration_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1082,14 +1000,10 @@ class GaussDBAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.DeleteGaussMySqlDatabaseRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.DeleteGaussMySqlDatabaseResponse`
         """
-        return self.delete_gauss_my_sql_database_with_http_info(request)
+        return self._delete_gauss_my_sql_database_with_http_info(request)
 
-    def delete_gauss_my_sql_database_with_http_info(self, request):
-        all_params = ['instance_id', 'delete_gauss_my_sql_database_request_body', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_gauss_my_sql_database_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1147,14 +1061,10 @@ class GaussDBAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.DeleteGaussMySqlDatabaseUserRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.DeleteGaussMySqlDatabaseUserResponse`
         """
-        return self.delete_gauss_my_sql_database_user_with_http_info(request)
+        return self._delete_gauss_my_sql_database_user_with_http_info(request)
 
-    def delete_gauss_my_sql_database_user_with_http_info(self, request):
-        all_params = ['instance_id', 'delete_database_user_request', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_gauss_my_sql_database_user_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1212,14 +1122,10 @@ class GaussDBAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.DeleteGaussMySqlInstanceRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.DeleteGaussMySqlInstanceResponse`
         """
-        return self.delete_gauss_my_sql_instance_with_http_info(request)
+        return self._delete_gauss_my_sql_instance_with_http_info(request)
 
-    def delete_gauss_my_sql_instance_with_http_info(self, request):
-        all_params = ['instance_id', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_gauss_my_sql_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1275,14 +1181,10 @@ class GaussDBAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.DeleteGaussMySqlProxyRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.DeleteGaussMySqlProxyResponse`
         """
-        return self.delete_gauss_my_sql_proxy_with_http_info(request)
+        return self._delete_gauss_my_sql_proxy_with_http_info(request)
 
-    def delete_gauss_my_sql_proxy_with_http_info(self, request):
-        all_params = ['instance_id', 'x_language', 'close_mysql_proxy_request']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_gauss_my_sql_proxy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1340,14 +1242,10 @@ class GaussDBAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.DeleteGaussMySqlReadonlyNodeRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.DeleteGaussMySqlReadonlyNodeResponse`
         """
-        return self.delete_gauss_my_sql_readonly_node_with_http_info(request)
+        return self._delete_gauss_my_sql_readonly_node_with_http_info(request)
 
-    def delete_gauss_my_sql_readonly_node_with_http_info(self, request):
-        all_params = ['instance_id', 'node_id', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_gauss_my_sql_readonly_node_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1405,14 +1303,10 @@ class GaussDBAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.DeleteTaskRecordRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.DeleteTaskRecordResponse`
         """
-        return self.delete_task_record_with_http_info(request)
+        return self._delete_task_record_with_http_info(request)
 
-    def delete_task_record_with_http_info(self, request):
-        all_params = ['job_id', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_task_record_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1468,14 +1362,10 @@ class GaussDBAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.ExpandGaussMySqlInstanceVolumeRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ExpandGaussMySqlInstanceVolumeResponse`
         """
-        return self.expand_gauss_my_sql_instance_volume_with_http_info(request)
+        return self._expand_gauss_my_sql_instance_volume_with_http_info(request)
 
-    def expand_gauss_my_sql_instance_volume_with_http_info(self, request):
-        all_params = ['instance_id', 'mysql_extend_instance_volume_request', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _expand_gauss_my_sql_instance_volume_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1534,14 +1424,10 @@ class GaussDBAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.ExpandGaussMySqlProxyRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ExpandGaussMySqlProxyResponse`
         """
-        return self.expand_gauss_my_sql_proxy_with_http_info(request)
+        return self._expand_gauss_my_sql_proxy_with_http_info(request)
 
-    def expand_gauss_my_sql_proxy_with_http_info(self, request):
-        all_params = ['instance_id', 'enlarge_proxy_request', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _expand_gauss_my_sql_proxy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1599,14 +1485,10 @@ class GaussDBAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.InvokeGaussMySqlInstanceSwitchOverRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.InvokeGaussMySqlInstanceSwitchOverResponse`
         """
-        return self.invoke_gauss_my_sql_instance_switch_over_with_http_info(request)
+        return self._invoke_gauss_my_sql_instance_switch_over_with_http_info(request)
 
-    def invoke_gauss_my_sql_instance_switch_over_with_http_info(self, request):
-        all_params = ['instance_id', 'taurus_switchover_request', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _invoke_gauss_my_sql_instance_switch_over_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1664,14 +1546,10 @@ class GaussDBAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.ListGaussMySqlConfigurationsRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ListGaussMySqlConfigurationsResponse`
         """
-        return self.list_gauss_my_sql_configurations_with_http_info(request)
+        return self._list_gauss_my_sql_configurations_with_http_info(request)
 
-    def list_gauss_my_sql_configurations_with_http_info(self, request):
-        all_params = ['x_language', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_gauss_my_sql_configurations_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1729,14 +1607,10 @@ class GaussDBAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.ListGaussMySqlDatabaseRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ListGaussMySqlDatabaseResponse`
         """
-        return self.list_gauss_my_sql_database_with_http_info(request)
+        return self._list_gauss_my_sql_database_with_http_info(request)
 
-    def list_gauss_my_sql_database_with_http_info(self, request):
-        all_params = ['instance_id', 'x_language', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_gauss_my_sql_database_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1796,14 +1670,10 @@ class GaussDBAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.ListGaussMySqlDatabaseCharsetsRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ListGaussMySqlDatabaseCharsetsResponse`
         """
-        return self.list_gauss_my_sql_database_charsets_with_http_info(request)
+        return self._list_gauss_my_sql_database_charsets_with_http_info(request)
 
-    def list_gauss_my_sql_database_charsets_with_http_info(self, request):
-        all_params = ['instance_id', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_gauss_my_sql_database_charsets_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1859,14 +1729,10 @@ class GaussDBAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.ListGaussMySqlDatabaseUserRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ListGaussMySqlDatabaseUserResponse`
         """
-        return self.list_gauss_my_sql_database_user_with_http_info(request)
+        return self._list_gauss_my_sql_database_user_with_http_info(request)
 
-    def list_gauss_my_sql_database_user_with_http_info(self, request):
-        all_params = ['instance_id', 'x_language', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_gauss_my_sql_database_user_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1926,14 +1792,10 @@ class GaussDBAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.ListGaussMySqlDedicatedResourcesRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ListGaussMySqlDedicatedResourcesResponse`
         """
-        return self.list_gauss_my_sql_dedicated_resources_with_http_info(request)
+        return self._list_gauss_my_sql_dedicated_resources_with_http_info(request)
 
-    def list_gauss_my_sql_dedicated_resources_with_http_info(self, request):
-        all_params = ['x_language', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_gauss_my_sql_dedicated_resources_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1991,14 +1853,10 @@ class GaussDBAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.ListGaussMySqlErrorLogRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ListGaussMySqlErrorLogResponse`
         """
-        return self.list_gauss_my_sql_error_log_with_http_info(request)
+        return self._list_gauss_my_sql_error_log_with_http_info(request)
 
-    def list_gauss_my_sql_error_log_with_http_info(self, request):
-        all_params = ['instance_id', 'start_date', 'end_date', 'node_id', 'x_language', 'offset', 'limit', 'level']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_gauss_my_sql_error_log_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2066,14 +1924,10 @@ class GaussDBAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.ListGaussMySqlInstanceDetailInfoRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ListGaussMySqlInstanceDetailInfoResponse`
         """
-        return self.list_gauss_my_sql_instance_detail_info_with_http_info(request)
+        return self._list_gauss_my_sql_instance_detail_info_with_http_info(request)
 
-    def list_gauss_my_sql_instance_detail_info_with_http_info(self, request):
-        all_params = ['instance_ids', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_gauss_my_sql_instance_detail_info_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2129,14 +1983,10 @@ class GaussDBAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.ListGaussMySqlInstancesRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ListGaussMySqlInstancesResponse`
         """
-        return self.list_gauss_my_sql_instances_with_http_info(request)
+        return self._list_gauss_my_sql_instances_with_http_info(request)
 
-    def list_gauss_my_sql_instances_with_http_info(self, request):
-        all_params = ['x_language', 'id', 'name', 'type', 'datastore_type', 'vpc_id', 'subnet_id', 'private_ip', 'offset', 'limit', 'tags']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_gauss_my_sql_instances_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2159,6 +2009,10 @@ class GaussDBAsyncClient(Client):
             query_params.append(('subnet_id', local_var_params['subnet_id']))
         if 'private_ip' in local_var_params:
             query_params.append(('private_ip', local_var_params['private_ip']))
+        if 'readonly_private_ip' in local_var_params:
+            query_params.append(('readonly_private_ip', local_var_params['readonly_private_ip']))
+        if 'proxy_ip' in local_var_params:
+            query_params.append(('proxy_ip', local_var_params['proxy_ip']))
         if 'offset' in local_var_params:
             query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
@@ -2210,14 +2064,10 @@ class GaussDBAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.ListGaussMySqlSlowLogRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ListGaussMySqlSlowLogResponse`
         """
-        return self.list_gauss_my_sql_slow_log_with_http_info(request)
+        return self._list_gauss_my_sql_slow_log_with_http_info(request)
 
-    def list_gauss_my_sql_slow_log_with_http_info(self, request):
-        all_params = ['instance_id', 'start_date', 'end_date', 'node_id', 'x_language', 'offset', 'limit', 'type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_gauss_my_sql_slow_log_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2285,14 +2135,10 @@ class GaussDBAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.ListImmediateJobsRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ListImmediateJobsResponse`
         """
-        return self.list_immediate_jobs_with_http_info(request)
+        return self._list_immediate_jobs_with_http_info(request)
 
-    def list_immediate_jobs_with_http_info(self, request):
-        all_params = ['x_language', 'status', 'job_name', 'job_id', 'offset', 'limit', 'start_time', 'end_time']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_immediate_jobs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2360,14 +2206,10 @@ class GaussDBAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.ListInstanceTagsRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ListInstanceTagsResponse`
         """
-        return self.list_instance_tags_with_http_info(request)
+        return self._list_instance_tags_with_http_info(request)
 
-    def list_instance_tags_with_http_info(self, request):
-        all_params = ['instance_id', 'x_language', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_instance_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2427,14 +2269,10 @@ class GaussDBAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.ListProjectTagsRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ListProjectTagsResponse`
         """
-        return self.list_project_tags_with_http_info(request)
+        return self._list_project_tags_with_http_info(request)
 
-    def list_project_tags_with_http_info(self, request):
-        all_params = ['x_language', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_project_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2492,14 +2330,10 @@ class GaussDBAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.ListScheduleJobsRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ListScheduleJobsResponse`
         """
-        return self.list_schedule_jobs_with_http_info(request)
+        return self._list_schedule_jobs_with_http_info(request)
 
-    def list_schedule_jobs_with_http_info(self, request):
-        all_params = ['x_language', 'offset', 'limit', 'status', 'start_time', 'end_time', 'job_id', 'job_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_schedule_jobs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2567,14 +2401,10 @@ class GaussDBAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.ResetGaussMySqlDatabasePasswordRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ResetGaussMySqlDatabasePasswordResponse`
         """
-        return self.reset_gauss_my_sql_database_password_with_http_info(request)
+        return self._reset_gauss_my_sql_database_password_with_http_info(request)
 
-    def reset_gauss_my_sql_database_password_with_http_info(self, request):
-        all_params = ['instance_id', 'reset_database_password_request', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _reset_gauss_my_sql_database_password_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2632,14 +2462,10 @@ class GaussDBAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.ResetGaussMySqlPasswordRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ResetGaussMySqlPasswordResponse`
         """
-        return self.reset_gauss_my_sql_password_with_http_info(request)
+        return self._reset_gauss_my_sql_password_with_http_info(request)
 
-    def reset_gauss_my_sql_password_with_http_info(self, request):
-        all_params = ['instance_id', 'mysql_reset_password_request', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _reset_gauss_my_sql_password_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2697,14 +2523,10 @@ class GaussDBAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.RestartGaussMySqlInstanceRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.RestartGaussMySqlInstanceResponse`
         """
-        return self.restart_gauss_my_sql_instance_with_http_info(request)
+        return self._restart_gauss_my_sql_instance_with_http_info(request)
 
-    def restart_gauss_my_sql_instance_with_http_info(self, request):
-        all_params = ['instance_id', 'taurus_restart_instance_request', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _restart_gauss_my_sql_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2762,14 +2584,10 @@ class GaussDBAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.RestartGaussMySqlNodeRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.RestartGaussMySqlNodeResponse`
         """
-        return self.restart_gauss_my_sql_node_with_http_info(request)
+        return self._restart_gauss_my_sql_node_with_http_info(request)
 
-    def restart_gauss_my_sql_node_with_http_info(self, request):
-        all_params = ['instance_id', 'node_id', 'x_language', 'restart_node_request']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _restart_gauss_my_sql_node_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2829,14 +2647,10 @@ class GaussDBAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.SetGaussMySqlProxyWeightRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.SetGaussMySqlProxyWeightResponse`
         """
-        return self.set_gauss_my_sql_proxy_weight_with_http_info(request)
+        return self._set_gauss_my_sql_proxy_weight_with_http_info(request)
 
-    def set_gauss_my_sql_proxy_weight_with_http_info(self, request):
-        all_params = ['instance_id', 'proxy_id', 'taurus_modify_proxy_weight_request', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _set_gauss_my_sql_proxy_weight_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2896,14 +2710,10 @@ class GaussDBAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.SetGaussMySqlQuotasRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.SetGaussMySqlQuotasResponse`
         """
-        return self.set_gauss_my_sql_quotas_with_http_info(request)
+        return self._set_gauss_my_sql_quotas_with_http_info(request)
 
-    def set_gauss_my_sql_quotas_with_http_info(self, request):
-        all_params = ['x_language', 'set_quotas_request']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _set_gauss_my_sql_quotas_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2959,14 +2769,10 @@ class GaussDBAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.ShowAuditLogRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowAuditLogResponse`
         """
-        return self.show_audit_log_with_http_info(request)
+        return self._show_audit_log_with_http_info(request)
 
-    def show_audit_log_with_http_info(self, request):
-        all_params = ['instance_id', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_audit_log_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3022,14 +2828,10 @@ class GaussDBAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.ShowDedicatedResourceInfoRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowDedicatedResourceInfoResponse`
         """
-        return self.show_dedicated_resource_info_with_http_info(request)
+        return self._show_dedicated_resource_info_with_http_info(request)
 
-    def show_dedicated_resource_info_with_http_info(self, request):
-        all_params = ['dedicated_resource_id', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_dedicated_resource_info_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3085,14 +2887,10 @@ class GaussDBAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.ShowGaussMySqlBackupListRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowGaussMySqlBackupListResponse`
         """
-        return self.show_gauss_my_sql_backup_list_with_http_info(request)
+        return self._show_gauss_my_sql_backup_list_with_http_info(request)
 
-    def show_gauss_my_sql_backup_list_with_http_info(self, request):
-        all_params = ['x_language', 'instance_id', 'backup_id', 'backup_type', 'offset', 'limit', 'begin_time', 'end_time']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_gauss_my_sql_backup_list_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3160,14 +2958,10 @@ class GaussDBAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.ShowGaussMySqlBackupPolicyRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowGaussMySqlBackupPolicyResponse`
         """
-        return self.show_gauss_my_sql_backup_policy_with_http_info(request)
+        return self._show_gauss_my_sql_backup_policy_with_http_info(request)
 
-    def show_gauss_my_sql_backup_policy_with_http_info(self, request):
-        all_params = ['instance_id', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_gauss_my_sql_backup_policy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3223,14 +3017,10 @@ class GaussDBAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.ShowGaussMySqlConfigurationRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowGaussMySqlConfigurationResponse`
         """
-        return self.show_gauss_my_sql_configuration_with_http_info(request)
+        return self._show_gauss_my_sql_configuration_with_http_info(request)
 
-    def show_gauss_my_sql_configuration_with_http_info(self, request):
-        all_params = ['configuration_id', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_gauss_my_sql_configuration_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3286,14 +3076,10 @@ class GaussDBAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.ShowGaussMySqlEngineVersionRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowGaussMySqlEngineVersionResponse`
         """
-        return self.show_gauss_my_sql_engine_version_with_http_info(request)
+        return self._show_gauss_my_sql_engine_version_with_http_info(request)
 
-    def show_gauss_my_sql_engine_version_with_http_info(self, request):
-        all_params = ['database_name', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_gauss_my_sql_engine_version_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3349,14 +3135,10 @@ class GaussDBAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.ShowGaussMySqlFlavorsRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowGaussMySqlFlavorsResponse`
         """
-        return self.show_gauss_my_sql_flavors_with_http_info(request)
+        return self._show_gauss_my_sql_flavors_with_http_info(request)
 
-    def show_gauss_my_sql_flavors_with_http_info(self, request):
-        all_params = ['database_name', 'availability_zone_mode', 'x_language', 'version_name', 'spec_code']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_gauss_my_sql_flavors_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3418,14 +3200,10 @@ class GaussDBAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.ShowGaussMySqlInstanceInfoRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowGaussMySqlInstanceInfoResponse`
         """
-        return self.show_gauss_my_sql_instance_info_with_http_info(request)
+        return self._show_gauss_my_sql_instance_info_with_http_info(request)
 
-    def show_gauss_my_sql_instance_info_with_http_info(self, request):
-        all_params = ['instance_id', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_gauss_my_sql_instance_info_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3481,14 +3259,10 @@ class GaussDBAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.ShowGaussMySqlJobInfoRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowGaussMySqlJobInfoResponse`
         """
-        return self.show_gauss_my_sql_job_info_with_http_info(request)
+        return self._show_gauss_my_sql_job_info_with_http_info(request)
 
-    def show_gauss_my_sql_job_info_with_http_info(self, request):
-        all_params = ['id', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_gauss_my_sql_job_info_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3544,14 +3318,10 @@ class GaussDBAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.ShowGaussMySqlProjectQuotasRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowGaussMySqlProjectQuotasResponse`
         """
-        return self.show_gauss_my_sql_project_quotas_with_http_info(request)
+        return self._show_gauss_my_sql_project_quotas_with_http_info(request)
 
-    def show_gauss_my_sql_project_quotas_with_http_info(self, request):
-        all_params = ['x_language', 'type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_gauss_my_sql_project_quotas_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3607,14 +3377,10 @@ class GaussDBAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.ShowGaussMySqlProxyFlavorsRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowGaussMySqlProxyFlavorsResponse`
         """
-        return self.show_gauss_my_sql_proxy_flavors_with_http_info(request)
+        return self._show_gauss_my_sql_proxy_flavors_with_http_info(request)
 
-    def show_gauss_my_sql_proxy_flavors_with_http_info(self, request):
-        all_params = ['instance_id', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_gauss_my_sql_proxy_flavors_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3670,14 +3436,10 @@ class GaussDBAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.ShowGaussMySqlProxyListRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowGaussMySqlProxyListResponse`
         """
-        return self.show_gauss_my_sql_proxy_list_with_http_info(request)
+        return self._show_gauss_my_sql_proxy_list_with_http_info(request)
 
-    def show_gauss_my_sql_proxy_list_with_http_info(self, request):
-        all_params = ['instance_id', 'x_language', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_gauss_my_sql_proxy_list_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3737,14 +3499,10 @@ class GaussDBAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.ShowGaussMySqlQuotasRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowGaussMySqlQuotasResponse`
         """
-        return self.show_gauss_my_sql_quotas_with_http_info(request)
+        return self._show_gauss_my_sql_quotas_with_http_info(request)
 
-    def show_gauss_my_sql_quotas_with_http_info(self, request):
-        all_params = ['x_language', 'offset', 'limit', 'enterprise_project_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_gauss_my_sql_quotas_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3804,14 +3562,10 @@ class GaussDBAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.ShowInstanceMonitorExtendRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowInstanceMonitorExtendResponse`
         """
-        return self.show_instance_monitor_extend_with_http_info(request)
+        return self._show_instance_monitor_extend_with_http_info(request)
 
-    def show_instance_monitor_extend_with_http_info(self, request):
-        all_params = ['instance_id', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_instance_monitor_extend_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3867,14 +3621,10 @@ class GaussDBAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.SwitchGaussMySqlConfigurationRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.SwitchGaussMySqlConfigurationResponse`
         """
-        return self.switch_gauss_my_sql_configuration_with_http_info(request)
+        return self._switch_gauss_my_sql_configuration_with_http_info(request)
 
-    def switch_gauss_my_sql_configuration_with_http_info(self, request):
-        all_params = ['configuration_id', 'apply_configuration_request_body', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _switch_gauss_my_sql_configuration_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3932,14 +3682,10 @@ class GaussDBAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.SwitchGaussMySqlInstanceSslRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.SwitchGaussMySqlInstanceSslResponse`
         """
-        return self.switch_gauss_my_sql_instance_ssl_with_http_info(request)
+        return self._switch_gauss_my_sql_instance_ssl_with_http_info(request)
 
-    def switch_gauss_my_sql_instance_ssl_with_http_info(self, request):
-        all_params = ['instance_id', 'switch_ssl_request', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _switch_gauss_my_sql_instance_ssl_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3997,14 +3743,10 @@ class GaussDBAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.UpdateAuditLogRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.UpdateAuditLogResponse`
         """
-        return self.update_audit_log_with_http_info(request)
+        return self._update_audit_log_with_http_info(request)
 
-    def update_audit_log_with_http_info(self, request):
-        all_params = ['instance_id', 'operate_audit_log_request_v3_body', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_audit_log_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4062,14 +3804,10 @@ class GaussDBAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.UpdateGaussMySqlBackupPolicyRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.UpdateGaussMySqlBackupPolicyResponse`
         """
-        return self.update_gauss_my_sql_backup_policy_with_http_info(request)
+        return self._update_gauss_my_sql_backup_policy_with_http_info(request)
 
-    def update_gauss_my_sql_backup_policy_with_http_info(self, request):
-        all_params = ['instance_id', 'mysql_update_backup_policy_request', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_gauss_my_sql_backup_policy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4127,14 +3865,10 @@ class GaussDBAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.UpdateGaussMySqlConfigurationRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.UpdateGaussMySqlConfigurationResponse`
         """
-        return self.update_gauss_my_sql_configuration_with_http_info(request)
+        return self._update_gauss_my_sql_configuration_with_http_info(request)
 
-    def update_gauss_my_sql_configuration_with_http_info(self, request):
-        all_params = ['configuration_id', 'update_configuration_parameter_request_body', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_gauss_my_sql_configuration_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4192,14 +3926,10 @@ class GaussDBAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.UpdateGaussMySqlInstanceAliasRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.UpdateGaussMySqlInstanceAliasResponse`
         """
-        return self.update_gauss_my_sql_instance_alias_with_http_info(request)
+        return self._update_gauss_my_sql_instance_alias_with_http_info(request)
 
-    def update_gauss_my_sql_instance_alias_with_http_info(self, request):
-        all_params = ['instance_id', 'modify_alias_request', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_gauss_my_sql_instance_alias_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4257,14 +3987,10 @@ class GaussDBAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.UpdateGaussMySqlInstanceEipRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.UpdateGaussMySqlInstanceEipResponse`
         """
-        return self.update_gauss_my_sql_instance_eip_with_http_info(request)
+        return self._update_gauss_my_sql_instance_eip_with_http_info(request)
 
-    def update_gauss_my_sql_instance_eip_with_http_info(self, request):
-        all_params = ['instance_id', 'modify_bind_eip_request', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_gauss_my_sql_instance_eip_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4322,14 +4048,10 @@ class GaussDBAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.UpdateGaussMySqlInstanceInternalIpRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.UpdateGaussMySqlInstanceInternalIpResponse`
         """
-        return self.update_gauss_my_sql_instance_internal_ip_with_http_info(request)
+        return self._update_gauss_my_sql_instance_internal_ip_with_http_info(request)
 
-    def update_gauss_my_sql_instance_internal_ip_with_http_info(self, request):
-        all_params = ['instance_id', 'modify_internal_ip_request', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_gauss_my_sql_instance_internal_ip_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4387,14 +4109,10 @@ class GaussDBAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.UpdateGaussMySqlInstanceNameRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.UpdateGaussMySqlInstanceNameResponse`
         """
-        return self.update_gauss_my_sql_instance_name_with_http_info(request)
+        return self._update_gauss_my_sql_instance_name_with_http_info(request)
 
-    def update_gauss_my_sql_instance_name_with_http_info(self, request):
-        all_params = ['instance_id', 'mysql_update_instance_name_request', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_gauss_my_sql_instance_name_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4452,14 +4170,10 @@ class GaussDBAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.UpdateGaussMySqlInstanceOpsWindowRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.UpdateGaussMySqlInstanceOpsWindowResponse`
         """
-        return self.update_gauss_my_sql_instance_ops_window_with_http_info(request)
+        return self._update_gauss_my_sql_instance_ops_window_with_http_info(request)
 
-    def update_gauss_my_sql_instance_ops_window_with_http_info(self, request):
-        all_params = ['instance_id', 'modify_ops_window', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_gauss_my_sql_instance_ops_window_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4517,14 +4231,10 @@ class GaussDBAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.UpdateGaussMySqlInstancePortRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.UpdateGaussMySqlInstancePortResponse`
         """
-        return self.update_gauss_my_sql_instance_port_with_http_info(request)
+        return self._update_gauss_my_sql_instance_port_with_http_info(request)
 
-    def update_gauss_my_sql_instance_port_with_http_info(self, request):
-        all_params = ['instance_id', 'modify_port_request', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_gauss_my_sql_instance_port_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4582,14 +4292,10 @@ class GaussDBAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.UpdateGaussMySqlInstanceSecurityGroupRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.UpdateGaussMySqlInstanceSecurityGroupResponse`
         """
-        return self.update_gauss_my_sql_instance_security_group_with_http_info(request)
+        return self._update_gauss_my_sql_instance_security_group_with_http_info(request)
 
-    def update_gauss_my_sql_instance_security_group_with_http_info(self, request):
-        all_params = ['instance_id', 'modify_security_group', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_gauss_my_sql_instance_security_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4647,14 +4353,10 @@ class GaussDBAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.UpdateGaussMySqlQuotasRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.UpdateGaussMySqlQuotasResponse`
         """
-        return self.update_gauss_my_sql_quotas_with_http_info(request)
+        return self._update_gauss_my_sql_quotas_with_http_info(request)
 
-    def update_gauss_my_sql_quotas_with_http_info(self, request):
-        all_params = ['x_language', 'set_quotas_request']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_gauss_my_sql_quotas_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4710,14 +4412,10 @@ class GaussDBAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.UpdateInstanceMonitorRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.UpdateInstanceMonitorResponse`
         """
-        return self.update_instance_monitor_with_http_info(request)
+        return self._update_instance_monitor_with_http_info(request)
 
-    def update_instance_monitor_with_http_info(self, request):
-        all_params = ['instance_id', 'taurus_modify_instance_monitor_request_body', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_instance_monitor_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4775,14 +4473,10 @@ class GaussDBAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.UpdateProxySessionConsistenceRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.UpdateProxySessionConsistenceResponse`
         """
-        return self.update_proxy_session_consistence_with_http_info(request)
+        return self._update_proxy_session_consistence_with_http_info(request)
 
-    def update_proxy_session_consistence_with_http_info(self, request):
-        all_params = ['instance_id', 'proxy_id', 'modify_proxy_consist_request', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_proxy_session_consistence_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4842,14 +4536,10 @@ class GaussDBAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.UpdateTransactionSplitStatusRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.UpdateTransactionSplitStatusResponse`
         """
-        return self.update_transaction_split_status_with_http_info(request)
+        return self._update_transaction_split_status_with_http_info(request)
 
-    def update_transaction_split_status_with_http_info(self, request):
-        all_params = ['instance_id', 'proxy_transaction_split_request', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_transaction_split_status_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4907,14 +4597,10 @@ class GaussDBAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.UpgradeGaussMySqlInstanceDatabaseRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.UpgradeGaussMySqlInstanceDatabaseResponse`
         """
-        return self.upgrade_gauss_my_sql_instance_database_with_http_info(request)
+        return self._upgrade_gauss_my_sql_instance_database_with_http_info(request)
 
-    def upgrade_gauss_my_sql_instance_database_with_http_info(self, request):
-        all_params = ['instance_id', 'upgrade_database_request', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _upgrade_gauss_my_sql_instance_database_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4972,14 +4658,10 @@ class GaussDBAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.DeleteSqlFilterRuleRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.DeleteSqlFilterRuleResponse`
         """
-        return self.delete_sql_filter_rule_with_http_info(request)
+        return self._delete_sql_filter_rule_with_http_info(request)
 
-    def delete_sql_filter_rule_with_http_info(self, request):
-        all_params = ['instance_id', 'delete_sql_filter_rule_req', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_sql_filter_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5037,14 +4719,10 @@ class GaussDBAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.SetSqlFilterRuleRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.SetSqlFilterRuleResponse`
         """
-        return self.set_sql_filter_rule_with_http_info(request)
+        return self._set_sql_filter_rule_with_http_info(request)
 
-    def set_sql_filter_rule_with_http_info(self, request):
-        all_params = ['instance_id', 'operate_sql_filter_rule_req', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _set_sql_filter_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5102,14 +4780,10 @@ class GaussDBAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.ShowSqlFilterControlRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowSqlFilterControlResponse`
         """
-        return self.show_sql_filter_control_with_http_info(request)
+        return self._show_sql_filter_control_with_http_info(request)
 
-    def show_sql_filter_control_with_http_info(self, request):
-        all_params = ['instance_id', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_sql_filter_control_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5165,14 +4839,10 @@ class GaussDBAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.ShowSqlFilterRuleRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowSqlFilterRuleResponse`
         """
-        return self.show_sql_filter_rule_with_http_info(request)
+        return self._show_sql_filter_rule_with_http_info(request)
 
-    def show_sql_filter_rule_with_http_info(self, request):
-        all_params = ['instance_id', 'node_id', 'x_language', 'type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_sql_filter_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5232,14 +4902,10 @@ class GaussDBAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.UpdateSqlFilterControlRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.UpdateSqlFilterControlResponse`
         """
-        return self.update_sql_filter_control_with_http_info(request)
+        return self._update_sql_filter_control_with_http_info(request)
 
-    def update_sql_filter_control_with_http_info(self, request):
-        all_params = ['instance_id', 'operate_sql_filter_control_req', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_sql_filter_control_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

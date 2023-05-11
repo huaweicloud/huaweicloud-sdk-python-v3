@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class HssClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(HssClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkhss.v1.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -53,14 +35,10 @@ class HssClient(Client):
         :type request: :class:`huaweicloudsdkhss.v1.ListEventsRequest`
         :rtype: :class:`huaweicloudsdkhss.v1.ListEventsResponse`
         """
-        return self.list_events_with_http_info(request)
+        return self._list_events_with_http_info(request)
 
-    def list_events_with_http_info(self, request):
-        all_params = ['begin_time', 'end_time', 'event_types', 'host_name', 'handle_status', 'limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_events_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -126,14 +104,10 @@ class HssClient(Client):
         :type request: :class:`huaweicloudsdkhss.v1.ListHostsRequest`
         :rtype: :class:`huaweicloudsdkhss.v1.ListHostsResponse`
         """
-        return self.list_hosts_with_http_info(request)
+        return self._list_hosts_with_http_info(request)
 
-    def list_hosts_with_http_info(self, request):
-        all_params = ['version', 'agent_status', 'host_status', 'protect_status', 'detect_result', 'host_name', 'host_ip', 'public_ip', 'os_type', 'charging_mode', 'limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_hosts_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

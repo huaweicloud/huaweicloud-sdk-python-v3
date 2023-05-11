@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class CsmsAsyncClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(CsmsAsyncClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkcsms.v1.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -54,14 +36,10 @@ class CsmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcsms.v1.BatchCreateOrDeleteTagsRequest`
         :rtype: :class:`huaweicloudsdkcsms.v1.BatchCreateOrDeleteTagsResponse`
         """
-        return self.batch_create_or_delete_tags_with_http_info(request)
+        return self._batch_create_or_delete_tags_with_http_info(request)
 
-    def batch_create_or_delete_tags_with_http_info(self, request):
-        all_params = ['secret_id', 'batch_create_or_delete_tags_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_create_or_delete_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -121,14 +99,10 @@ class CsmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcsms.v1.CreateSecretRequest`
         :rtype: :class:`huaweicloudsdkcsms.v1.CreateSecretResponse`
         """
-        return self.create_secret_with_http_info(request)
+        return self._create_secret_with_http_info(request)
 
-    def create_secret_with_http_info(self, request):
-        all_params = ['create_secret_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_secret_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -182,14 +156,10 @@ class CsmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcsms.v1.CreateSecretTagRequest`
         :rtype: :class:`huaweicloudsdkcsms.v1.CreateSecretTagResponse`
         """
-        return self.create_secret_tag_with_http_info(request)
+        return self._create_secret_tag_with_http_info(request)
 
-    def create_secret_tag_with_http_info(self, request):
-        all_params = ['secret_id', 'create_secret_tag_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_secret_tag_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -245,14 +215,10 @@ class CsmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcsms.v1.CreateSecretVersionRequest`
         :rtype: :class:`huaweicloudsdkcsms.v1.CreateSecretVersionResponse`
         """
-        return self.create_secret_version_with_http_info(request)
+        return self._create_secret_version_with_http_info(request)
 
-    def create_secret_version_with_http_info(self, request):
-        all_params = ['secret_name', 'create_secret_version_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_secret_version_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -308,14 +274,10 @@ class CsmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcsms.v1.DeleteSecretRequest`
         :rtype: :class:`huaweicloudsdkcsms.v1.DeleteSecretResponse`
         """
-        return self.delete_secret_with_http_info(request)
+        return self._delete_secret_with_http_info(request)
 
-    def delete_secret_with_http_info(self, request):
-        all_params = ['secret_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_secret_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -369,14 +331,10 @@ class CsmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcsms.v1.DeleteSecretForScheduleRequest`
         :rtype: :class:`huaweicloudsdkcsms.v1.DeleteSecretForScheduleResponse`
         """
-        return self.delete_secret_for_schedule_with_http_info(request)
+        return self._delete_secret_for_schedule_with_http_info(request)
 
-    def delete_secret_for_schedule_with_http_info(self, request):
-        all_params = ['secret_name', 'delete_secret_for_schedule_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_secret_for_schedule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -432,14 +390,10 @@ class CsmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcsms.v1.DeleteSecretStageRequest`
         :rtype: :class:`huaweicloudsdkcsms.v1.DeleteSecretStageResponse`
         """
-        return self.delete_secret_stage_with_http_info(request)
+        return self._delete_secret_stage_with_http_info(request)
 
-    def delete_secret_stage_with_http_info(self, request):
-        all_params = ['secret_name', 'stage_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_secret_stage_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -495,14 +449,10 @@ class CsmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcsms.v1.DeleteSecretTagRequest`
         :rtype: :class:`huaweicloudsdkcsms.v1.DeleteSecretTagResponse`
         """
-        return self.delete_secret_tag_with_http_info(request)
+        return self._delete_secret_tag_with_http_info(request)
 
-    def delete_secret_tag_with_http_info(self, request):
-        all_params = ['secret_id', 'key']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_secret_tag_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -558,14 +508,10 @@ class CsmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcsms.v1.DownloadSecretBlobRequest`
         :rtype: :class:`huaweicloudsdkcsms.v1.DownloadSecretBlobResponse`
         """
-        return self.download_secret_blob_with_http_info(request)
+        return self._download_secret_blob_with_http_info(request)
 
-    def download_secret_blob_with_http_info(self, request):
-        all_params = ['secret_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _download_secret_blob_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -619,14 +565,10 @@ class CsmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcsms.v1.ListProjectSecretsTagsRequest`
         :rtype: :class:`huaweicloudsdkcsms.v1.ListProjectSecretsTagsResponse`
         """
-        return self.list_project_secrets_tags_with_http_info(request)
+        return self._list_project_secrets_tags_with_http_info(request)
 
-    def list_project_secrets_tags_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_project_secrets_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -678,14 +620,10 @@ class CsmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcsms.v1.ListResourceInstancesRequest`
         :rtype: :class:`huaweicloudsdkcsms.v1.ListResourceInstancesResponse`
         """
-        return self.list_resource_instances_with_http_info(request)
+        return self._list_resource_instances_with_http_info(request)
 
-    def list_resource_instances_with_http_info(self, request):
-        all_params = ['resource_instances', 'list_resource_instances_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_resource_instances_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -741,14 +679,10 @@ class CsmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcsms.v1.ListSecretTagsRequest`
         :rtype: :class:`huaweicloudsdkcsms.v1.ListSecretTagsResponse`
         """
-        return self.list_secret_tags_with_http_info(request)
+        return self._list_secret_tags_with_http_info(request)
 
-    def list_secret_tags_with_http_info(self, request):
-        all_params = ['secret_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_secret_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -802,14 +736,10 @@ class CsmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcsms.v1.ListSecretVersionsRequest`
         :rtype: :class:`huaweicloudsdkcsms.v1.ListSecretVersionsResponse`
         """
-        return self.list_secret_versions_with_http_info(request)
+        return self._list_secret_versions_with_http_info(request)
 
-    def list_secret_versions_with_http_info(self, request):
-        all_params = ['secret_name', 'marker', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_secret_versions_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -867,14 +797,10 @@ class CsmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcsms.v1.ListSecretsRequest`
         :rtype: :class:`huaweicloudsdkcsms.v1.ListSecretsResponse`
         """
-        return self.list_secrets_with_http_info(request)
+        return self._list_secrets_with_http_info(request)
 
-    def list_secrets_with_http_info(self, request):
-        all_params = ['limit', 'marker']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_secrets_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -930,14 +856,10 @@ class CsmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcsms.v1.RestoreSecretRequest`
         :rtype: :class:`huaweicloudsdkcsms.v1.RestoreSecretResponse`
         """
-        return self.restore_secret_with_http_info(request)
+        return self._restore_secret_with_http_info(request)
 
-    def restore_secret_with_http_info(self, request):
-        all_params = ['secret_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _restore_secret_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -991,14 +913,10 @@ class CsmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcsms.v1.ShowSecretRequest`
         :rtype: :class:`huaweicloudsdkcsms.v1.ShowSecretResponse`
         """
-        return self.show_secret_with_http_info(request)
+        return self._show_secret_with_http_info(request)
 
-    def show_secret_with_http_info(self, request):
-        all_params = ['secret_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_secret_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1052,14 +970,10 @@ class CsmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcsms.v1.ShowSecretStageRequest`
         :rtype: :class:`huaweicloudsdkcsms.v1.ShowSecretStageResponse`
         """
-        return self.show_secret_stage_with_http_info(request)
+        return self._show_secret_stage_with_http_info(request)
 
-    def show_secret_stage_with_http_info(self, request):
-        all_params = ['secret_name', 'stage_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_secret_stage_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1116,14 +1030,10 @@ class CsmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcsms.v1.ShowSecretVersionRequest`
         :rtype: :class:`huaweicloudsdkcsms.v1.ShowSecretVersionResponse`
         """
-        return self.show_secret_version_with_http_info(request)
+        return self._show_secret_version_with_http_info(request)
 
-    def show_secret_version_with_http_info(self, request):
-        all_params = ['secret_name', 'version_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_secret_version_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1179,14 +1089,10 @@ class CsmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcsms.v1.UpdateSecretRequest`
         :rtype: :class:`huaweicloudsdkcsms.v1.UpdateSecretResponse`
         """
-        return self.update_secret_with_http_info(request)
+        return self._update_secret_with_http_info(request)
 
-    def update_secret_with_http_info(self, request):
-        all_params = ['secret_name', 'update_secret_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_secret_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1242,14 +1148,10 @@ class CsmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcsms.v1.UpdateSecretStageRequest`
         :rtype: :class:`huaweicloudsdkcsms.v1.UpdateSecretStageResponse`
         """
-        return self.update_secret_stage_with_http_info(request)
+        return self._update_secret_stage_with_http_info(request)
 
-    def update_secret_stage_with_http_info(self, request):
-        all_params = ['secret_name', 'stage_name', 'update_secret_stage_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_secret_stage_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1307,14 +1209,10 @@ class CsmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcsms.v1.UploadSecretBlobRequest`
         :rtype: :class:`huaweicloudsdkcsms.v1.UploadSecretBlobResponse`
         """
-        return self.upload_secret_blob_with_http_info(request)
+        return self._upload_secret_blob_with_http_info(request)
 
-    def upload_secret_blob_with_http_info(self, request):
-        all_params = ['upload_secret_blob_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _upload_secret_blob_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

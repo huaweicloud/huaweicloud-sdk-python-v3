@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class CcmClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(CcmClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkccm.v1.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -53,14 +35,10 @@ class CcmClient(Client):
         :type request: :class:`huaweicloudsdkccm.v1.CreateCertificateRequest`
         :rtype: :class:`huaweicloudsdkccm.v1.CreateCertificateResponse`
         """
-        return self.create_certificate_with_http_info(request)
+        return self._create_certificate_with_http_info(request)
 
-    def create_certificate_with_http_info(self, request):
-        all_params = ['create_certificate_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_certificate_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -114,14 +92,10 @@ class CcmClient(Client):
         :type request: :class:`huaweicloudsdkccm.v1.CreateCertificateAuthorityObsAgencyRequest`
         :rtype: :class:`huaweicloudsdkccm.v1.CreateCertificateAuthorityObsAgencyResponse`
         """
-        return self.create_certificate_authority_obs_agency_with_http_info(request)
+        return self._create_certificate_authority_obs_agency_with_http_info(request)
 
-    def create_certificate_authority_obs_agency_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_certificate_authority_obs_agency_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -191,14 +165,10 @@ class CcmClient(Client):
         :type request: :class:`huaweicloudsdkccm.v1.CreateCertificateByCsrRequest`
         :rtype: :class:`huaweicloudsdkccm.v1.CreateCertificateByCsrResponse`
         """
-        return self.create_certificate_by_csr_with_http_info(request)
+        return self._create_certificate_by_csr_with_http_info(request)
 
-    def create_certificate_by_csr_with_http_info(self, request):
-        all_params = ['create_certificate_by_csr_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_certificate_by_csr_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -251,14 +221,10 @@ class CcmClient(Client):
         :type request: :class:`huaweicloudsdkccm.v1.DeleteCertificateRequest`
         :rtype: :class:`huaweicloudsdkccm.v1.DeleteCertificateResponse`
         """
-        return self.delete_certificate_with_http_info(request)
+        return self._delete_certificate_with_http_info(request)
 
-    def delete_certificate_with_http_info(self, request):
-        all_params = ['certificate_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_certificate_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -311,14 +277,10 @@ class CcmClient(Client):
         :type request: :class:`huaweicloudsdkccm.v1.DisableCertificateAuthorityCrlRequest`
         :rtype: :class:`huaweicloudsdkccm.v1.DisableCertificateAuthorityCrlResponse`
         """
-        return self.disable_certificate_authority_crl_with_http_info(request)
+        return self._disable_certificate_authority_crl_with_http_info(request)
 
-    def disable_certificate_authority_crl_with_http_info(self, request):
-        all_params = ['ca_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _disable_certificate_authority_crl_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -371,14 +333,10 @@ class CcmClient(Client):
         :type request: :class:`huaweicloudsdkccm.v1.EnableCertificateAuthorityCrlRequest`
         :rtype: :class:`huaweicloudsdkccm.v1.EnableCertificateAuthorityCrlResponse`
         """
-        return self.enable_certificate_authority_crl_with_http_info(request)
+        return self._enable_certificate_authority_crl_with_http_info(request)
 
-    def enable_certificate_authority_crl_with_http_info(self, request):
-        all_params = ['ca_id', 'enable_certificate_authority_crl_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _enable_certificate_authority_crl_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -506,14 +464,10 @@ class CcmClient(Client):
         :type request: :class:`huaweicloudsdkccm.v1.ExportCertificateRequest`
         :rtype: :class:`huaweicloudsdkccm.v1.ExportCertificateResponse`
         """
-        return self.export_certificate_with_http_info(request)
+        return self._export_certificate_with_http_info(request)
 
-    def export_certificate_with_http_info(self, request):
-        all_params = ['certificate_id', 'export_certificate_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _export_certificate_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -568,14 +522,10 @@ class CcmClient(Client):
         :type request: :class:`huaweicloudsdkccm.v1.ListCertificateRequest`
         :rtype: :class:`huaweicloudsdkccm.v1.ListCertificateResponse`
         """
-        return self.list_certificate_with_http_info(request)
+        return self._list_certificate_with_http_info(request)
 
-    def list_certificate_with_http_info(self, request):
-        all_params = ['limit', 'name', 'offset', 'status', 'sort_key', 'sort_dir']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_certificate_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -639,14 +589,10 @@ class CcmClient(Client):
         :type request: :class:`huaweicloudsdkccm.v1.ListCertificateAuthorityObsBucketRequest`
         :rtype: :class:`huaweicloudsdkccm.v1.ListCertificateAuthorityObsBucketResponse`
         """
-        return self.list_certificate_authority_obs_bucket_with_http_info(request)
+        return self._list_certificate_authority_obs_bucket_with_http_info(request)
 
-    def list_certificate_authority_obs_bucket_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_certificate_authority_obs_bucket_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -697,14 +643,10 @@ class CcmClient(Client):
         :type request: :class:`huaweicloudsdkccm.v1.ParseCertificateSigningRequestRequest`
         :rtype: :class:`huaweicloudsdkccm.v1.ParseCertificateSigningRequestResponse`
         """
-        return self.parse_certificate_signing_request_with_http_info(request)
+        return self._parse_certificate_signing_request_with_http_info(request)
 
-    def parse_certificate_signing_request_with_http_info(self, request):
-        all_params = ['parse_certificate_signing_request_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _parse_certificate_signing_request_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -758,14 +700,10 @@ class CcmClient(Client):
         :type request: :class:`huaweicloudsdkccm.v1.RevokeCertificateRequest`
         :rtype: :class:`huaweicloudsdkccm.v1.RevokeCertificateResponse`
         """
-        return self.revoke_certificate_with_http_info(request)
+        return self._revoke_certificate_with_http_info(request)
 
-    def revoke_certificate_with_http_info(self, request):
-        all_params = ['certificate_id', 'revoke_certificate_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _revoke_certificate_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -820,14 +758,10 @@ class CcmClient(Client):
         :type request: :class:`huaweicloudsdkccm.v1.ShowCertificateRequest`
         :rtype: :class:`huaweicloudsdkccm.v1.ShowCertificateResponse`
         """
-        return self.show_certificate_with_http_info(request)
+        return self._show_certificate_with_http_info(request)
 
-    def show_certificate_with_http_info(self, request):
-        all_params = ['certificate_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_certificate_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -881,14 +815,10 @@ class CcmClient(Client):
         :type request: :class:`huaweicloudsdkccm.v1.ShowCertificateAuthorityObsAgencyRequest`
         :rtype: :class:`huaweicloudsdkccm.v1.ShowCertificateAuthorityObsAgencyResponse`
         """
-        return self.show_certificate_authority_obs_agency_with_http_info(request)
+        return self._show_certificate_authority_obs_agency_with_http_info(request)
 
-    def show_certificate_authority_obs_agency_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_certificate_authority_obs_agency_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -939,14 +869,10 @@ class CcmClient(Client):
         :type request: :class:`huaweicloudsdkccm.v1.ShowCertificateQuotaRequest`
         :rtype: :class:`huaweicloudsdkccm.v1.ShowCertificateQuotaResponse`
         """
-        return self.show_certificate_quota_with_http_info(request)
+        return self._show_certificate_quota_with_http_info(request)
 
-    def show_certificate_quota_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_certificate_quota_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1000,14 +926,10 @@ class CcmClient(Client):
         :type request: :class:`huaweicloudsdkccm.v1.CreateCertificateAuthorityRequest`
         :rtype: :class:`huaweicloudsdkccm.v1.CreateCertificateAuthorityResponse`
         """
-        return self.create_certificate_authority_with_http_info(request)
+        return self._create_certificate_authority_with_http_info(request)
 
-    def create_certificate_authority_with_http_info(self, request):
-        all_params = ['create_certificate_authority_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_certificate_authority_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1061,14 +983,10 @@ class CcmClient(Client):
         :type request: :class:`huaweicloudsdkccm.v1.DeleteCertificateAuthorityRequest`
         :rtype: :class:`huaweicloudsdkccm.v1.DeleteCertificateAuthorityResponse`
         """
-        return self.delete_certificate_authority_with_http_info(request)
+        return self._delete_certificate_authority_with_http_info(request)
 
-    def delete_certificate_authority_with_http_info(self, request):
-        all_params = ['ca_id', 'pending_days']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_certificate_authority_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1124,14 +1042,10 @@ class CcmClient(Client):
         :type request: :class:`huaweicloudsdkccm.v1.DisableCertificateAuthorityRequest`
         :rtype: :class:`huaweicloudsdkccm.v1.DisableCertificateAuthorityResponse`
         """
-        return self.disable_certificate_authority_with_http_info(request)
+        return self._disable_certificate_authority_with_http_info(request)
 
-    def disable_certificate_authority_with_http_info(self, request):
-        all_params = ['ca_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _disable_certificate_authority_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1185,14 +1099,10 @@ class CcmClient(Client):
         :type request: :class:`huaweicloudsdkccm.v1.EnableCertificateAuthorityRequest`
         :rtype: :class:`huaweicloudsdkccm.v1.EnableCertificateAuthorityResponse`
         """
-        return self.enable_certificate_authority_with_http_info(request)
+        return self._enable_certificate_authority_with_http_info(request)
 
-    def enable_certificate_authority_with_http_info(self, request):
-        all_params = ['ca_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _enable_certificate_authority_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1246,14 +1156,10 @@ class CcmClient(Client):
         :type request: :class:`huaweicloudsdkccm.v1.ExportCertificateAuthorityCertificateRequest`
         :rtype: :class:`huaweicloudsdkccm.v1.ExportCertificateAuthorityCertificateResponse`
         """
-        return self.export_certificate_authority_certificate_with_http_info(request)
+        return self._export_certificate_authority_certificate_with_http_info(request)
 
-    def export_certificate_authority_certificate_with_http_info(self, request):
-        all_params = ['ca_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _export_certificate_authority_certificate_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1307,14 +1213,10 @@ class CcmClient(Client):
         :type request: :class:`huaweicloudsdkccm.v1.ExportCertificateAuthorityCsrRequest`
         :rtype: :class:`huaweicloudsdkccm.v1.ExportCertificateAuthorityCsrResponse`
         """
-        return self.export_certificate_authority_csr_with_http_info(request)
+        return self._export_certificate_authority_csr_with_http_info(request)
 
-    def export_certificate_authority_csr_with_http_info(self, request):
-        all_params = ['ca_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _export_certificate_authority_csr_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1372,14 +1274,10 @@ class CcmClient(Client):
         :type request: :class:`huaweicloudsdkccm.v1.ImportCertificateAuthorityCertificateRequest`
         :rtype: :class:`huaweicloudsdkccm.v1.ImportCertificateAuthorityCertificateResponse`
         """
-        return self.import_certificate_authority_certificate_with_http_info(request)
+        return self._import_certificate_authority_certificate_with_http_info(request)
 
-    def import_certificate_authority_certificate_with_http_info(self, request):
-        all_params = ['ca_id', 'import_certificate_authority_certificate_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _import_certificate_authority_certificate_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1435,14 +1333,10 @@ class CcmClient(Client):
         :type request: :class:`huaweicloudsdkccm.v1.IssueCertificateAuthorityCertificateRequest`
         :rtype: :class:`huaweicloudsdkccm.v1.IssueCertificateAuthorityCertificateResponse`
         """
-        return self.issue_certificate_authority_certificate_with_http_info(request)
+        return self._issue_certificate_authority_certificate_with_http_info(request)
 
-    def issue_certificate_authority_certificate_with_http_info(self, request):
-        all_params = ['ca_id', 'issue_certificate_authority_certificate_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _issue_certificate_authority_certificate_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1497,14 +1391,10 @@ class CcmClient(Client):
         :type request: :class:`huaweicloudsdkccm.v1.ListCertificateAuthorityRequest`
         :rtype: :class:`huaweicloudsdkccm.v1.ListCertificateAuthorityResponse`
         """
-        return self.list_certificate_authority_with_http_info(request)
+        return self._list_certificate_authority_with_http_info(request)
 
-    def list_certificate_authority_with_http_info(self, request):
-        all_params = ['limit', 'name', 'offset', 'status', 'type', 'sort_key', 'sort_dir']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_certificate_authority_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1570,14 +1460,10 @@ class CcmClient(Client):
         :type request: :class:`huaweicloudsdkccm.v1.RestoreCertificateAuthorityRequest`
         :rtype: :class:`huaweicloudsdkccm.v1.RestoreCertificateAuthorityResponse`
         """
-        return self.restore_certificate_authority_with_http_info(request)
+        return self._restore_certificate_authority_with_http_info(request)
 
-    def restore_certificate_authority_with_http_info(self, request):
-        all_params = ['ca_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _restore_certificate_authority_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1631,14 +1517,10 @@ class CcmClient(Client):
         :type request: :class:`huaweicloudsdkccm.v1.RevokeCertificateAuthorityRequest`
         :rtype: :class:`huaweicloudsdkccm.v1.RevokeCertificateAuthorityResponse`
         """
-        return self.revoke_certificate_authority_with_http_info(request)
+        return self._revoke_certificate_authority_with_http_info(request)
 
-    def revoke_certificate_authority_with_http_info(self, request):
-        all_params = ['ca_id', 'revoke_certificate_authority_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _revoke_certificate_authority_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1693,14 +1575,10 @@ class CcmClient(Client):
         :type request: :class:`huaweicloudsdkccm.v1.ShowCertificateAuthorityRequest`
         :rtype: :class:`huaweicloudsdkccm.v1.ShowCertificateAuthorityResponse`
         """
-        return self.show_certificate_authority_with_http_info(request)
+        return self._show_certificate_authority_with_http_info(request)
 
-    def show_certificate_authority_with_http_info(self, request):
-        all_params = ['ca_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_certificate_authority_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1753,14 +1631,10 @@ class CcmClient(Client):
         :type request: :class:`huaweicloudsdkccm.v1.ShowCertificateAuthorityQuotaRequest`
         :rtype: :class:`huaweicloudsdkccm.v1.ShowCertificateAuthorityQuotaResponse`
         """
-        return self.show_certificate_authority_quota_with_http_info(request)
+        return self._show_certificate_authority_quota_with_http_info(request)
 
-    def show_certificate_authority_quota_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_certificate_authority_quota_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

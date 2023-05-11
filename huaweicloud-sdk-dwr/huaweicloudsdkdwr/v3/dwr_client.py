@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class DwrClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(DwrClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkdwr.v3.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -53,14 +35,10 @@ class DwrClient(Client):
         :type request: :class:`huaweicloudsdkdwr.v3.AcceptServiceContractRequest`
         :rtype: :class:`huaweicloudsdkdwr.v3.AcceptServiceContractResponse`
         """
-        return self.accept_service_contract_with_http_info(request)
+        return self._accept_service_contract_with_http_info(request)
 
-    def accept_service_contract_with_http_info(self, request):
-        all_params = ['type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _accept_service_contract_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -113,14 +91,10 @@ class DwrClient(Client):
         :type request: :class:`huaweicloudsdkdwr.v3.AsyncInvokeApiStartWorkflowRequest`
         :rtype: :class:`huaweicloudsdkdwr.v3.AsyncInvokeApiStartWorkflowResponse`
         """
-        return self.async_invoke_api_start_workflow_with_http_info(request)
+        return self._async_invoke_api_start_workflow_with_http_info(request)
 
-    def async_invoke_api_start_workflow_with_http_info(self, request):
-        all_params = ['graph_name', 'async_invoke_api_start_workflow_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _async_invoke_api_start_workflow_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -175,14 +149,10 @@ class DwrClient(Client):
         :type request: :class:`huaweicloudsdkdwr.v3.CheckWorkflowAuthenticationRequest`
         :rtype: :class:`huaweicloudsdkdwr.v3.CheckWorkflowAuthenticationResponse`
         """
-        return self.check_workflow_authentication_with_http_info(request)
+        return self._check_workflow_authentication_with_http_info(request)
 
-    def check_workflow_authentication_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _check_workflow_authentication_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -233,14 +203,10 @@ class DwrClient(Client):
         :type request: :class:`huaweicloudsdkdwr.v3.CreateMyActionTemplateRequest`
         :rtype: :class:`huaweicloudsdkdwr.v3.CreateMyActionTemplateResponse`
         """
-        return self.create_my_action_template_with_http_info(request)
+        return self._create_my_action_template_with_http_info(request)
 
-    def create_my_action_template_with_http_info(self, request):
-        all_params = ['template_name', 'create_my_action_template_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_my_action_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -295,14 +261,10 @@ class DwrClient(Client):
         :type request: :class:`huaweicloudsdkdwr.v3.CreateWorkflowAuthenticationRequest`
         :rtype: :class:`huaweicloudsdkdwr.v3.CreateWorkflowAuthenticationResponse`
         """
-        return self.create_workflow_authentication_with_http_info(request)
+        return self._create_workflow_authentication_with_http_info(request)
 
-    def create_workflow_authentication_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_workflow_authentication_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -353,14 +315,10 @@ class DwrClient(Client):
         :type request: :class:`huaweicloudsdkdwr.v3.DeleteMyActionTemplateRequest`
         :rtype: :class:`huaweicloudsdkdwr.v3.DeleteMyActionTemplateResponse`
         """
-        return self.delete_my_action_template_with_http_info(request)
+        return self._delete_my_action_template_with_http_info(request)
 
-    def delete_my_action_template_with_http_info(self, request):
-        all_params = ['template_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_my_action_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -413,14 +371,10 @@ class DwrClient(Client):
         :type request: :class:`huaweicloudsdkdwr.v3.ListMyActionTemplateRequest`
         :rtype: :class:`huaweicloudsdkdwr.v3.ListMyActionTemplateResponse`
         """
-        return self.list_my_action_template_with_http_info(request)
+        return self._list_my_action_template_with_http_info(request)
 
-    def list_my_action_template_with_http_info(self, request):
-        all_params = ['prefix', 'status', 'category', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_my_action_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -481,14 +435,10 @@ class DwrClient(Client):
         :type request: :class:`huaweicloudsdkdwr.v3.ListSystemTemplatesRequest`
         :rtype: :class:`huaweicloudsdkdwr.v3.ListSystemTemplatesResponse`
         """
-        return self.list_system_templates_with_http_info(request)
+        return self._list_system_templates_with_http_info(request)
 
-    def list_system_templates_with_http_info(self, request):
-        all_params = ['prefix', 'category', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_system_templates_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -547,14 +497,10 @@ class DwrClient(Client):
         :type request: :class:`huaweicloudsdkdwr.v3.ListWorkflowInstanceRequest`
         :rtype: :class:`huaweicloudsdkdwr.v3.ListWorkflowInstanceResponse`
         """
-        return self.list_workflow_instance_with_http_info(request)
+        return self._list_workflow_instance_with_http_info(request)
 
-    def list_workflow_instance_with_http_info(self, request):
-        all_params = ['graph_name', 'limit', 'start_time', 'end_time', 'status', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_workflow_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -617,14 +563,10 @@ class DwrClient(Client):
         :type request: :class:`huaweicloudsdkdwr.v3.RestoreWorkflowExecutionRequest`
         :rtype: :class:`huaweicloudsdkdwr.v3.RestoreWorkflowExecutionResponse`
         """
-        return self.restore_workflow_execution_with_http_info(request)
+        return self._restore_workflow_execution_with_http_info(request)
 
-    def restore_workflow_execution_with_http_info(self, request):
-        all_params = ['execution_name', 'graph_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _restore_workflow_execution_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -679,14 +621,10 @@ class DwrClient(Client):
         :type request: :class:`huaweicloudsdkdwr.v3.ShowPublicActionListRequest`
         :rtype: :class:`huaweicloudsdkdwr.v3.ShowPublicActionListResponse`
         """
-        return self.show_public_action_list_with_http_info(request)
+        return self._show_public_action_list_with_http_info(request)
 
-    def show_public_action_list_with_http_info(self, request):
-        all_params = ['prefix', 'category', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_public_action_list_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -745,14 +683,10 @@ class DwrClient(Client):
         :type request: :class:`huaweicloudsdkdwr.v3.ShowPublicTemplateInfoRequest`
         :rtype: :class:`huaweicloudsdkdwr.v3.ShowPublicTemplateInfoResponse`
         """
-        return self.show_public_template_info_with_http_info(request)
+        return self._show_public_template_info_with_http_info(request)
 
-    def show_public_template_info_with_http_info(self, request):
-        all_params = ['template_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_public_template_info_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -805,14 +739,10 @@ class DwrClient(Client):
         :type request: :class:`huaweicloudsdkdwr.v3.ShowServiceContractRequest`
         :rtype: :class:`huaweicloudsdkdwr.v3.ShowServiceContractResponse`
         """
-        return self.show_service_contract_with_http_info(request)
+        return self._show_service_contract_with_http_info(request)
 
-    def show_service_contract_with_http_info(self, request):
-        all_params = ['type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_service_contract_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -865,14 +795,10 @@ class DwrClient(Client):
         :type request: :class:`huaweicloudsdkdwr.v3.ShowSystemTemplateDetailRequest`
         :rtype: :class:`huaweicloudsdkdwr.v3.ShowSystemTemplateDetailResponse`
         """
-        return self.show_system_template_detail_with_http_info(request)
+        return self._show_system_template_detail_with_http_info(request)
 
-    def show_system_template_detail_with_http_info(self, request):
-        all_params = ['template_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_system_template_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -925,14 +851,10 @@ class DwrClient(Client):
         :type request: :class:`huaweicloudsdkdwr.v3.ShowThirdTemplateInfoRequest`
         :rtype: :class:`huaweicloudsdkdwr.v3.ShowThirdTemplateInfoResponse`
         """
-        return self.show_third_template_info_with_http_info(request)
+        return self._show_third_template_info_with_http_info(request)
 
-    def show_third_template_info_with_http_info(self, request):
-        all_params = ['template_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_third_template_info_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -985,14 +907,10 @@ class DwrClient(Client):
         :type request: :class:`huaweicloudsdkdwr.v3.ShowWorkflowInstanceRequest`
         :rtype: :class:`huaweicloudsdkdwr.v3.ShowWorkflowInstanceResponse`
         """
-        return self.show_workflow_instance_with_http_info(request)
+        return self._show_workflow_instance_with_http_info(request)
 
-    def show_workflow_instance_with_http_info(self, request):
-        all_params = ['execution_name', 'graph_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_workflow_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1047,14 +965,10 @@ class DwrClient(Client):
         :type request: :class:`huaweicloudsdkdwr.v3.UpdateMyActionTemplateRequest`
         :rtype: :class:`huaweicloudsdkdwr.v3.UpdateMyActionTemplateResponse`
         """
-        return self.update_my_action_template_with_http_info(request)
+        return self._update_my_action_template_with_http_info(request)
 
-    def update_my_action_template_with_http_info(self, request):
-        all_params = ['template_name', 'update_my_action_template_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_my_action_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1109,14 +1023,10 @@ class DwrClient(Client):
         :type request: :class:`huaweicloudsdkdwr.v3.UpdateMyActionTemplateToDeprecatedRequest`
         :rtype: :class:`huaweicloudsdkdwr.v3.UpdateMyActionTemplateToDeprecatedResponse`
         """
-        return self.update_my_action_template_to_deprecated_with_http_info(request)
+        return self._update_my_action_template_to_deprecated_with_http_info(request)
 
-    def update_my_action_template_to_deprecated_with_http_info(self, request):
-        all_params = ['template_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_my_action_template_to_deprecated_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1169,14 +1079,10 @@ class DwrClient(Client):
         :type request: :class:`huaweicloudsdkdwr.v3.CreateWorkflowRequest`
         :rtype: :class:`huaweicloudsdkdwr.v3.CreateWorkflowResponse`
         """
-        return self.create_workflow_with_http_info(request)
+        return self._create_workflow_with_http_info(request)
 
-    def create_workflow_with_http_info(self, request):
-        all_params = ['graph_name', 'create_workflow_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_workflow_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1231,14 +1137,10 @@ class DwrClient(Client):
         :type request: :class:`huaweicloudsdkdwr.v3.DeleteWorkflowRequest`
         :rtype: :class:`huaweicloudsdkdwr.v3.DeleteWorkflowResponse`
         """
-        return self.delete_workflow_with_http_info(request)
+        return self._delete_workflow_with_http_info(request)
 
-    def delete_workflow_with_http_info(self, request):
-        all_params = ['graph_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_workflow_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1291,14 +1193,10 @@ class DwrClient(Client):
         :type request: :class:`huaweicloudsdkdwr.v3.ListWorkflowsRequest`
         :rtype: :class:`huaweicloudsdkdwr.v3.ListWorkflowsResponse`
         """
-        return self.list_workflows_with_http_info(request)
+        return self._list_workflows_with_http_info(request)
 
-    def list_workflows_with_http_info(self, request):
-        all_params = ['prefix', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_workflows_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1355,14 +1253,10 @@ class DwrClient(Client):
         :type request: :class:`huaweicloudsdkdwr.v3.ShowWorkflowInfoRequest`
         :rtype: :class:`huaweicloudsdkdwr.v3.ShowWorkflowInfoResponse`
         """
-        return self.show_workflow_info_with_http_info(request)
+        return self._show_workflow_info_with_http_info(request)
 
-    def show_workflow_info_with_http_info(self, request):
-        all_params = ['graph_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_workflow_info_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1415,14 +1309,10 @@ class DwrClient(Client):
         :type request: :class:`huaweicloudsdkdwr.v3.UpdateWorkflowRequest`
         :rtype: :class:`huaweicloudsdkdwr.v3.UpdateWorkflowResponse`
         """
-        return self.update_workflow_with_http_info(request)
+        return self._update_workflow_with_http_info(request)
 
-    def update_workflow_with_http_info(self, request):
-        all_params = ['graph_name', 'update_workflow_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_workflow_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

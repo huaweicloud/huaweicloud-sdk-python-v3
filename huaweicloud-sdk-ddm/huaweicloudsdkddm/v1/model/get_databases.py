@@ -1,9 +1,6 @@
 # coding: utf-8
 
-import re
 import six
-
-
 
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
@@ -46,7 +43,7 @@ class GetDatabases:
 
         :param dbslot: 分片数。
         :type dbslot: int
-        :param name: 分片名称.
+        :param name: 分片名称。
         :type name: str
         :param status: 状态。
         :type status: str
@@ -105,7 +102,7 @@ class GetDatabases:
     def name(self):
         """Gets the name of this GetDatabases.
 
-        分片名称.
+        分片名称。
 
         :return: The name of this GetDatabases.
         :rtype: str
@@ -116,7 +113,7 @@ class GetDatabases:
     def name(self, name):
         """Sets the name of this GetDatabases.
 
-        分片名称.
+        分片名称。
 
         :param name: The name of this GetDatabases.
         :type name: str

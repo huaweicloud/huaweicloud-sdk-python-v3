@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class MeetingClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(MeetingClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkmeeting.v1.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -53,14 +35,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.AddCorpRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.AddCorpResponse`
         """
-        return self.add_corp_with_http_info(request)
+        return self._add_corp_with_http_info(request)
 
-    def add_corp_with_http_info(self, request):
-        all_params = ['corp_dto', 'x_request_id', 'accept_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _add_corp_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -117,14 +95,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.AddCorpAdminRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.AddCorpAdminResponse`
         """
-        return self.add_corp_admin_with_http_info(request)
+        return self._add_corp_admin_with_http_info(request)
 
-    def add_corp_admin_with_http_info(self, request):
-        all_params = ['admin_dto', 'x_request_id', 'accept_language', 'account_type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _add_corp_admin_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -183,14 +157,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.AddDepartmentRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.AddDepartmentResponse`
         """
-        return self.add_department_with_http_info(request)
+        return self._add_department_with_http_info(request)
 
-    def add_department_with_http_info(self, request):
-        all_params = ['dept_dto', 'x_request_id', 'accept_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _add_department_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -247,14 +217,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.AddDeviceRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.AddDeviceResponse`
         """
-        return self.add_device_with_http_info(request)
+        return self._add_device_with_http_info(request)
 
-    def add_device_with_http_info(self, request):
-        all_params = ['device_dto', 'x_request_id', 'accept_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _add_device_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -311,14 +277,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.AddMaterialRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.AddMaterialResponse`
         """
-        return self.add_material_with_http_info(request)
+        return self._add_material_with_http_info(request)
 
-    def add_material_with_http_info(self, request):
-        all_params = ['file', 'x_request_id', 'accept_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _add_material_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -377,14 +339,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.AddProgramRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.AddProgramResponse`
         """
-        return self.add_program_with_http_info(request)
+        return self._add_program_with_http_info(request)
 
-    def add_program_with_http_info(self, request):
-        all_params = ['program_dto', 'x_request_id', 'accept_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _add_program_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -441,14 +399,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.AddPublicationRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.AddPublicationResponse`
         """
-        return self.add_publication_with_http_info(request)
+        return self._add_publication_with_http_info(request)
 
-    def add_publication_with_http_info(self, request):
-        all_params = ['publication_dto', 'x_request_id', 'accept_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _add_publication_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -505,14 +459,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.AddResourceRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.AddResourceResponse`
         """
-        return self.add_resource_with_http_info(request)
+        return self._add_resource_with_http_info(request)
 
-    def add_resource_with_http_info(self, request):
-        all_params = ['corp_id', 'resource_list', 'x_request_id', 'accept_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _add_resource_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -571,14 +521,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.AddToPersonalSpaceRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.AddToPersonalSpaceResponse`
         """
-        return self.add_to_personal_space_with_http_info(request)
+        return self._add_to_personal_space_with_http_info(request)
 
-    def add_to_personal_space_with_http_info(self, request):
-        all_params = ['info', 'x_request_id', 'accept_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _add_to_personal_space_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -636,14 +582,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.AddUserRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.AddUserResponse`
         """
-        return self.add_user_with_http_info(request)
+        return self._add_user_with_http_info(request)
 
-    def add_user_with_http_info(self, request):
-        all_params = ['user_dto', 'x_request_id', 'accept_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _add_user_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -700,14 +642,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.AllowClientRecordRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.AllowClientRecordResponse`
         """
-        return self.allow_client_record_with_http_info(request)
+        return self._allow_client_record_with_http_info(request)
 
-    def allow_client_record_with_http_info(self, request):
-        all_params = ['conference_id', 'x_conference_authorization', 'participant_id', 'rest_allow_client_record_req_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _allow_client_record_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -766,14 +704,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.AllowGuestUnmuteRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.AllowGuestUnmuteResponse`
         """
-        return self.allow_guest_unmute_with_http_info(request)
+        return self._allow_guest_unmute_with_http_info(request)
 
-    def allow_guest_unmute_with_http_info(self, request):
-        all_params = ['conference_id', 'x_conference_authorization', 'req_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _allow_guest_unmute_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -830,14 +764,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.AllowWaitingParticipantRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.AllowWaitingParticipantResponse`
         """
-        return self.allow_waiting_participant_with_http_info(request)
+        return self._allow_waiting_participant_with_http_info(request)
 
-    def allow_waiting_participant_with_http_info(self, request):
-        all_params = ['conference_id', 'x_conference_authorization', 'rest_allow_waiting_participant_req_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _allow_waiting_participant_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -894,14 +824,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.AssociateVmrRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.AssociateVmrResponse`
         """
-        return self.associate_vmr_with_http_info(request)
+        return self._associate_vmr_with_http_info(request)
 
-    def associate_vmr_with_http_info(self, request):
-        all_params = ['account', 'assign_list', 'x_request_id', 'accept_language', 'account_type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _associate_vmr_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -962,14 +888,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.BatchDeleteCorpAdminsRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.BatchDeleteCorpAdminsResponse`
         """
-        return self.batch_delete_corp_admins_with_http_info(request)
+        return self._batch_delete_corp_admins_with_http_info(request)
 
-    def batch_delete_corp_admins_with_http_info(self, request):
-        all_params = ['del_list', 'x_request_id', 'accept_language', 'account_type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_delete_corp_admins_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1029,14 +951,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.BatchDeleteDevicesRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.BatchDeleteDevicesResponse`
         """
-        return self.batch_delete_devices_with_http_info(request)
+        return self._batch_delete_devices_with_http_info(request)
 
-    def batch_delete_devices_with_http_info(self, request):
-        all_params = ['del_list', 'x_request_id', 'accept_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_delete_devices_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1093,14 +1011,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.BatchDeleteMaterialsRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.BatchDeleteMaterialsResponse`
         """
-        return self.batch_delete_materials_with_http_info(request)
+        return self._batch_delete_materials_with_http_info(request)
 
-    def batch_delete_materials_with_http_info(self, request):
-        all_params = ['ids_request_dto', 'x_request_id', 'accept_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_delete_materials_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1157,14 +1071,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.BatchDeleteProgramsRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.BatchDeleteProgramsResponse`
         """
-        return self.batch_delete_programs_with_http_info(request)
+        return self._batch_delete_programs_with_http_info(request)
 
-    def batch_delete_programs_with_http_info(self, request):
-        all_params = ['ids_request_dto', 'x_request_id', 'accept_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_delete_programs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1221,14 +1131,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.BatchDeletePublicationsRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.BatchDeletePublicationsResponse`
         """
-        return self.batch_delete_publications_with_http_info(request)
+        return self._batch_delete_publications_with_http_info(request)
 
-    def batch_delete_publications_with_http_info(self, request):
-        all_params = ['ids_request_dto', 'x_request_id', 'accept_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_delete_publications_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1285,14 +1191,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.BatchDeleteUsersRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.BatchDeleteUsersResponse`
         """
-        return self.batch_delete_users_with_http_info(request)
+        return self._batch_delete_users_with_http_info(request)
 
-    def batch_delete_users_with_http_info(self, request):
-        all_params = ['del_list', 'x_request_id', 'accept_language', 'account_type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_delete_users_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1351,14 +1253,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.BatchHandRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.BatchHandResponse`
         """
-        return self.batch_hand_with_http_info(request)
+        return self._batch_hand_with_http_info(request)
 
-    def batch_hand_with_http_info(self, request):
-        all_params = ['conference_id', 'x_conference_authorization', 'rest_batch_hands_up_req_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_hand_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1415,14 +1313,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.BatchShowUserDetailsRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.BatchShowUserDetailsResponse`
         """
-        return self.batch_show_user_details_with_http_info(request)
+        return self._batch_show_user_details_with_http_info(request)
 
-    def batch_show_user_details_with_http_info(self, request):
-        all_params = ['x_request_id', 'accept_language', 'id_type', 'get_user_dt_os']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_show_user_details_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1481,14 +1375,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.BatchUpdateDevicesStatusRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.BatchUpdateDevicesStatusResponse`
         """
-        return self.batch_update_devices_status_with_http_info(request)
+        return self._batch_update_devices_status_with_http_info(request)
 
-    def batch_update_devices_status_with_http_info(self, request):
-        all_params = ['value', 'sn_list', 'x_request_id', 'accept_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_update_devices_status_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1547,14 +1437,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.BatchUpdateUserStatusRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.BatchUpdateUserStatusResponse`
         """
-        return self.batch_update_user_status_with_http_info(request)
+        return self._batch_update_user_status_with_http_info(request)
 
-    def batch_update_user_status_with_http_info(self, request):
-        all_params = ['value', 'account_list', 'x_request_id', 'accept_language', 'account_type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_update_user_status_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1615,14 +1501,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.BroadcastParticipantRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.BroadcastParticipantResponse`
         """
-        return self.broadcast_participant_with_http_info(request)
+        return self._broadcast_participant_with_http_info(request)
 
-    def broadcast_participant_with_http_info(self, request):
-        all_params = ['conference_id', 'participant_id', 'x_conference_authorization']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _broadcast_participant_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1679,14 +1561,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.CancelBroadcastRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.CancelBroadcastResponse`
         """
-        return self.cancel_broadcast_with_http_info(request)
+        return self._cancel_broadcast_with_http_info(request)
 
-    def cancel_broadcast_with_http_info(self, request):
-        all_params = ['conference_id', 'x_conference_authorization']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _cancel_broadcast_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1741,14 +1619,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.CancelMeetingRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.CancelMeetingResponse`
         """
-        return self.cancel_meeting_with_http_info(request)
+        return self._cancel_meeting_with_http_info(request)
 
-    def cancel_meeting_with_http_info(self, request):
-        all_params = ['conference_id', 'user_uuid', 'type', 'x_authorization_type', 'x_site_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _cancel_meeting_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1809,14 +1683,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.CancelRecurringMeetingRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.CancelRecurringMeetingResponse`
         """
-        return self.cancel_recurring_meeting_with_http_info(request)
+        return self._cancel_recurring_meeting_with_http_info(request)
 
-    def cancel_recurring_meeting_with_http_info(self, request):
-        all_params = ['conference_id', 'x_authorization_type', 'user_uuid', 'x_site_id', 'type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _cancel_recurring_meeting_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1877,14 +1747,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.CancelRecurringSubMeetingRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.CancelRecurringSubMeetingResponse`
         """
-        return self.cancel_recurring_sub_meeting_with_http_info(request)
+        return self._cancel_recurring_sub_meeting_with_http_info(request)
 
-    def cancel_recurring_sub_meeting_with_http_info(self, request):
-        all_params = ['conference_id', 'req_body', 'x_authorization_type', 'user_uuid', 'x_site_id', 'type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _cancel_recurring_sub_meeting_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1947,14 +1813,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.CheckSlideVerifyCodeRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.CheckSlideVerifyCodeResponse`
         """
-        return self.check_slide_verify_code_with_http_info(request)
+        return self._check_slide_verify_code_with_http_info(request)
 
-    def check_slide_verify_code_with_http_info(self, request):
-        all_params = ['slide_verify_code_check_dto', 'x_request_id', 'accept_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _check_slide_verify_code_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2011,14 +1873,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.CheckTokenRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.CheckTokenResponse`
         """
-        return self.check_token_with_http_info(request)
+        return self._check_token_with_http_info(request)
 
-    def check_token_with_http_info(self, request):
-        all_params = ['validate_token_req_dto', 'x_request_id', 'accept_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _check_token_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2075,14 +1933,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.CheckVeriCodeForUpdateUserInfoRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.CheckVeriCodeForUpdateUserInfoResponse`
         """
-        return self.check_veri_code_for_update_user_info_with_http_info(request)
+        return self._check_veri_code_for_update_user_info_with_http_info(request)
 
-    def check_veri_code_for_update_user_info_with_http_info(self, request):
-        all_params = ['verification_code_dto', 'x_request_id', 'accept_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _check_veri_code_for_update_user_info_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2139,14 +1993,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.CheckVerifyCodeRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.CheckVerifyCodeResponse`
         """
-        return self.check_verify_code_with_http_info(request)
+        return self._check_verify_code_with_http_info(request)
 
-    def check_verify_code_with_http_info(self, request):
-        all_params = ['verify_code_check_dto', 'x_request_id', 'accept_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _check_verify_code_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2203,14 +2053,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.CreateAnonymousAuthRandomRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.CreateAnonymousAuthRandomResponse`
         """
-        return self.create_anonymous_auth_random_with_http_info(request)
+        return self._create_anonymous_auth_random_with_http_info(request)
 
-    def create_anonymous_auth_random_with_http_info(self, request):
-        all_params = ['conference_id', 'x_password']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_anonymous_auth_random_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2265,14 +2111,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.CreateConfTokenRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.CreateConfTokenResponse`
         """
-        return self.create_conf_token_with_http_info(request)
+        return self._create_conf_token_with_http_info(request)
 
-    def create_conf_token_with_http_info(self, request):
-        all_params = ['conference_id', 'x_password', 'x_login_type', 'x_conference_authorization', 'x_nonce']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_conf_token_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2333,14 +2175,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.CreateMeetingRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.CreateMeetingResponse`
         """
-        return self.create_meeting_with_http_info(request)
+        return self._create_meeting_with_http_info(request)
 
-    def create_meeting_with_http_info(self, request):
-        all_params = ['req_body', 'user_uuid', 'x_authorization_type', 'x_site_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_meeting_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2399,14 +2237,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.CreatePortalRefNonceRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.CreatePortalRefNonceResponse`
         """
-        return self.create_portal_ref_nonce_with_http_info(request)
+        return self._create_portal_ref_nonce_with_http_info(request)
 
-    def create_portal_ref_nonce_with_http_info(self, request):
-        all_params = ['x_request_id', 'accept_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_portal_ref_nonce_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2461,14 +2295,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.CreateRecurringMeetingRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.CreateRecurringMeetingResponse`
         """
-        return self.create_recurring_meeting_with_http_info(request)
+        return self._create_recurring_meeting_with_http_info(request)
 
-    def create_recurring_meeting_with_http_info(self, request):
-        all_params = ['req_body', 'x_authorization_type', 'user_uuid', 'x_site_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_recurring_meeting_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2527,14 +2357,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.CreateVisionActiveCodeRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.CreateVisionActiveCodeResponse`
         """
-        return self.create_vision_active_code_with_http_info(request)
+        return self._create_vision_active_code_with_http_info(request)
 
-    def create_vision_active_code_with_http_info(self, request):
-        all_params = ['vision_activecode_dto', 'x_request_id', 'accept_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_vision_active_code_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2591,14 +2417,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.CreateWebSocketTokenRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.CreateWebSocketTokenResponse`
         """
-        return self.create_web_socket_token_with_http_info(request)
+        return self._create_web_socket_token_with_http_info(request)
 
-    def create_web_socket_token_with_http_info(self, request):
-        all_params = ['conference_id', 'x_conference_authorization']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_web_socket_token_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2653,14 +2475,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.CreateWebinarRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.CreateWebinarResponse`
         """
-        return self.create_webinar_with_http_info(request)
+        return self._create_webinar_with_http_info(request)
 
-    def create_webinar_with_http_info(self, request):
-        all_params = ['create_webinar_request_body', 'x_request_id', 'accept_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_webinar_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2717,14 +2535,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.DeleteAttendeesRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.DeleteAttendeesResponse`
         """
-        return self.delete_attendees_with_http_info(request)
+        return self._delete_attendees_with_http_info(request)
 
-    def delete_attendees_with_http_info(self, request):
-        all_params = ['conference_id', 'x_conference_authorization', 'req_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_attendees_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2781,14 +2595,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.DeleteCorpRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.DeleteCorpResponse`
         """
-        return self.delete_corp_with_http_info(request)
+        return self._delete_corp_with_http_info(request)
 
-    def delete_corp_with_http_info(self, request):
-        all_params = ['id', 'x_request_id', 'accept_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_corp_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2845,14 +2655,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.DeleteCorpVmrRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.DeleteCorpVmrResponse`
         """
-        return self.delete_corp_vmr_with_http_info(request)
+        return self._delete_corp_vmr_with_http_info(request)
 
-    def delete_corp_vmr_with_http_info(self, request):
-        all_params = ['del_list', 'x_request_id', 'accept_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_corp_vmr_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2909,14 +2715,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.DeleteDepartmentRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.DeleteDepartmentResponse`
         """
-        return self.delete_department_with_http_info(request)
+        return self._delete_department_with_http_info(request)
 
-    def delete_department_with_http_info(self, request):
-        all_params = ['dept_code', 'x_request_id', 'accept_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_department_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2973,14 +2775,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.DeleteLayoutRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.DeleteLayoutResponse`
         """
-        return self.delete_layout_with_http_info(request)
+        return self._delete_layout_with_http_info(request)
 
-    def delete_layout_with_http_info(self, request):
-        all_params = ['conference_id', 'uu_id', 'x_conference_authorization']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_layout_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3037,14 +2835,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.DeleteRecordingsRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.DeleteRecordingsResponse`
         """
-        return self.delete_recordings_with_http_info(request)
+        return self._delete_recordings_with_http_info(request)
 
-    def delete_recordings_with_http_info(self, request):
-        all_params = ['conf_uui_ds', 'user_uuid', 'x_authorization_type', 'x_site_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_recordings_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3103,14 +2897,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.DeleteResourceRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.DeleteResourceResponse`
         """
-        return self.delete_resource_with_http_info(request)
+        return self._delete_resource_with_http_info(request)
 
-    def delete_resource_with_http_info(self, request):
-        all_params = ['corp_id', 'resource_id_list', 'x_request_id', 'accept_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_resource_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3169,14 +2959,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.DeleteVisionActiveCodeRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.DeleteVisionActiveCodeResponse`
         """
-        return self.delete_vision_active_code_with_http_info(request)
+        return self._delete_vision_active_code_with_http_info(request)
 
-    def delete_vision_active_code_with_http_info(self, request):
-        all_params = ['del_list', 'x_request_id', 'accept_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_vision_active_code_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3233,14 +3019,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.DeleteWebHookConfigRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.DeleteWebHookConfigResponse`
         """
-        return self.delete_web_hook_config_with_http_info(request)
+        return self._delete_web_hook_config_with_http_info(request)
 
-    def delete_web_hook_config_with_http_info(self, request):
-        all_params = ['id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_web_hook_config_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3293,14 +3075,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.DeleteWebinarRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.DeleteWebinarResponse`
         """
-        return self.delete_webinar_with_http_info(request)
+        return self._delete_webinar_with_http_info(request)
 
-    def delete_webinar_with_http_info(self, request):
-        all_params = ['conference_id', 'x_request_id', 'accept_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_webinar_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3357,14 +3135,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.DisassociateVmrRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.DisassociateVmrResponse`
         """
-        return self.disassociate_vmr_with_http_info(request)
+        return self._disassociate_vmr_with_http_info(request)
 
-    def disassociate_vmr_with_http_info(self, request):
-        all_params = ['account', 'recycle_list', 'x_request_id', 'accept_language', 'account_type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _disassociate_vmr_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3425,14 +3199,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.HandRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.HandResponse`
         """
-        return self.hand_with_http_info(request)
+        return self._hand_with_http_info(request)
 
-    def hand_with_http_info(self, request):
-        all_params = ['conference_id', 'participant_id', 'x_conference_authorization', 'rest_hands_up_req_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _hand_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3491,14 +3261,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.HangUpRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.HangUpResponse`
         """
-        return self.hang_up_with_http_info(request)
+        return self._hang_up_with_http_info(request)
 
-    def hang_up_with_http_info(self, request):
-        all_params = ['conference_id', 'x_conference_authorization', 'req_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _hang_up_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3555,14 +3321,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.InviteOperateVideoRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.InviteOperateVideoResponse`
         """
-        return self.invite_operate_video_with_http_info(request)
+        return self._invite_operate_video_with_http_info(request)
 
-    def invite_operate_video_with_http_info(self, request):
-        all_params = ['conference_id', 'participant_id', 'x_conference_authorization', 'req_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _invite_operate_video_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3621,14 +3383,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.InviteParticipantRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.InviteParticipantResponse`
         """
-        return self.invite_participant_with_http_info(request)
+        return self._invite_participant_with_http_info(request)
 
-    def invite_participant_with_http_info(self, request):
-        all_params = ['conference_id', 'x_conference_authorization', 'req_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _invite_participant_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3685,14 +3443,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.InviteShareRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.InviteShareResponse`
         """
-        return self.invite_share_with_http_info(request)
+        return self._invite_share_with_http_info(request)
 
-    def invite_share_with_http_info(self, request):
-        all_params = ['conference_id', 'participant_id', 'x_conference_authorization', 'req_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _invite_share_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3755,14 +3509,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.InviteUserRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.InviteUserResponse`
         """
-        return self.invite_user_with_http_info(request)
+        return self._invite_user_with_http_info(request)
 
-    def invite_user_with_http_info(self, request):
-        all_params = ['user_dto', 'x_request_id', 'accept_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _invite_user_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3820,14 +3570,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.InviteWithPwdRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.InviteWithPwdResponse`
         """
-        return self.invite_with_pwd_with_http_info(request)
+        return self._invite_with_pwd_with_http_info(request)
 
-    def invite_with_pwd_with_http_info(self, request):
-        all_params = ['conference_id', 'req_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _invite_with_pwd_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3882,14 +3628,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.ListHistoryWebinarsRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ListHistoryWebinarsResponse`
         """
-        return self.list_history_webinars_with_http_info(request)
+        return self._list_history_webinars_with_http_info(request)
 
-    def list_history_webinars_with_http_info(self, request):
-        all_params = ['x_request_id', 'accept_language', 'offset', 'limit', 'search_key', 'sort_type', 'start_time', 'end_time']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_history_webinars_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3956,14 +3698,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.ListOngoingWebinarsRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ListOngoingWebinarsResponse`
         """
-        return self.list_ongoing_webinars_with_http_info(request)
+        return self._list_ongoing_webinars_with_http_info(request)
 
-    def list_ongoing_webinars_with_http_info(self, request):
-        all_params = ['x_request_id', 'accept_language', 'offset', 'limit', 'search_key', 'sort_type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_ongoing_webinars_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4026,14 +3764,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.ListUpComingWebinarsRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ListUpComingWebinarsResponse`
         """
-        return self.list_up_coming_webinars_with_http_info(request)
+        return self._list_up_coming_webinars_with_http_info(request)
 
-    def list_up_coming_webinars_with_http_info(self, request):
-        all_params = ['x_request_id', 'accept_language', 'offset', 'limit', 'search_key', 'sort_type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_up_coming_webinars_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4096,14 +3830,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.LiveRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.LiveResponse`
         """
-        return self.live_with_http_info(request)
+        return self._live_with_http_info(request)
 
-    def live_with_http_info(self, request):
-        all_params = ['conference_id', 'x_conference_authorization', 'rest_set_live_req_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _live_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4160,14 +3890,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.LockMeetingRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.LockMeetingResponse`
         """
-        return self.lock_meeting_with_http_info(request)
+        return self._lock_meeting_with_http_info(request)
 
-    def lock_meeting_with_http_info(self, request):
-        all_params = ['conference_id', 'x_conference_authorization', 'rest_lock_req_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _lock_meeting_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4224,14 +3950,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.LockViewRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.LockViewResponse`
         """
-        return self.lock_view_with_http_info(request)
+        return self._lock_view_with_http_info(request)
 
-    def lock_view_with_http_info(self, request):
-        all_params = ['conference_id', 'participant_id', 'x_conference_authorization', 'req_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _lock_view_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4290,14 +4012,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.MoveToWaitingRoomRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.MoveToWaitingRoomResponse`
         """
-        return self.move_to_waiting_room_with_http_info(request)
+        return self._move_to_waiting_room_with_http_info(request)
 
-    def move_to_waiting_room_with_http_info(self, request):
-        all_params = ['conference_id', 'x_conference_authorization', 'rest_move_to_waiting_room_req_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _move_to_waiting_room_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4354,14 +4072,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.MuteMeetingRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.MuteMeetingResponse`
         """
-        return self.mute_meeting_with_http_info(request)
+        return self._mute_meeting_with_http_info(request)
 
-    def mute_meeting_with_http_info(self, request):
-        all_params = ['conference_id', 'x_conference_authorization', 'rest_mute_req_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _mute_meeting_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4418,14 +4132,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.MuteParticipantRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.MuteParticipantResponse`
         """
-        return self.mute_participant_with_http_info(request)
+        return self._mute_participant_with_http_info(request)
 
-    def mute_participant_with_http_info(self, request):
-        all_params = ['conference_id', 'participant_id', 'x_conference_authorization', 'rest_mute_participant_req_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _mute_participant_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4484,14 +4194,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.ProlongMeetingRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ProlongMeetingResponse`
         """
-        return self.prolong_meeting_with_http_info(request)
+        return self._prolong_meeting_with_http_info(request)
 
-    def prolong_meeting_with_http_info(self, request):
-        all_params = ['conference_id', 'x_conference_authorization', 'rest_prolong_dur_req_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _prolong_meeting_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4548,14 +4254,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.RecordRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.RecordResponse`
         """
-        return self.record_with_http_info(request)
+        return self._record_with_http_info(request)
 
-    def record_with_http_info(self, request):
-        all_params = ['conference_id', 'x_conference_authorization', 'rest_set_record_req_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _record_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4612,14 +4314,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.RenameParticipantRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.RenameParticipantResponse`
         """
-        return self.rename_participant_with_http_info(request)
+        return self._rename_participant_with_http_info(request)
 
-    def rename_participant_with_http_info(self, request):
-        all_params = ['conference_id', 'x_conference_authorization', 'rest_rename_part_req_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _rename_participant_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4676,14 +4374,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.ResetActivecodeRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ResetActivecodeResponse`
         """
-        return self.reset_activecode_with_http_info(request)
+        return self._reset_activecode_with_http_info(request)
 
-    def reset_activecode_with_http_info(self, request):
-        all_params = ['sn', 'active_dto', 'x_request_id', 'accept_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _reset_activecode_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4742,14 +4436,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.ResetPwdRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ResetPwdResponse`
         """
-        return self.reset_pwd_with_http_info(request)
+        return self._reset_pwd_with_http_info(request)
 
-    def reset_pwd_with_http_info(self, request):
-        all_params = ['reset_pwd_req_dtov1', 'x_request_id', 'accept_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _reset_pwd_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4806,14 +4496,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.ResetPwdByAdminRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ResetPwdByAdminResponse`
         """
-        return self.reset_pwd_by_admin_with_http_info(request)
+        return self._reset_pwd_by_admin_with_http_info(request)
 
-    def reset_pwd_by_admin_with_http_info(self, request):
-        all_params = ['admin_reset_pwd_req_dto', 'x_request_id', 'accept_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _reset_pwd_by_admin_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4870,14 +4556,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.ResetVisionActiveCodeRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ResetVisionActiveCodeResponse`
         """
-        return self.reset_vision_active_code_with_http_info(request)
+        return self._reset_vision_active_code_with_http_info(request)
 
-    def reset_vision_active_code_with_http_info(self, request):
-        all_params = ['account', 'active_dto', 'x_request_id', 'accept_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _reset_vision_active_code_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4936,14 +4618,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.RollcallParticipantRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.RollcallParticipantResponse`
         """
-        return self.rollcall_participant_with_http_info(request)
+        return self._rollcall_participant_with_http_info(request)
 
-    def rollcall_participant_with_http_info(self, request):
-        all_params = ['conference_id', 'participant_id', 'x_conference_authorization']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _rollcall_participant_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5000,14 +4678,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.SaveLayoutRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SaveLayoutResponse`
         """
-        return self.save_layout_with_http_info(request)
+        return self._save_layout_with_http_info(request)
 
-    def save_layout_with_http_info(self, request):
-        all_params = ['conference_id', 'x_conference_authorization', 'rest_pic_layout_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _save_layout_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5064,14 +4738,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.SearchAttendanceRecordsOfHisMeetingRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SearchAttendanceRecordsOfHisMeetingResponse`
         """
-        return self.search_attendance_records_of_his_meeting_with_http_info(request)
+        return self._search_attendance_records_of_his_meeting_with_http_info(request)
 
-    def search_attendance_records_of_his_meeting_with_http_info(self, request):
-        all_params = ['conf_uuid', 'offset', 'limit', 'search_key', 'user_uuid', 'x_authorization_type', 'x_site_id', 'accept_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _search_attendance_records_of_his_meeting_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5138,14 +4808,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.SearchCorpRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SearchCorpResponse`
         """
-        return self.search_corp_with_http_info(request)
+        return self._search_corp_with_http_info(request)
 
-    def search_corp_with_http_info(self, request):
-        all_params = ['x_request_id', 'accept_language', 'offset', 'limit', 'search_key']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _search_corp_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5206,14 +4872,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.SearchCorpAdminsRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SearchCorpAdminsResponse`
         """
-        return self.search_corp_admins_with_http_info(request)
+        return self._search_corp_admins_with_http_info(request)
 
-    def search_corp_admins_with_http_info(self, request):
-        all_params = ['x_request_id', 'accept_language', 'offset', 'limit', 'search_key']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _search_corp_admins_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5274,14 +4936,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.SearchCorpDirRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SearchCorpDirResponse`
         """
-        return self.search_corp_dir_with_http_info(request)
+        return self._search_corp_dir_with_http_info(request)
 
-    def search_corp_dir_with_http_info(self, request):
-        all_params = ['x_request_id', 'accept_language', 'offset', 'limit', 'search_key', 'dept_code', 'query_sub_dept', 'search_scope']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _search_corp_dir_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5348,14 +5006,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.SearchCorpExternalDirRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SearchCorpExternalDirResponse`
         """
-        return self.search_corp_external_dir_with_http_info(request)
+        return self._search_corp_external_dir_with_http_info(request)
 
-    def search_corp_external_dir_with_http_info(self, request):
-        all_params = ['x_request_id', 'accept_language', 'offset', 'limit', 'search_key', 'search_scope']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _search_corp_external_dir_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5418,14 +5072,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.SearchCorpResourcesRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SearchCorpResourcesResponse`
         """
-        return self.search_corp_resources_with_http_info(request)
+        return self._search_corp_resources_with_http_info(request)
 
-    def search_corp_resources_with_http_info(self, request):
-        all_params = ['x_request_id', 'accept_language', 'offset', 'limit', 'search_key', 'start_expire_date', 'end_expire_date', 'type', 'vmr_mode', 'type_id', 'order_id', 'status']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _search_corp_resources_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5500,14 +5150,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.SearchCorpVmrRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SearchCorpVmrResponse`
         """
-        return self.search_corp_vmr_with_http_info(request)
+        return self._search_corp_vmr_with_http_info(request)
 
-    def search_corp_vmr_with_http_info(self, request):
-        all_params = ['x_request_id', 'accept_language', 'offset', 'limit', 'search_key', 'vmr_mode', 'status']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _search_corp_vmr_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5572,14 +5218,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.SearchCtlRecordsOfHisMeetingRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SearchCtlRecordsOfHisMeetingResponse`
         """
-        return self.search_ctl_records_of_his_meeting_with_http_info(request)
+        return self._search_ctl_records_of_his_meeting_with_http_info(request)
 
-    def search_ctl_records_of_his_meeting_with_http_info(self, request):
-        all_params = ['conf_uuid', 'offset', 'limit', 'user_uuid', 'x_authorization_type', 'x_site_id', 'accept_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _search_ctl_records_of_his_meeting_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5644,14 +5286,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.SearchDepartmentByNameRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SearchDepartmentByNameResponse`
         """
-        return self.search_department_by_name_with_http_info(request)
+        return self._search_department_by_name_with_http_info(request)
 
-    def search_department_by_name_with_http_info(self, request):
-        all_params = ['dept_name', 'x_request_id', 'accept_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _search_department_by_name_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5709,14 +5347,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.SearchDevicesRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SearchDevicesResponse`
         """
-        return self.search_devices_with_http_info(request)
+        return self._search_devices_with_http_info(request)
 
-    def search_devices_with_http_info(self, request):
-        all_params = ['x_request_id', 'accept_language', 'offset', 'limit', 'search_key', 'model', 'dept_code', 'enable_sub_dept']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _search_devices_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5786,14 +5420,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.SearchHisMeetingsRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SearchHisMeetingsResponse`
         """
-        return self.search_his_meetings_with_http_info(request)
+        return self._search_his_meetings_with_http_info(request)
 
-    def search_his_meetings_with_http_info(self, request):
-        all_params = ['start_date', 'end_date', 'user_uuid', 'offset', 'limit', 'search_key', 'query_all', 'sort_type', 'x_authorization_type', 'x_site_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _search_his_meetings_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5864,14 +5494,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.SearchMaterialsRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SearchMaterialsResponse`
         """
-        return self.search_materials_with_http_info(request)
+        return self._search_materials_with_http_info(request)
 
-    def search_materials_with_http_info(self, request):
-        all_params = ['x_request_id', 'accept_language', 'offset', 'limit', 'search_key']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _search_materials_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5932,14 +5558,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.SearchMeetingFileListRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SearchMeetingFileListResponse`
         """
-        return self.search_meeting_file_list_with_http_info(request)
+        return self._search_meeting_file_list_with_http_info(request)
 
-    def search_meeting_file_list_with_http_info(self, request):
-        all_params = ['x_request_id', 'accept_language', 'offset', 'limit', 'search_key']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _search_meeting_file_list_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6002,14 +5624,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.SearchMeetingsRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SearchMeetingsResponse`
         """
-        return self.search_meetings_with_http_info(request)
+        return self._search_meetings_with_http_info(request)
 
-    def search_meetings_with_http_info(self, request):
-        all_params = ['user_uuid', 'offset', 'limit', 'query_all', 'search_key', 'query_conf_mode', 'sort_type', 'x_authorization_type', 'x_site_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _search_meetings_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6078,14 +5696,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.SearchMemberVmrRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SearchMemberVmrResponse`
         """
-        return self.search_member_vmr_with_http_info(request)
+        return self._search_member_vmr_with_http_info(request)
 
-    def search_member_vmr_with_http_info(self, request):
-        all_params = ['x_request_id', 'accept_language', 'offset', 'limit', 'search_key', 'special_vmr']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _search_member_vmr_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6148,14 +5762,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.SearchOnlineMeetingsRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SearchOnlineMeetingsResponse`
         """
-        return self.search_online_meetings_with_http_info(request)
+        return self._search_online_meetings_with_http_info(request)
 
-    def search_online_meetings_with_http_info(self, request):
-        all_params = ['user_uuid', 'offset', 'limit', 'query_all', 'search_key', 'x_authorization_type', 'x_site_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _search_online_meetings_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6220,14 +5830,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.SearchProgramsRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SearchProgramsResponse`
         """
-        return self.search_programs_with_http_info(request)
+        return self._search_programs_with_http_info(request)
 
-    def search_programs_with_http_info(self, request):
-        all_params = ['x_request_id', 'accept_language', 'offset', 'limit', 'search_key']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _search_programs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6288,14 +5894,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.SearchPublicationsRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SearchPublicationsResponse`
         """
-        return self.search_publications_with_http_info(request)
+        return self._search_publications_with_http_info(request)
 
-    def search_publications_with_http_info(self, request):
-        all_params = ['x_request_id', 'accept_language', 'offset', 'limit', 'search_key']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _search_publications_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6356,14 +5958,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.SearchRecordingsRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SearchRecordingsResponse`
         """
-        return self.search_recordings_with_http_info(request)
+        return self._search_recordings_with_http_info(request)
 
-    def search_recordings_with_http_info(self, request):
-        all_params = ['start_date', 'end_date', 'user_uuid', 'offset', 'limit', 'query_all', 'search_key', 'sort_type', 'x_authorization_type', 'x_site_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _search_recordings_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6434,14 +6032,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.SearchResourceRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SearchResourceResponse`
         """
-        return self.search_resource_with_http_info(request)
+        return self._search_resource_with_http_info(request)
 
-    def search_resource_with_http_info(self, request):
-        all_params = ['corp_id', 'x_request_id', 'accept_language', 'offset', 'limit', 'search_key', 'start_expire_date', 'end_expire_date', 'type', 'type_id', 'status']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _search_resource_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6514,14 +6108,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.SearchResourceOpRecordRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SearchResourceOpRecordResponse`
         """
-        return self.search_resource_op_record_with_http_info(request)
+        return self._search_resource_op_record_with_http_info(request)
 
-    def search_resource_op_record_with_http_info(self, request):
-        all_params = ['corp_id', 'x_request_id', 'accept_language', 'offset', 'limit', 'search_key', 'start_expire_date', 'end_expire_date', 'start_operate_date', 'end_operate_date', 'type', 'type_id', 'operate_type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _search_resource_op_record_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6598,14 +6188,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.SearchUsersRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SearchUsersResponse`
         """
-        return self.search_users_with_http_info(request)
+        return self._search_users_with_http_info(request)
 
-    def search_users_with_http_info(self, request):
-        all_params = ['x_request_id', 'accept_language', 'offset', 'limit', 'search_key', 'sort_field', 'is_asc', 'dept_code', 'enable_sub_dept', 'admin_type', 'enable_room', 'user_type', 'status', 'contains_un_active']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _search_users_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6685,14 +6271,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.SearchVisionActiveCodeRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SearchVisionActiveCodeResponse`
         """
-        return self.search_vision_active_code_with_http_info(request)
+        return self._search_vision_active_code_with_http_info(request)
 
-    def search_vision_active_code_with_http_info(self, request):
-        all_params = ['x_request_id', 'accept_language', 'offset', 'limit', 'search_key', 'dev_type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _search_vision_active_code_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6755,14 +6337,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.SendSlideVerifyCodeRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SendSlideVerifyCodeResponse`
         """
-        return self.send_slide_verify_code_with_http_info(request)
+        return self._send_slide_verify_code_with_http_info(request)
 
-    def send_slide_verify_code_with_http_info(self, request):
-        all_params = ['slide_verify_code_send_dto', 'x_request_id', 'accept_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _send_slide_verify_code_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6819,14 +6397,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.SendVeriCodeForChangePwdRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SendVeriCodeForChangePwdResponse`
         """
-        return self.send_veri_code_for_change_pwd_with_http_info(request)
+        return self._send_veri_code_for_change_pwd_with_http_info(request)
 
-    def send_veri_code_for_change_pwd_with_http_info(self, request):
-        all_params = ['verify_code_send_dtov1', 'x_request_id', 'accept_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _send_veri_code_for_change_pwd_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6883,14 +6457,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.SendVeriCodeForUpdateUserInfoRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SendVeriCodeForUpdateUserInfoResponse`
         """
-        return self.send_veri_code_for_update_user_info_with_http_info(request)
+        return self._send_veri_code_for_update_user_info_with_http_info(request)
 
-    def send_veri_code_for_update_user_info_with_http_info(self, request):
-        all_params = ['verification_code_dto', 'x_request_id', 'accept_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _send_veri_code_for_update_user_info_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6947,14 +6517,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.SetCohostRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SetCohostResponse`
         """
-        return self.set_cohost_with_http_info(request)
+        return self._set_cohost_with_http_info(request)
 
-    def set_cohost_with_http_info(self, request):
-        all_params = ['conference_id', 'participant_id', 'x_conference_authorization', 'rest_set_cohost_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _set_cohost_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7013,14 +6579,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.SetCustomMultiPictureRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SetCustomMultiPictureResponse`
         """
-        return self.set_custom_multi_picture_with_http_info(request)
+        return self._set_custom_multi_picture_with_http_info(request)
 
-    def set_custom_multi_picture_with_http_info(self, request):
-        all_params = ['conference_id', 'x_conference_authorization', 'req_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _set_custom_multi_picture_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7077,14 +6639,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.SetHostViewRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SetHostViewResponse`
         """
-        return self.set_host_view_with_http_info(request)
+        return self._set_host_view_with_http_info(request)
 
-    def set_host_view_with_http_info(self, request):
-        all_params = ['conference_id', 'x_conference_authorization', 'req_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _set_host_view_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7141,14 +6699,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.SetMultiPictureRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SetMultiPictureResponse`
         """
-        return self.set_multi_picture_with_http_info(request)
+        return self._set_multi_picture_with_http_info(request)
 
-    def set_multi_picture_with_http_info(self, request):
-        all_params = ['conference_id', 'x_conference_authorization', 'req_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _set_multi_picture_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7205,14 +6759,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.SetParticipantViewRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SetParticipantViewResponse`
         """
-        return self.set_participant_view_with_http_info(request)
+        return self._set_participant_view_with_http_info(request)
 
-    def set_participant_view_with_http_info(self, request):
-        all_params = ['conference_id', 'participant_id', 'x_conference_authorization', 'req_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _set_participant_view_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7271,14 +6821,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.SetRoleRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SetRoleResponse`
         """
-        return self.set_role_with_http_info(request)
+        return self._set_role_with_http_info(request)
 
-    def set_role_with_http_info(self, request):
-        all_params = ['conference_id', 'participant_id', 'x_conference_authorization', 'rest_chair_token_req_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _set_role_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7337,14 +6883,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.SetSsoConfigRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SetSsoConfigResponse`
         """
-        return self.set_sso_config_with_http_info(request)
+        return self._set_sso_config_with_http_info(request)
 
-    def set_sso_config_with_http_info(self, request):
-        all_params = ['authorize_config_info', 'x_request_id', 'accept_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _set_sso_config_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7401,14 +6943,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.SetWebHookConfigRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SetWebHookConfigResponse`
         """
-        return self.set_web_hook_config_with_http_info(request)
+        return self._set_web_hook_config_with_http_info(request)
 
-    def set_web_hook_config_with_http_info(self, request):
-        all_params = ['request']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _set_web_hook_config_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7461,14 +6999,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowConfOrgRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowConfOrgResponse`
         """
-        return self.show_conf_org_with_http_info(request)
+        return self._show_conf_org_with_http_info(request)
 
-    def show_conf_org_with_http_info(self, request):
-        all_params = ['conference_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_conf_org_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7521,14 +7055,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowCorpRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowCorpResponse`
         """
-        return self.show_corp_with_http_info(request)
+        return self._show_corp_with_http_info(request)
 
-    def show_corp_with_http_info(self, request):
-        all_params = ['id', 'x_request_id', 'accept_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_corp_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7585,14 +7115,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowCorpAdminRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowCorpAdminResponse`
         """
-        return self.show_corp_admin_with_http_info(request)
+        return self._show_corp_admin_with_http_info(request)
 
-    def show_corp_admin_with_http_info(self, request):
-        all_params = ['account', 'x_request_id', 'accept_language', 'account_type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_corp_admin_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7651,14 +7177,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowCorpBasicInfoRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowCorpBasicInfoResponse`
         """
-        return self.show_corp_basic_info_with_http_info(request)
+        return self._show_corp_basic_info_with_http_info(request)
 
-    def show_corp_basic_info_with_http_info(self, request):
-        all_params = ['x_request_id', 'accept_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_corp_basic_info_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7713,14 +7235,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowCorpResourceRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowCorpResourceResponse`
         """
-        return self.show_corp_resource_with_http_info(request)
+        return self._show_corp_resource_with_http_info(request)
 
-    def show_corp_resource_with_http_info(self, request):
-        all_params = ['x_request_id', 'accept_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_corp_resource_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7775,14 +7293,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowDepartmentRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowDepartmentResponse`
         """
-        return self.show_department_with_http_info(request)
+        return self._show_department_with_http_info(request)
 
-    def show_department_with_http_info(self, request):
-        all_params = ['dept_code', 'x_request_id', 'accept_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_department_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7839,14 +7353,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowDeptAndChildDeptRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowDeptAndChildDeptResponse`
         """
-        return self.show_dept_and_child_dept_with_http_info(request)
+        return self._show_dept_and_child_dept_with_http_info(request)
 
-    def show_dept_and_child_dept_with_http_info(self, request):
-        all_params = ['dept_code', 'x_request_id', 'accept_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_dept_and_child_dept_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7904,14 +7414,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowDeviceDetailRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowDeviceDetailResponse`
         """
-        return self.show_device_detail_with_http_info(request)
+        return self._show_device_detail_with_http_info(request)
 
-    def show_device_detail_with_http_info(self, request):
-        all_params = ['sn', 'x_request_id', 'accept_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_device_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7969,14 +7475,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowDeviceStatusRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowDeviceStatusResponse`
         """
-        return self.show_device_status_with_http_info(request)
+        return self._show_device_status_with_http_info(request)
 
-    def show_device_status_with_http_info(self, request):
-        all_params = ['number', 'x_request_id', 'accept_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_device_status_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -8033,14 +7535,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowDeviceTypesRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowDeviceTypesResponse`
         """
-        return self.show_device_types_with_http_info(request)
+        return self._show_device_types_with_http_info(request)
 
-    def show_device_types_with_http_info(self, request):
-        all_params = ['x_request_id', 'accept_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_device_types_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -8095,14 +7593,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowHisMeetingDetailRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowHisMeetingDetailResponse`
         """
-        return self.show_his_meeting_detail_with_http_info(request)
+        return self._show_his_meeting_detail_with_http_info(request)
 
-    def show_his_meeting_detail_with_http_info(self, request):
-        all_params = ['conf_uuid', 'offset', 'limit', 'search_key', 'user_uuid', 'x_type', 'x_query_type', 'x_authorization_type', 'x_site_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_his_meeting_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -8171,14 +7665,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowLayoutRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowLayoutResponse`
         """
-        return self.show_layout_with_http_info(request)
+        return self._show_layout_with_http_info(request)
 
-    def show_layout_with_http_info(self, request):
-        all_params = ['conference_id', 'x_conference_authorization']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_layout_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -8235,14 +7725,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowMeetingDetailRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowMeetingDetailResponse`
         """
-        return self.show_meeting_detail_with_http_info(request)
+        return self._show_meeting_detail_with_http_info(request)
 
-    def show_meeting_detail_with_http_info(self, request):
-        all_params = ['conference_id', 'offset', 'limit', 'search_key', 'user_uuid', 'x_type', 'x_query_type', 'x_authorization_type', 'x_site_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_meeting_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -8311,14 +7797,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowMeetingFileRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowMeetingFileResponse`
         """
-        return self.show_meeting_file_with_http_info(request)
+        return self._show_meeting_file_with_http_info(request)
 
-    def show_meeting_file_with_http_info(self, request):
-        all_params = ['file_code', 'x_request_id', 'accept_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_meeting_file_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -8375,14 +7857,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowMeetingFileListRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowMeetingFileListResponse`
         """
-        return self.show_meeting_file_list_with_http_info(request)
+        return self._show_meeting_file_list_with_http_info(request)
 
-    def show_meeting_file_list_with_http_info(self, request):
-        all_params = ['info', 'x_request_id', 'accept_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_meeting_file_list_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -8439,14 +7917,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowMyInfoRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowMyInfoResponse`
         """
-        return self.show_my_info_with_http_info(request)
+        return self._show_my_info_with_http_info(request)
 
-    def show_my_info_with_http_info(self, request):
-        all_params = ['x_request_id', 'accept_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_my_info_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -8501,14 +7975,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowOnlineMeetingDetailRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowOnlineMeetingDetailResponse`
         """
-        return self.show_online_meeting_detail_with_http_info(request)
+        return self._show_online_meeting_detail_with_http_info(request)
 
-    def show_online_meeting_detail_with_http_info(self, request):
-        all_params = ['conference_id', 'offset', 'limit', 'search_key', 'user_uuid', 'x_type', 'x_query_type', 'x_authorization_type', 'x_site_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_online_meeting_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -8577,14 +8047,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowOrgResRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowOrgResResponse`
         """
-        return self.show_org_res_with_http_info(request)
+        return self._show_org_res_with_http_info(request)
 
-    def show_org_res_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_org_res_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -8635,14 +8101,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowProgramRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowProgramResponse`
         """
-        return self.show_program_with_http_info(request)
+        return self._show_program_with_http_info(request)
 
-    def show_program_with_http_info(self, request):
-        all_params = ['id', 'x_request_id', 'accept_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_program_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -8699,14 +8161,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowPublicationRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowPublicationResponse`
         """
-        return self.show_publication_with_http_info(request)
+        return self._show_publication_with_http_info(request)
 
-    def show_publication_with_http_info(self, request):
-        all_params = ['id', 'x_request_id', 'accept_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_publication_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -8763,14 +8221,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowRealTimeInfoOfMeetingRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowRealTimeInfoOfMeetingResponse`
         """
-        return self.show_real_time_info_of_meeting_with_http_info(request)
+        return self._show_real_time_info_of_meeting_with_http_info(request)
 
-    def show_real_time_info_of_meeting_with_http_info(self, request):
-        all_params = ['conference_id', 'x_conference_authorization']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_real_time_info_of_meeting_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -8825,14 +8279,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowRecordingDetailRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowRecordingDetailResponse`
         """
-        return self.show_recording_detail_with_http_info(request)
+        return self._show_recording_detail_with_http_info(request)
 
-    def show_recording_detail_with_http_info(self, request):
-        all_params = ['conf_uuid', 'user_uuid', 'x_authorization_type', 'x_site_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_recording_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -8893,14 +8343,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowRecordingFileDownloadUrlsRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowRecordingFileDownloadUrlsResponse`
         """
-        return self.show_recording_file_download_urls_with_http_info(request)
+        return self._show_recording_file_download_urls_with_http_info(request)
 
-    def show_recording_file_download_urls_with_http_info(self, request):
-        all_params = ['conf_uuid', 'offset', 'limit', 'x_authorization_type', 'x_site_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_recording_file_download_urls_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -8961,14 +8407,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowRegionInfoOfMeetingRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowRegionInfoOfMeetingResponse`
         """
-        return self.show_region_info_of_meeting_with_http_info(request)
+        return self._show_region_info_of_meeting_with_http_info(request)
 
-    def show_region_info_of_meeting_with_http_info(self, request):
-        all_params = ['conference_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_region_info_of_meeting_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -9021,14 +8463,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowRoomSettingRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowRoomSettingResponse`
         """
-        return self.show_room_setting_with_http_info(request)
+        return self._show_room_setting_with_http_info(request)
 
-    def show_room_setting_with_http_info(self, request):
-        all_params = ['conference_id', 'x_request_id', 'accept_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_room_setting_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -9085,14 +8523,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowSpResRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowSpResResponse`
         """
-        return self.show_sp_res_with_http_info(request)
+        return self._show_sp_res_with_http_info(request)
 
-    def show_sp_res_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_sp_res_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -9143,14 +8577,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowSpResourceRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowSpResourceResponse`
         """
-        return self.show_sp_resource_with_http_info(request)
+        return self._show_sp_resource_with_http_info(request)
 
-    def show_sp_resource_with_http_info(self, request):
-        all_params = ['x_request_id', 'accept_language', 'query_group']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_sp_resource_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -9207,14 +8637,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowSsoConfigRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowSsoConfigResponse`
         """
-        return self.show_sso_config_with_http_info(request)
+        return self._show_sso_config_with_http_info(request)
 
-    def show_sso_config_with_http_info(self, request):
-        all_params = ['x_request_id', 'accept_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_sso_config_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -9269,14 +8695,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowUserDetailRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowUserDetailResponse`
         """
-        return self.show_user_detail_with_http_info(request)
+        return self._show_user_detail_with_http_info(request)
 
-    def show_user_detail_with_http_info(self, request):
-        all_params = ['account', 'x_request_id', 'accept_language', 'account_type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_user_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -9335,14 +8757,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowWebHookConfigRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowWebHookConfigResponse`
         """
-        return self.show_web_hook_config_with_http_info(request)
+        return self._show_web_hook_config_with_http_info(request)
 
-    def show_web_hook_config_with_http_info(self, request):
-        all_params = ['corp_id', 'sp_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_web_hook_config_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -9397,14 +8815,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowWebinarRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowWebinarResponse`
         """
-        return self.show_webinar_with_http_info(request)
+        return self._show_webinar_with_http_info(request)
 
-    def show_webinar_with_http_info(self, request):
-        all_params = ['conference_id', 'x_request_id', 'accept_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_webinar_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -9462,14 +8876,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.StartMeetingRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.StartMeetingResponse`
         """
-        return self.start_meeting_with_http_info(request)
+        return self._start_meeting_with_http_info(request)
 
-    def start_meeting_with_http_info(self, request):
-        all_params = ['start_request']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _start_meeting_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -9524,14 +8934,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.StopMeetingRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.StopMeetingResponse`
         """
-        return self.stop_meeting_with_http_info(request)
+        return self._stop_meeting_with_http_info(request)
 
-    def stop_meeting_with_http_info(self, request):
-        all_params = ['conference_id', 'x_conference_authorization']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _stop_meeting_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -9586,14 +8992,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.SwitchModeRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SwitchModeResponse`
         """
-        return self.switch_mode_with_http_info(request)
+        return self._switch_mode_with_http_info(request)
 
-    def switch_mode_with_http_info(self, request):
-        all_params = ['conference_id', 'x_conference_authorization', 'req_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _switch_mode_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -9650,14 +9052,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.UpdateContactRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.UpdateContactResponse`
         """
-        return self.update_contact_with_http_info(request)
+        return self._update_contact_with_http_info(request)
 
-    def update_contact_with_http_info(self, request):
-        all_params = ['verification_code_dto', 'x_request_id', 'accept_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_contact_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -9714,14 +9112,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.UpdateCorpRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.UpdateCorpResponse`
         """
-        return self.update_corp_with_http_info(request)
+        return self._update_corp_with_http_info(request)
 
-    def update_corp_with_http_info(self, request):
-        all_params = ['id', 'corp_dto', 'x_request_id', 'accept_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_corp_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -9780,14 +9174,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.UpdateCorpBasicInfoRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.UpdateCorpBasicInfoResponse`
         """
-        return self.update_corp_basic_info_with_http_info(request)
+        return self._update_corp_basic_info_with_http_info(request)
 
-    def update_corp_basic_info_with_http_info(self, request):
-        all_params = ['mod_dto', 'x_request_id', 'accept_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_corp_basic_info_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -9844,14 +9234,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.UpdateDepartmentRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.UpdateDepartmentResponse`
         """
-        return self.update_department_with_http_info(request)
+        return self._update_department_with_http_info(request)
 
-    def update_department_with_http_info(self, request):
-        all_params = ['dept_code', 'dept_dto', 'x_request_id', 'accept_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_department_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -9911,14 +9297,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.UpdateDeviceRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.UpdateDeviceResponse`
         """
-        return self.update_device_with_http_info(request)
+        return self._update_device_with_http_info(request)
 
-    def update_device_with_http_info(self, request):
-        all_params = ['sn', 'device_dto', 'x_request_id', 'accept_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_device_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -9977,14 +9359,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.UpdateMaterialRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.UpdateMaterialResponse`
         """
-        return self.update_material_with_http_info(request)
+        return self._update_material_with_http_info(request)
 
-    def update_material_with_http_info(self, request):
-        all_params = ['id', 'update_material_request_dto', 'x_request_id', 'accept_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_material_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -10043,14 +9421,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.UpdateMeetingRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.UpdateMeetingResponse`
         """
-        return self.update_meeting_with_http_info(request)
+        return self._update_meeting_with_http_info(request)
 
-    def update_meeting_with_http_info(self, request):
-        all_params = ['conference_id', 'req_body', 'user_uuid', 'x_authorization_type', 'x_site_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_meeting_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -10111,14 +9485,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.UpdateMemberVmrRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.UpdateMemberVmrResponse`
         """
-        return self.update_member_vmr_with_http_info(request)
+        return self._update_member_vmr_with_http_info(request)
 
-    def update_member_vmr_with_http_info(self, request):
-        all_params = ['id', 'mod_dto', 'x_request_id', 'accept_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_member_vmr_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -10177,14 +9547,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.UpdateMyInfoRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.UpdateMyInfoResponse`
         """
-        return self.update_my_info_with_http_info(request)
+        return self._update_my_info_with_http_info(request)
 
-    def update_my_info_with_http_info(self, request):
-        all_params = ['member_dto', 'x_request_id', 'accept_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_my_info_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -10241,14 +9607,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.UpdateProgramRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.UpdateProgramResponse`
         """
-        return self.update_program_with_http_info(request)
+        return self._update_program_with_http_info(request)
 
-    def update_program_with_http_info(self, request):
-        all_params = ['id', 'program_dto', 'x_request_id', 'accept_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_program_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -10307,14 +9669,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.UpdatePublicationRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.UpdatePublicationResponse`
         """
-        return self.update_publication_with_http_info(request)
+        return self._update_publication_with_http_info(request)
 
-    def update_publication_with_http_info(self, request):
-        all_params = ['id', 'publication_dto', 'x_request_id', 'accept_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_publication_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -10373,14 +9731,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.UpdatePwdRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.UpdatePwdResponse`
         """
-        return self.update_pwd_with_http_info(request)
+        return self._update_pwd_with_http_info(request)
 
-    def update_pwd_with_http_info(self, request):
-        all_params = ['mod_pwd_req_dto', 'x_request_id', 'accept_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_pwd_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -10437,14 +9791,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.UpdateRecurringMeetingRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.UpdateRecurringMeetingResponse`
         """
-        return self.update_recurring_meeting_with_http_info(request)
+        return self._update_recurring_meeting_with_http_info(request)
 
-    def update_recurring_meeting_with_http_info(self, request):
-        all_params = ['conference_id', 'req_body', 'x_authorization_type', 'user_uuid', 'x_site_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_recurring_meeting_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -10505,14 +9855,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.UpdateRecurringSubMeetingRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.UpdateRecurringSubMeetingResponse`
         """
-        return self.update_recurring_sub_meeting_with_http_info(request)
+        return self._update_recurring_sub_meeting_with_http_info(request)
 
-    def update_recurring_sub_meeting_with_http_info(self, request):
-        all_params = ['conference_id', 'req_body', 'x_authorization_type', 'user_uuid', 'x_site_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_recurring_sub_meeting_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -10573,14 +9919,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.UpdateResourceRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.UpdateResourceResponse`
         """
-        return self.update_resource_with_http_info(request)
+        return self._update_resource_with_http_info(request)
 
-    def update_resource_with_http_info(self, request):
-        all_params = ['corp_id', 'resource_list', 'x_request_id', 'accept_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_resource_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -10639,14 +9981,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.UpdateRoomSettingRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.UpdateRoomSettingResponse`
         """
-        return self.update_room_setting_with_http_info(request)
+        return self._update_room_setting_with_http_info(request)
 
-    def update_room_setting_with_http_info(self, request):
-        all_params = ['conference_id', 'x_request_id', 'accept_language', 'open_room_setting_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_room_setting_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -10705,14 +10043,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.UpdateStartedConfConfigRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.UpdateStartedConfConfigResponse`
         """
-        return self.update_started_conf_config_with_http_info(request)
+        return self._update_started_conf_config_with_http_info(request)
 
-    def update_started_conf_config_with_http_info(self, request):
-        all_params = ['conference_id', 'x_conference_authorization', 'update_started_config_req_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_started_conf_config_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -10769,14 +10103,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.UpdateTokenRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.UpdateTokenResponse`
         """
-        return self.update_token_with_http_info(request)
+        return self._update_token_with_http_info(request)
 
-    def update_token_with_http_info(self, request):
-        all_params = ['x_request_id', 'accept_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_token_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -10831,14 +10161,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.UpdateUserRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.UpdateUserResponse`
         """
-        return self.update_user_with_http_info(request)
+        return self._update_user_with_http_info(request)
 
-    def update_user_with_http_info(self, request):
-        all_params = ['account', 'user_dto', 'x_request_id', 'accept_language', 'account_type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_user_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -10899,14 +10225,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.UpdateWebHookConfigStatusRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.UpdateWebHookConfigStatusResponse`
         """
-        return self.update_web_hook_config_status_with_http_info(request)
+        return self._update_web_hook_config_status_with_http_info(request)
 
-    def update_web_hook_config_status_with_http_info(self, request):
-        all_params = ['id', 'status']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_web_hook_config_status_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -10961,14 +10283,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.UpdateWebinarRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.UpdateWebinarResponse`
         """
-        return self.update_webinar_with_http_info(request)
+        return self._update_webinar_with_http_info(request)
 
-    def update_webinar_with_http_info(self, request):
-        all_params = ['edit_webinar_request_body', 'x_request_id', 'accept_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_webinar_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -11025,14 +10343,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.UploadFileRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.UploadFileResponse`
         """
-        return self.upload_file_with_http_info(request)
+        return self._upload_file_with_http_info(request)
 
-    def upload_file_with_http_info(self, request):
-        all_params = ['file', 'x_request_id', 'accept_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _upload_file_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -11092,14 +10406,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.SearchQosHistoryMeetingsRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SearchQosHistoryMeetingsResponse`
         """
-        return self.search_qos_history_meetings_with_http_info(request)
+        return self._search_qos_history_meetings_with_http_info(request)
 
-    def search_qos_history_meetings_with_http_info(self, request):
-        all_params = ['start_date', 'end_date', 'offset', 'limit', 'search_key']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _search_qos_history_meetings_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -11161,14 +10471,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.SearchQosOnlineMeetingsRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SearchQosOnlineMeetingsResponse`
         """
-        return self.search_qos_online_meetings_with_http_info(request)
+        return self._search_qos_online_meetings_with_http_info(request)
 
-    def search_qos_online_meetings_with_http_info(self, request):
-        all_params = ['offset', 'limit', 'search_key']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _search_qos_online_meetings_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -11226,14 +10532,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.SearchQosParticipantDetailRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SearchQosParticipantDetailResponse`
         """
-        return self.search_qos_participant_detail_with_http_info(request)
+        return self._search_qos_participant_detail_with_http_info(request)
 
-    def search_qos_participant_detail_with_http_info(self, request):
-        all_params = ['conf_uuid', 'conf_type', 'participant_id', 'qos_type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _search_qos_participant_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -11293,14 +10595,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.SearchQosParticipantsRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SearchQosParticipantsResponse`
         """
-        return self.search_qos_participants_with_http_info(request)
+        return self._search_qos_participants_with_http_info(request)
 
-    def search_qos_participants_with_http_info(self, request):
-        all_params = ['conf_uuid', 'conf_type', 'offset', 'limit', 'search_key']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _search_qos_participants_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -11362,14 +10660,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.SetQosThresholdRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SetQosThresholdResponse`
         """
-        return self.set_qos_threshold_with_http_info(request)
+        return self._set_qos_threshold_with_http_info(request)
 
-    def set_qos_threshold_with_http_info(self, request):
-        all_params = ['threshold_type', 'set_qos_threshold_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _set_qos_threshold_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -11425,14 +10719,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowQosThresholdRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowQosThresholdResponse`
         """
-        return self.show_qos_threshold_with_http_info(request)
+        return self._show_qos_threshold_with_http_info(request)
 
-    def show_qos_threshold_with_http_info(self, request):
-        all_params = ['threshold_type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_qos_threshold_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -11488,14 +10778,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.SearchStatisticConferenceInfoRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SearchStatisticConferenceInfoResponse`
         """
-        return self.search_statistic_conference_info_with_http_info(request)
+        return self._search_statistic_conference_info_with_http_info(request)
 
-    def search_statistic_conference_info_with_http_info(self, request):
-        all_params = ['time_unit', 'start_time', 'end_time', 'category', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _search_statistic_conference_info_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -11562,14 +10848,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.SearchStatisticConferenceParticipantRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SearchStatisticConferenceParticipantResponse`
         """
-        return self.search_statistic_conference_participant_with_http_info(request)
+        return self._search_statistic_conference_participant_with_http_info(request)
 
-    def search_statistic_conference_participant_with_http_info(self, request):
-        all_params = ['time_unit', 'start_time', 'end_time', 'category', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _search_statistic_conference_participant_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -11634,14 +10916,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.SearchStatisticResourceInfoRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SearchStatisticResourceInfoResponse`
         """
-        return self.search_statistic_resource_info_with_http_info(request)
+        return self._search_statistic_resource_info_with_http_info(request)
 
-    def search_statistic_resource_info_with_http_info(self, request):
-        all_params = ['time_unit', 'start_time', 'end_time', 'category', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _search_statistic_resource_info_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -11708,14 +10986,10 @@ class MeetingClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.SearchStatisticUserInfoRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SearchStatisticUserInfoResponse`
         """
-        return self.search_statistic_user_info_with_http_info(request)
+        return self._search_statistic_user_info_with_http_info(request)
 
-    def search_statistic_user_info_with_http_info(self, request):
-        all_params = ['time_unit', 'start_time', 'end_time', 'category', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _search_statistic_user_info_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

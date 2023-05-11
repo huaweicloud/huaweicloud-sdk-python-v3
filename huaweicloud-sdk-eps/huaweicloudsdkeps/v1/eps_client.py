@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class EpsClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(EpsClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkeps.v1.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -53,14 +35,10 @@ class EpsClient(Client):
         :type request: :class:`huaweicloudsdkeps.v1.CreateEnterpriseProjectRequest`
         :rtype: :class:`huaweicloudsdkeps.v1.CreateEnterpriseProjectResponse`
         """
-        return self.create_enterprise_project_with_http_info(request)
+        return self._create_enterprise_project_with_http_info(request)
 
-    def create_enterprise_project_with_http_info(self, request):
-        all_params = ['create_ep']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_enterprise_project_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -113,14 +91,10 @@ class EpsClient(Client):
         :type request: :class:`huaweicloudsdkeps.v1.DisableEnterpriseProjectRequest`
         :rtype: :class:`huaweicloudsdkeps.v1.DisableEnterpriseProjectResponse`
         """
-        return self.disable_enterprise_project_with_http_info(request)
+        return self._disable_enterprise_project_with_http_info(request)
 
-    def disable_enterprise_project_with_http_info(self, request):
-        all_params = ['enterprise_project_id', 'action']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _disable_enterprise_project_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -175,14 +149,10 @@ class EpsClient(Client):
         :type request: :class:`huaweicloudsdkeps.v1.EnableEnterpriseProjectRequest`
         :rtype: :class:`huaweicloudsdkeps.v1.EnableEnterpriseProjectResponse`
         """
-        return self.enable_enterprise_project_with_http_info(request)
+        return self._enable_enterprise_project_with_http_info(request)
 
-    def enable_enterprise_project_with_http_info(self, request):
-        all_params = ['enterprise_project_id', 'action']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _enable_enterprise_project_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -237,14 +207,10 @@ class EpsClient(Client):
         :type request: :class:`huaweicloudsdkeps.v1.ListApiVersionsRequest`
         :rtype: :class:`huaweicloudsdkeps.v1.ListApiVersionsResponse`
         """
-        return self.list_api_versions_with_http_info(request)
+        return self._list_api_versions_with_http_info(request)
 
-    def list_api_versions_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_api_versions_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -295,14 +261,10 @@ class EpsClient(Client):
         :type request: :class:`huaweicloudsdkeps.v1.ListEnterpriseProjectRequest`
         :rtype: :class:`huaweicloudsdkeps.v1.ListEnterpriseProjectResponse`
         """
-        return self.list_enterprise_project_with_http_info(request)
+        return self._list_enterprise_project_with_http_info(request)
 
-    def list_enterprise_project_with_http_info(self, request):
-        all_params = ['id', 'limit', 'name', 'offset', 'sort_dir', 'sort_key', 'status']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_enterprise_project_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -367,14 +329,10 @@ class EpsClient(Client):
         :type request: :class:`huaweicloudsdkeps.v1.ListProvidersRequest`
         :rtype: :class:`huaweicloudsdkeps.v1.ListProvidersResponse`
         """
-        return self.list_providers_with_http_info(request)
+        return self._list_providers_with_http_info(request)
 
-    def list_providers_with_http_info(self, request):
-        all_params = ['locale', 'limit', 'offset', 'provider']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_providers_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -433,14 +391,10 @@ class EpsClient(Client):
         :type request: :class:`huaweicloudsdkeps.v1.MigrateResourceRequest`
         :rtype: :class:`huaweicloudsdkeps.v1.MigrateResourceResponse`
         """
-        return self.migrate_resource_with_http_info(request)
+        return self._migrate_resource_with_http_info(request)
 
-    def migrate_resource_with_http_info(self, request):
-        all_params = ['enterprise_project_id', 'req_migrate_resource']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _migrate_resource_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -495,14 +449,10 @@ class EpsClient(Client):
         :type request: :class:`huaweicloudsdkeps.v1.ShowApiVersionRequest`
         :rtype: :class:`huaweicloudsdkeps.v1.ShowApiVersionResponse`
         """
-        return self.show_api_version_with_http_info(request)
+        return self._show_api_version_with_http_info(request)
 
-    def show_api_version_with_http_info(self, request):
-        all_params = ['api_version']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_api_version_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -555,14 +505,10 @@ class EpsClient(Client):
         :type request: :class:`huaweicloudsdkeps.v1.ShowEnterpriseProjectRequest`
         :rtype: :class:`huaweicloudsdkeps.v1.ShowEnterpriseProjectResponse`
         """
-        return self.show_enterprise_project_with_http_info(request)
+        return self._show_enterprise_project_with_http_info(request)
 
-    def show_enterprise_project_with_http_info(self, request):
-        all_params = ['enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_enterprise_project_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -615,14 +561,10 @@ class EpsClient(Client):
         :type request: :class:`huaweicloudsdkeps.v1.ShowEnterpriseProjectQuotaRequest`
         :rtype: :class:`huaweicloudsdkeps.v1.ShowEnterpriseProjectQuotaResponse`
         """
-        return self.show_enterprise_project_quota_with_http_info(request)
+        return self._show_enterprise_project_quota_with_http_info(request)
 
-    def show_enterprise_project_quota_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_enterprise_project_quota_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -673,14 +615,10 @@ class EpsClient(Client):
         :type request: :class:`huaweicloudsdkeps.v1.ShowResourceBindEnterpriseProjectRequest`
         :rtype: :class:`huaweicloudsdkeps.v1.ShowResourceBindEnterpriseProjectResponse`
         """
-        return self.show_resource_bind_enterprise_project_with_http_info(request)
+        return self._show_resource_bind_enterprise_project_with_http_info(request)
 
-    def show_resource_bind_enterprise_project_with_http_info(self, request):
-        all_params = ['enterprise_project_id', 'req_ep_resouce']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_resource_bind_enterprise_project_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -735,14 +673,10 @@ class EpsClient(Client):
         :type request: :class:`huaweicloudsdkeps.v1.UpdateEnterpriseProjectRequest`
         :rtype: :class:`huaweicloudsdkeps.v1.UpdateEnterpriseProjectResponse`
         """
-        return self.update_enterprise_project_with_http_info(request)
+        return self._update_enterprise_project_with_http_info(request)
 
-    def update_enterprise_project_with_http_info(self, request):
-        all_params = ['enterprise_project_id', 'modify_ep']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_enterprise_project_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

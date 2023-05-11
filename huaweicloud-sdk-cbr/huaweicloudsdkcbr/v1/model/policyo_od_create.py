@@ -1,9 +1,6 @@
 # coding: utf-8
 
-import re
 import six
-
-
 
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
@@ -29,7 +26,8 @@ class PolicyoODCreate:
         'retention_duration_days': 'int',
         'timezone': 'str',
         'week_backups': 'int',
-        'year_backups': 'int'
+        'year_backups': 'int',
+        'full_backup_interval': 'int'
     }
 
     attribute_map = {
@@ -42,10 +40,11 @@ class PolicyoODCreate:
         'retention_duration_days': 'retention_duration_days',
         'timezone': 'timezone',
         'week_backups': 'week_backups',
-        'year_backups': 'year_backups'
+        'year_backups': 'year_backups',
+        'full_backup_interval': 'full_backup_interval'
     }
 
-    def __init__(self, day_backups=None, destination_project_id=None, destination_region=None, enable_acceleration=None, max_backups=None, month_backups=None, retention_duration_days=None, timezone=None, week_backups=None, year_backups=None):
+    def __init__(self, day_backups=None, destination_project_id=None, destination_region=None, enable_acceleration=None, max_backups=None, month_backups=None, retention_duration_days=None, timezone=None, week_backups=None, year_backups=None, full_backup_interval=None):
         """PolicyoODCreate
 
         The model defined in huaweicloud sdk
@@ -70,6 +69,8 @@ class PolicyoODCreate:
         :type week_backups: int
         :param year_backups: 保留年备个数，该备份不受保留最大备份数限制。取值为0到100。若选择该参数，则timezone 也必选。
         :type year_backups: int
+        :param full_backup_interval: 每间隔多少次执行一次全量备份，当取值为 -1 时，不执行全量备份。  最小值：-1  最大值：100
+        :type full_backup_interval: int
         """
         
         
@@ -84,6 +85,7 @@ class PolicyoODCreate:
         self._timezone = None
         self._week_backups = None
         self._year_backups = None
+        self._full_backup_interval = None
         self.discriminator = None
 
         if day_backups is not None:
@@ -106,6 +108,8 @@ class PolicyoODCreate:
             self.week_backups = week_backups
         if year_backups is not None:
             self.year_backups = year_backups
+        if full_backup_interval is not None:
+            self.full_backup_interval = full_backup_interval
 
     @property
     def day_backups(self):
@@ -326,6 +330,28 @@ class PolicyoODCreate:
         :type year_backups: int
         """
         self._year_backups = year_backups
+
+    @property
+    def full_backup_interval(self):
+        """Gets the full_backup_interval of this PolicyoODCreate.
+
+        每间隔多少次执行一次全量备份，当取值为 -1 时，不执行全量备份。  最小值：-1  最大值：100
+
+        :return: The full_backup_interval of this PolicyoODCreate.
+        :rtype: int
+        """
+        return self._full_backup_interval
+
+    @full_backup_interval.setter
+    def full_backup_interval(self, full_backup_interval):
+        """Sets the full_backup_interval of this PolicyoODCreate.
+
+        每间隔多少次执行一次全量备份，当取值为 -1 时，不执行全量备份。  最小值：-1  最大值：100
+
+        :param full_backup_interval: The full_backup_interval of this PolicyoODCreate.
+        :type full_backup_interval: int
+        """
+        self._full_backup_interval = full_backup_interval
 
     def to_dict(self):
         """Returns the model properties as a dict"""

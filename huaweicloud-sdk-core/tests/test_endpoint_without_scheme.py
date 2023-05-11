@@ -22,7 +22,7 @@ import pytest
 
 from huaweicloudsdkcore.auth.credentials import BasicCredentials
 from huaweicloudsdkcore.http.http_config import HttpConfig
-from tests.data.project_response_mocker import MOCK_ENDPOINT, MOCK_ENDPOINT_WITHOUT_SCHEME
+from tests.mocker.project_response_mocker import MOCK_ENDPOINT, MOCK_ENDPOINT_WITHOUT_SCHEME
 from tests.model.service.service_client import ServiceClient
 
 config = HttpConfig.get_default_config()

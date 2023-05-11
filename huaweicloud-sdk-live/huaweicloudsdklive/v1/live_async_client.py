@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class LiveAsyncClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(LiveAsyncClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdklive.v1.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -54,14 +36,10 @@ class LiveAsyncClient(Client):
         :type request: :class:`huaweicloudsdklive.v1.CreateDomainRequest`
         :rtype: :class:`huaweicloudsdklive.v1.CreateDomainResponse`
         """
-        return self.create_domain_with_http_info(request)
+        return self._create_domain_with_http_info(request)
 
-    def create_domain_with_http_info(self, request):
-        all_params = ['create_domain_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_domain_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -115,14 +93,10 @@ class LiveAsyncClient(Client):
         :type request: :class:`huaweicloudsdklive.v1.CreateDomainMappingRequest`
         :rtype: :class:`huaweicloudsdklive.v1.CreateDomainMappingResponse`
         """
-        return self.create_domain_mapping_with_http_info(request)
+        return self._create_domain_mapping_with_http_info(request)
 
-    def create_domain_mapping_with_http_info(self, request):
-        all_params = ['create_domain_mapping_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_domain_mapping_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -176,14 +150,10 @@ class LiveAsyncClient(Client):
         :type request: :class:`huaweicloudsdklive.v1.CreateRecordCallbackConfigRequest`
         :rtype: :class:`huaweicloudsdklive.v1.CreateRecordCallbackConfigResponse`
         """
-        return self.create_record_callback_config_with_http_info(request)
+        return self._create_record_callback_config_with_http_info(request)
 
-    def create_record_callback_config_with_http_info(self, request):
-        all_params = ['create_record_callback_config_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_record_callback_config_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -237,14 +207,10 @@ class LiveAsyncClient(Client):
         :type request: :class:`huaweicloudsdklive.v1.CreateRecordIndexRequest`
         :rtype: :class:`huaweicloudsdklive.v1.CreateRecordIndexResponse`
         """
-        return self.create_record_index_with_http_info(request)
+        return self._create_record_index_with_http_info(request)
 
-    def create_record_index_with_http_info(self, request):
-        all_params = ['create_record_index_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_record_index_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -298,14 +264,10 @@ class LiveAsyncClient(Client):
         :type request: :class:`huaweicloudsdklive.v1.CreateRecordRuleRequest`
         :rtype: :class:`huaweicloudsdklive.v1.CreateRecordRuleResponse`
         """
-        return self.create_record_rule_with_http_info(request)
+        return self._create_record_rule_with_http_info(request)
 
-    def create_record_rule_with_http_info(self, request):
-        all_params = ['create_record_rule_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_record_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -359,14 +321,10 @@ class LiveAsyncClient(Client):
         :type request: :class:`huaweicloudsdklive.v1.CreateSnapshotConfigRequest`
         :rtype: :class:`huaweicloudsdklive.v1.CreateSnapshotConfigResponse`
         """
-        return self.create_snapshot_config_with_http_info(request)
+        return self._create_snapshot_config_with_http_info(request)
 
-    def create_snapshot_config_with_http_info(self, request):
-        all_params = ['create_snapshot_config_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_snapshot_config_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -420,14 +378,10 @@ class LiveAsyncClient(Client):
         :type request: :class:`huaweicloudsdklive.v1.CreateStreamForbiddenRequest`
         :rtype: :class:`huaweicloudsdklive.v1.CreateStreamForbiddenResponse`
         """
-        return self.create_stream_forbidden_with_http_info(request)
+        return self._create_stream_forbidden_with_http_info(request)
 
-    def create_stream_forbidden_with_http_info(self, request):
-        all_params = ['create_stream_forbidden_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_stream_forbidden_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -481,14 +435,10 @@ class LiveAsyncClient(Client):
         :type request: :class:`huaweicloudsdklive.v1.CreateTranscodingsTemplateRequest`
         :rtype: :class:`huaweicloudsdklive.v1.CreateTranscodingsTemplateResponse`
         """
-        return self.create_transcodings_template_with_http_info(request)
+        return self._create_transcodings_template_with_http_info(request)
 
-    def create_transcodings_template_with_http_info(self, request):
-        all_params = ['create_transcodings_template_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_transcodings_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -542,14 +492,10 @@ class LiveAsyncClient(Client):
         :type request: :class:`huaweicloudsdklive.v1.DeleteDomainRequest`
         :rtype: :class:`huaweicloudsdklive.v1.DeleteDomainResponse`
         """
-        return self.delete_domain_with_http_info(request)
+        return self._delete_domain_with_http_info(request)
 
-    def delete_domain_with_http_info(self, request):
-        all_params = ['domain']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_domain_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -603,14 +549,10 @@ class LiveAsyncClient(Client):
         :type request: :class:`huaweicloudsdklive.v1.DeleteDomainKeyChainRequest`
         :rtype: :class:`huaweicloudsdklive.v1.DeleteDomainKeyChainResponse`
         """
-        return self.delete_domain_key_chain_with_http_info(request)
+        return self._delete_domain_key_chain_with_http_info(request)
 
-    def delete_domain_key_chain_with_http_info(self, request):
-        all_params = ['domain']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_domain_key_chain_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -664,14 +606,10 @@ class LiveAsyncClient(Client):
         :type request: :class:`huaweicloudsdklive.v1.DeleteDomainMappingRequest`
         :rtype: :class:`huaweicloudsdklive.v1.DeleteDomainMappingResponse`
         """
-        return self.delete_domain_mapping_with_http_info(request)
+        return self._delete_domain_mapping_with_http_info(request)
 
-    def delete_domain_mapping_with_http_info(self, request):
-        all_params = ['pull_domain', 'push_domain']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_domain_mapping_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -727,14 +665,10 @@ class LiveAsyncClient(Client):
         :type request: :class:`huaweicloudsdklive.v1.DeleteRecordCallbackConfigRequest`
         :rtype: :class:`huaweicloudsdklive.v1.DeleteRecordCallbackConfigResponse`
         """
-        return self.delete_record_callback_config_with_http_info(request)
+        return self._delete_record_callback_config_with_http_info(request)
 
-    def delete_record_callback_config_with_http_info(self, request):
-        all_params = ['id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_record_callback_config_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -788,14 +722,10 @@ class LiveAsyncClient(Client):
         :type request: :class:`huaweicloudsdklive.v1.DeleteRecordRuleRequest`
         :rtype: :class:`huaweicloudsdklive.v1.DeleteRecordRuleResponse`
         """
-        return self.delete_record_rule_with_http_info(request)
+        return self._delete_record_rule_with_http_info(request)
 
-    def delete_record_rule_with_http_info(self, request):
-        all_params = ['id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_record_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -849,14 +779,10 @@ class LiveAsyncClient(Client):
         :type request: :class:`huaweicloudsdklive.v1.DeleteSnapshotConfigRequest`
         :rtype: :class:`huaweicloudsdklive.v1.DeleteSnapshotConfigResponse`
         """
-        return self.delete_snapshot_config_with_http_info(request)
+        return self._delete_snapshot_config_with_http_info(request)
 
-    def delete_snapshot_config_with_http_info(self, request):
-        all_params = ['domain', 'app_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_snapshot_config_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -912,14 +838,10 @@ class LiveAsyncClient(Client):
         :type request: :class:`huaweicloudsdklive.v1.DeleteStreamForbiddenRequest`
         :rtype: :class:`huaweicloudsdklive.v1.DeleteStreamForbiddenResponse`
         """
-        return self.delete_stream_forbidden_with_http_info(request)
+        return self._delete_stream_forbidden_with_http_info(request)
 
-    def delete_stream_forbidden_with_http_info(self, request):
-        all_params = ['domain', 'app_name', 'stream_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_stream_forbidden_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -977,14 +899,10 @@ class LiveAsyncClient(Client):
         :type request: :class:`huaweicloudsdklive.v1.DeleteTranscodingsTemplateRequest`
         :rtype: :class:`huaweicloudsdklive.v1.DeleteTranscodingsTemplateResponse`
         """
-        return self.delete_transcodings_template_with_http_info(request)
+        return self._delete_transcodings_template_with_http_info(request)
 
-    def delete_transcodings_template_with_http_info(self, request):
-        all_params = ['domain', 'app_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_transcodings_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1040,14 +958,10 @@ class LiveAsyncClient(Client):
         :type request: :class:`huaweicloudsdklive.v1.ListLiveSampleLogsRequest`
         :rtype: :class:`huaweicloudsdklive.v1.ListLiveSampleLogsResponse`
         """
-        return self.list_live_sample_logs_with_http_info(request)
+        return self._list_live_sample_logs_with_http_info(request)
 
-    def list_live_sample_logs_with_http_info(self, request):
-        all_params = ['play_domain', 'start_time', 'end_time']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_live_sample_logs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1105,14 +1019,10 @@ class LiveAsyncClient(Client):
         :type request: :class:`huaweicloudsdklive.v1.ListLiveStreamsOnlineRequest`
         :rtype: :class:`huaweicloudsdklive.v1.ListLiveStreamsOnlineResponse`
         """
-        return self.list_live_streams_online_with_http_info(request)
+        return self._list_live_streams_online_with_http_info(request)
 
-    def list_live_streams_online_with_http_info(self, request):
-        all_params = ['publish_domain', 'app', 'offset', 'limit', 'stream']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_live_streams_online_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1174,14 +1084,10 @@ class LiveAsyncClient(Client):
         :type request: :class:`huaweicloudsdklive.v1.ListRecordCallbackConfigsRequest`
         :rtype: :class:`huaweicloudsdklive.v1.ListRecordCallbackConfigsResponse`
         """
-        return self.list_record_callback_configs_with_http_info(request)
+        return self._list_record_callback_configs_with_http_info(request)
 
-    def list_record_callback_configs_with_http_info(self, request):
-        all_params = ['publish_domain', 'app', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_record_callback_configs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1241,14 +1147,10 @@ class LiveAsyncClient(Client):
         :type request: :class:`huaweicloudsdklive.v1.ListRecordContentsRequest`
         :rtype: :class:`huaweicloudsdklive.v1.ListRecordContentsResponse`
         """
-        return self.list_record_contents_with_http_info(request)
+        return self._list_record_contents_with_http_info(request)
 
-    def list_record_contents_with_http_info(self, request):
-        all_params = ['start_time', 'publish_domain', 'app', 'stream', 'record_type', 'end_time', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_record_contents_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1316,14 +1218,10 @@ class LiveAsyncClient(Client):
         :type request: :class:`huaweicloudsdklive.v1.ListRecordRulesRequest`
         :rtype: :class:`huaweicloudsdklive.v1.ListRecordRulesResponse`
         """
-        return self.list_record_rules_with_http_info(request)
+        return self._list_record_rules_with_http_info(request)
 
-    def list_record_rules_with_http_info(self, request):
-        all_params = ['publish_domain', 'app', 'stream', 'record_type', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_record_rules_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1387,14 +1285,10 @@ class LiveAsyncClient(Client):
         :type request: :class:`huaweicloudsdklive.v1.ListSnapshotConfigsRequest`
         :rtype: :class:`huaweicloudsdklive.v1.ListSnapshotConfigsResponse`
         """
-        return self.list_snapshot_configs_with_http_info(request)
+        return self._list_snapshot_configs_with_http_info(request)
 
-    def list_snapshot_configs_with_http_info(self, request):
-        all_params = ['domain', 'app_name', 'limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_snapshot_configs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1454,14 +1348,10 @@ class LiveAsyncClient(Client):
         :type request: :class:`huaweicloudsdklive.v1.ListStreamForbiddenRequest`
         :rtype: :class:`huaweicloudsdklive.v1.ListStreamForbiddenResponse`
         """
-        return self.list_stream_forbidden_with_http_info(request)
+        return self._list_stream_forbidden_with_http_info(request)
 
-    def list_stream_forbidden_with_http_info(self, request):
-        all_params = ['domain', 'app_name', 'stream_name', 'page', 'size']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_stream_forbidden_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1523,14 +1413,10 @@ class LiveAsyncClient(Client):
         :type request: :class:`huaweicloudsdklive.v1.RunRecordRequest`
         :rtype: :class:`huaweicloudsdklive.v1.RunRecordResponse`
         """
-        return self.run_record_with_http_info(request)
+        return self._run_record_with_http_info(request)
 
-    def run_record_with_http_info(self, request):
-        all_params = ['action', 'run_record_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _run_record_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1586,14 +1472,10 @@ class LiveAsyncClient(Client):
         :type request: :class:`huaweicloudsdklive.v1.ShowDomainRequest`
         :rtype: :class:`huaweicloudsdklive.v1.ShowDomainResponse`
         """
-        return self.show_domain_with_http_info(request)
+        return self._show_domain_with_http_info(request)
 
-    def show_domain_with_http_info(self, request):
-        all_params = ['domain', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_domain_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1649,14 +1531,10 @@ class LiveAsyncClient(Client):
         :type request: :class:`huaweicloudsdklive.v1.ShowDomainKeyChainRequest`
         :rtype: :class:`huaweicloudsdklive.v1.ShowDomainKeyChainResponse`
         """
-        return self.show_domain_key_chain_with_http_info(request)
+        return self._show_domain_key_chain_with_http_info(request)
 
-    def show_domain_key_chain_with_http_info(self, request):
-        all_params = ['domain']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_domain_key_chain_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1710,14 +1588,10 @@ class LiveAsyncClient(Client):
         :type request: :class:`huaweicloudsdklive.v1.ShowRecordCallbackConfigRequest`
         :rtype: :class:`huaweicloudsdklive.v1.ShowRecordCallbackConfigResponse`
         """
-        return self.show_record_callback_config_with_http_info(request)
+        return self._show_record_callback_config_with_http_info(request)
 
-    def show_record_callback_config_with_http_info(self, request):
-        all_params = ['id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_record_callback_config_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1771,14 +1645,10 @@ class LiveAsyncClient(Client):
         :type request: :class:`huaweicloudsdklive.v1.ShowRecordRuleRequest`
         :rtype: :class:`huaweicloudsdklive.v1.ShowRecordRuleResponse`
         """
-        return self.show_record_rule_with_http_info(request)
+        return self._show_record_rule_with_http_info(request)
 
-    def show_record_rule_with_http_info(self, request):
-        all_params = ['id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_record_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1832,14 +1702,10 @@ class LiveAsyncClient(Client):
         :type request: :class:`huaweicloudsdklive.v1.ShowTranscodingsTemplateRequest`
         :rtype: :class:`huaweicloudsdklive.v1.ShowTranscodingsTemplateResponse`
         """
-        return self.show_transcodings_template_with_http_info(request)
+        return self._show_transcodings_template_with_http_info(request)
 
-    def show_transcodings_template_with_http_info(self, request):
-        all_params = ['domain', 'app_name', 'page', 'size']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_transcodings_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1899,14 +1765,10 @@ class LiveAsyncClient(Client):
         :type request: :class:`huaweicloudsdklive.v1.UpdateDomainRequest`
         :rtype: :class:`huaweicloudsdklive.v1.UpdateDomainResponse`
         """
-        return self.update_domain_with_http_info(request)
+        return self._update_domain_with_http_info(request)
 
-    def update_domain_with_http_info(self, request):
-        all_params = ['update_domain_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_domain_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1960,14 +1822,10 @@ class LiveAsyncClient(Client):
         :type request: :class:`huaweicloudsdklive.v1.UpdateDomainIp6SwitchRequest`
         :rtype: :class:`huaweicloudsdklive.v1.UpdateDomainIp6SwitchResponse`
         """
-        return self.update_domain_ip6_switch_with_http_info(request)
+        return self._update_domain_ip6_switch_with_http_info(request)
 
-    def update_domain_ip6_switch_with_http_info(self, request):
-        all_params = ['domain_ipv6_switch_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_domain_ip6_switch_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2021,14 +1879,10 @@ class LiveAsyncClient(Client):
         :type request: :class:`huaweicloudsdklive.v1.UpdateDomainKeyChainRequest`
         :rtype: :class:`huaweicloudsdklive.v1.UpdateDomainKeyChainResponse`
         """
-        return self.update_domain_key_chain_with_http_info(request)
+        return self._update_domain_key_chain_with_http_info(request)
 
-    def update_domain_key_chain_with_http_info(self, request):
-        all_params = ['domain', 'update_domain_key_chain_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_domain_key_chain_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2084,14 +1938,10 @@ class LiveAsyncClient(Client):
         :type request: :class:`huaweicloudsdklive.v1.UpdateRecordCallbackConfigRequest`
         :rtype: :class:`huaweicloudsdklive.v1.UpdateRecordCallbackConfigResponse`
         """
-        return self.update_record_callback_config_with_http_info(request)
+        return self._update_record_callback_config_with_http_info(request)
 
-    def update_record_callback_config_with_http_info(self, request):
-        all_params = ['id', 'update_record_callback_config_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_record_callback_config_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2147,14 +1997,10 @@ class LiveAsyncClient(Client):
         :type request: :class:`huaweicloudsdklive.v1.UpdateRecordRuleRequest`
         :rtype: :class:`huaweicloudsdklive.v1.UpdateRecordRuleResponse`
         """
-        return self.update_record_rule_with_http_info(request)
+        return self._update_record_rule_with_http_info(request)
 
-    def update_record_rule_with_http_info(self, request):
-        all_params = ['id', 'update_record_rule_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_record_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2210,14 +2056,10 @@ class LiveAsyncClient(Client):
         :type request: :class:`huaweicloudsdklive.v1.UpdateSnapshotConfigRequest`
         :rtype: :class:`huaweicloudsdklive.v1.UpdateSnapshotConfigResponse`
         """
-        return self.update_snapshot_config_with_http_info(request)
+        return self._update_snapshot_config_with_http_info(request)
 
-    def update_snapshot_config_with_http_info(self, request):
-        all_params = ['update_snapshot_config_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_snapshot_config_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2271,14 +2113,10 @@ class LiveAsyncClient(Client):
         :type request: :class:`huaweicloudsdklive.v1.UpdateStreamForbiddenRequest`
         :rtype: :class:`huaweicloudsdklive.v1.UpdateStreamForbiddenResponse`
         """
-        return self.update_stream_forbidden_with_http_info(request)
+        return self._update_stream_forbidden_with_http_info(request)
 
-    def update_stream_forbidden_with_http_info(self, request):
-        all_params = ['update_stream_forbidden_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_stream_forbidden_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2332,14 +2170,10 @@ class LiveAsyncClient(Client):
         :type request: :class:`huaweicloudsdklive.v1.UpdateTranscodingsTemplateRequest`
         :rtype: :class:`huaweicloudsdklive.v1.UpdateTranscodingsTemplateResponse`
         """
-        return self.update_transcodings_template_with_http_info(request)
+        return self._update_transcodings_template_with_http_info(request)
 
-    def update_transcodings_template_with_http_info(self, request):
-        all_params = ['update_transcodings_template_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_transcodings_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2393,14 +2227,10 @@ class LiveAsyncClient(Client):
         :type request: :class:`huaweicloudsdklive.v1.DeleteDomainHttpsCertRequest`
         :rtype: :class:`huaweicloudsdklive.v1.DeleteDomainHttpsCertResponse`
         """
-        return self.delete_domain_https_cert_with_http_info(request)
+        return self._delete_domain_https_cert_with_http_info(request)
 
-    def delete_domain_https_cert_with_http_info(self, request):
-        all_params = ['domain']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_domain_https_cert_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2454,14 +2284,10 @@ class LiveAsyncClient(Client):
         :type request: :class:`huaweicloudsdklive.v1.ShowDomainHttpsCertRequest`
         :rtype: :class:`huaweicloudsdklive.v1.ShowDomainHttpsCertResponse`
         """
-        return self.show_domain_https_cert_with_http_info(request)
+        return self._show_domain_https_cert_with_http_info(request)
 
-    def show_domain_https_cert_with_http_info(self, request):
-        all_params = ['domain']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_domain_https_cert_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2515,14 +2341,10 @@ class LiveAsyncClient(Client):
         :type request: :class:`huaweicloudsdklive.v1.UpdateDomainHttpsCertRequest`
         :rtype: :class:`huaweicloudsdklive.v1.UpdateDomainHttpsCertResponse`
         """
-        return self.update_domain_https_cert_with_http_info(request)
+        return self._update_domain_https_cert_with_http_info(request)
 
-    def update_domain_https_cert_with_http_info(self, request):
-        all_params = ['domain', 'update_domain_https_cert_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_domain_https_cert_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2578,14 +2400,10 @@ class LiveAsyncClient(Client):
         :type request: :class:`huaweicloudsdklive.v1.UpdateObsBucketAuthorityPublicRequest`
         :rtype: :class:`huaweicloudsdklive.v1.UpdateObsBucketAuthorityPublicResponse`
         """
-        return self.update_obs_bucket_authority_public_with_http_info(request)
+        return self._update_obs_bucket_authority_public_with_http_info(request)
 
-    def update_obs_bucket_authority_public_with_http_info(self, request):
-        all_params = ['update_obs_bucket_authority_public_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_obs_bucket_authority_public_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

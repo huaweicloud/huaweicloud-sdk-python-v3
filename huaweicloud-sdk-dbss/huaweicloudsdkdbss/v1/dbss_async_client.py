@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class DbssAsyncClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(DbssAsyncClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkdbss.v1.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -54,14 +36,10 @@ class DbssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdbss.v1.AddRdsNoAgentDatabaseRequest`
         :rtype: :class:`huaweicloudsdkdbss.v1.AddRdsNoAgentDatabaseResponse`
         """
-        return self.add_rds_no_agent_database_with_http_info(request)
+        return self._add_rds_no_agent_database_with_http_info(request)
 
-    def add_rds_no_agent_database_with_http_info(self, request):
-        all_params = ['instance_id', 'add_rds_no_agent_database_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _add_rds_no_agent_database_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -117,14 +95,10 @@ class DbssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdbss.v1.BatchAddResourceTagRequest`
         :rtype: :class:`huaweicloudsdkdbss.v1.BatchAddResourceTagResponse`
         """
-        return self.batch_add_resource_tag_with_http_info(request)
+        return self._batch_add_resource_tag_with_http_info(request)
 
-    def batch_add_resource_tag_with_http_info(self, request):
-        all_params = ['resource_type', 'resource_id', 'batch_add_resource_tag_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_add_resource_tag_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -182,14 +156,10 @@ class DbssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdbss.v1.BatchDeleteResourceTagRequest`
         :rtype: :class:`huaweicloudsdkdbss.v1.BatchDeleteResourceTagResponse`
         """
-        return self.batch_delete_resource_tag_with_http_info(request)
+        return self._batch_delete_resource_tag_with_http_info(request)
 
-    def batch_delete_resource_tag_with_http_info(self, request):
-        all_params = ['resource_type', 'resource_id', 'batch_delete_resource_tag_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_delete_resource_tag_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -247,14 +217,10 @@ class DbssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdbss.v1.CountResourceInstanceByTagRequest`
         :rtype: :class:`huaweicloudsdkdbss.v1.CountResourceInstanceByTagResponse`
         """
-        return self.count_resource_instance_by_tag_with_http_info(request)
+        return self._count_resource_instance_by_tag_with_http_info(request)
 
-    def count_resource_instance_by_tag_with_http_info(self, request):
-        all_params = ['resource_type', 'count_resource_instance_by_tag_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _count_resource_instance_by_tag_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -310,14 +276,10 @@ class DbssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdbss.v1.CreateInstancesPeriodOrderRequest`
         :rtype: :class:`huaweicloudsdkdbss.v1.CreateInstancesPeriodOrderResponse`
         """
-        return self.create_instances_period_order_with_http_info(request)
+        return self._create_instances_period_order_with_http_info(request)
 
-    def create_instances_period_order_with_http_info(self, request):
-        all_params = ['create_instances_period_order_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_instances_period_order_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -371,14 +333,10 @@ class DbssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdbss.v1.ListAuditDatabasesRequest`
         :rtype: :class:`huaweicloudsdkdbss.v1.ListAuditDatabasesResponse`
         """
-        return self.list_audit_databases_with_http_info(request)
+        return self._list_audit_databases_with_http_info(request)
 
-    def list_audit_databases_with_http_info(self, request):
-        all_params = ['instance_id', 'status', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_audit_databases_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -438,14 +396,10 @@ class DbssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdbss.v1.ListAuditInstanceJobsRequest`
         :rtype: :class:`huaweicloudsdkdbss.v1.ListAuditInstanceJobsResponse`
         """
-        return self.list_audit_instance_jobs_with_http_info(request)
+        return self._list_audit_instance_jobs_with_http_info(request)
 
-    def list_audit_instance_jobs_with_http_info(self, request):
-        all_params = ['resource_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_audit_instance_jobs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -499,14 +453,10 @@ class DbssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdbss.v1.ListAuditInstancesRequest`
         :rtype: :class:`huaweicloudsdkdbss.v1.ListAuditInstancesResponse`
         """
-        return self.list_audit_instances_with_http_info(request)
+        return self._list_audit_instances_with_http_info(request)
 
-    def list_audit_instances_with_http_info(self, request):
-        all_params = ['offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_audit_instances_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -562,14 +512,10 @@ class DbssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdbss.v1.ListAuditOperateLogsRequest`
         :rtype: :class:`huaweicloudsdkdbss.v1.ListAuditOperateLogsResponse`
         """
-        return self.list_audit_operate_logs_with_http_info(request)
+        return self._list_audit_operate_logs_with_http_info(request)
 
-    def list_audit_operate_logs_with_http_info(self, request):
-        all_params = ['instance_id', 'list_audit_operate_logs_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_audit_operate_logs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -625,14 +571,10 @@ class DbssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdbss.v1.ListAuditRuleRisksRequest`
         :rtype: :class:`huaweicloudsdkdbss.v1.ListAuditRuleRisksResponse`
         """
-        return self.list_audit_rule_risks_with_http_info(request)
+        return self._list_audit_rule_risks_with_http_info(request)
 
-    def list_audit_rule_risks_with_http_info(self, request):
-        all_params = ['instance_id', 'name', 'risk_levels']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_audit_rule_risks_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -690,14 +632,10 @@ class DbssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdbss.v1.ListAuditRuleScopesRequest`
         :rtype: :class:`huaweicloudsdkdbss.v1.ListAuditRuleScopesResponse`
         """
-        return self.list_audit_rule_scopes_with_http_info(request)
+        return self._list_audit_rule_scopes_with_http_info(request)
 
-    def list_audit_rule_scopes_with_http_info(self, request):
-        all_params = ['instance_id', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_audit_rule_scopes_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -755,14 +693,10 @@ class DbssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdbss.v1.ListAuditSensitiveMasksRequest`
         :rtype: :class:`huaweicloudsdkdbss.v1.ListAuditSensitiveMasksResponse`
         """
-        return self.list_audit_sensitive_masks_with_http_info(request)
+        return self._list_audit_sensitive_masks_with_http_info(request)
 
-    def list_audit_sensitive_masks_with_http_info(self, request):
-        all_params = ['instance_id', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_audit_sensitive_masks_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -820,14 +754,10 @@ class DbssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdbss.v1.ListAvailabilityZoneInfosRequest`
         :rtype: :class:`huaweicloudsdkdbss.v1.ListAvailabilityZoneInfosResponse`
         """
-        return self.list_availability_zone_infos_with_http_info(request)
+        return self._list_availability_zone_infos_with_http_info(request)
 
-    def list_availability_zone_infos_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_availability_zone_infos_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -879,14 +809,10 @@ class DbssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdbss.v1.ListEcsSpecificationRequest`
         :rtype: :class:`huaweicloudsdkdbss.v1.ListEcsSpecificationResponse`
         """
-        return self.list_ecs_specification_with_http_info(request)
+        return self._list_ecs_specification_with_http_info(request)
 
-    def list_ecs_specification_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_ecs_specification_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -938,14 +864,10 @@ class DbssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdbss.v1.ListProjectResourceTagsRequest`
         :rtype: :class:`huaweicloudsdkdbss.v1.ListProjectResourceTagsResponse`
         """
-        return self.list_project_resource_tags_with_http_info(request)
+        return self._list_project_resource_tags_with_http_info(request)
 
-    def list_project_resource_tags_with_http_info(self, request):
-        all_params = ['resource_type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_project_resource_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -999,14 +921,10 @@ class DbssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdbss.v1.ListResourceInstanceByTagRequest`
         :rtype: :class:`huaweicloudsdkdbss.v1.ListResourceInstanceByTagResponse`
         """
-        return self.list_resource_instance_by_tag_with_http_info(request)
+        return self._list_resource_instance_by_tag_with_http_info(request)
 
-    def list_resource_instance_by_tag_with_http_info(self, request):
-        all_params = ['resource_type', 'list_resource_instance_by_tag_request_body', 'limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_resource_instance_by_tag_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1066,14 +984,10 @@ class DbssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdbss.v1.ListSqlInjectionRulesRequest`
         :rtype: :class:`huaweicloudsdkdbss.v1.ListSqlInjectionRulesResponse`
         """
-        return self.list_sql_injection_rules_with_http_info(request)
+        return self._list_sql_injection_rules_with_http_info(request)
 
-    def list_sql_injection_rules_with_http_info(self, request):
-        all_params = ['instance_id', 'list_sql_injection_rules_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_sql_injection_rules_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1129,14 +1043,10 @@ class DbssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdbss.v1.ShowAuditQuotaRequest`
         :rtype: :class:`huaweicloudsdkdbss.v1.ShowAuditQuotaResponse`
         """
-        return self.show_audit_quota_with_http_info(request)
+        return self._show_audit_quota_with_http_info(request)
 
-    def show_audit_quota_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_audit_quota_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1188,14 +1098,10 @@ class DbssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdbss.v1.ShowAuditRuleRiskRequest`
         :rtype: :class:`huaweicloudsdkdbss.v1.ShowAuditRuleRiskResponse`
         """
-        return self.show_audit_rule_risk_with_http_info(request)
+        return self._show_audit_rule_risk_with_http_info(request)
 
-    def show_audit_rule_risk_with_http_info(self, request):
-        all_params = ['instance_id', 'risk_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_audit_rule_risk_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1251,14 +1157,10 @@ class DbssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdbss.v1.SwitchAgentRequest`
         :rtype: :class:`huaweicloudsdkdbss.v1.SwitchAgentResponse`
         """
-        return self.switch_agent_with_http_info(request)
+        return self._switch_agent_with_http_info(request)
 
-    def switch_agent_with_http_info(self, request):
-        all_params = ['instance_id', 'switch_agent_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _switch_agent_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1314,14 +1216,10 @@ class DbssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdbss.v1.SwitchRiskRuleRequest`
         :rtype: :class:`huaweicloudsdkdbss.v1.SwitchRiskRuleResponse`
         """
-        return self.switch_risk_rule_with_http_info(request)
+        return self._switch_risk_rule_with_http_info(request)
 
-    def switch_risk_rule_with_http_info(self, request):
-        all_params = ['instance_id', 'switch_risk_rule_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _switch_risk_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1377,14 +1275,10 @@ class DbssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdbss.v1.UpdateAuditSecurityGroupRequest`
         :rtype: :class:`huaweicloudsdkdbss.v1.UpdateAuditSecurityGroupResponse`
         """
-        return self.update_audit_security_group_with_http_info(request)
+        return self._update_audit_security_group_with_http_info(request)
 
-    def update_audit_security_group_with_http_info(self, request):
-        all_params = ['update_audit_security_group_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_audit_security_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

@@ -1,9 +1,6 @@
 # coding: utf-8
 
-import re
 import six
-
-
 
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
@@ -20,29 +17,58 @@ class ImportConnectionsRequest:
     sensitive_list = []
 
     openapi_types = {
+        'workspace': 'str',
         'body': 'ImportConnectionReq'
     }
 
     attribute_map = {
+        'workspace': 'workspace',
         'body': 'body'
     }
 
-    def __init__(self, body=None):
+    def __init__(self, workspace=None, body=None):
         """ImportConnectionsRequest
 
         The model defined in huaweicloud sdk
 
+        :param workspace: 工作空间id
+        :type workspace: str
         :param body: Body of the ImportConnectionsRequest
         :type body: :class:`huaweicloudsdkdgc.v1.ImportConnectionReq`
         """
         
         
 
+        self._workspace = None
         self._body = None
         self.discriminator = None
 
+        if workspace is not None:
+            self.workspace = workspace
         if body is not None:
             self.body = body
+
+    @property
+    def workspace(self):
+        """Gets the workspace of this ImportConnectionsRequest.
+
+        工作空间id
+
+        :return: The workspace of this ImportConnectionsRequest.
+        :rtype: str
+        """
+        return self._workspace
+
+    @workspace.setter
+    def workspace(self, workspace):
+        """Sets the workspace of this ImportConnectionsRequest.
+
+        工作空间id
+
+        :param workspace: The workspace of this ImportConnectionsRequest.
+        :type workspace: str
+        """
+        self._workspace = workspace
 
     @property
     def body(self):

@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class RomaAsyncClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(RomaAsyncClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkroma.v2.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -54,14 +36,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.AddSubsetsToGatewayRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.AddSubsetsToGatewayResponse`
         """
-        return self.add_subsets_to_gateway_with_http_info(request)
+        return self._add_subsets_to_gateway_with_http_info(request)
 
-    def add_subsets_to_gateway_with_http_info(self, request):
-        all_params = ['instance_id', 'device_id', 'add_subsets_to_gateway_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _add_subsets_to_gateway_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -119,14 +97,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.AssociateAppsForAppQuotaRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.AssociateAppsForAppQuotaResponse`
         """
-        return self.associate_apps_for_app_quota_with_http_info(request)
+        return self._associate_apps_for_app_quota_with_http_info(request)
 
-    def associate_apps_for_app_quota_with_http_info(self, request):
-        all_params = ['instance_id', 'app_quota_id', 'associate_apps_for_app_quota_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _associate_apps_for_app_quota_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -185,14 +159,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.AssociateCertificateV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.AssociateCertificateV2Response`
         """
-        return self.associate_certificate_v2_with_http_info(request)
+        return self._associate_certificate_v2_with_http_info(request)
 
-    def associate_certificate_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'group_id', 'domain_id', 'associate_certificate_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _associate_certificate_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -252,14 +222,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.AssociateDomainV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.AssociateDomainV2Response`
         """
-        return self.associate_domain_v2_with_http_info(request)
+        return self._associate_domain_v2_with_http_info(request)
 
-    def associate_domain_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'group_id', 'associate_domain_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _associate_domain_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -321,14 +287,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.AssociateSignatureKeyV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.AssociateSignatureKeyV2Response`
         """
-        return self.associate_signature_key_v2_with_http_info(request)
+        return self._associate_signature_key_v2_with_http_info(request)
 
-    def associate_signature_key_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'associate_signature_key_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _associate_signature_key_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -384,14 +346,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.BatchAddDeviceToGroupRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.BatchAddDeviceToGroupResponse`
         """
-        return self.batch_add_device_to_group_with_http_info(request)
+        return self._batch_add_device_to_group_with_http_info(request)
 
-    def batch_add_device_to_group_with_http_info(self, request):
-        all_params = ['instance_id', 'group_id', 'batch_add_device_to_group_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_add_device_to_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -449,14 +407,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.BatchDeleteDevicesRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.BatchDeleteDevicesResponse`
         """
-        return self.batch_delete_devices_with_http_info(request)
+        return self._batch_delete_devices_with_http_info(request)
 
-    def batch_delete_devices_with_http_info(self, request):
-        all_params = ['instance_id', 'batch_delete_devices_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_delete_devices_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -512,14 +466,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.BatchDeleteMqsInstanceTopicRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.BatchDeleteMqsInstanceTopicResponse`
         """
-        return self.batch_delete_mqs_instance_topic_with_http_info(request)
+        return self._batch_delete_mqs_instance_topic_with_http_info(request)
 
-    def batch_delete_mqs_instance_topic_with_http_info(self, request):
-        all_params = ['instance_id', 'batch_delete_mqs_instance_topic_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_delete_mqs_instance_topic_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -575,14 +525,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.BatchDeleteRulesRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.BatchDeleteRulesResponse`
         """
-        return self.batch_delete_rules_with_http_info(request)
+        return self._batch_delete_rules_with_http_info(request)
 
-    def batch_delete_rules_with_http_info(self, request):
-        all_params = ['instance_id', 'batch_delete_rules_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_delete_rules_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -638,14 +584,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.BatchFreezeDevicesRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.BatchFreezeDevicesResponse`
         """
-        return self.batch_freeze_devices_with_http_info(request)
+        return self._batch_freeze_devices_with_http_info(request)
 
-    def batch_freeze_devices_with_http_info(self, request):
-        all_params = ['instance_id', 'batch_freeze_devices_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_freeze_devices_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -701,14 +643,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.BatchStartOrStopTasksRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.BatchStartOrStopTasksResponse`
         """
-        return self.batch_start_or_stop_tasks_with_http_info(request)
+        return self._batch_start_or_stop_tasks_with_http_info(request)
 
-    def batch_start_or_stop_tasks_with_http_info(self, request):
-        all_params = ['instance_id', 'batch_start_or_stop_tasks_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_start_or_stop_tasks_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -764,14 +702,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CheckLivedataApisV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.CheckLivedataApisV2Response`
         """
-        return self.check_livedata_apis_v2_with_http_info(request)
+        return self._check_livedata_apis_v2_with_http_info(request)
 
-    def check_livedata_apis_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'check_livedata_apis_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _check_livedata_apis_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -827,14 +761,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CountDevicesRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CountDevicesResponse`
         """
-        return self.count_devices_with_http_info(request)
+        return self._count_devices_with_http_info(request)
 
-    def count_devices_with_http_info(self, request):
-        all_params = ['instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _count_devices_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -888,14 +818,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CountTasksRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CountTasksResponse`
         """
-        return self.count_tasks_with_http_info(request)
+        return self._count_tasks_with_http_info(request)
 
-    def count_tasks_with_http_info(self, request):
-        all_params = ['instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _count_tasks_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -949,14 +875,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CreateAppCodeAutoV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateAppCodeAutoV2Response`
         """
-        return self.create_app_code_auto_v2_with_http_info(request)
+        return self._create_app_code_auto_v2_with_http_info(request)
 
-    def create_app_code_auto_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'app_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_app_code_auto_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1012,14 +934,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CreateAppCodeV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateAppCodeV2Response`
         """
-        return self.create_app_code_v2_with_http_info(request)
+        return self._create_app_code_v2_with_http_info(request)
 
-    def create_app_code_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'app_id', 'create_app_code_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_app_code_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1077,14 +995,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CreateAppConfigV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateAppConfigV2Response`
         """
-        return self.create_app_config_v2_with_http_info(request)
+        return self._create_app_config_v2_with_http_info(request)
 
-    def create_app_config_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'app_id', 'create_app_config_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_app_config_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1142,14 +1056,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CreateAppQuotaRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateAppQuotaResponse`
         """
-        return self.create_app_quota_with_http_info(request)
+        return self._create_app_quota_with_http_info(request)
 
-    def create_app_quota_with_http_info(self, request):
-        all_params = ['instance_id', 'create_app_quota_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_app_quota_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1205,14 +1115,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CreateCommandRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateCommandResponse`
         """
-        return self.create_command_with_http_info(request)
+        return self._create_command_with_http_info(request)
 
-    def create_command_with_http_info(self, request):
-        all_params = ['instance_id', 'service_id', 'create_command_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_command_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1270,14 +1176,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CreateCommonTaskRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateCommonTaskResponse`
         """
-        return self.create_common_task_with_http_info(request)
+        return self._create_common_task_with_http_info(request)
 
-    def create_common_task_with_http_info(self, request):
-        all_params = ['instance_id', 'create_common_task_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_common_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1333,14 +1235,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CreateCustomAuthorizerV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateCustomAuthorizerV2Response`
         """
-        return self.create_custom_authorizer_v2_with_http_info(request)
+        return self._create_custom_authorizer_v2_with_http_info(request)
 
-    def create_custom_authorizer_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'create_custom_authorizer_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_custom_authorizer_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1396,14 +1294,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CreateDatasourceInfoRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateDatasourceInfoResponse`
         """
-        return self.create_datasource_info_with_http_info(request)
+        return self._create_datasource_info_with_http_info(request)
 
-    def create_datasource_info_with_http_info(self, request):
-        all_params = ['instance_id', 'create_datasource_info_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_datasource_info_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1459,14 +1353,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CreateDestinationRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateDestinationResponse`
         """
-        return self.create_destination_with_http_info(request)
+        return self._create_destination_with_http_info(request)
 
-    def create_destination_with_http_info(self, request):
-        all_params = ['instance_id', 'rule_id', 'create_destination_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_destination_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1524,14 +1414,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CreateDeviceRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateDeviceResponse`
         """
-        return self.create_device_with_http_info(request)
+        return self._create_device_with_http_info(request)
 
-    def create_device_with_http_info(self, request):
-        all_params = ['instance_id', 'create_device_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_device_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1587,14 +1473,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CreateDeviceGroupRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateDeviceGroupResponse`
         """
-        return self.create_device_group_with_http_info(request)
+        return self._create_device_group_with_http_info(request)
 
-    def create_device_group_with_http_info(self, request):
-        all_params = ['instance_id', 'create_device_group_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_device_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1650,14 +1532,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CreateDispatchesRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateDispatchesResponse`
         """
-        return self.create_dispatches_with_http_info(request)
+        return self._create_dispatches_with_http_info(request)
 
-    def create_dispatches_with_http_info(self, request):
-        all_params = ['instance_id', 'task_id', 'create_dispatches_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_dispatches_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1719,14 +1597,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CreateEnvironmentV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateEnvironmentV2Response`
         """
-        return self.create_environment_v2_with_http_info(request)
+        return self._create_environment_v2_with_http_info(request)
 
-    def create_environment_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'create_environment_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_environment_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1790,14 +1664,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CreateEnvironmentVariableV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateEnvironmentVariableV2Response`
         """
-        return self.create_environment_variable_v2_with_http_info(request)
+        return self._create_environment_variable_v2_with_http_info(request)
 
-    def create_environment_variable_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'create_environment_variable_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_environment_variable_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1855,14 +1725,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CreateFeatureV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateFeatureV2Response`
         """
-        return self.create_feature_v2_with_http_info(request)
+        return self._create_feature_v2_with_http_info(request)
 
-    def create_feature_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'create_feature_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_feature_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1918,14 +1784,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CreateLiveDataApiScriptV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateLiveDataApiScriptV2Response`
         """
-        return self.create_live_data_api_script_v2_with_http_info(request)
+        return self._create_live_data_api_script_v2_with_http_info(request)
 
-    def create_live_data_api_script_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'ld_api_id', 'create_live_data_api_script_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_live_data_api_script_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1983,14 +1845,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CreateLiveDataApiV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateLiveDataApiV2Response`
         """
-        return self.create_live_data_api_v2_with_http_info(request)
+        return self._create_live_data_api_v2_with_http_info(request)
 
-    def create_live_data_api_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'create_live_data_api_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_live_data_api_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2046,14 +1904,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CreateMqsInstanceTopicRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateMqsInstanceTopicResponse`
         """
-        return self.create_mqs_instance_topic_with_http_info(request)
+        return self._create_mqs_instance_topic_with_http_info(request)
 
-    def create_mqs_instance_topic_with_http_info(self, request):
-        all_params = ['instance_id', 'create_mqs_instance_topic_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_mqs_instance_topic_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2109,14 +1963,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CreateMultiTaskMappingsRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateMultiTaskMappingsResponse`
         """
-        return self.create_multi_task_mappings_with_http_info(request)
+        return self._create_multi_task_mappings_with_http_info(request)
 
-    def create_multi_task_mappings_with_http_info(self, request):
-        all_params = ['instance_id', 'task_id', 'create_multi_task_mappings_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_multi_task_mappings_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2174,14 +2024,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CreateMultiTasksRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateMultiTasksResponse`
         """
-        return self.create_multi_tasks_with_http_info(request)
+        return self._create_multi_tasks_with_http_info(request)
 
-    def create_multi_tasks_with_http_info(self, request):
-        all_params = ['instance_id', 'create_multi_tasks_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_multi_tasks_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2237,14 +2083,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CreateNotificationRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateNotificationResponse`
         """
-        return self.create_notification_with_http_info(request)
+        return self._create_notification_with_http_info(request)
 
-    def create_notification_with_http_info(self, request):
-        all_params = ['instance_id', 'create_notification_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_notification_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2300,14 +2142,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CreateProductRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateProductResponse`
         """
-        return self.create_product_with_http_info(request)
+        return self._create_product_with_http_info(request)
 
-    def create_product_with_http_info(self, request):
-        all_params = ['instance_id', 'create_product_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_product_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2363,14 +2201,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CreateProductTemplateRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateProductTemplateResponse`
         """
-        return self.create_product_template_with_http_info(request)
+        return self._create_product_template_with_http_info(request)
 
-    def create_product_template_with_http_info(self, request):
-        all_params = ['instance_id', 'create_product_template_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_product_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2426,14 +2260,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CreateProductTopicRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateProductTopicResponse`
         """
-        return self.create_product_topic_with_http_info(request)
+        return self._create_product_topic_with_http_info(request)
 
-    def create_product_topic_with_http_info(self, request):
-        all_params = ['instance_id', 'product_id', 'create_product_topic_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_product_topic_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2491,14 +2321,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CreatePropertyRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CreatePropertyResponse`
         """
-        return self.create_property_with_http_info(request)
+        return self._create_property_with_http_info(request)
 
-    def create_property_with_http_info(self, request):
-        all_params = ['instance_id', 'service_id', 'create_property_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_property_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2556,14 +2382,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CreateRequestPropertyRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateRequestPropertyResponse`
         """
-        return self.create_request_property_with_http_info(request)
+        return self._create_request_property_with_http_info(request)
 
-    def create_request_property_with_http_info(self, request):
-        all_params = ['instance_id', 'service_id', 'command_id', 'create_request_property_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_request_property_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2623,14 +2445,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CreateRequestThrottlingPolicyV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateRequestThrottlingPolicyV2Response`
         """
-        return self.create_request_throttling_policy_v2_with_http_info(request)
+        return self._create_request_throttling_policy_v2_with_http_info(request)
 
-    def create_request_throttling_policy_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'create_request_throttling_policy_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_request_throttling_policy_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2686,14 +2504,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CreateResponsePropertyRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateResponsePropertyResponse`
         """
-        return self.create_response_property_with_http_info(request)
+        return self._create_response_property_with_http_info(request)
 
-    def create_response_property_with_http_info(self, request):
-        all_params = ['instance_id', 'service_id', 'command_id', 'create_response_property_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_response_property_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2753,14 +2567,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CreateRuleRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateRuleResponse`
         """
-        return self.create_rule_with_http_info(request)
+        return self._create_rule_with_http_info(request)
 
-    def create_rule_with_http_info(self, request):
-        all_params = ['instance_id', 'create_rule_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2816,14 +2626,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CreateServiceRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateServiceResponse`
         """
-        return self.create_service_with_http_info(request)
+        return self._create_service_with_http_info(request)
 
-    def create_service_with_http_info(self, request):
-        all_params = ['instance_id', 'create_service_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_service_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2883,14 +2689,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CreateSignatureKeyV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateSignatureKeyV2Response`
         """
-        return self.create_signature_key_v2_with_http_info(request)
+        return self._create_signature_key_v2_with_http_info(request)
 
-    def create_signature_key_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'create_signature_key_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_signature_key_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2946,14 +2748,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CreateSourceRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateSourceResponse`
         """
-        return self.create_source_with_http_info(request)
+        return self._create_source_with_http_info(request)
 
-    def create_source_with_http_info(self, request):
-        all_params = ['instance_id', 'rule_id', 'create_source_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_source_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3015,14 +2813,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CreateSpecialThrottlingConfigurationV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateSpecialThrottlingConfigurationV2Response`
         """
-        return self.create_special_throttling_configuration_v2_with_http_info(request)
+        return self._create_special_throttling_configuration_v2_with_http_info(request)
 
-    def create_special_throttling_configuration_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'throttle_id', 'create_special_throttling_configuration_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_special_throttling_configuration_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3080,14 +2874,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DebugLiveDataApiV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.DebugLiveDataApiV2Response`
         """
-        return self.debug_live_data_api_v2_with_http_info(request)
+        return self._debug_live_data_api_v2_with_http_info(request)
 
-    def debug_live_data_api_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'ld_api_id', 'debug_live_data_api_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _debug_live_data_api_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3145,14 +2935,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DebugRuleRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.DebugRuleResponse`
         """
-        return self.debug_rule_with_http_info(request)
+        return self._debug_rule_with_http_info(request)
 
-    def debug_rule_with_http_info(self, request):
-        all_params = ['instance_id', 'debug_rule_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _debug_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3208,14 +2994,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DeleteAppAclRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteAppAclResponse`
         """
-        return self.delete_app_acl_with_http_info(request)
+        return self._delete_app_acl_with_http_info(request)
 
-    def delete_app_acl_with_http_info(self, request):
-        all_params = ['instance_id', 'app_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_app_acl_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3271,14 +3053,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DeleteAppCodeV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteAppCodeV2Response`
         """
-        return self.delete_app_code_v2_with_http_info(request)
+        return self._delete_app_code_v2_with_http_info(request)
 
-    def delete_app_code_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'app_id', 'app_code_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_app_code_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3336,14 +3114,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DeleteAppConfigV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteAppConfigV2Response`
         """
-        return self.delete_app_config_v2_with_http_info(request)
+        return self._delete_app_config_v2_with_http_info(request)
 
-    def delete_app_config_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'app_id', 'app_config_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_app_config_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3401,14 +3175,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DeleteAppQuotaRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteAppQuotaResponse`
         """
-        return self.delete_app_quota_with_http_info(request)
+        return self._delete_app_quota_with_http_info(request)
 
-    def delete_app_quota_with_http_info(self, request):
-        all_params = ['instance_id', 'app_quota_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_app_quota_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3464,14 +3234,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DeleteCommandRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteCommandResponse`
         """
-        return self.delete_command_with_http_info(request)
+        return self._delete_command_with_http_info(request)
 
-    def delete_command_with_http_info(self, request):
-        all_params = ['instance_id', 'service_id', 'command_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_command_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3529,14 +3295,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DeleteCustomAuthorizerV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteCustomAuthorizerV2Response`
         """
-        return self.delete_custom_authorizer_v2_with_http_info(request)
+        return self._delete_custom_authorizer_v2_with_http_info(request)
 
-    def delete_custom_authorizer_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'authorizer_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_custom_authorizer_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3592,14 +3354,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DeleteDatasourceInfoByIdRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteDatasourceInfoByIdResponse`
         """
-        return self.delete_datasource_info_by_id_with_http_info(request)
+        return self._delete_datasource_info_by_id_with_http_info(request)
 
-    def delete_datasource_info_by_id_with_http_info(self, request):
-        all_params = ['instance_id', 'datasource_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_datasource_info_by_id_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3655,14 +3413,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DeleteDestinationRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteDestinationResponse`
         """
-        return self.delete_destination_with_http_info(request)
+        return self._delete_destination_with_http_info(request)
 
-    def delete_destination_with_http_info(self, request):
-        all_params = ['instance_id', 'rule_id', 'destination_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_destination_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3720,14 +3474,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DeleteDeviceRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteDeviceResponse`
         """
-        return self.delete_device_with_http_info(request)
+        return self._delete_device_with_http_info(request)
 
-    def delete_device_with_http_info(self, request):
-        all_params = ['instance_id', 'device_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_device_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3783,14 +3533,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DeleteDeviceFromGroupRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteDeviceFromGroupResponse`
         """
-        return self.delete_device_from_group_with_http_info(request)
+        return self._delete_device_from_group_with_http_info(request)
 
-    def delete_device_from_group_with_http_info(self, request):
-        all_params = ['instance_id', 'device_id', 'group_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_device_from_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3848,14 +3594,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DeleteDeviceGroupRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteDeviceGroupResponse`
         """
-        return self.delete_device_group_with_http_info(request)
+        return self._delete_device_group_with_http_info(request)
 
-    def delete_device_group_with_http_info(self, request):
-        all_params = ['instance_id', 'group_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_device_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3912,14 +3654,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DeleteEnvironmentV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteEnvironmentV2Response`
         """
-        return self.delete_environment_v2_with_http_info(request)
+        return self._delete_environment_v2_with_http_info(request)
 
-    def delete_environment_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'env_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_environment_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3975,14 +3713,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DeleteEnvironmentVariableV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteEnvironmentVariableV2Response`
         """
-        return self.delete_environment_variable_v2_with_http_info(request)
+        return self._delete_environment_variable_v2_with_http_info(request)
 
-    def delete_environment_variable_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'env_variable_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_environment_variable_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4038,14 +3772,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DeleteLiveDataApiV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteLiveDataApiV2Response`
         """
-        return self.delete_live_data_api_v2_with_http_info(request)
+        return self._delete_live_data_api_v2_with_http_info(request)
 
-    def delete_live_data_api_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'ld_api_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_live_data_api_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4101,14 +3831,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DeleteMqsInstanceTopicRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteMqsInstanceTopicResponse`
         """
-        return self.delete_mqs_instance_topic_with_http_info(request)
+        return self._delete_mqs_instance_topic_with_http_info(request)
 
-    def delete_mqs_instance_topic_with_http_info(self, request):
-        all_params = ['instance_id', 'name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_mqs_instance_topic_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4164,14 +3890,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DeleteMultiTaskMappingRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteMultiTaskMappingResponse`
         """
-        return self.delete_multi_task_mapping_with_http_info(request)
+        return self._delete_multi_task_mapping_with_http_info(request)
 
-    def delete_multi_task_mapping_with_http_info(self, request):
-        all_params = ['instance_id', 'task_id', 'mapping_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_multi_task_mapping_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4229,14 +3951,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DeleteNotificationRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteNotificationResponse`
         """
-        return self.delete_notification_with_http_info(request)
+        return self._delete_notification_with_http_info(request)
 
-    def delete_notification_with_http_info(self, request):
-        all_params = ['instance_id', 'notification_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_notification_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4292,14 +4010,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DeleteProductRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteProductResponse`
         """
-        return self.delete_product_with_http_info(request)
+        return self._delete_product_with_http_info(request)
 
-    def delete_product_with_http_info(self, request):
-        all_params = ['instance_id', 'product_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_product_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4355,14 +4069,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DeleteProductTemplateRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteProductTemplateResponse`
         """
-        return self.delete_product_template_with_http_info(request)
+        return self._delete_product_template_with_http_info(request)
 
-    def delete_product_template_with_http_info(self, request):
-        all_params = ['instance_id', 'product_template_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_product_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4418,14 +4128,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DeleteProductTopicRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteProductTopicResponse`
         """
-        return self.delete_product_topic_with_http_info(request)
+        return self._delete_product_topic_with_http_info(request)
 
-    def delete_product_topic_with_http_info(self, request):
-        all_params = ['instance_id', 'product_id', 'topic_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_product_topic_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4483,14 +4189,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DeletePropertyRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.DeletePropertyResponse`
         """
-        return self.delete_property_with_http_info(request)
+        return self._delete_property_with_http_info(request)
 
-    def delete_property_with_http_info(self, request):
-        all_params = ['instance_id', 'service_id', 'property_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_property_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4548,14 +4250,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DeleteRequestPropertyRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteRequestPropertyResponse`
         """
-        return self.delete_request_property_with_http_info(request)
+        return self._delete_request_property_with_http_info(request)
 
-    def delete_request_property_with_http_info(self, request):
-        all_params = ['instance_id', 'service_id', 'command_id', 'property_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_request_property_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4615,14 +4313,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DeleteRequestThrottlingPolicyV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteRequestThrottlingPolicyV2Response`
         """
-        return self.delete_request_throttling_policy_v2_with_http_info(request)
+        return self._delete_request_throttling_policy_v2_with_http_info(request)
 
-    def delete_request_throttling_policy_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'throttle_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_request_throttling_policy_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4678,14 +4372,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DeleteResponsePropertyRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteResponsePropertyResponse`
         """
-        return self.delete_response_property_with_http_info(request)
+        return self._delete_response_property_with_http_info(request)
 
-    def delete_response_property_with_http_info(self, request):
-        all_params = ['instance_id', 'service_id', 'command_id', 'property_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_response_property_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4745,14 +4435,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DeleteRuleRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteRuleResponse`
         """
-        return self.delete_rule_with_http_info(request)
+        return self._delete_rule_with_http_info(request)
 
-    def delete_rule_with_http_info(self, request):
-        all_params = ['instance_id', 'rule_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4808,14 +4494,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DeleteServiceRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteServiceResponse`
         """
-        return self.delete_service_with_http_info(request)
+        return self._delete_service_with_http_info(request)
 
-    def delete_service_with_http_info(self, request):
-        all_params = ['instance_id', 'service_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_service_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4871,14 +4553,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DeleteSignatureKeyV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteSignatureKeyV2Response`
         """
-        return self.delete_signature_key_v2_with_http_info(request)
+        return self._delete_signature_key_v2_with_http_info(request)
 
-    def delete_signature_key_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'sign_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_signature_key_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4934,14 +4612,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DeleteSourceRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteSourceResponse`
         """
-        return self.delete_source_with_http_info(request)
+        return self._delete_source_with_http_info(request)
 
-    def delete_source_with_http_info(self, request):
-        all_params = ['instance_id', 'rule_id', 'source_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_source_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4999,14 +4673,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DeleteSpecialThrottlingConfigurationV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteSpecialThrottlingConfigurationV2Response`
         """
-        return self.delete_special_throttling_configuration_v2_with_http_info(request)
+        return self._delete_special_throttling_configuration_v2_with_http_info(request)
 
-    def delete_special_throttling_configuration_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'throttle_id', 'strategy_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_special_throttling_configuration_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5064,14 +4734,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DeleteTaskRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteTaskResponse`
         """
-        return self.delete_task_with_http_info(request)
+        return self._delete_task_with_http_info(request)
 
-    def delete_task_with_http_info(self, request):
-        all_params = ['instance_id', 'task_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5127,14 +4793,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DisassociateAppQuotaWithAppRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.DisassociateAppQuotaWithAppResponse`
         """
-        return self.disassociate_app_quota_with_app_with_http_info(request)
+        return self._disassociate_app_quota_with_app_with_http_info(request)
 
-    def disassociate_app_quota_with_app_with_http_info(self, request):
-        all_params = ['instance_id', 'app_quota_id', 'app_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _disassociate_app_quota_with_app_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5192,14 +4854,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DisassociateCertificateV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.DisassociateCertificateV2Response`
         """
-        return self.disassociate_certificate_v2_with_http_info(request)
+        return self._disassociate_certificate_v2_with_http_info(request)
 
-    def disassociate_certificate_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'group_id', 'domain_id', 'certificate_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _disassociate_certificate_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5259,14 +4917,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DisassociateDomainV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.DisassociateDomainV2Response`
         """
-        return self.disassociate_domain_v2_with_http_info(request)
+        return self._disassociate_domain_v2_with_http_info(request)
 
-    def disassociate_domain_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'group_id', 'domain_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _disassociate_domain_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5324,14 +4978,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DisassociateSignatureKeyV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.DisassociateSignatureKeyV2Response`
         """
-        return self.disassociate_signature_key_v2_with_http_info(request)
+        return self._disassociate_signature_key_v2_with_http_info(request)
 
-    def disassociate_signature_key_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'sign_bindings_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _disassociate_signature_key_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5387,14 +5037,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DownloadProductsRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.DownloadProductsResponse`
         """
-        return self.download_products_with_http_info(request)
+        return self._download_products_with_http_info(request)
 
-    def download_products_with_http_info(self, request):
-        all_params = ['instance_id', 'product_ids']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _download_products_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5451,14 +5097,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ExportMqsInstanceTopicRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ExportMqsInstanceTopicResponse`
         """
-        return self.export_mqs_instance_topic_with_http_info(request)
+        return self._export_mqs_instance_topic_with_http_info(request)
 
-    def export_mqs_instance_topic_with_http_info(self, request):
-        all_params = ['instance_id', 'name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _export_mqs_instance_topic_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5514,14 +5156,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ImportMqsInstanceTopicRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ImportMqsInstanceTopicResponse`
         """
-        return self.import_mqs_instance_topic_with_http_info(request)
+        return self._import_mqs_instance_topic_with_http_info(request)
 
-    def import_mqs_instance_topic_with_http_info(self, request):
-        all_params = ['instance_id', 'upload_file_name', 'mode', 'prefix']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _import_mqs_instance_topic_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5583,14 +5221,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.InstallMultiTasksRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.InstallMultiTasksResponse`
         """
-        return self.install_multi_tasks_with_http_info(request)
+        return self._install_multi_tasks_with_http_info(request)
 
-    def install_multi_tasks_with_http_info(self, request):
-        all_params = ['instance_id', 'install_multi_tasks_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _install_multi_tasks_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5646,14 +5280,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListApisBindedToSignatureKeyV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListApisBindedToSignatureKeyV2Response`
         """
-        return self.list_apis_binded_to_signature_key_v2_with_http_info(request)
+        return self._list_apis_binded_to_signature_key_v2_with_http_info(request)
 
-    def list_apis_binded_to_signature_key_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'sign_id', 'offset', 'limit', 'env_id', 'api_id', 'api_name', 'group_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_apis_binded_to_signature_key_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5721,14 +5351,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListApisNotBoundWithSignatureKeyV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListApisNotBoundWithSignatureKeyV2Response`
         """
-        return self.list_apis_not_bound_with_signature_key_v2_with_http_info(request)
+        return self._list_apis_not_bound_with_signature_key_v2_with_http_info(request)
 
-    def list_apis_not_bound_with_signature_key_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'sign_id', 'offset', 'limit', 'env_id', 'api_id', 'api_name', 'group_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_apis_not_bound_with_signature_key_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5796,14 +5422,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListAppCodesV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListAppCodesV2Response`
         """
-        return self.list_app_codes_v2_with_http_info(request)
+        return self._list_app_codes_v2_with_http_info(request)
 
-    def list_app_codes_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'app_id', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_app_codes_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5863,14 +5485,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListAppConfigsV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListAppConfigsV2Response`
         """
-        return self.list_app_configs_v2_with_http_info(request)
+        return self._list_app_configs_v2_with_http_info(request)
 
-    def list_app_configs_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'offset', 'limit', 'app_id', 'config_name', 'roma_app_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_app_configs_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5934,14 +5552,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListAppQuotaBindableAppsRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListAppQuotaBindableAppsResponse`
         """
-        return self.list_app_quota_bindable_apps_with_http_info(request)
+        return self._list_app_quota_bindable_apps_with_http_info(request)
 
-    def list_app_quota_bindable_apps_with_http_info(self, request):
-        all_params = ['instance_id', 'app_quota_id', 'offset', 'limit', 'app_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_app_quota_bindable_apps_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6003,14 +5617,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListAppQuotaBoundAppsRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListAppQuotaBoundAppsResponse`
         """
-        return self.list_app_quota_bound_apps_with_http_info(request)
+        return self._list_app_quota_bound_apps_with_http_info(request)
 
-    def list_app_quota_bound_apps_with_http_info(self, request):
-        all_params = ['instance_id', 'app_quota_id', 'offset', 'limit', 'app_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_app_quota_bound_apps_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6072,14 +5682,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListAppQuotasRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListAppQuotasResponse`
         """
-        return self.list_app_quotas_with_http_info(request)
+        return self._list_app_quotas_with_http_info(request)
 
-    def list_app_quotas_with_http_info(self, request):
-        all_params = ['instance_id', 'offset', 'limit', 'name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_app_quotas_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6139,14 +5745,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListAppsV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListAppsV2Response`
         """
-        return self.list_apps_v2_with_http_info(request)
+        return self._list_apps_v2_with_http_info(request)
 
-    def list_apps_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'offset', 'limit', 'id', 'name', 'status', 'app_key', 'precise_search']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_apps_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6214,14 +5816,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListCommandsRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListCommandsResponse`
         """
-        return self.list_commands_with_http_info(request)
+        return self._list_commands_with_http_info(request)
 
-    def list_commands_with_http_info(self, request):
-        all_params = ['instance_id', 'service_id', 'limit', 'command_id', 'command_name', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_commands_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6285,14 +5883,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListCustomAuthorizersV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListCustomAuthorizersV2Response`
         """
-        return self.list_custom_authorizers_v2_with_http_info(request)
+        return self._list_custom_authorizers_v2_with_http_info(request)
 
-    def list_custom_authorizers_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'offset', 'limit', 'id', 'name', 'type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_custom_authorizers_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6356,14 +5950,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListDatasourceColumnsRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListDatasourceColumnsResponse`
         """
-        return self.list_datasource_columns_with_http_info(request)
+        return self._list_datasource_columns_with_http_info(request)
 
-    def list_datasource_columns_with_http_info(self, request):
-        all_params = ['instance_id', 'datasource_id', 'position', 'db_name', 'table_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_datasource_columns_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6425,14 +6015,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListDatasourceTablesRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListDatasourceTablesResponse`
         """
-        return self.list_datasource_tables_with_http_info(request)
+        return self._list_datasource_tables_with_http_info(request)
 
-    def list_datasource_tables_with_http_info(self, request):
-        all_params = ['instance_id', 'datasource_id', 'position', 'db_name', 'db_schema', 'filter']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_datasource_tables_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6496,14 +6082,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListDatasourcesRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListDatasourcesResponse`
         """
-        return self.list_datasources_with_http_info(request)
+        return self._list_datasources_with_http_info(request)
 
-    def list_datasources_with_http_info(self, request):
-        all_params = ['instance_id', 'limit', 'offset', 'datasource_type', 'sort_field', 'sort_type', 'name', 'app_id', 'custom_plugin_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_datasources_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6573,14 +6155,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListDestinationsRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListDestinationsResponse`
         """
-        return self.list_destinations_with_http_info(request)
+        return self._list_destinations_with_http_info(request)
 
-    def list_destinations_with_http_info(self, request):
-        all_params = ['instance_id', 'rule_id', 'limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_destinations_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6640,14 +6218,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListDevicesRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListDevicesResponse`
         """
-        return self.list_devices_with_http_info(request)
+        return self._list_devices_with_http_info(request)
 
-    def list_devices_with_http_info(self, request):
-        all_params = ['instance_id', 'limit', 'offset', 'app_id', 'product_id', 'product_name', 'device_name', 'client_id', 'node_id', 'node_type', 'online_status', 'created_date_start', 'created_date_end', 'tag']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_devices_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6727,14 +6301,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListDevicesInProductRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListDevicesInProductResponse`
         """
-        return self.list_devices_in_product_with_http_info(request)
+        return self._list_devices_in_product_with_http_info(request)
 
-    def list_devices_in_product_with_http_info(self, request):
-        all_params = ['instance_id', 'product_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_devices_in_product_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6790,14 +6360,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListEnvironmentVariablesV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListEnvironmentVariablesV2Response`
         """
-        return self.list_environment_variables_v2_with_http_info(request)
+        return self._list_environment_variables_v2_with_http_info(request)
 
-    def list_environment_variables_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'group_id', 'offset', 'limit', 'env_id', 'variable_name', 'precise_search']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_environment_variables_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6863,14 +6429,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListEnvironmentsV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListEnvironmentsV2Response`
         """
-        return self.list_environments_v2_with_http_info(request)
+        return self._list_environments_v2_with_http_info(request)
 
-    def list_environments_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'offset', 'limit', 'name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_environments_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6932,14 +6494,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListFeaturesV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListFeaturesV2Response`
         """
-        return self.list_features_v2_with_http_info(request)
+        return self._list_features_v2_with_http_info(request)
 
-    def list_features_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_features_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6998,14 +6556,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListLatelyApiStatisticsV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListLatelyApiStatisticsV2Response`
         """
-        return self.list_lately_api_statistics_v2_with_http_info(request)
+        return self._list_lately_api_statistics_v2_with_http_info(request)
 
-    def list_lately_api_statistics_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'api_id', 'duration']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_lately_api_statistics_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7063,14 +6617,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListLiveDataApiDeploymentHistoryV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListLiveDataApiDeploymentHistoryV2Response`
         """
-        return self.list_live_data_api_deployment_history_v2_with_http_info(request)
+        return self._list_live_data_api_deployment_history_v2_with_http_info(request)
 
-    def list_live_data_api_deployment_history_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'ld_api_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_live_data_api_deployment_history_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7126,14 +6676,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListLiveDataApiTestHistoryV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListLiveDataApiTestHistoryV2Response`
         """
-        return self.list_live_data_api_test_history_v2_with_http_info(request)
+        return self._list_live_data_api_test_history_v2_with_http_info(request)
 
-    def list_live_data_api_test_history_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'ld_api_id', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_live_data_api_test_history_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7193,14 +6739,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListLiveDataApiV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListLiveDataApiV2Response`
         """
-        return self.list_live_data_api_v2_with_http_info(request)
+        return self._list_live_data_api_v2_with_http_info(request)
 
-    def list_live_data_api_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'offset', 'limit', 'app_id', 'app_name', 'name', 'status', 'path', 'precise_search']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_live_data_api_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7270,14 +6812,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListLiveDataDataSourcesV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListLiveDataDataSourcesV2Response`
         """
-        return self.list_live_data_data_sources_v2_with_http_info(request)
+        return self._list_live_data_data_sources_v2_with_http_info(request)
 
-    def list_live_data_data_sources_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'app_id', 'offset', 'limit', 'name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_live_data_data_sources_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7339,14 +6877,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListLiveDataQuotaV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListLiveDataQuotaV2Response`
         """
-        return self.list_live_data_quota_v2_with_http_info(request)
+        return self._list_live_data_quota_v2_with_http_info(request)
 
-    def list_live_data_quota_v2_with_http_info(self, request):
-        all_params = ['instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_live_data_quota_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7400,14 +6934,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListMonitorInfosRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListMonitorInfosResponse`
         """
-        return self.list_monitor_infos_with_http_info(request)
+        return self._list_monitor_infos_with_http_info(request)
 
-    def list_monitor_infos_with_http_info(self, request):
-        all_params = ['instance_id', 'offset', 'limit', 'task_name', 'execute_status']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_monitor_infos_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7469,14 +6999,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListMonitorLogRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListMonitorLogResponse`
         """
-        return self.list_monitor_log_with_http_info(request)
+        return self._list_monitor_log_with_http_info(request)
 
-    def list_monitor_log_with_http_info(self, request):
-        all_params = ['instance_id', 'task_id', 'offset', 'limit', 'begin_time', 'end_time']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_monitor_log_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7540,14 +7066,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListMqsInstanceTopicsRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListMqsInstanceTopicsResponse`
         """
-        return self.list_mqs_instance_topics_with_http_info(request)
+        return self._list_mqs_instance_topics_with_http_info(request)
 
-    def list_mqs_instance_topics_with_http_info(self, request):
-        all_params = ['instance_id', 'app_name', 'name', 'access_policy', 'limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_mqs_instance_topics_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7611,14 +7133,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListNotificationRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListNotificationResponse`
         """
-        return self.list_notification_with_http_info(request)
+        return self._list_notification_with_http_info(request)
 
-    def list_notification_with_http_info(self, request):
-        all_params = ['instance_id', 'limit', 'offset', 'app_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_notification_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7678,14 +7196,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListProductTemplatesRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListProductTemplatesResponse`
         """
-        return self.list_product_templates_with_http_info(request)
+        return self._list_product_templates_with_http_info(request)
 
-    def list_product_templates_with_http_info(self, request):
-        all_params = ['instance_id', 'limit', 'id', 'name', 'status', 'created_user_name', 'created_date_start', 'created_date_end', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_product_templates_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7755,14 +7269,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListProductTopicsRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListProductTopicsResponse`
         """
-        return self.list_product_topics_with_http_info(request)
+        return self._list_product_topics_with_http_info(request)
 
-    def list_product_topics_with_http_info(self, request):
-        all_params = ['instance_id', 'product_id', 'limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_product_topics_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7822,14 +7332,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListProductsRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListProductsResponse`
         """
-        return self.list_products_with_http_info(request)
+        return self._list_products_with_http_info(request)
 
-    def list_products_with_http_info(self, request):
-        all_params = ['instance_id', 'limit', 'app_id', 'id', 'name', 'manufacturer_id', 'manufacturer_name', 'model', 'device_type', 'product_type', 'protocol_type', 'created_user_name', 'created_date_start', 'created_date_end', 'offset', 'app_name', 'product_serial']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_products_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7915,14 +7421,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListProjectCofigsV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListProjectCofigsV2Response`
         """
-        return self.list_project_cofigs_v2_with_http_info(request)
+        return self._list_project_cofigs_v2_with_http_info(request)
 
-    def list_project_cofigs_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_project_cofigs_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7980,14 +7482,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListPropertiesRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListPropertiesResponse`
         """
-        return self.list_properties_with_http_info(request)
+        return self._list_properties_with_http_info(request)
 
-    def list_properties_with_http_info(self, request):
-        all_params = ['instance_id', 'service_id', 'limit', 'property_id', 'property_name', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_properties_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -8051,14 +7549,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListRequestPropertiesRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListRequestPropertiesResponse`
         """
-        return self.list_request_properties_with_http_info(request)
+        return self._list_request_properties_with_http_info(request)
 
-    def list_request_properties_with_http_info(self, request):
-        all_params = ['instance_id', 'service_id', 'command_id', 'limit', 'request_id', 'request_name', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_request_properties_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -8124,14 +7618,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListRequestThrottlingPolicyV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListRequestThrottlingPolicyV2Response`
         """
-        return self.list_request_throttling_policy_v2_with_http_info(request)
+        return self._list_request_throttling_policy_v2_with_http_info(request)
 
-    def list_request_throttling_policy_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'offset', 'limit', 'id', 'name', 'precise_search']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_request_throttling_policy_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -8195,14 +7685,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListResponsePropertiesRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListResponsePropertiesResponse`
         """
-        return self.list_response_properties_with_http_info(request)
+        return self._list_response_properties_with_http_info(request)
 
-    def list_response_properties_with_http_info(self, request):
-        all_params = ['instance_id', 'service_id', 'command_id', 'limit', 'response_id', 'response_name', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_response_properties_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -8268,14 +7754,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListRulesRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListRulesResponse`
         """
-        return self.list_rules_with_http_info(request)
+        return self._list_rules_with_http_info(request)
 
-    def list_rules_with_http_info(self, request):
-        all_params = ['instance_id', 'limit', 'app_id', 'name', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_rules_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -8337,14 +7819,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListServicesRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListServicesResponse`
         """
-        return self.list_services_with_http_info(request)
+        return self._list_services_with_http_info(request)
 
-    def list_services_with_http_info(self, request):
-        all_params = ['instance_id', 'limit', 'service_id', 'service_name', 'product_template_id', 'product_id', 'created_user_name', 'created_date_start', 'created_date_end', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_services_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -8416,14 +7894,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListShadowsRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListShadowsResponse`
         """
-        return self.list_shadows_with_http_info(request)
+        return self._list_shadows_with_http_info(request)
 
-    def list_shadows_with_http_info(self, request):
-        all_params = ['instance_id', 'device_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_shadows_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -8479,14 +7953,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListSignatureKeysBindedToApiV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListSignatureKeysBindedToApiV2Response`
         """
-        return self.list_signature_keys_binded_to_api_v2_with_http_info(request)
+        return self._list_signature_keys_binded_to_api_v2_with_http_info(request)
 
-    def list_signature_keys_binded_to_api_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'api_id', 'offset', 'limit', 'sign_id', 'sign_name', 'env_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_signature_keys_binded_to_api_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -8552,14 +8022,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListSignatureKeysV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListSignatureKeysV2Response`
         """
-        return self.list_signature_keys_v2_with_http_info(request)
+        return self._list_signature_keys_v2_with_http_info(request)
 
-    def list_signature_keys_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'offset', 'limit', 'id', 'name', 'precise_search']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_signature_keys_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -8623,14 +8089,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListSourcesRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListSourcesResponse`
         """
-        return self.list_sources_with_http_info(request)
+        return self._list_sources_with_http_info(request)
 
-    def list_sources_with_http_info(self, request):
-        all_params = ['instance_id', 'rule_id', 'limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_sources_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -8690,14 +8152,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListSpecialThrottlingConfigurationsV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListSpecialThrottlingConfigurationsV2Response`
         """
-        return self.list_special_throttling_configurations_v2_with_http_info(request)
+        return self._list_special_throttling_configurations_v2_with_http_info(request)
 
-    def list_special_throttling_configurations_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'throttle_id', 'offset', 'limit', 'object_type', 'app_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_special_throttling_configurations_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -8761,14 +8219,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListStatisticsApiRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListStatisticsApiResponse`
         """
-        return self.list_statistics_api_with_http_info(request)
+        return self._list_statistics_api_with_http_info(request)
 
-    def list_statistics_api_with_http_info(self, request):
-        all_params = ['instance_id', 'mode', 'roma_app_id', 'api_id', 'cycle', 'start_time', 'end_time', 'duration']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_statistics_api_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -8836,14 +8290,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListSubsetsRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListSubsetsResponse`
         """
-        return self.list_subsets_with_http_info(request)
+        return self._list_subsets_with_http_info(request)
 
-    def list_subsets_with_http_info(self, request):
-        all_params = ['instance_id', 'device_id', 'limit', 'device_name', 'status', 'online_status', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_subsets_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -8909,14 +8359,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListTagsV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListTagsV2Response`
         """
-        return self.list_tags_v2_with_http_info(request)
+        return self._list_tags_v2_with_http_info(request)
 
-    def list_tags_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_tags_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -8974,14 +8420,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListTasksRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListTasksResponse`
         """
-        return self.list_tasks_with_http_info(request)
+        return self._list_tasks_with_http_info(request)
 
-    def list_tasks_with_http_info(self, request):
-        all_params = ['instance_id', 'limit', 'offset', 'task_id', 'name', 'status', 'task_type', 'source_datasource_id', 'target_datasource_id', 'sort_field', 'sort_type', 'execute_status', 'source_app_id', 'target_app_id', 'task_tag']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_tasks_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -9063,14 +8505,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListTopicsRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListTopicsResponse`
         """
-        return self.list_topics_with_http_info(request)
+        return self._list_topics_with_http_info(request)
 
-    def list_topics_with_http_info(self, request):
-        all_params = ['instance_id', 'device_id', 'limit', 'offset', 'name', 'topic_permission', 'topic_type', 'is_private']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_topics_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -9138,14 +8576,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.PublishLiveDataApiV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.PublishLiveDataApiV2Response`
         """
-        return self.publish_live_data_api_v2_with_http_info(request)
+        return self._publish_live_data_api_v2_with_http_info(request)
 
-    def publish_live_data_api_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'ld_api_id', 'publish_live_data_api_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _publish_live_data_api_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -9203,14 +8637,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ResetAuthenticationRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ResetAuthenticationResponse`
         """
-        return self.reset_authentication_with_http_info(request)
+        return self._reset_authentication_with_http_info(request)
 
-    def reset_authentication_with_http_info(self, request):
-        all_params = ['instance_id', 'device_id', 'reset_authentication_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _reset_authentication_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -9268,14 +8698,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ResetMessagesRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ResetMessagesResponse`
         """
-        return self.reset_messages_with_http_info(request)
+        return self._reset_messages_with_http_info(request)
 
-    def reset_messages_with_http_info(self, request):
-        all_params = ['instance_id', 'action_id', 'reset_messages_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _reset_messages_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -9333,14 +8759,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ResetMultiTaskOffsetRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ResetMultiTaskOffsetResponse`
         """
-        return self.reset_multi_task_offset_with_http_info(request)
+        return self._reset_multi_task_offset_with_http_info(request)
 
-    def reset_multi_task_offset_with_http_info(self, request):
-        all_params = ['instance_id', 'task_id', 'reset_multi_task_offset_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _reset_multi_task_offset_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -9398,14 +8820,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ResetProductAuthenticationRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ResetProductAuthenticationResponse`
         """
-        return self.reset_product_authentication_with_http_info(request)
+        return self._reset_product_authentication_with_http_info(request)
 
-    def reset_product_authentication_with_http_info(self, request):
-        all_params = ['instance_id', 'product_id', 'reset_product_authentication_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _reset_product_authentication_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -9463,14 +8881,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.RunTaskRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.RunTaskResponse`
         """
-        return self.run_task_with_http_info(request)
+        return self._run_task_with_http_info(request)
 
-    def run_task_with_http_info(self, request):
-        all_params = ['instance_id', 'task_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _run_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -9526,14 +8940,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.SendCommandRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.SendCommandResponse`
         """
-        return self.send_command_with_http_info(request)
+        return self._send_command_with_http_info(request)
 
-    def send_command_with_http_info(self, request):
-        all_params = ['instance_id', 'device_id', 'send_command_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _send_command_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -9591,14 +9001,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ShowAppBoundAppQuotaRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowAppBoundAppQuotaResponse`
         """
-        return self.show_app_bound_app_quota_with_http_info(request)
+        return self._show_app_bound_app_quota_with_http_info(request)
 
-    def show_app_bound_app_quota_with_http_info(self, request):
-        all_params = ['instance_id', 'app_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_app_bound_app_quota_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -9654,14 +9060,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ShowAppQuotaRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowAppQuotaResponse`
         """
-        return self.show_app_quota_with_http_info(request)
+        return self._show_app_quota_with_http_info(request)
 
-    def show_app_quota_with_http_info(self, request):
-        all_params = ['instance_id', 'app_quota_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_app_quota_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -9717,14 +9119,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ShowAuthenticationRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowAuthenticationResponse`
         """
-        return self.show_authentication_with_http_info(request)
+        return self._show_authentication_with_http_info(request)
 
-    def show_authentication_with_http_info(self, request):
-        all_params = ['instance_id', 'device_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_authentication_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -9780,14 +9178,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ShowCommandRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowCommandResponse`
         """
-        return self.show_command_with_http_info(request)
+        return self._show_command_with_http_info(request)
 
-    def show_command_with_http_info(self, request):
-        all_params = ['instance_id', 'service_id', 'command_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_command_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -9845,14 +9239,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ShowDataourceDetailRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowDataourceDetailResponse`
         """
-        return self.show_dataource_detail_with_http_info(request)
+        return self._show_dataource_detail_with_http_info(request)
 
-    def show_dataource_detail_with_http_info(self, request):
-        all_params = ['instance_id', 'datasource_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_dataource_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -9908,14 +9298,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ShowDetailsOfAppAclRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowDetailsOfAppAclResponse`
         """
-        return self.show_details_of_app_acl_with_http_info(request)
+        return self._show_details_of_app_acl_with_http_info(request)
 
-    def show_details_of_app_acl_with_http_info(self, request):
-        all_params = ['instance_id', 'app_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_details_of_app_acl_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -9971,14 +9357,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ShowDetailsOfAppCodeV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowDetailsOfAppCodeV2Response`
         """
-        return self.show_details_of_app_code_v2_with_http_info(request)
+        return self._show_details_of_app_code_v2_with_http_info(request)
 
-    def show_details_of_app_code_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'app_id', 'app_code_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_details_of_app_code_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -10036,14 +9418,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ShowDetailsOfAppConfigV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowDetailsOfAppConfigV2Response`
         """
-        return self.show_details_of_app_config_v2_with_http_info(request)
+        return self._show_details_of_app_config_v2_with_http_info(request)
 
-    def show_details_of_app_config_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'app_id', 'app_config_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_details_of_app_config_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -10101,14 +9479,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ShowDetailsOfAppV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowDetailsOfAppV2Response`
         """
-        return self.show_details_of_app_v2_with_http_info(request)
+        return self._show_details_of_app_v2_with_http_info(request)
 
-    def show_details_of_app_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'app_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_details_of_app_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -10164,14 +9538,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ShowDetailsOfCustomAuthorizersV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowDetailsOfCustomAuthorizersV2Response`
         """
-        return self.show_details_of_custom_authorizers_v2_with_http_info(request)
+        return self._show_details_of_custom_authorizers_v2_with_http_info(request)
 
-    def show_details_of_custom_authorizers_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'authorizer_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_details_of_custom_authorizers_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -10227,14 +9597,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ShowDetailsOfDomainNameCertificateV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowDetailsOfDomainNameCertificateV2Response`
         """
-        return self.show_details_of_domain_name_certificate_v2_with_http_info(request)
+        return self._show_details_of_domain_name_certificate_v2_with_http_info(request)
 
-    def show_details_of_domain_name_certificate_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'group_id', 'domain_id', 'certificate_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_details_of_domain_name_certificate_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -10294,14 +9660,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ShowDetailsOfEnvironmentVariableV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowDetailsOfEnvironmentVariableV2Response`
         """
-        return self.show_details_of_environment_variable_v2_with_http_info(request)
+        return self._show_details_of_environment_variable_v2_with_http_info(request)
 
-    def show_details_of_environment_variable_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'env_variable_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_details_of_environment_variable_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -10357,14 +9719,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ShowDetailsOfInstanceV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowDetailsOfInstanceV2Response`
         """
-        return self.show_details_of_instance_v2_with_http_info(request)
+        return self._show_details_of_instance_v2_with_http_info(request)
 
-    def show_details_of_instance_v2_with_http_info(self, request):
-        all_params = ['instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_details_of_instance_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -10418,14 +9776,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ShowDetailsOfRequestThrottlingPolicyV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowDetailsOfRequestThrottlingPolicyV2Response`
         """
-        return self.show_details_of_request_throttling_policy_v2_with_http_info(request)
+        return self._show_details_of_request_throttling_policy_v2_with_http_info(request)
 
-    def show_details_of_request_throttling_policy_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'throttle_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_details_of_request_throttling_policy_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -10481,14 +9835,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ShowDeviceRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowDeviceResponse`
         """
-        return self.show_device_with_http_info(request)
+        return self._show_device_with_http_info(request)
 
-    def show_device_with_http_info(self, request):
-        all_params = ['instance_id', 'device_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_device_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -10544,14 +9894,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ShowDeviceGroupRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowDeviceGroupResponse`
         """
-        return self.show_device_group_with_http_info(request)
+        return self._show_device_group_with_http_info(request)
 
-    def show_device_group_with_http_info(self, request):
-        all_params = ['instance_id', 'group_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_device_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -10607,14 +9953,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ShowDeviceGroupTreeRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowDeviceGroupTreeResponse`
         """
-        return self.show_device_group_tree_with_http_info(request)
+        return self._show_device_group_tree_with_http_info(request)
 
-    def show_device_group_tree_with_http_info(self, request):
-        all_params = ['instance_id', 'app_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_device_group_tree_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -10670,14 +10012,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ShowDevicesInGroupRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowDevicesInGroupResponse`
         """
-        return self.show_devices_in_group_with_http_info(request)
+        return self._show_devices_in_group_with_http_info(request)
 
-    def show_devices_in_group_with_http_info(self, request):
-        all_params = ['instance_id', 'group_id', 'limit', 'product_name', 'device_name', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_devices_in_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -10741,14 +10079,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ShowDispatchesRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowDispatchesResponse`
         """
-        return self.show_dispatches_with_http_info(request)
+        return self._show_dispatches_with_http_info(request)
 
-    def show_dispatches_with_http_info(self, request):
-        all_params = ['instance_id', 'task_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_dispatches_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -10804,14 +10138,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ShowLiveDataApiV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowLiveDataApiV2Response`
         """
-        return self.show_live_data_api_v2_with_http_info(request)
+        return self._show_live_data_api_v2_with_http_info(request)
 
-    def show_live_data_api_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'ld_api_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_live_data_api_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -10868,14 +10198,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ShowMqsInstanceMessagesRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowMqsInstanceMessagesResponse`
         """
-        return self.show_mqs_instance_messages_with_http_info(request)
+        return self._show_mqs_instance_messages_with_http_info(request)
 
-    def show_mqs_instance_messages_with_http_info(self, request):
-        all_params = ['instance_id', 'topic', 'start_time', 'end_time', 'asc', 'limit', 'offset', 'download', 'message_offset', 'partition', 'key', 'message_id', 'tag']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_mqs_instance_messages_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -10953,14 +10279,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ShowMqsInstanceTopicAccessPolicyRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowMqsInstanceTopicAccessPolicyResponse`
         """
-        return self.show_mqs_instance_topic_access_policy_with_http_info(request)
+        return self._show_mqs_instance_topic_access_policy_with_http_info(request)
 
-    def show_mqs_instance_topic_access_policy_with_http_info(self, request):
-        all_params = ['instance_id', 'topic_name', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_mqs_instance_topic_access_policy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -11020,14 +10342,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ShowProductRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowProductResponse`
         """
-        return self.show_product_with_http_info(request)
+        return self._show_product_with_http_info(request)
 
-    def show_product_with_http_info(self, request):
-        all_params = ['instance_id', 'product_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_product_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -11083,14 +10401,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ShowProductAuthenticationRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowProductAuthenticationResponse`
         """
-        return self.show_product_authentication_with_http_info(request)
+        return self._show_product_authentication_with_http_info(request)
 
-    def show_product_authentication_with_http_info(self, request):
-        all_params = ['instance_id', 'product_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_product_authentication_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -11146,14 +10460,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ShowProductTemplateRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowProductTemplateResponse`
         """
-        return self.show_product_template_with_http_info(request)
+        return self._show_product_template_with_http_info(request)
 
-    def show_product_template_with_http_info(self, request):
-        all_params = ['instance_id', 'product_template_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_product_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -11209,14 +10519,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ShowPropertyRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowPropertyResponse`
         """
-        return self.show_property_with_http_info(request)
+        return self._show_property_with_http_info(request)
 
-    def show_property_with_http_info(self, request):
-        all_params = ['instance_id', 'service_id', 'property_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_property_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -11274,14 +10580,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ShowRequestPropertyRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowRequestPropertyResponse`
         """
-        return self.show_request_property_with_http_info(request)
+        return self._show_request_property_with_http_info(request)
 
-    def show_request_property_with_http_info(self, request):
-        all_params = ['instance_id', 'service_id', 'command_id', 'property_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_request_property_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -11341,14 +10643,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ShowResponsePropertyRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowResponsePropertyResponse`
         """
-        return self.show_response_property_with_http_info(request)
+        return self._show_response_property_with_http_info(request)
 
-    def show_response_property_with_http_info(self, request):
-        all_params = ['instance_id', 'service_id', 'command_id', 'property_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_response_property_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -11408,14 +10706,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ShowRestrictionOfInstanceV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowRestrictionOfInstanceV2Response`
         """
-        return self.show_restriction_of_instance_v2_with_http_info(request)
+        return self._show_restriction_of_instance_v2_with_http_info(request)
 
-    def show_restriction_of_instance_v2_with_http_info(self, request):
-        all_params = ['instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_restriction_of_instance_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -11469,14 +10763,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ShowRuleRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowRuleResponse`
         """
-        return self.show_rule_with_http_info(request)
+        return self._show_rule_with_http_info(request)
 
-    def show_rule_with_http_info(self, request):
-        all_params = ['instance_id', 'rule_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -11532,14 +10822,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ShowServiceRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowServiceResponse`
         """
-        return self.show_service_with_http_info(request)
+        return self._show_service_with_http_info(request)
 
-    def show_service_with_http_info(self, request):
-        all_params = ['instance_id', 'service_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_service_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -11595,14 +10881,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ShowTaskRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowTaskResponse`
         """
-        return self.show_task_with_http_info(request)
+        return self._show_task_with_http_info(request)
 
-    def show_task_with_http_info(self, request):
-        all_params = ['instance_id', 'task_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -11658,14 +10940,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.StartTestDatasourceRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.StartTestDatasourceResponse`
         """
-        return self.start_test_datasource_with_http_info(request)
+        return self._start_test_datasource_with_http_info(request)
 
-    def start_test_datasource_with_http_info(self, request):
-        all_params = ['instance_id', 'datasource_id', 'start_test_datasource_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _start_test_datasource_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -11723,14 +11001,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.StopTaskRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.StopTaskResponse`
         """
-        return self.stop_task_with_http_info(request)
+        return self._stop_task_with_http_info(request)
 
-    def stop_task_with_http_info(self, request):
-        all_params = ['instance_id', 'task_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _stop_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -11786,14 +11060,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.UnpublishLiveDataApiV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.UnpublishLiveDataApiV2Response`
         """
-        return self.unpublish_live_data_api_v2_with_http_info(request)
+        return self._unpublish_live_data_api_v2_with_http_info(request)
 
-    def unpublish_live_data_api_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'ld_api_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _unpublish_live_data_api_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -11849,14 +11119,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.UpdateAppAclRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateAppAclResponse`
         """
-        return self.update_app_acl_with_http_info(request)
+        return self._update_app_acl_with_http_info(request)
 
-    def update_app_acl_with_http_info(self, request):
-        all_params = ['instance_id', 'app_id', 'update_app_acl_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_app_acl_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -11914,14 +11180,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.UpdateAppConfigV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateAppConfigV2Response`
         """
-        return self.update_app_config_v2_with_http_info(request)
+        return self._update_app_config_v2_with_http_info(request)
 
-    def update_app_config_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'app_id', 'app_config_id', 'update_app_c_onfig_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_app_config_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -11981,14 +11243,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.UpdateAppQuotaRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateAppQuotaResponse`
         """
-        return self.update_app_quota_with_http_info(request)
+        return self._update_app_quota_with_http_info(request)
 
-    def update_app_quota_with_http_info(self, request):
-        all_params = ['instance_id', 'app_quota_id', 'update_app_quota_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_app_quota_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -12046,14 +11304,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.UpdateCommandRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateCommandResponse`
         """
-        return self.update_command_with_http_info(request)
+        return self._update_command_with_http_info(request)
 
-    def update_command_with_http_info(self, request):
-        all_params = ['instance_id', 'service_id', 'command_id', 'update_command_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_command_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -12113,14 +11367,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.UpdateCustomAuthorizerV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateCustomAuthorizerV2Response`
         """
-        return self.update_custom_authorizer_v2_with_http_info(request)
+        return self._update_custom_authorizer_v2_with_http_info(request)
 
-    def update_custom_authorizer_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'authorizer_id', 'update_custom_authorizer_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_custom_authorizer_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -12178,14 +11428,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.UpdateDatasourceInfoRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateDatasourceInfoResponse`
         """
-        return self.update_datasource_info_with_http_info(request)
+        return self._update_datasource_info_with_http_info(request)
 
-    def update_datasource_info_with_http_info(self, request):
-        all_params = ['instance_id', 'datasource_id', 'update_datasource_info_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_datasource_info_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -12243,14 +11489,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.UpdateDeviceRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateDeviceResponse`
         """
-        return self.update_device_with_http_info(request)
+        return self._update_device_with_http_info(request)
 
-    def update_device_with_http_info(self, request):
-        all_params = ['instance_id', 'device_id', 'update_device_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_device_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -12308,14 +11550,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.UpdateDeviceGroupRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateDeviceGroupResponse`
         """
-        return self.update_device_group_with_http_info(request)
+        return self._update_device_group_with_http_info(request)
 
-    def update_device_group_with_http_info(self, request):
-        all_params = ['instance_id', 'group_id', 'update_device_group_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_device_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -12373,14 +11611,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.UpdateDispatchesRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateDispatchesResponse`
         """
-        return self.update_dispatches_with_http_info(request)
+        return self._update_dispatches_with_http_info(request)
 
-    def update_dispatches_with_http_info(self, request):
-        all_params = ['instance_id', 'task_id', 'dispatch_id', 'update_dispatches_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_dispatches_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -12440,14 +11674,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.UpdateDomainV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateDomainV2Response`
         """
-        return self.update_domain_v2_with_http_info(request)
+        return self._update_domain_v2_with_http_info(request)
 
-    def update_domain_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'group_id', 'domain_id', 'update_domain_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_domain_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -12507,14 +11737,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.UpdateEnvironmentV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateEnvironmentV2Response`
         """
-        return self.update_environment_v2_with_http_info(request)
+        return self._update_environment_v2_with_http_info(request)
 
-    def update_environment_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'env_id', 'update_environment_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_environment_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -12572,14 +11798,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.UpdateEnvironmentVariableV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateEnvironmentVariableV2Response`
         """
-        return self.update_environment_variable_v2_with_http_info(request)
+        return self._update_environment_variable_v2_with_http_info(request)
 
-    def update_environment_variable_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'env_variable_id', 'update_environment_variable_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_environment_variable_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -12637,14 +11859,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.UpdateLiveDataApiV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateLiveDataApiV2Response`
         """
-        return self.update_live_data_api_v2_with_http_info(request)
+        return self._update_live_data_api_v2_with_http_info(request)
 
-    def update_live_data_api_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'ld_api_id', 'update_live_data_api_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_live_data_api_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -12702,14 +11920,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.UpdateMqsInstanceTopicRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateMqsInstanceTopicResponse`
         """
-        return self.update_mqs_instance_topic_with_http_info(request)
+        return self._update_mqs_instance_topic_with_http_info(request)
 
-    def update_mqs_instance_topic_with_http_info(self, request):
-        all_params = ['instance_id', 'update_mqs_instance_topic_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_mqs_instance_topic_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -12765,14 +11979,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.UpdateMultiTasksRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateMultiTasksResponse`
         """
-        return self.update_multi_tasks_with_http_info(request)
+        return self._update_multi_tasks_with_http_info(request)
 
-    def update_multi_tasks_with_http_info(self, request):
-        all_params = ['instance_id', 'task_id', 'update_multi_tasks_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_multi_tasks_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -12830,14 +12040,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.UpdateNotificationRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateNotificationResponse`
         """
-        return self.update_notification_with_http_info(request)
+        return self._update_notification_with_http_info(request)
 
-    def update_notification_with_http_info(self, request):
-        all_params = ['instance_id', 'notification_id', 'update_notification_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_notification_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -12895,14 +12101,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.UpdateProductRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateProductResponse`
         """
-        return self.update_product_with_http_info(request)
+        return self._update_product_with_http_info(request)
 
-    def update_product_with_http_info(self, request):
-        all_params = ['instance_id', 'product_id', 'update_product_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_product_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -12960,14 +12162,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.UpdateProductTemplateRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateProductTemplateResponse`
         """
-        return self.update_product_template_with_http_info(request)
+        return self._update_product_template_with_http_info(request)
 
-    def update_product_template_with_http_info(self, request):
-        all_params = ['instance_id', 'product_template_id', 'update_product_template_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_product_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -13025,14 +12223,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.UpdateProductTopicRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateProductTopicResponse`
         """
-        return self.update_product_topic_with_http_info(request)
+        return self._update_product_topic_with_http_info(request)
 
-    def update_product_topic_with_http_info(self, request):
-        all_params = ['instance_id', 'product_id', 'topic_id', 'update_product_topic_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_product_topic_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -13092,14 +12286,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.UpdatePropertyRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdatePropertyResponse`
         """
-        return self.update_property_with_http_info(request)
+        return self._update_property_with_http_info(request)
 
-    def update_property_with_http_info(self, request):
-        all_params = ['instance_id', 'service_id', 'property_id', 'update_property_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_property_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -13159,14 +12349,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.UpdateRequestPropertyRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateRequestPropertyResponse`
         """
-        return self.update_request_property_with_http_info(request)
+        return self._update_request_property_with_http_info(request)
 
-    def update_request_property_with_http_info(self, request):
-        all_params = ['instance_id', 'service_id', 'command_id', 'property_id', 'update_request_property_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_request_property_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -13228,14 +12414,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.UpdateRequestThrottlingPolicyV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateRequestThrottlingPolicyV2Response`
         """
-        return self.update_request_throttling_policy_v2_with_http_info(request)
+        return self._update_request_throttling_policy_v2_with_http_info(request)
 
-    def update_request_throttling_policy_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'throttle_id', 'update_request_throttling_policy_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_request_throttling_policy_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -13293,14 +12475,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.UpdateResponsePropertyRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateResponsePropertyResponse`
         """
-        return self.update_response_property_with_http_info(request)
+        return self._update_response_property_with_http_info(request)
 
-    def update_response_property_with_http_info(self, request):
-        all_params = ['instance_id', 'service_id', 'command_id', 'property_id', 'update_response_property_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_response_property_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -13362,14 +12540,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.UpdateRuleRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateRuleResponse`
         """
-        return self.update_rule_with_http_info(request)
+        return self._update_rule_with_http_info(request)
 
-    def update_rule_with_http_info(self, request):
-        all_params = ['instance_id', 'rule_id', 'update_rule_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -13427,14 +12601,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.UpdateServiceRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateServiceResponse`
         """
-        return self.update_service_with_http_info(request)
+        return self._update_service_with_http_info(request)
 
-    def update_service_with_http_info(self, request):
-        all_params = ['instance_id', 'service_id', 'update_service_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_service_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -13492,14 +12662,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.UpdateSignatureKeyV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateSignatureKeyV2Response`
         """
-        return self.update_signature_key_v2_with_http_info(request)
+        return self._update_signature_key_v2_with_http_info(request)
 
-    def update_signature_key_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'sign_id', 'update_signature_key_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_signature_key_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -13557,14 +12723,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.UpdateSpecialThrottlingConfigurationV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateSpecialThrottlingConfigurationV2Response`
         """
-        return self.update_special_throttling_configuration_v2_with_http_info(request)
+        return self._update_special_throttling_configuration_v2_with_http_info(request)
 
-    def update_special_throttling_configuration_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'throttle_id', 'strategy_id', 'update_special_throttling_configuration_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_special_throttling_configuration_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -13624,14 +12786,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.UpdateTaskRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateTaskResponse`
         """
-        return self.update_task_with_http_info(request)
+        return self._update_task_with_http_info(request)
 
-    def update_task_with_http_info(self, request):
-        all_params = ['instance_id', 'task_id', 'update_task_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -13689,14 +12847,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.UpdateTopicAccessPolicyRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateTopicAccessPolicyResponse`
         """
-        return self.update_topic_access_policy_with_http_info(request)
+        return self._update_topic_access_policy_with_http_info(request)
 
-    def update_topic_access_policy_with_http_info(self, request):
-        all_params = ['instance_id', 'update_topic_access_policy_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_topic_access_policy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -13752,14 +12906,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.UploadProductRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.UploadProductResponse`
         """
-        return self.upload_product_with_http_info(request)
+        return self._upload_product_with_http_info(request)
 
-    def upload_product_with_http_info(self, request):
-        all_params = ['instance_id', 'file']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _upload_product_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -13819,14 +12969,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.BatchDeleteAclV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.BatchDeleteAclV2Response`
         """
-        return self.batch_delete_acl_v2_with_http_info(request)
+        return self._batch_delete_acl_v2_with_http_info(request)
 
-    def batch_delete_acl_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'action', 'batch_delete_acl_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_delete_acl_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -13884,14 +13030,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CreateAclStrategyV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateAclStrategyV2Response`
         """
-        return self.create_acl_strategy_v2_with_http_info(request)
+        return self._create_acl_strategy_v2_with_http_info(request)
 
-    def create_acl_strategy_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'create_acl_strategy_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_acl_strategy_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -13947,14 +13089,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DeleteAclV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteAclV2Response`
         """
-        return self.delete_acl_v2_with_http_info(request)
+        return self._delete_acl_v2_with_http_info(request)
 
-    def delete_acl_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'acl_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_acl_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -14010,14 +13148,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListAclStrategiesV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListAclStrategiesV2Response`
         """
-        return self.list_acl_strategies_v2_with_http_info(request)
+        return self._list_acl_strategies_v2_with_http_info(request)
 
-    def list_acl_strategies_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'offset', 'limit', 'id', 'name', 'acl_type', 'entity_type', 'precise_search']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_acl_strategies_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -14085,14 +13219,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ShowDetailsOfAclPolicyV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowDetailsOfAclPolicyV2Response`
         """
-        return self.show_details_of_acl_policy_v2_with_http_info(request)
+        return self._show_details_of_acl_policy_v2_with_http_info(request)
 
-    def show_details_of_acl_policy_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'acl_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_details_of_acl_policy_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -14148,14 +13278,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.UpdateAclStrategyV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateAclStrategyV2Response`
         """
-        return self.update_acl_strategy_v2_with_http_info(request)
+        return self._update_acl_strategy_v2_with_http_info(request)
 
-    def update_acl_strategy_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'acl_id', 'update_acl_strategy_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_acl_strategy_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -14217,14 +13343,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.AssociateRequestThrottlingPolicyV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.AssociateRequestThrottlingPolicyV2Response`
         """
-        return self.associate_request_throttling_policy_v2_with_http_info(request)
+        return self._associate_request_throttling_policy_v2_with_http_info(request)
 
-    def associate_request_throttling_policy_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'associate_request_throttling_policy_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _associate_request_throttling_policy_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -14280,14 +13402,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.BatchDisassociateThrottlingPolicyV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.BatchDisassociateThrottlingPolicyV2Response`
         """
-        return self.batch_disassociate_throttling_policy_v2_with_http_info(request)
+        return self._batch_disassociate_throttling_policy_v2_with_http_info(request)
 
-    def batch_disassociate_throttling_policy_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'action', 'batch_disassociate_throttling_policy_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_disassociate_throttling_policy_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -14347,14 +13465,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.BatchPublishOrOfflineApiV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.BatchPublishOrOfflineApiV2Response`
         """
-        return self.batch_publish_or_offline_api_v2_with_http_info(request)
+        return self._batch_publish_or_offline_api_v2_with_http_info(request)
 
-    def batch_publish_or_offline_api_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'action', 'batch_publish_or_offline_api_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_publish_or_offline_api_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -14414,14 +13528,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ChangeApiVersionV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ChangeApiVersionV2Response`
         """
-        return self.change_api_version_v2_with_http_info(request)
+        return self._change_api_version_v2_with_http_info(request)
 
-    def change_api_version_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'api_id', 'change_api_version_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _change_api_version_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -14479,14 +13589,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CheckApiGroupsV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.CheckApiGroupsV2Response`
         """
-        return self.check_api_groups_v2_with_http_info(request)
+        return self._check_api_groups_v2_with_http_info(request)
 
-    def check_api_groups_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'check_api_groups_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _check_api_groups_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -14542,14 +13648,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CheckApisV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.CheckApisV2Response`
         """
-        return self.check_apis_v2_with_http_info(request)
+        return self._check_apis_v2_with_http_info(request)
 
-    def check_apis_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'check_apis_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _check_apis_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -14605,14 +13707,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CreateApiGroupV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateApiGroupV2Response`
         """
-        return self.create_api_group_v2_with_http_info(request)
+        return self._create_api_group_v2_with_http_info(request)
 
-    def create_api_group_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'create_api_group_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_api_group_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -14670,14 +13768,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CreateApiV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateApiV2Response`
         """
-        return self.create_api_v2_with_http_info(request)
+        return self._create_api_v2_with_http_info(request)
 
-    def create_api_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'create_api_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_api_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -14737,14 +13831,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CreateOrDeletePublishRecordForApiV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateOrDeletePublishRecordForApiV2Response`
         """
-        return self.create_or_delete_publish_record_for_api_v2_with_http_info(request)
+        return self._create_or_delete_publish_record_for_api_v2_with_http_info(request)
 
-    def create_or_delete_publish_record_for_api_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'create_or_delete_publish_record_for_api_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_or_delete_publish_record_for_api_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -14800,14 +13890,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DebugApiV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.DebugApiV2Response`
         """
-        return self.debug_api_v2_with_http_info(request)
+        return self._debug_api_v2_with_http_info(request)
 
-    def debug_api_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'api_id', 'debug_api_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _debug_api_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -14865,14 +13951,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DeleteApiByVersionIdV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteApiByVersionIdV2Response`
         """
-        return self.delete_api_by_version_id_v2_with_http_info(request)
+        return self._delete_api_by_version_id_v2_with_http_info(request)
 
-    def delete_api_by_version_id_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'version_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_api_by_version_id_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -14930,14 +14012,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DeleteApiGroupV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteApiGroupV2Response`
         """
-        return self.delete_api_group_v2_with_http_info(request)
+        return self._delete_api_group_v2_with_http_info(request)
 
-    def delete_api_group_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'group_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_api_group_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -14995,14 +14073,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DeleteApiV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteApiV2Response`
         """
-        return self.delete_api_v2_with_http_info(request)
+        return self._delete_api_v2_with_http_info(request)
 
-    def delete_api_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'api_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_api_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -15058,14 +14132,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DisassociateRequestThrottlingPolicyV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.DisassociateRequestThrottlingPolicyV2Response`
         """
-        return self.disassociate_request_throttling_policy_v2_with_http_info(request)
+        return self._disassociate_request_throttling_policy_v2_with_http_info(request)
 
-    def disassociate_request_throttling_policy_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'throttle_binding_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _disassociate_request_throttling_policy_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -15123,14 +14193,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListApiGroupsV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListApiGroupsV2Response`
         """
-        return self.list_api_groups_v2_with_http_info(request)
+        return self._list_api_groups_v2_with_http_info(request)
 
-    def list_api_groups_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'offset', 'limit', 'id', 'name', 'roma_app_id', 'precise_search', 'domain_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_api_groups_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -15204,14 +14270,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListApiRuntimeDefinitionV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListApiRuntimeDefinitionV2Response`
         """
-        return self.list_api_runtime_definition_v2_with_http_info(request)
+        return self._list_api_runtime_definition_v2_with_http_info(request)
 
-    def list_api_runtime_definition_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'api_id', 'env_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_api_runtime_definition_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -15269,14 +14331,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListApiVersionDetailV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListApiVersionDetailV2Response`
         """
-        return self.list_api_version_detail_v2_with_http_info(request)
+        return self._list_api_version_detail_v2_with_http_info(request)
 
-    def list_api_version_detail_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'version_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_api_version_detail_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -15332,14 +14390,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListApiVersionsV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListApiVersionsV2Response`
         """
-        return self.list_api_versions_v2_with_http_info(request)
+        return self._list_api_versions_v2_with_http_info(request)
 
-    def list_api_versions_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'api_id', 'offset', 'limit', 'env_id', 'env_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_api_versions_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -15403,14 +14457,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListApisBindedToRequestThrottlingPolicyV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListApisBindedToRequestThrottlingPolicyV2Response`
         """
-        return self.list_apis_binded_to_request_throttling_policy_v2_with_http_info(request)
+        return self._list_apis_binded_to_request_throttling_policy_v2_with_http_info(request)
 
-    def list_apis_binded_to_request_throttling_policy_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'throttle_id', 'offset', 'limit', 'env_id', 'group_id', 'api_id', 'api_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_apis_binded_to_request_throttling_policy_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -15478,14 +14528,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListApisUnbindedToRequestThrottlingPolicyV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListApisUnbindedToRequestThrottlingPolicyV2Response`
         """
-        return self.list_apis_unbinded_to_request_throttling_policy_v2_with_http_info(request)
+        return self._list_apis_unbinded_to_request_throttling_policy_v2_with_http_info(request)
 
-    def list_apis_unbinded_to_request_throttling_policy_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'throttle_id', 'offset', 'limit', 'env_id', 'group_id', 'api_id', 'api_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_apis_unbinded_to_request_throttling_policy_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -15553,14 +14599,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListApisV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListApisV2Response`
         """
-        return self.list_apis_v2_with_http_info(request)
+        return self._list_apis_v2_with_http_info(request)
 
-    def list_apis_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'offset', 'limit', 'id', 'name', 'group_id', 'req_protocol', 'req_method', 'req_uri', 'auth_type', 'env_id', 'type', 'precise_search', 'vpc_channel_id', 'vpc_channel_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_apis_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -15642,14 +14684,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListRequestThrottlingPoliciesBindedToApiV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListRequestThrottlingPoliciesBindedToApiV2Response`
         """
-        return self.list_request_throttling_policies_binded_to_api_v2_with_http_info(request)
+        return self._list_request_throttling_policies_binded_to_api_v2_with_http_info(request)
 
-    def list_request_throttling_policies_binded_to_api_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'api_id', 'offset', 'limit', 'throttle_id', 'throttle_name', 'env_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_request_throttling_policies_binded_to_api_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -15715,14 +14753,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ShowDetailsOfApiGroupV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowDetailsOfApiGroupV2Response`
         """
-        return self.show_details_of_api_group_v2_with_http_info(request)
+        return self._show_details_of_api_group_v2_with_http_info(request)
 
-    def show_details_of_api_group_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'group_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_details_of_api_group_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -15778,14 +14812,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ShowDetailsOfApiV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowDetailsOfApiV2Response`
         """
-        return self.show_details_of_api_v2_with_http_info(request)
+        return self._show_details_of_api_v2_with_http_info(request)
 
-    def show_details_of_api_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'api_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_details_of_api_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -15841,14 +14871,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.UpdateApiGroupV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateApiGroupV2Response`
         """
-        return self.update_api_group_v2_with_http_info(request)
+        return self._update_api_group_v2_with_http_info(request)
 
-    def update_api_group_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'group_id', 'update_api_group_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_api_group_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -15906,14 +14932,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.UpdateApiV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateApiV2Response`
         """
-        return self.update_api_v2_with_http_info(request)
+        return self._update_api_v2_with_http_info(request)
 
-    def update_api_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'api_id', 'update_api_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_api_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -15971,14 +14993,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.BatchDeleteApiAclBindingV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.BatchDeleteApiAclBindingV2Response`
         """
-        return self.batch_delete_api_acl_binding_v2_with_http_info(request)
+        return self._batch_delete_api_acl_binding_v2_with_http_info(request)
 
-    def batch_delete_api_acl_binding_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'action', 'batch_delete_api_acl_binding_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_delete_api_acl_binding_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -16038,14 +15056,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CreateApiAclBindingV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateApiAclBindingV2Response`
         """
-        return self.create_api_acl_binding_v2_with_http_info(request)
+        return self._create_api_acl_binding_v2_with_http_info(request)
 
-    def create_api_acl_binding_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'create_api_acl_binding_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_api_acl_binding_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -16101,14 +15115,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DeleteApiAclBindingV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteApiAclBindingV2Response`
         """
-        return self.delete_api_acl_binding_v2_with_http_info(request)
+        return self._delete_api_acl_binding_v2_with_http_info(request)
 
-    def delete_api_acl_binding_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'acl_bindings_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_api_acl_binding_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -16164,14 +15174,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListAclPolicyBindedToApiV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListAclPolicyBindedToApiV2Response`
         """
-        return self.list_acl_policy_binded_to_api_v2_with_http_info(request)
+        return self._list_acl_policy_binded_to_api_v2_with_http_info(request)
 
-    def list_acl_policy_binded_to_api_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'api_id', 'offset', 'limit', 'env_id', 'env_name', 'acl_id', 'acl_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_acl_policy_binded_to_api_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -16239,14 +15245,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListApisBindedToAclPolicyV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListApisBindedToAclPolicyV2Response`
         """
-        return self.list_apis_binded_to_acl_policy_v2_with_http_info(request)
+        return self._list_apis_binded_to_acl_policy_v2_with_http_info(request)
 
-    def list_apis_binded_to_acl_policy_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'acl_id', 'offset', 'limit', 'api_name', 'env_id', 'group_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_apis_binded_to_acl_policy_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -16312,14 +15314,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListApisUnbindedToAclPolicyV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListApisUnbindedToAclPolicyV2Response`
         """
-        return self.list_apis_unbinded_to_acl_policy_v2_with_http_info(request)
+        return self._list_apis_unbinded_to_acl_policy_v2_with_http_info(request)
 
-    def list_apis_unbinded_to_acl_policy_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'acl_id', 'offset', 'limit', 'api_id', 'api_name', 'env_id', 'group_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_apis_unbinded_to_acl_policy_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -16387,14 +15385,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CancelingAuthorizationV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.CancelingAuthorizationV2Response`
         """
-        return self.canceling_authorization_v2_with_http_info(request)
+        return self._canceling_authorization_v2_with_http_info(request)
 
-    def canceling_authorization_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'app_auth_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _canceling_authorization_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -16450,14 +15444,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CreateAuthorizingAppsV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateAuthorizingAppsV2Response`
         """
-        return self.create_authorizing_apps_v2_with_http_info(request)
+        return self._create_authorizing_apps_v2_with_http_info(request)
 
-    def create_authorizing_apps_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'create_authorizing_apps_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_authorizing_apps_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -16513,14 +15503,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListApisBindedToAppV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListApisBindedToAppV2Response`
         """
-        return self.list_apis_binded_to_app_v2_with_http_info(request)
+        return self._list_apis_binded_to_app_v2_with_http_info(request)
 
-    def list_apis_binded_to_app_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'app_id', 'offset', 'limit', 'api_id', 'api_name', 'group_id', 'group_name', 'env_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_apis_binded_to_app_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -16590,14 +15576,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListApisUnbindedToAppV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListApisUnbindedToAppV2Response`
         """
-        return self.list_apis_unbinded_to_app_v2_with_http_info(request)
+        return self._list_apis_unbinded_to_app_v2_with_http_info(request)
 
-    def list_apis_unbinded_to_app_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'app_id', 'env_id', 'offset', 'limit', 'group_id', 'api_id', 'api_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_apis_unbinded_to_app_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -16665,14 +15647,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListAppsBindedToApiV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListAppsBindedToApiV2Response`
         """
-        return self.list_apps_binded_to_api_v2_with_http_info(request)
+        return self._list_apps_binded_to_api_v2_with_http_info(request)
 
-    def list_apps_binded_to_api_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'offset', 'limit', 'api_id', 'app_name', 'app_id', 'env_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_apps_binded_to_api_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -16738,14 +15716,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListDuplicateApisForAppV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListDuplicateApisForAppV2Response`
         """
-        return self.list_duplicate_apis_for_app_v2_with_http_info(request)
+        return self._list_duplicate_apis_for_app_v2_with_http_info(request)
 
-    def list_duplicate_apis_for_app_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'app_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_duplicate_apis_for_app_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -16802,14 +15776,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.AddUserToAppRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.AddUserToAppResponse`
         """
-        return self.add_user_to_app_with_http_info(request)
+        return self._add_user_to_app_with_http_info(request)
 
-    def add_user_to_app_with_http_info(self, request):
-        all_params = ['app_id', 'instance_id', 'add_user_to_app_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _add_user_to_app_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -16867,14 +15837,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CheckAuthUsersOfAppRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CheckAuthUsersOfAppResponse`
         """
-        return self.check_auth_users_of_app_with_http_info(request)
+        return self._check_auth_users_of_app_with_http_info(request)
 
-    def check_auth_users_of_app_with_http_info(self, request):
-        all_params = ['app_id', 'instance_id', 'user_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _check_auth_users_of_app_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -16932,14 +15898,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CheckCanAuthUsersOfAppRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CheckCanAuthUsersOfAppResponse`
         """
-        return self.check_can_auth_users_of_app_with_http_info(request)
+        return self._check_can_auth_users_of_app_with_http_info(request)
 
-    def check_can_auth_users_of_app_with_http_info(self, request):
-        all_params = ['app_id', 'instance_id', 'filter']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _check_can_auth_users_of_app_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -16997,14 +15959,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CheckRomaAppDetailsRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CheckRomaAppDetailsResponse`
         """
-        return self.check_roma_app_details_with_http_info(request)
+        return self._check_roma_app_details_with_http_info(request)
 
-    def check_roma_app_details_with_http_info(self, request):
-        all_params = ['app_id', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _check_roma_app_details_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -17060,14 +16018,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CheckRomaAppSecretRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CheckRomaAppSecretResponse`
         """
-        return self.check_roma_app_secret_with_http_info(request)
+        return self._check_roma_app_secret_with_http_info(request)
 
-    def check_roma_app_secret_with_http_info(self, request):
-        all_params = ['app_id', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _check_roma_app_secret_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -17123,14 +16077,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CreateRomaAppRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateRomaAppResponse`
         """
-        return self.create_roma_app_with_http_info(request)
+        return self._create_roma_app_with_http_info(request)
 
-    def create_roma_app_with_http_info(self, request):
-        all_params = ['instance_id', 'create_roma_app_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_roma_app_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -17186,14 +16136,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DeleteRomaAppRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteRomaAppResponse`
         """
-        return self.delete_roma_app_with_http_info(request)
+        return self._delete_roma_app_with_http_info(request)
 
-    def delete_roma_app_with_http_info(self, request):
-        all_params = ['app_id', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_roma_app_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -17249,14 +16195,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListRomaAppRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListRomaAppResponse`
         """
-        return self.list_roma_app_with_http_info(request)
+        return self._list_roma_app_with_http_info(request)
 
-    def list_roma_app_with_http_info(self, request):
-        all_params = ['instance_id', 'offset', 'limit', 'favorite', 'auth_role', 'name', 'owner', 'user_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_roma_app_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -17324,14 +16266,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ResetRomaAppSecretRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ResetRomaAppSecretResponse`
         """
-        return self.reset_roma_app_secret_with_http_info(request)
+        return self._reset_roma_app_secret_with_http_info(request)
 
-    def reset_roma_app_secret_with_http_info(self, request):
-        all_params = ['app_id', 'instance_id', 'reset_roma_app_secret_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _reset_roma_app_secret_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -17389,14 +16327,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.UpdateRomaAppRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateRomaAppResponse`
         """
-        return self.update_roma_app_with_http_info(request)
+        return self._update_roma_app_with_http_info(request)
 
-    def update_roma_app_with_http_info(self, request):
-        all_params = ['app_id', 'instance_id', 'update_roma_app_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_roma_app_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -17454,14 +16388,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ValidateRomaAppRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ValidateRomaAppResponse`
         """
-        return self.validate_roma_app_with_http_info(request)
+        return self._validate_roma_app_with_http_info(request)
 
-    def validate_roma_app_with_http_info(self, request):
-        all_params = ['instance_id', 'name', 'id', 'key']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _validate_roma_app_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -17521,14 +16451,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CheckAssetJobStatusRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CheckAssetJobStatusResponse`
         """
-        return self.check_asset_job_status_with_http_info(request)
+        return self._check_asset_job_status_with_http_info(request)
 
-    def check_asset_job_status_with_http_info(self, request):
-        all_params = ['instance_id', 'job_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _check_asset_job_status_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -17587,14 +16513,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DeleteAssetRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteAssetResponse`
         """
-        return self.delete_asset_with_http_info(request)
+        return self._delete_asset_with_http_info(request)
 
-    def delete_asset_with_http_info(self, request):
-        all_params = ['instance_id', 'delete_asset_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_asset_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -17651,14 +16573,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DownloadAssetArchiveRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.DownloadAssetArchiveResponse`
         """
-        return self.download_asset_archive_with_http_info(request)
+        return self._download_asset_archive_with_http_info(request)
 
-    def download_asset_archive_with_http_info(self, request):
-        all_params = ['instance_id', 'archive_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _download_asset_archive_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -17717,14 +16635,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ExportAssetRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ExportAssetResponse`
         """
-        return self.export_asset_with_http_info(request)
+        return self._export_asset_with_http_info(request)
 
-    def export_asset_with_http_info(self, request):
-        all_params = ['instance_id', 'export_asset_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _export_asset_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -17782,14 +16696,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ImportAssetRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ImportAssetResponse`
         """
-        return self.import_asset_with_http_info(request)
+        return self._import_asset_with_http_info(request)
 
-    def import_asset_with_http_info(self, request):
-        all_params = ['instance_id', 'import_asset_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _import_asset_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -17847,14 +16757,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CheckDictionaryRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CheckDictionaryResponse`
         """
-        return self.check_dictionary_with_http_info(request)
+        return self._check_dictionary_with_http_info(request)
 
-    def check_dictionary_with_http_info(self, request):
-        all_params = ['dict_id', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _check_dictionary_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -17910,14 +16816,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CreateDictionaryRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateDictionaryResponse`
         """
-        return self.create_dictionary_with_http_info(request)
+        return self._create_dictionary_with_http_info(request)
 
-    def create_dictionary_with_http_info(self, request):
-        all_params = ['instance_id', 'create_dictionary_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_dictionary_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -17973,14 +16875,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DeleteDictionaryRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteDictionaryResponse`
         """
-        return self.delete_dictionary_with_http_info(request)
+        return self._delete_dictionary_with_http_info(request)
 
-    def delete_dictionary_with_http_info(self, request):
-        all_params = ['dict_id', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_dictionary_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -18036,14 +16934,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListDictionaryRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListDictionaryResponse`
         """
-        return self.list_dictionary_with_http_info(request)
+        return self._list_dictionary_with_http_info(request)
 
-    def list_dictionary_with_http_info(self, request):
-        all_params = ['instance_id', 'offset', 'limit', 'parent_code', 'code', 'name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_dictionary_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -18107,14 +17001,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.UpdateDictionaryRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateDictionaryResponse`
         """
-        return self.update_dictionary_with_http_info(request)
+        return self._update_dictionary_with_http_info(request)
 
-    def update_dictionary_with_http_info(self, request):
-        all_params = ['dict_id', 'instance_id', 'update_dictionary_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_dictionary_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -18172,14 +17062,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ValidateDictionaryRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ValidateDictionaryResponse`
         """
-        return self.validate_dictionary_with_http_info(request)
+        return self._validate_dictionary_with_http_info(request)
 
-    def validate_dictionary_with_http_info(self, request):
-        all_params = ['instance_id', 'name', 'code']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _validate_dictionary_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -18237,14 +17123,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CheckRomaInstanceListV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.CheckRomaInstanceListV2Response`
         """
-        return self.check_roma_instance_list_v2_with_http_info(request)
+        return self._check_roma_instance_list_v2_with_http_info(request)
 
-    def check_roma_instance_list_v2_with_http_info(self, request):
-        all_params = ['status', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _check_roma_instance_list_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -18302,14 +17184,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListMqsInstanceRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListMqsInstanceResponse`
         """
-        return self.list_mqs_instance_with_http_info(request)
+        return self._list_mqs_instance_with_http_info(request)
 
-    def list_mqs_instance_with_http_info(self, request):
-        all_params = ['include_internal']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_mqs_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -18363,14 +17241,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ShowMqsInstanceRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowMqsInstanceResponse`
         """
-        return self.show_mqs_instance_with_http_info(request)
+        return self._show_mqs_instance_with_http_info(request)
 
-    def show_mqs_instance_with_http_info(self, request):
-        all_params = ['instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_mqs_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -18424,14 +17298,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ExportApiDefinitionsV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ExportApiDefinitionsV2Response`
         """
-        return self.export_api_definitions_v2_with_http_info(request)
+        return self._export_api_definitions_v2_with_http_info(request)
 
-    def export_api_definitions_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'export_api_definitions_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _export_api_definitions_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -18487,14 +17357,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ExportLiveDataApiDefinitionsV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ExportLiveDataApiDefinitionsV2Response`
         """
-        return self.export_live_data_api_definitions_v2_with_http_info(request)
+        return self._export_live_data_api_definitions_v2_with_http_info(request)
 
-    def export_live_data_api_definitions_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'export_live_data_api_definitions_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _export_live_data_api_definitions_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -18550,14 +17416,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ImportApiDefinitionsV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ImportApiDefinitionsV2Response`
         """
-        return self.import_api_definitions_v2_with_http_info(request)
+        return self._import_api_definitions_v2_with_http_info(request)
 
-    def import_api_definitions_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'file_name', 'is_create_group', 'group_id', 'app_id', 'extend_mode', 'simple_mode', 'mock_mode', 'api_mode']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _import_api_definitions_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -18629,14 +17491,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ImportLiveDataApiDefinitionsV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ImportLiveDataApiDefinitionsV2Response`
         """
-        return self.import_live_data_api_definitions_v2_with_http_info(request)
+        return self._import_live_data_api_definitions_v2_with_http_info(request)
 
-    def import_live_data_api_definitions_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'file_name', 'extend_mode', 'api_mode']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _import_live_data_api_definitions_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -18700,14 +17558,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.AddingBackendInstancesV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.AddingBackendInstancesV2Response`
         """
-        return self.adding_backend_instances_v2_with_http_info(request)
+        return self._adding_backend_instances_v2_with_http_info(request)
 
-    def adding_backend_instances_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'vpc_channel_id', 'adding_backend_instances_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _adding_backend_instances_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -18765,14 +17619,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.BatchDisableMembersRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.BatchDisableMembersResponse`
         """
-        return self.batch_disable_members_with_http_info(request)
+        return self._batch_disable_members_with_http_info(request)
 
-    def batch_disable_members_with_http_info(self, request):
-        all_params = ['instance_id', 'vpc_channel_id', 'batch_disable_members_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_disable_members_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -18830,14 +17680,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.BatchEnableMembersRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.BatchEnableMembersResponse`
         """
-        return self.batch_enable_members_with_http_info(request)
+        return self._batch_enable_members_with_http_info(request)
 
-    def batch_enable_members_with_http_info(self, request):
-        all_params = ['instance_id', 'vpc_channel_id', 'batch_enable_members_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_enable_members_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -18897,14 +17743,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CreateMemberGroupRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateMemberGroupResponse`
         """
-        return self.create_member_group_with_http_info(request)
+        return self._create_member_group_with_http_info(request)
 
-    def create_member_group_with_http_info(self, request):
-        all_params = ['instance_id', 'vpc_channel_id', 'create_member_group_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_member_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -18963,14 +17805,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CreateVpcChannelV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateVpcChannelV2Response`
         """
-        return self.create_vpc_channel_v2_with_http_info(request)
+        return self._create_vpc_channel_v2_with_http_info(request)
 
-    def create_vpc_channel_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'create_vpc_channel_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_vpc_channel_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -19026,14 +17864,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DeleteBackendInstanceV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteBackendInstanceV2Response`
         """
-        return self.delete_backend_instance_v2_with_http_info(request)
+        return self._delete_backend_instance_v2_with_http_info(request)
 
-    def delete_backend_instance_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'vpc_channel_id', 'member_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_backend_instance_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -19091,14 +17925,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DeleteMemberGroupRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteMemberGroupResponse`
         """
-        return self.delete_member_group_with_http_info(request)
+        return self._delete_member_group_with_http_info(request)
 
-    def delete_member_group_with_http_info(self, request):
-        all_params = ['instance_id', 'vpc_channel_id', 'member_group_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_member_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -19156,14 +17986,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DeleteVpcChannelV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteVpcChannelV2Response`
         """
-        return self.delete_vpc_channel_v2_with_http_info(request)
+        return self._delete_vpc_channel_v2_with_http_info(request)
 
-    def delete_vpc_channel_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'vpc_channel_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_vpc_channel_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -19219,14 +18045,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListBackendInstancesV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListBackendInstancesV2Response`
         """
-        return self.list_backend_instances_v2_with_http_info(request)
+        return self._list_backend_instances_v2_with_http_info(request)
 
-    def list_backend_instances_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'vpc_channel_id', 'offset', 'limit', 'name', 'member_group_name', 'member_group_id', 'precise_search']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_backend_instances_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -19294,14 +18116,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListMemberGroupsRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListMemberGroupsResponse`
         """
-        return self.list_member_groups_with_http_info(request)
+        return self._list_member_groups_with_http_info(request)
 
-    def list_member_groups_with_http_info(self, request):
-        all_params = ['instance_id', 'vpc_channel_id', 'offset', 'limit', 'dict_code', 'member_group_name', 'precise_search']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_member_groups_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -19367,14 +18185,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListVpcChannelsV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListVpcChannelsV2Response`
         """
-        return self.list_vpc_channels_v2_with_http_info(request)
+        return self._list_vpc_channels_v2_with_http_info(request)
 
-    def list_vpc_channels_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'offset', 'limit', 'id', 'name', 'dict_code', 'precise_search', 'member_host', 'member_port', 'member_group_name', 'member_group_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_vpc_channels_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -19448,14 +18262,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ShowDetailsOfMemberGroupRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowDetailsOfMemberGroupResponse`
         """
-        return self.show_details_of_member_group_with_http_info(request)
+        return self._show_details_of_member_group_with_http_info(request)
 
-    def show_details_of_member_group_with_http_info(self, request):
-        all_params = ['instance_id', 'vpc_channel_id', 'member_group_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_details_of_member_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -19513,14 +18323,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ShowDetailsOfVpcChannelV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowDetailsOfVpcChannelV2Response`
         """
-        return self.show_details_of_vpc_channel_v2_with_http_info(request)
+        return self._show_details_of_vpc_channel_v2_with_http_info(request)
 
-    def show_details_of_vpc_channel_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'vpc_channel_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_details_of_vpc_channel_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -19576,14 +18382,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.UpdateBackendInstancesV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateBackendInstancesV2Response`
         """
-        return self.update_backend_instances_v2_with_http_info(request)
+        return self._update_backend_instances_v2_with_http_info(request)
 
-    def update_backend_instances_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'vpc_channel_id', 'update_backend_instances_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_backend_instances_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -19641,14 +18443,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.UpdateHealthCheckRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateHealthCheckResponse`
         """
-        return self.update_health_check_with_http_info(request)
+        return self._update_health_check_with_http_info(request)
 
-    def update_health_check_with_http_info(self, request):
-        all_params = ['instance_id', 'vpc_channel_id', 'update_health_check_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_health_check_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -19706,14 +18504,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.UpdateMemberGroupRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateMemberGroupResponse`
         """
-        return self.update_member_group_with_http_info(request)
+        return self._update_member_group_with_http_info(request)
 
-    def update_member_group_with_http_info(self, request):
-        all_params = ['instance_id', 'vpc_channel_id', 'member_group_id', 'update_member_group_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_member_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -19777,14 +18571,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.UpdateVpcChannelV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateVpcChannelV2Response`
         """
-        return self.update_vpc_channel_v2_with_http_info(request)
+        return self._update_vpc_channel_v2_with_http_info(request)
 
-    def update_vpc_channel_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'vpc_channel_id', 'update_vpc_channel_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_vpc_channel_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -19842,14 +18632,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CreateProjectVpcChannelRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateProjectVpcChannelResponse`
         """
-        return self.create_project_vpc_channel_with_http_info(request)
+        return self._create_project_vpc_channel_with_http_info(request)
 
-    def create_project_vpc_channel_with_http_info(self, request):
-        all_params = ['create_project_vpc_channel_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_project_vpc_channel_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -19903,14 +18689,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CreateProjectVpcChannelSyncsRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateProjectVpcChannelSyncsResponse`
         """
-        return self.create_project_vpc_channel_syncs_with_http_info(request)
+        return self._create_project_vpc_channel_syncs_with_http_info(request)
 
-    def create_project_vpc_channel_syncs_with_http_info(self, request):
-        all_params = ['create_project_vpc_channel_syncs_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_project_vpc_channel_syncs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -19964,14 +18746,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListProjectVpcChannelsV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListProjectVpcChannelsV2Response`
         """
-        return self.list_project_vpc_channels_v2_with_http_info(request)
+        return self._list_project_vpc_channels_v2_with_http_info(request)
 
-    def list_project_vpc_channels_v2_with_http_info(self, request):
-        all_params = ['offset', 'limit', 'id', 'name', 'precise_search', 'member_host', 'member_port', 'member_group_name', 'member_group_id', 'members_return']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_project_vpc_channels_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -20043,14 +18821,10 @@ class RomaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.UpdateProjectVpcChannelRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateProjectVpcChannelResponse`
         """
-        return self.update_project_vpc_channel_with_http_info(request)
+        return self._update_project_vpc_channel_with_http_info(request)
 
-    def update_project_vpc_channel_with_http_info(self, request):
-        all_params = ['update_project_vpc_channel_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_project_vpc_channel_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

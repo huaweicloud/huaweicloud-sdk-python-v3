@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class AsClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(AsClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkas.v1.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -53,14 +35,10 @@ class AsClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.AttachCallbackInstanceLifeCycleHookRequest`
         :rtype: :class:`huaweicloudsdkas.v1.AttachCallbackInstanceLifeCycleHookResponse`
         """
-        return self.attach_callback_instance_life_cycle_hook_with_http_info(request)
+        return self._attach_callback_instance_life_cycle_hook_with_http_info(request)
 
-    def attach_callback_instance_life_cycle_hook_with_http_info(self, request):
-        all_params = ['scaling_group_id', 'bodyparam']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _attach_callback_instance_life_cycle_hook_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -123,14 +101,10 @@ class AsClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.BatchAddScalingInstancesRequest`
         :rtype: :class:`huaweicloudsdkas.v1.BatchAddScalingInstancesResponse`
         """
-        return self.batch_add_scaling_instances_with_http_info(request)
+        return self._batch_add_scaling_instances_with_http_info(request)
 
-    def batch_add_scaling_instances_with_http_info(self, request):
-        all_params = ['scaling_group_id', 'bodyparam']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_add_scaling_instances_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -185,14 +159,10 @@ class AsClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.BatchDeleteScalingConfigsRequest`
         :rtype: :class:`huaweicloudsdkas.v1.BatchDeleteScalingConfigsResponse`
         """
-        return self.batch_delete_scaling_configs_with_http_info(request)
+        return self._batch_delete_scaling_configs_with_http_info(request)
 
-    def batch_delete_scaling_configs_with_http_info(self, request):
-        all_params = ['bodyparam']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_delete_scaling_configs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -245,14 +215,10 @@ class AsClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.BatchDeleteScalingPoliciesRequest`
         :rtype: :class:`huaweicloudsdkas.v1.BatchDeleteScalingPoliciesResponse`
         """
-        return self.batch_delete_scaling_policies_with_http_info(request)
+        return self._batch_delete_scaling_policies_with_http_info(request)
 
-    def batch_delete_scaling_policies_with_http_info(self, request):
-        all_params = ['bodyparam']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_delete_scaling_policies_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -305,14 +271,10 @@ class AsClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.BatchPauseScalingPoliciesRequest`
         :rtype: :class:`huaweicloudsdkas.v1.BatchPauseScalingPoliciesResponse`
         """
-        return self.batch_pause_scaling_policies_with_http_info(request)
+        return self._batch_pause_scaling_policies_with_http_info(request)
 
-    def batch_pause_scaling_policies_with_http_info(self, request):
-        all_params = ['bodyparam']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_pause_scaling_policies_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -365,14 +327,10 @@ class AsClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.BatchProtectScalingInstancesRequest`
         :rtype: :class:`huaweicloudsdkas.v1.BatchProtectScalingInstancesResponse`
         """
-        return self.batch_protect_scaling_instances_with_http_info(request)
+        return self._batch_protect_scaling_instances_with_http_info(request)
 
-    def batch_protect_scaling_instances_with_http_info(self, request):
-        all_params = ['scaling_group_id', 'bodyparam']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_protect_scaling_instances_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -427,14 +385,10 @@ class AsClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.BatchRemoveScalingInstancesRequest`
         :rtype: :class:`huaweicloudsdkas.v1.BatchRemoveScalingInstancesResponse`
         """
-        return self.batch_remove_scaling_instances_with_http_info(request)
+        return self._batch_remove_scaling_instances_with_http_info(request)
 
-    def batch_remove_scaling_instances_with_http_info(self, request):
-        all_params = ['scaling_group_id', 'bodyparam']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_remove_scaling_instances_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -489,14 +443,10 @@ class AsClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.BatchResumeScalingPoliciesRequest`
         :rtype: :class:`huaweicloudsdkas.v1.BatchResumeScalingPoliciesResponse`
         """
-        return self.batch_resume_scaling_policies_with_http_info(request)
+        return self._batch_resume_scaling_policies_with_http_info(request)
 
-    def batch_resume_scaling_policies_with_http_info(self, request):
-        all_params = ['bodyparam']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_resume_scaling_policies_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -549,14 +499,10 @@ class AsClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.BatchSetScalingInstancesStandbyRequest`
         :rtype: :class:`huaweicloudsdkas.v1.BatchSetScalingInstancesStandbyResponse`
         """
-        return self.batch_set_scaling_instances_standby_with_http_info(request)
+        return self._batch_set_scaling_instances_standby_with_http_info(request)
 
-    def batch_set_scaling_instances_standby_with_http_info(self, request):
-        all_params = ['scaling_group_id', 'bodyparam']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_set_scaling_instances_standby_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -611,14 +557,10 @@ class AsClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.BatchUnprotectScalingInstancesRequest`
         :rtype: :class:`huaweicloudsdkas.v1.BatchUnprotectScalingInstancesResponse`
         """
-        return self.batch_unprotect_scaling_instances_with_http_info(request)
+        return self._batch_unprotect_scaling_instances_with_http_info(request)
 
-    def batch_unprotect_scaling_instances_with_http_info(self, request):
-        all_params = ['scaling_group_id', 'bodyparam']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_unprotect_scaling_instances_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -673,14 +615,10 @@ class AsClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.BatchUnsetScalingInstancesStantbyRequest`
         :rtype: :class:`huaweicloudsdkas.v1.BatchUnsetScalingInstancesStantbyResponse`
         """
-        return self.batch_unset_scaling_instances_stantby_with_http_info(request)
+        return self._batch_unset_scaling_instances_stantby_with_http_info(request)
 
-    def batch_unset_scaling_instances_stantby_with_http_info(self, request):
-        all_params = ['scaling_group_id', 'bodyparam']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_unset_scaling_instances_stantby_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -735,14 +673,10 @@ class AsClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.CreateLifyCycleHookRequest`
         :rtype: :class:`huaweicloudsdkas.v1.CreateLifyCycleHookResponse`
         """
-        return self.create_lify_cycle_hook_with_http_info(request)
+        return self._create_lify_cycle_hook_with_http_info(request)
 
-    def create_lify_cycle_hook_with_http_info(self, request):
-        all_params = ['scaling_group_id', 'bodyparam']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_lify_cycle_hook_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -797,14 +731,10 @@ class AsClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.CreateScalingConfigRequest`
         :rtype: :class:`huaweicloudsdkas.v1.CreateScalingConfigResponse`
         """
-        return self.create_scaling_config_with_http_info(request)
+        return self._create_scaling_config_with_http_info(request)
 
-    def create_scaling_config_with_http_info(self, request):
-        all_params = ['bodyparam']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_scaling_config_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -857,14 +787,10 @@ class AsClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.CreateScalingGroupRequest`
         :rtype: :class:`huaweicloudsdkas.v1.CreateScalingGroupResponse`
         """
-        return self.create_scaling_group_with_http_info(request)
+        return self._create_scaling_group_with_http_info(request)
 
-    def create_scaling_group_with_http_info(self, request):
-        all_params = ['bodyparam']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_scaling_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -917,14 +843,10 @@ class AsClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.CreateScalingNotificationRequest`
         :rtype: :class:`huaweicloudsdkas.v1.CreateScalingNotificationResponse`
         """
-        return self.create_scaling_notification_with_http_info(request)
+        return self._create_scaling_notification_with_http_info(request)
 
-    def create_scaling_notification_with_http_info(self, request):
-        all_params = ['scaling_group_id', 'bodyparam']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_scaling_notification_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -979,14 +901,10 @@ class AsClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.CreateScalingPolicyRequest`
         :rtype: :class:`huaweicloudsdkas.v1.CreateScalingPolicyResponse`
         """
-        return self.create_scaling_policy_with_http_info(request)
+        return self._create_scaling_policy_with_http_info(request)
 
-    def create_scaling_policy_with_http_info(self, request):
-        all_params = ['bodyparam']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_scaling_policy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1039,14 +957,10 @@ class AsClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.CreateScalingTagInfoRequest`
         :rtype: :class:`huaweicloudsdkas.v1.CreateScalingTagInfoResponse`
         """
-        return self.create_scaling_tag_info_with_http_info(request)
+        return self._create_scaling_tag_info_with_http_info(request)
 
-    def create_scaling_tag_info_with_http_info(self, request):
-        all_params = ['resource_type', 'resource_id', 'bodyparam']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_scaling_tag_info_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1103,14 +1017,10 @@ class AsClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.DeleteLifecycleHookRequest`
         :rtype: :class:`huaweicloudsdkas.v1.DeleteLifecycleHookResponse`
         """
-        return self.delete_lifecycle_hook_with_http_info(request)
+        return self._delete_lifecycle_hook_with_http_info(request)
 
-    def delete_lifecycle_hook_with_http_info(self, request):
-        all_params = ['scaling_group_id', 'lifecycle_hook_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_lifecycle_hook_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1165,14 +1075,10 @@ class AsClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.DeleteScalingConfigRequest`
         :rtype: :class:`huaweicloudsdkas.v1.DeleteScalingConfigResponse`
         """
-        return self.delete_scaling_config_with_http_info(request)
+        return self._delete_scaling_config_with_http_info(request)
 
-    def delete_scaling_config_with_http_info(self, request):
-        all_params = ['scaling_configuration_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_scaling_config_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1225,14 +1131,10 @@ class AsClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.DeleteScalingGroupRequest`
         :rtype: :class:`huaweicloudsdkas.v1.DeleteScalingGroupResponse`
         """
-        return self.delete_scaling_group_with_http_info(request)
+        return self._delete_scaling_group_with_http_info(request)
 
-    def delete_scaling_group_with_http_info(self, request):
-        all_params = ['scaling_group_id', 'force_delete']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_scaling_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1287,14 +1189,10 @@ class AsClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.DeleteScalingInstanceRequest`
         :rtype: :class:`huaweicloudsdkas.v1.DeleteScalingInstanceResponse`
         """
-        return self.delete_scaling_instance_with_http_info(request)
+        return self._delete_scaling_instance_with_http_info(request)
 
-    def delete_scaling_instance_with_http_info(self, request):
-        all_params = ['instance_id', 'instance_delete']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_scaling_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1349,14 +1247,10 @@ class AsClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.DeleteScalingNotificationRequest`
         :rtype: :class:`huaweicloudsdkas.v1.DeleteScalingNotificationResponse`
         """
-        return self.delete_scaling_notification_with_http_info(request)
+        return self._delete_scaling_notification_with_http_info(request)
 
-    def delete_scaling_notification_with_http_info(self, request):
-        all_params = ['scaling_group_id', 'topic_urn']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_scaling_notification_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1411,14 +1305,10 @@ class AsClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.DeleteScalingPolicyRequest`
         :rtype: :class:`huaweicloudsdkas.v1.DeleteScalingPolicyResponse`
         """
-        return self.delete_scaling_policy_with_http_info(request)
+        return self._delete_scaling_policy_with_http_info(request)
 
-    def delete_scaling_policy_with_http_info(self, request):
-        all_params = ['scaling_policy_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_scaling_policy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1471,14 +1361,10 @@ class AsClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.DeleteScalingTagInfoRequest`
         :rtype: :class:`huaweicloudsdkas.v1.DeleteScalingTagInfoResponse`
         """
-        return self.delete_scaling_tag_info_with_http_info(request)
+        return self._delete_scaling_tag_info_with_http_info(request)
 
-    def delete_scaling_tag_info_with_http_info(self, request):
-        all_params = ['resource_type', 'resource_id', 'bodyparam']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_scaling_tag_info_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1535,14 +1421,10 @@ class AsClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.ExecuteScalingPolicyRequest`
         :rtype: :class:`huaweicloudsdkas.v1.ExecuteScalingPolicyResponse`
         """
-        return self.execute_scaling_policy_with_http_info(request)
+        return self._execute_scaling_policy_with_http_info(request)
 
-    def execute_scaling_policy_with_http_info(self, request):
-        all_params = ['scaling_policy_id', 'bodyparam']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _execute_scaling_policy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1597,14 +1479,10 @@ class AsClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.ListHookInstancesRequest`
         :rtype: :class:`huaweicloudsdkas.v1.ListHookInstancesResponse`
         """
-        return self.list_hook_instances_with_http_info(request)
+        return self._list_hook_instances_with_http_info(request)
 
-    def list_hook_instances_with_http_info(self, request):
-        all_params = ['scaling_group_id', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_hook_instances_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1659,14 +1537,10 @@ class AsClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.ListLifeCycleHooksRequest`
         :rtype: :class:`huaweicloudsdkas.v1.ListLifeCycleHooksResponse`
         """
-        return self.list_life_cycle_hooks_with_http_info(request)
+        return self._list_life_cycle_hooks_with_http_info(request)
 
-    def list_life_cycle_hooks_with_http_info(self, request):
-        all_params = ['scaling_group_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_life_cycle_hooks_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1719,14 +1593,10 @@ class AsClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.ListResourceInstancesRequest`
         :rtype: :class:`huaweicloudsdkas.v1.ListResourceInstancesResponse`
         """
-        return self.list_resource_instances_with_http_info(request)
+        return self._list_resource_instances_with_http_info(request)
 
-    def list_resource_instances_with_http_info(self, request):
-        all_params = ['resource_type', 'bodyparam']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_resource_instances_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1781,14 +1651,10 @@ class AsClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.ListScalingActivityLogsRequest`
         :rtype: :class:`huaweicloudsdkas.v1.ListScalingActivityLogsResponse`
         """
-        return self.list_scaling_activity_logs_with_http_info(request)
+        return self._list_scaling_activity_logs_with_http_info(request)
 
-    def list_scaling_activity_logs_with_http_info(self, request):
-        all_params = ['scaling_group_id', 'start_time', 'end_time', 'start_number', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_scaling_activity_logs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1849,14 +1715,10 @@ class AsClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.ListScalingActivityV2LogsRequest`
         :rtype: :class:`huaweicloudsdkas.v1.ListScalingActivityV2LogsResponse`
         """
-        return self.list_scaling_activity_v2_logs_with_http_info(request)
+        return self._list_scaling_activity_v2_logs_with_http_info(request)
 
-    def list_scaling_activity_v2_logs_with_http_info(self, request):
-        all_params = ['scaling_group_id', 'log_id', 'start_time', 'end_time', 'start_number', 'limit', 'type', 'status']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_scaling_activity_v2_logs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1923,14 +1785,10 @@ class AsClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.ListScalingConfigsRequest`
         :rtype: :class:`huaweicloudsdkas.v1.ListScalingConfigsResponse`
         """
-        return self.list_scaling_configs_with_http_info(request)
+        return self._list_scaling_configs_with_http_info(request)
 
-    def list_scaling_configs_with_http_info(self, request):
-        all_params = ['scaling_configuration_name', 'image_id', 'start_number', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_scaling_configs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1989,14 +1847,10 @@ class AsClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.ListScalingGroupsRequest`
         :rtype: :class:`huaweicloudsdkas.v1.ListScalingGroupsResponse`
         """
-        return self.list_scaling_groups_with_http_info(request)
+        return self._list_scaling_groups_with_http_info(request)
 
-    def list_scaling_groups_with_http_info(self, request):
-        all_params = ['scaling_group_name', 'scaling_configuration_id', 'scaling_group_status', 'start_number', 'limit', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_scaling_groups_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2059,14 +1913,10 @@ class AsClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.ListScalingInstancesRequest`
         :rtype: :class:`huaweicloudsdkas.v1.ListScalingInstancesResponse`
         """
-        return self.list_scaling_instances_with_http_info(request)
+        return self._list_scaling_instances_with_http_info(request)
 
-    def list_scaling_instances_with_http_info(self, request):
-        all_params = ['scaling_group_id', 'life_cycle_state', 'health_status', 'protect_from_scaling_down', 'start_number', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_scaling_instances_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2129,14 +1979,10 @@ class AsClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.ListScalingNotificationsRequest`
         :rtype: :class:`huaweicloudsdkas.v1.ListScalingNotificationsResponse`
         """
-        return self.list_scaling_notifications_with_http_info(request)
+        return self._list_scaling_notifications_with_http_info(request)
 
-    def list_scaling_notifications_with_http_info(self, request):
-        all_params = ['scaling_group_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_scaling_notifications_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2189,14 +2035,10 @@ class AsClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.ListScalingPoliciesRequest`
         :rtype: :class:`huaweicloudsdkas.v1.ListScalingPoliciesResponse`
         """
-        return self.list_scaling_policies_with_http_info(request)
+        return self._list_scaling_policies_with_http_info(request)
 
-    def list_scaling_policies_with_http_info(self, request):
-        all_params = ['scaling_group_id', 'scaling_policy_name', 'scaling_policy_type', 'scaling_policy_id', 'start_number', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_scaling_policies_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2259,14 +2101,10 @@ class AsClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.ListScalingPolicyExecuteLogsRequest`
         :rtype: :class:`huaweicloudsdkas.v1.ListScalingPolicyExecuteLogsResponse`
         """
-        return self.list_scaling_policy_execute_logs_with_http_info(request)
+        return self._list_scaling_policy_execute_logs_with_http_info(request)
 
-    def list_scaling_policy_execute_logs_with_http_info(self, request):
-        all_params = ['scaling_policy_id', 'log_id', 'scaling_resource_type', 'scaling_resource_id', 'execute_type', 'start_time', 'end_time', 'start_number', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_scaling_policy_execute_logs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2335,14 +2173,10 @@ class AsClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.ListScalingTagInfosByResourceIdRequest`
         :rtype: :class:`huaweicloudsdkas.v1.ListScalingTagInfosByResourceIdResponse`
         """
-        return self.list_scaling_tag_infos_by_resource_id_with_http_info(request)
+        return self._list_scaling_tag_infos_by_resource_id_with_http_info(request)
 
-    def list_scaling_tag_infos_by_resource_id_with_http_info(self, request):
-        all_params = ['resource_type', 'resource_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_scaling_tag_infos_by_resource_id_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2397,14 +2231,10 @@ class AsClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.ListScalingTagInfosByTenantIdRequest`
         :rtype: :class:`huaweicloudsdkas.v1.ListScalingTagInfosByTenantIdResponse`
         """
-        return self.list_scaling_tag_infos_by_tenant_id_with_http_info(request)
+        return self._list_scaling_tag_infos_by_tenant_id_with_http_info(request)
 
-    def list_scaling_tag_infos_by_tenant_id_with_http_info(self, request):
-        all_params = ['resource_type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_scaling_tag_infos_by_tenant_id_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2457,14 +2287,10 @@ class AsClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.PauseScalingGroupRequest`
         :rtype: :class:`huaweicloudsdkas.v1.PauseScalingGroupResponse`
         """
-        return self.pause_scaling_group_with_http_info(request)
+        return self._pause_scaling_group_with_http_info(request)
 
-    def pause_scaling_group_with_http_info(self, request):
-        all_params = ['scaling_group_id', 'body_param']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _pause_scaling_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2519,14 +2345,10 @@ class AsClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.PauseScalingPolicyRequest`
         :rtype: :class:`huaweicloudsdkas.v1.PauseScalingPolicyResponse`
         """
-        return self.pause_scaling_policy_with_http_info(request)
+        return self._pause_scaling_policy_with_http_info(request)
 
-    def pause_scaling_policy_with_http_info(self, request):
-        all_params = ['scaling_policy_id', 'bodyparam']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _pause_scaling_policy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2581,14 +2403,10 @@ class AsClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.ResumeScalingGroupRequest`
         :rtype: :class:`huaweicloudsdkas.v1.ResumeScalingGroupResponse`
         """
-        return self.resume_scaling_group_with_http_info(request)
+        return self._resume_scaling_group_with_http_info(request)
 
-    def resume_scaling_group_with_http_info(self, request):
-        all_params = ['scaling_group_id', 'body_param']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _resume_scaling_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2643,14 +2461,10 @@ class AsClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.ResumeScalingPolicyRequest`
         :rtype: :class:`huaweicloudsdkas.v1.ResumeScalingPolicyResponse`
         """
-        return self.resume_scaling_policy_with_http_info(request)
+        return self._resume_scaling_policy_with_http_info(request)
 
-    def resume_scaling_policy_with_http_info(self, request):
-        all_params = ['scaling_policy_id', 'bodyparam']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _resume_scaling_policy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2705,14 +2519,10 @@ class AsClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.ShowLifeCycleHookRequest`
         :rtype: :class:`huaweicloudsdkas.v1.ShowLifeCycleHookResponse`
         """
-        return self.show_life_cycle_hook_with_http_info(request)
+        return self._show_life_cycle_hook_with_http_info(request)
 
-    def show_life_cycle_hook_with_http_info(self, request):
-        all_params = ['scaling_group_id', 'lifecycle_hook_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_life_cycle_hook_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2767,14 +2577,10 @@ class AsClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.ShowPolicyAndInstanceQuotaRequest`
         :rtype: :class:`huaweicloudsdkas.v1.ShowPolicyAndInstanceQuotaResponse`
         """
-        return self.show_policy_and_instance_quota_with_http_info(request)
+        return self._show_policy_and_instance_quota_with_http_info(request)
 
-    def show_policy_and_instance_quota_with_http_info(self, request):
-        all_params = ['scaling_group_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_policy_and_instance_quota_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2827,14 +2633,10 @@ class AsClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.ShowResourceQuotaRequest`
         :rtype: :class:`huaweicloudsdkas.v1.ShowResourceQuotaResponse`
         """
-        return self.show_resource_quota_with_http_info(request)
+        return self._show_resource_quota_with_http_info(request)
 
-    def show_resource_quota_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_resource_quota_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2885,14 +2687,10 @@ class AsClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.ShowScalingConfigRequest`
         :rtype: :class:`huaweicloudsdkas.v1.ShowScalingConfigResponse`
         """
-        return self.show_scaling_config_with_http_info(request)
+        return self._show_scaling_config_with_http_info(request)
 
-    def show_scaling_config_with_http_info(self, request):
-        all_params = ['scaling_configuration_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_scaling_config_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2945,14 +2743,10 @@ class AsClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.ShowScalingGroupRequest`
         :rtype: :class:`huaweicloudsdkas.v1.ShowScalingGroupResponse`
         """
-        return self.show_scaling_group_with_http_info(request)
+        return self._show_scaling_group_with_http_info(request)
 
-    def show_scaling_group_with_http_info(self, request):
-        all_params = ['scaling_group_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_scaling_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3005,14 +2799,10 @@ class AsClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.ShowScalingPolicyRequest`
         :rtype: :class:`huaweicloudsdkas.v1.ShowScalingPolicyResponse`
         """
-        return self.show_scaling_policy_with_http_info(request)
+        return self._show_scaling_policy_with_http_info(request)
 
-    def show_scaling_policy_with_http_info(self, request):
-        all_params = ['scaling_policy_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_scaling_policy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3065,14 +2855,10 @@ class AsClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.UpdateLifeCycleHookRequest`
         :rtype: :class:`huaweicloudsdkas.v1.UpdateLifeCycleHookResponse`
         """
-        return self.update_life_cycle_hook_with_http_info(request)
+        return self._update_life_cycle_hook_with_http_info(request)
 
-    def update_life_cycle_hook_with_http_info(self, request):
-        all_params = ['scaling_group_id', 'lifecycle_hook_name', 'bodyparam']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_life_cycle_hook_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3129,14 +2915,10 @@ class AsClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.UpdateScalingGroupRequest`
         :rtype: :class:`huaweicloudsdkas.v1.UpdateScalingGroupResponse`
         """
-        return self.update_scaling_group_with_http_info(request)
+        return self._update_scaling_group_with_http_info(request)
 
-    def update_scaling_group_with_http_info(self, request):
-        all_params = ['scaling_group_id', 'bodyparam']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_scaling_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3191,14 +2973,10 @@ class AsClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.UpdateScalingPolicyRequest`
         :rtype: :class:`huaweicloudsdkas.v1.UpdateScalingPolicyResponse`
         """
-        return self.update_scaling_policy_with_http_info(request)
+        return self._update_scaling_policy_with_http_info(request)
 
-    def update_scaling_policy_with_http_info(self, request):
-        all_params = ['scaling_policy_id', 'bodyparam']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_scaling_policy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3253,14 +3031,10 @@ class AsClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.ListApiVersionsRequest`
         :rtype: :class:`huaweicloudsdkas.v1.ListApiVersionsResponse`
         """
-        return self.list_api_versions_with_http_info(request)
+        return self._list_api_versions_with_http_info(request)
 
-    def list_api_versions_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_api_versions_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3311,14 +3085,10 @@ class AsClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.ShowApiVersionRequest`
         :rtype: :class:`huaweicloudsdkas.v1.ShowApiVersionResponse`
         """
-        return self.show_api_version_with_http_info(request)
+        return self._show_api_version_with_http_info(request)
 
-    def show_api_version_with_http_info(self, request):
-        all_params = ['api_version']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_api_version_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3371,14 +3141,10 @@ class AsClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.CreateScalingV2PolicyRequest`
         :rtype: :class:`huaweicloudsdkas.v1.CreateScalingV2PolicyResponse`
         """
-        return self.create_scaling_v2_policy_with_http_info(request)
+        return self._create_scaling_v2_policy_with_http_info(request)
 
-    def create_scaling_v2_policy_with_http_info(self, request):
-        all_params = ['bodyparam']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_scaling_v2_policy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3431,14 +3197,10 @@ class AsClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.ListAllScalingV2PoliciesRequest`
         :rtype: :class:`huaweicloudsdkas.v1.ListAllScalingV2PoliciesResponse`
         """
-        return self.list_all_scaling_v2_policies_with_http_info(request)
+        return self._list_all_scaling_v2_policies_with_http_info(request)
 
-    def list_all_scaling_v2_policies_with_http_info(self, request):
-        all_params = ['scaling_resource_id', 'scaling_resource_type', 'scaling_policy_name', 'scaling_policy_type', 'scaling_policy_id', 'start_number', 'limit', 'sort_by', 'order', 'enterprise_project_id', 'alarm_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_all_scaling_v2_policies_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3511,14 +3273,10 @@ class AsClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.ListScalingV2PoliciesRequest`
         :rtype: :class:`huaweicloudsdkas.v1.ListScalingV2PoliciesResponse`
         """
-        return self.list_scaling_v2_policies_with_http_info(request)
+        return self._list_scaling_v2_policies_with_http_info(request)
 
-    def list_scaling_v2_policies_with_http_info(self, request):
-        all_params = ['scaling_resource_id', 'scaling_policy_name', 'scaling_policy_type', 'scaling_policy_id', 'start_number', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_scaling_v2_policies_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3581,14 +3339,10 @@ class AsClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.ShowScalingV2PolicyRequest`
         :rtype: :class:`huaweicloudsdkas.v1.ShowScalingV2PolicyResponse`
         """
-        return self.show_scaling_v2_policy_with_http_info(request)
+        return self._show_scaling_v2_policy_with_http_info(request)
 
-    def show_scaling_v2_policy_with_http_info(self, request):
-        all_params = ['scaling_policy_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_scaling_v2_policy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3641,14 +3395,10 @@ class AsClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.UpdateScalingV2PolicyRequest`
         :rtype: :class:`huaweicloudsdkas.v1.UpdateScalingV2PolicyResponse`
         """
-        return self.update_scaling_v2_policy_with_http_info(request)
+        return self._update_scaling_v2_policy_with_http_info(request)
 
-    def update_scaling_v2_policy_with_http_info(self, request):
-        all_params = ['scaling_policy_id', 'bodyparam']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_scaling_v2_policy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

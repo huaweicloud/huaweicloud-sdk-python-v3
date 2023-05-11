@@ -1,9 +1,6 @@
 # coding: utf-8
 
-import re
 import six
-
-
 
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
@@ -20,28 +17,57 @@ class DeleteConnctionRequest:
     sensitive_list = []
 
     openapi_types = {
+        'workspace': 'str',
         'connection_name': 'str'
     }
 
     attribute_map = {
+        'workspace': 'workspace',
         'connection_name': 'connection_name'
     }
 
-    def __init__(self, connection_name=None):
+    def __init__(self, workspace=None, connection_name=None):
         """DeleteConnctionRequest
 
         The model defined in huaweicloud sdk
 
+        :param workspace: 工作空间id
+        :type workspace: str
         :param connection_name: 连接名称.
         :type connection_name: str
         """
         
         
 
+        self._workspace = None
         self._connection_name = None
         self.discriminator = None
 
+        if workspace is not None:
+            self.workspace = workspace
         self.connection_name = connection_name
+
+    @property
+    def workspace(self):
+        """Gets the workspace of this DeleteConnctionRequest.
+
+        工作空间id
+
+        :return: The workspace of this DeleteConnctionRequest.
+        :rtype: str
+        """
+        return self._workspace
+
+    @workspace.setter
+    def workspace(self, workspace):
+        """Sets the workspace of this DeleteConnctionRequest.
+
+        工作空间id
+
+        :param workspace: The workspace of this DeleteConnctionRequest.
+        :type workspace: str
+        """
+        self._workspace = workspace
 
     @property
     def connection_name(self):

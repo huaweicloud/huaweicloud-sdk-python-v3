@@ -1,0 +1,13 @@
+# coding: utf-8
+
+from __future__ import absolute_import
+
+# import models into model package
+from huaweicloudsdkeihealth.v2.model.admet_property_dict_with_custom import AdmetPropertyDictWithCustom
+from huaweicloudsdkeihealth.v2.model.admet_with_custom_request import AdmetWithCustomRequest
+from huaweicloudsdkeihealth.v2.model.custom_prop import CustomProp
+from huaweicloudsdkeihealth.v2.model.prop_definition import PropDefinition
+from huaweicloudsdkeihealth.v2.model.show_admet_with_custom_props_request import ShowAdmetWithCustomPropsRequest
+from huaweicloudsdkeihealth.v2.model.show_admet_with_custom_props_response import ShowAdmetWithCustomPropsResponse
+from huaweicloudsdkeihealth.v2.model.smiles import Smiles
+from huaweicloudsdkeihealth.v2.model.value_range import ValueRange

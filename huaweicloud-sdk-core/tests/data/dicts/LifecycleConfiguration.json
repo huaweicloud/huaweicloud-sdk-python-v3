@@ -1,0 +1,38 @@
+{
+  "LifecycleConfiguration": {
+    "Rule": {
+      "ID": "id",
+      "Prefix": "prefix",
+      "Status": "status",
+      "Expiration": {
+        "Days": "days"
+      },
+      "NoncurrentVersionExpiration": {
+        "NoncurrentDays": "days"
+      },
+      "Transition": [
+        {
+          "Days": "30",
+          "StorageClass": "WARM"
+        },
+        {
+          "Days": "60",
+          "StorageClass": "COLD"
+        }
+      ],
+      "NoncurrentVersionTransition": [
+        {
+          "NoncurrentDays": "30",
+          "StorageClass": "WARM"
+        },
+        {
+          "NoncurrentDays": "60",
+          "StorageClass": "COLD"
+        }
+      ],
+      "AbortIncompleteMultipartUpload": {
+        "DaysAfterInitiation": "10"
+      }
+    }
+  }
+}

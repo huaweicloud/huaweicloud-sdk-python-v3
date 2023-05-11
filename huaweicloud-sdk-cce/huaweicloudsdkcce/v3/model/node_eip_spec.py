@@ -1,9 +1,6 @@
 # coding: utf-8
 
-import re
 import six
-
-
 
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
@@ -46,8 +43,7 @@ class NodeEIPSpec:
         self._bandwidth = None
         self.discriminator = None
 
-        if iptype is not None:
-            self.iptype = iptype
+        self.iptype = iptype
         if bandwidth is not None:
             self.bandwidth = bandwidth
 

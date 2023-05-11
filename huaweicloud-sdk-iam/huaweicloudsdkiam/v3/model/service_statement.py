@@ -1,9 +1,6 @@
 # coding: utf-8
 
-import re
 import six
-
-
 
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
@@ -38,13 +35,13 @@ class ServiceStatement:
 
         The model defined in huaweicloud sdk
 
-        :param action: 授权项，指对资源的具体操作权限，不超过100个。 &gt; - 格式为：服务名:资源类型:操作，例：vpc:ports:create。 &gt; - 服务名为产品名称，例如ecs、evs和vpc等，服务名仅支持小写。 资源类型和操作没有大小写，要求支持通配符号*，无需罗列全部授权项。
+        :param action: 授权项，指对资源的具体操作权限。 &gt; - 格式为：服务名:资源类型:操作，例：vpc:ports:create。 &gt; - 服务名为产品名称，例如ecs、evs和vpc等，服务名仅支持小写。 资源类型和操作没有大小写，要求支持通配符号*，无需罗列全部授权项。
         :type action: list[str]
         :param effect: 作用。包含两种：允许（Allow）和拒绝（Deny），既有Allow又有Deny的授权语句时，遵循Deny优先的原则。
         :type effect: str
-        :param condition: 限制条件。不超过10个。
+        :param condition: 
         :type condition: dict(str, dict(str, list[str]))
-        :param resource: 资源。数组长度不超过10，每个字符串长度不超过128，规则如下： &gt; - 可填 * 的五段式：&lt;service-name&gt;:&lt;region&gt;:&lt;account-id&gt;:&lt;resource-type&gt;:&lt;resource-path&gt;，例：\&quot;obs:*:*:bucket:*\&quot;。 &gt; - region字段为*或用户可访问的region。service必须存在且resource属于对应service。
+        :param resource: 资源。规则如下： &gt; - 可填 * 的五段式：&lt;service-name&gt;:&lt;region&gt;:&lt;account-id&gt;:&lt;resource-type&gt;:&lt;resource-path&gt;，例：\&quot;obs:*:*:bucket:*\&quot;。 &gt; - region字段为*或用户可访问的region。service必须存在且resource属于对应service。
         :type resource: list[str]
         """
         
@@ -67,7 +64,7 @@ class ServiceStatement:
     def action(self):
         """Gets the action of this ServiceStatement.
 
-        授权项，指对资源的具体操作权限，不超过100个。 > - 格式为：服务名:资源类型:操作，例：vpc:ports:create。 > - 服务名为产品名称，例如ecs、evs和vpc等，服务名仅支持小写。 资源类型和操作没有大小写，要求支持通配符号*，无需罗列全部授权项。
+        授权项，指对资源的具体操作权限。 > - 格式为：服务名:资源类型:操作，例：vpc:ports:create。 > - 服务名为产品名称，例如ecs、evs和vpc等，服务名仅支持小写。 资源类型和操作没有大小写，要求支持通配符号*，无需罗列全部授权项。
 
         :return: The action of this ServiceStatement.
         :rtype: list[str]
@@ -78,7 +75,7 @@ class ServiceStatement:
     def action(self, action):
         """Sets the action of this ServiceStatement.
 
-        授权项，指对资源的具体操作权限，不超过100个。 > - 格式为：服务名:资源类型:操作，例：vpc:ports:create。 > - 服务名为产品名称，例如ecs、evs和vpc等，服务名仅支持小写。 资源类型和操作没有大小写，要求支持通配符号*，无需罗列全部授权项。
+        授权项，指对资源的具体操作权限。 > - 格式为：服务名:资源类型:操作，例：vpc:ports:create。 > - 服务名为产品名称，例如ecs、evs和vpc等，服务名仅支持小写。 资源类型和操作没有大小写，要求支持通配符号*，无需罗列全部授权项。
 
         :param action: The action of this ServiceStatement.
         :type action: list[str]
@@ -111,8 +108,6 @@ class ServiceStatement:
     def condition(self):
         """Gets the condition of this ServiceStatement.
 
-        限制条件。不超过10个。
-
         :return: The condition of this ServiceStatement.
         :rtype: dict(str, dict(str, list[str]))
         """
@@ -121,8 +116,6 @@ class ServiceStatement:
     @condition.setter
     def condition(self, condition):
         """Sets the condition of this ServiceStatement.
-
-        限制条件。不超过10个。
 
         :param condition: The condition of this ServiceStatement.
         :type condition: dict(str, dict(str, list[str]))
@@ -133,7 +126,7 @@ class ServiceStatement:
     def resource(self):
         """Gets the resource of this ServiceStatement.
 
-        资源。数组长度不超过10，每个字符串长度不超过128，规则如下： > - 可填 * 的五段式：<service-name>:<region>:<account-id>:<resource-type>:<resource-path>，例：\"obs:*:*:bucket:*\"。 > - region字段为*或用户可访问的region。service必须存在且resource属于对应service。
+        资源。规则如下： > - 可填 * 的五段式：<service-name>:<region>:<account-id>:<resource-type>:<resource-path>，例：\"obs:*:*:bucket:*\"。 > - region字段为*或用户可访问的region。service必须存在且resource属于对应service。
 
         :return: The resource of this ServiceStatement.
         :rtype: list[str]
@@ -144,7 +137,7 @@ class ServiceStatement:
     def resource(self, resource):
         """Sets the resource of this ServiceStatement.
 
-        资源。数组长度不超过10，每个字符串长度不超过128，规则如下： > - 可填 * 的五段式：<service-name>:<region>:<account-id>:<resource-type>:<resource-path>，例：\"obs:*:*:bucket:*\"。 > - region字段为*或用户可访问的region。service必须存在且resource属于对应service。
+        资源。规则如下： > - 可填 * 的五段式：<service-name>:<region>:<account-id>:<resource-type>:<resource-path>，例：\"obs:*:*:bucket:*\"。 > - region字段为*或用户可访问的region。service必须存在且resource属于对应service。
 
         :param resource: The resource of this ServiceStatement.
         :type resource: list[str]

@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class CloudRTCAsyncClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(CloudRTCAsyncClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkcloudrtc.v2.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -54,14 +36,10 @@ class CloudRTCAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcloudrtc.v2.CreateAppRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.CreateAppResponse`
         """
-        return self.create_app_with_http_info(request)
+        return self._create_app_with_http_info(request)
 
-    def create_app_with_http_info(self, request):
-        all_params = ['content_type', 'create_app_request_body', 'authorization', 'x_sdk_date', 'x_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_app_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -127,14 +105,10 @@ class CloudRTCAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcloudrtc.v2.CreateIndividualStreamJobRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.CreateIndividualStreamJobResponse`
         """
-        return self.create_individual_stream_job_with_http_info(request)
+        return self._create_individual_stream_job_with_http_info(request)
 
-    def create_individual_stream_job_with_http_info(self, request):
-        all_params = ['content_type', 'app_id', 'create_individual_stream_job_request_body', 'authorization', 'x_sdk_date', 'x_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_individual_stream_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -214,14 +188,10 @@ class CloudRTCAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcloudrtc.v2.CreateMixJobRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.CreateMixJobResponse`
         """
-        return self.create_mix_job_with_http_info(request)
+        return self._create_mix_job_with_http_info(request)
 
-    def create_mix_job_with_http_info(self, request):
-        all_params = ['content_type', 'app_id', 'create_mix_job_request_body', 'authorization', 'x_sdk_date', 'x_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_mix_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -288,14 +258,10 @@ class CloudRTCAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcloudrtc.v2.CreateRecordRuleRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.CreateRecordRuleResponse`
         """
-        return self.create_record_rule_with_http_info(request)
+        return self._create_record_rule_with_http_info(request)
 
-    def create_record_rule_with_http_info(self, request):
-        all_params = ['content_type', 'app_id', 'create_record_rule_request_body', 'authorization', 'x_sdk_date', 'x_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_record_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -359,14 +325,10 @@ class CloudRTCAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcloudrtc.v2.DeleteAppRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.DeleteAppResponse`
         """
-        return self.delete_app_with_http_info(request)
+        return self._delete_app_with_http_info(request)
 
-    def delete_app_with_http_info(self, request):
-        all_params = ['content_type', 'app_id', 'authorization', 'x_sdk_date', 'x_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_app_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -428,14 +390,10 @@ class CloudRTCAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcloudrtc.v2.DeleteRecordRuleRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.DeleteRecordRuleResponse`
         """
-        return self.delete_record_rule_with_http_info(request)
+        return self._delete_record_rule_with_http_info(request)
 
-    def delete_record_rule_with_http_info(self, request):
-        all_params = ['content_type', 'app_id', 'rule_id', 'authorization', 'x_sdk_date', 'x_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_record_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -499,14 +457,10 @@ class CloudRTCAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcloudrtc.v2.ListAppsRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.ListAppsResponse`
         """
-        return self.list_apps_with_http_info(request)
+        return self._list_apps_with_http_info(request)
 
-    def list_apps_with_http_info(self, request):
-        all_params = ['content_type', 'authorization', 'x_sdk_date', 'x_project_id', 'state', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_apps_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -572,14 +526,10 @@ class CloudRTCAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcloudrtc.v2.ListRecordRulesRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.ListRecordRulesResponse`
         """
-        return self.list_record_rules_with_http_info(request)
+        return self._list_record_rules_with_http_info(request)
 
-    def list_record_rules_with_http_info(self, request):
-        all_params = ['content_type', 'app_id', 'authorization', 'x_sdk_date', 'x_project_id', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_record_rules_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -645,14 +595,10 @@ class CloudRTCAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcloudrtc.v2.RemoveRoomRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.RemoveRoomResponse`
         """
-        return self.remove_room_with_http_info(request)
+        return self._remove_room_with_http_info(request)
 
-    def remove_room_with_http_info(self, request):
-        all_params = ['content_type', 'app_id', 'room_id', 'authorization', 'x_sdk_date', 'x_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _remove_room_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -716,14 +662,10 @@ class CloudRTCAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcloudrtc.v2.RemoveUsersRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.RemoveUsersResponse`
         """
-        return self.remove_users_with_http_info(request)
+        return self._remove_users_with_http_info(request)
 
-    def remove_users_with_http_info(self, request):
-        all_params = ['content_type', 'app_id', 'room_id', 'remove_users_v2_request_body', 'authorization', 'x_sdk_date', 'x_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _remove_users_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -789,14 +731,10 @@ class CloudRTCAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcloudrtc.v2.ShowAppRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.ShowAppResponse`
         """
-        return self.show_app_with_http_info(request)
+        return self._show_app_with_http_info(request)
 
-    def show_app_with_http_info(self, request):
-        all_params = ['content_type', 'app_id', 'authorization', 'x_sdk_date', 'x_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_app_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -858,14 +796,10 @@ class CloudRTCAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcloudrtc.v2.ShowAutoRecordRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.ShowAutoRecordResponse`
         """
-        return self.show_auto_record_with_http_info(request)
+        return self._show_auto_record_with_http_info(request)
 
-    def show_auto_record_with_http_info(self, request):
-        all_params = ['content_type', 'app_id', 'authorization', 'x_sdk_date', 'x_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_auto_record_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -929,14 +863,10 @@ class CloudRTCAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcloudrtc.v2.ShowIndividualStreamJobRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.ShowIndividualStreamJobResponse`
         """
-        return self.show_individual_stream_job_with_http_info(request)
+        return self._show_individual_stream_job_with_http_info(request)
 
-    def show_individual_stream_job_with_http_info(self, request):
-        all_params = ['content_type', 'app_id', 'job_id', 'authorization', 'x_sdk_date', 'x_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_individual_stream_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1000,14 +930,10 @@ class CloudRTCAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcloudrtc.v2.ShowMixJobRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.ShowMixJobResponse`
         """
-        return self.show_mix_job_with_http_info(request)
+        return self._show_mix_job_with_http_info(request)
 
-    def show_mix_job_with_http_info(self, request):
-        all_params = ['content_type', 'app_id', 'job_id', 'authorization', 'x_sdk_date', 'x_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_mix_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1071,14 +997,10 @@ class CloudRTCAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcloudrtc.v2.ShowRecordCallbackRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.ShowRecordCallbackResponse`
         """
-        return self.show_record_callback_with_http_info(request)
+        return self._show_record_callback_with_http_info(request)
 
-    def show_record_callback_with_http_info(self, request):
-        all_params = ['content_type', 'app_id', 'authorization', 'x_sdk_date', 'x_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_record_callback_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1140,14 +1062,10 @@ class CloudRTCAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcloudrtc.v2.ShowRecordRuleRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.ShowRecordRuleResponse`
         """
-        return self.show_record_rule_with_http_info(request)
+        return self._show_record_rule_with_http_info(request)
 
-    def show_record_rule_with_http_info(self, request):
-        all_params = ['content_type', 'app_id', 'rule_id', 'authorization', 'x_sdk_date', 'x_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_record_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1211,14 +1129,10 @@ class CloudRTCAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcloudrtc.v2.ShowUrlAuthRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.ShowUrlAuthResponse`
         """
-        return self.show_url_auth_with_http_info(request)
+        return self._show_url_auth_with_http_info(request)
 
-    def show_url_auth_with_http_info(self, request):
-        all_params = ['content_type', 'app_id', 'authorization', 'x_sdk_date', 'x_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_url_auth_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1280,14 +1194,10 @@ class CloudRTCAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcloudrtc.v2.StartAppRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.StartAppResponse`
         """
-        return self.start_app_with_http_info(request)
+        return self._start_app_with_http_info(request)
 
-    def start_app_with_http_info(self, request):
-        all_params = ['content_type', 'app_id', 'authorization', 'x_sdk_date', 'x_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _start_app_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1351,14 +1261,10 @@ class CloudRTCAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcloudrtc.v2.StopAppRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.StopAppResponse`
         """
-        return self.stop_app_with_http_info(request)
+        return self._stop_app_with_http_info(request)
 
-    def stop_app_with_http_info(self, request):
-        all_params = ['content_type', 'app_id', 'authorization', 'x_sdk_date', 'x_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _stop_app_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1420,14 +1326,10 @@ class CloudRTCAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcloudrtc.v2.StopIndividualStreamJobRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.StopIndividualStreamJobResponse`
         """
-        return self.stop_individual_stream_job_with_http_info(request)
+        return self._stop_individual_stream_job_with_http_info(request)
 
-    def stop_individual_stream_job_with_http_info(self, request):
-        all_params = ['content_type', 'app_id', 'job_id', 'authorization', 'x_sdk_date', 'x_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _stop_individual_stream_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1491,14 +1393,10 @@ class CloudRTCAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcloudrtc.v2.StopMixJobRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.StopMixJobResponse`
         """
-        return self.stop_mix_job_with_http_info(request)
+        return self._stop_mix_job_with_http_info(request)
 
-    def stop_mix_job_with_http_info(self, request):
-        all_params = ['content_type', 'app_id', 'job_id', 'authorization', 'x_sdk_date', 'x_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _stop_mix_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1562,14 +1460,10 @@ class CloudRTCAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcloudrtc.v2.UpdateAutoRecordRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.UpdateAutoRecordResponse`
         """
-        return self.update_auto_record_with_http_info(request)
+        return self._update_auto_record_with_http_info(request)
 
-    def update_auto_record_with_http_info(self, request):
-        all_params = ['content_type', 'app_id', 'update_auto_record_request_body', 'authorization', 'x_sdk_date', 'x_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_auto_record_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1635,14 +1529,10 @@ class CloudRTCAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcloudrtc.v2.UpdateIndividualStreamJobRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.UpdateIndividualStreamJobResponse`
         """
-        return self.update_individual_stream_job_with_http_info(request)
+        return self._update_individual_stream_job_with_http_info(request)
 
-    def update_individual_stream_job_with_http_info(self, request):
-        all_params = ['content_type', 'app_id', 'job_id', 'update_individual_stream_job_v2_request_body', 'authorization', 'x_sdk_date', 'x_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_individual_stream_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1708,14 +1598,10 @@ class CloudRTCAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcloudrtc.v2.UpdateMixJobRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.UpdateMixJobResponse`
         """
-        return self.update_mix_job_with_http_info(request)
+        return self._update_mix_job_with_http_info(request)
 
-    def update_mix_job_with_http_info(self, request):
-        all_params = ['content_type', 'app_id', 'job_id', 'update_mix_job_request_body', 'authorization', 'x_sdk_date', 'x_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_mix_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1785,14 +1671,10 @@ class CloudRTCAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcloudrtc.v2.UpdateRecordCallbackRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.UpdateRecordCallbackResponse`
         """
-        return self.update_record_callback_with_http_info(request)
+        return self._update_record_callback_with_http_info(request)
 
-    def update_record_callback_with_http_info(self, request):
-        all_params = ['content_type', 'app_id', 'update_record_callback_request_body', 'authorization', 'x_sdk_date', 'x_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_record_callback_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1856,14 +1738,10 @@ class CloudRTCAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcloudrtc.v2.UpdateRecordRuleRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.UpdateRecordRuleResponse`
         """
-        return self.update_record_rule_with_http_info(request)
+        return self._update_record_rule_with_http_info(request)
 
-    def update_record_rule_with_http_info(self, request):
-        all_params = ['content_type', 'app_id', 'rule_id', 'update_record_rule_request_body', 'authorization', 'x_sdk_date', 'x_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_record_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1929,14 +1807,10 @@ class CloudRTCAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcloudrtc.v2.UpdateUrlAuthRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.UpdateUrlAuthResponse`
         """
-        return self.update_url_auth_with_http_info(request)
+        return self._update_url_auth_with_http_info(request)
 
-    def update_url_auth_with_http_info(self, request):
-        all_params = ['content_type', 'app_id', 'update_url_auth_request_body', 'authorization', 'x_sdk_date', 'x_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_url_auth_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

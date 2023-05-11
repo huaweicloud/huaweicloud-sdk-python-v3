@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class VpcAsyncClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(VpcAsyncClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkvpc.v3.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -54,14 +36,10 @@ class VpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v3.BatchCreateSubNetworkInterfaceRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.BatchCreateSubNetworkInterfaceResponse`
         """
-        return self.batch_create_sub_network_interface_with_http_info(request)
+        return self._batch_create_sub_network_interface_with_http_info(request)
 
-    def batch_create_sub_network_interface_with_http_info(self, request):
-        all_params = ['batch_create_sub_network_interface_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_create_sub_network_interface_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -115,14 +93,10 @@ class VpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v3.CreateSecurityGroupRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.CreateSecurityGroupResponse`
         """
-        return self.create_security_group_with_http_info(request)
+        return self._create_security_group_with_http_info(request)
 
-    def create_security_group_with_http_info(self, request):
-        all_params = ['create_security_group_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_security_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -176,14 +150,10 @@ class VpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v3.CreateSecurityGroupRuleRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.CreateSecurityGroupRuleResponse`
         """
-        return self.create_security_group_rule_with_http_info(request)
+        return self._create_security_group_rule_with_http_info(request)
 
-    def create_security_group_rule_with_http_info(self, request):
-        all_params = ['create_security_group_rule_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_security_group_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -237,14 +207,10 @@ class VpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v3.CreateSubNetworkInterfaceRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.CreateSubNetworkInterfaceResponse`
         """
-        return self.create_sub_network_interface_with_http_info(request)
+        return self._create_sub_network_interface_with_http_info(request)
 
-    def create_sub_network_interface_with_http_info(self, request):
-        all_params = ['create_sub_network_interface_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_sub_network_interface_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -298,14 +264,10 @@ class VpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v3.DeleteSecurityGroupRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.DeleteSecurityGroupResponse`
         """
-        return self.delete_security_group_with_http_info(request)
+        return self._delete_security_group_with_http_info(request)
 
-    def delete_security_group_with_http_info(self, request):
-        all_params = ['security_group_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_security_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -359,14 +321,10 @@ class VpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v3.DeleteSecurityGroupRuleRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.DeleteSecurityGroupRuleResponse`
         """
-        return self.delete_security_group_rule_with_http_info(request)
+        return self._delete_security_group_rule_with_http_info(request)
 
-    def delete_security_group_rule_with_http_info(self, request):
-        all_params = ['security_group_rule_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_security_group_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -420,14 +378,10 @@ class VpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v3.DeleteSubNetworkInterfaceRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.DeleteSubNetworkInterfaceResponse`
         """
-        return self.delete_sub_network_interface_with_http_info(request)
+        return self._delete_sub_network_interface_with_http_info(request)
 
-    def delete_sub_network_interface_with_http_info(self, request):
-        all_params = ['sub_network_interface_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_sub_network_interface_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -481,14 +435,10 @@ class VpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v3.ListSecurityGroupRulesRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.ListSecurityGroupRulesResponse`
         """
-        return self.list_security_group_rules_with_http_info(request)
+        return self._list_security_group_rules_with_http_info(request)
 
-    def list_security_group_rules_with_http_info(self, request):
-        all_params = ['limit', 'marker', 'id', 'security_group_id', 'protocol', 'description', 'remote_group_id', 'direction', 'action']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_security_group_rules_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -563,14 +513,10 @@ class VpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v3.ListSecurityGroupsRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.ListSecurityGroupsResponse`
         """
-        return self.list_security_groups_with_http_info(request)
+        return self._list_security_groups_with_http_info(request)
 
-    def list_security_groups_with_http_info(self, request):
-        all_params = ['limit', 'marker', 'id', 'name', 'description', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_security_groups_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -637,14 +583,10 @@ class VpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v3.ListSubNetworkInterfacesRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.ListSubNetworkInterfacesResponse`
         """
-        return self.list_sub_network_interfaces_with_http_info(request)
+        return self._list_sub_network_interfaces_with_http_info(request)
 
-    def list_sub_network_interfaces_with_http_info(self, request):
-        all_params = ['limit', 'marker', 'id', 'virsubnet_id', 'private_ip_address', 'mac_address', 'vpc_id', 'description', 'parent_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_sub_network_interfaces_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -721,14 +663,10 @@ class VpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v3.MigrateSubNetworkInterfaceRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.MigrateSubNetworkInterfaceResponse`
         """
-        return self.migrate_sub_network_interface_with_http_info(request)
+        return self._migrate_sub_network_interface_with_http_info(request)
 
-    def migrate_sub_network_interface_with_http_info(self, request):
-        all_params = ['migrate_sub_network_interface_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _migrate_sub_network_interface_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -782,14 +720,10 @@ class VpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v3.ShowSecurityGroupRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.ShowSecurityGroupResponse`
         """
-        return self.show_security_group_with_http_info(request)
+        return self._show_security_group_with_http_info(request)
 
-    def show_security_group_with_http_info(self, request):
-        all_params = ['security_group_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_security_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -843,14 +777,10 @@ class VpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v3.ShowSecurityGroupRuleRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.ShowSecurityGroupRuleResponse`
         """
-        return self.show_security_group_rule_with_http_info(request)
+        return self._show_security_group_rule_with_http_info(request)
 
-    def show_security_group_rule_with_http_info(self, request):
-        all_params = ['security_group_rule_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_security_group_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -904,14 +834,10 @@ class VpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v3.ShowSubNetworkInterfaceRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.ShowSubNetworkInterfaceResponse`
         """
-        return self.show_sub_network_interface_with_http_info(request)
+        return self._show_sub_network_interface_with_http_info(request)
 
-    def show_sub_network_interface_with_http_info(self, request):
-        all_params = ['sub_network_interface_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_sub_network_interface_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -965,14 +891,10 @@ class VpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v3.ShowSubNetworkInterfacesQuantityRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.ShowSubNetworkInterfacesQuantityResponse`
         """
-        return self.show_sub_network_interfaces_quantity_with_http_info(request)
+        return self._show_sub_network_interfaces_quantity_with_http_info(request)
 
-    def show_sub_network_interfaces_quantity_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_sub_network_interfaces_quantity_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1024,14 +946,10 @@ class VpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v3.UpdateSecurityGroupRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.UpdateSecurityGroupResponse`
         """
-        return self.update_security_group_with_http_info(request)
+        return self._update_security_group_with_http_info(request)
 
-    def update_security_group_with_http_info(self, request):
-        all_params = ['security_group_id', 'update_security_group_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_security_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1087,14 +1005,10 @@ class VpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v3.UpdateSubNetworkInterfaceRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.UpdateSubNetworkInterfaceResponse`
         """
-        return self.update_sub_network_interface_with_http_info(request)
+        return self._update_sub_network_interface_with_http_info(request)
 
-    def update_sub_network_interface_with_http_info(self, request):
-        all_params = ['sub_network_interface_id', 'update_sub_network_interface_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_sub_network_interface_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1150,14 +1064,10 @@ class VpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v3.CreateAddressGroupRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.CreateAddressGroupResponse`
         """
-        return self.create_address_group_with_http_info(request)
+        return self._create_address_group_with_http_info(request)
 
-    def create_address_group_with_http_info(self, request):
-        all_params = ['create_address_group_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_address_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1211,14 +1121,10 @@ class VpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v3.DeleteAddressGroupRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.DeleteAddressGroupResponse`
         """
-        return self.delete_address_group_with_http_info(request)
+        return self._delete_address_group_with_http_info(request)
 
-    def delete_address_group_with_http_info(self, request):
-        all_params = ['address_group_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_address_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1272,14 +1178,10 @@ class VpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v3.DeleteIpAddressGroupForceRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.DeleteIpAddressGroupForceResponse`
         """
-        return self.delete_ip_address_group_force_with_http_info(request)
+        return self._delete_ip_address_group_force_with_http_info(request)
 
-    def delete_ip_address_group_force_with_http_info(self, request):
-        all_params = ['address_group_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_ip_address_group_force_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1333,14 +1235,10 @@ class VpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v3.ListAddressGroupRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.ListAddressGroupResponse`
         """
-        return self.list_address_group_with_http_info(request)
+        return self._list_address_group_with_http_info(request)
 
-    def list_address_group_with_http_info(self, request):
-        all_params = ['limit', 'marker', 'id', 'name', 'ip_version', 'description']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_address_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1407,14 +1305,10 @@ class VpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v3.ShowAddressGroupRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.ShowAddressGroupResponse`
         """
-        return self.show_address_group_with_http_info(request)
+        return self._show_address_group_with_http_info(request)
 
-    def show_address_group_with_http_info(self, request):
-        all_params = ['address_group_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_address_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1468,14 +1362,10 @@ class VpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v3.UpdateAddressGroupRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.UpdateAddressGroupResponse`
         """
-        return self.update_address_group_with_http_info(request)
+        return self._update_address_group_with_http_info(request)
 
-    def update_address_group_with_http_info(self, request):
-        all_params = ['address_group_id', 'update_address_group_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_address_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1531,14 +1421,10 @@ class VpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v3.AddVpcExtendCidrRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.AddVpcExtendCidrResponse`
         """
-        return self.add_vpc_extend_cidr_with_http_info(request)
+        return self._add_vpc_extend_cidr_with_http_info(request)
 
-    def add_vpc_extend_cidr_with_http_info(self, request):
-        all_params = ['vpc_id', 'add_vpc_extend_cidr_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _add_vpc_extend_cidr_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1594,14 +1480,10 @@ class VpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v3.CreateVpcRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.CreateVpcResponse`
         """
-        return self.create_vpc_with_http_info(request)
+        return self._create_vpc_with_http_info(request)
 
-    def create_vpc_with_http_info(self, request):
-        all_params = ['create_vpc_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_vpc_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1655,14 +1537,10 @@ class VpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v3.DeleteVpcRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.DeleteVpcResponse`
         """
-        return self.delete_vpc_with_http_info(request)
+        return self._delete_vpc_with_http_info(request)
 
-    def delete_vpc_with_http_info(self, request):
-        all_params = ['vpc_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_vpc_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1716,14 +1594,10 @@ class VpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v3.ListVpcsRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.ListVpcsResponse`
         """
-        return self.list_vpcs_with_http_info(request)
+        return self._list_vpcs_with_http_info(request)
 
-    def list_vpcs_with_http_info(self, request):
-        all_params = ['limit', 'marker', 'id', 'name', 'description', 'cidr']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_vpcs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1791,14 +1665,10 @@ class VpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v3.RemoveVpcExtendCidrRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.RemoveVpcExtendCidrResponse`
         """
-        return self.remove_vpc_extend_cidr_with_http_info(request)
+        return self._remove_vpc_extend_cidr_with_http_info(request)
 
-    def remove_vpc_extend_cidr_with_http_info(self, request):
-        all_params = ['vpc_id', 'remove_vpc_extend_cidr_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _remove_vpc_extend_cidr_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1854,14 +1724,10 @@ class VpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v3.ShowVpcRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.ShowVpcResponse`
         """
-        return self.show_vpc_with_http_info(request)
+        return self._show_vpc_with_http_info(request)
 
-    def show_vpc_with_http_info(self, request):
-        all_params = ['vpc_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_vpc_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1915,14 +1781,10 @@ class VpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v3.UpdateVpcRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.UpdateVpcResponse`
         """
-        return self.update_vpc_with_http_info(request)
+        return self._update_vpc_with_http_info(request)
 
-    def update_vpc_with_http_info(self, request):
-        all_params = ['vpc_id', 'update_vpc_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_vpc_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

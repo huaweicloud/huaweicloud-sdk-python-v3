@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class ResClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(ResClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkres.v1.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -53,14 +35,10 @@ class ResClient(Client):
         :type request: :class:`huaweicloudsdkres.v1.CreateResDatasourceRequest`
         :rtype: :class:`huaweicloudsdkres.v1.CreateResDatasourceResponse`
         """
-        return self.create_res_datasource_with_http_info(request)
+        return self._create_res_datasource_with_http_info(request)
 
-    def create_res_datasource_with_http_info(self, request):
-        all_params = ['content_type', 'workspace_id', 'rest_resource_create_ds_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_res_datasource_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -117,14 +95,10 @@ class ResClient(Client):
         :type request: :class:`huaweicloudsdkres.v1.CreateResIntelligentSceneRequest`
         :rtype: :class:`huaweicloudsdkres.v1.CreateResIntelligentSceneResponse`
         """
-        return self.create_res_intelligent_scene_with_http_info(request)
+        return self._create_res_intelligent_scene_with_http_info(request)
 
-    def create_res_intelligent_scene_with_http_info(self, request):
-        all_params = ['content_type', 'workspace_id', 'rest_resource_create_intel_scene_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_res_intelligent_scene_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -181,14 +155,10 @@ class ResClient(Client):
         :type request: :class:`huaweicloudsdkres.v1.CreateResJobRequest`
         :rtype: :class:`huaweicloudsdkres.v1.CreateResJobResponse`
         """
-        return self.create_res_job_with_http_info(request)
+        return self._create_res_job_with_http_info(request)
 
-    def create_res_job_with_http_info(self, request):
-        all_params = ['content_type', 'resource_id', 'workspace_id', 'rest_training_new_instance_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_res_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -247,14 +217,10 @@ class ResClient(Client):
         :type request: :class:`huaweicloudsdkres.v1.CreateResJobsRequest`
         :rtype: :class:`huaweicloudsdkres.v1.CreateResJobsResponse`
         """
-        return self.create_res_jobs_with_http_info(request)
+        return self._create_res_jobs_with_http_info(request)
 
-    def create_res_jobs_with_http_info(self, request):
-        all_params = ['resource_id', 'workspace_id', 'rest_training_new_instances_req', 'content_type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_res_jobs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -313,14 +279,10 @@ class ResClient(Client):
         :type request: :class:`huaweicloudsdkres.v1.CreateResOnlineInstanceRequest`
         :rtype: :class:`huaweicloudsdkres.v1.CreateResOnlineInstanceResponse`
         """
-        return self.create_res_online_instance_with_http_info(request)
+        return self._create_res_online_instance_with_http_info(request)
 
-    def create_res_online_instance_with_http_info(self, request):
-        all_params = ['content_type', 'resource_id', 'workspace_id', 'rest_online_new_instance_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_res_online_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -379,14 +341,10 @@ class ResClient(Client):
         :type request: :class:`huaweicloudsdkres.v1.CreateResSceneRequest`
         :rtype: :class:`huaweicloudsdkres.v1.CreateResSceneResponse`
         """
-        return self.create_res_scene_with_http_info(request)
+        return self._create_res_scene_with_http_info(request)
 
-    def create_res_scene_with_http_info(self, request):
-        all_params = ['content_type', 'workspace_id', 'rest_resource_create_scene_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_res_scene_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -443,14 +401,10 @@ class ResClient(Client):
         :type request: :class:`huaweicloudsdkres.v1.CreateResWorkspaceRequest`
         :rtype: :class:`huaweicloudsdkres.v1.CreateResWorkspaceResponse`
         """
-        return self.create_res_workspace_with_http_info(request)
+        return self._create_res_workspace_with_http_info(request)
 
-    def create_res_workspace_with_http_info(self, request):
-        all_params = ['content_type', 'create_res_workspace_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_res_workspace_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -505,14 +459,10 @@ class ResClient(Client):
         :type request: :class:`huaweicloudsdkres.v1.DeleteResDatasourceRequest`
         :rtype: :class:`huaweicloudsdkres.v1.DeleteResDatasourceResponse`
         """
-        return self.delete_res_datasource_with_http_info(request)
+        return self._delete_res_datasource_with_http_info(request)
 
-    def delete_res_datasource_with_http_info(self, request):
-        all_params = ['content_type', 'workspace_id', 'datasource_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_res_datasource_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -569,14 +519,10 @@ class ResClient(Client):
         :type request: :class:`huaweicloudsdkres.v1.DeleteResJobRequest`
         :rtype: :class:`huaweicloudsdkres.v1.DeleteResJobResponse`
         """
-        return self.delete_res_job_with_http_info(request)
+        return self._delete_res_job_with_http_info(request)
 
-    def delete_res_job_with_http_info(self, request):
-        all_params = ['content_type', 'workspace_id', 'resource_id', 'job_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_res_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -635,14 +581,10 @@ class ResClient(Client):
         :type request: :class:`huaweicloudsdkres.v1.DeleteResOnlineInstanceRequest`
         :rtype: :class:`huaweicloudsdkres.v1.DeleteResOnlineInstanceResponse`
         """
-        return self.delete_res_online_instance_with_http_info(request)
+        return self._delete_res_online_instance_with_http_info(request)
 
-    def delete_res_online_instance_with_http_info(self, request):
-        all_params = ['content_type', 'workspace_id', 'resource_id', 'job_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_res_online_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -701,14 +643,10 @@ class ResClient(Client):
         :type request: :class:`huaweicloudsdkres.v1.DeleteResSceneRequest`
         :rtype: :class:`huaweicloudsdkres.v1.DeleteResSceneResponse`
         """
-        return self.delete_res_scene_with_http_info(request)
+        return self._delete_res_scene_with_http_info(request)
 
-    def delete_res_scene_with_http_info(self, request):
-        all_params = ['content_type', 'workspace_id', 'scene_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_res_scene_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -765,14 +703,10 @@ class ResClient(Client):
         :type request: :class:`huaweicloudsdkres.v1.DeleteResWorkspaceRequest`
         :rtype: :class:`huaweicloudsdkres.v1.DeleteResWorkspaceResponse`
         """
-        return self.delete_res_workspace_with_http_info(request)
+        return self._delete_res_workspace_with_http_info(request)
 
-    def delete_res_workspace_with_http_info(self, request):
-        all_params = ['content_type', 'workspace_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_res_workspace_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -827,14 +761,10 @@ class ResClient(Client):
         :type request: :class:`huaweicloudsdkres.v1.ListResDatasourcesRequest`
         :rtype: :class:`huaweicloudsdkres.v1.ListResDatasourcesResponse`
         """
-        return self.list_res_datasources_with_http_info(request)
+        return self._list_res_datasources_with_http_info(request)
 
-    def list_res_datasources_with_http_info(self, request):
-        all_params = ['content_type', 'workspace_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_res_datasources_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -889,14 +819,10 @@ class ResClient(Client):
         :type request: :class:`huaweicloudsdkres.v1.ListResEnterprisesRequest`
         :rtype: :class:`huaweicloudsdkres.v1.ListResEnterprisesResponse`
         """
-        return self.list_res_enterprises_with_http_info(request)
+        return self._list_res_enterprises_with_http_info(request)
 
-    def list_res_enterprises_with_http_info(self, request):
-        all_params = ['content_type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_res_enterprises_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -949,14 +875,10 @@ class ResClient(Client):
         :type request: :class:`huaweicloudsdkres.v1.ListResOnlineServiceDetailsRequest`
         :rtype: :class:`huaweicloudsdkres.v1.ListResOnlineServiceDetailsResponse`
         """
-        return self.list_res_online_service_details_with_http_info(request)
+        return self._list_res_online_service_details_with_http_info(request)
 
-    def list_res_online_service_details_with_http_info(self, request):
-        all_params = ['content_type', 'workspace_id', 'resource_id', 'category']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_res_online_service_details_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1015,14 +937,10 @@ class ResClient(Client):
         :type request: :class:`huaweicloudsdkres.v1.ListResResourceSpecRequest`
         :rtype: :class:`huaweicloudsdkres.v1.ListResResourceSpecResponse`
         """
-        return self.list_res_resource_spec_with_http_info(request)
+        return self._list_res_resource_spec_with_http_info(request)
 
-    def list_res_resource_spec_with_http_info(self, request):
-        all_params = ['content_type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_res_resource_spec_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1075,14 +993,10 @@ class ResClient(Client):
         :type request: :class:`huaweicloudsdkres.v1.ListResScenesRequest`
         :rtype: :class:`huaweicloudsdkres.v1.ListResScenesResponse`
         """
-        return self.list_res_scenes_with_http_info(request)
+        return self._list_res_scenes_with_http_info(request)
 
-    def list_res_scenes_with_http_info(self, request):
-        all_params = ['content_type', 'workspace_id', 'category']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_res_scenes_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1139,14 +1053,10 @@ class ResClient(Client):
         :type request: :class:`huaweicloudsdkres.v1.ListResWorkspacesRequest`
         :rtype: :class:`huaweicloudsdkres.v1.ListResWorkspacesResponse`
         """
-        return self.list_res_workspaces_with_http_info(request)
+        return self._list_res_workspaces_with_http_info(request)
 
-    def list_res_workspaces_with_http_info(self, request):
-        all_params = ['content_type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_res_workspaces_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1199,14 +1109,10 @@ class ResClient(Client):
         :type request: :class:`huaweicloudsdkres.v1.ShowResDatasourceRequest`
         :rtype: :class:`huaweicloudsdkres.v1.ShowResDatasourceResponse`
         """
-        return self.show_res_datasource_with_http_info(request)
+        return self._show_res_datasource_with_http_info(request)
 
-    def show_res_datasource_with_http_info(self, request):
-        all_params = ['content_type', 'workspace_id', 'datasource_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_res_datasource_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1263,14 +1169,10 @@ class ResClient(Client):
         :type request: :class:`huaweicloudsdkres.v1.ShowResDatasourceWorkDetailRequest`
         :rtype: :class:`huaweicloudsdkres.v1.ShowResDatasourceWorkDetailResponse`
         """
-        return self.show_res_datasource_work_detail_with_http_info(request)
+        return self._show_res_datasource_work_detail_with_http_info(request)
 
-    def show_res_datasource_work_detail_with_http_info(self, request):
-        all_params = ['content_type', 'workspace_id', 'resource_id', 'type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_res_datasource_work_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1329,14 +1231,10 @@ class ResClient(Client):
         :type request: :class:`huaweicloudsdkres.v1.ShowResJobRequest`
         :rtype: :class:`huaweicloudsdkres.v1.ShowResJobResponse`
         """
-        return self.show_res_job_with_http_info(request)
+        return self._show_res_job_with_http_info(request)
 
-    def show_res_job_with_http_info(self, request):
-        all_params = ['workspace_id', 'resource_id', 'category', 'content_type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_res_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1395,14 +1293,10 @@ class ResClient(Client):
         :type request: :class:`huaweicloudsdkres.v1.ShowResRecallSetRequest`
         :rtype: :class:`huaweicloudsdkres.v1.ShowResRecallSetResponse`
         """
-        return self.show_res_recall_set_with_http_info(request)
+        return self._show_res_recall_set_with_http_info(request)
 
-    def show_res_recall_set_with_http_info(self, request):
-        all_params = ['content_type', 'workspace_id', 'resource_id', 'use_type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_res_recall_set_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1461,14 +1355,10 @@ class ResClient(Client):
         :type request: :class:`huaweicloudsdkres.v1.ShowResSceneRequest`
         :rtype: :class:`huaweicloudsdkres.v1.ShowResSceneResponse`
         """
-        return self.show_res_scene_with_http_info(request)
+        return self._show_res_scene_with_http_info(request)
 
-    def show_res_scene_with_http_info(self, request):
-        all_params = ['content_type', 'workspace_id', 'scene_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_res_scene_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1525,14 +1415,10 @@ class ResClient(Client):
         :type request: :class:`huaweicloudsdkres.v1.ShowResWrokspaceRequest`
         :rtype: :class:`huaweicloudsdkres.v1.ShowResWrokspaceResponse`
         """
-        return self.show_res_wrokspace_with_http_info(request)
+        return self._show_res_wrokspace_with_http_info(request)
 
-    def show_res_wrokspace_with_http_info(self, request):
-        all_params = ['content_type', 'workspace_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_res_wrokspace_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1587,14 +1473,10 @@ class ResClient(Client):
         :type request: :class:`huaweicloudsdkres.v1.StartResJobRequest`
         :rtype: :class:`huaweicloudsdkres.v1.StartResJobResponse`
         """
-        return self.start_res_job_with_http_info(request)
+        return self._start_res_job_with_http_info(request)
 
-    def start_res_job_with_http_info(self, request):
-        all_params = ['content_type', 'workspace_id', 'resource_id', 'job_id', 'action']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _start_res_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1655,14 +1537,10 @@ class ResClient(Client):
         :type request: :class:`huaweicloudsdkres.v1.StartResSceneJobsRequest`
         :rtype: :class:`huaweicloudsdkres.v1.StartResSceneJobsResponse`
         """
-        return self.start_res_scene_jobs_with_http_info(request)
+        return self._start_res_scene_jobs_with_http_info(request)
 
-    def start_res_scene_jobs_with_http_info(self, request):
-        all_params = ['content_type', 'workspace_id', 'resource_id', 'action']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _start_res_scene_jobs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1721,14 +1599,10 @@ class ResClient(Client):
         :type request: :class:`huaweicloudsdkres.v1.UpdateResDatasourceRequest`
         :rtype: :class:`huaweicloudsdkres.v1.UpdateResDatasourceResponse`
         """
-        return self.update_res_datasource_with_http_info(request)
+        return self._update_res_datasource_with_http_info(request)
 
-    def update_res_datasource_with_http_info(self, request):
-        all_params = ['content_type', 'datasource_id', 'workspace_id', 'rest_resource_put_ds_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_res_datasource_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1787,14 +1661,10 @@ class ResClient(Client):
         :type request: :class:`huaweicloudsdkres.v1.UpdateResDatastructRequest`
         :rtype: :class:`huaweicloudsdkres.v1.UpdateResDatastructResponse`
         """
-        return self.update_res_datastruct_with_http_info(request)
+        return self._update_res_datastruct_with_http_info(request)
 
-    def update_res_datastruct_with_http_info(self, request):
-        all_params = ['content_type', 'datasource_id', 'workspace_id', 'rest_resource_put_ds_data_sturct_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_res_datastruct_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1853,14 +1723,10 @@ class ResClient(Client):
         :type request: :class:`huaweicloudsdkres.v1.UpdateResIntelligentSceneRequest`
         :rtype: :class:`huaweicloudsdkres.v1.UpdateResIntelligentSceneResponse`
         """
-        return self.update_res_intelligent_scene_with_http_info(request)
+        return self._update_res_intelligent_scene_with_http_info(request)
 
-    def update_res_intelligent_scene_with_http_info(self, request):
-        all_params = ['content_type', 'scene_id', 'workspace_id', 'rest_resource_put_intel_scene_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_res_intelligent_scene_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1919,14 +1785,10 @@ class ResClient(Client):
         :type request: :class:`huaweicloudsdkres.v1.UpdateResJobRequest`
         :rtype: :class:`huaweicloudsdkres.v1.UpdateResJobResponse`
         """
-        return self.update_res_job_with_http_info(request)
+        return self._update_res_job_with_http_info(request)
 
-    def update_res_job_with_http_info(self, request):
-        all_params = ['job_id', 'resource_id', 'workspace_id', 'rest_training_put_instance_req', 'content_type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_res_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1987,14 +1849,10 @@ class ResClient(Client):
         :type request: :class:`huaweicloudsdkres.v1.UpdateResOnlineInstanceRequest`
         :rtype: :class:`huaweicloudsdkres.v1.UpdateResOnlineInstanceResponse`
         """
-        return self.update_res_online_instance_with_http_info(request)
+        return self._update_res_online_instance_with_http_info(request)
 
-    def update_res_online_instance_with_http_info(self, request):
-        all_params = ['content_type', 'job_id', 'resource_id', 'workspace_id', 'rest_onilne_put_instance_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_res_online_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2055,14 +1913,10 @@ class ResClient(Client):
         :type request: :class:`huaweicloudsdkres.v1.UpdateResSceneRequest`
         :rtype: :class:`huaweicloudsdkres.v1.UpdateResSceneResponse`
         """
-        return self.update_res_scene_with_http_info(request)
+        return self._update_res_scene_with_http_info(request)
 
-    def update_res_scene_with_http_info(self, request):
-        all_params = ['content_type', 'scene_id', 'workspace_id', 'rest_resource_put_scene_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_res_scene_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2121,14 +1975,10 @@ class ResClient(Client):
         :type request: :class:`huaweicloudsdkres.v1.UpdateResWorkspaceRequest`
         :rtype: :class:`huaweicloudsdkres.v1.UpdateResWorkspaceResponse`
         """
-        return self.update_res_workspace_with_http_info(request)
+        return self._update_res_workspace_with_http_info(request)
 
-    def update_res_workspace_with_http_info(self, request):
-        all_params = ['content_type', 'workspace_id', 'update_res_workspace_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_res_workspace_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

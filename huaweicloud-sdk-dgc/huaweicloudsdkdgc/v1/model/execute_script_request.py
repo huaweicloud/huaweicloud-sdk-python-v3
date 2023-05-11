@@ -1,9 +1,6 @@
 # coding: utf-8
 
-import re
 import six
-
-
 
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
@@ -20,20 +17,24 @@ class ExecuteScriptRequest:
     sensitive_list = []
 
     openapi_types = {
+        'workspace': 'str',
         'script_name': 'str',
         'body': 'ExecuteScriptReq'
     }
 
     attribute_map = {
+        'workspace': 'workspace',
         'script_name': 'script_name',
         'body': 'body'
     }
 
-    def __init__(self, script_name=None, body=None):
+    def __init__(self, workspace=None, script_name=None, body=None):
         """ExecuteScriptRequest
 
         The model defined in huaweicloud sdk
 
+        :param workspace: 工作空间id
+        :type workspace: str
         :param script_name: 
         :type script_name: str
         :param body: Body of the ExecuteScriptRequest
@@ -42,13 +43,38 @@ class ExecuteScriptRequest:
         
         
 
+        self._workspace = None
         self._script_name = None
         self._body = None
         self.discriminator = None
 
+        if workspace is not None:
+            self.workspace = workspace
         self.script_name = script_name
         if body is not None:
             self.body = body
+
+    @property
+    def workspace(self):
+        """Gets the workspace of this ExecuteScriptRequest.
+
+        工作空间id
+
+        :return: The workspace of this ExecuteScriptRequest.
+        :rtype: str
+        """
+        return self._workspace
+
+    @workspace.setter
+    def workspace(self, workspace):
+        """Sets the workspace of this ExecuteScriptRequest.
+
+        工作空间id
+
+        :param workspace: The workspace of this ExecuteScriptRequest.
+        :type workspace: str
+        """
+        self._workspace = workspace
 
     @property
     def script_name(self):

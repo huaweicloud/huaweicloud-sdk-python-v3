@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class LakeFormationAsyncClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(LakeFormationAsyncClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdklakeformation.v1.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -54,14 +36,10 @@ class LakeFormationAsyncClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.ApplyForAccessRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.ApplyForAccessResponse`
         """
-        return self.apply_for_access_with_http_info(request)
+        return self._apply_for_access_with_http_info(request)
 
-    def apply_for_access_with_http_info(self, request):
-        all_params = ['instance_id', 'access_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _apply_for_access_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -117,14 +95,10 @@ class LakeFormationAsyncClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.BatchAuthorizeInterfaceRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.BatchAuthorizeInterfaceResponse`
         """
-        return self.batch_authorize_interface_with_http_info(request)
+        return self._batch_authorize_interface_with_http_info(request)
 
-    def batch_authorize_interface_with_http_info(self, request):
-        all_params = ['instance_id', 'policy_input']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_authorize_interface_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -180,14 +154,10 @@ class LakeFormationAsyncClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.BatchCancelAuthorizationInterfaceRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.BatchCancelAuthorizationInterfaceResponse`
         """
-        return self.batch_cancel_authorization_interface_with_http_info(request)
+        return self._batch_cancel_authorization_interface_with_http_info(request)
 
-    def batch_cancel_authorization_interface_with_http_info(self, request):
-        all_params = ['instance_id', 'policy_input']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_cancel_authorization_interface_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -243,14 +213,10 @@ class LakeFormationAsyncClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.ListAccessInfosRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.ListAccessInfosResponse`
         """
-        return self.list_access_infos_with_http_info(request)
+        return self._list_access_infos_with_http_info(request)
 
-    def list_access_infos_with_http_info(self, request):
-        all_params = ['instance_id', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_access_infos_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -308,14 +274,10 @@ class LakeFormationAsyncClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.ListInterfacesRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.ListInterfacesResponse`
         """
-        return self.list_interfaces_with_http_info(request)
+        return self._list_interfaces_with_http_info(request)
 
-    def list_interfaces_with_http_info(self, request):
-        all_params = ['instance_id', 'filter', 'resource_name', 'resource_type', 'principal_source', 'principal_type', 'principal_name', 'limit', 'marker']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_interfaces_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -385,14 +347,10 @@ class LakeFormationAsyncClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.ListPolicyRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.ListPolicyResponse`
         """
-        return self.list_policy_with_http_info(request)
+        return self._list_policy_with_http_info(request)
 
-    def list_policy_with_http_info(self, request):
-        all_params = ['instance_id', 'limit', 'marker', 'reverse_page']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_policy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -452,14 +410,10 @@ class LakeFormationAsyncClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.ShowSyncPolicyRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.ShowSyncPolicyResponse`
         """
-        return self.show_sync_policy_with_http_info(request)
+        return self._show_sync_policy_with_http_info(request)
 
-    def show_sync_policy_with_http_info(self, request):
-        all_params = ['instance_id', 'last_known_version', 'supports_policy_deltas', 'is_return_policy_data']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_sync_policy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -519,14 +473,10 @@ class LakeFormationAsyncClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.CreateCatalogRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.CreateCatalogResponse`
         """
-        return self.create_catalog_with_http_info(request)
+        return self._create_catalog_with_http_info(request)
 
-    def create_catalog_with_http_info(self, request):
-        all_params = ['instance_id', 'catalog']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_catalog_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -583,14 +533,10 @@ class LakeFormationAsyncClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.DeleteCatalogRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.DeleteCatalogResponse`
         """
-        return self.delete_catalog_with_http_info(request)
+        return self._delete_catalog_with_http_info(request)
 
-    def delete_catalog_with_http_info(self, request):
-        all_params = ['instance_id', 'catalog_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_catalog_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -646,14 +592,10 @@ class LakeFormationAsyncClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.ListCatalogsRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.ListCatalogsResponse`
         """
-        return self.list_catalogs_with_http_info(request)
+        return self._list_catalogs_with_http_info(request)
 
-    def list_catalogs_with_http_info(self, request):
-        all_params = ['instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_catalogs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -707,14 +649,10 @@ class LakeFormationAsyncClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.ShowCatalogRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.ShowCatalogResponse`
         """
-        return self.show_catalog_with_http_info(request)
+        return self._show_catalog_with_http_info(request)
 
-    def show_catalog_with_http_info(self, request):
-        all_params = ['instance_id', 'catalog_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_catalog_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -770,14 +708,10 @@ class LakeFormationAsyncClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.UpdateCatalogRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.UpdateCatalogResponse`
         """
-        return self.update_catalog_with_http_info(request)
+        return self._update_catalog_with_http_info(request)
 
-    def update_catalog_with_http_info(self, request):
-        all_params = ['instance_id', 'catalog_name', 'catalog_input']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_catalog_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -835,14 +769,10 @@ class LakeFormationAsyncClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.CreateDatabaseRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.CreateDatabaseResponse`
         """
-        return self.create_database_with_http_info(request)
+        return self._create_database_with_http_info(request)
 
-    def create_database_with_http_info(self, request):
-        all_params = ['instance_id', 'catalog_name', 'database_input']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_database_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -903,14 +833,10 @@ class LakeFormationAsyncClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.DeleteDatabaseRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.DeleteDatabaseResponse`
         """
-        return self.delete_database_with_http_info(request)
+        return self._delete_database_with_http_info(request)
 
-    def delete_database_with_http_info(self, request):
-        all_params = ['instance_id', 'catalog_name', 'database_name', 'delete_data', 'cascade']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_database_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -972,14 +898,10 @@ class LakeFormationAsyncClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.ListDatabaseNamesRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.ListDatabaseNamesResponse`
         """
-        return self.list_database_names_with_http_info(request)
+        return self._list_database_names_with_http_info(request)
 
-    def list_database_names_with_http_info(self, request):
-        all_params = ['instance_id', 'catalog_name', 'database_pattern']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_database_names_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1037,14 +959,10 @@ class LakeFormationAsyncClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.ListDatabasesRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.ListDatabasesResponse`
         """
-        return self.list_databases_with_http_info(request)
+        return self._list_databases_with_http_info(request)
 
-    def list_databases_with_http_info(self, request):
-        all_params = ['instance_id', 'catalog_name', 'database_name_pattern', 'limit', 'marker', 'reverse_page']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_databases_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1108,14 +1026,10 @@ class LakeFormationAsyncClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.ShowDatabaseRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.ShowDatabaseResponse`
         """
-        return self.show_database_with_http_info(request)
+        return self._show_database_with_http_info(request)
 
-    def show_database_with_http_info(self, request):
-        all_params = ['instance_id', 'catalog_name', 'database_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_database_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1173,14 +1087,10 @@ class LakeFormationAsyncClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.UpdateDatabaseRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.UpdateDatabaseResponse`
         """
-        return self.update_database_with_http_info(request)
+        return self._update_database_with_http_info(request)
 
-    def update_database_with_http_info(self, request):
-        all_params = ['instance_id', 'catalog_name', 'database_name', 'database_input']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_database_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1240,14 +1150,10 @@ class LakeFormationAsyncClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.CreateFunctionRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.CreateFunctionResponse`
         """
-        return self.create_function_with_http_info(request)
+        return self._create_function_with_http_info(request)
 
-    def create_function_with_http_info(self, request):
-        all_params = ['instance_id', 'catalog_name', 'database_name', 'function_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_function_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1307,14 +1213,10 @@ class LakeFormationAsyncClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.DeleteFunctionRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.DeleteFunctionResponse`
         """
-        return self.delete_function_with_http_info(request)
+        return self._delete_function_with_http_info(request)
 
-    def delete_function_with_http_info(self, request):
-        all_params = ['instance_id', 'catalog_name', 'database_name', 'function_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_function_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1374,14 +1276,10 @@ class LakeFormationAsyncClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.ListAllFunctionsRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.ListAllFunctionsResponse`
         """
-        return self.list_all_functions_with_http_info(request)
+        return self._list_all_functions_with_http_info(request)
 
-    def list_all_functions_with_http_info(self, request):
-        all_params = ['instance_id', 'catalog_name', 'limit', 'marker', 'reverse_page']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_all_functions_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1443,14 +1341,10 @@ class LakeFormationAsyncClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.ListFunctionsRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.ListFunctionsResponse`
         """
-        return self.list_functions_with_http_info(request)
+        return self._list_functions_with_http_info(request)
 
-    def list_functions_with_http_info(self, request):
-        all_params = ['instance_id', 'catalog_name', 'database_name', 'function_name_pattern', 'limit', 'marker', 'reverse_page']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_functions_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1516,14 +1410,10 @@ class LakeFormationAsyncClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.ShowFunctionRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.ShowFunctionResponse`
         """
-        return self.show_function_with_http_info(request)
+        return self._show_function_with_http_info(request)
 
-    def show_function_with_http_info(self, request):
-        all_params = ['instance_id', 'catalog_name', 'database_name', 'function_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_function_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1583,14 +1473,10 @@ class LakeFormationAsyncClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.UpdateFunctionRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.UpdateFunctionResponse`
         """
-        return self.update_function_with_http_info(request)
+        return self._update_function_with_http_info(request)
 
-    def update_function_with_http_info(self, request):
-        all_params = ['instance_id', 'catalog_name', 'database_name', 'function_name', 'function_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_function_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1652,14 +1538,10 @@ class LakeFormationAsyncClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.CreateAgreementRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.CreateAgreementResponse`
         """
-        return self.create_agreement_with_http_info(request)
+        return self._create_agreement_with_http_info(request)
 
-    def create_agreement_with_http_info(self, request):
-        all_params = ['register_tenant_agreement_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_agreement_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1713,14 +1595,10 @@ class LakeFormationAsyncClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.ShowAgreementRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.ShowAgreementResponse`
         """
-        return self.show_agreement_with_http_info(request)
+        return self._show_agreement_with_http_info(request)
 
-    def show_agreement_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_agreement_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1772,14 +1650,10 @@ class LakeFormationAsyncClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.ShowAgreementRuleRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.ShowAgreementRuleResponse`
         """
-        return self.show_agreement_rule_with_http_info(request)
+        return self._show_agreement_rule_with_http_info(request)
 
-    def show_agreement_rule_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_agreement_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1831,14 +1705,10 @@ class LakeFormationAsyncClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.CountMetaObjRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.CountMetaObjResponse`
         """
-        return self.count_meta_obj_with_http_info(request)
+        return self._count_meta_obj_with_http_info(request)
 
-    def count_meta_obj_with_http_info(self, request):
-        all_params = ['instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _count_meta_obj_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1892,14 +1762,10 @@ class LakeFormationAsyncClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.CreateLakeFormationInstanceRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.CreateLakeFormationInstanceResponse`
         """
-        return self.create_lake_formation_instance_with_http_info(request)
+        return self._create_lake_formation_instance_with_http_info(request)
 
-    def create_lake_formation_instance_with_http_info(self, request):
-        all_params = ['create_instance_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_lake_formation_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1953,14 +1819,10 @@ class LakeFormationAsyncClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.DeleteLakeFormationInstanceRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.DeleteLakeFormationInstanceResponse`
         """
-        return self.delete_lake_formation_instance_with_http_info(request)
+        return self._delete_lake_formation_instance_with_http_info(request)
 
-    def delete_lake_formation_instance_with_http_info(self, request):
-        all_params = ['to_recycle_bin', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_lake_formation_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2016,14 +1878,10 @@ class LakeFormationAsyncClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.ListLakeFormationInstancesRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.ListLakeFormationInstancesResponse`
         """
-        return self.list_lake_formation_instances_with_http_info(request)
+        return self._list_lake_formation_instances_with_http_info(request)
 
-    def list_lake_formation_instances_with_http_info(self, request):
-        all_params = ['in_recycle_bin', 'offset', 'limit', 'enterprise_project_id', 'name', 'tags']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_lake_formation_instances_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2087,14 +1945,10 @@ class LakeFormationAsyncClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.MoveLakeFormationInstanceOutRecycleBinRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.MoveLakeFormationInstanceOutRecycleBinResponse`
         """
-        return self.move_lake_formation_instance_out_recycle_bin_with_http_info(request)
+        return self._move_lake_formation_instance_out_recycle_bin_with_http_info(request)
 
-    def move_lake_formation_instance_out_recycle_bin_with_http_info(self, request):
-        all_params = ['instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _move_lake_formation_instance_out_recycle_bin_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2148,14 +2002,10 @@ class LakeFormationAsyncClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.ShowLakeFormationInstanceRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.ShowLakeFormationInstanceResponse`
         """
-        return self.show_lake_formation_instance_with_http_info(request)
+        return self._show_lake_formation_instance_with_http_info(request)
 
-    def show_lake_formation_instance_with_http_info(self, request):
-        all_params = ['instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_lake_formation_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2209,14 +2059,10 @@ class LakeFormationAsyncClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.UpdateLakeFormationInstanceRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.UpdateLakeFormationInstanceResponse`
         """
-        return self.update_lake_formation_instance_with_http_info(request)
+        return self._update_lake_formation_instance_with_http_info(request)
 
-    def update_lake_formation_instance_with_http_info(self, request):
-        all_params = ['instance_id', 'update_lake_formation_instance']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_lake_formation_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2272,14 +2118,10 @@ class LakeFormationAsyncClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.ListObsBucketsRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.ListObsBucketsResponse`
         """
-        return self.list_obs_buckets_with_http_info(request)
+        return self._list_obs_buckets_with_http_info(request)
 
-    def list_obs_buckets_with_http_info(self, request):
-        all_params = ['offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_obs_buckets_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2335,14 +2177,10 @@ class LakeFormationAsyncClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.ListObsObjectRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.ListObsObjectResponse`
         """
-        return self.list_obs_object_with_http_info(request)
+        return self._list_obs_object_with_http_info(request)
 
-    def list_obs_object_with_http_info(self, request):
-        all_params = ['bucket_name', 'limit', 'marker', 'prefix']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_obs_object_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2402,14 +2240,10 @@ class LakeFormationAsyncClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.AddPartitionsRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.AddPartitionsResponse`
         """
-        return self.add_partitions_with_http_info(request)
+        return self._add_partitions_with_http_info(request)
 
-    def add_partitions_with_http_info(self, request):
-        all_params = ['instance_id', 'catalog_name', 'database_name', 'table_name', 'partition_input']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _add_partitions_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2472,14 +2306,10 @@ class LakeFormationAsyncClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.BatchDeletePartitionRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.BatchDeletePartitionResponse`
         """
-        return self.batch_delete_partition_with_http_info(request)
+        return self._batch_delete_partition_with_http_info(request)
 
-    def batch_delete_partition_with_http_info(self, request):
-        all_params = ['instance_id', 'catalog_name', 'database_name', 'table_name', 'input']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_delete_partition_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2543,14 +2373,10 @@ class LakeFormationAsyncClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.BatchDeletePartitionedStatisticsRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.BatchDeletePartitionedStatisticsResponse`
         """
-        return self.batch_delete_partitioned_statistics_with_http_info(request)
+        return self._batch_delete_partitioned_statistics_with_http_info(request)
 
-    def batch_delete_partitioned_statistics_with_http_info(self, request):
-        all_params = ['instance_id', 'catalog_name', 'database_name', 'table_name', 'input']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_delete_partitioned_statistics_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2612,14 +2438,10 @@ class LakeFormationAsyncClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.BatchListPartitionByValuesRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.BatchListPartitionByValuesResponse`
         """
-        return self.batch_list_partition_by_values_with_http_info(request)
+        return self._batch_list_partition_by_values_with_http_info(request)
 
-    def batch_list_partition_by_values_with_http_info(self, request):
-        all_params = ['instance_id', 'catalog_name', 'database_name', 'table_name', 'values_input']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_list_partition_by_values_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2681,14 +2503,10 @@ class LakeFormationAsyncClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.BatchUpdatePartitionRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.BatchUpdatePartitionResponse`
         """
-        return self.batch_update_partition_with_http_info(request)
+        return self._batch_update_partition_with_http_info(request)
 
-    def batch_update_partition_with_http_info(self, request):
-        all_params = ['instance_id', 'catalog_name', 'database_name', 'table_name', 'alter_partition_input']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_update_partition_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2751,14 +2569,10 @@ class LakeFormationAsyncClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.ListPartitionNamesRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.ListPartitionNamesResponse`
         """
-        return self.list_partition_names_with_http_info(request)
+        return self._list_partition_names_with_http_info(request)
 
-    def list_partition_names_with_http_info(self, request):
-        all_params = ['instance_id', 'catalog_name', 'database_name', 'table_name', 'filter', 'limit', 'marker', 'reverse_page']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_partition_names_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2829,14 +2643,10 @@ class LakeFormationAsyncClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.ListPartitionsRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.ListPartitionsResponse`
         """
-        return self.list_partitions_with_http_info(request)
+        return self._list_partitions_with_http_info(request)
 
-    def list_partitions_with_http_info(self, request):
-        all_params = ['instance_id', 'catalog_name', 'database_name', 'table_name', 'filter', 'partition_values', 'limit', 'marker', 'reverse_page']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_partitions_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2907,14 +2717,10 @@ class LakeFormationAsyncClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.BatchShowPartitionColumnStatisticsRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.BatchShowPartitionColumnStatisticsResponse`
         """
-        return self.batch_show_partition_column_statistics_with_http_info(request)
+        return self._batch_show_partition_column_statistics_with_http_info(request)
 
-    def batch_show_partition_column_statistics_with_http_info(self, request):
-        all_params = ['instance_id', 'catalog_name', 'database_name', 'table_name', 'get_column_statistics_input']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_show_partition_column_statistics_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2976,14 +2782,10 @@ class LakeFormationAsyncClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.DeletePartitionColumnStatisticsRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.DeletePartitionColumnStatisticsResponse`
         """
-        return self.delete_partition_column_statistics_with_http_info(request)
+        return self._delete_partition_column_statistics_with_http_info(request)
 
-    def delete_partition_column_statistics_with_http_info(self, request):
-        all_params = ['instance_id', 'catalog_name', 'database_name', 'table_name', 'partition_values', 'column_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_partition_column_statistics_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3048,14 +2850,10 @@ class LakeFormationAsyncClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.SetPartitionColumnStatisticsRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.SetPartitionColumnStatisticsResponse`
         """
-        return self.set_partition_column_statistics_with_http_info(request)
+        return self._set_partition_column_statistics_with_http_info(request)
 
-    def set_partition_column_statistics_with_http_info(self, request):
-        all_params = ['instance_id', 'catalog_name', 'database_name', 'table_name', 'column_statistic_input']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _set_partition_column_statistics_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3117,14 +2915,10 @@ class LakeFormationAsyncClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.CreateRoleRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.CreateRoleResponse`
         """
-        return self.create_role_with_http_info(request)
+        return self._create_role_with_http_info(request)
 
-    def create_role_with_http_info(self, request):
-        all_params = ['instance_id', 'role']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_role_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3180,14 +2974,10 @@ class LakeFormationAsyncClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.DeleteRoleRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.DeleteRoleResponse`
         """
-        return self.delete_role_with_http_info(request)
+        return self._delete_role_with_http_info(request)
 
-    def delete_role_with_http_info(self, request):
-        all_params = ['instance_id', 'role_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_role_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3243,14 +3033,10 @@ class LakeFormationAsyncClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.ListRoleNamesRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.ListRoleNamesResponse`
         """
-        return self.list_role_names_with_http_info(request)
+        return self._list_role_names_with_http_info(request)
 
-    def list_role_names_with_http_info(self, request):
-        all_params = ['instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_role_names_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3304,14 +3090,10 @@ class LakeFormationAsyncClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.ListRolesRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.ListRolesResponse`
         """
-        return self.list_roles_with_http_info(request)
+        return self._list_roles_with_http_info(request)
 
-    def list_roles_with_http_info(self, request):
-        all_params = ['instance_id', 'role_pattern', 'limit', 'marker', 'reverse_page']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_roles_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3373,14 +3155,10 @@ class LakeFormationAsyncClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.ShowRoleRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.ShowRoleResponse`
         """
-        return self.show_role_with_http_info(request)
+        return self._show_role_with_http_info(request)
 
-    def show_role_with_http_info(self, request):
-        all_params = ['instance_id', 'role_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_role_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3436,14 +3214,10 @@ class LakeFormationAsyncClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.UpdateRoleRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.UpdateRoleResponse`
         """
-        return self.update_role_with_http_info(request)
+        return self._update_role_with_http_info(request)
 
-    def update_role_with_http_info(self, request):
-        all_params = ['instance_id', 'role_name', 'alter_input']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_role_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3501,14 +3275,10 @@ class LakeFormationAsyncClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.ListSpecsRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.ListSpecsResponse`
         """
-        return self.list_specs_with_http_info(request)
+        return self._list_specs_with_http_info(request)
 
-    def list_specs_with_http_info(self, request):
-        all_params = ['spec_code', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_specs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3566,14 +3336,10 @@ class LakeFormationAsyncClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.BatchUpdateLakeFormationInstanceTagsRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.BatchUpdateLakeFormationInstanceTagsResponse`
         """
-        return self.batch_update_lake_formation_instance_tags_with_http_info(request)
+        return self._batch_update_lake_formation_instance_tags_with_http_info(request)
 
-    def batch_update_lake_formation_instance_tags_with_http_info(self, request):
-        all_params = ['instance_id', 'batch_update_tags_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_update_lake_formation_instance_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3629,14 +3395,10 @@ class LakeFormationAsyncClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.CreateTableRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.CreateTableResponse`
         """
-        return self.create_table_with_http_info(request)
+        return self._create_table_with_http_info(request)
 
-    def create_table_with_http_info(self, request):
-        all_params = ['instance_id', 'catalog_name', 'database_name', 'table_input']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_table_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3696,14 +3458,10 @@ class LakeFormationAsyncClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.DeleteAllTablesRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.DeleteAllTablesResponse`
         """
-        return self.delete_all_tables_with_http_info(request)
+        return self._delete_all_tables_with_http_info(request)
 
-    def delete_all_tables_with_http_info(self, request):
-        all_params = ['instance_id', 'catalog_name', 'database_name', 'table_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_all_tables_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3763,14 +3521,10 @@ class LakeFormationAsyncClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.DeleteTableRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.DeleteTableResponse`
         """
-        return self.delete_table_with_http_info(request)
+        return self._delete_table_with_http_info(request)
 
-    def delete_table_with_http_info(self, request):
-        all_params = ['instance_id', 'catalog_name', 'database_name', 'table_name', 'delete_data']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_table_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3832,14 +3586,10 @@ class LakeFormationAsyncClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.ListTableMetaRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.ListTableMetaResponse`
         """
-        return self.list_table_meta_with_http_info(request)
+        return self._list_table_meta_with_http_info(request)
 
-    def list_table_meta_with_http_info(self, request):
-        all_params = ['instance_id', 'catalog_name', 'database_name_pattern', 'table_name_pattern', 'table_types', 'limit', 'marker', 'reverse_page']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_table_meta_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3908,14 +3658,10 @@ class LakeFormationAsyncClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.ListTableNamesRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.ListTableNamesResponse`
         """
-        return self.list_table_names_with_http_info(request)
+        return self._list_table_names_with_http_info(request)
 
-    def list_table_names_with_http_info(self, request):
-        all_params = ['instance_id', 'catalog_name', 'database_name', 'table_pattern', 'table_type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_table_names_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3979,14 +3725,10 @@ class LakeFormationAsyncClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.ListTablesRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.ListTablesResponse`
         """
-        return self.list_tables_with_http_info(request)
+        return self._list_tables_with_http_info(request)
 
-    def list_tables_with_http_info(self, request):
-        all_params = ['instance_id', 'catalog_name', 'database_name', 'table_name_pattern', 'table_type', 'filter', 'limit', 'marker', 'reverse_page']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_tables_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4056,14 +3798,10 @@ class LakeFormationAsyncClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.ListTablesByNameRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.ListTablesByNameResponse`
         """
-        return self.list_tables_by_name_with_http_info(request)
+        return self._list_tables_by_name_with_http_info(request)
 
-    def list_tables_by_name_with_http_info(self, request):
-        all_params = ['instance_id', 'catalog_name', 'database_name', 'list_tables_by_name_input']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_tables_by_name_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4123,14 +3861,10 @@ class LakeFormationAsyncClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.ShowTableRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.ShowTableResponse`
         """
-        return self.show_table_with_http_info(request)
+        return self._show_table_with_http_info(request)
 
-    def show_table_with_http_info(self, request):
-        all_params = ['instance_id', 'catalog_name', 'database_name', 'table_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_table_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4190,14 +3924,10 @@ class LakeFormationAsyncClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.UpdateTableRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.UpdateTableResponse`
         """
-        return self.update_table_with_http_info(request)
+        return self._update_table_with_http_info(request)
 
-    def update_table_with_http_info(self, request):
-        all_params = ['instance_id', 'catalog_name', 'database_name', 'table_name', 'alter_input']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_table_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4259,14 +3989,10 @@ class LakeFormationAsyncClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.DeleteTableColumnStatisticsRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.DeleteTableColumnStatisticsResponse`
         """
-        return self.delete_table_column_statistics_with_http_info(request)
+        return self._delete_table_column_statistics_with_http_info(request)
 
-    def delete_table_column_statistics_with_http_info(self, request):
-        all_params = ['instance_id', 'catalog_name', 'database_name', 'table_name', 'column_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_table_column_statistics_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4328,14 +4054,10 @@ class LakeFormationAsyncClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.ListTableColumnStatisticsRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.ListTableColumnStatisticsResponse`
         """
-        return self.list_table_column_statistics_with_http_info(request)
+        return self._list_table_column_statistics_with_http_info(request)
 
-    def list_table_column_statistics_with_http_info(self, request):
-        all_params = ['instance_id', 'catalog_name', 'database_name', 'table_name', 'get_column_statistic_input']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_table_column_statistics_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4397,14 +4119,10 @@ class LakeFormationAsyncClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.SetTableColumnStatisticsRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.SetTableColumnStatisticsResponse`
         """
-        return self.set_table_column_statistics_with_http_info(request)
+        return self._set_table_column_statistics_with_http_info(request)
 
-    def set_table_column_statistics_with_http_info(self, request):
-        all_params = ['instance_id', 'catalog_name', 'database_name', 'table_name', 'new_stat_obj']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _set_table_column_statistics_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4466,14 +4184,10 @@ class LakeFormationAsyncClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.BatchCreateConstraintRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.BatchCreateConstraintResponse`
         """
-        return self.batch_create_constraint_with_http_info(request)
+        return self._batch_create_constraint_with_http_info(request)
 
-    def batch_create_constraint_with_http_info(self, request):
-        all_params = ['instance_id', 'catalog_name', 'database_name', 'table_name', 'constraints']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_create_constraint_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4535,14 +4249,10 @@ class LakeFormationAsyncClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.DeleteConstraintRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.DeleteConstraintResponse`
         """
-        return self.delete_constraint_with_http_info(request)
+        return self._delete_constraint_with_http_info(request)
 
-    def delete_constraint_with_http_info(self, request):
-        all_params = ['instance_id', 'catalog_name', 'database_name', 'table_name', 'constraint_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_constraint_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4604,14 +4314,10 @@ class LakeFormationAsyncClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.ListConstraintsRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.ListConstraintsResponse`
         """
-        return self.list_constraints_with_http_info(request)
+        return self._list_constraints_with_http_info(request)
 
-    def list_constraints_with_http_info(self, request):
-        all_params = ['instance_id', 'catalog_name', 'database_name', 'table_name', 'type', 'parent_db', 'parent_tbl']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_constraints_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4677,14 +4383,10 @@ class LakeFormationAsyncClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.ListGroupsForDomainRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.ListGroupsForDomainResponse`
         """
-        return self.list_groups_for_domain_with_http_info(request)
+        return self._list_groups_for_domain_with_http_info(request)
 
-    def list_groups_for_domain_with_http_info(self, request):
-        all_params = ['instance_id', 'group_source', 'limit', 'marker', 'reverse_page']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_groups_for_domain_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

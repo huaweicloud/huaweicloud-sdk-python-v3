@@ -1,0 +1,29 @@
+{
+  "InventoryConfiguration": {
+    "Id": "configuration-id",
+    "IsEnabled": "true",
+    "Filter": {
+      "Prefix": "inventoryTestPrefix"
+    },
+    "Destination": {
+      "Format": "CSV",
+      "Bucket": "destbucket",
+      "Prefix": "dest-prefix"
+    },
+    "Schedule": {
+      "Frequency": "Daily"
+    },
+    "IncludedObjectVersions": "All",
+    "OptionalFields": {
+      "Field": [
+        "Size",
+        "LastModifiedDate",
+        "ETag",
+        "StorageClass",
+        "IsMultipartUploaded",
+        "ReplicationStatus",
+        "EncryptionStatus"
+      ]
+    }
+  }
+}

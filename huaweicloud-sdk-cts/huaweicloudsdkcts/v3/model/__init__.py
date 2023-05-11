@@ -10,6 +10,7 @@ from huaweicloudsdkcts.v3.model.create_notification_response import CreateNotifi
 from huaweicloudsdkcts.v3.model.create_tracker_request import CreateTrackerRequest
 from huaweicloudsdkcts.v3.model.create_tracker_request_body import CreateTrackerRequestBody
 from huaweicloudsdkcts.v3.model.create_tracker_response import CreateTrackerResponse
+from huaweicloudsdkcts.v3.model.cts_quota import CtsQuota
 from huaweicloudsdkcts.v3.model.data_bucket import DataBucket
 from huaweicloudsdkcts.v3.model.data_bucket_query import DataBucketQuery
 from huaweicloudsdkcts.v3.model.delete_notification_request import DeleteNotificationRequest
@@ -31,7 +32,6 @@ from huaweicloudsdkcts.v3.model.notification_users import NotificationUsers
 from huaweicloudsdkcts.v3.model.notifications_response_body import NotificationsResponseBody
 from huaweicloudsdkcts.v3.model.obs_info import ObsInfo
 from huaweicloudsdkcts.v3.model.operations import Operations
-from huaweicloudsdkcts.v3.model.quota import Quota
 from huaweicloudsdkcts.v3.model.traces import Traces
 from huaweicloudsdkcts.v3.model.tracker_obs_info import TrackerObsInfo
 from huaweicloudsdkcts.v3.model.tracker_response_body import TrackerResponseBody

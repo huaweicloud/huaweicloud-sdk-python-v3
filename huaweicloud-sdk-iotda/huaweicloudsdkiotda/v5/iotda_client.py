@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class IoTDAClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(IoTDAClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkiotda.v5.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -53,14 +35,10 @@ class IoTDAClient(Client):
         :type request: :class:`huaweicloudsdkiotda.v5.CreateAccessCodeRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.CreateAccessCodeResponse`
         """
-        return self.create_access_code_with_http_info(request)
+        return self._create_access_code_with_http_info(request)
 
-    def create_access_code_with_http_info(self, request):
-        all_params = ['create_access_code_request_body', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_access_code_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -115,14 +93,10 @@ class IoTDAClient(Client):
         :type request: :class:`huaweicloudsdkiotda.v5.AddQueueRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.AddQueueResponse`
         """
-        return self.add_queue_with_http_info(request)
+        return self._add_queue_with_http_info(request)
 
-    def add_queue_with_http_info(self, request):
-        all_params = ['add_queue_re_quest_body', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _add_queue_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -177,14 +151,10 @@ class IoTDAClient(Client):
         :type request: :class:`huaweicloudsdkiotda.v5.BatchShowQueueRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.BatchShowQueueResponse`
         """
-        return self.batch_show_queue_with_http_info(request)
+        return self._batch_show_queue_with_http_info(request)
 
-    def batch_show_queue_with_http_info(self, request):
-        all_params = ['instance_id', 'queue_name', 'limit', 'marker', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_show_queue_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -245,14 +215,10 @@ class IoTDAClient(Client):
         :type request: :class:`huaweicloudsdkiotda.v5.DeleteQueueRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.DeleteQueueResponse`
         """
-        return self.delete_queue_with_http_info(request)
+        return self._delete_queue_with_http_info(request)
 
-    def delete_queue_with_http_info(self, request):
-        all_params = ['queue_id', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_queue_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -307,14 +273,10 @@ class IoTDAClient(Client):
         :type request: :class:`huaweicloudsdkiotda.v5.ShowQueueRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.ShowQueueResponse`
         """
-        return self.show_queue_with_http_info(request)
+        return self._show_queue_with_http_info(request)
 
-    def show_queue_with_http_info(self, request):
-        all_params = ['queue_id', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_queue_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -369,14 +331,10 @@ class IoTDAClient(Client):
         :type request: :class:`huaweicloudsdkiotda.v5.AddApplicationRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.AddApplicationResponse`
         """
-        return self.add_application_with_http_info(request)
+        return self._add_application_with_http_info(request)
 
-    def add_application_with_http_info(self, request):
-        all_params = ['add_application_request_body', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _add_application_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -431,14 +389,10 @@ class IoTDAClient(Client):
         :type request: :class:`huaweicloudsdkiotda.v5.DeleteApplicationRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.DeleteApplicationResponse`
         """
-        return self.delete_application_with_http_info(request)
+        return self._delete_application_with_http_info(request)
 
-    def delete_application_with_http_info(self, request):
-        all_params = ['app_id', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_application_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -493,14 +447,10 @@ class IoTDAClient(Client):
         :type request: :class:`huaweicloudsdkiotda.v5.ShowApplicationRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.ShowApplicationResponse`
         """
-        return self.show_application_with_http_info(request)
+        return self._show_application_with_http_info(request)
 
-    def show_application_with_http_info(self, request):
-        all_params = ['app_id', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_application_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -555,14 +505,10 @@ class IoTDAClient(Client):
         :type request: :class:`huaweicloudsdkiotda.v5.ShowApplicationsRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.ShowApplicationsResponse`
         """
-        return self.show_applications_with_http_info(request)
+        return self._show_applications_with_http_info(request)
 
-    def show_applications_with_http_info(self, request):
-        all_params = ['instance_id', 'default_app']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_applications_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -620,14 +566,10 @@ class IoTDAClient(Client):
         :type request: :class:`huaweicloudsdkiotda.v5.CreateAsyncCommandRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.CreateAsyncCommandResponse`
         """
-        return self.create_async_command_with_http_info(request)
+        return self._create_async_command_with_http_info(request)
 
-    def create_async_command_with_http_info(self, request):
-        all_params = ['device_id', 'create_async_command_request_body', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_async_command_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -684,14 +626,10 @@ class IoTDAClient(Client):
         :type request: :class:`huaweicloudsdkiotda.v5.ShowAsyncDeviceCommandRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.ShowAsyncDeviceCommandResponse`
         """
-        return self.show_async_device_command_with_http_info(request)
+        return self._show_async_device_command_with_http_info(request)
 
-    def show_async_device_command_with_http_info(self, request):
-        all_params = ['device_id', 'command_id', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_async_device_command_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -748,14 +686,10 @@ class IoTDAClient(Client):
         :type request: :class:`huaweicloudsdkiotda.v5.CreateBatchTaskRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.CreateBatchTaskResponse`
         """
-        return self.create_batch_task_with_http_info(request)
+        return self._create_batch_task_with_http_info(request)
 
-    def create_batch_task_with_http_info(self, request):
-        all_params = ['create_batch_task_request_body', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_batch_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -810,14 +744,10 @@ class IoTDAClient(Client):
         :type request: :class:`huaweicloudsdkiotda.v5.ListBatchTasksRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.ListBatchTasksResponse`
         """
-        return self.list_batch_tasks_with_http_info(request)
+        return self._list_batch_tasks_with_http_info(request)
 
-    def list_batch_tasks_with_http_info(self, request):
-        all_params = ['task_type', 'instance_id', 'app_id', 'status', 'limit', 'marker', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_batch_tasks_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -882,14 +812,10 @@ class IoTDAClient(Client):
         :type request: :class:`huaweicloudsdkiotda.v5.ShowBatchTaskRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.ShowBatchTaskResponse`
         """
-        return self.show_batch_task_with_http_info(request)
+        return self._show_batch_task_with_http_info(request)
 
-    def show_batch_task_with_http_info(self, request):
-        all_params = ['task_id', 'instance_id', 'limit', 'marker', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_batch_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -950,14 +876,10 @@ class IoTDAClient(Client):
         :type request: :class:`huaweicloudsdkiotda.v5.DeleteBatchTaskFileRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.DeleteBatchTaskFileResponse`
         """
-        return self.delete_batch_task_file_with_http_info(request)
+        return self._delete_batch_task_file_with_http_info(request)
 
-    def delete_batch_task_file_with_http_info(self, request):
-        all_params = ['file_id', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_batch_task_file_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1012,14 +934,10 @@ class IoTDAClient(Client):
         :type request: :class:`huaweicloudsdkiotda.v5.ListBatchTaskFilesRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.ListBatchTaskFilesResponse`
         """
-        return self.list_batch_task_files_with_http_info(request)
+        return self._list_batch_task_files_with_http_info(request)
 
-    def list_batch_task_files_with_http_info(self, request):
-        all_params = ['instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_batch_task_files_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1082,14 +1000,10 @@ class IoTDAClient(Client):
         :type request: :class:`huaweicloudsdkiotda.v5.UploadBatchTaskFileRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.UploadBatchTaskFileResponse`
         """
-        return self.upload_batch_task_file_with_http_info(request)
+        return self._upload_batch_task_file_with_http_info(request)
 
-    def upload_batch_task_file_with_http_info(self, request):
-        all_params = ['file', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _upload_batch_task_file_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1148,14 +1062,10 @@ class IoTDAClient(Client):
         :type request: :class:`huaweicloudsdkiotda.v5.BroadcastMessageRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.BroadcastMessageResponse`
         """
-        return self.broadcast_message_with_http_info(request)
+        return self._broadcast_message_with_http_info(request)
 
-    def broadcast_message_with_http_info(self, request):
-        all_params = ['broadcast_message_request_body', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _broadcast_message_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1210,14 +1120,10 @@ class IoTDAClient(Client):
         :type request: :class:`huaweicloudsdkiotda.v5.AddCertificateRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.AddCertificateResponse`
         """
-        return self.add_certificate_with_http_info(request)
+        return self._add_certificate_with_http_info(request)
 
-    def add_certificate_with_http_info(self, request):
-        all_params = ['add_certificate_request_body', 'sp_auth_token', 'stage_auth_token', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _add_certificate_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1276,14 +1182,10 @@ class IoTDAClient(Client):
         :type request: :class:`huaweicloudsdkiotda.v5.CheckCertificateRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.CheckCertificateResponse`
         """
-        return self.check_certificate_with_http_info(request)
+        return self._check_certificate_with_http_info(request)
 
-    def check_certificate_with_http_info(self, request):
-        all_params = ['certificate_id', 'action_id', 'check_certificate_request_body', 'sp_auth_token', 'stage_auth_token', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _check_certificate_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1346,14 +1248,10 @@ class IoTDAClient(Client):
         :type request: :class:`huaweicloudsdkiotda.v5.DeleteCertificateRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.DeleteCertificateResponse`
         """
-        return self.delete_certificate_with_http_info(request)
+        return self._delete_certificate_with_http_info(request)
 
-    def delete_certificate_with_http_info(self, request):
-        all_params = ['certificate_id', 'sp_auth_token', 'stage_auth_token', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_certificate_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1412,14 +1310,10 @@ class IoTDAClient(Client):
         :type request: :class:`huaweicloudsdkiotda.v5.ListCertificatesRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.ListCertificatesResponse`
         """
-        return self.list_certificates_with_http_info(request)
+        return self._list_certificates_with_http_info(request)
 
-    def list_certificates_with_http_info(self, request):
-        all_params = ['sp_auth_token', 'stage_auth_token', 'instance_id', 'app_id', 'limit', 'marker', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_certificates_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1487,14 +1381,10 @@ class IoTDAClient(Client):
         :type request: :class:`huaweicloudsdkiotda.v5.CreateCommandRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.CreateCommandResponse`
         """
-        return self.create_command_with_http_info(request)
+        return self._create_command_with_http_info(request)
 
-    def create_command_with_http_info(self, request):
-        all_params = ['device_id', 'create_command_request_body', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_command_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1551,14 +1441,10 @@ class IoTDAClient(Client):
         :type request: :class:`huaweicloudsdkiotda.v5.AddDeviceGroupRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.AddDeviceGroupResponse`
         """
-        return self.add_device_group_with_http_info(request)
+        return self._add_device_group_with_http_info(request)
 
-    def add_device_group_with_http_info(self, request):
-        all_params = ['instance_id', 'add_device_group_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _add_device_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1613,14 +1499,10 @@ class IoTDAClient(Client):
         :type request: :class:`huaweicloudsdkiotda.v5.CreateOrDeleteDeviceInGroupRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.CreateOrDeleteDeviceInGroupResponse`
         """
-        return self.create_or_delete_device_in_group_with_http_info(request)
+        return self._create_or_delete_device_in_group_with_http_info(request)
 
-    def create_or_delete_device_in_group_with_http_info(self, request):
-        all_params = ['group_id', 'action_id', 'device_id', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_or_delete_device_in_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1679,14 +1561,10 @@ class IoTDAClient(Client):
         :type request: :class:`huaweicloudsdkiotda.v5.DeleteDeviceGroupRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.DeleteDeviceGroupResponse`
         """
-        return self.delete_device_group_with_http_info(request)
+        return self._delete_device_group_with_http_info(request)
 
-    def delete_device_group_with_http_info(self, request):
-        all_params = ['group_id', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_device_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1741,14 +1619,10 @@ class IoTDAClient(Client):
         :type request: :class:`huaweicloudsdkiotda.v5.ListDeviceGroupsRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.ListDeviceGroupsResponse`
         """
-        return self.list_device_groups_with_http_info(request)
+        return self._list_device_groups_with_http_info(request)
 
-    def list_device_groups_with_http_info(self, request):
-        all_params = ['instance_id', 'limit', 'marker', 'offset', 'last_modified_time', 'app_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_device_groups_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1811,14 +1685,10 @@ class IoTDAClient(Client):
         :type request: :class:`huaweicloudsdkiotda.v5.ShowDeviceGroupRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.ShowDeviceGroupResponse`
         """
-        return self.show_device_group_with_http_info(request)
+        return self._show_device_group_with_http_info(request)
 
-    def show_device_group_with_http_info(self, request):
-        all_params = ['group_id', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_device_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1873,14 +1743,10 @@ class IoTDAClient(Client):
         :type request: :class:`huaweicloudsdkiotda.v5.ShowDevicesInGroupRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.ShowDevicesInGroupResponse`
         """
-        return self.show_devices_in_group_with_http_info(request)
+        return self._show_devices_in_group_with_http_info(request)
 
-    def show_devices_in_group_with_http_info(self, request):
-        all_params = ['group_id', 'instance_id', 'limit', 'marker', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_devices_in_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1941,14 +1807,10 @@ class IoTDAClient(Client):
         :type request: :class:`huaweicloudsdkiotda.v5.UpdateDeviceGroupRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.UpdateDeviceGroupResponse`
         """
-        return self.update_device_group_with_http_info(request)
+        return self._update_device_group_with_http_info(request)
 
-    def update_device_group_with_http_info(self, request):
-        all_params = ['group_id', 'update_device_group_request_body', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_device_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2010,14 +1872,10 @@ class IoTDAClient(Client):
         :type request: :class:`huaweicloudsdkiotda.v5.AddDeviceRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.AddDeviceResponse`
         """
-        return self.add_device_with_http_info(request)
+        return self._add_device_with_http_info(request)
 
-    def add_device_with_http_info(self, request):
-        all_params = ['add_device_request_body', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _add_device_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2072,14 +1930,10 @@ class IoTDAClient(Client):
         :type request: :class:`huaweicloudsdkiotda.v5.DeleteDeviceRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.DeleteDeviceResponse`
         """
-        return self.delete_device_with_http_info(request)
+        return self._delete_device_with_http_info(request)
 
-    def delete_device_with_http_info(self, request):
-        all_params = ['device_id', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_device_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2134,14 +1988,10 @@ class IoTDAClient(Client):
         :type request: :class:`huaweicloudsdkiotda.v5.FreezeDeviceRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.FreezeDeviceResponse`
         """
-        return self.freeze_device_with_http_info(request)
+        return self._freeze_device_with_http_info(request)
 
-    def freeze_device_with_http_info(self, request):
-        all_params = ['device_id', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _freeze_device_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2196,14 +2046,10 @@ class IoTDAClient(Client):
         :type request: :class:`huaweicloudsdkiotda.v5.ListDevicesRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.ListDevicesResponse`
         """
-        return self.list_devices_with_http_info(request)
+        return self._list_devices_with_http_info(request)
 
-    def list_devices_with_http_info(self, request):
-        all_params = ['instance_id', 'product_id', 'gateway_id', 'is_cascade_query', 'node_id', 'device_name', 'limit', 'marker', 'offset', 'start_time', 'end_time', 'app_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_devices_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2278,14 +2124,10 @@ class IoTDAClient(Client):
         :type request: :class:`huaweicloudsdkiotda.v5.ResetDeviceSecretRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.ResetDeviceSecretResponse`
         """
-        return self.reset_device_secret_with_http_info(request)
+        return self._reset_device_secret_with_http_info(request)
 
-    def reset_device_secret_with_http_info(self, request):
-        all_params = ['device_id', 'action_id', 'reset_device_secret_request_body', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _reset_device_secret_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2344,14 +2186,10 @@ class IoTDAClient(Client):
         :type request: :class:`huaweicloudsdkiotda.v5.ResetFingerprintRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.ResetFingerprintResponse`
         """
-        return self.reset_fingerprint_with_http_info(request)
+        return self._reset_fingerprint_with_http_info(request)
 
-    def reset_fingerprint_with_http_info(self, request):
-        all_params = ['device_id', 'reset_fingerprint_request_body', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _reset_fingerprint_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2521,14 +2359,10 @@ class IoTDAClient(Client):
         :type request: :class:`huaweicloudsdkiotda.v5.SearchDevicesRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.SearchDevicesResponse`
         """
-        return self.search_devices_with_http_info(request)
+        return self._search_devices_with_http_info(request)
 
-    def search_devices_with_http_info(self, request):
-        all_params = ['search_devices_request_body', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _search_devices_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2583,14 +2417,10 @@ class IoTDAClient(Client):
         :type request: :class:`huaweicloudsdkiotda.v5.ShowDeviceRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.ShowDeviceResponse`
         """
-        return self.show_device_with_http_info(request)
+        return self._show_device_with_http_info(request)
 
-    def show_device_with_http_info(self, request):
-        all_params = ['device_id', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_device_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2645,14 +2475,10 @@ class IoTDAClient(Client):
         :type request: :class:`huaweicloudsdkiotda.v5.UnfreezeDeviceRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.UnfreezeDeviceResponse`
         """
-        return self.unfreeze_device_with_http_info(request)
+        return self._unfreeze_device_with_http_info(request)
 
-    def unfreeze_device_with_http_info(self, request):
-        all_params = ['device_id', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _unfreeze_device_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2707,14 +2533,10 @@ class IoTDAClient(Client):
         :type request: :class:`huaweicloudsdkiotda.v5.UpdateDeviceRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.UpdateDeviceResponse`
         """
-        return self.update_device_with_http_info(request)
+        return self._update_device_with_http_info(request)
 
-    def update_device_with_http_info(self, request):
-        all_params = ['device_id', 'update_device_request_body', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_device_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2781,14 +2603,10 @@ class IoTDAClient(Client):
         :type request: :class:`huaweicloudsdkiotda.v5.ShowDeviceShadowRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.ShowDeviceShadowResponse`
         """
-        return self.show_device_shadow_with_http_info(request)
+        return self._show_device_shadow_with_http_info(request)
 
-    def show_device_shadow_with_http_info(self, request):
-        all_params = ['device_id', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_device_shadow_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2854,14 +2672,10 @@ class IoTDAClient(Client):
         :type request: :class:`huaweicloudsdkiotda.v5.UpdateDeviceShadowDesiredDataRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.UpdateDeviceShadowDesiredDataResponse`
         """
-        return self.update_device_shadow_desired_data_with_http_info(request)
+        return self._update_device_shadow_desired_data_with_http_info(request)
 
-    def update_device_shadow_desired_data_with_http_info(self, request):
-        all_params = ['device_id', 'update_device_shadow_desired_data_request_body', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_device_shadow_desired_data_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2921,14 +2735,10 @@ class IoTDAClient(Client):
         :type request: :class:`huaweicloudsdkiotda.v5.CreateMessageRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.CreateMessageResponse`
         """
-        return self.create_message_with_http_info(request)
+        return self._create_message_with_http_info(request)
 
-    def create_message_with_http_info(self, request):
-        all_params = ['device_id', 'create_message_request_body', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_message_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2985,14 +2795,10 @@ class IoTDAClient(Client):
         :type request: :class:`huaweicloudsdkiotda.v5.ListDeviceMessagesRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.ListDeviceMessagesResponse`
         """
-        return self.list_device_messages_with_http_info(request)
+        return self._list_device_messages_with_http_info(request)
 
-    def list_device_messages_with_http_info(self, request):
-        all_params = ['device_id', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_device_messages_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3047,14 +2853,10 @@ class IoTDAClient(Client):
         :type request: :class:`huaweicloudsdkiotda.v5.ShowDeviceMessageRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.ShowDeviceMessageResponse`
         """
-        return self.show_device_message_with_http_info(request)
+        return self._show_device_message_with_http_info(request)
 
-    def show_device_message_with_http_info(self, request):
-        all_params = ['device_id', 'message_id', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_device_message_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3112,14 +2914,10 @@ class IoTDAClient(Client):
         :type request: :class:`huaweicloudsdkiotda.v5.CreateOtaPackageRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.CreateOtaPackageResponse`
         """
-        return self.create_ota_package_with_http_info(request)
+        return self._create_ota_package_with_http_info(request)
 
-    def create_ota_package_with_http_info(self, request):
-        all_params = ['create_ota_package_request_body', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_ota_package_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3175,14 +2973,10 @@ class IoTDAClient(Client):
         :type request: :class:`huaweicloudsdkiotda.v5.DeleteOtaPackageRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.DeleteOtaPackageResponse`
         """
-        return self.delete_ota_package_with_http_info(request)
+        return self._delete_ota_package_with_http_info(request)
 
-    def delete_ota_package_with_http_info(self, request):
-        all_params = ['package_id', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_ota_package_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3238,14 +3032,10 @@ class IoTDAClient(Client):
         :type request: :class:`huaweicloudsdkiotda.v5.ListOtaPackageInfoRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.ListOtaPackageInfoResponse`
         """
-        return self.list_ota_package_info_with_http_info(request)
+        return self._list_ota_package_info_with_http_info(request)
 
-    def list_ota_package_info_with_http_info(self, request):
-        all_params = ['package_type', 'instance_id', 'app_id', 'product_id', 'version', 'limit', 'marker', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_ota_package_info_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3313,14 +3103,10 @@ class IoTDAClient(Client):
         :type request: :class:`huaweicloudsdkiotda.v5.ShowOtaPackageRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.ShowOtaPackageResponse`
         """
-        return self.show_ota_package_with_http_info(request)
+        return self._show_ota_package_with_http_info(request)
 
-    def show_ota_package_with_http_info(self, request):
-        all_params = ['package_id', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_ota_package_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3375,14 +3161,10 @@ class IoTDAClient(Client):
         :type request: :class:`huaweicloudsdkiotda.v5.CreateProductRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.CreateProductResponse`
         """
-        return self.create_product_with_http_info(request)
+        return self._create_product_with_http_info(request)
 
-    def create_product_with_http_info(self, request):
-        all_params = ['instance_id', 'create_product_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_product_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3437,14 +3219,10 @@ class IoTDAClient(Client):
         :type request: :class:`huaweicloudsdkiotda.v5.DeleteProductRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.DeleteProductResponse`
         """
-        return self.delete_product_with_http_info(request)
+        return self._delete_product_with_http_info(request)
 
-    def delete_product_with_http_info(self, request):
-        all_params = ['product_id', 'instance_id', 'app_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_product_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3501,14 +3279,10 @@ class IoTDAClient(Client):
         :type request: :class:`huaweicloudsdkiotda.v5.ListProductsRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.ListProductsResponse`
         """
-        return self.list_products_with_http_info(request)
+        return self._list_products_with_http_info(request)
 
-    def list_products_with_http_info(self, request):
-        all_params = ['instance_id', 'limit', 'marker', 'app_id', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_products_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3569,14 +3343,10 @@ class IoTDAClient(Client):
         :type request: :class:`huaweicloudsdkiotda.v5.ShowProductRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.ShowProductResponse`
         """
-        return self.show_product_with_http_info(request)
+        return self._show_product_with_http_info(request)
 
-    def show_product_with_http_info(self, request):
-        all_params = ['product_id', 'instance_id', 'app_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_product_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3633,14 +3403,10 @@ class IoTDAClient(Client):
         :type request: :class:`huaweicloudsdkiotda.v5.UpdateProductRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.UpdateProductResponse`
         """
-        return self.update_product_with_http_info(request)
+        return self._update_product_with_http_info(request)
 
-    def update_product_with_http_info(self, request):
-        all_params = ['product_id', 'update_product_request_body', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_product_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3698,14 +3464,10 @@ class IoTDAClient(Client):
         :type request: :class:`huaweicloudsdkiotda.v5.ListPropertiesRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.ListPropertiesResponse`
         """
-        return self.list_properties_with_http_info(request)
+        return self._list_properties_with_http_info(request)
 
-    def list_properties_with_http_info(self, request):
-        all_params = ['device_id', 'service_id', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_properties_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3763,14 +3525,10 @@ class IoTDAClient(Client):
         :type request: :class:`huaweicloudsdkiotda.v5.UpdatePropertiesRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.UpdatePropertiesResponse`
         """
-        return self.update_properties_with_http_info(request)
+        return self._update_properties_with_http_info(request)
 
-    def update_properties_with_http_info(self, request):
-        all_params = ['device_id', 'update_properties_request_body', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_properties_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3827,14 +3585,10 @@ class IoTDAClient(Client):
         :type request: :class:`huaweicloudsdkiotda.v5.CreateRoutingRuleRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.CreateRoutingRuleResponse`
         """
-        return self.create_routing_rule_with_http_info(request)
+        return self._create_routing_rule_with_http_info(request)
 
-    def create_routing_rule_with_http_info(self, request):
-        all_params = ['create_routing_rule_request_body', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_routing_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3889,14 +3643,10 @@ class IoTDAClient(Client):
         :type request: :class:`huaweicloudsdkiotda.v5.CreateRuleActionRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.CreateRuleActionResponse`
         """
-        return self.create_rule_action_with_http_info(request)
+        return self._create_rule_action_with_http_info(request)
 
-    def create_rule_action_with_http_info(self, request):
-        all_params = ['create_rule_action_request_body', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_rule_action_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3951,14 +3701,10 @@ class IoTDAClient(Client):
         :type request: :class:`huaweicloudsdkiotda.v5.DeleteRoutingRuleRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.DeleteRoutingRuleResponse`
         """
-        return self.delete_routing_rule_with_http_info(request)
+        return self._delete_routing_rule_with_http_info(request)
 
-    def delete_routing_rule_with_http_info(self, request):
-        all_params = ['rule_id', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_routing_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4013,14 +3759,10 @@ class IoTDAClient(Client):
         :type request: :class:`huaweicloudsdkiotda.v5.DeleteRuleActionRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.DeleteRuleActionResponse`
         """
-        return self.delete_rule_action_with_http_info(request)
+        return self._delete_rule_action_with_http_info(request)
 
-    def delete_rule_action_with_http_info(self, request):
-        all_params = ['action_id', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_rule_action_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4075,14 +3817,10 @@ class IoTDAClient(Client):
         :type request: :class:`huaweicloudsdkiotda.v5.ListRoutingRulesRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.ListRoutingRulesResponse`
         """
-        return self.list_routing_rules_with_http_info(request)
+        return self._list_routing_rules_with_http_info(request)
 
-    def list_routing_rules_with_http_info(self, request):
-        all_params = ['instance_id', 'resource', 'event', 'app_type', 'app_id', 'rule_name', 'active', 'limit', 'marker', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_routing_rules_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4153,14 +3891,10 @@ class IoTDAClient(Client):
         :type request: :class:`huaweicloudsdkiotda.v5.ListRuleActionsRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.ListRuleActionsResponse`
         """
-        return self.list_rule_actions_with_http_info(request)
+        return self._list_rule_actions_with_http_info(request)
 
-    def list_rule_actions_with_http_info(self, request):
-        all_params = ['instance_id', 'rule_id', 'channel', 'app_type', 'app_id', 'limit', 'marker', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_rule_actions_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4227,14 +3961,10 @@ class IoTDAClient(Client):
         :type request: :class:`huaweicloudsdkiotda.v5.ShowRoutingRuleRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.ShowRoutingRuleResponse`
         """
-        return self.show_routing_rule_with_http_info(request)
+        return self._show_routing_rule_with_http_info(request)
 
-    def show_routing_rule_with_http_info(self, request):
-        all_params = ['rule_id', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_routing_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4289,14 +4019,10 @@ class IoTDAClient(Client):
         :type request: :class:`huaweicloudsdkiotda.v5.ShowRuleActionRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.ShowRuleActionResponse`
         """
-        return self.show_rule_action_with_http_info(request)
+        return self._show_rule_action_with_http_info(request)
 
-    def show_rule_action_with_http_info(self, request):
-        all_params = ['action_id', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_rule_action_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4351,14 +4077,10 @@ class IoTDAClient(Client):
         :type request: :class:`huaweicloudsdkiotda.v5.UpdateRoutingRuleRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.UpdateRoutingRuleResponse`
         """
-        return self.update_routing_rule_with_http_info(request)
+        return self._update_routing_rule_with_http_info(request)
 
-    def update_routing_rule_with_http_info(self, request):
-        all_params = ['rule_id', 'update_routing_rule_request_body', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_routing_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4415,14 +4137,10 @@ class IoTDAClient(Client):
         :type request: :class:`huaweicloudsdkiotda.v5.UpdateRuleActionRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.UpdateRuleActionResponse`
         """
-        return self.update_rule_action_with_http_info(request)
+        return self._update_rule_action_with_http_info(request)
 
-    def update_rule_action_with_http_info(self, request):
-        all_params = ['action_id', 'update_rule_action_request_body', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_rule_action_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4479,14 +4197,10 @@ class IoTDAClient(Client):
         :type request: :class:`huaweicloudsdkiotda.v5.ChangeRuleStatusRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.ChangeRuleStatusResponse`
         """
-        return self.change_rule_status_with_http_info(request)
+        return self._change_rule_status_with_http_info(request)
 
-    def change_rule_status_with_http_info(self, request):
-        all_params = ['rule_id', 'change_rule_status_request_body', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _change_rule_status_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4543,14 +4257,10 @@ class IoTDAClient(Client):
         :type request: :class:`huaweicloudsdkiotda.v5.CreateRuleRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.CreateRuleResponse`
         """
-        return self.create_rule_with_http_info(request)
+        return self._create_rule_with_http_info(request)
 
-    def create_rule_with_http_info(self, request):
-        all_params = ['create_rule_request_body', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4605,14 +4315,10 @@ class IoTDAClient(Client):
         :type request: :class:`huaweicloudsdkiotda.v5.DeleteRuleRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.DeleteRuleResponse`
         """
-        return self.delete_rule_with_http_info(request)
+        return self._delete_rule_with_http_info(request)
 
-    def delete_rule_with_http_info(self, request):
-        all_params = ['rule_id', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4667,14 +4373,10 @@ class IoTDAClient(Client):
         :type request: :class:`huaweicloudsdkiotda.v5.ListRulesRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.ListRulesResponse`
         """
-        return self.list_rules_with_http_info(request)
+        return self._list_rules_with_http_info(request)
 
-    def list_rules_with_http_info(self, request):
-        all_params = ['instance_id', 'app_id', 'rule_type', 'limit', 'marker', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_rules_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4737,14 +4439,10 @@ class IoTDAClient(Client):
         :type request: :class:`huaweicloudsdkiotda.v5.ShowRuleRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.ShowRuleResponse`
         """
-        return self.show_rule_with_http_info(request)
+        return self._show_rule_with_http_info(request)
 
-    def show_rule_with_http_info(self, request):
-        all_params = ['rule_id', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4799,14 +4497,10 @@ class IoTDAClient(Client):
         :type request: :class:`huaweicloudsdkiotda.v5.UpdateRuleRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.UpdateRuleResponse`
         """
-        return self.update_rule_with_http_info(request)
+        return self._update_rule_with_http_info(request)
 
-    def update_rule_with_http_info(self, request):
-        all_params = ['rule_id', 'update_rule_request_body', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4863,14 +4557,10 @@ class IoTDAClient(Client):
         :type request: :class:`huaweicloudsdkiotda.v5.ListResourcesByTagsRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.ListResourcesByTagsResponse`
         """
-        return self.list_resources_by_tags_with_http_info(request)
+        return self._list_resources_by_tags_with_http_info(request)
 
-    def list_resources_by_tags_with_http_info(self, request):
-        all_params = ['instance_id', 'limit', 'marker', 'offset', 'list_resources_by_tags_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_resources_by_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4931,14 +4621,10 @@ class IoTDAClient(Client):
         :type request: :class:`huaweicloudsdkiotda.v5.TagDeviceRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.TagDeviceResponse`
         """
-        return self.tag_device_with_http_info(request)
+        return self._tag_device_with_http_info(request)
 
-    def tag_device_with_http_info(self, request):
-        all_params = ['instance_id', 'tag_device_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _tag_device_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4993,14 +4679,10 @@ class IoTDAClient(Client):
         :type request: :class:`huaweicloudsdkiotda.v5.UntagDeviceRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.UntagDeviceResponse`
         """
-        return self.untag_device_with_http_info(request)
+        return self._untag_device_with_http_info(request)
 
-    def untag_device_with_http_info(self, request):
-        all_params = ['instance_id', 'untag_device_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _untag_device_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

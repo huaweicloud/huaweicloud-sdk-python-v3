@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class CloudIDEClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(CloudIDEClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkcloudide.v2.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -53,14 +35,10 @@ class CloudIDEClient(Client):
         :type request: :class:`huaweicloudsdkcloudide.v2.AddExtensionEvaluationRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.AddExtensionEvaluationResponse`
         """
-        return self.add_extension_evaluation_with_http_info(request)
+        return self._add_extension_evaluation_with_http_info(request)
 
-    def add_extension_evaluation_with_http_info(self, request):
-        all_params = ['add_extension_evaluation_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _add_extension_evaluation_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -113,14 +91,10 @@ class CloudIDEClient(Client):
         :type request: :class:`huaweicloudsdkcloudide.v2.AddExtensionEvaluationReplyRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.AddExtensionEvaluationReplyResponse`
         """
-        return self.add_extension_evaluation_reply_with_http_info(request)
+        return self._add_extension_evaluation_reply_with_http_info(request)
 
-    def add_extension_evaluation_reply_with_http_info(self, request):
-        all_params = ['add_extension_evaluation_reply_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _add_extension_evaluation_reply_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -173,14 +147,10 @@ class CloudIDEClient(Client):
         :type request: :class:`huaweicloudsdkcloudide.v2.AddExtensionStarRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.AddExtensionStarResponse`
         """
-        return self.add_extension_star_with_http_info(request)
+        return self._add_extension_star_with_http_info(request)
 
-    def add_extension_star_with_http_info(self, request):
-        all_params = ['add_extension_star_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _add_extension_star_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -233,14 +203,10 @@ class CloudIDEClient(Client):
         :type request: :class:`huaweicloudsdkcloudide.v2.CheckMaliciousExtensionEvaluationRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.CheckMaliciousExtensionEvaluationResponse`
         """
-        return self.check_malicious_extension_evaluation_with_http_info(request)
+        return self._check_malicious_extension_evaluation_with_http_info(request)
 
-    def check_malicious_extension_evaluation_with_http_info(self, request):
-        all_params = ['check_malicious_extension_evaluation_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _check_malicious_extension_evaluation_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -293,14 +259,10 @@ class CloudIDEClient(Client):
         :type request: :class:`huaweicloudsdkcloudide.v2.CreateExtensionAuthorizationRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.CreateExtensionAuthorizationResponse`
         """
-        return self.create_extension_authorization_with_http_info(request)
+        return self._create_extension_authorization_with_http_info(request)
 
-    def create_extension_authorization_with_http_info(self, request):
-        all_params = ['instance_id', 'create_extension_authorization_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_extension_authorization_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -355,14 +317,10 @@ class CloudIDEClient(Client):
         :type request: :class:`huaweicloudsdkcloudide.v2.DeleteEvaluationRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.DeleteEvaluationResponse`
         """
-        return self.delete_evaluation_with_http_info(request)
+        return self._delete_evaluation_with_http_info(request)
 
-    def delete_evaluation_with_http_info(self, request):
-        all_params = ['evaluation_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_evaluation_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -415,14 +373,10 @@ class CloudIDEClient(Client):
         :type request: :class:`huaweicloudsdkcloudide.v2.DeleteEvaluationReplyRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.DeleteEvaluationReplyResponse`
         """
-        return self.delete_evaluation_reply_with_http_info(request)
+        return self._delete_evaluation_reply_with_http_info(request)
 
-    def delete_evaluation_reply_with_http_info(self, request):
-        all_params = ['reply_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_evaluation_reply_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -475,14 +429,10 @@ class CloudIDEClient(Client):
         :type request: :class:`huaweicloudsdkcloudide.v2.ListExtensionsRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.ListExtensionsResponse`
         """
-        return self.list_extensions_with_http_info(request)
+        return self._list_extensions_with_http_info(request)
 
-    def list_extensions_with_http_info(self, request):
-        all_params = ['list_extensions_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_extensions_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -535,14 +485,10 @@ class CloudIDEClient(Client):
         :type request: :class:`huaweicloudsdkcloudide.v2.ListProjectTemplatesRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.ListProjectTemplatesResponse`
         """
-        return self.list_project_templates_with_http_info(request)
+        return self._list_project_templates_with_http_info(request)
 
-    def list_project_templates_with_http_info(self, request):
-        all_params = ['stack_id', 'arch']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_project_templates_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -597,14 +543,10 @@ class CloudIDEClient(Client):
         :type request: :class:`huaweicloudsdkcloudide.v2.ListPublisherRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.ListPublisherResponse`
         """
-        return self.list_publisher_with_http_info(request)
+        return self._list_publisher_with_http_info(request)
 
-    def list_publisher_with_http_info(self, request):
-        all_params = ['name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_publisher_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -657,14 +599,10 @@ class CloudIDEClient(Client):
         :type request: :class:`huaweicloudsdkcloudide.v2.ListStacksRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.ListStacksResponse`
         """
-        return self.list_stacks_with_http_info(request)
+        return self._list_stacks_with_http_info(request)
 
-    def list_stacks_with_http_info(self, request):
-        all_params = ['tags']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_stacks_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -717,14 +655,10 @@ class CloudIDEClient(Client):
         :type request: :class:`huaweicloudsdkcloudide.v2.PublishExtensionRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.PublishExtensionResponse`
         """
-        return self.publish_extension_with_http_info(request)
+        return self._publish_extension_with_http_info(request)
 
-    def publish_extension_with_http_info(self, request):
-        all_params = ['task_id', 'publish_extension_request_body', 'x_publisher_token']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _publish_extension_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -781,14 +715,10 @@ class CloudIDEClient(Client):
         :type request: :class:`huaweicloudsdkcloudide.v2.ShowAccountStatusRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.ShowAccountStatusResponse`
         """
-        return self.show_account_status_with_http_info(request)
+        return self._show_account_status_with_http_info(request)
 
-    def show_account_status_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_account_status_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -839,14 +769,10 @@ class CloudIDEClient(Client):
         :type request: :class:`huaweicloudsdkcloudide.v2.ShowCategoryListRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.ShowCategoryListResponse`
         """
-        return self.show_category_list_with_http_info(request)
+        return self._show_category_list_with_http_info(request)
 
-    def show_category_list_with_http_info(self, request):
-        all_params = ['page_num', 'page_size', 'scene_name', 'support_ide', 'type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_category_list_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -907,14 +833,10 @@ class CloudIDEClient(Client):
         :type request: :class:`huaweicloudsdkcloudide.v2.ShowExtensionAuthorizationRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.ShowExtensionAuthorizationResponse`
         """
-        return self.show_extension_authorization_with_http_info(request)
+        return self._show_extension_authorization_with_http_info(request)
 
-    def show_extension_authorization_with_http_info(self, request):
-        all_params = ['extension_version', 'identifier', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_extension_authorization_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -971,14 +893,10 @@ class CloudIDEClient(Client):
         :type request: :class:`huaweicloudsdkcloudide.v2.ShowExtensionDetailRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.ShowExtensionDetailResponse`
         """
-        return self.show_extension_detail_with_http_info(request)
+        return self._show_extension_detail_with_http_info(request)
 
-    def show_extension_detail_with_http_info(self, request):
-        all_params = ['show_extension_detail_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_extension_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1031,14 +949,10 @@ class CloudIDEClient(Client):
         :type request: :class:`huaweicloudsdkcloudide.v2.ShowExtensionEvaluationRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.ShowExtensionEvaluationResponse`
         """
-        return self.show_extension_evaluation_with_http_info(request)
+        return self._show_extension_evaluation_with_http_info(request)
 
-    def show_extension_evaluation_with_http_info(self, request):
-        all_params = ['extension_id', 'limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_extension_evaluation_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1095,14 +1009,10 @@ class CloudIDEClient(Client):
         :type request: :class:`huaweicloudsdkcloudide.v2.ShowExtensionEvaluationStarRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.ShowExtensionEvaluationStarResponse`
         """
-        return self.show_extension_evaluation_star_with_http_info(request)
+        return self._show_extension_evaluation_star_with_http_info(request)
 
-    def show_extension_evaluation_star_with_http_info(self, request):
-        all_params = ['extension_id', 'limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_extension_evaluation_star_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1159,14 +1069,10 @@ class CloudIDEClient(Client):
         :type request: :class:`huaweicloudsdkcloudide.v2.ShowExtensionTestingResultRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.ShowExtensionTestingResultResponse`
         """
-        return self.show_extension_testing_result_with_http_info(request)
+        return self._show_extension_testing_result_with_http_info(request)
 
-    def show_extension_testing_result_with_http_info(self, request):
-        all_params = ['task_id', 'x_publisher_token']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_extension_testing_result_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1221,14 +1127,10 @@ class CloudIDEClient(Client):
         :type request: :class:`huaweicloudsdkcloudide.v2.ShowPriceRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.ShowPriceResponse`
         """
-        return self.show_price_with_http_info(request)
+        return self._show_price_with_http_info(request)
 
-    def show_price_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_price_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1279,14 +1181,10 @@ class CloudIDEClient(Client):
         :type request: :class:`huaweicloudsdkcloudide.v2.UploadExtensionFileRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.UploadExtensionFileResponse`
         """
-        return self.upload_extension_file_with_http_info(request)
+        return self._upload_extension_file_with_http_info(request)
 
-    def upload_extension_file_with_http_info(self, request):
-        all_params = ['official', 'file']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _upload_extension_file_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1343,14 +1241,10 @@ class CloudIDEClient(Client):
         :type request: :class:`huaweicloudsdkcloudide.v2.UploadFilePublisherRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.UploadFilePublisherResponse`
         """
-        return self.upload_file_publisher_with_http_info(request)
+        return self._upload_file_publisher_with_http_info(request)
 
-    def upload_file_publisher_with_http_info(self, request):
-        all_params = ['file', 'chunk_index', 'merge', 'total_chunk_num', 'parent_file_size', 'parent_file_name', 'override', 'chunk_md5', 'x_publisher_token', 'publisher_id', 'parent_file_sha256', 'task_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _upload_file_publisher_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1427,14 +1321,10 @@ class CloudIDEClient(Client):
         :type request: :class:`huaweicloudsdkcloudide.v2.CheckInstanceAccessRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.CheckInstanceAccessResponse`
         """
-        return self.check_instance_access_with_http_info(request)
+        return self._check_instance_access_with_http_info(request)
 
-    def check_instance_access_with_http_info(self, request):
-        all_params = ['instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _check_instance_access_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1487,14 +1377,10 @@ class CloudIDEClient(Client):
         :type request: :class:`huaweicloudsdkcloudide.v2.CheckNameRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.CheckNameResponse`
         """
-        return self.check_name_with_http_info(request)
+        return self._check_name_with_http_info(request)
 
-    def check_name_with_http_info(self, request):
-        all_params = ['display_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _check_name_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1547,14 +1433,10 @@ class CloudIDEClient(Client):
         :type request: :class:`huaweicloudsdkcloudide.v2.CreateInstanceRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.CreateInstanceResponse`
         """
-        return self.create_instance_with_http_info(request)
+        return self._create_instance_with_http_info(request)
 
-    def create_instance_with_http_info(self, request):
-        all_params = ['org_id', 'create_instance_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1609,14 +1491,10 @@ class CloudIDEClient(Client):
         :type request: :class:`huaweicloudsdkcloudide.v2.CreateInstanceBy3rdRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.CreateInstanceBy3rdResponse`
         """
-        return self.create_instance_by3rd_with_http_info(request)
+        return self._create_instance_by3rd_with_http_info(request)
 
-    def create_instance_by3rd_with_http_info(self, request):
-        all_params = ['create_instance_by3rd_request_body', 'instance_label']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_instance_by3rd_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1671,14 +1549,10 @@ class CloudIDEClient(Client):
         :type request: :class:`huaweicloudsdkcloudide.v2.DeleteInstanceRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.DeleteInstanceResponse`
         """
-        return self.delete_instance_with_http_info(request)
+        return self._delete_instance_with_http_info(request)
 
-    def delete_instance_with_http_info(self, request):
-        all_params = ['instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1731,14 +1605,10 @@ class CloudIDEClient(Client):
         :type request: :class:`huaweicloudsdkcloudide.v2.ListInstancesRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.ListInstancesResponse`
         """
-        return self.list_instances_with_http_info(request)
+        return self._list_instances_with_http_info(request)
 
-    def list_instances_with_http_info(self, request):
-        all_params = ['limit', 'offset', 'is_temporary', 'label', 'search', 'sort_dir', 'sort_key']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_instances_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1803,14 +1673,10 @@ class CloudIDEClient(Client):
         :type request: :class:`huaweicloudsdkcloudide.v2.ListOrgInstancesRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.ListOrgInstancesResponse`
         """
-        return self.list_org_instances_with_http_info(request)
+        return self._list_org_instances_with_http_info(request)
 
-    def list_org_instances_with_http_info(self, request):
-        all_params = ['org_id', 'is_temporary', 'limit', 'offset', 'search']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_org_instances_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1871,14 +1737,10 @@ class CloudIDEClient(Client):
         :type request: :class:`huaweicloudsdkcloudide.v2.ShowInstanceRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.ShowInstanceResponse`
         """
-        return self.show_instance_with_http_info(request)
+        return self._show_instance_with_http_info(request)
 
-    def show_instance_with_http_info(self, request):
-        all_params = ['instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1931,14 +1793,10 @@ class CloudIDEClient(Client):
         :type request: :class:`huaweicloudsdkcloudide.v2.ShowInstanceStatusInfoRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.ShowInstanceStatusInfoResponse`
         """
-        return self.show_instance_status_info_with_http_info(request)
+        return self._show_instance_status_info_with_http_info(request)
 
-    def show_instance_status_info_with_http_info(self, request):
-        all_params = ['instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_instance_status_info_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1991,14 +1849,10 @@ class CloudIDEClient(Client):
         :type request: :class:`huaweicloudsdkcloudide.v2.StartInstanceRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.StartInstanceResponse`
         """
-        return self.start_instance_with_http_info(request)
+        return self._start_instance_with_http_info(request)
 
-    def start_instance_with_http_info(self, request):
-        all_params = ['instance_id', 'start_instance_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _start_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2053,14 +1907,10 @@ class CloudIDEClient(Client):
         :type request: :class:`huaweicloudsdkcloudide.v2.StopInstanceRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.StopInstanceResponse`
         """
-        return self.stop_instance_with_http_info(request)
+        return self._stop_instance_with_http_info(request)
 
-    def stop_instance_with_http_info(self, request):
-        all_params = ['instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _stop_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2113,14 +1963,10 @@ class CloudIDEClient(Client):
         :type request: :class:`huaweicloudsdkcloudide.v2.UpdateInstanceRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.UpdateInstanceResponse`
         """
-        return self.update_instance_with_http_info(request)
+        return self._update_instance_with_http_info(request)
 
-    def update_instance_with_http_info(self, request):
-        all_params = ['instance_id', 'update_instance_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2175,14 +2021,10 @@ class CloudIDEClient(Client):
         :type request: :class:`huaweicloudsdkcloudide.v2.UpdateInstanceActivityRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.UpdateInstanceActivityResponse`
         """
-        return self.update_instance_activity_with_http_info(request)
+        return self._update_instance_activity_with_http_info(request)
 
-    def update_instance_activity_with_http_info(self, request):
-        all_params = ['instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_instance_activity_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2235,14 +2077,10 @@ class CloudIDEClient(Client):
         :type request: :class:`huaweicloudsdkcloudide.v2.CreateAcceptanceRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.CreateAcceptanceResponse`
         """
-        return self.create_acceptance_with_http_info(request)
+        return self._create_acceptance_with_http_info(request)
 
-    def create_acceptance_with_http_info(self, request):
-        all_params = ['create_acceptance_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_acceptance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2295,14 +2133,10 @@ class CloudIDEClient(Client):
         :type request: :class:`huaweicloudsdkcloudide.v2.CreateApplyRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.CreateApplyResponse`
         """
-        return self.create_apply_with_http_info(request)
+        return self._create_apply_with_http_info(request)
 
-    def create_apply_with_http_info(self, request):
-        all_params = ['create_apply_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_apply_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2355,14 +2189,10 @@ class CloudIDEClient(Client):
         :type request: :class:`huaweicloudsdkcloudide.v2.CreateEventRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.CreateEventResponse`
         """
-        return self.create_event_with_http_info(request)
+        return self._create_event_with_http_info(request)
 
-    def create_event_with_http_info(self, request):
-        all_params = ['create_event_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_event_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2415,14 +2245,10 @@ class CloudIDEClient(Client):
         :type request: :class:`huaweicloudsdkcloudide.v2.CreateLoginRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.CreateLoginResponse`
         """
-        return self.create_login_with_http_info(request)
+        return self._create_login_with_http_info(request)
 
-    def create_login_with_http_info(self, request):
-        all_params = ['create_login_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_login_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2482,14 +2308,10 @@ class CloudIDEClient(Client):
         :type request: :class:`huaweicloudsdkcloudide.v2.CreateRequestRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.CreateRequestResponse`
         """
-        return self.create_request_with_http_info(request)
+        return self._create_request_with_http_info(request)
 
-    def create_request_with_http_info(self, request):
-        all_params = ['create_request_request_body', 'topn', 'scenario', 'resubmit', 'model_id', 'request_type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_request_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2552,14 +2374,10 @@ class CloudIDEClient(Client):
         :type request: :class:`huaweicloudsdkcloudide.v2.ShowResultRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.ShowResultResponse`
         """
-        return self.show_result_with_http_info(request)
+        return self._show_result_with_http_info(request)
 
-    def show_result_with_http_info(self, request):
-        all_params = ['request_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_result_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

@@ -1,0 +1,23 @@
+{
+  "ListAllMyBucketsResult": {
+    "Owner": {
+      "ID": "id"
+    },
+    "Buckets": {
+      "Bucket": [
+        {
+          "Name": "bucketName",
+          "CreationDate": "date",
+          "Location": "region",
+          "BucketType": "buckettype"
+        },
+        {
+          "Name": "bucketName1",
+          "CreationDate": "date1",
+          "Location": "region1",
+          "BucketType": "buckettype1"
+        }
+      ]
+    }
+  }
+}

@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class VssAsyncClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(VssAsyncClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkvss.v3.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -54,14 +36,10 @@ class VssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvss.v3.AuthorizeDomainsRequest`
         :rtype: :class:`huaweicloudsdkvss.v3.AuthorizeDomainsResponse`
         """
-        return self.authorize_domains_with_http_info(request)
+        return self._authorize_domains_with_http_info(request)
 
-    def authorize_domains_with_http_info(self, request):
-        all_params = ['authorize_domains_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _authorize_domains_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -115,14 +93,10 @@ class VssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvss.v3.CreateDomainsRequest`
         :rtype: :class:`huaweicloudsdkvss.v3.CreateDomainsResponse`
         """
-        return self.create_domains_with_http_info(request)
+        return self._create_domains_with_http_info(request)
 
-    def create_domains_with_http_info(self, request):
-        all_params = ['create_domains_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_domains_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -176,14 +150,10 @@ class VssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvss.v3.DeleteDomainsRequest`
         :rtype: :class:`huaweicloudsdkvss.v3.DeleteDomainsResponse`
         """
-        return self.delete_domains_with_http_info(request)
+        return self._delete_domains_with_http_info(request)
 
-    def delete_domains_with_http_info(self, request):
-        all_params = ['domain_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_domains_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -237,14 +207,10 @@ class VssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvss.v3.ListDomainsRequest`
         :rtype: :class:`huaweicloudsdkvss.v3.ListDomainsResponse`
         """
-        return self.list_domains_with_http_info(request)
+        return self._list_domains_with_http_info(request)
 
-    def list_domains_with_http_info(self, request):
-        all_params = ['domain_id', 'auth_status', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_domains_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -304,14 +270,10 @@ class VssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvss.v3.ShowDomainSettingsRequest`
         :rtype: :class:`huaweicloudsdkvss.v3.ShowDomainSettingsResponse`
         """
-        return self.show_domain_settings_with_http_info(request)
+        return self._show_domain_settings_with_http_info(request)
 
-    def show_domain_settings_with_http_info(self, request):
-        all_params = ['domain_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_domain_settings_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -365,14 +327,10 @@ class VssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvss.v3.UpdateDomainSettingsRequest`
         :rtype: :class:`huaweicloudsdkvss.v3.UpdateDomainSettingsResponse`
         """
-        return self.update_domain_settings_with_http_info(request)
+        return self._update_domain_settings_with_http_info(request)
 
-    def update_domain_settings_with_http_info(self, request):
-        all_params = ['update_domain_settings_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_domain_settings_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -426,14 +384,10 @@ class VssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvss.v3.DownloadTaskReportRequest`
         :rtype: :class:`huaweicloudsdkvss.v3.DownloadTaskReportResponse`
         """
-        return self.download_task_report_with_http_info(request)
+        return self._download_task_report_with_http_info(request)
 
-    def download_task_report_with_http_info(self, request):
-        all_params = ['task_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _download_task_report_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -487,14 +441,10 @@ class VssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvss.v3.ExecuteGenerateReportRequest`
         :rtype: :class:`huaweicloudsdkvss.v3.ExecuteGenerateReportResponse`
         """
-        return self.execute_generate_report_with_http_info(request)
+        return self._execute_generate_report_with_http_info(request)
 
-    def execute_generate_report_with_http_info(self, request):
-        all_params = ['execute_generate_report_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _execute_generate_report_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -548,14 +498,10 @@ class VssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvss.v3.ListBusinessRisksRequest`
         :rtype: :class:`huaweicloudsdkvss.v3.ListBusinessRisksResponse`
         """
-        return self.list_business_risks_with_http_info(request)
+        return self._list_business_risks_with_http_info(request)
 
-    def list_business_risks_with_http_info(self, request):
-        all_params = ['task_id', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_business_risks_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -613,14 +559,10 @@ class VssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvss.v3.ListPortResultsRequest`
         :rtype: :class:`huaweicloudsdkvss.v3.ListPortResultsResponse`
         """
-        return self.list_port_results_with_http_info(request)
+        return self._list_port_results_with_http_info(request)
 
-    def list_port_results_with_http_info(self, request):
-        all_params = ['task_id', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_port_results_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -678,14 +620,10 @@ class VssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvss.v3.ShowReportStatusRequest`
         :rtype: :class:`huaweicloudsdkvss.v3.ShowReportStatusResponse`
         """
-        return self.show_report_status_with_http_info(request)
+        return self._show_report_status_with_http_info(request)
 
-    def show_report_status_with_http_info(self, request):
-        all_params = ['task_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_report_status_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -739,14 +677,10 @@ class VssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvss.v3.ShowResultsRequest`
         :rtype: :class:`huaweicloudsdkvss.v3.ShowResultsResponse`
         """
-        return self.show_results_with_http_info(request)
+        return self._show_results_with_http_info(request)
 
-    def show_results_with_http_info(self, request):
-        all_params = ['task_id', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_results_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -804,14 +738,10 @@ class VssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvss.v3.UpdateFalsePositiveRequest`
         :rtype: :class:`huaweicloudsdkvss.v3.UpdateFalsePositiveResponse`
         """
-        return self.update_false_positive_with_http_info(request)
+        return self._update_false_positive_with_http_info(request)
 
-    def update_false_positive_with_http_info(self, request):
-        all_params = ['update_false_positive_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_false_positive_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -865,14 +795,10 @@ class VssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvss.v3.CancelTasksRequest`
         :rtype: :class:`huaweicloudsdkvss.v3.CancelTasksResponse`
         """
-        return self.cancel_tasks_with_http_info(request)
+        return self._cancel_tasks_with_http_info(request)
 
-    def cancel_tasks_with_http_info(self, request):
-        all_params = ['cancel_tasks_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _cancel_tasks_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -926,14 +852,10 @@ class VssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvss.v3.CreateTasksRequest`
         :rtype: :class:`huaweicloudsdkvss.v3.CreateTasksResponse`
         """
-        return self.create_tasks_with_http_info(request)
+        return self._create_tasks_with_http_info(request)
 
-    def create_tasks_with_http_info(self, request):
-        all_params = ['create_tasks_request_body', 'upgrade']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_tasks_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -989,14 +911,10 @@ class VssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvss.v3.ListTaskHistoriesRequest`
         :rtype: :class:`huaweicloudsdkvss.v3.ListTaskHistoriesResponse`
         """
-        return self.list_task_histories_with_http_info(request)
+        return self._list_task_histories_with_http_info(request)
 
-    def list_task_histories_with_http_info(self, request):
-        all_params = ['domain_id', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_task_histories_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1054,14 +972,10 @@ class VssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvss.v3.ShowTasksRequest`
         :rtype: :class:`huaweicloudsdkvss.v3.ShowTasksResponse`
         """
-        return self.show_tasks_with_http_info(request)
+        return self._show_tasks_with_http_info(request)
 
-    def show_tasks_with_http_info(self, request):
-        all_params = ['task_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_tasks_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

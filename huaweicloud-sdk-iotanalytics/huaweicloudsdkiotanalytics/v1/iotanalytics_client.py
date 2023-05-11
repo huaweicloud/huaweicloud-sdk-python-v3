@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class IoTAnalyticsClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(IoTAnalyticsClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkiotanalytics.v1.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -53,14 +35,10 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.CreateAssetModelRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.CreateAssetModelResponse`
         """
-        return self.create_asset_model_with_http_info(request)
+        return self._create_asset_model_with_http_info(request)
 
-    def create_asset_model_with_http_info(self, request):
-        all_params = ['asset_model']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_asset_model_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -113,14 +91,10 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.DeleteAssetModelRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.DeleteAssetModelResponse`
         """
-        return self.delete_asset_model_with_http_info(request)
+        return self._delete_asset_model_with_http_info(request)
 
-    def delete_asset_model_with_http_info(self, request):
-        all_params = ['model_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_asset_model_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -173,14 +147,10 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.ListAssetModelsRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.ListAssetModelsResponse`
         """
-        return self.list_asset_models_with_http_info(request)
+        return self._list_asset_models_with_http_info(request)
 
-    def list_asset_models_with_http_info(self, request):
-        all_params = ['filter', 'limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_asset_models_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -237,14 +207,10 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.ShowAssetModelRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.ShowAssetModelResponse`
         """
-        return self.show_asset_model_with_http_info(request)
+        return self._show_asset_model_with_http_info(request)
 
-    def show_asset_model_with_http_info(self, request):
-        all_params = ['model_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_asset_model_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -297,14 +263,10 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.UpdateAssetModelRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.UpdateAssetModelResponse`
         """
-        return self.update_asset_model_with_http_info(request)
+        return self._update_asset_model_with_http_info(request)
 
-    def update_asset_model_with_http_info(self, request):
-        all_params = ['model_id', 'asset_model']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_asset_model_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -359,14 +321,10 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.CreateAssetNewRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.CreateAssetNewResponse`
         """
-        return self.create_asset_new_with_http_info(request)
+        return self._create_asset_new_with_http_info(request)
 
-    def create_asset_new_with_http_info(self, request):
-        all_params = ['asset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_asset_new_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -419,14 +377,10 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.DeleteAssetNewRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.DeleteAssetNewResponse`
         """
-        return self.delete_asset_new_with_http_info(request)
+        return self._delete_asset_new_with_http_info(request)
 
-    def delete_asset_new_with_http_info(self, request):
-        all_params = ['asset_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_asset_new_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -479,14 +433,10 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.ListAssetsNewRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.ListAssetsNewResponse`
         """
-        return self.list_assets_new_with_http_info(request)
+        return self._list_assets_new_with_http_info(request)
 
-    def list_assets_new_with_http_info(self, request):
-        all_params = ['type', 'limit', 'offset', 'filter']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_assets_new_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -545,14 +495,10 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.PublishRootAssetRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.PublishRootAssetResponse`
         """
-        return self.publish_root_asset_with_http_info(request)
+        return self._publish_root_asset_with_http_info(request)
 
-    def publish_root_asset_with_http_info(self, request):
-        all_params = ['root_asset_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _publish_root_asset_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -605,14 +551,10 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.ShowAssetNewRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.ShowAssetNewResponse`
         """
-        return self.show_asset_new_with_http_info(request)
+        return self._show_asset_new_with_http_info(request)
 
-    def show_asset_new_with_http_info(self, request):
-        all_params = ['asset_id', 'type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_asset_new_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -667,14 +609,10 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.UpdateAssetNewRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.UpdateAssetNewResponse`
         """
-        return self.update_asset_new_with_http_info(request)
+        return self._update_asset_new_with_http_info(request)
 
-    def update_asset_new_with_http_info(self, request):
-        all_params = ['asset_id', 'asset_info']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_asset_new_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -729,14 +667,10 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.ShowLastPropertyValueRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.ShowLastPropertyValueResponse`
         """
-        return self.show_last_property_value_with_http_info(request)
+        return self._show_last_property_value_with_http_info(request)
 
-    def show_last_property_value_with_http_info(self, request):
-        all_params = ['asset_id', 'request']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_last_property_value_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -791,14 +725,10 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.ShowMetricValueRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.ShowMetricValueResponse`
         """
-        return self.show_metric_value_with_http_info(request)
+        return self._show_metric_value_with_http_info(request)
 
-    def show_metric_value_with_http_info(self, request):
-        all_params = ['asset_id', 'request']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_metric_value_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -853,14 +783,10 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.ShowPropertyRawValueRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.ShowPropertyRawValueResponse`
         """
-        return self.show_property_raw_value_with_http_info(request)
+        return self._show_property_raw_value_with_http_info(request)
 
-    def show_property_raw_value_with_http_info(self, request):
-        all_params = ['asset_id', 'request']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_property_raw_value_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -915,14 +841,10 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.CreateDatasourceRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.CreateDatasourceResponse`
         """
-        return self.create_datasource_with_http_info(request)
+        return self._create_datasource_with_http_info(request)
 
-    def create_datasource_with_http_info(self, request):
-        all_params = ['create_datasource_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_datasource_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -975,14 +897,10 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.DeleteDatasourceRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.DeleteDatasourceResponse`
         """
-        return self.delete_datasource_with_http_info(request)
+        return self._delete_datasource_with_http_info(request)
 
-    def delete_datasource_with_http_info(self, request):
-        all_params = ['datasource_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_datasource_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1035,14 +953,10 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.ShowAllDataSourceRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.ShowAllDataSourceResponse`
         """
-        return self.show_all_data_source_with_http_info(request)
+        return self._show_all_data_source_with_http_info(request)
 
-    def show_all_data_source_with_http_info(self, request):
-        all_params = ['name', 'type', 'limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_all_data_source_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1101,14 +1015,10 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.ShowDataSourceRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.ShowDataSourceResponse`
         """
-        return self.show_data_source_with_http_info(request)
+        return self._show_data_source_with_http_info(request)
 
-    def show_data_source_with_http_info(self, request):
-        all_params = ['datasource_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_data_source_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1161,14 +1071,10 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.UpdateDataSourceRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.UpdateDataSourceResponse`
         """
-        return self.update_data_source_with_http_info(request)
+        return self._update_data_source_with_http_info(request)
 
-    def update_data_source_with_http_info(self, request):
-        all_params = ['datasource_id', 'update_data_source_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_data_source_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1223,14 +1129,10 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.CreateGroupRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.CreateGroupResponse`
         """
-        return self.create_group_with_http_info(request)
+        return self._create_group_with_http_info(request)
 
-    def create_group_with_http_info(self, request):
-        all_params = ['create_group_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1283,14 +1185,10 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.DeleteGroupRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.DeleteGroupResponse`
         """
-        return self.delete_group_with_http_info(request)
+        return self._delete_group_with_http_info(request)
 
-    def delete_group_with_http_info(self, request):
-        all_params = ['group_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1343,14 +1241,10 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.ListGroupsRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.ListGroupsResponse`
         """
-        return self.list_groups_with_http_info(request)
+        return self._list_groups_with_http_info(request)
 
-    def list_groups_with_http_info(self, request):
-        all_params = ['unit', 'type', 'group_id', 'name', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_groups_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1413,14 +1307,10 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.UpdateGroupRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.UpdateGroupResponse`
         """
-        return self.update_group_with_http_info(request)
+        return self._update_group_with_http_info(request)
 
-    def update_group_with_http_info(self, request):
-        all_params = ['group_id', 'update_group_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1475,14 +1365,10 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.DeleteDataStoreRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.DeleteDataStoreResponse`
         """
-        return self.delete_data_store_with_http_info(request)
+        return self._delete_data_store_with_http_info(request)
 
-    def delete_data_store_with_http_info(self, request):
-        all_params = ['data_store_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_data_store_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1535,14 +1421,10 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.ListDataStoresRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.ListDataStoresResponse`
         """
-        return self.list_data_stores_with_http_info(request)
+        return self._list_data_stores_with_http_info(request)
 
-    def list_data_stores_with_http_info(self, request):
-        all_params = ['group_id', 'data_store_id', 'name', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_data_stores_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1603,14 +1485,10 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.UpdateDataStoreRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.UpdateDataStoreResponse`
         """
-        return self.update_data_store_with_http_info(request)
+        return self._update_data_store_with_http_info(request)
 
-    def update_data_store_with_http_info(self, request):
-        all_params = ['data_store_id', 'update_data_store_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_data_store_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1665,14 +1543,10 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.ListHistoryRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.ListHistoryResponse`
         """
-        return self.list_history_with_http_info(request)
+        return self._list_history_with_http_info(request)
 
-    def list_history_with_http_info(self, request):
-        all_params = ['data_store_id', 'list_history_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_history_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1727,14 +1601,10 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.ListMetricsRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.ListMetricsResponse`
         """
-        return self.list_metrics_with_http_info(request)
+        return self._list_metrics_with_http_info(request)
 
-    def list_metrics_with_http_info(self, request):
-        all_params = ['data_store_id', 'list_metrics_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_metrics_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1789,14 +1659,10 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.ShowPropertyValuesRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.ShowPropertyValuesResponse`
         """
-        return self.show_property_values_with_http_info(request)
+        return self._show_property_values_with_http_info(request)
 
-    def show_property_values_with_http_info(self, request):
-        all_params = ['data_store_id', 'show_property_values_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_property_values_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1851,14 +1717,10 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.ListTagValuesRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.ListTagValuesResponse`
         """
-        return self.list_tag_values_with_http_info(request)
+        return self._list_tag_values_with_http_info(request)
 
-    def list_tag_values_with_http_info(self, request):
-        all_params = ['data_store_id', 'tag_name', 'filters', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_tag_values_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1919,14 +1781,10 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.AddDevDataRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.AddDevDataResponse`
         """
-        return self.add_dev_data_with_http_info(request)
+        return self._add_dev_data_with_http_info(request)
 
-    def add_dev_data_with_http_info(self, request):
-        all_params = ['datasource_id', 'add_dev_data_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _add_dev_data_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1981,14 +1839,10 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.AddPipelineJobRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.AddPipelineJobResponse`
         """
-        return self.add_pipeline_job_with_http_info(request)
+        return self._add_pipeline_job_with_http_info(request)
 
-    def add_pipeline_job_with_http_info(self, request):
-        all_params = ['add_pipeline_job_request_body', 'check']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _add_pipeline_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2043,14 +1897,10 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.DeletePipelineJobRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.DeletePipelineJobResponse`
         """
-        return self.delete_pipeline_job_with_http_info(request)
+        return self._delete_pipeline_job_with_http_info(request)
 
-    def delete_pipeline_job_with_http_info(self, request):
-        all_params = ['pipeline_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_pipeline_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2103,14 +1953,10 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.ListPipelineJobsRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.ListPipelineJobsResponse`
         """
-        return self.list_pipeline_jobs_with_http_info(request)
+        return self._list_pipeline_jobs_with_http_info(request)
 
-    def list_pipeline_jobs_with_http_info(self, request):
-        all_params = ['data_store_id', 'data_store_group_id', 'data_source_id', 'pipeline_name', 'operator_class_name', 'offset', 'limit', 'sync_status']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_pipeline_jobs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2177,14 +2023,10 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.ShowPipelineJobRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.ShowPipelineJobResponse`
         """
-        return self.show_pipeline_job_with_http_info(request)
+        return self._show_pipeline_job_with_http_info(request)
 
-    def show_pipeline_job_with_http_info(self, request):
-        all_params = ['pipeline_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_pipeline_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2237,14 +2079,10 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.StartPipelineJobRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.StartPipelineJobResponse`
         """
-        return self.start_pipeline_job_with_http_info(request)
+        return self._start_pipeline_job_with_http_info(request)
 
-    def start_pipeline_job_with_http_info(self, request):
-        all_params = ['pipeline_id', 'parallel', 'rtu', 'resume_savepoint']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _start_pipeline_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2303,14 +2141,10 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.StopPipelineJobRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.StopPipelineJobResponse`
         """
-        return self.stop_pipeline_job_with_http_info(request)
+        return self._stop_pipeline_job_with_http_info(request)
 
-    def stop_pipeline_job_with_http_info(self, request):
-        all_params = ['pipeline_id', 'trigger_savepoint']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _stop_pipeline_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2365,14 +2199,10 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.UpdatePipelineJobRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.UpdatePipelineJobResponse`
         """
-        return self.update_pipeline_job_with_http_info(request)
+        return self._update_pipeline_job_with_http_info(request)
 
-    def update_pipeline_job_with_http_info(self, request):
-        all_params = ['pipeline_id', 'update_pipeline_job_request_body', 'check']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_pipeline_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2429,14 +2259,10 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.CreateStreamingJobRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.CreateStreamingJobResponse`
         """
-        return self.create_streaming_job_with_http_info(request)
+        return self._create_streaming_job_with_http_info(request)
 
-    def create_streaming_job_with_http_info(self, request):
-        all_params = ['create_streaming_job_request_body', 'check']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_streaming_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2491,14 +2317,10 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.DeleteStreamingJobByIdRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.DeleteStreamingJobByIdResponse`
         """
-        return self.delete_streaming_job_by_id_with_http_info(request)
+        return self._delete_streaming_job_by_id_with_http_info(request)
 
-    def delete_streaming_job_by_id_with_http_info(self, request):
-        all_params = ['job_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_streaming_job_by_id_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2551,14 +2373,10 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.ShowJobByIdRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.ShowJobByIdResponse`
         """
-        return self.show_job_by_id_with_http_info(request)
+        return self._show_job_by_id_with_http_info(request)
 
-    def show_job_by_id_with_http_info(self, request):
-        all_params = ['job_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_job_by_id_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2611,14 +2429,10 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.ShowJobsRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.ShowJobsResponse`
         """
-        return self.show_jobs_with_http_info(request)
+        return self._show_jobs_with_http_info(request)
 
-    def show_jobs_with_http_info(self, request):
-        all_params = ['job_input_type', 'offset', 'limit', 'sync_status']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_jobs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2677,14 +2491,10 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.UpdateStreamingJobRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.UpdateStreamingJobResponse`
         """
-        return self.update_streaming_job_with_http_info(request)
+        return self._update_streaming_job_with_http_info(request)
 
-    def update_streaming_job_with_http_info(self, request):
-        all_params = ['job_id', 'update_streaming_job_request_body', 'check']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_streaming_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2741,14 +2551,10 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.StartJobRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.StartJobResponse`
         """
-        return self.start_job_with_http_info(request)
+        return self._start_job_with_http_info(request)
 
-    def start_job_with_http_info(self, request):
-        all_params = ['job_id', 'parallel', 'rtu', 'resume_savepoint']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _start_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2807,14 +2613,10 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.StopJobRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.StopJobResponse`
         """
-        return self.stop_job_with_http_info(request)
+        return self._stop_job_with_http_info(request)
 
-    def stop_job_with_http_info(self, request):
-        all_params = ['job_id', 'trigger_savepoint']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _stop_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2869,14 +2671,10 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.CreateComputingResourceRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.CreateComputingResourceResponse`
         """
-        return self.create_computing_resource_with_http_info(request)
+        return self._create_computing_resource_with_http_info(request)
 
-    def create_computing_resource_with_http_info(self, request):
-        all_params = ['body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_computing_resource_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2929,14 +2727,10 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.DeleteComputingResourceRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.DeleteComputingResourceResponse`
         """
-        return self.delete_computing_resource_with_http_info(request)
+        return self._delete_computing_resource_with_http_info(request)
 
-    def delete_computing_resource_with_http_info(self, request):
-        all_params = ['computing_resource_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_computing_resource_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2989,14 +2783,10 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.ListComputingResourcesRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.ListComputingResourcesResponse`
         """
-        return self.list_computing_resources_with_http_info(request)
+        return self._list_computing_resources_with_http_info(request)
 
-    def list_computing_resources_with_http_info(self, request):
-        all_params = ['computing_resource_name', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_computing_resources_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3053,14 +2843,10 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.ExportDatasetRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.ExportDatasetResponse`
         """
-        return self.export_dataset_with_http_info(request)
+        return self._export_dataset_with_http_info(request)
 
-    def export_dataset_with_http_info(self, request):
-        all_params = ['job_id', 'run_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _export_dataset_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3115,14 +2901,10 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.ImportDataRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.ImportDataResponse`
         """
-        return self.import_data_with_http_info(request)
+        return self._import_data_with_http_info(request)
 
-    def import_data_with_http_info(self, request):
-        all_params = ['body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _import_data_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3175,14 +2957,10 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.ShowDatasetRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.ShowDatasetResponse`
         """
-        return self.show_dataset_with_http_info(request)
+        return self._show_dataset_with_http_info(request)
 
-    def show_dataset_with_http_info(self, request):
-        all_params = ['job_id', 'run_id', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_dataset_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3241,14 +3019,10 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.ValidateSqlRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.ValidateSqlResponse`
         """
-        return self.validate_sql_with_http_info(request)
+        return self._validate_sql_with_http_info(request)
 
-    def validate_sql_with_http_info(self, request):
-        all_params = ['body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _validate_sql_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3301,14 +3075,10 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.CreateBatchJobRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.CreateBatchJobResponse`
         """
-        return self.create_batch_job_with_http_info(request)
+        return self._create_batch_job_with_http_info(request)
 
-    def create_batch_job_with_http_info(self, request):
-        all_params = ['body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_batch_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3361,14 +3131,10 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.DeleteBatchJobRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.DeleteBatchJobResponse`
         """
-        return self.delete_batch_job_with_http_info(request)
+        return self._delete_batch_job_with_http_info(request)
 
-    def delete_batch_job_with_http_info(self, request):
-        all_params = ['job_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_batch_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3421,14 +3187,10 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.ListBatchJobsRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.ListBatchJobsResponse`
         """
-        return self.list_batch_jobs_with_http_info(request)
+        return self._list_batch_jobs_with_http_info(request)
 
-    def list_batch_jobs_with_http_info(self, request):
-        all_params = ['offset', 'limit', 'has_schedule', 'job_name', 'schedule_status', 'order_by', 'order']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_batch_jobs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3493,14 +3255,10 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.ShowBatchJobRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.ShowBatchJobResponse`
         """
-        return self.show_batch_job_with_http_info(request)
+        return self._show_batch_job_with_http_info(request)
 
-    def show_batch_job_with_http_info(self, request):
-        all_params = ['job_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_batch_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3553,14 +3311,10 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.UpdateBatchJobRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.UpdateBatchJobResponse`
         """
-        return self.update_batch_job_with_http_info(request)
+        return self._update_batch_job_with_http_info(request)
 
-    def update_batch_job_with_http_info(self, request):
-        all_params = ['job_id', 'body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_batch_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3615,14 +3369,10 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.CreateRunRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.CreateRunResponse`
         """
-        return self.create_run_with_http_info(request)
+        return self._create_run_with_http_info(request)
 
-    def create_run_with_http_info(self, request):
-        all_params = ['job_id', 'body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_run_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3677,14 +3427,10 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.DeleteRunRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.DeleteRunResponse`
         """
-        return self.delete_run_with_http_info(request)
+        return self._delete_run_with_http_info(request)
 
-    def delete_run_with_http_info(self, request):
-        all_params = ['job_id', 'run_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_run_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3739,14 +3485,10 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.ListRunsRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.ListRunsResponse`
         """
-        return self.list_runs_with_http_info(request)
+        return self._list_runs_with_http_info(request)
 
-    def list_runs_with_http_info(self, request):
-        all_params = ['offset', 'limit', 'start_time', 'end_time', 'sql_pattern', 'sql_type', 'job_type', 'status', 'order_by', 'order', 'job_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_runs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3819,14 +3561,10 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.ShowRunRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.ShowRunResponse`
         """
-        return self.show_run_with_http_info(request)
+        return self._show_run_with_http_info(request)
 
-    def show_run_with_http_info(self, request):
-        all_params = ['job_id', 'run_id', 'with_details']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_run_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3883,14 +3621,10 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.CreateTableRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.CreateTableResponse`
         """
-        return self.create_table_with_http_info(request)
+        return self._create_table_with_http_info(request)
 
-    def create_table_with_http_info(self, request):
-        all_params = ['body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_table_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3943,14 +3677,10 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.DeleteTableRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.DeleteTableResponse`
         """
-        return self.delete_table_with_http_info(request)
+        return self._delete_table_with_http_info(request)
 
-    def delete_table_with_http_info(self, request):
-        all_params = ['table_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_table_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4003,14 +3733,10 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.ListTablesRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.ListTablesResponse`
         """
-        return self.list_tables_with_http_info(request)
+        return self._list_tables_with_http_info(request)
 
-    def list_tables_with_http_info(self, request):
-        all_params = ['keyword', 'tag', 'offset', 'limit', 'order_by', 'order']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_tables_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4073,14 +3799,10 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.ShowTablePreviewRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.ShowTablePreviewResponse`
         """
-        return self.show_table_preview_with_http_info(request)
+        return self._show_table_preview_with_http_info(request)
 
-    def show_table_preview_with_http_info(self, request):
-        all_params = ['table_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_table_preview_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4133,14 +3855,10 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.ShowTableSchemaRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.ShowTableSchemaResponse`
         """
-        return self.show_table_schema_with_http_info(request)
+        return self._show_table_schema_with_http_info(request)
 
-    def show_table_schema_with_http_info(self, request):
-        all_params = ['table_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_table_schema_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

@@ -1,3 +1,430 @@
+# 3.1.39 2023-05-11
+
+### HuaweiCloud SDK AOS
+
+- _Features_
+  - Support the interface `ContinueDeployStack`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK CBR
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowVaultResourceInstances**
+    - changes of response param
+      - `* resources.resource_detail: list<Vault> -> object<InstancesResourceDetail>`
+  - **ListPolicies**
+    - changes of response param
+      - `+ policies.operation_definition.full_backup_interval`
+  - **CreatePolicy**
+    - changes of request param
+      - `+ policy.operation_definition.full_backup_interval`
+    - changes of response param
+      - `+ policy.operation_definition.full_backup_interval`
+  - **ShowPolicy**
+    - changes of response param
+      - `+ policy.operation_definition.full_backup_interval`
+  - **UpdatePolicy**
+    - changes of request param
+      - `+ policy.operation_definition.full_backup_interval`
+    - changes of response param
+      - `+ policy.operation_definition.full_backup_interval`
+  - **CreateVault**
+    - changes of request param
+      - `- vault.billing.extra_info`
+
+### HuaweiCloud SDK CBS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ExecuteGetFramsListByImagesId**
+    - changes of request param
+      - `+ offset`
+      - `+ limit`
+
+### HuaweiCloud SDK CloudPipeline
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListPipelineTemplates**
+    - changes of response param
+      - `+ total`
+      - `+ offset`
+      - `+ templates`
+      - `+ limit`
+      - `- is_system`
+      - `- is_show_source`
+      - `- create_time`
+      - `- icon`
+      - `- description`
+      - `- language`
+      - `- domain_id`
+      - `- is_collect`
+      - `- update_time`
+      - `- name`
+      - `- manifest_version`
+      - `- creator_id`
+      - `- updater_id`
+      - `- stages`
+      - `- creator_name`
+      - `- id`
+      - `- region`
+
+### HuaweiCloud SDK DGC
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ExportConnections**
+    - changes of request param
+      - `+ workspace`
+  - **ExportJob**
+    - changes of request param
+      - `+ workspace`
+  - **StopJob**
+    - changes of request param
+      - `+ workspace`
+  - **StopJobInstance**
+    - changes of request param
+      - `+ workspace`
+  - **RestoreJobInstance**
+    - changes of request param
+      - `+ workspace`
+  - **CancelScript**
+    - changes of request param
+      - `+ workspace`
+  - **DeleteConnction**
+    - changes of request param
+      - `+ workspace`
+  - **ShowConnection**
+    - changes of request param
+      - `+ workspace`
+  - **UpdateConnection**
+    - changes of request param
+      - `+ workspace`
+  - **ExportJobList**
+    - changes of request param
+      - `+ workspace`
+  - **ImportJob**
+    - changes of request param
+      - `+ workspace`
+  - **DeleteScript**
+    - changes of request param
+      - `+ workspace`
+  - **ShowScript**
+    - changes of request param
+      - `+ workspace`
+  - **UpdateScript**
+    - changes of request param
+      - `+ workspace`
+  - **ExecuteScript**
+    - changes of request param
+      - `+ workspace`
+  - **CreateResource**
+    - changes of request param
+      - `+ workspace`
+  - **DeleteResource**
+    - changes of request param
+      - `+ workspace`
+  - **ShowResource**
+    - changes of request param
+      - `+ workspace`
+  - **UpdateResource**
+    - changes of request param
+      - `+ workspace`
+  - **CreateConnection**
+    - changes of request param
+      - `+ workspace`
+  - **ListConnections**
+    - changes of request param
+      - `+ workspace`
+  - **ImportConnections**
+    - changes of request param
+      - `+ workspace`
+  - **ShowFileInfo**
+    - changes of request param
+      - `+ workspace`
+  - **StartJob**
+    - changes of request param
+      - `+ workspace`
+  - **RunOnce**
+    - changes of request param
+      - `+ workspace`
+  - **ShowJobStatus**
+    - changes of request param
+      - `+ workspace`
+  - **ListJobInstances**
+    - changes of request param
+      - `+ workspace`
+  - **ShowJobInstance**
+    - changes of request param
+      - `+ workspace`
+  - **ListSystemTasks**
+    - changes of request param
+      - `+ workspace`
+  - **CreateScript**
+    - changes of request param
+      - `+ workspace`
+  - **ListScripts**
+    - changes of request param
+      - `+ workspace`
+  - **ListScriptResults**
+    - changes of request param
+      - `+ workspace`
+  - **DeleteJob**
+    - changes of request param
+      - `+ workspace`
+  - **ShowJob**
+    - changes of request param
+      - `+ workspace`
+  - **UpdateJob**
+    - changes of request param
+      - `+ workspace`
+  - **CreateJob**
+    - changes of request param
+      - `+ workspace`
+  - **ListJobs**
+    - changes of request param
+      - `+ workspace`
+
+### HuaweiCloud SDK DRS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowMonitoringData**
+    - changes of response param
+      - `+ results.data_guard_minitor.migration_bytes_per_second`
+  - **BatchListJobDetails**
+    - changes of response param
+      - `+ results.data_transformation`
+      - `+ results.tags`
+
+### HuaweiCloud SDK ECS
+
+- _Features_
+  - Support the interface `NovaAttachInterface`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ReinstallServerWithoutCloudInit**
+    - changes of request param
+      - `+ os-reinstall.metadata`
+  - **ChangeServerOsWithoutCloudInit**
+    - changes of request param
+      - `+ os-change.metadata`
+  - **ReinstallServerWithCloudInit**
+    - changes of request param
+      - `+ os-reinstall.metadata.__system__encrypted`
+      - `+ os-reinstall.metadata.__system__cmkid`
+  - **ChangeServerOsWithCloudInit**
+    - changes of request param
+      - `+ os-change.metadata.__system__encrypted`
+      - `+ os-change.metadata.__system__cmkid`
+  - **CreateServers**
+    - changes of request param
+      - `+ server.root_volume.extendparam.__system__encrypted`
+      - `+ server.root_volume.extendparam.__system__cmkid`
+  - **CreatePostPaidServers**
+    - changes of request param
+      - `+ server.root_volume.extendparam.__system__encrypted`
+      - `+ server.root_volume.extendparam.__system__cmkid`
+
+### HuaweiCloud SDK eiHealth
+
+- _Features_
+  - Support the interfaces `CreateSynthesisTask`, `ShowSynthesisTaskResult`, `CreateCustomPropsTask`, `ShowCustomPropsTaskResult`
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateCpiTask**
+    - changes of request param
+      - `+ custom_props`
+  - **CreateGenerationTask**
+    - changes of request param
+      - `+ custom_props`
+  - **CreateOptimizationTask**
+    - changes of request param
+      - `+ custom_props`
+  - **ShowCpiTaskResult**
+    - changes of response param
+      - `+ task_data.custom_props`
+      - `+ result.custom_props`
+  - **ShowGenerationTaskResult**
+    - changes of response param
+      - `+ task_data.custom_props`
+      - `+ result.initial_dataset_size`
+      - `+ result.strong_constraints`
+      - `+ result.weak_constraints`
+      - `+ result.binding_site`
+      - `+ result.custom_props`
+  - **ShowOptimizationTaskResult**
+    - changes of response param
+      - `+ task_data.custom_props`
+      - `+ result.strong_constraints`
+      - `+ result.weak_constraints`
+      - `+ result.binding_site`
+      - `+ result.custom_props`
+
+### HuaweiCloud SDK GaussDB
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListGaussMySqlInstances**
+    - changes of request param
+      - `+ readonly_private_ip`
+      - `+ proxy_ip`
+    - changes of response param
+      - `+ instances.readonly_private_ips`
+      - `+ instances.proxy_ips`
+
+### HuaweiCloud SDK Image
+
+- _Features_
+  - Support the interfaces `CreateVideoTaggingMediaTask`, `ShowVideoTaggingMediaTask`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK IMS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListImages**
+    - changes of request param
+      - `+ __imagetype: enum value [market]`
+
+### HuaweiCloud SDK Live
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateRecordIndex**
+    - changes of response param
+      - `+ width`
+      - `- weight`
+  - **ListAreaDetail**
+    - changes of request param
+      - `* play_domains: required -> optional`
+
+### HuaweiCloud SDK LTS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **UpdateAomMappingRules**
+    - changes of request param
+      - `* body: object<AomMappingRequestInfo> -> object<UpdateAomMappingRequest>`
+
+### HuaweiCloud SDK MPC
+
+- _Features_
+  - Support the interfaces `ListEditingJobs`, `CreateEditingJobs`, `DeleteEditingJobs`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK OSM
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListOrderIncident**
+    - changes of request param
+      - `+ xCustomerId`
+    - changes of response param
+      - `* incidentInfoList.incidentTypeName: object -> string`
+
+### HuaweiCloud SDK RDS
+
+- _Features_
+  - Support the interfaces `UpdatePostgresqlDbUserComment`, `UpdatePostgresqlDatabase`, `DeletePostgresqlDbUser`, `DeletePostgresqlDatabase`
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreatePostgresqlDatabase**
+    - changes of request param
+      - `+ comment`
+  - **CreatePostgresqlDbUser**
+    - changes of request param
+      - `+ comment`
+  - **ListPostgresqlDatabases**
+    - changes of response param
+      - `+ databases.comment`
+  - **ListPostgresqlDbUserPaginated**
+    - changes of response param
+      - `+ users.comment`
+
+### HuaweiCloud SDK RMS
+
+- _Features_
+  - Support the interfaces `ShowAggregatePolicyStateComplianceSummary`, `ListAggregateComplianceByPolicyAssignment`, `ShowAggregateComplianceDetailsByPolicyAssignment`, `ShowAggregatePolicyAssignmentDetail`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK SFSTurbo
+
+- _Features_
+  - Support the following interfaces：
+    - `ShowFsDirQuota`
+    - `UpdateFsDirQuota`
+    - `CreateFsDirQuota`
+    - `DeleteFsDirQuota`
+    - `ShowFsDir`
+    - `CreateFsDir`
+    - `DeleteFsDir`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK UGO
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **RunSqlConversion**
+    - changes of request param
+      - `+ target_db_type: enum value [GaussDB Primary/Standby]`
+  - **ConfirmTargetDbType**
+    - changes of request param
+      - `- target_db_type: enum value [RDS for MySQL,GaussDB(for MySQL),RDS for PostgreSQL]`
+      - `- target_db_version: enum value [5.7,8.0,11,Enhanced Edition]`
+
 # 3.1.38 2023-04-27
 
 ### HuaweiCloud SDK MSGSMS

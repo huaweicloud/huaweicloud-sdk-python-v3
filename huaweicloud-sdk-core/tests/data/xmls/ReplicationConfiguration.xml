@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReplicationConfiguration>
+    <Agency>testAcy</Agency>
+    <Rule>
+        <ID>rule1</ID>
+        <Prefix>key-prefix</Prefix>
+        <Status>rule-status</Status>
+        <Destination>
+            <Bucket>targetbucketname</Bucket>
+        </Destination>
+    </Rule>
+</ReplicationConfiguration>

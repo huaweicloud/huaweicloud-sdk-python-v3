@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class CceClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(CceClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkcce.v3.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -54,14 +36,10 @@ class CceClient(Client):
         :type request: :class:`huaweicloudsdkcce.v3.AddNodeRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.AddNodeResponse`
         """
-        return self.add_node_with_http_info(request)
+        return self._add_node_with_http_info(request)
 
-    def add_node_with_http_info(self, request):
-        all_params = ['cluster_id', 'add_node_list']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _add_node_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -116,14 +94,10 @@ class CceClient(Client):
         :type request: :class:`huaweicloudsdkcce.v3.AwakeClusterRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.AwakeClusterResponse`
         """
-        return self.awake_cluster_with_http_info(request)
+        return self._awake_cluster_with_http_info(request)
 
-    def awake_cluster_with_http_info(self, request):
-        all_params = ['cluster_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _awake_cluster_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -178,14 +152,10 @@ class CceClient(Client):
         :type request: :class:`huaweicloudsdkcce.v3.ContinueUpgradeClusterTaskRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.ContinueUpgradeClusterTaskResponse`
         """
-        return self.continue_upgrade_cluster_task_with_http_info(request)
+        return self._continue_upgrade_cluster_task_with_http_info(request)
 
-    def continue_upgrade_cluster_task_with_http_info(self, request):
-        all_params = ['cluster_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _continue_upgrade_cluster_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -238,14 +208,10 @@ class CceClient(Client):
         :type request: :class:`huaweicloudsdkcce.v3.CreateAddonInstanceRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.CreateAddonInstanceResponse`
         """
-        return self.create_addon_instance_with_http_info(request)
+        return self._create_addon_instance_with_http_info(request)
 
-    def create_addon_instance_with_http_info(self, request):
-        all_params = ['create_addon_instance_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_addon_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -301,14 +267,10 @@ class CceClient(Client):
         :type request: :class:`huaweicloudsdkcce.v3.CreateCloudPersistentVolumeClaimsRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.CreateCloudPersistentVolumeClaimsResponse`
         """
-        return self.create_cloud_persistent_volume_claims_with_http_info(request)
+        return self._create_cloud_persistent_volume_claims_with_http_info(request)
 
-    def create_cloud_persistent_volume_claims_with_http_info(self, request):
-        all_params = ['namespace', 'create_cloud_persistent_volume_claims_request_body', 'x_cluster_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_cloud_persistent_volume_claims_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -369,14 +331,10 @@ class CceClient(Client):
         :type request: :class:`huaweicloudsdkcce.v3.CreateClusterRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.CreateClusterResponse`
         """
-        return self.create_cluster_with_http_info(request)
+        return self._create_cluster_with_http_info(request)
 
-    def create_cluster_with_http_info(self, request):
-        all_params = ['create_cluster_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_cluster_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -429,14 +387,10 @@ class CceClient(Client):
         :type request: :class:`huaweicloudsdkcce.v3.CreateKubernetesClusterCertRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.CreateKubernetesClusterCertResponse`
         """
-        return self.create_kubernetes_cluster_cert_with_http_info(request)
+        return self._create_kubernetes_cluster_cert_with_http_info(request)
 
-    def create_kubernetes_cluster_cert_with_http_info(self, request):
-        all_params = ['cluster_id', 'create_kubernetes_cluster_cert_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_kubernetes_cluster_cert_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -493,14 +447,10 @@ class CceClient(Client):
         :type request: :class:`huaweicloudsdkcce.v3.CreateNodeRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.CreateNodeResponse`
         """
-        return self.create_node_with_http_info(request)
+        return self._create_node_with_http_info(request)
 
-    def create_node_with_http_info(self, request):
-        all_params = ['cluster_id', 'create_node_request_body', 'nodepool_scale_up']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_node_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -564,14 +514,10 @@ class CceClient(Client):
         :type request: :class:`huaweicloudsdkcce.v3.CreateNodePoolRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.CreateNodePoolResponse`
         """
-        return self.create_node_pool_with_http_info(request)
+        return self._create_node_pool_with_http_info(request)
 
-    def create_node_pool_with_http_info(self, request):
-        all_params = ['cluster_id', 'create_node_pool_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_node_pool_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -626,14 +572,10 @@ class CceClient(Client):
         :type request: :class:`huaweicloudsdkcce.v3.DeleteAddonInstanceRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.DeleteAddonInstanceResponse`
         """
-        return self.delete_addon_instance_with_http_info(request)
+        return self._delete_addon_instance_with_http_info(request)
 
-    def delete_addon_instance_with_http_info(self, request):
-        all_params = ['id', 'cluster_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_addon_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -689,14 +631,10 @@ class CceClient(Client):
         :type request: :class:`huaweicloudsdkcce.v3.DeleteCloudPersistentVolumeClaimsRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.DeleteCloudPersistentVolumeClaimsResponse`
         """
-        return self.delete_cloud_persistent_volume_claims_with_http_info(request)
+        return self._delete_cloud_persistent_volume_claims_with_http_info(request)
 
-    def delete_cloud_persistent_volume_claims_with_http_info(self, request):
-        all_params = ['name', 'namespace', 'delete_volume', 'storage_type', 'x_cluster_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_cloud_persistent_volume_claims_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -758,14 +696,10 @@ class CceClient(Client):
         :type request: :class:`huaweicloudsdkcce.v3.DeleteClusterRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.DeleteClusterResponse`
         """
-        return self.delete_cluster_with_http_info(request)
+        return self._delete_cluster_with_http_info(request)
 
-    def delete_cluster_with_http_info(self, request):
-        all_params = ['cluster_id', 'delete_efs', 'delete_eni', 'delete_evs', 'delete_net', 'delete_obs', 'delete_sfs', 'delete_sfs30', 'tobedeleted']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_cluster_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -835,14 +769,10 @@ class CceClient(Client):
         :type request: :class:`huaweicloudsdkcce.v3.DeleteNodeRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.DeleteNodeResponse`
         """
-        return self.delete_node_with_http_info(request)
+        return self._delete_node_with_http_info(request)
 
-    def delete_node_with_http_info(self, request):
-        all_params = ['cluster_id', 'node_id', 'nodepool_scale_down']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_node_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -900,14 +830,10 @@ class CceClient(Client):
         :type request: :class:`huaweicloudsdkcce.v3.DeleteNodePoolRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.DeleteNodePoolResponse`
         """
-        return self.delete_node_pool_with_http_info(request)
+        return self._delete_node_pool_with_http_info(request)
 
-    def delete_node_pool_with_http_info(self, request):
-        all_params = ['cluster_id', 'nodepool_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_node_pool_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -962,14 +888,10 @@ class CceClient(Client):
         :type request: :class:`huaweicloudsdkcce.v3.HibernateClusterRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.HibernateClusterResponse`
         """
-        return self.hibernate_cluster_with_http_info(request)
+        return self._hibernate_cluster_with_http_info(request)
 
-    def hibernate_cluster_with_http_info(self, request):
-        all_params = ['cluster_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _hibernate_cluster_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1022,14 +944,10 @@ class CceClient(Client):
         :type request: :class:`huaweicloudsdkcce.v3.ListAddonInstancesRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.ListAddonInstancesResponse`
         """
-        return self.list_addon_instances_with_http_info(request)
+        return self._list_addon_instances_with_http_info(request)
 
-    def list_addon_instances_with_http_info(self, request):
-        all_params = ['cluster_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_addon_instances_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1082,14 +1000,10 @@ class CceClient(Client):
         :type request: :class:`huaweicloudsdkcce.v3.ListAddonTemplatesRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.ListAddonTemplatesResponse`
         """
-        return self.list_addon_templates_with_http_info(request)
+        return self._list_addon_templates_with_http_info(request)
 
-    def list_addon_templates_with_http_info(self, request):
-        all_params = ['addon_template_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_addon_templates_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1142,14 +1056,10 @@ class CceClient(Client):
         :type request: :class:`huaweicloudsdkcce.v3.ListClustersRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.ListClustersResponse`
         """
-        return self.list_clusters_with_http_info(request)
+        return self._list_clusters_with_http_info(request)
 
-    def list_clusters_with_http_info(self, request):
-        all_params = ['detail', 'status', 'type', 'version']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_clusters_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1210,14 +1120,10 @@ class CceClient(Client):
         :type request: :class:`huaweicloudsdkcce.v3.ListNodePoolsRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.ListNodePoolsResponse`
         """
-        return self.list_node_pools_with_http_info(request)
+        return self._list_node_pools_with_http_info(request)
 
-    def list_node_pools_with_http_info(self, request):
-        all_params = ['cluster_id', 'show_default_node_pool']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_node_pools_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1273,14 +1179,10 @@ class CceClient(Client):
         :type request: :class:`huaweicloudsdkcce.v3.ListNodesRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.ListNodesResponse`
         """
-        return self.list_nodes_with_http_info(request)
+        return self._list_nodes_with_http_info(request)
 
-    def list_nodes_with_http_info(self, request):
-        all_params = ['cluster_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_nodes_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1336,14 +1238,10 @@ class CceClient(Client):
         :type request: :class:`huaweicloudsdkcce.v3.MigrateNodeRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.MigrateNodeResponse`
         """
-        return self.migrate_node_with_http_info(request)
+        return self._migrate_node_with_http_info(request)
 
-    def migrate_node_with_http_info(self, request):
-        all_params = ['cluster_id', 'target_cluster_id', 'migrate_nodes_task']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _migrate_node_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1402,14 +1300,10 @@ class CceClient(Client):
         :type request: :class:`huaweicloudsdkcce.v3.PauseUpgradeClusterTaskRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.PauseUpgradeClusterTaskResponse`
         """
-        return self.pause_upgrade_cluster_task_with_http_info(request)
+        return self._pause_upgrade_cluster_task_with_http_info(request)
 
-    def pause_upgrade_cluster_task_with_http_info(self, request):
-        all_params = ['cluster_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _pause_upgrade_cluster_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1463,14 +1357,10 @@ class CceClient(Client):
         :type request: :class:`huaweicloudsdkcce.v3.RemoveNodeRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.RemoveNodeResponse`
         """
-        return self.remove_node_with_http_info(request)
+        return self._remove_node_with_http_info(request)
 
-    def remove_node_with_http_info(self, request):
-        all_params = ['cluster_id', 'remove_nodes_task']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _remove_node_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1526,14 +1416,10 @@ class CceClient(Client):
         :type request: :class:`huaweicloudsdkcce.v3.ResetNodeRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.ResetNodeResponse`
         """
-        return self.reset_node_with_http_info(request)
+        return self._reset_node_with_http_info(request)
 
-    def reset_node_with_http_info(self, request):
-        all_params = ['cluster_id', 'reset_node_list']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _reset_node_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1590,14 +1476,10 @@ class CceClient(Client):
         :type request: :class:`huaweicloudsdkcce.v3.RetryUpgradeClusterTaskRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.RetryUpgradeClusterTaskResponse`
         """
-        return self.retry_upgrade_cluster_task_with_http_info(request)
+        return self._retry_upgrade_cluster_task_with_http_info(request)
 
-    def retry_upgrade_cluster_task_with_http_info(self, request):
-        all_params = ['cluster_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _retry_upgrade_cluster_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1650,14 +1532,10 @@ class CceClient(Client):
         :type request: :class:`huaweicloudsdkcce.v3.ShowAddonInstanceRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.ShowAddonInstanceResponse`
         """
-        return self.show_addon_instance_with_http_info(request)
+        return self._show_addon_instance_with_http_info(request)
 
-    def show_addon_instance_with_http_info(self, request):
-        all_params = ['id', 'cluster_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_addon_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1713,14 +1591,10 @@ class CceClient(Client):
         :type request: :class:`huaweicloudsdkcce.v3.ShowClusterRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.ShowClusterResponse`
         """
-        return self.show_cluster_with_http_info(request)
+        return self._show_cluster_with_http_info(request)
 
-    def show_cluster_with_http_info(self, request):
-        all_params = ['cluster_id', 'detail']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_cluster_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1776,14 +1650,10 @@ class CceClient(Client):
         :type request: :class:`huaweicloudsdkcce.v3.ShowClusterEndpointsRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.ShowClusterEndpointsResponse`
         """
-        return self.show_cluster_endpoints_with_http_info(request)
+        return self._show_cluster_endpoints_with_http_info(request)
 
-    def show_cluster_endpoints_with_http_info(self, request):
-        all_params = ['cluster_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_cluster_endpoints_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1840,14 +1710,10 @@ class CceClient(Client):
         :type request: :class:`huaweicloudsdkcce.v3.ShowJobRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.ShowJobResponse`
         """
-        return self.show_job_with_http_info(request)
+        return self._show_job_with_http_info(request)
 
-    def show_job_with_http_info(self, request):
-        all_params = ['job_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1901,14 +1767,10 @@ class CceClient(Client):
         :type request: :class:`huaweicloudsdkcce.v3.ShowNodeRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.ShowNodeResponse`
         """
-        return self.show_node_with_http_info(request)
+        return self._show_node_with_http_info(request)
 
-    def show_node_with_http_info(self, request):
-        all_params = ['cluster_id', 'node_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_node_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1964,14 +1826,10 @@ class CceClient(Client):
         :type request: :class:`huaweicloudsdkcce.v3.ShowNodePoolRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.ShowNodePoolResponse`
         """
-        return self.show_node_pool_with_http_info(request)
+        return self._show_node_pool_with_http_info(request)
 
-    def show_node_pool_with_http_info(self, request):
-        all_params = ['cluster_id', 'nodepool_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_node_pool_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2026,14 +1884,10 @@ class CceClient(Client):
         :type request: :class:`huaweicloudsdkcce.v3.ShowQuotasRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.ShowQuotasResponse`
         """
-        return self.show_quotas_with_http_info(request)
+        return self._show_quotas_with_http_info(request)
 
-    def show_quotas_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_quotas_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2086,14 +1940,10 @@ class CceClient(Client):
         :type request: :class:`huaweicloudsdkcce.v3.ShowUpgradeClusterTaskRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.ShowUpgradeClusterTaskResponse`
         """
-        return self.show_upgrade_cluster_task_with_http_info(request)
+        return self._show_upgrade_cluster_task_with_http_info(request)
 
-    def show_upgrade_cluster_task_with_http_info(self, request):
-        all_params = ['cluster_id', 'task_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_upgrade_cluster_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2148,14 +1998,10 @@ class CceClient(Client):
         :type request: :class:`huaweicloudsdkcce.v3.UpdateAddonInstanceRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.UpdateAddonInstanceResponse`
         """
-        return self.update_addon_instance_with_http_info(request)
+        return self._update_addon_instance_with_http_info(request)
 
-    def update_addon_instance_with_http_info(self, request):
-        all_params = ['id', 'update_addon_instance_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_addon_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2211,14 +2057,10 @@ class CceClient(Client):
         :type request: :class:`huaweicloudsdkcce.v3.UpdateClusterRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.UpdateClusterResponse`
         """
-        return self.update_cluster_with_http_info(request)
+        return self._update_cluster_with_http_info(request)
 
-    def update_cluster_with_http_info(self, request):
-        all_params = ['cluster_id', 'update_cluster_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_cluster_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2274,14 +2116,10 @@ class CceClient(Client):
         :type request: :class:`huaweicloudsdkcce.v3.UpdateClusterEipRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.UpdateClusterEipResponse`
         """
-        return self.update_cluster_eip_with_http_info(request)
+        return self._update_cluster_eip_with_http_info(request)
 
-    def update_cluster_eip_with_http_info(self, request):
-        all_params = ['cluster_id', 'master_eip_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_cluster_eip_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2338,14 +2176,10 @@ class CceClient(Client):
         :type request: :class:`huaweicloudsdkcce.v3.UpdateNodeRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.UpdateNodeResponse`
         """
-        return self.update_node_with_http_info(request)
+        return self._update_node_with_http_info(request)
 
-    def update_node_with_http_info(self, request):
-        all_params = ['cluster_id', 'node_id', 'update_node_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_node_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2407,14 +2241,10 @@ class CceClient(Client):
         :type request: :class:`huaweicloudsdkcce.v3.UpdateNodePoolRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.UpdateNodePoolResponse`
         """
-        return self.update_node_pool_with_http_info(request)
+        return self._update_node_pool_with_http_info(request)
 
-    def update_node_pool_with_http_info(self, request):
-        all_params = ['cluster_id', 'nodepool_id', 'update_node_pool_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_node_pool_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2473,14 +2303,10 @@ class CceClient(Client):
         :type request: :class:`huaweicloudsdkcce.v3.UpgradeClusterRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.UpgradeClusterResponse`
         """
-        return self.upgrade_cluster_with_http_info(request)
+        return self._upgrade_cluster_with_http_info(request)
 
-    def upgrade_cluster_with_http_info(self, request):
-        all_params = ['cluster_id', 'upgrade_cluster_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _upgrade_cluster_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2535,14 +2361,10 @@ class CceClient(Client):
         :type request: :class:`huaweicloudsdkcce.v3.ShowVersionRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.ShowVersionResponse`
         """
-        return self.show_version_with_http_info(request)
+        return self._show_version_with_http_info(request)
 
-    def show_version_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_version_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class CloudtestClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(CloudtestClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkcloudtest.v1.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -53,14 +35,10 @@ class CloudtestClient(Client):
         :type request: :class:`huaweicloudsdkcloudtest.v1.BatchDeleteTestCaseRequest`
         :rtype: :class:`huaweicloudsdkcloudtest.v1.BatchDeleteTestCaseResponse`
         """
-        return self.batch_delete_test_case_with_http_info(request)
+        return self._batch_delete_test_case_with_http_info(request)
 
-    def batch_delete_test_case_with_http_info(self, request):
-        all_params = ['project_id', 'batch_delete_test_case_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_delete_test_case_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -115,14 +93,10 @@ class CloudtestClient(Client):
         :type request: :class:`huaweicloudsdkcloudtest.v1.CreatePlanRequest`
         :rtype: :class:`huaweicloudsdkcloudtest.v1.CreatePlanResponse`
         """
-        return self.create_plan_with_http_info(request)
+        return self._create_plan_with_http_info(request)
 
-    def create_plan_with_http_info(self, request):
-        all_params = ['project_id', 'create_plan_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_plan_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -177,14 +151,10 @@ class CloudtestClient(Client):
         :type request: :class:`huaweicloudsdkcloudtest.v1.CreateServiceRequest`
         :rtype: :class:`huaweicloudsdkcloudtest.v1.CreateServiceResponse`
         """
-        return self.create_service_with_http_info(request)
+        return self._create_service_with_http_info(request)
 
-    def create_service_with_http_info(self, request):
-        all_params = ['create_service_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_service_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -237,14 +207,10 @@ class CloudtestClient(Client):
         :type request: :class:`huaweicloudsdkcloudtest.v1.CreateTestCaseRequest`
         :rtype: :class:`huaweicloudsdkcloudtest.v1.CreateTestCaseResponse`
         """
-        return self.create_test_case_with_http_info(request)
+        return self._create_test_case_with_http_info(request)
 
-    def create_test_case_with_http_info(self, request):
-        all_params = ['project_id', 'create_test_case_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_test_case_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -299,14 +265,10 @@ class CloudtestClient(Client):
         :type request: :class:`huaweicloudsdkcloudtest.v1.CreateTestCaseInPlanRequest`
         :rtype: :class:`huaweicloudsdkcloudtest.v1.CreateTestCaseInPlanResponse`
         """
-        return self.create_test_case_in_plan_with_http_info(request)
+        return self._create_test_case_in_plan_with_http_info(request)
 
-    def create_test_case_in_plan_with_http_info(self, request):
-        all_params = ['project_id', 'plan_id', 'create_test_case_in_plan_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_test_case_in_plan_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -363,14 +325,10 @@ class CloudtestClient(Client):
         :type request: :class:`huaweicloudsdkcloudtest.v1.DeleteServiceRequest`
         :rtype: :class:`huaweicloudsdkcloudtest.v1.DeleteServiceResponse`
         """
-        return self.delete_service_with_http_info(request)
+        return self._delete_service_with_http_info(request)
 
-    def delete_service_with_http_info(self, request):
-        all_params = ['service_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_service_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -423,14 +381,10 @@ class CloudtestClient(Client):
         :type request: :class:`huaweicloudsdkcloudtest.v1.RunTestCaseRequest`
         :rtype: :class:`huaweicloudsdkcloudtest.v1.RunTestCaseResponse`
         """
-        return self.run_test_case_with_http_info(request)
+        return self._run_test_case_with_http_info(request)
 
-    def run_test_case_with_http_info(self, request):
-        all_params = ['project_id', 'run_test_case_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _run_test_case_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -485,14 +439,10 @@ class CloudtestClient(Client):
         :type request: :class:`huaweicloudsdkcloudtest.v1.ShowIssuesByPlanIdRequest`
         :rtype: :class:`huaweicloudsdkcloudtest.v1.ShowIssuesByPlanIdResponse`
         """
-        return self.show_issues_by_plan_id_with_http_info(request)
+        return self._show_issues_by_plan_id_with_http_info(request)
 
-    def show_issues_by_plan_id_with_http_info(self, request):
-        all_params = ['project_id', 'plan_id', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_issues_by_plan_id_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -551,14 +501,10 @@ class CloudtestClient(Client):
         :type request: :class:`huaweicloudsdkcloudtest.v1.ShowPlanJournalsRequest`
         :rtype: :class:`huaweicloudsdkcloudtest.v1.ShowPlanJournalsResponse`
         """
-        return self.show_plan_journals_with_http_info(request)
+        return self._show_plan_journals_with_http_info(request)
 
-    def show_plan_journals_with_http_info(self, request):
-        all_params = ['project_id', 'plan_id', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_plan_journals_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -617,14 +563,10 @@ class CloudtestClient(Client):
         :type request: :class:`huaweicloudsdkcloudtest.v1.ShowPlanListRequest`
         :rtype: :class:`huaweicloudsdkcloudtest.v1.ShowPlanListResponse`
         """
-        return self.show_plan_list_with_http_info(request)
+        return self._show_plan_list_with_http_info(request)
 
-    def show_plan_list_with_http_info(self, request):
-        all_params = ['project_id', 'offset', 'limit', 'name', 'current_stage']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_plan_list_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -685,14 +627,10 @@ class CloudtestClient(Client):
         :type request: :class:`huaweicloudsdkcloudtest.v1.ShowPlansRequest`
         :rtype: :class:`huaweicloudsdkcloudtest.v1.ShowPlansResponse`
         """
-        return self.show_plans_with_http_info(request)
+        return self._show_plans_with_http_info(request)
 
-    def show_plans_with_http_info(self, request):
-        all_params = ['project_id', 'offset', 'limit', 'name', 'current_stage']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_plans_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -753,14 +691,10 @@ class CloudtestClient(Client):
         :type request: :class:`huaweicloudsdkcloudtest.v1.ShowRegisterServiceRequest`
         :rtype: :class:`huaweicloudsdkcloudtest.v1.ShowRegisterServiceResponse`
         """
-        return self.show_register_service_with_http_info(request)
+        return self._show_register_service_with_http_info(request)
 
-    def show_register_service_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_register_service_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -811,14 +745,10 @@ class CloudtestClient(Client):
         :type request: :class:`huaweicloudsdkcloudtest.v1.ShowReportRequest`
         :rtype: :class:`huaweicloudsdkcloudtest.v1.ShowReportResponse`
         """
-        return self.show_report_with_http_info(request)
+        return self._show_report_with_http_info(request)
 
-    def show_report_with_http_info(self, request):
-        all_params = ['project_id', 'plan_id', 'show_report_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_report_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -875,14 +805,10 @@ class CloudtestClient(Client):
         :type request: :class:`huaweicloudsdkcloudtest.v1.ShowTestCaseDetailRequest`
         :rtype: :class:`huaweicloudsdkcloudtest.v1.ShowTestCaseDetailResponse`
         """
-        return self.show_test_case_detail_with_http_info(request)
+        return self._show_test_case_detail_with_http_info(request)
 
-    def show_test_case_detail_with_http_info(self, request):
-        all_params = ['project_id', 'testcase_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_test_case_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -937,14 +863,10 @@ class CloudtestClient(Client):
         :type request: :class:`huaweicloudsdkcloudtest.v1.ShowTestCaseDetailV2Request`
         :rtype: :class:`huaweicloudsdkcloudtest.v1.ShowTestCaseDetailV2Response`
         """
-        return self.show_test_case_detail_v2_with_http_info(request)
+        return self._show_test_case_detail_v2_with_http_info(request)
 
-    def show_test_case_detail_v2_with_http_info(self, request):
-        all_params = ['project_id', 'testcase_number']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_test_case_detail_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -999,14 +921,10 @@ class CloudtestClient(Client):
         :type request: :class:`huaweicloudsdkcloudtest.v1.UpdateServiceRequest`
         :rtype: :class:`huaweicloudsdkcloudtest.v1.UpdateServiceResponse`
         """
-        return self.update_service_with_http_info(request)
+        return self._update_service_with_http_info(request)
 
-    def update_service_with_http_info(self, request):
-        all_params = ['service_id', 'update_service_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_service_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1061,14 +979,10 @@ class CloudtestClient(Client):
         :type request: :class:`huaweicloudsdkcloudtest.v1.UpdateTestCaseRequest`
         :rtype: :class:`huaweicloudsdkcloudtest.v1.UpdateTestCaseResponse`
         """
-        return self.update_test_case_with_http_info(request)
+        return self._update_test_case_with_http_info(request)
 
-    def update_test_case_with_http_info(self, request):
-        all_params = ['project_id', 'testcase_id', 'update_test_case_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_test_case_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1125,14 +1039,10 @@ class CloudtestClient(Client):
         :type request: :class:`huaweicloudsdkcloudtest.v1.UpdateTestCaseResultRequest`
         :rtype: :class:`huaweicloudsdkcloudtest.v1.UpdateTestCaseResultResponse`
         """
-        return self.update_test_case_result_with_http_info(request)
+        return self._update_test_case_result_with_http_info(request)
 
-    def update_test_case_result_with_http_info(self, request):
-        all_params = ['project_id', 'update_test_case_result_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_test_case_result_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1187,14 +1097,10 @@ class CloudtestClient(Client):
         :type request: :class:`huaweicloudsdkcloudtest.v1.CreateApiTestSuiteByRepoFileRequest`
         :rtype: :class:`huaweicloudsdkcloudtest.v1.CreateApiTestSuiteByRepoFileResponse`
         """
-        return self.create_api_test_suite_by_repo_file_with_http_info(request)
+        return self._create_api_test_suite_by_repo_file_with_http_info(request)
 
-    def create_api_test_suite_by_repo_file_with_http_info(self, request):
-        all_params = ['project_id', 'create_api_test_suite_by_repo_file_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_api_test_suite_by_repo_file_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1249,14 +1155,10 @@ class CloudtestClient(Client):
         :type request: :class:`huaweicloudsdkcloudtest.v1.ListEnvironmentsRequest`
         :rtype: :class:`huaweicloudsdkcloudtest.v1.ListEnvironmentsResponse`
         """
-        return self.list_environments_with_http_info(request)
+        return self._list_environments_with_http_info(request)
 
-    def list_environments_with_http_info(self, request):
-        all_params = ['project_id', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_environments_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

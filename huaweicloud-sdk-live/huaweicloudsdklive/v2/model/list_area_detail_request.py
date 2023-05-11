@@ -1,9 +1,6 @@
 # coding: utf-8
 
-import re
 import six
-
-
 
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
@@ -54,7 +51,7 @@ class ListAreaDetailRequest:
         :type start_time: str
         :param end_time: 查询结束时间。日期格式按照ISO8601表示法，并使用UTC时间。  格式为：YYYY-MM-DDThh:mm:ssZ。最大查询跨度1天，最大查询周期90天。 
         :type end_time: str
-        :param play_domains: 需查询的播放域名列表，最多支持查询15个域名。 
+        :param play_domains: 需查询的播放域名列表，最多支持查询100个域名。 
         :type play_domains: list[str]
         :param app: 需查询的app。 
         :type app: str
@@ -88,7 +85,8 @@ class ListAreaDetailRequest:
 
         self.start_time = start_time
         self.end_time = end_time
-        self.play_domains = play_domains
+        if play_domains is not None:
+            self.play_domains = play_domains
         if app is not None:
             self.app = app
         if stream is not None:
@@ -150,7 +148,7 @@ class ListAreaDetailRequest:
     def play_domains(self):
         """Gets the play_domains of this ListAreaDetailRequest.
 
-        需查询的播放域名列表，最多支持查询15个域名。 
+        需查询的播放域名列表，最多支持查询100个域名。 
 
         :return: The play_domains of this ListAreaDetailRequest.
         :rtype: list[str]
@@ -161,7 +159,7 @@ class ListAreaDetailRequest:
     def play_domains(self, play_domains):
         """Sets the play_domains of this ListAreaDetailRequest.
 
-        需查询的播放域名列表，最多支持查询15个域名。 
+        需查询的播放域名列表，最多支持查询100个域名。 
 
         :param play_domains: The play_domains of this ListAreaDetailRequest.
         :type play_domains: list[str]

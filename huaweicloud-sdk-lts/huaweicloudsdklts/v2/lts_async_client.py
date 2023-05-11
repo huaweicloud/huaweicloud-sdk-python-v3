@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class LtsAsyncClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(LtsAsyncClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdklts.v2.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -54,14 +36,10 @@ class LtsAsyncClient(Client):
         :type request: :class:`huaweicloudsdklts.v2.CreateAccessConfigRequest`
         :rtype: :class:`huaweicloudsdklts.v2.CreateAccessConfigResponse`
         """
-        return self.create_access_config_with_http_info(request)
+        return self._create_access_config_with_http_info(request)
 
-    def create_access_config_with_http_info(self, request):
-        all_params = ['create_access_config_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_access_config_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -115,14 +93,10 @@ class LtsAsyncClient(Client):
         :type request: :class:`huaweicloudsdklts.v2.CreateDashBoardRequest`
         :rtype: :class:`huaweicloudsdklts.v2.CreateDashBoardResponse`
         """
-        return self.create_dash_board_with_http_info(request)
+        return self._create_dash_board_with_http_info(request)
 
-    def create_dash_board_with_http_info(self, request):
-        all_params = ['create_dash_board_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_dash_board_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -176,14 +150,10 @@ class LtsAsyncClient(Client):
         :type request: :class:`huaweicloudsdklts.v2.CreateDashboardGroupRequest`
         :rtype: :class:`huaweicloudsdklts.v2.CreateDashboardGroupResponse`
         """
-        return self.create_dashboard_group_with_http_info(request)
+        return self._create_dashboard_group_with_http_info(request)
 
-    def create_dashboard_group_with_http_info(self, request):
-        all_params = ['create_dashboard_group']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_dashboard_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -237,14 +207,10 @@ class LtsAsyncClient(Client):
         :type request: :class:`huaweicloudsdklts.v2.CreateHostGroupRequest`
         :rtype: :class:`huaweicloudsdklts.v2.CreateHostGroupResponse`
         """
-        return self.create_host_group_with_http_info(request)
+        return self._create_host_group_with_http_info(request)
 
-    def create_host_group_with_http_info(self, request):
-        all_params = ['create_host_group_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_host_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -298,14 +264,10 @@ class LtsAsyncClient(Client):
         :type request: :class:`huaweicloudsdklts.v2.CreateKeywordsAlarmRuleRequest`
         :rtype: :class:`huaweicloudsdklts.v2.CreateKeywordsAlarmRuleResponse`
         """
-        return self.create_keywords_alarm_rule_with_http_info(request)
+        return self._create_keywords_alarm_rule_with_http_info(request)
 
-    def create_keywords_alarm_rule_with_http_info(self, request):
-        all_params = ['create_keywords_alarm_rule_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_keywords_alarm_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -359,14 +321,10 @@ class LtsAsyncClient(Client):
         :type request: :class:`huaweicloudsdklts.v2.CreateLogDumpObsRequest`
         :rtype: :class:`huaweicloudsdklts.v2.CreateLogDumpObsResponse`
         """
-        return self.create_log_dump_obs_with_http_info(request)
+        return self._create_log_dump_obs_with_http_info(request)
 
-    def create_log_dump_obs_with_http_info(self, request):
-        all_params = ['create_log_dump_obs_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_log_dump_obs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -420,14 +378,10 @@ class LtsAsyncClient(Client):
         :type request: :class:`huaweicloudsdklts.v2.CreateLogGroupRequest`
         :rtype: :class:`huaweicloudsdklts.v2.CreateLogGroupResponse`
         """
-        return self.create_log_group_with_http_info(request)
+        return self._create_log_group_with_http_info(request)
 
-    def create_log_group_with_http_info(self, request):
-        all_params = ['create_log_group_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_log_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -481,14 +435,10 @@ class LtsAsyncClient(Client):
         :type request: :class:`huaweicloudsdklts.v2.CreateLogStreamRequest`
         :rtype: :class:`huaweicloudsdklts.v2.CreateLogStreamResponse`
         """
-        return self.create_log_stream_with_http_info(request)
+        return self._create_log_stream_with_http_info(request)
 
-    def create_log_stream_with_http_info(self, request):
-        all_params = ['log_group_id', 'create_log_stream_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_log_stream_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -544,14 +494,10 @@ class LtsAsyncClient(Client):
         :type request: :class:`huaweicloudsdklts.v2.CreateNotificationTemplateRequest`
         :rtype: :class:`huaweicloudsdklts.v2.CreateNotificationTemplateResponse`
         """
-        return self.create_notification_template_with_http_info(request)
+        return self._create_notification_template_with_http_info(request)
 
-    def create_notification_template_with_http_info(self, request):
-        all_params = ['domain_id', 'create_notification_template_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_notification_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -607,14 +553,10 @@ class LtsAsyncClient(Client):
         :type request: :class:`huaweicloudsdklts.v2.CreateSearchCriteriasRequest`
         :rtype: :class:`huaweicloudsdklts.v2.CreateSearchCriteriasResponse`
         """
-        return self.create_search_criterias_with_http_info(request)
+        return self._create_search_criterias_with_http_info(request)
 
-    def create_search_criterias_with_http_info(self, request):
-        all_params = ['group_id', 'topic_id', 'create_search_criterias_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_search_criterias_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -672,14 +614,10 @@ class LtsAsyncClient(Client):
         :type request: :class:`huaweicloudsdklts.v2.CreateStructConfigRequest`
         :rtype: :class:`huaweicloudsdklts.v2.CreateStructConfigResponse`
         """
-        return self.create_struct_config_with_http_info(request)
+        return self._create_struct_config_with_http_info(request)
 
-    def create_struct_config_with_http_info(self, request):
-        all_params = ['create_struct_config_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_struct_config_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -733,14 +671,10 @@ class LtsAsyncClient(Client):
         :type request: :class:`huaweicloudsdklts.v2.CreateStructTemplateRequest`
         :rtype: :class:`huaweicloudsdklts.v2.CreateStructTemplateResponse`
         """
-        return self.create_struct_template_with_http_info(request)
+        return self._create_struct_template_with_http_info(request)
 
-    def create_struct_template_with_http_info(self, request):
-        all_params = ['create_struct_template_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_struct_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -794,14 +728,10 @@ class LtsAsyncClient(Client):
         :type request: :class:`huaweicloudsdklts.v2.CreateTagsRequest`
         :rtype: :class:`huaweicloudsdklts.v2.CreateTagsResponse`
         """
-        return self.create_tags_with_http_info(request)
+        return self._create_tags_with_http_info(request)
 
-    def create_tags_with_http_info(self, request):
-        all_params = ['resource_type', 'resource_id', 'create_tags']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -859,14 +789,10 @@ class LtsAsyncClient(Client):
         :type request: :class:`huaweicloudsdklts.v2.CreateTransferRequest`
         :rtype: :class:`huaweicloudsdklts.v2.CreateTransferResponse`
         """
-        return self.create_transfer_with_http_info(request)
+        return self._create_transfer_with_http_info(request)
 
-    def create_transfer_with_http_info(self, request):
-        all_params = ['create_transfer_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_transfer_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -920,14 +846,10 @@ class LtsAsyncClient(Client):
         :type request: :class:`huaweicloudsdklts.v2.CreatefavoriteRequest`
         :rtype: :class:`huaweicloudsdklts.v2.CreatefavoriteResponse`
         """
-        return self.createfavorite_with_http_info(request)
+        return self._createfavorite_with_http_info(request)
 
-    def createfavorite_with_http_info(self, request):
-        all_params = ['request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _createfavorite_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -981,14 +903,10 @@ class LtsAsyncClient(Client):
         :type request: :class:`huaweicloudsdklts.v2.DeleteAccessConfigRequest`
         :rtype: :class:`huaweicloudsdklts.v2.DeleteAccessConfigResponse`
         """
-        return self.delete_access_config_with_http_info(request)
+        return self._delete_access_config_with_http_info(request)
 
-    def delete_access_config_with_http_info(self, request):
-        all_params = ['delete_access_config_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_access_config_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1042,14 +960,10 @@ class LtsAsyncClient(Client):
         :type request: :class:`huaweicloudsdklts.v2.DeleteActiveAlarmsRequest`
         :rtype: :class:`huaweicloudsdklts.v2.DeleteActiveAlarmsResponse`
         """
-        return self.delete_active_alarms_with_http_info(request)
+        return self._delete_active_alarms_with_http_info(request)
 
-    def delete_active_alarms_with_http_info(self, request):
-        all_params = ['domain_id', 'delete_active_alarms_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_active_alarms_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1105,14 +1019,10 @@ class LtsAsyncClient(Client):
         :type request: :class:`huaweicloudsdklts.v2.DeleteHostGroupRequest`
         :rtype: :class:`huaweicloudsdklts.v2.DeleteHostGroupResponse`
         """
-        return self.delete_host_group_with_http_info(request)
+        return self._delete_host_group_with_http_info(request)
 
-    def delete_host_group_with_http_info(self, request):
-        all_params = ['delete_host_group_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_host_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1166,14 +1076,10 @@ class LtsAsyncClient(Client):
         :type request: :class:`huaweicloudsdklts.v2.DeleteKeywordsAlarmRuleRequest`
         :rtype: :class:`huaweicloudsdklts.v2.DeleteKeywordsAlarmRuleResponse`
         """
-        return self.delete_keywords_alarm_rule_with_http_info(request)
+        return self._delete_keywords_alarm_rule_with_http_info(request)
 
-    def delete_keywords_alarm_rule_with_http_info(self, request):
-        all_params = ['keywords_alarm_rule_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_keywords_alarm_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1227,14 +1133,10 @@ class LtsAsyncClient(Client):
         :type request: :class:`huaweicloudsdklts.v2.DeleteLogGroupRequest`
         :rtype: :class:`huaweicloudsdklts.v2.DeleteLogGroupResponse`
         """
-        return self.delete_log_group_with_http_info(request)
+        return self._delete_log_group_with_http_info(request)
 
-    def delete_log_group_with_http_info(self, request):
-        all_params = ['log_group_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_log_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1288,14 +1190,10 @@ class LtsAsyncClient(Client):
         :type request: :class:`huaweicloudsdklts.v2.DeleteLogStreamRequest`
         :rtype: :class:`huaweicloudsdklts.v2.DeleteLogStreamResponse`
         """
-        return self.delete_log_stream_with_http_info(request)
+        return self._delete_log_stream_with_http_info(request)
 
-    def delete_log_stream_with_http_info(self, request):
-        all_params = ['log_group_id', 'log_stream_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_log_stream_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1351,14 +1249,10 @@ class LtsAsyncClient(Client):
         :type request: :class:`huaweicloudsdklts.v2.DeleteNotificationTemplateRequest`
         :rtype: :class:`huaweicloudsdklts.v2.DeleteNotificationTemplateResponse`
         """
-        return self.delete_notification_template_with_http_info(request)
+        return self._delete_notification_template_with_http_info(request)
 
-    def delete_notification_template_with_http_info(self, request):
-        all_params = ['domain_id', 'delete_notification_template_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_notification_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1414,14 +1308,10 @@ class LtsAsyncClient(Client):
         :type request: :class:`huaweicloudsdklts.v2.DeleteSearchCriteriasRequest`
         :rtype: :class:`huaweicloudsdklts.v2.DeleteSearchCriteriasResponse`
         """
-        return self.delete_search_criterias_with_http_info(request)
+        return self._delete_search_criterias_with_http_info(request)
 
-    def delete_search_criterias_with_http_info(self, request):
-        all_params = ['group_id', 'topic_id', 'delete_search_criterias']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_search_criterias_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1479,14 +1369,10 @@ class LtsAsyncClient(Client):
         :type request: :class:`huaweicloudsdklts.v2.DeleteStructTemplateRequest`
         :rtype: :class:`huaweicloudsdklts.v2.DeleteStructTemplateResponse`
         """
-        return self.delete_struct_template_with_http_info(request)
+        return self._delete_struct_template_with_http_info(request)
 
-    def delete_struct_template_with_http_info(self, request):
-        all_params = ['delete_struct_template_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_struct_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1540,14 +1426,10 @@ class LtsAsyncClient(Client):
         :type request: :class:`huaweicloudsdklts.v2.DeleteTransferRequest`
         :rtype: :class:`huaweicloudsdklts.v2.DeleteTransferResponse`
         """
-        return self.delete_transfer_with_http_info(request)
+        return self._delete_transfer_with_http_info(request)
 
-    def delete_transfer_with_http_info(self, request):
-        all_params = ['log_transfer_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_transfer_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1601,14 +1483,10 @@ class LtsAsyncClient(Client):
         :type request: :class:`huaweicloudsdklts.v2.DeletefavoriteRequest`
         :rtype: :class:`huaweicloudsdklts.v2.DeletefavoriteResponse`
         """
-        return self.deletefavorite_with_http_info(request)
+        return self._deletefavorite_with_http_info(request)
 
-    def deletefavorite_with_http_info(self, request):
-        all_params = ['fav_res_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _deletefavorite_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1662,14 +1540,10 @@ class LtsAsyncClient(Client):
         :type request: :class:`huaweicloudsdklts.v2.DisableLogCollectionRequest`
         :rtype: :class:`huaweicloudsdklts.v2.DisableLogCollectionResponse`
         """
-        return self.disable_log_collection_with_http_info(request)
+        return self._disable_log_collection_with_http_info(request)
 
-    def disable_log_collection_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _disable_log_collection_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1721,14 +1595,10 @@ class LtsAsyncClient(Client):
         :type request: :class:`huaweicloudsdklts.v2.EnableLogCollectionRequest`
         :rtype: :class:`huaweicloudsdklts.v2.EnableLogCollectionResponse`
         """
-        return self.enable_log_collection_with_http_info(request)
+        return self._enable_log_collection_with_http_info(request)
 
-    def enable_log_collection_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _enable_log_collection_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1780,14 +1650,10 @@ class LtsAsyncClient(Client):
         :type request: :class:`huaweicloudsdklts.v2.ListAccessConfigRequest`
         :rtype: :class:`huaweicloudsdklts.v2.ListAccessConfigResponse`
         """
-        return self.list_access_config_with_http_info(request)
+        return self._list_access_config_with_http_info(request)
 
-    def list_access_config_with_http_info(self, request):
-        all_params = ['list_access_config_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_access_config_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1841,14 +1707,10 @@ class LtsAsyncClient(Client):
         :type request: :class:`huaweicloudsdklts.v2.ListActiveOrHistoryAlarmsRequest`
         :rtype: :class:`huaweicloudsdklts.v2.ListActiveOrHistoryAlarmsResponse`
         """
-        return self.list_active_or_history_alarms_with_http_info(request)
+        return self._list_active_or_history_alarms_with_http_info(request)
 
-    def list_active_or_history_alarms_with_http_info(self, request):
-        all_params = ['domain_id', 'type', 'list_active_or_history_alarms_request_body', 'marker', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_active_or_history_alarms_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1910,14 +1772,10 @@ class LtsAsyncClient(Client):
         :type request: :class:`huaweicloudsdklts.v2.ListBreifStructTemplateRequest`
         :rtype: :class:`huaweicloudsdklts.v2.ListBreifStructTemplateResponse`
         """
-        return self.list_breif_struct_template_with_http_info(request)
+        return self._list_breif_struct_template_with_http_info(request)
 
-    def list_breif_struct_template_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_breif_struct_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1969,14 +1827,10 @@ class LtsAsyncClient(Client):
         :type request: :class:`huaweicloudsdklts.v2.ListChartsRequest`
         :rtype: :class:`huaweicloudsdklts.v2.ListChartsResponse`
         """
-        return self.list_charts_with_http_info(request)
+        return self._list_charts_with_http_info(request)
 
-    def list_charts_with_http_info(self, request):
-        all_params = ['log_group_id', 'log_stream_id', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_charts_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2036,14 +1890,10 @@ class LtsAsyncClient(Client):
         :type request: :class:`huaweicloudsdklts.v2.ListCriteriasRequest`
         :rtype: :class:`huaweicloudsdklts.v2.ListCriteriasResponse`
         """
-        return self.list_criterias_with_http_info(request)
+        return self._list_criterias_with_http_info(request)
 
-    def list_criterias_with_http_info(self, request):
-        all_params = ['group_id', 'topic_id', 'search_type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_criterias_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2101,14 +1951,10 @@ class LtsAsyncClient(Client):
         :type request: :class:`huaweicloudsdklts.v2.ListHistorySqlRequest`
         :rtype: :class:`huaweicloudsdklts.v2.ListHistorySqlResponse`
         """
-        return self.list_history_sql_with_http_info(request)
+        return self._list_history_sql_with_http_info(request)
 
-    def list_history_sql_with_http_info(self, request):
-        all_params = ['log_group_id', 'log_stream_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_history_sql_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2164,14 +2010,10 @@ class LtsAsyncClient(Client):
         :type request: :class:`huaweicloudsdklts.v2.ListHostRequest`
         :rtype: :class:`huaweicloudsdklts.v2.ListHostResponse`
         """
-        return self.list_host_with_http_info(request)
+        return self._list_host_with_http_info(request)
 
-    def list_host_with_http_info(self, request):
-        all_params = ['list_host_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_host_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2225,14 +2067,10 @@ class LtsAsyncClient(Client):
         :type request: :class:`huaweicloudsdklts.v2.ListHostGroupRequest`
         :rtype: :class:`huaweicloudsdklts.v2.ListHostGroupResponse`
         """
-        return self.list_host_group_with_http_info(request)
+        return self._list_host_group_with_http_info(request)
 
-    def list_host_group_with_http_info(self, request):
-        all_params = ['list_host_group_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_host_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2286,14 +2124,10 @@ class LtsAsyncClient(Client):
         :type request: :class:`huaweicloudsdklts.v2.ListKeywordsAlarmRulesRequest`
         :rtype: :class:`huaweicloudsdklts.v2.ListKeywordsAlarmRulesResponse`
         """
-        return self.list_keywords_alarm_rules_with_http_info(request)
+        return self._list_keywords_alarm_rules_with_http_info(request)
 
-    def list_keywords_alarm_rules_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_keywords_alarm_rules_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2345,14 +2179,10 @@ class LtsAsyncClient(Client):
         :type request: :class:`huaweicloudsdklts.v2.ListLogGroupsRequest`
         :rtype: :class:`huaweicloudsdklts.v2.ListLogGroupsResponse`
         """
-        return self.list_log_groups_with_http_info(request)
+        return self._list_log_groups_with_http_info(request)
 
-    def list_log_groups_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_log_groups_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2404,14 +2234,10 @@ class LtsAsyncClient(Client):
         :type request: :class:`huaweicloudsdklts.v2.ListLogHistogramRequest`
         :rtype: :class:`huaweicloudsdklts.v2.ListLogHistogramResponse`
         """
-        return self.list_log_histogram_with_http_info(request)
+        return self._list_log_histogram_with_http_info(request)
 
-    def list_log_histogram_with_http_info(self, request):
-        all_params = ['list_log_histogram_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_log_histogram_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2465,14 +2291,10 @@ class LtsAsyncClient(Client):
         :type request: :class:`huaweicloudsdklts.v2.ListLogStreamRequest`
         :rtype: :class:`huaweicloudsdklts.v2.ListLogStreamResponse`
         """
-        return self.list_log_stream_with_http_info(request)
+        return self._list_log_stream_with_http_info(request)
 
-    def list_log_stream_with_http_info(self, request):
-        all_params = ['log_group_id', 'tag']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_log_stream_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2528,14 +2350,10 @@ class LtsAsyncClient(Client):
         :type request: :class:`huaweicloudsdklts.v2.ListLogStreamsRequest`
         :rtype: :class:`huaweicloudsdklts.v2.ListLogStreamsResponse`
         """
-        return self.list_log_streams_with_http_info(request)
+        return self._list_log_streams_with_http_info(request)
 
-    def list_log_streams_with_http_info(self, request):
-        all_params = ['log_group_name', 'log_stream_name', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_log_streams_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2595,14 +2413,10 @@ class LtsAsyncClient(Client):
         :type request: :class:`huaweicloudsdklts.v2.ListLogsRequest`
         :rtype: :class:`huaweicloudsdklts.v2.ListLogsResponse`
         """
-        return self.list_logs_with_http_info(request)
+        return self._list_logs_with_http_info(request)
 
-    def list_logs_with_http_info(self, request):
-        all_params = ['log_group_id', 'log_stream_id', 'list_logs_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_logs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2660,14 +2474,10 @@ class LtsAsyncClient(Client):
         :type request: :class:`huaweicloudsdklts.v2.ListNotificationTemplateRequest`
         :rtype: :class:`huaweicloudsdklts.v2.ListNotificationTemplateResponse`
         """
-        return self.list_notification_template_with_http_info(request)
+        return self._list_notification_template_with_http_info(request)
 
-    def list_notification_template_with_http_info(self, request):
-        all_params = ['domain_id', 'preview_notification_template_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_notification_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2723,14 +2533,10 @@ class LtsAsyncClient(Client):
         :type request: :class:`huaweicloudsdklts.v2.ListNotificationTemplatesRequest`
         :rtype: :class:`huaweicloudsdklts.v2.ListNotificationTemplatesResponse`
         """
-        return self.list_notification_templates_with_http_info(request)
+        return self._list_notification_templates_with_http_info(request)
 
-    def list_notification_templates_with_http_info(self, request):
-        all_params = ['domain_id', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_notification_templates_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2788,14 +2594,10 @@ class LtsAsyncClient(Client):
         :type request: :class:`huaweicloudsdklts.v2.ListNotificationTopicsRequest`
         :rtype: :class:`huaweicloudsdklts.v2.ListNotificationTopicsResponse`
         """
-        return self.list_notification_topics_with_http_info(request)
+        return self._list_notification_topics_with_http_info(request)
 
-    def list_notification_topics_with_http_info(self, request):
-        all_params = ['offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_notification_topics_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2851,14 +2653,10 @@ class LtsAsyncClient(Client):
         :type request: :class:`huaweicloudsdklts.v2.ListQueryAllSearchCriteriasRequest`
         :rtype: :class:`huaweicloudsdklts.v2.ListQueryAllSearchCriteriasResponse`
         """
-        return self.list_query_all_search_criterias_with_http_info(request)
+        return self._list_query_all_search_criterias_with_http_info(request)
 
-    def list_query_all_search_criterias_with_http_info(self, request):
-        all_params = ['group_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_query_all_search_criterias_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2912,14 +2710,10 @@ class LtsAsyncClient(Client):
         :type request: :class:`huaweicloudsdklts.v2.ListQueryStructuredLogsRequest`
         :rtype: :class:`huaweicloudsdklts.v2.ListQueryStructuredLogsResponse`
         """
-        return self.list_query_structured_logs_with_http_info(request)
+        return self._list_query_structured_logs_with_http_info(request)
 
-    def list_query_structured_logs_with_http_info(self, request):
-        all_params = ['log_group_id', 'log_stream_id', 'list_query_structured_logs_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_query_structured_logs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2977,14 +2771,10 @@ class LtsAsyncClient(Client):
         :type request: :class:`huaweicloudsdklts.v2.ListStructTemplateRequest`
         :rtype: :class:`huaweicloudsdklts.v2.ListStructTemplateResponse`
         """
-        return self.list_struct_template_with_http_info(request)
+        return self._list_struct_template_with_http_info(request)
 
-    def list_struct_template_with_http_info(self, request):
-        all_params = ['id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_struct_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3038,14 +2828,10 @@ class LtsAsyncClient(Client):
         :type request: :class:`huaweicloudsdklts.v2.ListStructuredLogsWithTimeRangeRequest`
         :rtype: :class:`huaweicloudsdklts.v2.ListStructuredLogsWithTimeRangeResponse`
         """
-        return self.list_structured_logs_with_time_range_with_http_info(request)
+        return self._list_structured_logs_with_time_range_with_http_info(request)
 
-    def list_structured_logs_with_time_range_with_http_info(self, request):
-        all_params = ['log_stream_id', 'list_structured_logs_with_time_range_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_structured_logs_with_time_range_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3101,14 +2887,10 @@ class LtsAsyncClient(Client):
         :type request: :class:`huaweicloudsdklts.v2.ListTimeLineTrafficStatisticsRequest`
         :rtype: :class:`huaweicloudsdklts.v2.ListTimeLineTrafficStatisticsResponse`
         """
-        return self.list_time_line_traffic_statistics_with_http_info(request)
+        return self._list_time_line_traffic_statistics_with_http_info(request)
 
-    def list_time_line_traffic_statistics_with_http_info(self, request):
-        all_params = ['timezone', 'timeline_traffic_statistics_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_time_line_traffic_statistics_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3164,14 +2946,10 @@ class LtsAsyncClient(Client):
         :type request: :class:`huaweicloudsdklts.v2.ListTopnTrafficStatisticsRequest`
         :rtype: :class:`huaweicloudsdklts.v2.ListTopnTrafficStatisticsResponse`
         """
-        return self.list_topn_traffic_statistics_with_http_info(request)
+        return self._list_topn_traffic_statistics_with_http_info(request)
 
-    def list_topn_traffic_statistics_with_http_info(self, request):
-        all_params = ['update_demo_info_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_topn_traffic_statistics_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3225,14 +3003,10 @@ class LtsAsyncClient(Client):
         :type request: :class:`huaweicloudsdklts.v2.ListTransfersRequest`
         :rtype: :class:`huaweicloudsdklts.v2.ListTransfersResponse`
         """
-        return self.list_transfers_with_http_info(request)
+        return self._list_transfers_with_http_info(request)
 
-    def list_transfers_with_http_info(self, request):
-        all_params = ['log_transfer_type', 'log_group_name', 'log_stream_name', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_transfers_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3294,14 +3068,10 @@ class LtsAsyncClient(Client):
         :type request: :class:`huaweicloudsdklts.v2.RegisterDmsKafkaInstanceRequest`
         :rtype: :class:`huaweicloudsdklts.v2.RegisterDmsKafkaInstanceResponse`
         """
-        return self.register_dms_kafka_instance_with_http_info(request)
+        return self._register_dms_kafka_instance_with_http_info(request)
 
-    def register_dms_kafka_instance_with_http_info(self, request):
-        all_params = ['register_dms_kafka_instance_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _register_dms_kafka_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3355,14 +3125,10 @@ class LtsAsyncClient(Client):
         :type request: :class:`huaweicloudsdklts.v2.ShowNotificationTemplateRequest`
         :rtype: :class:`huaweicloudsdklts.v2.ShowNotificationTemplateResponse`
         """
-        return self.show_notification_template_with_http_info(request)
+        return self._show_notification_template_with_http_info(request)
 
-    def show_notification_template_with_http_info(self, request):
-        all_params = ['domain_id', 'template_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_notification_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3418,14 +3184,10 @@ class LtsAsyncClient(Client):
         :type request: :class:`huaweicloudsdklts.v2.ShowStructTemplateRequest`
         :rtype: :class:`huaweicloudsdklts.v2.ShowStructTemplateResponse`
         """
-        return self.show_struct_template_with_http_info(request)
+        return self._show_struct_template_with_http_info(request)
 
-    def show_struct_template_with_http_info(self, request):
-        all_params = ['log_group_id', 'log_stream_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_struct_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3481,14 +3243,10 @@ class LtsAsyncClient(Client):
         :type request: :class:`huaweicloudsdklts.v2.UpdateAccessConfigRequest`
         :rtype: :class:`huaweicloudsdklts.v2.UpdateAccessConfigResponse`
         """
-        return self.update_access_config_with_http_info(request)
+        return self._update_access_config_with_http_info(request)
 
-    def update_access_config_with_http_info(self, request):
-        all_params = ['update_access_config_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_access_config_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3542,14 +3300,10 @@ class LtsAsyncClient(Client):
         :type request: :class:`huaweicloudsdklts.v2.UpdateHostGroupRequest`
         :rtype: :class:`huaweicloudsdklts.v2.UpdateHostGroupResponse`
         """
-        return self.update_host_group_with_http_info(request)
+        return self._update_host_group_with_http_info(request)
 
-    def update_host_group_with_http_info(self, request):
-        all_params = ['update_host_group_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_host_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3603,14 +3357,10 @@ class LtsAsyncClient(Client):
         :type request: :class:`huaweicloudsdklts.v2.UpdateKeywordsAlarmRuleRequest`
         :rtype: :class:`huaweicloudsdklts.v2.UpdateKeywordsAlarmRuleResponse`
         """
-        return self.update_keywords_alarm_rule_with_http_info(request)
+        return self._update_keywords_alarm_rule_with_http_info(request)
 
-    def update_keywords_alarm_rule_with_http_info(self, request):
-        all_params = ['update_keywords_alarm_rule_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_keywords_alarm_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3664,14 +3414,10 @@ class LtsAsyncClient(Client):
         :type request: :class:`huaweicloudsdklts.v2.UpdateLogGroupRequest`
         :rtype: :class:`huaweicloudsdklts.v2.UpdateLogGroupResponse`
         """
-        return self.update_log_group_with_http_info(request)
+        return self._update_log_group_with_http_info(request)
 
-    def update_log_group_with_http_info(self, request):
-        all_params = ['log_group_id', 'update_log_group_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_log_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3727,14 +3473,10 @@ class LtsAsyncClient(Client):
         :type request: :class:`huaweicloudsdklts.v2.UpdateNotificationTemplateRequest`
         :rtype: :class:`huaweicloudsdklts.v2.UpdateNotificationTemplateResponse`
         """
-        return self.update_notification_template_with_http_info(request)
+        return self._update_notification_template_with_http_info(request)
 
-    def update_notification_template_with_http_info(self, request):
-        all_params = ['domain_id', 'update_notification_template_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_notification_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3790,14 +3532,10 @@ class LtsAsyncClient(Client):
         :type request: :class:`huaweicloudsdklts.v2.UpdateStructConfigRequest`
         :rtype: :class:`huaweicloudsdklts.v2.UpdateStructConfigResponse`
         """
-        return self.update_struct_config_with_http_info(request)
+        return self._update_struct_config_with_http_info(request)
 
-    def update_struct_config_with_http_info(self, request):
-        all_params = ['update_struct_config_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_struct_config_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3851,14 +3589,10 @@ class LtsAsyncClient(Client):
         :type request: :class:`huaweicloudsdklts.v2.UpdateStructTemplateRequest`
         :rtype: :class:`huaweicloudsdklts.v2.UpdateStructTemplateResponse`
         """
-        return self.update_struct_template_with_http_info(request)
+        return self._update_struct_template_with_http_info(request)
 
-    def update_struct_template_with_http_info(self, request):
-        all_params = ['update_struct_template_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_struct_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3912,14 +3646,10 @@ class LtsAsyncClient(Client):
         :type request: :class:`huaweicloudsdklts.v2.UpdateTransferRequest`
         :rtype: :class:`huaweicloudsdklts.v2.UpdateTransferResponse`
         """
-        return self.update_transfer_with_http_info(request)
+        return self._update_transfer_with_http_info(request)
 
-    def update_transfer_with_http_info(self, request):
-        all_params = ['update_transfer_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_transfer_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3973,14 +3703,10 @@ class LtsAsyncClient(Client):
         :type request: :class:`huaweicloudsdklts.v2.CreateAomMappingRulesRequest`
         :rtype: :class:`huaweicloudsdklts.v2.CreateAomMappingRulesResponse`
         """
-        return self.create_aom_mapping_rules_with_http_info(request)
+        return self._create_aom_mapping_rules_with_http_info(request)
 
-    def create_aom_mapping_rules_with_http_info(self, request):
-        all_params = ['is_batch', 'create_aom_mapping_rules_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_aom_mapping_rules_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4036,14 +3762,10 @@ class LtsAsyncClient(Client):
         :type request: :class:`huaweicloudsdklts.v2.DeleteAomMappingRulesRequest`
         :rtype: :class:`huaweicloudsdklts.v2.DeleteAomMappingRulesResponse`
         """
-        return self.delete_aom_mapping_rules_with_http_info(request)
+        return self._delete_aom_mapping_rules_with_http_info(request)
 
-    def delete_aom_mapping_rules_with_http_info(self, request):
-        all_params = ['id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_aom_mapping_rules_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4097,14 +3819,10 @@ class LtsAsyncClient(Client):
         :type request: :class:`huaweicloudsdklts.v2.ShowAomMappingRuleRequest`
         :rtype: :class:`huaweicloudsdklts.v2.ShowAomMappingRuleResponse`
         """
-        return self.show_aom_mapping_rule_with_http_info(request)
+        return self._show_aom_mapping_rule_with_http_info(request)
 
-    def show_aom_mapping_rule_with_http_info(self, request):
-        all_params = ['rule_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_aom_mapping_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4158,14 +3876,10 @@ class LtsAsyncClient(Client):
         :type request: :class:`huaweicloudsdklts.v2.ShowAomMappingRulesRequest`
         :rtype: :class:`huaweicloudsdklts.v2.ShowAomMappingRulesResponse`
         """
-        return self.show_aom_mapping_rules_with_http_info(request)
+        return self._show_aom_mapping_rules_with_http_info(request)
 
-    def show_aom_mapping_rules_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_aom_mapping_rules_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4217,14 +3931,10 @@ class LtsAsyncClient(Client):
         :type request: :class:`huaweicloudsdklts.v2.UpdateAomMappingRulesRequest`
         :rtype: :class:`huaweicloudsdklts.v2.UpdateAomMappingRulesResponse`
         """
-        return self.update_aom_mapping_rules_with_http_info(request)
+        return self._update_aom_mapping_rules_with_http_info(request)
 
-    def update_aom_mapping_rules_with_http_info(self, request):
-        all_params = ['update_aom_mapping_rules_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_aom_mapping_rules_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4278,14 +3988,10 @@ class LtsAsyncClient(Client):
         :type request: :class:`huaweicloudsdklts.v2.CreateSqlAlarmRuleRequest`
         :rtype: :class:`huaweicloudsdklts.v2.CreateSqlAlarmRuleResponse`
         """
-        return self.create_sql_alarm_rule_with_http_info(request)
+        return self._create_sql_alarm_rule_with_http_info(request)
 
-    def create_sql_alarm_rule_with_http_info(self, request):
-        all_params = ['create_sql_alarm_rule_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_sql_alarm_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4339,14 +4045,10 @@ class LtsAsyncClient(Client):
         :type request: :class:`huaweicloudsdklts.v2.DeleteSqlAlarmRuleRequest`
         :rtype: :class:`huaweicloudsdklts.v2.DeleteSqlAlarmRuleResponse`
         """
-        return self.delete_sql_alarm_rule_with_http_info(request)
+        return self._delete_sql_alarm_rule_with_http_info(request)
 
-    def delete_sql_alarm_rule_with_http_info(self, request):
-        all_params = ['sql_alarm_rule_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_sql_alarm_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4400,14 +4102,10 @@ class LtsAsyncClient(Client):
         :type request: :class:`huaweicloudsdklts.v2.ListSqlAlarmRulesRequest`
         :rtype: :class:`huaweicloudsdklts.v2.ListSqlAlarmRulesResponse`
         """
-        return self.list_sql_alarm_rules_with_http_info(request)
+        return self._list_sql_alarm_rules_with_http_info(request)
 
-    def list_sql_alarm_rules_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_sql_alarm_rules_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4459,14 +4157,10 @@ class LtsAsyncClient(Client):
         :type request: :class:`huaweicloudsdklts.v2.UpdateAlarmRuleStatusRequest`
         :rtype: :class:`huaweicloudsdklts.v2.UpdateAlarmRuleStatusResponse`
         """
-        return self.update_alarm_rule_status_with_http_info(request)
+        return self._update_alarm_rule_status_with_http_info(request)
 
-    def update_alarm_rule_status_with_http_info(self, request):
-        all_params = ['change_alarm_rule_status']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_alarm_rule_status_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4520,14 +4214,10 @@ class LtsAsyncClient(Client):
         :type request: :class:`huaweicloudsdklts.v2.UpdateSqlAlarmRuleRequest`
         :rtype: :class:`huaweicloudsdklts.v2.UpdateSqlAlarmRuleResponse`
         """
-        return self.update_sql_alarm_rule_with_http_info(request)
+        return self._update_sql_alarm_rule_with_http_info(request)
 
-    def update_sql_alarm_rule_with_http_info(self, request):
-        all_params = ['update_sql_alarm_rule_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_sql_alarm_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

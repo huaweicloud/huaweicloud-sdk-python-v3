@@ -1,0 +1,13 @@
+{
+  "ReplicationConfiguration": {
+    "Agency": "testAcy",
+    "Rule": {
+      "ID": "rule1",
+      "Prefix": "key-prefix",
+      "Status": "rule-status",
+      "Destination": {
+        "Bucket": "targetbucketname"
+      }
+    }
+  }
+}

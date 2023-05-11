@@ -1,9 +1,6 @@
 # coding: utf-8
 
-import re
 import six
-
-
 
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
@@ -36,7 +33,7 @@ class UpdateTuningParamsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param job_id: 
+        :param job_id: 租户在某一Region下的Job ID，如果是主备任务，使用父任务ID。
         :type job_id: str
         :param x_language: 请求语言类型
         :type x_language: str
@@ -61,6 +58,8 @@ class UpdateTuningParamsRequest:
     def job_id(self):
         """Gets the job_id of this UpdateTuningParamsRequest.
 
+        租户在某一Region下的Job ID，如果是主备任务，使用父任务ID。
+
         :return: The job_id of this UpdateTuningParamsRequest.
         :rtype: str
         """
@@ -69,6 +68,8 @@ class UpdateTuningParamsRequest:
     @job_id.setter
     def job_id(self, job_id):
         """Sets the job_id of this UpdateTuningParamsRequest.
+
+        租户在某一Region下的Job ID，如果是主备任务，使用父任务ID。
 
         :param job_id: The job_id of this UpdateTuningParamsRequest.
         :type job_id: str

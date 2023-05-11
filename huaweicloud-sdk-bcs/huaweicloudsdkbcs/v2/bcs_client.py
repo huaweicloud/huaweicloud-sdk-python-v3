@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class BcsClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(BcsClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkbcs.v2.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -53,14 +35,10 @@ class BcsClient(Client):
         :type request: :class:`huaweicloudsdkbcs.v2.BatchAddPeersToChannelRequest`
         :rtype: :class:`huaweicloudsdkbcs.v2.BatchAddPeersToChannelResponse`
         """
-        return self.batch_add_peers_to_channel_with_http_info(request)
+        return self._batch_add_peers_to_channel_with_http_info(request)
 
-    def batch_add_peers_to_channel_with_http_info(self, request):
-        all_params = ['blockchain_id', 'batch_add_peers_to_channel_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_add_peers_to_channel_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -115,14 +93,10 @@ class BcsClient(Client):
         :type request: :class:`huaweicloudsdkbcs.v2.BatchCreateChannelsRequest`
         :rtype: :class:`huaweicloudsdkbcs.v2.BatchCreateChannelsResponse`
         """
-        return self.batch_create_channels_with_http_info(request)
+        return self._batch_create_channels_with_http_info(request)
 
-    def batch_create_channels_with_http_info(self, request):
-        all_params = ['blockchain_id', 'batch_create_channels_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_create_channels_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -177,14 +151,10 @@ class BcsClient(Client):
         :type request: :class:`huaweicloudsdkbcs.v2.BatchInviteMembersToChannelRequest`
         :rtype: :class:`huaweicloudsdkbcs.v2.BatchInviteMembersToChannelResponse`
         """
-        return self.batch_invite_members_to_channel_with_http_info(request)
+        return self._batch_invite_members_to_channel_with_http_info(request)
 
-    def batch_invite_members_to_channel_with_http_info(self, request):
-        all_params = ['batch_invite_members_to_channel_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_invite_members_to_channel_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -237,14 +207,10 @@ class BcsClient(Client):
         :type request: :class:`huaweicloudsdkbcs.v2.BatchRemoveOrgsFromChannelRequest`
         :rtype: :class:`huaweicloudsdkbcs.v2.BatchRemoveOrgsFromChannelResponse`
         """
-        return self.batch_remove_orgs_from_channel_with_http_info(request)
+        return self._batch_remove_orgs_from_channel_with_http_info(request)
 
-    def batch_remove_orgs_from_channel_with_http_info(self, request):
-        all_params = ['blockchain_id', 'channel_id', 'batch_remove_orgs_from_channel_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_remove_orgs_from_channel_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -301,14 +267,10 @@ class BcsClient(Client):
         :type request: :class:`huaweicloudsdkbcs.v2.BatchRemovePeersFromChannelRequest`
         :rtype: :class:`huaweicloudsdkbcs.v2.BatchRemovePeersFromChannelResponse`
         """
-        return self.batch_remove_peers_from_channel_with_http_info(request)
+        return self._batch_remove_peers_from_channel_with_http_info(request)
 
-    def batch_remove_peers_from_channel_with_http_info(self, request):
-        all_params = ['blockchain_id', 'channel_id', 'batch_remove_peers_from_channel_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_remove_peers_from_channel_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -365,14 +327,10 @@ class BcsClient(Client):
         :type request: :class:`huaweicloudsdkbcs.v2.CreateBlockchainCertByUserNameRequest`
         :rtype: :class:`huaweicloudsdkbcs.v2.CreateBlockchainCertByUserNameResponse`
         """
-        return self.create_blockchain_cert_by_user_name_with_http_info(request)
+        return self._create_blockchain_cert_by_user_name_with_http_info(request)
 
-    def create_blockchain_cert_by_user_name_with_http_info(self, request):
-        all_params = ['blockchain_id', 'org_name', 'user_name', 'create_blockchain_cert_by_user_name_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_blockchain_cert_by_user_name_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -431,14 +389,10 @@ class BcsClient(Client):
         :type request: :class:`huaweicloudsdkbcs.v2.CreateNewBlockchainRequest`
         :rtype: :class:`huaweicloudsdkbcs.v2.CreateNewBlockchainResponse`
         """
-        return self.create_new_blockchain_with_http_info(request)
+        return self._create_new_blockchain_with_http_info(request)
 
-    def create_new_blockchain_with_http_info(self, request):
-        all_params = ['create_new_blockchain_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_new_blockchain_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -491,14 +445,10 @@ class BcsClient(Client):
         :type request: :class:`huaweicloudsdkbcs.v2.DeleteBlockchainRequest`
         :rtype: :class:`huaweicloudsdkbcs.v2.DeleteBlockchainResponse`
         """
-        return self.delete_blockchain_with_http_info(request)
+        return self._delete_blockchain_with_http_info(request)
 
-    def delete_blockchain_with_http_info(self, request):
-        all_params = ['blockchain_id', 'is_delete_storage', 'is_delete_obs', 'is_delete_resource', 'is_delete_ief', 'is_delete_lightpeer', 'ief_nodes_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_blockchain_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -563,14 +513,10 @@ class BcsClient(Client):
         :type request: :class:`huaweicloudsdkbcs.v2.DeleteChannelRequest`
         :rtype: :class:`huaweicloudsdkbcs.v2.DeleteChannelResponse`
         """
-        return self.delete_channel_with_http_info(request)
+        return self._delete_channel_with_http_info(request)
 
-    def delete_channel_with_http_info(self, request):
-        all_params = ['blockchain_id', 'channel_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_channel_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -625,14 +571,10 @@ class BcsClient(Client):
         :type request: :class:`huaweicloudsdkbcs.v2.DeleteMemberInviteRequest`
         :rtype: :class:`huaweicloudsdkbcs.v2.DeleteMemberInviteResponse`
         """
-        return self.delete_member_invite_with_http_info(request)
+        return self._delete_member_invite_with_http_info(request)
 
-    def delete_member_invite_with_http_info(self, request):
-        all_params = ['delete_member_invite_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_member_invite_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -685,14 +627,10 @@ class BcsClient(Client):
         :type request: :class:`huaweicloudsdkbcs.v2.DownloadBlockchainCertRequest`
         :rtype: :class:`huaweicloudsdkbcs.v2.DownloadBlockchainCertResponse`
         """
-        return self.download_blockchain_cert_with_http_info(request)
+        return self._download_blockchain_cert_with_http_info(request)
 
-    def download_blockchain_cert_with_http_info(self, request):
-        all_params = ['blockchain_id', 'org_name', 'cert_type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _download_blockchain_cert_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -749,14 +687,10 @@ class BcsClient(Client):
         :type request: :class:`huaweicloudsdkbcs.v2.DownloadBlockchainSdkConfigRequest`
         :rtype: :class:`huaweicloudsdkbcs.v2.DownloadBlockchainSdkConfigResponse`
         """
-        return self.download_blockchain_sdk_config_with_http_info(request)
+        return self._download_blockchain_sdk_config_with_http_info(request)
 
-    def download_blockchain_sdk_config_with_http_info(self, request):
-        all_params = ['blockchain_id', 'download_blockchain_sdk_config_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _download_blockchain_sdk_config_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -811,14 +745,10 @@ class BcsClient(Client):
         :type request: :class:`huaweicloudsdkbcs.v2.FreezeCertRequest`
         :rtype: :class:`huaweicloudsdkbcs.v2.FreezeCertResponse`
         """
-        return self.freeze_cert_with_http_info(request)
+        return self._freeze_cert_with_http_info(request)
 
-    def freeze_cert_with_http_info(self, request):
-        all_params = ['user_name', 'blockchain_id', 'org_name', 'file']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _freeze_cert_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -879,14 +809,10 @@ class BcsClient(Client):
         :type request: :class:`huaweicloudsdkbcs.v2.HandleNotificationRequest`
         :rtype: :class:`huaweicloudsdkbcs.v2.HandleNotificationResponse`
         """
-        return self.handle_notification_with_http_info(request)
+        return self._handle_notification_with_http_info(request)
 
-    def handle_notification_with_http_info(self, request):
-        all_params = ['handle_notification_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _handle_notification_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -939,14 +865,10 @@ class BcsClient(Client):
         :type request: :class:`huaweicloudsdkbcs.v2.HandleUnionMemberQuitListRequest`
         :rtype: :class:`huaweicloudsdkbcs.v2.HandleUnionMemberQuitListResponse`
         """
-        return self.handle_union_member_quit_list_with_http_info(request)
+        return self._handle_union_member_quit_list_with_http_info(request)
 
-    def handle_union_member_quit_list_with_http_info(self, request):
-        all_params = ['handle_union_member_quit_list_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _handle_union_member_quit_list_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -999,14 +921,10 @@ class BcsClient(Client):
         :type request: :class:`huaweicloudsdkbcs.v2.ListBcsMetricRequest`
         :rtype: :class:`huaweicloudsdkbcs.v2.ListBcsMetricResponse`
         """
-        return self.list_bcs_metric_with_http_info(request)
+        return self._list_bcs_metric_with_http_info(request)
 
-    def list_bcs_metric_with_http_info(self, request):
-        all_params = ['blockchain_id', 'list_bcs_metric_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_bcs_metric_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1061,14 +979,10 @@ class BcsClient(Client):
         :type request: :class:`huaweicloudsdkbcs.v2.ListBlockchainChannelsRequest`
         :rtype: :class:`huaweicloudsdkbcs.v2.ListBlockchainChannelsResponse`
         """
-        return self.list_blockchain_channels_with_http_info(request)
+        return self._list_blockchain_channels_with_http_info(request)
 
-    def list_blockchain_channels_with_http_info(self, request):
-        all_params = ['blockchain_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_blockchain_channels_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1121,14 +1035,10 @@ class BcsClient(Client):
         :type request: :class:`huaweicloudsdkbcs.v2.ListBlockchainsRequest`
         :rtype: :class:`huaweicloudsdkbcs.v2.ListBlockchainsResponse`
         """
-        return self.list_blockchains_with_http_info(request)
+        return self._list_blockchains_with_http_info(request)
 
-    def list_blockchains_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_blockchains_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1179,14 +1089,10 @@ class BcsClient(Client):
         :type request: :class:`huaweicloudsdkbcs.v2.ListEntityMetricRequest`
         :rtype: :class:`huaweicloudsdkbcs.v2.ListEntityMetricResponse`
         """
-        return self.list_entity_metric_with_http_info(request)
+        return self._list_entity_metric_with_http_info(request)
 
-    def list_entity_metric_with_http_info(self, request):
-        all_params = ['blockchain_id', 'list_entity_metric_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_entity_metric_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1241,14 +1147,10 @@ class BcsClient(Client):
         :type request: :class:`huaweicloudsdkbcs.v2.ListInstanceMetricRequest`
         :rtype: :class:`huaweicloudsdkbcs.v2.ListInstanceMetricResponse`
         """
-        return self.list_instance_metric_with_http_info(request)
+        return self._list_instance_metric_with_http_info(request)
 
-    def list_instance_metric_with_http_info(self, request):
-        all_params = ['blockchain_id', 'list_instance_metric_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_instance_metric_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1303,14 +1205,10 @@ class BcsClient(Client):
         :type request: :class:`huaweicloudsdkbcs.v2.ListMembersRequest`
         :rtype: :class:`huaweicloudsdkbcs.v2.ListMembersResponse`
         """
-        return self.list_members_with_http_info(request)
+        return self._list_members_with_http_info(request)
 
-    def list_members_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_members_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1361,14 +1259,10 @@ class BcsClient(Client):
         :type request: :class:`huaweicloudsdkbcs.v2.ListNotificationsRequest`
         :rtype: :class:`huaweicloudsdkbcs.v2.ListNotificationsResponse`
         """
-        return self.list_notifications_with_http_info(request)
+        return self._list_notifications_with_http_info(request)
 
-    def list_notifications_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_notifications_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1419,14 +1313,10 @@ class BcsClient(Client):
         :type request: :class:`huaweicloudsdkbcs.v2.ListOpRecordRequest`
         :rtype: :class:`huaweicloudsdkbcs.v2.ListOpRecordResponse`
         """
-        return self.list_op_record_with_http_info(request)
+        return self._list_op_record_with_http_info(request)
 
-    def list_op_record_with_http_info(self, request):
-        all_params = ['blockchain_id', 'operation_status', 'resource_type', 'operation_type', 'operation_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_op_record_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1487,14 +1377,10 @@ class BcsClient(Client):
         :type request: :class:`huaweicloudsdkbcs.v2.ListQuotasRequest`
         :rtype: :class:`huaweicloudsdkbcs.v2.ListQuotasResponse`
         """
-        return self.list_quotas_with_http_info(request)
+        return self._list_quotas_with_http_info(request)
 
-    def list_quotas_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_quotas_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1545,14 +1431,10 @@ class BcsClient(Client):
         :type request: :class:`huaweicloudsdkbcs.v2.ShowBlockchainDetailRequest`
         :rtype: :class:`huaweicloudsdkbcs.v2.ShowBlockchainDetailResponse`
         """
-        return self.show_blockchain_detail_with_http_info(request)
+        return self._show_blockchain_detail_with_http_info(request)
 
-    def show_blockchain_detail_with_http_info(self, request):
-        all_params = ['blockchain_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_blockchain_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1605,14 +1487,10 @@ class BcsClient(Client):
         :type request: :class:`huaweicloudsdkbcs.v2.ShowBlockchainFlavorsRequest`
         :rtype: :class:`huaweicloudsdkbcs.v2.ShowBlockchainFlavorsResponse`
         """
-        return self.show_blockchain_flavors_with_http_info(request)
+        return self._show_blockchain_flavors_with_http_info(request)
 
-    def show_blockchain_flavors_with_http_info(self, request):
-        all_params = ['limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_blockchain_flavors_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1667,14 +1545,10 @@ class BcsClient(Client):
         :type request: :class:`huaweicloudsdkbcs.v2.ShowBlockchainNodesRequest`
         :rtype: :class:`huaweicloudsdkbcs.v2.ShowBlockchainNodesResponse`
         """
-        return self.show_blockchain_nodes_with_http_info(request)
+        return self._show_blockchain_nodes_with_http_info(request)
 
-    def show_blockchain_nodes_with_http_info(self, request):
-        all_params = ['blockchain_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_blockchain_nodes_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1727,14 +1601,10 @@ class BcsClient(Client):
         :type request: :class:`huaweicloudsdkbcs.v2.ShowBlockchainStatusRequest`
         :rtype: :class:`huaweicloudsdkbcs.v2.ShowBlockchainStatusResponse`
         """
-        return self.show_blockchain_status_with_http_info(request)
+        return self._show_blockchain_status_with_http_info(request)
 
-    def show_blockchain_status_with_http_info(self, request):
-        all_params = ['blockchain_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_blockchain_status_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1787,14 +1657,10 @@ class BcsClient(Client):
         :type request: :class:`huaweicloudsdkbcs.v2.UnfreezeCertRequest`
         :rtype: :class:`huaweicloudsdkbcs.v2.UnfreezeCertResponse`
         """
-        return self.unfreeze_cert_with_http_info(request)
+        return self._unfreeze_cert_with_http_info(request)
 
-    def unfreeze_cert_with_http_info(self, request):
-        all_params = ['user_name', 'blockchain_id', 'org_name', 'file']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _unfreeze_cert_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1855,14 +1721,10 @@ class BcsClient(Client):
         :type request: :class:`huaweicloudsdkbcs.v2.UpdateInstanceRequest`
         :rtype: :class:`huaweicloudsdkbcs.v2.UpdateInstanceResponse`
         """
-        return self.update_instance_with_http_info(request)
+        return self._update_instance_with_http_info(request)
 
-    def update_instance_with_http_info(self, request):
-        all_params = ['blockchain_id', 'update_instance_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

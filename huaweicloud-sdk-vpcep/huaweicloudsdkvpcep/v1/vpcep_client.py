@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class VpcepClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(VpcepClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkvpcep.v1.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -54,14 +36,10 @@ class VpcepClient(Client):
         :type request: :class:`huaweicloudsdkvpcep.v1.AcceptOrRejectEndpointRequest`
         :rtype: :class:`huaweicloudsdkvpcep.v1.AcceptOrRejectEndpointResponse`
         """
-        return self.accept_or_reject_endpoint_with_http_info(request)
+        return self._accept_or_reject_endpoint_with_http_info(request)
 
-    def accept_or_reject_endpoint_with_http_info(self, request):
-        all_params = ['vpc_endpoint_service_id', 'accept_or_reject_endpoint_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _accept_or_reject_endpoint_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -119,14 +97,10 @@ class VpcepClient(Client):
         :type request: :class:`huaweicloudsdkvpcep.v1.AddOrRemoveServicePermissionsRequest`
         :rtype: :class:`huaweicloudsdkvpcep.v1.AddOrRemoveServicePermissionsResponse`
         """
-        return self.add_or_remove_service_permissions_with_http_info(request)
+        return self._add_or_remove_service_permissions_with_http_info(request)
 
-    def add_or_remove_service_permissions_with_http_info(self, request):
-        all_params = ['vpc_endpoint_service_id', 'add_or_remove_service_permissions_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _add_or_remove_service_permissions_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -184,14 +158,10 @@ class VpcepClient(Client):
         :type request: :class:`huaweicloudsdkvpcep.v1.BatchAddEndpointServicePermissionsRequest`
         :rtype: :class:`huaweicloudsdkvpcep.v1.BatchAddEndpointServicePermissionsResponse`
         """
-        return self.batch_add_endpoint_service_permissions_with_http_info(request)
+        return self._batch_add_endpoint_service_permissions_with_http_info(request)
 
-    def batch_add_endpoint_service_permissions_with_http_info(self, request):
-        all_params = ['vpc_endpoint_service_id', 'batch_add_permission']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_add_endpoint_service_permissions_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -247,14 +217,10 @@ class VpcepClient(Client):
         :type request: :class:`huaweicloudsdkvpcep.v1.BatchRemoveEndpointServicePermissionsRequest`
         :rtype: :class:`huaweicloudsdkvpcep.v1.BatchRemoveEndpointServicePermissionsResponse`
         """
-        return self.batch_remove_endpoint_service_permissions_with_http_info(request)
+        return self._batch_remove_endpoint_service_permissions_with_http_info(request)
 
-    def batch_remove_endpoint_service_permissions_with_http_info(self, request):
-        all_params = ['vpc_endpoint_service_id', 'batch_remove_permission_request']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_remove_endpoint_service_permissions_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -310,14 +276,10 @@ class VpcepClient(Client):
         :type request: :class:`huaweicloudsdkvpcep.v1.CreateEndpointRequest`
         :rtype: :class:`huaweicloudsdkvpcep.v1.CreateEndpointResponse`
         """
-        return self.create_endpoint_with_http_info(request)
+        return self._create_endpoint_with_http_info(request)
 
-    def create_endpoint_with_http_info(self, request):
-        all_params = ['create_endpoint_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_endpoint_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -375,14 +337,10 @@ class VpcepClient(Client):
         :type request: :class:`huaweicloudsdkvpcep.v1.CreateEndpointServiceRequest`
         :rtype: :class:`huaweicloudsdkvpcep.v1.CreateEndpointServiceResponse`
         """
-        return self.create_endpoint_service_with_http_info(request)
+        return self._create_endpoint_service_with_http_info(request)
 
-    def create_endpoint_service_with_http_info(self, request):
-        all_params = ['create_endpoint_service_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_endpoint_service_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -436,14 +394,10 @@ class VpcepClient(Client):
         :type request: :class:`huaweicloudsdkvpcep.v1.DeleteEndpointRequest`
         :rtype: :class:`huaweicloudsdkvpcep.v1.DeleteEndpointResponse`
         """
-        return self.delete_endpoint_with_http_info(request)
+        return self._delete_endpoint_with_http_info(request)
 
-    def delete_endpoint_with_http_info(self, request):
-        all_params = ['vpc_endpoint_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_endpoint_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -497,14 +451,10 @@ class VpcepClient(Client):
         :type request: :class:`huaweicloudsdkvpcep.v1.DeleteEndpointPolicyRequest`
         :rtype: :class:`huaweicloudsdkvpcep.v1.DeleteEndpointPolicyResponse`
         """
-        return self.delete_endpoint_policy_with_http_info(request)
+        return self._delete_endpoint_policy_with_http_info(request)
 
-    def delete_endpoint_policy_with_http_info(self, request):
-        all_params = ['vpc_endpoint_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_endpoint_policy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -558,14 +508,10 @@ class VpcepClient(Client):
         :type request: :class:`huaweicloudsdkvpcep.v1.DeleteEndpointServiceRequest`
         :rtype: :class:`huaweicloudsdkvpcep.v1.DeleteEndpointServiceResponse`
         """
-        return self.delete_endpoint_service_with_http_info(request)
+        return self._delete_endpoint_service_with_http_info(request)
 
-    def delete_endpoint_service_with_http_info(self, request):
-        all_params = ['vpc_endpoint_service_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_endpoint_service_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -619,14 +565,10 @@ class VpcepClient(Client):
         :type request: :class:`huaweicloudsdkvpcep.v1.ListEndpointInfoDetailsRequest`
         :rtype: :class:`huaweicloudsdkvpcep.v1.ListEndpointInfoDetailsResponse`
         """
-        return self.list_endpoint_info_details_with_http_info(request)
+        return self._list_endpoint_info_details_with_http_info(request)
 
-    def list_endpoint_info_details_with_http_info(self, request):
-        all_params = ['vpc_endpoint_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_endpoint_info_details_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -680,14 +622,10 @@ class VpcepClient(Client):
         :type request: :class:`huaweicloudsdkvpcep.v1.ListEndpointServiceRequest`
         :rtype: :class:`huaweicloudsdkvpcep.v1.ListEndpointServiceResponse`
         """
-        return self.list_endpoint_service_with_http_info(request)
+        return self._list_endpoint_service_with_http_info(request)
 
-    def list_endpoint_service_with_http_info(self, request):
-        all_params = ['endpoint_service_name', 'id', 'status', 'sort_key', 'sort_dir', 'limit', 'offset', 'public_border_group']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_endpoint_service_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -755,14 +693,10 @@ class VpcepClient(Client):
         :type request: :class:`huaweicloudsdkvpcep.v1.ListEndpointsRequest`
         :rtype: :class:`huaweicloudsdkvpcep.v1.ListEndpointsResponse`
         """
-        return self.list_endpoints_with_http_info(request)
+        return self._list_endpoints_with_http_info(request)
 
-    def list_endpoints_with_http_info(self, request):
-        all_params = ['endpoint_service_name', 'vpc_id', 'id', 'limit', 'offset', 'sort_key', 'sort_dir', 'public_border_group']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_endpoints_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -830,14 +764,10 @@ class VpcepClient(Client):
         :type request: :class:`huaweicloudsdkvpcep.v1.ListQuotaDetailsRequest`
         :rtype: :class:`huaweicloudsdkvpcep.v1.ListQuotaDetailsResponse`
         """
-        return self.list_quota_details_with_http_info(request)
+        return self._list_quota_details_with_http_info(request)
 
-    def list_quota_details_with_http_info(self, request):
-        all_params = ['type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_quota_details_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -891,14 +821,10 @@ class VpcepClient(Client):
         :type request: :class:`huaweicloudsdkvpcep.v1.ListServiceConnectionsRequest`
         :rtype: :class:`huaweicloudsdkvpcep.v1.ListServiceConnectionsResponse`
         """
-        return self.list_service_connections_with_http_info(request)
+        return self._list_service_connections_with_http_info(request)
 
-    def list_service_connections_with_http_info(self, request):
-        all_params = ['vpc_endpoint_service_id', 'id', 'marker_id', 'status', 'sort_key', 'sort_dir', 'limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_service_connections_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -965,14 +891,10 @@ class VpcepClient(Client):
         :type request: :class:`huaweicloudsdkvpcep.v1.ListServiceDescribeDetailsRequest`
         :rtype: :class:`huaweicloudsdkvpcep.v1.ListServiceDescribeDetailsResponse`
         """
-        return self.list_service_describe_details_with_http_info(request)
+        return self._list_service_describe_details_with_http_info(request)
 
-    def list_service_describe_details_with_http_info(self, request):
-        all_params = ['endpoint_service_name', 'id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_service_describe_details_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1028,14 +950,10 @@ class VpcepClient(Client):
         :type request: :class:`huaweicloudsdkvpcep.v1.ListServiceDetailsRequest`
         :rtype: :class:`huaweicloudsdkvpcep.v1.ListServiceDetailsResponse`
         """
-        return self.list_service_details_with_http_info(request)
+        return self._list_service_details_with_http_info(request)
 
-    def list_service_details_with_http_info(self, request):
-        all_params = ['vpc_endpoint_service_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_service_details_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1091,14 +1009,10 @@ class VpcepClient(Client):
         :type request: :class:`huaweicloudsdkvpcep.v1.ListServicePermissionsDetailsRequest`
         :rtype: :class:`huaweicloudsdkvpcep.v1.ListServicePermissionsDetailsResponse`
         """
-        return self.list_service_permissions_details_with_http_info(request)
+        return self._list_service_permissions_details_with_http_info(request)
 
-    def list_service_permissions_details_with_http_info(self, request):
-        all_params = ['vpc_endpoint_service_id', 'permission', 'limit', 'offset', 'sort_key', 'sort_dir']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_service_permissions_details_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1163,14 +1077,10 @@ class VpcepClient(Client):
         :type request: :class:`huaweicloudsdkvpcep.v1.ListServicePublicDetailsRequest`
         :rtype: :class:`huaweicloudsdkvpcep.v1.ListServicePublicDetailsResponse`
         """
-        return self.list_service_public_details_with_http_info(request)
+        return self._list_service_public_details_with_http_info(request)
 
-    def list_service_public_details_with_http_info(self, request):
-        all_params = ['limit', 'offset', 'endpoint_service_name', 'id', 'sort_key', 'sort_dir']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_service_public_details_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1234,14 +1144,10 @@ class VpcepClient(Client):
         :type request: :class:`huaweicloudsdkvpcep.v1.ListSpecifiedVersionDetailsRequest`
         :rtype: :class:`huaweicloudsdkvpcep.v1.ListSpecifiedVersionDetailsResponse`
         """
-        return self.list_specified_version_details_with_http_info(request)
+        return self._list_specified_version_details_with_http_info(request)
 
-    def list_specified_version_details_with_http_info(self, request):
-        all_params = ['version']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_specified_version_details_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1295,14 +1201,10 @@ class VpcepClient(Client):
         :type request: :class:`huaweicloudsdkvpcep.v1.ListVersionDetailsRequest`
         :rtype: :class:`huaweicloudsdkvpcep.v1.ListVersionDetailsResponse`
         """
-        return self.list_version_details_with_http_info(request)
+        return self._list_version_details_with_http_info(request)
 
-    def list_version_details_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_version_details_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1354,14 +1256,10 @@ class VpcepClient(Client):
         :type request: :class:`huaweicloudsdkvpcep.v1.UpdateEndpointConnectionsDescRequest`
         :rtype: :class:`huaweicloudsdkvpcep.v1.UpdateEndpointConnectionsDescResponse`
         """
-        return self.update_endpoint_connections_desc_with_http_info(request)
+        return self._update_endpoint_connections_desc_with_http_info(request)
 
-    def update_endpoint_connections_desc_with_http_info(self, request):
-        all_params = ['vpc_endpoint_service_id', 'update_ep_connections']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_endpoint_connections_desc_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1417,14 +1315,10 @@ class VpcepClient(Client):
         :type request: :class:`huaweicloudsdkvpcep.v1.UpdateEndpointPolicyRequest`
         :rtype: :class:`huaweicloudsdkvpcep.v1.UpdateEndpointPolicyResponse`
         """
-        return self.update_endpoint_policy_with_http_info(request)
+        return self._update_endpoint_policy_with_http_info(request)
 
-    def update_endpoint_policy_with_http_info(self, request):
-        all_params = ['vpc_endpoint_id', 'update_endpoint_policy_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_endpoint_policy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1480,14 +1374,10 @@ class VpcepClient(Client):
         :type request: :class:`huaweicloudsdkvpcep.v1.UpdateEndpointRoutetableRequest`
         :rtype: :class:`huaweicloudsdkvpcep.v1.UpdateEndpointRoutetableResponse`
         """
-        return self.update_endpoint_routetable_with_http_info(request)
+        return self._update_endpoint_routetable_with_http_info(request)
 
-    def update_endpoint_routetable_with_http_info(self, request):
-        all_params = ['vpc_endpoint_id', 'update_endpoint_routetable_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_endpoint_routetable_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1543,14 +1433,10 @@ class VpcepClient(Client):
         :type request: :class:`huaweicloudsdkvpcep.v1.UpdateEndpointServiceRequest`
         :rtype: :class:`huaweicloudsdkvpcep.v1.UpdateEndpointServiceResponse`
         """
-        return self.update_endpoint_service_with_http_info(request)
+        return self._update_endpoint_service_with_http_info(request)
 
-    def update_endpoint_service_with_http_info(self, request):
-        all_params = ['vpc_endpoint_service_id', 'update_endpoint_service_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_endpoint_service_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1606,14 +1492,10 @@ class VpcepClient(Client):
         :type request: :class:`huaweicloudsdkvpcep.v1.UpdateEndpointServiceNameRequest`
         :rtype: :class:`huaweicloudsdkvpcep.v1.UpdateEndpointServiceNameResponse`
         """
-        return self.update_endpoint_service_name_with_http_info(request)
+        return self._update_endpoint_service_name_with_http_info(request)
 
-    def update_endpoint_service_name_with_http_info(self, request):
-        all_params = ['vpc_endpoint_service_id', 'update_endpoint_service_name_mode']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_endpoint_service_name_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1669,14 +1551,10 @@ class VpcepClient(Client):
         :type request: :class:`huaweicloudsdkvpcep.v1.UpdateEndpointServicePermissionDescRequest`
         :rtype: :class:`huaweicloudsdkvpcep.v1.UpdateEndpointServicePermissionDescResponse`
         """
-        return self.update_endpoint_service_permission_desc_with_http_info(request)
+        return self._update_endpoint_service_permission_desc_with_http_info(request)
 
-    def update_endpoint_service_permission_desc_with_http_info(self, request):
-        all_params = ['vpc_endpoint_service_id', 'permission_id', 'update_permission_desc_request']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_endpoint_service_permission_desc_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1734,14 +1612,10 @@ class VpcepClient(Client):
         :type request: :class:`huaweicloudsdkvpcep.v1.UpdateEndpointWhiteRequest`
         :rtype: :class:`huaweicloudsdkvpcep.v1.UpdateEndpointWhiteResponse`
         """
-        return self.update_endpoint_white_with_http_info(request)
+        return self._update_endpoint_white_with_http_info(request)
 
-    def update_endpoint_white_with_http_info(self, request):
-        all_params = ['vpc_endpoint_id', 'update_endpoint_white_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_endpoint_white_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1798,14 +1672,10 @@ class VpcepClient(Client):
         :type request: :class:`huaweicloudsdkvpcep.v1.BatchAddOrRemoveResourceInstanceRequest`
         :rtype: :class:`huaweicloudsdkvpcep.v1.BatchAddOrRemoveResourceInstanceResponse`
         """
-        return self.batch_add_or_remove_resource_instance_with_http_info(request)
+        return self._batch_add_or_remove_resource_instance_with_http_info(request)
 
-    def batch_add_or_remove_resource_instance_with_http_info(self, request):
-        all_params = ['resource_type', 'resource_id', 'batch_add_or_remove_resource_instance_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_add_or_remove_resource_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1863,14 +1733,10 @@ class VpcepClient(Client):
         :type request: :class:`huaweicloudsdkvpcep.v1.ListQueryProjectResourceTagsRequest`
         :rtype: :class:`huaweicloudsdkvpcep.v1.ListQueryProjectResourceTagsResponse`
         """
-        return self.list_query_project_resource_tags_with_http_info(request)
+        return self._list_query_project_resource_tags_with_http_info(request)
 
-    def list_query_project_resource_tags_with_http_info(self, request):
-        all_params = ['resource_type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_query_project_resource_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1924,14 +1790,10 @@ class VpcepClient(Client):
         :type request: :class:`huaweicloudsdkvpcep.v1.ListResourceInstancesRequest`
         :rtype: :class:`huaweicloudsdkvpcep.v1.ListResourceInstancesResponse`
         """
-        return self.list_resource_instances_with_http_info(request)
+        return self._list_resource_instances_with_http_info(request)
 
-    def list_resource_instances_with_http_info(self, request):
-        all_params = ['resource_type', 'query_resource_instance_tags_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_resource_instances_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

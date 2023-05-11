@@ -1,0 +1,17 @@
+{
+  "BucketLoggingStatus": {
+    "Agency": "agency-name",
+    "LoggingEnabled": {
+      "TargetBucket": "mybucketlogs",
+      "TargetPrefix": "mybucket-access_log-/",
+      "TargetGrants": {
+        "Grant": {
+          "Grantee": {
+            "ID": "domainID"
+          },
+          "Permission": "READ"
+        }
+      }
+    }
+  }
+}

@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class SaAsyncClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(SaAsyncClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdksa.v2.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -54,14 +36,10 @@ class SaAsyncClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.CreateAlertRuleRequest`
         :rtype: :class:`huaweicloudsdksa.v2.CreateAlertRuleResponse`
         """
-        return self.create_alert_rule_with_http_info(request)
+        return self._create_alert_rule_with_http_info(request)
 
-    def create_alert_rule_with_http_info(self, request):
-        all_params = ['project_id', 'workspace_id', 'create_alert_rule_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_alert_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -119,14 +97,10 @@ class SaAsyncClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.CreateAlertRuleSimulationRequest`
         :rtype: :class:`huaweicloudsdksa.v2.CreateAlertRuleSimulationResponse`
         """
-        return self.create_alert_rule_simulation_with_http_info(request)
+        return self._create_alert_rule_simulation_with_http_info(request)
 
-    def create_alert_rule_simulation_with_http_info(self, request):
-        all_params = ['project_id', 'workspace_id', 'create_alert_rule_simulation_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_alert_rule_simulation_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -184,14 +158,10 @@ class SaAsyncClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.DeleteAlertRuleRequest`
         :rtype: :class:`huaweicloudsdksa.v2.DeleteAlertRuleResponse`
         """
-        return self.delete_alert_rule_with_http_info(request)
+        return self._delete_alert_rule_with_http_info(request)
 
-    def delete_alert_rule_with_http_info(self, request):
-        all_params = ['project_id', 'workspace_id', 'delete_alert_rule_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_alert_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -249,14 +219,10 @@ class SaAsyncClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.DisableAlertRuleRequest`
         :rtype: :class:`huaweicloudsdksa.v2.DisableAlertRuleResponse`
         """
-        return self.disable_alert_rule_with_http_info(request)
+        return self._disable_alert_rule_with_http_info(request)
 
-    def disable_alert_rule_with_http_info(self, request):
-        all_params = ['project_id', 'workspace_id', 'disable_alert_rule_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _disable_alert_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -314,14 +280,10 @@ class SaAsyncClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.EnableAlertRuleRequest`
         :rtype: :class:`huaweicloudsdksa.v2.EnableAlertRuleResponse`
         """
-        return self.enable_alert_rule_with_http_info(request)
+        return self._enable_alert_rule_with_http_info(request)
 
-    def enable_alert_rule_with_http_info(self, request):
-        all_params = ['project_id', 'workspace_id', 'enable_alert_rule_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _enable_alert_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -379,14 +341,10 @@ class SaAsyncClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.ListAlertRuleMetricsRequest`
         :rtype: :class:`huaweicloudsdksa.v2.ListAlertRuleMetricsResponse`
         """
-        return self.list_alert_rule_metrics_with_http_info(request)
+        return self._list_alert_rule_metrics_with_http_info(request)
 
-    def list_alert_rule_metrics_with_http_info(self, request):
-        all_params = ['project_id', 'workspace_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_alert_rule_metrics_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -442,14 +400,10 @@ class SaAsyncClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.ListAlertRuleTemplatesRequest`
         :rtype: :class:`huaweicloudsdksa.v2.ListAlertRuleTemplatesResponse`
         """
-        return self.list_alert_rule_templates_with_http_info(request)
+        return self._list_alert_rule_templates_with_http_info(request)
 
-    def list_alert_rule_templates_with_http_info(self, request):
-        all_params = ['project_id', 'workspace_id', 'offset', 'limit', 'sort_key', 'sort_dir', 'severity']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_alert_rule_templates_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -516,14 +470,10 @@ class SaAsyncClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.ListAlertRulesRequest`
         :rtype: :class:`huaweicloudsdksa.v2.ListAlertRulesResponse`
         """
-        return self.list_alert_rules_with_http_info(request)
+        return self._list_alert_rules_with_http_info(request)
 
-    def list_alert_rules_with_http_info(self, request):
-        all_params = ['project_id', 'workspace_id', 'offset', 'limit', 'sort_key', 'sort_dir', 'pipe_id', 'rule_name', 'rule_id', 'status', 'severity']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_alert_rules_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -599,14 +549,10 @@ class SaAsyncClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.ShowAlertRuleRequest`
         :rtype: :class:`huaweicloudsdksa.v2.ShowAlertRuleResponse`
         """
-        return self.show_alert_rule_with_http_info(request)
+        return self._show_alert_rule_with_http_info(request)
 
-    def show_alert_rule_with_http_info(self, request):
-        all_params = ['project_id', 'workspace_id', 'rule_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_alert_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -664,14 +610,10 @@ class SaAsyncClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.ShowAlertRuleTemplateRequest`
         :rtype: :class:`huaweicloudsdksa.v2.ShowAlertRuleTemplateResponse`
         """
-        return self.show_alert_rule_template_with_http_info(request)
+        return self._show_alert_rule_template_with_http_info(request)
 
-    def show_alert_rule_template_with_http_info(self, request):
-        all_params = ['project_id', 'workspace_id', 'template_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_alert_rule_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -729,14 +671,10 @@ class SaAsyncClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.UpdateAlertRuleRequest`
         :rtype: :class:`huaweicloudsdksa.v2.UpdateAlertRuleResponse`
         """
-        return self.update_alert_rule_with_http_info(request)
+        return self._update_alert_rule_with_http_info(request)
 
-    def update_alert_rule_with_http_info(self, request):
-        all_params = ['project_id', 'workspace_id', 'rule_id', 'update_alert_rule_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_alert_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -796,14 +734,10 @@ class SaAsyncClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.ChangeAlertRequest`
         :rtype: :class:`huaweicloudsdksa.v2.ChangeAlertResponse`
         """
-        return self.change_alert_with_http_info(request)
+        return self._change_alert_with_http_info(request)
 
-    def change_alert_with_http_info(self, request):
-        all_params = ['project_id', 'workspace_id', 'alert_id', 'change_alert_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _change_alert_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -863,14 +797,10 @@ class SaAsyncClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.CreateAlertRequest`
         :rtype: :class:`huaweicloudsdksa.v2.CreateAlertResponse`
         """
-        return self.create_alert_with_http_info(request)
+        return self._create_alert_with_http_info(request)
 
-    def create_alert_with_http_info(self, request):
-        all_params = ['project_id', 'workspace_id', 'create_alert_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_alert_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -928,14 +858,10 @@ class SaAsyncClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.CreateBatchOrderAlertsRequest`
         :rtype: :class:`huaweicloudsdksa.v2.CreateBatchOrderAlertsResponse`
         """
-        return self.create_batch_order_alerts_with_http_info(request)
+        return self._create_batch_order_alerts_with_http_info(request)
 
-    def create_batch_order_alerts_with_http_info(self, request):
-        all_params = ['project_id', 'workspace_id', 'create_batch_order_alerts_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_batch_order_alerts_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -993,14 +919,10 @@ class SaAsyncClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.DeleteAlertRequest`
         :rtype: :class:`huaweicloudsdksa.v2.DeleteAlertResponse`
         """
-        return self.delete_alert_with_http_info(request)
+        return self._delete_alert_with_http_info(request)
 
-    def delete_alert_with_http_info(self, request):
-        all_params = ['project_id', 'workspace_id', 'delete_alert_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_alert_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1058,14 +980,10 @@ class SaAsyncClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.ListAlertsRequest`
         :rtype: :class:`huaweicloudsdksa.v2.ListAlertsResponse`
         """
-        return self.list_alerts_with_http_info(request)
+        return self._list_alerts_with_http_info(request)
 
-    def list_alerts_with_http_info(self, request):
-        all_params = ['project_id', 'workspace_id', 'list_alerts_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_alerts_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1123,14 +1041,10 @@ class SaAsyncClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.ShowAlertRequest`
         :rtype: :class:`huaweicloudsdksa.v2.ShowAlertResponse`
         """
-        return self.show_alert_with_http_info(request)
+        return self._show_alert_with_http_info(request)
 
-    def show_alert_with_http_info(self, request):
-        all_params = ['project_id', 'workspace_id', 'alert_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_alert_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1188,14 +1102,10 @@ class SaAsyncClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.ChangeIncidentRequest`
         :rtype: :class:`huaweicloudsdksa.v2.ChangeIncidentResponse`
         """
-        return self.change_incident_with_http_info(request)
+        return self._change_incident_with_http_info(request)
 
-    def change_incident_with_http_info(self, request):
-        all_params = ['project_id', 'workspace_id', 'incident_id', 'change_incident_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _change_incident_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1255,14 +1165,10 @@ class SaAsyncClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.CreateIncidentRequest`
         :rtype: :class:`huaweicloudsdksa.v2.CreateIncidentResponse`
         """
-        return self.create_incident_with_http_info(request)
+        return self._create_incident_with_http_info(request)
 
-    def create_incident_with_http_info(self, request):
-        all_params = ['project_id', 'workspace_id', 'create_incident_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_incident_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1320,14 +1226,10 @@ class SaAsyncClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.DeleteIncidentRequest`
         :rtype: :class:`huaweicloudsdksa.v2.DeleteIncidentResponse`
         """
-        return self.delete_incident_with_http_info(request)
+        return self._delete_incident_with_http_info(request)
 
-    def delete_incident_with_http_info(self, request):
-        all_params = ['project_id', 'workspace_id', 'delete_incident_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_incident_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1385,14 +1287,10 @@ class SaAsyncClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.ListIncidentTypesRequest`
         :rtype: :class:`huaweicloudsdksa.v2.ListIncidentTypesResponse`
         """
-        return self.list_incident_types_with_http_info(request)
+        return self._list_incident_types_with_http_info(request)
 
-    def list_incident_types_with_http_info(self, request):
-        all_params = ['project_id', 'workspace_id', 'parent_business_code', 'offset', 'limit', 'order', 'sortby', 'name', 'enabled', 'layout_name', 'is_built_in']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_incident_types_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1466,14 +1364,10 @@ class SaAsyncClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.ListIncidentsRequest`
         :rtype: :class:`huaweicloudsdksa.v2.ListIncidentsResponse`
         """
-        return self.list_incidents_with_http_info(request)
+        return self._list_incidents_with_http_info(request)
 
-    def list_incidents_with_http_info(self, request):
-        all_params = ['project_id', 'workspace_id', 'listincidents_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_incidents_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1531,14 +1425,10 @@ class SaAsyncClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.ShowIncidentRequest`
         :rtype: :class:`huaweicloudsdksa.v2.ShowIncidentResponse`
         """
-        return self.show_incident_with_http_info(request)
+        return self._show_incident_with_http_info(request)
 
-    def show_incident_with_http_info(self, request):
-        all_params = ['project_id', 'workspace_id', 'incident_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_incident_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1596,14 +1486,10 @@ class SaAsyncClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.CreateIndicatorRequest`
         :rtype: :class:`huaweicloudsdksa.v2.CreateIndicatorResponse`
         """
-        return self.create_indicator_with_http_info(request)
+        return self._create_indicator_with_http_info(request)
 
-    def create_indicator_with_http_info(self, request):
-        all_params = ['project_id', 'workspace_id', 'create_indicator_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_indicator_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1661,14 +1547,10 @@ class SaAsyncClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.DeleteIndicatorRequest`
         :rtype: :class:`huaweicloudsdksa.v2.DeleteIndicatorResponse`
         """
-        return self.delete_indicator_with_http_info(request)
+        return self._delete_indicator_with_http_info(request)
 
-    def delete_indicator_with_http_info(self, request):
-        all_params = ['project_id', 'workspace_id', 'delete_indicator_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_indicator_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1726,14 +1608,10 @@ class SaAsyncClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.ListIndicatorsRequest`
         :rtype: :class:`huaweicloudsdksa.v2.ListIndicatorsResponse`
         """
-        return self.list_indicators_with_http_info(request)
+        return self._list_indicators_with_http_info(request)
 
-    def list_indicators_with_http_info(self, request):
-        all_params = ['project_id', 'workspace_id', 'list_indicators_request_body', 'order', 'from_date', 'to_date']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_indicators_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1797,14 +1675,10 @@ class SaAsyncClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.ShowIndicatorDetailRequest`
         :rtype: :class:`huaweicloudsdksa.v2.ShowIndicatorDetailResponse`
         """
-        return self.show_indicator_detail_with_http_info(request)
+        return self._show_indicator_detail_with_http_info(request)
 
-    def show_indicator_detail_with_http_info(self, request):
-        all_params = ['project_id', 'workspace_id', 'indicator_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_indicator_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1862,14 +1736,10 @@ class SaAsyncClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.UpdateIndicatorRequest`
         :rtype: :class:`huaweicloudsdksa.v2.UpdateIndicatorResponse`
         """
-        return self.update_indicator_with_http_info(request)
+        return self._update_indicator_with_http_info(request)
 
-    def update_indicator_with_http_info(self, request):
-        all_params = ['project_id', 'workspace_id', 'indicator_id', 'update_indicator_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_indicator_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1929,14 +1799,10 @@ class SaAsyncClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.CreatePlaybookRequest`
         :rtype: :class:`huaweicloudsdksa.v2.CreatePlaybookResponse`
         """
-        return self.create_playbook_with_http_info(request)
+        return self._create_playbook_with_http_info(request)
 
-    def create_playbook_with_http_info(self, request):
-        all_params = ['project_id', 'workspace_id', 'create_playbook_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_playbook_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1994,14 +1860,10 @@ class SaAsyncClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.DeletePlaybookRequest`
         :rtype: :class:`huaweicloudsdksa.v2.DeletePlaybookResponse`
         """
-        return self.delete_playbook_with_http_info(request)
+        return self._delete_playbook_with_http_info(request)
 
-    def delete_playbook_with_http_info(self, request):
-        all_params = ['project_id', 'workspace_id', 'playbook_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_playbook_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2059,14 +1921,10 @@ class SaAsyncClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.ListPlaybooksRequest`
         :rtype: :class:`huaweicloudsdksa.v2.ListPlaybooksResponse`
         """
-        return self.list_playbooks_with_http_info(request)
+        return self._list_playbooks_with_http_info(request)
 
-    def list_playbooks_with_http_info(self, request):
-        all_params = ['project_id', 'workspace_id', 'search_txt', 'component_id', 'enabled', 'offset', 'limit', 'description', 'dataclass_name', 'name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_playbooks_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2138,14 +1996,10 @@ class SaAsyncClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.ShowPlaybookRequest`
         :rtype: :class:`huaweicloudsdksa.v2.ShowPlaybookResponse`
         """
-        return self.show_playbook_with_http_info(request)
+        return self._show_playbook_with_http_info(request)
 
-    def show_playbook_with_http_info(self, request):
-        all_params = ['project_id', 'workspace_id', 'playbook_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_playbook_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2203,14 +2057,10 @@ class SaAsyncClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.ShowPlaybookMonitorsRequest`
         :rtype: :class:`huaweicloudsdksa.v2.ShowPlaybookMonitorsResponse`
         """
-        return self.show_playbook_monitors_with_http_info(request)
+        return self._show_playbook_monitors_with_http_info(request)
 
-    def show_playbook_monitors_with_http_info(self, request):
-        all_params = ['project_id', 'workspace_id', 'playbook_id', 'start_time', 'version_query_type', 'end_time']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_playbook_monitors_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2274,14 +2124,10 @@ class SaAsyncClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.ShowPlaybookStatisticsRequest`
         :rtype: :class:`huaweicloudsdksa.v2.ShowPlaybookStatisticsResponse`
         """
-        return self.show_playbook_statistics_with_http_info(request)
+        return self._show_playbook_statistics_with_http_info(request)
 
-    def show_playbook_statistics_with_http_info(self, request):
-        all_params = ['project_id', 'workspace_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_playbook_statistics_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2337,14 +2183,10 @@ class SaAsyncClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.UpdatePlaybookRequest`
         :rtype: :class:`huaweicloudsdksa.v2.UpdatePlaybookResponse`
         """
-        return self.update_playbook_with_http_info(request)
+        return self._update_playbook_with_http_info(request)
 
-    def update_playbook_with_http_info(self, request):
-        all_params = ['project_id', 'workspace_id', 'playbook_id', 'update_playbook_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_playbook_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2404,14 +2246,10 @@ class SaAsyncClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.CreatePlaybookActionRequest`
         :rtype: :class:`huaweicloudsdksa.v2.CreatePlaybookActionResponse`
         """
-        return self.create_playbook_action_with_http_info(request)
+        return self._create_playbook_action_with_http_info(request)
 
-    def create_playbook_action_with_http_info(self, request):
-        all_params = ['project_id', 'workspace_id', 'version_id', 'create_playbook_action_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_playbook_action_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2471,14 +2309,10 @@ class SaAsyncClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.DeletePlaybookActionRequest`
         :rtype: :class:`huaweicloudsdksa.v2.DeletePlaybookActionResponse`
         """
-        return self.delete_playbook_action_with_http_info(request)
+        return self._delete_playbook_action_with_http_info(request)
 
-    def delete_playbook_action_with_http_info(self, request):
-        all_params = ['project_id', 'workspace_id', 'version_id', 'action_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_playbook_action_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2538,14 +2372,10 @@ class SaAsyncClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.ListPlaybookActionsRequest`
         :rtype: :class:`huaweicloudsdksa.v2.ListPlaybookActionsResponse`
         """
-        return self.list_playbook_actions_with_http_info(request)
+        return self._list_playbook_actions_with_http_info(request)
 
-    def list_playbook_actions_with_http_info(self, request):
-        all_params = ['project_id', 'workspace_id', 'version_id', 'limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_playbook_actions_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2607,14 +2437,10 @@ class SaAsyncClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.UpdatePlaybookActionRequest`
         :rtype: :class:`huaweicloudsdksa.v2.UpdatePlaybookActionResponse`
         """
-        return self.update_playbook_action_with_http_info(request)
+        return self._update_playbook_action_with_http_info(request)
 
-    def update_playbook_action_with_http_info(self, request):
-        all_params = ['project_id', 'workspace_id', 'version_id', 'action_id', 'update_playbook_action_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_playbook_action_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2676,14 +2502,10 @@ class SaAsyncClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.CreatePlaybookApproveRequest`
         :rtype: :class:`huaweicloudsdksa.v2.CreatePlaybookApproveResponse`
         """
-        return self.create_playbook_approve_with_http_info(request)
+        return self._create_playbook_approve_with_http_info(request)
 
-    def create_playbook_approve_with_http_info(self, request):
-        all_params = ['project_id', 'workspace_id', 'version_id', 'create_playbook_approve_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_playbook_approve_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2743,14 +2565,10 @@ class SaAsyncClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.ListPlaybookApprovesRequest`
         :rtype: :class:`huaweicloudsdksa.v2.ListPlaybookApprovesResponse`
         """
-        return self.list_playbook_approves_with_http_info(request)
+        return self._list_playbook_approves_with_http_info(request)
 
-    def list_playbook_approves_with_http_info(self, request):
-        all_params = ['project_id', 'workspace_id', 'resource_id', 'approve_type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_playbook_approves_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2810,14 +2628,10 @@ class SaAsyncClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.ChangePlaybookInstanceRequest`
         :rtype: :class:`huaweicloudsdksa.v2.ChangePlaybookInstanceResponse`
         """
-        return self.change_playbook_instance_with_http_info(request)
+        return self._change_playbook_instance_with_http_info(request)
 
-    def change_playbook_instance_with_http_info(self, request):
-        all_params = ['project_id', 'workspace_id', 'instance_id', 'change_playbook_instance_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _change_playbook_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2877,14 +2691,10 @@ class SaAsyncClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.ListPlaybookAuditLogsRequest`
         :rtype: :class:`huaweicloudsdksa.v2.ListPlaybookAuditLogsResponse`
         """
-        return self.list_playbook_audit_logs_with_http_info(request)
+        return self._list_playbook_audit_logs_with_http_info(request)
 
-    def list_playbook_audit_logs_with_http_info(self, request):
-        all_params = ['project_id', 'workspace_id', 'offset', 'limit', 'sort_key', 'sort_dir', 'list_playbook_audit_logs_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_playbook_audit_logs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2950,14 +2760,10 @@ class SaAsyncClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.ListPlaybookInstancesRequest`
         :rtype: :class:`huaweicloudsdksa.v2.ListPlaybookInstancesResponse`
         """
-        return self.list_playbook_instances_with_http_info(request)
+        return self._list_playbook_instances_with_http_info(request)
 
-    def list_playbook_instances_with_http_info(self, request):
-        all_params = ['project_id', 'workspace_id', 'status', 'date_type', 'name', 'playbook_name', 'dataclass_name', 'dataobject_name', 'trigger_type', 'from_date', 'to_date', 'limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_playbook_instances_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3035,14 +2841,10 @@ class SaAsyncClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.ShowPlaybookInstanceRequest`
         :rtype: :class:`huaweicloudsdksa.v2.ShowPlaybookInstanceResponse`
         """
-        return self.show_playbook_instance_with_http_info(request)
+        return self._show_playbook_instance_with_http_info(request)
 
-    def show_playbook_instance_with_http_info(self, request):
-        all_params = ['project_id', 'workspace_id', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_playbook_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3100,14 +2902,10 @@ class SaAsyncClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.ShowPlaybookTopologyRequest`
         :rtype: :class:`huaweicloudsdksa.v2.ShowPlaybookTopologyResponse`
         """
-        return self.show_playbook_topology_with_http_info(request)
+        return self._show_playbook_topology_with_http_info(request)
 
-    def show_playbook_topology_with_http_info(self, request):
-        all_params = ['project_id', 'workspace_id', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_playbook_topology_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3165,14 +2963,10 @@ class SaAsyncClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.CreatePlaybookRuleRequest`
         :rtype: :class:`huaweicloudsdksa.v2.CreatePlaybookRuleResponse`
         """
-        return self.create_playbook_rule_with_http_info(request)
+        return self._create_playbook_rule_with_http_info(request)
 
-    def create_playbook_rule_with_http_info(self, request):
-        all_params = ['project_id', 'workspace_id', 'version_id', 'create_playbook_rule_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_playbook_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3232,14 +3026,10 @@ class SaAsyncClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.DeletePlaybookRuleRequest`
         :rtype: :class:`huaweicloudsdksa.v2.DeletePlaybookRuleResponse`
         """
-        return self.delete_playbook_rule_with_http_info(request)
+        return self._delete_playbook_rule_with_http_info(request)
 
-    def delete_playbook_rule_with_http_info(self, request):
-        all_params = ['project_id', 'workspace_id', 'version_id', 'rule_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_playbook_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3299,14 +3089,10 @@ class SaAsyncClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.ShowPlaybookRuleRequest`
         :rtype: :class:`huaweicloudsdksa.v2.ShowPlaybookRuleResponse`
         """
-        return self.show_playbook_rule_with_http_info(request)
+        return self._show_playbook_rule_with_http_info(request)
 
-    def show_playbook_rule_with_http_info(self, request):
-        all_params = ['project_id', 'workspace_id', 'version_id', 'rule_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_playbook_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3366,14 +3152,10 @@ class SaAsyncClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.UpdatePlaybookRuleRequest`
         :rtype: :class:`huaweicloudsdksa.v2.UpdatePlaybookRuleResponse`
         """
-        return self.update_playbook_rule_with_http_info(request)
+        return self._update_playbook_rule_with_http_info(request)
 
-    def update_playbook_rule_with_http_info(self, request):
-        all_params = ['project_id', 'workspace_id', 'version_id', 'rule_id', 'update_playbook_rule_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_playbook_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3435,14 +3217,10 @@ class SaAsyncClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.CopyPlaybookVersionRequest`
         :rtype: :class:`huaweicloudsdksa.v2.CopyPlaybookVersionResponse`
         """
-        return self.copy_playbook_version_with_http_info(request)
+        return self._copy_playbook_version_with_http_info(request)
 
-    def copy_playbook_version_with_http_info(self, request):
-        all_params = ['project_id', 'workspace_id', 'version_id', 'copy_playbook_version_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _copy_playbook_version_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3502,14 +3280,10 @@ class SaAsyncClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.CreatePlaybookVersionRequest`
         :rtype: :class:`huaweicloudsdksa.v2.CreatePlaybookVersionResponse`
         """
-        return self.create_playbook_version_with_http_info(request)
+        return self._create_playbook_version_with_http_info(request)
 
-    def create_playbook_version_with_http_info(self, request):
-        all_params = ['project_id', 'workspace_id', 'playbook_id', 'create_playbook_version_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_playbook_version_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3569,14 +3343,10 @@ class SaAsyncClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.DeletePlaybookVersionRequest`
         :rtype: :class:`huaweicloudsdksa.v2.DeletePlaybookVersionResponse`
         """
-        return self.delete_playbook_version_with_http_info(request)
+        return self._delete_playbook_version_with_http_info(request)
 
-    def delete_playbook_version_with_http_info(self, request):
-        all_params = ['project_id', 'workspace_id', 'version_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_playbook_version_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3634,14 +3404,10 @@ class SaAsyncClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.ListPlaybookVersionsRequest`
         :rtype: :class:`huaweicloudsdksa.v2.ListPlaybookVersionsResponse`
         """
-        return self.list_playbook_versions_with_http_info(request)
+        return self._list_playbook_versions_with_http_info(request)
 
-    def list_playbook_versions_with_http_info(self, request):
-        all_params = ['project_id', 'workspace_id', 'playbook_id', 'status', 'enabled', 'version_type', 'approve_role', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_playbook_versions_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3711,14 +3477,10 @@ class SaAsyncClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.ShowPlaybookVersionRequest`
         :rtype: :class:`huaweicloudsdksa.v2.ShowPlaybookVersionResponse`
         """
-        return self.show_playbook_version_with_http_info(request)
+        return self._show_playbook_version_with_http_info(request)
 
-    def show_playbook_version_with_http_info(self, request):
-        all_params = ['project_id', 'workspace_id', 'version_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_playbook_version_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3776,14 +3538,10 @@ class SaAsyncClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.UpdatePlaybookVersionRequest`
         :rtype: :class:`huaweicloudsdksa.v2.UpdatePlaybookVersionResponse`
         """
-        return self.update_playbook_version_with_http_info(request)
+        return self._update_playbook_version_with_http_info(request)
 
-    def update_playbook_version_with_http_info(self, request):
-        all_params = ['project_id', 'workspace_id', 'version_id', 'update_playbook_version_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_playbook_version_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3843,14 +3601,10 @@ class SaAsyncClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.CreateDataobjectRelationRequest`
         :rtype: :class:`huaweicloudsdksa.v2.CreateDataobjectRelationResponse`
         """
-        return self.create_dataobject_relation_with_http_info(request)
+        return self._create_dataobject_relation_with_http_info(request)
 
-    def create_dataobject_relation_with_http_info(self, request):
-        all_params = ['project_id', 'workspace_id', 'dataclass_type', 'data_object_id', 'related_dataclass_type', 'create_dataobject_relation_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_dataobject_relation_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3914,14 +3668,10 @@ class SaAsyncClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.DeleteDataobjectRelationRequest`
         :rtype: :class:`huaweicloudsdksa.v2.DeleteDataobjectRelationResponse`
         """
-        return self.delete_dataobject_relation_with_http_info(request)
+        return self._delete_dataobject_relation_with_http_info(request)
 
-    def delete_dataobject_relation_with_http_info(self, request):
-        all_params = ['project_id', 'workspace_id', 'dataclass_type', 'data_object_id', 'related_dataclass_type', 'delete_dataobject_relation_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_dataobject_relation_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3985,14 +3735,10 @@ class SaAsyncClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.ListDataobjectRelationRequest`
         :rtype: :class:`huaweicloudsdksa.v2.ListDataobjectRelationResponse`
         """
-        return self.list_dataobject_relation_with_http_info(request)
+        return self._list_dataobject_relation_with_http_info(request)
 
-    def list_dataobject_relation_with_http_info(self, request):
-        all_params = ['project_id', 'workspace_id', 'dataclass_type', 'data_object_id', 'related_dataclass_type', 'list_dataobject_relation_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_dataobject_relation_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

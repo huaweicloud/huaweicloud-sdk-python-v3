@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class CbhClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(CbhClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkcbh.v1.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -53,14 +35,10 @@ class CbhClient(Client):
         :type request: :class:`huaweicloudsdkcbh.v1.ChangeInstanceNetworkRequest`
         :rtype: :class:`huaweicloudsdkcbh.v1.ChangeInstanceNetworkResponse`
         """
-        return self.change_instance_network_with_http_info(request)
+        return self._change_instance_network_with_http_info(request)
 
-    def change_instance_network_with_http_info(self, request):
-        all_params = ['server_id', 'change_instance_network_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _change_instance_network_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -115,14 +93,10 @@ class CbhClient(Client):
         :type request: :class:`huaweicloudsdkcbh.v1.ChangeInstanceOrderRequest`
         :rtype: :class:`huaweicloudsdkcbh.v1.ChangeInstanceOrderResponse`
         """
-        return self.change_instance_order_with_http_info(request)
+        return self._change_instance_order_with_http_info(request)
 
-    def change_instance_order_with_http_info(self, request):
-        all_params = ['server_id', 'instance_key']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _change_instance_order_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -177,14 +151,10 @@ class CbhClient(Client):
         :type request: :class:`huaweicloudsdkcbh.v1.CreateInstanceRequest`
         :rtype: :class:`huaweicloudsdkcbh.v1.CreateInstanceResponse`
         """
-        return self.create_instance_with_http_info(request)
+        return self._create_instance_with_http_info(request)
 
-    def create_instance_with_http_info(self, request):
-        all_params = ['create_instance_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -237,14 +207,10 @@ class CbhClient(Client):
         :type request: :class:`huaweicloudsdkcbh.v1.CreateInstanceOrderRequest`
         :rtype: :class:`huaweicloudsdkcbh.v1.CreateInstanceOrderResponse`
         """
-        return self.create_instance_order_with_http_info(request)
+        return self._create_instance_order_with_http_info(request)
 
-    def create_instance_order_with_http_info(self, request):
-        all_params = ['create_instance_order_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_instance_order_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -297,14 +263,10 @@ class CbhClient(Client):
         :type request: :class:`huaweicloudsdkcbh.v1.InstallInstanceEipRequest`
         :rtype: :class:`huaweicloudsdkcbh.v1.InstallInstanceEipResponse`
         """
-        return self.install_instance_eip_with_http_info(request)
+        return self._install_instance_eip_with_http_info(request)
 
-    def install_instance_eip_with_http_info(self, request):
-        all_params = ['server_id', 'install_instance_eip_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _install_instance_eip_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -359,14 +321,10 @@ class CbhClient(Client):
         :type request: :class:`huaweicloudsdkcbh.v1.ListCbhInstanceRequest`
         :rtype: :class:`huaweicloudsdkcbh.v1.ListCbhInstanceResponse`
         """
-        return self.list_cbh_instance_with_http_info(request)
+        return self._list_cbh_instance_with_http_info(request)
 
-    def list_cbh_instance_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_cbh_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -417,14 +375,10 @@ class CbhClient(Client):
         :type request: :class:`huaweicloudsdkcbh.v1.ListQuotaStatusRequest`
         :rtype: :class:`huaweicloudsdkcbh.v1.ListQuotaStatusResponse`
         """
-        return self.list_quota_status_with_http_info(request)
+        return self._list_quota_status_with_http_info(request)
 
-    def list_quota_status_with_http_info(self, request):
-        all_params = ['availability_zone', 'resource_spec_code']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_quota_status_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -479,14 +433,10 @@ class CbhClient(Client):
         :type request: :class:`huaweicloudsdkcbh.v1.ResetLoginMethodRequest`
         :rtype: :class:`huaweicloudsdkcbh.v1.ResetLoginMethodResponse`
         """
-        return self.reset_login_method_with_http_info(request)
+        return self._reset_login_method_with_http_info(request)
 
-    def reset_login_method_with_http_info(self, request):
-        all_params = ['server_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _reset_login_method_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -539,14 +489,10 @@ class CbhClient(Client):
         :type request: :class:`huaweicloudsdkcbh.v1.ResetPasswordRequest`
         :rtype: :class:`huaweicloudsdkcbh.v1.ResetPasswordResponse`
         """
-        return self.reset_password_with_http_info(request)
+        return self._reset_password_with_http_info(request)
 
-    def reset_password_with_http_info(self, request):
-        all_params = ['reset_password_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _reset_password_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -599,14 +545,10 @@ class CbhClient(Client):
         :type request: :class:`huaweicloudsdkcbh.v1.RestartCbhInstanceRequest`
         :rtype: :class:`huaweicloudsdkcbh.v1.RestartCbhInstanceResponse`
         """
-        return self.restart_cbh_instance_with_http_info(request)
+        return self._restart_cbh_instance_with_http_info(request)
 
-    def restart_cbh_instance_with_http_info(self, request):
-        all_params = ['restart_cbh_instance_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _restart_cbh_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -659,14 +601,10 @@ class CbhClient(Client):
         :type request: :class:`huaweicloudsdkcbh.v1.SearchQuotaRequest`
         :rtype: :class:`huaweicloudsdkcbh.v1.SearchQuotaResponse`
         """
-        return self.search_quota_with_http_info(request)
+        return self._search_quota_with_http_info(request)
 
-    def search_quota_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _search_quota_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -717,14 +655,10 @@ class CbhClient(Client):
         :type request: :class:`huaweicloudsdkcbh.v1.ShowAvailableZoneInfoRequest`
         :rtype: :class:`huaweicloudsdkcbh.v1.ShowAvailableZoneInfoResponse`
         """
-        return self.show_available_zone_info_with_http_info(request)
+        return self._show_available_zone_info_with_http_info(request)
 
-    def show_available_zone_info_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_available_zone_info_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -775,14 +709,10 @@ class CbhClient(Client):
         :type request: :class:`huaweicloudsdkcbh.v1.ShowNetworkConfigurationRequest`
         :rtype: :class:`huaweicloudsdkcbh.v1.ShowNetworkConfigurationResponse`
         """
-        return self.show_network_configuration_with_http_info(request)
+        return self._show_network_configuration_with_http_info(request)
 
-    def show_network_configuration_with_http_info(self, request):
-        all_params = ['show_network_configuration_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_network_configuration_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -835,14 +765,10 @@ class CbhClient(Client):
         :type request: :class:`huaweicloudsdkcbh.v1.StartCbhInstanceRequest`
         :rtype: :class:`huaweicloudsdkcbh.v1.StartCbhInstanceResponse`
         """
-        return self.start_cbh_instance_with_http_info(request)
+        return self._start_cbh_instance_with_http_info(request)
 
-    def start_cbh_instance_with_http_info(self, request):
-        all_params = ['start_cbh_instance_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _start_cbh_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -895,14 +821,10 @@ class CbhClient(Client):
         :type request: :class:`huaweicloudsdkcbh.v1.StopCbhInstanceRequest`
         :rtype: :class:`huaweicloudsdkcbh.v1.StopCbhInstanceResponse`
         """
-        return self.stop_cbh_instance_with_http_info(request)
+        return self._stop_cbh_instance_with_http_info(request)
 
-    def stop_cbh_instance_with_http_info(self, request):
-        all_params = ['stop_cbh_instance_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _stop_cbh_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -955,14 +877,10 @@ class CbhClient(Client):
         :type request: :class:`huaweicloudsdkcbh.v1.UninstallInstanceEipRequest`
         :rtype: :class:`huaweicloudsdkcbh.v1.UninstallInstanceEipResponse`
         """
-        return self.uninstall_instance_eip_with_http_info(request)
+        return self._uninstall_instance_eip_with_http_info(request)
 
-    def uninstall_instance_eip_with_http_info(self, request):
-        all_params = ['server_id', 'uninstall_instance_eip_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _uninstall_instance_eip_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1017,14 +935,10 @@ class CbhClient(Client):
         :type request: :class:`huaweicloudsdkcbh.v1.UpgradeCbhInstanceRequest`
         :rtype: :class:`huaweicloudsdkcbh.v1.UpgradeCbhInstanceResponse`
         """
-        return self.upgrade_cbh_instance_with_http_info(request)
+        return self._upgrade_cbh_instance_with_http_info(request)
 
-    def upgrade_cbh_instance_with_http_info(self, request):
-        all_params = ['upgrade_cbh_instance_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _upgrade_cbh_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

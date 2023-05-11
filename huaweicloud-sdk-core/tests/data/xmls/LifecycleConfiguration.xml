@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LifecycleConfiguration>
+    <Rule>
+        <ID>id</ID>
+        <Prefix>prefix</Prefix>
+        <Status>status</Status>
+        <Expiration>
+            <Days>days</Days>
+        </Expiration>
+        <NoncurrentVersionExpiration>
+            <NoncurrentDays>days</NoncurrentDays>
+        </NoncurrentVersionExpiration>
+        <Transition>
+            <Days>30</Days>
+            <StorageClass>WARM</StorageClass>
+        </Transition>
+        <Transition>
+            <Days>60</Days>
+            <StorageClass>COLD</StorageClass>
+        </Transition>
+        <NoncurrentVersionTransition>
+            <NoncurrentDays>30</NoncurrentDays>
+            <StorageClass>WARM</StorageClass>
+        </NoncurrentVersionTransition>
+        <NoncurrentVersionTransition>
+            <NoncurrentDays>60</NoncurrentDays>
+            <StorageClass>COLD</StorageClass>
+        </NoncurrentVersionTransition>
+        <AbortIncompleteMultipartUpload>
+            <DaysAfterInitiation>10</DaysAfterInitiation>
+        </AbortIncompleteMultipartUpload>
+    </Rule>
+</LifecycleConfiguration>

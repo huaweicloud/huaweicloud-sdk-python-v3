@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class DcClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(DcClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkdc.v3.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -54,14 +36,10 @@ class DcClient(Client):
         :type request: :class:`huaweicloudsdkdc.v3.CreateHostedDirectConnectRequest`
         :rtype: :class:`huaweicloudsdkdc.v3.CreateHostedDirectConnectResponse`
         """
-        return self.create_hosted_direct_connect_with_http_info(request)
+        return self._create_hosted_direct_connect_with_http_info(request)
 
-    def create_hosted_direct_connect_with_http_info(self, request):
-        all_params = ['create_hosted_direct_connect_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_hosted_direct_connect_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -114,14 +92,10 @@ class DcClient(Client):
         :type request: :class:`huaweicloudsdkdc.v3.DeleteDirectConnectRequest`
         :rtype: :class:`huaweicloudsdkdc.v3.DeleteDirectConnectResponse`
         """
-        return self.delete_direct_connect_with_http_info(request)
+        return self._delete_direct_connect_with_http_info(request)
 
-    def delete_direct_connect_with_http_info(self, request):
-        all_params = ['direct_connect_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_direct_connect_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -174,14 +148,10 @@ class DcClient(Client):
         :type request: :class:`huaweicloudsdkdc.v3.DeleteHostedDirectConnectRequest`
         :rtype: :class:`huaweicloudsdkdc.v3.DeleteHostedDirectConnectResponse`
         """
-        return self.delete_hosted_direct_connect_with_http_info(request)
+        return self._delete_hosted_direct_connect_with_http_info(request)
 
-    def delete_hosted_direct_connect_with_http_info(self, request):
-        all_params = ['hosted_connect_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_hosted_direct_connect_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -234,14 +204,10 @@ class DcClient(Client):
         :type request: :class:`huaweicloudsdkdc.v3.ListDirectConnectsRequest`
         :rtype: :class:`huaweicloudsdkdc.v3.ListDirectConnectsResponse`
         """
-        return self.list_direct_connects_with_http_info(request)
+        return self._list_direct_connects_with_http_info(request)
 
-    def list_direct_connects_with_http_info(self, request):
-        all_params = ['limit', 'marker', 'fields', 'sort_key', 'sort_dir', 'hosting_id', 'enterprise_project_id', 'id', 'name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_direct_connects_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -316,14 +282,10 @@ class DcClient(Client):
         :type request: :class:`huaweicloudsdkdc.v3.ListHostedDirectConnectsRequest`
         :rtype: :class:`huaweicloudsdkdc.v3.ListHostedDirectConnectsResponse`
         """
-        return self.list_hosted_direct_connects_with_http_info(request)
+        return self._list_hosted_direct_connects_with_http_info(request)
 
-    def list_hosted_direct_connects_with_http_info(self, request):
-        all_params = ['limit', 'marker', 'fields', 'sort_dir', 'sort_key', 'hosting_id', 'id', 'name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_hosted_direct_connects_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -395,14 +357,10 @@ class DcClient(Client):
         :type request: :class:`huaweicloudsdkdc.v3.ShowDirectConnectRequest`
         :rtype: :class:`huaweicloudsdkdc.v3.ShowDirectConnectResponse`
         """
-        return self.show_direct_connect_with_http_info(request)
+        return self._show_direct_connect_with_http_info(request)
 
-    def show_direct_connect_with_http_info(self, request):
-        all_params = ['direct_connect_id', 'limit', 'marker', 'fields']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_direct_connect_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -462,14 +420,10 @@ class DcClient(Client):
         :type request: :class:`huaweicloudsdkdc.v3.ShowHostedDirectConnectRequest`
         :rtype: :class:`huaweicloudsdkdc.v3.ShowHostedDirectConnectResponse`
         """
-        return self.show_hosted_direct_connect_with_http_info(request)
+        return self._show_hosted_direct_connect_with_http_info(request)
 
-    def show_hosted_direct_connect_with_http_info(self, request):
-        all_params = ['hosted_connect_id', 'limit', 'marker', 'fields', 'sort_dir', 'sort_key', 'hosting_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_hosted_direct_connect_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -537,14 +491,10 @@ class DcClient(Client):
         :type request: :class:`huaweicloudsdkdc.v3.UpdateDirectConnectRequest`
         :rtype: :class:`huaweicloudsdkdc.v3.UpdateDirectConnectResponse`
         """
-        return self.update_direct_connect_with_http_info(request)
+        return self._update_direct_connect_with_http_info(request)
 
-    def update_direct_connect_with_http_info(self, request):
-        all_params = ['direct_connect_id', 'update_direct_connect_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_direct_connect_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -599,14 +549,10 @@ class DcClient(Client):
         :type request: :class:`huaweicloudsdkdc.v3.UpdateHostedDirectConnectRequest`
         :rtype: :class:`huaweicloudsdkdc.v3.UpdateHostedDirectConnectResponse`
         """
-        return self.update_hosted_direct_connect_with_http_info(request)
+        return self._update_hosted_direct_connect_with_http_info(request)
 
-    def update_hosted_direct_connect_with_http_info(self, request):
-        all_params = ['hosted_connect_id', 'update_hosted_direct_connect_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_hosted_direct_connect_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -663,14 +609,10 @@ class DcClient(Client):
         :type request: :class:`huaweicloudsdkdc.v3.BatchCreateResourceTagsRequest`
         :rtype: :class:`huaweicloudsdkdc.v3.BatchCreateResourceTagsResponse`
         """
-        return self.batch_create_resource_tags_with_http_info(request)
+        return self._batch_create_resource_tags_with_http_info(request)
 
-    def batch_create_resource_tags_with_http_info(self, request):
-        all_params = ['resource_id', 'resource_type', 'batch_create_resource_tags_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_create_resource_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -729,14 +671,10 @@ class DcClient(Client):
         :type request: :class:`huaweicloudsdkdc.v3.CreateResourceTagRequest`
         :rtype: :class:`huaweicloudsdkdc.v3.CreateResourceTagResponse`
         """
-        return self.create_resource_tag_with_http_info(request)
+        return self._create_resource_tag_with_http_info(request)
 
-    def create_resource_tag_with_http_info(self, request):
-        all_params = ['resource_id', 'resource_type', 'create_resource_tag_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_resource_tag_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -793,14 +731,10 @@ class DcClient(Client):
         :type request: :class:`huaweicloudsdkdc.v3.DeleteResourceTagRequest`
         :rtype: :class:`huaweicloudsdkdc.v3.DeleteResourceTagResponse`
         """
-        return self.delete_resource_tag_with_http_info(request)
+        return self._delete_resource_tag_with_http_info(request)
 
-    def delete_resource_tag_with_http_info(self, request):
-        all_params = ['key', 'resource_id', 'resource_type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_resource_tag_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -858,14 +792,10 @@ class DcClient(Client):
         :type request: :class:`huaweicloudsdkdc.v3.ListProjectTagsRequest`
         :rtype: :class:`huaweicloudsdkdc.v3.ListProjectTagsResponse`
         """
-        return self.list_project_tags_with_http_info(request)
+        return self._list_project_tags_with_http_info(request)
 
-    def list_project_tags_with_http_info(self, request):
-        all_params = ['resource_type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_project_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -918,14 +848,10 @@ class DcClient(Client):
         :type request: :class:`huaweicloudsdkdc.v3.ListTagResourceInstancesRequest`
         :rtype: :class:`huaweicloudsdkdc.v3.ListTagResourceInstancesResponse`
         """
-        return self.list_tag_resource_instances_with_http_info(request)
+        return self._list_tag_resource_instances_with_http_info(request)
 
-    def list_tag_resource_instances_with_http_info(self, request):
-        all_params = ['resource_type', 'list_tag_resource_instances_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_tag_resource_instances_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -980,14 +906,10 @@ class DcClient(Client):
         :type request: :class:`huaweicloudsdkdc.v3.ShowResourceTagRequest`
         :rtype: :class:`huaweicloudsdkdc.v3.ShowResourceTagResponse`
         """
-        return self.show_resource_tag_with_http_info(request)
+        return self._show_resource_tag_with_http_info(request)
 
-    def show_resource_tag_with_http_info(self, request):
-        all_params = ['resource_type', 'resource_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_resource_tag_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1042,14 +964,10 @@ class DcClient(Client):
         :type request: :class:`huaweicloudsdkdc.v3.CreateVirtualGatewayRequest`
         :rtype: :class:`huaweicloudsdkdc.v3.CreateVirtualGatewayResponse`
         """
-        return self.create_virtual_gateway_with_http_info(request)
+        return self._create_virtual_gateway_with_http_info(request)
 
-    def create_virtual_gateway_with_http_info(self, request):
-        all_params = ['create_virtual_gateway_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_virtual_gateway_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1102,14 +1020,10 @@ class DcClient(Client):
         :type request: :class:`huaweicloudsdkdc.v3.DeleteVirtualGatewayRequest`
         :rtype: :class:`huaweicloudsdkdc.v3.DeleteVirtualGatewayResponse`
         """
-        return self.delete_virtual_gateway_with_http_info(request)
+        return self._delete_virtual_gateway_with_http_info(request)
 
-    def delete_virtual_gateway_with_http_info(self, request):
-        all_params = ['virtual_gateway_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_virtual_gateway_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1162,14 +1076,10 @@ class DcClient(Client):
         :type request: :class:`huaweicloudsdkdc.v3.ListVirtualGatewaysRequest`
         :rtype: :class:`huaweicloudsdkdc.v3.ListVirtualGatewaysResponse`
         """
-        return self.list_virtual_gateways_with_http_info(request)
+        return self._list_virtual_gateways_with_http_info(request)
 
-    def list_virtual_gateways_with_http_info(self, request):
-        all_params = ['limit', 'marker', 'fields', 'sort_dir', 'sort_key', 'id', 'vpc_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_virtual_gateways_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1238,14 +1148,10 @@ class DcClient(Client):
         :type request: :class:`huaweicloudsdkdc.v3.ShowVirtualGatewayRequest`
         :rtype: :class:`huaweicloudsdkdc.v3.ShowVirtualGatewayResponse`
         """
-        return self.show_virtual_gateway_with_http_info(request)
+        return self._show_virtual_gateway_with_http_info(request)
 
-    def show_virtual_gateway_with_http_info(self, request):
-        all_params = ['virtual_gateway_id', 'fields']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_virtual_gateway_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1301,14 +1207,10 @@ class DcClient(Client):
         :type request: :class:`huaweicloudsdkdc.v3.UpdateVirtualGatewayRequest`
         :rtype: :class:`huaweicloudsdkdc.v3.UpdateVirtualGatewayResponse`
         """
-        return self.update_virtual_gateway_with_http_info(request)
+        return self._update_virtual_gateway_with_http_info(request)
 
-    def update_virtual_gateway_with_http_info(self, request):
-        all_params = ['virtual_gateway_id', 'update_virtual_gateway_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_virtual_gateway_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1363,14 +1265,10 @@ class DcClient(Client):
         :type request: :class:`huaweicloudsdkdc.v3.CreateVirtualInterfaceRequest`
         :rtype: :class:`huaweicloudsdkdc.v3.CreateVirtualInterfaceResponse`
         """
-        return self.create_virtual_interface_with_http_info(request)
+        return self._create_virtual_interface_with_http_info(request)
 
-    def create_virtual_interface_with_http_info(self, request):
-        all_params = ['create_virtual_interface_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_virtual_interface_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1423,14 +1321,10 @@ class DcClient(Client):
         :type request: :class:`huaweicloudsdkdc.v3.DeleteVirtualInterfaceRequest`
         :rtype: :class:`huaweicloudsdkdc.v3.DeleteVirtualInterfaceResponse`
         """
-        return self.delete_virtual_interface_with_http_info(request)
+        return self._delete_virtual_interface_with_http_info(request)
 
-    def delete_virtual_interface_with_http_info(self, request):
-        all_params = ['virtual_interface_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_virtual_interface_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1483,14 +1377,10 @@ class DcClient(Client):
         :type request: :class:`huaweicloudsdkdc.v3.ListVirtualInterfacesRequest`
         :rtype: :class:`huaweicloudsdkdc.v3.ListVirtualInterfacesResponse`
         """
-        return self.list_virtual_interfaces_with_http_info(request)
+        return self._list_virtual_interfaces_with_http_info(request)
 
-    def list_virtual_interfaces_with_http_info(self, request):
-        all_params = ['limit', 'marker', 'fields', 'sort_dir', 'sort_key', 'enterprise_project_id', 'id', 'status', 'direct_connect_id', 'vgw_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_virtual_interfaces_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1568,14 +1458,10 @@ class DcClient(Client):
         :type request: :class:`huaweicloudsdkdc.v3.ShowVirtualInterfaceRequest`
         :rtype: :class:`huaweicloudsdkdc.v3.ShowVirtualInterfaceResponse`
         """
-        return self.show_virtual_interface_with_http_info(request)
+        return self._show_virtual_interface_with_http_info(request)
 
-    def show_virtual_interface_with_http_info(self, request):
-        all_params = ['virtual_interface_id', 'fields']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_virtual_interface_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1631,14 +1517,10 @@ class DcClient(Client):
         :type request: :class:`huaweicloudsdkdc.v3.UpdateVirtualInterfaceRequest`
         :rtype: :class:`huaweicloudsdkdc.v3.UpdateVirtualInterfaceResponse`
         """
-        return self.update_virtual_interface_with_http_info(request)
+        return self._update_virtual_interface_with_http_info(request)
 
-    def update_virtual_interface_with_http_info(self, request):
-        all_params = ['virtual_interface_id', 'update_virtual_interface_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_virtual_interface_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

@@ -1,9 +1,6 @@
 # coding: utf-8
 
-import re
 import six
-
-
 
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
@@ -20,20 +17,24 @@ class UpdateJobRequest:
     sensitive_list = []
 
     openapi_types = {
+        'workspace': 'str',
         'job_name': 'str',
         'body': 'JobInfo'
     }
 
     attribute_map = {
+        'workspace': 'workspace',
         'job_name': 'job_name',
         'body': 'body'
     }
 
-    def __init__(self, job_name=None, body=None):
+    def __init__(self, workspace=None, job_name=None, body=None):
         """UpdateJobRequest
 
         The model defined in huaweicloud sdk
 
+        :param workspace: 工作空间id
+        :type workspace: str
         :param job_name: 作业名称.
         :type job_name: str
         :param body: Body of the UpdateJobRequest
@@ -42,13 +43,38 @@ class UpdateJobRequest:
         
         
 
+        self._workspace = None
         self._job_name = None
         self._body = None
         self.discriminator = None
 
+        if workspace is not None:
+            self.workspace = workspace
         self.job_name = job_name
         if body is not None:
             self.body = body
+
+    @property
+    def workspace(self):
+        """Gets the workspace of this UpdateJobRequest.
+
+        工作空间id
+
+        :return: The workspace of this UpdateJobRequest.
+        :rtype: str
+        """
+        return self._workspace
+
+    @workspace.setter
+    def workspace(self, workspace):
+        """Sets the workspace of this UpdateJobRequest.
+
+        工作空间id
+
+        :param workspace: The workspace of this UpdateJobRequest.
+        :type workspace: str
+        """
+        self._workspace = workspace
 
     @property
     def job_name(self):

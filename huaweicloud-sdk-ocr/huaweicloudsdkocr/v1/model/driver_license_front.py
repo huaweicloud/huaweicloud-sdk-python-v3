@@ -1,9 +1,6 @@
 # coding: utf-8
 
-import re
 import six
-
-
 
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
@@ -98,7 +95,7 @@ class DriverLicenseFront:
         :type generation_date: str
         :param current_time: 当前时间。 
         :type current_time: str
-        :param file_number: 档案编号。 
+        :param file_number: 档案编号。  &gt; 说明：当驾驶证类型为电子驾驶证时才返回。 
         :type file_number: str
         :param text_location: 对应所有在原图上识别到的字段位置信息，包含所有文字区域四个顶点的二维坐标（x,y）。采用图像坐标系，坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
         :type text_location: object
@@ -519,7 +516,7 @@ class DriverLicenseFront:
     def file_number(self):
         """Gets the file_number of this DriverLicenseFront.
 
-        档案编号。 
+        档案编号。  > 说明：当驾驶证类型为电子驾驶证时才返回。 
 
         :return: The file_number of this DriverLicenseFront.
         :rtype: str
@@ -530,7 +527,7 @@ class DriverLicenseFront:
     def file_number(self, file_number):
         """Sets the file_number of this DriverLicenseFront.
 
-        档案编号。 
+        档案编号。  > 说明：当驾驶证类型为电子驾驶证时才返回。 
 
         :param file_number: The file_number of this DriverLicenseFront.
         :type file_number: str

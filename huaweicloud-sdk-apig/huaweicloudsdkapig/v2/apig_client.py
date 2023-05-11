@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class ApigClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(ApigClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkapig.v2.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -53,14 +35,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.AddEipV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.AddEipV2Response`
         """
-        return self.add_eip_v2_with_http_info(request)
+        return self._add_eip_v2_with_http_info(request)
 
-    def add_eip_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'add_eip_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _add_eip_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -115,14 +93,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.AddEngressEipV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.AddEngressEipV2Response`
         """
-        return self.add_engress_eip_v2_with_http_info(request)
+        return self._add_engress_eip_v2_with_http_info(request)
 
-    def add_engress_eip_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'add_engress_eip_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _add_engress_eip_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -177,14 +151,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.AddIngressEipV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.AddIngressEipV2Response`
         """
-        return self.add_ingress_eip_v2_with_http_info(request)
+        return self._add_ingress_eip_v2_with_http_info(request)
 
-    def add_ingress_eip_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'add_ingress_eip_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _add_ingress_eip_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -240,14 +210,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.AssociateCertificateV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.AssociateCertificateV2Response`
         """
-        return self.associate_certificate_v2_with_http_info(request)
+        return self._associate_certificate_v2_with_http_info(request)
 
-    def associate_certificate_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'group_id', 'domain_id', 'associate_certificate_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _associate_certificate_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -307,14 +273,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.AssociateDomainV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.AssociateDomainV2Response`
         """
-        return self.associate_domain_v2_with_http_info(request)
+        return self._associate_domain_v2_with_http_info(request)
 
-    def associate_domain_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'group_id', 'associate_domain_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _associate_domain_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -375,14 +337,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.AssociateSignatureKeyV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.AssociateSignatureKeyV2Response`
         """
-        return self.associate_signature_key_v2_with_http_info(request)
+        return self._associate_signature_key_v2_with_http_info(request)
 
-    def associate_signature_key_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'associate_signature_key_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _associate_signature_key_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -441,14 +399,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.AttachApiToPluginRequest`
         :rtype: :class:`huaweicloudsdkapig.v2.AttachApiToPluginResponse`
         """
-        return self.attach_api_to_plugin_with_http_info(request)
+        return self._attach_api_to_plugin_with_http_info(request)
 
-    def attach_api_to_plugin_with_http_info(self, request):
-        all_params = ['instance_id', 'plugin_id', 'attach_api_to_plugin_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _attach_api_to_plugin_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -509,14 +463,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.AttachPluginToApiRequest`
         :rtype: :class:`huaweicloudsdkapig.v2.AttachPluginToApiResponse`
         """
-        return self.attach_plugin_to_api_with_http_info(request)
+        return self._attach_plugin_to_api_with_http_info(request)
 
-    def attach_plugin_to_api_with_http_info(self, request):
-        all_params = ['instance_id', 'api_id', 'attach_plugin_to_api_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _attach_plugin_to_api_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -573,14 +523,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.BatchCreateOrDeleteInstanceTagsRequest`
         :rtype: :class:`huaweicloudsdkapig.v2.BatchCreateOrDeleteInstanceTagsResponse`
         """
-        return self.batch_create_or_delete_instance_tags_with_http_info(request)
+        return self._batch_create_or_delete_instance_tags_with_http_info(request)
 
-    def batch_create_or_delete_instance_tags_with_http_info(self, request):
-        all_params = ['instance_id', 'batch_create_or_delete_instance_tags_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_create_or_delete_instance_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -635,14 +581,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.CreateCustomAuthorizerV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.CreateCustomAuthorizerV2Response`
         """
-        return self.create_custom_authorizer_v2_with_http_info(request)
+        return self._create_custom_authorizer_v2_with_http_info(request)
 
-    def create_custom_authorizer_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'create_custom_authorizer_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_custom_authorizer_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -701,14 +643,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.CreateEnvironmentV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.CreateEnvironmentV2Response`
         """
-        return self.create_environment_v2_with_http_info(request)
+        return self._create_environment_v2_with_http_info(request)
 
-    def create_environment_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'create_environment_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_environment_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -774,14 +712,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.CreateEnvironmentVariableV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.CreateEnvironmentVariableV2Response`
         """
-        return self.create_environment_variable_v2_with_http_info(request)
+        return self._create_environment_variable_v2_with_http_info(request)
 
-    def create_environment_variable_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'create_environment_variable_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_environment_variable_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -862,14 +796,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.CreateFeatureV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.CreateFeatureV2Response`
         """
-        return self.create_feature_v2_with_http_info(request)
+        return self._create_feature_v2_with_http_info(request)
 
-    def create_feature_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'create_feature_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_feature_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -924,14 +854,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.CreateGatewayResponseV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.CreateGatewayResponseV2Response`
         """
-        return self.create_gateway_response_v2_with_http_info(request)
+        return self._create_gateway_response_v2_with_http_info(request)
 
-    def create_gateway_response_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'group_id', 'create_gateway_response_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_gateway_response_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -988,14 +914,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.CreateInstanceV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.CreateInstanceV2Response`
         """
-        return self.create_instance_v2_with_http_info(request)
+        return self._create_instance_v2_with_http_info(request)
 
-    def create_instance_v2_with_http_info(self, request):
-        all_params = ['create_instance_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_instance_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1050,14 +972,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.CreatePluginRequest`
         :rtype: :class:`huaweicloudsdkapig.v2.CreatePluginResponse`
         """
-        return self.create_plugin_with_http_info(request)
+        return self._create_plugin_with_http_info(request)
 
-    def create_plugin_with_http_info(self, request):
-        all_params = ['instance_id', 'create_plugin_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_plugin_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1112,14 +1030,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.CreateRequestThrottlingPolicyV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.CreateRequestThrottlingPolicyV2Response`
         """
-        return self.create_request_throttling_policy_v2_with_http_info(request)
+        return self._create_request_throttling_policy_v2_with_http_info(request)
 
-    def create_request_throttling_policy_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'create_request_throttling_policy_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_request_throttling_policy_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1178,14 +1092,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.CreateSignatureKeyV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.CreateSignatureKeyV2Response`
         """
-        return self.create_signature_key_v2_with_http_info(request)
+        return self._create_signature_key_v2_with_http_info(request)
 
-    def create_signature_key_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'create_signature_key_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_signature_key_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1244,14 +1154,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.CreateSpecialThrottlingConfigurationV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.CreateSpecialThrottlingConfigurationV2Response`
         """
-        return self.create_special_throttling_configuration_v2_with_http_info(request)
+        return self._create_special_throttling_configuration_v2_with_http_info(request)
 
-    def create_special_throttling_configuration_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'throttle_id', 'create_special_throttling_configuration_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_special_throttling_configuration_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1308,14 +1214,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.DeleteCustomAuthorizerV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.DeleteCustomAuthorizerV2Response`
         """
-        return self.delete_custom_authorizer_v2_with_http_info(request)
+        return self._delete_custom_authorizer_v2_with_http_info(request)
 
-    def delete_custom_authorizer_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'authorizer_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_custom_authorizer_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1374,14 +1276,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.DeleteEnvironmentV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.DeleteEnvironmentV2Response`
         """
-        return self.delete_environment_v2_with_http_info(request)
+        return self._delete_environment_v2_with_http_info(request)
 
-    def delete_environment_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'env_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_environment_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1436,14 +1334,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.DeleteEnvironmentVariableV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.DeleteEnvironmentVariableV2Response`
         """
-        return self.delete_environment_variable_v2_with_http_info(request)
+        return self._delete_environment_variable_v2_with_http_info(request)
 
-    def delete_environment_variable_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'env_variable_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_environment_variable_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1498,14 +1392,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.DeleteGatewayResponseTypeV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.DeleteGatewayResponseTypeV2Response`
         """
-        return self.delete_gateway_response_type_v2_with_http_info(request)
+        return self._delete_gateway_response_type_v2_with_http_info(request)
 
-    def delete_gateway_response_type_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'group_id', 'response_id', 'response_type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_gateway_response_type_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1564,14 +1454,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.DeleteGatewayResponseV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.DeleteGatewayResponseV2Response`
         """
-        return self.delete_gateway_response_v2_with_http_info(request)
+        return self._delete_gateway_response_v2_with_http_info(request)
 
-    def delete_gateway_response_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'group_id', 'response_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_gateway_response_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1628,14 +1514,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.DeleteInstancesV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.DeleteInstancesV2Response`
         """
-        return self.delete_instances_v2_with_http_info(request)
+        return self._delete_instances_v2_with_http_info(request)
 
-    def delete_instances_v2_with_http_info(self, request):
-        all_params = ['instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_instances_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1689,14 +1571,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.DeletePluginRequest`
         :rtype: :class:`huaweicloudsdkapig.v2.DeletePluginResponse`
         """
-        return self.delete_plugin_with_http_info(request)
+        return self._delete_plugin_with_http_info(request)
 
-    def delete_plugin_with_http_info(self, request):
-        all_params = ['instance_id', 'plugin_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_plugin_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1751,14 +1629,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.DeleteRequestThrottlingPolicyV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.DeleteRequestThrottlingPolicyV2Response`
         """
-        return self.delete_request_throttling_policy_v2_with_http_info(request)
+        return self._delete_request_throttling_policy_v2_with_http_info(request)
 
-    def delete_request_throttling_policy_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'throttle_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_request_throttling_policy_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1813,14 +1687,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.DeleteSignatureKeyV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.DeleteSignatureKeyV2Response`
         """
-        return self.delete_signature_key_v2_with_http_info(request)
+        return self._delete_signature_key_v2_with_http_info(request)
 
-    def delete_signature_key_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'sign_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_signature_key_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1875,14 +1745,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.DeleteSpecialThrottlingConfigurationV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.DeleteSpecialThrottlingConfigurationV2Response`
         """
-        return self.delete_special_throttling_configuration_v2_with_http_info(request)
+        return self._delete_special_throttling_configuration_v2_with_http_info(request)
 
-    def delete_special_throttling_configuration_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'throttle_id', 'strategy_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_special_throttling_configuration_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1940,14 +1806,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.DetachApiFromPluginRequest`
         :rtype: :class:`huaweicloudsdkapig.v2.DetachApiFromPluginResponse`
         """
-        return self.detach_api_from_plugin_with_http_info(request)
+        return self._detach_api_from_plugin_with_http_info(request)
 
-    def detach_api_from_plugin_with_http_info(self, request):
-        all_params = ['instance_id', 'plugin_id', 'detach_api_from_plugin_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _detach_api_from_plugin_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2005,14 +1867,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.DetachPluginFromApiRequest`
         :rtype: :class:`huaweicloudsdkapig.v2.DetachPluginFromApiResponse`
         """
-        return self.detach_plugin_from_api_with_http_info(request)
+        return self._detach_plugin_from_api_with_http_info(request)
 
-    def detach_plugin_from_api_with_http_info(self, request):
-        all_params = ['instance_id', 'api_id', 'detach_plugin_from_api_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _detach_plugin_from_api_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2069,14 +1927,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.DisassociateCertificateV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.DisassociateCertificateV2Response`
         """
-        return self.disassociate_certificate_v2_with_http_info(request)
+        return self._disassociate_certificate_v2_with_http_info(request)
 
-    def disassociate_certificate_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'group_id', 'domain_id', 'certificate_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _disassociate_certificate_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2135,14 +1989,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.DisassociateDomainV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.DisassociateDomainV2Response`
         """
-        return self.disassociate_domain_v2_with_http_info(request)
+        return self._disassociate_domain_v2_with_http_info(request)
 
-    def disassociate_domain_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'group_id', 'domain_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _disassociate_domain_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2199,14 +2049,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.DisassociateSignatureKeyV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.DisassociateSignatureKeyV2Response`
         """
-        return self.disassociate_signature_key_v2_with_http_info(request)
+        return self._disassociate_signature_key_v2_with_http_info(request)
 
-    def disassociate_signature_key_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'sign_bindings_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _disassociate_signature_key_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2261,14 +2107,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ImportMicroserviceRequest`
         :rtype: :class:`huaweicloudsdkapig.v2.ImportMicroserviceResponse`
         """
-        return self.import_microservice_with_http_info(request)
+        return self._import_microservice_with_http_info(request)
 
-    def import_microservice_with_http_info(self, request):
-        all_params = ['instance_id', 'import_microservice_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _import_microservice_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2325,14 +2167,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListApiAttachablePluginsRequest`
         :rtype: :class:`huaweicloudsdkapig.v2.ListApiAttachablePluginsResponse`
         """
-        return self.list_api_attachable_plugins_with_http_info(request)
+        return self._list_api_attachable_plugins_with_http_info(request)
 
-    def list_api_attachable_plugins_with_http_info(self, request):
-        all_params = ['instance_id', 'api_id', 'offset', 'limit', 'env_id', 'plugin_name', 'plugin_type', 'plugin_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_api_attachable_plugins_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2402,14 +2240,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListApiAttachedPluginsRequest`
         :rtype: :class:`huaweicloudsdkapig.v2.ListApiAttachedPluginsResponse`
         """
-        return self.list_api_attached_plugins_with_http_info(request)
+        return self._list_api_attached_plugins_with_http_info(request)
 
-    def list_api_attached_plugins_with_http_info(self, request):
-        all_params = ['instance_id', 'api_id', 'offset', 'limit', 'env_id', 'plugin_name', 'plugin_id', 'env_name', 'plugin_type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_api_attached_plugins_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2478,14 +2312,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListApiGroupsQuantitiesV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ListApiGroupsQuantitiesV2Response`
         """
-        return self.list_api_groups_quantities_v2_with_http_info(request)
+        return self._list_api_groups_quantities_v2_with_http_info(request)
 
-    def list_api_groups_quantities_v2_with_http_info(self, request):
-        all_params = ['instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_api_groups_quantities_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2538,14 +2368,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListApiQuantitiesV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ListApiQuantitiesV2Response`
         """
-        return self.list_api_quantities_v2_with_http_info(request)
+        return self._list_api_quantities_v2_with_http_info(request)
 
-    def list_api_quantities_v2_with_http_info(self, request):
-        all_params = ['instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_api_quantities_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2598,14 +2424,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListApisBindedToSignatureKeyV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ListApisBindedToSignatureKeyV2Response`
         """
-        return self.list_apis_binded_to_signature_key_v2_with_http_info(request)
+        return self._list_apis_binded_to_signature_key_v2_with_http_info(request)
 
-    def list_apis_binded_to_signature_key_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'sign_id', 'offset', 'limit', 'env_id', 'api_id', 'api_name', 'group_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_apis_binded_to_signature_key_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2672,14 +2494,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListApisNotBoundWithSignatureKeyV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ListApisNotBoundWithSignatureKeyV2Response`
         """
-        return self.list_apis_not_bound_with_signature_key_v2_with_http_info(request)
+        return self._list_apis_not_bound_with_signature_key_v2_with_http_info(request)
 
-    def list_apis_not_bound_with_signature_key_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'sign_id', 'offset', 'limit', 'env_id', 'api_id', 'api_name', 'group_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_apis_not_bound_with_signature_key_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2746,14 +2564,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListAppQuantitiesV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ListAppQuantitiesV2Response`
         """
-        return self.list_app_quantities_v2_with_http_info(request)
+        return self._list_app_quantities_v2_with_http_info(request)
 
-    def list_app_quantities_v2_with_http_info(self, request):
-        all_params = ['instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_app_quantities_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2806,14 +2620,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListAvailableZonesV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ListAvailableZonesV2Response`
         """
-        return self.list_available_zones_v2_with_http_info(request)
+        return self._list_available_zones_v2_with_http_info(request)
 
-    def list_available_zones_v2_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_available_zones_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2864,14 +2674,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListCustomAuthorizersV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ListCustomAuthorizersV2Response`
         """
-        return self.list_custom_authorizers_v2_with_http_info(request)
+        return self._list_custom_authorizers_v2_with_http_info(request)
 
-    def list_custom_authorizers_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'offset', 'limit', 'id', 'name', 'type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_custom_authorizers_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2934,14 +2740,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListEnvironmentVariablesV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ListEnvironmentVariablesV2Response`
         """
-        return self.list_environment_variables_v2_with_http_info(request)
+        return self._list_environment_variables_v2_with_http_info(request)
 
-    def list_environment_variables_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'group_id', 'offset', 'limit', 'env_id', 'variable_name', 'precise_search']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_environment_variables_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3006,14 +2808,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListEnvironmentsV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ListEnvironmentsV2Response`
         """
-        return self.list_environments_v2_with_http_info(request)
+        return self._list_environments_v2_with_http_info(request)
 
-    def list_environments_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'offset', 'limit', 'name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_environments_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3117,14 +2915,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListFeaturesV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ListFeaturesV2Response`
         """
-        return self.list_features_v2_with_http_info(request)
+        return self._list_features_v2_with_http_info(request)
 
-    def list_features_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_features_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3181,14 +2975,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListGatewayResponsesV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ListGatewayResponsesV2Response`
         """
-        return self.list_gateway_responses_v2_with_http_info(request)
+        return self._list_gateway_responses_v2_with_http_info(request)
 
-    def list_gateway_responses_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'group_id', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_gateway_responses_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3247,14 +3037,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListInstanceConfigsV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ListInstanceConfigsV2Response`
         """
-        return self.list_instance_configs_v2_with_http_info(request)
+        return self._list_instance_configs_v2_with_http_info(request)
 
-    def list_instance_configs_v2_with_http_info(self, request):
-        all_params = ['offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_instance_configs_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3309,14 +3095,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListInstanceTagsRequest`
         :rtype: :class:`huaweicloudsdkapig.v2.ListInstanceTagsResponse`
         """
-        return self.list_instance_tags_with_http_info(request)
+        return self._list_instance_tags_with_http_info(request)
 
-    def list_instance_tags_with_http_info(self, request):
-        all_params = ['instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_instance_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3369,14 +3151,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListInstancesV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ListInstancesV2Response`
         """
-        return self.list_instances_v2_with_http_info(request)
+        return self._list_instances_v2_with_http_info(request)
 
-    def list_instances_v2_with_http_info(self, request):
-        all_params = ['offset', 'limit', 'instance_id', 'instance_name', 'status']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_instances_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3438,14 +3216,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListLatelyApiStatisticsV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ListLatelyApiStatisticsV2Response`
         """
-        return self.list_lately_api_statistics_v2_with_http_info(request)
+        return self._list_lately_api_statistics_v2_with_http_info(request)
 
-    def list_lately_api_statistics_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'api_id', 'duration']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_lately_api_statistics_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3503,14 +3277,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListLatelyGroupStatisticsV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ListLatelyGroupStatisticsV2Response`
         """
-        return self.list_lately_group_statistics_v2_with_http_info(request)
+        return self._list_lately_group_statistics_v2_with_http_info(request)
 
-    def list_lately_group_statistics_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'group_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_lately_group_statistics_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3565,14 +3335,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListMetricDataRequest`
         :rtype: :class:`huaweicloudsdkapig.v2.ListMetricDataResponse`
         """
-        return self.list_metric_data_with_http_info(request)
+        return self._list_metric_data_with_http_info(request)
 
-    def list_metric_data_with_http_info(self, request):
-        all_params = ['instance_id', 'dim', 'metric_name', '_from', 'to', 'period', 'filter']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_metric_data_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3640,14 +3406,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListPluginAttachableApisRequest`
         :rtype: :class:`huaweicloudsdkapig.v2.ListPluginAttachableApisResponse`
         """
-        return self.list_plugin_attachable_apis_with_http_info(request)
+        return self._list_plugin_attachable_apis_with_http_info(request)
 
-    def list_plugin_attachable_apis_with_http_info(self, request):
-        all_params = ['instance_id', 'plugin_id', 'offset', 'limit', 'env_id', 'api_name', 'api_id', 'group_id', 'req_method', 'req_uri']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_plugin_attachable_apis_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3722,14 +3484,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListPluginAttachedApisRequest`
         :rtype: :class:`huaweicloudsdkapig.v2.ListPluginAttachedApisResponse`
         """
-        return self.list_plugin_attached_apis_with_http_info(request)
+        return self._list_plugin_attached_apis_with_http_info(request)
 
-    def list_plugin_attached_apis_with_http_info(self, request):
-        all_params = ['instance_id', 'plugin_id', 'offset', 'limit', 'env_id', 'api_name', 'api_id', 'group_id', 'req_method', 'req_uri']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_plugin_attached_apis_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3805,14 +3563,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListPluginsRequest`
         :rtype: :class:`huaweicloudsdkapig.v2.ListPluginsResponse`
         """
-        return self.list_plugins_with_http_info(request)
+        return self._list_plugins_with_http_info(request)
 
-    def list_plugins_with_http_info(self, request):
-        all_params = ['instance_id', 'offset', 'limit', 'plugin_type', 'plugin_scope', 'plugin_id', 'plugin_name', 'precise_search']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_plugins_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3879,14 +3633,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListProjectCofigsV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ListProjectCofigsV2Response`
         """
-        return self.list_project_cofigs_v2_with_http_info(request)
+        return self._list_project_cofigs_v2_with_http_info(request)
 
-    def list_project_cofigs_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_project_cofigs_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3943,14 +3693,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListProjectInstanceTagsRequest`
         :rtype: :class:`huaweicloudsdkapig.v2.ListProjectInstanceTagsResponse`
         """
-        return self.list_project_instance_tags_with_http_info(request)
+        return self._list_project_instance_tags_with_http_info(request)
 
-    def list_project_instance_tags_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_project_instance_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4001,14 +3747,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListRequestThrottlingPolicyV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ListRequestThrottlingPolicyV2Response`
         """
-        return self.list_request_throttling_policy_v2_with_http_info(request)
+        return self._list_request_throttling_policy_v2_with_http_info(request)
 
-    def list_request_throttling_policy_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'offset', 'limit', 'id', 'name', 'precise_search']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_request_throttling_policy_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4071,14 +3813,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListSignatureKeysBindedToApiV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ListSignatureKeysBindedToApiV2Response`
         """
-        return self.list_signature_keys_binded_to_api_v2_with_http_info(request)
+        return self._list_signature_keys_binded_to_api_v2_with_http_info(request)
 
-    def list_signature_keys_binded_to_api_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'api_id', 'offset', 'limit', 'sign_id', 'sign_name', 'env_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_signature_keys_binded_to_api_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4143,14 +3881,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListSignatureKeysV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ListSignatureKeysV2Response`
         """
-        return self.list_signature_keys_v2_with_http_info(request)
+        return self._list_signature_keys_v2_with_http_info(request)
 
-    def list_signature_keys_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'offset', 'limit', 'id', 'name', 'precise_search']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_signature_keys_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4213,14 +3947,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListSpecialThrottlingConfigurationsV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ListSpecialThrottlingConfigurationsV2Response`
         """
-        return self.list_special_throttling_configurations_v2_with_http_info(request)
+        return self._list_special_throttling_configurations_v2_with_http_info(request)
 
-    def list_special_throttling_configurations_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'throttle_id', 'offset', 'limit', 'object_type', 'app_name', 'user']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_special_throttling_configurations_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4285,14 +4015,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListTagsV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ListTagsV2Response`
         """
-        return self.list_tags_v2_with_http_info(request)
+        return self._list_tags_v2_with_http_info(request)
 
-    def list_tags_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_tags_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4349,14 +4075,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.RemoveEipV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.RemoveEipV2Response`
         """
-        return self.remove_eip_v2_with_http_info(request)
+        return self._remove_eip_v2_with_http_info(request)
 
-    def remove_eip_v2_with_http_info(self, request):
-        all_params = ['instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _remove_eip_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4409,14 +4131,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.RemoveEngressEipV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.RemoveEngressEipV2Response`
         """
-        return self.remove_engress_eip_v2_with_http_info(request)
+        return self._remove_engress_eip_v2_with_http_info(request)
 
-    def remove_engress_eip_v2_with_http_info(self, request):
-        all_params = ['instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _remove_engress_eip_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4469,14 +4187,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.RemoveIngressEipV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.RemoveIngressEipV2Response`
         """
-        return self.remove_ingress_eip_v2_with_http_info(request)
+        return self._remove_ingress_eip_v2_with_http_info(request)
 
-    def remove_ingress_eip_v2_with_http_info(self, request):
-        all_params = ['instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _remove_ingress_eip_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4529,14 +4243,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ShowDetailsOfCustomAuthorizersV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ShowDetailsOfCustomAuthorizersV2Response`
         """
-        return self.show_details_of_custom_authorizers_v2_with_http_info(request)
+        return self._show_details_of_custom_authorizers_v2_with_http_info(request)
 
-    def show_details_of_custom_authorizers_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'authorizer_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_details_of_custom_authorizers_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4591,14 +4301,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ShowDetailsOfDomainNameCertificateV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ShowDetailsOfDomainNameCertificateV2Response`
         """
-        return self.show_details_of_domain_name_certificate_v2_with_http_info(request)
+        return self._show_details_of_domain_name_certificate_v2_with_http_info(request)
 
-    def show_details_of_domain_name_certificate_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'group_id', 'domain_id', 'certificate_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_details_of_domain_name_certificate_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4657,14 +4363,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ShowDetailsOfEnvironmentVariableV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ShowDetailsOfEnvironmentVariableV2Response`
         """
-        return self.show_details_of_environment_variable_v2_with_http_info(request)
+        return self._show_details_of_environment_variable_v2_with_http_info(request)
 
-    def show_details_of_environment_variable_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'env_variable_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_details_of_environment_variable_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4719,14 +4421,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ShowDetailsOfGatewayResponseTypeV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ShowDetailsOfGatewayResponseTypeV2Response`
         """
-        return self.show_details_of_gateway_response_type_v2_with_http_info(request)
+        return self._show_details_of_gateway_response_type_v2_with_http_info(request)
 
-    def show_details_of_gateway_response_type_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'group_id', 'response_id', 'response_type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_details_of_gateway_response_type_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4785,14 +4483,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ShowDetailsOfGatewayResponseV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ShowDetailsOfGatewayResponseV2Response`
         """
-        return self.show_details_of_gateway_response_v2_with_http_info(request)
+        return self._show_details_of_gateway_response_v2_with_http_info(request)
 
-    def show_details_of_gateway_response_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'group_id', 'response_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_details_of_gateway_response_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4849,14 +4543,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ShowDetailsOfInstanceProgressV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ShowDetailsOfInstanceProgressV2Response`
         """
-        return self.show_details_of_instance_progress_v2_with_http_info(request)
+        return self._show_details_of_instance_progress_v2_with_http_info(request)
 
-    def show_details_of_instance_progress_v2_with_http_info(self, request):
-        all_params = ['instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_details_of_instance_progress_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4909,14 +4599,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ShowDetailsOfInstanceV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ShowDetailsOfInstanceV2Response`
         """
-        return self.show_details_of_instance_v2_with_http_info(request)
+        return self._show_details_of_instance_v2_with_http_info(request)
 
-    def show_details_of_instance_v2_with_http_info(self, request):
-        all_params = ['instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_details_of_instance_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4969,14 +4655,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ShowDetailsOfRequestThrottlingPolicyV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ShowDetailsOfRequestThrottlingPolicyV2Response`
         """
-        return self.show_details_of_request_throttling_policy_v2_with_http_info(request)
+        return self._show_details_of_request_throttling_policy_v2_with_http_info(request)
 
-    def show_details_of_request_throttling_policy_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'throttle_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_details_of_request_throttling_policy_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5031,14 +4713,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ShowPluginRequest`
         :rtype: :class:`huaweicloudsdkapig.v2.ShowPluginResponse`
         """
-        return self.show_plugin_with_http_info(request)
+        return self._show_plugin_with_http_info(request)
 
-    def show_plugin_with_http_info(self, request):
-        all_params = ['instance_id', 'plugin_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_plugin_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5093,14 +4771,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.UpdateCustomAuthorizerV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.UpdateCustomAuthorizerV2Response`
         """
-        return self.update_custom_authorizer_v2_with_http_info(request)
+        return self._update_custom_authorizer_v2_with_http_info(request)
 
-    def update_custom_authorizer_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'authorizer_id', 'update_custom_authorizer_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_custom_authorizer_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5157,14 +4831,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.UpdateDomainV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.UpdateDomainV2Response`
         """
-        return self.update_domain_v2_with_http_info(request)
+        return self._update_domain_v2_with_http_info(request)
 
-    def update_domain_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'group_id', 'domain_id', 'update_domain_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_domain_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5223,14 +4893,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.UpdateEngressEipV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.UpdateEngressEipV2Response`
         """
-        return self.update_engress_eip_v2_with_http_info(request)
+        return self._update_engress_eip_v2_with_http_info(request)
 
-    def update_engress_eip_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'update_engress_eip_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_engress_eip_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5285,14 +4951,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.UpdateEnvironmentV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.UpdateEnvironmentV2Response`
         """
-        return self.update_environment_v2_with_http_info(request)
+        return self._update_environment_v2_with_http_info(request)
 
-    def update_environment_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'env_id', 'update_environment_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_environment_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5349,14 +5011,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.UpdateGatewayResponseTypeV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.UpdateGatewayResponseTypeV2Response`
         """
-        return self.update_gateway_response_type_v2_with_http_info(request)
+        return self._update_gateway_response_type_v2_with_http_info(request)
 
-    def update_gateway_response_type_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'group_id', 'response_id', 'response_type', 'update_gateway_response_type_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_gateway_response_type_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5417,14 +5075,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.UpdateGatewayResponseV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.UpdateGatewayResponseV2Response`
         """
-        return self.update_gateway_response_v2_with_http_info(request)
+        return self._update_gateway_response_v2_with_http_info(request)
 
-    def update_gateway_response_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'group_id', 'response_id', 'update_gateway_response_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_gateway_response_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5483,14 +5137,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.UpdateIngressEipV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.UpdateIngressEipV2Response`
         """
-        return self.update_ingress_eip_v2_with_http_info(request)
+        return self._update_ingress_eip_v2_with_http_info(request)
 
-    def update_ingress_eip_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'update_ingress_eip_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_ingress_eip_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5545,14 +5195,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.UpdateInstanceV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.UpdateInstanceV2Response`
         """
-        return self.update_instance_v2_with_http_info(request)
+        return self._update_instance_v2_with_http_info(request)
 
-    def update_instance_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'update_instance_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_instance_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5609,14 +5255,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.UpdatePluginRequest`
         :rtype: :class:`huaweicloudsdkapig.v2.UpdatePluginResponse`
         """
-        return self.update_plugin_with_http_info(request)
+        return self._update_plugin_with_http_info(request)
 
-    def update_plugin_with_http_info(self, request):
-        all_params = ['instance_id', 'plugin_id', 'update_plugin_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_plugin_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5673,14 +5315,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.UpdateRequestThrottlingPolicyV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.UpdateRequestThrottlingPolicyV2Response`
         """
-        return self.update_request_throttling_policy_v2_with_http_info(request)
+        return self._update_request_throttling_policy_v2_with_http_info(request)
 
-    def update_request_throttling_policy_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'throttle_id', 'update_request_throttling_policy_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_request_throttling_policy_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5737,14 +5375,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.UpdateSignatureKeyV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.UpdateSignatureKeyV2Response`
         """
-        return self.update_signature_key_v2_with_http_info(request)
+        return self._update_signature_key_v2_with_http_info(request)
 
-    def update_signature_key_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'sign_id', 'update_signature_key_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_signature_key_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5801,14 +5435,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.UpdateSpecialThrottlingConfigurationV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.UpdateSpecialThrottlingConfigurationV2Response`
         """
-        return self.update_special_throttling_configuration_v2_with_http_info(request)
+        return self._update_special_throttling_configuration_v2_with_http_info(request)
 
-    def update_special_throttling_configuration_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'throttle_id', 'strategy_id', 'update_special_throttling_configuration_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_special_throttling_configuration_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5869,14 +5499,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.BatchDeleteAclV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.BatchDeleteAclV2Response`
         """
-        return self.batch_delete_acl_v2_with_http_info(request)
+        return self._batch_delete_acl_v2_with_http_info(request)
 
-    def batch_delete_acl_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'action', 'batch_delete_acl_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_delete_acl_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5933,14 +5559,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.CreateAclStrategyV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.CreateAclStrategyV2Response`
         """
-        return self.create_acl_strategy_v2_with_http_info(request)
+        return self._create_acl_strategy_v2_with_http_info(request)
 
-    def create_acl_strategy_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'create_acl_strategy_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_acl_strategy_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5995,14 +5617,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.DeleteAclV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.DeleteAclV2Response`
         """
-        return self.delete_acl_v2_with_http_info(request)
+        return self._delete_acl_v2_with_http_info(request)
 
-    def delete_acl_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'acl_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_acl_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6057,14 +5675,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListAclStrategiesV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ListAclStrategiesV2Response`
         """
-        return self.list_acl_strategies_v2_with_http_info(request)
+        return self._list_acl_strategies_v2_with_http_info(request)
 
-    def list_acl_strategies_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'offset', 'limit', 'id', 'name', 'acl_type', 'entity_type', 'precise_search']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_acl_strategies_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6131,14 +5745,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ShowDetailsOfAclPolicyV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ShowDetailsOfAclPolicyV2Response`
         """
-        return self.show_details_of_acl_policy_v2_with_http_info(request)
+        return self._show_details_of_acl_policy_v2_with_http_info(request)
 
-    def show_details_of_acl_policy_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'acl_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_details_of_acl_policy_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6193,14 +5803,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.UpdateAclStrategyV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.UpdateAclStrategyV2Response`
         """
-        return self.update_acl_strategy_v2_with_http_info(request)
+        return self._update_acl_strategy_v2_with_http_info(request)
 
-    def update_acl_strategy_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'acl_id', 'update_acl_strategy_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_acl_strategy_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6261,14 +5867,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.AssociateRequestThrottlingPolicyV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.AssociateRequestThrottlingPolicyV2Response`
         """
-        return self.associate_request_throttling_policy_v2_with_http_info(request)
+        return self._associate_request_throttling_policy_v2_with_http_info(request)
 
-    def associate_request_throttling_policy_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'associate_request_throttling_policy_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _associate_request_throttling_policy_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6323,14 +5925,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.BatchDisassociateThrottlingPolicyV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.BatchDisassociateThrottlingPolicyV2Response`
         """
-        return self.batch_disassociate_throttling_policy_v2_with_http_info(request)
+        return self._batch_disassociate_throttling_policy_v2_with_http_info(request)
 
-    def batch_disassociate_throttling_policy_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'action', 'batch_disassociate_throttling_policy_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_disassociate_throttling_policy_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6387,14 +5985,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.BatchPublishOrOfflineApiV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.BatchPublishOrOfflineApiV2Response`
         """
-        return self.batch_publish_or_offline_api_v2_with_http_info(request)
+        return self._batch_publish_or_offline_api_v2_with_http_info(request)
 
-    def batch_publish_or_offline_api_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'action', 'batch_publish_or_offline_api_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_publish_or_offline_api_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6453,14 +6047,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ChangeApiVersionV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ChangeApiVersionV2Response`
         """
-        return self.change_api_version_v2_with_http_info(request)
+        return self._change_api_version_v2_with_http_info(request)
 
-    def change_api_version_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'api_id', 'change_api_version_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _change_api_version_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6517,14 +6107,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.CreateApiGroupV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.CreateApiGroupV2Response`
         """
-        return self.create_api_group_v2_with_http_info(request)
+        return self._create_api_group_v2_with_http_info(request)
 
-    def create_api_group_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'create_api_group_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_api_group_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6581,14 +6167,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.CreateApiV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.CreateApiV2Response`
         """
-        return self.create_api_v2_with_http_info(request)
+        return self._create_api_v2_with_http_info(request)
 
-    def create_api_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'create_api_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_api_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6647,14 +6229,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.CreateOrDeletePublishRecordForApiV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.CreateOrDeletePublishRecordForApiV2Response`
         """
-        return self.create_or_delete_publish_record_for_api_v2_with_http_info(request)
+        return self._create_or_delete_publish_record_for_api_v2_with_http_info(request)
 
-    def create_or_delete_publish_record_for_api_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'create_or_delete_publish_record_for_api_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_or_delete_publish_record_for_api_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6709,14 +6287,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.DebugApiV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.DebugApiV2Response`
         """
-        return self.debug_api_v2_with_http_info(request)
+        return self._debug_api_v2_with_http_info(request)
 
-    def debug_api_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'api_id', 'debug_api_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _debug_api_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6773,14 +6347,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.DeleteApiByVersionIdV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.DeleteApiByVersionIdV2Response`
         """
-        return self.delete_api_by_version_id_v2_with_http_info(request)
+        return self._delete_api_by_version_id_v2_with_http_info(request)
 
-    def delete_api_by_version_id_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'version_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_api_by_version_id_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6837,14 +6407,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.DeleteApiGroupV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.DeleteApiGroupV2Response`
         """
-        return self.delete_api_group_v2_with_http_info(request)
+        return self._delete_api_group_v2_with_http_info(request)
 
-    def delete_api_group_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'group_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_api_group_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6901,14 +6467,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.DeleteApiV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.DeleteApiV2Response`
         """
-        return self.delete_api_v2_with_http_info(request)
+        return self._delete_api_v2_with_http_info(request)
 
-    def delete_api_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'api_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_api_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6963,14 +6525,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.DisassociateRequestThrottlingPolicyV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.DisassociateRequestThrottlingPolicyV2Response`
         """
-        return self.disassociate_request_throttling_policy_v2_with_http_info(request)
+        return self._disassociate_request_throttling_policy_v2_with_http_info(request)
 
-    def disassociate_request_throttling_policy_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'throttle_binding_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _disassociate_request_throttling_policy_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7027,14 +6585,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListApiGroupsV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ListApiGroupsV2Response`
         """
-        return self.list_api_groups_v2_with_http_info(request)
+        return self._list_api_groups_v2_with_http_info(request)
 
-    def list_api_groups_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'offset', 'limit', 'id', 'name', 'precise_search']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_api_groups_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7103,14 +6657,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListApiRuntimeDefinitionV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ListApiRuntimeDefinitionV2Response`
         """
-        return self.list_api_runtime_definition_v2_with_http_info(request)
+        return self._list_api_runtime_definition_v2_with_http_info(request)
 
-    def list_api_runtime_definition_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'api_id', 'env_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_api_runtime_definition_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7167,14 +6717,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListApiVersionDetailV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ListApiVersionDetailV2Response`
         """
-        return self.list_api_version_detail_v2_with_http_info(request)
+        return self._list_api_version_detail_v2_with_http_info(request)
 
-    def list_api_version_detail_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'version_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_api_version_detail_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7229,14 +6775,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListApiVersionsV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ListApiVersionsV2Response`
         """
-        return self.list_api_versions_v2_with_http_info(request)
+        return self._list_api_versions_v2_with_http_info(request)
 
-    def list_api_versions_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'api_id', 'offset', 'limit', 'env_id', 'env_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_api_versions_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7299,14 +6841,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListApisBindedToRequestThrottlingPolicyV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ListApisBindedToRequestThrottlingPolicyV2Response`
         """
-        return self.list_apis_binded_to_request_throttling_policy_v2_with_http_info(request)
+        return self._list_apis_binded_to_request_throttling_policy_v2_with_http_info(request)
 
-    def list_apis_binded_to_request_throttling_policy_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'throttle_id', 'offset', 'limit', 'env_id', 'group_id', 'api_id', 'api_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_apis_binded_to_request_throttling_policy_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7373,14 +6911,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListApisUnbindedToRequestThrottlingPolicyV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ListApisUnbindedToRequestThrottlingPolicyV2Response`
         """
-        return self.list_apis_unbinded_to_request_throttling_policy_v2_with_http_info(request)
+        return self._list_apis_unbinded_to_request_throttling_policy_v2_with_http_info(request)
 
-    def list_apis_unbinded_to_request_throttling_policy_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'throttle_id', 'offset', 'limit', 'env_id', 'group_id', 'api_id', 'api_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_apis_unbinded_to_request_throttling_policy_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7447,14 +6981,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListApisV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ListApisV2Response`
         """
-        return self.list_apis_v2_with_http_info(request)
+        return self._list_apis_v2_with_http_info(request)
 
-    def list_apis_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'offset', 'limit', 'id', 'name', 'group_id', 'req_protocol', 'req_method', 'req_uri', 'auth_type', 'env_id', 'type', 'precise_search']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_apis_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7531,14 +7061,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListRequestThrottlingPoliciesBindedToApiV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ListRequestThrottlingPoliciesBindedToApiV2Response`
         """
-        return self.list_request_throttling_policies_binded_to_api_v2_with_http_info(request)
+        return self._list_request_throttling_policies_binded_to_api_v2_with_http_info(request)
 
-    def list_request_throttling_policies_binded_to_api_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'api_id', 'offset', 'limit', 'throttle_id', 'throttle_name', 'env_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_request_throttling_policies_binded_to_api_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7603,14 +7129,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ShowDetailsOfApiGroupV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ShowDetailsOfApiGroupV2Response`
         """
-        return self.show_details_of_api_group_v2_with_http_info(request)
+        return self._show_details_of_api_group_v2_with_http_info(request)
 
-    def show_details_of_api_group_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'group_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_details_of_api_group_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7665,14 +7187,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ShowDetailsOfApiV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ShowDetailsOfApiV2Response`
         """
-        return self.show_details_of_api_v2_with_http_info(request)
+        return self._show_details_of_api_v2_with_http_info(request)
 
-    def show_details_of_api_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'api_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_details_of_api_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7727,14 +7245,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.UpdateApiGroupV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.UpdateApiGroupV2Response`
         """
-        return self.update_api_group_v2_with_http_info(request)
+        return self._update_api_group_v2_with_http_info(request)
 
-    def update_api_group_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'group_id', 'update_api_group_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_api_group_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7791,14 +7305,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.UpdateApiV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.UpdateApiV2Response`
         """
-        return self.update_api_v2_with_http_info(request)
+        return self._update_api_v2_with_http_info(request)
 
-    def update_api_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'api_id', 'update_api_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_api_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7855,14 +7365,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.BatchDeleteApiAclBindingV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.BatchDeleteApiAclBindingV2Response`
         """
-        return self.batch_delete_api_acl_binding_v2_with_http_info(request)
+        return self._batch_delete_api_acl_binding_v2_with_http_info(request)
 
-    def batch_delete_api_acl_binding_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'action', 'batch_delete_api_acl_binding_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_delete_api_acl_binding_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7921,14 +7427,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.CreateApiAclBindingV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.CreateApiAclBindingV2Response`
         """
-        return self.create_api_acl_binding_v2_with_http_info(request)
+        return self._create_api_acl_binding_v2_with_http_info(request)
 
-    def create_api_acl_binding_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'create_api_acl_binding_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_api_acl_binding_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7983,14 +7485,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.DeleteApiAclBindingV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.DeleteApiAclBindingV2Response`
         """
-        return self.delete_api_acl_binding_v2_with_http_info(request)
+        return self._delete_api_acl_binding_v2_with_http_info(request)
 
-    def delete_api_acl_binding_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'acl_bindings_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_api_acl_binding_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -8045,14 +7543,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListAclPolicyBindedToApiV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ListAclPolicyBindedToApiV2Response`
         """
-        return self.list_acl_policy_binded_to_api_v2_with_http_info(request)
+        return self._list_acl_policy_binded_to_api_v2_with_http_info(request)
 
-    def list_acl_policy_binded_to_api_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'api_id', 'offset', 'limit', 'env_id', 'env_name', 'acl_id', 'acl_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_acl_policy_binded_to_api_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -8119,14 +7613,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListApisBindedToAclPolicyV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ListApisBindedToAclPolicyV2Response`
         """
-        return self.list_apis_binded_to_acl_policy_v2_with_http_info(request)
+        return self._list_apis_binded_to_acl_policy_v2_with_http_info(request)
 
-    def list_apis_binded_to_acl_policy_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'acl_id', 'offset', 'limit', 'api_id', 'api_name', 'env_id', 'group_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_apis_binded_to_acl_policy_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -8193,14 +7683,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListApisUnbindedToAclPolicyV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ListApisUnbindedToAclPolicyV2Response`
         """
-        return self.list_apis_unbinded_to_acl_policy_v2_with_http_info(request)
+        return self._list_apis_unbinded_to_acl_policy_v2_with_http_info(request)
 
-    def list_apis_unbinded_to_acl_policy_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'acl_id', 'offset', 'limit', 'api_id', 'api_name', 'env_id', 'group_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_apis_unbinded_to_acl_policy_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -8267,14 +7753,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.CancelingAuthorizationV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.CancelingAuthorizationV2Response`
         """
-        return self.canceling_authorization_v2_with_http_info(request)
+        return self._canceling_authorization_v2_with_http_info(request)
 
-    def canceling_authorization_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'app_auth_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _canceling_authorization_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -8329,14 +7811,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.CheckAppV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.CheckAppV2Response`
         """
-        return self.check_app_v2_with_http_info(request)
+        return self._check_app_v2_with_http_info(request)
 
-    def check_app_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'app_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _check_app_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -8392,14 +7870,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.CreateAnAppV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.CreateAnAppV2Response`
         """
-        return self.create_an_app_v2_with_http_info(request)
+        return self._create_an_app_v2_with_http_info(request)
 
-    def create_an_app_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'create_an_app_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_an_app_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -8454,14 +7928,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.CreateAppCodeAutoV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.CreateAppCodeAutoV2Response`
         """
-        return self.create_app_code_auto_v2_with_http_info(request)
+        return self._create_app_code_auto_v2_with_http_info(request)
 
-    def create_app_code_auto_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'app_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_app_code_auto_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -8516,14 +7986,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.CreateAppCodeV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.CreateAppCodeV2Response`
         """
-        return self.create_app_code_v2_with_http_info(request)
+        return self._create_app_code_v2_with_http_info(request)
 
-    def create_app_code_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'app_id', 'create_app_code_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_app_code_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -8580,14 +8046,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.CreateAuthorizingAppsV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.CreateAuthorizingAppsV2Response`
         """
-        return self.create_authorizing_apps_v2_with_http_info(request)
+        return self._create_authorizing_apps_v2_with_http_info(request)
 
-    def create_authorizing_apps_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'create_authorizing_apps_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_authorizing_apps_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -8642,14 +8104,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.DeleteAppCodeV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.DeleteAppCodeV2Response`
         """
-        return self.delete_app_code_v2_with_http_info(request)
+        return self._delete_app_code_v2_with_http_info(request)
 
-    def delete_app_code_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'app_id', 'app_code_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_app_code_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -8707,14 +8165,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.DeleteAppV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.DeleteAppV2Response`
         """
-        return self.delete_app_v2_with_http_info(request)
+        return self._delete_app_v2_with_http_info(request)
 
-    def delete_app_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'app_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_app_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -8769,14 +8223,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListApisBindedToAppV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ListApisBindedToAppV2Response`
         """
-        return self.list_apis_binded_to_app_v2_with_http_info(request)
+        return self._list_apis_binded_to_app_v2_with_http_info(request)
 
-    def list_apis_binded_to_app_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'app_id', 'offset', 'limit', 'api_id', 'api_name', 'group_id', 'group_name', 'env_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_apis_binded_to_app_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -8845,14 +8295,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListApisUnbindedToAppV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ListApisUnbindedToAppV2Response`
         """
-        return self.list_apis_unbinded_to_app_v2_with_http_info(request)
+        return self._list_apis_unbinded_to_app_v2_with_http_info(request)
 
-    def list_apis_unbinded_to_app_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'app_id', 'env_id', 'offset', 'limit', 'group_id', 'api_id', 'api_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_apis_unbinded_to_app_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -8919,14 +8365,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListAppCodesV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ListAppCodesV2Response`
         """
-        return self.list_app_codes_v2_with_http_info(request)
+        return self._list_app_codes_v2_with_http_info(request)
 
-    def list_app_codes_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'app_id', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_app_codes_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -8985,14 +8427,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListAppsBindedToApiV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ListAppsBindedToApiV2Response`
         """
-        return self.list_apps_binded_to_api_v2_with_http_info(request)
+        return self._list_apps_binded_to_api_v2_with_http_info(request)
 
-    def list_apps_binded_to_api_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'offset', 'limit', 'api_id', 'app_name', 'app_id', 'env_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_apps_binded_to_api_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -9057,14 +8495,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListAppsV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ListAppsV2Response`
         """
-        return self.list_apps_v2_with_http_info(request)
+        return self._list_apps_v2_with_http_info(request)
 
-    def list_apps_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'offset', 'limit', 'id', 'name', 'status', 'app_key', 'creator', 'precise_search']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_apps_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -9133,14 +8567,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ResettingAppSecretV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ResettingAppSecretV2Response`
         """
-        return self.resetting_app_secret_v2_with_http_info(request)
+        return self._resetting_app_secret_v2_with_http_info(request)
 
-    def resetting_app_secret_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'app_id', 'resetting_app_secret_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _resetting_app_secret_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -9197,14 +8627,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ShowDetailsOfAppCodeV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ShowDetailsOfAppCodeV2Response`
         """
-        return self.show_details_of_app_code_v2_with_http_info(request)
+        return self._show_details_of_app_code_v2_with_http_info(request)
 
-    def show_details_of_app_code_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'app_id', 'app_code_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_details_of_app_code_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -9261,14 +8687,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ShowDetailsOfAppV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ShowDetailsOfAppV2Response`
         """
-        return self.show_details_of_app_v2_with_http_info(request)
+        return self._show_details_of_app_v2_with_http_info(request)
 
-    def show_details_of_app_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'app_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_details_of_app_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -9323,14 +8745,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.UpdateAppV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.UpdateAppV2Response`
         """
-        return self.update_app_v2_with_http_info(request)
+        return self._update_app_v2_with_http_info(request)
 
-    def update_app_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'app_id', 'update_app_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_app_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -9387,14 +8805,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ExportApiDefinitionsV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ExportApiDefinitionsV2Response`
         """
-        return self.export_api_definitions_v2_with_http_info(request)
+        return self._export_api_definitions_v2_with_http_info(request)
 
-    def export_api_definitions_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'export_api_definitions_v2_request_body', 'oas_version']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _export_api_definitions_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -9451,14 +8865,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ImportApiDefinitionsV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ImportApiDefinitionsV2Response`
         """
-        return self.import_api_definitions_v2_with_http_info(request)
+        return self._import_api_definitions_v2_with_http_info(request)
 
-    def import_api_definitions_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'file_name', 'is_create_group', 'group_id', 'extend_mode', 'simple_mode', 'mock_mode', 'api_mode']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _import_api_definitions_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -9527,14 +8937,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.BatchAssociateCertsV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.BatchAssociateCertsV2Response`
         """
-        return self.batch_associate_certs_v2_with_http_info(request)
+        return self._batch_associate_certs_v2_with_http_info(request)
 
-    def batch_associate_certs_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'group_id', 'domain_id', 'batch_associate_certs_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_associate_certs_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -9593,14 +8999,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.BatchAssociateDomainsV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.BatchAssociateDomainsV2Response`
         """
-        return self.batch_associate_domains_v2_with_http_info(request)
+        return self._batch_associate_domains_v2_with_http_info(request)
 
-    def batch_associate_domains_v2_with_http_info(self, request):
-        all_params = ['certificate_id', 'batch_associate_domains_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_associate_domains_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -9655,14 +9057,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.BatchDisassociateCertsV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.BatchDisassociateCertsV2Response`
         """
-        return self.batch_disassociate_certs_v2_with_http_info(request)
+        return self._batch_disassociate_certs_v2_with_http_info(request)
 
-    def batch_disassociate_certs_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'group_id', 'domain_id', 'batch_disassociate_certs_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_disassociate_certs_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -9721,14 +9119,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.BatchDisassociateDomainsV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.BatchDisassociateDomainsV2Response`
         """
-        return self.batch_disassociate_domains_v2_with_http_info(request)
+        return self._batch_disassociate_domains_v2_with_http_info(request)
 
-    def batch_disassociate_domains_v2_with_http_info(self, request):
-        all_params = ['certificate_id', 'batch_disassociate_domains_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_disassociate_domains_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -9783,14 +9177,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.CreateCertificateV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.CreateCertificateV2Response`
         """
-        return self.create_certificate_v2_with_http_info(request)
+        return self._create_certificate_v2_with_http_info(request)
 
-    def create_certificate_v2_with_http_info(self, request):
-        all_params = ['create_certificate_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_certificate_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -9843,14 +9233,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.DeleteCertificateV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.DeleteCertificateV2Response`
         """
-        return self.delete_certificate_v2_with_http_info(request)
+        return self._delete_certificate_v2_with_http_info(request)
 
-    def delete_certificate_v2_with_http_info(self, request):
-        all_params = ['certificate_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_certificate_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -9903,14 +9289,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListAttachedDomainsV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ListAttachedDomainsV2Response`
         """
-        return self.list_attached_domains_v2_with_http_info(request)
+        return self._list_attached_domains_v2_with_http_info(request)
 
-    def list_attached_domains_v2_with_http_info(self, request):
-        all_params = ['certificate_id', 'offset', 'limit', 'url_domain']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_attached_domains_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -9969,14 +9351,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListCertificatesV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ListCertificatesV2Response`
         """
-        return self.list_certificates_v2_with_http_info(request)
+        return self._list_certificates_v2_with_http_info(request)
 
-    def list_certificates_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'offset', 'limit', 'name', 'common_name', 'signature_algorithm', 'type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_certificates_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -10041,14 +9419,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ShowDetailsOfCertificateV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ShowDetailsOfCertificateV2Response`
         """
-        return self.show_details_of_certificate_v2_with_http_info(request)
+        return self._show_details_of_certificate_v2_with_http_info(request)
 
-    def show_details_of_certificate_v2_with_http_info(self, request):
-        all_params = ['certificate_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_details_of_certificate_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -10101,14 +9475,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.UpdateCertificateV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.UpdateCertificateV2Response`
         """
-        return self.update_certificate_v2_with_http_info(request)
+        return self._update_certificate_v2_with_http_info(request)
 
-    def update_certificate_v2_with_http_info(self, request):
-        all_params = ['certificate_id', 'update_certificate_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_certificate_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -10165,14 +9535,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.AddingBackendInstancesV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.AddingBackendInstancesV2Response`
         """
-        return self.adding_backend_instances_v2_with_http_info(request)
+        return self._adding_backend_instances_v2_with_http_info(request)
 
-    def adding_backend_instances_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'vpc_channel_id', 'adding_backend_instances_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _adding_backend_instances_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -10229,14 +9595,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.BatchDisableMembersRequest`
         :rtype: :class:`huaweicloudsdkapig.v2.BatchDisableMembersResponse`
         """
-        return self.batch_disable_members_with_http_info(request)
+        return self._batch_disable_members_with_http_info(request)
 
-    def batch_disable_members_with_http_info(self, request):
-        all_params = ['instance_id', 'vpc_channel_id', 'batch_disable_members_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_disable_members_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -10293,14 +9655,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.BatchEnableMembersRequest`
         :rtype: :class:`huaweicloudsdkapig.v2.BatchEnableMembersResponse`
         """
-        return self.batch_enable_members_with_http_info(request)
+        return self._batch_enable_members_with_http_info(request)
 
-    def batch_enable_members_with_http_info(self, request):
-        all_params = ['instance_id', 'vpc_channel_id', 'batch_enable_members_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_enable_members_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -10359,14 +9717,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.CreateMemberGroupRequest`
         :rtype: :class:`huaweicloudsdkapig.v2.CreateMemberGroupResponse`
         """
-        return self.create_member_group_with_http_info(request)
+        return self._create_member_group_with_http_info(request)
 
-    def create_member_group_with_http_info(self, request):
-        all_params = ['instance_id', 'vpc_channel_id', 'create_member_group_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_member_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -10424,14 +9778,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.CreateVpcChannelV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.CreateVpcChannelV2Response`
         """
-        return self.create_vpc_channel_v2_with_http_info(request)
+        return self._create_vpc_channel_v2_with_http_info(request)
 
-    def create_vpc_channel_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'create_vpc_channel_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_vpc_channel_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -10486,14 +9836,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.DeleteBackendInstanceV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.DeleteBackendInstanceV2Response`
         """
-        return self.delete_backend_instance_v2_with_http_info(request)
+        return self._delete_backend_instance_v2_with_http_info(request)
 
-    def delete_backend_instance_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'vpc_channel_id', 'member_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_backend_instance_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -10550,14 +9896,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.DeleteMemberGroupRequest`
         :rtype: :class:`huaweicloudsdkapig.v2.DeleteMemberGroupResponse`
         """
-        return self.delete_member_group_with_http_info(request)
+        return self._delete_member_group_with_http_info(request)
 
-    def delete_member_group_with_http_info(self, request):
-        all_params = ['instance_id', 'vpc_channel_id', 'member_group_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_member_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -10614,14 +9956,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.DeleteVpcChannelV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.DeleteVpcChannelV2Response`
         """
-        return self.delete_vpc_channel_v2_with_http_info(request)
+        return self._delete_vpc_channel_v2_with_http_info(request)
 
-    def delete_vpc_channel_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'vpc_channel_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_vpc_channel_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -10676,14 +10014,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListBackendInstancesV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ListBackendInstancesV2Response`
         """
-        return self.list_backend_instances_v2_with_http_info(request)
+        return self._list_backend_instances_v2_with_http_info(request)
 
-    def list_backend_instances_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'vpc_channel_id', 'offset', 'limit', 'name', 'member_group_name', 'member_group_id', 'precise_search']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_backend_instances_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -10750,14 +10084,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListMemberGroupsRequest`
         :rtype: :class:`huaweicloudsdkapig.v2.ListMemberGroupsResponse`
         """
-        return self.list_member_groups_with_http_info(request)
+        return self._list_member_groups_with_http_info(request)
 
-    def list_member_groups_with_http_info(self, request):
-        all_params = ['instance_id', 'vpc_channel_id', 'offset', 'limit', 'dict_code', 'member_group_name', 'precise_search']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_member_groups_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -10822,14 +10152,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListVpcChannelsV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ListVpcChannelsV2Response`
         """
-        return self.list_vpc_channels_v2_with_http_info(request)
+        return self._list_vpc_channels_v2_with_http_info(request)
 
-    def list_vpc_channels_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'offset', 'limit', 'id', 'name', 'dict_code', 'precise_search', 'member_host', 'member_port', 'member_group_name', 'member_group_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_vpc_channels_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -10902,14 +10228,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ShowDetailsOfMemberGroupRequest`
         :rtype: :class:`huaweicloudsdkapig.v2.ShowDetailsOfMemberGroupResponse`
         """
-        return self.show_details_of_member_group_with_http_info(request)
+        return self._show_details_of_member_group_with_http_info(request)
 
-    def show_details_of_member_group_with_http_info(self, request):
-        all_params = ['instance_id', 'vpc_channel_id', 'member_group_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_details_of_member_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -10966,14 +10288,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ShowDetailsOfVpcChannelV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ShowDetailsOfVpcChannelV2Response`
         """
-        return self.show_details_of_vpc_channel_v2_with_http_info(request)
+        return self._show_details_of_vpc_channel_v2_with_http_info(request)
 
-    def show_details_of_vpc_channel_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'vpc_channel_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_details_of_vpc_channel_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -11028,14 +10346,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.UpdateBackendInstancesV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.UpdateBackendInstancesV2Response`
         """
-        return self.update_backend_instances_v2_with_http_info(request)
+        return self._update_backend_instances_v2_with_http_info(request)
 
-    def update_backend_instances_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'vpc_channel_id', 'update_backend_instances_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_backend_instances_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -11092,14 +10406,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.UpdateHealthCheckRequest`
         :rtype: :class:`huaweicloudsdkapig.v2.UpdateHealthCheckResponse`
         """
-        return self.update_health_check_with_http_info(request)
+        return self._update_health_check_with_http_info(request)
 
-    def update_health_check_with_http_info(self, request):
-        all_params = ['instance_id', 'vpc_channel_id', 'update_health_check_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_health_check_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -11156,14 +10466,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.UpdateMemberGroupRequest`
         :rtype: :class:`huaweicloudsdkapig.v2.UpdateMemberGroupResponse`
         """
-        return self.update_member_group_with_http_info(request)
+        return self._update_member_group_with_http_info(request)
 
-    def update_member_group_with_http_info(self, request):
-        all_params = ['instance_id', 'vpc_channel_id', 'member_group_id', 'update_member_group_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_member_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -11226,14 +10532,10 @@ class ApigClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.UpdateVpcChannelV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.UpdateVpcChannelV2Response`
         """
-        return self.update_vpc_channel_v2_with_http_info(request)
+        return self._update_vpc_channel_v2_with_http_info(request)
 
-    def update_vpc_channel_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'vpc_channel_id', 'update_vpc_channel_v2_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_vpc_channel_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

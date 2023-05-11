@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ServerSideEncryptionConfiguration>
+    <Rule>
+        <ApplyServerSideEncryptionByDefault>
+            <SSEAlgorithm>kms</SSEAlgorithm>
+            <KMSMasterKeyID>kmskeyid-value</KMSMasterKeyID>
+            <ProjectID>projectid</ProjectID>
+        </ApplyServerSideEncryptionByDefault>
+    </Rule>
+</ServerSideEncryptionConfiguration>

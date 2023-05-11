@@ -1,9 +1,6 @@
 # coding: utf-8
 
-import re
 import six
-
-
 
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
@@ -20,20 +17,24 @@ class UpdateConnectionRequest:
     sensitive_list = []
 
     openapi_types = {
+        'workspace': 'str',
         'connection_name': 'str',
         'body': 'ConnectionInfo'
     }
 
     attribute_map = {
+        'workspace': 'workspace',
         'connection_name': 'connection_name',
         'body': 'body'
     }
 
-    def __init__(self, connection_name=None, body=None):
+    def __init__(self, workspace=None, connection_name=None, body=None):
         """UpdateConnectionRequest
 
         The model defined in huaweicloud sdk
 
+        :param workspace: 工作空间id
+        :type workspace: str
         :param connection_name: 连接名称.
         :type connection_name: str
         :param body: Body of the UpdateConnectionRequest
@@ -42,13 +43,38 @@ class UpdateConnectionRequest:
         
         
 
+        self._workspace = None
         self._connection_name = None
         self._body = None
         self.discriminator = None
 
+        if workspace is not None:
+            self.workspace = workspace
         self.connection_name = connection_name
         if body is not None:
             self.body = body
+
+    @property
+    def workspace(self):
+        """Gets the workspace of this UpdateConnectionRequest.
+
+        工作空间id
+
+        :return: The workspace of this UpdateConnectionRequest.
+        :rtype: str
+        """
+        return self._workspace
+
+    @workspace.setter
+    def workspace(self, workspace):
+        """Sets the workspace of this UpdateConnectionRequest.
+
+        工作空间id
+
+        :param workspace: The workspace of this UpdateConnectionRequest.
+        :type workspace: str
+        """
+        self._workspace = workspace
 
     @property
     def connection_name(self):

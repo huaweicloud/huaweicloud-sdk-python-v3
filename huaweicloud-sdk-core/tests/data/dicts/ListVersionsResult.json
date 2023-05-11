@@ -1,0 +1,22 @@
+{
+  "ListVersionsResult": {
+    "Name": "bucket02",
+    "Prefix": null,
+    "KeyMarker": null,
+    "VersionIdMarker": null,
+    "MaxKeys": "1000",
+    "IsTruncated": "false",
+    "Contents": {
+      "Key": "object001",
+      "VersionId": "00011000000000013F16000001643A22E476FFFF9046024ECA3655445346485a",
+      "IsLatest": "true",
+      "LastModified": "2015-07-01T00:32:16.482Z",
+      "ETag": "\"2fa3bcaaec668adc5da177e67a122d7c\"",
+      "Size": "12041",
+      "Owner": {
+        "ID": "b4bf1b36d9ca43d984fbcb9491b6fce9"
+      },
+      "StorageClass": "STANDARD"
+    }
+  }
+}

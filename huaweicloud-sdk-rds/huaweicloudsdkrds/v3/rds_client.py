@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class RdsClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(RdsClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkrds.v3.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -53,14 +35,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.ApplyConfigurationAsyncRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ApplyConfigurationAsyncResponse`
         """
-        return self.apply_configuration_async_with_http_info(request)
+        return self._apply_configuration_async_with_http_info(request)
 
-    def apply_configuration_async_with_http_info(self, request):
-        all_params = ['config_id', 'apply_configuration_request', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _apply_configuration_async_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -117,14 +95,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.AttachEipRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.AttachEipResponse`
         """
-        return self.attach_eip_with_http_info(request)
+        return self._attach_eip_with_http_info(request)
 
-    def attach_eip_with_http_info(self, request):
-        all_params = ['instance_id', 'bind_eip_request', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _attach_eip_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -181,14 +155,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.BatchTagAddActionRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.BatchTagAddActionResponse`
         """
-        return self.batch_tag_add_action_with_http_info(request)
+        return self._batch_tag_add_action_with_http_info(request)
 
-    def batch_tag_add_action_with_http_info(self, request):
-        all_params = ['instance_id', 'batch_tag_action_request', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_tag_add_action_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -245,14 +215,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.BatchTagDelActionRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.BatchTagDelActionResponse`
         """
-        return self.batch_tag_del_action_with_http_info(request)
+        return self._batch_tag_del_action_with_http_info(request)
 
-    def batch_tag_del_action_with_http_info(self, request):
-        all_params = ['instance_id', 'batch_tag_action_request', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_tag_del_action_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -309,14 +275,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.ChangeFailoverModeRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ChangeFailoverModeResponse`
         """
-        return self.change_failover_mode_with_http_info(request)
+        return self._change_failover_mode_with_http_info(request)
 
-    def change_failover_mode_with_http_info(self, request):
-        all_params = ['instance_id', 'failover_mode_request_body', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _change_failover_mode_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -373,14 +335,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.ChangeFailoverStrategyRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ChangeFailoverStrategyResponse`
         """
-        return self.change_failover_strategy_with_http_info(request)
+        return self._change_failover_strategy_with_http_info(request)
 
-    def change_failover_strategy_with_http_info(self, request):
-        all_params = ['instance_id', 'failover_strategy_request_body', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _change_failover_strategy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -437,14 +395,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.ChangeOpsWindowRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ChangeOpsWindowResponse`
         """
-        return self.change_ops_window_with_http_info(request)
+        return self._change_ops_window_with_http_info(request)
 
-    def change_ops_window_with_http_info(self, request):
-        all_params = ['instance_id', 'ops_window_request_body', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _change_ops_window_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -501,14 +455,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.CopyConfigurationRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.CopyConfigurationResponse`
         """
-        return self.copy_configuration_with_http_info(request)
+        return self._copy_configuration_with_http_info(request)
 
-    def copy_configuration_with_http_info(self, request):
-        all_params = ['config_id', 'configuration_copy_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _copy_configuration_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -563,14 +513,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.CreateConfigurationRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.CreateConfigurationResponse`
         """
-        return self.create_configuration_with_http_info(request)
+        return self._create_configuration_with_http_info(request)
 
-    def create_configuration_with_http_info(self, request):
-        all_params = ['create_configuration_request_body', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_configuration_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -625,14 +571,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.CreateDnsNameRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.CreateDnsNameResponse`
         """
-        return self.create_dns_name_with_http_info(request)
+        return self._create_dns_name_with_http_info(request)
 
-    def create_dns_name_with_http_info(self, request):
-        all_params = ['instance_id', 'create_dns_name_request_body', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_dns_name_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -689,14 +631,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.CreateInstanceRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.CreateInstanceResponse`
         """
-        return self.create_instance_with_http_info(request)
+        return self._create_instance_with_http_info(request)
 
-    def create_instance_with_http_info(self, request):
-        all_params = ['create_instance_request_body', 'x_language', 'x_client_token']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -753,14 +691,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.CreateManualBackupRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.CreateManualBackupResponse`
         """
-        return self.create_manual_backup_with_http_info(request)
+        return self._create_manual_backup_with_http_info(request)
 
-    def create_manual_backup_with_http_info(self, request):
-        all_params = ['create_manual_backup_request_body', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_manual_backup_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -815,14 +749,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.CreateRestoreInstanceRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.CreateRestoreInstanceResponse`
         """
-        return self.create_restore_instance_with_http_info(request)
+        return self._create_restore_instance_with_http_info(request)
 
-    def create_restore_instance_with_http_info(self, request):
-        all_params = ['create_instance_request_body', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_restore_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -877,14 +807,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.DeleteConfigurationRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.DeleteConfigurationResponse`
         """
-        return self.delete_configuration_with_http_info(request)
+        return self._delete_configuration_with_http_info(request)
 
-    def delete_configuration_with_http_info(self, request):
-        all_params = ['config_id', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_configuration_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -939,14 +865,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.DeleteInstanceRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.DeleteInstanceResponse`
         """
-        return self.delete_instance_with_http_info(request)
+        return self._delete_instance_with_http_info(request)
 
-    def delete_instance_with_http_info(self, request):
-        all_params = ['instance_id', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1001,14 +923,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.DeleteManualBackupRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.DeleteManualBackupResponse`
         """
-        return self.delete_manual_backup_with_http_info(request)
+        return self._delete_manual_backup_with_http_info(request)
 
-    def delete_manual_backup_with_http_info(self, request):
-        all_params = ['backup_id', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_manual_backup_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1063,14 +981,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.DownloadSlowlogRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.DownloadSlowlogResponse`
         """
-        return self.download_slowlog_with_http_info(request)
+        return self._download_slowlog_with_http_info(request)
 
-    def download_slowlog_with_http_info(self, request):
-        all_params = ['instance_id', 'slowlog_download_request_body', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _download_slowlog_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1127,14 +1041,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.EnableConfigurationRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.EnableConfigurationResponse`
         """
-        return self.enable_configuration_with_http_info(request)
+        return self._enable_configuration_with_http_info(request)
 
-    def enable_configuration_with_http_info(self, request):
-        all_params = ['config_id', 'apply_configuration_request', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _enable_configuration_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1191,14 +1101,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.ListAuditlogsRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ListAuditlogsResponse`
         """
-        return self.list_auditlogs_with_http_info(request)
+        return self._list_auditlogs_with_http_info(request)
 
-    def list_auditlogs_with_http_info(self, request):
-        all_params = ['instance_id', 'start_time', 'end_time', 'offset', 'limit', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_auditlogs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1261,14 +1167,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.ListBackupsRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ListBackupsResponse`
         """
-        return self.list_backups_with_http_info(request)
+        return self._list_backups_with_http_info(request)
 
-    def list_backups_with_http_info(self, request):
-        all_params = ['instance_id', 'x_language', 'backup_id', 'backup_type', 'offset', 'limit', 'begin_time', 'end_time']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_backups_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1335,14 +1237,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.ListCollationsRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ListCollationsResponse`
         """
-        return self.list_collations_with_http_info(request)
+        return self._list_collations_with_http_info(request)
 
-    def list_collations_with_http_info(self, request):
-        all_params = ['x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_collations_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1395,14 +1293,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.ListConfigurationsRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ListConfigurationsResponse`
         """
-        return self.list_configurations_with_http_info(request)
+        return self._list_configurations_with_http_info(request)
 
-    def list_configurations_with_http_info(self, request):
-        all_params = ['x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_configurations_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1455,14 +1349,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.ListDatastoresRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ListDatastoresResponse`
         """
-        return self.list_datastores_with_http_info(request)
+        return self._list_datastores_with_http_info(request)
 
-    def list_datastores_with_http_info(self, request):
-        all_params = ['database_name', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_datastores_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1517,14 +1407,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.ListDrRelationsRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ListDrRelationsResponse`
         """
-        return self.list_dr_relations_with_http_info(request)
+        return self._list_dr_relations_with_http_info(request)
 
-    def list_dr_relations_with_http_info(self, request):
-        all_params = ['x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_dr_relations_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1577,14 +1463,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.ListErrorLogsRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ListErrorLogsResponse`
         """
-        return self.list_error_logs_with_http_info(request)
+        return self._list_error_logs_with_http_info(request)
 
-    def list_error_logs_with_http_info(self, request):
-        all_params = ['instance_id', 'start_date', 'end_date', 'x_language', 'offset', 'limit', 'level']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_error_logs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1649,14 +1531,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.ListErrorLogsNewRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ListErrorLogsNewResponse`
         """
-        return self.list_error_logs_new_with_http_info(request)
+        return self._list_error_logs_new_with_http_info(request)
 
-    def list_error_logs_new_with_http_info(self, request):
-        all_params = ['instance_id', 'start_date', 'end_date', 'x_language', 'offset', 'limit', 'level']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_error_logs_new_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1721,14 +1599,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.ListErrorlogForLtsRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ListErrorlogForLtsResponse`
         """
-        return self.list_errorlog_for_lts_with_http_info(request)
+        return self._list_errorlog_for_lts_with_http_info(request)
 
-    def list_errorlog_for_lts_with_http_info(self, request):
-        all_params = ['instance_id', 'request', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_errorlog_for_lts_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1785,14 +1659,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.ListFlavorsRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ListFlavorsResponse`
         """
-        return self.list_flavors_with_http_info(request)
+        return self._list_flavors_with_http_info(request)
 
-    def list_flavors_with_http_info(self, request):
-        all_params = ['database_name', 'x_language', 'version_name', 'spec_code']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_flavors_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1851,14 +1721,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.ListInstanceParamHistoriesRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ListInstanceParamHistoriesResponse`
         """
-        return self.list_instance_param_histories_with_http_info(request)
+        return self._list_instance_param_histories_with_http_info(request)
 
-    def list_instance_param_histories_with_http_info(self, request):
-        all_params = ['instance_id', 'offset', 'limit', 'start_time', 'end_time', 'param_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_instance_param_histories_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1921,14 +1787,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.ListInstancesRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ListInstancesResponse`
         """
-        return self.list_instances_with_http_info(request)
+        return self._list_instances_with_http_info(request)
 
-    def list_instances_with_http_info(self, request):
-        all_params = ['x_language', 'id', 'name', 'type', 'datastore_type', 'vpc_id', 'subnet_id', 'offset', 'limit', 'tags']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_instances_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1999,14 +1861,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.ListJobInfoRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ListJobInfoResponse`
         """
-        return self.list_job_info_with_http_info(request)
+        return self._list_job_info_with_http_info(request)
 
-    def list_job_info_with_http_info(self, request):
-        all_params = ['id', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_job_info_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2061,14 +1919,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.ListJobInfoDetailRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ListJobInfoDetailResponse`
         """
-        return self.list_job_info_detail_with_http_info(request)
+        return self._list_job_info_detail_with_http_info(request)
 
-    def list_job_info_detail_with_http_info(self, request):
-        all_params = ['instance_id', 'start_time', 'x_language', 'end_time']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_job_info_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2127,14 +1981,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.ListOffSiteBackupsRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ListOffSiteBackupsResponse`
         """
-        return self.list_off_site_backups_with_http_info(request)
+        return self._list_off_site_backups_with_http_info(request)
 
-    def list_off_site_backups_with_http_info(self, request):
-        all_params = ['instance_id', 'x_language', 'backup_id', 'backup_type', 'offset', 'limit', 'begin_time', 'end_time']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_off_site_backups_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2201,14 +2051,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.ListOffSiteInstancesRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ListOffSiteInstancesResponse`
         """
-        return self.list_off_site_instances_with_http_info(request)
+        return self._list_off_site_instances_with_http_info(request)
 
-    def list_off_site_instances_with_http_info(self, request):
-        all_params = ['x_language', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_off_site_instances_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2266,14 +2112,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.ListOffSiteRestoreTimesRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ListOffSiteRestoreTimesResponse`
         """
-        return self.list_off_site_restore_times_with_http_info(request)
+        return self._list_off_site_restore_times_with_http_info(request)
 
-    def list_off_site_restore_times_with_http_info(self, request):
-        all_params = ['instance_id', 'x_language', 'date']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_off_site_restore_times_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2330,14 +2172,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.ListProjectTagsRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ListProjectTagsResponse`
         """
-        return self.list_project_tags_with_http_info(request)
+        return self._list_project_tags_with_http_info(request)
 
-    def list_project_tags_with_http_info(self, request):
-        all_params = ['x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_project_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2390,14 +2228,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.ListRecycleInstancesRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ListRecycleInstancesResponse`
         """
-        return self.list_recycle_instances_with_http_info(request)
+        return self._list_recycle_instances_with_http_info(request)
 
-    def list_recycle_instances_with_http_info(self, request):
-        all_params = ['offset', 'limit', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_recycle_instances_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2455,14 +2289,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.ListRestoreTimesRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ListRestoreTimesResponse`
         """
-        return self.list_restore_times_with_http_info(request)
+        return self._list_restore_times_with_http_info(request)
 
-    def list_restore_times_with_http_info(self, request):
-        all_params = ['instance_id', 'x_language', 'date']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_restore_times_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2520,14 +2350,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.ListSlowLogFileRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ListSlowLogFileResponse`
         """
-        return self.list_slow_log_file_with_http_info(request)
+        return self._list_slow_log_file_with_http_info(request)
 
-    def list_slow_log_file_with_http_info(self, request):
-        all_params = ['instance_id', 'x_language', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_slow_log_file_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2586,14 +2412,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.ListSlowLogStatisticsForLtsRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ListSlowLogStatisticsForLtsResponse`
         """
-        return self.list_slow_log_statistics_for_lts_with_http_info(request)
+        return self._list_slow_log_statistics_for_lts_with_http_info(request)
 
-    def list_slow_log_statistics_for_lts_with_http_info(self, request):
-        all_params = ['instance_id', 'request', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_slow_log_statistics_for_lts_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2650,14 +2472,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.ListSlowLogsRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ListSlowLogsResponse`
         """
-        return self.list_slow_logs_with_http_info(request)
+        return self._list_slow_logs_with_http_info(request)
 
-    def list_slow_logs_with_http_info(self, request):
-        all_params = ['instance_id', 'start_date', 'end_date', 'x_language', 'offset', 'limit', 'type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_slow_logs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2722,14 +2540,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.ListSlowLogsNewRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ListSlowLogsNewResponse`
         """
-        return self.list_slow_logs_new_with_http_info(request)
+        return self._list_slow_logs_new_with_http_info(request)
 
-    def list_slow_logs_new_with_http_info(self, request):
-        all_params = ['instance_id', 'start_date', 'end_date', 'x_language', 'offset', 'limit', 'type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_slow_logs_new_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2794,14 +2608,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.ListSlowlogForLtsRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ListSlowlogForLtsResponse`
         """
-        return self.list_slowlog_for_lts_with_http_info(request)
+        return self._list_slowlog_for_lts_with_http_info(request)
 
-    def list_slowlog_for_lts_with_http_info(self, request):
-        all_params = ['instance_id', 'request', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_slowlog_for_lts_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2858,14 +2668,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.ListSlowlogStatisticsRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ListSlowlogStatisticsResponse`
         """
-        return self.list_slowlog_statistics_with_http_info(request)
+        return self._list_slowlog_statistics_with_http_info(request)
 
-    def list_slowlog_statistics_with_http_info(self, request):
-        all_params = ['instance_id', 'cur_page', 'per_page', 'start_date', 'end_date', 'type', 'x_language', 'sort']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_slowlog_statistics_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2932,14 +2738,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.ListSslCertDownloadLinkRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ListSslCertDownloadLinkResponse`
         """
-        return self.list_ssl_cert_download_link_with_http_info(request)
+        return self._list_ssl_cert_download_link_with_http_info(request)
 
-    def list_ssl_cert_download_link_with_http_info(self, request):
-        all_params = ['instance_id', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_ssl_cert_download_link_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2994,14 +2796,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.ListStorageTypesRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ListStorageTypesResponse`
         """
-        return self.list_storage_types_with_http_info(request)
+        return self._list_storage_types_with_http_info(request)
 
-    def list_storage_types_with_http_info(self, request):
-        all_params = ['database_name', 'version_name', 'x_language', 'ha_mode']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_storage_types_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3060,14 +2858,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.MigrateFollowerRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.MigrateFollowerResponse`
         """
-        return self.migrate_follower_with_http_info(request)
+        return self._migrate_follower_with_http_info(request)
 
-    def migrate_follower_with_http_info(self, request):
-        all_params = ['instance_id', 'migrate_follower_request_body', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _migrate_follower_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3124,14 +2918,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.RestoreExistInstanceRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.RestoreExistInstanceResponse`
         """
-        return self.restore_exist_instance_with_http_info(request)
+        return self._restore_exist_instance_with_http_info(request)
 
-    def restore_exist_instance_with_http_info(self, request):
-        all_params = ['restore_existing_instance_request_body', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _restore_exist_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3186,14 +2976,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.RestoreTablesRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.RestoreTablesResponse`
         """
-        return self.restore_tables_with_http_info(request)
+        return self._restore_tables_with_http_info(request)
 
-    def restore_tables_with_http_info(self, request):
-        all_params = ['instance_id', 'restore_tables_request', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _restore_tables_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3250,14 +3036,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.RestoreToExistingInstanceRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.RestoreToExistingInstanceResponse`
         """
-        return self.restore_to_existing_instance_with_http_info(request)
+        return self._restore_to_existing_instance_with_http_info(request)
 
-    def restore_to_existing_instance_with_http_info(self, request):
-        all_params = ['restore_to_existing_instance_request', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _restore_to_existing_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3312,14 +3094,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.SetAuditlogPolicyRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.SetAuditlogPolicyResponse`
         """
-        return self.set_auditlog_policy_with_http_info(request)
+        return self._set_auditlog_policy_with_http_info(request)
 
-    def set_auditlog_policy_with_http_info(self, request):
-        all_params = ['instance_id', 'set_auditlog_policy_request', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _set_auditlog_policy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3378,14 +3156,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.SetAutoEnlargePolicyRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.SetAutoEnlargePolicyResponse`
         """
-        return self.set_auto_enlarge_policy_with_http_info(request)
+        return self._set_auto_enlarge_policy_with_http_info(request)
 
-    def set_auto_enlarge_policy_with_http_info(self, request):
-        all_params = ['instance_id', 'customer_modify_auto_enlarge_policy_req', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _set_auto_enlarge_policy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3442,14 +3216,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.SetBackupPolicyRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.SetBackupPolicyResponse`
         """
-        return self.set_backup_policy_with_http_info(request)
+        return self._set_backup_policy_with_http_info(request)
 
-    def set_backup_policy_with_http_info(self, request):
-        all_params = ['instance_id', 'set_backup_policy_request', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _set_backup_policy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3506,14 +3276,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.SetBinlogClearPolicyRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.SetBinlogClearPolicyResponse`
         """
-        return self.set_binlog_clear_policy_with_http_info(request)
+        return self._set_binlog_clear_policy_with_http_info(request)
 
-    def set_binlog_clear_policy_with_http_info(self, request):
-        all_params = ['instance_id', 'binlog_clear_policy_request', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _set_binlog_clear_policy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3570,14 +3336,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.SetOffSiteBackupPolicyRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.SetOffSiteBackupPolicyResponse`
         """
-        return self.set_off_site_backup_policy_with_http_info(request)
+        return self._set_off_site_backup_policy_with_http_info(request)
 
-    def set_off_site_backup_policy_with_http_info(self, request):
-        all_params = ['instance_id', 'set_off_site_backup_policy_request', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _set_off_site_backup_policy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3636,14 +3398,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.SetSecondLevelMonitorRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.SetSecondLevelMonitorResponse`
         """
-        return self.set_second_level_monitor_with_http_info(request)
+        return self._set_second_level_monitor_with_http_info(request)
 
-    def set_second_level_monitor_with_http_info(self, request):
-        all_params = ['instance_id', 'second_monitor_req', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _set_second_level_monitor_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3700,14 +3458,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.SetSecurityGroupRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.SetSecurityGroupResponse`
         """
-        return self.set_security_group_with_http_info(request)
+        return self._set_security_group_with_http_info(request)
 
-    def set_security_group_with_http_info(self, request):
-        all_params = ['instance_id', 'security_group_request_body', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _set_security_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3764,14 +3518,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.SetSensitiveSlowLogRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.SetSensitiveSlowLogResponse`
         """
-        return self.set_sensitive_slow_log_with_http_info(request)
+        return self._set_sensitive_slow_log_with_http_info(request)
 
-    def set_sensitive_slow_log_with_http_info(self, request):
-        all_params = ['instance_id', 'status', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _set_sensitive_slow_log_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3828,14 +3578,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.ShowAuditlogDownloadLinkRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ShowAuditlogDownloadLinkResponse`
         """
-        return self.show_auditlog_download_link_with_http_info(request)
+        return self._show_auditlog_download_link_with_http_info(request)
 
-    def show_auditlog_download_link_with_http_info(self, request):
-        all_params = ['instance_id', 'generate_auditlog_download_link_request', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_auditlog_download_link_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3892,14 +3638,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.ShowAuditlogPolicyRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ShowAuditlogPolicyResponse`
         """
-        return self.show_auditlog_policy_with_http_info(request)
+        return self._show_auditlog_policy_with_http_info(request)
 
-    def show_auditlog_policy_with_http_info(self, request):
-        all_params = ['instance_id', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_auditlog_policy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3954,14 +3696,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.ShowAutoEnlargePolicyRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ShowAutoEnlargePolicyResponse`
         """
-        return self.show_auto_enlarge_policy_with_http_info(request)
+        return self._show_auto_enlarge_policy_with_http_info(request)
 
-    def show_auto_enlarge_policy_with_http_info(self, request):
-        all_params = ['instance_id', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_auto_enlarge_policy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4016,14 +3754,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.ShowBackupDownloadLinkRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ShowBackupDownloadLinkResponse`
         """
-        return self.show_backup_download_link_with_http_info(request)
+        return self._show_backup_download_link_with_http_info(request)
 
-    def show_backup_download_link_with_http_info(self, request):
-        all_params = ['backup_id', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_backup_download_link_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4078,14 +3812,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.ShowBackupPolicyRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ShowBackupPolicyResponse`
         """
-        return self.show_backup_policy_with_http_info(request)
+        return self._show_backup_policy_with_http_info(request)
 
-    def show_backup_policy_with_http_info(self, request):
-        all_params = ['instance_id', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_backup_policy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4140,14 +3870,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.ShowBinlogClearPolicyRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ShowBinlogClearPolicyResponse`
         """
-        return self.show_binlog_clear_policy_with_http_info(request)
+        return self._show_binlog_clear_policy_with_http_info(request)
 
-    def show_binlog_clear_policy_with_http_info(self, request):
-        all_params = ['instance_id', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_binlog_clear_policy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4202,14 +3928,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.ShowConfigurationRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ShowConfigurationResponse`
         """
-        return self.show_configuration_with_http_info(request)
+        return self._show_configuration_with_http_info(request)
 
-    def show_configuration_with_http_info(self, request):
-        all_params = ['config_id', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_configuration_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4264,14 +3986,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.ShowDnsNameRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ShowDnsNameResponse`
         """
-        return self.show_dns_name_with_http_info(request)
+        return self._show_dns_name_with_http_info(request)
 
-    def show_dns_name_with_http_info(self, request):
-        all_params = ['instance_id', 'dns_type', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_dns_name_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4328,14 +4046,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.ShowDomainNameRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ShowDomainNameResponse`
         """
-        return self.show_domain_name_with_http_info(request)
+        return self._show_domain_name_with_http_info(request)
 
-    def show_domain_name_with_http_info(self, request):
-        all_params = ['instance_id', 'dns_type', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_domain_name_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4392,14 +4106,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.ShowDrReplicaStatusRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ShowDrReplicaStatusResponse`
         """
-        return self.show_dr_replica_status_with_http_info(request)
+        return self._show_dr_replica_status_with_http_info(request)
 
-    def show_dr_replica_status_with_http_info(self, request):
-        all_params = ['instance_id', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_dr_replica_status_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4454,14 +4164,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.ShowInstanceConfigurationRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ShowInstanceConfigurationResponse`
         """
-        return self.show_instance_configuration_with_http_info(request)
+        return self._show_instance_configuration_with_http_info(request)
 
-    def show_instance_configuration_with_http_info(self, request):
-        all_params = ['instance_id', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_instance_configuration_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4516,14 +4222,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.ShowOffSiteBackupPolicyRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ShowOffSiteBackupPolicyResponse`
         """
-        return self.show_off_site_backup_policy_with_http_info(request)
+        return self._show_off_site_backup_policy_with_http_info(request)
 
-    def show_off_site_backup_policy_with_http_info(self, request):
-        all_params = ['instance_id', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_off_site_backup_policy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4578,14 +4280,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.ShowQuotasRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ShowQuotasResponse`
         """
-        return self.show_quotas_with_http_info(request)
+        return self._show_quotas_with_http_info(request)
 
-    def show_quotas_with_http_info(self, request):
-        all_params = ['x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_quotas_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4638,14 +4336,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.ShowRecyclePolicyRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ShowRecyclePolicyResponse`
         """
-        return self.show_recycle_policy_with_http_info(request)
+        return self._show_recycle_policy_with_http_info(request)
 
-    def show_recycle_policy_with_http_info(self, request):
-        all_params = ['x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_recycle_policy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4698,14 +4392,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.ShowReplicationStatusRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ShowReplicationStatusResponse`
         """
-        return self.show_replication_status_with_http_info(request)
+        return self._show_replication_status_with_http_info(request)
 
-    def show_replication_status_with_http_info(self, request):
-        all_params = ['instance_id', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_replication_status_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4760,14 +4450,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.ShowSecondLevelMonitoringRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ShowSecondLevelMonitoringResponse`
         """
-        return self.show_second_level_monitoring_with_http_info(request)
+        return self._show_second_level_monitoring_with_http_info(request)
 
-    def show_second_level_monitoring_with_http_info(self, request):
-        all_params = ['instance_id', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_second_level_monitoring_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4822,14 +4508,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.StartFailoverRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.StartFailoverResponse`
         """
-        return self.start_failover_with_http_info(request)
+        return self._start_failover_with_http_info(request)
 
-    def start_failover_with_http_info(self, request):
-        all_params = ['instance_id', 'x_language', 'failover_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _start_failover_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4886,14 +4568,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.StartInstanceEnlargeVolumeActionRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.StartInstanceEnlargeVolumeActionResponse`
         """
-        return self.start_instance_enlarge_volume_action_with_http_info(request)
+        return self._start_instance_enlarge_volume_action_with_http_info(request)
 
-    def start_instance_enlarge_volume_action_with_http_info(self, request):
-        all_params = ['instance_id', 'enlarge_volume_request_body', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _start_instance_enlarge_volume_action_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4950,14 +4628,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.StartInstanceRestartActionRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.StartInstanceRestartActionResponse`
         """
-        return self.start_instance_restart_action_with_http_info(request)
+        return self._start_instance_restart_action_with_http_info(request)
 
-    def start_instance_restart_action_with_http_info(self, request):
-        all_params = ['instance_id', 'instance_restart_requset_body', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _start_instance_restart_action_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5014,14 +4688,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.StartInstanceSingleToHaActionRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.StartInstanceSingleToHaActionResponse`
         """
-        return self.start_instance_single_to_ha_action_with_http_info(request)
+        return self._start_instance_single_to_ha_action_with_http_info(request)
 
-    def start_instance_single_to_ha_action_with_http_info(self, request):
-        all_params = ['instance_id', 'instance_single_to_ha_request_body', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _start_instance_single_to_ha_action_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5078,14 +4748,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.StartRecyclePolicyRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.StartRecyclePolicyResponse`
         """
-        return self.start_recycle_policy_with_http_info(request)
+        return self._start_recycle_policy_with_http_info(request)
 
-    def start_recycle_policy_with_http_info(self, request):
-        all_params = ['recycle_policy_request', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _start_recycle_policy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5140,14 +4806,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.StartResizeFlavorActionRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.StartResizeFlavorActionResponse`
         """
-        return self.start_resize_flavor_action_with_http_info(request)
+        return self._start_resize_flavor_action_with_http_info(request)
 
-    def start_resize_flavor_action_with_http_info(self, request):
-        all_params = ['instance_id', 'resize_flavor_request_body', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _start_resize_flavor_action_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5204,14 +4866,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.StartupInstanceRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.StartupInstanceResponse`
         """
-        return self.startup_instance_with_http_info(request)
+        return self._startup_instance_with_http_info(request)
 
-    def startup_instance_with_http_info(self, request):
-        all_params = ['instance_id', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _startup_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5266,14 +4924,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.StopInstanceRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.StopInstanceResponse`
         """
-        return self.stop_instance_with_http_info(request)
+        return self._stop_instance_with_http_info(request)
 
-    def stop_instance_with_http_info(self, request):
-        all_params = ['instance_id', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _stop_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5328,14 +4982,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.SwitchSslRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.SwitchSslResponse`
         """
-        return self.switch_ssl_with_http_info(request)
+        return self._switch_ssl_with_http_info(request)
 
-    def switch_ssl_with_http_info(self, request):
-        all_params = ['instance_id', 'ssl_option_request_body', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _switch_ssl_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5392,14 +5042,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.UpdateConfigurationRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.UpdateConfigurationResponse`
         """
-        return self.update_configuration_with_http_info(request)
+        return self._update_configuration_with_http_info(request)
 
-    def update_configuration_with_http_info(self, request):
-        all_params = ['config_id', 'update_configuration_request_body', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_configuration_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5456,14 +5102,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.UpdateDataIpRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.UpdateDataIpResponse`
         """
-        return self.update_data_ip_with_http_info(request)
+        return self._update_data_ip_with_http_info(request)
 
-    def update_data_ip_with_http_info(self, request):
-        all_params = ['instance_id', 'data_ip_request_body', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_data_ip_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5520,14 +5162,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.UpdateDnsNameRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.UpdateDnsNameResponse`
         """
-        return self.update_dns_name_with_http_info(request)
+        return self._update_dns_name_with_http_info(request)
 
-    def update_dns_name_with_http_info(self, request):
-        all_params = ['instance_id', 'modify_dns_name_request_body', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_dns_name_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5584,14 +5222,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.UpdateInstanceConfigurationRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.UpdateInstanceConfigurationResponse`
         """
-        return self.update_instance_configuration_with_http_info(request)
+        return self._update_instance_configuration_with_http_info(request)
 
-    def update_instance_configuration_with_http_info(self, request):
-        all_params = ['instance_id', 'update_instance_configuration_request_body', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_instance_configuration_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5648,14 +5282,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.UpdateInstanceConfigurationAsyncRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.UpdateInstanceConfigurationAsyncResponse`
         """
-        return self.update_instance_configuration_async_with_http_info(request)
+        return self._update_instance_configuration_async_with_http_info(request)
 
-    def update_instance_configuration_async_with_http_info(self, request):
-        all_params = ['instance_id', 'update_instance_configuration_request_body', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_instance_configuration_async_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5712,14 +5342,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.UpdateInstanceNameRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.UpdateInstanceNameResponse`
         """
-        return self.update_instance_name_with_http_info(request)
+        return self._update_instance_name_with_http_info(request)
 
-    def update_instance_name_with_http_info(self, request):
-        all_params = ['instance_id', 'modify_instance_name_request_body', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_instance_name_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5776,14 +5402,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.UpdatePortRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.UpdatePortResponse`
         """
-        return self.update_port_with_http_info(request)
+        return self._update_port_with_http_info(request)
 
-    def update_port_with_http_info(self, request):
-        all_params = ['instance_id', 'update_db_port_request_body', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_port_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5840,14 +5462,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.UpdatePostgresqlInstanceAliasRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.UpdatePostgresqlInstanceAliasResponse`
         """
-        return self.update_postgresql_instance_alias_with_http_info(request)
+        return self._update_postgresql_instance_alias_with_http_info(request)
 
-    def update_postgresql_instance_alias_with_http_info(self, request):
-        all_params = ['instance_id', 'update_rds_instance_alias_request', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_postgresql_instance_alias_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5904,14 +5522,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.UpgradeDbVersionRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.UpgradeDbVersionResponse`
         """
-        return self.upgrade_db_version_with_http_info(request)
+        return self._upgrade_db_version_with_http_info(request)
 
-    def upgrade_db_version_with_http_info(self, request):
-        all_params = ['instance_id', 'x_language', 'customer_upgrade_database_version_req_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _upgrade_db_version_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5968,14 +5582,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.ListApiVersionRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ListApiVersionResponse`
         """
-        return self.list_api_version_with_http_info(request)
+        return self._list_api_version_with_http_info(request)
 
-    def list_api_version_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_api_version_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6026,14 +5636,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.ListApiVersionNewRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ListApiVersionNewResponse`
         """
-        return self.list_api_version_new_with_http_info(request)
+        return self._list_api_version_new_with_http_info(request)
 
-    def list_api_version_new_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_api_version_new_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6084,14 +5690,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.ShowApiVersionRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ShowApiVersionResponse`
         """
-        return self.show_api_version_with_http_info(request)
+        return self._show_api_version_with_http_info(request)
 
-    def show_api_version_with_http_info(self, request):
-        all_params = ['version']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_api_version_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6144,14 +5746,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.AllowDbUserPrivilegeRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.AllowDbUserPrivilegeResponse`
         """
-        return self.allow_db_user_privilege_with_http_info(request)
+        return self._allow_db_user_privilege_with_http_info(request)
 
-    def allow_db_user_privilege_with_http_info(self, request):
-        all_params = ['instance_id', 'grant_request', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _allow_db_user_privilege_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6208,14 +5806,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.CreateDatabaseRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.CreateDatabaseResponse`
         """
-        return self.create_database_with_http_info(request)
+        return self._create_database_with_http_info(request)
 
-    def create_database_with_http_info(self, request):
-        all_params = ['instance_id', 'create_database_request', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_database_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6272,14 +5866,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.CreateDbUserRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.CreateDbUserResponse`
         """
-        return self.create_db_user_with_http_info(request)
+        return self._create_db_user_with_http_info(request)
 
-    def create_db_user_with_http_info(self, request):
-        all_params = ['instance_id', 'create_db_user_request', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_db_user_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6336,14 +5926,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.DeleteDatabaseRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.DeleteDatabaseResponse`
         """
-        return self.delete_database_with_http_info(request)
+        return self._delete_database_with_http_info(request)
 
-    def delete_database_with_http_info(self, request):
-        all_params = ['instance_id', 'db_name', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_database_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6400,14 +5986,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.DeleteDbUserRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.DeleteDbUserResponse`
         """
-        return self.delete_db_user_with_http_info(request)
+        return self._delete_db_user_with_http_info(request)
 
-    def delete_db_user_with_http_info(self, request):
-        all_params = ['instance_id', 'user_name', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_db_user_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6464,14 +6046,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.ListAuthorizedDatabasesRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ListAuthorizedDatabasesResponse`
         """
-        return self.list_authorized_databases_with_http_info(request)
+        return self._list_authorized_databases_with_http_info(request)
 
-    def list_authorized_databases_with_http_info(self, request):
-        all_params = ['instance_id', 'user_name', 'page', 'limit', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_authorized_databases_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6532,14 +6110,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.ListAuthorizedDbUsersRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ListAuthorizedDbUsersResponse`
         """
-        return self.list_authorized_db_users_with_http_info(request)
+        return self._list_authorized_db_users_with_http_info(request)
 
-    def list_authorized_db_users_with_http_info(self, request):
-        all_params = ['instance_id', 'db_name', 'page', 'limit', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_authorized_db_users_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6600,14 +6174,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.ListDatabasesRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ListDatabasesResponse`
         """
-        return self.list_databases_with_http_info(request)
+        return self._list_databases_with_http_info(request)
 
-    def list_databases_with_http_info(self, request):
-        all_params = ['instance_id', 'page', 'limit', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_databases_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6666,14 +6236,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.ListDbUsersRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ListDbUsersResponse`
         """
-        return self.list_db_users_with_http_info(request)
+        return self._list_db_users_with_http_info(request)
 
-    def list_db_users_with_http_info(self, request):
-        all_params = ['instance_id', 'page', 'limit', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_db_users_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6732,14 +6298,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.ResetPwdRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ResetPwdResponse`
         """
-        return self.reset_pwd_with_http_info(request)
+        return self._reset_pwd_with_http_info(request)
 
-    def reset_pwd_with_http_info(self, request):
-        all_params = ['instance_id', 'pwd_reset_request_body', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _reset_pwd_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6796,14 +6358,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.RevokeRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.RevokeResponse`
         """
-        return self.revoke_with_http_info(request)
+        return self._revoke_with_http_info(request)
 
-    def revoke_with_http_info(self, request):
-        all_params = ['instance_id', 'revoke_request_body', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _revoke_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6860,14 +6418,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.SetDbUserPwdRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.SetDbUserPwdResponse`
         """
-        return self.set_db_user_pwd_with_http_info(request)
+        return self._set_db_user_pwd_with_http_info(request)
 
-    def set_db_user_pwd_with_http_info(self, request):
-        all_params = ['instance_id', 'db_user_pwd_request_body', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _set_db_user_pwd_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6924,14 +6478,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.SetReadOnlySwitchRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.SetReadOnlySwitchResponse`
         """
-        return self.set_read_only_switch_with_http_info(request)
+        return self._set_read_only_switch_with_http_info(request)
 
-    def set_read_only_switch_with_http_info(self, request):
-        all_params = ['instance_id', 'mysql_read_only_switch', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _set_read_only_switch_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6988,14 +6538,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.UpdateDatabaseRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.UpdateDatabaseResponse`
         """
-        return self.update_database_with_http_info(request)
+        return self._update_database_with_http_info(request)
 
-    def update_database_with_http_info(self, request):
-        all_params = ['instance_id', 'update_database_req', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_database_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7052,14 +6598,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.UpdateDbUserCommentRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.UpdateDbUserCommentResponse`
         """
-        return self.update_db_user_comment_with_http_info(request)
+        return self._update_db_user_comment_with_http_info(request)
 
-    def update_db_user_comment_with_http_info(self, request):
-        all_params = ['instance_id', 'user_name', 'update_db_user_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_db_user_comment_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7116,14 +6658,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.AllowDbPrivilegeRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.AllowDbPrivilegeResponse`
         """
-        return self.allow_db_privilege_with_http_info(request)
+        return self._allow_db_privilege_with_http_info(request)
 
-    def allow_db_privilege_with_http_info(self, request):
-        all_params = ['instance_id', 'grant_request', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _allow_db_privilege_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7182,14 +6720,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.ChangeProxyScaleRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ChangeProxyScaleResponse`
         """
-        return self.change_proxy_scale_with_http_info(request)
+        return self._change_proxy_scale_with_http_info(request)
 
-    def change_proxy_scale_with_http_info(self, request):
-        all_params = ['instance_id', 'scale_proxy_request_body', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _change_proxy_scale_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7246,14 +6780,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.ChangeTheDelayThresholdRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ChangeTheDelayThresholdResponse`
         """
-        return self.change_the_delay_threshold_with_http_info(request)
+        return self._change_the_delay_threshold_with_http_info(request)
 
-    def change_the_delay_threshold_with_http_info(self, request):
-        all_params = ['instance_id', 'changing_the_delay_threshold_request_body', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _change_the_delay_threshold_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7310,14 +6840,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.CreatePostgresqlDatabaseRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.CreatePostgresqlDatabaseResponse`
         """
-        return self.create_postgresql_database_with_http_info(request)
+        return self._create_postgresql_database_with_http_info(request)
 
-    def create_postgresql_database_with_http_info(self, request):
-        all_params = ['instance_id', 'create_database_request', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_postgresql_database_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7374,14 +6900,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.CreatePostgresqlDatabaseSchemaRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.CreatePostgresqlDatabaseSchemaResponse`
         """
-        return self.create_postgresql_database_schema_with_http_info(request)
+        return self._create_postgresql_database_schema_with_http_info(request)
 
-    def create_postgresql_database_schema_with_http_info(self, request):
-        all_params = ['instance_id', 'db_schema_req', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_postgresql_database_schema_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7438,14 +6960,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.CreatePostgresqlDbUserRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.CreatePostgresqlDbUserResponse`
         """
-        return self.create_postgresql_db_user_with_http_info(request)
+        return self._create_postgresql_db_user_with_http_info(request)
 
-    def create_postgresql_db_user_with_http_info(self, request):
-        all_params = ['instance_id', 'create_db_user_request', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_postgresql_db_user_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7502,14 +7020,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.CreatePostgresqlExtensionRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.CreatePostgresqlExtensionResponse`
         """
-        return self.create_postgresql_extension_with_http_info(request)
+        return self._create_postgresql_extension_with_http_info(request)
 
-    def create_postgresql_extension_with_http_info(self, request):
-        all_params = ['instance_id', 'drop_extension_request', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_postgresql_extension_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7555,6 +7069,126 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def delete_postgresql_database(self, request):
+        """删除数据库
+
+        删除数据库。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeletePostgresqlDatabase
+        :type request: :class:`huaweicloudsdkrds.v3.DeletePostgresqlDatabaseRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.DeletePostgresqlDatabaseResponse`
+        """
+        return self._delete_postgresql_database_with_http_info(request)
+
+    def _delete_postgresql_database_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'db_name' in local_var_params:
+            path_params['db_name'] = local_var_params['db_name']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/database/{db_name}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeletePostgresqlDatabaseResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_postgresql_db_user(self, request):
+        """删除数据库用户
+
+        删除数据库用户。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeletePostgresqlDbUser
+        :type request: :class:`huaweicloudsdkrds.v3.DeletePostgresqlDbUserRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.DeletePostgresqlDbUserResponse`
+        """
+        return self._delete_postgresql_db_user_with_http_info(request)
+
+    def _delete_postgresql_db_user_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'user_name' in local_var_params:
+            path_params['user_name'] = local_var_params['user_name']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/db_user/{user_name}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeletePostgresqlDbUserResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def delete_postgresql_extension(self, request):
         """删除插件
 
@@ -7566,14 +7200,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.DeletePostgresqlExtensionRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.DeletePostgresqlExtensionResponse`
         """
-        return self.delete_postgresql_extension_with_http_info(request)
+        return self._delete_postgresql_extension_with_http_info(request)
 
-    def delete_postgresql_extension_with_http_info(self, request):
-        all_params = ['instance_id', 'create_extension_request', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_postgresql_extension_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7630,14 +7260,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.ListPostgresqlDatabaseSchemasRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ListPostgresqlDatabaseSchemasResponse`
         """
-        return self.list_postgresql_database_schemas_with_http_info(request)
+        return self._list_postgresql_database_schemas_with_http_info(request)
 
-    def list_postgresql_database_schemas_with_http_info(self, request):
-        all_params = ['instance_id', 'db_name', 'page', 'limit', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_postgresql_database_schemas_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7698,14 +7324,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.ListPostgresqlDatabasesRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ListPostgresqlDatabasesResponse`
         """
-        return self.list_postgresql_databases_with_http_info(request)
+        return self._list_postgresql_databases_with_http_info(request)
 
-    def list_postgresql_databases_with_http_info(self, request):
-        all_params = ['instance_id', 'page', 'limit', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_postgresql_databases_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7764,14 +7386,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.ListPostgresqlDbUserPaginatedRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ListPostgresqlDbUserPaginatedResponse`
         """
-        return self.list_postgresql_db_user_paginated_with_http_info(request)
+        return self._list_postgresql_db_user_paginated_with_http_info(request)
 
-    def list_postgresql_db_user_paginated_with_http_info(self, request):
-        all_params = ['instance_id', 'page', 'limit', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_postgresql_db_user_paginated_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7830,14 +7448,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.ListPostgresqlExtensionRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ListPostgresqlExtensionResponse`
         """
-        return self.list_postgresql_extension_with_http_info(request)
+        return self._list_postgresql_extension_with_http_info(request)
 
-    def list_postgresql_extension_with_http_info(self, request):
-        all_params = ['instance_id', 'database_name', 'x_language', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_postgresql_extension_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7900,14 +7514,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.SearchQueryScaleComputeFlavorsRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.SearchQueryScaleComputeFlavorsResponse`
         """
-        return self.search_query_scale_compute_flavors_with_http_info(request)
+        return self._search_query_scale_compute_flavors_with_http_info(request)
 
-    def search_query_scale_compute_flavors_with_http_info(self, request):
-        all_params = ['instance_id', 'x_language', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _search_query_scale_compute_flavors_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7968,14 +7578,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.SearchQueryScaleFlavorsRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.SearchQueryScaleFlavorsResponse`
         """
-        return self.search_query_scale_flavors_with_http_info(request)
+        return self._search_query_scale_flavors_with_http_info(request)
 
-    def search_query_scale_flavors_with_http_info(self, request):
-        all_params = ['instance_id', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _search_query_scale_flavors_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -8030,14 +7636,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.SetDatabaseUserPrivilegeRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.SetDatabaseUserPrivilegeResponse`
         """
-        return self.set_database_user_privilege_with_http_info(request)
+        return self._set_database_user_privilege_with_http_info(request)
 
-    def set_database_user_privilege_with_http_info(self, request):
-        all_params = ['instance_id', 'set_database_user_privilege_req_v3', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _set_database_user_privilege_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -8094,14 +7696,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.SetPostgresqlDbUserPwdRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.SetPostgresqlDbUserPwdResponse`
         """
-        return self.set_postgresql_db_user_pwd_with_http_info(request)
+        return self._set_postgresql_db_user_pwd_with_http_info(request)
 
-    def set_postgresql_db_user_pwd_with_http_info(self, request):
-        all_params = ['instance_id', 'db_user_pwd_request_body', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _set_postgresql_db_user_pwd_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -8158,14 +7756,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.ShowInformationAboutDatabaseProxyRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ShowInformationAboutDatabaseProxyResponse`
         """
-        return self.show_information_about_database_proxy_with_http_info(request)
+        return self._show_information_about_database_proxy_with_http_info(request)
 
-    def show_information_about_database_proxy_with_http_info(self, request):
-        all_params = ['instance_id', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_information_about_database_proxy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -8220,14 +7814,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.ShowPostgresqlParamValueRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ShowPostgresqlParamValueResponse`
         """
-        return self.show_postgresql_param_value_with_http_info(request)
+        return self._show_postgresql_param_value_with_http_info(request)
 
-    def show_postgresql_param_value_with_http_info(self, request):
-        all_params = ['instance_id', 'name', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_postgresql_param_value_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -8284,14 +7874,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.StartDatabaseProxyRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.StartDatabaseProxyResponse`
         """
-        return self.start_database_proxy_with_http_info(request)
+        return self._start_database_proxy_with_http_info(request)
 
-    def start_database_proxy_with_http_info(self, request):
-        all_params = ['instance_id', 'open_proxy_request', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _start_database_proxy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -8348,14 +7934,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.StopDatabaseProxyRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.StopDatabaseProxyResponse`
         """
-        return self.stop_database_proxy_with_http_info(request)
+        return self._stop_database_proxy_with_http_info(request)
 
-    def stop_database_proxy_with_http_info(self, request):
-        all_params = ['instance_id', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _stop_database_proxy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -8410,14 +7992,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.UpdateDbUserPrivilegeRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.UpdateDbUserPrivilegeResponse`
         """
-        return self.update_db_user_privilege_with_http_info(request)
+        return self._update_db_user_privilege_with_http_info(request)
 
-    def update_db_user_privilege_with_http_info(self, request):
-        all_params = ['instance_id', 'db_user_privilege_request']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_db_user_privilege_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -8461,6 +8039,126 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def update_postgresql_database(self, request):
+        """修改指定实例的数据库备注
+
+        修改指定实例中的数据库备注。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdatePostgresqlDatabase
+        :type request: :class:`huaweicloudsdkrds.v3.UpdatePostgresqlDatabaseRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.UpdatePostgresqlDatabaseResponse`
+        """
+        return self._update_postgresql_database_with_http_info(request)
+
+    def _update_postgresql_database_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/database/update',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdatePostgresqlDatabaseResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_postgresql_db_user_comment(self, request):
+        """修改数据库用户名备注
+
+        修改数据库用户名备注
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdatePostgresqlDbUserComment
+        :type request: :class:`huaweicloudsdkrds.v3.UpdatePostgresqlDbUserCommentRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.UpdatePostgresqlDbUserCommentResponse`
+        """
+        return self._update_postgresql_db_user_comment_with_http_info(request)
+
+    def _update_postgresql_db_user_comment_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'user_name' in local_var_params:
+            path_params['user_name'] = local_var_params['user_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/db-users/{user_name}/comment',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdatePostgresqlDbUserCommentResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def update_postgresql_parameter_value(self, request):
         """修改实例指定参数的值
 
@@ -8472,14 +8170,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.UpdatePostgresqlParameterValueRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.UpdatePostgresqlParameterValueResponse`
         """
-        return self.update_postgresql_parameter_value_with_http_info(request)
+        return self._update_postgresql_parameter_value_with_http_info(request)
 
-    def update_postgresql_parameter_value_with_http_info(self, request):
-        all_params = ['instance_id', 'name', 'modify_param_request', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_postgresql_parameter_value_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -8538,14 +8232,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.UpdateReadWeightRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.UpdateReadWeightResponse`
         """
-        return self.update_read_weight_with_http_info(request)
+        return self._update_read_weight_with_http_info(request)
 
-    def update_read_weight_with_http_info(self, request):
-        all_params = ['instance_id', 'modify_proxy_weight_request', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_read_weight_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -8602,14 +8292,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.AllowSqlserverDbUserPrivilegeRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.AllowSqlserverDbUserPrivilegeResponse`
         """
-        return self.allow_sqlserver_db_user_privilege_with_http_info(request)
+        return self._allow_sqlserver_db_user_privilege_with_http_info(request)
 
-    def allow_sqlserver_db_user_privilege_with_http_info(self, request):
-        all_params = ['instance_id', 'grant_request', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _allow_sqlserver_db_user_privilege_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -8666,14 +8352,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.BatchAddMsdtcsRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.BatchAddMsdtcsResponse`
         """
-        return self.batch_add_msdtcs_with_http_info(request)
+        return self._batch_add_msdtcs_with_http_info(request)
 
-    def batch_add_msdtcs_with_http_info(self, request):
-        all_params = ['instance_id', 'add_msdtc']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_add_msdtcs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -8728,14 +8410,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.CreateSqlserverDatabaseRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.CreateSqlserverDatabaseResponse`
         """
-        return self.create_sqlserver_database_with_http_info(request)
+        return self._create_sqlserver_database_with_http_info(request)
 
-    def create_sqlserver_database_with_http_info(self, request):
-        all_params = ['instance_id', 'create_database_request', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_sqlserver_database_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -8792,14 +8470,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.CreateSqlserverDbUserRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.CreateSqlserverDbUserResponse`
         """
-        return self.create_sqlserver_db_user_with_http_info(request)
+        return self._create_sqlserver_db_user_with_http_info(request)
 
-    def create_sqlserver_db_user_with_http_info(self, request):
-        all_params = ['instance_id', 'create_db_user_request', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_sqlserver_db_user_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -8856,14 +8530,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.DeleteSqlserverDatabaseRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.DeleteSqlserverDatabaseResponse`
         """
-        return self.delete_sqlserver_database_with_http_info(request)
+        return self._delete_sqlserver_database_with_http_info(request)
 
-    def delete_sqlserver_database_with_http_info(self, request):
-        all_params = ['instance_id', 'db_name', 'x_language', 'drop_database_v3_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_sqlserver_database_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -8922,14 +8592,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.DeleteSqlserverDatabaseExRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.DeleteSqlserverDatabaseExResponse`
         """
-        return self.delete_sqlserver_database_ex_with_http_info(request)
+        return self._delete_sqlserver_database_ex_with_http_info(request)
 
-    def delete_sqlserver_database_ex_with_http_info(self, request):
-        all_params = ['instance_id', 'db_name', 'x_language', 'drop_database_v3_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_sqlserver_database_ex_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -8988,14 +8654,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.DeleteSqlserverDbUserRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.DeleteSqlserverDbUserResponse`
         """
-        return self.delete_sqlserver_db_user_with_http_info(request)
+        return self._delete_sqlserver_db_user_with_http_info(request)
 
-    def delete_sqlserver_db_user_with_http_info(self, request):
-        all_params = ['instance_id', 'user_name', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_sqlserver_db_user_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -9052,14 +8714,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.ListAuthorizedSqlserverDbUsersRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ListAuthorizedSqlserverDbUsersResponse`
         """
-        return self.list_authorized_sqlserver_db_users_with_http_info(request)
+        return self._list_authorized_sqlserver_db_users_with_http_info(request)
 
-    def list_authorized_sqlserver_db_users_with_http_info(self, request):
-        all_params = ['instance_id', 'db_name', 'page', 'limit', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_authorized_sqlserver_db_users_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -9120,14 +8778,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.ListMsdtcHostsRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ListMsdtcHostsResponse`
         """
-        return self.list_msdtc_hosts_with_http_info(request)
+        return self._list_msdtc_hosts_with_http_info(request)
 
-    def list_msdtc_hosts_with_http_info(self, request):
-        all_params = ['instance_id', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_msdtc_hosts_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -9184,14 +8838,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.ListSqlserverDatabasesRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ListSqlserverDatabasesResponse`
         """
-        return self.list_sqlserver_databases_with_http_info(request)
+        return self._list_sqlserver_databases_with_http_info(request)
 
-    def list_sqlserver_databases_with_http_info(self, request):
-        all_params = ['instance_id', 'page', 'limit', 'x_language', 'db_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_sqlserver_databases_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -9252,14 +8902,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.ListSqlserverDbUsersRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ListSqlserverDbUsersResponse`
         """
-        return self.list_sqlserver_db_users_with_http_info(request)
+        return self._list_sqlserver_db_users_with_http_info(request)
 
-    def list_sqlserver_db_users_with_http_info(self, request):
-        all_params = ['instance_id', 'page', 'limit', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_sqlserver_db_users_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -9318,14 +8964,10 @@ class RdsClient(Client):
         :type request: :class:`huaweicloudsdkrds.v3.RevokeSqlserverDbUserPrivilegeRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.RevokeSqlserverDbUserPrivilegeResponse`
         """
-        return self.revoke_sqlserver_db_user_privilege_with_http_info(request)
+        return self._revoke_sqlserver_db_user_privilege_with_http_info(request)
 
-    def revoke_sqlserver_db_user_privilege_with_http_info(self, request):
-        all_params = ['instance_id', 'sqlserver_revoke_request', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _revoke_sqlserver_db_user_privilege_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

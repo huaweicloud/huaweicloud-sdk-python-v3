@@ -1,9 +1,6 @@
 # coding: utf-8
 
-import re
 import six
-
-
 
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
@@ -21,7 +18,7 @@ class TagResource:
 
     openapi_types = {
         'resource_id': 'str',
-        'resource_detail': 'list[Vault]',
+        'resource_detail': 'InstancesResourceDetail',
         'tags': 'list[Tag]',
         'resource_name': 'str',
         'sys_tags': 'list[SysTag]'
@@ -42,8 +39,8 @@ class TagResource:
 
         :param resource_id: 资源ID
         :type resource_id: str
-        :param resource_detail: 资源详情
-        :type resource_detail: list[:class:`huaweicloudsdkcbr.v1.Vault`]
+        :param resource_detail: 
+        :type resource_detail: :class:`huaweicloudsdkcbr.v1.InstancesResourceDetail`
         :param tags: 标签列表 没有标签默认为空数字。
         :type tags: list[:class:`huaweicloudsdkcbr.v1.Tag`]
         :param resource_name: 资源名称
@@ -93,10 +90,8 @@ class TagResource:
     def resource_detail(self):
         """Gets the resource_detail of this TagResource.
 
-        资源详情
-
         :return: The resource_detail of this TagResource.
-        :rtype: list[:class:`huaweicloudsdkcbr.v1.Vault`]
+        :rtype: :class:`huaweicloudsdkcbr.v1.InstancesResourceDetail`
         """
         return self._resource_detail
 
@@ -104,10 +99,8 @@ class TagResource:
     def resource_detail(self, resource_detail):
         """Sets the resource_detail of this TagResource.
 
-        资源详情
-
         :param resource_detail: The resource_detail of this TagResource.
-        :type resource_detail: list[:class:`huaweicloudsdkcbr.v1.Vault`]
+        :type resource_detail: :class:`huaweicloudsdkcbr.v1.InstancesResourceDetail`
         """
         self._resource_detail = resource_detail
 

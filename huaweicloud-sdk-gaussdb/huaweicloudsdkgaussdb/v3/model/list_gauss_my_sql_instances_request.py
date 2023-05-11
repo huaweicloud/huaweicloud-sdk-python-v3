@@ -1,9 +1,6 @@
 # coding: utf-8
 
-import re
 import six
-
-
 
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
@@ -28,6 +25,8 @@ class ListGaussMySqlInstancesRequest:
         'vpc_id': 'str',
         'subnet_id': 'str',
         'private_ip': 'str',
+        'readonly_private_ip': 'str',
+        'proxy_ip': 'str',
         'offset': 'int',
         'limit': 'int',
         'tags': 'str'
@@ -42,12 +41,14 @@ class ListGaussMySqlInstancesRequest:
         'vpc_id': 'vpc_id',
         'subnet_id': 'subnet_id',
         'private_ip': 'private_ip',
+        'readonly_private_ip': 'readonly_private_ip',
+        'proxy_ip': 'proxy_ip',
         'offset': 'offset',
         'limit': 'limit',
         'tags': 'tags'
     }
 
-    def __init__(self, x_language=None, id=None, name=None, type=None, datastore_type=None, vpc_id=None, subnet_id=None, private_ip=None, offset=None, limit=None, tags=None):
+    def __init__(self, x_language=None, id=None, name=None, type=None, datastore_type=None, vpc_id=None, subnet_id=None, private_ip=None, readonly_private_ip=None, proxy_ip=None, offset=None, limit=None, tags=None):
         """ListGaussMySqlInstancesRequest
 
         The model defined in huaweicloud sdk
@@ -68,6 +69,10 @@ class ListGaussMySqlInstancesRequest:
         :type subnet_id: str
         :param private_ip: 读写内网IP。
         :type private_ip: str
+        :param readonly_private_ip: 读内网IP。
+        :type readonly_private_ip: str
+        :param proxy_ip: 读写分离IP。
+        :type proxy_ip: str
         :param offset: 索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
         :type offset: int
         :param limit: 查询记录数。默认为100，不能为负数，最小值为1，最大值为100。
@@ -86,6 +91,8 @@ class ListGaussMySqlInstancesRequest:
         self._vpc_id = None
         self._subnet_id = None
         self._private_ip = None
+        self._readonly_private_ip = None
+        self._proxy_ip = None
         self._offset = None
         self._limit = None
         self._tags = None
@@ -107,6 +114,10 @@ class ListGaussMySqlInstancesRequest:
             self.subnet_id = subnet_id
         if private_ip is not None:
             self.private_ip = private_ip
+        if readonly_private_ip is not None:
+            self.readonly_private_ip = readonly_private_ip
+        if proxy_ip is not None:
+            self.proxy_ip = proxy_ip
         if offset is not None:
             self.offset = offset
         if limit is not None:
@@ -289,6 +300,50 @@ class ListGaussMySqlInstancesRequest:
         :type private_ip: str
         """
         self._private_ip = private_ip
+
+    @property
+    def readonly_private_ip(self):
+        """Gets the readonly_private_ip of this ListGaussMySqlInstancesRequest.
+
+        读内网IP。
+
+        :return: The readonly_private_ip of this ListGaussMySqlInstancesRequest.
+        :rtype: str
+        """
+        return self._readonly_private_ip
+
+    @readonly_private_ip.setter
+    def readonly_private_ip(self, readonly_private_ip):
+        """Sets the readonly_private_ip of this ListGaussMySqlInstancesRequest.
+
+        读内网IP。
+
+        :param readonly_private_ip: The readonly_private_ip of this ListGaussMySqlInstancesRequest.
+        :type readonly_private_ip: str
+        """
+        self._readonly_private_ip = readonly_private_ip
+
+    @property
+    def proxy_ip(self):
+        """Gets the proxy_ip of this ListGaussMySqlInstancesRequest.
+
+        读写分离IP。
+
+        :return: The proxy_ip of this ListGaussMySqlInstancesRequest.
+        :rtype: str
+        """
+        return self._proxy_ip
+
+    @proxy_ip.setter
+    def proxy_ip(self, proxy_ip):
+        """Sets the proxy_ip of this ListGaussMySqlInstancesRequest.
+
+        读写分离IP。
+
+        :param proxy_ip: The proxy_ip of this ListGaussMySqlInstancesRequest.
+        :type proxy_ip: str
+        """
+        self._proxy_ip = proxy_ip
 
     @property
     def offset(self):

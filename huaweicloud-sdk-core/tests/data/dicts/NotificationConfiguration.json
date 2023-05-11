@@ -1,0 +1,31 @@
+{
+  "NotificationConfiguration": {
+    "TopicConfiguration": {
+      "Id": "ConfigurationId",
+      "Filter": {
+        "Object": {
+          "FilterRule": [
+            {
+              "Name": "prefix",
+              "Value": "prefix-value"
+            },
+            {
+              "Name": "suffix",
+              "Value": "suffix-value"
+            }
+          ]
+        }
+      },
+      "Topic": "TopicARN",
+      "Event": [
+        "event-type",
+        "event-type"
+      ]
+    },
+    "FunctionStageConfiguration": {
+      "Id": "ConfigurationId",
+      "FunctionStage": "function-stage-arn",
+      "Event": "event-type"
+    }
+  }
+}

@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class BmsAsyncClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(BmsAsyncClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkbms.v1.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -53,14 +35,10 @@ class BmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbms.v1.AddServerNicsRequest`
         :rtype: :class:`huaweicloudsdkbms.v1.AddServerNicsResponse`
         """
-        return self.add_server_nics_with_http_info(request)
+        return self._add_server_nics_with_http_info(request)
 
-    def add_server_nics_with_http_info(self, request):
-        all_params = ['server_id', 'add_server_nics_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _add_server_nics_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -116,14 +94,10 @@ class BmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbms.v1.AttachBaremetalServerVolumeRequest`
         :rtype: :class:`huaweicloudsdkbms.v1.AttachBaremetalServerVolumeResponse`
         """
-        return self.attach_baremetal_server_volume_with_http_info(request)
+        return self._attach_baremetal_server_volume_with_http_info(request)
 
-    def attach_baremetal_server_volume_with_http_info(self, request):
-        all_params = ['server_id', 'attach_volume']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _attach_baremetal_server_volume_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -179,14 +153,10 @@ class BmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbms.v1.BatchCreateBaremetalServerTagsRequest`
         :rtype: :class:`huaweicloudsdkbms.v1.BatchCreateBaremetalServerTagsResponse`
         """
-        return self.batch_create_baremetal_server_tags_with_http_info(request)
+        return self._batch_create_baremetal_server_tags_with_http_info(request)
 
-    def batch_create_baremetal_server_tags_with_http_info(self, request):
-        all_params = ['server_id', 'batch_create_baremetal_server_tags_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_create_baremetal_server_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -242,14 +212,10 @@ class BmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbms.v1.BatchDeleteBaremetalServerTagsRequest`
         :rtype: :class:`huaweicloudsdkbms.v1.BatchDeleteBaremetalServerTagsResponse`
         """
-        return self.batch_delete_baremetal_server_tags_with_http_info(request)
+        return self._batch_delete_baremetal_server_tags_with_http_info(request)
 
-    def batch_delete_baremetal_server_tags_with_http_info(self, request):
-        all_params = ['server_id', 'batch_delete_baremetal_server_tags_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_delete_baremetal_server_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -305,14 +271,10 @@ class BmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbms.v1.BatchRebootBaremetalServersRequest`
         :rtype: :class:`huaweicloudsdkbms.v1.BatchRebootBaremetalServersResponse`
         """
-        return self.batch_reboot_baremetal_servers_with_http_info(request)
+        return self._batch_reboot_baremetal_servers_with_http_info(request)
 
-    def batch_reboot_baremetal_servers_with_http_info(self, request):
-        all_params = ['reboot_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_reboot_baremetal_servers_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -366,14 +328,10 @@ class BmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbms.v1.BatchStartBaremetalServersRequest`
         :rtype: :class:`huaweicloudsdkbms.v1.BatchStartBaremetalServersResponse`
         """
-        return self.batch_start_baremetal_servers_with_http_info(request)
+        return self._batch_start_baremetal_servers_with_http_info(request)
 
-    def batch_start_baremetal_servers_with_http_info(self, request):
-        all_params = ['os_start_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_start_baremetal_servers_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -427,14 +385,10 @@ class BmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbms.v1.BatchStopBaremetalServersRequest`
         :rtype: :class:`huaweicloudsdkbms.v1.BatchStopBaremetalServersResponse`
         """
-        return self.batch_stop_baremetal_servers_with_http_info(request)
+        return self._batch_stop_baremetal_servers_with_http_info(request)
 
-    def batch_stop_baremetal_servers_with_http_info(self, request):
-        all_params = ['os_stop_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_stop_baremetal_servers_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -488,14 +442,10 @@ class BmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbms.v1.ChangeBaremetalServerNameRequest`
         :rtype: :class:`huaweicloudsdkbms.v1.ChangeBaremetalServerNameResponse`
         """
-        return self.change_baremetal_server_name_with_http_info(request)
+        return self._change_baremetal_server_name_with_http_info(request)
 
-    def change_baremetal_server_name_with_http_info(self, request):
-        all_params = ['server_id', 'change_baremetal_name_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _change_baremetal_server_name_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -551,14 +501,10 @@ class BmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbms.v1.ChangeBaremetalServerOsRequest`
         :rtype: :class:`huaweicloudsdkbms.v1.ChangeBaremetalServerOsResponse`
         """
-        return self.change_baremetal_server_os_with_http_info(request)
+        return self._change_baremetal_server_os_with_http_info(request)
 
-    def change_baremetal_server_os_with_http_info(self, request):
-        all_params = ['server_id', 'os_change_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _change_baremetal_server_os_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -614,14 +560,10 @@ class BmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbms.v1.CreateBareMetalServersRequest`
         :rtype: :class:`huaweicloudsdkbms.v1.CreateBareMetalServersResponse`
         """
-        return self.create_bare_metal_servers_with_http_info(request)
+        return self._create_bare_metal_servers_with_http_info(request)
 
-    def create_bare_metal_servers_with_http_info(self, request):
-        all_params = ['create_baremetal_servers_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_bare_metal_servers_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -674,14 +616,10 @@ class BmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbms.v1.DeleteServerNicsRequest`
         :rtype: :class:`huaweicloudsdkbms.v1.DeleteServerNicsResponse`
         """
-        return self.delete_server_nics_with_http_info(request)
+        return self._delete_server_nics_with_http_info(request)
 
-    def delete_server_nics_with_http_info(self, request):
-        all_params = ['server_id', 'delete_server_nics_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_server_nics_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -737,14 +675,10 @@ class BmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbms.v1.DeleteWindowsBareMetalServerPasswordRequest`
         :rtype: :class:`huaweicloudsdkbms.v1.DeleteWindowsBareMetalServerPasswordResponse`
         """
-        return self.delete_windows_bare_metal_server_password_with_http_info(request)
+        return self._delete_windows_bare_metal_server_password_with_http_info(request)
 
-    def delete_windows_bare_metal_server_password_with_http_info(self, request):
-        all_params = ['server_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_windows_bare_metal_server_password_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -798,14 +732,10 @@ class BmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbms.v1.DetachBaremetalServerVolumeRequest`
         :rtype: :class:`huaweicloudsdkbms.v1.DetachBaremetalServerVolumeResponse`
         """
-        return self.detach_baremetal_server_volume_with_http_info(request)
+        return self._detach_baremetal_server_volume_with_http_info(request)
 
-    def detach_baremetal_server_volume_with_http_info(self, request):
-        all_params = ['server_id', 'attachment_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _detach_baremetal_server_volume_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -861,14 +791,10 @@ class BmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbms.v1.ListBareMetalServerDetailsRequest`
         :rtype: :class:`huaweicloudsdkbms.v1.ListBareMetalServerDetailsResponse`
         """
-        return self.list_bare_metal_server_details_with_http_info(request)
+        return self._list_bare_metal_server_details_with_http_info(request)
 
-    def list_bare_metal_server_details_with_http_info(self, request):
-        all_params = ['server_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_bare_metal_server_details_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -922,14 +848,10 @@ class BmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbms.v1.ListBareMetalServersRequest`
         :rtype: :class:`huaweicloudsdkbms.v1.ListBareMetalServersResponse`
         """
-        return self.list_bare_metal_servers_with_http_info(request)
+        return self._list_bare_metal_servers_with_http_info(request)
 
-    def list_bare_metal_servers_with_http_info(self, request):
-        all_params = ['flavor', 'name', 'status', 'limit', 'offset', 'tags', 'reservation_id', 'detail', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_bare_metal_servers_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -999,14 +921,10 @@ class BmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbms.v1.ListBaremetalFlavorDetailExtendsRequest`
         :rtype: :class:`huaweicloudsdkbms.v1.ListBaremetalFlavorDetailExtendsResponse`
         """
-        return self.list_baremetal_flavor_detail_extends_with_http_info(request)
+        return self._list_baremetal_flavor_detail_extends_with_http_info(request)
 
-    def list_baremetal_flavor_detail_extends_with_http_info(self, request):
-        all_params = ['availability_zone']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_baremetal_flavor_detail_extends_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1060,14 +978,10 @@ class BmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbms.v1.ReinstallBaremetalServerOsRequest`
         :rtype: :class:`huaweicloudsdkbms.v1.ReinstallBaremetalServerOsResponse`
         """
-        return self.reinstall_baremetal_server_os_with_http_info(request)
+        return self._reinstall_baremetal_server_os_with_http_info(request)
 
-    def reinstall_baremetal_server_os_with_http_info(self, request):
-        all_params = ['server_id', 'os_reinstall_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _reinstall_baremetal_server_os_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1123,14 +1037,10 @@ class BmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbms.v1.ResetPwdOneClickRequest`
         :rtype: :class:`huaweicloudsdkbms.v1.ResetPwdOneClickResponse`
         """
-        return self.reset_pwd_one_click_with_http_info(request)
+        return self._reset_pwd_one_click_with_http_info(request)
 
-    def reset_pwd_one_click_with_http_info(self, request):
-        all_params = ['server_id', 'reset_password_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _reset_pwd_one_click_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1186,14 +1096,10 @@ class BmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbms.v1.ShowBaremetalServerInterfaceAttachmentsRequest`
         :rtype: :class:`huaweicloudsdkbms.v1.ShowBaremetalServerInterfaceAttachmentsResponse`
         """
-        return self.show_baremetal_server_interface_attachments_with_http_info(request)
+        return self._show_baremetal_server_interface_attachments_with_http_info(request)
 
-    def show_baremetal_server_interface_attachments_with_http_info(self, request):
-        all_params = ['server_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_baremetal_server_interface_attachments_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1247,14 +1153,10 @@ class BmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbms.v1.ShowBaremetalServerTagsRequest`
         :rtype: :class:`huaweicloudsdkbms.v1.ShowBaremetalServerTagsResponse`
         """
-        return self.show_baremetal_server_tags_with_http_info(request)
+        return self._show_baremetal_server_tags_with_http_info(request)
 
-    def show_baremetal_server_tags_with_http_info(self, request):
-        all_params = ['server_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_baremetal_server_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1308,14 +1210,10 @@ class BmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbms.v1.ShowBaremetalServerVolumeInfoRequest`
         :rtype: :class:`huaweicloudsdkbms.v1.ShowBaremetalServerVolumeInfoResponse`
         """
-        return self.show_baremetal_server_volume_info_with_http_info(request)
+        return self._show_baremetal_server_volume_info_with_http_info(request)
 
-    def show_baremetal_server_volume_info_with_http_info(self, request):
-        all_params = ['server_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_baremetal_server_volume_info_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1369,14 +1267,10 @@ class BmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbms.v1.ShowResetPwdRequest`
         :rtype: :class:`huaweicloudsdkbms.v1.ShowResetPwdResponse`
         """
-        return self.show_reset_pwd_with_http_info(request)
+        return self._show_reset_pwd_with_http_info(request)
 
-    def show_reset_pwd_with_http_info(self, request):
-        all_params = ['server_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_reset_pwd_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1429,14 +1323,10 @@ class BmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbms.v1.ShowServerRemoteConsoleRequest`
         :rtype: :class:`huaweicloudsdkbms.v1.ShowServerRemoteConsoleResponse`
         """
-        return self.show_server_remote_console_with_http_info(request)
+        return self._show_server_remote_console_with_http_info(request)
 
-    def show_server_remote_console_with_http_info(self, request):
-        all_params = ['server_id', 'show_server_remote_console_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_server_remote_console_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1492,14 +1382,10 @@ class BmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbms.v1.ShowTenantQuotaRequest`
         :rtype: :class:`huaweicloudsdkbms.v1.ShowTenantQuotaResponse`
         """
-        return self.show_tenant_quota_with_http_info(request)
+        return self._show_tenant_quota_with_http_info(request)
 
-    def show_tenant_quota_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_tenant_quota_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1551,14 +1437,10 @@ class BmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbms.v1.ShowWindowsBaremetalServerPwdRequest`
         :rtype: :class:`huaweicloudsdkbms.v1.ShowWindowsBaremetalServerPwdResponse`
         """
-        return self.show_windows_baremetal_server_pwd_with_http_info(request)
+        return self._show_windows_baremetal_server_pwd_with_http_info(request)
 
-    def show_windows_baremetal_server_pwd_with_http_info(self, request):
-        all_params = ['server_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_windows_baremetal_server_pwd_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1611,14 +1493,10 @@ class BmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbms.v1.UpdateBaremetalServerInterfaceAttachmentsRequest`
         :rtype: :class:`huaweicloudsdkbms.v1.UpdateBaremetalServerInterfaceAttachmentsResponse`
         """
-        return self.update_baremetal_server_interface_attachments_with_http_info(request)
+        return self._update_baremetal_server_interface_attachments_with_http_info(request)
 
-    def update_baremetal_server_interface_attachments_with_http_info(self, request):
-        all_params = ['port_id', 'server_id', 'update_baremetal_server_interface_attachments_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_baremetal_server_interface_attachments_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1676,14 +1554,10 @@ class BmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbms.v1.UpdateBaremetalServerMetadataRequest`
         :rtype: :class:`huaweicloudsdkbms.v1.UpdateBaremetalServerMetadataResponse`
         """
-        return self.update_baremetal_server_metadata_with_http_info(request)
+        return self._update_baremetal_server_metadata_with_http_info(request)
 
-    def update_baremetal_server_metadata_with_http_info(self, request):
-        all_params = ['server_id', 'update_baremetal_server_metadata_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_baremetal_server_metadata_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1739,14 +1613,10 @@ class BmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbms.v1.ShowSpecifiedVersionRequest`
         :rtype: :class:`huaweicloudsdkbms.v1.ShowSpecifiedVersionResponse`
         """
-        return self.show_specified_version_with_http_info(request)
+        return self._show_specified_version_with_http_info(request)
 
-    def show_specified_version_with_http_info(self, request):
-        all_params = ['api_version']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_specified_version_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1800,14 +1670,10 @@ class BmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbms.v1.ShowJobInfosRequest`
         :rtype: :class:`huaweicloudsdkbms.v1.ShowJobInfosResponse`
         """
-        return self.show_job_infos_with_http_info(request)
+        return self._show_job_infos_with_http_info(request)
 
-    def show_job_infos_with_http_info(self, request):
-        all_params = ['job_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_job_infos_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

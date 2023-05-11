@@ -1,9 +1,6 @@
 # coding: utf-8
 
-import re
 import six
-
-
 
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
@@ -34,7 +31,7 @@ class ListAvailableZoneRequest:
 
         The model defined in huaweicloud sdk
 
-        :param x_language: 请求语言类型
+        :param x_language: 请求语言类型。
         :type x_language: str
         :param body: Body of the ListAvailableZoneRequest
         :type body: :class:`huaweicloudsdkdrs.v3.QueryAvailableNodeTypeReq`
@@ -55,7 +52,7 @@ class ListAvailableZoneRequest:
     def x_language(self):
         """Gets the x_language of this ListAvailableZoneRequest.
 
-        请求语言类型
+        请求语言类型。
 
         :return: The x_language of this ListAvailableZoneRequest.
         :rtype: str
@@ -66,7 +63,7 @@ class ListAvailableZoneRequest:
     def x_language(self, x_language):
         """Sets the x_language of this ListAvailableZoneRequest.
 
-        请求语言类型
+        请求语言类型。
 
         :param x_language: The x_language of this ListAvailableZoneRequest.
         :type x_language: str

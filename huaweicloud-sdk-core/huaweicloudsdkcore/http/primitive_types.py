@@ -23,9 +23,9 @@ import decimal
 
 import six
 
-primitive_types = (float, bool, bytes, six.text_type) + six.integer_types
+PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
 
-native_types_mapping = {
+NATIVE_TYPES_MAPPING = {
     'int': int,
     'long': int if six.PY3 else long,
     'float': float,

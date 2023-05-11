@@ -1,9 +1,6 @@
 # coding: utf-8
 
-import re
 import six
-
-
 
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
@@ -20,7 +17,7 @@ class UpdateAomMappingRulesRequest:
     sensitive_list = []
 
     openapi_types = {
-        'body': 'AomMappingRequestInfo'
+        'body': 'UpdateAomMappingRequest'
     }
 
     attribute_map = {
@@ -33,7 +30,7 @@ class UpdateAomMappingRulesRequest:
         The model defined in huaweicloud sdk
 
         :param body: Body of the UpdateAomMappingRulesRequest
-        :type body: :class:`huaweicloudsdklts.v2.AomMappingRequestInfo`
+        :type body: :class:`huaweicloudsdklts.v2.UpdateAomMappingRequest`
         """
         
         
@@ -49,7 +46,7 @@ class UpdateAomMappingRulesRequest:
         """Gets the body of this UpdateAomMappingRulesRequest.
 
         :return: The body of this UpdateAomMappingRulesRequest.
-        :rtype: :class:`huaweicloudsdklts.v2.AomMappingRequestInfo`
+        :rtype: :class:`huaweicloudsdklts.v2.UpdateAomMappingRequest`
         """
         return self._body
 
@@ -58,7 +55,7 @@ class UpdateAomMappingRulesRequest:
         """Sets the body of this UpdateAomMappingRulesRequest.
 
         :param body: The body of this UpdateAomMappingRulesRequest.
-        :type body: :class:`huaweicloudsdklts.v2.AomMappingRequestInfo`
+        :type body: :class:`huaweicloudsdklts.v2.UpdateAomMappingRequest`
         """
         self._body = body
 

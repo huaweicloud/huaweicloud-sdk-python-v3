@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class KpsAsyncClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(KpsAsyncClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkkps.v3.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -54,14 +36,10 @@ class KpsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkkps.v3.AssociateKeypairRequest`
         :rtype: :class:`huaweicloudsdkkps.v3.AssociateKeypairResponse`
         """
-        return self.associate_keypair_with_http_info(request)
+        return self._associate_keypair_with_http_info(request)
 
-    def associate_keypair_with_http_info(self, request):
-        all_params = ['associate_keypair_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _associate_keypair_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -115,14 +93,10 @@ class KpsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkkps.v3.CreateKeypairRequest`
         :rtype: :class:`huaweicloudsdkkps.v3.CreateKeypairResponse`
         """
-        return self.create_keypair_with_http_info(request)
+        return self._create_keypair_with_http_info(request)
 
-    def create_keypair_with_http_info(self, request):
-        all_params = ['create_keypair_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_keypair_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -176,14 +150,10 @@ class KpsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkkps.v3.DeleteAllFailedTaskRequest`
         :rtype: :class:`huaweicloudsdkkps.v3.DeleteAllFailedTaskResponse`
         """
-        return self.delete_all_failed_task_with_http_info(request)
+        return self._delete_all_failed_task_with_http_info(request)
 
-    def delete_all_failed_task_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_all_failed_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -235,14 +205,10 @@ class KpsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkkps.v3.DeleteFailedTaskRequest`
         :rtype: :class:`huaweicloudsdkkps.v3.DeleteFailedTaskResponse`
         """
-        return self.delete_failed_task_with_http_info(request)
+        return self._delete_failed_task_with_http_info(request)
 
-    def delete_failed_task_with_http_info(self, request):
-        all_params = ['task_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_failed_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -296,14 +262,10 @@ class KpsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkkps.v3.DeleteKeypairRequest`
         :rtype: :class:`huaweicloudsdkkps.v3.DeleteKeypairResponse`
         """
-        return self.delete_keypair_with_http_info(request)
+        return self._delete_keypair_with_http_info(request)
 
-    def delete_keypair_with_http_info(self, request):
-        all_params = ['keypair_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_keypair_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -357,14 +319,10 @@ class KpsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkkps.v3.DisassociateKeypairRequest`
         :rtype: :class:`huaweicloudsdkkps.v3.DisassociateKeypairResponse`
         """
-        return self.disassociate_keypair_with_http_info(request)
+        return self._disassociate_keypair_with_http_info(request)
 
-    def disassociate_keypair_with_http_info(self, request):
-        all_params = ['disassociate_keypair_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _disassociate_keypair_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -418,14 +376,10 @@ class KpsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkkps.v3.ListFailedTaskRequest`
         :rtype: :class:`huaweicloudsdkkps.v3.ListFailedTaskResponse`
         """
-        return self.list_failed_task_with_http_info(request)
+        return self._list_failed_task_with_http_info(request)
 
-    def list_failed_task_with_http_info(self, request):
-        all_params = ['limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_failed_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -481,14 +435,10 @@ class KpsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkkps.v3.ListKeypairDetailRequest`
         :rtype: :class:`huaweicloudsdkkps.v3.ListKeypairDetailResponse`
         """
-        return self.list_keypair_detail_with_http_info(request)
+        return self._list_keypair_detail_with_http_info(request)
 
-    def list_keypair_detail_with_http_info(self, request):
-        all_params = ['keypair_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_keypair_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -542,14 +492,10 @@ class KpsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkkps.v3.ListKeypairTaskRequest`
         :rtype: :class:`huaweicloudsdkkps.v3.ListKeypairTaskResponse`
         """
-        return self.list_keypair_task_with_http_info(request)
+        return self._list_keypair_task_with_http_info(request)
 
-    def list_keypair_task_with_http_info(self, request):
-        all_params = ['task_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_keypair_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -603,14 +549,10 @@ class KpsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkkps.v3.ListKeypairsRequest`
         :rtype: :class:`huaweicloudsdkkps.v3.ListKeypairsResponse`
         """
-        return self.list_keypairs_with_http_info(request)
+        return self._list_keypairs_with_http_info(request)
 
-    def list_keypairs_with_http_info(self, request):
-        all_params = ['limit', 'marker']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_keypairs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -666,14 +608,10 @@ class KpsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkkps.v3.ListRunningTaskRequest`
         :rtype: :class:`huaweicloudsdkkps.v3.ListRunningTaskResponse`
         """
-        return self.list_running_task_with_http_info(request)
+        return self._list_running_task_with_http_info(request)
 
-    def list_running_task_with_http_info(self, request):
-        all_params = ['limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_running_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -729,14 +667,10 @@ class KpsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkkps.v3.UpdateKeypairDescriptionRequest`
         :rtype: :class:`huaweicloudsdkkps.v3.UpdateKeypairDescriptionResponse`
         """
-        return self.update_keypair_description_with_http_info(request)
+        return self._update_keypair_description_with_http_info(request)
 
-    def update_keypair_description_with_http_info(self, request):
-        all_params = ['keypair_name', 'update_keypair_description_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_keypair_description_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

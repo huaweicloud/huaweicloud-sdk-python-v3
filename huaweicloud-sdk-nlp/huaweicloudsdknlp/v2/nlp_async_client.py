@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class NlpAsyncClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(NlpAsyncClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdknlp.v2.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -55,14 +37,10 @@ class NlpAsyncClient(Client):
         :type request: :class:`huaweicloudsdknlp.v2.RunAspectSentimentRequest`
         :rtype: :class:`huaweicloudsdknlp.v2.RunAspectSentimentResponse`
         """
-        return self.run_aspect_sentiment_with_http_info(request)
+        return self._run_aspect_sentiment_with_http_info(request)
 
-    def run_aspect_sentiment_with_http_info(self, request):
-        all_params = ['post_aspect_sentiment_request']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _run_aspect_sentiment_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -117,14 +95,10 @@ class NlpAsyncClient(Client):
         :type request: :class:`huaweicloudsdknlp.v2.RunAspectSentimentAdvanceRequest`
         :rtype: :class:`huaweicloudsdknlp.v2.RunAspectSentimentAdvanceResponse`
         """
-        return self.run_aspect_sentiment_advance_with_http_info(request)
+        return self._run_aspect_sentiment_advance_with_http_info(request)
 
-    def run_aspect_sentiment_advance_with_http_info(self, request):
-        all_params = ['post_aspect_sentiment_advance_request']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _run_aspect_sentiment_advance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -179,14 +153,10 @@ class NlpAsyncClient(Client):
         :type request: :class:`huaweicloudsdknlp.v2.RunClassificationRequest`
         :rtype: :class:`huaweicloudsdknlp.v2.RunClassificationResponse`
         """
-        return self.run_classification_with_http_info(request)
+        return self._run_classification_with_http_info(request)
 
-    def run_classification_with_http_info(self, request):
-        all_params = ['post_classification_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _run_classification_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -241,14 +211,10 @@ class NlpAsyncClient(Client):
         :type request: :class:`huaweicloudsdknlp.v2.RunConstituencyParserRequest`
         :rtype: :class:`huaweicloudsdknlp.v2.RunConstituencyParserResponse`
         """
-        return self.run_constituency_parser_with_http_info(request)
+        return self._run_constituency_parser_with_http_info(request)
 
-    def run_constituency_parser_with_http_info(self, request):
-        all_params = ['constituency_parser_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _run_constituency_parser_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -303,14 +269,10 @@ class NlpAsyncClient(Client):
         :type request: :class:`huaweicloudsdknlp.v2.RunDependencyParserRequest`
         :rtype: :class:`huaweicloudsdknlp.v2.RunDependencyParserResponse`
         """
-        return self.run_dependency_parser_with_http_info(request)
+        return self._run_dependency_parser_with_http_info(request)
 
-    def run_dependency_parser_with_http_info(self, request):
-        all_params = ['dependency_parser_request']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _run_dependency_parser_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -365,14 +327,10 @@ class NlpAsyncClient(Client):
         :type request: :class:`huaweicloudsdknlp.v2.RunDocClassificationRequest`
         :rtype: :class:`huaweicloudsdknlp.v2.RunDocClassificationResponse`
         """
-        return self.run_doc_classification_with_http_info(request)
+        return self._run_doc_classification_with_http_info(request)
 
-    def run_doc_classification_with_http_info(self, request):
-        all_params = ['post_document_classification_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _run_doc_classification_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -427,14 +385,10 @@ class NlpAsyncClient(Client):
         :type request: :class:`huaweicloudsdknlp.v2.RunDomainSentimentRequest`
         :rtype: :class:`huaweicloudsdknlp.v2.RunDomainSentimentResponse`
         """
-        return self.run_domain_sentiment_with_http_info(request)
+        return self._run_domain_sentiment_with_http_info(request)
 
-    def run_domain_sentiment_with_http_info(self, request):
-        all_params = ['post_domain_sentiment_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _run_domain_sentiment_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -489,14 +443,10 @@ class NlpAsyncClient(Client):
         :type request: :class:`huaweicloudsdknlp.v2.RunEntityLinkingRequest`
         :rtype: :class:`huaweicloudsdknlp.v2.RunEntityLinkingResponse`
         """
-        return self.run_entity_linking_with_http_info(request)
+        return self._run_entity_linking_with_http_info(request)
 
-    def run_entity_linking_with_http_info(self, request):
-        all_params = ['post_entity_linking_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _run_entity_linking_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -551,14 +501,10 @@ class NlpAsyncClient(Client):
         :type request: :class:`huaweicloudsdknlp.v2.RunEntitySentimentRequest`
         :rtype: :class:`huaweicloudsdknlp.v2.RunEntitySentimentResponse`
         """
-        return self.run_entity_sentiment_with_http_info(request)
+        return self._run_entity_sentiment_with_http_info(request)
 
-    def run_entity_sentiment_with_http_info(self, request):
-        all_params = ['post_entity_sentiment_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _run_entity_sentiment_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -614,14 +560,10 @@ class NlpAsyncClient(Client):
         :type request: :class:`huaweicloudsdknlp.v2.RunEventExtractionRequest`
         :rtype: :class:`huaweicloudsdknlp.v2.RunEventExtractionResponse`
         """
-        return self.run_event_extraction_with_http_info(request)
+        return self._run_event_extraction_with_http_info(request)
 
-    def run_event_extraction_with_http_info(self, request):
-        all_params = ['event_extraction_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _run_event_extraction_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -676,14 +618,10 @@ class NlpAsyncClient(Client):
         :type request: :class:`huaweicloudsdknlp.v2.RunFileTranslationRequest`
         :rtype: :class:`huaweicloudsdknlp.v2.RunFileTranslationResponse`
         """
-        return self.run_file_translation_with_http_info(request)
+        return self._run_file_translation_with_http_info(request)
 
-    def run_file_translation_with_http_info(self, request):
-        all_params = ['file_translation_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _run_file_translation_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -737,14 +675,10 @@ class NlpAsyncClient(Client):
         :type request: :class:`huaweicloudsdknlp.v2.RunGetFileTranslationResultRequest`
         :rtype: :class:`huaweicloudsdknlp.v2.RunGetFileTranslationResultResponse`
         """
-        return self.run_get_file_translation_result_with_http_info(request)
+        return self._run_get_file_translation_result_with_http_info(request)
 
-    def run_get_file_translation_result_with_http_info(self, request):
-        all_params = ['job_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _run_get_file_translation_result_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -799,14 +733,10 @@ class NlpAsyncClient(Client):
         :type request: :class:`huaweicloudsdknlp.v2.RunKeywordExtractRequest`
         :rtype: :class:`huaweicloudsdknlp.v2.RunKeywordExtractResponse`
         """
-        return self.run_keyword_extract_with_http_info(request)
+        return self._run_keyword_extract_with_http_info(request)
 
-    def run_keyword_extract_with_http_info(self, request):
-        all_params = ['keyword_extract_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _run_keyword_extract_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -861,14 +791,10 @@ class NlpAsyncClient(Client):
         :type request: :class:`huaweicloudsdknlp.v2.RunLanguageDetectionRequest`
         :rtype: :class:`huaweicloudsdknlp.v2.RunLanguageDetectionResponse`
         """
-        return self.run_language_detection_with_http_info(request)
+        return self._run_language_detection_with_http_info(request)
 
-    def run_language_detection_with_http_info(self, request):
-        all_params = ['language_detection_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _run_language_detection_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -923,14 +849,10 @@ class NlpAsyncClient(Client):
         :type request: :class:`huaweicloudsdknlp.v2.RunMultiGrainedSegmentRequest`
         :rtype: :class:`huaweicloudsdknlp.v2.RunMultiGrainedSegmentResponse`
         """
-        return self.run_multi_grained_segment_with_http_info(request)
+        return self._run_multi_grained_segment_with_http_info(request)
 
-    def run_multi_grained_segment_with_http_info(self, request):
-        all_params = ['post_multi_grained_segment_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _run_multi_grained_segment_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -985,14 +907,10 @@ class NlpAsyncClient(Client):
         :type request: :class:`huaweicloudsdknlp.v2.RunNerRequest`
         :rtype: :class:`huaweicloudsdknlp.v2.RunNerResponse`
         """
-        return self.run_ner_with_http_info(request)
+        return self._run_ner_with_http_info(request)
 
-    def run_ner_with_http_info(self, request):
-        all_params = ['post_ner_request']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _run_ner_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1047,14 +965,10 @@ class NlpAsyncClient(Client):
         :type request: :class:`huaweicloudsdknlp.v2.RunNerDomainRequest`
         :rtype: :class:`huaweicloudsdknlp.v2.RunNerDomainResponse`
         """
-        return self.run_ner_domain_with_http_info(request)
+        return self._run_ner_domain_with_http_info(request)
 
-    def run_ner_domain_with_http_info(self, request):
-        all_params = ['post_ner_request']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _run_ner_domain_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1109,14 +1023,10 @@ class NlpAsyncClient(Client):
         :type request: :class:`huaweicloudsdknlp.v2.RunPoemRequest`
         :rtype: :class:`huaweicloudsdknlp.v2.RunPoemResponse`
         """
-        return self.run_poem_with_http_info(request)
+        return self._run_poem_with_http_info(request)
 
-    def run_poem_with_http_info(self, request):
-        all_params = ['create_poem']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _run_poem_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1171,14 +1081,10 @@ class NlpAsyncClient(Client):
         :type request: :class:`huaweicloudsdknlp.v2.RunSegmentRequest`
         :rtype: :class:`huaweicloudsdknlp.v2.RunSegmentResponse`
         """
-        return self.run_segment_with_http_info(request)
+        return self._run_segment_with_http_info(request)
 
-    def run_segment_with_http_info(self, request):
-        all_params = ['post_segment_request']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _run_segment_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1233,14 +1139,10 @@ class NlpAsyncClient(Client):
         :type request: :class:`huaweicloudsdknlp.v2.RunSemanticParserRequest`
         :rtype: :class:`huaweicloudsdknlp.v2.RunSemanticParserResponse`
         """
-        return self.run_semantic_parser_with_http_info(request)
+        return self._run_semantic_parser_with_http_info(request)
 
-    def run_semantic_parser_with_http_info(self, request):
-        all_params = ['intent_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _run_semantic_parser_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1295,14 +1197,10 @@ class NlpAsyncClient(Client):
         :type request: :class:`huaweicloudsdknlp.v2.RunSentenceEmbeddingRequest`
         :rtype: :class:`huaweicloudsdknlp.v2.RunSentenceEmbeddingResponse`
         """
-        return self.run_sentence_embedding_with_http_info(request)
+        return self._run_sentence_embedding_with_http_info(request)
 
-    def run_sentence_embedding_with_http_info(self, request):
-        all_params = ['post_sentence_embedding_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _run_sentence_embedding_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1357,14 +1255,10 @@ class NlpAsyncClient(Client):
         :type request: :class:`huaweicloudsdknlp.v2.RunSentimentRequest`
         :rtype: :class:`huaweicloudsdknlp.v2.RunSentimentResponse`
         """
-        return self.run_sentiment_with_http_info(request)
+        return self._run_sentiment_with_http_info(request)
 
-    def run_sentiment_with_http_info(self, request):
-        all_params = ['post_general_sentiment_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _run_sentiment_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1419,14 +1313,10 @@ class NlpAsyncClient(Client):
         :type request: :class:`huaweicloudsdknlp.v2.RunSummaryRequest`
         :rtype: :class:`huaweicloudsdknlp.v2.RunSummaryResponse`
         """
-        return self.run_summary_with_http_info(request)
+        return self._run_summary_with_http_info(request)
 
-    def run_summary_with_http_info(self, request):
-        all_params = ['summary_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _run_summary_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1481,14 +1371,10 @@ class NlpAsyncClient(Client):
         :type request: :class:`huaweicloudsdknlp.v2.RunSummaryDomainRequest`
         :rtype: :class:`huaweicloudsdknlp.v2.RunSummaryDomainResponse`
         """
-        return self.run_summary_domain_with_http_info(request)
+        return self._run_summary_domain_with_http_info(request)
 
-    def run_summary_domain_with_http_info(self, request):
-        all_params = ['summary_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _run_summary_domain_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1543,14 +1429,10 @@ class NlpAsyncClient(Client):
         :type request: :class:`huaweicloudsdknlp.v2.RunTextSimilarityRequest`
         :rtype: :class:`huaweicloudsdknlp.v2.RunTextSimilarityResponse`
         """
-        return self.run_text_similarity_with_http_info(request)
+        return self._run_text_similarity_with_http_info(request)
 
-    def run_text_similarity_with_http_info(self, request):
-        all_params = ['post_text_similarity_request']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _run_text_similarity_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1605,14 +1487,10 @@ class NlpAsyncClient(Client):
         :type request: :class:`huaweicloudsdknlp.v2.RunTextSimilarityAdvanceRequest`
         :rtype: :class:`huaweicloudsdknlp.v2.RunTextSimilarityAdvanceResponse`
         """
-        return self.run_text_similarity_advance_with_http_info(request)
+        return self._run_text_similarity_advance_with_http_info(request)
 
-    def run_text_similarity_advance_with_http_info(self, request):
-        all_params = ['post_text_similarity_request']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _run_text_similarity_advance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1667,14 +1545,10 @@ class NlpAsyncClient(Client):
         :type request: :class:`huaweicloudsdknlp.v2.RunTextTranslationRequest`
         :rtype: :class:`huaweicloudsdknlp.v2.RunTextTranslationResponse`
         """
-        return self.run_text_translation_with_http_info(request)
+        return self._run_text_translation_with_http_info(request)
 
-    def run_text_translation_with_http_info(self, request):
-        all_params = ['text_translation_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _run_text_translation_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class SmsAsyncClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(SmsAsyncClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdksms.v3.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -54,14 +36,10 @@ class SmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.CheckNetAclRequest`
         :rtype: :class:`huaweicloudsdksms.v3.CheckNetAclResponse`
         """
-        return self.check_net_acl_with_http_info(request)
+        return self._check_net_acl_with_http_info(request)
 
-    def check_net_acl_with_http_info(self, request):
-        all_params = ['t_project_id', 't_network_id', 'region_id', 'os_type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _check_net_acl_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -121,14 +99,10 @@ class SmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.CollectLogRequest`
         :rtype: :class:`huaweicloudsdksms.v3.CollectLogResponse`
         """
-        return self.collect_log_with_http_info(request)
+        return self._collect_log_with_http_info(request)
 
-    def collect_log_with_http_info(self, request):
-        all_params = ['task_id', 'collect_log_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _collect_log_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -184,14 +158,10 @@ class SmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.CreateMigprojectRequest`
         :rtype: :class:`huaweicloudsdksms.v3.CreateMigprojectResponse`
         """
-        return self.create_migproject_with_http_info(request)
+        return self._create_migproject_with_http_info(request)
 
-    def create_migproject_with_http_info(self, request):
-        all_params = ['create_migproject_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_migproject_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -245,14 +215,10 @@ class SmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.CreateTaskRequest`
         :rtype: :class:`huaweicloudsdksms.v3.CreateTaskResponse`
         """
-        return self.create_task_with_http_info(request)
+        return self._create_task_with_http_info(request)
 
-    def create_task_with_http_info(self, request):
-        all_params = ['create_task_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -306,14 +272,10 @@ class SmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.CreateTemplateRequest`
         :rtype: :class:`huaweicloudsdksms.v3.CreateTemplateResponse`
         """
-        return self.create_template_with_http_info(request)
+        return self._create_template_with_http_info(request)
 
-    def create_template_with_http_info(self, request):
-        all_params = ['create_template_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -367,14 +329,10 @@ class SmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.DeleteMigprojectRequest`
         :rtype: :class:`huaweicloudsdksms.v3.DeleteMigprojectResponse`
         """
-        return self.delete_migproject_with_http_info(request)
+        return self._delete_migproject_with_http_info(request)
 
-    def delete_migproject_with_http_info(self, request):
-        all_params = ['mig_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_migproject_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -428,14 +386,10 @@ class SmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.DeleteServerRequest`
         :rtype: :class:`huaweicloudsdksms.v3.DeleteServerResponse`
         """
-        return self.delete_server_with_http_info(request)
+        return self._delete_server_with_http_info(request)
 
-    def delete_server_with_http_info(self, request):
-        all_params = ['source_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_server_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -489,14 +443,10 @@ class SmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.DeleteServersRequest`
         :rtype: :class:`huaweicloudsdksms.v3.DeleteServersResponse`
         """
-        return self.delete_servers_with_http_info(request)
+        return self._delete_servers_with_http_info(request)
 
-    def delete_servers_with_http_info(self, request):
-        all_params = ['delete_servers_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_servers_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -550,14 +500,10 @@ class SmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.DeleteTaskRequest`
         :rtype: :class:`huaweicloudsdksms.v3.DeleteTaskResponse`
         """
-        return self.delete_task_with_http_info(request)
+        return self._delete_task_with_http_info(request)
 
-    def delete_task_with_http_info(self, request):
-        all_params = ['task_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -611,14 +557,10 @@ class SmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.DeleteTasksRequest`
         :rtype: :class:`huaweicloudsdksms.v3.DeleteTasksResponse`
         """
-        return self.delete_tasks_with_http_info(request)
+        return self._delete_tasks_with_http_info(request)
 
-    def delete_tasks_with_http_info(self, request):
-        all_params = ['delete_tasks_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_tasks_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -672,14 +614,10 @@ class SmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.DeleteTemplateRequest`
         :rtype: :class:`huaweicloudsdksms.v3.DeleteTemplateResponse`
         """
-        return self.delete_template_with_http_info(request)
+        return self._delete_template_with_http_info(request)
 
-    def delete_template_with_http_info(self, request):
-        all_params = ['id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -733,14 +671,10 @@ class SmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.DeleteTemplatesRequest`
         :rtype: :class:`huaweicloudsdksms.v3.DeleteTemplatesResponse`
         """
-        return self.delete_templates_with_http_info(request)
+        return self._delete_templates_with_http_info(request)
 
-    def delete_templates_with_http_info(self, request):
-        all_params = ['deletetemplates_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_templates_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -794,14 +728,10 @@ class SmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.ListErrorServersRequest`
         :rtype: :class:`huaweicloudsdksms.v3.ListErrorServersResponse`
         """
-        return self.list_error_servers_with_http_info(request)
+        return self._list_error_servers_with_http_info(request)
 
-    def list_error_servers_with_http_info(self, request):
-        all_params = ['offset', 'limit', 'migproject', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_error_servers_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -861,14 +791,10 @@ class SmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.ListMigprojectsRequest`
         :rtype: :class:`huaweicloudsdksms.v3.ListMigprojectsResponse`
         """
-        return self.list_migprojects_with_http_info(request)
+        return self._list_migprojects_with_http_info(request)
 
-    def list_migprojects_with_http_info(self, request):
-        all_params = ['limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_migprojects_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -924,14 +850,10 @@ class SmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.ListServersRequest`
         :rtype: :class:`huaweicloudsdksms.v3.ListServersResponse`
         """
-        return self.list_servers_with_http_info(request)
+        return self._list_servers_with_http_info(request)
 
-    def list_servers_with_http_info(self, request):
-        all_params = ['state', 'name', 'id', 'ip', 'migproject', 'limit', 'offset', 'migration_cycle', 'connected', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_servers_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1003,14 +925,10 @@ class SmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.ListTasksRequest`
         :rtype: :class:`huaweicloudsdksms.v3.ListTasksResponse`
         """
-        return self.list_tasks_with_http_info(request)
+        return self._list_tasks_with_http_info(request)
 
-    def list_tasks_with_http_info(self, request):
-        all_params = ['state', 'name', 'id', 'source_server_id', 'limit', 'offset', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_tasks_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1076,14 +994,10 @@ class SmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.ListTemplatesRequest`
         :rtype: :class:`huaweicloudsdksms.v3.ListTemplatesResponse`
         """
-        return self.list_templates_with_http_info(request)
+        return self._list_templates_with_http_info(request)
 
-    def list_templates_with_http_info(self, request):
-        all_params = ['name', 'availability_zone', 'region', 'limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_templates_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1145,14 +1059,10 @@ class SmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.RegisterServerRequest`
         :rtype: :class:`huaweicloudsdksms.v3.RegisterServerResponse`
         """
-        return self.register_server_with_http_info(request)
+        return self._register_server_with_http_info(request)
 
-    def register_server_with_http_info(self, request):
-        all_params = ['register_server_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _register_server_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1206,14 +1116,10 @@ class SmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.ShowCertKeyRequest`
         :rtype: :class:`huaweicloudsdksms.v3.ShowCertKeyResponse`
         """
-        return self.show_cert_key_with_http_info(request)
+        return self._show_cert_key_with_http_info(request)
 
-    def show_cert_key_with_http_info(self, request):
-        all_params = ['task_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_cert_key_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1267,14 +1173,10 @@ class SmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.ShowCommandRequest`
         :rtype: :class:`huaweicloudsdksms.v3.ShowCommandResponse`
         """
-        return self.show_command_with_http_info(request)
+        return self._show_command_with_http_info(request)
 
-    def show_command_with_http_info(self, request):
-        all_params = ['server_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_command_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1328,14 +1230,10 @@ class SmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.ShowConfigSettingRequest`
         :rtype: :class:`huaweicloudsdksms.v3.ShowConfigSettingResponse`
         """
-        return self.show_config_setting_with_http_info(request)
+        return self._show_config_setting_with_http_info(request)
 
-    def show_config_setting_with_http_info(self, request):
-        all_params = ['task_id', 'config_key']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_config_setting_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1391,14 +1289,10 @@ class SmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.ShowMigprojectRequest`
         :rtype: :class:`huaweicloudsdksms.v3.ShowMigprojectResponse`
         """
-        return self.show_migproject_with_http_info(request)
+        return self._show_migproject_with_http_info(request)
 
-    def show_migproject_with_http_info(self, request):
-        all_params = ['mig_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_migproject_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1452,14 +1346,10 @@ class SmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.ShowOverviewRequest`
         :rtype: :class:`huaweicloudsdksms.v3.ShowOverviewResponse`
         """
-        return self.show_overview_with_http_info(request)
+        return self._show_overview_with_http_info(request)
 
-    def show_overview_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_overview_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1511,14 +1401,10 @@ class SmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.ShowPassphraseRequest`
         :rtype: :class:`huaweicloudsdksms.v3.ShowPassphraseResponse`
         """
-        return self.show_passphrase_with_http_info(request)
+        return self._show_passphrase_with_http_info(request)
 
-    def show_passphrase_with_http_info(self, request):
-        all_params = ['task_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_passphrase_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1572,14 +1458,10 @@ class SmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.ShowServerRequest`
         :rtype: :class:`huaweicloudsdksms.v3.ShowServerResponse`
         """
-        return self.show_server_with_http_info(request)
+        return self._show_server_with_http_info(request)
 
-    def show_server_with_http_info(self, request):
-        all_params = ['source_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_server_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1633,14 +1515,10 @@ class SmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.ShowSha256Request`
         :rtype: :class:`huaweicloudsdksms.v3.ShowSha256Response`
         """
-        return self.show_sha256_with_http_info(request)
+        return self._show_sha256_with_http_info(request)
 
-    def show_sha256_with_http_info(self, request):
-        all_params = ['key']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_sha256_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1694,14 +1572,10 @@ class SmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.ShowTargetPasswordRequest`
         :rtype: :class:`huaweicloudsdksms.v3.ShowTargetPasswordResponse`
         """
-        return self.show_target_password_with_http_info(request)
+        return self._show_target_password_with_http_info(request)
 
-    def show_target_password_with_http_info(self, request):
-        all_params = ['id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_target_password_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1755,14 +1629,10 @@ class SmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.ShowTaskRequest`
         :rtype: :class:`huaweicloudsdksms.v3.ShowTaskResponse`
         """
-        return self.show_task_with_http_info(request)
+        return self._show_task_with_http_info(request)
 
-    def show_task_with_http_info(self, request):
-        all_params = ['task_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1816,14 +1686,10 @@ class SmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.ShowTemplateRequest`
         :rtype: :class:`huaweicloudsdksms.v3.ShowTemplateResponse`
         """
-        return self.show_template_with_http_info(request)
+        return self._show_template_with_http_info(request)
 
-    def show_template_with_http_info(self, request):
-        all_params = ['id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1877,14 +1743,10 @@ class SmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.ShowsSpeedLimitsRequest`
         :rtype: :class:`huaweicloudsdksms.v3.ShowsSpeedLimitsResponse`
         """
-        return self.shows_speed_limits_with_http_info(request)
+        return self._shows_speed_limits_with_http_info(request)
 
-    def shows_speed_limits_with_http_info(self, request):
-        all_params = ['task_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _shows_speed_limits_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1938,14 +1800,10 @@ class SmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.UnlockTargetEcsRequest`
         :rtype: :class:`huaweicloudsdksms.v3.UnlockTargetEcsResponse`
         """
-        return self.unlock_target_ecs_with_http_info(request)
+        return self._unlock_target_ecs_with_http_info(request)
 
-    def unlock_target_ecs_with_http_info(self, request):
-        all_params = ['task_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _unlock_target_ecs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1999,14 +1857,10 @@ class SmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.UpdateCommandResultRequest`
         :rtype: :class:`huaweicloudsdksms.v3.UpdateCommandResultResponse`
         """
-        return self.update_command_result_with_http_info(request)
+        return self._update_command_result_with_http_info(request)
 
-    def update_command_result_with_http_info(self, request):
-        all_params = ['server_id', 'update_command_result_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_command_result_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2062,14 +1916,10 @@ class SmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.UpdateCopyStateRequest`
         :rtype: :class:`huaweicloudsdksms.v3.UpdateCopyStateResponse`
         """
-        return self.update_copy_state_with_http_info(request)
+        return self._update_copy_state_with_http_info(request)
 
-    def update_copy_state_with_http_info(self, request):
-        all_params = ['source_id', 'update_copy_state_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_copy_state_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2125,14 +1975,10 @@ class SmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.UpdateDefaultMigprojectRequest`
         :rtype: :class:`huaweicloudsdksms.v3.UpdateDefaultMigprojectResponse`
         """
-        return self.update_default_migproject_with_http_info(request)
+        return self._update_default_migproject_with_http_info(request)
 
-    def update_default_migproject_with_http_info(self, request):
-        all_params = ['mig_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_default_migproject_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2186,14 +2032,10 @@ class SmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.UpdateDiskInfoRequest`
         :rtype: :class:`huaweicloudsdksms.v3.UpdateDiskInfoResponse`
         """
-        return self.update_disk_info_with_http_info(request)
+        return self._update_disk_info_with_http_info(request)
 
-    def update_disk_info_with_http_info(self, request):
-        all_params = ['source_id', 'update_disk_info_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_disk_info_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2249,14 +2091,10 @@ class SmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.UpdateMigprojectRequest`
         :rtype: :class:`huaweicloudsdksms.v3.UpdateMigprojectResponse`
         """
-        return self.update_migproject_with_http_info(request)
+        return self._update_migproject_with_http_info(request)
 
-    def update_migproject_with_http_info(self, request):
-        all_params = ['mig_project_id', 'update_migproject_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_migproject_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2312,14 +2150,10 @@ class SmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.UpdateNetworkCheckInfoRequest`
         :rtype: :class:`huaweicloudsdksms.v3.UpdateNetworkCheckInfoResponse`
         """
-        return self.update_network_check_info_with_http_info(request)
+        return self._update_network_check_info_with_http_info(request)
 
-    def update_network_check_info_with_http_info(self, request):
-        all_params = ['task_id', 'update_network_check_info_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_network_check_info_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2375,14 +2209,10 @@ class SmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.UpdateServerNameRequest`
         :rtype: :class:`huaweicloudsdksms.v3.UpdateServerNameResponse`
         """
-        return self.update_server_name_with_http_info(request)
+        return self._update_server_name_with_http_info(request)
 
-    def update_server_name_with_http_info(self, request):
-        all_params = ['source_id', 'update_server_name_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_server_name_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2438,14 +2268,10 @@ class SmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.UpdateSpeedRequest`
         :rtype: :class:`huaweicloudsdksms.v3.UpdateSpeedResponse`
         """
-        return self.update_speed_with_http_info(request)
+        return self._update_speed_with_http_info(request)
 
-    def update_speed_with_http_info(self, request):
-        all_params = ['task_id', 'update_speed_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_speed_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2501,14 +2327,10 @@ class SmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.UpdateTaskRequest`
         :rtype: :class:`huaweicloudsdksms.v3.UpdateTaskResponse`
         """
-        return self.update_task_with_http_info(request)
+        return self._update_task_with_http_info(request)
 
-    def update_task_with_http_info(self, request):
-        all_params = ['task_id', 'update_task_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2566,14 +2388,10 @@ class SmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.UpdateTaskSpeedRequest`
         :rtype: :class:`huaweicloudsdksms.v3.UpdateTaskSpeedResponse`
         """
-        return self.update_task_speed_with_http_info(request)
+        return self._update_task_speed_with_http_info(request)
 
-    def update_task_speed_with_http_info(self, request):
-        all_params = ['task_id', 'update_task_speed_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_task_speed_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2629,14 +2447,10 @@ class SmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.UpdateTaskStatusRequest`
         :rtype: :class:`huaweicloudsdksms.v3.UpdateTaskStatusResponse`
         """
-        return self.update_task_status_with_http_info(request)
+        return self._update_task_status_with_http_info(request)
 
-    def update_task_status_with_http_info(self, request):
-        all_params = ['task_id', 'update_task_status_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_task_status_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2692,14 +2506,10 @@ class SmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.UpdateTemplateRequest`
         :rtype: :class:`huaweicloudsdksms.v3.UpdateTemplateResponse`
         """
-        return self.update_template_with_http_info(request)
+        return self._update_template_with_http_info(request)
 
-    def update_template_with_http_info(self, request):
-        all_params = ['id', 'update_template_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2755,14 +2565,10 @@ class SmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.UploadSpecialConfigurationSettingRequest`
         :rtype: :class:`huaweicloudsdksms.v3.UploadSpecialConfigurationSettingResponse`
         """
-        return self.upload_special_configuration_setting_with_http_info(request)
+        return self._upload_special_configuration_setting_with_http_info(request)
 
-    def upload_special_configuration_setting_with_http_info(self, request):
-        all_params = ['task_id', 'upload_special_configuration_setting_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _upload_special_configuration_setting_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2818,14 +2624,10 @@ class SmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.ListApiVersionRequest`
         :rtype: :class:`huaweicloudsdksms.v3.ListApiVersionResponse`
         """
-        return self.list_api_version_with_http_info(request)
+        return self._list_api_version_with_http_info(request)
 
-    def list_api_version_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_api_version_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2877,14 +2679,10 @@ class SmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.ShowApiVersionRequest`
         :rtype: :class:`huaweicloudsdksms.v3.ShowApiVersionResponse`
         """
-        return self.show_api_version_with_http_info(request)
+        return self._show_api_version_with_http_info(request)
 
-    def show_api_version_with_http_info(self, request):
-        all_params = ['version']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_api_version_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2938,14 +2736,10 @@ class SmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.ShowConfigRequest`
         :rtype: :class:`huaweicloudsdksms.v3.ShowConfigResponse`
         """
-        return self.show_config_with_http_info(request)
+        return self._show_config_with_http_info(request)
 
-    def show_config_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_config_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

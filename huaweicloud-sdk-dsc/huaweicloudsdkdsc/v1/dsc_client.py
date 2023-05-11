@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class DscClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(DscClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkdsc.v1.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -53,14 +35,10 @@ class DscClient(Client):
         :type request: :class:`huaweicloudsdkdsc.v1.AddBucketsRequest`
         :rtype: :class:`huaweicloudsdkdsc.v1.AddBucketsResponse`
         """
-        return self.add_buckets_with_http_info(request)
+        return self._add_buckets_with_http_info(request)
 
-    def add_buckets_with_http_info(self, request):
-        all_params = ['add_buckets_request_body', 'type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _add_buckets_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -115,14 +93,10 @@ class DscClient(Client):
         :type request: :class:`huaweicloudsdkdsc.v1.AddRuleRequest`
         :rtype: :class:`huaweicloudsdkdsc.v1.AddRuleResponse`
         """
-        return self.add_rule_with_http_info(request)
+        return self._add_rule_with_http_info(request)
 
-    def add_rule_with_http_info(self, request):
-        all_params = ['add_rule_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _add_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -175,14 +149,10 @@ class DscClient(Client):
         :type request: :class:`huaweicloudsdkdsc.v1.AddRuleGroupRequest`
         :rtype: :class:`huaweicloudsdkdsc.v1.AddRuleGroupResponse`
         """
-        return self.add_rule_group_with_http_info(request)
+        return self._add_rule_group_with_http_info(request)
 
-    def add_rule_group_with_http_info(self, request):
-        all_params = ['add_rule_group_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _add_rule_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -235,14 +205,10 @@ class DscClient(Client):
         :type request: :class:`huaweicloudsdkdsc.v1.AddScanJobRequest`
         :rtype: :class:`huaweicloudsdkdsc.v1.AddScanJobResponse`
         """
-        return self.add_scan_job_with_http_info(request)
+        return self._add_scan_job_with_http_info(request)
 
-    def add_scan_job_with_http_info(self, request):
-        all_params = ['add_scan_job_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _add_scan_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -295,14 +261,10 @@ class DscClient(Client):
         :type request: :class:`huaweicloudsdkdsc.v1.BatchAddDataMaskRequest`
         :rtype: :class:`huaweicloudsdkdsc.v1.BatchAddDataMaskResponse`
         """
-        return self.batch_add_data_mask_with_http_info(request)
+        return self._batch_add_data_mask_with_http_info(request)
 
-    def batch_add_data_mask_with_http_info(self, request):
-        all_params = ['batch_add_data_mask_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_add_data_mask_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -355,14 +317,10 @@ class DscClient(Client):
         :type request: :class:`huaweicloudsdkdsc.v1.ChangeDbTemplateOperationRequest`
         :rtype: :class:`huaweicloudsdkdsc.v1.ChangeDbTemplateOperationResponse`
         """
-        return self.change_db_template_operation_with_http_info(request)
+        return self._change_db_template_operation_with_http_info(request)
 
-    def change_db_template_operation_with_http_info(self, request):
-        all_params = ['template_id', 'change_db_template_operation_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _change_db_template_operation_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -417,14 +375,10 @@ class DscClient(Client):
         :type request: :class:`huaweicloudsdkdsc.v1.ChangeRuleRequest`
         :rtype: :class:`huaweicloudsdkdsc.v1.ChangeRuleResponse`
         """
-        return self.change_rule_with_http_info(request)
+        return self._change_rule_with_http_info(request)
 
-    def change_rule_with_http_info(self, request):
-        all_params = ['change_rule_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _change_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -477,14 +431,10 @@ class DscClient(Client):
         :type request: :class:`huaweicloudsdkdsc.v1.CreateDatabaseWaterMarkRequest`
         :rtype: :class:`huaweicloudsdkdsc.v1.CreateDatabaseWaterMarkResponse`
         """
-        return self.create_database_water_mark_with_http_info(request)
+        return self._create_database_water_mark_with_http_info(request)
 
-    def create_database_water_mark_with_http_info(self, request):
-        all_params = ['create_database_water_mark_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_database_water_mark_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -537,14 +487,10 @@ class DscClient(Client):
         :type request: :class:`huaweicloudsdkdsc.v1.CreateDocWatermarkRequest`
         :rtype: :class:`huaweicloudsdkdsc.v1.CreateDocWatermarkResponse`
         """
-        return self.create_doc_watermark_with_http_info(request)
+        return self._create_doc_watermark_with_http_info(request)
 
-    def create_doc_watermark_with_http_info(self, request):
-        all_params = ['doc_type', 'file', 'file_password', 'marked_file_password', 'readonly_password', 'visible_watermark', 'font_size', 'rotation', 'opacity', 'blind_watermark', 'image_mark', 'visible_type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_doc_watermark_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -621,14 +567,10 @@ class DscClient(Client):
         :type request: :class:`huaweicloudsdkdsc.v1.CreateDocWatermarkByAddressRequest`
         :rtype: :class:`huaweicloudsdkdsc.v1.CreateDocWatermarkByAddressResponse`
         """
-        return self.create_doc_watermark_by_address_with_http_info(request)
+        return self._create_doc_watermark_by_address_with_http_info(request)
 
-    def create_doc_watermark_by_address_with_http_info(self, request):
-        all_params = ['create_doc_watermark_by_address_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_doc_watermark_by_address_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -681,14 +623,10 @@ class DscClient(Client):
         :type request: :class:`huaweicloudsdkdsc.v1.CreateImageWatermarkRequest`
         :rtype: :class:`huaweicloudsdkdsc.v1.CreateImageWatermarkResponse`
         """
-        return self.create_image_watermark_with_http_info(request)
+        return self._create_image_watermark_with_http_info(request)
 
-    def create_image_watermark_with_http_info(self, request):
-        all_params = ['file', 'blind_watermark', 'image_watermark']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_image_watermark_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -747,14 +685,10 @@ class DscClient(Client):
         :type request: :class:`huaweicloudsdkdsc.v1.CreateImageWatermarkByAddressRequest`
         :rtype: :class:`huaweicloudsdkdsc.v1.CreateImageWatermarkByAddressResponse`
         """
-        return self.create_image_watermark_by_address_with_http_info(request)
+        return self._create_image_watermark_by_address_with_http_info(request)
 
-    def create_image_watermark_by_address_with_http_info(self, request):
-        all_params = ['create_image_watermark_by_address_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_image_watermark_by_address_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -807,14 +741,10 @@ class DscClient(Client):
         :type request: :class:`huaweicloudsdkdsc.v1.CreateProductOrderRequest`
         :rtype: :class:`huaweicloudsdkdsc.v1.CreateProductOrderResponse`
         """
-        return self.create_product_order_with_http_info(request)
+        return self._create_product_order_with_http_info(request)
 
-    def create_product_order_with_http_info(self, request):
-        all_params = ['create_product_order_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_product_order_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -867,14 +797,10 @@ class DscClient(Client):
         :type request: :class:`huaweicloudsdkdsc.v1.DeleteBucketRequest`
         :rtype: :class:`huaweicloudsdkdsc.v1.DeleteBucketResponse`
         """
-        return self.delete_bucket_with_http_info(request)
+        return self._delete_bucket_with_http_info(request)
 
-    def delete_bucket_with_http_info(self, request):
-        all_params = ['bucket_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_bucket_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -927,14 +853,10 @@ class DscClient(Client):
         :type request: :class:`huaweicloudsdkdsc.v1.DeleteRuleRequest`
         :rtype: :class:`huaweicloudsdkdsc.v1.DeleteRuleResponse`
         """
-        return self.delete_rule_with_http_info(request)
+        return self._delete_rule_with_http_info(request)
 
-    def delete_rule_with_http_info(self, request):
-        all_params = ['rule_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -987,14 +909,10 @@ class DscClient(Client):
         :type request: :class:`huaweicloudsdkdsc.v1.DeleteRuleGroupRequest`
         :rtype: :class:`huaweicloudsdkdsc.v1.DeleteRuleGroupResponse`
         """
-        return self.delete_rule_group_with_http_info(request)
+        return self._delete_rule_group_with_http_info(request)
 
-    def delete_rule_group_with_http_info(self, request):
-        all_params = ['group_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_rule_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1047,14 +965,10 @@ class DscClient(Client):
         :type request: :class:`huaweicloudsdkdsc.v1.ListBucketsRequest`
         :rtype: :class:`huaweicloudsdkdsc.v1.ListBucketsResponse`
         """
-        return self.list_buckets_with_http_info(request)
+        return self._list_buckets_with_http_info(request)
 
-    def list_buckets_with_http_info(self, request):
-        all_params = ['added', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_buckets_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1111,14 +1025,10 @@ class DscClient(Client):
         :type request: :class:`huaweicloudsdkdsc.v1.ListDbMaskTaskRequest`
         :rtype: :class:`huaweicloudsdkdsc.v1.ListDbMaskTaskResponse`
         """
-        return self.list_db_mask_task_with_http_info(request)
+        return self._list_db_mask_task_with_http_info(request)
 
-    def list_db_mask_task_with_http_info(self, request):
-        all_params = ['template_id', 'workspace_id', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_db_mask_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1177,14 +1087,10 @@ class DscClient(Client):
         :type request: :class:`huaweicloudsdkdsc.v1.ListRelationBucketsRequest`
         :rtype: :class:`huaweicloudsdkdsc.v1.ListRelationBucketsResponse`
         """
-        return self.list_relation_buckets_with_http_info(request)
+        return self._list_relation_buckets_with_http_info(request)
 
-    def list_relation_buckets_with_http_info(self, request):
-        all_params = ['job_id', 'risk_start', 'risk_end', 'assets_name', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_relation_buckets_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1247,14 +1153,10 @@ class DscClient(Client):
         :type request: :class:`huaweicloudsdkdsc.v1.ListRelationColumnRequest`
         :rtype: :class:`huaweicloudsdkdsc.v1.ListRelationColumnResponse`
         """
-        return self.list_relation_column_with_http_info(request)
+        return self._list_relation_column_with_http_info(request)
 
-    def list_relation_column_with_http_info(self, request):
-        all_params = ['job_id', 'table_id', 'risk_start', 'risk_end', 'assets_name', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_relation_column_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1319,14 +1221,10 @@ class DscClient(Client):
         :type request: :class:`huaweicloudsdkdsc.v1.ListRelationDbRequest`
         :rtype: :class:`huaweicloudsdkdsc.v1.ListRelationDbResponse`
         """
-        return self.list_relation_db_with_http_info(request)
+        return self._list_relation_db_with_http_info(request)
 
-    def list_relation_db_with_http_info(self, request):
-        all_params = ['job_id', 'risk_start', 'risk_end', 'assets_name', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_relation_db_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1389,14 +1287,10 @@ class DscClient(Client):
         :type request: :class:`huaweicloudsdkdsc.v1.ListRelationFileRequest`
         :rtype: :class:`huaweicloudsdkdsc.v1.ListRelationFileResponse`
         """
-        return self.list_relation_file_with_http_info(request)
+        return self._list_relation_file_with_http_info(request)
 
-    def list_relation_file_with_http_info(self, request):
-        all_params = ['job_id', 'bucket_id', 'risk_start', 'risk_end', 'offset', 'size', 'assets_name', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_relation_file_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1463,14 +1357,10 @@ class DscClient(Client):
         :type request: :class:`huaweicloudsdkdsc.v1.ListRelationTableRequest`
         :rtype: :class:`huaweicloudsdkdsc.v1.ListRelationTableResponse`
         """
-        return self.list_relation_table_with_http_info(request)
+        return self._list_relation_table_with_http_info(request)
 
-    def list_relation_table_with_http_info(self, request):
-        all_params = ['job_id', 'db_id', 'risk_start', 'risk_end', 'offset', 'size', 'assets_name', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_relation_table_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1537,14 +1427,10 @@ class DscClient(Client):
         :type request: :class:`huaweicloudsdkdsc.v1.ListRuleGroupsRequest`
         :rtype: :class:`huaweicloudsdkdsc.v1.ListRuleGroupsResponse`
         """
-        return self.list_rule_groups_with_http_info(request)
+        return self._list_rule_groups_with_http_info(request)
 
-    def list_rule_groups_with_http_info(self, request):
-        all_params = ['offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_rule_groups_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1599,14 +1485,10 @@ class DscClient(Client):
         :type request: :class:`huaweicloudsdkdsc.v1.ShowDatabaseWaterMarkRequest`
         :rtype: :class:`huaweicloudsdkdsc.v1.ShowDatabaseWaterMarkResponse`
         """
-        return self.show_database_water_mark_with_http_info(request)
+        return self._show_database_water_mark_with_http_info(request)
 
-    def show_database_water_mark_with_http_info(self, request):
-        all_params = ['show_database_water_mark_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_database_water_mark_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1659,14 +1541,10 @@ class DscClient(Client):
         :type request: :class:`huaweicloudsdkdsc.v1.ShowDocWatermarkRequest`
         :rtype: :class:`huaweicloudsdkdsc.v1.ShowDocWatermarkResponse`
         """
-        return self.show_doc_watermark_with_http_info(request)
+        return self._show_doc_watermark_with_http_info(request)
 
-    def show_doc_watermark_with_http_info(self, request):
-        all_params = ['doc_type', 'file', 'file_password']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_doc_watermark_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1725,14 +1603,10 @@ class DscClient(Client):
         :type request: :class:`huaweicloudsdkdsc.v1.ShowDocWatermarkByAddressRequest`
         :rtype: :class:`huaweicloudsdkdsc.v1.ShowDocWatermarkByAddressResponse`
         """
-        return self.show_doc_watermark_by_address_with_http_info(request)
+        return self._show_doc_watermark_by_address_with_http_info(request)
 
-    def show_doc_watermark_by_address_with_http_info(self, request):
-        all_params = ['show_doc_watermark_by_address_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_doc_watermark_by_address_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1785,14 +1659,10 @@ class DscClient(Client):
         :type request: :class:`huaweicloudsdkdsc.v1.ShowImageWatermarkRequest`
         :rtype: :class:`huaweicloudsdkdsc.v1.ShowImageWatermarkResponse`
         """
-        return self.show_image_watermark_with_http_info(request)
+        return self._show_image_watermark_with_http_info(request)
 
-    def show_image_watermark_with_http_info(self, request):
-        all_params = ['file', 'mark_len']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_image_watermark_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1849,14 +1719,10 @@ class DscClient(Client):
         :type request: :class:`huaweicloudsdkdsc.v1.ShowImageWatermarkByAddressRequest`
         :rtype: :class:`huaweicloudsdkdsc.v1.ShowImageWatermarkByAddressResponse`
         """
-        return self.show_image_watermark_by_address_with_http_info(request)
+        return self._show_image_watermark_by_address_with_http_info(request)
 
-    def show_image_watermark_by_address_with_http_info(self, request):
-        all_params = ['show_image_watermark_by_address_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_image_watermark_by_address_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1909,14 +1775,10 @@ class DscClient(Client):
         :type request: :class:`huaweicloudsdkdsc.v1.ShowImageWatermarkWithImageRequest`
         :rtype: :class:`huaweicloudsdkdsc.v1.ShowImageWatermarkWithImageResponse`
         """
-        return self.show_image_watermark_with_image_with_http_info(request)
+        return self._show_image_watermark_with_image_with_http_info(request)
 
-    def show_image_watermark_with_image_with_http_info(self, request):
-        all_params = ['file']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_image_watermark_with_image_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1971,14 +1833,10 @@ class DscClient(Client):
         :type request: :class:`huaweicloudsdkdsc.v1.ShowImageWatermarkWithImageByAddressRequest`
         :rtype: :class:`huaweicloudsdkdsc.v1.ShowImageWatermarkWithImageByAddressResponse`
         """
-        return self.show_image_watermark_with_image_by_address_with_http_info(request)
+        return self._show_image_watermark_with_image_by_address_with_http_info(request)
 
-    def show_image_watermark_with_image_by_address_with_http_info(self, request):
-        all_params = ['show_image_watermark_with_image_by_address_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_image_watermark_with_image_by_address_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2031,14 +1889,10 @@ class DscClient(Client):
         :type request: :class:`huaweicloudsdkdsc.v1.ShowRulesRequest`
         :rtype: :class:`huaweicloudsdkdsc.v1.ShowRulesResponse`
         """
-        return self.show_rules_with_http_info(request)
+        return self._show_rules_with_http_info(request)
 
-    def show_rules_with_http_info(self, request):
-        all_params = ['offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_rules_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2093,14 +1947,10 @@ class DscClient(Client):
         :type request: :class:`huaweicloudsdkdsc.v1.ShowScanJobResultsRequest`
         :rtype: :class:`huaweicloudsdkdsc.v1.ShowScanJobResultsResponse`
         """
-        return self.show_scan_job_results_with_http_info(request)
+        return self._show_scan_job_results_with_http_info(request)
 
-    def show_scan_job_results_with_http_info(self, request):
-        all_params = ['job_id', 'offset', 'limit', 'type', 'start_time', 'end_time']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_scan_job_results_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2163,14 +2013,10 @@ class DscClient(Client):
         :type request: :class:`huaweicloudsdkdsc.v1.ShowScanJobsRequest`
         :rtype: :class:`huaweicloudsdkdsc.v1.ShowScanJobsResponse`
         """
-        return self.show_scan_jobs_with_http_info(request)
+        return self._show_scan_jobs_with_http_info(request)
 
-    def show_scan_jobs_with_http_info(self, request):
-        all_params = ['offset', 'limit', 'content', 'start_time', 'end_time']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_scan_jobs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2231,14 +2077,10 @@ class DscClient(Client):
         :type request: :class:`huaweicloudsdkdsc.v1.ShowSpecificationRequest`
         :rtype: :class:`huaweicloudsdkdsc.v1.ShowSpecificationResponse`
         """
-        return self.show_specification_with_http_info(request)
+        return self._show_specification_with_http_info(request)
 
-    def show_specification_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_specification_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2289,14 +2131,10 @@ class DscClient(Client):
         :type request: :class:`huaweicloudsdkdsc.v1.ShowTopicsRequest`
         :rtype: :class:`huaweicloudsdkdsc.v1.ShowTopicsResponse`
         """
-        return self.show_topics_with_http_info(request)
+        return self._show_topics_with_http_info(request)
 
-    def show_topics_with_http_info(self, request):
-        all_params = ['offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_topics_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2351,14 +2189,10 @@ class DscClient(Client):
         :type request: :class:`huaweicloudsdkdsc.v1.UpdateAssetNameRequest`
         :rtype: :class:`huaweicloudsdkdsc.v1.UpdateAssetNameResponse`
         """
-        return self.update_asset_name_with_http_info(request)
+        return self._update_asset_name_with_http_info(request)
 
-    def update_asset_name_with_http_info(self, request):
-        all_params = ['asset_id', 'update_asset_name_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_asset_name_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2413,14 +2247,10 @@ class DscClient(Client):
         :type request: :class:`huaweicloudsdkdsc.v1.UpdateDefaultTopicRequest`
         :rtype: :class:`huaweicloudsdkdsc.v1.UpdateDefaultTopicResponse`
         """
-        return self.update_default_topic_with_http_info(request)
+        return self._update_default_topic_with_http_info(request)
 
-    def update_default_topic_with_http_info(self, request):
-        all_params = ['update_default_topic_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_default_topic_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2473,14 +2303,10 @@ class DscClient(Client):
         :type request: :class:`huaweicloudsdkdsc.v1.ShowOpenApiCalledRecordsRequest`
         :rtype: :class:`huaweicloudsdkdsc.v1.ShowOpenApiCalledRecordsResponse`
         """
-        return self.show_open_api_called_records_with_http_info(request)
+        return self._show_open_api_called_records_with_http_info(request)
 
-    def show_open_api_called_records_with_http_info(self, request):
-        all_params = ['limit', 'called_url', 'start_time', 'end_time', 'marker']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_open_api_called_records_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

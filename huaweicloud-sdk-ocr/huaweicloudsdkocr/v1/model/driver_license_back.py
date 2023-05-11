@@ -1,9 +1,6 @@
 # coding: utf-8
 
-import re
 import six
-
-
 
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
@@ -56,7 +53,7 @@ class DriverLicenseBack:
         :type issuing_authority: str
         :param address: 住址。 
         :type address: str
-        :param file_number: 档案编号。 
+        :param file_number: 档案编号。 &gt; 说明：当驾驶证类型为纸质驾驶证时才返回。 
         :type file_number: str
         :param record: 记录。 
         :type record: str
@@ -207,7 +204,7 @@ class DriverLicenseBack:
     def file_number(self):
         """Gets the file_number of this DriverLicenseBack.
 
-        档案编号。 
+        档案编号。 > 说明：当驾驶证类型为纸质驾驶证时才返回。 
 
         :return: The file_number of this DriverLicenseBack.
         :rtype: str
@@ -218,7 +215,7 @@ class DriverLicenseBack:
     def file_number(self, file_number):
         """Sets the file_number of this DriverLicenseBack.
 
-        档案编号。 
+        档案编号。 > 说明：当驾驶证类型为纸质驾驶证时才返回。 
 
         :param file_number: The file_number of this DriverLicenseBack.
         :type file_number: str

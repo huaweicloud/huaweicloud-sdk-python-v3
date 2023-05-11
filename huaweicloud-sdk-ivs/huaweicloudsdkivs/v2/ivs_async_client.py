@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class IvsAsyncClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(IvsAsyncClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkivs.v2.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -54,14 +36,10 @@ class IvsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkivs.v2.DetectExtentionByIdCardImageRequest`
         :rtype: :class:`huaweicloudsdkivs.v2.DetectExtentionByIdCardImageResponse`
         """
-        return self.detect_extention_by_id_card_image_with_http_info(request)
+        return self._detect_extention_by_id_card_image_with_http_info(request)
 
-    def detect_extention_by_id_card_image_with_http_info(self, request):
-        all_params = ['ivs_extention_by_id_card_image_request_body', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _detect_extention_by_id_card_image_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -117,14 +95,10 @@ class IvsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkivs.v2.DetectExtentionByNameAndIdRequest`
         :rtype: :class:`huaweicloudsdkivs.v2.DetectExtentionByNameAndIdResponse`
         """
-        return self.detect_extention_by_name_and_id_with_http_info(request)
+        return self._detect_extention_by_name_and_id_with_http_info(request)
 
-    def detect_extention_by_name_and_id_with_http_info(self, request):
-        all_params = ['ivs_extention_by_name_and_id_request_body', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _detect_extention_by_name_and_id_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -180,14 +154,10 @@ class IvsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkivs.v2.DetectStandardByIdCardImageRequest`
         :rtype: :class:`huaweicloudsdkivs.v2.DetectStandardByIdCardImageResponse`
         """
-        return self.detect_standard_by_id_card_image_with_http_info(request)
+        return self._detect_standard_by_id_card_image_with_http_info(request)
 
-    def detect_standard_by_id_card_image_with_http_info(self, request):
-        all_params = ['ivs_standard_by_id_card_image_request_body', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _detect_standard_by_id_card_image_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -243,14 +213,10 @@ class IvsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkivs.v2.DetectStandardByNameAndIdRequest`
         :rtype: :class:`huaweicloudsdkivs.v2.DetectStandardByNameAndIdResponse`
         """
-        return self.detect_standard_by_name_and_id_with_http_info(request)
+        return self._detect_standard_by_name_and_id_with_http_info(request)
 
-    def detect_standard_by_name_and_id_with_http_info(self, request):
-        all_params = ['ivs_standard_by_name_and_id_request_body', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _detect_standard_by_name_and_id_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -306,14 +272,10 @@ class IvsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkivs.v2.DetectStandardByVideoAndIdCardImageRequest`
         :rtype: :class:`huaweicloudsdkivs.v2.DetectStandardByVideoAndIdCardImageResponse`
         """
-        return self.detect_standard_by_video_and_id_card_image_with_http_info(request)
+        return self._detect_standard_by_video_and_id_card_image_with_http_info(request)
 
-    def detect_standard_by_video_and_id_card_image_with_http_info(self, request):
-        all_params = ['ivs_standard_by_video_and_id_card_image_request_body', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _detect_standard_by_video_and_id_card_image_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -369,14 +331,10 @@ class IvsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkivs.v2.DetectStandardByVideoAndNameAndIdRequest`
         :rtype: :class:`huaweicloudsdkivs.v2.DetectStandardByVideoAndNameAndIdResponse`
         """
-        return self.detect_standard_by_video_and_name_and_id_with_http_info(request)
+        return self._detect_standard_by_video_and_name_and_id_with_http_info(request)
 
-    def detect_standard_by_video_and_name_and_id_with_http_info(self, request):
-        all_params = ['ivs_standard_by_video_and_name_and_id_request_body', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _detect_standard_by_video_and_name_and_id_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

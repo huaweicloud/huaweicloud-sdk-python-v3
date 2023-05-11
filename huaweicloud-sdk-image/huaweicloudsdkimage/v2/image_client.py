@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class ImageClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(ImageClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkimage.v2.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -53,14 +35,10 @@ class ImageClient(Client):
         :type request: :class:`huaweicloudsdkimage.v2.CreateImageHighresolutionMattingTaskRequest`
         :rtype: :class:`huaweicloudsdkimage.v2.CreateImageHighresolutionMattingTaskResponse`
         """
-        return self.create_image_highresolution_matting_task_with_http_info(request)
+        return self._create_image_highresolution_matting_task_with_http_info(request)
 
-    def create_image_highresolution_matting_task_with_http_info(self, request):
-        all_params = ['create_image_highresolution_matting_task_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_image_highresolution_matting_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -113,14 +91,10 @@ class ImageClient(Client):
         :type request: :class:`huaweicloudsdkimage.v2.CreateVideoObjectMaskingTaskRequest`
         :rtype: :class:`huaweicloudsdkimage.v2.CreateVideoObjectMaskingTaskResponse`
         """
-        return self.create_video_object_masking_task_with_http_info(request)
+        return self._create_video_object_masking_task_with_http_info(request)
 
-    def create_video_object_masking_task_with_http_info(self, request):
-        all_params = ['create_video_object_masking_task_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_video_object_masking_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -162,6 +136,62 @@ class ImageClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def create_video_tagging_media_task(self, request):
+        """创建视频标签任务
+
+        创建视频标签任务，输入一段视频，通过AI模型分析视频中的信息，输出视频所包含的媒资标签、名人标签、logo标签、语音标签、OCR标签等信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateVideoTaggingMediaTask
+        :type request: :class:`huaweicloudsdkimage.v2.CreateVideoTaggingMediaTaskRequest`
+        :rtype: :class:`huaweicloudsdkimage.v2.CreateVideoTaggingMediaTaskResponse`
+        """
+        return self._create_video_tagging_media_task_with_http_info(request)
+
+    def _create_video_tagging_media_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/image/video-tagging-media/tasks',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateVideoTaggingMediaTaskResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def run_celebrity_recognition(self, request):
         """名人识别
 
@@ -173,14 +203,10 @@ class ImageClient(Client):
         :type request: :class:`huaweicloudsdkimage.v2.RunCelebrityRecognitionRequest`
         :rtype: :class:`huaweicloudsdkimage.v2.RunCelebrityRecognitionResponse`
         """
-        return self.run_celebrity_recognition_with_http_info(request)
+        return self._run_celebrity_recognition_with_http_info(request)
 
-    def run_celebrity_recognition_with_http_info(self, request):
-        all_params = ['run_celebrity_recognition_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _run_celebrity_recognition_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -233,14 +259,10 @@ class ImageClient(Client):
         :type request: :class:`huaweicloudsdkimage.v2.RunImageDescriptionRequest`
         :rtype: :class:`huaweicloudsdkimage.v2.RunImageDescriptionResponse`
         """
-        return self.run_image_description_with_http_info(request)
+        return self._run_image_description_with_http_info(request)
 
-    def run_image_description_with_http_info(self, request):
-        all_params = ['run_image_description_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _run_image_description_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -293,14 +315,10 @@ class ImageClient(Client):
         :type request: :class:`huaweicloudsdkimage.v2.RunImageMainObjectDetectionRequest`
         :rtype: :class:`huaweicloudsdkimage.v2.RunImageMainObjectDetectionResponse`
         """
-        return self.run_image_main_object_detection_with_http_info(request)
+        return self._run_image_main_object_detection_with_http_info(request)
 
-    def run_image_main_object_detection_with_http_info(self, request):
-        all_params = ['run_image_main_object_detection_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _run_image_main_object_detection_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -353,14 +371,10 @@ class ImageClient(Client):
         :type request: :class:`huaweicloudsdkimage.v2.RunImageSuperResolutionRequest`
         :rtype: :class:`huaweicloudsdkimage.v2.RunImageSuperResolutionResponse`
         """
-        return self.run_image_super_resolution_with_http_info(request)
+        return self._run_image_super_resolution_with_http_info(request)
 
-    def run_image_super_resolution_with_http_info(self, request):
-        all_params = ['run_image_super_resolution_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _run_image_super_resolution_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -413,14 +427,10 @@ class ImageClient(Client):
         :type request: :class:`huaweicloudsdkimage.v2.RunImageTaggingRequest`
         :rtype: :class:`huaweicloudsdkimage.v2.RunImageTaggingResponse`
         """
-        return self.run_image_tagging_with_http_info(request)
+        return self._run_image_tagging_with_http_info(request)
 
-    def run_image_tagging_with_http_info(self, request):
-        all_params = ['run_image_tagging_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _run_image_tagging_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -473,14 +483,10 @@ class ImageClient(Client):
         :type request: :class:`huaweicloudsdkimage.v2.RunRecaptureDetectRequest`
         :rtype: :class:`huaweicloudsdkimage.v2.RunRecaptureDetectResponse`
         """
-        return self.run_recapture_detect_with_http_info(request)
+        return self._run_recapture_detect_with_http_info(request)
 
-    def run_recapture_detect_with_http_info(self, request):
-        all_params = ['run_recapture_detect_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _run_recapture_detect_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -533,14 +539,10 @@ class ImageClient(Client):
         :type request: :class:`huaweicloudsdkimage.v2.ShowImageHighresolutionMattingTaskRequest`
         :rtype: :class:`huaweicloudsdkimage.v2.ShowImageHighresolutionMattingTaskResponse`
         """
-        return self.show_image_highresolution_matting_task_with_http_info(request)
+        return self._show_image_highresolution_matting_task_with_http_info(request)
 
-    def show_image_highresolution_matting_task_with_http_info(self, request):
-        all_params = ['task_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_image_highresolution_matting_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -593,14 +595,10 @@ class ImageClient(Client):
         :type request: :class:`huaweicloudsdkimage.v2.ShowVideoObjectMaskingTaskRequest`
         :rtype: :class:`huaweicloudsdkimage.v2.ShowVideoObjectMaskingTaskResponse`
         """
-        return self.show_video_object_masking_task_with_http_info(request)
+        return self._show_video_object_masking_task_with_http_info(request)
 
-    def show_video_object_masking_task_with_http_info(self, request):
-        all_params = ['task_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_video_object_masking_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -642,6 +640,62 @@ class ImageClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def show_video_tagging_media_task(self, request):
+        """查询视频标签任务
+
+        查询视频标签任务详情，返回参数配置以及任务状态信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowVideoTaggingMediaTask
+        :type request: :class:`huaweicloudsdkimage.v2.ShowVideoTaggingMediaTaskRequest`
+        :rtype: :class:`huaweicloudsdkimage.v2.ShowVideoTaggingMediaTaskResponse`
+        """
+        return self._show_video_tagging_media_task_with_http_info(request)
+
+    def _show_video_tagging_media_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/image/video-tagging-media/tasks/{task_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowVideoTaggingMediaTaskResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def run_image_media_tagging(self, request):
         """标签识别
 
@@ -653,14 +707,10 @@ class ImageClient(Client):
         :type request: :class:`huaweicloudsdkimage.v2.RunImageMediaTaggingRequest`
         :rtype: :class:`huaweicloudsdkimage.v2.RunImageMediaTaggingResponse`
         """
-        return self.run_image_media_tagging_with_http_info(request)
+        return self._run_image_media_tagging_with_http_info(request)
 
-    def run_image_media_tagging_with_http_info(self, request):
-        all_params = ['run_image_media_tagging_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _run_image_media_tagging_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -713,14 +763,10 @@ class ImageClient(Client):
         :type request: :class:`huaweicloudsdkimage.v2.RunImageMediaTaggingDetRequest`
         :rtype: :class:`huaweicloudsdkimage.v2.RunImageMediaTaggingDetResponse`
         """
-        return self.run_image_media_tagging_det_with_http_info(request)
+        return self._run_image_media_tagging_det_with_http_info(request)
 
-    def run_image_media_tagging_det_with_http_info(self, request):
-        all_params = ['run_image_media_tagging_det_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _run_image_media_tagging_det_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

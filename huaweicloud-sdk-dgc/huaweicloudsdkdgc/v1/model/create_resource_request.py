@@ -1,9 +1,6 @@
 # coding: utf-8
 
-import re
 import six
-
-
 
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
@@ -20,29 +17,58 @@ class CreateResourceRequest:
     sensitive_list = []
 
     openapi_types = {
+        'workspace': 'str',
         'body': 'ResourceInfo'
     }
 
     attribute_map = {
+        'workspace': 'workspace',
         'body': 'body'
     }
 
-    def __init__(self, body=None):
+    def __init__(self, workspace=None, body=None):
         """CreateResourceRequest
 
         The model defined in huaweicloud sdk
 
+        :param workspace: 工作空间id
+        :type workspace: str
         :param body: Body of the CreateResourceRequest
         :type body: :class:`huaweicloudsdkdgc.v1.ResourceInfo`
         """
         
         
 
+        self._workspace = None
         self._body = None
         self.discriminator = None
 
+        if workspace is not None:
+            self.workspace = workspace
         if body is not None:
             self.body = body
+
+    @property
+    def workspace(self):
+        """Gets the workspace of this CreateResourceRequest.
+
+        工作空间id
+
+        :return: The workspace of this CreateResourceRequest.
+        :rtype: str
+        """
+        return self._workspace
+
+    @workspace.setter
+    def workspace(self, workspace):
+        """Sets the workspace of this CreateResourceRequest.
+
+        工作空间id
+
+        :param workspace: The workspace of this CreateResourceRequest.
+        :type workspace: str
+        """
+        self._workspace = workspace
 
     @property
     def body(self):

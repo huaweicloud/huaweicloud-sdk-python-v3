@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class IefClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(IefClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkief.v1.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -59,14 +41,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.BatchAddDeleteTagsRequest`
         :rtype: :class:`huaweicloudsdkief.v1.BatchAddDeleteTagsResponse`
         """
-        return self.batch_add_delete_tags_with_http_info(request)
+        return self._batch_add_delete_tags_with_http_info(request)
 
-    def batch_add_delete_tags_with_http_info(self, request):
-        all_params = ['resource_type', 'resource_id', 'ief_instance_id', 'tags']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_add_delete_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -125,14 +103,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.CreateAppRequest`
         :rtype: :class:`huaweicloudsdkief.v1.CreateAppResponse`
         """
-        return self.create_app_with_http_info(request)
+        return self._create_app_with_http_info(request)
 
-    def create_app_with_http_info(self, request):
-        all_params = ['app', 'ief_instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_app_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -187,14 +161,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.CreateAppVersionsRequest`
         :rtype: :class:`huaweicloudsdkief.v1.CreateAppVersionsResponse`
         """
-        return self.create_app_versions_with_http_info(request)
+        return self._create_app_versions_with_http_info(request)
 
-    def create_app_versions_with_http_info(self, request):
-        all_params = ['app_id', 'version', 'ief_instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_app_versions_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -251,14 +221,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.CreateBatchJobRequest`
         :rtype: :class:`huaweicloudsdkief.v1.CreateBatchJobResponse`
         """
-        return self.create_batch_job_with_http_info(request)
+        return self._create_batch_job_with_http_info(request)
 
-    def create_batch_job_with_http_info(self, request):
-        all_params = ['ief_instance_id', 'create_batch_job_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_batch_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -313,14 +279,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.CreateConfigMapRequest`
         :rtype: :class:`huaweicloudsdkief.v1.CreateConfigMapResponse`
         """
-        return self.create_config_map_with_http_info(request)
+        return self._create_config_map_with_http_info(request)
 
-    def create_config_map_with_http_info(self, request):
-        all_params = ['create_config_map', 'ief_instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_config_map_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -375,14 +337,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.CreateDeploymentsRequest`
         :rtype: :class:`huaweicloudsdkief.v1.CreateDeploymentsResponse`
         """
-        return self.create_deployments_with_http_info(request)
+        return self._create_deployments_with_http_info(request)
 
-    def create_deployments_with_http_info(self, request):
-        all_params = ['create_deployments', 'ief_instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_deployments_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -437,14 +395,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.CreateDeviceRequest`
         :rtype: :class:`huaweicloudsdkief.v1.CreateDeviceResponse`
         """
-        return self.create_device_with_http_info(request)
+        return self._create_device_with_http_info(request)
 
-    def create_device_with_http_info(self, request):
-        all_params = ['create_device', 'ief_instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_device_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -499,14 +453,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.CreateDeviceTemplateRequest`
         :rtype: :class:`huaweicloudsdkief.v1.CreateDeviceTemplateResponse`
         """
-        return self.create_device_template_with_http_info(request)
+        return self._create_device_template_with_http_info(request)
 
-    def create_device_template_with_http_info(self, request):
-        all_params = ['device_template', 'ief_instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_device_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -561,14 +511,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.CreateEdgeGroupRequest`
         :rtype: :class:`huaweicloudsdkief.v1.CreateEdgeGroupResponse`
         """
-        return self.create_edge_group_with_http_info(request)
+        return self._create_edge_group_with_http_info(request)
 
-    def create_edge_group_with_http_info(self, request):
-        all_params = ['ief_instance_id', 'create_edge_group_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_edge_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -623,14 +569,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.CreateEdgeGroupCertRequest`
         :rtype: :class:`huaweicloudsdkief.v1.CreateEdgeGroupCertResponse`
         """
-        return self.create_edge_group_cert_with_http_info(request)
+        return self._create_edge_group_cert_with_http_info(request)
 
-    def create_edge_group_cert_with_http_info(self, request):
-        all_params = ['group_id', 'ief_instance_id', 'create_edge_group_cert_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_edge_group_cert_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -687,14 +629,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.CreateEdgeNodeRequest`
         :rtype: :class:`huaweicloudsdkief.v1.CreateEdgeNodeResponse`
         """
-        return self.create_edge_node_with_http_info(request)
+        return self._create_edge_node_with_http_info(request)
 
-    def create_edge_node_with_http_info(self, request):
-        all_params = ['create_edge_node_request_body', 'ief_instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_edge_node_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -749,14 +687,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.CreateEdgeNodeCertsRequest`
         :rtype: :class:`huaweicloudsdkief.v1.CreateEdgeNodeCertsResponse`
         """
-        return self.create_edge_node_certs_with_http_info(request)
+        return self._create_edge_node_certs_with_http_info(request)
 
-    def create_edge_node_certs_with_http_info(self, request):
-        all_params = ['node_id', 'create_edge_node_certs', 'ief_instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_edge_node_certs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -813,14 +747,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.CreateEncryptdatasRequest`
         :rtype: :class:`huaweicloudsdkief.v1.CreateEncryptdatasResponse`
         """
-        return self.create_encryptdatas_with_http_info(request)
+        return self._create_encryptdatas_with_http_info(request)
 
-    def create_encryptdatas_with_http_info(self, request):
-        all_params = ['create_encryptdatas_request_body', 'ief_instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_encryptdatas_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -875,14 +805,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.CreateEndpointRequest`
         :rtype: :class:`huaweicloudsdkief.v1.CreateEndpointResponse`
         """
-        return self.create_endpoint_with_http_info(request)
+        return self._create_endpoint_with_http_info(request)
 
-    def create_endpoint_with_http_info(self, request):
-        all_params = ['create_endpoint', 'ief_instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_endpoint_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -937,14 +863,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.CreateNodeEncryptdatasRequest`
         :rtype: :class:`huaweicloudsdkief.v1.CreateNodeEncryptdatasResponse`
         """
-        return self.create_node_encryptdatas_with_http_info(request)
+        return self._create_node_encryptdatas_with_http_info(request)
 
-    def create_node_encryptdatas_with_http_info(self, request):
-        all_params = ['node_id', 'create_node_encryptdatas_request_body', 'ief_instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_node_encryptdatas_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1001,14 +923,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.CreateProductRequest`
         :rtype: :class:`huaweicloudsdkief.v1.CreateProductResponse`
         """
-        return self.create_product_with_http_info(request)
+        return self._create_product_with_http_info(request)
 
-    def create_product_with_http_info(self, request):
-        all_params = ['ief_instance_id', 'create_product_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_product_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1063,14 +981,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.CreateRuleRequest`
         :rtype: :class:`huaweicloudsdkief.v1.CreateRuleResponse`
         """
-        return self.create_rule_with_http_info(request)
+        return self._create_rule_with_http_info(request)
 
-    def create_rule_with_http_info(self, request):
-        all_params = ['create_rule', 'ief_instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1125,14 +1039,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.CreateSecretRequest`
         :rtype: :class:`huaweicloudsdkief.v1.CreateSecretResponse`
         """
-        return self.create_secret_with_http_info(request)
+        return self._create_secret_with_http_info(request)
 
-    def create_secret_with_http_info(self, request):
-        all_params = ['create_secret', 'ief_instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_secret_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1187,14 +1097,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.CreateServiceRequest`
         :rtype: :class:`huaweicloudsdkief.v1.CreateServiceResponse`
         """
-        return self.create_service_with_http_info(request)
+        return self._create_service_with_http_info(request)
 
-    def create_service_with_http_info(self, request):
-        all_params = ['ief_instance_id', 'create_service']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_service_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1249,14 +1155,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.CreateSystemEventRequest`
         :rtype: :class:`huaweicloudsdkief.v1.CreateSystemEventResponse`
         """
-        return self.create_system_event_with_http_info(request)
+        return self._create_system_event_with_http_info(request)
 
-    def create_system_event_with_http_info(self, request):
-        all_params = ['ief_instance_id', 'create_system_event_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_system_event_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1313,14 +1215,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.CreateTagRequest`
         :rtype: :class:`huaweicloudsdkief.v1.CreateTagResponse`
         """
-        return self.create_tag_with_http_info(request)
+        return self._create_tag_with_http_info(request)
 
-    def create_tag_with_http_info(self, request):
-        all_params = ['resource_id', 'resource_type', 'create_tag_request_body', 'ief_instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_tag_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1379,14 +1277,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.DeleteAppRequest`
         :rtype: :class:`huaweicloudsdkief.v1.DeleteAppResponse`
         """
-        return self.delete_app_with_http_info(request)
+        return self._delete_app_with_http_info(request)
 
-    def delete_app_with_http_info(self, request):
-        all_params = ['app_id', 'ief_instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_app_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1441,14 +1335,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.DeleteAppVersionRequest`
         :rtype: :class:`huaweicloudsdkief.v1.DeleteAppVersionResponse`
         """
-        return self.delete_app_version_with_http_info(request)
+        return self._delete_app_version_with_http_info(request)
 
-    def delete_app_version_with_http_info(self, request):
-        all_params = ['app_id', 'version_id', 'ief_instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_app_version_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1505,14 +1395,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.DeleteBatchJobRequest`
         :rtype: :class:`huaweicloudsdkief.v1.DeleteBatchJobResponse`
         """
-        return self.delete_batch_job_with_http_info(request)
+        return self._delete_batch_job_with_http_info(request)
 
-    def delete_batch_job_with_http_info(self, request):
-        all_params = ['job_id', 'ief_instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_batch_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1567,14 +1453,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.DeleteConfigMapRequest`
         :rtype: :class:`huaweicloudsdkief.v1.DeleteConfigMapResponse`
         """
-        return self.delete_config_map_with_http_info(request)
+        return self._delete_config_map_with_http_info(request)
 
-    def delete_config_map_with_http_info(self, request):
-        all_params = ['configmap_id', 'ief_instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_config_map_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1629,14 +1511,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.DeleteDeploymentRequest`
         :rtype: :class:`huaweicloudsdkief.v1.DeleteDeploymentResponse`
         """
-        return self.delete_deployment_with_http_info(request)
+        return self._delete_deployment_with_http_info(request)
 
-    def delete_deployment_with_http_info(self, request):
-        all_params = ['deployment_id', 'ief_instance_id', 'force_delete']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_deployment_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1693,14 +1571,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.DeleteDeviceRequest`
         :rtype: :class:`huaweicloudsdkief.v1.DeleteDeviceResponse`
         """
-        return self.delete_device_with_http_info(request)
+        return self._delete_device_with_http_info(request)
 
-    def delete_device_with_http_info(self, request):
-        all_params = ['device_id', 'ief_instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_device_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1755,14 +1629,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.DeleteDeviceTemplateRequest`
         :rtype: :class:`huaweicloudsdkief.v1.DeleteDeviceTemplateResponse`
         """
-        return self.delete_device_template_with_http_info(request)
+        return self._delete_device_template_with_http_info(request)
 
-    def delete_device_template_with_http_info(self, request):
-        all_params = ['device_template_id', 'ief_instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_device_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1817,14 +1687,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.DeleteEdgeGroupRequest`
         :rtype: :class:`huaweicloudsdkief.v1.DeleteEdgeGroupResponse`
         """
-        return self.delete_edge_group_with_http_info(request)
+        return self._delete_edge_group_with_http_info(request)
 
-    def delete_edge_group_with_http_info(self, request):
-        all_params = ['group_id', 'ief_instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_edge_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1879,14 +1745,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.DeleteEdgeGroupCertRequest`
         :rtype: :class:`huaweicloudsdkief.v1.DeleteEdgeGroupCertResponse`
         """
-        return self.delete_edge_group_cert_with_http_info(request)
+        return self._delete_edge_group_cert_with_http_info(request)
 
-    def delete_edge_group_cert_with_http_info(self, request):
-        all_params = ['group_id', 'group_cert_id', 'ief_instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_edge_group_cert_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1943,14 +1805,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.DeleteEdgeNodeRequest`
         :rtype: :class:`huaweicloudsdkief.v1.DeleteEdgeNodeResponse`
         """
-        return self.delete_edge_node_with_http_info(request)
+        return self._delete_edge_node_with_http_info(request)
 
-    def delete_edge_node_with_http_info(self, request):
-        all_params = ['node_id', 'ief_instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_edge_node_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2005,14 +1863,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.DeleteEdgeNodeCertsRequest`
         :rtype: :class:`huaweicloudsdkief.v1.DeleteEdgeNodeCertsResponse`
         """
-        return self.delete_edge_node_certs_with_http_info(request)
+        return self._delete_edge_node_certs_with_http_info(request)
 
-    def delete_edge_node_certs_with_http_info(self, request):
-        all_params = ['node_id', 'cert_id', 'ief_instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_edge_node_certs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2069,14 +1923,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.DeleteEncryptdatasRequest`
         :rtype: :class:`huaweicloudsdkief.v1.DeleteEncryptdatasResponse`
         """
-        return self.delete_encryptdatas_with_http_info(request)
+        return self._delete_encryptdatas_with_http_info(request)
 
-    def delete_encryptdatas_with_http_info(self, request):
-        all_params = ['encryptdata_id', 'ief_instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_encryptdatas_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2131,14 +1981,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.DeleteEndPointRequest`
         :rtype: :class:`huaweicloudsdkief.v1.DeleteEndPointResponse`
         """
-        return self.delete_end_point_with_http_info(request)
+        return self._delete_end_point_with_http_info(request)
 
-    def delete_end_point_with_http_info(self, request):
-        all_params = ['endpoint_id', 'ief_instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_end_point_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2193,14 +2039,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.DeleteNodeEncryptdatasRequest`
         :rtype: :class:`huaweicloudsdkief.v1.DeleteNodeEncryptdatasResponse`
         """
-        return self.delete_node_encryptdatas_with_http_info(request)
+        return self._delete_node_encryptdatas_with_http_info(request)
 
-    def delete_node_encryptdatas_with_http_info(self, request):
-        all_params = ['node_id', 'encryptdata_id', 'ief_instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_node_encryptdatas_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2257,14 +2099,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.DeleteProductRequest`
         :rtype: :class:`huaweicloudsdkief.v1.DeleteProductResponse`
         """
-        return self.delete_product_with_http_info(request)
+        return self._delete_product_with_http_info(request)
 
-    def delete_product_with_http_info(self, request):
-        all_params = ['product_id', 'ief_instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_product_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2319,14 +2157,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.DeleteResourceTagRequest`
         :rtype: :class:`huaweicloudsdkief.v1.DeleteResourceTagResponse`
         """
-        return self.delete_resource_tag_with_http_info(request)
+        return self._delete_resource_tag_with_http_info(request)
 
-    def delete_resource_tag_with_http_info(self, request):
-        all_params = ['resource_type', 'resource_id', 'key', 'ief_instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_resource_tag_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2385,14 +2219,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.DeleteRuleRequest`
         :rtype: :class:`huaweicloudsdkief.v1.DeleteRuleResponse`
         """
-        return self.delete_rule_with_http_info(request)
+        return self._delete_rule_with_http_info(request)
 
-    def delete_rule_with_http_info(self, request):
-        all_params = ['rule_id', 'ief_instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2447,14 +2277,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.DeleteSecretRequest`
         :rtype: :class:`huaweicloudsdkief.v1.DeleteSecretResponse`
         """
-        return self.delete_secret_with_http_info(request)
+        return self._delete_secret_with_http_info(request)
 
-    def delete_secret_with_http_info(self, request):
-        all_params = ['secret_id', 'ief_instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_secret_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2509,14 +2335,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.DeleteServiceRequest`
         :rtype: :class:`huaweicloudsdkief.v1.DeleteServiceResponse`
         """
-        return self.delete_service_with_http_info(request)
+        return self._delete_service_with_http_info(request)
 
-    def delete_service_with_http_info(self, request):
-        all_params = ['service_id', 'ief_instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_service_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2571,14 +2393,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.DeleteSystemEventRequest`
         :rtype: :class:`huaweicloudsdkief.v1.DeleteSystemEventResponse`
         """
-        return self.delete_system_event_with_http_info(request)
+        return self._delete_system_event_with_http_info(request)
 
-    def delete_system_event_with_http_info(self, request):
-        all_params = ['event_id', 'ief_instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_system_event_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2633,14 +2451,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.EnableDisableEdgeNodesRequest`
         :rtype: :class:`huaweicloudsdkief.v1.EnableDisableEdgeNodesResponse`
         """
-        return self.enable_disable_edge_nodes_with_http_info(request)
+        return self._enable_disable_edge_nodes_with_http_info(request)
 
-    def enable_disable_edge_nodes_with_http_info(self, request):
-        all_params = ['node_id', 'enable_disable_edge_nodes_request_body', 'ief_instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _enable_disable_edge_nodes_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2697,14 +2511,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.ListAppVersionsRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ListAppVersionsResponse`
         """
-        return self.list_app_versions_with_http_info(request)
+        return self._list_app_versions_with_http_info(request)
 
-    def list_app_versions_with_http_info(self, request):
-        all_params = ['app_id', 'ief_instance_id', 'limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_app_versions_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2763,14 +2573,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.ListAppsRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ListAppsResponse`
         """
-        return self.list_apps_with_http_info(request)
+        return self._list_apps_with_http_info(request)
 
-    def list_apps_with_http_info(self, request):
-        all_params = ['ief_instance_id', 'name', 'limit', 'offset', 'alias', 'visibility']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_apps_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2833,14 +2639,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.ListBatchJobRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ListBatchJobResponse`
         """
-        return self.list_batch_job_with_http_info(request)
+        return self._list_batch_job_with_http_info(request)
 
-    def list_batch_job_with_http_info(self, request):
-        all_params = ['job_type', 'limit', 'offset', 'sort', 'ief_instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_batch_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2901,14 +2703,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.ListConfigMapsRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ListConfigMapsResponse`
         """
-        return self.list_config_maps_with_http_info(request)
+        return self._list_config_maps_with_http_info(request)
 
-    def list_config_maps_with_http_info(self, request):
-        all_params = ['ief_instance_id', 'name', 'limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_config_maps_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2967,14 +2765,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.ListDeploymentsRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ListDeploymentsResponse`
         """
-        return self.list_deployments_with_http_info(request)
+        return self._list_deployments_with_http_info(request)
 
-    def list_deployments_with_http_info(self, request):
-        all_params = ['ief_instance_id', 'limit', 'offset', 'sort', 'name', 'node_id', 'group_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_deployments_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3039,14 +2833,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.ListDeviceTemplatesRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ListDeviceTemplatesResponse`
         """
-        return self.list_device_templates_with_http_info(request)
+        return self._list_device_templates_with_http_info(request)
 
-    def list_device_templates_with_http_info(self, request):
-        all_params = ['ief_instance_id', 'name', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_device_templates_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3105,14 +2895,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.ListDevicesRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ListDevicesResponse`
         """
-        return self.list_devices_with_http_info(request)
+        return self._list_devices_with_http_info(request)
 
-    def list_devices_with_http_info(self, request):
-        all_params = ['ief_instance_id', 'name', 'node_id', 'limit', 'offset', 'is_binding', 'tags']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_devices_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3177,14 +2963,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.ListEdgeGroupCertsRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ListEdgeGroupCertsResponse`
         """
-        return self.list_edge_group_certs_with_http_info(request)
+        return self._list_edge_group_certs_with_http_info(request)
 
-    def list_edge_group_certs_with_http_info(self, request):
-        all_params = ['group_id', 'ief_instance_id', 'limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_edge_group_certs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3243,14 +3025,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.ListEdgeGroupsRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ListEdgeGroupsResponse`
         """
-        return self.list_edge_groups_with_http_info(request)
+        return self._list_edge_groups_with_http_info(request)
 
-    def list_edge_groups_with_http_info(self, request):
-        all_params = ['ief_instance_id', 'name', 'limit', 'offset', 'sort']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_edge_groups_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3311,14 +3089,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.ListEdgeNodeCertsRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ListEdgeNodeCertsResponse`
         """
-        return self.list_edge_node_certs_with_http_info(request)
+        return self._list_edge_node_certs_with_http_info(request)
 
-    def list_edge_node_certs_with_http_info(self, request):
-        all_params = ['node_id', 'ief_instance_id', 'limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_edge_node_certs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3379,14 +3153,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.ListEdgeNodesRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ListEdgeNodesResponse`
         """
-        return self.list_edge_nodes_with_http_info(request)
+        return self._list_edge_nodes_with_http_info(request)
 
-    def list_edge_nodes_with_http_info(self, request):
-        all_params = ['ief_instance_id', 'name', 'limit', 'offset', 'sort', 'device_id', 'device_name', 'app_name', 'state', 'tags']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_edge_nodes_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3457,14 +3227,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.ListEncryptdataNodesRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ListEncryptdataNodesResponse`
         """
-        return self.list_encryptdata_nodes_with_http_info(request)
+        return self._list_encryptdata_nodes_with_http_info(request)
 
-    def list_encryptdata_nodes_with_http_info(self, request):
-        all_params = ['encryptdata_id', 'limit', 'ief_instance_id', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_encryptdata_nodes_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3523,14 +3289,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.ListEncryptdatasRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ListEncryptdatasResponse`
         """
-        return self.list_encryptdatas_with_http_info(request)
+        return self._list_encryptdatas_with_http_info(request)
 
-    def list_encryptdatas_with_http_info(self, request):
-        all_params = ['name', 'limit', 'offset', 'ief_instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_encryptdatas_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3591,14 +3353,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.ListEndpointsRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ListEndpointsResponse`
         """
-        return self.list_endpoints_with_http_info(request)
+        return self._list_endpoints_with_http_info(request)
 
-    def list_endpoints_with_http_info(self, request):
-        all_params = ['ief_instance_id', 'name', 'type', 'is_shared', 'limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_endpoints_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3661,14 +3419,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.ListNodeEncryptdatasRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ListNodeEncryptdatasResponse`
         """
-        return self.list_node_encryptdatas_with_http_info(request)
+        return self._list_node_encryptdatas_with_http_info(request)
 
-    def list_node_encryptdatas_with_http_info(self, request):
-        all_params = ['node_id', 'limit', 'offset', 'ief_instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_node_encryptdatas_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3727,14 +3481,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.ListPodsRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ListPodsResponse`
         """
-        return self.list_pods_with_http_info(request)
+        return self._list_pods_with_http_info(request)
 
-    def list_pods_with_http_info(self, request):
-        all_params = ['node_id', 'group_id', 'deployment_id', 'deployment_ids', 'limit', 'offset', 'ief_instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_pods_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3799,14 +3549,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.ListProductsRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ListProductsResponse`
         """
-        return self.list_products_with_http_info(request)
+        return self._list_products_with_http_info(request)
 
-    def list_products_with_http_info(self, request):
-        all_params = ['ief_instance_id', 'limit', 'offset', 'sort']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_products_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3865,14 +3611,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.ListResourceByTagsRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ListResourceByTagsResponse`
         """
-        return self.list_resource_by_tags_with_http_info(request)
+        return self._list_resource_by_tags_with_http_info(request)
 
-    def list_resource_by_tags_with_http_info(self, request):
-        all_params = ['resource_type', 'list_resource_by_tags', 'ief_instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_resource_by_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3929,14 +3671,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.ListRuleErrorsRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ListRuleErrorsResponse`
         """
-        return self.list_rule_errors_with_http_info(request)
+        return self._list_rule_errors_with_http_info(request)
 
-    def list_rule_errors_with_http_info(self, request):
-        all_params = ['rule_id', 'ief_instance_id', 'limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_rule_errors_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3995,14 +3733,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.ListRulesRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ListRulesResponse`
         """
-        return self.list_rules_with_http_info(request)
+        return self._list_rules_with_http_info(request)
 
-    def list_rules_with_http_info(self, request):
-        all_params = ['ief_instance_id', 'name', 'limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_rules_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4061,14 +3795,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.ListSecretsRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ListSecretsResponse`
         """
-        return self.list_secrets_with_http_info(request)
+        return self._list_secrets_with_http_info(request)
 
-    def list_secrets_with_http_info(self, request):
-        all_params = ['ief_instance_id', 'name', 'limit', 'offset', 'sort']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_secrets_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4129,14 +3859,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.ListServicesRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ListServicesResponse`
         """
-        return self.list_services_with_http_info(request)
+        return self._list_services_with_http_info(request)
 
-    def list_services_with_http_info(self, request):
-        all_params = ['ief_instance_id', 'limit', 'offset', 'sorted', 'name', 'app']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_services_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4199,14 +3925,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.ListSystemEventsRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ListSystemEventsResponse`
         """
-        return self.list_system_events_with_http_info(request)
+        return self._list_system_events_with_http_info(request)
 
-    def list_system_events_with_http_info(self, request):
-        all_params = ['ief_instance_id', 'name', 'limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_system_events_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4265,14 +3987,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.ListTagsRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ListTagsResponse`
         """
-        return self.list_tags_with_http_info(request)
+        return self._list_tags_with_http_info(request)
 
-    def list_tags_with_http_info(self, request):
-        all_params = ['resource_id', 'resource_type', 'ief_instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4329,14 +4047,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.ListTagsByResourceTypeRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ListTagsByResourceTypeResponse`
         """
-        return self.list_tags_by_resource_type_with_http_info(request)
+        return self._list_tags_by_resource_type_with_http_info(request)
 
-    def list_tags_by_resource_type_with_http_info(self, request):
-        all_params = ['resource_type', 'ief_instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_tags_by_resource_type_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4391,14 +4105,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.RestartDeploymentsPodRequest`
         :rtype: :class:`huaweicloudsdkief.v1.RestartDeploymentsPodResponse`
         """
-        return self.restart_deployments_pod_with_http_info(request)
+        return self._restart_deployments_pod_with_http_info(request)
 
-    def restart_deployments_pod_with_http_info(self, request):
-        all_params = ['deployment_id', 'pod_name', 'ief_instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _restart_deployments_pod_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4455,14 +4165,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.RestoreBatchJobRequest`
         :rtype: :class:`huaweicloudsdkief.v1.RestoreBatchJobResponse`
         """
-        return self.restore_batch_job_with_http_info(request)
+        return self._restore_batch_job_with_http_info(request)
 
-    def restore_batch_job_with_http_info(self, request):
-        all_params = ['job_id', 'ief_instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _restore_batch_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4517,14 +4223,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.RetryBatchJobRequest`
         :rtype: :class:`huaweicloudsdkief.v1.RetryBatchJobResponse`
         """
-        return self.retry_batch_job_with_http_info(request)
+        return self._retry_batch_job_with_http_info(request)
 
-    def retry_batch_job_with_http_info(self, request):
-        all_params = ['job_id', 'ief_instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _retry_batch_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4579,14 +4281,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.ShowAppDetailRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ShowAppDetailResponse`
         """
-        return self.show_app_detail_with_http_info(request)
+        return self._show_app_detail_with_http_info(request)
 
-    def show_app_detail_with_http_info(self, request):
-        all_params = ['app_id', 'ief_instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_app_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4641,14 +4339,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.ShowAppVersionDetailRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ShowAppVersionDetailResponse`
         """
-        return self.show_app_version_detail_with_http_info(request)
+        return self._show_app_version_detail_with_http_info(request)
 
-    def show_app_version_detail_with_http_info(self, request):
-        all_params = ['app_id', 'version_id', 'ief_instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_app_version_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4705,14 +4399,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.ShowBatchJobRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ShowBatchJobResponse`
         """
-        return self.show_batch_job_with_http_info(request)
+        return self._show_batch_job_with_http_info(request)
 
-    def show_batch_job_with_http_info(self, request):
-        all_params = ['job_id', 'ief_instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_batch_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4767,14 +4457,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.ShowConfigMapRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ShowConfigMapResponse`
         """
-        return self.show_config_map_with_http_info(request)
+        return self._show_config_map_with_http_info(request)
 
-    def show_config_map_with_http_info(self, request):
-        all_params = ['configmap_id', 'ief_instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_config_map_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4829,14 +4515,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.ShowDeploymentRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ShowDeploymentResponse`
         """
-        return self.show_deployment_with_http_info(request)
+        return self._show_deployment_with_http_info(request)
 
-    def show_deployment_with_http_info(self, request):
-        all_params = ['deployment_id', 'ief_instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_deployment_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4891,14 +4573,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.ShowDeviceRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ShowDeviceResponse`
         """
-        return self.show_device_with_http_info(request)
+        return self._show_device_with_http_info(request)
 
-    def show_device_with_http_info(self, request):
-        all_params = ['device_id', 'ief_instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_device_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4953,14 +4631,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.ShowDeviceTemplateRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ShowDeviceTemplateResponse`
         """
-        return self.show_device_template_with_http_info(request)
+        return self._show_device_template_with_http_info(request)
 
-    def show_device_template_with_http_info(self, request):
-        all_params = ['device_template_id', 'ief_instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_device_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5015,14 +4689,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.ShowDeviceTwinRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ShowDeviceTwinResponse`
         """
-        return self.show_device_twin_with_http_info(request)
+        return self._show_device_twin_with_http_info(request)
 
-    def show_device_twin_with_http_info(self, request):
-        all_params = ['device_id', 'ief_instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_device_twin_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5077,14 +4747,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.ShowEdgeGroupCertDetailRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ShowEdgeGroupCertDetailResponse`
         """
-        return self.show_edge_group_cert_detail_with_http_info(request)
+        return self._show_edge_group_cert_detail_with_http_info(request)
 
-    def show_edge_group_cert_detail_with_http_info(self, request):
-        all_params = ['group_id', 'group_cert_id', 'ief_instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_edge_group_cert_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5141,14 +4807,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.ShowEdgeGroupDetailRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ShowEdgeGroupDetailResponse`
         """
-        return self.show_edge_group_detail_with_http_info(request)
+        return self._show_edge_group_detail_with_http_info(request)
 
-    def show_edge_group_detail_with_http_info(self, request):
-        all_params = ['group_id', 'ief_instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_edge_group_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5203,14 +4865,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.ShowEdgeNodeDetailRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ShowEdgeNodeDetailResponse`
         """
-        return self.show_edge_node_detail_with_http_info(request)
+        return self._show_edge_node_detail_with_http_info(request)
 
-    def show_edge_node_detail_with_http_info(self, request):
-        all_params = ['node_id', 'ief_instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_edge_node_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5265,14 +4923,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.ShowEncryptdatasRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ShowEncryptdatasResponse`
         """
-        return self.show_encryptdatas_with_http_info(request)
+        return self._show_encryptdatas_with_http_info(request)
 
-    def show_encryptdatas_with_http_info(self, request):
-        all_params = ['encryptdata_id', 'ief_instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_encryptdatas_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5327,14 +4981,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.ShowEndPointDetailRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ShowEndPointDetailResponse`
         """
-        return self.show_end_point_detail_with_http_info(request)
+        return self._show_end_point_detail_with_http_info(request)
 
-    def show_end_point_detail_with_http_info(self, request):
-        all_params = ['endpoint_id', 'ief_instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_end_point_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5389,14 +5039,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.ShowProductDetailRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ShowProductDetailResponse`
         """
-        return self.show_product_detail_with_http_info(request)
+        return self._show_product_detail_with_http_info(request)
 
-    def show_product_detail_with_http_info(self, request):
-        all_params = ['product_id', 'ief_instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_product_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5451,14 +5097,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.ShowQuotaRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ShowQuotaResponse`
         """
-        return self.show_quota_with_http_info(request)
+        return self._show_quota_with_http_info(request)
 
-    def show_quota_with_http_info(self, request):
-        all_params = ['types']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_quota_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5511,14 +5153,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.ShowRuleDetailRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ShowRuleDetailResponse`
         """
-        return self.show_rule_detail_with_http_info(request)
+        return self._show_rule_detail_with_http_info(request)
 
-    def show_rule_detail_with_http_info(self, request):
-        all_params = ['rule_id', 'ief_instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_rule_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5573,14 +5211,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.ShowSecretRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ShowSecretResponse`
         """
-        return self.show_secret_with_http_info(request)
+        return self._show_secret_with_http_info(request)
 
-    def show_secret_with_http_info(self, request):
-        all_params = ['secret_id', 'ief_instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_secret_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5635,14 +5269,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.ShowServiceDetailRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ShowServiceDetailResponse`
         """
-        return self.show_service_detail_with_http_info(request)
+        return self._show_service_detail_with_http_info(request)
 
-    def show_service_detail_with_http_info(self, request):
-        all_params = ['service_id', 'ief_instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_service_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5697,14 +5327,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.ShowSystemEventDetailRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ShowSystemEventDetailResponse`
         """
-        return self.show_system_event_detail_with_http_info(request)
+        return self._show_system_event_detail_with_http_info(request)
 
-    def show_system_event_detail_with_http_info(self, request):
-        all_params = ['event_id', 'ief_instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_system_event_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5759,14 +5385,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.StartRuleRequest`
         :rtype: :class:`huaweicloudsdkief.v1.StartRuleResponse`
         """
-        return self.start_rule_with_http_info(request)
+        return self._start_rule_with_http_info(request)
 
-    def start_rule_with_http_info(self, request):
-        all_params = ['rule_id', 'ief_instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _start_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5821,14 +5443,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.StartSystemEventRequest`
         :rtype: :class:`huaweicloudsdkief.v1.StartSystemEventResponse`
         """
-        return self.start_system_event_with_http_info(request)
+        return self._start_system_event_with_http_info(request)
 
-    def start_system_event_with_http_info(self, request):
-        all_params = ['event_id', 'ief_instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _start_system_event_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5883,14 +5501,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.StopBatchJobRequest`
         :rtype: :class:`huaweicloudsdkief.v1.StopBatchJobResponse`
         """
-        return self.stop_batch_job_with_http_info(request)
+        return self._stop_batch_job_with_http_info(request)
 
-    def stop_batch_job_with_http_info(self, request):
-        all_params = ['job_id', 'ief_instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _stop_batch_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5945,14 +5559,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.StopRuleRequest`
         :rtype: :class:`huaweicloudsdkief.v1.StopRuleResponse`
         """
-        return self.stop_rule_with_http_info(request)
+        return self._stop_rule_with_http_info(request)
 
-    def stop_rule_with_http_info(self, request):
-        all_params = ['rule_id', 'ief_instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _stop_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6007,14 +5617,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.StopSystemEventRequest`
         :rtype: :class:`huaweicloudsdkief.v1.StopSystemEventResponse`
         """
-        return self.stop_system_event_with_http_info(request)
+        return self._stop_system_event_with_http_info(request)
 
-    def stop_system_event_with_http_info(self, request):
-        all_params = ['event_id', 'ief_instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _stop_system_event_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6069,14 +5675,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.UpdateAppRequest`
         :rtype: :class:`huaweicloudsdkief.v1.UpdateAppResponse`
         """
-        return self.update_app_with_http_info(request)
+        return self._update_app_with_http_info(request)
 
-    def update_app_with_http_info(self, request):
-        all_params = ['app_id', 'update_app_body', 'ief_instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_app_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6133,14 +5735,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.UpdateAppVersionRequest`
         :rtype: :class:`huaweicloudsdkief.v1.UpdateAppVersionResponse`
         """
-        return self.update_app_version_with_http_info(request)
+        return self._update_app_version_with_http_info(request)
 
-    def update_app_version_with_http_info(self, request):
-        all_params = ['app_id', 'version_id', 'updata_app_version_body', 'ief_instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_app_version_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6199,14 +5797,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.UpdateConfigMapRequest`
         :rtype: :class:`huaweicloudsdkief.v1.UpdateConfigMapResponse`
         """
-        return self.update_config_map_with_http_info(request)
+        return self._update_config_map_with_http_info(request)
 
-    def update_config_map_with_http_info(self, request):
-        all_params = ['configmap_id', 'update_config_map', 'ief_instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_config_map_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6263,14 +5857,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.UpdateDeploymentRequest`
         :rtype: :class:`huaweicloudsdkief.v1.UpdateDeploymentResponse`
         """
-        return self.update_deployment_with_http_info(request)
+        return self._update_deployment_with_http_info(request)
 
-    def update_deployment_with_http_info(self, request):
-        all_params = ['deployment_id', 'update_deployment', 'ief_instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_deployment_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6327,14 +5917,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.UpdateDeviceRequest`
         :rtype: :class:`huaweicloudsdkief.v1.UpdateDeviceResponse`
         """
-        return self.update_device_with_http_info(request)
+        return self._update_device_with_http_info(request)
 
-    def update_device_with_http_info(self, request):
-        all_params = ['device_id', 'device', 'ief_instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_device_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6391,14 +5977,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.UpdateDeviceTemplateByIdRequest`
         :rtype: :class:`huaweicloudsdkief.v1.UpdateDeviceTemplateByIdResponse`
         """
-        return self.update_device_template_by_id_with_http_info(request)
+        return self._update_device_template_by_id_with_http_info(request)
 
-    def update_device_template_by_id_with_http_info(self, request):
-        all_params = ['device_template_id', 'device_template', 'ief_instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_device_template_by_id_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6455,14 +6037,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.UpdateDeviceTwinRequest`
         :rtype: :class:`huaweicloudsdkief.v1.UpdateDeviceTwinResponse`
         """
-        return self.update_device_twin_with_http_info(request)
+        return self._update_device_twin_with_http_info(request)
 
-    def update_device_twin_with_http_info(self, request):
-        all_params = ['device_id', 'ief_instance_id', 'update_device_twin']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_device_twin_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6519,14 +6097,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.UpdateEdgeGroupRequest`
         :rtype: :class:`huaweicloudsdkief.v1.UpdateEdgeGroupResponse`
         """
-        return self.update_edge_group_with_http_info(request)
+        return self._update_edge_group_with_http_info(request)
 
-    def update_edge_group_with_http_info(self, request):
-        all_params = ['group_id', 'ief_instance_id', 'update_edge_group_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_edge_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6583,14 +6157,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.UpdateEdgeGroupNodeBindingRequest`
         :rtype: :class:`huaweicloudsdkief.v1.UpdateEdgeGroupNodeBindingResponse`
         """
-        return self.update_edge_group_node_binding_with_http_info(request)
+        return self._update_edge_group_node_binding_with_http_info(request)
 
-    def update_edge_group_node_binding_with_http_info(self, request):
-        all_params = ['group_id', 'ief_instance_id', 'update_edge_group_node_binding_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_edge_group_node_binding_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6647,14 +6217,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.UpdateEdgeNodeRequest`
         :rtype: :class:`huaweicloudsdkief.v1.UpdateEdgeNodeResponse`
         """
-        return self.update_edge_node_with_http_info(request)
+        return self._update_edge_node_with_http_info(request)
 
-    def update_edge_node_with_http_info(self, request):
-        all_params = ['node_id', 'ief_instance_id', 'update_edge_node_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_edge_node_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6711,14 +6277,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.UpdateEdgeNodeDeviceRequest`
         :rtype: :class:`huaweicloudsdkief.v1.UpdateEdgeNodeDeviceResponse`
         """
-        return self.update_edge_node_device_with_http_info(request)
+        return self._update_edge_node_device_with_http_info(request)
 
-    def update_edge_node_device_with_http_info(self, request):
-        all_params = ['node_id', 'devices', 'ief_instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_edge_node_device_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6775,14 +6337,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.UpdateEncryptdatasRequest`
         :rtype: :class:`huaweicloudsdkief.v1.UpdateEncryptdatasResponse`
         """
-        return self.update_encryptdatas_with_http_info(request)
+        return self._update_encryptdatas_with_http_info(request)
 
-    def update_encryptdatas_with_http_info(self, request):
-        all_params = ['encryptdata_id', 'update_encryptdatas_request_body', 'ief_instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_encryptdatas_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6839,14 +6397,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.UpdateNodeByDeviceIdRequest`
         :rtype: :class:`huaweicloudsdkief.v1.UpdateNodeByDeviceIdResponse`
         """
-        return self.update_node_by_device_id_with_http_info(request)
+        return self._update_node_by_device_id_with_http_info(request)
 
-    def update_node_by_device_id_with_http_info(self, request):
-        all_params = ['device_id', 'node', 'ief_instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_node_by_device_id_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6903,14 +6457,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.UpdateSecretRequest`
         :rtype: :class:`huaweicloudsdkief.v1.UpdateSecretResponse`
         """
-        return self.update_secret_with_http_info(request)
+        return self._update_secret_with_http_info(request)
 
-    def update_secret_with_http_info(self, request):
-        all_params = ['secret_id', 'update_secret', 'ief_instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_secret_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6967,14 +6517,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.UpdateServiceRequest`
         :rtype: :class:`huaweicloudsdkief.v1.UpdateServiceResponse`
         """
-        return self.update_service_with_http_info(request)
+        return self._update_service_with_http_info(request)
 
-    def update_service_with_http_info(self, request):
-        all_params = ['service_id', 'ief_instance_id', 'service']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_service_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7031,14 +6577,10 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.UpgradeEdgeNodeRequest`
         :rtype: :class:`huaweicloudsdkief.v1.UpgradeEdgeNodeResponse`
         """
-        return self.upgrade_edge_node_with_http_info(request)
+        return self._upgrade_edge_node_with_http_info(request)
 
-    def upgrade_edge_node_with_http_info(self, request):
-        all_params = ['node_id', 'ief_instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _upgrade_edge_node_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

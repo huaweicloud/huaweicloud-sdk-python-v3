@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class CodeArtsBuildAsyncClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(CodeArtsBuildAsyncClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkcodeartsbuild.v3.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -54,14 +36,10 @@ class CodeArtsBuildAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodeartsbuild.v3.DownloadKeystoreRequest`
         :rtype: :class:`huaweicloudsdkcodeartsbuild.v3.DownloadKeystoreResponse`
         """
-        return self.download_keystore_with_http_info(request)
+        return self._download_keystore_with_http_info(request)
 
-    def download_keystore_with_http_info(self, request):
-        all_params = ['file_name', 'domain_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _download_keystore_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -117,14 +95,10 @@ class CodeArtsBuildAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodeartsbuild.v3.RunJobRequest`
         :rtype: :class:`huaweicloudsdkcodeartsbuild.v3.RunJobResponse`
         """
-        return self.run_job_with_http_info(request)
+        return self._run_job_with_http_info(request)
 
-    def run_job_with_http_info(self, request):
-        all_params = ['run_job_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _run_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -178,14 +152,10 @@ class CodeArtsBuildAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodeartsbuild.v3.ShowHistoryDetailsRequest`
         :rtype: :class:`huaweicloudsdkcodeartsbuild.v3.ShowHistoryDetailsResponse`
         """
-        return self.show_history_details_with_http_info(request)
+        return self._show_history_details_with_http_info(request)
 
-    def show_history_details_with_http_info(self, request):
-        all_params = ['job_id', 'build_number']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_history_details_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -241,14 +211,10 @@ class CodeArtsBuildAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodeartsbuild.v3.ShowJobListByProjectIdRequest`
         :rtype: :class:`huaweicloudsdkcodeartsbuild.v3.ShowJobListByProjectIdResponse`
         """
-        return self.show_job_list_by_project_id_with_http_info(request)
+        return self._show_job_list_by_project_id_with_http_info(request)
 
-    def show_job_list_by_project_id_with_http_info(self, request):
-        all_params = ['project_id', 'page_index', 'page_size']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_job_list_by_project_id_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -306,14 +272,10 @@ class CodeArtsBuildAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodeartsbuild.v3.ShowJobStatusRequest`
         :rtype: :class:`huaweicloudsdkcodeartsbuild.v3.ShowJobStatusResponse`
         """
-        return self.show_job_status_with_http_info(request)
+        return self._show_job_status_with_http_info(request)
 
-    def show_job_status_with_http_info(self, request):
-        all_params = ['job_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_job_status_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -367,14 +329,10 @@ class CodeArtsBuildAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodeartsbuild.v3.ShowJobSuccessRatioRequest`
         :rtype: :class:`huaweicloudsdkcodeartsbuild.v3.ShowJobSuccessRatioResponse`
         """
-        return self.show_job_success_ratio_with_http_info(request)
+        return self._show_job_success_ratio_with_http_info(request)
 
-    def show_job_success_ratio_with_http_info(self, request):
-        all_params = ['job_id', 'start_time', 'end_time']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_job_success_ratio_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -432,14 +390,10 @@ class CodeArtsBuildAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodeartsbuild.v3.ShowLastHistoryRequest`
         :rtype: :class:`huaweicloudsdkcodeartsbuild.v3.ShowLastHistoryResponse`
         """
-        return self.show_last_history_with_http_info(request)
+        return self._show_last_history_with_http_info(request)
 
-    def show_last_history_with_http_info(self, request):
-        all_params = ['project_id', 'repository_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_last_history_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -495,14 +449,10 @@ class CodeArtsBuildAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodeartsbuild.v3.ShowListHistoryRequest`
         :rtype: :class:`huaweicloudsdkcodeartsbuild.v3.ShowListHistoryResponse`
         """
-        return self.show_list_history_with_http_info(request)
+        return self._show_list_history_with_http_info(request)
 
-    def show_list_history_with_http_info(self, request):
-        all_params = ['job_id', 'offset', 'limit', 'interval']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_list_history_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -562,14 +512,10 @@ class CodeArtsBuildAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodeartsbuild.v3.ShowListPeriodHistoryRequest`
         :rtype: :class:`huaweicloudsdkcodeartsbuild.v3.ShowListPeriodHistoryResponse`
         """
-        return self.show_list_period_history_with_http_info(request)
+        return self._show_list_period_history_with_http_info(request)
 
-    def show_list_period_history_with_http_info(self, request):
-        all_params = ['job_id', 'offset', 'limit', 'start_time', 'end_time']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_list_period_history_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

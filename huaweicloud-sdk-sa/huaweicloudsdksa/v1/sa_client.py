@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class SaClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(SaClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdksa.v1.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -53,14 +35,10 @@ class SaClient(Client):
         :type request: :class:`huaweicloudsdksa.v1.CheckProductHealthyRequest`
         :rtype: :class:`huaweicloudsdksa.v1.CheckProductHealthyResponse`
         """
-        return self.check_product_healthy_with_http_info(request)
+        return self._check_product_healthy_with_http_info(request)
 
-    def check_product_healthy_with_http_info(self, request):
-        all_params = ['project_id', 'check_product_healthy_request_body', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _check_product_healthy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -117,14 +95,10 @@ class SaClient(Client):
         :type request: :class:`huaweicloudsdksa.v1.ImportEventsRequest`
         :rtype: :class:`huaweicloudsdksa.v1.ImportEventsResponse`
         """
-        return self.import_events_with_http_info(request)
+        return self._import_events_with_http_info(request)
 
-    def import_events_with_http_info(self, request):
-        all_params = ['project_id', 'import_events_request_body', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _import_events_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

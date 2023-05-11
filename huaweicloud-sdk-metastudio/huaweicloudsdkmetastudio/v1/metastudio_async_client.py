@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class MetaStudioAsyncClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(MetaStudioAsyncClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkmetastudio.v1.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -54,14 +36,10 @@ class MetaStudioAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmetastudio.v1.CreateDigitalAssetRequest`
         :rtype: :class:`huaweicloudsdkmetastudio.v1.CreateDigitalAssetResponse`
         """
-        return self.create_digital_asset_with_http_info(request)
+        return self._create_digital_asset_with_http_info(request)
 
-    def create_digital_asset_with_http_info(self, request):
-        all_params = ['create_digital_asset_request_body', 'x_app_user_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_digital_asset_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -117,14 +95,10 @@ class MetaStudioAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmetastudio.v1.DeleteAssetRequest`
         :rtype: :class:`huaweicloudsdkmetastudio.v1.DeleteAssetResponse`
         """
-        return self.delete_asset_with_http_info(request)
+        return self._delete_asset_with_http_info(request)
 
-    def delete_asset_with_http_info(self, request):
-        all_params = ['asset_id', 'x_app_user_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_asset_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -180,14 +154,10 @@ class MetaStudioAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmetastudio.v1.ListAssetSummaryRequest`
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ListAssetSummaryResponse`
         """
-        return self.list_asset_summary_with_http_info(request)
+        return self._list_asset_summary_with_http_info(request)
 
-    def list_asset_summary_with_http_info(self, request):
-        all_params = ['list_asset_summary_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_asset_summary_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -241,14 +211,10 @@ class MetaStudioAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmetastudio.v1.ListAssetsRequest`
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ListAssetsResponse`
         """
-        return self.list_assets_with_http_info(request)
+        return self._list_assets_with_http_info(request)
 
-    def list_assets_with_http_info(self, request):
-        all_params = ['x_app_user_id', 'limit', 'offset', 'name', 'tag', 'start_time', 'end_time', 'asset_type', 'sort_key', 'sort_dir', 'asset_source', 'asset_state', 'style_id', 'render_engine', 'sex', 'lanuage', 'system_property']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_assets_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -334,14 +300,10 @@ class MetaStudioAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmetastudio.v1.RestoreAssetRequest`
         :rtype: :class:`huaweicloudsdkmetastudio.v1.RestoreAssetResponse`
         """
-        return self.restore_asset_with_http_info(request)
+        return self._restore_asset_with_http_info(request)
 
-    def restore_asset_with_http_info(self, request):
-        all_params = ['asset_id', 'x_app_user_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _restore_asset_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -397,14 +359,10 @@ class MetaStudioAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmetastudio.v1.ShowAssetRequest`
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ShowAssetResponse`
         """
-        return self.show_asset_with_http_info(request)
+        return self._show_asset_with_http_info(request)
 
-    def show_asset_with_http_info(self, request):
-        all_params = ['asset_id', 'x_app_user_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_asset_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -460,14 +418,10 @@ class MetaStudioAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmetastudio.v1.UpdateDigitalAssetRequest`
         :rtype: :class:`huaweicloudsdkmetastudio.v1.UpdateDigitalAssetResponse`
         """
-        return self.update_digital_asset_with_http_info(request)
+        return self._update_digital_asset_with_http_info(request)
 
-    def update_digital_asset_with_http_info(self, request):
-        all_params = ['asset_id', 'update_digital_asset_request_body', 'x_app_user_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_digital_asset_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -525,14 +479,10 @@ class MetaStudioAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmetastudio.v1.ConfirmFileUploadRequest`
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ConfirmFileUploadResponse`
         """
-        return self.confirm_file_upload_with_http_info(request)
+        return self._confirm_file_upload_with_http_info(request)
 
-    def confirm_file_upload_with_http_info(self, request):
-        all_params = ['file_id', 'confirm_file_upload_request_body', 'x_app_user_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _confirm_file_upload_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -590,14 +540,10 @@ class MetaStudioAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmetastudio.v1.CreateFileRequest`
         :rtype: :class:`huaweicloudsdkmetastudio.v1.CreateFileResponse`
         """
-        return self.create_file_with_http_info(request)
+        return self._create_file_with_http_info(request)
 
-    def create_file_with_http_info(self, request):
-        all_params = ['create_file_request_body', 'x_app_user_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_file_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -653,14 +599,10 @@ class MetaStudioAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmetastudio.v1.DeleteFileRequest`
         :rtype: :class:`huaweicloudsdkmetastudio.v1.DeleteFileResponse`
         """
-        return self.delete_file_with_http_info(request)
+        return self._delete_file_with_http_info(request)
 
-    def delete_file_with_http_info(self, request):
-        all_params = ['file_id', 'x_app_user_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_file_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -716,14 +658,10 @@ class MetaStudioAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmetastudio.v1.CreatePictureModelingByUrlJobRequest`
         :rtype: :class:`huaweicloudsdkmetastudio.v1.CreatePictureModelingByUrlJobResponse`
         """
-        return self.create_picture_modeling_by_url_job_with_http_info(request)
+        return self._create_picture_modeling_by_url_job_with_http_info(request)
 
-    def create_picture_modeling_by_url_job_with_http_info(self, request):
-        all_params = ['picture_modeling_by_url_reqest_body', 'x_app_user_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_picture_modeling_by_url_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -779,14 +717,10 @@ class MetaStudioAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmetastudio.v1.CreatePictureModelingJobRequest`
         :rtype: :class:`huaweicloudsdkmetastudio.v1.CreatePictureModelingJobResponse`
         """
-        return self.create_picture_modeling_job_with_http_info(request)
+        return self._create_picture_modeling_job_with_http_info(request)
 
-    def create_picture_modeling_job_with_http_info(self, request):
-        all_params = ['file', 'style_id', 'name', 'x_app_user_id', 'x_user_privilege', 'model_asset_id', 'notify_url']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_picture_modeling_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -854,14 +788,10 @@ class MetaStudioAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmetastudio.v1.ListPictureModelingJobsRequest`
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ListPictureModelingJobsResponse`
         """
-        return self.list_picture_modeling_jobs_with_http_info(request)
+        return self._list_picture_modeling_jobs_with_http_info(request)
 
-    def list_picture_modeling_jobs_with_http_info(self, request):
-        all_params = ['x_app_user_id', 'offset', 'limit', 'state', 'sort_key', 'sort_dir', 'create_until', 'create_since']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_picture_modeling_jobs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -929,14 +859,10 @@ class MetaStudioAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmetastudio.v1.ShowPictureModelingJobRequest`
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ShowPictureModelingJobResponse`
         """
-        return self.show_picture_modeling_job_with_http_info(request)
+        return self._show_picture_modeling_job_with_http_info(request)
 
-    def show_picture_modeling_job_with_http_info(self, request):
-        all_params = ['job_id', 'x_app_user_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_picture_modeling_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -992,14 +918,10 @@ class MetaStudioAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmetastudio.v1.ListStylesRequest`
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ListStylesResponse`
         """
-        return self.list_styles_with_http_info(request)
+        return self._list_styles_with_http_info(request)
 
-    def list_styles_with_http_info(self, request):
-        all_params = ['x_app_user_id', 'offset', 'limit', 'state', 'sort_key', 'sort_dir', 'create_until', 'create_since']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_styles_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1067,14 +989,10 @@ class MetaStudioAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmetastudio.v1.CreateTtsaRequest`
         :rtype: :class:`huaweicloudsdkmetastudio.v1.CreateTtsaResponse`
         """
-        return self.create_ttsa_with_http_info(request)
+        return self._create_ttsa_with_http_info(request)
 
-    def create_ttsa_with_http_info(self, request):
-        all_params = ['create_ttsa_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_ttsa_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1128,14 +1046,10 @@ class MetaStudioAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmetastudio.v1.ListTtsaDataRequest`
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ListTtsaDataResponse`
         """
-        return self.list_ttsa_data_with_http_info(request)
+        return self._list_ttsa_data_with_http_info(request)
 
-    def list_ttsa_data_with_http_info(self, request):
-        all_params = ['job_id', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_ttsa_data_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1191,14 +1105,10 @@ class MetaStudioAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmetastudio.v1.ListTtsaJobsRequest`
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ListTtsaJobsResponse`
         """
-        return self.list_ttsa_jobs_with_http_info(request)
+        return self._list_ttsa_jobs_with_http_info(request)
 
-    def list_ttsa_jobs_with_http_info(self, request):
-        all_params = ['offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_ttsa_jobs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1254,14 +1164,10 @@ class MetaStudioAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmetastudio.v1.ListSelfPrivilegesRequest`
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ListSelfPrivilegesResponse`
         """
-        return self.list_self_privileges_with_http_info(request)
+        return self._list_self_privileges_with_http_info(request)
 
-    def list_self_privileges_with_http_info(self, request):
-        all_params = ['x_app_user_id', 'limit', 'offset', 'privilege_type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_self_privileges_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1321,14 +1227,10 @@ class MetaStudioAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmetastudio.v1.CreateVideoMotionCaptureJobRequest`
         :rtype: :class:`huaweicloudsdkmetastudio.v1.CreateVideoMotionCaptureJobResponse`
         """
-        return self.create_video_motion_capture_job_with_http_info(request)
+        return self._create_video_motion_capture_job_with_http_info(request)
 
-    def create_video_motion_capture_job_with_http_info(self, request):
-        all_params = ['create_video_motion_capture_job_request_body', 'x_app_user_id', 'x_user_privilege']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_video_motion_capture_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1386,14 +1288,10 @@ class MetaStudioAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmetastudio.v1.ExecuteVideoMotionCaptureCommandRequest`
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ExecuteVideoMotionCaptureCommandResponse`
         """
-        return self.execute_video_motion_capture_command_with_http_info(request)
+        return self._execute_video_motion_capture_command_with_http_info(request)
 
-    def execute_video_motion_capture_command_with_http_info(self, request):
-        all_params = ['job_id', 'execute_digital_human_live_command_request_body', 'x_app_user_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _execute_video_motion_capture_command_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1451,14 +1349,10 @@ class MetaStudioAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmetastudio.v1.ListVideoMotionCaptureJobsRequest`
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ListVideoMotionCaptureJobsResponse`
         """
-        return self.list_video_motion_capture_jobs_with_http_info(request)
+        return self._list_video_motion_capture_jobs_with_http_info(request)
 
-    def list_video_motion_capture_jobs_with_http_info(self, request):
-        all_params = ['x_app_user_id', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_video_motion_capture_jobs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1516,14 +1410,10 @@ class MetaStudioAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmetastudio.v1.ShowVideoMotionCaptureJobRequest`
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ShowVideoMotionCaptureJobResponse`
         """
-        return self.show_video_motion_capture_job_with_http_info(request)
+        return self._show_video_motion_capture_job_with_http_info(request)
 
-    def show_video_motion_capture_job_with_http_info(self, request):
-        all_params = ['job_id', 'x_app_user_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_video_motion_capture_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1579,14 +1469,10 @@ class MetaStudioAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmetastudio.v1.StopVideoMotionCaptureJobRequest`
         :rtype: :class:`huaweicloudsdkmetastudio.v1.StopVideoMotionCaptureJobResponse`
         """
-        return self.stop_video_motion_capture_job_with_http_info(request)
+        return self._stop_video_motion_capture_job_with_http_info(request)
 
-    def stop_video_motion_capture_job_with_http_info(self, request):
-        all_params = ['job_id', 'x_app_user_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _stop_video_motion_capture_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

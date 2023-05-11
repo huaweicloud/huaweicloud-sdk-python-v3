@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class VodClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(VodClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkvod.v1.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -53,14 +35,10 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.CancelAssetTranscodeTaskRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.CancelAssetTranscodeTaskResponse`
         """
-        return self.cancel_asset_transcode_task_with_http_info(request)
+        return self._cancel_asset_transcode_task_with_http_info(request)
 
-    def cancel_asset_transcode_task_with_http_info(self, request):
-        all_params = ['asset_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _cancel_asset_transcode_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -113,14 +91,10 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.CancelExtractAudioTaskRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.CancelExtractAudioTaskResponse`
         """
-        return self.cancel_extract_audio_task_with_http_info(request)
+        return self._cancel_extract_audio_task_with_http_info(request)
 
-    def cancel_extract_audio_task_with_http_info(self, request):
-        all_params = ['asset_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _cancel_extract_audio_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -173,14 +147,10 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.CheckMd5DuplicationRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.CheckMd5DuplicationResponse`
         """
-        return self.check_md5_duplication_with_http_info(request)
+        return self._check_md5_duplication_with_http_info(request)
 
-    def check_md5_duplication_with_http_info(self, request):
-        all_params = ['size', 'md5']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _check_md5_duplication_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -235,14 +205,10 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.ConfirmAssetUploadRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.ConfirmAssetUploadResponse`
         """
-        return self.confirm_asset_upload_with_http_info(request)
+        return self._confirm_asset_upload_with_http_info(request)
 
-    def confirm_asset_upload_with_http_info(self, request):
-        all_params = ['confirm_asset_upload_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _confirm_asset_upload_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -295,14 +261,10 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.ConfirmImageUploadRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.ConfirmImageUploadResponse`
         """
-        return self.confirm_image_upload_with_http_info(request)
+        return self._confirm_image_upload_with_http_info(request)
 
-    def confirm_image_upload_with_http_info(self, request):
-        all_params = ['confirm_image_upload_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _confirm_image_upload_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -359,14 +321,10 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.CreateAssetByFileUploadRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.CreateAssetByFileUploadResponse`
         """
-        return self.create_asset_by_file_upload_with_http_info(request)
+        return self._create_asset_by_file_upload_with_http_info(request)
 
-    def create_asset_by_file_upload_with_http_info(self, request):
-        all_params = ['create_asset_by_file_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_asset_by_file_upload_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -419,14 +377,10 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.CreateAssetCategoryRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.CreateAssetCategoryResponse`
         """
-        return self.create_asset_category_with_http_info(request)
+        return self._create_asset_category_with_http_info(request)
 
-    def create_asset_category_with_http_info(self, request):
-        all_params = ['create_category_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_asset_category_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -479,14 +433,10 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.CreateAssetProcessTaskRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.CreateAssetProcessTaskResponse`
         """
-        return self.create_asset_process_task_with_http_info(request)
+        return self._create_asset_process_task_with_http_info(request)
 
-    def create_asset_process_task_with_http_info(self, request):
-        all_params = ['asset_process_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_asset_process_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -539,14 +489,10 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.CreateAssetReviewTaskRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.CreateAssetReviewTaskResponse`
         """
-        return self.create_asset_review_task_with_http_info(request)
+        return self._create_asset_review_task_with_http_info(request)
 
-    def create_asset_review_task_with_http_info(self, request):
-        all_params = ['asset_review_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_asset_review_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -599,14 +545,10 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.CreateExtractAudioTaskRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.CreateExtractAudioTaskResponse`
         """
-        return self.create_extract_audio_task_with_http_info(request)
+        return self._create_extract_audio_task_with_http_info(request)
 
-    def create_extract_audio_task_with_http_info(self, request):
-        all_params = ['extract_audio_task_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_extract_audio_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -659,14 +601,10 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.CreatePreheatingAssetRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.CreatePreheatingAssetResponse`
         """
-        return self.create_preheating_asset_with_http_info(request)
+        return self._create_preheating_asset_with_http_info(request)
 
-    def create_preheating_asset_with_http_info(self, request):
-        all_params = ['create_preheating_asset_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_preheating_asset_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -721,14 +659,10 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.CreateTakeOverTaskRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.CreateTakeOverTaskResponse`
         """
-        return self.create_take_over_task_with_http_info(request)
+        return self._create_take_over_task_with_http_info(request)
 
-    def create_take_over_task_with_http_info(self, request):
-        all_params = ['create_take_over_task_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_take_over_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -781,14 +715,10 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.CreateTemplateGroupRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.CreateTemplateGroupResponse`
         """
-        return self.create_template_group_with_http_info(request)
+        return self._create_template_group_with_http_info(request)
 
-    def create_template_group_with_http_info(self, request):
-        all_params = ['trans_template_group']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_template_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -841,14 +771,10 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.CreateTemplateGroupCollectionRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.CreateTemplateGroupCollectionResponse`
         """
-        return self.create_template_group_collection_with_http_info(request)
+        return self._create_template_group_collection_with_http_info(request)
 
-    def create_template_group_collection_with_http_info(self, request):
-        all_params = ['create_template_group_collection_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_template_group_collection_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -901,14 +827,10 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.CreateTranscodeTemplateRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.CreateTranscodeTemplateResponse`
         """
-        return self.create_transcode_template_with_http_info(request)
+        return self._create_transcode_template_with_http_info(request)
 
-    def create_transcode_template_with_http_info(self, request):
-        all_params = ['create_transcode_template_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_transcode_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -961,14 +883,10 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.CreateWatermarkTemplateRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.CreateWatermarkTemplateResponse`
         """
-        return self.create_watermark_template_with_http_info(request)
+        return self._create_watermark_template_with_http_info(request)
 
-    def create_watermark_template_with_http_info(self, request):
-        all_params = ['create_watermark_template_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_watermark_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1021,14 +939,10 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.DeleteAssetCategoryRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.DeleteAssetCategoryResponse`
         """
-        return self.delete_asset_category_with_http_info(request)
+        return self._delete_asset_category_with_http_info(request)
 
-    def delete_asset_category_with_http_info(self, request):
-        all_params = ['id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_asset_category_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1081,14 +995,10 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.DeleteAssetsRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.DeleteAssetsResponse`
         """
-        return self.delete_assets_with_http_info(request)
+        return self._delete_assets_with_http_info(request)
 
-    def delete_assets_with_http_info(self, request):
-        all_params = ['asset_id', 'delete_type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_assets_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1144,14 +1054,10 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.DeleteTemplateGroupRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.DeleteTemplateGroupResponse`
         """
-        return self.delete_template_group_with_http_info(request)
+        return self._delete_template_group_with_http_info(request)
 
-    def delete_template_group_with_http_info(self, request):
-        all_params = ['group_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_template_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1204,14 +1110,10 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.DeleteTemplateGroupCollectionRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.DeleteTemplateGroupCollectionResponse`
         """
-        return self.delete_template_group_collection_with_http_info(request)
+        return self._delete_template_group_collection_with_http_info(request)
 
-    def delete_template_group_collection_with_http_info(self, request):
-        all_params = ['group_collection_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_template_group_collection_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1264,14 +1166,10 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.DeleteTranscodeTemplateRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.DeleteTranscodeTemplateResponse`
         """
-        return self.delete_transcode_template_with_http_info(request)
+        return self._delete_transcode_template_with_http_info(request)
 
-    def delete_transcode_template_with_http_info(self, request):
-        all_params = ['group_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_transcode_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1324,14 +1222,10 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.DeleteWatermarkTemplateRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.DeleteWatermarkTemplateResponse`
         """
-        return self.delete_watermark_template_with_http_info(request)
+        return self._delete_watermark_template_with_http_info(request)
 
-    def delete_watermark_template_with_http_info(self, request):
-        all_params = ['id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_watermark_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1384,14 +1278,10 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.ListAssetCategoryRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.ListAssetCategoryResponse`
         """
-        return self.list_asset_category_with_http_info(request)
+        return self._list_asset_category_with_http_info(request)
 
-    def list_asset_category_with_http_info(self, request):
-        all_params = ['id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_asset_category_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1444,14 +1334,10 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.ListAssetListRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.ListAssetListResponse`
         """
-        return self.list_asset_list_with_http_info(request)
+        return self._list_asset_list_with_http_info(request)
 
-    def list_asset_list_with_http_info(self, request):
-        all_params = ['asset_id', 'status', 'start_time', 'end_time', 'category_id', 'tags', 'query_string', 'media_type', 'page', 'size', 'order']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_asset_list_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1527,14 +1413,10 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.ListDomainLogsRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.ListDomainLogsResponse`
         """
-        return self.list_domain_logs_with_http_info(request)
+        return self._list_domain_logs_with_http_info(request)
 
-    def list_domain_logs_with_http_info(self, request):
-        all_params = ['domain_name', 'query_date', 'page_size', 'page_number']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_domain_logs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1593,14 +1475,10 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.ListTemplateGroupRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.ListTemplateGroupResponse`
         """
-        return self.list_template_group_with_http_info(request)
+        return self._list_template_group_with_http_info(request)
 
-    def list_template_group_with_http_info(self, request):
-        all_params = ['group_id', 'status', 'page', 'size']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_template_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1659,14 +1537,10 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.ListTemplateGroupCollectionRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.ListTemplateGroupCollectionResponse`
         """
-        return self.list_template_group_collection_with_http_info(request)
+        return self._list_template_group_collection_with_http_info(request)
 
-    def list_template_group_collection_with_http_info(self, request):
-        all_params = ['group_collection_id', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_template_group_collection_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1723,14 +1597,10 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.ListTopStatisticsRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.ListTopStatisticsResponse`
         """
-        return self.list_top_statistics_with_http_info(request)
+        return self._list_top_statistics_with_http_info(request)
 
-    def list_top_statistics_with_http_info(self, request):
-        all_params = ['domain', 'date']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_top_statistics_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1785,14 +1655,10 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.ListTranscodeTemplateRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.ListTranscodeTemplateResponse`
         """
-        return self.list_transcode_template_with_http_info(request)
+        return self._list_transcode_template_with_http_info(request)
 
-    def list_transcode_template_with_http_info(self, request):
-        all_params = ['group_id', 'is_default', 'offset', 'limit', 'query_string']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_transcode_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1853,14 +1719,10 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.ListWatermarkTemplateRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.ListWatermarkTemplateResponse`
         """
-        return self.list_watermark_template_with_http_info(request)
+        return self._list_watermark_template_with_http_info(request)
 
-    def list_watermark_template_with_http_info(self, request):
-        all_params = ['id', 'page', 'size']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_watermark_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1918,14 +1780,10 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.PublishAssetFromObsRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.PublishAssetFromObsResponse`
         """
-        return self.publish_asset_from_obs_with_http_info(request)
+        return self._publish_asset_from_obs_with_http_info(request)
 
-    def publish_asset_from_obs_with_http_info(self, request):
-        all_params = ['publish_asset_from_obs_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _publish_asset_from_obs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1978,14 +1836,10 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.PublishAssetsRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.PublishAssetsResponse`
         """
-        return self.publish_assets_with_http_info(request)
+        return self._publish_assets_with_http_info(request)
 
-    def publish_assets_with_http_info(self, request):
-        all_params = ['publish_asset_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _publish_assets_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2038,14 +1892,10 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.ShowAssetCipherRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.ShowAssetCipherResponse`
         """
-        return self.show_asset_cipher_with_http_info(request)
+        return self._show_asset_cipher_with_http_info(request)
 
-    def show_asset_cipher_with_http_info(self, request):
-        all_params = ['asset_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_asset_cipher_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2098,14 +1948,10 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.ShowAssetDetailRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.ShowAssetDetailResponse`
         """
-        return self.show_asset_detail_with_http_info(request)
+        return self._show_asset_detail_with_http_info(request)
 
-    def show_asset_detail_with_http_info(self, request):
-        all_params = ['asset_id', 'categories']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_asset_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2161,14 +2007,10 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.ShowAssetMetaRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.ShowAssetMetaResponse`
         """
-        return self.show_asset_meta_with_http_info(request)
+        return self._show_asset_meta_with_http_info(request)
 
-    def show_asset_meta_with_http_info(self, request):
-        all_params = ['asset_id', 'status', 'transcode_status', 'asset_status', 'start_time', 'end_time', 'category_id', 'tags', 'query_string', 'page', 'size']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_asset_meta_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2251,14 +2093,10 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.ShowAssetTempAuthorityRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.ShowAssetTempAuthorityResponse`
         """
-        return self.show_asset_temp_authority_with_http_info(request)
+        return self._show_asset_temp_authority_with_http_info(request)
 
-    def show_asset_temp_authority_with_http_info(self, request):
-        all_params = ['http_verb', 'bucket', 'object_key', 'content_type', 'content_md5', 'upload_id', 'part_number']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_asset_temp_authority_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2323,14 +2161,10 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.ShowCdnStatisticsRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.ShowCdnStatisticsResponse`
         """
-        return self.show_cdn_statistics_with_http_info(request)
+        return self._show_cdn_statistics_with_http_info(request)
 
-    def show_cdn_statistics_with_http_info(self, request):
-        all_params = ['stat_type', 'domain', 'start_time', 'end_time', 'interval']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_cdn_statistics_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2391,14 +2225,10 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.ShowPreheatingAssetRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.ShowPreheatingAssetResponse`
         """
-        return self.show_preheating_asset_with_http_info(request)
+        return self._show_preheating_asset_with_http_info(request)
 
-    def show_preheating_asset_with_http_info(self, request):
-        all_params = ['task_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_preheating_asset_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2451,14 +2281,10 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.ShowVodStatisticsRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.ShowVodStatisticsResponse`
         """
-        return self.show_vod_statistics_with_http_info(request)
+        return self._show_vod_statistics_with_http_info(request)
 
-    def show_vod_statistics_with_http_info(self, request):
-        all_params = ['start_time', 'end_time', 'interval']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_vod_statistics_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2515,14 +2341,10 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.UnpublishAssetsRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.UnpublishAssetsResponse`
         """
-        return self.unpublish_assets_with_http_info(request)
+        return self._unpublish_assets_with_http_info(request)
 
-    def unpublish_assets_with_http_info(self, request):
-        all_params = ['unpublish_asset_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _unpublish_assets_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2581,14 +2403,10 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.UpdateAssetRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.UpdateAssetResponse`
         """
-        return self.update_asset_with_http_info(request)
+        return self._update_asset_with_http_info(request)
 
-    def update_asset_with_http_info(self, request):
-        all_params = ['upload_asset_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_asset_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2641,14 +2459,10 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.UpdateAssetCategoryRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.UpdateAssetCategoryResponse`
         """
-        return self.update_asset_category_with_http_info(request)
+        return self._update_asset_category_with_http_info(request)
 
-    def update_asset_category_with_http_info(self, request):
-        all_params = ['update_category_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_asset_category_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2701,14 +2515,10 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.UpdateAssetMetaRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.UpdateAssetMetaResponse`
         """
-        return self.update_asset_meta_with_http_info(request)
+        return self._update_asset_meta_with_http_info(request)
 
-    def update_asset_meta_with_http_info(self, request):
-        all_params = ['update_asset_meta_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_asset_meta_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2761,14 +2571,10 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.UpdateBucketAuthorizedRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.UpdateBucketAuthorizedResponse`
         """
-        return self.update_bucket_authorized_with_http_info(request)
+        return self._update_bucket_authorized_with_http_info(request)
 
-    def update_bucket_authorized_with_http_info(self, request):
-        all_params = ['update_bucket_authorized_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_bucket_authorized_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2821,14 +2627,10 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.UpdateCoverByThumbnailRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.UpdateCoverByThumbnailResponse`
         """
-        return self.update_cover_by_thumbnail_with_http_info(request)
+        return self._update_cover_by_thumbnail_with_http_info(request)
 
-    def update_cover_by_thumbnail_with_http_info(self, request):
-        all_params = ['update_cover_by_thumbnail_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_cover_by_thumbnail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2881,14 +2683,10 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.UpdateTemplateGroupRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.UpdateTemplateGroupResponse`
         """
-        return self.update_template_group_with_http_info(request)
+        return self._update_template_group_with_http_info(request)
 
-    def update_template_group_with_http_info(self, request):
-        all_params = ['trans_template_group']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_template_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2941,14 +2739,10 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.UpdateTemplateGroupCollectionRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.UpdateTemplateGroupCollectionResponse`
         """
-        return self.update_template_group_collection_with_http_info(request)
+        return self._update_template_group_collection_with_http_info(request)
 
-    def update_template_group_collection_with_http_info(self, request):
-        all_params = ['update_template_group_collection_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_template_group_collection_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3001,14 +2795,10 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.UpdateTranscodeTemplateRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.UpdateTranscodeTemplateResponse`
         """
-        return self.update_transcode_template_with_http_info(request)
+        return self._update_transcode_template_with_http_info(request)
 
-    def update_transcode_template_with_http_info(self, request):
-        all_params = ['update_transcode_template_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_transcode_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3061,14 +2851,10 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.UpdateWatermarkTemplateRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.UpdateWatermarkTemplateResponse`
         """
-        return self.update_watermark_template_with_http_info(request)
+        return self._update_watermark_template_with_http_info(request)
 
-    def update_watermark_template_with_http_info(self, request):
-        all_params = ['update_watermark_template_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_watermark_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3121,14 +2907,10 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.UploadMetaDataByUrlRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.UploadMetaDataByUrlResponse`
         """
-        return self.upload_meta_data_by_url_with_http_info(request)
+        return self._upload_meta_data_by_url_with_http_info(request)
 
-    def upload_meta_data_by_url_with_http_info(self, request):
-        all_params = ['upload_meta_data_by_url_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _upload_meta_data_by_url_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3181,14 +2963,10 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.ListTakeOverTaskRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.ListTakeOverTaskResponse`
         """
-        return self.list_take_over_task_with_http_info(request)
+        return self._list_take_over_task_with_http_info(request)
 
-    def list_take_over_task_with_http_info(self, request):
-        all_params = ['status', 'task_id', 'page', 'size']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_take_over_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3247,14 +3025,10 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.ShowTakeOverAssetDetailsRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.ShowTakeOverAssetDetailsResponse`
         """
-        return self.show_take_over_asset_details_with_http_info(request)
+        return self._show_take_over_asset_details_with_http_info(request)
 
-    def show_take_over_asset_details_with_http_info(self, request):
-        all_params = ['source_bucket', 'source_object']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_take_over_asset_details_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3309,14 +3083,10 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.ShowTakeOverTaskDetailsRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.ShowTakeOverTaskDetailsResponse`
         """
-        return self.show_take_over_task_details_with_http_info(request)
+        return self._show_take_over_task_details_with_http_info(request)
 
-    def show_take_over_task_details_with_http_info(self, request):
-        all_params = ['task_id', 'page', 'size']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_take_over_task_details_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3373,14 +3143,10 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.ModifySubtitleRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.ModifySubtitleResponse`
         """
-        return self.modify_subtitle_with_http_info(request)
+        return self._modify_subtitle_with_http_info(request)
 
-    def modify_subtitle_with_http_info(self, request):
-        all_params = ['subtitle_modify_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _modify_subtitle_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

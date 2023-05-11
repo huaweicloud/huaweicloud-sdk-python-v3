@@ -25,14 +25,14 @@ from mimetypes import MimeTypes
 import six
 
 from huaweicloudsdkcore.http.formdata import FormFile
-from huaweicloudsdkcore.http.primitive_types import primitive_types
+from huaweicloudsdkcore.http.primitive_types import PRIMITIVE_TYPES
 
 
 def sanitize_for_serialization(obj):
     if obj is None:
         return None
 
-    elif isinstance(obj, primitive_types):
+    elif isinstance(obj, PRIMITIVE_TYPES):
         return obj
 
     elif isinstance(obj, decimal.Decimal):

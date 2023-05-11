@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class MrsClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(MrsClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkmrs.v1.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -59,14 +41,10 @@ class MrsClient(Client):
         :type request: :class:`huaweicloudsdkmrs.v1.BatchCreateClusterTagsRequest`
         :rtype: :class:`huaweicloudsdkmrs.v1.BatchCreateClusterTagsResponse`
         """
-        return self.batch_create_cluster_tags_with_http_info(request)
+        return self._batch_create_cluster_tags_with_http_info(request)
 
-    def batch_create_cluster_tags_with_http_info(self, request):
-        all_params = ['cluster_id', 'batch_create_cluster_tags_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_create_cluster_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -128,14 +106,10 @@ class MrsClient(Client):
         :type request: :class:`huaweicloudsdkmrs.v1.BatchDeleteClusterTagsRequest`
         :rtype: :class:`huaweicloudsdkmrs.v1.BatchDeleteClusterTagsResponse`
         """
-        return self.batch_delete_cluster_tags_with_http_info(request)
+        return self._batch_delete_cluster_tags_with_http_info(request)
 
-    def batch_delete_cluster_tags_with_http_info(self, request):
-        all_params = ['cluster_id', 'batch_delete_cluster_tags_request']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_delete_cluster_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -192,14 +166,10 @@ class MrsClient(Client):
         :type request: :class:`huaweicloudsdkmrs.v1.CreateAndExecuteJobRequest`
         :rtype: :class:`huaweicloudsdkmrs.v1.CreateAndExecuteJobResponse`
         """
-        return self.create_and_execute_job_with_http_info(request)
+        return self._create_and_execute_job_with_http_info(request)
 
-    def create_and_execute_job_with_http_info(self, request):
-        all_params = ['submit_job_req_v11']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_and_execute_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -258,14 +228,10 @@ class MrsClient(Client):
         :type request: :class:`huaweicloudsdkmrs.v1.CreateClusterRequest`
         :rtype: :class:`huaweicloudsdkmrs.v1.CreateClusterResponse`
         """
-        return self.create_cluster_with_http_info(request)
+        return self._create_cluster_with_http_info(request)
 
-    def create_cluster_with_http_info(self, request):
-        all_params = ['create_cluster_req_v11']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_cluster_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -319,14 +285,10 @@ class MrsClient(Client):
         :type request: :class:`huaweicloudsdkmrs.v1.CreateClusterTagRequest`
         :rtype: :class:`huaweicloudsdkmrs.v1.CreateClusterTagResponse`
         """
-        return self.create_cluster_tag_with_http_info(request)
+        return self._create_cluster_tag_with_http_info(request)
 
-    def create_cluster_tag_with_http_info(self, request):
-        all_params = ['cluster_id', 'create_tag_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_cluster_tag_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -383,14 +345,10 @@ class MrsClient(Client):
         :type request: :class:`huaweicloudsdkmrs.v1.CreateScalingPolicyRequest`
         :rtype: :class:`huaweicloudsdkmrs.v1.CreateScalingPolicyResponse`
         """
-        return self.create_scaling_policy_with_http_info(request)
+        return self._create_scaling_policy_with_http_info(request)
 
-    def create_scaling_policy_with_http_info(self, request):
-        all_params = ['cluster_id', 'auto_scaling_policy_req_v11']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_scaling_policy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -453,14 +411,10 @@ class MrsClient(Client):
         :type request: :class:`huaweicloudsdkmrs.v1.DeleteClusterRequest`
         :rtype: :class:`huaweicloudsdkmrs.v1.DeleteClusterResponse`
         """
-        return self.delete_cluster_with_http_info(request)
+        return self._delete_cluster_with_http_info(request)
 
-    def delete_cluster_with_http_info(self, request):
-        all_params = ['cluster_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_cluster_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -513,14 +467,10 @@ class MrsClient(Client):
         :type request: :class:`huaweicloudsdkmrs.v1.DeleteClusterTagRequest`
         :rtype: :class:`huaweicloudsdkmrs.v1.DeleteClusterTagResponse`
         """
-        return self.delete_cluster_tag_with_http_info(request)
+        return self._delete_cluster_tag_with_http_info(request)
 
-    def delete_cluster_tag_with_http_info(self, request):
-        all_params = ['cluster_id', 'key']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_cluster_tag_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -576,14 +526,10 @@ class MrsClient(Client):
         :type request: :class:`huaweicloudsdkmrs.v1.DeleteJobExecutionRequest`
         :rtype: :class:`huaweicloudsdkmrs.v1.DeleteJobExecutionResponse`
         """
-        return self.delete_job_execution_with_http_info(request)
+        return self._delete_job_execution_with_http_info(request)
 
-    def delete_job_execution_with_http_info(self, request):
-        all_params = ['job_execution_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_job_execution_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -636,14 +582,10 @@ class MrsClient(Client):
         :type request: :class:`huaweicloudsdkmrs.v1.ListAllTagsRequest`
         :rtype: :class:`huaweicloudsdkmrs.v1.ListAllTagsResponse`
         """
-        return self.list_all_tags_with_http_info(request)
+        return self._list_all_tags_with_http_info(request)
 
-    def list_all_tags_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_all_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -694,14 +636,10 @@ class MrsClient(Client):
         :type request: :class:`huaweicloudsdkmrs.v1.ListClusterTagsRequest`
         :rtype: :class:`huaweicloudsdkmrs.v1.ListClusterTagsResponse`
         """
-        return self.list_cluster_tags_with_http_info(request)
+        return self._list_cluster_tags_with_http_info(request)
 
-    def list_cluster_tags_with_http_info(self, request):
-        all_params = ['cluster_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_cluster_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -754,14 +692,10 @@ class MrsClient(Client):
         :type request: :class:`huaweicloudsdkmrs.v1.ListClustersRequest`
         :rtype: :class:`huaweicloudsdkmrs.v1.ListClustersResponse`
         """
-        return self.list_clusters_with_http_info(request)
+        return self._list_clusters_with_http_info(request)
 
-    def list_clusters_with_http_info(self, request):
-        all_params = ['tags', 'page_size', 'current_page', 'cluster_name', 'cluster_state', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_clusters_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -826,14 +760,10 @@ class MrsClient(Client):
         :type request: :class:`huaweicloudsdkmrs.v1.ListClustersByTagsRequest`
         :rtype: :class:`huaweicloudsdkmrs.v1.ListClustersByTagsResponse`
         """
-        return self.list_clusters_by_tags_with_http_info(request)
+        return self._list_clusters_by_tags_with_http_info(request)
 
-    def list_clusters_by_tags_with_http_info(self, request):
-        all_params = ['list_resource_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_clusters_by_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -887,14 +817,10 @@ class MrsClient(Client):
         :type request: :class:`huaweicloudsdkmrs.v1.ListExecuteJobRequest`
         :rtype: :class:`huaweicloudsdkmrs.v1.ListExecuteJobResponse`
         """
-        return self.list_execute_job_with_http_info(request)
+        return self._list_execute_job_with_http_info(request)
 
-    def list_execute_job_with_http_info(self, request):
-        all_params = ['cluster_id', 'page_size', 'current_page', 'job_name', 'state', 'id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_execute_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -957,14 +883,10 @@ class MrsClient(Client):
         :type request: :class:`huaweicloudsdkmrs.v1.ListHostsRequest`
         :rtype: :class:`huaweicloudsdkmrs.v1.ListHostsResponse`
         """
-        return self.list_hosts_with_http_info(request)
+        return self._list_hosts_with_http_info(request)
 
-    def list_hosts_with_http_info(self, request):
-        all_params = ['cluster_id', 'page_size', 'current_page']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_hosts_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1021,14 +943,10 @@ class MrsClient(Client):
         :type request: :class:`huaweicloudsdkmrs.v1.ShowClusterDetailsRequest`
         :rtype: :class:`huaweicloudsdkmrs.v1.ShowClusterDetailsResponse`
         """
-        return self.show_cluster_details_with_http_info(request)
+        return self._show_cluster_details_with_http_info(request)
 
-    def show_cluster_details_with_http_info(self, request):
-        all_params = ['cluster_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_cluster_details_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1082,14 +1000,10 @@ class MrsClient(Client):
         :type request: :class:`huaweicloudsdkmrs.v1.ShowJobExesRequest`
         :rtype: :class:`huaweicloudsdkmrs.v1.ShowJobExesResponse`
         """
-        return self.show_job_exes_with_http_info(request)
+        return self._show_job_exes_with_http_info(request)
 
-    def show_job_exes_with_http_info(self, request):
-        all_params = ['job_exe_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_job_exes_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1143,14 +1057,10 @@ class MrsClient(Client):
         :type request: :class:`huaweicloudsdkmrs.v1.UpdateClusterScalingRequest`
         :rtype: :class:`huaweicloudsdkmrs.v1.UpdateClusterScalingResponse`
         """
-        return self.update_cluster_scaling_with_http_info(request)
+        return self._update_cluster_scaling_with_http_info(request)
 
-    def update_cluster_scaling_with_http_info(self, request):
-        all_params = ['cluster_id', 'cluster_scaling_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_cluster_scaling_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

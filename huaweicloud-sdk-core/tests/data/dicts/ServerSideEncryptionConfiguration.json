@@ -1,0 +1,11 @@
+{
+  "ServerSideEncryptionConfiguration": {
+    "Rule": {
+      "ApplyServerSideEncryptionByDefault": {
+        "SSEAlgorithm": "kms",
+        "KMSMasterKeyID": "kmskeyid-value",
+        "ProjectID": "projectid"
+      }
+    }
+  }
+}

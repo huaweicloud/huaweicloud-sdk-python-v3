@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class CdnAsyncClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(CdnAsyncClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkcdn.v2.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -54,14 +36,10 @@ class CdnAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcdn.v2.BatchCopyDomainRequest`
         :rtype: :class:`huaweicloudsdkcdn.v2.BatchCopyDomainResponse`
         """
-        return self.batch_copy_domain_with_http_info(request)
+        return self._batch_copy_domain_with_http_info(request)
 
-    def batch_copy_domain_with_http_info(self, request):
-        all_params = ['batch_copy_d_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_copy_domain_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -125,14 +103,10 @@ class CdnAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcdn.v2.DownloadRegionCarrierExcelRequest`
         :rtype: :class:`huaweicloudsdkcdn.v2.DownloadRegionCarrierExcelResponse`
         """
-        return self.download_region_carrier_excel_with_http_info(request)
+        return self._download_region_carrier_excel_with_http_info(request)
 
-    def download_region_carrier_excel_with_http_info(self, request):
-        all_params = ['start_time', 'end_time', 'domain_name', 'excel_type', 'interval', 'country', 'excel_language', 'enterprise_project_id', 'region', 'carrier']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _download_region_carrier_excel_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -214,14 +188,10 @@ class CdnAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcdn.v2.DownloadStatisticsExcelRequest`
         :rtype: :class:`huaweicloudsdkcdn.v2.DownloadStatisticsExcelResponse`
         """
-        return self.download_statistics_excel_with_http_info(request)
+        return self._download_statistics_excel_with_http_info(request)
 
-    def download_statistics_excel_with_http_info(self, request):
-        all_params = ['start_time', 'end_time', 'domain_name', 'excel_type', 'excel_language', 'service_area', 'interval', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _download_statistics_excel_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -289,14 +259,10 @@ class CdnAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcdn.v2.ListDomainsRequest`
         :rtype: :class:`huaweicloudsdkcdn.v2.ListDomainsResponse`
         """
-        return self.list_domains_with_http_info(request)
+        return self._list_domains_with_http_info(request)
 
-    def list_domains_with_http_info(self, request):
-        all_params = ['domain_name', 'business_type', 'domain_status', 'service_area', 'page_size', 'page_number', 'show_tags', 'exact_match', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_domains_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -374,14 +340,10 @@ class CdnAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcdn.v2.SetChargeModesRequest`
         :rtype: :class:`huaweicloudsdkcdn.v2.SetChargeModesResponse`
         """
-        return self.set_charge_modes_with_http_info(request)
+        return self._set_charge_modes_with_http_info(request)
 
-    def set_charge_modes_with_http_info(self, request):
-        all_params = ['set_charge_modes_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _set_charge_modes_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -447,14 +409,10 @@ class CdnAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcdn.v2.ShowBandwidthCalcRequest`
         :rtype: :class:`huaweicloudsdkcdn.v2.ShowBandwidthCalcResponse`
         """
-        return self.show_bandwidth_calc_with_http_info(request)
+        return self._show_bandwidth_calc_with_http_info(request)
 
-    def show_bandwidth_calc_with_http_info(self, request):
-        all_params = ['start_time', 'end_time', 'domain_name', 'calc_type', 'service_area', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_bandwidth_calc_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -526,14 +484,10 @@ class CdnAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcdn.v2.ShowChargeModesRequest`
         :rtype: :class:`huaweicloudsdkcdn.v2.ShowChargeModesResponse`
         """
-        return self.show_charge_modes_with_http_info(request)
+        return self._show_charge_modes_with_http_info(request)
 
-    def show_charge_modes_with_http_info(self, request):
-        all_params = ['product_type', 'status', 'service_area']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_charge_modes_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -591,14 +545,10 @@ class CdnAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcdn.v2.ShowDomainDetailByNameRequest`
         :rtype: :class:`huaweicloudsdkcdn.v2.ShowDomainDetailByNameResponse`
         """
-        return self.show_domain_detail_by_name_with_http_info(request)
+        return self._show_domain_detail_by_name_with_http_info(request)
 
-    def show_domain_detail_by_name_with_http_info(self, request):
-        all_params = ['domain_name', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_domain_detail_by_name_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -654,14 +604,10 @@ class CdnAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcdn.v2.ShowDomainFullConfigRequest`
         :rtype: :class:`huaweicloudsdkcdn.v2.ShowDomainFullConfigResponse`
         """
-        return self.show_domain_full_config_with_http_info(request)
+        return self._show_domain_full_config_with_http_info(request)
 
-    def show_domain_full_config_with_http_info(self, request):
-        all_params = ['domain_name', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_domain_full_config_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -729,14 +675,10 @@ class CdnAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcdn.v2.ShowDomainLocationStatsRequest`
         :rtype: :class:`huaweicloudsdkcdn.v2.ShowDomainLocationStatsResponse`
         """
-        return self.show_domain_location_stats_with_http_info(request)
+        return self._show_domain_location_stats_with_http_info(request)
 
-    def show_domain_location_stats_with_http_info(self, request):
-        all_params = ['action', 'start_time', 'end_time', 'domain_name', 'stat_type', 'interval', 'country', 'province', 'isp', 'group_by', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_domain_location_stats_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -822,14 +764,10 @@ class CdnAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcdn.v2.ShowDomainStatsRequest`
         :rtype: :class:`huaweicloudsdkcdn.v2.ShowDomainStatsResponse`
         """
-        return self.show_domain_stats_with_http_info(request)
+        return self._show_domain_stats_with_http_info(request)
 
-    def show_domain_stats_with_http_info(self, request):
-        all_params = ['action', 'start_time', 'end_time', 'domain_name', 'stat_type', 'interval', 'group_by', 'service_area', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_domain_stats_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -911,14 +849,10 @@ class CdnAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcdn.v2.ShowTopDomainNamesRequest`
         :rtype: :class:`huaweicloudsdkcdn.v2.ShowTopDomainNamesResponse`
         """
-        return self.show_top_domain_names_with_http_info(request)
+        return self._show_top_domain_names_with_http_info(request)
 
-    def show_top_domain_names_with_http_info(self, request):
-        all_params = ['start_time', 'end_time', 'stat_type', 'service_area', 'limit', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_top_domain_names_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -994,14 +928,10 @@ class CdnAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcdn.v2.ShowTopUrlRequest`
         :rtype: :class:`huaweicloudsdkcdn.v2.ShowTopUrlResponse`
         """
-        return self.show_top_url_with_http_info(request)
+        return self._show_top_url_with_http_info(request)
 
-    def show_top_url_with_http_info(self, request):
-        all_params = ['start_time', 'end_time', 'domain_name', 'stat_type', 'service_area', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_top_url_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1065,14 +995,10 @@ class CdnAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcdn.v2.UpdateDomainFullConfigRequest`
         :rtype: :class:`huaweicloudsdkcdn.v2.UpdateDomainFullConfigResponse`
         """
-        return self.update_domain_full_config_with_http_info(request)
+        return self._update_domain_full_config_with_http_info(request)
 
-    def update_domain_full_config_with_http_info(self, request):
-        all_params = ['domain_name', 'enterprise_project_id', 'modify_domain_config_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_domain_full_config_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

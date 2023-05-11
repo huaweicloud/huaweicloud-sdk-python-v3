@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class DnsAsyncClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(DnsAsyncClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkdns.v2.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -54,14 +36,10 @@ class DnsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.CreateCustomLineRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.CreateCustomLineResponse`
         """
-        return self.create_custom_line_with_http_info(request)
+        return self._create_custom_line_with_http_info(request)
 
-    def create_custom_line_with_http_info(self, request):
-        all_params = ['create_custom_lines']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_custom_line_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -115,14 +93,10 @@ class DnsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.CreateLineGroupRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.CreateLineGroupResponse`
         """
-        return self.create_line_group_with_http_info(request)
+        return self._create_line_group_with_http_info(request)
 
-    def create_line_group_with_http_info(self, request):
-        all_params = ['create_line_groups_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_line_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -176,14 +150,10 @@ class DnsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.DeleteCustomLineRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.DeleteCustomLineResponse`
         """
-        return self.delete_custom_line_with_http_info(request)
+        return self._delete_custom_line_with_http_info(request)
 
-    def delete_custom_line_with_http_info(self, request):
-        all_params = ['line_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_custom_line_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -237,14 +207,10 @@ class DnsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.DeleteLineGroupRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.DeleteLineGroupResponse`
         """
-        return self.delete_line_group_with_http_info(request)
+        return self._delete_line_group_with_http_info(request)
 
-    def delete_line_group_with_http_info(self, request):
-        all_params = ['linegroup_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_line_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -298,14 +264,10 @@ class DnsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.ListApiVersionsRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.ListApiVersionsResponse`
         """
-        return self.list_api_versions_with_http_info(request)
+        return self._list_api_versions_with_http_info(request)
 
-    def list_api_versions_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_api_versions_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -357,14 +319,10 @@ class DnsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.ListCustomLineRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.ListCustomLineResponse`
         """
-        return self.list_custom_line_with_http_info(request)
+        return self._list_custom_line_with_http_info(request)
 
-    def list_custom_line_with_http_info(self, request):
-        all_params = ['line_id', 'name', 'limit', 'offset', 'show_detail']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_custom_line_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -426,14 +384,10 @@ class DnsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.ListLineGroupsRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.ListLineGroupsResponse`
         """
-        return self.list_line_groups_with_http_info(request)
+        return self._list_line_groups_with_http_info(request)
 
-    def list_line_groups_with_http_info(self, request):
-        all_params = ['line_id', 'name', 'limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_line_groups_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -493,14 +447,10 @@ class DnsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.ListNameServersRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.ListNameServersResponse`
         """
-        return self.list_name_servers_with_http_info(request)
+        return self._list_name_servers_with_http_info(request)
 
-    def list_name_servers_with_http_info(self, request):
-        all_params = ['type', 'region']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_name_servers_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -556,14 +506,10 @@ class DnsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.ShowApiInfoRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.ShowApiInfoResponse`
         """
-        return self.show_api_info_with_http_info(request)
+        return self._show_api_info_with_http_info(request)
 
-    def show_api_info_with_http_info(self, request):
-        all_params = ['version']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_api_info_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -617,14 +563,10 @@ class DnsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.ShowLineGroupRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.ShowLineGroupResponse`
         """
-        return self.show_line_group_with_http_info(request)
+        return self._show_line_group_with_http_info(request)
 
-    def show_line_group_with_http_info(self, request):
-        all_params = ['linegroup_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_line_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -678,14 +620,10 @@ class DnsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.UpdateCustomLineRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.UpdateCustomLineResponse`
         """
-        return self.update_custom_line_with_http_info(request)
+        return self._update_custom_line_with_http_info(request)
 
-    def update_custom_line_with_http_info(self, request):
-        all_params = ['line_id', 'update_customs_line_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_custom_line_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -741,14 +679,10 @@ class DnsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.UpdateLineGroupsRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.UpdateLineGroupsResponse`
         """
-        return self.update_line_groups_with_http_info(request)
+        return self._update_line_groups_with_http_info(request)
 
-    def update_line_groups_with_http_info(self, request):
-        all_params = ['linegroup_id', 'update_line_groups_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_line_groups_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -804,14 +738,10 @@ class DnsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.CreateEipRecordSetRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.CreateEipRecordSetResponse`
         """
-        return self.create_eip_record_set_with_http_info(request)
+        return self._create_eip_record_set_with_http_info(request)
 
-    def create_eip_record_set_with_http_info(self, request):
-        all_params = ['region', 'floatingip_id', 'create_ptr_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_eip_record_set_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -869,14 +799,10 @@ class DnsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.ListPtrRecordsRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.ListPtrRecordsResponse`
         """
-        return self.list_ptr_records_with_http_info(request)
+        return self._list_ptr_records_with_http_info(request)
 
-    def list_ptr_records_with_http_info(self, request):
-        all_params = ['marker', 'limit', 'offset', 'enterprise_project_id', 'tags', 'status']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_ptr_records_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -940,14 +866,10 @@ class DnsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.RestorePtrRecordRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.RestorePtrRecordResponse`
         """
-        return self.restore_ptr_record_with_http_info(request)
+        return self._restore_ptr_record_with_http_info(request)
 
-    def restore_ptr_record_with_http_info(self, request):
-        all_params = ['region', 'floatingip_id', 'restore_ptr_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _restore_ptr_record_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1005,14 +927,10 @@ class DnsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.ShowPtrRecordSetRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.ShowPtrRecordSetResponse`
         """
-        return self.show_ptr_record_set_with_http_info(request)
+        return self._show_ptr_record_set_with_http_info(request)
 
-    def show_ptr_record_set_with_http_info(self, request):
-        all_params = ['region', 'floatingip_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_ptr_record_set_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1068,14 +986,10 @@ class DnsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.UpdatePtrRecordRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.UpdatePtrRecordResponse`
         """
-        return self.update_ptr_record_with_http_info(request)
+        return self._update_ptr_record_with_http_info(request)
 
-    def update_ptr_record_with_http_info(self, request):
-        all_params = ['region', 'floatingip_id', 'update_ptr_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_ptr_record_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1133,14 +1047,10 @@ class DnsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.AssociateHealthCheckRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.AssociateHealthCheckResponse`
         """
-        return self.associate_health_check_with_http_info(request)
+        return self._associate_health_check_with_http_info(request)
 
-    def associate_health_check_with_http_info(self, request):
-        all_params = ['recordset_id', 'associate_health_check_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _associate_health_check_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1197,14 +1107,10 @@ class DnsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.BatchDeleteRecordSetWithLineRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.BatchDeleteRecordSetWithLineResponse`
         """
-        return self.batch_delete_record_set_with_line_with_http_info(request)
+        return self._batch_delete_record_set_with_line_with_http_info(request)
 
-    def batch_delete_record_set_with_line_with_http_info(self, request):
-        all_params = ['zone_id', 'batch_delete_r_set_with_line_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_delete_record_set_with_line_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1261,14 +1167,10 @@ class DnsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.BatchUpdateRecordSetWithLineRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.BatchUpdateRecordSetWithLineResponse`
         """
-        return self.batch_update_record_set_with_line_with_http_info(request)
+        return self._batch_update_record_set_with_line_with_http_info(request)
 
-    def batch_update_record_set_with_line_with_http_info(self, request):
-        all_params = ['zone_id', 'batch_update_record_set_with_line_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_update_record_set_with_line_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1324,14 +1226,10 @@ class DnsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.CreateRecordSetRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.CreateRecordSetResponse`
         """
-        return self.create_record_set_with_http_info(request)
+        return self._create_record_set_with_http_info(request)
 
-    def create_record_set_with_http_info(self, request):
-        all_params = ['zone_id', 'create_record_set_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_record_set_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1387,14 +1285,10 @@ class DnsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.CreateRecordSetWithBatchLinesRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.CreateRecordSetWithBatchLinesResponse`
         """
-        return self.create_record_set_with_batch_lines_with_http_info(request)
+        return self._create_record_set_with_batch_lines_with_http_info(request)
 
-    def create_record_set_with_batch_lines_with_http_info(self, request):
-        all_params = ['zone_id', 'create_r_set_batch_lines_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_record_set_with_batch_lines_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1450,14 +1344,10 @@ class DnsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.CreateRecordSetWithLineRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.CreateRecordSetWithLineResponse`
         """
-        return self.create_record_set_with_line_with_http_info(request)
+        return self._create_record_set_with_line_with_http_info(request)
 
-    def create_record_set_with_line_with_http_info(self, request):
-        all_params = ['zone_id', 'create_record_set_with_line_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_record_set_with_line_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1513,14 +1403,10 @@ class DnsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.DeleteRecordSetRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.DeleteRecordSetResponse`
         """
-        return self.delete_record_set_with_http_info(request)
+        return self._delete_record_set_with_http_info(request)
 
-    def delete_record_set_with_http_info(self, request):
-        all_params = ['zone_id', 'recordset_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_record_set_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1576,14 +1462,10 @@ class DnsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.DeleteRecordSetsRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.DeleteRecordSetsResponse`
         """
-        return self.delete_record_sets_with_http_info(request)
+        return self._delete_record_sets_with_http_info(request)
 
-    def delete_record_sets_with_http_info(self, request):
-        all_params = ['zone_id', 'recordset_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_record_sets_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1639,14 +1521,10 @@ class DnsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.DisassociateHealthCheckRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.DisassociateHealthCheckResponse`
         """
-        return self.disassociate_health_check_with_http_info(request)
+        return self._disassociate_health_check_with_http_info(request)
 
-    def disassociate_health_check_with_http_info(self, request):
-        all_params = ['recordset_id', 'associate_health_check_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _disassociate_health_check_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1702,14 +1580,10 @@ class DnsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.ListRecordSetsRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.ListRecordSetsResponse`
         """
-        return self.list_record_sets_with_http_info(request)
+        return self._list_record_sets_with_http_info(request)
 
-    def list_record_sets_with_http_info(self, request):
-        all_params = ['zone_type', 'marker', 'limit', 'offset', 'tags', 'status', 'type', 'name', 'id', 'records', 'sort_key', 'sort_dir']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_record_sets_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1785,14 +1659,10 @@ class DnsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.ListRecordSetsByZoneRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.ListRecordSetsByZoneResponse`
         """
-        return self.list_record_sets_by_zone_with_http_info(request)
+        return self._list_record_sets_by_zone_with_http_info(request)
 
-    def list_record_sets_by_zone_with_http_info(self, request):
-        all_params = ['zone_id', 'marker', 'limit', 'offset', 'tags', 'status', 'type', 'name', 'id', 'sort_key', 'sort_dir']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_record_sets_by_zone_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1866,14 +1736,10 @@ class DnsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.ListRecordSetsWithLineRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.ListRecordSetsWithLineResponse`
         """
-        return self.list_record_sets_with_line_with_http_info(request)
+        return self._list_record_sets_with_line_with_http_info(request)
 
-    def list_record_sets_with_line_with_http_info(self, request):
-        all_params = ['zone_type', 'marker', 'limit', 'offset', 'line_id', 'tags', 'status', 'type', 'name', 'id', 'records', 'sort_key', 'sort_dir', 'health_check_id', 'search_mode']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_record_sets_with_line_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1955,14 +1821,10 @@ class DnsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.SetRecordSetsStatusRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.SetRecordSetsStatusResponse`
         """
-        return self.set_record_sets_status_with_http_info(request)
+        return self._set_record_sets_status_with_http_info(request)
 
-    def set_record_sets_status_with_http_info(self, request):
-        all_params = ['recordset_id', 'set_record_sets_status_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _set_record_sets_status_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2018,14 +1880,10 @@ class DnsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.ShowRecordSetRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.ShowRecordSetResponse`
         """
-        return self.show_record_set_with_http_info(request)
+        return self._show_record_set_with_http_info(request)
 
-    def show_record_set_with_http_info(self, request):
-        all_params = ['zone_id', 'recordset_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_record_set_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2081,14 +1939,10 @@ class DnsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.ShowRecordSetByZoneRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.ShowRecordSetByZoneResponse`
         """
-        return self.show_record_set_by_zone_with_http_info(request)
+        return self._show_record_set_by_zone_with_http_info(request)
 
-    def show_record_set_by_zone_with_http_info(self, request):
-        all_params = ['zone_id', 'marker', 'limit', 'offset', 'line_id', 'tags', 'status', 'type', 'name', 'id', 'sort_key', 'sort_dir', 'search_mode']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_record_set_by_zone_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2166,14 +2020,10 @@ class DnsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.ShowRecordSetWithLineRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.ShowRecordSetWithLineResponse`
         """
-        return self.show_record_set_with_line_with_http_info(request)
+        return self._show_record_set_with_line_with_http_info(request)
 
-    def show_record_set_with_line_with_http_info(self, request):
-        all_params = ['zone_id', 'recordset_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_record_set_with_line_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2229,14 +2079,10 @@ class DnsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.UpdateRecordSetRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.UpdateRecordSetResponse`
         """
-        return self.update_record_set_with_http_info(request)
+        return self._update_record_set_with_http_info(request)
 
-    def update_record_set_with_http_info(self, request):
-        all_params = ['zone_id', 'recordset_id', 'update_record_set_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_record_set_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2294,14 +2140,10 @@ class DnsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.UpdateRecordSetsRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.UpdateRecordSetsResponse`
         """
-        return self.update_record_sets_with_http_info(request)
+        return self._update_record_sets_with_http_info(request)
 
-    def update_record_sets_with_http_info(self, request):
-        all_params = ['zone_id', 'recordset_id', 'update_record_sets_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_record_sets_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2359,14 +2201,10 @@ class DnsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.BatchCreateTagRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.BatchCreateTagResponse`
         """
-        return self.batch_create_tag_with_http_info(request)
+        return self._batch_create_tag_with_http_info(request)
 
-    def batch_create_tag_with_http_info(self, request):
-        all_params = ['resource_type', 'resource_id', 'batch_hand_tags']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_create_tag_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2424,14 +2262,10 @@ class DnsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.CreateTagRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.CreateTagResponse`
         """
-        return self.create_tag_with_http_info(request)
+        return self._create_tag_with_http_info(request)
 
-    def create_tag_with_http_info(self, request):
-        all_params = ['resource_type', 'resource_id', 'create_tag_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_tag_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2489,14 +2323,10 @@ class DnsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.DeleteTagRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.DeleteTagResponse`
         """
-        return self.delete_tag_with_http_info(request)
+        return self._delete_tag_with_http_info(request)
 
-    def delete_tag_with_http_info(self, request):
-        all_params = ['resource_type', 'resource_id', 'key']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_tag_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2554,14 +2384,10 @@ class DnsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.ListTagRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.ListTagResponse`
         """
-        return self.list_tag_with_http_info(request)
+        return self._list_tag_with_http_info(request)
 
-    def list_tag_with_http_info(self, request):
-        all_params = ['resource_type', 'list_tag_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_tag_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2617,14 +2443,10 @@ class DnsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.ListTagsRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.ListTagsResponse`
         """
-        return self.list_tags_with_http_info(request)
+        return self._list_tags_with_http_info(request)
 
-    def list_tags_with_http_info(self, request):
-        all_params = ['resource_type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2678,14 +2500,10 @@ class DnsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.ShowResourceTagRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.ShowResourceTagResponse`
         """
-        return self.show_resource_tag_with_http_info(request)
+        return self._show_resource_tag_with_http_info(request)
 
-    def show_resource_tag_with_http_info(self, request):
-        all_params = ['resource_type', 'resource_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_resource_tag_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2741,14 +2559,10 @@ class DnsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.AssociateRouterRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.AssociateRouterResponse`
         """
-        return self.associate_router_with_http_info(request)
+        return self._associate_router_with_http_info(request)
 
-    def associate_router_with_http_info(self, request):
-        all_params = ['zone_id', 'associate_router_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _associate_router_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2804,14 +2618,10 @@ class DnsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.CreatePrivateZoneRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.CreatePrivateZoneResponse`
         """
-        return self.create_private_zone_with_http_info(request)
+        return self._create_private_zone_with_http_info(request)
 
-    def create_private_zone_with_http_info(self, request):
-        all_params = ['create_private_zone_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_private_zone_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2865,14 +2675,10 @@ class DnsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.CreatePublicZoneRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.CreatePublicZoneResponse`
         """
-        return self.create_public_zone_with_http_info(request)
+        return self._create_public_zone_with_http_info(request)
 
-    def create_public_zone_with_http_info(self, request):
-        all_params = ['create_public_zone']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_public_zone_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2926,14 +2732,10 @@ class DnsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.DeletePrivateZoneRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.DeletePrivateZoneResponse`
         """
-        return self.delete_private_zone_with_http_info(request)
+        return self._delete_private_zone_with_http_info(request)
 
-    def delete_private_zone_with_http_info(self, request):
-        all_params = ['zone_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_private_zone_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2987,14 +2789,10 @@ class DnsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.DeletePublicZoneRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.DeletePublicZoneResponse`
         """
-        return self.delete_public_zone_with_http_info(request)
+        return self._delete_public_zone_with_http_info(request)
 
-    def delete_public_zone_with_http_info(self, request):
-        all_params = ['zone_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_public_zone_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3048,14 +2846,10 @@ class DnsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.DisassociateRouterRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.DisassociateRouterResponse`
         """
-        return self.disassociate_router_with_http_info(request)
+        return self._disassociate_router_with_http_info(request)
 
-    def disassociate_router_with_http_info(self, request):
-        all_params = ['zone_id', 'disassociaterouter_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _disassociate_router_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3111,14 +2905,10 @@ class DnsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.ListPrivateZonesRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.ListPrivateZonesResponse`
         """
-        return self.list_private_zones_with_http_info(request)
+        return self._list_private_zones_with_http_info(request)
 
-    def list_private_zones_with_http_info(self, request):
-        all_params = ['type', 'limit', 'marker', 'offset', 'tags', 'name', 'status', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_private_zones_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3186,14 +2976,10 @@ class DnsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.ListPublicZonesRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.ListPublicZonesResponse`
         """
-        return self.list_public_zones_with_http_info(request)
+        return self._list_public_zones_with_http_info(request)
 
-    def list_public_zones_with_http_info(self, request):
-        all_params = ['type', 'limit', 'marker', 'offset', 'tags', 'name', 'status', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_public_zones_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3261,14 +3047,10 @@ class DnsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.ShowPrivateZoneRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.ShowPrivateZoneResponse`
         """
-        return self.show_private_zone_with_http_info(request)
+        return self._show_private_zone_with_http_info(request)
 
-    def show_private_zone_with_http_info(self, request):
-        all_params = ['zone_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_private_zone_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3322,14 +3104,10 @@ class DnsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.ShowPrivateZoneNameServerRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.ShowPrivateZoneNameServerResponse`
         """
-        return self.show_private_zone_name_server_with_http_info(request)
+        return self._show_private_zone_name_server_with_http_info(request)
 
-    def show_private_zone_name_server_with_http_info(self, request):
-        all_params = ['zone_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_private_zone_name_server_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3383,14 +3161,10 @@ class DnsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.ShowPublicZoneRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.ShowPublicZoneResponse`
         """
-        return self.show_public_zone_with_http_info(request)
+        return self._show_public_zone_with_http_info(request)
 
-    def show_public_zone_with_http_info(self, request):
-        all_params = ['zone_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_public_zone_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3444,14 +3218,10 @@ class DnsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.ShowPublicZoneNameServerRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.ShowPublicZoneNameServerResponse`
         """
-        return self.show_public_zone_name_server_with_http_info(request)
+        return self._show_public_zone_name_server_with_http_info(request)
 
-    def show_public_zone_name_server_with_http_info(self, request):
-        all_params = ['zone_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_public_zone_name_server_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3505,14 +3275,10 @@ class DnsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.UpdatePrivateZoneRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.UpdatePrivateZoneResponse`
         """
-        return self.update_private_zone_with_http_info(request)
+        return self._update_private_zone_with_http_info(request)
 
-    def update_private_zone_with_http_info(self, request):
-        all_params = ['zone_id', 'update_private_zone_info_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_private_zone_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3568,14 +3334,10 @@ class DnsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.UpdatePublicZoneRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.UpdatePublicZoneResponse`
         """
-        return self.update_public_zone_with_http_info(request)
+        return self._update_public_zone_with_http_info(request)
 
-    def update_public_zone_with_http_info(self, request):
-        all_params = ['zone_id', 'update_public_zone_info']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_public_zone_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3631,14 +3393,10 @@ class DnsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.UpdatePublicZoneStatusRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.UpdatePublicZoneStatusResponse`
         """
-        return self.update_public_zone_status_with_http_info(request)
+        return self._update_public_zone_status_with_http_info(request)
 
-    def update_public_zone_status_with_http_info(self, request):
-        all_params = ['zone_id', 'update_public_zone_status']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_public_zone_status_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

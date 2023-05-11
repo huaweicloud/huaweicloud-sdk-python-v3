@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class DliClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(DliClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkdli.v1.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -53,14 +35,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.CreateJobTemplatesRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.CreateJobTemplatesResponse`
         """
-        return self.create_job_templates_with_http_info(request)
+        return self._create_job_templates_with_http_info(request)
 
-    def create_job_templates_with_http_info(self, request):
-        all_params = ['body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_job_templates_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -113,14 +91,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.CreateSqlTemplatesRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.CreateSqlTemplatesResponse`
         """
-        return self.create_sql_templates_with_http_info(request)
+        return self._create_sql_templates_with_http_info(request)
 
-    def create_sql_templates_with_http_info(self, request):
-        all_params = ['body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_sql_templates_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -173,14 +147,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.DeleteSqlTemplatesRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.DeleteSqlTemplatesResponse`
         """
-        return self.delete_sql_templates_with_http_info(request)
+        return self._delete_sql_templates_with_http_info(request)
 
-    def delete_sql_templates_with_http_info(self, request):
-        all_params = ['body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_sql_templates_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -233,14 +203,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ListJobTemplatesRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ListJobTemplatesResponse`
         """
-        return self.list_job_templates_with_http_info(request)
+        return self._list_job_templates_with_http_info(request)
 
-    def list_job_templates_with_http_info(self, request):
-        all_params = ['type', 'keyword', 'page_size', 'current_page']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_job_templates_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -299,14 +265,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ShowJobTemplateRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ShowJobTemplateResponse`
         """
-        return self.show_job_template_with_http_info(request)
+        return self._show_job_template_with_http_info(request)
 
-    def show_job_template_with_http_info(self, request):
-        all_params = ['template_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_job_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -359,14 +321,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ShowSqlSampleTemplatesRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ShowSqlSampleTemplatesResponse`
         """
-        return self.show_sql_sample_templates_with_http_info(request)
+        return self._show_sql_sample_templates_with_http_info(request)
 
-    def show_sql_sample_templates_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_sql_sample_templates_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -417,14 +375,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ShowSqlTemplatesRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ShowSqlTemplatesResponse`
         """
-        return self.show_sql_templates_with_http_info(request)
+        return self._show_sql_templates_with_http_info(request)
 
-    def show_sql_templates_with_http_info(self, request):
-        all_params = ['keyword']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_sql_templates_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -477,14 +431,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.UpdateJobTemplatesRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.UpdateJobTemplatesResponse`
         """
-        return self.update_job_templates_with_http_info(request)
+        return self._update_job_templates_with_http_info(request)
 
-    def update_job_templates_with_http_info(self, request):
-        all_params = ['template_id', 'body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_job_templates_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -539,14 +489,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.UpdateSqlTemplatesRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.UpdateSqlTemplatesResponse`
         """
-        return self.update_sql_templates_with_http_info(request)
+        return self._update_sql_templates_with_http_info(request)
 
-    def update_sql_templates_with_http_info(self, request):
-        all_params = ['sql_id', 'body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_sql_templates_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -601,14 +547,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.AssociateConnectionQueueRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.AssociateConnectionQueueResponse`
         """
-        return self.associate_connection_queue_with_http_info(request)
+        return self._associate_connection_queue_with_http_info(request)
 
-    def associate_connection_queue_with_http_info(self, request):
-        all_params = ['connection_id', 'body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _associate_connection_queue_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -663,14 +605,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.AssociateQueueToElasticResourcePoolRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.AssociateQueueToElasticResourcePoolResponse`
         """
-        return self.associate_queue_to_elastic_resource_pool_with_http_info(request)
+        return self._associate_queue_to_elastic_resource_pool_with_http_info(request)
 
-    def associate_queue_to_elastic_resource_pool_with_http_info(self, request):
-        all_params = ['elastic_resource_pool_name', 'body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _associate_queue_to_elastic_resource_pool_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -725,14 +663,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.AuthorizeResourceRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.AuthorizeResourceResponse`
         """
-        return self.authorize_resource_with_http_info(request)
+        return self._authorize_resource_with_http_info(request)
 
-    def authorize_resource_with_http_info(self, request):
-        all_params = ['body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _authorize_resource_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -785,14 +719,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.BatchDeleteQueuePlansRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.BatchDeleteQueuePlansResponse`
         """
-        return self.batch_delete_queue_plans_with_http_info(request)
+        return self._batch_delete_queue_plans_with_http_info(request)
 
-    def batch_delete_queue_plans_with_http_info(self, request):
-        all_params = ['queue_name', 'body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_delete_queue_plans_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -849,14 +779,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ChangeAuthorizationRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ChangeAuthorizationResponse`
         """
-        return self.change_authorization_with_http_info(request)
+        return self._change_authorization_with_http_info(request)
 
-    def change_authorization_with_http_info(self, request):
-        all_params = ['body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _change_authorization_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -909,14 +835,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ChangeQueuePlanRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ChangeQueuePlanResponse`
         """
-        return self.change_queue_plan_with_http_info(request)
+        return self._change_queue_plan_with_http_info(request)
 
-    def change_queue_plan_with_http_info(self, request):
-        all_params = ['plan_id', 'queue_name', 'body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _change_queue_plan_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -973,14 +895,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.CheckConnectionRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.CheckConnectionResponse`
         """
-        return self.check_connection_with_http_info(request)
+        return self._check_connection_with_http_info(request)
 
-    def check_connection_with_http_info(self, request):
-        all_params = ['queue_name', 'body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _check_connection_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1035,14 +953,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.CreateAuthInfoRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.CreateAuthInfoResponse`
         """
-        return self.create_auth_info_with_http_info(request)
+        return self._create_auth_info_with_http_info(request)
 
-    def create_auth_info_with_http_info(self, request):
-        all_params = ['body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_auth_info_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1098,14 +1012,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.CreateDatasourceConnectionRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.CreateDatasourceConnectionResponse`
         """
-        return self.create_datasource_connection_with_http_info(request)
+        return self._create_datasource_connection_with_http_info(request)
 
-    def create_datasource_connection_with_http_info(self, request):
-        all_params = ['body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_datasource_connection_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1158,14 +1068,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.CreateDliAgencyRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.CreateDliAgencyResponse`
         """
-        return self.create_dli_agency_with_http_info(request)
+        return self._create_dli_agency_with_http_info(request)
 
-    def create_dli_agency_with_http_info(self, request):
-        all_params = ['body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_dli_agency_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1218,14 +1124,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.CreateElasticResourcePoolRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.CreateElasticResourcePoolResponse`
         """
-        return self.create_elastic_resource_pool_with_http_info(request)
+        return self._create_elastic_resource_pool_with_http_info(request)
 
-    def create_elastic_resource_pool_with_http_info(self, request):
-        all_params = ['body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_elastic_resource_pool_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1278,14 +1180,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.CreateEnhancedConnectionRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.CreateEnhancedConnectionResponse`
         """
-        return self.create_enhanced_connection_with_http_info(request)
+        return self._create_enhanced_connection_with_http_info(request)
 
-    def create_enhanced_connection_with_http_info(self, request):
-        all_params = ['body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_enhanced_connection_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1338,14 +1236,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.CreateEnhancedConnectionRoutesRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.CreateEnhancedConnectionRoutesResponse`
         """
-        return self.create_enhanced_connection_routes_with_http_info(request)
+        return self._create_enhanced_connection_routes_with_http_info(request)
 
-    def create_enhanced_connection_routes_with_http_info(self, request):
-        all_params = ['connection_id', 'body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_enhanced_connection_routes_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1400,14 +1294,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.CreateGlobalValueRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.CreateGlobalValueResponse`
         """
-        return self.create_global_value_with_http_info(request)
+        return self._create_global_value_with_http_info(request)
 
-    def create_global_value_with_http_info(self, request):
-        all_params = ['body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_global_value_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1460,14 +1350,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.CreateQueueRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.CreateQueueResponse`
         """
-        return self.create_queue_with_http_info(request)
+        return self._create_queue_with_http_info(request)
 
-    def create_queue_with_http_info(self, request):
-        all_params = ['body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_queue_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1520,14 +1406,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.CreateQueuePlanRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.CreateQueuePlanResponse`
         """
-        return self.create_queue_plan_with_http_info(request)
+        return self._create_queue_plan_with_http_info(request)
 
-    def create_queue_plan_with_http_info(self, request):
-        all_params = ['queue_name', 'body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_queue_plan_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1582,14 +1464,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.DeleteAuthInfoRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.DeleteAuthInfoResponse`
         """
-        return self.delete_auth_info_with_http_info(request)
+        return self._delete_auth_info_with_http_info(request)
 
-    def delete_auth_info_with_http_info(self, request):
-        all_params = ['auth_info_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_auth_info_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1644,14 +1522,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.DeleteDatasourceConnectionRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.DeleteDatasourceConnectionResponse`
         """
-        return self.delete_datasource_connection_with_http_info(request)
+        return self._delete_datasource_connection_with_http_info(request)
 
-    def delete_datasource_connection_with_http_info(self, request):
-        all_params = ['connection_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_datasource_connection_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1704,14 +1578,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.DeleteElasticResourcePoolRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.DeleteElasticResourcePoolResponse`
         """
-        return self.delete_elastic_resource_pool_with_http_info(request)
+        return self._delete_elastic_resource_pool_with_http_info(request)
 
-    def delete_elastic_resource_pool_with_http_info(self, request):
-        all_params = ['elastic_resource_pool_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_elastic_resource_pool_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1764,14 +1634,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.DeleteEnhancedConnectionRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.DeleteEnhancedConnectionResponse`
         """
-        return self.delete_enhanced_connection_with_http_info(request)
+        return self._delete_enhanced_connection_with_http_info(request)
 
-    def delete_enhanced_connection_with_http_info(self, request):
-        all_params = ['connection_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_enhanced_connection_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1824,14 +1690,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.DeleteEnhancedConnectionRoutesRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.DeleteEnhancedConnectionRoutesResponse`
         """
-        return self.delete_enhanced_connection_routes_with_http_info(request)
+        return self._delete_enhanced_connection_routes_with_http_info(request)
 
-    def delete_enhanced_connection_routes_with_http_info(self, request):
-        all_params = ['connection_id', 'name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_enhanced_connection_routes_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1886,14 +1748,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.DeleteGlobalValueRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.DeleteGlobalValueResponse`
         """
-        return self.delete_global_value_with_http_info(request)
+        return self._delete_global_value_with_http_info(request)
 
-    def delete_global_value_with_http_info(self, request):
-        all_params = ['var_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_global_value_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1948,14 +1806,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.DeleteQueueRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.DeleteQueueResponse`
         """
-        return self.delete_queue_with_http_info(request)
+        return self._delete_queue_with_http_info(request)
 
-    def delete_queue_with_http_info(self, request):
-        all_params = ['queue_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_queue_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2008,14 +1862,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.DeleteQueuePlanRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.DeleteQueuePlanResponse`
         """
-        return self.delete_queue_plan_with_http_info(request)
+        return self._delete_queue_plan_with_http_info(request)
 
-    def delete_queue_plan_with_http_info(self, request):
-        all_params = ['plan_id', 'queue_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_queue_plan_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2070,14 +1920,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.DeleteResourceRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.DeleteResourceResponse`
         """
-        return self.delete_resource_with_http_info(request)
+        return self._delete_resource_with_http_info(request)
 
-    def delete_resource_with_http_info(self, request):
-        all_params = ['resource_name', 'group']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_resource_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2132,14 +1978,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.DisassociateConnectionQueueRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.DisassociateConnectionQueueResponse`
         """
-        return self.disassociate_connection_queue_with_http_info(request)
+        return self._disassociate_connection_queue_with_http_info(request)
 
-    def disassociate_connection_queue_with_http_info(self, request):
-        all_params = ['connection_id', 'body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _disassociate_connection_queue_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2194,14 +2036,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ListAuthInfoRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ListAuthInfoResponse`
         """
-        return self.list_auth_info_with_http_info(request)
+        return self._list_auth_info_with_http_info(request)
 
-    def list_auth_info_with_http_info(self, request):
-        all_params = ['auth_info_name', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_auth_info_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2258,14 +2096,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ListDatabaseUsersRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ListDatabaseUsersResponse`
         """
-        return self.list_database_users_with_http_info(request)
+        return self._list_database_users_with_http_info(request)
 
-    def list_database_users_with_http_info(self, request):
-        all_params = ['database_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_database_users_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2318,14 +2152,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ListDatasourceConnectionsRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ListDatasourceConnectionsResponse`
         """
-        return self.list_datasource_connections_with_http_info(request)
+        return self._list_datasource_connections_with_http_info(request)
 
-    def list_datasource_connections_with_http_info(self, request):
-        all_params = ['tags']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_datasource_connections_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2378,14 +2208,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ListElasticResourcePoolQueuesRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ListElasticResourcePoolQueuesResponse`
         """
-        return self.list_elastic_resource_pool_queues_with_http_info(request)
+        return self._list_elastic_resource_pool_queues_with_http_info(request)
 
-    def list_elastic_resource_pool_queues_with_http_info(self, request):
-        all_params = ['elastic_resource_pool_name', 'limit', 'offset', 'queue_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_elastic_resource_pool_queues_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2444,14 +2270,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ListElasticResourcePoolScaleRecordsRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ListElasticResourcePoolScaleRecordsResponse`
         """
-        return self.list_elastic_resource_pool_scale_records_with_http_info(request)
+        return self._list_elastic_resource_pool_scale_records_with_http_info(request)
 
-    def list_elastic_resource_pool_scale_records_with_http_info(self, request):
-        all_params = ['elastic_resource_pool_name', 'start_time', 'end_time', 'status', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_elastic_resource_pool_scale_records_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2514,14 +2336,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ListElasticResourcePoolsRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ListElasticResourcePoolsResponse`
         """
-        return self.list_elastic_resource_pools_with_http_info(request)
+        return self._list_elastic_resource_pools_with_http_info(request)
 
-    def list_elastic_resource_pools_with_http_info(self, request):
-        all_params = ['limit', 'name', 'offset', 'status', 'tags']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_elastic_resource_pools_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2582,14 +2400,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ListEnhancedConnectionsRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ListEnhancedConnectionsResponse`
         """
-        return self.list_enhanced_connections_with_http_info(request)
+        return self._list_enhanced_connections_with_http_info(request)
 
-    def list_enhanced_connections_with_http_info(self, request):
-        all_params = ['limit', 'name', 'offset', 'status', 'tags']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_enhanced_connections_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2650,14 +2464,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ListGlobalValuesRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ListGlobalValuesResponse`
         """
-        return self.list_global_values_with_http_info(request)
+        return self._list_global_values_with_http_info(request)
 
-    def list_global_values_with_http_info(self, request):
-        all_params = ['limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_global_values_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2712,14 +2522,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ListQueuePlansRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ListQueuePlansResponse`
         """
-        return self.list_queue_plans_with_http_info(request)
+        return self._list_queue_plans_with_http_info(request)
 
-    def list_queue_plans_with_http_info(self, request):
-        all_params = ['queue_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_queue_plans_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2772,14 +2578,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ListQueueUsersRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ListQueueUsersResponse`
         """
-        return self.list_queue_users_with_http_info(request)
+        return self._list_queue_users_with_http_info(request)
 
-    def list_queue_users_with_http_info(self, request):
-        all_params = ['queue_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_queue_users_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2832,14 +2634,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ListQueuesRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ListQueuesResponse`
         """
-        return self.list_queues_with_http_info(request)
+        return self._list_queues_with_http_info(request)
 
-    def list_queues_with_http_info(self, request):
-        all_params = ['queue_type', 'tags', 'with_charge_info', 'with_priv']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_queues_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2898,14 +2696,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ListResourcesRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ListResourcesResponse`
         """
-        return self.list_resources_with_http_info(request)
+        return self._list_resources_with_http_info(request)
 
-    def list_resources_with_http_info(self, request):
-        all_params = ['kind', 'tags']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_resources_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2960,14 +2754,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ListTablePrivilegesRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ListTablePrivilegesResponse`
         """
-        return self.list_table_privileges_with_http_info(request)
+        return self._list_table_privileges_with_http_info(request)
 
-    def list_table_privileges_with_http_info(self, request):
-        all_params = ['database_name', 'table_name', 'user_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_table_privileges_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3024,14 +2814,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ListTableUsersRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ListTableUsersResponse`
         """
-        return self.list_table_users_with_http_info(request)
+        return self._list_table_users_with_http_info(request)
 
-    def list_table_users_with_http_info(self, request):
-        all_params = ['database_name', 'table_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_table_users_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3086,14 +2872,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.RegisterAuthorizedQueueRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.RegisterAuthorizedQueueResponse`
         """
-        return self.register_authorized_queue_with_http_info(request)
+        return self._register_authorized_queue_with_http_info(request)
 
-    def register_authorized_queue_with_http_info(self, request):
-        all_params = ['body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _register_authorized_queue_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3146,14 +2928,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.RunQueueActionRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.RunQueueActionResponse`
         """
-        return self.run_queue_action_with_http_info(request)
+        return self._run_queue_action_with_http_info(request)
 
-    def run_queue_action_with_http_info(self, request):
-        all_params = ['queue_name', 'body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _run_queue_action_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3208,14 +2986,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ShowDatasourceConnectionRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ShowDatasourceConnectionResponse`
         """
-        return self.show_datasource_connection_with_http_info(request)
+        return self._show_datasource_connection_with_http_info(request)
 
-    def show_datasource_connection_with_http_info(self, request):
-        all_params = ['connection_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_datasource_connection_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3268,14 +3042,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ShowDliAgencyRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ShowDliAgencyResponse`
         """
-        return self.show_dli_agency_with_http_info(request)
+        return self._show_dli_agency_with_http_info(request)
 
-    def show_dli_agency_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_dli_agency_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3326,14 +3096,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ShowEnhancedConnectionRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ShowEnhancedConnectionResponse`
         """
-        return self.show_enhanced_connection_with_http_info(request)
+        return self._show_enhanced_connection_with_http_info(request)
 
-    def show_enhanced_connection_with_http_info(self, request):
-        all_params = ['connection_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_enhanced_connection_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3386,14 +3152,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ShowEnhancedPrivilegeRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ShowEnhancedPrivilegeResponse`
         """
-        return self.show_enhanced_privilege_with_http_info(request)
+        return self._show_enhanced_privilege_with_http_info(request)
 
-    def show_enhanced_privilege_with_http_info(self, request):
-        all_params = ['connection_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_enhanced_privilege_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3446,14 +3208,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ShowNodeConnectivityRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ShowNodeConnectivityResponse`
         """
-        return self.show_node_connectivity_with_http_info(request)
+        return self._show_node_connectivity_with_http_info(request)
 
-    def show_node_connectivity_with_http_info(self, request):
-        all_params = ['queue_name', 'task_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_node_connectivity_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3508,14 +3266,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ShowObjectUserRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ShowObjectUserResponse`
         """
-        return self.show_object_user_with_http_info(request)
+        return self._show_object_user_with_http_info(request)
 
-    def show_object_user_with_http_info(self, request):
-        all_params = ['object']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_object_user_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3568,14 +3322,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ShowQueueDetailRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ShowQueueDetailResponse`
         """
-        return self.show_queue_detail_with_http_info(request)
+        return self._show_queue_detail_with_http_info(request)
 
-    def show_queue_detail_with_http_info(self, request):
-        all_params = ['queue_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_queue_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3628,14 +3378,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ShowResourceInfoRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ShowResourceInfoResponse`
         """
-        return self.show_resource_info_with_http_info(request)
+        return self._show_resource_info_with_http_info(request)
 
-    def show_resource_info_with_http_info(self, request):
-        all_params = ['resource_name', 'group']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_resource_info_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3690,14 +3436,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.UpdateAuthInfoRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.UpdateAuthInfoResponse`
         """
-        return self.update_auth_info_with_http_info(request)
+        return self._update_auth_info_with_http_info(request)
 
-    def update_auth_info_with_http_info(self, request):
-        all_params = ['body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_auth_info_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3750,14 +3492,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.UpdateElasticResourcePoolRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.UpdateElasticResourcePoolResponse`
         """
-        return self.update_elastic_resource_pool_with_http_info(request)
+        return self._update_elastic_resource_pool_with_http_info(request)
 
-    def update_elastic_resource_pool_with_http_info(self, request):
-        all_params = ['elastic_resource_pool_name', 'body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_elastic_resource_pool_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3812,14 +3550,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.UpdateElasticResourcePoolQueueInfoRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.UpdateElasticResourcePoolQueueInfoResponse`
         """
-        return self.update_elastic_resource_pool_queue_info_with_http_info(request)
+        return self._update_elastic_resource_pool_queue_info_with_http_info(request)
 
-    def update_elastic_resource_pool_queue_info_with_http_info(self, request):
-        all_params = ['elastic_resource_pool_name', 'queue_name', 'body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_elastic_resource_pool_queue_info_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3876,14 +3610,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.UpdateGlobalValueRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.UpdateGlobalValueResponse`
         """
-        return self.update_global_value_with_http_info(request)
+        return self._update_global_value_with_http_info(request)
 
-    def update_global_value_with_http_info(self, request):
-        all_params = ['var_name', 'body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_global_value_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3938,14 +3668,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.UpdateGroupOrResourceOwnerRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.UpdateGroupOrResourceOwnerResponse`
         """
-        return self.update_group_or_resource_owner_with_http_info(request)
+        return self._update_group_or_resource_owner_with_http_info(request)
 
-    def update_group_or_resource_owner_with_http_info(self, request):
-        all_params = ['body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_group_or_resource_owner_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3998,14 +3724,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.UpdateHostMassageRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.UpdateHostMassageResponse`
         """
-        return self.update_host_massage_with_http_info(request)
+        return self._update_host_massage_with_http_info(request)
 
-    def update_host_massage_with_http_info(self, request):
-        all_params = ['connection_id', 'body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_host_massage_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4062,14 +3784,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.UpdateQueueCidrRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.UpdateQueueCidrResponse`
         """
-        return self.update_queue_cidr_with_http_info(request)
+        return self._update_queue_cidr_with_http_info(request)
 
-    def update_queue_cidr_with_http_info(self, request):
-        all_params = ['queue_name', 'body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_queue_cidr_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4125,14 +3843,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.UploadFilesRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.UploadFilesResponse`
         """
-        return self.upload_files_with_http_info(request)
+        return self._upload_files_with_http_info(request)
 
-    def upload_files_with_http_info(self, request):
-        all_params = ['body', 'user_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _upload_files_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4188,14 +3902,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.UploadJarsRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.UploadJarsResponse`
         """
-        return self.upload_jars_with_http_info(request)
+        return self._upload_jars_with_http_info(request)
 
-    def upload_jars_with_http_info(self, request):
-        all_params = ['body', 'user_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _upload_jars_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4251,14 +3961,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.UploadPythonFilesRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.UploadPythonFilesResponse`
         """
-        return self.upload_python_files_with_http_info(request)
+        return self._upload_python_files_with_http_info(request)
 
-    def upload_python_files_with_http_info(self, request):
-        all_params = ['body', 'user_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _upload_python_files_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4313,14 +4019,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.UploadResourcesRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.UploadResourcesResponse`
         """
-        return self.upload_resources_with_http_info(request)
+        return self._upload_resources_with_http_info(request)
 
-    def upload_resources_with_http_info(self, request):
-        all_params = ['body', 'user_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _upload_resources_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4375,14 +4077,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.BatchDeleteFlinkJobsRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.BatchDeleteFlinkJobsResponse`
         """
-        return self.batch_delete_flink_jobs_with_http_info(request)
+        return self._batch_delete_flink_jobs_with_http_info(request)
 
-    def batch_delete_flink_jobs_with_http_info(self, request):
-        all_params = ['body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_delete_flink_jobs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4435,14 +4133,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.BatchRunFlinkJobsRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.BatchRunFlinkJobsResponse`
         """
-        return self.batch_run_flink_jobs_with_http_info(request)
+        return self._batch_run_flink_jobs_with_http_info(request)
 
-    def batch_run_flink_jobs_with_http_info(self, request):
-        all_params = ['body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_run_flink_jobs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4495,14 +4189,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ChangeFlinkJobStatusReportRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ChangeFlinkJobStatusReportResponse`
         """
-        return self.change_flink_job_status_report_with_http_info(request)
+        return self._change_flink_job_status_report_with_http_info(request)
 
-    def change_flink_job_status_report_with_http_info(self, request):
-        all_params = ['body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _change_flink_job_status_report_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4555,14 +4245,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.CreateFlinkJarRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.CreateFlinkJarResponse`
         """
-        return self.create_flink_jar_with_http_info(request)
+        return self._create_flink_jar_with_http_info(request)
 
-    def create_flink_jar_with_http_info(self, request):
-        all_params = ['body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_flink_jar_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4615,14 +4301,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.CreateFlinkSqlJobRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.CreateFlinkSqlJobResponse`
         """
-        return self.create_flink_sql_job_with_http_info(request)
+        return self._create_flink_sql_job_with_http_info(request)
 
-    def create_flink_sql_job_with_http_info(self, request):
-        all_params = ['body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_flink_sql_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4675,14 +4357,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.CreateFlinkTemplateRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.CreateFlinkTemplateResponse`
         """
-        return self.create_flink_template_with_http_info(request)
+        return self._create_flink_template_with_http_info(request)
 
-    def create_flink_template_with_http_info(self, request):
-        all_params = ['body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_flink_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4735,14 +4413,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.CreateIefMessageChannelRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.CreateIefMessageChannelResponse`
         """
-        return self.create_ief_message_channel_with_http_info(request)
+        return self._create_ief_message_channel_with_http_info(request)
 
-    def create_ief_message_channel_with_http_info(self, request):
-        all_params = ['body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_ief_message_channel_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4795,14 +4469,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.CreateIefSystemEventsRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.CreateIefSystemEventsResponse`
         """
-        return self.create_ief_system_events_with_http_info(request)
+        return self._create_ief_system_events_with_http_info(request)
 
-    def create_ief_system_events_with_http_info(self, request):
-        all_params = ['body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_ief_system_events_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4855,14 +4525,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.CreateStreamGraphRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.CreateStreamGraphResponse`
         """
-        return self.create_stream_graph_with_http_info(request)
+        return self._create_stream_graph_with_http_info(request)
 
-    def create_stream_graph_with_http_info(self, request):
-        all_params = ['job_id', 'body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_stream_graph_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4917,14 +4583,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.DeleteFlinkJobRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.DeleteFlinkJobResponse`
         """
-        return self.delete_flink_job_with_http_info(request)
+        return self._delete_flink_job_with_http_info(request)
 
-    def delete_flink_job_with_http_info(self, request):
-        all_params = ['job_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_flink_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4977,14 +4639,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.DeleteFlinkTemplateRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.DeleteFlinkTemplateResponse`
         """
-        return self.delete_flink_template_with_http_info(request)
+        return self._delete_flink_template_with_http_info(request)
 
-    def delete_flink_template_with_http_info(self, request):
-        all_params = ['template_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_flink_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5037,14 +4695,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ExportFlinkJobRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ExportFlinkJobResponse`
         """
-        return self.export_flink_job_with_http_info(request)
+        return self._export_flink_job_with_http_info(request)
 
-    def export_flink_job_with_http_info(self, request):
-        all_params = ['body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _export_flink_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5097,14 +4751,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ImportFlinkJobRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ImportFlinkJobResponse`
         """
-        return self.import_flink_job_with_http_info(request)
+        return self._import_flink_job_with_http_info(request)
 
-    def import_flink_job_with_http_info(self, request):
-        all_params = ['body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _import_flink_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5157,14 +4807,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ListFlinkJobsRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ListFlinkJobsResponse`
         """
-        return self.list_flink_jobs_with_http_info(request)
+        return self._list_flink_jobs_with_http_info(request)
 
-    def list_flink_jobs_with_http_info(self, request):
-        all_params = ['job_type', 'limit', 'name', 'offset', 'order', 'queue_name', 'root_job_id', 'show_detail', 'status', 'sys_enterprise_project_name', 'tags', 'user_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_flink_jobs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5239,14 +4885,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ListFlinkTemplatesRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ListFlinkTemplatesResponse`
         """
-        return self.list_flink_templates_with_http_info(request)
+        return self._list_flink_templates_with_http_info(request)
 
-    def list_flink_templates_with_http_info(self, request):
-        all_params = ['limit', 'name', 'offset', 'order', 'tags']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_flink_templates_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5307,14 +4949,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.RegisterBucketRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.RegisterBucketResponse`
         """
-        return self.register_bucket_with_http_info(request)
+        return self._register_bucket_with_http_info(request)
 
-    def register_bucket_with_http_info(self, request):
-        all_params = ['body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _register_bucket_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5367,14 +5005,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.RunIefJobActionCallBackRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.RunIefJobActionCallBackResponse`
         """
-        return self.run_ief_job_action_call_back_with_http_info(request)
+        return self._run_ief_job_action_call_back_with_http_info(request)
 
-    def run_ief_job_action_call_back_with_http_info(self, request):
-        all_params = ['body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _run_ief_job_action_call_back_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5427,14 +5061,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ShowFlinkExecuteGraphRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ShowFlinkExecuteGraphResponse`
         """
-        return self.show_flink_execute_graph_with_http_info(request)
+        return self._show_flink_execute_graph_with_http_info(request)
 
-    def show_flink_execute_graph_with_http_info(self, request):
-        all_params = ['job_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_flink_execute_graph_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5487,14 +5117,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ShowFlinkJobRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ShowFlinkJobResponse`
         """
-        return self.show_flink_job_with_http_info(request)
+        return self._show_flink_job_with_http_info(request)
 
-    def show_flink_job_with_http_info(self, request):
-        all_params = ['job_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_flink_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5547,14 +5173,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ShowFlinkMetricRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ShowFlinkMetricResponse`
         """
-        return self.show_flink_metric_with_http_info(request)
+        return self._show_flink_metric_with_http_info(request)
 
-    def show_flink_metric_with_http_info(self, request):
-        all_params = ['body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_flink_metric_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5607,14 +5229,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.StopFlinkJobsRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.StopFlinkJobsResponse`
         """
-        return self.stop_flink_jobs_with_http_info(request)
+        return self._stop_flink_jobs_with_http_info(request)
 
-    def stop_flink_jobs_with_http_info(self, request):
-        all_params = ['body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _stop_flink_jobs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5667,14 +5285,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.UpdateFlinkJarRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.UpdateFlinkJarResponse`
         """
-        return self.update_flink_jar_with_http_info(request)
+        return self._update_flink_jar_with_http_info(request)
 
-    def update_flink_jar_with_http_info(self, request):
-        all_params = ['job_id', 'body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_flink_jar_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5729,14 +5343,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.UpdateFlinkSqlRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.UpdateFlinkSqlResponse`
         """
-        return self.update_flink_sql_with_http_info(request)
+        return self._update_flink_sql_with_http_info(request)
 
-    def update_flink_sql_with_http_info(self, request):
-        all_params = ['job_id', 'body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_flink_sql_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5791,14 +5401,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.UpdateFlinkTemplateRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.UpdateFlinkTemplateResponse`
         """
-        return self.update_flink_template_with_http_info(request)
+        return self._update_flink_template_with_http_info(request)
 
-    def update_flink_template_with_http_info(self, request):
-        all_params = ['template_id', 'body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_flink_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5853,14 +5459,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.CancelSqlJobRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.CancelSqlJobResponse`
         """
-        return self.cancel_sql_job_with_http_info(request)
+        return self._cancel_sql_job_with_http_info(request)
 
-    def cancel_sql_job_with_http_info(self, request):
-        all_params = ['job_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _cancel_sql_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5913,14 +5515,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.CheckSqlRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.CheckSqlResponse`
         """
-        return self.check_sql_with_http_info(request)
+        return self._check_sql_with_http_info(request)
 
-    def check_sql_with_http_info(self, request):
-        all_params = ['body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _check_sql_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5973,14 +5571,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.CreateDatabaseRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.CreateDatabaseResponse`
         """
-        return self.create_database_with_http_info(request)
+        return self._create_database_with_http_info(request)
 
-    def create_database_with_http_info(self, request):
-        all_params = ['body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_database_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6035,14 +5629,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.CreateSqlJobRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.CreateSqlJobResponse`
         """
-        return self.create_sql_job_with_http_info(request)
+        return self._create_sql_job_with_http_info(request)
 
-    def create_sql_job_with_http_info(self, request):
-        all_params = ['body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_sql_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6095,14 +5685,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.CreateTableRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.CreateTableResponse`
         """
-        return self.create_table_with_http_info(request)
+        return self._create_table_with_http_info(request)
 
-    def create_table_with_http_info(self, request):
-        all_params = ['database_name', 'body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_table_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6157,14 +5743,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.DeleteDatabaseRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.DeleteDatabaseResponse`
         """
-        return self.delete_database_with_http_info(request)
+        return self._delete_database_with_http_info(request)
 
-    def delete_database_with_http_info(self, request):
-        all_params = ['database_name', '_async', 'cascade']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_database_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6221,14 +5803,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.DeleteTableRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.DeleteTableResponse`
         """
-        return self.delete_table_with_http_info(request)
+        return self._delete_table_with_http_info(request)
 
-    def delete_table_with_http_info(self, request):
-        all_params = ['database_name', 'table_name', '_async']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_table_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6285,14 +5863,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ExportSqlJobResultRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ExportSqlJobResultResponse`
         """
-        return self.export_sql_job_result_with_http_info(request)
+        return self._export_sql_job_result_with_http_info(request)
 
-    def export_sql_job_result_with_http_info(self, request):
-        all_params = ['job_id', 'body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _export_sql_job_result_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6347,14 +5921,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ExportTableRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ExportTableResponse`
         """
-        return self.export_table_with_http_info(request)
+        return self._export_table_with_http_info(request)
 
-    def export_table_with_http_info(self, request):
-        all_params = ['body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _export_table_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6407,14 +5977,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ImportTableRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ImportTableResponse`
         """
-        return self.import_table_with_http_info(request)
+        return self._import_table_with_http_info(request)
 
-    def import_table_with_http_info(self, request):
-        all_params = ['body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _import_table_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6467,14 +6033,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ListAllTablesRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ListAllTablesResponse`
         """
-        return self.list_all_tables_with_http_info(request)
+        return self._list_all_tables_with_http_info(request)
 
-    def list_all_tables_with_http_info(self, request):
-        all_params = ['database_name', 'current_page', 'keyword', 'page_size', 'table_type', 'with_detail', 'with_priv']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_all_tables_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6539,14 +6101,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ListDatabasesRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ListDatabasesResponse`
         """
-        return self.list_databases_with_http_info(request)
+        return self._list_databases_with_http_info(request)
 
-    def list_databases_with_http_info(self, request):
-        all_params = ['keyword', 'limit', 'offset', 'tags', 'with_priv']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_databases_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6607,14 +6165,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ListSqlJobsRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ListSqlJobsResponse`
         """
-        return self.list_sql_jobs_with_http_info(request)
+        return self._list_sql_jobs_with_http_info(request)
 
-    def list_sql_jobs_with_http_info(self, request):
-        all_params = ['current_page', 'db_name', 'end', 'engine_type', 'job_status', 'job_type', 'order', 'owner', 'page_size', 'queue_name', 'sql_pattern', 'start', 'table_name', 'tags']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_sql_jobs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6694,14 +6248,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.PreviewJobResultRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.PreviewJobResultResponse`
         """
-        return self.preview_job_result_with_http_info(request)
+        return self._preview_job_result_with_http_info(request)
 
-    def preview_job_result_with_http_info(self, request):
-        all_params = ['job_id', 'queue_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _preview_job_result_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6756,14 +6306,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ShowDescribeTableRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ShowDescribeTableResponse`
         """
-        return self.show_describe_table_with_http_info(request)
+        return self._show_describe_table_with_http_info(request)
 
-    def show_describe_table_with_http_info(self, request):
-        all_params = ['database_name', 'table_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_describe_table_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6818,14 +6364,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ShowJobProgressRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ShowJobProgressResponse`
         """
-        return self.show_job_progress_with_http_info(request)
+        return self._show_job_progress_with_http_info(request)
 
-    def show_job_progress_with_http_info(self, request):
-        all_params = ['job_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_job_progress_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6877,14 +6419,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ShowPartitionsRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ShowPartitionsResponse`
         """
-        return self.show_partitions_with_http_info(request)
+        return self._show_partitions_with_http_info(request)
 
-    def show_partitions_with_http_info(self, request):
-        all_params = ['database_name', 'table_name', 'limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_partitions_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6943,14 +6481,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ShowSqlJobDetailRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ShowSqlJobDetailResponse`
         """
-        return self.show_sql_job_detail_with_http_info(request)
+        return self._show_sql_job_detail_with_http_info(request)
 
-    def show_sql_job_detail_with_http_info(self, request):
-        all_params = ['job_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_sql_job_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7003,14 +6537,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ShowSqlJobStatusRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ShowSqlJobStatusResponse`
         """
-        return self.show_sql_job_status_with_http_info(request)
+        return self._show_sql_job_status_with_http_info(request)
 
-    def show_sql_job_status_with_http_info(self, request):
-        all_params = ['job_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_sql_job_status_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7063,14 +6593,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ShowTableContentRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ShowTableContentResponse`
         """
-        return self.show_table_content_with_http_info(request)
+        return self._show_table_content_with_http_info(request)
 
-    def show_table_content_with_http_info(self, request):
-        all_params = ['database_name', 'table_name', 'mode']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_table_content_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7127,14 +6653,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.UpdateDatabaseOwnerRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.UpdateDatabaseOwnerResponse`
         """
-        return self.update_database_owner_with_http_info(request)
+        return self._update_database_owner_with_http_info(request)
 
-    def update_database_owner_with_http_info(self, request):
-        all_params = ['database_name', 'body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_database_owner_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7189,14 +6711,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.UpdateTableOwnerRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.UpdateTableOwnerResponse`
         """
-        return self.update_table_owner_with_http_info(request)
+        return self._update_table_owner_with_http_info(request)
 
-    def update_table_owner_with_http_info(self, request):
-        all_params = ['database_name', 'table_name', 'body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_table_owner_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7253,14 +6771,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.CancelBatchJobRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.CancelBatchJobResponse`
         """
-        return self.cancel_batch_job_with_http_info(request)
+        return self._cancel_batch_job_with_http_info(request)
 
-    def cancel_batch_job_with_http_info(self, request):
-        all_params = ['batch_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _cancel_batch_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7313,14 +6827,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.CreateBatchJobRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.CreateBatchJobResponse`
         """
-        return self.create_batch_job_with_http_info(request)
+        return self._create_batch_job_with_http_info(request)
 
-    def create_batch_job_with_http_info(self, request):
-        all_params = ['body', 'user_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_batch_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7375,14 +6885,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ListBatchesRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ListBatchesResponse`
         """
-        return self.list_batches_with_http_info(request)
+        return self._list_batches_with_http_info(request)
 
-    def list_batches_with_http_info(self, request):
-        all_params = ['cluster_name', 'end', '_from', 'job_id', 'order', 'queue_name', 'size', 'start', 'state']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_batches_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7451,14 +6957,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ShowBatchInfoRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ShowBatchInfoResponse`
         """
-        return self.show_batch_info_with_http_info(request)
+        return self._show_batch_info_with_http_info(request)
 
-    def show_batch_info_with_http_info(self, request):
-        all_params = ['batch_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_batch_info_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7511,14 +7013,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ShowBatchLogRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ShowBatchLogResponse`
         """
-        return self.show_batch_log_with_http_info(request)
+        return self._show_batch_log_with_http_info(request)
 
-    def show_batch_log_with_http_info(self, request):
-        all_params = ['batch_id', '_from', 'index', 'size', 'type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_batch_log_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7579,14 +7077,10 @@ class DliClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ShowBatchStateRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ShowBatchStateResponse`
         """
-        return self.show_batch_state_with_http_info(request)
+        return self._show_batch_state_with_http_info(request)
 
-    def show_batch_state_with_http_info(self, request):
-        all_params = ['batch_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_batch_state_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

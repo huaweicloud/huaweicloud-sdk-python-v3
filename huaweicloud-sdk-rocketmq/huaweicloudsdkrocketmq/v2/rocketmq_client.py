@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class RocketMQClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(RocketMQClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkrocketmq.v2.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -53,14 +35,10 @@ class RocketMQClient(Client):
         :type request: :class:`huaweicloudsdkrocketmq.v2.BatchCreateOrDeleteRocketmqTagRequest`
         :rtype: :class:`huaweicloudsdkrocketmq.v2.BatchCreateOrDeleteRocketmqTagResponse`
         """
-        return self.batch_create_or_delete_rocketmq_tag_with_http_info(request)
+        return self._batch_create_or_delete_rocketmq_tag_with_http_info(request)
 
-    def batch_create_or_delete_rocketmq_tag_with_http_info(self, request):
-        all_params = ['instance_id', 'batch_create_or_delete_rocketmq_tag_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_create_or_delete_rocketmq_tag_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -115,14 +93,10 @@ class RocketMQClient(Client):
         :type request: :class:`huaweicloudsdkrocketmq.v2.BatchDeleteInstancesRequest`
         :rtype: :class:`huaweicloudsdkrocketmq.v2.BatchDeleteInstancesResponse`
         """
-        return self.batch_delete_instances_with_http_info(request)
+        return self._batch_delete_instances_with_http_info(request)
 
-    def batch_delete_instances_with_http_info(self, request):
-        all_params = ['batch_delete_instances_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_delete_instances_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -175,14 +149,10 @@ class RocketMQClient(Client):
         :type request: :class:`huaweicloudsdkrocketmq.v2.BatchUpdateConsumerGroupRequest`
         :rtype: :class:`huaweicloudsdkrocketmq.v2.BatchUpdateConsumerGroupResponse`
         """
-        return self.batch_update_consumer_group_with_http_info(request)
+        return self._batch_update_consumer_group_with_http_info(request)
 
-    def batch_update_consumer_group_with_http_info(self, request):
-        all_params = ['instance_id', 'batch_update_consumer_group_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_update_consumer_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -237,14 +207,10 @@ class RocketMQClient(Client):
         :type request: :class:`huaweicloudsdkrocketmq.v2.CreateConsumerGroupOrBatchDeleteConsumerGroupRequest`
         :rtype: :class:`huaweicloudsdkrocketmq.v2.CreateConsumerGroupOrBatchDeleteConsumerGroupResponse`
         """
-        return self.create_consumer_group_or_batch_delete_consumer_group_with_http_info(request)
+        return self._create_consumer_group_or_batch_delete_consumer_group_with_http_info(request)
 
-    def create_consumer_group_or_batch_delete_consumer_group_with_http_info(self, request):
-        all_params = ['instance_id', 'create_consumer_group_or_batch_delete_consumer_group_request_body', 'action']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_consumer_group_or_batch_delete_consumer_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -301,14 +267,10 @@ class RocketMQClient(Client):
         :type request: :class:`huaweicloudsdkrocketmq.v2.CreateInstanceByEngineRequest`
         :rtype: :class:`huaweicloudsdkrocketmq.v2.CreateInstanceByEngineResponse`
         """
-        return self.create_instance_by_engine_with_http_info(request)
+        return self._create_instance_by_engine_with_http_info(request)
 
-    def create_instance_by_engine_with_http_info(self, request):
-        all_params = ['engine', 'create_instance_by_engine_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_instance_by_engine_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -363,14 +325,10 @@ class RocketMQClient(Client):
         :type request: :class:`huaweicloudsdkrocketmq.v2.CreatePostPaidInstanceRequest`
         :rtype: :class:`huaweicloudsdkrocketmq.v2.CreatePostPaidInstanceResponse`
         """
-        return self.create_post_paid_instance_with_http_info(request)
+        return self._create_post_paid_instance_with_http_info(request)
 
-    def create_post_paid_instance_with_http_info(self, request):
-        all_params = ['create_post_paid_instance_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_post_paid_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -423,14 +381,10 @@ class RocketMQClient(Client):
         :type request: :class:`huaweicloudsdkrocketmq.v2.CreateUserRequest`
         :rtype: :class:`huaweicloudsdkrocketmq.v2.CreateUserResponse`
         """
-        return self.create_user_with_http_info(request)
+        return self._create_user_with_http_info(request)
 
-    def create_user_with_http_info(self, request):
-        all_params = ['instance_id', 'create_user_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_user_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -485,14 +439,10 @@ class RocketMQClient(Client):
         :type request: :class:`huaweicloudsdkrocketmq.v2.DeleteConsumerGroupRequest`
         :rtype: :class:`huaweicloudsdkrocketmq.v2.DeleteConsumerGroupResponse`
         """
-        return self.delete_consumer_group_with_http_info(request)
+        return self._delete_consumer_group_with_http_info(request)
 
-    def delete_consumer_group_with_http_info(self, request):
-        all_params = ['instance_id', 'group']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_consumer_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -547,14 +497,10 @@ class RocketMQClient(Client):
         :type request: :class:`huaweicloudsdkrocketmq.v2.DeleteInstanceRequest`
         :rtype: :class:`huaweicloudsdkrocketmq.v2.DeleteInstanceResponse`
         """
-        return self.delete_instance_with_http_info(request)
+        return self._delete_instance_with_http_info(request)
 
-    def delete_instance_with_http_info(self, request):
-        all_params = ['instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -607,14 +553,10 @@ class RocketMQClient(Client):
         :type request: :class:`huaweicloudsdkrocketmq.v2.DeleteUserRequest`
         :rtype: :class:`huaweicloudsdkrocketmq.v2.DeleteUserResponse`
         """
-        return self.delete_user_with_http_info(request)
+        return self._delete_user_with_http_info(request)
 
-    def delete_user_with_http_info(self, request):
-        all_params = ['instance_id', 'user_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_user_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -669,14 +611,10 @@ class RocketMQClient(Client):
         :type request: :class:`huaweicloudsdkrocketmq.v2.ExportDlqMessageRequest`
         :rtype: :class:`huaweicloudsdkrocketmq.v2.ExportDlqMessageResponse`
         """
-        return self.export_dlq_message_with_http_info(request)
+        return self._export_dlq_message_with_http_info(request)
 
-    def export_dlq_message_with_http_info(self, request):
-        all_params = ['instance_id', 'export_dlq_message_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _export_dlq_message_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -731,14 +669,10 @@ class RocketMQClient(Client):
         :type request: :class:`huaweicloudsdkrocketmq.v2.ListAvailableZonesRequest`
         :rtype: :class:`huaweicloudsdkrocketmq.v2.ListAvailableZonesResponse`
         """
-        return self.list_available_zones_with_http_info(request)
+        return self._list_available_zones_with_http_info(request)
 
-    def list_available_zones_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_available_zones_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -789,14 +723,10 @@ class RocketMQClient(Client):
         :type request: :class:`huaweicloudsdkrocketmq.v2.ListBrokersRequest`
         :rtype: :class:`huaweicloudsdkrocketmq.v2.ListBrokersResponse`
         """
-        return self.list_brokers_with_http_info(request)
+        return self._list_brokers_with_http_info(request)
 
-    def list_brokers_with_http_info(self, request):
-        all_params = ['instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_brokers_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -849,14 +779,10 @@ class RocketMQClient(Client):
         :type request: :class:`huaweicloudsdkrocketmq.v2.ListConsumeGroupAccessPolicyRequest`
         :rtype: :class:`huaweicloudsdkrocketmq.v2.ListConsumeGroupAccessPolicyResponse`
         """
-        return self.list_consume_group_access_policy_with_http_info(request)
+        return self._list_consume_group_access_policy_with_http_info(request)
 
-    def list_consume_group_access_policy_with_http_info(self, request):
-        all_params = ['engine', 'instance_id', 'group_id', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_consume_group_access_policy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -917,14 +843,10 @@ class RocketMQClient(Client):
         :type request: :class:`huaweicloudsdkrocketmq.v2.ListInstanceConsumerGroupsRequest`
         :rtype: :class:`huaweicloudsdkrocketmq.v2.ListInstanceConsumerGroupsResponse`
         """
-        return self.list_instance_consumer_groups_with_http_info(request)
+        return self._list_instance_consumer_groups_with_http_info(request)
 
-    def list_instance_consumer_groups_with_http_info(self, request):
-        all_params = ['instance_id', 'group', 'limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_instance_consumer_groups_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -983,14 +905,10 @@ class RocketMQClient(Client):
         :type request: :class:`huaweicloudsdkrocketmq.v2.ListInstancesRequest`
         :rtype: :class:`huaweicloudsdkrocketmq.v2.ListInstancesResponse`
         """
-        return self.list_instances_with_http_info(request)
+        return self._list_instances_with_http_info(request)
 
-    def list_instances_with_http_info(self, request):
-        all_params = ['engine', 'name', 'instance_id', 'status', 'include_failure', 'exact_match_name', 'enterprise_project_id', 'limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_instances_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1059,14 +977,10 @@ class RocketMQClient(Client):
         :type request: :class:`huaweicloudsdkrocketmq.v2.ListMessageTraceRequest`
         :rtype: :class:`huaweicloudsdkrocketmq.v2.ListMessageTraceResponse`
         """
-        return self.list_message_trace_with_http_info(request)
+        return self._list_message_trace_with_http_info(request)
 
-    def list_message_trace_with_http_info(self, request):
-        all_params = ['engine', 'instance_id', 'msg_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_message_trace_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1123,14 +1037,10 @@ class RocketMQClient(Client):
         :type request: :class:`huaweicloudsdkrocketmq.v2.ListMessagesRequest`
         :rtype: :class:`huaweicloudsdkrocketmq.v2.ListMessagesResponse`
         """
-        return self.list_messages_with_http_info(request)
+        return self._list_messages_with_http_info(request)
 
-    def list_messages_with_http_info(self, request):
-        all_params = ['engine', 'instance_id', 'topic', 'limit', 'offset', 'start_time', 'end_time', 'msg_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_messages_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1197,14 +1107,10 @@ class RocketMQClient(Client):
         :type request: :class:`huaweicloudsdkrocketmq.v2.ListTopicAccessPolicyRequest`
         :rtype: :class:`huaweicloudsdkrocketmq.v2.ListTopicAccessPolicyResponse`
         """
-        return self.list_topic_access_policy_with_http_info(request)
+        return self._list_topic_access_policy_with_http_info(request)
 
-    def list_topic_access_policy_with_http_info(self, request):
-        all_params = ['instance_id', 'topic', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_topic_access_policy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1263,14 +1169,10 @@ class RocketMQClient(Client):
         :type request: :class:`huaweicloudsdkrocketmq.v2.ListUserRequest`
         :rtype: :class:`huaweicloudsdkrocketmq.v2.ListUserResponse`
         """
-        return self.list_user_with_http_info(request)
+        return self._list_user_with_http_info(request)
 
-    def list_user_with_http_info(self, request):
-        all_params = ['instance_id', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_user_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1327,14 +1229,10 @@ class RocketMQClient(Client):
         :type request: :class:`huaweicloudsdkrocketmq.v2.ResetConsumeOffsetRequest`
         :rtype: :class:`huaweicloudsdkrocketmq.v2.ResetConsumeOffsetResponse`
         """
-        return self.reset_consume_offset_with_http_info(request)
+        return self._reset_consume_offset_with_http_info(request)
 
-    def reset_consume_offset_with_http_info(self, request):
-        all_params = ['engine', 'instance_id', 'group_id', 'reset_consume_offset_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _reset_consume_offset_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1393,14 +1291,10 @@ class RocketMQClient(Client):
         :type request: :class:`huaweicloudsdkrocketmq.v2.ShowConsumerConnectionsRequest`
         :rtype: :class:`huaweicloudsdkrocketmq.v2.ShowConsumerConnectionsResponse`
         """
-        return self.show_consumer_connections_with_http_info(request)
+        return self._show_consumer_connections_with_http_info(request)
 
-    def show_consumer_connections_with_http_info(self, request):
-        all_params = ['instance_id', 'group', 'limit', 'offset', 'is_detail']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_consumer_connections_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1461,14 +1355,10 @@ class RocketMQClient(Client):
         :type request: :class:`huaweicloudsdkrocketmq.v2.ShowConsumerListOrDetailsRequest`
         :rtype: :class:`huaweicloudsdkrocketmq.v2.ShowConsumerListOrDetailsResponse`
         """
-        return self.show_consumer_list_or_details_with_http_info(request)
+        return self._show_consumer_list_or_details_with_http_info(request)
 
-    def show_consumer_list_or_details_with_http_info(self, request):
-        all_params = ['instance_id', 'group', 'topic', 'limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_consumer_list_or_details_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1529,14 +1419,10 @@ class RocketMQClient(Client):
         :type request: :class:`huaweicloudsdkrocketmq.v2.ShowGroupRequest`
         :rtype: :class:`huaweicloudsdkrocketmq.v2.ShowGroupResponse`
         """
-        return self.show_group_with_http_info(request)
+        return self._show_group_with_http_info(request)
 
-    def show_group_with_http_info(self, request):
-        all_params = ['instance_id', 'group']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1591,14 +1477,10 @@ class RocketMQClient(Client):
         :type request: :class:`huaweicloudsdkrocketmq.v2.ShowInstanceRequest`
         :rtype: :class:`huaweicloudsdkrocketmq.v2.ShowInstanceResponse`
         """
-        return self.show_instance_with_http_info(request)
+        return self._show_instance_with_http_info(request)
 
-    def show_instance_with_http_info(self, request):
-        all_params = ['instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1651,14 +1533,10 @@ class RocketMQClient(Client):
         :type request: :class:`huaweicloudsdkrocketmq.v2.ShowRocketmqProjectTagsRequest`
         :rtype: :class:`huaweicloudsdkrocketmq.v2.ShowRocketmqProjectTagsResponse`
         """
-        return self.show_rocketmq_project_tags_with_http_info(request)
+        return self._show_rocketmq_project_tags_with_http_info(request)
 
-    def show_rocketmq_project_tags_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_rocketmq_project_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1709,14 +1587,10 @@ class RocketMQClient(Client):
         :type request: :class:`huaweicloudsdkrocketmq.v2.ShowRocketmqTagsRequest`
         :rtype: :class:`huaweicloudsdkrocketmq.v2.ShowRocketmqTagsResponse`
         """
-        return self.show_rocketmq_tags_with_http_info(request)
+        return self._show_rocketmq_tags_with_http_info(request)
 
-    def show_rocketmq_tags_with_http_info(self, request):
-        all_params = ['instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_rocketmq_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1769,14 +1643,10 @@ class RocketMQClient(Client):
         :type request: :class:`huaweicloudsdkrocketmq.v2.ShowUserRequest`
         :rtype: :class:`huaweicloudsdkrocketmq.v2.ShowUserResponse`
         """
-        return self.show_user_with_http_info(request)
+        return self._show_user_with_http_info(request)
 
-    def show_user_with_http_info(self, request):
-        all_params = ['instance_id', 'user_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_user_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1831,14 +1701,10 @@ class RocketMQClient(Client):
         :type request: :class:`huaweicloudsdkrocketmq.v2.UpdateConsumerGroupRequest`
         :rtype: :class:`huaweicloudsdkrocketmq.v2.UpdateConsumerGroupResponse`
         """
-        return self.update_consumer_group_with_http_info(request)
+        return self._update_consumer_group_with_http_info(request)
 
-    def update_consumer_group_with_http_info(self, request):
-        all_params = ['instance_id', 'group', 'update_consumer_group_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_consumer_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1895,14 +1761,10 @@ class RocketMQClient(Client):
         :type request: :class:`huaweicloudsdkrocketmq.v2.UpdateInstanceRequest`
         :rtype: :class:`huaweicloudsdkrocketmq.v2.UpdateInstanceResponse`
         """
-        return self.update_instance_with_http_info(request)
+        return self._update_instance_with_http_info(request)
 
-    def update_instance_with_http_info(self, request):
-        all_params = ['instance_id', 'update_instance_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1957,14 +1819,10 @@ class RocketMQClient(Client):
         :type request: :class:`huaweicloudsdkrocketmq.v2.UpdateUserRequest`
         :rtype: :class:`huaweicloudsdkrocketmq.v2.UpdateUserResponse`
         """
-        return self.update_user_with_http_info(request)
+        return self._update_user_with_http_info(request)
 
-    def update_user_with_http_info(self, request):
-        all_params = ['instance_id', 'user_name', 'update_user_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_user_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2021,14 +1879,10 @@ class RocketMQClient(Client):
         :type request: :class:`huaweicloudsdkrocketmq.v2.CreateTopicOrBatchDeleteTopicRequest`
         :rtype: :class:`huaweicloudsdkrocketmq.v2.CreateTopicOrBatchDeleteTopicResponse`
         """
-        return self.create_topic_or_batch_delete_topic_with_http_info(request)
+        return self._create_topic_or_batch_delete_topic_with_http_info(request)
 
-    def create_topic_or_batch_delete_topic_with_http_info(self, request):
-        all_params = ['instance_id', 'create_topic_or_batch_delete_topic_request_body', 'action']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_topic_or_batch_delete_topic_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2085,14 +1939,10 @@ class RocketMQClient(Client):
         :type request: :class:`huaweicloudsdkrocketmq.v2.DeleteTopicRequest`
         :rtype: :class:`huaweicloudsdkrocketmq.v2.DeleteTopicResponse`
         """
-        return self.delete_topic_with_http_info(request)
+        return self._delete_topic_with_http_info(request)
 
-    def delete_topic_with_http_info(self, request):
-        all_params = ['instance_id', 'topic']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_topic_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2147,14 +1997,10 @@ class RocketMQClient(Client):
         :type request: :class:`huaweicloudsdkrocketmq.v2.ListConsumerGroupOfTopicRequest`
         :rtype: :class:`huaweicloudsdkrocketmq.v2.ListConsumerGroupOfTopicResponse`
         """
-        return self.list_consumer_group_of_topic_with_http_info(request)
+        return self._list_consumer_group_of_topic_with_http_info(request)
 
-    def list_consumer_group_of_topic_with_http_info(self, request):
-        all_params = ['instance_id', 'topic', 'limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_consumer_group_of_topic_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2213,14 +2059,10 @@ class RocketMQClient(Client):
         :type request: :class:`huaweicloudsdkrocketmq.v2.ListRocketInstanceTopicsRequest`
         :rtype: :class:`huaweicloudsdkrocketmq.v2.ListRocketInstanceTopicsResponse`
         """
-        return self.list_rocket_instance_topics_with_http_info(request)
+        return self._list_rocket_instance_topics_with_http_info(request)
 
-    def list_rocket_instance_topics_with_http_info(self, request):
-        all_params = ['instance_id', 'limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_rocket_instance_topics_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2277,14 +2119,10 @@ class RocketMQClient(Client):
         :type request: :class:`huaweicloudsdkrocketmq.v2.ShowOneTopicRequest`
         :rtype: :class:`huaweicloudsdkrocketmq.v2.ShowOneTopicResponse`
         """
-        return self.show_one_topic_with_http_info(request)
+        return self._show_one_topic_with_http_info(request)
 
-    def show_one_topic_with_http_info(self, request):
-        all_params = ['instance_id', 'topic']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_one_topic_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2339,14 +2177,10 @@ class RocketMQClient(Client):
         :type request: :class:`huaweicloudsdkrocketmq.v2.ShowTopicStatusRequest`
         :rtype: :class:`huaweicloudsdkrocketmq.v2.ShowTopicStatusResponse`
         """
-        return self.show_topic_status_with_http_info(request)
+        return self._show_topic_status_with_http_info(request)
 
-    def show_topic_status_with_http_info(self, request):
-        all_params = ['instance_id', 'topic']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_topic_status_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2401,14 +2235,10 @@ class RocketMQClient(Client):
         :type request: :class:`huaweicloudsdkrocketmq.v2.UpdateTopicRequest`
         :rtype: :class:`huaweicloudsdkrocketmq.v2.UpdateTopicResponse`
         """
-        return self.update_topic_with_http_info(request)
+        return self._update_topic_with_http_info(request)
 
-    def update_topic_with_http_info(self, request):
-        all_params = ['instance_id', 'topic', 'update_topic_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_topic_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

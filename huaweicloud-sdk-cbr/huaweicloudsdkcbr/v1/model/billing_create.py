@@ -1,9 +1,6 @@
 # coding: utf-8
 
-import re
 import six
-
-
 
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
@@ -31,7 +28,6 @@ class BillingCreate:
         'is_auto_renew': 'bool',
         'is_auto_pay': 'bool',
         'console_url': 'str',
-        'extra_info': 'BillbingCreateExtraInfo',
         'is_multi_az': 'bool',
         'promotion_info': 'str',
         'purchase_mode': 'str',
@@ -50,14 +46,13 @@ class BillingCreate:
         'is_auto_renew': 'is_auto_renew',
         'is_auto_pay': 'is_auto_pay',
         'console_url': 'console_url',
-        'extra_info': 'extra_info',
         'is_multi_az': 'is_multi_az',
         'promotion_info': 'promotion_info',
         'purchase_mode': 'purchase_mode',
         'order_id': 'order_id'
     }
 
-    def __init__(self, cloud_type=None, consistent_level=None, object_type=None, protect_type=None, size=None, charging_mode=None, period_type=None, period_num=None, is_auto_renew=None, is_auto_pay=None, console_url=None, extra_info=None, is_multi_az=None, promotion_info=None, purchase_mode=None, order_id=None):
+    def __init__(self, cloud_type=None, consistent_level=None, object_type=None, protect_type=None, size=None, charging_mode=None, period_type=None, period_num=None, is_auto_renew=None, is_auto_pay=None, console_url=None, is_multi_az=None, promotion_info=None, purchase_mode=None, order_id=None):
         """BillingCreate
 
         The model defined in huaweicloud sdk
@@ -84,8 +79,6 @@ class BillingCreate:
         :type is_auto_pay: bool
         :param console_url: 跳转URL
         :type console_url: str
-        :param extra_info: 
-        :type extra_info: :class:`huaweicloudsdkcbr.v1.BillbingCreateExtraInfo`
         :param is_multi_az: 存储库多az属性，默认为false
         :type is_multi_az: bool
         :param promotion_info: 促销信息，包周期时可选参数
@@ -109,7 +102,6 @@ class BillingCreate:
         self._is_auto_renew = None
         self._is_auto_pay = None
         self._console_url = None
-        self._extra_info = None
         self._is_multi_az = None
         self._promotion_info = None
         self._purchase_mode = None
@@ -134,8 +126,6 @@ class BillingCreate:
             self.is_auto_pay = is_auto_pay
         if console_url is not None:
             self.console_url = console_url
-        if extra_info is not None:
-            self.extra_info = extra_info
         if is_multi_az is not None:
             self.is_multi_az = is_multi_az
         if promotion_info is not None:
@@ -386,24 +376,6 @@ class BillingCreate:
         :type console_url: str
         """
         self._console_url = console_url
-
-    @property
-    def extra_info(self):
-        """Gets the extra_info of this BillingCreate.
-
-        :return: The extra_info of this BillingCreate.
-        :rtype: :class:`huaweicloudsdkcbr.v1.BillbingCreateExtraInfo`
-        """
-        return self._extra_info
-
-    @extra_info.setter
-    def extra_info(self, extra_info):
-        """Sets the extra_info of this BillingCreate.
-
-        :param extra_info: The extra_info of this BillingCreate.
-        :type extra_info: :class:`huaweicloudsdkcbr.v1.BillbingCreateExtraInfo`
-        """
-        self._extra_info = extra_info
 
     @property
     def is_multi_az(self):

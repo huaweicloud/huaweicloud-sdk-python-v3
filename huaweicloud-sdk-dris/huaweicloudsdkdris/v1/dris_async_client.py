@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class DrisAsyncClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(DrisAsyncClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkdris.v1.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -54,14 +36,10 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.CreateDataChannelRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.CreateDataChannelResponse`
         """
-        return self.create_data_channel_with_http_info(request)
+        return self._create_data_channel_with_http_info(request)
 
-    def create_data_channel_with_http_info(self, request):
-        all_params = ['v2x_edge_id', 'create_data_channel_request_body', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_data_channel_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -119,14 +97,10 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.DeleteDataChannelRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.DeleteDataChannelResponse`
         """
-        return self.delete_data_channel_with_http_info(request)
+        return self._delete_data_channel_with_http_info(request)
 
-    def delete_data_channel_with_http_info(self, request):
-        all_params = ['v2x_edge_id', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_data_channel_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -182,14 +156,10 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.ShowDataChannelRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.ShowDataChannelResponse`
         """
-        return self.show_data_channel_with_http_info(request)
+        return self._show_data_channel_with_http_info(request)
 
-    def show_data_channel_with_http_info(self, request):
-        all_params = ['v2x_edge_id', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_data_channel_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -245,14 +215,10 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.UpdateDataChannelRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.UpdateDataChannelResponse`
         """
-        return self.update_data_channel_with_http_info(request)
+        return self._update_data_channel_with_http_info(request)
 
-    def update_data_channel_with_http_info(self, request):
-        all_params = ['v2x_edge_id', 'update_data_channel_request_body', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_data_channel_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -310,14 +276,10 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.CreateV2xEdgeRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.CreateV2xEdgeResponse`
         """
-        return self.create_v2x_edge_with_http_info(request)
+        return self._create_v2x_edge_with_http_info(request)
 
-    def create_v2x_edge_with_http_info(self, request):
-        all_params = ['create_v2x_edge_request_body', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_v2x_edge_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -373,14 +335,10 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.DeleteV2XEdgeByV2xEdgeIdRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.DeleteV2XEdgeByV2xEdgeIdResponse`
         """
-        return self.delete_v2_x_edge_by_v2x_edge_id_with_http_info(request)
+        return self._delete_v2_x_edge_by_v2x_edge_id_with_http_info(request)
 
-    def delete_v2_x_edge_by_v2x_edge_id_with_http_info(self, request):
-        all_params = ['v2x_edge_id', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_v2_x_edge_by_v2x_edge_id_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -436,14 +394,10 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.ListV2xEdgesRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.ListV2xEdgesResponse`
         """
-        return self.list_v2x_edges_with_http_info(request)
+        return self._list_v2x_edges_with_http_info(request)
 
-    def list_v2x_edges_with_http_info(self, request):
-        all_params = ['instance_id', 'offset', 'limit', 'status']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_v2x_edges_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -503,14 +457,10 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.ShowDeploymentCodeRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.ShowDeploymentCodeResponse`
         """
-        return self.show_deployment_code_with_http_info(request)
+        return self._show_deployment_code_with_http_info(request)
 
-    def show_deployment_code_with_http_info(self, request):
-        all_params = ['v2x_edge_id', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_deployment_code_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -566,14 +516,10 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.ShowV2xEdgeDetailRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.ShowV2xEdgeDetailResponse`
         """
-        return self.show_v2x_edge_detail_with_http_info(request)
+        return self._show_v2x_edge_detail_with_http_info(request)
 
-    def show_v2x_edge_detail_with_http_info(self, request):
-        all_params = ['v2x_edge_id', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_v2x_edge_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -629,14 +575,10 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.UpdateV2xEdgeRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.UpdateV2xEdgeResponse`
         """
-        return self.update_v2x_edge_with_http_info(request)
+        return self._update_v2x_edge_with_http_info(request)
 
-    def update_v2x_edge_with_http_info(self, request):
-        all_params = ['v2x_edge_id', 'update_v2_x_edge_request_body', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_v2x_edge_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -694,14 +636,10 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.AddForwardingConfigsRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.AddForwardingConfigsResponse`
         """
-        return self.add_forwarding_configs_with_http_info(request)
+        return self._add_forwarding_configs_with_http_info(request)
 
-    def add_forwarding_configs_with_http_info(self, request):
-        all_params = ['add_forwarding_configs_request_body', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _add_forwarding_configs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -757,14 +695,10 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.DeleteForwardingConfigRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.DeleteForwardingConfigResponse`
         """
-        return self.delete_forwarding_config_with_http_info(request)
+        return self._delete_forwarding_config_with_http_info(request)
 
-    def delete_forwarding_config_with_http_info(self, request):
-        all_params = ['forwarding_type', 'forwarding_config_id', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_forwarding_config_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -822,14 +756,10 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.ShowForwardingConfigRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.ShowForwardingConfigResponse`
         """
-        return self.show_forwarding_config_with_http_info(request)
+        return self._show_forwarding_config_with_http_info(request)
 
-    def show_forwarding_config_with_http_info(self, request):
-        all_params = ['forwarding_type', 'forwarding_config_id', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_forwarding_config_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -887,14 +817,10 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.ShowForwardingConfigsRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.ShowForwardingConfigsResponse`
         """
-        return self.show_forwarding_configs_with_http_info(request)
+        return self._show_forwarding_configs_with_http_info(request)
 
-    def show_forwarding_configs_with_http_info(self, request):
-        all_params = ['forwarding_type', 'instance_id', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_forwarding_configs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -954,14 +880,10 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.UpdateForwardingConfigRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.UpdateForwardingConfigResponse`
         """
-        return self.update_forwarding_config_with_http_info(request)
+        return self._update_forwarding_config_with_http_info(request)
 
-    def update_forwarding_config_with_http_info(self, request):
-        all_params = ['forwarding_type', 'forwarding_config_id', 'update_forwarding_config_request_body', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_forwarding_config_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1021,14 +943,10 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.ListEdgeFlowsRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.ListEdgeFlowsResponse`
         """
-        return self.list_edge_flows_with_http_info(request)
+        return self._list_edge_flows_with_http_info(request)
 
-    def list_edge_flows_with_http_info(self, request):
-        all_params = ['instance_id', 'offset', 'limit', 'from_date', 'to_date', 'edge_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_edge_flows_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1092,14 +1010,10 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.ShowHistoryTrafficEventsRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.ShowHistoryTrafficEventsResponse`
         """
-        return self.show_history_traffic_events_with_http_info(request)
+        return self._show_history_traffic_events_with_http_info(request)
 
-    def show_history_traffic_events_with_http_info(self, request):
-        all_params = ['instance_id', 'offset', 'limit', 'from_date', 'to_date', 'event_id', 'event_class', 'event_type', 'event_source']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_history_traffic_events_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1169,14 +1083,10 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.BatchShowIpcsRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.BatchShowIpcsResponse`
         """
-        return self.batch_show_ipcs_with_http_info(request)
+        return self._batch_show_ipcs_with_http_info(request)
 
-    def batch_show_ipcs_with_http_info(self, request):
-        all_params = ['instance_id', 'offset', 'limit', 'status', 'v2x_edge_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_show_ipcs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1238,14 +1148,10 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.ShowIpcRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.ShowIpcResponse`
         """
-        return self.show_ipc_with_http_info(request)
+        return self._show_ipc_with_http_info(request)
 
-    def show_ipc_with_http_info(self, request):
-        all_params = ['camera_id', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_ipc_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1301,14 +1207,10 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.BatchShowRadarsRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.BatchShowRadarsResponse`
         """
-        return self.batch_show_radars_with_http_info(request)
+        return self._batch_show_radars_with_http_info(request)
 
-    def batch_show_radars_with_http_info(self, request):
-        all_params = ['instance_id', 'esn', 'offset', 'limit', 'status']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_show_radars_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1370,14 +1272,10 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.BatchShowRsusRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.BatchShowRsusResponse`
         """
-        return self.batch_show_rsus_with_http_info(request)
+        return self._batch_show_rsus_with_http_info(request)
 
-    def batch_show_rsus_with_http_info(self, request):
-        all_params = ['instance_id', 'offset', 'limit', 'rsu_id', 'esn', 'status', 'rsu_model_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_show_rsus_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1443,14 +1341,10 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.CreateRsuRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.CreateRsuResponse`
         """
-        return self.create_rsu_with_http_info(request)
+        return self._create_rsu_with_http_info(request)
 
-    def create_rsu_with_http_info(self, request):
-        all_params = ['create_rsu_request_body', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_rsu_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1506,14 +1400,10 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.DeleteRsuRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.DeleteRsuResponse`
         """
-        return self.delete_rsu_with_http_info(request)
+        return self._delete_rsu_with_http_info(request)
 
-    def delete_rsu_with_http_info(self, request):
-        all_params = ['rsu_id', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_rsu_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1569,14 +1459,10 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.UpdateRsuRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.UpdateRsuResponse`
         """
-        return self.update_rsu_with_http_info(request)
+        return self._update_rsu_with_http_info(request)
 
-    def update_rsu_with_http_info(self, request):
-        all_params = ['rsu_id', 'update_rsu_request_body', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_rsu_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1634,14 +1520,10 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.SendImmediateEventRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.SendImmediateEventResponse`
         """
-        return self.send_immediate_event_with_http_info(request)
+        return self._send_immediate_event_with_http_info(request)
 
-    def send_immediate_event_with_http_info(self, request):
-        all_params = ['send_immediate_event_request_body', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _send_immediate_event_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1697,14 +1579,10 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.BatchShowTrafficEventsRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.BatchShowTrafficEventsResponse`
         """
-        return self.batch_show_traffic_events_with_http_info(request)
+        return self._batch_show_traffic_events_with_http_info(request)
 
-    def batch_show_traffic_events_with_http_info(self, request):
-        all_params = ['instance_id', 'offset', 'limit', 'area_code', 'status', 'event_type', 'event_source_type', 'event_class', 'event_id', 'from_time', 'to_time', 'sort_key', 'sort_dir']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_show_traffic_events_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1783,14 +1661,10 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.CreateTrafficEventRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.CreateTrafficEventResponse`
         """
-        return self.create_traffic_event_with_http_info(request)
+        return self._create_traffic_event_with_http_info(request)
 
-    def create_traffic_event_with_http_info(self, request):
-        all_params = ['create_traffic_event_request_body', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_traffic_event_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1846,14 +1720,10 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.DeleteTrafficEventRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.DeleteTrafficEventResponse`
         """
-        return self.delete_traffic_event_with_http_info(request)
+        return self._delete_traffic_event_with_http_info(request)
 
-    def delete_traffic_event_with_http_info(self, request):
-        all_params = ['event_id', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_traffic_event_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1909,14 +1779,10 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.ShowTrafficEventRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.ShowTrafficEventResponse`
         """
-        return self.show_traffic_event_with_http_info(request)
+        return self._show_traffic_event_with_http_info(request)
 
-    def show_traffic_event_with_http_info(self, request):
-        all_params = ['event_id', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_traffic_event_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1972,14 +1838,10 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.UpdateTrafficEventRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.UpdateTrafficEventResponse`
         """
-        return self.update_traffic_event_with_http_info(request)
+        return self._update_traffic_event_with_http_info(request)
 
-    def update_traffic_event_with_http_info(self, request):
-        all_params = ['event_id', 'update_traffic_event_request_body', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_traffic_event_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2037,14 +1899,10 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.BatchShowTrafficControllersRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.BatchShowTrafficControllersResponse`
         """
-        return self.batch_show_traffic_controllers_with_http_info(request)
+        return self._batch_show_traffic_controllers_with_http_info(request)
 
-    def batch_show_traffic_controllers_with_http_info(self, request):
-        all_params = ['instance_id', 'offset', 'limit', 'traffic_controller_id', 'esn', 'status']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_show_traffic_controllers_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2108,14 +1966,10 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.CreateTrafficControllerRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.CreateTrafficControllerResponse`
         """
-        return self.create_traffic_controller_with_http_info(request)
+        return self._create_traffic_controller_with_http_info(request)
 
-    def create_traffic_controller_with_http_info(self, request):
-        all_params = ['instance_id', 'create_traffic_controller_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_traffic_controller_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2171,14 +2025,10 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.DeleteTrafficControllerRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.DeleteTrafficControllerResponse`
         """
-        return self.delete_traffic_controller_with_http_info(request)
+        return self._delete_traffic_controller_with_http_info(request)
 
-    def delete_traffic_controller_with_http_info(self, request):
-        all_params = ['traffic_controller_id', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_traffic_controller_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2234,14 +2084,10 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.UpdateTrafficControllerRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.UpdateTrafficControllerResponse`
         """
-        return self.update_traffic_controller_with_http_info(request)
+        return self._update_traffic_controller_with_http_info(request)
 
-    def update_traffic_controller_with_http_info(self, request):
-        all_params = ['traffic_controller_id', 'update_traffic_controller_request_body', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_traffic_controller_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2309,14 +2155,10 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.CreateV2xEdgeAppRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.CreateV2xEdgeAppResponse`
         """
-        return self.create_v2x_edge_app_with_http_info(request)
+        return self._create_v2x_edge_app_with_http_info(request)
 
-    def create_v2x_edge_app_with_http_info(self, request):
-        all_params = ['v2x_edge_id', 'create_v2x_edge_app_request_body', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_v2x_edge_app_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2374,14 +2216,10 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.DeleteV2XEdgeAppByEdgeAppIdRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.DeleteV2XEdgeAppByEdgeAppIdResponse`
         """
-        return self.delete_v2_x_edge_app_by_edge_app_id_with_http_info(request)
+        return self._delete_v2_x_edge_app_by_edge_app_id_with_http_info(request)
 
-    def delete_v2_x_edge_app_by_edge_app_id_with_http_info(self, request):
-        all_params = ['edge_app_id', 'v2x_edge_id', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_v2_x_edge_app_by_edge_app_id_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2439,14 +2277,10 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.ListV2xEdgeAppRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.ListV2xEdgeAppResponse`
         """
-        return self.list_v2x_edge_app_with_http_info(request)
+        return self._list_v2x_edge_app_with_http_info(request)
 
-    def list_v2x_edge_app_with_http_info(self, request):
-        all_params = ['v2x_edge_id', 'instance_id', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_v2x_edge_app_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2506,14 +2340,10 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.ShowV2XEdgeAppDetailByEdgeAppIdRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.ShowV2XEdgeAppDetailByEdgeAppIdResponse`
         """
-        return self.show_v2_x_edge_app_detail_by_edge_app_id_with_http_info(request)
+        return self._show_v2_x_edge_app_detail_by_edge_app_id_with_http_info(request)
 
-    def show_v2_x_edge_app_detail_by_edge_app_id_with_http_info(self, request):
-        all_params = ['edge_app_id', 'v2x_edge_id', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_v2_x_edge_app_detail_by_edge_app_id_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2581,14 +2411,10 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.UpdateV2xEdgeAppRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.UpdateV2xEdgeAppResponse`
         """
-        return self.update_v2x_edge_app_with_http_info(request)
+        return self._update_v2x_edge_app_with_http_info(request)
 
-    def update_v2x_edge_app_with_http_info(self, request):
-        all_params = ['edge_app_id', 'v2x_edge_id', 'update_v2_x_edge_app_request_body', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_v2x_edge_app_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2648,14 +2474,10 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.BatchShowVehiclesRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.BatchShowVehiclesResponse`
         """
-        return self.batch_show_vehicles_with_http_info(request)
+        return self._batch_show_vehicles_with_http_info(request)
 
-    def batch_show_vehicles_with_http_info(self, request):
-        all_params = ['instance_id', 'offset', 'limit', 'vehicle_id', 'status']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_show_vehicles_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2717,14 +2539,10 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.CreateVehicleRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.CreateVehicleResponse`
         """
-        return self.create_vehicle_with_http_info(request)
+        return self._create_vehicle_with_http_info(request)
 
-    def create_vehicle_with_http_info(self, request):
-        all_params = ['instance_id', 'create_vehicle_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_vehicle_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2780,14 +2598,10 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.DeleteVehicleRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.DeleteVehicleResponse`
         """
-        return self.delete_vehicle_with_http_info(request)
+        return self._delete_vehicle_with_http_info(request)
 
-    def delete_vehicle_with_http_info(self, request):
-        all_params = ['vehicle_id', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_vehicle_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2843,14 +2657,10 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.UpdateVehicleRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.UpdateVehicleResponse`
         """
-        return self.update_vehicle_with_http_info(request)
+        return self._update_vehicle_with_http_info(request)
 
-    def update_vehicle_with_http_info(self, request):
-        all_params = ['vehicle_id', 'update_vehicle_request_body', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_vehicle_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2908,14 +2718,10 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.BatchShowEdgeAppsRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.BatchShowEdgeAppsResponse`
         """
-        return self.batch_show_edge_apps_with_http_info(request)
+        return self._batch_show_edge_apps_with_http_info(request)
 
-    def batch_show_edge_apps_with_http_info(self, request):
-        all_params = ['instance_id', 'edge_app_id', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_show_edge_apps_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2975,14 +2781,10 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.CreateEdgeAppRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.CreateEdgeAppResponse`
         """
-        return self.create_edge_app_with_http_info(request)
+        return self._create_edge_app_with_http_info(request)
 
-    def create_edge_app_with_http_info(self, request):
-        all_params = ['create_edge_app_request_body', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_edge_app_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3038,14 +2840,10 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.DeleteEdgeAppRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.DeleteEdgeAppResponse`
         """
-        return self.delete_edge_app_with_http_info(request)
+        return self._delete_edge_app_with_http_info(request)
 
-    def delete_edge_app_with_http_info(self, request):
-        all_params = ['edge_app_id', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_edge_app_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3101,14 +2899,10 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.UpdateEdgeAppRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.UpdateEdgeAppResponse`
         """
-        return self.update_edge_app_with_http_info(request)
+        return self._update_edge_app_with_http_info(request)
 
-    def update_edge_app_with_http_info(self, request):
-        all_params = ['edge_app_id', 'update_edge_app_request_body', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_edge_app_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3166,14 +2960,10 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.BatchShowEdgeAppVersionsRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.BatchShowEdgeAppVersionsResponse`
         """
-        return self.batch_show_edge_app_versions_with_http_info(request)
+        return self._batch_show_edge_app_versions_with_http_info(request)
 
-    def batch_show_edge_app_versions_with_http_info(self, request):
-        all_params = ['edge_app_id', 'instance_id', 'version', 'offset', 'limit', 'state']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_show_edge_app_versions_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3237,14 +3027,10 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.CreateEdgeApplicationVersionRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.CreateEdgeApplicationVersionResponse`
         """
-        return self.create_edge_application_version_with_http_info(request)
+        return self._create_edge_application_version_with_http_info(request)
 
-    def create_edge_application_version_with_http_info(self, request):
-        all_params = ['edge_app_id', 'create_edge_application_version_request_body', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_edge_application_version_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3302,14 +3088,10 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.DeleteEdgeApplicationVersionRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.DeleteEdgeApplicationVersionResponse`
         """
-        return self.delete_edge_application_version_with_http_info(request)
+        return self._delete_edge_application_version_with_http_info(request)
 
-    def delete_edge_application_version_with_http_info(self, request):
-        all_params = ['edge_app_id', 'version', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_edge_application_version_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3367,14 +3149,10 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.ShowEdgeApplicationVersionRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.ShowEdgeApplicationVersionResponse`
         """
-        return self.show_edge_application_version_with_http_info(request)
+        return self._show_edge_application_version_with_http_info(request)
 
-    def show_edge_application_version_with_http_info(self, request):
-        all_params = ['edge_app_id', 'version', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_edge_application_version_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3432,14 +3210,10 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.UpdateEdgeApplicationVersionRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.UpdateEdgeApplicationVersionResponse`
         """
-        return self.update_edge_application_version_with_http_info(request)
+        return self._update_edge_application_version_with_http_info(request)
 
-    def update_edge_application_version_with_http_info(self, request):
-        all_params = ['edge_app_id', 'version', 'update_edge_application_version_request_body', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_edge_application_version_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3499,14 +3273,10 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.UpdateEdgeApplicationVersionStateRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.UpdateEdgeApplicationVersionStateResponse`
         """
-        return self.update_edge_application_version_state_with_http_info(request)
+        return self._update_edge_application_version_state_with_http_info(request)
 
-    def update_edge_application_version_state_with_http_info(self, request):
-        all_params = ['edge_app_id', 'version', 'update_edge_application_version_state_request_body', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_edge_application_version_state_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3566,14 +3336,10 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.CreateRsuModelRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.CreateRsuModelResponse`
         """
-        return self.create_rsu_model_with_http_info(request)
+        return self._create_rsu_model_with_http_info(request)
 
-    def create_rsu_model_with_http_info(self, request):
-        all_params = ['instance_id', 'create_rsu_model_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_rsu_model_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3629,14 +3395,10 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.DeleteRsuModelRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.DeleteRsuModelResponse`
         """
-        return self.delete_rsu_model_with_http_info(request)
+        return self._delete_rsu_model_with_http_info(request)
 
-    def delete_rsu_model_with_http_info(self, request):
-        all_params = ['rsu_model_id', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_rsu_model_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3692,14 +3454,10 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.ListRsuModelsRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.ListRsuModelsResponse`
         """
-        return self.list_rsu_models_with_http_info(request)
+        return self._list_rsu_models_with_http_info(request)
 
-    def list_rsu_models_with_http_info(self, request):
-        all_params = ['instance_id', 'limit', 'manufacturer_name', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_rsu_models_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3759,14 +3517,10 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.ShowRsuModelRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.ShowRsuModelResponse`
         """
-        return self.show_rsu_model_with_http_info(request)
+        return self._show_rsu_model_with_http_info(request)
 
-    def show_rsu_model_with_http_info(self, request):
-        all_params = ['rsu_model_id', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_rsu_model_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3822,14 +3576,10 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.UpdateRsuModelRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.UpdateRsuModelResponse`
         """
-        return self.update_rsu_model_with_http_info(request)
+        return self._update_rsu_model_with_http_info(request)
 
-    def update_rsu_model_with_http_info(self, request):
-        all_params = ['rsu_model_id', 'update_rsu_model_request_body', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_rsu_model_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

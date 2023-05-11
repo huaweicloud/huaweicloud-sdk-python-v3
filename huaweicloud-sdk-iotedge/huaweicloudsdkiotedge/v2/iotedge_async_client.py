@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class IoTEdgeAsyncClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(IoTEdgeAsyncClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkiotedge.v2.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -54,14 +36,10 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.CreateEdgeNodeRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.CreateEdgeNodeResponse`
         """
-        return self.create_edge_node_with_http_info(request)
+        return self._create_edge_node_with_http_info(request)
 
-    def create_edge_node_with_http_info(self, request):
-        all_params = ['create_edge_node_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_edge_node_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -115,14 +93,10 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.CreateInstallCmdRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.CreateInstallCmdResponse`
         """
-        return self.create_install_cmd_with_http_info(request)
+        return self._create_install_cmd_with_http_info(request)
 
-    def create_install_cmd_with_http_info(self, request):
-        all_params = ['edge_node_id', 'arch', 'create_install_cmd_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_install_cmd_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -180,14 +154,10 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.DeleteEdgeNodeRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.DeleteEdgeNodeResponse`
         """
-        return self.delete_edge_node_with_http_info(request)
+        return self._delete_edge_node_with_http_info(request)
 
-    def delete_edge_node_with_http_info(self, request):
-        all_params = ['edge_node_id', 'delete_external_node']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_edge_node_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -243,14 +213,10 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.ListEdgeNodesRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.ListEdgeNodesResponse`
         """
-        return self.list_edge_nodes_with_http_info(request)
+        return self._list_edge_nodes_with_http_info(request)
 
-    def list_edge_nodes_with_http_info(self, request):
-        all_params = ['name', 'state', 'type', 'instance_id', 'space_id', 'node_ids', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_edge_nodes_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -319,14 +285,10 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.ShowEdgeNodeRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.ShowEdgeNodeResponse`
         """
-        return self.show_edge_node_with_http_info(request)
+        return self._show_edge_node_with_http_info(request)
 
-    def show_edge_node_with_http_info(self, request):
-        all_params = ['edge_node_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_edge_node_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -380,14 +342,10 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.AddDeviceRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.AddDeviceResponse`
         """
-        return self.add_device_with_http_info(request)
+        return self._add_device_with_http_info(request)
 
-    def add_device_with_http_info(self, request):
-        all_params = ['edge_node_id', 'add_device_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _add_device_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -443,14 +401,10 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.DeleteDeviceRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.DeleteDeviceResponse`
         """
-        return self.delete_device_with_http_info(request)
+        return self._delete_device_with_http_info(request)
 
-    def delete_device_with_http_info(self, request):
-        all_params = ['edge_node_id', 'device_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_device_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -506,14 +460,10 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.ListDevicesRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.ListDevicesResponse`
         """
-        return self.list_devices_with_http_info(request)
+        return self._list_devices_with_http_info(request)
 
-    def list_devices_with_http_info(self, request):
-        all_params = ['edge_node_id', 'gateway_id', 'device_name', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_devices_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -575,14 +525,10 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.ShowProductConfigRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.ShowProductConfigResponse`
         """
-        return self.show_product_config_with_http_info(request)
+        return self._show_product_config_with_http_info(request)
 
-    def show_product_config_with_http_info(self, request):
-        all_params = ['protocol_type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_product_config_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -636,14 +582,10 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.UpdateDeviceRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.UpdateDeviceResponse`
         """
-        return self.update_device_with_http_info(request)
+        return self._update_device_with_http_info(request)
 
-    def update_device_with_http_info(self, request):
-        all_params = ['edge_node_id', 'device_id', 'update_device_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_device_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -701,14 +643,10 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.BatchListEdgeAppsRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.BatchListEdgeAppsResponse`
         """
-        return self.batch_list_edge_apps_with_http_info(request)
+        return self._batch_list_edge_apps_with_http_info(request)
 
-    def batch_list_edge_apps_with_http_info(self, request):
-        all_params = ['edge_app_id', 'offset', 'limit', 'app_type', 'function_type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_list_edge_apps_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -770,14 +708,10 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.CreateEdgeAppRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.CreateEdgeAppResponse`
         """
-        return self.create_edge_app_with_http_info(request)
+        return self._create_edge_app_with_http_info(request)
 
-    def create_edge_app_with_http_info(self, request):
-        all_params = ['create_edge_app_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_edge_app_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -831,14 +765,10 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.DeleteEdgeAppRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.DeleteEdgeAppResponse`
         """
-        return self.delete_edge_app_with_http_info(request)
+        return self._delete_edge_app_with_http_info(request)
 
-    def delete_edge_app_with_http_info(self, request):
-        all_params = ['edge_app_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_edge_app_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -892,14 +822,10 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.ShowEdgeAppRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.ShowEdgeAppResponse`
         """
-        return self.show_edge_app_with_http_info(request)
+        return self._show_edge_app_with_http_info(request)
 
-    def show_edge_app_with_http_info(self, request):
-        all_params = ['edge_app_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_edge_app_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -953,14 +879,10 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.BatchListEdgeAppVersionsRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.BatchListEdgeAppVersionsResponse`
         """
-        return self.batch_list_edge_app_versions_with_http_info(request)
+        return self._batch_list_edge_app_versions_with_http_info(request)
 
-    def batch_list_edge_app_versions_with_http_info(self, request):
-        all_params = ['edge_app_id', 'version', 'offset', 'limit', 'ai_card_type', 'arch', 'state']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_list_edge_app_versions_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1026,14 +948,10 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.CreateEdgeApplicationVersionRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.CreateEdgeApplicationVersionResponse`
         """
-        return self.create_edge_application_version_with_http_info(request)
+        return self._create_edge_application_version_with_http_info(request)
 
-    def create_edge_application_version_with_http_info(self, request):
-        all_params = ['edge_app_id', 'create_edge_application_version_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_edge_application_version_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1089,14 +1007,10 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.DeleteEdgeApplicationVersionRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.DeleteEdgeApplicationVersionResponse`
         """
-        return self.delete_edge_application_version_with_http_info(request)
+        return self._delete_edge_application_version_with_http_info(request)
 
-    def delete_edge_application_version_with_http_info(self, request):
-        all_params = ['edge_app_id', 'version']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_edge_application_version_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1152,14 +1066,10 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.ShowEdgeApplicationVersionRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.ShowEdgeApplicationVersionResponse`
         """
-        return self.show_edge_application_version_with_http_info(request)
+        return self._show_edge_application_version_with_http_info(request)
 
-    def show_edge_application_version_with_http_info(self, request):
-        all_params = ['edge_app_id', 'version']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_edge_application_version_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1215,14 +1125,10 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.UpdateEdgeApplicationVersionRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.UpdateEdgeApplicationVersionResponse`
         """
-        return self.update_edge_application_version_with_http_info(request)
+        return self._update_edge_application_version_with_http_info(request)
 
-    def update_edge_application_version_with_http_info(self, request):
-        all_params = ['edge_app_id', 'version', 'update_edge_application_version_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_edge_application_version_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1280,14 +1186,10 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.UpdateEdgeApplicationVersionStateRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.UpdateEdgeApplicationVersionStateResponse`
         """
-        return self.update_edge_application_version_state_with_http_info(request)
+        return self._update_edge_application_version_state_with_http_info(request)
 
-    def update_edge_application_version_state_with_http_info(self, request):
-        all_params = ['edge_app_id', 'version', 'update_edge_application_version_state_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_edge_application_version_state_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1345,14 +1247,10 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.BatchListDcDsRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.BatchListDcDsResponse`
         """
-        return self.batch_list_dc_ds_with_http_info(request)
+        return self._batch_list_dc_ds_with_http_info(request)
 
-    def batch_list_dc_ds_with_http_info(self, request):
-        all_params = ['edge_node_id', 'module_id', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_list_dc_ds_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1412,14 +1310,10 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.CreateDsRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.CreateDsResponse`
         """
-        return self.create_ds_with_http_info(request)
+        return self._create_ds_with_http_info(request)
 
-    def create_ds_with_http_info(self, request):
-        all_params = ['edge_node_id', 'create_dc_ds_req_dto']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_ds_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1475,14 +1369,10 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.DeleteDcDsRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.DeleteDcDsResponse`
         """
-        return self.delete_dc_ds_with_http_info(request)
+        return self._delete_dc_ds_with_http_info(request)
 
-    def delete_dc_ds_with_http_info(self, request):
-        all_params = ['edge_node_id', 'ds_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_dc_ds_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1538,14 +1428,10 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.ShowDcDsRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.ShowDcDsResponse`
         """
-        return self.show_dc_ds_with_http_info(request)
+        return self._show_dc_ds_with_http_info(request)
 
-    def show_dc_ds_with_http_info(self, request):
-        all_params = ['edge_node_id', 'ds_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_dc_ds_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1601,14 +1487,10 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.SynchronizeDcConfigsRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.SynchronizeDcConfigsResponse`
         """
-        return self.synchronize_dc_configs_with_http_info(request)
+        return self._synchronize_dc_configs_with_http_info(request)
 
-    def synchronize_dc_configs_with_http_info(self, request):
-        all_params = ['edge_node_id', 'ds_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _synchronize_dc_configs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1664,14 +1546,10 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.UpdateDcDsRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.UpdateDcDsResponse`
         """
-        return self.update_dc_ds_with_http_info(request)
+        return self._update_dc_ds_with_http_info(request)
 
-    def update_dc_ds_with_http_info(self, request):
-        all_params = ['edge_node_id', 'ds_id', 'update_dc_ds_req_dto']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_dc_ds_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1729,14 +1607,10 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.BatchListDcDevicesRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.BatchListDcDevicesResponse`
         """
-        return self.batch_list_dc_devices_with_http_info(request)
+        return self._batch_list_dc_devices_with_http_info(request)
 
-    def batch_list_dc_devices_with_http_info(self, request):
-        all_params = ['edge_node_id', 'ds_id', 'device_id', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_list_dc_devices_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1798,14 +1672,10 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.BatchListDcPointsRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.BatchListDcPointsResponse`
         """
-        return self.batch_list_dc_points_with_http_info(request)
+        return self._batch_list_dc_points_with_http_info(request)
 
-    def batch_list_dc_points_with_http_info(self, request):
-        all_params = ['edge_node_id', 'ds_id', 'point_id', 'name', '_property', 'device_id', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_list_dc_points_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1873,14 +1743,10 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.CreateDcPointRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.CreateDcPointResponse`
         """
-        return self.create_dc_point_with_http_info(request)
+        return self._create_dc_point_with_http_info(request)
 
-    def create_dc_point_with_http_info(self, request):
-        all_params = ['edge_node_id', 'ds_id', 'create_dc_point_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_dc_point_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1938,14 +1804,10 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.DeleteDcPointRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.DeleteDcPointResponse`
         """
-        return self.delete_dc_point_with_http_info(request)
+        return self._delete_dc_point_with_http_info(request)
 
-    def delete_dc_point_with_http_info(self, request):
-        all_params = ['edge_node_id', 'ds_id', 'point_id', 'device_id', '_property']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_dc_point_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2007,14 +1869,10 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.ShowDcPointRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.ShowDcPointResponse`
         """
-        return self.show_dc_point_with_http_info(request)
+        return self._show_dc_point_with_http_info(request)
 
-    def show_dc_point_with_http_info(self, request):
-        all_params = ['edge_node_id', 'ds_id', 'point_id', 'device_id', '_property']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_dc_point_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2076,14 +1934,10 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.UpdateDcPointRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.UpdateDcPointResponse`
         """
-        return self.update_dc_point_with_http_info(request)
+        return self._update_dc_point_with_http_info(request)
 
-    def update_dc_point_with_http_info(self, request):
-        all_params = ['edge_node_id', 'ds_id', 'point_id', 'update_dc_point_req_dto']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_dc_point_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2143,14 +1997,10 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.CreateExternalEntityRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.CreateExternalEntityResponse`
         """
-        return self.create_external_entity_with_http_info(request)
+        return self._create_external_entity_with_http_info(request)
 
-    def create_external_entity_with_http_info(self, request):
-        all_params = ['edge_node_id', 'create_external_entity_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_external_entity_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2206,14 +2056,10 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.DeleteExternalEntityRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.DeleteExternalEntityResponse`
         """
-        return self.delete_external_entity_with_http_info(request)
+        return self._delete_external_entity_with_http_info(request)
 
-    def delete_external_entity_with_http_info(self, request):
-        all_params = ['edge_node_id', 'external_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_external_entity_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2269,14 +2115,10 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.ListExternalEntityRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.ListExternalEntityResponse`
         """
-        return self.list_external_entity_with_http_info(request)
+        return self._list_external_entity_with_http_info(request)
 
-    def list_external_entity_with_http_info(self, request):
-        all_params = ['edge_node_id', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_external_entity_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2334,14 +2176,10 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.UpdateExternalEntityRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.UpdateExternalEntityResponse`
         """
-        return self.update_external_entity_with_http_info(request)
+        return self._update_external_entity_with_http_info(request)
 
-    def update_external_entity_with_http_info(self, request):
-        all_params = ['edge_node_id', 'external_id', 'update_external_entity_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_external_entity_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2399,14 +2237,10 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.BatchListModulesRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.BatchListModulesResponse`
         """
-        return self.batch_list_modules_with_http_info(request)
+        return self._batch_list_modules_with_http_info(request)
 
-    def batch_list_modules_with_http_info(self, request):
-        all_params = ['edge_node_id', 'offset', 'limit', 'app_type', 'function_type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_list_modules_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2468,14 +2302,10 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.CreateModuleRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.CreateModuleResponse`
         """
-        return self.create_module_with_http_info(request)
+        return self._create_module_with_http_info(request)
 
-    def create_module_with_http_info(self, request):
-        all_params = ['edge_node_id', 'create_module_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_module_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2531,14 +2361,10 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.DeleteModuleRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.DeleteModuleResponse`
         """
-        return self.delete_module_with_http_info(request)
+        return self._delete_module_with_http_info(request)
 
-    def delete_module_with_http_info(self, request):
-        all_params = ['edge_node_id', 'module_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_module_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2594,14 +2420,10 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.ShowModuleRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.ShowModuleResponse`
         """
-        return self.show_module_with_http_info(request)
+        return self._show_module_with_http_info(request)
 
-    def show_module_with_http_info(self, request):
-        all_params = ['edge_node_id', 'module_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_module_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2657,14 +2479,10 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.UpdateModuleRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.UpdateModuleResponse`
         """
-        return self.update_module_with_http_info(request)
+        return self._update_module_with_http_info(request)
 
-    def update_module_with_http_info(self, request):
-        all_params = ['edge_node_id', 'module_id', 'update_module_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_module_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2722,14 +2540,10 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.UpdateModuleStateRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.UpdateModuleStateResponse`
         """
-        return self.update_module_state_with_http_info(request)
+        return self._update_module_state_with_http_info(request)
 
-    def update_module_state_with_http_info(self, request):
-        all_params = ['edge_node_id', 'module_id', 'update_module_state_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_module_state_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2787,14 +2601,10 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.ListRoutesRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.ListRoutesResponse`
         """
-        return self.list_routes_with_http_info(request)
+        return self._list_routes_with_http_info(request)
 
-    def list_routes_with_http_info(self, request):
-        all_params = ['edge_node_id', 'parsed']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_routes_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2850,14 +2660,10 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.UpdateRoutesRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.UpdateRoutesResponse`
         """
-        return self.update_routes_with_http_info(request)
+        return self._update_routes_with_http_info(request)
 
-    def update_routes_with_http_info(self, request):
-        all_params = ['edge_node_id', 'update_routes_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_routes_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2913,14 +2719,10 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.AddGeneralOtTemplateRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.AddGeneralOtTemplateResponse`
         """
-        return self.add_general_ot_template_with_http_info(request)
+        return self._add_general_ot_template_with_http_info(request)
 
-    def add_general_ot_template_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _add_general_ot_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2972,14 +2774,10 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.AddOtTemplatesRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.AddOtTemplatesResponse`
         """
-        return self.add_ot_templates_with_http_info(request)
+        return self._add_ot_templates_with_http_info(request)
 
-    def add_ot_templates_with_http_info(self, request):
-        all_params = ['add_ot_templates_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _add_ot_templates_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3033,14 +2831,10 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.BatchListOtTemplatesRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.BatchListOtTemplatesResponse`
         """
-        return self.batch_list_ot_templates_with_http_info(request)
+        return self._batch_list_ot_templates_with_http_info(request)
 
-    def batch_list_ot_templates_with_http_info(self, request):
-        all_params = ['offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_list_ot_templates_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3096,14 +2890,10 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.DeleteOtTemplateRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.DeleteOtTemplateResponse`
         """
-        return self.delete_ot_template_with_http_info(request)
+        return self._delete_ot_template_with_http_info(request)
 
-    def delete_ot_template_with_http_info(self, request):
-        all_params = ['tpl_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_ot_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3157,14 +2947,10 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.ShowOtTemplateRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.ShowOtTemplateResponse`
         """
-        return self.show_ot_template_with_http_info(request)
+        return self._show_ot_template_with_http_info(request)
 
-    def show_ot_template_with_http_info(self, request):
-        all_params = ['tpl_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_ot_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3218,14 +3004,10 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.ImportPointsRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.ImportPointsResponse`
         """
-        return self.import_points_with_http_info(request)
+        return self._import_points_with_http_info(request)
 
-    def import_points_with_http_info(self, request):
-        all_params = ['edge_node_id', 'ds_id', 'update_type', 'file']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _import_points_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3287,14 +3069,10 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.ShowPointTemplateRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.ShowPointTemplateResponse`
         """
-        return self.show_point_template_with_http_info(request)
+        return self._show_point_template_with_http_info(request)
 
-    def show_point_template_with_http_info(self, request):
-        all_params = ['edge_node_id', 'ds_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_point_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3350,14 +3128,10 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.ShowPointsRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.ShowPointsResponse`
         """
-        return self.show_points_with_http_info(request)
+        return self._show_points_with_http_info(request)
 
-    def show_points_with_http_info(self, request):
-        all_params = ['edge_node_id', 'ds_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_points_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3413,14 +3187,10 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.BatchConfirmConfigsNewRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.BatchConfirmConfigsNewResponse`
         """
-        return self.batch_confirm_configs_new_with_http_info(request)
+        return self._batch_confirm_configs_new_with_http_info(request)
 
-    def batch_confirm_configs_new_with_http_info(self, request):
-        all_params = ['node_id', 'ia_id', 'batch_confirm_configs_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_confirm_configs_new_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3478,14 +3248,10 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.BatchImportConfigsRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.BatchImportConfigsResponse`
         """
-        return self.batch_import_configs_with_http_info(request)
+        return self._batch_import_configs_with_http_info(request)
 
-    def batch_import_configs_with_http_info(self, request):
-        all_params = ['node_id', 'ia_id', 'batch_import_configs_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_import_configs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3543,14 +3309,10 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.DeleteIaConfigRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.DeleteIaConfigResponse`
         """
-        return self.delete_ia_config_with_http_info(request)
+        return self._delete_ia_config_with_http_info(request)
 
-    def delete_ia_config_with_http_info(self, request):
-        all_params = ['node_id', 'ia_id', 'config_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_ia_config_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3608,14 +3370,10 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.ListIaConfigsRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.ListIaConfigsResponse`
         """
-        return self.list_ia_configs_with_http_info(request)
+        return self._list_ia_configs_with_http_info(request)
 
-    def list_ia_configs_with_http_info(self, request):
-        all_params = ['node_id', 'ia_id', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_ia_configs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3675,14 +3433,10 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.ShowIaConfigRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.ShowIaConfigResponse`
         """
-        return self.show_ia_config_with_http_info(request)
+        return self._show_ia_config_with_http_info(request)
 
-    def show_ia_config_with_http_info(self, request):
-        all_params = ['node_id', 'ia_id', 'config_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_ia_config_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3740,14 +3494,10 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.UpdateIaConfigRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.UpdateIaConfigResponse`
         """
-        return self.update_ia_config_with_http_info(request)
+        return self._update_ia_config_with_http_info(request)
 
-    def update_ia_config_with_http_info(self, request):
-        all_params = ['node_id', 'ia_id', 'config_id', 'update_ia_config_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_ia_config_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3808,14 +3558,10 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.BatchAssociateNaToNodesRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.BatchAssociateNaToNodesResponse`
         """
-        return self.batch_associate_na_to_nodes_with_http_info(request)
+        return self._batch_associate_na_to_nodes_with_http_info(request)
 
-    def batch_associate_na_to_nodes_with_http_info(self, request):
-        all_params = ['na_id', 'action', 'batch_authorize_na_to_nodes_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_associate_na_to_nodes_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3873,14 +3619,10 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.DeleteNaRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.DeleteNaResponse`
         """
-        return self.delete_na_with_http_info(request)
+        return self._delete_na_with_http_info(request)
 
-    def delete_na_with_http_info(self, request):
-        all_params = ['na_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_na_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3934,14 +3676,10 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.ListNaAuthorizedNodesRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.ListNaAuthorizedNodesResponse`
         """
-        return self.list_na_authorized_nodes_with_http_info(request)
+        return self._list_na_authorized_nodes_with_http_info(request)
 
-    def list_na_authorized_nodes_with_http_info(self, request):
-        all_params = ['na_id', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_na_authorized_nodes_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3999,14 +3737,10 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.ListNasRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.ListNasResponse`
         """
-        return self.list_nas_with_http_info(request)
+        return self._list_nas_with_http_info(request)
 
-    def list_nas_with_http_info(self, request):
-        all_params = ['name', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_nas_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4064,14 +3798,10 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.ShowNaRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.ShowNaResponse`
         """
-        return self.show_na_with_http_info(request)
+        return self._show_na_with_http_info(request)
 
-    def show_na_with_http_info(self, request):
-        all_params = ['na_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_na_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4125,14 +3855,10 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.UpdateNaRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.UpdateNaResponse`
         """
-        return self.update_na_with_http_info(request)
+        return self._update_na_with_http_info(request)
 
-    def update_na_with_http_info(self, request):
-        all_params = ['na_id', 'update_na_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_na_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

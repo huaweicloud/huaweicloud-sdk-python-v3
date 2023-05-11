@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class WafClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(WafClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkwaf.v1.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -53,14 +35,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ApplyCertificateToHostRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ApplyCertificateToHostResponse`
         """
-        return self.apply_certificate_to_host_with_http_info(request)
+        return self._apply_certificate_to_host_with_http_info(request)
 
-    def apply_certificate_to_host_with_http_info(self, request):
-        all_params = ['certificate_id', 'enterprise_project_id', 'apply_certificate_to_host_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _apply_certificate_to_host_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -120,14 +98,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ChangePrepaidCloudWafRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ChangePrepaidCloudWafResponse`
         """
-        return self.change_prepaid_cloud_waf_with_http_info(request)
+        return self._change_prepaid_cloud_waf_with_http_info(request)
 
-    def change_prepaid_cloud_waf_with_http_info(self, request):
-        all_params = ['change_prepaid_cloud_waf_request_body', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _change_prepaid_cloud_waf_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -182,14 +156,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.CreateAntiTamperRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.CreateAntiTamperRuleResponse`
         """
-        return self.create_anti_tamper_rule_with_http_info(request)
+        return self._create_anti_tamper_rule_with_http_info(request)
 
-    def create_anti_tamper_rule_with_http_info(self, request):
-        all_params = ['policy_id', 'create_anti_tamper_rule_request_body', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_anti_tamper_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -246,14 +216,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.CreateAnticrawlerRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.CreateAnticrawlerRuleResponse`
         """
-        return self.create_anticrawler_rule_with_http_info(request)
+        return self._create_anticrawler_rule_with_http_info(request)
 
-    def create_anticrawler_rule_with_http_info(self, request):
-        all_params = ['policy_id', 'create_anticrawler_rule_request_body', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_anticrawler_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -310,14 +276,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.CreateAntileakageRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.CreateAntileakageRuleResponse`
         """
-        return self.create_antileakage_rule_with_http_info(request)
+        return self._create_antileakage_rule_with_http_info(request)
 
-    def create_antileakage_rule_with_http_info(self, request):
-        all_params = ['policy_id', 'create_antileakage_rule_request_body', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_antileakage_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -374,14 +336,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.CreateCcRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.CreateCcRuleResponse`
         """
-        return self.create_cc_rule_with_http_info(request)
+        return self._create_cc_rule_with_http_info(request)
 
-    def create_cc_rule_with_http_info(self, request):
-        all_params = ['policy_id', 'enterprise_project_id', 'create_cc_rule_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_cc_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -438,14 +396,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.CreateCertificateRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.CreateCertificateResponse`
         """
-        return self.create_certificate_with_http_info(request)
+        return self._create_certificate_with_http_info(request)
 
-    def create_certificate_with_http_info(self, request):
-        all_params = ['create_certificate_request_body', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_certificate_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -500,14 +454,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.CreateCloudWafPostPaidResourceRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.CreateCloudWafPostPaidResourceResponse`
         """
-        return self.create_cloud_waf_post_paid_resource_with_http_info(request)
+        return self._create_cloud_waf_post_paid_resource_with_http_info(request)
 
-    def create_cloud_waf_post_paid_resource_with_http_info(self, request):
-        all_params = ['region', 'create_cloud_waf_post_paid_resource_request_body', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_cloud_waf_post_paid_resource_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -564,14 +514,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.CreateCustomRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.CreateCustomRuleResponse`
         """
-        return self.create_custom_rule_with_http_info(request)
+        return self._create_custom_rule_with_http_info(request)
 
-    def create_custom_rule_with_http_info(self, request):
-        all_params = ['policy_id', 'create_custom_rule_request_body', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_custom_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -628,14 +574,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.CreateGeoipRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.CreateGeoipRuleResponse`
         """
-        return self.create_geoip_rule_with_http_info(request)
+        return self._create_geoip_rule_with_http_info(request)
 
-    def create_geoip_rule_with_http_info(self, request):
-        all_params = ['policy_id', 'create_geo_ip_rule_request_body', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_geoip_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -692,14 +634,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.CreateHostRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.CreateHostResponse`
         """
-        return self.create_host_with_http_info(request)
+        return self._create_host_with_http_info(request)
 
-    def create_host_with_http_info(self, request):
-        all_params = ['create_host_request_body', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_host_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -754,14 +692,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.CreateIgnoreRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.CreateIgnoreRuleResponse`
         """
-        return self.create_ignore_rule_with_http_info(request)
+        return self._create_ignore_rule_with_http_info(request)
 
-    def create_ignore_rule_with_http_info(self, request):
-        all_params = ['policy_id', 'create_ignore_rule_request_body', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_ignore_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -818,14 +752,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.CreateInstanceRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.CreateInstanceResponse`
         """
-        return self.create_instance_with_http_info(request)
+        return self._create_instance_with_http_info(request)
 
-    def create_instance_with_http_info(self, request):
-        all_params = ['create_instance_request_body', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -880,14 +810,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.CreateIpGroupRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.CreateIpGroupResponse`
         """
-        return self.create_ip_group_with_http_info(request)
+        return self._create_ip_group_with_http_info(request)
 
-    def create_ip_group_with_http_info(self, request):
-        all_params = ['create_ip_group_request_body', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_ip_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -942,14 +868,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.CreatePolicyRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.CreatePolicyResponse`
         """
-        return self.create_policy_with_http_info(request)
+        return self._create_policy_with_http_info(request)
 
-    def create_policy_with_http_info(self, request):
-        all_params = ['create_policy_request_body', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_policy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1004,14 +926,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.CreatePremiumHostRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.CreatePremiumHostResponse`
         """
-        return self.create_premium_host_with_http_info(request)
+        return self._create_premium_host_with_http_info(request)
 
-    def create_premium_host_with_http_info(self, request):
-        all_params = ['enterprise_project_id', 'create_premium_host_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_premium_host_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1066,14 +984,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.CreatePrepaidCloudWafRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.CreatePrepaidCloudWafResponse`
         """
-        return self.create_prepaid_cloud_waf_with_http_info(request)
+        return self._create_prepaid_cloud_waf_with_http_info(request)
 
-    def create_prepaid_cloud_waf_with_http_info(self, request):
-        all_params = ['create_prepaid_cloud_waf_request_body', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_prepaid_cloud_waf_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1128,14 +1042,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.CreatePrivacyRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.CreatePrivacyRuleResponse`
         """
-        return self.create_privacy_rule_with_http_info(request)
+        return self._create_privacy_rule_with_http_info(request)
 
-    def create_privacy_rule_with_http_info(self, request):
-        all_params = ['policy_id', 'create_privacy_rule_request_body', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_privacy_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1192,14 +1102,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.CreatePunishmentRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.CreatePunishmentRuleResponse`
         """
-        return self.create_punishment_rule_with_http_info(request)
+        return self._create_punishment_rule_with_http_info(request)
 
-    def create_punishment_rule_with_http_info(self, request):
-        all_params = ['policy_id', 'create_punishment_rule_request_body', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_punishment_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1256,14 +1162,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.CreateValueListRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.CreateValueListResponse`
         """
-        return self.create_value_list_with_http_info(request)
+        return self._create_value_list_with_http_info(request)
 
-    def create_value_list_with_http_info(self, request):
-        all_params = ['create_value_list_request_body', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_value_list_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1318,14 +1220,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.CreateWhiteblackipRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.CreateWhiteblackipRuleResponse`
         """
-        return self.create_whiteblackip_rule_with_http_info(request)
+        return self._create_whiteblackip_rule_with_http_info(request)
 
-    def create_whiteblackip_rule_with_http_info(self, request):
-        all_params = ['policy_id', 'create_whiteblackip_rule_request_body', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_whiteblackip_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1382,14 +1280,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.DeleteAnticrawlerRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.DeleteAnticrawlerRuleResponse`
         """
-        return self.delete_anticrawler_rule_with_http_info(request)
+        return self._delete_anticrawler_rule_with_http_info(request)
 
-    def delete_anticrawler_rule_with_http_info(self, request):
-        all_params = ['policy_id', 'rule_id', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_anticrawler_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1446,14 +1340,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.DeleteAntileakageRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.DeleteAntileakageRuleResponse`
         """
-        return self.delete_antileakage_rule_with_http_info(request)
+        return self._delete_antileakage_rule_with_http_info(request)
 
-    def delete_antileakage_rule_with_http_info(self, request):
-        all_params = ['policy_id', 'rule_id', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_antileakage_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1510,14 +1400,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.DeleteAntitamperRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.DeleteAntitamperRuleResponse`
         """
-        return self.delete_antitamper_rule_with_http_info(request)
+        return self._delete_antitamper_rule_with_http_info(request)
 
-    def delete_antitamper_rule_with_http_info(self, request):
-        all_params = ['policy_id', 'rule_id', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_antitamper_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1574,14 +1460,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.DeleteCcRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.DeleteCcRuleResponse`
         """
-        return self.delete_cc_rule_with_http_info(request)
+        return self._delete_cc_rule_with_http_info(request)
 
-    def delete_cc_rule_with_http_info(self, request):
-        all_params = ['policy_id', 'rule_id', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_cc_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1638,14 +1520,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.DeleteCertificateRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.DeleteCertificateResponse`
         """
-        return self.delete_certificate_with_http_info(request)
+        return self._delete_certificate_with_http_info(request)
 
-    def delete_certificate_with_http_info(self, request):
-        all_params = ['certificate_id', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_certificate_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1700,14 +1578,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.DeleteCloudWafPostPaidResourceRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.DeleteCloudWafPostPaidResourceResponse`
         """
-        return self.delete_cloud_waf_post_paid_resource_with_http_info(request)
+        return self._delete_cloud_waf_post_paid_resource_with_http_info(request)
 
-    def delete_cloud_waf_post_paid_resource_with_http_info(self, request):
-        all_params = ['region', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_cloud_waf_post_paid_resource_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1762,14 +1636,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.DeleteCustomRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.DeleteCustomRuleResponse`
         """
-        return self.delete_custom_rule_with_http_info(request)
+        return self._delete_custom_rule_with_http_info(request)
 
-    def delete_custom_rule_with_http_info(self, request):
-        all_params = ['policy_id', 'rule_id', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_custom_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1826,14 +1696,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.DeleteGeoipRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.DeleteGeoipRuleResponse`
         """
-        return self.delete_geoip_rule_with_http_info(request)
+        return self._delete_geoip_rule_with_http_info(request)
 
-    def delete_geoip_rule_with_http_info(self, request):
-        all_params = ['policy_id', 'rule_id', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_geoip_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1890,14 +1756,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.DeleteHostRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.DeleteHostResponse`
         """
-        return self.delete_host_with_http_info(request)
+        return self._delete_host_with_http_info(request)
 
-    def delete_host_with_http_info(self, request):
-        all_params = ['instance_id', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_host_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1952,14 +1814,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.DeleteIgnoreRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.DeleteIgnoreRuleResponse`
         """
-        return self.delete_ignore_rule_with_http_info(request)
+        return self._delete_ignore_rule_with_http_info(request)
 
-    def delete_ignore_rule_with_http_info(self, request):
-        all_params = ['policy_id', 'rule_id', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_ignore_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2016,14 +1874,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.DeleteInstanceRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.DeleteInstanceResponse`
         """
-        return self.delete_instance_with_http_info(request)
+        return self._delete_instance_with_http_info(request)
 
-    def delete_instance_with_http_info(self, request):
-        all_params = ['instance_id', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2078,14 +1932,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.DeleteIpGroupRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.DeleteIpGroupResponse`
         """
-        return self.delete_ip_group_with_http_info(request)
+        return self._delete_ip_group_with_http_info(request)
 
-    def delete_ip_group_with_http_info(self, request):
-        all_params = ['id', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_ip_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2140,14 +1990,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.DeletePolicyRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.DeletePolicyResponse`
         """
-        return self.delete_policy_with_http_info(request)
+        return self._delete_policy_with_http_info(request)
 
-    def delete_policy_with_http_info(self, request):
-        all_params = ['policy_id', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_policy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2202,14 +2048,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.DeletePremiumHostRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.DeletePremiumHostResponse`
         """
-        return self.delete_premium_host_with_http_info(request)
+        return self._delete_premium_host_with_http_info(request)
 
-    def delete_premium_host_with_http_info(self, request):
-        all_params = ['host_id', 'enterprise_project_id', 'keep_policy']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_premium_host_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2266,14 +2108,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.DeletePrivacyRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.DeletePrivacyRuleResponse`
         """
-        return self.delete_privacy_rule_with_http_info(request)
+        return self._delete_privacy_rule_with_http_info(request)
 
-    def delete_privacy_rule_with_http_info(self, request):
-        all_params = ['policy_id', 'rule_id', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_privacy_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2330,14 +2168,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.DeletePunishmentRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.DeletePunishmentRuleResponse`
         """
-        return self.delete_punishment_rule_with_http_info(request)
+        return self._delete_punishment_rule_with_http_info(request)
 
-    def delete_punishment_rule_with_http_info(self, request):
-        all_params = ['policy_id', 'rule_id', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_punishment_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2394,14 +2228,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.DeleteValueListRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.DeleteValueListResponse`
         """
-        return self.delete_value_list_with_http_info(request)
+        return self._delete_value_list_with_http_info(request)
 
-    def delete_value_list_with_http_info(self, request):
-        all_params = ['valuelistid', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_value_list_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2456,14 +2286,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.DeleteWhiteBlackIpRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.DeleteWhiteBlackIpRuleResponse`
         """
-        return self.delete_white_black_ip_rule_with_http_info(request)
+        return self._delete_white_black_ip_rule_with_http_info(request)
 
-    def delete_white_black_ip_rule_with_http_info(self, request):
-        all_params = ['policy_id', 'rule_id', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_white_black_ip_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2520,14 +2346,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ListAnticrawlerRulesRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ListAnticrawlerRulesResponse`
         """
-        return self.list_anticrawler_rules_with_http_info(request)
+        return self._list_anticrawler_rules_with_http_info(request)
 
-    def list_anticrawler_rules_with_http_info(self, request):
-        all_params = ['policy_id', 'offset', 'limit', 'enterprise_project_id', 'type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_anticrawler_rules_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2588,14 +2410,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ListAntileakageRulesRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ListAntileakageRulesResponse`
         """
-        return self.list_antileakage_rules_with_http_info(request)
+        return self._list_antileakage_rules_with_http_info(request)
 
-    def list_antileakage_rules_with_http_info(self, request):
-        all_params = ['policy_id', 'offset', 'limit', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_antileakage_rules_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2654,14 +2472,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ListAntitamperRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ListAntitamperRuleResponse`
         """
-        return self.list_antitamper_rule_with_http_info(request)
+        return self._list_antitamper_rule_with_http_info(request)
 
-    def list_antitamper_rule_with_http_info(self, request):
-        all_params = ['policy_id', 'enterprise_project_id', 'page', 'pagesize']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_antitamper_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2720,14 +2534,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ListBandwidthTimelineRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ListBandwidthTimelineResponse`
         """
-        return self.list_bandwidth_timeline_with_http_info(request)
+        return self._list_bandwidth_timeline_with_http_info(request)
 
-    def list_bandwidth_timeline_with_http_info(self, request):
-        all_params = ['_from', 'to', 'enterprise_project_id', 'hosts', 'instances', 'group_by']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_bandwidth_timeline_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2790,14 +2600,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ListCcRulesRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ListCcRulesResponse`
         """
-        return self.list_cc_rules_with_http_info(request)
+        return self._list_cc_rules_with_http_info(request)
 
-    def list_cc_rules_with_http_info(self, request):
-        all_params = ['policy_id', 'offset', 'limit', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_cc_rules_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2856,14 +2662,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ListCertificatesRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ListCertificatesResponse`
         """
-        return self.list_certificates_with_http_info(request)
+        return self._list_certificates_with_http_info(request)
 
-    def list_certificates_with_http_info(self, request):
-        all_params = ['enterprise_project_id', 'page', 'pagesize', 'name', 'host', 'exp_status']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_certificates_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2926,14 +2728,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ListCompositeHostsRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ListCompositeHostsResponse`
         """
-        return self.list_composite_hosts_with_http_info(request)
+        return self._list_composite_hosts_with_http_info(request)
 
-    def list_composite_hosts_with_http_info(self, request):
-        all_params = ['enterprise_project_id', 'page', 'pagesize', 'hostname', 'policyname', 'protect_status', 'waf_type', 'is_https']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_composite_hosts_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3000,14 +2798,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ListCustomRulesRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ListCustomRulesResponse`
         """
-        return self.list_custom_rules_with_http_info(request)
+        return self._list_custom_rules_with_http_info(request)
 
-    def list_custom_rules_with_http_info(self, request):
-        all_params = ['policy_id', 'offset', 'limit', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_custom_rules_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3066,14 +2860,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ListEventRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ListEventResponse`
         """
-        return self.list_event_with_http_info(request)
+        return self._list_event_with_http_info(request)
 
-    def list_event_with_http_info(self, request):
-        all_params = ['enterprise_project_id', 'recent', '_from', 'to', 'attacks', 'hosts', 'page', 'pagesize']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_event_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3142,14 +2932,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ListGeoipRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ListGeoipRuleResponse`
         """
-        return self.list_geoip_rule_with_http_info(request)
+        return self._list_geoip_rule_with_http_info(request)
 
-    def list_geoip_rule_with_http_info(self, request):
-        all_params = ['policy_id', 'enterprise_project_id', 'page', 'pagesize']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_geoip_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3208,14 +2994,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ListHostRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ListHostResponse`
         """
-        return self.list_host_with_http_info(request)
+        return self._list_host_with_http_info(request)
 
-    def list_host_with_http_info(self, request):
-        all_params = ['enterprise_project_id', 'page', 'pagesize', 'hostname', 'policyname']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_host_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3276,14 +3058,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ListHostRouteRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ListHostRouteResponse`
         """
-        return self.list_host_route_with_http_info(request)
+        return self._list_host_route_with_http_info(request)
 
-    def list_host_route_with_http_info(self, request):
-        all_params = ['instance_id', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_host_route_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3338,14 +3116,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ListIgnoreRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ListIgnoreRuleResponse`
         """
-        return self.list_ignore_rule_with_http_info(request)
+        return self._list_ignore_rule_with_http_info(request)
 
-    def list_ignore_rule_with_http_info(self, request):
-        all_params = ['policy_id', 'enterprise_project_id', 'page', 'pagesize']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_ignore_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3404,14 +3178,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ListInstanceRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ListInstanceResponse`
         """
-        return self.list_instance_with_http_info(request)
+        return self._list_instance_with_http_info(request)
 
-    def list_instance_with_http_info(self, request):
-        all_params = ['enterprise_project_id', 'page', 'pagesize', 'instancename']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3470,14 +3240,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ListIpGroupRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ListIpGroupResponse`
         """
-        return self.list_ip_group_with_http_info(request)
+        return self._list_ip_group_with_http_info(request)
 
-    def list_ip_group_with_http_info(self, request):
-        all_params = ['enterprise_project_id', 'page', 'pagesize', 'name', 'ip']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_ip_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3538,14 +3304,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ListNoticeConfigsRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ListNoticeConfigsResponse`
         """
-        return self.list_notice_configs_with_http_info(request)
+        return self._list_notice_configs_with_http_info(request)
 
-    def list_notice_configs_with_http_info(self, request):
-        all_params = ['enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_notice_configs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3598,14 +3360,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ListOverviewsClassificationRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ListOverviewsClassificationResponse`
         """
-        return self.list_overviews_classification_with_http_info(request)
+        return self._list_overviews_classification_with_http_info(request)
 
-    def list_overviews_classification_with_http_info(self, request):
-        all_params = ['_from', 'to', 'enterprise_project_id', 'top', 'hosts', 'instances']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_overviews_classification_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3668,14 +3426,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ListPolicyRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ListPolicyResponse`
         """
-        return self.list_policy_with_http_info(request)
+        return self._list_policy_with_http_info(request)
 
-    def list_policy_with_http_info(self, request):
-        all_params = ['enterprise_project_id', 'page', 'pagesize', 'name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_policy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3734,14 +3488,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ListPremiumHostRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ListPremiumHostResponse`
         """
-        return self.list_premium_host_with_http_info(request)
+        return self._list_premium_host_with_http_info(request)
 
-    def list_premium_host_with_http_info(self, request):
-        all_params = ['enterprise_project_id', 'page', 'pagesize', 'hostname', 'policyname', 'protect_status']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_premium_host_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3804,14 +3554,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ListPrivacyRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ListPrivacyRuleResponse`
         """
-        return self.list_privacy_rule_with_http_info(request)
+        return self._list_privacy_rule_with_http_info(request)
 
-    def list_privacy_rule_with_http_info(self, request):
-        all_params = ['policy_id', 'enterprise_project_id', 'page', 'pagesize']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_privacy_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3870,14 +3616,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ListPunishmentRulesRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ListPunishmentRulesResponse`
         """
-        return self.list_punishment_rules_with_http_info(request)
+        return self._list_punishment_rules_with_http_info(request)
 
-    def list_punishment_rules_with_http_info(self, request):
-        all_params = ['policy_id', 'offset', 'limit', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_punishment_rules_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3936,14 +3678,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ListQpsTimelineRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ListQpsTimelineResponse`
         """
-        return self.list_qps_timeline_with_http_info(request)
+        return self._list_qps_timeline_with_http_info(request)
 
-    def list_qps_timeline_with_http_info(self, request):
-        all_params = ['_from', 'to', 'enterprise_project_id', 'hosts', 'instances', 'group_by']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_qps_timeline_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4006,14 +3744,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ListRequestTimelineRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ListRequestTimelineResponse`
         """
-        return self.list_request_timeline_with_http_info(request)
+        return self._list_request_timeline_with_http_info(request)
 
-    def list_request_timeline_with_http_info(self, request):
-        all_params = ['_from', 'to', 'enterprise_project_id', 'hosts', 'instances', 'group_by']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_request_timeline_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4078,14 +3812,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ListStatisticsRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ListStatisticsResponse`
         """
-        return self.list_statistics_with_http_info(request)
+        return self._list_statistics_with_http_info(request)
 
-    def list_statistics_with_http_info(self, request):
-        all_params = ['_from', 'to', 'enterprise_project_id', 'hosts', 'instances']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_statistics_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4146,14 +3876,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ListTopAbnormalRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ListTopAbnormalResponse`
         """
-        return self.list_top_abnormal_with_http_info(request)
+        return self._list_top_abnormal_with_http_info(request)
 
-    def list_top_abnormal_with_http_info(self, request):
-        all_params = ['_from', 'to', 'enterprise_project_id', 'top', 'code', 'hosts', 'instances']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_top_abnormal_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4218,14 +3944,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ListValueListRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ListValueListResponse`
         """
-        return self.list_value_list_with_http_info(request)
+        return self._list_value_list_with_http_info(request)
 
-    def list_value_list_with_http_info(self, request):
-        all_params = ['page', 'pagesize', 'name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_value_list_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4282,14 +4004,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ListWhiteblackipRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ListWhiteblackipRuleResponse`
         """
-        return self.list_whiteblackip_rule_with_http_info(request)
+        return self._list_whiteblackip_rule_with_http_info(request)
 
-    def list_whiteblackip_rule_with_http_info(self, request):
-        all_params = ['policy_id', 'enterprise_project_id', 'page', 'pagesize', 'name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_whiteblackip_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4350,14 +4068,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.MigrateCompositeHostsRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.MigrateCompositeHostsResponse`
         """
-        return self.migrate_composite_hosts_with_http_info(request)
+        return self._migrate_composite_hosts_with_http_info(request)
 
-    def migrate_composite_hosts_with_http_info(self, request):
-        all_params = ['enterprise_project_id', 'target_enterprise_project_id', 'migrate_composite_hosts_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _migrate_composite_hosts_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4414,14 +4128,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.RenameInstanceRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.RenameInstanceResponse`
         """
-        return self.rename_instance_with_http_info(request)
+        return self._rename_instance_with_http_info(request)
 
-    def rename_instance_with_http_info(self, request):
-        all_params = ['instance_id', 'enterprise_project_id', 'rename_instance_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _rename_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4478,14 +4188,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ShowAnticrawlerRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ShowAnticrawlerRuleResponse`
         """
-        return self.show_anticrawler_rule_with_http_info(request)
+        return self._show_anticrawler_rule_with_http_info(request)
 
-    def show_anticrawler_rule_with_http_info(self, request):
-        all_params = ['policy_id', 'rule_id', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_anticrawler_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4542,14 +4248,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ShowAntileakageRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ShowAntileakageRuleResponse`
         """
-        return self.show_antileakage_rule_with_http_info(request)
+        return self._show_antileakage_rule_with_http_info(request)
 
-    def show_antileakage_rule_with_http_info(self, request):
-        all_params = ['policy_id', 'rule_id', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_antileakage_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4606,14 +4308,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ShowAntitamperRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ShowAntitamperRuleResponse`
         """
-        return self.show_antitamper_rule_with_http_info(request)
+        return self._show_antitamper_rule_with_http_info(request)
 
-    def show_antitamper_rule_with_http_info(self, request):
-        all_params = ['policy_id', 'rule_id', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_antitamper_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4670,14 +4368,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ShowCcRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ShowCcRuleResponse`
         """
-        return self.show_cc_rule_with_http_info(request)
+        return self._show_cc_rule_with_http_info(request)
 
-    def show_cc_rule_with_http_info(self, request):
-        all_params = ['policy_id', 'rule_id', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_cc_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4734,14 +4428,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ShowCertificateRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ShowCertificateResponse`
         """
-        return self.show_certificate_with_http_info(request)
+        return self._show_certificate_with_http_info(request)
 
-    def show_certificate_with_http_info(self, request):
-        all_params = ['certificate_id', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_certificate_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4796,14 +4486,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ShowCompositeHostRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ShowCompositeHostResponse`
         """
-        return self.show_composite_host_with_http_info(request)
+        return self._show_composite_host_with_http_info(request)
 
-    def show_composite_host_with_http_info(self, request):
-        all_params = ['host_id', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_composite_host_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4858,14 +4544,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ShowConsoleConfigRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ShowConsoleConfigResponse`
         """
-        return self.show_console_config_with_http_info(request)
+        return self._show_console_config_with_http_info(request)
 
-    def show_console_config_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_console_config_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4916,14 +4598,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ShowCustomRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ShowCustomRuleResponse`
         """
-        return self.show_custom_rule_with_http_info(request)
+        return self._show_custom_rule_with_http_info(request)
 
-    def show_custom_rule_with_http_info(self, request):
-        all_params = ['policy_id', 'rule_id', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_custom_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4980,14 +4658,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ShowEventRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ShowEventResponse`
         """
-        return self.show_event_with_http_info(request)
+        return self._show_event_with_http_info(request)
 
-    def show_event_with_http_info(self, request):
-        all_params = ['eventid', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_event_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5042,14 +4716,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ShowGeoipRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ShowGeoipRuleResponse`
         """
-        return self.show_geoip_rule_with_http_info(request)
+        return self._show_geoip_rule_with_http_info(request)
 
-    def show_geoip_rule_with_http_info(self, request):
-        all_params = ['policy_id', 'rule_id', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_geoip_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5106,14 +4776,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ShowHostRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ShowHostResponse`
         """
-        return self.show_host_with_http_info(request)
+        return self._show_host_with_http_info(request)
 
-    def show_host_with_http_info(self, request):
-        all_params = ['instance_id', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_host_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5168,14 +4834,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ShowIgnoreRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ShowIgnoreRuleResponse`
         """
-        return self.show_ignore_rule_with_http_info(request)
+        return self._show_ignore_rule_with_http_info(request)
 
-    def show_ignore_rule_with_http_info(self, request):
-        all_params = ['policy_id', 'rule_id', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_ignore_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5232,14 +4894,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ShowInstanceRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ShowInstanceResponse`
         """
-        return self.show_instance_with_http_info(request)
+        return self._show_instance_with_http_info(request)
 
-    def show_instance_with_http_info(self, request):
-        all_params = ['instance_id', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5294,14 +4952,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ShowIpGroupRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ShowIpGroupResponse`
         """
-        return self.show_ip_group_with_http_info(request)
+        return self._show_ip_group_with_http_info(request)
 
-    def show_ip_group_with_http_info(self, request):
-        all_params = ['id', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_ip_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5356,14 +5010,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ShowLtsInfoConfigRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ShowLtsInfoConfigResponse`
         """
-        return self.show_lts_info_config_with_http_info(request)
+        return self._show_lts_info_config_with_http_info(request)
 
-    def show_lts_info_config_with_http_info(self, request):
-        all_params = ['enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_lts_info_config_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5416,14 +5066,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ShowPolicyRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ShowPolicyResponse`
         """
-        return self.show_policy_with_http_info(request)
+        return self._show_policy_with_http_info(request)
 
-    def show_policy_with_http_info(self, request):
-        all_params = ['policy_id', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_policy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5478,14 +5124,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ShowPremiumHostRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ShowPremiumHostResponse`
         """
-        return self.show_premium_host_with_http_info(request)
+        return self._show_premium_host_with_http_info(request)
 
-    def show_premium_host_with_http_info(self, request):
-        all_params = ['host_id', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_premium_host_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5540,14 +5182,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ShowPrivacyRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ShowPrivacyRuleResponse`
         """
-        return self.show_privacy_rule_with_http_info(request)
+        return self._show_privacy_rule_with_http_info(request)
 
-    def show_privacy_rule_with_http_info(self, request):
-        all_params = ['policy_id', 'rule_id', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_privacy_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5604,14 +5242,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ShowPunishmentRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ShowPunishmentRuleResponse`
         """
-        return self.show_punishment_rule_with_http_info(request)
+        return self._show_punishment_rule_with_http_info(request)
 
-    def show_punishment_rule_with_http_info(self, request):
-        all_params = ['policy_id', 'rule_id', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_punishment_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5668,14 +5302,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ShowSourceIpRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ShowSourceIpResponse`
         """
-        return self.show_source_ip_with_http_info(request)
+        return self._show_source_ip_with_http_info(request)
 
-    def show_source_ip_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_source_ip_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5726,14 +5356,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ShowSubscriptionInfoRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ShowSubscriptionInfoResponse`
         """
-        return self.show_subscription_info_with_http_info(request)
+        return self._show_subscription_info_with_http_info(request)
 
-    def show_subscription_info_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_subscription_info_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5784,14 +5410,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ShowValueListRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ShowValueListResponse`
         """
-        return self.show_value_list_with_http_info(request)
+        return self._show_value_list_with_http_info(request)
 
-    def show_value_list_with_http_info(self, request):
-        all_params = ['valuelistid', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_value_list_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5846,14 +5468,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ShowWhiteBlackIpRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ShowWhiteBlackIpRuleResponse`
         """
-        return self.show_white_black_ip_rule_with_http_info(request)
+        return self._show_white_black_ip_rule_with_http_info(request)
 
-    def show_white_black_ip_rule_with_http_info(self, request):
-        all_params = ['policy_id', 'rule_id', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_white_black_ip_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5910,14 +5528,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.UpdateAlertNoticeConfigRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.UpdateAlertNoticeConfigResponse`
         """
-        return self.update_alert_notice_config_with_http_info(request)
+        return self._update_alert_notice_config_with_http_info(request)
 
-    def update_alert_notice_config_with_http_info(self, request):
-        all_params = ['x_language', 'alert_id', 'update_alert_notice_config_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_alert_notice_config_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5974,14 +5588,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.UpdateAntiTamperRuleRefreshRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.UpdateAntiTamperRuleRefreshResponse`
         """
-        return self.update_anti_tamper_rule_refresh_with_http_info(request)
+        return self._update_anti_tamper_rule_refresh_with_http_info(request)
 
-    def update_anti_tamper_rule_refresh_with_http_info(self, request):
-        all_params = ['policy_id', 'rule_id', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_anti_tamper_rule_refresh_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6038,14 +5648,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.UpdateAnticrawlerRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.UpdateAnticrawlerRuleResponse`
         """
-        return self.update_anticrawler_rule_with_http_info(request)
+        return self._update_anticrawler_rule_with_http_info(request)
 
-    def update_anticrawler_rule_with_http_info(self, request):
-        all_params = ['policy_id', 'rule_id', 'update_anticrawler_rule_request_body', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_anticrawler_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6104,14 +5710,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.UpdateAnticrawlerRuleTypeRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.UpdateAnticrawlerRuleTypeResponse`
         """
-        return self.update_anticrawler_rule_type_with_http_info(request)
+        return self._update_anticrawler_rule_type_with_http_info(request)
 
-    def update_anticrawler_rule_type_with_http_info(self, request):
-        all_params = ['policy_id', 'update_anticrawler_rule_type_requestbody', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_anticrawler_rule_type_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6168,14 +5770,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.UpdateAntileakageRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.UpdateAntileakageRuleResponse`
         """
-        return self.update_antileakage_rule_with_http_info(request)
+        return self._update_antileakage_rule_with_http_info(request)
 
-    def update_antileakage_rule_with_http_info(self, request):
-        all_params = ['policy_id', 'rule_id', 'update_antileakage_rule_request_body', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_antileakage_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6234,14 +5832,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.UpdateCcRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.UpdateCcRuleResponse`
         """
-        return self.update_cc_rule_with_http_info(request)
+        return self._update_cc_rule_with_http_info(request)
 
-    def update_cc_rule_with_http_info(self, request):
-        all_params = ['policy_id', 'rule_id', 'enterprise_project_id', 'update_cc_rule_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_cc_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6300,14 +5894,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.UpdateCertificateRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.UpdateCertificateResponse`
         """
-        return self.update_certificate_with_http_info(request)
+        return self._update_certificate_with_http_info(request)
 
-    def update_certificate_with_http_info(self, request):
-        all_params = ['certificate_id', 'enterprise_project_id', 'update_certificate_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_certificate_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6364,14 +5954,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.UpdateCustomRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.UpdateCustomRuleResponse`
         """
-        return self.update_custom_rule_with_http_info(request)
+        return self._update_custom_rule_with_http_info(request)
 
-    def update_custom_rule_with_http_info(self, request):
-        all_params = ['policy_id', 'rule_id', 'update_custom_rule_request_body', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_custom_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6430,14 +6016,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.UpdateGeoipRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.UpdateGeoipRuleResponse`
         """
-        return self.update_geoip_rule_with_http_info(request)
+        return self._update_geoip_rule_with_http_info(request)
 
-    def update_geoip_rule_with_http_info(self, request):
-        all_params = ['policy_id', 'rule_id', 'update_geoip_rule_request_body', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_geoip_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6496,14 +6078,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.UpdateHostRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.UpdateHostResponse`
         """
-        return self.update_host_with_http_info(request)
+        return self._update_host_with_http_info(request)
 
-    def update_host_with_http_info(self, request):
-        all_params = ['instance_id', 'enterprise_project_id', 'update_host_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_host_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6560,14 +6138,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.UpdateHostProtectStatusRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.UpdateHostProtectStatusResponse`
         """
-        return self.update_host_protect_status_with_http_info(request)
+        return self._update_host_protect_status_with_http_info(request)
 
-    def update_host_protect_status_with_http_info(self, request):
-        all_params = ['instance_id', 'enterprise_project_id', 'update_host_protect_status_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_host_protect_status_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6624,14 +6198,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.UpdateIgnoreRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.UpdateIgnoreRuleResponse`
         """
-        return self.update_ignore_rule_with_http_info(request)
+        return self._update_ignore_rule_with_http_info(request)
 
-    def update_ignore_rule_with_http_info(self, request):
-        all_params = ['policy_id', 'rule_id', 'update_rule_request_body', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_ignore_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6690,14 +6260,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.UpdateIpGroupRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.UpdateIpGroupResponse`
         """
-        return self.update_ip_group_with_http_info(request)
+        return self._update_ip_group_with_http_info(request)
 
-    def update_ip_group_with_http_info(self, request):
-        all_params = ['id', 'update_ip_group_request_body', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_ip_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6754,14 +6320,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.UpdateLtsInfoConfigRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.UpdateLtsInfoConfigResponse`
         """
-        return self.update_lts_info_config_with_http_info(request)
+        return self._update_lts_info_config_with_http_info(request)
 
-    def update_lts_info_config_with_http_info(self, request):
-        all_params = ['ltsconfig_id', 'update_lts_info_config_request_body', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_lts_info_config_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6818,14 +6380,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.UpdatePolicyRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.UpdatePolicyResponse`
         """
-        return self.update_policy_with_http_info(request)
+        return self._update_policy_with_http_info(request)
 
-    def update_policy_with_http_info(self, request):
-        all_params = ['policy_id', 'update_policy_request_body', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_policy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6882,14 +6440,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.UpdatePolicyProtectHostRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.UpdatePolicyProtectHostResponse`
         """
-        return self.update_policy_protect_host_with_http_info(request)
+        return self._update_policy_protect_host_with_http_info(request)
 
-    def update_policy_protect_host_with_http_info(self, request):
-        all_params = ['policy_id', 'hosts', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_policy_protect_host_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6946,14 +6500,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.UpdatePolicyRuleStatusRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.UpdatePolicyRuleStatusResponse`
         """
-        return self.update_policy_rule_status_with_http_info(request)
+        return self._update_policy_rule_status_with_http_info(request)
 
-    def update_policy_rule_status_with_http_info(self, request):
-        all_params = ['policy_id', 'ruletype', 'rule_id', 'update_policy_rule_status_request_body', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_policy_rule_status_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7014,14 +6564,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.UpdatePremiumHostRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.UpdatePremiumHostResponse`
         """
-        return self.update_premium_host_with_http_info(request)
+        return self._update_premium_host_with_http_info(request)
 
-    def update_premium_host_with_http_info(self, request):
-        all_params = ['host_id', 'enterprise_project_id', 'update_premium_host_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_premium_host_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7078,14 +6624,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.UpdatePremiumHostProtectStatusRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.UpdatePremiumHostProtectStatusResponse`
         """
-        return self.update_premium_host_protect_status_with_http_info(request)
+        return self._update_premium_host_protect_status_with_http_info(request)
 
-    def update_premium_host_protect_status_with_http_info(self, request):
-        all_params = ['host_id', 'enterprise_project_id', 'update_premium_host_protect_status_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_premium_host_protect_status_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7142,14 +6684,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.UpdatePrivacyRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.UpdatePrivacyRuleResponse`
         """
-        return self.update_privacy_rule_with_http_info(request)
+        return self._update_privacy_rule_with_http_info(request)
 
-    def update_privacy_rule_with_http_info(self, request):
-        all_params = ['policy_id', 'rule_id', 'update_privacy_rule_request_body', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_privacy_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7208,14 +6746,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.UpdatePunishmentRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.UpdatePunishmentRuleResponse`
         """
-        return self.update_punishment_rule_with_http_info(request)
+        return self._update_punishment_rule_with_http_info(request)
 
-    def update_punishment_rule_with_http_info(self, request):
-        all_params = ['policy_id', 'rule_id', 'update_punishment_rule_request_body', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_punishment_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7274,14 +6808,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.UpdateValueListRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.UpdateValueListResponse`
         """
-        return self.update_value_list_with_http_info(request)
+        return self._update_value_list_with_http_info(request)
 
-    def update_value_list_with_http_info(self, request):
-        all_params = ['valuelistid', 'enterprise_project_id', 'update_value_list_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_value_list_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7338,14 +6868,10 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.UpdateWhiteblackipRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.UpdateWhiteblackipRuleResponse`
         """
-        return self.update_whiteblackip_rule_with_http_info(request)
+        return self._update_whiteblackip_rule_with_http_info(request)
 
-    def update_whiteblackip_rule_with_http_info(self, request):
-        all_params = ['policy_id', 'rule_id', 'update_whiteblackip_rule_request_body', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_whiteblackip_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

@@ -1,9 +1,6 @@
 # coding: utf-8
 
-import re
 import six
-
-
 
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
@@ -20,20 +17,51 @@ class ListJobInstancesRequest:
     sensitive_list = []
 
     openapi_types = {
+        'workspace': 'str'
     }
 
     attribute_map = {
+        'workspace': 'workspace'
     }
 
-    def __init__(self):
+    def __init__(self, workspace=None):
         """ListJobInstancesRequest
 
         The model defined in huaweicloud sdk
 
+        :param workspace: 工作空间id
+        :type workspace: str
         """
         
         
+
+        self._workspace = None
         self.discriminator = None
+
+        if workspace is not None:
+            self.workspace = workspace
+
+    @property
+    def workspace(self):
+        """Gets the workspace of this ListJobInstancesRequest.
+
+        工作空间id
+
+        :return: The workspace of this ListJobInstancesRequest.
+        :rtype: str
+        """
+        return self._workspace
+
+    @workspace.setter
+    def workspace(self, workspace):
+        """Sets the workspace of this ListJobInstancesRequest.
+
+        工作空间id
+
+        :param workspace: The workspace of this ListJobInstancesRequest.
+        :type workspace: str
+        """
+        self._workspace = workspace
 
     def to_dict(self):
         """Returns the model properties as a dict"""

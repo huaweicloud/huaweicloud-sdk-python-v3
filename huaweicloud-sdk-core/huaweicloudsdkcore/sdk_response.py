@@ -26,13 +26,29 @@ from urllib3.exceptions import SSLError, NewConnectionError
 
 class SdkResponse(object):
     def __init__(self):
-        self.status_code = None
-        self.header_params = None
-        self.raw_content = None
+        self._status_code = None    # type: int | None
+        self._raw_content = None    # type: bytes | None
+
+    @property
+    def status_code(self):
+        return self._status_code
+
+    @status_code.setter
+    def status_code(self, status_code):
+        if not self._status_code:
+            self._status_code = status_code
+
+    @property
+    def raw_content(self):
+        return self._raw_content
+
+    @raw_content.setter
+    def raw_content(self, raw_content):
+        if not self._raw_content:
+            self._raw_content = raw_content
 
     def to_json_object(self):
-        if self.raw_content is not None:
-            return json.loads(self.raw_content.decode("utf-8"))
+        return json.loads(self._raw_content.decode("utf-8")) if self._raw_content else None
 
 
 class FutureSdkResponse:
@@ -47,12 +63,15 @@ class FutureSdkResponse:
                 if hasattr(future_response, "data") and future_response.data is not None else future_response
         except ConnectionError as connectionError:
             for each in connectionError.args:
+                reason_str = str(each.reason)
                 if isinstance(each.reason, SSLError):
-                    self._logger.error("Sync SslHandShakeException occurred. %s" % str(each.reason))
-                    raise exceptions.SslHandShakeException(str(each.reason))
+                    self._logger.error("Sync SslHandShakeException occurred. %s" % reason_str)
+                    raise exceptions.SslHandShakeException(reason_str)
                 if isinstance(each.reason, NewConnectionError):
-                    self._logger.error("Sync ConnectionException occurred. %s" % str(each.reason))
-                    raise exceptions.ConnectionException(str(each.reason))
-            self._logger.error("ConnectionException occurred. %s" % str(connectionError))
+                    if reason_str.endswith("getaddrinfo failed") or reason_str.endswith("Name or service not known"):
+                        raise exceptions.HostUnreachableException(reason_str)
+                    self._logger.error("Sync ConnectionException occurred. %s" % reason_str)
+                    raise exceptions.ConnectionException(reason_str)
+            self._logger.error("Sync ConnectionException occurred. %s" % str(connectionError))
             raise exceptions.ConnectionException(str(connectionError))
         return response

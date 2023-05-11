@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class VasClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(VasClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkvas.v2.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -53,14 +35,10 @@ class VasClient(Client):
         :type request: :class:`huaweicloudsdkvas.v2.CreateTasksRequest`
         :rtype: :class:`huaweicloudsdkvas.v2.CreateTasksResponse`
         """
-        return self.create_tasks_with_http_info(request)
+        return self._create_tasks_with_http_info(request)
 
-    def create_tasks_with_http_info(self, request):
-        all_params = ['service_name', 'create_tasks_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_tasks_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -115,14 +93,10 @@ class VasClient(Client):
         :type request: :class:`huaweicloudsdkvas.v2.DeleteTaskRequest`
         :rtype: :class:`huaweicloudsdkvas.v2.DeleteTaskResponse`
         """
-        return self.delete_task_with_http_info(request)
+        return self._delete_task_with_http_info(request)
 
-    def delete_task_with_http_info(self, request):
-        all_params = ['service_name', 'task_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -177,14 +151,10 @@ class VasClient(Client):
         :type request: :class:`huaweicloudsdkvas.v2.ListTasksDetailsRequest`
         :rtype: :class:`huaweicloudsdkvas.v2.ListTasksDetailsResponse`
         """
-        return self.list_tasks_details_with_http_info(request)
+        return self._list_tasks_details_with_http_info(request)
 
-    def list_tasks_details_with_http_info(self, request):
-        all_params = ['service_name', 'service_version', 'state', 'name_like', 'id_like', 'created_since', 'created_until', 'order', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_tasks_details_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -255,14 +225,10 @@ class VasClient(Client):
         :type request: :class:`huaweicloudsdkvas.v2.ShowTaskRequest`
         :rtype: :class:`huaweicloudsdkvas.v2.ShowTaskResponse`
         """
-        return self.show_task_with_http_info(request)
+        return self._show_task_with_http_info(request)
 
-    def show_task_with_http_info(self, request):
-        all_params = ['service_name', 'task_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -317,14 +283,10 @@ class VasClient(Client):
         :type request: :class:`huaweicloudsdkvas.v2.StartTaskRequest`
         :rtype: :class:`huaweicloudsdkvas.v2.StartTaskResponse`
         """
-        return self.start_task_with_http_info(request)
+        return self._start_task_with_http_info(request)
 
-    def start_task_with_http_info(self, request):
-        all_params = ['service_name', 'task_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _start_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -379,14 +341,10 @@ class VasClient(Client):
         :type request: :class:`huaweicloudsdkvas.v2.StopTaskRequest`
         :rtype: :class:`huaweicloudsdkvas.v2.StopTaskResponse`
         """
-        return self.stop_task_with_http_info(request)
+        return self._stop_task_with_http_info(request)
 
-    def stop_task_with_http_info(self, request):
-        all_params = ['service_name', 'task_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _stop_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -441,14 +399,10 @@ class VasClient(Client):
         :type request: :class:`huaweicloudsdkvas.v2.UpdateTaskRequest`
         :rtype: :class:`huaweicloudsdkvas.v2.UpdateTaskResponse`
         """
-        return self.update_task_with_http_info(request)
+        return self._update_task_with_http_info(request)
 
-    def update_task_with_http_info(self, request):
-        all_params = ['service_name', 'task_id', 'update_task_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

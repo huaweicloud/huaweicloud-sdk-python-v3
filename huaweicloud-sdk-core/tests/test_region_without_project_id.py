@@ -23,7 +23,7 @@ import pytest
 from huaweicloudsdkcore.auth.credentials import BasicCredentials
 from huaweicloudsdkcore.client import Client
 from huaweicloudsdkcore.http.http_config import HttpConfig
-from tests.data.project_response_mocker import MOCK_ENDPOINT, mock_keystone_list_projects
+from tests.mocker.project_response_mocker import MOCK_ENDPOINT, mock_keystone_list_projects
 from tests.test_region_with_project_id import ServiceRegion
 
 REGION_ID = "cn-north-7"

@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class DeHAsyncClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(DeHAsyncClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkdeh.v1.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -56,14 +38,10 @@ class DeHAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdeh.v1.BatchCreateDedicatedHostTagsRequest`
         :rtype: :class:`huaweicloudsdkdeh.v1.BatchCreateDedicatedHostTagsResponse`
         """
-        return self.batch_create_dedicated_host_tags_with_http_info(request)
+        return self._batch_create_dedicated_host_tags_with_http_info(request)
 
-    def batch_create_dedicated_host_tags_with_http_info(self, request):
-        all_params = ['dedicated_host_id', 'req_set_or_delete_tags']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_create_dedicated_host_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -121,14 +99,10 @@ class DeHAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdeh.v1.BatchDeleteDedicatedHostTagsRequest`
         :rtype: :class:`huaweicloudsdkdeh.v1.BatchDeleteDedicatedHostTagsResponse`
         """
-        return self.batch_delete_dedicated_host_tags_with_http_info(request)
+        return self._batch_delete_dedicated_host_tags_with_http_info(request)
 
-    def batch_delete_dedicated_host_tags_with_http_info(self, request):
-        all_params = ['dedicated_host_id', 'req_set_or_delete_tags']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_delete_dedicated_host_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -184,14 +158,10 @@ class DeHAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdeh.v1.CreateDedicatedHostRequest`
         :rtype: :class:`huaweicloudsdkdeh.v1.CreateDedicatedHostResponse`
         """
-        return self.create_dedicated_host_with_http_info(request)
+        return self._create_dedicated_host_with_http_info(request)
 
-    def create_dedicated_host_with_http_info(self, request):
-        all_params = ['req_allocate_deh']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_dedicated_host_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -245,14 +215,10 @@ class DeHAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdeh.v1.DeleteDedicatedHostRequest`
         :rtype: :class:`huaweicloudsdkdeh.v1.DeleteDedicatedHostResponse`
         """
-        return self.delete_dedicated_host_with_http_info(request)
+        return self._delete_dedicated_host_with_http_info(request)
 
-    def delete_dedicated_host_with_http_info(self, request):
-        all_params = ['dedicated_host_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_dedicated_host_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -306,14 +272,10 @@ class DeHAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdeh.v1.ListDedicatedHostTypesRequest`
         :rtype: :class:`huaweicloudsdkdeh.v1.ListDedicatedHostTypesResponse`
         """
-        return self.list_dedicated_host_types_with_http_info(request)
+        return self._list_dedicated_host_types_with_http_info(request)
 
-    def list_dedicated_host_types_with_http_info(self, request):
-        all_params = ['availability_zone']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_dedicated_host_types_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -367,14 +329,10 @@ class DeHAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdeh.v1.ListDedicatedHostsRequest`
         :rtype: :class:`huaweicloudsdkdeh.v1.ListDedicatedHostsResponse`
         """
-        return self.list_dedicated_hosts_with_http_info(request)
+        return self._list_dedicated_hosts_with_http_info(request)
 
-    def list_dedicated_hosts_with_http_info(self, request):
-        all_params = ['dedicated_host_id', 'name', 'host_type', 'host_type_name', 'flavor', 'state', 'tenant', 'availability_zone', 'limit', 'marker', 'tags', 'instance_uuid', 'released_at', 'changes_since']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_dedicated_hosts_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -456,14 +414,10 @@ class DeHAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdeh.v1.ListDedicatedHostsByTagsRequest`
         :rtype: :class:`huaweicloudsdkdeh.v1.ListDedicatedHostsByTagsResponse`
         """
-        return self.list_dedicated_hosts_by_tags_with_http_info(request)
+        return self._list_dedicated_hosts_by_tags_with_http_info(request)
 
-    def list_dedicated_hosts_by_tags_with_http_info(self, request):
-        all_params = ['req_list_deh_by_tags']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_dedicated_hosts_by_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -517,14 +471,10 @@ class DeHAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdeh.v1.ListServersDedicatedHostRequest`
         :rtype: :class:`huaweicloudsdkdeh.v1.ListServersDedicatedHostResponse`
         """
-        return self.list_servers_dedicated_host_with_http_info(request)
+        return self._list_servers_dedicated_host_with_http_info(request)
 
-    def list_servers_dedicated_host_with_http_info(self, request):
-        all_params = ['dedicated_host_id', 'limit', 'marker']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_servers_dedicated_host_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -582,14 +532,10 @@ class DeHAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdeh.v1.ShowDedicatedHostRequest`
         :rtype: :class:`huaweicloudsdkdeh.v1.ShowDedicatedHostResponse`
         """
-        return self.show_dedicated_host_with_http_info(request)
+        return self._show_dedicated_host_with_http_info(request)
 
-    def show_dedicated_host_with_http_info(self, request):
-        all_params = ['dedicated_host_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_dedicated_host_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -645,14 +591,10 @@ class DeHAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdeh.v1.ShowDedicatedHostTagsRequest`
         :rtype: :class:`huaweicloudsdkdeh.v1.ShowDedicatedHostTagsResponse`
         """
-        return self.show_dedicated_host_tags_with_http_info(request)
+        return self._show_dedicated_host_tags_with_http_info(request)
 
-    def show_dedicated_host_tags_with_http_info(self, request):
-        all_params = ['dedicated_host_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_dedicated_host_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -706,14 +648,10 @@ class DeHAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdeh.v1.ShowQuotaSetsRequest`
         :rtype: :class:`huaweicloudsdkdeh.v1.ShowQuotaSetsResponse`
         """
-        return self.show_quota_sets_with_http_info(request)
+        return self._show_quota_sets_with_http_info(request)
 
-    def show_quota_sets_with_http_info(self, request):
-        all_params = ['tenant_id', 'resource']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_quota_sets_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -769,14 +707,10 @@ class DeHAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdeh.v1.UpdateDedicatedHostRequest`
         :rtype: :class:`huaweicloudsdkdeh.v1.UpdateDedicatedHostResponse`
         """
-        return self.update_dedicated_host_with_http_info(request)
+        return self._update_dedicated_host_with_http_info(request)
 
-    def update_dedicated_host_with_http_info(self, request):
-        all_params = ['dedicated_host_id', 'req_update_deh']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_dedicated_host_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

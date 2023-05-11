@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class AomClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(AomClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkaom.v1.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -53,14 +35,10 @@ class AomClient(Client):
         :type request: :class:`huaweicloudsdkaom.v1.CreateFastExecuteScriptRequest`
         :rtype: :class:`huaweicloudsdkaom.v1.CreateFastExecuteScriptResponse`
         """
-        return self.create_fast_execute_script_with_http_info(request)
+        return self._create_fast_execute_script_with_http_info(request)
 
-    def create_fast_execute_script_with_http_info(self, request):
-        all_params = ['create_fast_execute_script_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_fast_execute_script_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -113,14 +91,10 @@ class AomClient(Client):
         :type request: :class:`huaweicloudsdkaom.v1.CreateWorkflowRequest`
         :rtype: :class:`huaweicloudsdkaom.v1.CreateWorkflowResponse`
         """
-        return self.create_workflow_with_http_info(request)
+        return self._create_workflow_with_http_info(request)
 
-    def create_workflow_with_http_info(self, request):
-        all_params = ['create_workflow_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_workflow_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -173,14 +147,10 @@ class AomClient(Client):
         :type request: :class:`huaweicloudsdkaom.v1.ExecuteWorkflowRequest`
         :rtype: :class:`huaweicloudsdkaom.v1.ExecuteWorkflowResponse`
         """
-        return self.execute_workflow_with_http_info(request)
+        return self._execute_workflow_with_http_info(request)
 
-    def execute_workflow_with_http_info(self, request):
-        all_params = ['workflow_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _execute_workflow_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -233,14 +203,10 @@ class AomClient(Client):
         :type request: :class:`huaweicloudsdkaom.v1.ListAllJobByNameRequest`
         :rtype: :class:`huaweicloudsdkaom.v1.ListAllJobByNameResponse`
         """
-        return self.list_all_job_by_name_with_http_info(request)
+        return self._list_all_job_by_name_with_http_info(request)
 
-    def list_all_job_by_name_with_http_info(self, request):
-        all_params = ['list_all_job_by_name_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_all_job_by_name_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -293,14 +259,10 @@ class AomClient(Client):
         :type request: :class:`huaweicloudsdkaom.v1.ListAllScriptByNameRequest`
         :rtype: :class:`huaweicloudsdkaom.v1.ListAllScriptByNameResponse`
         """
-        return self.list_all_script_by_name_with_http_info(request)
+        return self._list_all_script_by_name_with_http_info(request)
 
-    def list_all_script_by_name_with_http_info(self, request):
-        all_params = ['list_all_script_by_name_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_all_script_by_name_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -353,14 +315,10 @@ class AomClient(Client):
         :type request: :class:`huaweicloudsdkaom.v1.ListAllVersionByVersionIdRequest`
         :rtype: :class:`huaweicloudsdkaom.v1.ListAllVersionByVersionIdResponse`
         """
-        return self.list_all_version_by_version_id_with_http_info(request)
+        return self._list_all_version_by_version_id_with_http_info(request)
 
-    def list_all_version_by_version_id_with_http_info(self, request):
-        all_params = ['list_all_version_by_version_id_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_all_version_by_version_id_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -413,14 +371,10 @@ class AomClient(Client):
         :type request: :class:`huaweicloudsdkaom.v1.ListTemplateByJobIdRequest`
         :rtype: :class:`huaweicloudsdkaom.v1.ListTemplateByJobIdResponse`
         """
-        return self.list_template_by_job_id_with_http_info(request)
+        return self._list_template_by_job_id_with_http_info(request)
 
-    def list_template_by_job_id_with_http_info(self, request):
-        all_params = ['job_id', 'list_template_by_job_id_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_template_by_job_id_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -475,14 +429,10 @@ class AomClient(Client):
         :type request: :class:`huaweicloudsdkaom.v1.ListWorkflowRequest`
         :rtype: :class:`huaweicloudsdkaom.v1.ListWorkflowResponse`
         """
-        return self.list_workflow_with_http_info(request)
+        return self._list_workflow_with_http_info(request)
 
-    def list_workflow_with_http_info(self, request):
-        all_params = ['list_workflow_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_workflow_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -535,14 +485,10 @@ class AomClient(Client):
         :type request: :class:`huaweicloudsdkaom.v1.ListWorkflowExecutionsRequest`
         :rtype: :class:`huaweicloudsdkaom.v1.ListWorkflowExecutionsResponse`
         """
-        return self.list_workflow_executions_with_http_info(request)
+        return self._list_workflow_executions_with_http_info(request)
 
-    def list_workflow_executions_with_http_info(self, request):
-        all_params = ['workflow_id', 'x_enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_workflow_executions_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -597,14 +543,10 @@ class AomClient(Client):
         :type request: :class:`huaweicloudsdkaom.v1.SearchTemplateByIdRequest`
         :rtype: :class:`huaweicloudsdkaom.v1.SearchTemplateByIdResponse`
         """
-        return self.search_template_by_id_with_http_info(request)
+        return self._search_template_by_id_with_http_info(request)
 
-    def search_template_by_id_with_http_info(self, request):
-        all_params = ['template_id', 'share_type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _search_template_by_id_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -659,14 +601,10 @@ class AomClient(Client):
         :type request: :class:`huaweicloudsdkaom.v1.SearchWorkflowExecutionDetailRequest`
         :rtype: :class:`huaweicloudsdkaom.v1.SearchWorkflowExecutionDetailResponse`
         """
-        return self.search_workflow_execution_detail_with_http_info(request)
+        return self._search_workflow_execution_detail_with_http_info(request)
 
-    def search_workflow_execution_detail_with_http_info(self, request):
-        all_params = ['workflow_id', 'execution_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _search_workflow_execution_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -721,14 +659,10 @@ class AomClient(Client):
         :type request: :class:`huaweicloudsdkaom.v1.StartPausingWorkflowExecutionsRequest`
         :rtype: :class:`huaweicloudsdkaom.v1.StartPausingWorkflowExecutionsResponse`
         """
-        return self.start_pausing_workflow_executions_with_http_info(request)
+        return self._start_pausing_workflow_executions_with_http_info(request)
 
-    def start_pausing_workflow_executions_with_http_info(self, request):
-        all_params = ['workflow_id', 'execution_id', 'action', 'node_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _start_pausing_workflow_executions_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -787,14 +721,10 @@ class AomClient(Client):
         :type request: :class:`huaweicloudsdkaom.v1.StopExecutionRequest`
         :rtype: :class:`huaweicloudsdkaom.v1.StopExecutionResponse`
         """
-        return self.stop_execution_with_http_info(request)
+        return self._stop_execution_with_http_info(request)
 
-    def stop_execution_with_http_info(self, request):
-        all_params = ['workflow_id', 'execution_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _stop_execution_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -849,14 +779,10 @@ class AomClient(Client):
         :type request: :class:`huaweicloudsdkaom.v1.UpdateWorkflowTriggerStatusRequest`
         :rtype: :class:`huaweicloudsdkaom.v1.UpdateWorkflowTriggerStatusResponse`
         """
-        return self.update_workflow_trigger_status_with_http_info(request)
+        return self._update_workflow_trigger_status_with_http_info(request)
 
-    def update_workflow_trigger_status_with_http_info(self, request):
-        all_params = ['workflow_id', 'action']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_workflow_trigger_status_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

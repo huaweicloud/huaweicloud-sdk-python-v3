@@ -1,9 +1,6 @@
 # coding: utf-8
 
-import re
 import six
-
-
 
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
@@ -106,7 +103,7 @@ class Shares:
         :type share_type: str
         :param size: SFS Turbo文件系统总容量，单位GB。
         :type size: str
-        :param status: SFS Turbo文件系统的状态。&#39;100&#39;表示创建中，&#39;200&#39;表示可用，&#39;400&#39;表示已删除，&#39;303&#39;表示创建失败。
+        :param status: SFS Turbo文件系统的状态。&#39;100&#39;表示创建中，&#39;200&#39;表示可用，&#39;303&#39;表示创建失败。
         :type status: str
         :param sub_status: SFS Turbo文件系统的子状态。&#39;121&#39;表示扩容中，&#39;221&#39;表示扩容成功，&#39;321&#39;表示扩容失败。
         :type sub_status: str
@@ -558,7 +555,7 @@ class Shares:
     def status(self):
         """Gets the status of this Shares.
 
-        SFS Turbo文件系统的状态。'100'表示创建中，'200'表示可用，'400'表示已删除，'303'表示创建失败。
+        SFS Turbo文件系统的状态。'100'表示创建中，'200'表示可用，'303'表示创建失败。
 
         :return: The status of this Shares.
         :rtype: str
@@ -569,7 +566,7 @@ class Shares:
     def status(self, status):
         """Sets the status of this Shares.
 
-        SFS Turbo文件系统的状态。'100'表示创建中，'200'表示可用，'400'表示已删除，'303'表示创建失败。
+        SFS Turbo文件系统的状态。'100'表示创建中，'200'表示可用，'303'表示创建失败。
 
         :param status: The status of this Shares.
         :type status: str

@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class ServiceStageClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(ServiceStageClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkservicestage.v2.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -51,14 +33,10 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.ChangeApplicationRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.ChangeApplicationResponse`
         """
-        return self.change_application_with_http_info(request)
+        return self._change_application_with_http_info(request)
 
-    def change_application_with_http_info(self, request):
-        all_params = ['application_id', 'application_modify']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _change_application_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -111,14 +89,10 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.ChangeApplicationConfigurationRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.ChangeApplicationConfigurationResponse`
         """
-        return self.change_application_configuration_with_http_info(request)
+        return self._change_application_configuration_with_http_info(request)
 
-    def change_application_configuration_with_http_info(self, request):
-        all_params = ['application_id', 'application_config_modify']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _change_application_configuration_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -171,14 +145,10 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.ChangeComponentRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.ChangeComponentResponse`
         """
-        return self.change_component_with_http_info(request)
+        return self._change_component_with_http_info(request)
 
-    def change_component_with_http_info(self, request):
-        all_params = ['application_id', 'component_id', 'component_modify']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _change_component_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -233,14 +203,10 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.ChangeEnvironmentRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.ChangeEnvironmentResponse`
         """
-        return self.change_environment_with_http_info(request)
+        return self._change_environment_with_http_info(request)
 
-    def change_environment_with_http_info(self, request):
-        all_params = ['environment_id', 'environment_modify']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _change_environment_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -293,14 +259,10 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.ChangeInstanceRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.ChangeInstanceResponse`
         """
-        return self.change_instance_with_http_info(request)
+        return self._change_instance_with_http_info(request)
 
-    def change_instance_with_http_info(self, request):
-        all_params = ['application_id', 'component_id', 'instance_id', 'instance_modify']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _change_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -357,14 +319,10 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.ChangeResourceInEnvironmentRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.ChangeResourceInEnvironmentResponse`
         """
-        return self.change_resource_in_environment_with_http_info(request)
+        return self._change_resource_in_environment_with_http_info(request)
 
-    def change_resource_in_environment_with_http_info(self, request):
-        all_params = ['environment_id', 'environment_resource_modify']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _change_resource_in_environment_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -419,14 +377,10 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.CreateApplicationRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.CreateApplicationResponse`
         """
-        return self.create_application_with_http_info(request)
+        return self._create_application_with_http_info(request)
 
-    def create_application_with_http_info(self, request):
-        all_params = ['application_create']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_application_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -479,14 +433,10 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.CreateComponentRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.CreateComponentResponse`
         """
-        return self.create_component_with_http_info(request)
+        return self._create_component_with_http_info(request)
 
-    def create_component_with_http_info(self, request):
-        all_params = ['application_id', 'component_create']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_component_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -541,14 +491,10 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.CreateEnvironmentRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.CreateEnvironmentResponse`
         """
-        return self.create_environment_with_http_info(request)
+        return self._create_environment_with_http_info(request)
 
-    def create_environment_with_http_info(self, request):
-        all_params = ['environment_create']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_environment_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -599,14 +545,10 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.CreateInstanceRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.CreateInstanceResponse`
         """
-        return self.create_instance_with_http_info(request)
+        return self._create_instance_with_http_info(request)
 
-    def create_instance_with_http_info(self, request):
-        all_params = ['application_id', 'component_id', 'instance_create']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -661,14 +603,10 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.DeleteApplicationRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.DeleteApplicationResponse`
         """
-        return self.delete_application_with_http_info(request)
+        return self._delete_application_with_http_info(request)
 
-    def delete_application_with_http_info(self, request):
-        all_params = ['application_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_application_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -719,14 +657,10 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.DeleteApplicationConfigurationRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.DeleteApplicationConfigurationResponse`
         """
-        return self.delete_application_configuration_with_http_info(request)
+        return self._delete_application_configuration_with_http_info(request)
 
-    def delete_application_configuration_with_http_info(self, request):
-        all_params = ['application_id', 'environment_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_application_configuration_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -779,14 +713,10 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.DeleteComponentRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.DeleteComponentResponse`
         """
-        return self.delete_component_with_http_info(request)
+        return self._delete_component_with_http_info(request)
 
-    def delete_component_with_http_info(self, request):
-        all_params = ['application_id', 'component_id', 'force']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_component_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -841,14 +771,10 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.DeleteEnvironmentRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.DeleteEnvironmentResponse`
         """
-        return self.delete_environment_with_http_info(request)
+        return self._delete_environment_with_http_info(request)
 
-    def delete_environment_with_http_info(self, request):
-        all_params = ['environment_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_environment_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -899,14 +825,10 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.DeleteInstanceRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.DeleteInstanceResponse`
         """
-        return self.delete_instance_with_http_info(request)
+        return self._delete_instance_with_http_info(request)
 
-    def delete_instance_with_http_info(self, request):
-        all_params = ['application_id', 'component_id', 'instance_id', 'force']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -963,14 +885,10 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.ListApplicationsRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.ListApplicationsResponse`
         """
-        return self.list_applications_with_http_info(request)
+        return self._list_applications_with_http_info(request)
 
-    def list_applications_with_http_info(self, request):
-        all_params = ['limit', 'offset', 'order_by', 'order']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_applications_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1027,14 +945,10 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.ListComponentsRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.ListComponentsResponse`
         """
-        return self.list_components_with_http_info(request)
+        return self._list_components_with_http_info(request)
 
-    def list_components_with_http_info(self, request):
-        all_params = ['application_id', 'limit', 'offset', 'order_by', 'order']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_components_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1093,14 +1007,10 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.ListEnvironmentsRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.ListEnvironmentsResponse`
         """
-        return self.list_environments_with_http_info(request)
+        return self._list_environments_with_http_info(request)
 
-    def list_environments_with_http_info(self, request):
-        all_params = ['limit', 'offset', 'order_by', 'order']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_environments_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1157,14 +1067,10 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.ListInstanceSnapshotsRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.ListInstanceSnapshotsResponse`
         """
-        return self.list_instance_snapshots_with_http_info(request)
+        return self._list_instance_snapshots_with_http_info(request)
 
-    def list_instance_snapshots_with_http_info(self, request):
-        all_params = ['application_id', 'component_id', 'instance_id', 'limit', 'offset', 'snapshot_order_by', 'order']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_instance_snapshots_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1227,14 +1133,10 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.ListInstancesRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.ListInstancesResponse`
         """
-        return self.list_instances_with_http_info(request)
+        return self._list_instances_with_http_info(request)
 
-    def list_instances_with_http_info(self, request):
-        all_params = ['application_id', 'component_id', 'limit', 'offset', 'order_by', 'order']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_instances_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1295,14 +1197,10 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.ShowApplicationConfigurationRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.ShowApplicationConfigurationResponse`
         """
-        return self.show_application_configuration_with_http_info(request)
+        return self._show_application_configuration_with_http_info(request)
 
-    def show_application_configuration_with_http_info(self, request):
-        all_params = ['application_id', 'environment_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_application_configuration_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1355,14 +1253,10 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.ShowApplicationDetailRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.ShowApplicationDetailResponse`
         """
-        return self.show_application_detail_with_http_info(request)
+        return self._show_application_detail_with_http_info(request)
 
-    def show_application_detail_with_http_info(self, request):
-        all_params = ['application_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_application_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1413,14 +1307,10 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.ShowComponentDetailRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.ShowComponentDetailResponse`
         """
-        return self.show_component_detail_with_http_info(request)
+        return self._show_component_detail_with_http_info(request)
 
-    def show_component_detail_with_http_info(self, request):
-        all_params = ['application_id', 'component_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_component_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1473,14 +1363,10 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.ShowEnvironmentDetailRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.ShowEnvironmentDetailResponse`
         """
-        return self.show_environment_detail_with_http_info(request)
+        return self._show_environment_detail_with_http_info(request)
 
-    def show_environment_detail_with_http_info(self, request):
-        all_params = ['environment_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_environment_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1531,14 +1417,10 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.ShowInstanceDetailRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.ShowInstanceDetailResponse`
         """
-        return self.show_instance_detail_with_http_info(request)
+        return self._show_instance_detail_with_http_info(request)
 
-    def show_instance_detail_with_http_info(self, request):
-        all_params = ['application_id', 'component_id', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_instance_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1593,14 +1475,10 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.ShowJobDetailRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.ShowJobDetailResponse`
         """
-        return self.show_job_detail_with_http_info(request)
+        return self._show_job_detail_with_http_info(request)
 
-    def show_job_detail_with_http_info(self, request):
-        all_params = ['job_id', 'instance_id', 'limit', 'offset', 'desc']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_job_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1659,14 +1537,10 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.UpdateInstanceActionRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.UpdateInstanceActionResponse`
         """
-        return self.update_instance_action_with_http_info(request)
+        return self._update_instance_action_with_http_info(request)
 
-    def update_instance_action_with_http_info(self, request):
-        all_params = ['application_id', 'component_id', 'instance_id', 'instance_action']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_instance_action_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1723,14 +1597,10 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.CreateFileRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.CreateFileResponse`
         """
-        return self.create_file_with_http_info(request)
+        return self._create_file_with_http_info(request)
 
-    def create_file_with_http_info(self, request):
-        all_params = ['x_repo_auth', 'namespace', 'project', 'path', 'ref', 'file_create']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_file_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1791,14 +1661,10 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.CreateHookRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.CreateHookResponse`
         """
-        return self.create_hook_with_http_info(request)
+        return self._create_hook_with_http_info(request)
 
-    def create_hook_with_http_info(self, request):
-        all_params = ['x_repo_auth', 'namespace', 'project', 'hook_create']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_hook_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1855,14 +1721,10 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.CreateOAuthRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.CreateOAuthResponse`
         """
-        return self.create_o_auth_with_http_info(request)
+        return self._create_o_auth_with_http_info(request)
 
-    def create_o_auth_with_http_info(self, request):
-        all_params = ['repo_type', 'tag', 'o_auth']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_o_auth_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1917,14 +1779,10 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.CreatePasswordAuthRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.CreatePasswordAuthResponse`
         """
-        return self.create_password_auth_with_http_info(request)
+        return self._create_password_auth_with_http_info(request)
 
-    def create_password_auth_with_http_info(self, request):
-        all_params = ['repo_type', 'access_password']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_password_auth_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1977,14 +1835,10 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.CreatePersonalAuthRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.CreatePersonalAuthResponse`
         """
-        return self.create_personal_auth_with_http_info(request)
+        return self._create_personal_auth_with_http_info(request)
 
-    def create_personal_auth_with_http_info(self, request):
-        all_params = ['repo_type', 'access_token']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_personal_auth_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2037,14 +1891,10 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.CreateProjectRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.CreateProjectResponse`
         """
-        return self.create_project_with_http_info(request)
+        return self._create_project_with_http_info(request)
 
-    def create_project_with_http_info(self, request):
-        all_params = ['x_repo_auth', 'namespace', 'project_create']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_project_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2099,14 +1949,10 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.CreateTagRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.CreateTagResponse`
         """
-        return self.create_tag_with_http_info(request)
+        return self._create_tag_with_http_info(request)
 
-    def create_tag_with_http_info(self, request):
-        all_params = ['x_repo_auth', 'namespace', 'project', 'ref', 'tag_create']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_tag_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2165,14 +2011,10 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.DeleteAuthorizeRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.DeleteAuthorizeResponse`
         """
-        return self.delete_authorize_with_http_info(request)
+        return self._delete_authorize_with_http_info(request)
 
-    def delete_authorize_with_http_info(self, request):
-        all_params = ['name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_authorize_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2223,14 +2065,10 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.DeleteFileRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.DeleteFileResponse`
         """
-        return self.delete_file_with_http_info(request)
+        return self._delete_file_with_http_info(request)
 
-    def delete_file_with_http_info(self, request):
-        all_params = ['x_repo_auth', 'namespace', 'project', 'path', 'ref', 'message', 'sha']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_file_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2293,14 +2131,10 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.DeleteHookRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.DeleteHookResponse`
         """
-        return self.delete_hook_with_http_info(request)
+        return self._delete_hook_with_http_info(request)
 
-    def delete_hook_with_http_info(self, request):
-        all_params = ['x_repo_auth', 'namespace', 'project', 'hook_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_hook_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2357,14 +2191,10 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.DeleteTagRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.DeleteTagResponse`
         """
-        return self.delete_tag_with_http_info(request)
+        return self._delete_tag_with_http_info(request)
 
-    def delete_tag_with_http_info(self, request):
-        all_params = ['x_repo_auth', 'namespace', 'project', 'tag_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_tag_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2421,14 +2251,10 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.ListAuthorizationsRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.ListAuthorizationsResponse`
         """
-        return self.list_authorizations_with_http_info(request)
+        return self._list_authorizations_with_http_info(request)
 
-    def list_authorizations_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_authorizations_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2477,14 +2303,10 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.ListBranchesRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.ListBranchesResponse`
         """
-        return self.list_branches_with_http_info(request)
+        return self._list_branches_with_http_info(request)
 
-    def list_branches_with_http_info(self, request):
-        all_params = ['x_repo_auth', 'namespace', 'project']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_branches_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2539,14 +2361,10 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.ListCommitsRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.ListCommitsResponse`
         """
-        return self.list_commits_with_http_info(request)
+        return self._list_commits_with_http_info(request)
 
-    def list_commits_with_http_info(self, request):
-        all_params = ['x_repo_auth', 'namespace', 'project', 'ref']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_commits_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2603,14 +2421,10 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.ListHooksRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.ListHooksResponse`
         """
-        return self.list_hooks_with_http_info(request)
+        return self._list_hooks_with_http_info(request)
 
-    def list_hooks_with_http_info(self, request):
-        all_params = ['x_repo_auth', 'namespace', 'project']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_hooks_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2665,14 +2479,10 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.ListNamespacesRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.ListNamespacesResponse`
         """
-        return self.list_namespaces_with_http_info(request)
+        return self._list_namespaces_with_http_info(request)
 
-    def list_namespaces_with_http_info(self, request):
-        all_params = ['x_repo_auth']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_namespaces_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2723,14 +2533,10 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.ListProjectsRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.ListProjectsResponse`
         """
-        return self.list_projects_with_http_info(request)
+        return self._list_projects_with_http_info(request)
 
-    def list_projects_with_http_info(self, request):
-        all_params = ['x_repo_auth', 'namespace']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_projects_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2783,14 +2589,10 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.ListTagsRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.ListTagsResponse`
         """
-        return self.list_tags_with_http_info(request)
+        return self._list_tags_with_http_info(request)
 
-    def list_tags_with_http_info(self, request):
-        all_params = ['x_repo_auth', 'namespace', 'project']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2845,14 +2647,10 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.ListTreesRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.ListTreesResponse`
         """
-        return self.list_trees_with_http_info(request)
+        return self._list_trees_with_http_info(request)
 
-    def list_trees_with_http_info(self, request):
-        all_params = ['x_repo_auth', 'namespace', 'project', 'ref']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_trees_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2909,14 +2707,10 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.ShowContentRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.ShowContentResponse`
         """
-        return self.show_content_with_http_info(request)
+        return self._show_content_with_http_info(request)
 
-    def show_content_with_http_info(self, request):
-        all_params = ['x_repo_auth', 'namespace', 'project', 'path', 'ref']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_content_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2975,14 +2769,10 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.ShowProjectDetailRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.ShowProjectDetailResponse`
         """
-        return self.show_project_detail_with_http_info(request)
+        return self._show_project_detail_with_http_info(request)
 
-    def show_project_detail_with_http_info(self, request):
-        all_params = ['x_repo_auth', 'clone_url']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_project_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3035,14 +2825,10 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.ShowRedirectUrlRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.ShowRedirectUrlResponse`
         """
-        return self.show_redirect_url_with_http_info(request)
+        return self._show_redirect_url_with_http_info(request)
 
-    def show_redirect_url_with_http_info(self, request):
-        all_params = ['repo_type', 'tag']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_redirect_url_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3095,14 +2881,10 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.UpdateFileRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.UpdateFileResponse`
         """
-        return self.update_file_with_http_info(request)
+        return self._update_file_with_http_info(request)
 
-    def update_file_with_http_info(self, request):
-        all_params = ['x_repo_auth', 'namespace', 'project', 'path', 'ref', 'file_update']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_file_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3163,14 +2945,10 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.ListFlavorsRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.ListFlavorsResponse`
         """
-        return self.list_flavors_with_http_info(request)
+        return self._list_flavors_with_http_info(request)
 
-    def list_flavors_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_flavors_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3219,14 +2997,10 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.ListRuntimesRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.ListRuntimesResponse`
         """
-        return self.list_runtimes_with_http_info(request)
+        return self._list_runtimes_with_http_info(request)
 
-    def list_runtimes_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_runtimes_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3275,14 +3049,10 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.ListTemplatesRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.ListTemplatesResponse`
         """
-        return self.list_templates_with_http_info(request)
+        return self._list_templates_with_http_info(request)
 
-    def list_templates_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_templates_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

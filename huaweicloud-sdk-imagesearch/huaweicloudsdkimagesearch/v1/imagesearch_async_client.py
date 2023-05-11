@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class ImageSearchAsyncClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(ImageSearchAsyncClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkimagesearch.v1.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -57,14 +39,10 @@ class ImageSearchAsyncClient(Client):
         :type request: :class:`huaweicloudsdkimagesearch.v1.RunAddPictureRequest`
         :rtype: :class:`huaweicloudsdkimagesearch.v1.RunAddPictureResponse`
         """
-        return self.run_add_picture_with_http_info(request)
+        return self._run_add_picture_with_http_info(request)
 
-    def run_add_picture_with_http_info(self, request):
-        all_params = ['instance_name', 'run_add_picture_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _run_add_picture_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -120,14 +98,10 @@ class ImageSearchAsyncClient(Client):
         :type request: :class:`huaweicloudsdkimagesearch.v1.RunCheckPictureRequest`
         :rtype: :class:`huaweicloudsdkimagesearch.v1.RunCheckPictureResponse`
         """
-        return self.run_check_picture_with_http_info(request)
+        return self._run_check_picture_with_http_info(request)
 
-    def run_check_picture_with_http_info(self, request):
-        all_params = ['instance_name', 'run_check_picture_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _run_check_picture_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -183,14 +157,10 @@ class ImageSearchAsyncClient(Client):
         :type request: :class:`huaweicloudsdkimagesearch.v1.RunCreateInstanceRequest`
         :rtype: :class:`huaweicloudsdkimagesearch.v1.RunCreateInstanceResponse`
         """
-        return self.run_create_instance_with_http_info(request)
+        return self._run_create_instance_with_http_info(request)
 
-    def run_create_instance_with_http_info(self, request):
-        all_params = ['run_create_instance_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _run_create_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -244,14 +214,10 @@ class ImageSearchAsyncClient(Client):
         :type request: :class:`huaweicloudsdkimagesearch.v1.RunDeleteInstanceRequest`
         :rtype: :class:`huaweicloudsdkimagesearch.v1.RunDeleteInstanceResponse`
         """
-        return self.run_delete_instance_with_http_info(request)
+        return self._run_delete_instance_with_http_info(request)
 
-    def run_delete_instance_with_http_info(self, request):
-        all_params = ['instance_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _run_delete_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -305,14 +271,10 @@ class ImageSearchAsyncClient(Client):
         :type request: :class:`huaweicloudsdkimagesearch.v1.RunDeletePictureRequest`
         :rtype: :class:`huaweicloudsdkimagesearch.v1.RunDeletePictureResponse`
         """
-        return self.run_delete_picture_with_http_info(request)
+        return self._run_delete_picture_with_http_info(request)
 
-    def run_delete_picture_with_http_info(self, request):
-        all_params = ['instance_name', 'run_delete_picture_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _run_delete_picture_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -368,14 +330,10 @@ class ImageSearchAsyncClient(Client):
         :type request: :class:`huaweicloudsdkimagesearch.v1.RunModifyPictureRequest`
         :rtype: :class:`huaweicloudsdkimagesearch.v1.RunModifyPictureResponse`
         """
-        return self.run_modify_picture_with_http_info(request)
+        return self._run_modify_picture_with_http_info(request)
 
-    def run_modify_picture_with_http_info(self, request):
-        all_params = ['instance_name', 'run_modify_picture_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _run_modify_picture_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -431,14 +389,10 @@ class ImageSearchAsyncClient(Client):
         :type request: :class:`huaweicloudsdkimagesearch.v1.RunQueryInstanceRequest`
         :rtype: :class:`huaweicloudsdkimagesearch.v1.RunQueryInstanceResponse`
         """
-        return self.run_query_instance_with_http_info(request)
+        return self._run_query_instance_with_http_info(request)
 
-    def run_query_instance_with_http_info(self, request):
-        all_params = ['instance_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _run_query_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -492,14 +446,10 @@ class ImageSearchAsyncClient(Client):
         :type request: :class:`huaweicloudsdkimagesearch.v1.RunSearchPictureRequest`
         :rtype: :class:`huaweicloudsdkimagesearch.v1.RunSearchPictureResponse`
         """
-        return self.run_search_picture_with_http_info(request)
+        return self._run_search_picture_with_http_info(request)
 
-    def run_search_picture_with_http_info(self, request):
-        all_params = ['instance_name', 'run_search_picture_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _run_search_picture_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

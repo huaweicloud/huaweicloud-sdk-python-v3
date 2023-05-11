@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class UgoClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(UgoClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkugo.v1.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -53,14 +35,10 @@ class UgoClient(Client):
         :type request: :class:`huaweicloudsdkugo.v1.CheckPermissionRequest`
         :rtype: :class:`huaweicloudsdkugo.v1.CheckPermissionResponse`
         """
-        return self.check_permission_with_http_info(request)
+        return self._check_permission_with_http_info(request)
 
-    def check_permission_with_http_info(self, request):
-        all_params = ['migration_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _check_permission_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -113,14 +91,10 @@ class UgoClient(Client):
         :type request: :class:`huaweicloudsdkugo.v1.CommitSyntaxConversionRequest`
         :rtype: :class:`huaweicloudsdkugo.v1.CommitSyntaxConversionResponse`
         """
-        return self.commit_syntax_conversion_with_http_info(request)
+        return self._commit_syntax_conversion_with_http_info(request)
 
-    def commit_syntax_conversion_with_http_info(self, request):
-        all_params = ['migration_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _commit_syntax_conversion_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -173,14 +147,10 @@ class UgoClient(Client):
         :type request: :class:`huaweicloudsdkugo.v1.CommitVerificationRequest`
         :rtype: :class:`huaweicloudsdkugo.v1.CommitVerificationResponse`
         """
-        return self.commit_verification_with_http_info(request)
+        return self._commit_verification_with_http_info(request)
 
-    def commit_verification_with_http_info(self, request):
-        all_params = ['migration_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _commit_verification_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -233,14 +203,10 @@ class UgoClient(Client):
         :type request: :class:`huaweicloudsdkugo.v1.ConfirmTargetDbTypeRequest`
         :rtype: :class:`huaweicloudsdkugo.v1.ConfirmTargetDbTypeResponse`
         """
-        return self.confirm_target_db_type_with_http_info(request)
+        return self._confirm_target_db_type_with_http_info(request)
 
-    def confirm_target_db_type_with_http_info(self, request):
-        all_params = ['confirm_target_db_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _confirm_target_db_type_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -293,14 +259,10 @@ class UgoClient(Client):
         :type request: :class:`huaweicloudsdkugo.v1.CreateEvaluationProjectRequest`
         :rtype: :class:`huaweicloudsdkugo.v1.CreateEvaluationProjectResponse`
         """
-        return self.create_evaluation_project_with_http_info(request)
+        return self._create_evaluation_project_with_http_info(request)
 
-    def create_evaluation_project_with_http_info(self, request):
-        all_params = ['create_evaluation_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_evaluation_project_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -353,14 +315,10 @@ class UgoClient(Client):
         :type request: :class:`huaweicloudsdkugo.v1.CreateMigrationProjectRequest`
         :rtype: :class:`huaweicloudsdkugo.v1.CreateMigrationProjectResponse`
         """
-        return self.create_migration_project_with_http_info(request)
+        return self._create_migration_project_with_http_info(request)
 
-    def create_migration_project_with_http_info(self, request):
-        all_params = ['create_migration_project']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_migration_project_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -413,14 +371,10 @@ class UgoClient(Client):
         :type request: :class:`huaweicloudsdkugo.v1.DeleteEvaluationProjectRequest`
         :rtype: :class:`huaweicloudsdkugo.v1.DeleteEvaluationProjectResponse`
         """
-        return self.delete_evaluation_project_with_http_info(request)
+        return self._delete_evaluation_project_with_http_info(request)
 
-    def delete_evaluation_project_with_http_info(self, request):
-        all_params = ['evaluation_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_evaluation_project_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -473,14 +427,10 @@ class UgoClient(Client):
         :type request: :class:`huaweicloudsdkugo.v1.DeleteMigrationProjectRequest`
         :rtype: :class:`huaweicloudsdkugo.v1.DeleteMigrationProjectResponse`
         """
-        return self.delete_migration_project_with_http_info(request)
+        return self._delete_migration_project_with_http_info(request)
 
-    def delete_migration_project_with_http_info(self, request):
-        all_params = ['migration_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_migration_project_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -533,14 +483,10 @@ class UgoClient(Client):
         :type request: :class:`huaweicloudsdkugo.v1.DownloadFailureReportRequest`
         :rtype: :class:`huaweicloudsdkugo.v1.DownloadFailureReportResponse`
         """
-        return self.download_failure_report_with_http_info(request)
+        return self._download_failure_report_with_http_info(request)
 
-    def download_failure_report_with_http_info(self, request):
-        all_params = ['migration_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _download_failure_report_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -593,14 +539,10 @@ class UgoClient(Client):
         :type request: :class:`huaweicloudsdkugo.v1.ListEvaluationProjectsRequest`
         :rtype: :class:`huaweicloudsdkugo.v1.ListEvaluationProjectsResponse`
         """
-        return self.list_evaluation_projects_with_http_info(request)
+        return self._list_evaluation_projects_with_http_info(request)
 
-    def list_evaluation_projects_with_http_info(self, request):
-        all_params = ['evaluation_project_name', 'evaluation_project_status', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_evaluation_projects_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -659,14 +601,10 @@ class UgoClient(Client):
         :type request: :class:`huaweicloudsdkugo.v1.ListMigrationProjectsRequest`
         :rtype: :class:`huaweicloudsdkugo.v1.ListMigrationProjectsResponse`
         """
-        return self.list_migration_projects_with_http_info(request)
+        return self._list_migration_projects_with_http_info(request)
 
-    def list_migration_projects_with_http_info(self, request):
-        all_params = ['offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_migration_projects_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -721,14 +659,10 @@ class UgoClient(Client):
         :type request: :class:`huaweicloudsdkugo.v1.ListPermissionCheckResultRequest`
         :rtype: :class:`huaweicloudsdkugo.v1.ListPermissionCheckResultResponse`
         """
-        return self.list_permission_check_result_with_http_info(request)
+        return self._list_permission_check_result_with_http_info(request)
 
-    def list_permission_check_result_with_http_info(self, request):
-        all_params = ['migration_project_id', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_permission_check_result_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -785,14 +719,10 @@ class UgoClient(Client):
         :type request: :class:`huaweicloudsdkugo.v1.ListQuotasRequest`
         :rtype: :class:`huaweicloudsdkugo.v1.ListQuotasResponse`
         """
-        return self.list_quotas_with_http_info(request)
+        return self._list_quotas_with_http_info(request)
 
-    def list_quotas_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_quotas_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -843,14 +773,10 @@ class UgoClient(Client):
         :type request: :class:`huaweicloudsdkugo.v1.ListSyntaxConversionProgressRequest`
         :rtype: :class:`huaweicloudsdkugo.v1.ListSyntaxConversionProgressResponse`
         """
-        return self.list_syntax_conversion_progress_with_http_info(request)
+        return self._list_syntax_conversion_progress_with_http_info(request)
 
-    def list_syntax_conversion_progress_with_http_info(self, request):
-        all_params = ['migration_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_syntax_conversion_progress_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -903,14 +829,10 @@ class UgoClient(Client):
         :type request: :class:`huaweicloudsdkugo.v1.ListVerificationProgressRequest`
         :rtype: :class:`huaweicloudsdkugo.v1.ListVerificationProgressResponse`
         """
-        return self.list_verification_progress_with_http_info(request)
+        return self._list_verification_progress_with_http_info(request)
 
-    def list_verification_progress_with_http_info(self, request):
-        all_params = ['migration_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_verification_progress_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -963,14 +885,10 @@ class UgoClient(Client):
         :type request: :class:`huaweicloudsdkugo.v1.ShowEvaluationProjectDetailRequest`
         :rtype: :class:`huaweicloudsdkugo.v1.ShowEvaluationProjectDetailResponse`
         """
-        return self.show_evaluation_project_detail_with_http_info(request)
+        return self._show_evaluation_project_detail_with_http_info(request)
 
-    def show_evaluation_project_detail_with_http_info(self, request):
-        all_params = ['evaluation_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_evaluation_project_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1023,14 +941,10 @@ class UgoClient(Client):
         :type request: :class:`huaweicloudsdkugo.v1.ShowEvaluationProjectStatusRequest`
         :rtype: :class:`huaweicloudsdkugo.v1.ShowEvaluationProjectStatusResponse`
         """
-        return self.show_evaluation_project_status_with_http_info(request)
+        return self._show_evaluation_project_status_with_http_info(request)
 
-    def show_evaluation_project_status_with_http_info(self, request):
-        all_params = ['evaluation_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_evaluation_project_status_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1083,14 +997,10 @@ class UgoClient(Client):
         :type request: :class:`huaweicloudsdkugo.v1.ShowMigrationProjectDetailRequest`
         :rtype: :class:`huaweicloudsdkugo.v1.ShowMigrationProjectDetailResponse`
         """
-        return self.show_migration_project_detail_with_http_info(request)
+        return self._show_migration_project_detail_with_http_info(request)
 
-    def show_migration_project_detail_with_http_info(self, request):
-        all_params = ['migration_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_migration_project_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1143,14 +1053,10 @@ class UgoClient(Client):
         :type request: :class:`huaweicloudsdkugo.v1.ShowMigrationProjectStatusRequest`
         :rtype: :class:`huaweicloudsdkugo.v1.ShowMigrationProjectStatusResponse`
         """
-        return self.show_migration_project_status_with_http_info(request)
+        return self._show_migration_project_status_with_http_info(request)
 
-    def show_migration_project_status_with_http_info(self, request):
-        all_params = ['migration_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_migration_project_status_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1203,14 +1109,10 @@ class UgoClient(Client):
         :type request: :class:`huaweicloudsdkugo.v1.ListApiVersionsRequest`
         :rtype: :class:`huaweicloudsdkugo.v1.ListApiVersionsResponse`
         """
-        return self.list_api_versions_with_http_info(request)
+        return self._list_api_versions_with_http_info(request)
 
-    def list_api_versions_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_api_versions_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1261,14 +1163,10 @@ class UgoClient(Client):
         :type request: :class:`huaweicloudsdkugo.v1.ShowApiVersionInfoRequest`
         :rtype: :class:`huaweicloudsdkugo.v1.ShowApiVersionInfoResponse`
         """
-        return self.show_api_version_info_with_http_info(request)
+        return self._show_api_version_info_with_http_info(request)
 
-    def show_api_version_info_with_http_info(self, request):
-        all_params = ['api_version']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_api_version_info_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1321,14 +1219,10 @@ class UgoClient(Client):
         :type request: :class:`huaweicloudsdkugo.v1.RunSqlConversionRequest`
         :rtype: :class:`huaweicloudsdkugo.v1.RunSqlConversionResponse`
         """
-        return self.run_sql_conversion_with_http_info(request)
+        return self._run_sql_conversion_with_http_info(request)
 
-    def run_sql_conversion_with_http_info(self, request):
-        all_params = ['sql_convert_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _run_sql_conversion_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

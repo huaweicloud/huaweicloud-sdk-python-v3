@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class CloudRTCClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(CloudRTCClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkcloudrtc.v1.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -55,14 +37,10 @@ class CloudRTCClient(Client):
         :type request: :class:`huaweicloudsdkcloudrtc.v1.ListRtcAbnormalEventDimensionRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v1.ListRtcAbnormalEventDimensionResponse`
         """
-        return self.list_rtc_abnormal_event_dimension_with_http_info(request)
+        return self._list_rtc_abnormal_event_dimension_with_http_info(request)
 
-    def list_rtc_abnormal_event_dimension_with_http_info(self, request):
-        all_params = ['app', 'room_id', 'dimension', 'start_time', 'end_time']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_rtc_abnormal_event_dimension_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -125,14 +103,10 @@ class CloudRTCClient(Client):
         :type request: :class:`huaweicloudsdkcloudrtc.v1.ListRtcAbnormalEventsRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v1.ListRtcAbnormalEventsResponse`
         """
-        return self.list_rtc_abnormal_events_with_http_info(request)
+        return self._list_rtc_abnormal_events_with_http_info(request)
 
-    def list_rtc_abnormal_events_with_http_info(self, request):
-        all_params = ['app', 'room_id', 'uid', 'start_time', 'end_time', 'limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_rtc_abnormal_events_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -199,14 +173,10 @@ class CloudRTCClient(Client):
         :type request: :class:`huaweicloudsdkcloudrtc.v1.ListRtcClientQosDetailsRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v1.ListRtcClientQosDetailsResponse`
         """
-        return self.list_rtc_client_qos_details_with_http_info(request)
+        return self._list_rtc_client_qos_details_with_http_info(request)
 
-    def list_rtc_client_qos_details_with_http_info(self, request):
-        all_params = ['project_id', 'app_id', 'room_id', 'mid', 'start_time', 'end_time', 'authorization', 'x_sdk_date', 'x_project_id', 'domain', 'user_id', 'peer_id', 'stream_id', 'direction', 'time_type', 'limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_rtc_client_qos_details_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -293,14 +263,10 @@ class CloudRTCClient(Client):
         :type request: :class:`huaweicloudsdkcloudrtc.v1.ListRtcHistoryQualityRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v1.ListRtcHistoryQualityResponse`
         """
-        return self.list_rtc_history_quality_with_http_info(request)
+        return self._list_rtc_history_quality_with_http_info(request)
 
-    def list_rtc_history_quality_with_http_info(self, request):
-        all_params = ['project_id', 'app', 'metric', 'authorization', 'x_sdk_date', 'x_project_id', 'start_date', 'end_date']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_rtc_history_quality_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -370,14 +336,10 @@ class CloudRTCClient(Client):
         :type request: :class:`huaweicloudsdkcloudrtc.v1.ListRtcHistoryScaleRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v1.ListRtcHistoryScaleResponse`
         """
-        return self.list_rtc_history_scale_with_http_info(request)
+        return self._list_rtc_history_scale_with_http_info(request)
 
-    def list_rtc_history_scale_with_http_info(self, request):
-        all_params = ['project_id', 'app', 'metric', 'authorization', 'x_sdk_date', 'x_project_id', 'start_date', 'end_date']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_rtc_history_scale_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -445,14 +407,10 @@ class CloudRTCClient(Client):
         :type request: :class:`huaweicloudsdkcloudrtc.v1.ListRtcHistoryUsageRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v1.ListRtcHistoryUsageResponse`
         """
-        return self.list_rtc_history_usage_with_http_info(request)
+        return self._list_rtc_history_usage_with_http_info(request)
 
-    def list_rtc_history_usage_with_http_info(self, request):
-        all_params = ['project_id', 'app', 'metric', 'start_date', 'end_date', 'authorization', 'x_sdk_date', 'x_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_rtc_history_usage_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -521,14 +479,10 @@ class CloudRTCClient(Client):
         :type request: :class:`huaweicloudsdkcloudrtc.v1.ListRtcRealtimeNetworkRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v1.ListRtcRealtimeNetworkResponse`
         """
-        return self.list_rtc_realtime_network_with_http_info(request)
+        return self._list_rtc_realtime_network_with_http_info(request)
 
-    def list_rtc_realtime_network_with_http_info(self, request):
-        all_params = ['project_id', 'app', 'metric', 'sdk_type', 'authorization', 'x_sdk_date', 'x_project_id', 'room_id', 'start_time', 'end_time']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_rtc_realtime_network_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -601,14 +555,10 @@ class CloudRTCClient(Client):
         :type request: :class:`huaweicloudsdkcloudrtc.v1.ListRtcRealtimeQualityRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v1.ListRtcRealtimeQualityResponse`
         """
-        return self.list_rtc_realtime_quality_with_http_info(request)
+        return self._list_rtc_realtime_quality_with_http_info(request)
 
-    def list_rtc_realtime_quality_with_http_info(self, request):
-        all_params = ['project_id', 'app', 'metric', 'sdk_type', 'authorization', 'x_sdk_date', 'x_project_id', 'room_id', 'start_time', 'end_time']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_rtc_realtime_quality_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -681,14 +631,10 @@ class CloudRTCClient(Client):
         :type request: :class:`huaweicloudsdkcloudrtc.v1.ListRtcRealtimeScaleRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v1.ListRtcRealtimeScaleResponse`
         """
-        return self.list_rtc_realtime_scale_with_http_info(request)
+        return self._list_rtc_realtime_scale_with_http_info(request)
 
-    def list_rtc_realtime_scale_with_http_info(self, request):
-        all_params = ['project_id', 'app', 'metric', 'authorization', 'x_sdk_date', 'x_project_id', 'room_id', 'start_time', 'end_time']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_rtc_realtime_scale_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -757,14 +703,10 @@ class CloudRTCClient(Client):
         :type request: :class:`huaweicloudsdkcloudrtc.v1.ListRtcRealtimeScaleDimensionRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v1.ListRtcRealtimeScaleDimensionResponse`
         """
-        return self.list_rtc_realtime_scale_dimension_with_http_info(request)
+        return self._list_rtc_realtime_scale_dimension_with_http_info(request)
 
-    def list_rtc_realtime_scale_dimension_with_http_info(self, request):
-        all_params = ['project_id', 'app', 'metric', 'dimension', 'time', 'authorization', 'x_sdk_date', 'x_project_id', 'room_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_rtc_realtime_scale_dimension_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -835,14 +777,10 @@ class CloudRTCClient(Client):
         :type request: :class:`huaweicloudsdkcloudrtc.v1.ListRtcRoomListRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v1.ListRtcRoomListResponse`
         """
-        return self.list_rtc_room_list_with_http_info(request)
+        return self._list_rtc_room_list_with_http_info(request)
 
-    def list_rtc_room_list_with_http_info(self, request):
-        all_params = ['project_id', 'app', 'authorization', 'x_sdk_date', 'x_project_id', 'room_id', 'state', 'start_time', 'end_time', 'limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_rtc_room_list_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -917,14 +855,10 @@ class CloudRTCClient(Client):
         :type request: :class:`huaweicloudsdkcloudrtc.v1.ListRtcUserListRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v1.ListRtcUserListResponse`
         """
-        return self.list_rtc_user_list_with_http_info(request)
+        return self._list_rtc_user_list_with_http_info(request)
 
-    def list_rtc_user_list_with_http_info(self, request):
-        all_params = ['project_id', 'app', 'authorization', 'x_sdk_date', 'x_project_id', 'room_id', 'uid', 'nickname', 'region', 'isp', 'state', 'start_time', 'end_time', 'limit', 'offset', 'type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_rtc_user_list_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

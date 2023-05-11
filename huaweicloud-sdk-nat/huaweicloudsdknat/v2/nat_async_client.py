@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class NatAsyncClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(NatAsyncClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdknat.v2.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -54,14 +36,10 @@ class NatAsyncClient(Client):
         :type request: :class:`huaweicloudsdknat.v2.BatchCreateNatGatewayDnatRulesRequest`
         :rtype: :class:`huaweicloudsdknat.v2.BatchCreateNatGatewayDnatRulesResponse`
         """
-        return self.batch_create_nat_gateway_dnat_rules_with_http_info(request)
+        return self._batch_create_nat_gateway_dnat_rules_with_http_info(request)
 
-    def batch_create_nat_gateway_dnat_rules_with_http_info(self, request):
-        all_params = ['batch_create_nat_gateway_dnat_rules_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_create_nat_gateway_dnat_rules_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -115,14 +93,10 @@ class NatAsyncClient(Client):
         :type request: :class:`huaweicloudsdknat.v2.CreateNatGatewayDnatRuleRequest`
         :rtype: :class:`huaweicloudsdknat.v2.CreateNatGatewayDnatRuleResponse`
         """
-        return self.create_nat_gateway_dnat_rule_with_http_info(request)
+        return self._create_nat_gateway_dnat_rule_with_http_info(request)
 
-    def create_nat_gateway_dnat_rule_with_http_info(self, request):
-        all_params = ['create_nat_gateway_dnat_rule_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_nat_gateway_dnat_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -176,14 +150,10 @@ class NatAsyncClient(Client):
         :type request: :class:`huaweicloudsdknat.v2.CreatePrivateDnatRequest`
         :rtype: :class:`huaweicloudsdknat.v2.CreatePrivateDnatResponse`
         """
-        return self.create_private_dnat_with_http_info(request)
+        return self._create_private_dnat_with_http_info(request)
 
-    def create_private_dnat_with_http_info(self, request):
-        all_params = ['create_private_dnat_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_private_dnat_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -237,14 +207,10 @@ class NatAsyncClient(Client):
         :type request: :class:`huaweicloudsdknat.v2.DeleteNatGatewayDnatRuleRequest`
         :rtype: :class:`huaweicloudsdknat.v2.DeleteNatGatewayDnatRuleResponse`
         """
-        return self.delete_nat_gateway_dnat_rule_with_http_info(request)
+        return self._delete_nat_gateway_dnat_rule_with_http_info(request)
 
-    def delete_nat_gateway_dnat_rule_with_http_info(self, request):
-        all_params = ['nat_gateway_id', 'dnat_rule_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_nat_gateway_dnat_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -300,14 +266,10 @@ class NatAsyncClient(Client):
         :type request: :class:`huaweicloudsdknat.v2.DeletePrivateDnatRequest`
         :rtype: :class:`huaweicloudsdknat.v2.DeletePrivateDnatResponse`
         """
-        return self.delete_private_dnat_with_http_info(request)
+        return self._delete_private_dnat_with_http_info(request)
 
-    def delete_private_dnat_with_http_info(self, request):
-        all_params = ['dnat_rule_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_private_dnat_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -361,14 +323,10 @@ class NatAsyncClient(Client):
         :type request: :class:`huaweicloudsdknat.v2.ListNatGatewayDnatRulesRequest`
         :rtype: :class:`huaweicloudsdknat.v2.ListNatGatewayDnatRulesResponse`
         """
-        return self.list_nat_gateway_dnat_rules_with_http_info(request)
+        return self._list_nat_gateway_dnat_rules_with_http_info(request)
 
-    def list_nat_gateway_dnat_rules_with_http_info(self, request):
-        all_params = ['admin_state_up', 'external_service_port', 'floating_ip_address', 'status', 'floating_ip_id', 'internal_service_port', 'limit', 'id', 'description', 'created_at', 'nat_gateway_id', 'port_id', 'private_ip', 'protocol']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_nat_gateway_dnat_rules_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -451,14 +409,10 @@ class NatAsyncClient(Client):
         :type request: :class:`huaweicloudsdknat.v2.ListPrivateDnatsRequest`
         :rtype: :class:`huaweicloudsdknat.v2.ListPrivateDnatsResponse`
         """
-        return self.list_private_dnats_with_http_info(request)
+        return self._list_private_dnats_with_http_info(request)
 
-    def list_private_dnats_with_http_info(self, request):
-        all_params = ['limit', 'marker', 'page_reverse', 'id', 'enterprise_project_id', 'description', 'gateway_id', 'transit_ip_id', 'external_ip_address', 'network_interface_id', 'type', 'private_ip_address']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_private_dnats_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -543,14 +497,10 @@ class NatAsyncClient(Client):
         :type request: :class:`huaweicloudsdknat.v2.ShowNatGatewayDnatRuleRequest`
         :rtype: :class:`huaweicloudsdknat.v2.ShowNatGatewayDnatRuleResponse`
         """
-        return self.show_nat_gateway_dnat_rule_with_http_info(request)
+        return self._show_nat_gateway_dnat_rule_with_http_info(request)
 
-    def show_nat_gateway_dnat_rule_with_http_info(self, request):
-        all_params = ['dnat_rule_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_nat_gateway_dnat_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -604,14 +554,10 @@ class NatAsyncClient(Client):
         :type request: :class:`huaweicloudsdknat.v2.ShowPrivateDnatRequest`
         :rtype: :class:`huaweicloudsdknat.v2.ShowPrivateDnatResponse`
         """
-        return self.show_private_dnat_with_http_info(request)
+        return self._show_private_dnat_with_http_info(request)
 
-    def show_private_dnat_with_http_info(self, request):
-        all_params = ['dnat_rule_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_private_dnat_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -665,14 +611,10 @@ class NatAsyncClient(Client):
         :type request: :class:`huaweicloudsdknat.v2.UpdateNatGatewayDnatRuleRequest`
         :rtype: :class:`huaweicloudsdknat.v2.UpdateNatGatewayDnatRuleResponse`
         """
-        return self.update_nat_gateway_dnat_rule_with_http_info(request)
+        return self._update_nat_gateway_dnat_rule_with_http_info(request)
 
-    def update_nat_gateway_dnat_rule_with_http_info(self, request):
-        all_params = ['dnat_rule_id', 'update_nat_gateway_dnat_rule_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_nat_gateway_dnat_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -728,14 +670,10 @@ class NatAsyncClient(Client):
         :type request: :class:`huaweicloudsdknat.v2.UpdatePrivateDnatRequest`
         :rtype: :class:`huaweicloudsdknat.v2.UpdatePrivateDnatResponse`
         """
-        return self.update_private_dnat_with_http_info(request)
+        return self._update_private_dnat_with_http_info(request)
 
-    def update_private_dnat_with_http_info(self, request):
-        all_params = ['dnat_rule_id', 'update_private_dnat_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_private_dnat_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -793,14 +731,10 @@ class NatAsyncClient(Client):
         :type request: :class:`huaweicloudsdknat.v2.BatchCreateDeleteTransitIpTagsRequest`
         :rtype: :class:`huaweicloudsdknat.v2.BatchCreateDeleteTransitIpTagsResponse`
         """
-        return self.batch_create_delete_transit_ip_tags_with_http_info(request)
+        return self._batch_create_delete_transit_ip_tags_with_http_info(request)
 
-    def batch_create_delete_transit_ip_tags_with_http_info(self, request):
-        all_params = ['resource_id', 'batch_create_delete_transit_ip_tags_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_create_delete_transit_ip_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -858,14 +792,10 @@ class NatAsyncClient(Client):
         :type request: :class:`huaweicloudsdknat.v2.CreateTransitIpTagRequest`
         :rtype: :class:`huaweicloudsdknat.v2.CreateTransitIpTagResponse`
         """
-        return self.create_transit_ip_tag_with_http_info(request)
+        return self._create_transit_ip_tag_with_http_info(request)
 
-    def create_transit_ip_tag_with_http_info(self, request):
-        all_params = ['resource_id', 'create_transit_ip_tag_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_transit_ip_tag_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -922,14 +852,10 @@ class NatAsyncClient(Client):
         :type request: :class:`huaweicloudsdknat.v2.DeleteTransitIpTagRequest`
         :rtype: :class:`huaweicloudsdknat.v2.DeleteTransitIpTagResponse`
         """
-        return self.delete_transit_ip_tag_with_http_info(request)
+        return self._delete_transit_ip_tag_with_http_info(request)
 
-    def delete_transit_ip_tag_with_http_info(self, request):
-        all_params = ['key', 'resource_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_transit_ip_tag_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -986,14 +912,10 @@ class NatAsyncClient(Client):
         :type request: :class:`huaweicloudsdknat.v2.ListTransitIpTagsRequest`
         :rtype: :class:`huaweicloudsdknat.v2.ListTransitIpTagsResponse`
         """
-        return self.list_transit_ip_tags_with_http_info(request)
+        return self._list_transit_ip_tags_with_http_info(request)
 
-    def list_transit_ip_tags_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_transit_ip_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1046,14 +968,10 @@ class NatAsyncClient(Client):
         :type request: :class:`huaweicloudsdknat.v2.ListTransitIpsByTagsRequest`
         :rtype: :class:`huaweicloudsdknat.v2.ListTransitIpsByTagsResponse`
         """
-        return self.list_transit_ips_by_tags_with_http_info(request)
+        return self._list_transit_ips_by_tags_with_http_info(request)
 
-    def list_transit_ips_by_tags_with_http_info(self, request):
-        all_params = ['list_transit_ips_by_tags_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_transit_ips_by_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1108,14 +1026,10 @@ class NatAsyncClient(Client):
         :type request: :class:`huaweicloudsdknat.v2.ShowTransitIpTagsRequest`
         :rtype: :class:`huaweicloudsdknat.v2.ShowTransitIpTagsResponse`
         """
-        return self.show_transit_ip_tags_with_http_info(request)
+        return self._show_transit_ip_tags_with_http_info(request)
 
-    def show_transit_ip_tags_with_http_info(self, request):
-        all_params = ['resource_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_transit_ip_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1171,14 +1085,10 @@ class NatAsyncClient(Client):
         :type request: :class:`huaweicloudsdknat.v2.BatchCreateDeletePrivateNatTagsRequest`
         :rtype: :class:`huaweicloudsdknat.v2.BatchCreateDeletePrivateNatTagsResponse`
         """
-        return self.batch_create_delete_private_nat_tags_with_http_info(request)
+        return self._batch_create_delete_private_nat_tags_with_http_info(request)
 
-    def batch_create_delete_private_nat_tags_with_http_info(self, request):
-        all_params = ['resource_id', 'batch_create_delete_private_nat_tags_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_create_delete_private_nat_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1234,14 +1144,10 @@ class NatAsyncClient(Client):
         :type request: :class:`huaweicloudsdknat.v2.CreateNatGatewayRequest`
         :rtype: :class:`huaweicloudsdknat.v2.CreateNatGatewayResponse`
         """
-        return self.create_nat_gateway_with_http_info(request)
+        return self._create_nat_gateway_with_http_info(request)
 
-    def create_nat_gateway_with_http_info(self, request):
-        all_params = ['create_nat_gateway_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_nat_gateway_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1295,14 +1201,10 @@ class NatAsyncClient(Client):
         :type request: :class:`huaweicloudsdknat.v2.CreatePrivateNatRequest`
         :rtype: :class:`huaweicloudsdknat.v2.CreatePrivateNatResponse`
         """
-        return self.create_private_nat_with_http_info(request)
+        return self._create_private_nat_with_http_info(request)
 
-    def create_private_nat_with_http_info(self, request):
-        all_params = ['create_private_nat_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_private_nat_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1358,14 +1260,10 @@ class NatAsyncClient(Client):
         :type request: :class:`huaweicloudsdknat.v2.CreatePrivateNatTagRequest`
         :rtype: :class:`huaweicloudsdknat.v2.CreatePrivateNatTagResponse`
         """
-        return self.create_private_nat_tag_with_http_info(request)
+        return self._create_private_nat_tag_with_http_info(request)
 
-    def create_private_nat_tag_with_http_info(self, request):
-        all_params = ['resource_id', 'create_private_nat_tag_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_private_nat_tag_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1421,14 +1319,10 @@ class NatAsyncClient(Client):
         :type request: :class:`huaweicloudsdknat.v2.DeleteNatGatewayRequest`
         :rtype: :class:`huaweicloudsdknat.v2.DeleteNatGatewayResponse`
         """
-        return self.delete_nat_gateway_with_http_info(request)
+        return self._delete_nat_gateway_with_http_info(request)
 
-    def delete_nat_gateway_with_http_info(self, request):
-        all_params = ['nat_gateway_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_nat_gateway_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1482,14 +1376,10 @@ class NatAsyncClient(Client):
         :type request: :class:`huaweicloudsdknat.v2.DeletePrivateNatRequest`
         :rtype: :class:`huaweicloudsdknat.v2.DeletePrivateNatResponse`
         """
-        return self.delete_private_nat_with_http_info(request)
+        return self._delete_private_nat_with_http_info(request)
 
-    def delete_private_nat_with_http_info(self, request):
-        all_params = ['gateway_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_private_nat_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1544,14 +1434,10 @@ class NatAsyncClient(Client):
         :type request: :class:`huaweicloudsdknat.v2.DeletePrivateNatTagRequest`
         :rtype: :class:`huaweicloudsdknat.v2.DeletePrivateNatTagResponse`
         """
-        return self.delete_private_nat_tag_with_http_info(request)
+        return self._delete_private_nat_tag_with_http_info(request)
 
-    def delete_private_nat_tag_with_http_info(self, request):
-        all_params = ['key', 'resource_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_private_nat_tag_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1607,14 +1493,10 @@ class NatAsyncClient(Client):
         :type request: :class:`huaweicloudsdknat.v2.ListNatGatewaysRequest`
         :rtype: :class:`huaweicloudsdknat.v2.ListNatGatewaysResponse`
         """
-        return self.list_nat_gateways_with_http_info(request)
+        return self._list_nat_gateways_with_http_info(request)
 
-    def list_nat_gateways_with_http_info(self, request):
-        all_params = ['id', 'enterprise_project_id', 'description', 'created_at', 'name', 'status', 'spec', 'admin_state_up', 'internal_network_id', 'router_id', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_nat_gateways_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1691,14 +1573,10 @@ class NatAsyncClient(Client):
         :type request: :class:`huaweicloudsdknat.v2.ListPrivateNatTagsRequest`
         :rtype: :class:`huaweicloudsdknat.v2.ListPrivateNatTagsResponse`
         """
-        return self.list_private_nat_tags_with_http_info(request)
+        return self._list_private_nat_tags_with_http_info(request)
 
-    def list_private_nat_tags_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_private_nat_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1750,14 +1628,10 @@ class NatAsyncClient(Client):
         :type request: :class:`huaweicloudsdknat.v2.ListPrivateNatsRequest`
         :rtype: :class:`huaweicloudsdknat.v2.ListPrivateNatsResponse`
         """
-        return self.list_private_nats_with_http_info(request)
+        return self._list_private_nats_with_http_info(request)
 
-    def list_private_nats_with_http_info(self, request):
-        all_params = ['limit', 'marker', 'page_reverse', 'id', 'name', 'description', 'spec', 'status', 'vpc_id', 'virsubnet_id', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_private_nats_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1840,14 +1714,10 @@ class NatAsyncClient(Client):
         :type request: :class:`huaweicloudsdknat.v2.ListPrivateNatsByTagsRequest`
         :rtype: :class:`huaweicloudsdknat.v2.ListPrivateNatsByTagsResponse`
         """
-        return self.list_private_nats_by_tags_with_http_info(request)
+        return self._list_private_nats_by_tags_with_http_info(request)
 
-    def list_private_nats_by_tags_with_http_info(self, request):
-        all_params = ['list_private_nats_by_tags_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_private_nats_by_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1901,14 +1771,10 @@ class NatAsyncClient(Client):
         :type request: :class:`huaweicloudsdknat.v2.ShowNatGatewayRequest`
         :rtype: :class:`huaweicloudsdknat.v2.ShowNatGatewayResponse`
         """
-        return self.show_nat_gateway_with_http_info(request)
+        return self._show_nat_gateway_with_http_info(request)
 
-    def show_nat_gateway_with_http_info(self, request):
-        all_params = ['nat_gateway_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_nat_gateway_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1962,14 +1828,10 @@ class NatAsyncClient(Client):
         :type request: :class:`huaweicloudsdknat.v2.ShowPrivateNatRequest`
         :rtype: :class:`huaweicloudsdknat.v2.ShowPrivateNatResponse`
         """
-        return self.show_private_nat_with_http_info(request)
+        return self._show_private_nat_with_http_info(request)
 
-    def show_private_nat_with_http_info(self, request):
-        all_params = ['gateway_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_private_nat_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2024,14 +1886,10 @@ class NatAsyncClient(Client):
         :type request: :class:`huaweicloudsdknat.v2.ShowPrivateNatTagsRequest`
         :rtype: :class:`huaweicloudsdknat.v2.ShowPrivateNatTagsResponse`
         """
-        return self.show_private_nat_tags_with_http_info(request)
+        return self._show_private_nat_tags_with_http_info(request)
 
-    def show_private_nat_tags_with_http_info(self, request):
-        all_params = ['resource_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_private_nat_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2085,14 +1943,10 @@ class NatAsyncClient(Client):
         :type request: :class:`huaweicloudsdknat.v2.UpdateNatGatewayRequest`
         :rtype: :class:`huaweicloudsdknat.v2.UpdateNatGatewayResponse`
         """
-        return self.update_nat_gateway_with_http_info(request)
+        return self._update_nat_gateway_with_http_info(request)
 
-    def update_nat_gateway_with_http_info(self, request):
-        all_params = ['nat_gateway_id', 'update_nat_gateway_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_nat_gateway_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2148,14 +2002,10 @@ class NatAsyncClient(Client):
         :type request: :class:`huaweicloudsdknat.v2.UpdatePrivateNatRequest`
         :rtype: :class:`huaweicloudsdknat.v2.UpdatePrivateNatResponse`
         """
-        return self.update_private_nat_with_http_info(request)
+        return self._update_private_nat_with_http_info(request)
 
-    def update_private_nat_with_http_info(self, request):
-        all_params = ['gateway_id', 'update_private_nat_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_private_nat_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2211,14 +2061,10 @@ class NatAsyncClient(Client):
         :type request: :class:`huaweicloudsdknat.v2.CreateTransitIpRequest`
         :rtype: :class:`huaweicloudsdknat.v2.CreateTransitIpResponse`
         """
-        return self.create_transit_ip_with_http_info(request)
+        return self._create_transit_ip_with_http_info(request)
 
-    def create_transit_ip_with_http_info(self, request):
-        all_params = ['create_transit_ip_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_transit_ip_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2272,14 +2118,10 @@ class NatAsyncClient(Client):
         :type request: :class:`huaweicloudsdknat.v2.DeleteTransitIpRequest`
         :rtype: :class:`huaweicloudsdknat.v2.DeleteTransitIpResponse`
         """
-        return self.delete_transit_ip_with_http_info(request)
+        return self._delete_transit_ip_with_http_info(request)
 
-    def delete_transit_ip_with_http_info(self, request):
-        all_params = ['transit_ip_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_transit_ip_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2333,14 +2175,10 @@ class NatAsyncClient(Client):
         :type request: :class:`huaweicloudsdknat.v2.ListTransitIpsRequest`
         :rtype: :class:`huaweicloudsdknat.v2.ListTransitIpsResponse`
         """
-        return self.list_transit_ips_with_http_info(request)
+        return self._list_transit_ips_with_http_info(request)
 
-    def list_transit_ips_with_http_info(self, request):
-        all_params = ['limit', 'marker', 'page_reverse', 'id', 'network_interface_id', 'ip_address', 'gateway_id', 'enterprise_project_id', 'virsubnet_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_transit_ips_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2416,14 +2254,10 @@ class NatAsyncClient(Client):
         :type request: :class:`huaweicloudsdknat.v2.ShowTransitIpRequest`
         :rtype: :class:`huaweicloudsdknat.v2.ShowTransitIpResponse`
         """
-        return self.show_transit_ip_with_http_info(request)
+        return self._show_transit_ip_with_http_info(request)
 
-    def show_transit_ip_with_http_info(self, request):
-        all_params = ['transit_ip_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_transit_ip_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2477,14 +2311,10 @@ class NatAsyncClient(Client):
         :type request: :class:`huaweicloudsdknat.v2.CreateNatGatewaySnatRuleRequest`
         :rtype: :class:`huaweicloudsdknat.v2.CreateNatGatewaySnatRuleResponse`
         """
-        return self.create_nat_gateway_snat_rule_with_http_info(request)
+        return self._create_nat_gateway_snat_rule_with_http_info(request)
 
-    def create_nat_gateway_snat_rule_with_http_info(self, request):
-        all_params = ['create_nat_gateway_snat_rule_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_nat_gateway_snat_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2538,14 +2368,10 @@ class NatAsyncClient(Client):
         :type request: :class:`huaweicloudsdknat.v2.CreatePrivateSnatRequest`
         :rtype: :class:`huaweicloudsdknat.v2.CreatePrivateSnatResponse`
         """
-        return self.create_private_snat_with_http_info(request)
+        return self._create_private_snat_with_http_info(request)
 
-    def create_private_snat_with_http_info(self, request):
-        all_params = ['create_private_snat_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_private_snat_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2599,14 +2425,10 @@ class NatAsyncClient(Client):
         :type request: :class:`huaweicloudsdknat.v2.DeleteNatGatewaySnatRuleRequest`
         :rtype: :class:`huaweicloudsdknat.v2.DeleteNatGatewaySnatRuleResponse`
         """
-        return self.delete_nat_gateway_snat_rule_with_http_info(request)
+        return self._delete_nat_gateway_snat_rule_with_http_info(request)
 
-    def delete_nat_gateway_snat_rule_with_http_info(self, request):
-        all_params = ['nat_gateway_id', 'snat_rule_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_nat_gateway_snat_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2662,14 +2484,10 @@ class NatAsyncClient(Client):
         :type request: :class:`huaweicloudsdknat.v2.DeletePrivateSnatRequest`
         :rtype: :class:`huaweicloudsdknat.v2.DeletePrivateSnatResponse`
         """
-        return self.delete_private_snat_with_http_info(request)
+        return self._delete_private_snat_with_http_info(request)
 
-    def delete_private_snat_with_http_info(self, request):
-        all_params = ['snat_rule_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_private_snat_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2723,14 +2541,10 @@ class NatAsyncClient(Client):
         :type request: :class:`huaweicloudsdknat.v2.ListNatGatewaySnatRulesRequest`
         :rtype: :class:`huaweicloudsdknat.v2.ListNatGatewaySnatRulesResponse`
         """
-        return self.list_nat_gateway_snat_rules_with_http_info(request)
+        return self._list_nat_gateway_snat_rules_with_http_info(request)
 
-    def list_nat_gateway_snat_rules_with_http_info(self, request):
-        all_params = ['admin_state_up', 'cidr', 'limit', 'floating_ip_address', 'floating_ip_id', 'id', 'description', 'created_at', 'nat_gateway_id', 'network_id', 'source_type', 'status']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_nat_gateway_snat_rules_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2807,14 +2621,10 @@ class NatAsyncClient(Client):
         :type request: :class:`huaweicloudsdknat.v2.ListPrivateSnatsRequest`
         :rtype: :class:`huaweicloudsdknat.v2.ListPrivateSnatsResponse`
         """
-        return self.list_private_snats_with_http_info(request)
+        return self._list_private_snats_with_http_info(request)
 
-    def list_private_snats_with_http_info(self, request):
-        all_params = ['limit', 'marker', 'page_reverse', 'id', 'description', 'gateway_id', 'cidr', 'virsubnet_id', 'transit_ip_id', 'transit_ip_address', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_private_snats_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2896,14 +2706,10 @@ class NatAsyncClient(Client):
         :type request: :class:`huaweicloudsdknat.v2.ShowNatGatewaySnatRuleRequest`
         :rtype: :class:`huaweicloudsdknat.v2.ShowNatGatewaySnatRuleResponse`
         """
-        return self.show_nat_gateway_snat_rule_with_http_info(request)
+        return self._show_nat_gateway_snat_rule_with_http_info(request)
 
-    def show_nat_gateway_snat_rule_with_http_info(self, request):
-        all_params = ['snat_rule_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_nat_gateway_snat_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2957,14 +2763,10 @@ class NatAsyncClient(Client):
         :type request: :class:`huaweicloudsdknat.v2.ShowPrivateSnatRequest`
         :rtype: :class:`huaweicloudsdknat.v2.ShowPrivateSnatResponse`
         """
-        return self.show_private_snat_with_http_info(request)
+        return self._show_private_snat_with_http_info(request)
 
-    def show_private_snat_with_http_info(self, request):
-        all_params = ['snat_rule_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_private_snat_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3018,14 +2820,10 @@ class NatAsyncClient(Client):
         :type request: :class:`huaweicloudsdknat.v2.UpdateNatGatewaySnatRuleRequest`
         :rtype: :class:`huaweicloudsdknat.v2.UpdateNatGatewaySnatRuleResponse`
         """
-        return self.update_nat_gateway_snat_rule_with_http_info(request)
+        return self._update_nat_gateway_snat_rule_with_http_info(request)
 
-    def update_nat_gateway_snat_rule_with_http_info(self, request):
-        all_params = ['snat_rule_id', 'update_nat_gateway_snat_rule_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_nat_gateway_snat_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3081,14 +2879,10 @@ class NatAsyncClient(Client):
         :type request: :class:`huaweicloudsdknat.v2.UpdatePrivateSnatRequest`
         :rtype: :class:`huaweicloudsdknat.v2.UpdatePrivateSnatResponse`
         """
-        return self.update_private_snat_with_http_info(request)
+        return self._update_private_snat_with_http_info(request)
 
-    def update_private_snat_with_http_info(self, request):
-        all_params = ['snat_rule_id', 'update_private_snat_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_private_snat_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

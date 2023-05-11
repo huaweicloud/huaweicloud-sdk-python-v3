@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class KafkaClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(KafkaClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkkafka.v2.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -53,14 +35,10 @@ class KafkaClient(Client):
         :type request: :class:`huaweicloudsdkkafka.v2.BatchCreateOrDeleteKafkaTagRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.BatchCreateOrDeleteKafkaTagResponse`
         """
-        return self.batch_create_or_delete_kafka_tag_with_http_info(request)
+        return self._batch_create_or_delete_kafka_tag_with_http_info(request)
 
-    def batch_create_or_delete_kafka_tag_with_http_info(self, request):
-        all_params = ['instance_id', 'batch_create_or_delete_kafka_tag_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_create_or_delete_kafka_tag_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -115,14 +93,10 @@ class KafkaClient(Client):
         :type request: :class:`huaweicloudsdkkafka.v2.BatchDeleteGroupRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.BatchDeleteGroupResponse`
         """
-        return self.batch_delete_group_with_http_info(request)
+        return self._batch_delete_group_with_http_info(request)
 
-    def batch_delete_group_with_http_info(self, request):
-        all_params = ['instance_id', 'batch_delete_group_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_delete_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -177,14 +151,10 @@ class KafkaClient(Client):
         :type request: :class:`huaweicloudsdkkafka.v2.BatchDeleteInstanceTopicRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.BatchDeleteInstanceTopicResponse`
         """
-        return self.batch_delete_instance_topic_with_http_info(request)
+        return self._batch_delete_instance_topic_with_http_info(request)
 
-    def batch_delete_instance_topic_with_http_info(self, request):
-        all_params = ['instance_id', 'batch_delete_instance_topic_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_delete_instance_topic_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -239,14 +209,10 @@ class KafkaClient(Client):
         :type request: :class:`huaweicloudsdkkafka.v2.BatchDeleteInstanceUsersRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.BatchDeleteInstanceUsersResponse`
         """
-        return self.batch_delete_instance_users_with_http_info(request)
+        return self._batch_delete_instance_users_with_http_info(request)
 
-    def batch_delete_instance_users_with_http_info(self, request):
-        all_params = ['instance_id', 'batch_delete_instance_users_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_delete_instance_users_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -305,14 +271,10 @@ class KafkaClient(Client):
         :type request: :class:`huaweicloudsdkkafka.v2.BatchRestartOrDeleteInstancesRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.BatchRestartOrDeleteInstancesResponse`
         """
-        return self.batch_restart_or_delete_instances_with_http_info(request)
+        return self._batch_restart_or_delete_instances_with_http_info(request)
 
-    def batch_restart_or_delete_instances_with_http_info(self, request):
-        all_params = ['batch_restart_or_delete_instances_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_restart_or_delete_instances_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -367,14 +329,10 @@ class KafkaClient(Client):
         :type request: :class:`huaweicloudsdkkafka.v2.CreateConnectorRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.CreateConnectorResponse`
         """
-        return self.create_connector_with_http_info(request)
+        return self._create_connector_with_http_info(request)
 
-    def create_connector_with_http_info(self, request):
-        all_params = ['instance_id', 'create_connector_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_connector_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -431,14 +389,10 @@ class KafkaClient(Client):
         :type request: :class:`huaweicloudsdkkafka.v2.CreateInstanceByEngineRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.CreateInstanceByEngineResponse`
         """
-        return self.create_instance_by_engine_with_http_info(request)
+        return self._create_instance_by_engine_with_http_info(request)
 
-    def create_instance_by_engine_with_http_info(self, request):
-        all_params = ['engine', 'create_instance_by_engine_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_instance_by_engine_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -493,14 +447,10 @@ class KafkaClient(Client):
         :type request: :class:`huaweicloudsdkkafka.v2.CreateInstanceTopicRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.CreateInstanceTopicResponse`
         """
-        return self.create_instance_topic_with_http_info(request)
+        return self._create_instance_topic_with_http_info(request)
 
-    def create_instance_topic_with_http_info(self, request):
-        all_params = ['instance_id', 'create_instance_topic_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_instance_topic_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -555,14 +505,10 @@ class KafkaClient(Client):
         :type request: :class:`huaweicloudsdkkafka.v2.CreateInstanceUserRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.CreateInstanceUserResponse`
         """
-        return self.create_instance_user_with_http_info(request)
+        return self._create_instance_user_with_http_info(request)
 
-    def create_instance_user_with_http_info(self, request):
-        all_params = ['instance_id', 'create_instance_user_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_instance_user_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -617,14 +563,10 @@ class KafkaClient(Client):
         :type request: :class:`huaweicloudsdkkafka.v2.CreatePartitionRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.CreatePartitionResponse`
         """
-        return self.create_partition_with_http_info(request)
+        return self._create_partition_with_http_info(request)
 
-    def create_partition_with_http_info(self, request):
-        all_params = ['instance_id', 'topic', 'create_partition_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_partition_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -681,14 +623,10 @@ class KafkaClient(Client):
         :type request: :class:`huaweicloudsdkkafka.v2.CreatePostPaidInstanceRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.CreatePostPaidInstanceResponse`
         """
-        return self.create_post_paid_instance_with_http_info(request)
+        return self._create_post_paid_instance_with_http_info(request)
 
-    def create_post_paid_instance_with_http_info(self, request):
-        all_params = ['create_post_paid_instance_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_post_paid_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -741,14 +679,10 @@ class KafkaClient(Client):
         :type request: :class:`huaweicloudsdkkafka.v2.CreateReassignmentTaskRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.CreateReassignmentTaskResponse`
         """
-        return self.create_reassignment_task_with_http_info(request)
+        return self._create_reassignment_task_with_http_info(request)
 
-    def create_reassignment_task_with_http_info(self, request):
-        all_params = ['instance_id', 'create_reassignment_task_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_reassignment_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -803,14 +737,10 @@ class KafkaClient(Client):
         :type request: :class:`huaweicloudsdkkafka.v2.CreateSinkTaskRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.CreateSinkTaskResponse`
         """
-        return self.create_sink_task_with_http_info(request)
+        return self._create_sink_task_with_http_info(request)
 
-    def create_sink_task_with_http_info(self, request):
-        all_params = ['connector_id', 'create_sink_task_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_sink_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -865,14 +795,10 @@ class KafkaClient(Client):
         :type request: :class:`huaweicloudsdkkafka.v2.DeleteBackgroundTaskRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.DeleteBackgroundTaskResponse`
         """
-        return self.delete_background_task_with_http_info(request)
+        return self._delete_background_task_with_http_info(request)
 
-    def delete_background_task_with_http_info(self, request):
-        all_params = ['instance_id', 'task_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_background_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -927,14 +853,10 @@ class KafkaClient(Client):
         :type request: :class:`huaweicloudsdkkafka.v2.DeleteInstanceRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.DeleteInstanceResponse`
         """
-        return self.delete_instance_with_http_info(request)
+        return self._delete_instance_with_http_info(request)
 
-    def delete_instance_with_http_info(self, request):
-        all_params = ['instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -987,14 +909,10 @@ class KafkaClient(Client):
         :type request: :class:`huaweicloudsdkkafka.v2.DeleteSinkTaskRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.DeleteSinkTaskResponse`
         """
-        return self.delete_sink_task_with_http_info(request)
+        return self._delete_sink_task_with_http_info(request)
 
-    def delete_sink_task_with_http_info(self, request):
-        all_params = ['connector_id', 'task_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_sink_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1049,14 +967,10 @@ class KafkaClient(Client):
         :type request: :class:`huaweicloudsdkkafka.v2.ListAvailableZonesRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.ListAvailableZonesResponse`
         """
-        return self.list_available_zones_with_http_info(request)
+        return self._list_available_zones_with_http_info(request)
 
-    def list_available_zones_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_available_zones_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1107,14 +1021,10 @@ class KafkaClient(Client):
         :type request: :class:`huaweicloudsdkkafka.v2.ListBackgroundTasksRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.ListBackgroundTasksResponse`
         """
-        return self.list_background_tasks_with_http_info(request)
+        return self._list_background_tasks_with_http_info(request)
 
-    def list_background_tasks_with_http_info(self, request):
-        all_params = ['instance_id', 'start', 'limit', 'begin_time', 'end_time']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_background_tasks_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1175,14 +1085,10 @@ class KafkaClient(Client):
         :type request: :class:`huaweicloudsdkkafka.v2.ListEngineProductsRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.ListEngineProductsResponse`
         """
-        return self.list_engine_products_with_http_info(request)
+        return self._list_engine_products_with_http_info(request)
 
-    def list_engine_products_with_http_info(self, request):
-        all_params = ['engine', 'product_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_engine_products_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1237,14 +1143,10 @@ class KafkaClient(Client):
         :type request: :class:`huaweicloudsdkkafka.v2.ListInstanceConsumerGroupsRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.ListInstanceConsumerGroupsResponse`
         """
-        return self.list_instance_consumer_groups_with_http_info(request)
+        return self._list_instance_consumer_groups_with_http_info(request)
 
-    def list_instance_consumer_groups_with_http_info(self, request):
-        all_params = ['instance_id', 'offset', 'limit', 'group']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_instance_consumer_groups_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1303,14 +1205,10 @@ class KafkaClient(Client):
         :type request: :class:`huaweicloudsdkkafka.v2.ListInstanceTopicsRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.ListInstanceTopicsResponse`
         """
-        return self.list_instance_topics_with_http_info(request)
+        return self._list_instance_topics_with_http_info(request)
 
-    def list_instance_topics_with_http_info(self, request):
-        all_params = ['instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_instance_topics_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1363,14 +1261,10 @@ class KafkaClient(Client):
         :type request: :class:`huaweicloudsdkkafka.v2.ListInstancesRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.ListInstancesResponse`
         """
-        return self.list_instances_with_http_info(request)
+        return self._list_instances_with_http_info(request)
 
-    def list_instances_with_http_info(self, request):
-        all_params = ['engine', 'name', 'instance_id', 'status', 'include_failure', 'exact_match_name', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_instances_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1441,14 +1335,10 @@ class KafkaClient(Client):
         :type request: :class:`huaweicloudsdkkafka.v2.ListProductsRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.ListProductsResponse`
         """
-        return self.list_products_with_http_info(request)
+        return self._list_products_with_http_info(request)
 
-    def list_products_with_http_info(self, request):
-        all_params = ['engine']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_products_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1501,14 +1391,10 @@ class KafkaClient(Client):
         :type request: :class:`huaweicloudsdkkafka.v2.ListSinkTasksRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.ListSinkTasksResponse`
         """
-        return self.list_sink_tasks_with_http_info(request)
+        return self._list_sink_tasks_with_http_info(request)
 
-    def list_sink_tasks_with_http_info(self, request):
-        all_params = ['connector_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_sink_tasks_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1561,14 +1447,10 @@ class KafkaClient(Client):
         :type request: :class:`huaweicloudsdkkafka.v2.ResetManagerPasswordRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.ResetManagerPasswordResponse`
         """
-        return self.reset_manager_password_with_http_info(request)
+        return self._reset_manager_password_with_http_info(request)
 
-    def reset_manager_password_with_http_info(self, request):
-        all_params = ['instance_id', 'reset_manager_password_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _reset_manager_password_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1625,14 +1507,10 @@ class KafkaClient(Client):
         :type request: :class:`huaweicloudsdkkafka.v2.ResetMessageOffsetRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.ResetMessageOffsetResponse`
         """
-        return self.reset_message_offset_with_http_info(request)
+        return self._reset_message_offset_with_http_info(request)
 
-    def reset_message_offset_with_http_info(self, request):
-        all_params = ['instance_id', 'group', 'reset_message_offset_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _reset_message_offset_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1689,14 +1567,10 @@ class KafkaClient(Client):
         :type request: :class:`huaweicloudsdkkafka.v2.ResetPasswordRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.ResetPasswordResponse`
         """
-        return self.reset_password_with_http_info(request)
+        return self._reset_password_with_http_info(request)
 
-    def reset_password_with_http_info(self, request):
-        all_params = ['instance_id', 'reset_password_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _reset_password_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1751,14 +1625,10 @@ class KafkaClient(Client):
         :type request: :class:`huaweicloudsdkkafka.v2.ResetUserPasswrodRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.ResetUserPasswrodResponse`
         """
-        return self.reset_user_passwrod_with_http_info(request)
+        return self._reset_user_passwrod_with_http_info(request)
 
-    def reset_user_passwrod_with_http_info(self, request):
-        all_params = ['instance_id', 'user_name', 'reset_user_passwrod_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _reset_user_passwrod_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1815,14 +1685,10 @@ class KafkaClient(Client):
         :type request: :class:`huaweicloudsdkkafka.v2.ResizeEngineInstanceRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.ResizeEngineInstanceResponse`
         """
-        return self.resize_engine_instance_with_http_info(request)
+        return self._resize_engine_instance_with_http_info(request)
 
-    def resize_engine_instance_with_http_info(self, request):
-        all_params = ['engine', 'instance_id', 'resize_engine_instance_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _resize_engine_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1879,14 +1745,10 @@ class KafkaClient(Client):
         :type request: :class:`huaweicloudsdkkafka.v2.ResizeInstanceRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.ResizeInstanceResponse`
         """
-        return self.resize_instance_with_http_info(request)
+        return self._resize_instance_with_http_info(request)
 
-    def resize_instance_with_http_info(self, request):
-        all_params = ['instance_id', 'resize_instance_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _resize_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1941,14 +1803,10 @@ class KafkaClient(Client):
         :type request: :class:`huaweicloudsdkkafka.v2.RestartManagerRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.RestartManagerResponse`
         """
-        return self.restart_manager_with_http_info(request)
+        return self._restart_manager_with_http_info(request)
 
-    def restart_manager_with_http_info(self, request):
-        all_params = ['instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _restart_manager_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2001,14 +1859,10 @@ class KafkaClient(Client):
         :type request: :class:`huaweicloudsdkkafka.v2.ShowBackgroundTaskRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.ShowBackgroundTaskResponse`
         """
-        return self.show_background_task_with_http_info(request)
+        return self._show_background_task_with_http_info(request)
 
-    def show_background_task_with_http_info(self, request):
-        all_params = ['instance_id', 'task_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_background_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2063,14 +1917,10 @@ class KafkaClient(Client):
         :type request: :class:`huaweicloudsdkkafka.v2.ShowCesHierarchyRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.ShowCesHierarchyResponse`
         """
-        return self.show_ces_hierarchy_with_http_info(request)
+        return self._show_ces_hierarchy_with_http_info(request)
 
-    def show_ces_hierarchy_with_http_info(self, request):
-        all_params = ['instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_ces_hierarchy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2123,14 +1973,10 @@ class KafkaClient(Client):
         :type request: :class:`huaweicloudsdkkafka.v2.ShowClusterRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.ShowClusterResponse`
         """
-        return self.show_cluster_with_http_info(request)
+        return self._show_cluster_with_http_info(request)
 
-    def show_cluster_with_http_info(self, request):
-        all_params = ['instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_cluster_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2183,14 +2029,10 @@ class KafkaClient(Client):
         :type request: :class:`huaweicloudsdkkafka.v2.ShowCoordinatorsRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.ShowCoordinatorsResponse`
         """
-        return self.show_coordinators_with_http_info(request)
+        return self._show_coordinators_with_http_info(request)
 
-    def show_coordinators_with_http_info(self, request):
-        all_params = ['instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_coordinators_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2243,14 +2085,10 @@ class KafkaClient(Client):
         :type request: :class:`huaweicloudsdkkafka.v2.ShowEngineInstanceExtendProductInfoRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.ShowEngineInstanceExtendProductInfoResponse`
         """
-        return self.show_engine_instance_extend_product_info_with_http_info(request)
+        return self._show_engine_instance_extend_product_info_with_http_info(request)
 
-    def show_engine_instance_extend_product_info_with_http_info(self, request):
-        all_params = ['engine', 'instance_id', 'type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_engine_instance_extend_product_info_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2307,14 +2145,10 @@ class KafkaClient(Client):
         :type request: :class:`huaweicloudsdkkafka.v2.ShowGroupsRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.ShowGroupsResponse`
         """
-        return self.show_groups_with_http_info(request)
+        return self._show_groups_with_http_info(request)
 
-    def show_groups_with_http_info(self, request):
-        all_params = ['instance_id', 'group']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_groups_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2369,14 +2203,10 @@ class KafkaClient(Client):
         :type request: :class:`huaweicloudsdkkafka.v2.ShowInstanceRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.ShowInstanceResponse`
         """
-        return self.show_instance_with_http_info(request)
+        return self._show_instance_with_http_info(request)
 
-    def show_instance_with_http_info(self, request):
-        all_params = ['instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2429,14 +2259,10 @@ class KafkaClient(Client):
         :type request: :class:`huaweicloudsdkkafka.v2.ShowInstanceExtendProductInfoRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.ShowInstanceExtendProductInfoResponse`
         """
-        return self.show_instance_extend_product_info_with_http_info(request)
+        return self._show_instance_extend_product_info_with_http_info(request)
 
-    def show_instance_extend_product_info_with_http_info(self, request):
-        all_params = ['instance_id', 'type', 'engine']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_instance_extend_product_info_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2494,14 +2320,10 @@ class KafkaClient(Client):
         :type request: :class:`huaweicloudsdkkafka.v2.ShowInstanceMessagesRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.ShowInstanceMessagesResponse`
         """
-        return self.show_instance_messages_with_http_info(request)
+        return self._show_instance_messages_with_http_info(request)
 
-    def show_instance_messages_with_http_info(self, request):
-        all_params = ['instance_id', 'topic', 'asc', 'start_time', 'end_time', 'limit', 'offset', 'download', 'message_offset', 'partition']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_instance_messages_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2572,14 +2394,10 @@ class KafkaClient(Client):
         :type request: :class:`huaweicloudsdkkafka.v2.ShowInstanceTopicDetailRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.ShowInstanceTopicDetailResponse`
         """
-        return self.show_instance_topic_detail_with_http_info(request)
+        return self._show_instance_topic_detail_with_http_info(request)
 
-    def show_instance_topic_detail_with_http_info(self, request):
-        all_params = ['instance_id', 'topic']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_instance_topic_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2636,14 +2454,10 @@ class KafkaClient(Client):
         :type request: :class:`huaweicloudsdkkafka.v2.ShowInstanceUsersRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.ShowInstanceUsersResponse`
         """
-        return self.show_instance_users_with_http_info(request)
+        return self._show_instance_users_with_http_info(request)
 
-    def show_instance_users_with_http_info(self, request):
-        all_params = ['instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_instance_users_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2696,14 +2510,10 @@ class KafkaClient(Client):
         :type request: :class:`huaweicloudsdkkafka.v2.ShowKafkaProjectTagsRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.ShowKafkaProjectTagsResponse`
         """
-        return self.show_kafka_project_tags_with_http_info(request)
+        return self._show_kafka_project_tags_with_http_info(request)
 
-    def show_kafka_project_tags_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_kafka_project_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2754,14 +2564,10 @@ class KafkaClient(Client):
         :type request: :class:`huaweicloudsdkkafka.v2.ShowKafkaTagsRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.ShowKafkaTagsResponse`
         """
-        return self.show_kafka_tags_with_http_info(request)
+        return self._show_kafka_tags_with_http_info(request)
 
-    def show_kafka_tags_with_http_info(self, request):
-        all_params = ['instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_kafka_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2814,14 +2620,10 @@ class KafkaClient(Client):
         :type request: :class:`huaweicloudsdkkafka.v2.ShowKafkaTopicPartitionDiskusageRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.ShowKafkaTopicPartitionDiskusageResponse`
         """
-        return self.show_kafka_topic_partition_diskusage_with_http_info(request)
+        return self._show_kafka_topic_partition_diskusage_with_http_info(request)
 
-    def show_kafka_topic_partition_diskusage_with_http_info(self, request):
-        all_params = ['instance_id', 'min_size', 'top', 'percentage']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_kafka_topic_partition_diskusage_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2880,14 +2682,10 @@ class KafkaClient(Client):
         :type request: :class:`huaweicloudsdkkafka.v2.ShowMaintainWindowsRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.ShowMaintainWindowsResponse`
         """
-        return self.show_maintain_windows_with_http_info(request)
+        return self._show_maintain_windows_with_http_info(request)
 
-    def show_maintain_windows_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_maintain_windows_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2938,14 +2736,10 @@ class KafkaClient(Client):
         :type request: :class:`huaweicloudsdkkafka.v2.ShowMessagesRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.ShowMessagesResponse`
         """
-        return self.show_messages_with_http_info(request)
+        return self._show_messages_with_http_info(request)
 
-    def show_messages_with_http_info(self, request):
-        all_params = ['instance_id', 'topic', 'start_time', 'end_time', 'limit', 'offset', 'partition']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_messages_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3010,14 +2804,10 @@ class KafkaClient(Client):
         :type request: :class:`huaweicloudsdkkafka.v2.ShowPartitionBeginningMessageRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.ShowPartitionBeginningMessageResponse`
         """
-        return self.show_partition_beginning_message_with_http_info(request)
+        return self._show_partition_beginning_message_with_http_info(request)
 
-    def show_partition_beginning_message_with_http_info(self, request):
-        all_params = ['instance_id', 'topic', 'partition']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_partition_beginning_message_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3074,14 +2864,10 @@ class KafkaClient(Client):
         :type request: :class:`huaweicloudsdkkafka.v2.ShowPartitionEndMessageRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.ShowPartitionEndMessageResponse`
         """
-        return self.show_partition_end_message_with_http_info(request)
+        return self._show_partition_end_message_with_http_info(request)
 
-    def show_partition_end_message_with_http_info(self, request):
-        all_params = ['instance_id', 'topic', 'partition']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_partition_end_message_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3138,14 +2924,10 @@ class KafkaClient(Client):
         :type request: :class:`huaweicloudsdkkafka.v2.ShowPartitionMessageRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.ShowPartitionMessageResponse`
         """
-        return self.show_partition_message_with_http_info(request)
+        return self._show_partition_message_with_http_info(request)
 
-    def show_partition_message_with_http_info(self, request):
-        all_params = ['instance_id', 'topic', 'partition', 'message_offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_partition_message_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3204,14 +2986,10 @@ class KafkaClient(Client):
         :type request: :class:`huaweicloudsdkkafka.v2.ShowSinkTaskDetailRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.ShowSinkTaskDetailResponse`
         """
-        return self.show_sink_task_detail_with_http_info(request)
+        return self._show_sink_task_detail_with_http_info(request)
 
-    def show_sink_task_detail_with_http_info(self, request):
-        all_params = ['connector_id', 'task_id', 'topic_info']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_sink_task_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3270,14 +3048,10 @@ class KafkaClient(Client):
         :type request: :class:`huaweicloudsdkkafka.v2.ShowTopicAccessPolicyRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.ShowTopicAccessPolicyResponse`
         """
-        return self.show_topic_access_policy_with_http_info(request)
+        return self._show_topic_access_policy_with_http_info(request)
 
-    def show_topic_access_policy_with_http_info(self, request):
-        all_params = ['instance_id', 'topic_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_topic_access_policy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3332,14 +3106,10 @@ class KafkaClient(Client):
         :type request: :class:`huaweicloudsdkkafka.v2.UpdateInstanceRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.UpdateInstanceResponse`
         """
-        return self.update_instance_with_http_info(request)
+        return self._update_instance_with_http_info(request)
 
-    def update_instance_with_http_info(self, request):
-        all_params = ['instance_id', 'update_instance_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3394,14 +3164,10 @@ class KafkaClient(Client):
         :type request: :class:`huaweicloudsdkkafka.v2.UpdateInstanceAutoCreateTopicRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.UpdateInstanceAutoCreateTopicResponse`
         """
-        return self.update_instance_auto_create_topic_with_http_info(request)
+        return self._update_instance_auto_create_topic_with_http_info(request)
 
-    def update_instance_auto_create_topic_with_http_info(self, request):
-        all_params = ['instance_id', 'update_instance_auto_create_topic_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_instance_auto_create_topic_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3456,14 +3222,10 @@ class KafkaClient(Client):
         :type request: :class:`huaweicloudsdkkafka.v2.UpdateInstanceCrossVpcIpRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.UpdateInstanceCrossVpcIpResponse`
         """
-        return self.update_instance_cross_vpc_ip_with_http_info(request)
+        return self._update_instance_cross_vpc_ip_with_http_info(request)
 
-    def update_instance_cross_vpc_ip_with_http_info(self, request):
-        all_params = ['instance_id', 'update_instance_cross_vpc_ip_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_instance_cross_vpc_ip_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3518,14 +3280,10 @@ class KafkaClient(Client):
         :type request: :class:`huaweicloudsdkkafka.v2.UpdateInstanceTopicRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.UpdateInstanceTopicResponse`
         """
-        return self.update_instance_topic_with_http_info(request)
+        return self._update_instance_topic_with_http_info(request)
 
-    def update_instance_topic_with_http_info(self, request):
-        all_params = ['instance_id', 'update_instance_topic_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_instance_topic_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3580,14 +3338,10 @@ class KafkaClient(Client):
         :type request: :class:`huaweicloudsdkkafka.v2.UpdateSinkTaskQuotaRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.UpdateSinkTaskQuotaResponse`
         """
-        return self.update_sink_task_quota_with_http_info(request)
+        return self._update_sink_task_quota_with_http_info(request)
 
-    def update_sink_task_quota_with_http_info(self, request):
-        all_params = ['connector_id', 'update_sink_task_quota_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_sink_task_quota_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3644,14 +3398,10 @@ class KafkaClient(Client):
         :type request: :class:`huaweicloudsdkkafka.v2.UpdateTopicAccessPolicyRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.UpdateTopicAccessPolicyResponse`
         """
-        return self.update_topic_access_policy_with_http_info(request)
+        return self._update_topic_access_policy_with_http_info(request)
 
-    def update_topic_access_policy_with_http_info(self, request):
-        all_params = ['instance_id', 'update_topic_access_policy_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_topic_access_policy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3706,14 +3456,10 @@ class KafkaClient(Client):
         :type request: :class:`huaweicloudsdkkafka.v2.UpdateTopicReplicaRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.UpdateTopicReplicaResponse`
         """
-        return self.update_topic_replica_with_http_info(request)
+        return self._update_topic_replica_with_http_info(request)
 
-    def update_topic_replica_with_http_info(self, request):
-        all_params = ['instance_id', 'topic', 'update_topic_replica_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_topic_replica_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

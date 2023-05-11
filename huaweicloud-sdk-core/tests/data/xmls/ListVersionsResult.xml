@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListVersionsResult>
+ <Name>bucket02</Name>
+  <Prefix/>
+  <KeyMarker/>
+  <VersionIdMarker/>
+  <MaxKeys>1000</MaxKeys>
+  <IsTruncated>false</IsTruncated>
+  <Contents>
+    <Key>object001</Key>
+    <VersionId>00011000000000013F16000001643A22E476FFFF9046024ECA3655445346485a</VersionId>
+    <IsLatest>true</IsLatest>
+    <LastModified>2015-07-01T00:32:16.482Z</LastModified>
+    <ETag>"2fa3bcaaec668adc5da177e67a122d7c"</ETag>
+    <Size>12041</Size>
+    <Owner>
+      <ID>b4bf1b36d9ca43d984fbcb9491b6fce9</ID>
+    </Owner>
+    <StorageClass>STANDARD</StorageClass>
+  </Contents>
+</ListVersionsResult>

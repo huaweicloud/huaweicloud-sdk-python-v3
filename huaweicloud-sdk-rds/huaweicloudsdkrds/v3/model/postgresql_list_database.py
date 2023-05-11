@@ -1,9 +1,6 @@
 # coding: utf-8
 
-import re
 import six
-
-
 
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
@@ -24,7 +21,8 @@ class PostgresqlListDatabase:
         'owner': 'str',
         'character_set': 'str',
         'collate_set': 'str',
-        'size': 'int'
+        'size': 'int',
+        'comment': 'str'
     }
 
     attribute_map = {
@@ -32,10 +30,11 @@ class PostgresqlListDatabase:
         'owner': 'owner',
         'character_set': 'character_set',
         'collate_set': 'collate_set',
-        'size': 'size'
+        'size': 'size',
+        'comment': 'comment'
     }
 
-    def __init__(self, name=None, owner=None, character_set=None, collate_set=None, size=None):
+    def __init__(self, name=None, owner=None, character_set=None, collate_set=None, size=None, comment=None):
         """PostgresqlListDatabase
 
         The model defined in huaweicloud sdk
@@ -50,6 +49,8 @@ class PostgresqlListDatabase:
         :type collate_set: str
         :param size: 数据库大小（单位：字节）。
         :type size: int
+        :param comment: 数据库备注
+        :type comment: str
         """
         
         
@@ -59,6 +60,7 @@ class PostgresqlListDatabase:
         self._character_set = None
         self._collate_set = None
         self._size = None
+        self._comment = None
         self.discriminator = None
 
         if name is not None:
@@ -71,6 +73,8 @@ class PostgresqlListDatabase:
             self.collate_set = collate_set
         if size is not None:
             self.size = size
+        if comment is not None:
+            self.comment = comment
 
     @property
     def name(self):
@@ -181,6 +185,28 @@ class PostgresqlListDatabase:
         :type size: int
         """
         self._size = size
+
+    @property
+    def comment(self):
+        """Gets the comment of this PostgresqlListDatabase.
+
+        数据库备注
+
+        :return: The comment of this PostgresqlListDatabase.
+        :rtype: str
+        """
+        return self._comment
+
+    @comment.setter
+    def comment(self, comment):
+        """Sets the comment of this PostgresqlListDatabase.
+
+        数据库备注
+
+        :param comment: The comment of this PostgresqlListDatabase.
+        :type comment: str
+        """
+        self._comment = comment
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class CbsClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(CbsClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkcbs.v1.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -54,14 +36,10 @@ class CbsClient(Client):
         :type request: :class:`huaweicloudsdkcbs.v1.CollectHotQuestionsRequest`
         :rtype: :class:`huaweicloudsdkcbs.v1.CollectHotQuestionsResponse`
         """
-        return self.collect_hot_questions_with_http_info(request)
+        return self._collect_hot_questions_with_http_info(request)
 
-    def collect_hot_questions_with_http_info(self, request):
-        all_params = ['qabot_id', 'start_time', 'end_time', 'top', 'domain', 'domain_id', 'exclude']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _collect_hot_questions_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -126,14 +104,10 @@ class CbsClient(Client):
         :type request: :class:`huaweicloudsdkcbs.v1.CollectKeyWordsRequest`
         :rtype: :class:`huaweicloudsdkcbs.v1.CollectKeyWordsResponse`
         """
-        return self.collect_key_words_with_http_info(request)
+        return self._collect_key_words_with_http_info(request)
 
-    def collect_key_words_with_http_info(self, request):
-        all_params = ['qabot_id', 'start_time', 'end_time', 'top']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _collect_key_words_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -193,14 +167,10 @@ class CbsClient(Client):
         :type request: :class:`huaweicloudsdkcbs.v1.CollectReplyRatesRequest`
         :rtype: :class:`huaweicloudsdkcbs.v1.CollectReplyRatesResponse`
         """
-        return self.collect_reply_rates_with_http_info(request)
+        return self._collect_reply_rates_with_http_info(request)
 
-    def collect_reply_rates_with_http_info(self, request):
-        all_params = ['qabot_id', 'start_time', 'end_time', 'interval', 'time_zone', 'domain']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _collect_reply_rates_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -263,14 +233,10 @@ class CbsClient(Client):
         :type request: :class:`huaweicloudsdkcbs.v1.CollectSessionStatsRequest`
         :rtype: :class:`huaweicloudsdkcbs.v1.CollectSessionStatsResponse`
         """
-        return self.collect_session_stats_with_http_info(request)
+        return self._collect_session_stats_with_http_info(request)
 
-    def collect_session_stats_with_http_info(self, request):
-        all_params = ['qabot_id', 'start_time', 'end_time', 'interval', 'time_zone']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _collect_session_stats_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -331,14 +297,10 @@ class CbsClient(Client):
         :type request: :class:`huaweicloudsdkcbs.v1.CreateSessionRequest`
         :rtype: :class:`huaweicloudsdkcbs.v1.CreateSessionResponse`
         """
-        return self.create_session_with_http_info(request)
+        return self._create_session_with_http_info(request)
 
-    def create_session_with_http_info(self, request):
-        all_params = ['qabot_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_session_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -391,14 +353,10 @@ class CbsClient(Client):
         :type request: :class:`huaweicloudsdkcbs.v1.DeleteSessionRequest`
         :rtype: :class:`huaweicloudsdkcbs.v1.DeleteSessionResponse`
         """
-        return self.delete_session_with_http_info(request)
+        return self._delete_session_with_http_info(request)
 
-    def delete_session_with_http_info(self, request):
-        all_params = ['qabot_id', 'session_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_session_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -452,14 +410,10 @@ class CbsClient(Client):
         :type request: :class:`huaweicloudsdkcbs.v1.ExecuteComposeVideoRequest`
         :rtype: :class:`huaweicloudsdkcbs.v1.ExecuteComposeVideoResponse`
         """
-        return self.execute_compose_video_with_http_info(request)
+        return self._execute_compose_video_with_http_info(request)
 
-    def execute_compose_video_with_http_info(self, request):
-        all_params = ['video_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _execute_compose_video_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -511,14 +465,10 @@ class CbsClient(Client):
         :type request: :class:`huaweicloudsdkcbs.v1.ExecuteComposeVideoOndemandRequest`
         :rtype: :class:`huaweicloudsdkcbs.v1.ExecuteComposeVideoOndemandResponse`
         """
-        return self.execute_compose_video_ondemand_with_http_info(request)
+        return self._execute_compose_video_ondemand_with_http_info(request)
 
-    def execute_compose_video_ondemand_with_http_info(self, request):
-        all_params = ['video_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _execute_compose_video_ondemand_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -570,14 +520,10 @@ class CbsClient(Client):
         :type request: :class:`huaweicloudsdkcbs.v1.ExecuteCreateVideoRequest`
         :rtype: :class:`huaweicloudsdkcbs.v1.ExecuteCreateVideoResponse`
         """
-        return self.execute_create_video_with_http_info(request)
+        return self._execute_create_video_with_http_info(request)
 
-    def execute_create_video_with_http_info(self, request):
-        all_params = ['create_video_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _execute_create_video_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -629,14 +575,10 @@ class CbsClient(Client):
         :type request: :class:`huaweicloudsdkcbs.v1.ExecuteDeleteVideoByIdRequest`
         :rtype: :class:`huaweicloudsdkcbs.v1.ExecuteDeleteVideoByIdResponse`
         """
-        return self.execute_delete_video_by_id_with_http_info(request)
+        return self._execute_delete_video_by_id_with_http_info(request)
 
-    def execute_delete_video_by_id_with_http_info(self, request):
-        all_params = ['video_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _execute_delete_video_by_id_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -688,14 +630,10 @@ class CbsClient(Client):
         :type request: :class:`huaweicloudsdkcbs.v1.ExecuteDeleteimageByIdRequest`
         :rtype: :class:`huaweicloudsdkcbs.v1.ExecuteDeleteimageByIdResponse`
         """
-        return self.execute_deleteimage_by_id_with_http_info(request)
+        return self._execute_deleteimage_by_id_with_http_info(request)
 
-    def execute_deleteimage_by_id_with_http_info(self, request):
-        all_params = ['image_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _execute_deleteimage_by_id_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -747,14 +685,10 @@ class CbsClient(Client):
         :type request: :class:`huaweicloudsdkcbs.v1.ExecuteGetCharacterInfoByIdRequest`
         :rtype: :class:`huaweicloudsdkcbs.v1.ExecuteGetCharacterInfoByIdResponse`
         """
-        return self.execute_get_character_info_by_id_with_http_info(request)
+        return self._execute_get_character_info_by_id_with_http_info(request)
 
-    def execute_get_character_info_by_id_with_http_info(self, request):
-        all_params = ['character_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _execute_get_character_info_by_id_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -809,14 +743,10 @@ class CbsClient(Client):
         :type request: :class:`huaweicloudsdkcbs.v1.ExecuteGetCharactersRequest`
         :rtype: :class:`huaweicloudsdkcbs.v1.ExecuteGetCharactersResponse`
         """
-        return self.execute_get_characters_with_http_info(request)
+        return self._execute_get_characters_with_http_info(request)
 
-    def execute_get_characters_with_http_info(self, request):
-        all_params = ['offset', 'limit', 'type', 'train_status', 'character_name', 'support_interact', 'gender']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _execute_get_characters_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -881,14 +811,10 @@ class CbsClient(Client):
         :type request: :class:`huaweicloudsdkcbs.v1.ExecuteGetFramsListByImagesIdRequest`
         :rtype: :class:`huaweicloudsdkcbs.v1.ExecuteGetFramsListByImagesIdResponse`
         """
-        return self.execute_get_frams_list_by_images_id_with_http_info(request)
+        return self._execute_get_frams_list_by_images_id_with_http_info(request)
 
-    def execute_get_frams_list_by_images_id_with_http_info(self, request):
-        all_params = ['image_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _execute_get_frams_list_by_images_id_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -899,6 +825,10 @@ class CbsClient(Client):
         query_params = []
         if 'image_id' in local_var_params:
             query_params.append(('image_id', local_var_params['image_id']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
 
         header_params = {}
 
@@ -940,14 +870,10 @@ class CbsClient(Client):
         :type request: :class:`huaweicloudsdkcbs.v1.ExecuteGetImagesListRequest`
         :rtype: :class:`huaweicloudsdkcbs.v1.ExecuteGetImagesListResponse`
         """
-        return self.execute_get_images_list_with_http_info(request)
+        return self._execute_get_images_list_with_http_info(request)
 
-    def execute_get_images_list_with_http_info(self, request):
-        all_params = ['limit', 'offset', 'resolution_type', 'type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _execute_get_images_list_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1005,14 +931,10 @@ class CbsClient(Client):
         :type request: :class:`huaweicloudsdkcbs.v1.ExecuteGetVideoInfoByIdRequest`
         :rtype: :class:`huaweicloudsdkcbs.v1.ExecuteGetVideoInfoByIdResponse`
         """
-        return self.execute_get_video_info_by_id_with_http_info(request)
+        return self._execute_get_video_info_by_id_with_http_info(request)
 
-    def execute_get_video_info_by_id_with_http_info(self, request):
-        all_params = ['video_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _execute_get_video_info_by_id_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1065,14 +987,10 @@ class CbsClient(Client):
         :type request: :class:`huaweicloudsdkcbs.v1.ExecuteGetVideosListRequest`
         :rtype: :class:`huaweicloudsdkcbs.v1.ExecuteGetVideosListResponse`
         """
-        return self.execute_get_videos_list_with_http_info(request)
+        return self._execute_get_videos_list_with_http_info(request)
 
-    def execute_get_videos_list_with_http_info(self, request):
-        all_params = ['limit', 'name', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _execute_get_videos_list_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1128,14 +1046,10 @@ class CbsClient(Client):
         :type request: :class:`huaweicloudsdkcbs.v1.ExecutePostCreateImagesRequest`
         :rtype: :class:`huaweicloudsdkcbs.v1.ExecutePostCreateImagesResponse`
         """
-        return self.execute_post_create_images_with_http_info(request)
+        return self._execute_post_create_images_with_http_info(request)
 
-    def execute_post_create_images_with_http_info(self, request):
-        all_params = ['type', 'name', 'file', 'resolution_type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _execute_post_create_images_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1196,14 +1110,10 @@ class CbsClient(Client):
         :type request: :class:`huaweicloudsdkcbs.v1.ExecuteQaChatRequest`
         :rtype: :class:`huaweicloudsdkcbs.v1.ExecuteQaChatResponse`
         """
-        return self.execute_qa_chat_with_http_info(request)
+        return self._execute_qa_chat_with_http_info(request)
 
-    def execute_qa_chat_with_http_info(self, request):
-        all_params = ['qabot_id', 'body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _execute_qa_chat_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1258,14 +1168,10 @@ class CbsClient(Client):
         :type request: :class:`huaweicloudsdkcbs.v1.ExecuteSessionRequest`
         :rtype: :class:`huaweicloudsdkcbs.v1.ExecuteSessionResponse`
         """
-        return self.execute_session_with_http_info(request)
+        return self._execute_session_with_http_info(request)
 
-    def execute_session_with_http_info(self, request):
-        all_params = ['qabot_id', 'session_id', 'body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _execute_session_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1321,14 +1227,10 @@ class CbsClient(Client):
         :type request: :class:`huaweicloudsdkcbs.v1.ExecuteUpdateImageNameRequest`
         :rtype: :class:`huaweicloudsdkcbs.v1.ExecuteUpdateImageNameResponse`
         """
-        return self.execute_update_image_name_with_http_info(request)
+        return self._execute_update_image_name_with_http_info(request)
 
-    def execute_update_image_name_with_http_info(self, request):
-        all_params = ['image_id', 'update_image_name_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _execute_update_image_name_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1382,14 +1284,10 @@ class CbsClient(Client):
         :type request: :class:`huaweicloudsdkcbs.v1.ExecuteUpdateVideoByIdRequest`
         :rtype: :class:`huaweicloudsdkcbs.v1.ExecuteUpdateVideoByIdResponse`
         """
-        return self.execute_update_video_by_id_with_http_info(request)
+        return self._execute_update_video_by_id_with_http_info(request)
 
-    def execute_update_video_by_id_with_http_info(self, request):
-        all_params = ['video_id', 'update_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _execute_update_video_by_id_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1444,14 +1342,10 @@ class CbsClient(Client):
         :type request: :class:`huaweicloudsdkcbs.v1.ExecuteUpdateVideoInfoByIdRequest`
         :rtype: :class:`huaweicloudsdkcbs.v1.ExecuteUpdateVideoInfoByIdResponse`
         """
-        return self.execute_update_video_info_by_id_with_http_info(request)
+        return self._execute_update_video_info_by_id_with_http_info(request)
 
-    def execute_update_video_info_by_id_with_http_info(self, request):
-        all_params = ['video_id', 'name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _execute_update_video_info_by_id_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1507,14 +1401,10 @@ class CbsClient(Client):
         :type request: :class:`huaweicloudsdkcbs.v1.ExecuteUploadImageRequest`
         :rtype: :class:`huaweicloudsdkcbs.v1.ExecuteUploadImageResponse`
         """
-        return self.execute_upload_image_with_http_info(request)
+        return self._execute_upload_image_with_http_info(request)
 
-    def execute_upload_image_with_http_info(self, request):
-        all_params = ['video_id', 'name', 'file']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _execute_upload_image_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1575,14 +1465,10 @@ class CbsClient(Client):
         :type request: :class:`huaweicloudsdkcbs.v1.ExecuteUploadPptRequest`
         :rtype: :class:`huaweicloudsdkcbs.v1.ExecuteUploadPptResponse`
         """
-        return self.execute_upload_ppt_with_http_info(request)
+        return self._execute_upload_ppt_with_http_info(request)
 
-    def execute_upload_ppt_with_http_info(self, request):
-        all_params = ['video_id', 'file']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _execute_upload_ppt_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1639,14 +1525,10 @@ class CbsClient(Client):
         :type request: :class:`huaweicloudsdkcbs.v1.ListSuggestionsRequest`
         :rtype: :class:`huaweicloudsdkcbs.v1.ListSuggestionsResponse`
         """
-        return self.list_suggestions_with_http_info(request)
+        return self._list_suggestions_with_http_info(request)
 
-    def list_suggestions_with_http_info(self, request):
-        all_params = ['qabot_id', 'body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_suggestions_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1701,14 +1583,10 @@ class CbsClient(Client):
         :type request: :class:`huaweicloudsdkcbs.v1.TagLaborRequest`
         :rtype: :class:`huaweicloudsdkcbs.v1.TagLaborResponse`
         """
-        return self.tag_labor_with_http_info(request)
+        return self._tag_labor_with_http_info(request)
 
-    def tag_labor_with_http_info(self, request):
-        all_params = ['qabot_id', 'request_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _tag_labor_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1763,14 +1641,10 @@ class CbsClient(Client):
         :type request: :class:`huaweicloudsdkcbs.v1.TagSatisfactionRequest`
         :rtype: :class:`huaweicloudsdkcbs.v1.TagSatisfactionResponse`
         """
-        return self.tag_satisfaction_with_http_info(request)
+        return self._tag_satisfaction_with_http_info(request)
 
-    def tag_satisfaction_with_http_info(self, request):
-        all_params = ['qabot_id', 'request_id', 'body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _tag_satisfaction_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

@@ -20,7 +20,7 @@
 import types
 
 from huaweicloudsdkcore.region.region import Region
-from tests.data.project_response_mocker import MOCK_ENDPOINT
+from tests.mocker.project_response_mocker import MOCK_ENDPOINT
 
 
 class ServiceRegion:

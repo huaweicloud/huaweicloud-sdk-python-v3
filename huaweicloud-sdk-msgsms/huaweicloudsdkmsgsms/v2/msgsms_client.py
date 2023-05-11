@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class MsgsmsClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(MsgsmsClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkmsgsms.v2.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -53,14 +35,10 @@ class MsgsmsClient(Client):
         :type request: :class:`huaweicloudsdkmsgsms.v2.CreateAppRequest`
         :rtype: :class:`huaweicloudsdkmsgsms.v2.CreateAppResponse`
         """
-        return self.create_app_with_http_info(request)
+        return self._create_app_with_http_info(request)
 
-    def create_app_with_http_info(self, request):
-        all_params = ['create_app_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_app_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -113,14 +91,10 @@ class MsgsmsClient(Client):
         :type request: :class:`huaweicloudsdkmsgsms.v2.ListAppDetailsRequest`
         :rtype: :class:`huaweicloudsdkmsgsms.v2.ListAppDetailsResponse`
         """
-        return self.list_app_details_with_http_info(request)
+        return self._list_app_details_with_http_info(request)
 
-    def list_app_details_with_http_info(self, request):
-        all_params = ['app_name', 'start_time', 'end_time', 'limit', 'offset', 'region', 'sort_dir', 'sort_key', 'status']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_app_details_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -189,14 +163,10 @@ class MsgsmsClient(Client):
         :type request: :class:`huaweicloudsdkmsgsms.v2.ShowAppRequest`
         :rtype: :class:`huaweicloudsdkmsgsms.v2.ShowAppResponse`
         """
-        return self.show_app_with_http_info(request)
+        return self._show_app_with_http_info(request)
 
-    def show_app_with_http_info(self, request):
-        all_params = ['id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_app_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -249,14 +219,10 @@ class MsgsmsClient(Client):
         :type request: :class:`huaweicloudsdkmsgsms.v2.ShowAppCountRequest`
         :rtype: :class:`huaweicloudsdkmsgsms.v2.ShowAppCountResponse`
         """
-        return self.show_app_count_with_http_info(request)
+        return self._show_app_count_with_http_info(request)
 
-    def show_app_count_with_http_info(self, request):
-        all_params = ['region']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_app_count_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -309,14 +275,10 @@ class MsgsmsClient(Client):
         :type request: :class:`huaweicloudsdkmsgsms.v2.UpdateAppRequest`
         :rtype: :class:`huaweicloudsdkmsgsms.v2.UpdateAppResponse`
         """
-        return self.update_app_with_http_info(request)
+        return self._update_app_with_http_info(request)
 
-    def update_app_with_http_info(self, request):
-        all_params = ['id', 'update_app_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_app_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -371,14 +333,10 @@ class MsgsmsClient(Client):
         :type request: :class:`huaweicloudsdkmsgsms.v2.CreateSignatureRequest`
         :rtype: :class:`huaweicloudsdkmsgsms.v2.CreateSignatureResponse`
         """
-        return self.create_signature_with_http_info(request)
+        return self._create_signature_with_http_info(request)
 
-    def create_signature_with_http_info(self, request):
-        all_params = ['create_signature_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_signature_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -431,14 +389,10 @@ class MsgsmsClient(Client):
         :type request: :class:`huaweicloudsdkmsgsms.v2.DeleteSignatureRequest`
         :rtype: :class:`huaweicloudsdkmsgsms.v2.DeleteSignatureResponse`
         """
-        return self.delete_signature_with_http_info(request)
+        return self._delete_signature_with_http_info(request)
 
-    def delete_signature_with_http_info(self, request):
-        all_params = ['id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_signature_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -491,14 +445,10 @@ class MsgsmsClient(Client):
         :type request: :class:`huaweicloudsdkmsgsms.v2.EnableSignatureRequest`
         :rtype: :class:`huaweicloudsdkmsgsms.v2.EnableSignatureResponse`
         """
-        return self.enable_signature_with_http_info(request)
+        return self._enable_signature_with_http_info(request)
 
-    def enable_signature_with_http_info(self, request):
-        all_params = ['id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _enable_signature_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -551,14 +501,10 @@ class MsgsmsClient(Client):
         :type request: :class:`huaweicloudsdkmsgsms.v2.ListSignatureDetailsRequest`
         :rtype: :class:`huaweicloudsdkmsgsms.v2.ListSignatureDetailsResponse`
         """
-        return self.list_signature_details_with_http_info(request)
+        return self._list_signature_details_with_http_info(request)
 
-    def list_signature_details_with_http_info(self, request):
-        all_params = ['app_name', 'start_time', 'end_time', 'limit', 'offset', 'signature_id', 'signature_name', 'signature_type', 'site', 'sort_dir', 'sort_key', 'status']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_signature_details_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -633,14 +579,10 @@ class MsgsmsClient(Client):
         :type request: :class:`huaweicloudsdkmsgsms.v2.ShowSignatureRequest`
         :rtype: :class:`huaweicloudsdkmsgsms.v2.ShowSignatureResponse`
         """
-        return self.show_signature_with_http_info(request)
+        return self._show_signature_with_http_info(request)
 
-    def show_signature_with_http_info(self, request):
-        all_params = ['id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_signature_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -693,14 +635,10 @@ class MsgsmsClient(Client):
         :type request: :class:`huaweicloudsdkmsgsms.v2.ShowSignatureFileRequest`
         :rtype: :class:`huaweicloudsdkmsgsms.v2.ShowSignatureFileResponse`
         """
-        return self.show_signature_file_with_http_info(request)
+        return self._show_signature_file_with_http_info(request)
 
-    def show_signature_file_with_http_info(self, request):
-        all_params = ['file_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_signature_file_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -753,14 +691,10 @@ class MsgsmsClient(Client):
         :type request: :class:`huaweicloudsdkmsgsms.v2.UpdateSignatureRequest`
         :rtype: :class:`huaweicloudsdkmsgsms.v2.UpdateSignatureResponse`
         """
-        return self.update_signature_with_http_info(request)
+        return self._update_signature_with_http_info(request)
 
-    def update_signature_with_http_info(self, request):
-        all_params = ['id', 'update_signature_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_signature_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -815,14 +749,10 @@ class MsgsmsClient(Client):
         :type request: :class:`huaweicloudsdkmsgsms.v2.UploadSignatureFileRequest`
         :rtype: :class:`huaweicloudsdkmsgsms.v2.UploadSignatureFileResponse`
         """
-        return self.upload_signature_file_with_http_info(request)
+        return self._upload_signature_file_with_http_info(request)
 
-    def upload_signature_file_with_http_info(self, request):
-        all_params = ['file', 'file_desc']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _upload_signature_file_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -879,14 +809,10 @@ class MsgsmsClient(Client):
         :type request: :class:`huaweicloudsdkmsgsms.v2.CreateTemplateRequest`
         :rtype: :class:`huaweicloudsdkmsgsms.v2.CreateTemplateResponse`
         """
-        return self.create_template_with_http_info(request)
+        return self._create_template_with_http_info(request)
 
-    def create_template_with_http_info(self, request):
-        all_params = ['create_template_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -939,14 +865,10 @@ class MsgsmsClient(Client):
         :type request: :class:`huaweicloudsdkmsgsms.v2.DeleteTemplateRequest`
         :rtype: :class:`huaweicloudsdkmsgsms.v2.DeleteTemplateResponse`
         """
-        return self.delete_template_with_http_info(request)
+        return self._delete_template_with_http_info(request)
 
-    def delete_template_with_http_info(self, request):
-        all_params = ['id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -999,14 +921,10 @@ class MsgsmsClient(Client):
         :type request: :class:`huaweicloudsdkmsgsms.v2.ListSendCountryDetailsRequest`
         :rtype: :class:`huaweicloudsdkmsgsms.v2.ListSendCountryDetailsResponse`
         """
-        return self.list_send_country_details_with_http_info(request)
+        return self._list_send_country_details_with_http_info(request)
 
-    def list_send_country_details_with_http_info(self, request):
-        all_params = ['country_name_en', 'country_name_zh']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_send_country_details_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1061,14 +979,10 @@ class MsgsmsClient(Client):
         :type request: :class:`huaweicloudsdkmsgsms.v2.ListTemplateDetailsRequest`
         :rtype: :class:`huaweicloudsdkmsgsms.v2.ListTemplateDetailsResponse`
         """
-        return self.list_template_details_with_http_info(request)
+        return self._list_template_details_with_http_info(request)
 
-    def list_template_details_with_http_info(self, request):
-        all_params = ['app_key', 'app_name', 'start_time', 'end_time', 'limit', 'offset', 'flow_status', 'has_variable', 'region', 'sign_name', 'sort_dir', 'sort_key', 'template_id', 'template_name', 'template_type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_template_details_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1149,14 +1063,10 @@ class MsgsmsClient(Client):
         :type request: :class:`huaweicloudsdkmsgsms.v2.ListTemplateVarilableDetailsRequest`
         :rtype: :class:`huaweicloudsdkmsgsms.v2.ListTemplateVarilableDetailsResponse`
         """
-        return self.list_template_varilable_details_with_http_info(request)
+        return self._list_template_varilable_details_with_http_info(request)
 
-    def list_template_varilable_details_with_http_info(self, request):
-        all_params = ['id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_template_varilable_details_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1209,14 +1119,10 @@ class MsgsmsClient(Client):
         :type request: :class:`huaweicloudsdkmsgsms.v2.ShowTemplateRequest`
         :rtype: :class:`huaweicloudsdkmsgsms.v2.ShowTemplateResponse`
         """
-        return self.show_template_with_http_info(request)
+        return self._show_template_with_http_info(request)
 
-    def show_template_with_http_info(self, request):
-        all_params = ['id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1269,14 +1175,10 @@ class MsgsmsClient(Client):
         :type request: :class:`huaweicloudsdkmsgsms.v2.UpdateTemplateRequest`
         :rtype: :class:`huaweicloudsdkmsgsms.v2.UpdateTemplateResponse`
         """
-        return self.update_template_with_http_info(request)
+        return self._update_template_with_http_info(request)
 
-    def update_template_with_http_info(self, request):
-        all_params = ['id', 'update_template_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

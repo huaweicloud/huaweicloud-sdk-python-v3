@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class WorkspaceClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(WorkspaceClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkworkspace.v2.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -53,14 +35,10 @@ class WorkspaceClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.BatchDeleteAccessPoliciesRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.BatchDeleteAccessPoliciesResponse`
         """
-        return self.batch_delete_access_policies_with_http_info(request)
+        return self._batch_delete_access_policies_with_http_info(request)
 
-    def batch_delete_access_policies_with_http_info(self, request):
-        all_params = ['batch_delete_access_policies_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_delete_access_policies_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -113,14 +91,10 @@ class WorkspaceClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.CreateAccessPolicyRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.CreateAccessPolicyResponse`
         """
-        return self.create_access_policy_with_http_info(request)
+        return self._create_access_policy_with_http_info(request)
 
-    def create_access_policy_with_http_info(self, request):
-        all_params = ['create_access_policy_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_access_policy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -173,14 +147,10 @@ class WorkspaceClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.ListAccessPoliciesRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.ListAccessPoliciesResponse`
         """
-        return self.list_access_policies_with_http_info(request)
+        return self._list_access_policies_with_http_info(request)
 
-    def list_access_policies_with_http_info(self, request):
-        all_params = ['limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_access_policies_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -235,14 +205,10 @@ class WorkspaceClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.ListAccessPolicyObjectsRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.ListAccessPolicyObjectsResponse`
         """
-        return self.list_access_policy_objects_with_http_info(request)
+        return self._list_access_policy_objects_with_http_info(request)
 
-    def list_access_policy_objects_with_http_info(self, request):
-        all_params = ['access_policy_id', 'limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_access_policy_objects_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -299,14 +265,10 @@ class WorkspaceClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.UpdateAccessPolicyObjectsRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.UpdateAccessPolicyObjectsResponse`
         """
-        return self.update_access_policy_objects_with_http_info(request)
+        return self._update_access_policy_objects_with_http_info(request)
 
-    def update_access_policy_objects_with_http_info(self, request):
-        all_params = ['access_policy_id', 'update_access_policy_objects_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_access_policy_objects_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -361,14 +323,10 @@ class WorkspaceClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.ShowAssistAuthConfigRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.ShowAssistAuthConfigResponse`
         """
-        return self.show_assist_auth_config_with_http_info(request)
+        return self._show_assist_auth_config_with_http_info(request)
 
-    def show_assist_auth_config_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_assist_auth_config_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -419,14 +377,10 @@ class WorkspaceClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.UpdateAssistAuthMethodConfigRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.UpdateAssistAuthMethodConfigResponse`
         """
-        return self.update_assist_auth_method_config_with_http_info(request)
+        return self._update_assist_auth_method_config_with_http_info(request)
 
-    def update_assist_auth_method_config_with_http_info(self, request):
-        all_params = ['update_assist_auth_method_config_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_assist_auth_method_config_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -479,14 +433,10 @@ class WorkspaceClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.ListAvailabilityZonesRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.ListAvailabilityZonesResponse`
         """
-        return self.list_availability_zones_with_http_info(request)
+        return self._list_availability_zones_with_http_info(request)
 
-    def list_availability_zones_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_availability_zones_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -537,14 +487,10 @@ class WorkspaceClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.ExportUserLoginInfoNewRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.ExportUserLoginInfoNewResponse`
         """
-        return self.export_user_login_info_new_with_http_info(request)
+        return self._export_user_login_info_new_with_http_info(request)
 
-    def export_user_login_info_new_with_http_info(self, request):
-        all_params = ['start_time', 'end_time', 'user_name', 'computer_name', 'terminal_type', 'language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _export_user_login_info_new_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -607,14 +553,10 @@ class WorkspaceClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.ListHistoryOnlineInfoNewRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.ListHistoryOnlineInfoNewResponse`
         """
-        return self.list_history_online_info_new_with_http_info(request)
+        return self._list_history_online_info_new_with_http_info(request)
 
-    def list_history_online_info_new_with_http_info(self, request):
-        all_params = ['start_time', 'end_time', 'query_type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_history_online_info_new_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -671,14 +613,10 @@ class WorkspaceClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.ListLoginRecordsNewRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.ListLoginRecordsNewResponse`
         """
-        return self.list_login_records_new_with_http_info(request)
+        return self._list_login_records_new_with_http_info(request)
 
-    def list_login_records_new_with_http_info(self, request):
-        all_params = ['start_time', 'end_time', 'user_name', 'computer_name', 'terminal_type', 'limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_login_records_new_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -743,14 +681,10 @@ class WorkspaceClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.BatchDeleteDesktopsRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.BatchDeleteDesktopsResponse`
         """
-        return self.batch_delete_desktops_with_http_info(request)
+        return self._batch_delete_desktops_with_http_info(request)
 
-    def batch_delete_desktops_with_http_info(self, request):
-        all_params = ['batch_delete_desktops_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_delete_desktops_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -803,14 +737,10 @@ class WorkspaceClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.BatchRunDesktopsRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.BatchRunDesktopsResponse`
         """
-        return self.batch_run_desktops_with_http_info(request)
+        return self._batch_run_desktops_with_http_info(request)
 
-    def batch_run_desktops_with_http_info(self, request):
-        all_params = ['batch_run_desktops_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_run_desktops_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -863,14 +793,10 @@ class WorkspaceClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.CreateDesktopRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.CreateDesktopResponse`
         """
-        return self.create_desktop_with_http_info(request)
+        return self._create_desktop_with_http_info(request)
 
-    def create_desktop_with_http_info(self, request):
-        all_params = ['create_desktop_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_desktop_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -923,14 +849,10 @@ class WorkspaceClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.DeleteDesktopRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.DeleteDesktopResponse`
         """
-        return self.delete_desktop_with_http_info(request)
+        return self._delete_desktop_with_http_info(request)
 
-    def delete_desktop_with_http_info(self, request):
-        all_params = ['desktop_id', 'delete_users', 'email_notification']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_desktop_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -987,14 +909,10 @@ class WorkspaceClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.ListDesktopsRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.ListDesktopsResponse`
         """
-        return self.list_desktops_with_http_info(request)
+        return self._list_desktops_with_http_info(request)
 
-    def list_desktops_with_http_info(self, request):
-        all_params = ['user_name', 'computer_name', 'desktop_ip', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_desktops_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1055,14 +973,10 @@ class WorkspaceClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.ListDesktopsDetailRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.ListDesktopsDetailResponse`
         """
-        return self.list_desktops_detail_with_http_info(request)
+        return self._list_desktops_detail_with_http_info(request)
 
-    def list_desktops_detail_with_http_info(self, request):
-        all_params = ['status', 'user_name', 'computer_name', 'desktop_ip', 'offset', 'limit', 'desktop_id', 'desktop_type', 'tag']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_desktops_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1131,14 +1045,10 @@ class WorkspaceClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.ResizeDesktopRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.ResizeDesktopResponse`
         """
-        return self.resize_desktop_with_http_info(request)
+        return self._resize_desktop_with_http_info(request)
 
-    def resize_desktop_with_http_info(self, request):
-        all_params = ['resize_desktop_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _resize_desktop_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1191,14 +1101,10 @@ class WorkspaceClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.ShowDesktopDetailRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.ShowDesktopDetailResponse`
         """
-        return self.show_desktop_detail_with_http_info(request)
+        return self._show_desktop_detail_with_http_info(request)
 
-    def show_desktop_detail_with_http_info(self, request):
-        all_params = ['desktop_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_desktop_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1251,14 +1157,10 @@ class WorkspaceClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.ListImagesRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.ListImagesResponse`
         """
-        return self.list_images_with_http_info(request)
+        return self._list_images_with_http_info(request)
 
-    def list_images_with_http_info(self, request):
-        all_params = ['os_type', 'image_type', 'platform', 'architecture', 'package_type', 'limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_images_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1323,14 +1225,10 @@ class WorkspaceClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.ListItaSubJobsRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.ListItaSubJobsResponse`
         """
-        return self.list_ita_sub_jobs_with_http_info(request)
+        return self._list_ita_sub_jobs_with_http_info(request)
 
-    def list_ita_sub_jobs_with_http_info(self, request):
-        all_params = ['status', 'job_id', 'job_type', 'limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_ita_sub_jobs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1391,14 +1289,10 @@ class WorkspaceClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.ListProductsRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.ListProductsResponse`
         """
-        return self.list_products_with_http_info(request)
+        return self._list_products_with_http_info(request)
 
-    def list_products_with_http_info(self, request):
-        all_params = ['product_id', 'availability_zone', 'os_type', 'charge_mode', 'architecture', 'package_type', 'limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_products_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1465,14 +1359,10 @@ class WorkspaceClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.ShowQuotasRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.ShowQuotasResponse`
         """
-        return self.show_quotas_with_http_info(request)
+        return self._show_quotas_with_http_info(request)
 
-    def show_quotas_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_quotas_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1523,14 +1413,10 @@ class WorkspaceClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.CreateTerminalsBindingDesktopsRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.CreateTerminalsBindingDesktopsResponse`
         """
-        return self.create_terminals_binding_desktops_with_http_info(request)
+        return self._create_terminals_binding_desktops_with_http_info(request)
 
-    def create_terminals_binding_desktops_with_http_info(self, request):
-        all_params = ['create_terminals_binding_desktops_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_terminals_binding_desktops_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1583,14 +1469,10 @@ class WorkspaceClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.DeleteTerminalsBindingDesktopsRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.DeleteTerminalsBindingDesktopsResponse`
         """
-        return self.delete_terminals_binding_desktops_with_http_info(request)
+        return self._delete_terminals_binding_desktops_with_http_info(request)
 
-    def delete_terminals_binding_desktops_with_http_info(self, request):
-        all_params = ['delete_terminals_binding_desktops_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_terminals_binding_desktops_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1643,14 +1525,10 @@ class WorkspaceClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.ListTerminalsBindingDesktopsRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.ListTerminalsBindingDesktopsResponse`
         """
-        return self.list_terminals_binding_desktops_with_http_info(request)
+        return self._list_terminals_binding_desktops_with_http_info(request)
 
-    def list_terminals_binding_desktops_with_http_info(self, request):
-        all_params = ['offset', 'limit', 'computer_name', 'mac', 'count_only']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_terminals_binding_desktops_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1711,14 +1589,10 @@ class WorkspaceClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.ListTerminalsBindingDesktopsConfigRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.ListTerminalsBindingDesktopsConfigResponse`
         """
-        return self.list_terminals_binding_desktops_config_with_http_info(request)
+        return self._list_terminals_binding_desktops_config_with_http_info(request)
 
-    def list_terminals_binding_desktops_config_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_terminals_binding_desktops_config_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1769,14 +1643,10 @@ class WorkspaceClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.UpdateTerminalsBindingDesktopsRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.UpdateTerminalsBindingDesktopsResponse`
         """
-        return self.update_terminals_binding_desktops_with_http_info(request)
+        return self._update_terminals_binding_desktops_with_http_info(request)
 
-    def update_terminals_binding_desktops_with_http_info(self, request):
-        all_params = ['update_terminals_binding_desktops_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_terminals_binding_desktops_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1829,14 +1699,10 @@ class WorkspaceClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.UpdateTerminalsBindingDesktopsConfigRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.UpdateTerminalsBindingDesktopsConfigResponse`
         """
-        return self.update_terminals_binding_desktops_config_with_http_info(request)
+        return self._update_terminals_binding_desktops_config_with_http_info(request)
 
-    def update_terminals_binding_desktops_config_with_http_info(self, request):
-        all_params = ['update_terminals_binding_desktops_config_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_terminals_binding_desktops_config_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1889,14 +1755,10 @@ class WorkspaceClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.BatchDeleteOtpDevicesRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.BatchDeleteOtpDevicesResponse`
         """
-        return self.batch_delete_otp_devices_with_http_info(request)
+        return self._batch_delete_otp_devices_with_http_info(request)
 
-    def batch_delete_otp_devices_with_http_info(self, request):
-        all_params = ['user_id', 'batch_delete_otp_devices_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_delete_otp_devices_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1951,14 +1813,10 @@ class WorkspaceClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.ChangeUserStatusRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.ChangeUserStatusResponse`
         """
-        return self.change_user_status_with_http_info(request)
+        return self._change_user_status_with_http_info(request)
 
-    def change_user_status_with_http_info(self, request):
-        all_params = ['user_id', 'change_user_status_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _change_user_status_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2013,14 +1871,10 @@ class WorkspaceClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.CreateDesktopUserRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.CreateDesktopUserResponse`
         """
-        return self.create_desktop_user_with_http_info(request)
+        return self._create_desktop_user_with_http_info(request)
 
-    def create_desktop_user_with_http_info(self, request):
-        all_params = ['create_desktop_user_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_desktop_user_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2073,14 +1927,10 @@ class WorkspaceClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.DeleteUserRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.DeleteUserResponse`
         """
-        return self.delete_user_with_http_info(request)
+        return self._delete_user_with_http_info(request)
 
-    def delete_user_with_http_info(self, request):
-        all_params = ['user_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_user_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2133,14 +1983,10 @@ class WorkspaceClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.ListOtpDevicesByUserIdRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.ListOtpDevicesByUserIdResponse`
         """
-        return self.list_otp_devices_by_user_id_with_http_info(request)
+        return self._list_otp_devices_by_user_id_with_http_info(request)
 
-    def list_otp_devices_by_user_id_with_http_info(self, request):
-        all_params = ['user_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_otp_devices_by_user_id_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2193,14 +2039,10 @@ class WorkspaceClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.ListUserDetailRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.ListUserDetailResponse`
         """
-        return self.list_user_detail_with_http_info(request)
+        return self._list_user_detail_with_http_info(request)
 
-    def list_user_detail_with_http_info(self, request):
-        all_params = ['user_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_user_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2253,14 +2095,10 @@ class WorkspaceClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.ListUsersRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.ListUsersResponse`
         """
-        return self.list_users_with_http_info(request)
+        return self._list_users_with_http_info(request)
 
-    def list_users_with_http_info(self, request):
-        all_params = ['user_name', 'limit', 'offset', 'description']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_users_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2319,14 +2157,10 @@ class WorkspaceClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.UpdateUserInfoRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.UpdateUserInfoResponse`
         """
-        return self.update_user_info_with_http_info(request)
+        return self._update_user_info_with_http_info(request)
 
-    def update_user_info_with_http_info(self, request):
-        all_params = ['user_id', 'update_user_info_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_user_info_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2381,14 +2215,10 @@ class WorkspaceClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.AddVolumesRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.AddVolumesResponse`
         """
-        return self.add_volumes_with_http_info(request)
+        return self._add_volumes_with_http_info(request)
 
-    def add_volumes_with_http_info(self, request):
-        all_params = ['add_volumes_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _add_volumes_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2441,14 +2271,10 @@ class WorkspaceClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.DeleteDesktopVolumesRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.DeleteDesktopVolumesResponse`
         """
-        return self.delete_desktop_volumes_with_http_info(request)
+        return self._delete_desktop_volumes_with_http_info(request)
 
-    def delete_desktop_volumes_with_http_info(self, request):
-        all_params = ['desktop_id', 'delete_desktop_volumes_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_desktop_volumes_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2503,14 +2329,10 @@ class WorkspaceClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.ExpandVolumesRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.ExpandVolumesResponse`
         """
-        return self.expand_volumes_with_http_info(request)
+        return self._expand_volumes_with_http_info(request)
 
-    def expand_volumes_with_http_info(self, request):
-        all_params = ['expand_volumes_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _expand_volumes_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2565,14 +2387,10 @@ class WorkspaceClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.ApplyWorkspaceRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.ApplyWorkspaceResponse`
         """
-        return self.apply_workspace_with_http_info(request)
+        return self._apply_workspace_with_http_info(request)
 
-    def apply_workspace_with_http_info(self, request):
-        all_params = ['apply_workspace_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _apply_workspace_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2625,14 +2443,10 @@ class WorkspaceClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.CancelWorkspaceRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.CancelWorkspaceResponse`
         """
-        return self.cancel_workspace_with_http_info(request)
+        return self._cancel_workspace_with_http_info(request)
 
-    def cancel_workspace_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _cancel_workspace_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2683,14 +2497,10 @@ class WorkspaceClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.ListWorkspacesRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.ListWorkspacesResponse`
         """
-        return self.list_workspaces_with_http_info(request)
+        return self._list_workspaces_with_http_info(request)
 
-    def list_workspaces_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_workspaces_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2741,14 +2551,10 @@ class WorkspaceClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.ShowWorkspaceLockRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.ShowWorkspaceLockResponse`
         """
-        return self.show_workspace_lock_with_http_info(request)
+        return self._show_workspace_lock_with_http_info(request)
 
-    def show_workspace_lock_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_workspace_lock_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2799,14 +2605,10 @@ class WorkspaceClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.UnlockWorkspaceRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.UnlockWorkspaceResponse`
         """
-        return self.unlock_workspace_with_http_info(request)
+        return self._unlock_workspace_with_http_info(request)
 
-    def unlock_workspace_with_http_info(self, request):
-        all_params = ['unlock_workspace_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _unlock_workspace_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2859,14 +2661,10 @@ class WorkspaceClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.UpdateWorkspaceRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.UpdateWorkspaceResponse`
         """
-        return self.update_workspace_with_http_info(request)
+        return self._update_workspace_with_http_info(request)
 
-    def update_workspace_with_http_info(self, request):
-        all_params = ['update_workspace_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_workspace_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

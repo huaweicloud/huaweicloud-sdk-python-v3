@@ -1,9 +1,6 @@
 # coding: utf-8
 
-import re
 import six
-
-
 
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
@@ -26,7 +23,12 @@ class GenerationResult:
         'num_strong_constraints': 'int',
         'num_weak_constraints': 'int',
         'prop_names': 'list[str]',
-        'result': 'list[GenerationResultItem]'
+        'result': 'list[GenerationResultItem]',
+        'initial_dataset_size': 'int',
+        'strong_constraints': 'list[MoleculeConstraint]',
+        'weak_constraints': 'list[MoleculeConstraint]',
+        'binding_site': 'BindingSite',
+        'custom_props': 'list[CustomProp]'
     }
 
     attribute_map = {
@@ -36,10 +38,15 @@ class GenerationResult:
         'num_strong_constraints': 'num_strong_constraints',
         'num_weak_constraints': 'num_weak_constraints',
         'prop_names': 'prop_names',
-        'result': 'result'
+        'result': 'result',
+        'initial_dataset_size': 'initial_dataset_size',
+        'strong_constraints': 'strong_constraints',
+        'weak_constraints': 'weak_constraints',
+        'binding_site': 'binding_site',
+        'custom_props': 'custom_props'
     }
 
-    def __init__(self, name=None, num_rounds=None, num_expected=None, num_strong_constraints=None, num_weak_constraints=None, prop_names=None, result=None):
+    def __init__(self, name=None, num_rounds=None, num_expected=None, num_strong_constraints=None, num_weak_constraints=None, prop_names=None, result=None, initial_dataset_size=None, strong_constraints=None, weak_constraints=None, binding_site=None, custom_props=None):
         """GenerationResult
 
         The model defined in huaweicloud sdk
@@ -58,6 +65,16 @@ class GenerationResult:
         :type prop_names: list[str]
         :param result: 分子生成结果条目
         :type result: list[:class:`huaweicloudsdkeihealth.v1.GenerationResultItem`]
+        :param initial_dataset_size: 初始化数据集的分子条目数
+        :type initial_dataset_size: int
+        :param strong_constraints: 强约束集合
+        :type strong_constraints: list[:class:`huaweicloudsdkeihealth.v1.MoleculeConstraint`]
+        :param weak_constraints: 弱约束集合
+        :type weak_constraints: list[:class:`huaweicloudsdkeihealth.v1.MoleculeConstraint`]
+        :param binding_site: 
+        :type binding_site: :class:`huaweicloudsdkeihealth.v1.BindingSite`
+        :param custom_props: 用户已开启的自定义属性集合
+        :type custom_props: list[:class:`huaweicloudsdkeihealth.v1.CustomProp`]
         """
         
         
@@ -69,6 +86,11 @@ class GenerationResult:
         self._num_weak_constraints = None
         self._prop_names = None
         self._result = None
+        self._initial_dataset_size = None
+        self._strong_constraints = None
+        self._weak_constraints = None
+        self._binding_site = None
+        self._custom_props = None
         self.discriminator = None
 
         self.name = name
@@ -78,6 +100,16 @@ class GenerationResult:
         self.num_weak_constraints = num_weak_constraints
         self.prop_names = prop_names
         self.result = result
+        if initial_dataset_size is not None:
+            self.initial_dataset_size = initial_dataset_size
+        if strong_constraints is not None:
+            self.strong_constraints = strong_constraints
+        if weak_constraints is not None:
+            self.weak_constraints = weak_constraints
+        if binding_site is not None:
+            self.binding_site = binding_site
+        if custom_props is not None:
+            self.custom_props = custom_props
 
     @property
     def name(self):
@@ -232,6 +264,112 @@ class GenerationResult:
         :type result: list[:class:`huaweicloudsdkeihealth.v1.GenerationResultItem`]
         """
         self._result = result
+
+    @property
+    def initial_dataset_size(self):
+        """Gets the initial_dataset_size of this GenerationResult.
+
+        初始化数据集的分子条目数
+
+        :return: The initial_dataset_size of this GenerationResult.
+        :rtype: int
+        """
+        return self._initial_dataset_size
+
+    @initial_dataset_size.setter
+    def initial_dataset_size(self, initial_dataset_size):
+        """Sets the initial_dataset_size of this GenerationResult.
+
+        初始化数据集的分子条目数
+
+        :param initial_dataset_size: The initial_dataset_size of this GenerationResult.
+        :type initial_dataset_size: int
+        """
+        self._initial_dataset_size = initial_dataset_size
+
+    @property
+    def strong_constraints(self):
+        """Gets the strong_constraints of this GenerationResult.
+
+        强约束集合
+
+        :return: The strong_constraints of this GenerationResult.
+        :rtype: list[:class:`huaweicloudsdkeihealth.v1.MoleculeConstraint`]
+        """
+        return self._strong_constraints
+
+    @strong_constraints.setter
+    def strong_constraints(self, strong_constraints):
+        """Sets the strong_constraints of this GenerationResult.
+
+        强约束集合
+
+        :param strong_constraints: The strong_constraints of this GenerationResult.
+        :type strong_constraints: list[:class:`huaweicloudsdkeihealth.v1.MoleculeConstraint`]
+        """
+        self._strong_constraints = strong_constraints
+
+    @property
+    def weak_constraints(self):
+        """Gets the weak_constraints of this GenerationResult.
+
+        弱约束集合
+
+        :return: The weak_constraints of this GenerationResult.
+        :rtype: list[:class:`huaweicloudsdkeihealth.v1.MoleculeConstraint`]
+        """
+        return self._weak_constraints
+
+    @weak_constraints.setter
+    def weak_constraints(self, weak_constraints):
+        """Sets the weak_constraints of this GenerationResult.
+
+        弱约束集合
+
+        :param weak_constraints: The weak_constraints of this GenerationResult.
+        :type weak_constraints: list[:class:`huaweicloudsdkeihealth.v1.MoleculeConstraint`]
+        """
+        self._weak_constraints = weak_constraints
+
+    @property
+    def binding_site(self):
+        """Gets the binding_site of this GenerationResult.
+
+        :return: The binding_site of this GenerationResult.
+        :rtype: :class:`huaweicloudsdkeihealth.v1.BindingSite`
+        """
+        return self._binding_site
+
+    @binding_site.setter
+    def binding_site(self, binding_site):
+        """Sets the binding_site of this GenerationResult.
+
+        :param binding_site: The binding_site of this GenerationResult.
+        :type binding_site: :class:`huaweicloudsdkeihealth.v1.BindingSite`
+        """
+        self._binding_site = binding_site
+
+    @property
+    def custom_props(self):
+        """Gets the custom_props of this GenerationResult.
+
+        用户已开启的自定义属性集合
+
+        :return: The custom_props of this GenerationResult.
+        :rtype: list[:class:`huaweicloudsdkeihealth.v1.CustomProp`]
+        """
+        return self._custom_props
+
+    @custom_props.setter
+    def custom_props(self, custom_props):
+        """Sets the custom_props of this GenerationResult.
+
+        用户已开启的自定义属性集合
+
+        :param custom_props: The custom_props of this GenerationResult.
+        :type custom_props: list[:class:`huaweicloudsdkeihealth.v1.CustomProp`]
+        """
+        self._custom_props = custom_props
 
     def to_dict(self):
         """Returns the model properties as a dict"""

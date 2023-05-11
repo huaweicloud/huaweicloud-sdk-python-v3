@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class SwrAsyncClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(SwrAsyncClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkswr.v2.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -54,14 +36,10 @@ class SwrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkswr.v2.CreateImageSyncRepoRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.CreateImageSyncRepoResponse`
         """
-        return self.create_image_sync_repo_with_http_info(request)
+        return self._create_image_sync_repo_with_http_info(request)
 
-    def create_image_sync_repo_with_http_info(self, request):
-        all_params = ['namespace', 'repository', 'body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_image_sync_repo_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -119,14 +97,10 @@ class SwrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkswr.v2.CreateManualImageSyncRepoRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.CreateManualImageSyncRepoResponse`
         """
-        return self.create_manual_image_sync_repo_with_http_info(request)
+        return self._create_manual_image_sync_repo_with_http_info(request)
 
-    def create_manual_image_sync_repo_with_http_info(self, request):
-        all_params = ['namespace', 'repository', 'body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_manual_image_sync_repo_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -184,14 +158,10 @@ class SwrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkswr.v2.CreateNamespaceRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.CreateNamespaceResponse`
         """
-        return self.create_namespace_with_http_info(request)
+        return self._create_namespace_with_http_info(request)
 
-    def create_namespace_with_http_info(self, request):
-        all_params = ['create_namespace_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_namespace_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -245,14 +215,10 @@ class SwrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkswr.v2.CreateNamespaceAuthRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.CreateNamespaceAuthResponse`
         """
-        return self.create_namespace_auth_with_http_info(request)
+        return self._create_namespace_auth_with_http_info(request)
 
-    def create_namespace_auth_with_http_info(self, request):
-        all_params = ['namespace', 'create_namespace_auth_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_namespace_auth_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -308,14 +274,10 @@ class SwrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkswr.v2.CreateRepoRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.CreateRepoResponse`
         """
-        return self.create_repo_with_http_info(request)
+        return self._create_repo_with_http_info(request)
 
-    def create_repo_with_http_info(self, request):
-        all_params = ['namespace', 'create_repo_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_repo_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -371,14 +333,10 @@ class SwrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkswr.v2.CreateRepoDomainsRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.CreateRepoDomainsResponse`
         """
-        return self.create_repo_domains_with_http_info(request)
+        return self._create_repo_domains_with_http_info(request)
 
-    def create_repo_domains_with_http_info(self, request):
-        all_params = ['namespace', 'repository', 'create_repo_domains_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_repo_domains_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -436,14 +394,10 @@ class SwrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkswr.v2.CreateRetentionRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.CreateRetentionResponse`
         """
-        return self.create_retention_with_http_info(request)
+        return self._create_retention_with_http_info(request)
 
-    def create_retention_with_http_info(self, request):
-        all_params = ['namespace', 'repository', 'create_retention_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_retention_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -501,14 +455,10 @@ class SwrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkswr.v2.CreateSecretRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.CreateSecretResponse`
         """
-        return self.create_secret_with_http_info(request)
+        return self._create_secret_with_http_info(request)
 
-    def create_secret_with_http_info(self, request):
-        all_params = ['projectname']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_secret_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -562,14 +512,10 @@ class SwrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkswr.v2.CreateTriggerRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.CreateTriggerResponse`
         """
-        return self.create_trigger_with_http_info(request)
+        return self._create_trigger_with_http_info(request)
 
-    def create_trigger_with_http_info(self, request):
-        all_params = ['namespace', 'repository', 'create_trigger_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_trigger_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -627,14 +573,10 @@ class SwrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkswr.v2.CreateUserRepositoryAuthRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.CreateUserRepositoryAuthResponse`
         """
-        return self.create_user_repository_auth_with_http_info(request)
+        return self._create_user_repository_auth_with_http_info(request)
 
-    def create_user_repository_auth_with_http_info(self, request):
-        all_params = ['namespace', 'repository', 'create_user_repository_auth_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_user_repository_auth_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -692,14 +634,10 @@ class SwrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkswr.v2.DeleteImageSyncRepoRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.DeleteImageSyncRepoResponse`
         """
-        return self.delete_image_sync_repo_with_http_info(request)
+        return self._delete_image_sync_repo_with_http_info(request)
 
-    def delete_image_sync_repo_with_http_info(self, request):
-        all_params = ['namespace', 'repository', 'body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_image_sync_repo_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -757,14 +695,10 @@ class SwrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkswr.v2.DeleteNamespaceAuthRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.DeleteNamespaceAuthResponse`
         """
-        return self.delete_namespace_auth_with_http_info(request)
+        return self._delete_namespace_auth_with_http_info(request)
 
-    def delete_namespace_auth_with_http_info(self, request):
-        all_params = ['namespace', 'delete_namespace_auth_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_namespace_auth_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -820,14 +754,10 @@ class SwrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkswr.v2.DeleteNamespacesRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.DeleteNamespacesResponse`
         """
-        return self.delete_namespaces_with_http_info(request)
+        return self._delete_namespaces_with_http_info(request)
 
-    def delete_namespaces_with_http_info(self, request):
-        all_params = ['namespace']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_namespaces_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -881,14 +811,10 @@ class SwrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkswr.v2.DeleteRepoRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.DeleteRepoResponse`
         """
-        return self.delete_repo_with_http_info(request)
+        return self._delete_repo_with_http_info(request)
 
-    def delete_repo_with_http_info(self, request):
-        all_params = ['namespace', 'repository']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_repo_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -944,14 +870,10 @@ class SwrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkswr.v2.DeleteRepoDomainsRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.DeleteRepoDomainsResponse`
         """
-        return self.delete_repo_domains_with_http_info(request)
+        return self._delete_repo_domains_with_http_info(request)
 
-    def delete_repo_domains_with_http_info(self, request):
-        all_params = ['namespace', 'repository', 'access_domain']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_repo_domains_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1009,14 +931,10 @@ class SwrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkswr.v2.DeleteRepoTagRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.DeleteRepoTagResponse`
         """
-        return self.delete_repo_tag_with_http_info(request)
+        return self._delete_repo_tag_with_http_info(request)
 
-    def delete_repo_tag_with_http_info(self, request):
-        all_params = ['namespace', 'repository', 'tag']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_repo_tag_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1074,14 +992,10 @@ class SwrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkswr.v2.DeleteRetentionRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.DeleteRetentionResponse`
         """
-        return self.delete_retention_with_http_info(request)
+        return self._delete_retention_with_http_info(request)
 
-    def delete_retention_with_http_info(self, request):
-        all_params = ['namespace', 'repository', 'retention_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_retention_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1139,14 +1053,10 @@ class SwrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkswr.v2.DeleteTriggerRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.DeleteTriggerResponse`
         """
-        return self.delete_trigger_with_http_info(request)
+        return self._delete_trigger_with_http_info(request)
 
-    def delete_trigger_with_http_info(self, request):
-        all_params = ['namespace', 'repository', 'trigger']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_trigger_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1204,14 +1114,10 @@ class SwrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkswr.v2.DeleteUserRepositoryAuthRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.DeleteUserRepositoryAuthResponse`
         """
-        return self.delete_user_repository_auth_with_http_info(request)
+        return self._delete_user_repository_auth_with_http_info(request)
 
-    def delete_user_repository_auth_with_http_info(self, request):
-        all_params = ['namespace', 'repository', 'delete_user_repository_auth_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_user_repository_auth_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1269,14 +1175,10 @@ class SwrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkswr.v2.ListImageAutoSyncReposDetailsRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.ListImageAutoSyncReposDetailsResponse`
         """
-        return self.list_image_auto_sync_repos_details_with_http_info(request)
+        return self._list_image_auto_sync_repos_details_with_http_info(request)
 
-    def list_image_auto_sync_repos_details_with_http_info(self, request):
-        all_params = ['namespace', 'repository']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_image_auto_sync_repos_details_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1332,14 +1234,10 @@ class SwrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkswr.v2.ListNamespacesRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.ListNamespacesResponse`
         """
-        return self.list_namespaces_with_http_info(request)
+        return self._list_namespaces_with_http_info(request)
 
-    def list_namespaces_with_http_info(self, request):
-        all_params = ['namespace', 'filter']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_namespaces_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1395,14 +1293,10 @@ class SwrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkswr.v2.ListQuotasRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.ListQuotasResponse`
         """
-        return self.list_quotas_with_http_info(request)
+        return self._list_quotas_with_http_info(request)
 
-    def list_quotas_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_quotas_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1454,14 +1348,10 @@ class SwrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkswr.v2.ListRepoDomainsRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.ListRepoDomainsResponse`
         """
-        return self.list_repo_domains_with_http_info(request)
+        return self._list_repo_domains_with_http_info(request)
 
-    def list_repo_domains_with_http_info(self, request):
-        all_params = ['namespace', 'repository']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_repo_domains_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1517,14 +1407,10 @@ class SwrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkswr.v2.ListReposDetailsRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.ListReposDetailsResponse`
         """
-        return self.list_repos_details_with_http_info(request)
+        return self._list_repos_details_with_http_info(request)
 
-    def list_repos_details_with_http_info(self, request):
-        all_params = ['namespace', 'name', 'category', 'limit', 'offset', 'order_column', 'order_type', 'filter']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_repos_details_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1592,14 +1478,10 @@ class SwrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkswr.v2.ListRepositoryTagsRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.ListRepositoryTagsResponse`
         """
-        return self.list_repository_tags_with_http_info(request)
+        return self._list_repository_tags_with_http_info(request)
 
-    def list_repository_tags_with_http_info(self, request):
-        all_params = ['namespace', 'repository', 'limit', 'offset', 'order_column', 'order_type', 'tag', 'filter']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_repository_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1667,14 +1549,10 @@ class SwrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkswr.v2.ListRetentionHistoriesRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.ListRetentionHistoriesResponse`
         """
-        return self.list_retention_histories_with_http_info(request)
+        return self._list_retention_histories_with_http_info(request)
 
-    def list_retention_histories_with_http_info(self, request):
-        all_params = ['namespace', 'repository', 'filter']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_retention_histories_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1732,14 +1610,10 @@ class SwrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkswr.v2.ListRetentionsRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.ListRetentionsResponse`
         """
-        return self.list_retentions_with_http_info(request)
+        return self._list_retentions_with_http_info(request)
 
-    def list_retentions_with_http_info(self, request):
-        all_params = ['namespace', 'repository']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_retentions_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1795,14 +1669,10 @@ class SwrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkswr.v2.ListSharedReposDetailsRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.ListSharedReposDetailsResponse`
         """
-        return self.list_shared_repos_details_with_http_info(request)
+        return self._list_shared_repos_details_with_http_info(request)
 
-    def list_shared_repos_details_with_http_info(self, request):
-        all_params = ['namespace', 'name', 'center', 'limit', 'offset', 'order_column', 'order_type', 'filter']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_shared_repos_details_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1870,14 +1740,10 @@ class SwrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkswr.v2.ListTriggersDetailsRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.ListTriggersDetailsResponse`
         """
-        return self.list_triggers_details_with_http_info(request)
+        return self._list_triggers_details_with_http_info(request)
 
-    def list_triggers_details_with_http_info(self, request):
-        all_params = ['namespace', 'repository']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_triggers_details_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1933,14 +1799,10 @@ class SwrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkswr.v2.ShowAccessDomainRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.ShowAccessDomainResponse`
         """
-        return self.show_access_domain_with_http_info(request)
+        return self._show_access_domain_with_http_info(request)
 
-    def show_access_domain_with_http_info(self, request):
-        all_params = ['namespace', 'repository', 'access_domain']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_access_domain_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1998,14 +1860,10 @@ class SwrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkswr.v2.ShowNamespaceRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.ShowNamespaceResponse`
         """
-        return self.show_namespace_with_http_info(request)
+        return self._show_namespace_with_http_info(request)
 
-    def show_namespace_with_http_info(self, request):
-        all_params = ['namespace']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_namespace_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2059,14 +1917,10 @@ class SwrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkswr.v2.ShowNamespaceAuthRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.ShowNamespaceAuthResponse`
         """
-        return self.show_namespace_auth_with_http_info(request)
+        return self._show_namespace_auth_with_http_info(request)
 
-    def show_namespace_auth_with_http_info(self, request):
-        all_params = ['namespace']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_namespace_auth_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2120,14 +1974,10 @@ class SwrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkswr.v2.ShowRepositoryRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.ShowRepositoryResponse`
         """
-        return self.show_repository_with_http_info(request)
+        return self._show_repository_with_http_info(request)
 
-    def show_repository_with_http_info(self, request):
-        all_params = ['namespace', 'repository']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_repository_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2183,14 +2033,10 @@ class SwrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkswr.v2.ShowRetentionRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.ShowRetentionResponse`
         """
-        return self.show_retention_with_http_info(request)
+        return self._show_retention_with_http_info(request)
 
-    def show_retention_with_http_info(self, request):
-        all_params = ['namespace', 'repository', 'retention_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_retention_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2248,14 +2094,10 @@ class SwrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkswr.v2.ShowSyncJobRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.ShowSyncJobResponse`
         """
-        return self.show_sync_job_with_http_info(request)
+        return self._show_sync_job_with_http_info(request)
 
-    def show_sync_job_with_http_info(self, request):
-        all_params = ['namespace', 'repository', 'filter']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_sync_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2313,14 +2155,10 @@ class SwrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkswr.v2.ShowTriggerRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.ShowTriggerResponse`
         """
-        return self.show_trigger_with_http_info(request)
+        return self._show_trigger_with_http_info(request)
 
-    def show_trigger_with_http_info(self, request):
-        all_params = ['namespace', 'repository', 'trigger']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_trigger_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2378,14 +2216,10 @@ class SwrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkswr.v2.ShowUserRepositoryAuthRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.ShowUserRepositoryAuthResponse`
         """
-        return self.show_user_repository_auth_with_http_info(request)
+        return self._show_user_repository_auth_with_http_info(request)
 
-    def show_user_repository_auth_with_http_info(self, request):
-        all_params = ['namespace', 'repository']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_user_repository_auth_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2441,14 +2275,10 @@ class SwrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkswr.v2.UpdateNamespaceAuthRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.UpdateNamespaceAuthResponse`
         """
-        return self.update_namespace_auth_with_http_info(request)
+        return self._update_namespace_auth_with_http_info(request)
 
-    def update_namespace_auth_with_http_info(self, request):
-        all_params = ['namespace', 'update_namespace_auth_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_namespace_auth_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2504,14 +2334,10 @@ class SwrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkswr.v2.UpdateRepoRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.UpdateRepoResponse`
         """
-        return self.update_repo_with_http_info(request)
+        return self._update_repo_with_http_info(request)
 
-    def update_repo_with_http_info(self, request):
-        all_params = ['namespace', 'repository', 'update_repo_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_repo_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2569,14 +2395,10 @@ class SwrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkswr.v2.UpdateRepoDomainsRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.UpdateRepoDomainsResponse`
         """
-        return self.update_repo_domains_with_http_info(request)
+        return self._update_repo_domains_with_http_info(request)
 
-    def update_repo_domains_with_http_info(self, request):
-        all_params = ['namespace', 'repository', 'access_domain', 'update_repo_domains_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_repo_domains_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2636,14 +2458,10 @@ class SwrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkswr.v2.UpdateRetentionRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.UpdateRetentionResponse`
         """
-        return self.update_retention_with_http_info(request)
+        return self._update_retention_with_http_info(request)
 
-    def update_retention_with_http_info(self, request):
-        all_params = ['namespace', 'repository', 'retention_id', 'update_retention_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_retention_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2703,14 +2521,10 @@ class SwrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkswr.v2.UpdateTriggerRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.UpdateTriggerResponse`
         """
-        return self.update_trigger_with_http_info(request)
+        return self._update_trigger_with_http_info(request)
 
-    def update_trigger_with_http_info(self, request):
-        all_params = ['namespace', 'repository', 'trigger', 'body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_trigger_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2770,14 +2584,10 @@ class SwrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkswr.v2.UpdateUserRepositoryAuthRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.UpdateUserRepositoryAuthResponse`
         """
-        return self.update_user_repository_auth_with_http_info(request)
+        return self._update_user_repository_auth_with_http_info(request)
 
-    def update_user_repository_auth_with_http_info(self, request):
-        all_params = ['namespace', 'repository', 'update_repository_auth_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_user_repository_auth_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2835,14 +2645,10 @@ class SwrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkswr.v2.ListApiVersionsRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.ListApiVersionsResponse`
         """
-        return self.list_api_versions_with_http_info(request)
+        return self._list_api_versions_with_http_info(request)
 
-    def list_api_versions_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_api_versions_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2894,14 +2700,10 @@ class SwrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkswr.v2.ShowApiVersionRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.ShowApiVersionResponse`
         """
-        return self.show_api_version_with_http_info(request)
+        return self._show_api_version_with_http_info(request)
 
-    def show_api_version_with_http_info(self, request):
-        all_params = ['api_version']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_api_version_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

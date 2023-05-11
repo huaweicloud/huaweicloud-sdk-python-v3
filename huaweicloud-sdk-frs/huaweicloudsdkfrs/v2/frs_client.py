@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class FrsClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(FrsClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkfrs.v2.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -53,14 +35,10 @@ class FrsClient(Client):
         :type request: :class:`huaweicloudsdkfrs.v2.AddFacesByBase64Request`
         :rtype: :class:`huaweicloudsdkfrs.v2.AddFacesByBase64Response`
         """
-        return self.add_faces_by_base64_with_http_info(request)
+        return self._add_faces_by_base64_with_http_info(request)
 
-    def add_faces_by_base64_with_http_info(self, request):
-        all_params = ['face_set_name', 'add_faces_base64_req', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _add_faces_by_base64_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -117,14 +95,10 @@ class FrsClient(Client):
         :type request: :class:`huaweicloudsdkfrs.v2.AddFacesByFileRequest`
         :rtype: :class:`huaweicloudsdkfrs.v2.AddFacesByFileResponse`
         """
-        return self.add_faces_by_file_with_http_info(request)
+        return self._add_faces_by_file_with_http_info(request)
 
-    def add_faces_by_file_with_http_info(self, request):
-        all_params = ['face_set_name', 'image_file', 'enterprise_project_id', 'external_image_id', 'external_fields', 'single']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _add_faces_by_file_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -189,14 +163,10 @@ class FrsClient(Client):
         :type request: :class:`huaweicloudsdkfrs.v2.AddFacesByUrlRequest`
         :rtype: :class:`huaweicloudsdkfrs.v2.AddFacesByUrlResponse`
         """
-        return self.add_faces_by_url_with_http_info(request)
+        return self._add_faces_by_url_with_http_info(request)
 
-    def add_faces_by_url_with_http_info(self, request):
-        all_params = ['face_set_name', 'add_faces_url_req', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _add_faces_by_url_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -253,14 +223,10 @@ class FrsClient(Client):
         :type request: :class:`huaweicloudsdkfrs.v2.BatchDeleteFacesRequest`
         :rtype: :class:`huaweicloudsdkfrs.v2.BatchDeleteFacesResponse`
         """
-        return self.batch_delete_faces_with_http_info(request)
+        return self._batch_delete_faces_with_http_info(request)
 
-    def batch_delete_faces_with_http_info(self, request):
-        all_params = ['face_set_name', 'delete_faces_batch_req', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_delete_faces_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -317,14 +283,10 @@ class FrsClient(Client):
         :type request: :class:`huaweicloudsdkfrs.v2.CompareFaceByBase64Request`
         :rtype: :class:`huaweicloudsdkfrs.v2.CompareFaceByBase64Response`
         """
-        return self.compare_face_by_base64_with_http_info(request)
+        return self._compare_face_by_base64_with_http_info(request)
 
-    def compare_face_by_base64_with_http_info(self, request):
-        all_params = ['face_compare_base64_req', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _compare_face_by_base64_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -379,14 +341,10 @@ class FrsClient(Client):
         :type request: :class:`huaweicloudsdkfrs.v2.CompareFaceByFileRequest`
         :rtype: :class:`huaweicloudsdkfrs.v2.CompareFaceByFileResponse`
         """
-        return self.compare_face_by_file_with_http_info(request)
+        return self._compare_face_by_file_with_http_info(request)
 
-    def compare_face_by_file_with_http_info(self, request):
-        all_params = ['image1_file', 'image2_file', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _compare_face_by_file_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -445,14 +403,10 @@ class FrsClient(Client):
         :type request: :class:`huaweicloudsdkfrs.v2.CompareFaceByUrlRequest`
         :rtype: :class:`huaweicloudsdkfrs.v2.CompareFaceByUrlResponse`
         """
-        return self.compare_face_by_url_with_http_info(request)
+        return self._compare_face_by_url_with_http_info(request)
 
-    def compare_face_by_url_with_http_info(self, request):
-        all_params = ['face_compare_url_req', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _compare_face_by_url_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -507,14 +461,10 @@ class FrsClient(Client):
         :type request: :class:`huaweicloudsdkfrs.v2.CreateFaceSetRequest`
         :rtype: :class:`huaweicloudsdkfrs.v2.CreateFaceSetResponse`
         """
-        return self.create_face_set_with_http_info(request)
+        return self._create_face_set_with_http_info(request)
 
-    def create_face_set_with_http_info(self, request):
-        all_params = ['create_face_set_req', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_face_set_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -569,14 +519,10 @@ class FrsClient(Client):
         :type request: :class:`huaweicloudsdkfrs.v2.DeleteFaceByExternalImageIdRequest`
         :rtype: :class:`huaweicloudsdkfrs.v2.DeleteFaceByExternalImageIdResponse`
         """
-        return self.delete_face_by_external_image_id_with_http_info(request)
+        return self._delete_face_by_external_image_id_with_http_info(request)
 
-    def delete_face_by_external_image_id_with_http_info(self, request):
-        all_params = ['face_set_name', 'external_image_id', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_face_by_external_image_id_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -633,14 +579,10 @@ class FrsClient(Client):
         :type request: :class:`huaweicloudsdkfrs.v2.DeleteFaceByFaceIdRequest`
         :rtype: :class:`huaweicloudsdkfrs.v2.DeleteFaceByFaceIdResponse`
         """
-        return self.delete_face_by_face_id_with_http_info(request)
+        return self._delete_face_by_face_id_with_http_info(request)
 
-    def delete_face_by_face_id_with_http_info(self, request):
-        all_params = ['face_set_name', 'face_id', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_face_by_face_id_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -697,14 +639,10 @@ class FrsClient(Client):
         :type request: :class:`huaweicloudsdkfrs.v2.DeleteFaceSetRequest`
         :rtype: :class:`huaweicloudsdkfrs.v2.DeleteFaceSetResponse`
         """
-        return self.delete_face_set_with_http_info(request)
+        return self._delete_face_set_with_http_info(request)
 
-    def delete_face_set_with_http_info(self, request):
-        all_params = ['face_set_name', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_face_set_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -759,14 +697,10 @@ class FrsClient(Client):
         :type request: :class:`huaweicloudsdkfrs.v2.DetectFaceByBase64Request`
         :rtype: :class:`huaweicloudsdkfrs.v2.DetectFaceByBase64Response`
         """
-        return self.detect_face_by_base64_with_http_info(request)
+        return self._detect_face_by_base64_with_http_info(request)
 
-    def detect_face_by_base64_with_http_info(self, request):
-        all_params = ['face_detect_base64_req', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _detect_face_by_base64_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -821,14 +755,10 @@ class FrsClient(Client):
         :type request: :class:`huaweicloudsdkfrs.v2.DetectFaceByBase64IntlRequest`
         :rtype: :class:`huaweicloudsdkfrs.v2.DetectFaceByBase64IntlResponse`
         """
-        return self.detect_face_by_base64_intl_with_http_info(request)
+        return self._detect_face_by_base64_intl_with_http_info(request)
 
-    def detect_face_by_base64_intl_with_http_info(self, request):
-        all_params = ['face_detect_base64_req', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _detect_face_by_base64_intl_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -883,14 +813,10 @@ class FrsClient(Client):
         :type request: :class:`huaweicloudsdkfrs.v2.DetectFaceByFileRequest`
         :rtype: :class:`huaweicloudsdkfrs.v2.DetectFaceByFileResponse`
         """
-        return self.detect_face_by_file_with_http_info(request)
+        return self._detect_face_by_file_with_http_info(request)
 
-    def detect_face_by_file_with_http_info(self, request):
-        all_params = ['image_file', 'enterprise_project_id', 'attributes']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _detect_face_by_file_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -949,14 +875,10 @@ class FrsClient(Client):
         :type request: :class:`huaweicloudsdkfrs.v2.DetectFaceByFileIntlRequest`
         :rtype: :class:`huaweicloudsdkfrs.v2.DetectFaceByFileIntlResponse`
         """
-        return self.detect_face_by_file_intl_with_http_info(request)
+        return self._detect_face_by_file_intl_with_http_info(request)
 
-    def detect_face_by_file_intl_with_http_info(self, request):
-        all_params = ['image_file', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _detect_face_by_file_intl_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1013,14 +935,10 @@ class FrsClient(Client):
         :type request: :class:`huaweicloudsdkfrs.v2.DetectFaceByUrlRequest`
         :rtype: :class:`huaweicloudsdkfrs.v2.DetectFaceByUrlResponse`
         """
-        return self.detect_face_by_url_with_http_info(request)
+        return self._detect_face_by_url_with_http_info(request)
 
-    def detect_face_by_url_with_http_info(self, request):
-        all_params = ['face_detect_url_req', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _detect_face_by_url_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1075,14 +993,10 @@ class FrsClient(Client):
         :type request: :class:`huaweicloudsdkfrs.v2.DetectFaceByUrlIntlRequest`
         :rtype: :class:`huaweicloudsdkfrs.v2.DetectFaceByUrlIntlResponse`
         """
-        return self.detect_face_by_url_intl_with_http_info(request)
+        return self._detect_face_by_url_intl_with_http_info(request)
 
-    def detect_face_by_url_intl_with_http_info(self, request):
-        all_params = ['face_detect_url_req', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _detect_face_by_url_intl_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1137,14 +1051,10 @@ class FrsClient(Client):
         :type request: :class:`huaweicloudsdkfrs.v2.DetectLiveByBase64Request`
         :rtype: :class:`huaweicloudsdkfrs.v2.DetectLiveByBase64Response`
         """
-        return self.detect_live_by_base64_with_http_info(request)
+        return self._detect_live_by_base64_with_http_info(request)
 
-    def detect_live_by_base64_with_http_info(self, request):
-        all_params = ['live_detect_base64_req', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _detect_live_by_base64_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1199,14 +1109,10 @@ class FrsClient(Client):
         :type request: :class:`huaweicloudsdkfrs.v2.DetectLiveByBase64IntlRequest`
         :rtype: :class:`huaweicloudsdkfrs.v2.DetectLiveByBase64IntlResponse`
         """
-        return self.detect_live_by_base64_intl_with_http_info(request)
+        return self._detect_live_by_base64_intl_with_http_info(request)
 
-    def detect_live_by_base64_intl_with_http_info(self, request):
-        all_params = ['live_detect_base64_req', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _detect_live_by_base64_intl_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1261,14 +1167,10 @@ class FrsClient(Client):
         :type request: :class:`huaweicloudsdkfrs.v2.DetectLiveByFileRequest`
         :rtype: :class:`huaweicloudsdkfrs.v2.DetectLiveByFileResponse`
         """
-        return self.detect_live_by_file_with_http_info(request)
+        return self._detect_live_by_file_with_http_info(request)
 
-    def detect_live_by_file_with_http_info(self, request):
-        all_params = ['video_file', 'actions', 'enterprise_project_id', 'action_time', 'nod_threshold']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _detect_live_by_file_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1331,14 +1233,10 @@ class FrsClient(Client):
         :type request: :class:`huaweicloudsdkfrs.v2.DetectLiveByFileIntlRequest`
         :rtype: :class:`huaweicloudsdkfrs.v2.DetectLiveByFileIntlResponse`
         """
-        return self.detect_live_by_file_intl_with_http_info(request)
+        return self._detect_live_by_file_intl_with_http_info(request)
 
-    def detect_live_by_file_intl_with_http_info(self, request):
-        all_params = ['video_file', 'actions', 'enterprise_project_id', 'action_time', 'nod_threshold']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _detect_live_by_file_intl_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1401,14 +1299,10 @@ class FrsClient(Client):
         :type request: :class:`huaweicloudsdkfrs.v2.DetectLiveByUrlRequest`
         :rtype: :class:`huaweicloudsdkfrs.v2.DetectLiveByUrlResponse`
         """
-        return self.detect_live_by_url_with_http_info(request)
+        return self._detect_live_by_url_with_http_info(request)
 
-    def detect_live_by_url_with_http_info(self, request):
-        all_params = ['live_detect_url_req', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _detect_live_by_url_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1463,14 +1357,10 @@ class FrsClient(Client):
         :type request: :class:`huaweicloudsdkfrs.v2.DetectLiveByUrlIntlRequest`
         :rtype: :class:`huaweicloudsdkfrs.v2.DetectLiveByUrlIntlResponse`
         """
-        return self.detect_live_by_url_intl_with_http_info(request)
+        return self._detect_live_by_url_intl_with_http_info(request)
 
-    def detect_live_by_url_intl_with_http_info(self, request):
-        all_params = ['live_detect_url_req', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _detect_live_by_url_intl_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1525,14 +1415,10 @@ class FrsClient(Client):
         :type request: :class:`huaweicloudsdkfrs.v2.DetectLiveFaceByBase64Request`
         :rtype: :class:`huaweicloudsdkfrs.v2.DetectLiveFaceByBase64Response`
         """
-        return self.detect_live_face_by_base64_with_http_info(request)
+        return self._detect_live_face_by_base64_with_http_info(request)
 
-    def detect_live_face_by_base64_with_http_info(self, request):
-        all_params = ['live_detect_face_base64_req', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _detect_live_face_by_base64_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1587,14 +1473,10 @@ class FrsClient(Client):
         :type request: :class:`huaweicloudsdkfrs.v2.DetectLiveFaceByFileRequest`
         :rtype: :class:`huaweicloudsdkfrs.v2.DetectLiveFaceByFileResponse`
         """
-        return self.detect_live_face_by_file_with_http_info(request)
+        return self._detect_live_face_by_file_with_http_info(request)
 
-    def detect_live_face_by_file_with_http_info(self, request):
-        all_params = ['image_file', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _detect_live_face_by_file_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1651,14 +1533,10 @@ class FrsClient(Client):
         :type request: :class:`huaweicloudsdkfrs.v2.DetectLiveFaceByUrlRequest`
         :rtype: :class:`huaweicloudsdkfrs.v2.DetectLiveFaceByUrlResponse`
         """
-        return self.detect_live_face_by_url_with_http_info(request)
+        return self._detect_live_face_by_url_with_http_info(request)
 
-    def detect_live_face_by_url_with_http_info(self, request):
-        all_params = ['live_detect_face_url_req', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _detect_live_face_by_url_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1714,14 +1592,10 @@ class FrsClient(Client):
         :type request: :class:`huaweicloudsdkfrs.v2.SearchFaceByBase64Request`
         :rtype: :class:`huaweicloudsdkfrs.v2.SearchFaceByBase64Response`
         """
-        return self.search_face_by_base64_with_http_info(request)
+        return self._search_face_by_base64_with_http_info(request)
 
-    def search_face_by_base64_with_http_info(self, request):
-        all_params = ['face_set_name', 'face_search_base64_req', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _search_face_by_base64_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1779,14 +1653,10 @@ class FrsClient(Client):
         :type request: :class:`huaweicloudsdkfrs.v2.SearchFaceByFaceIdRequest`
         :rtype: :class:`huaweicloudsdkfrs.v2.SearchFaceByFaceIdResponse`
         """
-        return self.search_face_by_face_id_with_http_info(request)
+        return self._search_face_by_face_id_with_http_info(request)
 
-    def search_face_by_face_id_with_http_info(self, request):
-        all_params = ['face_set_name', 'face_search_face_id_req', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _search_face_by_face_id_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1844,14 +1714,10 @@ class FrsClient(Client):
         :type request: :class:`huaweicloudsdkfrs.v2.SearchFaceByFileRequest`
         :rtype: :class:`huaweicloudsdkfrs.v2.SearchFaceByFileResponse`
         """
-        return self.search_face_by_file_with_http_info(request)
+        return self._search_face_by_file_with_http_info(request)
 
-    def search_face_by_file_with_http_info(self, request):
-        all_params = ['face_set_name', 'image_file', 'enterprise_project_id', 'top_n', 'threshold', 'sort', 'filter', 'return_fields']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _search_face_by_file_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1921,14 +1787,10 @@ class FrsClient(Client):
         :type request: :class:`huaweicloudsdkfrs.v2.SearchFaceByUrlRequest`
         :rtype: :class:`huaweicloudsdkfrs.v2.SearchFaceByUrlResponse`
         """
-        return self.search_face_by_url_with_http_info(request)
+        return self._search_face_by_url_with_http_info(request)
 
-    def search_face_by_url_with_http_info(self, request):
-        all_params = ['face_set_name', 'face_search_url_req', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _search_face_by_url_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1985,14 +1847,10 @@ class FrsClient(Client):
         :type request: :class:`huaweicloudsdkfrs.v2.ShowAllFaceSetsRequest`
         :rtype: :class:`huaweicloudsdkfrs.v2.ShowAllFaceSetsResponse`
         """
-        return self.show_all_face_sets_with_http_info(request)
+        return self._show_all_face_sets_with_http_info(request)
 
-    def show_all_face_sets_with_http_info(self, request):
-        all_params = ['enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_all_face_sets_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2045,14 +1903,10 @@ class FrsClient(Client):
         :type request: :class:`huaweicloudsdkfrs.v2.ShowFaceSetRequest`
         :rtype: :class:`huaweicloudsdkfrs.v2.ShowFaceSetResponse`
         """
-        return self.show_face_set_with_http_info(request)
+        return self._show_face_set_with_http_info(request)
 
-    def show_face_set_with_http_info(self, request):
-        all_params = ['face_set_name', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_face_set_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2107,14 +1961,10 @@ class FrsClient(Client):
         :type request: :class:`huaweicloudsdkfrs.v2.ShowFacesByFaceIdRequest`
         :rtype: :class:`huaweicloudsdkfrs.v2.ShowFacesByFaceIdResponse`
         """
-        return self.show_faces_by_face_id_with_http_info(request)
+        return self._show_faces_by_face_id_with_http_info(request)
 
-    def show_faces_by_face_id_with_http_info(self, request):
-        all_params = ['face_set_name', 'face_id', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_faces_by_face_id_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2171,14 +2021,10 @@ class FrsClient(Client):
         :type request: :class:`huaweicloudsdkfrs.v2.ShowFacesByLimitRequest`
         :rtype: :class:`huaweicloudsdkfrs.v2.ShowFacesByLimitResponse`
         """
-        return self.show_faces_by_limit_with_http_info(request)
+        return self._show_faces_by_limit_with_http_info(request)
 
-    def show_faces_by_limit_with_http_info(self, request):
-        all_params = ['face_set_name', 'offset', 'limit', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_faces_by_limit_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2237,14 +2083,10 @@ class FrsClient(Client):
         :type request: :class:`huaweicloudsdkfrs.v2.UpdateFaceRequest`
         :rtype: :class:`huaweicloudsdkfrs.v2.UpdateFaceResponse`
         """
-        return self.update_face_with_http_info(request)
+        return self._update_face_with_http_info(request)
 
-    def update_face_with_http_info(self, request):
-        all_params = ['face_set_name', 'update_face_req', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_face_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

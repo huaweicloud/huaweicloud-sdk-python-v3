@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class ScmAsyncClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(ScmAsyncClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkscm.v3.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -54,14 +36,10 @@ class ScmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkscm.v3.DeleteCertificateRequest`
         :rtype: :class:`huaweicloudsdkscm.v3.DeleteCertificateResponse`
         """
-        return self.delete_certificate_with_http_info(request)
+        return self._delete_certificate_with_http_info(request)
 
-    def delete_certificate_with_http_info(self, request):
-        all_params = ['certificate_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_certificate_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -115,14 +93,10 @@ class ScmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkscm.v3.ExportCertificateRequest`
         :rtype: :class:`huaweicloudsdkscm.v3.ExportCertificateResponse`
         """
-        return self.export_certificate_with_http_info(request)
+        return self._export_certificate_with_http_info(request)
 
-    def export_certificate_with_http_info(self, request):
-        all_params = ['certificate_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _export_certificate_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -176,14 +150,10 @@ class ScmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkscm.v3.ImportCertificateRequest`
         :rtype: :class:`huaweicloudsdkscm.v3.ImportCertificateResponse`
         """
-        return self.import_certificate_with_http_info(request)
+        return self._import_certificate_with_http_info(request)
 
-    def import_certificate_with_http_info(self, request):
-        all_params = ['import_certificate_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _import_certificate_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -237,14 +207,10 @@ class ScmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkscm.v3.ListCertificatesRequest`
         :rtype: :class:`huaweicloudsdkscm.v3.ListCertificatesResponse`
         """
-        return self.list_certificates_with_http_info(request)
+        return self._list_certificates_with_http_info(request)
 
-    def list_certificates_with_http_info(self, request):
-        all_params = ['limit', 'offset', 'sort_dir', 'sort_key', 'status', 'enterprise_project_id', 'deploy_support']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_certificates_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -310,14 +276,10 @@ class ScmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkscm.v3.PushCertificateRequest`
         :rtype: :class:`huaweicloudsdkscm.v3.PushCertificateResponse`
         """
-        return self.push_certificate_with_http_info(request)
+        return self._push_certificate_with_http_info(request)
 
-    def push_certificate_with_http_info(self, request):
-        all_params = ['certificate_id', 'push_certificate_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _push_certificate_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -373,14 +335,10 @@ class ScmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkscm.v3.ShowCertificateRequest`
         :rtype: :class:`huaweicloudsdkscm.v3.ShowCertificateResponse`
         """
-        return self.show_certificate_with_http_info(request)
+        return self._show_certificate_with_http_info(request)
 
-    def show_certificate_with_http_info(self, request):
-        all_params = ['certificate_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_certificate_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class HssAsyncClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(HssAsyncClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkhss.v5.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -54,14 +36,10 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.AddHostsGroupRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.AddHostsGroupResponse`
         """
-        return self.add_hosts_group_with_http_info(request)
+        return self._add_hosts_group_with_http_info(request)
 
-    def add_hosts_group_with_http_info(self, request):
-        all_params = ['region', 'add_hosts_group_request_body', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _add_hosts_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -119,14 +97,10 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.AssociatePolicyGroupRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.AssociatePolicyGroupResponse`
         """
-        return self.associate_policy_group_with_http_info(request)
+        return self._associate_policy_group_with_http_info(request)
 
-    def associate_policy_group_with_http_info(self, request):
-        all_params = ['region', 'associate_policy_group_request_body', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _associate_policy_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -184,14 +158,10 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.BatchCreateTagsRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.BatchCreateTagsResponse`
         """
-        return self.batch_create_tags_with_http_info(request)
+        return self._batch_create_tags_with_http_info(request)
 
-    def batch_create_tags_with_http_info(self, request):
-        all_params = ['resource_type', 'resource_id', 'batch_create_tags_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_create_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -249,14 +219,10 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ChangeEventRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ChangeEventResponse`
         """
-        return self.change_event_with_http_info(request)
+        return self._change_event_with_http_info(request)
 
-    def change_event_with_http_info(self, request):
-        all_params = ['region', 'change_event_request_body', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _change_event_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -314,14 +280,10 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ChangeHostsGroupRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ChangeHostsGroupResponse`
         """
-        return self.change_hosts_group_with_http_info(request)
+        return self._change_hosts_group_with_http_info(request)
 
-    def change_hosts_group_with_http_info(self, request):
-        all_params = ['region', 'change_hosts_group_request_body', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _change_hosts_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -379,14 +341,10 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ChangeVulStatusRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ChangeVulStatusResponse`
         """
-        return self.change_vul_status_with_http_info(request)
+        return self._change_vul_status_with_http_info(request)
 
-    def change_vul_status_with_http_info(self, request):
-        all_params = ['change_vul_status_request_body', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _change_vul_status_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -442,14 +400,10 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.DeleteHostsGroupRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.DeleteHostsGroupResponse`
         """
-        return self.delete_hosts_group_with_http_info(request)
+        return self._delete_hosts_group_with_http_info(request)
 
-    def delete_hosts_group_with_http_info(self, request):
-        all_params = ['region', 'group_id', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_hosts_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -507,14 +461,10 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.DeleteResourceInstanceTagRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.DeleteResourceInstanceTagResponse`
         """
-        return self.delete_resource_instance_tag_with_http_info(request)
+        return self._delete_resource_instance_tag_with_http_info(request)
 
-    def delete_resource_instance_tag_with_http_info(self, request):
-        all_params = ['resource_type', 'resource_id', 'key']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_resource_instance_tag_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -572,14 +522,10 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ListAlarmWhiteListRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ListAlarmWhiteListResponse`
         """
-        return self.list_alarm_white_list_with_http_info(request)
+        return self._list_alarm_white_list_with_http_info(request)
 
-    def list_alarm_white_list_with_http_info(self, request):
-        all_params = ['region', 'enterprise_project_id', 'hash', 'event_type', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_alarm_white_list_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -643,14 +589,10 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ListAppChangeHistoriesRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ListAppChangeHistoriesResponse`
         """
-        return self.list_app_change_histories_with_http_info(request)
+        return self._list_app_change_histories_with_http_info(request)
 
-    def list_app_change_histories_with_http_info(self, request):
-        all_params = ['host_id', 'host_ip', 'host_name', 'app_name', 'variation_type', 'enterprise_project_id', 'sort_key', 'sort_dir', 'limit', 'offset', 'start_time', 'end_time']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_app_change_histories_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -726,14 +668,10 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ListAppStatisticsRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ListAppStatisticsResponse`
         """
-        return self.list_app_statistics_with_http_info(request)
+        return self._list_app_statistics_with_http_info(request)
 
-    def list_app_statistics_with_http_info(self, request):
-        all_params = ['app_name', 'enterprise_project_id', 'limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_app_statistics_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -793,14 +731,10 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ListAppsRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ListAppsResponse`
         """
-        return self.list_apps_with_http_info(request)
+        return self._list_apps_with_http_info(request)
 
-    def list_apps_with_http_info(self, request):
-        all_params = ['host_id', 'host_name', 'app_name', 'host_ip', 'version', 'install_dir', 'enterprise_project_id', 'limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_apps_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -870,14 +804,10 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ListAutoLaunchChangeHistoriesRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ListAutoLaunchChangeHistoriesResponse`
         """
-        return self.list_auto_launch_change_histories_with_http_info(request)
+        return self._list_auto_launch_change_histories_with_http_info(request)
 
-    def list_auto_launch_change_histories_with_http_info(self, request):
-        all_params = ['host_id', 'host_ip', 'host_name', 'auto_launch_name', 'type', 'variation_type', 'enterprise_project_id', 'sort_key', 'sort_dir', 'limit', 'offset', 'start_time', 'end_time']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_auto_launch_change_histories_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -955,14 +885,10 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ListAutoLaunchStatisticsRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ListAutoLaunchStatisticsResponse`
         """
-        return self.list_auto_launch_statistics_with_http_info(request)
+        return self._list_auto_launch_statistics_with_http_info(request)
 
-    def list_auto_launch_statistics_with_http_info(self, request):
-        all_params = ['name', 'type', 'enterprise_project_id', 'limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_auto_launch_statistics_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1024,14 +950,10 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ListAutoLaunchsRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ListAutoLaunchsResponse`
         """
-        return self.list_auto_launchs_with_http_info(request)
+        return self._list_auto_launchs_with_http_info(request)
 
-    def list_auto_launchs_with_http_info(self, request):
-        all_params = ['host_id', 'host_name', 'name', 'host_ip', 'type', 'enterprise_project_id', 'limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_auto_launchs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1099,14 +1021,10 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ListHostGroupsRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ListHostGroupsResponse`
         """
-        return self.list_host_groups_with_http_info(request)
+        return self._list_host_groups_with_http_info(request)
 
-    def list_host_groups_with_http_info(self, request):
-        all_params = ['region', 'enterprise_project_id', 'offset', 'limit', 'group_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_host_groups_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1168,14 +1086,10 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ListHostProtectHistoryInfoRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ListHostProtectHistoryInfoResponse`
         """
-        return self.list_host_protect_history_info_with_http_info(request)
+        return self._list_host_protect_history_info_with_http_info(request)
 
-    def list_host_protect_history_info_with_http_info(self, request):
-        all_params = ['region', 'host_id', 'start_time', 'end_time', 'limit', 'offset', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_host_protect_history_info_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1241,14 +1155,10 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ListHostRaspProtectHistoryInfoRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ListHostRaspProtectHistoryInfoResponse`
         """
-        return self.list_host_rasp_protect_history_info_with_http_info(request)
+        return self._list_host_rasp_protect_history_info_with_http_info(request)
 
-    def list_host_rasp_protect_history_info_with_http_info(self, request):
-        all_params = ['region', 'host_id', 'start_time', 'end_time', 'limit', 'offset', 'enterprise_project_id', 'alarm_level', 'severity', 'protect_status']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_host_rasp_protect_history_info_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1320,14 +1230,10 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ListHostStatusRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ListHostStatusResponse`
         """
-        return self.list_host_status_with_http_info(request)
+        return self._list_host_status_with_http_info(request)
 
-    def list_host_status_with_http_info(self, request):
-        all_params = ['enterprise_project_id', 'version', 'agent_status', 'detect_result', 'host_name', 'host_id', 'host_status', 'os_type', 'private_ip', 'public_ip', 'ip_addr', 'protect_status', 'group_id', 'group_name', 'region', 'policy_group_id', 'policy_group_name', 'charging_mode', 'refresh', 'above_version', 'outside_host', 'asset_value', 'label', 'server_group', 'limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_host_status_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1431,14 +1337,10 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ListPasswordComplexityRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ListPasswordComplexityResponse`
         """
-        return self.list_password_complexity_with_http_info(request)
+        return self._list_password_complexity_with_http_info(request)
 
-    def list_password_complexity_with_http_info(self, request):
-        all_params = ['enterprise_project_id', 'host_name', 'host_ip', 'host_id', 'limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_password_complexity_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1502,14 +1404,10 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ListPolicyGroupRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ListPolicyGroupResponse`
         """
-        return self.list_policy_group_with_http_info(request)
+        return self._list_policy_group_with_http_info(request)
 
-    def list_policy_group_with_http_info(self, request):
-        all_params = ['region', 'enterprise_project_id', 'group_name', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_policy_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1571,14 +1469,10 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ListPortStatisticsRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ListPortStatisticsResponse`
         """
-        return self.list_port_statistics_with_http_info(request)
+        return self._list_port_statistics_with_http_info(request)
 
-    def list_port_statistics_with_http_info(self, request):
-        all_params = ['port', 'type', 'enterprise_project_id', 'limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_port_statistics_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1640,14 +1534,10 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ListPortsRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ListPortsResponse`
         """
-        return self.list_ports_with_http_info(request)
+        return self._list_ports_with_http_info(request)
 
-    def list_ports_with_http_info(self, request):
-        all_params = ['host_id', 'host_name', 'host_ip', 'port', 'type', 'enterprise_project_id', 'limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_ports_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1715,14 +1605,10 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ListProcessStatisticsRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ListProcessStatisticsResponse`
         """
-        return self.list_process_statistics_with_http_info(request)
+        return self._list_process_statistics_with_http_info(request)
 
-    def list_process_statistics_with_http_info(self, request):
-        all_params = ['path', 'enterprise_project_id', 'limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_process_statistics_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1782,14 +1668,10 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ListProtectionPolicyRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ListProtectionPolicyResponse`
         """
-        return self.list_protection_policy_with_http_info(request)
+        return self._list_protection_policy_with_http_info(request)
 
-    def list_protection_policy_with_http_info(self, request):
-        all_params = ['region', 'enterprise_project_id', 'offset', 'limit', 'policy_name', 'operating_system']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_protection_policy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1853,14 +1735,10 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ListProtectionServerRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ListProtectionServerResponse`
         """
-        return self.list_protection_server_with_http_info(request)
+        return self._list_protection_server_with_http_info(request)
 
-    def list_protection_server_with_http_info(self, request):
-        all_params = ['region', 'enterprise_project_id', 'offset', 'limit', 'host_name', 'os_type', 'host_ip', 'host_status', 'last_days']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_protection_server_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1930,14 +1808,10 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ListQuotasDetailRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ListQuotasDetailResponse`
         """
-        return self.list_quotas_detail_with_http_info(request)
+        return self._list_quotas_detail_with_http_info(request)
 
-    def list_quotas_detail_with_http_info(self, request):
-        all_params = ['region', 'enterprise_project_id', 'version', 'category', 'quota_status', 'used_status', 'host_name', 'resource_id', 'charging_mode', 'limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_quotas_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2011,14 +1885,10 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ListRiskConfigCheckRulesRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ListRiskConfigCheckRulesResponse`
         """
-        return self.list_risk_config_check_rules_with_http_info(request)
+        return self._list_risk_config_check_rules_with_http_info(request)
 
-    def list_risk_config_check_rules_with_http_info(self, request):
-        all_params = ['check_name', 'standard', 'enterprise_project_id', 'result_type', 'check_rule_name', 'severity', 'host_id', 'limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_risk_config_check_rules_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2088,14 +1958,10 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ListRiskConfigHostsRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ListRiskConfigHostsResponse`
         """
-        return self.list_risk_config_hosts_with_http_info(request)
+        return self._list_risk_config_hosts_with_http_info(request)
 
-    def list_risk_config_hosts_with_http_info(self, request):
-        all_params = ['check_name', 'standard', 'enterprise_project_id', 'host_name', 'host_ip', 'limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_risk_config_hosts_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2161,14 +2027,10 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ListRiskConfigsRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ListRiskConfigsResponse`
         """
-        return self.list_risk_configs_with_http_info(request)
+        return self._list_risk_configs_with_http_info(request)
 
-    def list_risk_configs_with_http_info(self, request):
-        all_params = ['enterprise_project_id', 'check_name', 'severity', 'standard', 'host_id', 'limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_risk_configs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2234,14 +2096,10 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ListSecurityEventsRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ListSecurityEventsResponse`
         """
-        return self.list_security_events_with_http_info(request)
+        return self._list_security_events_with_http_info(request)
 
-    def list_security_events_with_http_info(self, request):
-        all_params = ['region', 'category', 'enterprise_project_id', 'last_days', 'host_name', 'host_id', 'private_ip', 'container_name', 'offset', 'limit', 'event_types', 'handle_status', 'severity', 'begin_time', 'end_time']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_security_events_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2324,14 +2182,10 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ListUserChangeHistoriesRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ListUserChangeHistoriesResponse`
         """
-        return self.list_user_change_histories_with_http_info(request)
+        return self._list_user_change_histories_with_http_info(request)
 
-    def list_user_change_histories_with_http_info(self, request):
-        all_params = ['user_name', 'host_id', 'root_permission', 'host_name', 'private_ip', 'change_type', 'limit', 'offset', 'enterprise_project_id', 'start_time', 'end_time']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_user_change_histories_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2405,14 +2259,10 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ListUserStatisticsRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ListUserStatisticsResponse`
         """
-        return self.list_user_statistics_with_http_info(request)
+        return self._list_user_statistics_with_http_info(request)
 
-    def list_user_statistics_with_http_info(self, request):
-        all_params = ['user_name', 'enterprise_project_id', 'limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_user_statistics_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2472,14 +2322,10 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ListUsersRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ListUsersResponse`
         """
-        return self.list_users_with_http_info(request)
+        return self._list_users_with_http_info(request)
 
-    def list_users_with_http_info(self, request):
-        all_params = ['host_id', 'user_name', 'host_name', 'private_ip', 'login_permission', 'root_permission', 'user_group', 'enterprise_project_id', 'limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_users_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2551,14 +2397,10 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ListVulHostsRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ListVulHostsResponse`
         """
-        return self.list_vul_hosts_with_http_info(request)
+        return self._list_vul_hosts_with_http_info(request)
 
-    def list_vul_hosts_with_http_info(self, request):
-        all_params = ['vul_id', 'type', 'enterprise_project_id', 'host_name', 'host_ip', 'status', 'limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_vul_hosts_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2626,14 +2468,10 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ListVulnerabilitiesRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ListVulnerabilitiesResponse`
         """
-        return self.list_vulnerabilities_with_http_info(request)
+        return self._list_vulnerabilities_with_http_info(request)
 
-    def list_vulnerabilities_with_http_info(self, request):
-        all_params = ['enterprise_project_id', 'type', 'vul_id', 'vul_name', 'limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_vulnerabilities_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2697,14 +2535,10 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ListWeakPasswordUsersRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ListWeakPasswordUsersResponse`
         """
-        return self.list_weak_password_users_with_http_info(request)
+        return self._list_weak_password_users_with_http_info(request)
 
-    def list_weak_password_users_with_http_info(self, request):
-        all_params = ['enterprise_project_id', 'host_name', 'host_ip', 'user_name', 'host_id', 'limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_weak_password_users_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2770,14 +2604,10 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ListWtpProtectHostRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ListWtpProtectHostResponse`
         """
-        return self.list_wtp_protect_host_with_http_info(request)
+        return self._list_wtp_protect_host_with_http_info(request)
 
-    def list_wtp_protect_host_with_http_info(self, request):
-        all_params = ['region', 'enterprise_project_id', 'host_name', 'host_id', 'public_ip', 'private_ip', 'group_name', 'os_type', 'protect_status', 'agent_status', 'limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_wtp_protect_host_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2853,14 +2683,10 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.SetRaspSwitchRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.SetRaspSwitchResponse`
         """
-        return self.set_rasp_switch_with_http_info(request)
+        return self._set_rasp_switch_with_http_info(request)
 
-    def set_rasp_switch_with_http_info(self, request):
-        all_params = ['region', 'set_rasp_switch_request_body', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _set_rasp_switch_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2918,14 +2744,10 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.SetWtpProtectionStatusInfoRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.SetWtpProtectionStatusInfoResponse`
         """
-        return self.set_wtp_protection_status_info_with_http_info(request)
+        return self._set_wtp_protection_status_info_with_http_info(request)
 
-    def set_wtp_protection_status_info_with_http_info(self, request):
-        all_params = ['region', 'set_wtp_protection_status_info_request_body', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _set_wtp_protection_status_info_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2983,14 +2805,10 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ShowAssetStatisticRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ShowAssetStatisticResponse`
         """
-        return self.show_asset_statistic_with_http_info(request)
+        return self._show_asset_statistic_with_http_info(request)
 
-    def show_asset_statistic_with_http_info(self, request):
-        all_params = ['enterprise_project_id', 'host_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_asset_statistic_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3046,14 +2864,10 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ShowBackupPolicyInfoRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ShowBackupPolicyInfoResponse`
         """
-        return self.show_backup_policy_info_with_http_info(request)
+        return self._show_backup_policy_info_with_http_info(request)
 
-    def show_backup_policy_info_with_http_info(self, request):
-        all_params = ['region', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_backup_policy_info_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3109,14 +2923,10 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ShowCheckRuleDetailRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ShowCheckRuleDetailResponse`
         """
-        return self.show_check_rule_detail_with_http_info(request)
+        return self._show_check_rule_detail_with_http_info(request)
 
-    def show_check_rule_detail_with_http_info(self, request):
-        all_params = ['check_name', 'check_type', 'check_rule_id', 'standard', 'enterprise_project_id', 'host_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_check_rule_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3180,14 +2990,10 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ShowResourceQuotasRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ShowResourceQuotasResponse`
         """
-        return self.show_resource_quotas_with_http_info(request)
+        return self._show_resource_quotas_with_http_info(request)
 
-    def show_resource_quotas_with_http_info(self, request):
-        all_params = ['region', 'enterprise_project_id', 'version', 'charging_mode']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_resource_quotas_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3247,14 +3053,10 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ShowRiskConfigDetailRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ShowRiskConfigDetailResponse`
         """
-        return self.show_risk_config_detail_with_http_info(request)
+        return self._show_risk_config_detail_with_http_info(request)
 
-    def show_risk_config_detail_with_http_info(self, request):
-        all_params = ['check_name', 'standard', 'enterprise_project_id', 'host_id', 'limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_risk_config_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3318,14 +3120,10 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.StartProtectionRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.StartProtectionResponse`
         """
-        return self.start_protection_with_http_info(request)
+        return self._start_protection_with_http_info(request)
 
-    def start_protection_with_http_info(self, request):
-        all_params = ['region', 'start_protection_request_body', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _start_protection_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3383,14 +3181,10 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.StopProtectionRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.StopProtectionResponse`
         """
-        return self.stop_protection_with_http_info(request)
+        return self._stop_protection_with_http_info(request)
 
-    def stop_protection_with_http_info(self, request):
-        all_params = ['region', 'stop_protection_request_body', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _stop_protection_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3448,14 +3242,10 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.SwitchHostsProtectStatusRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.SwitchHostsProtectStatusResponse`
         """
-        return self.switch_hosts_protect_status_with_http_info(request)
+        return self._switch_hosts_protect_status_with_http_info(request)
 
-    def switch_hosts_protect_status_with_http_info(self, request):
-        all_params = ['region', 'switch_hosts_protect_status_request_body', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _switch_hosts_protect_status_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3513,14 +3303,10 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.UpdateBackupPolicyInfoRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.UpdateBackupPolicyInfoResponse`
         """
-        return self.update_backup_policy_info_with_http_info(request)
+        return self._update_backup_policy_info_with_http_info(request)
 
-    def update_backup_policy_info_with_http_info(self, request):
-        all_params = ['region', 'update_backup_policy_info_request_body', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_backup_policy_info_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3578,14 +3364,10 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.UpdateProtectionPolicyRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.UpdateProtectionPolicyResponse`
         """
-        return self.update_protection_policy_with_http_info(request)
+        return self._update_protection_policy_with_http_info(request)
 
-    def update_protection_policy_with_http_info(self, request):
-        all_params = ['region', 'update_protection_policy_request_body', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_protection_policy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

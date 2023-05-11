@@ -41,20 +41,28 @@ from huaweicloudsdkcore.http.formdata import FormFile
 from huaweicloudsdkcore.http.http_client import HttpClient
 from huaweicloudsdkcore.http.http_config import HttpConfig
 from huaweicloudsdkcore.http.http_handler import HttpHandler
-from huaweicloudsdkcore.http.primitive_types import native_types_mapping
-from huaweicloudsdkcore.http.primitive_types import primitive_types
+from huaweicloudsdkcore.http.primitive_types import NATIVE_TYPES_MAPPING
+from huaweicloudsdkcore.http.primitive_types import PRIMITIVE_TYPES
 from huaweicloudsdkcore.sdk_request import SdkRequest
-from huaweicloudsdkcore.sdk_response import FutureSdkResponse
+from huaweicloudsdkcore.sdk_response import FutureSdkResponse, SdkResponse
 from huaweicloudsdkcore.sdk_stream_response import SdkStreamResponse
 from huaweicloudsdkcore.utils import http_utils, core_utils
 from huaweicloudsdkcore.utils.xml_utils import XmlTransfer
 
+try:
+    from typing import TypeVar, Generic
+except ImportError:
+    from typing_extensions import TypeVar, Generic
 
-class ClientBuilder(object):
+T = TypeVar("T")
+
+
+class ClientBuilder(Generic[T]):
     _HTTP_SCHEME = "http"
     _HTTPS_SCHEME = "https"
 
     def __init__(self, client_type, credential_type=BasicCredentials.__name__):
+        # type: (T, str) -> None
         self._client_type = client_type
         self._credential_type = credential_type.split(',')
         self._derived_auth_service_name = None
@@ -135,6 +143,7 @@ class ClientBuilder(object):
         return self
 
     def build(self):
+        # type: () -> T
         if self._config is None:
             self._config = HttpConfig.get_default_config()
 
@@ -188,8 +197,6 @@ class Client(object):
     _HEADERS = "headers"
 
     def __init__(self):
-        self.preset_headers = {}
-
         self._agent = {"User-Agent": "huaweicloud-usdk-python/3.0"}
         self._logger = self._init_logger()
 
@@ -247,7 +254,8 @@ class Client(object):
     def init_http_client(self):
         if not self.exception_handler or not isinstance(self.exception_handler, exception_handler.ExceptionHandler):
             self.exception_handler = exception_handler.DefaultExceptionHandler()
-        self._http_client = HttpClient(self._config, self._http_handler, self.exception_handler, self._logger)
+        if not self._http_client:
+            self._http_client = HttpClient(self._config, self._http_handler, self.exception_handler, self._logger)
 
     def add_stream_logger(self, stream, log_level, format_string):
         self._logger.setLevel(log_level)
@@ -279,8 +287,7 @@ class Client(object):
         return self._http_client
 
     def _parse_header_params(self, collection_formats, header_params):
-        header_params = self.post_process_params(header_params) or {}
-        header_params.update(self.preset_headers)
+        header_params = self._post_process_params(header_params) or {}
         if header_params:
             header_params = http_utils.sanitize_for_serialization(header_params)
             header_params = dict(http_utils.parameters_to_tuples(header_params, collection_formats))
@@ -289,7 +296,7 @@ class Client(object):
         return header_params
 
     def _parse_path_params(self, collection_formats, path_params, resource_path, update_path_params):
-        path_params = self.post_process_params(path_params) or {}
+        path_params = self._post_process_params(path_params) or {}
         if path_params:
             path_params = http_utils.sanitize_for_serialization(path_params)
             path_params = http_utils.parameters_to_tuples(path_params, collection_formats)
@@ -303,14 +310,14 @@ class Client(object):
         return resource_path
 
     def _parse_query_params(self, collection_formats, query_params):
-        query_params = self.post_process_params(query_params) or []
+        query_params = self._post_process_params(query_params) or []
         if query_params:
             query_params = http_utils.sanitize_for_serialization(query_params)
             query_params = http_utils.parameters_to_tuples(query_params, collection_formats)
         return query_params
 
     def _parse_post_params(self, collection_formats, post_params):
-        post_params = self.post_process_params(post_params) if post_params else {}
+        post_params = self._post_process_params(post_params) if post_params else {}
         if post_params:
             post_params = http_utils.sanitize_for_serialization(post_params)
             post_params = http_utils.parameters_to_tuples(post_params, collection_formats)
@@ -367,7 +374,7 @@ class Client(object):
         return False
 
     @classmethod
-    def post_process_params(cls, params):
+    def _post_process_params(cls, params):
         if type(params) == dict:
             for key in list(params.keys()):
                 if params[key] is None:
@@ -456,15 +463,16 @@ class Client(object):
         return future_response
 
     def sync_response_handler(self, response, response_type, response_headers):
-        return_data = self.deserialize(response, response_type)
-        self.set_response_status_code(return_data, response)
-        if response_headers is not None and len(response_headers) > 0:
-            self.set_response_headers(return_data, response, response_headers)
+        concrete_response = self.deserialize(response, response_type)
+        if isinstance(concrete_response, SdkResponse):
+            concrete_response.status_code = response.status_code
+        if response_headers:
+            self._set_response_headers(concrete_response, response, response_headers)
 
-        if not issubclass(return_data.__class__, SdkStreamResponse):
-            return_data.raw_content = response.content
+        if not isinstance(concrete_response, SdkStreamResponse):
+            concrete_response.raw_content = response.content
 
-        return return_data
+        return concrete_response
 
     def async_response_hook_factory(self, response_type, response_headers):
         def response_hook(resp, *args, **kwargs):
@@ -473,20 +481,17 @@ class Client(object):
         return response_hook
 
     @classmethod
-    def set_response_status_code(cls, return_data, response):
-        setattr(return_data, "status_code", response.status_code)
-
-    @classmethod
-    def set_response_headers(cls, return_data, response, response_headers):
-        if not hasattr(return_data, "attribute_map"):
+    def _set_response_headers(cls, concrete_response, response, response_headers):
+        if not hasattr(concrete_response, "attribute_map"):
             return
 
-        for attr in return_data.attribute_map:
-            if getattr(return_data, attr) is not None:
+        attribute_map = getattr(concrete_response, "attribute_map")
+        for attr in attribute_map:
+            if getattr(concrete_response, attr) is not None:
                 continue
-            key_in_response_headers = return_data.attribute_map[attr]
+            key_in_response_headers = attribute_map[attr]
             if key_in_response_headers in response_headers and key_in_response_headers in response.headers:
-                setattr(return_data, attr, response.headers[key_in_response_headers])
+                setattr(concrete_response, attr, response.headers[key_in_response_headers])
 
     def deserialize(self, response, response_type):
         if type(response_type) == str and hasattr(self.model_package, response_type):
@@ -520,14 +525,14 @@ class Client(object):
                 return {k: self._deserialize(v, sub_kls)
                         for k, v in six.iteritems(data)}
 
-            if klass in native_types_mapping:
-                klass = native_types_mapping[klass]
+            if klass in NATIVE_TYPES_MAPPING:
+                klass = NATIVE_TYPES_MAPPING[klass]
             elif klass == FormFile.TYPE:
                 return FormFile(open(data, "rb"))
             else:
                 klass = getattr(self.model_package, klass)
 
-        if klass in primitive_types:
+        if klass in PRIMITIVE_TYPES:
             return self._deserialize_primitive(data, klass)
         elif klass == decimal.Decimal:
             return data
@@ -585,20 +590,28 @@ class Client(object):
                 return getattr(klass, ("_%s" % data).replace('.', '_'))
             return klass()
 
-        kwargs = {}
-        if klass.openapi_types is not None:
-            for attr, attr_type in six.iteritems(klass.openapi_types):
-                if data is not None and isinstance(data, (list, dict)):
-                    if klass.attribute_map[attr] == "body":
-                        kwargs[attr] = self._deserialize(data, attr_type)
-                    if klass.attribute_map[attr] in data:
-                        value = data[klass.attribute_map[attr]]
-                        kwargs[attr] = self._deserialize(value, attr_type)
-
-        instance = klass(**kwargs)
+        instance = klass(**self._extract_kwargs(data, klass))
 
         if hasattr(instance, 'get_real_child_model'):
             klass_name = instance.get_real_child_model(data)
             if klass_name:
                 instance = self._deserialize(data, klass_name)
         return instance
+
+    def _extract_kwargs(self, data, klass):
+        kwargs = {}
+        if not klass.openapi_types or not data:
+            return kwargs
+
+        for attr, attr_type in six.iteritems(klass.openapi_types):
+            if isinstance(data, (list, dict)):
+                if klass.attribute_map[attr] == "body":
+                    kwargs[attr] = self._deserialize(data, attr_type)
+                if klass.attribute_map[attr] in data:
+                    value = data[klass.attribute_map[attr]]
+                    kwargs[attr] = self._deserialize(value, attr_type)
+            elif isinstance(data, six.text_type):
+                if klass.attribute_map[attr] == "body":
+                    kwargs[attr] = self._deserialize(data, attr_type)
+
+        return kwargs

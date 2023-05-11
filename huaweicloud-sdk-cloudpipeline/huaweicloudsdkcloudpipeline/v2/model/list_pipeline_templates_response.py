@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import re
 import six
-
 
 from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
@@ -20,515 +18,134 @@ class ListPipelineTemplatesResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'id': 'str',
-        'name': 'str',
-        'icon': 'str',
-        'manifest_version': 'str',
-        'language': 'str',
-        'description': 'str',
-        'is_system': 'bool',
-        'region': 'str',
-        'domain_id': 'str',
-        'creator_id': 'str',
-        'creator_name': 'str',
-        'updater_id': 'str',
-        'create_time': 'int',
-        'update_time': 'int',
-        'is_collect': 'bool',
-        'is_show_source': 'str',
-        'stages': 'list[PipelineTemplateSimpleVOStages]'
+        'offset': 'int',
+        'limit': 'int',
+        'total': 'int',
+        'templates': 'list[PipelineTemplateSimpleVO]'
     }
 
     attribute_map = {
-        'id': 'id',
-        'name': 'name',
-        'icon': 'icon',
-        'manifest_version': 'manifest_version',
-        'language': 'language',
-        'description': 'description',
-        'is_system': 'is_system',
-        'region': 'region',
-        'domain_id': 'domain_id',
-        'creator_id': 'creator_id',
-        'creator_name': 'creator_name',
-        'updater_id': 'updater_id',
-        'create_time': 'create_time',
-        'update_time': 'update_time',
-        'is_collect': 'is_collect',
-        'is_show_source': 'is_show_source',
-        'stages': 'stages'
+        'offset': 'offset',
+        'limit': 'limit',
+        'total': 'total',
+        'templates': 'templates'
     }
 
-    def __init__(self, id=None, name=None, icon=None, manifest_version=None, language=None, description=None, is_system=None, region=None, domain_id=None, creator_id=None, creator_name=None, updater_id=None, create_time=None, update_time=None, is_collect=None, is_show_source=None, stages=None):
+    def __init__(self, offset=None, limit=None, total=None, templates=None):
         """ListPipelineTemplatesResponse
 
         The model defined in huaweicloud sdk
 
-        :param id: 模板ID
-        :type id: str
-        :param name: 模板名称
-        :type name: str
-        :param icon: 模板图标
-        :type icon: str
-        :param manifest_version: 流水线结构定义版本，新版默认为3.0
-        :type manifest_version: str
-        :param language: 模板语言
-        :type language: str
-        :param description: 模板描述
-        :type description: str
-        :param is_system: 是否系统模板
-        :type is_system: bool
-        :param region: 模板局点
-        :type region: str
-        :param domain_id: 模板所属租户ID
-        :type domain_id: str
-        :param creator_id: 模板创建人ID
-        :type creator_id: str
-        :param creator_name: 模板创建人名称
-        :type creator_name: str
-        :param updater_id: 模板更新人ID
-        :type updater_id: str
-        :param create_time: 创建时间
-        :type create_time: int
-        :param update_time: 更新时间
-        :type update_time: int
-        :param is_collect: 是否收藏
-        :type is_collect: bool
-        :param is_show_source: 是否展示流水线源
-        :type is_show_source: str
-        :param stages: 模板编排stages
-        :type stages: list[:class:`huaweicloudsdkcloudpipeline.v2.PipelineTemplateSimpleVOStages`]
+        :param offset: 起始偏移
+        :type offset: int
+        :param limit: 每页大小
+        :type limit: int
+        :param total: 总数
+        :type total: int
+        :param templates: 
+        :type templates: list[:class:`huaweicloudsdkcloudpipeline.v2.PipelineTemplateSimpleVO`]
         """
         
         super(ListPipelineTemplatesResponse, self).__init__()
 
-        self._id = None
-        self._name = None
-        self._icon = None
-        self._manifest_version = None
-        self._language = None
-        self._description = None
-        self._is_system = None
-        self._region = None
-        self._domain_id = None
-        self._creator_id = None
-        self._creator_name = None
-        self._updater_id = None
-        self._create_time = None
-        self._update_time = None
-        self._is_collect = None
-        self._is_show_source = None
-        self._stages = None
+        self._offset = None
+        self._limit = None
+        self._total = None
+        self._templates = None
         self.discriminator = None
 
-        if id is not None:
-            self.id = id
-        if name is not None:
-            self.name = name
-        if icon is not None:
-            self.icon = icon
-        if manifest_version is not None:
-            self.manifest_version = manifest_version
-        if language is not None:
-            self.language = language
-        if description is not None:
-            self.description = description
-        if is_system is not None:
-            self.is_system = is_system
-        if region is not None:
-            self.region = region
-        if domain_id is not None:
-            self.domain_id = domain_id
-        if creator_id is not None:
-            self.creator_id = creator_id
-        if creator_name is not None:
-            self.creator_name = creator_name
-        if updater_id is not None:
-            self.updater_id = updater_id
-        if create_time is not None:
-            self.create_time = create_time
-        if update_time is not None:
-            self.update_time = update_time
-        if is_collect is not None:
-            self.is_collect = is_collect
-        if is_show_source is not None:
-            self.is_show_source = is_show_source
-        if stages is not None:
-            self.stages = stages
+        if offset is not None:
+            self.offset = offset
+        if limit is not None:
+            self.limit = limit
+        if total is not None:
+            self.total = total
+        if templates is not None:
+            self.templates = templates
 
     @property
-    def id(self):
-        """Gets the id of this ListPipelineTemplatesResponse.
+    def offset(self):
+        """Gets the offset of this ListPipelineTemplatesResponse.
 
-        模板ID
+        起始偏移
 
-        :return: The id of this ListPipelineTemplatesResponse.
-        :rtype: str
-        """
-        return self._id
-
-    @id.setter
-    def id(self, id):
-        """Sets the id of this ListPipelineTemplatesResponse.
-
-        模板ID
-
-        :param id: The id of this ListPipelineTemplatesResponse.
-        :type id: str
-        """
-        self._id = id
-
-    @property
-    def name(self):
-        """Gets the name of this ListPipelineTemplatesResponse.
-
-        模板名称
-
-        :return: The name of this ListPipelineTemplatesResponse.
-        :rtype: str
-        """
-        return self._name
-
-    @name.setter
-    def name(self, name):
-        """Sets the name of this ListPipelineTemplatesResponse.
-
-        模板名称
-
-        :param name: The name of this ListPipelineTemplatesResponse.
-        :type name: str
-        """
-        self._name = name
-
-    @property
-    def icon(self):
-        """Gets the icon of this ListPipelineTemplatesResponse.
-
-        模板图标
-
-        :return: The icon of this ListPipelineTemplatesResponse.
-        :rtype: str
-        """
-        return self._icon
-
-    @icon.setter
-    def icon(self, icon):
-        """Sets the icon of this ListPipelineTemplatesResponse.
-
-        模板图标
-
-        :param icon: The icon of this ListPipelineTemplatesResponse.
-        :type icon: str
-        """
-        self._icon = icon
-
-    @property
-    def manifest_version(self):
-        """Gets the manifest_version of this ListPipelineTemplatesResponse.
-
-        流水线结构定义版本，新版默认为3.0
-
-        :return: The manifest_version of this ListPipelineTemplatesResponse.
-        :rtype: str
-        """
-        return self._manifest_version
-
-    @manifest_version.setter
-    def manifest_version(self, manifest_version):
-        """Sets the manifest_version of this ListPipelineTemplatesResponse.
-
-        流水线结构定义版本，新版默认为3.0
-
-        :param manifest_version: The manifest_version of this ListPipelineTemplatesResponse.
-        :type manifest_version: str
-        """
-        self._manifest_version = manifest_version
-
-    @property
-    def language(self):
-        """Gets the language of this ListPipelineTemplatesResponse.
-
-        模板语言
-
-        :return: The language of this ListPipelineTemplatesResponse.
-        :rtype: str
-        """
-        return self._language
-
-    @language.setter
-    def language(self, language):
-        """Sets the language of this ListPipelineTemplatesResponse.
-
-        模板语言
-
-        :param language: The language of this ListPipelineTemplatesResponse.
-        :type language: str
-        """
-        self._language = language
-
-    @property
-    def description(self):
-        """Gets the description of this ListPipelineTemplatesResponse.
-
-        模板描述
-
-        :return: The description of this ListPipelineTemplatesResponse.
-        :rtype: str
-        """
-        return self._description
-
-    @description.setter
-    def description(self, description):
-        """Sets the description of this ListPipelineTemplatesResponse.
-
-        模板描述
-
-        :param description: The description of this ListPipelineTemplatesResponse.
-        :type description: str
-        """
-        self._description = description
-
-    @property
-    def is_system(self):
-        """Gets the is_system of this ListPipelineTemplatesResponse.
-
-        是否系统模板
-
-        :return: The is_system of this ListPipelineTemplatesResponse.
-        :rtype: bool
-        """
-        return self._is_system
-
-    @is_system.setter
-    def is_system(self, is_system):
-        """Sets the is_system of this ListPipelineTemplatesResponse.
-
-        是否系统模板
-
-        :param is_system: The is_system of this ListPipelineTemplatesResponse.
-        :type is_system: bool
-        """
-        self._is_system = is_system
-
-    @property
-    def region(self):
-        """Gets the region of this ListPipelineTemplatesResponse.
-
-        模板局点
-
-        :return: The region of this ListPipelineTemplatesResponse.
-        :rtype: str
-        """
-        return self._region
-
-    @region.setter
-    def region(self, region):
-        """Sets the region of this ListPipelineTemplatesResponse.
-
-        模板局点
-
-        :param region: The region of this ListPipelineTemplatesResponse.
-        :type region: str
-        """
-        self._region = region
-
-    @property
-    def domain_id(self):
-        """Gets the domain_id of this ListPipelineTemplatesResponse.
-
-        模板所属租户ID
-
-        :return: The domain_id of this ListPipelineTemplatesResponse.
-        :rtype: str
-        """
-        return self._domain_id
-
-    @domain_id.setter
-    def domain_id(self, domain_id):
-        """Sets the domain_id of this ListPipelineTemplatesResponse.
-
-        模板所属租户ID
-
-        :param domain_id: The domain_id of this ListPipelineTemplatesResponse.
-        :type domain_id: str
-        """
-        self._domain_id = domain_id
-
-    @property
-    def creator_id(self):
-        """Gets the creator_id of this ListPipelineTemplatesResponse.
-
-        模板创建人ID
-
-        :return: The creator_id of this ListPipelineTemplatesResponse.
-        :rtype: str
-        """
-        return self._creator_id
-
-    @creator_id.setter
-    def creator_id(self, creator_id):
-        """Sets the creator_id of this ListPipelineTemplatesResponse.
-
-        模板创建人ID
-
-        :param creator_id: The creator_id of this ListPipelineTemplatesResponse.
-        :type creator_id: str
-        """
-        self._creator_id = creator_id
-
-    @property
-    def creator_name(self):
-        """Gets the creator_name of this ListPipelineTemplatesResponse.
-
-        模板创建人名称
-
-        :return: The creator_name of this ListPipelineTemplatesResponse.
-        :rtype: str
-        """
-        return self._creator_name
-
-    @creator_name.setter
-    def creator_name(self, creator_name):
-        """Sets the creator_name of this ListPipelineTemplatesResponse.
-
-        模板创建人名称
-
-        :param creator_name: The creator_name of this ListPipelineTemplatesResponse.
-        :type creator_name: str
-        """
-        self._creator_name = creator_name
-
-    @property
-    def updater_id(self):
-        """Gets the updater_id of this ListPipelineTemplatesResponse.
-
-        模板更新人ID
-
-        :return: The updater_id of this ListPipelineTemplatesResponse.
-        :rtype: str
-        """
-        return self._updater_id
-
-    @updater_id.setter
-    def updater_id(self, updater_id):
-        """Sets the updater_id of this ListPipelineTemplatesResponse.
-
-        模板更新人ID
-
-        :param updater_id: The updater_id of this ListPipelineTemplatesResponse.
-        :type updater_id: str
-        """
-        self._updater_id = updater_id
-
-    @property
-    def create_time(self):
-        """Gets the create_time of this ListPipelineTemplatesResponse.
-
-        创建时间
-
-        :return: The create_time of this ListPipelineTemplatesResponse.
+        :return: The offset of this ListPipelineTemplatesResponse.
         :rtype: int
         """
-        return self._create_time
+        return self._offset
 
-    @create_time.setter
-    def create_time(self, create_time):
-        """Sets the create_time of this ListPipelineTemplatesResponse.
+    @offset.setter
+    def offset(self, offset):
+        """Sets the offset of this ListPipelineTemplatesResponse.
 
-        创建时间
+        起始偏移
 
-        :param create_time: The create_time of this ListPipelineTemplatesResponse.
-        :type create_time: int
+        :param offset: The offset of this ListPipelineTemplatesResponse.
+        :type offset: int
         """
-        self._create_time = create_time
+        self._offset = offset
 
     @property
-    def update_time(self):
-        """Gets the update_time of this ListPipelineTemplatesResponse.
+    def limit(self):
+        """Gets the limit of this ListPipelineTemplatesResponse.
 
-        更新时间
+        每页大小
 
-        :return: The update_time of this ListPipelineTemplatesResponse.
+        :return: The limit of this ListPipelineTemplatesResponse.
         :rtype: int
         """
-        return self._update_time
+        return self._limit
 
-    @update_time.setter
-    def update_time(self, update_time):
-        """Sets the update_time of this ListPipelineTemplatesResponse.
+    @limit.setter
+    def limit(self, limit):
+        """Sets the limit of this ListPipelineTemplatesResponse.
 
-        更新时间
+        每页大小
 
-        :param update_time: The update_time of this ListPipelineTemplatesResponse.
-        :type update_time: int
+        :param limit: The limit of this ListPipelineTemplatesResponse.
+        :type limit: int
         """
-        self._update_time = update_time
+        self._limit = limit
 
     @property
-    def is_collect(self):
-        """Gets the is_collect of this ListPipelineTemplatesResponse.
+    def total(self):
+        """Gets the total of this ListPipelineTemplatesResponse.
 
-        是否收藏
+        总数
 
-        :return: The is_collect of this ListPipelineTemplatesResponse.
-        :rtype: bool
+        :return: The total of this ListPipelineTemplatesResponse.
+        :rtype: int
         """
-        return self._is_collect
+        return self._total
 
-    @is_collect.setter
-    def is_collect(self, is_collect):
-        """Sets the is_collect of this ListPipelineTemplatesResponse.
+    @total.setter
+    def total(self, total):
+        """Sets the total of this ListPipelineTemplatesResponse.
 
-        是否收藏
+        总数
 
-        :param is_collect: The is_collect of this ListPipelineTemplatesResponse.
-        :type is_collect: bool
+        :param total: The total of this ListPipelineTemplatesResponse.
+        :type total: int
         """
-        self._is_collect = is_collect
+        self._total = total
 
     @property
-    def is_show_source(self):
-        """Gets the is_show_source of this ListPipelineTemplatesResponse.
+    def templates(self):
+        """Gets the templates of this ListPipelineTemplatesResponse.
 
-        是否展示流水线源
-
-        :return: The is_show_source of this ListPipelineTemplatesResponse.
-        :rtype: str
+        :return: The templates of this ListPipelineTemplatesResponse.
+        :rtype: list[:class:`huaweicloudsdkcloudpipeline.v2.PipelineTemplateSimpleVO`]
         """
-        return self._is_show_source
+        return self._templates
 
-    @is_show_source.setter
-    def is_show_source(self, is_show_source):
-        """Sets the is_show_source of this ListPipelineTemplatesResponse.
+    @templates.setter
+    def templates(self, templates):
+        """Sets the templates of this ListPipelineTemplatesResponse.
 
-        是否展示流水线源
-
-        :param is_show_source: The is_show_source of this ListPipelineTemplatesResponse.
-        :type is_show_source: str
+        :param templates: The templates of this ListPipelineTemplatesResponse.
+        :type templates: list[:class:`huaweicloudsdkcloudpipeline.v2.PipelineTemplateSimpleVO`]
         """
-        self._is_show_source = is_show_source
-
-    @property
-    def stages(self):
-        """Gets the stages of this ListPipelineTemplatesResponse.
-
-        模板编排stages
-
-        :return: The stages of this ListPipelineTemplatesResponse.
-        :rtype: list[:class:`huaweicloudsdkcloudpipeline.v2.PipelineTemplateSimpleVOStages`]
-        """
-        return self._stages
-
-    @stages.setter
-    def stages(self, stages):
-        """Sets the stages of this ListPipelineTemplatesResponse.
-
-        模板编排stages
-
-        :param stages: The stages of this ListPipelineTemplatesResponse.
-        :type stages: list[:class:`huaweicloudsdkcloudpipeline.v2.PipelineTemplateSimpleVOStages`]
-        """
-        self._stages = stages
+        self._templates = templates
 
     def to_dict(self):
         """Returns the model properties as a dict"""

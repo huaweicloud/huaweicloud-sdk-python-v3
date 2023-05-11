@@ -1,9 +1,6 @@
 # coding: utf-8
 
-import re
 import six
-
-
 
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
@@ -20,22 +17,30 @@ class PrePaidServerRootVolumeExtendParam:
     sensitive_list = []
 
     openapi_types = {
+        'system__encrypted': 'str',
+        'system__cmkid': 'str',
         'resource_spec_code': 'str',
         'resource_type': 'str',
         'snapshot_id': 'str'
     }
 
     attribute_map = {
+        'system__encrypted': '__system__encrypted',
+        'system__cmkid': '__system__cmkid',
         'resource_spec_code': 'resourceSpecCode',
         'resource_type': 'resourceType',
         'snapshot_id': 'snapshotId'
     }
 
-    def __init__(self, resource_spec_code=None, resource_type=None, snapshot_id=None):
+    def __init__(self, system__encrypted=None, system__cmkid=None, resource_spec_code=None, resource_type=None, snapshot_id=None):
         """PrePaidServerRootVolumeExtendParam
 
         The model defined in huaweicloud sdk
 
+        :param system__encrypted: metadata中的表示加密功能的字段，0代表不加密，1代表加密。  该字段不存在时，云硬盘默认为不加密。
+        :type system__encrypted: str
+        :param system__cmkid: metadata中的加密cmkid字段，与__system__encrypted配合表示需要加密，cmkid长度固定为36个字节。  &gt; 说明：  - 请参考[查询密钥列表](https://support.huaweicloud.com/api-dew/ListKeys.html)，通过HTTPS请求获取密钥ID。
+        :type system__cmkid: str
         :param resource_spec_code: 磁盘产品资源规格编码，如SATA，SAS和SSD。  &gt; 说明： &gt;  &gt; 废弃字段。
         :type resource_spec_code: str
         :param resource_type: 磁盘产品资源类型。  &gt; 说明： &gt;  &gt; 废弃字段。
@@ -46,17 +51,67 @@ class PrePaidServerRootVolumeExtendParam:
         
         
 
+        self._system__encrypted = None
+        self._system__cmkid = None
         self._resource_spec_code = None
         self._resource_type = None
         self._snapshot_id = None
         self.discriminator = None
 
+        if system__encrypted is not None:
+            self.system__encrypted = system__encrypted
+        if system__cmkid is not None:
+            self.system__cmkid = system__cmkid
         if resource_spec_code is not None:
             self.resource_spec_code = resource_spec_code
         if resource_type is not None:
             self.resource_type = resource_type
         if snapshot_id is not None:
             self.snapshot_id = snapshot_id
+
+    @property
+    def system__encrypted(self):
+        """Gets the system__encrypted of this PrePaidServerRootVolumeExtendParam.
+
+        metadata中的表示加密功能的字段，0代表不加密，1代表加密。  该字段不存在时，云硬盘默认为不加密。
+
+        :return: The system__encrypted of this PrePaidServerRootVolumeExtendParam.
+        :rtype: str
+        """
+        return self._system__encrypted
+
+    @system__encrypted.setter
+    def system__encrypted(self, system__encrypted):
+        """Sets the system__encrypted of this PrePaidServerRootVolumeExtendParam.
+
+        metadata中的表示加密功能的字段，0代表不加密，1代表加密。  该字段不存在时，云硬盘默认为不加密。
+
+        :param system__encrypted: The system__encrypted of this PrePaidServerRootVolumeExtendParam.
+        :type system__encrypted: str
+        """
+        self._system__encrypted = system__encrypted
+
+    @property
+    def system__cmkid(self):
+        """Gets the system__cmkid of this PrePaidServerRootVolumeExtendParam.
+
+        metadata中的加密cmkid字段，与__system__encrypted配合表示需要加密，cmkid长度固定为36个字节。  > 说明：  - 请参考[查询密钥列表](https://support.huaweicloud.com/api-dew/ListKeys.html)，通过HTTPS请求获取密钥ID。
+
+        :return: The system__cmkid of this PrePaidServerRootVolumeExtendParam.
+        :rtype: str
+        """
+        return self._system__cmkid
+
+    @system__cmkid.setter
+    def system__cmkid(self, system__cmkid):
+        """Sets the system__cmkid of this PrePaidServerRootVolumeExtendParam.
+
+        metadata中的加密cmkid字段，与__system__encrypted配合表示需要加密，cmkid长度固定为36个字节。  > 说明：  - 请参考[查询密钥列表](https://support.huaweicloud.com/api-dew/ListKeys.html)，通过HTTPS请求获取密钥ID。
+
+        :param system__cmkid: The system__cmkid of this PrePaidServerRootVolumeExtendParam.
+        :type system__cmkid: str
+        """
+        self._system__cmkid = system__cmkid
 
     @property
     def resource_spec_code(self):

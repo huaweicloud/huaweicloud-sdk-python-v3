@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListAllMyBucketsResult>
+    <Owner>
+        <ID>id</ID>
+    </Owner>
+    <Buckets>
+        <Bucket>
+            <Name>bucketName</Name>
+            <CreationDate>date</CreationDate>
+            <Location>region</Location>
+            <BucketType>buckettype</BucketType>
+        </Bucket>
+        <Bucket>
+            <Name>bucketName1</Name>
+            <CreationDate>date1</CreationDate>
+            <Location>region1</Location>
+            <BucketType>buckettype1</BucketType>
+        </Bucket>
+    </Buckets>
+</ListAllMyBucketsResult>

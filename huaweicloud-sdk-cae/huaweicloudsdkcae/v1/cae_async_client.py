@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class CaeAsyncClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(CaeAsyncClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkcae.v1.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -54,14 +36,10 @@ class CaeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcae.v1.CreateAgencyRequest`
         :rtype: :class:`huaweicloudsdkcae.v1.CreateAgencyResponse`
         """
-        return self.create_agency_with_http_info(request)
+        return self._create_agency_with_http_info(request)
 
-    def create_agency_with_http_info(self, request):
-        all_params = ['body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_agency_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -115,14 +93,10 @@ class CaeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcae.v1.ShowAgencyRequest`
         :rtype: :class:`huaweicloudsdkcae.v1.ShowAgencyResponse`
         """
-        return self.show_agency_with_http_info(request)
+        return self._show_agency_with_http_info(request)
 
-    def show_agency_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_agency_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -174,14 +148,10 @@ class CaeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcae.v1.CreateApplicationRequest`
         :rtype: :class:`huaweicloudsdkcae.v1.CreateApplicationResponse`
         """
-        return self.create_application_with_http_info(request)
+        return self._create_application_with_http_info(request)
 
-    def create_application_with_http_info(self, request):
-        all_params = ['x_environment_id', 'body', 'x_enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_application_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -239,14 +209,10 @@ class CaeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcae.v1.DeleteApplicationRequest`
         :rtype: :class:`huaweicloudsdkcae.v1.DeleteApplicationResponse`
         """
-        return self.delete_application_with_http_info(request)
+        return self._delete_application_with_http_info(request)
 
-    def delete_application_with_http_info(self, request):
-        all_params = ['application_id', 'x_environment_id', 'x_enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_application_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -304,14 +270,10 @@ class CaeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcae.v1.ListApplicationsRequest`
         :rtype: :class:`huaweicloudsdkcae.v1.ListApplicationsResponse`
         """
-        return self.list_applications_with_http_info(request)
+        return self._list_applications_with_http_info(request)
 
-    def list_applications_with_http_info(self, request):
-        all_params = ['x_environment_id', 'x_enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_applications_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -367,14 +329,10 @@ class CaeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcae.v1.ShowApplicationRequest`
         :rtype: :class:`huaweicloudsdkcae.v1.ShowApplicationResponse`
         """
-        return self.show_application_with_http_info(request)
+        return self._show_application_with_http_info(request)
 
-    def show_application_with_http_info(self, request):
-        all_params = ['application_id', 'x_environment_id', 'x_enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_application_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -432,14 +390,10 @@ class CaeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcae.v1.CreateComponentRequest`
         :rtype: :class:`huaweicloudsdkcae.v1.CreateComponentResponse`
         """
-        return self.create_component_with_http_info(request)
+        return self._create_component_with_http_info(request)
 
-    def create_component_with_http_info(self, request):
-        all_params = ['x_environment_id', 'application_id', 'body', 'x_enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_component_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -499,14 +453,10 @@ class CaeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcae.v1.DeleteComponentRequest`
         :rtype: :class:`huaweicloudsdkcae.v1.DeleteComponentResponse`
         """
-        return self.delete_component_with_http_info(request)
+        return self._delete_component_with_http_info(request)
 
-    def delete_component_with_http_info(self, request):
-        all_params = ['component_id', 'x_environment_id', 'application_id', 'x_enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_component_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -566,14 +516,10 @@ class CaeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcae.v1.ExecuteActionRequest`
         :rtype: :class:`huaweicloudsdkcae.v1.ExecuteActionResponse`
         """
-        return self.execute_action_with_http_info(request)
+        return self._execute_action_with_http_info(request)
 
-    def execute_action_with_http_info(self, request):
-        all_params = ['component_id', 'x_environment_id', 'application_id', 'body', 'x_enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _execute_action_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -635,14 +581,10 @@ class CaeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcae.v1.ListComponentSnapshotsRequest`
         :rtype: :class:`huaweicloudsdkcae.v1.ListComponentSnapshotsResponse`
         """
-        return self.list_component_snapshots_with_http_info(request)
+        return self._list_component_snapshots_with_http_info(request)
 
-    def list_component_snapshots_with_http_info(self, request):
-        all_params = ['component_id', 'x_environment_id', 'application_id', 'x_enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_component_snapshots_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -702,14 +644,10 @@ class CaeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcae.v1.ListComponentsRequest`
         :rtype: :class:`huaweicloudsdkcae.v1.ListComponentsResponse`
         """
-        return self.list_components_with_http_info(request)
+        return self._list_components_with_http_info(request)
 
-    def list_components_with_http_info(self, request):
-        all_params = ['x_environment_id', 'application_id', 'x_enterprise_project_id', 'limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_components_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -770,14 +708,10 @@ class CaeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcae.v1.ListEventsRequest`
         :rtype: :class:`huaweicloudsdkcae.v1.ListEventsResponse`
         """
-        return self.list_events_with_http_info(request)
+        return self._list_events_with_http_info(request)
 
-    def list_events_with_http_info(self, request):
-        all_params = ['component_id', 'x_environment_id', 'application_id', 'x_enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_events_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -837,14 +771,10 @@ class CaeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcae.v1.ListInstancesRequest`
         :rtype: :class:`huaweicloudsdkcae.v1.ListInstancesResponse`
         """
-        return self.list_instances_with_http_info(request)
+        return self._list_instances_with_http_info(request)
 
-    def list_instances_with_http_info(self, request):
-        all_params = ['component_id', 'x_environment_id', 'application_id', 'x_enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_instances_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -904,14 +834,10 @@ class CaeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcae.v1.ShowComponentRequest`
         :rtype: :class:`huaweicloudsdkcae.v1.ShowComponentResponse`
         """
-        return self.show_component_with_http_info(request)
+        return self._show_component_with_http_info(request)
 
-    def show_component_with_http_info(self, request):
-        all_params = ['component_id', 'x_environment_id', 'application_id', 'x_enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_component_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -971,14 +897,10 @@ class CaeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcae.v1.UpdateComponentRequest`
         :rtype: :class:`huaweicloudsdkcae.v1.UpdateComponentResponse`
         """
-        return self.update_component_with_http_info(request)
+        return self._update_component_with_http_info(request)
 
-    def update_component_with_http_info(self, request):
-        all_params = ['component_id', 'x_environment_id', 'application_id', 'body', 'x_enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_component_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1040,14 +962,10 @@ class CaeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcae.v1.CreateComponentConfigurationRequest`
         :rtype: :class:`huaweicloudsdkcae.v1.CreateComponentConfigurationResponse`
         """
-        return self.create_component_configuration_with_http_info(request)
+        return self._create_component_configuration_with_http_info(request)
 
-    def create_component_configuration_with_http_info(self, request):
-        all_params = ['component_id', 'x_environment_id', 'application_id', 'body', 'x_enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_component_configuration_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1108,14 +1026,10 @@ class CaeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcae.v1.DeleteComponentConfigurationRequest`
         :rtype: :class:`huaweicloudsdkcae.v1.DeleteComponentConfigurationResponse`
         """
-        return self.delete_component_configuration_with_http_info(request)
+        return self._delete_component_configuration_with_http_info(request)
 
-    def delete_component_configuration_with_http_info(self, request):
-        all_params = ['component_id', 'x_environment_id', 'application_id', 'x_enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_component_configuration_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1175,14 +1089,10 @@ class CaeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcae.v1.ListConfigurationsRequest`
         :rtype: :class:`huaweicloudsdkcae.v1.ListConfigurationsResponse`
         """
-        return self.list_configurations_with_http_info(request)
+        return self._list_configurations_with_http_info(request)
 
-    def list_configurations_with_http_info(self, request):
-        all_params = ['component_id', 'x_environment_id', 'application_id', 'x_enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_configurations_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1242,14 +1152,10 @@ class CaeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcae.v1.CreateEnvironmentRequest`
         :rtype: :class:`huaweicloudsdkcae.v1.CreateEnvironmentResponse`
         """
-        return self.create_environment_with_http_info(request)
+        return self._create_environment_with_http_info(request)
 
-    def create_environment_with_http_info(self, request):
-        all_params = ['body', 'x_enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_environment_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1305,14 +1211,10 @@ class CaeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcae.v1.DeleteEnvironmentRequest`
         :rtype: :class:`huaweicloudsdkcae.v1.DeleteEnvironmentResponse`
         """
-        return self.delete_environment_with_http_info(request)
+        return self._delete_environment_with_http_info(request)
 
-    def delete_environment_with_http_info(self, request):
-        all_params = ['environment_id', 'x_enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_environment_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1368,14 +1270,10 @@ class CaeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcae.v1.ListEnvironmentsRequest`
         :rtype: :class:`huaweicloudsdkcae.v1.ListEnvironmentsResponse`
         """
-        return self.list_environments_with_http_info(request)
+        return self._list_environments_with_http_info(request)
 
-    def list_environments_with_http_info(self, request):
-        all_params = ['x_enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_environments_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1429,14 +1327,10 @@ class CaeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcae.v1.RetryJobRequest`
         :rtype: :class:`huaweicloudsdkcae.v1.RetryJobResponse`
         """
-        return self.retry_job_with_http_info(request)
+        return self._retry_job_with_http_info(request)
 
-    def retry_job_with_http_info(self, request):
-        all_params = ['job_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _retry_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1490,14 +1384,10 @@ class CaeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcae.v1.ShowJobRequest`
         :rtype: :class:`huaweicloudsdkcae.v1.ShowJobResponse`
         """
-        return self.show_job_with_http_info(request)
+        return self._show_job_with_http_info(request)
 
-    def show_job_with_http_info(self, request):
-        all_params = ['job_id', 'x_enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1553,14 +1443,10 @@ class CaeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcae.v1.CreateVolumeRequest`
         :rtype: :class:`huaweicloudsdkcae.v1.CreateVolumeResponse`
         """
-        return self.create_volume_with_http_info(request)
+        return self._create_volume_with_http_info(request)
 
-    def create_volume_with_http_info(self, request):
-        all_params = ['x_environment_id', 'body', 'x_enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_volume_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1618,14 +1504,10 @@ class CaeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcae.v1.DeleteVolumeRequest`
         :rtype: :class:`huaweicloudsdkcae.v1.DeleteVolumeResponse`
         """
-        return self.delete_volume_with_http_info(request)
+        return self._delete_volume_with_http_info(request)
 
-    def delete_volume_with_http_info(self, request):
-        all_params = ['id', 'x_environment_id', 'x_enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_volume_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1683,14 +1565,10 @@ class CaeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcae.v1.ListVolumesRequest`
         :rtype: :class:`huaweicloudsdkcae.v1.ListVolumesResponse`
         """
-        return self.list_volumes_with_http_info(request)
+        return self._list_volumes_with_http_info(request)
 
-    def list_volumes_with_http_info(self, request):
-        all_params = ['x_environment_id', 'resource_type', 'x_enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_volumes_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

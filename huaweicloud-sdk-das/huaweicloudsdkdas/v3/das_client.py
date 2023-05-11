@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class DasClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(DasClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkdas.v3.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -53,14 +35,10 @@ class DasClient(Client):
         :type request: :class:`huaweicloudsdkdas.v3.ListApiVersionsRequest`
         :rtype: :class:`huaweicloudsdkdas.v3.ListApiVersionsResponse`
         """
-        return self.list_api_versions_with_http_info(request)
+        return self._list_api_versions_with_http_info(request)
 
-    def list_api_versions_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_api_versions_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -111,14 +89,10 @@ class DasClient(Client):
         :type request: :class:`huaweicloudsdkdas.v3.ShowApiVersionRequest`
         :rtype: :class:`huaweicloudsdkdas.v3.ShowApiVersionResponse`
         """
-        return self.show_api_version_with_http_info(request)
+        return self._show_api_version_with_http_info(request)
 
-    def show_api_version_with_http_info(self, request):
-        all_params = ['version']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_api_version_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -171,14 +145,10 @@ class DasClient(Client):
         :type request: :class:`huaweicloudsdkdas.v3.ChangeSqlLimitSwitchStatusRequest`
         :rtype: :class:`huaweicloudsdkdas.v3.ChangeSqlLimitSwitchStatusResponse`
         """
-        return self.change_sql_limit_switch_status_with_http_info(request)
+        return self._change_sql_limit_switch_status_with_http_info(request)
 
-    def change_sql_limit_switch_status_with_http_info(self, request):
-        all_params = ['instance_id', 'change_sql_limit_switch_status_body', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _change_sql_limit_switch_status_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -236,14 +206,10 @@ class DasClient(Client):
         :type request: :class:`huaweicloudsdkdas.v3.ChangeSqlSwitchRequest`
         :rtype: :class:`huaweicloudsdkdas.v3.ChangeSqlSwitchResponse`
         """
-        return self.change_sql_switch_with_http_info(request)
+        return self._change_sql_switch_with_http_info(request)
 
-    def change_sql_switch_with_http_info(self, request):
-        all_params = ['instance_id', 'change_das_switch_body', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _change_sql_switch_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -300,14 +266,10 @@ class DasClient(Client):
         :type request: :class:`huaweicloudsdkdas.v3.CreateSpaceAnalysisTaskRequest`
         :rtype: :class:`huaweicloudsdkdas.v3.CreateSpaceAnalysisTaskResponse`
         """
-        return self.create_space_analysis_task_with_http_info(request)
+        return self._create_space_analysis_task_with_http_info(request)
 
-    def create_space_analysis_task_with_http_info(self, request):
-        all_params = ['instance_id', 'create_space_analysis_task_body', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_space_analysis_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -371,14 +333,10 @@ class DasClient(Client):
         :type request: :class:`huaweicloudsdkdas.v3.CreateSqlLimitRulesRequest`
         :rtype: :class:`huaweicloudsdkdas.v3.CreateSqlLimitRulesResponse`
         """
-        return self.create_sql_limit_rules_with_http_info(request)
+        return self._create_sql_limit_rules_with_http_info(request)
 
-    def create_sql_limit_rules_with_http_info(self, request):
-        all_params = ['instance_id', 'create_sql_limit_rules_body', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_sql_limit_rules_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -436,14 +394,10 @@ class DasClient(Client):
         :type request: :class:`huaweicloudsdkdas.v3.DeleteDbUserRequest`
         :rtype: :class:`huaweicloudsdkdas.v3.DeleteDbUserResponse`
         """
-        return self.delete_db_user_with_http_info(request)
+        return self._delete_db_user_with_http_info(request)
 
-    def delete_db_user_with_http_info(self, request):
-        all_params = ['instance_id', 'db_user_id', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_db_user_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -501,14 +455,10 @@ class DasClient(Client):
         :type request: :class:`huaweicloudsdkdas.v3.DeleteProcessRequest`
         :rtype: :class:`huaweicloudsdkdas.v3.DeleteProcessResponse`
         """
-        return self.delete_process_with_http_info(request)
+        return self._delete_process_with_http_info(request)
 
-    def delete_process_with_http_info(self, request):
-        all_params = ['instance_id', 'delete_process_req', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_process_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -565,14 +515,10 @@ class DasClient(Client):
         :type request: :class:`huaweicloudsdkdas.v3.DeleteSqlLimitRulesRequest`
         :rtype: :class:`huaweicloudsdkdas.v3.DeleteSqlLimitRulesResponse`
         """
-        return self.delete_sql_limit_rules_with_http_info(request)
+        return self._delete_sql_limit_rules_with_http_info(request)
 
-    def delete_sql_limit_rules_with_http_info(self, request):
-        all_params = ['instance_id', 'delete_sql_limit_rules_body', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_sql_limit_rules_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -629,14 +575,10 @@ class DasClient(Client):
         :type request: :class:`huaweicloudsdkdas.v3.ExportSlowQueryLogsRequest`
         :rtype: :class:`huaweicloudsdkdas.v3.ExportSlowQueryLogsResponse`
         """
-        return self.export_slow_query_logs_with_http_info(request)
+        return self._export_slow_query_logs_with_http_info(request)
 
-    def export_slow_query_logs_with_http_info(self, request):
-        all_params = ['instance_id', 'datastore_type', 'start_at', 'end_at', 'limit', 'marker', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _export_slow_query_logs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -701,14 +643,10 @@ class DasClient(Client):
         :type request: :class:`huaweicloudsdkdas.v3.ExportSlowSqlTemplatesDetailsRequest`
         :rtype: :class:`huaweicloudsdkdas.v3.ExportSlowSqlTemplatesDetailsResponse`
         """
-        return self.export_slow_sql_templates_details_with_http_info(request)
+        return self._export_slow_sql_templates_details_with_http_info(request)
 
-    def export_slow_sql_templates_details_with_http_info(self, request):
-        all_params = ['instance_id', 'start_at', 'end_at', 'datastore_type', 'db_name', 'x_language', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _export_slow_sql_templates_details_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -775,14 +713,10 @@ class DasClient(Client):
         :type request: :class:`huaweicloudsdkdas.v3.ExportSqlStatementsRequest`
         :rtype: :class:`huaweicloudsdkdas.v3.ExportSqlStatementsResponse`
         """
-        return self.export_sql_statements_with_http_info(request)
+        return self._export_sql_statements_with_http_info(request)
 
-    def export_sql_statements_with_http_info(self, request):
-        all_params = ['instance_id', 'start_at', 'end_at', 'limit', 'datastore_type', 'marker', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _export_sql_statements_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -847,14 +781,10 @@ class DasClient(Client):
         :type request: :class:`huaweicloudsdkdas.v3.ExportTopSqlTemplatesDetailsRequest`
         :rtype: :class:`huaweicloudsdkdas.v3.ExportTopSqlTemplatesDetailsResponse`
         """
-        return self.export_top_sql_templates_details_with_http_info(request)
+        return self._export_top_sql_templates_details_with_http_info(request)
 
-    def export_top_sql_templates_details_with_http_info(self, request):
-        all_params = ['instance_id', 'start_at', 'end_at', 'datastore_type', 'node_id', 'sort', 'asc', 'offset', 'limit', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _export_top_sql_templates_details_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -925,14 +855,10 @@ class DasClient(Client):
         :type request: :class:`huaweicloudsdkdas.v3.ExportTopSqlTrendDetailsRequest`
         :rtype: :class:`huaweicloudsdkdas.v3.ExportTopSqlTrendDetailsResponse`
         """
-        return self.export_top_sql_trend_details_with_http_info(request)
+        return self._export_top_sql_trend_details_with_http_info(request)
 
-    def export_top_sql_trend_details_with_http_info(self, request):
-        all_params = ['instance_id', 'start_at', 'end_at', 'datastore_type', 'node_id', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _export_top_sql_trend_details_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -996,14 +922,10 @@ class DasClient(Client):
         :type request: :class:`huaweicloudsdkdas.v3.ListDbUsersRequest`
         :rtype: :class:`huaweicloudsdkdas.v3.ListDbUsersResponse`
         """
-        return self.list_db_users_with_http_info(request)
+        return self._list_db_users_with_http_info(request)
 
-    def list_db_users_with_http_info(self, request):
-        all_params = ['instance_id', 'offset', 'limit', 'db_user_id', 'db_username', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_db_users_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1067,14 +989,10 @@ class DasClient(Client):
         :type request: :class:`huaweicloudsdkdas.v3.ListInnodbLocksRequest`
         :rtype: :class:`huaweicloudsdkdas.v3.ListInnodbLocksResponse`
         """
-        return self.list_innodb_locks_with_http_info(request)
+        return self._list_innodb_locks_with_http_info(request)
 
-    def list_innodb_locks_with_http_info(self, request):
-        all_params = ['instance_id', 'db_user_id', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_innodb_locks_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1132,14 +1050,10 @@ class DasClient(Client):
         :type request: :class:`huaweicloudsdkdas.v3.ListMetadataLocksRequest`
         :rtype: :class:`huaweicloudsdkdas.v3.ListMetadataLocksResponse`
         """
-        return self.list_metadata_locks_with_http_info(request)
+        return self._list_metadata_locks_with_http_info(request)
 
-    def list_metadata_locks_with_http_info(self, request):
-        all_params = ['instance_id', 'db_user_id', 'thread_id', 'database', 'table', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_metadata_locks_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1203,14 +1117,10 @@ class DasClient(Client):
         :type request: :class:`huaweicloudsdkdas.v3.ListProcessesRequest`
         :rtype: :class:`huaweicloudsdkdas.v3.ListProcessesResponse`
         """
-        return self.list_processes_with_http_info(request)
+        return self._list_processes_with_http_info(request)
 
-    def list_processes_with_http_info(self, request):
-        all_params = ['instance_id', 'db_user_id', 'user', 'database', 'offset', 'limit', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_processes_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1275,14 +1185,10 @@ class DasClient(Client):
         :type request: :class:`huaweicloudsdkdas.v3.ListSpaceAnalysisRequest`
         :rtype: :class:`huaweicloudsdkdas.v3.ListSpaceAnalysisResponse`
         """
-        return self.list_space_analysis_with_http_info(request)
+        return self._list_space_analysis_with_http_info(request)
 
-    def list_space_analysis_with_http_info(self, request):
-        all_params = ['instance_id', 'object_type', 'datastore_type', 'x_language', 'database_id', 'offset', 'limit', 'show_instance_info']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_space_analysis_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1349,14 +1255,10 @@ class DasClient(Client):
         :type request: :class:`huaweicloudsdkdas.v3.ListSqlLimitRulesRequest`
         :rtype: :class:`huaweicloudsdkdas.v3.ListSqlLimitRulesResponse`
         """
-        return self.list_sql_limit_rules_with_http_info(request)
+        return self._list_sql_limit_rules_with_http_info(request)
 
-    def list_sql_limit_rules_with_http_info(self, request):
-        all_params = ['instance_id', 'datastore_type', 'offset', 'limit', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_sql_limit_rules_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1418,14 +1320,10 @@ class DasClient(Client):
         :type request: :class:`huaweicloudsdkdas.v3.RegisterDbUserRequest`
         :rtype: :class:`huaweicloudsdkdas.v3.RegisterDbUserResponse`
         """
-        return self.register_db_user_with_http_info(request)
+        return self._register_db_user_with_http_info(request)
 
-    def register_db_user_with_http_info(self, request):
-        all_params = ['instance_id', 'register_db_user_request_body', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _register_db_user_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1483,14 +1381,10 @@ class DasClient(Client):
         :type request: :class:`huaweicloudsdkdas.v3.ShowDbUserRequest`
         :rtype: :class:`huaweicloudsdkdas.v3.ShowDbUserResponse`
         """
-        return self.show_db_user_with_http_info(request)
+        return self._show_db_user_with_http_info(request)
 
-    def show_db_user_with_http_info(self, request):
-        all_params = ['instance_id', 'db_user_id', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_db_user_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1547,14 +1441,10 @@ class DasClient(Client):
         :type request: :class:`huaweicloudsdkdas.v3.ShowQuotasRequest`
         :rtype: :class:`huaweicloudsdkdas.v3.ShowQuotasResponse`
         """
-        return self.show_quotas_with_http_info(request)
+        return self._show_quotas_with_http_info(request)
 
-    def show_quotas_with_http_info(self, request):
-        all_params = ['x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_quotas_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1608,14 +1498,10 @@ class DasClient(Client):
         :type request: :class:`huaweicloudsdkdas.v3.ShowSqlExecutionPlanRequest`
         :rtype: :class:`huaweicloudsdkdas.v3.ShowSqlExecutionPlanResponse`
         """
-        return self.show_sql_execution_plan_with_http_info(request)
+        return self._show_sql_execution_plan_with_http_info(request)
 
-    def show_sql_execution_plan_with_http_info(self, request):
-        all_params = ['instance_id', 'db_user_id', 'database', 'sql', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_sql_execution_plan_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1678,14 +1564,10 @@ class DasClient(Client):
         :type request: :class:`huaweicloudsdkdas.v3.ShowSqlExplainRequest`
         :rtype: :class:`huaweicloudsdkdas.v3.ShowSqlExplainResponse`
         """
-        return self.show_sql_explain_with_http_info(request)
+        return self._show_sql_explain_with_http_info(request)
 
-    def show_sql_explain_with_http_info(self, request):
-        all_params = ['instance_id', 'query_sql_plan_body', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_sql_explain_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1742,14 +1624,10 @@ class DasClient(Client):
         :type request: :class:`huaweicloudsdkdas.v3.ShowSqlLimitJobInfoRequest`
         :rtype: :class:`huaweicloudsdkdas.v3.ShowSqlLimitJobInfoResponse`
         """
-        return self.show_sql_limit_job_info_with_http_info(request)
+        return self._show_sql_limit_job_info_with_http_info(request)
 
-    def show_sql_limit_job_info_with_http_info(self, request):
-        all_params = ['instance_id', 'job_id', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_sql_limit_job_info_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1806,14 +1684,10 @@ class DasClient(Client):
         :type request: :class:`huaweicloudsdkdas.v3.ShowSqlLimitSwitchStatusRequest`
         :rtype: :class:`huaweicloudsdkdas.v3.ShowSqlLimitSwitchStatusResponse`
         """
-        return self.show_sql_limit_switch_status_with_http_info(request)
+        return self._show_sql_limit_switch_status_with_http_info(request)
 
-    def show_sql_limit_switch_status_with_http_info(self, request):
-        all_params = ['instance_id', 'datastore_type', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_sql_limit_switch_status_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1870,14 +1744,10 @@ class DasClient(Client):
         :type request: :class:`huaweicloudsdkdas.v3.ShowSqlSwitchStatusRequest`
         :rtype: :class:`huaweicloudsdkdas.v3.ShowSqlSwitchStatusResponse`
         """
-        return self.show_sql_switch_status_with_http_info(request)
+        return self._show_sql_switch_status_with_http_info(request)
 
-    def show_sql_switch_status_with_http_info(self, request):
-        all_params = ['instance_id', 'type', 'datastore_type', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_sql_switch_status_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1937,14 +1807,10 @@ class DasClient(Client):
         :type request: :class:`huaweicloudsdkdas.v3.UpdateDbUserRequest`
         :rtype: :class:`huaweicloudsdkdas.v3.UpdateDbUserResponse`
         """
-        return self.update_db_user_with_http_info(request)
+        return self._update_db_user_with_http_info(request)
 
-    def update_db_user_with_http_info(self, request):
-        all_params = ['instance_id', 'db_user_id', 'update_db_user_request_body', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_db_user_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

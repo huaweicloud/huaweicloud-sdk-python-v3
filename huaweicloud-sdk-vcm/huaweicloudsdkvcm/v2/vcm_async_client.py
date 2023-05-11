@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class VcmAsyncClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(VcmAsyncClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkvcm.v2.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -54,14 +36,10 @@ class VcmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvcm.v2.CheckAudioJobRequest`
         :rtype: :class:`huaweicloudsdkvcm.v2.CheckAudioJobResponse`
         """
-        return self.check_audio_job_with_http_info(request)
+        return self._check_audio_job_with_http_info(request)
 
-    def check_audio_job_with_http_info(self, request):
-        all_params = ['task_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _check_audio_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -115,14 +93,10 @@ class VcmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvcm.v2.CheckVideoJobRequest`
         :rtype: :class:`huaweicloudsdkvcm.v2.CheckVideoJobResponse`
         """
-        return self.check_video_job_with_http_info(request)
+        return self._check_video_job_with_http_info(request)
 
-    def check_video_job_with_http_info(self, request):
-        all_params = ['task_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _check_video_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -176,14 +150,10 @@ class VcmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvcm.v2.CreateAudioJobRequest`
         :rtype: :class:`huaweicloudsdkvcm.v2.CreateAudioJobResponse`
         """
-        return self.create_audio_job_with_http_info(request)
+        return self._create_audio_job_with_http_info(request)
 
-    def create_audio_job_with_http_info(self, request):
-        all_params = ['create_audio_job_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_audio_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -237,14 +207,10 @@ class VcmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvcm.v2.CreateVideoJobRequest`
         :rtype: :class:`huaweicloudsdkvcm.v2.CreateVideoJobResponse`
         """
-        return self.create_video_job_with_http_info(request)
+        return self._create_video_job_with_http_info(request)
 
-    def create_video_job_with_http_info(self, request):
-        all_params = ['create_video_job_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_video_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -298,14 +264,10 @@ class VcmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvcm.v2.DeleteDemoInfoRequest`
         :rtype: :class:`huaweicloudsdkvcm.v2.DeleteDemoInfoResponse`
         """
-        return self.delete_demo_info_with_http_info(request)
+        return self._delete_demo_info_with_http_info(request)
 
-    def delete_demo_info_with_http_info(self, request):
-        all_params = ['task_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_demo_info_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -359,14 +321,10 @@ class VcmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvcm.v2.DeleteVideoJobRequest`
         :rtype: :class:`huaweicloudsdkvcm.v2.DeleteVideoJobResponse`
         """
-        return self.delete_video_job_with_http_info(request)
+        return self._delete_video_job_with_http_info(request)
 
-    def delete_video_job_with_http_info(self, request):
-        all_params = ['task_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_video_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -420,14 +378,10 @@ class VcmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvcm.v2.ListAudioJobsRequest`
         :rtype: :class:`huaweicloudsdkvcm.v2.ListAudioJobsResponse`
         """
-        return self.list_audio_jobs_with_http_info(request)
+        return self._list_audio_jobs_with_http_info(request)
 
-    def list_audio_jobs_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_audio_jobs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -479,14 +433,10 @@ class VcmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvcm.v2.ListVideoJobsRequest`
         :rtype: :class:`huaweicloudsdkvcm.v2.ListVideoJobsResponse`
         """
-        return self.list_video_jobs_with_http_info(request)
+        return self._list_video_jobs_with_http_info(request)
 
-    def list_video_jobs_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_video_jobs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

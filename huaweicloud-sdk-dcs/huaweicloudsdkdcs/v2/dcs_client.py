@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class DcsClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(DcsClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkdcs.v2.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -53,14 +35,10 @@ class DcsClient(Client):
         :type request: :class:`huaweicloudsdkdcs.v2.BatchCreateOrDeleteTagsRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.BatchCreateOrDeleteTagsResponse`
         """
-        return self.batch_create_or_delete_tags_with_http_info(request)
+        return self._batch_create_or_delete_tags_with_http_info(request)
 
-    def batch_create_or_delete_tags_with_http_info(self, request):
-        all_params = ['instance_id', 'batch_create_or_delete_tags_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_create_or_delete_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -115,14 +93,10 @@ class DcsClient(Client):
         :type request: :class:`huaweicloudsdkdcs.v2.BatchDeleteInstancesRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.BatchDeleteInstancesResponse`
         """
-        return self.batch_delete_instances_with_http_info(request)
+        return self._batch_delete_instances_with_http_info(request)
 
-    def batch_delete_instances_with_http_info(self, request):
-        all_params = ['all_failure', 'batch_delete_instances_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_delete_instances_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -179,14 +153,10 @@ class DcsClient(Client):
         :type request: :class:`huaweicloudsdkdcs.v2.BatchShowNodesInformationRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.BatchShowNodesInformationResponse`
         """
-        return self.batch_show_nodes_information_with_http_info(request)
+        return self._batch_show_nodes_information_with_http_info(request)
 
-    def batch_show_nodes_information_with_http_info(self, request):
-        all_params = ['offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_show_nodes_information_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -241,14 +211,10 @@ class DcsClient(Client):
         :type request: :class:`huaweicloudsdkdcs.v2.BatchStopMigrationTasksRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.BatchStopMigrationTasksResponse`
         """
-        return self.batch_stop_migration_tasks_with_http_info(request)
+        return self._batch_stop_migration_tasks_with_http_info(request)
 
-    def batch_stop_migration_tasks_with_http_info(self, request):
-        all_params = ['batch_stop_migration_tasks_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_stop_migration_tasks_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -301,14 +267,10 @@ class DcsClient(Client):
         :type request: :class:`huaweicloudsdkdcs.v2.ChangeMasterStandbyRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.ChangeMasterStandbyResponse`
         """
-        return self.change_master_standby_with_http_info(request)
+        return self._change_master_standby_with_http_info(request)
 
-    def change_master_standby_with_http_info(self, request):
-        all_params = ['instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _change_master_standby_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -362,14 +324,10 @@ class DcsClient(Client):
         :type request: :class:`huaweicloudsdkdcs.v2.CopyInstanceRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.CopyInstanceResponse`
         """
-        return self.copy_instance_with_http_info(request)
+        return self._copy_instance_with_http_info(request)
 
-    def copy_instance_with_http_info(self, request):
-        all_params = ['instance_id', 'copy_instance_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _copy_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -426,14 +384,10 @@ class DcsClient(Client):
         :type request: :class:`huaweicloudsdkdcs.v2.CreateAutoExpireScanTaskRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.CreateAutoExpireScanTaskResponse`
         """
-        return self.create_auto_expire_scan_task_with_http_info(request)
+        return self._create_auto_expire_scan_task_with_http_info(request)
 
-    def create_auto_expire_scan_task_with_http_info(self, request):
-        all_params = ['instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_auto_expire_scan_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -486,14 +440,10 @@ class DcsClient(Client):
         :type request: :class:`huaweicloudsdkdcs.v2.CreateBigkeyScanTaskRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.CreateBigkeyScanTaskResponse`
         """
-        return self.create_bigkey_scan_task_with_http_info(request)
+        return self._create_bigkey_scan_task_with_http_info(request)
 
-    def create_bigkey_scan_task_with_http_info(self, request):
-        all_params = ['instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_bigkey_scan_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -546,14 +496,10 @@ class DcsClient(Client):
         :type request: :class:`huaweicloudsdkdcs.v2.CreateCustomTemplateRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.CreateCustomTemplateResponse`
         """
-        return self.create_custom_template_with_http_info(request)
+        return self._create_custom_template_with_http_info(request)
 
-    def create_custom_template_with_http_info(self, request):
-        all_params = ['create_custom_template_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_custom_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -606,14 +552,10 @@ class DcsClient(Client):
         :type request: :class:`huaweicloudsdkdcs.v2.CreateDiagnosisTaskRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.CreateDiagnosisTaskResponse`
         """
-        return self.create_diagnosis_task_with_http_info(request)
+        return self._create_diagnosis_task_with_http_info(request)
 
-    def create_diagnosis_task_with_http_info(self, request):
-        all_params = ['instance_id', 'create_diagnosis_task_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_diagnosis_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -670,14 +612,10 @@ class DcsClient(Client):
         :type request: :class:`huaweicloudsdkdcs.v2.CreateHotkeyScanTaskRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.CreateHotkeyScanTaskResponse`
         """
-        return self.create_hotkey_scan_task_with_http_info(request)
+        return self._create_hotkey_scan_task_with_http_info(request)
 
-    def create_hotkey_scan_task_with_http_info(self, request):
-        all_params = ['instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_hotkey_scan_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -730,14 +668,10 @@ class DcsClient(Client):
         :type request: :class:`huaweicloudsdkdcs.v2.CreateInstanceRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.CreateInstanceResponse`
         """
-        return self.create_instance_with_http_info(request)
+        return self._create_instance_with_http_info(request)
 
-    def create_instance_with_http_info(self, request):
-        all_params = ['create_instance_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -790,14 +724,10 @@ class DcsClient(Client):
         :type request: :class:`huaweicloudsdkdcs.v2.CreateMigrationTaskRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.CreateMigrationTaskResponse`
         """
-        return self.create_migration_task_with_http_info(request)
+        return self._create_migration_task_with_http_info(request)
 
-    def create_migration_task_with_http_info(self, request):
-        all_params = ['create_migration_task_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_migration_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -850,14 +780,10 @@ class DcsClient(Client):
         :type request: :class:`huaweicloudsdkdcs.v2.CreateOnlineMigrationTaskRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.CreateOnlineMigrationTaskResponse`
         """
-        return self.create_online_migration_task_with_http_info(request)
+        return self._create_online_migration_task_with_http_info(request)
 
-    def create_online_migration_task_with_http_info(self, request):
-        all_params = ['create_online_migration_task_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_online_migration_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -910,14 +836,10 @@ class DcsClient(Client):
         :type request: :class:`huaweicloudsdkdcs.v2.CreateRedislogRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.CreateRedislogResponse`
         """
-        return self.create_redislog_with_http_info(request)
+        return self._create_redislog_with_http_info(request)
 
-    def create_redislog_with_http_info(self, request):
-        all_params = ['instance_id', 'log_type', 'query_time', 'replication_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_redislog_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -976,14 +898,10 @@ class DcsClient(Client):
         :type request: :class:`huaweicloudsdkdcs.v2.CreateRedislogDownloadLinkRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.CreateRedislogDownloadLinkResponse`
         """
-        return self.create_redislog_download_link_with_http_info(request)
+        return self._create_redislog_download_link_with_http_info(request)
 
-    def create_redislog_download_link_with_http_info(self, request):
-        all_params = ['instance_id', 'id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_redislog_download_link_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1038,14 +956,10 @@ class DcsClient(Client):
         :type request: :class:`huaweicloudsdkdcs.v2.DeleteBackgroundTaskRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.DeleteBackgroundTaskResponse`
         """
-        return self.delete_background_task_with_http_info(request)
+        return self._delete_background_task_with_http_info(request)
 
-    def delete_background_task_with_http_info(self, request):
-        all_params = ['instance_id', 'task_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_background_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1100,14 +1014,10 @@ class DcsClient(Client):
         :type request: :class:`huaweicloudsdkdcs.v2.DeleteBackupFileRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.DeleteBackupFileResponse`
         """
-        return self.delete_backup_file_with_http_info(request)
+        return self._delete_backup_file_with_http_info(request)
 
-    def delete_backup_file_with_http_info(self, request):
-        all_params = ['backup_id', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_backup_file_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1162,14 +1072,10 @@ class DcsClient(Client):
         :type request: :class:`huaweicloudsdkdcs.v2.DeleteBigkeyScanTaskRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.DeleteBigkeyScanTaskResponse`
         """
-        return self.delete_bigkey_scan_task_with_http_info(request)
+        return self._delete_bigkey_scan_task_with_http_info(request)
 
-    def delete_bigkey_scan_task_with_http_info(self, request):
-        all_params = ['instance_id', 'bigkey_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_bigkey_scan_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1224,14 +1130,10 @@ class DcsClient(Client):
         :type request: :class:`huaweicloudsdkdcs.v2.DeleteHotkeyScanTaskRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.DeleteHotkeyScanTaskResponse`
         """
-        return self.delete_hotkey_scan_task_with_http_info(request)
+        return self._delete_hotkey_scan_task_with_http_info(request)
 
-    def delete_hotkey_scan_task_with_http_info(self, request):
-        all_params = ['instance_id', 'hotkey_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_hotkey_scan_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1286,14 +1188,10 @@ class DcsClient(Client):
         :type request: :class:`huaweicloudsdkdcs.v2.DeleteIpFromDomainNameRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.DeleteIpFromDomainNameResponse`
         """
-        return self.delete_ip_from_domain_name_with_http_info(request)
+        return self._delete_ip_from_domain_name_with_http_info(request)
 
-    def delete_ip_from_domain_name_with_http_info(self, request):
-        all_params = ['instance_id', 'group_id', 'node_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_ip_from_domain_name_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1350,14 +1248,10 @@ class DcsClient(Client):
         :type request: :class:`huaweicloudsdkdcs.v2.DeleteMigrationTaskRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.DeleteMigrationTaskResponse`
         """
-        return self.delete_migration_task_with_http_info(request)
+        return self._delete_migration_task_with_http_info(request)
 
-    def delete_migration_task_with_http_info(self, request):
-        all_params = ['delete_migration_task_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_migration_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1412,14 +1306,10 @@ class DcsClient(Client):
         :type request: :class:`huaweicloudsdkdcs.v2.DeleteSingleInstanceRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.DeleteSingleInstanceResponse`
         """
-        return self.delete_single_instance_with_http_info(request)
+        return self._delete_single_instance_with_http_info(request)
 
-    def delete_single_instance_with_http_info(self, request):
-        all_params = ['instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_single_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1472,14 +1362,10 @@ class DcsClient(Client):
         :type request: :class:`huaweicloudsdkdcs.v2.ListAvailableZonesRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.ListAvailableZonesResponse`
         """
-        return self.list_available_zones_with_http_info(request)
+        return self._list_available_zones_with_http_info(request)
 
-    def list_available_zones_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_available_zones_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1530,14 +1416,10 @@ class DcsClient(Client):
         :type request: :class:`huaweicloudsdkdcs.v2.ListBackgroundTaskRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.ListBackgroundTaskResponse`
         """
-        return self.list_background_task_with_http_info(request)
+        return self._list_background_task_with_http_info(request)
 
-    def list_background_task_with_http_info(self, request):
-        all_params = ['instance_id', 'offset', 'limit', 'start_time', 'end_time']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_background_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1598,14 +1480,10 @@ class DcsClient(Client):
         :type request: :class:`huaweicloudsdkdcs.v2.ListBackupFileLinksRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.ListBackupFileLinksResponse`
         """
-        return self.list_backup_file_links_with_http_info(request)
+        return self._list_backup_file_links_with_http_info(request)
 
-    def list_backup_file_links_with_http_info(self, request):
-        all_params = ['instance_id', 'backup_id', 'list_backup_file_links_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_backup_file_links_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1662,14 +1540,10 @@ class DcsClient(Client):
         :type request: :class:`huaweicloudsdkdcs.v2.ListBackupRecordsRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.ListBackupRecordsResponse`
         """
-        return self.list_backup_records_with_http_info(request)
+        return self._list_backup_records_with_http_info(request)
 
-    def list_backup_records_with_http_info(self, request):
-        all_params = ['instance_id', 'begin_time', 'end_time', 'limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_backup_records_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1730,14 +1604,10 @@ class DcsClient(Client):
         :type request: :class:`huaweicloudsdkdcs.v2.ListBigkeyScanTasksRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.ListBigkeyScanTasksResponse`
         """
-        return self.list_bigkey_scan_tasks_with_http_info(request)
+        return self._list_bigkey_scan_tasks_with_http_info(request)
 
-    def list_bigkey_scan_tasks_with_http_info(self, request):
-        all_params = ['instance_id', 'offset', 'limit', 'status']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_bigkey_scan_tasks_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1796,14 +1666,10 @@ class DcsClient(Client):
         :type request: :class:`huaweicloudsdkdcs.v2.ListConfigHistoriesRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.ListConfigHistoriesResponse`
         """
-        return self.list_config_histories_with_http_info(request)
+        return self._list_config_histories_with_http_info(request)
 
-    def list_config_histories_with_http_info(self, request):
-        all_params = ['instance_id', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_config_histories_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1860,14 +1726,10 @@ class DcsClient(Client):
         :type request: :class:`huaweicloudsdkdcs.v2.ListConfigTemplatesRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.ListConfigTemplatesResponse`
         """
-        return self.list_config_templates_with_http_info(request)
+        return self._list_config_templates_with_http_info(request)
 
-    def list_config_templates_with_http_info(self, request):
-        all_params = ['type', 'name', 'template_id', 'engine', 'engine_version', 'cache_mode', 'description', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_config_templates_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1936,14 +1798,10 @@ class DcsClient(Client):
         :type request: :class:`huaweicloudsdkdcs.v2.ListConfigurationsRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.ListConfigurationsResponse`
         """
-        return self.list_configurations_with_http_info(request)
+        return self._list_configurations_with_http_info(request)
 
-    def list_configurations_with_http_info(self, request):
-        all_params = ['instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_configurations_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1996,14 +1854,10 @@ class DcsClient(Client):
         :type request: :class:`huaweicloudsdkdcs.v2.ListDiagnosisTasksRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.ListDiagnosisTasksResponse`
         """
-        return self.list_diagnosis_tasks_with_http_info(request)
+        return self._list_diagnosis_tasks_with_http_info(request)
 
-    def list_diagnosis_tasks_with_http_info(self, request):
-        all_params = ['instance_id', 'limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_diagnosis_tasks_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2060,14 +1914,10 @@ class DcsClient(Client):
         :type request: :class:`huaweicloudsdkdcs.v2.ListFlavorsRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.ListFlavorsResponse`
         """
-        return self.list_flavors_with_http_info(request)
+        return self._list_flavors_with_http_info(request)
 
-    def list_flavors_with_http_info(self, request):
-        all_params = ['instance_id', 'spec_code', 'cache_mode', 'engine', 'engine_version', 'cpu_type', 'capacity']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_flavors_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2132,14 +1982,10 @@ class DcsClient(Client):
         :type request: :class:`huaweicloudsdkdcs.v2.ListGroupReplicationInfoRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.ListGroupReplicationInfoResponse`
         """
-        return self.list_group_replication_info_with_http_info(request)
+        return self._list_group_replication_info_with_http_info(request)
 
-    def list_group_replication_info_with_http_info(self, request):
-        all_params = ['instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_group_replication_info_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2192,14 +2038,10 @@ class DcsClient(Client):
         :type request: :class:`huaweicloudsdkdcs.v2.ListHotKeyScanTasksRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.ListHotKeyScanTasksResponse`
         """
-        return self.list_hot_key_scan_tasks_with_http_info(request)
+        return self._list_hot_key_scan_tasks_with_http_info(request)
 
-    def list_hot_key_scan_tasks_with_http_info(self, request):
-        all_params = ['instance_id', 'offset', 'limit', 'status']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_hot_key_scan_tasks_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2258,14 +2100,10 @@ class DcsClient(Client):
         :type request: :class:`huaweicloudsdkdcs.v2.ListInstancesRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.ListInstancesResponse`
         """
-        return self.list_instances_with_http_info(request)
+        return self._list_instances_with_http_info(request)
 
-    def list_instances_with_http_info(self, request):
-        all_params = ['instance_id', 'include_failure', 'include_delete', 'name', 'offset', 'limit', 'status', 'name_equal', 'tags', 'ip']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_instances_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2336,14 +2174,10 @@ class DcsClient(Client):
         :type request: :class:`huaweicloudsdkdcs.v2.ListMaintenanceWindowsRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.ListMaintenanceWindowsResponse`
         """
-        return self.list_maintenance_windows_with_http_info(request)
+        return self._list_maintenance_windows_with_http_info(request)
 
-    def list_maintenance_windows_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_maintenance_windows_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2394,14 +2228,10 @@ class DcsClient(Client):
         :type request: :class:`huaweicloudsdkdcs.v2.ListMigrationTaskRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.ListMigrationTaskResponse`
         """
-        return self.list_migration_task_with_http_info(request)
+        return self._list_migration_task_with_http_info(request)
 
-    def list_migration_task_with_http_info(self, request):
-        all_params = ['offset', 'limit', 'name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_migration_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2459,14 +2289,10 @@ class DcsClient(Client):
         :type request: :class:`huaweicloudsdkdcs.v2.ListMonitoredObjectsRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.ListMonitoredObjectsResponse`
         """
-        return self.list_monitored_objects_with_http_info(request)
+        return self._list_monitored_objects_with_http_info(request)
 
-    def list_monitored_objects_with_http_info(self, request):
-        all_params = ['dim_name', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_monitored_objects_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2524,14 +2350,10 @@ class DcsClient(Client):
         :type request: :class:`huaweicloudsdkdcs.v2.ListMonitoredObjectsOfInstanceRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.ListMonitoredObjectsOfInstanceResponse`
         """
-        return self.list_monitored_objects_of_instance_with_http_info(request)
+        return self._list_monitored_objects_of_instance_with_http_info(request)
 
-    def list_monitored_objects_of_instance_with_http_info(self, request):
-        all_params = ['instance_id', 'dim_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_monitored_objects_of_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2586,14 +2408,10 @@ class DcsClient(Client):
         :type request: :class:`huaweicloudsdkdcs.v2.ListNumberOfInstancesInDifferentStatusRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.ListNumberOfInstancesInDifferentStatusResponse`
         """
-        return self.list_number_of_instances_in_different_status_with_http_info(request)
+        return self._list_number_of_instances_in_different_status_with_http_info(request)
 
-    def list_number_of_instances_in_different_status_with_http_info(self, request):
-        all_params = ['include_failure']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_number_of_instances_in_different_status_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2646,14 +2464,10 @@ class DcsClient(Client):
         :type request: :class:`huaweicloudsdkdcs.v2.ListRedislogRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.ListRedislogResponse`
         """
-        return self.list_redislog_with_http_info(request)
+        return self._list_redislog_with_http_info(request)
 
-    def list_redislog_with_http_info(self, request):
-        all_params = ['instance_id', 'log_type', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_redislog_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2712,14 +2526,10 @@ class DcsClient(Client):
         :type request: :class:`huaweicloudsdkdcs.v2.ListRestoreRecordsRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.ListRestoreRecordsResponse`
         """
-        return self.list_restore_records_with_http_info(request)
+        return self._list_restore_records_with_http_info(request)
 
-    def list_restore_records_with_http_info(self, request):
-        all_params = ['instance_id', 'begin_time', 'end_time', 'limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_restore_records_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2780,14 +2590,10 @@ class DcsClient(Client):
         :type request: :class:`huaweicloudsdkdcs.v2.ListSlowlogRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.ListSlowlogResponse`
         """
-        return self.list_slowlog_with_http_info(request)
+        return self._list_slowlog_with_http_info(request)
 
-    def list_slowlog_with_http_info(self, request):
-        all_params = ['instance_id', 'start_time', 'end_time', 'offset', 'limit', 'sort_key', 'sort_dir']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_slowlog_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2852,14 +2658,10 @@ class DcsClient(Client):
         :type request: :class:`huaweicloudsdkdcs.v2.ListStatisticsOfRunningInstancesRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.ListStatisticsOfRunningInstancesResponse`
         """
-        return self.list_statistics_of_running_instances_with_http_info(request)
+        return self._list_statistics_of_running_instances_with_http_info(request)
 
-    def list_statistics_of_running_instances_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_statistics_of_running_instances_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2910,14 +2712,10 @@ class DcsClient(Client):
         :type request: :class:`huaweicloudsdkdcs.v2.ListTagsOfTenantRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.ListTagsOfTenantResponse`
         """
-        return self.list_tags_of_tenant_with_http_info(request)
+        return self._list_tags_of_tenant_with_http_info(request)
 
-    def list_tags_of_tenant_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_tags_of_tenant_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2968,14 +2766,10 @@ class DcsClient(Client):
         :type request: :class:`huaweicloudsdkdcs.v2.ResetPasswordRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.ResetPasswordResponse`
         """
-        return self.reset_password_with_http_info(request)
+        return self._reset_password_with_http_info(request)
 
-    def reset_password_with_http_info(self, request):
-        all_params = ['instance_id', 'reset_password_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _reset_password_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3030,14 +2824,10 @@ class DcsClient(Client):
         :type request: :class:`huaweicloudsdkdcs.v2.ResizeInstanceRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.ResizeInstanceResponse`
         """
-        return self.resize_instance_with_http_info(request)
+        return self._resize_instance_with_http_info(request)
 
-    def resize_instance_with_http_info(self, request):
-        all_params = ['instance_id', 'resize_instance_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _resize_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3094,14 +2884,10 @@ class DcsClient(Client):
         :type request: :class:`huaweicloudsdkdcs.v2.RestartOrFlushInstancesRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.RestartOrFlushInstancesResponse`
         """
-        return self.restart_or_flush_instances_with_http_info(request)
+        return self._restart_or_flush_instances_with_http_info(request)
 
-    def restart_or_flush_instances_with_http_info(self, request):
-        all_params = ['restart_or_flush_instances_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _restart_or_flush_instances_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3155,14 +2941,10 @@ class DcsClient(Client):
         :type request: :class:`huaweicloudsdkdcs.v2.RestoreInstanceRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.RestoreInstanceResponse`
         """
-        return self.restore_instance_with_http_info(request)
+        return self._restore_instance_with_http_info(request)
 
-    def restore_instance_with_http_info(self, request):
-        all_params = ['instance_id', 'restore_instance_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _restore_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3217,14 +2999,10 @@ class DcsClient(Client):
         :type request: :class:`huaweicloudsdkdcs.v2.SetOnlineMigrationTaskRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.SetOnlineMigrationTaskResponse`
         """
-        return self.set_online_migration_task_with_http_info(request)
+        return self._set_online_migration_task_with_http_info(request)
 
-    def set_online_migration_task_with_http_info(self, request):
-        all_params = ['task_id', 'set_online_migration_task_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _set_online_migration_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3279,14 +3057,10 @@ class DcsClient(Client):
         :type request: :class:`huaweicloudsdkdcs.v2.ShowBigkeyAutoscanConfigRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.ShowBigkeyAutoscanConfigResponse`
         """
-        return self.show_bigkey_autoscan_config_with_http_info(request)
+        return self._show_bigkey_autoscan_config_with_http_info(request)
 
-    def show_bigkey_autoscan_config_with_http_info(self, request):
-        all_params = ['instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_bigkey_autoscan_config_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3339,14 +3113,10 @@ class DcsClient(Client):
         :type request: :class:`huaweicloudsdkdcs.v2.ShowBigkeyScanTaskDetailsRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.ShowBigkeyScanTaskDetailsResponse`
         """
-        return self.show_bigkey_scan_task_details_with_http_info(request)
+        return self._show_bigkey_scan_task_details_with_http_info(request)
 
-    def show_bigkey_scan_task_details_with_http_info(self, request):
-        all_params = ['instance_id', 'bigkey_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_bigkey_scan_task_details_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3401,14 +3171,10 @@ class DcsClient(Client):
         :type request: :class:`huaweicloudsdkdcs.v2.ShowDiagnosisTaskDetailsRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.ShowDiagnosisTaskDetailsResponse`
         """
-        return self.show_diagnosis_task_details_with_http_info(request)
+        return self._show_diagnosis_task_details_with_http_info(request)
 
-    def show_diagnosis_task_details_with_http_info(self, request):
-        all_params = ['report_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_diagnosis_task_details_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3461,14 +3227,10 @@ class DcsClient(Client):
         :type request: :class:`huaweicloudsdkdcs.v2.ShowHotkeyAutoscanConfigRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.ShowHotkeyAutoscanConfigResponse`
         """
-        return self.show_hotkey_autoscan_config_with_http_info(request)
+        return self._show_hotkey_autoscan_config_with_http_info(request)
 
-    def show_hotkey_autoscan_config_with_http_info(self, request):
-        all_params = ['instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_hotkey_autoscan_config_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3521,14 +3283,10 @@ class DcsClient(Client):
         :type request: :class:`huaweicloudsdkdcs.v2.ShowHotkeyTaskDetailsRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.ShowHotkeyTaskDetailsResponse`
         """
-        return self.show_hotkey_task_details_with_http_info(request)
+        return self._show_hotkey_task_details_with_http_info(request)
 
-    def show_hotkey_task_details_with_http_info(self, request):
-        all_params = ['instance_id', 'hotkey_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_hotkey_task_details_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3583,14 +3341,10 @@ class DcsClient(Client):
         :type request: :class:`huaweicloudsdkdcs.v2.ShowInstanceRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.ShowInstanceResponse`
         """
-        return self.show_instance_with_http_info(request)
+        return self._show_instance_with_http_info(request)
 
-    def show_instance_with_http_info(self, request):
-        all_params = ['instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3643,14 +3397,10 @@ class DcsClient(Client):
         :type request: :class:`huaweicloudsdkdcs.v2.ShowMigrationTaskRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.ShowMigrationTaskResponse`
         """
-        return self.show_migration_task_with_http_info(request)
+        return self._show_migration_task_with_http_info(request)
 
-    def show_migration_task_with_http_info(self, request):
-        all_params = ['task_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_migration_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3703,14 +3453,10 @@ class DcsClient(Client):
         :type request: :class:`huaweicloudsdkdcs.v2.ShowMigrationTaskStatsRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.ShowMigrationTaskStatsResponse`
         """
-        return self.show_migration_task_stats_with_http_info(request)
+        return self._show_migration_task_stats_with_http_info(request)
 
-    def show_migration_task_stats_with_http_info(self, request):
-        all_params = ['task_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_migration_task_stats_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3763,14 +3509,10 @@ class DcsClient(Client):
         :type request: :class:`huaweicloudsdkdcs.v2.ShowQuotaOfTenantRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.ShowQuotaOfTenantResponse`
         """
-        return self.show_quota_of_tenant_with_http_info(request)
+        return self._show_quota_of_tenant_with_http_info(request)
 
-    def show_quota_of_tenant_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_quota_of_tenant_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3821,14 +3563,10 @@ class DcsClient(Client):
         :type request: :class:`huaweicloudsdkdcs.v2.ShowTagsRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.ShowTagsResponse`
         """
-        return self.show_tags_with_http_info(request)
+        return self._show_tags_with_http_info(request)
 
-    def show_tags_with_http_info(self, request):
-        all_params = ['instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3881,14 +3619,10 @@ class DcsClient(Client):
         :type request: :class:`huaweicloudsdkdcs.v2.StopMigrationTaskRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.StopMigrationTaskResponse`
         """
-        return self.stop_migration_task_with_http_info(request)
+        return self._stop_migration_task_with_http_info(request)
 
-    def stop_migration_task_with_http_info(self, request):
-        all_params = ['task_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _stop_migration_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3941,14 +3675,10 @@ class DcsClient(Client):
         :type request: :class:`huaweicloudsdkdcs.v2.StopMigrationTaskSyncRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.StopMigrationTaskSyncResponse`
         """
-        return self.stop_migration_task_sync_with_http_info(request)
+        return self._stop_migration_task_sync_with_http_info(request)
 
-    def stop_migration_task_sync_with_http_info(self, request):
-        all_params = ['task_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _stop_migration_task_sync_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4001,14 +3731,10 @@ class DcsClient(Client):
         :type request: :class:`huaweicloudsdkdcs.v2.UpdateBigkeyAutoscanConfigRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.UpdateBigkeyAutoscanConfigResponse`
         """
-        return self.update_bigkey_autoscan_config_with_http_info(request)
+        return self._update_bigkey_autoscan_config_with_http_info(request)
 
-    def update_bigkey_autoscan_config_with_http_info(self, request):
-        all_params = ['instance_id', 'update_bigkey_autoscan_config_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_bigkey_autoscan_config_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4063,14 +3789,10 @@ class DcsClient(Client):
         :type request: :class:`huaweicloudsdkdcs.v2.UpdateConfigurationsRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.UpdateConfigurationsResponse`
         """
-        return self.update_configurations_with_http_info(request)
+        return self._update_configurations_with_http_info(request)
 
-    def update_configurations_with_http_info(self, request):
-        all_params = ['instance_id', 'update_configurations_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_configurations_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4125,14 +3847,10 @@ class DcsClient(Client):
         :type request: :class:`huaweicloudsdkdcs.v2.UpdateHotkeyAutoScanConfigRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.UpdateHotkeyAutoScanConfigResponse`
         """
-        return self.update_hotkey_auto_scan_config_with_http_info(request)
+        return self._update_hotkey_auto_scan_config_with_http_info(request)
 
-    def update_hotkey_auto_scan_config_with_http_info(self, request):
-        all_params = ['instance_id', 'update_hotkey_autoscan_config_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_hotkey_auto_scan_config_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4187,14 +3905,10 @@ class DcsClient(Client):
         :type request: :class:`huaweicloudsdkdcs.v2.UpdateInstanceRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.UpdateInstanceResponse`
         """
-        return self.update_instance_with_http_info(request)
+        return self._update_instance_with_http_info(request)
 
-    def update_instance_with_http_info(self, request):
-        all_params = ['instance_id', 'update_instance_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4249,14 +3963,10 @@ class DcsClient(Client):
         :type request: :class:`huaweicloudsdkdcs.v2.UpdateInstanceBandwidthRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.UpdateInstanceBandwidthResponse`
         """
-        return self.update_instance_bandwidth_with_http_info(request)
+        return self._update_instance_bandwidth_with_http_info(request)
 
-    def update_instance_bandwidth_with_http_info(self, request):
-        all_params = ['instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_instance_bandwidth_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4309,14 +4019,10 @@ class DcsClient(Client):
         :type request: :class:`huaweicloudsdkdcs.v2.UpdatePasswordRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.UpdatePasswordResponse`
         """
-        return self.update_password_with_http_info(request)
+        return self._update_password_with_http_info(request)
 
-    def update_password_with_http_info(self, request):
-        all_params = ['instance_id', 'update_password_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_password_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4371,14 +4077,10 @@ class DcsClient(Client):
         :type request: :class:`huaweicloudsdkdcs.v2.UpdateSlavePriorityRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.UpdateSlavePriorityResponse`
         """
-        return self.update_slave_priority_with_http_info(request)
+        return self._update_slave_priority_with_http_info(request)
 
-    def update_slave_priority_with_http_info(self, request):
-        all_params = ['instance_id', 'group_id', 'node_id', 'update_slave_priority_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_slave_priority_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4437,14 +4139,10 @@ class DcsClient(Client):
         :type request: :class:`huaweicloudsdkdcs.v2.ShowIpWhitelistRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.ShowIpWhitelistResponse`
         """
-        return self.show_ip_whitelist_with_http_info(request)
+        return self._show_ip_whitelist_with_http_info(request)
 
-    def show_ip_whitelist_with_http_info(self, request):
-        all_params = ['instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_ip_whitelist_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4497,14 +4195,10 @@ class DcsClient(Client):
         :type request: :class:`huaweicloudsdkdcs.v2.UpdateIpWhitelistRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.UpdateIpWhitelistResponse`
         """
-        return self.update_ip_whitelist_with_http_info(request)
+        return self._update_ip_whitelist_with_http_info(request)
 
-    def update_ip_whitelist_with_http_info(self, request):
-        all_params = ['instance_id', 'update_ip_whitelist_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_ip_whitelist_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

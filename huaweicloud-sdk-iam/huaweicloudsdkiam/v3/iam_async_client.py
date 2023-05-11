@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class IamAsyncClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(IamAsyncClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkiam.v3.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -56,14 +38,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.AssociateAgencyWithAllProjectsPermissionRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.AssociateAgencyWithAllProjectsPermissionResponse`
         """
-        return self.associate_agency_with_all_projects_permission_with_http_info(request)
+        return self._associate_agency_with_all_projects_permission_with_http_info(request)
 
-    def associate_agency_with_all_projects_permission_with_http_info(self, request):
-        all_params = ['agency_id', 'domain_id', 'role_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _associate_agency_with_all_projects_permission_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -123,14 +101,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.AssociateAgencyWithDomainPermissionRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.AssociateAgencyWithDomainPermissionResponse`
         """
-        return self.associate_agency_with_domain_permission_with_http_info(request)
+        return self._associate_agency_with_domain_permission_with_http_info(request)
 
-    def associate_agency_with_domain_permission_with_http_info(self, request):
-        all_params = ['domain_id', 'agency_id', 'role_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _associate_agency_with_domain_permission_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -190,14 +164,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.AssociateAgencyWithProjectPermissionRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.AssociateAgencyWithProjectPermissionResponse`
         """
-        return self.associate_agency_with_project_permission_with_http_info(request)
+        return self._associate_agency_with_project_permission_with_http_info(request)
 
-    def associate_agency_with_project_permission_with_http_info(self, request):
-        all_params = ['project_id', 'agency_id', 'role_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _associate_agency_with_project_permission_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -257,14 +227,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.AssociateRoleToGroupOnEnterpriseProjectRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.AssociateRoleToGroupOnEnterpriseProjectResponse`
         """
-        return self.associate_role_to_group_on_enterprise_project_with_http_info(request)
+        return self._associate_role_to_group_on_enterprise_project_with_http_info(request)
 
-    def associate_role_to_group_on_enterprise_project_with_http_info(self, request):
-        all_params = ['enterprise_project_id', 'group_id', 'role_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _associate_role_to_group_on_enterprise_project_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -323,14 +289,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.AssociateRoleToUserOnEnterpriseProjectRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.AssociateRoleToUserOnEnterpriseProjectResponse`
         """
-        return self.associate_role_to_user_on_enterprise_project_with_http_info(request)
+        return self._associate_role_to_user_on_enterprise_project_with_http_info(request)
 
-    def associate_role_to_user_on_enterprise_project_with_http_info(self, request):
-        all_params = ['enterprise_project_id', 'user_id', 'role_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _associate_role_to_user_on_enterprise_project_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -390,14 +352,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.CheckAllProjectsPermissionForAgencyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.CheckAllProjectsPermissionForAgencyResponse`
         """
-        return self.check_all_projects_permission_for_agency_with_http_info(request)
+        return self._check_all_projects_permission_for_agency_with_http_info(request)
 
-    def check_all_projects_permission_for_agency_with_http_info(self, request):
-        all_params = ['agency_id', 'domain_id', 'role_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _check_all_projects_permission_for_agency_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -457,14 +415,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.CheckDomainPermissionForAgencyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.CheckDomainPermissionForAgencyResponse`
         """
-        return self.check_domain_permission_for_agency_with_http_info(request)
+        return self._check_domain_permission_for_agency_with_http_info(request)
 
-    def check_domain_permission_for_agency_with_http_info(self, request):
-        all_params = ['domain_id', 'agency_id', 'role_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _check_domain_permission_for_agency_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -524,14 +478,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.CheckProjectPermissionForAgencyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.CheckProjectPermissionForAgencyResponse`
         """
-        return self.check_project_permission_for_agency_with_http_info(request)
+        return self._check_project_permission_for_agency_with_http_info(request)
 
-    def check_project_permission_for_agency_with_http_info(self, request):
-        all_params = ['project_id', 'agency_id', 'role_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _check_project_permission_for_agency_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -591,14 +541,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.CreateAgencyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.CreateAgencyResponse`
         """
-        return self.create_agency_with_http_info(request)
+        return self._create_agency_with_http_info(request)
 
-    def create_agency_with_http_info(self, request):
-        all_params = ['create_agency_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_agency_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -654,14 +600,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.CreateAgencyCustomPolicyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.CreateAgencyCustomPolicyResponse`
         """
-        return self.create_agency_custom_policy_with_http_info(request)
+        return self._create_agency_custom_policy_with_http_info(request)
 
-    def create_agency_custom_policy_with_http_info(self, request):
-        all_params = ['create_agency_custom_policy_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_agency_custom_policy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -717,14 +659,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.CreateCloudServiceCustomPolicyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.CreateCloudServiceCustomPolicyResponse`
         """
-        return self.create_cloud_service_custom_policy_with_http_info(request)
+        return self._create_cloud_service_custom_policy_with_http_info(request)
 
-    def create_cloud_service_custom_policy_with_http_info(self, request):
-        all_params = ['create_cloud_service_custom_policy_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_cloud_service_custom_policy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -782,14 +720,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.CreateLoginTokenRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.CreateLoginTokenResponse`
         """
-        return self.create_login_token_with_http_info(request)
+        return self._create_login_token_with_http_info(request)
 
-    def create_login_token_with_http_info(self, request):
-        all_params = ['create_login_token_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_login_token_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -847,14 +781,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.CreateMetadataRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.CreateMetadataResponse`
         """
-        return self.create_metadata_with_http_info(request)
+        return self._create_metadata_with_http_info(request)
 
-    def create_metadata_with_http_info(self, request):
-        all_params = ['idp_id', 'protocol_id', 'create_metadata_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_metadata_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -912,14 +842,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.CreateOpenIdConnectConfigRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.CreateOpenIdConnectConfigResponse`
         """
-        return self.create_open_id_connect_config_with_http_info(request)
+        return self._create_open_id_connect_config_with_http_info(request)
 
-    def create_open_id_connect_config_with_http_info(self, request):
-        all_params = ['idp_id', 'create_open_id_connect_config_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_open_id_connect_config_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -975,14 +901,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.CreateTokenWithIdTokenRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.CreateTokenWithIdTokenResponse`
         """
-        return self.create_token_with_id_token_with_http_info(request)
+        return self._create_token_with_id_token_with_http_info(request)
 
-    def create_token_with_id_token_with_http_info(self, request):
-        all_params = ['x_idp_id', 'body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_token_with_id_token_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1038,14 +960,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.CreateUnscopedTokenWithIdTokenRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.CreateUnscopedTokenWithIdTokenResponse`
         """
-        return self.create_unscoped_token_with_id_token_with_http_info(request)
+        return self._create_unscoped_token_with_id_token_with_http_info(request)
 
-    def create_unscoped_token_with_id_token_with_http_info(self, request):
-        all_params = ['idp_id', 'protocol_id', 'authorization']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_unscoped_token_with_id_token_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1105,14 +1023,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.DeleteAgencyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.DeleteAgencyResponse`
         """
-        return self.delete_agency_with_http_info(request)
+        return self._delete_agency_with_http_info(request)
 
-    def delete_agency_with_http_info(self, request):
-        all_params = ['agency_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_agency_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1168,14 +1082,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.DeleteCustomPolicyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.DeleteCustomPolicyResponse`
         """
-        return self.delete_custom_policy_with_http_info(request)
+        return self._delete_custom_policy_with_http_info(request)
 
-    def delete_custom_policy_with_http_info(self, request):
-        all_params = ['role_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_custom_policy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1231,14 +1141,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.DeleteDomainGroupInheritedRoleRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.DeleteDomainGroupInheritedRoleResponse`
         """
-        return self.delete_domain_group_inherited_role_with_http_info(request)
+        return self._delete_domain_group_inherited_role_with_http_info(request)
 
-    def delete_domain_group_inherited_role_with_http_info(self, request):
-        all_params = ['domain_id', 'group_id', 'role_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_domain_group_inherited_role_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1298,14 +1204,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneAddUserToGroupRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneAddUserToGroupResponse`
         """
-        return self.keystone_add_user_to_group_with_http_info(request)
+        return self._keystone_add_user_to_group_with_http_info(request)
 
-    def keystone_add_user_to_group_with_http_info(self, request):
-        all_params = ['group_id', 'user_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _keystone_add_user_to_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1363,14 +1265,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneAssociateGroupWithDomainPermissionRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneAssociateGroupWithDomainPermissionResponse`
         """
-        return self.keystone_associate_group_with_domain_permission_with_http_info(request)
+        return self._keystone_associate_group_with_domain_permission_with_http_info(request)
 
-    def keystone_associate_group_with_domain_permission_with_http_info(self, request):
-        all_params = ['domain_id', 'group_id', 'role_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _keystone_associate_group_with_domain_permission_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1430,14 +1328,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneAssociateGroupWithProjectPermissionRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneAssociateGroupWithProjectPermissionResponse`
         """
-        return self.keystone_associate_group_with_project_permission_with_http_info(request)
+        return self._keystone_associate_group_with_project_permission_with_http_info(request)
 
-    def keystone_associate_group_with_project_permission_with_http_info(self, request):
-        all_params = ['project_id', 'group_id', 'role_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _keystone_associate_group_with_project_permission_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1497,14 +1391,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneCheckDomainPermissionForGroupRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneCheckDomainPermissionForGroupResponse`
         """
-        return self.keystone_check_domain_permission_for_group_with_http_info(request)
+        return self._keystone_check_domain_permission_for_group_with_http_info(request)
 
-    def keystone_check_domain_permission_for_group_with_http_info(self, request):
-        all_params = ['domain_id', 'group_id', 'role_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _keystone_check_domain_permission_for_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1564,14 +1454,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneCheckProjectPermissionForGroupRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneCheckProjectPermissionForGroupResponse`
         """
-        return self.keystone_check_project_permission_for_group_with_http_info(request)
+        return self._keystone_check_project_permission_for_group_with_http_info(request)
 
-    def keystone_check_project_permission_for_group_with_http_info(self, request):
-        all_params = ['project_id', 'group_id', 'role_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _keystone_check_project_permission_for_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1631,14 +1517,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneCheckUserInGroupRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneCheckUserInGroupResponse`
         """
-        return self.keystone_check_user_in_group_with_http_info(request)
+        return self._keystone_check_user_in_group_with_http_info(request)
 
-    def keystone_check_user_in_group_with_http_info(self, request):
-        all_params = ['group_id', 'user_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _keystone_check_user_in_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1696,14 +1578,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneCheckroleForGroupRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneCheckroleForGroupResponse`
         """
-        return self.keystone_checkrole_for_group_with_http_info(request)
+        return self._keystone_checkrole_for_group_with_http_info(request)
 
-    def keystone_checkrole_for_group_with_http_info(self, request):
-        all_params = ['domain_id', 'group_id', 'role_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _keystone_checkrole_for_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1763,14 +1641,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneCreateGroupRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneCreateGroupResponse`
         """
-        return self.keystone_create_group_with_http_info(request)
+        return self._keystone_create_group_with_http_info(request)
 
-    def keystone_create_group_with_http_info(self, request):
-        all_params = ['keystone_create_group_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _keystone_create_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1826,14 +1700,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneCreateIdentityProviderRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneCreateIdentityProviderResponse`
         """
-        return self.keystone_create_identity_provider_with_http_info(request)
+        return self._keystone_create_identity_provider_with_http_info(request)
 
-    def keystone_create_identity_provider_with_http_info(self, request):
-        all_params = ['id', 'keystone_create_identity_provider_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _keystone_create_identity_provider_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1891,14 +1761,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneCreateMappingRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneCreateMappingResponse`
         """
-        return self.keystone_create_mapping_with_http_info(request)
+        return self._keystone_create_mapping_with_http_info(request)
 
-    def keystone_create_mapping_with_http_info(self, request):
-        all_params = ['id', 'keystone_create_mapping_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _keystone_create_mapping_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1956,14 +1822,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneCreateProjectRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneCreateProjectResponse`
         """
-        return self.keystone_create_project_with_http_info(request)
+        return self._keystone_create_project_with_http_info(request)
 
-    def keystone_create_project_with_http_info(self, request):
-        all_params = ['keystone_create_project_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _keystone_create_project_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2019,14 +1881,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneCreateProtocolRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneCreateProtocolResponse`
         """
-        return self.keystone_create_protocol_with_http_info(request)
+        return self._keystone_create_protocol_with_http_info(request)
 
-    def keystone_create_protocol_with_http_info(self, request):
-        all_params = ['idp_id', 'protocol_id', 'keystone_create_protocol_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _keystone_create_protocol_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2086,14 +1944,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneCreateScopedTokenRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneCreateScopedTokenResponse`
         """
-        return self.keystone_create_scoped_token_with_http_info(request)
+        return self._keystone_create_scoped_token_with_http_info(request)
 
-    def keystone_create_scoped_token_with_http_info(self, request):
-        all_params = ['keystone_create_scoped_token_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _keystone_create_scoped_token_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2149,14 +2003,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneDeleteGroupRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneDeleteGroupResponse`
         """
-        return self.keystone_delete_group_with_http_info(request)
+        return self._keystone_delete_group_with_http_info(request)
 
-    def keystone_delete_group_with_http_info(self, request):
-        all_params = ['group_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _keystone_delete_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2212,14 +2062,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneDeleteIdentityProviderRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneDeleteIdentityProviderResponse`
         """
-        return self.keystone_delete_identity_provider_with_http_info(request)
+        return self._keystone_delete_identity_provider_with_http_info(request)
 
-    def keystone_delete_identity_provider_with_http_info(self, request):
-        all_params = ['id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _keystone_delete_identity_provider_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2275,14 +2121,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneDeleteMappingRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneDeleteMappingResponse`
         """
-        return self.keystone_delete_mapping_with_http_info(request)
+        return self._keystone_delete_mapping_with_http_info(request)
 
-    def keystone_delete_mapping_with_http_info(self, request):
-        all_params = ['id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _keystone_delete_mapping_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2338,14 +2180,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneDeleteProtocolRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneDeleteProtocolResponse`
         """
-        return self.keystone_delete_protocol_with_http_info(request)
+        return self._keystone_delete_protocol_with_http_info(request)
 
-    def keystone_delete_protocol_with_http_info(self, request):
-        all_params = ['idp_id', 'protocol_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _keystone_delete_protocol_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2401,14 +2239,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneListAllProjectPermissionsForGroupRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneListAllProjectPermissionsForGroupResponse`
         """
-        return self.keystone_list_all_project_permissions_for_group_with_http_info(request)
+        return self._keystone_list_all_project_permissions_for_group_with_http_info(request)
 
-    def keystone_list_all_project_permissions_for_group_with_http_info(self, request):
-        all_params = ['domain_id', 'group_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _keystone_list_all_project_permissions_for_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2466,14 +2300,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneListAuthDomainsRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneListAuthDomainsResponse`
         """
-        return self.keystone_list_auth_domains_with_http_info(request)
+        return self._keystone_list_auth_domains_with_http_info(request)
 
-    def keystone_list_auth_domains_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _keystone_list_auth_domains_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2527,14 +2357,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneListAuthProjectsRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneListAuthProjectsResponse`
         """
-        return self.keystone_list_auth_projects_with_http_info(request)
+        return self._keystone_list_auth_projects_with_http_info(request)
 
-    def keystone_list_auth_projects_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _keystone_list_auth_projects_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2588,14 +2414,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneListDomainPermissionsForGroupRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneListDomainPermissionsForGroupResponse`
         """
-        return self.keystone_list_domain_permissions_for_group_with_http_info(request)
+        return self._keystone_list_domain_permissions_for_group_with_http_info(request)
 
-    def keystone_list_domain_permissions_for_group_with_http_info(self, request):
-        all_params = ['domain_id', 'group_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _keystone_list_domain_permissions_for_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2653,14 +2475,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneListEndpointsRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneListEndpointsResponse`
         """
-        return self.keystone_list_endpoints_with_http_info(request)
+        return self._keystone_list_endpoints_with_http_info(request)
 
-    def keystone_list_endpoints_with_http_info(self, request):
-        all_params = ['interface', 'service_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _keystone_list_endpoints_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2719,14 +2537,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneListFederationDomainsRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneListFederationDomainsResponse`
         """
-        return self.keystone_list_federation_domains_with_http_info(request)
+        return self._keystone_list_federation_domains_with_http_info(request)
 
-    def keystone_list_federation_domains_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _keystone_list_federation_domains_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2780,14 +2594,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneListGroupsRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneListGroupsResponse`
         """
-        return self.keystone_list_groups_with_http_info(request)
+        return self._keystone_list_groups_with_http_info(request)
 
-    def keystone_list_groups_with_http_info(self, request):
-        all_params = ['domain_id', 'name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _keystone_list_groups_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2845,14 +2655,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneListIdentityProvidersRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneListIdentityProvidersResponse`
         """
-        return self.keystone_list_identity_providers_with_http_info(request)
+        return self._keystone_list_identity_providers_with_http_info(request)
 
-    def keystone_list_identity_providers_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _keystone_list_identity_providers_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2906,14 +2712,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneListMappingsRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneListMappingsResponse`
         """
-        return self.keystone_list_mappings_with_http_info(request)
+        return self._keystone_list_mappings_with_http_info(request)
 
-    def keystone_list_mappings_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _keystone_list_mappings_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2967,14 +2769,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneListPermissionsRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneListPermissionsResponse`
         """
-        return self.keystone_list_permissions_with_http_info(request)
+        return self._keystone_list_permissions_with_http_info(request)
 
-    def keystone_list_permissions_with_http_info(self, request):
-        all_params = ['name', 'domain_id', 'page', 'per_page', 'permission_type', 'display_name', 'type', 'catalog']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _keystone_list_permissions_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3044,14 +2842,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneListProjectPermissionsForGroupRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneListProjectPermissionsForGroupResponse`
         """
-        return self.keystone_list_project_permissions_for_group_with_http_info(request)
+        return self._keystone_list_project_permissions_for_group_with_http_info(request)
 
-    def keystone_list_project_permissions_for_group_with_http_info(self, request):
-        all_params = ['project_id', 'group_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _keystone_list_project_permissions_for_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3109,14 +2903,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneListProjectsRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneListProjectsResponse`
         """
-        return self.keystone_list_projects_with_http_info(request)
+        return self._keystone_list_projects_with_http_info(request)
 
-    def keystone_list_projects_with_http_info(self, request):
-        all_params = ['domain_id', 'name', 'parent_id', 'enabled', 'is_domain', 'page', 'per_page']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _keystone_list_projects_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3184,14 +2974,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneListProjectsForUserRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneListProjectsForUserResponse`
         """
-        return self.keystone_list_projects_for_user_with_http_info(request)
+        return self._keystone_list_projects_for_user_with_http_info(request)
 
-    def keystone_list_projects_for_user_with_http_info(self, request):
-        all_params = ['user_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _keystone_list_projects_for_user_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3247,14 +3033,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneListProtocolsRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneListProtocolsResponse`
         """
-        return self.keystone_list_protocols_with_http_info(request)
+        return self._keystone_list_protocols_with_http_info(request)
 
-    def keystone_list_protocols_with_http_info(self, request):
-        all_params = ['idp_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _keystone_list_protocols_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3310,14 +3092,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneListRegionsRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneListRegionsResponse`
         """
-        return self.keystone_list_regions_with_http_info(request)
+        return self._keystone_list_regions_with_http_info(request)
 
-    def keystone_list_regions_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _keystone_list_regions_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3371,14 +3149,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneListServicesRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneListServicesResponse`
         """
-        return self.keystone_list_services_with_http_info(request)
+        return self._keystone_list_services_with_http_info(request)
 
-    def keystone_list_services_with_http_info(self, request):
-        all_params = ['type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _keystone_list_services_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3434,14 +3208,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneListUsersForGroupByAdminRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneListUsersForGroupByAdminResponse`
         """
-        return self.keystone_list_users_for_group_by_admin_with_http_info(request)
+        return self._keystone_list_users_for_group_by_admin_with_http_info(request)
 
-    def keystone_list_users_for_group_by_admin_with_http_info(self, request):
-        all_params = ['group_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _keystone_list_users_for_group_by_admin_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3497,14 +3267,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneListVersionsRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneListVersionsResponse`
         """
-        return self.keystone_list_versions_with_http_info(request)
+        return self._keystone_list_versions_with_http_info(request)
 
-    def keystone_list_versions_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _keystone_list_versions_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3558,14 +3324,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneRemoveDomainPermissionFromGroupRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneRemoveDomainPermissionFromGroupResponse`
         """
-        return self.keystone_remove_domain_permission_from_group_with_http_info(request)
+        return self._keystone_remove_domain_permission_from_group_with_http_info(request)
 
-    def keystone_remove_domain_permission_from_group_with_http_info(self, request):
-        all_params = ['domain_id', 'group_id', 'role_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _keystone_remove_domain_permission_from_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3625,14 +3387,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneRemoveProjectPermissionFromGroupRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneRemoveProjectPermissionFromGroupResponse`
         """
-        return self.keystone_remove_project_permission_from_group_with_http_info(request)
+        return self._keystone_remove_project_permission_from_group_with_http_info(request)
 
-    def keystone_remove_project_permission_from_group_with_http_info(self, request):
-        all_params = ['project_id', 'group_id', 'role_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _keystone_remove_project_permission_from_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3692,14 +3450,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneRemoveUserFromGroupRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneRemoveUserFromGroupResponse`
         """
-        return self.keystone_remove_user_from_group_with_http_info(request)
+        return self._keystone_remove_user_from_group_with_http_info(request)
 
-    def keystone_remove_user_from_group_with_http_info(self, request):
-        all_params = ['group_id', 'user_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _keystone_remove_user_from_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3757,14 +3511,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneShowCatalogRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneShowCatalogResponse`
         """
-        return self.keystone_show_catalog_with_http_info(request)
+        return self._keystone_show_catalog_with_http_info(request)
 
-    def keystone_show_catalog_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _keystone_show_catalog_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3818,14 +3568,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneShowEndpointRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneShowEndpointResponse`
         """
-        return self.keystone_show_endpoint_with_http_info(request)
+        return self._keystone_show_endpoint_with_http_info(request)
 
-    def keystone_show_endpoint_with_http_info(self, request):
-        all_params = ['endpoint_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _keystone_show_endpoint_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3881,14 +3627,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneShowGroupRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneShowGroupResponse`
         """
-        return self.keystone_show_group_with_http_info(request)
+        return self._keystone_show_group_with_http_info(request)
 
-    def keystone_show_group_with_http_info(self, request):
-        all_params = ['group_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _keystone_show_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3944,14 +3686,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneShowIdentityProviderRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneShowIdentityProviderResponse`
         """
-        return self.keystone_show_identity_provider_with_http_info(request)
+        return self._keystone_show_identity_provider_with_http_info(request)
 
-    def keystone_show_identity_provider_with_http_info(self, request):
-        all_params = ['id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _keystone_show_identity_provider_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4007,14 +3745,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneShowMappingRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneShowMappingResponse`
         """
-        return self.keystone_show_mapping_with_http_info(request)
+        return self._keystone_show_mapping_with_http_info(request)
 
-    def keystone_show_mapping_with_http_info(self, request):
-        all_params = ['id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _keystone_show_mapping_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4070,14 +3804,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneShowPermissionRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneShowPermissionResponse`
         """
-        return self.keystone_show_permission_with_http_info(request)
+        return self._keystone_show_permission_with_http_info(request)
 
-    def keystone_show_permission_with_http_info(self, request):
-        all_params = ['role_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _keystone_show_permission_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4133,14 +3863,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneShowProjectRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneShowProjectResponse`
         """
-        return self.keystone_show_project_with_http_info(request)
+        return self._keystone_show_project_with_http_info(request)
 
-    def keystone_show_project_with_http_info(self, request):
-        all_params = ['project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _keystone_show_project_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4196,14 +3922,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneShowProtocolRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneShowProtocolResponse`
         """
-        return self.keystone_show_protocol_with_http_info(request)
+        return self._keystone_show_protocol_with_http_info(request)
 
-    def keystone_show_protocol_with_http_info(self, request):
-        all_params = ['idp_id', 'protocol_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _keystone_show_protocol_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4261,14 +3983,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneShowRegionRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneShowRegionResponse`
         """
-        return self.keystone_show_region_with_http_info(request)
+        return self._keystone_show_region_with_http_info(request)
 
-    def keystone_show_region_with_http_info(self, request):
-        all_params = ['region_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _keystone_show_region_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4324,14 +4042,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneShowSecurityComplianceRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneShowSecurityComplianceResponse`
         """
-        return self.keystone_show_security_compliance_with_http_info(request)
+        return self._keystone_show_security_compliance_with_http_info(request)
 
-    def keystone_show_security_compliance_with_http_info(self, request):
-        all_params = ['domain_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _keystone_show_security_compliance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4387,14 +4101,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneShowSecurityComplianceByOptionRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneShowSecurityComplianceByOptionResponse`
         """
-        return self.keystone_show_security_compliance_by_option_with_http_info(request)
+        return self._keystone_show_security_compliance_by_option_with_http_info(request)
 
-    def keystone_show_security_compliance_by_option_with_http_info(self, request):
-        all_params = ['domain_id', 'option']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _keystone_show_security_compliance_by_option_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4452,14 +4162,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneShowServiceRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneShowServiceResponse`
         """
-        return self.keystone_show_service_with_http_info(request)
+        return self._keystone_show_service_with_http_info(request)
 
-    def keystone_show_service_with_http_info(self, request):
-        all_params = ['service_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _keystone_show_service_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4515,14 +4221,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneShowVersionRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneShowVersionResponse`
         """
-        return self.keystone_show_version_with_http_info(request)
+        return self._keystone_show_version_with_http_info(request)
 
-    def keystone_show_version_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _keystone_show_version_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4576,14 +4278,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneUpdateGroupRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneUpdateGroupResponse`
         """
-        return self.keystone_update_group_with_http_info(request)
+        return self._keystone_update_group_with_http_info(request)
 
-    def keystone_update_group_with_http_info(self, request):
-        all_params = ['group_id', 'keystone_update_group_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _keystone_update_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4641,14 +4339,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneUpdateIdentityProviderRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneUpdateIdentityProviderResponse`
         """
-        return self.keystone_update_identity_provider_with_http_info(request)
+        return self._keystone_update_identity_provider_with_http_info(request)
 
-    def keystone_update_identity_provider_with_http_info(self, request):
-        all_params = ['id', 'keystone_update_identity_provider_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _keystone_update_identity_provider_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4706,14 +4400,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneUpdateMappingRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneUpdateMappingResponse`
         """
-        return self.keystone_update_mapping_with_http_info(request)
+        return self._keystone_update_mapping_with_http_info(request)
 
-    def keystone_update_mapping_with_http_info(self, request):
-        all_params = ['id', 'keystone_update_mapping_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _keystone_update_mapping_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4771,14 +4461,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneUpdateProjectRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneUpdateProjectResponse`
         """
-        return self.keystone_update_project_with_http_info(request)
+        return self._keystone_update_project_with_http_info(request)
 
-    def keystone_update_project_with_http_info(self, request):
-        all_params = ['project_id', 'keystone_update_project_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _keystone_update_project_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4836,14 +4522,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneUpdateProtocolRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneUpdateProtocolResponse`
         """
-        return self.keystone_update_protocol_with_http_info(request)
+        return self._keystone_update_protocol_with_http_info(request)
 
-    def keystone_update_protocol_with_http_info(self, request):
-        all_params = ['idp_id', 'protocol_id', 'keystone_update_protocol_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _keystone_update_protocol_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4903,14 +4585,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.ListAgenciesRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.ListAgenciesResponse`
         """
-        return self.list_agencies_with_http_info(request)
+        return self._list_agencies_with_http_info(request)
 
-    def list_agencies_with_http_info(self, request):
-        all_params = ['domain_id', 'trust_domain_id', 'name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_agencies_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4970,14 +4648,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.ListAllProjectsPermissionsForAgencyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.ListAllProjectsPermissionsForAgencyResponse`
         """
-        return self.list_all_projects_permissions_for_agency_with_http_info(request)
+        return self._list_all_projects_permissions_for_agency_with_http_info(request)
 
-    def list_all_projects_permissions_for_agency_with_http_info(self, request):
-        all_params = ['agency_id', 'domain_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_all_projects_permissions_for_agency_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5035,14 +4709,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.ListCustomPoliciesRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.ListCustomPoliciesResponse`
         """
-        return self.list_custom_policies_with_http_info(request)
+        return self._list_custom_policies_with_http_info(request)
 
-    def list_custom_policies_with_http_info(self, request):
-        all_params = ['page', 'per_page']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_custom_policies_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5100,14 +4770,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.ListDomainPermissionsForAgencyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.ListDomainPermissionsForAgencyResponse`
         """
-        return self.list_domain_permissions_for_agency_with_http_info(request)
+        return self._list_domain_permissions_for_agency_with_http_info(request)
 
-    def list_domain_permissions_for_agency_with_http_info(self, request):
-        all_params = ['domain_id', 'agency_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_domain_permissions_for_agency_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5165,14 +4831,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.ListEnterpriseProjectsForGroupRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.ListEnterpriseProjectsForGroupResponse`
         """
-        return self.list_enterprise_projects_for_group_with_http_info(request)
+        return self._list_enterprise_projects_for_group_with_http_info(request)
 
-    def list_enterprise_projects_for_group_with_http_info(self, request):
-        all_params = ['group_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_enterprise_projects_for_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5228,14 +4890,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.ListEnterpriseProjectsForUserRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.ListEnterpriseProjectsForUserResponse`
         """
-        return self.list_enterprise_projects_for_user_with_http_info(request)
+        return self._list_enterprise_projects_for_user_with_http_info(request)
 
-    def list_enterprise_projects_for_user_with_http_info(self, request):
-        all_params = ['user_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_enterprise_projects_for_user_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5291,14 +4949,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.ListGroupsForEnterpriseProjectRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.ListGroupsForEnterpriseProjectResponse`
         """
-        return self.list_groups_for_enterprise_project_with_http_info(request)
+        return self._list_groups_for_enterprise_project_with_http_info(request)
 
-    def list_groups_for_enterprise_project_with_http_info(self, request):
-        all_params = ['enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_groups_for_enterprise_project_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5354,14 +5008,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.ListProjectPermissionsForAgencyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.ListProjectPermissionsForAgencyResponse`
         """
-        return self.list_project_permissions_for_agency_with_http_info(request)
+        return self._list_project_permissions_for_agency_with_http_info(request)
 
-    def list_project_permissions_for_agency_with_http_info(self, request):
-        all_params = ['project_id', 'agency_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_project_permissions_for_agency_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5419,14 +5069,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.ListRolesForGroupOnEnterpriseProjectRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.ListRolesForGroupOnEnterpriseProjectResponse`
         """
-        return self.list_roles_for_group_on_enterprise_project_with_http_info(request)
+        return self._list_roles_for_group_on_enterprise_project_with_http_info(request)
 
-    def list_roles_for_group_on_enterprise_project_with_http_info(self, request):
-        all_params = ['enterprise_project_id', 'group_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_roles_for_group_on_enterprise_project_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5483,14 +5129,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.ListRolesForUserOnEnterpriseProjectRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.ListRolesForUserOnEnterpriseProjectResponse`
         """
-        return self.list_roles_for_user_on_enterprise_project_with_http_info(request)
+        return self._list_roles_for_user_on_enterprise_project_with_http_info(request)
 
-    def list_roles_for_user_on_enterprise_project_with_http_info(self, request):
-        all_params = ['enterprise_project_id', 'user_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_roles_for_user_on_enterprise_project_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5547,14 +5189,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.ListUsersForEnterpriseProjectRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.ListUsersForEnterpriseProjectResponse`
         """
-        return self.list_users_for_enterprise_project_with_http_info(request)
+        return self._list_users_for_enterprise_project_with_http_info(request)
 
-    def list_users_for_enterprise_project_with_http_info(self, request):
-        all_params = ['enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_users_for_enterprise_project_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5610,14 +5248,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.RemoveAllProjectsPermissionFromAgencyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.RemoveAllProjectsPermissionFromAgencyResponse`
         """
-        return self.remove_all_projects_permission_from_agency_with_http_info(request)
+        return self._remove_all_projects_permission_from_agency_with_http_info(request)
 
-    def remove_all_projects_permission_from_agency_with_http_info(self, request):
-        all_params = ['agency_id', 'domain_id', 'role_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _remove_all_projects_permission_from_agency_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5677,14 +5311,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.RemoveDomainPermissionFromAgencyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.RemoveDomainPermissionFromAgencyResponse`
         """
-        return self.remove_domain_permission_from_agency_with_http_info(request)
+        return self._remove_domain_permission_from_agency_with_http_info(request)
 
-    def remove_domain_permission_from_agency_with_http_info(self, request):
-        all_params = ['domain_id', 'agency_id', 'role_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _remove_domain_permission_from_agency_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5744,14 +5374,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.RemoveProjectPermissionFromAgencyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.RemoveProjectPermissionFromAgencyResponse`
         """
-        return self.remove_project_permission_from_agency_with_http_info(request)
+        return self._remove_project_permission_from_agency_with_http_info(request)
 
-    def remove_project_permission_from_agency_with_http_info(self, request):
-        all_params = ['project_id', 'agency_id', 'role_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _remove_project_permission_from_agency_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5811,14 +5437,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.RevokeRoleFromGroupOnEnterpriseProjectRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.RevokeRoleFromGroupOnEnterpriseProjectResponse`
         """
-        return self.revoke_role_from_group_on_enterprise_project_with_http_info(request)
+        return self._revoke_role_from_group_on_enterprise_project_with_http_info(request)
 
-    def revoke_role_from_group_on_enterprise_project_with_http_info(self, request):
-        all_params = ['enterprise_project_id', 'group_id', 'role_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _revoke_role_from_group_on_enterprise_project_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5877,14 +5499,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.RevokeRoleFromUserOnEnterpriseProjectRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.RevokeRoleFromUserOnEnterpriseProjectResponse`
         """
-        return self.revoke_role_from_user_on_enterprise_project_with_http_info(request)
+        return self._revoke_role_from_user_on_enterprise_project_with_http_info(request)
 
-    def revoke_role_from_user_on_enterprise_project_with_http_info(self, request):
-        all_params = ['enterprise_project_id', 'user_id', 'role_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _revoke_role_from_user_on_enterprise_project_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5944,14 +5562,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.ShowAgencyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.ShowAgencyResponse`
         """
-        return self.show_agency_with_http_info(request)
+        return self._show_agency_with_http_info(request)
 
-    def show_agency_with_http_info(self, request):
-        all_params = ['agency_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_agency_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6007,14 +5621,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.ShowCustomPolicyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.ShowCustomPolicyResponse`
         """
-        return self.show_custom_policy_with_http_info(request)
+        return self._show_custom_policy_with_http_info(request)
 
-    def show_custom_policy_with_http_info(self, request):
-        all_params = ['role_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_custom_policy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6070,14 +5680,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.ShowDomainApiAclPolicyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.ShowDomainApiAclPolicyResponse`
         """
-        return self.show_domain_api_acl_policy_with_http_info(request)
+        return self._show_domain_api_acl_policy_with_http_info(request)
 
-    def show_domain_api_acl_policy_with_http_info(self, request):
-        all_params = ['domain_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_domain_api_acl_policy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6133,14 +5739,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.ShowDomainConsoleAclPolicyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.ShowDomainConsoleAclPolicyResponse`
         """
-        return self.show_domain_console_acl_policy_with_http_info(request)
+        return self._show_domain_console_acl_policy_with_http_info(request)
 
-    def show_domain_console_acl_policy_with_http_info(self, request):
-        all_params = ['domain_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_domain_console_acl_policy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6196,14 +5798,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.ShowDomainLoginPolicyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.ShowDomainLoginPolicyResponse`
         """
-        return self.show_domain_login_policy_with_http_info(request)
+        return self._show_domain_login_policy_with_http_info(request)
 
-    def show_domain_login_policy_with_http_info(self, request):
-        all_params = ['domain_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_domain_login_policy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6259,14 +5857,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.ShowDomainPasswordPolicyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.ShowDomainPasswordPolicyResponse`
         """
-        return self.show_domain_password_policy_with_http_info(request)
+        return self._show_domain_password_policy_with_http_info(request)
 
-    def show_domain_password_policy_with_http_info(self, request):
-        all_params = ['domain_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_domain_password_policy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6322,14 +5916,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.ShowDomainProtectPolicyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.ShowDomainProtectPolicyResponse`
         """
-        return self.show_domain_protect_policy_with_http_info(request)
+        return self._show_domain_protect_policy_with_http_info(request)
 
-    def show_domain_protect_policy_with_http_info(self, request):
-        all_params = ['domain_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_domain_protect_policy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6385,14 +5975,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.ShowDomainQuotaRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.ShowDomainQuotaResponse`
         """
-        return self.show_domain_quota_with_http_info(request)
+        return self._show_domain_quota_with_http_info(request)
 
-    def show_domain_quota_with_http_info(self, request):
-        all_params = ['domain_id', 'type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_domain_quota_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6449,14 +6035,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.ShowDomainRoleAssignmentsRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.ShowDomainRoleAssignmentsResponse`
         """
-        return self.show_domain_role_assignments_with_http_info(request)
+        return self._show_domain_role_assignments_with_http_info(request)
 
-    def show_domain_role_assignments_with_http_info(self, request):
-        all_params = ['domain_id', 'role_id', 'subject', 'subject_user_id', 'subject_group_id', 'subject_agency_id', 'scope', 'scope_project_id', 'scope_domain_id', 'scope_enterprise_projects_id', 'is_inherited', 'include_group', 'page', 'per_page']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_domain_role_assignments_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6538,14 +6120,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.ShowMetadataRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.ShowMetadataResponse`
         """
-        return self.show_metadata_with_http_info(request)
+        return self._show_metadata_with_http_info(request)
 
-    def show_metadata_with_http_info(self, request):
-        all_params = ['idp_id', 'protocol_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_metadata_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6601,14 +6179,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.ShowOpenIdConnectConfigRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.ShowOpenIdConnectConfigResponse`
         """
-        return self.show_open_id_connect_config_with_http_info(request)
+        return self._show_open_id_connect_config_with_http_info(request)
 
-    def show_open_id_connect_config_with_http_info(self, request):
-        all_params = ['idp_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_open_id_connect_config_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6664,14 +6238,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.ShowProjectDetailsAndStatusRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.ShowProjectDetailsAndStatusResponse`
         """
-        return self.show_project_details_and_status_with_http_info(request)
+        return self._show_project_details_and_status_with_http_info(request)
 
-    def show_project_details_and_status_with_http_info(self, request):
-        all_params = ['project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_project_details_and_status_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6727,14 +6297,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.ShowProjectQuotaRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.ShowProjectQuotaResponse`
         """
-        return self.show_project_quota_with_http_info(request)
+        return self._show_project_quota_with_http_info(request)
 
-    def show_project_quota_with_http_info(self, request):
-        all_params = ['project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_project_quota_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6790,14 +6356,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.UpdateAgencyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.UpdateAgencyResponse`
         """
-        return self.update_agency_with_http_info(request)
+        return self._update_agency_with_http_info(request)
 
-    def update_agency_with_http_info(self, request):
-        all_params = ['agency_id', 'update_agency_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_agency_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6855,14 +6417,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.UpdateAgencyCustomPolicyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.UpdateAgencyCustomPolicyResponse`
         """
-        return self.update_agency_custom_policy_with_http_info(request)
+        return self._update_agency_custom_policy_with_http_info(request)
 
-    def update_agency_custom_policy_with_http_info(self, request):
-        all_params = ['role_id', 'update_agency_custom_policy_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_agency_custom_policy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6920,14 +6478,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.UpdateCloudServiceCustomPolicyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.UpdateCloudServiceCustomPolicyResponse`
         """
-        return self.update_cloud_service_custom_policy_with_http_info(request)
+        return self._update_cloud_service_custom_policy_with_http_info(request)
 
-    def update_cloud_service_custom_policy_with_http_info(self, request):
-        all_params = ['role_id', 'update_cloud_service_custom_policy_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_cloud_service_custom_policy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -6985,14 +6539,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.UpdateDomainApiAclPolicyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.UpdateDomainApiAclPolicyResponse`
         """
-        return self.update_domain_api_acl_policy_with_http_info(request)
+        return self._update_domain_api_acl_policy_with_http_info(request)
 
-    def update_domain_api_acl_policy_with_http_info(self, request):
-        all_params = ['domain_id', 'update_domain_api_acl_policy_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_domain_api_acl_policy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7050,14 +6600,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.UpdateDomainConsoleAclPolicyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.UpdateDomainConsoleAclPolicyResponse`
         """
-        return self.update_domain_console_acl_policy_with_http_info(request)
+        return self._update_domain_console_acl_policy_with_http_info(request)
 
-    def update_domain_console_acl_policy_with_http_info(self, request):
-        all_params = ['domain_id', 'update_domain_console_acl_policy_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_domain_console_acl_policy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7115,14 +6661,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.UpdateDomainGroupInheritRoleRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.UpdateDomainGroupInheritRoleResponse`
         """
-        return self.update_domain_group_inherit_role_with_http_info(request)
+        return self._update_domain_group_inherit_role_with_http_info(request)
 
-    def update_domain_group_inherit_role_with_http_info(self, request):
-        all_params = ['domain_id', 'group_id', 'role_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_domain_group_inherit_role_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7182,14 +6724,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.UpdateDomainLoginPolicyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.UpdateDomainLoginPolicyResponse`
         """
-        return self.update_domain_login_policy_with_http_info(request)
+        return self._update_domain_login_policy_with_http_info(request)
 
-    def update_domain_login_policy_with_http_info(self, request):
-        all_params = ['domain_id', 'update_domain_login_policy_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_domain_login_policy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7247,14 +6785,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.UpdateDomainPasswordPolicyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.UpdateDomainPasswordPolicyResponse`
         """
-        return self.update_domain_password_policy_with_http_info(request)
+        return self._update_domain_password_policy_with_http_info(request)
 
-    def update_domain_password_policy_with_http_info(self, request):
-        all_params = ['domain_id', 'update_domain_password_policy_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_domain_password_policy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7312,14 +6846,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.UpdateDomainProtectPolicyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.UpdateDomainProtectPolicyResponse`
         """
-        return self.update_domain_protect_policy_with_http_info(request)
+        return self._update_domain_protect_policy_with_http_info(request)
 
-    def update_domain_protect_policy_with_http_info(self, request):
-        all_params = ['domain_id', 'update_domain_protect_policy_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_domain_protect_policy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7375,14 +6905,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.UpdateOpenIdConnectConfigRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.UpdateOpenIdConnectConfigResponse`
         """
-        return self.update_open_id_connect_config_with_http_info(request)
+        return self._update_open_id_connect_config_with_http_info(request)
 
-    def update_open_id_connect_config_with_http_info(self, request):
-        all_params = ['idp_id', 'update_open_id_connect_config_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_open_id_connect_config_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7440,14 +6966,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.UpdateProjectStatusRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.UpdateProjectStatusResponse`
         """
-        return self.update_project_status_with_http_info(request)
+        return self._update_project_status_with_http_info(request)
 
-    def update_project_status_with_http_info(self, request):
-        all_params = ['project_id', 'update_project_status_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_project_status_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7507,14 +7029,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.CreatePermanentAccessKeyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.CreatePermanentAccessKeyResponse`
         """
-        return self.create_permanent_access_key_with_http_info(request)
+        return self._create_permanent_access_key_with_http_info(request)
 
-    def create_permanent_access_key_with_http_info(self, request):
-        all_params = ['create_permanent_access_key_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_permanent_access_key_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7572,14 +7090,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.CreateTemporaryAccessKeyByAgencyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.CreateTemporaryAccessKeyByAgencyResponse`
         """
-        return self.create_temporary_access_key_by_agency_with_http_info(request)
+        return self._create_temporary_access_key_by_agency_with_http_info(request)
 
-    def create_temporary_access_key_by_agency_with_http_info(self, request):
-        all_params = ['create_temporary_access_key_by_agency_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_temporary_access_key_by_agency_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7637,14 +7151,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.CreateTemporaryAccessKeyByTokenRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.CreateTemporaryAccessKeyByTokenResponse`
         """
-        return self.create_temporary_access_key_by_token_with_http_info(request)
+        return self._create_temporary_access_key_by_token_with_http_info(request)
 
-    def create_temporary_access_key_by_token_with_http_info(self, request):
-        all_params = ['create_temporary_access_key_by_token_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_temporary_access_key_by_token_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7700,14 +7210,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.DeletePermanentAccessKeyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.DeletePermanentAccessKeyResponse`
         """
-        return self.delete_permanent_access_key_with_http_info(request)
+        return self._delete_permanent_access_key_with_http_info(request)
 
-    def delete_permanent_access_key_with_http_info(self, request):
-        all_params = ['access_key']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_permanent_access_key_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7763,14 +7269,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.ListPermanentAccessKeysRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.ListPermanentAccessKeysResponse`
         """
-        return self.list_permanent_access_keys_with_http_info(request)
+        return self._list_permanent_access_keys_with_http_info(request)
 
-    def list_permanent_access_keys_with_http_info(self, request):
-        all_params = ['user_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_permanent_access_keys_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7826,14 +7328,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.ShowPermanentAccessKeyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.ShowPermanentAccessKeyResponse`
         """
-        return self.show_permanent_access_key_with_http_info(request)
+        return self._show_permanent_access_key_with_http_info(request)
 
-    def show_permanent_access_key_with_http_info(self, request):
-        all_params = ['access_key']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_permanent_access_key_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7889,14 +7387,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.UpdatePermanentAccessKeyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.UpdatePermanentAccessKeyResponse`
         """
-        return self.update_permanent_access_key_with_http_info(request)
+        return self._update_permanent_access_key_with_http_info(request)
 
-    def update_permanent_access_key_with_http_info(self, request):
-        all_params = ['access_key', 'update_permanent_access_key_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_permanent_access_key_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -7954,14 +7448,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.CreateBindingDeviceRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.CreateBindingDeviceResponse`
         """
-        return self.create_binding_device_with_http_info(request)
+        return self._create_binding_device_with_http_info(request)
 
-    def create_binding_device_with_http_info(self, request):
-        all_params = ['create_binding_device_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_binding_device_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -8017,14 +7507,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.CreateMfaDeviceRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.CreateMfaDeviceResponse`
         """
-        return self.create_mfa_device_with_http_info(request)
+        return self._create_mfa_device_with_http_info(request)
 
-    def create_mfa_device_with_http_info(self, request):
-        all_params = ['create_mfa_device_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_mfa_device_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -8080,14 +7566,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.CreateUserRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.CreateUserResponse`
         """
-        return self.create_user_with_http_info(request)
+        return self._create_user_with_http_info(request)
 
-    def create_user_with_http_info(self, request):
-        all_params = ['create_user_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_user_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -8143,14 +7625,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.DeleteBindingDeviceRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.DeleteBindingDeviceResponse`
         """
-        return self.delete_binding_device_with_http_info(request)
+        return self._delete_binding_device_with_http_info(request)
 
-    def delete_binding_device_with_http_info(self, request):
-        all_params = ['delete_binding_device_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_binding_device_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -8206,14 +7684,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.DeleteMfaDeviceRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.DeleteMfaDeviceResponse`
         """
-        return self.delete_mfa_device_with_http_info(request)
+        return self._delete_mfa_device_with_http_info(request)
 
-    def delete_mfa_device_with_http_info(self, request):
-        all_params = ['user_id', 'serial_number']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_mfa_device_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -8271,14 +7745,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneCreateUserRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneCreateUserResponse`
         """
-        return self.keystone_create_user_with_http_info(request)
+        return self._keystone_create_user_with_http_info(request)
 
-    def keystone_create_user_with_http_info(self, request):
-        all_params = ['keystone_create_user_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _keystone_create_user_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -8334,14 +7804,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneDeleteUserRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneDeleteUserResponse`
         """
-        return self.keystone_delete_user_with_http_info(request)
+        return self._keystone_delete_user_with_http_info(request)
 
-    def keystone_delete_user_with_http_info(self, request):
-        all_params = ['user_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _keystone_delete_user_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -8397,14 +7863,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneListGroupsForUserRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneListGroupsForUserResponse`
         """
-        return self.keystone_list_groups_for_user_with_http_info(request)
+        return self._keystone_list_groups_for_user_with_http_info(request)
 
-    def keystone_list_groups_for_user_with_http_info(self, request):
-        all_params = ['user_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _keystone_list_groups_for_user_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -8460,14 +7922,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneListUsersRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneListUsersResponse`
         """
-        return self.keystone_list_users_with_http_info(request)
+        return self._keystone_list_users_with_http_info(request)
 
-    def keystone_list_users_with_http_info(self, request):
-        all_params = ['domain_id', 'enabled', 'name', 'password_expires_at']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _keystone_list_users_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -8529,14 +7987,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneShowUserRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneShowUserResponse`
         """
-        return self.keystone_show_user_with_http_info(request)
+        return self._keystone_show_user_with_http_info(request)
 
-    def keystone_show_user_with_http_info(self, request):
-        all_params = ['user_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _keystone_show_user_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -8592,14 +8046,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneUpdateUserByAdminRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneUpdateUserByAdminResponse`
         """
-        return self.keystone_update_user_by_admin_with_http_info(request)
+        return self._keystone_update_user_by_admin_with_http_info(request)
 
-    def keystone_update_user_by_admin_with_http_info(self, request):
-        all_params = ['user_id', 'keystone_update_user_by_admin_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _keystone_update_user_by_admin_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -8657,14 +8107,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneUpdateUserPasswordRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneUpdateUserPasswordResponse`
         """
-        return self.keystone_update_user_password_with_http_info(request)
+        return self._keystone_update_user_password_with_http_info(request)
 
-    def keystone_update_user_password_with_http_info(self, request):
-        all_params = ['user_id', 'keystone_update_user_password_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _keystone_update_user_password_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -8722,14 +8168,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.ListUserLoginProtectsRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.ListUserLoginProtectsResponse`
         """
-        return self.list_user_login_protects_with_http_info(request)
+        return self._list_user_login_protects_with_http_info(request)
 
-    def list_user_login_protects_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_user_login_protects_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -8783,14 +8225,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.ListUserMfaDevicesRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.ListUserMfaDevicesResponse`
         """
-        return self.list_user_mfa_devices_with_http_info(request)
+        return self._list_user_mfa_devices_with_http_info(request)
 
-    def list_user_mfa_devices_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_user_mfa_devices_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -8844,14 +8282,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.ShowUserRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.ShowUserResponse`
         """
-        return self.show_user_with_http_info(request)
+        return self._show_user_with_http_info(request)
 
-    def show_user_with_http_info(self, request):
-        all_params = ['user_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_user_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -8907,14 +8341,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.ShowUserLoginProtectRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.ShowUserLoginProtectResponse`
         """
-        return self.show_user_login_protect_with_http_info(request)
+        return self._show_user_login_protect_with_http_info(request)
 
-    def show_user_login_protect_with_http_info(self, request):
-        all_params = ['user_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_user_login_protect_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -8970,14 +8400,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.ShowUserMfaDeviceRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.ShowUserMfaDeviceResponse`
         """
-        return self.show_user_mfa_device_with_http_info(request)
+        return self._show_user_mfa_device_with_http_info(request)
 
-    def show_user_mfa_device_with_http_info(self, request):
-        all_params = ['user_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_user_mfa_device_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -9033,14 +8459,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.UpdateLoginProtectRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.UpdateLoginProtectResponse`
         """
-        return self.update_login_protect_with_http_info(request)
+        return self._update_login_protect_with_http_info(request)
 
-    def update_login_protect_with_http_info(self, request):
-        all_params = ['user_id', 'update_login_protect_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_login_protect_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -9098,14 +8520,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.UpdateUserRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.UpdateUserResponse`
         """
-        return self.update_user_with_http_info(request)
+        return self._update_user_with_http_info(request)
 
-    def update_user_with_http_info(self, request):
-        all_params = ['user_id', 'update_user_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_user_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -9163,14 +8581,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.UpdateUserInformationRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.UpdateUserInformationResponse`
         """
-        return self.update_user_information_with_http_info(request)
+        return self._update_user_information_with_http_info(request)
 
-    def update_user_information_with_http_info(self, request):
-        all_params = ['user_id', 'update_user_information_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_user_information_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -9234,14 +8648,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneCreateAgencyTokenRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneCreateAgencyTokenResponse`
         """
-        return self.keystone_create_agency_token_with_http_info(request)
+        return self._keystone_create_agency_token_with_http_info(request)
 
-    def keystone_create_agency_token_with_http_info(self, request):
-        all_params = ['keystone_create_agency_token_request_body', 'nocatalog']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _keystone_create_agency_token_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -9304,14 +8714,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneCreateUserTokenByPasswordRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneCreateUserTokenByPasswordResponse`
         """
-        return self.keystone_create_user_token_by_password_with_http_info(request)
+        return self._keystone_create_user_token_by_password_with_http_info(request)
 
-    def keystone_create_user_token_by_password_with_http_info(self, request):
-        all_params = ['keystone_create_user_token_by_password_request_body', 'nocatalog']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _keystone_create_user_token_by_password_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -9374,14 +8780,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneCreateUserTokenByPasswordAndMfaRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneCreateUserTokenByPasswordAndMfaResponse`
         """
-        return self.keystone_create_user_token_by_password_and_mfa_with_http_info(request)
+        return self._keystone_create_user_token_by_password_and_mfa_with_http_info(request)
 
-    def keystone_create_user_token_by_password_and_mfa_with_http_info(self, request):
-        all_params = ['keystone_create_user_token_by_password_and_mfa_request_body', 'nocatalog']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _keystone_create_user_token_by_password_and_mfa_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -9439,14 +8841,10 @@ class IamAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneValidateTokenRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneValidateTokenResponse`
         """
-        return self.keystone_validate_token_with_http_info(request)
+        return self._keystone_validate_token_with_http_info(request)
 
-    def keystone_validate_token_with_http_info(self, request):
-        all_params = ['x_subject_token', 'nocatalog']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _keystone_validate_token_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class DwsClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(DwsClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkdws.v2.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -53,14 +35,10 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.AddWorkloadQueueRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.AddWorkloadQueueResponse`
         """
-        return self.add_workload_queue_with_http_info(request)
+        return self._add_workload_queue_with_http_info(request)
 
-    def add_workload_queue_with_http_info(self, request):
-        all_params = ['cluster_id', 'workload_queue']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _add_workload_queue_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -115,14 +93,10 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.AssociateEipRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.AssociateEipResponse`
         """
-        return self.associate_eip_with_http_info(request)
+        return self._associate_eip_with_http_info(request)
 
-    def associate_eip_with_http_info(self, request):
-        all_params = ['cluster_id', 'eip_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _associate_eip_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -177,14 +151,10 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.AssociateElbRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.AssociateElbResponse`
         """
-        return self.associate_elb_with_http_info(request)
+        return self._associate_elb_with_http_info(request)
 
-    def associate_elb_with_http_info(self, request):
-        all_params = ['cluster_id', 'elb_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _associate_elb_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -242,14 +212,10 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.BatchCreateClusterCnRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.BatchCreateClusterCnResponse`
         """
-        return self.batch_create_cluster_cn_with_http_info(request)
+        return self._batch_create_cluster_cn_with_http_info(request)
 
-    def batch_create_cluster_cn_with_http_info(self, request):
-        all_params = ['cluster_id', 'payload']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_create_cluster_cn_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -304,14 +270,10 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.BatchCreateResourceTagRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.BatchCreateResourceTagResponse`
         """
-        return self.batch_create_resource_tag_with_http_info(request)
+        return self._batch_create_resource_tag_with_http_info(request)
 
-    def batch_create_resource_tag_with_http_info(self, request):
-        all_params = ['cluster_id', 'tags']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_create_resource_tag_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -369,14 +331,10 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.BatchDeleteClusterCnRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.BatchDeleteClusterCnResponse`
         """
-        return self.batch_delete_cluster_cn_with_http_info(request)
+        return self._batch_delete_cluster_cn_with_http_info(request)
 
-    def batch_delete_cluster_cn_with_http_info(self, request):
-        all_params = ['cluster_id', 'instances']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_delete_cluster_cn_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -431,14 +389,10 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.BatchDeleteResourceTagRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.BatchDeleteResourceTagResponse`
         """
-        return self.batch_delete_resource_tag_with_http_info(request)
+        return self._batch_delete_resource_tag_with_http_info(request)
 
-    def batch_delete_resource_tag_with_http_info(self, request):
-        all_params = ['cluster_id', 'tags']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_delete_resource_tag_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -494,14 +448,10 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.CancelReadonlyClusterRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.CancelReadonlyClusterResponse`
         """
-        return self.cancel_readonly_cluster_with_http_info(request)
+        return self._cancel_readonly_cluster_with_http_info(request)
 
-    def cancel_readonly_cluster_with_http_info(self, request):
-        all_params = ['cluster_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _cancel_readonly_cluster_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -554,14 +504,10 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.CheckClusterRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.CheckClusterResponse`
         """
-        return self.check_cluster_with_http_info(request)
+        return self._check_cluster_with_http_info(request)
 
-    def check_cluster_with_http_info(self, request):
-        all_params = ['cluster']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _check_cluster_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -614,14 +560,10 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.CopySnapshotRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.CopySnapshotResponse`
         """
-        return self.copy_snapshot_with_http_info(request)
+        return self._copy_snapshot_with_http_info(request)
 
-    def copy_snapshot_with_http_info(self, request):
-        all_params = ['snapshot_id', 'link_copy_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _copy_snapshot_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -676,14 +618,10 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.CreateAlarmSubRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.CreateAlarmSubResponse`
         """
-        return self.create_alarm_sub_with_http_info(request)
+        return self._create_alarm_sub_with_http_info(request)
 
-    def create_alarm_sub_with_http_info(self, request):
-        all_params = ['alarm_sub_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_alarm_sub_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -738,14 +676,10 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.CreateClusterRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.CreateClusterResponse`
         """
-        return self.create_cluster_with_http_info(request)
+        return self._create_cluster_with_http_info(request)
 
-    def create_cluster_with_http_info(self, request):
-        all_params = ['create_cluster_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_cluster_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -798,14 +732,10 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.CreateClusterDnsRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.CreateClusterDnsResponse`
         """
-        return self.create_cluster_dns_with_http_info(request)
+        return self._create_cluster_dns_with_http_info(request)
 
-    def create_cluster_dns_with_http_info(self, request):
-        all_params = ['cluster_id', 'dns']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_cluster_dns_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -862,14 +792,10 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.CreateClusterV2Request`
         :rtype: :class:`huaweicloudsdkdws.v2.CreateClusterV2Response`
         """
-        return self.create_cluster_v2_with_http_info(request)
+        return self._create_cluster_v2_with_http_info(request)
 
-    def create_cluster_v2_with_http_info(self, request):
-        all_params = ['v2_create_cluster_req_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_cluster_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -922,14 +848,10 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.CreateClusterWorkloadRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.CreateClusterWorkloadResponse`
         """
-        return self.create_cluster_workload_with_http_info(request)
+        return self._create_cluster_workload_with_http_info(request)
 
-    def create_cluster_workload_with_http_info(self, request):
-        all_params = ['cluster_id', 'workload_status']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_cluster_workload_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -984,14 +906,10 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.CreateDataSourceRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.CreateDataSourceResponse`
         """
-        return self.create_data_source_with_http_info(request)
+        return self._create_data_source_with_http_info(request)
 
-    def create_data_source_with_http_info(self, request):
-        all_params = ['cluster_id', 'ext_data_source_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_data_source_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1046,14 +964,10 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.CreateDisasterRecoveryRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.CreateDisasterRecoveryResponse`
         """
-        return self.create_disaster_recovery_with_http_info(request)
+        return self._create_disaster_recovery_with_http_info(request)
 
-    def create_disaster_recovery_with_http_info(self, request):
-        all_params = ['disaster_recovery']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_disaster_recovery_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1106,14 +1020,10 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.CreateEventSubRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.CreateEventSubResponse`
         """
-        return self.create_event_sub_with_http_info(request)
+        return self._create_event_sub_with_http_info(request)
 
-    def create_event_sub_with_http_info(self, request):
-        all_params = ['event_sub_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_event_sub_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1166,14 +1076,10 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.CreateSnapshotRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.CreateSnapshotResponse`
         """
-        return self.create_snapshot_with_http_info(request)
+        return self._create_snapshot_with_http_info(request)
 
-    def create_snapshot_with_http_info(self, request):
-        all_params = ['create_snapshot_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_snapshot_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1226,14 +1132,10 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.CreateSnapshotPolicyRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.CreateSnapshotPolicyResponse`
         """
-        return self.create_snapshot_policy_with_http_info(request)
+        return self._create_snapshot_policy_with_http_info(request)
 
-    def create_snapshot_policy_with_http_info(self, request):
-        all_params = ['cluster_id', 'req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_snapshot_policy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1288,14 +1190,10 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.CreateWorkloadPlanRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.CreateWorkloadPlanResponse`
         """
-        return self.create_workload_plan_with_http_info(request)
+        return self._create_workload_plan_with_http_info(request)
 
-    def create_workload_plan_with_http_info(self, request):
-        all_params = ['cluster_id', 'workload_plan']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_workload_plan_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1350,14 +1248,10 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.DeleteAlarmSubRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.DeleteAlarmSubResponse`
         """
-        return self.delete_alarm_sub_with_http_info(request)
+        return self._delete_alarm_sub_with_http_info(request)
 
-    def delete_alarm_sub_with_http_info(self, request):
-        all_params = ['alarm_sub_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_alarm_sub_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1410,14 +1304,10 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.DeleteClusterRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.DeleteClusterResponse`
         """
-        return self.delete_cluster_with_http_info(request)
+        return self._delete_cluster_with_http_info(request)
 
-    def delete_cluster_with_http_info(self, request):
-        all_params = ['cluster_id', 'delete_cluster_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_cluster_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1472,14 +1362,10 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.DeleteClusterDnsRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.DeleteClusterDnsResponse`
         """
-        return self.delete_cluster_dns_with_http_info(request)
+        return self._delete_cluster_dns_with_http_info(request)
 
-    def delete_cluster_dns_with_http_info(self, request):
-        all_params = ['cluster_id', 'type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_cluster_dns_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1534,14 +1420,10 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.DeleteDataSourceRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.DeleteDataSourceResponse`
         """
-        return self.delete_data_source_with_http_info(request)
+        return self._delete_data_source_with_http_info(request)
 
-    def delete_data_source_with_http_info(self, request):
-        all_params = ['cluster_id', 'ext_data_source_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_data_source_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1596,14 +1478,10 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.DeleteDisasterRecoveryRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.DeleteDisasterRecoveryResponse`
         """
-        return self.delete_disaster_recovery_with_http_info(request)
+        return self._delete_disaster_recovery_with_http_info(request)
 
-    def delete_disaster_recovery_with_http_info(self, request):
-        all_params = ['disaster_recovery_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_disaster_recovery_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1656,14 +1534,10 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.DeleteEventSubRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.DeleteEventSubResponse`
         """
-        return self.delete_event_sub_with_http_info(request)
+        return self._delete_event_sub_with_http_info(request)
 
-    def delete_event_sub_with_http_info(self, request):
-        all_params = ['event_sub_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_event_sub_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1716,14 +1590,10 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.DeleteSnapshotRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.DeleteSnapshotResponse`
         """
-        return self.delete_snapshot_with_http_info(request)
+        return self._delete_snapshot_with_http_info(request)
 
-    def delete_snapshot_with_http_info(self, request):
-        all_params = ['snapshot_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_snapshot_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1776,14 +1646,10 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.DeleteSnapshotPolicyRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.DeleteSnapshotPolicyResponse`
         """
-        return self.delete_snapshot_policy_with_http_info(request)
+        return self._delete_snapshot_policy_with_http_info(request)
 
-    def delete_snapshot_policy_with_http_info(self, request):
-        all_params = ['cluster_id', 'id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_snapshot_policy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1838,14 +1704,10 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.DeleteWorkloadQueueRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.DeleteWorkloadQueueResponse`
         """
-        return self.delete_workload_queue_with_http_info(request)
+        return self._delete_workload_queue_with_http_info(request)
 
-    def delete_workload_queue_with_http_info(self, request):
-        all_params = ['cluster_id', 'workload_queue_name', 'logical_cluster_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_workload_queue_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1902,14 +1764,10 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.DisassociateEipRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.DisassociateEipResponse`
         """
-        return self.disassociate_eip_with_http_info(request)
+        return self._disassociate_eip_with_http_info(request)
 
-    def disassociate_eip_with_http_info(self, request):
-        all_params = ['cluster_id', 'eip_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _disassociate_eip_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1964,14 +1822,10 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.DisassociateElbRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.DisassociateElbResponse`
         """
-        return self.disassociate_elb_with_http_info(request)
+        return self._disassociate_elb_with_http_info(request)
 
-    def disassociate_elb_with_http_info(self, request):
-        all_params = ['cluster_id', 'elb_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _disassociate_elb_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2026,14 +1880,10 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ExecuteRedistributionClusterRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ExecuteRedistributionClusterResponse`
         """
-        return self.execute_redistribution_cluster_with_http_info(request)
+        return self._execute_redistribution_cluster_with_http_info(request)
 
-    def execute_redistribution_cluster_with_http_info(self, request):
-        all_params = ['cluster_id', 'redistribution_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _execute_redistribution_cluster_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2090,14 +1940,10 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ExpandInstanceStorageRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ExpandInstanceStorageResponse`
         """
-        return self.expand_instance_storage_with_http_info(request)
+        return self._expand_instance_storage_with_http_info(request)
 
-    def expand_instance_storage_with_http_info(self, request):
-        all_params = ['cluster_id', 'payload']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _expand_instance_storage_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2152,14 +1998,10 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ListAlarmConfigsRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ListAlarmConfigsResponse`
         """
-        return self.list_alarm_configs_with_http_info(request)
+        return self._list_alarm_configs_with_http_info(request)
 
-    def list_alarm_configs_with_http_info(self, request):
-        all_params = ['offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_alarm_configs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2214,14 +2056,10 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ListAlarmDetailRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ListAlarmDetailResponse`
         """
-        return self.list_alarm_detail_with_http_info(request)
+        return self._list_alarm_detail_with_http_info(request)
 
-    def list_alarm_detail_with_http_info(self, request):
-        all_params = ['time_zone', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_alarm_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2278,14 +2116,10 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ListAlarmStatisticRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ListAlarmStatisticResponse`
         """
-        return self.list_alarm_statistic_with_http_info(request)
+        return self._list_alarm_statistic_with_http_info(request)
 
-    def list_alarm_statistic_with_http_info(self, request):
-        all_params = ['time_zone']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_alarm_statistic_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2338,14 +2172,10 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ListAlarmSubsRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ListAlarmSubsResponse`
         """
-        return self.list_alarm_subs_with_http_info(request)
+        return self._list_alarm_subs_with_http_info(request)
 
-    def list_alarm_subs_with_http_info(self, request):
-        all_params = ['offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_alarm_subs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2400,14 +2230,10 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ListAuditLogRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ListAuditLogResponse`
         """
-        return self.list_audit_log_with_http_info(request)
+        return self._list_audit_log_with_http_info(request)
 
-    def list_audit_log_with_http_info(self, request):
-        all_params = ['cluster_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_audit_log_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2460,14 +2286,10 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ListAvailabilityZonesRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ListAvailabilityZonesResponse`
         """
-        return self.list_availability_zones_with_http_info(request)
+        return self._list_availability_zones_with_http_info(request)
 
-    def list_availability_zones_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_availability_zones_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2518,14 +2340,10 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ListClusterCnRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ListClusterCnResponse`
         """
-        return self.list_cluster_cn_with_http_info(request)
+        return self._list_cluster_cn_with_http_info(request)
 
-    def list_cluster_cn_with_http_info(self, request):
-        all_params = ['cluster_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_cluster_cn_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2578,14 +2396,10 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ListClusterConfigurationsRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ListClusterConfigurationsResponse`
         """
-        return self.list_cluster_configurations_with_http_info(request)
+        return self._list_cluster_configurations_with_http_info(request)
 
-    def list_cluster_configurations_with_http_info(self, request):
-        all_params = ['cluster_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_cluster_configurations_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2638,14 +2452,10 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ListClusterConfigurationsParameterRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ListClusterConfigurationsParameterResponse`
         """
-        return self.list_cluster_configurations_parameter_with_http_info(request)
+        return self._list_cluster_configurations_parameter_with_http_info(request)
 
-    def list_cluster_configurations_parameter_with_http_info(self, request):
-        all_params = ['cluster_id', 'configuration_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_cluster_configurations_parameter_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2700,14 +2510,10 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ListClusterDetailsRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ListClusterDetailsResponse`
         """
-        return self.list_cluster_details_with_http_info(request)
+        return self._list_cluster_details_with_http_info(request)
 
-    def list_cluster_details_with_http_info(self, request):
-        all_params = ['cluster_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_cluster_details_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2760,14 +2566,10 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ListClusterScaleInNumbersRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ListClusterScaleInNumbersResponse`
         """
-        return self.list_cluster_scale_in_numbers_with_http_info(request)
+        return self._list_cluster_scale_in_numbers_with_http_info(request)
 
-    def list_cluster_scale_in_numbers_with_http_info(self, request):
-        all_params = ['cluster_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_cluster_scale_in_numbers_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2820,14 +2622,10 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ListClusterSnapshotsRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ListClusterSnapshotsResponse`
         """
-        return self.list_cluster_snapshots_with_http_info(request)
+        return self._list_cluster_snapshots_with_http_info(request)
 
-    def list_cluster_snapshots_with_http_info(self, request):
-        all_params = ['cluster_id', 'limit', 'offset', 'sort_key', 'sort_dir']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_cluster_snapshots_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2888,14 +2686,10 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ListClusterTagsRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ListClusterTagsResponse`
         """
-        return self.list_cluster_tags_with_http_info(request)
+        return self._list_cluster_tags_with_http_info(request)
 
-    def list_cluster_tags_with_http_info(self, request):
-        all_params = ['cluster_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_cluster_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2948,14 +2742,10 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ListClusterWorkloadRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ListClusterWorkloadResponse`
         """
-        return self.list_cluster_workload_with_http_info(request)
+        return self._list_cluster_workload_with_http_info(request)
 
-    def list_cluster_workload_with_http_info(self, request):
-        all_params = ['cluster_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_cluster_workload_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3008,14 +2798,10 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ListClustersRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ListClustersResponse`
         """
-        return self.list_clusters_with_http_info(request)
+        return self._list_clusters_with_http_info(request)
 
-    def list_clusters_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_clusters_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3066,14 +2852,10 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ListDataSourceRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ListDataSourceResponse`
         """
-        return self.list_data_source_with_http_info(request)
+        return self._list_data_source_with_http_info(request)
 
-    def list_data_source_with_http_info(self, request):
-        all_params = ['cluster_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_data_source_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3126,14 +2908,10 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ListDisasterRecoverRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ListDisasterRecoverResponse`
         """
-        return self.list_disaster_recover_with_http_info(request)
+        return self._list_disaster_recover_with_http_info(request)
 
-    def list_disaster_recover_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_disaster_recover_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3184,14 +2962,10 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ListDssPoolsRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ListDssPoolsResponse`
         """
-        return self.list_dss_pools_with_http_info(request)
+        return self._list_dss_pools_with_http_info(request)
 
-    def list_dss_pools_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_dss_pools_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3242,14 +3016,10 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ListElbsRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ListElbsResponse`
         """
-        return self.list_elbs_with_http_info(request)
+        return self._list_elbs_with_http_info(request)
 
-    def list_elbs_with_http_info(self, request):
-        all_params = ['cluster_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_elbs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3302,14 +3072,10 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ListEventSpecsRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ListEventSpecsResponse`
         """
-        return self.list_event_specs_with_http_info(request)
+        return self._list_event_specs_with_http_info(request)
 
-    def list_event_specs_with_http_info(self, request):
-        all_params = ['spec_name', 'category', 'severity', 'source_type', 'tag', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_event_specs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3374,14 +3140,10 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ListEventSubsRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ListEventSubsResponse`
         """
-        return self.list_event_subs_with_http_info(request)
+        return self._list_event_subs_with_http_info(request)
 
-    def list_event_subs_with_http_info(self, request):
-        all_params = ['offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_event_subs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3436,14 +3198,10 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ListEventsRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ListEventsResponse`
         """
-        return self.list_events_with_http_info(request)
+        return self._list_events_with_http_info(request)
 
-    def list_events_with_http_info(self, request):
-        all_params = ['offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_events_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3498,14 +3256,10 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ListHostDiskRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ListHostDiskResponse`
         """
-        return self.list_host_disk_with_http_info(request)
+        return self._list_host_disk_with_http_info(request)
 
-    def list_host_disk_with_http_info(self, request):
-        all_params = ['limit', 'offset', 'cluster_id', 'instance_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_host_disk_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3564,14 +3318,10 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ListHostNetRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ListHostNetResponse`
         """
-        return self.list_host_net_with_http_info(request)
+        return self._list_host_net_with_http_info(request)
 
-    def list_host_net_with_http_info(self, request):
-        all_params = ['limit', 'offset', 'cluster_id', 'instance_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_host_net_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3630,14 +3380,10 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ListHostOverviewRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ListHostOverviewResponse`
         """
-        return self.list_host_overview_with_http_info(request)
+        return self._list_host_overview_with_http_info(request)
 
-    def list_host_overview_with_http_info(self, request):
-        all_params = ['limit', 'offset', 'cluster_id', 'instance_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_host_overview_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3696,14 +3442,10 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ListJobDetailsRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ListJobDetailsResponse`
         """
-        return self.list_job_details_with_http_info(request)
+        return self._list_job_details_with_http_info(request)
 
-    def list_job_details_with_http_info(self, request):
-        all_params = ['job_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_job_details_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3756,14 +3498,10 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ListMonitorIndicatorDataRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ListMonitorIndicatorDataResponse`
         """
-        return self.list_monitor_indicator_data_with_http_info(request)
+        return self._list_monitor_indicator_data_with_http_info(request)
 
-    def list_monitor_indicator_data_with_http_info(self, request):
-        all_params = ['_from', 'to', 'indicator_name', 'dim0', 'function', 'period', 'dim1']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_monitor_indicator_data_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3828,14 +3566,10 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ListMonitorIndicatorsRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ListMonitorIndicatorsResponse`
         """
-        return self.list_monitor_indicators_with_http_info(request)
+        return self._list_monitor_indicators_with_http_info(request)
 
-    def list_monitor_indicators_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_monitor_indicators_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3886,14 +3620,10 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ListNodeTypesRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ListNodeTypesResponse`
         """
-        return self.list_node_types_with_http_info(request)
+        return self._list_node_types_with_http_info(request)
 
-    def list_node_types_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_node_types_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3944,14 +3674,10 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ListQuotasRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ListQuotasResponse`
         """
-        return self.list_quotas_with_http_info(request)
+        return self._list_quotas_with_http_info(request)
 
-    def list_quotas_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_quotas_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4002,14 +3728,10 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ListSnapshotDetailsRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ListSnapshotDetailsResponse`
         """
-        return self.list_snapshot_details_with_http_info(request)
+        return self._list_snapshot_details_with_http_info(request)
 
-    def list_snapshot_details_with_http_info(self, request):
-        all_params = ['snapshot_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_snapshot_details_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4062,14 +3784,10 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ListSnapshotPolicyRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ListSnapshotPolicyResponse`
         """
-        return self.list_snapshot_policy_with_http_info(request)
+        return self._list_snapshot_policy_with_http_info(request)
 
-    def list_snapshot_policy_with_http_info(self, request):
-        all_params = ['cluster_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_snapshot_policy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4122,14 +3840,10 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ListSnapshotStatisticsRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ListSnapshotStatisticsResponse`
         """
-        return self.list_snapshot_statistics_with_http_info(request)
+        return self._list_snapshot_statistics_with_http_info(request)
 
-    def list_snapshot_statistics_with_http_info(self, request):
-        all_params = ['cluster_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_snapshot_statistics_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4182,14 +3896,10 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ListSnapshotsRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ListSnapshotsResponse`
         """
-        return self.list_snapshots_with_http_info(request)
+        return self._list_snapshots_with_http_info(request)
 
-    def list_snapshots_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_snapshots_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4240,14 +3950,10 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ListStatisticsRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ListStatisticsResponse`
         """
-        return self.list_statistics_with_http_info(request)
+        return self._list_statistics_with_http_info(request)
 
-    def list_statistics_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_statistics_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4298,14 +4004,10 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ListTagsRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ListTagsResponse`
         """
-        return self.list_tags_with_http_info(request)
+        return self._list_tags_with_http_info(request)
 
-    def list_tags_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4356,14 +4058,10 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ListWorkloadQueueRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ListWorkloadQueueResponse`
         """
-        return self.list_workload_queue_with_http_info(request)
+        return self._list_workload_queue_with_http_info(request)
 
-    def list_workload_queue_with_http_info(self, request):
-        all_params = ['cluster_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_workload_queue_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4416,14 +4114,10 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.PauseDisasterRecoveryRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.PauseDisasterRecoveryResponse`
         """
-        return self.pause_disaster_recovery_with_http_info(request)
+        return self._pause_disaster_recovery_with_http_info(request)
 
-    def pause_disaster_recovery_with_http_info(self, request):
-        all_params = ['disaster_recovery_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _pause_disaster_recovery_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4476,14 +4170,10 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ResetPasswordRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ResetPasswordResponse`
         """
-        return self.reset_password_with_http_info(request)
+        return self._reset_password_with_http_info(request)
 
-    def reset_password_with_http_info(self, request):
-        all_params = ['cluster_id', 'reset_password_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _reset_password_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4538,14 +4228,10 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ResizeClusterRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ResizeClusterResponse`
         """
-        return self.resize_cluster_with_http_info(request)
+        return self._resize_cluster_with_http_info(request)
 
-    def resize_cluster_with_http_info(self, request):
-        all_params = ['cluster_id', 'resize_cluster_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _resize_cluster_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4600,14 +4286,10 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.RestartClusterRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.RestartClusterResponse`
         """
-        return self.restart_cluster_with_http_info(request)
+        return self._restart_cluster_with_http_info(request)
 
-    def restart_cluster_with_http_info(self, request):
-        all_params = ['cluster_id', 'restart_cluster_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _restart_cluster_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4662,14 +4344,10 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.RestoreClusterRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.RestoreClusterResponse`
         """
-        return self.restore_cluster_with_http_info(request)
+        return self._restore_cluster_with_http_info(request)
 
-    def restore_cluster_with_http_info(self, request):
-        all_params = ['snapshot_id', 'restore_cluster_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _restore_cluster_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4724,14 +4402,10 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.RestoreDisasterRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.RestoreDisasterResponse`
         """
-        return self.restore_disaster_with_http_info(request)
+        return self._restore_disaster_with_http_info(request)
 
-    def restore_disaster_with_http_info(self, request):
-        all_params = ['disaster_recovery_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _restore_disaster_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4784,14 +4458,10 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ShrinkClusterRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ShrinkClusterResponse`
         """
-        return self.shrink_cluster_with_http_info(request)
+        return self._shrink_cluster_with_http_info(request)
 
-    def shrink_cluster_with_http_info(self, request):
-        all_params = ['cluster_id', 'cluster_shrink_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _shrink_cluster_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4846,14 +4516,10 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.StartDisasterRecoveryRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.StartDisasterRecoveryResponse`
         """
-        return self.start_disaster_recovery_with_http_info(request)
+        return self._start_disaster_recovery_with_http_info(request)
 
-    def start_disaster_recovery_with_http_info(self, request):
-        all_params = ['disaster_recovery_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _start_disaster_recovery_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4906,14 +4572,10 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.SwitchFailoverDisasterRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.SwitchFailoverDisasterResponse`
         """
-        return self.switch_failover_disaster_with_http_info(request)
+        return self._switch_failover_disaster_with_http_info(request)
 
-    def switch_failover_disaster_with_http_info(self, request):
-        all_params = ['disaster_recovery_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _switch_failover_disaster_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -4968,14 +4630,10 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.SwitchOverClusterRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.SwitchOverClusterResponse`
         """
-        return self.switch_over_cluster_with_http_info(request)
+        return self._switch_over_cluster_with_http_info(request)
 
-    def switch_over_cluster_with_http_info(self, request):
-        all_params = ['cluster_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _switch_over_cluster_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5028,14 +4686,10 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.SwitchoverDisasterRecoveryRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.SwitchoverDisasterRecoveryResponse`
         """
-        return self.switchover_disaster_recovery_with_http_info(request)
+        return self._switchover_disaster_recovery_with_http_info(request)
 
-    def switchover_disaster_recovery_with_http_info(self, request):
-        all_params = ['disaster_recovery_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _switchover_disaster_recovery_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5088,14 +4742,10 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.UpdateAlarmSubRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.UpdateAlarmSubResponse`
         """
-        return self.update_alarm_sub_with_http_info(request)
+        return self._update_alarm_sub_with_http_info(request)
 
-    def update_alarm_sub_with_http_info(self, request):
-        all_params = ['alarm_sub_id', 'alarm_sub_update_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_alarm_sub_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5150,14 +4800,10 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.UpdateClusterDnsRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.UpdateClusterDnsResponse`
         """
-        return self.update_cluster_dns_with_http_info(request)
+        return self._update_cluster_dns_with_http_info(request)
 
-    def update_cluster_dns_with_http_info(self, request):
-        all_params = ['cluster_id', 'dns']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_cluster_dns_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5212,14 +4858,10 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.UpdateConfigurationRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.UpdateConfigurationResponse`
         """
-        return self.update_configuration_with_http_info(request)
+        return self._update_configuration_with_http_info(request)
 
-    def update_configuration_with_http_info(self, request):
-        all_params = ['cluster_id', 'configuration_id', 'dns']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_configuration_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5276,14 +4918,10 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.UpdateDataSourceRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.UpdateDataSourceResponse`
         """
-        return self.update_data_source_with_http_info(request)
+        return self._update_data_source_with_http_info(request)
 
-    def update_data_source_with_http_info(self, request):
-        all_params = ['cluster_id', 'ext_data_source_id', 'reconfigure']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_data_source_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5340,14 +4978,10 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.UpdateEventSubRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.UpdateEventSubResponse`
         """
-        return self.update_event_sub_with_http_info(request)
+        return self._update_event_sub_with_http_info(request)
 
-    def update_event_sub_with_http_info(self, request):
-        all_params = ['event_sub_id', 'event_sub_update_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_event_sub_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -5402,14 +5036,10 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.UpdateMaintenanceWindowRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.UpdateMaintenanceWindowResponse`
         """
-        return self.update_maintenance_window_with_http_info(request)
+        return self._update_maintenance_window_with_http_info(request)
 
-    def update_maintenance_window_with_http_info(self, request):
-        all_params = ['cluster_id', 'payload']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_maintenance_window_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

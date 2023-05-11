@@ -1,9 +1,6 @@
 # coding: utf-8
 
-import re
 import six
-
-
 
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
@@ -25,7 +22,8 @@ class OptimizationTaskData:
         'strong_constraints': 'list[MoleculeConstraint]',
         'weak_constraints': 'list[MoleculeConstraint]',
         'num_expected': 'int',
-        'binding_site': 'BindingSite'
+        'binding_site': 'BindingSite',
+        'custom_props': 'list[CustomProp]'
     }
 
     attribute_map = {
@@ -34,10 +32,11 @@ class OptimizationTaskData:
         'strong_constraints': 'strong_constraints',
         'weak_constraints': 'weak_constraints',
         'num_expected': 'num_expected',
-        'binding_site': 'binding_site'
+        'binding_site': 'binding_site',
+        'custom_props': 'custom_props'
     }
 
-    def __init__(self, smiles=None, num_trials=None, strong_constraints=None, weak_constraints=None, num_expected=None, binding_site=None):
+    def __init__(self, smiles=None, num_trials=None, strong_constraints=None, weak_constraints=None, num_expected=None, binding_site=None, custom_props=None):
         """OptimizationTaskData
 
         The model defined in huaweicloud sdk
@@ -54,6 +53,8 @@ class OptimizationTaskData:
         :type num_expected: int
         :param binding_site: 
         :type binding_site: :class:`huaweicloudsdkeihealth.v1.BindingSite`
+        :param custom_props: 用户已开启的自定义属性集合
+        :type custom_props: list[:class:`huaweicloudsdkeihealth.v1.CustomProp`]
         """
         
         
@@ -64,6 +65,7 @@ class OptimizationTaskData:
         self._weak_constraints = None
         self._num_expected = None
         self._binding_site = None
+        self._custom_props = None
         self.discriminator = None
 
         self.smiles = smiles
@@ -77,6 +79,8 @@ class OptimizationTaskData:
             self.num_expected = num_expected
         if binding_site is not None:
             self.binding_site = binding_site
+        if custom_props is not None:
+            self.custom_props = custom_props
 
     @property
     def smiles(self):
@@ -205,6 +209,28 @@ class OptimizationTaskData:
         :type binding_site: :class:`huaweicloudsdkeihealth.v1.BindingSite`
         """
         self._binding_site = binding_site
+
+    @property
+    def custom_props(self):
+        """Gets the custom_props of this OptimizationTaskData.
+
+        用户已开启的自定义属性集合
+
+        :return: The custom_props of this OptimizationTaskData.
+        :rtype: list[:class:`huaweicloudsdkeihealth.v1.CustomProp`]
+        """
+        return self._custom_props
+
+    @custom_props.setter
+    def custom_props(self, custom_props):
+        """Sets the custom_props of this OptimizationTaskData.
+
+        用户已开启的自定义属性集合
+
+        :param custom_props: The custom_props of this OptimizationTaskData.
+        :type custom_props: list[:class:`huaweicloudsdkeihealth.v1.CustomProp`]
+        """
+        self._custom_props = custom_props
 
     def to_dict(self):
         """Returns the model properties as a dict"""

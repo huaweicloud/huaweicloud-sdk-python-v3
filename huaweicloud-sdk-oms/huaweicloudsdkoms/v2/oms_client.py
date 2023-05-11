@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class OmsClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(OmsClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkoms.v2.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -53,14 +35,10 @@ class OmsClient(Client):
         :type request: :class:`huaweicloudsdkoms.v2.CreateSyncEventsRequest`
         :rtype: :class:`huaweicloudsdkoms.v2.CreateSyncEventsResponse`
         """
-        return self.create_sync_events_with_http_info(request)
+        return self._create_sync_events_with_http_info(request)
 
-    def create_sync_events_with_http_info(self, request):
-        all_params = ['sync_task_id', 'create_sync_events_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_sync_events_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -115,14 +93,10 @@ class OmsClient(Client):
         :type request: :class:`huaweicloudsdkoms.v2.CreateTaskRequest`
         :rtype: :class:`huaweicloudsdkoms.v2.CreateTaskResponse`
         """
-        return self.create_task_with_http_info(request)
+        return self._create_task_with_http_info(request)
 
-    def create_task_with_http_info(self, request):
-        all_params = ['create_task_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -176,14 +150,10 @@ class OmsClient(Client):
         :type request: :class:`huaweicloudsdkoms.v2.DeleteTaskRequest`
         :rtype: :class:`huaweicloudsdkoms.v2.DeleteTaskResponse`
         """
-        return self.delete_task_with_http_info(request)
+        return self._delete_task_with_http_info(request)
 
-    def delete_task_with_http_info(self, request):
-        all_params = ['task_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -236,14 +206,10 @@ class OmsClient(Client):
         :type request: :class:`huaweicloudsdkoms.v2.ListTasksRequest`
         :rtype: :class:`huaweicloudsdkoms.v2.ListTasksResponse`
         """
-        return self.list_tasks_with_http_info(request)
+        return self._list_tasks_with_http_info(request)
 
-    def list_tasks_with_http_info(self, request):
-        all_params = ['group_id', 'limit', 'offset', 'status']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_tasks_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -302,14 +268,10 @@ class OmsClient(Client):
         :type request: :class:`huaweicloudsdkoms.v2.ShowTaskRequest`
         :rtype: :class:`huaweicloudsdkoms.v2.ShowTaskResponse`
         """
-        return self.show_task_with_http_info(request)
+        return self._show_task_with_http_info(request)
 
-    def show_task_with_http_info(self, request):
-        all_params = ['task_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -362,14 +324,10 @@ class OmsClient(Client):
         :type request: :class:`huaweicloudsdkoms.v2.StartTaskRequest`
         :rtype: :class:`huaweicloudsdkoms.v2.StartTaskResponse`
         """
-        return self.start_task_with_http_info(request)
+        return self._start_task_with_http_info(request)
 
-    def start_task_with_http_info(self, request):
-        all_params = ['task_id', 'start_task_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _start_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -424,14 +382,10 @@ class OmsClient(Client):
         :type request: :class:`huaweicloudsdkoms.v2.StopTaskRequest`
         :rtype: :class:`huaweicloudsdkoms.v2.StopTaskResponse`
         """
-        return self.stop_task_with_http_info(request)
+        return self._stop_task_with_http_info(request)
 
-    def stop_task_with_http_info(self, request):
-        all_params = ['task_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _stop_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -484,14 +438,10 @@ class OmsClient(Client):
         :type request: :class:`huaweicloudsdkoms.v2.UpdateBandwidthPolicyRequest`
         :rtype: :class:`huaweicloudsdkoms.v2.UpdateBandwidthPolicyResponse`
         """
-        return self.update_bandwidth_policy_with_http_info(request)
+        return self._update_bandwidth_policy_with_http_info(request)
 
-    def update_bandwidth_policy_with_http_info(self, request):
-        all_params = ['task_id', 'update_bandwidth_policy_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_bandwidth_policy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -546,14 +496,10 @@ class OmsClient(Client):
         :type request: :class:`huaweicloudsdkoms.v2.CreateTaskGroupRequest`
         :rtype: :class:`huaweicloudsdkoms.v2.CreateTaskGroupResponse`
         """
-        return self.create_task_group_with_http_info(request)
+        return self._create_task_group_with_http_info(request)
 
-    def create_task_group_with_http_info(self, request):
-        all_params = ['create_task_group_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_task_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -607,14 +553,10 @@ class OmsClient(Client):
         :type request: :class:`huaweicloudsdkoms.v2.DeleteTaskGroupRequest`
         :rtype: :class:`huaweicloudsdkoms.v2.DeleteTaskGroupResponse`
         """
-        return self.delete_task_group_with_http_info(request)
+        return self._delete_task_group_with_http_info(request)
 
-    def delete_task_group_with_http_info(self, request):
-        all_params = ['group_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_task_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -667,14 +609,10 @@ class OmsClient(Client):
         :type request: :class:`huaweicloudsdkoms.v2.ListTaskGroupRequest`
         :rtype: :class:`huaweicloudsdkoms.v2.ListTaskGroupResponse`
         """
-        return self.list_task_group_with_http_info(request)
+        return self._list_task_group_with_http_info(request)
 
-    def list_task_group_with_http_info(self, request):
-        all_params = ['limit', 'offset', 'status']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_task_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -731,14 +669,10 @@ class OmsClient(Client):
         :type request: :class:`huaweicloudsdkoms.v2.RetryTaskGroupRequest`
         :rtype: :class:`huaweicloudsdkoms.v2.RetryTaskGroupResponse`
         """
-        return self.retry_task_group_with_http_info(request)
+        return self._retry_task_group_with_http_info(request)
 
-    def retry_task_group_with_http_info(self, request):
-        all_params = ['group_id', 'retry_task_group_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _retry_task_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -793,14 +727,10 @@ class OmsClient(Client):
         :type request: :class:`huaweicloudsdkoms.v2.ShowTaskGroupRequest`
         :rtype: :class:`huaweicloudsdkoms.v2.ShowTaskGroupResponse`
         """
-        return self.show_task_group_with_http_info(request)
+        return self._show_task_group_with_http_info(request)
 
-    def show_task_group_with_http_info(self, request):
-        all_params = ['group_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_task_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -853,14 +783,10 @@ class OmsClient(Client):
         :type request: :class:`huaweicloudsdkoms.v2.StartTaskGroupRequest`
         :rtype: :class:`huaweicloudsdkoms.v2.StartTaskGroupResponse`
         """
-        return self.start_task_group_with_http_info(request)
+        return self._start_task_group_with_http_info(request)
 
-    def start_task_group_with_http_info(self, request):
-        all_params = ['group_id', 'start_task_group_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _start_task_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -915,14 +841,10 @@ class OmsClient(Client):
         :type request: :class:`huaweicloudsdkoms.v2.StopTaskGroupRequest`
         :rtype: :class:`huaweicloudsdkoms.v2.StopTaskGroupResponse`
         """
-        return self.stop_task_group_with_http_info(request)
+        return self._stop_task_group_with_http_info(request)
 
-    def stop_task_group_with_http_info(self, request):
-        all_params = ['group_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _stop_task_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -975,14 +897,10 @@ class OmsClient(Client):
         :type request: :class:`huaweicloudsdkoms.v2.UpdateTaskGroupRequest`
         :rtype: :class:`huaweicloudsdkoms.v2.UpdateTaskGroupResponse`
         """
-        return self.update_task_group_with_http_info(request)
+        return self._update_task_group_with_http_info(request)
 
-    def update_task_group_with_http_info(self, request):
-        all_params = ['group_id', 'update_task_group_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_task_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1037,14 +955,10 @@ class OmsClient(Client):
         :type request: :class:`huaweicloudsdkoms.v2.ListApiVersionsRequest`
         :rtype: :class:`huaweicloudsdkoms.v2.ListApiVersionsResponse`
         """
-        return self.list_api_versions_with_http_info(request)
+        return self._list_api_versions_with_http_info(request)
 
-    def list_api_versions_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_api_versions_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1095,14 +1009,10 @@ class OmsClient(Client):
         :type request: :class:`huaweicloudsdkoms.v2.ShowApiInfoRequest`
         :rtype: :class:`huaweicloudsdkoms.v2.ShowApiInfoResponse`
         """
-        return self.show_api_info_with_http_info(request)
+        return self._show_api_info_with_http_info(request)
 
-    def show_api_info_with_http_info(self, request):
-        all_params = ['version']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_api_info_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class RabbitMQAsyncClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(RabbitMQAsyncClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkrabbitmq.v2.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -54,14 +36,10 @@ class RabbitMQAsyncClient(Client):
         :type request: :class:`huaweicloudsdkrabbitmq.v2.BatchCreateOrDeleteRabbitMqTagRequest`
         :rtype: :class:`huaweicloudsdkrabbitmq.v2.BatchCreateOrDeleteRabbitMqTagResponse`
         """
-        return self.batch_create_or_delete_rabbit_mq_tag_with_http_info(request)
+        return self._batch_create_or_delete_rabbit_mq_tag_with_http_info(request)
 
-    def batch_create_or_delete_rabbit_mq_tag_with_http_info(self, request):
-        all_params = ['instance_id', 'batch_create_or_delete_rabbit_mq_tag_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_create_or_delete_rabbit_mq_tag_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -121,14 +99,10 @@ class RabbitMQAsyncClient(Client):
         :type request: :class:`huaweicloudsdkrabbitmq.v2.BatchRestartOrDeleteInstancesRequest`
         :rtype: :class:`huaweicloudsdkrabbitmq.v2.BatchRestartOrDeleteInstancesResponse`
         """
-        return self.batch_restart_or_delete_instances_with_http_info(request)
+        return self._batch_restart_or_delete_instances_with_http_info(request)
 
-    def batch_restart_or_delete_instances_with_http_info(self, request):
-        all_params = ['batch_restart_or_delete_instances_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_restart_or_delete_instances_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -182,14 +156,10 @@ class RabbitMQAsyncClient(Client):
         :type request: :class:`huaweicloudsdkrabbitmq.v2.CreatePostPaidInstanceRequest`
         :rtype: :class:`huaweicloudsdkrabbitmq.v2.CreatePostPaidInstanceResponse`
         """
-        return self.create_post_paid_instance_with_http_info(request)
+        return self._create_post_paid_instance_with_http_info(request)
 
-    def create_post_paid_instance_with_http_info(self, request):
-        all_params = ['create_post_paid_instance_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_post_paid_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -243,14 +213,10 @@ class RabbitMQAsyncClient(Client):
         :type request: :class:`huaweicloudsdkrabbitmq.v2.CreatePostPaidInstanceByEngineRequest`
         :rtype: :class:`huaweicloudsdkrabbitmq.v2.CreatePostPaidInstanceByEngineResponse`
         """
-        return self.create_post_paid_instance_by_engine_with_http_info(request)
+        return self._create_post_paid_instance_by_engine_with_http_info(request)
 
-    def create_post_paid_instance_by_engine_with_http_info(self, request):
-        all_params = ['engine', 'create_post_paid_instance_by_engine_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_post_paid_instance_by_engine_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -306,14 +272,10 @@ class RabbitMQAsyncClient(Client):
         :type request: :class:`huaweicloudsdkrabbitmq.v2.DeleteBackgroundTaskRequest`
         :rtype: :class:`huaweicloudsdkrabbitmq.v2.DeleteBackgroundTaskResponse`
         """
-        return self.delete_background_task_with_http_info(request)
+        return self._delete_background_task_with_http_info(request)
 
-    def delete_background_task_with_http_info(self, request):
-        all_params = ['instance_id', 'task_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_background_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -369,14 +331,10 @@ class RabbitMQAsyncClient(Client):
         :type request: :class:`huaweicloudsdkrabbitmq.v2.DeleteInstanceRequest`
         :rtype: :class:`huaweicloudsdkrabbitmq.v2.DeleteInstanceResponse`
         """
-        return self.delete_instance_with_http_info(request)
+        return self._delete_instance_with_http_info(request)
 
-    def delete_instance_with_http_info(self, request):
-        all_params = ['instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -430,14 +388,10 @@ class RabbitMQAsyncClient(Client):
         :type request: :class:`huaweicloudsdkrabbitmq.v2.ListAvailableZonesRequest`
         :rtype: :class:`huaweicloudsdkrabbitmq.v2.ListAvailableZonesResponse`
         """
-        return self.list_available_zones_with_http_info(request)
+        return self._list_available_zones_with_http_info(request)
 
-    def list_available_zones_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_available_zones_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -489,14 +443,10 @@ class RabbitMQAsyncClient(Client):
         :type request: :class:`huaweicloudsdkrabbitmq.v2.ListBackgroundTasksRequest`
         :rtype: :class:`huaweicloudsdkrabbitmq.v2.ListBackgroundTasksResponse`
         """
-        return self.list_background_tasks_with_http_info(request)
+        return self._list_background_tasks_with_http_info(request)
 
-    def list_background_tasks_with_http_info(self, request):
-        all_params = ['instance_id', 'start', 'limit', 'begin_time', 'end_time']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_background_tasks_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -558,14 +508,10 @@ class RabbitMQAsyncClient(Client):
         :type request: :class:`huaweicloudsdkrabbitmq.v2.ListEngineProductsRequest`
         :rtype: :class:`huaweicloudsdkrabbitmq.v2.ListEngineProductsResponse`
         """
-        return self.list_engine_products_with_http_info(request)
+        return self._list_engine_products_with_http_info(request)
 
-    def list_engine_products_with_http_info(self, request):
-        all_params = ['engine', 'product_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_engine_products_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -621,14 +567,10 @@ class RabbitMQAsyncClient(Client):
         :type request: :class:`huaweicloudsdkrabbitmq.v2.ListInstancesDetailsRequest`
         :rtype: :class:`huaweicloudsdkrabbitmq.v2.ListInstancesDetailsResponse`
         """
-        return self.list_instances_details_with_http_info(request)
+        return self._list_instances_details_with_http_info(request)
 
-    def list_instances_details_with_http_info(self, request):
-        all_params = ['engine', 'name', 'instance_id', 'status', 'include_failure', 'exact_match_name', 'enterprise_project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_instances_details_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -694,14 +636,10 @@ class RabbitMQAsyncClient(Client):
         :type request: :class:`huaweicloudsdkrabbitmq.v2.ListPluginsRequest`
         :rtype: :class:`huaweicloudsdkrabbitmq.v2.ListPluginsResponse`
         """
-        return self.list_plugins_with_http_info(request)
+        return self._list_plugins_with_http_info(request)
 
-    def list_plugins_with_http_info(self, request):
-        all_params = ['instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_plugins_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -755,14 +693,10 @@ class RabbitMQAsyncClient(Client):
         :type request: :class:`huaweicloudsdkrabbitmq.v2.ListProductsRequest`
         :rtype: :class:`huaweicloudsdkrabbitmq.v2.ListProductsResponse`
         """
-        return self.list_products_with_http_info(request)
+        return self._list_products_with_http_info(request)
 
-    def list_products_with_http_info(self, request):
-        all_params = ['engine']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_products_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -816,14 +750,10 @@ class RabbitMQAsyncClient(Client):
         :type request: :class:`huaweicloudsdkrabbitmq.v2.ResetPasswordRequest`
         :rtype: :class:`huaweicloudsdkrabbitmq.v2.ResetPasswordResponse`
         """
-        return self.reset_password_with_http_info(request)
+        return self._reset_password_with_http_info(request)
 
-    def reset_password_with_http_info(self, request):
-        all_params = ['instance_id', 'reset_password_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _reset_password_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -879,14 +809,10 @@ class RabbitMQAsyncClient(Client):
         :type request: :class:`huaweicloudsdkrabbitmq.v2.ResizeEngineInstanceRequest`
         :rtype: :class:`huaweicloudsdkrabbitmq.v2.ResizeEngineInstanceResponse`
         """
-        return self.resize_engine_instance_with_http_info(request)
+        return self._resize_engine_instance_with_http_info(request)
 
-    def resize_engine_instance_with_http_info(self, request):
-        all_params = ['instance_id', 'engine', 'resize_engine_instance_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _resize_engine_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -946,14 +872,10 @@ class RabbitMQAsyncClient(Client):
         :type request: :class:`huaweicloudsdkrabbitmq.v2.ResizeInstanceRequest`
         :rtype: :class:`huaweicloudsdkrabbitmq.v2.ResizeInstanceResponse`
         """
-        return self.resize_instance_with_http_info(request)
+        return self._resize_instance_with_http_info(request)
 
-    def resize_instance_with_http_info(self, request):
-        all_params = ['instance_id', 'resize_instance_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _resize_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1009,14 +931,10 @@ class RabbitMQAsyncClient(Client):
         :type request: :class:`huaweicloudsdkrabbitmq.v2.ShowBackgroundTaskRequest`
         :rtype: :class:`huaweicloudsdkrabbitmq.v2.ShowBackgroundTaskResponse`
         """
-        return self.show_background_task_with_http_info(request)
+        return self._show_background_task_with_http_info(request)
 
-    def show_background_task_with_http_info(self, request):
-        all_params = ['instance_id', 'task_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_background_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1072,14 +990,10 @@ class RabbitMQAsyncClient(Client):
         :type request: :class:`huaweicloudsdkrabbitmq.v2.ShowEngineInstanceExtendProductInfoRequest`
         :rtype: :class:`huaweicloudsdkrabbitmq.v2.ShowEngineInstanceExtendProductInfoResponse`
         """
-        return self.show_engine_instance_extend_product_info_with_http_info(request)
+        return self._show_engine_instance_extend_product_info_with_http_info(request)
 
-    def show_engine_instance_extend_product_info_with_http_info(self, request):
-        all_params = ['engine', 'instance_id', 'type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_engine_instance_extend_product_info_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1137,14 +1051,10 @@ class RabbitMQAsyncClient(Client):
         :type request: :class:`huaweicloudsdkrabbitmq.v2.ShowInstanceRequest`
         :rtype: :class:`huaweicloudsdkrabbitmq.v2.ShowInstanceResponse`
         """
-        return self.show_instance_with_http_info(request)
+        return self._show_instance_with_http_info(request)
 
-    def show_instance_with_http_info(self, request):
-        all_params = ['instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1200,14 +1110,10 @@ class RabbitMQAsyncClient(Client):
         :type request: :class:`huaweicloudsdkrabbitmq.v2.ShowInstanceExtendProductInfoRequest`
         :rtype: :class:`huaweicloudsdkrabbitmq.v2.ShowInstanceExtendProductInfoResponse`
         """
-        return self.show_instance_extend_product_info_with_http_info(request)
+        return self._show_instance_extend_product_info_with_http_info(request)
 
-    def show_instance_extend_product_info_with_http_info(self, request):
-        all_params = ['instance_id', 'type', 'engine']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_instance_extend_product_info_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1265,14 +1171,10 @@ class RabbitMQAsyncClient(Client):
         :type request: :class:`huaweicloudsdkrabbitmq.v2.ShowMaintainWindowsRequest`
         :rtype: :class:`huaweicloudsdkrabbitmq.v2.ShowMaintainWindowsResponse`
         """
-        return self.show_maintain_windows_with_http_info(request)
+        return self._show_maintain_windows_with_http_info(request)
 
-    def show_maintain_windows_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_maintain_windows_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1324,14 +1226,10 @@ class RabbitMQAsyncClient(Client):
         :type request: :class:`huaweicloudsdkrabbitmq.v2.ShowRabbitMqProjectTagsRequest`
         :rtype: :class:`huaweicloudsdkrabbitmq.v2.ShowRabbitMqProjectTagsResponse`
         """
-        return self.show_rabbit_mq_project_tags_with_http_info(request)
+        return self._show_rabbit_mq_project_tags_with_http_info(request)
 
-    def show_rabbit_mq_project_tags_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_rabbit_mq_project_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1383,14 +1281,10 @@ class RabbitMQAsyncClient(Client):
         :type request: :class:`huaweicloudsdkrabbitmq.v2.ShowRabbitMqTagsRequest`
         :rtype: :class:`huaweicloudsdkrabbitmq.v2.ShowRabbitMqTagsResponse`
         """
-        return self.show_rabbit_mq_tags_with_http_info(request)
+        return self._show_rabbit_mq_tags_with_http_info(request)
 
-    def show_rabbit_mq_tags_with_http_info(self, request):
-        all_params = ['instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_rabbit_mq_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1444,14 +1338,10 @@ class RabbitMQAsyncClient(Client):
         :type request: :class:`huaweicloudsdkrabbitmq.v2.UpdateInstanceRequest`
         :rtype: :class:`huaweicloudsdkrabbitmq.v2.UpdateInstanceResponse`
         """
-        return self.update_instance_with_http_info(request)
+        return self._update_instance_with_http_info(request)
 
-    def update_instance_with_http_info(self, request):
-        all_params = ['instance_id', 'update_instance_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1507,14 +1397,10 @@ class RabbitMQAsyncClient(Client):
         :type request: :class:`huaweicloudsdkrabbitmq.v2.UpdatePluginsRequest`
         :rtype: :class:`huaweicloudsdkrabbitmq.v2.UpdatePluginsResponse`
         """
-        return self.update_plugins_with_http_info(request)
+        return self._update_plugins_with_http_info(request)
 
-    def update_plugins_with_http_info(self, request):
-        all_params = ['instance_id', 'update_plugins_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_plugins_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

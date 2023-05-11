@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class MpcAsyncClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(MpcAsyncClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkmpc.v1.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -55,14 +37,10 @@ class MpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.CreateAnimatedGraphicsTaskRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.CreateAnimatedGraphicsTaskResponse`
         """
-        return self.create_animated_graphics_task_with_http_info(request)
+        return self._create_animated_graphics_task_with_http_info(request)
 
-    def create_animated_graphics_task_with_http_info(self, request):
-        all_params = ['create_animated_graphics_task_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_animated_graphics_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -116,14 +94,10 @@ class MpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.DeleteAnimatedGraphicsTaskRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.DeleteAnimatedGraphicsTaskResponse`
         """
-        return self.delete_animated_graphics_task_with_http_info(request)
+        return self._delete_animated_graphics_task_with_http_info(request)
 
-    def delete_animated_graphics_task_with_http_info(self, request):
-        all_params = ['task_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_animated_graphics_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -177,14 +151,10 @@ class MpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.ListAnimatedGraphicsTaskRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.ListAnimatedGraphicsTaskResponse`
         """
-        return self.list_animated_graphics_task_with_http_info(request)
+        return self._list_animated_graphics_task_with_http_info(request)
 
-    def list_animated_graphics_task_with_http_info(self, request):
-        all_params = ['x_language', 'task_id', 'status', 'start_time', 'end_time', 'page', 'size']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_animated_graphics_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -251,14 +221,10 @@ class MpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.CreateAgenciesTaskRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.CreateAgenciesTaskResponse`
         """
-        return self.create_agencies_task_with_http_info(request)
+        return self._create_agencies_task_with_http_info(request)
 
-    def create_agencies_task_with_http_info(self, request):
-        all_params = ['create_agencies_task_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_agencies_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -312,14 +278,10 @@ class MpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.ListAllBucketsRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.ListAllBucketsResponse`
         """
-        return self.list_all_buckets_with_http_info(request)
+        return self._list_all_buckets_with_http_info(request)
 
-    def list_all_buckets_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_all_buckets_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -371,14 +333,10 @@ class MpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.ListAllObsObjListRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.ListAllObsObjListResponse`
         """
-        return self.list_all_obs_obj_list_with_http_info(request)
+        return self._list_all_obs_obj_list_with_http_info(request)
 
-    def list_all_obs_obj_list_with_http_info(self, request):
-        all_params = ['bucket', 'prefix', 'type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_all_obs_obj_list_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -436,14 +394,10 @@ class MpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.ListNotifyEventRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.ListNotifyEventResponse`
         """
-        return self.list_notify_event_with_http_info(request)
+        return self._list_notify_event_with_http_info(request)
 
-    def list_notify_event_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_notify_event_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -495,14 +449,10 @@ class MpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.ListNotifySmnTopicConfigRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.ListNotifySmnTopicConfigResponse`
         """
-        return self.list_notify_smn_topic_config_with_http_info(request)
+        return self._list_notify_smn_topic_config_with_http_info(request)
 
-    def list_notify_smn_topic_config_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_notify_smn_topic_config_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -554,14 +504,10 @@ class MpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.NotifySmnTopicConfigRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.NotifySmnTopicConfigResponse`
         """
-        return self.notify_smn_topic_config_with_http_info(request)
+        return self._notify_smn_topic_config_with_http_info(request)
 
-    def notify_smn_topic_config_with_http_info(self, request):
-        all_params = ['notify_smn_topic_config_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _notify_smn_topic_config_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -615,14 +561,10 @@ class MpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.ShowAgenciesTaskRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.ShowAgenciesTaskResponse`
         """
-        return self.show_agencies_task_with_http_info(request)
+        return self._show_agencies_task_with_http_info(request)
 
-    def show_agencies_task_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_agencies_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -674,14 +616,10 @@ class MpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.UpdateBucketAuthorizedRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.UpdateBucketAuthorizedResponse`
         """
-        return self.update_bucket_authorized_with_http_info(request)
+        return self._update_bucket_authorized_with_http_info(request)
 
-    def update_bucket_authorized_with_http_info(self, request):
-        all_params = ['update_bucket_authorized_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_bucket_authorized_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -736,14 +674,10 @@ class MpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.CreateEditingJobRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.CreateEditingJobResponse`
         """
-        return self.create_editing_job_with_http_info(request)
+        return self._create_editing_job_with_http_info(request)
 
-    def create_editing_job_with_http_info(self, request):
-        all_params = ['create_editing_job_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_editing_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -797,14 +731,10 @@ class MpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.DeleteEditingJobRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.DeleteEditingJobResponse`
         """
-        return self.delete_editing_job_with_http_info(request)
+        return self._delete_editing_job_with_http_info(request)
 
-    def delete_editing_job_with_http_info(self, request):
-        all_params = ['job_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_editing_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -858,14 +788,10 @@ class MpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.ListEditingJobRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.ListEditingJobResponse`
         """
-        return self.list_editing_job_with_http_info(request)
+        return self._list_editing_job_with_http_info(request)
 
-    def list_editing_job_with_http_info(self, request):
-        all_params = ['x_language', 'job_id', 'status', 'start_time', 'end_time', 'page', 'size']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_editing_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -920,6 +846,179 @@ class MpcAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def create_editing_jobs_async(self, request):
+        """新建剪辑拼接任务
+
+        创建剪辑任务，用于将多个视频文件进行裁剪成多个视频分段，并且可以把这些视频分段合并成一个视频。
+        待剪辑的视频文件需要存储在与媒体处理服务同区域的OBS桶中，且该OBS桶已授权。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateEditingJobs
+        :type request: :class:`huaweicloudsdkmpc.v1.CreateEditingJobsRequest`
+        :rtype: :class:`huaweicloudsdkmpc.v1.CreateEditingJobsResponse`
+        """
+        return self._create_editing_jobs_with_http_info(request)
+
+    def _create_editing_jobs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/editing/jobs',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateEditingJobsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_editing_jobs_async(self, request):
+        """取消剪辑任务
+
+        取消已下发的生成剪辑任务，仅支持取消正在排队中的任务。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteEditingJobs
+        :type request: :class:`huaweicloudsdkmpc.v1.DeleteEditingJobsRequest`
+        :rtype: :class:`huaweicloudsdkmpc.v1.DeleteEditingJobsResponse`
+        """
+        return self._delete_editing_jobs_with_http_info(request)
+
+    def _delete_editing_jobs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/editing/jobs/{job_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteEditingJobsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_editing_jobs_async(self, request):
+        """查询剪辑任务
+
+        查询剪辑任务的状态。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListEditingJobs
+        :type request: :class:`huaweicloudsdkmpc.v1.ListEditingJobsRequest`
+        :rtype: :class:`huaweicloudsdkmpc.v1.ListEditingJobsResponse`
+        """
+        return self._list_editing_jobs_with_http_info(request)
+
+    def _list_editing_jobs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'job_id' in local_var_params:
+            query_params.append(('job_id', local_var_params['job_id']))
+            collection_formats['job_id'] = 'multi'
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/editing/jobs',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListEditingJobsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def create_encrypt_task_async(self, request):
         """新建独立加密任务
 
@@ -936,14 +1035,10 @@ class MpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.CreateEncryptTaskRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.CreateEncryptTaskResponse`
         """
-        return self.create_encrypt_task_with_http_info(request)
+        return self._create_encrypt_task_with_http_info(request)
 
-    def create_encrypt_task_with_http_info(self, request):
-        all_params = ['create_encrypt_task_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_encrypt_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1001,14 +1096,10 @@ class MpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.DeleteEncryptTaskRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.DeleteEncryptTaskResponse`
         """
-        return self.delete_encrypt_task_with_http_info(request)
+        return self._delete_encrypt_task_with_http_info(request)
 
-    def delete_encrypt_task_with_http_info(self, request):
-        all_params = ['task_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_encrypt_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1062,14 +1153,10 @@ class MpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.ListEncryptTaskRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.ListEncryptTaskResponse`
         """
-        return self.list_encrypt_task_with_http_info(request)
+        return self._list_encrypt_task_with_http_info(request)
 
-    def list_encrypt_task_with_http_info(self, request):
-        all_params = ['task_id', 'status', 'start_time', 'end_time', 'page', 'size']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_encrypt_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1134,14 +1221,10 @@ class MpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.CreateExtractTaskRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.CreateExtractTaskResponse`
         """
-        return self.create_extract_task_with_http_info(request)
+        return self._create_extract_task_with_http_info(request)
 
-    def create_extract_task_with_http_info(self, request):
-        all_params = ['create_extract_task_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_extract_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1195,14 +1278,10 @@ class MpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.DeleteExtractTaskRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.DeleteExtractTaskResponse`
         """
-        return self.delete_extract_task_with_http_info(request)
+        return self._delete_extract_task_with_http_info(request)
 
-    def delete_extract_task_with_http_info(self, request):
-        all_params = ['task_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_extract_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1256,14 +1335,10 @@ class MpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.ListExtractTaskRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.ListExtractTaskResponse`
         """
-        return self.list_extract_task_with_http_info(request)
+        return self._list_extract_task_with_http_info(request)
 
-    def list_extract_task_with_http_info(self, request):
-        all_params = ['x_language', 'task_id', 'status', 'start_time', 'end_time', 'page', 'size']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_extract_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1335,14 +1410,10 @@ class MpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.CreateMbTasksReportRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.CreateMbTasksReportResponse`
         """
-        return self.create_mb_tasks_report_with_http_info(request)
+        return self._create_mb_tasks_report_with_http_info(request)
 
-    def create_mb_tasks_report_with_http_info(self, request):
-        all_params = ['create_mb_tasks_report_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_mb_tasks_report_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1397,14 +1468,10 @@ class MpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.CreateMergeChannelsTaskRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.CreateMergeChannelsTaskResponse`
         """
-        return self.create_merge_channels_task_with_http_info(request)
+        return self._create_merge_channels_task_with_http_info(request)
 
-    def create_merge_channels_task_with_http_info(self, request):
-        all_params = ['create_merge_channels_task_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_merge_channels_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1459,14 +1526,10 @@ class MpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.CreateResetTracksTaskRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.CreateResetTracksTaskResponse`
         """
-        return self.create_reset_tracks_task_with_http_info(request)
+        return self._create_reset_tracks_task_with_http_info(request)
 
-    def create_reset_tracks_task_with_http_info(self, request):
-        all_params = ['create_reset_tracks_task_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_reset_tracks_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1520,14 +1583,10 @@ class MpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.DeleteMergeChannelsTaskRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.DeleteMergeChannelsTaskResponse`
         """
-        return self.delete_merge_channels_task_with_http_info(request)
+        return self._delete_merge_channels_task_with_http_info(request)
 
-    def delete_merge_channels_task_with_http_info(self, request):
-        all_params = ['task_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_merge_channels_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1581,14 +1640,10 @@ class MpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.DeleteResetTracksTaskRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.DeleteResetTracksTaskResponse`
         """
-        return self.delete_reset_tracks_task_with_http_info(request)
+        return self._delete_reset_tracks_task_with_http_info(request)
 
-    def delete_reset_tracks_task_with_http_info(self, request):
-        all_params = ['task_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_reset_tracks_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1642,14 +1697,10 @@ class MpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.ListMergeChannelsTaskRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.ListMergeChannelsTaskResponse`
         """
-        return self.list_merge_channels_task_with_http_info(request)
+        return self._list_merge_channels_task_with_http_info(request)
 
-    def list_merge_channels_task_with_http_info(self, request):
-        all_params = ['task_id', 'status', 'start_time', 'end_time', 'page', 'size']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_merge_channels_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1714,14 +1765,10 @@ class MpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.ListResetTracksTaskRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.ListResetTracksTaskResponse`
         """
-        return self.list_reset_tracks_task_with_http_info(request)
+        return self._list_reset_tracks_task_with_http_info(request)
 
-    def list_reset_tracks_task_with_http_info(self, request):
-        all_params = ['task_id', 'status', 'start_time', 'end_time', 'page', 'size']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_reset_tracks_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1793,14 +1840,10 @@ class MpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.CreateMediaProcessTaskRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.CreateMediaProcessTaskResponse`
         """
-        return self.create_media_process_task_with_http_info(request)
+        return self._create_media_process_task_with_http_info(request)
 
-    def create_media_process_task_with_http_info(self, request):
-        all_params = ['create_media_process_task_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_media_process_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1861,14 +1904,10 @@ class MpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.DeleteMediaProcessTaskRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.DeleteMediaProcessTaskResponse`
         """
-        return self.delete_media_process_task_with_http_info(request)
+        return self._delete_media_process_task_with_http_info(request)
 
-    def delete_media_process_task_with_http_info(self, request):
-        all_params = ['task_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_media_process_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1929,14 +1968,10 @@ class MpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.ListMediaProcessTaskRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.ListMediaProcessTaskResponse`
         """
-        return self.list_media_process_task_with_http_info(request)
+        return self._list_media_process_task_with_http_info(request)
 
-    def list_media_process_task_with_http_info(self, request):
-        all_params = ['task_id', 'status', 'start_time', 'end_time', 'page', 'size']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_media_process_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2006,14 +2041,10 @@ class MpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.CreateMpeCallBackRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.CreateMpeCallBackResponse`
         """
-        return self.create_mpe_call_back_with_http_info(request)
+        return self._create_mpe_call_back_with_http_info(request)
 
-    def create_mpe_call_back_with_http_info(self, request):
-        all_params = ['create_mpe_call_back_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_mpe_call_back_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2067,14 +2098,10 @@ class MpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.CreateQualityEnhanceTemplateRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.CreateQualityEnhanceTemplateResponse`
         """
-        return self.create_quality_enhance_template_with_http_info(request)
+        return self._create_quality_enhance_template_with_http_info(request)
 
-    def create_quality_enhance_template_with_http_info(self, request):
-        all_params = ['create_quality_enhance_template_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_quality_enhance_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2128,14 +2155,10 @@ class MpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.DeleteQualityEnhanceTemplateRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.DeleteQualityEnhanceTemplateResponse`
         """
-        return self.delete_quality_enhance_template_with_http_info(request)
+        return self._delete_quality_enhance_template_with_http_info(request)
 
-    def delete_quality_enhance_template_with_http_info(self, request):
-        all_params = ['template_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_quality_enhance_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2189,14 +2212,10 @@ class MpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.ListQualityEnhanceDefaultTemplateRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.ListQualityEnhanceDefaultTemplateResponse`
         """
-        return self.list_quality_enhance_default_template_with_http_info(request)
+        return self._list_quality_enhance_default_template_with_http_info(request)
 
-    def list_quality_enhance_default_template_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_quality_enhance_default_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2248,14 +2267,10 @@ class MpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.UpdateQualityEnhanceTemplateRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.UpdateQualityEnhanceTemplateResponse`
         """
-        return self.update_quality_enhance_template_with_http_info(request)
+        return self._update_quality_enhance_template_with_http_info(request)
 
-    def update_quality_enhance_template_with_http_info(self, request):
-        all_params = ['update_quality_enhance_template_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_quality_enhance_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2309,14 +2324,10 @@ class MpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.ListTranscodeDetailRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.ListTranscodeDetailResponse`
         """
-        return self.list_transcode_detail_with_http_info(request)
+        return self._list_transcode_detail_with_http_info(request)
 
-    def list_transcode_detail_with_http_info(self, request):
-        all_params = ['task_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_transcode_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2371,14 +2382,10 @@ class MpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.CancelRemuxTaskRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.CancelRemuxTaskResponse`
         """
-        return self.cancel_remux_task_with_http_info(request)
+        return self._cancel_remux_task_with_http_info(request)
 
-    def cancel_remux_task_with_http_info(self, request):
-        all_params = ['task_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _cancel_remux_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2433,14 +2440,10 @@ class MpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.CreateRemuxTaskRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.CreateRemuxTaskResponse`
         """
-        return self.create_remux_task_with_http_info(request)
+        return self._create_remux_task_with_http_info(request)
 
-    def create_remux_task_with_http_info(self, request):
-        all_params = ['create_remux_task_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_remux_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2494,14 +2497,10 @@ class MpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.CreateRetryRemuxTaskRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.CreateRetryRemuxTaskResponse`
         """
-        return self.create_retry_remux_task_with_http_info(request)
+        return self._create_retry_remux_task_with_http_info(request)
 
-    def create_retry_remux_task_with_http_info(self, request):
-        all_params = ['create_retry_remux_task_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_retry_remux_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2555,14 +2554,10 @@ class MpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.DeleteRemuxTaskRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.DeleteRemuxTaskResponse`
         """
-        return self.delete_remux_task_with_http_info(request)
+        return self._delete_remux_task_with_http_info(request)
 
-    def delete_remux_task_with_http_info(self, request):
-        all_params = ['task_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_remux_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2616,14 +2611,10 @@ class MpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.ListRemuxTaskRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.ListRemuxTaskResponse`
         """
-        return self.list_remux_task_with_http_info(request)
+        return self._list_remux_task_with_http_info(request)
 
-    def list_remux_task_with_http_info(self, request):
-        all_params = ['task_id', 'status', 'start_time', 'end_time', 'input_bucket', 'input_object', 'page', 'size']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_remux_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2692,14 +2683,10 @@ class MpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.CreateTemplateGroupRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.CreateTemplateGroupResponse`
         """
-        return self.create_template_group_with_http_info(request)
+        return self._create_template_group_with_http_info(request)
 
-    def create_template_group_with_http_info(self, request):
-        all_params = ['create_template_group_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_template_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2753,14 +2740,10 @@ class MpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.DeleteTemplateGroupRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.DeleteTemplateGroupResponse`
         """
-        return self.delete_template_group_with_http_info(request)
+        return self._delete_template_group_with_http_info(request)
 
-    def delete_template_group_with_http_info(self, request):
-        all_params = ['group_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_template_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2814,14 +2797,10 @@ class MpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.ListTemplateGroupRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.ListTemplateGroupResponse`
         """
-        return self.list_template_group_with_http_info(request)
+        return self._list_template_group_with_http_info(request)
 
-    def list_template_group_with_http_info(self, request):
-        all_params = ['group_id', 'group_name', 'page', 'size']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_template_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2883,14 +2862,10 @@ class MpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.UpdateTemplateGroupRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.UpdateTemplateGroupResponse`
         """
-        return self.update_template_group_with_http_info(request)
+        return self._update_template_group_with_http_info(request)
 
-    def update_template_group_with_http_info(self, request):
-        all_params = ['update_template_group_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_template_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2948,14 +2923,10 @@ class MpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.CreateThumbnailsTaskRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.CreateThumbnailsTaskResponse`
         """
-        return self.create_thumbnails_task_with_http_info(request)
+        return self._create_thumbnails_task_with_http_info(request)
 
-    def create_thumbnails_task_with_http_info(self, request):
-        all_params = ['create_thumbnails_task_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_thumbnails_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3010,14 +2981,10 @@ class MpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.DeleteThumbnailsTaskRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.DeleteThumbnailsTaskResponse`
         """
-        return self.delete_thumbnails_task_with_http_info(request)
+        return self._delete_thumbnails_task_with_http_info(request)
 
-    def delete_thumbnails_task_with_http_info(self, request):
-        all_params = ['task_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_thumbnails_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3071,14 +3038,10 @@ class MpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.ListThumbnailsTaskRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.ListThumbnailsTaskResponse`
         """
-        return self.list_thumbnails_task_with_http_info(request)
+        return self._list_thumbnails_task_with_http_info(request)
 
-    def list_thumbnails_task_with_http_info(self, request):
-        all_params = ['x_language', 'task_id', 'status', 'start_time', 'end_time', 'page', 'size']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_thumbnails_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3146,14 +3109,10 @@ class MpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.CreateTranscodingTaskRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.CreateTranscodingTaskResponse`
         """
-        return self.create_transcoding_task_with_http_info(request)
+        return self._create_transcoding_task_with_http_info(request)
 
-    def create_transcoding_task_with_http_info(self, request):
-        all_params = ['create_transcoding_task_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_transcoding_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3208,14 +3167,10 @@ class MpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.DeleteTranscodingTaskRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.DeleteTranscodingTaskResponse`
         """
-        return self.delete_transcoding_task_with_http_info(request)
+        return self._delete_transcoding_task_with_http_info(request)
 
-    def delete_transcoding_task_with_http_info(self, request):
-        all_params = ['task_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_transcoding_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3269,14 +3224,10 @@ class MpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.DeleteTranscodingTaskByConsoleRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.DeleteTranscodingTaskByConsoleResponse`
         """
-        return self.delete_transcoding_task_by_console_with_http_info(request)
+        return self._delete_transcoding_task_by_console_with_http_info(request)
 
-    def delete_transcoding_task_by_console_with_http_info(self, request):
-        all_params = ['task_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_transcoding_task_by_console_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3330,14 +3281,10 @@ class MpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.ListStatSummaryRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.ListStatSummaryResponse`
         """
-        return self.list_stat_summary_with_http_info(request)
+        return self._list_stat_summary_with_http_info(request)
 
-    def list_stat_summary_with_http_info(self, request):
-        all_params = ['start_time', 'end_time', 'stat_type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_stat_summary_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3395,14 +3342,10 @@ class MpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.ListTranscodingTaskRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.ListTranscodingTaskResponse`
         """
-        return self.list_transcoding_task_with_http_info(request)
+        return self._list_transcoding_task_with_http_info(request)
 
-    def list_transcoding_task_with_http_info(self, request):
-        all_params = ['x_language', 'task_id', 'status', 'start_time', 'end_time', 'page', 'size']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_transcoding_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3469,14 +3412,10 @@ class MpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.CreateTransTemplateRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.CreateTransTemplateResponse`
         """
-        return self.create_trans_template_with_http_info(request)
+        return self._create_trans_template_with_http_info(request)
 
-    def create_trans_template_with_http_info(self, request):
-        all_params = ['create_trans_template_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_trans_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3530,14 +3469,10 @@ class MpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.DeleteTemplateRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.DeleteTemplateResponse`
         """
-        return self.delete_template_with_http_info(request)
+        return self._delete_template_with_http_info(request)
 
-    def delete_template_with_http_info(self, request):
-        all_params = ['template_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3592,14 +3527,10 @@ class MpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.ListTemplateRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.ListTemplateResponse`
         """
-        return self.list_template_with_http_info(request)
+        return self._list_template_with_http_info(request)
 
-    def list_template_with_http_info(self, request):
-        all_params = ['template_id', 'page', 'size']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3658,14 +3589,10 @@ class MpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.UpdateTransTemplateRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.UpdateTransTemplateResponse`
         """
-        return self.update_trans_template_with_http_info(request)
+        return self._update_trans_template_with_http_info(request)
 
-    def update_trans_template_with_http_info(self, request):
-        all_params = ['update_trans_template_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_trans_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3719,14 +3646,10 @@ class MpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.CreateWatermarkTemplateRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.CreateWatermarkTemplateResponse`
         """
-        return self.create_watermark_template_with_http_info(request)
+        return self._create_watermark_template_with_http_info(request)
 
-    def create_watermark_template_with_http_info(self, request):
-        all_params = ['create_watermark_template_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_watermark_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3780,14 +3703,10 @@ class MpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.DeleteWatermarkTemplateRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.DeleteWatermarkTemplateResponse`
         """
-        return self.delete_watermark_template_with_http_info(request)
+        return self._delete_watermark_template_with_http_info(request)
 
-    def delete_watermark_template_with_http_info(self, request):
-        all_params = ['template_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_watermark_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3841,14 +3760,10 @@ class MpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.ListWatermarkTemplateRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.ListWatermarkTemplateResponse`
         """
-        return self.list_watermark_template_with_http_info(request)
+        return self._list_watermark_template_with_http_info(request)
 
-    def list_watermark_template_with_http_info(self, request):
-        all_params = ['template_id', 'page', 'size']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_watermark_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -3907,14 +3822,10 @@ class MpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.UpdateWatermarkTemplateRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.UpdateWatermarkTemplateResponse`
         """
-        return self.update_watermark_template_with_http_info(request)
+        return self._update_watermark_template_with_http_info(request)
 
-    def update_watermark_template_with_http_info(self, request):
-        all_params = ['update_watermark_template_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_watermark_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class LiveClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(LiveClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdklive.v2.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -47,6 +29,10 @@ class LiveClient(Client):
 
         查询直播全球区域维度的详细数据接口。
         
+        如果不传入域名，则查询租户下所有播放域名的详细数据。
+        
+        当查询租户级别数据时，参数app、stream不生效。
+        
         最大查询跨度1天，最大查询周期90天。
         
         支持查询当天，当前数据延时少于5分钟。
@@ -57,14 +43,10 @@ class LiveClient(Client):
         :type request: :class:`huaweicloudsdklive.v2.ListAreaDetailRequest`
         :rtype: :class:`huaweicloudsdklive.v2.ListAreaDetailResponse`
         """
-        return self.list_area_detail_with_http_info(request)
+        return self._list_area_detail_with_http_info(request)
 
-    def list_area_detail_with_http_info(self, request):
-        all_params = ['start_time', 'end_time', 'play_domains', 'area', 'metric', 'app', 'stream', 'interval', 'isp', 'protocol']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_area_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -144,14 +126,10 @@ class LiveClient(Client):
         :type request: :class:`huaweicloudsdklive.v2.ListBandwidthDetailRequest`
         :rtype: :class:`huaweicloudsdklive.v2.ListBandwidthDetailResponse`
         """
-        return self.list_bandwidth_detail_with_http_info(request)
+        return self._list_bandwidth_detail_with_http_info(request)
 
-    def list_bandwidth_detail_with_http_info(self, request):
-        all_params = ['play_domains', 'app', 'stream', 'country', 'region', 'isp', 'protocol', 'interval', 'start_time', 'end_time', 'service_type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_bandwidth_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -234,14 +212,10 @@ class LiveClient(Client):
         :type request: :class:`huaweicloudsdklive.v2.ListDomainBandwidthPeakRequest`
         :rtype: :class:`huaweicloudsdklive.v2.ListDomainBandwidthPeakResponse`
         """
-        return self.list_domain_bandwidth_peak_with_http_info(request)
+        return self._list_domain_bandwidth_peak_with_http_info(request)
 
-    def list_domain_bandwidth_peak_with_http_info(self, request):
-        all_params = ['play_domains', 'app', 'stream', 'region', 'isp', 'protocol', 'start_time', 'end_time', 'service_type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_domain_bandwidth_peak_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -319,14 +293,10 @@ class LiveClient(Client):
         :type request: :class:`huaweicloudsdklive.v2.ListDomainTrafficDetailRequest`
         :rtype: :class:`huaweicloudsdklive.v2.ListDomainTrafficDetailResponse`
         """
-        return self.list_domain_traffic_detail_with_http_info(request)
+        return self._list_domain_traffic_detail_with_http_info(request)
 
-    def list_domain_traffic_detail_with_http_info(self, request):
-        all_params = ['play_domains', 'app', 'stream', 'region', 'isp', 'protocol', 'interval', 'start_time', 'end_time', 'service_type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_domain_traffic_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -406,14 +376,10 @@ class LiveClient(Client):
         :type request: :class:`huaweicloudsdklive.v2.ListDomainTrafficSummaryRequest`
         :rtype: :class:`huaweicloudsdklive.v2.ListDomainTrafficSummaryResponse`
         """
-        return self.list_domain_traffic_summary_with_http_info(request)
+        return self._list_domain_traffic_summary_with_http_info(request)
 
-    def list_domain_traffic_summary_with_http_info(self, request):
-        all_params = ['play_domains', 'app', 'stream', 'region', 'isp', 'protocol', 'start_time', 'end_time', 'service_type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_domain_traffic_summary_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -489,14 +455,10 @@ class LiveClient(Client):
         :type request: :class:`huaweicloudsdklive.v2.ListHistoryStreamsRequest`
         :rtype: :class:`huaweicloudsdklive.v2.ListHistoryStreamsResponse`
         """
-        return self.list_history_streams_with_http_info(request)
+        return self._list_history_streams_with_http_info(request)
 
-    def list_history_streams_with_http_info(self, request):
-        all_params = ['domain', 'app', 'stream', 'start_time', 'end_time', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_history_streams_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -561,14 +523,10 @@ class LiveClient(Client):
         :type request: :class:`huaweicloudsdklive.v2.ListQueryHttpCodeRequest`
         :rtype: :class:`huaweicloudsdklive.v2.ListQueryHttpCodeResponse`
         """
-        return self.list_query_http_code_with_http_info(request)
+        return self._list_query_http_code_with_http_info(request)
 
-    def list_query_http_code_with_http_info(self, request):
-        all_params = ['play_domains', 'code', 'region', 'isp', 'start_time', 'end_time']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_query_http_code_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -635,14 +593,10 @@ class LiveClient(Client):
         :type request: :class:`huaweicloudsdklive.v2.ListRecordDataRequest`
         :rtype: :class:`huaweicloudsdklive.v2.ListRecordDataResponse`
         """
-        return self.list_record_data_with_http_info(request)
+        return self._list_record_data_with_http_info(request)
 
-    def list_record_data_with_http_info(self, request):
-        all_params = ['publish_domain', 'start_time', 'end_time']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_record_data_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -699,14 +653,10 @@ class LiveClient(Client):
         :type request: :class:`huaweicloudsdklive.v2.ListSnapshotDataRequest`
         :rtype: :class:`huaweicloudsdklive.v2.ListSnapshotDataResponse`
         """
-        return self.list_snapshot_data_with_http_info(request)
+        return self._list_snapshot_data_with_http_info(request)
 
-    def list_snapshot_data_with_http_info(self, request):
-        all_params = ['publish_domain', 'start_time', 'end_time']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_snapshot_data_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -763,14 +713,10 @@ class LiveClient(Client):
         :type request: :class:`huaweicloudsdklive.v2.ListTranscodeDataRequest`
         :rtype: :class:`huaweicloudsdklive.v2.ListTranscodeDataResponse`
         """
-        return self.list_transcode_data_with_http_info(request)
+        return self._list_transcode_data_with_http_info(request)
 
-    def list_transcode_data_with_http_info(self, request):
-        all_params = ['publish_domain', 'stream', 'start_time', 'end_time']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_transcode_data_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -829,14 +775,10 @@ class LiveClient(Client):
         :type request: :class:`huaweicloudsdklive.v2.ListUsersOfStreamRequest`
         :rtype: :class:`huaweicloudsdklive.v2.ListUsersOfStreamResponse`
         """
-        return self.list_users_of_stream_with_http_info(request)
+        return self._list_users_of_stream_with_http_info(request)
 
-    def list_users_of_stream_with_http_info(self, request):
-        all_params = ['play_domain', 'app', 'stream', 'isp', 'country', 'region', 'protocol', 'interval', 'start_time', 'end_time', 'service_type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_users_of_stream_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -912,14 +854,10 @@ class LiveClient(Client):
         :type request: :class:`huaweicloudsdklive.v2.ShowStreamCountRequest`
         :rtype: :class:`huaweicloudsdklive.v2.ShowStreamCountResponse`
         """
-        return self.show_stream_count_with_http_info(request)
+        return self._show_stream_count_with_http_info(request)
 
-    def show_stream_count_with_http_info(self, request):
-        all_params = ['publish_domains', 'start_time', 'end_time']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_stream_count_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -978,14 +916,10 @@ class LiveClient(Client):
         :type request: :class:`huaweicloudsdklive.v2.ShowStreamPortraitRequest`
         :rtype: :class:`huaweicloudsdklive.v2.ShowStreamPortraitResponse`
         """
-        return self.show_stream_portrait_with_http_info(request)
+        return self._show_stream_portrait_with_http_info(request)
 
-    def show_stream_portrait_with_http_info(self, request):
-        all_params = ['play_domain', 'time', 'stream']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_stream_portrait_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1042,14 +976,10 @@ class LiveClient(Client):
         :type request: :class:`huaweicloudsdklive.v2.ShowUpBandwidthRequest`
         :rtype: :class:`huaweicloudsdklive.v2.ShowUpBandwidthResponse`
         """
-        return self.show_up_bandwidth_with_http_info(request)
+        return self._show_up_bandwidth_with_http_info(request)
 
-    def show_up_bandwidth_with_http_info(self, request):
-        all_params = ['publish_domains', 'app', 'stream', 'region', 'isp', 'interval', 'type', 'start_time', 'end_time']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_up_bandwidth_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1125,14 +1055,10 @@ class LiveClient(Client):
         :type request: :class:`huaweicloudsdklive.v2.ListSingleStreamBitrateRequest`
         :rtype: :class:`huaweicloudsdklive.v2.ListSingleStreamBitrateResponse`
         """
-        return self.list_single_stream_bitrate_with_http_info(request)
+        return self._list_single_stream_bitrate_with_http_info(request)
 
-    def list_single_stream_bitrate_with_http_info(self, request):
-        all_params = ['domain', 'app', 'stream', 'start_time', 'end_time']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_single_stream_bitrate_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1197,14 +1123,10 @@ class LiveClient(Client):
         :type request: :class:`huaweicloudsdklive.v2.ListSingleStreamDetailRequest`
         :rtype: :class:`huaweicloudsdklive.v2.ListSingleStreamDetailResponse`
         """
-        return self.list_single_stream_detail_with_http_info(request)
+        return self._list_single_stream_detail_with_http_info(request)
 
-    def list_single_stream_detail_with_http_info(self, request):
-        all_params = ['publish_domain', 'app', 'stream', 'start_time', 'end_time']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_single_stream_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1269,14 +1191,10 @@ class LiveClient(Client):
         :type request: :class:`huaweicloudsdklive.v2.ListSingleStreamFramerateRequest`
         :rtype: :class:`huaweicloudsdklive.v2.ListSingleStreamFramerateResponse`
         """
-        return self.list_single_stream_framerate_with_http_info(request)
+        return self._list_single_stream_framerate_with_http_info(request)
 
-    def list_single_stream_framerate_with_http_info(self, request):
-        all_params = ['domain', 'app', 'stream', 'start_time', 'end_time']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_single_stream_framerate_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1341,14 +1259,10 @@ class LiveClient(Client):
         :type request: :class:`huaweicloudsdklive.v2.ListUpStreamDetailRequest`
         :rtype: :class:`huaweicloudsdklive.v2.ListUpStreamDetailResponse`
         """
-        return self.list_up_stream_detail_with_http_info(request)
+        return self._list_up_stream_detail_with_http_info(request)
 
-    def list_up_stream_detail_with_http_info(self, request):
-        all_params = ['publish_domain', 'app', 'stream', 'start_time', 'end_time']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_up_stream_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

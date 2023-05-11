@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class AntiDDoSClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(AntiDDoSClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkantiddos.v1.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -53,14 +35,10 @@ class AntiDDoSClient(Client):
         :type request: :class:`huaweicloudsdkantiddos.v1.CreateDefaultConfigRequest`
         :rtype: :class:`huaweicloudsdkantiddos.v1.CreateDefaultConfigResponse`
         """
-        return self.create_default_config_with_http_info(request)
+        return self._create_default_config_with_http_info(request)
 
-    def create_default_config_with_http_info(self, request):
-        all_params = ['create_default_config_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_default_config_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -113,14 +91,10 @@ class AntiDDoSClient(Client):
         :type request: :class:`huaweicloudsdkantiddos.v1.DeleteDefaultConfigRequest`
         :rtype: :class:`huaweicloudsdkantiddos.v1.DeleteDefaultConfigResponse`
         """
-        return self.delete_default_config_with_http_info(request)
+        return self._delete_default_config_with_http_info(request)
 
-    def delete_default_config_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_default_config_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -171,14 +145,10 @@ class AntiDDoSClient(Client):
         :type request: :class:`huaweicloudsdkantiddos.v1.ShowAlertConfigRequest`
         :rtype: :class:`huaweicloudsdkantiddos.v1.ShowAlertConfigResponse`
         """
-        return self.show_alert_config_with_http_info(request)
+        return self._show_alert_config_with_http_info(request)
 
-    def show_alert_config_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_alert_config_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -229,14 +199,10 @@ class AntiDDoSClient(Client):
         :type request: :class:`huaweicloudsdkantiddos.v1.ShowDefaultConfigRequest`
         :rtype: :class:`huaweicloudsdkantiddos.v1.ShowDefaultConfigResponse`
         """
-        return self.show_default_config_with_http_info(request)
+        return self._show_default_config_with_http_info(request)
 
-    def show_default_config_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_default_config_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -287,14 +253,10 @@ class AntiDDoSClient(Client):
         :type request: :class:`huaweicloudsdkantiddos.v1.UpdateAlertConfigRequest`
         :rtype: :class:`huaweicloudsdkantiddos.v1.UpdateAlertConfigResponse`
         """
-        return self.update_alert_config_with_http_info(request)
+        return self._update_alert_config_with_http_info(request)
 
-    def update_alert_config_with_http_info(self, request):
-        all_params = ['update_alert_config_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_alert_config_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -347,14 +309,10 @@ class AntiDDoSClient(Client):
         :type request: :class:`huaweicloudsdkantiddos.v1.ListDDosStatusRequest`
         :rtype: :class:`huaweicloudsdkantiddos.v1.ListDDosStatusResponse`
         """
-        return self.list_d_dos_status_with_http_info(request)
+        return self._list_d_dos_status_with_http_info(request)
 
-    def list_d_dos_status_with_http_info(self, request):
-        all_params = ['status', 'limit', 'offset', 'ip']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_d_dos_status_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -413,14 +371,10 @@ class AntiDDoSClient(Client):
         :type request: :class:`huaweicloudsdkantiddos.v1.ListDailyLogRequest`
         :rtype: :class:`huaweicloudsdkantiddos.v1.ListDailyLogResponse`
         """
-        return self.list_daily_log_with_http_info(request)
+        return self._list_daily_log_with_http_info(request)
 
-    def list_daily_log_with_http_info(self, request):
-        all_params = ['floating_ip_id', 'sort_dir', 'limit', 'offset', 'ip']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_daily_log_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -481,14 +435,10 @@ class AntiDDoSClient(Client):
         :type request: :class:`huaweicloudsdkantiddos.v1.ListDailyReportRequest`
         :rtype: :class:`huaweicloudsdkantiddos.v1.ListDailyReportResponse`
         """
-        return self.list_daily_report_with_http_info(request)
+        return self._list_daily_report_with_http_info(request)
 
-    def list_daily_report_with_http_info(self, request):
-        all_params = ['floating_ip_id', 'ip']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_daily_report_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -543,14 +493,10 @@ class AntiDDoSClient(Client):
         :type request: :class:`huaweicloudsdkantiddos.v1.ListNewConfigsRequest`
         :rtype: :class:`huaweicloudsdkantiddos.v1.ListNewConfigsResponse`
         """
-        return self.list_new_configs_with_http_info(request)
+        return self._list_new_configs_with_http_info(request)
 
-    def list_new_configs_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_new_configs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -601,14 +547,10 @@ class AntiDDoSClient(Client):
         :type request: :class:`huaweicloudsdkantiddos.v1.ListWeeklyReportsRequest`
         :rtype: :class:`huaweicloudsdkantiddos.v1.ListWeeklyReportsResponse`
         """
-        return self.list_weekly_reports_with_http_info(request)
+        return self._list_weekly_reports_with_http_info(request)
 
-    def list_weekly_reports_with_http_info(self, request):
-        all_params = ['period_start_date']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_weekly_reports_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -661,14 +603,10 @@ class AntiDDoSClient(Client):
         :type request: :class:`huaweicloudsdkantiddos.v1.ShowDDosRequest`
         :rtype: :class:`huaweicloudsdkantiddos.v1.ShowDDosResponse`
         """
-        return self.show_d_dos_with_http_info(request)
+        return self._show_d_dos_with_http_info(request)
 
-    def show_d_dos_with_http_info(self, request):
-        all_params = ['floating_ip_id', 'ip']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_d_dos_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -723,14 +661,10 @@ class AntiDDoSClient(Client):
         :type request: :class:`huaweicloudsdkantiddos.v1.ShowDDosStatusRequest`
         :rtype: :class:`huaweicloudsdkantiddos.v1.ShowDDosStatusResponse`
         """
-        return self.show_d_dos_status_with_http_info(request)
+        return self._show_d_dos_status_with_http_info(request)
 
-    def show_d_dos_status_with_http_info(self, request):
-        all_params = ['floating_ip_id', 'ip']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_d_dos_status_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -785,14 +719,10 @@ class AntiDDoSClient(Client):
         :type request: :class:`huaweicloudsdkantiddos.v1.ShowNewTaskStatusRequest`
         :rtype: :class:`huaweicloudsdkantiddos.v1.ShowNewTaskStatusResponse`
         """
-        return self.show_new_task_status_with_http_info(request)
+        return self._show_new_task_status_with_http_info(request)
 
-    def show_new_task_status_with_http_info(self, request):
-        all_params = ['task_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_new_task_status_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -845,14 +775,10 @@ class AntiDDoSClient(Client):
         :type request: :class:`huaweicloudsdkantiddos.v1.UpdateDDosRequest`
         :rtype: :class:`huaweicloudsdkantiddos.v1.UpdateDDosResponse`
         """
-        return self.update_d_dos_with_http_info(request)
+        return self._update_d_dos_with_http_info(request)
 
-    def update_d_dos_with_http_info(self, request):
-        all_params = ['floating_ip_id', 'update_d_dos_request_body', 'ip']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_d_dos_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 

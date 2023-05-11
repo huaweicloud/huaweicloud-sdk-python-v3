@@ -1,9 +1,6 @@
 # coding: utf-8
 
-import re
 import six
-
-
 
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
@@ -24,7 +21,8 @@ class ChangeServerOsWithoutCloudInitOption:
         'keyname': 'str',
         'userid': 'str',
         'imageid': 'str',
-        'mode': 'str'
+        'mode': 'str',
+        'metadata': 'ChangeSeversOsMetadataWithoutCloudInitOption'
     }
 
     attribute_map = {
@@ -32,10 +30,11 @@ class ChangeServerOsWithoutCloudInitOption:
         'keyname': 'keyname',
         'userid': 'userid',
         'imageid': 'imageid',
-        'mode': 'mode'
+        'mode': 'mode',
+        'metadata': 'metadata'
     }
 
-    def __init__(self, adminpass=None, keyname=None, userid=None, imageid=None, mode=None):
+    def __init__(self, adminpass=None, keyname=None, userid=None, imageid=None, mode=None, metadata=None):
         """ChangeServerOsWithoutCloudInitOption
 
         The model defined in huaweicloud sdk
@@ -50,6 +49,8 @@ class ChangeServerOsWithoutCloudInitOption:
         :type imageid: str
         :param mode: 取值为withStopServer ，支持开机状态下切换弹性云服务器操作系统。  mode取值为withStopServer时，对开机状态的  弹性云服务器执行切换操作系统操作，系统自动对云服务器先执行关机，再切换操作系统。
         :type mode: str
+        :param metadata: 
+        :type metadata: :class:`huaweicloudsdkecs.v2.ChangeSeversOsMetadataWithoutCloudInitOption`
         """
         
         
@@ -59,6 +60,7 @@ class ChangeServerOsWithoutCloudInitOption:
         self._userid = None
         self._imageid = None
         self._mode = None
+        self._metadata = None
         self.discriminator = None
 
         if adminpass is not None:
@@ -70,6 +72,8 @@ class ChangeServerOsWithoutCloudInitOption:
         self.imageid = imageid
         if mode is not None:
             self.mode = mode
+        if metadata is not None:
+            self.metadata = metadata
 
     @property
     def adminpass(self):
@@ -180,6 +184,24 @@ class ChangeServerOsWithoutCloudInitOption:
         :type mode: str
         """
         self._mode = mode
+
+    @property
+    def metadata(self):
+        """Gets the metadata of this ChangeServerOsWithoutCloudInitOption.
+
+        :return: The metadata of this ChangeServerOsWithoutCloudInitOption.
+        :rtype: :class:`huaweicloudsdkecs.v2.ChangeSeversOsMetadataWithoutCloudInitOption`
+        """
+        return self._metadata
+
+    @metadata.setter
+    def metadata(self, metadata):
+        """Sets the metadata of this ChangeServerOsWithoutCloudInitOption.
+
+        :param metadata: The metadata of this ChangeServerOsWithoutCloudInitOption.
+        :type metadata: :class:`huaweicloudsdkecs.v2.ChangeSeversOsMetadataWithoutCloudInitOption`
+        """
+        self._metadata = metadata
 
     def to_dict(self):
         """Returns the model properties as a dict"""

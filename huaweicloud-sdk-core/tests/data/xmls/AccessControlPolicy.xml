@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AccessControlPolicy>
+    <Owner>
+        <ID>ID</ID>
+    </Owner>
+    <AccessControlList>
+        <Grant>
+            <Grantee>
+                <ID>domainId</ID>
+            </Grantee>
+            <Permission>permission</Permission>
+            <Delivered>false</Delivered>
+        </Grant>
+    </AccessControlList>
+</AccessControlPolicy>

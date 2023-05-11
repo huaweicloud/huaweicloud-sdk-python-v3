@@ -55,9 +55,12 @@ class DefaultExceptionHandler(ExceptionHandler):
         except Exception:
             sdk_error.error_msg = six.ensure_str(response.text)
             raise exceptions.ServerResponseException(response.status_code, sdk_error)
+        finally:
+            if not sdk_error.error_code:
+                sdk_error.error_code = str(response.status_code)
+            if not sdk_error.error_msg:
+                sdk_error.error_msg = response.text
 
-        if not sdk_error.error_msg:
-            sdk_error.error_msg = response.text
         return sdk_error
 
     @classmethod

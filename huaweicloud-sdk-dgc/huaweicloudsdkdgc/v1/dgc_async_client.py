@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class DgcAsyncClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(DgcAsyncClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkdgc.v1.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -53,14 +35,10 @@ class DgcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdgc.v1.CancelScriptRequest`
         :rtype: :class:`huaweicloudsdkdgc.v1.CancelScriptResponse`
         """
-        return self.cancel_script_with_http_info(request)
+        return self._cancel_script_with_http_info(request)
 
-    def cancel_script_with_http_info(self, request):
-        all_params = ['script_name', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _cancel_script_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -75,6 +53,8 @@ class DgcAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
 
         form_params = {}
 
@@ -115,14 +95,10 @@ class DgcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdgc.v1.CreateConnectionRequest`
         :rtype: :class:`huaweicloudsdkdgc.v1.CreateConnectionResponse`
         """
-        return self.create_connection_with_http_info(request)
+        return self._create_connection_with_http_info(request)
 
-    def create_connection_with_http_info(self, request):
-        all_params = ['body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_connection_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -133,6 +109,8 @@ class DgcAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
 
         form_params = {}
 
@@ -175,14 +153,10 @@ class DgcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdgc.v1.CreateJobRequest`
         :rtype: :class:`huaweicloudsdkdgc.v1.CreateJobResponse`
         """
-        return self.create_job_with_http_info(request)
+        return self._create_job_with_http_info(request)
 
-    def create_job_with_http_info(self, request):
-        all_params = ['body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -193,6 +167,8 @@ class DgcAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
 
         form_params = {}
 
@@ -235,14 +211,10 @@ class DgcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdgc.v1.CreateResourceRequest`
         :rtype: :class:`huaweicloudsdkdgc.v1.CreateResourceResponse`
         """
-        return self.create_resource_with_http_info(request)
+        return self._create_resource_with_http_info(request)
 
-    def create_resource_with_http_info(self, request):
-        all_params = ['body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_resource_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -253,6 +225,8 @@ class DgcAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
 
         form_params = {}
 
@@ -295,14 +269,10 @@ class DgcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdgc.v1.CreateScriptRequest`
         :rtype: :class:`huaweicloudsdkdgc.v1.CreateScriptResponse`
         """
-        return self.create_script_with_http_info(request)
+        return self._create_script_with_http_info(request)
 
-    def create_script_with_http_info(self, request):
-        all_params = ['body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_script_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -313,6 +283,8 @@ class DgcAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
 
         form_params = {}
 
@@ -355,14 +327,10 @@ class DgcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdgc.v1.DeleteConnctionRequest`
         :rtype: :class:`huaweicloudsdkdgc.v1.DeleteConnctionResponse`
         """
-        return self.delete_connction_with_http_info(request)
+        return self._delete_connction_with_http_info(request)
 
-    def delete_connction_with_http_info(self, request):
-        all_params = ['connection_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_connction_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -375,6 +343,8 @@ class DgcAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
 
         form_params = {}
 
@@ -415,14 +385,10 @@ class DgcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdgc.v1.DeleteJobRequest`
         :rtype: :class:`huaweicloudsdkdgc.v1.DeleteJobResponse`
         """
-        return self.delete_job_with_http_info(request)
+        return self._delete_job_with_http_info(request)
 
-    def delete_job_with_http_info(self, request):
-        all_params = ['job_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -435,6 +401,8 @@ class DgcAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
 
         form_params = {}
 
@@ -475,14 +443,10 @@ class DgcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdgc.v1.DeleteResourceRequest`
         :rtype: :class:`huaweicloudsdkdgc.v1.DeleteResourceResponse`
         """
-        return self.delete_resource_with_http_info(request)
+        return self._delete_resource_with_http_info(request)
 
-    def delete_resource_with_http_info(self, request):
-        all_params = ['resource_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_resource_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -495,6 +459,8 @@ class DgcAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
 
         form_params = {}
 
@@ -535,14 +501,10 @@ class DgcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdgc.v1.DeleteScriptRequest`
         :rtype: :class:`huaweicloudsdkdgc.v1.DeleteScriptResponse`
         """
-        return self.delete_script_with_http_info(request)
+        return self._delete_script_with_http_info(request)
 
-    def delete_script_with_http_info(self, request):
-        all_params = ['script_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_script_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -555,6 +517,8 @@ class DgcAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
 
         form_params = {}
 
@@ -595,14 +559,10 @@ class DgcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdgc.v1.ExecuteScriptRequest`
         :rtype: :class:`huaweicloudsdkdgc.v1.ExecuteScriptResponse`
         """
-        return self.execute_script_with_http_info(request)
+        return self._execute_script_with_http_info(request)
 
-    def execute_script_with_http_info(self, request):
-        all_params = ['script_name', 'body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _execute_script_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -615,6 +575,8 @@ class DgcAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
 
         form_params = {}
 
@@ -657,14 +619,10 @@ class DgcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdgc.v1.ExportConnectionsRequest`
         :rtype: :class:`huaweicloudsdkdgc.v1.ExportConnectionsResponse`
         """
-        return self.export_connections_with_http_info(request)
+        return self._export_connections_with_http_info(request)
 
-    def export_connections_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _export_connections_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -675,6 +633,8 @@ class DgcAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
 
         form_params = {}
 
@@ -715,14 +675,10 @@ class DgcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdgc.v1.ExportJobRequest`
         :rtype: :class:`huaweicloudsdkdgc.v1.ExportJobResponse`
         """
-        return self.export_job_with_http_info(request)
+        return self._export_job_with_http_info(request)
 
-    def export_job_with_http_info(self, request):
-        all_params = ['job_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _export_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -735,6 +691,8 @@ class DgcAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
 
         form_params = {}
 
@@ -775,14 +733,10 @@ class DgcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdgc.v1.ExportJobListRequest`
         :rtype: :class:`huaweicloudsdkdgc.v1.ExportJobListResponse`
         """
-        return self.export_job_list_with_http_info(request)
+        return self._export_job_list_with_http_info(request)
 
-    def export_job_list_with_http_info(self, request):
-        all_params = ['body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _export_job_list_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -793,6 +747,8 @@ class DgcAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
 
         form_params = {}
 
@@ -835,14 +791,10 @@ class DgcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdgc.v1.ImportConnectionsRequest`
         :rtype: :class:`huaweicloudsdkdgc.v1.ImportConnectionsResponse`
         """
-        return self.import_connections_with_http_info(request)
+        return self._import_connections_with_http_info(request)
 
-    def import_connections_with_http_info(self, request):
-        all_params = ['body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _import_connections_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -853,6 +805,8 @@ class DgcAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
 
         form_params = {}
 
@@ -895,14 +849,10 @@ class DgcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdgc.v1.ImportJobRequest`
         :rtype: :class:`huaweicloudsdkdgc.v1.ImportJobResponse`
         """
-        return self.import_job_with_http_info(request)
+        return self._import_job_with_http_info(request)
 
-    def import_job_with_http_info(self, request):
-        all_params = ['body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _import_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -913,6 +863,8 @@ class DgcAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
 
         form_params = {}
 
@@ -955,14 +907,10 @@ class DgcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdgc.v1.ListConnectionsRequest`
         :rtype: :class:`huaweicloudsdkdgc.v1.ListConnectionsResponse`
         """
-        return self.list_connections_with_http_info(request)
+        return self._list_connections_with_http_info(request)
 
-    def list_connections_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_connections_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -973,6 +921,8 @@ class DgcAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
 
         form_params = {}
 
@@ -1013,14 +963,10 @@ class DgcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdgc.v1.ListJobInstancesRequest`
         :rtype: :class:`huaweicloudsdkdgc.v1.ListJobInstancesResponse`
         """
-        return self.list_job_instances_with_http_info(request)
+        return self._list_job_instances_with_http_info(request)
 
-    def list_job_instances_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_job_instances_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1031,6 +977,8 @@ class DgcAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
 
         form_params = {}
 
@@ -1071,14 +1019,10 @@ class DgcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdgc.v1.ListJobsRequest`
         :rtype: :class:`huaweicloudsdkdgc.v1.ListJobsResponse`
         """
-        return self.list_jobs_with_http_info(request)
+        return self._list_jobs_with_http_info(request)
 
-    def list_jobs_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_jobs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1089,6 +1033,8 @@ class DgcAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
 
         form_params = {}
 
@@ -1127,14 +1073,10 @@ class DgcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdgc.v1.ListResourcesRequest`
         :rtype: :class:`huaweicloudsdkdgc.v1.ListResourcesResponse`
         """
-        return self.list_resources_with_http_info(request)
+        return self._list_resources_with_http_info(request)
 
-    def list_resources_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_resources_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1145,6 +1087,8 @@ class DgcAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
 
         form_params = {}
 
@@ -1185,14 +1129,10 @@ class DgcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdgc.v1.ListScriptResultsRequest`
         :rtype: :class:`huaweicloudsdkdgc.v1.ListScriptResultsResponse`
         """
-        return self.list_script_results_with_http_info(request)
+        return self._list_script_results_with_http_info(request)
 
-    def list_script_results_with_http_info(self, request):
-        all_params = ['script_name', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_script_results_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1207,6 +1147,8 @@ class DgcAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
 
         form_params = {}
 
@@ -1247,14 +1189,10 @@ class DgcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdgc.v1.ListScriptsRequest`
         :rtype: :class:`huaweicloudsdkdgc.v1.ListScriptsResponse`
         """
-        return self.list_scripts_with_http_info(request)
+        return self._list_scripts_with_http_info(request)
 
-    def list_scripts_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_scripts_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1265,6 +1203,8 @@ class DgcAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
 
         form_params = {}
 
@@ -1305,14 +1245,10 @@ class DgcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdgc.v1.ListSystemTasksRequest`
         :rtype: :class:`huaweicloudsdkdgc.v1.ListSystemTasksResponse`
         """
-        return self.list_system_tasks_with_http_info(request)
+        return self._list_system_tasks_with_http_info(request)
 
-    def list_system_tasks_with_http_info(self, request):
-        all_params = ['task_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_system_tasks_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1325,6 +1261,8 @@ class DgcAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
 
         form_params = {}
 
@@ -1365,14 +1303,10 @@ class DgcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdgc.v1.RestoreJobInstanceRequest`
         :rtype: :class:`huaweicloudsdkdgc.v1.RestoreJobInstanceResponse`
         """
-        return self.restore_job_instance_with_http_info(request)
+        return self._restore_job_instance_with_http_info(request)
 
-    def restore_job_instance_with_http_info(self, request):
-        all_params = ['job_name', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _restore_job_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1387,6 +1321,8 @@ class DgcAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
 
         form_params = {}
 
@@ -1427,14 +1363,10 @@ class DgcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdgc.v1.RunOnceRequest`
         :rtype: :class:`huaweicloudsdkdgc.v1.RunOnceResponse`
         """
-        return self.run_once_with_http_info(request)
+        return self._run_once_with_http_info(request)
 
-    def run_once_with_http_info(self, request):
-        all_params = ['job_name', 'body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _run_once_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1447,6 +1379,8 @@ class DgcAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
 
         form_params = {}
 
@@ -1489,14 +1423,10 @@ class DgcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdgc.v1.ShowConnectionRequest`
         :rtype: :class:`huaweicloudsdkdgc.v1.ShowConnectionResponse`
         """
-        return self.show_connection_with_http_info(request)
+        return self._show_connection_with_http_info(request)
 
-    def show_connection_with_http_info(self, request):
-        all_params = ['connection_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_connection_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1509,6 +1439,8 @@ class DgcAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
 
         form_params = {}
 
@@ -1549,14 +1481,10 @@ class DgcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdgc.v1.ShowFileInfoRequest`
         :rtype: :class:`huaweicloudsdkdgc.v1.ShowFileInfoResponse`
         """
-        return self.show_file_info_with_http_info(request)
+        return self._show_file_info_with_http_info(request)
 
-    def show_file_info_with_http_info(self, request):
-        all_params = ['body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_file_info_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1567,6 +1495,8 @@ class DgcAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
 
         form_params = {}
 
@@ -1609,14 +1539,10 @@ class DgcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdgc.v1.ShowJobRequest`
         :rtype: :class:`huaweicloudsdkdgc.v1.ShowJobResponse`
         """
-        return self.show_job_with_http_info(request)
+        return self._show_job_with_http_info(request)
 
-    def show_job_with_http_info(self, request):
-        all_params = ['job_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1629,6 +1555,8 @@ class DgcAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
 
         form_params = {}
 
@@ -1669,14 +1597,10 @@ class DgcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdgc.v1.ShowJobInstanceRequest`
         :rtype: :class:`huaweicloudsdkdgc.v1.ShowJobInstanceResponse`
         """
-        return self.show_job_instance_with_http_info(request)
+        return self._show_job_instance_with_http_info(request)
 
-    def show_job_instance_with_http_info(self, request):
-        all_params = ['job_name', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_job_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1691,6 +1615,8 @@ class DgcAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
 
         form_params = {}
 
@@ -1731,14 +1657,10 @@ class DgcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdgc.v1.ShowJobStatusRequest`
         :rtype: :class:`huaweicloudsdkdgc.v1.ShowJobStatusResponse`
         """
-        return self.show_job_status_with_http_info(request)
+        return self._show_job_status_with_http_info(request)
 
-    def show_job_status_with_http_info(self, request):
-        all_params = ['job_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_job_status_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1751,6 +1673,8 @@ class DgcAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
 
         form_params = {}
 
@@ -1791,14 +1715,10 @@ class DgcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdgc.v1.ShowResourceRequest`
         :rtype: :class:`huaweicloudsdkdgc.v1.ShowResourceResponse`
         """
-        return self.show_resource_with_http_info(request)
+        return self._show_resource_with_http_info(request)
 
-    def show_resource_with_http_info(self, request):
-        all_params = ['resource_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_resource_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1811,6 +1731,8 @@ class DgcAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
 
         form_params = {}
 
@@ -1851,14 +1773,10 @@ class DgcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdgc.v1.ShowScriptRequest`
         :rtype: :class:`huaweicloudsdkdgc.v1.ShowScriptResponse`
         """
-        return self.show_script_with_http_info(request)
+        return self._show_script_with_http_info(request)
 
-    def show_script_with_http_info(self, request):
-        all_params = ['script_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_script_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1871,6 +1789,8 @@ class DgcAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
 
         form_params = {}
 
@@ -1911,14 +1831,10 @@ class DgcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdgc.v1.StartJobRequest`
         :rtype: :class:`huaweicloudsdkdgc.v1.StartJobResponse`
         """
-        return self.start_job_with_http_info(request)
+        return self._start_job_with_http_info(request)
 
-    def start_job_with_http_info(self, request):
-        all_params = ['job_name', 'body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _start_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1931,6 +1847,8 @@ class DgcAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
 
         form_params = {}
 
@@ -1973,14 +1891,10 @@ class DgcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdgc.v1.StopJobRequest`
         :rtype: :class:`huaweicloudsdkdgc.v1.StopJobResponse`
         """
-        return self.stop_job_with_http_info(request)
+        return self._stop_job_with_http_info(request)
 
-    def stop_job_with_http_info(self, request):
-        all_params = ['job_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _stop_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1993,6 +1907,8 @@ class DgcAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
 
         form_params = {}
 
@@ -2033,14 +1949,10 @@ class DgcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdgc.v1.StopJobInstanceRequest`
         :rtype: :class:`huaweicloudsdkdgc.v1.StopJobInstanceResponse`
         """
-        return self.stop_job_instance_with_http_info(request)
+        return self._stop_job_instance_with_http_info(request)
 
-    def stop_job_instance_with_http_info(self, request):
-        all_params = ['job_name', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _stop_job_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2055,6 +1967,8 @@ class DgcAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
 
         form_params = {}
 
@@ -2095,14 +2009,10 @@ class DgcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdgc.v1.UpdateConnectionRequest`
         :rtype: :class:`huaweicloudsdkdgc.v1.UpdateConnectionResponse`
         """
-        return self.update_connection_with_http_info(request)
+        return self._update_connection_with_http_info(request)
 
-    def update_connection_with_http_info(self, request):
-        all_params = ['connection_name', 'body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_connection_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2115,6 +2025,8 @@ class DgcAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
 
         form_params = {}
 
@@ -2157,14 +2069,10 @@ class DgcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdgc.v1.UpdateJobRequest`
         :rtype: :class:`huaweicloudsdkdgc.v1.UpdateJobResponse`
         """
-        return self.update_job_with_http_info(request)
+        return self._update_job_with_http_info(request)
 
-    def update_job_with_http_info(self, request):
-        all_params = ['job_name', 'body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2177,6 +2085,8 @@ class DgcAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
 
         form_params = {}
 
@@ -2219,14 +2129,10 @@ class DgcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdgc.v1.UpdateResourceRequest`
         :rtype: :class:`huaweicloudsdkdgc.v1.UpdateResourceResponse`
         """
-        return self.update_resource_with_http_info(request)
+        return self._update_resource_with_http_info(request)
 
-    def update_resource_with_http_info(self, request):
-        all_params = ['resource_id', 'body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_resource_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2239,6 +2145,8 @@ class DgcAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
 
         form_params = {}
 
@@ -2281,14 +2189,10 @@ class DgcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdgc.v1.UpdateScriptRequest`
         :rtype: :class:`huaweicloudsdkdgc.v1.UpdateScriptResponse`
         """
-        return self.update_script_with_http_info(request)
+        return self._update_script_with_http_info(request)
 
-    def update_script_with_http_info(self, request):
-        all_params = ['script_name', 'body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_script_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2301,6 +2205,8 @@ class DgcAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
 
         form_params = {}
 

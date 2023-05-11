@@ -2,35 +2,17 @@
 
 from __future__ import absolute_import
 
-import datetime
-import re
 import importlib
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
-from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class KmsClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
-    NATIVE_TYPES_MAPPING = {
-        'int': int,
-        'long': int if six.PY3 else long,
-        'float': float,
-        'str': str,
-        'bool': bool,
-        'date': datetime.date,
-        'datetime': datetime.datetime,
-        'object': object,
-    }
-
     def __init__(self):
         super(KmsClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkkms.v2.model")
-        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @classmethod
     def new_builder(cls, clazz=None):
@@ -53,14 +35,10 @@ class KmsClient(Client):
         :type request: :class:`huaweicloudsdkkms.v2.BatchCreateKmsTagsRequest`
         :rtype: :class:`huaweicloudsdkkms.v2.BatchCreateKmsTagsResponse`
         """
-        return self.batch_create_kms_tags_with_http_info(request)
+        return self._batch_create_kms_tags_with_http_info(request)
 
-    def batch_create_kms_tags_with_http_info(self, request):
-        all_params = ['key_id', 'batch_create_kms_tags_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _batch_create_kms_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -117,14 +95,10 @@ class KmsClient(Client):
         :type request: :class:`huaweicloudsdkkms.v2.CancelGrantRequest`
         :rtype: :class:`huaweicloudsdkkms.v2.CancelGrantResponse`
         """
-        return self.cancel_grant_with_http_info(request)
+        return self._cancel_grant_with_http_info(request)
 
-    def cancel_grant_with_http_info(self, request):
-        all_params = ['cancel_grant_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _cancel_grant_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -178,14 +152,10 @@ class KmsClient(Client):
         :type request: :class:`huaweicloudsdkkms.v2.CancelKeyDeletionRequest`
         :rtype: :class:`huaweicloudsdkkms.v2.CancelKeyDeletionResponse`
         """
-        return self.cancel_key_deletion_with_http_info(request)
+        return self._cancel_key_deletion_with_http_info(request)
 
-    def cancel_key_deletion_with_http_info(self, request):
-        all_params = ['cancel_key_deletion_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _cancel_key_deletion_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -245,14 +215,10 @@ class KmsClient(Client):
         :type request: :class:`huaweicloudsdkkms.v2.CancelSelfGrantRequest`
         :rtype: :class:`huaweicloudsdkkms.v2.CancelSelfGrantResponse`
         """
-        return self.cancel_self_grant_with_http_info(request)
+        return self._cancel_self_grant_with_http_info(request)
 
-    def cancel_self_grant_with_http_info(self, request):
-        all_params = ['cancel_self_grant_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _cancel_self_grant_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -305,14 +271,10 @@ class KmsClient(Client):
         :type request: :class:`huaweicloudsdkkms.v2.CreateDatakeyRequest`
         :rtype: :class:`huaweicloudsdkkms.v2.CreateDatakeyResponse`
         """
-        return self.create_datakey_with_http_info(request)
+        return self._create_datakey_with_http_info(request)
 
-    def create_datakey_with_http_info(self, request):
-        all_params = ['create_datakey_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_datakey_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -365,14 +327,10 @@ class KmsClient(Client):
         :type request: :class:`huaweicloudsdkkms.v2.CreateDatakeyWithoutPlaintextRequest`
         :rtype: :class:`huaweicloudsdkkms.v2.CreateDatakeyWithoutPlaintextResponse`
         """
-        return self.create_datakey_without_plaintext_with_http_info(request)
+        return self._create_datakey_without_plaintext_with_http_info(request)
 
-    def create_datakey_without_plaintext_with_http_info(self, request):
-        all_params = ['create_datakey_without_plaintext_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_datakey_without_plaintext_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -427,14 +385,10 @@ class KmsClient(Client):
         :type request: :class:`huaweicloudsdkkms.v2.CreateGrantRequest`
         :rtype: :class:`huaweicloudsdkkms.v2.CreateGrantResponse`
         """
-        return self.create_grant_with_http_info(request)
+        return self._create_grant_with_http_info(request)
 
-    def create_grant_with_http_info(self, request):
-        all_params = ['create_grant_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_grant_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -489,14 +443,10 @@ class KmsClient(Client):
         :type request: :class:`huaweicloudsdkkms.v2.CreateKeyRequest`
         :rtype: :class:`huaweicloudsdkkms.v2.CreateKeyResponse`
         """
-        return self.create_key_with_http_info(request)
+        return self._create_key_with_http_info(request)
 
-    def create_key_with_http_info(self, request):
-        all_params = ['create_key_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_key_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -549,14 +499,10 @@ class KmsClient(Client):
         :type request: :class:`huaweicloudsdkkms.v2.CreateKeyStoreRequest`
         :rtype: :class:`huaweicloudsdkkms.v2.CreateKeyStoreResponse`
         """
-        return self.create_key_store_with_http_info(request)
+        return self._create_key_store_with_http_info(request)
 
-    def create_key_store_with_http_info(self, request):
-        all_params = ['create_key_store_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_key_store_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -609,14 +555,10 @@ class KmsClient(Client):
         :type request: :class:`huaweicloudsdkkms.v2.CreateKmsTagRequest`
         :rtype: :class:`huaweicloudsdkkms.v2.CreateKmsTagResponse`
         """
-        return self.create_kms_tag_with_http_info(request)
+        return self._create_kms_tag_with_http_info(request)
 
-    def create_kms_tag_with_http_info(self, request):
-        all_params = ['key_id', 'create_kms_tag_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_kms_tag_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -672,14 +614,10 @@ class KmsClient(Client):
         :type request: :class:`huaweicloudsdkkms.v2.CreateParametersForImportRequest`
         :rtype: :class:`huaweicloudsdkkms.v2.CreateParametersForImportResponse`
         """
-        return self.create_parameters_for_import_with_http_info(request)
+        return self._create_parameters_for_import_with_http_info(request)
 
-    def create_parameters_for_import_with_http_info(self, request):
-        all_params = ['create_parameters_for_import_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_parameters_for_import_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -733,14 +671,10 @@ class KmsClient(Client):
         :type request: :class:`huaweicloudsdkkms.v2.CreateRandomRequest`
         :rtype: :class:`huaweicloudsdkkms.v2.CreateRandomResponse`
         """
-        return self.create_random_with_http_info(request)
+        return self._create_random_with_http_info(request)
 
-    def create_random_with_http_info(self, request):
-        all_params = ['create_random_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _create_random_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -793,14 +727,10 @@ class KmsClient(Client):
         :type request: :class:`huaweicloudsdkkms.v2.DecryptDataRequest`
         :rtype: :class:`huaweicloudsdkkms.v2.DecryptDataResponse`
         """
-        return self.decrypt_data_with_http_info(request)
+        return self._decrypt_data_with_http_info(request)
 
-    def decrypt_data_with_http_info(self, request):
-        all_params = ['decrypt_data_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _decrypt_data_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -853,14 +783,10 @@ class KmsClient(Client):
         :type request: :class:`huaweicloudsdkkms.v2.DecryptDatakeyRequest`
         :rtype: :class:`huaweicloudsdkkms.v2.DecryptDatakeyResponse`
         """
-        return self.decrypt_datakey_with_http_info(request)
+        return self._decrypt_datakey_with_http_info(request)
 
-    def decrypt_datakey_with_http_info(self, request):
-        all_params = ['decrypt_datakey_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _decrypt_datakey_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -913,14 +839,10 @@ class KmsClient(Client):
         :type request: :class:`huaweicloudsdkkms.v2.DeleteImportedKeyMaterialRequest`
         :rtype: :class:`huaweicloudsdkkms.v2.DeleteImportedKeyMaterialResponse`
         """
-        return self.delete_imported_key_material_with_http_info(request)
+        return self._delete_imported_key_material_with_http_info(request)
 
-    def delete_imported_key_material_with_http_info(self, request):
-        all_params = ['delete_imported_key_material_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_imported_key_material_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -973,14 +895,10 @@ class KmsClient(Client):
         :type request: :class:`huaweicloudsdkkms.v2.DeleteKeyRequest`
         :rtype: :class:`huaweicloudsdkkms.v2.DeleteKeyResponse`
         """
-        return self.delete_key_with_http_info(request)
+        return self._delete_key_with_http_info(request)
 
-    def delete_key_with_http_info(self, request):
-        all_params = ['delete_key_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_key_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1033,14 +951,10 @@ class KmsClient(Client):
         :type request: :class:`huaweicloudsdkkms.v2.DeleteKeyStoreRequest`
         :rtype: :class:`huaweicloudsdkkms.v2.DeleteKeyStoreResponse`
         """
-        return self.delete_key_store_with_http_info(request)
+        return self._delete_key_store_with_http_info(request)
 
-    def delete_key_store_with_http_info(self, request):
-        all_params = ['keystore_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_key_store_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1093,14 +1007,10 @@ class KmsClient(Client):
         :type request: :class:`huaweicloudsdkkms.v2.DeleteTagRequest`
         :rtype: :class:`huaweicloudsdkkms.v2.DeleteTagResponse`
         """
-        return self.delete_tag_with_http_info(request)
+        return self._delete_tag_with_http_info(request)
 
-    def delete_tag_with_http_info(self, request):
-        all_params = ['key_id', 'key']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _delete_tag_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1156,14 +1066,10 @@ class KmsClient(Client):
         :type request: :class:`huaweicloudsdkkms.v2.DisableKeyRequest`
         :rtype: :class:`huaweicloudsdkkms.v2.DisableKeyResponse`
         """
-        return self.disable_key_with_http_info(request)
+        return self._disable_key_with_http_info(request)
 
-    def disable_key_with_http_info(self, request):
-        all_params = ['disable_key_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _disable_key_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1216,14 +1122,10 @@ class KmsClient(Client):
         :type request: :class:`huaweicloudsdkkms.v2.DisableKeyRotationRequest`
         :rtype: :class:`huaweicloudsdkkms.v2.DisableKeyRotationResponse`
         """
-        return self.disable_key_rotation_with_http_info(request)
+        return self._disable_key_rotation_with_http_info(request)
 
-    def disable_key_rotation_with_http_info(self, request):
-        all_params = ['disable_key_rotation_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _disable_key_rotation_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1276,14 +1178,10 @@ class KmsClient(Client):
         :type request: :class:`huaweicloudsdkkms.v2.DisableKeyStoreRequest`
         :rtype: :class:`huaweicloudsdkkms.v2.DisableKeyStoreResponse`
         """
-        return self.disable_key_store_with_http_info(request)
+        return self._disable_key_store_with_http_info(request)
 
-    def disable_key_store_with_http_info(self, request):
-        all_params = ['keystore_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _disable_key_store_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1337,14 +1235,10 @@ class KmsClient(Client):
         :type request: :class:`huaweicloudsdkkms.v2.EnableKeyRequest`
         :rtype: :class:`huaweicloudsdkkms.v2.EnableKeyResponse`
         """
-        return self.enable_key_with_http_info(request)
+        return self._enable_key_with_http_info(request)
 
-    def enable_key_with_http_info(self, request):
-        all_params = ['enable_key_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _enable_key_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1400,14 +1294,10 @@ class KmsClient(Client):
         :type request: :class:`huaweicloudsdkkms.v2.EnableKeyRotationRequest`
         :rtype: :class:`huaweicloudsdkkms.v2.EnableKeyRotationResponse`
         """
-        return self.enable_key_rotation_with_http_info(request)
+        return self._enable_key_rotation_with_http_info(request)
 
-    def enable_key_rotation_with_http_info(self, request):
-        all_params = ['enable_key_rotation_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _enable_key_rotation_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1460,14 +1350,10 @@ class KmsClient(Client):
         :type request: :class:`huaweicloudsdkkms.v2.EnableKeyStoreRequest`
         :rtype: :class:`huaweicloudsdkkms.v2.EnableKeyStoreResponse`
         """
-        return self.enable_key_store_with_http_info(request)
+        return self._enable_key_store_with_http_info(request)
 
-    def enable_key_store_with_http_info(self, request):
-        all_params = ['keystore_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _enable_key_store_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1520,14 +1406,10 @@ class KmsClient(Client):
         :type request: :class:`huaweicloudsdkkms.v2.EncryptDataRequest`
         :rtype: :class:`huaweicloudsdkkms.v2.EncryptDataResponse`
         """
-        return self.encrypt_data_with_http_info(request)
+        return self._encrypt_data_with_http_info(request)
 
-    def encrypt_data_with_http_info(self, request):
-        all_params = ['encrypt_data_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _encrypt_data_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1580,14 +1462,10 @@ class KmsClient(Client):
         :type request: :class:`huaweicloudsdkkms.v2.EncryptDatakeyRequest`
         :rtype: :class:`huaweicloudsdkkms.v2.EncryptDatakeyResponse`
         """
-        return self.encrypt_datakey_with_http_info(request)
+        return self._encrypt_datakey_with_http_info(request)
 
-    def encrypt_datakey_with_http_info(self, request):
-        all_params = ['encrypt_datakey_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _encrypt_datakey_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1640,14 +1518,10 @@ class KmsClient(Client):
         :type request: :class:`huaweicloudsdkkms.v2.ImportKeyMaterialRequest`
         :rtype: :class:`huaweicloudsdkkms.v2.ImportKeyMaterialResponse`
         """
-        return self.import_key_material_with_http_info(request)
+        return self._import_key_material_with_http_info(request)
 
-    def import_key_material_with_http_info(self, request):
-        all_params = ['import_key_material_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _import_key_material_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1700,14 +1574,10 @@ class KmsClient(Client):
         :type request: :class:`huaweicloudsdkkms.v2.ListGrantsRequest`
         :rtype: :class:`huaweicloudsdkkms.v2.ListGrantsResponse`
         """
-        return self.list_grants_with_http_info(request)
+        return self._list_grants_with_http_info(request)
 
-    def list_grants_with_http_info(self, request):
-        all_params = ['list_grants_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_grants_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1760,14 +1630,10 @@ class KmsClient(Client):
         :type request: :class:`huaweicloudsdkkms.v2.ListKeyDetailRequest`
         :rtype: :class:`huaweicloudsdkkms.v2.ListKeyDetailResponse`
         """
-        return self.list_key_detail_with_http_info(request)
+        return self._list_key_detail_with_http_info(request)
 
-    def list_key_detail_with_http_info(self, request):
-        all_params = ['list_key_detail_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_key_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1820,14 +1686,10 @@ class KmsClient(Client):
         :type request: :class:`huaweicloudsdkkms.v2.ListKeyStoresRequest`
         :rtype: :class:`huaweicloudsdkkms.v2.ListKeyStoresResponse`
         """
-        return self.list_key_stores_with_http_info(request)
+        return self._list_key_stores_with_http_info(request)
 
-    def list_key_stores_with_http_info(self, request):
-        all_params = ['limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_key_stores_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1882,14 +1744,10 @@ class KmsClient(Client):
         :type request: :class:`huaweicloudsdkkms.v2.ListKeysRequest`
         :rtype: :class:`huaweicloudsdkkms.v2.ListKeysResponse`
         """
-        return self.list_keys_with_http_info(request)
+        return self._list_keys_with_http_info(request)
 
-    def list_keys_with_http_info(self, request):
-        all_params = ['list_keys_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_keys_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -1942,14 +1800,10 @@ class KmsClient(Client):
         :type request: :class:`huaweicloudsdkkms.v2.ListKmsByTagsRequest`
         :rtype: :class:`huaweicloudsdkkms.v2.ListKmsByTagsResponse`
         """
-        return self.list_kms_by_tags_with_http_info(request)
+        return self._list_kms_by_tags_with_http_info(request)
 
-    def list_kms_by_tags_with_http_info(self, request):
-        all_params = ['resource_instances', 'list_kms_by_tags_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_kms_by_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2004,14 +1858,10 @@ class KmsClient(Client):
         :type request: :class:`huaweicloudsdkkms.v2.ListKmsTagsRequest`
         :rtype: :class:`huaweicloudsdkkms.v2.ListKmsTagsResponse`
         """
-        return self.list_kms_tags_with_http_info(request)
+        return self._list_kms_tags_with_http_info(request)
 
-    def list_kms_tags_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_kms_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2062,14 +1912,10 @@ class KmsClient(Client):
         :type request: :class:`huaweicloudsdkkms.v2.ListRetirableGrantsRequest`
         :rtype: :class:`huaweicloudsdkkms.v2.ListRetirableGrantsResponse`
         """
-        return self.list_retirable_grants_with_http_info(request)
+        return self._list_retirable_grants_with_http_info(request)
 
-    def list_retirable_grants_with_http_info(self, request):
-        all_params = ['list_retirable_grants_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _list_retirable_grants_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2122,14 +1968,10 @@ class KmsClient(Client):
         :type request: :class:`huaweicloudsdkkms.v2.ShowKeyRotationStatusRequest`
         :rtype: :class:`huaweicloudsdkkms.v2.ShowKeyRotationStatusResponse`
         """
-        return self.show_key_rotation_status_with_http_info(request)
+        return self._show_key_rotation_status_with_http_info(request)
 
-    def show_key_rotation_status_with_http_info(self, request):
-        all_params = ['show_key_rotation_status_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_key_rotation_status_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2182,14 +2024,10 @@ class KmsClient(Client):
         :type request: :class:`huaweicloudsdkkms.v2.ShowKeyStoreRequest`
         :rtype: :class:`huaweicloudsdkkms.v2.ShowKeyStoreResponse`
         """
-        return self.show_key_store_with_http_info(request)
+        return self._show_key_store_with_http_info(request)
 
-    def show_key_store_with_http_info(self, request):
-        all_params = ['keystore_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_key_store_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2242,14 +2080,10 @@ class KmsClient(Client):
         :type request: :class:`huaweicloudsdkkms.v2.ShowKmsTagsRequest`
         :rtype: :class:`huaweicloudsdkkms.v2.ShowKmsTagsResponse`
         """
-        return self.show_kms_tags_with_http_info(request)
+        return self._show_kms_tags_with_http_info(request)
 
-    def show_kms_tags_with_http_info(self, request):
-        all_params = ['key_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_kms_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2302,14 +2136,10 @@ class KmsClient(Client):
         :type request: :class:`huaweicloudsdkkms.v2.ShowPublicKeyRequest`
         :rtype: :class:`huaweicloudsdkkms.v2.ShowPublicKeyResponse`
         """
-        return self.show_public_key_with_http_info(request)
+        return self._show_public_key_with_http_info(request)
 
-    def show_public_key_with_http_info(self, request):
-        all_params = ['show_public_key_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_public_key_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2362,14 +2192,10 @@ class KmsClient(Client):
         :type request: :class:`huaweicloudsdkkms.v2.ShowUserInstancesRequest`
         :rtype: :class:`huaweicloudsdkkms.v2.ShowUserInstancesResponse`
         """
-        return self.show_user_instances_with_http_info(request)
+        return self._show_user_instances_with_http_info(request)
 
-    def show_user_instances_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_user_instances_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2420,14 +2246,10 @@ class KmsClient(Client):
         :type request: :class:`huaweicloudsdkkms.v2.ShowUserQuotasRequest`
         :rtype: :class:`huaweicloudsdkkms.v2.ShowUserQuotasResponse`
         """
-        return self.show_user_quotas_with_http_info(request)
+        return self._show_user_quotas_with_http_info(request)
 
-    def show_user_quotas_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_user_quotas_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2478,14 +2300,10 @@ class KmsClient(Client):
         :type request: :class:`huaweicloudsdkkms.v2.SignRequest`
         :rtype: :class:`huaweicloudsdkkms.v2.SignResponse`
         """
-        return self.sign_with_http_info(request)
+        return self._sign_with_http_info(request)
 
-    def sign_with_http_info(self, request):
-        all_params = ['sign_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _sign_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2541,14 +2359,10 @@ class KmsClient(Client):
         :type request: :class:`huaweicloudsdkkms.v2.UpdateKeyAliasRequest`
         :rtype: :class:`huaweicloudsdkkms.v2.UpdateKeyAliasResponse`
         """
-        return self.update_key_alias_with_http_info(request)
+        return self._update_key_alias_with_http_info(request)
 
-    def update_key_alias_with_http_info(self, request):
-        all_params = ['update_key_alias_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_key_alias_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2604,14 +2418,10 @@ class KmsClient(Client):
         :type request: :class:`huaweicloudsdkkms.v2.UpdateKeyDescriptionRequest`
         :rtype: :class:`huaweicloudsdkkms.v2.UpdateKeyDescriptionResponse`
         """
-        return self.update_key_description_with_http_info(request)
+        return self._update_key_description_with_http_info(request)
 
-    def update_key_description_with_http_info(self, request):
-        all_params = ['update_key_description_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_key_description_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2664,14 +2474,10 @@ class KmsClient(Client):
         :type request: :class:`huaweicloudsdkkms.v2.UpdateKeyRotationIntervalRequest`
         :rtype: :class:`huaweicloudsdkkms.v2.UpdateKeyRotationIntervalResponse`
         """
-        return self.update_key_rotation_interval_with_http_info(request)
+        return self._update_key_rotation_interval_with_http_info(request)
 
-    def update_key_rotation_interval_with_http_info(self, request):
-        all_params = ['update_key_rotation_interval_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _update_key_rotation_interval_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2724,14 +2530,10 @@ class KmsClient(Client):
         :type request: :class:`huaweicloudsdkkms.v2.ValidateSignatureRequest`
         :rtype: :class:`huaweicloudsdkkms.v2.ValidateSignatureResponse`
         """
-        return self.validate_signature_with_http_info(request)
+        return self._validate_signature_with_http_info(request)
 
-    def validate_signature_with_http_info(self, request):
-        all_params = ['validate_signature_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _validate_signature_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2784,14 +2586,10 @@ class KmsClient(Client):
         :type request: :class:`huaweicloudsdkkms.v2.ShowVersionRequest`
         :rtype: :class:`huaweicloudsdkkms.v2.ShowVersionResponse`
         """
-        return self.show_version_with_http_info(request)
+        return self._show_version_with_http_info(request)
 
-    def show_version_with_http_info(self, request):
-        all_params = ['version_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_version_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
@@ -2844,14 +2642,10 @@ class KmsClient(Client):
         :type request: :class:`huaweicloudsdkkms.v2.ShowVersionsRequest`
         :rtype: :class:`huaweicloudsdkkms.v2.ShowVersionsResponse`
         """
-        return self.show_versions_with_http_info(request)
+        return self._show_versions_with_http_info(request)
 
-    def show_versions_with_http_info(self, request):
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
+    def _show_versions_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
 
