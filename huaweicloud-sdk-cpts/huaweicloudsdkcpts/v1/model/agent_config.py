@@ -27,7 +27,12 @@ class AgentConfig:
         'redis_enable': 'bool',
         'redis_shadow_key_prefix': 'str',
         'redis_shadow_repository': 'str',
-        'redis_shadow_type': 'str'
+        'redis_shadow_type': 'str',
+        'kafka_enable': 'bool',
+        'kafka_shadow_topic_prefix': 'str',
+        'app_log_level': 'str',
+        'app_log_path': 'str',
+        'mock_rule_list': 'list[MockRuleConfig]'
     }
 
     attribute_map = {
@@ -41,10 +46,15 @@ class AgentConfig:
         'redis_enable': 'redis_enable',
         'redis_shadow_key_prefix': 'redis_shadow_key_prefix',
         'redis_shadow_repository': 'redis_shadow_repository',
-        'redis_shadow_type': 'redis_shadow_type'
+        'redis_shadow_type': 'redis_shadow_type',
+        'kafka_enable': 'kafka_enable',
+        'kafka_shadow_topic_prefix': 'kafka_shadow_topic_prefix',
+        'app_log_level': 'app_log_level',
+        'app_log_path': 'app_log_path',
+        'mock_rule_list': 'mock_rule_list'
     }
 
-    def __init__(self, agent_id=None, db_enable=None, db_shadow_repository=None, db_shadow_type=None, log_level=None, log_path=None, main_switch=None, redis_enable=None, redis_shadow_key_prefix=None, redis_shadow_repository=None, redis_shadow_type=None):
+    def __init__(self, agent_id=None, db_enable=None, db_shadow_repository=None, db_shadow_type=None, log_level=None, log_path=None, main_switch=None, redis_enable=None, redis_shadow_key_prefix=None, redis_shadow_repository=None, redis_shadow_type=None, kafka_enable=None, kafka_shadow_topic_prefix=None, app_log_level=None, app_log_path=None, mock_rule_list=None):
         """AgentConfig
 
         The model defined in huaweicloud sdk
@@ -71,6 +81,16 @@ class AgentConfig:
         :type redis_shadow_repository: str
         :param redis_shadow_type: redis影子库类型
         :type redis_shadow_type: str
+        :param kafka_enable: kafka影子规则开关
+        :type kafka_enable: bool
+        :param kafka_shadow_topic_prefix: kafka影子topic前缀
+        :type kafka_shadow_topic_prefix: str
+        :param app_log_level: 应用日志等级（ALL/TRACE/DEBUG/INFO/WARN/ERROR/OFF）
+        :type app_log_level: str
+        :param app_log_path: 应用日志路径
+        :type app_log_path: str
+        :param mock_rule_list: mock规则列表
+        :type mock_rule_list: list[:class:`huaweicloudsdkcpts.v1.MockRuleConfig`]
         """
         
         
@@ -86,6 +106,11 @@ class AgentConfig:
         self._redis_shadow_key_prefix = None
         self._redis_shadow_repository = None
         self._redis_shadow_type = None
+        self._kafka_enable = None
+        self._kafka_shadow_topic_prefix = None
+        self._app_log_level = None
+        self._app_log_path = None
+        self._mock_rule_list = None
         self.discriminator = None
 
         if agent_id is not None:
@@ -110,6 +135,16 @@ class AgentConfig:
             self.redis_shadow_repository = redis_shadow_repository
         if redis_shadow_type is not None:
             self.redis_shadow_type = redis_shadow_type
+        if kafka_enable is not None:
+            self.kafka_enable = kafka_enable
+        if kafka_shadow_topic_prefix is not None:
+            self.kafka_shadow_topic_prefix = kafka_shadow_topic_prefix
+        if app_log_level is not None:
+            self.app_log_level = app_log_level
+        if app_log_path is not None:
+            self.app_log_path = app_log_path
+        if mock_rule_list is not None:
+            self.mock_rule_list = mock_rule_list
 
     @property
     def agent_id(self):
@@ -352,6 +387,116 @@ class AgentConfig:
         :type redis_shadow_type: str
         """
         self._redis_shadow_type = redis_shadow_type
+
+    @property
+    def kafka_enable(self):
+        """Gets the kafka_enable of this AgentConfig.
+
+        kafka影子规则开关
+
+        :return: The kafka_enable of this AgentConfig.
+        :rtype: bool
+        """
+        return self._kafka_enable
+
+    @kafka_enable.setter
+    def kafka_enable(self, kafka_enable):
+        """Sets the kafka_enable of this AgentConfig.
+
+        kafka影子规则开关
+
+        :param kafka_enable: The kafka_enable of this AgentConfig.
+        :type kafka_enable: bool
+        """
+        self._kafka_enable = kafka_enable
+
+    @property
+    def kafka_shadow_topic_prefix(self):
+        """Gets the kafka_shadow_topic_prefix of this AgentConfig.
+
+        kafka影子topic前缀
+
+        :return: The kafka_shadow_topic_prefix of this AgentConfig.
+        :rtype: str
+        """
+        return self._kafka_shadow_topic_prefix
+
+    @kafka_shadow_topic_prefix.setter
+    def kafka_shadow_topic_prefix(self, kafka_shadow_topic_prefix):
+        """Sets the kafka_shadow_topic_prefix of this AgentConfig.
+
+        kafka影子topic前缀
+
+        :param kafka_shadow_topic_prefix: The kafka_shadow_topic_prefix of this AgentConfig.
+        :type kafka_shadow_topic_prefix: str
+        """
+        self._kafka_shadow_topic_prefix = kafka_shadow_topic_prefix
+
+    @property
+    def app_log_level(self):
+        """Gets the app_log_level of this AgentConfig.
+
+        应用日志等级（ALL/TRACE/DEBUG/INFO/WARN/ERROR/OFF）
+
+        :return: The app_log_level of this AgentConfig.
+        :rtype: str
+        """
+        return self._app_log_level
+
+    @app_log_level.setter
+    def app_log_level(self, app_log_level):
+        """Sets the app_log_level of this AgentConfig.
+
+        应用日志等级（ALL/TRACE/DEBUG/INFO/WARN/ERROR/OFF）
+
+        :param app_log_level: The app_log_level of this AgentConfig.
+        :type app_log_level: str
+        """
+        self._app_log_level = app_log_level
+
+    @property
+    def app_log_path(self):
+        """Gets the app_log_path of this AgentConfig.
+
+        应用日志路径
+
+        :return: The app_log_path of this AgentConfig.
+        :rtype: str
+        """
+        return self._app_log_path
+
+    @app_log_path.setter
+    def app_log_path(self, app_log_path):
+        """Sets the app_log_path of this AgentConfig.
+
+        应用日志路径
+
+        :param app_log_path: The app_log_path of this AgentConfig.
+        :type app_log_path: str
+        """
+        self._app_log_path = app_log_path
+
+    @property
+    def mock_rule_list(self):
+        """Gets the mock_rule_list of this AgentConfig.
+
+        mock规则列表
+
+        :return: The mock_rule_list of this AgentConfig.
+        :rtype: list[:class:`huaweicloudsdkcpts.v1.MockRuleConfig`]
+        """
+        return self._mock_rule_list
+
+    @mock_rule_list.setter
+    def mock_rule_list(self, mock_rule_list):
+        """Sets the mock_rule_list of this AgentConfig.
+
+        mock规则列表
+
+        :param mock_rule_list: The mock_rule_list of this AgentConfig.
+        :type mock_rule_list: list[:class:`huaweicloudsdkcpts.v1.MockRuleConfig`]
+        """
+        self._mock_rule_list = mock_rule_list
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -22,7 +22,8 @@ class PostPaidServerRootVolume:
         'hwpassthrough': 'bool',
         'cluster_type': 'str',
         'cluster_id': 'str',
-        'extendparam': 'PostPaidServerRootVolumeExtendParam'
+        'extendparam': 'PostPaidServerRootVolumeExtendParam',
+        'metadata': 'PostPaidServerRootVolumeMetadata'
     }
 
     attribute_map = {
@@ -31,10 +32,11 @@ class PostPaidServerRootVolume:
         'hwpassthrough': 'hw:passthrough',
         'cluster_type': 'cluster_type',
         'cluster_id': 'cluster_id',
-        'extendparam': 'extendparam'
+        'extendparam': 'extendparam',
+        'metadata': 'metadata'
     }
 
-    def __init__(self, volumetype=None, size=None, hwpassthrough=None, cluster_type=None, cluster_id=None, extendparam=None):
+    def __init__(self, volumetype=None, size=None, hwpassthrough=None, cluster_type=None, cluster_id=None, extendparam=None, metadata=None):
         """PostPaidServerRootVolume
 
         The model defined in huaweicloud sdk
@@ -51,6 +53,8 @@ class PostPaidServerRootVolume:
         :type cluster_id: str
         :param extendparam: 
         :type extendparam: :class:`huaweicloudsdkecs.v2.PostPaidServerRootVolumeExtendParam`
+        :param metadata: 
+        :type metadata: :class:`huaweicloudsdkecs.v2.PostPaidServerRootVolumeMetadata`
         """
         
         
@@ -61,6 +65,7 @@ class PostPaidServerRootVolume:
         self._cluster_type = None
         self._cluster_id = None
         self._extendparam = None
+        self._metadata = None
         self.discriminator = None
 
         self.volumetype = volumetype
@@ -74,6 +79,8 @@ class PostPaidServerRootVolume:
             self.cluster_id = cluster_id
         if extendparam is not None:
             self.extendparam = extendparam
+        if metadata is not None:
+            self.metadata = metadata
 
     @property
     def volumetype(self):
@@ -202,6 +209,24 @@ class PostPaidServerRootVolume:
         :type extendparam: :class:`huaweicloudsdkecs.v2.PostPaidServerRootVolumeExtendParam`
         """
         self._extendparam = extendparam
+
+    @property
+    def metadata(self):
+        """Gets the metadata of this PostPaidServerRootVolume.
+
+        :return: The metadata of this PostPaidServerRootVolume.
+        :rtype: :class:`huaweicloudsdkecs.v2.PostPaidServerRootVolumeMetadata`
+        """
+        return self._metadata
+
+    @metadata.setter
+    def metadata(self, metadata):
+        """Sets the metadata of this PostPaidServerRootVolume.
+
+        :param metadata: The metadata of this PostPaidServerRootVolume.
+        :type metadata: :class:`huaweicloudsdkecs.v2.PostPaidServerRootVolumeMetadata`
+        """
+        self._metadata = metadata
 
     def to_dict(self):
         """Returns the model properties as a dict"""

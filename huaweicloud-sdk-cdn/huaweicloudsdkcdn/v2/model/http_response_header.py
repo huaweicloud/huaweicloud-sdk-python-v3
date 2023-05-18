@@ -35,7 +35,7 @@ class HttpResponseHeader:
 
         :param name: 设置HTTP响应头参数。取值：\&quot;Content-Disposition\&quot;, \&quot;Content-Language\&quot;, \&quot;Access-Control-Allow-Origin\&quot;,\&quot;Access-Control-Allow-Methods\&quot;, \&quot;Access-Control-Max-Age\&quot;, \&quot;Access-Control-Expose-Headers\&quot;或自定义头部。格式要求：长度1~100，以字母开头，可以使用字母、数字和短横杠。
         :type name: str
-        :param value: 设置HTTP响应头参数的值。自定义HTTP响应头参数长度范围1~256，支持字母、数字和特定字符（.-_*#!%&amp;+|^~&#39;\&quot;/:;,&#x3D;@?）。
+        :param value: 设置HTTP响应头参数的值。自定义HTTP响应头参数长度范围1~256，支持字母、数字和特定字符（.-_*#!&amp;+|^~&#39;\&quot;/:;,&#x3D;@?&lt;&gt;）。
         :type value: str
         :param action: 设置http响应头操作类型，取值“set/delete”。set代表设置，delete代表删除。
         :type action: str
@@ -79,7 +79,7 @@ class HttpResponseHeader:
     def value(self):
         """Gets the value of this HttpResponseHeader.
 
-        设置HTTP响应头参数的值。自定义HTTP响应头参数长度范围1~256，支持字母、数字和特定字符（.-_*#!%&+|^~'\"/:;,=@?）。
+        设置HTTP响应头参数的值。自定义HTTP响应头参数长度范围1~256，支持字母、数字和特定字符（.-_*#!&+|^~'\"/:;,=@?<>）。
 
         :return: The value of this HttpResponseHeader.
         :rtype: str
@@ -90,7 +90,7 @@ class HttpResponseHeader:
     def value(self, value):
         """Sets the value of this HttpResponseHeader.
 
-        设置HTTP响应头参数的值。自定义HTTP响应头参数长度范围1~256，支持字母、数字和特定字符（.-_*#!%&+|^~'\"/:;,=@?）。
+        设置HTTP响应头参数的值。自定义HTTP响应头参数长度范围1~256，支持字母、数字和特定字符（.-_*#!&+|^~'\"/:;,=@?<>）。
 
         :param value: The value of this HttpResponseHeader.
         :type value: str

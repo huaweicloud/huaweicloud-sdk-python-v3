@@ -68,20 +68,29 @@ python setup.py install
   real `{Service}Client` for `VpcClient` in actual use.
 - Substitute the values for `{your ak string}`, `{your sk string}`, `{your endpoint string}` and `{your project id}`.
 
+**Simplified Demo**
+
 ```python
 # coding: utf-8
 
-
 from huaweicloudsdkcore.auth.credentials import BasicCredentials
+from huaweicloudsdkvpc.v2 import ListVpcsRequest, VpcClient
+from huaweicloudsdkvpc.v2.region.vpc_region import VpcRegion
 from huaweicloudsdkcore.exceptions import exceptions
-from huaweicloudsdkcore.http.http_config import HttpConfig
-# import specified service library huaweicloudsdk{service}, take vpc for example
-from huaweicloudsdkvpc.v2 import *
 
+if __name__ == "__main__":
+    # Configure authentication
+    credentials = BasicCredentials("{your ak string}", "{your sk string}")
 
-def list_vpc(client):
+    # Create a service client
+    client = VpcClient.new_builder() \
+        .with_credentials(credentials) \
+        .with_region(VpcRegion.value_of("cn-north-4")) \
+        .build()
+    
+    # Send the request and get the response
     try:
-        request = ListVpcsRequest(limit=1)
+        request = ListVpcsRequest()
         response = client.list_vpcs(request)
         print(response)
     except exceptions.ClientRequestException as e:
@@ -89,25 +98,84 @@ def list_vpc(client):
         print(e.request_id)
         print(e.error_code)
         print(e.error_msg)
+```
 
+**Detailed Demo**
+
+```python
+# coding: utf-8
+import logging
+
+from huaweicloudsdkcore.auth.credentials import BasicCredentials
+from huaweicloudsdkcore.http.http_config import HttpConfig
+from huaweicloudsdkcore.http.http_handler import HttpHandler
+from huaweicloudsdkvpc.v2 import VpcClient, ListVpcsRequest
+from huaweicloudsdkvpc.v2.region.vpc_region import VpcRegion
+from huaweicloudsdkcore.exceptions import exceptions
 
 if __name__ == "__main__":
-    ak = "{your ak string}"
-    sk = "{your sk string}"
-    endpoint = "{your endpoint}"
-    project_id = "{your project id}"
+    # Configure authentication
+    # If project_id is not filled in, the SDK will automatically call the IAM service to query the project id corresponding to the region.
+    credentials = BasicCredentials("{your ak string}", "{your sk string}", project_id="{your projectId string}") \
+            .with_iam_endpoint("https://iam.cn-north-4.myhuaweicloud.com")  # Configure the SDK built-in IAM service endpoint, default is https://iam.myhuaweicloud.com
 
-    config = HttpConfig.get_default_config()
-    config.ignore_ssl_verification = True
-    credentials = BasicCredentials(ak, sk, project_id)
+    # Use default configuration
+    http_config = HttpConfig.get_default_config()
+    # Configure whether to ignore the SSL certificate verification, default is false
+    http_config.ignore_ssl_verification = True
+    # Configure CA certificate file
+    http_config.ssl_ca_cert = '/path/to/certfile'
+    # The default connection timeout is 60 seconds, the default read timeout is 120 seconds
+    http_config.timeout = (60, 120)
+    # Configure proxy as needed
+    http_config.proxy_protocol = 'http'
+    http_config.proxy_host = 'proxy.huaweicloud.com'
+    http_config.proxy_port = 80
+    http_config.proxy_user = 'username'
+    http_config.proxy_password = 'password'
 
-    vpc_client = VpcClient.new_builder() \
-        .with_http_config(config) \
-        .with_credentials(credentials) \
-        .with_endpoint(endpoint) \
+    # The HTTP handler is used to print the request and response, do not use it in the production environment
+    def response_handler(**kwargs):
+        response = kwargs.get("response")
+        request = response.request
+
+        info = "> Request %s %s HTTP/1.1" % (request.method, request.path_url) + "\n"
+        if len(request.headers) != 0:
+            info = info + "> Headers:" + "\n"
+            for each in request.headers:
+                info = info + "    %s: %s" % (each, request.headers[each]) + "\n"
+        info = info + "> Body: %s" % request.body + "\n\n"
+    
+        info = info + "< Response HTTP/1.1 %s " % response.status_code + "\n"
+        if len(response.headers) != 0:
+            info = info + "< Headers:" + "\n"
+            for each in response.headers:
+                info = info + "    %s: %s" % (each, response.headers[each],) + "\n"
+        info = info + "< Body: %s" % response.content
+        print(info)
+
+    http_handler = HttpHandler().add_response_handler(response_handler)
+
+    // Create a service client
+    client = VpcClient.new_builder() \
+        .with_credentials(credentials) \  # Configure authentication
+        .with_region(VpcRegion.value_of("cn-north-4")) \  # Configure region, it will throw a KeyError if the region does not exist
+        .with_http_config(http_config) \  # Configure HTTP
+        .with_stream_log(log_level=logging.INFO) \  # Configure request log output to console
+        .with_file_log(path="test.log", log_level=logging.INFO) \  # Configure request log output to file
+        .with_http_handler(http_handler) \  # Configure HTTP handler
         .build()
 
-    list_vpc(vpc_client)
+    # Send the request and get the response
+    try:
+        request = ListVpcsRequest()
+        response = client.list_vpcs(request)
+        print(response)
+    except exceptions.ClientRequestException as e:
+        print(e.status_code)
+        print(e.request_id)
+        print(e.error_code)
+        print(e.error_msg)
 ```
 
 ## Online Debugging
@@ -158,37 +226,56 @@ the [CHANGELOG.md](https://github.com/huaweicloud/huaweicloud-sdk-python-v3/blob
 from huaweicloudsdkcore.http.http_config import HttpConfig
 
 #  Use default configuration
-config = HttpConfig.get_default_config()
+http_config = HttpConfig.get_default_config()
+
+client = VpcClient.new_builder() \
+    .with_http_config(http_config) \
+    .build()
 ```
 
 #### 1.2 Network Proxy [:top:](#user-manual-top)
 
 ```python
+http_config = HttpConfig.get_default_config()
 # Use Proxy if needed
-config.proxy_protocol = 'http'
-config.proxy_host = 'proxy.huaweicloud.com'
-config.proxy_port = 80
-config.proxy_user = 'username'
-config.proxy_password = 'password'
+http_config.proxy_protocol = 'http'
+http_config.proxy_host = 'proxy.huaweicloud.com'
+http_config.proxy_port = 80
+http_config.proxy_user = 'username'
+http_config.proxy_password = 'password'
+
+client = VpcClient.new_builder() \
+    .with_http_config(http_config) \
+    .build()
 ```
 
 #### 1.3 Timeout Configuration [:top:](#user-manual-top)
 
 ```python
+http_config = HttpConfig.get_default_config()
 # The default connection timeout is 60 seconds, the default read timeout is 120 seconds
 # Set the connection timeout and read timeout to 120 seconds
-config.timeout = 120
+http_config.timeout = 120
 # Set the connection timeout to 60 seconds and the read timeout to 120 seconds
-config.timeout = (60, 120)
+http_config.timeout = (60, 120)
+
+client = VpcClient.new_builder() \
+    .with_http_config(http_config) \
+    .build()
 ```
 
 #### 1.4 SSL Certification [:top:](#user-manual-top)
 
 ```python
+http_config = HttpConfig.get_default_config()
 # Skip SSL certifaction checking while using https protocol if needed
-config.ignore_ssl_verification = True
+http_config.ignore_ssl_verification = True
 # Configure the server's CA certificate for the SDK to verify the legitimacy of the server
-config.ssl_ca_cert = ssl_ca_cert
+http_config.ssl_ca_cert = ssl_ca_cert
+
+client = VpcClient.new_builder() \
+    .with_http_config(http_config) \
+    .build()
 ```
 
 ### 2. Credentials Configuration [:top:](#user-manual-top)
@@ -733,9 +820,6 @@ Initialize specified service client instance, take VpcClient for example:
 
 ```python
 client = VpcClient.new_builder() \
-    .with_http_config(config) \
-    .with_credentials(basic_credentials) \
-    .with_endpoint(endpoint) \
     .with_file_log(path="test.log", log_level=logging.INFO) \  # Write log files
     .with_stream_log(log_level=logging.INFO) \                 # Write log to console
     .build()
@@ -772,38 +856,33 @@ needed. The SDK provides a listener function to obtain the original encrypted ht
 > :warning:  Warning: The original http log information is used in debugging stage only, please do not print the original http header or body in the production environment. These log information is not encrypted and contains sensitive data such as the password of your ECS virtual machine, or the password of your IAM user account, etc. When the response body is binary content, the body will be printed as "***" without detailed information.
 
 ```python
-import logging
 from huaweicloudsdkcore.http.http_handler import HttpHandler
 
 
 def response_handler(**kwargs):
-    logger = kwargs.get("logger")
     response = kwargs.get("response")
     request = response.request
 
-    base = "> Request %s %s HTTP/1.1" % (request.method, request.path_url) + "\n"
+    info = "> Request %s %s HTTP/1.1" % (request.method, request.path_url) + "\n"
     if len(request.headers) != 0:
-        base = base + "> Headers:" + "\n"
+        info = info + "> Headers:" + "\n"
         for each in request.headers:
-            base = base + "    %s : %s" % (each, request.headers[each]) + "\n"
-    base = base + "> Body: %s" % request.body + "\n\n"
+            info = info + "    %s: %s" % (each, request.headers[each]) + "\n"
+    info = info + "> Body: %s" % request.body + "\n\n"
 
-    base = base + "< Response HTTP/1.1 %s " % response.status_code + "\n"
+    info = info + "< Response HTTP/1.1 %s " % response.status_code + "\n"
     if len(response.headers) != 0:
-        base = base + "< Headers:" + "\n"
+        info = info + "< Headers:" + "\n"
         for each in response.headers:
-            base = base + "    %s : %s" % (each, response.headers[each],) + "\n"
-    base = base + "< Body: %s" % response.content
-    logger.debug(base)
+            info = info + "    %s: %s" % (each, response.headers[each],) + "\n"
+    info = info + "< Body: %s" % response.content
+    print(info)
 
 
 if __name__ == "__main__":
+    http_handler = HttpHandler().add_response_handler(response_handler)
     client = VpcClient.new_builder() \
-        .with_http_config(config) \
-        .with_credentials(basic_credentials) \
-        .with_stream_log(log_level=logging.DEBUG) \
-        .with_http_handler(HttpHandler().add_response_handler(response_handler)) \
-        .with_endpoint(endpoint) \
+    	.with_http_handler(http_handler) \
         .build()
 ```
 

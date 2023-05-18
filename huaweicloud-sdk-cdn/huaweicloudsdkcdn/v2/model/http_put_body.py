@@ -22,8 +22,10 @@ class HttpPutBody:
         'certificate_value': 'str',
         'private_key': 'str',
         'certificate_source': 'int',
+        'certificate_type': 'str',
         'http2_status': 'str',
-        'tls_version': 'str'
+        'tls_version': 'str',
+        'ocsp_stapling_status': 'str'
     }
 
     attribute_map = {
@@ -32,18 +34,20 @@ class HttpPutBody:
         'certificate_value': 'certificate_value',
         'private_key': 'private_key',
         'certificate_source': 'certificate_source',
+        'certificate_type': 'certificate_type',
         'http2_status': 'http2_status',
-        'tls_version': 'tls_version'
+        'tls_version': 'tls_version',
+        'ocsp_stapling_status': 'ocsp_stapling_status'
     }
 
-    def __init__(self, https_status=None, certificate_name=None, certificate_value=None, private_key=None, certificate_source=None, http2_status=None, tls_version=None):
+    def __init__(self, https_status=None, certificate_name=None, certificate_value=None, private_key=None, certificate_source=None, certificate_type=None, http2_status=None, tls_version=None, ocsp_stapling_status=None):
         """HttpPutBody
 
         The model defined in huaweicloud sdk
 
         :param https_status: HTTPS证书是否启用。（on：开启，off：关闭）
         :type https_status: str
-        :param certificate_name: 证书名字。（长度限制为3-32字符）。当证书开启时必传。
+        :param certificate_name: 证书名字。（长度限制为3-64字符）。当证书开启时必传。
         :type certificate_name: str
         :param certificate_value: HTTPS协议使用的证书内容，当证书开启时必传。取值范围：PEM编码格式。
         :type certificate_value: str
@@ -51,10 +55,14 @@ class HttpPutBody:
         :type private_key: str
         :param certificate_source: 证书来源。1：代表华为云托管证书；0：表示自有证书。 默认值0。当证书开启时必传。
         :type certificate_source: int
+        :param certificate_type: 证书类型。server：国际证书；server_sm：国密证书。
+        :type certificate_type: str
         :param http2_status: 是否使用HTTP2.0。（on：是，off：否。）,默认关闭，https_status&#x3D;off时，该值不生效。
         :type http2_status: str
         :param tls_version: 传输层安全性协议。目前支持TLSv1.0/1.1/1.2/1.3四个版本的协议。默认全部开启，不可全部关闭，只可开启连续或单个版本号。多版本开启时，使用逗号拼接传输，例：TLSv1.1,TLSv1.2。
         :type tls_version: str
+        :param ocsp_stapling_status: 是否开启ocsp stapling （on：是，off：否）。
+        :type ocsp_stapling_status: str
         """
         
         
@@ -64,8 +72,10 @@ class HttpPutBody:
         self._certificate_value = None
         self._private_key = None
         self._certificate_source = None
+        self._certificate_type = None
         self._http2_status = None
         self._tls_version = None
+        self._ocsp_stapling_status = None
         self.discriminator = None
 
         if https_status is not None:
@@ -78,10 +88,14 @@ class HttpPutBody:
             self.private_key = private_key
         if certificate_source is not None:
             self.certificate_source = certificate_source
+        if certificate_type is not None:
+            self.certificate_type = certificate_type
         if http2_status is not None:
             self.http2_status = http2_status
         if tls_version is not None:
             self.tls_version = tls_version
+        if ocsp_stapling_status is not None:
+            self.ocsp_stapling_status = ocsp_stapling_status
 
     @property
     def https_status(self):
@@ -109,7 +123,7 @@ class HttpPutBody:
     def certificate_name(self):
         """Gets the certificate_name of this HttpPutBody.
 
-        证书名字。（长度限制为3-32字符）。当证书开启时必传。
+        证书名字。（长度限制为3-64字符）。当证书开启时必传。
 
         :return: The certificate_name of this HttpPutBody.
         :rtype: str
@@ -120,7 +134,7 @@ class HttpPutBody:
     def certificate_name(self, certificate_name):
         """Sets the certificate_name of this HttpPutBody.
 
-        证书名字。（长度限制为3-32字符）。当证书开启时必传。
+        证书名字。（长度限制为3-64字符）。当证书开启时必传。
 
         :param certificate_name: The certificate_name of this HttpPutBody.
         :type certificate_name: str
@@ -194,6 +208,28 @@ class HttpPutBody:
         self._certificate_source = certificate_source
 
     @property
+    def certificate_type(self):
+        """Gets the certificate_type of this HttpPutBody.
+
+        证书类型。server：国际证书；server_sm：国密证书。
+
+        :return: The certificate_type of this HttpPutBody.
+        :rtype: str
+        """
+        return self._certificate_type
+
+    @certificate_type.setter
+    def certificate_type(self, certificate_type):
+        """Sets the certificate_type of this HttpPutBody.
+
+        证书类型。server：国际证书；server_sm：国密证书。
+
+        :param certificate_type: The certificate_type of this HttpPutBody.
+        :type certificate_type: str
+        """
+        self._certificate_type = certificate_type
+
+    @property
     def http2_status(self):
         """Gets the http2_status of this HttpPutBody.
 
@@ -236,6 +272,28 @@ class HttpPutBody:
         :type tls_version: str
         """
         self._tls_version = tls_version
+
+    @property
+    def ocsp_stapling_status(self):
+        """Gets the ocsp_stapling_status of this HttpPutBody.
+
+        是否开启ocsp stapling （on：是，off：否）。
+
+        :return: The ocsp_stapling_status of this HttpPutBody.
+        :rtype: str
+        """
+        return self._ocsp_stapling_status
+
+    @ocsp_stapling_status.setter
+    def ocsp_stapling_status(self, ocsp_stapling_status):
+        """Sets the ocsp_stapling_status of this HttpPutBody.
+
+        是否开启ocsp stapling （on：是，off：否）。
+
+        :param ocsp_stapling_status: The ocsp_stapling_status of this HttpPutBody.
+        :type ocsp_stapling_status: str
+        """
+        self._ocsp_stapling_status = ocsp_stapling_status
 
     def to_dict(self):
         """Returns the model properties as a dict"""

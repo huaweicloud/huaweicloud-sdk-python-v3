@@ -17,57 +17,28 @@ class ShowInstanceStatusRequest:
     sensitive_list = []
 
     openapi_types = {
-        'x_language': 'str',
         'task_id': 'str'
     }
 
     attribute_map = {
-        'x_language': 'X-Language',
         'task_id': 'task_id'
     }
 
-    def __init__(self, x_language=None, task_id=None):
+    def __init__(self, task_id=None):
         """ShowInstanceStatusRequest
 
         The model defined in huaweicloud sdk
 
-        :param x_language: 语言类型 中文:zh-cn 英文:en-us，默认en-us
-        :type x_language: str
         :param task_id: 实例ID
         :type task_id: str
         """
         
         
 
-        self._x_language = None
         self._task_id = None
         self.discriminator = None
 
-        if x_language is not None:
-            self.x_language = x_language
         self.task_id = task_id
-
-    @property
-    def x_language(self):
-        """Gets the x_language of this ShowInstanceStatusRequest.
-
-        语言类型 中文:zh-cn 英文:en-us，默认en-us
-
-        :return: The x_language of this ShowInstanceStatusRequest.
-        :rtype: str
-        """
-        return self._x_language
-
-    @x_language.setter
-    def x_language(self, x_language):
-        """Sets the x_language of this ShowInstanceStatusRequest.
-
-        语言类型 中文:zh-cn 英文:en-us，默认en-us
-
-        :param x_language: The x_language of this ShowInstanceStatusRequest.
-        :type x_language: str
-        """
-        self._x_language = x_language
 
     @property
     def task_id(self):

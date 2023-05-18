@@ -19,16 +19,20 @@ class DeviceBroadcastRequest:
     openapi_types = {
         'app_id': 'str',
         'topic_full_name': 'str',
-        'message': 'str'
+        'message': 'str',
+        'ttl': 'int',
+        'message_id': 'str'
     }
 
     attribute_map = {
         'app_id': 'app_id',
         'topic_full_name': 'topic_full_name',
-        'message': 'message'
+        'message': 'message',
+        'ttl': 'ttl',
+        'message_id': 'message_id'
     }
 
-    def __init__(self, app_id=None, topic_full_name=None, message=None):
+    def __init__(self, app_id=None, topic_full_name=None, message=None, ttl=None, message_id=None):
         """DeviceBroadcastRequest
 
         The model defined in huaweicloud sdk
@@ -37,8 +41,12 @@ class DeviceBroadcastRequest:
         :type app_id: str
         :param topic_full_name: **参数说明**：接收广播消息的完整Topic名称, 必选。用户需要发布广播消息给设备时，可以使用该参数指定完整的topic名称，物联网平台会向指定资源空间下订阅了该topic的所有在线设备发送消息。广播的topic无需控制台创建，但topic的前缀必须为$oc/broadcast/
         :type topic_full_name: str
-        :param message: **参数说明**：广播消息的内容，您需要将消息原文转换成二进制数据并进行Base64编码，Base64编码后的长度不超过128KB。
+        :param message: **参数说明**：广播消息的内容，用户需要将消息原文使用Base64编码，Base64编码后的长度不超过128KB。
         :type message: str
+        :param ttl: **参数说明**：广播消息在平台缓存的老化时间，时间单位是分钟，默认值为0；ttl参数数值必须是5的倍数，即以5分钟为粒度；指定为0时表示不缓存消息，最大缓存时间1440分钟，即缓存一天；ttl&gt;0时，一个topic订阅设备数限制为10，如果一个topic订阅设备数超过10，则接口返回错误。
+        :type ttl: int
+        :param message_id: **参数说明**：消息id，由用户生成（推荐使用UUID）。ttl&gt; 0时，平台会缓存消息，需确保message_id是唯一的， 否则接口返回错误。 **取值范围**：长度不超过100，只允许字母、数字、下划线（_）、连接符（-）的组合。
+        :type message_id: str
         """
         
         
@@ -46,12 +54,18 @@ class DeviceBroadcastRequest:
         self._app_id = None
         self._topic_full_name = None
         self._message = None
+        self._ttl = None
+        self._message_id = None
         self.discriminator = None
 
         if app_id is not None:
             self.app_id = app_id
         self.topic_full_name = topic_full_name
         self.message = message
+        if ttl is not None:
+            self.ttl = ttl
+        if message_id is not None:
+            self.message_id = message_id
 
     @property
     def app_id(self):
@@ -101,7 +115,7 @@ class DeviceBroadcastRequest:
     def message(self):
         """Gets the message of this DeviceBroadcastRequest.
 
-        **参数说明**：广播消息的内容，您需要将消息原文转换成二进制数据并进行Base64编码，Base64编码后的长度不超过128KB。
+        **参数说明**：广播消息的内容，用户需要将消息原文使用Base64编码，Base64编码后的长度不超过128KB。
 
         :return: The message of this DeviceBroadcastRequest.
         :rtype: str
@@ -112,12 +126,56 @@ class DeviceBroadcastRequest:
     def message(self, message):
         """Sets the message of this DeviceBroadcastRequest.
 
-        **参数说明**：广播消息的内容，您需要将消息原文转换成二进制数据并进行Base64编码，Base64编码后的长度不超过128KB。
+        **参数说明**：广播消息的内容，用户需要将消息原文使用Base64编码，Base64编码后的长度不超过128KB。
 
         :param message: The message of this DeviceBroadcastRequest.
         :type message: str
         """
         self._message = message
+
+    @property
+    def ttl(self):
+        """Gets the ttl of this DeviceBroadcastRequest.
+
+        **参数说明**：广播消息在平台缓存的老化时间，时间单位是分钟，默认值为0；ttl参数数值必须是5的倍数，即以5分钟为粒度；指定为0时表示不缓存消息，最大缓存时间1440分钟，即缓存一天；ttl>0时，一个topic订阅设备数限制为10，如果一个topic订阅设备数超过10，则接口返回错误。
+
+        :return: The ttl of this DeviceBroadcastRequest.
+        :rtype: int
+        """
+        return self._ttl
+
+    @ttl.setter
+    def ttl(self, ttl):
+        """Sets the ttl of this DeviceBroadcastRequest.
+
+        **参数说明**：广播消息在平台缓存的老化时间，时间单位是分钟，默认值为0；ttl参数数值必须是5的倍数，即以5分钟为粒度；指定为0时表示不缓存消息，最大缓存时间1440分钟，即缓存一天；ttl>0时，一个topic订阅设备数限制为10，如果一个topic订阅设备数超过10，则接口返回错误。
+
+        :param ttl: The ttl of this DeviceBroadcastRequest.
+        :type ttl: int
+        """
+        self._ttl = ttl
+
+    @property
+    def message_id(self):
+        """Gets the message_id of this DeviceBroadcastRequest.
+
+        **参数说明**：消息id，由用户生成（推荐使用UUID）。ttl> 0时，平台会缓存消息，需确保message_id是唯一的， 否则接口返回错误。 **取值范围**：长度不超过100，只允许字母、数字、下划线（_）、连接符（-）的组合。
+
+        :return: The message_id of this DeviceBroadcastRequest.
+        :rtype: str
+        """
+        return self._message_id
+
+    @message_id.setter
+    def message_id(self, message_id):
+        """Sets the message_id of this DeviceBroadcastRequest.
+
+        **参数说明**：消息id，由用户生成（推荐使用UUID）。ttl> 0时，平台会缓存消息，需确保message_id是唯一的， 否则接口返回错误。 **取值范围**：长度不超过100，只允许字母、数字、下划线（_）、连接符（-）的组合。
+
+        :param message_id: The message_id of this DeviceBroadcastRequest.
+        :type message_id: str
+        """
+        self._message_id = message_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

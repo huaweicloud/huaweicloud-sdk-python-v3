@@ -21,17 +21,21 @@ class ShowDeviceGroupResponse(SdkResponse):
         'group_id': 'str',
         'name': 'str',
         'description': 'str',
-        'super_group_id': 'str'
+        'super_group_id': 'str',
+        'group_type': 'str',
+        'dynamic_group_rule': 'str'
     }
 
     attribute_map = {
         'group_id': 'group_id',
         'name': 'name',
         'description': 'description',
-        'super_group_id': 'super_group_id'
+        'super_group_id': 'super_group_id',
+        'group_type': 'group_type',
+        'dynamic_group_rule': 'dynamic_group_rule'
     }
 
-    def __init__(self, group_id=None, name=None, description=None, super_group_id=None):
+    def __init__(self, group_id=None, name=None, description=None, super_group_id=None, group_type=None, dynamic_group_rule=None):
         """ShowDeviceGroupResponse
 
         The model defined in huaweicloud sdk
@@ -44,6 +48,10 @@ class ShowDeviceGroupResponse(SdkResponse):
         :type description: str
         :param super_group_id: 父设备组ID，该设备组的父设备组ID。
         :type super_group_id: str
+        :param group_type: 设备组类型，分为动态设备组和静态设备组两种
+        :type group_type: str
+        :param dynamic_group_rule: 动态设备组规则
+        :type dynamic_group_rule: str
         """
         
         super(ShowDeviceGroupResponse, self).__init__()
@@ -52,6 +60,8 @@ class ShowDeviceGroupResponse(SdkResponse):
         self._name = None
         self._description = None
         self._super_group_id = None
+        self._group_type = None
+        self._dynamic_group_rule = None
         self.discriminator = None
 
         if group_id is not None:
@@ -62,6 +72,10 @@ class ShowDeviceGroupResponse(SdkResponse):
             self.description = description
         if super_group_id is not None:
             self.super_group_id = super_group_id
+        if group_type is not None:
+            self.group_type = group_type
+        if dynamic_group_rule is not None:
+            self.dynamic_group_rule = dynamic_group_rule
 
     @property
     def group_id(self):
@@ -150,6 +164,50 @@ class ShowDeviceGroupResponse(SdkResponse):
         :type super_group_id: str
         """
         self._super_group_id = super_group_id
+
+    @property
+    def group_type(self):
+        """Gets the group_type of this ShowDeviceGroupResponse.
+
+        设备组类型，分为动态设备组和静态设备组两种
+
+        :return: The group_type of this ShowDeviceGroupResponse.
+        :rtype: str
+        """
+        return self._group_type
+
+    @group_type.setter
+    def group_type(self, group_type):
+        """Sets the group_type of this ShowDeviceGroupResponse.
+
+        设备组类型，分为动态设备组和静态设备组两种
+
+        :param group_type: The group_type of this ShowDeviceGroupResponse.
+        :type group_type: str
+        """
+        self._group_type = group_type
+
+    @property
+    def dynamic_group_rule(self):
+        """Gets the dynamic_group_rule of this ShowDeviceGroupResponse.
+
+        动态设备组规则
+
+        :return: The dynamic_group_rule of this ShowDeviceGroupResponse.
+        :rtype: str
+        """
+        return self._dynamic_group_rule
+
+    @dynamic_group_rule.setter
+    def dynamic_group_rule(self, dynamic_group_rule):
+        """Sets the dynamic_group_rule of this ShowDeviceGroupResponse.
+
+        动态设备组规则
+
+        :param dynamic_group_rule: The dynamic_group_rule of this ShowDeviceGroupResponse.
+        :type dynamic_group_rule: str
+        """
+        self._dynamic_group_rule = dynamic_group_rule
 
     def to_dict(self):
         """Returns the model properties as a dict"""

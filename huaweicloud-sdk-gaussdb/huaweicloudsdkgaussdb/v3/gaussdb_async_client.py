@@ -2257,6 +2257,128 @@ class GaussDBAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_lts_error_log_details_async(self, request):
+        """获取错误日志详情列表
+
+        获取指定实例的错误日志详情列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListLtsErrorLogDetails
+        :type request: :class:`huaweicloudsdkgaussdb.v3.ListLtsErrorLogDetailsRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ListLtsErrorLogDetailsResponse`
+        """
+        return self._list_lts_error_log_details_with_http_info(request)
+
+    def _list_lts_error_log_details_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3.1/{project_id}/instances/{instance_id}/error-logs',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListLtsErrorLogDetailsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_lts_slowlog_details_async(self, request):
+        """获取慢日志详情列表
+
+        获取指定实例的慢日志详情列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListLtsSlowlogDetails
+        :type request: :class:`huaweicloudsdkgaussdb.v3.ListLtsSlowlogDetailsRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ListLtsSlowlogDetailsResponse`
+        """
+        return self._list_lts_slowlog_details_with_http_info(request)
+
+    def _list_lts_slowlog_details_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3.1/{project_id}/instances/{instance_id}/slow-logs',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListLtsSlowlogDetailsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_project_tags_async(self, request):
         """查询项目标签
 
@@ -3909,6 +4031,128 @@ class GaussDBAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='UpdateGaussMySqlConfigurationResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_gauss_my_sql_database_comment_async(self, request):
+        """修改数据库备注
+
+        修改云数据库 GaussDB(for MySQL)实例数据库备注。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateGaussMySqlDatabaseComment
+        :type request: :class:`huaweicloudsdkgaussdb.v3.UpdateGaussMySqlDatabaseCommentRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.UpdateGaussMySqlDatabaseCommentResponse`
+        """
+        return self._update_gauss_my_sql_database_comment_with_http_info(request)
+
+    def _update_gauss_my_sql_database_comment_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/databases/comment',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateGaussMySqlDatabaseCommentResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_gauss_my_sql_database_user_comment_async(self, request):
+        """修改数据库用户备注
+
+        修改云数据库 GaussDB(for MySQL)实例数据库用户备注。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateGaussMySqlDatabaseUserComment
+        :type request: :class:`huaweicloudsdkgaussdb.v3.UpdateGaussMySqlDatabaseUserCommentRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.UpdateGaussMySqlDatabaseUserCommentResponse`
+        """
+        return self._update_gauss_my_sql_database_user_comment_with_http_info(request)
+
+    def _update_gauss_my_sql_database_user_comment_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/db-users/comment',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateGaussMySqlDatabaseUserCommentResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

@@ -19,7 +19,7 @@ class UpdateCaseRequest:
     openapi_types = {
         'case_id': 'int',
         'target': 'str',
-        'body': 'CaseInfo'
+        'body': 'CaseInfoDetail'
     }
 
     attribute_map = {
@@ -38,7 +38,7 @@ class UpdateCaseRequest:
         :param target: 类型
         :type target: str
         :param body: Body of the UpdateCaseRequest
-        :type body: :class:`huaweicloudsdkcpts.v1.CaseInfo`
+        :type body: :class:`huaweicloudsdkcpts.v1.CaseInfoDetail`
         """
         
         
@@ -102,7 +102,7 @@ class UpdateCaseRequest:
         """Gets the body of this UpdateCaseRequest.
 
         :return: The body of this UpdateCaseRequest.
-        :rtype: :class:`huaweicloudsdkcpts.v1.CaseInfo`
+        :rtype: :class:`huaweicloudsdkcpts.v1.CaseInfoDetail`
         """
         return self._body
 
@@ -111,7 +111,7 @@ class UpdateCaseRequest:
         """Sets the body of this UpdateCaseRequest.
 
         :param body: The body of this UpdateCaseRequest.
-        :type body: :class:`huaweicloudsdkcpts.v1.CaseInfo`
+        :type body: :class:`huaweicloudsdkcpts.v1.CaseInfoDetail`
         """
         self._body = body
 

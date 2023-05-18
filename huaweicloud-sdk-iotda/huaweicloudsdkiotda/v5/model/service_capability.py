@@ -49,7 +49,7 @@ class ServiceCapability:
         :type properties: list[:class:`huaweicloudsdkiotda.v5.ServiceProperty`]
         :param commands: **参数说明**：设备服务支持的命令列表。 **取值范围**：数组长度大小不超过500。
         :type commands: list[:class:`huaweicloudsdkiotda.v5.ServiceCommand`]
-        :param events: **参数说明**：设备服务支持的事件列表。 **取值范围**：数组长度大小不超过500。
+        :param events: **参数说明**：设备服务支持的事件列表。目前暂未支持自定义事件，创建/修改产品时无需定义该字段。 **取值范围**：数组长度大小不超过500。
         :type events: list[:class:`huaweicloudsdkiotda.v5.ServiceEvent`]
         :param description: **参数说明**：设备服务的描述信息。 **取值范围**：长度不超过128，只允许中文、字母、数字、空白字符、以及_?&#39;#().,;&amp;%@!- ，、：；。/等字符的组合。
         :type description: str
@@ -173,7 +173,7 @@ class ServiceCapability:
     def events(self):
         """Gets the events of this ServiceCapability.
 
-        **参数说明**：设备服务支持的事件列表。 **取值范围**：数组长度大小不超过500。
+        **参数说明**：设备服务支持的事件列表。目前暂未支持自定义事件，创建/修改产品时无需定义该字段。 **取值范围**：数组长度大小不超过500。
 
         :return: The events of this ServiceCapability.
         :rtype: list[:class:`huaweicloudsdkiotda.v5.ServiceEvent`]
@@ -184,7 +184,7 @@ class ServiceCapability:
     def events(self, events):
         """Sets the events of this ServiceCapability.
 
-        **参数说明**：设备服务支持的事件列表。 **取值范围**：数组长度大小不超过500。
+        **参数说明**：设备服务支持的事件列表。目前暂未支持自定义事件，创建/修改产品时无需定义该字段。 **取值范围**：数组长度大小不超过500。
 
         :param events: The events of this ServiceCapability.
         :type events: list[:class:`huaweicloudsdkiotda.v5.ServiceEvent`]

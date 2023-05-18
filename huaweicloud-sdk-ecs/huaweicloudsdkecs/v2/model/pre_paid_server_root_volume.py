@@ -20,6 +20,7 @@ class PrePaidServerRootVolume:
         'volumetype': 'str',
         'size': 'int',
         'extendparam': 'PrePaidServerRootVolumeExtendParam',
+        'metadata': 'PrePaidServerRootVolumeMetadata',
         'cluster_type': 'str',
         'cluster_id': 'str',
         'hwpassthrough': 'bool'
@@ -29,12 +30,13 @@ class PrePaidServerRootVolume:
         'volumetype': 'volumetype',
         'size': 'size',
         'extendparam': 'extendparam',
+        'metadata': 'metadata',
         'cluster_type': 'cluster_type',
         'cluster_id': 'cluster_id',
         'hwpassthrough': 'hw:passthrough'
     }
 
-    def __init__(self, volumetype=None, size=None, extendparam=None, cluster_type=None, cluster_id=None, hwpassthrough=None):
+    def __init__(self, volumetype=None, size=None, extendparam=None, metadata=None, cluster_type=None, cluster_id=None, hwpassthrough=None):
         """PrePaidServerRootVolume
 
         The model defined in huaweicloud sdk
@@ -45,6 +47,8 @@ class PrePaidServerRootVolume:
         :type size: int
         :param extendparam: 
         :type extendparam: :class:`huaweicloudsdkecs.v2.PrePaidServerRootVolumeExtendParam`
+        :param metadata: 
+        :type metadata: :class:`huaweicloudsdkecs.v2.PrePaidServerRootVolumeMetadata`
         :param cluster_type: 云服务器系统盘对应的磁盘存储类型。 磁盘存储类型枚举值： DSS：专属存储类型
         :type cluster_type: str
         :param cluster_id: 云服务器数据盘对应的存储池的ID。
@@ -58,6 +62,7 @@ class PrePaidServerRootVolume:
         self._volumetype = None
         self._size = None
         self._extendparam = None
+        self._metadata = None
         self._cluster_type = None
         self._cluster_id = None
         self._hwpassthrough = None
@@ -68,6 +73,8 @@ class PrePaidServerRootVolume:
             self.size = size
         if extendparam is not None:
             self.extendparam = extendparam
+        if metadata is not None:
+            self.metadata = metadata
         if cluster_type is not None:
             self.cluster_type = cluster_type
         if cluster_id is not None:
@@ -136,6 +143,24 @@ class PrePaidServerRootVolume:
         :type extendparam: :class:`huaweicloudsdkecs.v2.PrePaidServerRootVolumeExtendParam`
         """
         self._extendparam = extendparam
+
+    @property
+    def metadata(self):
+        """Gets the metadata of this PrePaidServerRootVolume.
+
+        :return: The metadata of this PrePaidServerRootVolume.
+        :rtype: :class:`huaweicloudsdkecs.v2.PrePaidServerRootVolumeMetadata`
+        """
+        return self._metadata
+
+    @metadata.setter
+    def metadata(self, metadata):
+        """Sets the metadata of this PrePaidServerRootVolume.
+
+        :param metadata: The metadata of this PrePaidServerRootVolume.
+        :type metadata: :class:`huaweicloudsdkecs.v2.PrePaidServerRootVolumeMetadata`
+        """
+        self._metadata = metadata
 
     @property
     def cluster_type(self):

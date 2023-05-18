@@ -8,7 +8,7 @@ from huaweicloudsdkcpts.v1.cpts_async_client import CptsAsyncClient
 # import models into sdk package
 from huaweicloudsdkcpts.v1.model.agent_config import AgentConfig
 from huaweicloudsdkcpts.v1.model.brand_brokens import BrandBrokens
-from huaweicloudsdkcpts.v1.model.case_info import CaseInfo
+from huaweicloudsdkcpts.v1.model.case_info_detail import CaseInfoDetail
 from huaweicloudsdkcpts.v1.model.code_message_resq import CodeMessageResq
 from huaweicloudsdkcpts.v1.model.content import Content
 from huaweicloudsdkcpts.v1.model.content_header import ContentHeader
@@ -56,6 +56,7 @@ from huaweicloudsdkcpts.v1.model.list_project_test_case_response import ListProj
 from huaweicloudsdkcpts.v1.model.list_variables_request import ListVariablesRequest
 from huaweicloudsdkcpts.v1.model.list_variables_response import ListVariablesResponse
 from huaweicloudsdkcpts.v1.model.logic_controller import LogicController
+from huaweicloudsdkcpts.v1.model.mock_rule_config import MockRuleConfig
 from huaweicloudsdkcpts.v1.model.network_info import NetworkInfo
 from huaweicloudsdkcpts.v1.model.performance_info import PerformanceInfo
 from huaweicloudsdkcpts.v1.model.project import Project

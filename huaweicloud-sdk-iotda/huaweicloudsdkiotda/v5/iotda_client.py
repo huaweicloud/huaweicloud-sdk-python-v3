@@ -1641,6 +1641,10 @@ class IoTDAClient(Client):
             query_params.append(('last_modified_time', local_var_params['last_modified_time']))
         if 'app_id' in local_var_params:
             query_params.append(('app_id', local_var_params['app_id']))
+        if 'group_type' in local_var_params:
+            query_params.append(('group_type', local_var_params['group_type']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
 
         header_params = {}
         if 'instance_id' in local_var_params:
@@ -2330,6 +2334,7 @@ class IoTDAClient(Client):
         | tag_value   | string | 标签值           | 长度不超过128，只允许中文、字母、数字、以及_.-等字符的组合。 |
         | sw_version  | string | 软件版本         | 长度不超过64，只允许字母、数字、下划线（_）、连接符（-）、英文点(.)的组合。 |
         | fw_version  | string | 固件版本         | 长度不超过64，只允许字母、数字、下划线（_）、连接符（-）、英文点(.)的组合。 |
+        | group_id    | string | 群组Id           | 长度不超过36，十六进制字符串和连接符（-）的组合              |
         | create_time | string | 设备注册时间     | 格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss.SSS&#39;Z&#39;，如：2015-06-06T12:10:10.000Z |
         | marker      | string | 结果记录ID       | 长度为24的十六进制字符串，如ffffffffffffffffffffffff         |
         

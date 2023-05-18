@@ -5,7 +5,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class CaseInfo:
+class CaseInfoDetail:
 
     """
     Attributes:
@@ -43,7 +43,7 @@ class CaseInfo:
     }
 
     def __init__(self, case_id=None, name=None, case_type=None, contents=None, for_loop_params=None, increase_setting=None, stages=None, status=None, temp_id=None, sort=None):
-        """CaseInfo
+        """CaseInfoDetail
 
         The model defined in huaweicloud sdk
 
@@ -106,220 +106,220 @@ class CaseInfo:
 
     @property
     def case_id(self):
-        """Gets the case_id of this CaseInfo.
+        """Gets the case_id of this CaseInfoDetail.
 
         case_id
 
-        :return: The case_id of this CaseInfo.
+        :return: The case_id of this CaseInfoDetail.
         :rtype: int
         """
         return self._case_id
 
     @case_id.setter
     def case_id(self, case_id):
-        """Sets the case_id of this CaseInfo.
+        """Sets the case_id of this CaseInfoDetail.
 
         case_id
 
-        :param case_id: The case_id of this CaseInfo.
+        :param case_id: The case_id of this CaseInfoDetail.
         :type case_id: int
         """
         self._case_id = case_id
 
     @property
     def name(self):
-        """Gets the name of this CaseInfo.
+        """Gets the name of this CaseInfoDetail.
 
         用例名称
 
-        :return: The name of this CaseInfo.
+        :return: The name of this CaseInfoDetail.
         :rtype: str
         """
         return self._name
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CaseInfo.
+        """Sets the name of this CaseInfoDetail.
 
         用例名称
 
-        :param name: The name of this CaseInfo.
+        :param name: The name of this CaseInfoDetail.
         :type name: str
         """
         self._name = name
 
     @property
     def case_type(self):
-        """Gets the case_type of this CaseInfo.
+        """Gets the case_type of this CaseInfoDetail.
 
         case_type
 
-        :return: The case_type of this CaseInfo.
+        :return: The case_type of this CaseInfoDetail.
         :rtype: int
         """
         return self._case_type
 
     @case_type.setter
     def case_type(self, case_type):
-        """Sets the case_type of this CaseInfo.
+        """Sets the case_type of this CaseInfoDetail.
 
         case_type
 
-        :param case_type: The case_type of this CaseInfo.
+        :param case_type: The case_type of this CaseInfoDetail.
         :type case_type: int
         """
         self._case_type = case_type
 
     @property
     def contents(self):
-        """Gets the contents of this CaseInfo.
+        """Gets the contents of this CaseInfoDetail.
 
         contents
 
-        :return: The contents of this CaseInfo.
+        :return: The contents of this CaseInfoDetail.
         :rtype: list[:class:`huaweicloudsdkcpts.v1.Contents`]
         """
         return self._contents
 
     @contents.setter
     def contents(self, contents):
-        """Sets the contents of this CaseInfo.
+        """Sets the contents of this CaseInfoDetail.
 
         contents
 
-        :param contents: The contents of this CaseInfo.
+        :param contents: The contents of this CaseInfoDetail.
         :type contents: list[:class:`huaweicloudsdkcpts.v1.Contents`]
         """
         self._contents = contents
 
     @property
     def for_loop_params(self):
-        """Gets the for_loop_params of this CaseInfo.
+        """Gets the for_loop_params of this CaseInfoDetail.
 
         for_loop_params
 
-        :return: The for_loop_params of this CaseInfo.
+        :return: The for_loop_params of this CaseInfoDetail.
         :rtype: list[object]
         """
         return self._for_loop_params
 
     @for_loop_params.setter
     def for_loop_params(self, for_loop_params):
-        """Sets the for_loop_params of this CaseInfo.
+        """Sets the for_loop_params of this CaseInfoDetail.
 
         for_loop_params
 
-        :param for_loop_params: The for_loop_params of this CaseInfo.
+        :param for_loop_params: The for_loop_params of this CaseInfoDetail.
         :type for_loop_params: list[object]
         """
         self._for_loop_params = for_loop_params
 
     @property
     def increase_setting(self):
-        """Gets the increase_setting of this CaseInfo.
+        """Gets the increase_setting of this CaseInfoDetail.
 
         increase_setting
 
-        :return: The increase_setting of this CaseInfo.
+        :return: The increase_setting of this CaseInfoDetail.
         :rtype: list[object]
         """
         return self._increase_setting
 
     @increase_setting.setter
     def increase_setting(self, increase_setting):
-        """Sets the increase_setting of this CaseInfo.
+        """Sets the increase_setting of this CaseInfoDetail.
 
         increase_setting
 
-        :param increase_setting: The increase_setting of this CaseInfo.
+        :param increase_setting: The increase_setting of this CaseInfoDetail.
         :type increase_setting: list[object]
         """
         self._increase_setting = increase_setting
 
     @property
     def stages(self):
-        """Gets the stages of this CaseInfo.
+        """Gets the stages of this CaseInfoDetail.
 
         stages
 
-        :return: The stages of this CaseInfo.
+        :return: The stages of this CaseInfoDetail.
         :rtype: list[:class:`huaweicloudsdkcpts.v1.TestCaseStage`]
         """
         return self._stages
 
     @stages.setter
     def stages(self, stages):
-        """Sets the stages of this CaseInfo.
+        """Sets the stages of this CaseInfoDetail.
 
         stages
 
-        :param stages: The stages of this CaseInfo.
+        :param stages: The stages of this CaseInfoDetail.
         :type stages: list[:class:`huaweicloudsdkcpts.v1.TestCaseStage`]
         """
         self._stages = stages
 
     @property
     def status(self):
-        """Gets the status of this CaseInfo.
+        """Gets the status of this CaseInfoDetail.
 
         状态，0：已删除；1：启用；2：禁用
 
-        :return: The status of this CaseInfo.
+        :return: The status of this CaseInfoDetail.
         :rtype: int
         """
         return self._status
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CaseInfo.
+        """Sets the status of this CaseInfoDetail.
 
         状态，0：已删除；1：启用；2：禁用
 
-        :param status: The status of this CaseInfo.
+        :param status: The status of this CaseInfoDetail.
         :type status: int
         """
         self._status = status
 
     @property
     def temp_id(self):
-        """Gets the temp_id of this CaseInfo.
+        """Gets the temp_id of this CaseInfoDetail.
 
         temp_id
 
-        :return: The temp_id of this CaseInfo.
+        :return: The temp_id of this CaseInfoDetail.
         :rtype: int
         """
         return self._temp_id
 
     @temp_id.setter
     def temp_id(self, temp_id):
-        """Sets the temp_id of this CaseInfo.
+        """Sets the temp_id of this CaseInfoDetail.
 
         temp_id
 
-        :param temp_id: The temp_id of this CaseInfo.
+        :param temp_id: The temp_id of this CaseInfoDetail.
         :type temp_id: int
         """
         self._temp_id = temp_id
 
     @property
     def sort(self):
-        """Gets the sort of this CaseInfo.
+        """Gets the sort of this CaseInfoDetail.
 
         排序字段
 
-        :return: The sort of this CaseInfo.
+        :return: The sort of this CaseInfoDetail.
         :rtype: int
         """
         return self._sort
 
     @sort.setter
     def sort(self, sort):
-        """Sets the sort of this CaseInfo.
+        """Sets the sort of this CaseInfoDetail.
 
         排序字段
 
-        :param sort: The sort of this CaseInfo.
+        :param sort: The sort of this CaseInfoDetail.
         :type sort: int
         """
         self._sort = sort
@@ -366,7 +366,7 @@ class CaseInfo:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, CaseInfo):
+        if not isinstance(other, CaseInfoDetail):
             return False
 
         return self.__dict__ == other.__dict__

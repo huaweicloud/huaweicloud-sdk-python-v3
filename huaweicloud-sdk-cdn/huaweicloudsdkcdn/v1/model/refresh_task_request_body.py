@@ -18,7 +18,7 @@ class RefreshTaskRequestBody:
 
     openapi_types = {
         'type': 'str',
-        'mode': 'bool',
+        'mode': 'str',
         'urls': 'list[str]'
     }
 
@@ -35,9 +35,9 @@ class RefreshTaskRequestBody:
 
         :param type: 刷新的类型，其值可以为file 或directory，默认为file
         :type type: str
-        :param mode: 目录刷新只刷新变更资源标识，其值为true 或false，默认为false
-        :type mode: bool
-        :param urls: 输入URL必须带有“http://”或“https://”，多个URL用逗号分隔，单个url的长度限制为4096字符，单次最多输入1000个url。
+        :param mode: 目录刷新方式，all：刷新目录下全部资源；detect_modify_refresh：刷新目录下已变更的资源，默认值为all。
+        :type mode: str
+        :param urls: 输入URL必须带有“http://”或“https://”，多个URL用逗号分隔，单个url的长度限制为4096字符，单次最多输入1000个url。 &gt;   如果您需要刷新的URL中有中文，请同时刷新中文URL和转码后的URL。
         :type urls: list[str]
         """
         
@@ -80,10 +80,10 @@ class RefreshTaskRequestBody:
     def mode(self):
         """Gets the mode of this RefreshTaskRequestBody.
 
-        目录刷新只刷新变更资源标识，其值为true 或false，默认为false
+        目录刷新方式，all：刷新目录下全部资源；detect_modify_refresh：刷新目录下已变更的资源，默认值为all。
 
         :return: The mode of this RefreshTaskRequestBody.
-        :rtype: bool
+        :rtype: str
         """
         return self._mode
 
@@ -91,10 +91,10 @@ class RefreshTaskRequestBody:
     def mode(self, mode):
         """Sets the mode of this RefreshTaskRequestBody.
 
-        目录刷新只刷新变更资源标识，其值为true 或false，默认为false
+        目录刷新方式，all：刷新目录下全部资源；detect_modify_refresh：刷新目录下已变更的资源，默认值为all。
 
         :param mode: The mode of this RefreshTaskRequestBody.
-        :type mode: bool
+        :type mode: str
         """
         self._mode = mode
 
@@ -102,7 +102,7 @@ class RefreshTaskRequestBody:
     def urls(self):
         """Gets the urls of this RefreshTaskRequestBody.
 
-        输入URL必须带有“http://”或“https://”，多个URL用逗号分隔，单个url的长度限制为4096字符，单次最多输入1000个url。
+        输入URL必须带有“http://”或“https://”，多个URL用逗号分隔，单个url的长度限制为4096字符，单次最多输入1000个url。 >   如果您需要刷新的URL中有中文，请同时刷新中文URL和转码后的URL。
 
         :return: The urls of this RefreshTaskRequestBody.
         :rtype: list[str]
@@ -113,7 +113,7 @@ class RefreshTaskRequestBody:
     def urls(self, urls):
         """Sets the urls of this RefreshTaskRequestBody.
 
-        输入URL必须带有“http://”或“https://”，多个URL用逗号分隔，单个url的长度限制为4096字符，单次最多输入1000个url。
+        输入URL必须带有“http://”或“https://”，多个URL用逗号分隔，单个url的长度限制为4096字符，单次最多输入1000个url。 >   如果您需要刷新的URL中有中文，请同时刷新中文URL和转码后的URL。
 
         :param urls: The urls of this RefreshTaskRequestBody.
         :type urls: list[str]

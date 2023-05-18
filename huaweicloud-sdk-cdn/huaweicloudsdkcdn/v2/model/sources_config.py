@@ -23,7 +23,8 @@ class SourcesConfig:
         'obs_web_hosting_status': 'str',
         'http_port': 'int',
         'https_port': 'int',
-        'host_name': 'str'
+        'host_name': 'str',
+        'obs_bucket_type': 'str'
     }
 
     attribute_map = {
@@ -33,10 +34,11 @@ class SourcesConfig:
         'obs_web_hosting_status': 'obs_web_hosting_status',
         'http_port': 'http_port',
         'https_port': 'https_port',
-        'host_name': 'host_name'
+        'host_name': 'host_name',
+        'obs_bucket_type': 'obs_bucket_type'
     }
 
-    def __init__(self, origin_addr=None, origin_type=None, priority=None, obs_web_hosting_status=None, http_port=None, https_port=None, host_name=None):
+    def __init__(self, origin_addr=None, origin_type=None, priority=None, obs_web_hosting_status=None, http_port=None, https_port=None, host_name=None, obs_bucket_type=None):
         """SourcesConfig
 
         The model defined in huaweicloud sdk
@@ -55,6 +57,8 @@ class SourcesConfig:
         :type https_port: int
         :param host_name: 回源HOST，默认加速域名。
         :type host_name: str
+        :param obs_bucket_type: obs桶源站类型 “private” 私有桶 “public” 公有桶。
+        :type obs_bucket_type: str
         """
         
         
@@ -66,6 +70,7 @@ class SourcesConfig:
         self._http_port = None
         self._https_port = None
         self._host_name = None
+        self._obs_bucket_type = None
         self.discriminator = None
 
         self.origin_addr = origin_addr
@@ -79,6 +84,8 @@ class SourcesConfig:
             self.https_port = https_port
         if host_name is not None:
             self.host_name = host_name
+        if obs_bucket_type is not None:
+            self.obs_bucket_type = obs_bucket_type
 
     @property
     def origin_addr(self):
@@ -233,6 +240,28 @@ class SourcesConfig:
         :type host_name: str
         """
         self._host_name = host_name
+
+    @property
+    def obs_bucket_type(self):
+        """Gets the obs_bucket_type of this SourcesConfig.
+
+        obs桶源站类型 “private” 私有桶 “public” 公有桶。
+
+        :return: The obs_bucket_type of this SourcesConfig.
+        :rtype: str
+        """
+        return self._obs_bucket_type
+
+    @obs_bucket_type.setter
+    def obs_bucket_type(self, obs_bucket_type):
+        """Sets the obs_bucket_type of this SourcesConfig.
+
+        obs桶源站类型 “private” 私有桶 “public” 公有桶。
+
+        :param obs_bucket_type: The obs_bucket_type of this SourcesConfig.
+        :type obs_bucket_type: str
+        """
+        self._obs_bucket_type = obs_bucket_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

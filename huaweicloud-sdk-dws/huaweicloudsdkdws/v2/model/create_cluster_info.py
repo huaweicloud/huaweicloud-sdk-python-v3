@@ -29,7 +29,8 @@ class CreateClusterInfo:
         'user_pwd': 'str',
         'public_ip': 'PublicIp',
         'number_of_cn': 'int',
-        'enterprise_project_id': 'str'
+        'enterprise_project_id': 'str',
+        'tags': 'Tags'
     }
 
     attribute_map = {
@@ -45,10 +46,11 @@ class CreateClusterInfo:
         'user_pwd': 'user_pwd',
         'public_ip': 'public_ip',
         'number_of_cn': 'number_of_cn',
-        'enterprise_project_id': 'enterprise_project_id'
+        'enterprise_project_id': 'enterprise_project_id',
+        'tags': 'tags'
     }
 
-    def __init__(self, node_type=None, number_of_node=None, subnet_id=None, security_group_id=None, vpc_id=None, availability_zone=None, port=None, name=None, user_name=None, user_pwd=None, public_ip=None, number_of_cn=None, enterprise_project_id=None):
+    def __init__(self, node_type=None, number_of_node=None, subnet_id=None, security_group_id=None, vpc_id=None, availability_zone=None, port=None, name=None, user_name=None, user_pwd=None, public_ip=None, number_of_cn=None, enterprise_project_id=None, tags=None):
         """CreateClusterInfo
 
         The model defined in huaweicloud sdk
@@ -79,6 +81,8 @@ class CreateClusterInfo:
         :type number_of_cn: int
         :param enterprise_project_id: 企业项目ID，对集群指定企业项目，如果未指定，则使用默认企业项目“default”的ID，即0。
         :type enterprise_project_id: str
+        :param tags: 
+        :type tags: :class:`huaweicloudsdkdws.v2.Tags`
         """
         
         
@@ -96,6 +100,7 @@ class CreateClusterInfo:
         self._public_ip = None
         self._number_of_cn = None
         self._enterprise_project_id = None
+        self._tags = None
         self.discriminator = None
 
         self.node_type = node_type
@@ -116,6 +121,8 @@ class CreateClusterInfo:
             self.number_of_cn = number_of_cn
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
+        if tags is not None:
+            self.tags = tags
 
     @property
     def node_type(self):
@@ -398,6 +405,24 @@ class CreateClusterInfo:
         :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def tags(self):
+        """Gets the tags of this CreateClusterInfo.
+
+        :return: The tags of this CreateClusterInfo.
+        :rtype: :class:`huaweicloudsdkdws.v2.Tags`
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this CreateClusterInfo.
+
+        :param tags: The tags of this CreateClusterInfo.
+        :type tags: :class:`huaweicloudsdkdws.v2.Tags`
+        """
+        self._tags = tags
 
     def to_dict(self):
         """Returns the model properties as a dict"""

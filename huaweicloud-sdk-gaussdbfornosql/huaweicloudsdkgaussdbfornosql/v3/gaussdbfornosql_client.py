@@ -3233,6 +3233,78 @@ class GaussDBforNoSQLClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def show_all_instances_backups_new(self, request):
+        """查询备份列表（推荐）
+
+        根据指定条件查询备份列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowAllInstancesBackupsNew
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ShowAllInstancesBackupsNewRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ShowAllInstancesBackupsNewResponse`
+        """
+        return self._show_all_instances_backups_new_with_http_info(request)
+
+    def _show_all_instances_backups_new_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'instance_id' in local_var_params:
+            query_params.append(('instance_id', local_var_params['instance_id']))
+        if 'datastore_type' in local_var_params:
+            query_params.append(('datastore_type', local_var_params['datastore_type']))
+        if 'backup_id' in local_var_params:
+            query_params.append(('backup_id', local_var_params['backup_id']))
+        if 'backup_type' in local_var_params:
+            query_params.append(('backup_type', local_var_params['backup_type']))
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'begin_time' in local_var_params:
+            query_params.append(('begin_time', local_var_params['begin_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3.1/{project_id}/backups',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowAllInstancesBackupsNewResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def show_applicable_instances(self, request):
         """查询参数模板可应用的实例列表
 

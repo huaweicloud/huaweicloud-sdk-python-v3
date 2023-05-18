@@ -41,7 +41,7 @@ class UrlAuth:
         :type status: str
         :param type: 鉴权方式 type_a：鉴权方式A type_b：鉴权方式B type_c1：鉴权方式C1 type_c2：鉴权方式C2
         :type type: str
-        :param key: 鉴权密钥由6 - 32位大小写字母、数字构成。
+        :param key: 鉴权KEY 由6-32位大小写字母、数字构成。
         :type key: str
         :param time_format: 时间格式 dec：十进制 hex：十六进制 鉴权方式A：只支持十进制 鉴权方式B：只支持十进制 鉴权方式C1：只支持十六进制鉴权方式 鉴权方式C2：支持十进制/十六进制
         :type time_format: str
@@ -116,7 +116,7 @@ class UrlAuth:
     def key(self):
         """Gets the key of this UrlAuth.
 
-        鉴权密钥由6 - 32位大小写字母、数字构成。
+        鉴权KEY 由6-32位大小写字母、数字构成。
 
         :return: The key of this UrlAuth.
         :rtype: str
@@ -127,7 +127,7 @@ class UrlAuth:
     def key(self, key):
         """Sets the key of this UrlAuth.
 
-        鉴权密钥由6 - 32位大小写字母、数字构成。
+        鉴权KEY 由6-32位大小写字母、数字构成。
 
         :param key: The key of this UrlAuth.
         :type key: str

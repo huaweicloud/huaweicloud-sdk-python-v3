@@ -3,11 +3,20 @@
 from __future__ import absolute_import
 
 # import models into model package
+from huaweicloudsdkcbr.v1.model.add_agent_path_request import AddAgentPathRequest
+from huaweicloudsdkcbr.v1.model.add_agent_path_response import AddAgentPathResponse
 from huaweicloudsdkcbr.v1.model.add_member_request import AddMemberRequest
 from huaweicloudsdkcbr.v1.model.add_member_response import AddMemberResponse
 from huaweicloudsdkcbr.v1.model.add_members_req import AddMembersReq
 from huaweicloudsdkcbr.v1.model.add_vault_resource_request import AddVaultResourceRequest
 from huaweicloudsdkcbr.v1.model.add_vault_resource_response import AddVaultResourceResponse
+from huaweicloudsdkcbr.v1.model.agent import Agent
+from huaweicloudsdkcbr.v1.model.agent_add_path_req import AgentAddPathReq
+from huaweicloudsdkcbr.v1.model.agent_register import AgentRegister
+from huaweicloudsdkcbr.v1.model.agent_register_req import AgentRegisterReq
+from huaweicloudsdkcbr.v1.model.agent_remove_path_req import AgentRemovePathReq
+from huaweicloudsdkcbr.v1.model.agent_update import AgentUpdate
+from huaweicloudsdkcbr.v1.model.agent_update_req import AgentUpdateReq
 from huaweicloudsdkcbr.v1.model.associate_vault_policy_request import AssociateVaultPolicyRequest
 from huaweicloudsdkcbr.v1.model.associate_vault_policy_response import AssociateVaultPolicyResponse
 from huaweicloudsdkcbr.v1.model.backup_extend_info import BackupExtendInfo
@@ -67,6 +76,8 @@ from huaweicloudsdkcbr.v1.model.image_data import ImageData
 from huaweicloudsdkcbr.v1.model.import_backup_request import ImportBackupRequest
 from huaweicloudsdkcbr.v1.model.import_backup_response import ImportBackupResponse
 from huaweicloudsdkcbr.v1.model.instances_resource_detail import InstancesResourceDetail
+from huaweicloudsdkcbr.v1.model.list_agent_request import ListAgentRequest
+from huaweicloudsdkcbr.v1.model.list_agent_response import ListAgentResponse
 from huaweicloudsdkcbr.v1.model.list_backups_request import ListBackupsRequest
 from huaweicloudsdkcbr.v1.model.list_backups_response import ListBackupsResponse
 from huaweicloudsdkcbr.v1.model.list_op_logs_request import ListOpLogsRequest
@@ -92,6 +103,7 @@ from huaweicloudsdkcbr.v1.model.op_extend_info_sync import OpExtendInfoSync
 from huaweicloudsdkcbr.v1.model.op_extend_info_vault_delete import OpExtendInfoVaultDelete
 from huaweicloudsdkcbr.v1.model.op_extra_info import OpExtraInfo
 from huaweicloudsdkcbr.v1.model.operation_log import OperationLog
+from huaweicloudsdkcbr.v1.model.path import Path
 from huaweicloudsdkcbr.v1.model.policy import Policy
 from huaweicloudsdkcbr.v1.model.policy_associate_vault import PolicyAssociateVault
 from huaweicloudsdkcbr.v1.model.policy_create import PolicyCreate
@@ -106,6 +118,10 @@ from huaweicloudsdkcbr.v1.model.policyo_od_create import PolicyoODCreate
 from huaweicloudsdkcbr.v1.model.protectable_replication_capabilities_resp_region import ProtectableReplicationCapabilitiesRespRegion
 from huaweicloudsdkcbr.v1.model.protectable_result import ProtectableResult
 from huaweicloudsdkcbr.v1.model.protectables_resp import ProtectablesResp
+from huaweicloudsdkcbr.v1.model.register_agent_request import RegisterAgentRequest
+from huaweicloudsdkcbr.v1.model.register_agent_response import RegisterAgentResponse
+from huaweicloudsdkcbr.v1.model.remove_agent_path_request import RemoveAgentPathRequest
+from huaweicloudsdkcbr.v1.model.remove_agent_path_response import RemoveAgentPathResponse
 from huaweicloudsdkcbr.v1.model.remove_vault_resource_request import RemoveVaultResourceRequest
 from huaweicloudsdkcbr.v1.model.remove_vault_resource_response import RemoveVaultResourceResponse
 from huaweicloudsdkcbr.v1.model.replication_record_get import ReplicationRecordGet
@@ -117,6 +133,8 @@ from huaweicloudsdkcbr.v1.model.resource_extra_info_include_volumes import Resou
 from huaweicloudsdkcbr.v1.model.resource_resp import ResourceResp
 from huaweicloudsdkcbr.v1.model.restore_backup_request import RestoreBackupRequest
 from huaweicloudsdkcbr.v1.model.restore_backup_response import RestoreBackupResponse
+from huaweicloudsdkcbr.v1.model.show_agent_request import ShowAgentRequest
+from huaweicloudsdkcbr.v1.model.show_agent_response import ShowAgentResponse
 from huaweicloudsdkcbr.v1.model.show_backup_request import ShowBackupRequest
 from huaweicloudsdkcbr.v1.model.show_backup_response import ShowBackupResponse
 from huaweicloudsdkcbr.v1.model.show_checkpoint_request import ShowCheckpointRequest
@@ -147,6 +165,10 @@ from huaweicloudsdkcbr.v1.model.tag import Tag
 from huaweicloudsdkcbr.v1.model.tag_resource import TagResource
 from huaweicloudsdkcbr.v1.model.tags_req import TagsReq
 from huaweicloudsdkcbr.v1.model.tags_resp import TagsResp
+from huaweicloudsdkcbr.v1.model.unregister_agent_request import UnregisterAgentRequest
+from huaweicloudsdkcbr.v1.model.unregister_agent_response import UnregisterAgentResponse
+from huaweicloudsdkcbr.v1.model.update_agent_request import UpdateAgentRequest
+from huaweicloudsdkcbr.v1.model.update_agent_response import UpdateAgentResponse
 from huaweicloudsdkcbr.v1.model.update_member import UpdateMember
 from huaweicloudsdkcbr.v1.model.update_member_status_request import UpdateMemberStatusRequest
 from huaweicloudsdkcbr.v1.model.update_member_status_response import UpdateMemberStatusResponse

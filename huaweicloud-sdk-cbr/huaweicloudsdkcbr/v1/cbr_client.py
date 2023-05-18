@@ -24,6 +24,64 @@ class CbrClient(Client):
 
         return ClientBuilder(clazz)
 
+    def add_agent_path(self, request):
+        """新增备份路径
+
+        对客户端新增备份路径，新增的路径不会校验是否存在。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for AddAgentPath
+        :type request: :class:`huaweicloudsdkcbr.v1.AddAgentPathRequest`
+        :rtype: :class:`huaweicloudsdkcbr.v1.AddAgentPathResponse`
+        """
+        return self._add_agent_path_with_http_info(request)
+
+    def _add_agent_path_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'agent_id' in local_var_params:
+            path_params['agent_id'] = local_var_params['agent_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/agents/{agent_id}/add-path',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='AddAgentPathResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def add_member(self, request):
         """添加备份成员
 
@@ -1002,6 +1060,68 @@ class CbrClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_agent(self, request):
+        """查询客户端列表
+
+        查询客户端列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListAgent
+        :type request: :class:`huaweicloudsdkcbr.v1.ListAgentRequest`
+        :rtype: :class:`huaweicloudsdkcbr.v1.ListAgentResponse`
+        """
+        return self._list_agent_with_http_info(request)
+
+    def _list_agent_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'agent_id' in local_var_params:
+            query_params.append(('agent_id', local_var_params['agent_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/agents',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListAgentResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_backups(self, request):
         """查询所有备份
 
@@ -1442,6 +1562,120 @@ class CbrClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def register_agent(self, request):
+        """注册客户端
+
+        注册客户端，安装时候由Agent调用，无需手动注册。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for RegisterAgent
+        :type request: :class:`huaweicloudsdkcbr.v1.RegisterAgentRequest`
+        :rtype: :class:`huaweicloudsdkcbr.v1.RegisterAgentResponse`
+        """
+        return self._register_agent_with_http_info(request)
+
+    def _register_agent_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/agents',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='RegisterAgentResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def remove_agent_path(self, request):
+        """移除备份路径
+
+        移除已添加的文件备份路径。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for RemoveAgentPath
+        :type request: :class:`huaweicloudsdkcbr.v1.RemoveAgentPathRequest`
+        :rtype: :class:`huaweicloudsdkcbr.v1.RemoveAgentPathResponse`
+        """
+        return self._remove_agent_path_with_http_info(request)
+
+    def _remove_agent_path_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'agent_id' in local_var_params:
+            path_params['agent_id'] = local_var_params['agent_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/agents/{agent_id}/remove-path',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='RemoveAgentPathResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def remove_vault_resource(self, request):
         """移除资源
 
@@ -1553,6 +1787,62 @@ class CbrClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='RestoreBackupResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_agent(self, request):
+        """查询指定客户端
+
+        查询指定客户端
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowAgent
+        :type request: :class:`huaweicloudsdkcbr.v1.ShowAgentRequest`
+        :rtype: :class:`huaweicloudsdkcbr.v1.ShowAgentResponse`
+        """
+        return self._show_agent_with_http_info(request)
+
+    def _show_agent_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'agent_id' in local_var_params:
+            path_params['agent_id'] = local_var_params['agent_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/agents/{agent_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowAgentResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -2244,6 +2534,120 @@ class CbrClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ShowVaultTagResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def unregister_agent(self, request):
+        """移除客户端
+
+        移除客户端，移除客户端时将会删除该客户端所有备份，请谨慎操作。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UnregisterAgent
+        :type request: :class:`huaweicloudsdkcbr.v1.UnregisterAgentRequest`
+        :rtype: :class:`huaweicloudsdkcbr.v1.UnregisterAgentResponse`
+        """
+        return self._unregister_agent_with_http_info(request)
+
+    def _unregister_agent_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'agent_id' in local_var_params:
+            path_params['agent_id'] = local_var_params['agent_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/agents/{agent_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UnregisterAgentResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_agent(self, request):
+        """修改客户端
+
+        修改客户端状态
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateAgent
+        :type request: :class:`huaweicloudsdkcbr.v1.UpdateAgentRequest`
+        :rtype: :class:`huaweicloudsdkcbr.v1.UpdateAgentResponse`
+        """
+        return self._update_agent_with_http_info(request)
+
+    def _update_agent_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'agent_id' in local_var_params:
+            path_params['agent_id'] = local_var_params['agent_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/agents/{agent_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateAgentResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

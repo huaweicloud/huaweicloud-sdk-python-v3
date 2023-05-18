@@ -29,7 +29,7 @@ class ModifyAliasRequest:
 
         The model defined in huaweicloud sdk
 
-        :param alias: 实例备注。  长度可在0~64个字符之间，由字母、数字、汉字、英文句号、下划线、中划线组成。
+        :param alias: 实例备注。  长度可在0~64个字符之间，由字母、数字、汉字、英文句号、下划线、中划线组成。 
         :type alias: str
         """
         
@@ -44,7 +44,7 @@ class ModifyAliasRequest:
     def alias(self):
         """Gets the alias of this ModifyAliasRequest.
 
-        实例备注。  长度可在0~64个字符之间，由字母、数字、汉字、英文句号、下划线、中划线组成。
+        实例备注。  长度可在0~64个字符之间，由字母、数字、汉字、英文句号、下划线、中划线组成。 
 
         :return: The alias of this ModifyAliasRequest.
         :rtype: str
@@ -55,7 +55,7 @@ class ModifyAliasRequest:
     def alias(self, alias):
         """Sets the alias of this ModifyAliasRequest.
 
-        实例备注。  长度可在0~64个字符之间，由字母、数字、汉字、英文句号、下划线、中划线组成。
+        实例备注。  长度可在0~64个字符之间，由字母、数字、汉字、英文句号、下划线、中划线组成。 
 
         :param alias: The alias of this ModifyAliasRequest.
         :type alias: str

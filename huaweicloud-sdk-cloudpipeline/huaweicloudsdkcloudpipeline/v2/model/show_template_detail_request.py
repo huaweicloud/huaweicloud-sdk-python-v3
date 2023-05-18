@@ -17,26 +17,22 @@ class ShowTemplateDetailRequest:
     sensitive_list = []
 
     openapi_types = {
-        'x_language': 'str',
         'template_id': 'str',
         'template_type': 'str',
         'source': 'str'
     }
 
     attribute_map = {
-        'x_language': 'X-Language',
         'template_id': 'template_id',
         'template_type': 'template_type',
         'source': 'source'
     }
 
-    def __init__(self, x_language=None, template_id=None, template_type=None, source=None):
+    def __init__(self, template_id=None, template_type=None, source=None):
         """ShowTemplateDetailRequest
 
         The model defined in huaweicloud sdk
 
-        :param x_language: 语言类型 中文:zh-cn 英文:en-us，默认en-us
-        :type x_language: str
         :param template_id: 模板ID
         :type template_id: str
         :param template_type: 模板类型
@@ -47,40 +43,15 @@ class ShowTemplateDetailRequest:
         
         
 
-        self._x_language = None
         self._template_id = None
         self._template_type = None
         self._source = None
         self.discriminator = None
 
-        if x_language is not None:
-            self.x_language = x_language
         self.template_id = template_id
         self.template_type = template_type
         if source is not None:
             self.source = source
-
-    @property
-    def x_language(self):
-        """Gets the x_language of this ShowTemplateDetailRequest.
-
-        语言类型 中文:zh-cn 英文:en-us，默认en-us
-
-        :return: The x_language of this ShowTemplateDetailRequest.
-        :rtype: str
-        """
-        return self._x_language
-
-    @x_language.setter
-    def x_language(self, x_language):
-        """Sets the x_language of this ShowTemplateDetailRequest.
-
-        语言类型 中文:zh-cn 英文:en-us，默认en-us
-
-        :param x_language: The x_language of this ShowTemplateDetailRequest.
-        :type x_language: str
-        """
-        self._x_language = x_language
 
     @property
     def template_id(self):

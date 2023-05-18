@@ -65,22 +65,31 @@ python setup.py install
 ## 代码示例
 
 - 使用如下代码同步查询指定 Region 下的 VPC 清单，实际使用中请将 `VpcClient` 替换为您使用的产品/服务相应的 `{Service}Client`。
-- 调用前请根据实际情况替换如下变量：`{your ak string}`、 `{your sk string}`、 `{your endpoint}` 以及 `{your project id}`。
+- 调用前请根据实际情况替换如下变量：`{your ak string} 和 ` `{your sk string}`
+
+**精简示例**
 
 ```python
 # coding: utf-8
 
-
 from huaweicloudsdkcore.auth.credentials import BasicCredentials
+from huaweicloudsdkvpc.v2 import ListVpcsRequest, VpcClient
+from huaweicloudsdkvpc.v2.region.vpc_region import VpcRegion
 from huaweicloudsdkcore.exceptions import exceptions
-from huaweicloudsdkcore.http.http_config import HttpConfig
-# 导入指定云服务的库 huaweicloudsdk{service}
-from huaweicloudsdkvpc.v2 import *
 
+if __name__ == "__main__":
+    # 配置认证信息
+    credentials = BasicCredentials("{your ak string}", "{your sk string}")
 
-def list_vpc(client):
+    # 创建服务客户端
+    client = VpcClient.new_builder() \
+        .with_credentials(credentials) \
+        .with_region(VpcRegion.value_of("cn-north-4")) \
+        .build()
+
+    # 发送请求并获取响应
     try:
-        request = ListVpcsRequest(limit=1)
+        request = ListVpcsRequest()
         response = client.list_vpcs(request)
         print(response)
     except exceptions.ClientRequestException as e:
@@ -88,25 +97,84 @@ def list_vpc(client):
         print(e.request_id)
         print(e.error_code)
         print(e.error_msg)
+```
 
+**详细示例**
+
+```python
+# coding: utf-8
+import logging
+
+from huaweicloudsdkcore.auth.credentials import BasicCredentials
+from huaweicloudsdkcore.http.http_config import HttpConfig
+from huaweicloudsdkcore.http.http_handler import HttpHandler
+from huaweicloudsdkvpc.v2 import VpcClient, ListVpcsRequest
+from huaweicloudsdkvpc.v2.region.vpc_region import VpcRegion
+from huaweicloudsdkcore.exceptions import exceptions
 
 if __name__ == "__main__":
-    ak = "{your ak string}"
-    sk = "{your sk string}"
-    endpoint = "{your endpoint}"
-    project_id = "{your project id}"
+    # 配置认证信息
+    # 如果未填写project_id，SDK会自动调用IAM服务查询所在region对应的项目id
+    credentials = BasicCredentials("{your ak string}", "{your sk string}", project_id="{your projectId string}") \
+        .with_iam_endpoint("https://iam.cn-north-4.myhuaweicloud.com") # 配置SDK内置的IAM服务地址，默认为https://iam.myhuaweicloud.com
 
-    config = HttpConfig.get_default_config()
-    config.ignore_ssl_verification = True
-    credentials = BasicCredentials(ak, sk, project_id)
+    # 使用默认配置
+    http_config = HttpConfig.get_default_config()
+    # 配置是否忽略SSL证书校验， 默认不忽略
+    http_config.ignore_ssl_verification = True
+    # 配置CA证书文件
+    http_config.ssl_ca_cert = '/path/to/certfile'
+    # 默认连接超时时间为60秒，读取超时时间为120秒，可根据需要配置
+    http_config.timeout = (60, 120)
+    # 根据需要配置网络代理
+    http_config.proxy_protocol = 'http'
+    http_config.proxy_host = 'proxy.huaweicloud.com'
+    http_config.proxy_port = 80
+    http_config.proxy_user = 'username'
+    http_config.proxy_password = 'password'
 
-    vpc_client = VpcClient.new_builder() \
-        .with_http_config(config) \
-        .with_credentials(credentials) \
-        .with_endpoint(endpoint) \
+    # 注册监听器用于打印原始的请求和响应信息, 请勿用于生产环境
+    def response_handler(**kwargs):
+        response = kwargs.get("response")
+        request = response.request
+
+        info = "> Request %s %s HTTP/1.1" % (request.method, request.path_url) + "\n"
+        if len(request.headers) != 0:
+            info = info + "> Headers:" + "\n"
+            for each in request.headers:
+                info = info + "    %s: %s" % (each, request.headers[each]) + "\n"
+        info = info + "> Body: %s" % request.body + "\n\n"
+    
+        info = info + "< Response HTTP/1.1 %s " % response.status_code + "\n"
+        if len(response.headers) != 0:
+            info = info + "< Headers:" + "\n"
+            for each in response.headers:
+                info = info + "    %s: %s" % (each, response.headers[each],) + "\n"
+        info = info + "< Body: %s" % response.content
+        print(info)
+
+    http_handler = HttpHandler().add_response_handler(response_handler)
+
+    # 创建服务客户端
+    client = VpcClient.new_builder() \
+        .with_credentials(credentials) \  # 配置认证信息
+        .with_region(VpcRegion.value_of("cn-north-4")) \  # 配置地区, 如果地区不存在会抛出KeyError
+        .with_http_config(http_config) \  # HTTP配置
+        .with_stream_log(log_level=logging.INFO) \  # 配置请求日志输出到控制台
+        .with_file_log(path="test.log", log_level=logging.INFO) \  # 配置请求日志输出到文件
+        .with_http_handler(http_handler) \  # 配置HTTP监听器
         .build()
 
-    list_vpc(vpc_client)
+    # 发送请求并获取响应
+    try:
+        request = ListVpcsRequest()
+        response = client.list_vpcs(request)
+        print(response)
+    except exceptions.ClientRequestException as e:
+        print(e.status_code)
+        print(e.request_id)
+        print(e.error_code)
+        print(e.error_msg)
 ```
 
 ## 在线调试
@@ -157,37 +225,56 @@ if __name__ == "__main__":
 from huaweicloudsdkcore.http.http_config import HttpConfig
 
 # 使用默认配置
-config = HttpConfig.get_default_config()
+http_config = HttpConfig.get_default_config()
+
+client = VpcClient.new_builder() \
+    .with_http_config(http_config) \
+    .build()
 ```
 
 #### 1.2 网络代理 [:top:](#用户手册-top)
 
 ```python
+http_config = HttpConfig.get_default_config()
 # 根据需要配置网络代理
-config.proxy_protocol = 'http'
-config.proxy_host = 'proxy.huaweicloud.com'
-config.proxy_port = 80
-config.proxy_user = 'username'
-config.proxy_password = 'password'
+http_config.proxy_protocol = 'http'
+http_config.proxy_host = 'proxy.huaweicloud.com'
+http_config.proxy_port = 80
+http_config.proxy_user = 'username'
+http_config.proxy_password = 'password'
+
+client = VpcClient.new_builder() \
+    .with_http_config(http_config) \
+    .build()
 ```
 
 #### 1.3 超时配置 [:top:](#用户手册-top)
 
 ```python
+http_config = HttpConfig.get_default_config()
 # 默认连接超时时间为60秒，读取超时时间为120秒
 # 将连接超时时间和读取超时时间统一设置为120秒
-config.timeout = 120
+http_config.timeout = 120
 # 将连接超时时间设置为60秒，读取超时时间设置为120秒
-config.timeout = (60, 120)
+http_config.timeout = (60, 120)
+
+client = VpcClient.new_builder() \
+    .with_http_config(http_config) \
+    .build()
 ```
 
 #### 1.4 SSL 配置 [:top:](#用户手册-top)
 
 ```python
+http_config = HttpConfig.get_default_config()
 # 根据需要配置是否跳过SSL证书校验
-config.ignore_ssl_verification = True
+http_config.ignore_ssl_verification = True
 # 配置服务器端CA证书，用于SDK验证服务端证书合法性
-config.ssl_ca_cert = ssl_ca_cert
+http_config.ssl_ca_cert = '/path/to/certfile'
+
+client = VpcClient.new_builder() \
+    .with_http_config(http_config) \
+    .build()
 ```
 
 ### 2. 认证信息配置 [:top:](#用户手册-top)
@@ -723,9 +810,6 @@ SDK 支持打印 Access 级别的访问日志，需要用户手动打开日志�
 
 ```python
 client = VpcClient.new_builder() \
-    .with_http_config(config) \
-    .with_credentials(basic_credentials) \
-    .with_endpoint(endpoint) \
     .with_file_log(path="test.log", log_level=logging.INFO) \  # 日志打印至文件
     .with_stream_log(log_level=logging.INFO) \                 # 日志打印至控制台
     .build()
@@ -761,38 +845,33 @@ client = VpcClient.new_builder() \
 > :warning:  Warning: 原始信息打印仅在 Debug 阶段使用，请不要在生产系统中将原始的 HTTP 头和 Body 信息打印到日志，这些信息并未加密且其中包含敏感数据，例如所创建虚拟机的密码，IAM 用户的密码等；当 Body 体为二进制内容，即 Content-Type 标识为二进制时，Body 为"***"，详细内容不输出。
 
 ```python
-import logging
 from huaweicloudsdkcore.http.http_handler import HttpHandler
 
 
 def response_handler(**kwargs):
-    logger = kwargs.get("logger")
     response = kwargs.get("response")
     request = response.request
 
-    base = "> Request %s %s HTTP/1.1" % (request.method, request.path_url) + "\n"
+    info = "> Request %s %s HTTP/1.1" % (request.method, request.path_url) + "\n"
     if len(request.headers) != 0:
-        base = base + "> Headers:" + "\n"
+        info = info + "> Headers:" + "\n"
         for each in request.headers:
-            base = base + "    %s : %s" % (each, request.headers[each]) + "\n"
-    base = base + "> Body: %s" % request.body + "\n\n"
+            info = info + "    %s: %s" % (each, request.headers[each]) + "\n"
+    info = info + "> Body: %s" % request.body + "\n\n"
 
-    base = base + "< Response HTTP/1.1 %s " % response.status_code + "\n"
+    info = info + "< Response HTTP/1.1 %s " % response.status_code + "\n"
     if len(response.headers) != 0:
-        base = base + "< Headers:" + "\n"
+        info = info + "< Headers:" + "\n"
         for each in response.headers:
-            base = base + "    %s : %s" % (each, response.headers[each],) + "\n"
-    base = base + "< Body: %s" % response.content
-    logger.debug(base)
+            info = info + "    %s: %s" % (each, response.headers[each],) + "\n"
+    info = info + "< Body: %s" % response.content
+    print(info)
 
 
 if __name__ == "__main__":
+    http_handler = HttpHandler().add_response_handler(response_handler)
     client = VpcClient.new_builder() \
-        .with_http_config(config) \
-        .with_credentials(basic_credentials) \
-        .with_stream_log(log_level=logging.DEBUG) \
-        .with_http_handler(HttpHandler().add_response_handler(response_handler)) \
-        .with_endpoint(endpoint) \
+    	.with_http_handler(http_handler) \
         .build()
 ```
 

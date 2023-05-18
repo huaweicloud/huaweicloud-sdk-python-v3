@@ -6,6 +6,7 @@ from __future__ import absolute_import
 from huaweicloudsdkcdn.v2.cdn_client import CdnClient
 from huaweicloudsdkcdn.v2.cdn_async_client import CdnAsyncClient
 # import models into sdk package
+from huaweicloudsdkcdn.v2.model.back_sources import BackSources
 from huaweicloudsdkcdn.v2.model.batch_copy_configs import BatchCopyConfigs
 from huaweicloudsdkcdn.v2.model.batch_copy_d_request_body import BatchCopyDRequestBody
 from huaweicloudsdkcdn.v2.model.batch_copy_domain_request import BatchCopyDomainRequest
@@ -15,9 +16,11 @@ from huaweicloudsdkcdn.v2.model.batch_copy_error_rsp_error import BatchCopyError
 from huaweicloudsdkcdn.v2.model.batch_copy_result_vo import BatchCopyResultVo
 from huaweicloudsdkcdn.v2.model.cache_rules import CacheRules
 from huaweicloudsdkcdn.v2.model.cache_url_parameter_filter import CacheUrlParameterFilter
+from huaweicloudsdkcdn.v2.model.common_remote_auth import CommonRemoteAuth
 from huaweicloudsdkcdn.v2.model.compress import Compress
 from huaweicloudsdkcdn.v2.model.configs import Configs
 from huaweicloudsdkcdn.v2.model.configs_get_body import ConfigsGetBody
+from huaweicloudsdkcdn.v2.model.custom_args import CustomArgs
 from huaweicloudsdkcdn.v2.model.domain_origin_host import DomainOriginHost
 from huaweicloudsdkcdn.v2.model.domains import Domains
 from huaweicloudsdkcdn.v2.model.domains_with_port import DomainsWithPort
@@ -30,6 +33,7 @@ from huaweicloudsdkcdn.v2.model.err_msg import ErrMsg
 from huaweicloudsdkcdn.v2.model.err_rsp import ErrRsp
 from huaweicloudsdkcdn.v2.model.error_code_cache import ErrorCodeCache
 from huaweicloudsdkcdn.v2.model.error_code_redirect_rules import ErrorCodeRedirectRules
+from huaweicloudsdkcdn.v2.model.flexible_origins import FlexibleOrigins
 from huaweicloudsdkcdn.v2.model.force_redirect_config import ForceRedirectConfig
 from huaweicloudsdkcdn.v2.model.http_get_body import HttpGetBody
 from huaweicloudsdkcdn.v2.model.http_put_body import HttpPutBody
@@ -41,6 +45,8 @@ from huaweicloudsdkcdn.v2.model.modify_domain_config_request_body import ModifyD
 from huaweicloudsdkcdn.v2.model.origin_request_header import OriginRequestHeader
 from huaweicloudsdkcdn.v2.model.origin_request_url_rewrite import OriginRequestUrlRewrite
 from huaweicloudsdkcdn.v2.model.referer_config import RefererConfig
+from huaweicloudsdkcdn.v2.model.remote_auth_rule_vo import RemoteAuthRuleVo
+from huaweicloudsdkcdn.v2.model.request_limit_rules import RequestLimitRules
 from huaweicloudsdkcdn.v2.model.set_charge_modes_body import SetChargeModesBody
 from huaweicloudsdkcdn.v2.model.set_charge_modes_request import SetChargeModesRequest
 from huaweicloudsdkcdn.v2.model.set_charge_modes_response import SetChargeModesResponse
@@ -68,4 +74,6 @@ from huaweicloudsdkcdn.v2.model.update_domain_full_config_response import Update
 from huaweicloudsdkcdn.v2.model.url_auth import UrlAuth
 from huaweicloudsdkcdn.v2.model.url_auth_get_body import UrlAuthGetBody
 from huaweicloudsdkcdn.v2.model.user_agent_filter import UserAgentFilter
+from huaweicloudsdkcdn.v2.model.video_seek import VideoSeek
+from huaweicloudsdkcdn.v2.model.web_socket_seek import WebSocketSeek
 

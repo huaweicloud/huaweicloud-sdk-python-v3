@@ -40,6 +40,8 @@ from huaweicloudsdkdws.v2.model.cancel_readonly_cluster_request import CancelRea
 from huaweicloudsdkdws.v2.model.cancel_readonly_cluster_response import CancelReadonlyClusterResponse
 from huaweicloudsdkdws.v2.model.check_cluster_request import CheckClusterRequest
 from huaweicloudsdkdws.v2.model.check_cluster_response import CheckClusterResponse
+from huaweicloudsdkdws.v2.model.check_disaster_name_request import CheckDisasterNameRequest
+from huaweicloudsdkdws.v2.model.check_disaster_name_response import CheckDisasterNameResponse
 from huaweicloudsdkdws.v2.model.cluster import Cluster
 from huaweicloudsdkdws.v2.model.cluster_check_body import ClusterCheckBody
 from huaweicloudsdkdws.v2.model.cluster_check_request_body import ClusterCheckRequestBody
@@ -110,6 +112,8 @@ from huaweicloudsdkdws.v2.model.disassociate_eip_response import DisassociateEip
 from huaweicloudsdkdws.v2.model.disassociate_elb_request import DisassociateElbRequest
 from huaweicloudsdkdws.v2.model.disassociate_elb_response import DisassociateElbResponse
 from huaweicloudsdkdws.v2.model.disaster_recovery import DisasterRecovery
+from huaweicloudsdkdws.v2.model.disaster_recovery_cluster import DisasterRecoveryCluster
+from huaweicloudsdkdws.v2.model.disaster_recovery_cluster_vo import DisasterRecoveryClusterVo
 from huaweicloudsdkdws.v2.model.disaster_recovery_id import DisasterRecoveryId
 from huaweicloudsdkdws.v2.model.disk_resp import DiskResp
 from huaweicloudsdkdws.v2.model.dss_pool import DssPool
@@ -144,6 +148,8 @@ from huaweicloudsdkdws.v2.model.list_audit_log_request import ListAuditLogReques
 from huaweicloudsdkdws.v2.model.list_audit_log_response import ListAuditLogResponse
 from huaweicloudsdkdws.v2.model.list_availability_zones_request import ListAvailabilityZonesRequest
 from huaweicloudsdkdws.v2.model.list_availability_zones_response import ListAvailabilityZonesResponse
+from huaweicloudsdkdws.v2.model.list_available_disaster_clusters_request import ListAvailableDisasterClustersRequest
+from huaweicloudsdkdws.v2.model.list_available_disaster_clusters_response import ListAvailableDisasterClustersResponse
 from huaweicloudsdkdws.v2.model.list_cluster_cn_request import ListClusterCnRequest
 from huaweicloudsdkdws.v2.model.list_cluster_cn_response import ListClusterCnResponse
 from huaweicloudsdkdws.v2.model.list_cluster_configurations_parameter_request import ListClusterConfigurationsParameterRequest
@@ -247,6 +253,8 @@ from huaweicloudsdkdws.v2.model.restore_disaster_request import RestoreDisasterR
 from huaweicloudsdkdws.v2.model.restore_disaster_response import RestoreDisasterResponse
 from huaweicloudsdkdws.v2.model.restore_point import RestorePoint
 from huaweicloudsdkdws.v2.model.scale_out import ScaleOut
+from huaweicloudsdkdws.v2.model.show_disaster_detail_request import ShowDisasterDetailRequest
+from huaweicloudsdkdws.v2.model.show_disaster_detail_response import ShowDisasterDetailResponse
 from huaweicloudsdkdws.v2.model.shrink_cluster_request import ShrinkClusterRequest
 from huaweicloudsdkdws.v2.model.shrink_cluster_response import ShrinkClusterResponse
 from huaweicloudsdkdws.v2.model.snapshot import Snapshot
@@ -275,6 +283,10 @@ from huaweicloudsdkdws.v2.model.update_configuration_request import UpdateConfig
 from huaweicloudsdkdws.v2.model.update_configuration_response import UpdateConfigurationResponse
 from huaweicloudsdkdws.v2.model.update_data_source_request import UpdateDataSourceRequest
 from huaweicloudsdkdws.v2.model.update_data_source_response import UpdateDataSourceResponse
+from huaweicloudsdkdws.v2.model.update_disaster_info_request import UpdateDisasterInfoRequest
+from huaweicloudsdkdws.v2.model.update_disaster_info_response import UpdateDisasterInfoResponse
+from huaweicloudsdkdws.v2.model.update_disaster_recovery_req import UpdateDisasterRecoveryReq
+from huaweicloudsdkdws.v2.model.update_disaster_recovery_request import UpdateDisasterRecoveryRequest
 from huaweicloudsdkdws.v2.model.update_event_sub_request import UpdateEventSubRequest
 from huaweicloudsdkdws.v2.model.update_event_sub_response import UpdateEventSubResponse
 from huaweicloudsdkdws.v2.model.update_maintenance_window_request import UpdateMaintenanceWindowRequest

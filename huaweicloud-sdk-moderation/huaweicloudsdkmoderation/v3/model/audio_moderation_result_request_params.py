@@ -35,13 +35,13 @@ class AudioModerationResultRequestParams:
 
         The model defined in huaweicloud sdk
 
-        :param event_type: 
+        :param event_type: 创建作业时传的event_type参数
         :type event_type: str
         :param data: 
         :type data: :class:`huaweicloudsdkmoderation.v3.AudioModerationResultRequestParamsData`
-        :param param_callback: 
+        :param param_callback: 创建作业时传的callback参数
         :type param_callback: str
-        :param categories: 
+        :param categories: 创建作业时传的categories参数
         :type categories: list[str]
         """
         
@@ -66,6 +66,8 @@ class AudioModerationResultRequestParams:
     def event_type(self):
         """Gets the event_type of this AudioModerationResultRequestParams.
 
+        创建作业时传的event_type参数
+
         :return: The event_type of this AudioModerationResultRequestParams.
         :rtype: str
         """
@@ -74,6 +76,8 @@ class AudioModerationResultRequestParams:
     @event_type.setter
     def event_type(self, event_type):
         """Sets the event_type of this AudioModerationResultRequestParams.
+
+        创建作业时传的event_type参数
 
         :param event_type: The event_type of this AudioModerationResultRequestParams.
         :type event_type: str
@@ -102,6 +106,8 @@ class AudioModerationResultRequestParams:
     def param_callback(self):
         """Gets the param_callback of this AudioModerationResultRequestParams.
 
+        创建作业时传的callback参数
+
         :return: The param_callback of this AudioModerationResultRequestParams.
         :rtype: str
         """
@@ -110,6 +116,8 @@ class AudioModerationResultRequestParams:
     @param_callback.setter
     def param_callback(self, param_callback):
         """Sets the param_callback of this AudioModerationResultRequestParams.
+
+        创建作业时传的callback参数
 
         :param param_callback: The param_callback of this AudioModerationResultRequestParams.
         :type param_callback: str
@@ -120,6 +128,8 @@ class AudioModerationResultRequestParams:
     def categories(self):
         """Gets the categories of this AudioModerationResultRequestParams.
 
+        创建作业时传的categories参数
+
         :return: The categories of this AudioModerationResultRequestParams.
         :rtype: list[str]
         """
@@ -128,6 +138,8 @@ class AudioModerationResultRequestParams:
     @categories.setter
     def categories(self, categories):
         """Sets the categories of this AudioModerationResultRequestParams.
+
+        创建作业时传的categories参数
 
         :param categories: The categories of this AudioModerationResultRequestParams.
         :type categories: list[str]

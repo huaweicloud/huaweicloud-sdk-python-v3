@@ -43,7 +43,7 @@ class ImageDetectionReq:
 
         :param url: 与image二选一  图片的URL路径，目前支持：  - 公网HTTP/HTTPS URL  - 华为云OBS提供的URL，使用OBS数据需要进行授权。包括对服务授权、临时授权、匿名公开授权。详请参见[配置OBS访问权限](https://support.huaweicloud.com/api-moderation/moderation_03_0020.html)。   &gt; - 接口响应时间依赖图片的下载时间，如果图片下载时间过长，会返回接口调用失败。请保证被检测图片所在的存储服务稳定可靠，建议您使用华为云OBS存储。 
         :type url: str
-        :param image: 与url二选一  图片文件Base64编码字符串。要求base64编码后大小不超过10M。  政治人物检测人脸部分不小于50*50像素。  支持JPG/PNG/BMP格式。 
+        :param image: 与url二选一  图片文件Base64编码字符串。要求base64编码后大小不超过10M。  政治人物检测人脸部分不小于50*50像素。  支持JPEG/PNG/BMP/WEBP/GIF格式。 
         :type image: str
         :param moderation_rule: 图像审核规则名称，默认使用default规则。  &gt; 审核规则的创建和使用请参见[配置审核规则](https://support.huaweicloud.com/api-moderation/moderation_03_0063.html) 
         :type moderation_rule: str
@@ -109,7 +109,7 @@ class ImageDetectionReq:
     def image(self):
         """Gets the image of this ImageDetectionReq.
 
-        与url二选一  图片文件Base64编码字符串。要求base64编码后大小不超过10M。  政治人物检测人脸部分不小于50*50像素。  支持JPG/PNG/BMP格式。 
+        与url二选一  图片文件Base64编码字符串。要求base64编码后大小不超过10M。  政治人物检测人脸部分不小于50*50像素。  支持JPEG/PNG/BMP/WEBP/GIF格式。 
 
         :return: The image of this ImageDetectionReq.
         :rtype: str
@@ -120,7 +120,7 @@ class ImageDetectionReq:
     def image(self, image):
         """Sets the image of this ImageDetectionReq.
 
-        与url二选一  图片文件Base64编码字符串。要求base64编码后大小不超过10M。  政治人物检测人脸部分不小于50*50像素。  支持JPG/PNG/BMP格式。 
+        与url二选一  图片文件Base64编码字符串。要求base64编码后大小不超过10M。  政治人物检测人脸部分不小于50*50像素。  支持JPEG/PNG/BMP/WEBP/GIF格式。 
 
         :param image: The image of this ImageDetectionReq.
         :type image: str

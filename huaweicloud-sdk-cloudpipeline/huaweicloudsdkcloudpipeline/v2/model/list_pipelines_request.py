@@ -18,25 +18,21 @@ class ListPipelinesRequest:
 
     openapi_types = {
         'project_id': 'str',
-        'x_language': 'str',
         'body': 'ListPipelineQuery'
     }
 
     attribute_map = {
         'project_id': 'project_id',
-        'x_language': 'X-Language',
         'body': 'body'
     }
 
-    def __init__(self, project_id=None, x_language=None, body=None):
+    def __init__(self, project_id=None, body=None):
         """ListPipelinesRequest
 
         The model defined in huaweicloud sdk
 
         :param project_id: 项目ID
         :type project_id: str
-        :param x_language: 语言类型 中文:zh-cn 英文:en-us，默认en-us
-        :type x_language: str
         :param body: Body of the ListPipelinesRequest
         :type body: :class:`huaweicloudsdkcloudpipeline.v2.ListPipelineQuery`
         """
@@ -44,13 +40,10 @@ class ListPipelinesRequest:
         
 
         self._project_id = None
-        self._x_language = None
         self._body = None
         self.discriminator = None
 
         self.project_id = project_id
-        if x_language is not None:
-            self.x_language = x_language
         if body is not None:
             self.body = body
 
@@ -75,28 +68,6 @@ class ListPipelinesRequest:
         :type project_id: str
         """
         self._project_id = project_id
-
-    @property
-    def x_language(self):
-        """Gets the x_language of this ListPipelinesRequest.
-
-        语言类型 中文:zh-cn 英文:en-us，默认en-us
-
-        :return: The x_language of this ListPipelinesRequest.
-        :rtype: str
-        """
-        return self._x_language
-
-    @x_language.setter
-    def x_language(self, x_language):
-        """Sets the x_language of this ListPipelinesRequest.
-
-        语言类型 中文:zh-cn 英文:en-us，默认en-us
-
-        :param x_language: The x_language of this ListPipelinesRequest.
-        :type x_language: str
-        """
-        self._x_language = x_language
 
     @property
     def body(self):

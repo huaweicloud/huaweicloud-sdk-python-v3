@@ -37,11 +37,11 @@ class TextDetectionReq:
 
         :param event_type: 事件类型。  可选值如下：  nickname: 昵称  title: 标题  article: 帖⼦  comment: 评论  barrage: 弹幕  search: 搜索栏  profile: 个⼈简介
         :type event_type: str
-        :param glossary_names: 检测时使用的自定义黑名单词库列表。
+        :param glossary_names: 检测时使用的自定义黑名单词库列表。自定义黑词库的创建和使用请参见[配置定义黑名单词库](https://support.huaweicloud.com/api-moderation/moderation_03_0027.html#moderation_03_0027__section12400140132318)。
         :type glossary_names: list[str]
         :param data: 
         :type data: :class:`huaweicloudsdkmoderation.v3.TextDetectionDataReq`
-        :param white_glossary_names: 检测时使用的自定义白名单词库列表。
+        :param white_glossary_names: 检测时使用的自定义白名单词库列表。自定义白词库的创建和使用请参见[配置定义白名单词库](https://support.huaweicloud.com/api-moderation/moderation_03_0027.html#moderation_03_0027__section178844141394)。
         :type white_glossary_names: list[str]
         """
         
@@ -86,7 +86,7 @@ class TextDetectionReq:
     def glossary_names(self):
         """Gets the glossary_names of this TextDetectionReq.
 
-        检测时使用的自定义黑名单词库列表。
+        检测时使用的自定义黑名单词库列表。自定义黑词库的创建和使用请参见[配置定义黑名单词库](https://support.huaweicloud.com/api-moderation/moderation_03_0027.html#moderation_03_0027__section12400140132318)。
 
         :return: The glossary_names of this TextDetectionReq.
         :rtype: list[str]
@@ -97,7 +97,7 @@ class TextDetectionReq:
     def glossary_names(self, glossary_names):
         """Sets the glossary_names of this TextDetectionReq.
 
-        检测时使用的自定义黑名单词库列表。
+        检测时使用的自定义黑名单词库列表。自定义黑词库的创建和使用请参见[配置定义黑名单词库](https://support.huaweicloud.com/api-moderation/moderation_03_0027.html#moderation_03_0027__section12400140132318)。
 
         :param glossary_names: The glossary_names of this TextDetectionReq.
         :type glossary_names: list[str]
@@ -126,7 +126,7 @@ class TextDetectionReq:
     def white_glossary_names(self):
         """Gets the white_glossary_names of this TextDetectionReq.
 
-        检测时使用的自定义白名单词库列表。
+        检测时使用的自定义白名单词库列表。自定义白词库的创建和使用请参见[配置定义白名单词库](https://support.huaweicloud.com/api-moderation/moderation_03_0027.html#moderation_03_0027__section178844141394)。
 
         :return: The white_glossary_names of this TextDetectionReq.
         :rtype: list[str]
@@ -137,7 +137,7 @@ class TextDetectionReq:
     def white_glossary_names(self, white_glossary_names):
         """Sets the white_glossary_names of this TextDetectionReq.
 
-        检测时使用的自定义白名单词库列表。
+        检测时使用的自定义白名单词库列表。自定义白词库的创建和使用请参见[配置定义白名单词库](https://support.huaweicloud.com/api-moderation/moderation_03_0027.html#moderation_03_0027__section178844141394)。
 
         :param white_glossary_names: The white_glossary_names of this TextDetectionReq.
         :type white_glossary_names: list[str]

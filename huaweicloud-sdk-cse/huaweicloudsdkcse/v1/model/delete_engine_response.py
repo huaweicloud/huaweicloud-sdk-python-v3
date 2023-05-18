@@ -26,7 +26,7 @@ class DeleteEngineResponse(SdkResponse):
     attribute_map = {
         'id': 'id',
         'name': 'name',
-        'job_id': 'job_id'
+        'job_id': 'jobId'
     }
 
     def __init__(self, id=None, name=None, job_id=None):

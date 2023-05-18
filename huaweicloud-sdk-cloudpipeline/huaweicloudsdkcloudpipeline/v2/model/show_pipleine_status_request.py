@@ -17,24 +17,20 @@ class ShowPipleineStatusRequest:
     sensitive_list = []
 
     openapi_types = {
-        'x_language': 'str',
         'pipeline_id': 'str',
         'build_id': 'str'
     }
 
     attribute_map = {
-        'x_language': 'X-Language',
         'pipeline_id': 'pipeline_id',
         'build_id': 'build_id'
     }
 
-    def __init__(self, x_language=None, pipeline_id=None, build_id=None):
+    def __init__(self, pipeline_id=None, build_id=None):
         """ShowPipleineStatusRequest
 
         The model defined in huaweicloud sdk
 
-        :param x_language: 语言类型 中文:zh-cn 英文:en-us，默认en-us
-        :type x_language: str
         :param pipeline_id: 要获取状态的流水线ID
         :type pipeline_id: str
         :param build_id: 要获取状态的执行ID
@@ -43,38 +39,13 @@ class ShowPipleineStatusRequest:
         
         
 
-        self._x_language = None
         self._pipeline_id = None
         self._build_id = None
         self.discriminator = None
 
-        if x_language is not None:
-            self.x_language = x_language
         self.pipeline_id = pipeline_id
         if build_id is not None:
             self.build_id = build_id
-
-    @property
-    def x_language(self):
-        """Gets the x_language of this ShowPipleineStatusRequest.
-
-        语言类型 中文:zh-cn 英文:en-us，默认en-us
-
-        :return: The x_language of this ShowPipleineStatusRequest.
-        :rtype: str
-        """
-        return self._x_language
-
-    @x_language.setter
-    def x_language(self, x_language):
-        """Sets the x_language of this ShowPipleineStatusRequest.
-
-        语言类型 中文:zh-cn 英文:en-us，默认en-us
-
-        :param x_language: The x_language of this ShowPipleineStatusRequest.
-        :type x_language: str
-        """
-        self._x_language = x_language
 
     @property
     def pipeline_id(self):

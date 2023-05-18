@@ -18,15 +18,17 @@ class UserAgentFilter:
 
     openapi_types = {
         'type': 'str',
-        'value': 'str'
+        'value': 'str',
+        'ua_list': 'list[str]'
     }
 
     attribute_map = {
         'type': 'type',
-        'value': 'value'
+        'value': 'value',
+        'ua_list': 'ua_list'
     }
 
-    def __init__(self, type=None, value=None):
+    def __init__(self, type=None, value=None, ua_list=None):
         """UserAgentFilter
 
         The model defined in huaweicloud sdk
@@ -35,17 +37,22 @@ class UserAgentFilter:
         :type type: str
         :param value: 配置UA黑白名单，当type&#x3D;off时，非必传。最多配置10条规则，单条规则不超过100个字符，多条规则用“,”分割。
         :type value: str
+        :param ua_list: 配置UA黑白名单，当type&#x3D;off时，非必传。最多配置10条规则，单条规则不超过100个字符,同时配置value和ua_list时，ua_list生效。 
+        :type ua_list: list[str]
         """
         
         
 
         self._type = None
         self._value = None
+        self._ua_list = None
         self.discriminator = None
 
         self.type = type
         if value is not None:
             self.value = value
+        if ua_list is not None:
+            self.ua_list = ua_list
 
     @property
     def type(self):
@@ -90,6 +97,28 @@ class UserAgentFilter:
         :type value: str
         """
         self._value = value
+
+    @property
+    def ua_list(self):
+        """Gets the ua_list of this UserAgentFilter.
+
+        配置UA黑白名单，当type=off时，非必传。最多配置10条规则，单条规则不超过100个字符,同时配置value和ua_list时，ua_list生效。 
+
+        :return: The ua_list of this UserAgentFilter.
+        :rtype: list[str]
+        """
+        return self._ua_list
+
+    @ua_list.setter
+    def ua_list(self, ua_list):
+        """Sets the ua_list of this UserAgentFilter.
+
+        配置UA黑白名单，当type=off时，非必传。最多配置10条规则，单条规则不超过100个字符,同时配置value和ua_list时，ua_list生效。 
+
+        :param ua_list: The ua_list of this UserAgentFilter.
+        :type ua_list: list[str]
+        """
+        self._ua_list = ua_list
 
     def to_dict(self):
         """Returns the model properties as a dict"""

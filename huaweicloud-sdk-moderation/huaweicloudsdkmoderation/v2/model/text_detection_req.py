@@ -35,7 +35,7 @@ class TextDetectionReq:
 
         :param categories: 检测场景。  当前支持的场景有默认场景和用户自定义场景：  - 默认场景为：     * politics：涉政     * porn：涉黄     * ad：广告     * abuse：辱骂     * contraband：违禁品     * flood：灌水   - 用户自定义场景为：自定义黑名单词库。  &gt; - 自定义词库的创建和使用请参见[配置自定义词库](https://support.huaweicloud.com/api-moderation/moderation_03_0027.html)。 &gt; - flood场景不支持使用自定义白名单词库。
         :type categories: list[str]
-        :param white_glossaries: 启用的白名单列表  当前白名单使用规则为：  - 不传参数\&quot;white_glossaries\&quot;：     * 表示默认使用2022-09-02 16:00:00之前创建的白名单词库  - 传参数\&quot;white_glossaries\&quot;：   * 参数为空时不使用任何白名单词库     * 参数不为空时使用传入的白名单词库  &gt; - 自定义词库的创建和使用请参见[[配置自定义词库](https://support.huaweicloud.com/api-moderation/moderation_03_0027.html)](tag:hc)[[配置自定义词库](https://support.huaweicloud.com/intl/zh-cn/api-moderation/moderation_03_0027.html)](tag:hk)。
+        :param white_glossaries: 启用的白名单列表  当前白名单使用规则为：  - 不传参数\&quot;white_glossaries\&quot;：     * 表示默认使用2022-09-02 16:00:00之前创建的白名单词库  - 传参数\&quot;white_glossaries\&quot;：   * 参数为空时不使用任何白名单词库     * 参数不为空时使用传入的白名单词库  &gt; - 自定义词库的创建和使用请参见[[配置自定义词库](https://support.huaweicloud.com/api-moderation/moderation_03_0027.html)](tag:hc)。
         :type white_glossaries: list[str]
         :param items: 待检测的文本列表，目前暂时每次只支持传一个item。
         :type items: list[:class:`huaweicloudsdkmoderation.v2.TextDetectionItemsReq`]
@@ -80,7 +80,7 @@ class TextDetectionReq:
     def white_glossaries(self):
         """Gets the white_glossaries of this TextDetectionReq.
 
-        启用的白名单列表  当前白名单使用规则为：  - 不传参数\"white_glossaries\"：     * 表示默认使用2022-09-02 16:00:00之前创建的白名单词库  - 传参数\"white_glossaries\"：   * 参数为空时不使用任何白名单词库     * 参数不为空时使用传入的白名单词库  > - 自定义词库的创建和使用请参见[[配置自定义词库](https://support.huaweicloud.com/api-moderation/moderation_03_0027.html)](tag:hc)[[配置自定义词库](https://support.huaweicloud.com/intl/zh-cn/api-moderation/moderation_03_0027.html)](tag:hk)。
+        启用的白名单列表  当前白名单使用规则为：  - 不传参数\"white_glossaries\"：     * 表示默认使用2022-09-02 16:00:00之前创建的白名单词库  - 传参数\"white_glossaries\"：   * 参数为空时不使用任何白名单词库     * 参数不为空时使用传入的白名单词库  > - 自定义词库的创建和使用请参见[[配置自定义词库](https://support.huaweicloud.com/api-moderation/moderation_03_0027.html)](tag:hc)。
 
         :return: The white_glossaries of this TextDetectionReq.
         :rtype: list[str]
@@ -91,7 +91,7 @@ class TextDetectionReq:
     def white_glossaries(self, white_glossaries):
         """Sets the white_glossaries of this TextDetectionReq.
 
-        启用的白名单列表  当前白名单使用规则为：  - 不传参数\"white_glossaries\"：     * 表示默认使用2022-09-02 16:00:00之前创建的白名单词库  - 传参数\"white_glossaries\"：   * 参数为空时不使用任何白名单词库     * 参数不为空时使用传入的白名单词库  > - 自定义词库的创建和使用请参见[[配置自定义词库](https://support.huaweicloud.com/api-moderation/moderation_03_0027.html)](tag:hc)[[配置自定义词库](https://support.huaweicloud.com/intl/zh-cn/api-moderation/moderation_03_0027.html)](tag:hk)。
+        启用的白名单列表  当前白名单使用规则为：  - 不传参数\"white_glossaries\"：     * 表示默认使用2022-09-02 16:00:00之前创建的白名单词库  - 传参数\"white_glossaries\"：   * 参数为空时不使用任何白名单词库     * 参数不为空时使用传入的白名单词库  > - 自定义词库的创建和使用请参见[[配置自定义词库](https://support.huaweicloud.com/api-moderation/moderation_03_0027.html)](tag:hc)。
 
         :param white_glossaries: The white_glossaries of this TextDetectionReq.
         :type white_glossaries: list[str]

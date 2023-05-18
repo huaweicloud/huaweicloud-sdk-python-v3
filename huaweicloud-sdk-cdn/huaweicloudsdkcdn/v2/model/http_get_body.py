@@ -20,21 +20,27 @@ class HttpGetBody:
         'https_status': 'str',
         'certificate_name': 'str',
         'certificate_value': 'str',
+        'expire_time': 'int',
         'certificate_source': 'int',
+        'certificate_type': 'str',
         'http2_status': 'str',
-        'tls_version': 'str'
+        'tls_version': 'str',
+        'ocsp_stapling_status': 'str'
     }
 
     attribute_map = {
         'https_status': 'https_status',
         'certificate_name': 'certificate_name',
         'certificate_value': 'certificate_value',
+        'expire_time': 'expire_time',
         'certificate_source': 'certificate_source',
+        'certificate_type': 'certificate_type',
         'http2_status': 'http2_status',
-        'tls_version': 'tls_version'
+        'tls_version': 'tls_version',
+        'ocsp_stapling_status': 'ocsp_stapling_status'
     }
 
-    def __init__(self, https_status=None, certificate_name=None, certificate_value=None, certificate_source=None, http2_status=None, tls_version=None):
+    def __init__(self, https_status=None, certificate_name=None, certificate_value=None, expire_time=None, certificate_source=None, certificate_type=None, http2_status=None, tls_version=None, ocsp_stapling_status=None):
         """HttpGetBody
 
         The model defined in huaweicloud sdk
@@ -45,12 +51,18 @@ class HttpGetBody:
         :type certificate_name: str
         :param certificate_value: HTTPS协议使用的证书内容，当证书开启时必返回该字段。取值范围：PEM编码格式。
         :type certificate_value: str
+        :param expire_time: 证书过期时间,单位：毫秒。
+        :type expire_time: int
         :param certificate_source: 证书来源。1：代表华为云托管证书；0：表示自有证书。 默认值0。当证书开启时必返回该字段。
         :type certificate_source: int
+        :param certificate_type: 证书类型。server：国际证书；server_sm：国密证书。
+        :type certificate_type: str
         :param http2_status: 是否使用HTTP2.0。（on：是，off：否）
         :type http2_status: str
         :param tls_version: 传输层安全性协议，目前支持TLSv1.0/1.1/1.2/1.3四个版本的协议。当证书开启时返回该字段，默认全部开启，不可全部关闭。
         :type tls_version: str
+        :param ocsp_stapling_status: 是否开启ocsp stapling （on：是，off：否）。
+        :type ocsp_stapling_status: str
         """
         
         
@@ -58,9 +70,12 @@ class HttpGetBody:
         self._https_status = None
         self._certificate_name = None
         self._certificate_value = None
+        self._expire_time = None
         self._certificate_source = None
+        self._certificate_type = None
         self._http2_status = None
         self._tls_version = None
+        self._ocsp_stapling_status = None
         self.discriminator = None
 
         if https_status is not None:
@@ -69,12 +84,18 @@ class HttpGetBody:
             self.certificate_name = certificate_name
         if certificate_value is not None:
             self.certificate_value = certificate_value
+        if expire_time is not None:
+            self.expire_time = expire_time
         if certificate_source is not None:
             self.certificate_source = certificate_source
+        if certificate_type is not None:
+            self.certificate_type = certificate_type
         if http2_status is not None:
             self.http2_status = http2_status
         if tls_version is not None:
             self.tls_version = tls_version
+        if ocsp_stapling_status is not None:
+            self.ocsp_stapling_status = ocsp_stapling_status
 
     @property
     def https_status(self):
@@ -143,6 +164,28 @@ class HttpGetBody:
         self._certificate_value = certificate_value
 
     @property
+    def expire_time(self):
+        """Gets the expire_time of this HttpGetBody.
+
+        证书过期时间,单位：毫秒。
+
+        :return: The expire_time of this HttpGetBody.
+        :rtype: int
+        """
+        return self._expire_time
+
+    @expire_time.setter
+    def expire_time(self, expire_time):
+        """Sets the expire_time of this HttpGetBody.
+
+        证书过期时间,单位：毫秒。
+
+        :param expire_time: The expire_time of this HttpGetBody.
+        :type expire_time: int
+        """
+        self._expire_time = expire_time
+
+    @property
     def certificate_source(self):
         """Gets the certificate_source of this HttpGetBody.
 
@@ -163,6 +206,28 @@ class HttpGetBody:
         :type certificate_source: int
         """
         self._certificate_source = certificate_source
+
+    @property
+    def certificate_type(self):
+        """Gets the certificate_type of this HttpGetBody.
+
+        证书类型。server：国际证书；server_sm：国密证书。
+
+        :return: The certificate_type of this HttpGetBody.
+        :rtype: str
+        """
+        return self._certificate_type
+
+    @certificate_type.setter
+    def certificate_type(self, certificate_type):
+        """Sets the certificate_type of this HttpGetBody.
+
+        证书类型。server：国际证书；server_sm：国密证书。
+
+        :param certificate_type: The certificate_type of this HttpGetBody.
+        :type certificate_type: str
+        """
+        self._certificate_type = certificate_type
 
     @property
     def http2_status(self):
@@ -207,6 +272,28 @@ class HttpGetBody:
         :type tls_version: str
         """
         self._tls_version = tls_version
+
+    @property
+    def ocsp_stapling_status(self):
+        """Gets the ocsp_stapling_status of this HttpGetBody.
+
+        是否开启ocsp stapling （on：是，off：否）。
+
+        :return: The ocsp_stapling_status of this HttpGetBody.
+        :rtype: str
+        """
+        return self._ocsp_stapling_status
+
+    @ocsp_stapling_status.setter
+    def ocsp_stapling_status(self, ocsp_stapling_status):
+        """Sets the ocsp_stapling_status of this HttpGetBody.
+
+        是否开启ocsp stapling （on：是，off：否）。
+
+        :param ocsp_stapling_status: The ocsp_stapling_status of this HttpGetBody.
+        :type ocsp_stapling_status: str
+        """
+        self._ocsp_stapling_status = ocsp_stapling_status
 
     def to_dict(self):
         """Returns the model properties as a dict"""

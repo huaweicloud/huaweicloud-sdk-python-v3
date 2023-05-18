@@ -17,7 +17,6 @@ class ListPipleineBuildResultRequest:
     sensitive_list = []
 
     openapi_types = {
-        'x_language': 'str',
         'project_id': 'str',
         'start_date': 'str',
         'end_date': 'str',
@@ -26,7 +25,6 @@ class ListPipleineBuildResultRequest:
     }
 
     attribute_map = {
-        'x_language': 'X-Language',
         'project_id': 'project_id',
         'start_date': 'start_date',
         'end_date': 'end_date',
@@ -34,13 +32,11 @@ class ListPipleineBuildResultRequest:
         'limit': 'limit'
     }
 
-    def __init__(self, x_language=None, project_id=None, start_date=None, end_date=None, offset=None, limit=None):
+    def __init__(self, project_id=None, start_date=None, end_date=None, offset=None, limit=None):
         """ListPipleineBuildResultRequest
 
         The model defined in huaweicloud sdk
 
-        :param x_language: 语言类型 中文:zh-cn 英文:en-us，默认en-us
-        :type x_language: str
         :param project_id: 项目id
         :type project_id: str
         :param start_date: 起始日期,起始日期和结束日期间隔不超过一个月，查询包含起始日期
@@ -55,7 +51,6 @@ class ListPipleineBuildResultRequest:
         
         
 
-        self._x_language = None
         self._project_id = None
         self._start_date = None
         self._end_date = None
@@ -63,35 +58,11 @@ class ListPipleineBuildResultRequest:
         self._limit = None
         self.discriminator = None
 
-        if x_language is not None:
-            self.x_language = x_language
         self.project_id = project_id
         self.start_date = start_date
         self.end_date = end_date
         self.offset = offset
         self.limit = limit
-
-    @property
-    def x_language(self):
-        """Gets the x_language of this ListPipleineBuildResultRequest.
-
-        语言类型 中文:zh-cn 英文:en-us，默认en-us
-
-        :return: The x_language of this ListPipleineBuildResultRequest.
-        :rtype: str
-        """
-        return self._x_language
-
-    @x_language.setter
-    def x_language(self, x_language):
-        """Sets the x_language of this ListPipleineBuildResultRequest.
-
-        语言类型 中文:zh-cn 英文:en-us，默认en-us
-
-        :param x_language: The x_language of this ListPipleineBuildResultRequest.
-        :type x_language: str
-        """
-        self._x_language = x_language
 
     @property
     def project_id(self):

@@ -53,7 +53,7 @@ class ProjectsSet:
         :type id: int
         :param name: 工程名字
         :type name: str
-        :param source: 工程来源 0:CPTS,2:CloudTest
+        :param source: 工程来源 0:PerfTest,2:CloudTest
         :type source: int
         :param external_params: 外部参数
         :type external_params: object
@@ -204,7 +204,7 @@ class ProjectsSet:
     def source(self):
         """Gets the source of this ProjectsSet.
 
-        工程来源 0:CPTS,2:CloudTest
+        工程来源 0:PerfTest,2:CloudTest
 
         :return: The source of this ProjectsSet.
         :rtype: int
@@ -215,7 +215,7 @@ class ProjectsSet:
     def source(self, source):
         """Sets the source of this ProjectsSet.
 
-        工程来源 0:CPTS,2:CloudTest
+        工程来源 0:PerfTest,2:CloudTest
 
         :param source: The source of this ProjectsSet.
         :type source: int

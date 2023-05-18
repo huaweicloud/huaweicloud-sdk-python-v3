@@ -18,7 +18,7 @@ class TaskInfo:
 
     openapi_types = {
         'bench_concurrent': 'int',
-        'case_list': 'list[CaseInfo]',
+        'case_list': 'list[CaseInfoDetail]',
         'create_time': 'datetime',
         'description': 'str',
         'name': 'str',
@@ -52,7 +52,7 @@ class TaskInfo:
         :param bench_concurrent: bench_concurrent
         :type bench_concurrent: int
         :param case_list: case_list
-        :type case_list: list[:class:`huaweicloudsdkcpts.v1.CaseInfo`]
+        :type case_list: list[:class:`huaweicloudsdkcpts.v1.CaseInfoDetail`]
         :param create_time: 创建时间
         :type create_time: datetime
         :param description: description
@@ -140,7 +140,7 @@ class TaskInfo:
         case_list
 
         :return: The case_list of this TaskInfo.
-        :rtype: list[:class:`huaweicloudsdkcpts.v1.CaseInfo`]
+        :rtype: list[:class:`huaweicloudsdkcpts.v1.CaseInfoDetail`]
         """
         return self._case_list
 
@@ -151,7 +151,7 @@ class TaskInfo:
         case_list
 
         :param case_list: The case_list of this TaskInfo.
-        :type case_list: list[:class:`huaweicloudsdkcpts.v1.CaseInfo`]
+        :type case_list: list[:class:`huaweicloudsdkcpts.v1.CaseInfoDetail`]
         """
         self._case_list = case_list
 

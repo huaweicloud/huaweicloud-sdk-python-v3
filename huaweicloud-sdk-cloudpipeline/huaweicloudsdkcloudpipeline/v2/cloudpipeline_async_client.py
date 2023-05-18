@@ -52,8 +52,6 @@ class CloudPipelineAsyncClient(Client):
             query_params.append(('pipeline_ids', local_var_params['pipeline_ids']))
 
         header_params = {}
-        if 'x_language' in local_var_params:
-            header_params['X-Language'] = local_var_params['x_language']
 
         form_params = {}
 
@@ -109,8 +107,6 @@ class CloudPipelineAsyncClient(Client):
         query_params = []
 
         header_params = {}
-        if 'x_language' in local_var_params:
-            header_params['X-Language'] = local_var_params['x_language']
 
         form_params = {}
 
@@ -168,8 +164,6 @@ class CloudPipelineAsyncClient(Client):
         query_params = []
 
         header_params = {}
-        if 'x_language' in local_var_params:
-            header_params['X-Language'] = local_var_params['x_language']
 
         form_params = {}
 
@@ -237,8 +231,6 @@ class CloudPipelineAsyncClient(Client):
             query_params.append(('limit', local_var_params['limit']))
 
         header_params = {}
-        if 'x_language' in local_var_params:
-            header_params['X-Language'] = local_var_params['x_language']
 
         form_params = {}
 
@@ -308,8 +300,6 @@ class CloudPipelineAsyncClient(Client):
             query_params.append(('asc', local_var_params['asc']))
 
         header_params = {}
-        if 'x_language' in local_var_params:
-            header_params['X-Language'] = local_var_params['x_language']
 
         form_params = {}
 
@@ -367,8 +357,6 @@ class CloudPipelineAsyncClient(Client):
         query_params = []
 
         header_params = {}
-        if 'x_language' in local_var_params:
-            header_params['X-Language'] = local_var_params['x_language']
 
         form_params = {}
 
@@ -426,8 +414,6 @@ class CloudPipelineAsyncClient(Client):
         query_params = []
 
         header_params = {}
-        if 'x_language' in local_var_params:
-            header_params['X-Language'] = local_var_params['x_language']
 
         form_params = {}
 
@@ -487,8 +473,6 @@ class CloudPipelineAsyncClient(Client):
             query_params.append(('build_id', local_var_params['build_id']))
 
         header_params = {}
-        if 'x_language' in local_var_params:
-            header_params['X-Language'] = local_var_params['x_language']
 
         form_params = {}
 
@@ -550,8 +534,6 @@ class CloudPipelineAsyncClient(Client):
             query_params.append(('source', local_var_params['source']))
 
         header_params = {}
-        if 'x_language' in local_var_params:
-            header_params['X-Language'] = local_var_params['x_language']
 
         form_params = {}
 
@@ -609,8 +591,6 @@ class CloudPipelineAsyncClient(Client):
         query_params = []
 
         header_params = {}
-        if 'x_language' in local_var_params:
-            header_params['X-Language'] = local_var_params['x_language']
 
         form_params = {}
 
@@ -672,8 +652,6 @@ class CloudPipelineAsyncClient(Client):
             query_params.append(('build_id', local_var_params['build_id']))
 
         header_params = {}
-        if 'x_language' in local_var_params:
-            header_params['X-Language'] = local_var_params['x_language']
 
         form_params = {}
 
@@ -731,8 +709,6 @@ class CloudPipelineAsyncClient(Client):
         query_params = []
 
         header_params = {}
-        if 'x_language' in local_var_params:
-            header_params['X-Language'] = local_var_params['x_language']
 
         form_params = {}
 
@@ -796,8 +772,6 @@ class CloudPipelineAsyncClient(Client):
             query_params.append(('component_id', local_var_params['component_id']))
 
         header_params = {}
-        if 'x_language' in local_var_params:
-            header_params['X-Language'] = local_var_params['x_language']
 
         form_params = {}
 
@@ -859,8 +833,6 @@ class CloudPipelineAsyncClient(Client):
         query_params = []
 
         header_params = {}
-        if 'x_language' in local_var_params:
-            header_params['X-Language'] = local_var_params['x_language']
 
         form_params = {}
 
@@ -920,8 +892,6 @@ class CloudPipelineAsyncClient(Client):
         query_params = []
 
         header_params = {}
-        if 'x_language' in local_var_params:
-            header_params['X-Language'] = local_var_params['x_language']
 
         form_params = {}
 
@@ -981,8 +951,6 @@ class CloudPipelineAsyncClient(Client):
         query_params = []
 
         header_params = {}
-        if 'x_language' in local_var_params:
-            header_params['X-Language'] = local_var_params['x_language']
 
         form_params = {}
 
@@ -1042,8 +1010,6 @@ class CloudPipelineAsyncClient(Client):
         query_params = []
 
         header_params = {}
-        if 'x_language' in local_var_params:
-            header_params['X-Language'] = local_var_params['x_language']
 
         form_params = {}
 
@@ -1105,8 +1071,6 @@ class CloudPipelineAsyncClient(Client):
         query_params = []
 
         header_params = {}
-        if 'x_language' in local_var_params:
-            header_params['X-Language'] = local_var_params['x_language']
 
         form_params = {}
 
@@ -1170,8 +1134,6 @@ class CloudPipelineAsyncClient(Client):
             query_params.append(('pipeline_run_id', local_var_params['pipeline_run_id']))
 
         header_params = {}
-        if 'x_language' in local_var_params:
-            header_params['X-Language'] = local_var_params['x_language']
 
         form_params = {}
 
@@ -1292,8 +1254,6 @@ class CloudPipelineAsyncClient(Client):
         query_params = []
 
         header_params = {}
-        if 'x_language' in local_var_params:
-            header_params['X-Language'] = local_var_params['x_language']
 
         form_params = {}
 

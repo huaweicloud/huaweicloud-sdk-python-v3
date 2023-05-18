@@ -18,6 +18,7 @@ class NodeStatus:
 
     openapi_types = {
         'phase': 'str',
+        'last_probe_time': 'str',
         'job_id': 'str',
         'server_id': 'str',
         'private_ip': 'str',
@@ -28,6 +29,7 @@ class NodeStatus:
 
     attribute_map = {
         'phase': 'phase',
+        'last_probe_time': 'lastProbeTime',
         'job_id': 'jobID',
         'server_id': 'serverId',
         'private_ip': 'privateIP',
@@ -36,13 +38,15 @@ class NodeStatus:
         'delete_status': 'deleteStatus'
     }
 
-    def __init__(self, phase=None, job_id=None, server_id=None, private_ip=None, private_i_pv6_ip=None, public_ip=None, delete_status=None):
+    def __init__(self, phase=None, last_probe_time=None, job_id=None, server_id=None, private_ip=None, private_i_pv6_ip=None, public_ip=None, delete_status=None):
         """NodeStatus
 
         The model defined in huaweicloud sdk
 
-        :param phase: 节点状态。
+        :param phase: 节点状态：节点资源生命周期管理（如安装卸载等）状态和集群内k8s node状态的综合体现。
         :type phase: str
+        :param last_probe_time: 节点最近一次状态检查时间。集群处于异常、冻结或者中间态（例如创建中）时，节点的状态检查动作可能受影响。检查时间超过5分的节点状态不具有参考意义。
+        :type last_probe_time: str
         :param job_id: 创建或删除时的任务ID。
         :type job_id: str
         :param server_id: 底层云服务器或裸金属节点ID。
@@ -60,6 +64,7 @@ class NodeStatus:
         
 
         self._phase = None
+        self._last_probe_time = None
         self._job_id = None
         self._server_id = None
         self._private_ip = None
@@ -70,6 +75,8 @@ class NodeStatus:
 
         if phase is not None:
             self.phase = phase
+        if last_probe_time is not None:
+            self.last_probe_time = last_probe_time
         if job_id is not None:
             self.job_id = job_id
         if server_id is not None:
@@ -87,7 +94,7 @@ class NodeStatus:
     def phase(self):
         """Gets the phase of this NodeStatus.
 
-        节点状态。
+        节点状态：节点资源生命周期管理（如安装卸载等）状态和集群内k8s node状态的综合体现。
 
         :return: The phase of this NodeStatus.
         :rtype: str
@@ -98,12 +105,34 @@ class NodeStatus:
     def phase(self, phase):
         """Sets the phase of this NodeStatus.
 
-        节点状态。
+        节点状态：节点资源生命周期管理（如安装卸载等）状态和集群内k8s node状态的综合体现。
 
         :param phase: The phase of this NodeStatus.
         :type phase: str
         """
         self._phase = phase
+
+    @property
+    def last_probe_time(self):
+        """Gets the last_probe_time of this NodeStatus.
+
+        节点最近一次状态检查时间。集群处于异常、冻结或者中间态（例如创建中）时，节点的状态检查动作可能受影响。检查时间超过5分的节点状态不具有参考意义。
+
+        :return: The last_probe_time of this NodeStatus.
+        :rtype: str
+        """
+        return self._last_probe_time
+
+    @last_probe_time.setter
+    def last_probe_time(self, last_probe_time):
+        """Sets the last_probe_time of this NodeStatus.
+
+        节点最近一次状态检查时间。集群处于异常、冻结或者中间态（例如创建中）时，节点的状态检查动作可能受影响。检查时间超过5分的节点状态不具有参考意义。
+
+        :param last_probe_time: The last_probe_time of this NodeStatus.
+        :type last_probe_time: str
+        """
+        self._last_probe_time = last_probe_time
 
     @property
     def job_id(self):

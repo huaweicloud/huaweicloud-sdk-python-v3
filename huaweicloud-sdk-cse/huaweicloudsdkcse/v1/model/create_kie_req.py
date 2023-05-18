@@ -17,6 +17,7 @@ class CreateKieReq:
     sensitive_list = []
 
     openapi_types = {
+        'id': 'str',
         'key': 'str',
         'labels': 'object',
         'value': 'str',
@@ -25,6 +26,7 @@ class CreateKieReq:
     }
 
     attribute_map = {
+        'id': 'id',
         'key': 'key',
         'labels': 'labels',
         'value': 'value',
@@ -32,11 +34,13 @@ class CreateKieReq:
         'status': 'status'
     }
 
-    def __init__(self, key=None, labels=None, value=None, value_type=None, status=None):
+    def __init__(self, id=None, key=None, labels=None, value=None, value_type=None, status=None):
         """CreateKieReq
 
         The model defined in huaweicloud sdk
 
+        :param id: 配置项的id。
+        :type id: str
         :param key: 配置项的key。
         :type key: str
         :param labels: 配置项的标签
@@ -51,6 +55,7 @@ class CreateKieReq:
         
         
 
+        self._id = None
         self._key = None
         self._labels = None
         self._value = None
@@ -58,6 +63,8 @@ class CreateKieReq:
         self._status = None
         self.discriminator = None
 
+        if id is not None:
+            self.id = id
         if key is not None:
             self.key = key
         if labels is not None:
@@ -68,6 +75,28 @@ class CreateKieReq:
             self.value_type = value_type
         if status is not None:
             self.status = status
+
+    @property
+    def id(self):
+        """Gets the id of this CreateKieReq.
+
+        配置项的id。
+
+        :return: The id of this CreateKieReq.
+        :rtype: str
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """Sets the id of this CreateKieReq.
+
+        配置项的id。
+
+        :param id: The id of this CreateKieReq.
+        :type id: str
+        """
+        self._id = id
 
     @property
     def key(self):

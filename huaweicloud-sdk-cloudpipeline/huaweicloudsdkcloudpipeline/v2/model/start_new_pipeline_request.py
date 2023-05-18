@@ -17,24 +17,20 @@ class StartNewPipelineRequest:
     sensitive_list = []
 
     openapi_types = {
-        'x_language': 'str',
         'pipeline_id': 'str',
         'body': 'StartPipelineParameters'
     }
 
     attribute_map = {
-        'x_language': 'X-Language',
         'pipeline_id': 'pipeline_id',
         'body': 'body'
     }
 
-    def __init__(self, x_language=None, pipeline_id=None, body=None):
+    def __init__(self, pipeline_id=None, body=None):
         """StartNewPipelineRequest
 
         The model defined in huaweicloud sdk
 
-        :param x_language: 语言类型 中文:zh-cn 英文:en-us，默认en-us
-        :type x_language: str
         :param pipeline_id: 流水线ID
         :type pipeline_id: str
         :param body: Body of the StartNewPipelineRequest
@@ -43,38 +39,13 @@ class StartNewPipelineRequest:
         
         
 
-        self._x_language = None
         self._pipeline_id = None
         self._body = None
         self.discriminator = None
 
-        if x_language is not None:
-            self.x_language = x_language
         self.pipeline_id = pipeline_id
         if body is not None:
             self.body = body
-
-    @property
-    def x_language(self):
-        """Gets the x_language of this StartNewPipelineRequest.
-
-        语言类型 中文:zh-cn 英文:en-us，默认en-us
-
-        :return: The x_language of this StartNewPipelineRequest.
-        :rtype: str
-        """
-        return self._x_language
-
-    @x_language.setter
-    def x_language(self, x_language):
-        """Sets the x_language of this StartNewPipelineRequest.
-
-        语言类型 中文:zh-cn 英文:en-us，默认en-us
-
-        :param x_language: The x_language of this StartNewPipelineRequest.
-        :type x_language: str
-        """
-        self._x_language = x_language
 
     @property
     def pipeline_id(self):

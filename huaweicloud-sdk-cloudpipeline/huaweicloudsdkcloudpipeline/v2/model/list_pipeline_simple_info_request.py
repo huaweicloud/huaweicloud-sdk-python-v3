@@ -17,58 +17,29 @@ class ListPipelineSimpleInfoRequest:
     sensitive_list = []
 
     openapi_types = {
-        'x_language': 'str',
         'body': 'ListPipelineSimpleInfoRequestBody'
     }
 
     attribute_map = {
-        'x_language': 'X-Language',
         'body': 'body'
     }
 
-    def __init__(self, x_language=None, body=None):
+    def __init__(self, body=None):
         """ListPipelineSimpleInfoRequest
 
         The model defined in huaweicloud sdk
 
-        :param x_language: 语言类型 中文:zh-cn 英文:en-us，默认en-us
-        :type x_language: str
         :param body: Body of the ListPipelineSimpleInfoRequest
         :type body: :class:`huaweicloudsdkcloudpipeline.v2.ListPipelineSimpleInfoRequestBody`
         """
         
         
 
-        self._x_language = None
         self._body = None
         self.discriminator = None
 
-        if x_language is not None:
-            self.x_language = x_language
         if body is not None:
             self.body = body
-
-    @property
-    def x_language(self):
-        """Gets the x_language of this ListPipelineSimpleInfoRequest.
-
-        语言类型 中文:zh-cn 英文:en-us，默认en-us
-
-        :return: The x_language of this ListPipelineSimpleInfoRequest.
-        :rtype: str
-        """
-        return self._x_language
-
-    @x_language.setter
-    def x_language(self, x_language):
-        """Sets the x_language of this ListPipelineSimpleInfoRequest.
-
-        语言类型 中文:zh-cn 英文:en-us，默认en-us
-
-        :param x_language: The x_language of this ListPipelineSimpleInfoRequest.
-        :type x_language: str
-        """
-        self._x_language = x_language
 
     @property
     def body(self):

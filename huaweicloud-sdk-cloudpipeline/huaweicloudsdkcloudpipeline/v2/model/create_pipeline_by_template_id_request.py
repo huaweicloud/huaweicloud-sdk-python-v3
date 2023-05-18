@@ -19,7 +19,6 @@ class CreatePipelineByTemplateIdRequest:
     openapi_types = {
         'project_id': 'str',
         'template_id': 'str',
-        'x_language': 'str',
         'component_id': 'str',
         'body': 'PipelineByTemplateDTO'
     }
@@ -27,12 +26,11 @@ class CreatePipelineByTemplateIdRequest:
     attribute_map = {
         'project_id': 'project_id',
         'template_id': 'template_id',
-        'x_language': 'X-Language',
         'component_id': 'component_id',
         'body': 'body'
     }
 
-    def __init__(self, project_id=None, template_id=None, x_language=None, component_id=None, body=None):
+    def __init__(self, project_id=None, template_id=None, component_id=None, body=None):
         """CreatePipelineByTemplateIdRequest
 
         The model defined in huaweicloud sdk
@@ -41,8 +39,6 @@ class CreatePipelineByTemplateIdRequest:
         :type project_id: str
         :param template_id: 模板ID
         :type template_id: str
-        :param x_language: 语言类型 中文:zh-cn 英文:en-us，默认en-us
-        :type x_language: str
         :param component_id: 微服务ID
         :type component_id: str
         :param body: Body of the CreatePipelineByTemplateIdRequest
@@ -53,15 +49,12 @@ class CreatePipelineByTemplateIdRequest:
 
         self._project_id = None
         self._template_id = None
-        self._x_language = None
         self._component_id = None
         self._body = None
         self.discriminator = None
 
         self.project_id = project_id
         self.template_id = template_id
-        if x_language is not None:
-            self.x_language = x_language
         if component_id is not None:
             self.component_id = component_id
         if body is not None:
@@ -110,28 +103,6 @@ class CreatePipelineByTemplateIdRequest:
         :type template_id: str
         """
         self._template_id = template_id
-
-    @property
-    def x_language(self):
-        """Gets the x_language of this CreatePipelineByTemplateIdRequest.
-
-        语言类型 中文:zh-cn 英文:en-us，默认en-us
-
-        :return: The x_language of this CreatePipelineByTemplateIdRequest.
-        :rtype: str
-        """
-        return self._x_language
-
-    @x_language.setter
-    def x_language(self, x_language):
-        """Sets the x_language of this CreatePipelineByTemplateIdRequest.
-
-        语言类型 中文:zh-cn 英文:en-us，默认en-us
-
-        :param x_language: The x_language of this CreatePipelineByTemplateIdRequest.
-        :type x_language: str
-        """
-        self._x_language = x_language
 
     @property
     def component_id(self):

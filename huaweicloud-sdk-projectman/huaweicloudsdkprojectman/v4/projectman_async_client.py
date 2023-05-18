@@ -793,6 +793,65 @@ class ProjectManAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_templates_async(self, request):
+        """查询项目模板
+
+        查询项目模板
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListTemplates
+        :type request: :class:`huaweicloudsdkprojectman.v4.ListTemplatesRequest`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.ListTemplatesResponse`
+        """
+        return self._list_templates_with_http_info(request)
+
+    def _list_templates_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+        if 'tracker_id' in local_var_params:
+            query_params.append(('tracker_id', local_var_params['tracker_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v4/projects/{project_id}/templates',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListTemplatesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_workitem_status_records_v4_async(self, request):
         """查询看板项目下工作项的状态历史记录
 
@@ -3666,6 +3725,63 @@ class ProjectManAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ListStatusStatisticResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def search_issues_async(self, request):
+        """高级查询我的待办工作项
+
+        高级查询我的待办工作项
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for SearchIssues
+        :type request: :class:`huaweicloudsdkprojectman.v4.SearchIssuesRequest`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.SearchIssuesResponse`
+        """
+        return self._search_issues_with_http_info(request)
+
+    def _search_issues_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v4/issues',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='SearchIssuesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

@@ -29,7 +29,7 @@ class RunQueryAudioModerationJobRequest:
 
         The model defined in huaweicloud sdk
 
-        :param job_id: 
+        :param job_id: 创建作业成功时，接口返回的job_id。
         :type job_id: str
         """
         
@@ -44,6 +44,8 @@ class RunQueryAudioModerationJobRequest:
     def job_id(self):
         """Gets the job_id of this RunQueryAudioModerationJobRequest.
 
+        创建作业成功时，接口返回的job_id。
+
         :return: The job_id of this RunQueryAudioModerationJobRequest.
         :rtype: str
         """
@@ -52,6 +54,8 @@ class RunQueryAudioModerationJobRequest:
     @job_id.setter
     def job_id(self, job_id):
         """Sets the job_id of this RunQueryAudioModerationJobRequest.
+
+        创建作业成功时，接口返回的job_id。
 
         :param job_id: The job_id of this RunQueryAudioModerationJobRequest.
         :type job_id: str

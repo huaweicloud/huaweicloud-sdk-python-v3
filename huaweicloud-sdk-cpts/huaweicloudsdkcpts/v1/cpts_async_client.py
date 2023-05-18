@@ -649,7 +649,7 @@ class CptsAsyncClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v1/cpts/{project_id}/stress/agents',
+            resource_path='/v1/{project_id}/stress/agents',
             method='POST',
             path_params=path_params,
             query_params=query_params,
@@ -664,9 +664,9 @@ class CptsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def show_history_run_info_async(self, request):
-        """查询CPTS任务离线报告列表
+        """查询PerfTest任务离线报告列表
 
-        查询CPTS任务离线报告列表
+        查询PerfTest任务离线报告列表
         
         Please refer to HUAWEI cloud API Explorer for details.
 

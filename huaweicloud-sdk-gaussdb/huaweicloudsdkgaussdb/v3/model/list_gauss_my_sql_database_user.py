@@ -19,16 +19,18 @@ class ListGaussMySqlDatabaseUser:
     openapi_types = {
         'name': 'str',
         'host': 'str',
+        'comment': 'str',
         'databases': 'list[ListGaussMySqlDatabase]'
     }
 
     attribute_map = {
         'name': 'name',
         'host': 'host',
+        'comment': 'comment',
         'databases': 'databases'
     }
 
-    def __init__(self, name=None, host=None, databases=None):
+    def __init__(self, name=None, host=None, comment=None, databases=None):
         """ListGaussMySqlDatabaseUser
 
         The model defined in huaweicloud sdk
@@ -37,6 +39,8 @@ class ListGaussMySqlDatabaseUser:
         :type name: str
         :param host: 主机地址。
         :type host: str
+        :param comment: 数据库用户备注。
+        :type comment: str
         :param databases: 数据库列表。
         :type databases: list[:class:`huaweicloudsdkgaussdb.v3.ListGaussMySqlDatabase`]
         """
@@ -45,6 +49,7 @@ class ListGaussMySqlDatabaseUser:
 
         self._name = None
         self._host = None
+        self._comment = None
         self._databases = None
         self.discriminator = None
 
@@ -52,6 +57,8 @@ class ListGaussMySqlDatabaseUser:
             self.name = name
         if host is not None:
             self.host = host
+        if comment is not None:
+            self.comment = comment
         if databases is not None:
             self.databases = databases
 
@@ -98,6 +105,28 @@ class ListGaussMySqlDatabaseUser:
         :type host: str
         """
         self._host = host
+
+    @property
+    def comment(self):
+        """Gets the comment of this ListGaussMySqlDatabaseUser.
+
+        数据库用户备注。
+
+        :return: The comment of this ListGaussMySqlDatabaseUser.
+        :rtype: str
+        """
+        return self._comment
+
+    @comment.setter
+    def comment(self, comment):
+        """Sets the comment of this ListGaussMySqlDatabaseUser.
+
+        数据库用户备注。
+
+        :param comment: The comment of this ListGaussMySqlDatabaseUser.
+        :type comment: str
+        """
+        self._comment = comment
 
     @property
     def databases(self):

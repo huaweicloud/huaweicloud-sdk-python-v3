@@ -41,7 +41,7 @@ class HttpGetBody:
 
         :param https_status: HTTPS证书是否启用。（on：开启，off：关闭）
         :type https_status: str
-        :param certificate_name: 证书名字。（长度限制为3-32字符）。当证书开启时必返回该字段。
+        :param certificate_name: 证书名字。（长度限制为3-64字符）。当证书开启时必返回该字段。
         :type certificate_name: str
         :param certificate_value: HTTPS协议使用的证书内容，当证书开启时必返回该字段。取值范围：PEM编码格式。
         :type certificate_value: str
@@ -102,7 +102,7 @@ class HttpGetBody:
     def certificate_name(self):
         """Gets the certificate_name of this HttpGetBody.
 
-        证书名字。（长度限制为3-32字符）。当证书开启时必返回该字段。
+        证书名字。（长度限制为3-64字符）。当证书开启时必返回该字段。
 
         :return: The certificate_name of this HttpGetBody.
         :rtype: str
@@ -113,7 +113,7 @@ class HttpGetBody:
     def certificate_name(self, certificate_name):
         """Sets the certificate_name of this HttpGetBody.
 
-        证书名字。（长度限制为3-32字符）。当证书开启时必返回该字段。
+        证书名字。（长度限制为3-64字符）。当证书开启时必返回该字段。
 
         :param certificate_name: The certificate_name of this HttpGetBody.
         :type certificate_name: str

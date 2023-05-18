@@ -19,16 +19,18 @@ class ListGaussMysqlDatabaseInfo:
     openapi_types = {
         'name': 'str',
         'charset': 'str',
+        'comment': 'str',
         'users': 'list[GaussMySqlDatabaseInfo]'
     }
 
     attribute_map = {
         'name': 'name',
         'charset': 'charset',
+        'comment': 'comment',
         'users': 'users'
     }
 
-    def __init__(self, name=None, charset=None, users=None):
+    def __init__(self, name=None, charset=None, comment=None, users=None):
         """ListGaussMysqlDatabaseInfo
 
         The model defined in huaweicloud sdk
@@ -37,6 +39,8 @@ class ListGaussMysqlDatabaseInfo:
         :type name: str
         :param charset: 数据库使用的字符集，如utf8mb4、gbk等。
         :type charset: str
+        :param comment: 数据库备注。
+        :type comment: str
         :param users: 已授权数据库用户列表。
         :type users: list[:class:`huaweicloudsdkgaussdb.v3.GaussMySqlDatabaseInfo`]
         """
@@ -45,6 +49,7 @@ class ListGaussMysqlDatabaseInfo:
 
         self._name = None
         self._charset = None
+        self._comment = None
         self._users = None
         self.discriminator = None
 
@@ -52,6 +57,8 @@ class ListGaussMysqlDatabaseInfo:
             self.name = name
         if charset is not None:
             self.charset = charset
+        if comment is not None:
+            self.comment = comment
         if users is not None:
             self.users = users
 
@@ -98,6 +105,28 @@ class ListGaussMysqlDatabaseInfo:
         :type charset: str
         """
         self._charset = charset
+
+    @property
+    def comment(self):
+        """Gets the comment of this ListGaussMysqlDatabaseInfo.
+
+        数据库备注。
+
+        :return: The comment of this ListGaussMysqlDatabaseInfo.
+        :rtype: str
+        """
+        return self._comment
+
+    @comment.setter
+    def comment(self, comment):
+        """Sets the comment of this ListGaussMysqlDatabaseInfo.
+
+        数据库备注。
+
+        :param comment: The comment of this ListGaussMysqlDatabaseInfo.
+        :type comment: str
+        """
+        self._comment = comment
 
     @property
     def users(self):

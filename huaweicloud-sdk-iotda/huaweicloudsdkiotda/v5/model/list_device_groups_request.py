@@ -22,7 +22,9 @@ class ListDeviceGroupsRequest:
         'marker': 'str',
         'offset': 'int',
         'last_modified_time': 'str',
-        'app_id': 'str'
+        'app_id': 'str',
+        'group_type': 'str',
+        'name': 'str'
     }
 
     attribute_map = {
@@ -31,10 +33,12 @@ class ListDeviceGroupsRequest:
         'marker': 'marker',
         'offset': 'offset',
         'last_modified_time': 'last_modified_time',
-        'app_id': 'app_id'
+        'app_id': 'app_id',
+        'group_type': 'group_type',
+        'name': 'name'
     }
 
-    def __init__(self, instance_id=None, limit=None, marker=None, offset=None, last_modified_time=None, app_id=None):
+    def __init__(self, instance_id=None, limit=None, marker=None, offset=None, last_modified_time=None, app_id=None, group_type=None, name=None):
         """ListDeviceGroupsRequest
 
         The model defined in huaweicloud sdk
@@ -51,6 +55,10 @@ class ListDeviceGroupsRequest:
         :type last_modified_time: str
         :param app_id: **参数说明**：资源空间ID。此参数为非必选参数，存在多资源空间的用户需要使用该接口时，可以携带该参数查询指定资源空间下的产品列表，不携带该参数则会查询该用户下所有产品列表。 **取值范围**：长度不超过36，只允许字母、数字、下划线（_）、连接符（-）的组合。
         :type app_id: str
+        :param group_type: **参数说明**：设备组类型，默认为静态设备组；当设备组类型为动态设备组时，需要填写动态设备组规则
+        :type group_type: str
+        :param name: **参数说明**：设备组名称，单个资源空间下不可重复。 **取值范围**：长度不超过64，只允许中文、字母、数字、以及_? &#39;#().,&amp;%@!-等字符的组合。
+        :type name: str
         """
         
         
@@ -61,6 +69,8 @@ class ListDeviceGroupsRequest:
         self._offset = None
         self._last_modified_time = None
         self._app_id = None
+        self._group_type = None
+        self._name = None
         self.discriminator = None
 
         if instance_id is not None:
@@ -75,6 +85,10 @@ class ListDeviceGroupsRequest:
             self.last_modified_time = last_modified_time
         if app_id is not None:
             self.app_id = app_id
+        if group_type is not None:
+            self.group_type = group_type
+        if name is not None:
+            self.name = name
 
     @property
     def instance_id(self):
@@ -207,6 +221,50 @@ class ListDeviceGroupsRequest:
         :type app_id: str
         """
         self._app_id = app_id
+
+    @property
+    def group_type(self):
+        """Gets the group_type of this ListDeviceGroupsRequest.
+
+        **参数说明**：设备组类型，默认为静态设备组；当设备组类型为动态设备组时，需要填写动态设备组规则
+
+        :return: The group_type of this ListDeviceGroupsRequest.
+        :rtype: str
+        """
+        return self._group_type
+
+    @group_type.setter
+    def group_type(self, group_type):
+        """Sets the group_type of this ListDeviceGroupsRequest.
+
+        **参数说明**：设备组类型，默认为静态设备组；当设备组类型为动态设备组时，需要填写动态设备组规则
+
+        :param group_type: The group_type of this ListDeviceGroupsRequest.
+        :type group_type: str
+        """
+        self._group_type = group_type
+
+    @property
+    def name(self):
+        """Gets the name of this ListDeviceGroupsRequest.
+
+        **参数说明**：设备组名称，单个资源空间下不可重复。 **取值范围**：长度不超过64，只允许中文、字母、数字、以及_? '#().,&%@!-等字符的组合。
+
+        :return: The name of this ListDeviceGroupsRequest.
+        :rtype: str
+        """
+        return self._name
+
+    @name.setter
+    def name(self, name):
+        """Sets the name of this ListDeviceGroupsRequest.
+
+        **参数说明**：设备组名称，单个资源空间下不可重复。 **取值范围**：长度不超过64，只允许中文、字母、数字、以及_? '#().,&%@!-等字符的组合。
+
+        :param name: The name of this ListDeviceGroupsRequest.
+        :type name: str
+        """
+        self._name = name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -37,7 +37,7 @@ class TextDetectionResultDetail:
 
         :param suggestion: 审核结果是否通过。  block：包含敏感信息，不通过  pass：不包含敏感信息，通过  review：需要人工复检
         :type suggestion: str
-        :param label: 检测结果的标签。  支持label列表如下：  politics: 涉政  terrorism: 暴恐  porn: 色情  ban: 违禁  abuse: 辱骂  ad: 广告  ad_law: 广告法  meaningless: ⽆意义  customized：自定义（命中自定义词库中的关键词）
+        :param label: 检测结果的标签。  支持label列表如下：  politics: 涉政  terrorism: 暴恐  porn: 色情  ban: 违禁  abuse: 辱骂  ad: 广告  ad_law: 广告法  customized：自定义（命中自定义词库中的关键词）
         :type label: str
         :param confidence: 置信度，取值范围 0-1，值越⼤，可信度越⾼。
         :type confidence: float
@@ -88,7 +88,7 @@ class TextDetectionResultDetail:
     def label(self):
         """Gets the label of this TextDetectionResultDetail.
 
-        检测结果的标签。  支持label列表如下：  politics: 涉政  terrorism: 暴恐  porn: 色情  ban: 违禁  abuse: 辱骂  ad: 广告  ad_law: 广告法  meaningless: ⽆意义  customized：自定义（命中自定义词库中的关键词）
+        检测结果的标签。  支持label列表如下：  politics: 涉政  terrorism: 暴恐  porn: 色情  ban: 违禁  abuse: 辱骂  ad: 广告  ad_law: 广告法  customized：自定义（命中自定义词库中的关键词）
 
         :return: The label of this TextDetectionResultDetail.
         :rtype: str
@@ -99,7 +99,7 @@ class TextDetectionResultDetail:
     def label(self, label):
         """Sets the label of this TextDetectionResultDetail.
 
-        检测结果的标签。  支持label列表如下：  politics: 涉政  terrorism: 暴恐  porn: 色情  ban: 违禁  abuse: 辱骂  ad: 广告  ad_law: 广告法  meaningless: ⽆意义  customized：自定义（命中自定义词库中的关键词）
+        检测结果的标签。  支持label列表如下：  politics: 涉政  terrorism: 暴恐  porn: 色情  ban: 违禁  abuse: 辱骂  ad: 广告  ad_law: 广告法  customized：自定义（命中自定义词库中的关键词）
 
         :param label: The label of this TextDetectionResultDetail.
         :type label: str

@@ -549,6 +549,68 @@ class DwsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def check_disaster_name(self, request):
+        """检查容灾名称
+
+        检查容灾名称
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CheckDisasterName
+        :type request: :class:`huaweicloudsdkdws.v2.CheckDisasterNameRequest`
+        :rtype: :class:`huaweicloudsdkdws.v2.CheckDisasterNameResponse`
+        """
+        return self._check_disaster_name_with_http_info(request)
+
+    def _check_disaster_name_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'dr_name' in local_var_params:
+            query_params.append(('dr_name', local_var_params['dr_name']))
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+        if 'standby_region' in local_var_params:
+            query_params.append(('standby_region', local_var_params['standby_region']))
+        if 'standby_project_id' in local_var_params:
+            query_params.append(('standby_project_id', local_var_params['standby_project_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/disaster-recovery/check-name',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CheckDisasterNameResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def copy_snapshot(self, request):
         """复制快照
 
@@ -2324,6 +2386,78 @@ class DwsClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ListAvailabilityZonesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_available_disaster_clusters(self, request):
+        """查询可用容灾集群列表
+
+        查询可用容灾集群列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListAvailableDisasterClusters
+        :type request: :class:`huaweicloudsdkdws.v2.ListAvailableDisasterClustersRequest`
+        :rtype: :class:`huaweicloudsdkdws.v2.ListAvailableDisasterClustersResponse`
+        """
+        return self._list_available_disaster_clusters_with_http_info(request)
+
+    def _list_available_disaster_clusters_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'primary_cluster_id' in local_var_params:
+            query_params.append(('primary_cluster_id', local_var_params['primary_cluster_id']))
+        if 'primary_spec_id' in local_var_params:
+            query_params.append(('primary_spec_id', local_var_params['primary_spec_id']))
+        if 'primary_cluster_dn_num' in local_var_params:
+            query_params.append(('primary_cluster_dn_num', local_var_params['primary_cluster_dn_num']))
+        if 'standby_region' in local_var_params:
+            query_params.append(('standby_region', local_var_params['standby_region']))
+        if 'standby_project_id' in local_var_params:
+            query_params.append(('standby_project_id', local_var_params['standby_project_id']))
+        if 'standby_az_code' in local_var_params:
+            query_params.append(('standby_az_code', local_var_params['standby_az_code']))
+        if 'dr_type' in local_var_params:
+            query_params.append(('dr_type', local_var_params['dr_type']))
+        if 'datastore_type' in local_var_params:
+            query_params.append(('datastore_type', local_var_params['datastore_type']))
+        if 'datastore_version' in local_var_params:
+            query_params.append(('datastore_version', local_var_params['datastore_version']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/disaster-recovery-clusters',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListAvailableDisasterClustersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -4447,6 +4581,62 @@ class DwsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def show_disaster_detail(self, request):
+        """查询容灾详情
+
+        查询容灾详情。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowDisasterDetail
+        :type request: :class:`huaweicloudsdkdws.v2.ShowDisasterDetailRequest`
+        :rtype: :class:`huaweicloudsdkdws.v2.ShowDisasterDetailResponse`
+        """
+        return self._show_disaster_detail_with_http_info(request)
+
+    def _show_disaster_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'disaster_recovery_id' in local_var_params:
+            path_params['disaster_recovery_id'] = local_var_params['disaster_recovery_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/disaster-recovery/{disaster_recovery_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowDisasterDetailResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def shrink_cluster(self, request):
         """集群缩容
 
@@ -4962,6 +5152,64 @@ class DwsClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='UpdateDataSourceResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_disaster_info(self, request):
+        """更新容灾配置
+
+        更新容灾配置
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateDisasterInfo
+        :type request: :class:`huaweicloudsdkdws.v2.UpdateDisasterInfoRequest`
+        :rtype: :class:`huaweicloudsdkdws.v2.UpdateDisasterInfoResponse`
+        """
+        return self._update_disaster_info_with_http_info(request)
+
+    def _update_disaster_info_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'disaster_recovery_id' in local_var_params:
+            path_params['disaster_recovery_id'] = local_var_params['disaster_recovery_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/disaster-recovery/{disaster_recovery_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateDisasterInfoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

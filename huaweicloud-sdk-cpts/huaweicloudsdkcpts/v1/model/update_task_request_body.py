@@ -24,7 +24,7 @@ class UpdateTaskRequestBody:
         'run_status': 'int',
         'run_type': 'int',
         'task_run_info': 'TaskRunInfo',
-        'case_list': 'list[CaseInfo]',
+        'case_list': 'list[CaseInfoDetail]',
         'operate_mode': 'int',
         'bench_concurrent': 'int',
         'related_temp_running_data': 'list[RelatedTempRunningData]'
@@ -64,7 +64,7 @@ class UpdateTaskRequestBody:
         :param task_run_info: 
         :type task_run_info: :class:`huaweicloudsdkcpts.v1.TaskRunInfo`
         :param case_list: case_list
-        :type case_list: list[:class:`huaweicloudsdkcpts.v1.CaseInfo`]
+        :type case_list: list[:class:`huaweicloudsdkcpts.v1.CaseInfoDetail`]
         :param operate_mode: operate_mode
         :type operate_mode: int
         :param bench_concurrent: bench_concurrent
@@ -265,7 +265,7 @@ class UpdateTaskRequestBody:
         case_list
 
         :return: The case_list of this UpdateTaskRequestBody.
-        :rtype: list[:class:`huaweicloudsdkcpts.v1.CaseInfo`]
+        :rtype: list[:class:`huaweicloudsdkcpts.v1.CaseInfoDetail`]
         """
         return self._case_list
 
@@ -276,7 +276,7 @@ class UpdateTaskRequestBody:
         case_list
 
         :param case_list: The case_list of this UpdateTaskRequestBody.
-        :type case_list: list[:class:`huaweicloudsdkcpts.v1.CaseInfo`]
+        :type case_list: list[:class:`huaweicloudsdkcpts.v1.CaseInfoDetail`]
         """
         self._case_list = case_list
 

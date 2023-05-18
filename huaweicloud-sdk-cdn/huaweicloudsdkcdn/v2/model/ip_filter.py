@@ -33,7 +33,7 @@ class IpFilter:
 
         :param type: IP黑白名单类型 off：关闭IP黑白名单; black：IP黑名单; white：IP白名单;
         :type type: str
-        :param value: 配置IP黑白名单，当type&#x3D;off时，非必传。多条规则用“,”分割。
+        :param value: 配置IP黑白名单，当type&#x3D;off时，非必传。多条规则用“,”分割,不支持带通配符的地址，如192.168.0.*。
         :type value: str
         """
         
@@ -73,7 +73,7 @@ class IpFilter:
     def value(self):
         """Gets the value of this IpFilter.
 
-        配置IP黑白名单，当type=off时，非必传。多条规则用“,”分割。
+        配置IP黑白名单，当type=off时，非必传。多条规则用“,”分割,不支持带通配符的地址，如192.168.0.*。
 
         :return: The value of this IpFilter.
         :rtype: str
@@ -84,7 +84,7 @@ class IpFilter:
     def value(self, value):
         """Sets the value of this IpFilter.
 
-        配置IP黑白名单，当type=off时，非必传。多条规则用“,”分割。
+        配置IP黑白名单，当type=off时，非必传。多条规则用“,”分割,不支持带通配符的地址，如192.168.0.*。
 
         :param value: The value of this IpFilter.
         :type value: str

@@ -21,7 +21,8 @@ class UpdateTaskStatusRequestBody:
         'cluster_type': 'str',
         'without_package': 'int',
         'network_info': 'NetworkInfo',
-        'status': 'int'
+        'status': 'int',
+        'enterprise_project_id': 'str'
     }
 
     attribute_map = {
@@ -29,10 +30,11 @@ class UpdateTaskStatusRequestBody:
         'cluster_type': 'cluster_type',
         'without_package': 'without_package',
         'network_info': 'network_info',
-        'status': 'status'
+        'status': 'status',
+        'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, cluster_id=None, cluster_type=None, without_package=None, network_info=None, status=None):
+    def __init__(self, cluster_id=None, cluster_type=None, without_package=None, network_info=None, status=None, enterprise_project_id=None):
         """UpdateTaskStatusRequestBody
 
         The model defined in huaweicloud sdk
@@ -47,6 +49,8 @@ class UpdateTaskStatusRequestBody:
         :type network_info: :class:`huaweicloudsdkcpts.v1.NetworkInfo`
         :param status: status
         :type status: int
+        :param enterprise_project_id: 企业项目id
+        :type enterprise_project_id: str
         """
         
         
@@ -56,6 +60,7 @@ class UpdateTaskStatusRequestBody:
         self._without_package = None
         self._network_info = None
         self._status = None
+        self._enterprise_project_id = None
         self.discriminator = None
 
         self.cluster_id = cluster_id
@@ -63,6 +68,8 @@ class UpdateTaskStatusRequestBody:
         self.without_package = without_package
         self.network_info = network_info
         self.status = status
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
 
     @property
     def cluster_id(self):
@@ -169,6 +176,28 @@ class UpdateTaskStatusRequestBody:
         :type status: int
         """
         self._status = status
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this UpdateTaskStatusRequestBody.
+
+        企业项目id
+
+        :return: The enterprise_project_id of this UpdateTaskStatusRequestBody.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this UpdateTaskStatusRequestBody.
+
+        企业项目id
+
+        :param enterprise_project_id: The enterprise_project_id of this UpdateTaskStatusRequestBody.
+        :type enterprise_project_id: str
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -29,6 +29,7 @@ class SearchDevice:
         'device_sdk_version': 'str',
         'product_id': 'str',
         'product_name': 'str',
+        'groups': 'object',
         'status': 'str',
         'tags': 'object',
         'marker': 'str'
@@ -47,12 +48,13 @@ class SearchDevice:
         'device_sdk_version': 'device_sdk_version',
         'product_id': 'product_id',
         'product_name': 'product_name',
+        'groups': 'groups',
         'status': 'status',
         'tags': 'tags',
         'marker': 'marker'
     }
 
-    def __init__(self, app_id=None, app_name=None, device_id=None, node_id=None, gateway_id=None, device_name=None, node_type=None, fw_version=None, sw_version=None, device_sdk_version=None, product_id=None, product_name=None, status=None, tags=None, marker=None):
+    def __init__(self, app_id=None, app_name=None, device_id=None, node_id=None, gateway_id=None, device_name=None, node_type=None, fw_version=None, sw_version=None, device_sdk_version=None, product_id=None, product_name=None, groups=None, status=None, tags=None, marker=None):
         """SearchDevice
 
         The model defined in huaweicloud sdk
@@ -81,6 +83,8 @@ class SearchDevice:
         :type product_id: str
         :param product_name: 设备关联的产品名称。
         :type product_name: str
+        :param groups: 设备组列表。
+        :type groups: object
         :param status: 设备的状态。 - ONLINE：设备在线。 - OFFLINE：设备离线。 - ABNORMAL：设备异常。 - INACTIVE：设备未激活。 - FROZEN：设备冻结。
         :type status: str
         :param tags: 设备的标签列表。
@@ -103,6 +107,7 @@ class SearchDevice:
         self._device_sdk_version = None
         self._product_id = None
         self._product_name = None
+        self._groups = None
         self._status = None
         self._tags = None
         self._marker = None
@@ -132,6 +137,8 @@ class SearchDevice:
             self.product_id = product_id
         if product_name is not None:
             self.product_name = product_name
+        if groups is not None:
+            self.groups = groups
         if status is not None:
             self.status = status
         if tags is not None:
@@ -402,6 +409,28 @@ class SearchDevice:
         :type product_name: str
         """
         self._product_name = product_name
+
+    @property
+    def groups(self):
+        """Gets the groups of this SearchDevice.
+
+        设备组列表。
+
+        :return: The groups of this SearchDevice.
+        :rtype: object
+        """
+        return self._groups
+
+    @groups.setter
+    def groups(self, groups):
+        """Sets the groups of this SearchDevice.
+
+        设备组列表。
+
+        :param groups: The groups of this SearchDevice.
+        :type groups: object
+        """
+        self._groups = groups
 
     @property
     def status(self):

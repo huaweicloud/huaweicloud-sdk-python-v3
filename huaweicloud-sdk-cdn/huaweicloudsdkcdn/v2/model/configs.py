@@ -35,6 +35,13 @@ class Configs:
         'origin_range_status': 'str',
         'user_agent_filter': 'UserAgentFilter',
         'origin_request_url_rewrite': 'list[OriginRequestUrlRewrite]',
+        'flexible_origin': 'list[FlexibleOrigins]',
+        'slice_etag_status': 'str',
+        'origin_receive_timeout': 'int',
+        'remote_auth': 'CommonRemoteAuth',
+        'websocket': 'WebSocketSeek',
+        'video_seek': 'VideoSeek',
+        'request_limit_rules': 'list[RequestLimitRules]',
         'error_code_redirect_rules': 'list[ErrorCodeRedirectRules]'
     }
 
@@ -57,10 +64,17 @@ class Configs:
         'origin_range_status': 'origin_range_status',
         'user_agent_filter': 'user_agent_filter',
         'origin_request_url_rewrite': 'origin_request_url_rewrite',
+        'flexible_origin': 'flexible_origin',
+        'slice_etag_status': 'slice_etag_status',
+        'origin_receive_timeout': 'origin_receive_timeout',
+        'remote_auth': 'remote_auth',
+        'websocket': 'websocket',
+        'video_seek': 'video_seek',
+        'request_limit_rules': 'request_limit_rules',
         'error_code_redirect_rules': 'error_code_redirect_rules'
     }
 
-    def __init__(self, origin_request_header=None, http_response_header=None, url_auth=None, https=None, sources=None, origin_protocol=None, origin_follow302_status=None, cache_rules=None, ip_filter=None, referer=None, force_redirect=None, compress=None, cache_url_parameter_filter=None, ipv6_accelerate=None, error_code_cache=None, origin_range_status=None, user_agent_filter=None, origin_request_url_rewrite=None, error_code_redirect_rules=None):
+    def __init__(self, origin_request_header=None, http_response_header=None, url_auth=None, https=None, sources=None, origin_protocol=None, origin_follow302_status=None, cache_rules=None, ip_filter=None, referer=None, force_redirect=None, compress=None, cache_url_parameter_filter=None, ipv6_accelerate=None, error_code_cache=None, origin_range_status=None, user_agent_filter=None, origin_request_url_rewrite=None, flexible_origin=None, slice_etag_status=None, origin_receive_timeout=None, remote_auth=None, websocket=None, video_seek=None, request_limit_rules=None, error_code_redirect_rules=None):
         """Configs
 
         The model defined in huaweicloud sdk
@@ -93,7 +107,7 @@ class Configs:
         :type cache_url_parameter_filter: :class:`huaweicloudsdkcdn.v2.CacheUrlParameterFilter`
         :param ipv6_accelerate: ipv6设置（1：打开；0：关闭）
         :type ipv6_accelerate: int
-        :param error_code_cache: 状态码缓存时间
+        :param error_code_cache: 状态码缓存时间。
         :type error_code_cache: list[:class:`huaweicloudsdkcdn.v2.ErrorCodeCache`]
         :param origin_range_status: Range回源，即分片回源 开启Range回源的前提是您的源站支持Range请求，即HTTP请求头中包含Range字段，否则可能导致回源失败。 开启: on 关闭: off
         :type origin_range_status: str
@@ -101,6 +115,20 @@ class Configs:
         :type user_agent_filter: :class:`huaweicloudsdkcdn.v2.UserAgentFilter`
         :param origin_request_url_rewrite: 改写回源URL，最多配置20条。
         :type origin_request_url_rewrite: list[:class:`huaweicloudsdkcdn.v2.OriginRequestUrlRewrite`]
+        :param flexible_origin: 高级回源，最多配置20条。
+        :type flexible_origin: list[:class:`huaweicloudsdkcdn.v2.FlexibleOrigins`]
+        :param slice_etag_status: 回源是否校验ETag（on：开启，off：关闭）。
+        :type slice_etag_status: str
+        :param origin_receive_timeout: 回源超时时间，范围:5-60，单位：秒。
+        :type origin_receive_timeout: int
+        :param remote_auth: 
+        :type remote_auth: :class:`huaweicloudsdkcdn.v2.CommonRemoteAuth`
+        :param websocket: 
+        :type websocket: :class:`huaweicloudsdkcdn.v2.WebSocketSeek`
+        :param video_seek: 
+        :type video_seek: :class:`huaweicloudsdkcdn.v2.VideoSeek`
+        :param request_limit_rules: 请求限速配置。
+        :type request_limit_rules: list[:class:`huaweicloudsdkcdn.v2.RequestLimitRules`]
         :param error_code_redirect_rules: 自定义错误页面
         :type error_code_redirect_rules: list[:class:`huaweicloudsdkcdn.v2.ErrorCodeRedirectRules`]
         """
@@ -125,6 +153,13 @@ class Configs:
         self._origin_range_status = None
         self._user_agent_filter = None
         self._origin_request_url_rewrite = None
+        self._flexible_origin = None
+        self._slice_etag_status = None
+        self._origin_receive_timeout = None
+        self._remote_auth = None
+        self._websocket = None
+        self._video_seek = None
+        self._request_limit_rules = None
         self._error_code_redirect_rules = None
         self.discriminator = None
 
@@ -164,6 +199,20 @@ class Configs:
             self.user_agent_filter = user_agent_filter
         if origin_request_url_rewrite is not None:
             self.origin_request_url_rewrite = origin_request_url_rewrite
+        if flexible_origin is not None:
+            self.flexible_origin = flexible_origin
+        if slice_etag_status is not None:
+            self.slice_etag_status = slice_etag_status
+        if origin_receive_timeout is not None:
+            self.origin_receive_timeout = origin_receive_timeout
+        if remote_auth is not None:
+            self.remote_auth = remote_auth
+        if websocket is not None:
+            self.websocket = websocket
+        if video_seek is not None:
+            self.video_seek = video_seek
+        if request_limit_rules is not None:
+            self.request_limit_rules = request_limit_rules
         if error_code_redirect_rules is not None:
             self.error_code_redirect_rules = error_code_redirect_rules
 
@@ -451,7 +500,7 @@ class Configs:
     def error_code_cache(self):
         """Gets the error_code_cache of this Configs.
 
-        状态码缓存时间
+        状态码缓存时间。
 
         :return: The error_code_cache of this Configs.
         :rtype: list[:class:`huaweicloudsdkcdn.v2.ErrorCodeCache`]
@@ -462,7 +511,7 @@ class Configs:
     def error_code_cache(self, error_code_cache):
         """Sets the error_code_cache of this Configs.
 
-        状态码缓存时间
+        状态码缓存时间。
 
         :param error_code_cache: The error_code_cache of this Configs.
         :type error_code_cache: list[:class:`huaweicloudsdkcdn.v2.ErrorCodeCache`]
@@ -530,6 +579,148 @@ class Configs:
         :type origin_request_url_rewrite: list[:class:`huaweicloudsdkcdn.v2.OriginRequestUrlRewrite`]
         """
         self._origin_request_url_rewrite = origin_request_url_rewrite
+
+    @property
+    def flexible_origin(self):
+        """Gets the flexible_origin of this Configs.
+
+        高级回源，最多配置20条。
+
+        :return: The flexible_origin of this Configs.
+        :rtype: list[:class:`huaweicloudsdkcdn.v2.FlexibleOrigins`]
+        """
+        return self._flexible_origin
+
+    @flexible_origin.setter
+    def flexible_origin(self, flexible_origin):
+        """Sets the flexible_origin of this Configs.
+
+        高级回源，最多配置20条。
+
+        :param flexible_origin: The flexible_origin of this Configs.
+        :type flexible_origin: list[:class:`huaweicloudsdkcdn.v2.FlexibleOrigins`]
+        """
+        self._flexible_origin = flexible_origin
+
+    @property
+    def slice_etag_status(self):
+        """Gets the slice_etag_status of this Configs.
+
+        回源是否校验ETag（on：开启，off：关闭）。
+
+        :return: The slice_etag_status of this Configs.
+        :rtype: str
+        """
+        return self._slice_etag_status
+
+    @slice_etag_status.setter
+    def slice_etag_status(self, slice_etag_status):
+        """Sets the slice_etag_status of this Configs.
+
+        回源是否校验ETag（on：开启，off：关闭）。
+
+        :param slice_etag_status: The slice_etag_status of this Configs.
+        :type slice_etag_status: str
+        """
+        self._slice_etag_status = slice_etag_status
+
+    @property
+    def origin_receive_timeout(self):
+        """Gets the origin_receive_timeout of this Configs.
+
+        回源超时时间，范围:5-60，单位：秒。
+
+        :return: The origin_receive_timeout of this Configs.
+        :rtype: int
+        """
+        return self._origin_receive_timeout
+
+    @origin_receive_timeout.setter
+    def origin_receive_timeout(self, origin_receive_timeout):
+        """Sets the origin_receive_timeout of this Configs.
+
+        回源超时时间，范围:5-60，单位：秒。
+
+        :param origin_receive_timeout: The origin_receive_timeout of this Configs.
+        :type origin_receive_timeout: int
+        """
+        self._origin_receive_timeout = origin_receive_timeout
+
+    @property
+    def remote_auth(self):
+        """Gets the remote_auth of this Configs.
+
+        :return: The remote_auth of this Configs.
+        :rtype: :class:`huaweicloudsdkcdn.v2.CommonRemoteAuth`
+        """
+        return self._remote_auth
+
+    @remote_auth.setter
+    def remote_auth(self, remote_auth):
+        """Sets the remote_auth of this Configs.
+
+        :param remote_auth: The remote_auth of this Configs.
+        :type remote_auth: :class:`huaweicloudsdkcdn.v2.CommonRemoteAuth`
+        """
+        self._remote_auth = remote_auth
+
+    @property
+    def websocket(self):
+        """Gets the websocket of this Configs.
+
+        :return: The websocket of this Configs.
+        :rtype: :class:`huaweicloudsdkcdn.v2.WebSocketSeek`
+        """
+        return self._websocket
+
+    @websocket.setter
+    def websocket(self, websocket):
+        """Sets the websocket of this Configs.
+
+        :param websocket: The websocket of this Configs.
+        :type websocket: :class:`huaweicloudsdkcdn.v2.WebSocketSeek`
+        """
+        self._websocket = websocket
+
+    @property
+    def video_seek(self):
+        """Gets the video_seek of this Configs.
+
+        :return: The video_seek of this Configs.
+        :rtype: :class:`huaweicloudsdkcdn.v2.VideoSeek`
+        """
+        return self._video_seek
+
+    @video_seek.setter
+    def video_seek(self, video_seek):
+        """Sets the video_seek of this Configs.
+
+        :param video_seek: The video_seek of this Configs.
+        :type video_seek: :class:`huaweicloudsdkcdn.v2.VideoSeek`
+        """
+        self._video_seek = video_seek
+
+    @property
+    def request_limit_rules(self):
+        """Gets the request_limit_rules of this Configs.
+
+        请求限速配置。
+
+        :return: The request_limit_rules of this Configs.
+        :rtype: list[:class:`huaweicloudsdkcdn.v2.RequestLimitRules`]
+        """
+        return self._request_limit_rules
+
+    @request_limit_rules.setter
+    def request_limit_rules(self, request_limit_rules):
+        """Sets the request_limit_rules of this Configs.
+
+        请求限速配置。
+
+        :param request_limit_rules: The request_limit_rules of this Configs.
+        :type request_limit_rules: list[:class:`huaweicloudsdkcdn.v2.RequestLimitRules`]
+        """
+        self._request_limit_rules = request_limit_rules
 
     @property
     def error_code_redirect_rules(self):
