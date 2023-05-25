@@ -38,7 +38,7 @@ class ShowInstanceMessagesResponse(SdkResponse):
         :type messages: list[:class:`huaweicloudsdkkafka.v2.MessagesEntity`]
         :param total: 消息总条数。
         :type total: int
-        :param size: 消息条数。
+        :param size: 每页消息条数。
         :type size: int
         """
         
@@ -104,7 +104,7 @@ class ShowInstanceMessagesResponse(SdkResponse):
     def size(self):
         """Gets the size of this ShowInstanceMessagesResponse.
 
-        消息条数。
+        每页消息条数。
 
         :return: The size of this ShowInstanceMessagesResponse.
         :rtype: int
@@ -115,7 +115,7 @@ class ShowInstanceMessagesResponse(SdkResponse):
     def size(self, size):
         """Sets the size of this ShowInstanceMessagesResponse.
 
-        消息条数。
+        每页消息条数。
 
         :param size: The size of this ShowInstanceMessagesResponse.
         :type size: int

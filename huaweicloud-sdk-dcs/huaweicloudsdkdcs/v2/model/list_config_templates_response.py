@@ -18,7 +18,7 @@ class ListConfigTemplatesResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'template_num': 'float',
+        'template_num': 'int',
         'config_templates': 'list[ConfigTemplatesListInfo]'
     }
 
@@ -33,7 +33,7 @@ class ListConfigTemplatesResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param template_num: 模板个数。
-        :type template_num: float
+        :type template_num: int
         :param config_templates: 模板的详情数组。
         :type config_templates: list[:class:`huaweicloudsdkdcs.v2.ConfigTemplatesListInfo`]
         """
@@ -56,7 +56,7 @@ class ListConfigTemplatesResponse(SdkResponse):
         模板个数。
 
         :return: The template_num of this ListConfigTemplatesResponse.
-        :rtype: float
+        :rtype: int
         """
         return self._template_num
 
@@ -67,7 +67,7 @@ class ListConfigTemplatesResponse(SdkResponse):
         模板个数。
 
         :param template_num: The template_num of this ListConfigTemplatesResponse.
-        :type template_num: float
+        :type template_num: int
         """
         self._template_num = template_num
 

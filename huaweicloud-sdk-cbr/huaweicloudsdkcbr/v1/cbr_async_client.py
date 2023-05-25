@@ -326,6 +326,120 @@ class CbrAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def batch_update_vault_async(self, request):
+        """批量修改存储库
+
+        批量修改项目下所有存储库
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchUpdateVault
+        :type request: :class:`huaweicloudsdkcbr.v1.BatchUpdateVaultRequest`
+        :rtype: :class:`huaweicloudsdkcbr.v1.BatchUpdateVaultResponse`
+        """
+        return self._batch_update_vault_with_http_info(request)
+
+    def _batch_update_vault_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/vaults/batch-update',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='BatchUpdateVaultResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def check_agent_async(self, request):
+        """查询agent状态
+
+        检查应用一致性Agent状态
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CheckAgent
+        :type request: :class:`huaweicloudsdkcbr.v1.CheckAgentRequest`
+        :rtype: :class:`huaweicloudsdkcbr.v1.CheckAgentResponse`
+        """
+        return self._check_agent_with_http_info(request)
+
+    def _check_agent_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/agent/check',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CheckAgentResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def copy_backup_async(self, request):
         """复制备份
 
@@ -551,6 +665,63 @@ class CbrAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='CreatePolicyResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_post_paid_vault_async(self, request):
+        """创建包周期存储库
+
+        创建包周期存储库
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreatePostPaidVault
+        :type request: :class:`huaweicloudsdkcbr.v1.CreatePostPaidVaultRequest`
+        :rtype: :class:`huaweicloudsdkcbr.v1.CreatePostPaidVaultResponse`
+        """
+        return self._create_post_paid_vault_with_http_info(request)
+
+    def _create_post_paid_vault_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/vaults/order',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreatePostPaidVaultResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1078,6 +1249,63 @@ class CbrAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def import_checkpoint_async(self, request):
+        """同步备份还原点
+
+        针对vault同步备份副本
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ImportCheckpoint
+        :type request: :class:`huaweicloudsdkcbr.v1.ImportCheckpointRequest`
+        :rtype: :class:`huaweicloudsdkcbr.v1.ImportCheckpointResponse`
+        """
+        return self._import_checkpoint_with_http_info(request)
+
+    def _import_checkpoint_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/checkpoints/sync',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ImportCheckpointResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_agent_async(self, request):
         """查询客户端列表
 
@@ -1242,6 +1470,134 @@ class CbrAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_domain_projects_async(self, request):
+        """查询租户项目列表
+
+        根据指定租户名称查询项目列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListDomainProjects
+        :type request: :class:`huaweicloudsdkcbr.v1.ListDomainProjectsRequest`
+        :rtype: :class:`huaweicloudsdkcbr.v1.ListDomainProjectsResponse`
+        """
+        return self._list_domain_projects_with_http_info(request)
+
+    def _list_domain_projects_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'domain_name' in local_var_params:
+            path_params['domain_name'] = local_var_params['domain_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/domain/{domain_name}/projects',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListDomainProjectsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_external_vault_async(self, request):
+        """查询其他区域存储库列表
+
+        查询其他区域的存储库列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListExternalVault
+        :type request: :class:`huaweicloudsdkcbr.v1.ListExternalVaultRequest`
+        :rtype: :class:`huaweicloudsdkcbr.v1.ListExternalVaultResponse`
+        """
+        return self._list_external_vault_with_http_info(request)
+
+    def _list_external_vault_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'external_project_id' in local_var_params:
+            query_params.append(('external_project_id', local_var_params['external_project_id']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'protect_type' in local_var_params:
+            query_params.append(('protect_type', local_var_params['protect_type']))
+        if 'region_id' in local_var_params:
+            query_params.append(('region_id', local_var_params['region_id']))
+        if 'objcet_type' in local_var_params:
+            query_params.append(('objcet_type', local_var_params['objcet_type']))
+        if 'cloud_type' in local_var_params:
+            query_params.append(('cloud_type', local_var_params['cloud_type']))
+        if 'vault_id' in local_var_params:
+            query_params.append(('vault_id', local_var_params['vault_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/vaults/external',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListExternalVaultResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_op_logs_async(self, request):
         """查询任务列表
 
@@ -1375,6 +1731,61 @@ class CbrAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ListPoliciesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_projects_async(self, request):
+        """查询租户的项目信息
+
+        查询租户的企业项目信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListProjects
+        :type request: :class:`huaweicloudsdkcbr.v1.ListProjectsRequest`
+        :rtype: :class:`huaweicloudsdkcbr.v1.ListProjectsResponse`
+        """
+        return self._list_projects_with_http_info(request)
+
+    def _list_projects_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/region-projects',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListProjectsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1523,6 +1934,63 @@ class CbrAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ListVaultResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def migrate_domain_async(self, request):
+        """租户迁移
+
+        将CSBS/VBS资源迁移到CBR。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for MigrateDomain
+        :type request: :class:`huaweicloudsdkcbr.v1.MigrateDomainRequest`
+        :rtype: :class:`huaweicloudsdkcbr.v1.MigrateDomainResponse`
+        """
+        return self._migrate_domain_with_http_info(request)
+
+    def _migrate_domain_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/migrates',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='MigrateDomainResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1821,6 +2289,65 @@ class CbrAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def set_vault_resource_async(self, request):
+        """设置存储库资源
+
+        设置存储库资源是否自动备份
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for SetVaultResource
+        :type request: :class:`huaweicloudsdkcbr.v1.SetVaultResourceRequest`
+        :rtype: :class:`huaweicloudsdkcbr.v1.SetVaultResourceResponse`
+        """
+        return self._set_vault_resource_with_http_info(request)
+
+    def _set_vault_resource_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'vault_id' in local_var_params:
+            path_params['vault_id'] = local_var_params['vault_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/vaults/{vault_id}/set-resources',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='SetVaultResourceResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def show_agent_async(self, request):
         """查询指定客户端
 
@@ -1992,6 +2519,63 @@ class CbrAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def show_domain_async(self, request):
+        """查询租户信息
+
+        由控制台调用的内部接口，用于仅在查询共享备份时获取源project_id的域名信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowDomain
+        :type request: :class:`huaweicloudsdkcbr.v1.ShowDomainRequest`
+        :rtype: :class:`huaweicloudsdkcbr.v1.ShowDomainResponse`
+        """
+        return self._show_domain_with_http_info(request)
+
+    def _show_domain_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'source_project_id' in local_var_params:
+            path_params['source_project_id'] = local_var_params['source_project_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/domain/{source_project_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowDomainResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def show_member_detail_async(self, request):
         """获取备份成员详情
 
@@ -2119,6 +2703,120 @@ class CbrAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ShowMembersDetailResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_metadata_async(self, request):
+        """查询备份元数据
+
+        查询备份时资源的元数据
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowMetadata
+        :type request: :class:`huaweicloudsdkcbr.v1.ShowMetadataRequest`
+        :rtype: :class:`huaweicloudsdkcbr.v1.ShowMetadataResponse`
+        """
+        return self._show_metadata_with_http_info(request)
+
+    def _show_metadata_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'backup_id' in local_var_params:
+            path_params['backup_id'] = local_var_params['backup_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/backups/{backup_id}/metadata',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowMetadataResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_migrate_status_async(self, request):
+        """查询迁移
+
+        查询迁移结果
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowMigrateStatus
+        :type request: :class:`huaweicloudsdkcbr.v1.ShowMigrateStatusRequest`
+        :rtype: :class:`huaweicloudsdkcbr.v1.ShowMigrateStatusResponse`
+        """
+        return self._show_migrate_status_with_http_info(request)
+
+    def _show_migrate_status_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'all_regions' in local_var_params:
+            query_params.append(('all_regions', local_var_params['all_regions']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/migrates',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowMigrateStatusResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -2347,6 +3045,69 @@ class CbrAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ShowReplicationCapabilitiesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_storage_usage_async(self, request):
+        """查询容量统计
+
+        查询容量统计
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowStorageUsage
+        :type request: :class:`huaweicloudsdkcbr.v1.ShowStorageUsageRequest`
+        :rtype: :class:`huaweicloudsdkcbr.v1.ShowStorageUsageResponse`
+        """
+        return self._show_storage_usage_with_http_info(request)
+
+    def _show_storage_usage_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'resource_id' in local_var_params:
+            query_params.append(('resource_id', local_var_params['resource_id']))
+        if 'resource_type' in local_var_params:
+            query_params.append(('resource_type', local_var_params['resource_type']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/storage_usage',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowStorageUsageResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -2697,6 +3458,65 @@ class CbrAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def update_backup_async(self, request):
+        """更新备份
+
+        根据备份id更改备份
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateBackup
+        :type request: :class:`huaweicloudsdkcbr.v1.UpdateBackupRequest`
+        :rtype: :class:`huaweicloudsdkcbr.v1.UpdateBackupResponse`
+        """
+        return self._update_backup_with_http_info(request)
+
+    def _update_backup_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'backup_id' in local_var_params:
+            path_params['backup_id'] = local_var_params['backup_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/backups/{backup_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateBackupResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def update_member_status_async(self, request):
         """更新备份成员状态
 
@@ -2753,6 +3573,65 @@ class CbrAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='UpdateMemberStatusResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_order_async(self, request):
+        """变更
+
+        订单更新，支付cbc订单后，调用该接口更新包周期产品订单信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateOrder
+        :type request: :class:`huaweicloudsdkcbr.v1.UpdateOrderRequest`
+        :rtype: :class:`huaweicloudsdkcbr.v1.UpdateOrderResponse`
+        """
+        return self._update_order_with_http_info(request)
+
+    def _update_order_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'order_id' in local_var_params:
+            path_params['order_id'] = local_var_params['order_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/orders/{order_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateOrderResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

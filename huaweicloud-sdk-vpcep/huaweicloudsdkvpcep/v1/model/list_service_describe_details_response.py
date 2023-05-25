@@ -23,7 +23,8 @@ class ListServiceDescribeDetailsResponse(SdkResponse):
         'service_type': 'str',
         'created_at': 'str',
         'is_charge': 'bool',
-        'public_border_group': 'str'
+        'public_border_group': 'str',
+        'enable_policy': 'bool'
     }
 
     attribute_map = {
@@ -32,10 +33,11 @@ class ListServiceDescribeDetailsResponse(SdkResponse):
         'service_type': 'service_type',
         'created_at': 'created_at',
         'is_charge': 'is_charge',
-        'public_border_group': 'public_border_group'
+        'public_border_group': 'public_border_group',
+        'enable_policy': 'enable_policy'
     }
 
-    def __init__(self, id=None, service_name=None, service_type=None, created_at=None, is_charge=None, public_border_group=None):
+    def __init__(self, id=None, service_name=None, service_type=None, created_at=None, is_charge=None, public_border_group=None, enable_policy=None):
         """ListServiceDescribeDetailsResponse
 
         The model defined in huaweicloud sdk
@@ -52,6 +54,8 @@ class ListServiceDescribeDetailsResponse(SdkResponse):
         :type is_charge: bool
         :param public_border_group: 终端节点对应Pool的Public Border Group信息
         :type public_border_group: str
+        :param enable_policy: 是否开启终端节点策略。 ● false：不支持设置终端节点策略 ● true：支持设置终端节点策略 默认为false 是否开启终端节点策略。 ● false：不支持设置终端节点策略 ● true：支持设置终端节点策略 默认为false
+        :type enable_policy: bool
         """
         
         super(ListServiceDescribeDetailsResponse, self).__init__()
@@ -62,6 +66,7 @@ class ListServiceDescribeDetailsResponse(SdkResponse):
         self._created_at = None
         self._is_charge = None
         self._public_border_group = None
+        self._enable_policy = None
         self.discriminator = None
 
         if id is not None:
@@ -76,6 +81,8 @@ class ListServiceDescribeDetailsResponse(SdkResponse):
             self.is_charge = is_charge
         if public_border_group is not None:
             self.public_border_group = public_border_group
+        if enable_policy is not None:
+            self.enable_policy = enable_policy
 
     @property
     def id(self):
@@ -208,6 +215,28 @@ class ListServiceDescribeDetailsResponse(SdkResponse):
         :type public_border_group: str
         """
         self._public_border_group = public_border_group
+
+    @property
+    def enable_policy(self):
+        """Gets the enable_policy of this ListServiceDescribeDetailsResponse.
+
+        是否开启终端节点策略。 ● false：不支持设置终端节点策略 ● true：支持设置终端节点策略 默认为false 是否开启终端节点策略。 ● false：不支持设置终端节点策略 ● true：支持设置终端节点策略 默认为false
+
+        :return: The enable_policy of this ListServiceDescribeDetailsResponse.
+        :rtype: bool
+        """
+        return self._enable_policy
+
+    @enable_policy.setter
+    def enable_policy(self, enable_policy):
+        """Sets the enable_policy of this ListServiceDescribeDetailsResponse.
+
+        是否开启终端节点策略。 ● false：不支持设置终端节点策略 ● true：支持设置终端节点策略 默认为false 是否开启终端节点策略。 ● false：不支持设置终端节点策略 ● true：支持设置终端节点策略 默认为false
+
+        :param enable_policy: The enable_policy of this ListServiceDescribeDetailsResponse.
+        :type enable_policy: bool
+        """
+        self._enable_policy = enable_policy
 
     def to_dict(self):
         """Returns the model properties as a dict"""

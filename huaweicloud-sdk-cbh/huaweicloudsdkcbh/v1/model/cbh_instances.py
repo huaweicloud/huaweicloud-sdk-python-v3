@@ -29,7 +29,8 @@ class CBHInstances:
         'region': 'str',
         'hx_password': 'str',
         'bastion_type': 'str',
-        'ipv6_enable': 'bool'
+        'ipv6_enable': 'bool',
+        'enterprise_project_id': 'str'
     }
 
     attribute_map = {
@@ -45,15 +46,16 @@ class CBHInstances:
         'region': 'region',
         'hx_password': 'hx_password',
         'bastion_type': 'bastion_type',
-        'ipv6_enable': 'ipv6_enable'
+        'ipv6_enable': 'ipv6_enable',
+        'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, flavor_ref=None, instance_name=None, vpc_id=None, nics=None, public_ip=None, security_groups=None, availability_zone=None, slave_availability_zone=None, comment=None, region=None, hx_password=None, bastion_type=None, ipv6_enable=None):
+    def __init__(self, flavor_ref=None, instance_name=None, vpc_id=None, nics=None, public_ip=None, security_groups=None, availability_zone=None, slave_availability_zone=None, comment=None, region=None, hx_password=None, bastion_type=None, ipv6_enable=None, enterprise_project_id=None):
         """CBHInstances
 
         The model defined in huaweicloud sdk
 
-        :param flavor_ref: 待创建云堡垒机规格ID，例如： - cbh.basic.50 - cbh.enhance.50 已上线的规格请参见《云堡垒机产品介绍》的“服务版本差异(https://support.huaweicloud.com/productdesc-cbh/cbh_01_0010.html)”章节。
+        :param flavor_ref: 待创建云堡垒机规格ID，例如： - cbh.basic.50 - cbh.enhance.50 已上线的规格请参见《云堡垒机产品介绍》的[服务版本差异](https://support.huaweicloud.com/productdesc-cbh/cbh_01_0010.html)章节。
         :type flavor_ref: str
         :param instance_name: 云堡垒机实例名称，取值范围： - 只能由中文字符、英文字母、数字及“_”、“-”组成，且长度为[1-64]个字符。 例如：CBH-6b8e
         :type instance_name: str
@@ -67,7 +69,7 @@ class CBHInstances:
         :type security_groups: list[:class:`huaweicloudsdkcbh.v1.SecurityGroup`]
         :param availability_zone: 创建云堡垒机所在的可用区，需要指定可用区名称。 可参考[地区和终端节点](https://developer.huaweicloud.com/endpoint)获取
         :type availability_zone: str
-        :param slave_availability_zone: 创建云堡垒机所在的备机可用区，需要指定备机可用区名称。 可参考[地区和终端节点](https://developer.huaweicloud.com/endpoint)获取
+        :param slave_availability_zone: 创建云堡垒机所在的备机可用区，需要指定备机可用区名称。(当前字段未启用,填写默认值null) 可参考[地区和终端节点](https://developer.huaweicloud.com/endpoint)获取
         :type slave_availability_zone: str
         :param comment: 云堡垒机实例描述信息。
         :type comment: str
@@ -79,6 +81,8 @@ class CBHInstances:
         :type bastion_type: str
         :param ipv6_enable: 是否支持IPV6，不填默认为false。
         :type ipv6_enable: bool
+        :param enterprise_project_id: 企业项目ID，不填默认为0。
+        :type enterprise_project_id: str
         """
         
         
@@ -96,6 +100,7 @@ class CBHInstances:
         self._hx_password = None
         self._bastion_type = None
         self._ipv6_enable = None
+        self._enterprise_project_id = None
         self.discriminator = None
 
         self.flavor_ref = flavor_ref
@@ -114,12 +119,14 @@ class CBHInstances:
         self.bastion_type = bastion_type
         if ipv6_enable is not None:
             self.ipv6_enable = ipv6_enable
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
 
     @property
     def flavor_ref(self):
         """Gets the flavor_ref of this CBHInstances.
 
-        待创建云堡垒机规格ID，例如： - cbh.basic.50 - cbh.enhance.50 已上线的规格请参见《云堡垒机产品介绍》的“服务版本差异(https://support.huaweicloud.com/productdesc-cbh/cbh_01_0010.html)”章节。
+        待创建云堡垒机规格ID，例如： - cbh.basic.50 - cbh.enhance.50 已上线的规格请参见《云堡垒机产品介绍》的[服务版本差异](https://support.huaweicloud.com/productdesc-cbh/cbh_01_0010.html)章节。
 
         :return: The flavor_ref of this CBHInstances.
         :rtype: str
@@ -130,7 +137,7 @@ class CBHInstances:
     def flavor_ref(self, flavor_ref):
         """Sets the flavor_ref of this CBHInstances.
 
-        待创建云堡垒机规格ID，例如： - cbh.basic.50 - cbh.enhance.50 已上线的规格请参见《云堡垒机产品介绍》的“服务版本差异(https://support.huaweicloud.com/productdesc-cbh/cbh_01_0010.html)”章节。
+        待创建云堡垒机规格ID，例如： - cbh.basic.50 - cbh.enhance.50 已上线的规格请参见《云堡垒机产品介绍》的[服务版本差异](https://support.huaweicloud.com/productdesc-cbh/cbh_01_0010.html)章节。
 
         :param flavor_ref: The flavor_ref of this CBHInstances.
         :type flavor_ref: str
@@ -261,7 +268,7 @@ class CBHInstances:
     def slave_availability_zone(self):
         """Gets the slave_availability_zone of this CBHInstances.
 
-        创建云堡垒机所在的备机可用区，需要指定备机可用区名称。 可参考[地区和终端节点](https://developer.huaweicloud.com/endpoint)获取
+        创建云堡垒机所在的备机可用区，需要指定备机可用区名称。(当前字段未启用,填写默认值null) 可参考[地区和终端节点](https://developer.huaweicloud.com/endpoint)获取
 
         :return: The slave_availability_zone of this CBHInstances.
         :rtype: str
@@ -272,7 +279,7 @@ class CBHInstances:
     def slave_availability_zone(self, slave_availability_zone):
         """Sets the slave_availability_zone of this CBHInstances.
 
-        创建云堡垒机所在的备机可用区，需要指定备机可用区名称。 可参考[地区和终端节点](https://developer.huaweicloud.com/endpoint)获取
+        创建云堡垒机所在的备机可用区，需要指定备机可用区名称。(当前字段未启用,填写默认值null) 可参考[地区和终端节点](https://developer.huaweicloud.com/endpoint)获取
 
         :param slave_availability_zone: The slave_availability_zone of this CBHInstances.
         :type slave_availability_zone: str
@@ -388,6 +395,28 @@ class CBHInstances:
         :type ipv6_enable: bool
         """
         self._ipv6_enable = ipv6_enable
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this CBHInstances.
+
+        企业项目ID，不填默认为0。
+
+        :return: The enterprise_project_id of this CBHInstances.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this CBHInstances.
+
+        企业项目ID，不填默认为0。
+
+        :param enterprise_project_id: The enterprise_project_id of this CBHInstances.
+        :type enterprise_project_id: str
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

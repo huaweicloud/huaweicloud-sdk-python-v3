@@ -28,6 +28,7 @@ from huaweicloudsdkcce.v3.model.cluster_information import ClusterInformation
 from huaweicloudsdkcce.v3.model.cluster_information_spec import ClusterInformationSpec
 from huaweicloudsdkcce.v3.model.cluster_information_spec_host_network import ClusterInformationSpecHostNetwork
 from huaweicloudsdkcce.v3.model.cluster_metadata import ClusterMetadata
+from huaweicloudsdkcce.v3.model.cluster_metadata_for_update import ClusterMetadataForUpdate
 from huaweicloudsdkcce.v3.model.cluster_node_information import ClusterNodeInformation
 from huaweicloudsdkcce.v3.model.cluster_node_information_metadata import ClusterNodeInformationMetadata
 from huaweicloudsdkcce.v3.model.cluster_spec import ClusterSpec

@@ -20,6 +20,7 @@ class MigrateNodesSpec:
         'os': 'str',
         'extend_param': 'MigrateNodeExtendParam',
         'login': 'Login',
+        'runtime': 'Runtime',
         'nodes': 'list[NodeItem]'
     }
 
@@ -27,10 +28,11 @@ class MigrateNodesSpec:
         'os': 'os',
         'extend_param': 'extendParam',
         'login': 'login',
+        'runtime': 'runtime',
         'nodes': 'nodes'
     }
 
-    def __init__(self, os=None, extend_param=None, login=None, nodes=None):
+    def __init__(self, os=None, extend_param=None, login=None, runtime=None, nodes=None):
         """MigrateNodesSpec
 
         The model defined in huaweicloud sdk
@@ -41,6 +43,8 @@ class MigrateNodesSpec:
         :type extend_param: :class:`huaweicloudsdkcce.v3.MigrateNodeExtendParam`
         :param login: 
         :type login: :class:`huaweicloudsdkcce.v3.Login`
+        :param runtime: 
+        :type runtime: :class:`huaweicloudsdkcce.v3.Runtime`
         :param nodes: 待操作节点列表
         :type nodes: list[:class:`huaweicloudsdkcce.v3.NodeItem`]
         """
@@ -50,6 +54,7 @@ class MigrateNodesSpec:
         self._os = None
         self._extend_param = None
         self._login = None
+        self._runtime = None
         self._nodes = None
         self.discriminator = None
 
@@ -57,6 +62,8 @@ class MigrateNodesSpec:
         if extend_param is not None:
             self.extend_param = extend_param
         self.login = login
+        if runtime is not None:
+            self.runtime = runtime
         self.nodes = nodes
 
     @property
@@ -116,6 +123,24 @@ class MigrateNodesSpec:
         :type login: :class:`huaweicloudsdkcce.v3.Login`
         """
         self._login = login
+
+    @property
+    def runtime(self):
+        """Gets the runtime of this MigrateNodesSpec.
+
+        :return: The runtime of this MigrateNodesSpec.
+        :rtype: :class:`huaweicloudsdkcce.v3.Runtime`
+        """
+        return self._runtime
+
+    @runtime.setter
+    def runtime(self, runtime):
+        """Sets the runtime of this MigrateNodesSpec.
+
+        :param runtime: The runtime of this MigrateNodesSpec.
+        :type runtime: :class:`huaweicloudsdkcce.v3.Runtime`
+        """
+        self._runtime = runtime
 
     @property
     def nodes(self):

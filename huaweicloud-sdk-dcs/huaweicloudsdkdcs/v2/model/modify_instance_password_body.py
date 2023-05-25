@@ -43,10 +43,8 @@ class ModifyInstancePasswordBody:
         self._new_password = None
         self.discriminator = None
 
-        if old_password is not None:
-            self.old_password = old_password
-        if new_password is not None:
-            self.new_password = new_password
+        self.old_password = old_password
+        self.new_password = new_password
 
     @property
     def old_password(self):

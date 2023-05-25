@@ -28,7 +28,8 @@ class CreateSubnetOption:
         'secondary_dns': 'str',
         'dns_list': 'list[str]',
         'availability_zone': 'str',
-        'extra_dhcp_opts': 'list[ExtraDhcpOption]'
+        'extra_dhcp_opts': 'list[ExtraDhcpOption]',
+        'tags': 'list[str]'
     }
 
     attribute_map = {
@@ -43,10 +44,11 @@ class CreateSubnetOption:
         'secondary_dns': 'secondary_dns',
         'dns_list': 'dnsList',
         'availability_zone': 'availability_zone',
-        'extra_dhcp_opts': 'extra_dhcp_opts'
+        'extra_dhcp_opts': 'extra_dhcp_opts',
+        'tags': 'tags'
     }
 
-    def __init__(self, name=None, description=None, cidr=None, vpc_id=None, gateway_ip=None, ipv6_enable=None, dhcp_enable=None, primary_dns=None, secondary_dns=None, dns_list=None, availability_zone=None, extra_dhcp_opts=None):
+    def __init__(self, name=None, description=None, cidr=None, vpc_id=None, gateway_ip=None, ipv6_enable=None, dhcp_enable=None, primary_dns=None, secondary_dns=None, dns_list=None, availability_zone=None, extra_dhcp_opts=None, tags=None):
         """CreateSubnetOption
 
         The model defined in huaweicloud sdk
@@ -75,6 +77,8 @@ class CreateSubnetOption:
         :type availability_zone: str
         :param extra_dhcp_opts: 子网配置的NTP地址或租约时间
         :type extra_dhcp_opts: list[:class:`huaweicloudsdkvpc.v2.ExtraDhcpOption`]
+        :param tags: 功能说明：子网资源标签。创建子网时，给子网添加资源标签。 取值范围：最大10个标签, key：标签名称; value：标签值。 格式：[key*value]，每一个标签的key和value之间用*连接
+        :type tags: list[str]
         """
         
         
@@ -91,6 +95,7 @@ class CreateSubnetOption:
         self._dns_list = None
         self._availability_zone = None
         self._extra_dhcp_opts = None
+        self._tags = None
         self.discriminator = None
 
         self.name = name
@@ -113,6 +118,8 @@ class CreateSubnetOption:
             self.availability_zone = availability_zone
         if extra_dhcp_opts is not None:
             self.extra_dhcp_opts = extra_dhcp_opts
+        if tags is not None:
+            self.tags = tags
 
     @property
     def name(self):
@@ -377,6 +384,28 @@ class CreateSubnetOption:
         :type extra_dhcp_opts: list[:class:`huaweicloudsdkvpc.v2.ExtraDhcpOption`]
         """
         self._extra_dhcp_opts = extra_dhcp_opts
+
+    @property
+    def tags(self):
+        """Gets the tags of this CreateSubnetOption.
+
+        功能说明：子网资源标签。创建子网时，给子网添加资源标签。 取值范围：最大10个标签, key：标签名称; value：标签值。 格式：[key*value]，每一个标签的key和value之间用*连接
+
+        :return: The tags of this CreateSubnetOption.
+        :rtype: list[str]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this CreateSubnetOption.
+
+        功能说明：子网资源标签。创建子网时，给子网添加资源标签。 取值范围：最大10个标签, key：标签名称; value：标签值。 格式：[key*value]，每一个标签的key和value之间用*连接
+
+        :param tags: The tags of this CreateSubnetOption.
+        :type tags: list[str]
+        """
+        self._tags = tags
 
     def to_dict(self):
         """Returns the model properties as a dict"""

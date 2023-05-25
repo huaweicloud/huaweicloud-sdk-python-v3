@@ -26,7 +26,11 @@ class VaultCreate:
         'enterprise_project_id': 'str',
         'auto_bind': 'bool',
         'bind_rules': 'VaultBindRules',
-        'auto_expand': 'bool'
+        'auto_expand': 'bool',
+        'threshold': 'int',
+        'smn_notify': 'bool',
+        'backup_name_prefix': 'str',
+        'demand_billing': 'bool'
     }
 
     attribute_map = {
@@ -39,10 +43,14 @@ class VaultCreate:
         'enterprise_project_id': 'enterprise_project_id',
         'auto_bind': 'auto_bind',
         'bind_rules': 'bind_rules',
-        'auto_expand': 'auto_expand'
+        'auto_expand': 'auto_expand',
+        'threshold': 'threshold',
+        'smn_notify': 'smn_notify',
+        'backup_name_prefix': 'backup_name_prefix',
+        'demand_billing': 'demand_billing'
     }
 
-    def __init__(self, backup_policy_id=None, billing=None, description=None, name=None, resources=None, tags=None, enterprise_project_id=None, auto_bind=None, bind_rules=None, auto_expand=None):
+    def __init__(self, backup_policy_id=None, billing=None, description=None, name=None, resources=None, tags=None, enterprise_project_id=None, auto_bind=None, bind_rules=None, auto_expand=None, threshold=None, smn_notify=None, backup_name_prefix=None, demand_billing=None):
         """VaultCreate
 
         The model defined in huaweicloud sdk
@@ -65,8 +73,16 @@ class VaultCreate:
         :type auto_bind: bool
         :param bind_rules: 
         :type bind_rules: :class:`huaweicloudsdkcbr.v1.VaultBindRules`
-        :param auto_expand: 是否自动扩容。按需存储库支持自动扩容，包周期存储库不支持扩容。
+        :param auto_expand: [是否开启存储库自动扩容能力（只支持按需存储库）。](tag:hws,hws_hk) [是否开启存储库自动扩容能力。](tag:dt,ocb,tlf,sbc,fcs_vm,ctc,g42,tm,cmcc,hcso_dt)
         :type auto_expand: bool
+        :param threshold: 存储库容量阈值，已用容量占总容量达到此百分比，将根据 smn_notify 参数设置选择是否发送相关通知。 默认值为：80 最大值：100 最小值：1
+        :type threshold: int
+        :param smn_notify: 存储库smn消息通知开关。 默认值为 true。
+        :type smn_notify: bool
+        :param backup_name_prefix: 备份名称前缀，设置后该存储库自动备份产生的备份副本都将携带该备份名称前缀
+        :type backup_name_prefix: str
+        :param demand_billing: 存储库使用是否允许超出容量，只有创建包周期存储库时才允许该值为 true
+        :type demand_billing: bool
         """
         
         
@@ -81,6 +97,10 @@ class VaultCreate:
         self._auto_bind = None
         self._bind_rules = None
         self._auto_expand = None
+        self._threshold = None
+        self._smn_notify = None
+        self._backup_name_prefix = None
+        self._demand_billing = None
         self.discriminator = None
 
         if backup_policy_id is not None:
@@ -100,6 +120,14 @@ class VaultCreate:
             self.bind_rules = bind_rules
         if auto_expand is not None:
             self.auto_expand = auto_expand
+        if threshold is not None:
+            self.threshold = threshold
+        if smn_notify is not None:
+            self.smn_notify = smn_notify
+        if backup_name_prefix is not None:
+            self.backup_name_prefix = backup_name_prefix
+        if demand_billing is not None:
+            self.demand_billing = demand_billing
 
     @property
     def backup_policy_id(self):
@@ -295,7 +323,7 @@ class VaultCreate:
     def auto_expand(self):
         """Gets the auto_expand of this VaultCreate.
 
-        是否自动扩容。按需存储库支持自动扩容，包周期存储库不支持扩容。
+        [是否开启存储库自动扩容能力（只支持按需存储库）。](tag:hws,hws_hk) [是否开启存储库自动扩容能力。](tag:dt,ocb,tlf,sbc,fcs_vm,ctc,g42,tm,cmcc,hcso_dt)
 
         :return: The auto_expand of this VaultCreate.
         :rtype: bool
@@ -306,12 +334,100 @@ class VaultCreate:
     def auto_expand(self, auto_expand):
         """Sets the auto_expand of this VaultCreate.
 
-        是否自动扩容。按需存储库支持自动扩容，包周期存储库不支持扩容。
+        [是否开启存储库自动扩容能力（只支持按需存储库）。](tag:hws,hws_hk) [是否开启存储库自动扩容能力。](tag:dt,ocb,tlf,sbc,fcs_vm,ctc,g42,tm,cmcc,hcso_dt)
 
         :param auto_expand: The auto_expand of this VaultCreate.
         :type auto_expand: bool
         """
         self._auto_expand = auto_expand
+
+    @property
+    def threshold(self):
+        """Gets the threshold of this VaultCreate.
+
+        存储库容量阈值，已用容量占总容量达到此百分比，将根据 smn_notify 参数设置选择是否发送相关通知。 默认值为：80 最大值：100 最小值：1
+
+        :return: The threshold of this VaultCreate.
+        :rtype: int
+        """
+        return self._threshold
+
+    @threshold.setter
+    def threshold(self, threshold):
+        """Sets the threshold of this VaultCreate.
+
+        存储库容量阈值，已用容量占总容量达到此百分比，将根据 smn_notify 参数设置选择是否发送相关通知。 默认值为：80 最大值：100 最小值：1
+
+        :param threshold: The threshold of this VaultCreate.
+        :type threshold: int
+        """
+        self._threshold = threshold
+
+    @property
+    def smn_notify(self):
+        """Gets the smn_notify of this VaultCreate.
+
+        存储库smn消息通知开关。 默认值为 true。
+
+        :return: The smn_notify of this VaultCreate.
+        :rtype: bool
+        """
+        return self._smn_notify
+
+    @smn_notify.setter
+    def smn_notify(self, smn_notify):
+        """Sets the smn_notify of this VaultCreate.
+
+        存储库smn消息通知开关。 默认值为 true。
+
+        :param smn_notify: The smn_notify of this VaultCreate.
+        :type smn_notify: bool
+        """
+        self._smn_notify = smn_notify
+
+    @property
+    def backup_name_prefix(self):
+        """Gets the backup_name_prefix of this VaultCreate.
+
+        备份名称前缀，设置后该存储库自动备份产生的备份副本都将携带该备份名称前缀
+
+        :return: The backup_name_prefix of this VaultCreate.
+        :rtype: str
+        """
+        return self._backup_name_prefix
+
+    @backup_name_prefix.setter
+    def backup_name_prefix(self, backup_name_prefix):
+        """Sets the backup_name_prefix of this VaultCreate.
+
+        备份名称前缀，设置后该存储库自动备份产生的备份副本都将携带该备份名称前缀
+
+        :param backup_name_prefix: The backup_name_prefix of this VaultCreate.
+        :type backup_name_prefix: str
+        """
+        self._backup_name_prefix = backup_name_prefix
+
+    @property
+    def demand_billing(self):
+        """Gets the demand_billing of this VaultCreate.
+
+        存储库使用是否允许超出容量，只有创建包周期存储库时才允许该值为 true
+
+        :return: The demand_billing of this VaultCreate.
+        :rtype: bool
+        """
+        return self._demand_billing
+
+    @demand_billing.setter
+    def demand_billing(self, demand_billing):
+        """Sets the demand_billing of this VaultCreate.
+
+        存储库使用是否允许超出容量，只有创建包周期存储库时才允许该值为 true
+
+        :param demand_billing: The demand_billing of this VaultCreate.
+        :type demand_billing: bool
+        """
+        self._demand_billing = demand_billing
 
     def to_dict(self):
         """Returns the model properties as a dict"""

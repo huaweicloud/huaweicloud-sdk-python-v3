@@ -9005,6 +9005,8 @@ class RdsAsyncClient(Client):
             query_params.append(('limit', local_var_params['limit']))
         if 'db_name' in local_var_params:
             query_params.append(('db-name', local_var_params['db_name']))
+        if 'recover_model' in local_var_params:
+            query_params.append(('recover_model', local_var_params['recover_model']))
 
         header_params = {}
         if 'x_language' in local_var_params:

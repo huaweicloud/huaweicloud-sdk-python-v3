@@ -202,7 +202,7 @@ class CbhAsyncClient(Client):
     def create_instance_order_async(self, request):
         """创建云堡垒机实例订单
 
-        创建云堡垒机实例订单。
+        创建云堡垒机实例订单。(调用此接口前先调用创建云堡垒机实例接口)
         
         Please refer to HUAWEI cloud API Explorer for details.
 

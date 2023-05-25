@@ -91,8 +91,7 @@ class SmsTemplateReq:
         self.app_id = app_id
         if brackets is not None:
             self.brackets = brackets
-        if region is not None:
-            self.region = region
+        self.region = region
         if send_country is not None:
             self.send_country = send_country
         if sign_id is not None:

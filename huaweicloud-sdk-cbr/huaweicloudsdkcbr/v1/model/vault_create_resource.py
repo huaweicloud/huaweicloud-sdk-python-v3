@@ -35,7 +35,11 @@ class VaultCreateResource:
         'threshold': 'int',
         'err_text': 'str',
         'ret_code': 'str',
-        'orders': 'list[CbcOrderResult]'
+        'orders': 'list[CbcOrderResult]',
+        'backup_name_prefix': 'str',
+        'demand_billing': 'bool',
+        'cbc_delete_count': 'int',
+        'frozen': 'bool'
     }
 
     attribute_map = {
@@ -57,10 +61,14 @@ class VaultCreateResource:
         'threshold': 'threshold',
         'err_text': 'errText',
         'ret_code': 'retCode',
-        'orders': 'orders'
+        'orders': 'orders',
+        'backup_name_prefix': 'backup_name_prefix',
+        'demand_billing': 'demand_billing',
+        'cbc_delete_count': 'cbc_delete_count',
+        'frozen': 'frozen'
     }
 
-    def __init__(self, billing=None, description=None, id=None, name=None, project_id=None, provider_id=None, resources=None, tags=None, enterprise_project_id=None, auto_bind=None, bind_rules=None, user_id=None, created_at=None, auto_expand=None, smn_notify=None, threshold=None, err_text=None, ret_code=None, orders=None):
+    def __init__(self, billing=None, description=None, id=None, name=None, project_id=None, provider_id=None, resources=None, tags=None, enterprise_project_id=None, auto_bind=None, bind_rules=None, user_id=None, created_at=None, auto_expand=None, smn_notify=None, threshold=None, err_text=None, ret_code=None, orders=None, backup_name_prefix=None, demand_billing=None, cbc_delete_count=None, frozen=None):
         """VaultCreateResource
 
         The model defined in huaweicloud sdk
@@ -91,7 +99,7 @@ class VaultCreateResource:
         :type user_id: str
         :param created_at: 创建时间,例如:\&quot;2020-02-05T10:38:34.209782\&quot;
         :type created_at: str
-        :param auto_expand: 是否开启存储库自动扩容能力（只支持按需存储库）
+        :param auto_expand: [是否开启存储库自动扩容能力（只支持按需存储库）。](tag:hws,hws_hk) [是否开启存储库自动扩容能力。](tag:dt,ocb,tlf,sbc,fcs_vm,ctc,g42,tm,cmcc,tm,hcso_dt)
         :type auto_expand: bool
         :param smn_notify: 存储库smn消息通知开关
         :type smn_notify: bool
@@ -103,6 +111,14 @@ class VaultCreateResource:
         :type ret_code: str
         :param orders: 包周期创建订单信息
         :type orders: list[:class:`huaweicloudsdkcbr.v1.CbcOrderResult`]
+        :param backup_name_prefix: 备份名称前缀
+        :type backup_name_prefix: str
+        :param demand_billing: 是否允许使用超出存储库容量
+        :type demand_billing: bool
+        :param cbc_delete_count: 存储库删除次数
+        :type cbc_delete_count: int
+        :param frozen: 存储库是否冻结
+        :type frozen: bool
         """
         
         
@@ -126,6 +142,10 @@ class VaultCreateResource:
         self._err_text = None
         self._ret_code = None
         self._orders = None
+        self._backup_name_prefix = None
+        self._demand_billing = None
+        self._cbc_delete_count = None
+        self._frozen = None
         self.discriminator = None
 
         self.billing = billing
@@ -160,6 +180,14 @@ class VaultCreateResource:
             self.ret_code = ret_code
         if orders is not None:
             self.orders = orders
+        if backup_name_prefix is not None:
+            self.backup_name_prefix = backup_name_prefix
+        if demand_billing is not None:
+            self.demand_billing = demand_billing
+        if cbc_delete_count is not None:
+            self.cbc_delete_count = cbc_delete_count
+        if frozen is not None:
+            self.frozen = frozen
 
     @property
     def billing(self):
@@ -443,7 +471,7 @@ class VaultCreateResource:
     def auto_expand(self):
         """Gets the auto_expand of this VaultCreateResource.
 
-        是否开启存储库自动扩容能力（只支持按需存储库）
+        [是否开启存储库自动扩容能力（只支持按需存储库）。](tag:hws,hws_hk) [是否开启存储库自动扩容能力。](tag:dt,ocb,tlf,sbc,fcs_vm,ctc,g42,tm,cmcc,tm,hcso_dt)
 
         :return: The auto_expand of this VaultCreateResource.
         :rtype: bool
@@ -454,7 +482,7 @@ class VaultCreateResource:
     def auto_expand(self, auto_expand):
         """Sets the auto_expand of this VaultCreateResource.
 
-        是否开启存储库自动扩容能力（只支持按需存储库）
+        [是否开启存储库自动扩容能力（只支持按需存储库）。](tag:hws,hws_hk) [是否开启存储库自动扩容能力。](tag:dt,ocb,tlf,sbc,fcs_vm,ctc,g42,tm,cmcc,tm,hcso_dt)
 
         :param auto_expand: The auto_expand of this VaultCreateResource.
         :type auto_expand: bool
@@ -570,6 +598,94 @@ class VaultCreateResource:
         :type orders: list[:class:`huaweicloudsdkcbr.v1.CbcOrderResult`]
         """
         self._orders = orders
+
+    @property
+    def backup_name_prefix(self):
+        """Gets the backup_name_prefix of this VaultCreateResource.
+
+        备份名称前缀
+
+        :return: The backup_name_prefix of this VaultCreateResource.
+        :rtype: str
+        """
+        return self._backup_name_prefix
+
+    @backup_name_prefix.setter
+    def backup_name_prefix(self, backup_name_prefix):
+        """Sets the backup_name_prefix of this VaultCreateResource.
+
+        备份名称前缀
+
+        :param backup_name_prefix: The backup_name_prefix of this VaultCreateResource.
+        :type backup_name_prefix: str
+        """
+        self._backup_name_prefix = backup_name_prefix
+
+    @property
+    def demand_billing(self):
+        """Gets the demand_billing of this VaultCreateResource.
+
+        是否允许使用超出存储库容量
+
+        :return: The demand_billing of this VaultCreateResource.
+        :rtype: bool
+        """
+        return self._demand_billing
+
+    @demand_billing.setter
+    def demand_billing(self, demand_billing):
+        """Sets the demand_billing of this VaultCreateResource.
+
+        是否允许使用超出存储库容量
+
+        :param demand_billing: The demand_billing of this VaultCreateResource.
+        :type demand_billing: bool
+        """
+        self._demand_billing = demand_billing
+
+    @property
+    def cbc_delete_count(self):
+        """Gets the cbc_delete_count of this VaultCreateResource.
+
+        存储库删除次数
+
+        :return: The cbc_delete_count of this VaultCreateResource.
+        :rtype: int
+        """
+        return self._cbc_delete_count
+
+    @cbc_delete_count.setter
+    def cbc_delete_count(self, cbc_delete_count):
+        """Sets the cbc_delete_count of this VaultCreateResource.
+
+        存储库删除次数
+
+        :param cbc_delete_count: The cbc_delete_count of this VaultCreateResource.
+        :type cbc_delete_count: int
+        """
+        self._cbc_delete_count = cbc_delete_count
+
+    @property
+    def frozen(self):
+        """Gets the frozen of this VaultCreateResource.
+
+        存储库是否冻结
+
+        :return: The frozen of this VaultCreateResource.
+        :rtype: bool
+        """
+        return self._frozen
+
+    @frozen.setter
+    def frozen(self, frozen):
+        """Sets the frozen of this VaultCreateResource.
+
+        存储库是否冻结
+
+        :param frozen: The frozen of this VaultCreateResource.
+        :type frozen: bool
+        """
+        self._frozen = frozen
 
     def to_dict(self):
         """Returns the model properties as a dict"""

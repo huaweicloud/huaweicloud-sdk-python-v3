@@ -21,6 +21,7 @@ class ResourceShareAssociation:
         'association_type': 'str',
         'created_at': 'datetime',
         'updated_at': 'datetime',
+        'external': 'bool',
         'resource_share_id': 'str',
         'resource_share_name': 'str',
         'status': 'str'
@@ -31,12 +32,13 @@ class ResourceShareAssociation:
         'association_type': 'association_type',
         'created_at': 'created_at',
         'updated_at': 'updated_at',
+        'external': 'external',
         'resource_share_id': 'resource_share_id',
         'resource_share_name': 'resource_share_name',
         'status': 'status'
     }
 
-    def __init__(self, associated_entity=None, association_type=None, created_at=None, updated_at=None, resource_share_id=None, resource_share_name=None, status=None):
+    def __init__(self, associated_entity=None, association_type=None, created_at=None, updated_at=None, external=None, resource_share_id=None, resource_share_name=None, status=None):
         """ResourceShareAssociation
 
         The model defined in huaweicloud sdk
@@ -49,6 +51,8 @@ class ResourceShareAssociation:
         :type created_at: datetime
         :param updated_at: 最后一次更新绑定的时间。
         :type updated_at: datetime
+        :param external: 标识资源使用者是否和共享的拥有者属于同一个组织
+        :type external: bool
         :param resource_share_id: 资源共享实例的ID。
         :type resource_share_id: str
         :param resource_share_name: 资源共享实例的名称。
@@ -63,6 +67,7 @@ class ResourceShareAssociation:
         self._association_type = None
         self._created_at = None
         self._updated_at = None
+        self._external = None
         self._resource_share_id = None
         self._resource_share_name = None
         self._status = None
@@ -72,6 +77,8 @@ class ResourceShareAssociation:
         self.association_type = association_type
         self.created_at = created_at
         self.updated_at = updated_at
+        if external is not None:
+            self.external = external
         self.resource_share_id = resource_share_id
         self.resource_share_name = resource_share_name
         self.status = status
@@ -163,6 +170,28 @@ class ResourceShareAssociation:
         :type updated_at: datetime
         """
         self._updated_at = updated_at
+
+    @property
+    def external(self):
+        """Gets the external of this ResourceShareAssociation.
+
+        标识资源使用者是否和共享的拥有者属于同一个组织
+
+        :return: The external of this ResourceShareAssociation.
+        :rtype: bool
+        """
+        return self._external
+
+    @external.setter
+    def external(self, external):
+        """Sets the external of this ResourceShareAssociation.
+
+        标识资源使用者是否和共享的拥有者属于同一个组织
+
+        :param external: The external of this ResourceShareAssociation.
+        :type external: bool
+        """
+        self._external = external
 
     @property
     def resource_share_id(self):

@@ -19,6 +19,7 @@ class ClusterMetadata:
     openapi_types = {
         'name': 'str',
         'uid': 'str',
+        'alias': 'str',
         'annotations': 'dict(str, str)',
         'labels': 'dict(str, str)',
         'creation_timestamp': 'str',
@@ -28,13 +29,14 @@ class ClusterMetadata:
     attribute_map = {
         'name': 'name',
         'uid': 'uid',
+        'alias': 'alias',
         'annotations': 'annotations',
         'labels': 'labels',
         'creation_timestamp': 'creationTimestamp',
         'update_timestamp': 'updateTimestamp'
     }
 
-    def __init__(self, name=None, uid=None, annotations=None, labels=None, creation_timestamp=None, update_timestamp=None):
+    def __init__(self, name=None, uid=None, alias=None, annotations=None, labels=None, creation_timestamp=None, update_timestamp=None):
         """ClusterMetadata
 
         The model defined in huaweicloud sdk
@@ -43,6 +45,8 @@ class ClusterMetadata:
         :type name: str
         :param uid: 集群ID，资源唯一标识，创建成功后自动生成，填写无效
         :type uid: str
+        :param alias: 集群显示名，用于在 CCE 界面显示，该名称创建后可修改。  命名规则：以小写字母开头，由小写字母、数字、中划线(-)组成，长度范围4-128位，且不能以中划线(-)结尾。  显示名和其他集群的名称、显示名不可以重复。  在创建集群、更新集群请求体中，集群显示名alias未指定或取值为空，表示与集群名称name一致。在查询集群等响应体中，集群显示名alias将必然返回，未配置时将返回集群名称name。
+        :type alias: str
         :param annotations: 集群注解，由key/value组成：  &#x60;&#x60;&#x60; \&quot;annotations\&quot;: {    \&quot;key1\&quot; : \&quot;value1\&quot;,    \&quot;key2\&quot; : \&quot;value2\&quot; } &#x60;&#x60;&#x60;  &gt;    - Annotations不用于标识和选择对象。Annotations中的元数据可以是small或large，structured或unstructured，并且可以包括标签不允许使用的字符。 &gt;    - 该字段不会被数据库保存，当前仅用于指定集群待安装插件。 &gt;    - 可通过加入\&quot;cluster.install.addons.external/install\&quot;:\&quot;[{\&quot;addonTemplateName\&quot;:\&quot;icagent\&quot;}]\&quot;的键值对在创建集群时安装ICAgent。 
         :type annotations: dict(str, str)
         :param labels: 集群标签，key/value对格式。  &gt;  该字段值由系统自动生成，用于升级时前端识别集群支持的特性开关，用户指定无效。
@@ -57,6 +61,7 @@ class ClusterMetadata:
 
         self._name = None
         self._uid = None
+        self._alias = None
         self._annotations = None
         self._labels = None
         self._creation_timestamp = None
@@ -66,6 +71,8 @@ class ClusterMetadata:
         self.name = name
         if uid is not None:
             self.uid = uid
+        if alias is not None:
+            self.alias = alias
         if annotations is not None:
             self.annotations = annotations
         if labels is not None:
@@ -118,6 +125,28 @@ class ClusterMetadata:
         :type uid: str
         """
         self._uid = uid
+
+    @property
+    def alias(self):
+        """Gets the alias of this ClusterMetadata.
+
+        集群显示名，用于在 CCE 界面显示，该名称创建后可修改。  命名规则：以小写字母开头，由小写字母、数字、中划线(-)组成，长度范围4-128位，且不能以中划线(-)结尾。  显示名和其他集群的名称、显示名不可以重复。  在创建集群、更新集群请求体中，集群显示名alias未指定或取值为空，表示与集群名称name一致。在查询集群等响应体中，集群显示名alias将必然返回，未配置时将返回集群名称name。
+
+        :return: The alias of this ClusterMetadata.
+        :rtype: str
+        """
+        return self._alias
+
+    @alias.setter
+    def alias(self, alias):
+        """Sets the alias of this ClusterMetadata.
+
+        集群显示名，用于在 CCE 界面显示，该名称创建后可修改。  命名规则：以小写字母开头，由小写字母、数字、中划线(-)组成，长度范围4-128位，且不能以中划线(-)结尾。  显示名和其他集群的名称、显示名不可以重复。  在创建集群、更新集群请求体中，集群显示名alias未指定或取值为空，表示与集群名称name一致。在查询集群等响应体中，集群显示名alias将必然返回，未配置时将返回集群名称name。
+
+        :param alias: The alias of this ClusterMetadata.
+        :type alias: str
+        """
+        self._alias = alias
 
     @property
     def annotations(self):

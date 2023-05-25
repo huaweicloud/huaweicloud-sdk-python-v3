@@ -21,7 +21,8 @@ class ListSqlserverDatabasesRequest:
         'instance_id': 'str',
         'page': 'int',
         'limit': 'int',
-        'db_name': 'str'
+        'db_name': 'str',
+        'recover_model': 'str'
     }
 
     attribute_map = {
@@ -29,10 +30,11 @@ class ListSqlserverDatabasesRequest:
         'instance_id': 'instance_id',
         'page': 'page',
         'limit': 'limit',
-        'db_name': 'db-name'
+        'db_name': 'db-name',
+        'recover_model': 'recover_model'
     }
 
-    def __init__(self, x_language=None, instance_id=None, page=None, limit=None, db_name=None):
+    def __init__(self, x_language=None, instance_id=None, page=None, limit=None, db_name=None, recover_model=None):
         """ListSqlserverDatabasesRequest
 
         The model defined in huaweicloud sdk
@@ -47,6 +49,8 @@ class ListSqlserverDatabasesRequest:
         :type limit: int
         :param db_name: 数据库名。当指定该参数时，page和limit参数需要传入但不生效。
         :type db_name: str
+        :param recover_model: 数据库恢复健康模式，取值：FULL  ：完整模式，SIMPLE  ：简单模式，BUlK_LOGGED ：大容量日志恢复模式（该参数仅用于SQL server引擎）
+        :type recover_model: str
         """
         
         
@@ -56,6 +60,7 @@ class ListSqlserverDatabasesRequest:
         self._page = None
         self._limit = None
         self._db_name = None
+        self._recover_model = None
         self.discriminator = None
 
         if x_language is not None:
@@ -65,6 +70,8 @@ class ListSqlserverDatabasesRequest:
         self.limit = limit
         if db_name is not None:
             self.db_name = db_name
+        if recover_model is not None:
+            self.recover_model = recover_model
 
     @property
     def x_language(self):
@@ -175,6 +182,28 @@ class ListSqlserverDatabasesRequest:
         :type db_name: str
         """
         self._db_name = db_name
+
+    @property
+    def recover_model(self):
+        """Gets the recover_model of this ListSqlserverDatabasesRequest.
+
+        数据库恢复健康模式，取值：FULL  ：完整模式，SIMPLE  ：简单模式，BUlK_LOGGED ：大容量日志恢复模式（该参数仅用于SQL server引擎）
+
+        :return: The recover_model of this ListSqlserverDatabasesRequest.
+        :rtype: str
+        """
+        return self._recover_model
+
+    @recover_model.setter
+    def recover_model(self, recover_model):
+        """Sets the recover_model of this ListSqlserverDatabasesRequest.
+
+        数据库恢复健康模式，取值：FULL  ：完整模式，SIMPLE  ：简单模式，BUlK_LOGGED ：大容量日志恢复模式（该参数仅用于SQL server引擎）
+
+        :param recover_model: The recover_model of this ListSqlserverDatabasesRequest.
+        :type recover_model: str
+        """
+        self._recover_model = recover_model
 
     def to_dict(self):
         """Returns the model properties as a dict"""

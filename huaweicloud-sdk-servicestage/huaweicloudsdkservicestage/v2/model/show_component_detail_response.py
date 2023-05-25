@@ -31,6 +31,7 @@ class ShowComponentDetailResponse(SdkResponse):
         'build': 'BuildInfo',
         'pipeline_ids': 'list[str]',
         'create_time': 'int',
+        'creator': 'str',
         'update_time': 'int'
     }
 
@@ -48,10 +49,11 @@ class ShowComponentDetailResponse(SdkResponse):
         'build': 'build',
         'pipeline_ids': 'pipeline_ids',
         'create_time': 'create_time',
+        'creator': 'creator',
         'update_time': 'update_time'
     }
 
-    def __init__(self, id=None, name=None, status=None, runtime=None, category=None, sub_category=None, description=None, project_id=None, application_id=None, source=None, build=None, pipeline_ids=None, create_time=None, update_time=None):
+    def __init__(self, id=None, name=None, status=None, runtime=None, category=None, sub_category=None, description=None, project_id=None, application_id=None, source=None, build=None, pipeline_ids=None, create_time=None, creator=None, update_time=None):
         """ShowComponentDetailResponse
 
         The model defined in huaweicloud sdk
@@ -82,6 +84,8 @@ class ShowComponentDetailResponse(SdkResponse):
         :type pipeline_ids: list[str]
         :param create_time: 创建时间。
         :type create_time: int
+        :param creator: 创建者
+        :type creator: str
         :param update_time: 修改时间。
         :type update_time: int
         """
@@ -101,6 +105,7 @@ class ShowComponentDetailResponse(SdkResponse):
         self._build = None
         self._pipeline_ids = None
         self._create_time = None
+        self._creator = None
         self._update_time = None
         self.discriminator = None
 
@@ -130,6 +135,8 @@ class ShowComponentDetailResponse(SdkResponse):
             self.pipeline_ids = pipeline_ids
         if create_time is not None:
             self.create_time = create_time
+        if creator is not None:
+            self.creator = creator
         if update_time is not None:
             self.update_time = update_time
 
@@ -398,6 +405,28 @@ class ShowComponentDetailResponse(SdkResponse):
         :type create_time: int
         """
         self._create_time = create_time
+
+    @property
+    def creator(self):
+        """Gets the creator of this ShowComponentDetailResponse.
+
+        创建者
+
+        :return: The creator of this ShowComponentDetailResponse.
+        :rtype: str
+        """
+        return self._creator
+
+    @creator.setter
+    def creator(self, creator):
+        """Sets the creator of this ShowComponentDetailResponse.
+
+        创建者
+
+        :param creator: The creator of this ShowComponentDetailResponse.
+        :type creator: str
+        """
+        self._creator = creator
 
     @property
     def update_time(self):

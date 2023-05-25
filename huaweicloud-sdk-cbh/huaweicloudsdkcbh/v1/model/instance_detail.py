@@ -121,9 +121,9 @@ class InstanceDetail:
         :type instance_id: str
         :param private_ip: 云堡垒机实例私有ip。
         :type private_ip: str
-        :param task_status: 云堡垒机实例当前的任务状态。
+        :param task_status: 云堡垒机实例当前的任务状态。 - powering-on 开启 - powering-off 关闭 - rebooting 重启 - delete_wait 删除 - frozen 冻结 - NO_TASK 运行 - unfrozen 解冻 - alter 变更 - updating 升级中 - configuring-ha 配置HA
         :type task_status: str
-        :param status: 云堡垒机实例状态。
+        :param status: 云堡垒机实例状态。 - SHUTOFF 已关闭 - ACTIVE 运行中 - DELETING 删除中 - BUILD 创建中 - DELETED 已删除 - ERROR 故障 - HAWAIT 等待备机创建成功 - FROZEN 已冻结 - UPGRADING 升级中 - UNPAID 待支付 - RESIZE 规格变更中 - DILATATION 扩容中 - HA 配置HA中
         :type status: str
         :param created: 云堡垒机实例创建时间，使用UTC时间表示。
         :type created: str
@@ -141,7 +141,7 @@ class InstanceDetail:
         :type security_group_id: str
         :param specification: 云堡垒机实例规格。
         :type specification: str
-        :param update: 云堡垒机实例镜像是否可以升级。 - NEW，可以升级 - OLD，不能升级
+        :param update: 云堡垒机实例是否可以升级。 - NEW，可以升级 - OLD，不能升级
         :type update: str
         :param createinstance_status: 云堡垒机实例在创建实例过程中的过程状态信息。 - Waiting for payment，等待支付 - creating-network，创建网络 - creating-server，创建服务 - tranfering-horizontal-network，网络打通 - adding-policy-route，添加路由策略 - configing-dns，配置DNS - starting-cbs-service，服务运行中 - setting-init-conf，初始化 - buying-EIP，购买弹性公网IP
         :type createinstance_status: str
@@ -153,7 +153,7 @@ class InstanceDetail:
         :type order_id: str
         :param period_num: 云堡垒机实例订购周期数。
         :type period_num: str
-        :param resource_id: 云堡垒机实例实例的资源id,UUID格式显示。
+        :param resource_id: 云堡垒机实例的资源id,UUID格式显示。
         :type resource_id: str
         :param bastion_type: 云堡垒机实例堡垒机类型。 - OEM
         :type bastion_type: str
@@ -161,9 +161,9 @@ class InstanceDetail:
         :type alter_permit: str
         :param public_id: 云堡垒机实例绑定公网的弹性IP的ID，UUID格式表示。
         :type public_id: str
-        :param bastion_version: 云堡垒机实例镜像当前版本号。
+        :param bastion_version: 云堡垒机实例当前版本。
         :type bastion_version: str
-        :param new_bastion_version: 云堡垒机实例镜像可以升级的版本号。
+        :param new_bastion_version: 云堡垒机实例可以升级的版本。
         :type new_bastion_version: str
         :param instance_status: 云堡垒机实例状态。 - building  创建中 - deleting  删除中 - deleted 删除了 - unpaid  未支付 - upgrading 升级中 - resizing  扩容中 - abnormal  异常 - error 故障 - ok  正常
         :type instance_status: str
@@ -181,7 +181,7 @@ class InstanceDetail:
         :type slave_zone_display: str
         :param web_port: 云堡垒机实例WEB界面访问的端口号。
         :type web_port: str
-        :param vip: 云堡垒机实例浮动ip。
+        :param vip: 云堡垒机实例浮动ip。返回默认值null
         :type vip: str
         """
         
@@ -455,7 +455,7 @@ class InstanceDetail:
     def task_status(self):
         """Gets the task_status of this InstanceDetail.
 
-        云堡垒机实例当前的任务状态。
+        云堡垒机实例当前的任务状态。 - powering-on 开启 - powering-off 关闭 - rebooting 重启 - delete_wait 删除 - frozen 冻结 - NO_TASK 运行 - unfrozen 解冻 - alter 变更 - updating 升级中 - configuring-ha 配置HA
 
         :return: The task_status of this InstanceDetail.
         :rtype: str
@@ -466,7 +466,7 @@ class InstanceDetail:
     def task_status(self, task_status):
         """Sets the task_status of this InstanceDetail.
 
-        云堡垒机实例当前的任务状态。
+        云堡垒机实例当前的任务状态。 - powering-on 开启 - powering-off 关闭 - rebooting 重启 - delete_wait 删除 - frozen 冻结 - NO_TASK 运行 - unfrozen 解冻 - alter 变更 - updating 升级中 - configuring-ha 配置HA
 
         :param task_status: The task_status of this InstanceDetail.
         :type task_status: str
@@ -477,7 +477,7 @@ class InstanceDetail:
     def status(self):
         """Gets the status of this InstanceDetail.
 
-        云堡垒机实例状态。
+        云堡垒机实例状态。 - SHUTOFF 已关闭 - ACTIVE 运行中 - DELETING 删除中 - BUILD 创建中 - DELETED 已删除 - ERROR 故障 - HAWAIT 等待备机创建成功 - FROZEN 已冻结 - UPGRADING 升级中 - UNPAID 待支付 - RESIZE 规格变更中 - DILATATION 扩容中 - HA 配置HA中
 
         :return: The status of this InstanceDetail.
         :rtype: str
@@ -488,7 +488,7 @@ class InstanceDetail:
     def status(self, status):
         """Sets the status of this InstanceDetail.
 
-        云堡垒机实例状态。
+        云堡垒机实例状态。 - SHUTOFF 已关闭 - ACTIVE 运行中 - DELETING 删除中 - BUILD 创建中 - DELETED 已删除 - ERROR 故障 - HAWAIT 等待备机创建成功 - FROZEN 已冻结 - UPGRADING 升级中 - UNPAID 待支付 - RESIZE 规格变更中 - DILATATION 扩容中 - HA 配置HA中
 
         :param status: The status of this InstanceDetail.
         :type status: str
@@ -675,7 +675,7 @@ class InstanceDetail:
     def update(self):
         """Gets the update of this InstanceDetail.
 
-        云堡垒机实例镜像是否可以升级。 - NEW，可以升级 - OLD，不能升级
+        云堡垒机实例是否可以升级。 - NEW，可以升级 - OLD，不能升级
 
         :return: The update of this InstanceDetail.
         :rtype: str
@@ -686,7 +686,7 @@ class InstanceDetail:
     def update(self, update):
         """Sets the update of this InstanceDetail.
 
-        云堡垒机实例镜像是否可以升级。 - NEW，可以升级 - OLD，不能升级
+        云堡垒机实例是否可以升级。 - NEW，可以升级 - OLD，不能升级
 
         :param update: The update of this InstanceDetail.
         :type update: str
@@ -807,7 +807,7 @@ class InstanceDetail:
     def resource_id(self):
         """Gets the resource_id of this InstanceDetail.
 
-        云堡垒机实例实例的资源id,UUID格式显示。
+        云堡垒机实例的资源id,UUID格式显示。
 
         :return: The resource_id of this InstanceDetail.
         :rtype: str
@@ -818,7 +818,7 @@ class InstanceDetail:
     def resource_id(self, resource_id):
         """Sets the resource_id of this InstanceDetail.
 
-        云堡垒机实例实例的资源id,UUID格式显示。
+        云堡垒机实例的资源id,UUID格式显示。
 
         :param resource_id: The resource_id of this InstanceDetail.
         :type resource_id: str
@@ -895,7 +895,7 @@ class InstanceDetail:
     def bastion_version(self):
         """Gets the bastion_version of this InstanceDetail.
 
-        云堡垒机实例镜像当前版本号。
+        云堡垒机实例当前版本。
 
         :return: The bastion_version of this InstanceDetail.
         :rtype: str
@@ -906,7 +906,7 @@ class InstanceDetail:
     def bastion_version(self, bastion_version):
         """Sets the bastion_version of this InstanceDetail.
 
-        云堡垒机实例镜像当前版本号。
+        云堡垒机实例当前版本。
 
         :param bastion_version: The bastion_version of this InstanceDetail.
         :type bastion_version: str
@@ -917,7 +917,7 @@ class InstanceDetail:
     def new_bastion_version(self):
         """Gets the new_bastion_version of this InstanceDetail.
 
-        云堡垒机实例镜像可以升级的版本号。
+        云堡垒机实例可以升级的版本。
 
         :return: The new_bastion_version of this InstanceDetail.
         :rtype: str
@@ -928,7 +928,7 @@ class InstanceDetail:
     def new_bastion_version(self, new_bastion_version):
         """Sets the new_bastion_version of this InstanceDetail.
 
-        云堡垒机实例镜像可以升级的版本号。
+        云堡垒机实例可以升级的版本。
 
         :param new_bastion_version: The new_bastion_version of this InstanceDetail.
         :type new_bastion_version: str
@@ -1115,7 +1115,7 @@ class InstanceDetail:
     def vip(self):
         """Gets the vip of this InstanceDetail.
 
-        云堡垒机实例浮动ip。
+        云堡垒机实例浮动ip。返回默认值null
 
         :return: The vip of this InstanceDetail.
         :rtype: str
@@ -1126,7 +1126,7 @@ class InstanceDetail:
     def vip(self, vip):
         """Sets the vip of this InstanceDetail.
 
-        云堡垒机实例浮动ip。
+        云堡垒机实例浮动ip。返回默认值null
 
         :param vip: The vip of this InstanceDetail.
         :type vip: str

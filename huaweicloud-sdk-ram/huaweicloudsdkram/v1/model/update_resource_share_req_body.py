@@ -18,15 +18,17 @@ class UpdateResourceShareReqBody:
 
     openapi_types = {
         'name': 'str',
-        'description': 'str'
+        'description': 'str',
+        'allow_external_principals': 'bool'
     }
 
     attribute_map = {
         'name': 'name',
-        'description': 'description'
+        'description': 'description',
+        'allow_external_principals': 'allow_external_principals'
     }
 
-    def __init__(self, name=None, description=None):
+    def __init__(self, name=None, description=None, allow_external_principals=None):
         """UpdateResourceShareReqBody
 
         The model defined in huaweicloud sdk
@@ -35,17 +37,22 @@ class UpdateResourceShareReqBody:
         :type name: str
         :param description: 资源共享实例的描述。
         :type description: str
+        :param allow_external_principals: 资源共享实例是否支持共享给组织外账号。
+        :type allow_external_principals: bool
         """
         
         
 
         self._name = None
         self._description = None
+        self._allow_external_principals = None
         self.discriminator = None
 
         self.name = name
         if description is not None:
             self.description = description
+        if allow_external_principals is not None:
+            self.allow_external_principals = allow_external_principals
 
     @property
     def name(self):
@@ -90,6 +97,28 @@ class UpdateResourceShareReqBody:
         :type description: str
         """
         self._description = description
+
+    @property
+    def allow_external_principals(self):
+        """Gets the allow_external_principals of this UpdateResourceShareReqBody.
+
+        资源共享实例是否支持共享给组织外账号。
+
+        :return: The allow_external_principals of this UpdateResourceShareReqBody.
+        :rtype: bool
+        """
+        return self._allow_external_principals
+
+    @allow_external_principals.setter
+    def allow_external_principals(self, allow_external_principals):
+        """Sets the allow_external_principals of this UpdateResourceShareReqBody.
+
+        资源共享实例是否支持共享给组织外账号。
+
+        :param allow_external_principals: The allow_external_principals of this UpdateResourceShareReqBody.
+        :type allow_external_principals: bool
+        """
+        self._allow_external_principals = allow_external_principals
 
     def to_dict(self):
         """Returns the model properties as a dict"""

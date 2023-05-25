@@ -40,8 +40,16 @@ from huaweicloudsdkservicestage.v2.model.commits_commits import CommitsCommits
 from huaweicloudsdkservicestage.v2.model.component_category import ComponentCategory
 from huaweicloudsdkservicestage.v2.model.component_create import ComponentCreate
 from huaweicloudsdkservicestage.v2.model.component_modify import ComponentModify
+from huaweicloudsdkservicestage.v2.model.component_mount import ComponentMount
+from huaweicloudsdkservicestage.v2.model.component_probe import ComponentProbe
+from huaweicloudsdkservicestage.v2.model.component_storage import ComponentStorage
 from huaweicloudsdkservicestage.v2.model.component_sub_category import ComponentSubCategory
 from huaweicloudsdkservicestage.v2.model.component_view import ComponentView
+from huaweicloudsdkservicestage.v2.model.configuration_env_param import ConfigurationEnvParam
+from huaweicloudsdkservicestage.v2.model.configuration_lifecycle import ConfigurationLifecycle
+from huaweicloudsdkservicestage.v2.model.configuration_probes import ConfigurationProbes
+from huaweicloudsdkservicestage.v2.model.configuration_scheduler import ConfigurationScheduler
+from huaweicloudsdkservicestage.v2.model.configuration_strategy import ConfigurationStrategy
 from huaweicloudsdkservicestage.v2.model.create_application_request import CreateApplicationRequest
 from huaweicloudsdkservicestage.v2.model.create_application_response import CreateApplicationResponse
 from huaweicloudsdkservicestage.v2.model.create_component_request import CreateComponentRequest
@@ -100,6 +108,7 @@ from huaweicloudsdkservicestage.v2.model.hook_create import HookCreate
 from huaweicloudsdkservicestage.v2.model.instance_action import InstanceAction
 from huaweicloudsdkservicestage.v2.model.instance_action_parameters import InstanceActionParameters
 from huaweicloudsdkservicestage.v2.model.instance_action_type import InstanceActionType
+from huaweicloudsdkservicestage.v2.model.instance_configuration import InstanceConfiguration
 from huaweicloudsdkservicestage.v2.model.instance_create import InstanceCreate
 from huaweicloudsdkservicestage.v2.model.instance_fail_detail import InstanceFailDetail
 from huaweicloudsdkservicestage.v2.model.instance_list_view import InstanceListView
@@ -109,6 +118,7 @@ from huaweicloudsdkservicestage.v2.model.instance_snapshot_view import InstanceS
 from huaweicloudsdkservicestage.v2.model.instance_status_type import InstanceStatusType
 from huaweicloudsdkservicestage.v2.model.instance_status_view import InstanceStatusView
 from huaweicloudsdkservicestage.v2.model.job_info import JobInfo
+from huaweicloudsdkservicestage.v2.model.lifecycle_entrypoint import LifecycleEntrypoint
 from huaweicloudsdkservicestage.v2.model.list_applications_request import ListApplicationsRequest
 from huaweicloudsdkservicestage.v2.model.list_applications_response import ListApplicationsResponse
 from huaweicloudsdkservicestage.v2.model.list_authorizations_request import ListAuthorizationsRequest
@@ -144,6 +154,7 @@ from huaweicloudsdkservicestage.v2.model.list_trees_response import ListTreesRes
 from huaweicloudsdkservicestage.v2.model.namespaces_namespaces import NamespacesNamespaces
 from huaweicloudsdkservicestage.v2.model.o_auth import OAuth
 from huaweicloudsdkservicestage.v2.model.obs_properties import ObsProperties
+from huaweicloudsdkservicestage.v2.model.probe_parameter import ProbeParameter
 from huaweicloudsdkservicestage.v2.model.project import Project
 from huaweicloudsdkservicestage.v2.model.project_create import ProjectCreate
 from huaweicloudsdkservicestage.v2.model.refer_resource_create import ReferResourceCreate
@@ -153,6 +164,7 @@ from huaweicloudsdkservicestage.v2.model.resource_refer_alias import ResourceRef
 from huaweicloudsdkservicestage.v2.model.resource_type import ResourceType
 from huaweicloudsdkservicestage.v2.model.runtime_type import RuntimeType
 from huaweicloudsdkservicestage.v2.model.runtime_type_view import RuntimeTypeView
+from huaweicloudsdkservicestage.v2.model.scheduler_affinity import SchedulerAffinity
 from huaweicloudsdkservicestage.v2.model.show_application_configuration_request import ShowApplicationConfigurationRequest
 from huaweicloudsdkservicestage.v2.model.show_application_configuration_response import ShowApplicationConfigurationResponse
 from huaweicloudsdkservicestage.v2.model.show_application_detail_request import ShowApplicationDetailRequest

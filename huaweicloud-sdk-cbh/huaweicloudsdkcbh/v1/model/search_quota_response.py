@@ -38,11 +38,11 @@ class SearchQuotaResponse(SdkResponse):
 
         :param quota: 剩余可创建云堡垒机实例个数。
         :type quota: int
-        :param eip_quota: 弹性公网IP个数，默认值1。
+        :param eip_quota: 弹性公网IP个数，返回默认值1。
         :type eip_quota: int
-        :param status_v6: IPV6状态信息，返回默认值null。
+        :param status_v6: IPV6ECS资源状态信息，返回默认值null。
         :type status_v6: str
-        :param status: IPV6状态信息，返回默认值null。
+        :param status: ECS资源状态信息，返回默认值null。
         :type status: str
         """
         
@@ -89,7 +89,7 @@ class SearchQuotaResponse(SdkResponse):
     def eip_quota(self):
         """Gets the eip_quota of this SearchQuotaResponse.
 
-        弹性公网IP个数，默认值1。
+        弹性公网IP个数，返回默认值1。
 
         :return: The eip_quota of this SearchQuotaResponse.
         :rtype: int
@@ -100,7 +100,7 @@ class SearchQuotaResponse(SdkResponse):
     def eip_quota(self, eip_quota):
         """Sets the eip_quota of this SearchQuotaResponse.
 
-        弹性公网IP个数，默认值1。
+        弹性公网IP个数，返回默认值1。
 
         :param eip_quota: The eip_quota of this SearchQuotaResponse.
         :type eip_quota: int
@@ -111,7 +111,7 @@ class SearchQuotaResponse(SdkResponse):
     def status_v6(self):
         """Gets the status_v6 of this SearchQuotaResponse.
 
-        IPV6状态信息，返回默认值null。
+        IPV6ECS资源状态信息，返回默认值null。
 
         :return: The status_v6 of this SearchQuotaResponse.
         :rtype: str
@@ -122,7 +122,7 @@ class SearchQuotaResponse(SdkResponse):
     def status_v6(self, status_v6):
         """Sets the status_v6 of this SearchQuotaResponse.
 
-        IPV6状态信息，返回默认值null。
+        IPV6ECS资源状态信息，返回默认值null。
 
         :param status_v6: The status_v6 of this SearchQuotaResponse.
         :type status_v6: str
@@ -133,7 +133,7 @@ class SearchQuotaResponse(SdkResponse):
     def status(self):
         """Gets the status of this SearchQuotaResponse.
 
-        IPV6状态信息，返回默认值null。
+        ECS资源状态信息，返回默认值null。
 
         :return: The status of this SearchQuotaResponse.
         :rtype: str
@@ -144,7 +144,7 @@ class SearchQuotaResponse(SdkResponse):
     def status(self, status):
         """Sets the status of this SearchQuotaResponse.
 
-        IPV6状态信息，返回默认值null。
+        ECS资源状态信息，返回默认值null。
 
         :param status: The status of this SearchQuotaResponse.
         :type status: str

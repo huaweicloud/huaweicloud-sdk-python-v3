@@ -20,6 +20,7 @@ class ResourceShare:
         'id': 'str',
         'name': 'str',
         'description': 'str',
+        'allow_external_principals': 'bool',
         'owning_account_id': 'str',
         'status': 'str',
         'tags': 'list[Tag]',
@@ -31,6 +32,7 @@ class ResourceShare:
         'id': 'id',
         'name': 'name',
         'description': 'description',
+        'allow_external_principals': 'allow_external_principals',
         'owning_account_id': 'owning_account_id',
         'status': 'status',
         'tags': 'tags',
@@ -38,7 +40,7 @@ class ResourceShare:
         'updated_at': 'updated_at'
     }
 
-    def __init__(self, id=None, name=None, description=None, owning_account_id=None, status=None, tags=None, created_at=None, updated_at=None):
+    def __init__(self, id=None, name=None, description=None, allow_external_principals=None, owning_account_id=None, status=None, tags=None, created_at=None, updated_at=None):
         """ResourceShare
 
         The model defined in huaweicloud sdk
@@ -49,6 +51,8 @@ class ResourceShare:
         :type name: str
         :param description: 资源共享实例的描述。
         :type description: str
+        :param allow_external_principals: 资源共享实例是否支持共享给组织外账号。
+        :type allow_external_principals: bool
         :param owning_account_id: 资源共享实例的所有者ID。
         :type owning_account_id: str
         :param status: 资源共享实例的状态。
@@ -66,6 +70,7 @@ class ResourceShare:
         self._id = None
         self._name = None
         self._description = None
+        self._allow_external_principals = None
         self._owning_account_id = None
         self._status = None
         self._tags = None
@@ -76,6 +81,8 @@ class ResourceShare:
         self.id = id
         self.name = name
         self.description = description
+        if allow_external_principals is not None:
+            self.allow_external_principals = allow_external_principals
         self.owning_account_id = owning_account_id
         self.status = status
         if tags is not None:
@@ -148,6 +155,28 @@ class ResourceShare:
         :type description: str
         """
         self._description = description
+
+    @property
+    def allow_external_principals(self):
+        """Gets the allow_external_principals of this ResourceShare.
+
+        资源共享实例是否支持共享给组织外账号。
+
+        :return: The allow_external_principals of this ResourceShare.
+        :rtype: bool
+        """
+        return self._allow_external_principals
+
+    @allow_external_principals.setter
+    def allow_external_principals(self, allow_external_principals):
+        """Sets the allow_external_principals of this ResourceShare.
+
+        资源共享实例是否支持共享给组织外账号。
+
+        :param allow_external_principals: The allow_external_principals of this ResourceShare.
+        :type allow_external_principals: bool
+        """
+        self._allow_external_principals = allow_external_principals
 
     @property
     def owning_account_id(self):

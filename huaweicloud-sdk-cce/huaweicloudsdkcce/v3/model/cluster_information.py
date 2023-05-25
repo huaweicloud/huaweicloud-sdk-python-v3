@@ -17,28 +17,35 @@ class ClusterInformation:
     sensitive_list = []
 
     openapi_types = {
-        'spec': 'ClusterInformationSpec'
+        'spec': 'ClusterInformationSpec',
+        'metadata': 'ClusterMetadataForUpdate'
     }
 
     attribute_map = {
-        'spec': 'spec'
+        'spec': 'spec',
+        'metadata': 'metadata'
     }
 
-    def __init__(self, spec=None):
+    def __init__(self, spec=None, metadata=None):
         """ClusterInformation
 
         The model defined in huaweicloud sdk
 
         :param spec: 
         :type spec: :class:`huaweicloudsdkcce.v3.ClusterInformationSpec`
+        :param metadata: 
+        :type metadata: :class:`huaweicloudsdkcce.v3.ClusterMetadataForUpdate`
         """
         
         
 
         self._spec = None
+        self._metadata = None
         self.discriminator = None
 
         self.spec = spec
+        if metadata is not None:
+            self.metadata = metadata
 
     @property
     def spec(self):
@@ -57,6 +64,24 @@ class ClusterInformation:
         :type spec: :class:`huaweicloudsdkcce.v3.ClusterInformationSpec`
         """
         self._spec = spec
+
+    @property
+    def metadata(self):
+        """Gets the metadata of this ClusterInformation.
+
+        :return: The metadata of this ClusterInformation.
+        :rtype: :class:`huaweicloudsdkcce.v3.ClusterMetadataForUpdate`
+        """
+        return self._metadata
+
+    @metadata.setter
+    def metadata(self, metadata):
+        """Sets the metadata of this ClusterInformation.
+
+        :param metadata: The metadata of this ClusterInformation.
+        :type metadata: :class:`huaweicloudsdkcce.v3.ClusterMetadataForUpdate`
+        """
+        self._metadata = metadata
 
     def to_dict(self):
         """Returns the model properties as a dict"""

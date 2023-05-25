@@ -20,17 +20,19 @@ class CreateVpcOption:
         'cidr': 'str',
         'name': 'str',
         'description': 'str',
-        'enterprise_project_id': 'str'
+        'enterprise_project_id': 'str',
+        'tags': 'list[str]'
     }
 
     attribute_map = {
         'cidr': 'cidr',
         'name': 'name',
         'description': 'description',
-        'enterprise_project_id': 'enterprise_project_id'
+        'enterprise_project_id': 'enterprise_project_id',
+        'tags': 'tags'
     }
 
-    def __init__(self, cidr=None, name=None, description=None, enterprise_project_id=None):
+    def __init__(self, cidr=None, name=None, description=None, enterprise_project_id=None, tags=None):
         """CreateVpcOption
 
         The model defined in huaweicloud sdk
@@ -43,6 +45,8 @@ class CreateVpcOption:
         :type description: str
         :param enterprise_project_id: 功能说明：企业项目ID。创建虚拟私有云时，给虚拟私有云绑定企业项目ID。 取值范围：最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。 默认值：\&quot;0\&quot;
         :type enterprise_project_id: str
+        :param tags: 功能说明：VPC资源标签。创建VPC时，给VPC添加资源标签。 取值范围：最大10个标签, key：标签名称; value：标签值。 格式：[key*value]，每一个标签的key和value之间用*连接
+        :type tags: list[str]
         """
         
         
@@ -51,6 +55,7 @@ class CreateVpcOption:
         self._name = None
         self._description = None
         self._enterprise_project_id = None
+        self._tags = None
         self.discriminator = None
 
         if cidr is not None:
@@ -61,6 +66,8 @@ class CreateVpcOption:
             self.description = description
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
+        if tags is not None:
+            self.tags = tags
 
     @property
     def cidr(self):
@@ -149,6 +156,28 @@ class CreateVpcOption:
         :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def tags(self):
+        """Gets the tags of this CreateVpcOption.
+
+        功能说明：VPC资源标签。创建VPC时，给VPC添加资源标签。 取值范围：最大10个标签, key：标签名称; value：标签值。 格式：[key*value]，每一个标签的key和value之间用*连接
+
+        :return: The tags of this CreateVpcOption.
+        :rtype: list[str]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this CreateVpcOption.
+
+        功能说明：VPC资源标签。创建VPC时，给VPC添加资源标签。 取值范围：最大10个标签, key：标签名称; value：标签值。 格式：[key*value]，每一个标签的key和value之间用*连接
+
+        :param tags: The tags of this CreateVpcOption.
+        :type tags: list[str]
+        """
+        self._tags = tags
 
     def to_dict(self):
         """Returns the model properties as a dict"""

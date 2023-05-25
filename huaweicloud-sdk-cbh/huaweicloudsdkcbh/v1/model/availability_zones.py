@@ -41,7 +41,7 @@ class AvailabilityZones:
         :type id: str
         :param display_name: 云堡垒机服务可用分区显示名称。
         :type display_name: str
-        :param region_id: 云堡垒机服务分区ID
+        :param region_id: 云堡垒机服务分区ID。
         :type region_id: str
         :param status: 云堡垒机服务可用区状态。
         :type status: str
@@ -113,7 +113,7 @@ class AvailabilityZones:
     def region_id(self):
         """Gets the region_id of this AvailabilityZones.
 
-        云堡垒机服务分区ID
+        云堡垒机服务分区ID。
 
         :return: The region_id of this AvailabilityZones.
         :rtype: str
@@ -124,7 +124,7 @@ class AvailabilityZones:
     def region_id(self, region_id):
         """Sets the region_id of this AvailabilityZones.
 
-        云堡垒机服务分区ID
+        云堡垒机服务分区ID。
 
         :param region_id: The region_id of this AvailabilityZones.
         :type region_id: str

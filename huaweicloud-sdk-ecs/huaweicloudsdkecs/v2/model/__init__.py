@@ -94,6 +94,7 @@ from huaweicloudsdkecs.v2.model.disassociate_server_virtual_ip_response import D
 from huaweicloudsdkecs.v2.model.flavor import Flavor
 from huaweicloudsdkecs.v2.model.flavor_extra_spec import FlavorExtraSpec
 from huaweicloudsdkecs.v2.model.flavor_link import FlavorLink
+from huaweicloudsdkecs.v2.model.flavor_spot_options import FlavorSpotOptions
 from huaweicloudsdkecs.v2.model.get_server_remote_console_option import GetServerRemoteConsoleOption
 from huaweicloudsdkecs.v2.model.hypervisor import Hypervisor
 from huaweicloudsdkecs.v2.model.interface_attachable_quantity import InterfaceAttachableQuantity
@@ -101,6 +102,9 @@ from huaweicloudsdkecs.v2.model.interface_attachment import InterfaceAttachment
 from huaweicloudsdkecs.v2.model.ipv6_bandwidth import Ipv6Bandwidth
 from huaweicloudsdkecs.v2.model.job_entities import JobEntities
 from huaweicloudsdkecs.v2.model.link import Link
+from huaweicloudsdkecs.v2.model.list_flavor_sell_policies_request import ListFlavorSellPoliciesRequest
+from huaweicloudsdkecs.v2.model.list_flavor_sell_policies_response import ListFlavorSellPoliciesResponse
+from huaweicloudsdkecs.v2.model.list_flavor_sell_policies_result import ListFlavorSellPoliciesResult
 from huaweicloudsdkecs.v2.model.list_flavors_request import ListFlavorsRequest
 from huaweicloudsdkecs.v2.model.list_flavors_response import ListFlavorsResponse
 from huaweicloudsdkecs.v2.model.list_resize_flavors_request import ListResizeFlavorsRequest

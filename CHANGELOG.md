@@ -1,3 +1,383 @@
+# 3.1.41 2023-05-25
+
+### HuaweiCloud SDK CBH
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowNetworkConfiguration**
+    - changes of request param
+      - `- nics.ip_address`
+  - **CreateInstanceOrder**
+    - changes of request param
+      - `- product_infos.resource_size_measure_id`
+      - `- product_infos.resource_size`
+  - **ChangeInstanceNetwork**
+    - changes of request param
+      - `- nics.ip_address`
+  - **CreateInstance**
+    - changes of request param
+      - `+ server.enterprise_project_id`
+      - `- server.nics.ip_address`
+      - `- server.public_ip.eip`
+
+### HuaweiCloud SDK CBR
+
+- _Features_
+  - Support the following interfaces：
+    - `ImportCheckpoint`
+    - `ListExternalVault`
+    - `BatchUpdateVault`
+    - `SetVaultResource`
+    - `ShowMetadata`
+    - `CheckAgent`
+    - `ListProjects`
+    - `ListDomainProjects`
+    - `ShowDomain`
+    - `ShowMigrateStatus`
+    - `MigrateDomain`
+    - `ShowStorageUsage`
+    - `UpdateOrder`
+    - `CreatePostPaidVault`
+    - `UpdateBackup`
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateVault**
+    - changes of request param
+      - `+ vault.threshold`
+      - `+ vault.smn_notify`
+      - `+ vault.backup_name_prefix`
+      - `+ vault.demand_billing`
+    - changes of response param
+      - `+ vault.backup_name_prefix`
+      - `+ vault.demand_billing`
+      - `+ vault.cbc_delete_count`
+      - `+ vault.frozen`
+
+### HuaweiCloud SDK CCE
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowCluster**
+    - changes of response param
+      - `+ metadata.alias`
+  - **UpdateCluster**
+    - changes of request param
+      - `+ metadata`
+    - changes of response param
+      - `+ metadata.alias`
+  - **DeleteCluster**
+    - changes of response param
+      - `+ metadata.alias`
+  - **MigrateNode**
+    - changes of request param
+      - `+ spec.runtime`
+    - changes of response param
+      - `+ spec.runtime`
+  - **CreateCluster**
+    - changes of request param
+      - `+ metadata.alias`
+    - changes of response param
+      - `+ metadata.alias`
+  - **ListClusters**
+    - changes of response param
+      - `+ items.metadata.alias`
+
+### HuaweiCloud SDK CDN
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowDomainDetailByName**
+    - changes of response param
+      - `+ domain.domain_name`
+
+### HuaweiCloud SDK DCS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListMigrationTask**
+    - changes of response param
+      - `- task_name`
+      - `- target_instance_id`
+      - `- target_instance_address`
+      - `- target_instance_name`
+      - `- migrate_type`
+      - `- created_at`
+      - `- source_instance_id`
+      - `- task_id`
+      - `- data_source`
+      - `- migration_method`
+      - `- source_instance_name`
+      - `- status`
+  - **ListConfigTemplates**
+    - changes of response param
+      - `* template_num: number -> integer`
+  - **ListInstances**
+    - changes of response param
+      - `+ instances.updated_at`
+  - **ListBackgroundTask**
+    - changes of response param
+      - `- updated_at`
+      - `- created_at`
+      - `- status`
+  - **ListFlavors**
+    - changes of response param
+      - `+ flavors.flavors_available_zones.unit`
+      - `+ flavors.flavors_available_zones.available_zones`
+
+### HuaweiCloud SDK ECS
+
+- _Features_
+  - Support the interface `ListFlavorSellPolicies`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK EIP
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListPublicipsByTags**
+    - changes of response param
+      - `+ resources.resource_detail`
+      - `- resources.resouce_detail`
+  - **AddPublicipsIntoSharedBandwidth**
+    - changes of response param
+      - `+ bandwidth.enable_bandwidth_rules`
+      - `+ bandwidth.rule_quota`
+      - `+ bandwidth.bandwidth_rules`
+
+### HuaweiCloud SDK GaussDB
+
+- _Features_
+  - Support the interfaces `UpdateProxyConnectionPoolType`, `RestoreOldInstance`, `ShowBackupRestoreTime`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowGaussMySqlProxyList**
+    - changes of response param
+      - `+ proxy_list.proxy.connection_pool_type`
+      - `+ proxy_list.proxy.switch_connection_pool_type_enabled`
+
+### HuaweiCloud SDK IAM
+
+- _Features_
+  - Support the interfaces `AssociateRoleToAgencyOnEnterpriseProject`, `RevokeRoleFromAgencyOnEnterpriseProject`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK Image
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the interfaces `CreateVideoObjectMaskingTask`, `ShowVideoObjectMaskingTask`
+
+### HuaweiCloud SDK Kafka
+
+- _Features_
+  - Support the interfaces `DeleteConnector`, `CreateDeleteConnectorOrder`, `CreateKafkaConsumerGroup`, `CloseKafkaManager`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowInstance**
+    - changes of response param
+      - `+ kafka_manager_enable`
+  - **ListInstances**
+    - changes of response param
+      - `+ kafka_manager_enable`
+      - `+ instances.kafka_manager_enable`
+
+### HuaweiCloud SDK Live
+
+- _Features_
+  - Support the interface `BatchShowIpBelongs`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK MSGSMS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowSignatureFile**
+    - changes of response param
+      - `+ file_desc`
+  - **UpdateApp**
+    - changes of response param
+      - `- app_secret`
+
+### HuaweiCloud SDK RabbitMQ
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreatePostPaidInstanceByEngine**
+    - changes of request param
+      - `+ engine_version: enum value [3.8.35]`
+  - **CreatePostPaidInstance**
+    - changes of request param
+      - `+ engine_version: enum value [3.8.35]`
+
+### HuaweiCloud SDK RAM
+
+- _Features_
+  - Support the interface `ListQuota`
+- _Bug Fix_
+  - None
+- _Change_
+  - **AssociateResourceShare**
+    - changes of response param
+      - `+ resource_share_associations.external`
+  - **DisassociateResourceShare**
+    - changes of response param
+      - `+ resource_share_associations.external`
+  - **SearchResourceShareAssociations**
+    - changes of response param
+      - `+ resource_share_associations.external`
+  - **CreateResourceShare**
+    - changes of request param
+      - `+ allow_external_principals`
+    - changes of response param
+      - `+ resource_share.allow_external_principals`
+  - **SearchResourceShares**
+    - changes of response param
+      - `+ resource_shares.allow_external_principals`
+  - **UpdateResourceShare**
+    - changes of request param
+      - `+ allow_external_principals`
+    - changes of response param
+      - `+ resource_share.allow_external_principals`
+
+### HuaweiCloud SDK RDS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListSqlserverDatabases**
+    - changes of request param
+      - `+ recover_model`
+
+### HuaweiCloud SDK RMS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowPolicyAssignment**
+    - changes of response param
+      - `+ created_by`
+  - **UpdatePolicyAssignment**
+    - changes of response param
+      - `+ created_by`
+  - **ShowAggregatePolicyAssignmentDetail**
+    - changes of response param
+      - `+ created_by`
+  - **CreatePolicyAssignments**
+    - changes of response param
+      - `+ created_by`
+  - **ListPolicyAssignments**
+    - changes of response param
+      - `+ created_by`
+      - `+ value.created_by`
+
+### HuaweiCloud SDK VPC
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateVpc**
+    - changes of request param
+      - `+ vpc.tags`
+  - **CreateSubnet**
+    - changes of request param
+      - `+ subnet.tags`
+    - **ShowAddressGroup**
+    - changes of response param
+      - `+ address_group.max_capacity`
+      - `+ address_group.status`
+      - `+ address_group.status_message`
+  - **UpdateAddressGroup**
+    - changes of request param
+      - `+ address_group.max_capacity`
+    - changes of response param
+      - `+ address_group.max_capacity`
+      - `+ address_group.status`
+      - `+ address_group.status_message`
+  - **ListAddressGroup**
+    - changes of response param
+      - `+ address_groups.max_capacity`
+      - `+ address_groups.status`
+      - `+ address_groups.status_message`
+  - **CreateAddressGroup**
+    - changes of request param
+      - `+ address_group.max_capacity`
+    - changes of response param
+      - `+ address_group.max_capacity`
+      - `+ address_group.status`
+      - `+ address_group.status_message`
+
+### HuaweiCloud SDK VPCEP
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListServiceDescribeDetails**
+    - changes of response param
+      - `+ enable_policy`
+  - **ListServiceDetails**
+    - changes of response param
+      - `- vip_port_id`
+  - **UpdateEndpointService**
+    - changes of request param
+      - `- vip_port_id`
+    - changes of response param
+      - `- vip_port_id`
+  - **ListServicePublicDetails**
+    - changes of response param
+      - `+ endpoint_services.enable_policy`
+  - **CreateEndpointService**
+    - changes of request param
+      - `- vip_port_id`
+    - changes of response param
+      - `- vip_port_id`
+  - **ListEndpointService**
+    - changes of response param
+      - `- endpoint_services.vip_port_id`
+
 # 3.1.40 2023-05-18
 
 ### HuaweiCloud SDK CBR

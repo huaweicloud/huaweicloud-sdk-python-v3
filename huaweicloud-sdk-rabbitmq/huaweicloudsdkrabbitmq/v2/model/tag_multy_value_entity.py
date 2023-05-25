@@ -31,9 +31,9 @@ class TagMultyValueEntity:
 
         The model defined in huaweicloud sdk
 
-        :param key: 键。最大长度36个unicode字符。  key不能为空，不能为空字符串。  不能包含下列字符：非打印字符ASCII(0-31)，“&#x3D;”,“*”,“&lt;”,“&gt;”,“\\”,“,”,“|”,“/”。
+        :param key: 键。  key不能为空，长度1~128个字符（中文也可以输入128个字符）。  可用 UTF-8 格式表示的字母、数字和空格，以及以下字符： _ . : &#x3D; + - @  key两头不能有空格字符。
         :type key: str
-        :param values: 值。每个值最大长度43个unicode字符。  value不能为空，可以空字符串。  不能包含下列字符：非打印字符ASCII(0-31), “&#x3D;”,“*”,“&lt;”,“&gt;”,“\\”,“,”,“|”,“/”。
+        :param values: 值列表。  值长度0~255个字符（中文也可以输入255个字符）。  值可用 UTF-8 格式表示的字母、数字和空格，以及以下字符： _ . : / &#x3D; + - @。  值可以为空字符串。
         :type values: list[str]
         """
         
@@ -52,7 +52,7 @@ class TagMultyValueEntity:
     def key(self):
         """Gets the key of this TagMultyValueEntity.
 
-        键。最大长度36个unicode字符。  key不能为空，不能为空字符串。  不能包含下列字符：非打印字符ASCII(0-31)，“=”,“*”,“<”,“>”,“\\”,“,”,“|”,“/”。
+        键。  key不能为空，长度1~128个字符（中文也可以输入128个字符）。  可用 UTF-8 格式表示的字母、数字和空格，以及以下字符： _ . : = + - @  key两头不能有空格字符。
 
         :return: The key of this TagMultyValueEntity.
         :rtype: str
@@ -63,7 +63,7 @@ class TagMultyValueEntity:
     def key(self, key):
         """Sets the key of this TagMultyValueEntity.
 
-        键。最大长度36个unicode字符。  key不能为空，不能为空字符串。  不能包含下列字符：非打印字符ASCII(0-31)，“=”,“*”,“<”,“>”,“\\”,“,”,“|”,“/”。
+        键。  key不能为空，长度1~128个字符（中文也可以输入128个字符）。  可用 UTF-8 格式表示的字母、数字和空格，以及以下字符： _ . : = + - @  key两头不能有空格字符。
 
         :param key: The key of this TagMultyValueEntity.
         :type key: str
@@ -74,7 +74,7 @@ class TagMultyValueEntity:
     def values(self):
         """Gets the values of this TagMultyValueEntity.
 
-        值。每个值最大长度43个unicode字符。  value不能为空，可以空字符串。  不能包含下列字符：非打印字符ASCII(0-31), “=”,“*”,“<”,“>”,“\\”,“,”,“|”,“/”。
+        值列表。  值长度0~255个字符（中文也可以输入255个字符）。  值可用 UTF-8 格式表示的字母、数字和空格，以及以下字符： _ . : / = + - @。  值可以为空字符串。
 
         :return: The values of this TagMultyValueEntity.
         :rtype: list[str]
@@ -85,7 +85,7 @@ class TagMultyValueEntity:
     def values(self, values):
         """Sets the values of this TagMultyValueEntity.
 
-        值。每个值最大长度43个unicode字符。  value不能为空，可以空字符串。  不能包含下列字符：非打印字符ASCII(0-31), “=”,“*”,“<”,“>”,“\\”,“,”,“|”,“/”。
+        值列表。  值长度0~255个字符（中文也可以输入255个字符）。  值可用 UTF-8 格式表示的字母、数字和空格，以及以下字符： _ . : / = + - @。  值可以为空字符串。
 
         :param values: The values of this TagMultyValueEntity.
         :type values: list[str]

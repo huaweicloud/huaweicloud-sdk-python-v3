@@ -66,10 +66,11 @@ class SmsAppUpdateReq:
         self.app_name = app_name
         if create_sign_and_template is not None:
             self.create_sign_and_template = create_sign_and_template
-        self.enterprise_project_id = enterprise_project_id
-        self.enterprise_project_name = enterprise_project_name
-        if region is not None:
-            self.region = region
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
+        if enterprise_project_name is not None:
+            self.enterprise_project_name = enterprise_project_name
+        self.region = region
         if up_link_addr is not None:
             self.up_link_addr = up_link_addr
 

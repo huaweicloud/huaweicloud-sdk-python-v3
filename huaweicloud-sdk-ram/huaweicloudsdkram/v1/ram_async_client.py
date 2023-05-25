@@ -602,6 +602,61 @@ class RamAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_quota_async(self, request):
+        """查询资源共享的配额
+
+        查询当前帐号的资源共享配额信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListQuota
+        :type request: :class:`huaweicloudsdkram.v1.ListQuotaRequest`
+        :rtype: :class:`huaweicloudsdkram.v1.ListQuotaResponse`
+        """
+        return self._list_quota_with_http_info(request)
+
+    def _list_quota_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth']
+
+        return self.call_api(
+            resource_path='/v1/resource-shares/quotas',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListQuotaResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def search_distinct_shared_resources_async(self, request):
         """检索去重的共享的资源
 

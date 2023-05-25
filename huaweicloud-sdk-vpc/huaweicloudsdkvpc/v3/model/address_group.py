@@ -20,25 +20,31 @@ class AddressGroup:
         'id': 'str',
         'name': 'str',
         'description': 'str',
+        'max_capacity': 'int',
         'ip_set': 'list[str]',
         'ip_version': 'int',
         'created_at': 'datetime',
         'updated_at': 'datetime',
-        'tenant_id': 'str'
+        'tenant_id': 'str',
+        'status': 'str',
+        'status_message': 'str'
     }
 
     attribute_map = {
         'id': 'id',
         'name': 'name',
         'description': 'description',
+        'max_capacity': 'max_capacity',
         'ip_set': 'ip_set',
         'ip_version': 'ip_version',
         'created_at': 'created_at',
         'updated_at': 'updated_at',
-        'tenant_id': 'tenant_id'
+        'tenant_id': 'tenant_id',
+        'status': 'status',
+        'status_message': 'status_message'
     }
 
-    def __init__(self, id=None, name=None, description=None, ip_set=None, ip_version=None, created_at=None, updated_at=None, tenant_id=None):
+    def __init__(self, id=None, name=None, description=None, max_capacity=None, ip_set=None, ip_version=None, created_at=None, updated_at=None, tenant_id=None, status=None, status_message=None):
         """AddressGroup
 
         The model defined in huaweicloud sdk
@@ -49,6 +55,8 @@ class AddressGroup:
         :type name: str
         :param description: 功能说明：地址组描述信息 取值范围：0-255个字符 约束：不能包含“&lt;”和“&gt;”。
         :type description: str
+        :param max_capacity: 功能说明：地址组最大条目数，限制地址组可以包含的地址数量 取值范围：0-20 默认值：20
+        :type max_capacity: int
         :param ip_set: 功能说明：地址组可包含地址集 取值范围：可以是单个ip地址，ip地址范围，ip地址cidr 约束：当前一个地址组ip_set数量限制默认值为20，即配置的ip地址、ip地址范围或ip地址cidr的总数默认限制20 
         :type ip_set: list[str]
         :param ip_version: 功能说明：IP地址组ip版本 取值范围：4, 表示ipv4地址组；6, 表示ipv6地址组
@@ -59,6 +67,10 @@ class AddressGroup:
         :type updated_at: datetime
         :param tenant_id: 功能说明：资源所属项目ID
         :type tenant_id: str
+        :param status: 功能说明：地址组状态 取值范围：       NORMAL：正常       UPDATING：更新中       UPDATE_FAILED：更新失败 默认值：NORMAL 约束：当地址组处于UPDATING（更新中）状态时，不允许再次更新
+        :type status: str
+        :param status_message: 功能说明：地址组状态详情信息
+        :type status_message: str
         """
         
         
@@ -66,21 +78,27 @@ class AddressGroup:
         self._id = None
         self._name = None
         self._description = None
+        self._max_capacity = None
         self._ip_set = None
         self._ip_version = None
         self._created_at = None
         self._updated_at = None
         self._tenant_id = None
+        self._status = None
+        self._status_message = None
         self.discriminator = None
 
         self.id = id
         self.name = name
         self.description = description
+        self.max_capacity = max_capacity
         self.ip_set = ip_set
         self.ip_version = ip_version
         self.created_at = created_at
         self.updated_at = updated_at
         self.tenant_id = tenant_id
+        self.status = status
+        self.status_message = status_message
 
     @property
     def id(self):
@@ -147,6 +165,28 @@ class AddressGroup:
         :type description: str
         """
         self._description = description
+
+    @property
+    def max_capacity(self):
+        """Gets the max_capacity of this AddressGroup.
+
+        功能说明：地址组最大条目数，限制地址组可以包含的地址数量 取值范围：0-20 默认值：20
+
+        :return: The max_capacity of this AddressGroup.
+        :rtype: int
+        """
+        return self._max_capacity
+
+    @max_capacity.setter
+    def max_capacity(self, max_capacity):
+        """Sets the max_capacity of this AddressGroup.
+
+        功能说明：地址组最大条目数，限制地址组可以包含的地址数量 取值范围：0-20 默认值：20
+
+        :param max_capacity: The max_capacity of this AddressGroup.
+        :type max_capacity: int
+        """
+        self._max_capacity = max_capacity
 
     @property
     def ip_set(self):
@@ -257,6 +297,50 @@ class AddressGroup:
         :type tenant_id: str
         """
         self._tenant_id = tenant_id
+
+    @property
+    def status(self):
+        """Gets the status of this AddressGroup.
+
+        功能说明：地址组状态 取值范围：       NORMAL：正常       UPDATING：更新中       UPDATE_FAILED：更新失败 默认值：NORMAL 约束：当地址组处于UPDATING（更新中）状态时，不允许再次更新
+
+        :return: The status of this AddressGroup.
+        :rtype: str
+        """
+        return self._status
+
+    @status.setter
+    def status(self, status):
+        """Sets the status of this AddressGroup.
+
+        功能说明：地址组状态 取值范围：       NORMAL：正常       UPDATING：更新中       UPDATE_FAILED：更新失败 默认值：NORMAL 约束：当地址组处于UPDATING（更新中）状态时，不允许再次更新
+
+        :param status: The status of this AddressGroup.
+        :type status: str
+        """
+        self._status = status
+
+    @property
+    def status_message(self):
+        """Gets the status_message of this AddressGroup.
+
+        功能说明：地址组状态详情信息
+
+        :return: The status_message of this AddressGroup.
+        :rtype: str
+        """
+        return self._status_message
+
+    @status_message.setter
+    def status_message(self, status_message):
+        """Sets the status_message of this AddressGroup.
+
+        功能说明：地址组状态详情信息
+
+        :param status_message: The status_message of this AddressGroup.
+        :type status_message: str
+        """
+        self._status_message = status_message
 
     def to_dict(self):
         """Returns the model properties as a dict"""

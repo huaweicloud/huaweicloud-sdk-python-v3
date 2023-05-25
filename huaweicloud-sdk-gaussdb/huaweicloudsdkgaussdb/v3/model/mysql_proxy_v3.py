@@ -32,7 +32,9 @@ class MysqlProxyV3:
         'nodes': 'list[MysqlProxyNodes]',
         'flavor_ref': 'str',
         'name': 'str',
-        'transaction_split': 'str'
+        'transaction_split': 'str',
+        'connection_pool_type': 'str',
+        'switch_connection_pool_type_enabled': 'bool'
     }
 
     attribute_map = {
@@ -51,10 +53,12 @@ class MysqlProxyV3:
         'nodes': 'nodes',
         'flavor_ref': 'flavor_ref',
         'name': 'name',
-        'transaction_split': 'transaction_split'
+        'transaction_split': 'transaction_split',
+        'connection_pool_type': 'connection_pool_type',
+        'switch_connection_pool_type_enabled': 'switch_connection_pool_type_enabled'
     }
 
-    def __init__(self, pool_id=None, status=None, address=None, port=None, pool_status=None, delay_threshold_in_seconds=None, elb_vip=None, eip=None, vcpus=None, ram=None, node_num=None, mode=None, nodes=None, flavor_ref=None, name=None, transaction_split=None):
+    def __init__(self, pool_id=None, status=None, address=None, port=None, pool_status=None, delay_threshold_in_seconds=None, elb_vip=None, eip=None, vcpus=None, ram=None, node_num=None, mode=None, nodes=None, flavor_ref=None, name=None, transaction_split=None, connection_pool_type=None, switch_connection_pool_type_enabled=None):
         """MysqlProxyV3
 
         The model defined in huaweicloud sdk
@@ -91,6 +95,10 @@ class MysqlProxyV3:
         :type name: str
         :param transaction_split: Proxy事务拆分开关状态【ON/OFF】。
         :type transaction_split: str
+        :param connection_pool_type: 连接池类型。  取值范围: - CLOSED 不使用连接池; - SESSION 使用会话级连接池。
+        :type connection_pool_type: str
+        :param switch_connection_pool_type_enabled: 数据库代理版本是否支持会话级连接池。  取值范围: - true 支持; - false 不支持。
+        :type switch_connection_pool_type_enabled: bool
         """
         
         
@@ -111,6 +119,8 @@ class MysqlProxyV3:
         self._flavor_ref = None
         self._name = None
         self._transaction_split = None
+        self._connection_pool_type = None
+        self._switch_connection_pool_type_enabled = None
         self.discriminator = None
 
         if pool_id is not None:
@@ -145,6 +155,10 @@ class MysqlProxyV3:
             self.name = name
         if transaction_split is not None:
             self.transaction_split = transaction_split
+        if connection_pool_type is not None:
+            self.connection_pool_type = connection_pool_type
+        if switch_connection_pool_type_enabled is not None:
+            self.switch_connection_pool_type_enabled = switch_connection_pool_type_enabled
 
     @property
     def pool_id(self):
@@ -497,6 +511,50 @@ class MysqlProxyV3:
         :type transaction_split: str
         """
         self._transaction_split = transaction_split
+
+    @property
+    def connection_pool_type(self):
+        """Gets the connection_pool_type of this MysqlProxyV3.
+
+        连接池类型。  取值范围: - CLOSED 不使用连接池; - SESSION 使用会话级连接池。
+
+        :return: The connection_pool_type of this MysqlProxyV3.
+        :rtype: str
+        """
+        return self._connection_pool_type
+
+    @connection_pool_type.setter
+    def connection_pool_type(self, connection_pool_type):
+        """Sets the connection_pool_type of this MysqlProxyV3.
+
+        连接池类型。  取值范围: - CLOSED 不使用连接池; - SESSION 使用会话级连接池。
+
+        :param connection_pool_type: The connection_pool_type of this MysqlProxyV3.
+        :type connection_pool_type: str
+        """
+        self._connection_pool_type = connection_pool_type
+
+    @property
+    def switch_connection_pool_type_enabled(self):
+        """Gets the switch_connection_pool_type_enabled of this MysqlProxyV3.
+
+        数据库代理版本是否支持会话级连接池。  取值范围: - true 支持; - false 不支持。
+
+        :return: The switch_connection_pool_type_enabled of this MysqlProxyV3.
+        :rtype: bool
+        """
+        return self._switch_connection_pool_type_enabled
+
+    @switch_connection_pool_type_enabled.setter
+    def switch_connection_pool_type_enabled(self, switch_connection_pool_type_enabled):
+        """Sets the switch_connection_pool_type_enabled of this MysqlProxyV3.
+
+        数据库代理版本是否支持会话级连接池。  取值范围: - true 支持; - false 不支持。
+
+        :param switch_connection_pool_type_enabled: The switch_connection_pool_type_enabled of this MysqlProxyV3.
+        :type switch_connection_pool_type_enabled: bool
+        """
+        self._switch_connection_pool_type_enabled = switch_connection_pool_type_enabled
 
     def to_dict(self):
         """Returns the model properties as a dict"""

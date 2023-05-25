@@ -18,17 +18,15 @@ class PublicIp:
 
     openapi_types = {
         'id': 'str',
-        'public_eip': 'str',
-        'eip': 'Eip'
+        'public_eip': 'str'
     }
 
     attribute_map = {
         'id': 'id',
-        'public_eip': 'public_eip',
-        'eip': 'eip'
+        'public_eip': 'public_eip'
     }
 
-    def __init__(self, id=None, public_eip=None, eip=None):
+    def __init__(self, id=None, public_eip=None):
         """PublicIp
 
         The model defined in huaweicloud sdk
@@ -37,21 +35,18 @@ class PublicIp:
         :type id: str
         :param public_eip: 已分配的弹性IP的地址Address。
         :type public_eip: str
-        :param eip: 
-        :type eip: :class:`huaweicloudsdkcbh.v1.Eip`
         """
         
         
 
         self._id = None
         self._public_eip = None
-        self._eip = None
         self.discriminator = None
 
-        self.id = id
-        self.public_eip = public_eip
-        if eip is not None:
-            self.eip = eip
+        if id is not None:
+            self.id = id
+        if public_eip is not None:
+            self.public_eip = public_eip
 
     @property
     def id(self):
@@ -96,24 +91,6 @@ class PublicIp:
         :type public_eip: str
         """
         self._public_eip = public_eip
-
-    @property
-    def eip(self):
-        """Gets the eip of this PublicIp.
-
-        :return: The eip of this PublicIp.
-        :rtype: :class:`huaweicloudsdkcbh.v1.Eip`
-        """
-        return self._eip
-
-    @eip.setter
-    def eip(self, eip):
-        """Sets the eip of this PublicIp.
-
-        :param eip: The eip of this PublicIp.
-        :type eip: :class:`huaweicloudsdkcbh.v1.Eip`
-        """
-        self._eip = eip
 
     def to_dict(self):
         """Returns the model properties as a dict"""

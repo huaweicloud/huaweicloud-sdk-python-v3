@@ -1627,7 +1627,7 @@ class VpcepAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def update_endpoint_white_async(self, request):
-        """更新终端节点的白名单
+        """更新终端节点
 
         功能介绍
         更新或删除允许访问终端节点的白名单。

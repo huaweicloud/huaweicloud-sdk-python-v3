@@ -29,7 +29,8 @@ class UpdatePolicyAssignmentResponse(SdkResponse):
         'updated': 'str',
         'policy_definition_id': 'str',
         'custom_policy': 'CustomPolicy',
-        'parameters': 'dict(str, PolicyParameterValue)'
+        'parameters': 'dict(str, PolicyParameterValue)',
+        'created_by': 'str'
     }
 
     attribute_map = {
@@ -44,10 +45,11 @@ class UpdatePolicyAssignmentResponse(SdkResponse):
         'updated': 'updated',
         'policy_definition_id': 'policy_definition_id',
         'custom_policy': 'custom_policy',
-        'parameters': 'parameters'
+        'parameters': 'parameters',
+        'created_by': 'created_by'
     }
 
-    def __init__(self, policy_assignment_type=None, id=None, name=None, description=None, policy_filter=None, period=None, state=None, created=None, updated=None, policy_definition_id=None, custom_policy=None, parameters=None):
+    def __init__(self, policy_assignment_type=None, id=None, name=None, description=None, policy_filter=None, period=None, state=None, created=None, updated=None, policy_definition_id=None, custom_policy=None, parameters=None, created_by=None):
         """UpdatePolicyAssignmentResponse
 
         The model defined in huaweicloud sdk
@@ -76,6 +78,8 @@ class UpdatePolicyAssignmentResponse(SdkResponse):
         :type custom_policy: :class:`huaweicloudsdkrms.v1.CustomPolicy`
         :param parameters: 规则参数
         :type parameters: dict(str, PolicyParameterValue)
+        :param created_by: 规则的创建者
+        :type created_by: str
         """
         
         super(UpdatePolicyAssignmentResponse, self).__init__()
@@ -92,6 +96,7 @@ class UpdatePolicyAssignmentResponse(SdkResponse):
         self._policy_definition_id = None
         self._custom_policy = None
         self._parameters = None
+        self._created_by = None
         self.discriminator = None
 
         if policy_assignment_type is not None:
@@ -118,6 +123,8 @@ class UpdatePolicyAssignmentResponse(SdkResponse):
             self.custom_policy = custom_policy
         if parameters is not None:
             self.parameters = parameters
+        if created_by is not None:
+            self.created_by = created_by
 
     @property
     def policy_assignment_type(self):
@@ -374,6 +381,28 @@ class UpdatePolicyAssignmentResponse(SdkResponse):
         :type parameters: dict(str, PolicyParameterValue)
         """
         self._parameters = parameters
+
+    @property
+    def created_by(self):
+        """Gets the created_by of this UpdatePolicyAssignmentResponse.
+
+        规则的创建者
+
+        :return: The created_by of this UpdatePolicyAssignmentResponse.
+        :rtype: str
+        """
+        return self._created_by
+
+    @created_by.setter
+    def created_by(self, created_by):
+        """Sets the created_by of this UpdatePolicyAssignmentResponse.
+
+        规则的创建者
+
+        :param created_by: The created_by of this UpdatePolicyAssignmentResponse.
+        :type created_by: str
+        """
+        self._created_by = created_by
 
     def to_dict(self):
         """Returns the model properties as a dict"""

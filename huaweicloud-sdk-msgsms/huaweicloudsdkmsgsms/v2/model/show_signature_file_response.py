@@ -25,6 +25,7 @@ class ShowSignatureFileResponse(SdkResponse):
         'file_type': 'int',
         'module_type': 'int',
         'operator': 'str',
+        'file_desc': 'str',
         'update_time': 'str'
     }
 
@@ -36,10 +37,11 @@ class ShowSignatureFileResponse(SdkResponse):
         'file_type': 'file_type',
         'module_type': 'module_type',
         'operator': 'operator',
+        'file_desc': 'file_desc',
         'update_time': 'update_time'
     }
 
-    def __init__(self, file_id=None, file_name=None, file_ref=None, file_size=None, file_type=None, module_type=None, operator=None, update_time=None):
+    def __init__(self, file_id=None, file_name=None, file_ref=None, file_size=None, file_type=None, module_type=None, operator=None, file_desc=None, update_time=None):
         """ShowSignatureFileResponse
 
         The model defined in huaweicloud sdk
@@ -58,6 +60,8 @@ class ShowSignatureFileResponse(SdkResponse):
         :type module_type: int
         :param operator: 操作人
         :type operator: str
+        :param file_desc: 描述
+        :type file_desc: str
         :param update_time: 更新时间
         :type update_time: str
         """
@@ -71,6 +75,7 @@ class ShowSignatureFileResponse(SdkResponse):
         self._file_type = None
         self._module_type = None
         self._operator = None
+        self._file_desc = None
         self._update_time = None
         self.discriminator = None
 
@@ -88,6 +93,8 @@ class ShowSignatureFileResponse(SdkResponse):
             self.module_type = module_type
         if operator is not None:
             self.operator = operator
+        if file_desc is not None:
+            self.file_desc = file_desc
         if update_time is not None:
             self.update_time = update_time
 
@@ -244,6 +251,28 @@ class ShowSignatureFileResponse(SdkResponse):
         :type operator: str
         """
         self._operator = operator
+
+    @property
+    def file_desc(self):
+        """Gets the file_desc of this ShowSignatureFileResponse.
+
+        描述
+
+        :return: The file_desc of this ShowSignatureFileResponse.
+        :rtype: str
+        """
+        return self._file_desc
+
+    @file_desc.setter
+    def file_desc(self, file_desc):
+        """Sets the file_desc of this ShowSignatureFileResponse.
+
+        描述
+
+        :param file_desc: The file_desc of this ShowSignatureFileResponse.
+        :type file_desc: str
+        """
+        self._file_desc = file_desc
 
     @property
     def update_time(self):

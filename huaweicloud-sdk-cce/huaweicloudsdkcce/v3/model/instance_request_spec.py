@@ -35,7 +35,7 @@ class InstanceRequestSpec:
 
         The model defined in huaweicloud sdk
 
-        :param version: 待安装、升级插件的具体版本版本号，例如1.0.0，如果不传，匹配集群支持的稳定版本
+        :param version: 待安装、升级插件的版本号，例如1.0.0 - 安装：该参数非必传，如果不传，匹配集群支持的最新版本 - 升级：该参数必传，需指定版本号 
         :type version: str
         :param cluster_id: 集群id
         :type cluster_id: str
@@ -63,7 +63,7 @@ class InstanceRequestSpec:
     def version(self):
         """Gets the version of this InstanceRequestSpec.
 
-        待安装、升级插件的具体版本版本号，例如1.0.0，如果不传，匹配集群支持的稳定版本
+        待安装、升级插件的版本号，例如1.0.0 - 安装：该参数非必传，如果不传，匹配集群支持的最新版本 - 升级：该参数必传，需指定版本号 
 
         :return: The version of this InstanceRequestSpec.
         :rtype: str
@@ -74,7 +74,7 @@ class InstanceRequestSpec:
     def version(self, version):
         """Sets the version of this InstanceRequestSpec.
 
-        待安装、升级插件的具体版本版本号，例如1.0.0，如果不传，匹配集群支持的稳定版本
+        待安装、升级插件的版本号，例如1.0.0 - 安装：该参数非必传，如果不传，匹配集群支持的最新版本 - 升级：该参数必传，需指定版本号 
 
         :param version: The version of this InstanceRequestSpec.
         :type version: str

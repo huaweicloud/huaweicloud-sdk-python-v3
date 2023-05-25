@@ -18,21 +18,29 @@ class FlavorAzObject:
 
     openapi_types = {
         'capacity': 'str',
+        'unit': 'str',
+        'available_zones': 'list[str]',
         'az_codes': 'list[str]'
     }
 
     attribute_map = {
         'capacity': 'capacity',
+        'unit': 'unit',
+        'available_zones': 'available_zones',
         'az_codes': 'az_codes'
     }
 
-    def __init__(self, capacity=None, az_codes=None):
+    def __init__(self, capacity=None, unit=None, available_zones=None, az_codes=None):
         """FlavorAzObject
 
         The model defined in huaweicloud sdk
 
         :param capacity: 缓存容量（G Byte）。
         :type capacity: str
+        :param unit: 缓存容量单位。
+        :type unit: str
+        :param available_zones: 可用区信息。
+        :type available_zones: list[str]
         :param az_codes: 有资源的可用区编码。
         :type az_codes: list[str]
         """
@@ -40,11 +48,17 @@ class FlavorAzObject:
         
 
         self._capacity = None
+        self._unit = None
+        self._available_zones = None
         self._az_codes = None
         self.discriminator = None
 
         if capacity is not None:
             self.capacity = capacity
+        if unit is not None:
+            self.unit = unit
+        if available_zones is not None:
+            self.available_zones = available_zones
         if az_codes is not None:
             self.az_codes = az_codes
 
@@ -69,6 +83,50 @@ class FlavorAzObject:
         :type capacity: str
         """
         self._capacity = capacity
+
+    @property
+    def unit(self):
+        """Gets the unit of this FlavorAzObject.
+
+        缓存容量单位。
+
+        :return: The unit of this FlavorAzObject.
+        :rtype: str
+        """
+        return self._unit
+
+    @unit.setter
+    def unit(self, unit):
+        """Sets the unit of this FlavorAzObject.
+
+        缓存容量单位。
+
+        :param unit: The unit of this FlavorAzObject.
+        :type unit: str
+        """
+        self._unit = unit
+
+    @property
+    def available_zones(self):
+        """Gets the available_zones of this FlavorAzObject.
+
+        可用区信息。
+
+        :return: The available_zones of this FlavorAzObject.
+        :rtype: list[str]
+        """
+        return self._available_zones
+
+    @available_zones.setter
+    def available_zones(self, available_zones):
+        """Sets the available_zones of this FlavorAzObject.
+
+        可用区信息。
+
+        :param available_zones: The available_zones of this FlavorAzObject.
+        :type available_zones: list[str]
+        """
+        self._available_zones = available_zones
 
     @property
     def az_codes(self):

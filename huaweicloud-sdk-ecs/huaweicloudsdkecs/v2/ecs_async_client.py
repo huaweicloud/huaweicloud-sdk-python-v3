@@ -1541,6 +1541,83 @@ class EcsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_flavor_sell_policies_async(self, request):
+        """查询规格销售策略
+
+        查询规格销售策略。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListFlavorSellPolicies
+        :type request: :class:`huaweicloudsdkecs.v2.ListFlavorSellPoliciesRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.ListFlavorSellPoliciesResponse`
+        """
+        return self._list_flavor_sell_policies_with_http_info(request)
+
+    def _list_flavor_sell_policies_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'flavor_id' in local_var_params:
+            query_params.append(('flavor_id', local_var_params['flavor_id']))
+        if 'sell_status' in local_var_params:
+            query_params.append(('sell_status', local_var_params['sell_status']))
+        if 'sell_mode' in local_var_params:
+            query_params.append(('sell_mode', local_var_params['sell_mode']))
+        if 'availability_zone_id' in local_var_params:
+            query_params.append(('availability_zone_id', local_var_params['availability_zone_id']))
+        if 'longest_spot_duration_hours_gt' in local_var_params:
+            query_params.append(('longest_spot_duration_hours_gt', local_var_params['longest_spot_duration_hours_gt']))
+        if 'largest_spot_duration_count_gt' in local_var_params:
+            query_params.append(('largest_spot_duration_count_gt', local_var_params['largest_spot_duration_count_gt']))
+        if 'longest_spot_duration_hours' in local_var_params:
+            query_params.append(('longest_spot_duration_hours', local_var_params['longest_spot_duration_hours']))
+        if 'largest_spot_duration_count' in local_var_params:
+            query_params.append(('largest_spot_duration_count', local_var_params['largest_spot_duration_count']))
+        if 'interruption_policy' in local_var_params:
+            query_params.append(('interruption_policy', local_var_params['interruption_policy']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/cloudservers/flavor-sell-policies',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListFlavorSellPoliciesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_flavors_async(self, request):
         """查询规格详情和规格扩展信息列表
 

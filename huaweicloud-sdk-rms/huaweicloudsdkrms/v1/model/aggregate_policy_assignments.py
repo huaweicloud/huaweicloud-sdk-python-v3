@@ -41,7 +41,7 @@ class AggregatePolicyAssignments:
         :type policy_assignment_name: str
         :param compliance: 
         :type compliance: :class:`huaweicloudsdkrms.v1.Compliance`
-        :param account_id: 账户ID
+        :param account_id: 源帐号ID。
         :type account_id: str
         """
         
@@ -128,7 +128,7 @@ class AggregatePolicyAssignments:
     def account_id(self):
         """Gets the account_id of this AggregatePolicyAssignments.
 
-        账户ID
+        源帐号ID。
 
         :return: The account_id of this AggregatePolicyAssignments.
         :rtype: str
@@ -139,7 +139,7 @@ class AggregatePolicyAssignments:
     def account_id(self, account_id):
         """Sets the account_id of this AggregatePolicyAssignments.
 
-        账户ID
+        源帐号ID。
 
         :param account_id: The account_id of this AggregatePolicyAssignments.
         :type account_id: str

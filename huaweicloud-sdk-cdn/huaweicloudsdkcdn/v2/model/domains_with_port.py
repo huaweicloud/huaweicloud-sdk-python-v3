@@ -18,6 +18,7 @@ class DomainsWithPort:
 
     openapi_types = {
         'id': 'str',
+        'domain_name': 'str',
         'business_type': 'str',
         'domain_status': 'str',
         'cname': 'str',
@@ -32,6 +33,7 @@ class DomainsWithPort:
 
     attribute_map = {
         'id': 'id',
+        'domain_name': 'domain_name',
         'business_type': 'business_type',
         'domain_status': 'domain_status',
         'cname': 'cname',
@@ -44,13 +46,15 @@ class DomainsWithPort:
         'service_area': 'service_area'
     }
 
-    def __init__(self, id=None, business_type=None, domain_status=None, cname=None, sources=None, https_status=None, create_time=None, update_time=None, disabled=None, locked=None, service_area=None):
+    def __init__(self, id=None, domain_name=None, business_type=None, domain_status=None, cname=None, sources=None, https_status=None, create_time=None, update_time=None, disabled=None, locked=None, service_area=None):
         """DomainsWithPort
 
         The model defined in huaweicloud sdk
 
         :param id: 加速域名ID。
         :type id: str
+        :param domain_name: 加速域名。
+        :type domain_name: str
         :param business_type: 域名业务类型，若为web，则表示类型为网站加速；若为download，则表示业务类型为文件下载加速；若为video，则表示业务类型为点播加速；若为wholeSite，则表示类型为全站加速。
         :type business_type: str
         :param domain_status: 加速域名状态。取值意义： - online表示“已开启” - offline表示“已停用” - configuring表示“配置中” - configure_failed表示“配置失败” - checking表示“审核中” - check_failed表示“审核未通过” - deleting表示“删除中”。
@@ -76,6 +80,7 @@ class DomainsWithPort:
         
 
         self._id = None
+        self._domain_name = None
         self._business_type = None
         self._domain_status = None
         self._cname = None
@@ -90,6 +95,8 @@ class DomainsWithPort:
 
         if id is not None:
             self.id = id
+        if domain_name is not None:
+            self.domain_name = domain_name
         if business_type is not None:
             self.business_type = business_type
         if domain_status is not None:
@@ -132,6 +139,28 @@ class DomainsWithPort:
         :type id: str
         """
         self._id = id
+
+    @property
+    def domain_name(self):
+        """Gets the domain_name of this DomainsWithPort.
+
+        加速域名。
+
+        :return: The domain_name of this DomainsWithPort.
+        :rtype: str
+        """
+        return self._domain_name
+
+    @domain_name.setter
+    def domain_name(self, domain_name):
+        """Sets the domain_name of this DomainsWithPort.
+
+        加速域名。
+
+        :param domain_name: The domain_name of this DomainsWithPort.
+        :type domain_name: str
+        """
+        self._domain_name = domain_name
 
     @property
     def business_type(self):

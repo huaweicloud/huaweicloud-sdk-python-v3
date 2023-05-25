@@ -43,10 +43,8 @@ class AutoscanConfigRequest:
         self._schedule_at = None
         self.discriminator = None
 
-        if enable_auto_scan is not None:
-            self.enable_auto_scan = enable_auto_scan
-        if schedule_at is not None:
-            self.schedule_at = schedule_at
+        self.enable_auto_scan = enable_auto_scan
+        self.schedule_at = schedule_at
 
     @property
     def enable_auto_scan(self):

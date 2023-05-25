@@ -19,6 +19,7 @@ class CreateResourceShareReqBody:
     openapi_types = {
         'name': 'str',
         'description': 'str',
+        'allow_external_principals': 'bool',
         'permission_ids': 'list[str]',
         'principals': 'list[str]',
         'resource_urns': 'list[str]',
@@ -28,13 +29,14 @@ class CreateResourceShareReqBody:
     attribute_map = {
         'name': 'name',
         'description': 'description',
+        'allow_external_principals': 'allow_external_principals',
         'permission_ids': 'permission_ids',
         'principals': 'principals',
         'resource_urns': 'resource_urns',
         'tags': 'tags'
     }
 
-    def __init__(self, name=None, description=None, permission_ids=None, principals=None, resource_urns=None, tags=None):
+    def __init__(self, name=None, description=None, allow_external_principals=None, permission_ids=None, principals=None, resource_urns=None, tags=None):
         """CreateResourceShareReqBody
 
         The model defined in huaweicloud sdk
@@ -43,6 +45,8 @@ class CreateResourceShareReqBody:
         :type name: str
         :param description: 资源共享实例的描述。
         :type description: str
+        :param allow_external_principals: 资源共享实例是否支持共享给组织外账号。
+        :type allow_external_principals: bool
         :param permission_ids: 资源共享实例关联的RAM权限列表。一种资源类型只能关联一个RAM权限。如果您没有指定权限ID，RAM将自动为每个资源类型关联默认权限。
         :type permission_ids: list[str]
         :param principals: 资源共享实例关联的一个或多个资源使用者的列表。
@@ -57,6 +61,7 @@ class CreateResourceShareReqBody:
 
         self._name = None
         self._description = None
+        self._allow_external_principals = None
         self._permission_ids = None
         self._principals = None
         self._resource_urns = None
@@ -66,6 +71,8 @@ class CreateResourceShareReqBody:
         self.name = name
         if description is not None:
             self.description = description
+        if allow_external_principals is not None:
+            self.allow_external_principals = allow_external_principals
         if permission_ids is not None:
             self.permission_ids = permission_ids
         if principals is not None:
@@ -118,6 +125,28 @@ class CreateResourceShareReqBody:
         :type description: str
         """
         self._description = description
+
+    @property
+    def allow_external_principals(self):
+        """Gets the allow_external_principals of this CreateResourceShareReqBody.
+
+        资源共享实例是否支持共享给组织外账号。
+
+        :return: The allow_external_principals of this CreateResourceShareReqBody.
+        :rtype: bool
+        """
+        return self._allow_external_principals
+
+    @allow_external_principals.setter
+    def allow_external_principals(self, allow_external_principals):
+        """Sets the allow_external_principals of this CreateResourceShareReqBody.
+
+        资源共享实例是否支持共享给组织外账号。
+
+        :param allow_external_principals: The allow_external_principals of this CreateResourceShareReqBody.
+        :type allow_external_principals: bool
+        """
+        self._allow_external_principals = allow_external_principals
 
     @property
     def permission_ids(self):

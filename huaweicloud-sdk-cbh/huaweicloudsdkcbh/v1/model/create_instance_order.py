@@ -45,23 +45,23 @@ class CreateInstanceOrder:
 
         The model defined in huaweicloud sdk
 
-        :param instance_key: 云堡垒机实例ID。
+        :param instance_key: 云堡垒机实例key。
         :type instance_key: int
         :param cloud_service_type: 云服务类型，默认填写“hws.service.type.cbh”。
         :type cloud_service_type: str
-        :param region_id: 云堡垒机实例局点ID。
+        :param region_id: 云堡垒机实例局点ID。 可参考[地区和终端节点](https://developer.huaweicloud.com/endpoint)获取
         :type region_id: str
-        :param charging_mode: 计费模式。“0”包周期计费。
+        :param charging_mode: 计费模式。 - 0 包周期计费。
         :type charging_mode: int
-        :param period_type: 订购周期类型。 - 2：月 - 3：年 - 5：绝对时间
+        :param period_type: 订购周期类型。 - 2：月 - 3：年
         :type period_type: int
-        :param period_num: 订购周期数。 - period_type&#x3D;2（周期类型为月），取值范围[1，9] - periodType&#x3D;3（周期类型为年），取值范围[1，10] - periodType&#x3D;5时，可空
+        :param period_num: 订购周期数。 - period_type&#x3D;2（周期类型为月），取值范围[1，9] - periodType&#x3D;3（周期类型为年），取值范围[1，10]
         :type period_num: int
         :param product_infos: 产品信息
         :type product_infos: list[:class:`huaweicloudsdkcbh.v1.ProductInfos`]
         :param is_auto_renew: 是否自动续订。 - 1，自动续订 - 0，不自动续订（默认）
         :type is_auto_renew: int
-        :param subscription_num: 订购数量，取值大于0。
+        :param subscription_num: 订购数量。当前仅支持订购1个，填写默认值1。
         :type subscription_num: int
         """
         
@@ -85,14 +85,15 @@ class CreateInstanceOrder:
         self.period_type = period_type
         self.period_num = period_num
         self.product_infos = product_infos
-        self.is_auto_renew = is_auto_renew
+        if is_auto_renew is not None:
+            self.is_auto_renew = is_auto_renew
         self.subscription_num = subscription_num
 
     @property
     def instance_key(self):
         """Gets the instance_key of this CreateInstanceOrder.
 
-        云堡垒机实例ID。
+        云堡垒机实例key。
 
         :return: The instance_key of this CreateInstanceOrder.
         :rtype: int
@@ -103,7 +104,7 @@ class CreateInstanceOrder:
     def instance_key(self, instance_key):
         """Sets the instance_key of this CreateInstanceOrder.
 
-        云堡垒机实例ID。
+        云堡垒机实例key。
 
         :param instance_key: The instance_key of this CreateInstanceOrder.
         :type instance_key: int
@@ -136,7 +137,7 @@ class CreateInstanceOrder:
     def region_id(self):
         """Gets the region_id of this CreateInstanceOrder.
 
-        云堡垒机实例局点ID。
+        云堡垒机实例局点ID。 可参考[地区和终端节点](https://developer.huaweicloud.com/endpoint)获取
 
         :return: The region_id of this CreateInstanceOrder.
         :rtype: str
@@ -147,7 +148,7 @@ class CreateInstanceOrder:
     def region_id(self, region_id):
         """Sets the region_id of this CreateInstanceOrder.
 
-        云堡垒机实例局点ID。
+        云堡垒机实例局点ID。 可参考[地区和终端节点](https://developer.huaweicloud.com/endpoint)获取
 
         :param region_id: The region_id of this CreateInstanceOrder.
         :type region_id: str
@@ -158,7 +159,7 @@ class CreateInstanceOrder:
     def charging_mode(self):
         """Gets the charging_mode of this CreateInstanceOrder.
 
-        计费模式。“0”包周期计费。
+        计费模式。 - 0 包周期计费。
 
         :return: The charging_mode of this CreateInstanceOrder.
         :rtype: int
@@ -169,7 +170,7 @@ class CreateInstanceOrder:
     def charging_mode(self, charging_mode):
         """Sets the charging_mode of this CreateInstanceOrder.
 
-        计费模式。“0”包周期计费。
+        计费模式。 - 0 包周期计费。
 
         :param charging_mode: The charging_mode of this CreateInstanceOrder.
         :type charging_mode: int
@@ -180,7 +181,7 @@ class CreateInstanceOrder:
     def period_type(self):
         """Gets the period_type of this CreateInstanceOrder.
 
-        订购周期类型。 - 2：月 - 3：年 - 5：绝对时间
+        订购周期类型。 - 2：月 - 3：年
 
         :return: The period_type of this CreateInstanceOrder.
         :rtype: int
@@ -191,7 +192,7 @@ class CreateInstanceOrder:
     def period_type(self, period_type):
         """Sets the period_type of this CreateInstanceOrder.
 
-        订购周期类型。 - 2：月 - 3：年 - 5：绝对时间
+        订购周期类型。 - 2：月 - 3：年
 
         :param period_type: The period_type of this CreateInstanceOrder.
         :type period_type: int
@@ -202,7 +203,7 @@ class CreateInstanceOrder:
     def period_num(self):
         """Gets the period_num of this CreateInstanceOrder.
 
-        订购周期数。 - period_type=2（周期类型为月），取值范围[1，9] - periodType=3（周期类型为年），取值范围[1，10] - periodType=5时，可空
+        订购周期数。 - period_type=2（周期类型为月），取值范围[1，9] - periodType=3（周期类型为年），取值范围[1，10]
 
         :return: The period_num of this CreateInstanceOrder.
         :rtype: int
@@ -213,7 +214,7 @@ class CreateInstanceOrder:
     def period_num(self, period_num):
         """Sets the period_num of this CreateInstanceOrder.
 
-        订购周期数。 - period_type=2（周期类型为月），取值范围[1，9] - periodType=3（周期类型为年），取值范围[1，10] - periodType=5时，可空
+        订购周期数。 - period_type=2（周期类型为月），取值范围[1，9] - periodType=3（周期类型为年），取值范围[1，10]
 
         :param period_num: The period_num of this CreateInstanceOrder.
         :type period_num: int
@@ -268,7 +269,7 @@ class CreateInstanceOrder:
     def subscription_num(self):
         """Gets the subscription_num of this CreateInstanceOrder.
 
-        订购数量，取值大于0。
+        订购数量。当前仅支持订购1个，填写默认值1。
 
         :return: The subscription_num of this CreateInstanceOrder.
         :rtype: int
@@ -279,7 +280,7 @@ class CreateInstanceOrder:
     def subscription_num(self, subscription_num):
         """Sets the subscription_num of this CreateInstanceOrder.
 
-        订购数量，取值大于0。
+        订购数量。当前仅支持订购1个，填写默认值1。
 
         :param subscription_num: The subscription_num of this CreateInstanceOrder.
         :type subscription_num: int

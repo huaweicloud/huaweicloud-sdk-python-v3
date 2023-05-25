@@ -18,25 +18,25 @@ class ObsProperties:
 
     openapi_types = {
         'endpoint': 'str',
-        'buket': 'str',
+        'bucket': 'str',
         'key': 'str'
     }
 
     attribute_map = {
         'endpoint': 'endpoint',
-        'buket': 'buket',
+        'bucket': 'bucket',
         'key': 'key'
     }
 
-    def __init__(self, endpoint=None, buket=None, key=None):
+    def __init__(self, endpoint=None, bucket=None, key=None):
         """ObsProperties
 
         The model defined in huaweicloud sdk
 
         :param endpoint: obs的终端地址，比如：https://obs.region_name.external_domain_name.com。
         :type endpoint: str
-        :param buket: 软件包在obs的桶名。
-        :type buket: str
+        :param bucket: 软件包在obs的桶名。
+        :type bucket: str
         :param key: obs桶中的对象，一般是软件包名，有文件夹的话要加上文件夹的路径。比如test.jar或者demo/test.jar。
         :type key: str
         """
@@ -44,14 +44,14 @@ class ObsProperties:
         
 
         self._endpoint = None
-        self._buket = None
+        self._bucket = None
         self._key = None
         self.discriminator = None
 
         if endpoint is not None:
             self.endpoint = endpoint
-        if buket is not None:
-            self.buket = buket
+        if bucket is not None:
+            self.bucket = bucket
         if key is not None:
             self.key = key
 
@@ -78,26 +78,26 @@ class ObsProperties:
         self._endpoint = endpoint
 
     @property
-    def buket(self):
-        """Gets the buket of this ObsProperties.
+    def bucket(self):
+        """Gets the bucket of this ObsProperties.
 
         软件包在obs的桶名。
 
-        :return: The buket of this ObsProperties.
+        :return: The bucket of this ObsProperties.
         :rtype: str
         """
-        return self._buket
+        return self._bucket
 
-    @buket.setter
-    def buket(self, buket):
-        """Sets the buket of this ObsProperties.
+    @bucket.setter
+    def bucket(self, bucket):
+        """Sets the bucket of this ObsProperties.
 
         软件包在obs的桶名。
 
-        :param buket: The buket of this ObsProperties.
-        :type buket: str
+        :param bucket: The bucket of this ObsProperties.
+        :type bucket: str
         """
-        self._buket = buket
+        self._bucket = bucket
 
     @property
     def key(self):

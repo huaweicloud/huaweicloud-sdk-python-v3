@@ -210,6 +210,62 @@ class IamClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def associate_role_to_agency_on_enterprise_project(self, request):
+        """application/json
+
+        该接口可以基于委托为企业项目授权
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for AssociateRoleToAgencyOnEnterpriseProject
+        :type request: :class:`huaweicloudsdkiam.v3.AssociateRoleToAgencyOnEnterpriseProjectRequest`
+        :rtype: :class:`huaweicloudsdkiam.v3.AssociateRoleToAgencyOnEnterpriseProjectResponse`
+        """
+        return self._associate_role_to_agency_on_enterprise_project_with_http_info(request)
+
+    def _associate_role_to_agency_on_enterprise_project_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3.0/OS-PERMISSION/subjects/agency/scopes/enterprise-project/role-assignments',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='AssociateRoleToAgencyOnEnterpriseProjectResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def associate_role_to_group_on_enterprise_project(self, request):
         """基于用户组为企业项目授权
 
@@ -5329,6 +5385,62 @@ class IamClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='RemoveProjectPermissionFromAgencyResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def revoke_role_from_agency_on_enterprise_project(self, request):
+        """revoke_role_from_agency_on_enterprise_project
+
+        该接口可以删除企业项目委托上的授权
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for RevokeRoleFromAgencyOnEnterpriseProject
+        :type request: :class:`huaweicloudsdkiam.v3.RevokeRoleFromAgencyOnEnterpriseProjectRequest`
+        :rtype: :class:`huaweicloudsdkiam.v3.RevokeRoleFromAgencyOnEnterpriseProjectResponse`
+        """
+        return self._revoke_role_from_agency_on_enterprise_project_with_http_info(request)
+
+    def _revoke_role_from_agency_on_enterprise_project_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3.0/OS-PERMISSION/subjects/agency/scopes/enterprise-project/role-assignments',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='RevokeRoleFromAgencyOnEnterpriseProjectResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

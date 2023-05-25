@@ -22,7 +22,8 @@ class EndpointService:
         'service_name': 'str',
         'service_type': 'str',
         'created_at': 'str',
-        'is_charge': 'bool'
+        'is_charge': 'bool',
+        'enable_policy': 'bool'
     }
 
     attribute_map = {
@@ -31,10 +32,11 @@ class EndpointService:
         'service_name': 'service_name',
         'service_type': 'service_type',
         'created_at': 'created_at',
-        'is_charge': 'is_charge'
+        'is_charge': 'is_charge',
+        'enable_policy': 'enable_policy'
     }
 
-    def __init__(self, id=None, owner=None, service_name=None, service_type=None, created_at=None, is_charge=None):
+    def __init__(self, id=None, owner=None, service_name=None, service_type=None, created_at=None, is_charge=None, enable_policy=None):
         """EndpointService
 
         The model defined in huaweicloud sdk
@@ -51,6 +53,8 @@ class EndpointService:
         :type created_at: str
         :param is_charge: 连接该终端节点服务的终端节点是否计费。 ● true：计费 ● false：不计费
         :type is_charge: bool
+        :param enable_policy: 是否开启终端节点策略。 ● false：不支持设置终端节点策略 ● true：支持设置终端节点策略 默认为false 是否开启终端节点策略。 ● false：不支持设置终端节点策略 ● true：支持设置终端节点策略 默认为false
+        :type enable_policy: bool
         """
         
         
@@ -61,6 +65,7 @@ class EndpointService:
         self._service_type = None
         self._created_at = None
         self._is_charge = None
+        self._enable_policy = None
         self.discriminator = None
 
         if id is not None:
@@ -75,6 +80,8 @@ class EndpointService:
             self.created_at = created_at
         if is_charge is not None:
             self.is_charge = is_charge
+        if enable_policy is not None:
+            self.enable_policy = enable_policy
 
     @property
     def id(self):
@@ -207,6 +214,28 @@ class EndpointService:
         :type is_charge: bool
         """
         self._is_charge = is_charge
+
+    @property
+    def enable_policy(self):
+        """Gets the enable_policy of this EndpointService.
+
+        是否开启终端节点策略。 ● false：不支持设置终端节点策略 ● true：支持设置终端节点策略 默认为false 是否开启终端节点策略。 ● false：不支持设置终端节点策略 ● true：支持设置终端节点策略 默认为false
+
+        :return: The enable_policy of this EndpointService.
+        :rtype: bool
+        """
+        return self._enable_policy
+
+    @enable_policy.setter
+    def enable_policy(self, enable_policy):
+        """Sets the enable_policy of this EndpointService.
+
+        是否开启终端节点策略。 ● false：不支持设置终端节点策略 ● true：支持设置终端节点策略 默认为false 是否开启终端节点策略。 ● false：不支持设置终端节点策略 ● true：支持设置终端节点策略 默认为false
+
+        :param enable_policy: The enable_policy of this EndpointService.
+        :type enable_policy: bool
+        """
+        self._enable_policy = enable_policy
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -20,12 +20,15 @@ class ComponentView:
         'id': 'str',
         'application_id': 'str',
         'name': 'str',
+        'project_id': 'str',
+        'pipeline_ids': 'list[str]',
         'runtime': 'RuntimeType',
         'category': 'ComponentCategory',
         'sub_category': 'ComponentSubCategory',
         'description': 'str',
         'status': 'int',
         'source': 'SourceObject',
+        'build': 'BuildInfo',
         'creator': 'str',
         'create_time': 'int',
         'update_time': 'int'
@@ -35,18 +38,21 @@ class ComponentView:
         'id': 'id',
         'application_id': 'application_id',
         'name': 'name',
+        'project_id': 'project_id',
+        'pipeline_ids': 'pipeline_ids',
         'runtime': 'runtime',
         'category': 'category',
         'sub_category': 'sub_category',
         'description': 'description',
         'status': 'status',
         'source': 'source',
+        'build': 'build',
         'creator': 'creator',
         'create_time': 'create_time',
         'update_time': 'update_time'
     }
 
-    def __init__(self, id=None, application_id=None, name=None, runtime=None, category=None, sub_category=None, description=None, status=None, source=None, creator=None, create_time=None, update_time=None):
+    def __init__(self, id=None, application_id=None, name=None, project_id=None, pipeline_ids=None, runtime=None, category=None, sub_category=None, description=None, status=None, source=None, build=None, creator=None, create_time=None, update_time=None):
         """ComponentView
 
         The model defined in huaweicloud sdk
@@ -57,6 +63,10 @@ class ComponentView:
         :type application_id: str
         :param name: 应用组件名称。
         :type name: str
+        :param project_id: 项目ID。
+        :type project_id: str
+        :param pipeline_ids: 流水线Id列表，最多10个。
+        :type pipeline_ids: list[str]
         :param runtime: 
         :type runtime: :class:`huaweicloudsdkservicestage.v2.RuntimeType`
         :param category: 
@@ -69,6 +79,8 @@ class ComponentView:
         :type status: int
         :param source: 
         :type source: :class:`huaweicloudsdkservicestage.v2.SourceObject`
+        :param build: 
+        :type build: :class:`huaweicloudsdkservicestage.v2.BuildInfo`
         :param creator: 创建人。
         :type creator: str
         :param create_time: 创建时间。
@@ -82,12 +94,15 @@ class ComponentView:
         self._id = None
         self._application_id = None
         self._name = None
+        self._project_id = None
+        self._pipeline_ids = None
         self._runtime = None
         self._category = None
         self._sub_category = None
         self._description = None
         self._status = None
         self._source = None
+        self._build = None
         self._creator = None
         self._create_time = None
         self._update_time = None
@@ -99,6 +114,10 @@ class ComponentView:
             self.application_id = application_id
         if name is not None:
             self.name = name
+        if project_id is not None:
+            self.project_id = project_id
+        if pipeline_ids is not None:
+            self.pipeline_ids = pipeline_ids
         if runtime is not None:
             self.runtime = runtime
         if category is not None:
@@ -111,6 +130,8 @@ class ComponentView:
             self.status = status
         if source is not None:
             self.source = source
+        if build is not None:
+            self.build = build
         if creator is not None:
             self.creator = creator
         if create_time is not None:
@@ -183,6 +204,50 @@ class ComponentView:
         :type name: str
         """
         self._name = name
+
+    @property
+    def project_id(self):
+        """Gets the project_id of this ComponentView.
+
+        项目ID。
+
+        :return: The project_id of this ComponentView.
+        :rtype: str
+        """
+        return self._project_id
+
+    @project_id.setter
+    def project_id(self, project_id):
+        """Sets the project_id of this ComponentView.
+
+        项目ID。
+
+        :param project_id: The project_id of this ComponentView.
+        :type project_id: str
+        """
+        self._project_id = project_id
+
+    @property
+    def pipeline_ids(self):
+        """Gets the pipeline_ids of this ComponentView.
+
+        流水线Id列表，最多10个。
+
+        :return: The pipeline_ids of this ComponentView.
+        :rtype: list[str]
+        """
+        return self._pipeline_ids
+
+    @pipeline_ids.setter
+    def pipeline_ids(self, pipeline_ids):
+        """Sets the pipeline_ids of this ComponentView.
+
+        流水线Id列表，最多10个。
+
+        :param pipeline_ids: The pipeline_ids of this ComponentView.
+        :type pipeline_ids: list[str]
+        """
+        self._pipeline_ids = pipeline_ids
 
     @property
     def runtime(self):
@@ -299,6 +364,24 @@ class ComponentView:
         :type source: :class:`huaweicloudsdkservicestage.v2.SourceObject`
         """
         self._source = source
+
+    @property
+    def build(self):
+        """Gets the build of this ComponentView.
+
+        :return: The build of this ComponentView.
+        :rtype: :class:`huaweicloudsdkservicestage.v2.BuildInfo`
+        """
+        return self._build
+
+    @build.setter
+    def build(self, build):
+        """Sets the build of this ComponentView.
+
+        :param build: The build of this ComponentView.
+        :type build: :class:`huaweicloudsdkservicestage.v2.BuildInfo`
+        """
+        self._build = build
 
     @property
     def creator(self):

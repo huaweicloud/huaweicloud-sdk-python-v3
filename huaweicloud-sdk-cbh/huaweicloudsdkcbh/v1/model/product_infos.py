@@ -20,21 +20,17 @@ class ProductInfos:
         'product_id': 'str',
         'cloud_service_type': 'str',
         'resource_type': 'str',
-        'resource_spec_code': 'str',
-        'resource_size_measure_id': 'str',
-        'resource_size': 'str'
+        'resource_spec_code': 'str'
     }
 
     attribute_map = {
         'product_id': 'product_id',
         'cloud_service_type': 'cloud_service_type',
         'resource_type': 'resource_type',
-        'resource_spec_code': 'resource_spec_code',
-        'resource_size_measure_id': 'resource_size_measure_id',
-        'resource_size': 'resource_size'
+        'resource_spec_code': 'resource_spec_code'
     }
 
-    def __init__(self, product_id=None, cloud_service_type=None, resource_type=None, resource_spec_code=None, resource_size_measure_id=None, resource_size=None):
+    def __init__(self, product_id=None, cloud_service_type=None, resource_type=None, resource_spec_code=None):
         """ProductInfos
 
         The model defined in huaweicloud sdk
@@ -45,12 +41,8 @@ class ProductInfos:
         :type cloud_service_type: str
         :param resource_type: 云堡垒机资源类型，填写“hws.resource.type.cbh.ins”。
         :type resource_type: str
-        :param resource_spec_code: 待创建云堡垒机规格ID，例如： - cbh.basic.50 - cbh.enhance.50 已上线的规格请参见《云堡垒机产品介绍》的“服务版本差异(https://support.huaweicloud.com/productdesc-cbh/cbh_01_0010.html)”章节。
+        :param resource_spec_code: 待创建云堡垒机规格ID，例如： - cbh.basic.50 - cbh.enhance.50 已上线的规格请参见《云堡垒机产品介绍》的[服务版本差异](https://support.huaweicloud.com/productdesc-cbh/cbh_01_0010.html)章节。
         :type resource_spec_code: str
-        :param resource_size_measure_id: 资源容量度量标识。 - 15：Mbps（购买带宽时使用） - 17：GB（购买云硬盘时使用） - 14：个/次（购买堡垒机使用）
-        :type resource_size_measure_id: str
-        :param resource_size: 资源容量大小。默认为1
-        :type resource_size: str
         """
         
         
@@ -59,16 +51,12 @@ class ProductInfos:
         self._cloud_service_type = None
         self._resource_type = None
         self._resource_spec_code = None
-        self._resource_size_measure_id = None
-        self._resource_size = None
         self.discriminator = None
 
         self.product_id = product_id
         self.cloud_service_type = cloud_service_type
         self.resource_type = resource_type
         self.resource_spec_code = resource_spec_code
-        self.resource_size_measure_id = resource_size_measure_id
-        self.resource_size = resource_size
 
     @property
     def product_id(self):
@@ -140,7 +128,7 @@ class ProductInfos:
     def resource_spec_code(self):
         """Gets the resource_spec_code of this ProductInfos.
 
-        待创建云堡垒机规格ID，例如： - cbh.basic.50 - cbh.enhance.50 已上线的规格请参见《云堡垒机产品介绍》的“服务版本差异(https://support.huaweicloud.com/productdesc-cbh/cbh_01_0010.html)”章节。
+        待创建云堡垒机规格ID，例如： - cbh.basic.50 - cbh.enhance.50 已上线的规格请参见《云堡垒机产品介绍》的[服务版本差异](https://support.huaweicloud.com/productdesc-cbh/cbh_01_0010.html)章节。
 
         :return: The resource_spec_code of this ProductInfos.
         :rtype: str
@@ -151,56 +139,12 @@ class ProductInfos:
     def resource_spec_code(self, resource_spec_code):
         """Sets the resource_spec_code of this ProductInfos.
 
-        待创建云堡垒机规格ID，例如： - cbh.basic.50 - cbh.enhance.50 已上线的规格请参见《云堡垒机产品介绍》的“服务版本差异(https://support.huaweicloud.com/productdesc-cbh/cbh_01_0010.html)”章节。
+        待创建云堡垒机规格ID，例如： - cbh.basic.50 - cbh.enhance.50 已上线的规格请参见《云堡垒机产品介绍》的[服务版本差异](https://support.huaweicloud.com/productdesc-cbh/cbh_01_0010.html)章节。
 
         :param resource_spec_code: The resource_spec_code of this ProductInfos.
         :type resource_spec_code: str
         """
         self._resource_spec_code = resource_spec_code
-
-    @property
-    def resource_size_measure_id(self):
-        """Gets the resource_size_measure_id of this ProductInfos.
-
-        资源容量度量标识。 - 15：Mbps（购买带宽时使用） - 17：GB（购买云硬盘时使用） - 14：个/次（购买堡垒机使用）
-
-        :return: The resource_size_measure_id of this ProductInfos.
-        :rtype: str
-        """
-        return self._resource_size_measure_id
-
-    @resource_size_measure_id.setter
-    def resource_size_measure_id(self, resource_size_measure_id):
-        """Sets the resource_size_measure_id of this ProductInfos.
-
-        资源容量度量标识。 - 15：Mbps（购买带宽时使用） - 17：GB（购买云硬盘时使用） - 14：个/次（购买堡垒机使用）
-
-        :param resource_size_measure_id: The resource_size_measure_id of this ProductInfos.
-        :type resource_size_measure_id: str
-        """
-        self._resource_size_measure_id = resource_size_measure_id
-
-    @property
-    def resource_size(self):
-        """Gets the resource_size of this ProductInfos.
-
-        资源容量大小。默认为1
-
-        :return: The resource_size of this ProductInfos.
-        :rtype: str
-        """
-        return self._resource_size
-
-    @resource_size.setter
-    def resource_size(self, resource_size):
-        """Sets the resource_size of this ProductInfos.
-
-        资源容量大小。默认为1
-
-        :param resource_size: The resource_size of this ProductInfos.
-        :type resource_size: str
-        """
-        self._resource_size = resource_size
 
     def to_dict(self):
         """Returns the model properties as a dict"""

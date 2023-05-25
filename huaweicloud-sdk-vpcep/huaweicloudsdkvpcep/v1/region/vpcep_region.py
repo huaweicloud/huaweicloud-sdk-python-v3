@@ -43,6 +43,8 @@ class VpcepRegion:
                         "https://vpcep.sa-brazil-1.myhuaweicloud.com")
     LA_NORTH_2 = Region("la-north-2",
                         "https://vpcep.la-north-2.myhuaweicloud.com")
+    TR_WEST_1 = Region("tr-west-1",
+                        "https://vpcep.tr-west-1.myhuaweicloud.com")
 
     static_fields = {
         "cn-north-4": CN_NORTH_4,
@@ -62,6 +64,7 @@ class VpcepRegion:
         "cn-south-2": CN_SOUTH_2,
         "sa-brazil-1": SA_BRAZIL_1,
         "la-north-2": LA_NORTH_2,
+        "tr-west-1": TR_WEST_1,
     }
 
     @classmethod

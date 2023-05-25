@@ -31,7 +31,7 @@ class Compliance:
 
         The model defined in huaweicloud sdk
 
-        :param compliance_state: 合规规则合规结果
+        :param compliance_state: 合规结果。
         :type compliance_state: str
         :param resource_details: 
         :type resource_details: :class:`huaweicloudsdkrms.v1.PolicyComplianceSummaryUnit`
@@ -52,7 +52,7 @@ class Compliance:
     def compliance_state(self):
         """Gets the compliance_state of this Compliance.
 
-        合规规则合规结果
+        合规结果。
 
         :return: The compliance_state of this Compliance.
         :rtype: str
@@ -63,7 +63,7 @@ class Compliance:
     def compliance_state(self, compliance_state):
         """Sets the compliance_state of this Compliance.
 
-        合规规则合规结果
+        合规结果。
 
         :param compliance_state: The compliance_state of this Compliance.
         :type compliance_state: str

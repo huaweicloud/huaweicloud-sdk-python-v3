@@ -41,9 +41,9 @@ class AggregateComplianceDetailRequest:
 
         :param aggregator_id: 资源聚合器ID
         :type aggregator_id: str
-        :param account_id: 租户ID
+        :param account_id: 源帐号ID
         :type account_id: str
-        :param compliance_state: 合规性状态
+        :param compliance_state: 合规结果。
         :type compliance_state: str
         :param policy_assignment_name: 合规规则名称
         :type policy_assignment_name: str
@@ -99,7 +99,7 @@ class AggregateComplianceDetailRequest:
     def account_id(self):
         """Gets the account_id of this AggregateComplianceDetailRequest.
 
-        租户ID
+        源帐号ID
 
         :return: The account_id of this AggregateComplianceDetailRequest.
         :rtype: str
@@ -110,7 +110,7 @@ class AggregateComplianceDetailRequest:
     def account_id(self, account_id):
         """Sets the account_id of this AggregateComplianceDetailRequest.
 
-        租户ID
+        源帐号ID
 
         :param account_id: The account_id of this AggregateComplianceDetailRequest.
         :type account_id: str
@@ -121,7 +121,7 @@ class AggregateComplianceDetailRequest:
     def compliance_state(self):
         """Gets the compliance_state of this AggregateComplianceDetailRequest.
 
-        合规性状态
+        合规结果。
 
         :return: The compliance_state of this AggregateComplianceDetailRequest.
         :rtype: str
@@ -132,7 +132,7 @@ class AggregateComplianceDetailRequest:
     def compliance_state(self, compliance_state):
         """Sets the compliance_state of this AggregateComplianceDetailRequest.
 
-        合规性状态
+        合规结果。
 
         :param compliance_state: The compliance_state of this AggregateComplianceDetailRequest.
         :type compliance_state: str

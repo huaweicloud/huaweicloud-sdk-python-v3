@@ -33,9 +33,9 @@ class AggregatePolicyAssignmentsFilters:
 
         The model defined in huaweicloud sdk
 
-        :param account_id: 租户ID
+        :param account_id: 源帐号ID。
         :type account_id: str
-        :param compliance_state: 合规性状态
+        :param compliance_state: 合规结果。
         :type compliance_state: str
         :param policy_assignment_name: 合规规则名称
         :type policy_assignment_name: str
@@ -59,7 +59,7 @@ class AggregatePolicyAssignmentsFilters:
     def account_id(self):
         """Gets the account_id of this AggregatePolicyAssignmentsFilters.
 
-        租户ID
+        源帐号ID。
 
         :return: The account_id of this AggregatePolicyAssignmentsFilters.
         :rtype: str
@@ -70,7 +70,7 @@ class AggregatePolicyAssignmentsFilters:
     def account_id(self, account_id):
         """Sets the account_id of this AggregatePolicyAssignmentsFilters.
 
-        租户ID
+        源帐号ID。
 
         :param account_id: The account_id of this AggregatePolicyAssignmentsFilters.
         :type account_id: str
@@ -81,7 +81,7 @@ class AggregatePolicyAssignmentsFilters:
     def compliance_state(self):
         """Gets the compliance_state of this AggregatePolicyAssignmentsFilters.
 
-        合规性状态
+        合规结果。
 
         :return: The compliance_state of this AggregatePolicyAssignmentsFilters.
         :rtype: str
@@ -92,7 +92,7 @@ class AggregatePolicyAssignmentsFilters:
     def compliance_state(self, compliance_state):
         """Sets the compliance_state of this AggregatePolicyAssignmentsFilters.
 
-        合规性状态
+        合规结果。
 
         :param compliance_state: The compliance_state of this AggregatePolicyAssignmentsFilters.
         :type compliance_state: str

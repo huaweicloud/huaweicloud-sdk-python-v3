@@ -32,7 +32,7 @@ class UpdateEndpointRoutetableResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param routetables: 路由表ID列表。节点的白名单。 此参数可以添加IPv4或CIDR： ● 当取值不为空时，表示将白名单更新为取值所示内容。 ● 当取值为空时，表示删除所有白名单。 默认为空列表。
+        :param routetables: 路由表ID列表。 若未指定，返回默认VPC下路由表ID。 更新Gateway类型终端节点服务的终端节点时，显示此参数。
         :type routetables: list[str]
         :param error: 当修改终端节点子网路由表失败时，返回错误提示信息
         :type error: list[:class:`huaweicloudsdkvpcep.v1.RoutetableInfoError`]
@@ -53,7 +53,7 @@ class UpdateEndpointRoutetableResponse(SdkResponse):
     def routetables(self):
         """Gets the routetables of this UpdateEndpointRoutetableResponse.
 
-        路由表ID列表。节点的白名单。 此参数可以添加IPv4或CIDR： ● 当取值不为空时，表示将白名单更新为取值所示内容。 ● 当取值为空时，表示删除所有白名单。 默认为空列表。
+        路由表ID列表。 若未指定，返回默认VPC下路由表ID。 更新Gateway类型终端节点服务的终端节点时，显示此参数。
 
         :return: The routetables of this UpdateEndpointRoutetableResponse.
         :rtype: list[str]
@@ -64,7 +64,7 @@ class UpdateEndpointRoutetableResponse(SdkResponse):
     def routetables(self, routetables):
         """Sets the routetables of this UpdateEndpointRoutetableResponse.
 
-        路由表ID列表。节点的白名单。 此参数可以添加IPv4或CIDR： ● 当取值不为空时，表示将白名单更新为取值所示内容。 ● 当取值为空时，表示删除所有白名单。 默认为空列表。
+        路由表ID列表。 若未指定，返回默认VPC下路由表ID。 更新Gateway类型终端节点服务的终端节点时，显示此参数。
 
         :param routetables: The routetables of this UpdateEndpointRoutetableResponse.
         :type routetables: list[str]

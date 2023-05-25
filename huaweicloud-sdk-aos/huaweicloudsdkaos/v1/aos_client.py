@@ -1760,9 +1760,9 @@ class AosClient(Client):
         
         此API用于展示某一版本模板的元数据
         
-        ShowTemplateVersionMetadata返回的信息只包含模板版本元数据信息（具体摘要信息见ShowTemplateVersionMetadataResponseBody），若用户需要了解模板版本内容，请调用ShowTemplateVersionContent。
-        
           * 若template_name和template_id同时存在，则模板服务会检查是否两个匹配，否则返回400
+        
+        ShowTemplateVersionMetadata返回的信息只包含模板版本元数据信息（具体摘要信息见ShowTemplateVersionMetadataResponseBody），若用户需要了解模板版本内容，请调用ShowTemplateVersionContent
         
         Please refer to HUAWEI cloud API Explorer for details.
 

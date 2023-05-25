@@ -31,7 +31,7 @@ class UpdatePluginsReq:
 
         The model defined in huaweicloud sdk
 
-        :param enable: 是否开启改插件。
+        :param enable: 是否开启该插件。
         :type enable: bool
         :param plugins: 插件列表，多个插件中间用“,”隔开。
         :type plugins: str
@@ -52,7 +52,7 @@ class UpdatePluginsReq:
     def enable(self):
         """Gets the enable of this UpdatePluginsReq.
 
-        是否开启改插件。
+        是否开启该插件。
 
         :return: The enable of this UpdatePluginsReq.
         :rtype: bool
@@ -63,7 +63,7 @@ class UpdatePluginsReq:
     def enable(self, enable):
         """Sets the enable of this UpdatePluginsReq.
 
-        是否开启改插件。
+        是否开启该插件。
 
         :param enable: The enable of this UpdatePluginsReq.
         :type enable: bool

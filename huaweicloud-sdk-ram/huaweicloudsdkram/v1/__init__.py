@@ -36,6 +36,8 @@ from huaweicloudsdkram.v1.model.enable_organization_share_request import EnableO
 from huaweicloudsdkram.v1.model.enable_organization_share_response import EnableOrganizationShareResponse
 from huaweicloudsdkram.v1.model.list_permissions_request import ListPermissionsRequest
 from huaweicloudsdkram.v1.model.list_permissions_response import ListPermissionsResponse
+from huaweicloudsdkram.v1.model.list_quota_request import ListQuotaRequest
+from huaweicloudsdkram.v1.model.list_quota_response import ListQuotaResponse
 from huaweicloudsdkram.v1.model.list_resource_share_permissions_request import ListResourceSharePermissionsRequest
 from huaweicloudsdkram.v1.model.list_resource_share_permissions_response import ListResourceSharePermissionsResponse
 from huaweicloudsdkram.v1.model.list_resource_share_tags_request import ListResourceShareTagsRequest
@@ -47,6 +49,8 @@ from huaweicloudsdkram.v1.model.page_info import PageInfo
 from huaweicloudsdkram.v1.model.page_info_marker_by_key import PageInfoMarkerByKey
 from huaweicloudsdkram.v1.model.permission import Permission
 from huaweicloudsdkram.v1.model.permission_summary import PermissionSummary
+from huaweicloudsdkram.v1.model.quota_resources_dto import QuotaResourcesDto
+from huaweicloudsdkram.v1.model.quotas import Quotas
 from huaweicloudsdkram.v1.model.reject_resource_share_invitation_request import RejectResourceShareInvitationRequest
 from huaweicloudsdkram.v1.model.reject_resource_share_invitation_response import RejectResourceShareInvitationResponse
 from huaweicloudsdkram.v1.model.resource_dto import ResourceDTO

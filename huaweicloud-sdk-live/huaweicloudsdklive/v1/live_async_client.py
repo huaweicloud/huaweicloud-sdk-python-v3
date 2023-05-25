@@ -24,6 +24,64 @@ class LiveAsyncClient(Client):
 
         return ClientBuilder(clazz)
 
+    def batch_show_ip_belongs_async(self, request):
+        """查询IP归属信息
+
+        查询IP归属信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchShowIpBelongs
+        :type request: :class:`huaweicloudsdklive.v1.BatchShowIpBelongsRequest`
+        :rtype: :class:`huaweicloudsdklive.v1.BatchShowIpBelongsResponse`
+        """
+        return self._batch_show_ip_belongs_with_http_info(request)
+
+    def _batch_show_ip_belongs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'ip' in local_var_params:
+            query_params.append(('ip', local_var_params['ip']))
+            collection_formats['ip'] = 'multi'
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/cdn/ip-info',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='BatchShowIpBelongsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def create_domain_async(self, request):
         """创建直播域名
 

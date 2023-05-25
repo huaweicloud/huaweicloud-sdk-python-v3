@@ -7,7 +7,6 @@ from huaweicloudsdkcbh.v1.cbh_client import CbhClient
 from huaweicloudsdkcbh.v1.cbh_async_client import CbhAsyncClient
 # import models into sdk package
 from huaweicloudsdkcbh.v1.model.availability_zones import AvailabilityZones
-from huaweicloudsdkcbh.v1.model.band_width import BandWidth
 from huaweicloudsdkcbh.v1.model.cbh_instances import CBHInstances
 from huaweicloudsdkcbh.v1.model.change_instance_network import ChangeInstanceNetwork
 from huaweicloudsdkcbh.v1.model.change_instance_network_request import ChangeInstanceNetworkRequest
@@ -20,7 +19,6 @@ from huaweicloudsdkcbh.v1.model.create_instance_order_request import CreateInsta
 from huaweicloudsdkcbh.v1.model.create_instance_order_response import CreateInstanceOrderResponse
 from huaweicloudsdkcbh.v1.model.create_instance_request import CreateInstanceRequest
 from huaweicloudsdkcbh.v1.model.create_instance_response import CreateInstanceResponse
-from huaweicloudsdkcbh.v1.model.eip import Eip
 from huaweicloudsdkcbh.v1.model.install_instance_eip_request import InstallInstanceEipRequest
 from huaweicloudsdkcbh.v1.model.install_instance_eip_response import InstallInstanceEipResponse
 from huaweicloudsdkcbh.v1.model.instance_detail import InstanceDetail

@@ -24,6 +24,7 @@ class InstanceListInfo:
         'subnet_id': 'str',
         'security_group_id': 'str',
         'created_at': 'str',
+        'updated_at': 'str',
         'enable_ssl': 'bool',
         'max_memory': 'int',
         'used_memory': 'int',
@@ -67,6 +68,7 @@ class InstanceListInfo:
         'subnet_id': 'subnet_id',
         'security_group_id': 'security_group_id',
         'created_at': 'created_at',
+        'updated_at': 'updated_at',
         'enable_ssl': 'enable_ssl',
         'max_memory': 'max_memory',
         'used_memory': 'used_memory',
@@ -102,7 +104,7 @@ class InstanceListInfo:
         'sub_status': 'sub_status'
     }
 
-    def __init__(self, publicip_id=None, vpc_name=None, charging_mode=None, vpc_id=None, subnet_id=None, security_group_id=None, created_at=None, enable_ssl=None, max_memory=None, used_memory=None, publicip_address=None, capacity=None, capacity_minor=None, order_id=None, maintain_begin=None, maintain_end=None, engine=None, engine_version=None, service_upgrade=None, no_password_access=None, service_task_id=None, ip=None, access_user=None, instance_id=None, enable_publicip=None, port=None, user_id=None, user_name=None, domain_name=None, readonly_domain_name=None, name=None, spec_code=None, status=None, tags=None, enterprise_project_id=None, description=None, cpu_type=None, az_codes=None, features=None, sub_status=None):
+    def __init__(self, publicip_id=None, vpc_name=None, charging_mode=None, vpc_id=None, subnet_id=None, security_group_id=None, created_at=None, updated_at=None, enable_ssl=None, max_memory=None, used_memory=None, publicip_address=None, capacity=None, capacity_minor=None, order_id=None, maintain_begin=None, maintain_end=None, engine=None, engine_version=None, service_upgrade=None, no_password_access=None, service_task_id=None, ip=None, access_user=None, instance_id=None, enable_publicip=None, port=None, user_id=None, user_name=None, domain_name=None, readonly_domain_name=None, name=None, spec_code=None, status=None, tags=None, enterprise_project_id=None, description=None, cpu_type=None, az_codes=None, features=None, sub_status=None):
         """InstanceListInfo
 
         The model defined in huaweicloud sdk
@@ -121,6 +123,8 @@ class InstanceListInfo:
         :type security_group_id: str
         :param created_at: 创建时间。格式为：2017-03-31T12:24:46.297Z
         :type created_at: str
+        :param updated_at: 更新时间。格式为：2017-03-31T19:24:46.297Z
+        :type updated_at: str
         :param enable_ssl: Redis缓存实例开启公网访问功能时，是否选择支持ssl。 - true：开启 - false：不开启 
         :type enable_ssl: bool
         :param max_memory: 总内存，单位：MB。
@@ -198,6 +202,7 @@ class InstanceListInfo:
         self._subnet_id = None
         self._security_group_id = None
         self._created_at = None
+        self._updated_at = None
         self._enable_ssl = None
         self._max_memory = None
         self._used_memory = None
@@ -247,6 +252,8 @@ class InstanceListInfo:
             self.security_group_id = security_group_id
         if created_at is not None:
             self.created_at = created_at
+        if updated_at is not None:
+            self.updated_at = updated_at
         if enable_ssl is not None:
             self.enable_ssl = enable_ssl
         if max_memory is not None:
@@ -467,6 +474,28 @@ class InstanceListInfo:
         :type created_at: str
         """
         self._created_at = created_at
+
+    @property
+    def updated_at(self):
+        """Gets the updated_at of this InstanceListInfo.
+
+        更新时间。格式为：2017-03-31T19:24:46.297Z
+
+        :return: The updated_at of this InstanceListInfo.
+        :rtype: str
+        """
+        return self._updated_at
+
+    @updated_at.setter
+    def updated_at(self, updated_at):
+        """Sets the updated_at of this InstanceListInfo.
+
+        更新时间。格式为：2017-03-31T19:24:46.297Z
+
+        :param updated_at: The updated_at of this InstanceListInfo.
+        :type updated_at: str
+        """
+        self._updated_at = updated_at
 
     @property
     def enable_ssl(self):

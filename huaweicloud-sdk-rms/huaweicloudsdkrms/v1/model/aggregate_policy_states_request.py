@@ -35,7 +35,7 @@ class AggregatePolicyStatesRequest:
 
         :param aggregator_id: 资源聚合器ID
         :type aggregator_id: str
-        :param account_id: 租户ID
+        :param account_id: 源帐号ID
         :type account_id: str
         :param group_by_key: 用于对资源计数进行分组的键（DOMAIN）。
         :type group_by_key: str
@@ -80,7 +80,7 @@ class AggregatePolicyStatesRequest:
     def account_id(self):
         """Gets the account_id of this AggregatePolicyStatesRequest.
 
-        租户ID
+        源帐号ID
 
         :return: The account_id of this AggregatePolicyStatesRequest.
         :rtype: str
@@ -91,7 +91,7 @@ class AggregatePolicyStatesRequest:
     def account_id(self, account_id):
         """Sets the account_id of this AggregatePolicyStatesRequest.
 
-        租户ID
+        源帐号ID
 
         :param account_id: The account_id of this AggregatePolicyStatesRequest.
         :type account_id: str

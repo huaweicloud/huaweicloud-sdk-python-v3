@@ -19,7 +19,6 @@ class ServiceList:
     openapi_types = {
         'id': 'str',
         'port_id': 'str',
-        'vip_port_id': 'str',
         'service_name': 'str',
         'server_type': 'str',
         'vpc_id': 'str',
@@ -43,7 +42,6 @@ class ServiceList:
     attribute_map = {
         'id': 'id',
         'port_id': 'port_id',
-        'vip_port_id': 'vip_port_id',
         'service_name': 'service_name',
         'server_type': 'server_type',
         'vpc_id': 'vpc_id',
@@ -64,7 +62,7 @@ class ServiceList:
         'enable_policy': 'enable_policy'
     }
 
-    def __init__(self, id=None, port_id=None, vip_port_id=None, service_name=None, server_type=None, vpc_id=None, approval_enabled=None, status=None, service_type=None, created_at=None, updated_at=None, project_id=None, domain_id=None, ports=None, tags=None, connection_count=None, tcp_proxy=None, error=None, description=None, public_border_group=None, enable_policy=None):
+    def __init__(self, id=None, port_id=None, service_name=None, server_type=None, vpc_id=None, approval_enabled=None, status=None, service_type=None, created_at=None, updated_at=None, project_id=None, domain_id=None, ports=None, tags=None, connection_count=None, tcp_proxy=None, error=None, description=None, public_border_group=None, enable_policy=None):
         """ServiceList
 
         The model defined in huaweicloud sdk
@@ -73,8 +71,6 @@ class ServiceList:
         :type id: str
         :param port_id: 标识终端节点服务后端资源的ID， 格式为通用唯一识别码（Universally Unique Identifier，下文简称UUID）。取值为： ● LB类型：负载均衡器内网IP对应的端口ID。 ● VM类型：弹性云服务器IP地址对应的网卡ID。 ● VIP类型：虚拟资源所在物理服务器对应的网卡ID。（该字段已废弃，请优先使用LB类型）
         :type port_id: str
-        :param vip_port_id: 虚拟IP的网卡ID。 仅当“port_id”为“VIP类型”时，返回该参数。
-        :type vip_port_id: str
         :param service_name: 终端节点服务的名称。
         :type service_name: str
         :param server_type: 资源类型。 ● VM：云服务器。 ● VIP：虚拟IP。 ● LB：增强负载均衡型。
@@ -101,7 +97,7 @@ class ServiceList:
         :type tags: list[:class:`huaweicloudsdkvpcep.v1.TagList`]
         :param connection_count: 终端节点服务下连接的状态为“创建中”或“已接受”的终端节点的个数。
         :type connection_count: int
-        :param tcp_proxy: 用于控制是否将客户端的源IP、源端口、marker_id等信息携带到服务端。 信息携带支持两种方式： ● TCP TOA：表示将客户端信息插入到tcp，option字段中携带至服务端。 说明 仅当后端资源为OBS时，支持TCP TOA类型信息携带方式。 ● Proxy Protocol：表示将客户端相关信息插入到tcp payload字段中携带至服务端。 仅当服务端支持解析上述字段时，该参数设置才有效。 参数的取值包括： ● close：表示关闭代理协议。 ● toa_open：表示开启代理协议“tcp_toa”。 ● proxy_open：表示开启代理协议“proxy_protocol”。 ● open：表示同时开启代理协议“tcp_toa”和“proxy_protocol”。 ● proxy_vni: 关闭toa，开启proxy和vni。 默认值为“close”。
+        :param tcp_proxy: 用于控制将哪些信息（如客户端的源IP、源端口、marker_id等）携带到服务端。 支持携带的客户端信息包括如下两种类型： ● TCP TOA：表示将客户端信息插入到tcp option字段中携带至服务端。 说明：仅当后端资源为OBS时，支持TCP TOA类型信息携带方式。 ● Proxy Protocol：表示将客户端信息插入到tcp payload字段中携带至服务端。 仅当服务端支持解析上述字段时，该参数设置才有效。 该参数的取值包括： ● close：表示关闭代理协议。 ● toa_open：表示开启代理协议“tcp_toa”。 ● proxy_open：表示开启代理协议“proxy_protocol”。 ● open：表示同时开启代理协议“tcp_toa”和“proxy_protocol”。 ● proxy_vni: 关闭toa，开启proxy和vni。 默认值为“close”。
         :type tcp_proxy: str
         :param error: 提交任务异常时返回的异常信息
         :type error: list[:class:`huaweicloudsdkvpcep.v1.Error`]
@@ -117,7 +113,6 @@ class ServiceList:
 
         self._id = None
         self._port_id = None
-        self._vip_port_id = None
         self._service_name = None
         self._server_type = None
         self._vpc_id = None
@@ -142,8 +137,6 @@ class ServiceList:
             self.id = id
         if port_id is not None:
             self.port_id = port_id
-        if vip_port_id is not None:
-            self.vip_port_id = vip_port_id
         if service_name is not None:
             self.service_name = service_name
         if server_type is not None:
@@ -224,28 +217,6 @@ class ServiceList:
         :type port_id: str
         """
         self._port_id = port_id
-
-    @property
-    def vip_port_id(self):
-        """Gets the vip_port_id of this ServiceList.
-
-        虚拟IP的网卡ID。 仅当“port_id”为“VIP类型”时，返回该参数。
-
-        :return: The vip_port_id of this ServiceList.
-        :rtype: str
-        """
-        return self._vip_port_id
-
-    @vip_port_id.setter
-    def vip_port_id(self, vip_port_id):
-        """Sets the vip_port_id of this ServiceList.
-
-        虚拟IP的网卡ID。 仅当“port_id”为“VIP类型”时，返回该参数。
-
-        :param vip_port_id: The vip_port_id of this ServiceList.
-        :type vip_port_id: str
-        """
-        self._vip_port_id = vip_port_id
 
     @property
     def service_name(self):
@@ -537,7 +508,7 @@ class ServiceList:
     def tcp_proxy(self):
         """Gets the tcp_proxy of this ServiceList.
 
-        用于控制是否将客户端的源IP、源端口、marker_id等信息携带到服务端。 信息携带支持两种方式： ● TCP TOA：表示将客户端信息插入到tcp，option字段中携带至服务端。 说明 仅当后端资源为OBS时，支持TCP TOA类型信息携带方式。 ● Proxy Protocol：表示将客户端相关信息插入到tcp payload字段中携带至服务端。 仅当服务端支持解析上述字段时，该参数设置才有效。 参数的取值包括： ● close：表示关闭代理协议。 ● toa_open：表示开启代理协议“tcp_toa”。 ● proxy_open：表示开启代理协议“proxy_protocol”。 ● open：表示同时开启代理协议“tcp_toa”和“proxy_protocol”。 ● proxy_vni: 关闭toa，开启proxy和vni。 默认值为“close”。
+        用于控制将哪些信息（如客户端的源IP、源端口、marker_id等）携带到服务端。 支持携带的客户端信息包括如下两种类型： ● TCP TOA：表示将客户端信息插入到tcp option字段中携带至服务端。 说明：仅当后端资源为OBS时，支持TCP TOA类型信息携带方式。 ● Proxy Protocol：表示将客户端信息插入到tcp payload字段中携带至服务端。 仅当服务端支持解析上述字段时，该参数设置才有效。 该参数的取值包括： ● close：表示关闭代理协议。 ● toa_open：表示开启代理协议“tcp_toa”。 ● proxy_open：表示开启代理协议“proxy_protocol”。 ● open：表示同时开启代理协议“tcp_toa”和“proxy_protocol”。 ● proxy_vni: 关闭toa，开启proxy和vni。 默认值为“close”。
 
         :return: The tcp_proxy of this ServiceList.
         :rtype: str
@@ -548,7 +519,7 @@ class ServiceList:
     def tcp_proxy(self, tcp_proxy):
         """Sets the tcp_proxy of this ServiceList.
 
-        用于控制是否将客户端的源IP、源端口、marker_id等信息携带到服务端。 信息携带支持两种方式： ● TCP TOA：表示将客户端信息插入到tcp，option字段中携带至服务端。 说明 仅当后端资源为OBS时，支持TCP TOA类型信息携带方式。 ● Proxy Protocol：表示将客户端相关信息插入到tcp payload字段中携带至服务端。 仅当服务端支持解析上述字段时，该参数设置才有效。 参数的取值包括： ● close：表示关闭代理协议。 ● toa_open：表示开启代理协议“tcp_toa”。 ● proxy_open：表示开启代理协议“proxy_protocol”。 ● open：表示同时开启代理协议“tcp_toa”和“proxy_protocol”。 ● proxy_vni: 关闭toa，开启proxy和vni。 默认值为“close”。
+        用于控制将哪些信息（如客户端的源IP、源端口、marker_id等）携带到服务端。 支持携带的客户端信息包括如下两种类型： ● TCP TOA：表示将客户端信息插入到tcp option字段中携带至服务端。 说明：仅当后端资源为OBS时，支持TCP TOA类型信息携带方式。 ● Proxy Protocol：表示将客户端信息插入到tcp payload字段中携带至服务端。 仅当服务端支持解析上述字段时，该参数设置才有效。 该参数的取值包括： ● close：表示关闭代理协议。 ● toa_open：表示开启代理协议“tcp_toa”。 ● proxy_open：表示开启代理协议“proxy_protocol”。 ● open：表示同时开启代理协议“tcp_toa”和“proxy_protocol”。 ● proxy_vni: 关闭toa，开启proxy和vni。 默认值为“close”。
 
         :param tcp_proxy: The tcp_proxy of this ServiceList.
         :type tcp_proxy: str

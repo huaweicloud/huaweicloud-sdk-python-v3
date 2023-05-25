@@ -321,6 +321,63 @@ class KafkaAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def close_kafka_manager_async(self, request):
+        """关闭kafka manager
+
+        关闭kafka manager，相应的原来开放出的management相关接口也将不可用
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CloseKafkaManager
+        :type request: :class:`huaweicloudsdkkafka.v2.CloseKafkaManagerRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.CloseKafkaManagerResponse`
+        """
+        return self._close_kafka_manager_with_http_info(request)
+
+    def _close_kafka_manager_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/kafka/instances/{instance_id}/management',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CloseKafkaManagerResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def create_connector_async(self, request):
         """创建实例的转储节点
 
@@ -377,6 +434,65 @@ class KafkaAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='CreateConnectorResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_delete_connector_order_async(self, request):
+        """创建关闭实例转储节点的订单
+
+        创建删除实例转储节点的订单。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateDeleteConnectorOrder
+        :type request: :class:`huaweicloudsdkkafka.v2.CreateDeleteConnectorOrderRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.CreateDeleteConnectorOrderResponse`
+        """
+        return self._create_delete_connector_order_with_http_info(request)
+
+    def _create_delete_connector_order_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/kafka/instances/{instance_id}/delete-connector-order',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateDeleteConnectorOrderResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -556,6 +672,65 @@ class KafkaAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='CreateInstanceUserResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_kafka_consumer_group_async(self, request):
+        """创建消费组
+
+        实例创建消费组
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateKafkaConsumerGroup
+        :type request: :class:`huaweicloudsdkkafka.v2.CreateKafkaConsumerGroupRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.CreateKafkaConsumerGroupResponse`
+        """
+        return self._create_kafka_consumer_group_with_http_info(request)
+
+    def _create_kafka_consumer_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/kafka/instances/{instance_id}/groups',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateKafkaConsumerGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -851,6 +1026,65 @@ class KafkaAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='DeleteBackgroundTaskResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_connector_async(self, request):
+        """关闭实例转储节点
+
+        关闭实例转储节点。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteConnector
+        :type request: :class:`huaweicloudsdkkafka.v2.DeleteConnectorRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.DeleteConnectorResponse`
+        """
+        return self._delete_connector_with_http_info(request)
+
+    def _delete_connector_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/kafka/instances/{instance_id}/delete-connector',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteConnectorResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1524,7 +1758,7 @@ class KafkaAsyncClient(Client):
 
         Kafka实例不支持在线重置消费进度。在执行重置消费进度之前，必须停止被重置消费组客户端。
         
-        &gt; 停止待重置消费组客户端，然后等待一段时间（即ConsumerConfig.SESSION_TIMEOUT_MS_CONFIG配置的时间，默认为1000毫秒）后，服务端才认为此消费组客户端已下线。
+        停止待重置消费组客户端，然后等待一段时间（即ConsumerConfig.SESSION_TIMEOUT_MS_CONFIG配置的时间，默认为1000毫秒）后，服务端才认为此消费组客户端已下线。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1705,7 +1939,7 @@ class KafkaAsyncClient(Client):
     def resize_engine_instance_async(self, request):
         """实例规格变更
 
-        实例规格变更。
+        实例规格变更。[当前通过调用API，只支持按需实例进行实例规格变更。](tag:hws,hws_hk,ctc,cmcc,hws_eu)
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1766,7 +2000,7 @@ class KafkaAsyncClient(Client):
     def resize_instance_async(self, request):
         """实例规格变更
 
-        实例规格变更。[当前通过调用API，只支持按需实例进行实例规格变更。](tag:hc,hk,hws,hws_hk,ctc,sbc,hk_sbc,cmcc,hws_eu)
+        实例规格变更。[当前通过调用API，只支持按需实例进行实例规格变更。](tag:hws,hws_hk,ctc,cmcc,hws_eu)
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2424,9 +2658,9 @@ class KafkaAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def show_instance_topic_detail_async(self, request):
-        """查询Kafka实例Topic详细信息(单个实例调用不要超过1s一次)
+        """查询Kafka实例Topic详细信息
 
-        查询Kafka实例Topic详细信息。
+        查询Kafka实例Topic详细信息。(单个实例调用不要超过1s一次)
         
         Please refer to HUAWEI cloud API Explorer for details.
 

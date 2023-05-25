@@ -23,7 +23,7 @@ class InstanceCreate:
         'replica': 'int',
         'artifacts': 'dict(str, object)',
         'version': 'str',
-        'configuration': 'object',
+        'configuration': 'InstanceConfiguration',
         'description': 'str',
         'external_accesses': 'list[ExternalAccessesCreate]',
         'refer_resources': 'list[ReferResourceCreate]'
@@ -59,8 +59,8 @@ class InstanceCreate:
         :type artifacts: dict(str, object)
         :param version: 应用组件版本号，满足版本语义，如1.0.0。。
         :type version: str
-        :param configuration: 应用配置，环境变量等，如{“env”: [{“name”: “log-level”: “warn”}]}, 默认空。
-        :type configuration: object
+        :param configuration: 
+        :type configuration: :class:`huaweicloudsdkservicestage.v2.InstanceConfiguration`
         :param description: 描述。
         :type description: str
         :param external_accesses: 访问方式。
@@ -229,10 +229,8 @@ class InstanceCreate:
     def configuration(self):
         """Gets the configuration of this InstanceCreate.
 
-        应用配置，环境变量等，如{“env”: [{“name”: “log-level”: “warn”}]}, 默认空。
-
         :return: The configuration of this InstanceCreate.
-        :rtype: object
+        :rtype: :class:`huaweicloudsdkservicestage.v2.InstanceConfiguration`
         """
         return self._configuration
 
@@ -240,10 +238,8 @@ class InstanceCreate:
     def configuration(self, configuration):
         """Sets the configuration of this InstanceCreate.
 
-        应用配置，环境变量等，如{“env”: [{“name”: “log-level”: “warn”}]}, 默认空。
-
         :param configuration: The configuration of this InstanceCreate.
-        :type configuration: object
+        :type configuration: :class:`huaweicloudsdkservicestage.v2.InstanceConfiguration`
         """
         self._configuration = configuration
 

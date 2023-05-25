@@ -27,7 +27,10 @@ class BandwidthRespInsert:
         'size': 'int',
         'tenant_id': 'str',
         'enterprise_project_id': 'str',
-        'status': 'str'
+        'status': 'str',
+        'enable_bandwidth_rules': 'bool',
+        'rule_quota': 'int',
+        'bandwidth_rules': 'list[BandWidthRules]'
     }
 
     attribute_map = {
@@ -41,10 +44,13 @@ class BandwidthRespInsert:
         'size': 'size',
         'tenant_id': 'tenant_id',
         'enterprise_project_id': 'enterprise_project_id',
-        'status': 'status'
+        'status': 'status',
+        'enable_bandwidth_rules': 'enable_bandwidth_rules',
+        'rule_quota': 'rule_quota',
+        'bandwidth_rules': 'bandwidth_rules'
     }
 
-    def __init__(self, bandwidth_type=None, charge_mode=None, id=None, name=None, publicip_info=None, billing_info=None, share_type=None, size=None, tenant_id=None, enterprise_project_id=None, status=None):
+    def __init__(self, bandwidth_type=None, charge_mode=None, id=None, name=None, publicip_info=None, billing_info=None, share_type=None, size=None, tenant_id=None, enterprise_project_id=None, status=None, enable_bandwidth_rules=None, rule_quota=None, bandwidth_rules=None):
         """BandwidthRespInsert
 
         The model defined in huaweicloud sdk
@@ -71,6 +77,12 @@ class BandwidthRespInsert:
         :type enterprise_project_id: str
         :param status: 功能说明：带宽的状态  取值范围：  FREEZED：冻结  NORMAL：正常
         :type status: str
+        :param enable_bandwidth_rules: 功能说明：是否开启企业级qos 取值范围：true/false
+        :type enable_bandwidth_rules: bool
+        :param rule_quota: 功能说明：带宽支持的最大分组规则数。
+        :type rule_quota: int
+        :param bandwidth_rules: 功能说明：带宽规则对象
+        :type bandwidth_rules: list[:class:`huaweicloudsdkeip.v2.BandWidthRules`]
         """
         
         
@@ -86,6 +98,9 @@ class BandwidthRespInsert:
         self._tenant_id = None
         self._enterprise_project_id = None
         self._status = None
+        self._enable_bandwidth_rules = None
+        self._rule_quota = None
+        self._bandwidth_rules = None
         self.discriminator = None
 
         if bandwidth_type is not None:
@@ -110,6 +125,12 @@ class BandwidthRespInsert:
             self.enterprise_project_id = enterprise_project_id
         if status is not None:
             self.status = status
+        if enable_bandwidth_rules is not None:
+            self.enable_bandwidth_rules = enable_bandwidth_rules
+        if rule_quota is not None:
+            self.rule_quota = rule_quota
+        if bandwidth_rules is not None:
+            self.bandwidth_rules = bandwidth_rules
 
     @property
     def bandwidth_type(self):
@@ -352,6 +373,72 @@ class BandwidthRespInsert:
         :type status: str
         """
         self._status = status
+
+    @property
+    def enable_bandwidth_rules(self):
+        """Gets the enable_bandwidth_rules of this BandwidthRespInsert.
+
+        功能说明：是否开启企业级qos 取值范围：true/false
+
+        :return: The enable_bandwidth_rules of this BandwidthRespInsert.
+        :rtype: bool
+        """
+        return self._enable_bandwidth_rules
+
+    @enable_bandwidth_rules.setter
+    def enable_bandwidth_rules(self, enable_bandwidth_rules):
+        """Sets the enable_bandwidth_rules of this BandwidthRespInsert.
+
+        功能说明：是否开启企业级qos 取值范围：true/false
+
+        :param enable_bandwidth_rules: The enable_bandwidth_rules of this BandwidthRespInsert.
+        :type enable_bandwidth_rules: bool
+        """
+        self._enable_bandwidth_rules = enable_bandwidth_rules
+
+    @property
+    def rule_quota(self):
+        """Gets the rule_quota of this BandwidthRespInsert.
+
+        功能说明：带宽支持的最大分组规则数。
+
+        :return: The rule_quota of this BandwidthRespInsert.
+        :rtype: int
+        """
+        return self._rule_quota
+
+    @rule_quota.setter
+    def rule_quota(self, rule_quota):
+        """Sets the rule_quota of this BandwidthRespInsert.
+
+        功能说明：带宽支持的最大分组规则数。
+
+        :param rule_quota: The rule_quota of this BandwidthRespInsert.
+        :type rule_quota: int
+        """
+        self._rule_quota = rule_quota
+
+    @property
+    def bandwidth_rules(self):
+        """Gets the bandwidth_rules of this BandwidthRespInsert.
+
+        功能说明：带宽规则对象
+
+        :return: The bandwidth_rules of this BandwidthRespInsert.
+        :rtype: list[:class:`huaweicloudsdkeip.v2.BandWidthRules`]
+        """
+        return self._bandwidth_rules
+
+    @bandwidth_rules.setter
+    def bandwidth_rules(self, bandwidth_rules):
+        """Sets the bandwidth_rules of this BandwidthRespInsert.
+
+        功能说明：带宽规则对象
+
+        :param bandwidth_rules: The bandwidth_rules of this BandwidthRespInsert.
+        :type bandwidth_rules: list[:class:`huaweicloudsdkeip.v2.BandWidthRules`]
+        """
+        self._bandwidth_rules = bandwidth_rules
 
     def to_dict(self):
         """Returns the model properties as a dict"""

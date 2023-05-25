@@ -32,7 +32,7 @@ class ListAggregateComplianceByPolicyAssignmentResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param aggregate_policy_assignments: AggregatePolicyAssignment对象的列表。
+        :param aggregate_policy_assignments: 聚合合规规则的列表。
         :type aggregate_policy_assignments: list[:class:`huaweicloudsdkrms.v1.AggregatePolicyAssignments`]
         :param page_info: 
         :type page_info: :class:`huaweicloudsdkrms.v1.PageInfo`
@@ -53,7 +53,7 @@ class ListAggregateComplianceByPolicyAssignmentResponse(SdkResponse):
     def aggregate_policy_assignments(self):
         """Gets the aggregate_policy_assignments of this ListAggregateComplianceByPolicyAssignmentResponse.
 
-        AggregatePolicyAssignment对象的列表。
+        聚合合规规则的列表。
 
         :return: The aggregate_policy_assignments of this ListAggregateComplianceByPolicyAssignmentResponse.
         :rtype: list[:class:`huaweicloudsdkrms.v1.AggregatePolicyAssignments`]
@@ -64,7 +64,7 @@ class ListAggregateComplianceByPolicyAssignmentResponse(SdkResponse):
     def aggregate_policy_assignments(self, aggregate_policy_assignments):
         """Sets the aggregate_policy_assignments of this ListAggregateComplianceByPolicyAssignmentResponse.
 
-        AggregatePolicyAssignment对象的列表。
+        聚合合规规则的列表。
 
         :param aggregate_policy_assignments: The aggregate_policy_assignments of this ListAggregateComplianceByPolicyAssignmentResponse.
         :type aggregate_policy_assignments: list[:class:`huaweicloudsdkrms.v1.AggregatePolicyAssignments`]

@@ -69,6 +69,7 @@ class ShowInstanceResp:
         'retention_policy': 'str',
         'kafka_public_status': 'str',
         'public_bandwidth': 'int',
+        'kafka_manager_enable': 'bool',
         'kafka_manager_user': 'str',
         'enable_log_collection': 'bool',
         'cross_vpc_info': 'str',
@@ -151,6 +152,7 @@ class ShowInstanceResp:
         'retention_policy': 'retention_policy',
         'kafka_public_status': 'kafka_public_status',
         'public_bandwidth': 'public_bandwidth',
+        'kafka_manager_enable': 'kafka_manager_enable',
         'kafka_manager_user': 'kafka_manager_user',
         'enable_log_collection': 'enable_log_collection',
         'cross_vpc_info': 'cross_vpc_info',
@@ -180,7 +182,7 @@ class ShowInstanceResp:
         'dr_enable': 'dr_enable'
     }
 
-    def __init__(self, name=None, engine=None, engine_version=None, description=None, specification=None, storage_space=None, partition_num=None, used_storage_space=None, connect_address=None, port=None, status=None, instance_id=None, resource_spec_code=None, charging_mode=None, vpc_id=None, vpc_name=None, created_at=None, subnet_name=None, subnet_cidr=None, user_id=None, user_name=None, access_user=None, order_id=None, maintain_begin=None, maintain_end=None, enable_publicip=None, management_connect_address=None, ssl_enable=None, kafka_security_protocol=None, sasl_enabled_mechanisms=None, ssl_two_way_enable=None, cert_replaced=None, public_management_connect_address=None, enterprise_project_id=None, is_logical_volume=None, extend_times=None, enable_auto_topic=None, type=None, product_id=None, security_group_id=None, security_group_name=None, subnet_id=None, available_zones=None, total_storage_space=None, public_connect_address=None, storage_resource_id=None, storage_spec_code=None, service_type=None, storage_type=None, retention_policy=None, kafka_public_status=None, public_bandwidth=None, kafka_manager_user=None, enable_log_collection=None, cross_vpc_info=None, ipv6_enable=None, ipv6_connect_addresses=None, connector_enable=None, connector_id=None, rest_enable=None, rest_connect_address=None, public_boundwidth=None, message_query_inst_enable=None, vpc_client_plain=None, support_features=None, trace_enable=None, agent_enable=None, pod_connect_address=None, disk_encrypted=None, disk_encrypted_key=None, kafka_private_connect_address=None, ces_version=None, public_access_enabled=None, node_num=None, enable_acl=None, new_spec_billing_enable=None, broker_num=None, tags=None, dr_enable=None):
+    def __init__(self, name=None, engine=None, engine_version=None, description=None, specification=None, storage_space=None, partition_num=None, used_storage_space=None, connect_address=None, port=None, status=None, instance_id=None, resource_spec_code=None, charging_mode=None, vpc_id=None, vpc_name=None, created_at=None, subnet_name=None, subnet_cidr=None, user_id=None, user_name=None, access_user=None, order_id=None, maintain_begin=None, maintain_end=None, enable_publicip=None, management_connect_address=None, ssl_enable=None, kafka_security_protocol=None, sasl_enabled_mechanisms=None, ssl_two_way_enable=None, cert_replaced=None, public_management_connect_address=None, enterprise_project_id=None, is_logical_volume=None, extend_times=None, enable_auto_topic=None, type=None, product_id=None, security_group_id=None, security_group_name=None, subnet_id=None, available_zones=None, total_storage_space=None, public_connect_address=None, storage_resource_id=None, storage_spec_code=None, service_type=None, storage_type=None, retention_policy=None, kafka_public_status=None, public_bandwidth=None, kafka_manager_enable=None, kafka_manager_user=None, enable_log_collection=None, cross_vpc_info=None, ipv6_enable=None, ipv6_connect_addresses=None, connector_enable=None, connector_id=None, rest_enable=None, rest_connect_address=None, public_boundwidth=None, message_query_inst_enable=None, vpc_client_plain=None, support_features=None, trace_enable=None, agent_enable=None, pod_connect_address=None, disk_encrypted=None, disk_encrypted_key=None, kafka_private_connect_address=None, ces_version=None, public_access_enabled=None, node_num=None, enable_acl=None, new_spec_billing_enable=None, broker_num=None, tags=None, dr_enable=None):
         """ShowInstanceResp
 
         The model defined in huaweicloud sdk
@@ -211,7 +213,7 @@ class ShowInstanceResp:
         :type instance_id: str
         :param resource_spec_code: 资源规格标识。   - dms.instance.kafka.cluster.c3.mini：Kafka实例的基准带宽为100MByte/秒。   - dms.instance.kafka.cluster.c3.small.2：Kafka实例的基准带宽为300MByte/秒。   - dms.instance.kafka.cluster.c3.middle.2：Kafka实例的基准带宽为600MByte/秒。   - dms.instance.kafka.cluster.c3.high.2：Kafka实例的基准带宽为1200MByte/秒。
         :type resource_spec_code: str
-        :param charging_mode: [付费模式，1表示按需计费，0表示包年/包月计费。](tag:hc,hk,hws,hws_hk,ctc,sbc,hk_sbc,cmcc,hws_eu)[付费模式，暂未使用。](tag:hws_ocb,ocb) [付费模式，1表示按需计费。](tag:otc,dt,g42,tm)
+        :param charging_mode: &#39;[付费模式，1表示按需计费，0表示包年/包月计费。](tag:hc,hk,hws,hws_hk,ctc,sbc,hk_sbc,cmcc,hws_eu)[付费模式，暂未使用。](tag:hws_ocb,ocb) [付费模式，1表示按需计费。](tag:otc,dt,g42,tm)&#39;
         :type charging_mode: int
         :param vpc_id: VPC ID。
         :type vpc_id: str
@@ -289,6 +291,8 @@ class ShowInstanceResp:
         :type kafka_public_status: str
         :param public_bandwidth: kafka公网访问带宽。
         :type public_bandwidth: int
+        :param kafka_manager_enable: 是否已开启kafka manager
+        :type kafka_manager_enable: bool
         :param kafka_manager_user: 登录Kafka Manager的用户名。
         :type kafka_manager_user: str
         :param enable_log_collection: 是否开启消息收集功能。
@@ -399,6 +403,7 @@ class ShowInstanceResp:
         self._retention_policy = None
         self._kafka_public_status = None
         self._public_bandwidth = None
+        self._kafka_manager_enable = None
         self._kafka_manager_user = None
         self._enable_log_collection = None
         self._cross_vpc_info = None
@@ -532,6 +537,8 @@ class ShowInstanceResp:
             self.kafka_public_status = kafka_public_status
         if public_bandwidth is not None:
             self.public_bandwidth = public_bandwidth
+        if kafka_manager_enable is not None:
+            self.kafka_manager_enable = kafka_manager_enable
         if kafka_manager_user is not None:
             self.kafka_manager_user = kafka_manager_user
         if enable_log_collection is not None:
@@ -877,7 +884,7 @@ class ShowInstanceResp:
     def charging_mode(self):
         """Gets the charging_mode of this ShowInstanceResp.
 
-        [付费模式，1表示按需计费，0表示包年/包月计费。](tag:hc,hk,hws,hws_hk,ctc,sbc,hk_sbc,cmcc,hws_eu)[付费模式，暂未使用。](tag:hws_ocb,ocb) [付费模式，1表示按需计费。](tag:otc,dt,g42,tm)
+        '[付费模式，1表示按需计费，0表示包年/包月计费。](tag:hc,hk,hws,hws_hk,ctc,sbc,hk_sbc,cmcc,hws_eu)[付费模式，暂未使用。](tag:hws_ocb,ocb) [付费模式，1表示按需计费。](tag:otc,dt,g42,tm)'
 
         :return: The charging_mode of this ShowInstanceResp.
         :rtype: int
@@ -888,7 +895,7 @@ class ShowInstanceResp:
     def charging_mode(self, charging_mode):
         """Sets the charging_mode of this ShowInstanceResp.
 
-        [付费模式，1表示按需计费，0表示包年/包月计费。](tag:hc,hk,hws,hws_hk,ctc,sbc,hk_sbc,cmcc,hws_eu)[付费模式，暂未使用。](tag:hws_ocb,ocb) [付费模式，1表示按需计费。](tag:otc,dt,g42,tm)
+        '[付费模式，1表示按需计费，0表示包年/包月计费。](tag:hc,hk,hws,hws_hk,ctc,sbc,hk_sbc,cmcc,hws_eu)[付费模式，暂未使用。](tag:hws_ocb,ocb) [付费模式，1表示按需计费。](tag:otc,dt,g42,tm)'
 
         :param charging_mode: The charging_mode of this ShowInstanceResp.
         :type charging_mode: int
@@ -1730,6 +1737,28 @@ class ShowInstanceResp:
         :type public_bandwidth: int
         """
         self._public_bandwidth = public_bandwidth
+
+    @property
+    def kafka_manager_enable(self):
+        """Gets the kafka_manager_enable of this ShowInstanceResp.
+
+        是否已开启kafka manager
+
+        :return: The kafka_manager_enable of this ShowInstanceResp.
+        :rtype: bool
+        """
+        return self._kafka_manager_enable
+
+    @kafka_manager_enable.setter
+    def kafka_manager_enable(self, kafka_manager_enable):
+        """Sets the kafka_manager_enable of this ShowInstanceResp.
+
+        是否已开启kafka manager
+
+        :param kafka_manager_enable: The kafka_manager_enable of this ShowInstanceResp.
+        :type kafka_manager_enable: bool
+        """
+        self._kafka_manager_enable = kafka_manager_enable
 
     @property
     def kafka_manager_user(self):

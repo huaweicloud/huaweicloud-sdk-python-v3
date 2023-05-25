@@ -20,6 +20,7 @@ class SourceOrArtifact:
         'storage': 'str',
         'type': 'str',
         'url': 'str',
+        'web_url': 'str',
         'auth': 'str',
         'properties': 'ObsProperties',
         'repo_type': 'SourceRepoType',
@@ -32,6 +33,7 @@ class SourceOrArtifact:
         'storage': 'storage',
         'type': 'type',
         'url': 'url',
+        'web_url': 'webUrl',
         'auth': 'auth',
         'properties': 'properties',
         'repo_type': 'repo_type',
@@ -40,7 +42,7 @@ class SourceOrArtifact:
         'repo_auth': 'repo_auth'
     }
 
-    def __init__(self, storage=None, type=None, url=None, auth=None, properties=None, repo_type=None, repo_url=None, repo_ref=None, repo_auth=None):
+    def __init__(self, storage=None, type=None, url=None, web_url=None, auth=None, properties=None, repo_type=None, repo_url=None, repo_ref=None, repo_auth=None):
         """SourceOrArtifact
 
         The model defined in huaweicloud sdk
@@ -51,6 +53,8 @@ class SourceOrArtifact:
         :type type: str
         :param url: 软件包源码地址，如https://{IP}:20202/xxx/xxx.jar。
         :type url: str
+        :param web_url: 软件包/源码仓库地址
+        :type web_url: str
         :param auth: 认证方式，支持iam，none，默认是iam。
         :type auth: str
         :param properties: 
@@ -70,6 +74,7 @@ class SourceOrArtifact:
         self._storage = None
         self._type = None
         self._url = None
+        self._web_url = None
         self._auth = None
         self._properties = None
         self._repo_type = None
@@ -84,6 +89,8 @@ class SourceOrArtifact:
             self.type = type
         if url is not None:
             self.url = url
+        if web_url is not None:
+            self.web_url = web_url
         if auth is not None:
             self.auth = auth
         if properties is not None:
@@ -162,6 +169,28 @@ class SourceOrArtifact:
         :type url: str
         """
         self._url = url
+
+    @property
+    def web_url(self):
+        """Gets the web_url of this SourceOrArtifact.
+
+        软件包/源码仓库地址
+
+        :return: The web_url of this SourceOrArtifact.
+        :rtype: str
+        """
+        return self._web_url
+
+    @web_url.setter
+    def web_url(self, web_url):
+        """Sets the web_url of this SourceOrArtifact.
+
+        软件包/源码仓库地址
+
+        :param web_url: The web_url of this SourceOrArtifact.
+        :type web_url: str
+        """
+        self._web_url = web_url
 
     @property
     def auth(self):

@@ -19,16 +19,18 @@ class UpdateAddressGroupOption:
     openapi_types = {
         'name': 'str',
         'description': 'str',
-        'ip_set': 'list[str]'
+        'ip_set': 'list[str]',
+        'max_capacity': 'int'
     }
 
     attribute_map = {
         'name': 'name',
         'description': 'description',
-        'ip_set': 'ip_set'
+        'ip_set': 'ip_set',
+        'max_capacity': 'max_capacity'
     }
 
-    def __init__(self, name=None, description=None, ip_set=None):
+    def __init__(self, name=None, description=None, ip_set=None, max_capacity=None):
         """UpdateAddressGroupOption
 
         The model defined in huaweicloud sdk
@@ -39,6 +41,8 @@ class UpdateAddressGroupOption:
         :type description: str
         :param ip_set: 功能说明：IP地址组可包含地址集 取值范围：可以是单个ip地址，ip地址范围，ip地址cidr 约束：当前一个地址组ip_set数量限制默认值为20，即配置的ip地址、ip地址范围或ip地址cidr的总数默认限制20
         :type ip_set: list[str]
+        :param max_capacity: 功能说明：地址组最大条目数，限制地址组可以包含的地址数量 取值范围：0-20
+        :type max_capacity: int
         """
         
         
@@ -46,6 +50,7 @@ class UpdateAddressGroupOption:
         self._name = None
         self._description = None
         self._ip_set = None
+        self._max_capacity = None
         self.discriminator = None
 
         if name is not None:
@@ -54,6 +59,8 @@ class UpdateAddressGroupOption:
             self.description = description
         if ip_set is not None:
             self.ip_set = ip_set
+        if max_capacity is not None:
+            self.max_capacity = max_capacity
 
     @property
     def name(self):
@@ -120,6 +127,28 @@ class UpdateAddressGroupOption:
         :type ip_set: list[str]
         """
         self._ip_set = ip_set
+
+    @property
+    def max_capacity(self):
+        """Gets the max_capacity of this UpdateAddressGroupOption.
+
+        功能说明：地址组最大条目数，限制地址组可以包含的地址数量 取值范围：0-20
+
+        :return: The max_capacity of this UpdateAddressGroupOption.
+        :rtype: int
+        """
+        return self._max_capacity
+
+    @max_capacity.setter
+    def max_capacity(self, max_capacity):
+        """Sets the max_capacity of this UpdateAddressGroupOption.
+
+        功能说明：地址组最大条目数，限制地址组可以包含的地址数量 取值范围：0-20
+
+        :param max_capacity: The max_capacity of this UpdateAddressGroupOption.
+        :type max_capacity: int
+        """
+        self._max_capacity = max_capacity
 
     def to_dict(self):
         """Returns the model properties as a dict"""

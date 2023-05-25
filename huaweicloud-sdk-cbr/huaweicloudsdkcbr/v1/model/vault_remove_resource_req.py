@@ -29,7 +29,7 @@ class VaultRemoveResourceReq:
 
         The model defined in huaweicloud sdk
 
-        :param resource_ids: 要移除的资源ID列表
+        :param resource_ids: 要移除的资源ID列表 最小长度：1 最大长度：256
         :type resource_ids: list[str]
         """
         
@@ -44,7 +44,7 @@ class VaultRemoveResourceReq:
     def resource_ids(self):
         """Gets the resource_ids of this VaultRemoveResourceReq.
 
-        要移除的资源ID列表
+        要移除的资源ID列表 最小长度：1 最大长度：256
 
         :return: The resource_ids of this VaultRemoveResourceReq.
         :rtype: list[str]
@@ -55,7 +55,7 @@ class VaultRemoveResourceReq:
     def resource_ids(self, resource_ids):
         """Sets the resource_ids of this VaultRemoveResourceReq.
 
-        要移除的资源ID列表
+        要移除的资源ID列表 最小长度：1 最大长度：256
 
         :param resource_ids: The resource_ids of this VaultRemoveResourceReq.
         :type resource_ids: list[str]

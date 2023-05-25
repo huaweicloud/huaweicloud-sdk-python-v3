@@ -7,6 +7,9 @@ from huaweicloudsdklive.v1.live_client import LiveClient
 from huaweicloudsdklive.v1.live_async_client import LiveAsyncClient
 # import models into sdk package
 from huaweicloudsdklive.v1.model.app_quality_info import AppQualityInfo
+from huaweicloudsdklive.v1.model.batch_show_ip_belongs_request import BatchShowIpBelongsRequest
+from huaweicloudsdklive.v1.model.batch_show_ip_belongs_response import BatchShowIpBelongsResponse
+from huaweicloudsdklive.v1.model.cdn_ip import CdnIp
 from huaweicloudsdklive.v1.model.create_domain_mapping_request import CreateDomainMappingRequest
 from huaweicloudsdklive.v1.model.create_domain_mapping_response import CreateDomainMappingResponse
 from huaweicloudsdklive.v1.model.create_domain_request import CreateDomainRequest

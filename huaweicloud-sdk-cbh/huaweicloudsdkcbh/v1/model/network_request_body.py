@@ -39,7 +39,7 @@ class NetworkRequestBody:
         :type type: str
         :param security_groups: 云堡垒升级实例所在安全组信息。
         :type security_groups: list[:class:`huaweicloudsdkcbh.v1.SecurityGroup`]
-        :param nics: 云堡垒升级实例的网卡信息。
+        :param nics: 云堡垒机实例的网卡信息。
         :type nics: list[:class:`huaweicloudsdkcbh.v1.Nics`]
         :param server_id: 云堡垒机实例ID。
         :type server_id: str
@@ -107,7 +107,7 @@ class NetworkRequestBody:
     def nics(self):
         """Gets the nics of this NetworkRequestBody.
 
-        云堡垒升级实例的网卡信息。
+        云堡垒机实例的网卡信息。
 
         :return: The nics of this NetworkRequestBody.
         :rtype: list[:class:`huaweicloudsdkcbh.v1.Nics`]
@@ -118,7 +118,7 @@ class NetworkRequestBody:
     def nics(self, nics):
         """Sets the nics of this NetworkRequestBody.
 
-        云堡垒升级实例的网卡信息。
+        云堡垒机实例的网卡信息。
 
         :param nics: The nics of this NetworkRequestBody.
         :type nics: list[:class:`huaweicloudsdkcbh.v1.Nics`]

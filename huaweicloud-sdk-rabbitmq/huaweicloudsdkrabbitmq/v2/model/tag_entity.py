@@ -31,9 +31,9 @@ class TagEntity:
 
         The model defined in huaweicloud sdk
 
-        :param key: 键。最大长度36个unicode字符。  key不能为空，不能为空字符串。  不能包含下列字符：非打印字符ASCII(0-31)，“&#x3D;”,“*”,“&lt;”,“&gt;”,“\\”,“,”,“|”,“/”。
+        :param key: 键。  key不能为空，长度1~128个字符（中文也可以输入128个字符）。  可用 UTF-8 格式表示的字母、数字和空格，以及以下字符： _ . : &#x3D; + - @  key两头不能有空格字符。
         :type key: str
-        :param value: 值。每个值最大长度43个unicode字符。  value不能为空，可以空字符串。  不能包含下列字符：非打印字符ASCII(0-31), “&#x3D;”,“*”,“&lt;”,“&gt;”,“\\”,“,”,“|”,“/”。
+        :param value: 值。  长度0~255个字符（中文也可以输入255个字符）。  可用 UTF-8 格式表示的字母、数字和空格，以及以下字符： _ . : / &#x3D; + - @。  value可以为空字符串。
         :type value: str
         """
         
@@ -52,7 +52,7 @@ class TagEntity:
     def key(self):
         """Gets the key of this TagEntity.
 
-        键。最大长度36个unicode字符。  key不能为空，不能为空字符串。  不能包含下列字符：非打印字符ASCII(0-31)，“=”,“*”,“<”,“>”,“\\”,“,”,“|”,“/”。
+        键。  key不能为空，长度1~128个字符（中文也可以输入128个字符）。  可用 UTF-8 格式表示的字母、数字和空格，以及以下字符： _ . : = + - @  key两头不能有空格字符。
 
         :return: The key of this TagEntity.
         :rtype: str
@@ -63,7 +63,7 @@ class TagEntity:
     def key(self, key):
         """Sets the key of this TagEntity.
 
-        键。最大长度36个unicode字符。  key不能为空，不能为空字符串。  不能包含下列字符：非打印字符ASCII(0-31)，“=”,“*”,“<”,“>”,“\\”,“,”,“|”,“/”。
+        键。  key不能为空，长度1~128个字符（中文也可以输入128个字符）。  可用 UTF-8 格式表示的字母、数字和空格，以及以下字符： _ . : = + - @  key两头不能有空格字符。
 
         :param key: The key of this TagEntity.
         :type key: str
@@ -74,7 +74,7 @@ class TagEntity:
     def value(self):
         """Gets the value of this TagEntity.
 
-        值。每个值最大长度43个unicode字符。  value不能为空，可以空字符串。  不能包含下列字符：非打印字符ASCII(0-31), “=”,“*”,“<”,“>”,“\\”,“,”,“|”,“/”。
+        值。  长度0~255个字符（中文也可以输入255个字符）。  可用 UTF-8 格式表示的字母、数字和空格，以及以下字符： _ . : / = + - @。  value可以为空字符串。
 
         :return: The value of this TagEntity.
         :rtype: str
@@ -85,7 +85,7 @@ class TagEntity:
     def value(self, value):
         """Sets the value of this TagEntity.
 
-        值。每个值最大长度43个unicode字符。  value不能为空，可以空字符串。  不能包含下列字符：非打印字符ASCII(0-31), “=”,“*”,“<”,“>”,“\\”,“,”,“|”,“/”。
+        值。  长度0~255个字符（中文也可以输入255个字符）。  可用 UTF-8 格式表示的字母、数字和空格，以及以下字符： _ . : / = + - @。  value可以为空字符串。
 
         :param value: The value of this TagEntity.
         :type value: str

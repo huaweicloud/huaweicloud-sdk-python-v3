@@ -20,18 +20,16 @@ class UpdateAppResponse(SdkResponse):
     openapi_types = {
         'app_key': 'str',
         'app_name': 'str',
-        'id': 'str',
-        'app_secret': 'str'
+        'id': 'str'
     }
 
     attribute_map = {
         'app_key': 'app_key',
         'app_name': 'app_name',
-        'id': 'id',
-        'app_secret': 'app_secret'
+        'id': 'id'
     }
 
-    def __init__(self, app_key=None, app_name=None, id=None, app_secret=None):
+    def __init__(self, app_key=None, app_name=None, id=None):
         """UpdateAppResponse
 
         The model defined in huaweicloud sdk
@@ -42,8 +40,6 @@ class UpdateAppResponse(SdkResponse):
         :type app_name: str
         :param id: 应用主键ID
         :type id: str
-        :param app_secret: Application Secret，应用密钥
-        :type app_secret: str
         """
         
         super(UpdateAppResponse, self).__init__()
@@ -51,7 +47,6 @@ class UpdateAppResponse(SdkResponse):
         self._app_key = None
         self._app_name = None
         self._id = None
-        self._app_secret = None
         self.discriminator = None
 
         if app_key is not None:
@@ -60,8 +55,6 @@ class UpdateAppResponse(SdkResponse):
             self.app_name = app_name
         if id is not None:
             self.id = id
-        if app_secret is not None:
-            self.app_secret = app_secret
 
     @property
     def app_key(self):
@@ -128,28 +121,6 @@ class UpdateAppResponse(SdkResponse):
         :type id: str
         """
         self._id = id
-
-    @property
-    def app_secret(self):
-        """Gets the app_secret of this UpdateAppResponse.
-
-        Application Secret，应用密钥
-
-        :return: The app_secret of this UpdateAppResponse.
-        :rtype: str
-        """
-        return self._app_secret
-
-    @app_secret.setter
-    def app_secret(self, app_secret):
-        """Sets the app_secret of this UpdateAppResponse.
-
-        Application Secret，应用密钥
-
-        :param app_secret: The app_secret of this UpdateAppResponse.
-        :type app_secret: str
-        """
-        self._app_secret = app_secret
 
     def to_dict(self):
         """Returns the model properties as a dict"""

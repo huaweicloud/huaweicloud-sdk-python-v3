@@ -75,7 +75,7 @@ class CreateInstanceReq:
         :type description: str
         :param engine: 消息引擎：rabbitmq。
         :type engine: str
-        :param engine_version: 消息引擎的版本。   - RabbitMQ版本有：3.7.17 
+        :param engine_version: 消息引擎的版本。   - RabbitMQ版本有：3.8.35和3.7.17 
         :type engine_version: str
         :param storage_space: 消息存储空间，单位GB。   - 单机RabbitMQ实例的存储空间的取值范围100GB~90000GB。   - 集群RabbitMQ实例的存储空间的取值范围为100GB*节点数~90000GB、200GB*节点数~90000GB、300GB*节点数~90000GB。 
         :type storage_space: int
@@ -105,7 +105,7 @@ class CreateInstanceReq:
         :type publicip_id: str
         :param ssl_enable: 是否打开SSL加密访问。 - true：打开SSL加密访问。 - false：不打开SSL加密访问。
         :type ssl_enable: bool
-        :param storage_spec_code: 存储IO规格。  取值范围：   - dms.physical.storage.high.v2   - dms.physical.storage.ultra.v2   - dms.physical.storage.high.dss.v2   - dms.physical.storage.ultra.dss.v2
+        :param storage_spec_code: 存储IO规格。  取值范围：   - dms.physical.storage.high.v2   - dms.physical.storage.ultra.v2   - dms.physical.storage.high.dss.v2(专属云)   - dms.physical.storage.ultra.dss.v2(专属云)
         :type storage_spec_code: str
         :param enterprise_project_id: 企业项目ID。若为企业项目帐号，该参数必填。
         :type enterprise_project_id: str
@@ -239,7 +239,7 @@ class CreateInstanceReq:
     def engine_version(self):
         """Gets the engine_version of this CreateInstanceReq.
 
-        消息引擎的版本。   - RabbitMQ版本有：3.7.17 
+        消息引擎的版本。   - RabbitMQ版本有：3.8.35和3.7.17 
 
         :return: The engine_version of this CreateInstanceReq.
         :rtype: str
@@ -250,7 +250,7 @@ class CreateInstanceReq:
     def engine_version(self, engine_version):
         """Sets the engine_version of this CreateInstanceReq.
 
-        消息引擎的版本。   - RabbitMQ版本有：3.7.17 
+        消息引擎的版本。   - RabbitMQ版本有：3.8.35和3.7.17 
 
         :param engine_version: The engine_version of this CreateInstanceReq.
         :type engine_version: str
@@ -569,7 +569,7 @@ class CreateInstanceReq:
     def storage_spec_code(self):
         """Gets the storage_spec_code of this CreateInstanceReq.
 
-        存储IO规格。  取值范围：   - dms.physical.storage.high.v2   - dms.physical.storage.ultra.v2   - dms.physical.storage.high.dss.v2   - dms.physical.storage.ultra.dss.v2
+        存储IO规格。  取值范围：   - dms.physical.storage.high.v2   - dms.physical.storage.ultra.v2   - dms.physical.storage.high.dss.v2(专属云)   - dms.physical.storage.ultra.dss.v2(专属云)
 
         :return: The storage_spec_code of this CreateInstanceReq.
         :rtype: str
@@ -580,7 +580,7 @@ class CreateInstanceReq:
     def storage_spec_code(self, storage_spec_code):
         """Sets the storage_spec_code of this CreateInstanceReq.
 
-        存储IO规格。  取值范围：   - dms.physical.storage.high.v2   - dms.physical.storage.ultra.v2   - dms.physical.storage.high.dss.v2   - dms.physical.storage.ultra.dss.v2
+        存储IO规格。  取值范围：   - dms.physical.storage.high.v2   - dms.physical.storage.ultra.v2   - dms.physical.storage.high.dss.v2(专属云)   - dms.physical.storage.ultra.dss.v2(专属云)
 
         :param storage_spec_code: The storage_spec_code of this CreateInstanceReq.
         :type storage_spec_code: str
