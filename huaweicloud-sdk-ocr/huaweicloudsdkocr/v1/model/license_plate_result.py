@@ -37,7 +37,7 @@ class LicensePlateResult:
 
         :param plate_number: 车牌内容。 
         :type plate_number: str
-        :param plate_color: 当前版本支持的车牌底色类型：  - blue: 蓝色  - green: 绿色  - black: 黑色  - white: 白色  - yellow: 黄色 
+        :param plate_color: 当前版本支持的车牌底色类型：  - blue: 蓝色  - green: 绿色（小型新能源车牌）  - black: 黑色  - white: 白色  - yellow: 黄色  - yellow_green: 黄绿（大型新能源车牌） 
         :type plate_color: str
         :param plate_location: 车牌的区域位置信息，列表形式，包含文字区域四个顶点的二维坐标（x,y）;坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
         :type plate_location: list[list[int]]
@@ -84,7 +84,7 @@ class LicensePlateResult:
     def plate_color(self):
         """Gets the plate_color of this LicensePlateResult.
 
-        当前版本支持的车牌底色类型：  - blue: 蓝色  - green: 绿色  - black: 黑色  - white: 白色  - yellow: 黄色 
+        当前版本支持的车牌底色类型：  - blue: 蓝色  - green: 绿色（小型新能源车牌）  - black: 黑色  - white: 白色  - yellow: 黄色  - yellow_green: 黄绿（大型新能源车牌） 
 
         :return: The plate_color of this LicensePlateResult.
         :rtype: str
@@ -95,7 +95,7 @@ class LicensePlateResult:
     def plate_color(self, plate_color):
         """Sets the plate_color of this LicensePlateResult.
 
-        当前版本支持的车牌底色类型：  - blue: 蓝色  - green: 绿色  - black: 黑色  - white: 白色  - yellow: 黄色 
+        当前版本支持的车牌底色类型：  - blue: 蓝色  - green: 绿色（小型新能源车牌）  - black: 黑色  - white: 白色  - yellow: 黄色  - yellow_green: 黄绿（大型新能源车牌） 
 
         :param plate_color: The plate_color of this LicensePlateResult.
         :type plate_color: str

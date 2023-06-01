@@ -32,7 +32,7 @@ class ShowInstanceExtendProductInfoResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param hourly: 表示[按需付费的](tag:hc,hk,hws,hws_hk,hws_ocb,ctc,sbc,hk_sbc,cmcc,g42,tm)产品列表。
+        :param hourly: 表示[按需付费的](tag:hws,hws_hk,hws_ocb,ctc,sbc,hk_sbc,cmcc,g42,tm,hk_g42,hk_tm)产品列表。
         :type hourly: list[:class:`huaweicloudsdkkafka.v2.ShowInstanceExtendProductInfoRespHourly`]
         :param monthly: 表示包年包月的产品列表。当前暂不支持通过API创建包年包月的Kafka实例。
         :type monthly: list[:class:`huaweicloudsdkkafka.v2.ShowInstanceExtendProductInfoRespHourly`]
@@ -53,7 +53,7 @@ class ShowInstanceExtendProductInfoResponse(SdkResponse):
     def hourly(self):
         """Gets the hourly of this ShowInstanceExtendProductInfoResponse.
 
-        表示[按需付费的](tag:hc,hk,hws,hws_hk,hws_ocb,ctc,sbc,hk_sbc,cmcc,g42,tm)产品列表。
+        表示[按需付费的](tag:hws,hws_hk,hws_ocb,ctc,sbc,hk_sbc,cmcc,g42,tm,hk_g42,hk_tm)产品列表。
 
         :return: The hourly of this ShowInstanceExtendProductInfoResponse.
         :rtype: list[:class:`huaweicloudsdkkafka.v2.ShowInstanceExtendProductInfoRespHourly`]
@@ -64,7 +64,7 @@ class ShowInstanceExtendProductInfoResponse(SdkResponse):
     def hourly(self, hourly):
         """Sets the hourly of this ShowInstanceExtendProductInfoResponse.
 
-        表示[按需付费的](tag:hc,hk,hws,hws_hk,hws_ocb,ctc,sbc,hk_sbc,cmcc,g42,tm)产品列表。
+        表示[按需付费的](tag:hws,hws_hk,hws_ocb,ctc,sbc,hk_sbc,cmcc,g42,tm,hk_g42,hk_tm)产品列表。
 
         :param hourly: The hourly of this ShowInstanceExtendProductInfoResponse.
         :type hourly: list[:class:`huaweicloudsdkkafka.v2.ShowInstanceExtendProductInfoRespHourly`]

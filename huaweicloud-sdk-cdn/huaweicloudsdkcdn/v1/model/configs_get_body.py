@@ -65,7 +65,7 @@ class ConfigsGetBody:
 
         The model defined in huaweicloud sdk
 
-        :param origin_request_header: 回源请求头配置
+        :param origin_request_header: 回源请求头配置。
         :type origin_request_header: list[:class:`huaweicloudsdkcdn.v1.OriginRequestHeader`]
         :param http_response_header: http header配置
         :type http_response_header: list[:class:`huaweicloudsdkcdn.v1.HttpResponseHeader`]
@@ -75,7 +75,7 @@ class ConfigsGetBody:
         :type https: :class:`huaweicloudsdkcdn.v1.HttpGetBody`
         :param sources: 源站配置。
         :type sources: list[:class:`huaweicloudsdkcdn.v1.SourcesConfig`]
-        :param origin_follow302_status: 回源跟随（on：开启，off：关闭）。
+        :param origin_follow302_status: 回源跟随，on：开启，off：关闭。
         :type origin_follow302_status: str
         :param cache_rules: 缓存规则。
         :type cache_rules: list[:class:`huaweicloudsdkcdn.v1.CacheRules`]
@@ -83,7 +83,7 @@ class ConfigsGetBody:
         :type ip_filter: :class:`huaweicloudsdkcdn.v1.IpFilter`
         :param referer: 
         :type referer: :class:`huaweicloudsdkcdn.v1.RefererConfig`
-        :param origin_protocol: 回源协议（follow：协议跟随回源，http：HTTP回源(默认)，https：https回源）。
+        :param origin_protocol: 回源协议。
         :type origin_protocol: str
         :param force_redirect: 
         :type force_redirect: :class:`huaweicloudsdkcdn.v1.ForceRedirectConfig`
@@ -91,17 +91,17 @@ class ConfigsGetBody:
         :type compress: :class:`huaweicloudsdkcdn.v1.Compress`
         :param cache_url_parameter_filter: 
         :type cache_url_parameter_filter: :class:`huaweicloudsdkcdn.v1.CacheUrlParameterFilter`
-        :param ipv6_accelerate: ipv6设置（1：打开；0：关闭）
+        :param ipv6_accelerate: ipv6设置，1：打开；0：关闭。
         :type ipv6_accelerate: int
-        :param error_code_cache: 状态码缓存时间
+        :param error_code_cache: 状态码缓存时间。
         :type error_code_cache: list[:class:`huaweicloudsdkcdn.v1.ErrorCodeCache`]
-        :param origin_range_status: Range回源，即分片回源 开启Range回源的前提是您的源站支持Range请求，即HTTP请求头中包含Range字段，否则可能导致回源失败。 开启: on 关闭: off
+        :param origin_range_status: Range回源。
         :type origin_range_status: str
         :param user_agent_filter: 
         :type user_agent_filter: :class:`huaweicloudsdkcdn.v1.UserAgentFilter`
-        :param origin_request_url_rewrite: 改写回源URL，最多配置20条。
+        :param origin_request_url_rewrite: 改写回源URL。
         :type origin_request_url_rewrite: list[:class:`huaweicloudsdkcdn.v1.OriginRequestUrlRewrite`]
-        :param error_code_redirect_rules: 自定义错误页面
+        :param error_code_redirect_rules: 自定义错误页面。
         :type error_code_redirect_rules: list[:class:`huaweicloudsdkcdn.v1.ErrorCodeRedirectRules`]
         """
         
@@ -171,7 +171,7 @@ class ConfigsGetBody:
     def origin_request_header(self):
         """Gets the origin_request_header of this ConfigsGetBody.
 
-        回源请求头配置
+        回源请求头配置。
 
         :return: The origin_request_header of this ConfigsGetBody.
         :rtype: list[:class:`huaweicloudsdkcdn.v1.OriginRequestHeader`]
@@ -182,7 +182,7 @@ class ConfigsGetBody:
     def origin_request_header(self, origin_request_header):
         """Sets the origin_request_header of this ConfigsGetBody.
 
-        回源请求头配置
+        回源请求头配置。
 
         :param origin_request_header: The origin_request_header of this ConfigsGetBody.
         :type origin_request_header: list[:class:`huaweicloudsdkcdn.v1.OriginRequestHeader`]
@@ -273,7 +273,7 @@ class ConfigsGetBody:
     def origin_follow302_status(self):
         """Gets the origin_follow302_status of this ConfigsGetBody.
 
-        回源跟随（on：开启，off：关闭）。
+        回源跟随，on：开启，off：关闭。
 
         :return: The origin_follow302_status of this ConfigsGetBody.
         :rtype: str
@@ -284,7 +284,7 @@ class ConfigsGetBody:
     def origin_follow302_status(self, origin_follow302_status):
         """Sets the origin_follow302_status of this ConfigsGetBody.
 
-        回源跟随（on：开启，off：关闭）。
+        回源跟随，on：开启，off：关闭。
 
         :param origin_follow302_status: The origin_follow302_status of this ConfigsGetBody.
         :type origin_follow302_status: str
@@ -353,7 +353,7 @@ class ConfigsGetBody:
     def origin_protocol(self):
         """Gets the origin_protocol of this ConfigsGetBody.
 
-        回源协议（follow：协议跟随回源，http：HTTP回源(默认)，https：https回源）。
+        回源协议。
 
         :return: The origin_protocol of this ConfigsGetBody.
         :rtype: str
@@ -364,7 +364,7 @@ class ConfigsGetBody:
     def origin_protocol(self, origin_protocol):
         """Sets the origin_protocol of this ConfigsGetBody.
 
-        回源协议（follow：协议跟随回源，http：HTTP回源(默认)，https：https回源）。
+        回源协议。
 
         :param origin_protocol: The origin_protocol of this ConfigsGetBody.
         :type origin_protocol: str
@@ -429,7 +429,7 @@ class ConfigsGetBody:
     def ipv6_accelerate(self):
         """Gets the ipv6_accelerate of this ConfigsGetBody.
 
-        ipv6设置（1：打开；0：关闭）
+        ipv6设置，1：打开；0：关闭。
 
         :return: The ipv6_accelerate of this ConfigsGetBody.
         :rtype: int
@@ -440,7 +440,7 @@ class ConfigsGetBody:
     def ipv6_accelerate(self, ipv6_accelerate):
         """Sets the ipv6_accelerate of this ConfigsGetBody.
 
-        ipv6设置（1：打开；0：关闭）
+        ipv6设置，1：打开；0：关闭。
 
         :param ipv6_accelerate: The ipv6_accelerate of this ConfigsGetBody.
         :type ipv6_accelerate: int
@@ -451,7 +451,7 @@ class ConfigsGetBody:
     def error_code_cache(self):
         """Gets the error_code_cache of this ConfigsGetBody.
 
-        状态码缓存时间
+        状态码缓存时间。
 
         :return: The error_code_cache of this ConfigsGetBody.
         :rtype: list[:class:`huaweicloudsdkcdn.v1.ErrorCodeCache`]
@@ -462,7 +462,7 @@ class ConfigsGetBody:
     def error_code_cache(self, error_code_cache):
         """Sets the error_code_cache of this ConfigsGetBody.
 
-        状态码缓存时间
+        状态码缓存时间。
 
         :param error_code_cache: The error_code_cache of this ConfigsGetBody.
         :type error_code_cache: list[:class:`huaweicloudsdkcdn.v1.ErrorCodeCache`]
@@ -473,7 +473,7 @@ class ConfigsGetBody:
     def origin_range_status(self):
         """Gets the origin_range_status of this ConfigsGetBody.
 
-        Range回源，即分片回源 开启Range回源的前提是您的源站支持Range请求，即HTTP请求头中包含Range字段，否则可能导致回源失败。 开启: on 关闭: off
+        Range回源。
 
         :return: The origin_range_status of this ConfigsGetBody.
         :rtype: str
@@ -484,7 +484,7 @@ class ConfigsGetBody:
     def origin_range_status(self, origin_range_status):
         """Sets the origin_range_status of this ConfigsGetBody.
 
-        Range回源，即分片回源 开启Range回源的前提是您的源站支持Range请求，即HTTP请求头中包含Range字段，否则可能导致回源失败。 开启: on 关闭: off
+        Range回源。
 
         :param origin_range_status: The origin_range_status of this ConfigsGetBody.
         :type origin_range_status: str
@@ -513,7 +513,7 @@ class ConfigsGetBody:
     def origin_request_url_rewrite(self):
         """Gets the origin_request_url_rewrite of this ConfigsGetBody.
 
-        改写回源URL，最多配置20条。
+        改写回源URL。
 
         :return: The origin_request_url_rewrite of this ConfigsGetBody.
         :rtype: list[:class:`huaweicloudsdkcdn.v1.OriginRequestUrlRewrite`]
@@ -524,7 +524,7 @@ class ConfigsGetBody:
     def origin_request_url_rewrite(self, origin_request_url_rewrite):
         """Sets the origin_request_url_rewrite of this ConfigsGetBody.
 
-        改写回源URL，最多配置20条。
+        改写回源URL。
 
         :param origin_request_url_rewrite: The origin_request_url_rewrite of this ConfigsGetBody.
         :type origin_request_url_rewrite: list[:class:`huaweicloudsdkcdn.v1.OriginRequestUrlRewrite`]
@@ -535,7 +535,7 @@ class ConfigsGetBody:
     def error_code_redirect_rules(self):
         """Gets the error_code_redirect_rules of this ConfigsGetBody.
 
-        自定义错误页面
+        自定义错误页面。
 
         :return: The error_code_redirect_rules of this ConfigsGetBody.
         :rtype: list[:class:`huaweicloudsdkcdn.v1.ErrorCodeRedirectRules`]
@@ -546,7 +546,7 @@ class ConfigsGetBody:
     def error_code_redirect_rules(self, error_code_redirect_rules):
         """Sets the error_code_redirect_rules of this ConfigsGetBody.
 
-        自定义错误页面
+        自定义错误页面。
 
         :param error_code_redirect_rules: The error_code_redirect_rules of this ConfigsGetBody.
         :type error_code_redirect_rules: list[:class:`huaweicloudsdkcdn.v1.ErrorCodeRedirectRules`]

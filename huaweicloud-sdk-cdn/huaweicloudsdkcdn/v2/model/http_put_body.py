@@ -45,23 +45,23 @@ class HttpPutBody:
 
         The model defined in huaweicloud sdk
 
-        :param https_status: HTTPS证书是否启用。（on：开启，off：关闭）
+        :param https_status: HTTPS证书是否启用，on：开启，off：关闭。
         :type https_status: str
-        :param certificate_name: 证书名字。（长度限制为3-64字符）。当证书开启时必传。
+        :param certificate_name: 证书名字，长度限制为3-64字符。  &gt; 当证书开启时必传。
         :type certificate_name: str
-        :param certificate_value: HTTPS协议使用的证书内容，当证书开启时必传。取值范围：PEM编码格式。
+        :param certificate_value: HTTPS协议使用的证书内容，当证书开启时必传。  &gt; PEM编码格式。
         :type certificate_value: str
-        :param private_key: HTTPS协议使用的私钥，当证书开启时必传。取值范围：PEM编码格式。
+        :param private_key: HTTPS协议使用的私钥，当证书开启时必传。  &gt; PEM编码格式。
         :type private_key: str
-        :param certificate_source: 证书来源。1：代表华为云托管证书；0：表示自有证书。 默认值0。当证书开启时必传。
+        :param certificate_source: 证书来源,1：华为云托管证书,0：自有证书, 默认值0。  &gt; 证书开启时必传
         :type certificate_source: int
-        :param certificate_type: 证书类型。server：国际证书；server_sm：国密证书。
+        :param certificate_type: 证书类型，server：国际证书；server_sm：国密证书。
         :type certificate_type: str
-        :param http2_status: 是否使用HTTP2.0。（on：是，off：否。）,默认关闭，https_status&#x3D;off时，该值不生效。
+        :param http2_status: 是否使用HTTP2.0，on：是，off：否。  &gt; 默认关闭，https_status&#x3D;off时，该值不生效。
         :type http2_status: str
-        :param tls_version: 传输层安全性协议。目前支持TLSv1.0/1.1/1.2/1.3四个版本的协议。默认全部开启，不可全部关闭，只可开启连续或单个版本号。多版本开启时，使用逗号拼接传输，例：TLSv1.1,TLSv1.2。
+        :param tls_version: 传输层安全性协议， 目前支持TLSv1.0/1.1/1.2/1.3四个版本的协议，CDN默认开启TLS1.1/1.2/1.3，不可全部关闭。  &gt; 1.需开启连续或单个版本号，例：不可仅开启TLS1.0/1.2而关闭TLS1.1。  &gt; 2.多版本开启时，使用逗号拼接传输，例：TLSv1.1,TLSv1.2。
         :type tls_version: str
-        :param ocsp_stapling_status: 是否开启ocsp stapling （on：是，off：否）。
+        :param ocsp_stapling_status: 是否开启ocsp stapling,on：是，off：否。
         :type ocsp_stapling_status: str
         """
         
@@ -101,7 +101,7 @@ class HttpPutBody:
     def https_status(self):
         """Gets the https_status of this HttpPutBody.
 
-        HTTPS证书是否启用。（on：开启，off：关闭）
+        HTTPS证书是否启用，on：开启，off：关闭。
 
         :return: The https_status of this HttpPutBody.
         :rtype: str
@@ -112,7 +112,7 @@ class HttpPutBody:
     def https_status(self, https_status):
         """Sets the https_status of this HttpPutBody.
 
-        HTTPS证书是否启用。（on：开启，off：关闭）
+        HTTPS证书是否启用，on：开启，off：关闭。
 
         :param https_status: The https_status of this HttpPutBody.
         :type https_status: str
@@ -123,7 +123,7 @@ class HttpPutBody:
     def certificate_name(self):
         """Gets the certificate_name of this HttpPutBody.
 
-        证书名字。（长度限制为3-64字符）。当证书开启时必传。
+        证书名字，长度限制为3-64字符。  > 当证书开启时必传。
 
         :return: The certificate_name of this HttpPutBody.
         :rtype: str
@@ -134,7 +134,7 @@ class HttpPutBody:
     def certificate_name(self, certificate_name):
         """Sets the certificate_name of this HttpPutBody.
 
-        证书名字。（长度限制为3-64字符）。当证书开启时必传。
+        证书名字，长度限制为3-64字符。  > 当证书开启时必传。
 
         :param certificate_name: The certificate_name of this HttpPutBody.
         :type certificate_name: str
@@ -145,7 +145,7 @@ class HttpPutBody:
     def certificate_value(self):
         """Gets the certificate_value of this HttpPutBody.
 
-        HTTPS协议使用的证书内容，当证书开启时必传。取值范围：PEM编码格式。
+        HTTPS协议使用的证书内容，当证书开启时必传。  > PEM编码格式。
 
         :return: The certificate_value of this HttpPutBody.
         :rtype: str
@@ -156,7 +156,7 @@ class HttpPutBody:
     def certificate_value(self, certificate_value):
         """Sets the certificate_value of this HttpPutBody.
 
-        HTTPS协议使用的证书内容，当证书开启时必传。取值范围：PEM编码格式。
+        HTTPS协议使用的证书内容，当证书开启时必传。  > PEM编码格式。
 
         :param certificate_value: The certificate_value of this HttpPutBody.
         :type certificate_value: str
@@ -167,7 +167,7 @@ class HttpPutBody:
     def private_key(self):
         """Gets the private_key of this HttpPutBody.
 
-        HTTPS协议使用的私钥，当证书开启时必传。取值范围：PEM编码格式。
+        HTTPS协议使用的私钥，当证书开启时必传。  > PEM编码格式。
 
         :return: The private_key of this HttpPutBody.
         :rtype: str
@@ -178,7 +178,7 @@ class HttpPutBody:
     def private_key(self, private_key):
         """Sets the private_key of this HttpPutBody.
 
-        HTTPS协议使用的私钥，当证书开启时必传。取值范围：PEM编码格式。
+        HTTPS协议使用的私钥，当证书开启时必传。  > PEM编码格式。
 
         :param private_key: The private_key of this HttpPutBody.
         :type private_key: str
@@ -189,7 +189,7 @@ class HttpPutBody:
     def certificate_source(self):
         """Gets the certificate_source of this HttpPutBody.
 
-        证书来源。1：代表华为云托管证书；0：表示自有证书。 默认值0。当证书开启时必传。
+        证书来源,1：华为云托管证书,0：自有证书, 默认值0。  > 证书开启时必传
 
         :return: The certificate_source of this HttpPutBody.
         :rtype: int
@@ -200,7 +200,7 @@ class HttpPutBody:
     def certificate_source(self, certificate_source):
         """Sets the certificate_source of this HttpPutBody.
 
-        证书来源。1：代表华为云托管证书；0：表示自有证书。 默认值0。当证书开启时必传。
+        证书来源,1：华为云托管证书,0：自有证书, 默认值0。  > 证书开启时必传
 
         :param certificate_source: The certificate_source of this HttpPutBody.
         :type certificate_source: int
@@ -211,7 +211,7 @@ class HttpPutBody:
     def certificate_type(self):
         """Gets the certificate_type of this HttpPutBody.
 
-        证书类型。server：国际证书；server_sm：国密证书。
+        证书类型，server：国际证书；server_sm：国密证书。
 
         :return: The certificate_type of this HttpPutBody.
         :rtype: str
@@ -222,7 +222,7 @@ class HttpPutBody:
     def certificate_type(self, certificate_type):
         """Sets the certificate_type of this HttpPutBody.
 
-        证书类型。server：国际证书；server_sm：国密证书。
+        证书类型，server：国际证书；server_sm：国密证书。
 
         :param certificate_type: The certificate_type of this HttpPutBody.
         :type certificate_type: str
@@ -233,7 +233,7 @@ class HttpPutBody:
     def http2_status(self):
         """Gets the http2_status of this HttpPutBody.
 
-        是否使用HTTP2.0。（on：是，off：否。）,默认关闭，https_status=off时，该值不生效。
+        是否使用HTTP2.0，on：是，off：否。  > 默认关闭，https_status=off时，该值不生效。
 
         :return: The http2_status of this HttpPutBody.
         :rtype: str
@@ -244,7 +244,7 @@ class HttpPutBody:
     def http2_status(self, http2_status):
         """Sets the http2_status of this HttpPutBody.
 
-        是否使用HTTP2.0。（on：是，off：否。）,默认关闭，https_status=off时，该值不生效。
+        是否使用HTTP2.0，on：是，off：否。  > 默认关闭，https_status=off时，该值不生效。
 
         :param http2_status: The http2_status of this HttpPutBody.
         :type http2_status: str
@@ -255,7 +255,7 @@ class HttpPutBody:
     def tls_version(self):
         """Gets the tls_version of this HttpPutBody.
 
-        传输层安全性协议。目前支持TLSv1.0/1.1/1.2/1.3四个版本的协议。默认全部开启，不可全部关闭，只可开启连续或单个版本号。多版本开启时，使用逗号拼接传输，例：TLSv1.1,TLSv1.2。
+        传输层安全性协议， 目前支持TLSv1.0/1.1/1.2/1.3四个版本的协议，CDN默认开启TLS1.1/1.2/1.3，不可全部关闭。  > 1.需开启连续或单个版本号，例：不可仅开启TLS1.0/1.2而关闭TLS1.1。  > 2.多版本开启时，使用逗号拼接传输，例：TLSv1.1,TLSv1.2。
 
         :return: The tls_version of this HttpPutBody.
         :rtype: str
@@ -266,7 +266,7 @@ class HttpPutBody:
     def tls_version(self, tls_version):
         """Sets the tls_version of this HttpPutBody.
 
-        传输层安全性协议。目前支持TLSv1.0/1.1/1.2/1.3四个版本的协议。默认全部开启，不可全部关闭，只可开启连续或单个版本号。多版本开启时，使用逗号拼接传输，例：TLSv1.1,TLSv1.2。
+        传输层安全性协议， 目前支持TLSv1.0/1.1/1.2/1.3四个版本的协议，CDN默认开启TLS1.1/1.2/1.3，不可全部关闭。  > 1.需开启连续或单个版本号，例：不可仅开启TLS1.0/1.2而关闭TLS1.1。  > 2.多版本开启时，使用逗号拼接传输，例：TLSv1.1,TLSv1.2。
 
         :param tls_version: The tls_version of this HttpPutBody.
         :type tls_version: str
@@ -277,7 +277,7 @@ class HttpPutBody:
     def ocsp_stapling_status(self):
         """Gets the ocsp_stapling_status of this HttpPutBody.
 
-        是否开启ocsp stapling （on：是，off：否）。
+        是否开启ocsp stapling,on：是，off：否。
 
         :return: The ocsp_stapling_status of this HttpPutBody.
         :rtype: str
@@ -288,7 +288,7 @@ class HttpPutBody:
     def ocsp_stapling_status(self, ocsp_stapling_status):
         """Sets the ocsp_stapling_status of this HttpPutBody.
 
-        是否开启ocsp stapling （on：是，off：否）。
+        是否开启ocsp stapling,on：是，off：否。
 
         :param ocsp_stapling_status: The ocsp_stapling_status of this HttpPutBody.
         :type ocsp_stapling_status: str

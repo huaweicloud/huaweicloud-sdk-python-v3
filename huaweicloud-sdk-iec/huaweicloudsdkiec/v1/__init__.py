@@ -45,6 +45,9 @@ from huaweicloudsdkiec.v1.model.create_firewall_option import CreateFirewallOpti
 from huaweicloudsdkiec.v1.model.create_firewall_request import CreateFirewallRequest
 from huaweicloudsdkiec.v1.model.create_firewall_request_body import CreateFirewallRequestBody
 from huaweicloudsdkiec.v1.model.create_firewall_response import CreateFirewallResponse
+from huaweicloudsdkiec.v1.model.create_image_request import CreateImageRequest
+from huaweicloudsdkiec.v1.model.create_image_request_body import CreateImageRequestBody
+from huaweicloudsdkiec.v1.model.create_image_response import CreateImageResponse
 from huaweicloudsdkiec.v1.model.create_keypair_request import CreateKeypairRequest
 from huaweicloudsdkiec.v1.model.create_keypair_request_body import CreateKeypairRequestBody
 from huaweicloudsdkiec.v1.model.create_keypair_response import CreateKeypairResponse
@@ -76,12 +79,16 @@ from huaweicloudsdkiec.v1.model.create_vpc_request import CreateVpcRequest
 from huaweicloudsdkiec.v1.model.create_vpc_request_body import CreateVpcRequestBody
 from huaweicloudsdkiec.v1.model.create_vpc_response import CreateVpcResponse
 from huaweicloudsdkiec.v1.model.data_volume import DataVolume
+from huaweicloudsdkiec.v1.model.delete_bandwidth_request import DeleteBandwidthRequest
+from huaweicloudsdkiec.v1.model.delete_bandwidth_response import DeleteBandwidthResponse
 from huaweicloudsdkiec.v1.model.delete_deployment_request import DeleteDeploymentRequest
 from huaweicloudsdkiec.v1.model.delete_deployment_response import DeleteDeploymentResponse
 from huaweicloudsdkiec.v1.model.delete_edge_cloud_request import DeleteEdgeCloudRequest
 from huaweicloudsdkiec.v1.model.delete_edge_cloud_response import DeleteEdgeCloudResponse
 from huaweicloudsdkiec.v1.model.delete_firewall_request import DeleteFirewallRequest
 from huaweicloudsdkiec.v1.model.delete_firewall_response import DeleteFirewallResponse
+from huaweicloudsdkiec.v1.model.delete_image_request import DeleteImageRequest
+from huaweicloudsdkiec.v1.model.delete_image_response import DeleteImageResponse
 from huaweicloudsdkiec.v1.model.delete_instances_request import DeleteInstancesRequest
 from huaweicloudsdkiec.v1.model.delete_instances_request_body import DeleteInstancesRequestBody
 from huaweicloudsdkiec.v1.model.delete_instances_response import DeleteInstancesResponse
@@ -135,6 +142,7 @@ from huaweicloudsdkiec.v1.model.fixed_ip import FixedIp
 from huaweicloudsdkiec.v1.model.flavor import Flavor
 from huaweicloudsdkiec.v1.model.flavor_instance import FlavorInstance
 from huaweicloudsdkiec.v1.model.geo_location import GeoLocation
+from huaweicloudsdkiec.v1.model.image_info import ImageInfo
 from huaweicloudsdkiec.v1.model.image_list import ImageList
 from huaweicloudsdkiec.v1.model.instance import Instance
 from huaweicloudsdkiec.v1.model.instance_address import InstanceAddress
@@ -143,6 +151,8 @@ from huaweicloudsdkiec.v1.model.ip_pool import IpPool
 from huaweicloudsdkiec.v1.model.job_result import JobResult
 from huaweicloudsdkiec.v1.model.list_bandwidths_request import ListBandwidthsRequest
 from huaweicloudsdkiec.v1.model.list_bandwidths_response import ListBandwidthsResponse
+from huaweicloudsdkiec.v1.model.list_cloud_images_request import ListCloudImagesRequest
+from huaweicloudsdkiec.v1.model.list_cloud_images_response import ListCloudImagesResponse
 from huaweicloudsdkiec.v1.model.list_deployments_request import ListDeploymentsRequest
 from huaweicloudsdkiec.v1.model.list_deployments_response import ListDeploymentsResponse
 from huaweicloudsdkiec.v1.model.list_edge_cloud_request import ListEdgeCloudRequest
@@ -190,6 +200,12 @@ from huaweicloudsdkiec.v1.model.public_ip import PublicIp
 from huaweicloudsdkiec.v1.model.publicip_info import PublicipInfo
 from huaweicloudsdkiec.v1.model.quota_resource import QuotaResource
 from huaweicloudsdkiec.v1.model.quota_resources import QuotaResources
+from huaweicloudsdkiec.v1.model.rebuild_image_request import RebuildImageRequest
+from huaweicloudsdkiec.v1.model.rebuild_image_request_body import RebuildImageRequestBody
+from huaweicloudsdkiec.v1.model.rebuild_image_response import RebuildImageResponse
+from huaweicloudsdkiec.v1.model.register_image_request import RegisterImageRequest
+from huaweicloudsdkiec.v1.model.register_image_request_body import RegisterImageRequestBody
+from huaweicloudsdkiec.v1.model.register_image_response import RegisterImageResponse
 from huaweicloudsdkiec.v1.model.resource import Resource
 from huaweicloudsdkiec.v1.model.root_volume import RootVolume
 from huaweicloudsdkiec.v1.model.route import Route
@@ -224,6 +240,8 @@ from huaweicloudsdkiec.v1.model.show_subnet_request import ShowSubnetRequest
 from huaweicloudsdkiec.v1.model.show_subnet_response import ShowSubnetResponse
 from huaweicloudsdkiec.v1.model.show_volume_request import ShowVolumeRequest
 from huaweicloudsdkiec.v1.model.show_volume_response import ShowVolumeResponse
+from huaweicloudsdkiec.v1.model.show_volume_types_request import ShowVolumeTypesRequest
+from huaweicloudsdkiec.v1.model.show_volume_types_response import ShowVolumeTypesResponse
 from huaweicloudsdkiec.v1.model.show_vpc_request import ShowVpcRequest
 from huaweicloudsdkiec.v1.model.show_vpc_response import ShowVpcResponse
 from huaweicloudsdkiec.v1.model.simple_keypair import SimpleKeypair
@@ -231,6 +249,10 @@ from huaweicloudsdkiec.v1.model.site import Site
 from huaweicloudsdkiec.v1.model.stack import Stack
 from huaweicloudsdkiec.v1.model.subnet import Subnet
 from huaweicloudsdkiec.v1.model.sys_tags import SysTags
+from huaweicloudsdkiec.v1.model.update_bandwidth_option import UpdateBandwidthOption
+from huaweicloudsdkiec.v1.model.update_bandwidth_request import UpdateBandwidthRequest
+from huaweicloudsdkiec.v1.model.update_bandwidth_request_body import UpdateBandwidthRequestBody
+from huaweicloudsdkiec.v1.model.update_bandwidth_response import UpdateBandwidthResponse
 from huaweicloudsdkiec.v1.model.update_firewall_option import UpdateFirewallOption
 from huaweicloudsdkiec.v1.model.update_firewall_request import UpdateFirewallRequest
 from huaweicloudsdkiec.v1.model.update_firewall_request_body import UpdateFirewallRequestBody
@@ -270,6 +292,7 @@ from huaweicloudsdkiec.v1.model.update_vpc_request import UpdateVpcRequest
 from huaweicloudsdkiec.v1.model.update_vpc_request_body import UpdateVpcRequestBody
 from huaweicloudsdkiec.v1.model.update_vpc_response import UpdateVpcResponse
 from huaweicloudsdkiec.v1.model.volume import Volume
+from huaweicloudsdkiec.v1.model.volume_type import VolumeType
 from huaweicloudsdkiec.v1.model.volumes_attached import VolumesAttached
 from huaweicloudsdkiec.v1.model.vpc import Vpc
 

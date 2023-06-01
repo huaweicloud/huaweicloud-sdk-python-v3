@@ -21,7 +21,8 @@ class ListTopicsRequest:
         'limit': 'int',
         'enterprise_project_id': 'str',
         'name': 'str',
-        'fuzzy_name': 'str'
+        'fuzzy_name': 'str',
+        'topic_id': 'str'
     }
 
     attribute_map = {
@@ -29,10 +30,11 @@ class ListTopicsRequest:
         'limit': 'limit',
         'enterprise_project_id': 'enterprise_project_id',
         'name': 'name',
-        'fuzzy_name': 'fuzzy_name'
+        'fuzzy_name': 'fuzzy_name',
+        'topic_id': 'topic_id'
     }
 
-    def __init__(self, offset=None, limit=None, enterprise_project_id=None, name=None, fuzzy_name=None):
+    def __init__(self, offset=None, limit=None, enterprise_project_id=None, name=None, fuzzy_name=None, topic_id=None):
         """ListTopicsRequest
 
         The model defined in huaweicloud sdk
@@ -47,6 +49,8 @@ class ListTopicsRequest:
         :type name: str
         :param fuzzy_name: 检索的主题名称，模糊匹配，按照startwith模式进行匹配。
         :type fuzzy_name: str
+        :param topic_id: 检索的主题ID，完全匹配。
+        :type topic_id: str
         """
         
         
@@ -56,6 +60,7 @@ class ListTopicsRequest:
         self._enterprise_project_id = None
         self._name = None
         self._fuzzy_name = None
+        self._topic_id = None
         self.discriminator = None
 
         if offset is not None:
@@ -68,6 +73,8 @@ class ListTopicsRequest:
             self.name = name
         if fuzzy_name is not None:
             self.fuzzy_name = fuzzy_name
+        if topic_id is not None:
+            self.topic_id = topic_id
 
     @property
     def offset(self):
@@ -178,6 +185,28 @@ class ListTopicsRequest:
         :type fuzzy_name: str
         """
         self._fuzzy_name = fuzzy_name
+
+    @property
+    def topic_id(self):
+        """Gets the topic_id of this ListTopicsRequest.
+
+        检索的主题ID，完全匹配。
+
+        :return: The topic_id of this ListTopicsRequest.
+        :rtype: str
+        """
+        return self._topic_id
+
+    @topic_id.setter
+    def topic_id(self, topic_id):
+        """Sets the topic_id of this ListTopicsRequest.
+
+        检索的主题ID，完全匹配。
+
+        :param topic_id: The topic_id of this ListTopicsRequest.
+        :type topic_id: str
+        """
+        self._topic_id = topic_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

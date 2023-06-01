@@ -41,7 +41,7 @@ class FlexibleOrigins:
         :type match_pattern: str
         :param priority: 优先级取值范围为1~100，数值越大优先级越高。
         :type priority: int
-        :param back_sources: 回源信息。
+        :param back_sources: 回源信息。  &gt; 每个目录的回源源站数量不超过1个。
         :type back_sources: list[:class:`huaweicloudsdkcdn.v2.BackSources`]
         """
         
@@ -56,8 +56,7 @@ class FlexibleOrigins:
         self.match_type = match_type
         self.match_pattern = match_pattern
         self.priority = priority
-        if back_sources is not None:
-            self.back_sources = back_sources
+        self.back_sources = back_sources
 
     @property
     def match_type(self):
@@ -129,7 +128,7 @@ class FlexibleOrigins:
     def back_sources(self):
         """Gets the back_sources of this FlexibleOrigins.
 
-        回源信息。
+        回源信息。  > 每个目录的回源源站数量不超过1个。
 
         :return: The back_sources of this FlexibleOrigins.
         :rtype: list[:class:`huaweicloudsdkcdn.v2.BackSources`]
@@ -140,7 +139,7 @@ class FlexibleOrigins:
     def back_sources(self, back_sources):
         """Sets the back_sources of this FlexibleOrigins.
 
-        回源信息。
+        回源信息。  > 每个目录的回源源站数量不超过1个。
 
         :param back_sources: The back_sources of this FlexibleOrigins.
         :type back_sources: list[:class:`huaweicloudsdkcdn.v2.BackSources`]

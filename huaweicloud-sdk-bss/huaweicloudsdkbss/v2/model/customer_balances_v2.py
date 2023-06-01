@@ -18,8 +18,8 @@ class CustomerBalancesV2:
 
     openapi_types = {
         'customer_id': 'str',
-        'debt_amount': 'float',
-        'amount': 'float',
+        'debt_amount': 'decimal.Decimal',
+        'amount': 'decimal.Decimal',
         'currency': 'str',
         'measure_id': 'int'
     }
@@ -40,9 +40,9 @@ class CustomerBalancesV2:
         :param customer_id: 客户账号ID。
         :type customer_id: str
         :param debt_amount: 客户欠款总额度。
-        :type debt_amount: float
+        :type debt_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         :param amount: 客户可用总额度。
-        :type amount: float
+        :type amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         :param currency: 币种。 CNY：人民币。
         :type currency: str
         :param measure_id: 度量单位： 1：元
@@ -97,7 +97,7 @@ class CustomerBalancesV2:
         客户欠款总额度。
 
         :return: The debt_amount of this CustomerBalancesV2.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         return self._debt_amount
 
@@ -108,7 +108,7 @@ class CustomerBalancesV2:
         客户欠款总额度。
 
         :param debt_amount: The debt_amount of this CustomerBalancesV2.
-        :type debt_amount: float
+        :type debt_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         self._debt_amount = debt_amount
 
@@ -119,7 +119,7 @@ class CustomerBalancesV2:
         客户可用总额度。
 
         :return: The amount of this CustomerBalancesV2.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         return self._amount
 
@@ -130,7 +130,7 @@ class CustomerBalancesV2:
         客户可用总额度。
 
         :param amount: The amount of this CustomerBalancesV2.
-        :type amount: float
+        :type amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         self._amount = amount
 

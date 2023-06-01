@@ -73,7 +73,8 @@ class ListPrivateZonesRequest:
         self._enterprise_project_id = None
         self.discriminator = None
 
-        self.type = type
+        if type is not None:
+            self.type = type
         if limit is not None:
             self.limit = limit
         if marker is not None:

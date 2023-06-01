@@ -35,9 +35,9 @@ class VideoSeek:
 
         The model defined in huaweicloud sdk
 
-        :param enable_video_seek: 视频拖拽开关（true：开启，false：关闭）  &gt; 当本字段设置为“false”时，查询域名配置接口将不会返回视频拖拽配置信息。
+        :param enable_video_seek: 视频拖拽开关， true：开启，false：关闭  &gt; 当本字段设置为“false”时，查询域名配置接口将不会返回视频拖拽配置信息。
         :type enable_video_seek: bool
-        :param enable_flv_by_time_seek: flv时间拖拽开关（true：开启，false：关闭）。
+        :param enable_flv_by_time_seek: flv时间拖拽开关， true：开启，false：关闭。
         :type enable_flv_by_time_seek: bool
         :param start_parameter: 自定义用户请求URL中视频播放的开始参数，支持使用数字0-9、字符a-z、A-Z，及\&quot;_\&quot;，长度≤64个字符。
         :type start_parameter: str
@@ -65,7 +65,7 @@ class VideoSeek:
     def enable_video_seek(self):
         """Gets the enable_video_seek of this VideoSeek.
 
-        视频拖拽开关（true：开启，false：关闭）  > 当本字段设置为“false”时，查询域名配置接口将不会返回视频拖拽配置信息。
+        视频拖拽开关， true：开启，false：关闭  > 当本字段设置为“false”时，查询域名配置接口将不会返回视频拖拽配置信息。
 
         :return: The enable_video_seek of this VideoSeek.
         :rtype: bool
@@ -76,7 +76,7 @@ class VideoSeek:
     def enable_video_seek(self, enable_video_seek):
         """Sets the enable_video_seek of this VideoSeek.
 
-        视频拖拽开关（true：开启，false：关闭）  > 当本字段设置为“false”时，查询域名配置接口将不会返回视频拖拽配置信息。
+        视频拖拽开关， true：开启，false：关闭  > 当本字段设置为“false”时，查询域名配置接口将不会返回视频拖拽配置信息。
 
         :param enable_video_seek: The enable_video_seek of this VideoSeek.
         :type enable_video_seek: bool
@@ -87,7 +87,7 @@ class VideoSeek:
     def enable_flv_by_time_seek(self):
         """Gets the enable_flv_by_time_seek of this VideoSeek.
 
-        flv时间拖拽开关（true：开启，false：关闭）。
+        flv时间拖拽开关， true：开启，false：关闭。
 
         :return: The enable_flv_by_time_seek of this VideoSeek.
         :rtype: bool
@@ -98,7 +98,7 @@ class VideoSeek:
     def enable_flv_by_time_seek(self, enable_flv_by_time_seek):
         """Sets the enable_flv_by_time_seek of this VideoSeek.
 
-        flv时间拖拽开关（true：开启，false：关闭）。
+        flv时间拖拽开关， true：开启，false：关闭。
 
         :param enable_flv_by_time_seek: The enable_flv_by_time_seek of this VideoSeek.
         :type enable_flv_by_time_seek: bool

@@ -1045,6 +1045,65 @@ class BssClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def claim_enterprise_multi_account_coupon(self, request):
+        """企业主账号向企业子账号拨款优惠券
+
+        企业主账号在自建平台向企业子账号拨款优惠券。
+        
+        &gt;![](public_sys-resources/icon-note.gif) **说明：** 
+        &gt;-   仅支持华为发放的测试类、商务类、活动类代金券。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ClaimEnterpriseMultiAccountCoupon
+        :type request: :class:`huaweicloudsdkbss.v2.ClaimEnterpriseMultiAccountCouponRequest`
+        :rtype: :class:`huaweicloudsdkbss.v2.ClaimEnterpriseMultiAccountCouponResponse`
+        """
+        return self._claim_enterprise_multi_account_coupon_with_http_info(request)
+
+    def _claim_enterprise_multi_account_coupon_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/enterprises/multi-accounts/transfer-coupon',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ClaimEnterpriseMultiAccountCouponResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def create_enterprise_project_auth(self, request):
         """开通客户企业项目权限
 
@@ -2612,6 +2671,130 @@ class BssClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_multi_account_retrieve_coupons(self, request):
+        """查询企业子账号可回收优惠券列表
+
+        企业主账号在自建平台查询企业子账号的可回收优惠券。
+        
+        &gt;![](public_sys-resources/icon-note.gif) **说明：** 
+        &gt;-   仅支持华为发放的测试类、商务类、活动类代金券。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListMultiAccountRetrieveCoupons
+        :type request: :class:`huaweicloudsdkbss.v2.ListMultiAccountRetrieveCouponsRequest`
+        :rtype: :class:`huaweicloudsdkbss.v2.ListMultiAccountRetrieveCouponsResponse`
+        """
+        return self._list_multi_account_retrieve_coupons_with_http_info(request)
+
+    def _list_multi_account_retrieve_coupons_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'sub_customer_id' in local_var_params:
+            query_params.append(('sub_customer_id', local_var_params['sub_customer_id']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/enterprises/multi-accounts/retrieve-coupons',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListMultiAccountRetrieveCouponsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_multi_account_transfer_coupons(self, request):
+        """查询企业主账号可拨款优惠券列表
+
+        企业主账号在自建平台查询自己的可拨款优惠券列表。
+        
+        &gt;![](public_sys-resources/icon-note.gif) **说明：** 
+        &gt;-   仅支持华为发放的测试类、商务类、活动类代金券。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListMultiAccountTransferCoupons
+        :type request: :class:`huaweicloudsdkbss.v2.ListMultiAccountTransferCouponsRequest`
+        :rtype: :class:`huaweicloudsdkbss.v2.ListMultiAccountTransferCouponsResponse`
+        """
+        return self._list_multi_account_transfer_coupons_with_http_info(request)
+
+    def _list_multi_account_transfer_coupons_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/enterprises/multi-accounts/transfer-coupons',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListMultiAccountTransferCouponsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_on_demand_resource_ratings(self, request):
         """查询按需产品价格
 
@@ -3720,6 +3903,65 @@ class BssClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ReclaimCouponQuotasResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def reclaim_enterprise_multi_account_coupon(self, request):
+        """企业主账号从企业子账号回收优惠券
+
+        企业主账号在自建平台回收给企业子账号的拨款优惠券。
+        
+        &gt;![](public_sys-resources/icon-note.gif) **说明：** 
+        &gt;-   仅支持华为发放的测试类、商务类、活动类代金券。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ReclaimEnterpriseMultiAccountCoupon
+        :type request: :class:`huaweicloudsdkbss.v2.ReclaimEnterpriseMultiAccountCouponRequest`
+        :rtype: :class:`huaweicloudsdkbss.v2.ReclaimEnterpriseMultiAccountCouponResponse`
+        """
+        return self._reclaim_enterprise_multi_account_coupon_with_http_info(request)
+
+    def _reclaim_enterprise_multi_account_coupon_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/enterprises/multi-accounts/retrieve-coupon',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ReclaimEnterpriseMultiAccountCouponResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

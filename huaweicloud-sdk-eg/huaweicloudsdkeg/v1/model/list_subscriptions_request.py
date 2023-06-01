@@ -22,7 +22,8 @@ class ListSubscriptionsRequest:
         'limit': 'int',
         'sort': 'str',
         'name': 'str',
-        'fuzzy_name': 'str'
+        'fuzzy_name': 'str',
+        'connection_id': 'str'
     }
 
     attribute_map = {
@@ -31,10 +32,11 @@ class ListSubscriptionsRequest:
         'limit': 'limit',
         'sort': 'sort',
         'name': 'name',
-        'fuzzy_name': 'fuzzy_name'
+        'fuzzy_name': 'fuzzy_name',
+        'connection_id': 'connection_id'
     }
 
-    def __init__(self, channel_id=None, offset=None, limit=None, sort=None, name=None, fuzzy_name=None):
+    def __init__(self, channel_id=None, offset=None, limit=None, sort=None, name=None, fuzzy_name=None, connection_id=None):
         """ListSubscriptionsRequest
 
         The model defined in huaweicloud sdk
@@ -51,6 +53,8 @@ class ListSubscriptionsRequest:
         :type name: str
         :param fuzzy_name: 指定查询的事件订阅名称，模糊匹配
         :type fuzzy_name: str
+        :param connection_id: 目标连接 id
+        :type connection_id: str
         """
         
         
@@ -61,6 +65,7 @@ class ListSubscriptionsRequest:
         self._sort = None
         self._name = None
         self._fuzzy_name = None
+        self._connection_id = None
         self.discriminator = None
 
         if channel_id is not None:
@@ -75,6 +80,8 @@ class ListSubscriptionsRequest:
             self.name = name
         if fuzzy_name is not None:
             self.fuzzy_name = fuzzy_name
+        if connection_id is not None:
+            self.connection_id = connection_id
 
     @property
     def channel_id(self):
@@ -207,6 +214,28 @@ class ListSubscriptionsRequest:
         :type fuzzy_name: str
         """
         self._fuzzy_name = fuzzy_name
+
+    @property
+    def connection_id(self):
+        """Gets the connection_id of this ListSubscriptionsRequest.
+
+        目标连接 id
+
+        :return: The connection_id of this ListSubscriptionsRequest.
+        :rtype: str
+        """
+        return self._connection_id
+
+    @connection_id.setter
+    def connection_id(self, connection_id):
+        """Sets the connection_id of this ListSubscriptionsRequest.
+
+        目标连接 id
+
+        :param connection_id: The connection_id of this ListSubscriptionsRequest.
+        :type connection_id: str
+        """
+        self._connection_id = connection_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

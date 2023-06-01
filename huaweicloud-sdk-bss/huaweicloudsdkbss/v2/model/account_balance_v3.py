@@ -19,10 +19,10 @@ class AccountBalanceV3:
     openapi_types = {
         'account_id': 'str',
         'account_type': 'int',
-        'amount': 'float',
+        'amount': 'decimal.Decimal',
         'currency': 'str',
-        'designated_amount': 'float',
-        'credit_amount': 'float',
+        'designated_amount': 'decimal.Decimal',
+        'credit_amount': 'decimal.Decimal',
         'measure_id': 'int'
     }
 
@@ -46,13 +46,13 @@ class AccountBalanceV3:
         :param account_type: 账户类型。 1：余额2：信用5：奖励金7：保证金
         :type account_type: int
         :param amount: 账户余额。
-        :type amount: float
+        :type amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         :param currency: 币种。 CNY：人民币。
         :type currency: str
         :param designated_amount: 专款专用余额。
-        :type designated_amount: float
+        :type designated_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         :param credit_amount: 总信用额度，仅信用账户存在该字段。
-        :type credit_amount: float
+        :type credit_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         :param measure_id: 度量单位。 1：元
         :type measure_id: int
         """
@@ -129,7 +129,7 @@ class AccountBalanceV3:
         账户余额。
 
         :return: The amount of this AccountBalanceV3.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         return self._amount
 
@@ -140,7 +140,7 @@ class AccountBalanceV3:
         账户余额。
 
         :param amount: The amount of this AccountBalanceV3.
-        :type amount: float
+        :type amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         self._amount = amount
 
@@ -173,7 +173,7 @@ class AccountBalanceV3:
         专款专用余额。
 
         :return: The designated_amount of this AccountBalanceV3.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         return self._designated_amount
 
@@ -184,7 +184,7 @@ class AccountBalanceV3:
         专款专用余额。
 
         :param designated_amount: The designated_amount of this AccountBalanceV3.
-        :type designated_amount: float
+        :type designated_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         self._designated_amount = designated_amount
 
@@ -195,7 +195,7 @@ class AccountBalanceV3:
         总信用额度，仅信用账户存在该字段。
 
         :return: The credit_amount of this AccountBalanceV3.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         return self._credit_amount
 
@@ -206,7 +206,7 @@ class AccountBalanceV3:
         总信用额度，仅信用账户存在该字段。
 
         :param credit_amount: The credit_amount of this AccountBalanceV3.
-        :type credit_amount: float
+        :type credit_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         self._credit_amount = credit_amount
 

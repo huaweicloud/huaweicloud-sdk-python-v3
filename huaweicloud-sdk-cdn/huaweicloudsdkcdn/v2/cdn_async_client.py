@@ -595,7 +595,8 @@ class CdnAsyncClient(Client):
     def show_domain_full_config_async(self, request):
         """查询域名配置接口
 
-        查询域名配置接口，支持查询回源请求头、HTTP header配置、URL鉴权、证书、源站、回源协议、强制重定向、智能压缩、缓存URL参数、IPv6开关、状态码缓存时间、Range回源、User-Agent黑白名单、改写回源URL、自定义错误页面
+        查询域名配置接口，
+        支持查询回源请求头、HTTP header配置、URL鉴权、证书、源站、回源协议、回源跟随、ipv6设置、智能压缩、状态码缓存时间、Range回源、User-Agent黑白名单、改写回源URL、自定义错误页面、缓存规则、IP黑白名单、防盗链、强制跳转、高级回源、回源是否校验Etag、回源超时时间、远程鉴权配置、webSocket配置、视频拖拽、请求限速。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -620,6 +621,8 @@ class CdnAsyncClient(Client):
         query_params = []
         if 'enterprise_project_id' in local_var_params:
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'show_special_configs' in local_var_params:
+            query_params.append(('show_special_configs', local_var_params['show_special_configs']))
 
         header_params = {}
 
@@ -986,7 +989,8 @@ class CdnAsyncClient(Client):
     def update_domain_full_config_async(self, request):
         """修改域名全量配置接口
 
-        修改域名全量配置接口，支持配置回源请求头、HTTP header配置、URL鉴权、证书、源站、回源协议、强制重定向、智能压缩、缓存URL参数、IPv6、状态码缓存时间、Range回源、User-Agent黑白名单、改写回源URL、自定义错误页面
+        修改域名配置接口，
+        支持修改回源请求头、HTTP header配置、URL鉴权、证书、源站、回源协议、回源跟随、ipv6设置、智能压缩、状态码缓存时间、Range回源、User-Agent黑白名单、改写回源URL、自定义错误页面、缓存规则、IP黑白名单、防盗链、强制跳转、高级回源、回源是否校验Etag、回源超时时间、远程鉴权配置、webSocket配置、视频拖拽、请求限速。
         
         Please refer to HUAWEI cloud API Explorer for details.
 

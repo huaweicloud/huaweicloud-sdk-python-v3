@@ -20,6 +20,7 @@ class IssueCommentV4:
         'comment': 'str',
         'id': 'int',
         'created_time': 'str',
+        'timestamp': 'str',
         'user': 'CommentUserV4'
     }
 
@@ -27,10 +28,11 @@ class IssueCommentV4:
         'comment': 'comment',
         'id': 'id',
         'created_time': 'created_time',
+        'timestamp': 'timestamp',
         'user': 'user'
     }
 
-    def __init__(self, comment=None, id=None, created_time=None, user=None):
+    def __init__(self, comment=None, id=None, created_time=None, timestamp=None, user=None):
         """IssueCommentV4
 
         The model defined in huaweicloud sdk
@@ -41,6 +43,8 @@ class IssueCommentV4:
         :type id: int
         :param created_time: 评论时间
         :type created_time: str
+        :param timestamp: 评论时间戳
+        :type timestamp: str
         :param user: 
         :type user: :class:`huaweicloudsdkprojectman.v4.CommentUserV4`
         """
@@ -50,6 +54,7 @@ class IssueCommentV4:
         self._comment = None
         self._id = None
         self._created_time = None
+        self._timestamp = None
         self._user = None
         self.discriminator = None
 
@@ -59,6 +64,8 @@ class IssueCommentV4:
             self.id = id
         if created_time is not None:
             self.created_time = created_time
+        if timestamp is not None:
+            self.timestamp = timestamp
         if user is not None:
             self.user = user
 
@@ -127,6 +134,28 @@ class IssueCommentV4:
         :type created_time: str
         """
         self._created_time = created_time
+
+    @property
+    def timestamp(self):
+        """Gets the timestamp of this IssueCommentV4.
+
+        评论时间戳
+
+        :return: The timestamp of this IssueCommentV4.
+        :rtype: str
+        """
+        return self._timestamp
+
+    @timestamp.setter
+    def timestamp(self, timestamp):
+        """Sets the timestamp of this IssueCommentV4.
+
+        评论时间戳
+
+        :param timestamp: The timestamp of this IssueCommentV4.
+        :type timestamp: str
+        """
+        self._timestamp = timestamp
 
     @property
     def user(self):

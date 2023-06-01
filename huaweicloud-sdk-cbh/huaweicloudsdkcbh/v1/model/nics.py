@@ -17,28 +17,35 @@ class Nics:
     sensitive_list = []
 
     openapi_types = {
-        'subnet_id': 'str'
+        'subnet_id': 'str',
+        'ip_address': 'str'
     }
 
     attribute_map = {
-        'subnet_id': 'subnet_id'
+        'subnet_id': 'subnet_id',
+        'ip_address': 'ip_address'
     }
 
-    def __init__(self, subnet_id=None):
+    def __init__(self, subnet_id=None, ip_address=None):
         """Nics
 
         The model defined in huaweicloud sdk
 
         :param subnet_id: 子网ID，字母数字下划线连接符组成。
         :type subnet_id: str
+        :param ip_address: IPV4地址。
+        :type ip_address: str
         """
         
         
 
         self._subnet_id = None
+        self._ip_address = None
         self.discriminator = None
 
         self.subnet_id = subnet_id
+        if ip_address is not None:
+            self.ip_address = ip_address
 
     @property
     def subnet_id(self):
@@ -61,6 +68,28 @@ class Nics:
         :type subnet_id: str
         """
         self._subnet_id = subnet_id
+
+    @property
+    def ip_address(self):
+        """Gets the ip_address of this Nics.
+
+        IPV4地址。
+
+        :return: The ip_address of this Nics.
+        :rtype: str
+        """
+        return self._ip_address
+
+    @ip_address.setter
+    def ip_address(self, ip_address):
+        """Sets the ip_address of this Nics.
+
+        IPV4地址。
+
+        :param ip_address: The ip_address of this Nics.
+        :type ip_address: str
+        """
+        self._ip_address = ip_address
 
     def to_dict(self):
         """Returns the model properties as a dict"""

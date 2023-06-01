@@ -45,7 +45,7 @@ class ProjectDirectory:
         :type id: int
         :param name: 名称
         :type name: str
-        :param status: 状态(0:已删除,1:启用,2:停用)
+        :param status: 状态（0：已删除，1：启用，2：停用）
         :type status: int
         :param create_time: 创建时间
         :type create_time: str
@@ -53,7 +53,7 @@ class ProjectDirectory:
         :type update_time: str
         :param parent_id: 父id
         :type parent_id: int
-        :param type: 类型(1:目录, 2:用例)
+        :param type: 类型（1：目录，2：用例）
         :type type: int
         """
         
@@ -124,7 +124,7 @@ class ProjectDirectory:
     def status(self):
         """Gets the status of this ProjectDirectory.
 
-        状态(0:已删除,1:启用,2:停用)
+        状态（0：已删除，1：启用，2：停用）
 
         :return: The status of this ProjectDirectory.
         :rtype: int
@@ -135,7 +135,7 @@ class ProjectDirectory:
     def status(self, status):
         """Sets the status of this ProjectDirectory.
 
-        状态(0:已删除,1:启用,2:停用)
+        状态（0：已删除，1：启用，2：停用）
 
         :param status: The status of this ProjectDirectory.
         :type status: int
@@ -212,7 +212,7 @@ class ProjectDirectory:
     def type(self):
         """Gets the type of this ProjectDirectory.
 
-        类型(1:目录, 2:用例)
+        类型（1：目录，2：用例）
 
         :return: The type of this ProjectDirectory.
         :rtype: int
@@ -223,7 +223,7 @@ class ProjectDirectory:
     def type(self, type):
         """Sets the type of this ProjectDirectory.
 
-        类型(1:目录, 2:用例)
+        类型（1：目录，2：用例）
 
         :param type: The type of this ProjectDirectory.
         :type type: int

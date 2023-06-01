@@ -2971,7 +2971,7 @@ class CodeHubClient(Client):
     def delete_s_shkey(self, request):
         """删除用户公钥
 
-        调用gitlab原生接口删除用户公钥。
+        删除用户公钥。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3137,7 +3137,7 @@ class CodeHubClient(Client):
     def validate_https_info(self, request):
         """ https账号密码校验
 
-        调用 gitlab 接口判断用户使用 https 上传/下载代码时输入的用户名和密码是否合法。
+        判断用户使用 https 上传/下载代码时输入的用户名和密码是否合法。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3193,9 +3193,9 @@ class CodeHubClient(Client):
             request_type=request.__class__.__name__)
 
     def validate_https_info_v2(self, request):
-        """ https账号密码校验
+        """https账号密码校验
 
-        调用 gitlab 接口判断用户使用 https 上传/下载代码时输入的用户名和密码是否合法。
+        判断用户使用 https 上传/下载代码时输入的用户名和密码是否合法。
         
         Please refer to HUAWEI cloud API Explorer for details.
 

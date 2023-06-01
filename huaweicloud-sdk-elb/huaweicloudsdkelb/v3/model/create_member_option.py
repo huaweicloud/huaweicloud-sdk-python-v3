@@ -45,11 +45,11 @@ class CreateMemberOption:
         :type address: str
         :param admin_state_up: 后端云服务器的管理状态。  取值：true、false。  虽然创建、更新请求支持该字段，但实际取值决定于后端云服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。
         :type admin_state_up: bool
-        :param name: 后端云服务器名称。
+        :param name: 后端云服务器名称。注意：该名称并非ECS名称，若不传则返回为空。
         :type name: str
         :param project_id: 后端云服务器所在的项目ID。
         :type project_id: str
-        :param protocol_port: 后端服务器业务端口号。
+        :param protocol_port: 后端服务器业务端口。 &gt;在开启端口透传的pool下创建member传该字段不生效，可不传该字段。
         :type protocol_port: int
         :param subnet_cidr_id: 后端云服务器所在的子网ID，可以是子网的IPv4子网ID或IPv6子网ID。  使用说明： - 该子网和关联的负载均衡器的子网必须在同一VPC下。 - 若所属LB的跨VPC后端转发特性已开启，则该字段可以不传，表示添加跨VPC的后端服务器。 此时address必须为IPv4地址，所在的pool的协议必须为TCP/HTTP/HTTPS。  [不支持IPv6，请勿设置为IPv6子网ID。](tag:dt,dt_test)
         :type subnet_cidr_id: str
@@ -129,7 +129,7 @@ class CreateMemberOption:
     def name(self):
         """Gets the name of this CreateMemberOption.
 
-        后端云服务器名称。
+        后端云服务器名称。注意：该名称并非ECS名称，若不传则返回为空。
 
         :return: The name of this CreateMemberOption.
         :rtype: str
@@ -140,7 +140,7 @@ class CreateMemberOption:
     def name(self, name):
         """Sets the name of this CreateMemberOption.
 
-        后端云服务器名称。
+        后端云服务器名称。注意：该名称并非ECS名称，若不传则返回为空。
 
         :param name: The name of this CreateMemberOption.
         :type name: str
@@ -173,7 +173,7 @@ class CreateMemberOption:
     def protocol_port(self):
         """Gets the protocol_port of this CreateMemberOption.
 
-        后端服务器业务端口号。
+        后端服务器业务端口。 >在开启端口透传的pool下创建member传该字段不生效，可不传该字段。
 
         :return: The protocol_port of this CreateMemberOption.
         :rtype: int
@@ -184,7 +184,7 @@ class CreateMemberOption:
     def protocol_port(self, protocol_port):
         """Sets the protocol_port of this CreateMemberOption.
 
-        后端服务器业务端口号。
+        后端服务器业务端口。 >在开启端口透传的pool下创建member传该字段不生效，可不传该字段。
 
         :param protocol_port: The protocol_port of this CreateMemberOption.
         :type protocol_port: int

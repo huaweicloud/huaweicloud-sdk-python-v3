@@ -31,7 +31,7 @@ class PublishAppMessageRequest:
 
         The model defined in huaweicloud sdk
 
-        :param endpoint_urn: Endpoint的唯一资源标识，可通过[查询Application的Endpoint列表](https://support.huaweicloud.com/api-smn/ListApplicationEndpoints.html)获取该标识
+        :param endpoint_urn: Endpoint的唯一资源标识，可通过[查询Application的Endpoint列表](smn_api_58004.xml)获取该标识
         :type endpoint_urn: str
         :param body: Body of the PublishAppMessageRequest
         :type body: :class:`huaweicloudsdksmn.v2.PublishAppMessageRequestBody`
@@ -51,7 +51,7 @@ class PublishAppMessageRequest:
     def endpoint_urn(self):
         """Gets the endpoint_urn of this PublishAppMessageRequest.
 
-        Endpoint的唯一资源标识，可通过[查询Application的Endpoint列表](https://support.huaweicloud.com/api-smn/ListApplicationEndpoints.html)获取该标识
+        Endpoint的唯一资源标识，可通过[查询Application的Endpoint列表](smn_api_58004.xml)获取该标识
 
         :return: The endpoint_urn of this PublishAppMessageRequest.
         :rtype: str
@@ -62,7 +62,7 @@ class PublishAppMessageRequest:
     def endpoint_urn(self, endpoint_urn):
         """Sets the endpoint_urn of this PublishAppMessageRequest.
 
-        Endpoint的唯一资源标识，可通过[查询Application的Endpoint列表](https://support.huaweicloud.com/api-smn/ListApplicationEndpoints.html)获取该标识
+        Endpoint的唯一资源标识，可通过[查询Application的Endpoint列表](smn_api_58004.xml)获取该标识
 
         :param endpoint_urn: The endpoint_urn of this PublishAppMessageRequest.
         :type endpoint_urn: str

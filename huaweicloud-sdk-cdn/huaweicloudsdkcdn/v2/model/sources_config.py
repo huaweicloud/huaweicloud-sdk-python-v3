@@ -45,15 +45,15 @@ class SourcesConfig:
 
         :param origin_addr: 源站IP或者域名。
         :type origin_addr: str
-        :param origin_type: 源站类型（\&quot;ipaddr\&quot;：\&quot;IP源站\&quot;，\&quot;domain\&quot;：\&quot;域名源站\&quot;，\&quot;obs_bucket\&quot;：\&quot;OBS Bucket源站\&quot;）。
+        :param origin_type: 源站类型， ipaddr：源站IP，domain：源站域名，obs_bucket：OBS桶域名。
         :type origin_type: str
-        :param priority: 源站优先级（70：主，30：备）。
+        :param priority: 源站优先级，70：主，30：备。
         :type priority: int
-        :param obs_web_hosting_status: 是否开启Obs静态网站托管，源站类型为obs_bucket时传递(off：关闭，on：开启)。
+        :param obs_web_hosting_status: 是否开启Obs静态网站托管，源站类型为obs_bucket时传递，off：关闭，on：开启。
         :type obs_web_hosting_status: str
-        :param http_port: HTTP端口，默认80。
+        :param http_port: HTTP端口，默认80,端口取值取值范围1-65535。
         :type http_port: int
-        :param https_port: HTTPS端口，默认443。
+        :param https_port: HTTPS端口，默认443,端口取值取值范围1-65535。
         :type https_port: int
         :param host_name: 回源HOST，默认加速域名。
         :type host_name: str
@@ -113,7 +113,7 @@ class SourcesConfig:
     def origin_type(self):
         """Gets the origin_type of this SourcesConfig.
 
-        源站类型（\"ipaddr\"：\"IP源站\"，\"domain\"：\"域名源站\"，\"obs_bucket\"：\"OBS Bucket源站\"）。
+        源站类型， ipaddr：源站IP，domain：源站域名，obs_bucket：OBS桶域名。
 
         :return: The origin_type of this SourcesConfig.
         :rtype: str
@@ -124,7 +124,7 @@ class SourcesConfig:
     def origin_type(self, origin_type):
         """Sets the origin_type of this SourcesConfig.
 
-        源站类型（\"ipaddr\"：\"IP源站\"，\"domain\"：\"域名源站\"，\"obs_bucket\"：\"OBS Bucket源站\"）。
+        源站类型， ipaddr：源站IP，domain：源站域名，obs_bucket：OBS桶域名。
 
         :param origin_type: The origin_type of this SourcesConfig.
         :type origin_type: str
@@ -135,7 +135,7 @@ class SourcesConfig:
     def priority(self):
         """Gets the priority of this SourcesConfig.
 
-        源站优先级（70：主，30：备）。
+        源站优先级，70：主，30：备。
 
         :return: The priority of this SourcesConfig.
         :rtype: int
@@ -146,7 +146,7 @@ class SourcesConfig:
     def priority(self, priority):
         """Sets the priority of this SourcesConfig.
 
-        源站优先级（70：主，30：备）。
+        源站优先级，70：主，30：备。
 
         :param priority: The priority of this SourcesConfig.
         :type priority: int
@@ -157,7 +157,7 @@ class SourcesConfig:
     def obs_web_hosting_status(self):
         """Gets the obs_web_hosting_status of this SourcesConfig.
 
-        是否开启Obs静态网站托管，源站类型为obs_bucket时传递(off：关闭，on：开启)。
+        是否开启Obs静态网站托管，源站类型为obs_bucket时传递，off：关闭，on：开启。
 
         :return: The obs_web_hosting_status of this SourcesConfig.
         :rtype: str
@@ -168,7 +168,7 @@ class SourcesConfig:
     def obs_web_hosting_status(self, obs_web_hosting_status):
         """Sets the obs_web_hosting_status of this SourcesConfig.
 
-        是否开启Obs静态网站托管，源站类型为obs_bucket时传递(off：关闭，on：开启)。
+        是否开启Obs静态网站托管，源站类型为obs_bucket时传递，off：关闭，on：开启。
 
         :param obs_web_hosting_status: The obs_web_hosting_status of this SourcesConfig.
         :type obs_web_hosting_status: str
@@ -179,7 +179,7 @@ class SourcesConfig:
     def http_port(self):
         """Gets the http_port of this SourcesConfig.
 
-        HTTP端口，默认80。
+        HTTP端口，默认80,端口取值取值范围1-65535。
 
         :return: The http_port of this SourcesConfig.
         :rtype: int
@@ -190,7 +190,7 @@ class SourcesConfig:
     def http_port(self, http_port):
         """Sets the http_port of this SourcesConfig.
 
-        HTTP端口，默认80。
+        HTTP端口，默认80,端口取值取值范围1-65535。
 
         :param http_port: The http_port of this SourcesConfig.
         :type http_port: int
@@ -201,7 +201,7 @@ class SourcesConfig:
     def https_port(self):
         """Gets the https_port of this SourcesConfig.
 
-        HTTPS端口，默认443。
+        HTTPS端口，默认443,端口取值取值范围1-65535。
 
         :return: The https_port of this SourcesConfig.
         :rtype: int
@@ -212,7 +212,7 @@ class SourcesConfig:
     def https_port(self, https_port):
         """Sets the https_port of this SourcesConfig.
 
-        HTTPS端口，默认443。
+        HTTPS端口，默认443,端口取值取值范围1-65535。
 
         :param https_port: The https_port of this SourcesConfig.
         :type https_port: int

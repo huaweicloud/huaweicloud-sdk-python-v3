@@ -25,7 +25,8 @@ class ShowPtrRecordSetResponse(SdkResponse):
         'address': 'str',
         'status': 'str',
         'action': 'str',
-        'links': 'PageLink'
+        'links': 'PageLink',
+        'enterprise_project_id': 'str'
     }
 
     attribute_map = {
@@ -36,10 +37,11 @@ class ShowPtrRecordSetResponse(SdkResponse):
         'address': 'address',
         'status': 'status',
         'action': 'action',
-        'links': 'links'
+        'links': 'links',
+        'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, id=None, ptrdname=None, description=None, ttl=None, address=None, status=None, action=None, links=None):
+    def __init__(self, id=None, ptrdname=None, description=None, ttl=None, address=None, status=None, action=None, links=None, enterprise_project_id=None):
         """ShowPtrRecordSetResponse
 
         The model defined in huaweicloud sdk
@@ -60,6 +62,8 @@ class ShowPtrRecordSetResponse(SdkResponse):
         :type action: str
         :param links: 
         :type links: :class:`huaweicloudsdkdns.v2.PageLink`
+        :param enterprise_project_id: 反向解析关联的企业项目ID，长度不超过36个字符。
+        :type enterprise_project_id: str
         """
         
         super(ShowPtrRecordSetResponse, self).__init__()
@@ -72,6 +76,7 @@ class ShowPtrRecordSetResponse(SdkResponse):
         self._status = None
         self._action = None
         self._links = None
+        self._enterprise_project_id = None
         self.discriminator = None
 
         if id is not None:
@@ -90,6 +95,8 @@ class ShowPtrRecordSetResponse(SdkResponse):
             self.action = action
         if links is not None:
             self.links = links
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
 
     @property
     def id(self):
@@ -262,6 +269,28 @@ class ShowPtrRecordSetResponse(SdkResponse):
         :type links: :class:`huaweicloudsdkdns.v2.PageLink`
         """
         self._links = links
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this ShowPtrRecordSetResponse.
+
+        反向解析关联的企业项目ID，长度不超过36个字符。
+
+        :return: The enterprise_project_id of this ShowPtrRecordSetResponse.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this ShowPtrRecordSetResponse.
+
+        反向解析关联的企业项目ID，长度不超过36个字符。
+
+        :param enterprise_project_id: The enterprise_project_id of this ShowPtrRecordSetResponse.
+        :type enterprise_project_id: str
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

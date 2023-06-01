@@ -19,7 +19,7 @@ class InstanceRequest:
     openapi_types = {
         'kind': 'str',
         'api_version': 'str',
-        'metadata': 'Metadata',
+        'metadata': 'AddonMetadata',
         'spec': 'InstanceRequestSpec'
     }
 
@@ -40,7 +40,7 @@ class InstanceRequest:
         :param api_version: API版本，固定值“v3”，该值不可修改，该字段传入无效。
         :type api_version: str
         :param metadata: 
-        :type metadata: :class:`huaweicloudsdkcce.v3.Metadata`
+        :type metadata: :class:`huaweicloudsdkcce.v3.AddonMetadata`
         :param spec: 
         :type spec: :class:`huaweicloudsdkcce.v3.InstanceRequestSpec`
         """
@@ -107,7 +107,7 @@ class InstanceRequest:
         """Gets the metadata of this InstanceRequest.
 
         :return: The metadata of this InstanceRequest.
-        :rtype: :class:`huaweicloudsdkcce.v3.Metadata`
+        :rtype: :class:`huaweicloudsdkcce.v3.AddonMetadata`
         """
         return self._metadata
 
@@ -116,7 +116,7 @@ class InstanceRequest:
         """Sets the metadata of this InstanceRequest.
 
         :param metadata: The metadata of this InstanceRequest.
-        :type metadata: :class:`huaweicloudsdkcce.v3.Metadata`
+        :type metadata: :class:`huaweicloudsdkcce.v3.AddonMetadata`
         """
         self._metadata = metadata
 

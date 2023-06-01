@@ -48,12 +48,9 @@ class CustomArgs:
         self._value = None
         self.discriminator = None
 
-        if type is not None:
-            self.type = type
-        if key is not None:
-            self.key = key
-        if value is not None:
-            self.value = value
+        self.type = type
+        self.key = key
+        self.value = value
 
     @property
     def type(self):

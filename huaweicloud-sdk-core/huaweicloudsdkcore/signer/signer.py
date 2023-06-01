@@ -122,8 +122,7 @@ class Signer(object):
 
     @classmethod
     def hex_encode_sha256_hash(cls, data):
-        sha256 = hashlib.sha256()
-        sha256.update(data)
+        sha256 = hashlib.sha256(data)
         return sha256.hexdigest()
 
     @classmethod

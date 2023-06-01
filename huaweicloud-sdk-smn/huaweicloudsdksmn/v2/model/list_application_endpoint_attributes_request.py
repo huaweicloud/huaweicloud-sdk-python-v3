@@ -29,7 +29,7 @@ class ListApplicationEndpointAttributesRequest:
 
         The model defined in huaweicloud sdk
 
-        :param endpoint_urn: Endpoint的唯一资源标识，可通过[查询Application的Endpoint列表](https://support.huaweicloud.com/api-smn/ListApplicationEndpoints.html)获取该标识。
+        :param endpoint_urn: Endpoint的唯一资源标识，可通过[查询Application的Endpoint列表](smn_api_58004.xml)获取该标识。
         :type endpoint_urn: str
         """
         
@@ -44,7 +44,7 @@ class ListApplicationEndpointAttributesRequest:
     def endpoint_urn(self):
         """Gets the endpoint_urn of this ListApplicationEndpointAttributesRequest.
 
-        Endpoint的唯一资源标识，可通过[查询Application的Endpoint列表](https://support.huaweicloud.com/api-smn/ListApplicationEndpoints.html)获取该标识。
+        Endpoint的唯一资源标识，可通过[查询Application的Endpoint列表](smn_api_58004.xml)获取该标识。
 
         :return: The endpoint_urn of this ListApplicationEndpointAttributesRequest.
         :rtype: str
@@ -55,7 +55,7 @@ class ListApplicationEndpointAttributesRequest:
     def endpoint_urn(self, endpoint_urn):
         """Sets the endpoint_urn of this ListApplicationEndpointAttributesRequest.
 
-        Endpoint的唯一资源标识，可通过[查询Application的Endpoint列表](https://support.huaweicloud.com/api-smn/ListApplicationEndpoints.html)获取该标识。
+        Endpoint的唯一资源标识，可通过[查询Application的Endpoint列表](smn_api_58004.xml)获取该标识。
 
         :param endpoint_urn: The endpoint_urn of this ListApplicationEndpointAttributesRequest.
         :type endpoint_urn: str

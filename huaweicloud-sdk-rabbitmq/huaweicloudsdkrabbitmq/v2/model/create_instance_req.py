@@ -37,7 +37,8 @@ class CreateInstanceReq:
         'ssl_enable': 'bool',
         'storage_spec_code': 'str',
         'enterprise_project_id': 'str',
-        'tags': 'list[TagEntity]'
+        'tags': 'list[TagEntity]',
+        'bss_param': 'BssParam'
     }
 
     attribute_map = {
@@ -61,10 +62,11 @@ class CreateInstanceReq:
         'ssl_enable': 'ssl_enable',
         'storage_spec_code': 'storage_spec_code',
         'enterprise_project_id': 'enterprise_project_id',
-        'tags': 'tags'
+        'tags': 'tags',
+        'bss_param': 'bss_param'
     }
 
-    def __init__(self, name=None, description=None, engine=None, engine_version=None, storage_space=None, access_user=None, password=None, vpc_id=None, security_group_id=None, subnet_id=None, available_zones=None, product_id=None, broker_num=None, maintain_begin=None, maintain_end=None, enable_publicip=None, publicip_id=None, ssl_enable=None, storage_spec_code=None, enterprise_project_id=None, tags=None):
+    def __init__(self, name=None, description=None, engine=None, engine_version=None, storage_space=None, access_user=None, password=None, vpc_id=None, security_group_id=None, subnet_id=None, available_zones=None, product_id=None, broker_num=None, maintain_begin=None, maintain_end=None, enable_publicip=None, publicip_id=None, ssl_enable=None, storage_spec_code=None, enterprise_project_id=None, tags=None, bss_param=None):
         """CreateInstanceReq
 
         The model defined in huaweicloud sdk
@@ -111,6 +113,8 @@ class CreateInstanceReq:
         :type enterprise_project_id: str
         :param tags: 标签列表。
         :type tags: list[:class:`huaweicloudsdkrabbitmq.v2.TagEntity`]
+        :param bss_param: 
+        :type bss_param: :class:`huaweicloudsdkrabbitmq.v2.BssParam`
         """
         
         
@@ -136,6 +140,7 @@ class CreateInstanceReq:
         self._storage_spec_code = None
         self._enterprise_project_id = None
         self._tags = None
+        self._bss_param = None
         self.discriminator = None
 
         self.name = name
@@ -168,6 +173,8 @@ class CreateInstanceReq:
             self.enterprise_project_id = enterprise_project_id
         if tags is not None:
             self.tags = tags
+        if bss_param is not None:
+            self.bss_param = bss_param
 
     @property
     def name(self):
@@ -630,6 +637,24 @@ class CreateInstanceReq:
         :type tags: list[:class:`huaweicloudsdkrabbitmq.v2.TagEntity`]
         """
         self._tags = tags
+
+    @property
+    def bss_param(self):
+        """Gets the bss_param of this CreateInstanceReq.
+
+        :return: The bss_param of this CreateInstanceReq.
+        :rtype: :class:`huaweicloudsdkrabbitmq.v2.BssParam`
+        """
+        return self._bss_param
+
+    @bss_param.setter
+    def bss_param(self, bss_param):
+        """Sets the bss_param of this CreateInstanceReq.
+
+        :param bss_param: The bss_param of this CreateInstanceReq.
+        :type bss_param: :class:`huaweicloudsdkrabbitmq.v2.BssParam`
+        """
+        self._bss_param = bss_param
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -37,7 +37,8 @@ class MysqlInstanceRequest:
         'tags': 'list[MysqlTags]',
         'lower_case_table_names': 'int',
         'enterprise_project_id': 'str',
-        'dedicated_resource_id': 'str'
+        'dedicated_resource_id': 'str',
+        'restore_point': 'MysqlRestorePoint'
     }
 
     attribute_map = {
@@ -61,10 +62,11 @@ class MysqlInstanceRequest:
         'tags': 'tags',
         'lower_case_table_names': 'lower_case_table_names',
         'enterprise_project_id': 'enterprise_project_id',
-        'dedicated_resource_id': 'dedicated_resource_id'
+        'dedicated_resource_id': 'dedicated_resource_id',
+        'restore_point': 'restore_point'
     }
 
-    def __init__(self, charge_info=None, region=None, name=None, datastore=None, mode=None, flavor_ref=None, vpc_id=None, subnet_id=None, security_group_id=None, configuration_id=None, password=None, backup_strategy=None, time_zone=None, availability_zone_mode=None, master_availability_zone=None, slave_count=None, volume=None, tags=None, lower_case_table_names=None, enterprise_project_id=None, dedicated_resource_id=None):
+    def __init__(self, charge_info=None, region=None, name=None, datastore=None, mode=None, flavor_ref=None, vpc_id=None, subnet_id=None, security_group_id=None, configuration_id=None, password=None, backup_strategy=None, time_zone=None, availability_zone_mode=None, master_availability_zone=None, slave_count=None, volume=None, tags=None, lower_case_table_names=None, enterprise_project_id=None, dedicated_resource_id=None, restore_point=None):
         """MysqlInstanceRequest
 
         The model defined in huaweicloud sdk
@@ -111,6 +113,8 @@ class MysqlInstanceRequest:
         :type enterprise_project_id: str
         :param dedicated_resource_id: 专属资源池ID，只有开通专属资源池后才可以下发此参数。
         :type dedicated_resource_id: str
+        :param restore_point: 
+        :type restore_point: :class:`huaweicloudsdkgaussdb.v3.MysqlRestorePoint`
         """
         
         
@@ -136,6 +140,7 @@ class MysqlInstanceRequest:
         self._lower_case_table_names = None
         self._enterprise_project_id = None
         self._dedicated_resource_id = None
+        self._restore_point = None
         self.discriminator = None
 
         if charge_info is not None:
@@ -170,6 +175,8 @@ class MysqlInstanceRequest:
             self.enterprise_project_id = enterprise_project_id
         if dedicated_resource_id is not None:
             self.dedicated_resource_id = dedicated_resource_id
+        if restore_point is not None:
+            self.restore_point = restore_point
 
     @property
     def charge_info(self):
@@ -612,6 +619,24 @@ class MysqlInstanceRequest:
         :type dedicated_resource_id: str
         """
         self._dedicated_resource_id = dedicated_resource_id
+
+    @property
+    def restore_point(self):
+        """Gets the restore_point of this MysqlInstanceRequest.
+
+        :return: The restore_point of this MysqlInstanceRequest.
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.MysqlRestorePoint`
+        """
+        return self._restore_point
+
+    @restore_point.setter
+    def restore_point(self, restore_point):
+        """Sets the restore_point of this MysqlInstanceRequest.
+
+        :param restore_point: The restore_point of this MysqlInstanceRequest.
+        :type restore_point: :class:`huaweicloudsdkgaussdb.v3.MysqlRestorePoint`
+        """
+        self._restore_point = restore_point
 
     def to_dict(self):
         """Returns the model properties as a dict"""

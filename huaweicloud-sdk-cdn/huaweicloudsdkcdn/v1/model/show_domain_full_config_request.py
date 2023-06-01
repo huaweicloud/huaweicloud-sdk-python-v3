@@ -31,9 +31,9 @@ class ShowDomainFullConfigRequest:
 
         The model defined in huaweicloud sdk
 
-        :param domain_name: 加速域名
+        :param domain_name: 加速域名。
         :type domain_name: str
-        :param enterprise_project_id: 当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，\&quot;all\&quot;表示所有项目。注意：当使用子帐号调用接口时，该参数必传。  您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。
+        :param enterprise_project_id: 企业项目ID， all：所有项目。
         :type enterprise_project_id: str
         """
         
@@ -51,7 +51,7 @@ class ShowDomainFullConfigRequest:
     def domain_name(self):
         """Gets the domain_name of this ShowDomainFullConfigRequest.
 
-        加速域名
+        加速域名。
 
         :return: The domain_name of this ShowDomainFullConfigRequest.
         :rtype: str
@@ -62,7 +62,7 @@ class ShowDomainFullConfigRequest:
     def domain_name(self, domain_name):
         """Sets the domain_name of this ShowDomainFullConfigRequest.
 
-        加速域名
+        加速域名。
 
         :param domain_name: The domain_name of this ShowDomainFullConfigRequest.
         :type domain_name: str
@@ -73,7 +73,7 @@ class ShowDomainFullConfigRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ShowDomainFullConfigRequest.
 
-        当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，\"all\"表示所有项目。注意：当使用子帐号调用接口时，该参数必传。  您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。
+        企业项目ID， all：所有项目。
 
         :return: The enterprise_project_id of this ShowDomainFullConfigRequest.
         :rtype: str
@@ -84,7 +84,7 @@ class ShowDomainFullConfigRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ShowDomainFullConfigRequest.
 
-        当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，\"all\"表示所有项目。注意：当使用子帐号调用接口时，该参数必传。  您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。
+        企业项目ID， all：所有项目。
 
         :param enterprise_project_id: The enterprise_project_id of this ShowDomainFullConfigRequest.
         :type enterprise_project_id: str

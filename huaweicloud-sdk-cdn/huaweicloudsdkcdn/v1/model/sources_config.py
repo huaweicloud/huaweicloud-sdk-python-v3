@@ -43,7 +43,7 @@ class SourcesConfig:
 
         :param origin_addr: 源站IP或者域名。
         :type origin_addr: str
-        :param origin_type: 源站类型（\&quot;ipaddr\&quot;：\&quot;IP源站\&quot;，\&quot;domain\&quot;：\&quot;域名源站\&quot;，\&quot;obs_bucket\&quot;：\&quot;OBS Bucket源站\&quot;）。
+        :param origin_type: 源站类型， ipaddr：源站IP，domain：源站域名，obs_bucket：OBS桶域名。
         :type origin_type: str
         :param priority: 源站优先级（70：主，30：备）。
         :type priority: int
@@ -106,7 +106,7 @@ class SourcesConfig:
     def origin_type(self):
         """Gets the origin_type of this SourcesConfig.
 
-        源站类型（\"ipaddr\"：\"IP源站\"，\"domain\"：\"域名源站\"，\"obs_bucket\"：\"OBS Bucket源站\"）。
+        源站类型， ipaddr：源站IP，domain：源站域名，obs_bucket：OBS桶域名。
 
         :return: The origin_type of this SourcesConfig.
         :rtype: str
@@ -117,7 +117,7 @@ class SourcesConfig:
     def origin_type(self, origin_type):
         """Sets the origin_type of this SourcesConfig.
 
-        源站类型（\"ipaddr\"：\"IP源站\"，\"domain\"：\"域名源站\"，\"obs_bucket\"：\"OBS Bucket源站\"）。
+        源站类型， ipaddr：源站IP，domain：源站域名，obs_bucket：OBS桶域名。
 
         :param origin_type: The origin_type of this SourcesConfig.
         :type origin_type: str

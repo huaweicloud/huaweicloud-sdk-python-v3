@@ -36,7 +36,8 @@ class ListPoolsRequest:
         'listener_id': 'list[str]',
         'member_instance_id': 'list[str]',
         'vpc_id': 'list[str]',
-        'type': 'list[str]'
+        'type': 'list[str]',
+        'protection_status': 'list[str]'
     }
 
     attribute_map = {
@@ -59,10 +60,11 @@ class ListPoolsRequest:
         'listener_id': 'listener_id',
         'member_instance_id': 'member_instance_id',
         'vpc_id': 'vpc_id',
-        'type': 'type'
+        'type': 'type',
+        'protection_status': 'protection_status'
     }
 
-    def __init__(self, marker=None, limit=None, page_reverse=None, description=None, admin_state_up=None, healthmonitor_id=None, id=None, name=None, loadbalancer_id=None, protocol=None, lb_algorithm=None, enterprise_project_id=None, ip_version=None, member_address=None, member_device_id=None, member_deletion_protection_enable=None, listener_id=None, member_instance_id=None, vpc_id=None, type=None):
+    def __init__(self, marker=None, limit=None, page_reverse=None, description=None, admin_state_up=None, healthmonitor_id=None, id=None, name=None, loadbalancer_id=None, protocol=None, lb_algorithm=None, enterprise_project_id=None, ip_version=None, member_address=None, member_device_id=None, member_deletion_protection_enable=None, listener_id=None, member_instance_id=None, vpc_id=None, type=None, protection_status=None):
         """ListPoolsRequest
 
         The model defined in huaweicloud sdk
@@ -85,9 +87,9 @@ class ListPoolsRequest:
         :type name: list[str]
         :param loadbalancer_id: 后端云服务器组绑定的负载均衡器ID。  支持多值查询，查询条件格式：*loadbalancer_id&#x3D;xxx&amp;loadbalancer_id&#x3D;xxx*。
         :type loadbalancer_id: list[str]
-        :param protocol: 后端云服务器组的后端协议。  取值：TCP、UDP、HTTP、HTTPS和QUIC。  支持多值查询，查询条件格式：*protocol&#x3D;xxx&amp;protocol&#x3D;xxx*。  [不支持QUIC协议。](tag:hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC。](tag:dt)
+        :param protocol: 后端云服务器组的后端协议。  取值：TCP、UDP、HTTP、HTTPS、QUIC。  支持多值查询，查询条件格式：*protocol&#x3D;xxx&amp;protocol&#x3D;xxx*。  [不支持QUIC协议。](tag:hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC。](tag:dt,dt_test)
         :type protocol: list[str]
-        :param lb_algorithm: 后端云服务器组的负载均衡算法。  取值： - ROUND_ROBIN：加权轮询算法。 - LEAST_CONNECTIONS：加权最少连接算法。 - SOURCE_IP：源IP算法。 - QUIC_CID：连接ID算法。  支持多值查询，查询条件格式：*lb_algorithm&#x3D;xxx&amp;lb_algorithm&#x3D;xxx*。  [不支持QUIC_CID算法。](tag:hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC。](tag:dt)
+        :param lb_algorithm: 后端云服务器组的负载均衡算法。  取值： - ROUND_ROBIN：加权轮询算法。 - LEAST_CONNECTIONS：加权最少连接算法。 - SOURCE_IP：源IP算法。 - QUIC_CID：连接ID算法。  支持多值查询，查询条件格式：*lb_algorithm&#x3D;xxx&amp;lb_algorithm&#x3D;xxx*。  [不支持QUIC_CID。](tag:hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC_CID。](tag:dt,dt_test)
         :type lb_algorithm: list[str]
         :param enterprise_project_id: 企业项目ID。不传时查询default企业项目\&quot;0\&quot;下的资源，鉴权按照default企业项目鉴权； 如果传值，则传已存在的企业项目ID或all_granted_eps（表示查询所有企业项目）进行查询。  支持多值查询，查询条件格式：*enterprise_project_id&#x3D;xxx&amp;enterprise_project_id&#x3D;xxx*。  [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
         :type enterprise_project_id: list[str]
@@ -107,6 +109,8 @@ class ListPoolsRequest:
         :type vpc_id: list[str]
         :param type: 后端服务器组的类型。  取值： - instance：允许任意类型的后端，type指定为该类型时，vpc_id是必选字段。 - ip：只能添加跨VPC后端，type指定为该类型时，vpc_id不允许指定。 - 空字符串（\&quot;\&quot;）：允许任意类型的后端
         :type type: list[str]
+        :param protection_status: 修改保护状态, 取值： - nonProtection: 不保护，默认值为nonProtection - consoleProtection: 控制台修改保护
+        :type protection_status: list[str]
         """
         
         
@@ -131,6 +135,7 @@ class ListPoolsRequest:
         self._member_instance_id = None
         self._vpc_id = None
         self._type = None
+        self._protection_status = None
         self.discriminator = None
 
         if marker is not None:
@@ -173,6 +178,8 @@ class ListPoolsRequest:
             self.vpc_id = vpc_id
         if type is not None:
             self.type = type
+        if protection_status is not None:
+            self.protection_status = protection_status
 
     @property
     def marker(self):
@@ -376,7 +383,7 @@ class ListPoolsRequest:
     def protocol(self):
         """Gets the protocol of this ListPoolsRequest.
 
-        后端云服务器组的后端协议。  取值：TCP、UDP、HTTP、HTTPS和QUIC。  支持多值查询，查询条件格式：*protocol=xxx&protocol=xxx*。  [不支持QUIC协议。](tag:hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC。](tag:dt)
+        后端云服务器组的后端协议。  取值：TCP、UDP、HTTP、HTTPS、QUIC。  支持多值查询，查询条件格式：*protocol=xxx&protocol=xxx*。  [不支持QUIC协议。](tag:hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC。](tag:dt,dt_test)
 
         :return: The protocol of this ListPoolsRequest.
         :rtype: list[str]
@@ -387,7 +394,7 @@ class ListPoolsRequest:
     def protocol(self, protocol):
         """Sets the protocol of this ListPoolsRequest.
 
-        后端云服务器组的后端协议。  取值：TCP、UDP、HTTP、HTTPS和QUIC。  支持多值查询，查询条件格式：*protocol=xxx&protocol=xxx*。  [不支持QUIC协议。](tag:hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC。](tag:dt)
+        后端云服务器组的后端协议。  取值：TCP、UDP、HTTP、HTTPS、QUIC。  支持多值查询，查询条件格式：*protocol=xxx&protocol=xxx*。  [不支持QUIC协议。](tag:hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC。](tag:dt,dt_test)
 
         :param protocol: The protocol of this ListPoolsRequest.
         :type protocol: list[str]
@@ -398,7 +405,7 @@ class ListPoolsRequest:
     def lb_algorithm(self):
         """Gets the lb_algorithm of this ListPoolsRequest.
 
-        后端云服务器组的负载均衡算法。  取值： - ROUND_ROBIN：加权轮询算法。 - LEAST_CONNECTIONS：加权最少连接算法。 - SOURCE_IP：源IP算法。 - QUIC_CID：连接ID算法。  支持多值查询，查询条件格式：*lb_algorithm=xxx&lb_algorithm=xxx*。  [不支持QUIC_CID算法。](tag:hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC。](tag:dt)
+        后端云服务器组的负载均衡算法。  取值： - ROUND_ROBIN：加权轮询算法。 - LEAST_CONNECTIONS：加权最少连接算法。 - SOURCE_IP：源IP算法。 - QUIC_CID：连接ID算法。  支持多值查询，查询条件格式：*lb_algorithm=xxx&lb_algorithm=xxx*。  [不支持QUIC_CID。](tag:hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC_CID。](tag:dt,dt_test)
 
         :return: The lb_algorithm of this ListPoolsRequest.
         :rtype: list[str]
@@ -409,7 +416,7 @@ class ListPoolsRequest:
     def lb_algorithm(self, lb_algorithm):
         """Sets the lb_algorithm of this ListPoolsRequest.
 
-        后端云服务器组的负载均衡算法。  取值： - ROUND_ROBIN：加权轮询算法。 - LEAST_CONNECTIONS：加权最少连接算法。 - SOURCE_IP：源IP算法。 - QUIC_CID：连接ID算法。  支持多值查询，查询条件格式：*lb_algorithm=xxx&lb_algorithm=xxx*。  [不支持QUIC_CID算法。](tag:hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC。](tag:dt)
+        后端云服务器组的负载均衡算法。  取值： - ROUND_ROBIN：加权轮询算法。 - LEAST_CONNECTIONS：加权最少连接算法。 - SOURCE_IP：源IP算法。 - QUIC_CID：连接ID算法。  支持多值查询，查询条件格式：*lb_algorithm=xxx&lb_algorithm=xxx*。  [不支持QUIC_CID。](tag:hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC_CID。](tag:dt,dt_test)
 
         :param lb_algorithm: The lb_algorithm of this ListPoolsRequest.
         :type lb_algorithm: list[str]
@@ -613,6 +620,28 @@ class ListPoolsRequest:
         :type type: list[str]
         """
         self._type = type
+
+    @property
+    def protection_status(self):
+        """Gets the protection_status of this ListPoolsRequest.
+
+        修改保护状态, 取值： - nonProtection: 不保护，默认值为nonProtection - consoleProtection: 控制台修改保护
+
+        :return: The protection_status of this ListPoolsRequest.
+        :rtype: list[str]
+        """
+        return self._protection_status
+
+    @protection_status.setter
+    def protection_status(self, protection_status):
+        """Sets the protection_status of this ListPoolsRequest.
+
+        修改保护状态, 取值： - nonProtection: 不保护，默认值为nonProtection - consoleProtection: 控制台修改保护
+
+        :param protection_status: The protection_status of this ListPoolsRequest.
+        :type protection_status: list[str]
+        """
+        self._protection_status = protection_status
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -59,7 +59,7 @@ class CreateCertificateOption:
         :type domain: str
         :param name: 证书的名称。
         :type name: str
-        :param private_key: HTTPS协议使用的私钥。当type为server时有效且必选。 取值范围：PEM编码格式。 最大长度8192字符。
+        :param private_key: HTTPS协议使用的私钥。当type为server时有效且必选。当type为client时，可以传或也可以不传，但都会被忽略；若传入则必须符合PEM格式。 取值范围：PEM编码格式。 最大长度8192字符。
         :type private_key: str
         :param project_id: 证书所在的项目ID。
         :type project_id: str
@@ -224,7 +224,7 @@ class CreateCertificateOption:
     def private_key(self):
         """Gets the private_key of this CreateCertificateOption.
 
-        HTTPS协议使用的私钥。当type为server时有效且必选。 取值范围：PEM编码格式。 最大长度8192字符。
+        HTTPS协议使用的私钥。当type为server时有效且必选。当type为client时，可以传或也可以不传，但都会被忽略；若传入则必须符合PEM格式。 取值范围：PEM编码格式。 最大长度8192字符。
 
         :return: The private_key of this CreateCertificateOption.
         :rtype: str
@@ -235,7 +235,7 @@ class CreateCertificateOption:
     def private_key(self, private_key):
         """Sets the private_key of this CreateCertificateOption.
 
-        HTTPS协议使用的私钥。当type为server时有效且必选。 取值范围：PEM编码格式。 最大长度8192字符。
+        HTTPS协议使用的私钥。当type为server时有效且必选。当type为client时，可以传或也可以不传，但都会被忽略；若传入则必须符合PEM格式。 取值范围：PEM编码格式。 最大长度8192字符。
 
         :param private_key: The private_key of this CreateCertificateOption.
         :type private_key: str

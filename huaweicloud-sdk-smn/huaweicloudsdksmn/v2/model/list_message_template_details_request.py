@@ -29,7 +29,7 @@ class ListMessageTemplateDetailsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param message_template_id: 模板唯一的资源标识，可通过查询[消息模板列表](https://support.huaweicloud.com/api-smn/ListMessageTemplates.html)获取该标识。
+        :param message_template_id: 模板唯一的资源标识，可通过查询[消息模板列表](ListMessageTemplates.xml)获取该标识。
         :type message_template_id: str
         """
         
@@ -44,7 +44,7 @@ class ListMessageTemplateDetailsRequest:
     def message_template_id(self):
         """Gets the message_template_id of this ListMessageTemplateDetailsRequest.
 
-        模板唯一的资源标识，可通过查询[消息模板列表](https://support.huaweicloud.com/api-smn/ListMessageTemplates.html)获取该标识。
+        模板唯一的资源标识，可通过查询[消息模板列表](ListMessageTemplates.xml)获取该标识。
 
         :return: The message_template_id of this ListMessageTemplateDetailsRequest.
         :rtype: str
@@ -55,7 +55,7 @@ class ListMessageTemplateDetailsRequest:
     def message_template_id(self, message_template_id):
         """Sets the message_template_id of this ListMessageTemplateDetailsRequest.
 
-        模板唯一的资源标识，可通过查询[消息模板列表](https://support.huaweicloud.com/api-smn/ListMessageTemplates.html)获取该标识。
+        模板唯一的资源标识，可通过查询[消息模板列表](ListMessageTemplates.xml)获取该标识。
 
         :param message_template_id: The message_template_id of this ListMessageTemplateDetailsRequest.
         :type message_template_id: str

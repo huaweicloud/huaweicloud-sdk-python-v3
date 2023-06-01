@@ -31,7 +31,13 @@ class ContentInfo:
         'protocol_type': 'int',
         'return_timeout': 'int',
         'return_timeout_param': 'str',
-        'url': 'str'
+        'url': 'str',
+        'rtmp_url': 'str',
+        'flv_url': 'str',
+        'bitrate_type': 'int',
+        'duration': 'int',
+        'retry_delay': 'int',
+        'retry_time': 'int'
     }
 
     attribute_map = {
@@ -49,10 +55,16 @@ class ContentInfo:
         'protocol_type': 'protocol_type',
         'return_timeout': 'return_timeout',
         'return_timeout_param': 'return_timeout_param',
-        'url': 'url'
+        'url': 'url',
+        'rtmp_url': 'rtmp_url',
+        'flv_url': 'flv_url',
+        'bitrate_type': 'bitrate_type',
+        'duration': 'duration',
+        'retry_delay': 'retry_delay',
+        'retry_time': 'retry_time'
     }
 
-    def __init__(self, body_type=None, bodys=None, check_end_length=None, check_end_str=None, check_end_type=None, connect_timeout=None, connect_type=None, headers=None, http_version=None, method=None, name=None, protocol_type=None, return_timeout=None, return_timeout_param=None, url=None):
+    def __init__(self, body_type=None, bodys=None, check_end_length=None, check_end_str=None, check_end_type=None, connect_timeout=None, connect_type=None, headers=None, http_version=None, method=None, name=None, protocol_type=None, return_timeout=None, return_timeout_param=None, url=None, rtmp_url=None, flv_url=None, bitrate_type=None, duration=None, retry_delay=None, retry_time=None):
         """ContentInfo
 
         The model defined in huaweicloud sdk
@@ -87,6 +99,18 @@ class ContentInfo:
         :type return_timeout_param: str
         :param url: url
         :type url: str
+        :param rtmp_url: rtmp地址
+        :type rtmp_url: str
+        :param flv_url: flv地址
+        :type flv_url: str
+        :param bitrate_type: 分辨率策略
+        :type bitrate_type: int
+        :param duration: duration
+        :type duration: int
+        :param retry_delay: HLS重试延迟时间
+        :type retry_delay: int
+        :param retry_time: HLS重试次数
+        :type retry_time: int
         """
         
         
@@ -106,6 +130,12 @@ class ContentInfo:
         self._return_timeout = None
         self._return_timeout_param = None
         self._url = None
+        self._rtmp_url = None
+        self._flv_url = None
+        self._bitrate_type = None
+        self._duration = None
+        self._retry_delay = None
+        self._retry_time = None
         self.discriminator = None
 
         if body_type is not None:
@@ -138,6 +168,18 @@ class ContentInfo:
             self.return_timeout_param = return_timeout_param
         if url is not None:
             self.url = url
+        if rtmp_url is not None:
+            self.rtmp_url = rtmp_url
+        if flv_url is not None:
+            self.flv_url = flv_url
+        if bitrate_type is not None:
+            self.bitrate_type = bitrate_type
+        if duration is not None:
+            self.duration = duration
+        if retry_delay is not None:
+            self.retry_delay = retry_delay
+        if retry_time is not None:
+            self.retry_time = retry_time
 
     @property
     def body_type(self):
@@ -468,6 +510,138 @@ class ContentInfo:
         :type url: str
         """
         self._url = url
+
+    @property
+    def rtmp_url(self):
+        """Gets the rtmp_url of this ContentInfo.
+
+        rtmp地址
+
+        :return: The rtmp_url of this ContentInfo.
+        :rtype: str
+        """
+        return self._rtmp_url
+
+    @rtmp_url.setter
+    def rtmp_url(self, rtmp_url):
+        """Sets the rtmp_url of this ContentInfo.
+
+        rtmp地址
+
+        :param rtmp_url: The rtmp_url of this ContentInfo.
+        :type rtmp_url: str
+        """
+        self._rtmp_url = rtmp_url
+
+    @property
+    def flv_url(self):
+        """Gets the flv_url of this ContentInfo.
+
+        flv地址
+
+        :return: The flv_url of this ContentInfo.
+        :rtype: str
+        """
+        return self._flv_url
+
+    @flv_url.setter
+    def flv_url(self, flv_url):
+        """Sets the flv_url of this ContentInfo.
+
+        flv地址
+
+        :param flv_url: The flv_url of this ContentInfo.
+        :type flv_url: str
+        """
+        self._flv_url = flv_url
+
+    @property
+    def bitrate_type(self):
+        """Gets the bitrate_type of this ContentInfo.
+
+        分辨率策略
+
+        :return: The bitrate_type of this ContentInfo.
+        :rtype: int
+        """
+        return self._bitrate_type
+
+    @bitrate_type.setter
+    def bitrate_type(self, bitrate_type):
+        """Sets the bitrate_type of this ContentInfo.
+
+        分辨率策略
+
+        :param bitrate_type: The bitrate_type of this ContentInfo.
+        :type bitrate_type: int
+        """
+        self._bitrate_type = bitrate_type
+
+    @property
+    def duration(self):
+        """Gets the duration of this ContentInfo.
+
+        duration
+
+        :return: The duration of this ContentInfo.
+        :rtype: int
+        """
+        return self._duration
+
+    @duration.setter
+    def duration(self, duration):
+        """Sets the duration of this ContentInfo.
+
+        duration
+
+        :param duration: The duration of this ContentInfo.
+        :type duration: int
+        """
+        self._duration = duration
+
+    @property
+    def retry_delay(self):
+        """Gets the retry_delay of this ContentInfo.
+
+        HLS重试延迟时间
+
+        :return: The retry_delay of this ContentInfo.
+        :rtype: int
+        """
+        return self._retry_delay
+
+    @retry_delay.setter
+    def retry_delay(self, retry_delay):
+        """Sets the retry_delay of this ContentInfo.
+
+        HLS重试延迟时间
+
+        :param retry_delay: The retry_delay of this ContentInfo.
+        :type retry_delay: int
+        """
+        self._retry_delay = retry_delay
+
+    @property
+    def retry_time(self):
+        """Gets the retry_time of this ContentInfo.
+
+        HLS重试次数
+
+        :return: The retry_time of this ContentInfo.
+        :rtype: int
+        """
+        return self._retry_time
+
+    @retry_time.setter
+    def retry_time(self, retry_time):
+        """Sets the retry_time of this ContentInfo.
+
+        HLS重试次数
+
+        :param retry_time: The retry_time of this ContentInfo.
+        :type retry_time: int
+        """
+        self._retry_time = retry_time
 
     def to_dict(self):
         """Returns the model properties as a dict"""

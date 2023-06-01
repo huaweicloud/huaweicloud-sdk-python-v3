@@ -23,7 +23,9 @@ class ListInstancesDetailsRequest:
         'status': 'str',
         'include_failure': 'str',
         'exact_match_name': 'str',
-        'enterprise_project_id': 'str'
+        'enterprise_project_id': 'str',
+        'offset': 'str',
+        'limit': 'str'
     }
 
     attribute_map = {
@@ -33,10 +35,12 @@ class ListInstancesDetailsRequest:
         'status': 'status',
         'include_failure': 'include_failure',
         'exact_match_name': 'exact_match_name',
-        'enterprise_project_id': 'enterprise_project_id'
+        'enterprise_project_id': 'enterprise_project_id',
+        'offset': 'offset',
+        'limit': 'limit'
     }
 
-    def __init__(self, engine=None, name=None, instance_id=None, status=None, include_failure=None, exact_match_name=None, enterprise_project_id=None):
+    def __init__(self, engine=None, name=None, instance_id=None, status=None, include_failure=None, exact_match_name=None, enterprise_project_id=None, offset=None, limit=None):
         """ListInstancesDetailsRequest
 
         The model defined in huaweicloud sdk
@@ -55,6 +59,10 @@ class ListInstancesDetailsRequest:
         :type exact_match_name: str
         :param enterprise_project_id: 企业项目ID。
         :type enterprise_project_id: str
+        :param offset: 偏移量，表示从此偏移量开始查询， offset大于等于0。
+        :type offset: str
+        :param limit: 当次查询返回的最大实例个数，默认值为10，取值范围为1~50。
+        :type limit: str
         """
         
         
@@ -66,6 +74,8 @@ class ListInstancesDetailsRequest:
         self._include_failure = None
         self._exact_match_name = None
         self._enterprise_project_id = None
+        self._offset = None
+        self._limit = None
         self.discriminator = None
 
         if engine is not None:
@@ -82,6 +92,10 @@ class ListInstancesDetailsRequest:
             self.exact_match_name = exact_match_name
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
+        if offset is not None:
+            self.offset = offset
+        if limit is not None:
+            self.limit = limit
 
     @property
     def engine(self):
@@ -236,6 +250,50 @@ class ListInstancesDetailsRequest:
         :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def offset(self):
+        """Gets the offset of this ListInstancesDetailsRequest.
+
+        偏移量，表示从此偏移量开始查询， offset大于等于0。
+
+        :return: The offset of this ListInstancesDetailsRequest.
+        :rtype: str
+        """
+        return self._offset
+
+    @offset.setter
+    def offset(self, offset):
+        """Sets the offset of this ListInstancesDetailsRequest.
+
+        偏移量，表示从此偏移量开始查询， offset大于等于0。
+
+        :param offset: The offset of this ListInstancesDetailsRequest.
+        :type offset: str
+        """
+        self._offset = offset
+
+    @property
+    def limit(self):
+        """Gets the limit of this ListInstancesDetailsRequest.
+
+        当次查询返回的最大实例个数，默认值为10，取值范围为1~50。
+
+        :return: The limit of this ListInstancesDetailsRequest.
+        :rtype: str
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        """Sets the limit of this ListInstancesDetailsRequest.
+
+        当次查询返回的最大实例个数，默认值为10，取值范围为1~50。
+
+        :param limit: The limit of this ListInstancesDetailsRequest.
+        :type limit: str
+        """
+        self._limit = limit
 
     def to_dict(self):
         """Returns the model properties as a dict"""

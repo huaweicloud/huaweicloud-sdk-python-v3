@@ -24,6 +24,64 @@ class CptsClient(Client):
 
         return ClientBuilder(clazz)
 
+    def batch_update_task_status(self, request):
+        """批量启停任务（新版启停任务接口）
+
+        批量启停任务（新版启停任务接口）
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchUpdateTaskStatus
+        :type request: :class:`huaweicloudsdkcpts.v1.BatchUpdateTaskStatusRequest`
+        :rtype: :class:`huaweicloudsdkcpts.v1.BatchUpdateTaskStatusResponse`
+        """
+        return self._batch_update_task_status_with_http_info(request)
+
+    def _batch_update_task_status_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'test_suit_id' in local_var_params:
+            path_params['test_suit_id'] = local_var_params['test_suit_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/test-suites/{test_suit_id}/tasks/batch-update-task-status',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='BatchUpdateTaskStatusResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def create_case(self, request):
         """创建用例
 
@@ -75,6 +133,176 @@ class CptsClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='CreateCaseResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_directory(self, request):
+        """创建目录
+
+        创建目录
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateDirectory
+        :type request: :class:`huaweicloudsdkcpts.v1.CreateDirectoryRequest`
+        :rtype: :class:`huaweicloudsdkcpts.v1.CreateDirectoryResponse`
+        """
+        return self._create_directory_with_http_info(request)
+
+    def _create_directory_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'test_suite_id' in local_var_params:
+            path_params['test_suite_id'] = local_var_params['test_suite_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/test-suites/{test_suite_id}/directory',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateDirectoryResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_new_case(self, request):
+        """创建用例
+
+        创建用例
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateNewCase
+        :type request: :class:`huaweicloudsdkcpts.v1.CreateNewCaseRequest`
+        :rtype: :class:`huaweicloudsdkcpts.v1.CreateNewCaseResponse`
+        """
+        return self._create_new_case_with_http_info(request)
+
+    def _create_new_case_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/test-cases',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateNewCaseResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_new_task(self, request):
+        """创建任务
+
+        创建任务
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateNewTask
+        :type request: :class:`huaweicloudsdkcpts.v1.CreateNewTaskRequest`
+        :rtype: :class:`huaweicloudsdkcpts.v1.CreateNewTaskResponse`
+        """
+        return self._create_new_task_with_http_info(request)
+
+    def _create_new_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/tasks',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateNewTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -368,6 +596,176 @@ class CptsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def delete_directory(self, request):
+        """删除目录
+
+        删除目录
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteDirectory
+        :type request: :class:`huaweicloudsdkcpts.v1.DeleteDirectoryRequest`
+        :rtype: :class:`huaweicloudsdkcpts.v1.DeleteDirectoryResponse`
+        """
+        return self._delete_directory_with_http_info(request)
+
+    def _delete_directory_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'directory_id' in local_var_params:
+            path_params['directory_id'] = local_var_params['directory_id']
+        if 'test_suite_id' in local_var_params:
+            path_params['test_suite_id'] = local_var_params['test_suite_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/test-suites/{test_suite_id}/directory/{directory_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteDirectoryResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_new_case(self, request):
+        """删除用例
+
+        删除用例
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteNewCase
+        :type request: :class:`huaweicloudsdkcpts.v1.DeleteNewCaseRequest`
+        :rtype: :class:`huaweicloudsdkcpts.v1.DeleteNewCaseResponse`
+        """
+        return self._delete_new_case_with_http_info(request)
+
+    def _delete_new_case_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'case_id' in local_var_params:
+            path_params['case_id'] = local_var_params['case_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/test-cases/{case_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteNewCaseResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_new_task(self, request):
+        """删除任务
+
+        删除任务
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteNewTask
+        :type request: :class:`huaweicloudsdkcpts.v1.DeleteNewTaskRequest`
+        :rtype: :class:`huaweicloudsdkcpts.v1.DeleteNewTaskResponse`
+        """
+        return self._delete_new_task_with_http_info(request)
+
+    def _delete_new_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/tasks/{task_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteNewTaskResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def delete_task(self, request):
         """删除任务
 
@@ -538,6 +936,120 @@ class CptsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_project_test_case(self, request):
+        """查询用例树
+
+        查询用例树
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListProjectTestCase
+        :type request: :class:`huaweicloudsdkcpts.v1.ListProjectTestCaseRequest`
+        :rtype: :class:`huaweicloudsdkcpts.v1.ListProjectTestCaseResponse`
+        """
+        return self._list_project_test_case_with_http_info(request)
+
+    def _list_project_test_case_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'test_suite_id' in local_var_params:
+            path_params['test_suite_id'] = local_var_params['test_suite_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/test-suites/{test_suite_id}/directory',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListProjectTestCaseResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_task_cases(self, request):
+        """获取任务关联的用例列表
+
+        获取任务关联的用例列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListTaskCases
+        :type request: :class:`huaweicloudsdkcpts.v1.ListTaskCasesRequest`
+        :rtype: :class:`huaweicloudsdkcpts.v1.ListTaskCasesResponse`
+        """
+        return self._list_task_cases_with_http_info(request)
+
+    def _list_task_cases_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'test_suit_id' in local_var_params:
+            path_params['test_suit_id'] = local_var_params['test_suit_id']
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/test-suites/{test_suit_id}/tasks/{task_id}/test-cases',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListTaskCasesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_variables(self, request):
         """查询全局变量
 
@@ -652,6 +1164,62 @@ class CptsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def show_case(self, request):
+        """查询用例
+
+        查询用例
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowCase
+        :type request: :class:`huaweicloudsdkcpts.v1.ShowCaseRequest`
+        :rtype: :class:`huaweicloudsdkcpts.v1.ShowCaseResponse`
+        """
+        return self._show_case_with_http_info(request)
+
+    def _show_case_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'case_id' in local_var_params:
+            path_params['case_id'] = local_var_params['case_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/test-cases/{case_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowCaseResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def show_history_run_info(self, request):
         """查询PerfTest任务离线报告列表
 
@@ -703,6 +1271,176 @@ class CptsClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ShowHistoryRunInfoResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_merge_case_detail(self, request):
+        """内外融合单个用例的详情数据
+
+        内外融合单个用例的详情数据
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowMergeCaseDetail
+        :type request: :class:`huaweicloudsdkcpts.v1.ShowMergeCaseDetailRequest`
+        :rtype: :class:`huaweicloudsdkcpts.v1.ShowMergeCaseDetailResponse`
+        """
+        return self._show_merge_case_detail_with_http_info(request)
+
+    def _show_merge_case_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'task_run_id' in local_var_params:
+            path_params['task_run_id'] = local_var_params['task_run_id']
+        if 'case_run_id' in local_var_params:
+            path_params['case_run_id'] = local_var_params['case_run_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/task-run-infos/{task_run_id}/case-run-infos/{case_run_id}/detail',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowMergeCaseDetailResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_merge_report_logs_outline(self, request):
+        """查询报告汇总数据接口
+
+        查询报告汇总数据接口
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowMergeReportLogsOutline
+        :type request: :class:`huaweicloudsdkcpts.v1.ShowMergeReportLogsOutlineRequest`
+        :rtype: :class:`huaweicloudsdkcpts.v1.ShowMergeReportLogsOutlineResponse`
+        """
+        return self._show_merge_report_logs_outline_with_http_info(request)
+
+    def _show_merge_report_logs_outline_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'task_run_id' in local_var_params:
+            path_params['task_run_id'] = local_var_params['task_run_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/task-run-infos/{task_run_id}/reports/log-outline',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowMergeReportLogsOutlineResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_merge_task_case(self, request):
+        """内外融合当前任务用例列表接口
+
+        内外融合当前任务用例列表接口
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowMergeTaskCase
+        :type request: :class:`huaweicloudsdkcpts.v1.ShowMergeTaskCaseRequest`
+        :rtype: :class:`huaweicloudsdkcpts.v1.ShowMergeTaskCaseResponse`
+        """
+        return self._show_merge_task_case_with_http_info(request)
+
+    def _show_merge_task_case_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'task_run_id' in local_var_params:
+            path_params['task_run_id'] = local_var_params['task_run_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/task-run-infos/{task_run_id}/cases',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowMergeTaskCaseResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -819,6 +1557,66 @@ class CptsClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ShowTaskResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_task_case_aw_chart(self, request):
+        """内外融合获取用例的AW曲线图获取接口
+
+        内外融合获取用例的AW曲线图获取接口
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowTaskCaseAwChart
+        :type request: :class:`huaweicloudsdkcpts.v1.ShowTaskCaseAwChartRequest`
+        :rtype: :class:`huaweicloudsdkcpts.v1.ShowTaskCaseAwChartResponse`
+        """
+        return self._show_task_case_aw_chart_with_http_info(request)
+
+    def _show_task_case_aw_chart_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'task_run_id' in local_var_params:
+            path_params['task_run_id'] = local_var_params['task_run_id']
+        if 'case_run_id' in local_var_params:
+            path_params['case_run_id'] = local_var_params['case_run_id']
+        if 'detail_id' in local_var_params:
+            path_params['detail_id'] = local_var_params['detail_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/task-run-infos/{task_run_id}/case-run-infos/{case_run_id}/detail/{detail_id}/chart',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowTaskCaseAwChartResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1113,6 +1911,124 @@ class CptsClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='UpdateCaseResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_directory(self, request):
+        """修改目录
+
+        修改目录
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateDirectory
+        :type request: :class:`huaweicloudsdkcpts.v1.UpdateDirectoryRequest`
+        :rtype: :class:`huaweicloudsdkcpts.v1.UpdateDirectoryResponse`
+        """
+        return self._update_directory_with_http_info(request)
+
+    def _update_directory_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'directory_id' in local_var_params:
+            path_params['directory_id'] = local_var_params['directory_id']
+        if 'test_suite_id' in local_var_params:
+            path_params['test_suite_id'] = local_var_params['test_suite_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/test-suites/{test_suite_id}/directory/{directory_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateDirectoryResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_new_case(self, request):
+        """修改用例
+
+        修改用例
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateNewCase
+        :type request: :class:`huaweicloudsdkcpts.v1.UpdateNewCaseRequest`
+        :rtype: :class:`huaweicloudsdkcpts.v1.UpdateNewCaseResponse`
+        """
+        return self._update_new_case_with_http_info(request)
+
+    def _update_new_case_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'case_id' in local_var_params:
+            path_params['case_id'] = local_var_params['case_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/test-cases/{case_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateNewCaseResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1575,62 +2491,6 @@ class CptsClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ListProjectSetsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-    def list_project_test_case(self, request):
-        """查询用例树
-
-        查询用例树
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-        :param request: Request instance for ListProjectTestCase
-        :type request: :class:`huaweicloudsdkcpts.v1.ListProjectTestCaseRequest`
-        :rtype: :class:`huaweicloudsdkcpts.v1.ListProjectTestCaseResponse`
-        """
-        return self._list_project_test_case_with_http_info(request)
-
-    def _list_project_test_case_with_http_info(self, request):
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'test_suite_id' in local_var_params:
-            path_params['test_suite_id'] = local_var_params['test_suite_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v1/{project_id}/test-suites/{test_suite_id}/directory',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListProjectTestCaseResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

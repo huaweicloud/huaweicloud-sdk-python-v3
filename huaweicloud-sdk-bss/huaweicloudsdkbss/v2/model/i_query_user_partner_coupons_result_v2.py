@@ -22,7 +22,7 @@ class IQueryUserPartnerCouponsResultV2:
         'customer_id': 'str',
         'coupon_type': 'int',
         'measure_id': 'int',
-        'face_value': 'float',
+        'face_value': 'decimal.Decimal',
         'effective_time': 'str',
         'expire_time': 'str',
         'order_id': 'str',
@@ -36,7 +36,7 @@ class IQueryUserPartnerCouponsResultV2:
         'last_used_time': 'str',
         'promotion_id': 'str',
         'create_time': 'str',
-        'balance': 'float',
+        'balance': 'decimal.Decimal',
         'lock_order_id': 'str',
         'is_frozen': 'str'
     }
@@ -82,7 +82,7 @@ class IQueryUserPartnerCouponsResultV2:
         :param measure_id: 优惠券面额单位。 1：元。
         :type measure_id: int
         :param face_value: 优惠券面值。
-        :type face_value: float
+        :type face_value: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         :param effective_time: 生效时间。 UTC时间，格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，如“2019-05-06T08:05:01Z”。
         :type effective_time: str
         :param expire_time: 失效时间。 UTC时间，格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，如“2019-05-06T08:05:01Z”。
@@ -110,7 +110,7 @@ class IQueryUserPartnerCouponsResultV2:
         :param create_time: 优惠券的创建时间。
         :type create_time: str
         :param balance: 优惠券余额。
-        :type balance: float
+        :type balance: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         :param lock_order_id: 锁定优惠券的订单ID。 如果为老版本优惠券，该值为空。
         :type lock_order_id: str
         :param is_frozen: 优惠券是否冻结。 0：否1：是 可用优惠券接口返回时不包括冻结状态的优惠券。
@@ -305,7 +305,7 @@ class IQueryUserPartnerCouponsResultV2:
         优惠券面值。
 
         :return: The face_value of this IQueryUserPartnerCouponsResultV2.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         return self._face_value
 
@@ -316,7 +316,7 @@ class IQueryUserPartnerCouponsResultV2:
         优惠券面值。
 
         :param face_value: The face_value of this IQueryUserPartnerCouponsResultV2.
-        :type face_value: float
+        :type face_value: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         self._face_value = face_value
 
@@ -613,7 +613,7 @@ class IQueryUserPartnerCouponsResultV2:
         优惠券余额。
 
         :return: The balance of this IQueryUserPartnerCouponsResultV2.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         return self._balance
 
@@ -624,7 +624,7 @@ class IQueryUserPartnerCouponsResultV2:
         优惠券余额。
 
         :param balance: The balance of this IQueryUserPartnerCouponsResultV2.
-        :type balance: float
+        :type balance: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         self._balance = balance
 

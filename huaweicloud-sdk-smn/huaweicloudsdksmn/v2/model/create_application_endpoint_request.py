@@ -31,7 +31,7 @@ class CreateApplicationEndpointRequest:
 
         The model defined in huaweicloud sdk
 
-        :param application_urn: Application的唯一资源标识，可通过[查询Application](https://support.huaweicloud.com/api-smn/ListApplications.html)获取该标识。
+        :param application_urn: Application的唯一资源标识，可通过[查询Application](smn_api_57004.xml)获取该标识。
         :type application_urn: str
         :param body: Body of the CreateApplicationEndpointRequest
         :type body: :class:`huaweicloudsdksmn.v2.CreateApplicationEndpointRequestBody`
@@ -51,7 +51,7 @@ class CreateApplicationEndpointRequest:
     def application_urn(self):
         """Gets the application_urn of this CreateApplicationEndpointRequest.
 
-        Application的唯一资源标识，可通过[查询Application](https://support.huaweicloud.com/api-smn/ListApplications.html)获取该标识。
+        Application的唯一资源标识，可通过[查询Application](smn_api_57004.xml)获取该标识。
 
         :return: The application_urn of this CreateApplicationEndpointRequest.
         :rtype: str
@@ -62,7 +62,7 @@ class CreateApplicationEndpointRequest:
     def application_urn(self, application_urn):
         """Sets the application_urn of this CreateApplicationEndpointRequest.
 
-        Application的唯一资源标识，可通过[查询Application](https://support.huaweicloud.com/api-smn/ListApplications.html)获取该标识。
+        Application的唯一资源标识，可通过[查询Application](smn_api_57004.xml)获取该标识。
 
         :param application_urn: The application_urn of this CreateApplicationEndpointRequest.
         :type application_urn: str

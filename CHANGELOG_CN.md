@@ -1,3 +1,767 @@
+# 3.1.42 2023-06-01
+
+### HuaweiCloud SDK BSS
+
+- _新增特性_
+  - 支持接口`ListMultiAccountTransferCoupons`、`ListMultiAccountRetrieveCoupons`、`ClaimEnterpriseMultiAccountCoupon`、`ReclaimEnterpriseMultiAccountCoupon`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **UpdateCustomerAccountAmount**
+    - 请求参数变更
+      - `* amount: double -> bigdecimal`
+  - **ReclaimIndirectPartnerAccount**
+    - 请求参数变更
+      - `* amount: double -> bigdecimal`
+  - **ReclaimToPartnerAccount**
+    - 请求参数变更
+      - `* amount: double -> bigdecimal`
+  - **ListPartnerCouponsRecord**
+    - 响应参数变更
+      - `* records.operation_amount: double -> bigdecimal`
+  - **ListCustomersBalancesDetail**
+    - 响应参数变更
+      - `* customer_balances.debt_amount: double -> bigdecimal`
+      - `* customer_balances.amount: double -> bigdecimal`
+  - **ShowCustomerMonthlySum**
+    - 响应参数变更
+      - `* consume_amount: double -> bigdecimal`
+      - `* debt_amount: double -> bigdecimal`
+      - `* coupon_amount: double -> bigdecimal`
+      - `* flexipurchase_coupon_amount: double -> bigdecimal`
+      - `* stored_value_card_amount: double -> bigdecimal`
+      - `* cash_amount: double -> bigdecimal`
+      - `* credit_amount: double -> bigdecimal`
+      - `* writeoff_amount: double -> bigdecimal`
+      - `* bill_sums.official_amount: double -> bigdecimal`
+      - `* bill_sums.official_discount_amount: double -> bigdecimal`
+      - `* bill_sums.truncated_amount: double -> bigdecimal`
+      - `* bill_sums.consume_amount: double -> bigdecimal`
+      - `* bill_sums.coupon_amount: double -> bigdecimal`
+      - `* bill_sums.flexipurchase_coupon_amount: double -> bigdecimal`
+      - `* bill_sums.stored_value_card_amount: double -> bigdecimal`
+      - `* bill_sums.debt_amount: double -> bigdecimal`
+      - `* bill_sums.writeoff_amount: double -> bigdecimal`
+      - `* bill_sums.cash_amount: double -> bigdecimal`
+      - `* bill_sums.credit_amount: double -> bigdecimal`
+  - **UpdateCouponQuotas**
+    - 请求参数变更
+      - `* quota_amount: double -> bigdecimal`
+  - **ListCouponQuotasRecords**
+    - 响应参数变更
+      - `* records.amount: double -> bigdecimal`
+  - **ReclaimCouponQuotas**
+    - 响应参数变更
+      - `* simple_quota_infos.quota_balance: double -> bigdecimal`
+  - **ShowCustomerAccountBalances**
+    - 响应参数变更
+      - `* debt_amount: double -> bigdecimal`
+      - `* account_balances.amount: double -> bigdecimal`
+      - `* account_balances.designated_amount: double -> bigdecimal`
+      - `* account_balances.credit_amount: double -> bigdecimal`
+  - **ListFreeResourceUsages**
+    - 响应参数变更
+      - `* free_resources.amount: double -> bigdecimal`
+      - `* free_resources.original_amount: double -> bigdecimal`
+  - **ListIssuedPartnerCoupons**
+    - 响应参数变更
+      - `* user_coupons.face_value: double -> bigdecimal`
+      - `* user_coupons.balance: double -> bigdecimal`
+  - **ListOnDemandResourceRatings**
+    - 响应参数变更
+      - `* amount: double -> bigdecimal`
+      - `* discount_amount: double -> bigdecimal`
+      - `* official_website_amount: double -> bigdecimal`
+      - `* product_rating_results.amount: double -> bigdecimal`
+      - `* product_rating_results.discount_amount: double -> bigdecimal`
+      - `* product_rating_results.official_website_amount: double -> bigdecimal`
+  - **ListSubcustomerMonthlyBills**
+    - 响应参数变更
+      - `* bill_sums.amount: double -> bigdecimal`
+      - `* bill_sums.debt_amount: double -> bigdecimal`
+      - `* bill_sums.adjustment_amount: double -> bigdecimal`
+      - `* bill_sums.discount_amount: double -> bigdecimal`
+      - `* bill_sums.account_details.amount: double -> bigdecimal`
+  - **ListCustomerBillsMonthlyBreakDown**
+    - 响应参数变更
+      - `* details.usage: double -> bigdecimal`
+      - `* details.free_resource_usage: double -> bigdecimal`
+      - `* details.ri_usage: double -> bigdecimal`
+      - `* details.consume_amount: double -> bigdecimal`
+      - `* details.current_month_amortized_amount: double -> bigdecimal`
+      - `* details.future_months_amortized_amount: double -> bigdecimal`
+      - `* details.amortized_credit_amount: double -> bigdecimal`
+      - `* details.amortized_coupon_amount: double -> bigdecimal`
+      - `* details.amortized_flexipurchase_coupon_amount: double -> bigdecimal`
+      - `* details.amortized_stored_value_card_amount: double -> bigdecimal`
+      - `* details.amortized_bonus_amount: double -> bigdecimal`
+  - **ListQuotaCoupons**
+    - 响应参数变更
+      - `* quotas.quota_value: double -> bigdecimal`
+      - `* quotas.balance: double -> bigdecimal`
+  - **ListIssuedCouponQuotas**
+    - 响应参数变更
+      - `* quotas.quota_value: double -> bigdecimal`
+
+### HuaweiCloud SDK BSSINTL
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListFreeResourceUsages**
+    - 响应参数变更
+      - `* free_resources.amount: double -> bigdecimal`
+      - `* free_resources.original_amount: double -> bigdecimal`
+  - **ListOnDemandResourceRatings**
+    - 响应参数变更
+      - `* amount: double -> bigdecimal`
+      - `* discount_amount: double -> bigdecimal`
+      - `* official_website_amount: double -> bigdecimal`
+      - `* product_rating_results.amount: double -> bigdecimal`
+      - `* product_rating_results.discount_amount: double -> bigdecimal`
+      - `* product_rating_results.official_website_amount: double -> bigdecimal`
+
+### HuaweiCloud SDK CBH
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowNetworkConfiguration**
+    - 请求参数变更
+      - `+ nics.ip_address`
+  - **ChangeInstanceNetwork**
+    - 请求参数变更
+      - `+ nics.ip_address`
+  - **CreateInstance**
+    - 请求参数变更
+      - `+ server.nics.ip_address`
+
+### HuaweiCloud SDK CBR
+
+- _新增特性_
+  - 支持接口`ShowSummary`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK CBS
+
+- _新增特性_
+  - 支持接口`PostRequests`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK CCE
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowAddonInstance**
+    - 响应参数变更
+      - `+ metadata.alias`
+      - `* metadata: object<Metadata> -> object<AddonMetadata>`
+  - **UpdateAddonInstance**
+    - 请求参数变更
+      - `+ metadata.alias`
+      - `* metadata: object<Metadata> -> object<AddonMetadata>`
+    - 响应参数变更
+      - `+ metadata.alias`
+      - `* metadata: object<Metadata> -> object<AddonMetadata>`
+  - **CreateAddonInstance**
+    - 请求参数变更
+      - `+ metadata.alias`
+      - `* metadata: object<Metadata> -> object<AddonMetadata>`
+    - 响应参数变更
+      - `+ metadata.alias`
+      - `* metadata: object<Metadata> -> object<AddonMetadata>`
+  - **ListAddonInstances**
+    - 响应参数变更
+      - `+ items.metadata.alias`
+      - `* items.metadata: object<Metadata> -> object<AddonMetadata>`
+  - **ListAddonTemplates**
+    - 响应参数变更
+      - `+ items.metadata.alias`
+      - `* items.metadata: object<Metadata> -> object<AddonMetadata>`
+
+### HuaweiCloud SDK CDN
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowLogs**
+    - 请求参数变更
+      - `+ start_time`
+      - `+ end_time`
+      - `- query_date`
+  - **ShowDomainFullConfig**
+    - 请求参数变更
+      - `+ show_special_configs`
+    - 响应参数变更
+      - `- configs.error_code_cache.code: enum value [400,403,404,405,414,500,501,502,503,504]`
+      - `+ configs.flexible_origin.back_sources.http_port`
+      - `+ configs.flexible_origin.back_sources.https_port`
+  - **UpdateDomainFullConfig**
+    - 请求参数变更
+      - `- configs.error_code_cache.code: enum value [400,403,404,405,414,500,501,502,503,504]`
+      - `+ configs.flexible_origin.back_sources.http_port`
+      - `+ configs.flexible_origin.back_sources.https_port`
+
+### HuaweiCloud SDK CPTS
+
+- _新增特性_
+  - 支持以下接口：
+    - `UpdateDirectory`
+    - `DeleteDirectory`
+    - `ListTaskCases`
+    - `CreateNewTask`
+    - `CreateNewCase`
+    - `ShowCase`
+    - `UpdateNewCase`
+    - `DeleteNewCase`
+    - `ShowMergeReportLogsOutline`
+    - `ShowTaskCaseAwChart`
+    - `ShowMergeCaseDetail`
+    - `ShowMergeTaskCase`
+    - `BatchUpdateTaskStatus`
+    - `CreateDirectory`
+    - `DeleteNewTask`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **UpdateCase**
+    - 请求参数变更
+      - `+ directory_id`
+      - `+ setup_contents`
+      - `+ user_replicas`
+      - `+ collect_log_policy`
+      - `+ link_app_list`
+      - `+ case_info`
+      - `+ contents.content.content.rtmp_url`
+      - `+ contents.content.content.flv_url`
+      - `+ contents.content.content.bitrate_type`
+      - `+ contents.content.content.duration`
+      - `+ contents.content.content.retry_delay`
+      - `+ contents.content.content.retry_time`
+  - **UpdateTemp**
+    - 请求参数变更
+      - `+ contents.content.content.rtmp_url`
+      - `+ contents.content.content.flv_url`
+      - `+ contents.content.content.bitrate_type`
+      - `+ contents.content.content.duration`
+      - `+ contents.content.content.retry_delay`
+      - `+ contents.content.content.retry_time`
+  - **ShowTask**
+    - 响应参数变更
+      - `+ taskInfo.case_list.directory_id`
+      - `+ taskInfo.case_list.setup_contents`
+      - `+ taskInfo.case_list.user_replicas`
+      - `+ taskInfo.case_list.collect_log_policy`
+      - `+ taskInfo.case_list.link_app_list`
+      - `+ taskInfo.case_list.case_info`
+      - `+ taskInfo.case_list.contents.content.content.rtmp_url`
+      - `+ taskInfo.case_list.contents.content.content.flv_url`
+      - `+ taskInfo.case_list.contents.content.content.bitrate_type`
+      - `+ taskInfo.case_list.contents.content.content.duration`
+      - `+ taskInfo.case_list.contents.content.content.retry_delay`
+      - `+ taskInfo.case_list.contents.content.content.retry_time`
+  - **UpdateTask**
+    - 请求参数变更
+      - `+ case_list.directory_id`
+      - `+ case_list.setup_contents`
+      - `+ case_list.user_replicas`
+      - `+ case_list.collect_log_policy`
+      - `+ case_list.link_app_list`
+      - `+ case_list.case_info`
+      - `+ case_list.contents.content.content.rtmp_url`
+      - `+ case_list.contents.content.content.flv_url`
+      - `+ case_list.contents.content.content.bitrate_type`
+      - `+ case_list.contents.content.content.duration`
+      - `+ case_list.contents.content.content.retry_delay`
+      - `+ case_list.contents.content.content.retry_time`
+    - 响应参数变更
+      - `+ taskInfo.case_list.directory_id`
+      - `+ taskInfo.case_list.setup_contents`
+      - `+ taskInfo.case_list.user_replicas`
+      - `+ taskInfo.case_list.collect_log_policy`
+      - `+ taskInfo.case_list.link_app_list`
+      - `+ taskInfo.case_list.case_info`
+      - `+ taskInfo.case_list.contents.content.content.rtmp_url`
+      - `+ taskInfo.case_list.contents.content.content.flv_url`
+      - `+ taskInfo.case_list.contents.content.content.bitrate_type`
+      - `+ taskInfo.case_list.contents.content.content.duration`
+      - `+ taskInfo.case_list.contents.content.content.retry_delay`
+      - `+ taskInfo.case_list.contents.content.content.retry_time`
+  - **UpdateTaskRelatedTestCase**
+    - 响应参数变更
+      - `+ taskInfo.case_list.directory_id`
+      - `+ taskInfo.case_list.setup_contents`
+      - `+ taskInfo.case_list.user_replicas`
+      - `+ taskInfo.case_list.collect_log_policy`
+      - `+ taskInfo.case_list.link_app_list`
+      - `+ taskInfo.case_list.case_info`
+      - `+ taskInfo.case_list.contents.content.content.rtmp_url`
+      - `+ taskInfo.case_list.contents.content.content.flv_url`
+      - `+ taskInfo.case_list.contents.content.content.bitrate_type`
+      - `+ taskInfo.case_list.contents.content.content.duration`
+      - `+ taskInfo.case_list.contents.content.content.retry_delay`
+      - `+ taskInfo.case_list.contents.content.content.retry_time`
+
+### HuaweiCloud SDK DNS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **RestorePtrRecord**
+    - 请求参数变更
+      - `* ptrdname: string -> object`
+  - **ShowRecordSet**
+    - 响应参数变更
+      - `+ bundle`
+  - **CreateEipRecordSet**
+    - 响应参数变更
+      - `+ enterprise_project_id`
+  - **ShowPtrRecordSet**
+    - 响应参数变更
+      - `+ enterprise_project_id`
+  - **ShowResourceTag**
+    - 响应参数变更
+      - `+ enterpriseProjectOrDefault`
+  - **ListPrivateZones**
+    - 请求参数变更
+      - `* type: required -> optional`
+
+### HuaweiCloud SDK EG
+
+- _新增特性_
+  - 支持以下接口：
+    - `ShowDetailOfEventTrace`
+    - `ShowDetailOfEvent`
+    - `ListTracedEvents`
+    - `PutOfficialEvents`
+    - `ListEventStreaming`
+    - `CreateEventStreaming`
+    - `ShowEventStreaming`
+    - `UpdateEventStreaming`
+    - `DeleteEventStreaming`
+    - `ResumeEventStreaming`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 移除以下接口：
+    - `ListEventSchema`
+    - `CreateEventSchema`
+    - `ShowDetailOfEventSchema`
+    - `UpdateEventSchema`
+    - `DeleteEventSchema`
+    - `ListEventSchemaVersions`
+    - `CreateEventSchemaVersion`
+    - `ShowDetailOfEventSchemaVersion`
+    - `DeleteEventSchemaVersion`
+    - `DiscoverEventSchemaFromData`
+  - **ShowDetailOfEventSource**
+    - 响应参数变更
+      - `+ provider_type: enum value [PARTNER]`
+  - **UpdateEventSource**
+    - 响应参数变更
+      - `+ provider_type: enum value [PARTNER]`
+  - **ShowDetailOfChannel**
+    - 响应参数变更
+      - `+ provider_type: enum value [PARTNER]`
+  - **UpdateChannel**
+    - 响应参数变更
+      - `+ provider_type: enum value [PARTNER]`
+  - **UpdateSubscriptionSource**
+    - 请求参数变更
+      - `+ provider_type: enum value [PARTNER]`
+  - **ShowDetailOfConnection**
+    - 响应参数变更
+      - `+ type`
+      - `+ kafka_detail`
+  - **UpdateConnection**
+    - 响应参数变更
+      - `+ type`
+      - `+ kafka_detail`
+  - **CreateEventSource**
+    - 响应参数变更
+      - `+ provider_type: enum value [PARTNER]`
+  - **ListEventSources**
+    - 请求参数变更
+      - `+ provider_type: enum value [PARTNER]`
+    - 响应参数变更
+      - `+ items.provider_type: enum value [PARTNER]`
+  - **CreateChannel**
+    - 响应参数变更
+      - `+ provider_type: enum value [PARTNER]`
+  - **ListChannels**
+    - 请求参数变更
+      - `+ provider_type: enum value [PARTNER]`
+    - 响应参数变更
+      - `+ items.provider_type: enum value [PARTNER]`
+  - **CreateSubscriptionTarget**
+    - 请求参数变更
+      - `+ kafka_detail`
+  - **UpdateSubscriptionTarget**
+    - 请求参数变更
+      - `+ kafka_detail`
+  - **CreateConnection**
+    - 请求参数变更
+      - `+ type`
+      - `+ kafka_detail`
+    - 响应参数变更
+      - `+ type`
+      - `+ kafka_detail`
+  - **ListConnections**
+    - 响应参数变更
+      - `+ type`
+      - `+ kafka_detail`
+      - `+ items.type`
+      - `+ items.kafka_detail`
+  - **ListEventTarget**
+    - 请求参数变更
+      - `+ support_types`
+  - **UpdateSubscription**
+    - 请求参数变更
+      - `+ sources.provider_type: enum value [PARTNER]`
+      - `+ targets.kafka_detail`
+  - **CreateSubscription**
+    - 请求参数变更
+      - `+ sources.provider_type: enum value [PARTNER]`
+      - `+ targets.kafka_detail`
+  - **ListSubscriptions**
+    - 请求参数变更
+      - `+ connection_id`
+
+### HuaweiCloud SDK ELB
+
+- _新增特性_
+  - 支持接口`DeleteLoadBalancerForce`、`DeleteListenerForce`、`BatchUpdateMembers`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowQuota**
+    - 响应参数变更
+      - `+ quota.condition_per_policy`
+      - `+ quota.listeners_per_pool`
+      - `+ quota.listeners_per_loadbalancer`
+      - `* quota.ipgroup_bindings: string -> int32`
+      - `* quota.ipgroup_max_length: string -> int32`
+  - **ShowLoadBalancer**
+    - 响应参数变更
+      - `+ loadbalancer.protection_status`
+      - `+ loadbalancer.protection_reason`
+  - **UpdateLoadBalancer**
+    - 请求参数变更
+      - `+ loadbalancer.protection_status`
+      - `+ loadbalancer.protection_reason`
+    - 响应参数变更
+      - `+ loadbalancer.protection_status`
+      - `+ loadbalancer.protection_reason`
+  - **ListListeners**
+    - 请求参数变更
+      - `+ protection_status`
+    - 响应参数变更
+      - `+ listeners.protection_status`
+      - `+ listeners.protection_reason`
+      - `+ listeners.gzip_enable`
+  - **CreateListener**
+    - 请求参数变更
+      - `+ listener.protection_status`
+      - `+ listener.protection_reason`
+      - `+ listener.gzip_enable`
+    - 响应参数变更
+      - `+ listener.protection_status`
+      - `+ listener.protection_reason`
+      - `+ listener.gzip_enable`
+  - **ShowListener**
+    - 响应参数变更
+      - `+ listener.protection_status`
+      - `+ listener.protection_reason`
+      - `+ listener.gzip_enable`
+  - **UpdateListener**
+    - 请求参数变更
+      - `+ listener.protection_status`
+      - `+ listener.protection_reason`
+      - `+ listener.gzip_enable`
+    - 响应参数变更
+      - `+ listener.protection_status`
+      - `+ listener.protection_reason`
+      - `+ listener.gzip_enable`
+  - **ListPools**
+    - 请求参数变更
+      - `+ protection_status`
+    - 响应参数变更
+      - `+ pools.protection_status`
+      - `+ pools.protection_reason`
+  - **CreatePool**
+    - 请求参数变更
+      - `+ pool.protection_status`
+      - `+ pool.protection_reason`
+    - 响应参数变更
+      - `+ pool.protection_status`
+      - `+ pool.protection_reason`
+  - **ShowPool**
+    - 响应参数变更
+      - `+ pool.protection_status`
+      - `+ pool.protection_reason`
+  - **UpdatePool**
+    - 请求参数变更
+      - `+ pool.protection_status`
+      - `+ pool.protection_reason`
+    - 响应参数变更
+      - `+ pool.protection_status`
+      - `+ pool.protection_reason`
+  - **UpdateMember**
+    - 请求参数变更
+      - `+ member.protocol_port`
+  - **ListLoadBalancers**
+    - 请求参数变更
+      - `+ protection_status`
+      - `+ global_eips`
+    - 响应参数变更
+      - `+ loadbalancers.protection_status`
+      - `+ loadbalancers.protection_reason`
+  - **CreateLoadBalancer**
+    - 请求参数变更
+      - `+ loadbalancer.protection_status`
+      - `+ loadbalancer.protection_reason`
+    - 响应参数变更
+      - `+ loadbalancer.protection_status`
+      - `+ loadbalancer.protection_reason`
+  - **ListL7Policies**
+    - 响应参数变更
+      - `+ l7policies.redirect_pools_extend_config`
+      - `- l7policies.redirect_pools_config`
+  - **CreateL7Policy**
+    - 请求参数变更
+      - `+ l7policy.redirect_pools_extend_config`
+      - `- l7policy.redirect_pools_config`
+    - 响应参数变更
+      - `+ l7policy.redirect_pools_extend_config`
+      - `- l7policy.redirect_pools_config`
+  - **ShowL7Policy**
+    - 响应参数变更
+      - `+ l7policy.redirect_pools_extend_config`
+      - `- l7policy.redirect_pools_config`
+  - **UpdateL7Policy**
+    - 请求参数变更
+      - `+ l7policy.redirect_pools_extend_config`
+      - `- l7policy.redirect_pools_config`
+    - 响应参数变更
+      - `+ l7policy.redirect_pools_extend_config`
+      - `- l7policy.redirect_pools_config`
+
+### HuaweiCloud SDK GaussDB
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateGaussMySqlInstance**
+    - 请求参数变更
+      - `+ restore_point`
+
+### HuaweiCloud SDK IEC
+
+- _新增特性_
+  - 支持以下接口：
+    - `ListCloudImages`
+    - `RegisterImage`
+    - `CreateImage`
+    - `ShowVolumeTypes`
+    - `RebuildImage`
+    - `DeleteImage`
+    - `UpdateBandwidth`
+    - `DeleteBandwidth`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK Kafka
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListInstanceTopics**
+    - 请求参数变更
+      - `+ offset`
+      - `+ limit`
+  - **ListInstances**
+    - 请求参数变更
+      - `+ offset`
+      - `+ limit`
+
+### HuaweiCloud SDK MPC
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 移除接口`ListEditingJobs`、`CreateEditingJobs`、`DeleteEditingJobs`
+
+### HuaweiCloud SDK Organizations
+
+- _新增特性_
+  - 支持接口`ListQuotas`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK ProjectMan
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowIssueV4**
+    - 响应参数变更
+      - `+ story_point`
+  - **SearchIssues**
+    - 响应参数变更
+      - `+ issue_list.due_date`
+  - **ListIssueCommentsV4**
+    - 响应参数变更
+      - `+ comments.timestamp`
+
+### HuaweiCloud SDK RabbitMQ
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreatePostPaidInstanceByEngine**
+    - 请求参数变更
+      - `+ bss_param`
+  - **CreatePostPaidInstance**
+    - 请求参数变更
+      - `+ bss_param`
+  - **ListInstancesDetails**
+    - 请求参数变更
+      - `+ offset`
+      - `+ limit`
+
+### HuaweiCloud SDK RDS
+
+- _新增特性_
+  - 支持接口`ListEngineFlavors`、`BatchDeleteManualBackup`、`DeleteJob`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK RocketMQ
+
+- _新增特性_
+  - 支持以下接口：
+    - `SendRocketMqDlqMessage`
+    - `ValidateRocketMqConsumedMessage`
+    - `ListRocketMqMigrationTask`
+    - `CreateRocketMqMigrationTask`
+    - `DeleteRocketMqMigrationTask`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK SMN
+
+- _新增特性_
+  - 支持以下接口：
+    - `UpdateSubscription`
+    - `ListLogtank`
+    - `CreateLogtank`
+    - `UpdateLogtank`
+    - `DeleteLogtank`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListTopicDetails**
+    - 响应参数变更
+      - `+ topic_id`
+  - **ListTopics**
+    - 请求参数变更
+      - `+ topic_id`
+    - 响应参数变更
+      - `+ topics.topic_id`
+  - **ListTopicAttributes**
+    - 响应参数变更
+      - `+ attributes.access_policy`
+      - `+ attributes.introduction`
+      - `- attributes.Version`
+      - `- attributes.Id`
+      - `- attributes.Statement`
+  - **AddSubscription**
+    - 请求参数变更
+      - `+ extension`
+
+### HuaweiCloud SDK VOD
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateAssetByFileUpload**
+    - 请求参数变更
+      - `+ review.interval`
+      - `+ review.politics`
+      - `+ review.terrorism`
+      - `+ review.porn`
+  - **PublishAssetFromObs**
+    - 请求参数变更
+      - `+ review.interval`
+      - `+ review.politics`
+      - `+ review.terrorism`
+      - `+ review.porn`
+  - **CreateAssetReviewTask**
+    - 请求参数变更
+      - `+ review.interval`
+      - `+ review.politics`
+      - `+ review.terrorism`
+      - `+ review.porn`
+    - 响应参数变更
+      - `+ review.interval`
+      - `+ review.politics`
+      - `+ review.terrorism`
+      - `+ review.porn`
+  - **UploadMetaDataByUrl**
+    - 请求参数变更
+      - `+ upload_metadatas.review.interval`
+      - `+ upload_metadatas.review.politics`
+      - `+ upload_metadatas.review.terrorism`
+      - `+ upload_metadatas.review.porn`
+
+### HuaweiCloud SDK VPC
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateVpcPeering**
+    - 请求参数变更
+      - `+ peering.description`
+
 # 3.1.41 2023-05-25
 
 ### HuaweiCloud SDK CBH

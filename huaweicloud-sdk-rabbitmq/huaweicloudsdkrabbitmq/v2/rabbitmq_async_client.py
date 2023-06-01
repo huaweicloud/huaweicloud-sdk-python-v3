@@ -66,7 +66,7 @@ class RabbitMQAsyncClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = []
 
         return self.call_api(
             resource_path='/v2/{project_id}/rabbitmq/{instance_id}/tags/action',
@@ -127,7 +127,7 @@ class RabbitMQAsyncClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = []
 
         return self.call_api(
             resource_path='/v2/{project_id}/instances/action',
@@ -184,7 +184,7 @@ class RabbitMQAsyncClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = []
 
         return self.call_api(
             resource_path='/v2/{project_id}/instances',
@@ -202,9 +202,9 @@ class RabbitMQAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def create_post_paid_instance_by_engine_async(self, request):
-        """创建实例(按需)
+        """创建实例
 
-        创建实例，该接口创建的实例为按需计费的方式。
+        创建实例，该接口支持创建按需[和包周期](tag:hws,hws_hk,ctc,cmcc)计费方式的实例。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -243,7 +243,7 @@ class RabbitMQAsyncClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = []
 
         return self.call_api(
             resource_path='/v2/{engine}/{project_id}/instances',
@@ -302,7 +302,7 @@ class RabbitMQAsyncClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = []
 
         return self.call_api(
             resource_path='/v2/{project_id}/instances/{instance_id}/tasks/{task_id}',
@@ -359,7 +359,7 @@ class RabbitMQAsyncClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = []
 
         return self.call_api(
             resource_path='/v2/{project_id}/instances/{instance_id}',
@@ -414,7 +414,7 @@ class RabbitMQAsyncClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = []
 
         return self.call_api(
             resource_path='/v2/available-zones',
@@ -479,7 +479,7 @@ class RabbitMQAsyncClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = []
 
         return self.call_api(
             resource_path='/v2/{project_id}/instances/{instance_id}/tasks',
@@ -538,7 +538,7 @@ class RabbitMQAsyncClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = []
 
         return self.call_api(
             resource_path='/v2/{engine}/products',
@@ -593,6 +593,10 @@ class RabbitMQAsyncClient(Client):
             query_params.append(('exact_match_name', local_var_params['exact_match_name']))
         if 'enterprise_project_id' in local_var_params:
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
 
         header_params = {}
 
@@ -607,7 +611,7 @@ class RabbitMQAsyncClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = []
 
         return self.call_api(
             resource_path='/v2/{project_id}/instances',
@@ -664,7 +668,7 @@ class RabbitMQAsyncClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = []
 
         return self.call_api(
             resource_path='/v2/{project_id}/instances/{instance_id}/rabbitmq/plugins',
@@ -721,7 +725,7 @@ class RabbitMQAsyncClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = []
 
         return self.call_api(
             resource_path='/v2/products',
@@ -780,7 +784,7 @@ class RabbitMQAsyncClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = []
 
         return self.call_api(
             resource_path='/v2/{project_id}/instances/{instance_id}/password',
@@ -843,7 +847,7 @@ class RabbitMQAsyncClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = []
 
         return self.call_api(
             resource_path='/v2/{engine}/{project_id}/instances/{instance_id}/extend',
@@ -904,7 +908,7 @@ class RabbitMQAsyncClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = []
 
         return self.call_api(
             resource_path='/v2/{project_id}/instances/{instance_id}/extend',
@@ -963,7 +967,7 @@ class RabbitMQAsyncClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = []
 
         return self.call_api(
             resource_path='/v2/{project_id}/instances/{instance_id}/tasks/{task_id}',
@@ -1024,7 +1028,7 @@ class RabbitMQAsyncClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = []
 
         return self.call_api(
             resource_path='/v2/{engine}/{project_id}/instances/{instance_id}/extend',
@@ -1081,7 +1085,7 @@ class RabbitMQAsyncClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = []
 
         return self.call_api(
             resource_path='/v2/{project_id}/instances/{instance_id}',
@@ -1144,7 +1148,7 @@ class RabbitMQAsyncClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = []
 
         return self.call_api(
             resource_path='/v2/{project_id}/instances/{instance_id}/extend',
@@ -1199,7 +1203,7 @@ class RabbitMQAsyncClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = []
 
         return self.call_api(
             resource_path='/v2/instances/maintain-windows',
@@ -1254,7 +1258,7 @@ class RabbitMQAsyncClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = []
 
         return self.call_api(
             resource_path='/v2/{project_id}/rabbitmq/tags',
@@ -1311,7 +1315,7 @@ class RabbitMQAsyncClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = []
 
         return self.call_api(
             resource_path='/v2/{project_id}/rabbitmq/{instance_id}/tags',
@@ -1370,7 +1374,7 @@ class RabbitMQAsyncClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = []
 
         return self.call_api(
             resource_path='/v2/{project_id}/instances/{instance_id}',
@@ -1429,7 +1433,7 @@ class RabbitMQAsyncClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = []
 
         return self.call_api(
             resource_path='/v2/{project_id}/instances/{instance_id}/rabbitmq/plugins',

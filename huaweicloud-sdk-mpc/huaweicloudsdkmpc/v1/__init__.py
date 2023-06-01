@@ -36,9 +36,6 @@ from huaweicloudsdkmpc.v1.model.create_animated_graphics_task_response import Cr
 from huaweicloudsdkmpc.v1.model.create_editing_job_req import CreateEditingJobReq
 from huaweicloudsdkmpc.v1.model.create_editing_job_request import CreateEditingJobRequest
 from huaweicloudsdkmpc.v1.model.create_editing_job_response import CreateEditingJobResponse
-from huaweicloudsdkmpc.v1.model.create_editing_jobs_req import CreateEditingJobsReq
-from huaweicloudsdkmpc.v1.model.create_editing_jobs_request import CreateEditingJobsRequest
-from huaweicloudsdkmpc.v1.model.create_editing_jobs_response import CreateEditingJobsResponse
 from huaweicloudsdkmpc.v1.model.create_encrypt_req import CreateEncryptReq
 from huaweicloudsdkmpc.v1.model.create_encrypt_task_request import CreateEncryptTaskRequest
 from huaweicloudsdkmpc.v1.model.create_encrypt_task_response import CreateEncryptTaskResponse
@@ -82,8 +79,6 @@ from huaweicloudsdkmpc.v1.model.delete_animated_graphics_task_request import Del
 from huaweicloudsdkmpc.v1.model.delete_animated_graphics_task_response import DeleteAnimatedGraphicsTaskResponse
 from huaweicloudsdkmpc.v1.model.delete_editing_job_request import DeleteEditingJobRequest
 from huaweicloudsdkmpc.v1.model.delete_editing_job_response import DeleteEditingJobResponse
-from huaweicloudsdkmpc.v1.model.delete_editing_jobs_request import DeleteEditingJobsRequest
-from huaweicloudsdkmpc.v1.model.delete_editing_jobs_response import DeleteEditingJobsResponse
 from huaweicloudsdkmpc.v1.model.delete_encrypt_task_request import DeleteEncryptTaskRequest
 from huaweicloudsdkmpc.v1.model.delete_encrypt_task_response import DeleteEncryptTaskResponse
 from huaweicloudsdkmpc.v1.model.delete_extract_task_request import DeleteExtractTaskRequest
@@ -115,12 +110,7 @@ from huaweicloudsdkmpc.v1.model.edit_audio_info import EditAudioInfo
 from huaweicloudsdkmpc.v1.model.edit_hls_info import EditHlsInfo
 from huaweicloudsdkmpc.v1.model.edit_setting import EditSetting
 from huaweicloudsdkmpc.v1.model.edit_video_info import EditVideoInfo
-from huaweicloudsdkmpc.v1.model.editing_audio_info import EditingAudioInfo
-from huaweicloudsdkmpc.v1.model.editing_input import EditingInput
 from huaweicloudsdkmpc.v1.model.editing_job import EditingJob
-from huaweicloudsdkmpc.v1.model.editing_output_file_info import EditingOutputFileInfo
-from huaweicloudsdkmpc.v1.model.editing_setting import EditingSetting
-from huaweicloudsdkmpc.v1.model.editing_video_info import EditingVideoInfo
 from huaweicloudsdkmpc.v1.model.encryption import Encryption
 from huaweicloudsdkmpc.v1.model.error_response import ErrorResponse
 from huaweicloudsdkmpc.v1.model.extract_task import ExtractTask
@@ -136,8 +126,6 @@ from huaweicloudsdkmpc.v1.model.list_animated_graphics_task_request import ListA
 from huaweicloudsdkmpc.v1.model.list_animated_graphics_task_response import ListAnimatedGraphicsTaskResponse
 from huaweicloudsdkmpc.v1.model.list_editing_job_request import ListEditingJobRequest
 from huaweicloudsdkmpc.v1.model.list_editing_job_response import ListEditingJobResponse
-from huaweicloudsdkmpc.v1.model.list_editing_jobs_request import ListEditingJobsRequest
-from huaweicloudsdkmpc.v1.model.list_editing_jobs_response import ListEditingJobsResponse
 from huaweicloudsdkmpc.v1.model.list_encrypt_task_request import ListEncryptTaskRequest
 from huaweicloudsdkmpc.v1.model.list_encrypt_task_response import ListEncryptTaskResponse
 from huaweicloudsdkmpc.v1.model.list_extract_task_request import ListExtractTaskRequest
@@ -207,7 +195,6 @@ from huaweicloudsdkmpc.v1.model.pic_info import PicInfo
 from huaweicloudsdkmpc.v1.model.quality_enhance_template import QualityEnhanceTemplate
 from huaweicloudsdkmpc.v1.model.quality_enhance_template_info import QualityEnhanceTemplateInfo
 from huaweicloudsdkmpc.v1.model.quality_enhance_video import QualityEnhanceVideo
-from huaweicloudsdkmpc.v1.model.query_editing_job import QueryEditingJob
 from huaweicloudsdkmpc.v1.model.query_trans_template import QueryTransTemplate
 from huaweicloudsdkmpc.v1.model.query_transcodings_task_response import QueryTranscodingsTaskResponse
 from huaweicloudsdkmpc.v1.model.remux_output_param import RemuxOutputParam

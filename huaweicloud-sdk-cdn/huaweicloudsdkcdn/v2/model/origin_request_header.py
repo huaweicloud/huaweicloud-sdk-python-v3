@@ -33,7 +33,7 @@ class OriginRequestHeader:
 
         The model defined in huaweicloud sdk
 
-        :param name: 设置回源请求头参数。格式要求：由数字，大小写字母，中划线组成，不能以数字或者中划线开头。
+        :param name: 设置回源请求头参数。格式要求：由数字，大小写字母，中划线组成，只能以字母开头。
         :type name: str
         :param value: 设置回源请求头参数的值。当为删除动作时，可不填。格式要求：长度1~512。不支持中文，不支持变量配置，如：$client_ip,$remote_port等。
         :type value: str
@@ -57,7 +57,7 @@ class OriginRequestHeader:
     def name(self):
         """Gets the name of this OriginRequestHeader.
 
-        设置回源请求头参数。格式要求：由数字，大小写字母，中划线组成，不能以数字或者中划线开头。
+        设置回源请求头参数。格式要求：由数字，大小写字母，中划线组成，只能以字母开头。
 
         :return: The name of this OriginRequestHeader.
         :rtype: str
@@ -68,7 +68,7 @@ class OriginRequestHeader:
     def name(self, name):
         """Sets the name of this OriginRequestHeader.
 
-        设置回源请求头参数。格式要求：由数字，大小写字母，中划线组成，不能以数字或者中划线开头。
+        设置回源请求头参数。格式要求：由数字，大小写字母，中划线组成，只能以字母开头。
 
         :param name: The name of this OriginRequestHeader.
         :type name: str

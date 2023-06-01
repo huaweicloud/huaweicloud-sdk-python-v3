@@ -21,7 +21,7 @@ class IssuedCouponQuota:
         'quota_type': 'int',
         'create_time': 'str',
         'last_update_time': 'str',
-        'quota_value': 'float',
+        'quota_value': 'decimal.Decimal',
         'quota_status': 'int',
         'balance': 'float',
         'measure_id': 'int',
@@ -68,7 +68,7 @@ class IssuedCouponQuota:
         :param last_update_time: 最后一次更新时间。 UTC时间，格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，如“2019-05-06T08:05:01Z”。
         :type last_update_time: str
         :param quota_value: 代金券额度的值，精确到小数点后2位。
-        :type quota_value: float
+        :type quota_value: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         :param quota_status: 代金券额度的状态： 0：正常3：失效（包括过期失效和人工设置失效）4：额度调整中（伙伴可以查看该额度，但不能使用该额度发放代金券）5：冻结6：回收
         :type quota_status: int
         :param balance: 剩余的代金券额度，精确到小数点后2位。
@@ -241,7 +241,7 @@ class IssuedCouponQuota:
         代金券额度的值，精确到小数点后2位。
 
         :return: The quota_value of this IssuedCouponQuota.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         return self._quota_value
 
@@ -252,7 +252,7 @@ class IssuedCouponQuota:
         代金券额度的值，精确到小数点后2位。
 
         :param quota_value: The quota_value of this IssuedCouponQuota.
-        :type quota_value: float
+        :type quota_value: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         self._quota_value = quota_value
 

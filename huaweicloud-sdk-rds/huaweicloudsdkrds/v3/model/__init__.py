@@ -29,6 +29,9 @@ from huaweicloudsdkrds.v3.model.backup_strategy import BackupStrategy
 from huaweicloudsdkrds.v3.model.backup_strategy_for_response import BackupStrategyForResponse
 from huaweicloudsdkrds.v3.model.batch_add_msdtcs_request import BatchAddMsdtcsRequest
 from huaweicloudsdkrds.v3.model.batch_add_msdtcs_response import BatchAddMsdtcsResponse
+from huaweicloudsdkrds.v3.model.batch_delete_backup_request_body import BatchDeleteBackupRequestBody
+from huaweicloudsdkrds.v3.model.batch_delete_manual_backup_request import BatchDeleteManualBackupRequest
+from huaweicloudsdkrds.v3.model.batch_delete_manual_backup_response import BatchDeleteManualBackupResponse
 from huaweicloudsdkrds.v3.model.batch_tag_action_add_request_body import BatchTagActionAddRequestBody
 from huaweicloudsdkrds.v3.model.batch_tag_action_del_request_body import BatchTagActionDelRequestBody
 from huaweicloudsdkrds.v3.model.batch_tag_add_action_request import BatchTagAddActionRequest
@@ -99,6 +102,7 @@ from huaweicloudsdkrds.v3.model.database_with_privilege_object import DatabaseWi
 from huaweicloudsdkrds.v3.model.datastore import Datastore
 from huaweicloudsdkrds.v3.model.db_user_privilege_request import DbUserPrivilegeRequest
 from huaweicloudsdkrds.v3.model.db_user_pwd_request import DbUserPwdRequest
+from huaweicloudsdkrds.v3.model.delete_backup_result import DeleteBackupResult
 from huaweicloudsdkrds.v3.model.delete_configuration_request import DeleteConfigurationRequest
 from huaweicloudsdkrds.v3.model.delete_configuration_response import DeleteConfigurationResponse
 from huaweicloudsdkrds.v3.model.delete_database_request import DeleteDatabaseRequest
@@ -107,6 +111,8 @@ from huaweicloudsdkrds.v3.model.delete_db_user_request import DeleteDbUserReques
 from huaweicloudsdkrds.v3.model.delete_db_user_response import DeleteDbUserResponse
 from huaweicloudsdkrds.v3.model.delete_instance_request import DeleteInstanceRequest
 from huaweicloudsdkrds.v3.model.delete_instance_response import DeleteInstanceResponse
+from huaweicloudsdkrds.v3.model.delete_job_request import DeleteJobRequest
+from huaweicloudsdkrds.v3.model.delete_job_response import DeleteJobResponse
 from huaweicloudsdkrds.v3.model.delete_manual_backup_request import DeleteManualBackupRequest
 from huaweicloudsdkrds.v3.model.delete_manual_backup_response import DeleteManualBackupResponse
 from huaweicloudsdkrds.v3.model.delete_postgresql_database_request import DeletePostgresqlDatabaseRequest
@@ -128,6 +134,7 @@ from huaweicloudsdkrds.v3.model.drop_database_v3_req import DropDatabaseV3Req
 from huaweicloudsdkrds.v3.model.dss_pool_info import DssPoolInfo
 from huaweicloudsdkrds.v3.model.enable_configuration_request import EnableConfigurationRequest
 from huaweicloudsdkrds.v3.model.enable_configuration_response import EnableConfigurationResponse
+from huaweicloudsdkrds.v3.model.engine_flavor_data import EngineFlavorData
 from huaweicloudsdkrds.v3.model.enlarge_volume import EnlargeVolume
 from huaweicloudsdkrds.v3.model.enlarge_volume_object import EnlargeVolumeObject
 from huaweicloudsdkrds.v3.model.error_log import ErrorLog
@@ -183,6 +190,8 @@ from huaweicloudsdkrds.v3.model.list_db_users_request import ListDbUsersRequest
 from huaweicloudsdkrds.v3.model.list_db_users_response import ListDbUsersResponse
 from huaweicloudsdkrds.v3.model.list_dr_relations_request import ListDrRelationsRequest
 from huaweicloudsdkrds.v3.model.list_dr_relations_response import ListDrRelationsResponse
+from huaweicloudsdkrds.v3.model.list_engine_flavors_request import ListEngineFlavorsRequest
+from huaweicloudsdkrds.v3.model.list_engine_flavors_response import ListEngineFlavorsResponse
 from huaweicloudsdkrds.v3.model.list_error_logs_new_request import ListErrorLogsNewRequest
 from huaweicloudsdkrds.v3.model.list_error_logs_new_response import ListErrorLogsNewResponse
 from huaweicloudsdkrds.v3.model.list_error_logs_request import ListErrorLogsRequest

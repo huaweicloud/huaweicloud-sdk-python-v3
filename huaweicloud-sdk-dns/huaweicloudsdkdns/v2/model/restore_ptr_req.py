@@ -17,7 +17,7 @@ class RestorePtrReq:
     sensitive_list = []
 
     openapi_types = {
-        'ptrdname': 'str'
+        'ptrdname': 'object'
     }
 
     attribute_map = {
@@ -30,7 +30,7 @@ class RestorePtrReq:
         The model defined in huaweicloud sdk
 
         :param ptrdname: PTR记录对应的域名。  此处值为null。
-        :type ptrdname: str
+        :type ptrdname: object
         """
         
         
@@ -47,7 +47,7 @@ class RestorePtrReq:
         PTR记录对应的域名。  此处值为null。
 
         :return: The ptrdname of this RestorePtrReq.
-        :rtype: str
+        :rtype: object
         """
         return self._ptrdname
 
@@ -58,7 +58,7 @@ class RestorePtrReq:
         PTR记录对应的域名。  此处值为null。
 
         :param ptrdname: The ptrdname of this RestorePtrReq.
-        :type ptrdname: str
+        :type ptrdname: object
         """
         self._ptrdname = ptrdname
 

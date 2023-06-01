@@ -31,7 +31,7 @@ class UpdateApplicationEndpointRequest:
 
         The model defined in huaweicloud sdk
 
-        :param endpoint_urn: Endpoint的唯一资源标识，可通过[查询Application的Endpoint列表](https://support.huaweicloud.com/api-smn/ListApplicationEndpoints.html)获取该标识。
+        :param endpoint_urn: Endpoint的唯一资源标识，可通过[查询Application的Endpoint列表](smn_api_58004.xml)获取该标识。
         :type endpoint_urn: str
         :param body: Body of the UpdateApplicationEndpointRequest
         :type body: :class:`huaweicloudsdksmn.v2.UpdateApplicationEndpointRequestBody`
@@ -51,7 +51,7 @@ class UpdateApplicationEndpointRequest:
     def endpoint_urn(self):
         """Gets the endpoint_urn of this UpdateApplicationEndpointRequest.
 
-        Endpoint的唯一资源标识，可通过[查询Application的Endpoint列表](https://support.huaweicloud.com/api-smn/ListApplicationEndpoints.html)获取该标识。
+        Endpoint的唯一资源标识，可通过[查询Application的Endpoint列表](smn_api_58004.xml)获取该标识。
 
         :return: The endpoint_urn of this UpdateApplicationEndpointRequest.
         :rtype: str
@@ -62,7 +62,7 @@ class UpdateApplicationEndpointRequest:
     def endpoint_urn(self, endpoint_urn):
         """Sets the endpoint_urn of this UpdateApplicationEndpointRequest.
 
-        Endpoint的唯一资源标识，可通过[查询Application的Endpoint列表](https://support.huaweicloud.com/api-smn/ListApplicationEndpoints.html)获取该标识。
+        Endpoint的唯一资源标识，可通过[查询Application的Endpoint列表](smn_api_58004.xml)获取该标识。
 
         :param endpoint_urn: The endpoint_urn of this UpdateApplicationEndpointRequest.
         :type endpoint_urn: str

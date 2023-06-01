@@ -26,7 +26,7 @@ class GaussDBRegion:
     CN_NORTH_9 = Region("cn-north-9",
                         "https://gaussdb.cn-north-9.myhuaweicloud.com")
     TR_WEST_1 = Region("tr-west-1",
-                        "https://gaussdb.tr-west-1.myhuaweicloud.com")
+                        "https://gaussdbformysql.tr-west-1.myhuaweicloud.com")
     AP_SOUTHEAST_4 = Region("ap-southeast-4",
                         "https://gaussdb.ap-southeast-4.myhuaweicloud.com")
     SA_BRAZIL_1 = Region("sa-brazil-1",

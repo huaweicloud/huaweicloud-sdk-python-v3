@@ -74,7 +74,7 @@ class DeletePrivateZoneResponse(SdkResponse):
         :type ttl: int
         :param serial: 该zone下SOA记录中用于标识zone文件变更的序列值，用于主从节点同步。
         :type serial: int
-        :param status: 状态
+        :param status: 资源状态
         :type status: str
         :param record_num: 该zone下的recordset个数。
         :type record_num: int
@@ -305,7 +305,7 @@ class DeletePrivateZoneResponse(SdkResponse):
     def status(self):
         """Gets the status of this DeletePrivateZoneResponse.
 
-        状态
+        资源状态
 
         :return: The status of this DeletePrivateZoneResponse.
         :rtype: str
@@ -316,7 +316,7 @@ class DeletePrivateZoneResponse(SdkResponse):
     def status(self, status):
         """Sets the status of this DeletePrivateZoneResponse.
 
-        状态
+        资源状态
 
         :param status: The status of this DeletePrivateZoneResponse.
         :type status: str

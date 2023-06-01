@@ -35,13 +35,13 @@ class RequestLimitRules:
 
         The model defined in huaweicloud sdk
 
-        :param status: 配置开关（on/off）
+        :param status: 状态, on：开启，off：关闭。
         :type status: str
-        :param type: 限速方式，目前只支持按流量大小限速，size:大小。
+        :param type: 限速方式，目前只支持按传送流量限速，当单个HTTP请求流量达到设定的值，开始限制访问速度。  &gt; size:按传送流量限速。
         :type type: str
-        :param limit_rate_after: 限速条件,type&#x3D;size,limit_rate_after&#x3D;50表示从传输表示传输50个字节后开始限速且限速值为limit_rate_value， 单位byte，取值范围：0-1073741824。
+        :param limit_rate_after: 限速条件,type&#x3D;size,limit_rate_after&#x3D;50表示从传输传输50个字节后开始限速且限速值为limit_rate_value，  &gt; 单位byte，取值范围：0-1073741824。
         :type limit_rate_after: int
-        :param limit_rate_value: 限速值,单位Bps，取值范围 0-104857600
+        :param limit_rate_value: 限速值,设置开始限速后的最大访问速度。  &gt; 单位Bps，取值范围 0-104857600
         :type limit_rate_value: int
         """
         
@@ -64,7 +64,7 @@ class RequestLimitRules:
     def status(self):
         """Gets the status of this RequestLimitRules.
 
-        配置开关（on/off）
+        状态, on：开启，off：关闭。
 
         :return: The status of this RequestLimitRules.
         :rtype: str
@@ -75,7 +75,7 @@ class RequestLimitRules:
     def status(self, status):
         """Sets the status of this RequestLimitRules.
 
-        配置开关（on/off）
+        状态, on：开启，off：关闭。
 
         :param status: The status of this RequestLimitRules.
         :type status: str
@@ -86,7 +86,7 @@ class RequestLimitRules:
     def type(self):
         """Gets the type of this RequestLimitRules.
 
-        限速方式，目前只支持按流量大小限速，size:大小。
+        限速方式，目前只支持按传送流量限速，当单个HTTP请求流量达到设定的值，开始限制访问速度。  > size:按传送流量限速。
 
         :return: The type of this RequestLimitRules.
         :rtype: str
@@ -97,7 +97,7 @@ class RequestLimitRules:
     def type(self, type):
         """Sets the type of this RequestLimitRules.
 
-        限速方式，目前只支持按流量大小限速，size:大小。
+        限速方式，目前只支持按传送流量限速，当单个HTTP请求流量达到设定的值，开始限制访问速度。  > size:按传送流量限速。
 
         :param type: The type of this RequestLimitRules.
         :type type: str
@@ -108,7 +108,7 @@ class RequestLimitRules:
     def limit_rate_after(self):
         """Gets the limit_rate_after of this RequestLimitRules.
 
-        限速条件,type=size,limit_rate_after=50表示从传输表示传输50个字节后开始限速且限速值为limit_rate_value， 单位byte，取值范围：0-1073741824。
+        限速条件,type=size,limit_rate_after=50表示从传输传输50个字节后开始限速且限速值为limit_rate_value，  > 单位byte，取值范围：0-1073741824。
 
         :return: The limit_rate_after of this RequestLimitRules.
         :rtype: int
@@ -119,7 +119,7 @@ class RequestLimitRules:
     def limit_rate_after(self, limit_rate_after):
         """Sets the limit_rate_after of this RequestLimitRules.
 
-        限速条件,type=size,limit_rate_after=50表示从传输表示传输50个字节后开始限速且限速值为limit_rate_value， 单位byte，取值范围：0-1073741824。
+        限速条件,type=size,limit_rate_after=50表示从传输传输50个字节后开始限速且限速值为limit_rate_value，  > 单位byte，取值范围：0-1073741824。
 
         :param limit_rate_after: The limit_rate_after of this RequestLimitRules.
         :type limit_rate_after: int
@@ -130,7 +130,7 @@ class RequestLimitRules:
     def limit_rate_value(self):
         """Gets the limit_rate_value of this RequestLimitRules.
 
-        限速值,单位Bps，取值范围 0-104857600
+        限速值,设置开始限速后的最大访问速度。  > 单位Bps，取值范围 0-104857600
 
         :return: The limit_rate_value of this RequestLimitRules.
         :rtype: int
@@ -141,7 +141,7 @@ class RequestLimitRules:
     def limit_rate_value(self, limit_rate_value):
         """Sets the limit_rate_value of this RequestLimitRules.
 
-        限速值,单位Bps，取值范围 0-104857600
+        限速值,设置开始限速后的最大访问速度。  > 单位Bps，取值范围 0-104857600
 
         :param limit_rate_value: The limit_rate_value of this RequestLimitRules.
         :type limit_rate_value: int

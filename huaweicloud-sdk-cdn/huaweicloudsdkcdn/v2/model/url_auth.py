@@ -53,7 +53,7 @@ class UrlAuth:
         :type expire_time: int
         :param sign_method: 加密的算法 可选择md5或sha256。
         :type sign_method: str
-        :param match_type: 鉴权范围，目前仅支持配置所有文件参与鉴权。all：所有文件
+        :param match_type: 鉴权范围，目前仅支持配置所有文件参与鉴权，all：所有文件。
         :type match_type: str
         :param key: 鉴权KEY 由6-32位大小写字母、数字构成。
         :type key: str
@@ -185,7 +185,7 @@ class UrlAuth:
     def match_type(self):
         """Gets the match_type of this UrlAuth.
 
-        鉴权范围，目前仅支持配置所有文件参与鉴权。all：所有文件
+        鉴权范围，目前仅支持配置所有文件参与鉴权，all：所有文件。
 
         :return: The match_type of this UrlAuth.
         :rtype: str
@@ -196,7 +196,7 @@ class UrlAuth:
     def match_type(self, match_type):
         """Sets the match_type of this UrlAuth.
 
-        鉴权范围，目前仅支持配置所有文件参与鉴权。all：所有文件
+        鉴权范围，目前仅支持配置所有文件参与鉴权，all：所有文件。
 
         :param match_type: The match_type of this UrlAuth.
         :type match_type: str

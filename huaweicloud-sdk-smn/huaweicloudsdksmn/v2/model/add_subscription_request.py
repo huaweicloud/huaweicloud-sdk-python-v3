@@ -31,7 +31,7 @@ class AddSubscriptionRequest:
 
         The model defined in huaweicloud sdk
 
-        :param topic_urn: Topic的唯一的资源标识，可通过[查询主题列表](https://support.huaweicloud.com/api-smn/smn_api_51004.html)获取该标识。
+        :param topic_urn: Topic的唯一的资源标识，可通过[查询主题列表](smn_api_51004.xml)获取该标识。
         :type topic_urn: str
         :param body: Body of the AddSubscriptionRequest
         :type body: :class:`huaweicloudsdksmn.v2.AddSubscriptionRequestBody`
@@ -51,7 +51,7 @@ class AddSubscriptionRequest:
     def topic_urn(self):
         """Gets the topic_urn of this AddSubscriptionRequest.
 
-        Topic的唯一的资源标识，可通过[查询主题列表](https://support.huaweicloud.com/api-smn/smn_api_51004.html)获取该标识。
+        Topic的唯一的资源标识，可通过[查询主题列表](smn_api_51004.xml)获取该标识。
 
         :return: The topic_urn of this AddSubscriptionRequest.
         :rtype: str
@@ -62,7 +62,7 @@ class AddSubscriptionRequest:
     def topic_urn(self, topic_urn):
         """Sets the topic_urn of this AddSubscriptionRequest.
 
-        Topic的唯一的资源标识，可通过[查询主题列表](https://support.huaweicloud.com/api-smn/smn_api_51004.html)获取该标识。
+        Topic的唯一的资源标识，可通过[查询主题列表](smn_api_51004.xml)获取该标识。
 
         :param topic_urn: The topic_urn of this AddSubscriptionRequest.
         :type topic_urn: str

@@ -23,17 +23,17 @@ class BillSumRecordInfoV2:
         'service_type_name': 'str',
         'resource_type_name': 'str',
         'charging_mode': 'int',
-        'official_amount': 'float',
-        'official_discount_amount': 'float',
-        'truncated_amount': 'float',
-        'consume_amount': 'float',
-        'coupon_amount': 'float',
-        'flexipurchase_coupon_amount': 'float',
-        'stored_value_card_amount': 'float',
-        'debt_amount': 'float',
-        'writeoff_amount': 'float',
-        'cash_amount': 'float',
-        'credit_amount': 'float',
+        'official_amount': 'decimal.Decimal',
+        'official_discount_amount': 'decimal.Decimal',
+        'truncated_amount': 'decimal.Decimal',
+        'consume_amount': 'decimal.Decimal',
+        'coupon_amount': 'decimal.Decimal',
+        'flexipurchase_coupon_amount': 'decimal.Decimal',
+        'stored_value_card_amount': 'decimal.Decimal',
+        'debt_amount': 'decimal.Decimal',
+        'writeoff_amount': 'decimal.Decimal',
+        'cash_amount': 'decimal.Decimal',
+        'credit_amount': 'decimal.Decimal',
         'measure_id': 'int',
         'bill_type': 'int',
         'customer_id': 'str'
@@ -80,27 +80,27 @@ class BillSumRecordInfoV2:
         :param charging_mode: 计费模式。 1：包年/包月3：按需10：预留实例
         :type charging_mode: int
         :param official_amount: 官网价。
-        :type official_amount: float
+        :type official_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         :param official_discount_amount: 折扣金额。
-        :type official_discount_amount: float
+        :type official_discount_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         :param truncated_amount: 抹零金额。
-        :type truncated_amount: float
+        :type truncated_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         :param consume_amount: 应付金额。 应付金额&#x3D;官网价-折扣金额-抹零金额
-        :type consume_amount: float
+        :type consume_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         :param coupon_amount: 代金券金额。
-        :type coupon_amount: float
+        :type coupon_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         :param flexipurchase_coupon_amount: 现金券金额，预留。
-        :type flexipurchase_coupon_amount: float
+        :type flexipurchase_coupon_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         :param stored_value_card_amount: 储值卡金额，预留。
-        :type stored_value_card_amount: float
+        :type stored_value_card_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         :param debt_amount: 欠费金额。即伙伴从客户账户扣费时，客户账户金额不足，欠费的金额。
-        :type debt_amount: float
+        :type debt_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         :param writeoff_amount: 欠费核销金额。
-        :type writeoff_amount: float
+        :type writeoff_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         :param cash_amount: 现金账户金额。
-        :type cash_amount: float
+        :type cash_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         :param credit_amount: 信用账户金额。
-        :type credit_amount: float
+        :type credit_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         :param measure_id: 金额单位。 1：元
         :type measure_id: int
         :param bill_type: 账单类型。 1：消费2：退款3：调账
@@ -313,7 +313,7 @@ class BillSumRecordInfoV2:
         官网价。
 
         :return: The official_amount of this BillSumRecordInfoV2.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         return self._official_amount
 
@@ -324,7 +324,7 @@ class BillSumRecordInfoV2:
         官网价。
 
         :param official_amount: The official_amount of this BillSumRecordInfoV2.
-        :type official_amount: float
+        :type official_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         self._official_amount = official_amount
 
@@ -335,7 +335,7 @@ class BillSumRecordInfoV2:
         折扣金额。
 
         :return: The official_discount_amount of this BillSumRecordInfoV2.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         return self._official_discount_amount
 
@@ -346,7 +346,7 @@ class BillSumRecordInfoV2:
         折扣金额。
 
         :param official_discount_amount: The official_discount_amount of this BillSumRecordInfoV2.
-        :type official_discount_amount: float
+        :type official_discount_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         self._official_discount_amount = official_discount_amount
 
@@ -357,7 +357,7 @@ class BillSumRecordInfoV2:
         抹零金额。
 
         :return: The truncated_amount of this BillSumRecordInfoV2.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         return self._truncated_amount
 
@@ -368,7 +368,7 @@ class BillSumRecordInfoV2:
         抹零金额。
 
         :param truncated_amount: The truncated_amount of this BillSumRecordInfoV2.
-        :type truncated_amount: float
+        :type truncated_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         self._truncated_amount = truncated_amount
 
@@ -379,7 +379,7 @@ class BillSumRecordInfoV2:
         应付金额。 应付金额=官网价-折扣金额-抹零金额
 
         :return: The consume_amount of this BillSumRecordInfoV2.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         return self._consume_amount
 
@@ -390,7 +390,7 @@ class BillSumRecordInfoV2:
         应付金额。 应付金额=官网价-折扣金额-抹零金额
 
         :param consume_amount: The consume_amount of this BillSumRecordInfoV2.
-        :type consume_amount: float
+        :type consume_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         self._consume_amount = consume_amount
 
@@ -401,7 +401,7 @@ class BillSumRecordInfoV2:
         代金券金额。
 
         :return: The coupon_amount of this BillSumRecordInfoV2.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         return self._coupon_amount
 
@@ -412,7 +412,7 @@ class BillSumRecordInfoV2:
         代金券金额。
 
         :param coupon_amount: The coupon_amount of this BillSumRecordInfoV2.
-        :type coupon_amount: float
+        :type coupon_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         self._coupon_amount = coupon_amount
 
@@ -423,7 +423,7 @@ class BillSumRecordInfoV2:
         现金券金额，预留。
 
         :return: The flexipurchase_coupon_amount of this BillSumRecordInfoV2.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         return self._flexipurchase_coupon_amount
 
@@ -434,7 +434,7 @@ class BillSumRecordInfoV2:
         现金券金额，预留。
 
         :param flexipurchase_coupon_amount: The flexipurchase_coupon_amount of this BillSumRecordInfoV2.
-        :type flexipurchase_coupon_amount: float
+        :type flexipurchase_coupon_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         self._flexipurchase_coupon_amount = flexipurchase_coupon_amount
 
@@ -445,7 +445,7 @@ class BillSumRecordInfoV2:
         储值卡金额，预留。
 
         :return: The stored_value_card_amount of this BillSumRecordInfoV2.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         return self._stored_value_card_amount
 
@@ -456,7 +456,7 @@ class BillSumRecordInfoV2:
         储值卡金额，预留。
 
         :param stored_value_card_amount: The stored_value_card_amount of this BillSumRecordInfoV2.
-        :type stored_value_card_amount: float
+        :type stored_value_card_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         self._stored_value_card_amount = stored_value_card_amount
 
@@ -467,7 +467,7 @@ class BillSumRecordInfoV2:
         欠费金额。即伙伴从客户账户扣费时，客户账户金额不足，欠费的金额。
 
         :return: The debt_amount of this BillSumRecordInfoV2.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         return self._debt_amount
 
@@ -478,7 +478,7 @@ class BillSumRecordInfoV2:
         欠费金额。即伙伴从客户账户扣费时，客户账户金额不足，欠费的金额。
 
         :param debt_amount: The debt_amount of this BillSumRecordInfoV2.
-        :type debt_amount: float
+        :type debt_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         self._debt_amount = debt_amount
 
@@ -489,7 +489,7 @@ class BillSumRecordInfoV2:
         欠费核销金额。
 
         :return: The writeoff_amount of this BillSumRecordInfoV2.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         return self._writeoff_amount
 
@@ -500,7 +500,7 @@ class BillSumRecordInfoV2:
         欠费核销金额。
 
         :param writeoff_amount: The writeoff_amount of this BillSumRecordInfoV2.
-        :type writeoff_amount: float
+        :type writeoff_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         self._writeoff_amount = writeoff_amount
 
@@ -511,7 +511,7 @@ class BillSumRecordInfoV2:
         现金账户金额。
 
         :return: The cash_amount of this BillSumRecordInfoV2.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         return self._cash_amount
 
@@ -522,7 +522,7 @@ class BillSumRecordInfoV2:
         现金账户金额。
 
         :param cash_amount: The cash_amount of this BillSumRecordInfoV2.
-        :type cash_amount: float
+        :type cash_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         self._cash_amount = cash_amount
 
@@ -533,7 +533,7 @@ class BillSumRecordInfoV2:
         信用账户金额。
 
         :return: The credit_amount of this BillSumRecordInfoV2.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         return self._credit_amount
 
@@ -544,7 +544,7 @@ class BillSumRecordInfoV2:
         信用账户金额。
 
         :param credit_amount: The credit_amount of this BillSumRecordInfoV2.
-        :type credit_amount: float
+        :type credit_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         self._credit_amount = credit_amount
 

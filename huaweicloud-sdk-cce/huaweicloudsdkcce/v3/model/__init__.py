@@ -11,6 +11,7 @@ from huaweicloudsdkcce.v3.model.add_node_request import AddNodeRequest
 from huaweicloudsdkcce.v3.model.add_node_response import AddNodeResponse
 from huaweicloudsdkcce.v3.model.addon_instance import AddonInstance
 from huaweicloudsdkcce.v3.model.addon_instance_status import AddonInstanceStatus
+from huaweicloudsdkcce.v3.model.addon_metadata import AddonMetadata
 from huaweicloudsdkcce.v3.model.addon_template import AddonTemplate
 from huaweicloudsdkcce.v3.model.authenticating_proxy import AuthenticatingProxy
 from huaweicloudsdkcce.v3.model.authentication import Authentication

@@ -28,11 +28,11 @@ class L7Policy:
         'project_id': 'str',
         'provisioning_status': 'str',
         'redirect_pool_id': 'str',
-        'redirect_pools_config': 'list[CreateRedirectPoolsConfig]',
         'redirect_listener_id': 'str',
         'redirect_url': 'str',
         'rules': 'list[RuleRef]',
         'redirect_url_config': 'RedirectUrlConfig',
+        'redirect_pools_extend_config': 'RedirectPoolsExtendConfig',
         'fixed_response_config': 'FixtedResponseConfig',
         'created_at': 'str',
         'updated_at': 'str'
@@ -50,17 +50,17 @@ class L7Policy:
         'project_id': 'project_id',
         'provisioning_status': 'provisioning_status',
         'redirect_pool_id': 'redirect_pool_id',
-        'redirect_pools_config': 'redirect_pools_config',
         'redirect_listener_id': 'redirect_listener_id',
         'redirect_url': 'redirect_url',
         'rules': 'rules',
         'redirect_url_config': 'redirect_url_config',
+        'redirect_pools_extend_config': 'redirect_pools_extend_config',
         'fixed_response_config': 'fixed_response_config',
         'created_at': 'created_at',
         'updated_at': 'updated_at'
     }
 
-    def __init__(self, action=None, admin_state_up=None, description=None, id=None, listener_id=None, name=None, position=None, priority=None, project_id=None, provisioning_status=None, redirect_pool_id=None, redirect_pools_config=None, redirect_listener_id=None, redirect_url=None, rules=None, redirect_url_config=None, fixed_response_config=None, created_at=None, updated_at=None):
+    def __init__(self, action=None, admin_state_up=None, description=None, id=None, listener_id=None, name=None, position=None, priority=None, project_id=None, provisioning_status=None, redirect_pool_id=None, redirect_listener_id=None, redirect_url=None, rules=None, redirect_url_config=None, redirect_pools_extend_config=None, fixed_response_config=None, created_at=None, updated_at=None):
         """L7Policy
 
         The model defined in huaweicloud sdk
@@ -85,10 +85,8 @@ class L7Policy:
         :type project_id: str
         :param provisioning_status: 转发策略的配置状态。  取值范围： - ACTIVE: 默认值，表示正常。 [- ERROR: 表示当前策略与同一监听器下的其他策略存在相同的规则配置。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,fcs)
         :type provisioning_status: str
-        :param redirect_pool_id: 转发到pool的ID。当action为REDIRECT_TO_POOL时生效。 若同时指定redirect_pools_config和redirect_pool_id，按redirect_pools_config生效。
+        :param redirect_pool_id: 转发到pool的ID。当action为REDIRECT_TO_POOL时生效。
         :type redirect_pool_id: str
-        :param redirect_pools_config: 转发到后端主机组的配置。当action为REDIRECT_TO_POOL时生效。
-        :type redirect_pools_config: list[:class:`huaweicloudsdkelb.v3.CreateRedirectPoolsConfig`]
         :param redirect_listener_id: 转发到的listener的ID，当action为REDIRECT_TO_LISTENER时必选。  使用说明： - 只支持protocol为HTTPS/TERMINATED_HTTPS的listener。 - 不能指定为其他loadbalancer下的listener。 - 当action为REDIRECT_TO_POOL时，创建或更新时不能传入该参数。
         :type redirect_listener_id: str
         :param redirect_url: 转发到的url。必须满足格式: protocol://host:port/path?query。  不支持该字段，请勿使用。
@@ -97,6 +95,8 @@ class L7Policy:
         :type rules: list[:class:`huaweicloudsdkelb.v3.RuleRef`]
         :param redirect_url_config: 
         :type redirect_url_config: :class:`huaweicloudsdkelb.v3.RedirectUrlConfig`
+        :param redirect_pools_extend_config: 
+        :type redirect_pools_extend_config: :class:`huaweicloudsdkelb.v3.RedirectPoolsExtendConfig`
         :param fixed_response_config: 
         :type fixed_response_config: :class:`huaweicloudsdkelb.v3.FixtedResponseConfig`
         :param created_at: 创建时间。格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，UTC时区。  [注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。 ](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,fcs,dt,hk_tm)
@@ -118,11 +118,11 @@ class L7Policy:
         self._project_id = None
         self._provisioning_status = None
         self._redirect_pool_id = None
-        self._redirect_pools_config = None
         self._redirect_listener_id = None
         self._redirect_url = None
         self._rules = None
         self._redirect_url_config = None
+        self._redirect_pools_extend_config = None
         self._fixed_response_config = None
         self._created_at = None
         self._updated_at = None
@@ -140,11 +140,12 @@ class L7Policy:
         self.project_id = project_id
         self.provisioning_status = provisioning_status
         self.redirect_pool_id = redirect_pool_id
-        self.redirect_pools_config = redirect_pools_config
         self.redirect_listener_id = redirect_listener_id
         self.redirect_url = redirect_url
         self.rules = rules
         self.redirect_url_config = redirect_url_config
+        if redirect_pools_extend_config is not None:
+            self.redirect_pools_extend_config = redirect_pools_extend_config
         self.fixed_response_config = fixed_response_config
         if created_at is not None:
             self.created_at = created_at
@@ -375,7 +376,7 @@ class L7Policy:
     def redirect_pool_id(self):
         """Gets the redirect_pool_id of this L7Policy.
 
-        转发到pool的ID。当action为REDIRECT_TO_POOL时生效。 若同时指定redirect_pools_config和redirect_pool_id，按redirect_pools_config生效。
+        转发到pool的ID。当action为REDIRECT_TO_POOL时生效。
 
         :return: The redirect_pool_id of this L7Policy.
         :rtype: str
@@ -386,34 +387,12 @@ class L7Policy:
     def redirect_pool_id(self, redirect_pool_id):
         """Sets the redirect_pool_id of this L7Policy.
 
-        转发到pool的ID。当action为REDIRECT_TO_POOL时生效。 若同时指定redirect_pools_config和redirect_pool_id，按redirect_pools_config生效。
+        转发到pool的ID。当action为REDIRECT_TO_POOL时生效。
 
         :param redirect_pool_id: The redirect_pool_id of this L7Policy.
         :type redirect_pool_id: str
         """
         self._redirect_pool_id = redirect_pool_id
-
-    @property
-    def redirect_pools_config(self):
-        """Gets the redirect_pools_config of this L7Policy.
-
-        转发到后端主机组的配置。当action为REDIRECT_TO_POOL时生效。
-
-        :return: The redirect_pools_config of this L7Policy.
-        :rtype: list[:class:`huaweicloudsdkelb.v3.CreateRedirectPoolsConfig`]
-        """
-        return self._redirect_pools_config
-
-    @redirect_pools_config.setter
-    def redirect_pools_config(self, redirect_pools_config):
-        """Sets the redirect_pools_config of this L7Policy.
-
-        转发到后端主机组的配置。当action为REDIRECT_TO_POOL时生效。
-
-        :param redirect_pools_config: The redirect_pools_config of this L7Policy.
-        :type redirect_pools_config: list[:class:`huaweicloudsdkelb.v3.CreateRedirectPoolsConfig`]
-        """
-        self._redirect_pools_config = redirect_pools_config
 
     @property
     def redirect_listener_id(self):
@@ -498,6 +477,24 @@ class L7Policy:
         :type redirect_url_config: :class:`huaweicloudsdkelb.v3.RedirectUrlConfig`
         """
         self._redirect_url_config = redirect_url_config
+
+    @property
+    def redirect_pools_extend_config(self):
+        """Gets the redirect_pools_extend_config of this L7Policy.
+
+        :return: The redirect_pools_extend_config of this L7Policy.
+        :rtype: :class:`huaweicloudsdkelb.v3.RedirectPoolsExtendConfig`
+        """
+        return self._redirect_pools_extend_config
+
+    @redirect_pools_extend_config.setter
+    def redirect_pools_extend_config(self, redirect_pools_extend_config):
+        """Sets the redirect_pools_extend_config of this L7Policy.
+
+        :param redirect_pools_extend_config: The redirect_pools_extend_config of this L7Policy.
+        :type redirect_pools_extend_config: :class:`huaweicloudsdkelb.v3.RedirectPoolsExtendConfig`
+        """
+        self._redirect_pools_extend_config = redirect_pools_extend_config
 
     @property
     def fixed_response_config(self):

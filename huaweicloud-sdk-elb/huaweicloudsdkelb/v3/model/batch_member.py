@@ -65,7 +65,7 @@ class BatchMember:
         :type admin_state_up: bool
         :param subnet_cidr_id: 后端云服务器所在子网的IPv4子网ID或IPv6子网ID。  若所属的LB的跨VPC后端转发特性已开启，则该字段可以不传，表示添加跨VPC的后端服务器。 此时address必须为IPv4地址，所在的pool的协议必须为TCP/HTTP/HTTPS。  使用说明： - 该子网和关联的负载均衡器的子网必须在同一VPC下。  [不支持IPv6，请勿设置为IPv6子网ID。](tag:dt,dt_test)
         :type subnet_cidr_id: str
-        :param protocol_port: 后端服务器业务端口号。
+        :param protocol_port: 后端服务器业务端口。 &gt;在开启端口透传的pool下创建member传该字段不生效，可不传该字段。
         :type protocol_port: int
         :param weight: 后端云服务器的权重，请求将根据pool配置的负载均衡算法和后端云服务器的权重进行负载分发。 权重值越大，分发的请求越多。权重为0的后端不再接受新的请求。  取值：0-100，默认1。  使用说明： - 若所在pool的lb_algorithm取值为SOURCE_IP，该字段无效。
         :type weight: int
@@ -236,7 +236,7 @@ class BatchMember:
     def protocol_port(self):
         """Gets the protocol_port of this BatchMember.
 
-        后端服务器业务端口号。
+        后端服务器业务端口。 >在开启端口透传的pool下创建member传该字段不生效，可不传该字段。
 
         :return: The protocol_port of this BatchMember.
         :rtype: int
@@ -247,7 +247,7 @@ class BatchMember:
     def protocol_port(self, protocol_port):
         """Sets the protocol_port of this BatchMember.
 
-        后端服务器业务端口号。
+        后端服务器业务端口。 >在开启端口透传的pool下创建member传该字段不生效，可不传该字段。
 
         :param protocol_port: The protocol_port of this BatchMember.
         :type protocol_port: int

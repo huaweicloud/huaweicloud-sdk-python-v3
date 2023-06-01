@@ -23,7 +23,7 @@ class CouponRecordV2:
         'quota_type': 'int',
         'coupon_id': 'str',
         'customer_id': 'str',
-        'operation_amount': 'float',
+        'operation_amount': 'decimal.Decimal',
         'operation_time': 'str',
         'result': 'str',
         'remark': 'str'
@@ -60,7 +60,7 @@ class CouponRecordV2:
         :param customer_id: 客户账号ID。
         :type customer_id: str
         :param operation_amount: 操作的面额值。单位：元。 发放时，等于面额值；回收时，指每次回收的具体值。
-        :type operation_amount: float
+        :type operation_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         :param operation_time: 操作时间。
         :type operation_time: str
         :param result: 操作结果。 0：成功-1：失败
@@ -243,7 +243,7 @@ class CouponRecordV2:
         操作的面额值。单位：元。 发放时，等于面额值；回收时，指每次回收的具体值。
 
         :return: The operation_amount of this CouponRecordV2.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         return self._operation_amount
 
@@ -254,7 +254,7 @@ class CouponRecordV2:
         操作的面额值。单位：元。 发放时，等于面额值；回收时，指每次回收的具体值。
 
         :param operation_amount: The operation_amount of this CouponRecordV2.
-        :type operation_amount: float
+        :type operation_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         self._operation_amount = operation_amount
 

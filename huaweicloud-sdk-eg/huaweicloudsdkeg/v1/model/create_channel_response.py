@@ -48,7 +48,7 @@ class CreateChannelResponse(SdkResponse):
         :type name: str
         :param description: 通道描述
         :type description: str
-        :param provider_type: 通道提供方类型，OFFICIAL：官方事件通道；CUSTOM：自定义事件通道
+        :param provider_type: 通道提供方类型，OFFICIAL：官方事件通道；CUSTOM：自定义事件通道；PARTNER：伙伴事件通道
         :type provider_type: str
         :param created_time: 创建UTC时间
         :type created_time: str
@@ -154,7 +154,7 @@ class CreateChannelResponse(SdkResponse):
     def provider_type(self):
         """Gets the provider_type of this CreateChannelResponse.
 
-        通道提供方类型，OFFICIAL：官方事件通道；CUSTOM：自定义事件通道
+        通道提供方类型，OFFICIAL：官方事件通道；CUSTOM：自定义事件通道；PARTNER：伙伴事件通道
 
         :return: The provider_type of this CreateChannelResponse.
         :rtype: str
@@ -165,7 +165,7 @@ class CreateChannelResponse(SdkResponse):
     def provider_type(self, provider_type):
         """Sets the provider_type of this CreateChannelResponse.
 
-        通道提供方类型，OFFICIAL：官方事件通道；CUSTOM：自定义事件通道
+        通道提供方类型，OFFICIAL：官方事件通道；CUSTOM：自定义事件通道；PARTNER：伙伴事件通道
 
         :param provider_type: The provider_type of this CreateChannelResponse.
         :type provider_type: str

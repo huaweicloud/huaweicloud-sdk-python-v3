@@ -39,11 +39,11 @@ class UpdateNewTaskRequestBody:
 
         :param name: 名称
         :type name: str
-        :param parallel: 并行状态(表示任务执行时用例是否并行执行;true:并行执行,false:串行执行)
+        :param parallel: 并行状态（表示任务执行时用例是否并行执行；true：并行执行，false：串行执行）
         :type parallel: bool
         :param project_id: 工程id
         :type project_id: int
-        :param operate_mode: 任务模式(兼容旧版接口保留字段,0:时长模式,1:次数模式,2:混合模式;此处请传固定值:2)
+        :param operate_mode: 任务模式（兼容旧版接口保留字段，0：时长模式，1：次数模式，2：混合模式；此处请传固定值：2）
         :type operate_mode: int
         :param case_id_list: 关联的用例id集合
         :type case_id_list: list[int]
@@ -90,7 +90,7 @@ class UpdateNewTaskRequestBody:
     def parallel(self):
         """Gets the parallel of this UpdateNewTaskRequestBody.
 
-        并行状态(表示任务执行时用例是否并行执行;true:并行执行,false:串行执行)
+        并行状态（表示任务执行时用例是否并行执行；true：并行执行，false：串行执行）
 
         :return: The parallel of this UpdateNewTaskRequestBody.
         :rtype: bool
@@ -101,7 +101,7 @@ class UpdateNewTaskRequestBody:
     def parallel(self, parallel):
         """Sets the parallel of this UpdateNewTaskRequestBody.
 
-        并行状态(表示任务执行时用例是否并行执行;true:并行执行,false:串行执行)
+        并行状态（表示任务执行时用例是否并行执行；true：并行执行，false：串行执行）
 
         :param parallel: The parallel of this UpdateNewTaskRequestBody.
         :type parallel: bool
@@ -134,7 +134,7 @@ class UpdateNewTaskRequestBody:
     def operate_mode(self):
         """Gets the operate_mode of this UpdateNewTaskRequestBody.
 
-        任务模式(兼容旧版接口保留字段,0:时长模式,1:次数模式,2:混合模式;此处请传固定值:2)
+        任务模式（兼容旧版接口保留字段，0：时长模式，1：次数模式，2：混合模式；此处请传固定值：2）
 
         :return: The operate_mode of this UpdateNewTaskRequestBody.
         :rtype: int
@@ -145,7 +145,7 @@ class UpdateNewTaskRequestBody:
     def operate_mode(self, operate_mode):
         """Sets the operate_mode of this UpdateNewTaskRequestBody.
 
-        任务模式(兼容旧版接口保留字段,0:时长模式,1:次数模式,2:混合模式;此处请传固定值:2)
+        任务模式（兼容旧版接口保留字段，0：时长模式，1：次数模式，2：混合模式；此处请传固定值：2）
 
         :param operate_mode: The operate_mode of this UpdateNewTaskRequestBody.
         :type operate_mode: int

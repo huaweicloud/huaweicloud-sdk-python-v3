@@ -35,7 +35,7 @@ class CreateFixtedResponseConfig:
 
         :param status_code: 返回码。支持200~299,400~499,500~599。
         :type status_code: str
-        :param content_type: 返回body的格式。  取值范围： - text/plain - text/css - text/html - application/javascript - application/json
+        :param content_type: 返回body的格式。  取值范围： - text/plain，默认值 - text/css - text/html - application/javascript - application/json
         :type content_type: str
         :param message_body: 返回消息内容。
         :type message_body: str
@@ -80,7 +80,7 @@ class CreateFixtedResponseConfig:
     def content_type(self):
         """Gets the content_type of this CreateFixtedResponseConfig.
 
-        返回body的格式。  取值范围： - text/plain - text/css - text/html - application/javascript - application/json
+        返回body的格式。  取值范围： - text/plain，默认值 - text/css - text/html - application/javascript - application/json
 
         :return: The content_type of this CreateFixtedResponseConfig.
         :rtype: str
@@ -91,7 +91,7 @@ class CreateFixtedResponseConfig:
     def content_type(self, content_type):
         """Sets the content_type of this CreateFixtedResponseConfig.
 
-        返回body的格式。  取值范围： - text/plain - text/css - text/html - application/javascript - application/json
+        返回body的格式。  取值范围： - text/plain，默认值 - text/css - text/html - application/javascript - application/json
 
         :param content_type: The content_type of this CreateFixtedResponseConfig.
         :type content_type: str

@@ -31,7 +31,8 @@ class ShowRecordSetResponse(SdkResponse):
         'status': 'str',
         'default': 'bool',
         'project_id': 'str',
-        'links': 'PageLink'
+        'links': 'PageLink',
+        'bundle': 'str'
     }
 
     attribute_map = {
@@ -48,10 +49,11 @@ class ShowRecordSetResponse(SdkResponse):
         'status': 'status',
         'default': 'default',
         'project_id': 'project_id',
-        'links': 'links'
+        'links': 'links',
+        'bundle': 'bundle'
     }
 
-    def __init__(self, id=None, name=None, description=None, zone_id=None, zone_name=None, type=None, ttl=None, records=None, create_at=None, update_at=None, status=None, default=None, project_id=None, links=None):
+    def __init__(self, id=None, name=None, description=None, zone_id=None, zone_name=None, type=None, ttl=None, records=None, create_at=None, update_at=None, status=None, default=None, project_id=None, links=None, bundle=None):
         """ShowRecordSetResponse
 
         The model defined in huaweicloud sdk
@@ -84,6 +86,8 @@ class ShowRecordSetResponse(SdkResponse):
         :type project_id: str
         :param links: 
         :type links: :class:`huaweicloudsdkdns.v2.PageLink`
+        :param bundle: 规格，默认规格，保留字段。
+        :type bundle: str
         """
         
         super(ShowRecordSetResponse, self).__init__()
@@ -102,6 +106,7 @@ class ShowRecordSetResponse(SdkResponse):
         self._default = None
         self._project_id = None
         self._links = None
+        self._bundle = None
         self.discriminator = None
 
         if id is not None:
@@ -132,6 +137,8 @@ class ShowRecordSetResponse(SdkResponse):
             self.project_id = project_id
         if links is not None:
             self.links = links
+        if bundle is not None:
+            self.bundle = bundle
 
     @property
     def id(self):
@@ -436,6 +443,28 @@ class ShowRecordSetResponse(SdkResponse):
         :type links: :class:`huaweicloudsdkdns.v2.PageLink`
         """
         self._links = links
+
+    @property
+    def bundle(self):
+        """Gets the bundle of this ShowRecordSetResponse.
+
+        规格，默认规格，保留字段。
+
+        :return: The bundle of this ShowRecordSetResponse.
+        :rtype: str
+        """
+        return self._bundle
+
+    @bundle.setter
+    def bundle(self, bundle):
+        """Sets the bundle of this ShowRecordSetResponse.
+
+        规格，默认规格，保留字段。
+
+        :param bundle: The bundle of this ShowRecordSetResponse.
+        :type bundle: str
+        """
+        self._bundle = bundle
 
     def to_dict(self):
         """Returns the model properties as a dict"""

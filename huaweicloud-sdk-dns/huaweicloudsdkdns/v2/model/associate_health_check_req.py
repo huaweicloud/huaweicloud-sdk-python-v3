@@ -38,8 +38,7 @@ class AssociateHealthCheckReq:
         self._health_check_id = None
         self.discriminator = None
 
-        if health_check_id is not None:
-            self.health_check_id = health_check_id
+        self.health_check_id = health_check_id
 
     @property
     def health_check_id(self):

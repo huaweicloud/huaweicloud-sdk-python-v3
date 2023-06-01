@@ -18,20 +18,109 @@ class UpdateOrderResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'order_id': 'str',
+        'ret_code': 'str',
+        'ret_msg': 'str'
     }
 
     attribute_map = {
+        'order_id': 'orderId',
+        'ret_code': 'retCode',
+        'ret_msg': 'retMsg'
     }
 
-    def __init__(self):
+    def __init__(self, order_id=None, ret_code=None, ret_msg=None):
         """UpdateOrderResponse
 
         The model defined in huaweicloud sdk
 
+        :param order_id: 订单ID
+        :type order_id: str
+        :param ret_code: 变更状态码
+        :type ret_code: str
+        :param ret_msg: 变更信息
+        :type ret_msg: str
         """
         
         super(UpdateOrderResponse, self).__init__()
+
+        self._order_id = None
+        self._ret_code = None
+        self._ret_msg = None
         self.discriminator = None
+
+        if order_id is not None:
+            self.order_id = order_id
+        if ret_code is not None:
+            self.ret_code = ret_code
+        if ret_msg is not None:
+            self.ret_msg = ret_msg
+
+    @property
+    def order_id(self):
+        """Gets the order_id of this UpdateOrderResponse.
+
+        订单ID
+
+        :return: The order_id of this UpdateOrderResponse.
+        :rtype: str
+        """
+        return self._order_id
+
+    @order_id.setter
+    def order_id(self, order_id):
+        """Sets the order_id of this UpdateOrderResponse.
+
+        订单ID
+
+        :param order_id: The order_id of this UpdateOrderResponse.
+        :type order_id: str
+        """
+        self._order_id = order_id
+
+    @property
+    def ret_code(self):
+        """Gets the ret_code of this UpdateOrderResponse.
+
+        变更状态码
+
+        :return: The ret_code of this UpdateOrderResponse.
+        :rtype: str
+        """
+        return self._ret_code
+
+    @ret_code.setter
+    def ret_code(self, ret_code):
+        """Sets the ret_code of this UpdateOrderResponse.
+
+        变更状态码
+
+        :param ret_code: The ret_code of this UpdateOrderResponse.
+        :type ret_code: str
+        """
+        self._ret_code = ret_code
+
+    @property
+    def ret_msg(self):
+        """Gets the ret_msg of this UpdateOrderResponse.
+
+        变更信息
+
+        :return: The ret_msg of this UpdateOrderResponse.
+        :rtype: str
+        """
+        return self._ret_msg
+
+    @ret_msg.setter
+    def ret_msg(self, ret_msg):
+        """Sets the ret_msg of this UpdateOrderResponse.
+
+        变更信息
+
+        :param ret_msg: The ret_msg of this UpdateOrderResponse.
+        :type ret_msg: str
+        """
+        self._ret_msg = ret_msg
 
     def to_dict(self):
         """Returns the model properties as a dict"""

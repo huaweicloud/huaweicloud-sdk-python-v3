@@ -18,23 +18,27 @@ class CreateVpcPeeringOption:
 
     openapi_types = {
         'name': 'str',
+        'description': 'str',
         'request_vpc_info': 'VpcInfo',
         'accept_vpc_info': 'VpcInfo'
     }
 
     attribute_map = {
         'name': 'name',
+        'description': 'description',
         'request_vpc_info': 'request_vpc_info',
         'accept_vpc_info': 'accept_vpc_info'
     }
 
-    def __init__(self, name=None, request_vpc_info=None, accept_vpc_info=None):
+    def __init__(self, name=None, description=None, request_vpc_info=None, accept_vpc_info=None):
         """CreateVpcPeeringOption
 
         The model defined in huaweicloud sdk
 
         :param name: 功能说明：对等连接名称 取值范围：支持1~64个字符
         :type name: str
+        :param description: 功能说明：对等连接的描述 取值范围：0-255个字符，不能包含“&lt;”和“&gt;”。
+        :type description: str
         :param request_vpc_info: 
         :type request_vpc_info: :class:`huaweicloudsdkvpc.v2.VpcInfo`
         :param accept_vpc_info: 
@@ -44,11 +48,14 @@ class CreateVpcPeeringOption:
         
 
         self._name = None
+        self._description = None
         self._request_vpc_info = None
         self._accept_vpc_info = None
         self.discriminator = None
 
         self.name = name
+        if description is not None:
+            self.description = description
         self.request_vpc_info = request_vpc_info
         self.accept_vpc_info = accept_vpc_info
 
@@ -73,6 +80,28 @@ class CreateVpcPeeringOption:
         :type name: str
         """
         self._name = name
+
+    @property
+    def description(self):
+        """Gets the description of this CreateVpcPeeringOption.
+
+        功能说明：对等连接的描述 取值范围：0-255个字符，不能包含“<”和“>”。
+
+        :return: The description of this CreateVpcPeeringOption.
+        :rtype: str
+        """
+        return self._description
+
+    @description.setter
+    def description(self, description):
+        """Sets the description of this CreateVpcPeeringOption.
+
+        功能说明：对等连接的描述 取值范围：0-255个字符，不能包含“<”和“>”。
+
+        :param description: The description of this CreateVpcPeeringOption.
+        :type description: str
+        """
+        self._description = description
 
     @property
     def request_vpc_info(self):

@@ -75,9 +75,9 @@ class Configs:
         :type https: :class:`huaweicloudsdkcdn.v1.HttpPutBody`
         :param sources: 源站配置。
         :type sources: list[:class:`huaweicloudsdkcdn.v1.SourcesConfig`]
-        :param origin_protocol: 回源协议（follow：协议跟随回源，http：HTTP回源(默认)，https：https回源）。
+        :param origin_protocol: 回源协议，follow：协议跟随回源，http：HTTP回源(默认)，https：https回源。
         :type origin_protocol: str
-        :param origin_follow302_status: 回源跟随（on：开启，off：关闭）。
+        :param origin_follow302_status: 回源跟随，on：开启，off：关闭。
         :type origin_follow302_status: str
         :param cache_rules: 缓存规则。
         :type cache_rules: list[:class:`huaweicloudsdkcdn.v1.CacheRules`]
@@ -91,17 +91,17 @@ class Configs:
         :type compress: :class:`huaweicloudsdkcdn.v1.Compress`
         :param cache_url_parameter_filter: 
         :type cache_url_parameter_filter: :class:`huaweicloudsdkcdn.v1.CacheUrlParameterFilter`
-        :param ipv6_accelerate: ipv6设置（1：打开；0：关闭）
+        :param ipv6_accelerate: ipv6设置，1：打开；0：关闭。
         :type ipv6_accelerate: int
-        :param error_code_cache: 状态码缓存时间
+        :param error_code_cache: 状态码缓存时间。
         :type error_code_cache: list[:class:`huaweicloudsdkcdn.v1.ErrorCodeCache`]
-        :param origin_range_status: Range回源，即分片回源 开启Range回源的前提是您的源站支持Range请求，即HTTP请求头中包含Range字段，否则可能导致回源失败。 开启: on 关闭: off
+        :param origin_range_status: Range回源，即分片回源，开启: on，关闭: off。  &gt; 开启Range回源的前提是您的源站支持Range请求，即HTTP请求头中包含Range字段，否则可能导致回源失败。
         :type origin_range_status: str
         :param user_agent_filter: 
         :type user_agent_filter: :class:`huaweicloudsdkcdn.v1.UserAgentFilter`
         :param origin_request_url_rewrite: 改写回源URL，最多配置20条。
         :type origin_request_url_rewrite: list[:class:`huaweicloudsdkcdn.v1.OriginRequestUrlRewrite`]
-        :param error_code_redirect_rules: 自定义错误页面
+        :param error_code_redirect_rules: 自定义错误页面。
         :type error_code_redirect_rules: list[:class:`huaweicloudsdkcdn.v1.ErrorCodeRedirectRules`]
         """
         
@@ -273,7 +273,7 @@ class Configs:
     def origin_protocol(self):
         """Gets the origin_protocol of this Configs.
 
-        回源协议（follow：协议跟随回源，http：HTTP回源(默认)，https：https回源）。
+        回源协议，follow：协议跟随回源，http：HTTP回源(默认)，https：https回源。
 
         :return: The origin_protocol of this Configs.
         :rtype: str
@@ -284,7 +284,7 @@ class Configs:
     def origin_protocol(self, origin_protocol):
         """Sets the origin_protocol of this Configs.
 
-        回源协议（follow：协议跟随回源，http：HTTP回源(默认)，https：https回源）。
+        回源协议，follow：协议跟随回源，http：HTTP回源(默认)，https：https回源。
 
         :param origin_protocol: The origin_protocol of this Configs.
         :type origin_protocol: str
@@ -295,7 +295,7 @@ class Configs:
     def origin_follow302_status(self):
         """Gets the origin_follow302_status of this Configs.
 
-        回源跟随（on：开启，off：关闭）。
+        回源跟随，on：开启，off：关闭。
 
         :return: The origin_follow302_status of this Configs.
         :rtype: str
@@ -306,7 +306,7 @@ class Configs:
     def origin_follow302_status(self, origin_follow302_status):
         """Sets the origin_follow302_status of this Configs.
 
-        回源跟随（on：开启，off：关闭）。
+        回源跟随，on：开启，off：关闭。
 
         :param origin_follow302_status: The origin_follow302_status of this Configs.
         :type origin_follow302_status: str
@@ -429,7 +429,7 @@ class Configs:
     def ipv6_accelerate(self):
         """Gets the ipv6_accelerate of this Configs.
 
-        ipv6设置（1：打开；0：关闭）
+        ipv6设置，1：打开；0：关闭。
 
         :return: The ipv6_accelerate of this Configs.
         :rtype: int
@@ -440,7 +440,7 @@ class Configs:
     def ipv6_accelerate(self, ipv6_accelerate):
         """Sets the ipv6_accelerate of this Configs.
 
-        ipv6设置（1：打开；0：关闭）
+        ipv6设置，1：打开；0：关闭。
 
         :param ipv6_accelerate: The ipv6_accelerate of this Configs.
         :type ipv6_accelerate: int
@@ -451,7 +451,7 @@ class Configs:
     def error_code_cache(self):
         """Gets the error_code_cache of this Configs.
 
-        状态码缓存时间
+        状态码缓存时间。
 
         :return: The error_code_cache of this Configs.
         :rtype: list[:class:`huaweicloudsdkcdn.v1.ErrorCodeCache`]
@@ -462,7 +462,7 @@ class Configs:
     def error_code_cache(self, error_code_cache):
         """Sets the error_code_cache of this Configs.
 
-        状态码缓存时间
+        状态码缓存时间。
 
         :param error_code_cache: The error_code_cache of this Configs.
         :type error_code_cache: list[:class:`huaweicloudsdkcdn.v1.ErrorCodeCache`]
@@ -473,7 +473,7 @@ class Configs:
     def origin_range_status(self):
         """Gets the origin_range_status of this Configs.
 
-        Range回源，即分片回源 开启Range回源的前提是您的源站支持Range请求，即HTTP请求头中包含Range字段，否则可能导致回源失败。 开启: on 关闭: off
+        Range回源，即分片回源，开启: on，关闭: off。  > 开启Range回源的前提是您的源站支持Range请求，即HTTP请求头中包含Range字段，否则可能导致回源失败。
 
         :return: The origin_range_status of this Configs.
         :rtype: str
@@ -484,7 +484,7 @@ class Configs:
     def origin_range_status(self, origin_range_status):
         """Sets the origin_range_status of this Configs.
 
-        Range回源，即分片回源 开启Range回源的前提是您的源站支持Range请求，即HTTP请求头中包含Range字段，否则可能导致回源失败。 开启: on 关闭: off
+        Range回源，即分片回源，开启: on，关闭: off。  > 开启Range回源的前提是您的源站支持Range请求，即HTTP请求头中包含Range字段，否则可能导致回源失败。
 
         :param origin_range_status: The origin_range_status of this Configs.
         :type origin_range_status: str
@@ -535,7 +535,7 @@ class Configs:
     def error_code_redirect_rules(self):
         """Gets the error_code_redirect_rules of this Configs.
 
-        自定义错误页面
+        自定义错误页面。
 
         :return: The error_code_redirect_rules of this Configs.
         :rtype: list[:class:`huaweicloudsdkcdn.v1.ErrorCodeRedirectRules`]
@@ -546,7 +546,7 @@ class Configs:
     def error_code_redirect_rules(self, error_code_redirect_rules):
         """Sets the error_code_redirect_rules of this Configs.
 
-        自定义错误页面
+        自定义错误页面。
 
         :param error_code_redirect_rules: The error_code_redirect_rules of this Configs.
         :type error_code_redirect_rules: list[:class:`huaweicloudsdkcdn.v1.ErrorCodeRedirectRules`]

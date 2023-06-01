@@ -2894,9 +2894,9 @@ class DnsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def list_private_zones_async(self, request):
-        """查询内网Zone的列表
+        """查询内网Zone列表
 
-        查询内网Zone的列表
+        查询内网Zone列表
         
         Please refer to HUAWEI cloud API Explorer for details.
 

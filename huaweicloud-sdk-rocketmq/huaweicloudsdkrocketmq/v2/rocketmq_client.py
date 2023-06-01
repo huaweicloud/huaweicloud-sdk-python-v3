@@ -370,6 +370,70 @@ class RocketMQClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def create_rocket_mq_migration_task(self, request):
+        """新建元数据迁移任务
+
+        新建元数据迁移任务。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateRocketMqMigrationTask
+        :type request: :class:`huaweicloudsdkrocketmq.v2.CreateRocketMqMigrationTaskRequest`
+        :rtype: :class:`huaweicloudsdkrocketmq.v2.CreateRocketMqMigrationTaskResponse`
+        """
+        return self._create_rocket_mq_migration_task_with_http_info(request)
+
+    def _create_rocket_mq_migration_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'overwrite' in local_var_params:
+            query_params.append(('overwrite', local_var_params['overwrite']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/instances/{instance_id}/metadata',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateRocketMqMigrationTaskResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def create_user(self, request):
         """创建用户
 
@@ -537,6 +601,64 @@ class RocketMQClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='DeleteInstanceResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_rocket_mq_migration_task(self, request):
+        """删除元数据迁移任务
+
+        删除元数据迁移任务。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteRocketMqMigrationTask
+        :type request: :class:`huaweicloudsdkrocketmq.v2.DeleteRocketMqMigrationTaskRequest`
+        :rtype: :class:`huaweicloudsdkrocketmq.v2.DeleteRocketMqMigrationTaskResponse`
+        """
+        return self._delete_rocket_mq_migration_task_with_http_info(request)
+
+    def _delete_rocket_mq_migration_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/instances/{instance_id}/metadata',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteRocketMqMigrationTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1096,6 +1218,73 @@ class RocketMQClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_rocket_mq_migration_task(self, request):
+        """查询实例下所有迁移任务或查询指定迁移任务信息
+
+        1. 查询实例下所有迁移任务
+        2. 查询指定迁移任务信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListRocketMqMigrationTask
+        :type request: :class:`huaweicloudsdkrocketmq.v2.ListRocketMqMigrationTaskRequest`
+        :rtype: :class:`huaweicloudsdkrocketmq.v2.ListRocketMqMigrationTaskResponse`
+        """
+        return self._list_rocket_mq_migration_task_with_http_info(request)
+
+    def _list_rocket_mq_migration_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/instances/{instance_id}/metadata',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListRocketMqMigrationTaskResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_topic_access_policy(self, request):
         """查询主题的授权用户列表
 
@@ -1275,6 +1464,64 @@ class RocketMQClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ResetConsumeOffsetResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def send_rocket_mq_dlq_message(self, request):
+        """重发死信消息
+
+        重发死信消息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for SendRocketMqDlqMessage
+        :type request: :class:`huaweicloudsdkrocketmq.v2.SendRocketMqDlqMessageRequest`
+        :rtype: :class:`huaweicloudsdkrocketmq.v2.SendRocketMqDlqMessageResponse`
+        """
+        return self._send_rocket_mq_dlq_message_with_http_info(request)
+
+    def _send_rocket_mq_dlq_message_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/reliability/{project_id}/instances/{instance_id}/messages/deadletter-resend',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='SendRocketMqDlqMessageResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1863,6 +2110,64 @@ class RocketMQClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='UpdateUserResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def validate_rocket_mq_consumed_message(self, request):
+        """消费验证
+
+        消费验证。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ValidateRocketMqConsumedMessage
+        :type request: :class:`huaweicloudsdkrocketmq.v2.ValidateRocketMqConsumedMessageRequest`
+        :rtype: :class:`huaweicloudsdkrocketmq.v2.ValidateRocketMqConsumedMessageResponse`
+        """
+        return self._validate_rocket_mq_consumed_message_with_http_info(request)
+
+    def _validate_rocket_mq_consumed_message_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/reliability/{project_id}/instances/{instance_id}/messages/resend',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ValidateRocketMqConsumedMessageResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

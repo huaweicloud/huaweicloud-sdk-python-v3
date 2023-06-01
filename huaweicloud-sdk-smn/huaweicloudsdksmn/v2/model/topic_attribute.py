@@ -17,106 +17,76 @@ class TopicAttribute:
     sensitive_list = []
 
     openapi_types = {
-        'version': 'str',
-        'id': 'str',
-        'statement': 'list[Statement]'
+        'access_policy': 'AccessPolicy',
+        'introduction': 'str'
     }
 
     attribute_map = {
-        'version': 'Version',
-        'id': 'Id',
-        'statement': 'Statement'
+        'access_policy': 'access_policy',
+        'introduction': 'introduction'
     }
 
-    def __init__(self, version=None, id=None, statement=None):
+    def __init__(self, access_policy=None, introduction=None):
         """TopicAttribute
 
         The model defined in huaweicloud sdk
 
-        :param version: 访问策略规范版本。目前只支持“2016-09-07”。
-        :type version: str
-        :param id: 策略的唯一标识。不能为空。
-        :type id: str
-        :param statement: 访问策略是通过Statement语句来定义的。一个访问策略可包含一条或多条Statement语句。通过Statement语句向其他用户或云服务授权对主题的操作。
-        :type statement: list[:class:`huaweicloudsdksmn.v2.Statement`]
+        :param access_policy: 
+        :type access_policy: :class:`huaweicloudsdksmn.v2.AccessPolicy`
+        :param introduction: topic的简介
+        :type introduction: str
         """
         
         
 
-        self._version = None
-        self._id = None
-        self._statement = None
+        self._access_policy = None
+        self._introduction = None
         self.discriminator = None
 
-        self.version = version
-        self.id = id
-        self.statement = statement
+        if access_policy is not None:
+            self.access_policy = access_policy
+        if introduction is not None:
+            self.introduction = introduction
 
     @property
-    def version(self):
-        """Gets the version of this TopicAttribute.
+    def access_policy(self):
+        """Gets the access_policy of this TopicAttribute.
 
-        访问策略规范版本。目前只支持“2016-09-07”。
+        :return: The access_policy of this TopicAttribute.
+        :rtype: :class:`huaweicloudsdksmn.v2.AccessPolicy`
+        """
+        return self._access_policy
 
-        :return: The version of this TopicAttribute.
+    @access_policy.setter
+    def access_policy(self, access_policy):
+        """Sets the access_policy of this TopicAttribute.
+
+        :param access_policy: The access_policy of this TopicAttribute.
+        :type access_policy: :class:`huaweicloudsdksmn.v2.AccessPolicy`
+        """
+        self._access_policy = access_policy
+
+    @property
+    def introduction(self):
+        """Gets the introduction of this TopicAttribute.
+
+        topic的简介
+
+        :return: The introduction of this TopicAttribute.
         :rtype: str
         """
-        return self._version
+        return self._introduction
 
-    @version.setter
-    def version(self, version):
-        """Sets the version of this TopicAttribute.
+    @introduction.setter
+    def introduction(self, introduction):
+        """Sets the introduction of this TopicAttribute.
 
-        访问策略规范版本。目前只支持“2016-09-07”。
+        topic的简介
 
-        :param version: The version of this TopicAttribute.
-        :type version: str
+        :param introduction: The introduction of this TopicAttribute.
+        :type introduction: str
         """
-        self._version = version
-
-    @property
-    def id(self):
-        """Gets the id of this TopicAttribute.
-
-        策略的唯一标识。不能为空。
-
-        :return: The id of this TopicAttribute.
-        :rtype: str
-        """
-        return self._id
-
-    @id.setter
-    def id(self, id):
-        """Sets the id of this TopicAttribute.
-
-        策略的唯一标识。不能为空。
-
-        :param id: The id of this TopicAttribute.
-        :type id: str
-        """
-        self._id = id
-
-    @property
-    def statement(self):
-        """Gets the statement of this TopicAttribute.
-
-        访问策略是通过Statement语句来定义的。一个访问策略可包含一条或多条Statement语句。通过Statement语句向其他用户或云服务授权对主题的操作。
-
-        :return: The statement of this TopicAttribute.
-        :rtype: list[:class:`huaweicloudsdksmn.v2.Statement`]
-        """
-        return self._statement
-
-    @statement.setter
-    def statement(self, statement):
-        """Sets the statement of this TopicAttribute.
-
-        访问策略是通过Statement语句来定义的。一个访问策略可包含一条或多条Statement语句。通过Statement语句向其他用户或云服务授权对主题的操作。
-
-        :param statement: The statement of this TopicAttribute.
-        :type statement: list[:class:`huaweicloudsdksmn.v2.Statement`]
-        """
-        self._statement = statement
+        self._introduction = introduction
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -146,6 +146,65 @@ class RdsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def batch_delete_manual_backup_async(self, request):
+        """批量删除手动备份
+
+        批量删除手动备份。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchDeleteManualBackup
+        :type request: :class:`huaweicloudsdkrds.v3.BatchDeleteManualBackupRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.BatchDeleteManualBackupResponse`
+        """
+        return self._batch_delete_manual_backup_with_http_info(request)
+
+    def _batch_delete_manual_backup_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/backups/batch-delete',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='BatchDeleteManualBackupResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def batch_tag_add_action_async(self, request):
         """批量添加标签
 
@@ -927,6 +986,62 @@ class RdsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def delete_job_async(self, request):
+        """删除即时任务
+
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteJob
+        :type request: :class:`huaweicloudsdkrds.v3.DeleteJobRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.DeleteJobResponse`
+        """
+        return self._delete_job_with_http_info(request)
+
+    def _delete_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/jobs',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteJobResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def delete_manual_backup_async(self, request):
         """删除手动备份
 
@@ -1471,6 +1586,77 @@ class RdsAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ListDrRelationsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_engine_flavors_async(self, request):
+        """查询实例可变更规格
+
+        查询实例可变更规格
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListEngineFlavors
+        :type request: :class:`huaweicloudsdkrds.v3.ListEngineFlavorsRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ListEngineFlavorsResponse`
+        """
+        return self._list_engine_flavors_with_http_info(request)
+
+    def _list_engine_flavors_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'availability_zone_ids' in local_var_params:
+            query_params.append(('availability_zone_ids', local_var_params['availability_zone_ids']))
+        if 'ha_mode' in local_var_params:
+            query_params.append(('ha_mode', local_var_params['ha_mode']))
+        if 'spec_code_like' in local_var_params:
+            query_params.append(('spec_code_like', local_var_params['spec_code_like']))
+        if 'flavor_category_type' in local_var_params:
+            query_params.append(('flavor_category_type', local_var_params['flavor_category_type']))
+        if 'is_rha_flavor' in local_var_params:
+            query_params.append(('is_rha_flavor', local_var_params['is_rha_flavor']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/available-flavors',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListEngineFlavorsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

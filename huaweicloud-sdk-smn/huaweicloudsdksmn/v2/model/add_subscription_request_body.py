@@ -19,26 +19,30 @@ class AddSubscriptionRequestBody:
     openapi_types = {
         'protocol': 'str',
         'endpoint': 'str',
-        'remark': 'str'
+        'remark': 'str',
+        'extension': 'SubscriptionExtension'
     }
 
     attribute_map = {
         'protocol': 'protocol',
         'endpoint': 'endpoint',
-        'remark': 'remark'
+        'remark': 'remark',
+        'extension': 'extension'
     }
 
-    def __init__(self, protocol=None, endpoint=None, remark=None):
+    def __init__(self, protocol=None, endpoint=None, remark=None, extension=None):
         """AddSubscriptionRequestBody
 
         The model defined in huaweicloud sdk
 
-        :param protocol: 不同协议对应不同的endpoint（接受消息的接入点）。 目前支持的协议包括：  “email”：邮件传输协议，endpoint为邮箱地址。  “sms”：短信传输协议，endpoint为手机号码。  “functionstage”：FunctionGraph（函数）传输协议，endpoint为一个函数。  “http”、“https”：HTTP/HTTPS传输协议，endpoint为URL。  “callnotify”：语音通知传输协议，endpoint为手机号码。
+        :param protocol: 不同协议对应不同的endpoint（接受消息的接入点）。 目前支持的协议包括：  “email”：邮件传输协议，endpoint为邮箱地址。  “sms”：短信传输协议，endpoint为手机号码。  “functionstage”：FunctionGraph（函数）传输协议，endpoint为一个函数。  “functiongraph”：FunctionGraph（工作流）传输协议，endpoint为由一组函数编排成的工作流。  “http”、“https”：HTTP/HTTPS传输协议，endpoint为URL。  “callnotify”：语音通知传输协议，endpoint为手机号码。  “wechat”：微信群机器人传输协议。  “dingding”：钉钉群机器人传输协议。  “feishu”：飞书群机器人传输协议。  “welink”：welink群机器人传输协议。
         :type protocol: str
-        :param endpoint: 说明：  https协议，接入点必须以“https://”开头。  email协议，接入点必须是邮件地址。  sms协议，接入点必须是一个电话号码。  functionstage协议，接入点必须是一个函数。  dms协议，接入点必须是一个消息队列。  application协议，接入点必须是一个应用平台的设备终端。  callnotify协议，接入点必须是一个电话号码。
+        :param endpoint: 说明：  http协议，接入点必须以“http://”开头。  https协议，接入点必须以“https://”开头。  email协议，接入点必须是邮件地址。  sms协议，接入点必须是一个电话号码。  functionstage协议，接入点必须是一个函数。  functiongraph协议，接入点必须是一个函数工作流。  dms协议，接入点必须是一个消息队列。  application协议，接入点必须是一个应用平台的设备终端。  callnotify协议，接入点必须是一个电话号码。  dingding协议，接入点必须是一个钉钉群机器人的地址。  wechat协议，接入点必须是一个微信群机器人的地址。  feishu协议，接入点必须是一个飞书群机器人的地址。  welink协议，接入点必须是一个welink的群号。
         :type endpoint: str
         :param remark: 备注。最大支持128字节，约42个中文，必须是UTF-8编码的字符串，否则无法正常显示中文。
         :type remark: str
+        :param extension: 
+        :type extension: :class:`huaweicloudsdksmn.v2.SubscriptionExtension`
         """
         
         
@@ -46,18 +50,21 @@ class AddSubscriptionRequestBody:
         self._protocol = None
         self._endpoint = None
         self._remark = None
+        self._extension = None
         self.discriminator = None
 
         self.protocol = protocol
         self.endpoint = endpoint
         if remark is not None:
             self.remark = remark
+        if extension is not None:
+            self.extension = extension
 
     @property
     def protocol(self):
         """Gets the protocol of this AddSubscriptionRequestBody.
 
-        不同协议对应不同的endpoint（接受消息的接入点）。 目前支持的协议包括：  “email”：邮件传输协议，endpoint为邮箱地址。  “sms”：短信传输协议，endpoint为手机号码。  “functionstage”：FunctionGraph（函数）传输协议，endpoint为一个函数。  “http”、“https”：HTTP/HTTPS传输协议，endpoint为URL。  “callnotify”：语音通知传输协议，endpoint为手机号码。
+        不同协议对应不同的endpoint（接受消息的接入点）。 目前支持的协议包括：  “email”：邮件传输协议，endpoint为邮箱地址。  “sms”：短信传输协议，endpoint为手机号码。  “functionstage”：FunctionGraph（函数）传输协议，endpoint为一个函数。  “functiongraph”：FunctionGraph（工作流）传输协议，endpoint为由一组函数编排成的工作流。  “http”、“https”：HTTP/HTTPS传输协议，endpoint为URL。  “callnotify”：语音通知传输协议，endpoint为手机号码。  “wechat”：微信群机器人传输协议。  “dingding”：钉钉群机器人传输协议。  “feishu”：飞书群机器人传输协议。  “welink”：welink群机器人传输协议。
 
         :return: The protocol of this AddSubscriptionRequestBody.
         :rtype: str
@@ -68,7 +75,7 @@ class AddSubscriptionRequestBody:
     def protocol(self, protocol):
         """Sets the protocol of this AddSubscriptionRequestBody.
 
-        不同协议对应不同的endpoint（接受消息的接入点）。 目前支持的协议包括：  “email”：邮件传输协议，endpoint为邮箱地址。  “sms”：短信传输协议，endpoint为手机号码。  “functionstage”：FunctionGraph（函数）传输协议，endpoint为一个函数。  “http”、“https”：HTTP/HTTPS传输协议，endpoint为URL。  “callnotify”：语音通知传输协议，endpoint为手机号码。
+        不同协议对应不同的endpoint（接受消息的接入点）。 目前支持的协议包括：  “email”：邮件传输协议，endpoint为邮箱地址。  “sms”：短信传输协议，endpoint为手机号码。  “functionstage”：FunctionGraph（函数）传输协议，endpoint为一个函数。  “functiongraph”：FunctionGraph（工作流）传输协议，endpoint为由一组函数编排成的工作流。  “http”、“https”：HTTP/HTTPS传输协议，endpoint为URL。  “callnotify”：语音通知传输协议，endpoint为手机号码。  “wechat”：微信群机器人传输协议。  “dingding”：钉钉群机器人传输协议。  “feishu”：飞书群机器人传输协议。  “welink”：welink群机器人传输协议。
 
         :param protocol: The protocol of this AddSubscriptionRequestBody.
         :type protocol: str
@@ -79,7 +86,7 @@ class AddSubscriptionRequestBody:
     def endpoint(self):
         """Gets the endpoint of this AddSubscriptionRequestBody.
 
-        说明：  https协议，接入点必须以“https://”开头。  email协议，接入点必须是邮件地址。  sms协议，接入点必须是一个电话号码。  functionstage协议，接入点必须是一个函数。  dms协议，接入点必须是一个消息队列。  application协议，接入点必须是一个应用平台的设备终端。  callnotify协议，接入点必须是一个电话号码。
+        说明：  http协议，接入点必须以“http://”开头。  https协议，接入点必须以“https://”开头。  email协议，接入点必须是邮件地址。  sms协议，接入点必须是一个电话号码。  functionstage协议，接入点必须是一个函数。  functiongraph协议，接入点必须是一个函数工作流。  dms协议，接入点必须是一个消息队列。  application协议，接入点必须是一个应用平台的设备终端。  callnotify协议，接入点必须是一个电话号码。  dingding协议，接入点必须是一个钉钉群机器人的地址。  wechat协议，接入点必须是一个微信群机器人的地址。  feishu协议，接入点必须是一个飞书群机器人的地址。  welink协议，接入点必须是一个welink的群号。
 
         :return: The endpoint of this AddSubscriptionRequestBody.
         :rtype: str
@@ -90,7 +97,7 @@ class AddSubscriptionRequestBody:
     def endpoint(self, endpoint):
         """Sets the endpoint of this AddSubscriptionRequestBody.
 
-        说明：  https协议，接入点必须以“https://”开头。  email协议，接入点必须是邮件地址。  sms协议，接入点必须是一个电话号码。  functionstage协议，接入点必须是一个函数。  dms协议，接入点必须是一个消息队列。  application协议，接入点必须是一个应用平台的设备终端。  callnotify协议，接入点必须是一个电话号码。
+        说明：  http协议，接入点必须以“http://”开头。  https协议，接入点必须以“https://”开头。  email协议，接入点必须是邮件地址。  sms协议，接入点必须是一个电话号码。  functionstage协议，接入点必须是一个函数。  functiongraph协议，接入点必须是一个函数工作流。  dms协议，接入点必须是一个消息队列。  application协议，接入点必须是一个应用平台的设备终端。  callnotify协议，接入点必须是一个电话号码。  dingding协议，接入点必须是一个钉钉群机器人的地址。  wechat协议，接入点必须是一个微信群机器人的地址。  feishu协议，接入点必须是一个飞书群机器人的地址。  welink协议，接入点必须是一个welink的群号。
 
         :param endpoint: The endpoint of this AddSubscriptionRequestBody.
         :type endpoint: str
@@ -118,6 +125,24 @@ class AddSubscriptionRequestBody:
         :type remark: str
         """
         self._remark = remark
+
+    @property
+    def extension(self):
+        """Gets the extension of this AddSubscriptionRequestBody.
+
+        :return: The extension of this AddSubscriptionRequestBody.
+        :rtype: :class:`huaweicloudsdksmn.v2.SubscriptionExtension`
+        """
+        return self._extension
+
+    @extension.setter
+    def extension(self, extension):
+        """Sets the extension of this AddSubscriptionRequestBody.
+
+        :param extension: The extension of this AddSubscriptionRequestBody.
+        :type extension: :class:`huaweicloudsdksmn.v2.SubscriptionExtension`
+        """
+        self._extension = extension
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -22,7 +22,7 @@ class QuotaRecord:
         'operation_type': 'str',
         'quota_id': 'str',
         'parent_quota_id': 'str',
-        'amount': 'float',
+        'amount': 'decimal.Decimal',
         'operation_time': 'str',
         'result': 'str',
         'indirect_partner_account_name': 'str',
@@ -62,7 +62,7 @@ class QuotaRecord:
         :param parent_quota_id: 父额度ID。 这即华为云总经销商给云经销商发放代金券额度时，华为云总经销商的额度ID，或者从云经销商回收代金券额度时，回收的华为云总经销商的额度ID。
         :type parent_quota_id: str
         :param amount: 发放回收的金额。 取值大于0且精确到小数点后2位，单位：元。
-        :type amount: float
+        :type amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         :param operation_time: 操作时间，UTC时间，UTC时间，格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。
         :type operation_time: str
         :param result: 操作结果。 0：成功-1：失败
@@ -235,7 +235,7 @@ class QuotaRecord:
         发放回收的金额。 取值大于0且精确到小数点后2位，单位：元。
 
         :return: The amount of this QuotaRecord.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         return self._amount
 
@@ -246,7 +246,7 @@ class QuotaRecord:
         发放回收的金额。 取值大于0且精确到小数点后2位，单位：元。
 
         :param amount: The amount of this QuotaRecord.
-        :type amount: float
+        :type amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         self._amount = amount
 

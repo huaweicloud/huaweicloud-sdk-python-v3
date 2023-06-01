@@ -18,20 +18,47 @@ class ShowTemplateVersionContentResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'location': 'str'
     }
 
     attribute_map = {
+        'location': 'Location'
     }
 
-    def __init__(self):
+    def __init__(self, location=None):
         """ShowTemplateVersionContentResponse
 
         The model defined in huaweicloud sdk
 
+        :param location: 
+        :type location: str
         """
         
         super(ShowTemplateVersionContentResponse, self).__init__()
+
+        self._location = None
         self.discriminator = None
+
+        if location is not None:
+            self.location = location
+
+    @property
+    def location(self):
+        """Gets the location of this ShowTemplateVersionContentResponse.
+
+        :return: The location of this ShowTemplateVersionContentResponse.
+        :rtype: str
+        """
+        return self._location
+
+    @location.setter
+    def location(self, location):
+        """Sets the location of this ShowTemplateVersionContentResponse.
+
+        :param location: The location of this ShowTemplateVersionContentResponse.
+        :type location: str
+        """
+        self._location = location
 
     def to_dict(self):
         """Returns the model properties as a dict"""

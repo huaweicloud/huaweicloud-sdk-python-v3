@@ -38,9 +38,9 @@ class CreateLoadBalancerResponse(SdkResponse):
 
         :param loadbalancer: 
         :type loadbalancer: :class:`huaweicloudsdkelb.v3.LoadBalancer`
-        :param loadbalancer_id: 负载均衡器的id（包周期场景返回该字段）
+        :param loadbalancer_id: 负载均衡器的id（包周期场景返回该字段）  [不支持该字段，请勿使用](tag:hws_eu,g42,hk_g42,dt,dt_test,hcso_dt,ctc,cmcc,hcso,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b)
         :type loadbalancer_id: str
-        :param order_id: 订单号（包周期场景返回该字段）
+        :param order_id: 订单号（包周期场景返回该字段）  [不支持该字段，请勿使用](tag:hws_eu,g42,hk_g42,dt,dt_test,hcso_dt,ctc,cmcc,hcso,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b)
         :type order_id: str
         :param request_id: 请求ID。  注：自动生成 。
         :type request_id: str
@@ -85,7 +85,7 @@ class CreateLoadBalancerResponse(SdkResponse):
     def loadbalancer_id(self):
         """Gets the loadbalancer_id of this CreateLoadBalancerResponse.
 
-        负载均衡器的id（包周期场景返回该字段）
+        负载均衡器的id（包周期场景返回该字段）  [不支持该字段，请勿使用](tag:hws_eu,g42,hk_g42,dt,dt_test,hcso_dt,ctc,cmcc,hcso,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b)
 
         :return: The loadbalancer_id of this CreateLoadBalancerResponse.
         :rtype: str
@@ -96,7 +96,7 @@ class CreateLoadBalancerResponse(SdkResponse):
     def loadbalancer_id(self, loadbalancer_id):
         """Sets the loadbalancer_id of this CreateLoadBalancerResponse.
 
-        负载均衡器的id（包周期场景返回该字段）
+        负载均衡器的id（包周期场景返回该字段）  [不支持该字段，请勿使用](tag:hws_eu,g42,hk_g42,dt,dt_test,hcso_dt,ctc,cmcc,hcso,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b)
 
         :param loadbalancer_id: The loadbalancer_id of this CreateLoadBalancerResponse.
         :type loadbalancer_id: str
@@ -107,7 +107,7 @@ class CreateLoadBalancerResponse(SdkResponse):
     def order_id(self):
         """Gets the order_id of this CreateLoadBalancerResponse.
 
-        订单号（包周期场景返回该字段）
+        订单号（包周期场景返回该字段）  [不支持该字段，请勿使用](tag:hws_eu,g42,hk_g42,dt,dt_test,hcso_dt,ctc,cmcc,hcso,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b)
 
         :return: The order_id of this CreateLoadBalancerResponse.
         :rtype: str
@@ -118,7 +118,7 @@ class CreateLoadBalancerResponse(SdkResponse):
     def order_id(self, order_id):
         """Sets the order_id of this CreateLoadBalancerResponse.
 
-        订单号（包周期场景返回该字段）
+        订单号（包周期场景返回该字段）  [不支持该字段，请勿使用](tag:hws_eu,g42,hk_g42,dt,dt_test,hcso_dt,ctc,cmcc,hcso,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b)
 
         :param order_id: The order_id of this CreateLoadBalancerResponse.
         :type order_id: str

@@ -43,21 +43,21 @@ class CacheRules:
 
         The model defined in huaweicloud sdk
 
-        :param match_type: 匹配所有文件 all， 按文件后缀匹配 file_extension， 按目录匹配 catalog， 全路径匹配 full_path， 按首页匹配 home_page。
+        :param match_type: 类型,all：匹配所有文件， file_extension：按文件后缀匹配， catalog：按目录匹配， full_path：全路径匹配， home_page：按首页匹配。
         :type match_type: str
-        :param match_value: 缓存匹配设置。 当match_type为all时，为空。当match_type为file_extension时，为文件后缀，输入首字符为“.”，以“,”进行分隔， 如.jpg,.zip,.exe，并且输入的文 件名后缀总数不超过20个。 当match_type为catalog时，为目录，输入要求以“/”作为首字符， 以“,”进行分隔，如/test/folder01,/test/folder02，并且输入的目录路径总数不超过20个。  当match_type为full_path时，为全路径，输入要求以“/”作为首字符，支持匹配指定目录下的具体文件，或者带通配符“*”的文件， 如/test/index.html或/test/*.jpg。 当match_type为home_page时，为空。
+        :param match_value: 缓存匹配设置， 当match_type为all时，为空。当match_type为file_extension时，为文件后缀，输入首字符为“.”，以“,”进行分隔， 如.jpg,.zip,.exe，并且输入的文 件名后缀总数不超过20个。 当match_type为catalog时，为目录，输入要求以“/”作为首字符， 以“,”进行分隔，如/test/folder01,/test/folder02，并且输入的目录路径总数不超过20个。  当match_type为full_path时，为全路径，输入要求以“/”作为首字符，支持匹配指定目录下的具体文件，或者带通配符“\\*”的文件， 如/test/index.html,/test/\\*.jpg。 当match_type为home_page时，为空。
         :type match_value: str
-        :param ttl: 缓存时间。最大支持365天。
+        :param ttl: 缓存过期时间，最大支持365天。
         :type ttl: int
-        :param ttl_unit: 缓存过期时间单位。s：秒；m：分；h：小时；d：天
+        :param ttl_unit: 缓存过期时间单位，s：秒；m：分；h：小时；d：天。
         :type ttl_unit: str
-        :param priority: 此条配置的优先级, 默认值1，数值越大，优先级越高。取值范围为1-100，优先级不能相同
+        :param priority: 此条配置的优先级, 默认值1，数值越大，优先级越高，取值范围为1-100，优先级不能相同。
         :type priority: int
-        :param follow_origin: 缓存遵循源站开关（on：打开，off：关闭）
+        :param follow_origin: 缓存遵循源站开关，on：打开，off：关闭。
         :type follow_origin: str
-        :param url_parameter_type: 忽略指定URL参数： del_params， 保留指定URL参数： reserve_params， 忽略全部URL参数： ignore_url_params， 使用完整URL参数： full_url。
+        :param url_parameter_type: URL参数， del_params：忽略指定URL参数， reserve_params：保留指定URL参数， ignore_url_params：忽略全部URL参数， full_url：使用完整URL参数。
         :type url_parameter_type: str
-        :param url_parameter_value: 最多设置10条，以\&quot;,\&quot;分隔
+        :param url_parameter_value: URL参数值，最多设置10条，以\&quot;,\&quot;分隔。
         :type url_parameter_value: str
         """
         
@@ -88,7 +88,7 @@ class CacheRules:
     def match_type(self):
         """Gets the match_type of this CacheRules.
 
-        匹配所有文件 all， 按文件后缀匹配 file_extension， 按目录匹配 catalog， 全路径匹配 full_path， 按首页匹配 home_page。
+        类型,all：匹配所有文件， file_extension：按文件后缀匹配， catalog：按目录匹配， full_path：全路径匹配， home_page：按首页匹配。
 
         :return: The match_type of this CacheRules.
         :rtype: str
@@ -99,7 +99,7 @@ class CacheRules:
     def match_type(self, match_type):
         """Sets the match_type of this CacheRules.
 
-        匹配所有文件 all， 按文件后缀匹配 file_extension， 按目录匹配 catalog， 全路径匹配 full_path， 按首页匹配 home_page。
+        类型,all：匹配所有文件， file_extension：按文件后缀匹配， catalog：按目录匹配， full_path：全路径匹配， home_page：按首页匹配。
 
         :param match_type: The match_type of this CacheRules.
         :type match_type: str
@@ -110,7 +110,7 @@ class CacheRules:
     def match_value(self):
         """Gets the match_value of this CacheRules.
 
-        缓存匹配设置。 当match_type为all时，为空。当match_type为file_extension时，为文件后缀，输入首字符为“.”，以“,”进行分隔， 如.jpg,.zip,.exe，并且输入的文 件名后缀总数不超过20个。 当match_type为catalog时，为目录，输入要求以“/”作为首字符， 以“,”进行分隔，如/test/folder01,/test/folder02，并且输入的目录路径总数不超过20个。  当match_type为full_path时，为全路径，输入要求以“/”作为首字符，支持匹配指定目录下的具体文件，或者带通配符“*”的文件， 如/test/index.html或/test/*.jpg。 当match_type为home_page时，为空。
+        缓存匹配设置， 当match_type为all时，为空。当match_type为file_extension时，为文件后缀，输入首字符为“.”，以“,”进行分隔， 如.jpg,.zip,.exe，并且输入的文 件名后缀总数不超过20个。 当match_type为catalog时，为目录，输入要求以“/”作为首字符， 以“,”进行分隔，如/test/folder01,/test/folder02，并且输入的目录路径总数不超过20个。  当match_type为full_path时，为全路径，输入要求以“/”作为首字符，支持匹配指定目录下的具体文件，或者带通配符“\\*”的文件， 如/test/index.html,/test/\\*.jpg。 当match_type为home_page时，为空。
 
         :return: The match_value of this CacheRules.
         :rtype: str
@@ -121,7 +121,7 @@ class CacheRules:
     def match_value(self, match_value):
         """Sets the match_value of this CacheRules.
 
-        缓存匹配设置。 当match_type为all时，为空。当match_type为file_extension时，为文件后缀，输入首字符为“.”，以“,”进行分隔， 如.jpg,.zip,.exe，并且输入的文 件名后缀总数不超过20个。 当match_type为catalog时，为目录，输入要求以“/”作为首字符， 以“,”进行分隔，如/test/folder01,/test/folder02，并且输入的目录路径总数不超过20个。  当match_type为full_path时，为全路径，输入要求以“/”作为首字符，支持匹配指定目录下的具体文件，或者带通配符“*”的文件， 如/test/index.html或/test/*.jpg。 当match_type为home_page时，为空。
+        缓存匹配设置， 当match_type为all时，为空。当match_type为file_extension时，为文件后缀，输入首字符为“.”，以“,”进行分隔， 如.jpg,.zip,.exe，并且输入的文 件名后缀总数不超过20个。 当match_type为catalog时，为目录，输入要求以“/”作为首字符， 以“,”进行分隔，如/test/folder01,/test/folder02，并且输入的目录路径总数不超过20个。  当match_type为full_path时，为全路径，输入要求以“/”作为首字符，支持匹配指定目录下的具体文件，或者带通配符“\\*”的文件， 如/test/index.html,/test/\\*.jpg。 当match_type为home_page时，为空。
 
         :param match_value: The match_value of this CacheRules.
         :type match_value: str
@@ -132,7 +132,7 @@ class CacheRules:
     def ttl(self):
         """Gets the ttl of this CacheRules.
 
-        缓存时间。最大支持365天。
+        缓存过期时间，最大支持365天。
 
         :return: The ttl of this CacheRules.
         :rtype: int
@@ -143,7 +143,7 @@ class CacheRules:
     def ttl(self, ttl):
         """Sets the ttl of this CacheRules.
 
-        缓存时间。最大支持365天。
+        缓存过期时间，最大支持365天。
 
         :param ttl: The ttl of this CacheRules.
         :type ttl: int
@@ -154,7 +154,7 @@ class CacheRules:
     def ttl_unit(self):
         """Gets the ttl_unit of this CacheRules.
 
-        缓存过期时间单位。s：秒；m：分；h：小时；d：天
+        缓存过期时间单位，s：秒；m：分；h：小时；d：天。
 
         :return: The ttl_unit of this CacheRules.
         :rtype: str
@@ -165,7 +165,7 @@ class CacheRules:
     def ttl_unit(self, ttl_unit):
         """Sets the ttl_unit of this CacheRules.
 
-        缓存过期时间单位。s：秒；m：分；h：小时；d：天
+        缓存过期时间单位，s：秒；m：分；h：小时；d：天。
 
         :param ttl_unit: The ttl_unit of this CacheRules.
         :type ttl_unit: str
@@ -176,7 +176,7 @@ class CacheRules:
     def priority(self):
         """Gets the priority of this CacheRules.
 
-        此条配置的优先级, 默认值1，数值越大，优先级越高。取值范围为1-100，优先级不能相同
+        此条配置的优先级, 默认值1，数值越大，优先级越高，取值范围为1-100，优先级不能相同。
 
         :return: The priority of this CacheRules.
         :rtype: int
@@ -187,7 +187,7 @@ class CacheRules:
     def priority(self, priority):
         """Sets the priority of this CacheRules.
 
-        此条配置的优先级, 默认值1，数值越大，优先级越高。取值范围为1-100，优先级不能相同
+        此条配置的优先级, 默认值1，数值越大，优先级越高，取值范围为1-100，优先级不能相同。
 
         :param priority: The priority of this CacheRules.
         :type priority: int
@@ -198,7 +198,7 @@ class CacheRules:
     def follow_origin(self):
         """Gets the follow_origin of this CacheRules.
 
-        缓存遵循源站开关（on：打开，off：关闭）
+        缓存遵循源站开关，on：打开，off：关闭。
 
         :return: The follow_origin of this CacheRules.
         :rtype: str
@@ -209,7 +209,7 @@ class CacheRules:
     def follow_origin(self, follow_origin):
         """Sets the follow_origin of this CacheRules.
 
-        缓存遵循源站开关（on：打开，off：关闭）
+        缓存遵循源站开关，on：打开，off：关闭。
 
         :param follow_origin: The follow_origin of this CacheRules.
         :type follow_origin: str
@@ -220,7 +220,7 @@ class CacheRules:
     def url_parameter_type(self):
         """Gets the url_parameter_type of this CacheRules.
 
-        忽略指定URL参数： del_params， 保留指定URL参数： reserve_params， 忽略全部URL参数： ignore_url_params， 使用完整URL参数： full_url。
+        URL参数， del_params：忽略指定URL参数， reserve_params：保留指定URL参数， ignore_url_params：忽略全部URL参数， full_url：使用完整URL参数。
 
         :return: The url_parameter_type of this CacheRules.
         :rtype: str
@@ -231,7 +231,7 @@ class CacheRules:
     def url_parameter_type(self, url_parameter_type):
         """Sets the url_parameter_type of this CacheRules.
 
-        忽略指定URL参数： del_params， 保留指定URL参数： reserve_params， 忽略全部URL参数： ignore_url_params， 使用完整URL参数： full_url。
+        URL参数， del_params：忽略指定URL参数， reserve_params：保留指定URL参数， ignore_url_params：忽略全部URL参数， full_url：使用完整URL参数。
 
         :param url_parameter_type: The url_parameter_type of this CacheRules.
         :type url_parameter_type: str
@@ -242,7 +242,7 @@ class CacheRules:
     def url_parameter_value(self):
         """Gets the url_parameter_value of this CacheRules.
 
-        最多设置10条，以\",\"分隔
+        URL参数值，最多设置10条，以\",\"分隔。
 
         :return: The url_parameter_value of this CacheRules.
         :rtype: str
@@ -253,7 +253,7 @@ class CacheRules:
     def url_parameter_value(self, url_parameter_value):
         """Sets the url_parameter_value of this CacheRules.
 
-        最多设置10条，以\",\"分隔
+        URL参数值，最多设置10条，以\",\"分隔。
 
         :param url_parameter_value: The url_parameter_value of this CacheRules.
         :type url_parameter_value: str

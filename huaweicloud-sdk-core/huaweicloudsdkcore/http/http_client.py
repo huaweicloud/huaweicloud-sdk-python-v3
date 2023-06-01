@@ -42,6 +42,7 @@ class HttpClient(object):
         self._retry_times = config.retry_times
         self._pool_connections = config.pool_connections
         self._pool_maxsize = config.pool_maxsize
+        self.allow_redirects = config.allow_redirects
         if config.ssl_ca_cert is not None:
             self._verify = config.ssl_ca_cert if not config.ignore_ssl_verification else config.ignore_ssl_verification
         else:
@@ -83,7 +84,8 @@ class HttpClient(object):
                 verify=self._verify,
                 cert=self._cert,
                 data=request.body,
-                stream=request.stream
+                stream=request.stream,
+                allow_redirects=self.allow_redirects
             )
         except ConnectionError as connectionError:
             for each in connectionError.args:
@@ -115,6 +117,7 @@ class HttpClient(object):
             cert=self._cert,
             data=request.body,
             stream=request.stream,
+            allow_redirects=self.allow_redirects,
             hooks={'response': hooks}
         )
         return future

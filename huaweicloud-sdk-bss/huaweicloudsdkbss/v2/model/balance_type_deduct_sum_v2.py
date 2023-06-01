@@ -18,7 +18,7 @@ class BalanceTypeDeductSumV2:
 
     openapi_types = {
         'balance_type': 'str',
-        'amount': 'float',
+        'amount': 'decimal.Decimal',
         'bill_type': 'str'
     }
 
@@ -36,7 +36,7 @@ class BalanceTypeDeductSumV2:
         :param balance_type: 账户类型。 BALANCE_TYPE_DEBIT：现金BALANCE_TYPE_CREDIT：信用BALANCE_TYPE_BONUS：奖励BALANCE_TYPE_COUPON：代金券BALANCE_TYPE_RCASH_COUPON 现金券。BALANCE_TYPE_STORED_VALUE_CARD：储值卡消费
         :type balance_type: str
         :param amount: 金额。 对于billType&#x3D;1或者2的账单，该金额为负值。
-        :type amount: float
+        :type amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         :param bill_type: 账单类型。 0：正常1：退订2：华为核销
         :type bill_type: str
         """
@@ -84,7 +84,7 @@ class BalanceTypeDeductSumV2:
         金额。 对于billType=1或者2的账单，该金额为负值。
 
         :return: The amount of this BalanceTypeDeductSumV2.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         return self._amount
 
@@ -95,7 +95,7 @@ class BalanceTypeDeductSumV2:
         金额。 对于billType=1或者2的账单，该金额为负值。
 
         :param amount: The amount of this BalanceTypeDeductSumV2.
-        :type amount: float
+        :type amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         self._amount = amount
 

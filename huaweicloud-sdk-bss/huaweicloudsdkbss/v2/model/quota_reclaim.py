@@ -18,7 +18,7 @@ class QuotaReclaim:
 
     openapi_types = {
         'quota_id': 'str',
-        'quota_balance': 'float'
+        'quota_balance': 'decimal.Decimal'
     }
 
     attribute_map = {
@@ -34,7 +34,7 @@ class QuotaReclaim:
         :param quota_id: 被回收的云经销商的代金券额度ID。
         :type quota_id: str
         :param quota_balance: 被回收额度后的代金券额度余额。单位：元。
-        :type quota_balance: float
+        :type quota_balance: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         
         
@@ -77,7 +77,7 @@ class QuotaReclaim:
         被回收额度后的代金券额度余额。单位：元。
 
         :return: The quota_balance of this QuotaReclaim.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         return self._quota_balance
 
@@ -88,7 +88,7 @@ class QuotaReclaim:
         被回收额度后的代金券额度余额。单位：元。
 
         :param quota_balance: The quota_balance of this QuotaReclaim.
-        :type quota_balance: float
+        :type quota_balance: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         self._quota_balance = quota_balance
 

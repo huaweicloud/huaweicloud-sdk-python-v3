@@ -45,23 +45,23 @@ class HttpGetBody:
 
         The model defined in huaweicloud sdk
 
-        :param https_status: HTTPS证书是否启用。（on：开启，off：关闭）
+        :param https_status: HTTPS证书是否启用，on：开启，off：关闭。
         :type https_status: str
-        :param certificate_name: 证书名字。（长度限制为3-32字符）。当证书开启时必返回该字段。
+        :param certificate_name: 证书名字。
         :type certificate_name: str
-        :param certificate_value: HTTPS协议使用的证书内容，当证书开启时必返回该字段。取值范围：PEM编码格式。
+        :param certificate_value: HTTPS协议使用的证书内容，PEM编码格式。
         :type certificate_value: str
-        :param expire_time: 证书过期时间,单位：毫秒。
+        :param expire_time: 证书过期时间。  &gt; UTC时间。
         :type expire_time: int
-        :param certificate_source: 证书来源。1：代表华为云托管证书；0：表示自有证书。 默认值0。当证书开启时必返回该字段。
+        :param certificate_source: 证书来源,1：华为云托管证书,0：自有证书。
         :type certificate_source: int
         :param certificate_type: 证书类型。server：国际证书；server_sm：国密证书。
         :type certificate_type: str
-        :param http2_status: 是否使用HTTP2.0。（on：是，off：否）
+        :param http2_status: 是否使用HTTP2.0，on：是，off：否。
         :type http2_status: str
-        :param tls_version: 传输层安全性协议，目前支持TLSv1.0/1.1/1.2/1.3四个版本的协议。当证书开启时返回该字段，默认全部开启，不可全部关闭。
+        :param tls_version: 传输层安全性协议。
         :type tls_version: str
-        :param ocsp_stapling_status: 是否开启ocsp stapling （on：是，off：否）。
+        :param ocsp_stapling_status: 是否开启ocsp stapling,on：是，off：否。
         :type ocsp_stapling_status: str
         """
         
@@ -101,7 +101,7 @@ class HttpGetBody:
     def https_status(self):
         """Gets the https_status of this HttpGetBody.
 
-        HTTPS证书是否启用。（on：开启，off：关闭）
+        HTTPS证书是否启用，on：开启，off：关闭。
 
         :return: The https_status of this HttpGetBody.
         :rtype: str
@@ -112,7 +112,7 @@ class HttpGetBody:
     def https_status(self, https_status):
         """Sets the https_status of this HttpGetBody.
 
-        HTTPS证书是否启用。（on：开启，off：关闭）
+        HTTPS证书是否启用，on：开启，off：关闭。
 
         :param https_status: The https_status of this HttpGetBody.
         :type https_status: str
@@ -123,7 +123,7 @@ class HttpGetBody:
     def certificate_name(self):
         """Gets the certificate_name of this HttpGetBody.
 
-        证书名字。（长度限制为3-32字符）。当证书开启时必返回该字段。
+        证书名字。
 
         :return: The certificate_name of this HttpGetBody.
         :rtype: str
@@ -134,7 +134,7 @@ class HttpGetBody:
     def certificate_name(self, certificate_name):
         """Sets the certificate_name of this HttpGetBody.
 
-        证书名字。（长度限制为3-32字符）。当证书开启时必返回该字段。
+        证书名字。
 
         :param certificate_name: The certificate_name of this HttpGetBody.
         :type certificate_name: str
@@ -145,7 +145,7 @@ class HttpGetBody:
     def certificate_value(self):
         """Gets the certificate_value of this HttpGetBody.
 
-        HTTPS协议使用的证书内容，当证书开启时必返回该字段。取值范围：PEM编码格式。
+        HTTPS协议使用的证书内容，PEM编码格式。
 
         :return: The certificate_value of this HttpGetBody.
         :rtype: str
@@ -156,7 +156,7 @@ class HttpGetBody:
     def certificate_value(self, certificate_value):
         """Sets the certificate_value of this HttpGetBody.
 
-        HTTPS协议使用的证书内容，当证书开启时必返回该字段。取值范围：PEM编码格式。
+        HTTPS协议使用的证书内容，PEM编码格式。
 
         :param certificate_value: The certificate_value of this HttpGetBody.
         :type certificate_value: str
@@ -167,7 +167,7 @@ class HttpGetBody:
     def expire_time(self):
         """Gets the expire_time of this HttpGetBody.
 
-        证书过期时间,单位：毫秒。
+        证书过期时间。  > UTC时间。
 
         :return: The expire_time of this HttpGetBody.
         :rtype: int
@@ -178,7 +178,7 @@ class HttpGetBody:
     def expire_time(self, expire_time):
         """Sets the expire_time of this HttpGetBody.
 
-        证书过期时间,单位：毫秒。
+        证书过期时间。  > UTC时间。
 
         :param expire_time: The expire_time of this HttpGetBody.
         :type expire_time: int
@@ -189,7 +189,7 @@ class HttpGetBody:
     def certificate_source(self):
         """Gets the certificate_source of this HttpGetBody.
 
-        证书来源。1：代表华为云托管证书；0：表示自有证书。 默认值0。当证书开启时必返回该字段。
+        证书来源,1：华为云托管证书,0：自有证书。
 
         :return: The certificate_source of this HttpGetBody.
         :rtype: int
@@ -200,7 +200,7 @@ class HttpGetBody:
     def certificate_source(self, certificate_source):
         """Sets the certificate_source of this HttpGetBody.
 
-        证书来源。1：代表华为云托管证书；0：表示自有证书。 默认值0。当证书开启时必返回该字段。
+        证书来源,1：华为云托管证书,0：自有证书。
 
         :param certificate_source: The certificate_source of this HttpGetBody.
         :type certificate_source: int
@@ -233,7 +233,7 @@ class HttpGetBody:
     def http2_status(self):
         """Gets the http2_status of this HttpGetBody.
 
-        是否使用HTTP2.0。（on：是，off：否）
+        是否使用HTTP2.0，on：是，off：否。
 
         :return: The http2_status of this HttpGetBody.
         :rtype: str
@@ -244,7 +244,7 @@ class HttpGetBody:
     def http2_status(self, http2_status):
         """Sets the http2_status of this HttpGetBody.
 
-        是否使用HTTP2.0。（on：是，off：否）
+        是否使用HTTP2.0，on：是，off：否。
 
         :param http2_status: The http2_status of this HttpGetBody.
         :type http2_status: str
@@ -255,7 +255,7 @@ class HttpGetBody:
     def tls_version(self):
         """Gets the tls_version of this HttpGetBody.
 
-        传输层安全性协议，目前支持TLSv1.0/1.1/1.2/1.3四个版本的协议。当证书开启时返回该字段，默认全部开启，不可全部关闭。
+        传输层安全性协议。
 
         :return: The tls_version of this HttpGetBody.
         :rtype: str
@@ -266,7 +266,7 @@ class HttpGetBody:
     def tls_version(self, tls_version):
         """Sets the tls_version of this HttpGetBody.
 
-        传输层安全性协议，目前支持TLSv1.0/1.1/1.2/1.3四个版本的协议。当证书开启时返回该字段，默认全部开启，不可全部关闭。
+        传输层安全性协议。
 
         :param tls_version: The tls_version of this HttpGetBody.
         :type tls_version: str
@@ -277,7 +277,7 @@ class HttpGetBody:
     def ocsp_stapling_status(self):
         """Gets the ocsp_stapling_status of this HttpGetBody.
 
-        是否开启ocsp stapling （on：是，off：否）。
+        是否开启ocsp stapling,on：是，off：否。
 
         :return: The ocsp_stapling_status of this HttpGetBody.
         :rtype: str
@@ -288,7 +288,7 @@ class HttpGetBody:
     def ocsp_stapling_status(self, ocsp_stapling_status):
         """Sets the ocsp_stapling_status of this HttpGetBody.
 
-        是否开启ocsp stapling （on：是，off：否）。
+        是否开启ocsp stapling,on：是，off：否。
 
         :param ocsp_stapling_status: The ocsp_stapling_status of this HttpGetBody.
         :type ocsp_stapling_status: str

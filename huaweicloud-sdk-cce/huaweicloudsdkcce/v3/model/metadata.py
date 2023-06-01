@@ -41,11 +41,11 @@ class Metadata:
 
         :param uid: 唯一id标识
         :type uid: str
-        :param name: 插件名称
+        :param name: 资源名称
         :type name: str
-        :param labels: 插件标签，key/value对格式，接口保留字段，填写不会生效
+        :param labels: 资源标签，key/value对格式，接口保留字段，填写不会生效
         :type labels: dict(str, str)
-        :param annotations: 插件注解，由key/value组成 - 安装：固定值为{\&quot;addon.install/type\&quot;:\&quot;install\&quot;} - 升级：固定值为{\&quot;addon.upgrade/type\&quot;:\&quot;upgrade\&quot;} 
+        :param annotations: 资源注解，由key/value组成 
         :type annotations: dict(str, str)
         :param update_timestamp: 更新时间
         :type update_timestamp: date
@@ -102,7 +102,7 @@ class Metadata:
     def name(self):
         """Gets the name of this Metadata.
 
-        插件名称
+        资源名称
 
         :return: The name of this Metadata.
         :rtype: str
@@ -113,7 +113,7 @@ class Metadata:
     def name(self, name):
         """Sets the name of this Metadata.
 
-        插件名称
+        资源名称
 
         :param name: The name of this Metadata.
         :type name: str
@@ -124,7 +124,7 @@ class Metadata:
     def labels(self):
         """Gets the labels of this Metadata.
 
-        插件标签，key/value对格式，接口保留字段，填写不会生效
+        资源标签，key/value对格式，接口保留字段，填写不会生效
 
         :return: The labels of this Metadata.
         :rtype: dict(str, str)
@@ -135,7 +135,7 @@ class Metadata:
     def labels(self, labels):
         """Sets the labels of this Metadata.
 
-        插件标签，key/value对格式，接口保留字段，填写不会生效
+        资源标签，key/value对格式，接口保留字段，填写不会生效
 
         :param labels: The labels of this Metadata.
         :type labels: dict(str, str)
@@ -146,7 +146,7 @@ class Metadata:
     def annotations(self):
         """Gets the annotations of this Metadata.
 
-        插件注解，由key/value组成 - 安装：固定值为{\"addon.install/type\":\"install\"} - 升级：固定值为{\"addon.upgrade/type\":\"upgrade\"} 
+        资源注解，由key/value组成 
 
         :return: The annotations of this Metadata.
         :rtype: dict(str, str)
@@ -157,7 +157,7 @@ class Metadata:
     def annotations(self, annotations):
         """Sets the annotations of this Metadata.
 
-        插件注解，由key/value组成 - 安装：固定值为{\"addon.install/type\":\"install\"} - 升级：固定值为{\"addon.upgrade/type\":\"upgrade\"} 
+        资源注解，由key/value组成 
 
         :param annotations: The annotations of this Metadata.
         :type annotations: dict(str, str)

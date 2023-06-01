@@ -430,6 +430,62 @@ class IecClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def create_image(self, request):
+        """从边缘实例创建边缘私有镜像
+
+        使用指定边缘实例的系统盘创建边缘私有镜像。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateImage
+        :type request: :class:`huaweicloudsdkiec.v1.CreateImageRequest`
+        :rtype: :class:`huaweicloudsdkiec.v1.CreateImageResponse`
+        """
+        return self._create_image_with_http_info(request)
+
+    def _create_image_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/images/create',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateImageResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def create_keypair(self, request):
         """创建和导入密钥
 
@@ -826,6 +882,62 @@ class IecClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def delete_bandwidth(self, request):
+        """删除带宽
+
+        删除带宽。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteBandwidth
+        :type request: :class:`huaweicloudsdkiec.v1.DeleteBandwidthRequest`
+        :rtype: :class:`huaweicloudsdkiec.v1.DeleteBandwidthResponse`
+        """
+        return self._delete_bandwidth_with_http_info(request)
+
+    def _delete_bandwidth_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'bandwidth_id' in local_var_params:
+            path_params['bandwidth_id'] = local_var_params['bandwidth_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/bandwidths/{bandwidth_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteBandwidthResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def delete_deployment(self, request):
         """删除部署计划
 
@@ -933,6 +1045,62 @@ class IecClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='DeleteEdgeCloudResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_image(self, request):
+        """删除边缘私有镜像
+
+        将指定ID的边缘私有镜像删除
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteImage
+        :type request: :class:`huaweicloudsdkiec.v1.DeleteImageRequest`
+        :rtype: :class:`huaweicloudsdkiec.v1.DeleteImageResponse`
+        """
+        return self._delete_image_with_http_info(request)
+
+    def _delete_image_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'image_id' in local_var_params:
+            path_params['image_id'] = local_var_params['image_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/images/{image_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteImageResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1727,6 +1895,108 @@ class IecClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ListBandwidthsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_cloud_images(self, request):
+        """查询中心镜像列表
+
+        查询租户在某个云Region的可见镜像列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListCloudImages
+        :type request: :class:`huaweicloudsdkiec.v1.ListCloudImagesRequest`
+        :rtype: :class:`huaweicloudsdkiec.v1.ListCloudImagesResponse`
+        """
+        return self._list_cloud_images_with_http_info(request)
+
+    def _list_cloud_images_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'region_id' in local_var_params:
+            path_params['region_id'] = local_var_params['region_id']
+
+        query_params = []
+        if 'imagetype' in local_var_params:
+            query_params.append(('__imagetype', local_var_params['imagetype']))
+        if 'isregistered' in local_var_params:
+            query_params.append(('__isregistered', local_var_params['isregistered']))
+        if 'os_type' in local_var_params:
+            query_params.append(('__os_type', local_var_params['os_type']))
+        if 'support_diskintensive' in local_var_params:
+            query_params.append(('__support_diskintensive', local_var_params['support_diskintensive']))
+        if 'support_highperformance' in local_var_params:
+            query_params.append(('__support_highperformance', local_var_params['support_highperformance']))
+        if 'support_kvm' in local_var_params:
+            query_params.append(('__support_kvm', local_var_params['support_kvm']))
+        if 'support_kvm_gpu_type' in local_var_params:
+            query_params.append(('__support_kvm_gpu_type', local_var_params['support_kvm_gpu_type']))
+        if 'support_kvm_infiniband' in local_var_params:
+            query_params.append(('__support_kvm_infiniband', local_var_params['support_kvm_infiniband']))
+        if 'support_largememory' in local_var_params:
+            query_params.append(('__support_largememory', local_var_params['support_largememory']))
+        if 'support_xen' in local_var_params:
+            query_params.append(('__support_xen', local_var_params['support_xen']))
+        if 'support_xen_gpu_type' in local_var_params:
+            query_params.append(('__support_xen_gpu_type', local_var_params['support_xen_gpu_type']))
+        if 'support_xen_hana' in local_var_params:
+            query_params.append(('__support_xen_hana', local_var_params['support_xen_hana']))
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'owner' in local_var_params:
+            query_params.append(('owner', local_var_params['owner']))
+        if 'protected' in local_var_params:
+            query_params.append(('protected', local_var_params['protected']))
+        if 'sort_dir' in local_var_params:
+            query_params.append(('sort_dir', local_var_params['sort_dir']))
+        if 'sort_key' in local_var_params:
+            query_params.append(('sort_key', local_var_params['sort_key']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'virtual_env_type' in local_var_params:
+            query_params.append(('virtual_env_type', local_var_params['virtual_env_type']))
+        if 'visibility' in local_var_params:
+            query_params.append(('visibility', local_var_params['visibility']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/cloudimages/{region_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListCloudImagesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -2781,6 +3051,121 @@ class IecClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def rebuild_image(self, request):
+        """重试边缘镜像任务
+
+        重试边缘镜像任务。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for RebuildImage
+        :type request: :class:`huaweicloudsdkiec.v1.RebuildImageRequest`
+        :rtype: :class:`huaweicloudsdkiec.v1.RebuildImageResponse`
+        """
+        return self._rebuild_image_with_http_info(request)
+
+    def _rebuild_image_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{domain_id}/jobs/{job_id}/action',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='RebuildImageResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def register_image(self, request):
+        """注册边缘私有镜像
+
+        将指定Region和ID的IMS镜像注册到边缘IEC-IMS; 
+        注意指定的Region必须在当前IEC-IMS支持的Region列表中。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for RegisterImage
+        :type request: :class:`huaweicloudsdkiec.v1.RegisterImageRequest`
+        :rtype: :class:`huaweicloudsdkiec.v1.RegisterImageResponse`
+        """
+        return self._register_image_with_http_info(request)
+
+    def _register_image_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/images/register',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='RegisterImageResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def show_bandwidth(self, request):
         """查询带宽详情
 
@@ -3397,6 +3782,60 @@ class IecClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def show_volume_types(self, request):
+        """查询硬盘类型列表
+
+        查询硬盘类型列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowVolumeTypes
+        :type request: :class:`huaweicloudsdkiec.v1.ShowVolumeTypesRequest`
+        :rtype: :class:`huaweicloudsdkiec.v1.ShowVolumeTypesResponse`
+        """
+        return self._show_volume_types_with_http_info(request)
+
+    def _show_volume_types_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/cloudvolumes/volume-types',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowVolumeTypesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def show_vpc(self, request):
         """查询虚拟私有云详情
 
@@ -3448,6 +3887,64 @@ class IecClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ShowVpcResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_bandwidth(self, request):
+        """更新带宽
+
+        更新带宽。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateBandwidth
+        :type request: :class:`huaweicloudsdkiec.v1.UpdateBandwidthRequest`
+        :rtype: :class:`huaweicloudsdkiec.v1.UpdateBandwidthResponse`
+        """
+        return self._update_bandwidth_with_http_info(request)
+
+    def _update_bandwidth_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'bandwidth_id' in local_var_params:
+            path_params['bandwidth_id'] = local_var_params['bandwidth_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/bandwidths/{bandwidth_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateBandwidthResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

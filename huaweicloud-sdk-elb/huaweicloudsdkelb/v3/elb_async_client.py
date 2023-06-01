@@ -27,7 +27,7 @@ class ElbAsyncClient(Client):
     def batch_create_members_async(self, request):
         """批量创建后端服务器
 
-        在指定pool下批量创建后端服务器。
+        在指定pool下批量创建后端服务器。一次最多添加200个。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -86,7 +86,7 @@ class ElbAsyncClient(Client):
     def batch_delete_members_async(self, request):
         """批量删除后端服务器
 
-        在指定pool下批量删除后端服务器。
+        在指定pool下批量删除后端服务器。一次最多添加200个。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -137,6 +137,65 @@ class ElbAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='BatchDeleteMembersResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def batch_update_members_async(self, request):
+        """批量更新后端服务器
+
+        在指定pool下批量更新后端服务器。一次最多添加200个。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchUpdateMembers
+        :type request: :class:`huaweicloudsdkelb.v3.BatchUpdateMembersRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.BatchUpdateMembersResponse`
+        """
+        return self._batch_update_members_with_http_info(request)
+
+    def _batch_update_members_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'pool_id' in local_var_params:
+            path_params['pool_id'] = local_var_params['pool_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/elb/pools/{pool_id}/members/batch-update',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='BatchUpdateMembersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -202,7 +261,10 @@ class ElbAsyncClient(Client):
     def change_loadbalancer_charge_mode_async(self, request):
         """变更负载均衡器计费模式
 
-        负载均衡器计费模式变更，当前只支持按需计费转包周期计费。
+        负载均衡器计费模式变更，当前支持的计费模式变更为：
+        1. 按需计费转包周期计费；
+        2. 按需按规格计费转按需按使用量计费；
+        3. 按需按使用量计费转按需按规格计费；
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1128,6 +1190,63 @@ class ElbAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def delete_listener_force_async(self, request):
+        """级联删除监听器
+
+        删除监听器且级联删除其下子资源（删除监听器、转发策略等，解绑后端服务器组）。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteListenerForce
+        :type request: :class:`huaweicloudsdkelb.v3.DeleteListenerForceRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.DeleteListenerForceResponse`
+        """
+        return self._delete_listener_force_with_http_info(request)
+
+    def _delete_listener_force_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'listener_id' in local_var_params:
+            path_params['listener_id'] = local_var_params['listener_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/elb/listeners/{listener_id}/force',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteListenerForceResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def delete_load_balancer_async(self, request):
         """删除负载均衡器
 
@@ -1180,6 +1299,63 @@ class ElbAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='DeleteLoadBalancerResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_load_balancer_force_async(self, request):
+        """级联删除负载均衡器
+
+        删除负载均衡器且级联删除其下子资源（删除负载均衡器及其绑定的监听器、后端服务器组、后端服务器等一系列资源）
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteLoadBalancerForce
+        :type request: :class:`huaweicloudsdkelb.v3.DeleteLoadBalancerForceRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.DeleteLoadBalancerForceResponse`
+        """
+        return self._delete_load_balancer_force_with_http_info(request)
+
+    def _delete_load_balancer_force_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'loadbalancer_id' in local_var_params:
+            path_params['loadbalancer_id'] = local_var_params['loadbalancer_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/elb/loadbalancers/{loadbalancer_id}/force-elb',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteLoadBalancerForceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -2110,6 +2286,9 @@ class ElbAsyncClient(Client):
         if 'member_instance_id' in local_var_params:
             query_params.append(('member_instance_id', local_var_params['member_instance_id']))
             collection_formats['member_instance_id'] = 'csv'
+        if 'protection_status' in local_var_params:
+            query_params.append(('protection_status', local_var_params['protection_status']))
+            collection_formats['protection_status'] = 'csv'
 
         header_params = {}
 
@@ -2255,6 +2434,12 @@ class ElbAsyncClient(Client):
         if 'autoscaling' in local_var_params:
             query_params.append(('autoscaling', local_var_params['autoscaling']))
             collection_formats['autoscaling'] = 'csv'
+        if 'protection_status' in local_var_params:
+            query_params.append(('protection_status', local_var_params['protection_status']))
+            collection_formats['protection_status'] = 'csv'
+        if 'global_eips' in local_var_params:
+            query_params.append(('global_eips', local_var_params['global_eips']))
+            collection_formats['global_eips'] = 'csv'
 
         header_params = {}
 
@@ -2539,6 +2724,9 @@ class ElbAsyncClient(Client):
         if 'type' in local_var_params:
             query_params.append(('type', local_var_params['type']))
             collection_formats['type'] = 'csv'
+        if 'protection_status' in local_var_params:
+            query_params.append(('protection_status', local_var_params['protection_status']))
+            collection_formats['protection_status'] = 'csv'
 
         header_params = {}
 
@@ -2710,8 +2898,6 @@ class ElbAsyncClient(Client):
         查询系统安全策略列表。
         
         系统安全策略为预置的所有租户通用的安全策略，租户不可新增或修改。
-        
-        [荷兰region不支持自定义安全策略功能，请勿使用。](tag:dt)
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -4161,7 +4347,7 @@ class ElbAsyncClient(Client):
     def batch_delete_ip_list_async(self, request):
         """删除IP地址组的IP列表项
 
-        批量删除IP地址组的IP列表信息。
+        批量删除IP地址组的IP列表信息。[荷兰region不支持该API](tag:dt,dt_test)
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -4235,7 +4421,7 @@ class ElbAsyncClient(Client):
         - 计算出来的预占IP数大于等于最终实际占用的IP数。
         - 总占用IP数量，即整个LB所占用的IP数量。
         
-        [不支持传入l7_flavor_id](tag:fcs)
+        [不支持传入l7_flavor_id](tag:hcso,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b)
         
         Please refer to HUAWEI cloud API Explorer for details.
 

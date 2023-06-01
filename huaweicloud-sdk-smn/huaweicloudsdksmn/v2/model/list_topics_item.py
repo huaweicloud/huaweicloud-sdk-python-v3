@@ -21,7 +21,8 @@ class ListTopicsItem:
         'name': 'str',
         'display_name': 'str',
         'push_policy': 'int',
-        'enterprise_project_id': 'str'
+        'enterprise_project_id': 'str',
+        'topic_id': 'str'
     }
 
     attribute_map = {
@@ -29,10 +30,11 @@ class ListTopicsItem:
         'name': 'name',
         'display_name': 'display_name',
         'push_policy': 'push_policy',
-        'enterprise_project_id': 'enterprise_project_id'
+        'enterprise_project_id': 'enterprise_project_id',
+        'topic_id': 'topic_id'
     }
 
-    def __init__(self, topic_urn=None, name=None, display_name=None, push_policy=None, enterprise_project_id=None):
+    def __init__(self, topic_urn=None, name=None, display_name=None, push_policy=None, enterprise_project_id=None, topic_id=None):
         """ListTopicsItem
 
         The model defined in huaweicloud sdk
@@ -47,6 +49,8 @@ class ListTopicsItem:
         :type push_policy: int
         :param enterprise_project_id: 企业项目ID。
         :type enterprise_project_id: str
+        :param topic_id: 主题ID。
+        :type topic_id: str
         """
         
         
@@ -56,6 +60,7 @@ class ListTopicsItem:
         self._display_name = None
         self._push_policy = None
         self._enterprise_project_id = None
+        self._topic_id = None
         self.discriminator = None
 
         self.topic_urn = topic_urn
@@ -63,6 +68,7 @@ class ListTopicsItem:
         self.display_name = display_name
         self.push_policy = push_policy
         self.enterprise_project_id = enterprise_project_id
+        self.topic_id = topic_id
 
     @property
     def topic_urn(self):
@@ -173,6 +179,28 @@ class ListTopicsItem:
         :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def topic_id(self):
+        """Gets the topic_id of this ListTopicsItem.
+
+        主题ID。
+
+        :return: The topic_id of this ListTopicsItem.
+        :rtype: str
+        """
+        return self._topic_id
+
+    @topic_id.setter
+    def topic_id(self, topic_id):
+        """Sets the topic_id of this ListTopicsItem.
+
+        主题ID。
+
+        :param topic_id: The topic_id of this ListTopicsItem.
+        :type topic_id: str
+        """
+        self._topic_id = topic_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

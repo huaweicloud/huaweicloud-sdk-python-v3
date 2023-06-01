@@ -26,6 +26,7 @@ import sys
 import threading
 import warnings
 from collections import OrderedDict
+from typing import Iterable
 from logging.handlers import RotatingFileHandler
 
 import simplejson as json
@@ -53,6 +54,12 @@ try:
     from typing import TypeVar, Generic
 except ImportError:
     from typing_extensions import TypeVar, Generic
+if six.PY3:
+    from typing import Mapping
+
+    _BASE_ITER_TYPES = (str, bytes, list, tuple, Mapping)
+else:
+    _BASE_ITER_TYPES = (str, bytes, list, tuple, dict)
 
 T = TypeVar("T")
 
@@ -331,21 +338,26 @@ class Client(object):
 
     @classmethod
     def _parse_body(cls, body, post_params):
+        str_body = ""
         if body:
-            if six.PY3:
-                from typing import Mapping
-                if all([hasattr(body, '__iter__'), not isinstance(body, (str, bytes, list, tuple, Mapping))]):
-                    return body
-            else:
-                if all([hasattr(body, '__iter__'), not isinstance(body, (str, bytes, list, tuple, dict))]):
-                    return body
-            body = http_utils.sanitize_for_serialization(body)
-            body = json.dumps(body, use_decimal=True)
+            if cls._is_iterable_body(body):
+                return body
+
+            if isinstance(body, six.text_type):
+                return body
+
+            str_body = json.dumps(http_utils.sanitize_for_serialization(body), use_decimal=True)
         elif len(post_params) != 0:
-            body = post_params
-        else:
-            body = ""
-        return body
+            str_body = post_params
+
+        return str_body
+
+    @classmethod
+    def _is_iterable_body(cls, body):
+        if not isinstance(body, Iterable):
+            return False
+
+        return not isinstance(body, _BASE_ITER_TYPES)
 
     @classmethod
     def _parse_formdata_body(cls, body):
@@ -528,7 +540,7 @@ class Client(object):
             if klass in NATIVE_TYPES_MAPPING:
                 klass = NATIVE_TYPES_MAPPING[klass]
             elif klass == FormFile.TYPE:
-                return FormFile(open(data, "rb"))
+                return FormFile(data)
             else:
                 klass = getattr(self.model_package, klass)
 

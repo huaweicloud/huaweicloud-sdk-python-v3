@@ -22,6 +22,7 @@ class SubscriptionTarget:
         'provider_type': 'str',
         'connection_id': 'str',
         'detail': 'object',
+        'kafka_detail': 'KafkaTargetDetail',
         'transform': 'TransForm'
     }
 
@@ -31,10 +32,11 @@ class SubscriptionTarget:
         'provider_type': 'provider_type',
         'connection_id': 'connection_id',
         'detail': 'detail',
+        'kafka_detail': 'kafka_detail',
         'transform': 'transform'
     }
 
-    def __init__(self, id=None, name=None, provider_type=None, connection_id=None, detail=None, transform=None):
+    def __init__(self, id=None, name=None, provider_type=None, connection_id=None, detail=None, kafka_detail=None, transform=None):
         """SubscriptionTarget
 
         The model defined in huaweicloud sdk
@@ -49,6 +51,8 @@ class SubscriptionTarget:
         :type connection_id: str
         :param detail: 订阅的事件目标参数列表，该字段序列化后总长度不超过1024字节
         :type detail: object
+        :param kafka_detail: 
+        :type kafka_detail: :class:`huaweicloudsdkeg.v1.KafkaTargetDetail`
         :param transform: 
         :type transform: :class:`huaweicloudsdkeg.v1.TransForm`
         """
@@ -60,6 +64,7 @@ class SubscriptionTarget:
         self._provider_type = None
         self._connection_id = None
         self._detail = None
+        self._kafka_detail = None
         self._transform = None
         self.discriminator = None
 
@@ -70,6 +75,8 @@ class SubscriptionTarget:
         if connection_id is not None:
             self.connection_id = connection_id
         self.detail = detail
+        if kafka_detail is not None:
+            self.kafka_detail = kafka_detail
         self.transform = transform
 
     @property
@@ -181,6 +188,24 @@ class SubscriptionTarget:
         :type detail: object
         """
         self._detail = detail
+
+    @property
+    def kafka_detail(self):
+        """Gets the kafka_detail of this SubscriptionTarget.
+
+        :return: The kafka_detail of this SubscriptionTarget.
+        :rtype: :class:`huaweicloudsdkeg.v1.KafkaTargetDetail`
+        """
+        return self._kafka_detail
+
+    @kafka_detail.setter
+    def kafka_detail(self, kafka_detail):
+        """Sets the kafka_detail of this SubscriptionTarget.
+
+        :param kafka_detail: The kafka_detail of this SubscriptionTarget.
+        :type kafka_detail: :class:`huaweicloudsdkeg.v1.KafkaTargetDetail`
+        """
+        self._kafka_detail = kafka_detail
 
     @property
     def transform(self):

@@ -48,7 +48,9 @@ class ListLoadBalancersRequest:
         'ip_version': 'list[int]',
         'deletion_protection_enable': 'bool',
         'elb_virsubnet_type': 'list[str]',
-        'autoscaling': 'list[str]'
+        'autoscaling': 'list[str]',
+        'protection_status': 'list[str]',
+        'global_eips': 'list[str]'
     }
 
     attribute_map = {
@@ -83,10 +85,12 @@ class ListLoadBalancersRequest:
         'ip_version': 'ip_version',
         'deletion_protection_enable': 'deletion_protection_enable',
         'elb_virsubnet_type': 'elb_virsubnet_type',
-        'autoscaling': 'autoscaling'
+        'autoscaling': 'autoscaling',
+        'protection_status': 'protection_status',
+        'global_eips': 'global_eips'
     }
 
-    def __init__(self, marker=None, limit=None, page_reverse=None, id=None, name=None, description=None, admin_state_up=None, provisioning_status=None, operating_status=None, guaranteed=None, vpc_id=None, vip_port_id=None, vip_address=None, vip_subnet_cidr_id=None, ipv6_vip_port_id=None, ipv6_vip_address=None, ipv6_vip_virsubnet_id=None, eips=None, publicips=None, availability_zone_list=None, l4_flavor_id=None, l4_scale_flavor_id=None, l7_flavor_id=None, l7_scale_flavor_id=None, billing_info=None, member_device_id=None, member_address=None, enterprise_project_id=None, ip_version=None, deletion_protection_enable=None, elb_virsubnet_type=None, autoscaling=None):
+    def __init__(self, marker=None, limit=None, page_reverse=None, id=None, name=None, description=None, admin_state_up=None, provisioning_status=None, operating_status=None, guaranteed=None, vpc_id=None, vip_port_id=None, vip_address=None, vip_subnet_cidr_id=None, ipv6_vip_port_id=None, ipv6_vip_address=None, ipv6_vip_virsubnet_id=None, eips=None, publicips=None, availability_zone_list=None, l4_flavor_id=None, l4_scale_flavor_id=None, l7_flavor_id=None, l7_scale_flavor_id=None, billing_info=None, member_device_id=None, member_address=None, enterprise_project_id=None, ip_version=None, deletion_protection_enable=None, elb_virsubnet_type=None, autoscaling=None, protection_status=None, global_eips=None):
         """ListLoadBalancersRequest
 
         The model defined in huaweicloud sdk
@@ -131,15 +135,15 @@ class ListLoadBalancersRequest:
         :type publicips: list[str]
         :param availability_zone_list: 负载均衡器所在可用区列表。  支持多值查询，查询条件格式： *availability_zone_list&#x3D;xxx&amp;availability_zone_list&#x3D;xxx*。
         :type availability_zone_list: list[str]
-        :param l4_flavor_id: 四层Flavor ID。  支持多值查询，查询条件格式：*l4_flavor_id&#x3D;xxx&amp;l4_flavor_id&#x3D;xxx*。  [不支持该字段，请勿使用。](tag:fcs)
+        :param l4_flavor_id: 四层Flavor ID。  支持多值查询，查询条件格式：*l4_flavor_id&#x3D;xxx&amp;l4_flavor_id&#x3D;xxx*。  [不支持该字段，请勿使用。](tag:hcso,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b)
         :type l4_flavor_id: list[str]
         :param l4_scale_flavor_id: 四层弹性Flavor ID。  支持多值查询，查询条件格式：*l4_scale_flavor_id&#x3D;xxx&amp;l4_scale_flavor_id&#x3D;xxx*。  不支持该字段，请勿使用。
         :type l4_scale_flavor_id: list[str]
-        :param l7_flavor_id: 七层Flavor ID。  支持多值查询，查询条件格式：*l7_flavor_id&#x3D;xxx&amp;l7_flavor_id&#x3D;xxx*。  [不支持该字段，请勿使用。](tag:fcs)
+        :param l7_flavor_id: 七层Flavor ID。  支持多值查询，查询条件格式：*l7_flavor_id&#x3D;xxx&amp;l7_flavor_id&#x3D;xxx*。  [不支持该字段，请勿使用。](tag:hcso,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b)
         :type l7_flavor_id: list[str]
         :param l7_scale_flavor_id: 七层弹性Flavor ID。  支持多值查询，查询条件格式：*l7_scale_flavor_id&#x3D;xxx&amp;l7_scale_flavor_id&#x3D;xxx*。  不支持该字段，请勿使用。
         :type l7_scale_flavor_id: list[str]
-        :param billing_info: 资源账单信息。  支持多值查询，查询条件格式：*billing_info&#x3D;xxx&amp;billing_info&#x3D;xxx*。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42,dt,dt_test,hcso_dt)
+        :param billing_info: 资源账单信息。  支持多值查询，查询条件格式：*billing_info&#x3D;xxx&amp;billing_info&#x3D;xxx*。  [不支持该字段，请勿使用。](tag:hws_hk,hws_eu,hws_test,hcs,hcs_sm,hcso,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b,hcso_dt,dt,dt_test,ocb,ctc,cmcc,tm,sbc,g42,hws_ocb,hk_sbc,hk_tm,hk_g42)
         :type billing_info: list[str]
         :param member_device_id: 负载均衡器中的后端云服务器对应的弹性云服务器的ID。仅用于查询条件，不作为响应参数字段。  支持多值查询，查询条件格式：*member_device_id&#x3D;xxx&amp;member_device_id&#x3D;xxx*。
         :type member_device_id: list[str]
@@ -153,8 +157,12 @@ class ListLoadBalancersRequest:
         :type deletion_protection_enable: bool
         :param elb_virsubnet_type: 下联面子网类型。  取值： - ipv4：ipv4。 - dualstack：双栈。  支持多值查询，查询条件格式： *elb_virsubnet_type&#x3D;ipv4&amp;elb_virsubnet_type&#x3D;dualstack*。
         :type elb_virsubnet_type: list[str]
-        :param autoscaling: 是否开启弹性扩缩容。示例如下： \&quot;autoscaling\&quot;: {             \&quot;enable\&quot;: \&quot;true\&quot;         }  支持多值查询，查询条件格式：  *autoscaling&#x3D;enable&#x3D;true&amp;autoscaling&#x3D;enable&#x3D;false*。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42,fcs)
+        :param autoscaling: 是否开启弹性扩缩容。示例如下： \&quot;autoscaling\&quot;: {             \&quot;enable\&quot;: \&quot;true\&quot;         }  支持多值查询，查询条件格式：  *autoscaling&#x3D;enable&#x3D;true&amp;autoscaling&#x3D;enable&#x3D;false*。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42,hcso,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b)
         :type autoscaling: list[str]
+        :param protection_status: 修改保护状态, 取值： - nonProtection: 不保护，默认值为nonProtection - consoleProtection: 控制台修改保护
+        :type protection_status: list[str]
+        :param global_eips: 负载均衡器绑定的公网IP。示例如下：  {     \&quot;global_eips\&quot;: [         {             \&quot;global_eip_id\&quot;: \&quot;24000000-0000-0000-0000-100000000001\&quot;,             \&quot;global_eip_address\&quot;: \&quot;10.10.10.10\&quot;,             \&quot;ip_version\&quot;: 4         }     ] }   支持多值查询，查询条件格式：  - global_eip_id作为查询条件：*global_eips&#x3D;global_eip_id&#x3D;xxx&amp;global_eips&#x3D;global_eip_id&#x3D;xxx*。  - global_eip_address作为查询条件：*global_eips&#x3D;global_eip_address&#x3D;xxx&amp;global_eips&#x3D;global_eip_address&#x3D;xxx*。  - ip_version作为查询条件：*global_eips&#x3D;ip_version&#x3D;xxx&amp;global_eips&#x3D;ip_version&#x3D;xxx*。
+        :type global_eips: list[str]
         """
         
         
@@ -191,6 +199,8 @@ class ListLoadBalancersRequest:
         self._deletion_protection_enable = None
         self._elb_virsubnet_type = None
         self._autoscaling = None
+        self._protection_status = None
+        self._global_eips = None
         self.discriminator = None
 
         if marker is not None:
@@ -257,6 +267,10 @@ class ListLoadBalancersRequest:
             self.elb_virsubnet_type = elb_virsubnet_type
         if autoscaling is not None:
             self.autoscaling = autoscaling
+        if protection_status is not None:
+            self.protection_status = protection_status
+        if global_eips is not None:
+            self.global_eips = global_eips
 
     @property
     def marker(self):
@@ -702,7 +716,7 @@ class ListLoadBalancersRequest:
     def l4_flavor_id(self):
         """Gets the l4_flavor_id of this ListLoadBalancersRequest.
 
-        四层Flavor ID。  支持多值查询，查询条件格式：*l4_flavor_id=xxx&l4_flavor_id=xxx*。  [不支持该字段，请勿使用。](tag:fcs)
+        四层Flavor ID。  支持多值查询，查询条件格式：*l4_flavor_id=xxx&l4_flavor_id=xxx*。  [不支持该字段，请勿使用。](tag:hcso,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b)
 
         :return: The l4_flavor_id of this ListLoadBalancersRequest.
         :rtype: list[str]
@@ -713,7 +727,7 @@ class ListLoadBalancersRequest:
     def l4_flavor_id(self, l4_flavor_id):
         """Sets the l4_flavor_id of this ListLoadBalancersRequest.
 
-        四层Flavor ID。  支持多值查询，查询条件格式：*l4_flavor_id=xxx&l4_flavor_id=xxx*。  [不支持该字段，请勿使用。](tag:fcs)
+        四层Flavor ID。  支持多值查询，查询条件格式：*l4_flavor_id=xxx&l4_flavor_id=xxx*。  [不支持该字段，请勿使用。](tag:hcso,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b)
 
         :param l4_flavor_id: The l4_flavor_id of this ListLoadBalancersRequest.
         :type l4_flavor_id: list[str]
@@ -746,7 +760,7 @@ class ListLoadBalancersRequest:
     def l7_flavor_id(self):
         """Gets the l7_flavor_id of this ListLoadBalancersRequest.
 
-        七层Flavor ID。  支持多值查询，查询条件格式：*l7_flavor_id=xxx&l7_flavor_id=xxx*。  [不支持该字段，请勿使用。](tag:fcs)
+        七层Flavor ID。  支持多值查询，查询条件格式：*l7_flavor_id=xxx&l7_flavor_id=xxx*。  [不支持该字段，请勿使用。](tag:hcso,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b)
 
         :return: The l7_flavor_id of this ListLoadBalancersRequest.
         :rtype: list[str]
@@ -757,7 +771,7 @@ class ListLoadBalancersRequest:
     def l7_flavor_id(self, l7_flavor_id):
         """Sets the l7_flavor_id of this ListLoadBalancersRequest.
 
-        七层Flavor ID。  支持多值查询，查询条件格式：*l7_flavor_id=xxx&l7_flavor_id=xxx*。  [不支持该字段，请勿使用。](tag:fcs)
+        七层Flavor ID。  支持多值查询，查询条件格式：*l7_flavor_id=xxx&l7_flavor_id=xxx*。  [不支持该字段，请勿使用。](tag:hcso,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b)
 
         :param l7_flavor_id: The l7_flavor_id of this ListLoadBalancersRequest.
         :type l7_flavor_id: list[str]
@@ -790,7 +804,7 @@ class ListLoadBalancersRequest:
     def billing_info(self):
         """Gets the billing_info of this ListLoadBalancersRequest.
 
-        资源账单信息。  支持多值查询，查询条件格式：*billing_info=xxx&billing_info=xxx*。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42,dt,dt_test,hcso_dt)
+        资源账单信息。  支持多值查询，查询条件格式：*billing_info=xxx&billing_info=xxx*。  [不支持该字段，请勿使用。](tag:hws_hk,hws_eu,hws_test,hcs,hcs_sm,hcso,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b,hcso_dt,dt,dt_test,ocb,ctc,cmcc,tm,sbc,g42,hws_ocb,hk_sbc,hk_tm,hk_g42)
 
         :return: The billing_info of this ListLoadBalancersRequest.
         :rtype: list[str]
@@ -801,7 +815,7 @@ class ListLoadBalancersRequest:
     def billing_info(self, billing_info):
         """Sets the billing_info of this ListLoadBalancersRequest.
 
-        资源账单信息。  支持多值查询，查询条件格式：*billing_info=xxx&billing_info=xxx*。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42,dt,dt_test,hcso_dt)
+        资源账单信息。  支持多值查询，查询条件格式：*billing_info=xxx&billing_info=xxx*。  [不支持该字段，请勿使用。](tag:hws_hk,hws_eu,hws_test,hcs,hcs_sm,hcso,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b,hcso_dt,dt,dt_test,ocb,ctc,cmcc,tm,sbc,g42,hws_ocb,hk_sbc,hk_tm,hk_g42)
 
         :param billing_info: The billing_info of this ListLoadBalancersRequest.
         :type billing_info: list[str]
@@ -944,7 +958,7 @@ class ListLoadBalancersRequest:
     def autoscaling(self):
         """Gets the autoscaling of this ListLoadBalancersRequest.
 
-        是否开启弹性扩缩容。示例如下： \"autoscaling\": {             \"enable\": \"true\"         }  支持多值查询，查询条件格式：  *autoscaling=enable=true&autoscaling=enable=false*。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42,fcs)
+        是否开启弹性扩缩容。示例如下： \"autoscaling\": {             \"enable\": \"true\"         }  支持多值查询，查询条件格式：  *autoscaling=enable=true&autoscaling=enable=false*。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42,hcso,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b)
 
         :return: The autoscaling of this ListLoadBalancersRequest.
         :rtype: list[str]
@@ -955,12 +969,56 @@ class ListLoadBalancersRequest:
     def autoscaling(self, autoscaling):
         """Sets the autoscaling of this ListLoadBalancersRequest.
 
-        是否开启弹性扩缩容。示例如下： \"autoscaling\": {             \"enable\": \"true\"         }  支持多值查询，查询条件格式：  *autoscaling=enable=true&autoscaling=enable=false*。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42,fcs)
+        是否开启弹性扩缩容。示例如下： \"autoscaling\": {             \"enable\": \"true\"         }  支持多值查询，查询条件格式：  *autoscaling=enable=true&autoscaling=enable=false*。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42,hcso,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b)
 
         :param autoscaling: The autoscaling of this ListLoadBalancersRequest.
         :type autoscaling: list[str]
         """
         self._autoscaling = autoscaling
+
+    @property
+    def protection_status(self):
+        """Gets the protection_status of this ListLoadBalancersRequest.
+
+        修改保护状态, 取值： - nonProtection: 不保护，默认值为nonProtection - consoleProtection: 控制台修改保护
+
+        :return: The protection_status of this ListLoadBalancersRequest.
+        :rtype: list[str]
+        """
+        return self._protection_status
+
+    @protection_status.setter
+    def protection_status(self, protection_status):
+        """Sets the protection_status of this ListLoadBalancersRequest.
+
+        修改保护状态, 取值： - nonProtection: 不保护，默认值为nonProtection - consoleProtection: 控制台修改保护
+
+        :param protection_status: The protection_status of this ListLoadBalancersRequest.
+        :type protection_status: list[str]
+        """
+        self._protection_status = protection_status
+
+    @property
+    def global_eips(self):
+        """Gets the global_eips of this ListLoadBalancersRequest.
+
+        负载均衡器绑定的公网IP。示例如下：  {     \"global_eips\": [         {             \"global_eip_id\": \"24000000-0000-0000-0000-100000000001\",             \"global_eip_address\": \"10.10.10.10\",             \"ip_version\": 4         }     ] }   支持多值查询，查询条件格式：  - global_eip_id作为查询条件：*global_eips=global_eip_id=xxx&global_eips=global_eip_id=xxx*。  - global_eip_address作为查询条件：*global_eips=global_eip_address=xxx&global_eips=global_eip_address=xxx*。  - ip_version作为查询条件：*global_eips=ip_version=xxx&global_eips=ip_version=xxx*。
+
+        :return: The global_eips of this ListLoadBalancersRequest.
+        :rtype: list[str]
+        """
+        return self._global_eips
+
+    @global_eips.setter
+    def global_eips(self, global_eips):
+        """Sets the global_eips of this ListLoadBalancersRequest.
+
+        负载均衡器绑定的公网IP。示例如下：  {     \"global_eips\": [         {             \"global_eip_id\": \"24000000-0000-0000-0000-100000000001\",             \"global_eip_address\": \"10.10.10.10\",             \"ip_version\": 4         }     ] }   支持多值查询，查询条件格式：  - global_eip_id作为查询条件：*global_eips=global_eip_id=xxx&global_eips=global_eip_id=xxx*。  - global_eip_address作为查询条件：*global_eips=global_eip_address=xxx&global_eips=global_eip_address=xxx*。  - ip_version作为查询条件：*global_eips=ip_version=xxx&global_eips=ip_version=xxx*。
+
+        :param global_eips: The global_eips of this ListLoadBalancersRequest.
+        :type global_eips: list[str]
+        """
+        self._global_eips = global_eips
 
     def to_dict(self):
         """Returns the model properties as a dict"""

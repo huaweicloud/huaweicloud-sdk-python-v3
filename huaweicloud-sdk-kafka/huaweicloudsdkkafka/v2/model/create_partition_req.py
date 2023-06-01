@@ -29,7 +29,7 @@ class CreatePartitionReq:
 
         The model defined in huaweicloud sdk
 
-        :param partition: 期望调整分区后的数量，必须大于当前分区数量，小于等于 [100](tag:hc,hk,hws,hws_hk,otc,hws_ocb,ctc,sbc,hk_sbc,g42,tm)[20](tag:cmcc)。
+        :param partition: 期望调整分区后的数量，必须大于当前分区数量，小于等于 [100](tag:hws,hws_hk,otc,hws_ocb,ctc,sbc,hk_sbc,g42,tm,hk_g42,hk_tm)[20](tag:cmcc)。
         :type partition: int
         """
         
@@ -45,7 +45,7 @@ class CreatePartitionReq:
     def partition(self):
         """Gets the partition of this CreatePartitionReq.
 
-        期望调整分区后的数量，必须大于当前分区数量，小于等于 [100](tag:hc,hk,hws,hws_hk,otc,hws_ocb,ctc,sbc,hk_sbc,g42,tm)[20](tag:cmcc)。
+        期望调整分区后的数量，必须大于当前分区数量，小于等于 [100](tag:hws,hws_hk,otc,hws_ocb,ctc,sbc,hk_sbc,g42,tm,hk_g42,hk_tm)[20](tag:cmcc)。
 
         :return: The partition of this CreatePartitionReq.
         :rtype: int
@@ -56,7 +56,7 @@ class CreatePartitionReq:
     def partition(self, partition):
         """Sets the partition of this CreatePartitionReq.
 
-        期望调整分区后的数量，必须大于当前分区数量，小于等于 [100](tag:hc,hk,hws,hws_hk,otc,hws_ocb,ctc,sbc,hk_sbc,g42,tm)[20](tag:cmcc)。
+        期望调整分区后的数量，必须大于当前分区数量，小于等于 [100](tag:hws,hws_hk,otc,hws_ocb,ctc,sbc,hk_sbc,g42,tm,hk_g42,hk_tm)[20](tag:cmcc)。
 
         :param partition: The partition of this CreatePartitionReq.
         :type partition: int

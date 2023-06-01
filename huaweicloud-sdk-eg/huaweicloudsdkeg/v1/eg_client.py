@@ -304,120 +304,6 @@ class EgClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-    def create_event_schema(self, request):
-        """创建自定义事件模型
-
-        创建自定义事件模型
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-        :param request: Request instance for CreateEventSchema
-        :type request: :class:`huaweicloudsdkeg.v1.CreateEventSchemaRequest`
-        :rtype: :class:`huaweicloudsdkeg.v1.CreateEventSchemaResponse`
-        """
-        return self._create_event_schema_with_http_info(request)
-
-    def _create_event_schema_with_http_info(self, request):
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = ["X-Request-Id", ]
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v1/{project_id}/schemas',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateEventSchemaResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-    def create_event_schema_version(self, request):
-        """创建自定义事件模型版本
-
-        创建自定义事件模型版本，版本号后台自动生成
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-        :param request: Request instance for CreateEventSchemaVersion
-        :type request: :class:`huaweicloudsdkeg.v1.CreateEventSchemaVersionRequest`
-        :rtype: :class:`huaweicloudsdkeg.v1.CreateEventSchemaVersionResponse`
-        """
-        return self._create_event_schema_version_with_http_info(request)
-
-    def _create_event_schema_version_with_http_info(self, request):
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'schema_id' in local_var_params:
-            path_params['schema_id'] = local_var_params['schema_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = ["X-Request-Id", ]
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v1/{project_id}/schemas/{schema_id}/versions',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateEventSchemaVersionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
     def create_event_source(self, request):
         """创建自定义事件源
 
@@ -469,6 +355,62 @@ class EgClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='CreateEventSourceResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_event_streaming(self, request):
+        """创建事件流
+
+        创建事件流
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateEventStreaming
+        :type request: :class:`huaweicloudsdkeg.v1.CreateEventStreamingRequest`
+        :rtype: :class:`huaweicloudsdkeg.v1.CreateEventStreamingResponse`
+        """
+        return self._create_event_streaming_with_http_info(request)
+
+    def _create_event_streaming_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/eventstreamings',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateEventStreamingResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -756,120 +698,6 @@ class EgClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-    def delete_event_schema(self, request):
-        """删除事件模型
-
-        删除事件模型
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-        :param request: Request instance for DeleteEventSchema
-        :type request: :class:`huaweicloudsdkeg.v1.DeleteEventSchemaRequest`
-        :rtype: :class:`huaweicloudsdkeg.v1.DeleteEventSchemaResponse`
-        """
-        return self._delete_event_schema_with_http_info(request)
-
-    def _delete_event_schema_with_http_info(self, request):
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'schema_id' in local_var_params:
-            path_params['schema_id'] = local_var_params['schema_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v1/{project_id}/schemas/{schema_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteEventSchemaResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-    def delete_event_schema_version(self, request):
-        """删除事件模型版本
-
-        删除事件模型指定版本
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-        :param request: Request instance for DeleteEventSchemaVersion
-        :type request: :class:`huaweicloudsdkeg.v1.DeleteEventSchemaVersionRequest`
-        :rtype: :class:`huaweicloudsdkeg.v1.DeleteEventSchemaVersionResponse`
-        """
-        return self._delete_event_schema_version_with_http_info(request)
-
-    def _delete_event_schema_version_with_http_info(self, request):
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'schema_id' in local_var_params:
-            path_params['schema_id'] = local_var_params['schema_id']
-        if 'version' in local_var_params:
-            path_params['version'] = local_var_params['version']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v1/{project_id}/schemas/{schema_id}/versions/{version}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteEventSchemaVersionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
     def delete_event_source(self, request):
         """删除自定义事件源
 
@@ -921,6 +749,62 @@ class EgClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='DeleteEventSourceResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_event_streaming(self, request):
+        """删除事件流
+
+        删除事件流
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteEventStreaming
+        :type request: :class:`huaweicloudsdkeg.v1.DeleteEventStreamingRequest`
+        :rtype: :class:`huaweicloudsdkeg.v1.DeleteEventStreamingResponse`
+        """
+        return self._delete_event_streaming_with_http_info(request)
+
+    def _delete_event_streaming_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'eventstreaming_id' in local_var_params:
+            path_params['eventstreaming_id'] = local_var_params['eventstreaming_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/eventstreamings/{eventstreaming_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteEventStreamingResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1035,62 +919,6 @@ class EgClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='DeleteSubscriptionTargetResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-    def discover_event_schema_from_data(self, request):
-        """事件模型自动发现
-
-        事件模型自动发现
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-        :param request: Request instance for DiscoverEventSchemaFromData
-        :type request: :class:`huaweicloudsdkeg.v1.DiscoverEventSchemaFromDataRequest`
-        :rtype: :class:`huaweicloudsdkeg.v1.DiscoverEventSchemaFromDataResponse`
-        """
-        return self._discover_event_schema_from_data_with_http_info(request)
-
-    def _discover_event_schema_from_data_with_http_info(self, request):
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = ["X-Request-Id", ]
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v1/{project_id}/schema-discover',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DiscoverEventSchemaFromDataResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1350,134 +1178,6 @@ class EgClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-    def list_event_schema(self, request):
-        """查询事件模型列表
-
-        查询事件模型列表，包括系统事件模型和自定义事件模型
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-        :param request: Request instance for ListEventSchema
-        :type request: :class:`huaweicloudsdkeg.v1.ListEventSchemaRequest`
-        :rtype: :class:`huaweicloudsdkeg.v1.ListEventSchemaResponse`
-        """
-        return self._list_event_schema_with_http_info(request)
-
-    def _list_event_schema_with_http_info(self, request):
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'offset' in local_var_params:
-            query_params.append(('offset', local_var_params['offset']))
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-        if 'sort' in local_var_params:
-            query_params.append(('sort', local_var_params['sort']))
-        if 'provider_type' in local_var_params:
-            query_params.append(('provider_type', local_var_params['provider_type']))
-        if 'name' in local_var_params:
-            query_params.append(('name', local_var_params['name']))
-        if 'fuzzy_name' in local_var_params:
-            query_params.append(('fuzzy_name', local_var_params['fuzzy_name']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v1/{project_id}/schemas',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListEventSchemaResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-    def list_event_schema_versions(self, request):
-        """查询事件模型版本列表
-
-        查询事件模型版本列表
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-        :param request: Request instance for ListEventSchemaVersions
-        :type request: :class:`huaweicloudsdkeg.v1.ListEventSchemaVersionsRequest`
-        :rtype: :class:`huaweicloudsdkeg.v1.ListEventSchemaVersionsResponse`
-        """
-        return self._list_event_schema_versions_with_http_info(request)
-
-    def _list_event_schema_versions_with_http_info(self, request):
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'schema_id' in local_var_params:
-            path_params['schema_id'] = local_var_params['schema_id']
-
-        query_params = []
-        if 'offset' in local_var_params:
-            query_params.append(('offset', local_var_params['offset']))
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-        if 'sort' in local_var_params:
-            query_params.append(('sort', local_var_params['sort']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v1/{project_id}/schemas/{schema_id}/versions',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListEventSchemaVersionsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
     def list_event_sources(self, request):
         """查询事件源列表
 
@@ -1548,6 +1248,64 @@ class EgClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_event_streaming(self, request):
+        """查询事件流列表
+
+        查询事件流列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListEventStreaming
+        :type request: :class:`huaweicloudsdkeg.v1.ListEventStreamingRequest`
+        :rtype: :class:`huaweicloudsdkeg.v1.ListEventStreamingResponse`
+        """
+        return self._list_event_streaming_with_http_info(request)
+
+    def _list_event_streaming_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/eventstreamings',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListEventStreamingResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_event_target(self, request):
         """查询事件目标分类
 
@@ -1579,6 +1337,9 @@ class EgClient(Client):
             query_params.append(('sort', local_var_params['sort']))
         if 'fuzzy_label' in local_var_params:
             query_params.append(('fuzzy_label', local_var_params['fuzzy_label']))
+        if 'support_types' in local_var_params:
+            query_params.append(('support_types', local_var_params['support_types']))
+            collection_formats['support_types'] = 'csv'
 
         header_params = {}
 
@@ -1837,6 +1598,8 @@ class EgClient(Client):
             query_params.append(('name', local_var_params['name']))
         if 'fuzzy_name' in local_var_params:
             query_params.append(('fuzzy_name', local_var_params['fuzzy_name']))
+        if 'connection_id' in local_var_params:
+            query_params.append(('connection_id', local_var_params['connection_id']))
 
         header_params = {}
 
@@ -1863,6 +1626,78 @@ class EgClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ListSubscriptionsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_traced_events(self, request):
+        """查询事件追踪列表
+
+        查询事件追踪列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListTracedEvents
+        :type request: :class:`huaweicloudsdkeg.v1.ListTracedEventsRequest`
+        :rtype: :class:`huaweicloudsdkeg.v1.ListTracedEventsResponse`
+        """
+        return self._list_traced_events_with_http_info(request)
+
+    def _list_traced_events_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+        if 'event_id' in local_var_params:
+            query_params.append(('event_id', local_var_params['event_id']))
+        if 'source_name' in local_var_params:
+            query_params.append(('source_name', local_var_params['source_name']))
+        if 'event_type' in local_var_params:
+            query_params.append(('event_type', local_var_params['event_type']))
+        if 'subscription_name' in local_var_params:
+            query_params.append(('subscription_name', local_var_params['subscription_name']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'channel_id' in local_var_params:
+            query_params.append(('channel_id', local_var_params['channel_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/traced-events',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListTracedEventsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -2106,6 +1941,122 @@ class EgClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def put_official_events(self, request):
+        """发布官方事件到事件通道
+
+        发布官方事件到事件通道
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for PutOfficialEvents
+        :type request: :class:`huaweicloudsdkeg.v1.PutOfficialEventsRequest`
+        :rtype: :class:`huaweicloudsdkeg.v1.PutOfficialEventsResponse`
+        """
+        return self._put_official_events_with_http_info(request)
+
+    def _put_official_events_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'source_name' in local_var_params:
+            path_params['source_name'] = local_var_params['source_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/official/sources/{source_name}/events',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='PutOfficialEventsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def resume_event_streaming(self, request):
+        """操作事件流
+
+        操作事件流
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ResumeEventStreaming
+        :type request: :class:`huaweicloudsdkeg.v1.ResumeEventStreamingRequest`
+        :rtype: :class:`huaweicloudsdkeg.v1.ResumeEventStreamingResponse`
+        """
+        return self._resume_event_streaming_with_http_info(request)
+
+    def _resume_event_streaming_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'eventstreaming_id' in local_var_params:
+            path_params['eventstreaming_id'] = local_var_params['eventstreaming_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/eventstreamings/operate/{eventstreaming_id}',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ResumeEventStreamingResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def show_detail_of_channel(self, request):
         """查询事件通道详情
 
@@ -2218,20 +2169,20 @@ class EgClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-    def show_detail_of_event_schema(self, request):
-        """查询事件模型详情
+    def show_detail_of_event(self, request):
+        """查询发送事件的内容
 
-        查询事件模型详情
+        根据事件ID查询事件详情
         
         Please refer to HUAWEI cloud API Explorer for details.
 
-        :param request: Request instance for ShowDetailOfEventSchema
-        :type request: :class:`huaweicloudsdkeg.v1.ShowDetailOfEventSchemaRequest`
-        :rtype: :class:`huaweicloudsdkeg.v1.ShowDetailOfEventSchemaResponse`
+        :param request: Request instance for ShowDetailOfEvent
+        :type request: :class:`huaweicloudsdkeg.v1.ShowDetailOfEventRequest`
+        :rtype: :class:`huaweicloudsdkeg.v1.ShowDetailOfEventResponse`
         """
-        return self._show_detail_of_event_schema_with_http_info(request)
+        return self._show_detail_of_event_with_http_info(request)
 
-    def _show_detail_of_event_schema_with_http_info(self, request):
+    def _show_detail_of_event_with_http_info(self, request):
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2239,8 +2190,8 @@ class EgClient(Client):
         collection_formats = {}
 
         path_params = {}
-        if 'schema_id' in local_var_params:
-            path_params['schema_id'] = local_var_params['schema_id']
+        if 'trace_id' in local_var_params:
+            path_params['trace_id'] = local_var_params['trace_id']
 
         query_params = []
 
@@ -2260,7 +2211,7 @@ class EgClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v1/{project_id}/schemas/{schema_id}',
+            resource_path='/v1/{project_id}/events/detail/{trace_id}',
             method='GET',
             path_params=path_params,
             query_params=query_params,
@@ -2268,65 +2219,7 @@ class EgClient(Client):
             body=body_params,
             post_params=form_params,
             cname=cname,
-            response_type='ShowDetailOfEventSchemaResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-    def show_detail_of_event_schema_version(self, request):
-        """查询事件模型版本详情
-
-        查询事件模型指定版本详情
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-        :param request: Request instance for ShowDetailOfEventSchemaVersion
-        :type request: :class:`huaweicloudsdkeg.v1.ShowDetailOfEventSchemaVersionRequest`
-        :rtype: :class:`huaweicloudsdkeg.v1.ShowDetailOfEventSchemaVersionResponse`
-        """
-        return self._show_detail_of_event_schema_version_with_http_info(request)
-
-    def _show_detail_of_event_schema_version_with_http_info(self, request):
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'schema_id' in local_var_params:
-            path_params['schema_id'] = local_var_params['schema_id']
-        if 'version' in local_var_params:
-            path_params['version'] = local_var_params['version']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v1/{project_id}/schemas/{schema_id}/versions/{version}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDetailOfEventSchemaVersionResponse',
+            response_type='ShowDetailOfEventResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -2383,6 +2276,64 @@ class EgClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ShowDetailOfEventSourceResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_detail_of_event_trace(self, request):
+        """事件轨迹详情
+
+        事件轨迹详情，展示事件源到投递目标的投递情况
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowDetailOfEventTrace
+        :type request: :class:`huaweicloudsdkeg.v1.ShowDetailOfEventTraceRequest`
+        :rtype: :class:`huaweicloudsdkeg.v1.ShowDetailOfEventTraceResponse`
+        """
+        return self._show_detail_of_event_trace_with_http_info(request)
+
+    def _show_detail_of_event_trace_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'trace_id' in local_var_params:
+            path_params['trace_id'] = local_var_params['trace_id']
+
+        query_params = []
+        if 'channel_id' in local_var_params:
+            query_params.append(('channel_id', local_var_params['channel_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/events/trace/detail/{trace_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowDetailOfEventTraceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -2497,6 +2448,62 @@ class EgClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ShowDetailOfSubscriptionTargetResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_event_streaming(self, request):
+        """查询事件流详情
+
+        查询事件流详情
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowEventStreaming
+        :type request: :class:`huaweicloudsdkeg.v1.ShowEventStreamingRequest`
+        :rtype: :class:`huaweicloudsdkeg.v1.ShowEventStreamingResponse`
+        """
+        return self._show_event_streaming_with_http_info(request)
+
+    def _show_event_streaming_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'eventstreaming_id' in local_var_params:
+            path_params['eventstreaming_id'] = local_var_params['eventstreaming_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/eventstreamings/{eventstreaming_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowEventStreamingResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -2676,64 +2683,6 @@ class EgClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-    def update_event_schema(self, request):
-        """更新自定义事件模型
-
-        更新自定义事件模型定义
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-        :param request: Request instance for UpdateEventSchema
-        :type request: :class:`huaweicloudsdkeg.v1.UpdateEventSchemaRequest`
-        :rtype: :class:`huaweicloudsdkeg.v1.UpdateEventSchemaResponse`
-        """
-        return self._update_event_schema_with_http_info(request)
-
-    def _update_event_schema_with_http_info(self, request):
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'schema_id' in local_var_params:
-            path_params['schema_id'] = local_var_params['schema_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = ["X-Request-Id", ]
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v1/{project_id}/schemas/{schema_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateEventSchemaResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
     def update_event_source(self, request):
         """更新自定义事件源
 
@@ -2787,6 +2736,64 @@ class EgClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='UpdateEventSourceResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_event_streaming(self, request):
+        """更新事件流
+
+        更新事件流
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateEventStreaming
+        :type request: :class:`huaweicloudsdkeg.v1.UpdateEventStreamingRequest`
+        :rtype: :class:`huaweicloudsdkeg.v1.UpdateEventStreamingResponse`
+        """
+        return self._update_event_streaming_with_http_info(request)
+
+    def _update_event_streaming_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'eventstreaming_id' in local_var_params:
+            path_params['eventstreaming_id'] = local_var_params['eventstreaming_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/eventstreamings/{eventstreaming_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateEventStreamingResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

@@ -422,6 +422,60 @@ class ServiceStageClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def create_cam_instance(self, request):
+        """创建、更新实例
+
+        创建、更新实例
+
+        :param request: Request instance for CreateCamInstance
+        :type request: :class:`huaweicloudsdkservicestage.v2.CreateCamInstanceRequest`
+        :rtype: :class:`huaweicloudsdkservicestage.v2.CreateCamInstanceResponse`
+        """
+        return self._create_cam_instance_with_http_info(request)
+
+    def _create_cam_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/instances',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateCamInstanceResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def create_component(self, request):
         """应用中创建组件
 
@@ -589,6 +643,60 @@ class ServiceStageClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='CreateInstanceResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_template(self, request):
+        """创建模板
+
+        创建模板
+
+        :param request: Request instance for CreateTemplate
+        :type request: :class:`huaweicloudsdkservicestage.v2.CreateTemplateRequest`
+        :rtype: :class:`huaweicloudsdkservicestage.v2.CreateTemplateResponse`
+        """
+        return self._create_template_with_http_info(request)
+
+    def _create_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/templates',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -871,6 +979,168 @@ class ServiceStageClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='DeleteInstanceResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_instance_by_id(self, request):
+        """删除实例
+
+        删除实例
+
+        :param request: Request instance for DeleteInstanceById
+        :type request: :class:`huaweicloudsdkservicestage.v2.DeleteInstanceByIdRequest`
+        :rtype: :class:`huaweicloudsdkservicestage.v2.DeleteInstanceByIdResponse`
+        """
+        return self._delete_instance_by_id_with_http_info(request)
+
+    def _delete_instance_by_id_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/instances/{instance_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteInstanceByIdResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_template(self, request):
+        """删除模板
+
+        删除模板
+
+        :param request: Request instance for DeleteTemplate
+        :type request: :class:`huaweicloudsdkservicestage.v2.DeleteTemplateRequest`
+        :rtype: :class:`huaweicloudsdkservicestage.v2.DeleteTemplateResponse`
+        """
+        return self._delete_template_with_http_info(request)
+
+    def _delete_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'template_id' in local_var_params:
+            path_params['template_id'] = local_var_params['template_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/templates/{template_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteTemplateResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def deploy_instance(self, request):
+        """部署实例
+
+        部署实例
+
+        :param request: Request instance for DeployInstance
+        :type request: :class:`huaweicloudsdkservicestage.v2.DeployInstanceRequest`
+        :rtype: :class:`huaweicloudsdkservicestage.v2.DeployInstanceResponse`
+        """
+        return self._deploy_instance_with_http_info(request)
+
+    def _deploy_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/instance/deployments',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeployInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1583,6 +1853,62 @@ class ServiceStageClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='UpdateInstanceActionResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_template(self, request):
+        """更新模板
+
+        更新模板
+
+        :param request: Request instance for UpdateTemplate
+        :type request: :class:`huaweicloudsdkservicestage.v2.UpdateTemplateRequest`
+        :rtype: :class:`huaweicloudsdkservicestage.v2.UpdateTemplateResponse`
+        """
+        return self._update_template_with_http_info(request)
+
+    def _update_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'template_id' in local_var_params:
+            path_params['template_id'] = local_var_params['template_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/templates/{template_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

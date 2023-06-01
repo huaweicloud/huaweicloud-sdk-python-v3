@@ -31,9 +31,9 @@ class DeleteTopicAttributeByNameRequest:
 
         The model defined in huaweicloud sdk
 
-        :param topic_urn: Topic的唯一的资源标识，可通过[查询主题列表](https://support.huaweicloud.com/api-smn/smn_api_51004.html)获取该标识。
+        :param topic_urn: Topic的唯一的资源标识，可通过[查询主题列表](smn_api_51004.xml)获取该标识。
         :type topic_urn: str
-        :param name: 主题策略名称。 只支持特定的策略名称，请参见[Topic属性表](https://support.huaweicloud.com/intl/zh-cn/api-smn/smn_api_a1000.html)。
+        :param name: 主题策略名称。 只支持特定的策略名称，请参见[Topic属性表](smn_api_a1000.xml)。
         :type name: str
         """
         
@@ -50,7 +50,7 @@ class DeleteTopicAttributeByNameRequest:
     def topic_urn(self):
         """Gets the topic_urn of this DeleteTopicAttributeByNameRequest.
 
-        Topic的唯一的资源标识，可通过[查询主题列表](https://support.huaweicloud.com/api-smn/smn_api_51004.html)获取该标识。
+        Topic的唯一的资源标识，可通过[查询主题列表](smn_api_51004.xml)获取该标识。
 
         :return: The topic_urn of this DeleteTopicAttributeByNameRequest.
         :rtype: str
@@ -61,7 +61,7 @@ class DeleteTopicAttributeByNameRequest:
     def topic_urn(self, topic_urn):
         """Sets the topic_urn of this DeleteTopicAttributeByNameRequest.
 
-        Topic的唯一的资源标识，可通过[查询主题列表](https://support.huaweicloud.com/api-smn/smn_api_51004.html)获取该标识。
+        Topic的唯一的资源标识，可通过[查询主题列表](smn_api_51004.xml)获取该标识。
 
         :param topic_urn: The topic_urn of this DeleteTopicAttributeByNameRequest.
         :type topic_urn: str
@@ -72,7 +72,7 @@ class DeleteTopicAttributeByNameRequest:
     def name(self):
         """Gets the name of this DeleteTopicAttributeByNameRequest.
 
-        主题策略名称。 只支持特定的策略名称，请参见[Topic属性表](https://support.huaweicloud.com/intl/zh-cn/api-smn/smn_api_a1000.html)。
+        主题策略名称。 只支持特定的策略名称，请参见[Topic属性表](smn_api_a1000.xml)。
 
         :return: The name of this DeleteTopicAttributeByNameRequest.
         :rtype: str
@@ -83,7 +83,7 @@ class DeleteTopicAttributeByNameRequest:
     def name(self, name):
         """Sets the name of this DeleteTopicAttributeByNameRequest.
 
-        主题策略名称。 只支持特定的策略名称，请参见[Topic属性表](https://support.huaweicloud.com/intl/zh-cn/api-smn/smn_api_a1000.html)。
+        主题策略名称。 只支持特定的策略名称，请参见[Topic属性表](smn_api_a1000.xml)。
 
         :param name: The name of this DeleteTopicAttributeByNameRequest.
         :type name: str

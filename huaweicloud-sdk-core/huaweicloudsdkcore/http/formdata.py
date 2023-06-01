@@ -33,20 +33,23 @@ class FormFile(object):
         :param content_type: the content type of the file
         :type content_type: str
         """
-        self._file = self._init_file(f)
+        self._file = self._ensure_file_in_rb_mode(f)
         self._content_type = content_type
 
     @classmethod
-    def _init_file(cls, f):
-        if isinstance(f, str):
-            if not os.path.isfile(f):
-                raise ValueError("invalid file path: " + f)
-            return open(f, "rb")
+    def _ensure_file_in_rb_mode(cls, _file):
+        if isinstance(_file, str):
+            if not os.path.isfile(_file):
+                raise ValueError("invalid file path: " + _file)
+            return open(_file, "rb")
 
-        if f.mode != "rb":
-            f.close()
+        if not hasattr(_file, "read") or not hasattr(_file, "mode"):
+            raise TypeError("invalid file type")
+
+        if _file.mode != "rb":
+            _file.close()
             raise ValueError("invalid file mode, please open the file in 'rb' mode")
-        return f
+        return _file
 
     def close(self):
         if hasattr(self._file, "closed") and not self._file.closed:

@@ -25,6 +25,8 @@ class ConnectionInfo:
         'subnet_id': 'str',
         'agency': 'str',
         'flavor': 'ConnectionInfoFlavor',
+        'type': 'ConnectionType',
+        'kafka_detail': 'KafkaConnectionDetail',
         'created_time': 'str',
         'updated_time': 'str'
     }
@@ -38,11 +40,13 @@ class ConnectionInfo:
         'subnet_id': 'subnet_id',
         'agency': 'agency',
         'flavor': 'flavor',
+        'type': 'type',
+        'kafka_detail': 'kafka_detail',
         'created_time': 'created_time',
         'updated_time': 'updated_time'
     }
 
-    def __init__(self, id=None, name=None, description=None, status=None, vpc_id=None, subnet_id=None, agency=None, flavor=None, created_time=None, updated_time=None):
+    def __init__(self, id=None, name=None, description=None, status=None, vpc_id=None, subnet_id=None, agency=None, flavor=None, type=None, kafka_detail=None, created_time=None, updated_time=None):
         """ConnectionInfo
 
         The model defined in huaweicloud sdk
@@ -63,6 +67,10 @@ class ConnectionInfo:
         :type agency: str
         :param flavor: 
         :type flavor: :class:`huaweicloudsdkeg.v1.ConnectionInfoFlavor`
+        :param type: 
+        :type type: :class:`huaweicloudsdkeg.v1.ConnectionType`
+        :param kafka_detail: 
+        :type kafka_detail: :class:`huaweicloudsdkeg.v1.KafkaConnectionDetail`
         :param created_time: 创建UTC时间
         :type created_time: str
         :param updated_time: 更新UTC时间
@@ -79,6 +87,8 @@ class ConnectionInfo:
         self._subnet_id = None
         self._agency = None
         self._flavor = None
+        self._type = None
+        self._kafka_detail = None
         self._created_time = None
         self._updated_time = None
         self.discriminator = None
@@ -99,6 +109,10 @@ class ConnectionInfo:
             self.agency = agency
         if flavor is not None:
             self.flavor = flavor
+        if type is not None:
+            self.type = type
+        if kafka_detail is not None:
+            self.kafka_detail = kafka_detail
         if created_time is not None:
             self.created_time = created_time
         if updated_time is not None:
@@ -275,6 +289,42 @@ class ConnectionInfo:
         :type flavor: :class:`huaweicloudsdkeg.v1.ConnectionInfoFlavor`
         """
         self._flavor = flavor
+
+    @property
+    def type(self):
+        """Gets the type of this ConnectionInfo.
+
+        :return: The type of this ConnectionInfo.
+        :rtype: :class:`huaweicloudsdkeg.v1.ConnectionType`
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        """Sets the type of this ConnectionInfo.
+
+        :param type: The type of this ConnectionInfo.
+        :type type: :class:`huaweicloudsdkeg.v1.ConnectionType`
+        """
+        self._type = type
+
+    @property
+    def kafka_detail(self):
+        """Gets the kafka_detail of this ConnectionInfo.
+
+        :return: The kafka_detail of this ConnectionInfo.
+        :rtype: :class:`huaweicloudsdkeg.v1.KafkaConnectionDetail`
+        """
+        return self._kafka_detail
+
+    @kafka_detail.setter
+    def kafka_detail(self, kafka_detail):
+        """Sets the kafka_detail of this ConnectionInfo.
+
+        :param kafka_detail: The kafka_detail of this ConnectionInfo.
+        :type kafka_detail: :class:`huaweicloudsdkeg.v1.KafkaConnectionDetail`
+        """
+        self._kafka_detail = kafka_detail
 
     @property
     def created_time(self):

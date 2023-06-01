@@ -31,7 +31,7 @@ class UpdateApplicationRequest:
 
         The model defined in huaweicloud sdk
 
-        :param application_urn: Application的唯一资源标识，可通过[查询Application](https://support.huaweicloud.com/api-smn/ListApplications.html)获取该标识。
+        :param application_urn: Application的唯一资源标识，可通过[查询Application](smn_api_57004.xml)获取该标识。
         :type application_urn: str
         :param body: Body of the UpdateApplicationRequest
         :type body: :class:`huaweicloudsdksmn.v2.UpdateApplicationRequestBody`
@@ -51,7 +51,7 @@ class UpdateApplicationRequest:
     def application_urn(self):
         """Gets the application_urn of this UpdateApplicationRequest.
 
-        Application的唯一资源标识，可通过[查询Application](https://support.huaweicloud.com/api-smn/ListApplications.html)获取该标识。
+        Application的唯一资源标识，可通过[查询Application](smn_api_57004.xml)获取该标识。
 
         :return: The application_urn of this UpdateApplicationRequest.
         :rtype: str
@@ -62,7 +62,7 @@ class UpdateApplicationRequest:
     def application_urn(self, application_urn):
         """Sets the application_urn of this UpdateApplicationRequest.
 
-        Application的唯一资源标识，可通过[查询Application](https://support.huaweicloud.com/api-smn/ListApplications.html)获取该标识。
+        Application的唯一资源标识，可通过[查询Application](smn_api_57004.xml)获取该标识。
 
         :param application_urn: The application_urn of this UpdateApplicationRequest.
         :type application_urn: str

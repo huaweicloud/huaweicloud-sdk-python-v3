@@ -37,7 +37,7 @@ class BatchDeleteMembersOption:
         :type id: str
         :param address: 后端服务器IP地址。  使用说明： - address和protocol_port必须同时传入。 - 不能同时传入ID字段
         :type address: str
-        :param protocol_port: 后端服务器端口。  使用说明： - address和protocol_port必须同时传入。 - 不能同时传入ID字段
+        :param protocol_port: 后端服务器端口。  使用说明： - address和protocol_port必须同时传入。 - 不能同时传入ID字段 - 可以传0，用于删除端口透传pool下的member
         :type protocol_port: int
         """
         
@@ -103,7 +103,7 @@ class BatchDeleteMembersOption:
     def protocol_port(self):
         """Gets the protocol_port of this BatchDeleteMembersOption.
 
-        后端服务器端口。  使用说明： - address和protocol_port必须同时传入。 - 不能同时传入ID字段
+        后端服务器端口。  使用说明： - address和protocol_port必须同时传入。 - 不能同时传入ID字段 - 可以传0，用于删除端口透传pool下的member
 
         :return: The protocol_port of this BatchDeleteMembersOption.
         :rtype: int
@@ -114,7 +114,7 @@ class BatchDeleteMembersOption:
     def protocol_port(self, protocol_port):
         """Sets the protocol_port of this BatchDeleteMembersOption.
 
-        后端服务器端口。  使用说明： - address和protocol_port必须同时传入。 - 不能同时传入ID字段
+        后端服务器端口。  使用说明： - address和protocol_port必须同时传入。 - 不能同时传入ID字段 - 可以传0，用于删除端口透传pool下的member
 
         :param protocol_port: The protocol_port of this BatchDeleteMembersOption.
         :type protocol_port: int

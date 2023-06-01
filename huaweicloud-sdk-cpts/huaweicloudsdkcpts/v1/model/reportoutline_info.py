@@ -129,11 +129,11 @@ class ReportoutlineInfo:
         :type project_id: str
         :param service_id: 服务id
         :type service_id: str
-        :param progress_state: 
+        :param progress_state: 内部版本字段，已弃用，待删除
         :type progress_state: str
-        :param create_by: 
+        :param create_by: 报告执行人
         :type create_by: str
-        :param status_value: 
+        :param status_value: 内部版本字段，已弃用，待删除
         :type status_value: str
         """
         
@@ -755,6 +755,8 @@ class ReportoutlineInfo:
     def progress_state(self):
         """Gets the progress_state of this ReportoutlineInfo.
 
+        内部版本字段，已弃用，待删除
+
         :return: The progress_state of this ReportoutlineInfo.
         :rtype: str
         """
@@ -763,6 +765,8 @@ class ReportoutlineInfo:
     @progress_state.setter
     def progress_state(self, progress_state):
         """Sets the progress_state of this ReportoutlineInfo.
+
+        内部版本字段，已弃用，待删除
 
         :param progress_state: The progress_state of this ReportoutlineInfo.
         :type progress_state: str
@@ -773,6 +777,8 @@ class ReportoutlineInfo:
     def create_by(self):
         """Gets the create_by of this ReportoutlineInfo.
 
+        报告执行人
+
         :return: The create_by of this ReportoutlineInfo.
         :rtype: str
         """
@@ -781,6 +787,8 @@ class ReportoutlineInfo:
     @create_by.setter
     def create_by(self, create_by):
         """Sets the create_by of this ReportoutlineInfo.
+
+        报告执行人
 
         :param create_by: The create_by of this ReportoutlineInfo.
         :type create_by: str
@@ -791,6 +799,8 @@ class ReportoutlineInfo:
     def status_value(self):
         """Gets the status_value of this ReportoutlineInfo.
 
+        内部版本字段，已弃用，待删除
+
         :return: The status_value of this ReportoutlineInfo.
         :rtype: str
         """
@@ -799,6 +809,8 @@ class ReportoutlineInfo:
     @status_value.setter
     def status_value(self, status_value):
         """Sets the status_value of this ReportoutlineInfo.
+
+        内部版本字段，已弃用，待删除
 
         :param status_value: The status_value of this ReportoutlineInfo.
         :type status_value: str

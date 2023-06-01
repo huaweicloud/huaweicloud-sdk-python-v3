@@ -40,7 +40,7 @@ class ListApplicationEndpointsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param application_urn: Application的唯一资源标识，可通过[查询Application](https://support.huaweicloud.com/api-smn/ListApplications.html)获取该标识。
+        :param application_urn: Application的唯一资源标识，可通过[查询Application](smn_api_57004.xml)获取该标识。
         :type application_urn: str
         :param offset: 偏移量。  偏移量为一个大于0小于资源总个数的整数，表示查询该偏移量后面的所有的资源，默认值为0。
         :type offset: int
@@ -80,7 +80,7 @@ class ListApplicationEndpointsRequest:
     def application_urn(self):
         """Gets the application_urn of this ListApplicationEndpointsRequest.
 
-        Application的唯一资源标识，可通过[查询Application](https://support.huaweicloud.com/api-smn/ListApplications.html)获取该标识。
+        Application的唯一资源标识，可通过[查询Application](smn_api_57004.xml)获取该标识。
 
         :return: The application_urn of this ListApplicationEndpointsRequest.
         :rtype: str
@@ -91,7 +91,7 @@ class ListApplicationEndpointsRequest:
     def application_urn(self, application_urn):
         """Sets the application_urn of this ListApplicationEndpointsRequest.
 
-        Application的唯一资源标识，可通过[查询Application](https://support.huaweicloud.com/api-smn/ListApplications.html)获取该标识。
+        Application的唯一资源标识，可通过[查询Application](smn_api_57004.xml)获取该标识。
 
         :param application_urn: The application_urn of this ListApplicationEndpointsRequest.
         :type application_urn: str

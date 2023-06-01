@@ -1061,6 +1061,60 @@ class OrganizationsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_quotas(self, request):
+        """列出租户的组织配额
+
+        列出租户的组织配额。此操作只能由组织的管理帐号或作为服务委托管理员的成员帐号调用。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListQuotas
+        :type request: :class:`huaweicloudsdkorganizations.v1.ListQuotasRequest`
+        :rtype: :class:`huaweicloudsdkorganizations.v1.ListQuotasResponse`
+        """
+        return self._list_quotas_with_http_info(request)
+
+    def _list_quotas_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth']
+
+        return self.call_api(
+            resource_path='/v1/organizations/quotas',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListQuotasResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_services(self, request):
         """列出所有可以与组织服务集成的云服务
 

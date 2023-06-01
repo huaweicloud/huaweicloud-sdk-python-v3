@@ -31,7 +31,7 @@ class WebSocketSeek:
 
         The model defined in huaweicloud sdk
 
-        :param status: 开关(on 开启，off 关闭)
+        :param status: 开关， on 开启，off 关闭。
         :type status: str
         :param timeout: 请求建立连接后，会话的保持时间：范围：1-300，单位：秒。
         :type timeout: int
@@ -50,7 +50,7 @@ class WebSocketSeek:
     def status(self):
         """Gets the status of this WebSocketSeek.
 
-        开关(on 开启，off 关闭)
+        开关， on 开启，off 关闭。
 
         :return: The status of this WebSocketSeek.
         :rtype: str
@@ -61,7 +61,7 @@ class WebSocketSeek:
     def status(self, status):
         """Sets the status of this WebSocketSeek.
 
-        开关(on 开启，off 关闭)
+        开关， on 开启，off 关闭。
 
         :param status: The status of this WebSocketSeek.
         :type status: str

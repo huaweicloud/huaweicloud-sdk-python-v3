@@ -20,17 +20,19 @@ class ListEventTargetRequest:
         'offset': 'int',
         'limit': 'int',
         'sort': 'str',
-        'fuzzy_label': 'str'
+        'fuzzy_label': 'str',
+        'support_types': 'list[str]'
     }
 
     attribute_map = {
         'offset': 'offset',
         'limit': 'limit',
         'sort': 'sort',
-        'fuzzy_label': 'fuzzy_label'
+        'fuzzy_label': 'fuzzy_label',
+        'support_types': 'support_types'
     }
 
-    def __init__(self, offset=None, limit=None, sort=None, fuzzy_label=None):
+    def __init__(self, offset=None, limit=None, sort=None, fuzzy_label=None, support_types=None):
         """ListEventTargetRequest
 
         The model defined in huaweicloud sdk
@@ -43,6 +45,8 @@ class ListEventTargetRequest:
         :type sort: str
         :param fuzzy_label: 指定查询的事件目标标签，模糊匹配
         :type fuzzy_label: str
+        :param support_types: 事件目标支持方式：事件订阅：SUBSCRIPTION、事件流：FLOW
+        :type support_types: list[str]
         """
         
         
@@ -51,6 +55,7 @@ class ListEventTargetRequest:
         self._limit = None
         self._sort = None
         self._fuzzy_label = None
+        self._support_types = None
         self.discriminator = None
 
         if offset is not None:
@@ -61,6 +66,8 @@ class ListEventTargetRequest:
             self.sort = sort
         if fuzzy_label is not None:
             self.fuzzy_label = fuzzy_label
+        if support_types is not None:
+            self.support_types = support_types
 
     @property
     def offset(self):
@@ -149,6 +156,28 @@ class ListEventTargetRequest:
         :type fuzzy_label: str
         """
         self._fuzzy_label = fuzzy_label
+
+    @property
+    def support_types(self):
+        """Gets the support_types of this ListEventTargetRequest.
+
+        事件目标支持方式：事件订阅：SUBSCRIPTION、事件流：FLOW
+
+        :return: The support_types of this ListEventTargetRequest.
+        :rtype: list[str]
+        """
+        return self._support_types
+
+    @support_types.setter
+    def support_types(self, support_types):
+        """Sets the support_types of this ListEventTargetRequest.
+
+        事件目标支持方式：事件订阅：SUBSCRIPTION、事件流：FLOW
+
+        :param support_types: The support_types of this ListEventTargetRequest.
+        :type support_types: list[str]
+        """
+        self._support_types = support_types
 
     def to_dict(self):
         """Returns the model properties as a dict"""

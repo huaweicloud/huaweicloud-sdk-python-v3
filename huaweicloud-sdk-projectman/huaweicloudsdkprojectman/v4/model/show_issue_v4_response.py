@@ -34,6 +34,7 @@ class ShowIssueV4Response(SdkResponse):
         'id': 'int',
         'project': 'IssueProjectResponseV4',
         'iteration': 'IssueItemSfV4Iteration',
+        'story_point': 'IssueDetailResponseV4StoryPoint',
         'module': 'IssueItemSfV4Module',
         'name': 'str',
         'parent_issue': 'CreateIssueResponseV4ParentIssue',
@@ -65,6 +66,7 @@ class ShowIssueV4Response(SdkResponse):
         'id': 'id',
         'project': 'project',
         'iteration': 'iteration',
+        'story_point': 'story_point',
         'module': 'module',
         'name': 'name',
         'parent_issue': 'parent_issue',
@@ -79,7 +81,7 @@ class ShowIssueV4Response(SdkResponse):
         'accessories': 'accessories'
     }
 
-    def __init__(self, actual_work_hours=None, assigned_cc_user=None, assigned_user=None, begin_time=None, created_time=None, creator=None, custom_fields=None, new_custom_fields=None, developer=None, domain=None, done_ratio=None, end_time=None, expected_work_hours=None, id=None, project=None, iteration=None, module=None, name=None, parent_issue=None, priority=None, severity=None, status=None, tracker=None, updated_time=None, closed_time=None, description=None, order=None, accessories=None):
+    def __init__(self, actual_work_hours=None, assigned_cc_user=None, assigned_user=None, begin_time=None, created_time=None, creator=None, custom_fields=None, new_custom_fields=None, developer=None, domain=None, done_ratio=None, end_time=None, expected_work_hours=None, id=None, project=None, iteration=None, story_point=None, module=None, name=None, parent_issue=None, priority=None, severity=None, status=None, tracker=None, updated_time=None, closed_time=None, description=None, order=None, accessories=None):
         """ShowIssueV4Response
 
         The model defined in huaweicloud sdk
@@ -116,6 +118,8 @@ class ShowIssueV4Response(SdkResponse):
         :type project: :class:`huaweicloudsdkprojectman.v4.IssueProjectResponseV4`
         :param iteration: 
         :type iteration: :class:`huaweicloudsdkprojectman.v4.IssueItemSfV4Iteration`
+        :param story_point: 
+        :type story_point: :class:`huaweicloudsdkprojectman.v4.IssueDetailResponseV4StoryPoint`
         :param module: 
         :type module: :class:`huaweicloudsdkprojectman.v4.IssueItemSfV4Module`
         :param name: 标题
@@ -160,6 +164,7 @@ class ShowIssueV4Response(SdkResponse):
         self._id = None
         self._project = None
         self._iteration = None
+        self._story_point = None
         self._module = None
         self._name = None
         self._parent_issue = None
@@ -206,6 +211,8 @@ class ShowIssueV4Response(SdkResponse):
             self.project = project
         if iteration is not None:
             self.iteration = iteration
+        if story_point is not None:
+            self.story_point = story_point
         if module is not None:
             self.module = module
         if name is not None:
@@ -558,6 +565,24 @@ class ShowIssueV4Response(SdkResponse):
         :type iteration: :class:`huaweicloudsdkprojectman.v4.IssueItemSfV4Iteration`
         """
         self._iteration = iteration
+
+    @property
+    def story_point(self):
+        """Gets the story_point of this ShowIssueV4Response.
+
+        :return: The story_point of this ShowIssueV4Response.
+        :rtype: :class:`huaweicloudsdkprojectman.v4.IssueDetailResponseV4StoryPoint`
+        """
+        return self._story_point
+
+    @story_point.setter
+    def story_point(self, story_point):
+        """Sets the story_point of this ShowIssueV4Response.
+
+        :param story_point: The story_point of this ShowIssueV4Response.
+        :type story_point: :class:`huaweicloudsdkprojectman.v4.IssueDetailResponseV4StoryPoint`
+        """
+        self._story_point = story_point
 
     @property
     def module(self):

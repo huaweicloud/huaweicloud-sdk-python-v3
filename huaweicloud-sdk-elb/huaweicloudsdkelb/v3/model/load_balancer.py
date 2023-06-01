@@ -56,7 +56,9 @@ class LoadBalancer:
         'deletion_protection_enable': 'bool',
         'autoscaling': 'AutoscalingRef',
         'public_border_group': 'str',
-        'waf_failure_action': 'str'
+        'waf_failure_action': 'str',
+        'protection_status': 'str',
+        'protection_reason': 'str'
     }
 
     attribute_map = {
@@ -99,10 +101,12 @@ class LoadBalancer:
         'deletion_protection_enable': 'deletion_protection_enable',
         'autoscaling': 'autoscaling',
         'public_border_group': 'public_border_group',
-        'waf_failure_action': 'waf_failure_action'
+        'waf_failure_action': 'waf_failure_action',
+        'protection_status': 'protection_status',
+        'protection_reason': 'protection_reason'
     }
 
-    def __init__(self, id=None, description=None, provisioning_status=None, admin_state_up=None, provider=None, pools=None, listeners=None, operating_status=None, name=None, project_id=None, vip_subnet_cidr_id=None, vip_address=None, vip_port_id=None, tags=None, created_at=None, updated_at=None, guaranteed=None, vpc_id=None, eips=None, ipv6_vip_address=None, ipv6_vip_virsubnet_id=None, ipv6_vip_port_id=None, availability_zone_list=None, enterprise_project_id=None, billing_info=None, l4_flavor_id=None, l4_scale_flavor_id=None, l7_flavor_id=None, l7_scale_flavor_id=None, publicips=None, global_eips=None, elb_virsubnet_ids=None, elb_virsubnet_type=None, ip_target_enable=None, frozen_scene=None, ipv6_bandwidth=None, deletion_protection_enable=None, autoscaling=None, public_border_group=None, waf_failure_action=None):
+    def __init__(self, id=None, description=None, provisioning_status=None, admin_state_up=None, provider=None, pools=None, listeners=None, operating_status=None, name=None, project_id=None, vip_subnet_cidr_id=None, vip_address=None, vip_port_id=None, tags=None, created_at=None, updated_at=None, guaranteed=None, vpc_id=None, eips=None, ipv6_vip_address=None, ipv6_vip_virsubnet_id=None, ipv6_vip_port_id=None, availability_zone_list=None, enterprise_project_id=None, billing_info=None, l4_flavor_id=None, l4_scale_flavor_id=None, l7_flavor_id=None, l7_scale_flavor_id=None, publicips=None, global_eips=None, elb_virsubnet_ids=None, elb_virsubnet_type=None, ip_target_enable=None, frozen_scene=None, ipv6_bandwidth=None, deletion_protection_enable=None, autoscaling=None, public_border_group=None, waf_failure_action=None, protection_status=None, protection_reason=None):
         """LoadBalancer
 
         The model defined in huaweicloud sdk
@@ -113,7 +117,7 @@ class LoadBalancer:
         :type description: str
         :param provisioning_status: 负载均衡器的配置状态。  取值： - ACTIVE：使用中。 - PENDING_DELETE：删除中。
         :type provisioning_status: str
-        :param admin_state_up: 负载均衡器的管理状态。固定为true。
+        :param admin_state_up: 负载均衡器的管理状态。取值：false停用，true启用。
         :type admin_state_up: bool
         :param provider: 负载均衡器的生产者名称。固定为vlb。
         :type provider: str
@@ -131,7 +135,7 @@ class LoadBalancer:
         :type vip_subnet_cidr_id: str
         :param vip_address: 负载均衡器的IPv4虚拟IP地址。
         :type vip_address: str
-        :param vip_port_id: 负载均衡器的IPv4对应的port ID。 [该port创建时关联默认安全组，这个安全组对所有流量不生效。](tag:dt,dt_test,hcso_dt)
+        :param vip_port_id: 负载均衡器的IPv4对应的port ID。 [创建弹性负载均衡时，会自动为负载均衡创建一个port并关联一个默认的安全组，这个安全组对所有流量不生效。 ](tag:dt,dt_test,hcso_dt)
         :type vip_port_id: str
         :param tags: 负载均衡的标签列表。
         :type tags: list[:class:`huaweicloudsdkelb.v3.Tag`]
@@ -155,27 +159,27 @@ class LoadBalancer:
         :type availability_zone_list: list[str]
         :param enterprise_project_id: 企业项目ID。创建时不传则返回\&quot;0\&quot;，表示资源属于default企业项目。  注：\&quot;0\&quot;并不是真实存在的企业项目ID，在创建、更新和查询时不能作为请求参数传入。  [不支持该字段，请勿使用](tag:dt,dt_test,hcso_dt)
         :type enterprise_project_id: str
-        :param billing_info: 资源账单信息。  取值： - 空：按需计费。 - 非空：包周期计费，  包周期计费billing_info字段的格式为：order_id:product_id:region_id:project_id，如：  CS2107161019CDJZZ:OFFI569702121789763584: az:057ef081eb00d2732fd1c01a9be75e6f  [不支持该字段，请勿使用](tag:hws_eu,g42,hk_g42,dt,dt_test,hcso_dt,fcs)
+        :param billing_info: 资源账单信息。  取值： - 空：按需计费。 - 非空：包周期计费，  包周期计费billing_info字段的格式为：order_id:product_id:region_id:project_id，如：  CS2107161019CDJZZ:OFFI569702121789763584: az:057ef081eb00d2732fd1c01a9be75e6f  [不支持该字段，请勿使用](tag:hws_eu,g42,hk_g42,dt,dt_test,hcso_dt,hcso,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b)
         :type billing_info: str
-        :param l4_flavor_id: 四层Flavor ID。  对于弹性扩缩容实例，表示上限规格。  [hsco场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hcso)
+        :param l4_flavor_id: 四层Flavor ID。  对于弹性扩缩容实例，表示上限规格。  [hsco场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hcso,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b)
         :type l4_flavor_id: str
         :param l4_scale_flavor_id: 四层弹性Flavor ID。  不支持该字段，请勿使用。
         :type l4_scale_flavor_id: str
-        :param l7_flavor_id: 七层Flavor ID。 对于弹性扩缩容实例，表示上限规格ID。  [hsco场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hcso)
+        :param l7_flavor_id: 七层Flavor ID。 对于弹性扩缩容实例，表示上限规格ID。  [hsco场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hcso,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b)
         :type l7_flavor_id: str
         :param l7_scale_flavor_id: 七层弹性Flavor ID。  不支持该字段，请勿使用。
         :type l7_scale_flavor_id: str
         :param publicips: 负载均衡器绑定的公网IP。只支持绑定一个公网IP。  注：该字段与eips一致。
         :type publicips: list[:class:`huaweicloudsdkelb.v3.PublicIpInfo`]
-        :param global_eips: 负载均衡器绑定的global eip。只支持绑定一个globaleip。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42,dt,dt_test,hcso_dt,fcs,ctc)
+        :param global_eips: 负载均衡器绑定的global eip。只支持绑定一个globaleip。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42,dt,dt_test,hcso_dt,fcs,ctc,ocb,hws_ocb)
         :type global_eips: list[:class:`huaweicloudsdkelb.v3.GlobalEipInfo`]
         :param elb_virsubnet_ids: 下联面子网的网络ID列表。
         :type elb_virsubnet_ids: list[str]
         :param elb_virsubnet_type: 下联面子网类型 - ipv4：ipv4 - dualstack：双栈
         :type elb_virsubnet_type: str
-        :param ip_target_enable: 是否启用跨VPC后端转发。  开启跨VPC后端转发后，后端服务器组不仅支持添加云上VPC内的服务器，还支持添加 [其他VPC、](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,fcs) 其他公有云、云下数据中心的服务器。  [仅独享型负载均衡器支持该特性。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,fcs,dt)  取值： - true：开启。 - false：不开启。  使用说明： - 开启不能关闭。  [荷兰region不支持该字段，请勿使用。](tag:dt)
+        :param ip_target_enable: 是否启用跨VPC后端转发。  开启跨VPC后端转发后，后端服务器组不仅支持添加云上VPC内的服务器，还支持添加其他VPC、其他公有云、云下数据中心的服务器。  使用共享VPC的实例使用此特性时，需确保共享资源所有者已开通VPC对等连接，否则通信异常。 [仅独享型负载均衡器支持该特性。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,fcs,dt)  取值： - true：开启。 - false：不开启。  使用说明： - 开启不能关闭。  [荷兰region不支持该字段，请勿使用。](tag:dt)
         :type ip_target_enable: bool
-        :param frozen_scene: 负载均衡器的冻结场景。若负载均衡器有多个冻结场景，用逗号分隔。  取值： - POLICE：公安冻结场景。 - ILLEGAL：违规冻结场景。 - VERIFY：客户未实名认证冻结场景。 - PARTNER：合作伙伴冻结（合作伙伴冻结子客户资源）。 - REAR：欠费冻结场景。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42,dt,dt_test,hcso_dt)
+        :param frozen_scene: 负载均衡器的冻结场景。 [若负载均衡器有多个冻结场景，用逗号分隔。  取值： - POLICE：公安冻结场景。 - ILLEGAL：违规冻结场景。 - VERIFY：客户未实名认证冻结场景。 - PARTNER：合作伙伴冻结（合作伙伴冻结子客户资源）。 - AREAR：欠费冻结场景。](tag:hws,hws_hk)  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42,dt,dt_test,hcso_dt,ocb,hws_ocb)
         :type frozen_scene: str
         :param ipv6_bandwidth: 
         :type ipv6_bandwidth: :class:`huaweicloudsdkelb.v3.BandwidthRef`
@@ -185,8 +189,12 @@ class LoadBalancer:
         :type autoscaling: :class:`huaweicloudsdkelb.v3.AutoscalingRef`
         :param public_border_group: LB所属AZ组
         :type public_border_group: str
-        :param waf_failure_action: WAF故障时的流量处理策略。discard:丢弃，forward: 转发到后端（默认）  使用说明：只有绑定了waf的LB实例，该字段才会生效。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42,dt,dt_test,hcso_dt,fcs,ctc)
+        :param waf_failure_action: WAF故障时的流量处理策略。discard:丢弃，forward: 转发到后端（默认）  使用说明：只有绑定了waf的LB实例，该字段才会生效。  [不支持该字段，请勿使用。](tag:hws_hk,hws_eu,hws_test,hcs,hcs_sm,hcso,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b,hcso_dt,dt,dt_test,ocb,ctc,cmcc,tm,sbc,g42,hws_ocb,hk_sbc,hk_tm,hk_g42)
         :type waf_failure_action: str
+        :param protection_status: 修改保护状态, 取值： - nonProtection: 不保护，默认值为nonProtection - consoleProtection: 控制台修改保护
+        :type protection_status: str
+        :param protection_reason: 设置保护的原因 &gt;仅当protection_status为consoleProtection时有效。
+        :type protection_reason: str
         """
         
         
@@ -231,6 +239,8 @@ class LoadBalancer:
         self._autoscaling = None
         self._public_border_group = None
         self._waf_failure_action = None
+        self._protection_status = None
+        self._protection_reason = None
         self.discriminator = None
 
         self.id = id
@@ -277,6 +287,10 @@ class LoadBalancer:
             self.public_border_group = public_border_group
         if waf_failure_action is not None:
             self.waf_failure_action = waf_failure_action
+        if protection_status is not None:
+            self.protection_status = protection_status
+        if protection_reason is not None:
+            self.protection_reason = protection_reason
 
     @property
     def id(self):
@@ -348,7 +362,7 @@ class LoadBalancer:
     def admin_state_up(self):
         """Gets the admin_state_up of this LoadBalancer.
 
-        负载均衡器的管理状态。固定为true。
+        负载均衡器的管理状态。取值：false停用，true启用。
 
         :return: The admin_state_up of this LoadBalancer.
         :rtype: bool
@@ -359,7 +373,7 @@ class LoadBalancer:
     def admin_state_up(self, admin_state_up):
         """Sets the admin_state_up of this LoadBalancer.
 
-        负载均衡器的管理状态。固定为true。
+        负载均衡器的管理状态。取值：false停用，true启用。
 
         :param admin_state_up: The admin_state_up of this LoadBalancer.
         :type admin_state_up: bool
@@ -546,7 +560,7 @@ class LoadBalancer:
     def vip_port_id(self):
         """Gets the vip_port_id of this LoadBalancer.
 
-        负载均衡器的IPv4对应的port ID。 [该port创建时关联默认安全组，这个安全组对所有流量不生效。](tag:dt,dt_test,hcso_dt)
+        负载均衡器的IPv4对应的port ID。 [创建弹性负载均衡时，会自动为负载均衡创建一个port并关联一个默认的安全组，这个安全组对所有流量不生效。 ](tag:dt,dt_test,hcso_dt)
 
         :return: The vip_port_id of this LoadBalancer.
         :rtype: str
@@ -557,7 +571,7 @@ class LoadBalancer:
     def vip_port_id(self, vip_port_id):
         """Sets the vip_port_id of this LoadBalancer.
 
-        负载均衡器的IPv4对应的port ID。 [该port创建时关联默认安全组，这个安全组对所有流量不生效。](tag:dt,dt_test,hcso_dt)
+        负载均衡器的IPv4对应的port ID。 [创建弹性负载均衡时，会自动为负载均衡创建一个port并关联一个默认的安全组，这个安全组对所有流量不生效。 ](tag:dt,dt_test,hcso_dt)
 
         :param vip_port_id: The vip_port_id of this LoadBalancer.
         :type vip_port_id: str
@@ -810,7 +824,7 @@ class LoadBalancer:
     def billing_info(self):
         """Gets the billing_info of this LoadBalancer.
 
-        资源账单信息。  取值： - 空：按需计费。 - 非空：包周期计费，  包周期计费billing_info字段的格式为：order_id:product_id:region_id:project_id，如：  CS2107161019CDJZZ:OFFI569702121789763584: az:057ef081eb00d2732fd1c01a9be75e6f  [不支持该字段，请勿使用](tag:hws_eu,g42,hk_g42,dt,dt_test,hcso_dt,fcs)
+        资源账单信息。  取值： - 空：按需计费。 - 非空：包周期计费，  包周期计费billing_info字段的格式为：order_id:product_id:region_id:project_id，如：  CS2107161019CDJZZ:OFFI569702121789763584: az:057ef081eb00d2732fd1c01a9be75e6f  [不支持该字段，请勿使用](tag:hws_eu,g42,hk_g42,dt,dt_test,hcso_dt,hcso,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b)
 
         :return: The billing_info of this LoadBalancer.
         :rtype: str
@@ -821,7 +835,7 @@ class LoadBalancer:
     def billing_info(self, billing_info):
         """Sets the billing_info of this LoadBalancer.
 
-        资源账单信息。  取值： - 空：按需计费。 - 非空：包周期计费，  包周期计费billing_info字段的格式为：order_id:product_id:region_id:project_id，如：  CS2107161019CDJZZ:OFFI569702121789763584: az:057ef081eb00d2732fd1c01a9be75e6f  [不支持该字段，请勿使用](tag:hws_eu,g42,hk_g42,dt,dt_test,hcso_dt,fcs)
+        资源账单信息。  取值： - 空：按需计费。 - 非空：包周期计费，  包周期计费billing_info字段的格式为：order_id:product_id:region_id:project_id，如：  CS2107161019CDJZZ:OFFI569702121789763584: az:057ef081eb00d2732fd1c01a9be75e6f  [不支持该字段，请勿使用](tag:hws_eu,g42,hk_g42,dt,dt_test,hcso_dt,hcso,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b)
 
         :param billing_info: The billing_info of this LoadBalancer.
         :type billing_info: str
@@ -832,7 +846,7 @@ class LoadBalancer:
     def l4_flavor_id(self):
         """Gets the l4_flavor_id of this LoadBalancer.
 
-        四层Flavor ID。  对于弹性扩缩容实例，表示上限规格。  [hsco场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hcso)
+        四层Flavor ID。  对于弹性扩缩容实例，表示上限规格。  [hsco场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hcso,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b)
 
         :return: The l4_flavor_id of this LoadBalancer.
         :rtype: str
@@ -843,7 +857,7 @@ class LoadBalancer:
     def l4_flavor_id(self, l4_flavor_id):
         """Sets the l4_flavor_id of this LoadBalancer.
 
-        四层Flavor ID。  对于弹性扩缩容实例，表示上限规格。  [hsco场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hcso)
+        四层Flavor ID。  对于弹性扩缩容实例，表示上限规格。  [hsco场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hcso,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b)
 
         :param l4_flavor_id: The l4_flavor_id of this LoadBalancer.
         :type l4_flavor_id: str
@@ -876,7 +890,7 @@ class LoadBalancer:
     def l7_flavor_id(self):
         """Gets the l7_flavor_id of this LoadBalancer.
 
-        七层Flavor ID。 对于弹性扩缩容实例，表示上限规格ID。  [hsco场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hcso)
+        七层Flavor ID。 对于弹性扩缩容实例，表示上限规格ID。  [hsco场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hcso,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b)
 
         :return: The l7_flavor_id of this LoadBalancer.
         :rtype: str
@@ -887,7 +901,7 @@ class LoadBalancer:
     def l7_flavor_id(self, l7_flavor_id):
         """Sets the l7_flavor_id of this LoadBalancer.
 
-        七层Flavor ID。 对于弹性扩缩容实例，表示上限规格ID。  [hsco场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hcso)
+        七层Flavor ID。 对于弹性扩缩容实例，表示上限规格ID。  [hsco场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hcso,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b)
 
         :param l7_flavor_id: The l7_flavor_id of this LoadBalancer.
         :type l7_flavor_id: str
@@ -942,7 +956,7 @@ class LoadBalancer:
     def global_eips(self):
         """Gets the global_eips of this LoadBalancer.
 
-        负载均衡器绑定的global eip。只支持绑定一个globaleip。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42,dt,dt_test,hcso_dt,fcs,ctc)
+        负载均衡器绑定的global eip。只支持绑定一个globaleip。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42,dt,dt_test,hcso_dt,fcs,ctc,ocb,hws_ocb)
 
         :return: The global_eips of this LoadBalancer.
         :rtype: list[:class:`huaweicloudsdkelb.v3.GlobalEipInfo`]
@@ -953,7 +967,7 @@ class LoadBalancer:
     def global_eips(self, global_eips):
         """Sets the global_eips of this LoadBalancer.
 
-        负载均衡器绑定的global eip。只支持绑定一个globaleip。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42,dt,dt_test,hcso_dt,fcs,ctc)
+        负载均衡器绑定的global eip。只支持绑定一个globaleip。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42,dt,dt_test,hcso_dt,fcs,ctc,ocb,hws_ocb)
 
         :param global_eips: The global_eips of this LoadBalancer.
         :type global_eips: list[:class:`huaweicloudsdkelb.v3.GlobalEipInfo`]
@@ -1008,7 +1022,7 @@ class LoadBalancer:
     def ip_target_enable(self):
         """Gets the ip_target_enable of this LoadBalancer.
 
-        是否启用跨VPC后端转发。  开启跨VPC后端转发后，后端服务器组不仅支持添加云上VPC内的服务器，还支持添加 [其他VPC、](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,fcs) 其他公有云、云下数据中心的服务器。  [仅独享型负载均衡器支持该特性。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,fcs,dt)  取值： - true：开启。 - false：不开启。  使用说明： - 开启不能关闭。  [荷兰region不支持该字段，请勿使用。](tag:dt)
+        是否启用跨VPC后端转发。  开启跨VPC后端转发后，后端服务器组不仅支持添加云上VPC内的服务器，还支持添加其他VPC、其他公有云、云下数据中心的服务器。  使用共享VPC的实例使用此特性时，需确保共享资源所有者已开通VPC对等连接，否则通信异常。 [仅独享型负载均衡器支持该特性。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,fcs,dt)  取值： - true：开启。 - false：不开启。  使用说明： - 开启不能关闭。  [荷兰region不支持该字段，请勿使用。](tag:dt)
 
         :return: The ip_target_enable of this LoadBalancer.
         :rtype: bool
@@ -1019,7 +1033,7 @@ class LoadBalancer:
     def ip_target_enable(self, ip_target_enable):
         """Sets the ip_target_enable of this LoadBalancer.
 
-        是否启用跨VPC后端转发。  开启跨VPC后端转发后，后端服务器组不仅支持添加云上VPC内的服务器，还支持添加 [其他VPC、](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,fcs) 其他公有云、云下数据中心的服务器。  [仅独享型负载均衡器支持该特性。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,fcs,dt)  取值： - true：开启。 - false：不开启。  使用说明： - 开启不能关闭。  [荷兰region不支持该字段，请勿使用。](tag:dt)
+        是否启用跨VPC后端转发。  开启跨VPC后端转发后，后端服务器组不仅支持添加云上VPC内的服务器，还支持添加其他VPC、其他公有云、云下数据中心的服务器。  使用共享VPC的实例使用此特性时，需确保共享资源所有者已开通VPC对等连接，否则通信异常。 [仅独享型负载均衡器支持该特性。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,fcs,dt)  取值： - true：开启。 - false：不开启。  使用说明： - 开启不能关闭。  [荷兰region不支持该字段，请勿使用。](tag:dt)
 
         :param ip_target_enable: The ip_target_enable of this LoadBalancer.
         :type ip_target_enable: bool
@@ -1030,7 +1044,7 @@ class LoadBalancer:
     def frozen_scene(self):
         """Gets the frozen_scene of this LoadBalancer.
 
-        负载均衡器的冻结场景。若负载均衡器有多个冻结场景，用逗号分隔。  取值： - POLICE：公安冻结场景。 - ILLEGAL：违规冻结场景。 - VERIFY：客户未实名认证冻结场景。 - PARTNER：合作伙伴冻结（合作伙伴冻结子客户资源）。 - REAR：欠费冻结场景。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42,dt,dt_test,hcso_dt)
+        负载均衡器的冻结场景。 [若负载均衡器有多个冻结场景，用逗号分隔。  取值： - POLICE：公安冻结场景。 - ILLEGAL：违规冻结场景。 - VERIFY：客户未实名认证冻结场景。 - PARTNER：合作伙伴冻结（合作伙伴冻结子客户资源）。 - AREAR：欠费冻结场景。](tag:hws,hws_hk)  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42,dt,dt_test,hcso_dt,ocb,hws_ocb)
 
         :return: The frozen_scene of this LoadBalancer.
         :rtype: str
@@ -1041,7 +1055,7 @@ class LoadBalancer:
     def frozen_scene(self, frozen_scene):
         """Sets the frozen_scene of this LoadBalancer.
 
-        负载均衡器的冻结场景。若负载均衡器有多个冻结场景，用逗号分隔。  取值： - POLICE：公安冻结场景。 - ILLEGAL：违规冻结场景。 - VERIFY：客户未实名认证冻结场景。 - PARTNER：合作伙伴冻结（合作伙伴冻结子客户资源）。 - REAR：欠费冻结场景。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42,dt,dt_test,hcso_dt)
+        负载均衡器的冻结场景。 [若负载均衡器有多个冻结场景，用逗号分隔。  取值： - POLICE：公安冻结场景。 - ILLEGAL：违规冻结场景。 - VERIFY：客户未实名认证冻结场景。 - PARTNER：合作伙伴冻结（合作伙伴冻结子客户资源）。 - AREAR：欠费冻结场景。](tag:hws,hws_hk)  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42,dt,dt_test,hcso_dt,ocb,hws_ocb)
 
         :param frozen_scene: The frozen_scene of this LoadBalancer.
         :type frozen_scene: str
@@ -1132,7 +1146,7 @@ class LoadBalancer:
     def waf_failure_action(self):
         """Gets the waf_failure_action of this LoadBalancer.
 
-        WAF故障时的流量处理策略。discard:丢弃，forward: 转发到后端（默认）  使用说明：只有绑定了waf的LB实例，该字段才会生效。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42,dt,dt_test,hcso_dt,fcs,ctc)
+        WAF故障时的流量处理策略。discard:丢弃，forward: 转发到后端（默认）  使用说明：只有绑定了waf的LB实例，该字段才会生效。  [不支持该字段，请勿使用。](tag:hws_hk,hws_eu,hws_test,hcs,hcs_sm,hcso,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b,hcso_dt,dt,dt_test,ocb,ctc,cmcc,tm,sbc,g42,hws_ocb,hk_sbc,hk_tm,hk_g42)
 
         :return: The waf_failure_action of this LoadBalancer.
         :rtype: str
@@ -1143,12 +1157,56 @@ class LoadBalancer:
     def waf_failure_action(self, waf_failure_action):
         """Sets the waf_failure_action of this LoadBalancer.
 
-        WAF故障时的流量处理策略。discard:丢弃，forward: 转发到后端（默认）  使用说明：只有绑定了waf的LB实例，该字段才会生效。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42,dt,dt_test,hcso_dt,fcs,ctc)
+        WAF故障时的流量处理策略。discard:丢弃，forward: 转发到后端（默认）  使用说明：只有绑定了waf的LB实例，该字段才会生效。  [不支持该字段，请勿使用。](tag:hws_hk,hws_eu,hws_test,hcs,hcs_sm,hcso,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b,hcso_dt,dt,dt_test,ocb,ctc,cmcc,tm,sbc,g42,hws_ocb,hk_sbc,hk_tm,hk_g42)
 
         :param waf_failure_action: The waf_failure_action of this LoadBalancer.
         :type waf_failure_action: str
         """
         self._waf_failure_action = waf_failure_action
+
+    @property
+    def protection_status(self):
+        """Gets the protection_status of this LoadBalancer.
+
+        修改保护状态, 取值： - nonProtection: 不保护，默认值为nonProtection - consoleProtection: 控制台修改保护
+
+        :return: The protection_status of this LoadBalancer.
+        :rtype: str
+        """
+        return self._protection_status
+
+    @protection_status.setter
+    def protection_status(self, protection_status):
+        """Sets the protection_status of this LoadBalancer.
+
+        修改保护状态, 取值： - nonProtection: 不保护，默认值为nonProtection - consoleProtection: 控制台修改保护
+
+        :param protection_status: The protection_status of this LoadBalancer.
+        :type protection_status: str
+        """
+        self._protection_status = protection_status
+
+    @property
+    def protection_reason(self):
+        """Gets the protection_reason of this LoadBalancer.
+
+        设置保护的原因 >仅当protection_status为consoleProtection时有效。
+
+        :return: The protection_reason of this LoadBalancer.
+        :rtype: str
+        """
+        return self._protection_reason
+
+    @protection_reason.setter
+    def protection_reason(self, protection_reason):
+        """Sets the protection_reason of this LoadBalancer.
+
+        设置保护的原因 >仅当protection_status为consoleProtection时有效。
+
+        :param protection_reason: The protection_reason of this LoadBalancer.
+        :type protection_reason: str
+        """
+        self._protection_reason = protection_reason
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -20,17 +20,21 @@ class ConnectionCreateReq:
         'name': 'str',
         'description': 'str',
         'vpc_id': 'str',
-        'subnet_id': 'str'
+        'subnet_id': 'str',
+        'type': 'ConnectionType',
+        'kafka_detail': 'KafkaConnectionDetail'
     }
 
     attribute_map = {
         'name': 'name',
         'description': 'description',
         'vpc_id': 'vpc_id',
-        'subnet_id': 'subnet_id'
+        'subnet_id': 'subnet_id',
+        'type': 'type',
+        'kafka_detail': 'kafka_detail'
     }
 
-    def __init__(self, name=None, description=None, vpc_id=None, subnet_id=None):
+    def __init__(self, name=None, description=None, vpc_id=None, subnet_id=None, type=None, kafka_detail=None):
         """ConnectionCreateReq
 
         The model defined in huaweicloud sdk
@@ -43,6 +47,10 @@ class ConnectionCreateReq:
         :type vpc_id: str
         :param subnet_id: 待连接的子网ID
         :type subnet_id: str
+        :param type: 
+        :type type: :class:`huaweicloudsdkeg.v1.ConnectionType`
+        :param kafka_detail: 
+        :type kafka_detail: :class:`huaweicloudsdkeg.v1.KafkaConnectionDetail`
         """
         
         
@@ -51,6 +59,8 @@ class ConnectionCreateReq:
         self._description = None
         self._vpc_id = None
         self._subnet_id = None
+        self._type = None
+        self._kafka_detail = None
         self.discriminator = None
 
         self.name = name
@@ -58,6 +68,10 @@ class ConnectionCreateReq:
             self.description = description
         self.vpc_id = vpc_id
         self.subnet_id = subnet_id
+        if type is not None:
+            self.type = type
+        if kafka_detail is not None:
+            self.kafka_detail = kafka_detail
 
     @property
     def name(self):
@@ -146,6 +160,42 @@ class ConnectionCreateReq:
         :type subnet_id: str
         """
         self._subnet_id = subnet_id
+
+    @property
+    def type(self):
+        """Gets the type of this ConnectionCreateReq.
+
+        :return: The type of this ConnectionCreateReq.
+        :rtype: :class:`huaweicloudsdkeg.v1.ConnectionType`
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        """Sets the type of this ConnectionCreateReq.
+
+        :param type: The type of this ConnectionCreateReq.
+        :type type: :class:`huaweicloudsdkeg.v1.ConnectionType`
+        """
+        self._type = type
+
+    @property
+    def kafka_detail(self):
+        """Gets the kafka_detail of this ConnectionCreateReq.
+
+        :return: The kafka_detail of this ConnectionCreateReq.
+        :rtype: :class:`huaweicloudsdkeg.v1.KafkaConnectionDetail`
+        """
+        return self._kafka_detail
+
+    @kafka_detail.setter
+    def kafka_detail(self, kafka_detail):
+        """Sets the kafka_detail of this ConnectionCreateReq.
+
+        :param kafka_detail: The kafka_detail of this ConnectionCreateReq.
+        :type kafka_detail: :class:`huaweicloudsdkeg.v1.KafkaConnectionDetail`
+        """
+        self._kafka_detail = kafka_detail
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -167,6 +167,7 @@ from huaweicloudsdkgaussdb.v3.model.mysql_proxy_nodes import MysqlProxyNodes
 from huaweicloudsdkgaussdb.v3.model.mysql_proxy_v3 import MysqlProxyV3
 from huaweicloudsdkgaussdb.v3.model.mysql_reset_password_request import MysqlResetPasswordRequest
 from huaweicloudsdkgaussdb.v3.model.mysql_resize_flavor import MysqlResizeFlavor
+from huaweicloudsdkgaussdb.v3.model.mysql_restore_point import MysqlRestorePoint
 from huaweicloudsdkgaussdb.v3.model.mysql_show_proxy_response_v3 import MysqlShowProxyResponseV3
 from huaweicloudsdkgaussdb.v3.model.mysql_slow_log_list import MysqlSlowLogList
 from huaweicloudsdkgaussdb.v3.model.mysql_tags import MysqlTags

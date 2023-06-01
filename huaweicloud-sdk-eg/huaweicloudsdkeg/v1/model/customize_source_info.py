@@ -61,7 +61,7 @@ class CustomizeSourceInfo:
         :type label: str
         :param description: 事件源描述
         :type description: str
-        :param provider_type: 事件源提供方类型，OFFICIAL：官方云服务事件源；CUSTOM：用户创建的自定义事件源
+        :param provider_type: 事件源提供方类型，OFFICIAL：官方云服务事件源；CUSTOM：用户创建的自定义事件源；PARTNER：伙伴事件源
         :type provider_type: str
         :param event_types: 事件源提供的事件类型列表，只有官方云服务事件源提供事件类型
         :type event_types: list[:class:`huaweicloudsdkeg.v1.CustomizeSourceInfoEventTypes`]
@@ -217,7 +217,7 @@ class CustomizeSourceInfo:
     def provider_type(self):
         """Gets the provider_type of this CustomizeSourceInfo.
 
-        事件源提供方类型，OFFICIAL：官方云服务事件源；CUSTOM：用户创建的自定义事件源
+        事件源提供方类型，OFFICIAL：官方云服务事件源；CUSTOM：用户创建的自定义事件源；PARTNER：伙伴事件源
 
         :return: The provider_type of this CustomizeSourceInfo.
         :rtype: str
@@ -228,7 +228,7 @@ class CustomizeSourceInfo:
     def provider_type(self, provider_type):
         """Sets the provider_type of this CustomizeSourceInfo.
 
-        事件源提供方类型，OFFICIAL：官方云服务事件源；CUSTOM：用户创建的自定义事件源
+        事件源提供方类型，OFFICIAL：官方云服务事件源；CUSTOM：用户创建的自定义事件源；PARTNER：伙伴事件源
 
         :param provider_type: The provider_type of this CustomizeSourceInfo.
         :type provider_type: str

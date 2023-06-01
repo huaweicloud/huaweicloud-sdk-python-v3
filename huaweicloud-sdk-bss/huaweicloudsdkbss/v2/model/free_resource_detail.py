@@ -24,8 +24,8 @@ class FreeResourceDetail:
         'usage_type_name': 'str',
         'start_time': 'str',
         'end_time': 'str',
-        'amount': 'float',
-        'original_amount': 'float',
+        'amount': 'decimal.Decimal',
+        'original_amount': 'decimal.Decimal',
         'measure_id': 'int'
     }
 
@@ -62,9 +62,9 @@ class FreeResourceDetail:
         :param end_time: 结束时间，格式UTC。 如果quota_reuse_mode为可重置，则此时间为当前时间所在的重置周期的结束时间。如果quota_reuse_mode为不可重置，则此时间为订购实例的失效时间。
         :type end_time: str
         :param amount: 资源剩余额度，针对可重置资源包，是指当前重置周期内的剩余量。
-        :type amount: float
+        :type amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         :param original_amount: 资源原始额度，针对可重置资源包，是指每个重置周期内的总量。
-        :type original_amount: float
+        :type original_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         :param measure_id: 度量单位，免费资源套餐额度度量单位。您可以调用查询度量单位列表接口获取。
         :type measure_id: int
         """
@@ -265,7 +265,7 @@ class FreeResourceDetail:
         资源剩余额度，针对可重置资源包，是指当前重置周期内的剩余量。
 
         :return: The amount of this FreeResourceDetail.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         return self._amount
 
@@ -276,7 +276,7 @@ class FreeResourceDetail:
         资源剩余额度，针对可重置资源包，是指当前重置周期内的剩余量。
 
         :param amount: The amount of this FreeResourceDetail.
-        :type amount: float
+        :type amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         self._amount = amount
 
@@ -287,7 +287,7 @@ class FreeResourceDetail:
         资源原始额度，针对可重置资源包，是指每个重置周期内的总量。
 
         :return: The original_amount of this FreeResourceDetail.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         return self._original_amount
 
@@ -298,7 +298,7 @@ class FreeResourceDetail:
         资源原始额度，针对可重置资源包，是指每个重置周期内的总量。
 
         :param original_amount: The original_amount of this FreeResourceDetail.
-        :type original_amount: float
+        :type original_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         self._original_amount = original_amount
 

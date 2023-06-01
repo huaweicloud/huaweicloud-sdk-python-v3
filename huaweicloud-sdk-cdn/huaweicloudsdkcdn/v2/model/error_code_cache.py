@@ -33,7 +33,7 @@ class ErrorCodeCache:
 
         :param code: 允许配置的错误码: 400, 403, 404, 405, 414, 500, 501, 502, 503, 504
         :type code: int
-        :param ttl: 错误码缓存时间，单位为秒，范围0-31,536,000(一年默认为365天)
+        :param ttl: 错误码缓存时间，单位为秒，范围0-31,536,000(一年默认为365天)。
         :type ttl: int
         """
         
@@ -74,7 +74,7 @@ class ErrorCodeCache:
     def ttl(self):
         """Gets the ttl of this ErrorCodeCache.
 
-        错误码缓存时间，单位为秒，范围0-31,536,000(一年默认为365天)
+        错误码缓存时间，单位为秒，范围0-31,536,000(一年默认为365天)。
 
         :return: The ttl of this ErrorCodeCache.
         :rtype: int
@@ -85,7 +85,7 @@ class ErrorCodeCache:
     def ttl(self, ttl):
         """Sets the ttl of this ErrorCodeCache.
 
-        错误码缓存时间，单位为秒，范围0-31,536,000(一年默认为365天)
+        错误码缓存时间，单位为秒，范围0-31,536,000(一年默认为365天)。
 
         :param ttl: The ttl of this ErrorCodeCache.
         :type ttl: int

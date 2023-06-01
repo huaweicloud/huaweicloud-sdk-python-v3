@@ -18,40 +18,47 @@ class ShowDomainFullConfigRequest:
 
     openapi_types = {
         'domain_name': 'str',
-        'enterprise_project_id': 'str'
+        'enterprise_project_id': 'str',
+        'show_special_configs': 'str'
     }
 
     attribute_map = {
         'domain_name': 'domain_name',
-        'enterprise_project_id': 'enterprise_project_id'
+        'enterprise_project_id': 'enterprise_project_id',
+        'show_special_configs': 'show_special_configs'
     }
 
-    def __init__(self, domain_name=None, enterprise_project_id=None):
+    def __init__(self, domain_name=None, enterprise_project_id=None, show_special_configs=None):
         """ShowDomainFullConfigRequest
 
         The model defined in huaweicloud sdk
 
-        :param domain_name: 加速域名
+        :param domain_name: 加速域名。
         :type domain_name: str
-        :param enterprise_project_id: 当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，\&quot;all\&quot;表示所有项目。注意：当使用子帐号调用接口时，该参数必传。  您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。
+        :param enterprise_project_id: 企业项目ID， all：所有项目。
         :type enterprise_project_id: str
+        :param show_special_configs: 取值为auth_key，用来查询鉴权KEY和鉴权备KEY的值。
+        :type show_special_configs: str
         """
         
         
 
         self._domain_name = None
         self._enterprise_project_id = None
+        self._show_special_configs = None
         self.discriminator = None
 
         self.domain_name = domain_name
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
+        if show_special_configs is not None:
+            self.show_special_configs = show_special_configs
 
     @property
     def domain_name(self):
         """Gets the domain_name of this ShowDomainFullConfigRequest.
 
-        加速域名
+        加速域名。
 
         :return: The domain_name of this ShowDomainFullConfigRequest.
         :rtype: str
@@ -62,7 +69,7 @@ class ShowDomainFullConfigRequest:
     def domain_name(self, domain_name):
         """Sets the domain_name of this ShowDomainFullConfigRequest.
 
-        加速域名
+        加速域名。
 
         :param domain_name: The domain_name of this ShowDomainFullConfigRequest.
         :type domain_name: str
@@ -73,7 +80,7 @@ class ShowDomainFullConfigRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ShowDomainFullConfigRequest.
 
-        当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，\"all\"表示所有项目。注意：当使用子帐号调用接口时，该参数必传。  您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。
+        企业项目ID， all：所有项目。
 
         :return: The enterprise_project_id of this ShowDomainFullConfigRequest.
         :rtype: str
@@ -84,12 +91,34 @@ class ShowDomainFullConfigRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ShowDomainFullConfigRequest.
 
-        当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，\"all\"表示所有项目。注意：当使用子帐号调用接口时，该参数必传。  您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。
+        企业项目ID， all：所有项目。
 
         :param enterprise_project_id: The enterprise_project_id of this ShowDomainFullConfigRequest.
         :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def show_special_configs(self):
+        """Gets the show_special_configs of this ShowDomainFullConfigRequest.
+
+        取值为auth_key，用来查询鉴权KEY和鉴权备KEY的值。
+
+        :return: The show_special_configs of this ShowDomainFullConfigRequest.
+        :rtype: str
+        """
+        return self._show_special_configs
+
+    @show_special_configs.setter
+    def show_special_configs(self, show_special_configs):
+        """Sets the show_special_configs of this ShowDomainFullConfigRequest.
+
+        取值为auth_key，用来查询鉴权KEY和鉴权备KEY的值。
+
+        :param show_special_configs: The show_special_configs of this ShowDomainFullConfigRequest.
+        :type show_special_configs: str
+        """
+        self._show_special_configs = show_special_configs
 
     def to_dict(self):
         """Returns the model properties as a dict"""

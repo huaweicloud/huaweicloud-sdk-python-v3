@@ -18,7 +18,8 @@ class ShowLogsRequest:
 
     openapi_types = {
         'domain_name': 'str',
-        'query_date': 'int',
+        'start_time': 'int',
+        'end_time': 'int',
         'page_size': 'int',
         'page_number': 'int',
         'enterprise_project_id': 'str'
@@ -26,21 +27,24 @@ class ShowLogsRequest:
 
     attribute_map = {
         'domain_name': 'domain_name',
-        'query_date': 'query_date',
+        'start_time': 'start_time',
+        'end_time': 'end_time',
         'page_size': 'page_size',
         'page_number': 'page_number',
         'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, domain_name=None, query_date=None, page_size=None, page_number=None, enterprise_project_id=None):
+    def __init__(self, domain_name=None, start_time=None, end_time=None, page_size=None, page_number=None, enterprise_project_id=None):
         """ShowLogsRequest
 
         The model defined in huaweicloud sdk
 
         :param domain_name: 只支持单个域名，如：www.test1.com。
         :type domain_name: str
-        :param query_date: 查询开始时间，查询开始时间到开始时间+1天内的日志数据，取值范围是距离当前30天内。
-        :type query_date: int
+        :param start_time: 查询开始时间，时间格式为整点毫秒时间戳，此参数传空值时默认为当天0点。
+        :type start_time: int
+        :param end_time: 查询结束时间（不包含结束时间），时间格式为整点毫秒时间戳，与开始时间的最大跨度为30天，此参数传空值时默认为开始时间加1天。
+        :type end_time: int
         :param page_size: 单页最大数量，取值范围为1-10000。
         :type page_size: int
         :param page_number: 当前查询第几页，取值范围为1-65535。
@@ -52,14 +56,18 @@ class ShowLogsRequest:
         
 
         self._domain_name = None
-        self._query_date = None
+        self._start_time = None
+        self._end_time = None
         self._page_size = None
         self._page_number = None
         self._enterprise_project_id = None
         self.discriminator = None
 
         self.domain_name = domain_name
-        self.query_date = query_date
+        if start_time is not None:
+            self.start_time = start_time
+        if end_time is not None:
+            self.end_time = end_time
         if page_size is not None:
             self.page_size = page_size
         if page_number is not None:
@@ -90,26 +98,48 @@ class ShowLogsRequest:
         self._domain_name = domain_name
 
     @property
-    def query_date(self):
-        """Gets the query_date of this ShowLogsRequest.
+    def start_time(self):
+        """Gets the start_time of this ShowLogsRequest.
 
-        查询开始时间，查询开始时间到开始时间+1天内的日志数据，取值范围是距离当前30天内。
+        查询开始时间，时间格式为整点毫秒时间戳，此参数传空值时默认为当天0点。
 
-        :return: The query_date of this ShowLogsRequest.
+        :return: The start_time of this ShowLogsRequest.
         :rtype: int
         """
-        return self._query_date
+        return self._start_time
 
-    @query_date.setter
-    def query_date(self, query_date):
-        """Sets the query_date of this ShowLogsRequest.
+    @start_time.setter
+    def start_time(self, start_time):
+        """Sets the start_time of this ShowLogsRequest.
 
-        查询开始时间，查询开始时间到开始时间+1天内的日志数据，取值范围是距离当前30天内。
+        查询开始时间，时间格式为整点毫秒时间戳，此参数传空值时默认为当天0点。
 
-        :param query_date: The query_date of this ShowLogsRequest.
-        :type query_date: int
+        :param start_time: The start_time of this ShowLogsRequest.
+        :type start_time: int
         """
-        self._query_date = query_date
+        self._start_time = start_time
+
+    @property
+    def end_time(self):
+        """Gets the end_time of this ShowLogsRequest.
+
+        查询结束时间（不包含结束时间），时间格式为整点毫秒时间戳，与开始时间的最大跨度为30天，此参数传空值时默认为开始时间加1天。
+
+        :return: The end_time of this ShowLogsRequest.
+        :rtype: int
+        """
+        return self._end_time
+
+    @end_time.setter
+    def end_time(self, end_time):
+        """Sets the end_time of this ShowLogsRequest.
+
+        查询结束时间（不包含结束时间），时间格式为整点毫秒时间戳，与开始时间的最大跨度为30天，此参数传空值时默认为开始时间加1天。
+
+        :param end_time: The end_time of this ShowLogsRequest.
+        :type end_time: int
+        """
+        self._end_time = end_time
 
     @property
     def page_size(self):

@@ -17,50 +17,20 @@ class ListVersionRequest:
     sensitive_list = []
 
     openapi_types = {
-        'api_version': 'str'
     }
 
     attribute_map = {
-        'api_version': 'api_version'
     }
 
-    def __init__(self, api_version=None):
+    def __init__(self):
         """ListVersionRequest
 
         The model defined in huaweicloud sdk
 
-        :param api_version: 待查询版本号。当前仅支持v2。
-        :type api_version: str
         """
         
         
-
-        self._api_version = None
         self.discriminator = None
-
-        self.api_version = api_version
-
-    @property
-    def api_version(self):
-        """Gets the api_version of this ListVersionRequest.
-
-        待查询版本号。当前仅支持v2。
-
-        :return: The api_version of this ListVersionRequest.
-        :rtype: str
-        """
-        return self._api_version
-
-    @api_version.setter
-    def api_version(self, api_version):
-        """Sets the api_version of this ListVersionRequest.
-
-        待查询版本号。当前仅支持v2。
-
-        :param api_version: The api_version of this ListVersionRequest.
-        :type api_version: str
-        """
-        self._api_version = api_version
 
     def to_dict(self):
         """Returns the model properties as a dict"""

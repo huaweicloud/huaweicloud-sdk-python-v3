@@ -19,7 +19,7 @@ class AdjustCouponQuotasReq:
     openapi_types = {
         'quota_id': 'str',
         'indirect_partner_ids': 'list[str]',
-        'quota_amount': 'float'
+        'quota_amount': 'decimal.Decimal'
     }
 
     attribute_map = {
@@ -38,7 +38,7 @@ class AdjustCouponQuotasReq:
         :param indirect_partner_ids: 云经销商ID列表。
         :type indirect_partner_ids: list[str]
         :param quota_amount: 华为云总经销商向云经销商发放的代金券额度值。 单位：元。取值大于0且精确到小数点后2位。
-        :type quota_amount: float
+        :type quota_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         
         
@@ -103,7 +103,7 @@ class AdjustCouponQuotasReq:
         华为云总经销商向云经销商发放的代金券额度值。 单位：元。取值大于0且精确到小数点后2位。
 
         :return: The quota_amount of this AdjustCouponQuotasReq.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         return self._quota_amount
 
@@ -114,7 +114,7 @@ class AdjustCouponQuotasReq:
         华为云总经销商向云经销商发放的代金券额度值。 单位：元。取值大于0且精确到小数点后2位。
 
         :param quota_amount: The quota_amount of this AdjustCouponQuotasReq.
-        :type quota_amount: float
+        :type quota_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         self._quota_amount = quota_amount
 

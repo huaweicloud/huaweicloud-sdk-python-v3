@@ -25,7 +25,8 @@ class ListTopicDetailsResponse(SdkResponse):
         'topic_urn': 'str',
         'display_name': 'str',
         'request_id': 'str',
-        'enterprise_project_id': 'str'
+        'enterprise_project_id': 'str',
+        'topic_id': 'str'
     }
 
     attribute_map = {
@@ -36,10 +37,11 @@ class ListTopicDetailsResponse(SdkResponse):
         'topic_urn': 'topic_urn',
         'display_name': 'display_name',
         'request_id': 'request_id',
-        'enterprise_project_id': 'enterprise_project_id'
+        'enterprise_project_id': 'enterprise_project_id',
+        'topic_id': 'topic_id'
     }
 
-    def __init__(self, update_time=None, push_policy=None, create_time=None, name=None, topic_urn=None, display_name=None, request_id=None, enterprise_project_id=None):
+    def __init__(self, update_time=None, push_policy=None, create_time=None, name=None, topic_urn=None, display_name=None, request_id=None, enterprise_project_id=None, topic_id=None):
         """ListTopicDetailsResponse
 
         The model defined in huaweicloud sdk
@@ -52,7 +54,7 @@ class ListTopicDetailsResponse(SdkResponse):
         :type create_time: str
         :param name: 创建Topic的名字。
         :type name: str
-        :param topic_urn: Topic的唯一的资源标识。可以通过[查看主题列表获](https://support.huaweicloud.com/api-smn/smn_api_51004.html)取该标识。
+        :param topic_urn: Topic的唯一的资源标识。可以通过[查看主题列表获](smn_api_51004.xml)取该标识。
         :type topic_urn: str
         :param display_name: Topic的显示名，推送邮件消息时，作为邮件发件人显示。
         :type display_name: str
@@ -60,6 +62,8 @@ class ListTopicDetailsResponse(SdkResponse):
         :type request_id: str
         :param enterprise_project_id: 企业项目ID。
         :type enterprise_project_id: str
+        :param topic_id: 主题ID。
+        :type topic_id: str
         """
         
         super(ListTopicDetailsResponse, self).__init__()
@@ -72,6 +76,7 @@ class ListTopicDetailsResponse(SdkResponse):
         self._display_name = None
         self._request_id = None
         self._enterprise_project_id = None
+        self._topic_id = None
         self.discriminator = None
 
         if update_time is not None:
@@ -90,6 +95,8 @@ class ListTopicDetailsResponse(SdkResponse):
             self.request_id = request_id
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
+        if topic_id is not None:
+            self.topic_id = topic_id
 
     @property
     def update_time(self):
@@ -183,7 +190,7 @@ class ListTopicDetailsResponse(SdkResponse):
     def topic_urn(self):
         """Gets the topic_urn of this ListTopicDetailsResponse.
 
-        Topic的唯一的资源标识。可以通过[查看主题列表获](https://support.huaweicloud.com/api-smn/smn_api_51004.html)取该标识。
+        Topic的唯一的资源标识。可以通过[查看主题列表获](smn_api_51004.xml)取该标识。
 
         :return: The topic_urn of this ListTopicDetailsResponse.
         :rtype: str
@@ -194,7 +201,7 @@ class ListTopicDetailsResponse(SdkResponse):
     def topic_urn(self, topic_urn):
         """Sets the topic_urn of this ListTopicDetailsResponse.
 
-        Topic的唯一的资源标识。可以通过[查看主题列表获](https://support.huaweicloud.com/api-smn/smn_api_51004.html)取该标识。
+        Topic的唯一的资源标识。可以通过[查看主题列表获](smn_api_51004.xml)取该标识。
 
         :param topic_urn: The topic_urn of this ListTopicDetailsResponse.
         :type topic_urn: str
@@ -266,6 +273,28 @@ class ListTopicDetailsResponse(SdkResponse):
         :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def topic_id(self):
+        """Gets the topic_id of this ListTopicDetailsResponse.
+
+        主题ID。
+
+        :return: The topic_id of this ListTopicDetailsResponse.
+        :rtype: str
+        """
+        return self._topic_id
+
+    @topic_id.setter
+    def topic_id(self, topic_id):
+        """Sets the topic_id of this ListTopicDetailsResponse.
+
+        主题ID。
+
+        :param topic_id: The topic_id of this ListTopicDetailsResponse.
+        :type topic_id: str
+        """
+        self._topic_id = topic_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

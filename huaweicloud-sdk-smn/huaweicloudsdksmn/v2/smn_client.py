@@ -201,6 +201,64 @@ class SmnClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def create_logtank(self, request):
+        """绑定云日志
+
+        为指定Topic绑定一个云日志，用于记录主题消息发送状态等信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateLogtank
+        :type request: :class:`huaweicloudsdksmn.v2.CreateLogtankRequest`
+        :rtype: :class:`huaweicloudsdksmn.v2.CreateLogtankResponse`
+        """
+        return self._create_logtank_with_http_info(request)
+
+    def _create_logtank_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'topic_urn' in local_var_params:
+            path_params['topic_urn'] = local_var_params['topic_urn']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/notifications/topics/{topic_urn}/logtanks',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateLogtankResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def create_message_template(self, request):
         """创建消息模板
 
@@ -370,6 +428,64 @@ class SmnClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='CreateTopicResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_logtank(self, request):
+        """解绑云日志
+
+        解绑指定Topic绑定的云日志。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteLogtank
+        :type request: :class:`huaweicloudsdksmn.v2.DeleteLogtankRequest`
+        :rtype: :class:`huaweicloudsdksmn.v2.DeleteLogtankResponse`
+        """
+        return self._delete_logtank_with_http_info(request)
+
+    def _delete_logtank_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'topic_urn' in local_var_params:
+            path_params['topic_urn'] = local_var_params['topic_urn']
+        if 'logtank_id' in local_var_params:
+            path_params['logtank_id'] = local_var_params['logtank_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/notifications/topics/{topic_urn}/logtanks/{logtank_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteLogtankResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -656,6 +772,62 @@ class SmnClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='DeleteTopicAttributesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_logtank(self, request):
+        """查询云日志
+
+        查询指定Topic绑定的云日志。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListLogtank
+        :type request: :class:`huaweicloudsdksmn.v2.ListLogtankRequest`
+        :rtype: :class:`huaweicloudsdksmn.v2.ListLogtankResponse`
+        """
+        return self._list_logtank_with_http_info(request)
+
+    def _list_logtank_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'topic_urn' in local_var_params:
+            path_params['topic_urn'] = local_var_params['topic_urn']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/notifications/topics/{topic_urn}/logtanks',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListLogtankResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1222,6 +1394,8 @@ class SmnClient(Client):
             query_params.append(('name', local_var_params['name']))
         if 'fuzzy_name' in local_var_params:
             query_params.append(('fuzzy_name', local_var_params['fuzzy_name']))
+        if 'topic_id' in local_var_params:
+            query_params.append(('topic_id', local_var_params['topic_id']))
 
         header_params = {}
 
@@ -1274,8 +1448,6 @@ class SmnClient(Client):
         collection_formats = {}
 
         path_params = {}
-        if 'api_version' in local_var_params:
-            path_params['api_version'] = local_var_params['api_version']
 
         query_params = []
 
@@ -1295,7 +1467,7 @@ class SmnClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/{api_version}',
+            resource_path='/v2',
             method='GET',
             path_params=path_params,
             query_params=query_params,
@@ -1430,6 +1602,66 @@ class SmnClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def update_logtank(self, request):
+        """更新云日志
+
+        更新指定Topic绑定的云日志。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateLogtank
+        :type request: :class:`huaweicloudsdksmn.v2.UpdateLogtankRequest`
+        :rtype: :class:`huaweicloudsdksmn.v2.UpdateLogtankResponse`
+        """
+        return self._update_logtank_with_http_info(request)
+
+    def _update_logtank_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'topic_urn' in local_var_params:
+            path_params['topic_urn'] = local_var_params['topic_urn']
+        if 'logtank_id' in local_var_params:
+            path_params['logtank_id'] = local_var_params['logtank_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/notifications/topics/{topic_urn}/logtanks/{logtank_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateLogtankResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def update_message_template(self, request):
         """更新消息模板
 
@@ -1483,6 +1715,66 @@ class SmnClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='UpdateMessageTemplateResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_subscription(self, request):
+        """更新订阅者
+
+        更新订阅者备注。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateSubscription
+        :type request: :class:`huaweicloudsdksmn.v2.UpdateSubscriptionRequest`
+        :rtype: :class:`huaweicloudsdksmn.v2.UpdateSubscriptionResponse`
+        """
+        return self._update_subscription_with_http_info(request)
+
+    def _update_subscription_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'topic_urn' in local_var_params:
+            path_params['topic_urn'] = local_var_params['topic_urn']
+        if 'subscription_urn' in local_var_params:
+            path_params['subscription_urn'] = local_var_params['subscription_urn']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/notifications/topics/{topic_urn}/subscriptions/{subscription_urn}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateSubscriptionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

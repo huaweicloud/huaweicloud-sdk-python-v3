@@ -38,7 +38,7 @@ class ListApplicationsResponse(SdkResponse):
         :type request_id: str
         :param application_count: 返回的Application个数。该参数不受offset和limit影响，即返回的是您账户下所有的Application个数。
         :type application_count: int
-        :param applications: 
+        :param applications: Application列表。
         :type applications: list[:class:`huaweicloudsdksmn.v2.ApplicationItem`]
         """
         
@@ -104,6 +104,8 @@ class ListApplicationsResponse(SdkResponse):
     def applications(self):
         """Gets the applications of this ListApplicationsResponse.
 
+        Application列表。
+
         :return: The applications of this ListApplicationsResponse.
         :rtype: list[:class:`huaweicloudsdksmn.v2.ApplicationItem`]
         """
@@ -112,6 +114,8 @@ class ListApplicationsResponse(SdkResponse):
     @applications.setter
     def applications(self, applications):
         """Sets the applications of this ListApplicationsResponse.
+
+        Application列表。
 
         :param applications: The applications of this ListApplicationsResponse.
         :type applications: list[:class:`huaweicloudsdksmn.v2.ApplicationItem`]

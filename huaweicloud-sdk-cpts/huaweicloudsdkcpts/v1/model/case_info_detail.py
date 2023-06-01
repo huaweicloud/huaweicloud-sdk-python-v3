@@ -26,7 +26,13 @@ class CaseInfoDetail:
         'stages': 'list[TestCaseStage]',
         'status': 'int',
         'temp_id': 'int',
-        'sort': 'int'
+        'sort': 'int',
+        'directory_id': 'int',
+        'setup_contents': 'list[Contents]',
+        'user_replicas': 'int',
+        'collect_log_policy': 'int',
+        'link_app_list': 'list[int]',
+        'case_info': 'CaseDoc'
     }
 
     attribute_map = {
@@ -39,10 +45,16 @@ class CaseInfoDetail:
         'stages': 'stages',
         'status': 'status',
         'temp_id': 'temp_id',
-        'sort': 'sort'
+        'sort': 'sort',
+        'directory_id': 'directory_id',
+        'setup_contents': 'setup_contents',
+        'user_replicas': 'user_replicas',
+        'collect_log_policy': 'collect_log_policy',
+        'link_app_list': 'link_app_list',
+        'case_info': 'case_info'
     }
 
-    def __init__(self, case_id=None, name=None, case_type=None, contents=None, for_loop_params=None, increase_setting=None, stages=None, status=None, temp_id=None, sort=None):
+    def __init__(self, case_id=None, name=None, case_type=None, contents=None, for_loop_params=None, increase_setting=None, stages=None, status=None, temp_id=None, sort=None, directory_id=None, setup_contents=None, user_replicas=None, collect_log_policy=None, link_app_list=None, case_info=None):
         """CaseInfoDetail
 
         The model defined in huaweicloud sdk
@@ -67,6 +79,18 @@ class CaseInfoDetail:
         :type temp_id: int
         :param sort: 排序字段
         :type sort: int
+        :param directory_id: 用例所属目录id（旧版接口可不传）
+        :type directory_id: int
+        :param setup_contents: 前置步骤
+        :type setup_contents: list[:class:`huaweicloudsdkcpts.v1.Contents`]
+        :param user_replicas: 执行器个数
+        :type user_replicas: int
+        :param collect_log_policy: 日志采集策略（0-请求模式；1-用例模式）
+        :type collect_log_policy: int
+        :param link_app_list: 关联全链路应用列表
+        :type link_app_list: list[int]
+        :param case_info: 
+        :type case_info: :class:`huaweicloudsdkcpts.v1.CaseDoc`
         """
         
         
@@ -81,6 +105,12 @@ class CaseInfoDetail:
         self._status = None
         self._temp_id = None
         self._sort = None
+        self._directory_id = None
+        self._setup_contents = None
+        self._user_replicas = None
+        self._collect_log_policy = None
+        self._link_app_list = None
+        self._case_info = None
         self.discriminator = None
 
         if case_id is not None:
@@ -103,6 +133,18 @@ class CaseInfoDetail:
             self.temp_id = temp_id
         if sort is not None:
             self.sort = sort
+        if directory_id is not None:
+            self.directory_id = directory_id
+        if setup_contents is not None:
+            self.setup_contents = setup_contents
+        if user_replicas is not None:
+            self.user_replicas = user_replicas
+        if collect_log_policy is not None:
+            self.collect_log_policy = collect_log_policy
+        if link_app_list is not None:
+            self.link_app_list = link_app_list
+        if case_info is not None:
+            self.case_info = case_info
 
     @property
     def case_id(self):
@@ -323,6 +365,134 @@ class CaseInfoDetail:
         :type sort: int
         """
         self._sort = sort
+
+    @property
+    def directory_id(self):
+        """Gets the directory_id of this CaseInfoDetail.
+
+        用例所属目录id（旧版接口可不传）
+
+        :return: The directory_id of this CaseInfoDetail.
+        :rtype: int
+        """
+        return self._directory_id
+
+    @directory_id.setter
+    def directory_id(self, directory_id):
+        """Sets the directory_id of this CaseInfoDetail.
+
+        用例所属目录id（旧版接口可不传）
+
+        :param directory_id: The directory_id of this CaseInfoDetail.
+        :type directory_id: int
+        """
+        self._directory_id = directory_id
+
+    @property
+    def setup_contents(self):
+        """Gets the setup_contents of this CaseInfoDetail.
+
+        前置步骤
+
+        :return: The setup_contents of this CaseInfoDetail.
+        :rtype: list[:class:`huaweicloudsdkcpts.v1.Contents`]
+        """
+        return self._setup_contents
+
+    @setup_contents.setter
+    def setup_contents(self, setup_contents):
+        """Sets the setup_contents of this CaseInfoDetail.
+
+        前置步骤
+
+        :param setup_contents: The setup_contents of this CaseInfoDetail.
+        :type setup_contents: list[:class:`huaweicloudsdkcpts.v1.Contents`]
+        """
+        self._setup_contents = setup_contents
+
+    @property
+    def user_replicas(self):
+        """Gets the user_replicas of this CaseInfoDetail.
+
+        执行器个数
+
+        :return: The user_replicas of this CaseInfoDetail.
+        :rtype: int
+        """
+        return self._user_replicas
+
+    @user_replicas.setter
+    def user_replicas(self, user_replicas):
+        """Sets the user_replicas of this CaseInfoDetail.
+
+        执行器个数
+
+        :param user_replicas: The user_replicas of this CaseInfoDetail.
+        :type user_replicas: int
+        """
+        self._user_replicas = user_replicas
+
+    @property
+    def collect_log_policy(self):
+        """Gets the collect_log_policy of this CaseInfoDetail.
+
+        日志采集策略（0-请求模式；1-用例模式）
+
+        :return: The collect_log_policy of this CaseInfoDetail.
+        :rtype: int
+        """
+        return self._collect_log_policy
+
+    @collect_log_policy.setter
+    def collect_log_policy(self, collect_log_policy):
+        """Sets the collect_log_policy of this CaseInfoDetail.
+
+        日志采集策略（0-请求模式；1-用例模式）
+
+        :param collect_log_policy: The collect_log_policy of this CaseInfoDetail.
+        :type collect_log_policy: int
+        """
+        self._collect_log_policy = collect_log_policy
+
+    @property
+    def link_app_list(self):
+        """Gets the link_app_list of this CaseInfoDetail.
+
+        关联全链路应用列表
+
+        :return: The link_app_list of this CaseInfoDetail.
+        :rtype: list[int]
+        """
+        return self._link_app_list
+
+    @link_app_list.setter
+    def link_app_list(self, link_app_list):
+        """Sets the link_app_list of this CaseInfoDetail.
+
+        关联全链路应用列表
+
+        :param link_app_list: The link_app_list of this CaseInfoDetail.
+        :type link_app_list: list[int]
+        """
+        self._link_app_list = link_app_list
+
+    @property
+    def case_info(self):
+        """Gets the case_info of this CaseInfoDetail.
+
+        :return: The case_info of this CaseInfoDetail.
+        :rtype: :class:`huaweicloudsdkcpts.v1.CaseDoc`
+        """
+        return self._case_info
+
+    @case_info.setter
+    def case_info(self, case_info):
+        """Sets the case_info of this CaseInfoDetail.
+
+        :param case_info: The case_info of this CaseInfoDetail.
+        :type case_info: :class:`huaweicloudsdkcpts.v1.CaseDoc`
+        """
+        self._case_info = case_info
 
     def to_dict(self):
         """Returns the model properties as a dict"""

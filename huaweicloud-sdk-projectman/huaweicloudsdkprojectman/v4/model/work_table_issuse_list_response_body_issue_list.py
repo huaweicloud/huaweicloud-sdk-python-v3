@@ -43,7 +43,8 @@ class WorkTableIssuseListResponseBodyIssueList:
         'is_watcher': 'bool',
         'closed_flag': 'int',
         'created_on': 'str',
-        'updated_on': 'str'
+        'updated_on': 'str',
+        'due_date': 'str'
     }
 
     attribute_map = {
@@ -73,10 +74,11 @@ class WorkTableIssuseListResponseBodyIssueList:
         'is_watcher': 'is_watcher',
         'closed_flag': 'closed_flag',
         'created_on': 'created_on',
-        'updated_on': 'updated_on'
+        'updated_on': 'updated_on',
+        'due_date': 'due_date'
     }
 
-    def __init__(self, id=None, subject=None, parent_issue_id=None, parent_issue=None, project=None, release_dev=None, find_release_dev=None, done_ratio=None, expected_work_hours=None, actual_work_hours=None, tracker=None, order=None, severity=None, priority=None, domain=None, position=None, module=None, assigned_to=None, author=None, developer=None, closeder=None, status=None, deleted=None, is_watcher=None, closed_flag=None, created_on=None, updated_on=None):
+    def __init__(self, id=None, subject=None, parent_issue_id=None, parent_issue=None, project=None, release_dev=None, find_release_dev=None, done_ratio=None, expected_work_hours=None, actual_work_hours=None, tracker=None, order=None, severity=None, priority=None, domain=None, position=None, module=None, assigned_to=None, author=None, developer=None, closeder=None, status=None, deleted=None, is_watcher=None, closed_flag=None, created_on=None, updated_on=None, due_date=None):
         """WorkTableIssuseListResponseBodyIssueList
 
         The model defined in huaweicloud sdk
@@ -135,6 +137,8 @@ class WorkTableIssuseListResponseBodyIssueList:
         :type created_on: str
         :param updated_on: 工作项更新时间戳
         :type updated_on: str
+        :param due_date: 工作项预计结束时间戳
+        :type due_date: str
         """
         
         
@@ -166,6 +170,7 @@ class WorkTableIssuseListResponseBodyIssueList:
         self._closed_flag = None
         self._created_on = None
         self._updated_on = None
+        self._due_date = None
         self.discriminator = None
 
         if id is not None:
@@ -222,6 +227,8 @@ class WorkTableIssuseListResponseBodyIssueList:
             self.created_on = created_on
         if updated_on is not None:
             self.updated_on = updated_on
+        if due_date is not None:
+            self.due_date = due_date
 
     @property
     def id(self):
@@ -764,6 +771,28 @@ class WorkTableIssuseListResponseBodyIssueList:
         :type updated_on: str
         """
         self._updated_on = updated_on
+
+    @property
+    def due_date(self):
+        """Gets the due_date of this WorkTableIssuseListResponseBodyIssueList.
+
+        工作项预计结束时间戳
+
+        :return: The due_date of this WorkTableIssuseListResponseBodyIssueList.
+        :rtype: str
+        """
+        return self._due_date
+
+    @due_date.setter
+    def due_date(self, due_date):
+        """Sets the due_date of this WorkTableIssuseListResponseBodyIssueList.
+
+        工作项预计结束时间戳
+
+        :param due_date: The due_date of this WorkTableIssuseListResponseBodyIssueList.
+        :type due_date: str
+        """
+        self._due_date = due_date
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -22,10 +22,10 @@ class BillSumInfoV2:
         'cloud_service_type_name': 'str',
         'bill_type': 'str',
         'charge_mode': 'str',
-        'amount': 'float',
-        'debt_amount': 'float',
-        'adjustment_amount': 'float',
-        'discount_amount': 'float',
+        'amount': 'decimal.Decimal',
+        'debt_amount': 'decimal.Decimal',
+        'adjustment_amount': 'decimal.Decimal',
+        'discount_amount': 'decimal.Decimal',
         'measure_id': 'int',
         'account_details': 'list[BalanceTypeDeductSumV2]',
         'resource_type_code': 'str',
@@ -64,13 +64,13 @@ class BillSumInfoV2:
         :param charge_mode: 计费模式。 1：包年/包月3: 按需
         :type charge_mode: str
         :param amount: 金额。 对于billType&#x3D;1或者2的账单，该金额为负值。
-        :type amount: float
+        :type amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         :param debt_amount: 欠费金额，指从客户账户扣费的时候，客户账户金额不足，欠费的金额，华为核销或者退订的时候没有该字段。
-        :type debt_amount: float
+        :type debt_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         :param adjustment_amount: 核销欠款，华为核销或者退订的时候没有该字段。
-        :type adjustment_amount: float
+        :type adjustment_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         :param discount_amount: 折扣金额，华为核销或者退订的时候没有该字段。
-        :type discount_amount: float
+        :type discount_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         :param measure_id: 金额单位。 1：元
         :type measure_id: int
         :param account_details: 按不同账户消费类型和付费方式区分的支付总金额。 具体请参见表3。
@@ -242,7 +242,7 @@ class BillSumInfoV2:
         金额。 对于billType=1或者2的账单，该金额为负值。
 
         :return: The amount of this BillSumInfoV2.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         return self._amount
 
@@ -253,7 +253,7 @@ class BillSumInfoV2:
         金额。 对于billType=1或者2的账单，该金额为负值。
 
         :param amount: The amount of this BillSumInfoV2.
-        :type amount: float
+        :type amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         self._amount = amount
 
@@ -264,7 +264,7 @@ class BillSumInfoV2:
         欠费金额，指从客户账户扣费的时候，客户账户金额不足，欠费的金额，华为核销或者退订的时候没有该字段。
 
         :return: The debt_amount of this BillSumInfoV2.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         return self._debt_amount
 
@@ -275,7 +275,7 @@ class BillSumInfoV2:
         欠费金额，指从客户账户扣费的时候，客户账户金额不足，欠费的金额，华为核销或者退订的时候没有该字段。
 
         :param debt_amount: The debt_amount of this BillSumInfoV2.
-        :type debt_amount: float
+        :type debt_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         self._debt_amount = debt_amount
 
@@ -286,7 +286,7 @@ class BillSumInfoV2:
         核销欠款，华为核销或者退订的时候没有该字段。
 
         :return: The adjustment_amount of this BillSumInfoV2.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         return self._adjustment_amount
 
@@ -297,7 +297,7 @@ class BillSumInfoV2:
         核销欠款，华为核销或者退订的时候没有该字段。
 
         :param adjustment_amount: The adjustment_amount of this BillSumInfoV2.
-        :type adjustment_amount: float
+        :type adjustment_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         self._adjustment_amount = adjustment_amount
 
@@ -308,7 +308,7 @@ class BillSumInfoV2:
         折扣金额，华为核销或者退订的时候没有该字段。
 
         :return: The discount_amount of this BillSumInfoV2.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         return self._discount_amount
 
@@ -319,7 +319,7 @@ class BillSumInfoV2:
         折扣金额，华为核销或者退订的时候没有该字段。
 
         :param discount_amount: The discount_amount of this BillSumInfoV2.
-        :type discount_amount: float
+        :type discount_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         self._discount_amount = discount_amount
 

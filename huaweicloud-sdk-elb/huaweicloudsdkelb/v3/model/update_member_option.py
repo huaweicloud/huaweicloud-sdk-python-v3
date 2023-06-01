@@ -19,16 +19,18 @@ class UpdateMemberOption:
     openapi_types = {
         'admin_state_up': 'bool',
         'name': 'str',
-        'weight': 'int'
+        'weight': 'int',
+        'protocol_port': 'int'
     }
 
     attribute_map = {
         'admin_state_up': 'admin_state_up',
         'name': 'name',
-        'weight': 'weight'
+        'weight': 'weight',
+        'protocol_port': 'protocol_port'
     }
 
-    def __init__(self, admin_state_up=None, name=None, weight=None):
+    def __init__(self, admin_state_up=None, name=None, weight=None, protocol_port=None):
         """UpdateMemberOption
 
         The model defined in huaweicloud sdk
@@ -39,6 +41,8 @@ class UpdateMemberOption:
         :type name: str
         :param weight: 后端云服务器的权重，请求将根据pool配置的负载均衡算法和后端云服务器的权重进行负载分发。 权重值越大，分发的请求越多。权重为0的后端不再接受新的请求。  取值：0-100，默认1。  使用说明：若所在pool的lb_algorithm取值为SOURCE_IP，该字段无效。
         :type weight: int
+        :param protocol_port: 后端服务器端口。 &gt;在开启端口透传的pool下的member，该字段无法更新
+        :type protocol_port: int
         """
         
         
@@ -46,6 +50,7 @@ class UpdateMemberOption:
         self._admin_state_up = None
         self._name = None
         self._weight = None
+        self._protocol_port = None
         self.discriminator = None
 
         if admin_state_up is not None:
@@ -54,6 +59,8 @@ class UpdateMemberOption:
             self.name = name
         if weight is not None:
             self.weight = weight
+        if protocol_port is not None:
+            self.protocol_port = protocol_port
 
     @property
     def admin_state_up(self):
@@ -120,6 +127,28 @@ class UpdateMemberOption:
         :type weight: int
         """
         self._weight = weight
+
+    @property
+    def protocol_port(self):
+        """Gets the protocol_port of this UpdateMemberOption.
+
+        后端服务器端口。 >在开启端口透传的pool下的member，该字段无法更新
+
+        :return: The protocol_port of this UpdateMemberOption.
+        :rtype: int
+        """
+        return self._protocol_port
+
+    @protocol_port.setter
+    def protocol_port(self, protocol_port):
+        """Sets the protocol_port of this UpdateMemberOption.
+
+        后端服务器端口。 >在开启端口透传的pool下的member，该字段无法更新
+
+        :param protocol_port: The protocol_port of this UpdateMemberOption.
+        :type protocol_port: int
+        """
+        self._protocol_port = protocol_port
 
     def to_dict(self):
         """Returns the model properties as a dict"""

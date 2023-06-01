@@ -89,9 +89,9 @@ class ConfigsGetBody:
         :type https: :class:`huaweicloudsdkcdn.v2.HttpGetBody`
         :param sources: 源站配置。
         :type sources: list[:class:`huaweicloudsdkcdn.v2.SourcesConfig`]
-        :param origin_protocol: 回源协议（follow：协议跟随回源，http：HTTP回源(默认)，https：https回源）。
+        :param origin_protocol: 回源协议，follow：协议跟随回源，http：HTTP回源(默认)，https：https回源。
         :type origin_protocol: str
-        :param origin_follow302_status: 回源跟随（on：开启，off：关闭）。
+        :param origin_follow302_status: 回源跟随，on：开启，off：关闭。
         :type origin_follow302_status: str
         :param cache_rules: 缓存规则。
         :type cache_rules: list[:class:`huaweicloudsdkcdn.v2.CacheRules`]
@@ -105,21 +105,21 @@ class ConfigsGetBody:
         :type compress: :class:`huaweicloudsdkcdn.v2.Compress`
         :param cache_url_parameter_filter: 
         :type cache_url_parameter_filter: :class:`huaweicloudsdkcdn.v2.CacheUrlParameterFilter`
-        :param ipv6_accelerate: ipv6设置（1：打开；0：关闭）
+        :param ipv6_accelerate: ipv6设置，1：打开；0：关闭。
         :type ipv6_accelerate: int
-        :param error_code_cache: CDN状态码缓存时间
+        :param error_code_cache: 状态码缓存时间。
         :type error_code_cache: list[:class:`huaweicloudsdkcdn.v2.ErrorCodeCache`]
-        :param origin_range_status: Range回源，即分片回源 开启Range回源的前提是您的源站支持Range请求，即HTTP请求头中包含Range字段，否则可能导致回源失败。 开启: on
+        :param origin_range_status: Range回源，开启: on，off:关闭。
         :type origin_range_status: str
         :param user_agent_filter: 
         :type user_agent_filter: :class:`huaweicloudsdkcdn.v2.UserAgentFilter`
-        :param origin_request_url_rewrite: 改写回源URL，最多配置20条。
+        :param origin_request_url_rewrite: 改写回源URL。
         :type origin_request_url_rewrite: list[:class:`huaweicloudsdkcdn.v2.OriginRequestUrlRewrite`]
-        :param flexible_origin: 高级回源，最多配置20条。
+        :param flexible_origin: 高级回源。
         :type flexible_origin: list[:class:`huaweicloudsdkcdn.v2.FlexibleOrigins`]
-        :param slice_etag_status: 回源是否校验ETag（on：开启，off：关闭）。
+        :param slice_etag_status: 回源是否校验ETag，on：开启，off：关闭。
         :type slice_etag_status: str
-        :param origin_receive_timeout: 回源超时时间，范围:5-60，单位：秒。
+        :param origin_receive_timeout: 回源超时时间，单位：秒。
         :type origin_receive_timeout: int
         :param remote_auth: 
         :type remote_auth: :class:`huaweicloudsdkcdn.v2.CommonRemoteAuth`
@@ -322,7 +322,7 @@ class ConfigsGetBody:
     def origin_protocol(self):
         """Gets the origin_protocol of this ConfigsGetBody.
 
-        回源协议（follow：协议跟随回源，http：HTTP回源(默认)，https：https回源）。
+        回源协议，follow：协议跟随回源，http：HTTP回源(默认)，https：https回源。
 
         :return: The origin_protocol of this ConfigsGetBody.
         :rtype: str
@@ -333,7 +333,7 @@ class ConfigsGetBody:
     def origin_protocol(self, origin_protocol):
         """Sets the origin_protocol of this ConfigsGetBody.
 
-        回源协议（follow：协议跟随回源，http：HTTP回源(默认)，https：https回源）。
+        回源协议，follow：协议跟随回源，http：HTTP回源(默认)，https：https回源。
 
         :param origin_protocol: The origin_protocol of this ConfigsGetBody.
         :type origin_protocol: str
@@ -344,7 +344,7 @@ class ConfigsGetBody:
     def origin_follow302_status(self):
         """Gets the origin_follow302_status of this ConfigsGetBody.
 
-        回源跟随（on：开启，off：关闭）。
+        回源跟随，on：开启，off：关闭。
 
         :return: The origin_follow302_status of this ConfigsGetBody.
         :rtype: str
@@ -355,7 +355,7 @@ class ConfigsGetBody:
     def origin_follow302_status(self, origin_follow302_status):
         """Sets the origin_follow302_status of this ConfigsGetBody.
 
-        回源跟随（on：开启，off：关闭）。
+        回源跟随，on：开启，off：关闭。
 
         :param origin_follow302_status: The origin_follow302_status of this ConfigsGetBody.
         :type origin_follow302_status: str
@@ -478,7 +478,7 @@ class ConfigsGetBody:
     def ipv6_accelerate(self):
         """Gets the ipv6_accelerate of this ConfigsGetBody.
 
-        ipv6设置（1：打开；0：关闭）
+        ipv6设置，1：打开；0：关闭。
 
         :return: The ipv6_accelerate of this ConfigsGetBody.
         :rtype: int
@@ -489,7 +489,7 @@ class ConfigsGetBody:
     def ipv6_accelerate(self, ipv6_accelerate):
         """Sets the ipv6_accelerate of this ConfigsGetBody.
 
-        ipv6设置（1：打开；0：关闭）
+        ipv6设置，1：打开；0：关闭。
 
         :param ipv6_accelerate: The ipv6_accelerate of this ConfigsGetBody.
         :type ipv6_accelerate: int
@@ -500,7 +500,7 @@ class ConfigsGetBody:
     def error_code_cache(self):
         """Gets the error_code_cache of this ConfigsGetBody.
 
-        CDN状态码缓存时间
+        状态码缓存时间。
 
         :return: The error_code_cache of this ConfigsGetBody.
         :rtype: list[:class:`huaweicloudsdkcdn.v2.ErrorCodeCache`]
@@ -511,7 +511,7 @@ class ConfigsGetBody:
     def error_code_cache(self, error_code_cache):
         """Sets the error_code_cache of this ConfigsGetBody.
 
-        CDN状态码缓存时间
+        状态码缓存时间。
 
         :param error_code_cache: The error_code_cache of this ConfigsGetBody.
         :type error_code_cache: list[:class:`huaweicloudsdkcdn.v2.ErrorCodeCache`]
@@ -522,7 +522,7 @@ class ConfigsGetBody:
     def origin_range_status(self):
         """Gets the origin_range_status of this ConfigsGetBody.
 
-        Range回源，即分片回源 开启Range回源的前提是您的源站支持Range请求，即HTTP请求头中包含Range字段，否则可能导致回源失败。 开启: on
+        Range回源，开启: on，off:关闭。
 
         :return: The origin_range_status of this ConfigsGetBody.
         :rtype: str
@@ -533,7 +533,7 @@ class ConfigsGetBody:
     def origin_range_status(self, origin_range_status):
         """Sets the origin_range_status of this ConfigsGetBody.
 
-        Range回源，即分片回源 开启Range回源的前提是您的源站支持Range请求，即HTTP请求头中包含Range字段，否则可能导致回源失败。 开启: on
+        Range回源，开启: on，off:关闭。
 
         :param origin_range_status: The origin_range_status of this ConfigsGetBody.
         :type origin_range_status: str
@@ -562,7 +562,7 @@ class ConfigsGetBody:
     def origin_request_url_rewrite(self):
         """Gets the origin_request_url_rewrite of this ConfigsGetBody.
 
-        改写回源URL，最多配置20条。
+        改写回源URL。
 
         :return: The origin_request_url_rewrite of this ConfigsGetBody.
         :rtype: list[:class:`huaweicloudsdkcdn.v2.OriginRequestUrlRewrite`]
@@ -573,7 +573,7 @@ class ConfigsGetBody:
     def origin_request_url_rewrite(self, origin_request_url_rewrite):
         """Sets the origin_request_url_rewrite of this ConfigsGetBody.
 
-        改写回源URL，最多配置20条。
+        改写回源URL。
 
         :param origin_request_url_rewrite: The origin_request_url_rewrite of this ConfigsGetBody.
         :type origin_request_url_rewrite: list[:class:`huaweicloudsdkcdn.v2.OriginRequestUrlRewrite`]
@@ -584,7 +584,7 @@ class ConfigsGetBody:
     def flexible_origin(self):
         """Gets the flexible_origin of this ConfigsGetBody.
 
-        高级回源，最多配置20条。
+        高级回源。
 
         :return: The flexible_origin of this ConfigsGetBody.
         :rtype: list[:class:`huaweicloudsdkcdn.v2.FlexibleOrigins`]
@@ -595,7 +595,7 @@ class ConfigsGetBody:
     def flexible_origin(self, flexible_origin):
         """Sets the flexible_origin of this ConfigsGetBody.
 
-        高级回源，最多配置20条。
+        高级回源。
 
         :param flexible_origin: The flexible_origin of this ConfigsGetBody.
         :type flexible_origin: list[:class:`huaweicloudsdkcdn.v2.FlexibleOrigins`]
@@ -606,7 +606,7 @@ class ConfigsGetBody:
     def slice_etag_status(self):
         """Gets the slice_etag_status of this ConfigsGetBody.
 
-        回源是否校验ETag（on：开启，off：关闭）。
+        回源是否校验ETag，on：开启，off：关闭。
 
         :return: The slice_etag_status of this ConfigsGetBody.
         :rtype: str
@@ -617,7 +617,7 @@ class ConfigsGetBody:
     def slice_etag_status(self, slice_etag_status):
         """Sets the slice_etag_status of this ConfigsGetBody.
 
-        回源是否校验ETag（on：开启，off：关闭）。
+        回源是否校验ETag，on：开启，off：关闭。
 
         :param slice_etag_status: The slice_etag_status of this ConfigsGetBody.
         :type slice_etag_status: str
@@ -628,7 +628,7 @@ class ConfigsGetBody:
     def origin_receive_timeout(self):
         """Gets the origin_receive_timeout of this ConfigsGetBody.
 
-        回源超时时间，范围:5-60，单位：秒。
+        回源超时时间，单位：秒。
 
         :return: The origin_receive_timeout of this ConfigsGetBody.
         :rtype: int
@@ -639,7 +639,7 @@ class ConfigsGetBody:
     def origin_receive_timeout(self, origin_receive_timeout):
         """Sets the origin_receive_timeout of this ConfigsGetBody.
 
-        回源超时时间，范围:5-60，单位：秒。
+        回源超时时间，单位：秒。
 
         :param origin_receive_timeout: The origin_receive_timeout of this ConfigsGetBody.
         :type origin_receive_timeout: int

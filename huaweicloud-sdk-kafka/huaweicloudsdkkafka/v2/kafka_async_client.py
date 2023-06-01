@@ -722,7 +722,7 @@ class KafkaAsyncClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v2/{project_id}/kafka/instances/{instance_id}/groups',
+            resource_path='/v2/{project_id}/kafka/instances/{instance_id}/group',
             method='POST',
             path_params=path_params,
             query_params=query_params,
@@ -1474,6 +1474,10 @@ class KafkaAsyncClient(Client):
             path_params['instance_id'] = local_var_params['instance_id']
 
         query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
 
         header_params = {}
 
@@ -1543,6 +1547,10 @@ class KafkaAsyncClient(Client):
             query_params.append(('exact_match_name', local_var_params['exact_match_name']))
         if 'enterprise_project_id' in local_var_params:
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
 
         header_params = {}
 

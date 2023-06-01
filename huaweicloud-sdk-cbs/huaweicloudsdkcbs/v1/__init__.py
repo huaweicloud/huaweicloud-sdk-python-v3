@@ -6,6 +6,7 @@ from __future__ import absolute_import
 from huaweicloudsdkcbs.v1.cbs_client import CbsClient
 from huaweicloudsdkcbs.v1.cbs_async_client import CbsAsyncClient
 # import models into sdk package
+from huaweicloudsdkcbs.v1.model.answers import Answers
 from huaweicloudsdkcbs.v1.model.basic_list_resp import BasicListResp
 from huaweicloudsdkcbs.v1.model.candidate_intention import CandidateIntention
 from huaweicloudsdkcbs.v1.model.character import Character
@@ -30,6 +31,7 @@ from huaweicloudsdkcbs.v1.model.delete_session_request import DeleteSessionReque
 from huaweicloudsdkcbs.v1.model.delete_session_response import DeleteSessionResponse
 from huaweicloudsdkcbs.v1.model.doc_bot_answers import DocBotAnswers
 from huaweicloudsdkcbs.v1.model.doc_query_answer_detail import DocQueryAnswerDetail
+from huaweicloudsdkcbs.v1.model.ex_questions import ExQuestions
 from huaweicloudsdkcbs.v1.model.execute_compose_video_ondemand_request import ExecuteComposeVideoOndemandRequest
 from huaweicloudsdkcbs.v1.model.execute_compose_video_ondemand_response import ExecuteComposeVideoOndemandResponse
 from huaweicloudsdkcbs.v1.model.execute_compose_video_request import ExecuteComposeVideoRequest
@@ -85,12 +87,16 @@ from huaweicloudsdkcbs.v1.model.key_words_stat import KeyWordsStat
 from huaweicloudsdkcbs.v1.model.left_right_position import LeftRightPosition
 from huaweicloudsdkcbs.v1.model.list_suggestions_request import ListSuggestionsRequest
 from huaweicloudsdkcbs.v1.model.list_suggestions_response import ListSuggestionsResponse
+from huaweicloudsdkcbs.v1.model.old_extends import OldExtends
 from huaweicloudsdkcbs.v1.model.ppt_read_config import PPTReadConfig
 from huaweicloudsdkcbs.v1.model.ppt_read_config_resp import PPTReadConfigResp
 from huaweicloudsdkcbs.v1.model.position import Position
 from huaweicloudsdkcbs.v1.model.post_images_req import PostImagesReq
+from huaweicloudsdkcbs.v1.model.post_old_requests_req import PostOldRequestsReq
 from huaweicloudsdkcbs.v1.model.post_qa_session_req import PostQaSessionReq
 from huaweicloudsdkcbs.v1.model.post_requests_req import PostRequestsReq
+from huaweicloudsdkcbs.v1.model.post_requests_request import PostRequestsRequest
+from huaweicloudsdkcbs.v1.model.post_requests_response import PostRequestsResponse
 from huaweicloudsdkcbs.v1.model.post_satisfaction_req import PostSatisfactionReq
 from huaweicloudsdkcbs.v1.model.post_suggestions_req import PostSuggestionsReq
 from huaweicloudsdkcbs.v1.model.put_video_info import PutVideoInfo

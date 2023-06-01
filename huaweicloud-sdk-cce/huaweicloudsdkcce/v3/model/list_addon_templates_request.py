@@ -29,7 +29,7 @@ class ListAddonTemplatesRequest:
 
         The model defined in huaweicloud sdk
 
-        :param addon_template_name: 指定的模板名称，不填写则查询列表。
+        :param addon_template_name: 指定的插件名称或插件别名，不填写则查询列表。
         :type addon_template_name: str
         """
         
@@ -45,7 +45,7 @@ class ListAddonTemplatesRequest:
     def addon_template_name(self):
         """Gets the addon_template_name of this ListAddonTemplatesRequest.
 
-        指定的模板名称，不填写则查询列表。
+        指定的插件名称或插件别名，不填写则查询列表。
 
         :return: The addon_template_name of this ListAddonTemplatesRequest.
         :rtype: str
@@ -56,7 +56,7 @@ class ListAddonTemplatesRequest:
     def addon_template_name(self, addon_template_name):
         """Sets the addon_template_name of this ListAddonTemplatesRequest.
 
-        指定的模板名称，不填写则查询列表。
+        指定的插件名称或插件别名，不填写则查询列表。
 
         :param addon_template_name: The addon_template_name of this ListAddonTemplatesRequest.
         :type addon_template_name: str

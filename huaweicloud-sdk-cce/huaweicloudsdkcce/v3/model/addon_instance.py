@@ -19,7 +19,7 @@ class AddonInstance:
     openapi_types = {
         'kind': 'str',
         'api_version': 'str',
-        'metadata': 'Metadata',
+        'metadata': 'AddonMetadata',
         'spec': 'InstanceSpec',
         'status': 'AddonInstanceStatus'
     }
@@ -42,7 +42,7 @@ class AddonInstance:
         :param api_version: API版本，固定值“v3”，该值不可修改。
         :type api_version: str
         :param metadata: 
-        :type metadata: :class:`huaweicloudsdkcce.v3.Metadata`
+        :type metadata: :class:`huaweicloudsdkcce.v3.AddonMetadata`
         :param spec: 
         :type spec: :class:`huaweicloudsdkcce.v3.InstanceSpec`
         :param status: 
@@ -114,7 +114,7 @@ class AddonInstance:
         """Gets the metadata of this AddonInstance.
 
         :return: The metadata of this AddonInstance.
-        :rtype: :class:`huaweicloudsdkcce.v3.Metadata`
+        :rtype: :class:`huaweicloudsdkcce.v3.AddonMetadata`
         """
         return self._metadata
 
@@ -123,7 +123,7 @@ class AddonInstance:
         """Sets the metadata of this AddonInstance.
 
         :param metadata: The metadata of this AddonInstance.
-        :type metadata: :class:`huaweicloudsdkcce.v3.Metadata`
+        :type metadata: :class:`huaweicloudsdkcce.v3.AddonMetadata`
         """
         self._metadata = metadata
 

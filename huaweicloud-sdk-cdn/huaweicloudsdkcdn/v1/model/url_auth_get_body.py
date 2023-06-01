@@ -35,13 +35,13 @@ class UrlAuthGetBody:
 
         The model defined in huaweicloud sdk
 
-        :param status: A/B/C类防盗链开关（\&quot;off\&quot;/\&quot;on\&quot;）。
+        :param status: 是否开启URL鉴权，off：开启,on：关闭。
         :type status: str
-        :param type: 鉴权方式 type_a：鉴权方式A type_b：鉴权方式B type_c1：鉴权方式C1 type_c2：鉴权方式C2
+        :param type: 鉴权方式， type_a：鉴权方式A， type_b：鉴权方式B， type_c1：鉴权方式C1， type_c2：鉴权方式C2。
         :type type: str
-        :param time_format: 时间格式 dec：十进制 hex：十六进制 鉴权方式A：只支持十进制 鉴权方式B：只支持十进制 鉴权方式C1：只支持十六进制鉴权方式 鉴权方式C2：支持十进制/十六进制
+        :param time_format: 时间格式， dec：十进制, hex：十六进制。
         :type time_format: str
-        :param expire_time: 过期时间：范围：0-31536000单位为秒。
+        :param expire_time: 过期时间，单位：秒。
         :type expire_time: int
         """
         
@@ -65,7 +65,7 @@ class UrlAuthGetBody:
     def status(self):
         """Gets the status of this UrlAuthGetBody.
 
-        A/B/C类防盗链开关（\"off\"/\"on\"）。
+        是否开启URL鉴权，off：开启,on：关闭。
 
         :return: The status of this UrlAuthGetBody.
         :rtype: str
@@ -76,7 +76,7 @@ class UrlAuthGetBody:
     def status(self, status):
         """Sets the status of this UrlAuthGetBody.
 
-        A/B/C类防盗链开关（\"off\"/\"on\"）。
+        是否开启URL鉴权，off：开启,on：关闭。
 
         :param status: The status of this UrlAuthGetBody.
         :type status: str
@@ -87,7 +87,7 @@ class UrlAuthGetBody:
     def type(self):
         """Gets the type of this UrlAuthGetBody.
 
-        鉴权方式 type_a：鉴权方式A type_b：鉴权方式B type_c1：鉴权方式C1 type_c2：鉴权方式C2
+        鉴权方式， type_a：鉴权方式A， type_b：鉴权方式B， type_c1：鉴权方式C1， type_c2：鉴权方式C2。
 
         :return: The type of this UrlAuthGetBody.
         :rtype: str
@@ -98,7 +98,7 @@ class UrlAuthGetBody:
     def type(self, type):
         """Sets the type of this UrlAuthGetBody.
 
-        鉴权方式 type_a：鉴权方式A type_b：鉴权方式B type_c1：鉴权方式C1 type_c2：鉴权方式C2
+        鉴权方式， type_a：鉴权方式A， type_b：鉴权方式B， type_c1：鉴权方式C1， type_c2：鉴权方式C2。
 
         :param type: The type of this UrlAuthGetBody.
         :type type: str
@@ -109,7 +109,7 @@ class UrlAuthGetBody:
     def time_format(self):
         """Gets the time_format of this UrlAuthGetBody.
 
-        时间格式 dec：十进制 hex：十六进制 鉴权方式A：只支持十进制 鉴权方式B：只支持十进制 鉴权方式C1：只支持十六进制鉴权方式 鉴权方式C2：支持十进制/十六进制
+        时间格式， dec：十进制, hex：十六进制。
 
         :return: The time_format of this UrlAuthGetBody.
         :rtype: str
@@ -120,7 +120,7 @@ class UrlAuthGetBody:
     def time_format(self, time_format):
         """Sets the time_format of this UrlAuthGetBody.
 
-        时间格式 dec：十进制 hex：十六进制 鉴权方式A：只支持十进制 鉴权方式B：只支持十进制 鉴权方式C1：只支持十六进制鉴权方式 鉴权方式C2：支持十进制/十六进制
+        时间格式， dec：十进制, hex：十六进制。
 
         :param time_format: The time_format of this UrlAuthGetBody.
         :type time_format: str
@@ -131,7 +131,7 @@ class UrlAuthGetBody:
     def expire_time(self):
         """Gets the expire_time of this UrlAuthGetBody.
 
-        过期时间：范围：0-31536000单位为秒。
+        过期时间，单位：秒。
 
         :return: The expire_time of this UrlAuthGetBody.
         :rtype: int
@@ -142,7 +142,7 @@ class UrlAuthGetBody:
     def expire_time(self, expire_time):
         """Sets the expire_time of this UrlAuthGetBody.
 
-        过期时间：范围：0-31536000单位为秒。
+        过期时间，单位：秒。
 
         :param expire_time: The expire_time of this UrlAuthGetBody.
         :type expire_time: int

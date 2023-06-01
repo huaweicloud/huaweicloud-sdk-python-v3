@@ -29,7 +29,7 @@ class CancelSubscriptionRequest:
 
         The model defined in huaweicloud sdk
 
-        :param subscription_urn: 订阅者的唯一的资源标识，可通过[查询订阅者列表](https://support.huaweicloud.com/api-smn/ListSubscriptions.html)获取该标识。
+        :param subscription_urn: 订阅者的唯一的资源标识，可通过[查询订阅者列表](ListSubscriptions.xml)获取该标识。
         :type subscription_urn: str
         """
         
@@ -44,7 +44,7 @@ class CancelSubscriptionRequest:
     def subscription_urn(self):
         """Gets the subscription_urn of this CancelSubscriptionRequest.
 
-        订阅者的唯一的资源标识，可通过[查询订阅者列表](https://support.huaweicloud.com/api-smn/ListSubscriptions.html)获取该标识。
+        订阅者的唯一的资源标识，可通过[查询订阅者列表](ListSubscriptions.xml)获取该标识。
 
         :return: The subscription_urn of this CancelSubscriptionRequest.
         :rtype: str
@@ -55,7 +55,7 @@ class CancelSubscriptionRequest:
     def subscription_urn(self, subscription_urn):
         """Sets the subscription_urn of this CancelSubscriptionRequest.
 
-        订阅者的唯一的资源标识，可通过[查询订阅者列表](https://support.huaweicloud.com/api-smn/ListSubscriptions.html)获取该标识。
+        订阅者的唯一的资源标识，可通过[查询订阅者列表](ListSubscriptions.xml)获取该标识。
 
         :param subscription_urn: The subscription_urn of this CancelSubscriptionRequest.
         :type subscription_urn: str

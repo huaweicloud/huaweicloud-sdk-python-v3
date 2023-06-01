@@ -41,7 +41,7 @@ class PartitionReassignEntity:
         :type brokers: list[int]
         :param replication_factor: 副本因子，自动生成分配方案时可指定。
         :type replication_factor: int
-        :param assignment: 手动指定的分配方案。brokers 参数与该参数不能同时为空。
+        :param assignment: 手动指定的分配方案。brokers参数与该参数不能同时为空。
         :type assignment: list[:class:`huaweicloudsdkkafka.v2.TopicAssignment`]
         """
         
@@ -131,7 +131,7 @@ class PartitionReassignEntity:
     def assignment(self):
         """Gets the assignment of this PartitionReassignEntity.
 
-        手动指定的分配方案。brokers 参数与该参数不能同时为空。
+        手动指定的分配方案。brokers参数与该参数不能同时为空。
 
         :return: The assignment of this PartitionReassignEntity.
         :rtype: list[:class:`huaweicloudsdkkafka.v2.TopicAssignment`]
@@ -142,7 +142,7 @@ class PartitionReassignEntity:
     def assignment(self, assignment):
         """Sets the assignment of this PartitionReassignEntity.
 
-        手动指定的分配方案。brokers 参数与该参数不能同时为空。
+        手动指定的分配方案。brokers参数与该参数不能同时为空。
 
         :param assignment: The assignment of this PartitionReassignEntity.
         :type assignment: list[:class:`huaweicloudsdkkafka.v2.TopicAssignment`]

@@ -20,7 +20,7 @@ class ShowAddonInstanceResponse(SdkResponse):
     openapi_types = {
         'kind': 'str',
         'api_version': 'str',
-        'metadata': 'Metadata',
+        'metadata': 'AddonMetadata',
         'spec': 'InstanceSpec',
         'status': 'AddonInstanceStatus'
     }
@@ -43,7 +43,7 @@ class ShowAddonInstanceResponse(SdkResponse):
         :param api_version: API版本，固定值“v3”，该值不可修改。
         :type api_version: str
         :param metadata: 
-        :type metadata: :class:`huaweicloudsdkcce.v3.Metadata`
+        :type metadata: :class:`huaweicloudsdkcce.v3.AddonMetadata`
         :param spec: 
         :type spec: :class:`huaweicloudsdkcce.v3.InstanceSpec`
         :param status: 
@@ -119,7 +119,7 @@ class ShowAddonInstanceResponse(SdkResponse):
         """Gets the metadata of this ShowAddonInstanceResponse.
 
         :return: The metadata of this ShowAddonInstanceResponse.
-        :rtype: :class:`huaweicloudsdkcce.v3.Metadata`
+        :rtype: :class:`huaweicloudsdkcce.v3.AddonMetadata`
         """
         return self._metadata
 
@@ -128,7 +128,7 @@ class ShowAddonInstanceResponse(SdkResponse):
         """Sets the metadata of this ShowAddonInstanceResponse.
 
         :param metadata: The metadata of this ShowAddonInstanceResponse.
-        :type metadata: :class:`huaweicloudsdkcce.v3.Metadata`
+        :type metadata: :class:`huaweicloudsdkcce.v3.AddonMetadata`
         """
         self._metadata = metadata
 

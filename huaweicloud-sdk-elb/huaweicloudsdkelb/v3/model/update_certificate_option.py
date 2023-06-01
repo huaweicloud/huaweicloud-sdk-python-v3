@@ -47,7 +47,7 @@ class UpdateCertificateOption:
         :type description: str
         :param name: 证书的名称。
         :type name: str
-        :param private_key: 服务器证书的私钥。PEM编码格式。 当type为client时，该参数被忽略，不影响证书的创建和使用。且若不符合格式，不报错但会被设置为空。 当type为server时，该字段必须符合格式要求，且私钥必须是有效的。 最大长度8192字符。
+        :param private_key: 服务器证书的私钥。PEM编码格式。 当type为client时，该参数被忽略，不影响证书的创建和使用。若传入不符合格式值，则会报错。 当type为server时，该字段必须符合格式要求，且私钥必须是有效的。 最大长度8192字符。
         :type private_key: str
         :param domain: 服务器证书所签域名。该字段仅type为server时有效。  总长度为0-1024，由若干普通域名或泛域名组成，域名之间以\&quot;,\&quot;分割，不超过30个域名。  普通域名：由若干字符串组成，字符串间以\&quot;.\&quot;分割，单个字符串长度不超过63个字符， 只能包含英文字母、数字或\&quot;-\&quot;，且必须以字母或数字开头和结尾。例：www.test.com；  泛域名：在普通域名的基础上仅允许首字母为\&quot;*\&quot;。例：*.test.com
         :type domain: str
@@ -153,7 +153,7 @@ class UpdateCertificateOption:
     def private_key(self):
         """Gets the private_key of this UpdateCertificateOption.
 
-        服务器证书的私钥。PEM编码格式。 当type为client时，该参数被忽略，不影响证书的创建和使用。且若不符合格式，不报错但会被设置为空。 当type为server时，该字段必须符合格式要求，且私钥必须是有效的。 最大长度8192字符。
+        服务器证书的私钥。PEM编码格式。 当type为client时，该参数被忽略，不影响证书的创建和使用。若传入不符合格式值，则会报错。 当type为server时，该字段必须符合格式要求，且私钥必须是有效的。 最大长度8192字符。
 
         :return: The private_key of this UpdateCertificateOption.
         :rtype: str
@@ -164,7 +164,7 @@ class UpdateCertificateOption:
     def private_key(self, private_key):
         """Sets the private_key of this UpdateCertificateOption.
 
-        服务器证书的私钥。PEM编码格式。 当type为client时，该参数被忽略，不影响证书的创建和使用。且若不符合格式，不报错但会被设置为空。 当type为server时，该字段必须符合格式要求，且私钥必须是有效的。 最大长度8192字符。
+        服务器证书的私钥。PEM编码格式。 当type为client时，该参数被忽略，不影响证书的创建和使用。若传入不符合格式值，则会报错。 当type为server时，该字段必须符合格式要求，且私钥必须是有效的。 最大长度8192字符。
 
         :param private_key: The private_key of this UpdateCertificateOption.
         :type private_key: str
