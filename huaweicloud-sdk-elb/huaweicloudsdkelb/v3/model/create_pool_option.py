@@ -31,7 +31,8 @@ class CreatePoolOption:
         'vpc_id': 'str',
         'type': 'str',
         'protection_status': 'str',
-        'protection_reason': 'str'
+        'protection_reason': 'str',
+        'any_port_enable': 'bool'
     }
 
     attribute_map = {
@@ -49,10 +50,11 @@ class CreatePoolOption:
         'vpc_id': 'vpc_id',
         'type': 'type',
         'protection_status': 'protection_status',
-        'protection_reason': 'protection_reason'
+        'protection_reason': 'protection_reason',
+        'any_port_enable': 'any_port_enable'
     }
 
-    def __init__(self, admin_state_up=None, description=None, lb_algorithm=None, listener_id=None, loadbalancer_id=None, name=None, project_id=None, protocol=None, session_persistence=None, slow_start=None, member_deletion_protection_enable=None, vpc_id=None, type=None, protection_status=None, protection_reason=None):
+    def __init__(self, admin_state_up=None, description=None, lb_algorithm=None, listener_id=None, loadbalancer_id=None, name=None, project_id=None, protocol=None, session_persistence=None, slow_start=None, member_deletion_protection_enable=None, vpc_id=None, type=None, protection_status=None, protection_reason=None, any_port_enable=None):
         """CreatePoolOption
 
         The model defined in huaweicloud sdk
@@ -87,6 +89,8 @@ class CreatePoolOption:
         :type protection_status: str
         :param protection_reason: 设置保护的原因 &gt;仅当protection_status为consoleProtection时有效。
         :type protection_reason: str
+        :param any_port_enable: 后端是否开启端口透传，开启后，后端服务器端口与前端监听器端口保持一致。  使用说明： - 仅QUIC,TCP,UDP的pool支持。
+        :type any_port_enable: bool
         """
         
         
@@ -106,6 +110,7 @@ class CreatePoolOption:
         self._type = None
         self._protection_status = None
         self._protection_reason = None
+        self._any_port_enable = None
         self.discriminator = None
 
         if admin_state_up is not None:
@@ -136,6 +141,8 @@ class CreatePoolOption:
             self.protection_status = protection_status
         if protection_reason is not None:
             self.protection_reason = protection_reason
+        if any_port_enable is not None:
+            self.any_port_enable = any_port_enable
 
     @property
     def admin_state_up(self):
@@ -458,6 +465,28 @@ class CreatePoolOption:
         :type protection_reason: str
         """
         self._protection_reason = protection_reason
+
+    @property
+    def any_port_enable(self):
+        """Gets the any_port_enable of this CreatePoolOption.
+
+        后端是否开启端口透传，开启后，后端服务器端口与前端监听器端口保持一致。  使用说明： - 仅QUIC,TCP,UDP的pool支持。
+
+        :return: The any_port_enable of this CreatePoolOption.
+        :rtype: bool
+        """
+        return self._any_port_enable
+
+    @any_port_enable.setter
+    def any_port_enable(self, any_port_enable):
+        """Sets the any_port_enable of this CreatePoolOption.
+
+        后端是否开启端口透传，开启后，后端服务器端口与前端监听器端口保持一致。  使用说明： - 仅QUIC,TCP,UDP的pool支持。
+
+        :param any_port_enable: The any_port_enable of this CreatePoolOption.
+        :type any_port_enable: bool
+        """
+        self._any_port_enable = any_port_enable
 
     def to_dict(self):
         """Returns the model properties as a dict"""

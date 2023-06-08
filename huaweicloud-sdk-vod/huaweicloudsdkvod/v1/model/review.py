@@ -39,13 +39,13 @@ class Review:
 
         :param template_id: 审核模板ID。您可以在视频点播控制台配置审核模板后获取，具体请参见[审核设置](https://support.huaweicloud.com/usermanual-vod/vod_01_0057.html)。
         :type template_id: str
-        :param interval: 截图检测时间间隔，取值范围为[0,100]，该参数在请求参数中忽略。 置信度越高，说明审核结果越可信。未开启或设置为0时，表示不进行此项检测。
+        :param interval: 截图检测时间间隔，取值范围为[0,100]，该参数在请求参数中忽略。
         :type interval: int
-        :param politics: 鉴政内容检测置信度，取值范围为[0,100]，该参数在请求参数中忽略。 置信度越高，说明审核结果越可信。未开启或设置为0时，表示不进行此项检测。
+        :param politics: 鉴政内容检测置信度，取值范围为[0,100]，该参数在请求参数中忽略。 置信度越高，说明审核结果越可信。未开启或设置为0时，表示未进行此项检测。
         :type politics: int
-        :param terrorism: 鉴恐内容的检测置信度，取值范围为[0,100]，该参数在请求参数中忽略。 置信度越高，说明审核结果越可信。未开启或设置为0时，表示不进行此项检测。
+        :param terrorism: 鉴恐内容的检测置信度，取值范围为[0,100]，该参数在请求参数中忽略。 置信度越高，说明审核结果越可信。未开启或设置为0时，表示未进行此项检测。
         :type terrorism: int
-        :param porn: 鉴黄内容的检测置信度，取值范围为[0,100]，该参数在请求参数中忽略。 置信度越高，说明审核结果越可信。未开启或设置为0时，表示不进行此项检测。  
+        :param porn: 鉴黄内容的检测置信度，取值范围为[0,100]，该参数在请求参数中忽略。 置信度越高，说明审核结果越可信。未开启或设置为0时，表示未进行此项检测。  
         :type porn: int
         """
         
@@ -94,7 +94,7 @@ class Review:
     def interval(self):
         """Gets the interval of this Review.
 
-        截图检测时间间隔，取值范围为[0,100]，该参数在请求参数中忽略。 置信度越高，说明审核结果越可信。未开启或设置为0时，表示不进行此项检测。
+        截图检测时间间隔，取值范围为[0,100]，该参数在请求参数中忽略。
 
         :return: The interval of this Review.
         :rtype: int
@@ -105,7 +105,7 @@ class Review:
     def interval(self, interval):
         """Sets the interval of this Review.
 
-        截图检测时间间隔，取值范围为[0,100]，该参数在请求参数中忽略。 置信度越高，说明审核结果越可信。未开启或设置为0时，表示不进行此项检测。
+        截图检测时间间隔，取值范围为[0,100]，该参数在请求参数中忽略。
 
         :param interval: The interval of this Review.
         :type interval: int
@@ -116,7 +116,7 @@ class Review:
     def politics(self):
         """Gets the politics of this Review.
 
-        鉴政内容检测置信度，取值范围为[0,100]，该参数在请求参数中忽略。 置信度越高，说明审核结果越可信。未开启或设置为0时，表示不进行此项检测。
+        鉴政内容检测置信度，取值范围为[0,100]，该参数在请求参数中忽略。 置信度越高，说明审核结果越可信。未开启或设置为0时，表示未进行此项检测。
 
         :return: The politics of this Review.
         :rtype: int
@@ -127,7 +127,7 @@ class Review:
     def politics(self, politics):
         """Sets the politics of this Review.
 
-        鉴政内容检测置信度，取值范围为[0,100]，该参数在请求参数中忽略。 置信度越高，说明审核结果越可信。未开启或设置为0时，表示不进行此项检测。
+        鉴政内容检测置信度，取值范围为[0,100]，该参数在请求参数中忽略。 置信度越高，说明审核结果越可信。未开启或设置为0时，表示未进行此项检测。
 
         :param politics: The politics of this Review.
         :type politics: int
@@ -138,7 +138,7 @@ class Review:
     def terrorism(self):
         """Gets the terrorism of this Review.
 
-        鉴恐内容的检测置信度，取值范围为[0,100]，该参数在请求参数中忽略。 置信度越高，说明审核结果越可信。未开启或设置为0时，表示不进行此项检测。
+        鉴恐内容的检测置信度，取值范围为[0,100]，该参数在请求参数中忽略。 置信度越高，说明审核结果越可信。未开启或设置为0时，表示未进行此项检测。
 
         :return: The terrorism of this Review.
         :rtype: int
@@ -149,7 +149,7 @@ class Review:
     def terrorism(self, terrorism):
         """Sets the terrorism of this Review.
 
-        鉴恐内容的检测置信度，取值范围为[0,100]，该参数在请求参数中忽略。 置信度越高，说明审核结果越可信。未开启或设置为0时，表示不进行此项检测。
+        鉴恐内容的检测置信度，取值范围为[0,100]，该参数在请求参数中忽略。 置信度越高，说明审核结果越可信。未开启或设置为0时，表示未进行此项检测。
 
         :param terrorism: The terrorism of this Review.
         :type terrorism: int
@@ -160,7 +160,7 @@ class Review:
     def porn(self):
         """Gets the porn of this Review.
 
-        鉴黄内容的检测置信度，取值范围为[0,100]，该参数在请求参数中忽略。 置信度越高，说明审核结果越可信。未开启或设置为0时，表示不进行此项检测。  
+        鉴黄内容的检测置信度，取值范围为[0,100]，该参数在请求参数中忽略。 置信度越高，说明审核结果越可信。未开启或设置为0时，表示未进行此项检测。  
 
         :return: The porn of this Review.
         :rtype: int
@@ -171,7 +171,7 @@ class Review:
     def porn(self, porn):
         """Sets the porn of this Review.
 
-        鉴黄内容的检测置信度，取值范围为[0,100]，该参数在请求参数中忽略。 置信度越高，说明审核结果越可信。未开启或设置为0时，表示不进行此项检测。  
+        鉴黄内容的检测置信度，取值范围为[0,100]，该参数在请求参数中忽略。 置信度越高，说明审核结果越可信。未开启或设置为0时，表示未进行此项检测。  
 
         :param porn: The porn of this Review.
         :type porn: int

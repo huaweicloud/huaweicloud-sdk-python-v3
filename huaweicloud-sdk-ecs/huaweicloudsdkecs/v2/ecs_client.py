@@ -779,6 +779,62 @@ class EcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def change_server_charge_mode(self, request):
+        """更换云服务器计费模式
+
+        更换云服务器的计费模式
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ChangeServerChargeMode
+        :type request: :class:`huaweicloudsdkecs.v2.ChangeServerChargeModeRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.ChangeServerChargeModeResponse`
+        """
+        return self._change_server_charge_mode_with_http_info(request)
+
+    def _change_server_charge_mode_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/cloudservers/actions/change-charge-mode',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ChangeServerChargeModeResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def change_server_os_with_cloud_init(self, request):
         """切换弹性云服务器操作系统(安装Cloud init)
 

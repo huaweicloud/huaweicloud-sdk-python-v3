@@ -46,10 +46,10 @@ class NvlCostAnalysedBillDetail:
         'ri_usage': 'decimal.Decimal',
         'ri_usage_measure_id': 'int',
         'consume_amount': 'decimal.Decimal',
-        'past_months_amortized_amount': 'float',
+        'past_months_amortized_amount': 'decimal.Decimal',
         'current_month_amortized_amount': 'decimal.Decimal',
         'future_months_amortized_amount': 'decimal.Decimal',
-        'amortized_cash_amount': 'float',
+        'amortized_cash_amount': 'decimal.Decimal',
         'amortized_credit_amount': 'decimal.Decimal',
         'amortized_coupon_amount': 'decimal.Decimal',
         'amortized_flexipurchase_coupon_amount': 'decimal.Decimal',
@@ -178,13 +178,13 @@ class NvlCostAnalysedBillDetail:
         :param consume_amount: 消费金额（应付金额）。 消费金额&#x3D;期初已分摊金额+当月分摊金额+期末未分摊金额
         :type consume_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         :param past_months_amortized_amount: 期初已分摊金额。  说明： 包周期和预留实例预付时有效；计费类型为按需，预留实例为按时计费时该值为0。
-        :type past_months_amortized_amount: float
+        :type past_months_amortized_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         :param current_month_amortized_amount: 当月分摊金额。 当月分摊金额&#x3D;现金分摊金额+信用额度分摊金额+代金券分摊金额+现金券分摊金额+储值卡分摊金额+奖励金分摊金额
         :type current_month_amortized_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         :param future_months_amortized_amount: 期末未分摊金额。月度成本分摊时，当月以后还未分摊的金额。  说明： 包周期和预留实例预付时有效；计费类型为按需，预留实例为按时计费时该值为0。
         :type future_months_amortized_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         :param amortized_cash_amount: 月度成本分摊时，当月已分摊金额中包含的现金金额。
-        :type amortized_cash_amount: float
+        :type amortized_cash_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         :param amortized_credit_amount: 月度成本分摊时，当月已分摊金额中包含的信用额度分摊金额。
         :type amortized_credit_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         :param amortized_coupon_amount: 月度成本分摊时，当月已分摊金额中包含的代金券分摊金额。
@@ -1001,7 +1001,7 @@ class NvlCostAnalysedBillDetail:
         期初已分摊金额。  说明： 包周期和预留实例预付时有效；计费类型为按需，预留实例为按时计费时该值为0。
 
         :return: The past_months_amortized_amount of this NvlCostAnalysedBillDetail.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         return self._past_months_amortized_amount
 
@@ -1012,7 +1012,7 @@ class NvlCostAnalysedBillDetail:
         期初已分摊金额。  说明： 包周期和预留实例预付时有效；计费类型为按需，预留实例为按时计费时该值为0。
 
         :param past_months_amortized_amount: The past_months_amortized_amount of this NvlCostAnalysedBillDetail.
-        :type past_months_amortized_amount: float
+        :type past_months_amortized_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         self._past_months_amortized_amount = past_months_amortized_amount
 
@@ -1067,7 +1067,7 @@ class NvlCostAnalysedBillDetail:
         月度成本分摊时，当月已分摊金额中包含的现金金额。
 
         :return: The amortized_cash_amount of this NvlCostAnalysedBillDetail.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         return self._amortized_cash_amount
 
@@ -1078,7 +1078,7 @@ class NvlCostAnalysedBillDetail:
         月度成本分摊时，当月已分摊金额中包含的现金金额。
 
         :param amortized_cash_amount: The amortized_cash_amount of this NvlCostAnalysedBillDetail.
-        :type amortized_cash_amount: float
+        :type amortized_cash_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         self._amortized_cash_amount = amortized_cash_amount
 

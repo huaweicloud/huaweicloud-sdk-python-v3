@@ -1569,6 +1569,8 @@ class DnsClient(Client):
             query_params.append(('zone_type', local_var_params['zone_type']))
         if 'marker' in local_var_params:
             query_params.append(('marker', local_var_params['marker']))
+        if 'search_mode' in local_var_params:
+            query_params.append(('search_mode', local_var_params['search_mode']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
         if 'offset' in local_var_params:
@@ -1645,6 +1647,8 @@ class DnsClient(Client):
             path_params['zone_id'] = local_var_params['zone_id']
 
         query_params = []
+        if 'search_mode' in local_var_params:
+            query_params.append(('search_mode', local_var_params['search_mode']))
         if 'marker' in local_var_params:
             query_params.append(('marker', local_var_params['marker']))
         if 'limit' in local_var_params:
@@ -2883,6 +2887,8 @@ class DnsClient(Client):
             query_params.append(('name', local_var_params['name']))
         if 'status' in local_var_params:
             query_params.append(('status', local_var_params['status']))
+        if 'search_mode' in local_var_params:
+            query_params.append(('search_mode', local_var_params['search_mode']))
         if 'enterprise_project_id' in local_var_params:
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 
@@ -2917,9 +2923,9 @@ class DnsClient(Client):
             request_type=request.__class__.__name__)
 
     def list_public_zones(self, request):
-        """查询公网Zone的列表
+        """查询公网Zone列表
 
-        查询公网Zone的列表
+        查询公网Zone列表
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2953,6 +2959,8 @@ class DnsClient(Client):
             query_params.append(('name', local_var_params['name']))
         if 'status' in local_var_params:
             query_params.append(('status', local_var_params['status']))
+        if 'search_mode' in local_var_params:
+            query_params.append(('search_mode', local_var_params['search_mode']))
         if 'enterprise_project_id' in local_var_params:
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 

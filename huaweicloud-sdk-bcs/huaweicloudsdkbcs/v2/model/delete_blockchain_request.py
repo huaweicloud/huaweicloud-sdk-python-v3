@@ -43,9 +43,9 @@ class DeleteBlockchainRequest:
 
         :param blockchain_id: bcs 服务id
         :type blockchain_id: str
-        :param is_delete_storage: [是否删除存储，IEF模式下不用填写](tag:online,g42)[是否删除存储](tag:hcs)
+        :param is_delete_storage: 是否删除存储，IEF模式下不用填写
         :type is_delete_storage: bool
-        :param is_delete_obs: [是否删除obs，IEF模式下不用填写](tag:online,g42)[是否删除obs](tag:hcs)
+        :param is_delete_obs: 是否删除obs，IEF模式下不用填写
         :type is_delete_obs: bool
         :param is_delete_resource: 是否删除底层CCE资源，IEF模式下不用填写
         :type is_delete_resource: bool
@@ -108,7 +108,7 @@ class DeleteBlockchainRequest:
     def is_delete_storage(self):
         """Gets the is_delete_storage of this DeleteBlockchainRequest.
 
-        [是否删除存储，IEF模式下不用填写](tag:online,g42)[是否删除存储](tag:hcs)
+        是否删除存储，IEF模式下不用填写
 
         :return: The is_delete_storage of this DeleteBlockchainRequest.
         :rtype: bool
@@ -119,7 +119,7 @@ class DeleteBlockchainRequest:
     def is_delete_storage(self, is_delete_storage):
         """Sets the is_delete_storage of this DeleteBlockchainRequest.
 
-        [是否删除存储，IEF模式下不用填写](tag:online,g42)[是否删除存储](tag:hcs)
+        是否删除存储，IEF模式下不用填写
 
         :param is_delete_storage: The is_delete_storage of this DeleteBlockchainRequest.
         :type is_delete_storage: bool
@@ -130,7 +130,7 @@ class DeleteBlockchainRequest:
     def is_delete_obs(self):
         """Gets the is_delete_obs of this DeleteBlockchainRequest.
 
-        [是否删除obs，IEF模式下不用填写](tag:online,g42)[是否删除obs](tag:hcs)
+        是否删除obs，IEF模式下不用填写
 
         :return: The is_delete_obs of this DeleteBlockchainRequest.
         :rtype: bool
@@ -141,7 +141,7 @@ class DeleteBlockchainRequest:
     def is_delete_obs(self, is_delete_obs):
         """Sets the is_delete_obs of this DeleteBlockchainRequest.
 
-        [是否删除obs，IEF模式下不用填写](tag:online,g42)[是否删除obs](tag:hcs)
+        是否删除obs，IEF模式下不用填写
 
         :param is_delete_obs: The is_delete_obs of this DeleteBlockchainRequest.
         :type is_delete_obs: bool

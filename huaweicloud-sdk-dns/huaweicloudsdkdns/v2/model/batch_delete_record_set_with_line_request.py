@@ -18,7 +18,7 @@ class BatchDeleteRecordSetWithLineRequest:
 
     openapi_types = {
         'zone_id': 'str',
-        'body': 'BatchDeleteRSetWithLineReq'
+        'body': 'BatchDeleteRecordSetWithLineRequestBody'
     }
 
     attribute_map = {
@@ -34,7 +34,7 @@ class BatchDeleteRecordSetWithLineRequest:
         :param zone_id: 所属zone的ID。
         :type zone_id: str
         :param body: Body of the BatchDeleteRecordSetWithLineRequest
-        :type body: :class:`huaweicloudsdkdns.v2.BatchDeleteRSetWithLineReq`
+        :type body: :class:`huaweicloudsdkdns.v2.BatchDeleteRecordSetWithLineRequestBody`
         """
         
         
@@ -74,7 +74,7 @@ class BatchDeleteRecordSetWithLineRequest:
         """Gets the body of this BatchDeleteRecordSetWithLineRequest.
 
         :return: The body of this BatchDeleteRecordSetWithLineRequest.
-        :rtype: :class:`huaweicloudsdkdns.v2.BatchDeleteRSetWithLineReq`
+        :rtype: :class:`huaweicloudsdkdns.v2.BatchDeleteRecordSetWithLineRequestBody`
         """
         return self._body
 
@@ -83,7 +83,7 @@ class BatchDeleteRecordSetWithLineRequest:
         """Sets the body of this BatchDeleteRecordSetWithLineRequest.
 
         :param body: The body of this BatchDeleteRecordSetWithLineRequest.
-        :type body: :class:`huaweicloudsdkdns.v2.BatchDeleteRSetWithLineReq`
+        :type body: :class:`huaweicloudsdkdns.v2.BatchDeleteRecordSetWithLineRequestBody`
         """
         self._body = body
 

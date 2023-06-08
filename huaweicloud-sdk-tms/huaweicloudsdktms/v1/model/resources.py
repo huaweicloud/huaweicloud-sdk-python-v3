@@ -22,7 +22,8 @@ class Resources:
         'resource_detail': 'object',
         'resource_id': 'str',
         'resource_name': 'str',
-        'resource_type': 'str'
+        'resource_type': 'str',
+        'tags': 'list[CreateTagRequest]'
     }
 
     attribute_map = {
@@ -31,10 +32,11 @@ class Resources:
         'resource_detail': 'resource_detail',
         'resource_id': 'resource_id',
         'resource_name': 'resource_name',
-        'resource_type': 'resource_type'
+        'resource_type': 'resource_type',
+        'tags': 'tags'
     }
 
-    def __init__(self, project_id=None, project_name=None, resource_detail=None, resource_id=None, resource_name=None, resource_type=None):
+    def __init__(self, project_id=None, project_name=None, resource_detail=None, resource_id=None, resource_name=None, resource_type=None, tags=None):
         """Resources
 
         The model defined in huaweicloud sdk
@@ -51,6 +53,8 @@ class Resources:
         :type resource_name: str
         :param resource_type: 资源类型
         :type resource_type: str
+        :param tags: 标签列表
+        :type tags: list[:class:`huaweicloudsdktms.v1.CreateTagRequest`]
         """
         
         
@@ -61,6 +65,7 @@ class Resources:
         self._resource_id = None
         self._resource_name = None
         self._resource_type = None
+        self._tags = None
         self.discriminator = None
 
         self.project_id = project_id
@@ -70,6 +75,8 @@ class Resources:
         self.resource_id = resource_id
         self.resource_name = resource_name
         self.resource_type = resource_type
+        if tags is not None:
+            self.tags = tags
 
     @property
     def project_id(self):
@@ -202,6 +209,28 @@ class Resources:
         :type resource_type: str
         """
         self._resource_type = resource_type
+
+    @property
+    def tags(self):
+        """Gets the tags of this Resources.
+
+        标签列表
+
+        :return: The tags of this Resources.
+        :rtype: list[:class:`huaweicloudsdktms.v1.CreateTagRequest`]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this Resources.
+
+        标签列表
+
+        :param tags: The tags of this Resources.
+        :type tags: list[:class:`huaweicloudsdktms.v1.CreateTagRequest`]
+        """
+        self._tags = tags
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -1642,6 +1642,66 @@ class ProjectManClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def add_issue_work_hours(self, request):
+        """添加指定工作项工时
+
+        添加指定工作项工时
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for AddIssueWorkHours
+        :type request: :class:`huaweicloudsdkprojectman.v4.AddIssueWorkHoursRequest`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.AddIssueWorkHoursResponse`
+        """
+        return self._add_issue_work_hours_with_http_info(request)
+
+    def _add_issue_work_hours_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'issue_id' in local_var_params:
+            path_params['issue_id'] = local_var_params['issue_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v4/projects/{project_id}/issues/{issue_id}/work-hours',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='AddIssueWorkHoursResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def batch_delete_issues_v4(self, request):
         """批量删除工作项
 
@@ -3483,6 +3543,68 @@ class ProjectManClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ListProjectWorkHoursResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_project_work_hours_type(self, request):
+        """查询项目下的工时类型
+
+        查询项目下的工时类型
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListProjectWorkHoursType
+        :type request: :class:`huaweicloudsdkprojectman.v4.ListProjectWorkHoursTypeRequest`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.ListProjectWorkHoursTypeResponse`
+        """
+        return self._list_project_work_hours_type_with_http_info(request)
+
+    def _list_project_work_hours_type_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v4/projects/{project_id}/work-hours-type',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListProjectWorkHoursTypeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

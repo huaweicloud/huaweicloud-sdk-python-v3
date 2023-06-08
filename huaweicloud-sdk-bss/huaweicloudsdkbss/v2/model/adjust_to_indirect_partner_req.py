@@ -18,7 +18,7 @@ class AdjustToIndirectPartnerReq:
 
     openapi_types = {
         'indirect_partner_id': 'str',
-        'amount': 'float'
+        'amount': 'decimal.Decimal'
     }
 
     attribute_map = {
@@ -34,7 +34,7 @@ class AdjustToIndirectPartnerReq:
         :param indirect_partner_id: 云经销商ID。获取方法请参见[查询云经销商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。
         :type indirect_partner_id: str
         :param amount: 华为云总经销商向云经销商拨款的金额。 单位：元。取值大于0且精确到小数点后2位。
-        :type amount: float
+        :type amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         
         
@@ -75,7 +75,7 @@ class AdjustToIndirectPartnerReq:
         华为云总经销商向云经销商拨款的金额。 单位：元。取值大于0且精确到小数点后2位。
 
         :return: The amount of this AdjustToIndirectPartnerReq.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         return self._amount
 
@@ -86,7 +86,7 @@ class AdjustToIndirectPartnerReq:
         华为云总经销商向云经销商拨款的金额。 单位：元。取值大于0且精确到小数点后2位。
 
         :param amount: The amount of this AdjustToIndirectPartnerReq.
-        :type amount: float
+        :type amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         self._amount = amount
 

@@ -54,9 +54,12 @@ class SetQuota:
         self.discriminator = None
 
         self.enterprise_project_id = enterprise_project_id
-        self.instance_quota = instance_quota
-        self.vcpus_quota = vcpus_quota
-        self.ram_quota = ram_quota
+        if instance_quota is not None:
+            self.instance_quota = instance_quota
+        if vcpus_quota is not None:
+            self.vcpus_quota = vcpus_quota
+        if ram_quota is not None:
+            self.ram_quota = ram_quota
 
     @property
     def enterprise_project_id(self):

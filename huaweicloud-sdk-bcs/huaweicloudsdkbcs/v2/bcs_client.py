@@ -910,6 +910,126 @@ class BcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_bcs_events(self, request):
+        """查询服务实例告警信息
+
+        该接口用于查询BCS服务的事件、告警数据，可以指定查询时的过滤条件。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListBcsEvents
+        :type request: :class:`huaweicloudsdkbcs.v2.ListBcsEventsRequest`
+        :rtype: :class:`huaweicloudsdkbcs.v2.ListBcsEventsResponse`
+        """
+        return self._list_bcs_events_with_http_info(request)
+
+    def _list_bcs_events_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'blockchain_id' in local_var_params:
+            path_params['blockchain_id'] = local_var_params['blockchain_id']
+
+        query_params = []
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/blockchains/{blockchain_id}/events',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListBcsEventsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_bcs_events_statistic(self, request):
+        """查询服务实例告警统计接口
+
+        该接口用于查询BCS服务的分段事件、告警统计数据，可以指定查询时的过滤条件。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListBcsEventsStatistic
+        :type request: :class:`huaweicloudsdkbcs.v2.ListBcsEventsStatisticRequest`
+        :rtype: :class:`huaweicloudsdkbcs.v2.ListBcsEventsStatisticResponse`
+        """
+        return self._list_bcs_events_statistic_with_http_info(request)
+
+    def _list_bcs_events_statistic_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'blockchain_id' in local_var_params:
+            path_params['blockchain_id'] = local_var_params['blockchain_id']
+
+        query_params = []
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/blockchains/{blockchain_id}/events/statistic',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListBcsEventsStatisticResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_bcs_metric(self, request):
         """查询服务实例监控数据
 

@@ -20,17 +20,19 @@ class PrePaidServerNic:
         'subnet_id': 'str',
         'ip_address': 'str',
         'ipv6_enable': 'bool',
-        'ipv6_bandwidth': 'PrePaidServerIpv6Bandwidth'
+        'ipv6_bandwidth': 'PrePaidServerIpv6Bandwidth',
+        'allowed_address_pairs': 'list[CreateServerNicAllowedAddressPairs]'
     }
 
     attribute_map = {
         'subnet_id': 'subnet_id',
         'ip_address': 'ip_address',
         'ipv6_enable': 'ipv6_enable',
-        'ipv6_bandwidth': 'ipv6_bandwidth'
+        'ipv6_bandwidth': 'ipv6_bandwidth',
+        'allowed_address_pairs': 'allowed_address_pairs'
     }
 
-    def __init__(self, subnet_id=None, ip_address=None, ipv6_enable=None, ipv6_bandwidth=None):
+    def __init__(self, subnet_id=None, ip_address=None, ipv6_enable=None, ipv6_bandwidth=None, allowed_address_pairs=None):
         """PrePaidServerNic
 
         The model defined in huaweicloud sdk
@@ -43,6 +45,8 @@ class PrePaidServerNic:
         :type ipv6_enable: bool
         :param ipv6_bandwidth: 
         :type ipv6_bandwidth: :class:`huaweicloudsdkecs.v2.PrePaidServerIpv6Bandwidth`
+        :param allowed_address_pairs: IP/Mac对列表， 约束：IP地址不允许为 “0.0.0.0/0” 如果allowed_address_pairs配置地址池较大的CIDR（掩码小于24位），建议为该port配置一个单独的安全组 如果allowed_address_pairs为“1.1.1.1/0”，表示关闭源目地址检查开关 被绑定的云服务器网卡allowed_address_pairs填“1.1.1.1/0”
+        :type allowed_address_pairs: list[:class:`huaweicloudsdkecs.v2.CreateServerNicAllowedAddressPairs`]
         """
         
         
@@ -51,6 +55,7 @@ class PrePaidServerNic:
         self._ip_address = None
         self._ipv6_enable = None
         self._ipv6_bandwidth = None
+        self._allowed_address_pairs = None
         self.discriminator = None
 
         self.subnet_id = subnet_id
@@ -60,6 +65,8 @@ class PrePaidServerNic:
             self.ipv6_enable = ipv6_enable
         if ipv6_bandwidth is not None:
             self.ipv6_bandwidth = ipv6_bandwidth
+        if allowed_address_pairs is not None:
+            self.allowed_address_pairs = allowed_address_pairs
 
     @property
     def subnet_id(self):
@@ -144,6 +151,28 @@ class PrePaidServerNic:
         :type ipv6_bandwidth: :class:`huaweicloudsdkecs.v2.PrePaidServerIpv6Bandwidth`
         """
         self._ipv6_bandwidth = ipv6_bandwidth
+
+    @property
+    def allowed_address_pairs(self):
+        """Gets the allowed_address_pairs of this PrePaidServerNic.
+
+        IP/Mac对列表， 约束：IP地址不允许为 “0.0.0.0/0” 如果allowed_address_pairs配置地址池较大的CIDR（掩码小于24位），建议为该port配置一个单独的安全组 如果allowed_address_pairs为“1.1.1.1/0”，表示关闭源目地址检查开关 被绑定的云服务器网卡allowed_address_pairs填“1.1.1.1/0”
+
+        :return: The allowed_address_pairs of this PrePaidServerNic.
+        :rtype: list[:class:`huaweicloudsdkecs.v2.CreateServerNicAllowedAddressPairs`]
+        """
+        return self._allowed_address_pairs
+
+    @allowed_address_pairs.setter
+    def allowed_address_pairs(self, allowed_address_pairs):
+        """Sets the allowed_address_pairs of this PrePaidServerNic.
+
+        IP/Mac对列表， 约束：IP地址不允许为 “0.0.0.0/0” 如果allowed_address_pairs配置地址池较大的CIDR（掩码小于24位），建议为该port配置一个单独的安全组 如果allowed_address_pairs为“1.1.1.1/0”，表示关闭源目地址检查开关 被绑定的云服务器网卡allowed_address_pairs填“1.1.1.1/0”
+
+        :param allowed_address_pairs: The allowed_address_pairs of this PrePaidServerNic.
+        :type allowed_address_pairs: list[:class:`huaweicloudsdkecs.v2.CreateServerNicAllowedAddressPairs`]
+        """
+        self._allowed_address_pairs = allowed_address_pairs
 
     def to_dict(self):
         """Returns the model properties as a dict"""

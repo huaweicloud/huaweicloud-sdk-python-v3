@@ -29,6 +29,8 @@ from huaweicloudsdkiotda.v5.model.auth_info import AuthInfo
 from huaweicloudsdkiotda.v5.model.auth_info_without_secret import AuthInfoWithoutSecret
 from huaweicloudsdkiotda.v5.model.batch_show_queue_request import BatchShowQueueRequest
 from huaweicloudsdkiotda.v5.model.batch_show_queue_response import BatchShowQueueResponse
+from huaweicloudsdkiotda.v5.model.batch_target_result import BatchTargetResult
+from huaweicloudsdkiotda.v5.model.batch_targets import BatchTargets
 from huaweicloudsdkiotda.v5.model.batch_task_file import BatchTaskFile
 from huaweicloudsdkiotda.v5.model.bind_tags_dto import BindTagsDTO
 from huaweicloudsdkiotda.v5.model.broadcast_message_request import BroadcastMessageRequest
@@ -163,6 +165,8 @@ from huaweicloudsdkiotda.v5.model.reset_fingerprint import ResetFingerprint
 from huaweicloudsdkiotda.v5.model.reset_fingerprint_request import ResetFingerprintRequest
 from huaweicloudsdkiotda.v5.model.reset_fingerprint_response import ResetFingerprintResponse
 from huaweicloudsdkiotda.v5.model.resource_dto import ResourceDTO
+from huaweicloudsdkiotda.v5.model.retry_batch_task_request import RetryBatchTaskRequest
+from huaweicloudsdkiotda.v5.model.retry_batch_task_response import RetryBatchTaskResponse
 from huaweicloudsdkiotda.v5.model.roma_forwarding import RomaForwarding
 from huaweicloudsdkiotda.v5.model.routing_rule import RoutingRule
 from huaweicloudsdkiotda.v5.model.routing_rule_action import RoutingRuleAction
@@ -214,6 +218,8 @@ from huaweicloudsdkiotda.v5.model.show_rule_request import ShowRuleRequest
 from huaweicloudsdkiotda.v5.model.show_rule_response import ShowRuleResponse
 from huaweicloudsdkiotda.v5.model.simple_timer_type import SimpleTimerType
 from huaweicloudsdkiotda.v5.model.simplify_device import SimplifyDevice
+from huaweicloudsdkiotda.v5.model.stop_batch_task_request import StopBatchTaskRequest
+from huaweicloudsdkiotda.v5.model.stop_batch_task_response import StopBatchTaskResponse
 from huaweicloudsdkiotda.v5.model.strategy import Strategy
 from huaweicloudsdkiotda.v5.model.tag_device_request import TagDeviceRequest
 from huaweicloudsdkiotda.v5.model.tag_device_response import TagDeviceResponse

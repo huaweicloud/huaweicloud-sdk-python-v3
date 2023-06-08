@@ -29,7 +29,9 @@ class ShowProjectWorkHoursResponseBodyWorkHours:
         'issue_type': 'str',
         'subject': 'str',
         'created_time': 'str',
-        'closed_time': 'str'
+        'closed_time': 'str',
+        'work_hours_created_time': 'str',
+        'work_hours_updated_time': 'str'
     }
 
     attribute_map = {
@@ -45,10 +47,12 @@ class ShowProjectWorkHoursResponseBodyWorkHours:
         'issue_type': 'issue_type',
         'subject': 'subject',
         'created_time': 'created_time',
-        'closed_time': 'closed_time'
+        'closed_time': 'closed_time',
+        'work_hours_created_time': 'work_hours_created_time',
+        'work_hours_updated_time': 'work_hours_updated_time'
     }
 
-    def __init__(self, project_name=None, nick_name=None, user_id=None, user_name=None, work_date=None, work_hours_num=None, summary=None, work_hours_type_name=None, issue_id=None, issue_type=None, subject=None, created_time=None, closed_time=None):
+    def __init__(self, project_name=None, nick_name=None, user_id=None, user_name=None, work_date=None, work_hours_num=None, summary=None, work_hours_type_name=None, issue_id=None, issue_type=None, subject=None, created_time=None, closed_time=None, work_hours_created_time=None, work_hours_updated_time=None):
         """ShowProjectWorkHoursResponseBodyWorkHours
 
         The model defined in huaweicloud sdk
@@ -79,6 +83,10 @@ class ShowProjectWorkHoursResponseBodyWorkHours:
         :type created_time: str
         :param closed_time: 工作项结束时间
         :type closed_time: str
+        :param work_hours_created_time: 工时创建时间
+        :type work_hours_created_time: str
+        :param work_hours_updated_time: 工时更新时间
+        :type work_hours_updated_time: str
         """
         
         
@@ -96,6 +104,8 @@ class ShowProjectWorkHoursResponseBodyWorkHours:
         self._subject = None
         self._created_time = None
         self._closed_time = None
+        self._work_hours_created_time = None
+        self._work_hours_updated_time = None
         self.discriminator = None
 
         if project_name is not None:
@@ -124,6 +134,10 @@ class ShowProjectWorkHoursResponseBodyWorkHours:
             self.created_time = created_time
         if closed_time is not None:
             self.closed_time = closed_time
+        if work_hours_created_time is not None:
+            self.work_hours_created_time = work_hours_created_time
+        if work_hours_updated_time is not None:
+            self.work_hours_updated_time = work_hours_updated_time
 
     @property
     def project_name(self):
@@ -410,6 +424,50 @@ class ShowProjectWorkHoursResponseBodyWorkHours:
         :type closed_time: str
         """
         self._closed_time = closed_time
+
+    @property
+    def work_hours_created_time(self):
+        """Gets the work_hours_created_time of this ShowProjectWorkHoursResponseBodyWorkHours.
+
+        工时创建时间
+
+        :return: The work_hours_created_time of this ShowProjectWorkHoursResponseBodyWorkHours.
+        :rtype: str
+        """
+        return self._work_hours_created_time
+
+    @work_hours_created_time.setter
+    def work_hours_created_time(self, work_hours_created_time):
+        """Sets the work_hours_created_time of this ShowProjectWorkHoursResponseBodyWorkHours.
+
+        工时创建时间
+
+        :param work_hours_created_time: The work_hours_created_time of this ShowProjectWorkHoursResponseBodyWorkHours.
+        :type work_hours_created_time: str
+        """
+        self._work_hours_created_time = work_hours_created_time
+
+    @property
+    def work_hours_updated_time(self):
+        """Gets the work_hours_updated_time of this ShowProjectWorkHoursResponseBodyWorkHours.
+
+        工时更新时间
+
+        :return: The work_hours_updated_time of this ShowProjectWorkHoursResponseBodyWorkHours.
+        :rtype: str
+        """
+        return self._work_hours_updated_time
+
+    @work_hours_updated_time.setter
+    def work_hours_updated_time(self, work_hours_updated_time):
+        """Sets the work_hours_updated_time of this ShowProjectWorkHoursResponseBodyWorkHours.
+
+        工时更新时间
+
+        :param work_hours_updated_time: The work_hours_updated_time of this ShowProjectWorkHoursResponseBodyWorkHours.
+        :type work_hours_updated_time: str
+        """
+        self._work_hours_updated_time = work_hours_updated_time
 
     def to_dict(self):
         """Returns the model properties as a dict"""

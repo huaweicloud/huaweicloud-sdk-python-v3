@@ -23,7 +23,7 @@ class IssuedCouponQuota:
         'last_update_time': 'str',
         'quota_value': 'decimal.Decimal',
         'quota_status': 'int',
-        'balance': 'float',
+        'balance': 'decimal.Decimal',
         'measure_id': 'int',
         'currency': 'str',
         'effective_time': 'str',
@@ -72,7 +72,7 @@ class IssuedCouponQuota:
         :param quota_status: 代金券额度的状态： 0：正常3：失效（包括过期失效和人工设置失效）4：额度调整中（伙伴可以查看该额度，但不能使用该额度发放代金券）5：冻结6：回收
         :type quota_status: int
         :param balance: 剩余的代金券额度，精确到小数点后2位。
-        :type balance: float
+        :type balance: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         :param measure_id: 代金券额度的单位。 1：元。
         :type measure_id: int
         :param currency: 币种。 CNY：人民币
@@ -285,7 +285,7 @@ class IssuedCouponQuota:
         剩余的代金券额度，精确到小数点后2位。
 
         :return: The balance of this IssuedCouponQuota.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         return self._balance
 
@@ -296,7 +296,7 @@ class IssuedCouponQuota:
         剩余的代金券额度，精确到小数点后2位。
 
         :param balance: The balance of this IssuedCouponQuota.
-        :type balance: float
+        :type balance: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         self._balance = balance
 

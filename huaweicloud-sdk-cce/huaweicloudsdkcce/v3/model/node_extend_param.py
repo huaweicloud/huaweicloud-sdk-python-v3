@@ -35,7 +35,9 @@ class NodeExtendParam:
         'nic_threshold': 'str',
         'enterprise_project_id': 'str',
         'charging_mode': 'int',
-        'agency_name': 'str'
+        'agency_name': 'str',
+        'kube_reserved_mem': 'int',
+        'system_reserved_mem': 'int'
     }
 
     attribute_map = {
@@ -57,10 +59,12 @@ class NodeExtendParam:
         'nic_threshold': 'nicThreshold',
         'enterprise_project_id': 'enterprise_project_id',
         'charging_mode': 'chargingMode',
-        'agency_name': 'agency_name'
+        'agency_name': 'agency_name',
+        'kube_reserved_mem': 'kube-reserved-mem',
+        'system_reserved_mem': 'system-reserved-mem'
     }
 
-    def __init__(self, ecsperformancetype=None, order_id=None, product_id=None, max_pods=None, period_type=None, period_num=None, is_auto_renew=None, is_auto_pay=None, docker_lvm_config_override=None, docker_base_size=None, public_key=None, alpha_cce_pre_install=None, alpha_cce_post_install=None, alpha_cce_node_image_id=None, nic_multiqueue=None, nic_threshold=None, enterprise_project_id=None, charging_mode=None, agency_name=None):
+    def __init__(self, ecsperformancetype=None, order_id=None, product_id=None, max_pods=None, period_type=None, period_num=None, is_auto_renew=None, is_auto_pay=None, docker_lvm_config_override=None, docker_base_size=None, public_key=None, alpha_cce_pre_install=None, alpha_cce_post_install=None, alpha_cce_node_image_id=None, nic_multiqueue=None, nic_threshold=None, enterprise_project_id=None, charging_mode=None, agency_name=None, kube_reserved_mem=None, system_reserved_mem=None):
         """NodeExtendParam
 
         The model defined in huaweicloud sdk
@@ -103,6 +107,10 @@ class NodeExtendParam:
         :type charging_mode: int
         :param agency_name: 委托的名称。  委托是由租户管理员在统一身份认证服务（Identity and Access Management，IAM）上创建的，可以为CCE节点提供访问云服务器的临时凭证。 
         :type agency_name: str
+        :param kube_reserved_mem: 节点内存预留，Kubernetes相关组件预留值。 
+        :type kube_reserved_mem: int
+        :param system_reserved_mem: 节点内存预留，系统组件预留值。 
+        :type system_reserved_mem: int
         """
         
         
@@ -126,6 +134,8 @@ class NodeExtendParam:
         self._enterprise_project_id = None
         self._charging_mode = None
         self._agency_name = None
+        self._kube_reserved_mem = None
+        self._system_reserved_mem = None
         self.discriminator = None
 
         if ecsperformancetype is not None:
@@ -166,6 +176,10 @@ class NodeExtendParam:
             self.charging_mode = charging_mode
         if agency_name is not None:
             self.agency_name = agency_name
+        if kube_reserved_mem is not None:
+            self.kube_reserved_mem = kube_reserved_mem
+        if system_reserved_mem is not None:
+            self.system_reserved_mem = system_reserved_mem
 
     @property
     def ecsperformancetype(self):
@@ -584,6 +598,50 @@ class NodeExtendParam:
         :type agency_name: str
         """
         self._agency_name = agency_name
+
+    @property
+    def kube_reserved_mem(self):
+        """Gets the kube_reserved_mem of this NodeExtendParam.
+
+        节点内存预留，Kubernetes相关组件预留值。 
+
+        :return: The kube_reserved_mem of this NodeExtendParam.
+        :rtype: int
+        """
+        return self._kube_reserved_mem
+
+    @kube_reserved_mem.setter
+    def kube_reserved_mem(self, kube_reserved_mem):
+        """Sets the kube_reserved_mem of this NodeExtendParam.
+
+        节点内存预留，Kubernetes相关组件预留值。 
+
+        :param kube_reserved_mem: The kube_reserved_mem of this NodeExtendParam.
+        :type kube_reserved_mem: int
+        """
+        self._kube_reserved_mem = kube_reserved_mem
+
+    @property
+    def system_reserved_mem(self):
+        """Gets the system_reserved_mem of this NodeExtendParam.
+
+        节点内存预留，系统组件预留值。 
+
+        :return: The system_reserved_mem of this NodeExtendParam.
+        :rtype: int
+        """
+        return self._system_reserved_mem
+
+    @system_reserved_mem.setter
+    def system_reserved_mem(self, system_reserved_mem):
+        """Sets the system_reserved_mem of this NodeExtendParam.
+
+        节点内存预留，系统组件预留值。 
+
+        :param system_reserved_mem: The system_reserved_mem of this NodeExtendParam.
+        :type system_reserved_mem: int
+        """
+        self._system_reserved_mem = system_reserved_mem
 
     def to_dict(self):
         """Returns the model properties as a dict"""

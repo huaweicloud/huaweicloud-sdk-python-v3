@@ -18,6 +18,7 @@ class ListRecordSetsByZoneRequest:
 
     openapi_types = {
         'zone_id': 'str',
+        'search_mode': 'str',
         'marker': 'str',
         'limit': 'int',
         'offset': 'int',
@@ -32,6 +33,7 @@ class ListRecordSetsByZoneRequest:
 
     attribute_map = {
         'zone_id': 'zone_id',
+        'search_mode': 'search_mode',
         'marker': 'marker',
         'limit': 'limit',
         'offset': 'offset',
@@ -44,13 +46,15 @@ class ListRecordSetsByZoneRequest:
         'sort_dir': 'sort_dir'
     }
 
-    def __init__(self, zone_id=None, marker=None, limit=None, offset=None, tags=None, status=None, type=None, name=None, id=None, sort_key=None, sort_dir=None):
+    def __init__(self, zone_id=None, search_mode=None, marker=None, limit=None, offset=None, tags=None, status=None, type=None, name=None, id=None, sort_key=None, sort_dir=None):
         """ListRecordSetsByZoneRequest
 
         The model defined in huaweicloud sdk
 
         :param zone_id: 所属zone id。
         :type zone_id: str
+        :param search_mode: 查询条件搜索模式。  取值范围：  like：模糊搜索 equal：精确搜索 默认值为equal。
+        :type search_mode: str
         :param marker: 分页查询起始的资源ID，为空时为查询第一页。  默认值为空。
         :type marker: str
         :param limit: 每页返回的资源个数。  取值范围：0~500  取值一般为10，20，50。默认值为500。
@@ -76,6 +80,7 @@ class ListRecordSetsByZoneRequest:
         
 
         self._zone_id = None
+        self._search_mode = None
         self._marker = None
         self._limit = None
         self._offset = None
@@ -89,6 +94,8 @@ class ListRecordSetsByZoneRequest:
         self.discriminator = None
 
         self.zone_id = zone_id
+        if search_mode is not None:
+            self.search_mode = search_mode
         if marker is not None:
             self.marker = marker
         if limit is not None:
@@ -131,6 +138,28 @@ class ListRecordSetsByZoneRequest:
         :type zone_id: str
         """
         self._zone_id = zone_id
+
+    @property
+    def search_mode(self):
+        """Gets the search_mode of this ListRecordSetsByZoneRequest.
+
+        查询条件搜索模式。  取值范围：  like：模糊搜索 equal：精确搜索 默认值为equal。
+
+        :return: The search_mode of this ListRecordSetsByZoneRequest.
+        :rtype: str
+        """
+        return self._search_mode
+
+    @search_mode.setter
+    def search_mode(self, search_mode):
+        """Sets the search_mode of this ListRecordSetsByZoneRequest.
+
+        查询条件搜索模式。  取值范围：  like：模糊搜索 equal：精确搜索 默认值为equal。
+
+        :param search_mode: The search_mode of this ListRecordSetsByZoneRequest.
+        :type search_mode: str
+        """
+        self._search_mode = search_mode
 
     @property
     def marker(self):

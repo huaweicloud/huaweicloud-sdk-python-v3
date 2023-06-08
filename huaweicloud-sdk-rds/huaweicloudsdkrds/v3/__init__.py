@@ -205,6 +205,8 @@ from huaweicloudsdkrds.v3.model.list_flavors_request import ListFlavorsRequest
 from huaweicloudsdkrds.v3.model.list_flavors_response import ListFlavorsResponse
 from huaweicloudsdkrds.v3.model.list_instance_param_histories_request import ListInstanceParamHistoriesRequest
 from huaweicloudsdkrds.v3.model.list_instance_param_histories_response import ListInstanceParamHistoriesResponse
+from huaweicloudsdkrds.v3.model.list_instance_tags_request import ListInstanceTagsRequest
+from huaweicloudsdkrds.v3.model.list_instance_tags_response import ListInstanceTagsResponse
 from huaweicloudsdkrds.v3.model.list_instances_request import ListInstancesRequest
 from huaweicloudsdkrds.v3.model.list_instances_response import ListInstancesResponse
 from huaweicloudsdkrds.v3.model.list_job_info_detail_request import ListJobInfoDetailRequest
@@ -296,6 +298,7 @@ from huaweicloudsdkrds.v3.model.reset_pwd_request import ResetPwdRequest
 from huaweicloudsdkrds.v3.model.reset_pwd_response import ResetPwdResponse
 from huaweicloudsdkrds.v3.model.resize_flavor_object import ResizeFlavorObject
 from huaweicloudsdkrds.v3.model.resize_flavor_request import ResizeFlavorRequest
+from huaweicloudsdkrds.v3.model.resource_tag import ResourceTag
 from huaweicloudsdkrds.v3.model.resources import Resources
 from huaweicloudsdkrds.v3.model.restore_databases_info import RestoreDatabasesInfo
 from huaweicloudsdkrds.v3.model.restore_exist_instance_request import RestoreExistInstanceRequest

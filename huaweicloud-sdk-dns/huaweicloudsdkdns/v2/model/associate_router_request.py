@@ -18,7 +18,7 @@ class AssociateRouterRequest:
 
     openapi_types = {
         'zone_id': 'str',
-        'body': 'AssociateRouterReq'
+        'body': 'AssociateRouterRequestBody'
     }
 
     attribute_map = {
@@ -34,7 +34,7 @@ class AssociateRouterRequest:
         :param zone_id: 关联VPC的Zone ID。
         :type zone_id: str
         :param body: Body of the AssociateRouterRequest
-        :type body: :class:`huaweicloudsdkdns.v2.AssociateRouterReq`
+        :type body: :class:`huaweicloudsdkdns.v2.AssociateRouterRequestBody`
         """
         
         
@@ -74,7 +74,7 @@ class AssociateRouterRequest:
         """Gets the body of this AssociateRouterRequest.
 
         :return: The body of this AssociateRouterRequest.
-        :rtype: :class:`huaweicloudsdkdns.v2.AssociateRouterReq`
+        :rtype: :class:`huaweicloudsdkdns.v2.AssociateRouterRequestBody`
         """
         return self._body
 
@@ -83,7 +83,7 @@ class AssociateRouterRequest:
         """Sets the body of this AssociateRouterRequest.
 
         :param body: The body of this AssociateRouterRequest.
-        :type body: :class:`huaweicloudsdkdns.v2.AssociateRouterReq`
+        :type body: :class:`huaweicloudsdkdns.v2.AssociateRouterRequestBody`
         """
         self._body = body
 

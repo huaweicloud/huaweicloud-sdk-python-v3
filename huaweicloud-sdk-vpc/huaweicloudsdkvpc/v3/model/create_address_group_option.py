@@ -21,7 +21,8 @@ class CreateAddressGroupOption:
         'description': 'str',
         'ip_version': 'int',
         'ip_set': 'list[str]',
-        'max_capacity': 'int'
+        'max_capacity': 'int',
+        'enterprise_project_id': 'str'
     }
 
     attribute_map = {
@@ -29,10 +30,11 @@ class CreateAddressGroupOption:
         'description': 'description',
         'ip_version': 'ip_version',
         'ip_set': 'ip_set',
-        'max_capacity': 'max_capacity'
+        'max_capacity': 'max_capacity',
+        'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, name=None, description=None, ip_version=None, ip_set=None, max_capacity=None):
+    def __init__(self, name=None, description=None, ip_version=None, ip_set=None, max_capacity=None, enterprise_project_id=None):
         """CreateAddressGroupOption
 
         The model defined in huaweicloud sdk
@@ -47,6 +49,8 @@ class CreateAddressGroupOption:
         :type ip_set: list[str]
         :param max_capacity: 功能说明：地址组最大条目数，限制地址组可以包含的地址数量 取值范围：0-20 默认值：20
         :type max_capacity: int
+        :param enterprise_project_id: 功能说明：企业项目ID。创建IP地址组时，给IP地址组绑定企业项目ID。 取值范围：最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。
+        :type enterprise_project_id: str
         """
         
         
@@ -56,6 +60,7 @@ class CreateAddressGroupOption:
         self._ip_version = None
         self._ip_set = None
         self._max_capacity = None
+        self._enterprise_project_id = None
         self.discriminator = None
 
         self.name = name
@@ -66,6 +71,8 @@ class CreateAddressGroupOption:
             self.ip_set = ip_set
         if max_capacity is not None:
             self.max_capacity = max_capacity
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
 
     @property
     def name(self):
@@ -176,6 +183,28 @@ class CreateAddressGroupOption:
         :type max_capacity: int
         """
         self._max_capacity = max_capacity
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this CreateAddressGroupOption.
+
+        功能说明：企业项目ID。创建IP地址组时，给IP地址组绑定企业项目ID。 取值范围：最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。
+
+        :return: The enterprise_project_id of this CreateAddressGroupOption.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this CreateAddressGroupOption.
+
+        功能说明：企业项目ID。创建IP地址组时，给IP地址组绑定企业项目ID。 取值范围：最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。
+
+        :param enterprise_project_id: The enterprise_project_id of this CreateAddressGroupOption.
+        :type enterprise_project_id: str
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

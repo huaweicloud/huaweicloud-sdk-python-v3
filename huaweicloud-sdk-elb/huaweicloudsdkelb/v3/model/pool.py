@@ -37,7 +37,8 @@ class Pool:
         'vpc_id': 'str',
         'type': 'str',
         'protection_status': 'str',
-        'protection_reason': 'str'
+        'protection_reason': 'str',
+        'any_port_enable': 'bool'
     }
 
     attribute_map = {
@@ -61,10 +62,11 @@ class Pool:
         'vpc_id': 'vpc_id',
         'type': 'type',
         'protection_status': 'protection_status',
-        'protection_reason': 'protection_reason'
+        'protection_reason': 'protection_reason',
+        'any_port_enable': 'any_port_enable'
     }
 
-    def __init__(self, admin_state_up=None, description=None, healthmonitor_id=None, id=None, lb_algorithm=None, listeners=None, loadbalancers=None, members=None, name=None, project_id=None, protocol=None, session_persistence=None, ip_version=None, slow_start=None, member_deletion_protection_enable=None, created_at=None, updated_at=None, vpc_id=None, type=None, protection_status=None, protection_reason=None):
+    def __init__(self, admin_state_up=None, description=None, healthmonitor_id=None, id=None, lb_algorithm=None, listeners=None, loadbalancers=None, members=None, name=None, project_id=None, protocol=None, session_persistence=None, ip_version=None, slow_start=None, member_deletion_protection_enable=None, created_at=None, updated_at=None, vpc_id=None, type=None, protection_status=None, protection_reason=None, any_port_enable=None):
         """Pool
 
         The model defined in huaweicloud sdk
@@ -111,6 +113,8 @@ class Pool:
         :type protection_status: str
         :param protection_reason: 设置保护的原因 &gt;仅当protection_status为consoleProtection时有效。
         :type protection_reason: str
+        :param any_port_enable: 后端是否开启端口透传，开启后，后端服务器端口与前端监听器端口保持一致。取值：false不开启，true开启，默认false。 &gt; 关闭端口透传后，请求会转发给后端服务器protocol_port字段指定端口。
+        :type any_port_enable: bool
         """
         
         
@@ -136,6 +140,7 @@ class Pool:
         self._type = None
         self._protection_status = None
         self._protection_reason = None
+        self._any_port_enable = None
         self.discriminator = None
 
         self.admin_state_up = admin_state_up
@@ -164,6 +169,8 @@ class Pool:
             self.protection_status = protection_status
         if protection_reason is not None:
             self.protection_reason = protection_reason
+        if any_port_enable is not None:
+            self.any_port_enable = any_port_enable
 
     @property
     def admin_state_up(self):
@@ -618,6 +625,28 @@ class Pool:
         :type protection_reason: str
         """
         self._protection_reason = protection_reason
+
+    @property
+    def any_port_enable(self):
+        """Gets the any_port_enable of this Pool.
+
+        后端是否开启端口透传，开启后，后端服务器端口与前端监听器端口保持一致。取值：false不开启，true开启，默认false。 > 关闭端口透传后，请求会转发给后端服务器protocol_port字段指定端口。
+
+        :return: The any_port_enable of this Pool.
+        :rtype: bool
+        """
+        return self._any_port_enable
+
+    @any_port_enable.setter
+    def any_port_enable(self, any_port_enable):
+        """Sets the any_port_enable of this Pool.
+
+        后端是否开启端口透传，开启后，后端服务器端口与前端监听器端口保持一致。取值：false不开启，true开启，默认false。 > 关闭端口透传后，请求会转发给后端服务器protocol_port字段指定端口。
+
+        :param any_port_enable: The any_port_enable of this Pool.
+        :type any_port_enable: bool
+        """
+        self._any_port_enable = any_port_enable
 
     def to_dict(self):
         """Returns the model properties as a dict"""

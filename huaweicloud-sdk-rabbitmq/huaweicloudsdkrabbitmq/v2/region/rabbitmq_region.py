@@ -45,6 +45,10 @@ class RabbitMQRegion:
                         "https://dms.la-north-2.myhuaweicloud.com")
     NA_MEXICO_1 = Region("na-mexico-1",
                         "https://dms.na-mexico-1.myhuaweicloud.com")
+    AP_SOUTHEAST_4 = Region("ap-southeast-4",
+                        "https://dms.ap-southeast-4.myhuaweicloud.com")
+    TR_WEST_1 = Region("tr-west-1",
+                        "https://dms.tr-west-1.myhuaweicloud.com")
 
     static_fields = {
         "cn-north-1": CN_NORTH_1,
@@ -65,6 +69,8 @@ class RabbitMQRegion:
         "sa-brazil-1": SA_BRAZIL_1,
         "la-north-2": LA_NORTH_2,
         "na-mexico-1": NA_MEXICO_1,
+        "ap-southeast-4": AP_SOUTHEAST_4,
+        "tr-west-1": TR_WEST_1,
     }
 
     @classmethod

@@ -66,7 +66,7 @@ class UpdateRecordSetResponse(SdkResponse):
         :type zone_id: str
         :param zone_name: 托管该记录的zone_name。
         :type zone_name: str
-        :param type: 记录类型。 取值范围：A，AAAA，MX，CNAME，TXT，NS（仅限公网Zone），SRV，CAA（仅限公网Zone）。
+        :param type: 记录类型。 取值范围： 公网支持修改类型：A、AAAA、MX、CNAME、TXT、NS、SRV、CAA。 内网支持修改类型：A、AAAA、MX、CNAME、TXT、SRV。
         :type type: str
         :param ttl: 解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。
         :type ttl: int
@@ -247,7 +247,7 @@ class UpdateRecordSetResponse(SdkResponse):
     def type(self):
         """Gets the type of this UpdateRecordSetResponse.
 
-        记录类型。 取值范围：A，AAAA，MX，CNAME，TXT，NS（仅限公网Zone），SRV，CAA（仅限公网Zone）。
+        记录类型。 取值范围： 公网支持修改类型：A、AAAA、MX、CNAME、TXT、NS、SRV、CAA。 内网支持修改类型：A、AAAA、MX、CNAME、TXT、SRV。
 
         :return: The type of this UpdateRecordSetResponse.
         :rtype: str
@@ -258,7 +258,7 @@ class UpdateRecordSetResponse(SdkResponse):
     def type(self, type):
         """Sets the type of this UpdateRecordSetResponse.
 
-        记录类型。 取值范围：A，AAAA，MX，CNAME，TXT，NS（仅限公网Zone），SRV，CAA（仅限公网Zone）。
+        记录类型。 取值范围： 公网支持修改类型：A、AAAA、MX、CNAME、TXT、NS、SRV、CAA。 内网支持修改类型：A、AAAA、MX、CNAME、TXT、SRV。
 
         :param type: The type of this UpdateRecordSetResponse.
         :type type: str

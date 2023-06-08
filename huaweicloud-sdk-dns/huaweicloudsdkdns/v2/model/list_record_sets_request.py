@@ -19,6 +19,7 @@ class ListRecordSetsRequest:
     openapi_types = {
         'zone_type': 'str',
         'marker': 'str',
+        'search_mode': 'str',
         'limit': 'int',
         'offset': 'int',
         'tags': 'str',
@@ -34,6 +35,7 @@ class ListRecordSetsRequest:
     attribute_map = {
         'zone_type': 'zone_type',
         'marker': 'marker',
+        'search_mode': 'search_mode',
         'limit': 'limit',
         'offset': 'offset',
         'tags': 'tags',
@@ -46,7 +48,7 @@ class ListRecordSetsRequest:
         'sort_dir': 'sort_dir'
     }
 
-    def __init__(self, zone_type=None, marker=None, limit=None, offset=None, tags=None, status=None, type=None, name=None, id=None, records=None, sort_key=None, sort_dir=None):
+    def __init__(self, zone_type=None, marker=None, search_mode=None, limit=None, offset=None, tags=None, status=None, type=None, name=None, id=None, records=None, sort_key=None, sort_dir=None):
         """ListRecordSetsRequest
 
         The model defined in huaweicloud sdk
@@ -55,6 +57,8 @@ class ListRecordSetsRequest:
         :type zone_type: str
         :param marker: 分页查询起始的资源ID，为空时为查询第一页。  默认值为空。
         :type marker: str
+        :param search_mode: 查询条件搜索模式。  取值范围：  like：模糊搜索 equal：精确搜索 默认值为equal。
+        :type search_mode: str
         :param limit: 每页返回的资源个数。  取值范围：0~500  取值一般为10，20，50。默认值为500。
         :type limit: int
         :param offset: 分页查询起始偏移量，表示从偏移量的下一个资源开始查询。  取值范围：0~2147483647  默认值为0。  当前设置marker不为空时，以marker为分页起始标识。
@@ -63,7 +67,7 @@ class ListRecordSetsRequest:
         :type tags: str
         :param status: 待查询的Record Set的状态。  取值范围：ACTIVE、ERROR、DISABLE、FREEZE、PENDING_CREATE、PENDING_UPDATE、PENDING_DELETE
         :type status: str
-        :param type: 待查询的Record Set的记录集类型。  取值范围：A,AAAA,MX,CNAME,TXT, NS（仅限公网Zone）,SRV,PTR（仅限内网Zone）,CAA（仅限公网Zone）。
+        :param type: 待查询的Record Set的记录集类型。 公网域名场景的记录类型: A、AAAA、MX、CNAME、TXT、NS、SRV、CAA。 内网域名场景的记录类型: A、AAAA、MX、CNAME、TXT、SRV。
         :type type: str
         :param name: 待查询的Record Set的域名中包含此name。  搜索模式默认为模糊搜索。  默认值为空。
         :type name: str
@@ -81,6 +85,7 @@ class ListRecordSetsRequest:
 
         self._zone_type = None
         self._marker = None
+        self._search_mode = None
         self._limit = None
         self._offset = None
         self._tags = None
@@ -97,6 +102,8 @@ class ListRecordSetsRequest:
             self.zone_type = zone_type
         if marker is not None:
             self.marker = marker
+        if search_mode is not None:
+            self.search_mode = search_mode
         if limit is not None:
             self.limit = limit
         if offset is not None:
@@ -161,6 +168,28 @@ class ListRecordSetsRequest:
         :type marker: str
         """
         self._marker = marker
+
+    @property
+    def search_mode(self):
+        """Gets the search_mode of this ListRecordSetsRequest.
+
+        查询条件搜索模式。  取值范围：  like：模糊搜索 equal：精确搜索 默认值为equal。
+
+        :return: The search_mode of this ListRecordSetsRequest.
+        :rtype: str
+        """
+        return self._search_mode
+
+    @search_mode.setter
+    def search_mode(self, search_mode):
+        """Sets the search_mode of this ListRecordSetsRequest.
+
+        查询条件搜索模式。  取值范围：  like：模糊搜索 equal：精确搜索 默认值为equal。
+
+        :param search_mode: The search_mode of this ListRecordSetsRequest.
+        :type search_mode: str
+        """
+        self._search_mode = search_mode
 
     @property
     def limit(self):
@@ -254,7 +283,7 @@ class ListRecordSetsRequest:
     def type(self):
         """Gets the type of this ListRecordSetsRequest.
 
-        待查询的Record Set的记录集类型。  取值范围：A,AAAA,MX,CNAME,TXT, NS（仅限公网Zone）,SRV,PTR（仅限内网Zone）,CAA（仅限公网Zone）。
+        待查询的Record Set的记录集类型。 公网域名场景的记录类型: A、AAAA、MX、CNAME、TXT、NS、SRV、CAA。 内网域名场景的记录类型: A、AAAA、MX、CNAME、TXT、SRV。
 
         :return: The type of this ListRecordSetsRequest.
         :rtype: str
@@ -265,7 +294,7 @@ class ListRecordSetsRequest:
     def type(self, type):
         """Sets the type of this ListRecordSetsRequest.
 
-        待查询的Record Set的记录集类型。  取值范围：A,AAAA,MX,CNAME,TXT, NS（仅限公网Zone）,SRV,PTR（仅限内网Zone）,CAA（仅限公网Zone）。
+        待查询的Record Set的记录集类型。 公网域名场景的记录类型: A、AAAA、MX、CNAME、TXT、NS、SRV、CAA。 内网域名场景的记录类型: A、AAAA、MX、CNAME、TXT、SRV。
 
         :param type: The type of this ListRecordSetsRequest.
         :type type: str

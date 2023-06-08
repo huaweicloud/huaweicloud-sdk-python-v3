@@ -24,6 +24,7 @@ class ListPrivateZonesRequest:
         'tags': 'str',
         'name': 'str',
         'status': 'str',
+        'search_mode': 'str',
         'enterprise_project_id': 'str'
     }
 
@@ -35,10 +36,11 @@ class ListPrivateZonesRequest:
         'tags': 'tags',
         'name': 'name',
         'status': 'status',
+        'search_mode': 'search_mode',
         'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, type=None, limit=None, marker=None, offset=None, tags=None, name=None, status=None, enterprise_project_id=None):
+    def __init__(self, type=None, limit=None, marker=None, offset=None, tags=None, name=None, status=None, search_mode=None, enterprise_project_id=None):
         """ListPrivateZonesRequest
 
         The model defined in huaweicloud sdk
@@ -57,6 +59,8 @@ class ListPrivateZonesRequest:
         :type name: str
         :param status: 资源状态。
         :type status: str
+        :param search_mode: 查询条件搜索模式。  取值范围：  like：模糊搜索 equal：精确搜索 默认值为equal。
+        :type search_mode: str
         :param enterprise_project_id: 域名关联的企业项目ID，长度不超过36个字符。  默认值为0。
         :type enterprise_project_id: str
         """
@@ -70,6 +74,7 @@ class ListPrivateZonesRequest:
         self._tags = None
         self._name = None
         self._status = None
+        self._search_mode = None
         self._enterprise_project_id = None
         self.discriminator = None
 
@@ -87,6 +92,8 @@ class ListPrivateZonesRequest:
             self.name = name
         if status is not None:
             self.status = status
+        if search_mode is not None:
+            self.search_mode = search_mode
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
 
@@ -243,6 +250,28 @@ class ListPrivateZonesRequest:
         :type status: str
         """
         self._status = status
+
+    @property
+    def search_mode(self):
+        """Gets the search_mode of this ListPrivateZonesRequest.
+
+        查询条件搜索模式。  取值范围：  like：模糊搜索 equal：精确搜索 默认值为equal。
+
+        :return: The search_mode of this ListPrivateZonesRequest.
+        :rtype: str
+        """
+        return self._search_mode
+
+    @search_mode.setter
+    def search_mode(self, search_mode):
+        """Sets the search_mode of this ListPrivateZonesRequest.
+
+        查询条件搜索模式。  取值范围：  like：模糊搜索 equal：精确搜索 默认值为equal。
+
+        :param search_mode: The search_mode of this ListPrivateZonesRequest.
+        :type search_mode: str
+        """
+        self._search_mode = search_mode
 
     @property
     def enterprise_project_id(self):

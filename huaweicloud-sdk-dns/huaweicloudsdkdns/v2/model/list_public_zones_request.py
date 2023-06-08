@@ -24,6 +24,7 @@ class ListPublicZonesRequest:
         'tags': 'str',
         'name': 'str',
         'status': 'str',
+        'search_mode': 'str',
         'enterprise_project_id': 'str'
     }
 
@@ -35,15 +36,16 @@ class ListPublicZonesRequest:
         'tags': 'tags',
         'name': 'name',
         'status': 'status',
+        'search_mode': 'search_mode',
         'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, type=None, limit=None, marker=None, offset=None, tags=None, name=None, status=None, enterprise_project_id=None):
+    def __init__(self, type=None, limit=None, marker=None, offset=None, tags=None, name=None, status=None, search_mode=None, enterprise_project_id=None):
         """ListPublicZonesRequest
 
         The model defined in huaweicloud sdk
 
-        :param type: 待查询的zone的类型。  取值范围：public、private  如果为空，表示查询公网类型的zone。 如果为public，表示查询公网类型的zone。 如果为private，表示查询内网类型的zone。 搜索模式默认为模糊搜索。  默认值为空。
+        :param type: 待查询的zone的类型。  取值范围：public  搜索模式默认为模糊搜索。  默认值为空。
         :type type: str
         :param limit: 每页返回的资源个数。  取值范围：0~500  取值一般为10，20，50。默认值为500。
         :type limit: int
@@ -57,6 +59,8 @@ class ListPublicZonesRequest:
         :type name: str
         :param status: 资源状态。
         :type status: str
+        :param search_mode: 查询条件搜索模式。  取值范围：  like：模糊搜索 equal：精确搜索 默认值为equal。
+        :type search_mode: str
         :param enterprise_project_id: 域名关联的企业项目ID，长度不超过36个字符。  默认值为0。
         :type enterprise_project_id: str
         """
@@ -70,6 +74,7 @@ class ListPublicZonesRequest:
         self._tags = None
         self._name = None
         self._status = None
+        self._search_mode = None
         self._enterprise_project_id = None
         self.discriminator = None
 
@@ -87,6 +92,8 @@ class ListPublicZonesRequest:
             self.name = name
         if status is not None:
             self.status = status
+        if search_mode is not None:
+            self.search_mode = search_mode
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
 
@@ -94,7 +101,7 @@ class ListPublicZonesRequest:
     def type(self):
         """Gets the type of this ListPublicZonesRequest.
 
-        待查询的zone的类型。  取值范围：public、private  如果为空，表示查询公网类型的zone。 如果为public，表示查询公网类型的zone。 如果为private，表示查询内网类型的zone。 搜索模式默认为模糊搜索。  默认值为空。
+        待查询的zone的类型。  取值范围：public  搜索模式默认为模糊搜索。  默认值为空。
 
         :return: The type of this ListPublicZonesRequest.
         :rtype: str
@@ -105,7 +112,7 @@ class ListPublicZonesRequest:
     def type(self, type):
         """Sets the type of this ListPublicZonesRequest.
 
-        待查询的zone的类型。  取值范围：public、private  如果为空，表示查询公网类型的zone。 如果为public，表示查询公网类型的zone。 如果为private，表示查询内网类型的zone。 搜索模式默认为模糊搜索。  默认值为空。
+        待查询的zone的类型。  取值范围：public  搜索模式默认为模糊搜索。  默认值为空。
 
         :param type: The type of this ListPublicZonesRequest.
         :type type: str
@@ -243,6 +250,28 @@ class ListPublicZonesRequest:
         :type status: str
         """
         self._status = status
+
+    @property
+    def search_mode(self):
+        """Gets the search_mode of this ListPublicZonesRequest.
+
+        查询条件搜索模式。  取值范围：  like：模糊搜索 equal：精确搜索 默认值为equal。
+
+        :return: The search_mode of this ListPublicZonesRequest.
+        :rtype: str
+        """
+        return self._search_mode
+
+    @search_mode.setter
+    def search_mode(self, search_mode):
+        """Sets the search_mode of this ListPublicZonesRequest.
+
+        查询条件搜索模式。  取值范围：  like：模糊搜索 equal：精确搜索 默认值为equal。
+
+        :param search_mode: The search_mode of this ListPublicZonesRequest.
+        :type search_mode: str
+        """
+        self._search_mode = search_mode
 
     @property
     def enterprise_project_id(self):

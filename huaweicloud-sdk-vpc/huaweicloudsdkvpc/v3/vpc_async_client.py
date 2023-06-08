@@ -1262,6 +1262,8 @@ class VpcAsyncClient(Client):
         if 'description' in local_var_params:
             query_params.append(('description', local_var_params['description']))
             collection_formats['description'] = 'multi'
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 
         header_params = {}
 

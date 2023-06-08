@@ -23,7 +23,8 @@ class TaskProgress:
         'fail': 'int',
         'waitting': 'int',
         'fail_wait_retry': 'int',
-        'stopped': 'int'
+        'stopped': 'int',
+        'removed': 'int'
     }
 
     attribute_map = {
@@ -33,10 +34,11 @@ class TaskProgress:
         'fail': 'fail',
         'waitting': 'waitting',
         'fail_wait_retry': 'fail_wait_retry',
-        'stopped': 'stopped'
+        'stopped': 'stopped',
+        'removed': 'removed'
     }
 
-    def __init__(self, total=None, processing=None, success=None, fail=None, waitting=None, fail_wait_retry=None, stopped=None):
+    def __init__(self, total=None, processing=None, success=None, fail=None, waitting=None, fail_wait_retry=None, stopped=None, removed=None):
         """TaskProgress
 
         The model defined in huaweicloud sdk
@@ -55,6 +57,8 @@ class TaskProgress:
         :type fail_wait_retry: int
         :param stopped: 停止的子任务个数。
         :type stopped: int
+        :param removed: 移除的子任务个数。
+        :type removed: int
         """
         
         
@@ -66,6 +70,7 @@ class TaskProgress:
         self._waitting = None
         self._fail_wait_retry = None
         self._stopped = None
+        self._removed = None
         self.discriminator = None
 
         if total is not None:
@@ -82,6 +87,8 @@ class TaskProgress:
             self.fail_wait_retry = fail_wait_retry
         if stopped is not None:
             self.stopped = stopped
+        if removed is not None:
+            self.removed = removed
 
     @property
     def total(self):
@@ -236,6 +243,28 @@ class TaskProgress:
         :type stopped: int
         """
         self._stopped = stopped
+
+    @property
+    def removed(self):
+        """Gets the removed of this TaskProgress.
+
+        移除的子任务个数。
+
+        :return: The removed of this TaskProgress.
+        :rtype: int
+        """
+        return self._removed
+
+    @removed.setter
+    def removed(self, removed):
+        """Sets the removed of this TaskProgress.
+
+        移除的子任务个数。
+
+        :param removed: The removed of this TaskProgress.
+        :type removed: int
+        """
+        self._removed = removed
 
     def to_dict(self):
         """Returns the model properties as a dict"""

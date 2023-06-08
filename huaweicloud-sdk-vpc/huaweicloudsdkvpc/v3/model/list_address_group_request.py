@@ -22,7 +22,8 @@ class ListAddressGroupRequest:
         'id': 'list[str]',
         'name': 'list[str]',
         'ip_version': 'int',
-        'description': 'list[str]'
+        'description': 'list[str]',
+        'enterprise_project_id': 'str'
     }
 
     attribute_map = {
@@ -31,10 +32,11 @@ class ListAddressGroupRequest:
         'id': 'id',
         'name': 'name',
         'ip_version': 'ip_version',
-        'description': 'description'
+        'description': 'description',
+        'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, limit=None, marker=None, id=None, name=None, ip_version=None, description=None):
+    def __init__(self, limit=None, marker=None, id=None, name=None, ip_version=None, description=None, enterprise_project_id=None):
         """ListAddressGroupRequest
 
         The model defined in huaweicloud sdk
@@ -51,6 +53,8 @@ class ListAddressGroupRequest:
         :type ip_version: int
         :param description: 地址组描述信息，填写后按照地址组描述信息过滤，支持多描述同时过滤
         :type description: list[str]
+        :param enterprise_project_id: 功能说明：企业项目ID。可以使用该字段过滤某个企业项目下的IP地址组。 取值范围：最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。若需要查询当前用户所有企业项目绑定的IP地址组，请传参all_granted_eps。
+        :type enterprise_project_id: str
         """
         
         
@@ -61,6 +65,7 @@ class ListAddressGroupRequest:
         self._name = None
         self._ip_version = None
         self._description = None
+        self._enterprise_project_id = None
         self.discriminator = None
 
         if limit is not None:
@@ -75,6 +80,8 @@ class ListAddressGroupRequest:
             self.ip_version = ip_version
         if description is not None:
             self.description = description
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
 
     @property
     def limit(self):
@@ -207,6 +214,28 @@ class ListAddressGroupRequest:
         :type description: list[str]
         """
         self._description = description
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this ListAddressGroupRequest.
+
+        功能说明：企业项目ID。可以使用该字段过滤某个企业项目下的IP地址组。 取值范围：最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。若需要查询当前用户所有企业项目绑定的IP地址组，请传参all_granted_eps。
+
+        :return: The enterprise_project_id of this ListAddressGroupRequest.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this ListAddressGroupRequest.
+
+        功能说明：企业项目ID。可以使用该字段过滤某个企业项目下的IP地址组。 取值范围：最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。若需要查询当前用户所有企业项目绑定的IP地址组，请传参all_granted_eps。
+
+        :param enterprise_project_id: The enterprise_project_id of this ListAddressGroupRequest.
+        :type enterprise_project_id: str
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

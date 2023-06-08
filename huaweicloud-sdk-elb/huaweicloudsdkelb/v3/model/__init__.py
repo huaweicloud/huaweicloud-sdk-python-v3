@@ -187,6 +187,7 @@ from huaweicloudsdkelb.v3.model.member_status import MemberStatus
 from huaweicloudsdkelb.v3.model.page_info import PageInfo
 from huaweicloudsdkelb.v3.model.pool import Pool
 from huaweicloudsdkelb.v3.model.pool_ref import PoolRef
+from huaweicloudsdkelb.v3.model.port_range import PortRange
 from huaweicloudsdkelb.v3.model.preoccupy_ip import PreoccupyIp
 from huaweicloudsdkelb.v3.model.prepaid_change_charge_mode_option import PrepaidChangeChargeModeOption
 from huaweicloudsdkelb.v3.model.prepaid_create_option import PrepaidCreateOption

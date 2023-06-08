@@ -18,7 +18,7 @@ class UpdatePublicZoneStatusRequest:
 
     openapi_types = {
         'zone_id': 'str',
-        'body': 'UpdatePublicZoneStatus'
+        'body': 'UpdatePublicZoneStatusRequestBody'
     }
 
     attribute_map = {
@@ -34,7 +34,7 @@ class UpdatePublicZoneStatusRequest:
         :param zone_id: 待设置状态Zone的ID
         :type zone_id: str
         :param body: Body of the UpdatePublicZoneStatusRequest
-        :type body: :class:`huaweicloudsdkdns.v2.UpdatePublicZoneStatus`
+        :type body: :class:`huaweicloudsdkdns.v2.UpdatePublicZoneStatusRequestBody`
         """
         
         
@@ -74,7 +74,7 @@ class UpdatePublicZoneStatusRequest:
         """Gets the body of this UpdatePublicZoneStatusRequest.
 
         :return: The body of this UpdatePublicZoneStatusRequest.
-        :rtype: :class:`huaweicloudsdkdns.v2.UpdatePublicZoneStatus`
+        :rtype: :class:`huaweicloudsdkdns.v2.UpdatePublicZoneStatusRequestBody`
         """
         return self._body
 
@@ -83,7 +83,7 @@ class UpdatePublicZoneStatusRequest:
         """Sets the body of this UpdatePublicZoneStatusRequest.
 
         :param body: The body of this UpdatePublicZoneStatusRequest.
-        :type body: :class:`huaweicloudsdkdns.v2.UpdatePublicZoneStatus`
+        :type body: :class:`huaweicloudsdkdns.v2.UpdatePublicZoneStatusRequestBody`
         """
         self._body = body
 

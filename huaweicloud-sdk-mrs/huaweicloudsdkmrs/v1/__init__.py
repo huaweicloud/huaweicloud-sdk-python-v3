@@ -9,6 +9,8 @@ from huaweicloudsdkmrs.v1.mrs_async_client import MrsAsyncClient
 from huaweicloudsdkmrs.v1.model.add_jobs_req_v11 import AddJobsReqV11
 from huaweicloudsdkmrs.v1.model.auto_scaling_policy import AutoScalingPolicy
 from huaweicloudsdkmrs.v1.model.auto_scaling_policy_req_v11 import AutoScalingPolicyReqV11
+from huaweicloudsdkmrs.v1.model.available_tag import AvailableTag
+from huaweicloudsdkmrs.v1.model.available_zone_v2 import AvailableZoneV2
 from huaweicloudsdkmrs.v1.model.batch_create_cluster_tags_req import BatchCreateClusterTagsReq
 from huaweicloudsdkmrs.v1.model.batch_create_cluster_tags_request import BatchCreateClusterTagsRequest
 from huaweicloudsdkmrs.v1.model.batch_create_cluster_tags_response import BatchCreateClusterTagsResponse
@@ -41,6 +43,8 @@ from huaweicloudsdkmrs.v1.model.host_model import HostModel
 from huaweicloudsdkmrs.v1.model.job_exe_result import JobExeResult
 from huaweicloudsdkmrs.v1.model.list_all_tags_request import ListAllTagsRequest
 from huaweicloudsdkmrs.v1.model.list_all_tags_response import ListAllTagsResponse
+from huaweicloudsdkmrs.v1.model.list_available_zones_request import ListAvailableZonesRequest
+from huaweicloudsdkmrs.v1.model.list_available_zones_response import ListAvailableZonesResponse
 from huaweicloudsdkmrs.v1.model.list_cluster_tags_request import ListClusterTagsRequest
 from huaweicloudsdkmrs.v1.model.list_cluster_tags_response import ListClusterTagsResponse
 from huaweicloudsdkmrs.v1.model.list_clusters_by_tags_request import ListClustersByTagsRequest

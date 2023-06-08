@@ -18,7 +18,7 @@ class CreateRecordSetRequest:
 
     openapi_types = {
         'zone_id': 'str',
-        'body': 'CreateRecordSetReq'
+        'body': 'CreateRecordSetRequestBody'
     }
 
     attribute_map = {
@@ -34,7 +34,7 @@ class CreateRecordSetRequest:
         :param zone_id: 所属zone的ID。
         :type zone_id: str
         :param body: Body of the CreateRecordSetRequest
-        :type body: :class:`huaweicloudsdkdns.v2.CreateRecordSetReq`
+        :type body: :class:`huaweicloudsdkdns.v2.CreateRecordSetRequestBody`
         """
         
         
@@ -74,7 +74,7 @@ class CreateRecordSetRequest:
         """Gets the body of this CreateRecordSetRequest.
 
         :return: The body of this CreateRecordSetRequest.
-        :rtype: :class:`huaweicloudsdkdns.v2.CreateRecordSetReq`
+        :rtype: :class:`huaweicloudsdkdns.v2.CreateRecordSetRequestBody`
         """
         return self._body
 
@@ -83,7 +83,7 @@ class CreateRecordSetRequest:
         """Sets the body of this CreateRecordSetRequest.
 
         :param body: The body of this CreateRecordSetRequest.
-        :type body: :class:`huaweicloudsdkdns.v2.CreateRecordSetReq`
+        :type body: :class:`huaweicloudsdkdns.v2.CreateRecordSetRequestBody`
         """
         self._body = body
 

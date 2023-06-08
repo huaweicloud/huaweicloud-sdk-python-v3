@@ -1,3 +1,338 @@
+# 3.1.43 2023-06-08
+
+### HuaweiCloud SDK iDME
+
+- _新增特性_
+  - 工业数字模型驱动引擎
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK BCS
+
+- _新增特性_
+  - 支持接口`ListBcsEvents`、`ListBcsEventsStatistic`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK BSS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **UpdateIndirectPartnerAccount**
+    - 请求参数变更
+      - `* amount: double -> bigdecimal`
+  - **ListCustomerBillsMonthlyBreakDown**
+    - 响应参数变更
+      - `* details.past_months_amortized_amount: double -> bigdecimal`
+      - `* details.amortized_cash_amount: double -> bigdecimal`
+  - **ListIssuedCouponQuotas**
+    - 响应参数变更
+      - `* quotas.balance: double -> bigdecimal`
+
+### HuaweiCloud SDK CCE
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowNode**
+    - 响应参数变更
+      - `+ spec.extendParam.kube-reserved-mem`
+      - `+ spec.extendParam.system-reserved-mem`
+  - **UpdateNode**
+    - 响应参数变更
+      - `+ spec.extendParam.kube-reserved-mem`
+      - `+ spec.extendParam.system-reserved-mem`
+  - **DeleteNode**
+    - 响应参数变更
+      - `+ spec.extendParam.kube-reserved-mem`
+      - `+ spec.extendParam.system-reserved-mem`
+  - **CreateNode**
+    - 请求参数变更
+      - `+ spec.extendParam.kube-reserved-mem`
+      - `+ spec.extendParam.system-reserved-mem`
+    - 响应参数变更
+      - `+ spec.extendParam.kube-reserved-mem`
+      - `+ spec.extendParam.system-reserved-mem`
+  - **ListNodes**
+    - 响应参数变更
+      - `+ items.spec.extendParam.kube-reserved-mem`
+      - `+ items.spec.extendParam.system-reserved-mem`
+  - **ShowNodePool**
+    - 响应参数变更
+      - `+ spec.type: enum value [pm]`
+      - `+ spec.nodeTemplate.extendParam.kube-reserved-mem`
+      - `+ spec.nodeTemplate.extendParam.system-reserved-mem`
+  - **UpdateNodePool**
+    - 响应参数变更
+      - `+ spec.type: enum value [pm]`
+      - `+ spec.nodeTemplate.extendParam.kube-reserved-mem`
+      - `+ spec.nodeTemplate.extendParam.system-reserved-mem`
+  - **DeleteNodePool**
+    - 响应参数变更
+      - `+ spec.type: enum value [pm]`
+      - `+ spec.nodeTemplate.extendParam.kube-reserved-mem`
+      - `+ spec.nodeTemplate.extendParam.system-reserved-mem`
+  - **CreateNodePool**
+    - 请求参数变更
+      - `+ spec.type: enum value [pm]`
+      - `+ spec.nodeTemplate.extendParam.kube-reserved-mem`
+      - `+ spec.nodeTemplate.extendParam.system-reserved-mem`
+    - 响应参数变更
+      - `+ spec.type: enum value [pm]`
+      - `+ spec.nodeTemplate.extendParam.kube-reserved-mem`
+      - `+ spec.nodeTemplate.extendParam.system-reserved-mem`
+  - **ListNodePools**
+    - 响应参数变更
+      - `+ items.spec.type: enum value [pm]`
+      - `+ items.spec.nodeTemplate.extendParam.kube-reserved-mem`
+      - `+ items.spec.nodeTemplate.extendParam.system-reserved-mem`
+
+### HuaweiCloud SDK CloudDeploy
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateDeploymentGroup**
+    - 请求参数变更
+      - `+ is_proxy_mode`
+
+### HuaweiCloud SDK DNS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListRecordSetsByZone**
+    - 请求参数变更
+      - `+ search_mode`
+  - **CreateRecordSet**
+    - 请求参数变更
+      - `* body: object<CreateRecordSetReq> -> object<CreateRecordSetRequestBody>`
+  - **CreateRecordSetWithLine**
+    - 请求参数变更
+      - `* body: object<CreateRecordSetWithLineReq> -> object<CreateRecordSetWithLineRequestBody>`
+  - **ListPublicZones**
+    - 请求参数变更
+      - `+ search_mode`
+  - **ListPrivateZones**
+    - 请求参数变更
+      - `+ search_mode`
+  - **ListRecordSets**
+    - 请求参数变更
+      - `+ search_mode`
+
+### HuaweiCloud SDK ECS
+
+- _新增特性_
+  - 支持接口`ChangeServerChargeMode`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateServers**
+    - 请求参数变更
+      - `+ server.nics.allowed_address_pairs`
+  - **CreatePostPaidServers**
+    - 请求参数变更
+      - `+ server.nics.allowed_address_pairs`
+
+### HuaweiCloud SDK ELB
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListListeners**
+    - 响应参数变更
+      - `+ listeners.port_ranges`
+  - **CreateListener**
+    - 请求参数变更
+      - `+ listener.port_ranges`
+    - 响应参数变更
+      - `+ listener.port_ranges`
+  - **ShowListener**
+    - 响应参数变更
+      - `+ listener.port_ranges`
+  - **UpdateListener**
+    - 响应参数变更
+      - `+ listener.port_ranges`
+  - **ListPools**
+    - 响应参数变更
+      - `+ pools.any_port_enable`
+  - **CreatePool**
+    - 请求参数变更
+      - `+ pool.any_port_enable`
+    - 响应参数变更
+      - `+ pool.any_port_enable`
+  - **ShowPool**
+    - 响应参数变更
+      - `+ pool.any_port_enable`
+  - **UpdatePool**
+    - 响应参数变更
+      - `+ pool.any_port_enable`
+
+### HuaweiCloud SDK FunctionGraph
+
+- _新增特性_
+  - 支持以下接口：
+    - `UpdateFuncSnapshot`
+    - `ShowFuncSnapshotState`
+    - `ShowResInstanceInfo`
+    - `ShowProjectTagsList`
+    - `CreateTags`
+    - `DeleteTags`
+    - `CreateVpcEndpoint`
+    - `DeleteVpcEndpoint`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListStatistics**
+    - 响应参数变更
+      - `* count.value: int32 -> number`
+
+### HuaweiCloud SDK GaussDBforopenGauss
+
+- _新增特性_
+  - 支持以下接口：
+    - `ListInstancesDetails`
+    - `CreateDbInstance`
+    - `ListParamGroupTemplates`
+    - `ShowInstanceParamGroup`
+    - `ListDbFlavors`
+    - `ListDbBackups`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK IoTDA
+
+- _新增特性_
+  - 支持接口`RetryBatchTask`、`StopBatchTask`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateBatchTask**
+    - 响应参数变更
+      - `+ task_progress.removed`
+      - `+ task_progress.device_in_progress`
+      - `+ task_progress.rejected`
+  - **ListBatchTasks**
+    - 响应参数变更
+      - `+ batchtasks.task_progress.removed`
+      - `+ batchtasks.task_progress.device_in_progress`
+      - `+ batchtasks.task_progress.rejected`
+  - **ShowBatchTask**
+    - 请求参数变更
+      - `+ task_detail_status`
+      - `+ target`
+    - 响应参数变更
+      - `+ batchtask.task_progress.removed`
+      - `+ batchtask.task_progress.device_in_progress`
+      - `+ batchtask.task_progress.rejected`
+
+### HuaweiCloud SDK MRS
+
+- _新增特性_
+  - 支持接口`ListAvailableZones`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK ProjectMan
+
+- _新增特性_
+  - 支持接口`AddIssueWorkHours`、`ListProjectWorkHoursType`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowProjectWorkHours**
+    - 响应参数变更
+      - `+ work_hours.work_hours_created_time`
+      - `+ work_hours.work_hours_updated_time`
+  - **ListProjectWorkHours**
+    - 响应参数变更
+      - `+ work_hours.work_hours_created_time`
+      - `+ work_hours.work_hours_updated_time`
+  - **ListIssueCustomFields**
+    - 请求参数变更
+      - `+ included_not_in_use`
+    - 响应参数变更
+      - `+ datas.create_time`
+  - **ListIssuesV4**
+    - 请求参数变更
+      - `+ created_time_interval`
+      - `+ closed_time_interval`
+
+### HuaweiCloud SDK RDS
+
+- _新增特性_
+  - 支持接口`ListInstanceTags`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK RocketMQ
+
+- _新增特性_
+  - 支持接口`SendDlqMessage`、`ValidateConsumedMessage`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 移除接口`SendRocketMqDlqMessage`、`ValidateRocketMqConsumedMessage`
+  - **CreateInstanceByEngine**
+    - 请求参数变更
+      - `+ product_id: enum value [c6.4u8g.cluster.small]`
+
+### HuaweiCloud SDK TMS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListResource**
+    - 响应参数变更
+      - `+ resources.tags`
+
+### HuaweiCloud SDK VPC
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowAddressGroup**
+    - 响应参数变更
+      - `+ address_group.enterprise_project_id`
+  - **UpdateAddressGroup**
+    - 响应参数变更
+      - `+ address_group.enterprise_project_id`
+  - **ListAddressGroup**
+    - 请求参数变更
+      - `+ enterprise_project_id`
+    - 响应参数变更
+      - `+ address_groups.enterprise_project_id`
+  - **CreateAddressGroup**
+    - 请求参数变更
+      - `+ address_group.enterprise_project_id`
+    - 响应参数变更
+      - `+ address_group.enterprise_project_id`
+
 # 3.1.42 2023-06-01
 
 ### HuaweiCloud SDK BSS

@@ -18,7 +18,7 @@ class DisassociateRouterRequest:
 
     openapi_types = {
         'zone_id': 'str',
-        'body': 'DisassociaterouterReq'
+        'body': 'DisassociaterouterRequestBody'
     }
 
     attribute_map = {
@@ -34,7 +34,7 @@ class DisassociateRouterRequest:
         :param zone_id: 待解关联zone的ID。
         :type zone_id: str
         :param body: Body of the DisassociateRouterRequest
-        :type body: :class:`huaweicloudsdkdns.v2.DisassociaterouterReq`
+        :type body: :class:`huaweicloudsdkdns.v2.DisassociaterouterRequestBody`
         """
         
         
@@ -74,7 +74,7 @@ class DisassociateRouterRequest:
         """Gets the body of this DisassociateRouterRequest.
 
         :return: The body of this DisassociateRouterRequest.
-        :rtype: :class:`huaweicloudsdkdns.v2.DisassociaterouterReq`
+        :rtype: :class:`huaweicloudsdkdns.v2.DisassociaterouterRequestBody`
         """
         return self._body
 
@@ -83,7 +83,7 @@ class DisassociateRouterRequest:
         """Sets the body of this DisassociateRouterRequest.
 
         :param body: The body of this DisassociateRouterRequest.
-        :type body: :class:`huaweicloudsdkdns.v2.DisassociaterouterReq`
+        :type body: :class:`huaweicloudsdkdns.v2.DisassociaterouterRequestBody`
         """
         self._body = body
 

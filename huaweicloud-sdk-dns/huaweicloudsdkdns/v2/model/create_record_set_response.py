@@ -66,7 +66,7 @@ class CreateRecordSetResponse(SdkResponse):
         :type zone_id: str
         :param zone_name: 托管该记录的zone_name。
         :type zone_name: str
-        :param type: 记录类型。  公网域名场景的记录类型: A、AAAA、MX、CNAME、TXT、NS、SRV、CAA。  内网域名场景的记录类型: A、AAAA、MX、CNAME、TXT、NS、SRV、CAA、PTR。
+        :param type: 记录类型。  公网域名场景的记录类型: A、AAAA、MX、CNAME、TXT、NS、SRV、CAA。  内网域名场景的记录类型: A、AAAA、MX、CNAME、TXT、SRV。
         :type type: str
         :param ttl: 解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。 如果您的服务地址经常更换，建议TTL值设置相对小些，反之，建议设置相对大些。
         :type ttl: int
@@ -247,7 +247,7 @@ class CreateRecordSetResponse(SdkResponse):
     def type(self):
         """Gets the type of this CreateRecordSetResponse.
 
-        记录类型。  公网域名场景的记录类型: A、AAAA、MX、CNAME、TXT、NS、SRV、CAA。  内网域名场景的记录类型: A、AAAA、MX、CNAME、TXT、NS、SRV、CAA、PTR。
+        记录类型。  公网域名场景的记录类型: A、AAAA、MX、CNAME、TXT、NS、SRV、CAA。  内网域名场景的记录类型: A、AAAA、MX、CNAME、TXT、SRV。
 
         :return: The type of this CreateRecordSetResponse.
         :rtype: str
@@ -258,7 +258,7 @@ class CreateRecordSetResponse(SdkResponse):
     def type(self, type):
         """Sets the type of this CreateRecordSetResponse.
 
-        记录类型。  公网域名场景的记录类型: A、AAAA、MX、CNAME、TXT、NS、SRV、CAA。  内网域名场景的记录类型: A、AAAA、MX、CNAME、TXT、NS、SRV、CAA、PTR。
+        记录类型。  公网域名场景的记录类型: A、AAAA、MX、CNAME、TXT、NS、SRV、CAA。  内网域名场景的记录类型: A、AAAA、MX、CNAME、TXT、SRV。
 
         :param type: The type of this CreateRecordSetResponse.
         :type type: str

@@ -1469,20 +1469,20 @@ class RocketMQClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-    def send_rocket_mq_dlq_message(self, request):
+    def send_dlq_message(self, request):
         """重发死信消息
 
         重发死信消息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
-        :param request: Request instance for SendRocketMqDlqMessage
-        :type request: :class:`huaweicloudsdkrocketmq.v2.SendRocketMqDlqMessageRequest`
-        :rtype: :class:`huaweicloudsdkrocketmq.v2.SendRocketMqDlqMessageResponse`
+        :param request: Request instance for SendDlqMessage
+        :type request: :class:`huaweicloudsdkrocketmq.v2.SendDlqMessageRequest`
+        :rtype: :class:`huaweicloudsdkrocketmq.v2.SendDlqMessageResponse`
         """
-        return self._send_rocket_mq_dlq_message_with_http_info(request)
+        return self._send_dlq_message_with_http_info(request)
 
-    def _send_rocket_mq_dlq_message_with_http_info(self, request):
+    def _send_dlq_message_with_http_info(self, request):
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1490,6 +1490,8 @@ class RocketMQClient(Client):
         collection_formats = {}
 
         path_params = {}
+        if 'engine' in local_var_params:
+            path_params['engine'] = local_var_params['engine']
         if 'instance_id' in local_var_params:
             path_params['instance_id'] = local_var_params['instance_id']
 
@@ -1513,7 +1515,7 @@ class RocketMQClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v2/reliability/{project_id}/instances/{instance_id}/messages/deadletter-resend',
+            resource_path='/v2/{engine}/{project_id}/instances/{instance_id}/messages/deadletter-resend',
             method='POST',
             path_params=path_params,
             query_params=query_params,
@@ -1521,7 +1523,7 @@ class RocketMQClient(Client):
             body=body_params,
             post_params=form_params,
             cname=cname,
-            response_type='SendRocketMqDlqMessageResponse',
+            response_type='SendDlqMessageResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -2115,20 +2117,20 @@ class RocketMQClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-    def validate_rocket_mq_consumed_message(self, request):
+    def validate_consumed_message(self, request):
         """消费验证
 
         消费验证。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
-        :param request: Request instance for ValidateRocketMqConsumedMessage
-        :type request: :class:`huaweicloudsdkrocketmq.v2.ValidateRocketMqConsumedMessageRequest`
-        :rtype: :class:`huaweicloudsdkrocketmq.v2.ValidateRocketMqConsumedMessageResponse`
+        :param request: Request instance for ValidateConsumedMessage
+        :type request: :class:`huaweicloudsdkrocketmq.v2.ValidateConsumedMessageRequest`
+        :rtype: :class:`huaweicloudsdkrocketmq.v2.ValidateConsumedMessageResponse`
         """
-        return self._validate_rocket_mq_consumed_message_with_http_info(request)
+        return self._validate_consumed_message_with_http_info(request)
 
-    def _validate_rocket_mq_consumed_message_with_http_info(self, request):
+    def _validate_consumed_message_with_http_info(self, request):
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2136,6 +2138,8 @@ class RocketMQClient(Client):
         collection_formats = {}
 
         path_params = {}
+        if 'engine' in local_var_params:
+            path_params['engine'] = local_var_params['engine']
         if 'instance_id' in local_var_params:
             path_params['instance_id'] = local_var_params['instance_id']
 
@@ -2159,7 +2163,7 @@ class RocketMQClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v2/reliability/{project_id}/instances/{instance_id}/messages/resend',
+            resource_path='/v2/{engine}/{project_id}/instances/{instance_id}/messages/resend',
             method='POST',
             path_params=path_params,
             query_params=query_params,
@@ -2167,7 +2171,7 @@ class RocketMQClient(Client):
             body=body_params,
             post_params=form_params,
             cname=cname,
-            response_type='ValidateRocketMqConsumedMessageResponse',
+            response_type='ValidateConsumedMessageResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

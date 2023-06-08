@@ -91,7 +91,7 @@ class CreateRequestBody:
 
         :param name: 区块链服务名称，支持英文，数字，中文字符和中划线(-)，不能以中划线(-)开头，长度4-24个字符。
         :type name: str
-        :param version_type: BCS服务版本类型，[专业版（4），企业版（2）](tag:g42)[可选：专业版（4），企业版（2），铂金版（3）](tag:online)。被邀请方创建时，和邀请方保持一致。
+        :param version_type: BCS服务版本类型，可选：[基础版（4），专业版（2），企业版（3）](tag: hws)[基础版（4），专业版（2）](tag: hws_hk)。被邀请方创建时，和邀请方保持一致。
         :type version_type: int
         :param fabric_version: Fabric版本，当前邀请方以及私有链的创建仅可选：2.2 ;被邀请方创建时，和邀请方保持一致，1.4版本服务仅支持1.15及以下版本集群. 默认值为2.2.
         :type fabric_version: str
@@ -107,7 +107,7 @@ class CreateRequestBody:
         :type volume_type: str
         :param evs_disk_type: 云硬盘存储卷类型，volume_type选择evs时必填，可选：普通I/O（SATA），高I/O（SAS），超高I/O（SSD）
         :type evs_disk_type: str
-        :param org_disk_size: 节点组织存储容量[专业版和企业版至少100GB，铂金版至少500GB](tag:online)[，专业版和企业版至少100GB](tag:g42)[节点组织存储容量GB，至少为100GB](tag:hcs)
+        :param org_disk_size: 节点组织存储容量，[基础版和专业版至少100GB，企业版至少500GB](tag: hws)[基础版和专业版至少100GB](tag: hws_hk)
         :type org_disk_size: int
         :param database_type: BCS服务数据库类型，包括文件数据库（goleveldb），NoSQL（couchdb），选择couchdb需要填写couchdb_info字段中的信息
         :type database_type: str
@@ -271,7 +271,7 @@ class CreateRequestBody:
     def version_type(self):
         """Gets the version_type of this CreateRequestBody.
 
-        BCS服务版本类型，[专业版（4），企业版（2）](tag:g42)[可选：专业版（4），企业版（2），铂金版（3）](tag:online)。被邀请方创建时，和邀请方保持一致。
+        BCS服务版本类型，可选：[基础版（4），专业版（2），企业版（3）](tag: hws)[基础版（4），专业版（2）](tag: hws_hk)。被邀请方创建时，和邀请方保持一致。
 
         :return: The version_type of this CreateRequestBody.
         :rtype: int
@@ -282,7 +282,7 @@ class CreateRequestBody:
     def version_type(self, version_type):
         """Sets the version_type of this CreateRequestBody.
 
-        BCS服务版本类型，[专业版（4），企业版（2）](tag:g42)[可选：专业版（4），企业版（2），铂金版（3）](tag:online)。被邀请方创建时，和邀请方保持一致。
+        BCS服务版本类型，可选：[基础版（4），专业版（2），企业版（3）](tag: hws)[基础版（4），专业版（2）](tag: hws_hk)。被邀请方创建时，和邀请方保持一致。
 
         :param version_type: The version_type of this CreateRequestBody.
         :type version_type: int
@@ -447,7 +447,7 @@ class CreateRequestBody:
     def org_disk_size(self):
         """Gets the org_disk_size of this CreateRequestBody.
 
-        节点组织存储容量[专业版和企业版至少100GB，铂金版至少500GB](tag:online)[，专业版和企业版至少100GB](tag:g42)[节点组织存储容量GB，至少为100GB](tag:hcs)
+        节点组织存储容量，[基础版和专业版至少100GB，企业版至少500GB](tag: hws)[基础版和专业版至少100GB](tag: hws_hk)
 
         :return: The org_disk_size of this CreateRequestBody.
         :rtype: int
@@ -458,7 +458,7 @@ class CreateRequestBody:
     def org_disk_size(self, org_disk_size):
         """Sets the org_disk_size of this CreateRequestBody.
 
-        节点组织存储容量[专业版和企业版至少100GB，铂金版至少500GB](tag:online)[，专业版和企业版至少100GB](tag:g42)[节点组织存储容量GB，至少为100GB](tag:hcs)
+        节点组织存储容量，[基础版和专业版至少100GB，企业版至少500GB](tag: hws)[基础版和专业版至少100GB](tag: hws_hk)
 
         :param org_disk_size: The org_disk_size of this CreateRequestBody.
         :type org_disk_size: int

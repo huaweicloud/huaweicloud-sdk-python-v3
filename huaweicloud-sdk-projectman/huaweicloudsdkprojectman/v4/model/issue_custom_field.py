@@ -21,7 +21,8 @@ class IssueCustomField:
         'custom_field': 'str',
         'options': 'str',
         'type': 'str',
-        'tracker_ids': 'list[int]'
+        'tracker_ids': 'list[int]',
+        'create_time': 'str'
     }
 
     attribute_map = {
@@ -29,10 +30,11 @@ class IssueCustomField:
         'custom_field': 'custom_field',
         'options': 'options',
         'type': 'type',
-        'tracker_ids': 'tracker_ids'
+        'tracker_ids': 'tracker_ids',
+        'create_time': 'create_time'
     }
 
-    def __init__(self, name=None, custom_field=None, options=None, type=None, tracker_ids=None):
+    def __init__(self, name=None, custom_field=None, options=None, type=None, tracker_ids=None, create_time=None):
         """IssueCustomField
 
         The model defined in huaweicloud sdk
@@ -47,6 +49,8 @@ class IssueCustomField:
         :type type: str
         :param tracker_ids: 自定义字段支持的工作项类型 2任务/Task,3缺陷/Bug,5Epic,6Feature,7Story
         :type tracker_ids: list[int]
+        :param create_time: 自定义字段创建时间
+        :type create_time: str
         """
         
         
@@ -56,6 +60,7 @@ class IssueCustomField:
         self._options = None
         self._type = None
         self._tracker_ids = None
+        self._create_time = None
         self.discriminator = None
 
         if name is not None:
@@ -68,6 +73,8 @@ class IssueCustomField:
             self.type = type
         if tracker_ids is not None:
             self.tracker_ids = tracker_ids
+        if create_time is not None:
+            self.create_time = create_time
 
     @property
     def name(self):
@@ -178,6 +185,28 @@ class IssueCustomField:
         :type tracker_ids: list[int]
         """
         self._tracker_ids = tracker_ids
+
+    @property
+    def create_time(self):
+        """Gets the create_time of this IssueCustomField.
+
+        自定义字段创建时间
+
+        :return: The create_time of this IssueCustomField.
+        :rtype: str
+        """
+        return self._create_time
+
+    @create_time.setter
+    def create_time(self, create_time):
+        """Sets the create_time of this IssueCustomField.
+
+        自定义字段创建时间
+
+        :param create_time: The create_time of this IssueCustomField.
+        :type create_time: str
+        """
+        self._create_time = create_time
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -56,6 +56,8 @@ from huaweicloudsdkbcs.v2.model.download_blockchain_sdk_config_request import Do
 from huaweicloudsdkbcs.v2.model.download_blockchain_sdk_config_response import DownloadBlockchainSdkConfigResponse
 from huaweicloudsdkbcs.v2.model.entity_metric_list import EntityMetricList
 from huaweicloudsdkbcs.v2.model.entity_metric_list_item import EntityMetricListItem
+from huaweicloudsdkbcs.v2.model.event_metadata_relation import EventMetadataRelation
+from huaweicloudsdkbcs.v2.model.event_result_sort import EventResultSort
 from huaweicloudsdkbcs.v2.model.freeze_cert_request import FreezeCertRequest
 from huaweicloudsdkbcs.v2.model.freeze_cert_request_body import FreezeCertRequestBody
 from huaweicloudsdkbcs.v2.model.freeze_cert_response import FreezeCertResponse
@@ -77,6 +79,11 @@ from huaweicloudsdkbcs.v2.model.invitee_info import InviteeInfo
 from huaweicloudsdkbcs.v2.model.invitor_info import InvitorInfo
 from huaweicloudsdkbcs.v2.model.invitor_infos import InvitorInfos
 from huaweicloudsdkbcs.v2.model.kafka_create_info import KafkaCreateInfo
+from huaweicloudsdkbcs.v2.model.list_bcs_event_request_body import ListBcsEventRequestBody
+from huaweicloudsdkbcs.v2.model.list_bcs_events_request import ListBcsEventsRequest
+from huaweicloudsdkbcs.v2.model.list_bcs_events_response import ListBcsEventsResponse
+from huaweicloudsdkbcs.v2.model.list_bcs_events_statistic_request import ListBcsEventsStatisticRequest
+from huaweicloudsdkbcs.v2.model.list_bcs_events_statistic_response import ListBcsEventsStatisticResponse
 from huaweicloudsdkbcs.v2.model.list_bcs_metric_request import ListBcsMetricRequest
 from huaweicloudsdkbcs.v2.model.list_bcs_metric_request_body import ListBcsMetricRequestBody
 from huaweicloudsdkbcs.v2.model.list_bcs_metric_response import ListBcsMetricResponse

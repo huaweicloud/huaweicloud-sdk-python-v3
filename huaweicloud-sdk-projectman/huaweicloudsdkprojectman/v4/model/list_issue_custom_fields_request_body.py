@@ -18,15 +18,17 @@ class ListIssueCustomFieldsRequestBody:
 
     openapi_types = {
         'custom_fields': 'list[str]',
-        'names': 'list[str]'
+        'names': 'list[str]',
+        'included_not_in_use': 'bool'
     }
 
     attribute_map = {
         'custom_fields': 'custom_fields',
-        'names': 'names'
+        'names': 'names',
+        'included_not_in_use': 'included_not_in_use'
     }
 
-    def __init__(self, custom_fields=None, names=None):
+    def __init__(self, custom_fields=None, names=None, included_not_in_use=None):
         """ListIssueCustomFieldsRequestBody
 
         The model defined in huaweicloud sdk
@@ -35,18 +37,23 @@ class ListIssueCustomFieldsRequestBody:
         :type custom_fields: list[str]
         :param names: 自定义字段页面显示的含义
         :type names: list[str]
+        :param included_not_in_use: 查询结果是否包括未使用的自定义字段，默认仅查询使用中的自定义字段，设为true时查询项目中所有自定义字段
+        :type included_not_in_use: bool
         """
         
         
 
         self._custom_fields = None
         self._names = None
+        self._included_not_in_use = None
         self.discriminator = None
 
         if custom_fields is not None:
             self.custom_fields = custom_fields
         if names is not None:
             self.names = names
+        if included_not_in_use is not None:
+            self.included_not_in_use = included_not_in_use
 
     @property
     def custom_fields(self):
@@ -91,6 +98,28 @@ class ListIssueCustomFieldsRequestBody:
         :type names: list[str]
         """
         self._names = names
+
+    @property
+    def included_not_in_use(self):
+        """Gets the included_not_in_use of this ListIssueCustomFieldsRequestBody.
+
+        查询结果是否包括未使用的自定义字段，默认仅查询使用中的自定义字段，设为true时查询项目中所有自定义字段
+
+        :return: The included_not_in_use of this ListIssueCustomFieldsRequestBody.
+        :rtype: bool
+        """
+        return self._included_not_in_use
+
+    @included_not_in_use.setter
+    def included_not_in_use(self, included_not_in_use):
+        """Sets the included_not_in_use of this ListIssueCustomFieldsRequestBody.
+
+        查询结果是否包括未使用的自定义字段，默认仅查询使用中的自定义字段，设为true时查询项目中所有自定义字段
+
+        :param included_not_in_use: The included_not_in_use of this ListIssueCustomFieldsRequestBody.
+        :type included_not_in_use: bool
+        """
+        self._included_not_in_use = included_not_in_use
 
     def to_dict(self):
         """Returns the model properties as a dict"""

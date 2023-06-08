@@ -22,7 +22,8 @@ class DeploymentGroup:
         'project_id': 'str',
         'os': 'str',
         'slave_cluster_id': 'str',
-        'description': 'str'
+        'description': 'str',
+        'is_proxy_mode': 'int'
     }
 
     attribute_map = {
@@ -31,10 +32,11 @@ class DeploymentGroup:
         'project_id': 'project_id',
         'os': 'os',
         'slave_cluster_id': 'slave_cluster_id',
-        'description': 'description'
+        'description': 'description',
+        'is_proxy_mode': 'is_proxy_mode'
     }
 
-    def __init__(self, name=None, region_name=None, project_id=None, os=None, slave_cluster_id=None, description=None):
+    def __init__(self, name=None, region_name=None, project_id=None, os=None, slave_cluster_id=None, description=None, is_proxy_mode=None):
         """DeploymentGroup
 
         The model defined in huaweicloud sdk
@@ -51,6 +53,8 @@ class DeploymentGroup:
         :type slave_cluster_id: str
         :param description: 描述
         :type description: str
+        :param is_proxy_mode: 主机组是否为代理机接入模式
+        :type is_proxy_mode: int
         """
         
         
@@ -61,6 +65,7 @@ class DeploymentGroup:
         self._os = None
         self._slave_cluster_id = None
         self._description = None
+        self._is_proxy_mode = None
         self.discriminator = None
 
         self.name = name
@@ -71,6 +76,8 @@ class DeploymentGroup:
             self.slave_cluster_id = slave_cluster_id
         if description is not None:
             self.description = description
+        if is_proxy_mode is not None:
+            self.is_proxy_mode = is_proxy_mode
 
     @property
     def name(self):
@@ -203,6 +210,28 @@ class DeploymentGroup:
         :type description: str
         """
         self._description = description
+
+    @property
+    def is_proxy_mode(self):
+        """Gets the is_proxy_mode of this DeploymentGroup.
+
+        主机组是否为代理机接入模式
+
+        :return: The is_proxy_mode of this DeploymentGroup.
+        :rtype: int
+        """
+        return self._is_proxy_mode
+
+    @is_proxy_mode.setter
+    def is_proxy_mode(self, is_proxy_mode):
+        """Sets the is_proxy_mode of this DeploymentGroup.
+
+        主机组是否为代理机接入模式
+
+        :param is_proxy_mode: The is_proxy_mode of this DeploymentGroup.
+        :type is_proxy_mode: int
+        """
+        self._is_proxy_mode = is_proxy_mode
 
     def to_dict(self):
         """Returns the model properties as a dict"""

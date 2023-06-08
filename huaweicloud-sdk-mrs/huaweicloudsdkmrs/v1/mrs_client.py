@@ -1104,6 +1104,64 @@ class MrsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_available_zones(self, request):
+        """查询可用区信息
+
+        在创建集群时，需要配置实例所在的可用区ID，可通过该接口查询可用区的ID。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListAvailableZones
+        :type request: :class:`huaweicloudsdkmrs.v1.ListAvailableZonesRequest`
+        :rtype: :class:`huaweicloudsdkmrs.v1.ListAvailableZonesResponse`
+        """
+        return self._list_available_zones_with_http_info(request)
+
+    def _list_available_zones_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'region_id' in local_var_params:
+            path_params['region_id'] = local_var_params['region_id']
+
+        query_params = []
+        if 'scope' in local_var_params:
+            query_params.append(('scope', local_var_params['scope']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1.1/{region_id}/available-zones',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListAvailableZonesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):

@@ -41,7 +41,7 @@ class NodePoolSpec:
 
         The model defined in huaweicloud sdk
 
-        :param type: 节点池类型。不填写时默认为vm。  - vm：弹性云服务器 - ElasticBMS：C6型弹性裸金属通用计算增强型云服务器，规格示例：c6.22xlarge.2.physical 
+        :param type: 节点池类型。不填写时默认为vm。  - vm：弹性云服务器 - ElasticBMS：C6型弹性裸金属通用计算增强型云服务器，规格示例：c6.22xlarge.2.physical - pm: 裸金属服务器 
         :type type: str
         :param node_template: 
         :type node_template: :class:`huaweicloudsdkcce.v3.NodeSpec`
@@ -86,7 +86,7 @@ class NodePoolSpec:
     def type(self):
         """Gets the type of this NodePoolSpec.
 
-        节点池类型。不填写时默认为vm。  - vm：弹性云服务器 - ElasticBMS：C6型弹性裸金属通用计算增强型云服务器，规格示例：c6.22xlarge.2.physical 
+        节点池类型。不填写时默认为vm。  - vm：弹性云服务器 - ElasticBMS：C6型弹性裸金属通用计算增强型云服务器，规格示例：c6.22xlarge.2.physical - pm: 裸金属服务器 
 
         :return: The type of this NodePoolSpec.
         :rtype: str
@@ -97,7 +97,7 @@ class NodePoolSpec:
     def type(self, type):
         """Sets the type of this NodePoolSpec.
 
-        节点池类型。不填写时默认为vm。  - vm：弹性云服务器 - ElasticBMS：C6型弹性裸金属通用计算增强型云服务器，规格示例：c6.22xlarge.2.physical 
+        节点池类型。不填写时默认为vm。  - vm：弹性云服务器 - ElasticBMS：C6型弹性裸金属通用计算增强型云服务器，规格示例：c6.22xlarge.2.physical - pm: 裸金属服务器 
 
         :param type: The type of this NodePoolSpec.
         :type type: str

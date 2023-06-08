@@ -44,7 +44,8 @@ class CreateListenerOption:
         'quic_config': 'CreateListenerQuicConfigOption',
         'protection_status': 'str',
         'protection_reason': 'str',
-        'gzip_enable': 'bool'
+        'gzip_enable': 'bool',
+        'port_ranges': 'list[PortRange]'
     }
 
     attribute_map = {
@@ -75,10 +76,11 @@ class CreateListenerOption:
         'quic_config': 'quic_config',
         'protection_status': 'protection_status',
         'protection_reason': 'protection_reason',
-        'gzip_enable': 'gzip_enable'
+        'gzip_enable': 'gzip_enable',
+        'port_ranges': 'port_ranges'
     }
 
-    def __init__(self, admin_state_up=None, default_pool_id=None, client_ca_tls_container_ref=None, default_tls_container_ref=None, description=None, http2_enable=None, insert_headers=None, loadbalancer_id=None, name=None, project_id=None, protocol=None, protocol_port=None, sni_container_refs=None, sni_match_algo=None, tags=None, tls_ciphers_policy=None, security_policy_id=None, enable_member_retry=None, keepalive_timeout=None, client_timeout=None, member_timeout=None, ipgroup=None, transparent_client_ip_enable=None, enhance_l7policy_enable=None, quic_config=None, protection_status=None, protection_reason=None, gzip_enable=None):
+    def __init__(self, admin_state_up=None, default_pool_id=None, client_ca_tls_container_ref=None, default_tls_container_ref=None, description=None, http2_enable=None, insert_headers=None, loadbalancer_id=None, name=None, project_id=None, protocol=None, protocol_port=None, sni_container_refs=None, sni_match_algo=None, tags=None, tls_ciphers_policy=None, security_policy_id=None, enable_member_retry=None, keepalive_timeout=None, client_timeout=None, member_timeout=None, ipgroup=None, transparent_client_ip_enable=None, enhance_l7policy_enable=None, quic_config=None, protection_status=None, protection_reason=None, gzip_enable=None, port_ranges=None):
         """CreateListenerOption
 
         The model defined in huaweicloud sdk
@@ -105,7 +107,7 @@ class CreateListenerOption:
         :type project_id: str
         :param protocol: 监听器的监听协议。  [取值：TCP、UDP、HTTP、HTTPS、TERMINATED_HTTPS、QUIC。  使用说明： - 共享型LB上的HTTPS监听器只支持设置为TERMINATED_HTTPS。 传入HTTPS将会自动转为TERMINATED_HTTPS。 - 独享型LB上的HTTPS监听器只支持设置为HTTPS，传入TERMINATED_HTTPS将会自动转为HTTPS。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,fcs,dt)  [取值：TCP、UDP、HTTP、HTTPS。](tag:hws_eu,hcso_dt)  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt,dt,dt_test) required: false
         :type protocol: str
-        :param protocol_port: 监听器的监听端口。QUIC监听器端口不能是4789，且不能和UDP监听器端口重复。  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt,dt,dt_test)
+        :param protocol_port: 监听器的监听端口。QUIC监听器端口不能是4789，且不能和UDP监听器端口重复。传0时表示开启监听端口范围的能力，此时port_ranges为必填字段。 [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt,dt,dt_test)
         :type protocol_port: int
         :param sni_container_refs: 监听器使用的SNI证书（带域名的服务器证书）ID列表。  使用说明： - 列表对应的所有SNI证书的域名不允许存在重复。 - 列表对应的所有SNI证书的域名总数不超过50。 - QUIC监听器仅支持RSA证书。  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt,dt,dt_test)
         :type sni_container_refs: list[str]
@@ -139,6 +141,8 @@ class CreateListenerOption:
         :type protection_reason: str
         :param gzip_enable: ELB是否开启gzip压缩，缺省值：false，非必选  [仅HTTP/HTTPS类型监听器支持配置。](tag:tm,hws_eu,g42,hk_g42,hcso_dt,dt,dt_test) [仅HTTP/HTTPS/QUIC类型监听器支持配置。](tag:hws,hws_hk,hws_test,hcs,hcs_sm,hcso,fcs,fcs_vm,mix,ocb,ctc,cmcc,sbc,hws_ocb,hk_sbc)
         :type gzip_enable: bool
+        :param port_ranges: 端口监听范围（闭区间)，最多指定10个端口组，每个组范围不可有重叠部分 &gt;仅当protocol_port为0或未传入protoco_port时可以传入该字段。仅TCP, UDP，TLS监听支持该字段
+        :type port_ranges: list[:class:`huaweicloudsdkelb.v3.PortRange`]
         """
         
         
@@ -171,6 +175,7 @@ class CreateListenerOption:
         self._protection_status = None
         self._protection_reason = None
         self._gzip_enable = None
+        self._port_ranges = None
         self.discriminator = None
 
         if admin_state_up is not None:
@@ -193,7 +198,8 @@ class CreateListenerOption:
         if project_id is not None:
             self.project_id = project_id
         self.protocol = protocol
-        self.protocol_port = protocol_port
+        if protocol_port is not None:
+            self.protocol_port = protocol_port
         if sni_container_refs is not None:
             self.sni_container_refs = sni_container_refs
         if sni_match_algo is not None:
@@ -226,6 +232,8 @@ class CreateListenerOption:
             self.protection_reason = protection_reason
         if gzip_enable is not None:
             self.gzip_enable = gzip_enable
+        if port_ranges is not None:
+            self.port_ranges = port_ranges
 
     @property
     def admin_state_up(self):
@@ -469,7 +477,7 @@ class CreateListenerOption:
     def protocol_port(self):
         """Gets the protocol_port of this CreateListenerOption.
 
-        监听器的监听端口。QUIC监听器端口不能是4789，且不能和UDP监听器端口重复。  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt,dt,dt_test)
+        监听器的监听端口。QUIC监听器端口不能是4789，且不能和UDP监听器端口重复。传0时表示开启监听端口范围的能力，此时port_ranges为必填字段。 [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt,dt,dt_test)
 
         :return: The protocol_port of this CreateListenerOption.
         :rtype: int
@@ -480,7 +488,7 @@ class CreateListenerOption:
     def protocol_port(self, protocol_port):
         """Sets the protocol_port of this CreateListenerOption.
 
-        监听器的监听端口。QUIC监听器端口不能是4789，且不能和UDP监听器端口重复。  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt,dt,dt_test)
+        监听器的监听端口。QUIC监听器端口不能是4789，且不能和UDP监听器端口重复。传0时表示开启监听端口范围的能力，此时port_ranges为必填字段。 [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt,dt,dt_test)
 
         :param protocol_port: The protocol_port of this CreateListenerOption.
         :type protocol_port: int
@@ -830,6 +838,28 @@ class CreateListenerOption:
         :type gzip_enable: bool
         """
         self._gzip_enable = gzip_enable
+
+    @property
+    def port_ranges(self):
+        """Gets the port_ranges of this CreateListenerOption.
+
+        端口监听范围（闭区间)，最多指定10个端口组，每个组范围不可有重叠部分 >仅当protocol_port为0或未传入protoco_port时可以传入该字段。仅TCP, UDP，TLS监听支持该字段
+
+        :return: The port_ranges of this CreateListenerOption.
+        :rtype: list[:class:`huaweicloudsdkelb.v3.PortRange`]
+        """
+        return self._port_ranges
+
+    @port_ranges.setter
+    def port_ranges(self, port_ranges):
+        """Sets the port_ranges of this CreateListenerOption.
+
+        端口监听范围（闭区间)，最多指定10个端口组，每个组范围不可有重叠部分 >仅当protocol_port为0或未传入protoco_port时可以传入该字段。仅TCP, UDP，TLS监听支持该字段
+
+        :param port_ranges: The port_ranges of this CreateListenerOption.
+        :type port_ranges: list[:class:`huaweicloudsdkelb.v3.PortRange`]
+        """
+        self._port_ranges = port_ranges
 
     def to_dict(self):
         """Returns the model properties as a dict"""

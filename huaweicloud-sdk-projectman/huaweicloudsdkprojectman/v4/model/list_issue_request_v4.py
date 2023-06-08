@@ -33,7 +33,9 @@ class ListIssueRequestV4:
         'story_point_ids': 'list[int]',
         'tracker_ids': 'list[int]',
         'include_deleted': 'bool',
+        'created_time_interval': 'str',
         'updated_time_interval': 'str',
+        'closed_time_interval': 'str',
         'custom_fields': 'list[ListIssueRequestV4CustomFields]'
     }
 
@@ -54,11 +56,13 @@ class ListIssueRequestV4:
         'story_point_ids': 'story_point_ids',
         'tracker_ids': 'tracker_ids',
         'include_deleted': 'include_deleted',
+        'created_time_interval': 'created_time_interval',
         'updated_time_interval': 'updated_time_interval',
+        'closed_time_interval': 'closed_time_interval',
         'custom_fields': 'custom_fields'
     }
 
-    def __init__(self, assigned_ids=None, creator_ids=None, developer_ids=None, domain_ids=None, done_ratios=None, iteration_ids=None, limit=None, offset=None, module_ids=None, priority_ids=None, query_type=None, severity_ids=None, status_ids=None, story_point_ids=None, tracker_ids=None, include_deleted=None, updated_time_interval=None, custom_fields=None):
+    def __init__(self, assigned_ids=None, creator_ids=None, developer_ids=None, domain_ids=None, done_ratios=None, iteration_ids=None, limit=None, offset=None, module_ids=None, priority_ids=None, query_type=None, severity_ids=None, status_ids=None, story_point_ids=None, tracker_ids=None, include_deleted=None, created_time_interval=None, updated_time_interval=None, closed_time_interval=None, custom_fields=None):
         """ListIssueRequestV4
 
         The model defined in huaweicloud sdk
@@ -95,8 +99,12 @@ class ListIssueRequestV4:
         :type tracker_ids: list[int]
         :param include_deleted: true 查询的工作项包含已经逻辑删除的，false 查询的工作项不包含已经删除的
         :type include_deleted: bool
+        :param created_time_interval: 根据工作项的创建时间查询工作项，(查询的起始时间,查询的结束时间)
+        :type created_time_interval: str
         :param updated_time_interval: 根据工作项的更新时间查询工作项，(查询的起始时间,查询的结束时间)
         :type updated_time_interval: str
+        :param closed_time_interval: 根据工作项的结束时间查询工作项，(查询的起始时间,查询的结束时间)
+        :type closed_time_interval: str
         :param custom_fields: 自定义字段
         :type custom_fields: list[:class:`huaweicloudsdkprojectman.v4.ListIssueRequestV4CustomFields`]
         """
@@ -119,7 +127,9 @@ class ListIssueRequestV4:
         self._story_point_ids = None
         self._tracker_ids = None
         self._include_deleted = None
+        self._created_time_interval = None
         self._updated_time_interval = None
+        self._closed_time_interval = None
         self._custom_fields = None
         self.discriminator = None
 
@@ -155,8 +165,12 @@ class ListIssueRequestV4:
             self.tracker_ids = tracker_ids
         if include_deleted is not None:
             self.include_deleted = include_deleted
+        if created_time_interval is not None:
+            self.created_time_interval = created_time_interval
         if updated_time_interval is not None:
             self.updated_time_interval = updated_time_interval
+        if closed_time_interval is not None:
+            self.closed_time_interval = closed_time_interval
         if custom_fields is not None:
             self.custom_fields = custom_fields
 
@@ -513,6 +527,28 @@ class ListIssueRequestV4:
         self._include_deleted = include_deleted
 
     @property
+    def created_time_interval(self):
+        """Gets the created_time_interval of this ListIssueRequestV4.
+
+        根据工作项的创建时间查询工作项，(查询的起始时间,查询的结束时间)
+
+        :return: The created_time_interval of this ListIssueRequestV4.
+        :rtype: str
+        """
+        return self._created_time_interval
+
+    @created_time_interval.setter
+    def created_time_interval(self, created_time_interval):
+        """Sets the created_time_interval of this ListIssueRequestV4.
+
+        根据工作项的创建时间查询工作项，(查询的起始时间,查询的结束时间)
+
+        :param created_time_interval: The created_time_interval of this ListIssueRequestV4.
+        :type created_time_interval: str
+        """
+        self._created_time_interval = created_time_interval
+
+    @property
     def updated_time_interval(self):
         """Gets the updated_time_interval of this ListIssueRequestV4.
 
@@ -533,6 +569,28 @@ class ListIssueRequestV4:
         :type updated_time_interval: str
         """
         self._updated_time_interval = updated_time_interval
+
+    @property
+    def closed_time_interval(self):
+        """Gets the closed_time_interval of this ListIssueRequestV4.
+
+        根据工作项的结束时间查询工作项，(查询的起始时间,查询的结束时间)
+
+        :return: The closed_time_interval of this ListIssueRequestV4.
+        :rtype: str
+        """
+        return self._closed_time_interval
+
+    @closed_time_interval.setter
+    def closed_time_interval(self, closed_time_interval):
+        """Sets the closed_time_interval of this ListIssueRequestV4.
+
+        根据工作项的结束时间查询工作项，(查询的起始时间,查询的结束时间)
+
+        :param closed_time_interval: The closed_time_interval of this ListIssueRequestV4.
+        :type closed_time_interval: str
+        """
+        self._closed_time_interval = closed_time_interval
 
     @property
     def custom_fields(self):

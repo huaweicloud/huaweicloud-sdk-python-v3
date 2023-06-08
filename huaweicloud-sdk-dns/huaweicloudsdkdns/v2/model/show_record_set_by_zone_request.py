@@ -67,7 +67,7 @@ class ShowRecordSetByZoneRequest:
         :type tags: str
         :param status: 待查询的Record Set的状态。  取值范围：ACTIVE、ERROR、DISABLE、FREEZE、PENDING_CREATE、PENDING_UPDATE、PENDING_DELETE
         :type status: str
-        :param type: 待查询的Record Set的记录集类型。  取值范围：A、CNAME、MX、AAAA、TXT、SRV、NS、CAA
+        :param type: 待查询的Record Set的记录集类型。  公网域名场景的记录类型: A、AAAA、MX、CNAME、TXT、NS、SRV、CAA。 内网域名场景的记录类型: A、AAAA、MX、CNAME、TXT、SRV。
         :type type: str
         :param name: 待查询的Record Set的域名中包含此name。  搜索模式默认为模糊搜索。  默认值为空。
         :type name: str
@@ -77,7 +77,7 @@ class ShowRecordSetByZoneRequest:
         :type sort_key: str
         :param sort_dir: 查询结果中Record Set列表的排序方式。  取值范围：  desc：降序排序 asc：升序排序 默认值为空，表示不排序。
         :type sort_dir: str
-        :param search_mode: 查询条件搜索模式。  取值范围：  like：模糊搜索 equal：精确搜索 默认值为like。
+        :param search_mode: 查询条件搜索模式。  取值范围：  like：模糊搜索 equal：精确搜索 默认值为equal。
         :type search_mode: str
         """
         
@@ -282,7 +282,7 @@ class ShowRecordSetByZoneRequest:
     def type(self):
         """Gets the type of this ShowRecordSetByZoneRequest.
 
-        待查询的Record Set的记录集类型。  取值范围：A、CNAME、MX、AAAA、TXT、SRV、NS、CAA
+        待查询的Record Set的记录集类型。  公网域名场景的记录类型: A、AAAA、MX、CNAME、TXT、NS、SRV、CAA。 内网域名场景的记录类型: A、AAAA、MX、CNAME、TXT、SRV。
 
         :return: The type of this ShowRecordSetByZoneRequest.
         :rtype: str
@@ -293,7 +293,7 @@ class ShowRecordSetByZoneRequest:
     def type(self, type):
         """Sets the type of this ShowRecordSetByZoneRequest.
 
-        待查询的Record Set的记录集类型。  取值范围：A、CNAME、MX、AAAA、TXT、SRV、NS、CAA
+        待查询的Record Set的记录集类型。  公网域名场景的记录类型: A、AAAA、MX、CNAME、TXT、NS、SRV、CAA。 内网域名场景的记录类型: A、AAAA、MX、CNAME、TXT、SRV。
 
         :param type: The type of this ShowRecordSetByZoneRequest.
         :type type: str
@@ -392,7 +392,7 @@ class ShowRecordSetByZoneRequest:
     def search_mode(self):
         """Gets the search_mode of this ShowRecordSetByZoneRequest.
 
-        查询条件搜索模式。  取值范围：  like：模糊搜索 equal：精确搜索 默认值为like。
+        查询条件搜索模式。  取值范围：  like：模糊搜索 equal：精确搜索 默认值为equal。
 
         :return: The search_mode of this ShowRecordSetByZoneRequest.
         :rtype: str
@@ -403,7 +403,7 @@ class ShowRecordSetByZoneRequest:
     def search_mode(self, search_mode):
         """Sets the search_mode of this ShowRecordSetByZoneRequest.
 
-        查询条件搜索模式。  取值范围：  like：模糊搜索 equal：精确搜索 默认值为like。
+        查询条件搜索模式。  取值范围：  like：模糊搜索 equal：精确搜索 默认值为equal。
 
         :param search_mode: The search_mode of this ShowRecordSetByZoneRequest.
         :type search_mode: str

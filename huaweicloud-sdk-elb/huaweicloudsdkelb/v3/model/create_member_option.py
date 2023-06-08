@@ -75,7 +75,8 @@ class CreateMemberOption:
             self.name = name
         if project_id is not None:
             self.project_id = project_id
-        self.protocol_port = protocol_port
+        if protocol_port is not None:
+            self.protocol_port = protocol_port
         if subnet_cidr_id is not None:
             self.subnet_cidr_id = subnet_cidr_id
         if weight is not None:
