@@ -1,0 +1,34 @@
+name: Publish Python Packages To Pypi
+on:
+  workflow_dispatch:
+  release:
+    types: [created]
+jobs:
+  publish:
+    runs-on: ubuntu-22.04
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up Python
+      uses: actions/setup-python@v3
+      with:
+        python-version: '3.10'
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install setuptools wheel twine
+    - name: Build packages
+      run: |
+        for each in $(find "${GITHUB_WORKSPACE}" -maxdepth 1 -mindepth 1 -type d -name "*sdk*")
+        do
+          cd "${each}" || exit 1
+          python setup.py bdist_wheel
+          cp dist/*.whl "${GITHUB_WORKSPACE}"
+        done
+      shell: bash
+    - name: Publish packages
+      run: |
+        echo -e "[pypi]\nusername = __token__\npassword = ${PYPI_API_TOKEN}" >> "${HOME}/.pypirc"
+        cd "${GITHUB_WORKSPACE}" || exit 1
+        twine upload --repository pypi ./*.whl --skip-existing --verbose
+      env:
+        PYPI_API_TOKEN: ${{ secrets.PYPI_API_TOKEN }}
