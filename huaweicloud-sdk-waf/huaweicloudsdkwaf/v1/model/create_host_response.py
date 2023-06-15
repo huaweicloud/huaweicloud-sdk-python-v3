@@ -36,7 +36,8 @@ class CreateHostResponse(SdkResponse):
         'http2_enable': 'bool',
         'block_page': 'BlockPage',
         'flag': 'Flag',
-        'extend': 'dict(str, str)'
+        'extend': 'dict(str, str)',
+        'forward_header_map': 'dict(str, str)'
     }
 
     attribute_map = {
@@ -58,10 +59,11 @@ class CreateHostResponse(SdkResponse):
         'http2_enable': 'http2_enable',
         'block_page': 'block_page',
         'flag': 'flag',
-        'extend': 'extend'
+        'extend': 'extend',
+        'forward_header_map': 'forward_header_map'
     }
 
-    def __init__(self, id=None, hostname=None, policyid=None, access_code=None, protect_status=None, access_status=None, lb_algorithm=None, protocol=None, certificateid=None, certificatename=None, server=None, proxy=None, timestamp=None, exclusive_ip=None, web_tag=None, http2_enable=None, block_page=None, flag=None, extend=None):
+    def __init__(self, id=None, hostname=None, policyid=None, access_code=None, protect_status=None, access_status=None, lb_algorithm=None, protocol=None, certificateid=None, certificatename=None, server=None, proxy=None, timestamp=None, exclusive_ip=None, web_tag=None, http2_enable=None, block_page=None, flag=None, extend=None, forward_header_map=None):
         """CreateHostResponse
 
         The model defined in huaweicloud sdk
@@ -104,6 +106,8 @@ class CreateHostResponse(SdkResponse):
         :type flag: :class:`huaweicloudsdkwaf.v1.Flag`
         :param extend: 扩展字段，用于保存防护域名的一些配置信息。
         :type extend: dict(str, str)
+        :param forward_header_map: 字段转发配置，WAF会将添加的字段插到header中，转给源站；Key不能跟nginx原生字段重复。Value支持的值包括:   - $time_local   - $request_id   - $connection_requests   - $tenant_id   - $project_id   - $remote_addr   - $remote_port   - $scheme   - $request_method   - $http_host   -$origin_uri   - $request_length   - $ssl_server_name   - $ssl_protocol   - $ssl_curves   - $ssl_session_reused
+        :type forward_header_map: dict(str, str)
         """
         
         super(CreateHostResponse, self).__init__()
@@ -127,6 +131,7 @@ class CreateHostResponse(SdkResponse):
         self._block_page = None
         self._flag = None
         self._extend = None
+        self._forward_header_map = None
         self.discriminator = None
 
         if id is not None:
@@ -167,6 +172,8 @@ class CreateHostResponse(SdkResponse):
             self.flag = flag
         if extend is not None:
             self.extend = extend
+        if forward_header_map is not None:
+            self.forward_header_map = forward_header_map
 
     @property
     def id(self):
@@ -577,6 +584,28 @@ class CreateHostResponse(SdkResponse):
         :type extend: dict(str, str)
         """
         self._extend = extend
+
+    @property
+    def forward_header_map(self):
+        """Gets the forward_header_map of this CreateHostResponse.
+
+        字段转发配置，WAF会将添加的字段插到header中，转给源站；Key不能跟nginx原生字段重复。Value支持的值包括:   - $time_local   - $request_id   - $connection_requests   - $tenant_id   - $project_id   - $remote_addr   - $remote_port   - $scheme   - $request_method   - $http_host   -$origin_uri   - $request_length   - $ssl_server_name   - $ssl_protocol   - $ssl_curves   - $ssl_session_reused
+
+        :return: The forward_header_map of this CreateHostResponse.
+        :rtype: dict(str, str)
+        """
+        return self._forward_header_map
+
+    @forward_header_map.setter
+    def forward_header_map(self, forward_header_map):
+        """Sets the forward_header_map of this CreateHostResponse.
+
+        字段转发配置，WAF会将添加的字段插到header中，转给源站；Key不能跟nginx原生字段重复。Value支持的值包括:   - $time_local   - $request_id   - $connection_requests   - $tenant_id   - $project_id   - $remote_addr   - $remote_port   - $scheme   - $request_method   - $http_host   -$origin_uri   - $request_length   - $ssl_server_name   - $ssl_protocol   - $ssl_curves   - $ssl_session_reused
+
+        :param forward_header_map: The forward_header_map of this CreateHostResponse.
+        :type forward_header_map: dict(str, str)
+        """
+        self._forward_header_map = forward_header_map
 
     def to_dict(self):
         """Returns the model properties as a dict"""

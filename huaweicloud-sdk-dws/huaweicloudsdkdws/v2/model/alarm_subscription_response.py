@@ -19,7 +19,7 @@ class AlarmSubscriptionResponse:
     openapi_types = {
         'id': 'str',
         'name': 'str',
-        'enable': 'str',
+        'enable': 'int',
         'alarm_level': 'str',
         'project_id': 'str',
         'name_space': 'str',
@@ -54,7 +54,7 @@ class AlarmSubscriptionResponse:
         :param name: 告警订阅名称
         :type name: str
         :param enable: 是否开启订阅
-        :type enable: str
+        :type enable: int
         :param alarm_level: 告警级别
         :type alarm_level: str
         :param project_id: 租户凭证ID
@@ -162,7 +162,7 @@ class AlarmSubscriptionResponse:
         是否开启订阅
 
         :return: The enable of this AlarmSubscriptionResponse.
-        :rtype: str
+        :rtype: int
         """
         return self._enable
 
@@ -173,7 +173,7 @@ class AlarmSubscriptionResponse:
         是否开启订阅
 
         :param enable: The enable of this AlarmSubscriptionResponse.
-        :type enable: str
+        :type enable: int
         """
         self._enable = enable
 

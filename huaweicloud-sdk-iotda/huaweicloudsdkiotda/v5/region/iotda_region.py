@@ -23,6 +23,8 @@ class IoTDARegion:
                         "https://iotda.ap-southeast-2.myhuaweicloud.com")
     AP_SOUTHEAST_1 = Region("ap-southeast-1",
                         "https://iotda.ap-southeast-1.myhuaweicloud.com")
+    AF_SOUTH_1 = Region("af-south-1",
+                        "https://iotda.af-south-1.myhuaweicloud.com")
 
     static_fields = {
         "cn-north-4": CN_NORTH_4,
@@ -32,6 +34,7 @@ class IoTDARegion:
         "ap-southeast-3": AP_SOUTHEAST_3,
         "ap-southeast-2": AP_SOUTHEAST_2,
         "ap-southeast-1": AP_SOUTHEAST_1,
+        "af-south-1": AF_SOUTH_1,
     }
 
     @classmethod

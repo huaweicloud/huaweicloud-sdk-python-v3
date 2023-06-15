@@ -39,7 +39,7 @@ class UpdateProxySessionConsistenceRequest:
         :type x_language: str
         :param instance_id: 租户在某一project下的实例ID。
         :type instance_id: str
-        :param proxy_id: 租户在某一instance下的数据库代理id。
+        :param proxy_id: 租户在某一instance下的数据库代理ID。
         :type proxy_id: str
         :param body: Body of the UpdateProxySessionConsistenceRequest
         :type body: :class:`huaweicloudsdkgaussdb.v3.ModifyProxyConsistRequest`
@@ -108,7 +108,7 @@ class UpdateProxySessionConsistenceRequest:
     def proxy_id(self):
         """Gets the proxy_id of this UpdateProxySessionConsistenceRequest.
 
-        租户在某一instance下的数据库代理id。
+        租户在某一instance下的数据库代理ID。
 
         :return: The proxy_id of this UpdateProxySessionConsistenceRequest.
         :rtype: str
@@ -119,7 +119,7 @@ class UpdateProxySessionConsistenceRequest:
     def proxy_id(self, proxy_id):
         """Sets the proxy_id of this UpdateProxySessionConsistenceRequest.
 
-        租户在某一instance下的数据库代理id。
+        租户在某一instance下的数据库代理ID。
 
         :param proxy_id: The proxy_id of this UpdateProxySessionConsistenceRequest.
         :type proxy_id: str

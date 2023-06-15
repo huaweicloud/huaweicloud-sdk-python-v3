@@ -41,7 +41,7 @@ class ListHostRequest:
         :type enterprise_project_id: str
         :param page: 分页查询时，返回第几页数据。默认值为1，表示返回第1页数据。
         :type page: int
-        :param pagesize: 分页查询时，每页包含多少条结果。范围1-100，默认值为10，表示每页包含10条结果。
+        :param pagesize: 分页查询时，每页包含多少条结果。范围1-100，默认值为10，表示每页包含10条结果。如果需要一次查全部域名，该参数值填-1。
         :type pagesize: int
         :param hostname: 要查询的防护域名，用于查询指定防护域名信息；可不传，查询用户云模式下所有防护域名
         :type hostname: str
@@ -117,7 +117,7 @@ class ListHostRequest:
     def pagesize(self):
         """Gets the pagesize of this ListHostRequest.
 
-        分页查询时，每页包含多少条结果。范围1-100，默认值为10，表示每页包含10条结果。
+        分页查询时，每页包含多少条结果。范围1-100，默认值为10，表示每页包含10条结果。如果需要一次查全部域名，该参数值填-1。
 
         :return: The pagesize of this ListHostRequest.
         :rtype: int
@@ -128,7 +128,7 @@ class ListHostRequest:
     def pagesize(self, pagesize):
         """Sets the pagesize of this ListHostRequest.
 
-        分页查询时，每页包含多少条结果。范围1-100，默认值为10，表示每页包含10条结果。
+        分页查询时，每页包含多少条结果。范围1-100，默认值为10，表示每页包含10条结果。如果需要一次查全部域名，该参数值填-1。
 
         :param pagesize: The pagesize of this ListHostRequest.
         :type pagesize: int

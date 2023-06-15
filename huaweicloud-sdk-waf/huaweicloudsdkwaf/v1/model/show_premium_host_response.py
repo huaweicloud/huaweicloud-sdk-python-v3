@@ -42,6 +42,7 @@ class ShowPremiumHostResponse(SdkResponse):
         'block_page': 'BlockPage',
         'traffic_mark': 'TrafficMark',
         'timeout_config': 'TimeoutConfig',
+        'forward_header_map': 'dict(str, str)',
         'access_progress': 'list[AccessProgress]'
     }
 
@@ -70,10 +71,11 @@ class ShowPremiumHostResponse(SdkResponse):
         'block_page': 'block_page',
         'traffic_mark': 'traffic_mark',
         'timeout_config': 'timeout_config',
+        'forward_header_map': 'forward_header_map',
         'access_progress': 'access_progress'
     }
 
-    def __init__(self, id=None, hostname=None, protocol=None, server=None, proxy=None, locked=None, timestamp=None, tls=None, cipher=None, extend=None, flag=None, description=None, policyid=None, domainid=None, projectid=None, enterprise_project_id=None, certificateid=None, certificatename=None, protect_status=None, access_status=None, web_tag=None, block_page=None, traffic_mark=None, timeout_config=None, access_progress=None):
+    def __init__(self, id=None, hostname=None, protocol=None, server=None, proxy=None, locked=None, timestamp=None, tls=None, cipher=None, extend=None, flag=None, description=None, policyid=None, domainid=None, projectid=None, enterprise_project_id=None, certificateid=None, certificatename=None, protect_status=None, access_status=None, web_tag=None, block_page=None, traffic_mark=None, timeout_config=None, forward_header_map=None, access_progress=None):
         """ShowPremiumHostResponse
 
         The model defined in huaweicloud sdk
@@ -126,6 +128,8 @@ class ShowPremiumHostResponse(SdkResponse):
         :type traffic_mark: :class:`huaweicloudsdkwaf.v1.TrafficMark`
         :param timeout_config: 
         :type timeout_config: :class:`huaweicloudsdkwaf.v1.TimeoutConfig`
+        :param forward_header_map: 字段转发配置，WAF会将添加的字段插到header中，转给源站；Key不能跟nginx原生字段重复。Value支持的值包括:   - $time_local   - $request_id   - $connection_requests   - $tenant_id   - $project_id   - $remote_addr   - $remote_port   - $scheme   - $request_method   - $http_host   -$origin_uri   - $request_length   - $ssl_server_name   - $ssl_protocol   - $ssl_curves   - $ssl_session_reused
+        :type forward_header_map: dict(str, str)
         :param access_progress: 接入进度，仅用于新版console(前端)使用
         :type access_progress: list[:class:`huaweicloudsdkwaf.v1.AccessProgress`]
         """
@@ -156,6 +160,7 @@ class ShowPremiumHostResponse(SdkResponse):
         self._block_page = None
         self._traffic_mark = None
         self._timeout_config = None
+        self._forward_header_map = None
         self._access_progress = None
         self.discriminator = None
 
@@ -207,6 +212,8 @@ class ShowPremiumHostResponse(SdkResponse):
             self.traffic_mark = traffic_mark
         if timeout_config is not None:
             self.timeout_config = timeout_config
+        if forward_header_map is not None:
+            self.forward_header_map = forward_header_map
         if access_progress is not None:
             self.access_progress = access_progress
 
@@ -721,6 +728,28 @@ class ShowPremiumHostResponse(SdkResponse):
         :type timeout_config: :class:`huaweicloudsdkwaf.v1.TimeoutConfig`
         """
         self._timeout_config = timeout_config
+
+    @property
+    def forward_header_map(self):
+        """Gets the forward_header_map of this ShowPremiumHostResponse.
+
+        字段转发配置，WAF会将添加的字段插到header中，转给源站；Key不能跟nginx原生字段重复。Value支持的值包括:   - $time_local   - $request_id   - $connection_requests   - $tenant_id   - $project_id   - $remote_addr   - $remote_port   - $scheme   - $request_method   - $http_host   -$origin_uri   - $request_length   - $ssl_server_name   - $ssl_protocol   - $ssl_curves   - $ssl_session_reused
+
+        :return: The forward_header_map of this ShowPremiumHostResponse.
+        :rtype: dict(str, str)
+        """
+        return self._forward_header_map
+
+    @forward_header_map.setter
+    def forward_header_map(self, forward_header_map):
+        """Sets the forward_header_map of this ShowPremiumHostResponse.
+
+        字段转发配置，WAF会将添加的字段插到header中，转给源站；Key不能跟nginx原生字段重复。Value支持的值包括:   - $time_local   - $request_id   - $connection_requests   - $tenant_id   - $project_id   - $remote_addr   - $remote_port   - $scheme   - $request_method   - $http_host   -$origin_uri   - $request_length   - $ssl_server_name   - $ssl_protocol   - $ssl_curves   - $ssl_session_reused
+
+        :param forward_header_map: The forward_header_map of this ShowPremiumHostResponse.
+        :type forward_header_map: dict(str, str)
+        """
+        self._forward_header_map = forward_header_map
 
     @property
     def access_progress(self):

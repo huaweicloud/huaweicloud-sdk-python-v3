@@ -31,7 +31,7 @@ class AccessProgress:
 
         The model defined in huaweicloud sdk
 
-        :param step: 步骤   - 1: 指回源IP加白   - 2: 指本地验证   - 指修改DNS解析
+        :param step: 步骤   - 1: 指回源IP加白   - 2: 指本地验证   - 3：指修改DNS解析
         :type step: int
         :param status: 状态，0：未完成这个步骤；1：已完成这个状态”
         :type status: int
@@ -52,7 +52,7 @@ class AccessProgress:
     def step(self):
         """Gets the step of this AccessProgress.
 
-        步骤   - 1: 指回源IP加白   - 2: 指本地验证   - 指修改DNS解析
+        步骤   - 1: 指回源IP加白   - 2: 指本地验证   - 3：指修改DNS解析
 
         :return: The step of this AccessProgress.
         :rtype: int
@@ -63,7 +63,7 @@ class AccessProgress:
     def step(self, step):
         """Sets the step of this AccessProgress.
 
-        步骤   - 1: 指回源IP加白   - 2: 指本地验证   - 指修改DNS解析
+        步骤   - 1: 指回源IP加白   - 2: 指本地验证   - 3：指修改DNS解析
 
         :param step: The step of this AccessProgress.
         :type step: int

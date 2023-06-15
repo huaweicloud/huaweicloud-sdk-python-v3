@@ -35,7 +35,7 @@ class CreateGaussMySqlDatabase:
 
         The model defined in huaweicloud sdk
 
-        :param name: 数据库名称,数据库名称长度可在1～64个字符之间，由字母、数字、下划线组成，且不能包含其他特殊字符。
+        :param name: 数据库名称,数据库名称长度可在1～64个字符之间，由字母、数字、下划线、中划线组成，中划线的累计总长度小于等于10个字符，且不能包含其他特殊字符。
         :type name: str
         :param comment: 数据库备注,长度不能超过512个字符，不能包含回车和特殊字符!&lt;\&quot;&#x3D;&#39;&gt;&amp;。
         :type comment: str
@@ -64,7 +64,7 @@ class CreateGaussMySqlDatabase:
     def name(self):
         """Gets the name of this CreateGaussMySqlDatabase.
 
-        数据库名称,数据库名称长度可在1～64个字符之间，由字母、数字、下划线组成，且不能包含其他特殊字符。
+        数据库名称,数据库名称长度可在1～64个字符之间，由字母、数字、下划线、中划线组成，中划线的累计总长度小于等于10个字符，且不能包含其他特殊字符。
 
         :return: The name of this CreateGaussMySqlDatabase.
         :rtype: str
@@ -75,7 +75,7 @@ class CreateGaussMySqlDatabase:
     def name(self, name):
         """Sets the name of this CreateGaussMySqlDatabase.
 
-        数据库名称,数据库名称长度可在1～64个字符之间，由字母、数字、下划线组成，且不能包含其他特殊字符。
+        数据库名称,数据库名称长度可在1～64个字符之间，由字母、数字、下划线、中划线组成，中划线的累计总长度小于等于10个字符，且不能包含其他特殊字符。
 
         :param name: The name of this CreateGaussMySqlDatabase.
         :type name: str

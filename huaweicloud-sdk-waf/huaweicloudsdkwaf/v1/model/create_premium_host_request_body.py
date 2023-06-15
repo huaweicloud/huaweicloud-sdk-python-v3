@@ -24,6 +24,7 @@ class CreatePremiumHostRequestBody:
         'policyid': 'str',
         'server': 'list[PremiumWafServer]',
         'block_page': 'BlockPage',
+        'forward_header_map': 'dict(str, str)',
         'description': 'str'
     }
 
@@ -35,10 +36,11 @@ class CreatePremiumHostRequestBody:
         'policyid': 'policyid',
         'server': 'server',
         'block_page': 'block_page',
+        'forward_header_map': 'forward_header_map',
         'description': 'description'
     }
 
-    def __init__(self, certificateid=None, certificatename=None, hostname=None, proxy=None, policyid=None, server=None, block_page=None, description=None):
+    def __init__(self, certificateid=None, certificatename=None, hostname=None, proxy=None, policyid=None, server=None, block_page=None, forward_header_map=None, description=None):
         """CreatePremiumHostRequestBody
 
         The model defined in huaweicloud sdk
@@ -57,6 +59,8 @@ class CreatePremiumHostRequestBody:
         :type server: list[:class:`huaweicloudsdkwaf.v1.PremiumWafServer`]
         :param block_page: 
         :type block_page: :class:`huaweicloudsdkwaf.v1.BlockPage`
+        :param forward_header_map: 字段转发配置，WAF会将添加的字段插到header中，转给源站；Key不能跟nginx原生字段重复。Value支持的值包括:   - $time_local   - $request_id   - $connection_requests   - $tenant_id   - $project_id   - $remote_addr   - $remote_port   - $scheme   - $request_method   - $http_host   -$origin_uri   - $request_length   - $ssl_server_name   - $ssl_protocol   - $ssl_curves   - $ssl_session_reused
+        :type forward_header_map: dict(str, str)
         :param description: 防护域名备注
         :type description: str
         """
@@ -70,6 +74,7 @@ class CreatePremiumHostRequestBody:
         self._policyid = None
         self._server = None
         self._block_page = None
+        self._forward_header_map = None
         self._description = None
         self.discriminator = None
 
@@ -84,6 +89,8 @@ class CreatePremiumHostRequestBody:
         self.server = server
         if block_page is not None:
             self.block_page = block_page
+        if forward_header_map is not None:
+            self.forward_header_map = forward_header_map
         if description is not None:
             self.description = description
 
@@ -236,6 +243,28 @@ class CreatePremiumHostRequestBody:
         :type block_page: :class:`huaweicloudsdkwaf.v1.BlockPage`
         """
         self._block_page = block_page
+
+    @property
+    def forward_header_map(self):
+        """Gets the forward_header_map of this CreatePremiumHostRequestBody.
+
+        字段转发配置，WAF会将添加的字段插到header中，转给源站；Key不能跟nginx原生字段重复。Value支持的值包括:   - $time_local   - $request_id   - $connection_requests   - $tenant_id   - $project_id   - $remote_addr   - $remote_port   - $scheme   - $request_method   - $http_host   -$origin_uri   - $request_length   - $ssl_server_name   - $ssl_protocol   - $ssl_curves   - $ssl_session_reused
+
+        :return: The forward_header_map of this CreatePremiumHostRequestBody.
+        :rtype: dict(str, str)
+        """
+        return self._forward_header_map
+
+    @forward_header_map.setter
+    def forward_header_map(self, forward_header_map):
+        """Sets the forward_header_map of this CreatePremiumHostRequestBody.
+
+        字段转发配置，WAF会将添加的字段插到header中，转给源站；Key不能跟nginx原生字段重复。Value支持的值包括:   - $time_local   - $request_id   - $connection_requests   - $tenant_id   - $project_id   - $remote_addr   - $remote_port   - $scheme   - $request_method   - $http_host   -$origin_uri   - $request_length   - $ssl_server_name   - $ssl_protocol   - $ssl_curves   - $ssl_session_reused
+
+        :param forward_header_map: The forward_header_map of this CreatePremiumHostRequestBody.
+        :type forward_header_map: dict(str, str)
+        """
+        self._forward_header_map = forward_header_map
 
     @property
     def description(self):

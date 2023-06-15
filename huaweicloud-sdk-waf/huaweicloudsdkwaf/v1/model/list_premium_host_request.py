@@ -43,7 +43,7 @@ class ListPremiumHostRequest:
         :type enterprise_project_id: str
         :param page: 分页查询时，返回第几页数据。默认值为1，表示返回第1页数据。
         :type page: str
-        :param pagesize: 分页查询时，每页包含多少条结果。范围1-100，默认值为10，表示每页包含10条结果。
+        :param pagesize: 分页查询时，每页包含多少条结果。范围1-100，默认值为10，表示每页包含10条结果。如果需要一次查全部域名，该参数值填-1。
         :type pagesize: str
         :param hostname: 域名
         :type hostname: str
@@ -124,7 +124,7 @@ class ListPremiumHostRequest:
     def pagesize(self):
         """Gets the pagesize of this ListPremiumHostRequest.
 
-        分页查询时，每页包含多少条结果。范围1-100，默认值为10，表示每页包含10条结果。
+        分页查询时，每页包含多少条结果。范围1-100，默认值为10，表示每页包含10条结果。如果需要一次查全部域名，该参数值填-1。
 
         :return: The pagesize of this ListPremiumHostRequest.
         :rtype: str
@@ -135,7 +135,7 @@ class ListPremiumHostRequest:
     def pagesize(self, pagesize):
         """Sets the pagesize of this ListPremiumHostRequest.
 
-        分页查询时，每页包含多少条结果。范围1-100，默认值为10，表示每页包含10条结果。
+        分页查询时，每页包含多少条结果。范围1-100，默认值为10，表示每页包含10条结果。如果需要一次查全部域名，该参数值填-1。
 
         :param pagesize: The pagesize of this ListPremiumHostRequest.
         :type pagesize: str

@@ -35,7 +35,7 @@ class InvokeGaussMySqlInstanceSwitchOverRequest:
 
         :param x_language: 语言。
         :type x_language: str
-        :param instance_id: 租户在某一project下的实例ID
+        :param instance_id: 租户在某一project下的实例ID。
         :type instance_id: str
         :param body: Body of the InvokeGaussMySqlInstanceSwitchOverRequest
         :type body: :class:`huaweicloudsdkgaussdb.v3.TaurusSwitchoverRequest`
@@ -80,7 +80,7 @@ class InvokeGaussMySqlInstanceSwitchOverRequest:
     def instance_id(self):
         """Gets the instance_id of this InvokeGaussMySqlInstanceSwitchOverRequest.
 
-        租户在某一project下的实例ID
+        租户在某一project下的实例ID。
 
         :return: The instance_id of this InvokeGaussMySqlInstanceSwitchOverRequest.
         :rtype: str
@@ -91,7 +91,7 @@ class InvokeGaussMySqlInstanceSwitchOverRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this InvokeGaussMySqlInstanceSwitchOverRequest.
 
-        租户在某一project下的实例ID
+        租户在某一project下的实例ID。
 
         :param instance_id: The instance_id of this InvokeGaussMySqlInstanceSwitchOverRequest.
         :type instance_id: str

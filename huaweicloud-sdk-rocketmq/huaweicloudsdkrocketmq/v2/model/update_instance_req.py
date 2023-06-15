@@ -43,13 +43,13 @@ class UpdateInstanceReq:
         :type name: str
         :param description: 实例的描述信息。  长度不超过1024的字符串。  &gt; \\与\&quot;在json报文中属于特殊字符，如果参数值中需要显示\\或者\&quot;字符，请在字符前增加转义字符\\，比如\\\\或者\\\&quot;。
         :type description: str
-        :param security_group_id: 安全组ID。
+        :param security_group_id: 安全组ID。  获取方法如下：登录虚拟私有云服务的控制台界面，在安全组的详情页面查找安全组ID。
         :type security_group_id: str
         :param enable_acl: ACL访问控制。
         :type enable_acl: bool
         :param enable_publicip: 是否开启公网。
         :type enable_publicip: bool
-        :param publicip_id: 实例绑定的弹性IP地址的ID。 以英文逗号隔开多个弹性IP地址的ID。 如果开启了公网访问功能（即enable_publicip为true），该字段为必选。
+        :param publicip_id: 实例绑定的弹性IP地址的ID。  以英文逗号隔开多个弹性IP地址的ID。  如果开启了公网访问功能（即enable_publicip为true），该字段为必选。
         :type publicip_id: str
         """
         
@@ -124,7 +124,7 @@ class UpdateInstanceReq:
     def security_group_id(self):
         """Gets the security_group_id of this UpdateInstanceReq.
 
-        安全组ID。
+        安全组ID。  获取方法如下：登录虚拟私有云服务的控制台界面，在安全组的详情页面查找安全组ID。
 
         :return: The security_group_id of this UpdateInstanceReq.
         :rtype: str
@@ -135,7 +135,7 @@ class UpdateInstanceReq:
     def security_group_id(self, security_group_id):
         """Sets the security_group_id of this UpdateInstanceReq.
 
-        安全组ID。
+        安全组ID。  获取方法如下：登录虚拟私有云服务的控制台界面，在安全组的详情页面查找安全组ID。
 
         :param security_group_id: The security_group_id of this UpdateInstanceReq.
         :type security_group_id: str
@@ -190,7 +190,7 @@ class UpdateInstanceReq:
     def publicip_id(self):
         """Gets the publicip_id of this UpdateInstanceReq.
 
-        实例绑定的弹性IP地址的ID。 以英文逗号隔开多个弹性IP地址的ID。 如果开启了公网访问功能（即enable_publicip为true），该字段为必选。
+        实例绑定的弹性IP地址的ID。  以英文逗号隔开多个弹性IP地址的ID。  如果开启了公网访问功能（即enable_publicip为true），该字段为必选。
 
         :return: The publicip_id of this UpdateInstanceReq.
         :rtype: str
@@ -201,7 +201,7 @@ class UpdateInstanceReq:
     def publicip_id(self, publicip_id):
         """Sets the publicip_id of this UpdateInstanceReq.
 
-        实例绑定的弹性IP地址的ID。 以英文逗号隔开多个弹性IP地址的ID。 如果开启了公网访问功能（即enable_publicip为true），该字段为必选。
+        实例绑定的弹性IP地址的ID。  以英文逗号隔开多个弹性IP地址的ID。  如果开启了公网访问功能（即enable_publicip为true），该字段为必选。
 
         :param publicip_id: The publicip_id of this UpdateInstanceReq.
         :type publicip_id: str

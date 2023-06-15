@@ -43,7 +43,7 @@ class CreateRocketMqMigrationTaskRequest:
         :type overwrite: str
         :param name: 迁移任务名称，名称规则参考创建实例
         :type name: str
-        :param type: 迁移任务类型，分为自建RocketMQ上云(rocketmq)、自建RabbitMQ上云(rabbitToRocket)、自建Kafka上云(kafka)
+        :param type: 迁移任务类型，分为自建RocketMQ上云(rocketmq)、自建RabbitMQ上云(rabbitToRocket)
         :type type: str
         :param body: Body of the CreateRocketMqMigrationTaskRequest
         :type body: str
@@ -135,7 +135,7 @@ class CreateRocketMqMigrationTaskRequest:
     def type(self):
         """Gets the type of this CreateRocketMqMigrationTaskRequest.
 
-        迁移任务类型，分为自建RocketMQ上云(rocketmq)、自建RabbitMQ上云(rabbitToRocket)、自建Kafka上云(kafka)
+        迁移任务类型，分为自建RocketMQ上云(rocketmq)、自建RabbitMQ上云(rabbitToRocket)
 
         :return: The type of this CreateRocketMqMigrationTaskRequest.
         :rtype: str
@@ -146,7 +146,7 @@ class CreateRocketMqMigrationTaskRequest:
     def type(self, type):
         """Sets the type of this CreateRocketMqMigrationTaskRequest.
 
-        迁移任务类型，分为自建RocketMQ上云(rocketmq)、自建RabbitMQ上云(rabbitToRocket)、自建Kafka上云(kafka)
+        迁移任务类型，分为自建RocketMQ上云(rocketmq)、自建RabbitMQ上云(rabbitToRocket)
 
         :param type: The type of this CreateRocketMqMigrationTaskRequest.
         :type type: str

@@ -31,7 +31,7 @@ class ShowGaussMySqlJobInfoRequest:
 
         The model defined in huaweicloud sdk
 
-        :param x_language: 语言
+        :param x_language: 语言。
         :type x_language: str
         :param id: 任务ID。
         :type id: str
@@ -51,7 +51,7 @@ class ShowGaussMySqlJobInfoRequest:
     def x_language(self):
         """Gets the x_language of this ShowGaussMySqlJobInfoRequest.
 
-        语言
+        语言。
 
         :return: The x_language of this ShowGaussMySqlJobInfoRequest.
         :rtype: str
@@ -62,7 +62,7 @@ class ShowGaussMySqlJobInfoRequest:
     def x_language(self, x_language):
         """Sets the x_language of this ShowGaussMySqlJobInfoRequest.
 
-        语言
+        语言。
 
         :param x_language: The x_language of this ShowGaussMySqlJobInfoRequest.
         :type x_language: str

@@ -47,7 +47,7 @@ class LtsLogErrorQueryRequest:
         :type end_time: str
         :param limit: 查询记录数。
         :type limit: int
-        :param line_num: 日志单行序列号，据此进行查询时的偏移。
+        :param line_num: 日志单行序列号，第一次查询时不需要此参数,后续分页查询时需要使用,可从上次查询的返回信息中获取。
         :type line_num: str
         :param level: 日志级别，默认为ALL。  取值范围： - ALL - INFO - LOG - WARNING - ERROR - FATAL - PANIC - NOTE
         :type level: str
@@ -164,7 +164,7 @@ class LtsLogErrorQueryRequest:
     def line_num(self):
         """Gets the line_num of this LtsLogErrorQueryRequest.
 
-        日志单行序列号，据此进行查询时的偏移。
+        日志单行序列号，第一次查询时不需要此参数,后续分页查询时需要使用,可从上次查询的返回信息中获取。
 
         :return: The line_num of this LtsLogErrorQueryRequest.
         :rtype: str
@@ -175,7 +175,7 @@ class LtsLogErrorQueryRequest:
     def line_num(self, line_num):
         """Sets the line_num of this LtsLogErrorQueryRequest.
 
-        日志单行序列号，据此进行查询时的偏移。
+        日志单行序列号，第一次查询时不需要此参数,后续分页查询时需要使用,可从上次查询的返回信息中获取。
 
         :param line_num: The line_num of this LtsLogErrorQueryRequest.
         :type line_num: str

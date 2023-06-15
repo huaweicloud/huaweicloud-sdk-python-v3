@@ -39,7 +39,7 @@ class PropertyFilter:
 
         :param path: **参数说明**：设备属性的路径信息，格式：service_id/DataProperty，例如门磁状态为“DoorWindow/status”。
         :type path: str
-        :param operator: **参数说明**：数据比较的操作符。 **取值范围**：当前支持的操作符有：&gt;，&lt;，&gt;&#x3D;，&lt;&#x3D;，&#x3D;,in:表示在指定值中匹配和between:表示数值区间。
+        :param operator: **参数说明**：数据比较的操作符。 **取值范围**：当前支持的操作符有：&gt;，&lt;，&gt;&#x3D;，&lt;&#x3D;，&#x3D;，in:表示在指定值中匹配和between:表示数值区间。
         :type operator: str
         :param value: **参数说明**：数据比较表达式的右值。与数据比较操作符between联用时，右值表示最小值和最大值，用逗号隔开，如“20,30”表示大于等于20小于30。
         :type value: str
@@ -93,7 +93,7 @@ class PropertyFilter:
     def operator(self):
         """Gets the operator of this PropertyFilter.
 
-        **参数说明**：数据比较的操作符。 **取值范围**：当前支持的操作符有：>，<，>=，<=，=,in:表示在指定值中匹配和between:表示数值区间。
+        **参数说明**：数据比较的操作符。 **取值范围**：当前支持的操作符有：>，<，>=，<=，=，in:表示在指定值中匹配和between:表示数值区间。
 
         :return: The operator of this PropertyFilter.
         :rtype: str
@@ -104,7 +104,7 @@ class PropertyFilter:
     def operator(self, operator):
         """Sets the operator of this PropertyFilter.
 
-        **参数说明**：数据比较的操作符。 **取值范围**：当前支持的操作符有：>，<，>=，<=，=,in:表示在指定值中匹配和between:表示数值区间。
+        **参数说明**：数据比较的操作符。 **取值范围**：当前支持的操作符有：>，<，>=，<=，=，in:表示在指定值中匹配和between:表示数值区间。
 
         :param operator: The operator of this PropertyFilter.
         :type operator: str

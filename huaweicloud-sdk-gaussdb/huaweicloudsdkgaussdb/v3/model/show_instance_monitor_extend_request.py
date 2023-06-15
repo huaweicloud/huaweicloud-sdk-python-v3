@@ -31,9 +31,9 @@ class ShowInstanceMonitorExtendRequest:
 
         The model defined in huaweicloud sdk
 
-        :param x_language: 语言
+        :param x_language: 语言。
         :type x_language: str
-        :param instance_id: 实例ID
+        :param instance_id: 实例ID。
         :type instance_id: str
         """
         
@@ -51,7 +51,7 @@ class ShowInstanceMonitorExtendRequest:
     def x_language(self):
         """Gets the x_language of this ShowInstanceMonitorExtendRequest.
 
-        语言
+        语言。
 
         :return: The x_language of this ShowInstanceMonitorExtendRequest.
         :rtype: str
@@ -62,7 +62,7 @@ class ShowInstanceMonitorExtendRequest:
     def x_language(self, x_language):
         """Sets the x_language of this ShowInstanceMonitorExtendRequest.
 
-        语言
+        语言。
 
         :param x_language: The x_language of this ShowInstanceMonitorExtendRequest.
         :type x_language: str
@@ -73,7 +73,7 @@ class ShowInstanceMonitorExtendRequest:
     def instance_id(self):
         """Gets the instance_id of this ShowInstanceMonitorExtendRequest.
 
-        实例ID
+        实例ID。
 
         :return: The instance_id of this ShowInstanceMonitorExtendRequest.
         :rtype: str
@@ -84,7 +84,7 @@ class ShowInstanceMonitorExtendRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ShowInstanceMonitorExtendRequest.
 
-        实例ID
+        实例ID。
 
         :param instance_id: The instance_id of this ShowInstanceMonitorExtendRequest.
         :type instance_id: str

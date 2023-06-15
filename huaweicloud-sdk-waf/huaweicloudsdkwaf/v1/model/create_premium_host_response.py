@@ -36,7 +36,8 @@ class CreatePremiumHostResponse(SdkResponse):
         'enterprise_project_id': 'str',
         'protect_status': 'int',
         'access_status': 'int',
-        'block_page': 'BlockPage'
+        'block_page': 'BlockPage',
+        'forward_header_map': 'dict(str, str)'
     }
 
     attribute_map = {
@@ -58,10 +59,11 @@ class CreatePremiumHostResponse(SdkResponse):
         'enterprise_project_id': 'enterprise_project_id',
         'protect_status': 'protect_status',
         'access_status': 'access_status',
-        'block_page': 'block_page'
+        'block_page': 'block_page',
+        'forward_header_map': 'forward_header_map'
     }
 
-    def __init__(self, id=None, hostname=None, protocol=None, server=None, proxy=None, locked=None, timestamp=None, tls=None, cipher=None, extend=None, flag=None, description=None, policyid=None, domainid=None, projectid=None, enterprise_project_id=None, protect_status=None, access_status=None, block_page=None):
+    def __init__(self, id=None, hostname=None, protocol=None, server=None, proxy=None, locked=None, timestamp=None, tls=None, cipher=None, extend=None, flag=None, description=None, policyid=None, domainid=None, projectid=None, enterprise_project_id=None, protect_status=None, access_status=None, block_page=None, forward_header_map=None):
         """CreatePremiumHostResponse
 
         The model defined in huaweicloud sdk
@@ -104,6 +106,8 @@ class CreatePremiumHostResponse(SdkResponse):
         :type access_status: int
         :param block_page: 
         :type block_page: :class:`huaweicloudsdkwaf.v1.BlockPage`
+        :param forward_header_map: 字段转发配置，WAF会将添加的字段插到header中，转给源站；Key不能跟nginx原生字段重复。Value支持的值包括:   - $time_local   - $request_id   - $connection_requests   - $tenant_id   - $project_id   - $remote_addr   - $remote_port   - $scheme   - $request_method   - $http_host   -$origin_uri   - $request_length   - $ssl_server_name   - $ssl_protocol   - $ssl_curves   - $ssl_session_reused
+        :type forward_header_map: dict(str, str)
         """
         
         super(CreatePremiumHostResponse, self).__init__()
@@ -127,6 +131,7 @@ class CreatePremiumHostResponse(SdkResponse):
         self._protect_status = None
         self._access_status = None
         self._block_page = None
+        self._forward_header_map = None
         self.discriminator = None
 
         if id is not None:
@@ -167,6 +172,8 @@ class CreatePremiumHostResponse(SdkResponse):
             self.access_status = access_status
         if block_page is not None:
             self.block_page = block_page
+        if forward_header_map is not None:
+            self.forward_header_map = forward_header_map
 
     @property
     def id(self):
@@ -577,6 +584,28 @@ class CreatePremiumHostResponse(SdkResponse):
         :type block_page: :class:`huaweicloudsdkwaf.v1.BlockPage`
         """
         self._block_page = block_page
+
+    @property
+    def forward_header_map(self):
+        """Gets the forward_header_map of this CreatePremiumHostResponse.
+
+        字段转发配置，WAF会将添加的字段插到header中，转给源站；Key不能跟nginx原生字段重复。Value支持的值包括:   - $time_local   - $request_id   - $connection_requests   - $tenant_id   - $project_id   - $remote_addr   - $remote_port   - $scheme   - $request_method   - $http_host   -$origin_uri   - $request_length   - $ssl_server_name   - $ssl_protocol   - $ssl_curves   - $ssl_session_reused
+
+        :return: The forward_header_map of this CreatePremiumHostResponse.
+        :rtype: dict(str, str)
+        """
+        return self._forward_header_map
+
+    @forward_header_map.setter
+    def forward_header_map(self, forward_header_map):
+        """Sets the forward_header_map of this CreatePremiumHostResponse.
+
+        字段转发配置，WAF会将添加的字段插到header中，转给源站；Key不能跟nginx原生字段重复。Value支持的值包括:   - $time_local   - $request_id   - $connection_requests   - $tenant_id   - $project_id   - $remote_addr   - $remote_port   - $scheme   - $request_method   - $http_host   -$origin_uri   - $request_length   - $ssl_server_name   - $ssl_protocol   - $ssl_curves   - $ssl_session_reused
+
+        :param forward_header_map: The forward_header_map of this CreatePremiumHostResponse.
+        :type forward_header_map: dict(str, str)
+        """
+        self._forward_header_map = forward_header_map
 
     def to_dict(self):
         """Returns the model properties as a dict"""

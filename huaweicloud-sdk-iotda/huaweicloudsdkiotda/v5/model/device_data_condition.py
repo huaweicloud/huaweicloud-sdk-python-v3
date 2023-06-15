@@ -37,7 +37,7 @@ class DeviceDataCondition:
         :type device_id: str
         :param product_id: **参数说明**：设备关联的产品ID，用于唯一标识一个产品模型，创建产品后获得。方法请参见 [[创建产品](https://support.huaweicloud.com/api-iothub/iot_06_v5_0050.html)](tag:hws)[[创建产品](https://support.huaweicloud.com/intl/zh-cn/api-iothub/iot_06_v5_0050.html)](tag:hws_hk)。存在该参数且device_id为空时设备属性触发匹配该产品下所有设备触发，该参数值和device_id不能同时为空。
         :type product_id: str
-        :param filters: 数据过滤条件
+        :param filters: 数据过滤条件。
         :type filters: list[:class:`huaweicloudsdkiotda.v5.PropertyFilter`]
         """
         
@@ -103,7 +103,7 @@ class DeviceDataCondition:
     def filters(self):
         """Gets the filters of this DeviceDataCondition.
 
-        数据过滤条件
+        数据过滤条件。
 
         :return: The filters of this DeviceDataCondition.
         :rtype: list[:class:`huaweicloudsdkiotda.v5.PropertyFilter`]
@@ -114,7 +114,7 @@ class DeviceDataCondition:
     def filters(self, filters):
         """Sets the filters of this DeviceDataCondition.
 
-        数据过滤条件
+        数据过滤条件。
 
         :param filters: The filters of this DeviceDataCondition.
         :type filters: list[:class:`huaweicloudsdkiotda.v5.PropertyFilter`]

@@ -1,3 +1,173 @@
+# 3.1.44 2023-06-15
+
+### HuaweiCloud SDK CloudDeploy
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - `CloudDeploy` is renamed to `CodeArtsDeploy`
+
+### HuaweiCloud SDK CCM
+
+- _Features_
+  - Support the following interfaces：
+    - `BatchCreateCaTags`
+    - `BatchDeleteCaTags`
+    - `ListCaTags`
+    - `CreateCaTag`
+    - `ListDomainCaTags`
+    - `ListCaResourceInstances`
+    - `CountCaResourceInstances`
+    - `BatchCreateCertTags`
+    - `BatchDeleteCertTags`
+    - `ListCertTags`
+    - `CreateCertTag`
+    - `ListDomainCertTags`
+    - `ListCertResourceInstances`
+    - `CountCertResourceInstances`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK DWS
+
+- _Features_
+  - Support the following interfaces：
+    - `ShowDatabaseAuthority`
+    - `UpdateDatabaseAuthority`
+    - `SyncIamUsers`
+    - `ListDatabaseUsers`
+    - `ShowDatabaseUser`
+    - `UpdateDatabaseUserInfo`
+    - `ShowDisasterProgress`
+- _Bug Fix_
+  - None
+- _Change_
+  - **UpdateAlarmSub**
+    - changes of request param
+      - `* enable: string -> int32`
+    - changes of response param
+      - `* enable: string -> int32`
+  - **DeleteAlarmSub**
+    - changes of response param
+      - `* enable: string -> int32`
+  - **ShowDisasterDetail**
+    - changes of response param
+      - `+ disaster_recovery`
+      - `- start_time`
+      - `- dr_type`
+      - `- create_time`
+      - `- name`
+      - `- standby_cluster`
+      - `- id`
+      - `- dr_sync_period`
+      - `- status`
+      - `- primary_cluster`
+  - **CreateAlarmSub**
+    - changes of request param
+      - `* enable: string -> int32`
+    - changes of response param
+      - `* enable: string -> int32`
+  - **ListAlarmSubs**
+    - changes of response param
+      - `* alarm_subscriptions.enable: string -> int32`
+
+### HuaweiCloud SDK GaussDB
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the interfaces `ListGaussMySqlErrorLog`, `ListGaussMySqlSlowLog`
+
+### HuaweiCloud SDK IoTDA
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateBatchTask**
+    - changes of response param
+      - `- task_progress.device_in_progress`
+      - `- task_progress.rejected`
+  - **ListBatchTasks**
+    - changes of response param
+      - `- batchtasks.task_progress.device_in_progress`
+      - `- batchtasks.task_progress.rejected`
+  - **ShowBatchTask**
+    - changes of response param
+      - `- batchtask.task_progress.device_in_progress`
+      - `- batchtask.task_progress.rejected`
+
+### HuaweiCloud SDK MRS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListClusters**
+    - changes of response param
+      - `+ clusters.eipId`
+      - `+ clusters.eipAddress`
+      - `+ clusters.eipv6Address`
+  - **ShowClusterDetails**
+    - changes of response param
+      - `+ cluster.eipId`
+      - `+ cluster.eipAddress`
+      - `+ cluster.eipv6Address`
+
+### HuaweiCloud SDK OCR
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **RecognizeGeneralText**
+    - changes of request param
+      - `+ single_orientation_mode`
+
+### HuaweiCloud SDK RDS
+
+- _Features_
+  - Support the interface `ModifyCollation`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK RocketMQ
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **SendDlqMessage**
+    - changes of request param
+      - `+ engine: enum value [reliability]`
+  - **CreateRocketMqMigrationTask**
+    - changes of request param
+      - `+ type: enum value [kafka]`
+
+### HuaweiCloud SDK SIS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowVocabularies**
+    - changes of request param
+      - `+ offset`
+      - `+ limit`
+
 # 3.1.43 2023-06-08
 
 ### HuaweiCloud SDK iDME

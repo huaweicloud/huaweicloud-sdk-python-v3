@@ -1841,77 +1841,6 @@ class GaussDBAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-    def list_gauss_my_sql_error_log_async(self, request):
-        """查询数据库错误日志
-
-        查询数据库错误日志。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ListGaussMySqlErrorLog
-        :type request: :class:`huaweicloudsdkgaussdb.v3.ListGaussMySqlErrorLogRequest`
-        :rtype: :class:`huaweicloudsdkgaussdb.v3.ListGaussMySqlErrorLogResponse`
-        """
-        return self._list_gauss_my_sql_error_log_with_http_info(request)
-
-    def _list_gauss_my_sql_error_log_with_http_info(self, request):
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'instance_id' in local_var_params:
-            path_params['instance_id'] = local_var_params['instance_id']
-
-        query_params = []
-        if 'start_date' in local_var_params:
-            query_params.append(('start_date', local_var_params['start_date']))
-        if 'end_date' in local_var_params:
-            query_params.append(('end_date', local_var_params['end_date']))
-        if 'offset' in local_var_params:
-            query_params.append(('offset', local_var_params['offset']))
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-        if 'level' in local_var_params:
-            query_params.append(('level', local_var_params['level']))
-        if 'node_id' in local_var_params:
-            query_params.append(('node_id', local_var_params['node_id']))
-
-        header_params = {}
-        if 'x_language' in local_var_params:
-            header_params['X-Language'] = local_var_params['x_language']
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/errorlog',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListGaussMySqlErrorLogResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
     def list_gauss_my_sql_instance_detail_info_async(self, request):
         """批量查询实例详情
 
@@ -2047,77 +1976,6 @@ class GaussDBAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ListGaussMySqlInstancesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-    def list_gauss_my_sql_slow_log_async(self, request):
-        """查询数据库慢日志
-
-        查询数据库慢日志。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ListGaussMySqlSlowLog
-        :type request: :class:`huaweicloudsdkgaussdb.v3.ListGaussMySqlSlowLogRequest`
-        :rtype: :class:`huaweicloudsdkgaussdb.v3.ListGaussMySqlSlowLogResponse`
-        """
-        return self._list_gauss_my_sql_slow_log_with_http_info(request)
-
-    def _list_gauss_my_sql_slow_log_with_http_info(self, request):
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'instance_id' in local_var_params:
-            path_params['instance_id'] = local_var_params['instance_id']
-
-        query_params = []
-        if 'start_date' in local_var_params:
-            query_params.append(('start_date', local_var_params['start_date']))
-        if 'end_date' in local_var_params:
-            query_params.append(('end_date', local_var_params['end_date']))
-        if 'offset' in local_var_params:
-            query_params.append(('offset', local_var_params['offset']))
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-        if 'type' in local_var_params:
-            query_params.append(('type', local_var_params['type']))
-        if 'node_id' in local_var_params:
-            query_params.append(('node_id', local_var_params['node_id']))
-
-        header_params = {}
-        if 'x_language' in local_var_params:
-            header_params['X-Language'] = local_var_params['x_language']
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/slowlog',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListGaussMySqlSlowLogResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -3793,9 +3651,9 @@ class GaussDBAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def show_instance_monitor_extend_async(self, request):
-        """查询实例秒级监控频率
+        """查询实例秒级监控
 
-        查询实例秒级监控频率。
+        查询实例秒级监控信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -4765,9 +4623,9 @@ class GaussDBAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def update_instance_monitor_async(self, request):
-        """修改实例秒级监控频率
+        """设置实例秒级监控
 
-        打开/关闭/修改实例秒级监控。
+        设置实例秒级监控，包括1秒监控和5秒监控。
         
         Please refer to HUAWEI cloud API Explorer for details.
 

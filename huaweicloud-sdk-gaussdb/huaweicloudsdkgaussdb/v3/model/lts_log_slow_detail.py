@@ -67,7 +67,7 @@ class LtsLogSlowDetail:
         :type rows_examined: str
         :param database: 所属数据库。
         :type database: str
-        :param users: 账号。
+        :param users: 帐号。
         :type users: str
         :param query_sample: 执行语法。
         :type query_sample: str
@@ -283,7 +283,7 @@ class LtsLogSlowDetail:
     def users(self):
         """Gets the users of this LtsLogSlowDetail.
 
-        账号。
+        帐号。
 
         :return: The users of this LtsLogSlowDetail.
         :rtype: str
@@ -294,7 +294,7 @@ class LtsLogSlowDetail:
     def users(self, users):
         """Sets the users of this LtsLogSlowDetail.
 
-        账号。
+        帐号。
 
         :param users: The users of this LtsLogSlowDetail.
         :type users: str

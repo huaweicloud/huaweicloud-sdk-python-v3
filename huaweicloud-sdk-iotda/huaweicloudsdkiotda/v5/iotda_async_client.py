@@ -861,7 +861,7 @@ class IoTDAAsyncClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/{project_id}/batchtasks/{task_id}/retry',
+            resource_path='/v5/iot/{project_id}/batchtasks/{task_id}/retry',
             method='POST',
             path_params=path_params,
             query_params=query_params,
@@ -991,7 +991,7 @@ class IoTDAAsyncClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/{project_id}/batchtasks/{task_id}/stop',
+            resource_path='/v5/iot/{project_id}/batchtasks/{task_id}/stop',
             method='POST',
             path_params=path_params,
             query_params=query_params,
@@ -2485,11 +2485,11 @@ class IoTDAAsyncClient(Client):
         | 字段名      | 类型   | 说明             | 取值范围                                                     |
         | :---------- | :----- | :--------------- | :----------------------------------------------------------- |
         | app_id      | string | 资源空间ID       | 长度不超过36，只允许字母、数字、下划线（_）、连接符（-）的组合。 |
-        | device_id   | string | 设备ID           | 长度不超过128，只允许字母、数字、下划线（_）、连接符（-）的组合，建议不少于4个字符。 |
+        | device_id   | string | 设备ID           | 长度不超过128，只允许字母、数字、下划线（_）、连接符（-）的组合。 |
         | gateway_id  | string | 网关ID           | 长度不超过128，只允许字母、数字、下划线（_）、连接符（-）的组合。 |
         | product_id  | string | 设备关联的产品ID | 长度不超过36，只允许字母、数字、下划线（_）、连接符（-）的组合。 |
-        | device_name | string | 设备名称         | 长度不超过256，只允许中文、字母、数字、以及_?&#39;#().,&amp;%@!-等字符的组合，建议不少于4个字符。 |
-        | node_id     | string | 设备标识码       | 长度不超过64，只允许字母、数字、下划线（_）、连接符（-）的组合，建议不少于4个字符 |
+        | device_name | string | 设备名称         | 长度不超过256，只允许中文、字母、数字、以及_?&#39;#().,&amp;%@!-等字符的组合符。 |
+        | node_id     | string | 设备标识码       | 长度不超过64，只允许字母、数字、下划线（_）、连接符（-）的组合 |
         | status      | string | 设备的状态       | ONLINE(在线)、OFFLINE(离线)、ABNORMAL(异常)、INACTIVE(未激活)、FROZEN(冻结) |
         | node_type   | string | 设备节点类型     | GATEWAY(直连设备或网关)、ENDPOINT(非直连设备)                |
         | tag_key     | string | 标签键           | 长度不超过64，只允许中文、字母、数字、以及_.-等字符的组合。  |

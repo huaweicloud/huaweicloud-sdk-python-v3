@@ -30,7 +30,7 @@ class UpdateGaussMySqlDatabaseCommentResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param job_id: 修改数据库备注的任务id。
+        :param job_id: 修改数据库备注的任务ID。
         :type job_id: str
         """
         
@@ -46,7 +46,7 @@ class UpdateGaussMySqlDatabaseCommentResponse(SdkResponse):
     def job_id(self):
         """Gets the job_id of this UpdateGaussMySqlDatabaseCommentResponse.
 
-        修改数据库备注的任务id。
+        修改数据库备注的任务ID。
 
         :return: The job_id of this UpdateGaussMySqlDatabaseCommentResponse.
         :rtype: str
@@ -57,7 +57,7 @@ class UpdateGaussMySqlDatabaseCommentResponse(SdkResponse):
     def job_id(self, job_id):
         """Sets the job_id of this UpdateGaussMySqlDatabaseCommentResponse.
 
-        修改数据库备注的任务id。
+        修改数据库备注的任务ID。
 
         :param job_id: The job_id of this UpdateGaussMySqlDatabaseCommentResponse.
         :type job_id: str

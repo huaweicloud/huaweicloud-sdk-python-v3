@@ -63,7 +63,7 @@ class MysqlProxyV3:
 
         The model defined in huaweicloud sdk
 
-        :param pool_id: Proxy实例id。
+        :param pool_id: Proxy实例ID。
         :type pool_id: str
         :param status: Proxy实例开启状态。  取值: - “ACTIVE”，表示数据库代理正常； - “FAILED”，表示数据库代理创建失败； - “DELETED”，表示数据库代理已删除； - “ABNORMAL”，表示数据库代理异常； - “ENABLING PROXY”，表示数据库代理正在开启； - “DISABLING PROXY”，表示数据库代理正在关闭； - “ADDING PROXY NODE”，表示数据库代理正在扩容； - “DELETING READ REPLICAS FROM PROXY”，表示数据库代理正在移除只读节点； - “ADDING READ REPLICAS TO PROXY”，表示数据库代理正在添加只读节点； - “CHANGING WEIGHTS”，表示数据库代理正在修改只读节点权重。
         :type status: str
@@ -95,9 +95,9 @@ class MysqlProxyV3:
         :type name: str
         :param transaction_split: Proxy事务拆分开关状态【ON/OFF】。
         :type transaction_split: str
-        :param connection_pool_type: 连接池类型。  取值范围: - CLOSED 不使用连接池; - SESSION 使用会话级连接池。
+        :param connection_pool_type: 连接池类型。  取值范围: - CLOSED: 关闭连接池。 - SESSION: 开启会话级连接池。
         :type connection_pool_type: str
-        :param switch_connection_pool_type_enabled: 数据库代理版本是否支持会话级连接池。  取值范围: - true 支持; - false 不支持。
+        :param switch_connection_pool_type_enabled: 数据库代理版本是否支持会话级连接池。  取值范围: - true: 支持。 - false: 不支持。
         :type switch_connection_pool_type_enabled: bool
         """
         
@@ -164,7 +164,7 @@ class MysqlProxyV3:
     def pool_id(self):
         """Gets the pool_id of this MysqlProxyV3.
 
-        Proxy实例id。
+        Proxy实例ID。
 
         :return: The pool_id of this MysqlProxyV3.
         :rtype: str
@@ -175,7 +175,7 @@ class MysqlProxyV3:
     def pool_id(self, pool_id):
         """Sets the pool_id of this MysqlProxyV3.
 
-        Proxy实例id。
+        Proxy实例ID。
 
         :param pool_id: The pool_id of this MysqlProxyV3.
         :type pool_id: str
@@ -516,7 +516,7 @@ class MysqlProxyV3:
     def connection_pool_type(self):
         """Gets the connection_pool_type of this MysqlProxyV3.
 
-        连接池类型。  取值范围: - CLOSED 不使用连接池; - SESSION 使用会话级连接池。
+        连接池类型。  取值范围: - CLOSED: 关闭连接池。 - SESSION: 开启会话级连接池。
 
         :return: The connection_pool_type of this MysqlProxyV3.
         :rtype: str
@@ -527,7 +527,7 @@ class MysqlProxyV3:
     def connection_pool_type(self, connection_pool_type):
         """Sets the connection_pool_type of this MysqlProxyV3.
 
-        连接池类型。  取值范围: - CLOSED 不使用连接池; - SESSION 使用会话级连接池。
+        连接池类型。  取值范围: - CLOSED: 关闭连接池。 - SESSION: 开启会话级连接池。
 
         :param connection_pool_type: The connection_pool_type of this MysqlProxyV3.
         :type connection_pool_type: str
@@ -538,7 +538,7 @@ class MysqlProxyV3:
     def switch_connection_pool_type_enabled(self):
         """Gets the switch_connection_pool_type_enabled of this MysqlProxyV3.
 
-        数据库代理版本是否支持会话级连接池。  取值范围: - true 支持; - false 不支持。
+        数据库代理版本是否支持会话级连接池。  取值范围: - true: 支持。 - false: 不支持。
 
         :return: The switch_connection_pool_type_enabled of this MysqlProxyV3.
         :rtype: bool
@@ -549,7 +549,7 @@ class MysqlProxyV3:
     def switch_connection_pool_type_enabled(self, switch_connection_pool_type_enabled):
         """Sets the switch_connection_pool_type_enabled of this MysqlProxyV3.
 
-        数据库代理版本是否支持会话级连接池。  取值范围: - true 支持; - false 不支持。
+        数据库代理版本是否支持会话级连接池。  取值范围: - true: 支持。 - false: 不支持。
 
         :param switch_connection_pool_type_enabled: The switch_connection_pool_type_enabled of this MysqlProxyV3.
         :type switch_connection_pool_type_enabled: bool

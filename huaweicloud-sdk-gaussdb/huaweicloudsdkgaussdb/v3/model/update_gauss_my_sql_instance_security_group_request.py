@@ -35,7 +35,7 @@ class UpdateGaussMySqlInstanceSecurityGroupRequest:
 
         :param x_language: 语言。
         :type x_language: str
-        :param instance_id: 租户在某一project下的实例ID
+        :param instance_id: 租户在某一project下的实例ID。
         :type instance_id: str
         :param body: Body of the UpdateGaussMySqlInstanceSecurityGroupRequest
         :type body: :class:`huaweicloudsdkgaussdb.v3.ModifySecurityGroupRequest`
@@ -80,7 +80,7 @@ class UpdateGaussMySqlInstanceSecurityGroupRequest:
     def instance_id(self):
         """Gets the instance_id of this UpdateGaussMySqlInstanceSecurityGroupRequest.
 
-        租户在某一project下的实例ID
+        租户在某一project下的实例ID。
 
         :return: The instance_id of this UpdateGaussMySqlInstanceSecurityGroupRequest.
         :rtype: str
@@ -91,7 +91,7 @@ class UpdateGaussMySqlInstanceSecurityGroupRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this UpdateGaussMySqlInstanceSecurityGroupRequest.
 
-        租户在某一project下的实例ID
+        租户在某一project下的实例ID。
 
         :param instance_id: The instance_id of this UpdateGaussMySqlInstanceSecurityGroupRequest.
         :type instance_id: str

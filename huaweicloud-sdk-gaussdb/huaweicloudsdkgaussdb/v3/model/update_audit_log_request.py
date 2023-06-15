@@ -33,9 +33,9 @@ class UpdateAuditLogRequest:
 
         The model defined in huaweicloud sdk
 
-        :param x_language: 语言
+        :param x_language: 语言。
         :type x_language: str
-        :param instance_id: 实例ID
+        :param instance_id: 实例ID。
         :type instance_id: str
         :param body: Body of the UpdateAuditLogRequest
         :type body: :class:`huaweicloudsdkgaussdb.v3.OperateAuditLogRequestV3Body`
@@ -58,7 +58,7 @@ class UpdateAuditLogRequest:
     def x_language(self):
         """Gets the x_language of this UpdateAuditLogRequest.
 
-        语言
+        语言。
 
         :return: The x_language of this UpdateAuditLogRequest.
         :rtype: str
@@ -69,7 +69,7 @@ class UpdateAuditLogRequest:
     def x_language(self, x_language):
         """Sets the x_language of this UpdateAuditLogRequest.
 
-        语言
+        语言。
 
         :param x_language: The x_language of this UpdateAuditLogRequest.
         :type x_language: str
@@ -80,7 +80,7 @@ class UpdateAuditLogRequest:
     def instance_id(self):
         """Gets the instance_id of this UpdateAuditLogRequest.
 
-        实例ID
+        实例ID。
 
         :return: The instance_id of this UpdateAuditLogRequest.
         :rtype: str
@@ -91,7 +91,7 @@ class UpdateAuditLogRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this UpdateAuditLogRequest.
 
-        实例ID
+        实例ID。
 
         :param instance_id: The instance_id of this UpdateAuditLogRequest.
         :type instance_id: str

@@ -3083,6 +3083,63 @@ class DwsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_database_users_async(self, request):
+        """查询所有数据库用户/角色
+
+        查询所有数据库用户/角色
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListDatabaseUsers
+        :type request: :class:`huaweicloudsdkdws.v2.ListDatabaseUsersRequest`
+        :rtype: :class:`huaweicloudsdkdws.v2.ListDatabaseUsersResponse`
+        """
+        return self._list_database_users_with_http_info(request)
+
+    def _list_database_users_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/clusters/{cluster_id}/db-manager/users',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListDatabaseUsersResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_disaster_recover_async(self, request):
         """查询容灾列表
 
@@ -4660,6 +4717,133 @@ class DwsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def show_database_authority_async(self, request):
+        """查询数据库对象权限
+
+        查询数据库对象权限
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowDatabaseAuthority
+        :type request: :class:`huaweicloudsdkdws.v2.ShowDatabaseAuthorityRequest`
+        :rtype: :class:`huaweicloudsdkdws.v2.ShowDatabaseAuthorityResponse`
+        """
+        return self._show_database_authority_with_http_info(request)
+
+    def _show_database_authority_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+            collection_formats['name'] = 'csv'
+        if 'database' in local_var_params:
+            query_params.append(('database', local_var_params['database']))
+        if 'schema' in local_var_params:
+            query_params.append(('schema', local_var_params['schema']))
+        if 'table' in local_var_params:
+            query_params.append(('table', local_var_params['table']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/clusters/{cluster_id}/db-manager/authority',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowDatabaseAuthorityResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_database_user_async(self, request):
+        """查询指定用户信息
+
+        查询指定用户信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowDatabaseUser
+        :type request: :class:`huaweicloudsdkdws.v2.ShowDatabaseUserRequest`
+        :rtype: :class:`huaweicloudsdkdws.v2.ShowDatabaseUserResponse`
+        """
+        return self._show_database_user_with_http_info(request)
+
+    def _show_database_user_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+        if 'name' in local_var_params:
+            path_params['name'] = local_var_params['name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/clusters/{cluster_id}/db-manager/users/{name}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowDatabaseUserResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def show_disaster_detail_async(self, request):
         """查询容灾详情
 
@@ -4712,6 +4896,63 @@ class DwsAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ShowDisasterDetailResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_disaster_progress_async(self, request):
+        """容灾-查询容灾进度详情
+
+        容灾-查询容灾进度详情
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowDisasterProgress
+        :type request: :class:`huaweicloudsdkdws.v2.ShowDisasterProgressRequest`
+        :rtype: :class:`huaweicloudsdkdws.v2.ShowDisasterProgressResponse`
+        """
+        return self._show_disaster_progress_with_http_info(request)
+
+    def _show_disaster_progress_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'disaster_recovery_id' in local_var_params:
+            path_params['disaster_recovery_id'] = local_var_params['disaster_recovery_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/disaster-recovery/{disaster_recovery_id}/show-progress',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowDisasterProgressResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -5006,6 +5247,63 @@ class DwsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def sync_iam_users_async(self, request):
+        """同步IAM用户到数据库
+
+        同步IAM用户到数据库
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for SyncIamUsers
+        :type request: :class:`huaweicloudsdkdws.v2.SyncIamUsersRequest`
+        :rtype: :class:`huaweicloudsdkdws.v2.SyncIamUsersResponse`
+        """
+        return self._sync_iam_users_with_http_info(request)
+
+    def _sync_iam_users_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/clusters/{cluster_id}/db-manager/sync-iam-user',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='SyncIamUsersResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def update_alarm_sub_async(self, request):
         """更新告警订阅
 
@@ -5241,6 +5539,126 @@ class DwsAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='UpdateDataSourceResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_database_authority_async(self, request):
+        """修改数据库对象权限
+
+        修改数据库对象权限
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateDatabaseAuthority
+        :type request: :class:`huaweicloudsdkdws.v2.UpdateDatabaseAuthorityRequest`
+        :rtype: :class:`huaweicloudsdkdws.v2.UpdateDatabaseAuthorityResponse`
+        """
+        return self._update_database_authority_with_http_info(request)
+
+    def _update_database_authority_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/clusters/{cluster_id}/db-manager/authority',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateDatabaseAuthorityResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_database_user_info_async(self, request):
+        """修改指定用户信息
+
+        修改指定用户信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateDatabaseUserInfo
+        :type request: :class:`huaweicloudsdkdws.v2.UpdateDatabaseUserInfoRequest`
+        :rtype: :class:`huaweicloudsdkdws.v2.UpdateDatabaseUserInfoResponse`
+        """
+        return self._update_database_user_info_with_http_info(request)
+
+    def _update_database_user_info_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+        if 'name' in local_var_params:
+            path_params['name'] = local_var_params['name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/clusters/{cluster_id}/db-manager/users/{name}',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateDatabaseUserInfoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

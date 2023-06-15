@@ -43,7 +43,7 @@ class ShowGaussMySqlBackupListRequest:
 
         The model defined in huaweicloud sdk
 
-        :param x_language: 语言
+        :param x_language: 语言。
         :type x_language: str
         :param instance_id: 实例ID。
         :type instance_id: str
@@ -94,7 +94,7 @@ class ShowGaussMySqlBackupListRequest:
     def x_language(self):
         """Gets the x_language of this ShowGaussMySqlBackupListRequest.
 
-        语言
+        语言。
 
         :return: The x_language of this ShowGaussMySqlBackupListRequest.
         :rtype: str
@@ -105,7 +105,7 @@ class ShowGaussMySqlBackupListRequest:
     def x_language(self, x_language):
         """Sets the x_language of this ShowGaussMySqlBackupListRequest.
 
-        语言
+        语言。
 
         :param x_language: The x_language of this ShowGaussMySqlBackupListRequest.
         :type x_language: str

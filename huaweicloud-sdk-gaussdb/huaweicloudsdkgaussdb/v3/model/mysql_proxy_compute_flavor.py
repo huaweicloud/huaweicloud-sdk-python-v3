@@ -45,7 +45,7 @@ class MysqlProxyComputeFlavor:
         :type ram: str
         :param db_type: 数据库类型。
         :type db_type: str
-        :param id: Proxy规格id。
+        :param id: Proxy规格ID。
         :type id: str
         :param spec_code: Proxy规格码。
         :type spec_code: str
@@ -140,7 +140,7 @@ class MysqlProxyComputeFlavor:
     def id(self):
         """Gets the id of this MysqlProxyComputeFlavor.
 
-        Proxy规格id。
+        Proxy规格ID。
 
         :return: The id of this MysqlProxyComputeFlavor.
         :rtype: str
@@ -151,7 +151,7 @@ class MysqlProxyComputeFlavor:
     def id(self, id):
         """Sets the id of this MysqlProxyComputeFlavor.
 
-        Proxy规格id。
+        Proxy规格ID。
 
         :param id: The id of this MysqlProxyComputeFlavor.
         :type id: str

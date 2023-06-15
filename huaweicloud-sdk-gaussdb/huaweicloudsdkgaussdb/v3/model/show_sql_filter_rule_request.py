@@ -39,7 +39,7 @@ class ShowSqlFilterRuleRequest:
         :type x_language: str
         :param instance_id: 实例ID。
         :type instance_id: str
-        :param node_id: 节点id。
+        :param node_id: 节点ID。
         :type node_id: str
         :param type: SQL限流类型，取值为SELECT、UPDATE、DELETE，不区分大小写；若不传则默认查询所有类型的限流规则。
         :type type: str
@@ -108,7 +108,7 @@ class ShowSqlFilterRuleRequest:
     def node_id(self):
         """Gets the node_id of this ShowSqlFilterRuleRequest.
 
-        节点id。
+        节点ID。
 
         :return: The node_id of this ShowSqlFilterRuleRequest.
         :rtype: str
@@ -119,7 +119,7 @@ class ShowSqlFilterRuleRequest:
     def node_id(self, node_id):
         """Sets the node_id of this ShowSqlFilterRuleRequest.
 
-        节点id。
+        节点ID。
 
         :param node_id: The node_id of this ShowSqlFilterRuleRequest.
         :type node_id: str

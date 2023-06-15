@@ -29,7 +29,7 @@ class CloseMysqlProxyRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param proxy_ids: 数据库代理id列表。  如果实例只开启了一个代理，可不传该字段；如果实例开启了多个代理，则必须指定要关闭的代理。
+        :param proxy_ids: 数据库代理ID列表。  如果实例只开启了一个代理，可不传该字段；如果实例开启了多个代理，则必须指定要关闭的代理。
         :type proxy_ids: list[str]
         """
         
@@ -45,7 +45,7 @@ class CloseMysqlProxyRequestBody:
     def proxy_ids(self):
         """Gets the proxy_ids of this CloseMysqlProxyRequestBody.
 
-        数据库代理id列表。  如果实例只开启了一个代理，可不传该字段；如果实例开启了多个代理，则必须指定要关闭的代理。
+        数据库代理ID列表。  如果实例只开启了一个代理，可不传该字段；如果实例开启了多个代理，则必须指定要关闭的代理。
 
         :return: The proxy_ids of this CloseMysqlProxyRequestBody.
         :rtype: list[str]
@@ -56,7 +56,7 @@ class CloseMysqlProxyRequestBody:
     def proxy_ids(self, proxy_ids):
         """Sets the proxy_ids of this CloseMysqlProxyRequestBody.
 
-        数据库代理id列表。  如果实例只开启了一个代理，可不传该字段；如果实例开启了多个代理，则必须指定要关闭的代理。
+        数据库代理ID列表。  如果实例只开启了一个代理，可不传该字段；如果实例开启了多个代理，则必须指定要关闭的代理。
 
         :param proxy_ids: The proxy_ids of this CloseMysqlProxyRequestBody.
         :type proxy_ids: list[str]

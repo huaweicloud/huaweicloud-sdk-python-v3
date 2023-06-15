@@ -34,7 +34,7 @@ class ShowInstanceMonitorExtendResponse(SdkResponse):
 
         :param monitor_switch: 实例秒级监控开关。  - true，表示开启。 - false，表示关闭。
         :type monitor_switch: bool
-        :param period: 采集周期，仅在monitor_switch为true时返回。 - 1：采集周期为1s。 - 5：采集周期为5s。
+        :param period: 采集周期，仅在monitor_switch为true时返回。  - 1：采集周期为1s。 - 5：采集周期为5s。
         :type period: int
         """
         
@@ -75,7 +75,7 @@ class ShowInstanceMonitorExtendResponse(SdkResponse):
     def period(self):
         """Gets the period of this ShowInstanceMonitorExtendResponse.
 
-        采集周期，仅在monitor_switch为true时返回。 - 1：采集周期为1s。 - 5：采集周期为5s。
+        采集周期，仅在monitor_switch为true时返回。  - 1：采集周期为1s。 - 5：采集周期为5s。
 
         :return: The period of this ShowInstanceMonitorExtendResponse.
         :rtype: int
@@ -86,7 +86,7 @@ class ShowInstanceMonitorExtendResponse(SdkResponse):
     def period(self, period):
         """Sets the period of this ShowInstanceMonitorExtendResponse.
 
-        采集周期，仅在monitor_switch为true时返回。 - 1：采集周期为1s。 - 5：采集周期为5s。
+        采集周期，仅在monitor_switch为true时返回。  - 1：采集周期为1s。 - 5：采集周期为5s。
 
         :param period: The period of this ShowInstanceMonitorExtendResponse.
         :type period: int

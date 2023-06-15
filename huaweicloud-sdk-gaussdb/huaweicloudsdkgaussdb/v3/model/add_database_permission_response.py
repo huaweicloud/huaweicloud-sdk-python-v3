@@ -30,7 +30,7 @@ class AddDatabasePermissionResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param job_id: 授予用户权限的任务id。
+        :param job_id: 授予用户权限的任务ID。
         :type job_id: str
         """
         
@@ -46,7 +46,7 @@ class AddDatabasePermissionResponse(SdkResponse):
     def job_id(self):
         """Gets the job_id of this AddDatabasePermissionResponse.
 
-        授予用户权限的任务id。
+        授予用户权限的任务ID。
 
         :return: The job_id of this AddDatabasePermissionResponse.
         :rtype: str
@@ -57,7 +57,7 @@ class AddDatabasePermissionResponse(SdkResponse):
     def job_id(self, job_id):
         """Sets the job_id of this AddDatabasePermissionResponse.
 
-        授予用户权限的任务id。
+        授予用户权限的任务ID。
 
         :param job_id: The job_id of this AddDatabasePermissionResponse.
         :type job_id: str

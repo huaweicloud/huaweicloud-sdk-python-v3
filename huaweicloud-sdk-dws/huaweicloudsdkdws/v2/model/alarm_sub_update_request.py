@@ -18,7 +18,7 @@ class AlarmSubUpdateRequest:
 
     openapi_types = {
         'name': 'str',
-        'enable': 'str',
+        'enable': 'int',
         'alarm_level': 'str',
         'notification_target': 'str',
         'notification_target_name': 'str',
@@ -42,7 +42,7 @@ class AlarmSubUpdateRequest:
         :param name: 告警订阅名称
         :type name: str
         :param enable: 是否开启订阅
-        :type enable: str
+        :type enable: int
         :param alarm_level: 告警级别
         :type alarm_level: str
         :param notification_target: 消息主题地址
@@ -64,7 +64,8 @@ class AlarmSubUpdateRequest:
         self.discriminator = None
 
         self.name = name
-        self.enable = enable
+        if enable is not None:
+            self.enable = enable
         if alarm_level is not None:
             self.alarm_level = alarm_level
         self.notification_target = notification_target
@@ -100,7 +101,7 @@ class AlarmSubUpdateRequest:
         是否开启订阅
 
         :return: The enable of this AlarmSubUpdateRequest.
-        :rtype: str
+        :rtype: int
         """
         return self._enable
 
@@ -111,7 +112,7 @@ class AlarmSubUpdateRequest:
         是否开启订阅
 
         :param enable: The enable of this AlarmSubUpdateRequest.
-        :type enable: str
+        :type enable: int
         """
         self._enable = enable
 

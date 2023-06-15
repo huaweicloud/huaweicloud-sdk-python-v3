@@ -17,29 +17,87 @@ class ShowVocabulariesRequest:
     sensitive_list = []
 
     openapi_types = {
+        'offset': 'int',
+        'limit': 'int',
         'body': 'ShowVocabulariesParams'
     }
 
     attribute_map = {
+        'offset': 'offset',
+        'limit': 'limit',
         'body': 'body'
     }
 
-    def __init__(self, body=None):
+    def __init__(self, offset=None, limit=None, body=None):
         """ShowVocabulariesRequest
 
         The model defined in huaweicloud sdk
 
+        :param offset: 页码偏移量，表示从此页码偏移量开始查询，offset大于等于0。
+        :type offset: int
+        :param limit: 每页显示的条目数量。
+        :type limit: int
         :param body: Body of the ShowVocabulariesRequest
         :type body: :class:`huaweicloudsdksis.v1.ShowVocabulariesParams`
         """
         
         
 
+        self._offset = None
+        self._limit = None
         self._body = None
         self.discriminator = None
 
+        if offset is not None:
+            self.offset = offset
+        if limit is not None:
+            self.limit = limit
         if body is not None:
             self.body = body
+
+    @property
+    def offset(self):
+        """Gets the offset of this ShowVocabulariesRequest.
+
+        页码偏移量，表示从此页码偏移量开始查询，offset大于等于0。
+
+        :return: The offset of this ShowVocabulariesRequest.
+        :rtype: int
+        """
+        return self._offset
+
+    @offset.setter
+    def offset(self, offset):
+        """Sets the offset of this ShowVocabulariesRequest.
+
+        页码偏移量，表示从此页码偏移量开始查询，offset大于等于0。
+
+        :param offset: The offset of this ShowVocabulariesRequest.
+        :type offset: int
+        """
+        self._offset = offset
+
+    @property
+    def limit(self):
+        """Gets the limit of this ShowVocabulariesRequest.
+
+        每页显示的条目数量。
+
+        :return: The limit of this ShowVocabulariesRequest.
+        :rtype: int
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        """Sets the limit of this ShowVocabulariesRequest.
+
+        每页显示的条目数量。
+
+        :param limit: The limit of this ShowVocabulariesRequest.
+        :type limit: int
+        """
+        self._limit = limit
 
     @property
     def body(self):

@@ -29,7 +29,7 @@ class TextDetectionDataReq:
 
         The model defined in huaweicloud sdk
 
-        :param text: 待检测文本，编码格式为“utf-8”，限定2000个字符以内，文本长度超过2000个字符时，只检测前2000个字符。
+        :param text: 待检测文本，编码格式为“utf-8”，限定2000个字符以内，文本长度超过1500个字符时，只检测前1500个字符。
         :type text: str
         """
         
@@ -44,7 +44,7 @@ class TextDetectionDataReq:
     def text(self):
         """Gets the text of this TextDetectionDataReq.
 
-        待检测文本，编码格式为“utf-8”，限定2000个字符以内，文本长度超过2000个字符时，只检测前2000个字符。
+        待检测文本，编码格式为“utf-8”，限定2000个字符以内，文本长度超过1500个字符时，只检测前1500个字符。
 
         :return: The text of this TextDetectionDataReq.
         :rtype: str
@@ -55,7 +55,7 @@ class TextDetectionDataReq:
     def text(self, text):
         """Sets the text of this TextDetectionDataReq.
 
-        待检测文本，编码格式为“utf-8”，限定2000个字符以内，文本长度超过2000个字符时，只检测前2000个字符。
+        待检测文本，编码格式为“utf-8”，限定2000个字符以内，文本长度超过1500个字符时，只检测前1500个字符。
 
         :param text: The text of this TextDetectionDataReq.
         :type text: str

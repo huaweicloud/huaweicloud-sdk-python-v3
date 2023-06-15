@@ -33,7 +33,7 @@ class DeleteGaussMySqlReadonlyNodeRequest:
 
         The model defined in huaweicloud sdk
 
-        :param x_language: 语言
+        :param x_language: 语言。
         :type x_language: str
         :param instance_id: 实例ID，严格匹配UUID规则。
         :type instance_id: str
@@ -57,7 +57,7 @@ class DeleteGaussMySqlReadonlyNodeRequest:
     def x_language(self):
         """Gets the x_language of this DeleteGaussMySqlReadonlyNodeRequest.
 
-        语言
+        语言。
 
         :return: The x_language of this DeleteGaussMySqlReadonlyNodeRequest.
         :rtype: str
@@ -68,7 +68,7 @@ class DeleteGaussMySqlReadonlyNodeRequest:
     def x_language(self, x_language):
         """Sets the x_language of this DeleteGaussMySqlReadonlyNodeRequest.
 
-        语言
+        语言。
 
         :param x_language: The x_language of this DeleteGaussMySqlReadonlyNodeRequest.
         :type x_language: str

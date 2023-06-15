@@ -21,8 +21,8 @@ class MysqlInstanceListInfo:
         'name': 'str',
         'status': 'str',
         'private_ips': 'list[str]',
-        'readonly_private_ips': 'list[str]',
         'proxy_ips': 'list[str]',
+        'readonly_private_ips': 'list[str]',
         'public_ips': 'list[str]',
         'port': 'str',
         'type': 'str',
@@ -50,8 +50,8 @@ class MysqlInstanceListInfo:
         'name': 'name',
         'status': 'status',
         'private_ips': 'private_ips',
-        'readonly_private_ips': 'readonly_private_ips',
         'proxy_ips': 'proxy_ips',
+        'readonly_private_ips': 'readonly_private_ips',
         'public_ips': 'public_ips',
         'port': 'port',
         'type': 'type',
@@ -74,7 +74,7 @@ class MysqlInstanceListInfo:
         'tags': 'tags'
     }
 
-    def __init__(self, id=None, name=None, status=None, private_ips=None, readonly_private_ips=None, proxy_ips=None, public_ips=None, port=None, type=None, region=None, datastore=None, created=None, updated=None, db_user_name=None, vpc_id=None, subnet_id=None, security_group_id=None, flavor_ref=None, flavor_info=None, volume=None, backup_strategy=None, enterprise_project_id=None, time_zone=None, charge_info=None, dedicated_resource_id=None, tags=None):
+    def __init__(self, id=None, name=None, status=None, private_ips=None, proxy_ips=None, readonly_private_ips=None, public_ips=None, port=None, type=None, region=None, datastore=None, created=None, updated=None, db_user_name=None, vpc_id=None, subnet_id=None, security_group_id=None, flavor_ref=None, flavor_info=None, volume=None, backup_strategy=None, enterprise_project_id=None, time_zone=None, charge_info=None, dedicated_resource_id=None, tags=None):
         """MysqlInstanceListInfo
 
         The model defined in huaweicloud sdk
@@ -87,10 +87,10 @@ class MysqlInstanceListInfo:
         :type status: str
         :param private_ips: 实例写内网IP地址列表。弹性云服务器创建成功后该值存在，其他情况下为空字列表。
         :type private_ips: list[str]
-        :param readonly_private_ips: 实例读内网IP地址列表。弹性云服务器创建成功后该值存在，其他情况下为空列表。
-        :type readonly_private_ips: list[str]
         :param proxy_ips: 实例读写分离IP地址列表。GaussDB(for MySQL)实例开启代理成功后该值存在，其他情况下为空列表。
         :type proxy_ips: list[str]
+        :param readonly_private_ips: 实例读内网IP地址列表。弹性云服务器创建成功后该值存在，其他情况下为空列表。
+        :type readonly_private_ips: list[str]
         :param public_ips: 实例外网IP地址列表。
         :type public_ips: list[str]
         :param port: 数据库端口号。
@@ -139,8 +139,8 @@ class MysqlInstanceListInfo:
         self._name = None
         self._status = None
         self._private_ips = None
-        self._readonly_private_ips = None
         self._proxy_ips = None
+        self._readonly_private_ips = None
         self._public_ips = None
         self._port = None
         self._type = None
@@ -169,10 +169,10 @@ class MysqlInstanceListInfo:
             self.status = status
         if private_ips is not None:
             self.private_ips = private_ips
-        if readonly_private_ips is not None:
-            self.readonly_private_ips = readonly_private_ips
         if proxy_ips is not None:
             self.proxy_ips = proxy_ips
+        if readonly_private_ips is not None:
+            self.readonly_private_ips = readonly_private_ips
         if public_ips is not None:
             self.public_ips = public_ips
         if port is not None:
@@ -303,28 +303,6 @@ class MysqlInstanceListInfo:
         self._private_ips = private_ips
 
     @property
-    def readonly_private_ips(self):
-        """Gets the readonly_private_ips of this MysqlInstanceListInfo.
-
-        实例读内网IP地址列表。弹性云服务器创建成功后该值存在，其他情况下为空列表。
-
-        :return: The readonly_private_ips of this MysqlInstanceListInfo.
-        :rtype: list[str]
-        """
-        return self._readonly_private_ips
-
-    @readonly_private_ips.setter
-    def readonly_private_ips(self, readonly_private_ips):
-        """Sets the readonly_private_ips of this MysqlInstanceListInfo.
-
-        实例读内网IP地址列表。弹性云服务器创建成功后该值存在，其他情况下为空列表。
-
-        :param readonly_private_ips: The readonly_private_ips of this MysqlInstanceListInfo.
-        :type readonly_private_ips: list[str]
-        """
-        self._readonly_private_ips = readonly_private_ips
-
-    @property
     def proxy_ips(self):
         """Gets the proxy_ips of this MysqlInstanceListInfo.
 
@@ -345,6 +323,28 @@ class MysqlInstanceListInfo:
         :type proxy_ips: list[str]
         """
         self._proxy_ips = proxy_ips
+
+    @property
+    def readonly_private_ips(self):
+        """Gets the readonly_private_ips of this MysqlInstanceListInfo.
+
+        实例读内网IP地址列表。弹性云服务器创建成功后该值存在，其他情况下为空列表。
+
+        :return: The readonly_private_ips of this MysqlInstanceListInfo.
+        :rtype: list[str]
+        """
+        return self._readonly_private_ips
+
+    @readonly_private_ips.setter
+    def readonly_private_ips(self, readonly_private_ips):
+        """Sets the readonly_private_ips of this MysqlInstanceListInfo.
+
+        实例读内网IP地址列表。弹性云服务器创建成功后该值存在，其他情况下为空列表。
+
+        :param readonly_private_ips: The readonly_private_ips of this MysqlInstanceListInfo.
+        :type readonly_private_ips: list[str]
+        """
+        self._readonly_private_ips = readonly_private_ips
 
     @property
     def public_ips(self):

@@ -31,7 +31,7 @@ class DeleteGaussMySqlConfigurationRequest:
 
         The model defined in huaweicloud sdk
 
-        :param x_language: 语言
+        :param x_language: 语言。
         :type x_language: str
         :param configuration_id: 参数模板ID。
         :type configuration_id: str
@@ -51,7 +51,7 @@ class DeleteGaussMySqlConfigurationRequest:
     def x_language(self):
         """Gets the x_language of this DeleteGaussMySqlConfigurationRequest.
 
-        语言
+        语言。
 
         :return: The x_language of this DeleteGaussMySqlConfigurationRequest.
         :rtype: str
@@ -62,7 +62,7 @@ class DeleteGaussMySqlConfigurationRequest:
     def x_language(self, x_language):
         """Sets the x_language of this DeleteGaussMySqlConfigurationRequest.
 
-        语言
+        语言。
 
         :param x_language: The x_language of this DeleteGaussMySqlConfigurationRequest.
         :type x_language: str

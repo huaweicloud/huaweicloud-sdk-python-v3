@@ -45,7 +45,7 @@ class ListScheduleJobsRequest:
 
         :param x_language: 语言。
         :type x_language: str
-        :param offset: 索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0，必须为数字，不能为负数。
+        :param offset: 索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为1，必须为数字，不能为负数。
         :type offset: str
         :param limit: 查询记录数。默认为10
         :type limit: str
@@ -116,7 +116,7 @@ class ListScheduleJobsRequest:
     def offset(self):
         """Gets the offset of this ListScheduleJobsRequest.
 
-        索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0，必须为数字，不能为负数。
+        索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为1，必须为数字，不能为负数。
 
         :return: The offset of this ListScheduleJobsRequest.
         :rtype: str
@@ -127,7 +127,7 @@ class ListScheduleJobsRequest:
     def offset(self, offset):
         """Sets the offset of this ListScheduleJobsRequest.
 
-        索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0，必须为数字，不能为负数。
+        索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为1，必须为数字，不能为负数。
 
         :param offset: The offset of this ListScheduleJobsRequest.
         :type offset: str

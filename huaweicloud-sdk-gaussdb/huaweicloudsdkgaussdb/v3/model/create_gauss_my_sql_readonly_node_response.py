@@ -40,7 +40,7 @@ class CreateGaussMySqlReadonlyNodeResponse(SdkResponse):
         :type instance_id: str
         :param node_names: 节点名称列表。
         :type node_names: list[str]
-        :param job_id: 创建只读节点的任务id。  仅创建按需只读节点时会返回该参数。
+        :param job_id: 创建只读节点的任务ID。  仅创建按需只读节点时会返回该参数。
         :type job_id: str
         :param order_id: 订单号，创建包年包月只读节点时返回该参数。
         :type order_id: str
@@ -111,7 +111,7 @@ class CreateGaussMySqlReadonlyNodeResponse(SdkResponse):
     def job_id(self):
         """Gets the job_id of this CreateGaussMySqlReadonlyNodeResponse.
 
-        创建只读节点的任务id。  仅创建按需只读节点时会返回该参数。
+        创建只读节点的任务ID。  仅创建按需只读节点时会返回该参数。
 
         :return: The job_id of this CreateGaussMySqlReadonlyNodeResponse.
         :rtype: str
@@ -122,7 +122,7 @@ class CreateGaussMySqlReadonlyNodeResponse(SdkResponse):
     def job_id(self, job_id):
         """Sets the job_id of this CreateGaussMySqlReadonlyNodeResponse.
 
-        创建只读节点的任务id。  仅创建按需只读节点时会返回该参数。
+        创建只读节点的任务ID。  仅创建按需只读节点时会返回该参数。
 
         :param job_id: The job_id of this CreateGaussMySqlReadonlyNodeResponse.
         :type job_id: str

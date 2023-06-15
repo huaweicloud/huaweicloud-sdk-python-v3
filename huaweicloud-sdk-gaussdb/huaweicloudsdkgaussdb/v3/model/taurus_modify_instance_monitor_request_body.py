@@ -31,9 +31,9 @@ class TaurusModifyInstanceMonitorRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param monitor_switch: 实例秒级监控开关。为true时表示开启，为false时表示关闭。
+        :param monitor_switch: 实例秒级监控开关。  - true：开启 - false：关闭
         :type monitor_switch: bool
-        :param period: 采集周期，仅在monitor_switch为true时生效。默认为5s。monitor_switch为false时，不传该参数。  取值： 1：采集周期为1s。 5：采集周期为5s。
+        :param period: 采集周期，仅在monitor_switch为true时生效。默认为5s。monitor_switch为false时，不传该参数。取值：  - 1：采集周期为1s。 - 5：采集周期为5s。
         :type period: int
         """
         
@@ -51,7 +51,7 @@ class TaurusModifyInstanceMonitorRequestBody:
     def monitor_switch(self):
         """Gets the monitor_switch of this TaurusModifyInstanceMonitorRequestBody.
 
-        实例秒级监控开关。为true时表示开启，为false时表示关闭。
+        实例秒级监控开关。  - true：开启 - false：关闭
 
         :return: The monitor_switch of this TaurusModifyInstanceMonitorRequestBody.
         :rtype: bool
@@ -62,7 +62,7 @@ class TaurusModifyInstanceMonitorRequestBody:
     def monitor_switch(self, monitor_switch):
         """Sets the monitor_switch of this TaurusModifyInstanceMonitorRequestBody.
 
-        实例秒级监控开关。为true时表示开启，为false时表示关闭。
+        实例秒级监控开关。  - true：开启 - false：关闭
 
         :param monitor_switch: The monitor_switch of this TaurusModifyInstanceMonitorRequestBody.
         :type monitor_switch: bool
@@ -73,7 +73,7 @@ class TaurusModifyInstanceMonitorRequestBody:
     def period(self):
         """Gets the period of this TaurusModifyInstanceMonitorRequestBody.
 
-        采集周期，仅在monitor_switch为true时生效。默认为5s。monitor_switch为false时，不传该参数。  取值： 1：采集周期为1s。 5：采集周期为5s。
+        采集周期，仅在monitor_switch为true时生效。默认为5s。monitor_switch为false时，不传该参数。取值：  - 1：采集周期为1s。 - 5：采集周期为5s。
 
         :return: The period of this TaurusModifyInstanceMonitorRequestBody.
         :rtype: int
@@ -84,7 +84,7 @@ class TaurusModifyInstanceMonitorRequestBody:
     def period(self, period):
         """Sets the period of this TaurusModifyInstanceMonitorRequestBody.
 
-        采集周期，仅在monitor_switch为true时生效。默认为5s。monitor_switch为false时，不传该参数。  取值： 1：采集周期为1s。 5：采集周期为5s。
+        采集周期，仅在monitor_switch为true时生效。默认为5s。monitor_switch为false时，不传该参数。取值：  - 1：采集周期为1s。 - 5：采集周期为5s。
 
         :param period: The period of this TaurusModifyInstanceMonitorRequestBody.
         :type period: int

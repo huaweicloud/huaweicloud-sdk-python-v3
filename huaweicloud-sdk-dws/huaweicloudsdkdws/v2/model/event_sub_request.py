@@ -99,7 +99,8 @@ class EventSubRequest:
             self.severity = severity
         if tag is not None:
             self.tag = tag
-        self.enable = enable
+        if enable is not None:
+            self.enable = enable
         self.notification_target = notification_target
         self.notification_target_name = notification_target_name
         self.notification_target_type = notification_target_type

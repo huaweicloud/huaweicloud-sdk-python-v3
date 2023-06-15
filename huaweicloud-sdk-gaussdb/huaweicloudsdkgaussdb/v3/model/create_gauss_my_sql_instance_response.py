@@ -36,7 +36,7 @@ class CreateGaussMySqlInstanceResponse(SdkResponse):
 
         :param instance: 
         :type instance: :class:`huaweicloudsdkgaussdb.v3.MysqlInstanceResponse`
-        :param job_id: 实例创建的任务id。  仅创建按需实例时会返回该参数。
+        :param job_id: 实例创建的任务ID。  仅创建按需实例时会返回该参数。
         :type job_id: str
         :param order_id: 订单号，创建包年包月时返回该参数。
         :type order_id: str
@@ -78,7 +78,7 @@ class CreateGaussMySqlInstanceResponse(SdkResponse):
     def job_id(self):
         """Gets the job_id of this CreateGaussMySqlInstanceResponse.
 
-        实例创建的任务id。  仅创建按需实例时会返回该参数。
+        实例创建的任务ID。  仅创建按需实例时会返回该参数。
 
         :return: The job_id of this CreateGaussMySqlInstanceResponse.
         :rtype: str
@@ -89,7 +89,7 @@ class CreateGaussMySqlInstanceResponse(SdkResponse):
     def job_id(self, job_id):
         """Sets the job_id of this CreateGaussMySqlInstanceResponse.
 
-        实例创建的任务id。  仅创建按需实例时会返回该参数。
+        实例创建的任务ID。  仅创建按需实例时会返回该参数。
 
         :param job_id: The job_id of this CreateGaussMySqlInstanceResponse.
         :type job_id: str

@@ -30,7 +30,7 @@ class DeleteDatabasePermissionResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param job_id: 删除数据库用户的数据库权限任务id。
+        :param job_id: 删除数据库用户的数据库权限任务ID。
         :type job_id: str
         """
         
@@ -46,7 +46,7 @@ class DeleteDatabasePermissionResponse(SdkResponse):
     def job_id(self):
         """Gets the job_id of this DeleteDatabasePermissionResponse.
 
-        删除数据库用户的数据库权限任务id。
+        删除数据库用户的数据库权限任务ID。
 
         :return: The job_id of this DeleteDatabasePermissionResponse.
         :rtype: str
@@ -57,7 +57,7 @@ class DeleteDatabasePermissionResponse(SdkResponse):
     def job_id(self, job_id):
         """Sets the job_id of this DeleteDatabasePermissionResponse.
 
-        删除数据库用户的数据库权限任务id。
+        删除数据库用户的数据库权限任务ID。
 
         :param job_id: The job_id of this DeleteDatabasePermissionResponse.
         :type job_id: str

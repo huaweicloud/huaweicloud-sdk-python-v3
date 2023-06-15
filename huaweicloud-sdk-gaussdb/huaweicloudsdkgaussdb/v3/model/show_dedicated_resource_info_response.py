@@ -44,7 +44,7 @@ class ShowDedicatedResourceInfoResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param id: 专属资源池id。
+        :param id: 专属资源池ID。
         :type id: str
         :param name: 专属资源池名称。
         :type name: str
@@ -95,7 +95,7 @@ class ShowDedicatedResourceInfoResponse(SdkResponse):
     def id(self):
         """Gets the id of this ShowDedicatedResourceInfoResponse.
 
-        专属资源池id。
+        专属资源池ID。
 
         :return: The id of this ShowDedicatedResourceInfoResponse.
         :rtype: str
@@ -106,7 +106,7 @@ class ShowDedicatedResourceInfoResponse(SdkResponse):
     def id(self, id):
         """Sets the id of this ShowDedicatedResourceInfoResponse.
 
-        专属资源池id。
+        专属资源池ID。
 
         :param id: The id of this ShowDedicatedResourceInfoResponse.
         :type id: str

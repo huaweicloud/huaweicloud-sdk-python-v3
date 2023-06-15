@@ -47,7 +47,8 @@ class ShowHostResponse(SdkResponse):
         'description': 'str',
         'http2_enable': 'bool',
         'exclusive_ip': 'bool',
-        'access_progress': 'list[AccessProgress]'
+        'access_progress': 'list[AccessProgress]',
+        'forward_header_map': 'dict(str, str)'
     }
 
     attribute_map = {
@@ -80,10 +81,11 @@ class ShowHostResponse(SdkResponse):
         'description': 'description',
         'http2_enable': 'http2_enable',
         'exclusive_ip': 'exclusive_ip',
-        'access_progress': 'access_progress'
+        'access_progress': 'access_progress',
+        'forward_header_map': 'forward_header_map'
     }
 
-    def __init__(self, id=None, hostname=None, policyid=None, domainid=None, projectid=None, enterprise_project_id=None, protocol=None, server=None, proxy=None, protect_status=None, access_status=None, access_code=None, locked=None, timestamp=None, certificateid=None, certificatename=None, tls=None, cipher=None, block_page=None, extend=None, traffic_mark=None, circuit_breaker=None, lb_algorithm=None, timeout_config=None, web_tag=None, flag=None, description=None, http2_enable=None, exclusive_ip=None, access_progress=None):
+    def __init__(self, id=None, hostname=None, policyid=None, domainid=None, projectid=None, enterprise_project_id=None, protocol=None, server=None, proxy=None, protect_status=None, access_status=None, access_code=None, locked=None, timestamp=None, certificateid=None, certificatename=None, tls=None, cipher=None, block_page=None, extend=None, traffic_mark=None, circuit_breaker=None, lb_algorithm=None, timeout_config=None, web_tag=None, flag=None, description=None, http2_enable=None, exclusive_ip=None, access_progress=None, forward_header_map=None):
         """ShowHostResponse
 
         The model defined in huaweicloud sdk
@@ -148,6 +150,8 @@ class ShowHostResponse(SdkResponse):
         :type exclusive_ip: bool
         :param access_progress: 接入进度，仅用于新版console(前端)使用
         :type access_progress: list[:class:`huaweicloudsdkwaf.v1.AccessProgress`]
+        :param forward_header_map: 字段转发配置，WAF会将添加的字段插到header中，转给源站；Key不能跟nginx原生字段重复。Value支持的值包括:   - $time_local   - $request_id   - $connection_requests   - $tenant_id   - $project_id   - $remote_addr   - $remote_port   - $scheme   - $request_method   - $http_host   -$origin_uri   - $request_length   - $ssl_server_name   - $ssl_protocol   - $ssl_curves   - $ssl_session_reused
+        :type forward_header_map: dict(str, str)
         """
         
         super(ShowHostResponse, self).__init__()
@@ -182,6 +186,7 @@ class ShowHostResponse(SdkResponse):
         self._http2_enable = None
         self._exclusive_ip = None
         self._access_progress = None
+        self._forward_header_map = None
         self.discriminator = None
 
         if id is not None:
@@ -244,6 +249,8 @@ class ShowHostResponse(SdkResponse):
             self.exclusive_ip = exclusive_ip
         if access_progress is not None:
             self.access_progress = access_progress
+        if forward_header_map is not None:
+            self.forward_header_map = forward_header_map
 
     @property
     def id(self):
@@ -884,6 +891,28 @@ class ShowHostResponse(SdkResponse):
         :type access_progress: list[:class:`huaweicloudsdkwaf.v1.AccessProgress`]
         """
         self._access_progress = access_progress
+
+    @property
+    def forward_header_map(self):
+        """Gets the forward_header_map of this ShowHostResponse.
+
+        字段转发配置，WAF会将添加的字段插到header中，转给源站；Key不能跟nginx原生字段重复。Value支持的值包括:   - $time_local   - $request_id   - $connection_requests   - $tenant_id   - $project_id   - $remote_addr   - $remote_port   - $scheme   - $request_method   - $http_host   -$origin_uri   - $request_length   - $ssl_server_name   - $ssl_protocol   - $ssl_curves   - $ssl_session_reused
+
+        :return: The forward_header_map of this ShowHostResponse.
+        :rtype: dict(str, str)
+        """
+        return self._forward_header_map
+
+    @forward_header_map.setter
+    def forward_header_map(self, forward_header_map):
+        """Sets the forward_header_map of this ShowHostResponse.
+
+        字段转发配置，WAF会将添加的字段插到header中，转给源站；Key不能跟nginx原生字段重复。Value支持的值包括:   - $time_local   - $request_id   - $connection_requests   - $tenant_id   - $project_id   - $remote_addr   - $remote_port   - $scheme   - $request_method   - $http_host   -$origin_uri   - $request_length   - $ssl_server_name   - $ssl_protocol   - $ssl_curves   - $ssl_session_reused
+
+        :param forward_header_map: The forward_header_map of this ShowHostResponse.
+        :type forward_header_map: dict(str, str)
+        """
+        self._forward_header_map = forward_header_map
 
     def to_dict(self):
         """Returns the model properties as a dict"""

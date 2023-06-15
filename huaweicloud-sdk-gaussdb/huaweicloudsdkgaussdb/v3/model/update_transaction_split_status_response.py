@@ -30,7 +30,7 @@ class UpdateTransactionSplitStatusResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param job_id: 工作流id
+        :param job_id: 工作流ID
         :type job_id: str
         """
         
@@ -46,7 +46,7 @@ class UpdateTransactionSplitStatusResponse(SdkResponse):
     def job_id(self):
         """Gets the job_id of this UpdateTransactionSplitStatusResponse.
 
-        工作流id
+        工作流ID
 
         :return: The job_id of this UpdateTransactionSplitStatusResponse.
         :rtype: str
@@ -57,7 +57,7 @@ class UpdateTransactionSplitStatusResponse(SdkResponse):
     def job_id(self, job_id):
         """Sets the job_id of this UpdateTransactionSplitStatusResponse.
 
-        工作流id
+        工作流ID
 
         :param job_id: The job_id of this UpdateTransactionSplitStatusResponse.
         :type job_id: str

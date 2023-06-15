@@ -30,7 +30,7 @@ class UpdateInstanceMonitorResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param job_id: 修改秒级监控的任务流id
+        :param job_id: 修改秒级监控的任务流ID
         :type job_id: str
         """
         
@@ -46,7 +46,7 @@ class UpdateInstanceMonitorResponse(SdkResponse):
     def job_id(self):
         """Gets the job_id of this UpdateInstanceMonitorResponse.
 
-        修改秒级监控的任务流id
+        修改秒级监控的任务流ID
 
         :return: The job_id of this UpdateInstanceMonitorResponse.
         :rtype: str
@@ -57,7 +57,7 @@ class UpdateInstanceMonitorResponse(SdkResponse):
     def job_id(self, job_id):
         """Sets the job_id of this UpdateInstanceMonitorResponse.
 
-        修改秒级监控的任务流id
+        修改秒级监控的任务流ID
 
         :param job_id: The job_id of this UpdateInstanceMonitorResponse.
         :type job_id: str

@@ -35,9 +35,9 @@ class ListInstanceTagsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param x_language: 语言
+        :param x_language: 语言。
         :type x_language: str
-        :param instance_id: 实例ID
+        :param instance_id: 实例ID。
         :type instance_id: str
         :param offset: 索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
         :type offset: int
@@ -65,7 +65,7 @@ class ListInstanceTagsRequest:
     def x_language(self):
         """Gets the x_language of this ListInstanceTagsRequest.
 
-        语言
+        语言。
 
         :return: The x_language of this ListInstanceTagsRequest.
         :rtype: str
@@ -76,7 +76,7 @@ class ListInstanceTagsRequest:
     def x_language(self, x_language):
         """Sets the x_language of this ListInstanceTagsRequest.
 
-        语言
+        语言。
 
         :param x_language: The x_language of this ListInstanceTagsRequest.
         :type x_language: str
@@ -87,7 +87,7 @@ class ListInstanceTagsRequest:
     def instance_id(self):
         """Gets the instance_id of this ListInstanceTagsRequest.
 
-        实例ID
+        实例ID。
 
         :return: The instance_id of this ListInstanceTagsRequest.
         :rtype: str
@@ -98,7 +98,7 @@ class ListInstanceTagsRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ListInstanceTagsRequest.
 
-        实例ID
+        实例ID。
 
         :param instance_id: The instance_id of this ListInstanceTagsRequest.
         :type instance_id: str

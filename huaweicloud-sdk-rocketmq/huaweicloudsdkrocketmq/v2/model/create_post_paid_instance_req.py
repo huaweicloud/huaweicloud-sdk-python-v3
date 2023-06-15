@@ -73,13 +73,13 @@ class CreatePostPaidInstanceReq:
         :type engine_version: str
         :param storage_space: 存储空间。
         :type storage_space: int
-        :param vpc_id: 虚拟私有云ID。  获取方法如下： - 登录虚拟私有云服务的控制台界面，在虚拟私有云的详情页面查找VPC ID。
+        :param vpc_id: 虚拟私有云ID。  获取方法如下：登录虚拟私有云服务的控制台界面，在虚拟私有云的详情页面查找VPC ID。
         :type vpc_id: str
-        :param subnet_id: 子网信息。  获取方法如下： - 登录虚拟私有云服务的控制台界面，单击VPC下的子网，进入子网详情页面，查找网络ID。
+        :param subnet_id: 子网信息。  获取方法如下：登录虚拟私有云服务的控制台界面，单击VPC下的子网，进入子网详情页面，查找网络ID。
         :type subnet_id: str
-        :param security_group_id: 指定实例所属的安全组。  获取方法如下： - 登录虚拟私有云服务的控制台界面，在安全组的详情页面查找安全组ID。
+        :param security_group_id: 指定实例所属的安全组。  获取方法如下：登录虚拟私有云服务的控制台界面，在安全组的详情页面查找安全组ID。
         :type security_group_id: str
-        :param available_zones: 创建节点到指定且有资源的可用区ID。该参数不能为空数组或者数组的值为空， 请注意查看该可用区是否有资源。  创建RocketMQ实例，支持节点部署在1个或3个及3个以上的可用区。在为节点指定可用区时，用逗号分隔开。
+        :param available_zones: 创建节点到指定且有资源的可用区ID。请参考[查询可用区信息](ListAvailableZones.xml)获取可用区ID。 该参数不能为空数组或者数组的值为空， 请注意查看该可用区是否有资源。  创建RocketMQ实例，支持节点部署在1个或3个及3个以上的可用区。在为节点指定可用区时，用逗号分隔开。
         :type available_zones: list[str]
         :param product_id: RocketMQ实例规格。   - c6.4u8g.cluster：单个代理最大Topic数4000，单个代理最大消费组数4000   - c6.8u16g.cluster：单个代理最大Topic数8000，单个代理最大消费组数8000   - c6.12u24g.cluster：单个代理最大Topic数12000，单个代理最大消费组数12000   - c6.16u32g.cluster：单个代理最大Topic数16000，单个代理最大消费组数16000
         :type product_id: str
@@ -263,7 +263,7 @@ class CreatePostPaidInstanceReq:
     def vpc_id(self):
         """Gets the vpc_id of this CreatePostPaidInstanceReq.
 
-        虚拟私有云ID。  获取方法如下： - 登录虚拟私有云服务的控制台界面，在虚拟私有云的详情页面查找VPC ID。
+        虚拟私有云ID。  获取方法如下：登录虚拟私有云服务的控制台界面，在虚拟私有云的详情页面查找VPC ID。
 
         :return: The vpc_id of this CreatePostPaidInstanceReq.
         :rtype: str
@@ -274,7 +274,7 @@ class CreatePostPaidInstanceReq:
     def vpc_id(self, vpc_id):
         """Sets the vpc_id of this CreatePostPaidInstanceReq.
 
-        虚拟私有云ID。  获取方法如下： - 登录虚拟私有云服务的控制台界面，在虚拟私有云的详情页面查找VPC ID。
+        虚拟私有云ID。  获取方法如下：登录虚拟私有云服务的控制台界面，在虚拟私有云的详情页面查找VPC ID。
 
         :param vpc_id: The vpc_id of this CreatePostPaidInstanceReq.
         :type vpc_id: str
@@ -285,7 +285,7 @@ class CreatePostPaidInstanceReq:
     def subnet_id(self):
         """Gets the subnet_id of this CreatePostPaidInstanceReq.
 
-        子网信息。  获取方法如下： - 登录虚拟私有云服务的控制台界面，单击VPC下的子网，进入子网详情页面，查找网络ID。
+        子网信息。  获取方法如下：登录虚拟私有云服务的控制台界面，单击VPC下的子网，进入子网详情页面，查找网络ID。
 
         :return: The subnet_id of this CreatePostPaidInstanceReq.
         :rtype: str
@@ -296,7 +296,7 @@ class CreatePostPaidInstanceReq:
     def subnet_id(self, subnet_id):
         """Sets the subnet_id of this CreatePostPaidInstanceReq.
 
-        子网信息。  获取方法如下： - 登录虚拟私有云服务的控制台界面，单击VPC下的子网，进入子网详情页面，查找网络ID。
+        子网信息。  获取方法如下：登录虚拟私有云服务的控制台界面，单击VPC下的子网，进入子网详情页面，查找网络ID。
 
         :param subnet_id: The subnet_id of this CreatePostPaidInstanceReq.
         :type subnet_id: str
@@ -307,7 +307,7 @@ class CreatePostPaidInstanceReq:
     def security_group_id(self):
         """Gets the security_group_id of this CreatePostPaidInstanceReq.
 
-        指定实例所属的安全组。  获取方法如下： - 登录虚拟私有云服务的控制台界面，在安全组的详情页面查找安全组ID。
+        指定实例所属的安全组。  获取方法如下：登录虚拟私有云服务的控制台界面，在安全组的详情页面查找安全组ID。
 
         :return: The security_group_id of this CreatePostPaidInstanceReq.
         :rtype: str
@@ -318,7 +318,7 @@ class CreatePostPaidInstanceReq:
     def security_group_id(self, security_group_id):
         """Sets the security_group_id of this CreatePostPaidInstanceReq.
 
-        指定实例所属的安全组。  获取方法如下： - 登录虚拟私有云服务的控制台界面，在安全组的详情页面查找安全组ID。
+        指定实例所属的安全组。  获取方法如下：登录虚拟私有云服务的控制台界面，在安全组的详情页面查找安全组ID。
 
         :param security_group_id: The security_group_id of this CreatePostPaidInstanceReq.
         :type security_group_id: str
@@ -329,7 +329,7 @@ class CreatePostPaidInstanceReq:
     def available_zones(self):
         """Gets the available_zones of this CreatePostPaidInstanceReq.
 
-        创建节点到指定且有资源的可用区ID。该参数不能为空数组或者数组的值为空， 请注意查看该可用区是否有资源。  创建RocketMQ实例，支持节点部署在1个或3个及3个以上的可用区。在为节点指定可用区时，用逗号分隔开。
+        创建节点到指定且有资源的可用区ID。请参考[查询可用区信息](ListAvailableZones.xml)获取可用区ID。 该参数不能为空数组或者数组的值为空， 请注意查看该可用区是否有资源。  创建RocketMQ实例，支持节点部署在1个或3个及3个以上的可用区。在为节点指定可用区时，用逗号分隔开。
 
         :return: The available_zones of this CreatePostPaidInstanceReq.
         :rtype: list[str]
@@ -340,7 +340,7 @@ class CreatePostPaidInstanceReq:
     def available_zones(self, available_zones):
         """Sets the available_zones of this CreatePostPaidInstanceReq.
 
-        创建节点到指定且有资源的可用区ID。该参数不能为空数组或者数组的值为空， 请注意查看该可用区是否有资源。  创建RocketMQ实例，支持节点部署在1个或3个及3个以上的可用区。在为节点指定可用区时，用逗号分隔开。
+        创建节点到指定且有资源的可用区ID。请参考[查询可用区信息](ListAvailableZones.xml)获取可用区ID。 该参数不能为空数组或者数组的值为空， 请注意查看该可用区是否有资源。  创建RocketMQ实例，支持节点部署在1个或3个及3个以上的可用区。在为节点指定可用区时，用逗号分隔开。
 
         :param available_zones: The available_zones of this CreatePostPaidInstanceReq.
         :type available_zones: list[str]

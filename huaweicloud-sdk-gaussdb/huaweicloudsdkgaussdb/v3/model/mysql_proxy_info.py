@@ -33,7 +33,7 @@ class MysqlProxyInfo:
 
         The model defined in huaweicloud sdk
 
-        :param pool_id: Proxy实例id。
+        :param pool_id: Proxy实例ID。
         :type pool_id: str
         :param name: Proxy实例名称。
         :type name: str
@@ -59,7 +59,7 @@ class MysqlProxyInfo:
     def pool_id(self):
         """Gets the pool_id of this MysqlProxyInfo.
 
-        Proxy实例id。
+        Proxy实例ID。
 
         :return: The pool_id of this MysqlProxyInfo.
         :rtype: str
@@ -70,7 +70,7 @@ class MysqlProxyInfo:
     def pool_id(self, pool_id):
         """Sets the pool_id of this MysqlProxyInfo.
 
-        Proxy实例id。
+        Proxy实例ID。
 
         :param pool_id: The pool_id of this MysqlProxyInfo.
         :type pool_id: str

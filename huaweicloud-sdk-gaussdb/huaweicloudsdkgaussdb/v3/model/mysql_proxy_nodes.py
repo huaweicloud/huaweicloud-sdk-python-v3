@@ -39,7 +39,7 @@ class MysqlProxyNodes:
 
         The model defined in huaweicloud sdk
 
-        :param id: Proxy节点id。
+        :param id: Proxy节点ID。
         :type id: str
         :param status: Proxy节点状态。  取值范围： - ACTIVE，表示节点正常 - ABNORMAL，表示节点异常 - FAILED，表示节点失败 - DELETED，表示节点已删除
         :type status: str
@@ -80,7 +80,7 @@ class MysqlProxyNodes:
     def id(self):
         """Gets the id of this MysqlProxyNodes.
 
-        Proxy节点id。
+        Proxy节点ID。
 
         :return: The id of this MysqlProxyNodes.
         :rtype: str
@@ -91,7 +91,7 @@ class MysqlProxyNodes:
     def id(self, id):
         """Sets the id of this MysqlProxyNodes.
 
-        Proxy节点id。
+        Proxy节点ID。
 
         :param id: The id of this MysqlProxyNodes.
         :type id: str

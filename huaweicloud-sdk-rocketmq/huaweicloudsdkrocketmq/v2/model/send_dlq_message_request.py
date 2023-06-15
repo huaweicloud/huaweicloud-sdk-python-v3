@@ -33,7 +33,7 @@ class SendDlqMessageRequest:
 
         The model defined in huaweicloud sdk
 
-        :param engine: engine
+        :param engine: 消息引擎。
         :type engine: str
         :param instance_id: 实例ID。
         :type instance_id: str
@@ -57,7 +57,7 @@ class SendDlqMessageRequest:
     def engine(self):
         """Gets the engine of this SendDlqMessageRequest.
 
-        engine
+        消息引擎。
 
         :return: The engine of this SendDlqMessageRequest.
         :rtype: str
@@ -68,7 +68,7 @@ class SendDlqMessageRequest:
     def engine(self, engine):
         """Sets the engine of this SendDlqMessageRequest.
 
-        engine
+        消息引擎。
 
         :param engine: The engine of this SendDlqMessageRequest.
         :type engine: str

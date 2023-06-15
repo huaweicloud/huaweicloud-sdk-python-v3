@@ -36,7 +36,7 @@ class UpdateGaussMySqlBackupPolicyResponse(SdkResponse):
 
         :param status: 状态信息
         :type status: str
-        :param instance_id: 实例ID
+        :param instance_id: 实例ID。
         :type instance_id: str
         :param instance_name: 实例名称
         :type instance_name: str
@@ -82,7 +82,7 @@ class UpdateGaussMySqlBackupPolicyResponse(SdkResponse):
     def instance_id(self):
         """Gets the instance_id of this UpdateGaussMySqlBackupPolicyResponse.
 
-        实例ID
+        实例ID。
 
         :return: The instance_id of this UpdateGaussMySqlBackupPolicyResponse.
         :rtype: str
@@ -93,7 +93,7 @@ class UpdateGaussMySqlBackupPolicyResponse(SdkResponse):
     def instance_id(self, instance_id):
         """Sets the instance_id of this UpdateGaussMySqlBackupPolicyResponse.
 
-        实例ID
+        实例ID。
 
         :param instance_id: The instance_id of this UpdateGaussMySqlBackupPolicyResponse.
         :type instance_id: str

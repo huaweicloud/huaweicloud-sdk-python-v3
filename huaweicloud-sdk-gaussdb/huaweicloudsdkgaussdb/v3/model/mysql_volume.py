@@ -29,7 +29,7 @@ class MysqlVolume:
 
         The model defined in huaweicloud sdk
 
-        :param size: 磁盘大小。默认值为40，单位GB。 取值范围：40~128000，必须为10的整数倍。
+        :param size: 磁盘大小。默认值为10，单位GB。 取值范围：10~128000，必须为10的整数倍。
         :type size: str
         """
         
@@ -44,7 +44,7 @@ class MysqlVolume:
     def size(self):
         """Gets the size of this MysqlVolume.
 
-        磁盘大小。默认值为40，单位GB。 取值范围：40~128000，必须为10的整数倍。
+        磁盘大小。默认值为10，单位GB。 取值范围：10~128000，必须为10的整数倍。
 
         :return: The size of this MysqlVolume.
         :rtype: str
@@ -55,7 +55,7 @@ class MysqlVolume:
     def size(self, size):
         """Sets the size of this MysqlVolume.
 
-        磁盘大小。默认值为40，单位GB。 取值范围：40~128000，必须为10的整数倍。
+        磁盘大小。默认值为10，单位GB。 取值范围：10~128000，必须为10的整数倍。
 
         :param size: The size of this MysqlVolume.
         :type size: str

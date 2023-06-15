@@ -31,7 +31,7 @@ class NodesWeight:
 
         The model defined in huaweicloud sdk
 
-        :param id: 数据库节点id。
+        :param id: 数据库节点ID。
         :type id: str
         :param weight: 权重。取值范围：0~1000。
         :type weight: int
@@ -52,7 +52,7 @@ class NodesWeight:
     def id(self):
         """Gets the id of this NodesWeight.
 
-        数据库节点id。
+        数据库节点ID。
 
         :return: The id of this NodesWeight.
         :rtype: str
@@ -63,7 +63,7 @@ class NodesWeight:
     def id(self, id):
         """Sets the id of this NodesWeight.
 
-        数据库节点id。
+        数据库节点ID。
 
         :param id: The id of this NodesWeight.
         :type id: str

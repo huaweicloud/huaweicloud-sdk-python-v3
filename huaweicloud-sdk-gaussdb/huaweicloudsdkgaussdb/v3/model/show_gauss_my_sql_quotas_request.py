@@ -35,7 +35,7 @@ class ShowGaussMySqlQuotasRequest:
 
         The model defined in huaweicloud sdk
 
-        :param x_language: 语言
+        :param x_language: 语言。
         :type x_language: str
         :param offset: 索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。  取值范围：0 - 10000
         :type offset: str
@@ -66,7 +66,7 @@ class ShowGaussMySqlQuotasRequest:
     def x_language(self):
         """Gets the x_language of this ShowGaussMySqlQuotasRequest.
 
-        语言
+        语言。
 
         :return: The x_language of this ShowGaussMySqlQuotasRequest.
         :rtype: str
@@ -77,7 +77,7 @@ class ShowGaussMySqlQuotasRequest:
     def x_language(self, x_language):
         """Sets the x_language of this ShowGaussMySqlQuotasRequest.
 
-        语言
+        语言。
 
         :param x_language: The x_language of this ShowGaussMySqlQuotasRequest.
         :type x_language: str

@@ -47,7 +47,7 @@ class MysqlFlavorsInfo:
         :type vcpus: str
         :param ram: 内存大小，单位为GB。
         :type ram: str
-        :param type: 规格类型，取值为arm和x86。
+        :param type: 规格类型，取值为arm、x86和generalX86。  - arm：独享型arm规格。 - x86：独享型x86规格。 - generalX86：通用型X86规格。
         :type type: str
         :param id: 规格ID，该字段唯一
         :type id: str
@@ -130,7 +130,7 @@ class MysqlFlavorsInfo:
     def type(self):
         """Gets the type of this MysqlFlavorsInfo.
 
-        规格类型，取值为arm和x86。
+        规格类型，取值为arm、x86和generalX86。  - arm：独享型arm规格。 - x86：独享型x86规格。 - generalX86：通用型X86规格。
 
         :return: The type of this MysqlFlavorsInfo.
         :rtype: str
@@ -141,7 +141,7 @@ class MysqlFlavorsInfo:
     def type(self, type):
         """Sets the type of this MysqlFlavorsInfo.
 
-        规格类型，取值为arm和x86。
+        规格类型，取值为arm、x86和generalX86。  - arm：独享型arm规格。 - x86：独享型x86规格。 - generalX86：通用型X86规格。
 
         :param type: The type of this MysqlFlavorsInfo.
         :type type: str

@@ -39,9 +39,9 @@ class MysqlProxyNodeV3:
 
         The model defined in huaweicloud sdk
 
-        :param id: 节点id。
+        :param id: 节点ID。
         :type id: str
-        :param instance_id: 实例id。
+        :param instance_id: 实例ID。
         :type instance_id: str
         :param status: 节点状态。
         :type status: str
@@ -80,7 +80,7 @@ class MysqlProxyNodeV3:
     def id(self):
         """Gets the id of this MysqlProxyNodeV3.
 
-        节点id。
+        节点ID。
 
         :return: The id of this MysqlProxyNodeV3.
         :rtype: str
@@ -91,7 +91,7 @@ class MysqlProxyNodeV3:
     def id(self, id):
         """Sets the id of this MysqlProxyNodeV3.
 
-        节点id。
+        节点ID。
 
         :param id: The id of this MysqlProxyNodeV3.
         :type id: str
@@ -102,7 +102,7 @@ class MysqlProxyNodeV3:
     def instance_id(self):
         """Gets the instance_id of this MysqlProxyNodeV3.
 
-        实例id。
+        实例ID。
 
         :return: The instance_id of this MysqlProxyNodeV3.
         :rtype: str
@@ -113,7 +113,7 @@ class MysqlProxyNodeV3:
     def instance_id(self, instance_id):
         """Sets the instance_id of this MysqlProxyNodeV3.
 
-        实例id。
+        实例ID。
 
         :param instance_id: The instance_id of this MysqlProxyNodeV3.
         :type instance_id: str

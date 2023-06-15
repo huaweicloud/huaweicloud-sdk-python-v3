@@ -32,7 +32,7 @@ class ShowSqlFilterRuleResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param node_id: 节点id
+        :param node_id: 节点ID
         :type node_id: str
         :param sql_filter_rules: SQL限流规则
         :type sql_filter_rules: list[:class:`huaweicloudsdkgaussdb.v3.SqlFilterRule`]
@@ -53,7 +53,7 @@ class ShowSqlFilterRuleResponse(SdkResponse):
     def node_id(self):
         """Gets the node_id of this ShowSqlFilterRuleResponse.
 
-        节点id
+        节点ID
 
         :return: The node_id of this ShowSqlFilterRuleResponse.
         :rtype: str
@@ -64,7 +64,7 @@ class ShowSqlFilterRuleResponse(SdkResponse):
     def node_id(self, node_id):
         """Sets the node_id of this ShowSqlFilterRuleResponse.
 
-        节点id
+        节点ID
 
         :param node_id: The node_id of this ShowSqlFilterRuleResponse.
         :type node_id: str

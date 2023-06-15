@@ -31,7 +31,7 @@ class NodeSqlFilterRuleInfo:
 
         The model defined in huaweicloud sdk
 
-        :param node_id: 节点id
+        :param node_id: 节点ID
         :type node_id: str
         :param rules: SQL限流规则。集合的sql_type值不能重复。
         :type rules: list[:class:`huaweicloudsdkgaussdb.v3.NodeSqlFilterRule`]
@@ -50,7 +50,7 @@ class NodeSqlFilterRuleInfo:
     def node_id(self):
         """Gets the node_id of this NodeSqlFilterRuleInfo.
 
-        节点id
+        节点ID
 
         :return: The node_id of this NodeSqlFilterRuleInfo.
         :rtype: str
@@ -61,7 +61,7 @@ class NodeSqlFilterRuleInfo:
     def node_id(self, node_id):
         """Sets the node_id of this NodeSqlFilterRuleInfo.
 
-        节点id
+        节点ID
 
         :param node_id: The node_id of this NodeSqlFilterRuleInfo.
         :type node_id: str

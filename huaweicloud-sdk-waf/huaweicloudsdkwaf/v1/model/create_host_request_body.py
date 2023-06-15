@@ -27,7 +27,8 @@ class CreateHostRequestBody:
         'paid_type': 'str',
         'proxy': 'bool',
         'lb_algorithm': 'str',
-        'description': 'str'
+        'description': 'str',
+        'forward_header_map': 'dict(str, str)'
     }
 
     attribute_map = {
@@ -41,10 +42,11 @@ class CreateHostRequestBody:
         'paid_type': 'paid_type',
         'proxy': 'proxy',
         'lb_algorithm': 'lb_algorithm',
-        'description': 'description'
+        'description': 'description',
+        'forward_header_map': 'forward_header_map'
     }
 
-    def __init__(self, hostname=None, policyid=None, server=None, certificateid=None, certificatename=None, web_tag=None, exclusive_ip=None, paid_type=None, proxy=None, lb_algorithm=None, description=None):
+    def __init__(self, hostname=None, policyid=None, server=None, certificateid=None, certificatename=None, web_tag=None, exclusive_ip=None, paid_type=None, proxy=None, lb_algorithm=None, description=None, forward_header_map=None):
         """CreateHostRequestBody
 
         The model defined in huaweicloud sdk
@@ -71,6 +73,8 @@ class CreateHostRequestBody:
         :type lb_algorithm: str
         :param description: 域名描述
         :type description: str
+        :param forward_header_map: 字段转发配置，WAF会将添加的字段插到header中，转给源站；Key不能跟nginx原生字段重复。Value支持的值包括:   - $time_local   - $request_id   - $connection_requests   - $tenant_id   - $project_id   - $remote_addr   - $remote_port   - $scheme   - $request_method   - $http_host   -$origin_uri   - $request_length   - $ssl_server_name   - $ssl_protocol   - $ssl_curves   - $ssl_session_reused
+        :type forward_header_map: dict(str, str)
         """
         
         
@@ -86,6 +90,7 @@ class CreateHostRequestBody:
         self._proxy = None
         self._lb_algorithm = None
         self._description = None
+        self._forward_header_map = None
         self.discriminator = None
 
         self.hostname = hostname
@@ -107,6 +112,8 @@ class CreateHostRequestBody:
             self.lb_algorithm = lb_algorithm
         if description is not None:
             self.description = description
+        if forward_header_map is not None:
+            self.forward_header_map = forward_header_map
 
     @property
     def hostname(self):
@@ -349,6 +356,28 @@ class CreateHostRequestBody:
         :type description: str
         """
         self._description = description
+
+    @property
+    def forward_header_map(self):
+        """Gets the forward_header_map of this CreateHostRequestBody.
+
+        字段转发配置，WAF会将添加的字段插到header中，转给源站；Key不能跟nginx原生字段重复。Value支持的值包括:   - $time_local   - $request_id   - $connection_requests   - $tenant_id   - $project_id   - $remote_addr   - $remote_port   - $scheme   - $request_method   - $http_host   -$origin_uri   - $request_length   - $ssl_server_name   - $ssl_protocol   - $ssl_curves   - $ssl_session_reused
+
+        :return: The forward_header_map of this CreateHostRequestBody.
+        :rtype: dict(str, str)
+        """
+        return self._forward_header_map
+
+    @forward_header_map.setter
+    def forward_header_map(self, forward_header_map):
+        """Sets the forward_header_map of this CreateHostRequestBody.
+
+        字段转发配置，WAF会将添加的字段插到header中，转给源站；Key不能跟nginx原生字段重复。Value支持的值包括:   - $time_local   - $request_id   - $connection_requests   - $tenant_id   - $project_id   - $remote_addr   - $remote_port   - $scheme   - $request_method   - $http_host   -$origin_uri   - $request_length   - $ssl_server_name   - $ssl_protocol   - $ssl_curves   - $ssl_session_reused
+
+        :param forward_header_map: The forward_header_map of this CreateHostRequestBody.
+        :type forward_header_map: dict(str, str)
+        """
+        self._forward_header_map = forward_header_map
 
     def to_dict(self):
         """Returns the model properties as a dict"""

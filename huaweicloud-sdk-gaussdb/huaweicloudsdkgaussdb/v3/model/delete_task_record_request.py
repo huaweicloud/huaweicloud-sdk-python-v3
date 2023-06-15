@@ -33,7 +33,7 @@ class DeleteTaskRecordRequest:
 
         :param x_language: 语言。
         :type x_language: str
-        :param job_id: 任务id。
+        :param job_id: 任务ID。
         :type job_id: str
         """
         
@@ -73,7 +73,7 @@ class DeleteTaskRecordRequest:
     def job_id(self):
         """Gets the job_id of this DeleteTaskRecordRequest.
 
-        任务id。
+        任务ID。
 
         :return: The job_id of this DeleteTaskRecordRequest.
         :rtype: str
@@ -84,7 +84,7 @@ class DeleteTaskRecordRequest:
     def job_id(self, job_id):
         """Sets the job_id of this DeleteTaskRecordRequest.
 
-        任务id。
+        任务ID。
 
         :param job_id: The job_id of this DeleteTaskRecordRequest.
         :type job_id: str

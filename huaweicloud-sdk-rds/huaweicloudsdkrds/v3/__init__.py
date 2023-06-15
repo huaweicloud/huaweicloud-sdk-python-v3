@@ -259,6 +259,9 @@ from huaweicloudsdkrds.v3.model.master_instance import MasterInstance
 from huaweicloudsdkrds.v3.model.migrate_follower_request import MigrateFollowerRequest
 from huaweicloudsdkrds.v3.model.migrate_follower_response import MigrateFollowerResponse
 from huaweicloudsdkrds.v3.model.modifiy_instance_name_request import ModifiyInstanceNameRequest
+from huaweicloudsdkrds.v3.model.modify_collation_request import ModifyCollationRequest
+from huaweicloudsdkrds.v3.model.modify_collation_request_body import ModifyCollationRequestBody
+from huaweicloudsdkrds.v3.model.modify_collation_response import ModifyCollationResponse
 from huaweicloudsdkrds.v3.model.modify_dns_name_request_body import ModifyDnsNameRequestBody
 from huaweicloudsdkrds.v3.model.modify_param_request import ModifyParamRequest
 from huaweicloudsdkrds.v3.model.modify_proxy_weight_request import ModifyProxyWeightRequest

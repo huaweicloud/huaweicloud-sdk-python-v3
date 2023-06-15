@@ -30,7 +30,7 @@ class CreateGaussMySqlDatabaseUserResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param job_id: 创建数据库用户的任务id。
+        :param job_id: 创建数据库用户的任务ID。
         :type job_id: str
         """
         
@@ -46,7 +46,7 @@ class CreateGaussMySqlDatabaseUserResponse(SdkResponse):
     def job_id(self):
         """Gets the job_id of this CreateGaussMySqlDatabaseUserResponse.
 
-        创建数据库用户的任务id。
+        创建数据库用户的任务ID。
 
         :return: The job_id of this CreateGaussMySqlDatabaseUserResponse.
         :rtype: str
@@ -57,7 +57,7 @@ class CreateGaussMySqlDatabaseUserResponse(SdkResponse):
     def job_id(self, job_id):
         """Sets the job_id of this CreateGaussMySqlDatabaseUserResponse.
 
-        创建数据库用户的任务id。
+        创建数据库用户的任务ID。
 
         :param job_id: The job_id of this CreateGaussMySqlDatabaseUserResponse.
         :type job_id: str

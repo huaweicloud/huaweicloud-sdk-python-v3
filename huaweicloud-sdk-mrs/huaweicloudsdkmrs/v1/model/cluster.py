@@ -81,7 +81,10 @@ class Cluster:
         'period_type': 'int',
         'scale': 'str',
         'node_groups': 'list[NodeGroupV10]',
-        'task_node_groups': 'list[NodeGroupV10]'
+        'task_node_groups': 'list[NodeGroupV10]',
+        'eip_id': 'str',
+        'eip_address': 'str',
+        'eipv6_address': 'str'
     }
 
     attribute_map = {
@@ -149,10 +152,13 @@ class Cluster:
         'period_type': 'periodType',
         'scale': 'scale',
         'node_groups': 'nodeGroups',
-        'task_node_groups': 'taskNodeGroups'
+        'task_node_groups': 'taskNodeGroups',
+        'eip_id': 'eipId',
+        'eip_address': 'eipAddress',
+        'eipv6_address': 'eipv6Address'
     }
 
-    def __init__(self, cluster_id=None, cluster_name=None, total_node_num=None, cluster_state=None, stage_desc=None, create_at=None, update_at=None, charging_start_time=None, billing_type=None, data_center=None, vpc=None, vpc_id=None, duration=None, fee=None, hadoop_version=None, component_list=None, external_ip=None, external_alternate_ip=None, internal_ip=None, deployment_id=None, remark=None, order_id=None, az_id=None, az_name=None, az_code=None, availability_zone_id=None, instance_id=None, vnc=None, tenant_id=None, volume_size=None, volume_type=None, subnet_id=None, subnet_name=None, security_groups_id=None, slave_security_groups_id=None, bootstrap_scripts=None, safe_mode=None, cluster_version=None, node_public_cert_name=None, master_node_ip=None, private_ip_first=None, error_info=None, tags=None, master_node_num=None, core_node_num=None, master_node_size=None, core_node_size=None, master_node_product_id=None, master_node_spec_id=None, core_node_product_id=None, core_node_spec_id=None, master_data_volume_type=None, master_data_volume_size=None, master_data_volume_count=None, core_data_volume_type=None, core_data_volume_size=None, core_data_volume_count=None, enterprise_project_id=None, is_mrs_manager_finish=None, cluster_type=None, log_collection=None, period_type=None, scale=None, node_groups=None, task_node_groups=None):
+    def __init__(self, cluster_id=None, cluster_name=None, total_node_num=None, cluster_state=None, stage_desc=None, create_at=None, update_at=None, charging_start_time=None, billing_type=None, data_center=None, vpc=None, vpc_id=None, duration=None, fee=None, hadoop_version=None, component_list=None, external_ip=None, external_alternate_ip=None, internal_ip=None, deployment_id=None, remark=None, order_id=None, az_id=None, az_name=None, az_code=None, availability_zone_id=None, instance_id=None, vnc=None, tenant_id=None, volume_size=None, volume_type=None, subnet_id=None, subnet_name=None, security_groups_id=None, slave_security_groups_id=None, bootstrap_scripts=None, safe_mode=None, cluster_version=None, node_public_cert_name=None, master_node_ip=None, private_ip_first=None, error_info=None, tags=None, master_node_num=None, core_node_num=None, master_node_size=None, core_node_size=None, master_node_product_id=None, master_node_spec_id=None, core_node_product_id=None, core_node_spec_id=None, master_data_volume_type=None, master_data_volume_size=None, master_data_volume_count=None, core_data_volume_type=None, core_data_volume_size=None, core_data_volume_count=None, enterprise_project_id=None, is_mrs_manager_finish=None, cluster_type=None, log_collection=None, period_type=None, scale=None, node_groups=None, task_node_groups=None, eip_id=None, eip_address=None, eipv6_address=None):
         """Cluster
 
         The model defined in huaweicloud sdk
@@ -287,6 +293,12 @@ class Cluster:
         :type node_groups: list[:class:`huaweicloudsdkmrs.v1.NodeGroupV10`]
         :param task_node_groups: Task节点列表信息。
         :type task_node_groups: list[:class:`huaweicloudsdkmrs.v1.NodeGroupV10`]
+        :param eip_id: 集群弹性公网ip的唯一标识
+        :type eip_id: str
+        :param eip_address: 集群弹性公网ip的IPV4地址
+        :type eip_address: str
+        :param eipv6_address: 集群弹性公网ip的IPV6地址，IPv4时无此字段。
+        :type eipv6_address: str
         """
         
         
@@ -356,6 +368,9 @@ class Cluster:
         self._scale = None
         self._node_groups = None
         self._task_node_groups = None
+        self._eip_id = None
+        self._eip_address = None
+        self._eipv6_address = None
         self.discriminator = None
 
         if cluster_id is not None:
@@ -488,6 +503,12 @@ class Cluster:
             self.node_groups = node_groups
         if task_node_groups is not None:
             self.task_node_groups = task_node_groups
+        if eip_id is not None:
+            self.eip_id = eip_id
+        if eip_address is not None:
+            self.eip_address = eip_address
+        if eipv6_address is not None:
+            self.eipv6_address = eipv6_address
 
     @property
     def cluster_id(self):
@@ -1918,6 +1939,72 @@ class Cluster:
         :type task_node_groups: list[:class:`huaweicloudsdkmrs.v1.NodeGroupV10`]
         """
         self._task_node_groups = task_node_groups
+
+    @property
+    def eip_id(self):
+        """Gets the eip_id of this Cluster.
+
+        集群弹性公网ip的唯一标识
+
+        :return: The eip_id of this Cluster.
+        :rtype: str
+        """
+        return self._eip_id
+
+    @eip_id.setter
+    def eip_id(self, eip_id):
+        """Sets the eip_id of this Cluster.
+
+        集群弹性公网ip的唯一标识
+
+        :param eip_id: The eip_id of this Cluster.
+        :type eip_id: str
+        """
+        self._eip_id = eip_id
+
+    @property
+    def eip_address(self):
+        """Gets the eip_address of this Cluster.
+
+        集群弹性公网ip的IPV4地址
+
+        :return: The eip_address of this Cluster.
+        :rtype: str
+        """
+        return self._eip_address
+
+    @eip_address.setter
+    def eip_address(self, eip_address):
+        """Sets the eip_address of this Cluster.
+
+        集群弹性公网ip的IPV4地址
+
+        :param eip_address: The eip_address of this Cluster.
+        :type eip_address: str
+        """
+        self._eip_address = eip_address
+
+    @property
+    def eipv6_address(self):
+        """Gets the eipv6_address of this Cluster.
+
+        集群弹性公网ip的IPV6地址，IPv4时无此字段。
+
+        :return: The eipv6_address of this Cluster.
+        :rtype: str
+        """
+        return self._eipv6_address
+
+    @eipv6_address.setter
+    def eipv6_address(self, eipv6_address):
+        """Sets the eipv6_address of this Cluster.
+
+        集群弹性公网ip的IPV6地址，IPv4时无此字段。
+
+        :param eipv6_address: The eipv6_address of this Cluster.
+        :type eipv6_address: str
+        """
+        self._eipv6_address = eipv6_address
 
     def to_dict(self):
         """Returns the model properties as a dict"""

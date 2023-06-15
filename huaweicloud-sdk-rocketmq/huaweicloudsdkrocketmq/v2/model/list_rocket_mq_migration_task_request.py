@@ -49,7 +49,7 @@ class ListRocketMqMigrationTaskRequest:
         :type offset: str
         :param limit: 当前页大小
         :type limit: str
-        :param name: 查询vhost列表时，该字段可为空，查询exchange列表时，该字段为exchange所属vhost名称，查询queue列表时，该字段为queue所属vhost-所属exchange，例vhost1-exchange1
+        :param name: - 查询vhost列表时，该字段可为空。 - 查询exchange列表时，该字段为exchange所属vhost名称。 - 查询queue列表时，该字段为queue所属vhost-所属exchange，例vhost1-exchange1。
         :type name: str
         """
         
@@ -189,7 +189,7 @@ class ListRocketMqMigrationTaskRequest:
     def name(self):
         """Gets the name of this ListRocketMqMigrationTaskRequest.
 
-        查询vhost列表时，该字段可为空，查询exchange列表时，该字段为exchange所属vhost名称，查询queue列表时，该字段为queue所属vhost-所属exchange，例vhost1-exchange1
+        - 查询vhost列表时，该字段可为空。 - 查询exchange列表时，该字段为exchange所属vhost名称。 - 查询queue列表时，该字段为queue所属vhost-所属exchange，例vhost1-exchange1。
 
         :return: The name of this ListRocketMqMigrationTaskRequest.
         :rtype: str
@@ -200,7 +200,7 @@ class ListRocketMqMigrationTaskRequest:
     def name(self, name):
         """Sets the name of this ListRocketMqMigrationTaskRequest.
 
-        查询vhost列表时，该字段可为空，查询exchange列表时，该字段为exchange所属vhost名称，查询queue列表时，该字段为queue所属vhost-所属exchange，例vhost1-exchange1
+        - 查询vhost列表时，该字段可为空。 - 查询exchange列表时，该字段为exchange所属vhost名称。 - 查询queue列表时，该字段为queue所属vhost-所属exchange，例vhost1-exchange1。
 
         :param name: The name of this ListRocketMqMigrationTaskRequest.
         :type name: str

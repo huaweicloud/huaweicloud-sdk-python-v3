@@ -47,8 +47,10 @@ from huaweicloudsdkdws.v2.model.cluster_check_body import ClusterCheckBody
 from huaweicloudsdkdws.v2.model.cluster_check_request_body import ClusterCheckRequestBody
 from huaweicloudsdkdws.v2.model.cluster_configuration import ClusterConfiguration
 from huaweicloudsdkdws.v2.model.cluster_detail import ClusterDetail
+from huaweicloudsdkdws.v2.model.cluster_disaster_recovery import ClusterDisasterRecovery
 from huaweicloudsdkdws.v2.model.cluster_elb_info import ClusterElbInfo
 from huaweicloudsdkdws.v2.model.cluster_info import ClusterInfo
+from huaweicloudsdkdws.v2.model.cluster_recovery_progress import ClusterRecoveryProgress
 from huaweicloudsdkdws.v2.model.cluster_shrink_req import ClusterShrinkReq
 from huaweicloudsdkdws.v2.model.cluster_snapshots import ClusterSnapshots
 from huaweicloudsdkdws.v2.model.configuration_parameter import ConfigurationParameter
@@ -86,6 +88,9 @@ from huaweicloudsdkdws.v2.model.create_snapshot_request_body import CreateSnapsh
 from huaweicloudsdkdws.v2.model.create_snapshot_response import CreateSnapshotResponse
 from huaweicloudsdkdws.v2.model.create_workload_plan_request import CreateWorkloadPlanRequest
 from huaweicloudsdkdws.v2.model.create_workload_plan_response import CreateWorkloadPlanResponse
+from huaweicloudsdkdws.v2.model.database_permission_req import DatabasePermissionReq
+from huaweicloudsdkdws.v2.model.database_user import DatabaseUser
+from huaweicloudsdkdws.v2.model.database_user_info_req import DatabaseUserInfoReq
 from huaweicloudsdkdws.v2.model.datastore import Datastore
 from huaweicloudsdkdws.v2.model.delete_alarm_sub_request import DeleteAlarmSubRequest
 from huaweicloudsdkdws.v2.model.delete_alarm_sub_response import DeleteAlarmSubResponse
@@ -115,6 +120,7 @@ from huaweicloudsdkdws.v2.model.disaster_recovery import DisasterRecovery
 from huaweicloudsdkdws.v2.model.disaster_recovery_cluster import DisasterRecoveryCluster
 from huaweicloudsdkdws.v2.model.disaster_recovery_cluster_vo import DisasterRecoveryClusterVo
 from huaweicloudsdkdws.v2.model.disaster_recovery_id import DisasterRecoveryId
+from huaweicloudsdkdws.v2.model.disaster_recovery_query_resp import DisasterRecoveryQueryResp
 from huaweicloudsdkdws.v2.model.disk_resp import DiskResp
 from huaweicloudsdkdws.v2.model.dss_pool import DssPool
 from huaweicloudsdkdws.v2.model.elb_resp import ElbResp
@@ -133,6 +139,7 @@ from huaweicloudsdkdws.v2.model.ext_data_source import ExtDataSource
 from huaweicloudsdkdws.v2.model.ext_data_source_req import ExtDataSourceReq
 from huaweicloudsdkdws.v2.model.failed_reason import FailedReason
 from huaweicloudsdkdws.v2.model.fine_grained_snapshot_detail import FineGrainedSnapshotDetail
+from huaweicloudsdkdws.v2.model.grant import Grant
 from huaweicloudsdkdws.v2.model.host_overview_response import HostOverviewResponse
 from huaweicloudsdkdws.v2.model.indicator_info import IndicatorInfo
 from huaweicloudsdkdws.v2.model.link_copy_req import LinkCopyReq
@@ -170,6 +177,8 @@ from huaweicloudsdkdws.v2.model.list_clusters_request import ListClustersRequest
 from huaweicloudsdkdws.v2.model.list_clusters_response import ListClustersResponse
 from huaweicloudsdkdws.v2.model.list_data_source_request import ListDataSourceRequest
 from huaweicloudsdkdws.v2.model.list_data_source_response import ListDataSourceResponse
+from huaweicloudsdkdws.v2.model.list_database_users_request import ListDatabaseUsersRequest
+from huaweicloudsdkdws.v2.model.list_database_users_response import ListDatabaseUsersResponse
 from huaweicloudsdkdws.v2.model.list_disaster_recover_request import ListDisasterRecoverRequest
 from huaweicloudsdkdws.v2.model.list_disaster_recover_response import ListDisasterRecoverResponse
 from huaweicloudsdkdws.v2.model.list_dss_pools_request import ListDssPoolsRequest
@@ -222,6 +231,7 @@ from huaweicloudsdkdws.v2.model.node_type_datastores_attachments import NodeType
 from huaweicloudsdkdws.v2.model.node_type_elastic_volume_specs import NodeTypeElasticVolumeSpecs
 from huaweicloudsdkdws.v2.model.node_types import NodeTypes
 from huaweicloudsdkdws.v2.model.nodes import Nodes
+from huaweicloudsdkdws.v2.model.object_authority import ObjectAuthority
 from huaweicloudsdkdws.v2.model.open_public_ip import OpenPublicIp
 from huaweicloudsdkdws.v2.model.parameter_group import ParameterGroup
 from huaweicloudsdkdws.v2.model.pause_disaster_recovery_request import PauseDisasterRecoveryRequest
@@ -252,9 +262,17 @@ from huaweicloudsdkdws.v2.model.restore_cluster_response import RestoreClusterRe
 from huaweicloudsdkdws.v2.model.restore_disaster_request import RestoreDisasterRequest
 from huaweicloudsdkdws.v2.model.restore_disaster_response import RestoreDisasterResponse
 from huaweicloudsdkdws.v2.model.restore_point import RestorePoint
+from huaweicloudsdkdws.v2.model.revoke import Revoke
+from huaweicloudsdkdws.v2.model.role_authority import RoleAuthority
 from huaweicloudsdkdws.v2.model.scale_out import ScaleOut
+from huaweicloudsdkdws.v2.model.show_database_authority_request import ShowDatabaseAuthorityRequest
+from huaweicloudsdkdws.v2.model.show_database_authority_response import ShowDatabaseAuthorityResponse
+from huaweicloudsdkdws.v2.model.show_database_user_request import ShowDatabaseUserRequest
+from huaweicloudsdkdws.v2.model.show_database_user_response import ShowDatabaseUserResponse
 from huaweicloudsdkdws.v2.model.show_disaster_detail_request import ShowDisasterDetailRequest
 from huaweicloudsdkdws.v2.model.show_disaster_detail_response import ShowDisasterDetailResponse
+from huaweicloudsdkdws.v2.model.show_disaster_progress_request import ShowDisasterProgressRequest
+from huaweicloudsdkdws.v2.model.show_disaster_progress_response import ShowDisasterProgressResponse
 from huaweicloudsdkdws.v2.model.shrink_cluster_request import ShrinkClusterRequest
 from huaweicloudsdkdws.v2.model.shrink_cluster_response import ShrinkClusterResponse
 from huaweicloudsdkdws.v2.model.snapshot import Snapshot
@@ -271,6 +289,8 @@ from huaweicloudsdkdws.v2.model.switch_over_cluster_request import SwitchOverClu
 from huaweicloudsdkdws.v2.model.switch_over_cluster_response import SwitchOverClusterResponse
 from huaweicloudsdkdws.v2.model.switchover_disaster_recovery_request import SwitchoverDisasterRecoveryRequest
 from huaweicloudsdkdws.v2.model.switchover_disaster_recovery_response import SwitchoverDisasterRecoveryResponse
+from huaweicloudsdkdws.v2.model.sync_iam_users_request import SyncIamUsersRequest
+from huaweicloudsdkdws.v2.model.sync_iam_users_response import SyncIamUsersResponse
 from huaweicloudsdkdws.v2.model.tag import Tag
 from huaweicloudsdkdws.v2.model.tags import Tags
 from huaweicloudsdkdws.v2.model.trend_query_data import TrendQueryData
@@ -283,6 +303,10 @@ from huaweicloudsdkdws.v2.model.update_configuration_request import UpdateConfig
 from huaweicloudsdkdws.v2.model.update_configuration_response import UpdateConfigurationResponse
 from huaweicloudsdkdws.v2.model.update_data_source_request import UpdateDataSourceRequest
 from huaweicloudsdkdws.v2.model.update_data_source_response import UpdateDataSourceResponse
+from huaweicloudsdkdws.v2.model.update_database_authority_request import UpdateDatabaseAuthorityRequest
+from huaweicloudsdkdws.v2.model.update_database_authority_response import UpdateDatabaseAuthorityResponse
+from huaweicloudsdkdws.v2.model.update_database_user_info_request import UpdateDatabaseUserInfoRequest
+from huaweicloudsdkdws.v2.model.update_database_user_info_response import UpdateDatabaseUserInfoResponse
 from huaweicloudsdkdws.v2.model.update_disaster_info_request import UpdateDisasterInfoRequest
 from huaweicloudsdkdws.v2.model.update_disaster_info_response import UpdateDisasterInfoResponse
 from huaweicloudsdkdws.v2.model.update_disaster_recovery_req import UpdateDisasterRecoveryReq

@@ -32,7 +32,8 @@ class UpdatePremiumHostRequestBody:
         'traffic_mark': 'TrafficMark',
         'circuit_breaker': 'CircuitBreaker',
         'timeout_config': 'TimeoutConfig',
-        'flag': 'HostFlag'
+        'flag': 'HostFlag',
+        'forward_header_map': 'dict(str, str)'
     }
 
     attribute_map = {
@@ -51,10 +52,11 @@ class UpdatePremiumHostRequestBody:
         'traffic_mark': 'traffic_mark',
         'circuit_breaker': 'circuit_breaker',
         'timeout_config': 'timeout_config',
-        'flag': 'flag'
+        'flag': 'flag',
+        'forward_header_map': 'forward_header_map'
     }
 
-    def __init__(self, proxy=None, certificateid=None, certificatename=None, tls=None, cipher=None, mode=None, locked=None, protect_status=None, access_status=None, timestamp=None, pool_ids=None, block_page=None, traffic_mark=None, circuit_breaker=None, timeout_config=None, flag=None):
+    def __init__(self, proxy=None, certificateid=None, certificatename=None, tls=None, cipher=None, mode=None, locked=None, protect_status=None, access_status=None, timestamp=None, pool_ids=None, block_page=None, traffic_mark=None, circuit_breaker=None, timeout_config=None, flag=None, forward_header_map=None):
         """UpdatePremiumHostRequestBody
 
         The model defined in huaweicloud sdk
@@ -91,6 +93,8 @@ class UpdatePremiumHostRequestBody:
         :type timeout_config: :class:`huaweicloudsdkwaf.v1.TimeoutConfig`
         :param flag: 
         :type flag: :class:`huaweicloudsdkwaf.v1.HostFlag`
+        :param forward_header_map: 字段转发配置，WAF会将添加的字段插到header中，转给源站；Key不能跟nginx原生字段重复。Value支持的值包括:   - $time_local   - $request_id   - $connection_requests   - $tenant_id   - $project_id   - $remote_addr   - $remote_port   - $scheme   - $request_method   - $http_host   -$origin_uri   - $request_length   - $ssl_server_name   - $ssl_protocol   - $ssl_curves   - $ssl_session_reused
+        :type forward_header_map: dict(str, str)
         """
         
         
@@ -111,6 +115,7 @@ class UpdatePremiumHostRequestBody:
         self._circuit_breaker = None
         self._timeout_config = None
         self._flag = None
+        self._forward_header_map = None
         self.discriminator = None
 
         if proxy is not None:
@@ -145,6 +150,8 @@ class UpdatePremiumHostRequestBody:
             self.timeout_config = timeout_config
         if flag is not None:
             self.flag = flag
+        if forward_header_map is not None:
+            self.forward_header_map = forward_header_map
 
     @property
     def proxy(self):
@@ -477,6 +484,28 @@ class UpdatePremiumHostRequestBody:
         :type flag: :class:`huaweicloudsdkwaf.v1.HostFlag`
         """
         self._flag = flag
+
+    @property
+    def forward_header_map(self):
+        """Gets the forward_header_map of this UpdatePremiumHostRequestBody.
+
+        字段转发配置，WAF会将添加的字段插到header中，转给源站；Key不能跟nginx原生字段重复。Value支持的值包括:   - $time_local   - $request_id   - $connection_requests   - $tenant_id   - $project_id   - $remote_addr   - $remote_port   - $scheme   - $request_method   - $http_host   -$origin_uri   - $request_length   - $ssl_server_name   - $ssl_protocol   - $ssl_curves   - $ssl_session_reused
+
+        :return: The forward_header_map of this UpdatePremiumHostRequestBody.
+        :rtype: dict(str, str)
+        """
+        return self._forward_header_map
+
+    @forward_header_map.setter
+    def forward_header_map(self, forward_header_map):
+        """Sets the forward_header_map of this UpdatePremiumHostRequestBody.
+
+        字段转发配置，WAF会将添加的字段插到header中，转给源站；Key不能跟nginx原生字段重复。Value支持的值包括:   - $time_local   - $request_id   - $connection_requests   - $tenant_id   - $project_id   - $remote_addr   - $remote_port   - $scheme   - $request_method   - $http_host   -$origin_uri   - $request_length   - $ssl_server_name   - $ssl_protocol   - $ssl_curves   - $ssl_session_reused
+
+        :param forward_header_map: The forward_header_map of this UpdatePremiumHostRequestBody.
+        :type forward_header_map: dict(str, str)
+        """
+        self._forward_header_map = forward_header_map
 
     def to_dict(self):
         """Returns the model properties as a dict"""

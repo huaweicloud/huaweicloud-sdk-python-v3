@@ -101,7 +101,7 @@ class MysqlInstanceRequest:
         :type availability_zone_mode: str
         :param master_availability_zone: 主可用区。
         :type master_availability_zone: str
-        :param slave_count: 备节点个数。单次接口调用最多支持创建9个备节点。
+        :param slave_count: 只读节点个数。单次接口调用最多支持创建9个只读节点。
         :type slave_count: int
         :param volume: 
         :type volume: :class:`huaweicloudsdkgaussdb.v3.MysqlVolume`
@@ -500,7 +500,7 @@ class MysqlInstanceRequest:
     def slave_count(self):
         """Gets the slave_count of this MysqlInstanceRequest.
 
-        备节点个数。单次接口调用最多支持创建9个备节点。
+        只读节点个数。单次接口调用最多支持创建9个只读节点。
 
         :return: The slave_count of this MysqlInstanceRequest.
         :rtype: int
@@ -511,7 +511,7 @@ class MysqlInstanceRequest:
     def slave_count(self, slave_count):
         """Sets the slave_count of this MysqlInstanceRequest.
 
-        备节点个数。单次接口调用最多支持创建9个备节点。
+        只读节点个数。单次接口调用最多支持创建9个只读节点。
 
         :param slave_count: The slave_count of this MysqlInstanceRequest.
         :type slave_count: int

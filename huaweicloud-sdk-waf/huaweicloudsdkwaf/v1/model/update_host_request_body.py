@@ -33,7 +33,8 @@ class UpdateHostRequestBody:
         'flag': 'Flag',
         'extend': 'dict(str, str)',
         'circuit_breaker': 'CircuitBreaker',
-        'timeout_config': 'TimeoutConfig'
+        'timeout_config': 'TimeoutConfig',
+        'forward_header_map': 'dict(str, str)'
     }
 
     attribute_map = {
@@ -53,10 +54,11 @@ class UpdateHostRequestBody:
         'flag': 'flag',
         'extend': 'extend',
         'circuit_breaker': 'circuit_breaker',
-        'timeout_config': 'timeout_config'
+        'timeout_config': 'timeout_config',
+        'forward_header_map': 'forward_header_map'
     }
 
-    def __init__(self, proxy=None, certificateid=None, certificatename=None, server=None, tls=None, cipher=None, http2_enable=None, ipv6_enable=None, web_tag=None, exclusive_ip=None, paid_type=None, block_page=None, traffic_mark=None, flag=None, extend=None, circuit_breaker=None, timeout_config=None):
+    def __init__(self, proxy=None, certificateid=None, certificatename=None, server=None, tls=None, cipher=None, http2_enable=None, ipv6_enable=None, web_tag=None, exclusive_ip=None, paid_type=None, block_page=None, traffic_mark=None, flag=None, extend=None, circuit_breaker=None, timeout_config=None, forward_header_map=None):
         """UpdateHostRequestBody
 
         The model defined in huaweicloud sdk
@@ -95,6 +97,8 @@ class UpdateHostRequestBody:
         :type circuit_breaker: :class:`huaweicloudsdkwaf.v1.CircuitBreaker`
         :param timeout_config: 
         :type timeout_config: :class:`huaweicloudsdkwaf.v1.TimeoutConfig`
+        :param forward_header_map: 字段转发配置，WAF会将添加的字段插到header中，转给源站；Key不能跟nginx原生字段重复。Value支持的值包括:   - $time_local   - $request_id   - $connection_requests   - $tenant_id   - $project_id   - $remote_addr   - $remote_port   - $scheme   - $request_method   - $http_host   -$origin_uri   - $request_length   - $ssl_server_name   - $ssl_protocol   - $ssl_curves   - $ssl_session_reused
+        :type forward_header_map: dict(str, str)
         """
         
         
@@ -116,6 +120,7 @@ class UpdateHostRequestBody:
         self._extend = None
         self._circuit_breaker = None
         self._timeout_config = None
+        self._forward_header_map = None
         self.discriminator = None
 
         if proxy is not None:
@@ -152,6 +157,8 @@ class UpdateHostRequestBody:
             self.circuit_breaker = circuit_breaker
         if timeout_config is not None:
             self.timeout_config = timeout_config
+        if forward_header_map is not None:
+            self.forward_header_map = forward_header_map
 
     @property
     def proxy(self):
@@ -506,6 +513,28 @@ class UpdateHostRequestBody:
         :type timeout_config: :class:`huaweicloudsdkwaf.v1.TimeoutConfig`
         """
         self._timeout_config = timeout_config
+
+    @property
+    def forward_header_map(self):
+        """Gets the forward_header_map of this UpdateHostRequestBody.
+
+        字段转发配置，WAF会将添加的字段插到header中，转给源站；Key不能跟nginx原生字段重复。Value支持的值包括:   - $time_local   - $request_id   - $connection_requests   - $tenant_id   - $project_id   - $remote_addr   - $remote_port   - $scheme   - $request_method   - $http_host   -$origin_uri   - $request_length   - $ssl_server_name   - $ssl_protocol   - $ssl_curves   - $ssl_session_reused
+
+        :return: The forward_header_map of this UpdateHostRequestBody.
+        :rtype: dict(str, str)
+        """
+        return self._forward_header_map
+
+    @forward_header_map.setter
+    def forward_header_map(self, forward_header_map):
+        """Sets the forward_header_map of this UpdateHostRequestBody.
+
+        字段转发配置，WAF会将添加的字段插到header中，转给源站；Key不能跟nginx原生字段重复。Value支持的值包括:   - $time_local   - $request_id   - $connection_requests   - $tenant_id   - $project_id   - $remote_addr   - $remote_port   - $scheme   - $request_method   - $http_host   -$origin_uri   - $request_length   - $ssl_server_name   - $ssl_protocol   - $ssl_curves   - $ssl_session_reused
+
+        :param forward_header_map: The forward_header_map of this UpdateHostRequestBody.
+        :type forward_header_map: dict(str, str)
+        """
+        self._forward_header_map = forward_header_map
 
     def to_dict(self):
         """Returns the model properties as a dict"""

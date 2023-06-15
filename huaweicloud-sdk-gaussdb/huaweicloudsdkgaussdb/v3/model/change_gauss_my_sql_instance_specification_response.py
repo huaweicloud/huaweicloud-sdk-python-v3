@@ -32,9 +32,9 @@ class ChangeGaussMySqlInstanceSpecificationResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param job_id: 规格变更的任务id，仅变更按需实例时会返回该参数
+        :param job_id: 规格变更的任务ID，仅变更按需实例时会返回该参数
         :type job_id: str
-        :param order_id: 订单id，仅变更包周期实例时会返回该参数
+        :param order_id: 订单ID，仅变更包周期实例时会返回该参数
         :type order_id: str
         """
         
@@ -53,7 +53,7 @@ class ChangeGaussMySqlInstanceSpecificationResponse(SdkResponse):
     def job_id(self):
         """Gets the job_id of this ChangeGaussMySqlInstanceSpecificationResponse.
 
-        规格变更的任务id，仅变更按需实例时会返回该参数
+        规格变更的任务ID，仅变更按需实例时会返回该参数
 
         :return: The job_id of this ChangeGaussMySqlInstanceSpecificationResponse.
         :rtype: str
@@ -64,7 +64,7 @@ class ChangeGaussMySqlInstanceSpecificationResponse(SdkResponse):
     def job_id(self, job_id):
         """Sets the job_id of this ChangeGaussMySqlInstanceSpecificationResponse.
 
-        规格变更的任务id，仅变更按需实例时会返回该参数
+        规格变更的任务ID，仅变更按需实例时会返回该参数
 
         :param job_id: The job_id of this ChangeGaussMySqlInstanceSpecificationResponse.
         :type job_id: str
@@ -75,7 +75,7 @@ class ChangeGaussMySqlInstanceSpecificationResponse(SdkResponse):
     def order_id(self):
         """Gets the order_id of this ChangeGaussMySqlInstanceSpecificationResponse.
 
-        订单id，仅变更包周期实例时会返回该参数
+        订单ID，仅变更包周期实例时会返回该参数
 
         :return: The order_id of this ChangeGaussMySqlInstanceSpecificationResponse.
         :rtype: str
@@ -86,7 +86,7 @@ class ChangeGaussMySqlInstanceSpecificationResponse(SdkResponse):
     def order_id(self, order_id):
         """Sets the order_id of this ChangeGaussMySqlInstanceSpecificationResponse.
 
-        订单id，仅变更包周期实例时会返回该参数
+        订单ID，仅变更包周期实例时会返回该参数
 
         :param order_id: The order_id of this ChangeGaussMySqlInstanceSpecificationResponse.
         :type order_id: str

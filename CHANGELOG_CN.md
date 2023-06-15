@@ -1,3 +1,173 @@
+# 3.1.44 2023-06-15
+
+### HuaweiCloud SDK CloudDeploy
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - `CloudDeploy`更名为`CodeArtsDeploy`
+
+### HuaweiCloud SDK CCM
+
+- _新增特性_
+  - 支持以下接口：
+    - `BatchCreateCaTags`
+    - `BatchDeleteCaTags`
+    - `ListCaTags`
+    - `CreateCaTag`
+    - `ListDomainCaTags`
+    - `ListCaResourceInstances`
+    - `CountCaResourceInstances`
+    - `BatchCreateCertTags`
+    - `BatchDeleteCertTags`
+    - `ListCertTags`
+    - `CreateCertTag`
+    - `ListDomainCertTags`
+    - `ListCertResourceInstances`
+    - `CountCertResourceInstances`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK DWS
+
+- _新增特性_
+  - 支持以下接口：
+    - `ShowDatabaseAuthority`
+    - `UpdateDatabaseAuthority`
+    - `SyncIamUsers`
+    - `ListDatabaseUsers`
+    - `ShowDatabaseUser`
+    - `UpdateDatabaseUserInfo`
+    - `ShowDisasterProgress`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **UpdateAlarmSub**
+    - 请求参数变更
+      - `* enable: string -> int32`
+    - 响应参数变更
+      - `* enable: string -> int32`
+  - **DeleteAlarmSub**
+    - 响应参数变更
+      - `* enable: string -> int32`
+  - **ShowDisasterDetail**
+    - 响应参数变更
+      - `+ disaster_recovery`
+      - `- start_time`
+      - `- dr_type`
+      - `- create_time`
+      - `- name`
+      - `- standby_cluster`
+      - `- id`
+      - `- dr_sync_period`
+      - `- status`
+      - `- primary_cluster`
+  - **CreateAlarmSub**
+    - 请求参数变更
+      - `* enable: string -> int32`
+    - 响应参数变更
+      - `* enable: string -> int32`
+  - **ListAlarmSubs**
+    - 响应参数变更
+      - `* alarm_subscriptions.enable: string -> int32`
+
+### HuaweiCloud SDK GaussDB
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 移除接口`ListGaussMySqlErrorLog`、`ListGaussMySqlSlowLog`
+
+### HuaweiCloud SDK IoTDA
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateBatchTask**
+    - 响应参数变更
+      - `- task_progress.device_in_progress`
+      - `- task_progress.rejected`
+  - **ListBatchTasks**
+    - 响应参数变更
+      - `- batchtasks.task_progress.device_in_progress`
+      - `- batchtasks.task_progress.rejected`
+  - **ShowBatchTask**
+    - 响应参数变更
+      - `- batchtask.task_progress.device_in_progress`
+      - `- batchtask.task_progress.rejected`
+
+### HuaweiCloud SDK MRS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListClusters**
+    - 响应参数变更
+      - `+ clusters.eipId`
+      - `+ clusters.eipAddress`
+      - `+ clusters.eipv6Address`
+  - **ShowClusterDetails**
+    - 响应参数变更
+      - `+ cluster.eipId`
+      - `+ cluster.eipAddress`
+      - `+ cluster.eipv6Address`
+
+### HuaweiCloud SDK OCR
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **RecognizeGeneralText**
+    - 请求参数变更
+      - `+ single_orientation_mode`
+
+### HuaweiCloud SDK RDS
+
+- _新增特性_
+  - 支持接口`ModifyCollation`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK RocketMQ
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **SendDlqMessage**
+    - 请求参数变更
+      - `+ engine: enum value [reliability]`
+  - **CreateRocketMqMigrationTask**
+    - 请求参数变更
+      - `+ type: enum value [kafka]`
+
+### HuaweiCloud SDK SIS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowVocabularies**
+    - 请求参数变更
+      - `+ offset`
+      - `+ limit`
+
 # 3.1.43 2023-06-08
 
 ### HuaweiCloud SDK iDME
