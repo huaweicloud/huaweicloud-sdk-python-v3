@@ -37,7 +37,7 @@ class UpdateLineGroupsBody:
         :type name: str
         :param description: 线路分组的描述信息。长度不超过255个字符。默认值为空。
         :type description: str
-        :param lines: 线路分组的描述信息。长度不超过255个字符。默认值为空。
+        :param lines: 线路列表。
         :type lines: list[str]
         """
         
@@ -101,7 +101,7 @@ class UpdateLineGroupsBody:
     def lines(self):
         """Gets the lines of this UpdateLineGroupsBody.
 
-        线路分组的描述信息。长度不超过255个字符。默认值为空。
+        线路列表。
 
         :return: The lines of this UpdateLineGroupsBody.
         :rtype: list[str]
@@ -112,7 +112,7 @@ class UpdateLineGroupsBody:
     def lines(self, lines):
         """Sets the lines of this UpdateLineGroupsBody.
 
-        线路分组的描述信息。长度不超过255个字符。默认值为空。
+        线路列表。
 
         :param lines: The lines of this UpdateLineGroupsBody.
         :type lines: list[str]

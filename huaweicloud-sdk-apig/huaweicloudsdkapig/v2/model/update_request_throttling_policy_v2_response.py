@@ -64,7 +64,7 @@ class UpdateRequestThrottlingPolicyV2Response(SdkResponse):
         :type time_unit: str
         :param remark: 流控策略描述字符长度不超过255。 &gt; 中文字符必须为UTF-8或者unicode编码。
         :type remark: str
-        :param api_call_limits: API流量限制是指时长内一个API能够被访问的次数上限。该值不超过系统默认配额限制，系统默认配额为200tps，用户可根据实际情况修改该系统默认配额。输入的值不超过2147483647。正整数。 
+        :param api_call_limits: API流量限制是指时长内一个API能够被访问的次数上限。该值不超过系统默认配额限制，系统默认配额为200tps，用户可根据实际情况修改该系统默认配额。输入的值不超过2147483647。正整数。
         :type api_call_limits: int
         :param type: 流控策略的类型 - 1：基础，表示绑定到流控策略的单个API流控时间内能够被调用多少次。 - 2：共享，表示绑定到流控策略的所有API流控时间内能够被调用多少次。
         :type type: int
@@ -221,7 +221,7 @@ class UpdateRequestThrottlingPolicyV2Response(SdkResponse):
     def api_call_limits(self):
         """Gets the api_call_limits of this UpdateRequestThrottlingPolicyV2Response.
 
-        API流量限制是指时长内一个API能够被访问的次数上限。该值不超过系统默认配额限制，系统默认配额为200tps，用户可根据实际情况修改该系统默认配额。输入的值不超过2147483647。正整数。 
+        API流量限制是指时长内一个API能够被访问的次数上限。该值不超过系统默认配额限制，系统默认配额为200tps，用户可根据实际情况修改该系统默认配额。输入的值不超过2147483647。正整数。
 
         :return: The api_call_limits of this UpdateRequestThrottlingPolicyV2Response.
         :rtype: int
@@ -232,7 +232,7 @@ class UpdateRequestThrottlingPolicyV2Response(SdkResponse):
     def api_call_limits(self, api_call_limits):
         """Sets the api_call_limits of this UpdateRequestThrottlingPolicyV2Response.
 
-        API流量限制是指时长内一个API能够被访问的次数上限。该值不超过系统默认配额限制，系统默认配额为200tps，用户可根据实际情况修改该系统默认配额。输入的值不超过2147483647。正整数。 
+        API流量限制是指时长内一个API能够被访问的次数上限。该值不超过系统默认配额限制，系统默认配额为200tps，用户可根据实际情况修改该系统默认配额。输入的值不超过2147483647。正整数。
 
         :param api_call_limits: The api_call_limits of this UpdateRequestThrottlingPolicyV2Response.
         :type api_call_limits: int

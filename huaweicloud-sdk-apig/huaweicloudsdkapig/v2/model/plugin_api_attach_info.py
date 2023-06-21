@@ -53,7 +53,7 @@ class PluginApiAttachInfo:
         :type plugin_id: str
         :param plugin_name: 插件名称。支持汉字，英文，数字，中划线，下划线，且只能以英文和汉字开头，3-255字符 &gt; 中文字符必须为UTF-8或者unicode编码。
         :type plugin_name: str
-        :param plugin_type: 插件类型 - cors：跨域资源共享 - set_resp_headers：HTTP响应头管理 - kafka_log：Kafka日志推送 - breaker：断路器 - rate_limit: 流量控制
+        :param plugin_type: 插件类型 - cors：跨域资源共享 - set_resp_headers：HTTP响应头管理 - kafka_log：Kafka日志推送 - breaker：断路器 - rate_limit: 流量控制 - third_auth: 第三方认证
         :type plugin_type: str
         :param plugin_scope: 插件可见范围。global：全局可见。
         :type plugin_scope: str
@@ -174,7 +174,7 @@ class PluginApiAttachInfo:
     def plugin_type(self):
         """Gets the plugin_type of this PluginApiAttachInfo.
 
-        插件类型 - cors：跨域资源共享 - set_resp_headers：HTTP响应头管理 - kafka_log：Kafka日志推送 - breaker：断路器 - rate_limit: 流量控制
+        插件类型 - cors：跨域资源共享 - set_resp_headers：HTTP响应头管理 - kafka_log：Kafka日志推送 - breaker：断路器 - rate_limit: 流量控制 - third_auth: 第三方认证
 
         :return: The plugin_type of this PluginApiAttachInfo.
         :rtype: str
@@ -185,7 +185,7 @@ class PluginApiAttachInfo:
     def plugin_type(self, plugin_type):
         """Sets the plugin_type of this PluginApiAttachInfo.
 
-        插件类型 - cors：跨域资源共享 - set_resp_headers：HTTP响应头管理 - kafka_log：Kafka日志推送 - breaker：断路器 - rate_limit: 流量控制
+        插件类型 - cors：跨域资源共享 - set_resp_headers：HTTP响应头管理 - kafka_log：Kafka日志推送 - breaker：断路器 - rate_limit: 流量控制 - third_auth: 第三方认证
 
         :param plugin_type: The plugin_type of this PluginApiAttachInfo.
         :type plugin_type: str

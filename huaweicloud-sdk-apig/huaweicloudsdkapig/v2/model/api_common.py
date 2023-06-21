@@ -125,7 +125,7 @@ class ApiCommon:
         :type req_protocol: str
         :param req_method: API的请求方式
         :type req_method: str
-        :param req_uri: 请求地址。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ . 等特殊字符，总长度不超过512，且满足URI规范。 &gt; 需要服从URI规范。
+        :param req_uri: 请求地址。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ . 等特殊字符，总长度不超过512，且满足URI规范。  &gt; 需要服从URI规范。
         :type req_uri: str
         :param auth_type: API的认证方式 - NONE：无认证 - APP：APP认证 - IAM：IAM认证 - AUTHORIZER：自定义认证
         :type auth_type: str
@@ -149,7 +149,7 @@ class ApiCommon:
         :type result_failure_sample: str
         :param authorizer_id: 前端自定义认证对象的ID
         :type authorizer_id: str
-        :param tags: 标签。  支持英文，数字，下划线，且只能以英文开头。支持输入多个标签，不同标签以英文逗号分割。 
+        :param tags: 标签。  支持英文，数字，中文，特殊符号（-*#%.:_），且只能以中文或英文开头。  默认支持10个标签，如需扩大配额请联系技术工程师修改API_TAG_NUM_LIMIT配置。 
         :type tags: list[str]
         :param response_id: 分组自定义响应ID
         :type response_id: str
@@ -448,7 +448,7 @@ class ApiCommon:
     def req_uri(self):
         """Gets the req_uri of this ApiCommon.
 
-        请求地址。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ . 等特殊字符，总长度不超过512，且满足URI规范。 > 需要服从URI规范。
+        请求地址。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ . 等特殊字符，总长度不超过512，且满足URI规范。  > 需要服从URI规范。
 
         :return: The req_uri of this ApiCommon.
         :rtype: str
@@ -459,7 +459,7 @@ class ApiCommon:
     def req_uri(self, req_uri):
         """Sets the req_uri of this ApiCommon.
 
-        请求地址。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ . 等特殊字符，总长度不超过512，且满足URI规范。 > 需要服从URI规范。
+        请求地址。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ . 等特殊字符，总长度不超过512，且满足URI规范。  > 需要服从URI规范。
 
         :param req_uri: The req_uri of this ApiCommon.
         :type req_uri: str
@@ -708,7 +708,7 @@ class ApiCommon:
     def tags(self):
         """Gets the tags of this ApiCommon.
 
-        标签。  支持英文，数字，下划线，且只能以英文开头。支持输入多个标签，不同标签以英文逗号分割。 
+        标签。  支持英文，数字，中文，特殊符号（-*#%.:_），且只能以中文或英文开头。  默认支持10个标签，如需扩大配额请联系技术工程师修改API_TAG_NUM_LIMIT配置。 
 
         :return: The tags of this ApiCommon.
         :rtype: list[str]
@@ -719,7 +719,7 @@ class ApiCommon:
     def tags(self, tags):
         """Sets the tags of this ApiCommon.
 
-        标签。  支持英文，数字，下划线，且只能以英文开头。支持输入多个标签，不同标签以英文逗号分割。 
+        标签。  支持英文，数字，中文，特殊符号（-*#%.:_），且只能以中文或英文开头。  默认支持10个标签，如需扩大配额请联系技术工程师修改API_TAG_NUM_LIMIT配置。 
 
         :param tags: The tags of this ApiCommon.
         :type tags: list[str]

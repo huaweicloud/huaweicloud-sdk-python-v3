@@ -31,7 +31,7 @@ class UpdateDeploymentGroupRequest:
 
         The model defined in huaweicloud sdk
 
-        :param group_id: 主机组ID
+        :param group_id: 主机集群ID
         :type group_id: str
         :param body: Body of the UpdateDeploymentGroupRequest
         :type body: :class:`huaweicloudsdkcodeartsdeploy.v2.DeploymentGroupUpdateRequest`
@@ -51,7 +51,7 @@ class UpdateDeploymentGroupRequest:
     def group_id(self):
         """Gets the group_id of this UpdateDeploymentGroupRequest.
 
-        主机组ID
+        主机集群ID
 
         :return: The group_id of this UpdateDeploymentGroupRequest.
         :rtype: str
@@ -62,7 +62,7 @@ class UpdateDeploymentGroupRequest:
     def group_id(self, group_id):
         """Sets the group_id of this UpdateDeploymentGroupRequest.
 
-        主机组ID
+        主机集群ID
 
         :param group_id: The group_id of this UpdateDeploymentGroupRequest.
         :type group_id: str

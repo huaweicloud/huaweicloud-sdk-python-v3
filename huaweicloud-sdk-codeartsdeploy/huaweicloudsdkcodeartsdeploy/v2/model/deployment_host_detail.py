@@ -77,7 +77,7 @@ class DeploymentHostDetail:
 
         The model defined in huaweicloud sdk
 
-        :param group_id: 主机组id
+        :param group_id: 主机集群id
         :type group_id: str
         :param host_name: 主机名称
         :type host_name: str
@@ -85,7 +85,7 @@ class DeploymentHostDetail:
         :type ip: str
         :param port: ssh端口，如：22
         :type port: int
-        :param os: 操作系统：windows|linux，需要和主机组保持一致
+        :param os: 操作系统：windows|linux，需要和主机集群保持一致
         :type os: str
         :param as_proxy: 是否为代理机
         :type as_proxy: bool
@@ -99,7 +99,7 @@ class DeploymentHostDetail:
         :type host_id: str
         :param proxy_host: 
         :type proxy_host: :class:`huaweicloudsdkcodeartsdeploy.v2.DeploymentHostDetail`
-        :param group_name: 主机组名
+        :param group_name: 主机集群名
         :type group_name: str
         :param project_id: 项目id
         :type project_id: str
@@ -206,7 +206,7 @@ class DeploymentHostDetail:
     def group_id(self):
         """Gets the group_id of this DeploymentHostDetail.
 
-        主机组id
+        主机集群id
 
         :return: The group_id of this DeploymentHostDetail.
         :rtype: str
@@ -217,7 +217,7 @@ class DeploymentHostDetail:
     def group_id(self, group_id):
         """Sets the group_id of this DeploymentHostDetail.
 
-        主机组id
+        主机集群id
 
         :param group_id: The group_id of this DeploymentHostDetail.
         :type group_id: str
@@ -294,7 +294,7 @@ class DeploymentHostDetail:
     def os(self):
         """Gets the os of this DeploymentHostDetail.
 
-        操作系统：windows|linux，需要和主机组保持一致
+        操作系统：windows|linux，需要和主机集群保持一致
 
         :return: The os of this DeploymentHostDetail.
         :rtype: str
@@ -305,7 +305,7 @@ class DeploymentHostDetail:
     def os(self, os):
         """Sets the os of this DeploymentHostDetail.
 
-        操作系统：windows|linux，需要和主机组保持一致
+        操作系统：windows|linux，需要和主机集群保持一致
 
         :param os: The os of this DeploymentHostDetail.
         :type os: str
@@ -440,7 +440,7 @@ class DeploymentHostDetail:
     def group_name(self):
         """Gets the group_name of this DeploymentHostDetail.
 
-        主机组名
+        主机集群名
 
         :return: The group_name of this DeploymentHostDetail.
         :rtype: str
@@ -451,7 +451,7 @@ class DeploymentHostDetail:
     def group_name(self, group_name):
         """Sets the group_name of this DeploymentHostDetail.
 
-        主机组名
+        主机集群名
 
         :param group_name: The group_name of this DeploymentHostDetail.
         :type group_name: str

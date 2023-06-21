@@ -39,9 +39,9 @@ class ResourceConfigDTO:
         :type cpu: float
         :param memory: 内存大小
         :type memory: float
-        :param gpu: cpu个数
+        :param gpu: gpu内存大小，单位为M
         :type gpu: float
-        :param npu: cpu个数
+        :param npu: 使用npu加速卡个数
         :type npu: float
         """
         
@@ -110,7 +110,7 @@ class ResourceConfigDTO:
     def gpu(self):
         """Gets the gpu of this ResourceConfigDTO.
 
-        cpu个数
+        gpu内存大小，单位为M
 
         :return: The gpu of this ResourceConfigDTO.
         :rtype: float
@@ -121,7 +121,7 @@ class ResourceConfigDTO:
     def gpu(self, gpu):
         """Sets the gpu of this ResourceConfigDTO.
 
-        cpu个数
+        gpu内存大小，单位为M
 
         :param gpu: The gpu of this ResourceConfigDTO.
         :type gpu: float
@@ -132,7 +132,7 @@ class ResourceConfigDTO:
     def npu(self):
         """Gets the npu of this ResourceConfigDTO.
 
-        cpu个数
+        使用npu加速卡个数
 
         :return: The npu of this ResourceConfigDTO.
         :rtype: float
@@ -143,7 +143,7 @@ class ResourceConfigDTO:
     def npu(self, npu):
         """Sets the npu of this ResourceConfigDTO.
 
-        cpu个数
+        使用npu加速卡个数
 
         :param npu: The npu of this ResourceConfigDTO.
         :type npu: float

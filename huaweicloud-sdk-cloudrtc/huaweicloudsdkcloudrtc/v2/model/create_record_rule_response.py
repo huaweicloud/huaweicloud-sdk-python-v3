@@ -52,7 +52,7 @@ class CreateRecordRuleResponse(SdkResponse):
         :type app_id: str
         :param obs_addr: 
         :type obs_addr: :class:`huaweicloudsdkcloudrtc.v2.RecordObsFileAddr`
-        :param record_formats: 录制格式：hls格式或者mp4格式
+        :param record_formats: 录制格式：HLS格式或者MP4格式
         :type record_formats: list[str]
         :param hls_config: 
         :type hls_config: :class:`huaweicloudsdkcloudrtc.v2.HLSRecordConfig`
@@ -164,7 +164,7 @@ class CreateRecordRuleResponse(SdkResponse):
     def record_formats(self):
         """Gets the record_formats of this CreateRecordRuleResponse.
 
-        录制格式：hls格式或者mp4格式
+        录制格式：HLS格式或者MP4格式
 
         :return: The record_formats of this CreateRecordRuleResponse.
         :rtype: list[str]
@@ -175,7 +175,7 @@ class CreateRecordRuleResponse(SdkResponse):
     def record_formats(self, record_formats):
         """Sets the record_formats of this CreateRecordRuleResponse.
 
-        录制格式：hls格式或者mp4格式
+        录制格式：HLS格式或者MP4格式
 
         :param record_formats: The record_formats of this CreateRecordRuleResponse.
         :type record_formats: list[str]

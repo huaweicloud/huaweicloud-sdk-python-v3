@@ -18,29 +18,25 @@ class ComponentStorage:
 
     openapi_types = {
         'type': 'str',
-        'name': 'str',
-        'parameters': 'ComponentStorage',
+        'parameters': 'StorageParameter',
         'mounts': 'list[ComponentMount]'
     }
 
     attribute_map = {
         'type': 'type',
-        'name': 'name',
         'parameters': 'parameters',
         'mounts': 'mounts'
     }
 
-    def __init__(self, type=None, name=None, parameters=None, mounts=None):
+    def __init__(self, type=None, parameters=None, mounts=None):
         """ComponentStorage
 
         The model defined in huaweicloud sdk
 
         :param type: 
         :type type: str
-        :param name: 存储盘的名字
-        :type name: str
         :param parameters: 
-        :type parameters: :class:`huaweicloudsdkservicestage.v2.ComponentStorage`
+        :type parameters: :class:`huaweicloudsdkservicestage.v2.StorageParameter`
         :param mounts: 
         :type mounts: list[:class:`huaweicloudsdkservicestage.v2.ComponentMount`]
         """
@@ -48,19 +44,13 @@ class ComponentStorage:
         
 
         self._type = None
-        self._name = None
         self._parameters = None
         self._mounts = None
         self.discriminator = None
 
-        if type is not None:
-            self.type = type
-        if name is not None:
-            self.name = name
-        if parameters is not None:
-            self.parameters = parameters
-        if mounts is not None:
-            self.mounts = mounts
+        self.type = type
+        self.parameters = parameters
+        self.mounts = mounts
 
     @property
     def type(self):
@@ -81,33 +71,11 @@ class ComponentStorage:
         self._type = type
 
     @property
-    def name(self):
-        """Gets the name of this ComponentStorage.
-
-        存储盘的名字
-
-        :return: The name of this ComponentStorage.
-        :rtype: str
-        """
-        return self._name
-
-    @name.setter
-    def name(self, name):
-        """Sets the name of this ComponentStorage.
-
-        存储盘的名字
-
-        :param name: The name of this ComponentStorage.
-        :type name: str
-        """
-        self._name = name
-
-    @property
     def parameters(self):
         """Gets the parameters of this ComponentStorage.
 
         :return: The parameters of this ComponentStorage.
-        :rtype: :class:`huaweicloudsdkservicestage.v2.ComponentStorage`
+        :rtype: :class:`huaweicloudsdkservicestage.v2.StorageParameter`
         """
         return self._parameters
 
@@ -116,7 +84,7 @@ class ComponentStorage:
         """Sets the parameters of this ComponentStorage.
 
         :param parameters: The parameters of this ComponentStorage.
-        :type parameters: :class:`huaweicloudsdkservicestage.v2.ComponentStorage`
+        :type parameters: :class:`huaweicloudsdkservicestage.v2.StorageParameter`
         """
         self._parameters = parameters
 

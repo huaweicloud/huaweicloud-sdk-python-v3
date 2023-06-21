@@ -1,3 +1,287 @@
+# 3.1.45 2023-06-21
+
+### HuaweiCloud SDK DataArtsStudio
+
+- _Features_
+  - Support the service `DataArtsStudio`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK KooMessage
+
+- _Features_
+  - Support the service `KooMessage`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK APIG
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **DeleteGatewayResponseTypeV2**
+    - changes of request param
+      - `+ response_type: enum value [THIRD_AUTH_FAILURE,THIRD_AUTH_IDENTITIES_FAILURE,THIRD_AUTH_CONF_FAILURE]`
+  - **ShowDetailsOfGatewayResponseTypeV2**
+    - changes of request param
+      - `+ response_type: enum value [THIRD_AUTH_FAILURE,THIRD_AUTH_IDENTITIES_FAILURE,THIRD_AUTH_CONF_FAILURE]`
+  - **UpdateGatewayResponseTypeV2**
+    - changes of request param
+      - `+ response_type: enum value [THIRD_AUTH_FAILURE,THIRD_AUTH_IDENTITIES_FAILURE,THIRD_AUTH_CONF_FAILURE]`
+  - **ShowPlugin**
+    - changes of response param
+      - `+ plugin_type: enum value [third_auth]`
+  - **UpdatePlugin**
+    - changes of request param
+      - `+ plugin_type: enum value [third_auth]`
+    - changes of response param
+      - `+ plugin_type: enum value [third_auth]`
+  - **CreatePlugin**
+    - changes of request param
+      - `+ plugin_type: enum value [third_auth]`
+    - changes of response param
+      - `+ plugin_type: enum value [third_auth]`
+  - **ListPlugins**
+    - changes of response param
+      - `+ plugins.plugin_type: enum value [third_auth]`
+  - **AttachApiToPlugin**
+    - changes of response param
+      - `+ attached_plugins.plugin_type: enum value [third_auth]`
+  - **AttachPluginToApi**
+    - changes of response param
+      - `+ attached_plugins.plugin_type: enum value [third_auth]`
+  - **ListApiAttachedPlugins**
+    - changes of response param
+      - `+ plugins.plugin_type: enum value [third_auth]`
+  - **ListApiAttachablePlugins**
+    - changes of response param
+      - `+ plugins.plugin_type: enum value [third_auth]`
+  - **ShowDetailsOfVpcChannelV2**
+    - changes of response param
+      - `+ microservice_info.cce_service_info`
+      - `+ microservice_info.service_type: enum value [CCE_SERVICE]`
+      - `+ microservice_info.cce_info.label_key`
+      - `+ microservice_info.cce_info.label_value`
+  - **UpdateVpcChannelV2**
+    - changes of request param
+      - `+ microservice_info.cce_service_info`
+      - `+ microservice_info.service_type: enum value [CCE_SERVICE]`
+      - `+ microservice_info.cce_info.label_key`
+      - `+ microservice_info.cce_info.label_value`
+    - changes of response param
+      - `+ microservice_info.cce_service_info`
+      - `+ microservice_info.service_type: enum value [CCE_SERVICE]`
+      - `+ microservice_info.cce_info.label_key`
+      - `+ microservice_info.cce_info.label_value`
+  - **ImportMicroservice**
+    - changes of request param
+      - `+ cce_service_info`
+      - `+ service_type: enum value [CCE_SERVICE]`
+      - `+ cce_info.label_key`
+      - `+ cce_info.label_value`
+  - **CreateVpcChannelV2**
+    - changes of request param
+      - `+ microservice_info.cce_service_info`
+      - `+ microservice_info.service_type: enum value [CCE_SERVICE]`
+      - `+ microservice_info.cce_info.label_key`
+      - `+ microservice_info.cce_info.label_value`
+    - changes of response param
+      - `+ microservice_info.cce_service_info`
+      - `+ microservice_info.service_type: enum value [CCE_SERVICE]`
+      - `+ microservice_info.cce_info.label_key`
+      - `+ microservice_info.cce_info.label_value`
+  - **ListVpcChannelsV2**
+    - changes of response param
+      - `+ vpc_channels.microservice_info.cce_service_info`
+      - `+ vpc_channels.microservice_info.service_type: enum value [CCE_SERVICE]`
+      - `+ vpc_channels.microservice_info.cce_info.label_key`
+      - `+ vpc_channels.microservice_info.cce_info.label_value`
+
+### HuaweiCloud SDK Classroom
+
+- _Features_
+  - Support the following interfaces：
+    - `ListPackages`
+    - `ShowPackageDetail`
+    - `ListExercises`
+    - `ShowExerciseDetail`
+    - `ExecuteExercise`
+    - `ListAllDifficults`
+    - `ListMyKnowledgePoints`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ApplyJudgement**
+    - changes of request param
+      - `+ runtime_type: enum value [javaScript]`
+
+### HuaweiCloud SDK CloudRTC
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **UpdateAutoRecord**
+    - changes of response param
+      - `- auto_record_mode`
+      - `- app_id`
+  - **CreateMixJob**
+    - changes of response param
+      - `+ mix_param.encode_template: enum value [1920*1080_30_4620,1920*1080_30_3150,1920*1080_15_3460,1920*1080_15_2080,1280*720_30_3420,1280*720_30_1710,1280*720_15_2260,1280*720_15_1130,640*480_30_1000,640*480_30_1500,640*480_15_500,480*360_30_490,480*360_15_320]`
+      - `- mix_param.encode_template: enum value [1920x1080_30_4620,1920x1080_15_3460,1280x720_30_3420,1280x720_15_2260]`
+  - **ShowMixJob**
+    - changes of response param
+      - `+ mix_param.encode_template: enum value [1920*1080_30_4620,1920*1080_30_3150,1920*1080_15_3460,1920*1080_15_2080,1280*720_30_3420,1280*720_30_1710,1280*720_15_2260,1280*720_15_1130,640*480_30_1000,640*480_30_1500,640*480_15_500,480*360_30_490,480*360_15_320]`
+      - `- mix_param.encode_template: enum value [1920x1080_30_4620,1920x1080_15_3460,1280x720_30_3420,1280x720_15_2260]`
+  - **UpdateMixJob**
+    - changes of response param
+      - `+ mix_param.encode_template: enum value [1920*1080_30_4620,1920*1080_30_3150,1920*1080_15_3460,1920*1080_15_2080,1280*720_30_3420,1280*720_30_1710,1280*720_15_2260,1280*720_15_1130,640*480_30_1000,640*480_30_1500,640*480_15_500,480*360_30_490,480*360_15_320]`
+      - `- mix_param.encode_template: enum value [1920x1080_30_4620,1920x1080_15_3460,1280x720_30_3420,1280x720_15_2260]`
+
+### HuaweiCloud SDK CloudTable
+
+- _Features_
+  - Support the following interfaces：
+    - `EnableComponent`
+    - `ExpandClusterComponent`
+    - `RebootCloudTableCluster`
+    - `ShowClusterSetting`
+    - `UpdateClusterSetting`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK DNS
+
+- _Features_
+  - Support the interface `ShowDomainQuota`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowRecordSetWithLine**
+    - changes of response param
+      - `+ bundle`
+  - **SetRecordSetsStatus**
+    - changes of response param
+      - `+ bundle`
+  - **BatchUpdateRecordSetWithLine**
+    - changes of response param
+      - `+ bundle`
+      - `+ recordsets.bundle`
+  - **BatchDeleteRecordSetWithLine**
+    - changes of response param
+      - `+ bundle`
+      - `+ recordsets.bundle`
+  - **CreateRecordSetWithBatchLines**
+    - changes of response param
+      - `+ bundle`
+      - `+ recordsets.bundle`
+
+### HuaweiCloud SDK DWS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListAvailableDisasterClusters**
+    - changes of request param
+      - `* primary_cluster_id: optional -> required`
+      - `* standby_az_code: optional -> required`
+
+### HuaweiCloud SDK eiHealth
+
+- _Features_
+  - Support the following interfaces：
+    - `ListDrugJob`
+    - `CancelDrugJob`
+    - `DeleteDrugJob`
+    - `CreateOptmJob`
+    - `ShowOptmJob`
+    - `CreateSynthesisJob`
+    - `ShowSynthesisJob`
+    - `CreateDockingJob`
+    - `ShowDockingJob`
+    - `CreateFepJob`
+    - `ShowFepJob`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK GaussDBforopenGauss
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateDbInstance**
+    - changes of response param
+      - `+ instance.ha.consistency_protocol`
+
+### HuaweiCloud SDK IoTEdge
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateEdgeNode**
+    - changes of request param
+      - `+ npu_library_path`
+      - `+ device_data_format`
+      - `+ automatic_upgrade`
+      - `+ device_data_record`
+      - `+ metric_report`
+      - `+ base_path.offline_cache_configs`
+    - changes of response param
+      - `+ device_data_record`
+      - `+ device_data_format`
+      - `+ metric_report`
+      - `+ automatic_upgrade`
+      - `+ base_path.offline_cache_configs`
+  - **ShowEdgeNode**
+    - changes of response param
+      - `+ device_data_record`
+      - `+ device_data_format`
+      - `+ metric_report`
+      - `+ npu_library_path`
+      - `+ automatic_upgrade`
+      - `+ base_path.offline_cache_configs`
+  - **CreateEdgeApplicationVersion**
+    - changes of request param
+      - `+ container_settings.npu_type`
+      - `+ container_settings.vnpu_template`
+    - changes of response param
+      - `+ container_settings.npu_type`
+      - `+ container_settings.vnpu_template`
+  - **ShowEdgeApplicationVersion**
+    - changes of response param
+      - `+ container_settings.npu_type`
+      - `+ container_settings.vnpu_template`
+  - **UpdateEdgeApplicationVersion**
+    - changes of request param
+      - `+ container_settings.npu_type`
+      - `+ container_settings.vnpu_template`
+
+### HuaweiCloud SDK RDS
+
+- _Features_
+  - Support the interfaces `ListPredefinedTag`, `ListSimplifiedInstances`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
 # 3.1.44 2023-06-15
 
 ### HuaweiCloud SDK CloudDeploy

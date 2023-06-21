@@ -59,7 +59,7 @@ class MixLayoutPane:
         :type y: float
         :param width: 窗格宽，归一化百分比，小数取值范围在float内，自定义布局场景下填写本字段。
         :type width: float
-        :param height: 窗格宽，归一化百分比，小数取值范围在float内，自定义布局场景下填写本字段。
+        :param height: 窗格高，归一化百分比，小数取值范围在float内，自定义布局场景下填写本字段。
         :type height: float
         :param zorder: 叠放顺序，0为最底层，1层在0层之上，以此类推，最大支持25层，自定义布局场景下填写本字段。
         :type zorder: int
@@ -240,7 +240,7 @@ class MixLayoutPane:
     def height(self):
         """Gets the height of this MixLayoutPane.
 
-        窗格宽，归一化百分比，小数取值范围在float内，自定义布局场景下填写本字段。
+        窗格高，归一化百分比，小数取值范围在float内，自定义布局场景下填写本字段。
 
         :return: The height of this MixLayoutPane.
         :rtype: float
@@ -251,7 +251,7 @@ class MixLayoutPane:
     def height(self, height):
         """Sets the height of this MixLayoutPane.
 
-        窗格宽，归一化百分比，小数取值范围在float内，自定义布局场景下填写本字段。
+        窗格高，归一化百分比，小数取值范围在float内，自定义布局场景下填写本字段。
 
         :param height: The height of this MixLayoutPane.
         :type height: float

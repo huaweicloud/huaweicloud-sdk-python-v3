@@ -49,7 +49,7 @@ class DeploymentHost:
         :type ip: str
         :param port: ssh端口，如：22
         :type port: int
-        :param os: 操作系统：windows|linux，需要和主机组保持一致
+        :param os: 操作系统：windows|linux，需要和主机集群保持一致
         :type os: str
         :param as_proxy: 是否为代理机
         :type as_proxy: bool
@@ -154,7 +154,7 @@ class DeploymentHost:
     def os(self):
         """Gets the os of this DeploymentHost.
 
-        操作系统：windows|linux，需要和主机组保持一致
+        操作系统：windows|linux，需要和主机集群保持一致
 
         :return: The os of this DeploymentHost.
         :rtype: str
@@ -165,7 +165,7 @@ class DeploymentHost:
     def os(self, os):
         """Sets the os of this DeploymentHost.
 
-        操作系统：windows|linux，需要和主机组保持一致
+        操作系统：windows|linux，需要和主机集群保持一致
 
         :param os: The os of this DeploymentHost.
         :type os: str

@@ -45,7 +45,7 @@ class DeploymentHostInfo:
 
         The model defined in huaweicloud sdk
 
-        :param group_id: 主机组id
+        :param group_id: 主机集群id
         :type group_id: str
         :param host_name: 主机名称
         :type host_name: str
@@ -53,7 +53,7 @@ class DeploymentHostInfo:
         :type ip: str
         :param port: ssh端口，如：22
         :type port: int
-        :param os: 操作系统：windows|linux，需要和主机组保持一致
+        :param os: 操作系统：windows|linux，需要和主机集群保持一致
         :type os: str
         :param as_proxy: 是否为代理机
         :type as_proxy: bool
@@ -94,7 +94,7 @@ class DeploymentHostInfo:
     def group_id(self):
         """Gets the group_id of this DeploymentHostInfo.
 
-        主机组id
+        主机集群id
 
         :return: The group_id of this DeploymentHostInfo.
         :rtype: str
@@ -105,7 +105,7 @@ class DeploymentHostInfo:
     def group_id(self, group_id):
         """Sets the group_id of this DeploymentHostInfo.
 
-        主机组id
+        主机集群id
 
         :param group_id: The group_id of this DeploymentHostInfo.
         :type group_id: str
@@ -182,7 +182,7 @@ class DeploymentHostInfo:
     def os(self):
         """Gets the os of this DeploymentHostInfo.
 
-        操作系统：windows|linux，需要和主机组保持一致
+        操作系统：windows|linux，需要和主机集群保持一致
 
         :return: The os of this DeploymentHostInfo.
         :rtype: str
@@ -193,7 +193,7 @@ class DeploymentHostInfo:
     def os(self, os):
         """Sets the os of this DeploymentHostInfo.
 
-        操作系统：windows|linux，需要和主机组保持一致
+        操作系统：windows|linux，需要和主机集群保持一致
 
         :param os: The os of this DeploymentHostInfo.
         :type os: str

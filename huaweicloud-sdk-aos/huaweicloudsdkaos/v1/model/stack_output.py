@@ -37,7 +37,7 @@ class StackOutput:
 
         The model defined in huaweicloud sdk
 
-        :param name: 资源栈输出的名称，由用户在模板中定义  以 HCL 模板为例，name 为 vpc_id  &#x60;&#x60;&#x60;hcl output \&quot;vpc_id\&quot; {   value &#x3D; huaweicloud_vpc.my_hello_world_vpc.id } &#x60;&#x60;&#x60;  以 json 模板为例，name 为 vpc_id &#x60;&#x60;&#x60;json {   \&quot;output\&quot;: {     \&quot;vpc_id\&quot;: [       {         \&quot;value\&quot;: \&quot;${huaweicloud_vpc.my_hello_world_vpc.id}\&quot;       }     ]   } } &#x60;&#x60;&#x60;
+        :param name: 资源栈输出的名称，由用户在模板中定义  以 HCL 模板为例，name 为 vpc_id  &#x60;&#x60;&#x60;hcl output \&quot;vpc_id\&quot; {   value &#x3D; huaweicloud_vpc.my_hello_world_vpc.id } &#x60;&#x60;&#x60;  以 json 模板为例，name 为 vpc_id &#x60;&#x60;&#x60;json {   \&quot;output\&quot;: {     \&quot;vpc_id\&quot;: [       {         \&quot;value\&quot;: \&quot;${huaweicloud_vpc.my_hello_world_vpc.id}\&quot;       }     ]   } } &#x60;&#x60;&#x60; 
         :type name: str
         :param description: 资源栈输出的描述，由用户在模板中定义
         :type description: str
@@ -45,7 +45,7 @@ class StackOutput:
         :type type: str
         :param value: 资源栈输出的值
         :type value: str
-        :param sensitive: 标识该资源栈输出是否为敏感信息，由用户在模板中定义  若用户在模板中将该输出定义为sensitive，则返回体中该输出的value和type不会返回真实值，而是返回&#x60;&lt;sensitive&gt;&#x60;
+        :param sensitive: 标识该资源栈输出是否为敏感信息，由用户在模板中定义  若用户在模板中将该输出定义为sensitive，则返回体中该输出的value和type不会返回真实值，而是返回&#x60;&lt;sensitive&gt;&#x60; 
         :type sensitive: bool
         """
         
@@ -73,7 +73,7 @@ class StackOutput:
     def name(self):
         """Gets the name of this StackOutput.
 
-        资源栈输出的名称，由用户在模板中定义  以 HCL 模板为例，name 为 vpc_id  ```hcl output \"vpc_id\" {   value = huaweicloud_vpc.my_hello_world_vpc.id } ```  以 json 模板为例，name 为 vpc_id ```json {   \"output\": {     \"vpc_id\": [       {         \"value\": \"${huaweicloud_vpc.my_hello_world_vpc.id}\"       }     ]   } } ```
+        资源栈输出的名称，由用户在模板中定义  以 HCL 模板为例，name 为 vpc_id  ```hcl output \"vpc_id\" {   value = huaweicloud_vpc.my_hello_world_vpc.id } ```  以 json 模板为例，name 为 vpc_id ```json {   \"output\": {     \"vpc_id\": [       {         \"value\": \"${huaweicloud_vpc.my_hello_world_vpc.id}\"       }     ]   } } ``` 
 
         :return: The name of this StackOutput.
         :rtype: str
@@ -84,7 +84,7 @@ class StackOutput:
     def name(self, name):
         """Sets the name of this StackOutput.
 
-        资源栈输出的名称，由用户在模板中定义  以 HCL 模板为例，name 为 vpc_id  ```hcl output \"vpc_id\" {   value = huaweicloud_vpc.my_hello_world_vpc.id } ```  以 json 模板为例，name 为 vpc_id ```json {   \"output\": {     \"vpc_id\": [       {         \"value\": \"${huaweicloud_vpc.my_hello_world_vpc.id}\"       }     ]   } } ```
+        资源栈输出的名称，由用户在模板中定义  以 HCL 模板为例，name 为 vpc_id  ```hcl output \"vpc_id\" {   value = huaweicloud_vpc.my_hello_world_vpc.id } ```  以 json 模板为例，name 为 vpc_id ```json {   \"output\": {     \"vpc_id\": [       {         \"value\": \"${huaweicloud_vpc.my_hello_world_vpc.id}\"       }     ]   } } ``` 
 
         :param name: The name of this StackOutput.
         :type name: str
@@ -161,7 +161,7 @@ class StackOutput:
     def sensitive(self):
         """Gets the sensitive of this StackOutput.
 
-        标识该资源栈输出是否为敏感信息，由用户在模板中定义  若用户在模板中将该输出定义为sensitive，则返回体中该输出的value和type不会返回真实值，而是返回`<sensitive>`
+        标识该资源栈输出是否为敏感信息，由用户在模板中定义  若用户在模板中将该输出定义为sensitive，则返回体中该输出的value和type不会返回真实值，而是返回`<sensitive>` 
 
         :return: The sensitive of this StackOutput.
         :rtype: bool
@@ -172,7 +172,7 @@ class StackOutput:
     def sensitive(self, sensitive):
         """Sets the sensitive of this StackOutput.
 
-        标识该资源栈输出是否为敏感信息，由用户在模板中定义  若用户在模板中将该输出定义为sensitive，则返回体中该输出的value和type不会返回真实值，而是返回`<sensitive>`
+        标识该资源栈输出是否为敏感信息，由用户在模板中定义  若用户在模板中将该输出定义为sensitive，则返回体中该输出的value和type不会返回真实值，而是返回`<sensitive>` 
 
         :param sensitive: The sensitive of this StackOutput.
         :type sensitive: bool

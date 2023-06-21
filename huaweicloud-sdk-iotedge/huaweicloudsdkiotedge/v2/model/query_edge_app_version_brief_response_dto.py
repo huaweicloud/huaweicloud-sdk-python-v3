@@ -59,7 +59,7 @@ class QueryEdgeAppVersionBriefResponseDTO:
         :type name: str
         :param version: 应用名称
         :type version: str
-        :param sdk_version: 应用集成的边缘升得快版本
+        :param sdk_version: 应用集成的边缘SDK版本
         :type sdk_version: str
         :param description: 应用描述
         :type description: str
@@ -195,7 +195,7 @@ class QueryEdgeAppVersionBriefResponseDTO:
     def sdk_version(self):
         """Gets the sdk_version of this QueryEdgeAppVersionBriefResponseDTO.
 
-        应用集成的边缘升得快版本
+        应用集成的边缘SDK版本
 
         :return: The sdk_version of this QueryEdgeAppVersionBriefResponseDTO.
         :rtype: str
@@ -206,7 +206,7 @@ class QueryEdgeAppVersionBriefResponseDTO:
     def sdk_version(self, sdk_version):
         """Sets the sdk_version of this QueryEdgeAppVersionBriefResponseDTO.
 
-        应用集成的边缘升得快版本
+        应用集成的边缘SDK版本
 
         :param sdk_version: The sdk_version of this QueryEdgeAppVersionBriefResponseDTO.
         :type sdk_version: str

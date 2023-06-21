@@ -74,7 +74,7 @@ class CreateMixJobResponse(SdkResponse):
         :type update_time: str
         :param state: 任务状态。  - INIT：任务正在初始化 - RUNNING：任务正在运行 - STOPPED：任务已停止 
         :type state: str
-        :param stop_reason: 任务结束原因
+        :param stop_reason: 任务结束原因 - TENANT_STOP - EXCEED_MAX_IDLE_TIME - INTERNAL_ERROR
         :type stop_reason: str
         :param description: 状态描述，对state字段的一些补充说明，可用于人工查阅。
         :type description: str
@@ -327,7 +327,7 @@ class CreateMixJobResponse(SdkResponse):
     def stop_reason(self):
         """Gets the stop_reason of this CreateMixJobResponse.
 
-        任务结束原因
+        任务结束原因 - TENANT_STOP - EXCEED_MAX_IDLE_TIME - INTERNAL_ERROR
 
         :return: The stop_reason of this CreateMixJobResponse.
         :rtype: str
@@ -338,7 +338,7 @@ class CreateMixJobResponse(SdkResponse):
     def stop_reason(self, stop_reason):
         """Sets the stop_reason of this CreateMixJobResponse.
 
-        任务结束原因
+        任务结束原因 - TENANT_STOP - EXCEED_MAX_IDLE_TIME - INTERNAL_ERROR
 
         :param stop_reason: The stop_reason of this CreateMixJobResponse.
         :type stop_reason: str

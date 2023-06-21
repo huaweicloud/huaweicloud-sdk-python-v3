@@ -67,7 +67,7 @@ class UpdateEdgeAppVersionDTO:
         :type liveness_probe: :class:`huaweicloudsdkiotedge.v2.ProbeDTO`
         :param readiness_probe: 
         :type readiness_probe: :class:`huaweicloudsdkiotedge.v2.ProbeDTO`
-        :param sdk_version: 应用集成的边缘升得快版本
+        :param sdk_version: 应用集成的边缘SDK版本
         :type sdk_version: str
         :param arch: 架构
         :type arch: object
@@ -256,7 +256,7 @@ class UpdateEdgeAppVersionDTO:
     def sdk_version(self):
         """Gets the sdk_version of this UpdateEdgeAppVersionDTO.
 
-        应用集成的边缘升得快版本
+        应用集成的边缘SDK版本
 
         :return: The sdk_version of this UpdateEdgeAppVersionDTO.
         :rtype: str
@@ -267,7 +267,7 @@ class UpdateEdgeAppVersionDTO:
     def sdk_version(self, sdk_version):
         """Sets the sdk_version of this UpdateEdgeAppVersionDTO.
 
-        应用集成的边缘升得快版本
+        应用集成的边缘SDK版本
 
         :param sdk_version: The sdk_version of this UpdateEdgeAppVersionDTO.
         :type sdk_version: str

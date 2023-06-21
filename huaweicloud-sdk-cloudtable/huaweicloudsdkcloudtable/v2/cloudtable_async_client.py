@@ -150,6 +150,134 @@ class CloudTableAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def enable_component_async(self, request):
+        """开启opentsdb组件
+
+        开启opentsdb组件
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for EnableComponent
+        :type request: :class:`huaweicloudsdkcloudtable.v2.EnableComponentRequest`
+        :rtype: :class:`huaweicloudsdkcloudtable.v2.EnableComponentResponse`
+        """
+        return self._enable_component_with_http_info(request)
+
+    def _enable_component_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['projectId'] = local_var_params['project_id']
+        if 'cluster_id' in local_var_params:
+            path_params['clusterId'] = local_var_params['cluster_id']
+        if 'component_name' in local_var_params:
+            path_params['componentName'] = local_var_params['component_name']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{projectId}/clusters/{clusterId}/components/{componentName}',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='EnableComponentResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def expand_cluster_component_async(self, request):
+        """扩容组件
+
+        扩容指定类型的集群节点
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ExpandClusterComponent
+        :type request: :class:`huaweicloudsdkcloudtable.v2.ExpandClusterComponentRequest`
+        :rtype: :class:`huaweicloudsdkcloudtable.v2.ExpandClusterComponentResponse`
+        """
+        return self._expand_cluster_component_with_http_info(request)
+
+    def _expand_cluster_component_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['projectId'] = local_var_params['project_id']
+        if 'cluster_id' in local_var_params:
+            path_params['clusterId'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{projectId}/clusters/{clusterId}/nodes',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ExpandClusterComponentResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_clusters_async(self, request):
         """查询CloudTable集群列表
 
@@ -209,6 +337,69 @@ class CloudTableAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def reboot_cloud_table_cluster_async(self, request):
+        """重启集群的api入口
+
+        重启集群的api入口
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for RebootCloudTableCluster
+        :type request: :class:`huaweicloudsdkcloudtable.v2.RebootCloudTableClusterRequest`
+        :rtype: :class:`huaweicloudsdkcloudtable.v2.RebootCloudTableClusterResponse`
+        """
+        return self._reboot_cloud_table_cluster_with_http_info(request)
+
+    def _reboot_cloud_table_cluster_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['projectId'] = local_var_params['project_id']
+        if 'cluster_id' in local_var_params:
+            path_params['clusterId'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{projectId}/clusters/{clusterId}/restart',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='RebootCloudTableClusterResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def show_cluster_detail_async(self, request):
         """查询CloudTable集群详情
 
@@ -263,6 +454,130 @@ class CloudTableAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ShowClusterDetailResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_cluster_setting_async(self, request):
+        """查询集群配置
+
+        查询集群配置
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowClusterSetting
+        :type request: :class:`huaweicloudsdkcloudtable.v2.ShowClusterSettingRequest`
+        :rtype: :class:`huaweicloudsdkcloudtable.v2.ShowClusterSettingResponse`
+        """
+        return self._show_cluster_setting_with_http_info(request)
+
+    def _show_cluster_setting_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['projectId'] = local_var_params['project_id']
+        if 'cluster_id' in local_var_params:
+            path_params['clusterId'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{projectId}/clusters/{clusterId}/setting',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowClusterSettingResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_cluster_setting_async(self, request):
+        """修改集群配置
+
+        修改集群配置
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateClusterSetting
+        :type request: :class:`huaweicloudsdkcloudtable.v2.UpdateClusterSettingRequest`
+        :rtype: :class:`huaweicloudsdkcloudtable.v2.UpdateClusterSettingResponse`
+        """
+        return self._update_cluster_setting_with_http_info(request)
+
+    def _update_cluster_setting_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['projectId'] = local_var_params['project_id']
+        if 'cluster_id' in local_var_params:
+            path_params['clusterId'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{projectId}/clusters/{clusterId}/setting',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateClusterSettingResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

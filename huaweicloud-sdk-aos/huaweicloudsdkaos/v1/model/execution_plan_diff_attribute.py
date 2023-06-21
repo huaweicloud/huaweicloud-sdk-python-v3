@@ -35,9 +35,9 @@ class ExecutionPlanDiffAttribute:
 
         :param name: 当前资源将要被修改的参数的名字。
         :type name: str
-        :param previous_value: 当前资源被修改的参数的原始值。  若是资源创建的场景，则previous_value为空  若远端资源产生了偏差，则同一个资源会返回两个ExecutionPlanItem，其中一个的drifted为true，另一个的drifted为false   * drifted为true的previous_value为资源栈中所维持的资源属性和状态   * drifted为false的previous_value为provider请求远端资源后，远端资源所返回的资源属性和状态  若远端资源未产生偏差，则只会返回一个drifted为false的ExecutionPlanItem   * drifted为false的previous_value为资源栈中所维持的资源属性和状态
+        :param previous_value: 当前资源被修改的参数的原始值。  若是资源创建的场景，则previous_value为空  若远端资源产生了偏差，则同一个资源会返回两个ExecutionPlanItem，其中一个的drifted为true，另一个的drifted为false   * drifted为true的previous_value为资源栈中所维持的资源属性和状态   * drifted为false的previous_value为provider请求远端资源后，远端资源所返回的资源属性和状态  若远端资源未产生偏差，则只会返回一个drifted为false的ExecutionPlanItem   * drifted为false的previous_value为资源栈中所维持的资源属性和状态 
         :type previous_value: str
-        :param target_value: 当前资源被修改的参数的目的值。  若是资源删除的场景，则target_value为空  若远端资源产生了偏差，则同一个资源会返回两个ExecutionPlanItem，其中一个的drifted为true，另一个的drifted为false   * drifted为true的target_value为provider请求远端资源后，远端资源所返回的资源属性和状态   * drifted为false的target_value为基于用户模板更新的资源属性和状态  若远端资源未产生偏差，则只会返回一个drifted为false的ExecutionPlanItem   * drifted为false的target_value为基于用户模板更新的资源属性和状态
+        :param target_value: 当前资源被修改的参数的目的值。  若是资源删除的场景，则target_value为空  若远端资源产生了偏差，则同一个资源会返回两个ExecutionPlanItem，其中一个的drifted为true，另一个的drifted为false   * drifted为true的target_value为provider请求远端资源后，远端资源所返回的资源属性和状态   * drifted为false的target_value为基于用户模板更新的资源属性和状态  若远端资源未产生偏差，则只会返回一个drifted为false的ExecutionPlanItem   * drifted为false的target_value为基于用户模板更新的资源属性和状态 
         :type target_value: str
         """
         
@@ -81,7 +81,7 @@ class ExecutionPlanDiffAttribute:
     def previous_value(self):
         """Gets the previous_value of this ExecutionPlanDiffAttribute.
 
-        当前资源被修改的参数的原始值。  若是资源创建的场景，则previous_value为空  若远端资源产生了偏差，则同一个资源会返回两个ExecutionPlanItem，其中一个的drifted为true，另一个的drifted为false   * drifted为true的previous_value为资源栈中所维持的资源属性和状态   * drifted为false的previous_value为provider请求远端资源后，远端资源所返回的资源属性和状态  若远端资源未产生偏差，则只会返回一个drifted为false的ExecutionPlanItem   * drifted为false的previous_value为资源栈中所维持的资源属性和状态
+        当前资源被修改的参数的原始值。  若是资源创建的场景，则previous_value为空  若远端资源产生了偏差，则同一个资源会返回两个ExecutionPlanItem，其中一个的drifted为true，另一个的drifted为false   * drifted为true的previous_value为资源栈中所维持的资源属性和状态   * drifted为false的previous_value为provider请求远端资源后，远端资源所返回的资源属性和状态  若远端资源未产生偏差，则只会返回一个drifted为false的ExecutionPlanItem   * drifted为false的previous_value为资源栈中所维持的资源属性和状态 
 
         :return: The previous_value of this ExecutionPlanDiffAttribute.
         :rtype: str
@@ -92,7 +92,7 @@ class ExecutionPlanDiffAttribute:
     def previous_value(self, previous_value):
         """Sets the previous_value of this ExecutionPlanDiffAttribute.
 
-        当前资源被修改的参数的原始值。  若是资源创建的场景，则previous_value为空  若远端资源产生了偏差，则同一个资源会返回两个ExecutionPlanItem，其中一个的drifted为true，另一个的drifted为false   * drifted为true的previous_value为资源栈中所维持的资源属性和状态   * drifted为false的previous_value为provider请求远端资源后，远端资源所返回的资源属性和状态  若远端资源未产生偏差，则只会返回一个drifted为false的ExecutionPlanItem   * drifted为false的previous_value为资源栈中所维持的资源属性和状态
+        当前资源被修改的参数的原始值。  若是资源创建的场景，则previous_value为空  若远端资源产生了偏差，则同一个资源会返回两个ExecutionPlanItem，其中一个的drifted为true，另一个的drifted为false   * drifted为true的previous_value为资源栈中所维持的资源属性和状态   * drifted为false的previous_value为provider请求远端资源后，远端资源所返回的资源属性和状态  若远端资源未产生偏差，则只会返回一个drifted为false的ExecutionPlanItem   * drifted为false的previous_value为资源栈中所维持的资源属性和状态 
 
         :param previous_value: The previous_value of this ExecutionPlanDiffAttribute.
         :type previous_value: str
@@ -103,7 +103,7 @@ class ExecutionPlanDiffAttribute:
     def target_value(self):
         """Gets the target_value of this ExecutionPlanDiffAttribute.
 
-        当前资源被修改的参数的目的值。  若是资源删除的场景，则target_value为空  若远端资源产生了偏差，则同一个资源会返回两个ExecutionPlanItem，其中一个的drifted为true，另一个的drifted为false   * drifted为true的target_value为provider请求远端资源后，远端资源所返回的资源属性和状态   * drifted为false的target_value为基于用户模板更新的资源属性和状态  若远端资源未产生偏差，则只会返回一个drifted为false的ExecutionPlanItem   * drifted为false的target_value为基于用户模板更新的资源属性和状态
+        当前资源被修改的参数的目的值。  若是资源删除的场景，则target_value为空  若远端资源产生了偏差，则同一个资源会返回两个ExecutionPlanItem，其中一个的drifted为true，另一个的drifted为false   * drifted为true的target_value为provider请求远端资源后，远端资源所返回的资源属性和状态   * drifted为false的target_value为基于用户模板更新的资源属性和状态  若远端资源未产生偏差，则只会返回一个drifted为false的ExecutionPlanItem   * drifted为false的target_value为基于用户模板更新的资源属性和状态 
 
         :return: The target_value of this ExecutionPlanDiffAttribute.
         :rtype: str
@@ -114,7 +114,7 @@ class ExecutionPlanDiffAttribute:
     def target_value(self, target_value):
         """Sets the target_value of this ExecutionPlanDiffAttribute.
 
-        当前资源被修改的参数的目的值。  若是资源删除的场景，则target_value为空  若远端资源产生了偏差，则同一个资源会返回两个ExecutionPlanItem，其中一个的drifted为true，另一个的drifted为false   * drifted为true的target_value为provider请求远端资源后，远端资源所返回的资源属性和状态   * drifted为false的target_value为基于用户模板更新的资源属性和状态  若远端资源未产生偏差，则只会返回一个drifted为false的ExecutionPlanItem   * drifted为false的target_value为基于用户模板更新的资源属性和状态
+        当前资源被修改的参数的目的值。  若是资源删除的场景，则target_value为空  若远端资源产生了偏差，则同一个资源会返回两个ExecutionPlanItem，其中一个的drifted为true，另一个的drifted为false   * drifted为true的target_value为provider请求远端资源后，远端资源所返回的资源属性和状态   * drifted为false的target_value为基于用户模板更新的资源属性和状态  若远端资源未产生偏差，则只会返回一个drifted为false的ExecutionPlanItem   * drifted为false的target_value为基于用户模板更新的资源属性和状态 
 
         :param target_value: The target_value of this ExecutionPlanDiffAttribute.
         :type target_value: str

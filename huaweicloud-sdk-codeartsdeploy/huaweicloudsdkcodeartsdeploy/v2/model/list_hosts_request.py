@@ -43,7 +43,7 @@ class ListHostsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param group_id: 主机组id
+        :param group_id: 主机集群id
         :type group_id: str
         :param as_proxy: 是否为代理机
         :type as_proxy: bool
@@ -93,7 +93,7 @@ class ListHostsRequest:
     def group_id(self):
         """Gets the group_id of this ListHostsRequest.
 
-        主机组id
+        主机集群id
 
         :return: The group_id of this ListHostsRequest.
         :rtype: str
@@ -104,7 +104,7 @@ class ListHostsRequest:
     def group_id(self, group_id):
         """Sets the group_id of this ListHostsRequest.
 
-        主机组id
+        主机集群id
 
         :param group_id: The group_id of this ListHostsRequest.
         :type group_id: str

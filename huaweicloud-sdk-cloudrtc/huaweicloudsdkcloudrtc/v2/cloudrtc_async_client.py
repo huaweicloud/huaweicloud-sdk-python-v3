@@ -70,7 +70,7 @@ class CloudRTCAsyncClient(Client):
         response_headers = ["X-request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
+            ['application/json;charset=utf-8'])
 
         auth_settings = []
 
@@ -141,7 +141,7 @@ class CloudRTCAsyncClient(Client):
         response_headers = ["X-request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
+            ['application/json;charset=utf-8'])
 
         auth_settings = []
 
@@ -224,7 +224,7 @@ class CloudRTCAsyncClient(Client):
         response_headers = ["X-request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
+            ['application/json;charset=utf-8'])
 
         auth_settings = []
 
@@ -294,7 +294,7 @@ class CloudRTCAsyncClient(Client):
         response_headers = ["X-request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
+            ['application/json;charset=utf-8'])
 
         auth_settings = []
 
@@ -356,7 +356,7 @@ class CloudRTCAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = []
+        response_headers = ["X-request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -423,7 +423,7 @@ class CloudRTCAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = []
+        response_headers = ["X-request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -628,7 +628,7 @@ class CloudRTCAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = []
+        response_headers = ["X-request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -697,10 +697,10 @@ class CloudRTCAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = []
+        response_headers = ["X-request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
+            ['application/json;charset=utf-8'])
 
         auth_settings = []
 
@@ -1359,7 +1359,7 @@ class CloudRTCAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = []
+        response_headers = ["X-request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -1426,7 +1426,7 @@ class CloudRTCAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = []
+        response_headers = ["X-request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -1496,7 +1496,7 @@ class CloudRTCAsyncClient(Client):
         response_headers = ["X-request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
+            ['application/json;charset=utf-8'])
 
         auth_settings = []
 
@@ -1567,7 +1567,7 @@ class CloudRTCAsyncClient(Client):
         response_headers = ["X-request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
+            ['application/json;charset=utf-8'])
 
         auth_settings = []
 
@@ -1636,7 +1636,7 @@ class CloudRTCAsyncClient(Client):
         response_headers = ["X-request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
+            ['application/json;charset=utf-8'])
 
         auth_settings = []
 
@@ -1656,7 +1656,7 @@ class CloudRTCAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def update_record_callback_async(self, request):
-        """RTC增值（录制）事件回调配置
+        """配置RTC增值（录制）事件回调
 
         调用此接口配置增值（录制）事件上报回调。
         
@@ -1707,7 +1707,7 @@ class CloudRTCAsyncClient(Client):
         response_headers = ["X-request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
+            ['application/json;charset=utf-8'])
 
         auth_settings = []
 
@@ -1776,7 +1776,7 @@ class CloudRTCAsyncClient(Client):
         response_headers = ["X-request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
+            ['application/json;charset=utf-8'])
 
         auth_settings = []
 

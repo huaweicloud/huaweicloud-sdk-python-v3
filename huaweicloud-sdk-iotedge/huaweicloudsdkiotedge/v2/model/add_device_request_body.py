@@ -55,7 +55,7 @@ class AddDeviceRequestBody:
         :type auth_info: :class:`huaweicloudsdkiotedge.v2.EdgeDeviceAuthInfo`
         :param description: 设备的描述信息。
         :type description: str
-        :param gateway_id: 父设备ID，用于标识设备所属的父设备。创建网关直连设备时，不携带该参数；在网关直连设备下创建子设备时，携带该参数，参数值为父设备ID。
+        :param gateway_id: 父设备ID，用于标识设备所属的父设备。携带该参数时，表示在该父设备下创建一个子设备，这个子设备不与平台直连，此时必须保证这个父设备在平台已存在，创建成功后子设备的gateway_id等于该参数值；不携带该参数时，表示创建一个和平台直连的设备，创建成功后设备的device_id和gateway_id一致。
         :type gateway_id: str
         :param space_id: 资源空间Id。此参数为非必选参数，用于兼容平台老用户存在多应用的场景。存在多应用的用户需要使用该接口时，必须携带该参数指定注册的设备归属到哪个应用下，否则接口会提示错误。如果用户存在多应用，同时又不想携带该参数，可以联系华为技术支持对用户数据做应用合并。
         :type space_id: str
@@ -205,7 +205,7 @@ class AddDeviceRequestBody:
     def gateway_id(self):
         """Gets the gateway_id of this AddDeviceRequestBody.
 
-        父设备ID，用于标识设备所属的父设备。创建网关直连设备时，不携带该参数；在网关直连设备下创建子设备时，携带该参数，参数值为父设备ID。
+        父设备ID，用于标识设备所属的父设备。携带该参数时，表示在该父设备下创建一个子设备，这个子设备不与平台直连，此时必须保证这个父设备在平台已存在，创建成功后子设备的gateway_id等于该参数值；不携带该参数时，表示创建一个和平台直连的设备，创建成功后设备的device_id和gateway_id一致。
 
         :return: The gateway_id of this AddDeviceRequestBody.
         :rtype: str
@@ -216,7 +216,7 @@ class AddDeviceRequestBody:
     def gateway_id(self, gateway_id):
         """Sets the gateway_id of this AddDeviceRequestBody.
 
-        父设备ID，用于标识设备所属的父设备。创建网关直连设备时，不携带该参数；在网关直连设备下创建子设备时，携带该参数，参数值为父设备ID。
+        父设备ID，用于标识设备所属的父设备。携带该参数时，表示在该父设备下创建一个子设备，这个子设备不与平台直连，此时必须保证这个父设备在平台已存在，创建成功后子设备的gateway_id等于该参数值；不携带该参数时，表示创建一个和平台直连的设备，创建成功后设备的device_id和gateway_id一致。
 
         :param gateway_id: The gateway_id of this AddDeviceRequestBody.
         :type gateway_id: str

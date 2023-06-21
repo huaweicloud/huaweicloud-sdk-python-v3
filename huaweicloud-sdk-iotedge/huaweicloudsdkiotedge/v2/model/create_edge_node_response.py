@@ -31,7 +31,11 @@ class CreateEdgeNodeResponse(SdkResponse):
         'resource_ids': 'list[str]',
         'ips': 'list[str]',
         'create_time': 'str',
-        'hardware_model': 'str'
+        'hardware_model': 'str',
+        'device_data_format': 'str',
+        'automatic_upgrade': 'str',
+        'device_data_record': 'DeviceDataRecord',
+        'metric_report': 'str'
     }
 
     attribute_map = {
@@ -48,10 +52,14 @@ class CreateEdgeNodeResponse(SdkResponse):
         'resource_ids': 'resource_ids',
         'ips': 'ips',
         'create_time': 'create_time',
-        'hardware_model': 'hardware_model'
+        'hardware_model': 'hardware_model',
+        'device_data_format': 'device_data_format',
+        'automatic_upgrade': 'automatic_upgrade',
+        'device_data_record': 'device_data_record',
+        'metric_report': 'metric_report'
     }
 
-    def __init__(self, edge_node_id=None, name=None, instance_id=None, space_id=None, product_id=None, product_name=None, state=None, type=None, installer_version=None, base_path=None, resource_ids=None, ips=None, create_time=None, hardware_model=None):
+    def __init__(self, edge_node_id=None, name=None, instance_id=None, space_id=None, product_id=None, product_name=None, state=None, type=None, installer_version=None, base_path=None, resource_ids=None, ips=None, create_time=None, hardware_model=None, device_data_format=None, automatic_upgrade=None, device_data_record=None, metric_report=None):
         """CreateEdgeNodeResponse
 
         The model defined in huaweicloud sdk
@@ -84,6 +92,14 @@ class CreateEdgeNodeResponse(SdkResponse):
         :type create_time: str
         :param hardware_model: 注册节点网关配置
         :type hardware_model: str
+        :param device_data_format: 节点使用的数据格式，默认为iotda物模型1.0格式，可以选择属性平铺数据格式flat_json
+        :type device_data_format: str
+        :param automatic_upgrade: 自动升级系统应用的节点开关，默认为关闭：OFF，IMMEDIATE表示节点开关打开
+        :type automatic_upgrade: str
+        :param device_data_record: 
+        :type device_data_record: :class:`huaweicloudsdkiotedge.v2.DeviceDataRecord`
+        :param metric_report: omagent监控运维工具是否上报指标
+        :type metric_report: str
         """
         
         super(CreateEdgeNodeResponse, self).__init__()
@@ -102,6 +118,10 @@ class CreateEdgeNodeResponse(SdkResponse):
         self._ips = None
         self._create_time = None
         self._hardware_model = None
+        self._device_data_format = None
+        self._automatic_upgrade = None
+        self._device_data_record = None
+        self._metric_report = None
         self.discriminator = None
 
         if edge_node_id is not None:
@@ -132,6 +152,14 @@ class CreateEdgeNodeResponse(SdkResponse):
             self.create_time = create_time
         if hardware_model is not None:
             self.hardware_model = hardware_model
+        if device_data_format is not None:
+            self.device_data_format = device_data_format
+        if automatic_upgrade is not None:
+            self.automatic_upgrade = automatic_upgrade
+        if device_data_record is not None:
+            self.device_data_record = device_data_record
+        if metric_report is not None:
+            self.metric_report = metric_report
 
     @property
     def edge_node_id(self):
@@ -436,6 +464,90 @@ class CreateEdgeNodeResponse(SdkResponse):
         :type hardware_model: str
         """
         self._hardware_model = hardware_model
+
+    @property
+    def device_data_format(self):
+        """Gets the device_data_format of this CreateEdgeNodeResponse.
+
+        节点使用的数据格式，默认为iotda物模型1.0格式，可以选择属性平铺数据格式flat_json
+
+        :return: The device_data_format of this CreateEdgeNodeResponse.
+        :rtype: str
+        """
+        return self._device_data_format
+
+    @device_data_format.setter
+    def device_data_format(self, device_data_format):
+        """Sets the device_data_format of this CreateEdgeNodeResponse.
+
+        节点使用的数据格式，默认为iotda物模型1.0格式，可以选择属性平铺数据格式flat_json
+
+        :param device_data_format: The device_data_format of this CreateEdgeNodeResponse.
+        :type device_data_format: str
+        """
+        self._device_data_format = device_data_format
+
+    @property
+    def automatic_upgrade(self):
+        """Gets the automatic_upgrade of this CreateEdgeNodeResponse.
+
+        自动升级系统应用的节点开关，默认为关闭：OFF，IMMEDIATE表示节点开关打开
+
+        :return: The automatic_upgrade of this CreateEdgeNodeResponse.
+        :rtype: str
+        """
+        return self._automatic_upgrade
+
+    @automatic_upgrade.setter
+    def automatic_upgrade(self, automatic_upgrade):
+        """Sets the automatic_upgrade of this CreateEdgeNodeResponse.
+
+        自动升级系统应用的节点开关，默认为关闭：OFF，IMMEDIATE表示节点开关打开
+
+        :param automatic_upgrade: The automatic_upgrade of this CreateEdgeNodeResponse.
+        :type automatic_upgrade: str
+        """
+        self._automatic_upgrade = automatic_upgrade
+
+    @property
+    def device_data_record(self):
+        """Gets the device_data_record of this CreateEdgeNodeResponse.
+
+        :return: The device_data_record of this CreateEdgeNodeResponse.
+        :rtype: :class:`huaweicloudsdkiotedge.v2.DeviceDataRecord`
+        """
+        return self._device_data_record
+
+    @device_data_record.setter
+    def device_data_record(self, device_data_record):
+        """Sets the device_data_record of this CreateEdgeNodeResponse.
+
+        :param device_data_record: The device_data_record of this CreateEdgeNodeResponse.
+        :type device_data_record: :class:`huaweicloudsdkiotedge.v2.DeviceDataRecord`
+        """
+        self._device_data_record = device_data_record
+
+    @property
+    def metric_report(self):
+        """Gets the metric_report of this CreateEdgeNodeResponse.
+
+        omagent监控运维工具是否上报指标
+
+        :return: The metric_report of this CreateEdgeNodeResponse.
+        :rtype: str
+        """
+        return self._metric_report
+
+    @metric_report.setter
+    def metric_report(self, metric_report):
+        """Sets the metric_report of this CreateEdgeNodeResponse.
+
+        omagent监控运维工具是否上报指标
+
+        :param metric_report: The metric_report of this CreateEdgeNodeResponse.
+        :type metric_report: str
+        """
+        self._metric_report = metric_report
 
     def to_dict(self):
         """Returns the model properties as a dict"""

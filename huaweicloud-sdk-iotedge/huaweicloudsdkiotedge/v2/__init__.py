@@ -100,6 +100,7 @@ from huaweicloudsdkiotedge.v2.model.delete_ot_template_request import DeleteOtTe
 from huaweicloudsdkiotedge.v2.model.delete_ot_template_response import DeleteOtTemplateResponse
 from huaweicloudsdkiotedge.v2.model.device_auth_info_dto import DeviceAuthInfoDTO
 from huaweicloudsdkiotedge.v2.model.device_auth_info_display_dto import DeviceAuthInfoDisplayDTO
+from huaweicloudsdkiotedge.v2.model.device_data_record import DeviceDataRecord
 from huaweicloudsdkiotedge.v2.model.edge_app_instance_dto import EdgeAppInstanceDTO
 from huaweicloudsdkiotedge.v2.model.edge_device_auth_info import EdgeDeviceAuthInfo
 from huaweicloudsdkiotedge.v2.model.edge_module_dto import EdgeModuleDTO

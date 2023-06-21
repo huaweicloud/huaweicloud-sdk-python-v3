@@ -41,7 +41,7 @@ class DeploymentGroup:
 
         The model defined in huaweicloud sdk
 
-        :param name: 主机组名
+        :param name: 主机集群名
         :type name: str
         :param region_name: 局点信息
         :type region_name: str
@@ -53,7 +53,7 @@ class DeploymentGroup:
         :type slave_cluster_id: str
         :param description: 描述
         :type description: str
-        :param is_proxy_mode: 主机组是否为代理类型
+        :param is_proxy_mode: 主机集群是否为代理类型
         :type is_proxy_mode: int
         """
         
@@ -83,7 +83,7 @@ class DeploymentGroup:
     def name(self):
         """Gets the name of this DeploymentGroup.
 
-        主机组名
+        主机集群名
 
         :return: The name of this DeploymentGroup.
         :rtype: str
@@ -94,7 +94,7 @@ class DeploymentGroup:
     def name(self, name):
         """Sets the name of this DeploymentGroup.
 
-        主机组名
+        主机集群名
 
         :param name: The name of this DeploymentGroup.
         :type name: str
@@ -215,7 +215,7 @@ class DeploymentGroup:
     def is_proxy_mode(self):
         """Gets the is_proxy_mode of this DeploymentGroup.
 
-        主机组是否为代理类型
+        主机集群是否为代理类型
 
         :return: The is_proxy_mode of this DeploymentGroup.
         :rtype: int
@@ -226,7 +226,7 @@ class DeploymentGroup:
     def is_proxy_mode(self, is_proxy_mode):
         """Sets the is_proxy_mode of this DeploymentGroup.
 
-        主机组是否为代理类型
+        主机集群是否为代理类型
 
         :param is_proxy_mode: The is_proxy_mode of this DeploymentGroup.
         :type is_proxy_mode: int

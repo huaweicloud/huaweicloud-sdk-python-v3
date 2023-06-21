@@ -39,7 +39,7 @@ class AppCallbackUrl:
         :type url: str
         :param auth_key: 回调秘钥，主要用于鉴权。如果不设置或者为空，则回调不会增加鉴权头域字段。 
         :type auth_key: str
-        :param notify_event_subscription: 订阅云端录制通知消息。  取值如下：  - RECORD_NEW_FILE_START：录制模块开始创建新的录制文件。  - RECORD_FILE_COMPLETE：录制模块已经生成录制文件。 
+        :param notify_event_subscription: 订阅云端录制通知消息。  取值如下：  - RECORD_NEW_FILE_START：开始创建新的录制文件。  - RECORD_FILE_COMPLETE：录制文件生成完成。 
         :type notify_event_subscription: list[str]
         :param update_time: 更新时间，形如“2006-01-02T15:04:05.075Z”，时区为：UTC。 
         :type update_time: str
@@ -110,7 +110,7 @@ class AppCallbackUrl:
     def notify_event_subscription(self):
         """Gets the notify_event_subscription of this AppCallbackUrl.
 
-        订阅云端录制通知消息。  取值如下：  - RECORD_NEW_FILE_START：录制模块开始创建新的录制文件。  - RECORD_FILE_COMPLETE：录制模块已经生成录制文件。 
+        订阅云端录制通知消息。  取值如下：  - RECORD_NEW_FILE_START：开始创建新的录制文件。  - RECORD_FILE_COMPLETE：录制文件生成完成。 
 
         :return: The notify_event_subscription of this AppCallbackUrl.
         :rtype: list[str]
@@ -121,7 +121,7 @@ class AppCallbackUrl:
     def notify_event_subscription(self, notify_event_subscription):
         """Sets the notify_event_subscription of this AppCallbackUrl.
 
-        订阅云端录制通知消息。  取值如下：  - RECORD_NEW_FILE_START：录制模块开始创建新的录制文件。  - RECORD_FILE_COMPLETE：录制模块已经生成录制文件。 
+        订阅云端录制通知消息。  取值如下：  - RECORD_NEW_FILE_START：开始创建新的录制文件。  - RECORD_FILE_COMPLETE：录制文件生成完成。 
 
         :param notify_event_subscription: The notify_event_subscription of this AppCallbackUrl.
         :type notify_event_subscription: list[str]

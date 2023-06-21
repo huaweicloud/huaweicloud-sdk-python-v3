@@ -71,6 +71,7 @@ from huaweicloudsdkdns.v2.model.disassociate_health_check_response import Disass
 from huaweicloudsdkdns.v2.model.disassociate_router_request import DisassociateRouterRequest
 from huaweicloudsdkdns.v2.model.disassociate_router_response import DisassociateRouterResponse
 from huaweicloudsdkdns.v2.model.disassociaterouter_request_body import DisassociaterouterRequestBody
+from huaweicloudsdkdns.v2.model.domain_quota_response_quotas import DomainQuotaResponseQuotas
 from huaweicloudsdkdns.v2.model.line import Line
 from huaweicloudsdkdns.v2.model.links_item import LinksItem
 from huaweicloudsdkdns.v2.model.list_api_versions_item import ListApiVersionsItem
@@ -124,6 +125,8 @@ from huaweicloudsdkdns.v2.model.set_record_sets_status_request import SetRecordS
 from huaweicloudsdkdns.v2.model.set_record_sets_status_response import SetRecordSetsStatusResponse
 from huaweicloudsdkdns.v2.model.show_api_info_request import ShowApiInfoRequest
 from huaweicloudsdkdns.v2.model.show_api_info_response import ShowApiInfoResponse
+from huaweicloudsdkdns.v2.model.show_domain_quota_request import ShowDomainQuotaRequest
+from huaweicloudsdkdns.v2.model.show_domain_quota_response import ShowDomainQuotaResponse
 from huaweicloudsdkdns.v2.model.show_line_group_request import ShowLineGroupRequest
 from huaweicloudsdkdns.v2.model.show_line_group_response import ShowLineGroupResponse
 from huaweicloudsdkdns.v2.model.show_private_zone_name_server_request import ShowPrivateZoneNameServerRequest

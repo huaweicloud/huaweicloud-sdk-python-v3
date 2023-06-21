@@ -19,16 +19,18 @@ class OpenGaussHaResult:
     openapi_types = {
         'mode': 'str',
         'replication_mode': 'str',
-        'consistency': 'str'
+        'consistency': 'str',
+        'consistency_protocol': 'str'
     }
 
     attribute_map = {
         'mode': 'mode',
         'replication_mode': 'replication_mode',
-        'consistency': 'consistency'
+        'consistency': 'consistency',
+        'consistency_protocol': 'consistency_protocol'
     }
 
-    def __init__(self, mode=None, replication_mode=None, consistency=None):
+    def __init__(self, mode=None, replication_mode=None, consistency=None, consistency_protocol=None):
         """OpenGaussHaResult
 
         The model defined in huaweicloud sdk
@@ -39,6 +41,8 @@ class OpenGaussHaResult:
         :type replication_mode: str
         :param consistency: GaussDB的预留参数：指定实例一致性类型，取值范围：strong（强一致性） | eventual(最终一致性)。
         :type consistency: str
+        :param consistency_protocol: 指定副本一致性协议类型，取值范围：quorum | paxos。不填时，默认为quorum。
+        :type consistency_protocol: str
         """
         
         
@@ -46,11 +50,14 @@ class OpenGaussHaResult:
         self._mode = None
         self._replication_mode = None
         self._consistency = None
+        self._consistency_protocol = None
         self.discriminator = None
 
         self.mode = mode
         self.replication_mode = replication_mode
         self.consistency = consistency
+        if consistency_protocol is not None:
+            self.consistency_protocol = consistency_protocol
 
     @property
     def mode(self):
@@ -117,6 +124,28 @@ class OpenGaussHaResult:
         :type consistency: str
         """
         self._consistency = consistency
+
+    @property
+    def consistency_protocol(self):
+        """Gets the consistency_protocol of this OpenGaussHaResult.
+
+        指定副本一致性协议类型，取值范围：quorum | paxos。不填时，默认为quorum。
+
+        :return: The consistency_protocol of this OpenGaussHaResult.
+        :rtype: str
+        """
+        return self._consistency_protocol
+
+    @consistency_protocol.setter
+    def consistency_protocol(self, consistency_protocol):
+        """Sets the consistency_protocol of this OpenGaussHaResult.
+
+        指定副本一致性协议类型，取值范围：quorum | paxos。不填时，默认为quorum。
+
+        :param consistency_protocol: The consistency_protocol of this OpenGaussHaResult.
+        :type consistency_protocol: str
+        """
+        self._consistency_protocol = consistency_protocol
 
     def to_dict(self):
         """Returns the model properties as a dict"""

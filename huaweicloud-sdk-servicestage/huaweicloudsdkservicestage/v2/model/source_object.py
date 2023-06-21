@@ -43,10 +43,8 @@ class SourceObject:
         self._spec = None
         self.discriminator = None
 
-        if kind is not None:
-            self.kind = kind
-        if spec is not None:
-            self.spec = spec
+        self.kind = kind
+        self.spec = spec
 
     @property
     def kind(self):

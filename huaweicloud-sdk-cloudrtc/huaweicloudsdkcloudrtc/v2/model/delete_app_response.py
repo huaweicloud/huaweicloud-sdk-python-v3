@@ -18,20 +18,47 @@ class DeleteAppResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'x_request_id': 'str'
     }
 
     attribute_map = {
+        'x_request_id': 'X-request-Id'
     }
 
-    def __init__(self):
+    def __init__(self, x_request_id=None):
         """DeleteAppResponse
 
         The model defined in huaweicloud sdk
 
+        :param x_request_id: 
+        :type x_request_id: str
         """
         
         super(DeleteAppResponse, self).__init__()
+
+        self._x_request_id = None
         self.discriminator = None
+
+        if x_request_id is not None:
+            self.x_request_id = x_request_id
+
+    @property
+    def x_request_id(self):
+        """Gets the x_request_id of this DeleteAppResponse.
+
+        :return: The x_request_id of this DeleteAppResponse.
+        :rtype: str
+        """
+        return self._x_request_id
+
+    @x_request_id.setter
+    def x_request_id(self, x_request_id):
+        """Sets the x_request_id of this DeleteAppResponse.
+
+        :param x_request_id: The x_request_id of this DeleteAppResponse.
+        :type x_request_id: str
+        """
+        self._x_request_id = x_request_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

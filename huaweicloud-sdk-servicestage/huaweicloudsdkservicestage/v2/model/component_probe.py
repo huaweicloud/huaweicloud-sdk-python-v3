@@ -53,14 +53,12 @@ class ComponentProbe:
         self._parameters = None
         self.discriminator = None
 
-        if type is not None:
-            self.type = type
+        self.type = type
         if delay is not None:
             self.delay = delay
         if timeout is not None:
             self.timeout = timeout
-        if parameters is not None:
-            self.parameters = parameters
+        self.parameters = parameters
 
     @property
     def type(self):

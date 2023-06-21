@@ -18,109 +18,20 @@ class RemoveIngressEipV2Response(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'instance_id': 'str',
-        'message': 'str',
-        'job_id': 'str'
     }
 
     attribute_map = {
-        'instance_id': 'instance_id',
-        'message': 'message',
-        'job_id': 'job_id'
     }
 
-    def __init__(self, instance_id=None, message=None, job_id=None):
+    def __init__(self):
         """RemoveIngressEipV2Response
 
         The model defined in huaweicloud sdk
 
-        :param instance_id: 实例ID
-        :type instance_id: str
-        :param message: 公网入口变更的任务信息
-        :type message: str
-        :param job_id: 任务编号
-        :type job_id: str
         """
         
         super(RemoveIngressEipV2Response, self).__init__()
-
-        self._instance_id = None
-        self._message = None
-        self._job_id = None
         self.discriminator = None
-
-        if instance_id is not None:
-            self.instance_id = instance_id
-        if message is not None:
-            self.message = message
-        if job_id is not None:
-            self.job_id = job_id
-
-    @property
-    def instance_id(self):
-        """Gets the instance_id of this RemoveIngressEipV2Response.
-
-        实例ID
-
-        :return: The instance_id of this RemoveIngressEipV2Response.
-        :rtype: str
-        """
-        return self._instance_id
-
-    @instance_id.setter
-    def instance_id(self, instance_id):
-        """Sets the instance_id of this RemoveIngressEipV2Response.
-
-        实例ID
-
-        :param instance_id: The instance_id of this RemoveIngressEipV2Response.
-        :type instance_id: str
-        """
-        self._instance_id = instance_id
-
-    @property
-    def message(self):
-        """Gets the message of this RemoveIngressEipV2Response.
-
-        公网入口变更的任务信息
-
-        :return: The message of this RemoveIngressEipV2Response.
-        :rtype: str
-        """
-        return self._message
-
-    @message.setter
-    def message(self, message):
-        """Sets the message of this RemoveIngressEipV2Response.
-
-        公网入口变更的任务信息
-
-        :param message: The message of this RemoveIngressEipV2Response.
-        :type message: str
-        """
-        self._message = message
-
-    @property
-    def job_id(self):
-        """Gets the job_id of this RemoveIngressEipV2Response.
-
-        任务编号
-
-        :return: The job_id of this RemoveIngressEipV2Response.
-        :rtype: str
-        """
-        return self._job_id
-
-    @job_id.setter
-    def job_id(self, job_id):
-        """Sets the job_id of this RemoveIngressEipV2Response.
-
-        任务编号
-
-        :param job_id: The job_id of this RemoveIngressEipV2Response.
-        :type job_id: str
-        """
-        self._job_id = job_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

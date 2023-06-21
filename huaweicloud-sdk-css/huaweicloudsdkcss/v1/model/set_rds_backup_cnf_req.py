@@ -65,9 +65,12 @@ class SetRDSBackupCnfReq:
 
         if indices is not None:
             self.indices = indices
-        self.prefix = prefix
-        self.period = period
-        self.keepday = keepday
+        if prefix is not None:
+            self.prefix = prefix
+        if period is not None:
+            self.period = period
+        if keepday is not None:
+            self.keepday = keepday
         self.enable = enable
         if delete_auto is not None:
             self.delete_auto = delete_auto

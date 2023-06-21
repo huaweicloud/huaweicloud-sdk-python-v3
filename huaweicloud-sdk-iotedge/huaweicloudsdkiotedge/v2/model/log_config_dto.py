@@ -41,7 +41,7 @@ class LogConfigDTO:
 
         :param size: 应用日志文件大小限制，单位MB，默认50，取值范围10-1000
         :type size: int
-        :param level: 应用日志级别，可选项：on/off，当type为LTS时有效
+        :param level: 应用日志级别，可选项：on/off/trace/debug/info/warn/error/fatal，当type为LTS时有效。当选择非on/off的选项时，将只采集大于等于指定级别的日志。
         :type level: str
         :param rotate_num: 应用日志rotate个数，默认5，取值范围1-10
         :type rotate_num: int
@@ -102,7 +102,7 @@ class LogConfigDTO:
     def level(self):
         """Gets the level of this LogConfigDTO.
 
-        应用日志级别，可选项：on/off，当type为LTS时有效
+        应用日志级别，可选项：on/off/trace/debug/info/warn/error/fatal，当type为LTS时有效。当选择非on/off的选项时，将只采集大于等于指定级别的日志。
 
         :return: The level of this LogConfigDTO.
         :rtype: str
@@ -113,7 +113,7 @@ class LogConfigDTO:
     def level(self, level):
         """Sets the level of this LogConfigDTO.
 
-        应用日志级别，可选项：on/off，当type为LTS时有效
+        应用日志级别，可选项：on/off/trace/debug/info/warn/error/fatal，当type为LTS时有效。当选择非on/off的选项时，将只采集大于等于指定级别的日志。
 
         :param level: The level of this LogConfigDTO.
         :type level: str

@@ -29,7 +29,7 @@ class DeleteDeploymentGroupRequest:
 
         The model defined in huaweicloud sdk
 
-        :param group_id: 主机组id
+        :param group_id: 主机集群id
         :type group_id: str
         """
         
@@ -44,7 +44,7 @@ class DeleteDeploymentGroupRequest:
     def group_id(self):
         """Gets the group_id of this DeleteDeploymentGroupRequest.
 
-        主机组id
+        主机集群id
 
         :return: The group_id of this DeleteDeploymentGroupRequest.
         :rtype: str
@@ -55,7 +55,7 @@ class DeleteDeploymentGroupRequest:
     def group_id(self, group_id):
         """Sets the group_id of this DeleteDeploymentGroupRequest.
 
-        主机组id
+        主机集群id
 
         :param group_id: The group_id of this DeleteDeploymentGroupRequest.
         :type group_id: str

@@ -131,6 +131,8 @@ from huaweicloudsdkservicestage.v2.model.instance_status_type import InstanceSta
 from huaweicloudsdkservicestage.v2.model.instance_status_view import InstanceStatusView
 from huaweicloudsdkservicestage.v2.model.job_info import JobInfo
 from huaweicloudsdkservicestage.v2.model.lifecycle_entrypoint import LifecycleEntrypoint
+from huaweicloudsdkservicestage.v2.model.lifecycle_process import LifecycleProcess
+from huaweicloudsdkservicestage.v2.model.lifecycle_process_parameter import LifecycleProcessParameter
 from huaweicloudsdkservicestage.v2.model.list_applications_request import ListApplicationsRequest
 from huaweicloudsdkservicestage.v2.model.list_applications_response import ListApplicationsResponse
 from huaweicloudsdkservicestage.v2.model.list_authorizations_request import ListAuthorizationsRequest
@@ -199,6 +201,7 @@ from huaweicloudsdkservicestage.v2.model.source_kind import SourceKind
 from huaweicloudsdkservicestage.v2.model.source_object import SourceObject
 from huaweicloudsdkservicestage.v2.model.source_or_artifact import SourceOrArtifact
 from huaweicloudsdkservicestage.v2.model.source_repo_type import SourceRepoType
+from huaweicloudsdkservicestage.v2.model.storage_parameter import StorageParameter
 from huaweicloudsdkservicestage.v2.model.tag_create import TagCreate
 from huaweicloudsdkservicestage.v2.model.task_info import TaskInfo
 from huaweicloudsdkservicestage.v2.model.template import Template

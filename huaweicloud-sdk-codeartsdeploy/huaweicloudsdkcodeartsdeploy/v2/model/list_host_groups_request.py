@@ -53,7 +53,7 @@ class ListHostGroupsRequest:
         :type offset: int
         :param limit: 每页显示的条目数量，默认为1000
         :type limit: int
-        :param name: 主机组名
+        :param name: 主机集群名
         :type name: str
         :param sort_key: 排序字段：nickName|NAME|OWNER_NAME|CREATE_TIME|name|owner_name|create_time，不传使用默认排序
         :type sort_key: str
@@ -203,7 +203,7 @@ class ListHostGroupsRequest:
     def name(self):
         """Gets the name of this ListHostGroupsRequest.
 
-        主机组名
+        主机集群名
 
         :return: The name of this ListHostGroupsRequest.
         :rtype: str
@@ -214,7 +214,7 @@ class ListHostGroupsRequest:
     def name(self, name):
         """Sets the name of this ListHostGroupsRequest.
 
-        主机组名
+        主机集群名
 
         :param name: The name of this ListHostGroupsRequest.
         :type name: str

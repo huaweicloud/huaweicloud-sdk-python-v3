@@ -78,8 +78,7 @@ class ListAvailableDisasterClustersRequest:
         self._datastore_version = None
         self.discriminator = None
 
-        if primary_cluster_id is not None:
-            self.primary_cluster_id = primary_cluster_id
+        self.primary_cluster_id = primary_cluster_id
         if primary_spec_id is not None:
             self.primary_spec_id = primary_spec_id
         if primary_cluster_dn_num is not None:
@@ -88,8 +87,7 @@ class ListAvailableDisasterClustersRequest:
             self.standby_region = standby_region
         if standby_project_id is not None:
             self.standby_project_id = standby_project_id
-        if standby_az_code is not None:
-            self.standby_az_code = standby_az_code
+        self.standby_az_code = standby_az_code
         if dr_type is not None:
             self.dr_type = dr_type
         if datastore_type is not None:

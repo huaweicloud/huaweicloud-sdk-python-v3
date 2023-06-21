@@ -24,8 +24,8 @@ class ComponentMount:
 
     attribute_map = {
         'path': 'path',
-        'sub_path': 'sub_path',
-        'read_only': 'read_only'
+        'sub_path': 'subPath',
+        'read_only': 'readOnly'
     }
 
     def __init__(self, path=None, sub_path=None, read_only=None):

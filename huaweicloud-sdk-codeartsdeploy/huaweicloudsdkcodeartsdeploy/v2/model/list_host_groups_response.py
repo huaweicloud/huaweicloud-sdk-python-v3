@@ -32,9 +32,9 @@ class ListHostGroupsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param total: 主机组个数
+        :param total: 主机集群个数
         :type total: int
-        :param host_groups: 主机组详情响应体
+        :param host_groups: 主机集群详情响应体
         :type host_groups: list[:class:`huaweicloudsdkcodeartsdeploy.v2.DeploymentGroupDetail`]
         """
         
@@ -53,7 +53,7 @@ class ListHostGroupsResponse(SdkResponse):
     def total(self):
         """Gets the total of this ListHostGroupsResponse.
 
-        主机组个数
+        主机集群个数
 
         :return: The total of this ListHostGroupsResponse.
         :rtype: int
@@ -64,7 +64,7 @@ class ListHostGroupsResponse(SdkResponse):
     def total(self, total):
         """Sets the total of this ListHostGroupsResponse.
 
-        主机组个数
+        主机集群个数
 
         :param total: The total of this ListHostGroupsResponse.
         :type total: int
@@ -75,7 +75,7 @@ class ListHostGroupsResponse(SdkResponse):
     def host_groups(self):
         """Gets the host_groups of this ListHostGroupsResponse.
 
-        主机组详情响应体
+        主机集群详情响应体
 
         :return: The host_groups of this ListHostGroupsResponse.
         :rtype: list[:class:`huaweicloudsdkcodeartsdeploy.v2.DeploymentGroupDetail`]
@@ -86,7 +86,7 @@ class ListHostGroupsResponse(SdkResponse):
     def host_groups(self, host_groups):
         """Sets the host_groups of this ListHostGroupsResponse.
 
-        主机组详情响应体
+        主机集群详情响应体
 
         :param host_groups: The host_groups of this ListHostGroupsResponse.
         :type host_groups: list[:class:`huaweicloudsdkcodeartsdeploy.v2.DeploymentGroupDetail`]

@@ -35,7 +35,7 @@ class DeploymentGroupUpdateRequest:
 
         The model defined in huaweicloud sdk
 
-        :param name: 主机组名
+        :param name: 主机集群名
         :type name: str
         :param description: 描述
         :type description: str
@@ -65,7 +65,7 @@ class DeploymentGroupUpdateRequest:
     def name(self):
         """Gets the name of this DeploymentGroupUpdateRequest.
 
-        主机组名
+        主机集群名
 
         :return: The name of this DeploymentGroupUpdateRequest.
         :rtype: str
@@ -76,7 +76,7 @@ class DeploymentGroupUpdateRequest:
     def name(self, name):
         """Sets the name of this DeploymentGroupUpdateRequest.
 
-        主机组名
+        主机集群名
 
         :param name: The name of this DeploymentGroupUpdateRequest.
         :type name: str

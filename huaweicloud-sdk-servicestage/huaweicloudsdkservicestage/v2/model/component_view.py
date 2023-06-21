@@ -21,7 +21,6 @@ class ComponentView:
         'application_id': 'str',
         'name': 'str',
         'project_id': 'str',
-        'pipeline_ids': 'list[str]',
         'runtime': 'RuntimeType',
         'category': 'ComponentCategory',
         'sub_category': 'ComponentSubCategory',
@@ -39,7 +38,6 @@ class ComponentView:
         'application_id': 'application_id',
         'name': 'name',
         'project_id': 'project_id',
-        'pipeline_ids': 'pipeline_ids',
         'runtime': 'runtime',
         'category': 'category',
         'sub_category': 'sub_category',
@@ -52,7 +50,7 @@ class ComponentView:
         'update_time': 'update_time'
     }
 
-    def __init__(self, id=None, application_id=None, name=None, project_id=None, pipeline_ids=None, runtime=None, category=None, sub_category=None, description=None, status=None, source=None, build=None, creator=None, create_time=None, update_time=None):
+    def __init__(self, id=None, application_id=None, name=None, project_id=None, runtime=None, category=None, sub_category=None, description=None, status=None, source=None, build=None, creator=None, create_time=None, update_time=None):
         """ComponentView
 
         The model defined in huaweicloud sdk
@@ -65,8 +63,6 @@ class ComponentView:
         :type name: str
         :param project_id: 项目ID。
         :type project_id: str
-        :param pipeline_ids: 流水线Id列表，最多10个。
-        :type pipeline_ids: list[str]
         :param runtime: 
         :type runtime: :class:`huaweicloudsdkservicestage.v2.RuntimeType`
         :param category: 
@@ -95,7 +91,6 @@ class ComponentView:
         self._application_id = None
         self._name = None
         self._project_id = None
-        self._pipeline_ids = None
         self._runtime = None
         self._category = None
         self._sub_category = None
@@ -116,8 +111,6 @@ class ComponentView:
             self.name = name
         if project_id is not None:
             self.project_id = project_id
-        if pipeline_ids is not None:
-            self.pipeline_ids = pipeline_ids
         if runtime is not None:
             self.runtime = runtime
         if category is not None:
@@ -226,28 +219,6 @@ class ComponentView:
         :type project_id: str
         """
         self._project_id = project_id
-
-    @property
-    def pipeline_ids(self):
-        """Gets the pipeline_ids of this ComponentView.
-
-        流水线Id列表，最多10个。
-
-        :return: The pipeline_ids of this ComponentView.
-        :rtype: list[str]
-        """
-        return self._pipeline_ids
-
-    @pipeline_ids.setter
-    def pipeline_ids(self, pipeline_ids):
-        """Sets the pipeline_ids of this ComponentView.
-
-        流水线Id列表，最多10个。
-
-        :param pipeline_ids: The pipeline_ids of this ComponentView.
-        :type pipeline_ids: list[str]
-        """
-        self._pipeline_ids = pipeline_ids
 
     @property
     def runtime(self):

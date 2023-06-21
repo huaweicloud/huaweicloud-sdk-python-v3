@@ -34,7 +34,8 @@ class QueryRecordSetWithLineResp:
         'line': 'str',
         'weight': 'int',
         'health_check_id': 'str',
-        'alias_target': 'AliasTarget'
+        'alias_target': 'AliasTarget',
+        'bundle': 'str'
     }
 
     attribute_map = {
@@ -55,10 +56,11 @@ class QueryRecordSetWithLineResp:
         'line': 'line',
         'weight': 'weight',
         'health_check_id': 'health_check_id',
-        'alias_target': 'alias_target'
+        'alias_target': 'alias_target',
+        'bundle': 'bundle'
     }
 
-    def __init__(self, id=None, name=None, description=None, zone_id=None, zone_name=None, type=None, ttl=None, records=None, created_at=None, updated_at=None, status=None, default=None, project_id=None, links=None, line=None, weight=None, health_check_id=None, alias_target=None):
+    def __init__(self, id=None, name=None, description=None, zone_id=None, zone_name=None, type=None, ttl=None, records=None, created_at=None, updated_at=None, status=None, default=None, project_id=None, links=None, line=None, weight=None, health_check_id=None, alias_target=None, bundle=None):
         """QueryRecordSetWithLineResp
 
         The model defined in huaweicloud sdk
@@ -99,6 +101,8 @@ class QueryRecordSetWithLineResp:
         :type health_check_id: str
         :param alias_target: 
         :type alias_target: :class:`huaweicloudsdkdns.v2.AliasTarget`
+        :param bundle: 规格，默认规格，保留字段。
+        :type bundle: str
         """
         
         
@@ -121,6 +125,7 @@ class QueryRecordSetWithLineResp:
         self._weight = None
         self._health_check_id = None
         self._alias_target = None
+        self._bundle = None
         self.discriminator = None
 
         if id is not None:
@@ -159,6 +164,8 @@ class QueryRecordSetWithLineResp:
             self.health_check_id = health_check_id
         if alias_target is not None:
             self.alias_target = alias_target
+        if bundle is not None:
+            self.bundle = bundle
 
     @property
     def id(self):
@@ -547,6 +554,28 @@ class QueryRecordSetWithLineResp:
         :type alias_target: :class:`huaweicloudsdkdns.v2.AliasTarget`
         """
         self._alias_target = alias_target
+
+    @property
+    def bundle(self):
+        """Gets the bundle of this QueryRecordSetWithLineResp.
+
+        规格，默认规格，保留字段。
+
+        :return: The bundle of this QueryRecordSetWithLineResp.
+        :rtype: str
+        """
+        return self._bundle
+
+    @bundle.setter
+    def bundle(self, bundle):
+        """Sets the bundle of this QueryRecordSetWithLineResp.
+
+        规格，默认规格，保留字段。
+
+        :param bundle: The bundle of this QueryRecordSetWithLineResp.
+        :type bundle: str
+        """
+        self._bundle = bundle
 
     def to_dict(self):
         """Returns the model properties as a dict"""

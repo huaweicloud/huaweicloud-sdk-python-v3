@@ -35,7 +35,7 @@ class RecordObsFileAddr:
 
         The model defined in huaweicloud sdk
 
-        :param location: OBS Bucket所在RegionID
+        :param location: OBS Bucket所在RegionID - cn-north-4
         :type location: str
         :param project_id: OBS Bucket所在Region的项目ID
         :type project_id: str
@@ -63,7 +63,7 @@ class RecordObsFileAddr:
     def location(self):
         """Gets the location of this RecordObsFileAddr.
 
-        OBS Bucket所在RegionID
+        OBS Bucket所在RegionID - cn-north-4
 
         :return: The location of this RecordObsFileAddr.
         :rtype: str
@@ -74,7 +74,7 @@ class RecordObsFileAddr:
     def location(self, location):
         """Sets the location of this RecordObsFileAddr.
 
-        OBS Bucket所在RegionID
+        OBS Bucket所在RegionID - cn-north-4
 
         :param location: The location of this RecordObsFileAddr.
         :type location: str

@@ -31,7 +31,7 @@ class CreateDeploymentHostRequest:
 
         The model defined in huaweicloud sdk
 
-        :param group_id: 主机组id
+        :param group_id: 主机集群id
         :type group_id: str
         :param body: Body of the CreateDeploymentHostRequest
         :type body: :class:`huaweicloudsdkcodeartsdeploy.v2.DeploymentHost`
@@ -51,7 +51,7 @@ class CreateDeploymentHostRequest:
     def group_id(self):
         """Gets the group_id of this CreateDeploymentHostRequest.
 
-        主机组id
+        主机集群id
 
         :return: The group_id of this CreateDeploymentHostRequest.
         :rtype: str
@@ -62,7 +62,7 @@ class CreateDeploymentHostRequest:
     def group_id(self, group_id):
         """Sets the group_id of this CreateDeploymentHostRequest.
 
-        主机组id
+        主机集群id
 
         :param group_id: The group_id of this CreateDeploymentHostRequest.
         :type group_id: str

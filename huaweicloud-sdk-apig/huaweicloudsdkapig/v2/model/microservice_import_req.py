@@ -25,7 +25,8 @@ class MicroserviceImportReq:
         'auth_type': 'str',
         'cors': 'bool',
         'cse_info': 'MicroServiceInfoCSECreate',
-        'cce_info': 'MicroServiceInfoCCECreate'
+        'cce_info': 'MicroServiceInfoCCECreate',
+        'cce_service_info': 'MicroServiceInfoCCEServiceCreate'
     }
 
     attribute_map = {
@@ -37,17 +38,18 @@ class MicroserviceImportReq:
         'auth_type': 'auth_type',
         'cors': 'cors',
         'cse_info': 'cse_info',
-        'cce_info': 'cce_info'
+        'cce_info': 'cce_info',
+        'cce_service_info': 'cce_service_info'
     }
 
-    def __init__(self, group_info=None, service_type=None, protocol=None, apis=None, backend_timeout=None, auth_type=None, cors=None, cse_info=None, cce_info=None):
+    def __init__(self, group_info=None, service_type=None, protocol=None, apis=None, backend_timeout=None, auth_type=None, cors=None, cse_info=None, cce_info=None, cce_service_info=None):
         """MicroserviceImportReq
 
         The model defined in huaweicloud sdk
 
         :param group_info: 
         :type group_info: :class:`huaweicloudsdkapig.v2.MicroserviceGroup`
-        :param service_type: 微服务中心类型。 - CSE：CSE微服务注册中心 - CCE: CCE云容器引擎
+        :param service_type: 微服务中心类型。 - CSE：CSE微服务注册中心 - CCE: CCE云容器引擎（工作负载） - CCE_SERVICE: CCE云容器引擎（Service）
         :type service_type: str
         :param protocol: API网关访问微服务的请求协议 - HTTP - HTTPS
         :type protocol: str
@@ -63,6 +65,8 @@ class MicroserviceImportReq:
         :type cse_info: :class:`huaweicloudsdkapig.v2.MicroServiceInfoCSECreate`
         :param cce_info: 
         :type cce_info: :class:`huaweicloudsdkapig.v2.MicroServiceInfoCCECreate`
+        :param cce_service_info: 
+        :type cce_service_info: :class:`huaweicloudsdkapig.v2.MicroServiceInfoCCEServiceCreate`
         """
         
         
@@ -76,6 +80,7 @@ class MicroserviceImportReq:
         self._cors = None
         self._cse_info = None
         self._cce_info = None
+        self._cce_service_info = None
         self.discriminator = None
 
         self.group_info = group_info
@@ -93,6 +98,8 @@ class MicroserviceImportReq:
             self.cse_info = cse_info
         if cce_info is not None:
             self.cce_info = cce_info
+        if cce_service_info is not None:
+            self.cce_service_info = cce_service_info
 
     @property
     def group_info(self):
@@ -116,7 +123,7 @@ class MicroserviceImportReq:
     def service_type(self):
         """Gets the service_type of this MicroserviceImportReq.
 
-        微服务中心类型。 - CSE：CSE微服务注册中心 - CCE: CCE云容器引擎
+        微服务中心类型。 - CSE：CSE微服务注册中心 - CCE: CCE云容器引擎（工作负载） - CCE_SERVICE: CCE云容器引擎（Service）
 
         :return: The service_type of this MicroserviceImportReq.
         :rtype: str
@@ -127,7 +134,7 @@ class MicroserviceImportReq:
     def service_type(self, service_type):
         """Sets the service_type of this MicroserviceImportReq.
 
-        微服务中心类型。 - CSE：CSE微服务注册中心 - CCE: CCE云容器引擎
+        微服务中心类型。 - CSE：CSE微服务注册中心 - CCE: CCE云容器引擎（工作负载） - CCE_SERVICE: CCE云容器引擎（Service）
 
         :param service_type: The service_type of this MicroserviceImportReq.
         :type service_type: str
@@ -279,6 +286,24 @@ class MicroserviceImportReq:
         :type cce_info: :class:`huaweicloudsdkapig.v2.MicroServiceInfoCCECreate`
         """
         self._cce_info = cce_info
+
+    @property
+    def cce_service_info(self):
+        """Gets the cce_service_info of this MicroserviceImportReq.
+
+        :return: The cce_service_info of this MicroserviceImportReq.
+        :rtype: :class:`huaweicloudsdkapig.v2.MicroServiceInfoCCEServiceCreate`
+        """
+        return self._cce_service_info
+
+    @cce_service_info.setter
+    def cce_service_info(self, cce_service_info):
+        """Sets the cce_service_info of this MicroserviceImportReq.
+
+        :param cce_service_info: The cce_service_info of this MicroserviceImportReq.
+        :type cce_service_info: :class:`huaweicloudsdkapig.v2.MicroServiceInfoCCEServiceCreate`
+        """
+        self._cce_service_info = cce_service_info
 
     def to_dict(self):
         """Returns the model properties as a dict"""

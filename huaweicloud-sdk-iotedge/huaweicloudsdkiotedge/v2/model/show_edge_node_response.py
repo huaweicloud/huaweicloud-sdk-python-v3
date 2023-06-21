@@ -39,6 +39,7 @@ class ShowEdgeNodeResponse(SdkResponse):
         'nics': 'list[Nic]',
         'specification': 'str',
         'ai_card_type': 'str',
+        'npu_library_path': 'str',
         'container_version': 'str',
         'type': 'str',
         'security_level': 'str',
@@ -47,7 +48,11 @@ class ShowEdgeNodeResponse(SdkResponse):
         'base_path': 'BasePathDTO',
         'hardware_model': 'str',
         'offline_cache_configs': 'OfflineCacheConfigsDTO',
-        'device_auth_info': 'DeviceAuthInfoDisplayDTO'
+        'device_auth_info': 'DeviceAuthInfoDisplayDTO',
+        'device_data_format': 'str',
+        'automatic_upgrade': 'str',
+        'device_data_record': 'DeviceDataRecord',
+        'metric_report': 'str'
     }
 
     attribute_map = {
@@ -72,6 +77,7 @@ class ShowEdgeNodeResponse(SdkResponse):
         'nics': 'nics',
         'specification': 'specification',
         'ai_card_type': 'ai_card_type',
+        'npu_library_path': 'npu_library_path',
         'container_version': 'container_version',
         'type': 'type',
         'security_level': 'security_level',
@@ -80,10 +86,14 @@ class ShowEdgeNodeResponse(SdkResponse):
         'base_path': 'base_path',
         'hardware_model': 'hardware_model',
         'offline_cache_configs': 'offline_cache_configs',
-        'device_auth_info': 'device_auth_info'
+        'device_auth_info': 'device_auth_info',
+        'device_data_format': 'device_data_format',
+        'automatic_upgrade': 'automatic_upgrade',
+        'device_data_record': 'device_data_record',
+        'metric_report': 'metric_report'
     }
 
-    def __init__(self, log_configs=None, ha_config=None, edge_node_id=None, instance_id=None, product_id=None, product_name=None, space_id=None, resource_spec_types=None, resource_ids=None, ips=None, name=None, state=None, software_version=None, create_time=None, update_time=None, os_name=None, arch=None, host_name=None, nics=None, specification=None, ai_card_type=None, container_version=None, type=None, security_level=None, reliability_level=None, storage_period=None, base_path=None, hardware_model=None, offline_cache_configs=None, device_auth_info=None):
+    def __init__(self, log_configs=None, ha_config=None, edge_node_id=None, instance_id=None, product_id=None, product_name=None, space_id=None, resource_spec_types=None, resource_ids=None, ips=None, name=None, state=None, software_version=None, create_time=None, update_time=None, os_name=None, arch=None, host_name=None, nics=None, specification=None, ai_card_type=None, npu_library_path=None, container_version=None, type=None, security_level=None, reliability_level=None, storage_period=None, base_path=None, hardware_model=None, offline_cache_configs=None, device_auth_info=None, device_data_format=None, automatic_upgrade=None, device_data_record=None, metric_report=None):
         """ShowEdgeNodeResponse
 
         The model defined in huaweicloud sdk
@@ -128,8 +138,10 @@ class ShowEdgeNodeResponse(SdkResponse):
         :type nics: list[:class:`huaweicloudsdkiotedge.v2.Nic`]
         :param specification: 网络规格，如4 cores | 3867 MB
         :type specification: str
-        :param ai_card_type: 华为AI加速卡类型，如NPU、GPU、unEquipped
+        :param ai_card_type: AI加速卡类型，如华为昇腾AI加速卡NPU、图像处理加速卡GPU。
         :type ai_card_type: str
+        :param npu_library_path: npu驱动动态库路径
+        :type npu_library_path: str
         :param container_version: 容器运行时版本
         :type container_version: str
         :param type: 节点所属资源类型：advanced|standard
@@ -148,6 +160,14 @@ class ShowEdgeNodeResponse(SdkResponse):
         :type offline_cache_configs: :class:`huaweicloudsdkiotedge.v2.OfflineCacheConfigsDTO`
         :param device_auth_info: 
         :type device_auth_info: :class:`huaweicloudsdkiotedge.v2.DeviceAuthInfoDisplayDTO`
+        :param device_data_format: 节点使用的数据格式，默认为iotda物模型1.0格式，可以选择属性平铺数据格式flat_json
+        :type device_data_format: str
+        :param automatic_upgrade: 自动升级系统应用的节点开关，默认为关闭：OFF，IMMEDIATE表示节点开关打开
+        :type automatic_upgrade: str
+        :param device_data_record: 
+        :type device_data_record: :class:`huaweicloudsdkiotedge.v2.DeviceDataRecord`
+        :param metric_report: omagent监控运维工具是否上报指标
+        :type metric_report: str
         """
         
         super(ShowEdgeNodeResponse, self).__init__()
@@ -173,6 +193,7 @@ class ShowEdgeNodeResponse(SdkResponse):
         self._nics = None
         self._specification = None
         self._ai_card_type = None
+        self._npu_library_path = None
         self._container_version = None
         self._type = None
         self._security_level = None
@@ -182,6 +203,10 @@ class ShowEdgeNodeResponse(SdkResponse):
         self._hardware_model = None
         self._offline_cache_configs = None
         self._device_auth_info = None
+        self._device_data_format = None
+        self._automatic_upgrade = None
+        self._device_data_record = None
+        self._metric_report = None
         self.discriminator = None
 
         if log_configs is not None:
@@ -226,6 +251,8 @@ class ShowEdgeNodeResponse(SdkResponse):
             self.specification = specification
         if ai_card_type is not None:
             self.ai_card_type = ai_card_type
+        if npu_library_path is not None:
+            self.npu_library_path = npu_library_path
         if container_version is not None:
             self.container_version = container_version
         if type is not None:
@@ -244,6 +271,14 @@ class ShowEdgeNodeResponse(SdkResponse):
             self.offline_cache_configs = offline_cache_configs
         if device_auth_info is not None:
             self.device_auth_info = device_auth_info
+        if device_data_format is not None:
+            self.device_data_format = device_data_format
+        if automatic_upgrade is not None:
+            self.automatic_upgrade = automatic_upgrade
+        if device_data_record is not None:
+            self.device_data_record = device_data_record
+        if metric_report is not None:
+            self.metric_report = metric_report
 
     @property
     def log_configs(self):
@@ -685,7 +720,7 @@ class ShowEdgeNodeResponse(SdkResponse):
     def ai_card_type(self):
         """Gets the ai_card_type of this ShowEdgeNodeResponse.
 
-        华为AI加速卡类型，如NPU、GPU、unEquipped
+        AI加速卡类型，如华为昇腾AI加速卡NPU、图像处理加速卡GPU。
 
         :return: The ai_card_type of this ShowEdgeNodeResponse.
         :rtype: str
@@ -696,12 +731,34 @@ class ShowEdgeNodeResponse(SdkResponse):
     def ai_card_type(self, ai_card_type):
         """Sets the ai_card_type of this ShowEdgeNodeResponse.
 
-        华为AI加速卡类型，如NPU、GPU、unEquipped
+        AI加速卡类型，如华为昇腾AI加速卡NPU、图像处理加速卡GPU。
 
         :param ai_card_type: The ai_card_type of this ShowEdgeNodeResponse.
         :type ai_card_type: str
         """
         self._ai_card_type = ai_card_type
+
+    @property
+    def npu_library_path(self):
+        """Gets the npu_library_path of this ShowEdgeNodeResponse.
+
+        npu驱动动态库路径
+
+        :return: The npu_library_path of this ShowEdgeNodeResponse.
+        :rtype: str
+        """
+        return self._npu_library_path
+
+    @npu_library_path.setter
+    def npu_library_path(self, npu_library_path):
+        """Sets the npu_library_path of this ShowEdgeNodeResponse.
+
+        npu驱动动态库路径
+
+        :param npu_library_path: The npu_library_path of this ShowEdgeNodeResponse.
+        :type npu_library_path: str
+        """
+        self._npu_library_path = npu_library_path
 
     @property
     def container_version(self):
@@ -888,6 +945,90 @@ class ShowEdgeNodeResponse(SdkResponse):
         :type device_auth_info: :class:`huaweicloudsdkiotedge.v2.DeviceAuthInfoDisplayDTO`
         """
         self._device_auth_info = device_auth_info
+
+    @property
+    def device_data_format(self):
+        """Gets the device_data_format of this ShowEdgeNodeResponse.
+
+        节点使用的数据格式，默认为iotda物模型1.0格式，可以选择属性平铺数据格式flat_json
+
+        :return: The device_data_format of this ShowEdgeNodeResponse.
+        :rtype: str
+        """
+        return self._device_data_format
+
+    @device_data_format.setter
+    def device_data_format(self, device_data_format):
+        """Sets the device_data_format of this ShowEdgeNodeResponse.
+
+        节点使用的数据格式，默认为iotda物模型1.0格式，可以选择属性平铺数据格式flat_json
+
+        :param device_data_format: The device_data_format of this ShowEdgeNodeResponse.
+        :type device_data_format: str
+        """
+        self._device_data_format = device_data_format
+
+    @property
+    def automatic_upgrade(self):
+        """Gets the automatic_upgrade of this ShowEdgeNodeResponse.
+
+        自动升级系统应用的节点开关，默认为关闭：OFF，IMMEDIATE表示节点开关打开
+
+        :return: The automatic_upgrade of this ShowEdgeNodeResponse.
+        :rtype: str
+        """
+        return self._automatic_upgrade
+
+    @automatic_upgrade.setter
+    def automatic_upgrade(self, automatic_upgrade):
+        """Sets the automatic_upgrade of this ShowEdgeNodeResponse.
+
+        自动升级系统应用的节点开关，默认为关闭：OFF，IMMEDIATE表示节点开关打开
+
+        :param automatic_upgrade: The automatic_upgrade of this ShowEdgeNodeResponse.
+        :type automatic_upgrade: str
+        """
+        self._automatic_upgrade = automatic_upgrade
+
+    @property
+    def device_data_record(self):
+        """Gets the device_data_record of this ShowEdgeNodeResponse.
+
+        :return: The device_data_record of this ShowEdgeNodeResponse.
+        :rtype: :class:`huaweicloudsdkiotedge.v2.DeviceDataRecord`
+        """
+        return self._device_data_record
+
+    @device_data_record.setter
+    def device_data_record(self, device_data_record):
+        """Sets the device_data_record of this ShowEdgeNodeResponse.
+
+        :param device_data_record: The device_data_record of this ShowEdgeNodeResponse.
+        :type device_data_record: :class:`huaweicloudsdkiotedge.v2.DeviceDataRecord`
+        """
+        self._device_data_record = device_data_record
+
+    @property
+    def metric_report(self):
+        """Gets the metric_report of this ShowEdgeNodeResponse.
+
+        omagent监控运维工具是否上报指标
+
+        :return: The metric_report of this ShowEdgeNodeResponse.
+        :rtype: str
+        """
+        return self._metric_report
+
+    @metric_report.setter
+    def metric_report(self, metric_report):
+        """Sets the metric_report of this ShowEdgeNodeResponse.
+
+        omagent监控运维工具是否上报指标
+
+        :param metric_report: The metric_report of this ShowEdgeNodeResponse.
+        :type metric_report: str
+        """
+        self._metric_report = metric_report
 
     def to_dict(self):
         """Returns the model properties as a dict"""

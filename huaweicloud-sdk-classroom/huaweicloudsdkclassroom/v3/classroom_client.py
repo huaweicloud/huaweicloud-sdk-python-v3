@@ -192,6 +192,402 @@ class ClassroomClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def execute_exercise(self, request):
+        """习题判题
+
+        习题判题
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ExecuteExercise
+        :type request: :class:`huaweicloudsdkclassroom.v3.ExecuteExerciseRequest`
+        :rtype: :class:`huaweicloudsdkclassroom.v3.ExecuteExerciseResponse`
+        """
+        return self._execute_exercise_with_http_info(request)
+
+    def _execute_exercise_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'exercise_id' in local_var_params:
+            path_params['exercise_id'] = local_var_params['exercise_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'user_token' in local_var_params:
+            header_params['user-token'] = local_var_params['user_token']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/assemble/exercise/{exercise_id}/judge',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ExecuteExerciseResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_exercises(self, request):
+        """查询习题库下习题列表
+
+        查询习题库下习题列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListExercises
+        :type request: :class:`huaweicloudsdkclassroom.v3.ListExercisesRequest`
+        :rtype: :class:`huaweicloudsdkclassroom.v3.ListExercisesResponse`
+        """
+        return self._list_exercises_with_http_info(request)
+
+    def _list_exercises_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'package_id' in local_var_params:
+            path_params['package_id'] = local_var_params['package_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/assemble/package/{package_id}/exercise/list',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListExercisesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_packages(self, request):
+        """查询当前租户的习题库列表
+
+        查询当前租户的习题库列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListPackages
+        :type request: :class:`huaweicloudsdkclassroom.v3.ListPackagesRequest`
+        :rtype: :class:`huaweicloudsdkclassroom.v3.ListPackagesResponse`
+        """
+        return self._list_packages_with_http_info(request)
+
+    def _list_packages_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/assemble/package/list',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListPackagesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_exercise_detail(self, request):
+        """查询单个习题详情
+
+        查询单个习题详情
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowExerciseDetail
+        :type request: :class:`huaweicloudsdkclassroom.v3.ShowExerciseDetailRequest`
+        :rtype: :class:`huaweicloudsdkclassroom.v3.ShowExerciseDetailResponse`
+        """
+        return self._show_exercise_detail_with_http_info(request)
+
+    def _show_exercise_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'exercise_id' in local_var_params:
+            path_params['exercise_id'] = local_var_params['exercise_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/assemble/exercise/{exercise_id}/detail',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowExerciseDetailResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_package_detail(self, request):
+        """查询单个习题库详情
+
+        查询单个习题库详情
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowPackageDetail
+        :type request: :class:`huaweicloudsdkclassroom.v3.ShowPackageDetailRequest`
+        :rtype: :class:`huaweicloudsdkclassroom.v3.ShowPackageDetailResponse`
+        """
+        return self._show_package_detail_with_http_info(request)
+
+    def _show_package_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'package_id' in local_var_params:
+            path_params['package_id'] = local_var_params['package_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/assemble/package/{package_id}/detail',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowPackageDetailResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_all_difficults(self, request):
+        """获取习题所有难度
+
+        获取习题所有难度
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListAllDifficults
+        :type request: :class:`huaweicloudsdkclassroom.v3.ListAllDifficultsRequest`
+        :rtype: :class:`huaweicloudsdkclassroom.v3.ListAllDifficultsResponse`
+        """
+        return self._list_all_difficults_with_http_info(request)
+
+    def _list_all_difficults_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/baseresource/extend-resource/difficult/all',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListAllDifficultsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_my_knowledge_points(self, request):
+        """获取自身习题知识点
+
+        获取自身习题知识点
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListMyKnowledgePoints
+        :type request: :class:`huaweicloudsdkclassroom.v3.ListMyKnowledgePointsRequest`
+        :rtype: :class:`huaweicloudsdkclassroom.v3.ListMyKnowledgePointsResponse`
+        """
+        return self._list_my_knowledge_points_with_http_info(request)
+
+    def _list_my_knowledge_points_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/baseresource/extend-resource/knowledge-point/mine',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListMyKnowledgePointsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_classroom_members(self, request):
         """根据课堂ID获取指定课堂的课堂成员列表
 

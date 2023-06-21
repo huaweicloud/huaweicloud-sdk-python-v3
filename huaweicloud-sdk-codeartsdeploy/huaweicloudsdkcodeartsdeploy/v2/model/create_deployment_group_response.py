@@ -30,7 +30,7 @@ class CreateDeploymentGroupResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param group_id: 主机组ID
+        :param group_id: 主机集群ID
         :type group_id: str
         """
         
@@ -46,7 +46,7 @@ class CreateDeploymentGroupResponse(SdkResponse):
     def group_id(self):
         """Gets the group_id of this CreateDeploymentGroupResponse.
 
-        主机组ID
+        主机集群ID
 
         :return: The group_id of this CreateDeploymentGroupResponse.
         :rtype: str
@@ -57,7 +57,7 @@ class CreateDeploymentGroupResponse(SdkResponse):
     def group_id(self, group_id):
         """Sets the group_id of this CreateDeploymentGroupResponse.
 
-        主机组ID
+        主机集群ID
 
         :param group_id: The group_id of this CreateDeploymentGroupResponse.
         :type group_id: str

@@ -39,6 +39,10 @@ class DnsRegion:
                         "https://dns.na-mexico-1.myhuaweicloud.com")
     CN_NORTH_9 = Region("cn-north-9",
                         "https://dns.cn-north-9.myhuaweicloud.com")
+    CN_NORTH_2 = Region("cn-north-2",
+                        "https://dns.cn-north-2.myhuaweicloud.com")
+    CN_SOUTH_2 = Region("cn-south-2",
+                        "https://dns.cn-south-2.myhuaweicloud.com")
 
     static_fields = {
         "cn-east-2": CN_EAST_2,
@@ -56,6 +60,8 @@ class DnsRegion:
         "la-north-2": LA_NORTH_2,
         "na-mexico-1": NA_MEXICO_1,
         "cn-north-9": CN_NORTH_9,
+        "cn-north-2": CN_NORTH_2,
+        "cn-south-2": CN_SOUTH_2,
     }
 
     @classmethod

@@ -21,6 +21,8 @@ class MicroServiceInfoCCE:
         'namespace': 'str',
         'workload_type': 'str',
         'app_name': 'str',
+        'label_key': 'str',
+        'label_value': 'str',
         'cluster_name': 'str'
     }
 
@@ -29,10 +31,12 @@ class MicroServiceInfoCCE:
         'namespace': 'namespace',
         'workload_type': 'workload_type',
         'app_name': 'app_name',
+        'label_key': 'label_key',
+        'label_value': 'label_value',
         'cluster_name': 'cluster_name'
     }
 
-    def __init__(self, cluster_id=None, namespace=None, workload_type=None, app_name=None, cluster_name=None):
+    def __init__(self, cluster_id=None, namespace=None, workload_type=None, app_name=None, label_key=None, label_value=None, cluster_name=None):
         """MicroServiceInfoCCE
 
         The model defined in huaweicloud sdk
@@ -43,8 +47,12 @@ class MicroServiceInfoCCE:
         :type namespace: str
         :param workload_type: 工作负载类型  - deployment：无状态负载  - statefulset：有状态负载  - daemonset：守护进程集
         :type workload_type: str
-        :param app_name: APP名称
+        :param app_name: APP名称。支持汉字，英文，数字，点，中划线，下划线，且只能以英文和汉字开头，1-64字符。 &gt; 中文字符必须为UTF-8或者unicode编码。
         :type app_name: str
+        :param label_key: 服务标识名。支持汉字、英文、数字、中划线、下划线、点、斜杠、中英文格式下的小括号和冒号，且只能以英文、汉字和数字开头，1-64个字符。 &gt; 中文字符必须为UTF-8或者unicode编码。
+        :type label_key: str
+        :param label_value: 服务标识值。支持汉字，英文，数字，点，中划线，下划线，且只能以英文和汉字开头，1-64字符。 &gt; 中文字符必须为UTF-8或者unicode编码。
+        :type label_value: str
         :param cluster_name: 云容器引擎集群名称
         :type cluster_name: str
         """
@@ -55,13 +63,20 @@ class MicroServiceInfoCCE:
         self._namespace = None
         self._workload_type = None
         self._app_name = None
+        self._label_key = None
+        self._label_value = None
         self._cluster_name = None
         self.discriminator = None
 
         self.cluster_id = cluster_id
         self.namespace = namespace
         self.workload_type = workload_type
-        self.app_name = app_name
+        if app_name is not None:
+            self.app_name = app_name
+        if label_key is not None:
+            self.label_key = label_key
+        if label_value is not None:
+            self.label_value = label_value
         if cluster_name is not None:
             self.cluster_name = cluster_name
 
@@ -135,7 +150,7 @@ class MicroServiceInfoCCE:
     def app_name(self):
         """Gets the app_name of this MicroServiceInfoCCE.
 
-        APP名称
+        APP名称。支持汉字，英文，数字，点，中划线，下划线，且只能以英文和汉字开头，1-64字符。 > 中文字符必须为UTF-8或者unicode编码。
 
         :return: The app_name of this MicroServiceInfoCCE.
         :rtype: str
@@ -146,12 +161,56 @@ class MicroServiceInfoCCE:
     def app_name(self, app_name):
         """Sets the app_name of this MicroServiceInfoCCE.
 
-        APP名称
+        APP名称。支持汉字，英文，数字，点，中划线，下划线，且只能以英文和汉字开头，1-64字符。 > 中文字符必须为UTF-8或者unicode编码。
 
         :param app_name: The app_name of this MicroServiceInfoCCE.
         :type app_name: str
         """
         self._app_name = app_name
+
+    @property
+    def label_key(self):
+        """Gets the label_key of this MicroServiceInfoCCE.
+
+        服务标识名。支持汉字、英文、数字、中划线、下划线、点、斜杠、中英文格式下的小括号和冒号，且只能以英文、汉字和数字开头，1-64个字符。 > 中文字符必须为UTF-8或者unicode编码。
+
+        :return: The label_key of this MicroServiceInfoCCE.
+        :rtype: str
+        """
+        return self._label_key
+
+    @label_key.setter
+    def label_key(self, label_key):
+        """Sets the label_key of this MicroServiceInfoCCE.
+
+        服务标识名。支持汉字、英文、数字、中划线、下划线、点、斜杠、中英文格式下的小括号和冒号，且只能以英文、汉字和数字开头，1-64个字符。 > 中文字符必须为UTF-8或者unicode编码。
+
+        :param label_key: The label_key of this MicroServiceInfoCCE.
+        :type label_key: str
+        """
+        self._label_key = label_key
+
+    @property
+    def label_value(self):
+        """Gets the label_value of this MicroServiceInfoCCE.
+
+        服务标识值。支持汉字，英文，数字，点，中划线，下划线，且只能以英文和汉字开头，1-64字符。 > 中文字符必须为UTF-8或者unicode编码。
+
+        :return: The label_value of this MicroServiceInfoCCE.
+        :rtype: str
+        """
+        return self._label_value
+
+    @label_value.setter
+    def label_value(self, label_value):
+        """Sets the label_value of this MicroServiceInfoCCE.
+
+        服务标识值。支持汉字，英文，数字，点，中划线，下划线，且只能以英文和汉字开头，1-64字符。 > 中文字符必须为UTF-8或者unicode编码。
+
+        :param label_value: The label_value of this MicroServiceInfoCCE.
+        :type label_value: str
+        """
+        self._label_value = label_value
 
     @property
     def cluster_name(self):

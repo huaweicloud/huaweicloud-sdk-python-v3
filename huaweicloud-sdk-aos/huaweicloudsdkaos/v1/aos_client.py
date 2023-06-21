@@ -259,6 +259,46 @@ class AosClient(Client):
           * 暂不支持传入data sources的flavor.id的场景的询价。
           * 暂不支持镜像询价。
           * 模板中询价的资源的个数是有限制的。当前一个模板中最多支持12个包周期计费资源和24个按需计费资源。
+          * 支持询价的资源列表和询价必要参数
+              * huaweicloud_cce_cluster: 
+                  * 支持的计费模式：包周期、按需
+              * huaweicloud_css_cluster:
+                  * 支持的计费模式：按需
+              * huaweicloud_evs_volume: 
+                  * 支持的计费模式：包周期、按需
+                  * 询价必要参数：size（磁盘规格）
+              * huaweicloud_compute_instance: 
+                  * 支持的计费模式：包周期、按需
+                  * 询价必要参数：flavor_id（规格ID）、flavor_name（规格名称，flavor_id和flavor_name至少给出一个）、system_disk_size（系统磁盘大小）
+              * huaweicloud_vpc_bandwidth:
+                  * 支持的计费模式：按需
+                  * 询价必要参数：charge_mode仅支持bandwidth
+              * huaweicloud_vpc_eip: 
+                  * 支持的计费模式：包周期、按需
+                  * 询价必要参数：bandwidth.size（带宽大小）
+              * huaweicloud_gaussdb_redis_instance: 
+                  * 支持的计费模式：包周期、按需
+              * huaweicloud_nat_gateway: 
+                  * 支持的计费模式：按需
+              * huaweicloud_rds_instance: 
+                  * 支持的计费模式：包周期、按需
+              * huaweicloud_sfs_turbo: 
+                  * 支持的计费模式：按需
+                  * 询价必要参数：share_type（文件系统类型）
+              * huaweicloud_dms_kafka_instance: 
+                  * 支持的计费模式：按需
+                  * 询价必要参数：flavor_id（规格ID）、product_id（产品ID。flavor_id和product_id至少给出一个。）、storage_space（存储容量）
+              * huaweicloud_dcs_instance: 
+                  * 支持的计费模式：包周期、按需
+              * huaweicloud_gaussdb_mysql_instance: 
+                  * 支持的计费模式：包周期、按需
+                  * 询价必要参数：proxy_node_number（代理节点数量）、volume_size（挂载卷的存储空间）
+              * huaweicloud_vpc: 
+                  * 支持的计费模式：免费
+              * huaweicloud_drs_job: 
+                  * 支持的计费模式：按需
+              * huaweicloud_apig_instance: 
+                  * 支持的计费模式：按需
         
         Please refer to HUAWEI cloud API Explorer for details.
 

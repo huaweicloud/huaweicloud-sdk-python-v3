@@ -63,7 +63,7 @@ class CreateEdgeApplicationVersionDTO:
         :type version: str
         :param description: 应用描述
         :type description: str
-        :param sdk_version: 应用集成的边缘升得快版本
+        :param sdk_version: 应用集成的边缘SDK版本
         :type sdk_version: str
         :param deploy_type: 应用部署类型，分为docker容器部署类型和process进程部署类型，兼容之前数据，此字段可以为空，为空情况为docker类型
         :type deploy_type: str
@@ -191,7 +191,7 @@ class CreateEdgeApplicationVersionDTO:
     def sdk_version(self):
         """Gets the sdk_version of this CreateEdgeApplicationVersionDTO.
 
-        应用集成的边缘升得快版本
+        应用集成的边缘SDK版本
 
         :return: The sdk_version of this CreateEdgeApplicationVersionDTO.
         :rtype: str
@@ -202,7 +202,7 @@ class CreateEdgeApplicationVersionDTO:
     def sdk_version(self, sdk_version):
         """Sets the sdk_version of this CreateEdgeApplicationVersionDTO.
 
-        应用集成的边缘升得快版本
+        应用集成的边缘SDK版本
 
         :param sdk_version: The sdk_version of this CreateEdgeApplicationVersionDTO.
         :type sdk_version: str

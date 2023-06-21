@@ -1,3 +1,287 @@
+# 3.1.45 2023-06-21
+
+### HuaweiCloud SDK DataArtsStudio
+
+- _新增特性_
+  - 支持数据治理中心服务
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK KooMessage
+
+- _新增特性_
+  - 支持云消息服务
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK APIG
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **DeleteGatewayResponseTypeV2**
+    - 请求参数变更
+      - `+ response_type: enum value [THIRD_AUTH_FAILURE,THIRD_AUTH_IDENTITIES_FAILURE,THIRD_AUTH_CONF_FAILURE]`
+  - **ShowDetailsOfGatewayResponseTypeV2**
+    - 请求参数变更
+      - `+ response_type: enum value [THIRD_AUTH_FAILURE,THIRD_AUTH_IDENTITIES_FAILURE,THIRD_AUTH_CONF_FAILURE]`
+  - **UpdateGatewayResponseTypeV2**
+    - 请求参数变更
+      - `+ response_type: enum value [THIRD_AUTH_FAILURE,THIRD_AUTH_IDENTITIES_FAILURE,THIRD_AUTH_CONF_FAILURE]`
+  - **ShowPlugin**
+    - 响应参数变更
+      - `+ plugin_type: enum value [third_auth]`
+  - **UpdatePlugin**
+    - 请求参数变更
+      - `+ plugin_type: enum value [third_auth]`
+    - 响应参数变更
+      - `+ plugin_type: enum value [third_auth]`
+  - **CreatePlugin**
+    - 请求参数变更
+      - `+ plugin_type: enum value [third_auth]`
+    - 响应参数变更
+      - `+ plugin_type: enum value [third_auth]`
+  - **ListPlugins**
+    - 响应参数变更
+      - `+ plugins.plugin_type: enum value [third_auth]`
+  - **AttachApiToPlugin**
+    - 响应参数变更
+      - `+ attached_plugins.plugin_type: enum value [third_auth]`
+  - **AttachPluginToApi**
+    - 响应参数变更
+      - `+ attached_plugins.plugin_type: enum value [third_auth]`
+  - **ListApiAttachedPlugins**
+    - 响应参数变更
+      - `+ plugins.plugin_type: enum value [third_auth]`
+  - **ListApiAttachablePlugins**
+    - 响应参数变更
+      - `+ plugins.plugin_type: enum value [third_auth]`
+  - **ShowDetailsOfVpcChannelV2**
+    - 响应参数变更
+      - `+ microservice_info.cce_service_info`
+      - `+ microservice_info.service_type: enum value [CCE_SERVICE]`
+      - `+ microservice_info.cce_info.label_key`
+      - `+ microservice_info.cce_info.label_value`
+  - **UpdateVpcChannelV2**
+    - 请求参数变更
+      - `+ microservice_info.cce_service_info`
+      - `+ microservice_info.service_type: enum value [CCE_SERVICE]`
+      - `+ microservice_info.cce_info.label_key`
+      - `+ microservice_info.cce_info.label_value`
+    - 响应参数变更
+      - `+ microservice_info.cce_service_info`
+      - `+ microservice_info.service_type: enum value [CCE_SERVICE]`
+      - `+ microservice_info.cce_info.label_key`
+      - `+ microservice_info.cce_info.label_value`
+  - **ImportMicroservice**
+    - 请求参数变更
+      - `+ cce_service_info`
+      - `+ service_type: enum value [CCE_SERVICE]`
+      - `+ cce_info.label_key`
+      - `+ cce_info.label_value`
+  - **CreateVpcChannelV2**
+    - 请求参数变更
+      - `+ microservice_info.cce_service_info`
+      - `+ microservice_info.service_type: enum value [CCE_SERVICE]`
+      - `+ microservice_info.cce_info.label_key`
+      - `+ microservice_info.cce_info.label_value`
+    - 响应参数变更
+      - `+ microservice_info.cce_service_info`
+      - `+ microservice_info.service_type: enum value [CCE_SERVICE]`
+      - `+ microservice_info.cce_info.label_key`
+      - `+ microservice_info.cce_info.label_value`
+  - **ListVpcChannelsV2**
+    - 响应参数变更
+      - `+ vpc_channels.microservice_info.cce_service_info`
+      - `+ vpc_channels.microservice_info.service_type: enum value [CCE_SERVICE]`
+      - `+ vpc_channels.microservice_info.cce_info.label_key`
+      - `+ vpc_channels.microservice_info.cce_info.label_value`
+
+### HuaweiCloud SDK Classroom
+
+- _新增特性_
+  - 支持以下接口：
+    - `ListPackages`
+    - `ShowPackageDetail`
+    - `ListExercises`
+    - `ShowExerciseDetail`
+    - `ExecuteExercise`
+    - `ListAllDifficults`
+    - `ListMyKnowledgePoints`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ApplyJudgement**
+    - 请求参数变更
+      - `+ runtime_type: enum value [javaScript]`
+
+### HuaweiCloud SDK CloudRTC
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **UpdateAutoRecord**
+    - 响应参数变更
+      - `- auto_record_mode`
+      - `- app_id`
+  - **CreateMixJob**
+    - 响应参数变更
+      - `+ mix_param.encode_template: enum value [1920*1080_30_4620,1920*1080_30_3150,1920*1080_15_3460,1920*1080_15_2080,1280*720_30_3420,1280*720_30_1710,1280*720_15_2260,1280*720_15_1130,640*480_30_1000,640*480_30_1500,640*480_15_500,480*360_30_490,480*360_15_320]`
+      - `- mix_param.encode_template: enum value [1920x1080_30_4620,1920x1080_15_3460,1280x720_30_3420,1280x720_15_2260]`
+  - **ShowMixJob**
+    - 响应参数变更
+      - `+ mix_param.encode_template: enum value [1920*1080_30_4620,1920*1080_30_3150,1920*1080_15_3460,1920*1080_15_2080,1280*720_30_3420,1280*720_30_1710,1280*720_15_2260,1280*720_15_1130,640*480_30_1000,640*480_30_1500,640*480_15_500,480*360_30_490,480*360_15_320]`
+      - `- mix_param.encode_template: enum value [1920x1080_30_4620,1920x1080_15_3460,1280x720_30_3420,1280x720_15_2260]`
+  - **UpdateMixJob**
+    - 响应参数变更
+      - `+ mix_param.encode_template: enum value [1920*1080_30_4620,1920*1080_30_3150,1920*1080_15_3460,1920*1080_15_2080,1280*720_30_3420,1280*720_30_1710,1280*720_15_2260,1280*720_15_1130,640*480_30_1000,640*480_30_1500,640*480_15_500,480*360_30_490,480*360_15_320]`
+      - `- mix_param.encode_template: enum value [1920x1080_30_4620,1920x1080_15_3460,1280x720_30_3420,1280x720_15_2260]`
+
+### HuaweiCloud SDK CloudTable
+
+- _新增特性_
+  - 支持以下接口：
+    - `EnableComponent`
+    - `ExpandClusterComponent`
+    - `RebootCloudTableCluster`
+    - `ShowClusterSetting`
+    - `UpdateClusterSetting`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK DNS
+
+- _新增特性_
+  - 支持接口`ShowDomainQuota`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowRecordSetWithLine**
+    - 响应参数变更
+      - `+ bundle`
+  - **SetRecordSetsStatus**
+    - 响应参数变更
+      - `+ bundle`
+  - **BatchUpdateRecordSetWithLine**
+    - 响应参数变更
+      - `+ bundle`
+      - `+ recordsets.bundle`
+  - **BatchDeleteRecordSetWithLine**
+    - 响应参数变更
+      - `+ bundle`
+      - `+ recordsets.bundle`
+  - **CreateRecordSetWithBatchLines**
+    - 响应参数变更
+      - `+ bundle`
+      - `+ recordsets.bundle`
+
+### HuaweiCloud SDK DWS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListAvailableDisasterClusters**
+    - 请求参数变更
+      - `* primary_cluster_id: optional -> required`
+      - `* standby_az_code: optional -> required`
+
+### HuaweiCloud SDK eiHealth
+
+- _新增特性_
+  - 支持以下接口：
+    - `ListDrugJob`
+    - `CancelDrugJob`
+    - `DeleteDrugJob`
+    - `CreateOptmJob`
+    - `ShowOptmJob`
+    - `CreateSynthesisJob`
+    - `ShowSynthesisJob`
+    - `CreateDockingJob`
+    - `ShowDockingJob`
+    - `CreateFepJob`
+    - `ShowFepJob`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK GaussDBforopenGauss
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateDbInstance**
+    - 响应参数变更
+      - `+ instance.ha.consistency_protocol`
+
+### HuaweiCloud SDK IoTEdge
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateEdgeNode**
+    - 请求参数变更
+      - `+ npu_library_path`
+      - `+ device_data_format`
+      - `+ automatic_upgrade`
+      - `+ device_data_record`
+      - `+ metric_report`
+      - `+ base_path.offline_cache_configs`
+    - 响应参数变更
+      - `+ device_data_record`
+      - `+ device_data_format`
+      - `+ metric_report`
+      - `+ automatic_upgrade`
+      - `+ base_path.offline_cache_configs`
+  - **ShowEdgeNode**
+    - 响应参数变更
+      - `+ device_data_record`
+      - `+ device_data_format`
+      - `+ metric_report`
+      - `+ npu_library_path`
+      - `+ automatic_upgrade`
+      - `+ base_path.offline_cache_configs`
+  - **CreateEdgeApplicationVersion**
+    - 请求参数变更
+      - `+ container_settings.npu_type`
+      - `+ container_settings.vnpu_template`
+    - 响应参数变更
+      - `+ container_settings.npu_type`
+      - `+ container_settings.vnpu_template`
+  - **ShowEdgeApplicationVersion**
+    - 响应参数变更
+      - `+ container_settings.npu_type`
+      - `+ container_settings.vnpu_template`
+  - **UpdateEdgeApplicationVersion**
+    - 请求参数变更
+      - `+ container_settings.npu_type`
+      - `+ container_settings.vnpu_template`
+
+### HuaweiCloud SDK RDS
+
+- _新增特性_
+  - 支持接口`ListPredefinedTag`、`ListSimplifiedInstances`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
 # 3.1.44 2023-06-15
 
 ### HuaweiCloud SDK CloudDeploy

@@ -53,7 +53,7 @@ class Template:
         :type update_time: str
         :param latest_version_id: 模板中最新的模板版本ID
         :type latest_version_id: str
-        :param latest_version_description: 模板中最新模板版本的版本描述
+        :param latest_version_description: -&gt; 模板中最新模板版本的版本描述
         :type latest_version_description: str
         """
         
@@ -213,7 +213,7 @@ class Template:
     def latest_version_description(self):
         """Gets the latest_version_description of this Template.
 
-        模板中最新模板版本的版本描述
+        -> 模板中最新模板版本的版本描述
 
         :return: The latest_version_description of this Template.
         :rtype: str
@@ -224,7 +224,7 @@ class Template:
     def latest_version_description(self, latest_version_description):
         """Sets the latest_version_description of this Template.
 
-        模板中最新模板版本的版本描述
+        -> 模板中最新模板版本的版本描述
 
         :param latest_version_description: The latest_version_description of this Template.
         :type latest_version_description: str

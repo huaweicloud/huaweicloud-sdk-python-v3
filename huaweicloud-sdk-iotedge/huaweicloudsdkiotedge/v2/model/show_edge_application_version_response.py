@@ -84,7 +84,7 @@ class ShowEdgeApplicationVersionResponse(SdkResponse):
         :type deploy_multi_instance: bool
         :param version: 应用版本
         :type version: str
-        :param sdk_version: 应用集成的边缘升得快版本
+        :param sdk_version: 应用集成的边缘SDK版本
         :type sdk_version: str
         :param description: 应用描述
         :type description: str
@@ -310,7 +310,7 @@ class ShowEdgeApplicationVersionResponse(SdkResponse):
     def sdk_version(self):
         """Gets the sdk_version of this ShowEdgeApplicationVersionResponse.
 
-        应用集成的边缘升得快版本
+        应用集成的边缘SDK版本
 
         :return: The sdk_version of this ShowEdgeApplicationVersionResponse.
         :rtype: str
@@ -321,7 +321,7 @@ class ShowEdgeApplicationVersionResponse(SdkResponse):
     def sdk_version(self, sdk_version):
         """Sets the sdk_version of this ShowEdgeApplicationVersionResponse.
 
-        应用集成的边缘升得快版本
+        应用集成的边缘SDK版本
 
         :param sdk_version: The sdk_version of this ShowEdgeApplicationVersionResponse.
         :type sdk_version: str

@@ -31,13 +31,18 @@ class EdgeNodeCreation:
         'reliability_level': 'str',
         'storage_period': 'int',
         'ai_card_type': 'str',
+        'npu_library_path': 'str',
         'base_path': 'BasePathDTO',
         'log_configs': 'list[LogConfigDTO]',
         'apps': 'list[EdgeAppInstanceDTO]',
         'network_access_point': 'str',
         'hardware_model': 'str',
         'offline_cache_configs': 'OfflineCacheConfigsDTO',
-        'device_auth_info': 'DeviceAuthInfoDTO'
+        'device_auth_info': 'DeviceAuthInfoDTO',
+        'device_data_format': 'str',
+        'automatic_upgrade': 'str',
+        'device_data_record': 'DeviceDataRecord',
+        'metric_report': 'str'
     }
 
     attribute_map = {
@@ -55,16 +60,21 @@ class EdgeNodeCreation:
         'reliability_level': 'reliability_level',
         'storage_period': 'storage_period',
         'ai_card_type': 'ai_card_type',
+        'npu_library_path': 'npu_library_path',
         'base_path': 'base_path',
         'log_configs': 'log_configs',
         'apps': 'apps',
         'network_access_point': 'network_access_point',
         'hardware_model': 'hardware_model',
         'offline_cache_configs': 'offline_cache_configs',
-        'device_auth_info': 'device_auth_info'
+        'device_auth_info': 'device_auth_info',
+        'device_data_format': 'device_data_format',
+        'automatic_upgrade': 'automatic_upgrade',
+        'device_data_record': 'device_data_record',
+        'metric_report': 'metric_report'
     }
 
-    def __init__(self, edge_node_id=None, name=None, type=None, verify_code=None, time_out=None, arch=None, os_type=None, instance_id=None, space_id=None, resource_ids=None, security_level=None, reliability_level=None, storage_period=None, ai_card_type=None, base_path=None, log_configs=None, apps=None, network_access_point=None, hardware_model=None, offline_cache_configs=None, device_auth_info=None):
+    def __init__(self, edge_node_id=None, name=None, type=None, verify_code=None, time_out=None, arch=None, os_type=None, instance_id=None, space_id=None, resource_ids=None, security_level=None, reliability_level=None, storage_period=None, ai_card_type=None, npu_library_path=None, base_path=None, log_configs=None, apps=None, network_access_point=None, hardware_model=None, offline_cache_configs=None, device_auth_info=None, device_data_format=None, automatic_upgrade=None, device_data_record=None, metric_report=None):
         """EdgeNodeCreation
 
         The model defined in huaweicloud sdk
@@ -95,8 +105,10 @@ class EdgeNodeCreation:
         :type reliability_level: str
         :param storage_period: 节点的存储周期，默认0天，取值范围0~7天，0天则不存储。
         :type storage_period: int
-        :param ai_card_type: 华为AI加速卡类型，如NPU、GPU。
+        :param ai_card_type: AI加速卡类型，如华为昇腾AI加速卡NPU、图像处理加速卡GPU。
         :type ai_card_type: str
+        :param npu_library_path: npu驱动动态库路径
+        :type npu_library_path: str
         :param base_path: 
         :type base_path: :class:`huaweicloudsdkiotedge.v2.BasePathDTO`
         :param log_configs: 边缘节点在IEF日志配置参数，仅高级版支持。
@@ -111,6 +123,14 @@ class EdgeNodeCreation:
         :type offline_cache_configs: :class:`huaweicloudsdkiotedge.v2.OfflineCacheConfigsDTO`
         :param device_auth_info: 
         :type device_auth_info: :class:`huaweicloudsdkiotedge.v2.DeviceAuthInfoDTO`
+        :param device_data_format: 节点使用的数据格式，默认为iotda物模型1.0格式，可以选择属性平铺数据格式flat_json
+        :type device_data_format: str
+        :param automatic_upgrade: 自动升级系统应用的节点开关，默认为关闭：OFF，IMMEDIATE表示节点开关打开
+        :type automatic_upgrade: str
+        :param device_data_record: 
+        :type device_data_record: :class:`huaweicloudsdkiotedge.v2.DeviceDataRecord`
+        :param metric_report: omagent监控运维工具是否上报指标
+        :type metric_report: str
         """
         
         
@@ -129,6 +149,7 @@ class EdgeNodeCreation:
         self._reliability_level = None
         self._storage_period = None
         self._ai_card_type = None
+        self._npu_library_path = None
         self._base_path = None
         self._log_configs = None
         self._apps = None
@@ -136,6 +157,10 @@ class EdgeNodeCreation:
         self._hardware_model = None
         self._offline_cache_configs = None
         self._device_auth_info = None
+        self._device_data_format = None
+        self._automatic_upgrade = None
+        self._device_data_record = None
+        self._metric_report = None
         self.discriminator = None
 
         if edge_node_id is not None:
@@ -164,6 +189,8 @@ class EdgeNodeCreation:
             self.storage_period = storage_period
         if ai_card_type is not None:
             self.ai_card_type = ai_card_type
+        if npu_library_path is not None:
+            self.npu_library_path = npu_library_path
         if base_path is not None:
             self.base_path = base_path
         if log_configs is not None:
@@ -178,6 +205,14 @@ class EdgeNodeCreation:
             self.offline_cache_configs = offline_cache_configs
         if device_auth_info is not None:
             self.device_auth_info = device_auth_info
+        if device_data_format is not None:
+            self.device_data_format = device_data_format
+        if automatic_upgrade is not None:
+            self.automatic_upgrade = automatic_upgrade
+        if device_data_record is not None:
+            self.device_data_record = device_data_record
+        if metric_report is not None:
+            self.metric_report = metric_report
 
     @property
     def edge_node_id(self):
@@ -469,7 +504,7 @@ class EdgeNodeCreation:
     def ai_card_type(self):
         """Gets the ai_card_type of this EdgeNodeCreation.
 
-        华为AI加速卡类型，如NPU、GPU。
+        AI加速卡类型，如华为昇腾AI加速卡NPU、图像处理加速卡GPU。
 
         :return: The ai_card_type of this EdgeNodeCreation.
         :rtype: str
@@ -480,12 +515,34 @@ class EdgeNodeCreation:
     def ai_card_type(self, ai_card_type):
         """Sets the ai_card_type of this EdgeNodeCreation.
 
-        华为AI加速卡类型，如NPU、GPU。
+        AI加速卡类型，如华为昇腾AI加速卡NPU、图像处理加速卡GPU。
 
         :param ai_card_type: The ai_card_type of this EdgeNodeCreation.
         :type ai_card_type: str
         """
         self._ai_card_type = ai_card_type
+
+    @property
+    def npu_library_path(self):
+        """Gets the npu_library_path of this EdgeNodeCreation.
+
+        npu驱动动态库路径
+
+        :return: The npu_library_path of this EdgeNodeCreation.
+        :rtype: str
+        """
+        return self._npu_library_path
+
+    @npu_library_path.setter
+    def npu_library_path(self, npu_library_path):
+        """Sets the npu_library_path of this EdgeNodeCreation.
+
+        npu驱动动态库路径
+
+        :param npu_library_path: The npu_library_path of this EdgeNodeCreation.
+        :type npu_library_path: str
+        """
+        self._npu_library_path = npu_library_path
 
     @property
     def base_path(self):
@@ -628,6 +685,90 @@ class EdgeNodeCreation:
         :type device_auth_info: :class:`huaweicloudsdkiotedge.v2.DeviceAuthInfoDTO`
         """
         self._device_auth_info = device_auth_info
+
+    @property
+    def device_data_format(self):
+        """Gets the device_data_format of this EdgeNodeCreation.
+
+        节点使用的数据格式，默认为iotda物模型1.0格式，可以选择属性平铺数据格式flat_json
+
+        :return: The device_data_format of this EdgeNodeCreation.
+        :rtype: str
+        """
+        return self._device_data_format
+
+    @device_data_format.setter
+    def device_data_format(self, device_data_format):
+        """Sets the device_data_format of this EdgeNodeCreation.
+
+        节点使用的数据格式，默认为iotda物模型1.0格式，可以选择属性平铺数据格式flat_json
+
+        :param device_data_format: The device_data_format of this EdgeNodeCreation.
+        :type device_data_format: str
+        """
+        self._device_data_format = device_data_format
+
+    @property
+    def automatic_upgrade(self):
+        """Gets the automatic_upgrade of this EdgeNodeCreation.
+
+        自动升级系统应用的节点开关，默认为关闭：OFF，IMMEDIATE表示节点开关打开
+
+        :return: The automatic_upgrade of this EdgeNodeCreation.
+        :rtype: str
+        """
+        return self._automatic_upgrade
+
+    @automatic_upgrade.setter
+    def automatic_upgrade(self, automatic_upgrade):
+        """Sets the automatic_upgrade of this EdgeNodeCreation.
+
+        自动升级系统应用的节点开关，默认为关闭：OFF，IMMEDIATE表示节点开关打开
+
+        :param automatic_upgrade: The automatic_upgrade of this EdgeNodeCreation.
+        :type automatic_upgrade: str
+        """
+        self._automatic_upgrade = automatic_upgrade
+
+    @property
+    def device_data_record(self):
+        """Gets the device_data_record of this EdgeNodeCreation.
+
+        :return: The device_data_record of this EdgeNodeCreation.
+        :rtype: :class:`huaweicloudsdkiotedge.v2.DeviceDataRecord`
+        """
+        return self._device_data_record
+
+    @device_data_record.setter
+    def device_data_record(self, device_data_record):
+        """Sets the device_data_record of this EdgeNodeCreation.
+
+        :param device_data_record: The device_data_record of this EdgeNodeCreation.
+        :type device_data_record: :class:`huaweicloudsdkiotedge.v2.DeviceDataRecord`
+        """
+        self._device_data_record = device_data_record
+
+    @property
+    def metric_report(self):
+        """Gets the metric_report of this EdgeNodeCreation.
+
+        omagent监控运维工具是否上报指标
+
+        :return: The metric_report of this EdgeNodeCreation.
+        :rtype: str
+        """
+        return self._metric_report
+
+    @metric_report.setter
+    def metric_report(self, metric_report):
+        """Sets the metric_report of this EdgeNodeCreation.
+
+        omagent监控运维工具是否上报指标
+
+        :param metric_report: The metric_report of this EdgeNodeCreation.
+        :type metric_report: str
+        """
+        self._metric_report = metric_report
 
     def to_dict(self):
         """Returns the model properties as a dict"""

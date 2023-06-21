@@ -33,7 +33,7 @@ class UpdateDeploymentHostRequest:
 
         The model defined in huaweicloud sdk
 
-        :param group_id: 主机组id
+        :param group_id: 主机集群id
         :type group_id: str
         :param host_id: 主机id
         :type host_id: str
@@ -57,7 +57,7 @@ class UpdateDeploymentHostRequest:
     def group_id(self):
         """Gets the group_id of this UpdateDeploymentHostRequest.
 
-        主机组id
+        主机集群id
 
         :return: The group_id of this UpdateDeploymentHostRequest.
         :rtype: str
@@ -68,7 +68,7 @@ class UpdateDeploymentHostRequest:
     def group_id(self, group_id):
         """Sets the group_id of this UpdateDeploymentHostRequest.
 
-        主机组id
+        主机集群id
 
         :param group_id: The group_id of this UpdateDeploymentHostRequest.
         :type group_id: str

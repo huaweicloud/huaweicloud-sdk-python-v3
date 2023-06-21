@@ -36,7 +36,7 @@ class ListHostsResponse(SdkResponse):
 
         :param total: 主机数量
         :type total: int
-        :param group_name: 主机组名称
+        :param group_name: 主机集群名称
         :type group_name: str
         :param hosts: 主机列表信息
         :type hosts: list[:class:`huaweicloudsdkcodeartsdeploy.v2.DeploymentHostDetail`]
@@ -82,7 +82,7 @@ class ListHostsResponse(SdkResponse):
     def group_name(self):
         """Gets the group_name of this ListHostsResponse.
 
-        主机组名称
+        主机集群名称
 
         :return: The group_name of this ListHostsResponse.
         :rtype: str
@@ -93,7 +93,7 @@ class ListHostsResponse(SdkResponse):
     def group_name(self, group_name):
         """Sets the group_name of this ListHostsResponse.
 
-        主机组名称
+        主机集群名称
 
         :param group_name: The group_name of this ListHostsResponse.
         :type group_name: str

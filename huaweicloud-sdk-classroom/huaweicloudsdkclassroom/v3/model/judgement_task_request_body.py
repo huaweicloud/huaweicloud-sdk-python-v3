@@ -51,7 +51,7 @@ class JudgementTaskRequestBody:
         :type source_code: str
         :param description: 任务描述
         :type description: str
-        :param runtime_type: 支持语言类型：java、c、cpp、python
+        :param runtime_type: 支持语言类型：java、c、cpp、python、javaScript
         :type runtime_type: str
         :param timeout: 代码运行超时时间，单位为秒
         :type timeout: int
@@ -177,7 +177,7 @@ class JudgementTaskRequestBody:
     def runtime_type(self):
         """Gets the runtime_type of this JudgementTaskRequestBody.
 
-        支持语言类型：java、c、cpp、python
+        支持语言类型：java、c、cpp、python、javaScript
 
         :return: The runtime_type of this JudgementTaskRequestBody.
         :rtype: str
@@ -188,7 +188,7 @@ class JudgementTaskRequestBody:
     def runtime_type(self, runtime_type):
         """Sets the runtime_type of this JudgementTaskRequestBody.
 
-        支持语言类型：java、c、cpp、python
+        支持语言类型：java、c、cpp、python、javaScript
 
         :param runtime_type: The runtime_type of this JudgementTaskRequestBody.
         :type runtime_type: str

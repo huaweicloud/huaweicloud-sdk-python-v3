@@ -21,6 +21,8 @@ class ContainerSettingsDTO:
         'image_url': 'str',
         'envs': 'object',
         'volumes': 'list[VolumeDTO]',
+        'npu_type': 'str',
+        'vnpu_template': 'str',
         'resources': 'ResourceDTO',
         'ext_devices': 'list[ExtDevice]'
     }
@@ -30,11 +32,13 @@ class ContainerSettingsDTO:
         'image_url': 'image_url',
         'envs': 'envs',
         'volumes': 'volumes',
+        'npu_type': 'npu_type',
+        'vnpu_template': 'vnpu_template',
         'resources': 'resources',
         'ext_devices': 'ext_devices'
     }
 
-    def __init__(self, configs=None, image_url=None, envs=None, volumes=None, resources=None, ext_devices=None):
+    def __init__(self, configs=None, image_url=None, envs=None, volumes=None, npu_type=None, vnpu_template=None, resources=None, ext_devices=None):
         """ContainerSettingsDTO
 
         The model defined in huaweicloud sdk
@@ -47,6 +51,10 @@ class ContainerSettingsDTO:
         :type envs: object
         :param volumes: 卷配置
         :type volumes: list[:class:`huaweicloudsdkiotedge.v2.VolumeDTO`]
+        :param npu_type: NPU类型, D310:昇腾310推理卡，D910:昇腾910训练卡;D310P：昇腾710或者310P加速卡
+        :type npu_type: str
+        :param vnpu_template: NPU算力切分模板,昇腾D310Pro，支持：vir01、vir02、vir02_1c、vir04、vir04_4c_dvpp、vir04_3c、vir04_3c_ndvpp 昇腾D910芯片支持:vir01|vir02|vir04|vir08 可在对应芯片的机器上通过npu-smi info -t template-info命令查询其详细信息
+        :type vnpu_template: str
         :param resources: 
         :type resources: :class:`huaweicloudsdkiotedge.v2.ResourceDTO`
         :param ext_devices: 外挂设备配置
@@ -59,6 +67,8 @@ class ContainerSettingsDTO:
         self._image_url = None
         self._envs = None
         self._volumes = None
+        self._npu_type = None
+        self._vnpu_template = None
         self._resources = None
         self._ext_devices = None
         self.discriminator = None
@@ -70,6 +80,10 @@ class ContainerSettingsDTO:
             self.envs = envs
         if volumes is not None:
             self.volumes = volumes
+        if npu_type is not None:
+            self.npu_type = npu_type
+        if vnpu_template is not None:
+            self.vnpu_template = vnpu_template
         if resources is not None:
             self.resources = resources
         if ext_devices is not None:
@@ -158,6 +172,50 @@ class ContainerSettingsDTO:
         :type volumes: list[:class:`huaweicloudsdkiotedge.v2.VolumeDTO`]
         """
         self._volumes = volumes
+
+    @property
+    def npu_type(self):
+        """Gets the npu_type of this ContainerSettingsDTO.
+
+        NPU类型, D310:昇腾310推理卡，D910:昇腾910训练卡;D310P：昇腾710或者310P加速卡
+
+        :return: The npu_type of this ContainerSettingsDTO.
+        :rtype: str
+        """
+        return self._npu_type
+
+    @npu_type.setter
+    def npu_type(self, npu_type):
+        """Sets the npu_type of this ContainerSettingsDTO.
+
+        NPU类型, D310:昇腾310推理卡，D910:昇腾910训练卡;D310P：昇腾710或者310P加速卡
+
+        :param npu_type: The npu_type of this ContainerSettingsDTO.
+        :type npu_type: str
+        """
+        self._npu_type = npu_type
+
+    @property
+    def vnpu_template(self):
+        """Gets the vnpu_template of this ContainerSettingsDTO.
+
+        NPU算力切分模板,昇腾D310Pro，支持：vir01、vir02、vir02_1c、vir04、vir04_4c_dvpp、vir04_3c、vir04_3c_ndvpp 昇腾D910芯片支持:vir01|vir02|vir04|vir08 可在对应芯片的机器上通过npu-smi info -t template-info命令查询其详细信息
+
+        :return: The vnpu_template of this ContainerSettingsDTO.
+        :rtype: str
+        """
+        return self._vnpu_template
+
+    @vnpu_template.setter
+    def vnpu_template(self, vnpu_template):
+        """Sets the vnpu_template of this ContainerSettingsDTO.
+
+        NPU算力切分模板,昇腾D310Pro，支持：vir01、vir02、vir02_1c、vir04、vir04_4c_dvpp、vir04_3c、vir04_3c_ndvpp 昇腾D910芯片支持:vir01|vir02|vir04|vir08 可在对应芯片的机器上通过npu-smi info -t template-info命令查询其详细信息
+
+        :param vnpu_template: The vnpu_template of this ContainerSettingsDTO.
+        :type vnpu_template: str
+        """
+        self._vnpu_template = vnpu_template
 
     @property
     def resources(self):

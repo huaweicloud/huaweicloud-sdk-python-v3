@@ -31,7 +31,7 @@ class ShowDeploymentHostDetailRequest:
 
         The model defined in huaweicloud sdk
 
-        :param group_id: 主机组id
+        :param group_id: 主机集群id
         :type group_id: str
         :param host_id: 主机id
         :type host_id: str
@@ -50,7 +50,7 @@ class ShowDeploymentHostDetailRequest:
     def group_id(self):
         """Gets the group_id of this ShowDeploymentHostDetailRequest.
 
-        主机组id
+        主机集群id
 
         :return: The group_id of this ShowDeploymentHostDetailRequest.
         :rtype: str
@@ -61,7 +61,7 @@ class ShowDeploymentHostDetailRequest:
     def group_id(self, group_id):
         """Sets the group_id of this ShowDeploymentHostDetailRequest.
 
-        主机组id
+        主机集群id
 
         :param group_id: The group_id of this ShowDeploymentHostDetailRequest.
         :type group_id: str

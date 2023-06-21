@@ -19,26 +19,30 @@ class MicroServiceCreate:
     openapi_types = {
         'service_type': 'str',
         'cse_info': 'MicroServiceInfoCSEBase',
-        'cce_info': 'MicroServiceInfoCCEBase'
+        'cce_info': 'MicroServiceInfoCCEBase',
+        'cce_service_info': 'MicroServiceInfoCCEServiceBase'
     }
 
     attribute_map = {
         'service_type': 'service_type',
         'cse_info': 'cse_info',
-        'cce_info': 'cce_info'
+        'cce_info': 'cce_info',
+        'cce_service_info': 'cce_service_info'
     }
 
-    def __init__(self, service_type=None, cse_info=None, cce_info=None):
+    def __init__(self, service_type=None, cse_info=None, cce_info=None, cce_service_info=None):
         """MicroServiceCreate
 
         The model defined in huaweicloud sdk
 
-        :param service_type: 微服务类型： - CSE：CSE微服务注册中心 - CCE：CCE云容器引擎
+        :param service_type: 微服务类型： - CSE：CSE微服务注册中心 - CCE：CCE云容器引擎（工作负载） - CCE_SERVICE: CCE云容器引擎（Service）
         :type service_type: str
         :param cse_info: 
         :type cse_info: :class:`huaweicloudsdkapig.v2.MicroServiceInfoCSEBase`
         :param cce_info: 
         :type cce_info: :class:`huaweicloudsdkapig.v2.MicroServiceInfoCCEBase`
+        :param cce_service_info: 
+        :type cce_service_info: :class:`huaweicloudsdkapig.v2.MicroServiceInfoCCEServiceBase`
         """
         
         
@@ -46,6 +50,7 @@ class MicroServiceCreate:
         self._service_type = None
         self._cse_info = None
         self._cce_info = None
+        self._cce_service_info = None
         self.discriminator = None
 
         if service_type is not None:
@@ -54,12 +59,14 @@ class MicroServiceCreate:
             self.cse_info = cse_info
         if cce_info is not None:
             self.cce_info = cce_info
+        if cce_service_info is not None:
+            self.cce_service_info = cce_service_info
 
     @property
     def service_type(self):
         """Gets the service_type of this MicroServiceCreate.
 
-        微服务类型： - CSE：CSE微服务注册中心 - CCE：CCE云容器引擎
+        微服务类型： - CSE：CSE微服务注册中心 - CCE：CCE云容器引擎（工作负载） - CCE_SERVICE: CCE云容器引擎（Service）
 
         :return: The service_type of this MicroServiceCreate.
         :rtype: str
@@ -70,7 +77,7 @@ class MicroServiceCreate:
     def service_type(self, service_type):
         """Sets the service_type of this MicroServiceCreate.
 
-        微服务类型： - CSE：CSE微服务注册中心 - CCE：CCE云容器引擎
+        微服务类型： - CSE：CSE微服务注册中心 - CCE：CCE云容器引擎（工作负载） - CCE_SERVICE: CCE云容器引擎（Service）
 
         :param service_type: The service_type of this MicroServiceCreate.
         :type service_type: str
@@ -112,6 +119,24 @@ class MicroServiceCreate:
         :type cce_info: :class:`huaweicloudsdkapig.v2.MicroServiceInfoCCEBase`
         """
         self._cce_info = cce_info
+
+    @property
+    def cce_service_info(self):
+        """Gets the cce_service_info of this MicroServiceCreate.
+
+        :return: The cce_service_info of this MicroServiceCreate.
+        :rtype: :class:`huaweicloudsdkapig.v2.MicroServiceInfoCCEServiceBase`
+        """
+        return self._cce_service_info
+
+    @cce_service_info.setter
+    def cce_service_info(self, cce_service_info):
+        """Sets the cce_service_info of this MicroServiceCreate.
+
+        :param cce_service_info: The cce_service_info of this MicroServiceCreate.
+        :type cce_service_info: :class:`huaweicloudsdkapig.v2.MicroServiceInfoCCEServiceBase`
+        """
+        self._cce_service_info = cce_service_info
 
     def to_dict(self):
         """Returns the model properties as a dict"""
