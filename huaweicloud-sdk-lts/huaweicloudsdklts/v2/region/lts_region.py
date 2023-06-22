@@ -43,10 +43,6 @@ class LtsRegion:
                         "https://lts.cn-south-2.myhuaweicloud.com")
     NA_MEXICO_1 = Region("na-mexico-1",
                         "https://lts.na-mexico-1.myhuaweicloud.com")
-    EU_WEST_0 = Region("eu-west-0",
-                        "https://lts.eu-west-0.myhuaweicloud.com")
-    EU_WEST_101 = Region("eu-west-101",
-                        "https://lts.eu-west-101.myhuaweicloud.com")
 
     static_fields = {
         "cn-east-2": CN_EAST_2,
@@ -66,8 +62,6 @@ class LtsRegion:
         "cn-north-9": CN_NORTH_9,
         "cn-south-2": CN_SOUTH_2,
         "na-mexico-1": NA_MEXICO_1,
-        "eu-west-0": EU_WEST_0,
-        "eu-west-101": EU_WEST_101,
     }
 
     @classmethod
