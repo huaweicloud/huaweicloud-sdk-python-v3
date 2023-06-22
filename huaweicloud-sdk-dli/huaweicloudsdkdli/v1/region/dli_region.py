@@ -43,10 +43,6 @@ class DliRegion:
                         "https://dli.ru-northwest-2.myhuaweicloud.com")
     LA_NORTH_2 = Region("la-north-2",
                         "https://dli.la-north-2.myhuaweicloud.com")
-    EU_WEST_0 = Region("eu-west-0",
-                        "https://dli.eu-west-0.myhuaweicloud.com")
-    EU_WEST_101 = Region("eu-west-101",
-                        "https://dli.eu-west-101.myhuaweicloud.com")
 
     static_fields = {
         "cn-north-2": CN_NORTH_2,
@@ -66,8 +62,6 @@ class DliRegion:
         "na-mexico-1": NA_MEXICO_1,
         "ru-northwest-2": RU_NORTHWEST_2,
         "la-north-2": LA_NORTH_2,
-        "eu-west-0": EU_WEST_0,
-        "eu-west-101": EU_WEST_101,
     }
 
     @classmethod
