@@ -23,6 +23,8 @@ class GesRegion:
                         "https://ges.ap-southeast-1.myhuaweicloud.com")
     AP_SOUTHEAST_3 = Region("ap-southeast-3",
                         "https://ges.ap-southeast-3.myhuaweicloud.com")
+    EU_WEST_101 = Region("eu-west-101",
+                        "https://ges.eu-west-101.myhuaweicloud.com")
 
     static_fields = {
         "cn-north-2": CN_NORTH_2,
@@ -32,6 +34,7 @@ class GesRegion:
         "cn-south-1": CN_SOUTH_1,
         "ap-southeast-1": AP_SOUTHEAST_1,
         "ap-southeast-3": AP_SOUTHEAST_3,
+        "eu-west-101": EU_WEST_101,
     }
 
     @classmethod

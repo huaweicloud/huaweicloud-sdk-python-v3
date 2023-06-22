@@ -47,6 +47,10 @@ class ImsRegion:
                         "https://ims.ap-southeast-4.myhuaweicloud.com")
     CN_SOUTH_4 = Region("cn-south-4",
                         "https://ims.cn-south-4.myhuaweicloud.com")
+    EU_WEST_0 = Region("eu-west-0",
+                        "https://ims.eu-west-0.myhuaweicloud.com")
+    EU_WEST_101 = Region("eu-west-101",
+                        "https://ims.eu-west-101.myhuaweicloud.com")
 
     static_fields = {
         "af-south-1": AF_SOUTH_1,
@@ -68,6 +72,8 @@ class ImsRegion:
         "na-mexico-1": NA_MEXICO_1,
         "ap-southeast-4": AP_SOUTHEAST_4,
         "cn-south-4": CN_SOUTH_4,
+        "eu-west-0": EU_WEST_0,
+        "eu-west-101": EU_WEST_101,
     }
 
     @classmethod
