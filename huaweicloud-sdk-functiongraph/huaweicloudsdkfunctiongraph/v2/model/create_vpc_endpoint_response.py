@@ -18,80 +18,80 @@ class CreateVpcEndpointResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'state': 'list[str]',
-        'code': 'str'
+        'endpoints': 'list[str]',
+        'address': 'str'
     }
 
     attribute_map = {
-        'state': 'state',
-        'code': 'code'
+        'endpoints': 'endpoints',
+        'address': 'address'
     }
 
-    def __init__(self, state=None, code=None):
+    def __init__(self, endpoints=None, address=None):
         """CreateVpcEndpointResponse
 
         The model defined in huaweicloud sdk
 
-        :param state: 依赖id列表
-        :type state: list[str]
-        :param code: 快照制作响应码
-        :type code: str
+        :param endpoints: Ip列表
+        :type endpoints: list[str]
+        :param address: 域名地址
+        :type address: str
         """
         
         super(CreateVpcEndpointResponse, self).__init__()
 
-        self._state = None
-        self._code = None
+        self._endpoints = None
+        self._address = None
         self.discriminator = None
 
-        if state is not None:
-            self.state = state
-        if code is not None:
-            self.code = code
+        if endpoints is not None:
+            self.endpoints = endpoints
+        if address is not None:
+            self.address = address
 
     @property
-    def state(self):
-        """Gets the state of this CreateVpcEndpointResponse.
+    def endpoints(self):
+        """Gets the endpoints of this CreateVpcEndpointResponse.
 
-        依赖id列表
+        Ip列表
 
-        :return: The state of this CreateVpcEndpointResponse.
+        :return: The endpoints of this CreateVpcEndpointResponse.
         :rtype: list[str]
         """
-        return self._state
+        return self._endpoints
 
-    @state.setter
-    def state(self, state):
-        """Sets the state of this CreateVpcEndpointResponse.
+    @endpoints.setter
+    def endpoints(self, endpoints):
+        """Sets the endpoints of this CreateVpcEndpointResponse.
 
-        依赖id列表
+        Ip列表
 
-        :param state: The state of this CreateVpcEndpointResponse.
-        :type state: list[str]
+        :param endpoints: The endpoints of this CreateVpcEndpointResponse.
+        :type endpoints: list[str]
         """
-        self._state = state
+        self._endpoints = endpoints
 
     @property
-    def code(self):
-        """Gets the code of this CreateVpcEndpointResponse.
+    def address(self):
+        """Gets the address of this CreateVpcEndpointResponse.
 
-        快照制作响应码
+        域名地址
 
-        :return: The code of this CreateVpcEndpointResponse.
+        :return: The address of this CreateVpcEndpointResponse.
         :rtype: str
         """
-        return self._code
+        return self._address
 
-    @code.setter
-    def code(self, code):
-        """Sets the code of this CreateVpcEndpointResponse.
+    @address.setter
+    def address(self, address):
+        """Sets the address of this CreateVpcEndpointResponse.
 
-        快照制作响应码
+        域名地址
 
-        :param code: The code of this CreateVpcEndpointResponse.
-        :type code: str
+        :param address: The address of this CreateVpcEndpointResponse.
+        :type address: str
         """
-        self._code = code
+        self._address = address
 
     def to_dict(self):
         """Returns the model properties as a dict"""

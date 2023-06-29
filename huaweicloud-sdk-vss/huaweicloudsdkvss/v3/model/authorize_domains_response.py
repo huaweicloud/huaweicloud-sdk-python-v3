@@ -38,7 +38,7 @@ class AuthorizeDomainsResponse(SdkResponse):
         :type info_code: str
         :param info_description: 返回的提示信息
         :type info_description: str
-        :param usage_notice: 域名认证使用须知
+        :param usage_notice: 网站域名认证使用须知
         :type usage_notice: str
         """
         
@@ -104,7 +104,7 @@ class AuthorizeDomainsResponse(SdkResponse):
     def usage_notice(self):
         """Gets the usage_notice of this AuthorizeDomainsResponse.
 
-        域名认证使用须知
+        网站域名认证使用须知
 
         :return: The usage_notice of this AuthorizeDomainsResponse.
         :rtype: str
@@ -115,7 +115,7 @@ class AuthorizeDomainsResponse(SdkResponse):
     def usage_notice(self, usage_notice):
         """Sets the usage_notice of this AuthorizeDomainsResponse.
 
-        域名认证使用须知
+        网站域名认证使用须知
 
         :param usage_notice: The usage_notice of this AuthorizeDomainsResponse.
         :type usage_notice: str

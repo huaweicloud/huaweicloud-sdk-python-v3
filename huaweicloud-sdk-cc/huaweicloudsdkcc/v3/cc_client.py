@@ -24,124 +24,6 @@ class CcClient(Client):
 
         return ClientBuilder(clazz, "GlobalCredentials")
 
-    def associate_bandwidth_package(self, request):
-        """将带宽包实例关联到资源
-
-        将带宽包实例关联到资源。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-        :param request: Request instance for AssociateBandwidthPackage
-        :type request: :class:`huaweicloudsdkcc.v3.AssociateBandwidthPackageRequest`
-        :rtype: :class:`huaweicloudsdkcc.v3.AssociateBandwidthPackageResponse`
-        """
-        return self._associate_bandwidth_package_with_http_info(request)
-
-    def _associate_bandwidth_package_with_http_info(self, request):
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'id' in local_var_params:
-            path_params['id'] = local_var_params['id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v3/{domain_id}/ccaas/bandwidth-packages/{id}/associate',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AssociateBandwidthPackageResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-    def batch_create_delete_tags(self, request):
-        """批量创建和删除资源标签
-
-        批量创建和删除标签
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-        :param request: Request instance for BatchCreateDeleteTags
-        :type request: :class:`huaweicloudsdkcc.v3.BatchCreateDeleteTagsRequest`
-        :rtype: :class:`huaweicloudsdkcc.v3.BatchCreateDeleteTagsResponse`
-        """
-        return self._batch_create_delete_tags_with_http_info(request)
-
-    def _batch_create_delete_tags_with_http_info(self, request):
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'resource_id' in local_var_params:
-            path_params['resource_id'] = local_var_params['resource_id']
-        if 'resource_type' in local_var_params:
-            path_params['resource_type'] = local_var_params['resource_type']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v3/{domain_id}/ccaas/{resource_type}/{resource_id}/tags/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchCreateDeleteTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
     def create_authorisation(self, request):
         """创建授权
 
@@ -198,290 +80,6 @@ class CcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-    def create_bandwidth_package(self, request):
-        """创建带宽包实例
-
-        创建带宽包实例。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-        :param request: Request instance for CreateBandwidthPackage
-        :type request: :class:`huaweicloudsdkcc.v3.CreateBandwidthPackageRequest`
-        :rtype: :class:`huaweicloudsdkcc.v3.CreateBandwidthPackageResponse`
-        """
-        return self._create_bandwidth_package_with_http_info(request)
-
-    def _create_bandwidth_package_with_http_info(self, request):
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v3/{domain_id}/ccaas/bandwidth-packages',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateBandwidthPackageResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-    def create_cloud_connection(self, request):
-        """创建云连接实例
-
-        创建云连接实例。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-        :param request: Request instance for CreateCloudConnection
-        :type request: :class:`huaweicloudsdkcc.v3.CreateCloudConnectionRequest`
-        :rtype: :class:`huaweicloudsdkcc.v3.CreateCloudConnectionResponse`
-        """
-        return self._create_cloud_connection_with_http_info(request)
-
-    def _create_cloud_connection_with_http_info(self, request):
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v3/{domain_id}/ccaas/cloud-connections',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateCloudConnectionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-    def create_inter_region_bandwidth(self, request):
-        """创建域间带宽实例
-
-        创建域间带宽实例。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-        :param request: Request instance for CreateInterRegionBandwidth
-        :type request: :class:`huaweicloudsdkcc.v3.CreateInterRegionBandwidthRequest`
-        :rtype: :class:`huaweicloudsdkcc.v3.CreateInterRegionBandwidthResponse`
-        """
-        return self._create_inter_region_bandwidth_with_http_info(request)
-
-    def _create_inter_region_bandwidth_with_http_info(self, request):
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v3/{domain_id}/ccaas/inter-region-bandwidths',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateInterRegionBandwidthResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-    def create_network_instance(self, request):
-        """创建网络实例
-
-        创建网络实例。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-        :param request: Request instance for CreateNetworkInstance
-        :type request: :class:`huaweicloudsdkcc.v3.CreateNetworkInstanceRequest`
-        :rtype: :class:`huaweicloudsdkcc.v3.CreateNetworkInstanceResponse`
-        """
-        return self._create_network_instance_with_http_info(request)
-
-    def _create_network_instance_with_http_info(self, request):
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v3/{domain_id}/ccaas/network-instances',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateNetworkInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-    def create_tag(self, request):
-        """添加资源标签
-
-        添加资源标签
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-        :param request: Request instance for CreateTag
-        :type request: :class:`huaweicloudsdkcc.v3.CreateTagRequest`
-        :rtype: :class:`huaweicloudsdkcc.v3.CreateTagResponse`
-        """
-        return self._create_tag_with_http_info(request)
-
-    def _create_tag_with_http_info(self, request):
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'resource_id' in local_var_params:
-            path_params['resource_id'] = local_var_params['resource_id']
-        if 'resource_type' in local_var_params:
-            path_params['resource_type'] = local_var_params['resource_type']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v3/{domain_id}/ccaas/{resource_type}/{resource_id}/tags',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateTagResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
     def delete_authorisation(self, request):
         """删除授权
 
@@ -533,348 +131,6 @@ class CcClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='DeleteAuthorisationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-    def delete_bandwidth_package(self, request):
-        """删除带宽包实例
-
-        删除带宽包实例。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-        :param request: Request instance for DeleteBandwidthPackage
-        :type request: :class:`huaweicloudsdkcc.v3.DeleteBandwidthPackageRequest`
-        :rtype: :class:`huaweicloudsdkcc.v3.DeleteBandwidthPackageResponse`
-        """
-        return self._delete_bandwidth_package_with_http_info(request)
-
-    def _delete_bandwidth_package_with_http_info(self, request):
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'id' in local_var_params:
-            path_params['id'] = local_var_params['id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v3/{domain_id}/ccaas/bandwidth-packages/{id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteBandwidthPackageResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-    def delete_cloud_connection(self, request):
-        """删除云连接实例
-
-        删除云连接实例。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-        :param request: Request instance for DeleteCloudConnection
-        :type request: :class:`huaweicloudsdkcc.v3.DeleteCloudConnectionRequest`
-        :rtype: :class:`huaweicloudsdkcc.v3.DeleteCloudConnectionResponse`
-        """
-        return self._delete_cloud_connection_with_http_info(request)
-
-    def _delete_cloud_connection_with_http_info(self, request):
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'id' in local_var_params:
-            path_params['id'] = local_var_params['id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v3/{domain_id}/ccaas/cloud-connections/{id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteCloudConnectionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-    def delete_inter_region_bandwidth(self, request):
-        """删除域间带宽实例
-
-        删除域间带宽实例。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-        :param request: Request instance for DeleteInterRegionBandwidth
-        :type request: :class:`huaweicloudsdkcc.v3.DeleteInterRegionBandwidthRequest`
-        :rtype: :class:`huaweicloudsdkcc.v3.DeleteInterRegionBandwidthResponse`
-        """
-        return self._delete_inter_region_bandwidth_with_http_info(request)
-
-    def _delete_inter_region_bandwidth_with_http_info(self, request):
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'id' in local_var_params:
-            path_params['id'] = local_var_params['id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v3/{domain_id}/ccaas/inter-region-bandwidths/{id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteInterRegionBandwidthResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-    def delete_network_instance(self, request):
-        """删除网络实例
-
-        删除网络实例。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-        :param request: Request instance for DeleteNetworkInstance
-        :type request: :class:`huaweicloudsdkcc.v3.DeleteNetworkInstanceRequest`
-        :rtype: :class:`huaweicloudsdkcc.v3.DeleteNetworkInstanceResponse`
-        """
-        return self._delete_network_instance_with_http_info(request)
-
-    def _delete_network_instance_with_http_info(self, request):
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'id' in local_var_params:
-            path_params['id'] = local_var_params['id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v3/{domain_id}/ccaas/network-instances/{id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteNetworkInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-    def delete_tag(self, request):
-        """删除资源标签
-
-        删除资源标签
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-        :param request: Request instance for DeleteTag
-        :type request: :class:`huaweicloudsdkcc.v3.DeleteTagRequest`
-        :rtype: :class:`huaweicloudsdkcc.v3.DeleteTagResponse`
-        """
-        return self._delete_tag_with_http_info(request)
-
-    def _delete_tag_with_http_info(self, request):
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'resource_id' in local_var_params:
-            path_params['resource_id'] = local_var_params['resource_id']
-        if 'tag_key' in local_var_params:
-            path_params['tag_key'] = local_var_params['tag_key']
-        if 'resource_type' in local_var_params:
-            path_params['resource_type'] = local_var_params['resource_type']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v3/{domain_id}/ccaas/{resource_type}/{resource_id}/tags/{tag_key}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteTagResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-    def disassociate_bandwidth_package(self, request):
-        """将带宽包实例与资源解关联
-
-        将带宽包实例与资源解关联。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-        :param request: Request instance for DisassociateBandwidthPackage
-        :type request: :class:`huaweicloudsdkcc.v3.DisassociateBandwidthPackageRequest`
-        :rtype: :class:`huaweicloudsdkcc.v3.DisassociateBandwidthPackageResponse`
-        """
-        return self._disassociate_bandwidth_package_with_http_info(request)
-
-    def _disassociate_bandwidth_package_with_http_info(self, request):
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'id' in local_var_params:
-            path_params['id'] = local_var_params['id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v3/{domain_id}/ccaas/bandwidth-packages/{id}/disassociate',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DisassociateBandwidthPackageResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -949,6 +205,366 @@ class CcClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ListAuthorisationsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_permissions(self, request):
+        """查询权限列表
+
+        云连接实例所属租户查询其可加载其他租户的网络实例权限。
+        分页查询使用的参数为marker、limit。marker和limit一起使用时才会生效，单独使用无效。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListPermissions
+        :type request: :class:`huaweicloudsdkcc.v3.ListPermissionsRequest`
+        :rtype: :class:`huaweicloudsdkcc.v3.ListPermissionsResponse`
+        """
+        return self._list_permissions_with_http_info(request)
+
+    def _list_permissions_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+            collection_formats['id'] = 'csv'
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+            collection_formats['name'] = 'csv'
+        if 'description' in local_var_params:
+            query_params.append(('description', local_var_params['description']))
+            collection_formats['description'] = 'csv'
+        if 'cloud_connection_id' in local_var_params:
+            query_params.append(('cloud_connection_id', local_var_params['cloud_connection_id']))
+            collection_formats['cloud_connection_id'] = 'csv'
+        if 'instance_id' in local_var_params:
+            query_params.append(('instance_id', local_var_params['instance_id']))
+            collection_formats['instance_id'] = 'csv'
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{domain_id}/ccaas/permissions',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListPermissionsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_authorisation(self, request):
+        """更新授权
+
+        更新授权实例。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateAuthorisation
+        :type request: :class:`huaweicloudsdkcc.v3.UpdateAuthorisationRequest`
+        :rtype: :class:`huaweicloudsdkcc.v3.UpdateAuthorisationResponse`
+        """
+        return self._update_authorisation_with_http_info(request)
+
+    def _update_authorisation_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{domain_id}/ccaas/authorisations/{id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateAuthorisationResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def associate_bandwidth_package(self, request):
+        """将带宽包实例绑定到云连接实例
+
+        将带宽包实例绑定到云连接实例。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for AssociateBandwidthPackage
+        :type request: :class:`huaweicloudsdkcc.v3.AssociateBandwidthPackageRequest`
+        :rtype: :class:`huaweicloudsdkcc.v3.AssociateBandwidthPackageResponse`
+        """
+        return self._associate_bandwidth_package_with_http_info(request)
+
+    def _associate_bandwidth_package_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{domain_id}/ccaas/bandwidth-packages/{id}/associate',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='AssociateBandwidthPackageResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_bandwidth_package(self, request):
+        """创建带宽包实例
+
+        创建带宽包实例。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateBandwidthPackage
+        :type request: :class:`huaweicloudsdkcc.v3.CreateBandwidthPackageRequest`
+        :rtype: :class:`huaweicloudsdkcc.v3.CreateBandwidthPackageResponse`
+        """
+        return self._create_bandwidth_package_with_http_info(request)
+
+    def _create_bandwidth_package_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{domain_id}/ccaas/bandwidth-packages',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateBandwidthPackageResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_bandwidth_package(self, request):
+        """删除带宽包实例
+
+        删除带宽包实例。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteBandwidthPackage
+        :type request: :class:`huaweicloudsdkcc.v3.DeleteBandwidthPackageRequest`
+        :rtype: :class:`huaweicloudsdkcc.v3.DeleteBandwidthPackageResponse`
+        """
+        return self._delete_bandwidth_package_with_http_info(request)
+
+    def _delete_bandwidth_package_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{domain_id}/ccaas/bandwidth-packages/{id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteBandwidthPackageResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def disassociate_bandwidth_package(self, request):
+        """解除带宽包实例与云连接实例的绑定
+
+        解除带宽包实例与云连接实例的绑定。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DisassociateBandwidthPackage
+        :type request: :class:`huaweicloudsdkcc.v3.DisassociateBandwidthPackageRequest`
+        :rtype: :class:`huaweicloudsdkcc.v3.DisassociateBandwidthPackageResponse`
+        """
+        return self._disassociate_bandwidth_package_with_http_info(request)
+
+    def _disassociate_bandwidth_package_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{domain_id}/ccaas/bandwidth-packages/{id}/disassociate',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DisassociateBandwidthPackageResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1031,6 +647,426 @@ class CcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def show_bandwidth_package(self, request):
+        """查询带宽包实例
+
+        查询带宽包实例。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowBandwidthPackage
+        :type request: :class:`huaweicloudsdkcc.v3.ShowBandwidthPackageRequest`
+        :rtype: :class:`huaweicloudsdkcc.v3.ShowBandwidthPackageResponse`
+        """
+        return self._show_bandwidth_package_with_http_info(request)
+
+    def _show_bandwidth_package_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{domain_id}/ccaas/bandwidth-packages/{id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowBandwidthPackageResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_bandwidth_package(self, request):
+        """更新带宽包实例
+
+        更新带宽包实例。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateBandwidthPackage
+        :type request: :class:`huaweicloudsdkcc.v3.UpdateBandwidthPackageRequest`
+        :rtype: :class:`huaweicloudsdkcc.v3.UpdateBandwidthPackageResponse`
+        """
+        return self._update_bandwidth_package_with_http_info(request)
+
+    def _update_bandwidth_package_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{domain_id}/ccaas/bandwidth-packages/{id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateBandwidthPackageResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_cloud_connection(self, request):
+        """创建云连接实例
+
+        创建云连接实例。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateCloudConnection
+        :type request: :class:`huaweicloudsdkcc.v3.CreateCloudConnectionRequest`
+        :rtype: :class:`huaweicloudsdkcc.v3.CreateCloudConnectionResponse`
+        """
+        return self._create_cloud_connection_with_http_info(request)
+
+    def _create_cloud_connection_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{domain_id}/ccaas/cloud-connections',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateCloudConnectionResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_cloud_connection(self, request):
+        """删除云连接实例
+
+        删除云连接实例。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteCloudConnection
+        :type request: :class:`huaweicloudsdkcc.v3.DeleteCloudConnectionRequest`
+        :rtype: :class:`huaweicloudsdkcc.v3.DeleteCloudConnectionResponse`
+        """
+        return self._delete_cloud_connection_with_http_info(request)
+
+    def _delete_cloud_connection_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{domain_id}/ccaas/cloud-connections/{id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteCloudConnectionResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_cloud_connections(self, request):
+        """查询云连接列表
+
+        查询云连接列表。
+        分页查询使用的参数为marker、limit。marker和limit一起使用时才会生效，单独使用无效。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListCloudConnections
+        :type request: :class:`huaweicloudsdkcc.v3.ListCloudConnectionsRequest`
+        :rtype: :class:`huaweicloudsdkcc.v3.ListCloudConnectionsResponse`
+        """
+        return self._list_cloud_connections_with_http_info(request)
+
+    def _list_cloud_connections_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+            collection_formats['id'] = 'csv'
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+            collection_formats['name'] = 'csv'
+        if 'description' in local_var_params:
+            query_params.append(('description', local_var_params['description']))
+            collection_formats['description'] = 'csv'
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+            collection_formats['status'] = 'csv'
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+            collection_formats['enterprise_project_id'] = 'csv'
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+            collection_formats['type'] = 'csv'
+        if 'used_scene' in local_var_params:
+            query_params.append(('used_scene', local_var_params['used_scene']))
+            collection_formats['used_scene'] = 'csv'
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{domain_id}/ccaas/cloud-connections',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListCloudConnectionsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_cloud_connection(self, request):
+        """查询云连接实例
+
+        查询云连接实例。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowCloudConnection
+        :type request: :class:`huaweicloudsdkcc.v3.ShowCloudConnectionRequest`
+        :rtype: :class:`huaweicloudsdkcc.v3.ShowCloudConnectionResponse`
+        """
+        return self._show_cloud_connection_with_http_info(request)
+
+    def _show_cloud_connection_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{domain_id}/ccaas/cloud-connections/{id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowCloudConnectionResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_cloud_connection(self, request):
+        """更新云连接实例
+
+        更新云连接实例。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateCloudConnection
+        :type request: :class:`huaweicloudsdkcc.v3.UpdateCloudConnectionRequest`
+        :rtype: :class:`huaweicloudsdkcc.v3.UpdateCloudConnectionResponse`
+        """
+        return self._update_cloud_connection_with_http_info(request)
+
+    def _update_cloud_connection_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{domain_id}/ccaas/cloud-connections/{id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateCloudConnectionResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_cloud_connection_routes(self, request):
         """查询云连接路由条目列表
 
@@ -1100,21 +1136,21 @@ class CcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-    def list_cloud_connections(self, request):
-        """查询云连接列表
+    def show_cloud_connection_routes(self, request):
+        """查询云连接路由条目详情
 
-        查询云连接列表。
+        查询云连接路由条目列表。
         分页查询使用的参数为marker、limit。marker和limit一起使用时才会生效，单独使用无效。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
-        :param request: Request instance for ListCloudConnections
-        :type request: :class:`huaweicloudsdkcc.v3.ListCloudConnectionsRequest`
-        :rtype: :class:`huaweicloudsdkcc.v3.ListCloudConnectionsResponse`
+        :param request: Request instance for ShowCloudConnectionRoutes
+        :type request: :class:`huaweicloudsdkcc.v3.ShowCloudConnectionRoutesRequest`
+        :rtype: :class:`huaweicloudsdkcc.v3.ShowCloudConnectionRoutesResponse`
         """
-        return self._list_cloud_connections_with_http_info(request)
+        return self._show_cloud_connection_routes_with_http_info(request)
 
-    def _list_cloud_connections_with_http_info(self, request):
+    def _show_cloud_connection_routes_with_http_info(self, request):
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1122,30 +1158,10 @@ class CcClient(Client):
         collection_formats = {}
 
         path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
 
         query_params = []
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-        if 'marker' in local_var_params:
-            query_params.append(('marker', local_var_params['marker']))
-        if 'id' in local_var_params:
-            query_params.append(('id', local_var_params['id']))
-            collection_formats['id'] = 'csv'
-        if 'name' in local_var_params:
-            query_params.append(('name', local_var_params['name']))
-            collection_formats['name'] = 'csv'
-        if 'description' in local_var_params:
-            query_params.append(('description', local_var_params['description']))
-            collection_formats['description'] = 'csv'
-        if 'status' in local_var_params:
-            query_params.append(('status', local_var_params['status']))
-            collection_formats['status'] = 'csv'
-        if 'enterprise_project_id' in local_var_params:
-            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
-            collection_formats['enterprise_project_id'] = 'csv'
-        if 'type' in local_var_params:
-            query_params.append(('type', local_var_params['type']))
-            collection_formats['type'] = 'csv'
 
         header_params = {}
 
@@ -1163,7 +1179,7 @@ class CcClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v3/{domain_id}/ccaas/cloud-connections',
+            resource_path='/v3/{domain_id}/ccaas/cloud-connection-routes/{id}',
             method='GET',
             path_params=path_params,
             query_params=query_params,
@@ -1171,26 +1187,26 @@ class CcClient(Client):
             body=body_params,
             post_params=form_params,
             cname=cname,
-            response_type='ListCloudConnectionsResponse',
+            response_type='ShowCloudConnectionRoutesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-    def list_domain_tags(self, request):
-        """查询账户资源标签
+    def create_inter_region_bandwidth(self, request):
+        """创建域间带宽实例
 
-        查询账户资源标签
+        创建域间带宽实例。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
-        :param request: Request instance for ListDomainTags
-        :type request: :class:`huaweicloudsdkcc.v3.ListDomainTagsRequest`
-        :rtype: :class:`huaweicloudsdkcc.v3.ListDomainTagsResponse`
+        :param request: Request instance for CreateInterRegionBandwidth
+        :type request: :class:`huaweicloudsdkcc.v3.CreateInterRegionBandwidthRequest`
+        :rtype: :class:`huaweicloudsdkcc.v3.CreateInterRegionBandwidthResponse`
         """
-        return self._list_domain_tags_with_http_info(request)
+        return self._create_inter_region_bandwidth_with_http_info(request)
 
-    def _list_domain_tags_with_http_info(self, request):
+    def _create_inter_region_bandwidth_with_http_info(self, request):
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1198,8 +1214,64 @@ class CcClient(Client):
         collection_formats = {}
 
         path_params = {}
-        if 'resource_type' in local_var_params:
-            path_params['resource_type'] = local_var_params['resource_type']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{domain_id}/ccaas/inter-region-bandwidths',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateInterRegionBandwidthResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_inter_region_bandwidth(self, request):
+        """删除域间带宽实例
+
+        删除域间带宽实例。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteInterRegionBandwidth
+        :type request: :class:`huaweicloudsdkcc.v3.DeleteInterRegionBandwidthRequest`
+        :rtype: :class:`huaweicloudsdkcc.v3.DeleteInterRegionBandwidthResponse`
+        """
+        return self._delete_inter_region_bandwidth_with_http_info(request)
+
+    def _delete_inter_region_bandwidth_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
 
         query_params = []
 
@@ -1219,15 +1291,15 @@ class CcClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v3/{domain_id}/ccaas/{resource_type}/tags',
-            method='GET',
+            resource_path='/v3/{domain_id}/ccaas/inter-region-bandwidths/{id}',
+            method='DELETE',
             path_params=path_params,
             query_params=query_params,
             header_params=header_params,
             body=body_params,
             post_params=form_params,
             cname=cname,
-            response_type='ListDomainTagsResponse',
+            response_type='DeleteInterRegionBandwidthResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1299,6 +1371,232 @@ class CcClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ListInterRegionBandwidthsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_inter_region_bandwidth(self, request):
+        """查询域间带宽实例
+
+        查询域间带宽实例。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowInterRegionBandwidth
+        :type request: :class:`huaweicloudsdkcc.v3.ShowInterRegionBandwidthRequest`
+        :rtype: :class:`huaweicloudsdkcc.v3.ShowInterRegionBandwidthResponse`
+        """
+        return self._show_inter_region_bandwidth_with_http_info(request)
+
+    def _show_inter_region_bandwidth_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{domain_id}/ccaas/inter-region-bandwidths/{id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowInterRegionBandwidthResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_inter_region_bandwidth(self, request):
+        """更新域间带宽实例
+
+        更新域间带宽实例。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateInterRegionBandwidth
+        :type request: :class:`huaweicloudsdkcc.v3.UpdateInterRegionBandwidthRequest`
+        :rtype: :class:`huaweicloudsdkcc.v3.UpdateInterRegionBandwidthResponse`
+        """
+        return self._update_inter_region_bandwidth_with_http_info(request)
+
+    def _update_inter_region_bandwidth_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{domain_id}/ccaas/inter-region-bandwidths/{id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateInterRegionBandwidthResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_network_instance(self, request):
+        """创建网络实例
+
+        创建网络实例。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateNetworkInstance
+        :type request: :class:`huaweicloudsdkcc.v3.CreateNetworkInstanceRequest`
+        :rtype: :class:`huaweicloudsdkcc.v3.CreateNetworkInstanceResponse`
+        """
+        return self._create_network_instance_with_http_info(request)
+
+    def _create_network_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{domain_id}/ccaas/network-instances',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateNetworkInstanceResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_network_instance(self, request):
+        """删除网络实例
+
+        删除网络实例。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteNetworkInstance
+        :type request: :class:`huaweicloudsdkcc.v3.DeleteNetworkInstanceRequest`
+        :rtype: :class:`huaweicloudsdkcc.v3.DeleteNetworkInstanceResponse`
+        """
+        return self._delete_network_instance_with_http_info(request)
+
+    def _delete_network_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{domain_id}/ccaas/network-instances/{id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteNetworkInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1387,21 +1685,20 @@ class CcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-    def list_permissions(self, request):
-        """查询权限列表
+    def show_network_instance(self, request):
+        """查询网络实例
 
-        云连接实例所属租户查询其可加载其他租户的网络实例权限。
-        分页查询使用的参数为marker、limit。marker和limit一起使用时才会生效，单独使用无效。
+        查询网络实例。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
-        :param request: Request instance for ListPermissions
-        :type request: :class:`huaweicloudsdkcc.v3.ListPermissionsRequest`
-        :rtype: :class:`huaweicloudsdkcc.v3.ListPermissionsResponse`
+        :param request: Request instance for ShowNetworkInstance
+        :type request: :class:`huaweicloudsdkcc.v3.ShowNetworkInstanceRequest`
+        :rtype: :class:`huaweicloudsdkcc.v3.ShowNetworkInstanceResponse`
         """
-        return self._list_permissions_with_http_info(request)
+        return self._show_network_instance_with_http_info(request)
 
-    def _list_permissions_with_http_info(self, request):
+    def _show_network_instance_with_http_info(self, request):
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1409,27 +1706,10 @@ class CcClient(Client):
         collection_formats = {}
 
         path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
 
         query_params = []
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-        if 'marker' in local_var_params:
-            query_params.append(('marker', local_var_params['marker']))
-        if 'id' in local_var_params:
-            query_params.append(('id', local_var_params['id']))
-            collection_formats['id'] = 'csv'
-        if 'name' in local_var_params:
-            query_params.append(('name', local_var_params['name']))
-            collection_formats['name'] = 'csv'
-        if 'description' in local_var_params:
-            query_params.append(('description', local_var_params['description']))
-            collection_formats['description'] = 'csv'
-        if 'cloud_connection_id' in local_var_params:
-            query_params.append(('cloud_connection_id', local_var_params['cloud_connection_id']))
-            collection_formats['cloud_connection_id'] = 'csv'
-        if 'instance_id' in local_var_params:
-            query_params.append(('instance_id', local_var_params['instance_id']))
-            collection_formats['instance_id'] = 'csv'
 
         header_params = {}
 
@@ -1447,7 +1727,7 @@ class CcClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v3/{domain_id}/ccaas/permissions',
+            resource_path='/v3/{domain_id}/ccaas/network-instances/{id}',
             method='GET',
             path_params=path_params,
             query_params=query_params,
@@ -1455,7 +1735,65 @@ class CcClient(Client):
             body=body_params,
             post_params=form_params,
             cname=cname,
-            response_type='ListPermissionsResponse',
+            response_type='ShowNetworkInstanceResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_network_instance(self, request):
+        """更新网络实例
+
+        更新网络实例。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateNetworkInstance
+        :type request: :class:`huaweicloudsdkcc.v3.UpdateNetworkInstanceRequest`
+        :rtype: :class:`huaweicloudsdkcc.v3.UpdateNetworkInstanceResponse`
+        """
+        return self._update_network_instance_with_http_info(request)
+
+    def _update_network_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{domain_id}/ccaas/network-instances/{id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateNetworkInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1516,6 +1854,242 @@ class CcClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ListQuotasResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def batch_create_delete_tags(self, request):
+        """批量创建和删除资源标签
+
+        批量创建和删除标签
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchCreateDeleteTags
+        :type request: :class:`huaweicloudsdkcc.v3.BatchCreateDeleteTagsRequest`
+        :rtype: :class:`huaweicloudsdkcc.v3.BatchCreateDeleteTagsResponse`
+        """
+        return self._batch_create_delete_tags_with_http_info(request)
+
+    def _batch_create_delete_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'resource_id' in local_var_params:
+            path_params['resource_id'] = local_var_params['resource_id']
+        if 'resource_type' in local_var_params:
+            path_params['resource_type'] = local_var_params['resource_type']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{domain_id}/ccaas/{resource_type}/{resource_id}/tags/action',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='BatchCreateDeleteTagsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_tag(self, request):
+        """添加资源标签
+
+        添加资源标签
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateTag
+        :type request: :class:`huaweicloudsdkcc.v3.CreateTagRequest`
+        :rtype: :class:`huaweicloudsdkcc.v3.CreateTagResponse`
+        """
+        return self._create_tag_with_http_info(request)
+
+    def _create_tag_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'resource_id' in local_var_params:
+            path_params['resource_id'] = local_var_params['resource_id']
+        if 'resource_type' in local_var_params:
+            path_params['resource_type'] = local_var_params['resource_type']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{domain_id}/ccaas/{resource_type}/{resource_id}/tags',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateTagResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_tag(self, request):
+        """删除资源标签
+
+        删除资源标签
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteTag
+        :type request: :class:`huaweicloudsdkcc.v3.DeleteTagRequest`
+        :rtype: :class:`huaweicloudsdkcc.v3.DeleteTagResponse`
+        """
+        return self._delete_tag_with_http_info(request)
+
+    def _delete_tag_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'resource_id' in local_var_params:
+            path_params['resource_id'] = local_var_params['resource_id']
+        if 'tag_key' in local_var_params:
+            path_params['tag_key'] = local_var_params['tag_key']
+        if 'resource_type' in local_var_params:
+            path_params['resource_type'] = local_var_params['resource_type']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{domain_id}/ccaas/{resource_type}/{resource_id}/tags/{tag_key}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteTagResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_domain_tags(self, request):
+        """查询账户资源标签
+
+        查询账户资源标签
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListDomainTags
+        :type request: :class:`huaweicloudsdkcc.v3.ListDomainTagsRequest`
+        :rtype: :class:`huaweicloudsdkcc.v3.ListDomainTagsResponse`
+        """
+        return self._list_domain_tags_with_http_info(request)
+
+    def _list_domain_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'resource_type' in local_var_params:
+            path_params['resource_type'] = local_var_params['resource_type']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{domain_id}/ccaas/{resource_type}/tags',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListDomainTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1632,577 +2206,6 @@ class CcClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ListTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-    def show_bandwidth_package(self, request):
-        """查询带宽包实例
-
-        查询带宽包实例。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-        :param request: Request instance for ShowBandwidthPackage
-        :type request: :class:`huaweicloudsdkcc.v3.ShowBandwidthPackageRequest`
-        :rtype: :class:`huaweicloudsdkcc.v3.ShowBandwidthPackageResponse`
-        """
-        return self._show_bandwidth_package_with_http_info(request)
-
-    def _show_bandwidth_package_with_http_info(self, request):
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'id' in local_var_params:
-            path_params['id'] = local_var_params['id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v3/{domain_id}/ccaas/bandwidth-packages/{id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowBandwidthPackageResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-    def show_cloud_connection(self, request):
-        """查询云连接实例
-
-        查询云连接实例。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-        :param request: Request instance for ShowCloudConnection
-        :type request: :class:`huaweicloudsdkcc.v3.ShowCloudConnectionRequest`
-        :rtype: :class:`huaweicloudsdkcc.v3.ShowCloudConnectionResponse`
-        """
-        return self._show_cloud_connection_with_http_info(request)
-
-    def _show_cloud_connection_with_http_info(self, request):
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'id' in local_var_params:
-            path_params['id'] = local_var_params['id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v3/{domain_id}/ccaas/cloud-connections/{id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowCloudConnectionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-    def show_cloud_connection_routes(self, request):
-        """查询云连接路由条目详情
-
-        查询云连接路由条目列表。
-        分页查询使用的参数为marker、limit。marker和limit一起使用时才会生效，单独使用无效。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-        :param request: Request instance for ShowCloudConnectionRoutes
-        :type request: :class:`huaweicloudsdkcc.v3.ShowCloudConnectionRoutesRequest`
-        :rtype: :class:`huaweicloudsdkcc.v3.ShowCloudConnectionRoutesResponse`
-        """
-        return self._show_cloud_connection_routes_with_http_info(request)
-
-    def _show_cloud_connection_routes_with_http_info(self, request):
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'id' in local_var_params:
-            path_params['id'] = local_var_params['id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v3/{domain_id}/ccaas/cloud-connection-routes/{id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowCloudConnectionRoutesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-    def show_inter_region_bandwidth(self, request):
-        """查询域间带宽实例
-
-        查询域间带宽实例。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-        :param request: Request instance for ShowInterRegionBandwidth
-        :type request: :class:`huaweicloudsdkcc.v3.ShowInterRegionBandwidthRequest`
-        :rtype: :class:`huaweicloudsdkcc.v3.ShowInterRegionBandwidthResponse`
-        """
-        return self._show_inter_region_bandwidth_with_http_info(request)
-
-    def _show_inter_region_bandwidth_with_http_info(self, request):
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'id' in local_var_params:
-            path_params['id'] = local_var_params['id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v3/{domain_id}/ccaas/inter-region-bandwidths/{id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowInterRegionBandwidthResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-    def show_network_instance(self, request):
-        """查询网络实例
-
-        查询网络实例。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-        :param request: Request instance for ShowNetworkInstance
-        :type request: :class:`huaweicloudsdkcc.v3.ShowNetworkInstanceRequest`
-        :rtype: :class:`huaweicloudsdkcc.v3.ShowNetworkInstanceResponse`
-        """
-        return self._show_network_instance_with_http_info(request)
-
-    def _show_network_instance_with_http_info(self, request):
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'id' in local_var_params:
-            path_params['id'] = local_var_params['id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v3/{domain_id}/ccaas/network-instances/{id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowNetworkInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-    def update_authorisation(self, request):
-        """更新授权
-
-        更新授权实例。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-        :param request: Request instance for UpdateAuthorisation
-        :type request: :class:`huaweicloudsdkcc.v3.UpdateAuthorisationRequest`
-        :rtype: :class:`huaweicloudsdkcc.v3.UpdateAuthorisationResponse`
-        """
-        return self._update_authorisation_with_http_info(request)
-
-    def _update_authorisation_with_http_info(self, request):
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'id' in local_var_params:
-            path_params['id'] = local_var_params['id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v3/{domain_id}/ccaas/authorisations/{id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateAuthorisationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-    def update_bandwidth_package(self, request):
-        """更新带宽包实例
-
-        更新带宽包实例。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-        :param request: Request instance for UpdateBandwidthPackage
-        :type request: :class:`huaweicloudsdkcc.v3.UpdateBandwidthPackageRequest`
-        :rtype: :class:`huaweicloudsdkcc.v3.UpdateBandwidthPackageResponse`
-        """
-        return self._update_bandwidth_package_with_http_info(request)
-
-    def _update_bandwidth_package_with_http_info(self, request):
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'id' in local_var_params:
-            path_params['id'] = local_var_params['id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v3/{domain_id}/ccaas/bandwidth-packages/{id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateBandwidthPackageResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-    def update_cloud_connection(self, request):
-        """更新云连接实例
-
-        更新云连接实例。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-        :param request: Request instance for UpdateCloudConnection
-        :type request: :class:`huaweicloudsdkcc.v3.UpdateCloudConnectionRequest`
-        :rtype: :class:`huaweicloudsdkcc.v3.UpdateCloudConnectionResponse`
-        """
-        return self._update_cloud_connection_with_http_info(request)
-
-    def _update_cloud_connection_with_http_info(self, request):
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'id' in local_var_params:
-            path_params['id'] = local_var_params['id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v3/{domain_id}/ccaas/cloud-connections/{id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateCloudConnectionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-    def update_inter_region_bandwidth(self, request):
-        """更新域间带宽实例
-
-        更新域间带宽实例。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-        :param request: Request instance for UpdateInterRegionBandwidth
-        :type request: :class:`huaweicloudsdkcc.v3.UpdateInterRegionBandwidthRequest`
-        :rtype: :class:`huaweicloudsdkcc.v3.UpdateInterRegionBandwidthResponse`
-        """
-        return self._update_inter_region_bandwidth_with_http_info(request)
-
-    def _update_inter_region_bandwidth_with_http_info(self, request):
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'id' in local_var_params:
-            path_params['id'] = local_var_params['id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v3/{domain_id}/ccaas/inter-region-bandwidths/{id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateInterRegionBandwidthResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-    def update_network_instance(self, request):
-        """更新网络实例
-
-        更新网络实例。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-        :param request: Request instance for UpdateNetworkInstance
-        :type request: :class:`huaweicloudsdkcc.v3.UpdateNetworkInstanceRequest`
-        :rtype: :class:`huaweicloudsdkcc.v3.UpdateNetworkInstanceResponse`
-        """
-        return self._update_network_instance_with_http_info(request)
-
-    def _update_network_instance_with_http_info(self, request):
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'id' in local_var_params:
-            path_params['id'] = local_var_params['id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v3/{domain_id}/ccaas/network-instances/{id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateNetworkInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

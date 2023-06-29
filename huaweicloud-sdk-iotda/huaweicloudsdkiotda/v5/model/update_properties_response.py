@@ -18,29 +18,43 @@ class UpdatePropertiesResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'response': 'object'
+        'response': 'object',
+        'error_code': 'str',
+        'error_msg': 'object'
     }
 
     attribute_map = {
-        'response': 'response'
+        'response': 'response',
+        'error_code': 'error_code',
+        'error_msg': 'error_msg'
     }
 
-    def __init__(self, response=None):
+    def __init__(self, response=None, error_code=None, error_msg=None):
         """UpdatePropertiesResponse
 
         The model defined in huaweicloud sdk
 
         :param response: 设备上报的属性执行结果。Json格式，具体格式需要应用和设备约定。
         :type response: object
+        :param error_code: 属性更新异常错误码。
+        :type error_code: str
+        :param error_msg: 属性更新异常错误信息。
+        :type error_msg: object
         """
         
         super(UpdatePropertiesResponse, self).__init__()
 
         self._response = None
+        self._error_code = None
+        self._error_msg = None
         self.discriminator = None
 
         if response is not None:
             self.response = response
+        if error_code is not None:
+            self.error_code = error_code
+        if error_msg is not None:
+            self.error_msg = error_msg
 
     @property
     def response(self):
@@ -63,6 +77,50 @@ class UpdatePropertiesResponse(SdkResponse):
         :type response: object
         """
         self._response = response
+
+    @property
+    def error_code(self):
+        """Gets the error_code of this UpdatePropertiesResponse.
+
+        属性更新异常错误码。
+
+        :return: The error_code of this UpdatePropertiesResponse.
+        :rtype: str
+        """
+        return self._error_code
+
+    @error_code.setter
+    def error_code(self, error_code):
+        """Sets the error_code of this UpdatePropertiesResponse.
+
+        属性更新异常错误码。
+
+        :param error_code: The error_code of this UpdatePropertiesResponse.
+        :type error_code: str
+        """
+        self._error_code = error_code
+
+    @property
+    def error_msg(self):
+        """Gets the error_msg of this UpdatePropertiesResponse.
+
+        属性更新异常错误信息。
+
+        :return: The error_msg of this UpdatePropertiesResponse.
+        :rtype: object
+        """
+        return self._error_msg
+
+    @error_msg.setter
+    def error_msg(self, error_msg):
+        """Sets the error_msg of this UpdatePropertiesResponse.
+
+        属性更新异常错误信息。
+
+        :param error_msg: The error_msg of this UpdatePropertiesResponse.
+        :type error_msg: object
+        """
+        self._error_msg = error_msg
 
     def to_dict(self):
         """Returns the model properties as a dict"""

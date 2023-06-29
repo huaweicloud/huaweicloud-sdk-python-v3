@@ -35,7 +35,7 @@ class ResourceNoLimit:
 
         The model defined in huaweicloud sdk
 
-        :param type: 资源类别。 general_instances：普通桌面 ram：内存 cores：CPU volumes：磁盘数量 volume_gigabytes：磁盘容量 gpu_instances：GPU桌面 deh：云办公主机 users：用户 policy_groups: 策略组 Cores: CPU(配额工具使用)
+        :param type: 资源类别。 general_instances：普通桌面 Memory：内存 cores：CPU volumes：磁盘数量 volume_gigabytes：磁盘容量 gpu_instances：GPU桌面 deh：云办公主机 users：用户 policy_groups: 策略组 Cores: CPU(配额工具使用)
         :type type: str
         :param quota: 配额数
         :type quota: int
@@ -66,7 +66,7 @@ class ResourceNoLimit:
     def type(self):
         """Gets the type of this ResourceNoLimit.
 
-        资源类别。 general_instances：普通桌面 ram：内存 cores：CPU volumes：磁盘数量 volume_gigabytes：磁盘容量 gpu_instances：GPU桌面 deh：云办公主机 users：用户 policy_groups: 策略组 Cores: CPU(配额工具使用)
+        资源类别。 general_instances：普通桌面 Memory：内存 cores：CPU volumes：磁盘数量 volume_gigabytes：磁盘容量 gpu_instances：GPU桌面 deh：云办公主机 users：用户 policy_groups: 策略组 Cores: CPU(配额工具使用)
 
         :return: The type of this ResourceNoLimit.
         :rtype: str
@@ -77,7 +77,7 @@ class ResourceNoLimit:
     def type(self, type):
         """Sets the type of this ResourceNoLimit.
 
-        资源类别。 general_instances：普通桌面 ram：内存 cores：CPU volumes：磁盘数量 volume_gigabytes：磁盘容量 gpu_instances：GPU桌面 deh：云办公主机 users：用户 policy_groups: 策略组 Cores: CPU(配额工具使用)
+        资源类别。 general_instances：普通桌面 Memory：内存 cores：CPU volumes：磁盘数量 volume_gigabytes：磁盘容量 gpu_instances：GPU桌面 deh：云办公主机 users：用户 policy_groups: 策略组 Cores: CPU(配额工具使用)
 
         :param type: The type of this ResourceNoLimit.
         :type type: str

@@ -25,7 +25,8 @@ class ConfigTemplatesListInfo:
         'name': 'str',
         'product_type': 'str',
         'storage_type': 'str',
-        'type': 'str'
+        'type': 'str',
+        'created_at': 'str'
     }
 
     attribute_map = {
@@ -37,10 +38,11 @@ class ConfigTemplatesListInfo:
         'name': 'name',
         'product_type': 'product_type',
         'storage_type': 'storage_type',
-        'type': 'type'
+        'type': 'type',
+        'created_at': 'created_at'
     }
 
-    def __init__(self, template_id=None, cache_mode=None, description=None, engine=None, engine_version=None, name=None, product_type=None, storage_type=None, type=None):
+    def __init__(self, template_id=None, cache_mode=None, description=None, engine=None, engine_version=None, name=None, product_type=None, storage_type=None, type=None, created_at=None):
         """ConfigTemplatesListInfo
 
         The model defined in huaweicloud sdk
@@ -63,6 +65,8 @@ class ConfigTemplatesListInfo:
         :type storage_type: str
         :param type: 模板类型
         :type type: str
+        :param created_at: 模板创建时间，仅在自定义参数模板中有意义，格式例如：2023-05-10T11:09:35.802Z
+        :type created_at: str
         """
         
         
@@ -76,6 +80,7 @@ class ConfigTemplatesListInfo:
         self._product_type = None
         self._storage_type = None
         self._type = None
+        self._created_at = None
         self.discriminator = None
 
         if template_id is not None:
@@ -96,6 +101,8 @@ class ConfigTemplatesListInfo:
             self.storage_type = storage_type
         if type is not None:
             self.type = type
+        if created_at is not None:
+            self.created_at = created_at
 
     @property
     def template_id(self):
@@ -294,6 +301,28 @@ class ConfigTemplatesListInfo:
         :type type: str
         """
         self._type = type
+
+    @property
+    def created_at(self):
+        """Gets the created_at of this ConfigTemplatesListInfo.
+
+        模板创建时间，仅在自定义参数模板中有意义，格式例如：2023-05-10T11:09:35.802Z
+
+        :return: The created_at of this ConfigTemplatesListInfo.
+        :rtype: str
+        """
+        return self._created_at
+
+    @created_at.setter
+    def created_at(self, created_at):
+        """Sets the created_at of this ConfigTemplatesListInfo.
+
+        模板创建时间，仅在自定义参数模板中有意义，格式例如：2023-05-10T11:09:35.802Z
+
+        :param created_at: The created_at of this ConfigTemplatesListInfo.
+        :type created_at: str
+        """
+        self._created_at = created_at
 
     def to_dict(self):
         """Returns the model properties as a dict"""

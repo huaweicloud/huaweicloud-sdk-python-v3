@@ -32,17 +32,17 @@ class PeriodOrderRequest:
     }
 
     attribute_map = {
-        'charging_mode': 'chargingMode',
-        'cloud_service_type': 'cloudServiceType',
-        'composite_product_id': 'compositeProductId',
-        'discount_id': 'discountId',
-        'is_auto_renew': 'isAutoRenew',
-        'period_num': 'periodNum',
-        'period_type': 'periodType',
-        'product_infos': 'productInfos',
-        'promotion_activity_id': 'promotionActivityId',
-        'promotion_info': 'promotionInfo',
-        'region_id': 'regionId',
+        'charging_mode': 'charging_mode',
+        'cloud_service_type': 'cloud_service_type',
+        'composite_product_id': 'composite_product_id',
+        'discount_id': 'discount_id',
+        'is_auto_renew': 'is_auto_renew',
+        'period_num': 'period_num',
+        'period_type': 'period_type',
+        'product_infos': 'product_infos',
+        'promotion_activity_id': 'promotion_activity_id',
+        'promotion_info': 'promotion_info',
+        'region_id': 'region_id',
         'zone': 'zone'
     }
 
@@ -93,30 +93,23 @@ class PeriodOrderRequest:
         self._zone = None
         self.discriminator = None
 
-        if charging_mode is not None:
-            self.charging_mode = charging_mode
-        if cloud_service_type is not None:
-            self.cloud_service_type = cloud_service_type
+        self.charging_mode = charging_mode
+        self.cloud_service_type = cloud_service_type
         if composite_product_id is not None:
             self.composite_product_id = composite_product_id
         if discount_id is not None:
             self.discount_id = discount_id
         if is_auto_renew is not None:
             self.is_auto_renew = is_auto_renew
-        if period_num is not None:
-            self.period_num = period_num
-        if period_type is not None:
-            self.period_type = period_type
-        if product_infos is not None:
-            self.product_infos = product_infos
+        self.period_num = period_num
+        self.period_type = period_type
+        self.product_infos = product_infos
         if promotion_activity_id is not None:
             self.promotion_activity_id = promotion_activity_id
         if promotion_info is not None:
             self.promotion_info = promotion_info
-        if region_id is not None:
-            self.region_id = region_id
-        if zone is not None:
-            self.zone = zone
+        self.region_id = region_id
+        self.zone = zone
 
     @property
     def charging_mode(self):

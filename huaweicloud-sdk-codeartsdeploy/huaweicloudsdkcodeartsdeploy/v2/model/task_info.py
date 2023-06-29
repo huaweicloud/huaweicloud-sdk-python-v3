@@ -99,7 +99,7 @@ class TaskInfo:
         :type task_id: str
         :param name: 应用名称
         :type name: str
-        :param project_id: 项目id
+        :param project_id: 项目ID
         :type project_id: str
         :param project_name: 项目名称
         :type project_name: str
@@ -320,7 +320,7 @@ class TaskInfo:
     def project_id(self):
         """Gets the project_id of this TaskInfo.
 
-        项目id
+        项目ID
 
         :return: The project_id of this TaskInfo.
         :rtype: str
@@ -331,7 +331,7 @@ class TaskInfo:
     def project_id(self, project_id):
         """Sets the project_id of this TaskInfo.
 
-        项目id
+        项目ID
 
         :param project_id: The project_id of this TaskInfo.
         :type project_id: str

@@ -45,9 +45,9 @@ class CreateCasesRequest:
         :type x_language: str
         :param x_time_zone: 环境时区，值为通用的时区描述字符串，比如GMT+8等，默认为GMT+8。  涉及时间的数据会根据环境时区处理。
         :type x_time_zone: str
-        :param x_phone_verifiedid: 手机验证序列号id，如果选择非注册手机号提醒，必填
+        :param x_phone_verifiedid: 手机验证序列号id，如果是非注册联系方式则必填，通过\&quot;查询已验证的列表\&quot;接口查询获取
         :type x_phone_verifiedid: str
-        :param x_email_verifiedid: 邮件验证序列号id，如果选择非注册邮箱提醒，必填
+        :param x_email_verifiedid: 邮件验证序列号id，如果是非注册联系方式则必填，通过\&quot;查询已验证的列表\&quot;接口查询获取
         :type x_email_verifiedid: str
         :param body: Body of the CreateCasesRequest
         :type body: :class:`huaweicloudsdkosm.v2.CreateOrderIncidentV2Req`
@@ -146,7 +146,7 @@ class CreateCasesRequest:
     def x_phone_verifiedid(self):
         """Gets the x_phone_verifiedid of this CreateCasesRequest.
 
-        手机验证序列号id，如果选择非注册手机号提醒，必填
+        手机验证序列号id，如果是非注册联系方式则必填，通过\"查询已验证的列表\"接口查询获取
 
         :return: The x_phone_verifiedid of this CreateCasesRequest.
         :rtype: str
@@ -157,7 +157,7 @@ class CreateCasesRequest:
     def x_phone_verifiedid(self, x_phone_verifiedid):
         """Sets the x_phone_verifiedid of this CreateCasesRequest.
 
-        手机验证序列号id，如果选择非注册手机号提醒，必填
+        手机验证序列号id，如果是非注册联系方式则必填，通过\"查询已验证的列表\"接口查询获取
 
         :param x_phone_verifiedid: The x_phone_verifiedid of this CreateCasesRequest.
         :type x_phone_verifiedid: str
@@ -168,7 +168,7 @@ class CreateCasesRequest:
     def x_email_verifiedid(self):
         """Gets the x_email_verifiedid of this CreateCasesRequest.
 
-        邮件验证序列号id，如果选择非注册邮箱提醒，必填
+        邮件验证序列号id，如果是非注册联系方式则必填，通过\"查询已验证的列表\"接口查询获取
 
         :return: The x_email_verifiedid of this CreateCasesRequest.
         :rtype: str
@@ -179,7 +179,7 @@ class CreateCasesRequest:
     def x_email_verifiedid(self, x_email_verifiedid):
         """Sets the x_email_verifiedid of this CreateCasesRequest.
 
-        邮件验证序列号id，如果选择非注册邮箱提醒，必填
+        邮件验证序列号id，如果是非注册联系方式则必填，通过\"查询已验证的列表\"接口查询获取
 
         :param x_email_verifiedid: The x_email_verifiedid of this CreateCasesRequest.
         :type x_email_verifiedid: str

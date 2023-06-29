@@ -21,6 +21,8 @@ class UserDetail:
         'id': 'str',
         'user_name': 'str',
         'user_email': 'str',
+        'user_phone': 'str',
+        'active_type': 'str',
         'object_sid': 'str',
         'sam_account_name': 'str',
         'user_principal_name': 'str',
@@ -29,6 +31,7 @@ class UserDetail:
         'account_type': 'int',
         'when_created': 'str',
         'account_expires': 'int',
+        'is_pre_user': 'bool',
         'user_expired': 'bool',
         'locked': 'bool',
         'enabled_change_password': 'bool',
@@ -44,6 +47,8 @@ class UserDetail:
         'id': 'id',
         'user_name': 'user_name',
         'user_email': 'user_email',
+        'user_phone': 'user_phone',
+        'active_type': 'active_type',
         'object_sid': 'object_sid',
         'sam_account_name': 'sam_account_name',
         'user_principal_name': 'user_principal_name',
@@ -52,6 +57,7 @@ class UserDetail:
         'account_type': 'account_type',
         'when_created': 'when_created',
         'account_expires': 'account_expires',
+        'is_pre_user': 'is_pre_user',
         'user_expired': 'user_expired',
         'locked': 'locked',
         'enabled_change_password': 'enabled_change_password',
@@ -62,7 +68,7 @@ class UserDetail:
         'total_desktops': 'total_desktops'
     }
 
-    def __init__(self, description=None, id=None, user_name=None, user_email=None, object_sid=None, sam_account_name=None, user_principal_name=None, full_name=None, distinguished_name=None, account_type=None, when_created=None, account_expires=None, user_expired=None, locked=None, enabled_change_password=None, password_never_expired=None, next_login_change_password=None, disabled=None, group_names=None, total_desktops=None):
+    def __init__(self, description=None, id=None, user_name=None, user_email=None, user_phone=None, active_type=None, object_sid=None, sam_account_name=None, user_principal_name=None, full_name=None, distinguished_name=None, account_type=None, when_created=None, account_expires=None, is_pre_user=None, user_expired=None, locked=None, enabled_change_password=None, password_never_expired=None, next_login_change_password=None, disabled=None, group_names=None, total_desktops=None):
         """UserDetail
 
         The model defined in huaweicloud sdk
@@ -75,6 +81,10 @@ class UserDetail:
         :type user_name: str
         :param user_email: 用户邮箱。
         :type user_email: str
+        :param user_phone: 手机号。
+        :type user_phone: str
+        :param active_type: 激活类型，默认为用户激活。 * USER_ACTIVATE： 用户激活 * ADMIN_ACTIVATE： 管理员激活
+        :type active_type: str
         :param object_sid: 用户sid。
         :type object_sid: str
         :param sam_account_name: 登录名(windows以前版本)。
@@ -91,6 +101,8 @@ class UserDetail:
         :type when_created: str
         :param account_expires: 账号有效期最后一天对应的UTC时间，以毫秒为单位。
         :type account_expires: int
+        :param is_pre_user: 是否是预创建的用户，true表示是预创建用户，false表示不是预创建用户
+        :type is_pre_user: bool
         :param user_expired: 账户是否过期，true表示过期，false表示未过期。
         :type user_expired: bool
         :param locked: 账户是否被锁定，true表示被锁定，false表示未锁定。
@@ -115,6 +127,8 @@ class UserDetail:
         self._id = None
         self._user_name = None
         self._user_email = None
+        self._user_phone = None
+        self._active_type = None
         self._object_sid = None
         self._sam_account_name = None
         self._user_principal_name = None
@@ -123,6 +137,7 @@ class UserDetail:
         self._account_type = None
         self._when_created = None
         self._account_expires = None
+        self._is_pre_user = None
         self._user_expired = None
         self._locked = None
         self._enabled_change_password = None
@@ -141,6 +156,10 @@ class UserDetail:
             self.user_name = user_name
         if user_email is not None:
             self.user_email = user_email
+        if user_phone is not None:
+            self.user_phone = user_phone
+        if active_type is not None:
+            self.active_type = active_type
         if object_sid is not None:
             self.object_sid = object_sid
         if sam_account_name is not None:
@@ -157,6 +176,8 @@ class UserDetail:
             self.when_created = when_created
         if account_expires is not None:
             self.account_expires = account_expires
+        if is_pre_user is not None:
+            self.is_pre_user = is_pre_user
         if user_expired is not None:
             self.user_expired = user_expired
         if locked is not None:
@@ -261,6 +282,50 @@ class UserDetail:
         :type user_email: str
         """
         self._user_email = user_email
+
+    @property
+    def user_phone(self):
+        """Gets the user_phone of this UserDetail.
+
+        手机号。
+
+        :return: The user_phone of this UserDetail.
+        :rtype: str
+        """
+        return self._user_phone
+
+    @user_phone.setter
+    def user_phone(self, user_phone):
+        """Sets the user_phone of this UserDetail.
+
+        手机号。
+
+        :param user_phone: The user_phone of this UserDetail.
+        :type user_phone: str
+        """
+        self._user_phone = user_phone
+
+    @property
+    def active_type(self):
+        """Gets the active_type of this UserDetail.
+
+        激活类型，默认为用户激活。 * USER_ACTIVATE： 用户激活 * ADMIN_ACTIVATE： 管理员激活
+
+        :return: The active_type of this UserDetail.
+        :rtype: str
+        """
+        return self._active_type
+
+    @active_type.setter
+    def active_type(self, active_type):
+        """Sets the active_type of this UserDetail.
+
+        激活类型，默认为用户激活。 * USER_ACTIVATE： 用户激活 * ADMIN_ACTIVATE： 管理员激活
+
+        :param active_type: The active_type of this UserDetail.
+        :type active_type: str
+        """
+        self._active_type = active_type
 
     @property
     def object_sid(self):
@@ -437,6 +502,28 @@ class UserDetail:
         :type account_expires: int
         """
         self._account_expires = account_expires
+
+    @property
+    def is_pre_user(self):
+        """Gets the is_pre_user of this UserDetail.
+
+        是否是预创建的用户，true表示是预创建用户，false表示不是预创建用户
+
+        :return: The is_pre_user of this UserDetail.
+        :rtype: bool
+        """
+        return self._is_pre_user
+
+    @is_pre_user.setter
+    def is_pre_user(self, is_pre_user):
+        """Sets the is_pre_user of this UserDetail.
+
+        是否是预创建的用户，true表示是预创建用户，false表示不是预创建用户
+
+        :param is_pre_user: The is_pre_user of this UserDetail.
+        :type is_pre_user: bool
+        """
+        self._is_pre_user = is_pre_user
 
     @property
     def user_expired(self):

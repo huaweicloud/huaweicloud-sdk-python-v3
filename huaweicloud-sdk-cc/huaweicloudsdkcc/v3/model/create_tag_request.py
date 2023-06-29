@@ -35,7 +35,7 @@ class CreateTagRequest:
 
         :param resource_id: 资源ID。
         :type resource_id: str
-        :param resource_type: 资源类型: - cc: 云连接 - bwp: 带宽包
+        :param resource_type: 资源类型: - cloud-connection: 云连接 - bandwidth-package: 带宽包
         :type resource_type: str
         :param body: Body of the CreateTagRequest
         :type body: :class:`huaweicloudsdkcc.v3.CreateTagRequestBody`
@@ -79,7 +79,7 @@ class CreateTagRequest:
     def resource_type(self):
         """Gets the resource_type of this CreateTagRequest.
 
-        资源类型: - cc: 云连接 - bwp: 带宽包
+        资源类型: - cloud-connection: 云连接 - bandwidth-package: 带宽包
 
         :return: The resource_type of this CreateTagRequest.
         :rtype: str
@@ -90,7 +90,7 @@ class CreateTagRequest:
     def resource_type(self, resource_type):
         """Sets the resource_type of this CreateTagRequest.
 
-        资源类型: - cc: 云连接 - bwp: 带宽包
+        资源类型: - cloud-connection: 云连接 - bandwidth-package: 带宽包
 
         :param resource_type: The resource_type of this CreateTagRequest.
         :type resource_type: str

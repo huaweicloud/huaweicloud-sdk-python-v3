@@ -45,7 +45,7 @@ class UpdateStackRequestBody:
         :type enable_deletion_protection: bool
         :param enable_auto_rollback: 自动回滚的标识位，如果不传默认为false，即默认不开启资源栈自动回滚（自动回滚开启后，如果部署失败，则会自动回滚，并返回上一个稳定状态）  *在UpdateStack API中，若该参数未在RequestBody中给予，则不会对资源栈的自动回滚属性进行更新* 
         :type enable_auto_rollback: bool
-        :param agencies: 委托授权的信息。
+        :param agencies: 委托授权的信息。  RFS仅在创建资源栈（触发部署）、创建执行计划、部署资源栈、删除资源栈等涉及资源操作的请求中使用委托，且该委托仅作用于与之绑定的Provider对资源的操作中。若委托中提供的权限不足，有可能导致相关资源操作失败。 
         :type agencies: list[:class:`huaweicloudsdkaos.v1.Agency`]
         """
         
@@ -161,7 +161,7 @@ class UpdateStackRequestBody:
     def agencies(self):
         """Gets the agencies of this UpdateStackRequestBody.
 
-        委托授权的信息。
+        委托授权的信息。  RFS仅在创建资源栈（触发部署）、创建执行计划、部署资源栈、删除资源栈等涉及资源操作的请求中使用委托，且该委托仅作用于与之绑定的Provider对资源的操作中。若委托中提供的权限不足，有可能导致相关资源操作失败。 
 
         :return: The agencies of this UpdateStackRequestBody.
         :rtype: list[:class:`huaweicloudsdkaos.v1.Agency`]
@@ -172,7 +172,7 @@ class UpdateStackRequestBody:
     def agencies(self, agencies):
         """Sets the agencies of this UpdateStackRequestBody.
 
-        委托授权的信息。
+        委托授权的信息。  RFS仅在创建资源栈（触发部署）、创建执行计划、部署资源栈、删除资源栈等涉及资源操作的请求中使用委托，且该委托仅作用于与之绑定的Provider对资源的操作中。若委托中提供的权限不足，有可能导致相关资源操作失败。 
 
         :param agencies: The agencies of this UpdateStackRequestBody.
         :type agencies: list[:class:`huaweicloudsdkaos.v1.Agency`]

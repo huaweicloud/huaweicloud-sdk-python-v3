@@ -25,10 +25,11 @@ class CreateDesktopReq:
         'root_volume': 'Volume',
         'data_volumes': 'list[Volume]',
         'nics': 'list[Nic]',
-        'security_groups': 'list[SecurityGroupInfo]',
+        'security_groups': 'list[SecurityGroup]',
         'desktops': 'list[Desktop]',
         'email_notification': 'bool',
-        'tags': 'list[Tag]'
+        'tags': 'list[Tag]',
+        'eip': 'Eip'
     }
 
     attribute_map = {
@@ -43,10 +44,11 @@ class CreateDesktopReq:
         'security_groups': 'security_groups',
         'desktops': 'desktops',
         'email_notification': 'email_notification',
-        'tags': 'tags'
+        'tags': 'tags',
+        'eip': 'eip'
     }
 
-    def __init__(self, desktop_type=None, availability_zone=None, product_id=None, image_type=None, image_id=None, root_volume=None, data_volumes=None, nics=None, security_groups=None, desktops=None, email_notification=None, tags=None):
+    def __init__(self, desktop_type=None, availability_zone=None, product_id=None, image_type=None, image_id=None, root_volume=None, data_volumes=None, nics=None, security_groups=None, desktops=None, email_notification=None, tags=None, eip=None):
         """CreateDesktopReq
 
         The model defined in huaweicloud sdk
@@ -68,13 +70,15 @@ class CreateDesktopReq:
         :param nics: 桌面对应的网卡信息，如果不指定则使用默认网卡。
         :type nics: list[:class:`huaweicloudsdkworkspace.v2.Nic`]
         :param security_groups: 桌面使用的安全组，如果不指定则默认使用桌面代理中指定的安全组。
-        :type security_groups: list[:class:`huaweicloudsdkworkspace.v2.SecurityGroupInfo`]
-        :param desktops: 创建桌面使用的参数列表。长度为1-50。  当前不支持一批桌面不同配置，所有桌面的配置和第一台的一致，如果第一台未设置参数，则取外层的同名参数。
+        :type security_groups: list[:class:`huaweicloudsdkworkspace.v2.SecurityGroup`]
+        :param desktops: 创建桌面使用的参数列表。长度为1-100。  当前不支持一批桌面不同配置，所有桌面的配置和第一台的一致，如果第一台未设置参数，则取外层的同名参数。
         :type desktops: list[:class:`huaweicloudsdkworkspace.v2.Desktop`]
-        :param email_notification: 创建成功后是否发送邮件通知桌面用户，默认为true。此参数仅在开通云桌面服务的domain_type为LOCAL_AD时有效，为LITE_AS时无效，因为LITE_AS首次创建桌面时必须发送邮件通知桌面用户修改登录密码。
+        :param email_notification: 创建成功后是否发送邮件通知桌面用户，默认为true。
         :type email_notification: bool
         :param tags: 标签列表。
         :type tags: list[:class:`huaweicloudsdkworkspace.v2.Tag`]
+        :param eip: 
+        :type eip: :class:`huaweicloudsdkworkspace.v2.Eip`
         """
         
         
@@ -91,6 +95,7 @@ class CreateDesktopReq:
         self._desktops = None
         self._email_notification = None
         self._tags = None
+        self._eip = None
         self.discriminator = None
 
         self.desktop_type = desktop_type
@@ -111,6 +116,8 @@ class CreateDesktopReq:
             self.email_notification = email_notification
         if tags is not None:
             self.tags = tags
+        if eip is not None:
+            self.eip = eip
 
     @property
     def desktop_type(self):
@@ -291,7 +298,7 @@ class CreateDesktopReq:
         桌面使用的安全组，如果不指定则默认使用桌面代理中指定的安全组。
 
         :return: The security_groups of this CreateDesktopReq.
-        :rtype: list[:class:`huaweicloudsdkworkspace.v2.SecurityGroupInfo`]
+        :rtype: list[:class:`huaweicloudsdkworkspace.v2.SecurityGroup`]
         """
         return self._security_groups
 
@@ -302,7 +309,7 @@ class CreateDesktopReq:
         桌面使用的安全组，如果不指定则默认使用桌面代理中指定的安全组。
 
         :param security_groups: The security_groups of this CreateDesktopReq.
-        :type security_groups: list[:class:`huaweicloudsdkworkspace.v2.SecurityGroupInfo`]
+        :type security_groups: list[:class:`huaweicloudsdkworkspace.v2.SecurityGroup`]
         """
         self._security_groups = security_groups
 
@@ -310,7 +317,7 @@ class CreateDesktopReq:
     def desktops(self):
         """Gets the desktops of this CreateDesktopReq.
 
-        创建桌面使用的参数列表。长度为1-50。  当前不支持一批桌面不同配置，所有桌面的配置和第一台的一致，如果第一台未设置参数，则取外层的同名参数。
+        创建桌面使用的参数列表。长度为1-100。  当前不支持一批桌面不同配置，所有桌面的配置和第一台的一致，如果第一台未设置参数，则取外层的同名参数。
 
         :return: The desktops of this CreateDesktopReq.
         :rtype: list[:class:`huaweicloudsdkworkspace.v2.Desktop`]
@@ -321,7 +328,7 @@ class CreateDesktopReq:
     def desktops(self, desktops):
         """Sets the desktops of this CreateDesktopReq.
 
-        创建桌面使用的参数列表。长度为1-50。  当前不支持一批桌面不同配置，所有桌面的配置和第一台的一致，如果第一台未设置参数，则取外层的同名参数。
+        创建桌面使用的参数列表。长度为1-100。  当前不支持一批桌面不同配置，所有桌面的配置和第一台的一致，如果第一台未设置参数，则取外层的同名参数。
 
         :param desktops: The desktops of this CreateDesktopReq.
         :type desktops: list[:class:`huaweicloudsdkworkspace.v2.Desktop`]
@@ -332,7 +339,7 @@ class CreateDesktopReq:
     def email_notification(self):
         """Gets the email_notification of this CreateDesktopReq.
 
-        创建成功后是否发送邮件通知桌面用户，默认为true。此参数仅在开通云桌面服务的domain_type为LOCAL_AD时有效，为LITE_AS时无效，因为LITE_AS首次创建桌面时必须发送邮件通知桌面用户修改登录密码。
+        创建成功后是否发送邮件通知桌面用户，默认为true。
 
         :return: The email_notification of this CreateDesktopReq.
         :rtype: bool
@@ -343,7 +350,7 @@ class CreateDesktopReq:
     def email_notification(self, email_notification):
         """Sets the email_notification of this CreateDesktopReq.
 
-        创建成功后是否发送邮件通知桌面用户，默认为true。此参数仅在开通云桌面服务的domain_type为LOCAL_AD时有效，为LITE_AS时无效，因为LITE_AS首次创建桌面时必须发送邮件通知桌面用户修改登录密码。
+        创建成功后是否发送邮件通知桌面用户，默认为true。
 
         :param email_notification: The email_notification of this CreateDesktopReq.
         :type email_notification: bool
@@ -371,6 +378,24 @@ class CreateDesktopReq:
         :type tags: list[:class:`huaweicloudsdkworkspace.v2.Tag`]
         """
         self._tags = tags
+
+    @property
+    def eip(self):
+        """Gets the eip of this CreateDesktopReq.
+
+        :return: The eip of this CreateDesktopReq.
+        :rtype: :class:`huaweicloudsdkworkspace.v2.Eip`
+        """
+        return self._eip
+
+    @eip.setter
+    def eip(self, eip):
+        """Sets the eip of this CreateDesktopReq.
+
+        :param eip: The eip of this CreateDesktopReq.
+        :type eip: :class:`huaweicloudsdkworkspace.v2.Eip`
+        """
+        self._eip = eip
 
     def to_dict(self):
         """Returns the model properties as a dict"""

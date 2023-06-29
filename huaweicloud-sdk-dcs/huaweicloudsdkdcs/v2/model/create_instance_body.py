@@ -43,7 +43,8 @@ class CreateInstanceBody:
         'access_user': 'str',
         'enable_publicip': 'bool',
         'port': 'int',
-        'rename_commands': 'object'
+        'rename_commands': 'object',
+        'template_id': 'str'
     }
 
     attribute_map = {
@@ -73,10 +74,11 @@ class CreateInstanceBody:
         'access_user': 'access_user',
         'enable_publicip': 'enable_publicip',
         'port': 'port',
-        'rename_commands': 'rename_commands'
+        'rename_commands': 'rename_commands',
+        'template_id': 'template_id'
     }
 
-    def __init__(self, name=None, engine=None, engine_version=None, capacity=None, spec_code=None, az_codes=None, vpc_id=None, subnet_id=None, security_group_id=None, publicip_id=None, enterprise_project_id=None, enterprise_project_name=None, description=None, enable_ssl=None, private_ip=None, instance_num=None, maintain_begin=None, maintain_end=None, password=None, no_password_access=None, bss_param=None, instance_backup_policy=None, tags=None, access_user=None, enable_publicip=None, port=None, rename_commands=None):
+    def __init__(self, name=None, engine=None, engine_version=None, capacity=None, spec_code=None, az_codes=None, vpc_id=None, subnet_id=None, security_group_id=None, publicip_id=None, enterprise_project_id=None, enterprise_project_name=None, description=None, enable_ssl=None, private_ip=None, instance_num=None, maintain_begin=None, maintain_end=None, password=None, no_password_access=None, bss_param=None, instance_backup_policy=None, tags=None, access_user=None, enable_publicip=None, port=None, rename_commands=None, template_id=None):
         """CreateInstanceBody
 
         The model defined in huaweicloud sdk
@@ -135,6 +137,8 @@ class CreateInstanceBody:
         :type port: int
         :param rename_commands: 支持自定义重命名高危命令。只有创建Redis4.0和Redis5.0实例才支持重命名高危命令，Redis3.0和Memcached实例不支持。  创建Redis4.0和Redis5.0实例，如果没发送该参数或该参数为空，表示没有需要重命名的命令。当前支持重命名的高危命令有command、keys、flushdb、flushall和hgetall，其他命令暂不支持重命名。 
         :type rename_commands: object
+        :param template_id: 参数模板ID
+        :type template_id: str
         """
         
         
@@ -166,6 +170,7 @@ class CreateInstanceBody:
         self._enable_publicip = None
         self._port = None
         self._rename_commands = None
+        self._template_id = None
         self.discriminator = None
 
         self.name = name
@@ -215,6 +220,8 @@ class CreateInstanceBody:
             self.port = port
         if rename_commands is not None:
             self.rename_commands = rename_commands
+        if template_id is not None:
+            self.template_id = template_id
 
     @property
     def name(self):
@@ -801,6 +808,28 @@ class CreateInstanceBody:
         :type rename_commands: object
         """
         self._rename_commands = rename_commands
+
+    @property
+    def template_id(self):
+        """Gets the template_id of this CreateInstanceBody.
+
+        参数模板ID
+
+        :return: The template_id of this CreateInstanceBody.
+        :rtype: str
+        """
+        return self._template_id
+
+    @template_id.setter
+    def template_id(self, template_id):
+        """Sets the template_id of this CreateInstanceBody.
+
+        参数模板ID
+
+        :param template_id: The template_id of this CreateInstanceBody.
+        :type template_id: str
+        """
+        self._template_id = template_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

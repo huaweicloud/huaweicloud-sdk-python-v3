@@ -35,9 +35,9 @@ class ListDomainsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param domain_id: 域名ID
+        :param domain_id: 网站域名ID
         :type domain_id: str
-        :param auth_status: 域名的认证状态:   * unauth - 未认证   * auth - 已认证   * invalid - 认证文件无效   * manual - 人工认证   * skip - 免认证 
+        :param auth_status: 网站域名的认证状态:   * unauth - 未认证   * auth - 已认证   * invalid - 认证文件无效   * manual - 人工认证   * skip - 免认证 
         :type auth_status: str
         :param offset: 分页查询，偏移量，表示从此偏移量开始查询
         :type offset: int
@@ -66,7 +66,7 @@ class ListDomainsRequest:
     def domain_id(self):
         """Gets the domain_id of this ListDomainsRequest.
 
-        域名ID
+        网站域名ID
 
         :return: The domain_id of this ListDomainsRequest.
         :rtype: str
@@ -77,7 +77,7 @@ class ListDomainsRequest:
     def domain_id(self, domain_id):
         """Sets the domain_id of this ListDomainsRequest.
 
-        域名ID
+        网站域名ID
 
         :param domain_id: The domain_id of this ListDomainsRequest.
         :type domain_id: str
@@ -88,7 +88,7 @@ class ListDomainsRequest:
     def auth_status(self):
         """Gets the auth_status of this ListDomainsRequest.
 
-        域名的认证状态:   * unauth - 未认证   * auth - 已认证   * invalid - 认证文件无效   * manual - 人工认证   * skip - 免认证 
+        网站域名的认证状态:   * unauth - 未认证   * auth - 已认证   * invalid - 认证文件无效   * manual - 人工认证   * skip - 免认证 
 
         :return: The auth_status of this ListDomainsRequest.
         :rtype: str
@@ -99,7 +99,7 @@ class ListDomainsRequest:
     def auth_status(self, auth_status):
         """Sets the auth_status of this ListDomainsRequest.
 
-        域名的认证状态:   * unauth - 未认证   * auth - 已认证   * invalid - 认证文件无效   * manual - 人工认证   * skip - 免认证 
+        网站域名的认证状态:   * unauth - 未认证   * auth - 已认证   * invalid - 认证文件无效   * manual - 人工认证   * skip - 免认证 
 
         :param auth_status: The auth_status of this ListDomainsRequest.
         :type auth_status: str

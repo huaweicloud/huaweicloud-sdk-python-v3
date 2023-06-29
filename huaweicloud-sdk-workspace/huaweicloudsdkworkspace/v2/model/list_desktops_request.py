@@ -21,7 +21,8 @@ class ListDesktopsRequest:
         'computer_name': 'str',
         'desktop_ip': 'str',
         'offset': 'int',
-        'limit': 'int'
+        'limit': 'int',
+        'pool_id': 'str'
     }
 
     attribute_map = {
@@ -29,10 +30,11 @@ class ListDesktopsRequest:
         'computer_name': 'computer_name',
         'desktop_ip': 'desktop_ip',
         'offset': 'offset',
-        'limit': 'limit'
+        'limit': 'limit',
+        'pool_id': 'pool_id'
     }
 
-    def __init__(self, user_name=None, computer_name=None, desktop_ip=None, offset=None, limit=None):
+    def __init__(self, user_name=None, computer_name=None, desktop_ip=None, offset=None, limit=None, pool_id=None):
         """ListDesktopsRequest
 
         The model defined in huaweicloud sdk
@@ -47,6 +49,8 @@ class ListDesktopsRequest:
         :type offset: int
         :param limit: 用于分页查询，取值范围0-1000，默认值1000。
         :type limit: int
+        :param pool_id: 桌面池ID,多个桌面池ID用逗号隔开。
+        :type pool_id: str
         """
         
         
@@ -56,6 +60,7 @@ class ListDesktopsRequest:
         self._desktop_ip = None
         self._offset = None
         self._limit = None
+        self._pool_id = None
         self.discriminator = None
 
         if user_name is not None:
@@ -68,6 +73,8 @@ class ListDesktopsRequest:
             self.offset = offset
         if limit is not None:
             self.limit = limit
+        if pool_id is not None:
+            self.pool_id = pool_id
 
     @property
     def user_name(self):
@@ -178,6 +185,28 @@ class ListDesktopsRequest:
         :type limit: int
         """
         self._limit = limit
+
+    @property
+    def pool_id(self):
+        """Gets the pool_id of this ListDesktopsRequest.
+
+        桌面池ID,多个桌面池ID用逗号隔开。
+
+        :return: The pool_id of this ListDesktopsRequest.
+        :rtype: str
+        """
+        return self._pool_id
+
+    @pool_id.setter
+    def pool_id(self, pool_id):
+        """Sets the pool_id of this ListDesktopsRequest.
+
+        桌面池ID,多个桌面池ID用逗号隔开。
+
+        :param pool_id: The pool_id of this ListDesktopsRequest.
+        :type pool_id: str
+        """
+        self._pool_id = pool_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

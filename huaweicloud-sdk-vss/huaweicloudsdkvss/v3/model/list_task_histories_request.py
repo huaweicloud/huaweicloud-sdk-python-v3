@@ -33,7 +33,7 @@ class ListTaskHistoriesRequest:
 
         The model defined in huaweicloud sdk
 
-        :param domain_id: 域名ID
+        :param domain_id: 网站域名ID
         :type domain_id: str
         :param offset: 分页查询，偏移量，表示从此偏移量开始查询
         :type offset: int
@@ -58,7 +58,7 @@ class ListTaskHistoriesRequest:
     def domain_id(self):
         """Gets the domain_id of this ListTaskHistoriesRequest.
 
-        域名ID
+        网站域名ID
 
         :return: The domain_id of this ListTaskHistoriesRequest.
         :rtype: str
@@ -69,7 +69,7 @@ class ListTaskHistoriesRequest:
     def domain_id(self, domain_id):
         """Sets the domain_id of this ListTaskHistoriesRequest.
 
-        域名ID
+        网站域名ID
 
         :param domain_id: The domain_id of this ListTaskHistoriesRequest.
         :type domain_id: str

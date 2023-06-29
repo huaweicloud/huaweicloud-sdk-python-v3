@@ -59,7 +59,8 @@ class Desktop:
         self.discriminator = None
 
         self.user_name = user_name
-        self.user_email = user_email
+        if user_email is not None:
+            self.user_email = user_email
         if user_group is not None:
             self.user_group = user_group
         if computer_name is not None:

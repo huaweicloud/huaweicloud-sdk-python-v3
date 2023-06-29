@@ -1221,7 +1221,9 @@ class AosAsyncClient(Client):
         
         此API用于列举资源栈中当前管理的所有资源的信息
         
-        对于非终态的资源栈（状态以&#x60;IN_PROGRESS&#x60;结尾），不返回资源属性。非终态状态包括但不限于以下状态：
+        当资源栈处于非终态时，仅输出资源栈下资源的简要信息，包含逻辑资源名称（logical_resource_name），逻辑资源类型（logical_resource_type），物理资源id（physical_resource_id），物理资源名称（physical_resource_name），资源状态（status）等信息；当资源栈处于终态时，将额外输出具体信息，如资源属性（resource_attributes）
+        
+        非终态包括但不限于以下状态：
           * 正在部署（DEPLOYMENT_IN_PROGRESS）
           * 正在删除（DELETION_IN_PROGRESS）
           * 正在回滚（ROLLBACK_IN_PROGRESS）
@@ -1610,6 +1612,77 @@ class AosAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='DeleteTemplateVersionResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_template_versions_async(self, request):
+        """列举模板版本
+
+        列举模板版本信息（ListTemplateVersions）
+        
+        此API用于列举模板下所有的模板版本信息
+        
+          * 默认按照生成时间排序，最早生成的模板排列在最前面
+          * 注意：目前返回全量模板版本信息，即不支持分页
+          * 如果没有任何模板版本，则返回空list
+          * 若template_name和template_id同时存在，则模板服务会检查是否两个匹配
+          * 若模板不存在则返回404
+        
+        ListTemplateVersions返回的信息只包含模板版本摘要信息（具体摘要信息见ListTemplateVersionsResponseBody），若用户需要了解模板版本内容，请调用ShowTemplateVersionContent
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListTemplateVersions
+        :type request: :class:`huaweicloudsdkaos.v1.ListTemplateVersionsRequest`
+        :rtype: :class:`huaweicloudsdkaos.v1.ListTemplateVersionsResponse`
+        """
+        return self._list_template_versions_with_http_info(request)
+
+    def _list_template_versions_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'template_name' in local_var_params:
+            path_params['template_name'] = local_var_params['template_name']
+
+        query_params = []
+        if 'template_id' in local_var_params:
+            query_params.append(('template_id', local_var_params['template_id']))
+
+        header_params = {}
+        if 'client_request_id' in local_var_params:
+            header_params['Client-Request-Id'] = local_var_params['client_request_id']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/templates/{template_name}/versions',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListTemplateVersionsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

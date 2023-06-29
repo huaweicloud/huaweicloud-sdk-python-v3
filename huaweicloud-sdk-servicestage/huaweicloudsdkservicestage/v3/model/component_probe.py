@@ -21,13 +21,9 @@ class ComponentProbe:
         'delay': 'int',
         'timeout': 'int',
         'scheme': 'str',
-        'period_seconds': 'int',
-        'success_threshold': 'int',
-        'failure_threshold': 'int',
         'host': 'str',
         'port': 'int',
         'path': 'str',
-        'http_headers': 'list[ComponentConfigEnvs]',
         'command': 'list[str]'
     }
 
@@ -36,17 +32,13 @@ class ComponentProbe:
         'delay': 'delay',
         'timeout': 'timeout',
         'scheme': 'scheme',
-        'period_seconds': 'period_seconds',
-        'success_threshold': 'success_threshold',
-        'failure_threshold': 'failure_threshold',
         'host': 'host',
         'port': 'port',
         'path': 'path',
-        'http_headers': 'http_headers',
         'command': 'command'
     }
 
-    def __init__(self, type=None, delay=None, timeout=None, scheme=None, period_seconds=None, success_threshold=None, failure_threshold=None, host=None, port=None, path=None, http_headers=None, command=None):
+    def __init__(self, type=None, delay=None, timeout=None, scheme=None, host=None, port=None, path=None, command=None):
         """ComponentProbe
 
         The model defined in huaweicloud sdk
@@ -59,20 +51,12 @@ class ComponentProbe:
         :type timeout: int
         :param scheme: type为http类型时生效
         :type scheme: str
-        :param period_seconds: 表示检测周期
-        :type period_seconds: int
-        :param success_threshold: 表示成功阈值
-        :type success_threshold: int
-        :param failure_threshold: 表示最大失败次数
-        :type failure_threshold: int
         :param host: type为http类型时生效。默认为POD的IP, 可以指定自定义的IP
         :type host: str
         :param port: type为http和tcp类型时生效。
         :type port: int
         :param path: type为http类型时生效。请求路径。
         :type path: str
-        :param http_headers: 
-        :type http_headers: list[:class:`huaweicloudsdkservicestage.v3.ComponentConfigEnvs`]
         :param command: type为command类型时生效。命令列表
         :type command: list[str]
         """
@@ -83,13 +67,9 @@ class ComponentProbe:
         self._delay = None
         self._timeout = None
         self._scheme = None
-        self._period_seconds = None
-        self._success_threshold = None
-        self._failure_threshold = None
         self._host = None
         self._port = None
         self._path = None
-        self._http_headers = None
         self._command = None
         self.discriminator = None
 
@@ -101,20 +81,12 @@ class ComponentProbe:
             self.timeout = timeout
         if scheme is not None:
             self.scheme = scheme
-        if period_seconds is not None:
-            self.period_seconds = period_seconds
-        if success_threshold is not None:
-            self.success_threshold = success_threshold
-        if failure_threshold is not None:
-            self.failure_threshold = failure_threshold
         if host is not None:
             self.host = host
         if port is not None:
             self.port = port
         if path is not None:
             self.path = path
-        if http_headers is not None:
-            self.http_headers = http_headers
         if command is not None:
             self.command = command
 
@@ -203,72 +175,6 @@ class ComponentProbe:
         self._scheme = scheme
 
     @property
-    def period_seconds(self):
-        """Gets the period_seconds of this ComponentProbe.
-
-        表示检测周期
-
-        :return: The period_seconds of this ComponentProbe.
-        :rtype: int
-        """
-        return self._period_seconds
-
-    @period_seconds.setter
-    def period_seconds(self, period_seconds):
-        """Sets the period_seconds of this ComponentProbe.
-
-        表示检测周期
-
-        :param period_seconds: The period_seconds of this ComponentProbe.
-        :type period_seconds: int
-        """
-        self._period_seconds = period_seconds
-
-    @property
-    def success_threshold(self):
-        """Gets the success_threshold of this ComponentProbe.
-
-        表示成功阈值
-
-        :return: The success_threshold of this ComponentProbe.
-        :rtype: int
-        """
-        return self._success_threshold
-
-    @success_threshold.setter
-    def success_threshold(self, success_threshold):
-        """Sets the success_threshold of this ComponentProbe.
-
-        表示成功阈值
-
-        :param success_threshold: The success_threshold of this ComponentProbe.
-        :type success_threshold: int
-        """
-        self._success_threshold = success_threshold
-
-    @property
-    def failure_threshold(self):
-        """Gets the failure_threshold of this ComponentProbe.
-
-        表示最大失败次数
-
-        :return: The failure_threshold of this ComponentProbe.
-        :rtype: int
-        """
-        return self._failure_threshold
-
-    @failure_threshold.setter
-    def failure_threshold(self, failure_threshold):
-        """Sets the failure_threshold of this ComponentProbe.
-
-        表示最大失败次数
-
-        :param failure_threshold: The failure_threshold of this ComponentProbe.
-        :type failure_threshold: int
-        """
-        self._failure_threshold = failure_threshold
-
-    @property
     def host(self):
         """Gets the host of this ComponentProbe.
 
@@ -333,24 +239,6 @@ class ComponentProbe:
         :type path: str
         """
         self._path = path
-
-    @property
-    def http_headers(self):
-        """Gets the http_headers of this ComponentProbe.
-
-        :return: The http_headers of this ComponentProbe.
-        :rtype: list[:class:`huaweicloudsdkservicestage.v3.ComponentConfigEnvs`]
-        """
-        return self._http_headers
-
-    @http_headers.setter
-    def http_headers(self, http_headers):
-        """Sets the http_headers of this ComponentProbe.
-
-        :param http_headers: The http_headers of this ComponentProbe.
-        :type http_headers: list[:class:`huaweicloudsdkservicestage.v3.ComponentConfigEnvs`]
-        """
-        self._http_headers = http_headers
 
     @property
     def command(self):

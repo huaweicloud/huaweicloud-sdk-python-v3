@@ -23,7 +23,8 @@ class OtpConfigInfo:
         'app_id': 'str',
         'app_secret': 'str',
         'auth_server_access_mode': 'AuthServerAccessMode',
-        'cert_content': 'str'
+        'cert_content': 'str',
+        'apply_rule': 'ApplyRuleInfo'
     }
 
     attribute_map = {
@@ -33,10 +34,11 @@ class OtpConfigInfo:
         'app_id': 'app_id',
         'app_secret': 'app_secret',
         'auth_server_access_mode': 'auth_server_access_mode',
-        'cert_content': 'cert_content'
+        'cert_content': 'cert_content',
+        'apply_rule': 'apply_rule'
     }
 
-    def __init__(self, enable=None, receive_mode=None, auth_url=None, app_id=None, app_secret=None, auth_server_access_mode=None, cert_content=None):
+    def __init__(self, enable=None, receive_mode=None, auth_url=None, app_id=None, app_secret=None, auth_server_access_mode=None, cert_content=None, apply_rule=None):
         """OtpConfigInfo
 
         The model defined in huaweicloud sdk
@@ -55,6 +57,8 @@ class OtpConfigInfo:
         :type auth_server_access_mode: :class:`huaweicloudsdkworkspace.v2.AuthServerAccessMode`
         :param cert_content: pem格式证书内容
         :type cert_content: str
+        :param apply_rule: 
+        :type apply_rule: :class:`huaweicloudsdkworkspace.v2.ApplyRuleInfo`
         """
         
         
@@ -66,6 +70,7 @@ class OtpConfigInfo:
         self._app_secret = None
         self._auth_server_access_mode = None
         self._cert_content = None
+        self._apply_rule = None
         self.discriminator = None
 
         if enable is not None:
@@ -82,6 +87,8 @@ class OtpConfigInfo:
             self.auth_server_access_mode = auth_server_access_mode
         if cert_content is not None:
             self.cert_content = cert_content
+        if apply_rule is not None:
+            self.apply_rule = apply_rule
 
     @property
     def enable(self):
@@ -228,6 +235,24 @@ class OtpConfigInfo:
         :type cert_content: str
         """
         self._cert_content = cert_content
+
+    @property
+    def apply_rule(self):
+        """Gets the apply_rule of this OtpConfigInfo.
+
+        :return: The apply_rule of this OtpConfigInfo.
+        :rtype: :class:`huaweicloudsdkworkspace.v2.ApplyRuleInfo`
+        """
+        return self._apply_rule
+
+    @apply_rule.setter
+    def apply_rule(self, apply_rule):
+        """Sets the apply_rule of this OtpConfigInfo.
+
+        :param apply_rule: The apply_rule of this OtpConfigInfo.
+        :type apply_rule: :class:`huaweicloudsdkworkspace.v2.ApplyRuleInfo`
+        """
+        self._apply_rule = apply_rule
 
     def to_dict(self):
         """Returns the model properties as a dict"""

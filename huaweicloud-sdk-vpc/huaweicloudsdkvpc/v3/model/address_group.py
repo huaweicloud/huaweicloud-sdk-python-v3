@@ -27,6 +27,7 @@ class AddressGroup:
         'updated_at': 'datetime',
         'tenant_id': 'str',
         'enterprise_project_id': 'str',
+        'tags': 'list[ResourceTag]',
         'status': 'str',
         'status_message': 'str'
     }
@@ -42,11 +43,12 @@ class AddressGroup:
         'updated_at': 'updated_at',
         'tenant_id': 'tenant_id',
         'enterprise_project_id': 'enterprise_project_id',
+        'tags': 'tags',
         'status': 'status',
         'status_message': 'status_message'
     }
 
-    def __init__(self, id=None, name=None, description=None, max_capacity=None, ip_set=None, ip_version=None, created_at=None, updated_at=None, tenant_id=None, enterprise_project_id=None, status=None, status_message=None):
+    def __init__(self, id=None, name=None, description=None, max_capacity=None, ip_set=None, ip_version=None, created_at=None, updated_at=None, tenant_id=None, enterprise_project_id=None, tags=None, status=None, status_message=None):
         """AddressGroup
 
         The model defined in huaweicloud sdk
@@ -71,6 +73,8 @@ class AddressGroup:
         :type tenant_id: str
         :param enterprise_project_id: 功能说明：企业项目ID。 取值范围：最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。
         :type enterprise_project_id: str
+        :param tags: IP地址组资源标签
+        :type tags: list[:class:`huaweicloudsdkvpc.v3.ResourceTag`]
         :param status: 功能说明：地址组状态 取值范围：       NORMAL：正常       UPDATING：更新中       UPDATE_FAILED：更新失败 默认值：NORMAL 约束：当地址组处于UPDATING（更新中）状态时，不允许再次更新
         :type status: str
         :param status_message: 功能说明：地址组状态详情信息
@@ -89,6 +93,7 @@ class AddressGroup:
         self._updated_at = None
         self._tenant_id = None
         self._enterprise_project_id = None
+        self._tags = None
         self._status = None
         self._status_message = None
         self.discriminator = None
@@ -103,6 +108,7 @@ class AddressGroup:
         self.updated_at = updated_at
         self.tenant_id = tenant_id
         self.enterprise_project_id = enterprise_project_id
+        self.tags = tags
         self.status = status
         self.status_message = status_message
 
@@ -325,6 +331,28 @@ class AddressGroup:
         :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def tags(self):
+        """Gets the tags of this AddressGroup.
+
+        IP地址组资源标签
+
+        :return: The tags of this AddressGroup.
+        :rtype: list[:class:`huaweicloudsdkvpc.v3.ResourceTag`]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this AddressGroup.
+
+        IP地址组资源标签
+
+        :param tags: The tags of this AddressGroup.
+        :type tags: list[:class:`huaweicloudsdkvpc.v3.ResourceTag`]
+        """
+        self._tags = tags
 
     @property
     def status(self):

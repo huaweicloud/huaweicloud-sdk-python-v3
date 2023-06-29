@@ -726,6 +726,62 @@ class WorkspaceClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def batch_logoff_desktops(self, request):
+        """批量注销桌面
+
+        批量注销桌面。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchLogoffDesktops
+        :type request: :class:`huaweicloudsdkworkspace.v2.BatchLogoffDesktopsRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.BatchLogoffDesktopsResponse`
+        """
+        return self._batch_logoff_desktops_with_http_info(request)
+
+    def _batch_logoff_desktops_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/desktops/logoff',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='BatchLogoffDesktopsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def batch_run_desktops(self, request):
         """操作桌面
 
@@ -931,6 +987,8 @@ class WorkspaceClient(Client):
             query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
+        if 'pool_id' in local_var_params:
+            query_params.append(('pool_id', local_var_params['pool_id']))
 
         header_params = {}
 
@@ -1003,6 +1061,8 @@ class WorkspaceClient(Client):
             query_params.append(('desktop_type', local_var_params['desktop_type']))
         if 'tag' in local_var_params:
             query_params.append(('tag', local_var_params['tag']))
+        if 'pool_id' in local_var_params:
+            query_params.append(('pool_id', local_var_params['pool_id']))
 
         header_params = {}
 
@@ -1146,6 +1206,530 @@ class WorkspaceClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_unused_desktops(self, request):
+        """查询在指定时间段未使用的桌面
+
+        查询在指定时间段未使用的桌面。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListUnusedDesktops
+        :type request: :class:`huaweicloudsdkworkspace.v2.ListUnusedDesktopsRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.ListUnusedDesktopsResponse`
+        """
+        return self._list_unused_desktops_with_http_info(request)
+
+    def _list_unused_desktops_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/desktops/statistics/unused',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListUnusedDesktopsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_used_desktop_info(self, request):
+        """查询使用桌面的时长
+
+        查询使用桌面的时长。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListUsedDesktopInfo
+        :type request: :class:`huaweicloudsdkworkspace.v2.ListUsedDesktopInfoRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.ListUsedDesktopInfoResponse`
+        """
+        return self._list_used_desktop_info_with_http_info(request)
+
+    def _list_used_desktop_info_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/desktops/statistics/used',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListUsedDesktopInfoResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def batch_delete_user_groups(self, request):
+        """批量删除用户组
+
+        该接口用于批量删除用户组。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchDeleteUserGroups
+        :type request: :class:`huaweicloudsdkworkspace.v2.BatchDeleteUserGroupsRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.BatchDeleteUserGroupsResponse`
+        """
+        return self._batch_delete_user_groups_with_http_info(request)
+
+    def _batch_delete_user_groups_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/groups/batch-delete',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='BatchDeleteUserGroupsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_user_group(self, request):
+        """创建用户组
+
+        该接口用于创建用户组。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateUserGroup
+        :type request: :class:`huaweicloudsdkworkspace.v2.CreateUserGroupRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.CreateUserGroupResponse`
+        """
+        return self._create_user_group_with_http_info(request)
+
+    def _create_user_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/groups',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateUserGroupResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_user_group(self, request):
+        """删除用户组
+
+        删除用户组。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteUserGroup
+        :type request: :class:`huaweicloudsdkworkspace.v2.DeleteUserGroupRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.DeleteUserGroupResponse`
+        """
+        return self._delete_user_group_with_http_info(request)
+
+    def _delete_user_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/groups/{group_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteUserGroupResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_user_groups(self, request):
+        """查询用户组列表
+
+        查询用户组列表，支持分页。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListUserGroups
+        :type request: :class:`huaweicloudsdkworkspace.v2.ListUserGroupsRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.ListUserGroupsResponse`
+        """
+        return self._list_user_groups_with_http_info(request)
+
+    def _list_user_groups_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'keyword' in local_var_params:
+            query_params.append(('keyword', local_var_params['keyword']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/groups',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListUserGroupsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_users_of_group(self, request):
+        """查询用户组中的用户
+
+        该接口用于查询用户组中的用户。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListUsersOfGroup
+        :type request: :class:`huaweicloudsdkworkspace.v2.ListUsersOfGroupRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.ListUsersOfGroupResponse`
+        """
+        return self._list_users_of_group_with_http_info(request)
+
+    def _list_users_of_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
+
+        query_params = []
+        if 'user_name' in local_var_params:
+            query_params.append(('user_name', local_var_params['user_name']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/groups/{group_id}/users',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListUsersOfGroupResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def run_actions_on_group(self, request):
+        """操作用户组
+
+        操作用户组，如添加用户、删除用户。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for RunActionsOnGroup
+        :type request: :class:`huaweicloudsdkworkspace.v2.RunActionsOnGroupRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.RunActionsOnGroupResponse`
+        """
+        return self._run_actions_on_group_with_http_info(request)
+
+    def _run_actions_on_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/groups/{group_id}/actions',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='RunActionsOnGroupResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_user_group(self, request):
+        """修改用户组信息
+
+        该接口用于修改用户组信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateUserGroup
+        :type request: :class:`huaweicloudsdkworkspace.v2.UpdateUserGroupRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.UpdateUserGroupResponse`
+        """
+        return self._update_user_group_with_http_info(request)
+
+    def _update_user_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/groups/{group_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateUserGroupResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_images(self, request):
         """查询产品镜像列表
 
@@ -1273,6 +1857,242 @@ class WorkspaceClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ListItaSubJobsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def apply_desktops_internet(self, request):
+        """开通桌面上网功能
+
+        开通桌面上网功能。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ApplyDesktopsInternet
+        :type request: :class:`huaweicloudsdkworkspace.v2.ApplyDesktopsInternetRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.ApplyDesktopsInternetResponse`
+        """
+        return self._apply_desktops_internet_with_http_info(request)
+
+    def _apply_desktops_internet_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/eips',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ApplyDesktopsInternetResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def associate_desktops_eip(self, request):
+        """桌面绑定EIP
+
+        桌面绑定EIP。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for AssociateDesktopsEip
+        :type request: :class:`huaweicloudsdkworkspace.v2.AssociateDesktopsEipRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.AssociateDesktopsEipResponse`
+        """
+        return self._associate_desktops_eip_with_http_info(request)
+
+    def _associate_desktops_eip_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/eips/binding',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='AssociateDesktopsEipResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def batch_disassociate_desktops_eip(self, request):
+        """批量桌面解绑EIP
+
+        批量桌面解绑EIP。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchDisassociateDesktopsEip
+        :type request: :class:`huaweicloudsdkworkspace.v2.BatchDisassociateDesktopsEipRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.BatchDisassociateDesktopsEipResponse`
+        """
+        return self._batch_disassociate_desktops_eip_with_http_info(request)
+
+    def _batch_disassociate_desktops_eip_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/eips/unbinding',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='BatchDisassociateDesktopsEipResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_desktops_eips(self, request):
+        """查询已绑定桌面和未绑定的Eip
+
+        查询已绑定桌面和未绑定的Eip。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListDesktopsEips
+        :type request: :class:`huaweicloudsdkworkspace.v2.ListDesktopsEipsRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.ListDesktopsEipsResponse`
+        """
+        return self._list_desktops_eips_with_http_info(request)
+
+    def _list_desktops_eips_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'desktop_id' in local_var_params:
+            query_params.append(('desktop_id', local_var_params['desktop_id']))
+        if 'desktop_name' in local_var_params:
+            query_params.append(('desktop_name', local_var_params['desktop_name']))
+        if 'user_name' in local_var_params:
+            query_params.append(('user_name', local_var_params['user_name']))
+        if 'address' in local_var_params:
+            query_params.append(('address', local_var_params['address']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'state' in local_var_params:
+            query_params.append(('state', local_var_params['state']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/eips',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListDesktopsEipsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1744,10 +2564,66 @@ class WorkspaceClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def batch_create_users(self, request):
+        """批量创建用户
+
+        该接口用于批量创建用户。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchCreateUsers
+        :type request: :class:`huaweicloudsdkworkspace.v2.BatchCreateUsersRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.BatchCreateUsersResponse`
+        """
+        return self._batch_create_users_with_http_info(request)
+
+    def _batch_create_users_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/users/batch-create',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='BatchCreateUsersResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def batch_delete_otp_devices(self, request):
         """解绑OTP设备
 
-        该接口用于解绑用户的OTP设备
+        该接口用于解绑用户的OTP设备。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1805,7 +2681,7 @@ class WorkspaceClient(Client):
     def change_user_status(self, request):
         """操作用户
 
-        该接口用于操作用户，包含三种操作：锁定、解锁和重置密码。
+        该接口用于操作用户，包含三种操作：锁定、解锁和重置密码（重置密码建议使用/v2/{project_id}/users/{user_id}/random-password接口，在没有通知方式的情况下必须使用/v2/{project_id}/users/{user_id}/random-password接口）。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1973,9 +2849,9 @@ class WorkspaceClient(Client):
             request_type=request.__class__.__name__)
 
     def list_otp_devices_by_user_id(self, request):
-        """查询MFA设备
+        """查询OTP设备
 
-        该接口用于查询相应用户下面的MFA设备
+        该接口用于查询相应用户下面的OTP设备。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2115,6 +2991,8 @@ class WorkspaceClient(Client):
             query_params.append(('offset', local_var_params['offset']))
         if 'description' in local_var_params:
             query_params.append(('description', local_var_params['description']))
+        if 'active_type' in local_var_params:
+            query_params.append(('active_type', local_var_params['active_type']))
 
         header_params = {}
 
@@ -2141,6 +3019,64 @@ class WorkspaceClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ListUsersResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def reset_random_password(self, request):
+        """给用户重置随机密码
+
+        该接口用于给用户重置一个密码。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ResetRandomPassword
+        :type request: :class:`huaweicloudsdkworkspace.v2.ResetRandomPasswordRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.ResetRandomPasswordResponse`
+        """
+        return self._reset_random_password_with_http_info(request)
+
+    def _reset_random_password_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'user_id' in local_var_params:
+            path_params['user_id'] = local_var_params['user_id']
+
+        query_params = []
+        if 'notification_type' in local_var_params:
+            query_params.append(('notification_type', local_var_params['notification_type']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/users/{user_id}/random-password',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ResetRandomPasswordResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

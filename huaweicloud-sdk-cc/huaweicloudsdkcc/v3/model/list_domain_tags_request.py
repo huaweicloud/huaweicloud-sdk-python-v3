@@ -29,7 +29,7 @@ class ListDomainTagsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param resource_type: 资源类型: - cc: 云连接 - bwp: 带宽包
+        :param resource_type: 资源类型: - cloud-connection: 云连接 - bandwidth-package: 带宽包
         :type resource_type: str
         """
         
@@ -44,7 +44,7 @@ class ListDomainTagsRequest:
     def resource_type(self):
         """Gets the resource_type of this ListDomainTagsRequest.
 
-        资源类型: - cc: 云连接 - bwp: 带宽包
+        资源类型: - cloud-connection: 云连接 - bandwidth-package: 带宽包
 
         :return: The resource_type of this ListDomainTagsRequest.
         :rtype: str
@@ -55,7 +55,7 @@ class ListDomainTagsRequest:
     def resource_type(self, resource_type):
         """Sets the resource_type of this ListDomainTagsRequest.
 
-        资源类型: - cc: 云连接 - bwp: 带宽包
+        资源类型: - cloud-connection: 云连接 - bandwidth-package: 带宽包
 
         :param resource_type: The resource_type of this ListDomainTagsRequest.
         :type resource_type: str

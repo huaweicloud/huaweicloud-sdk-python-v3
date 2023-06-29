@@ -64,6 +64,7 @@ from huaweicloudsdkvpc.v3.model.remove_extend_cidr_option import RemoveExtendCid
 from huaweicloudsdkvpc.v3.model.remove_vpc_extend_cidr_request import RemoveVpcExtendCidrRequest
 from huaweicloudsdkvpc.v3.model.remove_vpc_extend_cidr_request_body import RemoveVpcExtendCidrRequestBody
 from huaweicloudsdkvpc.v3.model.remove_vpc_extend_cidr_response import RemoveVpcExtendCidrResponse
+from huaweicloudsdkvpc.v3.model.resource_tag import ResourceTag
 from huaweicloudsdkvpc.v3.model.security_group import SecurityGroup
 from huaweicloudsdkvpc.v3.model.security_group_info import SecurityGroupInfo
 from huaweicloudsdkvpc.v3.model.security_group_rule import SecurityGroupRule

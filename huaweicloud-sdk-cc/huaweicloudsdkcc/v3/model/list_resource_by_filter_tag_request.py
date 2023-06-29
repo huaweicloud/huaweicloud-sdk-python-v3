@@ -31,7 +31,7 @@ class ListResourceByFilterTagRequest:
 
         The model defined in huaweicloud sdk
 
-        :param resource_type: 资源类型: - cc: 云连接 - bwp: 带宽包
+        :param resource_type: 资源类型: - cloud-connection: 云连接 - bandwidth-package: 带宽包
         :type resource_type: str
         :param body: Body of the ListResourceByFilterTagRequest
         :type body: :class:`huaweicloudsdkcc.v3.ListResourceByFilterTagRequestBody`
@@ -51,7 +51,7 @@ class ListResourceByFilterTagRequest:
     def resource_type(self):
         """Gets the resource_type of this ListResourceByFilterTagRequest.
 
-        资源类型: - cc: 云连接 - bwp: 带宽包
+        资源类型: - cloud-connection: 云连接 - bandwidth-package: 带宽包
 
         :return: The resource_type of this ListResourceByFilterTagRequest.
         :rtype: str
@@ -62,7 +62,7 @@ class ListResourceByFilterTagRequest:
     def resource_type(self, resource_type):
         """Sets the resource_type of this ListResourceByFilterTagRequest.
 
-        资源类型: - cc: 云连接 - bwp: 带宽包
+        资源类型: - cloud-connection: 云连接 - bandwidth-package: 带宽包
 
         :param resource_type: The resource_type of this ListResourceByFilterTagRequest.
         :type resource_type: str

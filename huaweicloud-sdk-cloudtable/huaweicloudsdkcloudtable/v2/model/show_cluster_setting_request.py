@@ -17,24 +17,20 @@ class ShowClusterSettingRequest:
     sensitive_list = []
 
     openapi_types = {
-        'project_id': 'str',
         'cluster_id': 'str',
         'x_language': 'str'
     }
 
     attribute_map = {
-        'project_id': 'projectId',
-        'cluster_id': 'clusterId',
+        'cluster_id': 'cluster_id',
         'x_language': 'X-Language'
     }
 
-    def __init__(self, project_id=None, cluster_id=None, x_language=None):
+    def __init__(self, cluster_id=None, x_language=None):
         """ShowClusterSettingRequest
 
         The model defined in huaweicloud sdk
 
-        :param project_id: 租户ID
-        :type project_id: str
         :param cluster_id: 项目ID
         :type cluster_id: str
         :param x_language: 语言类型
@@ -43,37 +39,13 @@ class ShowClusterSettingRequest:
         
         
 
-        self._project_id = None
         self._cluster_id = None
         self._x_language = None
         self.discriminator = None
 
-        self.project_id = project_id
         self.cluster_id = cluster_id
         if x_language is not None:
             self.x_language = x_language
-
-    @property
-    def project_id(self):
-        """Gets the project_id of this ShowClusterSettingRequest.
-
-        租户ID
-
-        :return: The project_id of this ShowClusterSettingRequest.
-        :rtype: str
-        """
-        return self._project_id
-
-    @project_id.setter
-    def project_id(self, project_id):
-        """Sets the project_id of this ShowClusterSettingRequest.
-
-        租户ID
-
-        :param project_id: The project_id of this ShowClusterSettingRequest.
-        :type project_id: str
-        """
-        self._project_id = project_id
 
     @property
     def cluster_id(self):

@@ -69,7 +69,7 @@ class ShowTasksResponseBody:
         :type task_type: str
         :param task_id: 任务ID
         :type task_id: str
-        :param domain_name: 域名
+        :param domain_name: 网站域名
         :type domain_name: str
         :param task_settings: 
         :type task_settings: :class:`huaweicloudsdkvss.v3.TaskSettings`
@@ -79,7 +79,7 @@ class ShowTasksResponseBody:
         :type start_time: str
         :param end_time: 任务结束的时间
         :type end_time: str
-        :param task_status: 任务状态:   * running - 正在运行   * success - 成功   * canceled - 已取消   * waiting - 正在等待   * failure - 失败 
+        :param task_status: 任务状态:   * running - 正在运行   * success - 成功   * canceled - 已取消   * waiting - 正在等待   * ready - 已就绪，排队中   * failure - 失败 
         :type task_status: str
         :param schedule_status: 监测任务状态:   * running - 正在运行   * waiting - 正在等待   * finished - 已完成 
         :type schedule_status: str
@@ -243,7 +243,7 @@ class ShowTasksResponseBody:
     def domain_name(self):
         """Gets the domain_name of this ShowTasksResponseBody.
 
-        域名
+        网站域名
 
         :return: The domain_name of this ShowTasksResponseBody.
         :rtype: str
@@ -254,7 +254,7 @@ class ShowTasksResponseBody:
     def domain_name(self, domain_name):
         """Sets the domain_name of this ShowTasksResponseBody.
 
-        域名
+        网站域名
 
         :param domain_name: The domain_name of this ShowTasksResponseBody.
         :type domain_name: str
@@ -349,7 +349,7 @@ class ShowTasksResponseBody:
     def task_status(self):
         """Gets the task_status of this ShowTasksResponseBody.
 
-        任务状态:   * running - 正在运行   * success - 成功   * canceled - 已取消   * waiting - 正在等待   * failure - 失败 
+        任务状态:   * running - 正在运行   * success - 成功   * canceled - 已取消   * waiting - 正在等待   * ready - 已就绪，排队中   * failure - 失败 
 
         :return: The task_status of this ShowTasksResponseBody.
         :rtype: str
@@ -360,7 +360,7 @@ class ShowTasksResponseBody:
     def task_status(self, task_status):
         """Sets the task_status of this ShowTasksResponseBody.
 
-        任务状态:   * running - 正在运行   * success - 成功   * canceled - 已取消   * waiting - 正在等待   * failure - 失败 
+        任务状态:   * running - 正在运行   * success - 成功   * canceled - 已取消   * waiting - 正在等待   * ready - 已就绪，排队中   * failure - 失败 
 
         :param task_status: The task_status of this ShowTasksResponseBody.
         :type task_status: str

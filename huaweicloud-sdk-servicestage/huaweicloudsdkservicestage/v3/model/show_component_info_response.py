@@ -19,10 +19,8 @@ class ShowComponentInfoResponse(SdkResponse):
 
     openapi_types = {
         'name': 'str',
-        'workload_name': 'str',
         'description': 'str',
         'labels': 'list[Label]',
-        'pod_labels': 'list[Label]',
         'runtime_stack': 'RuntimeStack',
         'source': 'SourceObject',
         'build': 'Build',
@@ -41,13 +39,7 @@ class ShowComponentInfoResponse(SdkResponse):
         'pre_stop': 'ComponentLifecycle',
         'timezone': 'str',
         'mesher': 'Mesher',
-        'enable_sermant_injection': 'bool',
         'deploy_strategy': 'DeployStrategy',
-        'host_aliases': 'list[HostAlias]',
-        'dns_policy': 'str',
-        'dns_config': 'DnsConfig',
-        'security_context': 'SecurityContext',
-        'workload_kind': 'str',
         'jvm_opts': 'str',
         'tomcat_opts': 'ComponentCreateTomcatOpts',
         'logs': 'list[ComponentLogs]',
@@ -62,10 +54,8 @@ class ShowComponentInfoResponse(SdkResponse):
 
     attribute_map = {
         'name': 'name',
-        'workload_name': 'workload_name',
         'description': 'description',
         'labels': 'labels',
-        'pod_labels': 'pod_labels',
         'runtime_stack': 'runtime_stack',
         'source': 'source',
         'build': 'build',
@@ -84,13 +74,7 @@ class ShowComponentInfoResponse(SdkResponse):
         'pre_stop': 'pre_stop',
         'timezone': 'timezone',
         'mesher': 'mesher',
-        'enable_sermant_injection': 'enable_sermant_injection',
         'deploy_strategy': 'deploy_strategy',
-        'host_aliases': 'host_aliases',
-        'dns_policy': 'dns_policy',
-        'dns_config': 'dns_config',
-        'security_context': 'security_context',
-        'workload_kind': 'workload_kind',
         'jvm_opts': 'jvm_opts',
         'tomcat_opts': 'tomcat_opts',
         'logs': 'logs',
@@ -103,21 +87,17 @@ class ShowComponentInfoResponse(SdkResponse):
         'status': 'status'
     }
 
-    def __init__(self, name=None, workload_name=None, description=None, labels=None, pod_labels=None, runtime_stack=None, source=None, build=None, environment_id=None, application_id=None, limit_cpu=None, limit_memory=None, request_cpu=None, request_memory=None, replica=None, version=None, envs=None, storages=None, command=None, post_start=None, pre_stop=None, timezone=None, mesher=None, enable_sermant_injection=None, deploy_strategy=None, host_aliases=None, dns_policy=None, dns_config=None, security_context=None, workload_kind=None, jvm_opts=None, tomcat_opts=None, logs=None, custom_metric=None, affinity=None, anti_affinity=None, liveness_probe=None, readiness_probe=None, refer_resources=None, status=None):
+    def __init__(self, name=None, description=None, labels=None, runtime_stack=None, source=None, build=None, environment_id=None, application_id=None, limit_cpu=None, limit_memory=None, request_cpu=None, request_memory=None, replica=None, version=None, envs=None, storages=None, command=None, post_start=None, pre_stop=None, timezone=None, mesher=None, deploy_strategy=None, jvm_opts=None, tomcat_opts=None, logs=None, custom_metric=None, affinity=None, anti_affinity=None, liveness_probe=None, readiness_probe=None, refer_resources=None, status=None):
         """ShowComponentInfoResponse
 
         The model defined in huaweicloud sdk
 
         :param name: 
         :type name: str
-        :param workload_name: 
-        :type workload_name: str
         :param description: 
         :type description: str
         :param labels: 
         :type labels: list[:class:`huaweicloudsdkservicestage.v3.Label`]
-        :param pod_labels: 
-        :type pod_labels: list[:class:`huaweicloudsdkservicestage.v3.Label`]
         :param runtime_stack: 
         :type runtime_stack: :class:`huaweicloudsdkservicestage.v3.RuntimeStack`
         :param source: 
@@ -154,20 +134,8 @@ class ShowComponentInfoResponse(SdkResponse):
         :type timezone: str
         :param mesher: 
         :type mesher: :class:`huaweicloudsdkservicestage.v3.Mesher`
-        :param enable_sermant_injection: 
-        :type enable_sermant_injection: bool
         :param deploy_strategy: 
         :type deploy_strategy: :class:`huaweicloudsdkservicestage.v3.DeployStrategy`
-        :param host_aliases: 
-        :type host_aliases: list[:class:`huaweicloudsdkservicestage.v3.HostAlias`]
-        :param dns_policy: 
-        :type dns_policy: str
-        :param dns_config: 
-        :type dns_config: :class:`huaweicloudsdkservicestage.v3.DnsConfig`
-        :param security_context: 
-        :type security_context: :class:`huaweicloudsdkservicestage.v3.SecurityContext`
-        :param workload_kind: 
-        :type workload_kind: str
         :param jvm_opts: jvm参数
         :type jvm_opts: str
         :param tomcat_opts: 
@@ -193,10 +161,8 @@ class ShowComponentInfoResponse(SdkResponse):
         super(ShowComponentInfoResponse, self).__init__()
 
         self._name = None
-        self._workload_name = None
         self._description = None
         self._labels = None
-        self._pod_labels = None
         self._runtime_stack = None
         self._source = None
         self._build = None
@@ -215,13 +181,7 @@ class ShowComponentInfoResponse(SdkResponse):
         self._pre_stop = None
         self._timezone = None
         self._mesher = None
-        self._enable_sermant_injection = None
         self._deploy_strategy = None
-        self._host_aliases = None
-        self._dns_policy = None
-        self._dns_config = None
-        self._security_context = None
-        self._workload_kind = None
         self._jvm_opts = None
         self._tomcat_opts = None
         self._logs = None
@@ -236,14 +196,10 @@ class ShowComponentInfoResponse(SdkResponse):
 
         if name is not None:
             self.name = name
-        if workload_name is not None:
-            self.workload_name = workload_name
         if description is not None:
             self.description = description
         if labels is not None:
             self.labels = labels
-        if pod_labels is not None:
-            self.pod_labels = pod_labels
         if runtime_stack is not None:
             self.runtime_stack = runtime_stack
         if source is not None:
@@ -280,20 +236,8 @@ class ShowComponentInfoResponse(SdkResponse):
             self.timezone = timezone
         if mesher is not None:
             self.mesher = mesher
-        if enable_sermant_injection is not None:
-            self.enable_sermant_injection = enable_sermant_injection
         if deploy_strategy is not None:
             self.deploy_strategy = deploy_strategy
-        if host_aliases is not None:
-            self.host_aliases = host_aliases
-        if dns_policy is not None:
-            self.dns_policy = dns_policy
-        if dns_config is not None:
-            self.dns_config = dns_config
-        if security_context is not None:
-            self.security_context = security_context
-        if workload_kind is not None:
-            self.workload_kind = workload_kind
         if jvm_opts is not None:
             self.jvm_opts = jvm_opts
         if tomcat_opts is not None:
@@ -334,24 +278,6 @@ class ShowComponentInfoResponse(SdkResponse):
         self._name = name
 
     @property
-    def workload_name(self):
-        """Gets the workload_name of this ShowComponentInfoResponse.
-
-        :return: The workload_name of this ShowComponentInfoResponse.
-        :rtype: str
-        """
-        return self._workload_name
-
-    @workload_name.setter
-    def workload_name(self, workload_name):
-        """Sets the workload_name of this ShowComponentInfoResponse.
-
-        :param workload_name: The workload_name of this ShowComponentInfoResponse.
-        :type workload_name: str
-        """
-        self._workload_name = workload_name
-
-    @property
     def description(self):
         """Gets the description of this ShowComponentInfoResponse.
 
@@ -386,24 +312,6 @@ class ShowComponentInfoResponse(SdkResponse):
         :type labels: list[:class:`huaweicloudsdkservicestage.v3.Label`]
         """
         self._labels = labels
-
-    @property
-    def pod_labels(self):
-        """Gets the pod_labels of this ShowComponentInfoResponse.
-
-        :return: The pod_labels of this ShowComponentInfoResponse.
-        :rtype: list[:class:`huaweicloudsdkservicestage.v3.Label`]
-        """
-        return self._pod_labels
-
-    @pod_labels.setter
-    def pod_labels(self, pod_labels):
-        """Sets the pod_labels of this ShowComponentInfoResponse.
-
-        :param pod_labels: The pod_labels of this ShowComponentInfoResponse.
-        :type pod_labels: list[:class:`huaweicloudsdkservicestage.v3.Label`]
-        """
-        self._pod_labels = pod_labels
 
     @property
     def runtime_stack(self):
@@ -750,24 +658,6 @@ class ShowComponentInfoResponse(SdkResponse):
         self._mesher = mesher
 
     @property
-    def enable_sermant_injection(self):
-        """Gets the enable_sermant_injection of this ShowComponentInfoResponse.
-
-        :return: The enable_sermant_injection of this ShowComponentInfoResponse.
-        :rtype: bool
-        """
-        return self._enable_sermant_injection
-
-    @enable_sermant_injection.setter
-    def enable_sermant_injection(self, enable_sermant_injection):
-        """Sets the enable_sermant_injection of this ShowComponentInfoResponse.
-
-        :param enable_sermant_injection: The enable_sermant_injection of this ShowComponentInfoResponse.
-        :type enable_sermant_injection: bool
-        """
-        self._enable_sermant_injection = enable_sermant_injection
-
-    @property
     def deploy_strategy(self):
         """Gets the deploy_strategy of this ShowComponentInfoResponse.
 
@@ -784,96 +674,6 @@ class ShowComponentInfoResponse(SdkResponse):
         :type deploy_strategy: :class:`huaweicloudsdkservicestage.v3.DeployStrategy`
         """
         self._deploy_strategy = deploy_strategy
-
-    @property
-    def host_aliases(self):
-        """Gets the host_aliases of this ShowComponentInfoResponse.
-
-        :return: The host_aliases of this ShowComponentInfoResponse.
-        :rtype: list[:class:`huaweicloudsdkservicestage.v3.HostAlias`]
-        """
-        return self._host_aliases
-
-    @host_aliases.setter
-    def host_aliases(self, host_aliases):
-        """Sets the host_aliases of this ShowComponentInfoResponse.
-
-        :param host_aliases: The host_aliases of this ShowComponentInfoResponse.
-        :type host_aliases: list[:class:`huaweicloudsdkservicestage.v3.HostAlias`]
-        """
-        self._host_aliases = host_aliases
-
-    @property
-    def dns_policy(self):
-        """Gets the dns_policy of this ShowComponentInfoResponse.
-
-        :return: The dns_policy of this ShowComponentInfoResponse.
-        :rtype: str
-        """
-        return self._dns_policy
-
-    @dns_policy.setter
-    def dns_policy(self, dns_policy):
-        """Sets the dns_policy of this ShowComponentInfoResponse.
-
-        :param dns_policy: The dns_policy of this ShowComponentInfoResponse.
-        :type dns_policy: str
-        """
-        self._dns_policy = dns_policy
-
-    @property
-    def dns_config(self):
-        """Gets the dns_config of this ShowComponentInfoResponse.
-
-        :return: The dns_config of this ShowComponentInfoResponse.
-        :rtype: :class:`huaweicloudsdkservicestage.v3.DnsConfig`
-        """
-        return self._dns_config
-
-    @dns_config.setter
-    def dns_config(self, dns_config):
-        """Sets the dns_config of this ShowComponentInfoResponse.
-
-        :param dns_config: The dns_config of this ShowComponentInfoResponse.
-        :type dns_config: :class:`huaweicloudsdkservicestage.v3.DnsConfig`
-        """
-        self._dns_config = dns_config
-
-    @property
-    def security_context(self):
-        """Gets the security_context of this ShowComponentInfoResponse.
-
-        :return: The security_context of this ShowComponentInfoResponse.
-        :rtype: :class:`huaweicloudsdkservicestage.v3.SecurityContext`
-        """
-        return self._security_context
-
-    @security_context.setter
-    def security_context(self, security_context):
-        """Sets the security_context of this ShowComponentInfoResponse.
-
-        :param security_context: The security_context of this ShowComponentInfoResponse.
-        :type security_context: :class:`huaweicloudsdkservicestage.v3.SecurityContext`
-        """
-        self._security_context = security_context
-
-    @property
-    def workload_kind(self):
-        """Gets the workload_kind of this ShowComponentInfoResponse.
-
-        :return: The workload_kind of this ShowComponentInfoResponse.
-        :rtype: str
-        """
-        return self._workload_kind
-
-    @workload_kind.setter
-    def workload_kind(self, workload_kind):
-        """Sets the workload_kind of this ShowComponentInfoResponse.
-
-        :param workload_kind: The workload_kind of this ShowComponentInfoResponse.
-        :type workload_kind: str
-        """
-        self._workload_kind = workload_kind
 
     @property
     def jvm_opts(self):

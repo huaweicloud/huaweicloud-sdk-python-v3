@@ -37,15 +37,15 @@ class OtpDevice:
 
         The model defined in huaweicloud sdk
 
-        :param id: 用户otp 信息id
+        :param id: 用户otp 信息id。
         :type id: str
-        :param user_id: 用户id
+        :param user_id: 用户id。
         :type user_id: str
-        :param user_name: 用户名
+        :param user_name: 用户名。
         :type user_name: str
         :param status: 用户otp设备状态 UNREGISTER: 未绑定 REGISTERED：已绑定
         :type status: str
-        :param create_time: 用户otp设备绑定时间
+        :param create_time: 用户otp设备绑定时间。
         :type create_time: datetime
         """
         
@@ -73,7 +73,7 @@ class OtpDevice:
     def id(self):
         """Gets the id of this OtpDevice.
 
-        用户otp 信息id
+        用户otp 信息id。
 
         :return: The id of this OtpDevice.
         :rtype: str
@@ -84,7 +84,7 @@ class OtpDevice:
     def id(self, id):
         """Sets the id of this OtpDevice.
 
-        用户otp 信息id
+        用户otp 信息id。
 
         :param id: The id of this OtpDevice.
         :type id: str
@@ -95,7 +95,7 @@ class OtpDevice:
     def user_id(self):
         """Gets the user_id of this OtpDevice.
 
-        用户id
+        用户id。
 
         :return: The user_id of this OtpDevice.
         :rtype: str
@@ -106,7 +106,7 @@ class OtpDevice:
     def user_id(self, user_id):
         """Sets the user_id of this OtpDevice.
 
-        用户id
+        用户id。
 
         :param user_id: The user_id of this OtpDevice.
         :type user_id: str
@@ -117,7 +117,7 @@ class OtpDevice:
     def user_name(self):
         """Gets the user_name of this OtpDevice.
 
-        用户名
+        用户名。
 
         :return: The user_name of this OtpDevice.
         :rtype: str
@@ -128,7 +128,7 @@ class OtpDevice:
     def user_name(self, user_name):
         """Sets the user_name of this OtpDevice.
 
-        用户名
+        用户名。
 
         :param user_name: The user_name of this OtpDevice.
         :type user_name: str
@@ -161,7 +161,7 @@ class OtpDevice:
     def create_time(self):
         """Gets the create_time of this OtpDevice.
 
-        用户otp设备绑定时间
+        用户otp设备绑定时间。
 
         :return: The create_time of this OtpDevice.
         :rtype: datetime
@@ -172,7 +172,7 @@ class OtpDevice:
     def create_time(self, create_time):
         """Sets the create_time of this OtpDevice.
 
-        用户otp设备绑定时间
+        用户otp设备绑定时间。
 
         :param create_time: The create_time of this OtpDevice.
         :type create_time: datetime

@@ -20,7 +20,6 @@ class ComponentModify:
         'name': 'str',
         'description': 'str',
         'labels': 'list[Label]',
-        'pod_labels': 'list[Label]',
         'runtime_stack': 'RuntimeStack',
         'source': 'SourceObject',
         'build': 'Build',
@@ -38,7 +37,6 @@ class ComponentModify:
         'pre_stop': 'ComponentLifecycle',
         'timezone': 'str',
         'mesher': 'Mesher',
-        'enable_sermant_injection': 'bool',
         'jvm_opts': 'str',
         'tomcat_opts': 'ComponentModifyTomcatOpts',
         'logs': 'list[ComponentLogs]',
@@ -47,11 +45,6 @@ class ComponentModify:
         'anti_affinity': 'ComponentAffinity',
         'liveness_probe': 'ComponentProbe',
         'readiness_probe': 'ComponentProbe',
-        'host_aliases': 'list[HostAlias]',
-        'dns_policy': 'str',
-        'dns_config': 'DnsConfig',
-        'security_context': 'SecurityContext',
-        'workload_kind': 'str',
         'refer_resources': 'list[ReferResourceCreate]'
     }
 
@@ -59,7 +52,6 @@ class ComponentModify:
         'name': 'name',
         'description': 'description',
         'labels': 'labels',
-        'pod_labels': 'pod_labels',
         'runtime_stack': 'runtime_stack',
         'source': 'source',
         'build': 'build',
@@ -77,7 +69,6 @@ class ComponentModify:
         'pre_stop': 'pre_stop',
         'timezone': 'timezone',
         'mesher': 'mesher',
-        'enable_sermant_injection': 'enable_sermant_injection',
         'jvm_opts': 'jvm_opts',
         'tomcat_opts': 'tomcat_opts',
         'logs': 'logs',
@@ -86,15 +77,10 @@ class ComponentModify:
         'anti_affinity': 'anti_affinity',
         'liveness_probe': 'liveness_probe',
         'readiness_probe': 'readiness_probe',
-        'host_aliases': 'host_aliases',
-        'dns_policy': 'dns_policy',
-        'dns_config': 'dns_config',
-        'security_context': 'security_context',
-        'workload_kind': 'workload_kind',
         'refer_resources': 'refer_resources'
     }
 
-    def __init__(self, name=None, description=None, labels=None, pod_labels=None, runtime_stack=None, source=None, build=None, limit_cpu=None, limit_memory=None, request_cpu=None, request_memory=None, replica=None, version=None, envs=None, storages=None, deploy_strategy=None, command=None, post_start=None, pre_stop=None, timezone=None, mesher=None, enable_sermant_injection=None, jvm_opts=None, tomcat_opts=None, logs=None, custom_metric=None, affinity=None, anti_affinity=None, liveness_probe=None, readiness_probe=None, host_aliases=None, dns_policy=None, dns_config=None, security_context=None, workload_kind=None, refer_resources=None):
+    def __init__(self, name=None, description=None, labels=None, runtime_stack=None, source=None, build=None, limit_cpu=None, limit_memory=None, request_cpu=None, request_memory=None, replica=None, version=None, envs=None, storages=None, deploy_strategy=None, command=None, post_start=None, pre_stop=None, timezone=None, mesher=None, jvm_opts=None, tomcat_opts=None, logs=None, custom_metric=None, affinity=None, anti_affinity=None, liveness_probe=None, readiness_probe=None, refer_resources=None):
         """ComponentModify
 
         The model defined in huaweicloud sdk
@@ -105,8 +91,6 @@ class ComponentModify:
         :type description: str
         :param labels: 
         :type labels: list[:class:`huaweicloudsdkservicestage.v3.Label`]
-        :param pod_labels: 
-        :type pod_labels: list[:class:`huaweicloudsdkservicestage.v3.Label`]
         :param runtime_stack: 
         :type runtime_stack: :class:`huaweicloudsdkservicestage.v3.RuntimeStack`
         :param source: 
@@ -141,8 +125,6 @@ class ComponentModify:
         :type timezone: str
         :param mesher: 
         :type mesher: :class:`huaweicloudsdkservicestage.v3.Mesher`
-        :param enable_sermant_injection: 
-        :type enable_sermant_injection: bool
         :param jvm_opts: jvm参数
         :type jvm_opts: str
         :param tomcat_opts: 
@@ -159,16 +141,6 @@ class ComponentModify:
         :type liveness_probe: :class:`huaweicloudsdkservicestage.v3.ComponentProbe`
         :param readiness_probe: 
         :type readiness_probe: :class:`huaweicloudsdkservicestage.v3.ComponentProbe`
-        :param host_aliases: 
-        :type host_aliases: list[:class:`huaweicloudsdkservicestage.v3.HostAlias`]
-        :param dns_policy: 
-        :type dns_policy: str
-        :param dns_config: 
-        :type dns_config: :class:`huaweicloudsdkservicestage.v3.DnsConfig`
-        :param security_context: 
-        :type security_context: :class:`huaweicloudsdkservicestage.v3.SecurityContext`
-        :param workload_kind: 
-        :type workload_kind: str
         :param refer_resources: 
         :type refer_resources: list[:class:`huaweicloudsdkservicestage.v3.ReferResourceCreate`]
         """
@@ -178,7 +150,6 @@ class ComponentModify:
         self._name = None
         self._description = None
         self._labels = None
-        self._pod_labels = None
         self._runtime_stack = None
         self._source = None
         self._build = None
@@ -196,7 +167,6 @@ class ComponentModify:
         self._pre_stop = None
         self._timezone = None
         self._mesher = None
-        self._enable_sermant_injection = None
         self._jvm_opts = None
         self._tomcat_opts = None
         self._logs = None
@@ -205,11 +175,6 @@ class ComponentModify:
         self._anti_affinity = None
         self._liveness_probe = None
         self._readiness_probe = None
-        self._host_aliases = None
-        self._dns_policy = None
-        self._dns_config = None
-        self._security_context = None
-        self._workload_kind = None
         self._refer_resources = None
         self.discriminator = None
 
@@ -218,8 +183,6 @@ class ComponentModify:
             self.description = description
         if labels is not None:
             self.labels = labels
-        if pod_labels is not None:
-            self.pod_labels = pod_labels
         if runtime_stack is not None:
             self.runtime_stack = runtime_stack
         if source is not None:
@@ -254,8 +217,6 @@ class ComponentModify:
             self.timezone = timezone
         if mesher is not None:
             self.mesher = mesher
-        if enable_sermant_injection is not None:
-            self.enable_sermant_injection = enable_sermant_injection
         if jvm_opts is not None:
             self.jvm_opts = jvm_opts
         if tomcat_opts is not None:
@@ -272,16 +233,6 @@ class ComponentModify:
             self.liveness_probe = liveness_probe
         if readiness_probe is not None:
             self.readiness_probe = readiness_probe
-        if host_aliases is not None:
-            self.host_aliases = host_aliases
-        if dns_policy is not None:
-            self.dns_policy = dns_policy
-        if dns_config is not None:
-            self.dns_config = dns_config
-        if security_context is not None:
-            self.security_context = security_context
-        if workload_kind is not None:
-            self.workload_kind = workload_kind
         if refer_resources is not None:
             self.refer_resources = refer_resources
 
@@ -338,24 +289,6 @@ class ComponentModify:
         :type labels: list[:class:`huaweicloudsdkservicestage.v3.Label`]
         """
         self._labels = labels
-
-    @property
-    def pod_labels(self):
-        """Gets the pod_labels of this ComponentModify.
-
-        :return: The pod_labels of this ComponentModify.
-        :rtype: list[:class:`huaweicloudsdkservicestage.v3.Label`]
-        """
-        return self._pod_labels
-
-    @pod_labels.setter
-    def pod_labels(self, pod_labels):
-        """Sets the pod_labels of this ComponentModify.
-
-        :param pod_labels: The pod_labels of this ComponentModify.
-        :type pod_labels: list[:class:`huaweicloudsdkservicestage.v3.Label`]
-        """
-        self._pod_labels = pod_labels
 
     @property
     def runtime_stack(self):
@@ -684,24 +617,6 @@ class ComponentModify:
         self._mesher = mesher
 
     @property
-    def enable_sermant_injection(self):
-        """Gets the enable_sermant_injection of this ComponentModify.
-
-        :return: The enable_sermant_injection of this ComponentModify.
-        :rtype: bool
-        """
-        return self._enable_sermant_injection
-
-    @enable_sermant_injection.setter
-    def enable_sermant_injection(self, enable_sermant_injection):
-        """Sets the enable_sermant_injection of this ComponentModify.
-
-        :param enable_sermant_injection: The enable_sermant_injection of this ComponentModify.
-        :type enable_sermant_injection: bool
-        """
-        self._enable_sermant_injection = enable_sermant_injection
-
-    @property
     def jvm_opts(self):
         """Gets the jvm_opts of this ComponentModify.
 
@@ -848,96 +763,6 @@ class ComponentModify:
         :type readiness_probe: :class:`huaweicloudsdkservicestage.v3.ComponentProbe`
         """
         self._readiness_probe = readiness_probe
-
-    @property
-    def host_aliases(self):
-        """Gets the host_aliases of this ComponentModify.
-
-        :return: The host_aliases of this ComponentModify.
-        :rtype: list[:class:`huaweicloudsdkservicestage.v3.HostAlias`]
-        """
-        return self._host_aliases
-
-    @host_aliases.setter
-    def host_aliases(self, host_aliases):
-        """Sets the host_aliases of this ComponentModify.
-
-        :param host_aliases: The host_aliases of this ComponentModify.
-        :type host_aliases: list[:class:`huaweicloudsdkservicestage.v3.HostAlias`]
-        """
-        self._host_aliases = host_aliases
-
-    @property
-    def dns_policy(self):
-        """Gets the dns_policy of this ComponentModify.
-
-        :return: The dns_policy of this ComponentModify.
-        :rtype: str
-        """
-        return self._dns_policy
-
-    @dns_policy.setter
-    def dns_policy(self, dns_policy):
-        """Sets the dns_policy of this ComponentModify.
-
-        :param dns_policy: The dns_policy of this ComponentModify.
-        :type dns_policy: str
-        """
-        self._dns_policy = dns_policy
-
-    @property
-    def dns_config(self):
-        """Gets the dns_config of this ComponentModify.
-
-        :return: The dns_config of this ComponentModify.
-        :rtype: :class:`huaweicloudsdkservicestage.v3.DnsConfig`
-        """
-        return self._dns_config
-
-    @dns_config.setter
-    def dns_config(self, dns_config):
-        """Sets the dns_config of this ComponentModify.
-
-        :param dns_config: The dns_config of this ComponentModify.
-        :type dns_config: :class:`huaweicloudsdkservicestage.v3.DnsConfig`
-        """
-        self._dns_config = dns_config
-
-    @property
-    def security_context(self):
-        """Gets the security_context of this ComponentModify.
-
-        :return: The security_context of this ComponentModify.
-        :rtype: :class:`huaweicloudsdkservicestage.v3.SecurityContext`
-        """
-        return self._security_context
-
-    @security_context.setter
-    def security_context(self, security_context):
-        """Sets the security_context of this ComponentModify.
-
-        :param security_context: The security_context of this ComponentModify.
-        :type security_context: :class:`huaweicloudsdkservicestage.v3.SecurityContext`
-        """
-        self._security_context = security_context
-
-    @property
-    def workload_kind(self):
-        """Gets the workload_kind of this ComponentModify.
-
-        :return: The workload_kind of this ComponentModify.
-        :rtype: str
-        """
-        return self._workload_kind
-
-    @workload_kind.setter
-    def workload_kind(self, workload_kind):
-        """Sets the workload_kind of this ComponentModify.
-
-        :param workload_kind: The workload_kind of this ComponentModify.
-        :type workload_kind: str
-        """
-        self._workload_kind = workload_kind
 
     @property
     def refer_resources(self):

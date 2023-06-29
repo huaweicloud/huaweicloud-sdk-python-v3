@@ -1,3 +1,447 @@
+# 3.1.46 2023-06-29
+
+### HuaweiCloud SDK IdentityCenter
+
+- _Features_
+  - Support `IdentityCenter`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK WorkspaceApp
+
+- _Features_
+  - Support `WorkspaceApp`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK Config
+
+- _Features_
+  - Support `Config`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK AOS
+
+- _Features_
+  - Support the interface `ListTemplateVersions`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK CC
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **DeleteTag**
+    - changes of request param
+      - `+ resource_type: enum value [cloud-connection,bandwidth-package]`
+      - `+ resource_type: enum value [cc,bwp]`
+  - **ListCloudConnections**
+    - changes of request param
+      - `+ used_scene`
+    - changes of response param
+      - `+ cloud_connections.tags`
+  - **CreateCloudConnection**
+    - changes of response param
+      - `+ cloud_connection.tags`
+  - **ShowCloudConnection**
+    - changes of response param
+      - `+ cloud_connection.tags`
+  - **UpdateCloudConnection**
+    - changes of response param
+      - `+ cloud_connection.tags`
+  - **ListDomainTags**
+    - changes of request param
+      - `+ resource_type: enum value [cloud-connection,bandwidth-package]`
+      - `+ resource_type: enum value [cc,bwp]`
+  - **BatchCreateDeleteTags**
+    - changes of request param
+      - `+ resource_type: enum value [cloud-connection,bandwidth-package]`
+      - `+ resource_type: enum value [cc,bwp]`
+  - **ListTags**
+    - changes of request param
+      - `+ resource_type: enum value [cloud-connection,bandwidth-package]`
+      - `+ resource_type: enum value [cc,bwp]`
+  - **CreateTag**
+    - changes of request param
+      - `+ resource_type: enum value [cloud-connection,bandwidth-package]`
+      - `+ resource_type: enum value [cc,bwp]`
+  - **ListQuotas**
+    - changes of request param
+      - `* quota_type: optional -> required`
+  - **CreateBandwidthPackage**
+    - changes of request param
+      - `+ bandwidth_package.spec_code`
+  - **ListResourceByFilterTag**
+    - changes of request param
+      - `+ resource_type: enum value [cloud-connection,bandwidth-package]`
+      - `+ resource_type: enum value [cc,bwp]`
+
+### HuaweiCloud SDK DCS
+
+- _Features_
+  - Support the interfaces `ExecuteClusterSwitchover`, `ShowJobInfo`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListConfigTemplates**
+    - changes of response param
+      - `+ config_templates.created_at`
+  - **CreateInstance**
+    - changes of request param
+      - `+ template_id`
+
+### HuaweiCloud SDK DSC
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateProductOrder**
+    - changes of request param
+      - `+ charging_mode`
+      - `+ cloud_service_type`
+      - `+ composite_product_id`
+      - `+ discount_id`
+      - `+ is_auto_renew`
+      - `+ period_num`
+      - `+ period_type`
+      - `+ product_infos`
+      - `+ promotion_activity_id`
+      - `+ promotion_info`
+      - `+ region_id`
+      - `- chargingMode`
+      - `- cloudServiceType`
+      - `- compositeProductId`
+      - `- discountId`
+      - `- isAutoRenew`
+      - `- periodNum`
+      - `- periodType`
+      - `- productInfos`
+      - `- promotionActivityId`
+      - `- promotionInfo`
+      - `- regionId`
+  - **ShowSpecification**
+    - changes of response param
+      - `* orderInfos.productInfo: list<ProductInfoBean> -> object<ProductInfo>`
+  - **ChangeRule**
+    - changes of request param
+      - `* body: object<RuleRequest> -> object<RuleChangeRequest>`
+
+### HuaweiCloud SDK eiHealth
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the following interfaces：
+    - `ListDrugJob`
+    - `CancelDrugJob`
+    - `DeleteDrugJob`
+    - `CreateOptmJob`
+    - `ShowOptmJob`
+    - `CreateSynthesisJob`
+    - `ShowSynthesisJob`
+    - `CreateDockingJob`
+    - `ShowDockingJob`
+    - `CreateFepJob`
+    - `ShowFepJob`
+
+### HuaweiCloud SDK GA
+
+- _Features_
+  - Support the following interfaces：
+    - `ListIpGroups`
+    - `CreateIpGroup`
+    - `ShowIpGroup`
+    - `UpdateIpGroup`
+    - `DeleteIpGroup`
+    - `AddIpGroupIp`
+    - `RemoveIpGroupIp`
+    - `AssociateListener`
+    - `DisassociateListener`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK IoTDA
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateCommand**
+    - changes of response param
+      - `+ error_msg`
+      - `+ error_code`
+  - **ListProperties**
+    - changes of response param
+      - `+ error_msg`
+      - `+ error_code`
+  - **UpdateProperties**
+    - changes of response param
+      - `+ error_msg`
+      - `+ error_code`
+
+### HuaweiCloud SDK ServiceStage
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the interfaces `ShowComponentConfigurations`, `CreateComponentConfiguration`, `ShowComponentConfiguration`, `CompareComponentConfiguration`
+  - **ModifyApplicationConfiguration**
+    - changes of response param
+      - `+ environment_id`
+      - `+ application_id`
+      - `* configuration: list<object> -> object`
+  - **ShowComponentInfo**
+    - changes of response param
+      - `- host_aliases`
+      - `- dns_policy`
+      - `- enable_sermant_injection`
+      - `- workload_name`
+      - `- workload_kind`
+      - `- dns_config`
+      - `- pod_labels`
+      - `- security_context`
+      - `- deploy_strategy.rolling_release.termination_seconds`
+      - `- deploy_strategy.rolling_release.fail_strategy`
+      - `- deploy_strategy.gray_release.deployment_mode`
+      - `- deploy_strategy.gray_release.replica_surge_mode`
+      - `- deploy_strategy.gray_release.rule_match_mode`
+      - `- deploy_strategy.gray_release.rules`
+      - `- liveness_probe.period_seconds`
+      - `- liveness_probe.success_threshold`
+      - `- liveness_probe.failure_threshold`
+      - `- liveness_probe.http_headers`
+  - **ModifyComponent**
+    - changes of request param
+      - `- pod_labels`
+      - `- enable_sermant_injection`
+      - `- host_aliases`
+      - `- dns_policy`
+      - `- dns_config`
+      - `- security_context`
+      - `- workload_kind`
+      - `- deploy_strategy.rolling_release.termination_seconds`
+      - `- deploy_strategy.rolling_release.fail_strategy`
+      - `- deploy_strategy.gray_release.deployment_mode`
+      - `- deploy_strategy.gray_release.replica_surge_mode`
+      - `- deploy_strategy.gray_release.rule_match_mode`
+      - `- deploy_strategy.gray_release.rules`
+      - `- liveness_probe.period_seconds`
+      - `- liveness_probe.success_threshold`
+      - `- liveness_probe.failure_threshold`
+      - `- liveness_probe.http_headers`
+  - **CreateComponent**
+    - changes of request param
+      - `- workload_name`
+      - `- pod_labels`
+      - `- enterprise_project_id`
+      - `- enable_sermant_injection`
+      - `- host_aliases`
+      - `- dns_policy`
+      - `- dns_config`
+      - `- security_context`
+      - `- workload_kind`
+      - `- deploy_strategy.rolling_release.termination_seconds`
+      - `- deploy_strategy.rolling_release.fail_strategy`
+      - `- deploy_strategy.gray_release.deployment_mode`
+      - `- deploy_strategy.gray_release.replica_surge_mode`
+      - `- deploy_strategy.gray_release.rule_match_mode`
+      - `- deploy_strategy.gray_release.rules`
+      - `- liveness_probe.period_seconds`
+      - `- liveness_probe.success_threshold`
+      - `- liveness_probe.failure_threshold`
+      - `- liveness_probe.http_headers`
+  - **ShowComponentsInApplication**
+    - changes of response param
+      - `+ components.platform_type`
+  - **ShowComponents**
+    - changes of response param
+      - `+ components.platform_type`
+
+### HuaweiCloud SDK VPC
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowAddressGroup**
+    - changes of response param
+      - `+ address_group.tags`
+  - **UpdateAddressGroup**
+    - changes of response param
+      - `+ address_group.tags`
+  - **ListAddressGroup**
+    - changes of response param
+      - `+ address_groups.tags`
+  - **CreateAddressGroup**
+    - changes of response param
+      - `+ address_group.tags`
+
+### HuaweiCloud SDK VPCEP
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **AddOrRemoveServicePermissions**
+    - changes of request param
+      - `+ permission_type`
+    - changes of response param
+      - `+ permission_type`
+  - **UpdateEndpointService**
+    - changes of response param
+      - `- cidr_type`
+  - **ListServicePermissionsDetails**
+    - changes of response param
+      - `+ permissions.permission_type`
+  - **BatchAddEndpointServicePermissions**
+    - changes of request param
+      - `+ permission_type`
+    - changes of response param
+      - `+ permissions.permission_type`
+  - **BatchRemoveEndpointServicePermissions**
+    - changes of response param
+      - `+ permissions.permission_type`
+  - **UpdateEndpointServicePermissionDesc**
+    - changes of response param
+      - `+ permissions.permission_type`
+  - **CreateEndpointService**
+    - changes of response param
+      - `- cidr_type`
+
+### HuaweiCloud SDK VSS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CancelTasks**
+    - changes of response param
+      - `+ task_status: enum value [ready]`
+  - **CreateTasks**
+    - changes of response param
+      - `+ task_status: enum value [ready]`
+  - **ShowTasks**
+    - changes of response param
+      - `+ task_status: enum value [ready]`
+  - **ListTaskHistories**
+    - changes of response param
+      - `+ data.task_status: enum value [ready]`
+
+### HuaweiCloud SDK Workspace
+
+- _Features_
+  - Support the following interfaces：
+    - `BatchLogoffDesktops`
+    - `ListDesktopsEips`
+    - `ApplyDesktopsInternet`
+    - `AssociateDesktopsEip`
+    - `BatchDisassociateDesktopsEip`
+    - `ListUnusedDesktops`
+    - `ListUsedDesktopInfo`
+    - `ListUserGroups`
+    - `CreateUserGroup`
+    - `BatchDeleteUserGroups`
+    - `UpdateUserGroup`
+    - `DeleteUserGroup`
+    - `RunActionsOnGroup`
+    - `ListUsersOfGroup`
+    - `BatchCreateUsers`
+    - `ResetRandomPassword`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListDesktops**
+    - changes of request param
+      - `+ pool_id`
+  - **CreateDesktop**
+    - changes of request param
+      - `+ eip`
+      - `+ security_groups.name`
+      - `* security_groups: list<SecurityGroupInfo> -> list<SecurityGroup>`
+  - **ResizeDesktop**
+    - changes of response param
+      - `+ job_id`
+      - `* jobs: list<ResizeDesktopJobResult> -> list<ResizeDesktopJobResponse>`
+  - **CreateAccessPolicy**
+    - changes of request param
+      - `+ policy_objects_list.object_type: enum value [USERGROUP]`
+  - **ListAccessPolicyObjects**
+    - changes of response param
+      - `+ policy_objects_list.object_type: enum value [USERGROUP]`
+      - `* policy_objects_list: list<AccessPolicyObjectInfo> -> list<AccessPolicyObject>`
+  - **UpdateAccessPolicyObjects**
+    - changes of request param
+      - `+ policy_objects_list.object_type: enum value [USERGROUP]`
+  - **ListProducts**
+    - changes of response param
+      - `- products.package_type`
+  - **CreateDesktopUser**
+    - changes of request param
+      - `+ active_type`
+      - `+ user_phone`
+      - `+ password`
+      - `* body: object<CreateUserReq> -> object<CreateUserRequest>`
+  - **ListUsers**
+    - changes of request param
+      - `+ active_type`
+    - changes of response param
+      - `+ users.user_phone`
+      - `+ users.active_type`
+      - `+ users.is_pre_user`
+  - **UpdateUserInfo**
+    - changes of request param
+      - `+ user_phone`
+      - `+ active_type`
+  - **ListUserDetail**
+    - changes of response param
+      - `+ user_detail.user_phone`
+      - `+ user_detail.active_type`
+      - `+ user_detail.is_pre_user`
+  - **ShowAssistAuthConfig**
+    - changes of response param
+      - `+ otp_config_info.apply_rule`
+  - **UpdateAssistAuthMethodConfig**
+    - changes of request param
+      - `+ otp_config_info.apply_rule`
+  - **ShowDesktopDetail**
+    - changes of response param
+      - `+ desktop.internet_mode`
+      - `+ desktop.is_attaching_eip`
+      - `+ desktop.security_groups.name`
+      - `* desktop.security_groups: list<SecurityGroupInfo> -> list<SecurityGroup>`
+  - **ListDesktopsDetail**
+    - changes of request param
+      - `+ pool_id`
+    - changes of response param
+      - `+ desktops.internet_mode`
+      - `+ desktops.is_attaching_eip`
+      - `+ desktops.security_groups.name`
+      - `* desktops.security_groups: list<SecurityGroupInfo> -> list<SecurityGroup>`
+
 # 3.1.45 2023-06-21
 
 ### HuaweiCloud SDK DataArtsStudio

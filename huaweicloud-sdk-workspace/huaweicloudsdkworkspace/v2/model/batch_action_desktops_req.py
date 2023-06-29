@@ -35,7 +35,7 @@ class BatchActionDesktopsReq:
 
         :param desktop_ids: 操作的桌面ID列表。
         :type desktop_ids: list[str]
-        :param op_type: 操作类型。 -os-start 启动。 -reboot 重启。 -os-stop 关机。
+        :param op_type: 操作类型。 -os-start 启动。 -reboot 重启。 -os-stop 关机。 -os-hibernate 休眠。
         :type op_type: str
         :param type: SOFT：普通操作；HARD：强制操作。例如type为HARD，op_type为os-stop代表强制关机。
         :type type: str
@@ -79,7 +79,7 @@ class BatchActionDesktopsReq:
     def op_type(self):
         """Gets the op_type of this BatchActionDesktopsReq.
 
-        操作类型。 -os-start 启动。 -reboot 重启。 -os-stop 关机。
+        操作类型。 -os-start 启动。 -reboot 重启。 -os-stop 关机。 -os-hibernate 休眠。
 
         :return: The op_type of this BatchActionDesktopsReq.
         :rtype: str
@@ -90,7 +90,7 @@ class BatchActionDesktopsReq:
     def op_type(self, op_type):
         """Sets the op_type of this BatchActionDesktopsReq.
 
-        操作类型。 -os-start 启动。 -reboot 重启。 -os-stop 关机。
+        操作类型。 -os-start 启动。 -reboot 重启。 -os-stop 关机。 -os-hibernate 休眠。
 
         :param op_type: The op_type of this BatchActionDesktopsReq.
         :type op_type: str

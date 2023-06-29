@@ -33,19 +33,19 @@ class ProductInfoBean:
     }
 
     attribute_map = {
-        'all_resource_names': 'allResourceNames',
-        'cloud_service_type': 'cloudServiceType',
-        'display_id': 'displayId',
-        'product_id': 'productId',
-        'product_spec_desc': 'productSpecDesc',
-        'resource_name': 'resourceName',
-        'resource_size': 'resourceSize',
-        'resource_size_measure_id': 'resourceSizeMeasureId',
-        'resource_spec_code': 'resourceSpecCode',
-        'resource_type': 'resourceType',
-        'usage_factor': 'usageFactor',
-        'usage_measure_id': 'usageMeasureId',
-        'usage_value': 'usageValue'
+        'all_resource_names': 'all_resource_names',
+        'cloud_service_type': 'cloud_service_type',
+        'display_id': 'display_id',
+        'product_id': 'product_id',
+        'product_spec_desc': 'product_spec_desc',
+        'resource_name': 'resource_name',
+        'resource_size': 'resource_size',
+        'resource_size_measure_id': 'resource_size_measure_id',
+        'resource_spec_code': 'resource_spec_code',
+        'resource_type': 'resource_type',
+        'usage_factor': 'usage_factor',
+        'usage_measure_id': 'usage_measure_id',
+        'usage_value': 'usage_value'
     }
 
     def __init__(self, all_resource_names=None, cloud_service_type=None, display_id=None, product_id=None, product_spec_desc=None, resource_name=None, resource_size=None, resource_size_measure_id=None, resource_spec_code=None, resource_type=None, usage_factor=None, usage_measure_id=None, usage_value=None):
@@ -100,24 +100,18 @@ class ProductInfoBean:
 
         if all_resource_names is not None:
             self.all_resource_names = all_resource_names
-        if cloud_service_type is not None:
-            self.cloud_service_type = cloud_service_type
+        self.cloud_service_type = cloud_service_type
         if display_id is not None:
             self.display_id = display_id
-        if product_id is not None:
-            self.product_id = product_id
+        self.product_id = product_id
         if product_spec_desc is not None:
             self.product_spec_desc = product_spec_desc
         if resource_name is not None:
             self.resource_name = resource_name
-        if resource_size is not None:
-            self.resource_size = resource_size
-        if resource_size_measure_id is not None:
-            self.resource_size_measure_id = resource_size_measure_id
-        if resource_spec_code is not None:
-            self.resource_spec_code = resource_spec_code
-        if resource_type is not None:
-            self.resource_type = resource_type
+        self.resource_size = resource_size
+        self.resource_size_measure_id = resource_size_measure_id
+        self.resource_spec_code = resource_spec_code
+        self.resource_type = resource_type
         if usage_factor is not None:
             self.usage_factor = usage_factor
         if usage_measure_id is not None:

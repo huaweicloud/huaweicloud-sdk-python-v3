@@ -18,36 +18,86 @@ class ModifyApplicationConfigurationResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'configuration': 'list[ApplicationConfigConfiguration1]'
+        'application_id': 'str',
+        'environment_id': 'str',
+        'configuration': 'ApplicationConfigConfiguration'
     }
 
     attribute_map = {
+        'application_id': 'application_id',
+        'environment_id': 'environment_id',
         'configuration': 'configuration'
     }
 
-    def __init__(self, configuration=None):
+    def __init__(self, application_id=None, environment_id=None, configuration=None):
         """ModifyApplicationConfigurationResponse
 
         The model defined in huaweicloud sdk
 
+        :param application_id: 
+        :type application_id: str
+        :param environment_id: 
+        :type environment_id: str
         :param configuration: 
-        :type configuration: list[:class:`huaweicloudsdkservicestage.v3.ApplicationConfigConfiguration1`]
+        :type configuration: :class:`huaweicloudsdkservicestage.v3.ApplicationConfigConfiguration`
         """
         
         super(ModifyApplicationConfigurationResponse, self).__init__()
 
+        self._application_id = None
+        self._environment_id = None
         self._configuration = None
         self.discriminator = None
 
+        if application_id is not None:
+            self.application_id = application_id
+        if environment_id is not None:
+            self.environment_id = environment_id
         if configuration is not None:
             self.configuration = configuration
+
+    @property
+    def application_id(self):
+        """Gets the application_id of this ModifyApplicationConfigurationResponse.
+
+        :return: The application_id of this ModifyApplicationConfigurationResponse.
+        :rtype: str
+        """
+        return self._application_id
+
+    @application_id.setter
+    def application_id(self, application_id):
+        """Sets the application_id of this ModifyApplicationConfigurationResponse.
+
+        :param application_id: The application_id of this ModifyApplicationConfigurationResponse.
+        :type application_id: str
+        """
+        self._application_id = application_id
+
+    @property
+    def environment_id(self):
+        """Gets the environment_id of this ModifyApplicationConfigurationResponse.
+
+        :return: The environment_id of this ModifyApplicationConfigurationResponse.
+        :rtype: str
+        """
+        return self._environment_id
+
+    @environment_id.setter
+    def environment_id(self, environment_id):
+        """Sets the environment_id of this ModifyApplicationConfigurationResponse.
+
+        :param environment_id: The environment_id of this ModifyApplicationConfigurationResponse.
+        :type environment_id: str
+        """
+        self._environment_id = environment_id
 
     @property
     def configuration(self):
         """Gets the configuration of this ModifyApplicationConfigurationResponse.
 
         :return: The configuration of this ModifyApplicationConfigurationResponse.
-        :rtype: list[:class:`huaweicloudsdkservicestage.v3.ApplicationConfigConfiguration1`]
+        :rtype: :class:`huaweicloudsdkservicestage.v3.ApplicationConfigConfiguration`
         """
         return self._configuration
 
@@ -56,7 +106,7 @@ class ModifyApplicationConfigurationResponse(SdkResponse):
         """Sets the configuration of this ModifyApplicationConfigurationResponse.
 
         :param configuration: The configuration of this ModifyApplicationConfigurationResponse.
-        :type configuration: list[:class:`huaweicloudsdkservicestage.v3.ApplicationConfigConfiguration1`]
+        :type configuration: :class:`huaweicloudsdkservicestage.v3.ApplicationConfigConfiguration`
         """
         self._configuration = configuration
 

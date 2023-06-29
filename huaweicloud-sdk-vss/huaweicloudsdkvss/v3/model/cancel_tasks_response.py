@@ -42,7 +42,7 @@ class CancelTasksResponse(SdkResponse):
         :type info_description: str
         :param task_id: 任务ID
         :type task_id: str
-        :param task_status: 任务状态:   * running - 正在运行   * success - 成功   * canceled - 已取消   * waiting - 正在等待   * failure - 失败 
+        :param task_status: 任务状态:   * running - 正在运行   * success - 成功   * canceled - 已取消   * waiting - 正在等待   * ready - 已就绪，排队中   * failure - 失败 
         :type task_status: str
         """
         
@@ -133,7 +133,7 @@ class CancelTasksResponse(SdkResponse):
     def task_status(self):
         """Gets the task_status of this CancelTasksResponse.
 
-        任务状态:   * running - 正在运行   * success - 成功   * canceled - 已取消   * waiting - 正在等待   * failure - 失败 
+        任务状态:   * running - 正在运行   * success - 成功   * canceled - 已取消   * waiting - 正在等待   * ready - 已就绪，排队中   * failure - 失败 
 
         :return: The task_status of this CancelTasksResponse.
         :rtype: str
@@ -144,7 +144,7 @@ class CancelTasksResponse(SdkResponse):
     def task_status(self, task_status):
         """Sets the task_status of this CancelTasksResponse.
 
-        任务状态:   * running - 正在运行   * success - 成功   * canceled - 已取消   * waiting - 正在等待   * failure - 失败 
+        任务状态:   * running - 正在运行   * success - 成功   * canceled - 已取消   * waiting - 正在等待   * ready - 已就绪，排队中   * failure - 失败 
 
         :param task_status: The task_status of this CancelTasksResponse.
         :type task_status: str

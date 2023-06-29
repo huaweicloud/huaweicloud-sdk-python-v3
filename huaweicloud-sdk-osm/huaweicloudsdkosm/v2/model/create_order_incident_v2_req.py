@@ -63,13 +63,13 @@ class CreateOrderIncidentV2Req:
 
         The model defined in huaweicloud sdk
 
-        :param incident_sub_type_id: 工单子类
+        :param incident_sub_type_id: 工单子类，通过\&quot;查询工单类目列表\&quot;接口获取
         :type incident_sub_type_id: str
-        :param product_category_id: 工单产品类型
+        :param product_category_id: 工单产品类型，通过\&quot;查询工单类目列表\&quot;接口获取
         :type product_category_id: str
-        :param business_type_id: 工单问题类型
+        :param business_type_id: 工单问题类型，通过\&quot;查询问题类型列表\&quot;接口获取
         :type business_type_id: str
-        :param region_id: 区域ID
+        :param region_id: 区域ID，根据business_type_id对应工单类型是5则必填，通过\&quot;查询问题类型列表\&quot;查看
         :type region_id: str
         :param simple_description: 问题描述
         :type simple_description: str
@@ -87,15 +87,15 @@ class CreateOrderIncidentV2Req:
         :type remind_time: str
         :param project_id: 项目id
         :type project_id: str
-        :param accessory_ids: 附件id列表
+        :param accessory_ids: 附件id列表，\&quot;上传附件\&quot;接口返回的id
         :type accessory_ids: list[str]
         :param extends_map: 附加参数
         :type extends_map: dict(str, object)
         :param extension_map: 扩展参数
         :type extension_map: dict(str, object)
-        :param severity_id: 严重性id
+        :param severity_id: 严重性id，通过\&quot;查询问题严重性列表\&quot;接口获取
         :type severity_id: str
-        :param verify_code: 验证码
+        :param verify_code: 验证码，如果是非注册联系方式，需要通过\&quot;获取验证码\&quot;获取验证码
         :type verify_code: str
         :param area_code: 国家码
         :type area_code: str
@@ -161,7 +161,7 @@ class CreateOrderIncidentV2Req:
     def incident_sub_type_id(self):
         """Gets the incident_sub_type_id of this CreateOrderIncidentV2Req.
 
-        工单子类
+        工单子类，通过\"查询工单类目列表\"接口获取
 
         :return: The incident_sub_type_id of this CreateOrderIncidentV2Req.
         :rtype: str
@@ -172,7 +172,7 @@ class CreateOrderIncidentV2Req:
     def incident_sub_type_id(self, incident_sub_type_id):
         """Sets the incident_sub_type_id of this CreateOrderIncidentV2Req.
 
-        工单子类
+        工单子类，通过\"查询工单类目列表\"接口获取
 
         :param incident_sub_type_id: The incident_sub_type_id of this CreateOrderIncidentV2Req.
         :type incident_sub_type_id: str
@@ -183,7 +183,7 @@ class CreateOrderIncidentV2Req:
     def product_category_id(self):
         """Gets the product_category_id of this CreateOrderIncidentV2Req.
 
-        工单产品类型
+        工单产品类型，通过\"查询工单类目列表\"接口获取
 
         :return: The product_category_id of this CreateOrderIncidentV2Req.
         :rtype: str
@@ -194,7 +194,7 @@ class CreateOrderIncidentV2Req:
     def product_category_id(self, product_category_id):
         """Sets the product_category_id of this CreateOrderIncidentV2Req.
 
-        工单产品类型
+        工单产品类型，通过\"查询工单类目列表\"接口获取
 
         :param product_category_id: The product_category_id of this CreateOrderIncidentV2Req.
         :type product_category_id: str
@@ -205,7 +205,7 @@ class CreateOrderIncidentV2Req:
     def business_type_id(self):
         """Gets the business_type_id of this CreateOrderIncidentV2Req.
 
-        工单问题类型
+        工单问题类型，通过\"查询问题类型列表\"接口获取
 
         :return: The business_type_id of this CreateOrderIncidentV2Req.
         :rtype: str
@@ -216,7 +216,7 @@ class CreateOrderIncidentV2Req:
     def business_type_id(self, business_type_id):
         """Sets the business_type_id of this CreateOrderIncidentV2Req.
 
-        工单问题类型
+        工单问题类型，通过\"查询问题类型列表\"接口获取
 
         :param business_type_id: The business_type_id of this CreateOrderIncidentV2Req.
         :type business_type_id: str
@@ -227,7 +227,7 @@ class CreateOrderIncidentV2Req:
     def region_id(self):
         """Gets the region_id of this CreateOrderIncidentV2Req.
 
-        区域ID
+        区域ID，根据business_type_id对应工单类型是5则必填，通过\"查询问题类型列表\"查看
 
         :return: The region_id of this CreateOrderIncidentV2Req.
         :rtype: str
@@ -238,7 +238,7 @@ class CreateOrderIncidentV2Req:
     def region_id(self, region_id):
         """Sets the region_id of this CreateOrderIncidentV2Req.
 
-        区域ID
+        区域ID，根据business_type_id对应工单类型是5则必填，通过\"查询问题类型列表\"查看
 
         :param region_id: The region_id of this CreateOrderIncidentV2Req.
         :type region_id: str
@@ -425,7 +425,7 @@ class CreateOrderIncidentV2Req:
     def accessory_ids(self):
         """Gets the accessory_ids of this CreateOrderIncidentV2Req.
 
-        附件id列表
+        附件id列表，\"上传附件\"接口返回的id
 
         :return: The accessory_ids of this CreateOrderIncidentV2Req.
         :rtype: list[str]
@@ -436,7 +436,7 @@ class CreateOrderIncidentV2Req:
     def accessory_ids(self, accessory_ids):
         """Sets the accessory_ids of this CreateOrderIncidentV2Req.
 
-        附件id列表
+        附件id列表，\"上传附件\"接口返回的id
 
         :param accessory_ids: The accessory_ids of this CreateOrderIncidentV2Req.
         :type accessory_ids: list[str]
@@ -491,7 +491,7 @@ class CreateOrderIncidentV2Req:
     def severity_id(self):
         """Gets the severity_id of this CreateOrderIncidentV2Req.
 
-        严重性id
+        严重性id，通过\"查询问题严重性列表\"接口获取
 
         :return: The severity_id of this CreateOrderIncidentV2Req.
         :rtype: str
@@ -502,7 +502,7 @@ class CreateOrderIncidentV2Req:
     def severity_id(self, severity_id):
         """Sets the severity_id of this CreateOrderIncidentV2Req.
 
-        严重性id
+        严重性id，通过\"查询问题严重性列表\"接口获取
 
         :param severity_id: The severity_id of this CreateOrderIncidentV2Req.
         :type severity_id: str
@@ -513,7 +513,7 @@ class CreateOrderIncidentV2Req:
     def verify_code(self):
         """Gets the verify_code of this CreateOrderIncidentV2Req.
 
-        验证码
+        验证码，如果是非注册联系方式，需要通过\"获取验证码\"获取验证码
 
         :return: The verify_code of this CreateOrderIncidentV2Req.
         :rtype: str
@@ -524,7 +524,7 @@ class CreateOrderIncidentV2Req:
     def verify_code(self, verify_code):
         """Sets the verify_code of this CreateOrderIncidentV2Req.
 
-        验证码
+        验证码，如果是非注册联系方式，需要通过\"获取验证码\"获取验证码
 
         :param verify_code: The verify_code of this CreateOrderIncidentV2Req.
         :type verify_code: str

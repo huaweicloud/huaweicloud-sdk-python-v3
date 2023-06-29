@@ -1,0 +1,463 @@
+# coding: utf-8
+
+import six
+
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
+
+
+class ProductInfo:
+
+    """
+    Attributes:
+      openapi_types (dict): The key is attribute name
+                            and the value is attribute type.
+      attribute_map (dict): The key is attribute name
+                            and the value is json key in definition.
+    """
+    sensitive_list = []
+
+    openapi_types = {
+        'all_resource_names': 'list[str]',
+        'cloud_service_type': 'str',
+        'display_id': 'str',
+        'product_id': 'str',
+        'product_spec_desc': 'str',
+        'resource_name': 'str',
+        'resource_size': 'int',
+        'resource_size_measure_id': 'int',
+        'resource_spec_code': 'str',
+        'resource_type': 'str',
+        'usage_factor': 'str',
+        'usage_measure_id': 'int',
+        'usage_value': 'float'
+    }
+
+    attribute_map = {
+        'all_resource_names': 'allResourceNames',
+        'cloud_service_type': 'cloudServiceType',
+        'display_id': 'displayId',
+        'product_id': 'productId',
+        'product_spec_desc': 'productSpecDesc',
+        'resource_name': 'resourceName',
+        'resource_size': 'resourceSize',
+        'resource_size_measure_id': 'resourceSizeMeasureId',
+        'resource_spec_code': 'resourceSpecCode',
+        'resource_type': 'resourceType',
+        'usage_factor': 'usageFactor',
+        'usage_measure_id': 'usageMeasureId',
+        'usage_value': 'usageValue'
+    }
+
+    def __init__(self, all_resource_names=None, cloud_service_type=None, display_id=None, product_id=None, product_spec_desc=None, resource_name=None, resource_size=None, resource_size_measure_id=None, resource_spec_code=None, resource_type=None, usage_factor=None, usage_measure_id=None, usage_value=None):
+        """ProductInfo
+
+        The model defined in huaweicloud sdk
+
+        :param all_resource_names: 资源名称列表
+        :type all_resource_names: list[str]
+        :param cloud_service_type: 云服务类型
+        :type cloud_service_type: str
+        :param display_id: 展示ID
+        :type display_id: str
+        :param product_id: 产品ID
+        :type product_id: str
+        :param product_spec_desc: 产品规格描述
+        :type product_spec_desc: str
+        :param resource_name: 资源名称
+        :type resource_name: str
+        :param resource_size: 产品支持的数据库数量，或者支持obs的扫描量
+        :type resource_size: int
+        :param resource_size_measure_id: 资源容量度量标识，枚举值举例如下：15：mbps（购买带宽时使用），17：gb（购买云硬盘时使用），14：个/次
+        :type resource_size_measure_id: int
+        :param resource_spec_code: 产品编码
+        :type resource_spec_code: str
+        :param resource_type: 资源类型
+        :type resource_type: str
+        :param usage_factor: 已使用系数
+        :type usage_factor: str
+        :param usage_measure_id: 已使用容量度量标识
+        :type usage_measure_id: int
+        :param usage_value: 已使用值
+        :type usage_value: float
+        """
+        
+        
+
+        self._all_resource_names = None
+        self._cloud_service_type = None
+        self._display_id = None
+        self._product_id = None
+        self._product_spec_desc = None
+        self._resource_name = None
+        self._resource_size = None
+        self._resource_size_measure_id = None
+        self._resource_spec_code = None
+        self._resource_type = None
+        self._usage_factor = None
+        self._usage_measure_id = None
+        self._usage_value = None
+        self.discriminator = None
+
+        if all_resource_names is not None:
+            self.all_resource_names = all_resource_names
+        if cloud_service_type is not None:
+            self.cloud_service_type = cloud_service_type
+        if display_id is not None:
+            self.display_id = display_id
+        if product_id is not None:
+            self.product_id = product_id
+        if product_spec_desc is not None:
+            self.product_spec_desc = product_spec_desc
+        if resource_name is not None:
+            self.resource_name = resource_name
+        if resource_size is not None:
+            self.resource_size = resource_size
+        if resource_size_measure_id is not None:
+            self.resource_size_measure_id = resource_size_measure_id
+        if resource_spec_code is not None:
+            self.resource_spec_code = resource_spec_code
+        if resource_type is not None:
+            self.resource_type = resource_type
+        if usage_factor is not None:
+            self.usage_factor = usage_factor
+        if usage_measure_id is not None:
+            self.usage_measure_id = usage_measure_id
+        if usage_value is not None:
+            self.usage_value = usage_value
+
+    @property
+    def all_resource_names(self):
+        """Gets the all_resource_names of this ProductInfo.
+
+        资源名称列表
+
+        :return: The all_resource_names of this ProductInfo.
+        :rtype: list[str]
+        """
+        return self._all_resource_names
+
+    @all_resource_names.setter
+    def all_resource_names(self, all_resource_names):
+        """Sets the all_resource_names of this ProductInfo.
+
+        资源名称列表
+
+        :param all_resource_names: The all_resource_names of this ProductInfo.
+        :type all_resource_names: list[str]
+        """
+        self._all_resource_names = all_resource_names
+
+    @property
+    def cloud_service_type(self):
+        """Gets the cloud_service_type of this ProductInfo.
+
+        云服务类型
+
+        :return: The cloud_service_type of this ProductInfo.
+        :rtype: str
+        """
+        return self._cloud_service_type
+
+    @cloud_service_type.setter
+    def cloud_service_type(self, cloud_service_type):
+        """Sets the cloud_service_type of this ProductInfo.
+
+        云服务类型
+
+        :param cloud_service_type: The cloud_service_type of this ProductInfo.
+        :type cloud_service_type: str
+        """
+        self._cloud_service_type = cloud_service_type
+
+    @property
+    def display_id(self):
+        """Gets the display_id of this ProductInfo.
+
+        展示ID
+
+        :return: The display_id of this ProductInfo.
+        :rtype: str
+        """
+        return self._display_id
+
+    @display_id.setter
+    def display_id(self, display_id):
+        """Sets the display_id of this ProductInfo.
+
+        展示ID
+
+        :param display_id: The display_id of this ProductInfo.
+        :type display_id: str
+        """
+        self._display_id = display_id
+
+    @property
+    def product_id(self):
+        """Gets the product_id of this ProductInfo.
+
+        产品ID
+
+        :return: The product_id of this ProductInfo.
+        :rtype: str
+        """
+        return self._product_id
+
+    @product_id.setter
+    def product_id(self, product_id):
+        """Sets the product_id of this ProductInfo.
+
+        产品ID
+
+        :param product_id: The product_id of this ProductInfo.
+        :type product_id: str
+        """
+        self._product_id = product_id
+
+    @property
+    def product_spec_desc(self):
+        """Gets the product_spec_desc of this ProductInfo.
+
+        产品规格描述
+
+        :return: The product_spec_desc of this ProductInfo.
+        :rtype: str
+        """
+        return self._product_spec_desc
+
+    @product_spec_desc.setter
+    def product_spec_desc(self, product_spec_desc):
+        """Sets the product_spec_desc of this ProductInfo.
+
+        产品规格描述
+
+        :param product_spec_desc: The product_spec_desc of this ProductInfo.
+        :type product_spec_desc: str
+        """
+        self._product_spec_desc = product_spec_desc
+
+    @property
+    def resource_name(self):
+        """Gets the resource_name of this ProductInfo.
+
+        资源名称
+
+        :return: The resource_name of this ProductInfo.
+        :rtype: str
+        """
+        return self._resource_name
+
+    @resource_name.setter
+    def resource_name(self, resource_name):
+        """Sets the resource_name of this ProductInfo.
+
+        资源名称
+
+        :param resource_name: The resource_name of this ProductInfo.
+        :type resource_name: str
+        """
+        self._resource_name = resource_name
+
+    @property
+    def resource_size(self):
+        """Gets the resource_size of this ProductInfo.
+
+        产品支持的数据库数量，或者支持obs的扫描量
+
+        :return: The resource_size of this ProductInfo.
+        :rtype: int
+        """
+        return self._resource_size
+
+    @resource_size.setter
+    def resource_size(self, resource_size):
+        """Sets the resource_size of this ProductInfo.
+
+        产品支持的数据库数量，或者支持obs的扫描量
+
+        :param resource_size: The resource_size of this ProductInfo.
+        :type resource_size: int
+        """
+        self._resource_size = resource_size
+
+    @property
+    def resource_size_measure_id(self):
+        """Gets the resource_size_measure_id of this ProductInfo.
+
+        资源容量度量标识，枚举值举例如下：15：mbps（购买带宽时使用），17：gb（购买云硬盘时使用），14：个/次
+
+        :return: The resource_size_measure_id of this ProductInfo.
+        :rtype: int
+        """
+        return self._resource_size_measure_id
+
+    @resource_size_measure_id.setter
+    def resource_size_measure_id(self, resource_size_measure_id):
+        """Sets the resource_size_measure_id of this ProductInfo.
+
+        资源容量度量标识，枚举值举例如下：15：mbps（购买带宽时使用），17：gb（购买云硬盘时使用），14：个/次
+
+        :param resource_size_measure_id: The resource_size_measure_id of this ProductInfo.
+        :type resource_size_measure_id: int
+        """
+        self._resource_size_measure_id = resource_size_measure_id
+
+    @property
+    def resource_spec_code(self):
+        """Gets the resource_spec_code of this ProductInfo.
+
+        产品编码
+
+        :return: The resource_spec_code of this ProductInfo.
+        :rtype: str
+        """
+        return self._resource_spec_code
+
+    @resource_spec_code.setter
+    def resource_spec_code(self, resource_spec_code):
+        """Sets the resource_spec_code of this ProductInfo.
+
+        产品编码
+
+        :param resource_spec_code: The resource_spec_code of this ProductInfo.
+        :type resource_spec_code: str
+        """
+        self._resource_spec_code = resource_spec_code
+
+    @property
+    def resource_type(self):
+        """Gets the resource_type of this ProductInfo.
+
+        资源类型
+
+        :return: The resource_type of this ProductInfo.
+        :rtype: str
+        """
+        return self._resource_type
+
+    @resource_type.setter
+    def resource_type(self, resource_type):
+        """Sets the resource_type of this ProductInfo.
+
+        资源类型
+
+        :param resource_type: The resource_type of this ProductInfo.
+        :type resource_type: str
+        """
+        self._resource_type = resource_type
+
+    @property
+    def usage_factor(self):
+        """Gets the usage_factor of this ProductInfo.
+
+        已使用系数
+
+        :return: The usage_factor of this ProductInfo.
+        :rtype: str
+        """
+        return self._usage_factor
+
+    @usage_factor.setter
+    def usage_factor(self, usage_factor):
+        """Sets the usage_factor of this ProductInfo.
+
+        已使用系数
+
+        :param usage_factor: The usage_factor of this ProductInfo.
+        :type usage_factor: str
+        """
+        self._usage_factor = usage_factor
+
+    @property
+    def usage_measure_id(self):
+        """Gets the usage_measure_id of this ProductInfo.
+
+        已使用容量度量标识
+
+        :return: The usage_measure_id of this ProductInfo.
+        :rtype: int
+        """
+        return self._usage_measure_id
+
+    @usage_measure_id.setter
+    def usage_measure_id(self, usage_measure_id):
+        """Sets the usage_measure_id of this ProductInfo.
+
+        已使用容量度量标识
+
+        :param usage_measure_id: The usage_measure_id of this ProductInfo.
+        :type usage_measure_id: int
+        """
+        self._usage_measure_id = usage_measure_id
+
+    @property
+    def usage_value(self):
+        """Gets the usage_value of this ProductInfo.
+
+        已使用值
+
+        :return: The usage_value of this ProductInfo.
+        :rtype: float
+        """
+        return self._usage_value
+
+    @usage_value.setter
+    def usage_value(self, usage_value):
+        """Sets the usage_value of this ProductInfo.
+
+        已使用值
+
+        :param usage_value: The usage_value of this ProductInfo.
+        :type usage_value: float
+        """
+        self._usage_value = usage_value
+
+    def to_dict(self):
+        """Returns the model properties as a dict"""
+        result = {}
+
+        for attr, _ in six.iteritems(self.openapi_types):
+            value = getattr(self, attr)
+            if isinstance(value, list):
+                result[attr] = list(map(
+                    lambda x: x.to_dict() if hasattr(x, "to_dict") else x,
+                    value
+                ))
+            elif hasattr(value, "to_dict"):
+                result[attr] = value.to_dict()
+            elif isinstance(value, dict):
+                result[attr] = dict(map(
+                    lambda item: (item[0], item[1].to_dict())
+                    if hasattr(item[1], "to_dict") else item,
+                    value.items()
+                ))
+            else:
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
+
+        return result
+
+    def to_str(self):
+        """Returns the string representation of the model"""
+        import simplejson as json
+        if six.PY2:
+            import sys
+            reload(sys)
+            sys.setdefaultencoding("utf-8")
+        return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
+
+    def __repr__(self):
+        """For `print`"""
+        return self.to_str()
+
+    def __eq__(self, other):
+        """Returns true if both objects are equal"""
+        if not isinstance(other, ProductInfo):
+            return False
+
+        return self.__dict__ == other.__dict__
+
+    def __ne__(self, other):
+        """Returns true if both objects are not equal"""
+        return not self == other

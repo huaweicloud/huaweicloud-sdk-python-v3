@@ -53,7 +53,7 @@ class SimpleProduct:
         :type memory: str
         :param descriptions: 产品描述。
         :type descriptions: str
-        :param charge_mode: 周期套餐标识，1表示包周期，0表示按需。
+        :param charge_mode: 周期套餐标识，0表示包周期，1表示按需。
         :type charge_mode: str
         """
         
@@ -219,7 +219,7 @@ class SimpleProduct:
     def charge_mode(self):
         """Gets the charge_mode of this SimpleProduct.
 
-        周期套餐标识，1表示包周期，0表示按需。
+        周期套餐标识，0表示包周期，1表示按需。
 
         :return: The charge_mode of this SimpleProduct.
         :rtype: str
@@ -230,7 +230,7 @@ class SimpleProduct:
     def charge_mode(self, charge_mode):
         """Sets the charge_mode of this SimpleProduct.
 
-        周期套餐标识，1表示包周期，0表示按需。
+        周期套餐标识，0表示包周期，1表示按需。
 
         :param charge_mode: The charge_mode of this SimpleProduct.
         :type charge_mode: str

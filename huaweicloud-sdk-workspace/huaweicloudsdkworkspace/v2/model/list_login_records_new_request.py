@@ -51,7 +51,7 @@ class ListLoginRecordsNewRequest:
         :type computer_name: str
         :param terminal_type: 登录桌面的终端系统类型，当前支持：WI（云桌面客户端）。
         :type terminal_type: str
-        :param limit: 用于分页查询，取值范围0-255，默认值20。
+        :param limit: 用于分页查询，取值范围0-100，默认值20。
         :type limit: str
         :param offset: 用于分页查询，查询的起始记录序号，从0开始。
         :type offset: str
@@ -197,7 +197,7 @@ class ListLoginRecordsNewRequest:
     def limit(self):
         """Gets the limit of this ListLoginRecordsNewRequest.
 
-        用于分页查询，取值范围0-255，默认值20。
+        用于分页查询，取值范围0-100，默认值20。
 
         :return: The limit of this ListLoginRecordsNewRequest.
         :rtype: str
@@ -208,7 +208,7 @@ class ListLoginRecordsNewRequest:
     def limit(self, limit):
         """Sets the limit of this ListLoginRecordsNewRequest.
 
-        用于分页查询，取值范围0-255，默认值20。
+        用于分页查询，取值范围0-100，默认值20。
 
         :param limit: The limit of this ListLoginRecordsNewRequest.
         :type limit: str

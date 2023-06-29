@@ -29,7 +29,7 @@ class DelOtpDevicesReq:
 
         The model defined in huaweicloud sdk
 
-        :param otp_ids: 待解绑的otp配置id数组
+        :param otp_ids: 待解绑的otp配置id数组。
         :type otp_ids: list[str]
         """
         
@@ -45,7 +45,7 @@ class DelOtpDevicesReq:
     def otp_ids(self):
         """Gets the otp_ids of this DelOtpDevicesReq.
 
-        待解绑的otp配置id数组
+        待解绑的otp配置id数组。
 
         :return: The otp_ids of this DelOtpDevicesReq.
         :rtype: list[str]
@@ -56,7 +56,7 @@ class DelOtpDevicesReq:
     def otp_ids(self, otp_ids):
         """Sets the otp_ids of this DelOtpDevicesReq.
 
-        待解绑的otp配置id数组
+        待解绑的otp配置id数组。
 
         :param otp_ids: The otp_ids of this DelOtpDevicesReq.
         :type otp_ids: list[str]

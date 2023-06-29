@@ -17,28 +17,35 @@ class BatchAddPermissionRequest:
     sensitive_list = []
 
     openapi_types = {
-        'permissions': 'list[EpsAddPermissionRequest]'
+        'permissions': 'list[EpsAddPermissionRequest]',
+        'permission_type': 'str'
     }
 
     attribute_map = {
-        'permissions': 'permissions'
+        'permissions': 'permissions',
+        'permission_type': 'permission_type'
     }
 
-    def __init__(self, permissions=None):
+    def __init__(self, permissions=None, permission_type=None):
         """BatchAddPermissionRequest
 
         The model defined in huaweicloud sdk
 
         :param permissions: 终端节点服务白名单列表
         :type permissions: list[:class:`huaweicloudsdkvpcep.v1.EpsAddPermissionRequest`]
+        :param permission_type: 终端节点服务白名单类型。 ● domainId：基于账户ID配置终端节点服务白名单。 ● orgPath：基于账户所在组织路径配置终端节点服务白名单。
+        :type permission_type: str
         """
         
         
 
         self._permissions = None
+        self._permission_type = None
         self.discriminator = None
 
         self.permissions = permissions
+        if permission_type is not None:
+            self.permission_type = permission_type
 
     @property
     def permissions(self):
@@ -61,6 +68,28 @@ class BatchAddPermissionRequest:
         :type permissions: list[:class:`huaweicloudsdkvpcep.v1.EpsAddPermissionRequest`]
         """
         self._permissions = permissions
+
+    @property
+    def permission_type(self):
+        """Gets the permission_type of this BatchAddPermissionRequest.
+
+        终端节点服务白名单类型。 ● domainId：基于账户ID配置终端节点服务白名单。 ● orgPath：基于账户所在组织路径配置终端节点服务白名单。
+
+        :return: The permission_type of this BatchAddPermissionRequest.
+        :rtype: str
+        """
+        return self._permission_type
+
+    @permission_type.setter
+    def permission_type(self, permission_type):
+        """Sets the permission_type of this BatchAddPermissionRequest.
+
+        终端节点服务白名单类型。 ● domainId：基于账户ID配置终端节点服务白名单。 ● orgPath：基于账户所在组织路径配置终端节点服务白名单。
+
+        :param permission_type: The permission_type of this BatchAddPermissionRequest.
+        :type permission_type: str
+        """
+        self._permission_type = permission_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

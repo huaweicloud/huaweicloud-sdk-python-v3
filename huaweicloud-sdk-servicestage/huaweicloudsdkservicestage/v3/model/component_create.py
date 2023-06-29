@@ -18,15 +18,12 @@ class ComponentCreate:
 
     openapi_types = {
         'name': 'str',
-        'workload_name': 'str',
         'description': 'str',
         'labels': 'list[Label]',
-        'pod_labels': 'list[Label]',
         'runtime_stack': 'RuntimeStack',
         'source': 'SourceObject',
         'build': 'Build',
         'environment_id': 'str',
-        'enterprise_project_id': 'str',
         'limit_cpu': 'float',
         'limit_memory': 'float',
         'request_cpu': 'float',
@@ -40,15 +37,9 @@ class ComponentCreate:
         'post_start': 'ComponentLifecycle',
         'pre_stop': 'ComponentLifecycle',
         'mesher': 'Mesher',
-        'enable_sermant_injection': 'bool',
         'timezone': 'str',
         'jvm_opts': 'str',
         'tomcat_opts': 'ComponentCreateTomcatOpts',
-        'host_aliases': 'list[HostAlias]',
-        'dns_policy': 'str',
-        'dns_config': 'DnsConfig',
-        'security_context': 'SecurityContext',
-        'workload_kind': 'str',
         'logs': 'list[ComponentLogs]',
         'custom_metric': 'ComponentModifyCustomMetric',
         'affinity': 'ComponentAffinity',
@@ -60,15 +51,12 @@ class ComponentCreate:
 
     attribute_map = {
         'name': 'name',
-        'workload_name': 'workload_name',
         'description': 'description',
         'labels': 'labels',
-        'pod_labels': 'pod_labels',
         'runtime_stack': 'runtime_stack',
         'source': 'source',
         'build': 'build',
         'environment_id': 'environment_id',
-        'enterprise_project_id': 'enterprise_project_id',
         'limit_cpu': 'limit_cpu',
         'limit_memory': 'limit_memory',
         'request_cpu': 'request_cpu',
@@ -82,15 +70,9 @@ class ComponentCreate:
         'post_start': 'post_start',
         'pre_stop': 'pre_stop',
         'mesher': 'mesher',
-        'enable_sermant_injection': 'enable_sermant_injection',
         'timezone': 'timezone',
         'jvm_opts': 'jvm_opts',
         'tomcat_opts': 'tomcat_opts',
-        'host_aliases': 'host_aliases',
-        'dns_policy': 'dns_policy',
-        'dns_config': 'dns_config',
-        'security_context': 'security_context',
-        'workload_kind': 'workload_kind',
         'logs': 'logs',
         'custom_metric': 'custom_metric',
         'affinity': 'affinity',
@@ -100,21 +82,17 @@ class ComponentCreate:
         'refer_resources': 'refer_resources'
     }
 
-    def __init__(self, name=None, workload_name=None, description=None, labels=None, pod_labels=None, runtime_stack=None, source=None, build=None, environment_id=None, enterprise_project_id=None, limit_cpu=None, limit_memory=None, request_cpu=None, request_memory=None, replica=None, version=None, envs=None, storages=None, deploy_strategy=None, command=None, post_start=None, pre_stop=None, mesher=None, enable_sermant_injection=None, timezone=None, jvm_opts=None, tomcat_opts=None, host_aliases=None, dns_policy=None, dns_config=None, security_context=None, workload_kind=None, logs=None, custom_metric=None, affinity=None, anti_affinity=None, liveness_probe=None, readiness_probe=None, refer_resources=None):
+    def __init__(self, name=None, description=None, labels=None, runtime_stack=None, source=None, build=None, environment_id=None, limit_cpu=None, limit_memory=None, request_cpu=None, request_memory=None, replica=None, version=None, envs=None, storages=None, deploy_strategy=None, command=None, post_start=None, pre_stop=None, mesher=None, timezone=None, jvm_opts=None, tomcat_opts=None, logs=None, custom_metric=None, affinity=None, anti_affinity=None, liveness_probe=None, readiness_probe=None, refer_resources=None):
         """ComponentCreate
 
         The model defined in huaweicloud sdk
 
         :param name: 
         :type name: str
-        :param workload_name: 
-        :type workload_name: str
         :param description: 
         :type description: str
         :param labels: 
         :type labels: list[:class:`huaweicloudsdkservicestage.v3.Label`]
-        :param pod_labels: 
-        :type pod_labels: list[:class:`huaweicloudsdkservicestage.v3.Label`]
         :param runtime_stack: 
         :type runtime_stack: :class:`huaweicloudsdkservicestage.v3.RuntimeStack`
         :param source: 
@@ -123,8 +101,6 @@ class ComponentCreate:
         :type build: :class:`huaweicloudsdkservicestage.v3.Build`
         :param environment_id: 
         :type environment_id: str
-        :param enterprise_project_id: 
-        :type enterprise_project_id: str
         :param limit_cpu: 单位为Core
         :type limit_cpu: float
         :param limit_memory: 单位为GiB
@@ -151,24 +127,12 @@ class ComponentCreate:
         :type pre_stop: :class:`huaweicloudsdkservicestage.v3.ComponentLifecycle`
         :param mesher: 
         :type mesher: :class:`huaweicloudsdkservicestage.v3.Mesher`
-        :param enable_sermant_injection: 
-        :type enable_sermant_injection: bool
         :param timezone: 指定组件运行的时区，比如Asia/Shanghai
         :type timezone: str
         :param jvm_opts: jvm参数
         :type jvm_opts: str
         :param tomcat_opts: 
         :type tomcat_opts: :class:`huaweicloudsdkservicestage.v3.ComponentCreateTomcatOpts`
-        :param host_aliases: 
-        :type host_aliases: list[:class:`huaweicloudsdkservicestage.v3.HostAlias`]
-        :param dns_policy: 
-        :type dns_policy: str
-        :param dns_config: 
-        :type dns_config: :class:`huaweicloudsdkservicestage.v3.DnsConfig`
-        :param security_context: 
-        :type security_context: :class:`huaweicloudsdkservicestage.v3.SecurityContext`
-        :param workload_kind: 
-        :type workload_kind: str
         :param logs: 
         :type logs: list[:class:`huaweicloudsdkservicestage.v3.ComponentLogs`]
         :param custom_metric: 
@@ -188,15 +152,12 @@ class ComponentCreate:
         
 
         self._name = None
-        self._workload_name = None
         self._description = None
         self._labels = None
-        self._pod_labels = None
         self._runtime_stack = None
         self._source = None
         self._build = None
         self._environment_id = None
-        self._enterprise_project_id = None
         self._limit_cpu = None
         self._limit_memory = None
         self._request_cpu = None
@@ -210,15 +171,9 @@ class ComponentCreate:
         self._post_start = None
         self._pre_stop = None
         self._mesher = None
-        self._enable_sermant_injection = None
         self._timezone = None
         self._jvm_opts = None
         self._tomcat_opts = None
-        self._host_aliases = None
-        self._dns_policy = None
-        self._dns_config = None
-        self._security_context = None
-        self._workload_kind = None
         self._logs = None
         self._custom_metric = None
         self._affinity = None
@@ -229,21 +184,15 @@ class ComponentCreate:
         self.discriminator = None
 
         self.name = name
-        if workload_name is not None:
-            self.workload_name = workload_name
         if description is not None:
             self.description = description
         if labels is not None:
             self.labels = labels
-        if pod_labels is not None:
-            self.pod_labels = pod_labels
         self.runtime_stack = runtime_stack
         self.source = source
         if build is not None:
             self.build = build
         self.environment_id = environment_id
-        if enterprise_project_id is not None:
-            self.enterprise_project_id = enterprise_project_id
         if limit_cpu is not None:
             self.limit_cpu = limit_cpu
         if limit_memory is not None:
@@ -270,24 +219,12 @@ class ComponentCreate:
             self.pre_stop = pre_stop
         if mesher is not None:
             self.mesher = mesher
-        if enable_sermant_injection is not None:
-            self.enable_sermant_injection = enable_sermant_injection
         if timezone is not None:
             self.timezone = timezone
         if jvm_opts is not None:
             self.jvm_opts = jvm_opts
         if tomcat_opts is not None:
             self.tomcat_opts = tomcat_opts
-        if host_aliases is not None:
-            self.host_aliases = host_aliases
-        if dns_policy is not None:
-            self.dns_policy = dns_policy
-        if dns_config is not None:
-            self.dns_config = dns_config
-        if security_context is not None:
-            self.security_context = security_context
-        if workload_kind is not None:
-            self.workload_kind = workload_kind
         if logs is not None:
             self.logs = logs
         if custom_metric is not None:
@@ -320,24 +257,6 @@ class ComponentCreate:
         :type name: str
         """
         self._name = name
-
-    @property
-    def workload_name(self):
-        """Gets the workload_name of this ComponentCreate.
-
-        :return: The workload_name of this ComponentCreate.
-        :rtype: str
-        """
-        return self._workload_name
-
-    @workload_name.setter
-    def workload_name(self, workload_name):
-        """Sets the workload_name of this ComponentCreate.
-
-        :param workload_name: The workload_name of this ComponentCreate.
-        :type workload_name: str
-        """
-        self._workload_name = workload_name
 
     @property
     def description(self):
@@ -374,24 +293,6 @@ class ComponentCreate:
         :type labels: list[:class:`huaweicloudsdkservicestage.v3.Label`]
         """
         self._labels = labels
-
-    @property
-    def pod_labels(self):
-        """Gets the pod_labels of this ComponentCreate.
-
-        :return: The pod_labels of this ComponentCreate.
-        :rtype: list[:class:`huaweicloudsdkservicestage.v3.Label`]
-        """
-        return self._pod_labels
-
-    @pod_labels.setter
-    def pod_labels(self, pod_labels):
-        """Sets the pod_labels of this ComponentCreate.
-
-        :param pod_labels: The pod_labels of this ComponentCreate.
-        :type pod_labels: list[:class:`huaweicloudsdkservicestage.v3.Label`]
-        """
-        self._pod_labels = pod_labels
 
     @property
     def runtime_stack(self):
@@ -464,24 +365,6 @@ class ComponentCreate:
         :type environment_id: str
         """
         self._environment_id = environment_id
-
-    @property
-    def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ComponentCreate.
-
-        :return: The enterprise_project_id of this ComponentCreate.
-        :rtype: str
-        """
-        return self._enterprise_project_id
-
-    @enterprise_project_id.setter
-    def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ComponentCreate.
-
-        :param enterprise_project_id: The enterprise_project_id of this ComponentCreate.
-        :type enterprise_project_id: str
-        """
-        self._enterprise_project_id = enterprise_project_id
 
     @property
     def limit_cpu(self):
@@ -734,24 +617,6 @@ class ComponentCreate:
         self._mesher = mesher
 
     @property
-    def enable_sermant_injection(self):
-        """Gets the enable_sermant_injection of this ComponentCreate.
-
-        :return: The enable_sermant_injection of this ComponentCreate.
-        :rtype: bool
-        """
-        return self._enable_sermant_injection
-
-    @enable_sermant_injection.setter
-    def enable_sermant_injection(self, enable_sermant_injection):
-        """Sets the enable_sermant_injection of this ComponentCreate.
-
-        :param enable_sermant_injection: The enable_sermant_injection of this ComponentCreate.
-        :type enable_sermant_injection: bool
-        """
-        self._enable_sermant_injection = enable_sermant_injection
-
-    @property
     def timezone(self):
         """Gets the timezone of this ComponentCreate.
 
@@ -812,96 +677,6 @@ class ComponentCreate:
         :type tomcat_opts: :class:`huaweicloudsdkservicestage.v3.ComponentCreateTomcatOpts`
         """
         self._tomcat_opts = tomcat_opts
-
-    @property
-    def host_aliases(self):
-        """Gets the host_aliases of this ComponentCreate.
-
-        :return: The host_aliases of this ComponentCreate.
-        :rtype: list[:class:`huaweicloudsdkservicestage.v3.HostAlias`]
-        """
-        return self._host_aliases
-
-    @host_aliases.setter
-    def host_aliases(self, host_aliases):
-        """Sets the host_aliases of this ComponentCreate.
-
-        :param host_aliases: The host_aliases of this ComponentCreate.
-        :type host_aliases: list[:class:`huaweicloudsdkservicestage.v3.HostAlias`]
-        """
-        self._host_aliases = host_aliases
-
-    @property
-    def dns_policy(self):
-        """Gets the dns_policy of this ComponentCreate.
-
-        :return: The dns_policy of this ComponentCreate.
-        :rtype: str
-        """
-        return self._dns_policy
-
-    @dns_policy.setter
-    def dns_policy(self, dns_policy):
-        """Sets the dns_policy of this ComponentCreate.
-
-        :param dns_policy: The dns_policy of this ComponentCreate.
-        :type dns_policy: str
-        """
-        self._dns_policy = dns_policy
-
-    @property
-    def dns_config(self):
-        """Gets the dns_config of this ComponentCreate.
-
-        :return: The dns_config of this ComponentCreate.
-        :rtype: :class:`huaweicloudsdkservicestage.v3.DnsConfig`
-        """
-        return self._dns_config
-
-    @dns_config.setter
-    def dns_config(self, dns_config):
-        """Sets the dns_config of this ComponentCreate.
-
-        :param dns_config: The dns_config of this ComponentCreate.
-        :type dns_config: :class:`huaweicloudsdkservicestage.v3.DnsConfig`
-        """
-        self._dns_config = dns_config
-
-    @property
-    def security_context(self):
-        """Gets the security_context of this ComponentCreate.
-
-        :return: The security_context of this ComponentCreate.
-        :rtype: :class:`huaweicloudsdkservicestage.v3.SecurityContext`
-        """
-        return self._security_context
-
-    @security_context.setter
-    def security_context(self, security_context):
-        """Sets the security_context of this ComponentCreate.
-
-        :param security_context: The security_context of this ComponentCreate.
-        :type security_context: :class:`huaweicloudsdkservicestage.v3.SecurityContext`
-        """
-        self._security_context = security_context
-
-    @property
-    def workload_kind(self):
-        """Gets the workload_kind of this ComponentCreate.
-
-        :return: The workload_kind of this ComponentCreate.
-        :rtype: str
-        """
-        return self._workload_kind
-
-    @workload_kind.setter
-    def workload_kind(self, workload_kind):
-        """Sets the workload_kind of this ComponentCreate.
-
-        :param workload_kind: The workload_kind of this ComponentCreate.
-        :type workload_kind: str
-        """
-        self._workload_kind = workload_kind
 
     @property
     def logs(self):

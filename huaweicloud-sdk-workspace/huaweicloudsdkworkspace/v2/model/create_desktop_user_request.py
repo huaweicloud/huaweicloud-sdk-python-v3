@@ -17,7 +17,7 @@ class CreateDesktopUserRequest:
     sensitive_list = []
 
     openapi_types = {
-        'body': 'CreateUserReq'
+        'body': 'CreateUserRequest'
     }
 
     attribute_map = {
@@ -30,7 +30,7 @@ class CreateDesktopUserRequest:
         The model defined in huaweicloud sdk
 
         :param body: Body of the CreateDesktopUserRequest
-        :type body: :class:`huaweicloudsdkworkspace.v2.CreateUserReq`
+        :type body: :class:`huaweicloudsdkworkspace.v2.CreateUserRequest`
         """
         
         
@@ -46,7 +46,7 @@ class CreateDesktopUserRequest:
         """Gets the body of this CreateDesktopUserRequest.
 
         :return: The body of this CreateDesktopUserRequest.
-        :rtype: :class:`huaweicloudsdkworkspace.v2.CreateUserReq`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.CreateUserRequest`
         """
         return self._body
 
@@ -55,7 +55,7 @@ class CreateDesktopUserRequest:
         """Sets the body of this CreateDesktopUserRequest.
 
         :param body: The body of this CreateDesktopUserRequest.
-        :type body: :class:`huaweicloudsdkworkspace.v2.CreateUserReq`
+        :type body: :class:`huaweicloudsdkworkspace.v2.CreateUserRequest`
         """
         self._body = body
 

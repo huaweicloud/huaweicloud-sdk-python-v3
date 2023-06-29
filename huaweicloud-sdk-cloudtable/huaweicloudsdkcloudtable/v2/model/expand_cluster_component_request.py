@@ -17,26 +17,22 @@ class ExpandClusterComponentRequest:
     sensitive_list = []
 
     openapi_types = {
-        'project_id': 'str',
         'cluster_id': 'str',
         'x_language': 'str',
         'body': 'GrowNodeReq'
     }
 
     attribute_map = {
-        'project_id': 'projectId',
-        'cluster_id': 'clusterId',
+        'cluster_id': 'cluster_id',
         'x_language': 'X-Language',
         'body': 'body'
     }
 
-    def __init__(self, project_id=None, cluster_id=None, x_language=None, body=None):
+    def __init__(self, cluster_id=None, x_language=None, body=None):
         """ExpandClusterComponentRequest
 
         The model defined in huaweicloud sdk
 
-        :param project_id: 租户ID
-        :type project_id: str
         :param cluster_id: 集群ID
         :type cluster_id: str
         :param x_language: 语言类型
@@ -47,39 +43,15 @@ class ExpandClusterComponentRequest:
         
         
 
-        self._project_id = None
         self._cluster_id = None
         self._x_language = None
         self._body = None
         self.discriminator = None
 
-        self.project_id = project_id
         self.cluster_id = cluster_id
         self.x_language = x_language
         if body is not None:
             self.body = body
-
-    @property
-    def project_id(self):
-        """Gets the project_id of this ExpandClusterComponentRequest.
-
-        租户ID
-
-        :return: The project_id of this ExpandClusterComponentRequest.
-        :rtype: str
-        """
-        return self._project_id
-
-    @project_id.setter
-    def project_id(self, project_id):
-        """Sets the project_id of this ExpandClusterComponentRequest.
-
-        租户ID
-
-        :param project_id: The project_id of this ExpandClusterComponentRequest.
-        :type project_id: str
-        """
-        self._project_id = project_id
 
     @property
     def cluster_id(self):

@@ -52,8 +52,7 @@ class ListQuotasRequest:
             self.limit = limit
         if marker is not None:
             self.marker = marker
-        if quota_type is not None:
-            self.quota_type = quota_type
+        self.quota_type = quota_type
 
     @property
     def limit(self):

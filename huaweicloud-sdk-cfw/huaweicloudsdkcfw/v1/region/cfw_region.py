@@ -36,7 +36,7 @@ class CfwRegion:
     CN_EAST_2 = Region("cn-east-2",
                         "https://cfw.cn-east-2.myhuaweicloud.com")
     AF_SOUTH_1 = Region("af-south-1",
-                        "https://cfw.la-south-2.myhuaweicloud.com")
+                        "https://cfw.af-south-1.myhuaweicloud.com")
     SA_BRAZIL_1 = Region("sa-brazil-1",
                         "https://cfw.sa-brazil-1.myhuaweicloud.com")
 

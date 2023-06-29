@@ -37,8 +37,7 @@ class ProductInfo:
         'volume_product_type': 'str',
         'domain_ids': 'list[str]',
         'status': 'str',
-        'sub_product_list': 'list[str]',
-        'package_type': 'str'
+        'sub_product_list': 'list[str]'
     }
 
     attribute_map = {
@@ -62,11 +61,10 @@ class ProductInfo:
         'volume_product_type': 'volume_product_type',
         'domain_ids': 'domain_ids',
         'status': 'status',
-        'sub_product_list': 'sub_product_list',
-        'package_type': 'package_type'
+        'sub_product_list': 'sub_product_list'
     }
 
-    def __init__(self, product_id=None, flavor_id=None, type=None, architecture=None, cpu=None, cpu_desc=None, memory=None, is_gpu=None, system_disk_type=None, system_disk_size=None, gpu_desc=None, bill_switch=None, descriptions=None, charge_mode=None, contain_data_disk=None, resource_type=None, cloud_service_type=None, volume_product_type=None, domain_ids=None, status=None, sub_product_list=None, package_type=None):
+    def __init__(self, product_id=None, flavor_id=None, type=None, architecture=None, cpu=None, cpu_desc=None, memory=None, is_gpu=None, system_disk_type=None, system_disk_size=None, gpu_desc=None, bill_switch=None, descriptions=None, charge_mode=None, contain_data_disk=None, resource_type=None, cloud_service_type=None, volume_product_type=None, domain_ids=None, status=None, sub_product_list=None):
         """ProductInfo
 
         The model defined in huaweicloud sdk
@@ -113,8 +111,6 @@ class ProductInfo:
         :type status: str
         :param sub_product_list: 专属主机的子产品。
         :type sub_product_list: list[str]
-        :param package_type: 套餐类型。 - ultimate：尊享版 - enterprise：企业版 - general: 通用办公版 - workstation: 云工作站 - dedicated: 专属办公版 - solver: 解算版 - agile: 敏捷办公版
-        :type package_type: str
         """
         
         
@@ -140,7 +136,6 @@ class ProductInfo:
         self._domain_ids = None
         self._status = None
         self._sub_product_list = None
-        self._package_type = None
         self.discriminator = None
 
         if product_id is not None:
@@ -185,8 +180,6 @@ class ProductInfo:
             self.status = status
         if sub_product_list is not None:
             self.sub_product_list = sub_product_list
-        if package_type is not None:
-            self.package_type = package_type
 
     @property
     def product_id(self):
@@ -649,28 +642,6 @@ class ProductInfo:
         :type sub_product_list: list[str]
         """
         self._sub_product_list = sub_product_list
-
-    @property
-    def package_type(self):
-        """Gets the package_type of this ProductInfo.
-
-        套餐类型。 - ultimate：尊享版 - enterprise：企业版 - general: 通用办公版 - workstation: 云工作站 - dedicated: 专属办公版 - solver: 解算版 - agile: 敏捷办公版
-
-        :return: The package_type of this ProductInfo.
-        :rtype: str
-        """
-        return self._package_type
-
-    @package_type.setter
-    def package_type(self, package_type):
-        """Sets the package_type of this ProductInfo.
-
-        套餐类型。 - ultimate：尊享版 - enterprise：企业版 - general: 通用办公版 - workstation: 云工作站 - dedicated: 专属办公版 - solver: 解算版 - agile: 敏捷办公版
-
-        :param package_type: The package_type of this ProductInfo.
-        :type package_type: str
-        """
-        self._package_type = package_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

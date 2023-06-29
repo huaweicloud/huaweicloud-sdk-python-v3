@@ -37,7 +37,7 @@ class DeleteTagRequest:
         :type resource_id: str
         :param tag_key: 待删除资源标签的key
         :type tag_key: str
-        :param resource_type: 资源类型: - cc: 云连接 - bwp: 带宽包
+        :param resource_type: 资源类型: - cloud-connection: 云连接 - bandwidth-package: 带宽包
         :type resource_type: str
         """
         
@@ -100,7 +100,7 @@ class DeleteTagRequest:
     def resource_type(self):
         """Gets the resource_type of this DeleteTagRequest.
 
-        资源类型: - cc: 云连接 - bwp: 带宽包
+        资源类型: - cloud-connection: 云连接 - bandwidth-package: 带宽包
 
         :return: The resource_type of this DeleteTagRequest.
         :rtype: str
@@ -111,7 +111,7 @@ class DeleteTagRequest:
     def resource_type(self, resource_type):
         """Sets the resource_type of this DeleteTagRequest.
 
-        资源类型: - cc: 云连接 - bwp: 带宽包
+        资源类型: - cloud-connection: 云连接 - bandwidth-package: 带宽包
 
         :param resource_type: The resource_type of this DeleteTagRequest.
         :type resource_type: str

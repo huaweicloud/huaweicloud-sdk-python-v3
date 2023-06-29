@@ -29,7 +29,7 @@ class ShowDomainSettingsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param domain_id: 域名ID
+        :param domain_id: 网站域名ID
         :type domain_id: str
         """
         
@@ -44,7 +44,7 @@ class ShowDomainSettingsRequest:
     def domain_id(self):
         """Gets the domain_id of this ShowDomainSettingsRequest.
 
-        域名ID
+        网站域名ID
 
         :return: The domain_id of this ShowDomainSettingsRequest.
         :rtype: str
@@ -55,7 +55,7 @@ class ShowDomainSettingsRequest:
     def domain_id(self, domain_id):
         """Sets the domain_id of this ShowDomainSettingsRequest.
 
-        域名ID
+        网站域名ID
 
         :param domain_id: The domain_id of this ShowDomainSettingsRequest.
         :type domain_id: str

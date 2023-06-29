@@ -30,7 +30,6 @@ class UpdateEndpointServiceResponse(SdkResponse):
         'created_at': 'str',
         'updated_at': 'str',
         'project_id': 'str',
-        'cidr_type': 'str',
         'ports': 'list[PortList]',
         'tcp_proxy': 'str',
         'tags': 'list[TagList]',
@@ -51,7 +50,6 @@ class UpdateEndpointServiceResponse(SdkResponse):
         'created_at': 'created_at',
         'updated_at': 'updated_at',
         'project_id': 'project_id',
-        'cidr_type': 'cidr_type',
         'ports': 'ports',
         'tcp_proxy': 'tcp_proxy',
         'tags': 'tags',
@@ -59,7 +57,7 @@ class UpdateEndpointServiceResponse(SdkResponse):
         'enable_policy': 'enable_policy'
     }
 
-    def __init__(self, id=None, port_id=None, service_name=None, server_type=None, vpc_id=None, pool_id=None, approval_enabled=None, status=None, service_type=None, created_at=None, updated_at=None, project_id=None, cidr_type=None, ports=None, tcp_proxy=None, tags=None, description=None, enable_policy=None):
+    def __init__(self, id=None, port_id=None, service_name=None, server_type=None, vpc_id=None, pool_id=None, approval_enabled=None, status=None, service_type=None, created_at=None, updated_at=None, project_id=None, ports=None, tcp_proxy=None, tags=None, description=None, enable_policy=None):
         """UpdateEndpointServiceResponse
 
         The model defined in huaweicloud sdk
@@ -88,8 +86,6 @@ class UpdateEndpointServiceResponse(SdkResponse):
         :type updated_at: str
         :param project_id: 项目ID
         :type project_id: str
-        :param cidr_type: 网段类型。 ● public：公网网段 ● internal：内网网段 默认值为internal。
-        :type cidr_type: str
         :param ports: 服务开放的端口映射列表 同一个终端节点服务下，不允许重复的端口映射。 若多个终端节点服务共用一个port_id， 则终端节点服务之间的所有端口映射的server_port和protocol的组合不能重复。
         :type ports: list[:class:`huaweicloudsdkvpcep.v1.PortList`]
         :param tcp_proxy: 用于控制将哪些信息（如客户端的源IP、源端口、marker_id等）携带到服务端。 支持携带的客户端信息包括如下两种类型： ● TCP TOA：表示将客户端信息插入到tcp option字段中携带至服务端。 说明：仅当后端资源为OBS时，支持TCP TOA类型信息携带方式。 ● Proxy Protocol：表示将客户端信息插入到tcp payload字段中携带至服务端。 仅当服务端支持解析上述字段时，该参数设置才有效。 该参数的取值包括： ● close：表示关闭代理协议。 ● toa_open：表示开启代理协议“tcp_toa”。 ● proxy_open：表示开启代理协议“proxy_protocol”。 ● open：表示同时开启代理协议“tcp_toa”和“proxy_protocol”。 ● proxy_vni: 关闭toa，开启proxy和vni。 默认值为“close”。
@@ -116,7 +112,6 @@ class UpdateEndpointServiceResponse(SdkResponse):
         self._created_at = None
         self._updated_at = None
         self._project_id = None
-        self._cidr_type = None
         self._ports = None
         self._tcp_proxy = None
         self._tags = None
@@ -148,8 +143,6 @@ class UpdateEndpointServiceResponse(SdkResponse):
             self.updated_at = updated_at
         if project_id is not None:
             self.project_id = project_id
-        if cidr_type is not None:
-            self.cidr_type = cidr_type
         if ports is not None:
             self.ports = ports
         if tcp_proxy is not None:
@@ -424,28 +417,6 @@ class UpdateEndpointServiceResponse(SdkResponse):
         :type project_id: str
         """
         self._project_id = project_id
-
-    @property
-    def cidr_type(self):
-        """Gets the cidr_type of this UpdateEndpointServiceResponse.
-
-        网段类型。 ● public：公网网段 ● internal：内网网段 默认值为internal。
-
-        :return: The cidr_type of this UpdateEndpointServiceResponse.
-        :rtype: str
-        """
-        return self._cidr_type
-
-    @cidr_type.setter
-    def cidr_type(self, cidr_type):
-        """Sets the cidr_type of this UpdateEndpointServiceResponse.
-
-        网段类型。 ● public：公网网段 ● internal：内网网段 默认值为internal。
-
-        :param cidr_type: The cidr_type of this UpdateEndpointServiceResponse.
-        :type cidr_type: str
-        """
-        self._cidr_type = cidr_type
 
     @property
     def ports(self):

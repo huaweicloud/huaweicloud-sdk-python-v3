@@ -57,17 +57,17 @@ class DomainItem:
         :type low: int
         :param hint: 提示危漏洞数
         :type hint: int
-        :param domain_id: 域名id
+        :param domain_id: 网站域名ID
         :type domain_id: str
-        :param top_level_domain_id: 一级域名id
+        :param top_level_domain_id: 一级域名ID
         :type top_level_domain_id: str
-        :param domain_name: 域名
+        :param domain_name: 网站域名
         :type domain_name: str
-        :param alias: 域名的别名
+        :param alias: 网站域名的别名
         :type alias: str
-        :param create_time: 创建域名资产的时间
+        :param create_time: 创建网站域名资产的时间
         :type create_time: str
-        :param auth_status: 域名的认证状态:   * unauth - 未认证   * auth - 已认证   * invalid - 认证文件无效   * manual - 人工认证   * skip - 免认证 
+        :param auth_status: 网站域名的认证状态:   * unauth - 未认证   * auth - 已认证   * invalid - 认证文件无效   * manual - 人工认证   * skip - 免认证 
         :type auth_status: str
         :param protocol_type: 协议类型:   * http:// - HTTP   * https:// - HTTPS 
         :type protocol_type: str
@@ -203,7 +203,7 @@ class DomainItem:
     def domain_id(self):
         """Gets the domain_id of this DomainItem.
 
-        域名id
+        网站域名ID
 
         :return: The domain_id of this DomainItem.
         :rtype: str
@@ -214,7 +214,7 @@ class DomainItem:
     def domain_id(self, domain_id):
         """Sets the domain_id of this DomainItem.
 
-        域名id
+        网站域名ID
 
         :param domain_id: The domain_id of this DomainItem.
         :type domain_id: str
@@ -225,7 +225,7 @@ class DomainItem:
     def top_level_domain_id(self):
         """Gets the top_level_domain_id of this DomainItem.
 
-        一级域名id
+        一级域名ID
 
         :return: The top_level_domain_id of this DomainItem.
         :rtype: str
@@ -236,7 +236,7 @@ class DomainItem:
     def top_level_domain_id(self, top_level_domain_id):
         """Sets the top_level_domain_id of this DomainItem.
 
-        一级域名id
+        一级域名ID
 
         :param top_level_domain_id: The top_level_domain_id of this DomainItem.
         :type top_level_domain_id: str
@@ -247,7 +247,7 @@ class DomainItem:
     def domain_name(self):
         """Gets the domain_name of this DomainItem.
 
-        域名
+        网站域名
 
         :return: The domain_name of this DomainItem.
         :rtype: str
@@ -258,7 +258,7 @@ class DomainItem:
     def domain_name(self, domain_name):
         """Sets the domain_name of this DomainItem.
 
-        域名
+        网站域名
 
         :param domain_name: The domain_name of this DomainItem.
         :type domain_name: str
@@ -269,7 +269,7 @@ class DomainItem:
     def alias(self):
         """Gets the alias of this DomainItem.
 
-        域名的别名
+        网站域名的别名
 
         :return: The alias of this DomainItem.
         :rtype: str
@@ -280,7 +280,7 @@ class DomainItem:
     def alias(self, alias):
         """Sets the alias of this DomainItem.
 
-        域名的别名
+        网站域名的别名
 
         :param alias: The alias of this DomainItem.
         :type alias: str
@@ -291,7 +291,7 @@ class DomainItem:
     def create_time(self):
         """Gets the create_time of this DomainItem.
 
-        创建域名资产的时间
+        创建网站域名资产的时间
 
         :return: The create_time of this DomainItem.
         :rtype: str
@@ -302,7 +302,7 @@ class DomainItem:
     def create_time(self, create_time):
         """Sets the create_time of this DomainItem.
 
-        创建域名资产的时间
+        创建网站域名资产的时间
 
         :param create_time: The create_time of this DomainItem.
         :type create_time: str
@@ -313,7 +313,7 @@ class DomainItem:
     def auth_status(self):
         """Gets the auth_status of this DomainItem.
 
-        域名的认证状态:   * unauth - 未认证   * auth - 已认证   * invalid - 认证文件无效   * manual - 人工认证   * skip - 免认证 
+        网站域名的认证状态:   * unauth - 未认证   * auth - 已认证   * invalid - 认证文件无效   * manual - 人工认证   * skip - 免认证 
 
         :return: The auth_status of this DomainItem.
         :rtype: str
@@ -324,7 +324,7 @@ class DomainItem:
     def auth_status(self, auth_status):
         """Sets the auth_status of this DomainItem.
 
-        域名的认证状态:   * unauth - 未认证   * auth - 已认证   * invalid - 认证文件无效   * manual - 人工认证   * skip - 免认证 
+        网站域名的认证状态:   * unauth - 未认证   * auth - 已认证   * invalid - 认证文件无效   * manual - 人工认证   * skip - 免认证 
 
         :param auth_status: The auth_status of this DomainItem.
         :type auth_status: str

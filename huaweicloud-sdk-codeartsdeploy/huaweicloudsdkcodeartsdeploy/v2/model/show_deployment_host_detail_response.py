@@ -102,7 +102,7 @@ class ShowDeploymentHostDetailResponse(SdkResponse):
         :type proxy_host: :class:`huaweicloudsdkcodeartsdeploy.v2.DeploymentHostDetail`
         :param group_name: 主机集群名
         :type group_name: str
-        :param project_id: 项目id
+        :param project_id: 项目ID
         :type project_id: str
         :param project_name: 项目名称
         :type project_name: str
@@ -463,7 +463,7 @@ class ShowDeploymentHostDetailResponse(SdkResponse):
     def project_id(self):
         """Gets the project_id of this ShowDeploymentHostDetailResponse.
 
-        项目id
+        项目ID
 
         :return: The project_id of this ShowDeploymentHostDetailResponse.
         :rtype: str
@@ -474,7 +474,7 @@ class ShowDeploymentHostDetailResponse(SdkResponse):
     def project_id(self, project_id):
         """Sets the project_id of this ShowDeploymentHostDetailResponse.
 
-        项目id
+        项目ID
 
         :param project_id: The project_id of this ShowDeploymentHostDetailResponse.
         :type project_id: str

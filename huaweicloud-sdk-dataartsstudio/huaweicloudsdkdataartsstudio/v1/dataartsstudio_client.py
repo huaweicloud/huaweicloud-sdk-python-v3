@@ -6268,7 +6268,7 @@ class DataArtsStudioClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/dqc/v1/{project_id}/rules',
+            resource_path='/v1/{project_id}/quality/rules',
             method='GET',
             path_params=path_params,
             query_params=query_params,

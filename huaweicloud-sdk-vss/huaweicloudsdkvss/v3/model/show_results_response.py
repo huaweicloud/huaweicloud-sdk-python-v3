@@ -34,9 +34,9 @@ class ShowResultsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param total: 漏洞总数
+        :param total: 网站漏洞总数
         :type total: int
-        :param data: 漏洞信息列表
+        :param data: 网站漏洞信息列表
         :type data: list[:class:`huaweicloudsdkvss.v3.VulnItem`]
         :param statistics: 
         :type statistics: :class:`huaweicloudsdkvss.v3.VulnsLevel`
@@ -60,7 +60,7 @@ class ShowResultsResponse(SdkResponse):
     def total(self):
         """Gets the total of this ShowResultsResponse.
 
-        漏洞总数
+        网站漏洞总数
 
         :return: The total of this ShowResultsResponse.
         :rtype: int
@@ -71,7 +71,7 @@ class ShowResultsResponse(SdkResponse):
     def total(self, total):
         """Sets the total of this ShowResultsResponse.
 
-        漏洞总数
+        网站漏洞总数
 
         :param total: The total of this ShowResultsResponse.
         :type total: int
@@ -82,7 +82,7 @@ class ShowResultsResponse(SdkResponse):
     def data(self):
         """Gets the data of this ShowResultsResponse.
 
-        漏洞信息列表
+        网站漏洞信息列表
 
         :return: The data of this ShowResultsResponse.
         :rtype: list[:class:`huaweicloudsdkvss.v3.VulnItem`]
@@ -93,7 +93,7 @@ class ShowResultsResponse(SdkResponse):
     def data(self, data):
         """Sets the data of this ShowResultsResponse.
 
-        漏洞信息列表
+        网站漏洞信息列表
 
         :param data: The data of this ShowResultsResponse.
         :type data: list[:class:`huaweicloudsdkvss.v3.VulnItem`]

@@ -66,7 +66,7 @@ class ShowDeploymentGroupDetailResponse(SdkResponse):
         :type created_time: str
         :param updated_time: 修改时间
         :type updated_time: str
-        :param host_count: 组内主机数量，一个主机集群内最多可添加200台主机
+        :param host_count: 集群内主机数量，一个主机集群内最多可添加200台主机
         :type host_count: int
         :param project_name: 项目名称
         :type project_name: str
@@ -74,7 +74,7 @@ class ShowDeploymentGroupDetailResponse(SdkResponse):
         :type name: str
         :param region_name: 局点信息
         :type region_name: str
-        :param project_id: 项目id
+        :param project_id: 项目ID
         :type project_id: str
         :param os: 操作系统：windows|linux
         :type os: str
@@ -217,7 +217,7 @@ class ShowDeploymentGroupDetailResponse(SdkResponse):
     def host_count(self):
         """Gets the host_count of this ShowDeploymentGroupDetailResponse.
 
-        组内主机数量，一个主机集群内最多可添加200台主机
+        集群内主机数量，一个主机集群内最多可添加200台主机
 
         :return: The host_count of this ShowDeploymentGroupDetailResponse.
         :rtype: int
@@ -228,7 +228,7 @@ class ShowDeploymentGroupDetailResponse(SdkResponse):
     def host_count(self, host_count):
         """Sets the host_count of this ShowDeploymentGroupDetailResponse.
 
-        组内主机数量，一个主机集群内最多可添加200台主机
+        集群内主机数量，一个主机集群内最多可添加200台主机
 
         :param host_count: The host_count of this ShowDeploymentGroupDetailResponse.
         :type host_count: int
@@ -305,7 +305,7 @@ class ShowDeploymentGroupDetailResponse(SdkResponse):
     def project_id(self):
         """Gets the project_id of this ShowDeploymentGroupDetailResponse.
 
-        项目id
+        项目ID
 
         :return: The project_id of this ShowDeploymentGroupDetailResponse.
         :rtype: str
@@ -316,7 +316,7 @@ class ShowDeploymentGroupDetailResponse(SdkResponse):
     def project_id(self, project_id):
         """Sets the project_id of this ShowDeploymentGroupDetailResponse.
 
-        项目id
+        项目ID
 
         :param project_id: The project_id of this ShowDeploymentGroupDetailResponse.
         :type project_id: str

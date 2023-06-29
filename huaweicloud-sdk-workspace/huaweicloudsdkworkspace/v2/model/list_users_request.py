@@ -20,17 +20,19 @@ class ListUsersRequest:
         'user_name': 'str',
         'limit': 'str',
         'offset': 'str',
-        'description': 'str'
+        'description': 'str',
+        'active_type': 'str'
     }
 
     attribute_map = {
         'user_name': 'user_name',
         'limit': 'limit',
         'offset': 'offset',
-        'description': 'description'
+        'description': 'description',
+        'active_type': 'active_type'
     }
 
-    def __init__(self, user_name=None, limit=None, offset=None, description=None):
+    def __init__(self, user_name=None, limit=None, offset=None, description=None, active_type=None):
         """ListUsersRequest
 
         The model defined in huaweicloud sdk
@@ -43,6 +45,8 @@ class ListUsersRequest:
         :type offset: str
         :param description: 用户描述查询，模糊匹配。
         :type description: str
+        :param active_type: 激活类型，默认为用户激活。 * USER_ACTIVATE： 用户激活 * ADMIN_ACTIVATE： 管理员激活
+        :type active_type: str
         """
         
         
@@ -51,6 +55,7 @@ class ListUsersRequest:
         self._limit = None
         self._offset = None
         self._description = None
+        self._active_type = None
         self.discriminator = None
 
         if user_name is not None:
@@ -61,6 +66,8 @@ class ListUsersRequest:
             self.offset = offset
         if description is not None:
             self.description = description
+        if active_type is not None:
+            self.active_type = active_type
 
     @property
     def user_name(self):
@@ -149,6 +156,28 @@ class ListUsersRequest:
         :type description: str
         """
         self._description = description
+
+    @property
+    def active_type(self):
+        """Gets the active_type of this ListUsersRequest.
+
+        激活类型，默认为用户激活。 * USER_ACTIVATE： 用户激活 * ADMIN_ACTIVATE： 管理员激活
+
+        :return: The active_type of this ListUsersRequest.
+        :rtype: str
+        """
+        return self._active_type
+
+    @active_type.setter
+    def active_type(self, active_type):
+        """Sets the active_type of this ListUsersRequest.
+
+        激活类型，默认为用户激活。 * USER_ACTIVATE： 用户激活 * ADMIN_ACTIVATE： 管理员激活
+
+        :param active_type: The active_type of this ListUsersRequest.
+        :type active_type: str
+        """
+        self._active_type = active_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

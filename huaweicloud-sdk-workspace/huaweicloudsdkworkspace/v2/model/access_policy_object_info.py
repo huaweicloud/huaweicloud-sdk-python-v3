@@ -18,46 +18,46 @@ class AccessPolicyObjectInfo:
 
     openapi_types = {
         'object_id': 'str',
-        'object_name': 'str',
-        'object_type': 'str'
+        'object_type': 'str',
+        'object_name': 'str'
     }
 
     attribute_map = {
         'object_id': 'object_id',
-        'object_name': 'object_name',
-        'object_type': 'object_type'
+        'object_type': 'object_type',
+        'object_name': 'object_name'
     }
 
-    def __init__(self, object_id=None, object_name=None, object_type=None):
+    def __init__(self, object_id=None, object_type=None, object_name=None):
         """AccessPolicyObjectInfo
 
         The model defined in huaweicloud sdk
 
-        :param object_id: 黑名单中的对象id，目前仅用户对象。
+        :param object_id: 黑名单中的对象id。
         :type object_id: str
-        :param object_name: 对象名。
-        :type object_name: str
-        :param object_type: 对象类型，当前只支持用户类型。 * USER： 用户
+        :param object_type: 对象类型。 * USER： 用户 * USERGROUP： 用户组
         :type object_type: str
+        :param object_name: 对象名。后续此参数不会校验。
+        :type object_name: str
         """
         
         
 
         self._object_id = None
-        self._object_name = None
         self._object_type = None
+        self._object_name = None
         self.discriminator = None
 
         self.object_id = object_id
+        self.object_type = object_type
         if object_name is not None:
             self.object_name = object_name
-        self.object_type = object_type
 
     @property
     def object_id(self):
         """Gets the object_id of this AccessPolicyObjectInfo.
 
-        黑名单中的对象id，目前仅用户对象。
+        黑名单中的对象id。
 
         :return: The object_id of this AccessPolicyObjectInfo.
         :rtype: str
@@ -68,7 +68,7 @@ class AccessPolicyObjectInfo:
     def object_id(self, object_id):
         """Sets the object_id of this AccessPolicyObjectInfo.
 
-        黑名单中的对象id，目前仅用户对象。
+        黑名单中的对象id。
 
         :param object_id: The object_id of this AccessPolicyObjectInfo.
         :type object_id: str
@@ -76,32 +76,10 @@ class AccessPolicyObjectInfo:
         self._object_id = object_id
 
     @property
-    def object_name(self):
-        """Gets the object_name of this AccessPolicyObjectInfo.
-
-        对象名。
-
-        :return: The object_name of this AccessPolicyObjectInfo.
-        :rtype: str
-        """
-        return self._object_name
-
-    @object_name.setter
-    def object_name(self, object_name):
-        """Sets the object_name of this AccessPolicyObjectInfo.
-
-        对象名。
-
-        :param object_name: The object_name of this AccessPolicyObjectInfo.
-        :type object_name: str
-        """
-        self._object_name = object_name
-
-    @property
     def object_type(self):
         """Gets the object_type of this AccessPolicyObjectInfo.
 
-        对象类型，当前只支持用户类型。 * USER： 用户
+        对象类型。 * USER： 用户 * USERGROUP： 用户组
 
         :return: The object_type of this AccessPolicyObjectInfo.
         :rtype: str
@@ -112,12 +90,34 @@ class AccessPolicyObjectInfo:
     def object_type(self, object_type):
         """Sets the object_type of this AccessPolicyObjectInfo.
 
-        对象类型，当前只支持用户类型。 * USER： 用户
+        对象类型。 * USER： 用户 * USERGROUP： 用户组
 
         :param object_type: The object_type of this AccessPolicyObjectInfo.
         :type object_type: str
         """
         self._object_type = object_type
+
+    @property
+    def object_name(self):
+        """Gets the object_name of this AccessPolicyObjectInfo.
+
+        对象名。后续此参数不会校验。
+
+        :return: The object_name of this AccessPolicyObjectInfo.
+        :rtype: str
+        """
+        return self._object_name
+
+    @object_name.setter
+    def object_name(self, object_name):
+        """Sets the object_name of this AccessPolicyObjectInfo.
+
+        对象名。后续此参数不会校验。
+
+        :param object_name: The object_name of this AccessPolicyObjectInfo.
+        :type object_name: str
+        """
+        self._object_name = object_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

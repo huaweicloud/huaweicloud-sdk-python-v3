@@ -41,7 +41,7 @@ class DomainSettings:
 
         The model defined in huaweicloud sdk
 
-        :param domain_id: 域名id
+        :param domain_id: 网站域名ID
         :type domain_id: str
         :param login_url: 网站需要登录时，设置登录页面
         :type login_url: str
@@ -87,7 +87,7 @@ class DomainSettings:
     def domain_id(self):
         """Gets the domain_id of this DomainSettings.
 
-        域名id
+        网站域名ID
 
         :return: The domain_id of this DomainSettings.
         :rtype: str
@@ -98,7 +98,7 @@ class DomainSettings:
     def domain_id(self, domain_id):
         """Sets the domain_id of this DomainSettings.
 
-        域名id
+        网站域名ID
 
         :param domain_id: The domain_id of this DomainSettings.
         :type domain_id: str

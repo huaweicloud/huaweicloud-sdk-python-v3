@@ -19,6 +19,7 @@ class EpsPermission:
     openapi_types = {
         'id': 'str',
         'permission': 'str',
+        'permission_type': 'str',
         'description': 'str',
         'created_at': 'str'
     }
@@ -26,19 +27,22 @@ class EpsPermission:
     attribute_map = {
         'id': 'id',
         'permission': 'permission',
+        'permission_type': 'permission_type',
         'description': 'description',
         'created_at': 'created_at'
     }
 
-    def __init__(self, id=None, permission=None, description=None, created_at=None):
+    def __init__(self, id=None, permission=None, permission_type=None, description=None, created_at=None):
         """EpsPermission
 
         The model defined in huaweicloud sdk
 
         :param id: 白名单表主键ID
         :type id: str
-        :param permission: 权限格式为：iam:domain::domain_id其中， ● “iam:domain::”为固定格式。 ● “domain_id”为可连接用户的帐号ID。 支持输入1~64个字符，包括“a~z”、“A~Z”、“0~9”或者“”。 “”表示所有终端节点可连接。 例如：iam:domain::6e9dfd51d1124e8d8498dce894923a0dd
+        :param permission: 权限格式为：iam:domain::domain_id或者organizations:orgPath::org_path其中， ● “iam:domain::”和“organizations:orgPath::”为固定格式。 ● “domain_id”为可连接用户的帐号ID，org_path可连接用户的组织路径 domain_id类型支持输入包括“a~z”、“A~Z”、“0~9”或者“*”，org_path类型支持“a~z”、“A~Z”、“0~9”、“/-*?”或者“*”。 “*”表示所有终端节点可连接。 例如：iam:domain::6e9dfd51d1124e8d8498dce894923a0dd或者organizations:orgPath::o-3j59d1231uprgk9yuvlidra7zbzfi578/r-rldbu1vmxdw5ahdkknxnvd5rgag77m2z/ou-7tuddd8nh99rebxltawsm6qct5z7rklv/*
         :type permission: str
+        :param permission_type: 终端节点服务白名单类型。 ● domainId：基于账户ID配置终端节点服务白名单。 ● orgPath：基于账户所在组织路径配置终端节点服务白名单。
+        :type permission_type: str
         :param description: 终端节点服务白名单描述
         :type description: str
         :param created_at: 白名单创建时间
@@ -49,6 +53,7 @@ class EpsPermission:
 
         self._id = None
         self._permission = None
+        self._permission_type = None
         self._description = None
         self._created_at = None
         self.discriminator = None
@@ -57,6 +62,8 @@ class EpsPermission:
             self.id = id
         if permission is not None:
             self.permission = permission
+        if permission_type is not None:
+            self.permission_type = permission_type
         if description is not None:
             self.description = description
         if created_at is not None:
@@ -88,7 +95,7 @@ class EpsPermission:
     def permission(self):
         """Gets the permission of this EpsPermission.
 
-        权限格式为：iam:domain::domain_id其中， ● “iam:domain::”为固定格式。 ● “domain_id”为可连接用户的帐号ID。 支持输入1~64个字符，包括“a~z”、“A~Z”、“0~9”或者“”。 “”表示所有终端节点可连接。 例如：iam:domain::6e9dfd51d1124e8d8498dce894923a0dd
+        权限格式为：iam:domain::domain_id或者organizations:orgPath::org_path其中， ● “iam:domain::”和“organizations:orgPath::”为固定格式。 ● “domain_id”为可连接用户的帐号ID，org_path可连接用户的组织路径 domain_id类型支持输入包括“a~z”、“A~Z”、“0~9”或者“*”，org_path类型支持“a~z”、“A~Z”、“0~9”、“/-*?”或者“*”。 “*”表示所有终端节点可连接。 例如：iam:domain::6e9dfd51d1124e8d8498dce894923a0dd或者organizations:orgPath::o-3j59d1231uprgk9yuvlidra7zbzfi578/r-rldbu1vmxdw5ahdkknxnvd5rgag77m2z/ou-7tuddd8nh99rebxltawsm6qct5z7rklv/*
 
         :return: The permission of this EpsPermission.
         :rtype: str
@@ -99,12 +106,34 @@ class EpsPermission:
     def permission(self, permission):
         """Sets the permission of this EpsPermission.
 
-        权限格式为：iam:domain::domain_id其中， ● “iam:domain::”为固定格式。 ● “domain_id”为可连接用户的帐号ID。 支持输入1~64个字符，包括“a~z”、“A~Z”、“0~9”或者“”。 “”表示所有终端节点可连接。 例如：iam:domain::6e9dfd51d1124e8d8498dce894923a0dd
+        权限格式为：iam:domain::domain_id或者organizations:orgPath::org_path其中， ● “iam:domain::”和“organizations:orgPath::”为固定格式。 ● “domain_id”为可连接用户的帐号ID，org_path可连接用户的组织路径 domain_id类型支持输入包括“a~z”、“A~Z”、“0~9”或者“*”，org_path类型支持“a~z”、“A~Z”、“0~9”、“/-*?”或者“*”。 “*”表示所有终端节点可连接。 例如：iam:domain::6e9dfd51d1124e8d8498dce894923a0dd或者organizations:orgPath::o-3j59d1231uprgk9yuvlidra7zbzfi578/r-rldbu1vmxdw5ahdkknxnvd5rgag77m2z/ou-7tuddd8nh99rebxltawsm6qct5z7rklv/*
 
         :param permission: The permission of this EpsPermission.
         :type permission: str
         """
         self._permission = permission
+
+    @property
+    def permission_type(self):
+        """Gets the permission_type of this EpsPermission.
+
+        终端节点服务白名单类型。 ● domainId：基于账户ID配置终端节点服务白名单。 ● orgPath：基于账户所在组织路径配置终端节点服务白名单。
+
+        :return: The permission_type of this EpsPermission.
+        :rtype: str
+        """
+        return self._permission_type
+
+    @permission_type.setter
+    def permission_type(self, permission_type):
+        """Sets the permission_type of this EpsPermission.
+
+        终端节点服务白名单类型。 ● domainId：基于账户ID配置终端节点服务白名单。 ● orgPath：基于账户所在组织路径配置终端节点服务白名单。
+
+        :param permission_type: The permission_type of this EpsPermission.
+        :type permission_type: str
+        """
+        self._permission_type = permission_type
 
     @property
     def description(self):

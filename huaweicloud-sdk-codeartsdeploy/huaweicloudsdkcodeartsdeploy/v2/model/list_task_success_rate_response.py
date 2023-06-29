@@ -38,7 +38,7 @@ class ListTaskSuccessRateResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param project_id: 项目id
+        :param project_id: 项目ID
         :type project_id: str
         :param project_name: 项目名称
         :type project_name: str
@@ -74,7 +74,7 @@ class ListTaskSuccessRateResponse(SdkResponse):
     def project_id(self):
         """Gets the project_id of this ListTaskSuccessRateResponse.
 
-        项目id
+        项目ID
 
         :return: The project_id of this ListTaskSuccessRateResponse.
         :rtype: str
@@ -85,7 +85,7 @@ class ListTaskSuccessRateResponse(SdkResponse):
     def project_id(self, project_id):
         """Sets the project_id of this ListTaskSuccessRateResponse.
 
-        项目id
+        项目ID
 
         :param project_id: The project_id of this ListTaskSuccessRateResponse.
         :type project_id: str

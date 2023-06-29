@@ -70,7 +70,7 @@ class GetStackMetadataResponse(SdkResponse):
         :type enable_auto_rollback: bool
         :param status: 资源栈的状态     * &#x60;CREATION_COMPLETE&#x60; - 生成空资源栈完成，并没有任何部署     * &#x60;DEPLOYMENT_IN_PROGRESS&#x60; - 正在部署，请等待     * &#x60;DEPLOYMENT_FAILED&#x60; - 部署失败。请从status_message获取错误信息汇总，或者调用ListStackEvents获得事件详情     * &#x60;DEPLOYMENT_COMPLETE&#x60; - 部署完成     * &#x60;ROLLBACK_IN_PROGRESS&#x60; - 部署失败，正在回滚，请等待     * &#x60;ROLLBACK_FAILED&#x60; - 回滚失败。请从status_message获取错误信息汇总，或者调用ListStackEvents获得事件详情     * &#x60;ROLLBACK_COMPLETE&#x60; - 回滚完成     * &#x60;DELETION_IN_PROGRESS&#x60; - 正在删除，请等待     * &#x60;DELETION_FAILED&#x60; - 删除失败。请从status_message获取错误信息汇总，或者调用ListStackEvents获得事件详情
         :type status: str
-        :param agencies: 委托授权的信息。
+        :param agencies: 委托授权的信息。  RFS仅在创建资源栈（触发部署）、创建执行计划、部署资源栈、删除资源栈等涉及资源操作的请求中使用委托，且该委托仅作用于与之绑定的Provider对资源的操作中。若委托中提供的权限不足，有可能导致相关资源操作失败。 
         :type agencies: list[:class:`huaweicloudsdkaos.v1.Agency`]
         :param status_message: 当资源栈的状态为任意失败状态（即以 &#x60;FAILED&#x60; 结尾时），将会展示简要的错误信息总结以供debug
         :type status_message: str
@@ -305,7 +305,7 @@ class GetStackMetadataResponse(SdkResponse):
     def agencies(self):
         """Gets the agencies of this GetStackMetadataResponse.
 
-        委托授权的信息。
+        委托授权的信息。  RFS仅在创建资源栈（触发部署）、创建执行计划、部署资源栈、删除资源栈等涉及资源操作的请求中使用委托，且该委托仅作用于与之绑定的Provider对资源的操作中。若委托中提供的权限不足，有可能导致相关资源操作失败。 
 
         :return: The agencies of this GetStackMetadataResponse.
         :rtype: list[:class:`huaweicloudsdkaos.v1.Agency`]
@@ -316,7 +316,7 @@ class GetStackMetadataResponse(SdkResponse):
     def agencies(self, agencies):
         """Sets the agencies of this GetStackMetadataResponse.
 
-        委托授权的信息。
+        委托授权的信息。  RFS仅在创建资源栈（触发部署）、创建执行计划、部署资源栈、删除资源栈等涉及资源操作的请求中使用委托，且该委托仅作用于与之绑定的Provider对资源的操作中。若委托中提供的权限不足，有可能导致相关资源操作失败。 
 
         :param agencies: The agencies of this GetStackMetadataResponse.
         :type agencies: list[:class:`huaweicloudsdkaos.v1.Agency`]

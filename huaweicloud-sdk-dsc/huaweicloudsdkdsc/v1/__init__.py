@@ -80,11 +80,13 @@ from huaweicloudsdkdsc.v1.model.obs_scan_result import ObsScanResult
 from huaweicloudsdkdsc.v1.model.obs_scan_result_info import ObsScanResultInfo
 from huaweicloudsdkdsc.v1.model.open_api_called_record import OpenApiCalledRecord
 from huaweicloudsdkdsc.v1.model.period_order_request import PeriodOrderRequest
+from huaweicloudsdkdsc.v1.model.product_info import ProductInfo
 from huaweicloudsdkdsc.v1.model.product_info_bean import ProductInfoBean
 from huaweicloudsdkdsc.v1.model.product_order_info import ProductOrderInfo
 from huaweicloudsdkdsc.v1.model.relation_simple_info import RelationSimpleInfo
 from huaweicloudsdkdsc.v1.model.response_group import ResponseGroup
 from huaweicloudsdkdsc.v1.model.response_rule import ResponseRule
+from huaweicloudsdkdsc.v1.model.rule_change_request import RuleChangeRequest
 from huaweicloudsdkdsc.v1.model.rule_group_request import RuleGroupRequest
 from huaweicloudsdkdsc.v1.model.rule_request import RuleRequest
 from huaweicloudsdkdsc.v1.model.scan_job import ScanJob

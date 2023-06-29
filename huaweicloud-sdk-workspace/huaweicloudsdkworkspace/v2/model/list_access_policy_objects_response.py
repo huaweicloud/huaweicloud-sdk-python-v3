@@ -18,7 +18,7 @@ class ListAccessPolicyObjectsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'policy_objects_list': 'list[AccessPolicyObjectInfo]',
+        'policy_objects_list': 'list[AccessPolicyObject]',
         'total': 'int'
     }
 
@@ -33,7 +33,7 @@ class ListAccessPolicyObjectsResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param policy_objects_list: 查询接入策略应用对象响应。
-        :type policy_objects_list: list[:class:`huaweicloudsdkworkspace.v2.AccessPolicyObjectInfo`]
+        :type policy_objects_list: list[:class:`huaweicloudsdkworkspace.v2.AccessPolicyObject`]
         :param total: 对象总数。
         :type total: int
         """
@@ -56,7 +56,7 @@ class ListAccessPolicyObjectsResponse(SdkResponse):
         查询接入策略应用对象响应。
 
         :return: The policy_objects_list of this ListAccessPolicyObjectsResponse.
-        :rtype: list[:class:`huaweicloudsdkworkspace.v2.AccessPolicyObjectInfo`]
+        :rtype: list[:class:`huaweicloudsdkworkspace.v2.AccessPolicyObject`]
         """
         return self._policy_objects_list
 
@@ -67,7 +67,7 @@ class ListAccessPolicyObjectsResponse(SdkResponse):
         查询接入策略应用对象响应。
 
         :param policy_objects_list: The policy_objects_list of this ListAccessPolicyObjectsResponse.
-        :type policy_objects_list: list[:class:`huaweicloudsdkworkspace.v2.AccessPolicyObjectInfo`]
+        :type policy_objects_list: list[:class:`huaweicloudsdkworkspace.v2.AccessPolicyObject`]
         """
         self._policy_objects_list = policy_objects_list
 

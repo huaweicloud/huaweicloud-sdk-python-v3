@@ -32,9 +32,9 @@ class ListTaskHistoriesResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param total: 历史扫描任务总数
+        :param total: 网站历史扫描任务总数
         :type total: int
-        :param data: 历史扫描任务列表
+        :param data: 网站历史扫描任务列表
         :type data: list[:class:`huaweicloudsdkvss.v3.ShowTasksResponseBody`]
         """
         
@@ -53,7 +53,7 @@ class ListTaskHistoriesResponse(SdkResponse):
     def total(self):
         """Gets the total of this ListTaskHistoriesResponse.
 
-        历史扫描任务总数
+        网站历史扫描任务总数
 
         :return: The total of this ListTaskHistoriesResponse.
         :rtype: int
@@ -64,7 +64,7 @@ class ListTaskHistoriesResponse(SdkResponse):
     def total(self, total):
         """Sets the total of this ListTaskHistoriesResponse.
 
-        历史扫描任务总数
+        网站历史扫描任务总数
 
         :param total: The total of this ListTaskHistoriesResponse.
         :type total: int
@@ -75,7 +75,7 @@ class ListTaskHistoriesResponse(SdkResponse):
     def data(self):
         """Gets the data of this ListTaskHistoriesResponse.
 
-        历史扫描任务列表
+        网站历史扫描任务列表
 
         :return: The data of this ListTaskHistoriesResponse.
         :rtype: list[:class:`huaweicloudsdkvss.v3.ShowTasksResponseBody`]
@@ -86,7 +86,7 @@ class ListTaskHistoriesResponse(SdkResponse):
     def data(self, data):
         """Sets the data of this ListTaskHistoriesResponse.
 
-        历史扫描任务列表
+        网站历史扫描任务列表
 
         :param data: The data of this ListTaskHistoriesResponse.
         :type data: list[:class:`huaweicloudsdkvss.v3.ShowTasksResponseBody`]

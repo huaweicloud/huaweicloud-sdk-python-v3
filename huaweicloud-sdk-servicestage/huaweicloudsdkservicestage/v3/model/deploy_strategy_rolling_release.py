@@ -17,43 +17,29 @@ class DeployStrategyRollingRelease:
     sensitive_list = []
 
     openapi_types = {
-        'batches': 'int',
-        'termination_seconds': 'int',
-        'fail_strategy': 'str'
+        'batches': 'int'
     }
 
     attribute_map = {
-        'batches': 'batches',
-        'termination_seconds': 'termination_seconds',
-        'fail_strategy': 'fail_strategy'
+        'batches': 'batches'
     }
 
-    def __init__(self, batches=None, termination_seconds=None, fail_strategy=None):
+    def __init__(self, batches=None):
         """DeployStrategyRollingRelease
 
         The model defined in huaweicloud sdk
 
         :param batches: 
         :type batches: int
-        :param termination_seconds: 
-        :type termination_seconds: int
-        :param fail_strategy: 只对虚机部署有用，默认是stop，一批执行失败后停止升级。
-        :type fail_strategy: str
         """
         
         
 
         self._batches = None
-        self._termination_seconds = None
-        self._fail_strategy = None
         self.discriminator = None
 
         if batches is not None:
             self.batches = batches
-        if termination_seconds is not None:
-            self.termination_seconds = termination_seconds
-        if fail_strategy is not None:
-            self.fail_strategy = fail_strategy
 
     @property
     def batches(self):
@@ -72,46 +58,6 @@ class DeployStrategyRollingRelease:
         :type batches: int
         """
         self._batches = batches
-
-    @property
-    def termination_seconds(self):
-        """Gets the termination_seconds of this DeployStrategyRollingRelease.
-
-        :return: The termination_seconds of this DeployStrategyRollingRelease.
-        :rtype: int
-        """
-        return self._termination_seconds
-
-    @termination_seconds.setter
-    def termination_seconds(self, termination_seconds):
-        """Sets the termination_seconds of this DeployStrategyRollingRelease.
-
-        :param termination_seconds: The termination_seconds of this DeployStrategyRollingRelease.
-        :type termination_seconds: int
-        """
-        self._termination_seconds = termination_seconds
-
-    @property
-    def fail_strategy(self):
-        """Gets the fail_strategy of this DeployStrategyRollingRelease.
-
-        只对虚机部署有用，默认是stop，一批执行失败后停止升级。
-
-        :return: The fail_strategy of this DeployStrategyRollingRelease.
-        :rtype: str
-        """
-        return self._fail_strategy
-
-    @fail_strategy.setter
-    def fail_strategy(self, fail_strategy):
-        """Sets the fail_strategy of this DeployStrategyRollingRelease.
-
-        只对虚机部署有用，默认是stop，一批执行失败后停止升级。
-
-        :param fail_strategy: The fail_strategy of this DeployStrategyRollingRelease.
-        :type fail_strategy: str
-        """
-        self._fail_strategy = fail_strategy
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -29,7 +29,7 @@ class DeleteDomainsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param domain_name: 域名
+        :param domain_name: 网站域名
         :type domain_name: str
         """
         
@@ -44,7 +44,7 @@ class DeleteDomainsRequest:
     def domain_name(self):
         """Gets the domain_name of this DeleteDomainsRequest.
 
-        域名
+        网站域名
 
         :return: The domain_name of this DeleteDomainsRequest.
         :rtype: str
@@ -55,7 +55,7 @@ class DeleteDomainsRequest:
     def domain_name(self, domain_name):
         """Sets the domain_name of this DeleteDomainsRequest.
 
-        域名
+        网站域名
 
         :param domain_name: The domain_name of this DeleteDomainsRequest.
         :type domain_name: str

@@ -24,7 +24,8 @@ class ListCloudConnectionsRequest:
         'description': 'list[str]',
         'status': 'list[str]',
         'enterprise_project_id': 'list[str]',
-        'type': 'list[str]'
+        'type': 'list[str]',
+        'used_scene': 'list[str]'
     }
 
     attribute_map = {
@@ -35,10 +36,11 @@ class ListCloudConnectionsRequest:
         'description': 'description',
         'status': 'status',
         'enterprise_project_id': 'enterprise_project_id',
-        'type': 'type'
+        'type': 'type',
+        'used_scene': 'used_scene'
     }
 
-    def __init__(self, limit=None, marker=None, id=None, name=None, description=None, status=None, enterprise_project_id=None, type=None):
+    def __init__(self, limit=None, marker=None, id=None, name=None, description=None, status=None, enterprise_project_id=None, type=None, used_scene=None):
         """ListCloudConnectionsRequest
 
         The model defined in huaweicloud sdk
@@ -59,6 +61,8 @@ class ListCloudConnectionsRequest:
         :type enterprise_project_id: list[str]
         :param type: 根据类型过滤云连接实例列表。
         :type type: list[str]
+        :param used_scene: 根据使用场景过滤云连接实例列表。
+        :type used_scene: list[str]
         """
         
         
@@ -71,6 +75,7 @@ class ListCloudConnectionsRequest:
         self._status = None
         self._enterprise_project_id = None
         self._type = None
+        self._used_scene = None
         self.discriminator = None
 
         if limit is not None:
@@ -89,6 +94,8 @@ class ListCloudConnectionsRequest:
             self.enterprise_project_id = enterprise_project_id
         if type is not None:
             self.type = type
+        if used_scene is not None:
+            self.used_scene = used_scene
 
     @property
     def limit(self):
@@ -265,6 +272,28 @@ class ListCloudConnectionsRequest:
         :type type: list[str]
         """
         self._type = type
+
+    @property
+    def used_scene(self):
+        """Gets the used_scene of this ListCloudConnectionsRequest.
+
+        根据使用场景过滤云连接实例列表。
+
+        :return: The used_scene of this ListCloudConnectionsRequest.
+        :rtype: list[str]
+        """
+        return self._used_scene
+
+    @used_scene.setter
+    def used_scene(self, used_scene):
+        """Sets the used_scene of this ListCloudConnectionsRequest.
+
+        根据使用场景过滤云连接实例列表。
+
+        :param used_scene: The used_scene of this ListCloudConnectionsRequest.
+        :type used_scene: list[str]
+        """
+        self._used_scene = used_scene
 
     def to_dict(self):
         """Returns the model properties as a dict"""

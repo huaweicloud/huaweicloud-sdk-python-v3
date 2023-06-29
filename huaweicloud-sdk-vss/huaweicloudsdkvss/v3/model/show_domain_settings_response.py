@@ -44,7 +44,7 @@ class ShowDomainSettingsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param domain_id: 域名id
+        :param domain_id: 网站域名ID
         :type domain_id: str
         :param login_url: 网站需要登录时，设置登录页面
         :type login_url: str
@@ -58,7 +58,7 @@ class ShowDomainSettingsResponse(SdkResponse):
         :type verify_url: str
         :param http_headers: 设置自定义HTTP请求头
         :type http_headers: dict(str, str)
-        :param domain_name: 域名
+        :param domain_name: 网站域名
         :type domain_name: str
         """
         
@@ -95,7 +95,7 @@ class ShowDomainSettingsResponse(SdkResponse):
     def domain_id(self):
         """Gets the domain_id of this ShowDomainSettingsResponse.
 
-        域名id
+        网站域名ID
 
         :return: The domain_id of this ShowDomainSettingsResponse.
         :rtype: str
@@ -106,7 +106,7 @@ class ShowDomainSettingsResponse(SdkResponse):
     def domain_id(self, domain_id):
         """Sets the domain_id of this ShowDomainSettingsResponse.
 
-        域名id
+        网站域名ID
 
         :param domain_id: The domain_id of this ShowDomainSettingsResponse.
         :type domain_id: str
@@ -249,7 +249,7 @@ class ShowDomainSettingsResponse(SdkResponse):
     def domain_name(self):
         """Gets the domain_name of this ShowDomainSettingsResponse.
 
-        域名
+        网站域名
 
         :return: The domain_name of this ShowDomainSettingsResponse.
         :rtype: str
@@ -260,7 +260,7 @@ class ShowDomainSettingsResponse(SdkResponse):
     def domain_name(self, domain_name):
         """Sets the domain_name of this ShowDomainSettingsResponse.
 
-        域名
+        网站域名
 
         :param domain_name: The domain_name of this ShowDomainSettingsResponse.
         :type domain_name: str

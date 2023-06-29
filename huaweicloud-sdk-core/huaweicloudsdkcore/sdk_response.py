@@ -65,13 +65,13 @@ class FutureSdkResponse:
             for each in connectionError.args:
                 reason_str = str(each.reason)
                 if isinstance(each.reason, SSLError):
-                    self._logger.error("Sync SslHandShakeException occurred. %s" % reason_str)
+                    self._logger.error("Sync SslHandShakeException occurred. %s", reason_str)
                     raise exceptions.SslHandShakeException(reason_str)
                 if isinstance(each.reason, NewConnectionError):
                     if reason_str.endswith("getaddrinfo failed") or reason_str.endswith("Name or service not known"):
                         raise exceptions.HostUnreachableException(reason_str)
-                    self._logger.error("Sync ConnectionException occurred. %s" % reason_str)
+                    self._logger.error("Sync ConnectionException occurred. %s", reason_str)
                     raise exceptions.ConnectionException(reason_str)
-            self._logger.error("Sync ConnectionException occurred. %s" % str(connectionError))
+            self._logger.error("Sync ConnectionException occurred. %s", connectionError)
             raise exceptions.ConnectionException(str(connectionError))
         return response

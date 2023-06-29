@@ -43,7 +43,7 @@ class ListHostGroupsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param project_id: 项目id
+        :param project_id: 项目ID
         :type project_id: str
         :param region_name: 局点信息
         :type region_name: str
@@ -93,7 +93,7 @@ class ListHostGroupsRequest:
     def project_id(self):
         """Gets the project_id of this ListHostGroupsRequest.
 
-        项目id
+        项目ID
 
         :return: The project_id of this ListHostGroupsRequest.
         :rtype: str
@@ -104,7 +104,7 @@ class ListHostGroupsRequest:
     def project_id(self, project_id):
         """Sets the project_id of this ListHostGroupsRequest.
 
-        项目id
+        项目ID
 
         :param project_id: The project_id of this ListHostGroupsRequest.
         :type project_id: str

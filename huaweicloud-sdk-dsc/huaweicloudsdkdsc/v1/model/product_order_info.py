@@ -21,7 +21,7 @@ class ProductOrderInfo:
         'period_type': 'str',
         'period_num': 'int',
         'resource_id': 'str',
-        'product_info': 'list[ProductInfoBean]'
+        'product_info': 'ProductInfo'
     }
 
     attribute_map = {
@@ -45,8 +45,8 @@ class ProductOrderInfo:
         :type period_num: int
         :param resource_id: 资源ID
         :type resource_id: str
-        :param product_info: 产品信息
-        :type product_info: list[:class:`huaweicloudsdkdsc.v1.ProductInfoBean`]
+        :param product_info: 
+        :type product_info: :class:`huaweicloudsdkdsc.v1.ProductInfo`
         """
         
         
@@ -161,10 +161,8 @@ class ProductOrderInfo:
     def product_info(self):
         """Gets the product_info of this ProductOrderInfo.
 
-        产品信息
-
         :return: The product_info of this ProductOrderInfo.
-        :rtype: list[:class:`huaweicloudsdkdsc.v1.ProductInfoBean`]
+        :rtype: :class:`huaweicloudsdkdsc.v1.ProductInfo`
         """
         return self._product_info
 
@@ -172,10 +170,8 @@ class ProductOrderInfo:
     def product_info(self, product_info):
         """Sets the product_info of this ProductOrderInfo.
 
-        产品信息
-
         :param product_info: The product_info of this ProductOrderInfo.
-        :type product_info: list[:class:`huaweicloudsdkdsc.v1.ProductInfoBean`]
+        :type product_info: :class:`huaweicloudsdkdsc.v1.ProductInfo`
         """
         self._product_info = product_info
 

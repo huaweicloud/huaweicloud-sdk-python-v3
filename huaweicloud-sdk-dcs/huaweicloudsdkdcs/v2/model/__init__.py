@@ -87,6 +87,8 @@ from huaweicloudsdkdcs.v2.model.dim_child import DimChild
 from huaweicloudsdkdcs.v2.model.domain_name_entity import DomainNameEntity
 from huaweicloudsdkdcs.v2.model.domain_name_info import DomainNameInfo
 from huaweicloudsdkdcs.v2.model.download_backup_files_req import DownloadBackupFilesReq
+from huaweicloudsdkdcs.v2.model.execute_cluster_switchover_request import ExecuteClusterSwitchoverRequest
+from huaweicloudsdkdcs.v2.model.execute_cluster_switchover_response import ExecuteClusterSwitchoverResponse
 from huaweicloudsdkdcs.v2.model.features import Features
 from huaweicloudsdkdcs.v2.model.files import Files
 from huaweicloudsdkdcs.v2.model.flavor_az_object import FlavorAzObject
@@ -196,6 +198,8 @@ from huaweicloudsdkdcs.v2.model.show_instance_request import ShowInstanceRequest
 from huaweicloudsdkdcs.v2.model.show_instance_response import ShowInstanceResponse
 from huaweicloudsdkdcs.v2.model.show_ip_whitelist_request import ShowIpWhitelistRequest
 from huaweicloudsdkdcs.v2.model.show_ip_whitelist_response import ShowIpWhitelistResponse
+from huaweicloudsdkdcs.v2.model.show_job_info_request import ShowJobInfoRequest
+from huaweicloudsdkdcs.v2.model.show_job_info_response import ShowJobInfoResponse
 from huaweicloudsdkdcs.v2.model.show_migration_task_request import ShowMigrationTaskRequest
 from huaweicloudsdkdcs.v2.model.show_migration_task_response import ShowMigrationTaskResponse
 from huaweicloudsdkdcs.v2.model.show_migration_task_stats_request import ShowMigrationTaskStatsRequest

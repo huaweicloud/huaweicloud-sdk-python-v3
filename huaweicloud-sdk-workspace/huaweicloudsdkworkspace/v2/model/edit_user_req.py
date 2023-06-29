@@ -19,6 +19,8 @@ class EditUserReq:
     openapi_types = {
         'description': 'str',
         'user_email': 'str',
+        'user_phone': 'str',
+        'active_type': 'str',
         'account_expires': 'str',
         'enable_change_password': 'bool',
         'next_login_change_password': 'bool',
@@ -29,6 +31,8 @@ class EditUserReq:
     attribute_map = {
         'description': 'description',
         'user_email': 'user_email',
+        'user_phone': 'user_phone',
+        'active_type': 'active_type',
         'account_expires': 'account_expires',
         'enable_change_password': 'enable_change_password',
         'next_login_change_password': 'next_login_change_password',
@@ -36,7 +40,7 @@ class EditUserReq:
         'disabled': 'disabled'
     }
 
-    def __init__(self, description=None, user_email=None, account_expires=None, enable_change_password=None, next_login_change_password=None, password_never_expired=None, disabled=None):
+    def __init__(self, description=None, user_email=None, user_phone=None, active_type=None, account_expires=None, enable_change_password=None, next_login_change_password=None, password_never_expired=None, disabled=None):
         """EditUserReq
 
         The model defined in huaweicloud sdk
@@ -45,6 +49,10 @@ class EditUserReq:
         :type description: str
         :param user_email: 用户邮箱。
         :type user_email: str
+        :param user_phone: 手机号。
+        :type user_phone: str
+        :param active_type: 激活类型，默认为用户激活。 * USER_ACTIVATE： 用户激活 * ADMIN_ACTIVATE： 管理员激活
+        :type active_type: str
         :param account_expires: 账户过期时间，0表示永远不过期。
         :type account_expires: str
         :param enable_change_password: 是否允许修改密码，true表示允许，false表示不允许。
@@ -61,6 +69,8 @@ class EditUserReq:
 
         self._description = None
         self._user_email = None
+        self._user_phone = None
+        self._active_type = None
         self._account_expires = None
         self._enable_change_password = None
         self._next_login_change_password = None
@@ -72,6 +82,10 @@ class EditUserReq:
             self.description = description
         if user_email is not None:
             self.user_email = user_email
+        if user_phone is not None:
+            self.user_phone = user_phone
+        if active_type is not None:
+            self.active_type = active_type
         if account_expires is not None:
             self.account_expires = account_expires
         if enable_change_password is not None:
@@ -126,6 +140,50 @@ class EditUserReq:
         :type user_email: str
         """
         self._user_email = user_email
+
+    @property
+    def user_phone(self):
+        """Gets the user_phone of this EditUserReq.
+
+        手机号。
+
+        :return: The user_phone of this EditUserReq.
+        :rtype: str
+        """
+        return self._user_phone
+
+    @user_phone.setter
+    def user_phone(self, user_phone):
+        """Sets the user_phone of this EditUserReq.
+
+        手机号。
+
+        :param user_phone: The user_phone of this EditUserReq.
+        :type user_phone: str
+        """
+        self._user_phone = user_phone
+
+    @property
+    def active_type(self):
+        """Gets the active_type of this EditUserReq.
+
+        激活类型，默认为用户激活。 * USER_ACTIVATE： 用户激活 * ADMIN_ACTIVATE： 管理员激活
+
+        :return: The active_type of this EditUserReq.
+        :rtype: str
+        """
+        return self._active_type
+
+    @active_type.setter
+    def active_type(self, active_type):
+        """Sets the active_type of this EditUserReq.
+
+        激活类型，默认为用户激活。 * USER_ACTIVATE： 用户激活 * ADMIN_ACTIVATE： 管理员激活
+
+        :param active_type: The active_type of this EditUserReq.
+        :type active_type: str
+        """
+        self._active_type = active_type
 
     @property
     def account_expires(self):

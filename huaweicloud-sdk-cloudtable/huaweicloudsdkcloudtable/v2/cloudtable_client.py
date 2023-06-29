@@ -169,12 +169,10 @@ class CloudTableClient(Client):
         collection_formats = {}
 
         path_params = {}
-        if 'project_id' in local_var_params:
-            path_params['projectId'] = local_var_params['project_id']
         if 'cluster_id' in local_var_params:
-            path_params['clusterId'] = local_var_params['cluster_id']
+            path_params['cluster_id'] = local_var_params['cluster_id']
         if 'component_name' in local_var_params:
-            path_params['componentName'] = local_var_params['component_name']
+            path_params['component_name'] = local_var_params['component_name']
 
         query_params = []
 
@@ -198,7 +196,7 @@ class CloudTableClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v2/{projectId}/clusters/{clusterId}/components/{componentName}',
+            resource_path='/v2/{project_id}/clusters/{cluster_id}/components/{component_name}',
             method='POST',
             path_params=path_params,
             query_params=query_params,
@@ -233,10 +231,8 @@ class CloudTableClient(Client):
         collection_formats = {}
 
         path_params = {}
-        if 'project_id' in local_var_params:
-            path_params['projectId'] = local_var_params['project_id']
         if 'cluster_id' in local_var_params:
-            path_params['clusterId'] = local_var_params['cluster_id']
+            path_params['cluster_id'] = local_var_params['cluster_id']
 
         query_params = []
 
@@ -260,7 +256,7 @@ class CloudTableClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v2/{projectId}/clusters/{clusterId}/nodes',
+            resource_path='/v2/{project_id}/clusters/{cluster_id}/nodes',
             method='POST',
             path_params=path_params,
             query_params=query_params,
@@ -353,10 +349,8 @@ class CloudTableClient(Client):
         collection_formats = {}
 
         path_params = {}
-        if 'project_id' in local_var_params:
-            path_params['projectId'] = local_var_params['project_id']
         if 'cluster_id' in local_var_params:
-            path_params['clusterId'] = local_var_params['cluster_id']
+            path_params['cluster_id'] = local_var_params['cluster_id']
 
         query_params = []
 
@@ -380,7 +374,7 @@ class CloudTableClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v2/{projectId}/clusters/{clusterId}/restart',
+            resource_path='/v2/{project_id}/clusters/{cluster_id}/restart',
             method='POST',
             path_params=path_params,
             query_params=query_params,
@@ -473,10 +467,8 @@ class CloudTableClient(Client):
         collection_formats = {}
 
         path_params = {}
-        if 'project_id' in local_var_params:
-            path_params['projectId'] = local_var_params['project_id']
         if 'cluster_id' in local_var_params:
-            path_params['clusterId'] = local_var_params['cluster_id']
+            path_params['cluster_id'] = local_var_params['cluster_id']
 
         query_params = []
 
@@ -498,7 +490,7 @@ class CloudTableClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v2/{projectId}/clusters/{clusterId}/setting',
+            resource_path='/v2/{project_id}/clusters/{cluster_id}/setting',
             method='GET',
             path_params=path_params,
             query_params=query_params,
@@ -533,10 +525,8 @@ class CloudTableClient(Client):
         collection_formats = {}
 
         path_params = {}
-        if 'project_id' in local_var_params:
-            path_params['projectId'] = local_var_params['project_id']
         if 'cluster_id' in local_var_params:
-            path_params['clusterId'] = local_var_params['cluster_id']
+            path_params['cluster_id'] = local_var_params['cluster_id']
 
         query_params = []
 
@@ -560,7 +550,7 @@ class CloudTableClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v2/{projectId}/clusters/{clusterId}/setting',
+            resource_path='/v2/{project_id}/clusters/{cluster_id}/setting',
             method='PUT',
             path_params=path_params,
             query_params=query_params,

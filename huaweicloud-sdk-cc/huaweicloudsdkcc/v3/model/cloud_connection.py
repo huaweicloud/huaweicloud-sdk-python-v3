@@ -27,6 +27,7 @@ class CloudConnection:
         'created_at': 'datetime',
         'updated_at': 'datetime',
         'used_scene': 'str',
+        'tags': 'list[Tag]',
         'network_instance_number': 'int',
         'bandwidth_package_number': 'int',
         'inter_region_bandwidth_number': 'int'
@@ -43,12 +44,13 @@ class CloudConnection:
         'created_at': 'created_at',
         'updated_at': 'updated_at',
         'used_scene': 'used_scene',
+        'tags': 'tags',
         'network_instance_number': 'network_instance_number',
         'bandwidth_package_number': 'bandwidth_package_number',
         'inter_region_bandwidth_number': 'inter_region_bandwidth_number'
     }
 
-    def __init__(self, id=None, name=None, description=None, domain_id=None, enterprise_project_id=None, status=None, admin_state_up=None, created_at=None, updated_at=None, used_scene=None, network_instance_number=None, bandwidth_package_number=None, inter_region_bandwidth_number=None):
+    def __init__(self, id=None, name=None, description=None, domain_id=None, enterprise_project_id=None, status=None, admin_state_up=None, created_at=None, updated_at=None, used_scene=None, tags=None, network_instance_number=None, bandwidth_package_number=None, inter_region_bandwidth_number=None):
         """CloudConnection
 
         The model defined in huaweicloud sdk
@@ -73,6 +75,8 @@ class CloudConnection:
         :type updated_at: datetime
         :param used_scene: 云连接使用场景。 - VPC：虚拟私有云。
         :type used_scene: str
+        :param tags: 标签列表。
+        :type tags: list[:class:`huaweicloudsdkcc.v3.Tag`]
         :param network_instance_number: 云连接实例关联网络实例的个数。
         :type network_instance_number: int
         :param bandwidth_package_number: 云连接实例关联带宽包的个数。
@@ -93,6 +97,7 @@ class CloudConnection:
         self._created_at = None
         self._updated_at = None
         self._used_scene = None
+        self._tags = None
         self._network_instance_number = None
         self._bandwidth_package_number = None
         self._inter_region_bandwidth_number = None
@@ -118,6 +123,8 @@ class CloudConnection:
             self.updated_at = updated_at
         if used_scene is not None:
             self.used_scene = used_scene
+        if tags is not None:
+            self.tags = tags
         if network_instance_number is not None:
             self.network_instance_number = network_instance_number
         if bandwidth_package_number is not None:
@@ -344,6 +351,28 @@ class CloudConnection:
         :type used_scene: str
         """
         self._used_scene = used_scene
+
+    @property
+    def tags(self):
+        """Gets the tags of this CloudConnection.
+
+        标签列表。
+
+        :return: The tags of this CloudConnection.
+        :rtype: list[:class:`huaweicloudsdkcc.v3.Tag`]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this CloudConnection.
+
+        标签列表。
+
+        :param tags: The tags of this CloudConnection.
+        :type tags: list[:class:`huaweicloudsdkcc.v3.Tag`]
+        """
+        self._tags = tags
 
     @property
     def network_instance_number(self):

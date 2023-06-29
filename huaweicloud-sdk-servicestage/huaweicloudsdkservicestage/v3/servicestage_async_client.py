@@ -24,67 +24,6 @@ class ServiceStageAsyncClient(Client):
 
         return ClientBuilder(clazz)
 
-    def compare_component_configuration_async(self, request):
-        """比较不同版本组件配置信息
-
-        此API用来比较不同版本组件配置信息
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for CompareComponentConfiguration
-        :type request: :class:`huaweicloudsdkservicestage.v3.CompareComponentConfigurationRequest`
-        :rtype: :class:`huaweicloudsdkservicestage.v3.CompareComponentConfigurationResponse`
-        """
-        return self._compare_component_configuration_with_http_info(request)
-
-    def _compare_component_configuration_with_http_info(self, request):
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'component_id' in local_var_params:
-            path_params['component_id'] = local_var_params['component_id']
-        if 'application_id' in local_var_params:
-            path_params['application_id'] = local_var_params['application_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v3/{project_id}/cas/applications/{application_id}/components/{component_id}/configurations/compare',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CompareComponentConfigurationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
     def create_application_async(self, request):
         """创建应用
 
@@ -139,185 +78,6 @@ class ServiceStageAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='CreateApplicationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-    def create_component_async(self, request):
-        """创建组件
-
-        通过此API创建组件。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for CreateComponent
-        :type request: :class:`huaweicloudsdkservicestage.v3.CreateComponentRequest`
-        :rtype: :class:`huaweicloudsdkservicestage.v3.CreateComponentResponse`
-        """
-        return self._create_component_with_http_info(request)
-
-    def _create_component_with_http_info(self, request):
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'application_id' in local_var_params:
-            path_params['application_id'] = local_var_params['application_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v3/{project_id}/cas/applications/{application_id}/components',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateComponentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-    def create_component_configuration_async(self, request):
-        """创建组件配置
-
-        此API用来创建组件配置
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for CreateComponentConfiguration
-        :type request: :class:`huaweicloudsdkservicestage.v3.CreateComponentConfigurationRequest`
-        :rtype: :class:`huaweicloudsdkservicestage.v3.CreateComponentConfigurationResponse`
-        """
-        return self._create_component_configuration_with_http_info(request)
-
-    def _create_component_configuration_with_http_info(self, request):
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'application_id' in local_var_params:
-            path_params['application_id'] = local_var_params['application_id']
-        if 'component_id' in local_var_params:
-            path_params['component_id'] = local_var_params['component_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v3/{project_id}/cas/applications/{application_id}/components/{component_id}/configurations',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateComponentConfigurationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-    def create_environment_async(self, request):
-        """创建环境
-
-        环境是用于应用部署和运行的计算、存储、网络等基础设施的集合。Servicestage把相同VPC下的CCE集群加上多个ELB、RDS、DCS实例组合为一个环境，如：开发环境，测试环境，预生产环境，生产环境。环境内网络互通，可以按环境维度来管理资源、部署服务，减少具体基础设施运维管理的复杂性。
-        
-        此API用来创建环境。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for CreateEnvironment
-        :type request: :class:`huaweicloudsdkservicestage.v3.CreateEnvironmentRequest`
-        :rtype: :class:`huaweicloudsdkservicestage.v3.CreateEnvironmentResponse`
-        """
-        return self._create_environment_with_http_info(request)
-
-    def _create_environment_with_http_info(self, request):
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v3/{project_id}/cas/environments',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateEnvironmentResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -439,122 +199,6 @@ class ServiceStageAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-    def delete_component_async(self, request):
-        """根据应用组件ID删除应用组件
-
-        此API通过应用组件ID删除应用组件。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for DeleteComponent
-        :type request: :class:`huaweicloudsdkservicestage.v3.DeleteComponentRequest`
-        :rtype: :class:`huaweicloudsdkservicestage.v3.DeleteComponentResponse`
-        """
-        return self._delete_component_with_http_info(request)
-
-    def _delete_component_with_http_info(self, request):
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'application_id' in local_var_params:
-            path_params['application_id'] = local_var_params['application_id']
-        if 'component_id' in local_var_params:
-            path_params['component_id'] = local_var_params['component_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v3/{project_id}/cas/applications/{application_id}/components/{component_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteComponentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-    def delete_environment_async(self, request):
-        """根据环境ID删除环境
-
-        此API通过环境ID删除环境。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for DeleteEnvironment
-        :type request: :class:`huaweicloudsdkservicestage.v3.DeleteEnvironmentRequest`
-        :rtype: :class:`huaweicloudsdkservicestage.v3.DeleteEnvironmentResponse`
-        """
-        return self._delete_environment_with_http_info(request)
-
-    def _delete_environment_with_http_info(self, request):
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'environment_id' in local_var_params:
-            path_params['environment_id'] = local_var_params['environment_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v3/{project_id}/cas/environments/{environment_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteEnvironmentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
     def modify_application_async(self, request):
         """修改应用信息
 
@@ -668,185 +312,6 @@ class ServiceStageAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ModifyApplicationConfigurationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-    def modify_component_async(self, request):
-        """根据组件ID修改组件信息
-
-        此API通过组件ID修改组件信息。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ModifyComponent
-        :type request: :class:`huaweicloudsdkservicestage.v3.ModifyComponentRequest`
-        :rtype: :class:`huaweicloudsdkservicestage.v3.ModifyComponentResponse`
-        """
-        return self._modify_component_with_http_info(request)
-
-    def _modify_component_with_http_info(self, request):
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'application_id' in local_var_params:
-            path_params['application_id'] = local_var_params['application_id']
-        if 'component_id' in local_var_params:
-            path_params['component_id'] = local_var_params['component_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v3/{project_id}/cas/applications/{application_id}/components/{component_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ModifyComponentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-    def modify_environment_async(self, request):
-        """修改环境信息
-
-        此API通过环境ID修改环境信息。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ModifyEnvironment
-        :type request: :class:`huaweicloudsdkservicestage.v3.ModifyEnvironmentRequest`
-        :rtype: :class:`huaweicloudsdkservicestage.v3.ModifyEnvironmentResponse`
-        """
-        return self._modify_environment_with_http_info(request)
-
-    def _modify_environment_with_http_info(self, request):
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'environment_id' in local_var_params:
-            path_params['environment_id'] = local_var_params['environment_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v3/{project_id}/cas/environments/{environment_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ModifyEnvironmentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-    def modify_resource_in_environment_async(self, request):
-        """修改环境资源
-
-        此API用来修改环境资源
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ModifyResourceInEnvironment
-        :type request: :class:`huaweicloudsdkservicestage.v3.ModifyResourceInEnvironmentRequest`
-        :rtype: :class:`huaweicloudsdkservicestage.v3.ModifyResourceInEnvironmentResponse`
-        """
-        return self._modify_resource_in_environment_with_http_info(request)
-
-    def _modify_resource_in_environment_with_http_info(self, request):
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'environment_id' in local_var_params:
-            path_params['environment_id'] = local_var_params['environment_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v3/{project_id}/cas/environments/{environment_id}/resources',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ModifyResourceInEnvironmentResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1031,21 +496,21 @@ class ServiceStageAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-    def show_component_configuration_async(self, request):
-        """根据版本获取组件配置信息
+    def create_component_async(self, request):
+        """创建组件
 
-        此api用来根据版本获取组件配置信息
+        通过此API创建组件。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
 
-        :param request: Request instance for ShowComponentConfiguration
-        :type request: :class:`huaweicloudsdkservicestage.v3.ShowComponentConfigurationRequest`
-        :rtype: :class:`huaweicloudsdkservicestage.v3.ShowComponentConfigurationResponse`
+        :param request: Request instance for CreateComponent
+        :type request: :class:`huaweicloudsdkservicestage.v3.CreateComponentRequest`
+        :rtype: :class:`huaweicloudsdkservicestage.v3.CreateComponentResponse`
         """
-        return self._show_component_configuration_with_http_info(request)
+        return self._create_component_with_http_info(request)
 
-    def _show_component_configuration_with_http_info(self, request):
+    def _create_component_with_http_info(self, request):
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1053,28 +518,18 @@ class ServiceStageAsyncClient(Client):
         collection_formats = {}
 
         path_params = {}
-        if 'component_id' in local_var_params:
-            path_params['component_id'] = local_var_params['component_id']
         if 'application_id' in local_var_params:
             path_params['application_id'] = local_var_params['application_id']
-        if 'version' in local_var_params:
-            path_params['version'] = local_var_params['version']
 
         query_params = []
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-        if 'offset' in local_var_params:
-            query_params.append(('offset', local_var_params['offset']))
-        if 'order_by' in local_var_params:
-            query_params.append(('order_by', local_var_params['order_by']))
-        if 'order' in local_var_params:
-            query_params.append(('order', local_var_params['order']))
 
         header_params = {}
 
         form_params = {}
 
         body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
@@ -1086,35 +541,35 @@ class ServiceStageAsyncClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v3/{project_id}/cas/applications/{application_id}/components/{component_id}/configurations/{version}',
-            method='GET',
+            resource_path='/v3/{project_id}/cas/applications/{application_id}/components',
+            method='POST',
             path_params=path_params,
             query_params=query_params,
             header_params=header_params,
             body=body_params,
             post_params=form_params,
             cname=cname,
-            response_type='ShowComponentConfigurationResponse',
+            response_type='CreateComponentResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-    def show_component_configurations_async(self, request):
-        """获取组件配置信息
+    def delete_component_async(self, request):
+        """根据应用组件ID删除应用组件
 
-        此API用来获取组件配置信息
+        此API通过应用组件ID删除应用组件。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
 
-        :param request: Request instance for ShowComponentConfigurations
-        :type request: :class:`huaweicloudsdkservicestage.v3.ShowComponentConfigurationsRequest`
-        :rtype: :class:`huaweicloudsdkservicestage.v3.ShowComponentConfigurationsResponse`
+        :param request: Request instance for DeleteComponent
+        :type request: :class:`huaweicloudsdkservicestage.v3.DeleteComponentRequest`
+        :rtype: :class:`huaweicloudsdkservicestage.v3.DeleteComponentResponse`
         """
-        return self._show_component_configurations_with_http_info(request)
+        return self._delete_component_with_http_info(request)
 
-    def _show_component_configurations_with_http_info(self, request):
+    def _delete_component_with_http_info(self, request):
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1122,20 +577,12 @@ class ServiceStageAsyncClient(Client):
         collection_formats = {}
 
         path_params = {}
-        if 'component_id' in local_var_params:
-            path_params['component_id'] = local_var_params['component_id']
         if 'application_id' in local_var_params:
             path_params['application_id'] = local_var_params['application_id']
+        if 'component_id' in local_var_params:
+            path_params['component_id'] = local_var_params['component_id']
 
         query_params = []
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-        if 'offset' in local_var_params:
-            query_params.append(('offset', local_var_params['offset']))
-        if 'order_by' in local_var_params:
-            query_params.append(('order_by', local_var_params['order_by']))
-        if 'order' in local_var_params:
-            query_params.append(('order', local_var_params['order']))
 
         header_params = {}
 
@@ -1153,15 +600,76 @@ class ServiceStageAsyncClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v3/{project_id}/cas/applications/{application_id}/components/{component_id}/configurations',
-            method='GET',
+            resource_path='/v3/{project_id}/cas/applications/{application_id}/components/{component_id}',
+            method='DELETE',
             path_params=path_params,
             query_params=query_params,
             header_params=header_params,
             body=body_params,
             post_params=form_params,
             cname=cname,
-            response_type='ShowComponentConfigurationsResponse',
+            response_type='DeleteComponentResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def modify_component_async(self, request):
+        """根据组件ID修改组件信息
+
+        此API通过组件ID修改组件信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ModifyComponent
+        :type request: :class:`huaweicloudsdkservicestage.v3.ModifyComponentRequest`
+        :rtype: :class:`huaweicloudsdkservicestage.v3.ModifyComponentResponse`
+        """
+        return self._modify_component_with_http_info(request)
+
+    def _modify_component_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'application_id' in local_var_params:
+            path_params['application_id'] = local_var_params['application_id']
+        if 'component_id' in local_var_params:
+            path_params['component_id'] = local_var_params['component_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/cas/applications/{application_id}/components/{component_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ModifyComponentResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1427,6 +935,301 @@ class ServiceStageAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def update_component_action_async(self, request):
+        """对组件的操作
+
+        通过此API获取对组件的操作。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateComponentAction
+        :type request: :class:`huaweicloudsdkservicestage.v3.UpdateComponentActionRequest`
+        :rtype: :class:`huaweicloudsdkservicestage.v3.UpdateComponentActionResponse`
+        """
+        return self._update_component_action_with_http_info(request)
+
+    def _update_component_action_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'application_id' in local_var_params:
+            path_params['application_id'] = local_var_params['application_id']
+        if 'component_id' in local_var_params:
+            path_params['component_id'] = local_var_params['component_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/cas/applications/{application_id}/components/{component_id}/action',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateComponentActionResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_environment_async(self, request):
+        """创建环境
+
+        环境是用于应用部署和运行的计算、存储、网络等基础设施的集合。Servicestage把相同VPC下的CCE集群加上多个ELB、RDS、DCS实例组合为一个环境，如：开发环境，测试环境，预生产环境，生产环境。环境内网络互通，可以按环境维度来管理资源、部署服务，减少具体基础设施运维管理的复杂性。
+        
+        此API用来创建环境。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateEnvironment
+        :type request: :class:`huaweicloudsdkservicestage.v3.CreateEnvironmentRequest`
+        :rtype: :class:`huaweicloudsdkservicestage.v3.CreateEnvironmentResponse`
+        """
+        return self._create_environment_with_http_info(request)
+
+    def _create_environment_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/cas/environments',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateEnvironmentResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_environment_async(self, request):
+        """根据环境ID删除环境
+
+        此API通过环境ID删除环境。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteEnvironment
+        :type request: :class:`huaweicloudsdkservicestage.v3.DeleteEnvironmentRequest`
+        :rtype: :class:`huaweicloudsdkservicestage.v3.DeleteEnvironmentResponse`
+        """
+        return self._delete_environment_with_http_info(request)
+
+    def _delete_environment_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'environment_id' in local_var_params:
+            path_params['environment_id'] = local_var_params['environment_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/cas/environments/{environment_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteEnvironmentResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def modify_environment_async(self, request):
+        """修改环境信息
+
+        此API通过环境ID修改环境信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ModifyEnvironment
+        :type request: :class:`huaweicloudsdkservicestage.v3.ModifyEnvironmentRequest`
+        :rtype: :class:`huaweicloudsdkservicestage.v3.ModifyEnvironmentResponse`
+        """
+        return self._modify_environment_with_http_info(request)
+
+    def _modify_environment_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'environment_id' in local_var_params:
+            path_params['environment_id'] = local_var_params['environment_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/cas/environments/{environment_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ModifyEnvironmentResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def modify_resource_in_environment_async(self, request):
+        """修改环境资源
+
+        此API用来修改环境资源
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ModifyResourceInEnvironment
+        :type request: :class:`huaweicloudsdkservicestage.v3.ModifyResourceInEnvironmentRequest`
+        :rtype: :class:`huaweicloudsdkservicestage.v3.ModifyResourceInEnvironmentResponse`
+        """
+        return self._modify_resource_in_environment_with_http_info(request)
+
+    def _modify_resource_in_environment_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'environment_id' in local_var_params:
+            path_params['environment_id'] = local_var_params['environment_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/cas/environments/{environment_id}/resources',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ModifyResourceInEnvironmentResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def show_environment_info_async(self, request):
         """根据环境ID获取环境详细信息
 
@@ -1610,122 +1413,6 @@ class ServiceStageAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-    def show_runtime_stacks_async(self, request):
-        """获取所有技术栈
-
-        获取所有技术栈
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ShowRuntimeStacks
-        :type request: :class:`huaweicloudsdkservicestage.v3.ShowRuntimeStacksRequest`
-        :rtype: :class:`huaweicloudsdkservicestage.v3.ShowRuntimeStacksResponse`
-        """
-        return self._show_runtime_stacks_with_http_info(request)
-
-    def _show_runtime_stacks_with_http_info(self, request):
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v3/{project_id}/cas/runtimestacks',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowRuntimeStacksResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-    def update_component_action_async(self, request):
-        """对组件的操作
-
-        通过此API获取对组件的操作。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for UpdateComponentAction
-        :type request: :class:`huaweicloudsdkservicestage.v3.UpdateComponentActionRequest`
-        :rtype: :class:`huaweicloudsdkservicestage.v3.UpdateComponentActionResponse`
-        """
-        return self._update_component_action_with_http_info(request)
-
-    def _update_component_action_with_http_info(self, request):
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'application_id' in local_var_params:
-            path_params['application_id'] = local_var_params['application_id']
-        if 'component_id' in local_var_params:
-            path_params['component_id'] = local_var_params['component_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v3/{project_id}/cas/applications/{application_id}/components/{component_id}/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateComponentActionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
     def show_job_info_async(self, request):
         """get cas job infomation
 
@@ -1785,6 +1472,61 @@ class ServiceStageAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ShowJobInfoResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_runtime_stacks_async(self, request):
+        """获取所有技术栈
+
+        获取所有技术栈
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowRuntimeStacks
+        :type request: :class:`huaweicloudsdkservicestage.v3.ShowRuntimeStacksRequest`
+        :rtype: :class:`huaweicloudsdkservicestage.v3.ShowRuntimeStacksResponse`
+        """
+        return self._show_runtime_stacks_with_http_info(request)
+
+    def _show_runtime_stacks_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/cas/runtimestacks',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowRuntimeStacksResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

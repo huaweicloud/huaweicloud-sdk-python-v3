@@ -63,7 +63,7 @@ class ListRecordSetsByZoneRequest:
         :type offset: int
         :param tags: 资源标签。  取值格式：key1,value1|key2,value2  多个标签之间用\&quot;|\&quot;分开，每个标签的键值用英文逗号\&quot;,\&quot;相隔。
         :type tags: str
-        :param status: 待查询的Record Set的状态。  取值范围：ACTIVE、ERROR、DISABLE、FREEZE、PENDING_CREATE、PENDING_UPDATE、PENDING_DELETE
+        :param status: 待查询的Record Set的状态。 取值范围：ACTIVE、ERROR、DISABLE、FREEZE、PENDING_CREATE、PENDING_UPDATE、PENDING_DELETE
         :type status: str
         :param type: 待查询的Record Set的记录集类型。 公网域名场景的记录类型: A、AAAA、MX、CNAME、TXT、NS、SRV、CAA。 内网域名场景的记录类型: A、AAAA、MX、CNAME、TXT、SRV。
         :type type: str
@@ -253,7 +253,7 @@ class ListRecordSetsByZoneRequest:
     def status(self):
         """Gets the status of this ListRecordSetsByZoneRequest.
 
-        待查询的Record Set的状态。  取值范围：ACTIVE、ERROR、DISABLE、FREEZE、PENDING_CREATE、PENDING_UPDATE、PENDING_DELETE
+        待查询的Record Set的状态。 取值范围：ACTIVE、ERROR、DISABLE、FREEZE、PENDING_CREATE、PENDING_UPDATE、PENDING_DELETE
 
         :return: The status of this ListRecordSetsByZoneRequest.
         :rtype: str
@@ -264,7 +264,7 @@ class ListRecordSetsByZoneRequest:
     def status(self, status):
         """Sets the status of this ListRecordSetsByZoneRequest.
 
-        待查询的Record Set的状态。  取值范围：ACTIVE、ERROR、DISABLE、FREEZE、PENDING_CREATE、PENDING_UPDATE、PENDING_DELETE
+        待查询的Record Set的状态。 取值范围：ACTIVE、ERROR、DISABLE、FREEZE、PENDING_CREATE、PENDING_UPDATE、PENDING_DELETE
 
         :param status: The status of this ListRecordSetsByZoneRequest.
         :type status: str

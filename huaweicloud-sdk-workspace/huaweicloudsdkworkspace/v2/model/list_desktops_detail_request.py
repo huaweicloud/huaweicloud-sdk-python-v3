@@ -25,7 +25,8 @@ class ListDesktopsDetailRequest:
         'limit': 'int',
         'desktop_id': 'str',
         'desktop_type': 'str',
-        'tag': 'str'
+        'tag': 'str',
+        'pool_id': 'str'
     }
 
     attribute_map = {
@@ -37,10 +38,11 @@ class ListDesktopsDetailRequest:
         'limit': 'limit',
         'desktop_id': 'desktop_id',
         'desktop_type': 'desktop_type',
-        'tag': 'tag'
+        'tag': 'tag',
+        'pool_id': 'pool_id'
     }
 
-    def __init__(self, status=None, user_name=None, computer_name=None, desktop_ip=None, offset=None, limit=None, desktop_id=None, desktop_type=None, tag=None):
+    def __init__(self, status=None, user_name=None, computer_name=None, desktop_ip=None, offset=None, limit=None, desktop_id=None, desktop_type=None, tag=None, pool_id=None):
         """ListDesktopsDetailRequest
 
         The model defined in huaweicloud sdk
@@ -63,6 +65,8 @@ class ListDesktopsDetailRequest:
         :type desktop_type: str
         :param tag: 桌面的标签。样例：  - key1&#x3D;value1。 - key1&#x3D;value1，key2&#x3D;value2。
         :type tag: str
+        :param pool_id: 桌面池ID,多个桌面池ID用逗号隔开。
+        :type pool_id: str
         """
         
         
@@ -76,6 +80,7 @@ class ListDesktopsDetailRequest:
         self._desktop_id = None
         self._desktop_type = None
         self._tag = None
+        self._pool_id = None
         self.discriminator = None
 
         if status is not None:
@@ -96,6 +101,8 @@ class ListDesktopsDetailRequest:
             self.desktop_type = desktop_type
         if tag is not None:
             self.tag = tag
+        if pool_id is not None:
+            self.pool_id = pool_id
 
     @property
     def status(self):
@@ -294,6 +301,28 @@ class ListDesktopsDetailRequest:
         :type tag: str
         """
         self._tag = tag
+
+    @property
+    def pool_id(self):
+        """Gets the pool_id of this ListDesktopsDetailRequest.
+
+        桌面池ID,多个桌面池ID用逗号隔开。
+
+        :return: The pool_id of this ListDesktopsDetailRequest.
+        :rtype: str
+        """
+        return self._pool_id
+
+    @pool_id.setter
+    def pool_id(self, pool_id):
+        """Sets the pool_id of this ListDesktopsDetailRequest.
+
+        桌面池ID,多个桌面池ID用逗号隔开。
+
+        :param pool_id: The pool_id of this ListDesktopsDetailRequest.
+        :type pool_id: str
+        """
+        self._pool_id = pool_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

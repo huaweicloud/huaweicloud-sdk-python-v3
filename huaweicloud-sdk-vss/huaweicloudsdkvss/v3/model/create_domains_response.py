@@ -38,7 +38,7 @@ class CreateDomainsResponse(SdkResponse):
         :type info_code: str
         :param info_description: 返回的提示信息
         :type info_description: str
-        :param domain_id: 域名ID
+        :param domain_id: 网站域名ID
         :type domain_id: str
         """
         
@@ -104,7 +104,7 @@ class CreateDomainsResponse(SdkResponse):
     def domain_id(self):
         """Gets the domain_id of this CreateDomainsResponse.
 
-        域名ID
+        网站域名ID
 
         :return: The domain_id of this CreateDomainsResponse.
         :rtype: str
@@ -115,7 +115,7 @@ class CreateDomainsResponse(SdkResponse):
     def domain_id(self, domain_id):
         """Sets the domain_id of this CreateDomainsResponse.
 
-        域名ID
+        网站域名ID
 
         :param domain_id: The domain_id of this CreateDomainsResponse.
         :type domain_id: str

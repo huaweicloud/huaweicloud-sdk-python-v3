@@ -38,8 +38,7 @@ class MaskSwitchRequest:
         self._status = None
         self.discriminator = None
 
-        if status is not None:
-            self.status = status
+        self.status = status
 
     @property
     def status(self):

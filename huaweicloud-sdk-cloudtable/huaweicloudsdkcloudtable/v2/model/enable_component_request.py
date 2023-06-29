@@ -17,7 +17,6 @@ class EnableComponentRequest:
     sensitive_list = []
 
     openapi_types = {
-        'project_id': 'str',
         'cluster_id': 'str',
         'component_name': 'str',
         'x_language': 'str',
@@ -25,20 +24,17 @@ class EnableComponentRequest:
     }
 
     attribute_map = {
-        'project_id': 'projectId',
-        'cluster_id': 'clusterId',
-        'component_name': 'componentName',
+        'cluster_id': 'cluster_id',
+        'component_name': 'component_name',
         'x_language': 'X-Language',
         'body': 'body'
     }
 
-    def __init__(self, project_id=None, cluster_id=None, component_name=None, x_language=None, body=None):
+    def __init__(self, cluster_id=None, component_name=None, x_language=None, body=None):
         """EnableComponentRequest
 
         The model defined in huaweicloud sdk
 
-        :param project_id: 租户ID
-        :type project_id: str
         :param cluster_id: 集群ID
         :type cluster_id: str
         :param component_name: 组件类型，取值为tsdb
@@ -51,42 +47,18 @@ class EnableComponentRequest:
         
         
 
-        self._project_id = None
         self._cluster_id = None
         self._component_name = None
         self._x_language = None
         self._body = None
         self.discriminator = None
 
-        self.project_id = project_id
         self.cluster_id = cluster_id
         self.component_name = component_name
         if x_language is not None:
             self.x_language = x_language
         if body is not None:
             self.body = body
-
-    @property
-    def project_id(self):
-        """Gets the project_id of this EnableComponentRequest.
-
-        租户ID
-
-        :return: The project_id of this EnableComponentRequest.
-        :rtype: str
-        """
-        return self._project_id
-
-    @project_id.setter
-    def project_id(self, project_id):
-        """Sets the project_id of this EnableComponentRequest.
-
-        租户ID
-
-        :param project_id: The project_id of this EnableComponentRequest.
-        :type project_id: str
-        """
-        self._project_id = project_id
 
     @property
     def cluster_id(self):

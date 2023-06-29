@@ -34,7 +34,7 @@ class BatchRunDesktopsResponse(SdkResponse):
 
         :param failed_operation_list: 操作失败桌面列表。
         :type failed_operation_list: list[:class:`huaweicloudsdkworkspace.v2.VmOperateResult`]
-        :param job_id: 任务ID。
+        :param job_id: 任务ID，冷迁移启动时返回。
         :type job_id: str
         """
         
@@ -75,7 +75,7 @@ class BatchRunDesktopsResponse(SdkResponse):
     def job_id(self):
         """Gets the job_id of this BatchRunDesktopsResponse.
 
-        任务ID。
+        任务ID，冷迁移启动时返回。
 
         :return: The job_id of this BatchRunDesktopsResponse.
         :rtype: str
@@ -86,7 +86,7 @@ class BatchRunDesktopsResponse(SdkResponse):
     def job_id(self, job_id):
         """Sets the job_id of this BatchRunDesktopsResponse.
 
-        任务ID。
+        任务ID，冷迁移启动时返回。
 
         :param job_id: The job_id of this BatchRunDesktopsResponse.
         :type job_id: str

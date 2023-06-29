@@ -31,7 +31,7 @@ class ListTagsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param resource_type: 资源类型: - cc: 云连接 - bwp: 带宽包
+        :param resource_type: 资源类型: - cloud-connection: 云连接 - bandwidth-package: 带宽包
         :type resource_type: str
         :param resource_id: 资源ID
         :type resource_id: str
@@ -50,7 +50,7 @@ class ListTagsRequest:
     def resource_type(self):
         """Gets the resource_type of this ListTagsRequest.
 
-        资源类型: - cc: 云连接 - bwp: 带宽包
+        资源类型: - cloud-connection: 云连接 - bandwidth-package: 带宽包
 
         :return: The resource_type of this ListTagsRequest.
         :rtype: str
@@ -61,7 +61,7 @@ class ListTagsRequest:
     def resource_type(self, resource_type):
         """Sets the resource_type of this ListTagsRequest.
 
-        资源类型: - cc: 云连接 - bwp: 带宽包
+        资源类型: - cloud-connection: 云连接 - bandwidth-package: 带宽包
 
         :param resource_type: The resource_type of this ListTagsRequest.
         :type resource_type: str

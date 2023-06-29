@@ -27,7 +27,7 @@ class DesktopDetailInfo:
         'status': 'str',
         'task_status': 'str',
         'created': 'str',
-        'security_groups': 'list[SecurityGroupInfo]',
+        'security_groups': 'list[SecurityGroup]',
         'login_status': 'str',
         'user_name': 'str',
         'product_id': 'str',
@@ -42,7 +42,9 @@ class DesktopDetailInfo:
         'os_version': 'str',
         'sid': 'str',
         'order_id': 'str',
-        'tags': 'list[Tag]'
+        'tags': 'list[Tag]',
+        'internet_mode': 'str',
+        'is_attaching_eip': 'bool'
     }
 
     attribute_map = {
@@ -71,10 +73,12 @@ class DesktopDetailInfo:
         'os_version': 'os_version',
         'sid': 'sid',
         'order_id': 'order_id',
-        'tags': 'tags'
+        'tags': 'tags',
+        'internet_mode': 'internet_mode',
+        'is_attaching_eip': 'is_attaching_eip'
     }
 
-    def __init__(self, desktop_id=None, computer_name=None, addresses=None, ip_addresses=None, desktop_type=None, metadata=None, flavor=None, status=None, task_status=None, created=None, security_groups=None, login_status=None, user_name=None, product_id=None, root_volume=None, data_volumes=None, user_group=None, availability_zone=None, site_type=None, site_name=None, product=None, ou_name=None, os_version=None, sid=None, order_id=None, tags=None):
+    def __init__(self, desktop_id=None, computer_name=None, addresses=None, ip_addresses=None, desktop_type=None, metadata=None, flavor=None, status=None, task_status=None, created=None, security_groups=None, login_status=None, user_name=None, product_id=None, root_volume=None, data_volumes=None, user_group=None, availability_zone=None, site_type=None, site_name=None, product=None, ou_name=None, os_version=None, sid=None, order_id=None, tags=None, internet_mode=None, is_attaching_eip=None):
         """DesktopDetailInfo
 
         The model defined in huaweicloud sdk
@@ -100,7 +104,7 @@ class DesktopDetailInfo:
         :param created: 桌面创建时间。
         :type created: str
         :param security_groups: 桌面安全组。
-        :type security_groups: list[:class:`huaweicloudsdkworkspace.v2.SecurityGroupInfo`]
+        :type security_groups: list[:class:`huaweicloudsdkworkspace.v2.SecurityGroup`]
         :param login_status: 桌面的登录状态。  - UNREGISTER：表示桌面未注册时的状态（桌面启动后，会自动注册）。关机后也会出现未注册的状态。 - REGISTERED：表示桌面注册以后，等待用户连接的状态。 - CONNECTED：表示用户已经成功登录，正在使用桌面。 - DISCONNECTED：表示桌面与客户端断开会话后显示的状态，可能为关闭客户端窗口，或客户端与桌面网络断开引起。
         :type login_status: str
         :param user_name: 桌面所属用户。
@@ -131,6 +135,10 @@ class DesktopDetailInfo:
         :type order_id: str
         :param tags: 桌面标签列表。
         :type tags: list[:class:`huaweicloudsdkworkspace.v2.Tag`]
+        :param internet_mode: 上网方式。 - NAT：表示NAT上网方式。 - EIP：表示EIP上网方式。 - BOTH：表示两种上网方式都支持。
+        :type internet_mode: str
+        :param is_attaching_eip: 桌面是否正在绑定EIP。
+        :type is_attaching_eip: bool
         """
         
         
@@ -161,6 +169,8 @@ class DesktopDetailInfo:
         self._sid = None
         self._order_id = None
         self._tags = None
+        self._internet_mode = None
+        self._is_attaching_eip = None
         self.discriminator = None
 
         if desktop_id is not None:
@@ -215,6 +225,10 @@ class DesktopDetailInfo:
             self.order_id = order_id
         if tags is not None:
             self.tags = tags
+        if internet_mode is not None:
+            self.internet_mode = internet_mode
+        if is_attaching_eip is not None:
+            self.is_attaching_eip = is_attaching_eip
 
     @property
     def desktop_id(self):
@@ -439,7 +453,7 @@ class DesktopDetailInfo:
         桌面安全组。
 
         :return: The security_groups of this DesktopDetailInfo.
-        :rtype: list[:class:`huaweicloudsdkworkspace.v2.SecurityGroupInfo`]
+        :rtype: list[:class:`huaweicloudsdkworkspace.v2.SecurityGroup`]
         """
         return self._security_groups
 
@@ -450,7 +464,7 @@ class DesktopDetailInfo:
         桌面安全组。
 
         :param security_groups: The security_groups of this DesktopDetailInfo.
-        :type security_groups: list[:class:`huaweicloudsdkworkspace.v2.SecurityGroupInfo`]
+        :type security_groups: list[:class:`huaweicloudsdkworkspace.v2.SecurityGroup`]
         """
         self._security_groups = security_groups
 
@@ -775,6 +789,50 @@ class DesktopDetailInfo:
         :type tags: list[:class:`huaweicloudsdkworkspace.v2.Tag`]
         """
         self._tags = tags
+
+    @property
+    def internet_mode(self):
+        """Gets the internet_mode of this DesktopDetailInfo.
+
+        上网方式。 - NAT：表示NAT上网方式。 - EIP：表示EIP上网方式。 - BOTH：表示两种上网方式都支持。
+
+        :return: The internet_mode of this DesktopDetailInfo.
+        :rtype: str
+        """
+        return self._internet_mode
+
+    @internet_mode.setter
+    def internet_mode(self, internet_mode):
+        """Sets the internet_mode of this DesktopDetailInfo.
+
+        上网方式。 - NAT：表示NAT上网方式。 - EIP：表示EIP上网方式。 - BOTH：表示两种上网方式都支持。
+
+        :param internet_mode: The internet_mode of this DesktopDetailInfo.
+        :type internet_mode: str
+        """
+        self._internet_mode = internet_mode
+
+    @property
+    def is_attaching_eip(self):
+        """Gets the is_attaching_eip of this DesktopDetailInfo.
+
+        桌面是否正在绑定EIP。
+
+        :return: The is_attaching_eip of this DesktopDetailInfo.
+        :rtype: bool
+        """
+        return self._is_attaching_eip
+
+    @is_attaching_eip.setter
+    def is_attaching_eip(self, is_attaching_eip):
+        """Sets the is_attaching_eip of this DesktopDetailInfo.
+
+        桌面是否正在绑定EIP。
+
+        :param is_attaching_eip: The is_attaching_eip of this DesktopDetailInfo.
+        :type is_attaching_eip: bool
+        """
+        self._is_attaching_eip = is_attaching_eip
 
     def to_dict(self):
         """Returns the model properties as a dict"""

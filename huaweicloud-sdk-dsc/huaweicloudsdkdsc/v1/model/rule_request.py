@@ -78,24 +78,17 @@ class RuleRequest:
         self._rule_type = None
         self.discriminator = None
 
-        if category is not None:
-            self.category = category
+        self.category = category
         if id is not None:
             self.id = id
-        if logic_operator is not None:
-            self.logic_operator = logic_operator
-        if min_match is not None:
-            self.min_match = min_match
-        if risk_level is not None:
-            self.risk_level = risk_level
-        if rule_content is not None:
-            self.rule_content = rule_content
+        self.logic_operator = logic_operator
+        self.min_match = min_match
+        self.risk_level = risk_level
+        self.rule_content = rule_content
         if rule_desc is not None:
             self.rule_desc = rule_desc
-        if rule_name is not None:
-            self.rule_name = rule_name
-        if rule_type is not None:
-            self.rule_type = rule_type
+        self.rule_name = rule_name
+        self.rule_type = rule_type
 
     @property
     def category(self):

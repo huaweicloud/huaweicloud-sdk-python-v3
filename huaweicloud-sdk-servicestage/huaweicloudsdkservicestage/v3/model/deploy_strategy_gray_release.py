@@ -20,25 +20,17 @@ class DeployStrategyGrayRelease:
         'type': 'str',
         'first_batch_weight': 'int',
         'first_batch_replica': 'int',
-        'remaining_batch': 'int',
-        'deployment_mode': 'int',
-        'replica_surge_mode': 'str',
-        'rule_match_mode': 'str',
-        'rules': 'list[DeployStrategyGrayReleaseRules]'
+        'remaining_batch': 'int'
     }
 
     attribute_map = {
         'type': 'type',
         'first_batch_weight': 'first_batch_weight',
         'first_batch_replica': 'first_batch_replica',
-        'remaining_batch': 'remaining_batch',
-        'deployment_mode': 'deployment_mode',
-        'replica_surge_mode': 'replica_surge_mode',
-        'rule_match_mode': 'rule_match_mode',
-        'rules': 'rules'
+        'remaining_batch': 'remaining_batch'
     }
 
-    def __init__(self, type=None, first_batch_weight=None, first_batch_replica=None, remaining_batch=None, deployment_mode=None, replica_surge_mode=None, rule_match_mode=None, rules=None):
+    def __init__(self, type=None, first_batch_weight=None, first_batch_replica=None, remaining_batch=None):
         """DeployStrategyGrayRelease
 
         The model defined in huaweicloud sdk
@@ -51,14 +43,6 @@ class DeployStrategyGrayRelease:
         :type first_batch_replica: int
         :param remaining_batch: 
         :type remaining_batch: int
-        :param deployment_mode: 
-        :type deployment_mode: int
-        :param replica_surge_mode: 
-        :type replica_surge_mode: str
-        :param rule_match_mode: 
-        :type rule_match_mode: str
-        :param rules: 
-        :type rules: list[:class:`huaweicloudsdkservicestage.v3.DeployStrategyGrayReleaseRules`]
         """
         
         
@@ -67,10 +51,6 @@ class DeployStrategyGrayRelease:
         self._first_batch_weight = None
         self._first_batch_replica = None
         self._remaining_batch = None
-        self._deployment_mode = None
-        self._replica_surge_mode = None
-        self._rule_match_mode = None
-        self._rules = None
         self.discriminator = None
 
         if type is not None:
@@ -81,14 +61,6 @@ class DeployStrategyGrayRelease:
             self.first_batch_replica = first_batch_replica
         if remaining_batch is not None:
             self.remaining_batch = remaining_batch
-        if deployment_mode is not None:
-            self.deployment_mode = deployment_mode
-        if replica_surge_mode is not None:
-            self.replica_surge_mode = replica_surge_mode
-        if rule_match_mode is not None:
-            self.rule_match_mode = rule_match_mode
-        if rules is not None:
-            self.rules = rules
 
     @property
     def type(self):
@@ -165,78 +137,6 @@ class DeployStrategyGrayRelease:
         :type remaining_batch: int
         """
         self._remaining_batch = remaining_batch
-
-    @property
-    def deployment_mode(self):
-        """Gets the deployment_mode of this DeployStrategyGrayRelease.
-
-        :return: The deployment_mode of this DeployStrategyGrayRelease.
-        :rtype: int
-        """
-        return self._deployment_mode
-
-    @deployment_mode.setter
-    def deployment_mode(self, deployment_mode):
-        """Sets the deployment_mode of this DeployStrategyGrayRelease.
-
-        :param deployment_mode: The deployment_mode of this DeployStrategyGrayRelease.
-        :type deployment_mode: int
-        """
-        self._deployment_mode = deployment_mode
-
-    @property
-    def replica_surge_mode(self):
-        """Gets the replica_surge_mode of this DeployStrategyGrayRelease.
-
-        :return: The replica_surge_mode of this DeployStrategyGrayRelease.
-        :rtype: str
-        """
-        return self._replica_surge_mode
-
-    @replica_surge_mode.setter
-    def replica_surge_mode(self, replica_surge_mode):
-        """Sets the replica_surge_mode of this DeployStrategyGrayRelease.
-
-        :param replica_surge_mode: The replica_surge_mode of this DeployStrategyGrayRelease.
-        :type replica_surge_mode: str
-        """
-        self._replica_surge_mode = replica_surge_mode
-
-    @property
-    def rule_match_mode(self):
-        """Gets the rule_match_mode of this DeployStrategyGrayRelease.
-
-        :return: The rule_match_mode of this DeployStrategyGrayRelease.
-        :rtype: str
-        """
-        return self._rule_match_mode
-
-    @rule_match_mode.setter
-    def rule_match_mode(self, rule_match_mode):
-        """Sets the rule_match_mode of this DeployStrategyGrayRelease.
-
-        :param rule_match_mode: The rule_match_mode of this DeployStrategyGrayRelease.
-        :type rule_match_mode: str
-        """
-        self._rule_match_mode = rule_match_mode
-
-    @property
-    def rules(self):
-        """Gets the rules of this DeployStrategyGrayRelease.
-
-        :return: The rules of this DeployStrategyGrayRelease.
-        :rtype: list[:class:`huaweicloudsdkservicestage.v3.DeployStrategyGrayReleaseRules`]
-        """
-        return self._rules
-
-    @rules.setter
-    def rules(self, rules):
-        """Sets the rules of this DeployStrategyGrayRelease.
-
-        :param rules: The rules of this DeployStrategyGrayRelease.
-        :type rules: list[:class:`huaweicloudsdkservicestage.v3.DeployStrategyGrayReleaseRules`]
-        """
-        self._rules = rules
 
     def to_dict(self):
         """Returns the model properties as a dict"""

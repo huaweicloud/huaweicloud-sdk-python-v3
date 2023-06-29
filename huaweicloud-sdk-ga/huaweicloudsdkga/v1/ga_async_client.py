@@ -1224,6 +1224,539 @@ class GaAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def add_ip_group_ip_async(self, request):
+        """添加IP地址组中的IP网段
+
+        添加IP地址组中的IP网段。
+        该接口属于异步接口，接口返回后，后台的添加任务仍在执行；可以使用查询IP地址组详情接口查询状态，当IP地址组状态为ACTIVE时，表示条目添加完成。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for AddIpGroupIp
+        :type request: :class:`huaweicloudsdkga.v1.AddIpGroupIpRequest`
+        :rtype: :class:`huaweicloudsdkga.v1.AddIpGroupIpResponse`
+        """
+        return self._add_ip_group_ip_with_http_info(request)
+
+    def _add_ip_group_ip_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'ip_group_id' in local_var_params:
+            path_params['ip_group_id'] = local_var_params['ip_group_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/ip-groups/{ip_group_id}/add-ips',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='AddIpGroupIpResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def associate_listener_async(self, request):
+        """绑定IP地址组与监听器
+
+        绑定IP地址组与监听器。
+        该接口属于异步接口，接口返回后，后台的绑定任务仍在执行；可以使用查询IP地址组详情接口查询状态，当IP地址组状态为ACTIVE时，表示绑定完成。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for AssociateListener
+        :type request: :class:`huaweicloudsdkga.v1.AssociateListenerRequest`
+        :rtype: :class:`huaweicloudsdkga.v1.AssociateListenerResponse`
+        """
+        return self._associate_listener_with_http_info(request)
+
+    def _associate_listener_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'ip_group_id' in local_var_params:
+            path_params['ip_group_id'] = local_var_params['ip_group_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/ip-groups/{ip_group_id}/associate-listener',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='AssociateListenerResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_ip_group_async(self, request):
+        """创建IP地址组
+
+        创建IP地址组。
+        该接口属于异步接口，会先返回一个IP地址组ID，但后台的创建任务仍在执行；可以使用查询IP地址组详情接口查询状态，当IP地址组状态为ACTIVE时，表示IP地址组创建完成。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateIpGroup
+        :type request: :class:`huaweicloudsdkga.v1.CreateIpGroupRequest`
+        :rtype: :class:`huaweicloudsdkga.v1.CreateIpGroupResponse`
+        """
+        return self._create_ip_group_with_http_info(request)
+
+    def _create_ip_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/ip-groups',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateIpGroupResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_ip_group_async(self, request):
+        """删除IP地址组
+
+        删除IP地址组。
+        该接口属于异步接口，接口返回后，后台的删除任务仍在执行；可以使用查询IP地址组详情接口查询状态，当查询不到该IP地址组时，表示删除完成；删除IP地址组时，若IP地址组已经绑定了监听器，则需要先解绑IP地址组与监听器，再进行删除。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteIpGroup
+        :type request: :class:`huaweicloudsdkga.v1.DeleteIpGroupRequest`
+        :rtype: :class:`huaweicloudsdkga.v1.DeleteIpGroupResponse`
+        """
+        return self._delete_ip_group_with_http_info(request)
+
+    def _delete_ip_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'ip_group_id' in local_var_params:
+            path_params['ip_group_id'] = local_var_params['ip_group_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/ip-groups/{ip_group_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteIpGroupResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def disassociate_listener_async(self, request):
+        """解绑IP地址组与监听器
+
+        解绑IP地址组与监听器。
+        该接口属于异步接口，接口返回后，后台的解绑任务仍在执行；可以使用查询IP地址组详情接口查询状态，当IP地址组状态为ACTIVE时，表示解绑完成。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DisassociateListener
+        :type request: :class:`huaweicloudsdkga.v1.DisassociateListenerRequest`
+        :rtype: :class:`huaweicloudsdkga.v1.DisassociateListenerResponse`
+        """
+        return self._disassociate_listener_with_http_info(request)
+
+    def _disassociate_listener_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'ip_group_id' in local_var_params:
+            path_params['ip_group_id'] = local_var_params['ip_group_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/ip-groups/{ip_group_id}/disassociate-listener',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DisassociateListenerResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_ip_groups_async(self, request):
+        """查询IP地址组列表
+
+        查询IP地址组列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListIpGroups
+        :type request: :class:`huaweicloudsdkga.v1.ListIpGroupsRequest`
+        :rtype: :class:`huaweicloudsdkga.v1.ListIpGroupsResponse`
+        """
+        return self._list_ip_groups_with_http_info(request)
+
+    def _list_ip_groups_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'listener_id' in local_var_params:
+            query_params.append(('listener_id', local_var_params['listener_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/ip-groups',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListIpGroupsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def remove_ip_group_ip_async(self, request):
+        """删除IP地址组中的IP网段
+
+        删除IP地址组中的IP网段。
+        该接口属于异步接口，接口返回后，后台的删除任务仍在执行；可以使用查询IP地址组详情接口查询状态，当IP地址组状态为ACTIVE时，表示条目删除完成。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for RemoveIpGroupIp
+        :type request: :class:`huaweicloudsdkga.v1.RemoveIpGroupIpRequest`
+        :rtype: :class:`huaweicloudsdkga.v1.RemoveIpGroupIpResponse`
+        """
+        return self._remove_ip_group_ip_with_http_info(request)
+
+    def _remove_ip_group_ip_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'ip_group_id' in local_var_params:
+            path_params['ip_group_id'] = local_var_params['ip_group_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/ip-groups/{ip_group_id}/remove-ips',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='RemoveIpGroupIpResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_ip_group_async(self, request):
+        """查询IP地址组详情
+
+        查询IP地址组详情。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowIpGroup
+        :type request: :class:`huaweicloudsdkga.v1.ShowIpGroupRequest`
+        :rtype: :class:`huaweicloudsdkga.v1.ShowIpGroupResponse`
+        """
+        return self._show_ip_group_with_http_info(request)
+
+    def _show_ip_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'ip_group_id' in local_var_params:
+            path_params['ip_group_id'] = local_var_params['ip_group_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/ip-groups/{ip_group_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowIpGroupResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_ip_group_async(self, request):
+        """更新IP地址组
+
+        更新IP地址组。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateIpGroup
+        :type request: :class:`huaweicloudsdkga.v1.UpdateIpGroupRequest`
+        :rtype: :class:`huaweicloudsdkga.v1.UpdateIpGroupResponse`
+        """
+        return self._update_ip_group_with_http_info(request)
+
+    def _update_ip_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'ip_group_id' in local_var_params:
+            path_params['ip_group_id'] = local_var_params['ip_group_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/ip-groups/{ip_group_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateIpGroupResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def create_listener_async(self, request):
         """创建监听器
 

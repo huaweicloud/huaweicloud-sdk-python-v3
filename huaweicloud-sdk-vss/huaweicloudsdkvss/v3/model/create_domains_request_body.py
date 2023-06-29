@@ -31,9 +31,9 @@ class CreateDomainsRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param domain_name: 域名
+        :param domain_name: 网站域名
         :type domain_name: str
-        :param alias: 域名的别名
+        :param alias: 网站域名的别名
         :type alias: str
         """
         
@@ -50,7 +50,7 @@ class CreateDomainsRequestBody:
     def domain_name(self):
         """Gets the domain_name of this CreateDomainsRequestBody.
 
-        域名
+        网站域名
 
         :return: The domain_name of this CreateDomainsRequestBody.
         :rtype: str
@@ -61,7 +61,7 @@ class CreateDomainsRequestBody:
     def domain_name(self, domain_name):
         """Sets the domain_name of this CreateDomainsRequestBody.
 
-        域名
+        网站域名
 
         :param domain_name: The domain_name of this CreateDomainsRequestBody.
         :type domain_name: str
@@ -72,7 +72,7 @@ class CreateDomainsRequestBody:
     def alias(self):
         """Gets the alias of this CreateDomainsRequestBody.
 
-        域名的别名
+        网站域名的别名
 
         :return: The alias of this CreateDomainsRequestBody.
         :rtype: str
@@ -83,7 +83,7 @@ class CreateDomainsRequestBody:
     def alias(self, alias):
         """Sets the alias of this CreateDomainsRequestBody.
 
-        域名的别名
+        网站域名的别名
 
         :param alias: The alias of this CreateDomainsRequestBody.
         :type alias: str

@@ -28,7 +28,8 @@ class ComponentList:
         'id': 'str',
         'creator': 'str',
         'source': 'SourceObject',
-        'version': 'str'
+        'version': 'str',
+        'platform_type': 'str'
     }
 
     attribute_map = {
@@ -43,10 +44,11 @@ class ComponentList:
         'id': 'id',
         'creator': 'creator',
         'source': 'source',
-        'version': 'version'
+        'version': 'version',
+        'platform_type': 'platform_type'
     }
 
-    def __init__(self, name=None, labels=None, runtime_stack=None, status=None, environment_name=None, application_name=None, environment_id=None, application_id=None, id=None, creator=None, source=None, version=None):
+    def __init__(self, name=None, labels=None, runtime_stack=None, status=None, environment_name=None, application_name=None, environment_id=None, application_id=None, id=None, creator=None, source=None, version=None, platform_type=None):
         """ComponentList
 
         The model defined in huaweicloud sdk
@@ -75,6 +77,8 @@ class ComponentList:
         :type source: :class:`huaweicloudsdkservicestage.v3.SourceObject`
         :param version: 
         :type version: str
+        :param platform_type: 
+        :type platform_type: str
         """
         
         
@@ -91,6 +95,7 @@ class ComponentList:
         self._creator = None
         self._source = None
         self._version = None
+        self._platform_type = None
         self.discriminator = None
 
         self.name = name
@@ -115,6 +120,8 @@ class ComponentList:
         self.source = source
         if version is not None:
             self.version = version
+        if platform_type is not None:
+            self.platform_type = platform_type
 
     @property
     def name(self):
@@ -331,6 +338,24 @@ class ComponentList:
         :type version: str
         """
         self._version = version
+
+    @property
+    def platform_type(self):
+        """Gets the platform_type of this ComponentList.
+
+        :return: The platform_type of this ComponentList.
+        :rtype: str
+        """
+        return self._platform_type
+
+    @platform_type.setter
+    def platform_type(self, platform_type):
+        """Sets the platform_type of this ComponentList.
+
+        :param platform_type: The platform_type of this ComponentList.
+        :type platform_type: str
+        """
+        self._platform_type = platform_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

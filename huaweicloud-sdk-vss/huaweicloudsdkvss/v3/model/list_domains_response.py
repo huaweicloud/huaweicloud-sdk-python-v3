@@ -34,11 +34,11 @@ class ListDomainsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param total: 域名总数
+        :param total: 网站域名总数
         :type total: int
-        :param top_level_domain_num: 一级域名总数
+        :param top_level_domain_num: 网站一级域名总数
         :type top_level_domain_num: int
-        :param domains: 域名列表
+        :param domains: 网站域名列表
         :type domains: list[:class:`huaweicloudsdkvss.v3.DomainItem`]
         """
         
@@ -60,7 +60,7 @@ class ListDomainsResponse(SdkResponse):
     def total(self):
         """Gets the total of this ListDomainsResponse.
 
-        域名总数
+        网站域名总数
 
         :return: The total of this ListDomainsResponse.
         :rtype: int
@@ -71,7 +71,7 @@ class ListDomainsResponse(SdkResponse):
     def total(self, total):
         """Sets the total of this ListDomainsResponse.
 
-        域名总数
+        网站域名总数
 
         :param total: The total of this ListDomainsResponse.
         :type total: int
@@ -82,7 +82,7 @@ class ListDomainsResponse(SdkResponse):
     def top_level_domain_num(self):
         """Gets the top_level_domain_num of this ListDomainsResponse.
 
-        一级域名总数
+        网站一级域名总数
 
         :return: The top_level_domain_num of this ListDomainsResponse.
         :rtype: int
@@ -93,7 +93,7 @@ class ListDomainsResponse(SdkResponse):
     def top_level_domain_num(self, top_level_domain_num):
         """Sets the top_level_domain_num of this ListDomainsResponse.
 
-        一级域名总数
+        网站一级域名总数
 
         :param top_level_domain_num: The top_level_domain_num of this ListDomainsResponse.
         :type top_level_domain_num: int
@@ -104,7 +104,7 @@ class ListDomainsResponse(SdkResponse):
     def domains(self):
         """Gets the domains of this ListDomainsResponse.
 
-        域名列表
+        网站域名列表
 
         :return: The domains of this ListDomainsResponse.
         :rtype: list[:class:`huaweicloudsdkvss.v3.DomainItem`]
@@ -115,7 +115,7 @@ class ListDomainsResponse(SdkResponse):
     def domains(self, domains):
         """Sets the domains of this ListDomainsResponse.
 
-        域名列表
+        网站域名列表
 
         :param domains: The domains of this ListDomainsResponse.
         :type domains: list[:class:`huaweicloudsdkvss.v3.DomainItem`]

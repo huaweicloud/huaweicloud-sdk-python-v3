@@ -27,6 +27,10 @@ class ErRegion:
                         "https://er.ap-southeast-3.myhuaweicloud.com")
     CN_SOUTHWEST_2 = Region("cn-southwest-2",
                         "https://er.cn-southwest-2.myhuaweicloud.com")
+    AP_SOUTHEAST_4 = Region("ap-southeast-4",
+                        "https://er.ap-southeast-4.myhuaweicloud.com")
+    SA_BRAZIL_1 = Region("sa-brazil-1",
+                        "https://er.sa-brazil-1.myhuaweicloud.com")
 
     static_fields = {
         "cn-south-1": CN_SOUTH_1,
@@ -38,6 +42,8 @@ class ErRegion:
         "ap-southeast-2": AP_SOUTHEAST_2,
         "ap-southeast-3": AP_SOUTHEAST_3,
         "cn-southwest-2": CN_SOUTHWEST_2,
+        "ap-southeast-4": AP_SOUTHEAST_4,
+        "sa-brazil-1": SA_BRAZIL_1,
     }
 
     @classmethod

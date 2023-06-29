@@ -18,38 +18,45 @@ class ResizeDesktopResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'jobs': 'list[ResizeDesktopJobResult]'
+        'jobs': 'list[ResizeDesktopJobResponse]',
+        'job_id': 'str'
     }
 
     attribute_map = {
-        'jobs': 'jobs'
+        'jobs': 'jobs',
+        'job_id': 'job_id'
     }
 
-    def __init__(self, jobs=None):
+    def __init__(self, jobs=None, job_id=None):
         """ResizeDesktopResponse
 
         The model defined in huaweicloud sdk
 
-        :param jobs: 按需桌面变更规格返回的任务信息。
-        :type jobs: list[:class:`huaweicloudsdkworkspace.v2.ResizeDesktopJobResult`]
+        :param jobs: 按需桌面变更规格返回的任务信息（jobs字段后续会下线，请使用job_id字段）。
+        :type jobs: list[:class:`huaweicloudsdkworkspace.v2.ResizeDesktopJobResponse`]
+        :param job_id: 变更规格任务id。
+        :type job_id: str
         """
         
         super(ResizeDesktopResponse, self).__init__()
 
         self._jobs = None
+        self._job_id = None
         self.discriminator = None
 
         if jobs is not None:
             self.jobs = jobs
+        if job_id is not None:
+            self.job_id = job_id
 
     @property
     def jobs(self):
         """Gets the jobs of this ResizeDesktopResponse.
 
-        按需桌面变更规格返回的任务信息。
+        按需桌面变更规格返回的任务信息（jobs字段后续会下线，请使用job_id字段）。
 
         :return: The jobs of this ResizeDesktopResponse.
-        :rtype: list[:class:`huaweicloudsdkworkspace.v2.ResizeDesktopJobResult`]
+        :rtype: list[:class:`huaweicloudsdkworkspace.v2.ResizeDesktopJobResponse`]
         """
         return self._jobs
 
@@ -57,12 +64,34 @@ class ResizeDesktopResponse(SdkResponse):
     def jobs(self, jobs):
         """Sets the jobs of this ResizeDesktopResponse.
 
-        按需桌面变更规格返回的任务信息。
+        按需桌面变更规格返回的任务信息（jobs字段后续会下线，请使用job_id字段）。
 
         :param jobs: The jobs of this ResizeDesktopResponse.
-        :type jobs: list[:class:`huaweicloudsdkworkspace.v2.ResizeDesktopJobResult`]
+        :type jobs: list[:class:`huaweicloudsdkworkspace.v2.ResizeDesktopJobResponse`]
         """
         self._jobs = jobs
+
+    @property
+    def job_id(self):
+        """Gets the job_id of this ResizeDesktopResponse.
+
+        变更规格任务id。
+
+        :return: The job_id of this ResizeDesktopResponse.
+        :rtype: str
+        """
+        return self._job_id
+
+    @job_id.setter
+    def job_id(self, job_id):
+        """Sets the job_id of this ResizeDesktopResponse.
+
+        变更规格任务id。
+
+        :param job_id: The job_id of this ResizeDesktopResponse.
+        :type job_id: str
+        """
+        self._job_id = job_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

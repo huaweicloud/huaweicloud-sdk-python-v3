@@ -6204,7 +6204,7 @@ class OsmAsyncClient(Client):
     def upload_json_accessories_async(self, request):
         """上传附件
 
-        上传附件给SDK使用
+        上传附件给SDK使用，上传附件需要满足\&quot;附件限制\&quot;返回的关于大小等限制
         
         Please refer to HUAWEI cloud API Explorer for details.
 

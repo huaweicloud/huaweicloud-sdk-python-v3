@@ -215,13 +215,17 @@ class CreateClusterReqV11:
 
         self.cluster_version = cluster_version
         self.cluster_name = cluster_name
-        self.master_node_num = master_node_num
-        self.core_node_num = core_node_num
+        if master_node_num is not None:
+            self.master_node_num = master_node_num
+        if core_node_num is not None:
+            self.core_node_num = core_node_num
         self.billing_type = billing_type
         self.data_center = data_center
         self.vpc = vpc
-        self.master_node_size = master_node_size
-        self.core_node_size = core_node_size
+        if master_node_size is not None:
+            self.master_node_size = master_node_size
+        if core_node_size is not None:
+            self.core_node_size = core_node_size
         self.component_list = component_list
         self.available_zone_id = available_zone_id
         self.vpc_id = vpc_id
@@ -255,7 +259,8 @@ class CreateClusterReqV11:
             self.node_public_cert_name = node_public_cert_name
         if cluster_admin_secret is not None:
             self.cluster_admin_secret = cluster_admin_secret
-        self.cluster_master_secret = cluster_master_secret
+        if cluster_master_secret is not None:
+            self.cluster_master_secret = cluster_master_secret
         self.safe_mode = safe_mode
         if cluster_type is not None:
             self.cluster_type = cluster_type

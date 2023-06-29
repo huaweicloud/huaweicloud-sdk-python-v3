@@ -72,6 +72,8 @@ from huaweicloudsdkaos.v1.model.list_stack_resources_request import ListStackRes
 from huaweicloudsdkaos.v1.model.list_stack_resources_response import ListStackResourcesResponse
 from huaweicloudsdkaos.v1.model.list_stacks_request import ListStacksRequest
 from huaweicloudsdkaos.v1.model.list_stacks_response import ListStacksResponse
+from huaweicloudsdkaos.v1.model.list_template_versions_request import ListTemplateVersionsRequest
+from huaweicloudsdkaos.v1.model.list_template_versions_response import ListTemplateVersionsResponse
 from huaweicloudsdkaos.v1.model.list_templates_request import ListTemplatesRequest
 from huaweicloudsdkaos.v1.model.list_templates_response import ListTemplatesResponse
 from huaweicloudsdkaos.v1.model.parse_template_variables_request import ParseTemplateVariablesRequest
@@ -99,6 +101,7 @@ from huaweicloudsdkaos.v1.model.stack_status_primitive_type_holder import StackS
 from huaweicloudsdkaos.v1.model.template import Template
 from huaweicloudsdkaos.v1.model.template_body_primitive_type_holder import TemplateBodyPrimitiveTypeHolder
 from huaweicloudsdkaos.v1.model.template_uri_primitive_type_holder import TemplateURIPrimitiveTypeHolder
+from huaweicloudsdkaos.v1.model.template_version import TemplateVersion
 from huaweicloudsdkaos.v1.model.update_stack_request import UpdateStackRequest
 from huaweicloudsdkaos.v1.model.update_stack_request_body import UpdateStackRequestBody
 from huaweicloudsdkaos.v1.model.update_stack_response import UpdateStackResponse

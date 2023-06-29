@@ -19,15 +19,19 @@ class CreateCommandResponse(SdkResponse):
 
     openapi_types = {
         'command_id': 'str',
-        'response': 'object'
+        'response': 'object',
+        'error_code': 'str',
+        'error_msg': 'object'
     }
 
     attribute_map = {
         'command_id': 'command_id',
-        'response': 'response'
+        'response': 'response',
+        'error_code': 'error_code',
+        'error_msg': 'error_msg'
     }
 
-    def __init__(self, command_id=None, response=None):
+    def __init__(self, command_id=None, response=None, error_code=None, error_msg=None):
         """CreateCommandResponse
 
         The model defined in huaweicloud sdk
@@ -36,18 +40,28 @@ class CreateCommandResponse(SdkResponse):
         :type command_id: str
         :param response: 设备上报的命令执行结果。Json格式，具体格式需要应用和设备约定。
         :type response: object
+        :param error_code: 命令下发异常错误码。
+        :type error_code: str
+        :param error_msg: 命令下发异常错误信息。
+        :type error_msg: object
         """
         
         super(CreateCommandResponse, self).__init__()
 
         self._command_id = None
         self._response = None
+        self._error_code = None
+        self._error_msg = None
         self.discriminator = None
 
         if command_id is not None:
             self.command_id = command_id
         if response is not None:
             self.response = response
+        if error_code is not None:
+            self.error_code = error_code
+        if error_msg is not None:
+            self.error_msg = error_msg
 
     @property
     def command_id(self):
@@ -92,6 +106,50 @@ class CreateCommandResponse(SdkResponse):
         :type response: object
         """
         self._response = response
+
+    @property
+    def error_code(self):
+        """Gets the error_code of this CreateCommandResponse.
+
+        命令下发异常错误码。
+
+        :return: The error_code of this CreateCommandResponse.
+        :rtype: str
+        """
+        return self._error_code
+
+    @error_code.setter
+    def error_code(self, error_code):
+        """Sets the error_code of this CreateCommandResponse.
+
+        命令下发异常错误码。
+
+        :param error_code: The error_code of this CreateCommandResponse.
+        :type error_code: str
+        """
+        self._error_code = error_code
+
+    @property
+    def error_msg(self):
+        """Gets the error_msg of this CreateCommandResponse.
+
+        命令下发异常错误信息。
+
+        :return: The error_msg of this CreateCommandResponse.
+        :rtype: object
+        """
+        return self._error_msg
+
+    @error_msg.setter
+    def error_msg(self, error_msg):
+        """Sets the error_msg of this CreateCommandResponse.
+
+        命令下发异常错误信息。
+
+        :param error_msg: The error_msg of this CreateCommandResponse.
+        :type error_msg: object
+        """
+        self._error_msg = error_msg
 
     def to_dict(self):
         """Returns the model properties as a dict"""

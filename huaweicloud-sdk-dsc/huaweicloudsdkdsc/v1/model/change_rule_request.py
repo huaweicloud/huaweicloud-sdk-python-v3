@@ -17,7 +17,7 @@ class ChangeRuleRequest:
     sensitive_list = []
 
     openapi_types = {
-        'body': 'RuleRequest'
+        'body': 'RuleChangeRequest'
     }
 
     attribute_map = {
@@ -30,7 +30,7 @@ class ChangeRuleRequest:
         The model defined in huaweicloud sdk
 
         :param body: Body of the ChangeRuleRequest
-        :type body: :class:`huaweicloudsdkdsc.v1.RuleRequest`
+        :type body: :class:`huaweicloudsdkdsc.v1.RuleChangeRequest`
         """
         
         
@@ -46,7 +46,7 @@ class ChangeRuleRequest:
         """Gets the body of this ChangeRuleRequest.
 
         :return: The body of this ChangeRuleRequest.
-        :rtype: :class:`huaweicloudsdkdsc.v1.RuleRequest`
+        :rtype: :class:`huaweicloudsdkdsc.v1.RuleChangeRequest`
         """
         return self._body
 
@@ -55,7 +55,7 @@ class ChangeRuleRequest:
         """Sets the body of this ChangeRuleRequest.
 
         :param body: The body of this ChangeRuleRequest.
-        :type body: :class:`huaweicloudsdkdsc.v1.RuleRequest`
+        :type body: :class:`huaweicloudsdkdsc.v1.RuleChangeRequest`
         """
         self._body = body
 

@@ -28,7 +28,8 @@ class CreateBandwidthPackage:
         'project_id': 'str',
         'resource_id': 'str',
         'resource_type': 'str',
-        'interflow_mode': 'str'
+        'interflow_mode': 'str',
+        'spec_code': 'str'
     }
 
     attribute_map = {
@@ -43,10 +44,11 @@ class CreateBandwidthPackage:
         'project_id': 'project_id',
         'resource_id': 'resource_id',
         'resource_type': 'resource_type',
-        'interflow_mode': 'interflow_mode'
+        'interflow_mode': 'interflow_mode',
+        'spec_code': 'spec_code'
     }
 
-    def __init__(self, name=None, description=None, enterprise_project_id=None, local_area_id=None, remote_area_id=None, charge_mode=None, billing_mode=None, bandwidth=None, project_id=None, resource_id=None, resource_type=None, interflow_mode=None):
+    def __init__(self, name=None, description=None, enterprise_project_id=None, local_area_id=None, remote_area_id=None, charge_mode=None, billing_mode=None, bandwidth=None, project_id=None, resource_id=None, resource_type=None, interflow_mode=None, spec_code=None):
         """CreateBandwidthPackage
 
         The model defined in huaweicloud sdk
@@ -75,6 +77,8 @@ class CreateBandwidthPackage:
         :type resource_type: str
         :param interflow_mode: 互通类型: - Area: 大区互通 - Region: 城域互通
         :type interflow_mode: str
+        :param spec_code: 产品编码。
+        :type spec_code: str
         """
         
         
@@ -91,6 +95,7 @@ class CreateBandwidthPackage:
         self._resource_id = None
         self._resource_type = None
         self._interflow_mode = None
+        self._spec_code = None
         self.discriminator = None
 
         self.name = name
@@ -110,6 +115,8 @@ class CreateBandwidthPackage:
             self.resource_type = resource_type
         if interflow_mode is not None:
             self.interflow_mode = interflow_mode
+        if spec_code is not None:
+            self.spec_code = spec_code
 
     @property
     def name(self):
@@ -374,6 +381,28 @@ class CreateBandwidthPackage:
         :type interflow_mode: str
         """
         self._interflow_mode = interflow_mode
+
+    @property
+    def spec_code(self):
+        """Gets the spec_code of this CreateBandwidthPackage.
+
+        产品编码。
+
+        :return: The spec_code of this CreateBandwidthPackage.
+        :rtype: str
+        """
+        return self._spec_code
+
+    @spec_code.setter
+    def spec_code(self, spec_code):
+        """Sets the spec_code of this CreateBandwidthPackage.
+
+        产品编码。
+
+        :param spec_code: The spec_code of this CreateBandwidthPackage.
+        :type spec_code: str
+        """
+        self._spec_code = spec_code
 
     def to_dict(self):
         """Returns the model properties as a dict"""

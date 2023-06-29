@@ -30,7 +30,7 @@ class ListOtpDevicesByUserIdResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param otp_devices: otp设备
+        :param otp_devices: otp设备。
         :type otp_devices: list[:class:`huaweicloudsdkworkspace.v2.OtpDevice`]
         """
         
@@ -46,7 +46,7 @@ class ListOtpDevicesByUserIdResponse(SdkResponse):
     def otp_devices(self):
         """Gets the otp_devices of this ListOtpDevicesByUserIdResponse.
 
-        otp设备
+        otp设备。
 
         :return: The otp_devices of this ListOtpDevicesByUserIdResponse.
         :rtype: list[:class:`huaweicloudsdkworkspace.v2.OtpDevice`]
@@ -57,7 +57,7 @@ class ListOtpDevicesByUserIdResponse(SdkResponse):
     def otp_devices(self, otp_devices):
         """Sets the otp_devices of this ListOtpDevicesByUserIdResponse.
 
-        otp设备
+        otp设备。
 
         :param otp_devices: The otp_devices of this ListOtpDevicesByUserIdResponse.
         :type otp_devices: list[:class:`huaweicloudsdkworkspace.v2.OtpDevice`]

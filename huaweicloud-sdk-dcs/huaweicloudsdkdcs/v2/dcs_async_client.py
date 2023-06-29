@@ -1374,6 +1374,67 @@ class DcsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def execute_cluster_switchover_async(self, request):
+        """集群分片倒换
+
+        集群分片倒换，适用于proxy和cluster实例
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ExecuteClusterSwitchover
+        :type request: :class:`huaweicloudsdkdcs.v2.ExecuteClusterSwitchoverRequest`
+        :rtype: :class:`huaweicloudsdkdcs.v2.ExecuteClusterSwitchoverResponse`
+        """
+        return self._execute_cluster_switchover_with_http_info(request)
+
+    def _execute_cluster_switchover_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
+        if 'node_id' in local_var_params:
+            path_params['node_id'] = local_var_params['node_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/instance/{instance_id}/groups/{group_id}/replications/{node_id}/async-switchover',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ExecuteClusterSwitchoverResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_available_zones_async(self, request):
         """查询可用区信息
 
@@ -3438,6 +3499,63 @@ class DcsAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ShowInstanceResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_job_info_async(self, request):
+        """查询租户Job执行结果
+
+        查询租户Job执行结果
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowJobInfo
+        :type request: :class:`huaweicloudsdkdcs.v2.ShowJobInfoRequest`
+        :rtype: :class:`huaweicloudsdkdcs.v2.ShowJobInfoResponse`
+        """
+        return self._show_job_info_with_http_info(request)
+
+    def _show_job_info_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/jobs/{job_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowJobInfoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
