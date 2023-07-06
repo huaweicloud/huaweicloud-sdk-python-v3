@@ -22,6 +22,7 @@ class ListProtectionPolicyRequest:
         'offset': 'int',
         'limit': 'int',
         'policy_name': 'str',
+        'protect_policy_id': 'str',
         'operating_system': 'str'
     }
 
@@ -31,10 +32,11 @@ class ListProtectionPolicyRequest:
         'offset': 'offset',
         'limit': 'limit',
         'policy_name': 'policy_name',
+        'protect_policy_id': 'protect_policy_id',
         'operating_system': 'operating_system'
     }
 
-    def __init__(self, region=None, enterprise_project_id=None, offset=None, limit=None, policy_name=None, operating_system=None):
+    def __init__(self, region=None, enterprise_project_id=None, offset=None, limit=None, policy_name=None, protect_policy_id=None, operating_system=None):
         """ListProtectionPolicyRequest
 
         The model defined in huaweicloud sdk
@@ -49,6 +51,8 @@ class ListProtectionPolicyRequest:
         :type limit: int
         :param policy_name: 防护策略名称
         :type policy_name: str
+        :param protect_policy_id: 防护策略id
+        :type protect_policy_id: str
         :param operating_system: 策略支持的操作系统
         :type operating_system: str
         """
@@ -60,6 +64,7 @@ class ListProtectionPolicyRequest:
         self._offset = None
         self._limit = None
         self._policy_name = None
+        self._protect_policy_id = None
         self._operating_system = None
         self.discriminator = None
 
@@ -72,6 +77,8 @@ class ListProtectionPolicyRequest:
             self.limit = limit
         if policy_name is not None:
             self.policy_name = policy_name
+        if protect_policy_id is not None:
+            self.protect_policy_id = protect_policy_id
         if operating_system is not None:
             self.operating_system = operating_system
 
@@ -184,6 +191,28 @@ class ListProtectionPolicyRequest:
         :type policy_name: str
         """
         self._policy_name = policy_name
+
+    @property
+    def protect_policy_id(self):
+        """Gets the protect_policy_id of this ListProtectionPolicyRequest.
+
+        防护策略id
+
+        :return: The protect_policy_id of this ListProtectionPolicyRequest.
+        :rtype: str
+        """
+        return self._protect_policy_id
+
+    @protect_policy_id.setter
+    def protect_policy_id(self, protect_policy_id):
+        """Sets the protect_policy_id of this ListProtectionPolicyRequest.
+
+        防护策略id
+
+        :param protect_policy_id: The protect_policy_id of this ListProtectionPolicyRequest.
+        :type protect_policy_id: str
+        """
+        self._protect_policy_id = protect_policy_id
 
     @property
     def operating_system(self):

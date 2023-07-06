@@ -22,7 +22,9 @@ class CreateAccessConfigRequestBody:
         'access_config_detail': 'AccessConfigDeatilCreate',
         'log_info': 'AccessConfigBaseLogInfoCreate',
         'host_group_info': 'AccessConfigHostGroupIdListCreate',
-        'access_config_tag': 'list[AccessConfigTag]'
+        'access_config_tag': 'list[AccessConfigTag]',
+        'binary_collect': 'bool',
+        'log_split': 'bool'
     }
 
     attribute_map = {
@@ -31,17 +33,19 @@ class CreateAccessConfigRequestBody:
         'access_config_detail': 'access_config_detail',
         'log_info': 'log_info',
         'host_group_info': 'host_group_info',
-        'access_config_tag': 'access_config_tag'
+        'access_config_tag': 'access_config_tag',
+        'binary_collect': 'binary_collect',
+        'log_split': 'log_split'
     }
 
-    def __init__(self, access_config_name=None, access_config_type=None, access_config_detail=None, log_info=None, host_group_info=None, access_config_tag=None):
+    def __init__(self, access_config_name=None, access_config_type=None, access_config_detail=None, log_info=None, host_group_info=None, access_config_tag=None, binary_collect=None, log_split=None):
         """CreateAccessConfigRequestBody
 
         The model defined in huaweicloud sdk
 
-        :param access_config_name: 日志接入名称
+        :param access_config_name: 日志接入名称。 满足正则表达式：^(?!\\.)(?!_)(?!.*?\\.$)[\\u4e00-\\u9fa5a-zA-Z0-9-_.]{1,64}$
         :type access_config_name: str
-        :param access_config_type: 日志接入类型。AGENT：主机接入类型
+        :param access_config_type: 日志接入类型。AGENT：ECS接入,K8S_CCE:CCE接入
         :type access_config_type: str
         :param access_config_detail: 
         :type access_config_detail: :class:`huaweicloudsdklts.v2.AccessConfigDeatilCreate`
@@ -49,8 +53,12 @@ class CreateAccessConfigRequestBody:
         :type log_info: :class:`huaweicloudsdklts.v2.AccessConfigBaseLogInfoCreate`
         :param host_group_info: 
         :type host_group_info: :class:`huaweicloudsdklts.v2.AccessConfigHostGroupIdListCreate`
-        :param access_config_tag: 
+        :param access_config_tag: 标签信息。KEY不能重复,最多20个标签
         :type access_config_tag: list[:class:`huaweicloudsdklts.v2.AccessConfigTag`]
+        :param binary_collect: 二进制采集
+        :type binary_collect: bool
+        :param log_split: 日志拆分
+        :type log_split: bool
         """
         
         
@@ -61,6 +69,8 @@ class CreateAccessConfigRequestBody:
         self._log_info = None
         self._host_group_info = None
         self._access_config_tag = None
+        self._binary_collect = None
+        self._log_split = None
         self.discriminator = None
 
         self.access_config_name = access_config_name
@@ -71,12 +81,16 @@ class CreateAccessConfigRequestBody:
             self.host_group_info = host_group_info
         if access_config_tag is not None:
             self.access_config_tag = access_config_tag
+        if binary_collect is not None:
+            self.binary_collect = binary_collect
+        if log_split is not None:
+            self.log_split = log_split
 
     @property
     def access_config_name(self):
         """Gets the access_config_name of this CreateAccessConfigRequestBody.
 
-        日志接入名称
+        日志接入名称。 满足正则表达式：^(?!\\.)(?!_)(?!.*?\\.$)[\\u4e00-\\u9fa5a-zA-Z0-9-_.]{1,64}$
 
         :return: The access_config_name of this CreateAccessConfigRequestBody.
         :rtype: str
@@ -87,7 +101,7 @@ class CreateAccessConfigRequestBody:
     def access_config_name(self, access_config_name):
         """Sets the access_config_name of this CreateAccessConfigRequestBody.
 
-        日志接入名称
+        日志接入名称。 满足正则表达式：^(?!\\.)(?!_)(?!.*?\\.$)[\\u4e00-\\u9fa5a-zA-Z0-9-_.]{1,64}$
 
         :param access_config_name: The access_config_name of this CreateAccessConfigRequestBody.
         :type access_config_name: str
@@ -98,7 +112,7 @@ class CreateAccessConfigRequestBody:
     def access_config_type(self):
         """Gets the access_config_type of this CreateAccessConfigRequestBody.
 
-        日志接入类型。AGENT：主机接入类型
+        日志接入类型。AGENT：ECS接入,K8S_CCE:CCE接入
 
         :return: The access_config_type of this CreateAccessConfigRequestBody.
         :rtype: str
@@ -109,7 +123,7 @@ class CreateAccessConfigRequestBody:
     def access_config_type(self, access_config_type):
         """Sets the access_config_type of this CreateAccessConfigRequestBody.
 
-        日志接入类型。AGENT：主机接入类型
+        日志接入类型。AGENT：ECS接入,K8S_CCE:CCE接入
 
         :param access_config_type: The access_config_type of this CreateAccessConfigRequestBody.
         :type access_config_type: str
@@ -174,6 +188,8 @@ class CreateAccessConfigRequestBody:
     def access_config_tag(self):
         """Gets the access_config_tag of this CreateAccessConfigRequestBody.
 
+        标签信息。KEY不能重复,最多20个标签
+
         :return: The access_config_tag of this CreateAccessConfigRequestBody.
         :rtype: list[:class:`huaweicloudsdklts.v2.AccessConfigTag`]
         """
@@ -183,10 +199,56 @@ class CreateAccessConfigRequestBody:
     def access_config_tag(self, access_config_tag):
         """Sets the access_config_tag of this CreateAccessConfigRequestBody.
 
+        标签信息。KEY不能重复,最多20个标签
+
         :param access_config_tag: The access_config_tag of this CreateAccessConfigRequestBody.
         :type access_config_tag: list[:class:`huaweicloudsdklts.v2.AccessConfigTag`]
         """
         self._access_config_tag = access_config_tag
+
+    @property
+    def binary_collect(self):
+        """Gets the binary_collect of this CreateAccessConfigRequestBody.
+
+        二进制采集
+
+        :return: The binary_collect of this CreateAccessConfigRequestBody.
+        :rtype: bool
+        """
+        return self._binary_collect
+
+    @binary_collect.setter
+    def binary_collect(self, binary_collect):
+        """Sets the binary_collect of this CreateAccessConfigRequestBody.
+
+        二进制采集
+
+        :param binary_collect: The binary_collect of this CreateAccessConfigRequestBody.
+        :type binary_collect: bool
+        """
+        self._binary_collect = binary_collect
+
+    @property
+    def log_split(self):
+        """Gets the log_split of this CreateAccessConfigRequestBody.
+
+        日志拆分
+
+        :return: The log_split of this CreateAccessConfigRequestBody.
+        :rtype: bool
+        """
+        return self._log_split
+
+    @log_split.setter
+    def log_split(self, log_split):
+        """Sets the log_split of this CreateAccessConfigRequestBody.
+
+        日志拆分
+
+        :param log_split: The log_split of this CreateAccessConfigRequestBody.
+        :type log_split: bool
+        """
+        self._log_split = log_split
 
     def to_dict(self):
         """Returns the model properties as a dict"""

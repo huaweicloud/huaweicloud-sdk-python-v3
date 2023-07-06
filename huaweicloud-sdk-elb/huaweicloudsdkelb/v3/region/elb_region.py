@@ -43,6 +43,10 @@ class ElbRegion:
                         "https://elb.na-mexico-1.myhuaweicloud.com")
     LA_NORTH_2 = Region("la-north-2",
                         "https://elb.la-north-2.myhuaweicloud.com")
+    AP_SOUTHEAST_4 = Region("ap-southeast-4",
+                        "https://elb.ap-southeast-4.myhuaweicloud.com")
+    TR_WEST_1 = Region("tr-west-1",
+                        "https://elb.tr-west-1.myhuaweicloud.com")
 
     static_fields = {
         "af-south-1": AF_SOUTH_1,
@@ -62,6 +66,8 @@ class ElbRegion:
         "sa-brazil-1": SA_BRAZIL_1,
         "na-mexico-1": NA_MEXICO_1,
         "la-north-2": LA_NORTH_2,
+        "ap-southeast-4": AP_SOUTHEAST_4,
+        "tr-west-1": TR_WEST_1,
     }
 
     @classmethod

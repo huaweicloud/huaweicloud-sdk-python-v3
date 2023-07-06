@@ -81,7 +81,7 @@ class DomainsWithPort:
         :type domain_status: str
         :param cname: 加速域名对应的CNAME。
         :type cname: str
-        :param sources: 源站域名或源站IP，源站为IP类型时，仅支持IPv4，如需传入多个源站IP，以多个源站对象传入，除IP其他参数请保持一致，主源站最多支持15个源站IP对象，备源站最多支持15个源站IP对象；源站为域名类型时仅支持1个源站对象。不支持IP源站和域名源站混用。
+        :param sources: 源站配置。
         :type sources: list[:class:`huaweicloudsdkcdn.v1.SourceWithPort`]
         :param domain_origin_host: 
         :type domain_origin_host: :class:`huaweicloudsdkcdn.v1.DomainOriginHost`
@@ -95,7 +95,7 @@ class DomainsWithPort:
         :type disabled: int
         :param locked: 锁定状态（0代表未锁定；1代表锁定）。
         :type locked: int
-        :param auto_refresh_preheat: 自动刷新预热（0代表关闭；1代表打开）
+        :param auto_refresh_preheat: 自动刷新预热（0代表关闭；1代表打开）。
         :type auto_refresh_preheat: int
         :param service_area: 华为云CDN提供的加速服务范围，包含：mainland_china中国大陆、outside_mainland_china中国大陆境外、global全球。
         :type service_area: str
@@ -317,7 +317,7 @@ class DomainsWithPort:
     def sources(self):
         """Gets the sources of this DomainsWithPort.
 
-        源站域名或源站IP，源站为IP类型时，仅支持IPv4，如需传入多个源站IP，以多个源站对象传入，除IP其他参数请保持一致，主源站最多支持15个源站IP对象，备源站最多支持15个源站IP对象；源站为域名类型时仅支持1个源站对象。不支持IP源站和域名源站混用。
+        源站配置。
 
         :return: The sources of this DomainsWithPort.
         :rtype: list[:class:`huaweicloudsdkcdn.v1.SourceWithPort`]
@@ -328,7 +328,7 @@ class DomainsWithPort:
     def sources(self, sources):
         """Sets the sources of this DomainsWithPort.
 
-        源站域名或源站IP，源站为IP类型时，仅支持IPv4，如需传入多个源站IP，以多个源站对象传入，除IP其他参数请保持一致，主源站最多支持15个源站IP对象，备源站最多支持15个源站IP对象；源站为域名类型时仅支持1个源站对象。不支持IP源站和域名源站混用。
+        源站配置。
 
         :param sources: The sources of this DomainsWithPort.
         :type sources: list[:class:`huaweicloudsdkcdn.v1.SourceWithPort`]
@@ -467,7 +467,7 @@ class DomainsWithPort:
     def auto_refresh_preheat(self):
         """Gets the auto_refresh_preheat of this DomainsWithPort.
 
-        自动刷新预热（0代表关闭；1代表打开）
+        自动刷新预热（0代表关闭；1代表打开）。
 
         :return: The auto_refresh_preheat of this DomainsWithPort.
         :rtype: int
@@ -478,7 +478,7 @@ class DomainsWithPort:
     def auto_refresh_preheat(self, auto_refresh_preheat):
         """Sets the auto_refresh_preheat of this DomainsWithPort.
 
-        自动刷新预热（0代表关闭；1代表打开）
+        自动刷新预热（0代表关闭；1代表打开）。
 
         :param auto_refresh_preheat: The auto_refresh_preheat of this DomainsWithPort.
         :type auto_refresh_preheat: int

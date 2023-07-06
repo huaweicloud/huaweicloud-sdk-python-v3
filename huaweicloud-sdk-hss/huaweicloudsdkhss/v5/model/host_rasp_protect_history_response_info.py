@@ -17,6 +17,8 @@ class HostRaspProtectHistoryResponseInfo:
     sensitive_list = []
 
     openapi_types = {
+        'host_ip': 'str',
+        'host_name': 'str',
         'alarm_time': 'int',
         'threat_type': 'str',
         'alarm_level': 'int',
@@ -25,6 +27,8 @@ class HostRaspProtectHistoryResponseInfo:
     }
 
     attribute_map = {
+        'host_ip': 'host_ip',
+        'host_name': 'host_name',
         'alarm_time': 'alarm_time',
         'threat_type': 'threat_type',
         'alarm_level': 'alarm_level',
@@ -32,11 +36,15 @@ class HostRaspProtectHistoryResponseInfo:
         'attacked_url': 'attacked_url'
     }
 
-    def __init__(self, alarm_time=None, threat_type=None, alarm_level=None, source_ip=None, attacked_url=None):
+    def __init__(self, host_ip=None, host_name=None, alarm_time=None, threat_type=None, alarm_level=None, source_ip=None, attacked_url=None):
         """HostRaspProtectHistoryResponseInfo
 
         The model defined in huaweicloud sdk
 
+        :param host_ip: 服务器ip
+        :type host_ip: str
+        :param host_name: 服务器名称
+        :type host_name: str
         :param alarm_time: 告警时间
         :type alarm_time: int
         :param threat_type: 威胁类型
@@ -51,6 +59,8 @@ class HostRaspProtectHistoryResponseInfo:
         
         
 
+        self._host_ip = None
+        self._host_name = None
         self._alarm_time = None
         self._threat_type = None
         self._alarm_level = None
@@ -58,6 +68,10 @@ class HostRaspProtectHistoryResponseInfo:
         self._attacked_url = None
         self.discriminator = None
 
+        if host_ip is not None:
+            self.host_ip = host_ip
+        if host_name is not None:
+            self.host_name = host_name
         if alarm_time is not None:
             self.alarm_time = alarm_time
         if threat_type is not None:
@@ -68,6 +82,50 @@ class HostRaspProtectHistoryResponseInfo:
             self.source_ip = source_ip
         if attacked_url is not None:
             self.attacked_url = attacked_url
+
+    @property
+    def host_ip(self):
+        """Gets the host_ip of this HostRaspProtectHistoryResponseInfo.
+
+        服务器ip
+
+        :return: The host_ip of this HostRaspProtectHistoryResponseInfo.
+        :rtype: str
+        """
+        return self._host_ip
+
+    @host_ip.setter
+    def host_ip(self, host_ip):
+        """Sets the host_ip of this HostRaspProtectHistoryResponseInfo.
+
+        服务器ip
+
+        :param host_ip: The host_ip of this HostRaspProtectHistoryResponseInfo.
+        :type host_ip: str
+        """
+        self._host_ip = host_ip
+
+    @property
+    def host_name(self):
+        """Gets the host_name of this HostRaspProtectHistoryResponseInfo.
+
+        服务器名称
+
+        :return: The host_name of this HostRaspProtectHistoryResponseInfo.
+        :rtype: str
+        """
+        return self._host_name
+
+    @host_name.setter
+    def host_name(self, host_name):
+        """Sets the host_name of this HostRaspProtectHistoryResponseInfo.
+
+        服务器名称
+
+        :param host_name: The host_name of this HostRaspProtectHistoryResponseInfo.
+        :type host_name: str
+        """
+        self._host_name = host_name
 
     @property
     def alarm_time(self):

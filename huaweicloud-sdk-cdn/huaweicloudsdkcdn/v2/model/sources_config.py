@@ -17,9 +17,10 @@ class SourcesConfig:
     sensitive_list = []
 
     openapi_types = {
-        'origin_addr': 'str',
         'origin_type': 'str',
+        'origin_addr': 'str',
         'priority': 'int',
+        'weight': 'int',
         'obs_web_hosting_status': 'str',
         'http_port': 'int',
         'https_port': 'int',
@@ -28,9 +29,10 @@ class SourcesConfig:
     }
 
     attribute_map = {
-        'origin_addr': 'origin_addr',
         'origin_type': 'origin_type',
+        'origin_addr': 'origin_addr',
         'priority': 'priority',
+        'weight': 'weight',
         'obs_web_hosting_status': 'obs_web_hosting_status',
         'http_port': 'http_port',
         'https_port': 'https_port',
@@ -38,17 +40,19 @@ class SourcesConfig:
         'obs_bucket_type': 'obs_bucket_type'
     }
 
-    def __init__(self, origin_addr=None, origin_type=None, priority=None, obs_web_hosting_status=None, http_port=None, https_port=None, host_name=None, obs_bucket_type=None):
+    def __init__(self, origin_type=None, origin_addr=None, priority=None, weight=None, obs_web_hosting_status=None, http_port=None, https_port=None, host_name=None, obs_bucket_type=None):
         """SourcesConfig
 
         The model defined in huaweicloud sdk
 
-        :param origin_addr: 源站IP或者域名。
-        :type origin_addr: str
         :param origin_type: 源站类型， ipaddr：源站IP，domain：源站域名，obs_bucket：OBS桶域名。
         :type origin_type: str
+        :param origin_addr: 源站IP或者域名。
+        :type origin_addr: str
         :param priority: 源站优先级，70：主，30：备。
         :type priority: int
+        :param weight: 权重，取值范围1-100。
+        :type weight: int
         :param obs_web_hosting_status: 是否开启Obs静态网站托管，源站类型为obs_bucket时传递，off：关闭，on：开启。
         :type obs_web_hosting_status: str
         :param http_port: HTTP端口，默认80,端口取值取值范围1-65535。
@@ -63,9 +67,10 @@ class SourcesConfig:
         
         
 
-        self._origin_addr = None
         self._origin_type = None
+        self._origin_addr = None
         self._priority = None
+        self._weight = None
         self._obs_web_hosting_status = None
         self._http_port = None
         self._https_port = None
@@ -73,9 +78,11 @@ class SourcesConfig:
         self._obs_bucket_type = None
         self.discriminator = None
 
-        self.origin_addr = origin_addr
         self.origin_type = origin_type
+        self.origin_addr = origin_addr
         self.priority = priority
+        if weight is not None:
+            self.weight = weight
         if obs_web_hosting_status is not None:
             self.obs_web_hosting_status = obs_web_hosting_status
         if http_port is not None:
@@ -86,28 +93,6 @@ class SourcesConfig:
             self.host_name = host_name
         if obs_bucket_type is not None:
             self.obs_bucket_type = obs_bucket_type
-
-    @property
-    def origin_addr(self):
-        """Gets the origin_addr of this SourcesConfig.
-
-        源站IP或者域名。
-
-        :return: The origin_addr of this SourcesConfig.
-        :rtype: str
-        """
-        return self._origin_addr
-
-    @origin_addr.setter
-    def origin_addr(self, origin_addr):
-        """Sets the origin_addr of this SourcesConfig.
-
-        源站IP或者域名。
-
-        :param origin_addr: The origin_addr of this SourcesConfig.
-        :type origin_addr: str
-        """
-        self._origin_addr = origin_addr
 
     @property
     def origin_type(self):
@@ -132,6 +117,28 @@ class SourcesConfig:
         self._origin_type = origin_type
 
     @property
+    def origin_addr(self):
+        """Gets the origin_addr of this SourcesConfig.
+
+        源站IP或者域名。
+
+        :return: The origin_addr of this SourcesConfig.
+        :rtype: str
+        """
+        return self._origin_addr
+
+    @origin_addr.setter
+    def origin_addr(self, origin_addr):
+        """Sets the origin_addr of this SourcesConfig.
+
+        源站IP或者域名。
+
+        :param origin_addr: The origin_addr of this SourcesConfig.
+        :type origin_addr: str
+        """
+        self._origin_addr = origin_addr
+
+    @property
     def priority(self):
         """Gets the priority of this SourcesConfig.
 
@@ -152,6 +159,28 @@ class SourcesConfig:
         :type priority: int
         """
         self._priority = priority
+
+    @property
+    def weight(self):
+        """Gets the weight of this SourcesConfig.
+
+        权重，取值范围1-100。
+
+        :return: The weight of this SourcesConfig.
+        :rtype: int
+        """
+        return self._weight
+
+    @weight.setter
+    def weight(self, weight):
+        """Sets the weight of this SourcesConfig.
+
+        权重，取值范围1-100。
+
+        :param weight: The weight of this SourcesConfig.
+        :type weight: int
+        """
+        self._weight = weight
 
     @property
     def obs_web_hosting_status(self):

@@ -53,7 +53,7 @@ class QuotaResourcesResponseInfo:
 
         :param resource_id: 主机安全配额的资源ID
         :type resource_id: str
-        :param version: 资源规格编码，包含如下:   - hss.version.basic : 基础版   - hss.version.enterprise : 企业版   - hss.version.premium : 旗舰版   - hss.version.wtp : 网页防篡改版   - hss.version.container : 容器版
+        :param version: 资源规格编码，包含如下:   - hss.version.basic : 基础版   - hss.version.advanced : 专业版   - hss.version.enterprise : 企业版   - hss.version.premium : 旗舰版   - hss.version.wtp : 网页防篡改版   - hss.version.container : 容器版
         :type version: str
         :param quota_status: 配额状态   - normal : 正常   - expired : 已过期   - freeze : 已冻结
         :type quota_status: str
@@ -144,7 +144,7 @@ class QuotaResourcesResponseInfo:
     def version(self):
         """Gets the version of this QuotaResourcesResponseInfo.
 
-        资源规格编码，包含如下:   - hss.version.basic : 基础版   - hss.version.enterprise : 企业版   - hss.version.premium : 旗舰版   - hss.version.wtp : 网页防篡改版   - hss.version.container : 容器版
+        资源规格编码，包含如下:   - hss.version.basic : 基础版   - hss.version.advanced : 专业版   - hss.version.enterprise : 企业版   - hss.version.premium : 旗舰版   - hss.version.wtp : 网页防篡改版   - hss.version.container : 容器版
 
         :return: The version of this QuotaResourcesResponseInfo.
         :rtype: str
@@ -155,7 +155,7 @@ class QuotaResourcesResponseInfo:
     def version(self, version):
         """Sets the version of this QuotaResourcesResponseInfo.
 
-        资源规格编码，包含如下:   - hss.version.basic : 基础版   - hss.version.enterprise : 企业版   - hss.version.premium : 旗舰版   - hss.version.wtp : 网页防篡改版   - hss.version.container : 容器版
+        资源规格编码，包含如下:   - hss.version.basic : 基础版   - hss.version.advanced : 专业版   - hss.version.enterprise : 企业版   - hss.version.premium : 旗舰版   - hss.version.wtp : 网页防篡改版   - hss.version.container : 容器版
 
         :param version: The version of this QuotaResourcesResponseInfo.
         :type version: str

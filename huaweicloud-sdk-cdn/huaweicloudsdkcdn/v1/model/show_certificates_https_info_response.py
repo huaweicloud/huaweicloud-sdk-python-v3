@@ -32,9 +32,9 @@ class ShowCertificatesHttpsInfoResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param total: 查询结果总数
+        :param total: 查询结果总数。
         :type total: int
-        :param https: https对象。
+        :param https: https配置。
         :type https: list[:class:`huaweicloudsdkcdn.v1.HttpsDetail`]
         """
         
@@ -53,7 +53,7 @@ class ShowCertificatesHttpsInfoResponse(SdkResponse):
     def total(self):
         """Gets the total of this ShowCertificatesHttpsInfoResponse.
 
-        查询结果总数
+        查询结果总数。
 
         :return: The total of this ShowCertificatesHttpsInfoResponse.
         :rtype: int
@@ -64,7 +64,7 @@ class ShowCertificatesHttpsInfoResponse(SdkResponse):
     def total(self, total):
         """Sets the total of this ShowCertificatesHttpsInfoResponse.
 
-        查询结果总数
+        查询结果总数。
 
         :param total: The total of this ShowCertificatesHttpsInfoResponse.
         :type total: int
@@ -75,7 +75,7 @@ class ShowCertificatesHttpsInfoResponse(SdkResponse):
     def https(self):
         """Gets the https of this ShowCertificatesHttpsInfoResponse.
 
-        https对象。
+        https配置。
 
         :return: The https of this ShowCertificatesHttpsInfoResponse.
         :rtype: list[:class:`huaweicloudsdkcdn.v1.HttpsDetail`]
@@ -86,7 +86,7 @@ class ShowCertificatesHttpsInfoResponse(SdkResponse):
     def https(self, https):
         """Sets the https of this ShowCertificatesHttpsInfoResponse.
 
-        https对象。
+        https配置。
 
         :param https: The https of this ShowCertificatesHttpsInfoResponse.
         :type https: list[:class:`huaweicloudsdkcdn.v1.HttpsDetail`]

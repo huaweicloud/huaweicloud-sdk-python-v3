@@ -25,7 +25,8 @@ class ProtectionProxyInfoRequestInfo:
         'protection_type': 'str',
         'exclude_directory': 'str',
         'runtime_detection_status': 'str',
-        'operating_system': 'str'
+        'operating_system': 'str',
+        'process_whitelist': 'list[TrustProcessInfo]'
     }
 
     attribute_map = {
@@ -37,10 +38,11 @@ class ProtectionProxyInfoRequestInfo:
         'protection_type': 'protection_type',
         'exclude_directory': 'exclude_directory',
         'runtime_detection_status': 'runtime_detection_status',
-        'operating_system': 'operating_system'
+        'operating_system': 'operating_system',
+        'process_whitelist': 'process_whitelist'
     }
 
-    def __init__(self, policy_id=None, policy_name=None, protection_mode=None, bait_protection_status=None, protection_directory=None, protection_type=None, exclude_directory=None, runtime_detection_status=None, operating_system=None):
+    def __init__(self, policy_id=None, policy_name=None, protection_mode=None, bait_protection_status=None, protection_directory=None, protection_type=None, exclude_directory=None, runtime_detection_status=None, operating_system=None, process_whitelist=None):
         """ProtectionProxyInfoRequestInfo
 
         The model defined in huaweicloud sdk
@@ -63,6 +65,8 @@ class ProtectionProxyInfoRequestInfo:
         :type runtime_detection_status: str
         :param operating_system: 操作系统，新建防护策略则必填。包含如下：   - Windows : Windows系统   - Linux : Linux系统
         :type operating_system: str
+        :param process_whitelist: 进程白名单
+        :type process_whitelist: list[:class:`huaweicloudsdkhss.v5.TrustProcessInfo`]
         """
         
         
@@ -76,6 +80,7 @@ class ProtectionProxyInfoRequestInfo:
         self._exclude_directory = None
         self._runtime_detection_status = None
         self._operating_system = None
+        self._process_whitelist = None
         self.discriminator = None
 
         if policy_id is not None:
@@ -96,6 +101,8 @@ class ProtectionProxyInfoRequestInfo:
             self.runtime_detection_status = runtime_detection_status
         if operating_system is not None:
             self.operating_system = operating_system
+        if process_whitelist is not None:
+            self.process_whitelist = process_whitelist
 
     @property
     def policy_id(self):
@@ -294,6 +301,28 @@ class ProtectionProxyInfoRequestInfo:
         :type operating_system: str
         """
         self._operating_system = operating_system
+
+    @property
+    def process_whitelist(self):
+        """Gets the process_whitelist of this ProtectionProxyInfoRequestInfo.
+
+        进程白名单
+
+        :return: The process_whitelist of this ProtectionProxyInfoRequestInfo.
+        :rtype: list[:class:`huaweicloudsdkhss.v5.TrustProcessInfo`]
+        """
+        return self._process_whitelist
+
+    @process_whitelist.setter
+    def process_whitelist(self, process_whitelist):
+        """Sets the process_whitelist of this ProtectionProxyInfoRequestInfo.
+
+        进程白名单
+
+        :param process_whitelist: The process_whitelist of this ProtectionProxyInfoRequestInfo.
+        :type process_whitelist: list[:class:`huaweicloudsdkhss.v5.TrustProcessInfo`]
+        """
+        self._process_whitelist = process_whitelist
 
     def to_dict(self):
         """Returns the model properties as a dict"""

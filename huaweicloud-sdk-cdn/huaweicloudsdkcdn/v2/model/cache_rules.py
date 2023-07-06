@@ -51,7 +51,7 @@ class CacheRules:
         :type ttl: int
         :param ttl_unit: 缓存过期时间单位，s：秒；m：分；h：小时；d：天。
         :type ttl_unit: str
-        :param priority: 此条配置的优先级, 默认值1，数值越大，优先级越高，取值范围为1-100，优先级不能相同。
+        :param priority: 此条缓存规则的优先级, 默认值1，数值越大，优先级越高，取值范围为1-100，优先级不能相同。
         :type priority: int
         :param follow_origin: 缓存遵循源站开关，on：打开，off：关闭。
         :type follow_origin: str
@@ -176,7 +176,7 @@ class CacheRules:
     def priority(self):
         """Gets the priority of this CacheRules.
 
-        此条配置的优先级, 默认值1，数值越大，优先级越高，取值范围为1-100，优先级不能相同。
+        此条缓存规则的优先级, 默认值1，数值越大，优先级越高，取值范围为1-100，优先级不能相同。
 
         :return: The priority of this CacheRules.
         :rtype: int
@@ -187,7 +187,7 @@ class CacheRules:
     def priority(self, priority):
         """Sets the priority of this CacheRules.
 
-        此条配置的优先级, 默认值1，数值越大，优先级越高，取值范围为1-100，优先级不能相同。
+        此条缓存规则的优先级, 默认值1，数值越大，优先级越高，取值范围为1-100，优先级不能相同。
 
         :param priority: The priority of this CacheRules.
         :type priority: int

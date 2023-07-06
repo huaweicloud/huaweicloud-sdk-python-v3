@@ -49,21 +49,21 @@ class HttpsDetail:
 
         The model defined in huaweicloud sdk
 
-        :param domain_id: 域名id
+        :param domain_id: 域名id。
         :type domain_id: str
-        :param domain_name: 绑定该证书的域名
+        :param domain_name: 绑定该证书的域名。
         :type domain_name: str
-        :param cert_name: 证书名字。（长度限制为3-32字符）。
+        :param cert_name: 证书名字。
         :type cert_name: str
-        :param certificate: 证书内容
+        :param certificate: 证书内容。
         :type certificate: str
-        :param private_key: 私钥内容
+        :param private_key: 私钥内容。
         :type private_key: str
-        :param certificate_type: 0：自有证书  1：云托管证书
+        :param certificate_type: 0：自有证书  1：云托管证书。
         :type certificate_type: int
-        :param expiration_time: 证书过期时间
+        :param expiration_time: 证书过期时间。
         :type expiration_time: int
-        :param https_status: HTTPS证书是否启用，取值0：不启用，此时无需填写证书及私钥参数；1：启用HTTPS加速并协议跟随回源；2：启用HTTPS加速并HTTP回源，开启时需要传递证书及私钥。
+        :param https_status: HTTPS证书是否启用，取值0：不启用；1：启用HTTPS加速并协议跟随回源；2：启用HTTPS加速并HTTP回源。
         :type https_status: int
         :param force_redirect_https: 客户端请求是否强制重定向。1是，0否。（如果为2，表示强制跳转HTTP）
         :type force_redirect_https: int
@@ -115,7 +115,7 @@ class HttpsDetail:
     def domain_id(self):
         """Gets the domain_id of this HttpsDetail.
 
-        域名id
+        域名id。
 
         :return: The domain_id of this HttpsDetail.
         :rtype: str
@@ -126,7 +126,7 @@ class HttpsDetail:
     def domain_id(self, domain_id):
         """Sets the domain_id of this HttpsDetail.
 
-        域名id
+        域名id。
 
         :param domain_id: The domain_id of this HttpsDetail.
         :type domain_id: str
@@ -137,7 +137,7 @@ class HttpsDetail:
     def domain_name(self):
         """Gets the domain_name of this HttpsDetail.
 
-        绑定该证书的域名
+        绑定该证书的域名。
 
         :return: The domain_name of this HttpsDetail.
         :rtype: str
@@ -148,7 +148,7 @@ class HttpsDetail:
     def domain_name(self, domain_name):
         """Sets the domain_name of this HttpsDetail.
 
-        绑定该证书的域名
+        绑定该证书的域名。
 
         :param domain_name: The domain_name of this HttpsDetail.
         :type domain_name: str
@@ -159,7 +159,7 @@ class HttpsDetail:
     def cert_name(self):
         """Gets the cert_name of this HttpsDetail.
 
-        证书名字。（长度限制为3-32字符）。
+        证书名字。
 
         :return: The cert_name of this HttpsDetail.
         :rtype: str
@@ -170,7 +170,7 @@ class HttpsDetail:
     def cert_name(self, cert_name):
         """Sets the cert_name of this HttpsDetail.
 
-        证书名字。（长度限制为3-32字符）。
+        证书名字。
 
         :param cert_name: The cert_name of this HttpsDetail.
         :type cert_name: str
@@ -181,7 +181,7 @@ class HttpsDetail:
     def certificate(self):
         """Gets the certificate of this HttpsDetail.
 
-        证书内容
+        证书内容。
 
         :return: The certificate of this HttpsDetail.
         :rtype: str
@@ -192,7 +192,7 @@ class HttpsDetail:
     def certificate(self, certificate):
         """Sets the certificate of this HttpsDetail.
 
-        证书内容
+        证书内容。
 
         :param certificate: The certificate of this HttpsDetail.
         :type certificate: str
@@ -203,7 +203,7 @@ class HttpsDetail:
     def private_key(self):
         """Gets the private_key of this HttpsDetail.
 
-        私钥内容
+        私钥内容。
 
         :return: The private_key of this HttpsDetail.
         :rtype: str
@@ -214,7 +214,7 @@ class HttpsDetail:
     def private_key(self, private_key):
         """Sets the private_key of this HttpsDetail.
 
-        私钥内容
+        私钥内容。
 
         :param private_key: The private_key of this HttpsDetail.
         :type private_key: str
@@ -225,7 +225,7 @@ class HttpsDetail:
     def certificate_type(self):
         """Gets the certificate_type of this HttpsDetail.
 
-        0：自有证书  1：云托管证书
+        0：自有证书  1：云托管证书。
 
         :return: The certificate_type of this HttpsDetail.
         :rtype: int
@@ -236,7 +236,7 @@ class HttpsDetail:
     def certificate_type(self, certificate_type):
         """Sets the certificate_type of this HttpsDetail.
 
-        0：自有证书  1：云托管证书
+        0：自有证书  1：云托管证书。
 
         :param certificate_type: The certificate_type of this HttpsDetail.
         :type certificate_type: int
@@ -247,7 +247,7 @@ class HttpsDetail:
     def expiration_time(self):
         """Gets the expiration_time of this HttpsDetail.
 
-        证书过期时间
+        证书过期时间。
 
         :return: The expiration_time of this HttpsDetail.
         :rtype: int
@@ -258,7 +258,7 @@ class HttpsDetail:
     def expiration_time(self, expiration_time):
         """Sets the expiration_time of this HttpsDetail.
 
-        证书过期时间
+        证书过期时间。
 
         :param expiration_time: The expiration_time of this HttpsDetail.
         :type expiration_time: int
@@ -269,7 +269,7 @@ class HttpsDetail:
     def https_status(self):
         """Gets the https_status of this HttpsDetail.
 
-        HTTPS证书是否启用，取值0：不启用，此时无需填写证书及私钥参数；1：启用HTTPS加速并协议跟随回源；2：启用HTTPS加速并HTTP回源，开启时需要传递证书及私钥。
+        HTTPS证书是否启用，取值0：不启用；1：启用HTTPS加速并协议跟随回源；2：启用HTTPS加速并HTTP回源。
 
         :return: The https_status of this HttpsDetail.
         :rtype: int
@@ -280,7 +280,7 @@ class HttpsDetail:
     def https_status(self, https_status):
         """Sets the https_status of this HttpsDetail.
 
-        HTTPS证书是否启用，取值0：不启用，此时无需填写证书及私钥参数；1：启用HTTPS加速并协议跟随回源；2：启用HTTPS加速并HTTP回源，开启时需要传递证书及私钥。
+        HTTPS证书是否启用，取值0：不启用；1：启用HTTPS加速并协议跟随回源；2：启用HTTPS加速并HTTP回源。
 
         :param https_status: The https_status of this HttpsDetail.
         :type https_status: int

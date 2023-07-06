@@ -79,7 +79,7 @@ class Domains:
         :type domain_status: str
         :param cname: 加速域名对应的CNAME。
         :type cname: str
-        :param sources: 源站域名或源站IP，源站为IP类型时，仅支持IPv4，如需传入多个源站IP，以多个源站对象传入，除IP其他参数请保持一致，主源站最多支持15个源站IP对象，备源站最多支持15个源站IP对象；源站为域名类型时仅支持1个源站对象。不支持IP源站和域名源站混用。
+        :param sources: 源站配置。
         :type sources: list[:class:`huaweicloudsdkcdn.v2.Sources`]
         :param domain_origin_host: 
         :type domain_origin_host: :class:`huaweicloudsdkcdn.v2.DomainOriginHost`
@@ -93,7 +93,7 @@ class Domains:
         :type disabled: int
         :param locked: 锁定状态（0代表未锁定；1代表锁定）。
         :type locked: int
-        :param auto_refresh_preheat: 自动刷新预热（0代表关闭；1代表打开）
+        :param auto_refresh_preheat: 自动刷新预热（0代表关闭；1代表打开）。
         :type auto_refresh_preheat: int
         :param service_area: 华为云CDN提供的加速服务范围，包含：mainland_china中国大陆、outside_mainland_china中国大陆境外、global全球。
         :type service_area: str
@@ -101,15 +101,15 @@ class Domains:
         :type range_status: str
         :param follow_status: 回源跟随状态。
         :type follow_status: str
-        :param origin_status: 是否暂停源站回源。
+        :param origin_status: 是否暂停源站回源（off代表关闭 on代表开启）。
         :type origin_status: str
-        :param banned_reason: 域名禁用原因
+        :param banned_reason: 域名禁用原因。
         :type banned_reason: str
-        :param locked_reason: 域名锁定原因
+        :param locked_reason: 域名锁定原因。
         :type locked_reason: str
         :param enterprise_project_id: 当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，不传表示查询默认项目。注意：当使用子帐号调用接口时，该参数必传。  您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。
         :type enterprise_project_id: str
-        :param tags: 标签信息
+        :param tags: 标签信息。
         :type tags: list[:class:`huaweicloudsdkcdn.v2.EpResourceTag`]
         """
         
@@ -295,7 +295,7 @@ class Domains:
     def sources(self):
         """Gets the sources of this Domains.
 
-        源站域名或源站IP，源站为IP类型时，仅支持IPv4，如需传入多个源站IP，以多个源站对象传入，除IP其他参数请保持一致，主源站最多支持15个源站IP对象，备源站最多支持15个源站IP对象；源站为域名类型时仅支持1个源站对象。不支持IP源站和域名源站混用。
+        源站配置。
 
         :return: The sources of this Domains.
         :rtype: list[:class:`huaweicloudsdkcdn.v2.Sources`]
@@ -306,7 +306,7 @@ class Domains:
     def sources(self, sources):
         """Sets the sources of this Domains.
 
-        源站域名或源站IP，源站为IP类型时，仅支持IPv4，如需传入多个源站IP，以多个源站对象传入，除IP其他参数请保持一致，主源站最多支持15个源站IP对象，备源站最多支持15个源站IP对象；源站为域名类型时仅支持1个源站对象。不支持IP源站和域名源站混用。
+        源站配置。
 
         :param sources: The sources of this Domains.
         :type sources: list[:class:`huaweicloudsdkcdn.v2.Sources`]
@@ -445,7 +445,7 @@ class Domains:
     def auto_refresh_preheat(self):
         """Gets the auto_refresh_preheat of this Domains.
 
-        自动刷新预热（0代表关闭；1代表打开）
+        自动刷新预热（0代表关闭；1代表打开）。
 
         :return: The auto_refresh_preheat of this Domains.
         :rtype: int
@@ -456,7 +456,7 @@ class Domains:
     def auto_refresh_preheat(self, auto_refresh_preheat):
         """Sets the auto_refresh_preheat of this Domains.
 
-        自动刷新预热（0代表关闭；1代表打开）
+        自动刷新预热（0代表关闭；1代表打开）。
 
         :param auto_refresh_preheat: The auto_refresh_preheat of this Domains.
         :type auto_refresh_preheat: int
@@ -533,7 +533,7 @@ class Domains:
     def origin_status(self):
         """Gets the origin_status of this Domains.
 
-        是否暂停源站回源。
+        是否暂停源站回源（off代表关闭 on代表开启）。
 
         :return: The origin_status of this Domains.
         :rtype: str
@@ -544,7 +544,7 @@ class Domains:
     def origin_status(self, origin_status):
         """Sets the origin_status of this Domains.
 
-        是否暂停源站回源。
+        是否暂停源站回源（off代表关闭 on代表开启）。
 
         :param origin_status: The origin_status of this Domains.
         :type origin_status: str
@@ -555,7 +555,7 @@ class Domains:
     def banned_reason(self):
         """Gets the banned_reason of this Domains.
 
-        域名禁用原因
+        域名禁用原因。
 
         :return: The banned_reason of this Domains.
         :rtype: str
@@ -566,7 +566,7 @@ class Domains:
     def banned_reason(self, banned_reason):
         """Sets the banned_reason of this Domains.
 
-        域名禁用原因
+        域名禁用原因。
 
         :param banned_reason: The banned_reason of this Domains.
         :type banned_reason: str
@@ -577,7 +577,7 @@ class Domains:
     def locked_reason(self):
         """Gets the locked_reason of this Domains.
 
-        域名锁定原因
+        域名锁定原因。
 
         :return: The locked_reason of this Domains.
         :rtype: str
@@ -588,7 +588,7 @@ class Domains:
     def locked_reason(self, locked_reason):
         """Sets the locked_reason of this Domains.
 
-        域名锁定原因
+        域名锁定原因。
 
         :param locked_reason: The locked_reason of this Domains.
         :type locked_reason: str
@@ -621,7 +621,7 @@ class Domains:
     def tags(self):
         """Gets the tags of this Domains.
 
-        标签信息
+        标签信息。
 
         :return: The tags of this Domains.
         :rtype: list[:class:`huaweicloudsdkcdn.v2.EpResourceTag`]
@@ -632,7 +632,7 @@ class Domains:
     def tags(self, tags):
         """Sets the tags of this Domains.
 
-        标签信息
+        标签信息。
 
         :param tags: The tags of this Domains.
         :type tags: list[:class:`huaweicloudsdkcdn.v2.EpResourceTag`]

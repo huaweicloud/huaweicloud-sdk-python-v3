@@ -35,11 +35,11 @@ class Quotas:
 
         The model defined in huaweicloud sdk
 
-        :param quota_limit: 配额上限
+        :param quota_limit: 配额上限。
         :type quota_limit: int
-        :param type: 配额类型
+        :param type: 配额类型。
         :type type: str
-        :param used: 已使用配额数
+        :param used: 已使用配额数。
         :type used: int
         :param user_domain_id: 域名所属用户的domain_id。
         :type user_domain_id: str
@@ -66,7 +66,7 @@ class Quotas:
     def quota_limit(self):
         """Gets the quota_limit of this Quotas.
 
-        配额上限
+        配额上限。
 
         :return: The quota_limit of this Quotas.
         :rtype: int
@@ -77,7 +77,7 @@ class Quotas:
     def quota_limit(self, quota_limit):
         """Sets the quota_limit of this Quotas.
 
-        配额上限
+        配额上限。
 
         :param quota_limit: The quota_limit of this Quotas.
         :type quota_limit: int
@@ -88,7 +88,7 @@ class Quotas:
     def type(self):
         """Gets the type of this Quotas.
 
-        配额类型
+        配额类型。
 
         :return: The type of this Quotas.
         :rtype: str
@@ -99,7 +99,7 @@ class Quotas:
     def type(self, type):
         """Sets the type of this Quotas.
 
-        配额类型
+        配额类型。
 
         :param type: The type of this Quotas.
         :type type: str
@@ -110,7 +110,7 @@ class Quotas:
     def used(self):
         """Gets the used of this Quotas.
 
-        已使用配额数
+        已使用配额数。
 
         :return: The used of this Quotas.
         :rtype: int
@@ -121,7 +121,7 @@ class Quotas:
     def used(self, used):
         """Sets the used of this Quotas.
 
-        已使用配额数
+        已使用配额数。
 
         :param used: The used of this Quotas.
         :type used: int

@@ -17,6 +17,8 @@ class ConfigsGetBody:
     sensitive_list = []
 
     openapi_types = {
+        'business_type': 'str',
+        'service_area': 'str',
         'origin_request_header': 'list[OriginRequestHeader]',
         'http_response_header': 'list[HttpResponseHeader]',
         'url_auth': 'UrlAuthGetBody',
@@ -46,6 +48,8 @@ class ConfigsGetBody:
     }
 
     attribute_map = {
+        'business_type': 'business_type',
+        'service_area': 'service_area',
         'origin_request_header': 'origin_request_header',
         'http_response_header': 'http_response_header',
         'url_auth': 'url_auth',
@@ -74,11 +78,15 @@ class ConfigsGetBody:
         'error_code_redirect_rules': 'error_code_redirect_rules'
     }
 
-    def __init__(self, origin_request_header=None, http_response_header=None, url_auth=None, https=None, sources=None, origin_protocol=None, origin_follow302_status=None, cache_rules=None, ip_filter=None, referer=None, force_redirect=None, compress=None, cache_url_parameter_filter=None, ipv6_accelerate=None, error_code_cache=None, origin_range_status=None, user_agent_filter=None, origin_request_url_rewrite=None, flexible_origin=None, slice_etag_status=None, origin_receive_timeout=None, remote_auth=None, websocket=None, video_seek=None, request_limit_rules=None, error_code_redirect_rules=None):
+    def __init__(self, business_type=None, service_area=None, origin_request_header=None, http_response_header=None, url_auth=None, https=None, sources=None, origin_protocol=None, origin_follow302_status=None, cache_rules=None, ip_filter=None, referer=None, force_redirect=None, compress=None, cache_url_parameter_filter=None, ipv6_accelerate=None, error_code_cache=None, origin_range_status=None, user_agent_filter=None, origin_request_url_rewrite=None, flexible_origin=None, slice_etag_status=None, origin_receive_timeout=None, remote_auth=None, websocket=None, video_seek=None, request_limit_rules=None, error_code_redirect_rules=None):
         """ConfigsGetBody
 
         The model defined in huaweicloud sdk
 
+        :param business_type: 业务类型，web：网站加速，download：文件下载加速，video：点播加速，wholesit：全站加速。
+        :type business_type: str
+        :param service_area: 服务区域，mainland_china：中国大陆，global：全球，outside_mainland_china：中国大陆境外。
+        :type service_area: str
         :param origin_request_header: 回源请求头配置
         :type origin_request_header: list[:class:`huaweicloudsdkcdn.v2.OriginRequestHeader`]
         :param http_response_header: http header配置
@@ -135,6 +143,8 @@ class ConfigsGetBody:
         
         
 
+        self._business_type = None
+        self._service_area = None
         self._origin_request_header = None
         self._http_response_header = None
         self._url_auth = None
@@ -163,6 +173,10 @@ class ConfigsGetBody:
         self._error_code_redirect_rules = None
         self.discriminator = None
 
+        if business_type is not None:
+            self.business_type = business_type
+        if service_area is not None:
+            self.service_area = service_area
         if origin_request_header is not None:
             self.origin_request_header = origin_request_header
         if http_response_header is not None:
@@ -215,6 +229,50 @@ class ConfigsGetBody:
             self.request_limit_rules = request_limit_rules
         if error_code_redirect_rules is not None:
             self.error_code_redirect_rules = error_code_redirect_rules
+
+    @property
+    def business_type(self):
+        """Gets the business_type of this ConfigsGetBody.
+
+        业务类型，web：网站加速，download：文件下载加速，video：点播加速，wholesit：全站加速。
+
+        :return: The business_type of this ConfigsGetBody.
+        :rtype: str
+        """
+        return self._business_type
+
+    @business_type.setter
+    def business_type(self, business_type):
+        """Sets the business_type of this ConfigsGetBody.
+
+        业务类型，web：网站加速，download：文件下载加速，video：点播加速，wholesit：全站加速。
+
+        :param business_type: The business_type of this ConfigsGetBody.
+        :type business_type: str
+        """
+        self._business_type = business_type
+
+    @property
+    def service_area(self):
+        """Gets the service_area of this ConfigsGetBody.
+
+        服务区域，mainland_china：中国大陆，global：全球，outside_mainland_china：中国大陆境外。
+
+        :return: The service_area of this ConfigsGetBody.
+        :rtype: str
+        """
+        return self._service_area
+
+    @service_area.setter
+    def service_area(self, service_area):
+        """Sets the service_area of this ConfigsGetBody.
+
+        服务区域，mainland_china：中国大陆，global：全球，outside_mainland_china：中国大陆境外。
+
+        :param service_area: The service_area of this ConfigsGetBody.
+        :type service_area: str
+        """
+        self._service_area = service_area
 
     @property
     def origin_request_header(self):

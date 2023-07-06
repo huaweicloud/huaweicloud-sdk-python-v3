@@ -29,7 +29,7 @@ class Follow302StatusRequest:
 
         The model defined in huaweicloud sdk
 
-        :param follow302_status: follow302状态（\&quot;off\&quot;/\&quot;on\&quot;）
+        :param follow302_status: follow302状态，off：关闭，on：开启。
         :type follow302_status: str
         """
         
@@ -44,7 +44,7 @@ class Follow302StatusRequest:
     def follow302_status(self):
         """Gets the follow302_status of this Follow302StatusRequest.
 
-        follow302状态（\"off\"/\"on\"）
+        follow302状态，off：关闭，on：开启。
 
         :return: The follow302_status of this Follow302StatusRequest.
         :rtype: str
@@ -55,7 +55,7 @@ class Follow302StatusRequest:
     def follow302_status(self, follow302_status):
         """Sets the follow302_status of this Follow302StatusRequest.
 
-        follow302状态（\"off\"/\"on\"）
+        follow302状态，off：关闭，on：开启。
 
         :param follow302_status: The follow302_status of this Follow302StatusRequest.
         :type follow302_status: str

@@ -45,7 +45,7 @@ class GetAccessConfigListRequestBody:
         :type log_group_name_list: list[str]
         :param log_stream_name_list: 日志流名称列表
         :type log_stream_name_list: list[str]
-        :param access_config_tag_list: 
+        :param access_config_tag_list: 接入配置标签，KEY不能重复,最多20个标签
         :type access_config_tag_list: list[:class:`huaweicloudsdklts.v2.AccessConfigTag`]
         """
         
@@ -157,6 +157,8 @@ class GetAccessConfigListRequestBody:
     def access_config_tag_list(self):
         """Gets the access_config_tag_list of this GetAccessConfigListRequestBody.
 
+        接入配置标签，KEY不能重复,最多20个标签
+
         :return: The access_config_tag_list of this GetAccessConfigListRequestBody.
         :rtype: list[:class:`huaweicloudsdklts.v2.AccessConfigTag`]
         """
@@ -165,6 +167,8 @@ class GetAccessConfigListRequestBody:
     @access_config_tag_list.setter
     def access_config_tag_list(self, access_config_tag_list):
         """Sets the access_config_tag_list of this GetAccessConfigListRequestBody.
+
+        接入配置标签，KEY不能重复,最多20个标签
 
         :param access_config_tag_list: The access_config_tag_list of this GetAccessConfigListRequestBody.
         :type access_config_tag_list: list[:class:`huaweicloudsdklts.v2.AccessConfigTag`]

@@ -30,7 +30,7 @@ class ShowTagsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param tags: 标签列表
+        :param tags: 标签列表。
         :type tags: list[:class:`huaweicloudsdkcdn.v1.Map`]
         """
         
@@ -46,7 +46,7 @@ class ShowTagsResponse(SdkResponse):
     def tags(self):
         """Gets the tags of this ShowTagsResponse.
 
-        标签列表
+        标签列表。
 
         :return: The tags of this ShowTagsResponse.
         :rtype: list[:class:`huaweicloudsdkcdn.v1.Map`]
@@ -57,7 +57,7 @@ class ShowTagsResponse(SdkResponse):
     def tags(self, tags):
         """Sets the tags of this ShowTagsResponse.
 
-        标签列表
+        标签列表。
 
         :param tags: The tags of this ShowTagsResponse.
         :type tags: list[:class:`huaweicloudsdkcdn.v1.Map`]

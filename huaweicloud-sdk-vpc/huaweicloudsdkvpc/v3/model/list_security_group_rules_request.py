@@ -25,7 +25,8 @@ class ListSecurityGroupRulesRequest:
         'description': 'list[str]',
         'remote_group_id': 'list[str]',
         'direction': 'str',
-        'action': 'str'
+        'action': 'str',
+        'remote_ip_prefix': 'str'
     }
 
     attribute_map = {
@@ -37,10 +38,11 @@ class ListSecurityGroupRulesRequest:
         'description': 'description',
         'remote_group_id': 'remote_group_id',
         'direction': 'direction',
-        'action': 'action'
+        'action': 'action',
+        'remote_ip_prefix': 'remote_ip_prefix'
     }
 
-    def __init__(self, limit=None, marker=None, id=None, security_group_id=None, protocol=None, description=None, remote_group_id=None, direction=None, action=None):
+    def __init__(self, limit=None, marker=None, id=None, security_group_id=None, protocol=None, description=None, remote_group_id=None, direction=None, action=None, remote_ip_prefix=None):
         """ListSecurityGroupRulesRequest
 
         The model defined in huaweicloud sdk
@@ -63,6 +65,8 @@ class ListSecurityGroupRulesRequest:
         :type direction: str
         :param action: 功能说明：安全组规则生效策略
         :type action: str
+        :param remote_ip_prefix: 功能说明：远端IP地址 取值范围：cidr格式
+        :type remote_ip_prefix: str
         """
         
         
@@ -76,6 +80,7 @@ class ListSecurityGroupRulesRequest:
         self._remote_group_id = None
         self._direction = None
         self._action = None
+        self._remote_ip_prefix = None
         self.discriminator = None
 
         if limit is not None:
@@ -96,6 +101,8 @@ class ListSecurityGroupRulesRequest:
             self.direction = direction
         if action is not None:
             self.action = action
+        if remote_ip_prefix is not None:
+            self.remote_ip_prefix = remote_ip_prefix
 
     @property
     def limit(self):
@@ -294,6 +301,28 @@ class ListSecurityGroupRulesRequest:
         :type action: str
         """
         self._action = action
+
+    @property
+    def remote_ip_prefix(self):
+        """Gets the remote_ip_prefix of this ListSecurityGroupRulesRequest.
+
+        功能说明：远端IP地址 取值范围：cidr格式
+
+        :return: The remote_ip_prefix of this ListSecurityGroupRulesRequest.
+        :rtype: str
+        """
+        return self._remote_ip_prefix
+
+    @remote_ip_prefix.setter
+    def remote_ip_prefix(self, remote_ip_prefix):
+        """Sets the remote_ip_prefix of this ListSecurityGroupRulesRequest.
+
+        功能说明：远端IP地址 取值范围：cidr格式
+
+        :param remote_ip_prefix: The remote_ip_prefix of this ListSecurityGroupRulesRequest.
+        :type remote_ip_prefix: str
+        """
+        self._remote_ip_prefix = remote_ip_prefix
 
     def to_dict(self):
         """Returns the model properties as a dict"""

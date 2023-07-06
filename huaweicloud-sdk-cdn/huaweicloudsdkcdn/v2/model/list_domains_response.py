@@ -34,7 +34,7 @@ class ListDomainsResponse(SdkResponse):
 
         :param total: 总条数。
         :type total: int
-        :param domains: 域名信息
+        :param domains: 域名信息。
         :type domains: list[:class:`huaweicloudsdkcdn.v2.Domains`]
         """
         
@@ -75,7 +75,7 @@ class ListDomainsResponse(SdkResponse):
     def domains(self):
         """Gets the domains of this ListDomainsResponse.
 
-        域名信息
+        域名信息。
 
         :return: The domains of this ListDomainsResponse.
         :rtype: list[:class:`huaweicloudsdkcdn.v2.Domains`]
@@ -86,7 +86,7 @@ class ListDomainsResponse(SdkResponse):
     def domains(self, domains):
         """Sets the domains of this ListDomainsResponse.
 
-        域名信息
+        域名信息。
 
         :param domains: The domains of this ListDomainsResponse.
         :type domains: list[:class:`huaweicloudsdkcdn.v2.Domains`]

@@ -22,6 +22,7 @@ class ProtectionInfoRequestInfo:
         'protection_policy_id': 'str',
         'create_protection_policy': 'ProtectionProxyInfoRequestInfo',
         'backup_protection_status': 'str',
+        'backup_resources': 'BackupResources',
         'backup_policy_id': 'str',
         'backup_cycle': 'UpdateBackupPolicyRequestInfo1',
         'agent_id_list': 'list[str]',
@@ -34,13 +35,14 @@ class ProtectionInfoRequestInfo:
         'protection_policy_id': 'protection_policy_id',
         'create_protection_policy': 'create_protection_policy',
         'backup_protection_status': 'backup_protection_status',
+        'backup_resources': 'backup_resources',
         'backup_policy_id': 'backup_policy_id',
         'backup_cycle': 'backup_cycle',
         'agent_id_list': 'agent_id_list',
         'host_id_list': 'host_id_list'
     }
 
-    def __init__(self, operating_system=None, ransom_protection_status=None, protection_policy_id=None, create_protection_policy=None, backup_protection_status=None, backup_policy_id=None, backup_cycle=None, agent_id_list=None, host_id_list=None):
+    def __init__(self, operating_system=None, ransom_protection_status=None, protection_policy_id=None, create_protection_policy=None, backup_protection_status=None, backup_resources=None, backup_policy_id=None, backup_cycle=None, agent_id_list=None, host_id_list=None):
         """ProtectionInfoRequestInfo
 
         The model defined in huaweicloud sdk
@@ -55,6 +57,8 @@ class ProtectionInfoRequestInfo:
         :type create_protection_policy: :class:`huaweicloudsdkhss.v5.ProtectionProxyInfoRequestInfo`
         :param backup_protection_status: 是否服务器备份，包含如下：   - closed ：关闭。   - opened ：开启。   若选择开启服务器备份，则backup_cycle必填
         :type backup_protection_status: str
+        :param backup_resources: 
+        :type backup_resources: :class:`huaweicloudsdkhss.v5.BackupResources`
         :param backup_policy_id: 备份策略ID
         :type backup_policy_id: str
         :param backup_cycle: 
@@ -72,6 +76,7 @@ class ProtectionInfoRequestInfo:
         self._protection_policy_id = None
         self._create_protection_policy = None
         self._backup_protection_status = None
+        self._backup_resources = None
         self._backup_policy_id = None
         self._backup_cycle = None
         self._agent_id_list = None
@@ -85,6 +90,8 @@ class ProtectionInfoRequestInfo:
         if create_protection_policy is not None:
             self.create_protection_policy = create_protection_policy
         self.backup_protection_status = backup_protection_status
+        if backup_resources is not None:
+            self.backup_resources = backup_resources
         if backup_policy_id is not None:
             self.backup_policy_id = backup_policy_id
         if backup_cycle is not None:
@@ -197,6 +204,24 @@ class ProtectionInfoRequestInfo:
         :type backup_protection_status: str
         """
         self._backup_protection_status = backup_protection_status
+
+    @property
+    def backup_resources(self):
+        """Gets the backup_resources of this ProtectionInfoRequestInfo.
+
+        :return: The backup_resources of this ProtectionInfoRequestInfo.
+        :rtype: :class:`huaweicloudsdkhss.v5.BackupResources`
+        """
+        return self._backup_resources
+
+    @backup_resources.setter
+    def backup_resources(self, backup_resources):
+        """Sets the backup_resources of this ProtectionInfoRequestInfo.
+
+        :param backup_resources: The backup_resources of this ProtectionInfoRequestInfo.
+        :type backup_resources: :class:`huaweicloudsdkhss.v5.BackupResources`
+        """
+        self._backup_resources = backup_resources
 
     @property
     def backup_policy_id(self):

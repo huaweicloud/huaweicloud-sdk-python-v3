@@ -35,9 +35,9 @@ class RefererRsp:
 
         :param referer_type: Referer类型。取值：0代表不设置Referer过滤；1代表黑名单；2代表白名单。默认取值为0。
         :type referer_type: int
-        :param referer_list: 请输入域名或IP地址，以“;”进行分割，域名、IP地址可以混合输入，支持泛域名添加。输入的域名、IP地址总数不超过100个。当设置防盗链时，此项必填。
+        :param referer_list: ：配置的referer地址。
         :type referer_list: str
-        :param include_empty: 是否包含空Referer。如果是黑名单并开启该选项，则表示无referer不允许访问。如果是白名单并开启该选项，则表示无referer允许访问。默认不包含。
+        :param include_empty: 是否包含空Referer。如果是黑名单并开启该选项，则表示无referer不允许访问。如果是白名单并开启该选项，则表示无referer允许访问。默认不包含,true：包含，false：不包含。
         :type include_empty: bool
         """
         
@@ -81,7 +81,7 @@ class RefererRsp:
     def referer_list(self):
         """Gets the referer_list of this RefererRsp.
 
-        请输入域名或IP地址，以“;”进行分割，域名、IP地址可以混合输入，支持泛域名添加。输入的域名、IP地址总数不超过100个。当设置防盗链时，此项必填。
+        ：配置的referer地址。
 
         :return: The referer_list of this RefererRsp.
         :rtype: str
@@ -92,7 +92,7 @@ class RefererRsp:
     def referer_list(self, referer_list):
         """Sets the referer_list of this RefererRsp.
 
-        请输入域名或IP地址，以“;”进行分割，域名、IP地址可以混合输入，支持泛域名添加。输入的域名、IP地址总数不超过100个。当设置防盗链时，此项必填。
+        ：配置的referer地址。
 
         :param referer_list: The referer_list of this RefererRsp.
         :type referer_list: str
@@ -103,7 +103,7 @@ class RefererRsp:
     def include_empty(self):
         """Gets the include_empty of this RefererRsp.
 
-        是否包含空Referer。如果是黑名单并开启该选项，则表示无referer不允许访问。如果是白名单并开启该选项，则表示无referer允许访问。默认不包含。
+        是否包含空Referer。如果是黑名单并开启该选项，则表示无referer不允许访问。如果是白名单并开启该选项，则表示无referer允许访问。默认不包含,true：包含，false：不包含。
 
         :return: The include_empty of this RefererRsp.
         :rtype: bool
@@ -114,7 +114,7 @@ class RefererRsp:
     def include_empty(self, include_empty):
         """Sets the include_empty of this RefererRsp.
 
-        是否包含空Referer。如果是黑名单并开启该选项，则表示无referer不允许访问。如果是白名单并开启该选项，则表示无referer允许访问。默认不包含。
+        是否包含空Referer。如果是黑名单并开启该选项，则表示无referer不允许访问。如果是白名单并开启该选项，则表示无referer允许访问。默认不包含,true：包含，false：不包含。
 
         :param include_empty: The include_empty of this RefererRsp.
         :type include_empty: bool

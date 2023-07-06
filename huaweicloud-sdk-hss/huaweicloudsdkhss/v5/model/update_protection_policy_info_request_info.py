@@ -26,7 +26,8 @@ class UpdateProtectionPolicyInfoRequestInfo:
         'exclude_directory': 'str',
         'agent_id_list': 'list[str]',
         'operating_system': 'str',
-        'runtime_detection_status': 'str'
+        'runtime_detection_status': 'str',
+        'process_whitelist': 'list[TrustProcessInfo]'
     }
 
     attribute_map = {
@@ -39,10 +40,11 @@ class UpdateProtectionPolicyInfoRequestInfo:
         'exclude_directory': 'exclude_directory',
         'agent_id_list': 'agent_id_list',
         'operating_system': 'operating_system',
-        'runtime_detection_status': 'runtime_detection_status'
+        'runtime_detection_status': 'runtime_detection_status',
+        'process_whitelist': 'process_whitelist'
     }
 
-    def __init__(self, policy_id=None, policy_name=None, protection_mode=None, bait_protection_status=None, protection_directory=None, protection_type=None, exclude_directory=None, agent_id_list=None, operating_system=None, runtime_detection_status=None):
+    def __init__(self, policy_id=None, policy_name=None, protection_mode=None, bait_protection_status=None, protection_directory=None, protection_type=None, exclude_directory=None, agent_id_list=None, operating_system=None, runtime_detection_status=None, process_whitelist=None):
         """UpdateProtectionPolicyInfoRequestInfo
 
         The model defined in huaweicloud sdk
@@ -67,6 +69,8 @@ class UpdateProtectionPolicyInfoRequestInfo:
         :type operating_system: str
         :param runtime_detection_status: 是否运行时检测，包含如下2种，暂时只有关闭一种状态，为保留字段。   - opened ：开启。   - closed ：关闭。
         :type runtime_detection_status: str
+        :param process_whitelist: 进程白名单
+        :type process_whitelist: list[:class:`huaweicloudsdkhss.v5.TrustProcessInfo`]
         """
         
         
@@ -81,6 +85,7 @@ class UpdateProtectionPolicyInfoRequestInfo:
         self._agent_id_list = None
         self._operating_system = None
         self._runtime_detection_status = None
+        self._process_whitelist = None
         self.discriminator = None
 
         self.policy_id = policy_id
@@ -96,6 +101,8 @@ class UpdateProtectionPolicyInfoRequestInfo:
         self.operating_system = operating_system
         if runtime_detection_status is not None:
             self.runtime_detection_status = runtime_detection_status
+        if process_whitelist is not None:
+            self.process_whitelist = process_whitelist
 
     @property
     def policy_id(self):
@@ -316,6 +323,28 @@ class UpdateProtectionPolicyInfoRequestInfo:
         :type runtime_detection_status: str
         """
         self._runtime_detection_status = runtime_detection_status
+
+    @property
+    def process_whitelist(self):
+        """Gets the process_whitelist of this UpdateProtectionPolicyInfoRequestInfo.
+
+        进程白名单
+
+        :return: The process_whitelist of this UpdateProtectionPolicyInfoRequestInfo.
+        :rtype: list[:class:`huaweicloudsdkhss.v5.TrustProcessInfo`]
+        """
+        return self._process_whitelist
+
+    @process_whitelist.setter
+    def process_whitelist(self, process_whitelist):
+        """Sets the process_whitelist of this UpdateProtectionPolicyInfoRequestInfo.
+
+        进程白名单
+
+        :param process_whitelist: The process_whitelist of this UpdateProtectionPolicyInfoRequestInfo.
+        :type process_whitelist: list[:class:`huaweicloudsdkhss.v5.TrustProcessInfo`]
+        """
+        self._process_whitelist = process_whitelist
 
     def to_dict(self):
         """Returns the model properties as a dict"""

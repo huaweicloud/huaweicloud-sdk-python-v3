@@ -26,7 +26,7 @@ class UpdateKeywordsAlarmRuleRequestBody:
         'keywords_alarm_send': 'bool',
         'keywords_alarm_send_code': 'int',
         'domain_id': 'str',
-        'notification_save_rule': 'NotificationSaveRule',
+        'notification_save_rule': 'SqlNotificationSaveRule',
         'trigger_condition_count': 'int',
         'trigger_condition_frequency': 'int',
         'whether_recovery_policy': 'bool',
@@ -74,7 +74,7 @@ class UpdateKeywordsAlarmRuleRequestBody:
         :param domain_id: domainId
         :type domain_id: str
         :param notification_save_rule: 通知主题
-        :type notification_save_rule: :class:`huaweicloudsdklts.v2.NotificationSaveRule`
+        :type notification_save_rule: :class:`huaweicloudsdklts.v2.SqlNotificationSaveRule`
         :param trigger_condition_count: 触发条件：触发次数;默认为1
         :type trigger_condition_count: int
         :param trigger_condition_frequency: 触发条件：触发周期;默认为1
@@ -329,7 +329,7 @@ class UpdateKeywordsAlarmRuleRequestBody:
         通知主题
 
         :return: The notification_save_rule of this UpdateKeywordsAlarmRuleRequestBody.
-        :rtype: :class:`huaweicloudsdklts.v2.NotificationSaveRule`
+        :rtype: :class:`huaweicloudsdklts.v2.SqlNotificationSaveRule`
         """
         return self._notification_save_rule
 
@@ -340,7 +340,7 @@ class UpdateKeywordsAlarmRuleRequestBody:
         通知主题
 
         :param notification_save_rule: The notification_save_rule of this UpdateKeywordsAlarmRuleRequestBody.
-        :type notification_save_rule: :class:`huaweicloudsdklts.v2.NotificationSaveRule`
+        :type notification_save_rule: :class:`huaweicloudsdklts.v2.SqlNotificationSaveRule`
         """
         self._notification_save_rule = notification_save_rule
 

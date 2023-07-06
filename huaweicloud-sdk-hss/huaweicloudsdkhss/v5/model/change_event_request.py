@@ -19,16 +19,20 @@ class ChangeEventRequest:
     openapi_types = {
         'region': 'str',
         'enterprise_project_id': 'str',
+        'container_name': 'str',
+        'container_id': 'str',
         'body': 'ChangeEventRequestInfo'
     }
 
     attribute_map = {
         'region': 'region',
         'enterprise_project_id': 'enterprise_project_id',
+        'container_name': 'container_name',
+        'container_id': 'container_id',
         'body': 'body'
     }
 
-    def __init__(self, region=None, enterprise_project_id=None, body=None):
+    def __init__(self, region=None, enterprise_project_id=None, container_name=None, container_id=None, body=None):
         """ChangeEventRequest
 
         The model defined in huaweicloud sdk
@@ -37,6 +41,10 @@ class ChangeEventRequest:
         :type region: str
         :param enterprise_project_id: 租户企业项目ID，查询所有企业项目时填写：all_granted_eps
         :type enterprise_project_id: str
+        :param container_name: 容器实例名称
+        :type container_name: str
+        :param container_id: 容器Id
+        :type container_id: str
         :param body: Body of the ChangeEventRequest
         :type body: :class:`huaweicloudsdkhss.v5.ChangeEventRequestInfo`
         """
@@ -45,12 +53,18 @@ class ChangeEventRequest:
 
         self._region = None
         self._enterprise_project_id = None
+        self._container_name = None
+        self._container_id = None
         self._body = None
         self.discriminator = None
 
         self.region = region
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
+        if container_name is not None:
+            self.container_name = container_name
+        if container_id is not None:
+            self.container_id = container_id
         if body is not None:
             self.body = body
 
@@ -97,6 +111,50 @@ class ChangeEventRequest:
         :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def container_name(self):
+        """Gets the container_name of this ChangeEventRequest.
+
+        容器实例名称
+
+        :return: The container_name of this ChangeEventRequest.
+        :rtype: str
+        """
+        return self._container_name
+
+    @container_name.setter
+    def container_name(self, container_name):
+        """Sets the container_name of this ChangeEventRequest.
+
+        容器实例名称
+
+        :param container_name: The container_name of this ChangeEventRequest.
+        :type container_name: str
+        """
+        self._container_name = container_name
+
+    @property
+    def container_id(self):
+        """Gets the container_id of this ChangeEventRequest.
+
+        容器Id
+
+        :return: The container_id of this ChangeEventRequest.
+        :rtype: str
+        """
+        return self._container_id
+
+    @container_id.setter
+    def container_id(self, container_id):
+        """Sets the container_id of this ChangeEventRequest.
+
+        容器Id
+
+        :param container_id: The container_id of this ChangeEventRequest.
+        :type container_id: str
+        """
+        self._container_id = container_id
 
     @property
     def body(self):

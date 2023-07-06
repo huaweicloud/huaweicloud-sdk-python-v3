@@ -3722,6 +3722,63 @@ class GaussDBforNoSQLAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def show_high_risk_commands_async(self, request):
+        """查询高危命令
+
+        查询Redis的高危命令
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowHighRiskCommands
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ShowHighRiskCommandsRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ShowHighRiskCommandsResponse`
+        """
+        return self._show_high_risk_commands_with_http_info(request)
+
+    def _show_high_risk_commands_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/high-risk-commands',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowHighRiskCommandsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def show_instance_configuration_async(self, request):
         """获取指定实例的参数
 
@@ -4653,6 +4710,65 @@ class GaussDBforNoSQLAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='UpdateConfigurationResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_high_risk_commands_async(self, request):
+        """修改高危命令
+
+        批量修改高危命令
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateHighRiskCommands
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.UpdateHighRiskCommandsRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.UpdateHighRiskCommandsResponse`
+        """
+        return self._update_high_risk_commands_with_http_info(request)
+
+    def _update_high_risk_commands_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/high-risk-commands',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateHighRiskCommandsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

@@ -29,7 +29,7 @@ class ShowTagsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param resource_id: 资源id
+        :param resource_id: 资源id。  &gt; 域名ID
         :type resource_id: str
         """
         
@@ -44,7 +44,7 @@ class ShowTagsRequest:
     def resource_id(self):
         """Gets the resource_id of this ShowTagsRequest.
 
-        资源id
+        资源id。  > 域名ID
 
         :return: The resource_id of this ShowTagsRequest.
         :rtype: str
@@ -55,7 +55,7 @@ class ShowTagsRequest:
     def resource_id(self, resource_id):
         """Sets the resource_id of this ShowTagsRequest.
 
-        资源id
+        资源id。  > 域名ID
 
         :param resource_id: The resource_id of this ShowTagsRequest.
         :type resource_id: str

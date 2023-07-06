@@ -45,19 +45,19 @@ class Urls:
 
         :param id: urlid
         :type id: int
-        :param url: url具体值
+        :param url: url具体值。
         :type url: str
-        :param status: url状态
+        :param status: url状态。
         :type status: str
-        :param type: 任务类型
+        :param type: 任务类型。
         :type type: str
-        :param task_id: 任务id
+        :param task_id: 任务id。
         :type task_id: int
-        :param modify_time: 修改时间戳（毫秒）
+        :param modify_time: 修改时间戳（毫秒）。
         :type modify_time: int
-        :param create_time: 创建时间戳（毫秒）
+        :param create_time: 创建时间戳（毫秒）。
         :type create_time: int
-        :param file_type: 文件类型，目录还是文件
+        :param file_type: 文件类型，目录还是文件。
         :type file_type: str
         """
         
@@ -116,7 +116,7 @@ class Urls:
     def url(self):
         """Gets the url of this Urls.
 
-        url具体值
+        url具体值。
 
         :return: The url of this Urls.
         :rtype: str
@@ -127,7 +127,7 @@ class Urls:
     def url(self, url):
         """Sets the url of this Urls.
 
-        url具体值
+        url具体值。
 
         :param url: The url of this Urls.
         :type url: str
@@ -138,7 +138,7 @@ class Urls:
     def status(self):
         """Gets the status of this Urls.
 
-        url状态
+        url状态。
 
         :return: The status of this Urls.
         :rtype: str
@@ -149,7 +149,7 @@ class Urls:
     def status(self, status):
         """Sets the status of this Urls.
 
-        url状态
+        url状态。
 
         :param status: The status of this Urls.
         :type status: str
@@ -160,7 +160,7 @@ class Urls:
     def type(self):
         """Gets the type of this Urls.
 
-        任务类型
+        任务类型。
 
         :return: The type of this Urls.
         :rtype: str
@@ -171,7 +171,7 @@ class Urls:
     def type(self, type):
         """Sets the type of this Urls.
 
-        任务类型
+        任务类型。
 
         :param type: The type of this Urls.
         :type type: str
@@ -182,7 +182,7 @@ class Urls:
     def task_id(self):
         """Gets the task_id of this Urls.
 
-        任务id
+        任务id。
 
         :return: The task_id of this Urls.
         :rtype: int
@@ -193,7 +193,7 @@ class Urls:
     def task_id(self, task_id):
         """Sets the task_id of this Urls.
 
-        任务id
+        任务id。
 
         :param task_id: The task_id of this Urls.
         :type task_id: int
@@ -204,7 +204,7 @@ class Urls:
     def modify_time(self):
         """Gets the modify_time of this Urls.
 
-        修改时间戳（毫秒）
+        修改时间戳（毫秒）。
 
         :return: The modify_time of this Urls.
         :rtype: int
@@ -215,7 +215,7 @@ class Urls:
     def modify_time(self, modify_time):
         """Sets the modify_time of this Urls.
 
-        修改时间戳（毫秒）
+        修改时间戳（毫秒）。
 
         :param modify_time: The modify_time of this Urls.
         :type modify_time: int
@@ -226,7 +226,7 @@ class Urls:
     def create_time(self):
         """Gets the create_time of this Urls.
 
-        创建时间戳（毫秒）
+        创建时间戳（毫秒）。
 
         :return: The create_time of this Urls.
         :rtype: int
@@ -237,7 +237,7 @@ class Urls:
     def create_time(self, create_time):
         """Sets the create_time of this Urls.
 
-        创建时间戳（毫秒）
+        创建时间戳（毫秒）。
 
         :param create_time: The create_time of this Urls.
         :type create_time: int
@@ -248,7 +248,7 @@ class Urls:
     def file_type(self):
         """Gets the file_type of this Urls.
 
-        文件类型，目录还是文件
+        文件类型，目录还是文件。
 
         :return: The file_type of this Urls.
         :rtype: str
@@ -259,7 +259,7 @@ class Urls:
     def file_type(self, file_type):
         """Sets the file_type of this Urls.
 
-        文件类型，目录还是文件
+        文件类型，目录还是文件。
 
         :param file_type: The file_type of this Urls.
         :type file_type: str

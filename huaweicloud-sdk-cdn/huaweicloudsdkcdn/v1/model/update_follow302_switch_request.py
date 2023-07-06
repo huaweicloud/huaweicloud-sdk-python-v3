@@ -33,7 +33,7 @@ class UpdateFollow302SwitchRequest:
 
         The model defined in huaweicloud sdk
 
-        :param domain_id: 加速域名id。获取方法请参见查询加速域名。
+        :param domain_id: 加速域名id。
         :type domain_id: str
         :param enterprise_project_id: 当用户开启企业项目功能时，该参数生效，表示修改当前企业项目下加速域名的配置，\&quot;all\&quot;代表所有项目。注意：当使用子帐号调用接口时，该参数必传。  您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。
         :type enterprise_project_id: str
@@ -58,7 +58,7 @@ class UpdateFollow302SwitchRequest:
     def domain_id(self):
         """Gets the domain_id of this UpdateFollow302SwitchRequest.
 
-        加速域名id。获取方法请参见查询加速域名。
+        加速域名id。
 
         :return: The domain_id of this UpdateFollow302SwitchRequest.
         :rtype: str
@@ -69,7 +69,7 @@ class UpdateFollow302SwitchRequest:
     def domain_id(self, domain_id):
         """Sets the domain_id of this UpdateFollow302SwitchRequest.
 
-        加速域名id。获取方法请参见查询加速域名。
+        加速域名id。
 
         :param domain_id: The domain_id of this UpdateFollow302SwitchRequest.
         :type domain_id: str

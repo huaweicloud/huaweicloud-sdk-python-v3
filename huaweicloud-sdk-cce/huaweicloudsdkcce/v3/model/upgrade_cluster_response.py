@@ -18,51 +18,72 @@ class UpgradeClusterResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'uid': 'str'
+        'metadata': 'UpgradeCluserResponseMetadata',
+        'spec': 'UpgradeResponseSpec'
     }
 
     attribute_map = {
-        'uid': 'uid'
+        'metadata': 'metadata',
+        'spec': 'spec'
     }
 
-    def __init__(self, uid=None):
+    def __init__(self, metadata=None, spec=None):
         """UpgradeClusterResponse
 
         The model defined in huaweicloud sdk
 
-        :param uid: 升级任务ID，可通过调用获取集群升级任务详情API查询进展
-        :type uid: str
+        :param metadata: 
+        :type metadata: :class:`huaweicloudsdkcce.v3.UpgradeCluserResponseMetadata`
+        :param spec: 
+        :type spec: :class:`huaweicloudsdkcce.v3.UpgradeResponseSpec`
         """
         
         super(UpgradeClusterResponse, self).__init__()
 
-        self._uid = None
+        self._metadata = None
+        self._spec = None
         self.discriminator = None
 
-        if uid is not None:
-            self.uid = uid
+        if metadata is not None:
+            self.metadata = metadata
+        if spec is not None:
+            self.spec = spec
 
     @property
-    def uid(self):
-        """Gets the uid of this UpgradeClusterResponse.
+    def metadata(self):
+        """Gets the metadata of this UpgradeClusterResponse.
 
-        升级任务ID，可通过调用获取集群升级任务详情API查询进展
-
-        :return: The uid of this UpgradeClusterResponse.
-        :rtype: str
+        :return: The metadata of this UpgradeClusterResponse.
+        :rtype: :class:`huaweicloudsdkcce.v3.UpgradeCluserResponseMetadata`
         """
-        return self._uid
+        return self._metadata
 
-    @uid.setter
-    def uid(self, uid):
-        """Sets the uid of this UpgradeClusterResponse.
+    @metadata.setter
+    def metadata(self, metadata):
+        """Sets the metadata of this UpgradeClusterResponse.
 
-        升级任务ID，可通过调用获取集群升级任务详情API查询进展
-
-        :param uid: The uid of this UpgradeClusterResponse.
-        :type uid: str
+        :param metadata: The metadata of this UpgradeClusterResponse.
+        :type metadata: :class:`huaweicloudsdkcce.v3.UpgradeCluserResponseMetadata`
         """
-        self._uid = uid
+        self._metadata = metadata
+
+    @property
+    def spec(self):
+        """Gets the spec of this UpgradeClusterResponse.
+
+        :return: The spec of this UpgradeClusterResponse.
+        :rtype: :class:`huaweicloudsdkcce.v3.UpgradeResponseSpec`
+        """
+        return self._spec
+
+    @spec.setter
+    def spec(self, spec):
+        """Sets the spec of this UpgradeClusterResponse.
+
+        :param spec: The spec of this UpgradeClusterResponse.
+        :type spec: :class:`huaweicloudsdkcce.v3.UpgradeResponseSpec`
+        """
+        self._spec = spec
 
     def to_dict(self):
         """Returns the model properties as a dict"""

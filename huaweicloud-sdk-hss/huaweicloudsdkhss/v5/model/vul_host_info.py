@@ -21,10 +21,22 @@ class VulHostInfo:
         'severity_level': 'str',
         'host_name': 'str',
         'host_ip': 'str',
+        'agent_id': 'str',
         'cve_num': 'int',
         'cve_id_list': 'list[str]',
         'status': 'str',
-        'repair_cmd': 'str'
+        'repair_cmd': 'str',
+        'app_path': 'str',
+        'region_name': 'str',
+        'public_ip': 'str',
+        'private_ip': 'str',
+        'group_id': 'str',
+        'group_name': 'str',
+        'os_type': 'str',
+        'asset_value': 'str',
+        'is_affect_business': 'bool',
+        'first_scan_time': 'int',
+        'scan_time': 'int'
     }
 
     attribute_map = {
@@ -32,13 +44,25 @@ class VulHostInfo:
         'severity_level': 'severity_level',
         'host_name': 'host_name',
         'host_ip': 'host_ip',
+        'agent_id': 'agent_id',
         'cve_num': 'cve_num',
         'cve_id_list': 'cve_id_list',
         'status': 'status',
-        'repair_cmd': 'repair_cmd'
+        'repair_cmd': 'repair_cmd',
+        'app_path': 'app_path',
+        'region_name': 'region_name',
+        'public_ip': 'public_ip',
+        'private_ip': 'private_ip',
+        'group_id': 'group_id',
+        'group_name': 'group_name',
+        'os_type': 'os_type',
+        'asset_value': 'asset_value',
+        'is_affect_business': 'is_affect_business',
+        'first_scan_time': 'first_scan_time',
+        'scan_time': 'scan_time'
     }
 
-    def __init__(self, host_id=None, severity_level=None, host_name=None, host_ip=None, cve_num=None, cve_id_list=None, status=None, repair_cmd=None):
+    def __init__(self, host_id=None, severity_level=None, host_name=None, host_ip=None, agent_id=None, cve_num=None, cve_id_list=None, status=None, repair_cmd=None, app_path=None, region_name=None, public_ip=None, private_ip=None, group_id=None, group_name=None, os_type=None, asset_value=None, is_affect_business=None, first_scan_time=None, scan_time=None):
         """VulHostInfo
 
         The model defined in huaweicloud sdk
@@ -51,6 +75,8 @@ class VulHostInfo:
         :type host_name: str
         :param host_ip: 受影响资产ip
         :type host_ip: str
+        :param agent_id: 主机对应的agent id
+        :type agent_id: str
         :param cve_num: 漏洞cve数
         :type cve_num: int
         :param cve_id_list: cve列表
@@ -59,6 +85,28 @@ class VulHostInfo:
         :type status: str
         :param repair_cmd: 修复命令行
         :type repair_cmd: str
+        :param app_path: 应用软件的路径（只有应用漏洞有该字段）
+        :type app_path: str
+        :param region_name: 地域
+        :type region_name: str
+        :param public_ip: 服务器公网ip
+        :type public_ip: str
+        :param private_ip: 服务器私网ip
+        :type private_ip: str
+        :param group_id: 服务器组id
+        :type group_id: str
+        :param group_name: 服务器组名称
+        :type group_name: str
+        :param os_type: 操作系统
+        :type os_type: str
+        :param asset_value: 资产重要性，包含如下3种  important ：重要资产 common ：一般资产 test ：测试资产
+        :type asset_value: str
+        :param is_affect_business: 是否影响业务
+        :type is_affect_business: bool
+        :param first_scan_time: 首次扫描时间
+        :type first_scan_time: int
+        :param scan_time: 扫描时间
+        :type scan_time: int
         """
         
         
@@ -67,10 +115,22 @@ class VulHostInfo:
         self._severity_level = None
         self._host_name = None
         self._host_ip = None
+        self._agent_id = None
         self._cve_num = None
         self._cve_id_list = None
         self._status = None
         self._repair_cmd = None
+        self._app_path = None
+        self._region_name = None
+        self._public_ip = None
+        self._private_ip = None
+        self._group_id = None
+        self._group_name = None
+        self._os_type = None
+        self._asset_value = None
+        self._is_affect_business = None
+        self._first_scan_time = None
+        self._scan_time = None
         self.discriminator = None
 
         if host_id is not None:
@@ -81,6 +141,8 @@ class VulHostInfo:
             self.host_name = host_name
         if host_ip is not None:
             self.host_ip = host_ip
+        if agent_id is not None:
+            self.agent_id = agent_id
         if cve_num is not None:
             self.cve_num = cve_num
         if cve_id_list is not None:
@@ -89,6 +151,28 @@ class VulHostInfo:
             self.status = status
         if repair_cmd is not None:
             self.repair_cmd = repair_cmd
+        if app_path is not None:
+            self.app_path = app_path
+        if region_name is not None:
+            self.region_name = region_name
+        if public_ip is not None:
+            self.public_ip = public_ip
+        if private_ip is not None:
+            self.private_ip = private_ip
+        if group_id is not None:
+            self.group_id = group_id
+        if group_name is not None:
+            self.group_name = group_name
+        if os_type is not None:
+            self.os_type = os_type
+        if asset_value is not None:
+            self.asset_value = asset_value
+        if is_affect_business is not None:
+            self.is_affect_business = is_affect_business
+        if first_scan_time is not None:
+            self.first_scan_time = first_scan_time
+        if scan_time is not None:
+            self.scan_time = scan_time
 
     @property
     def host_id(self):
@@ -179,6 +263,28 @@ class VulHostInfo:
         self._host_ip = host_ip
 
     @property
+    def agent_id(self):
+        """Gets the agent_id of this VulHostInfo.
+
+        主机对应的agent id
+
+        :return: The agent_id of this VulHostInfo.
+        :rtype: str
+        """
+        return self._agent_id
+
+    @agent_id.setter
+    def agent_id(self, agent_id):
+        """Sets the agent_id of this VulHostInfo.
+
+        主机对应的agent id
+
+        :param agent_id: The agent_id of this VulHostInfo.
+        :type agent_id: str
+        """
+        self._agent_id = agent_id
+
+    @property
     def cve_num(self):
         """Gets the cve_num of this VulHostInfo.
 
@@ -265,6 +371,248 @@ class VulHostInfo:
         :type repair_cmd: str
         """
         self._repair_cmd = repair_cmd
+
+    @property
+    def app_path(self):
+        """Gets the app_path of this VulHostInfo.
+
+        应用软件的路径（只有应用漏洞有该字段）
+
+        :return: The app_path of this VulHostInfo.
+        :rtype: str
+        """
+        return self._app_path
+
+    @app_path.setter
+    def app_path(self, app_path):
+        """Sets the app_path of this VulHostInfo.
+
+        应用软件的路径（只有应用漏洞有该字段）
+
+        :param app_path: The app_path of this VulHostInfo.
+        :type app_path: str
+        """
+        self._app_path = app_path
+
+    @property
+    def region_name(self):
+        """Gets the region_name of this VulHostInfo.
+
+        地域
+
+        :return: The region_name of this VulHostInfo.
+        :rtype: str
+        """
+        return self._region_name
+
+    @region_name.setter
+    def region_name(self, region_name):
+        """Sets the region_name of this VulHostInfo.
+
+        地域
+
+        :param region_name: The region_name of this VulHostInfo.
+        :type region_name: str
+        """
+        self._region_name = region_name
+
+    @property
+    def public_ip(self):
+        """Gets the public_ip of this VulHostInfo.
+
+        服务器公网ip
+
+        :return: The public_ip of this VulHostInfo.
+        :rtype: str
+        """
+        return self._public_ip
+
+    @public_ip.setter
+    def public_ip(self, public_ip):
+        """Sets the public_ip of this VulHostInfo.
+
+        服务器公网ip
+
+        :param public_ip: The public_ip of this VulHostInfo.
+        :type public_ip: str
+        """
+        self._public_ip = public_ip
+
+    @property
+    def private_ip(self):
+        """Gets the private_ip of this VulHostInfo.
+
+        服务器私网ip
+
+        :return: The private_ip of this VulHostInfo.
+        :rtype: str
+        """
+        return self._private_ip
+
+    @private_ip.setter
+    def private_ip(self, private_ip):
+        """Sets the private_ip of this VulHostInfo.
+
+        服务器私网ip
+
+        :param private_ip: The private_ip of this VulHostInfo.
+        :type private_ip: str
+        """
+        self._private_ip = private_ip
+
+    @property
+    def group_id(self):
+        """Gets the group_id of this VulHostInfo.
+
+        服务器组id
+
+        :return: The group_id of this VulHostInfo.
+        :rtype: str
+        """
+        return self._group_id
+
+    @group_id.setter
+    def group_id(self, group_id):
+        """Sets the group_id of this VulHostInfo.
+
+        服务器组id
+
+        :param group_id: The group_id of this VulHostInfo.
+        :type group_id: str
+        """
+        self._group_id = group_id
+
+    @property
+    def group_name(self):
+        """Gets the group_name of this VulHostInfo.
+
+        服务器组名称
+
+        :return: The group_name of this VulHostInfo.
+        :rtype: str
+        """
+        return self._group_name
+
+    @group_name.setter
+    def group_name(self, group_name):
+        """Sets the group_name of this VulHostInfo.
+
+        服务器组名称
+
+        :param group_name: The group_name of this VulHostInfo.
+        :type group_name: str
+        """
+        self._group_name = group_name
+
+    @property
+    def os_type(self):
+        """Gets the os_type of this VulHostInfo.
+
+        操作系统
+
+        :return: The os_type of this VulHostInfo.
+        :rtype: str
+        """
+        return self._os_type
+
+    @os_type.setter
+    def os_type(self, os_type):
+        """Sets the os_type of this VulHostInfo.
+
+        操作系统
+
+        :param os_type: The os_type of this VulHostInfo.
+        :type os_type: str
+        """
+        self._os_type = os_type
+
+    @property
+    def asset_value(self):
+        """Gets the asset_value of this VulHostInfo.
+
+        资产重要性，包含如下3种  important ：重要资产 common ：一般资产 test ：测试资产
+
+        :return: The asset_value of this VulHostInfo.
+        :rtype: str
+        """
+        return self._asset_value
+
+    @asset_value.setter
+    def asset_value(self, asset_value):
+        """Sets the asset_value of this VulHostInfo.
+
+        资产重要性，包含如下3种  important ：重要资产 common ：一般资产 test ：测试资产
+
+        :param asset_value: The asset_value of this VulHostInfo.
+        :type asset_value: str
+        """
+        self._asset_value = asset_value
+
+    @property
+    def is_affect_business(self):
+        """Gets the is_affect_business of this VulHostInfo.
+
+        是否影响业务
+
+        :return: The is_affect_business of this VulHostInfo.
+        :rtype: bool
+        """
+        return self._is_affect_business
+
+    @is_affect_business.setter
+    def is_affect_business(self, is_affect_business):
+        """Sets the is_affect_business of this VulHostInfo.
+
+        是否影响业务
+
+        :param is_affect_business: The is_affect_business of this VulHostInfo.
+        :type is_affect_business: bool
+        """
+        self._is_affect_business = is_affect_business
+
+    @property
+    def first_scan_time(self):
+        """Gets the first_scan_time of this VulHostInfo.
+
+        首次扫描时间
+
+        :return: The first_scan_time of this VulHostInfo.
+        :rtype: int
+        """
+        return self._first_scan_time
+
+    @first_scan_time.setter
+    def first_scan_time(self, first_scan_time):
+        """Sets the first_scan_time of this VulHostInfo.
+
+        首次扫描时间
+
+        :param first_scan_time: The first_scan_time of this VulHostInfo.
+        :type first_scan_time: int
+        """
+        self._first_scan_time = first_scan_time
+
+    @property
+    def scan_time(self):
+        """Gets the scan_time of this VulHostInfo.
+
+        扫描时间
+
+        :return: The scan_time of this VulHostInfo.
+        :rtype: int
+        """
+        return self._scan_time
+
+    @scan_time.setter
+    def scan_time(self, scan_time):
+        """Sets the scan_time of this VulHostInfo.
+
+        扫描时间
+
+        :param scan_time: The scan_time of this VulHostInfo.
+        :type scan_time: int
+        """
+        self._scan_time = scan_time
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -35,9 +35,9 @@ class BatchCopyResultVo:
 
         :param reason: 失败原因,成功时没有该字段
         :type reason: str
-        :param status: 批量操作结果
+        :param status: 批量操作结果。
         :type status: str
-        :param domain_name: 域名
+        :param domain_name: 域名。
         :type domain_name: str
         """
         
@@ -79,7 +79,7 @@ class BatchCopyResultVo:
     def status(self):
         """Gets the status of this BatchCopyResultVo.
 
-        批量操作结果
+        批量操作结果。
 
         :return: The status of this BatchCopyResultVo.
         :rtype: str
@@ -90,7 +90,7 @@ class BatchCopyResultVo:
     def status(self, status):
         """Sets the status of this BatchCopyResultVo.
 
-        批量操作结果
+        批量操作结果。
 
         :param status: The status of this BatchCopyResultVo.
         :type status: str
@@ -101,7 +101,7 @@ class BatchCopyResultVo:
     def domain_name(self):
         """Gets the domain_name of this BatchCopyResultVo.
 
-        域名
+        域名。
 
         :return: The domain_name of this BatchCopyResultVo.
         :rtype: str
@@ -112,7 +112,7 @@ class BatchCopyResultVo:
     def domain_name(self, domain_name):
         """Sets the domain_name of this BatchCopyResultVo.
 
-        域名
+        域名。
 
         :param domain_name: The domain_name of this BatchCopyResultVo.
         :type domain_name: str

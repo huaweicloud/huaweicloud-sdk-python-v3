@@ -37,7 +37,7 @@ class CacheConfigRequest:
 
         :param ignore_url_parameter: 是否忽略url中的参数。
         :type ignore_url_parameter: bool
-        :param follow_origin: 缓存规则是否遵循源站
+        :param follow_origin: 缓存规则是否遵循源站。
         :type follow_origin: bool
         :param compress: 
         :type compress: :class:`huaweicloudsdkcdn.v1.CompressRequest`
@@ -88,7 +88,7 @@ class CacheConfigRequest:
     def follow_origin(self):
         """Gets the follow_origin of this CacheConfigRequest.
 
-        缓存规则是否遵循源站
+        缓存规则是否遵循源站。
 
         :return: The follow_origin of this CacheConfigRequest.
         :rtype: bool
@@ -99,7 +99,7 @@ class CacheConfigRequest:
     def follow_origin(self, follow_origin):
         """Sets the follow_origin of this CacheConfigRequest.
 
-        缓存规则是否遵循源站
+        缓存规则是否遵循源站。
 
         :param follow_origin: The follow_origin of this CacheConfigRequest.
         :type follow_origin: bool

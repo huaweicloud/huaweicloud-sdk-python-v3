@@ -32,6 +32,7 @@ from huaweicloudsdkcce.v3.model.cluster_node_information_metadata import Cluster
 from huaweicloudsdkcce.v3.model.cluster_spec import ClusterSpec
 from huaweicloudsdkcce.v3.model.cluster_status import ClusterStatus
 from huaweicloudsdkcce.v3.model.cluster_upgrade_action import ClusterUpgradeAction
+from huaweicloudsdkcce.v3.model.cluster_upgrade_response_action import ClusterUpgradeResponseAction
 from huaweicloudsdkcce.v3.model.clusters import Clusters
 from huaweicloudsdkcce.v3.model.configuration_item import ConfigurationItem
 from huaweicloudsdkcce.v3.model.container_cidr import ContainerCIDR
@@ -200,10 +201,12 @@ from huaweicloudsdkcce.v3.model.update_node_pool_response import UpdateNodePoolR
 from huaweicloudsdkcce.v3.model.update_node_request import UpdateNodeRequest
 from huaweicloudsdkcce.v3.model.update_node_response import UpdateNodeResponse
 from huaweicloudsdkcce.v3.model.upgrade_addon_config import UpgradeAddonConfig
+from huaweicloudsdkcce.v3.model.upgrade_cluser_response_metadata import UpgradeCluserResponseMetadata
 from huaweicloudsdkcce.v3.model.upgrade_cluster_request import UpgradeClusterRequest
 from huaweicloudsdkcce.v3.model.upgrade_cluster_request_body import UpgradeClusterRequestBody
 from huaweicloudsdkcce.v3.model.upgrade_cluster_request_metadata import UpgradeClusterRequestMetadata
 from huaweicloudsdkcce.v3.model.upgrade_cluster_response import UpgradeClusterResponse
+from huaweicloudsdkcce.v3.model.upgrade_response_spec import UpgradeResponseSpec
 from huaweicloudsdkcce.v3.model.upgrade_spec import UpgradeSpec
 from huaweicloudsdkcce.v3.model.upgrade_strategy import UpgradeStrategy
 from huaweicloudsdkcce.v3.model.upgrade_task_metadata import UpgradeTaskMetadata

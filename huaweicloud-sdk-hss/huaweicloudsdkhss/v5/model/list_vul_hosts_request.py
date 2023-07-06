@@ -24,7 +24,12 @@ class ListVulHostsRequest:
         'host_ip': 'str',
         'status': 'str',
         'limit': 'int',
-        'offset': 'int'
+        'offset': 'int',
+        'asset_value': 'str',
+        'group_name': 'str',
+        'handle_status': 'str',
+        'severity_level': 'str',
+        'is_affect_business': 'bool'
     }
 
     attribute_map = {
@@ -35,10 +40,15 @@ class ListVulHostsRequest:
         'host_ip': 'host_ip',
         'status': 'status',
         'limit': 'limit',
-        'offset': 'offset'
+        'offset': 'offset',
+        'asset_value': 'asset_value',
+        'group_name': 'group_name',
+        'handle_status': 'handle_status',
+        'severity_level': 'severity_level',
+        'is_affect_business': 'is_affect_business'
     }
 
-    def __init__(self, enterprise_project_id=None, vul_id=None, type=None, host_name=None, host_ip=None, status=None, limit=None, offset=None):
+    def __init__(self, enterprise_project_id=None, vul_id=None, type=None, host_name=None, host_ip=None, status=None, limit=None, offset=None, asset_value=None, group_name=None, handle_status=None, severity_level=None, is_affect_business=None):
         """ListVulHostsRequest
 
         The model defined in huaweicloud sdk
@@ -47,7 +57,7 @@ class ListVulHostsRequest:
         :type enterprise_project_id: str
         :param vul_id: 漏洞ID
         :type vul_id: str
-        :param type: 漏洞类型   - linux_vul : 漏洞类型-linux漏洞   - windows_vul : 漏洞类型-windows漏洞
+        :param type: 漏洞类型   - linux_vul : 漏洞类型-linux漏洞   - windows_vul : 漏洞类型-windows漏洞   - web_cms : Web-CMS漏洞   - app_vul : 应用漏洞
         :type type: str
         :param host_name: 受影响资产名称
         :type host_name: str
@@ -59,6 +69,16 @@ class ListVulHostsRequest:
         :type limit: int
         :param offset: 偏移
         :type offset: int
+        :param asset_value: 资产重要性 important:重要 common：一般 test：测试
+        :type asset_value: str
+        :param group_name: 服务器组名称
+        :type group_name: str
+        :param handle_status: 处置状态，包含如下:   - unhandled ：未处理   - handled : 已处理
+        :type handle_status: str
+        :param severity_level: 危险程度 ，Critical，High，Medium，Low
+        :type severity_level: str
+        :param is_affect_business: 是否影响业务
+        :type is_affect_business: bool
         """
         
         
@@ -71,6 +91,11 @@ class ListVulHostsRequest:
         self._status = None
         self._limit = None
         self._offset = None
+        self._asset_value = None
+        self._group_name = None
+        self._handle_status = None
+        self._severity_level = None
+        self._is_affect_business = None
         self.discriminator = None
 
         if enterprise_project_id is not None:
@@ -87,6 +112,16 @@ class ListVulHostsRequest:
             self.limit = limit
         if offset is not None:
             self.offset = offset
+        if asset_value is not None:
+            self.asset_value = asset_value
+        if group_name is not None:
+            self.group_name = group_name
+        if handle_status is not None:
+            self.handle_status = handle_status
+        if severity_level is not None:
+            self.severity_level = severity_level
+        if is_affect_business is not None:
+            self.is_affect_business = is_affect_business
 
     @property
     def enterprise_project_id(self):
@@ -136,7 +171,7 @@ class ListVulHostsRequest:
     def type(self):
         """Gets the type of this ListVulHostsRequest.
 
-        漏洞类型   - linux_vul : 漏洞类型-linux漏洞   - windows_vul : 漏洞类型-windows漏洞
+        漏洞类型   - linux_vul : 漏洞类型-linux漏洞   - windows_vul : 漏洞类型-windows漏洞   - web_cms : Web-CMS漏洞   - app_vul : 应用漏洞
 
         :return: The type of this ListVulHostsRequest.
         :rtype: str
@@ -147,7 +182,7 @@ class ListVulHostsRequest:
     def type(self, type):
         """Sets the type of this ListVulHostsRequest.
 
-        漏洞类型   - linux_vul : 漏洞类型-linux漏洞   - windows_vul : 漏洞类型-windows漏洞
+        漏洞类型   - linux_vul : 漏洞类型-linux漏洞   - windows_vul : 漏洞类型-windows漏洞   - web_cms : Web-CMS漏洞   - app_vul : 应用漏洞
 
         :param type: The type of this ListVulHostsRequest.
         :type type: str
@@ -263,6 +298,116 @@ class ListVulHostsRequest:
         :type offset: int
         """
         self._offset = offset
+
+    @property
+    def asset_value(self):
+        """Gets the asset_value of this ListVulHostsRequest.
+
+        资产重要性 important:重要 common：一般 test：测试
+
+        :return: The asset_value of this ListVulHostsRequest.
+        :rtype: str
+        """
+        return self._asset_value
+
+    @asset_value.setter
+    def asset_value(self, asset_value):
+        """Sets the asset_value of this ListVulHostsRequest.
+
+        资产重要性 important:重要 common：一般 test：测试
+
+        :param asset_value: The asset_value of this ListVulHostsRequest.
+        :type asset_value: str
+        """
+        self._asset_value = asset_value
+
+    @property
+    def group_name(self):
+        """Gets the group_name of this ListVulHostsRequest.
+
+        服务器组名称
+
+        :return: The group_name of this ListVulHostsRequest.
+        :rtype: str
+        """
+        return self._group_name
+
+    @group_name.setter
+    def group_name(self, group_name):
+        """Sets the group_name of this ListVulHostsRequest.
+
+        服务器组名称
+
+        :param group_name: The group_name of this ListVulHostsRequest.
+        :type group_name: str
+        """
+        self._group_name = group_name
+
+    @property
+    def handle_status(self):
+        """Gets the handle_status of this ListVulHostsRequest.
+
+        处置状态，包含如下:   - unhandled ：未处理   - handled : 已处理
+
+        :return: The handle_status of this ListVulHostsRequest.
+        :rtype: str
+        """
+        return self._handle_status
+
+    @handle_status.setter
+    def handle_status(self, handle_status):
+        """Sets the handle_status of this ListVulHostsRequest.
+
+        处置状态，包含如下:   - unhandled ：未处理   - handled : 已处理
+
+        :param handle_status: The handle_status of this ListVulHostsRequest.
+        :type handle_status: str
+        """
+        self._handle_status = handle_status
+
+    @property
+    def severity_level(self):
+        """Gets the severity_level of this ListVulHostsRequest.
+
+        危险程度 ，Critical，High，Medium，Low
+
+        :return: The severity_level of this ListVulHostsRequest.
+        :rtype: str
+        """
+        return self._severity_level
+
+    @severity_level.setter
+    def severity_level(self, severity_level):
+        """Sets the severity_level of this ListVulHostsRequest.
+
+        危险程度 ，Critical，High，Medium，Low
+
+        :param severity_level: The severity_level of this ListVulHostsRequest.
+        :type severity_level: str
+        """
+        self._severity_level = severity_level
+
+    @property
+    def is_affect_business(self):
+        """Gets the is_affect_business of this ListVulHostsRequest.
+
+        是否影响业务
+
+        :return: The is_affect_business of this ListVulHostsRequest.
+        :rtype: bool
+        """
+        return self._is_affect_business
+
+    @is_affect_business.setter
+    def is_affect_business(self, is_affect_business):
+        """Sets the is_affect_business of this ListVulHostsRequest.
+
+        是否影响业务
+
+        :param is_affect_business: The is_affect_business of this ListVulHostsRequest.
+        :type is_affect_business: bool
+        """
+        self._is_affect_business = is_affect_business
 
     def to_dict(self):
         """Returns the model properties as a dict"""

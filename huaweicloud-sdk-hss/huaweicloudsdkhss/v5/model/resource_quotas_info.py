@@ -37,13 +37,13 @@ class ResourceQuotasInfo:
 
         The model defined in huaweicloud sdk
 
-        :param version: 主机开通的版本，包含如下6种输入。   - hss.version.null ：无。   - hss.version.basic ：基础版。   - hss.version.enterprise ：企业版。   - hss.version.premium ：旗舰版。   - hss.version.wtp ：网页防篡改版。   - hss.version.container.enterprise：容器版。
+        :param version: 主机开通的版本，包含如下7种输入。   - hss.version.null ：无。   - hss.version.basic ：基础版。   - hss.version.advanced ：专业版。   - hss.version.enterprise ：企业版。   - hss.version.premium ：旗舰版。   - hss.version.wtp ：网页防篡改版。   - hss.version.container.enterprise：容器版。
         :type version: str
         :param total_num: 总配额数
         :type total_num: int
         :param used_num: 已使用配额数
         :type used_num: int
-        :param available_num: 总配额数
+        :param available_num: 可用总配额数
         :type available_num: int
         :param available_resources_list: 可用资源列表
         :type available_resources_list: list[:class:`huaweicloudsdkhss.v5.AvailableResourceIdsInfo`]
@@ -73,7 +73,7 @@ class ResourceQuotasInfo:
     def version(self):
         """Gets the version of this ResourceQuotasInfo.
 
-        主机开通的版本，包含如下6种输入。   - hss.version.null ：无。   - hss.version.basic ：基础版。   - hss.version.enterprise ：企业版。   - hss.version.premium ：旗舰版。   - hss.version.wtp ：网页防篡改版。   - hss.version.container.enterprise：容器版。
+        主机开通的版本，包含如下7种输入。   - hss.version.null ：无。   - hss.version.basic ：基础版。   - hss.version.advanced ：专业版。   - hss.version.enterprise ：企业版。   - hss.version.premium ：旗舰版。   - hss.version.wtp ：网页防篡改版。   - hss.version.container.enterprise：容器版。
 
         :return: The version of this ResourceQuotasInfo.
         :rtype: str
@@ -84,7 +84,7 @@ class ResourceQuotasInfo:
     def version(self, version):
         """Sets the version of this ResourceQuotasInfo.
 
-        主机开通的版本，包含如下6种输入。   - hss.version.null ：无。   - hss.version.basic ：基础版。   - hss.version.enterprise ：企业版。   - hss.version.premium ：旗舰版。   - hss.version.wtp ：网页防篡改版。   - hss.version.container.enterprise：容器版。
+        主机开通的版本，包含如下7种输入。   - hss.version.null ：无。   - hss.version.basic ：基础版。   - hss.version.advanced ：专业版。   - hss.version.enterprise ：企业版。   - hss.version.premium ：旗舰版。   - hss.version.wtp ：网页防篡改版。   - hss.version.container.enterprise：容器版。
 
         :param version: The version of this ResourceQuotasInfo.
         :type version: str
@@ -139,7 +139,7 @@ class ResourceQuotasInfo:
     def available_num(self):
         """Gets the available_num of this ResourceQuotasInfo.
 
-        总配额数
+        可用总配额数
 
         :return: The available_num of this ResourceQuotasInfo.
         :rtype: int
@@ -150,7 +150,7 @@ class ResourceQuotasInfo:
     def available_num(self, available_num):
         """Sets the available_num of this ResourceQuotasInfo.
 
-        总配额数
+        可用总配额数
 
         :param available_num: The available_num of this ResourceQuotasInfo.
         :type available_num: int

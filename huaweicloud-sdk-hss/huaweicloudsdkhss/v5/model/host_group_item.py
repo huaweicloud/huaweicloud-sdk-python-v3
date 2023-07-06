@@ -22,7 +22,8 @@ class HostGroupItem:
         'host_num': 'int',
         'risk_host_num': 'int',
         'unprotect_host_num': 'int',
-        'host_id_list': 'list[str]'
+        'host_id_list': 'list[str]',
+        'is_outside': 'bool'
     }
 
     attribute_map = {
@@ -31,10 +32,11 @@ class HostGroupItem:
         'host_num': 'host_num',
         'risk_host_num': 'risk_host_num',
         'unprotect_host_num': 'unprotect_host_num',
-        'host_id_list': 'host_id_list'
+        'host_id_list': 'host_id_list',
+        'is_outside': 'is_outside'
     }
 
-    def __init__(self, group_id=None, group_name=None, host_num=None, risk_host_num=None, unprotect_host_num=None, host_id_list=None):
+    def __init__(self, group_id=None, group_name=None, host_num=None, risk_host_num=None, unprotect_host_num=None, host_id_list=None, is_outside=None):
         """HostGroupItem
 
         The model defined in huaweicloud sdk
@@ -51,6 +53,8 @@ class HostGroupItem:
         :type unprotect_host_num: int
         :param host_id_list: 服务器ID列表
         :type host_id_list: list[str]
+        :param is_outside: 是否是线下数据中心服务器组
+        :type is_outside: bool
         """
         
         
@@ -61,6 +65,7 @@ class HostGroupItem:
         self._risk_host_num = None
         self._unprotect_host_num = None
         self._host_id_list = None
+        self._is_outside = None
         self.discriminator = None
 
         if group_id is not None:
@@ -75,6 +80,8 @@ class HostGroupItem:
             self.unprotect_host_num = unprotect_host_num
         if host_id_list is not None:
             self.host_id_list = host_id_list
+        if is_outside is not None:
+            self.is_outside = is_outside
 
     @property
     def group_id(self):
@@ -207,6 +214,28 @@ class HostGroupItem:
         :type host_id_list: list[str]
         """
         self._host_id_list = host_id_list
+
+    @property
+    def is_outside(self):
+        """Gets the is_outside of this HostGroupItem.
+
+        是否是线下数据中心服务器组
+
+        :return: The is_outside of this HostGroupItem.
+        :rtype: bool
+        """
+        return self._is_outside
+
+    @is_outside.setter
+    def is_outside(self, is_outside):
+        """Sets the is_outside of this HostGroupItem.
+
+        是否是线下数据中心服务器组
+
+        :param is_outside: The is_outside of this HostGroupItem.
+        :type is_outside: bool
+        """
+        self._is_outside = is_outside
 
     def to_dict(self):
         """Returns the model properties as a dict"""

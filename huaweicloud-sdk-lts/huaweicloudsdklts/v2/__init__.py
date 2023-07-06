@@ -8,22 +8,16 @@ from huaweicloudsdklts.v2.lts_async_client import LtsAsyncClient
 # import models into sdk package
 from huaweicloudsdklts.v2.model.access_config_base_log_info import AccessConfigBaseLogInfo
 from huaweicloudsdklts.v2.model.access_config_base_log_info_create import AccessConfigBaseLogInfoCreate
-from huaweicloudsdklts.v2.model.access_config_deatil import AccessConfigDeatil
 from huaweicloudsdklts.v2.model.access_config_deatil_create import AccessConfigDeatilCreate
-from huaweicloudsdklts.v2.model.access_config_format import AccessConfigFormat
 from huaweicloudsdklts.v2.model.access_config_format_create import AccessConfigFormatCreate
-from huaweicloudsdklts.v2.model.access_config_format_mutil import AccessConfigFormatMutil
 from huaweicloudsdklts.v2.model.access_config_format_mutil_create import AccessConfigFormatMutilCreate
-from huaweicloudsdklts.v2.model.access_config_format_single import AccessConfigFormatSingle
 from huaweicloudsdklts.v2.model.access_config_format_single_create import AccessConfigFormatSingleCreate
 from huaweicloudsdklts.v2.model.access_config_host_group_id_list import AccessConfigHostGroupIdList
 from huaweicloudsdklts.v2.model.access_config_host_group_id_list_create import AccessConfigHostGroupIdListCreate
 from huaweicloudsdklts.v2.model.access_config_info import AccessConfigInfo
 from huaweicloudsdklts.v2.model.access_config_query_log_info import AccessConfigQueryLogInfo
 from huaweicloudsdklts.v2.model.access_config_tag import AccessConfigTag
-from huaweicloudsdklts.v2.model.access_config_time_offset import AccessConfigTimeOffset
 from huaweicloudsdklts.v2.model.access_config_time_offset_create import AccessConfigTimeOffsetCreate
-from huaweicloudsdklts.v2.model.access_config_windows_log_info import AccessConfigWindowsLogInfo
 from huaweicloudsdklts.v2.model.access_config_windows_log_info_create import AccessConfigWindowsLogInfoCreate
 from huaweicloudsdklts.v2.model.annotations import Annotations
 from huaweicloudsdklts.v2.model.aom_mapping_log_stream_info import AomMappingLogStreamInfo
@@ -199,7 +193,6 @@ from huaweicloudsdklts.v2.model.log_group import LogGroup
 from huaweicloudsdklts.v2.model.log_stream import LogStream
 from huaweicloudsdklts.v2.model.lts_struct_template_info import LtsStructTemplateInfo
 from huaweicloudsdklts.v2.model.metadata import Metadata
-from huaweicloudsdklts.v2.model.notification_save_rule import NotificationSaveRule
 from huaweicloudsdklts.v2.model.notification_template import NotificationTemplate
 from huaweicloudsdklts.v2.model.page_info import PageInfo
 from huaweicloudsdklts.v2.model.preview_template_body import PreviewTemplateBody
@@ -228,6 +221,7 @@ from huaweicloudsdklts.v2.model.show_struct_template_rule import ShowStructTempl
 from huaweicloudsdklts.v2.model.show_struct_templatecluster_info import ShowStructTemplateclusterInfo
 from huaweicloudsdklts.v2.model.sort import Sort
 from huaweicloudsdklts.v2.model.sql_alarm_rule_resp_list import SqlAlarmRuleRespList
+from huaweicloudsdklts.v2.model.sql_notification_save_rule import SqlNotificationSaveRule
 from huaweicloudsdklts.v2.model.sql_request import SqlRequest
 from huaweicloudsdklts.v2.model.struct_config import StructConfig
 from huaweicloudsdklts.v2.model.struct_field_info import StructFieldInfo

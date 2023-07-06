@@ -27,7 +27,8 @@ class ProtectionPolicyInfo:
         'runtime_detection_status': 'str',
         'runtime_detection_directory': 'str',
         'count_associated_server': 'int',
-        'operating_system': 'str'
+        'operating_system': 'str',
+        'process_whitelist': 'list[TrustProcessInfo]'
     }
 
     attribute_map = {
@@ -41,10 +42,11 @@ class ProtectionPolicyInfo:
         'runtime_detection_status': 'runtime_detection_status',
         'runtime_detection_directory': 'runtime_detection_directory',
         'count_associated_server': 'count_associated_server',
-        'operating_system': 'operating_system'
+        'operating_system': 'operating_system',
+        'process_whitelist': 'process_whitelist'
     }
 
-    def __init__(self, policy_id=None, policy_name=None, protection_mode=None, bait_protection_status=None, protection_directory=None, protection_type=None, exclude_directory=None, runtime_detection_status=None, runtime_detection_directory=None, count_associated_server=None, operating_system=None):
+    def __init__(self, policy_id=None, policy_name=None, protection_mode=None, bait_protection_status=None, protection_directory=None, protection_type=None, exclude_directory=None, runtime_detection_status=None, runtime_detection_directory=None, count_associated_server=None, operating_system=None, process_whitelist=None):
         """ProtectionPolicyInfo
 
         The model defined in huaweicloud sdk
@@ -71,6 +73,8 @@ class ProtectionPolicyInfo:
         :type count_associated_server: int
         :param operating_system: 操作系统类型
         :type operating_system: str
+        :param process_whitelist: 进程白名单
+        :type process_whitelist: list[:class:`huaweicloudsdkhss.v5.TrustProcessInfo`]
         """
         
         
@@ -86,6 +90,7 @@ class ProtectionPolicyInfo:
         self._runtime_detection_directory = None
         self._count_associated_server = None
         self._operating_system = None
+        self._process_whitelist = None
         self.discriminator = None
 
         if policy_id is not None:
@@ -110,6 +115,8 @@ class ProtectionPolicyInfo:
             self.count_associated_server = count_associated_server
         if operating_system is not None:
             self.operating_system = operating_system
+        if process_whitelist is not None:
+            self.process_whitelist = process_whitelist
 
     @property
     def policy_id(self):
@@ -352,6 +359,28 @@ class ProtectionPolicyInfo:
         :type operating_system: str
         """
         self._operating_system = operating_system
+
+    @property
+    def process_whitelist(self):
+        """Gets the process_whitelist of this ProtectionPolicyInfo.
+
+        进程白名单
+
+        :return: The process_whitelist of this ProtectionPolicyInfo.
+        :rtype: list[:class:`huaweicloudsdkhss.v5.TrustProcessInfo`]
+        """
+        return self._process_whitelist
+
+    @process_whitelist.setter
+    def process_whitelist(self, process_whitelist):
+        """Sets the process_whitelist of this ProtectionPolicyInfo.
+
+        进程白名单
+
+        :param process_whitelist: The process_whitelist of this ProtectionPolicyInfo.
+        :type process_whitelist: list[:class:`huaweicloudsdkhss.v5.TrustProcessInfo`]
+        """
+        self._process_whitelist = process_whitelist
 
     def to_dict(self):
         """Returns the model properties as a dict"""

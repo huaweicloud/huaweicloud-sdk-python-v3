@@ -470,6 +470,8 @@ class VpcAsyncClient(Client):
             query_params.append(('direction', local_var_params['direction']))
         if 'action' in local_var_params:
             query_params.append(('action', local_var_params['action']))
+        if 'remote_ip_prefix' in local_var_params:
+            query_params.append(('remote_ip_prefix', local_var_params['remote_ip_prefix']))
 
         header_params = {}
 

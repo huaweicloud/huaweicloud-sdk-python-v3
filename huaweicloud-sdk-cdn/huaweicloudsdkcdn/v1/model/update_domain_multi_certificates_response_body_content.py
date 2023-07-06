@@ -47,25 +47,25 @@ class UpdateDomainMultiCertificatesResponseBodyContent:
 
         The model defined in huaweicloud sdk
 
-        :param domain_name: 域名列表
+        :param domain_name: 域名列表。
         :type domain_name: str
-        :param https_switch: https开关(0：\&quot;关闭\&quot;；1：\&quot;设置证书\&quot;)
+        :param https_switch: https开关(0：\&quot;关闭\&quot;；1：\&quot;设置证书\&quot;)。
         :type https_switch: int
-        :param access_origin_way: 回源方式:1：\&quot;PROTOCOL_FOLLOW\&quot;；2：\&quot;HTTP\&quot;(默认)，3：\&quot;https\&quot;
+        :param access_origin_way: 回源方式:1：\&quot;回源跟随\&quot;；2：\&quot;HTTP\&quot;(默认)，3：https（自建）。
         :type access_origin_way: int
-        :param force_redirect_https: 强制跳转HTTPS（0：不强制；1：强制） 为空值时默认设置为关闭。（建议使用force_redirect_config修改配置）
+        :param force_redirect_https: 强制跳转HTTPS（0：不强制；1：强制） 。
         :type force_redirect_https: int
         :param force_redirect_config: 
         :type force_redirect_config: :class:`huaweicloudsdkcdn.v1.ForceRedirect`
-        :param http2: http2.0（0：关闭；1：开启）
+        :param http2: http2.0（0：关闭；1：开启）。
         :type http2: int
-        :param cert_name: 证书名称。（长度限制为3-32字符）。
+        :param cert_name: 证书名称。
         :type cert_name: str
-        :param certificate: 证书内容
+        :param certificate: 证书内容。
         :type certificate: str
-        :param certificate_type: 证书类型（0为自有证书 ， 1为托管证书）
+        :param certificate_type: 证书类型（0为自有证书 ， 1为托管证书）。
         :type certificate_type: int
-        :param expiration_time: 证书过期时间
+        :param expiration_time: 证书过期时间。
         :type expiration_time: int
         """
         
@@ -107,7 +107,7 @@ class UpdateDomainMultiCertificatesResponseBodyContent:
     def domain_name(self):
         """Gets the domain_name of this UpdateDomainMultiCertificatesResponseBodyContent.
 
-        域名列表
+        域名列表。
 
         :return: The domain_name of this UpdateDomainMultiCertificatesResponseBodyContent.
         :rtype: str
@@ -118,7 +118,7 @@ class UpdateDomainMultiCertificatesResponseBodyContent:
     def domain_name(self, domain_name):
         """Sets the domain_name of this UpdateDomainMultiCertificatesResponseBodyContent.
 
-        域名列表
+        域名列表。
 
         :param domain_name: The domain_name of this UpdateDomainMultiCertificatesResponseBodyContent.
         :type domain_name: str
@@ -129,7 +129,7 @@ class UpdateDomainMultiCertificatesResponseBodyContent:
     def https_switch(self):
         """Gets the https_switch of this UpdateDomainMultiCertificatesResponseBodyContent.
 
-        https开关(0：\"关闭\"；1：\"设置证书\")
+        https开关(0：\"关闭\"；1：\"设置证书\")。
 
         :return: The https_switch of this UpdateDomainMultiCertificatesResponseBodyContent.
         :rtype: int
@@ -140,7 +140,7 @@ class UpdateDomainMultiCertificatesResponseBodyContent:
     def https_switch(self, https_switch):
         """Sets the https_switch of this UpdateDomainMultiCertificatesResponseBodyContent.
 
-        https开关(0：\"关闭\"；1：\"设置证书\")
+        https开关(0：\"关闭\"；1：\"设置证书\")。
 
         :param https_switch: The https_switch of this UpdateDomainMultiCertificatesResponseBodyContent.
         :type https_switch: int
@@ -151,7 +151,7 @@ class UpdateDomainMultiCertificatesResponseBodyContent:
     def access_origin_way(self):
         """Gets the access_origin_way of this UpdateDomainMultiCertificatesResponseBodyContent.
 
-        回源方式:1：\"PROTOCOL_FOLLOW\"；2：\"HTTP\"(默认)，3：\"https\"
+        回源方式:1：\"回源跟随\"；2：\"HTTP\"(默认)，3：https（自建）。
 
         :return: The access_origin_way of this UpdateDomainMultiCertificatesResponseBodyContent.
         :rtype: int
@@ -162,7 +162,7 @@ class UpdateDomainMultiCertificatesResponseBodyContent:
     def access_origin_way(self, access_origin_way):
         """Sets the access_origin_way of this UpdateDomainMultiCertificatesResponseBodyContent.
 
-        回源方式:1：\"PROTOCOL_FOLLOW\"；2：\"HTTP\"(默认)，3：\"https\"
+        回源方式:1：\"回源跟随\"；2：\"HTTP\"(默认)，3：https（自建）。
 
         :param access_origin_way: The access_origin_way of this UpdateDomainMultiCertificatesResponseBodyContent.
         :type access_origin_way: int
@@ -173,7 +173,7 @@ class UpdateDomainMultiCertificatesResponseBodyContent:
     def force_redirect_https(self):
         """Gets the force_redirect_https of this UpdateDomainMultiCertificatesResponseBodyContent.
 
-        强制跳转HTTPS（0：不强制；1：强制） 为空值时默认设置为关闭。（建议使用force_redirect_config修改配置）
+        强制跳转HTTPS（0：不强制；1：强制） 。
 
         :return: The force_redirect_https of this UpdateDomainMultiCertificatesResponseBodyContent.
         :rtype: int
@@ -184,7 +184,7 @@ class UpdateDomainMultiCertificatesResponseBodyContent:
     def force_redirect_https(self, force_redirect_https):
         """Sets the force_redirect_https of this UpdateDomainMultiCertificatesResponseBodyContent.
 
-        强制跳转HTTPS（0：不强制；1：强制） 为空值时默认设置为关闭。（建议使用force_redirect_config修改配置）
+        强制跳转HTTPS（0：不强制；1：强制） 。
 
         :param force_redirect_https: The force_redirect_https of this UpdateDomainMultiCertificatesResponseBodyContent.
         :type force_redirect_https: int
@@ -213,7 +213,7 @@ class UpdateDomainMultiCertificatesResponseBodyContent:
     def http2(self):
         """Gets the http2 of this UpdateDomainMultiCertificatesResponseBodyContent.
 
-        http2.0（0：关闭；1：开启）
+        http2.0（0：关闭；1：开启）。
 
         :return: The http2 of this UpdateDomainMultiCertificatesResponseBodyContent.
         :rtype: int
@@ -224,7 +224,7 @@ class UpdateDomainMultiCertificatesResponseBodyContent:
     def http2(self, http2):
         """Sets the http2 of this UpdateDomainMultiCertificatesResponseBodyContent.
 
-        http2.0（0：关闭；1：开启）
+        http2.0（0：关闭；1：开启）。
 
         :param http2: The http2 of this UpdateDomainMultiCertificatesResponseBodyContent.
         :type http2: int
@@ -235,7 +235,7 @@ class UpdateDomainMultiCertificatesResponseBodyContent:
     def cert_name(self):
         """Gets the cert_name of this UpdateDomainMultiCertificatesResponseBodyContent.
 
-        证书名称。（长度限制为3-32字符）。
+        证书名称。
 
         :return: The cert_name of this UpdateDomainMultiCertificatesResponseBodyContent.
         :rtype: str
@@ -246,7 +246,7 @@ class UpdateDomainMultiCertificatesResponseBodyContent:
     def cert_name(self, cert_name):
         """Sets the cert_name of this UpdateDomainMultiCertificatesResponseBodyContent.
 
-        证书名称。（长度限制为3-32字符）。
+        证书名称。
 
         :param cert_name: The cert_name of this UpdateDomainMultiCertificatesResponseBodyContent.
         :type cert_name: str
@@ -257,7 +257,7 @@ class UpdateDomainMultiCertificatesResponseBodyContent:
     def certificate(self):
         """Gets the certificate of this UpdateDomainMultiCertificatesResponseBodyContent.
 
-        证书内容
+        证书内容。
 
         :return: The certificate of this UpdateDomainMultiCertificatesResponseBodyContent.
         :rtype: str
@@ -268,7 +268,7 @@ class UpdateDomainMultiCertificatesResponseBodyContent:
     def certificate(self, certificate):
         """Sets the certificate of this UpdateDomainMultiCertificatesResponseBodyContent.
 
-        证书内容
+        证书内容。
 
         :param certificate: The certificate of this UpdateDomainMultiCertificatesResponseBodyContent.
         :type certificate: str
@@ -279,7 +279,7 @@ class UpdateDomainMultiCertificatesResponseBodyContent:
     def certificate_type(self):
         """Gets the certificate_type of this UpdateDomainMultiCertificatesResponseBodyContent.
 
-        证书类型（0为自有证书 ， 1为托管证书）
+        证书类型（0为自有证书 ， 1为托管证书）。
 
         :return: The certificate_type of this UpdateDomainMultiCertificatesResponseBodyContent.
         :rtype: int
@@ -290,7 +290,7 @@ class UpdateDomainMultiCertificatesResponseBodyContent:
     def certificate_type(self, certificate_type):
         """Sets the certificate_type of this UpdateDomainMultiCertificatesResponseBodyContent.
 
-        证书类型（0为自有证书 ， 1为托管证书）
+        证书类型（0为自有证书 ， 1为托管证书）。
 
         :param certificate_type: The certificate_type of this UpdateDomainMultiCertificatesResponseBodyContent.
         :type certificate_type: int
@@ -301,7 +301,7 @@ class UpdateDomainMultiCertificatesResponseBodyContent:
     def expiration_time(self):
         """Gets the expiration_time of this UpdateDomainMultiCertificatesResponseBodyContent.
 
-        证书过期时间
+        证书过期时间。
 
         :return: The expiration_time of this UpdateDomainMultiCertificatesResponseBodyContent.
         :rtype: int
@@ -312,7 +312,7 @@ class UpdateDomainMultiCertificatesResponseBodyContent:
     def expiration_time(self, expiration_time):
         """Sets the expiration_time of this UpdateDomainMultiCertificatesResponseBodyContent.
 
-        证书过期时间
+        证书过期时间。
 
         :param expiration_time: The expiration_time of this UpdateDomainMultiCertificatesResponseBodyContent.
         :type expiration_time: int

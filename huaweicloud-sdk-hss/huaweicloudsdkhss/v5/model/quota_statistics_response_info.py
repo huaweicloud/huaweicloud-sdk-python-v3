@@ -31,7 +31,7 @@ class QuotaStatisticsResponseInfo:
 
         The model defined in huaweicloud sdk
 
-        :param version: 资源规格编码，包含如下:   - hss.version.basic : 基础版   - hss.version.enterprise : 企业版   - hss.version.premium : 旗舰版   - hss.version.wtp : 网页防篡改版   - hss.version.container : 容器版
+        :param version: 资源规格编码，包含如下:   - hss.version.basic : 基础版   - hss.version.advanced : 专业版   - hss.version.enterprise : 企业版   - hss.version.premium : 旗舰版   - hss.version.wtp : 网页防篡改版   - hss.version.container : 容器版
         :type version: str
         :param total_num: 总数
         :type total_num: int
@@ -52,7 +52,7 @@ class QuotaStatisticsResponseInfo:
     def version(self):
         """Gets the version of this QuotaStatisticsResponseInfo.
 
-        资源规格编码，包含如下:   - hss.version.basic : 基础版   - hss.version.enterprise : 企业版   - hss.version.premium : 旗舰版   - hss.version.wtp : 网页防篡改版   - hss.version.container : 容器版
+        资源规格编码，包含如下:   - hss.version.basic : 基础版   - hss.version.advanced : 专业版   - hss.version.enterprise : 企业版   - hss.version.premium : 旗舰版   - hss.version.wtp : 网页防篡改版   - hss.version.container : 容器版
 
         :return: The version of this QuotaStatisticsResponseInfo.
         :rtype: str
@@ -63,7 +63,7 @@ class QuotaStatisticsResponseInfo:
     def version(self, version):
         """Sets the version of this QuotaStatisticsResponseInfo.
 
-        资源规格编码，包含如下:   - hss.version.basic : 基础版   - hss.version.enterprise : 企业版   - hss.version.premium : 旗舰版   - hss.version.wtp : 网页防篡改版   - hss.version.container : 容器版
+        资源规格编码，包含如下:   - hss.version.basic : 基础版   - hss.version.advanced : 专业版   - hss.version.enterprise : 企业版   - hss.version.premium : 旗舰版   - hss.version.wtp : 网页防篡改版   - hss.version.container : 容器版
 
         :param version: The version of this QuotaStatisticsResponseInfo.
         :type version: str

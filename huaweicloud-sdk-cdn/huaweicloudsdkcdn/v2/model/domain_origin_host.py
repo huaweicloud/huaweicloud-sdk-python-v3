@@ -33,9 +33,9 @@ class DomainOriginHost:
 
         The model defined in huaweicloud sdk
 
-        :param domain_id: 域名ID。获取方法请参见查询加速域名。
+        :param domain_id: 域名ID。
         :type domain_id: str
-        :param origin_host_type: 回源host的类型。
+        :param origin_host_type: 回源host的类型,accelerate：选择加速域名作为回源host域名， customize：使用自定义的域名作为回源host域名。
         :type origin_host_type: str
         :param customize_domain: 自定义回源host域名。
         :type customize_domain: str
@@ -58,7 +58,7 @@ class DomainOriginHost:
     def domain_id(self):
         """Gets the domain_id of this DomainOriginHost.
 
-        域名ID。获取方法请参见查询加速域名。
+        域名ID。
 
         :return: The domain_id of this DomainOriginHost.
         :rtype: str
@@ -69,7 +69,7 @@ class DomainOriginHost:
     def domain_id(self, domain_id):
         """Sets the domain_id of this DomainOriginHost.
 
-        域名ID。获取方法请参见查询加速域名。
+        域名ID。
 
         :param domain_id: The domain_id of this DomainOriginHost.
         :type domain_id: str
@@ -80,7 +80,7 @@ class DomainOriginHost:
     def origin_host_type(self):
         """Gets the origin_host_type of this DomainOriginHost.
 
-        回源host的类型。
+        回源host的类型,accelerate：选择加速域名作为回源host域名， customize：使用自定义的域名作为回源host域名。
 
         :return: The origin_host_type of this DomainOriginHost.
         :rtype: str
@@ -91,7 +91,7 @@ class DomainOriginHost:
     def origin_host_type(self, origin_host_type):
         """Sets the origin_host_type of this DomainOriginHost.
 
-        回源host的类型。
+        回源host的类型,accelerate：选择加速域名作为回源host域名， customize：使用自定义的域名作为回源host域名。
 
         :param origin_host_type: The origin_host_type of this DomainOriginHost.
         :type origin_host_type: str

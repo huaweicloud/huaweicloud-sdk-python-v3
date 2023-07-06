@@ -30,7 +30,7 @@ class BatchCopyDomainResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param result: 成功响应体
+        :param result: 复制配置结果。
         :type result: list[:class:`huaweicloudsdkcdn.v2.BatchCopyResultVo`]
         """
         
@@ -46,7 +46,7 @@ class BatchCopyDomainResponse(SdkResponse):
     def result(self):
         """Gets the result of this BatchCopyDomainResponse.
 
-        成功响应体
+        复制配置结果。
 
         :return: The result of this BatchCopyDomainResponse.
         :rtype: list[:class:`huaweicloudsdkcdn.v2.BatchCopyResultVo`]
@@ -57,7 +57,7 @@ class BatchCopyDomainResponse(SdkResponse):
     def result(self, result):
         """Sets the result of this BatchCopyDomainResponse.
 
-        成功响应体
+        复制配置结果。
 
         :param result: The result of this BatchCopyDomainResponse.
         :type result: list[:class:`huaweicloudsdkcdn.v2.BatchCopyResultVo`]

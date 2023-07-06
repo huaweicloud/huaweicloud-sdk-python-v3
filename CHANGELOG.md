@@ -1,3 +1,403 @@
+# 3.1.47 2023-07-06
+
+### HuaweiCloud SDK CodeCheck
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - `CodeCheck` is renamed to `CodeArtsCheck`
+
+### HuaweiCloud SDK CCE
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **UpgradeCluster**
+    - changes of response param
+      - `+ metadata`
+      - `+ spec`
+      - `- uid`
+
+### HuaweiCloud SDK CDN
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowDomainDetailByName**
+    - changes of response param
+      - `+ domain.sources.weight`
+  - **ShowDomainFullConfig**
+    - changes of response param
+      - `+ configs.business_type`
+      - `+ configs.service_area`
+      - `+ configs.sources.weight`
+  - **UpdateDomainFullConfig**
+    - changes of request param
+      - `+ configs.business_type`
+      - `+ configs.service_area`
+      - `+ configs.sources.weight`
+
+### HuaweiCloud SDK EVS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateVolume**
+    - changes of request param
+      - `+ volume.iops`
+      - `+ volume.throughput`
+      - `+ volume.volume_type: enum value [GPSSD2,ESSD2]`
+
+### HuaweiCloud SDK GaussDB
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **DeleteGaussMySqlReadonlyNode**
+    - changes of response param
+      - `+ order_id`
+  - **DeleteGaussMySqlInstance**
+    - changes of response param
+      - `+ order_id`
+  - **ShowSqlFilterRule**
+    - changes of request param
+      - `+ sql_type`
+      - `- type`
+
+### HuaweiCloud SDK HSS
+
+- _Features_
+  - Support the interfaces `ListJarPackageStatistics`, `ListJarPackageHostInfo`, `ListHostVuls`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListProtectionServer**
+    - changes of response param
+      - `+ data_list.version`
+      - `+ data_list.vault_id`
+      - `+ data_list.vault_name`
+      - `+ data_list.vault_size`
+      - `+ data_list.vault_used`
+      - `+ data_list.vault_allocated`
+      - `+ data_list.vault_charging_mode`
+      - `+ data_list.vault_status`
+      - `+ data_list.backup_policy_id`
+      - `+ data_list.backup_policy_name`
+      - `+ data_list.backup_policy_enabled`
+      - `+ data_list.resources_num`
+  - **UpdateProtectionPolicy**
+    - changes of request param
+      - `+ process_whitelist`
+  - **ListProtectionPolicy**
+    - changes of request param
+      - `+ protect_policy_id`
+    - changes of response param
+      - `+ data_list.process_whitelist`
+  - **ListRiskConfigs**
+    - changes of request param
+      - `+ group_id`
+  - **ListHostStatus**
+    - changes of response param
+      - `+ data_list.open_time`
+  - **ListVulnerabilities**
+    - changes of request param
+      - `+ repair_priority`
+      - `+ handle_status`
+      - `+ cve_id`
+      - `+ label_list`
+      - `+ status`
+      - `+ asset_value`
+      - `+ group_name`
+    - changes of response param
+      - `+ data_list.cve_list`
+      - `+ data_list.patch_url`
+      - `+ data_list.repair_priority`
+      - `+ data_list.hosts_num`
+      - `+ data_list.repair_success_num`
+      - `+ data_list.fixed_num`
+      - `+ data_list.ignored_num`
+  - **ListVulHosts**
+    - changes of request param
+      - `+ asset_value`
+      - `+ group_name`
+      - `+ handle_status`
+      - `+ severity_level`
+      - `+ is_affect_business`
+    - changes of response param
+      - `+ data_list.agent_id`
+      - `+ data_list.app_path`
+      - `+ data_list.region_name`
+      - `+ data_list.public_ip`
+      - `+ data_list.private_ip`
+      - `+ data_list.group_id`
+      - `+ data_list.group_name`
+      - `+ data_list.os_type`
+      - `+ data_list.asset_value`
+      - `+ data_list.is_affect_business`
+      - `+ data_list.first_scan_time`
+      - `+ data_list.scan_time`
+  - **ChangeVulStatus**
+    - changes of request param
+      - `+ remark`
+      - `+ select_type`
+      - `+ type`
+      - `+ host_data_list`
+  - **ListHostProtectHistoryInfo**
+    - changes of response param
+      - `+ data_list.file_operation`
+      - `+ data_list.host_name`
+      - `+ data_list.host_ip`
+  - **ListHostRaspProtectHistoryInfo**
+    - changes of response param
+      - `+ data_list.host_ip`
+      - `+ data_list.host_name`
+  - **ListHostGroups**
+    - changes of response param
+      - `+ data_list.is_outside`
+  - **StartProtection**
+    - changes of request param
+      - `+ backup_resources`
+      - `+ create_protection_policy.process_whitelist`
+  - **ListSecurityEvents**
+    - changes of request param
+      - `+ event_class_ids`
+  - **ChangeEvent**
+    - changes of request param
+      - `+ container_name`
+      - `+ container_id`
+
+### HuaweiCloud SDK IoTEdge
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowPointTemplate**
+    - changes of response param
+      - `* : string -> binary`
+  - **ShowPoints**
+    - changes of response param
+      - `* : string -> binary`
+  - **DownloadAppVersion**
+    - changes of response param
+      - `* : string -> binary`
+
+### HuaweiCloud SDK LTS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **UpdateSqlAlarmRule**
+    - changes of request param
+      - `+ notification_save_rule.template_name`
+  - **CreateSqlAlarmRule**
+    - changes of request param
+      - `+ notification_save_rule.template_name`
+  - **UpdateKeywordsAlarmRule**
+    - changes of request param
+      - `+ notification_save_rule.template_name`
+  - **CreateKeywordsAlarmRule**
+    - changes of request param
+      - `+ notification_save_rule.template_name`
+  - **ListAccessConfig**
+    - changes of response param
+      - `+ log_split`
+      - `+ binary_collect`
+      - `+ result.log_split`
+      - `+ result.binary_collect`
+      - `+ result.access_config_type: enum value [K8S_CCE]`
+      - `+ result.access_config_detail.stdout`
+      - `+ result.access_config_detail.stderr`
+      - `+ result.access_config_detail.pathType`
+      - `+ result.access_config_detail.namespaceRegex`
+      - `+ result.access_config_detail.podNameRegex`
+      - `+ result.access_config_detail.containerNameRegex`
+      - `+ result.access_config_detail.includeLabels`
+      - `+ result.access_config_detail.excludeLabels`
+      - `+ result.access_config_detail.includeEnvs`
+      - `+ result.access_config_detail.excludeEnvs`
+      - `+ result.access_config_detail.logLabels`
+      - `+ result.access_config_detail.logEnvs`
+      - `+ result.access_config_detail.includeK8sLabels`
+      - `+ result.access_config_detail.excludeK8sLabels`
+      - `+ result.access_config_detail.logK8s`
+      - `* result.access_config_detail.format.single: object<AccessConfigFormatSingle> -> object<AccessConfigFormatSingleCreate>`
+      - `* result.access_config_detail.format.multi: object<AccessConfigFormatMutil> -> object<AccessConfigFormatMutilCreate>`
+      - `* result.access_config_detail.format: object<AccessConfigFormat> -> object<AccessConfigFormatCreate>`
+      - `* result.access_config_detail.windows_log_info: object<AccessConfigWindowsLogInfo> -> object<AccessConfigWindowsLogInfoCreate>`
+      - `* result.access_config_detail: object<AccessConfigDeatil> -> object<AccessConfigDeatilCreate>`
+  - **UpdateAccessConfig**
+    - changes of request param
+      - `+ log_split`
+      - `+ binary_collect`
+      - `+ access_config_detail.stdout`
+      - `+ access_config_detail.stderr`
+      - `+ access_config_detail.pathType`
+      - `+ access_config_detail.namespaceRegex`
+      - `+ access_config_detail.podNameRegex`
+      - `+ access_config_detail.containerNameRegex`
+      - `+ access_config_detail.includeLabels`
+      - `+ access_config_detail.excludeLabels`
+      - `+ access_config_detail.includeEnvs`
+      - `+ access_config_detail.excludeEnvs`
+      - `+ access_config_detail.logLabels`
+      - `+ access_config_detail.logEnvs`
+      - `+ access_config_detail.includeK8sLabels`
+      - `+ access_config_detail.excludeK8sLabels`
+      - `+ access_config_detail.logK8s`
+      - `* access_config_detail.format.single: object<AccessConfigFormatSingle> -> object<AccessConfigFormatSingleCreate>`
+      - `* access_config_detail.format.multi: object<AccessConfigFormatMutil> -> object<AccessConfigFormatMutilCreate>`
+      - `* access_config_detail.format: object<AccessConfigFormat> -> object<AccessConfigFormatCreate>`
+      - `* access_config_detail.windows_log_info: object<AccessConfigWindowsLogInfo> -> object<AccessConfigWindowsLogInfoCreate>`
+      - `* access_config_detail: object<AccessConfigDeatil> -> object<AccessConfigDeatilCreate>`
+    - changes of response param
+      - `+ log_split`
+      - `+ binary_collect`
+      - `+ access_config_type: enum value [K8S_CCE]`
+      - `+ access_config_detail.stdout`
+      - `+ access_config_detail.stderr`
+      - `+ access_config_detail.pathType`
+      - `+ access_config_detail.namespaceRegex`
+      - `+ access_config_detail.podNameRegex`
+      - `+ access_config_detail.containerNameRegex`
+      - `+ access_config_detail.includeLabels`
+      - `+ access_config_detail.excludeLabels`
+      - `+ access_config_detail.includeEnvs`
+      - `+ access_config_detail.excludeEnvs`
+      - `+ access_config_detail.logLabels`
+      - `+ access_config_detail.logEnvs`
+      - `+ access_config_detail.includeK8sLabels`
+      - `+ access_config_detail.excludeK8sLabels`
+      - `+ access_config_detail.logK8s`
+      - `* access_config_detail.format.single: object<AccessConfigFormatSingle> -> object<AccessConfigFormatSingleCreate>`
+      - `* access_config_detail.format.multi: object<AccessConfigFormatMutil> -> object<AccessConfigFormatMutilCreate>`
+      - `* access_config_detail.format: object<AccessConfigFormat> -> object<AccessConfigFormatCreate>`
+      - `* access_config_detail.windows_log_info: object<AccessConfigWindowsLogInfo> -> object<AccessConfigWindowsLogInfoCreate>`
+      - `* access_config_detail: object<AccessConfigDeatil> -> object<AccessConfigDeatilCreate>`
+  - **CreateAccessConfig**
+    - changes of request param
+      - `+ binary_collect`
+      - `+ log_split`
+      - `+ access_config_type: enum value [K8S_CCE]`
+      - `+ access_config_detail.stdout`
+      - `+ access_config_detail.stderr`
+      - `+ access_config_detail.pathType`
+      - `+ access_config_detail.namespaceRegex`
+      - `+ access_config_detail.podNameRegex`
+      - `+ access_config_detail.containerNameRegex`
+      - `+ access_config_detail.includeLabels`
+      - `+ access_config_detail.excludeLabels`
+      - `+ access_config_detail.includeEnvs`
+      - `+ access_config_detail.excludeEnvs`
+      - `+ access_config_detail.logLabels`
+      - `+ access_config_detail.logEnvs`
+      - `+ access_config_detail.includeK8sLabels`
+      - `+ access_config_detail.excludeK8sLabels`
+      - `+ access_config_detail.logK8s`
+    - changes of response param
+      - `+ log_split`
+      - `+ binary_collect`
+      - `+ access_config_type: enum value [K8S_CCE]`
+      - `+ access_config_detail.stdout`
+      - `+ access_config_detail.stderr`
+      - `+ access_config_detail.pathType`
+      - `+ access_config_detail.namespaceRegex`
+      - `+ access_config_detail.podNameRegex`
+      - `+ access_config_detail.containerNameRegex`
+      - `+ access_config_detail.includeLabels`
+      - `+ access_config_detail.excludeLabels`
+      - `+ access_config_detail.includeEnvs`
+      - `+ access_config_detail.excludeEnvs`
+      - `+ access_config_detail.logLabels`
+      - `+ access_config_detail.logEnvs`
+      - `+ access_config_detail.includeK8sLabels`
+      - `+ access_config_detail.excludeK8sLabels`
+      - `+ access_config_detail.logK8s`
+      - `* access_config_detail.format.single: object<AccessConfigFormatSingle> -> object<AccessConfigFormatSingleCreate>`
+      - `* access_config_detail.format.multi: object<AccessConfigFormatMutil> -> object<AccessConfigFormatMutilCreate>`
+      - `* access_config_detail.format: object<AccessConfigFormat> -> object<AccessConfigFormatCreate>`
+      - `* access_config_detail.windows_log_info: object<AccessConfigWindowsLogInfo> -> object<AccessConfigWindowsLogInfoCreate>`
+      - `* access_config_detail: object<AccessConfigDeatil> -> object<AccessConfigDeatilCreate>`
+  - **DeleteAccessConfig**
+    - changes of response param
+      - `+ log_split`
+      - `+ binary_collect`
+      - `+ result.log_split`
+      - `+ result.binary_collect`
+      - `+ result.access_config_type: enum value [K8S_CCE]`
+      - `+ result.access_config_detail.stdout`
+      - `+ result.access_config_detail.stderr`
+      - `+ result.access_config_detail.pathType`
+      - `+ result.access_config_detail.namespaceRegex`
+      - `+ result.access_config_detail.podNameRegex`
+      - `+ result.access_config_detail.containerNameRegex`
+      - `+ result.access_config_detail.includeLabels`
+      - `+ result.access_config_detail.excludeLabels`
+      - `+ result.access_config_detail.includeEnvs`
+      - `+ result.access_config_detail.excludeEnvs`
+      - `+ result.access_config_detail.logLabels`
+      - `+ result.access_config_detail.logEnvs`
+      - `+ result.access_config_detail.includeK8sLabels`
+      - `+ result.access_config_detail.excludeK8sLabels`
+      - `+ result.access_config_detail.logK8s`
+      - `* result.access_config_detail.format.single: object<AccessConfigFormatSingle> -> object<AccessConfigFormatSingleCreate>`
+      - `* result.access_config_detail.format.multi: object<AccessConfigFormatMutil> -> object<AccessConfigFormatMutilCreate>`
+      - `* result.access_config_detail.format: object<AccessConfigFormat> -> object<AccessConfigFormatCreate>`
+      - `* result.access_config_detail.windows_log_info: object<AccessConfigWindowsLogInfo> -> object<AccessConfigWindowsLogInfoCreate>`
+      - `* result.access_config_detail: object<AccessConfigDeatil> -> object<AccessConfigDeatilCreate>`
+
+### HuaweiCloud SDK Moderation
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **RunCreateVideoModerationJob**
+    - changes of request param
+      - `+ data.language`
+
+### HuaweiCloud SDK RAM
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **AssociateResourceShare**
+    - changes of response param
+      - `+ resource_share_associations.status_message`
+  - **DisassociateResourceShare**
+    - changes of response param
+      - `+ resource_share_associations.status_message`
+  - **SearchResourceShareAssociations**
+    - changes of response param
+      - `+ resource_share_associations.status_message`
+
+### HuaweiCloud SDK VPC
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListSecurityGroupRules**
+    - changes of request param
+      - `+ remote_ip_prefix`
+
 # 3.1.46 2023-06-29
 
 ### HuaweiCloud SDK IdentityCenter

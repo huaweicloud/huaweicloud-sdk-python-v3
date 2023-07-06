@@ -49,21 +49,21 @@ class UpdateDomainMultiCertificatesRequestBodyContent:
 
         :param domain_name: 域名列表,逗号分割，上限50个域名
         :type domain_name: str
-        :param https_switch: https开关（0：\&quot;关闭\&quot;；1：\&quot;设置证书\&quot; https_switch为1时，证书参数不能为空）
+        :param https_switch: https开关(0：\&quot;关闭\&quot;；1：\&quot;设置证书\&quot;)。
         :type https_switch: int
-        :param access_origin_way: 回源方式:1：\&quot;回源跟随\&quot;；2：\&quot;http\&quot;(默认)，3：\&quot;https\&quot;  为空值时默认设置为http
+        :param access_origin_way: 回源方式:1：\&quot;回源跟随\&quot;；2：\&quot;HTTP\&quot;(默认)，3：https（自建）。
         :type access_origin_way: int
-        :param force_redirect_https: 强制跳转HTTPS（0：不强制；1：强制） 为空值时默认设置为关闭。（建议使用force_redirect_config修改配置）
+        :param force_redirect_https: 强制跳转HTTPS（0：不强制；1：强制） 为空值时默认设置为关闭。（此参数即将下线，建议使用force_redirect_config修改配置）.
         :type force_redirect_https: int
         :param force_redirect_config: 
         :type force_redirect_config: :class:`huaweicloudsdkcdn.v1.ForceRedirect`
         :param http2: http2.0（0：关闭；1：开启） 为空值时默认设置为关闭
         :type http2: int
-        :param cert_name: 证书名称（设置证书必填）（长度限制为3-32字符）。
+        :param cert_name: 证书名称（设置证书必填）（长度限制为3-64字符）。
         :type cert_name: str
-        :param certificate: 证书内容（设置证书必填）
+        :param certificate: HTTPS协议使用的SSL证书内容，仅支持PEM编码格式。不启用证书则无需输入。初次配置证书时必传。
         :type certificate: str
-        :param private_key: 私钥内容（设置证书必填）
+        :param private_key: HTTPS协议使用的SSL证书私钥内容，仅支持PEM编码格式。不启用证书则无需输入。初次配置证书时必传。
         :type private_key: str
         :param certificate_type: 证书类型（0为自有证书 ；1为托管证书，此时不必不传入证书内容和私钥，自动根据证书名称匹配；不传默认为自有证书）
         :type certificate_type: int
@@ -128,7 +128,7 @@ class UpdateDomainMultiCertificatesRequestBodyContent:
     def https_switch(self):
         """Gets the https_switch of this UpdateDomainMultiCertificatesRequestBodyContent.
 
-        https开关（0：\"关闭\"；1：\"设置证书\" https_switch为1时，证书参数不能为空）
+        https开关(0：\"关闭\"；1：\"设置证书\")。
 
         :return: The https_switch of this UpdateDomainMultiCertificatesRequestBodyContent.
         :rtype: int
@@ -139,7 +139,7 @@ class UpdateDomainMultiCertificatesRequestBodyContent:
     def https_switch(self, https_switch):
         """Sets the https_switch of this UpdateDomainMultiCertificatesRequestBodyContent.
 
-        https开关（0：\"关闭\"；1：\"设置证书\" https_switch为1时，证书参数不能为空）
+        https开关(0：\"关闭\"；1：\"设置证书\")。
 
         :param https_switch: The https_switch of this UpdateDomainMultiCertificatesRequestBodyContent.
         :type https_switch: int
@@ -150,7 +150,7 @@ class UpdateDomainMultiCertificatesRequestBodyContent:
     def access_origin_way(self):
         """Gets the access_origin_way of this UpdateDomainMultiCertificatesRequestBodyContent.
 
-        回源方式:1：\"回源跟随\"；2：\"http\"(默认)，3：\"https\"  为空值时默认设置为http
+        回源方式:1：\"回源跟随\"；2：\"HTTP\"(默认)，3：https（自建）。
 
         :return: The access_origin_way of this UpdateDomainMultiCertificatesRequestBodyContent.
         :rtype: int
@@ -161,7 +161,7 @@ class UpdateDomainMultiCertificatesRequestBodyContent:
     def access_origin_way(self, access_origin_way):
         """Sets the access_origin_way of this UpdateDomainMultiCertificatesRequestBodyContent.
 
-        回源方式:1：\"回源跟随\"；2：\"http\"(默认)，3：\"https\"  为空值时默认设置为http
+        回源方式:1：\"回源跟随\"；2：\"HTTP\"(默认)，3：https（自建）。
 
         :param access_origin_way: The access_origin_way of this UpdateDomainMultiCertificatesRequestBodyContent.
         :type access_origin_way: int
@@ -172,7 +172,7 @@ class UpdateDomainMultiCertificatesRequestBodyContent:
     def force_redirect_https(self):
         """Gets the force_redirect_https of this UpdateDomainMultiCertificatesRequestBodyContent.
 
-        强制跳转HTTPS（0：不强制；1：强制） 为空值时默认设置为关闭。（建议使用force_redirect_config修改配置）
+        强制跳转HTTPS（0：不强制；1：强制） 为空值时默认设置为关闭。（此参数即将下线，建议使用force_redirect_config修改配置）.
 
         :return: The force_redirect_https of this UpdateDomainMultiCertificatesRequestBodyContent.
         :rtype: int
@@ -183,7 +183,7 @@ class UpdateDomainMultiCertificatesRequestBodyContent:
     def force_redirect_https(self, force_redirect_https):
         """Sets the force_redirect_https of this UpdateDomainMultiCertificatesRequestBodyContent.
 
-        强制跳转HTTPS（0：不强制；1：强制） 为空值时默认设置为关闭。（建议使用force_redirect_config修改配置）
+        强制跳转HTTPS（0：不强制；1：强制） 为空值时默认设置为关闭。（此参数即将下线，建议使用force_redirect_config修改配置）.
 
         :param force_redirect_https: The force_redirect_https of this UpdateDomainMultiCertificatesRequestBodyContent.
         :type force_redirect_https: int
@@ -234,7 +234,7 @@ class UpdateDomainMultiCertificatesRequestBodyContent:
     def cert_name(self):
         """Gets the cert_name of this UpdateDomainMultiCertificatesRequestBodyContent.
 
-        证书名称（设置证书必填）（长度限制为3-32字符）。
+        证书名称（设置证书必填）（长度限制为3-64字符）。
 
         :return: The cert_name of this UpdateDomainMultiCertificatesRequestBodyContent.
         :rtype: str
@@ -245,7 +245,7 @@ class UpdateDomainMultiCertificatesRequestBodyContent:
     def cert_name(self, cert_name):
         """Sets the cert_name of this UpdateDomainMultiCertificatesRequestBodyContent.
 
-        证书名称（设置证书必填）（长度限制为3-32字符）。
+        证书名称（设置证书必填）（长度限制为3-64字符）。
 
         :param cert_name: The cert_name of this UpdateDomainMultiCertificatesRequestBodyContent.
         :type cert_name: str
@@ -256,7 +256,7 @@ class UpdateDomainMultiCertificatesRequestBodyContent:
     def certificate(self):
         """Gets the certificate of this UpdateDomainMultiCertificatesRequestBodyContent.
 
-        证书内容（设置证书必填）
+        HTTPS协议使用的SSL证书内容，仅支持PEM编码格式。不启用证书则无需输入。初次配置证书时必传。
 
         :return: The certificate of this UpdateDomainMultiCertificatesRequestBodyContent.
         :rtype: str
@@ -267,7 +267,7 @@ class UpdateDomainMultiCertificatesRequestBodyContent:
     def certificate(self, certificate):
         """Sets the certificate of this UpdateDomainMultiCertificatesRequestBodyContent.
 
-        证书内容（设置证书必填）
+        HTTPS协议使用的SSL证书内容，仅支持PEM编码格式。不启用证书则无需输入。初次配置证书时必传。
 
         :param certificate: The certificate of this UpdateDomainMultiCertificatesRequestBodyContent.
         :type certificate: str
@@ -278,7 +278,7 @@ class UpdateDomainMultiCertificatesRequestBodyContent:
     def private_key(self):
         """Gets the private_key of this UpdateDomainMultiCertificatesRequestBodyContent.
 
-        私钥内容（设置证书必填）
+        HTTPS协议使用的SSL证书私钥内容，仅支持PEM编码格式。不启用证书则无需输入。初次配置证书时必传。
 
         :return: The private_key of this UpdateDomainMultiCertificatesRequestBodyContent.
         :rtype: str
@@ -289,7 +289,7 @@ class UpdateDomainMultiCertificatesRequestBodyContent:
     def private_key(self, private_key):
         """Sets the private_key of this UpdateDomainMultiCertificatesRequestBodyContent.
 
-        私钥内容（设置证书必填）
+        HTTPS协议使用的SSL证书私钥内容，仅支持PEM编码格式。不启用证书则无需输入。初次配置证书时必传。
 
         :param private_key: The private_key of this UpdateDomainMultiCertificatesRequestBodyContent.
         :type private_key: str

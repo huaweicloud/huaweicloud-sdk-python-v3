@@ -33,7 +33,7 @@ class OriginRangeBody:
 
         :param range_status: range状态（\&quot;off\&quot;/\&quot;on\&quot;）
         :type range_status: str
-        :param domain_id: 加速域名id。获取方法请参见查询加速域名。
+        :param domain_id: 加速域名id。
         :type domain_id: str
         """
         
@@ -74,7 +74,7 @@ class OriginRangeBody:
     def domain_id(self):
         """Gets the domain_id of this OriginRangeBody.
 
-        加速域名id。获取方法请参见查询加速域名。
+        加速域名id。
 
         :return: The domain_id of this OriginRangeBody.
         :rtype: str
@@ -85,7 +85,7 @@ class OriginRangeBody:
     def domain_id(self, domain_id):
         """Sets the domain_id of this OriginRangeBody.
 
-        加速域名id。获取方法请参见查询加速域名。
+        加速域名id。
 
         :param domain_id: The domain_id of this OriginRangeBody.
         :type domain_id: str

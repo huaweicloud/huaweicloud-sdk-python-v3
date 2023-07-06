@@ -31,9 +31,9 @@ class Map:
 
         The model defined in huaweicloud sdk
 
-        :param key: 键。长度1~128个字符, 可用 UTF-8 格式表示的字母(包含中文)、数字和空格，以及以下字符： _ . : &#x3D; + - @
+        :param key: 标签键。长度1~128个字符, 可用 UTF-8 格式表示的字母(包含中文)、数字和空格，以及以下字符： _ . : &#x3D; + - @
         :type key: str
-        :param value: 值。长度0~255个字符,  可用 UTF-8 格式表示的字母(包含中文)、数字和空格，以及以下字符： _ . : / &#x3D; + - @
+        :param value: 标签值。长度0~255个字符,  可用 UTF-8 格式表示的字母(包含中文)、数字和空格，以及以下字符： _ . : / &#x3D; + - @
         :type value: str
         """
         
@@ -51,7 +51,7 @@ class Map:
     def key(self):
         """Gets the key of this Map.
 
-        键。长度1~128个字符, 可用 UTF-8 格式表示的字母(包含中文)、数字和空格，以及以下字符： _ . : = + - @
+        标签键。长度1~128个字符, 可用 UTF-8 格式表示的字母(包含中文)、数字和空格，以及以下字符： _ . : = + - @
 
         :return: The key of this Map.
         :rtype: str
@@ -62,7 +62,7 @@ class Map:
     def key(self, key):
         """Sets the key of this Map.
 
-        键。长度1~128个字符, 可用 UTF-8 格式表示的字母(包含中文)、数字和空格，以及以下字符： _ . : = + - @
+        标签键。长度1~128个字符, 可用 UTF-8 格式表示的字母(包含中文)、数字和空格，以及以下字符： _ . : = + - @
 
         :param key: The key of this Map.
         :type key: str
@@ -73,7 +73,7 @@ class Map:
     def value(self):
         """Gets the value of this Map.
 
-        值。长度0~255个字符,  可用 UTF-8 格式表示的字母(包含中文)、数字和空格，以及以下字符： _ . : / = + - @
+        标签值。长度0~255个字符,  可用 UTF-8 格式表示的字母(包含中文)、数字和空格，以及以下字符： _ . : / = + - @
 
         :return: The value of this Map.
         :rtype: str
@@ -84,7 +84,7 @@ class Map:
     def value(self, value):
         """Sets the value of this Map.
 
-        值。长度0~255个字符,  可用 UTF-8 格式表示的字母(包含中文)、数字和空格，以及以下字符： _ . : / = + - @
+        标签值。长度0~255个字符,  可用 UTF-8 格式表示的字母(包含中文)、数字和空格，以及以下字符： _ . : / = + - @
 
         :param value: The value of this Map.
         :type value: str

@@ -233,6 +233,10 @@ class HssAsyncClient(Client):
         query_params = []
         if 'enterprise_project_id' in local_var_params:
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'container_name' in local_var_params:
+            query_params.append(('container_name', local_var_params['container_name']))
+        if 'container_id' in local_var_params:
+            query_params.append(('container_id', local_var_params['container_id']))
 
         header_params = {}
         if 'region' in local_var_params:
@@ -578,9 +582,9 @@ class HssAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def list_app_change_histories_async(self, request):
-        """资产指纹-软件信息-历史变动记录
+        """获取软件信息的历史变动记录
 
-        资产指纹-软件信息-历史变动记录
+        获取软件信息的历史变动记录
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -657,9 +661,9 @@ class HssAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def list_app_statistics_async(self, request):
-        """资产指纹-软件信息
+        """查询软件列表
 
-        资产指纹-软件信息
+        查询软件列表，支持通过软件名称查询对应的服务器数
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -720,9 +724,9 @@ class HssAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def list_apps_async(self, request):
-        """单主机资产指纹-软件
+        """查询软件的服务器列表
 
-        单主机资产指纹-软件
+        查询软件的服务器列表
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -793,9 +797,9 @@ class HssAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def list_auto_launch_change_histories_async(self, request):
-        """资产指纹-自启动项-历史变动记录
+        """获取自启动项的历史变动记录
 
-        资产指纹-自启动项-历史变动记录
+        获取自启动项的历史变动记录
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -874,9 +878,9 @@ class HssAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def list_auto_launch_statistics_async(self, request):
-        """资产指纹-自启动项信息
+        """查询自启动项信息
 
-        资产指纹-自启动项信息
+        查询自启动信息，支持通过传入自启动名称查询启动类型和服务器数
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -939,9 +943,9 @@ class HssAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def list_auto_launchs_async(self, request):
-        """单主机资产指纹-自启动项
+        """查询自启动项的服务列表
 
-        单主机资产指纹-自启动项
+        查询自启动项的服务列表
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1077,7 +1081,7 @@ class HssAsyncClient(Client):
     def list_host_protect_history_info_async(self, request):
         """查询主机静态网页防篡改防护动态
 
-        查询主机静态网页防篡改防护动态
+        查询主机静态网页防篡改防护动态：展示服务器名称、服务器ip、防护策略、检测时间、防护文件、事件描述信息
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1146,7 +1150,7 @@ class HssAsyncClient(Client):
     def list_host_rasp_protect_history_info_async(self, request):
         """查询主机动态网页防篡改防护动态
 
-        查询主机动态网页防篡改防护动态
+        查询主机动态网页防篡改防护动态：包含告警级别、服务器ip、服务器名称、威胁类型、告警时间、攻击源ip、攻击源url信息
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1325,6 +1329,211 @@ class HssAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_host_vuls_async(self, request):
+        """查询单台服务器漏洞信息
+
+        查询单台服务器漏洞信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListHostVuls
+        :type request: :class:`huaweicloudsdkhss.v5.ListHostVulsRequest`
+        :rtype: :class:`huaweicloudsdkhss.v5.ListHostVulsResponse`
+        """
+        return self._list_host_vuls_with_http_info(request)
+
+    def _list_host_vuls_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'host_id' in local_var_params:
+            path_params['host_id'] = local_var_params['host_id']
+
+        query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+        if 'vul_name' in local_var_params:
+            query_params.append(('vul_name', local_var_params['vul_name']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'handle_status' in local_var_params:
+            query_params.append(('handle_status', local_var_params['handle_status']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v5/{project_id}/vulnerability/host/{host_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListHostVulsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_jar_package_host_info_async(self, request):
+        """资产管理-资产指纹-Jar包的服务器列表
+
+        资产管理-资产指纹-Jar包的服务器列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListJarPackageHostInfo
+        :type request: :class:`huaweicloudsdkhss.v5.ListJarPackageHostInfoRequest`
+        :rtype: :class:`huaweicloudsdkhss.v5.ListJarPackageHostInfoResponse`
+        """
+        return self._list_jar_package_host_info_with_http_info(request)
+
+    def _list_jar_package_host_info_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'file_name' in local_var_params:
+            query_params.append(('file_name', local_var_params['file_name']))
+        if 'category' in local_var_params:
+            query_params.append(('category', local_var_params['category']))
+        if 'host_name' in local_var_params:
+            query_params.append(('host_name', local_var_params['host_name']))
+        if 'host_ip' in local_var_params:
+            query_params.append(('host_ip', local_var_params['host_ip']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v5/{project_id}/asset/midwares/detail',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListJarPackageHostInfoResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_jar_package_statistics_async(self, request):
+        """查询中间件列表
+
+        查询中间件列表，支持通过中间件名称查询对应的服务器树
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListJarPackageStatistics
+        :type request: :class:`huaweicloudsdkhss.v5.ListJarPackageStatisticsRequest`
+        :rtype: :class:`huaweicloudsdkhss.v5.ListJarPackageStatisticsResponse`
+        """
+        return self._list_jar_package_statistics_with_http_info(request)
+
+    def _list_jar_package_statistics_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'file_name' in local_var_params:
+            query_params.append(('file_name', local_var_params['file_name']))
+        if 'category' in local_var_params:
+            query_params.append(('category', local_var_params['category']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v5/{project_id}/asset/midwares',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListJarPackageStatisticsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_password_complexity_async(self, request):
         """查询口令复杂度策略检测报告
 
@@ -1458,9 +1667,9 @@ class HssAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def list_port_statistics_async(self, request):
-        """资产指纹-开放端口信息
+        """查询开放端口列表
 
-        资产指纹-开放端口信息
+        查询开放端口列表，支持通过传入端口或协议类型查询服务器数
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1523,9 +1732,9 @@ class HssAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def list_ports_async(self, request):
-        """单主机资产指纹-开放端口信息
+        """查询开放端口的服务器列表
 
-        单主机资产指纹-开放端口信息
+        查询开放端口的服务器列表
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1594,9 +1803,9 @@ class HssAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def list_process_statistics_async(self, request):
-        """资产指纹-进程信息
+        """查询进程列表
 
-        资产指纹-进程信息
+        查询进程列表，通过传入进程路径参数查询对应的服务器数
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1688,6 +1897,8 @@ class HssAsyncClient(Client):
             query_params.append(('limit', local_var_params['limit']))
         if 'policy_name' in local_var_params:
             query_params.append(('policy_name', local_var_params['policy_name']))
+        if 'protect_policy_id' in local_var_params:
+            query_params.append(('protect_policy_id', local_var_params['protect_policy_id']))
         if 'operating_system' in local_var_params:
             query_params.append(('operating_system', local_var_params['operating_system']))
 
@@ -2043,6 +2254,8 @@ class HssAsyncClient(Client):
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
         if 'check_name' in local_var_params:
             query_params.append(('check_name', local_var_params['check_name']))
+        if 'group_id' in local_var_params:
+            query_params.append(('group_id', local_var_params['group_id']))
         if 'severity' in local_var_params:
             query_params.append(('severity', local_var_params['severity']))
         if 'standard' in local_var_params:
@@ -2137,6 +2350,9 @@ class HssAsyncClient(Client):
             query_params.append(('begin_time', local_var_params['begin_time']))
         if 'end_time' in local_var_params:
             query_params.append(('end_time', local_var_params['end_time']))
+        if 'event_class_ids' in local_var_params:
+            query_params.append(('event_class_ids', local_var_params['event_class_ids']))
+            collection_formats['event_class_ids'] = 'csv'
 
         header_params = {}
         if 'region' in local_var_params:
@@ -2248,9 +2464,9 @@ class HssAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def list_user_statistics_async(self, request):
-        """资产指纹-账号信息
+        """查询账号信息列表
 
-        资产指纹-账号信息
+        查询账号信息列表，支持通过传入账号名称参数查询对应的服务器数
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2311,9 +2527,9 @@ class HssAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def list_users_async(self, request):
-        """获取资产的账号列表
+        """查询账号的服务器列表
 
-        获取资产的账号列表
+        查询账号的服务器列表
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2425,6 +2641,16 @@ class HssAsyncClient(Client):
             query_params.append(('limit', local_var_params['limit']))
         if 'offset' in local_var_params:
             query_params.append(('offset', local_var_params['offset']))
+        if 'asset_value' in local_var_params:
+            query_params.append(('asset_value', local_var_params['asset_value']))
+        if 'group_name' in local_var_params:
+            query_params.append(('group_name', local_var_params['group_name']))
+        if 'handle_status' in local_var_params:
+            query_params.append(('handle_status', local_var_params['handle_status']))
+        if 'severity_level' in local_var_params:
+            query_params.append(('severity_level', local_var_params['severity_level']))
+        if 'is_affect_business' in local_var_params:
+            query_params.append(('is_affect_business', local_var_params['is_affect_business']))
 
         header_params = {}
 
@@ -2492,6 +2718,20 @@ class HssAsyncClient(Client):
             query_params.append(('limit', local_var_params['limit']))
         if 'offset' in local_var_params:
             query_params.append(('offset', local_var_params['offset']))
+        if 'repair_priority' in local_var_params:
+            query_params.append(('repair_priority', local_var_params['repair_priority']))
+        if 'handle_status' in local_var_params:
+            query_params.append(('handle_status', local_var_params['handle_status']))
+        if 'cve_id' in local_var_params:
+            query_params.append(('cve_id', local_var_params['cve_id']))
+        if 'label_list' in local_var_params:
+            query_params.append(('label_list', local_var_params['label_list']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'asset_value' in local_var_params:
+            query_params.append(('asset_value', local_var_params['asset_value']))
+        if 'group_name' in local_var_params:
+            query_params.append(('group_name', local_var_params['group_name']))
 
         header_params = {}
 
@@ -2595,7 +2835,7 @@ class HssAsyncClient(Client):
     def list_wtp_protect_host_async(self, request):
         """查询防护列表
 
-        查询防护列表
+        查询防护列表：查询网页防篡改主机防护状态列表信息
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2674,7 +2914,7 @@ class HssAsyncClient(Client):
     def set_rasp_switch_async(self, request):
         """开启/关闭动态网页防篡改防护
 
-        开启/关闭动态网页防篡改防护
+        开启/关闭动态网页防篡改防护，下发/清空动态网页防篡改策略
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2735,7 +2975,7 @@ class HssAsyncClient(Client):
     def set_wtp_protection_status_info_async(self, request):
         """开启关闭网页防篡改防护
 
-        开启关闭网页防篡改防护
+        开启/关闭网页防篡改功能防护，下发/清空网页防篡改策略
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2853,9 +3093,9 @@ class HssAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def show_backup_policy_info_async(self, request):
-        """查询备份策略信息
+        """查询HSS存储库绑定的备份策略信息
 
-        查询备份策略信息,确保已经购买了勒索防护存储库，可以从cbr云备份服务进行验证，确保已经存在HSS_projectid命名的存储库已经购买
+        查询HSS存储库绑定的备份策略信息,确保已经购买了勒索防护存储库，可以从cbr云备份服务进行验证，确保已经存在HSS_projectid命名的存储库已经购买
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3292,9 +3532,9 @@ class HssAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def update_backup_policy_info_async(self, request):
-        """修改备份策略
+        """修改存储库绑定的备份策略
 
-        修改备份策略
+        修改存储库绑定的备份策略
         
         Please refer to HUAWEI cloud API Explorer for details.
 

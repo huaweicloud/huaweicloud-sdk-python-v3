@@ -36,11 +36,11 @@ class UpdateAgentHealthStatusResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param code: 
+        :param code: 响应码
         :type code: str
-        :param message: 
+        :param message: 响应消息
         :type message: str
-        :param extend: 
+        :param extend: 扩展信息
         :type extend: object
         :param result: 
         :type result: :class:`huaweicloudsdkcpts.v1.UpdateAgentStatusResponseDetail`
@@ -67,6 +67,8 @@ class UpdateAgentHealthStatusResponse(SdkResponse):
     def code(self):
         """Gets the code of this UpdateAgentHealthStatusResponse.
 
+        响应码
+
         :return: The code of this UpdateAgentHealthStatusResponse.
         :rtype: str
         """
@@ -75,6 +77,8 @@ class UpdateAgentHealthStatusResponse(SdkResponse):
     @code.setter
     def code(self, code):
         """Sets the code of this UpdateAgentHealthStatusResponse.
+
+        响应码
 
         :param code: The code of this UpdateAgentHealthStatusResponse.
         :type code: str
@@ -85,6 +89,8 @@ class UpdateAgentHealthStatusResponse(SdkResponse):
     def message(self):
         """Gets the message of this UpdateAgentHealthStatusResponse.
 
+        响应消息
+
         :return: The message of this UpdateAgentHealthStatusResponse.
         :rtype: str
         """
@@ -93,6 +99,8 @@ class UpdateAgentHealthStatusResponse(SdkResponse):
     @message.setter
     def message(self, message):
         """Sets the message of this UpdateAgentHealthStatusResponse.
+
+        响应消息
 
         :param message: The message of this UpdateAgentHealthStatusResponse.
         :type message: str
@@ -103,6 +111,8 @@ class UpdateAgentHealthStatusResponse(SdkResponse):
     def extend(self):
         """Gets the extend of this UpdateAgentHealthStatusResponse.
 
+        扩展信息
+
         :return: The extend of this UpdateAgentHealthStatusResponse.
         :rtype: object
         """
@@ -111,6 +121,8 @@ class UpdateAgentHealthStatusResponse(SdkResponse):
     @extend.setter
     def extend(self, extend):
         """Sets the extend of this UpdateAgentHealthStatusResponse.
+
+        扩展信息
 
         :param extend: The extend of this UpdateAgentHealthStatusResponse.
         :type extend: object

@@ -77,7 +77,7 @@ class CreateDomainResponseBodyContent:
         :type domain_status: str
         :param cname: 加速域名对应的CNAME。
         :type cname: str
-        :param sources: 源站信息
+        :param sources: 源站信息。
         :type sources: list[:class:`huaweicloudsdkcdn.v1.Sources`]
         :param domain_origin_host: 
         :type domain_origin_host: :class:`huaweicloudsdkcdn.v1.DomainOriginHost`
@@ -91,13 +91,13 @@ class CreateDomainResponseBodyContent:
         :type disabled: int
         :param locked: 锁定状态（0代表未锁定；1代表锁定）。
         :type locked: int
-        :param range_status: range状态（\&quot;off\&quot;/\&quot;on\&quot;）。
+        :param range_status: range状态，off：关闭，on：开启。
         :type range_status: str
-        :param follow_status: follow302状态（\&quot;off\&quot;/\&quot;on\&quot;）。
+        :param follow_status: follow302状态，off：关闭，on：开启。
         :type follow_status: str
-        :param origin_status: 是否暂停源站回源。
+        :param origin_status: 是否暂停源站回源（off代表关闭 on代表开启）。
         :type origin_status: str
-        :param auto_refresh_preheat: 自动刷新预热（0代表关闭；1代表打开）
+        :param auto_refresh_preheat: 自动刷新预热（0代表关闭；1代表打开）。
         :type auto_refresh_preheat: int
         """
         
@@ -318,7 +318,7 @@ class CreateDomainResponseBodyContent:
     def sources(self):
         """Gets the sources of this CreateDomainResponseBodyContent.
 
-        源站信息
+        源站信息。
 
         :return: The sources of this CreateDomainResponseBodyContent.
         :rtype: list[:class:`huaweicloudsdkcdn.v1.Sources`]
@@ -329,7 +329,7 @@ class CreateDomainResponseBodyContent:
     def sources(self, sources):
         """Sets the sources of this CreateDomainResponseBodyContent.
 
-        源站信息
+        源站信息。
 
         :param sources: The sources of this CreateDomainResponseBodyContent.
         :type sources: list[:class:`huaweicloudsdkcdn.v1.Sources`]
@@ -468,7 +468,7 @@ class CreateDomainResponseBodyContent:
     def range_status(self):
         """Gets the range_status of this CreateDomainResponseBodyContent.
 
-        range状态（\"off\"/\"on\"）。
+        range状态，off：关闭，on：开启。
 
         :return: The range_status of this CreateDomainResponseBodyContent.
         :rtype: str
@@ -479,7 +479,7 @@ class CreateDomainResponseBodyContent:
     def range_status(self, range_status):
         """Sets the range_status of this CreateDomainResponseBodyContent.
 
-        range状态（\"off\"/\"on\"）。
+        range状态，off：关闭，on：开启。
 
         :param range_status: The range_status of this CreateDomainResponseBodyContent.
         :type range_status: str
@@ -490,7 +490,7 @@ class CreateDomainResponseBodyContent:
     def follow_status(self):
         """Gets the follow_status of this CreateDomainResponseBodyContent.
 
-        follow302状态（\"off\"/\"on\"）。
+        follow302状态，off：关闭，on：开启。
 
         :return: The follow_status of this CreateDomainResponseBodyContent.
         :rtype: str
@@ -501,7 +501,7 @@ class CreateDomainResponseBodyContent:
     def follow_status(self, follow_status):
         """Sets the follow_status of this CreateDomainResponseBodyContent.
 
-        follow302状态（\"off\"/\"on\"）。
+        follow302状态，off：关闭，on：开启。
 
         :param follow_status: The follow_status of this CreateDomainResponseBodyContent.
         :type follow_status: str
@@ -512,7 +512,7 @@ class CreateDomainResponseBodyContent:
     def origin_status(self):
         """Gets the origin_status of this CreateDomainResponseBodyContent.
 
-        是否暂停源站回源。
+        是否暂停源站回源（off代表关闭 on代表开启）。
 
         :return: The origin_status of this CreateDomainResponseBodyContent.
         :rtype: str
@@ -523,7 +523,7 @@ class CreateDomainResponseBodyContent:
     def origin_status(self, origin_status):
         """Sets the origin_status of this CreateDomainResponseBodyContent.
 
-        是否暂停源站回源。
+        是否暂停源站回源（off代表关闭 on代表开启）。
 
         :param origin_status: The origin_status of this CreateDomainResponseBodyContent.
         :type origin_status: str
@@ -534,7 +534,7 @@ class CreateDomainResponseBodyContent:
     def auto_refresh_preheat(self):
         """Gets the auto_refresh_preheat of this CreateDomainResponseBodyContent.
 
-        自动刷新预热（0代表关闭；1代表打开）
+        自动刷新预热（0代表关闭；1代表打开）。
 
         :return: The auto_refresh_preheat of this CreateDomainResponseBodyContent.
         :rtype: int
@@ -545,7 +545,7 @@ class CreateDomainResponseBodyContent:
     def auto_refresh_preheat(self, auto_refresh_preheat):
         """Sets the auto_refresh_preheat of this CreateDomainResponseBodyContent.
 
-        自动刷新预热（0代表关闭；1代表打开）
+        自动刷新预热（0代表关闭；1代表打开）。
 
         :param auto_refresh_preheat: The auto_refresh_preheat of this CreateDomainResponseBodyContent.
         :type auto_refresh_preheat: int

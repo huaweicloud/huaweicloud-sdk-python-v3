@@ -23,6 +23,7 @@ from huaweicloudsdkhss.v5.model.auto_lauch_response_info import AutoLauchRespons
 from huaweicloudsdkhss.v5.model.auto_launch_change_response_info import AutoLaunchChangeResponseInfo
 from huaweicloudsdkhss.v5.model.auto_launch_statistics_response_info import AutoLaunchStatisticsResponseInfo
 from huaweicloudsdkhss.v5.model.available_resource_ids_info import AvailableResourceIdsInfo
+from huaweicloudsdkhss.v5.model.backup_resources import BackupResources
 from huaweicloudsdkhss.v5.model.backup_trigger_info import BackupTriggerInfo
 from huaweicloudsdkhss.v5.model.backup_trigger_properties_info import BackupTriggerPropertiesInfo
 from huaweicloudsdkhss.v5.model.backup_trigger_properties_request_info import BackupTriggerPropertiesRequestInfo
@@ -82,8 +83,14 @@ from huaweicloudsdkhss.v5.model.host_name import HostName
 from huaweicloudsdkhss.v5.model.host_num import HostNum
 from huaweicloudsdkhss.v5.model.host_protect_history_response_info import HostProtectHistoryResponseInfo
 from huaweicloudsdkhss.v5.model.host_rasp_protect_history_response_info import HostRaspProtectHistoryResponseInfo
+from huaweicloudsdkhss.v5.model.host_vul_info import HostVulInfo
+from huaweicloudsdkhss.v5.model.host_vul_info_app_list import HostVulInfoAppList
+from huaweicloudsdkhss.v5.model.host_vul_info_cve_list import HostVulInfoCveList
+from huaweicloudsdkhss.v5.model.host_vul_operate_info import HostVulOperateInfo
 from huaweicloudsdkhss.v5.model.image_name import ImageName
 from huaweicloudsdkhss.v5.model.is_parent import IsParent
+from huaweicloudsdkhss.v5.model.jar_package_host_info import JarPackageHostInfo
+from huaweicloudsdkhss.v5.model.jar_package_statistics_response_info import JarPackageStatisticsResponseInfo
 from huaweicloudsdkhss.v5.model.list_alarm_white_list_request import ListAlarmWhiteListRequest
 from huaweicloudsdkhss.v5.model.list_alarm_white_list_response import ListAlarmWhiteListResponse
 from huaweicloudsdkhss.v5.model.list_app_change_histories_request import ListAppChangeHistoriesRequest
@@ -106,6 +113,12 @@ from huaweicloudsdkhss.v5.model.list_host_rasp_protect_history_info_request impo
 from huaweicloudsdkhss.v5.model.list_host_rasp_protect_history_info_response import ListHostRaspProtectHistoryInfoResponse
 from huaweicloudsdkhss.v5.model.list_host_status_request import ListHostStatusRequest
 from huaweicloudsdkhss.v5.model.list_host_status_response import ListHostStatusResponse
+from huaweicloudsdkhss.v5.model.list_host_vuls_request import ListHostVulsRequest
+from huaweicloudsdkhss.v5.model.list_host_vuls_response import ListHostVulsResponse
+from huaweicloudsdkhss.v5.model.list_jar_package_host_info_request import ListJarPackageHostInfoRequest
+from huaweicloudsdkhss.v5.model.list_jar_package_host_info_response import ListJarPackageHostInfoResponse
+from huaweicloudsdkhss.v5.model.list_jar_package_statistics_request import ListJarPackageStatisticsRequest
+from huaweicloudsdkhss.v5.model.list_jar_package_statistics_response import ListJarPackageStatisticsResponse
 from huaweicloudsdkhss.v5.model.list_password_complexity_request import ListPasswordComplexityRequest
 from huaweicloudsdkhss.v5.model.list_password_complexity_response import ListPasswordComplexityResponse
 from huaweicloudsdkhss.v5.model.list_policy_group_request import ListPolicyGroupRequest
@@ -169,6 +182,7 @@ from huaweicloudsdkhss.v5.model.public_ip import PublicIp
 from huaweicloudsdkhss.v5.model.pwd_policy_info_response_info import PwdPolicyInfoResponseInfo
 from huaweicloudsdkhss.v5.model.quota_resources_response_info import QuotaResourcesResponseInfo
 from huaweicloudsdkhss.v5.model.quota_statistics_response_info import QuotaStatisticsResponseInfo
+from huaweicloudsdkhss.v5.model.resource_info import ResourceInfo
 from huaweicloudsdkhss.v5.model.resource_quotas_info import ResourceQuotasInfo
 from huaweicloudsdkhss.v5.model.resource_tag_info import ResourceTagInfo
 from huaweicloudsdkhss.v5.model.risk_host_num import RiskHostNum
@@ -202,6 +216,7 @@ from huaweicloudsdkhss.v5.model.switch_hosts_protect_status_request_info import 
 from huaweicloudsdkhss.v5.model.switch_hosts_protect_status_response import SwitchHostsProtectStatusResponse
 from huaweicloudsdkhss.v5.model.tag_info import TagInfo
 from huaweicloudsdkhss.v5.model.total_num import TotalNum
+from huaweicloudsdkhss.v5.model.trust_process_info import TrustProcessInfo
 from huaweicloudsdkhss.v5.model.unprotect_host_num import UnprotectHostNum
 from huaweicloudsdkhss.v5.model.update_backup_policy_info_request import UpdateBackupPolicyInfoRequest
 from huaweicloudsdkhss.v5.model.update_backup_policy_info_response import UpdateBackupPolicyInfoResponse
@@ -216,7 +231,9 @@ from huaweicloudsdkhss.v5.model.user_response_info import UserResponseInfo
 from huaweicloudsdkhss.v5.model.user_statistic_info_response_info import UserStatisticInfoResponseInfo
 from huaweicloudsdkhss.v5.model.vul_host_info import VulHostInfo
 from huaweicloudsdkhss.v5.model.vul_info import VulInfo
+from huaweicloudsdkhss.v5.model.vul_info_cve_list import VulInfoCveList
 from huaweicloudsdkhss.v5.model.vul_operate_info import VulOperateInfo
+from huaweicloudsdkhss.v5.model.vulnerability_host_number_info import VulnerabilityHostNumberInfo
 from huaweicloudsdkhss.v5.model.weak_pwd_account_info_response_info import WeakPwdAccountInfoResponseInfo
 from huaweicloudsdkhss.v5.model.weak_pwd_list_info_response_info import WeakPwdListInfoResponseInfo
 from huaweicloudsdkhss.v5.model.wtp_protect_host_response_info import WtpProtectHostResponseInfo

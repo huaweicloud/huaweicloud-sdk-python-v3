@@ -25,9 +25,9 @@ class CptsAsyncClient(Client):
         return ClientBuilder(clazz)
 
     def batch_update_task_status_async(self, request):
-        """批量启停任务（新版启停任务接口）
+        """批量启停任务
 
-        批量启停任务（新版启停任务接口）
+        批量启停任务
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -200,9 +200,9 @@ class CptsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def create_new_case_async(self, request):
-        """创建用例
+        """创建用例v2
 
-        创建用例
+        创建用例v2
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -257,9 +257,9 @@ class CptsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def create_new_task_async(self, request):
-        """创建任务
+        """创建任务v3
 
-        创建任务
+        创建任务v3
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -666,9 +666,9 @@ class CptsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def delete_new_case_async(self, request):
-        """删除用例
+        """删除用例v2
 
-        删除用例
+        删除用例v2
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -723,9 +723,9 @@ class CptsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def delete_new_task_async(self, request):
-        """删除任务
+        """删除任务v3
 
-        删除任务
+        删除任务v3
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1301,7 +1301,7 @@ class CptsAsyncClient(Client):
     def show_merge_case_detail_async(self, request):
         """内外融合单个用例的详情数据
 
-        内外融合单个用例的详情数据
+        查询单个用例的详情数据
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1417,7 +1417,7 @@ class CptsAsyncClient(Client):
     def show_merge_task_case_async(self, request):
         """内外融合当前任务用例列表接口
 
-        内外融合当前任务用例列表接口
+        查询当前任务用例列表接口
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2011,9 +2011,9 @@ class CptsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def update_new_case_async(self, request):
-        """修改用例
+        """修改用例v2
 
-        修改用例
+        修改用例v2
         
         Please refer to HUAWEI cloud API Explorer for details.
 

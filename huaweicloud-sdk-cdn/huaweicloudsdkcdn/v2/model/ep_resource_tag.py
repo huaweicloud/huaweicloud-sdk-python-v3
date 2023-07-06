@@ -31,9 +31,9 @@ class EpResourceTag:
 
         The model defined in huaweicloud sdk
 
-        :param key: tms资源标签key，值最大长度36个unicode字符。 key不能为空。不能包含非打印字符ASCII(0-31)
+        :param key: 资源标签key。
         :type key: str
-        :param value: tms资源标签value值，每个值最大长度43个unicode字符，删除时如果value有值按照key/value删除，如果value没值，则按照key删除，可以为空字符串
+        :param value: 资源标签value值。
         :type value: str
         """
         
@@ -50,7 +50,7 @@ class EpResourceTag:
     def key(self):
         """Gets the key of this EpResourceTag.
 
-        tms资源标签key，值最大长度36个unicode字符。 key不能为空。不能包含非打印字符ASCII(0-31)
+        资源标签key。
 
         :return: The key of this EpResourceTag.
         :rtype: str
@@ -61,7 +61,7 @@ class EpResourceTag:
     def key(self, key):
         """Sets the key of this EpResourceTag.
 
-        tms资源标签key，值最大长度36个unicode字符。 key不能为空。不能包含非打印字符ASCII(0-31)
+        资源标签key。
 
         :param key: The key of this EpResourceTag.
         :type key: str
@@ -72,7 +72,7 @@ class EpResourceTag:
     def value(self):
         """Gets the value of this EpResourceTag.
 
-        tms资源标签value值，每个值最大长度43个unicode字符，删除时如果value有值按照key/value删除，如果value没值，则按照key删除，可以为空字符串
+        资源标签value值。
 
         :return: The value of this EpResourceTag.
         :rtype: str
@@ -83,7 +83,7 @@ class EpResourceTag:
     def value(self, value):
         """Sets the value of this EpResourceTag.
 
-        tms资源标签value值，每个值最大长度43个unicode字符，删除时如果value有值按照key/value删除，如果value没值，则按照key删除，可以为空字符串
+        资源标签value值。
 
         :param value: The value of this EpResourceTag.
         :type value: str

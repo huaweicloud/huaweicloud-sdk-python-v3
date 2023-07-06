@@ -29,7 +29,14 @@ class VulInfo:
         'url': 'str',
         'description': 'str',
         'type': 'str',
-        'host_id_list': 'list[str]'
+        'host_id_list': 'list[str]',
+        'cve_list': 'list[VulInfoCveList]',
+        'patch_url': 'str',
+        'repair_priority': 'str',
+        'hosts_num': 'VulnerabilityHostNumberInfo',
+        'repair_success_num': 'int',
+        'fixed_num': 'int',
+        'ignored_num': 'int'
     }
 
     attribute_map = {
@@ -45,10 +52,17 @@ class VulInfo:
         'url': 'url',
         'description': 'description',
         'type': 'type',
-        'host_id_list': 'host_id_list'
+        'host_id_list': 'host_id_list',
+        'cve_list': 'cve_list',
+        'patch_url': 'patch_url',
+        'repair_priority': 'repair_priority',
+        'hosts_num': 'hosts_num',
+        'repair_success_num': 'repair_success_num',
+        'fixed_num': 'fixed_num',
+        'ignored_num': 'ignored_num'
     }
 
-    def __init__(self, vul_name=None, vul_id=None, label_list=None, repair_necessity=None, severity_level=None, host_num=None, unhandle_host_num=None, scan_time=None, solution_detail=None, url=None, description=None, type=None, host_id_list=None):
+    def __init__(self, vul_name=None, vul_id=None, label_list=None, repair_necessity=None, severity_level=None, host_num=None, unhandle_host_num=None, scan_time=None, solution_detail=None, url=None, description=None, type=None, host_id_list=None, cve_list=None, patch_url=None, repair_priority=None, hosts_num=None, repair_success_num=None, fixed_num=None, ignored_num=None):
         """VulInfo
 
         The model defined in huaweicloud sdk
@@ -75,10 +89,24 @@ class VulInfo:
         :type url: str
         :param description: 漏洞描述
         :type description: str
-        :param type: 漏洞类型，包含如下：   -linux_vul : linux漏洞   -windows_vul : windows漏洞   -web_cms : Web-CMS漏洞
+        :param type: 漏洞类型，包含如下：   -linux_vul : linux漏洞   -windows_vul : windows漏洞   -web_cms : Web-CMS漏洞   -app_vul : 应用漏洞
         :type type: str
         :param host_id_list: 主机列表
         :type host_id_list: list[str]
+        :param cve_list: CVE列表
+        :type cve_list: list[:class:`huaweicloudsdkhss.v5.VulInfoCveList`]
+        :param patch_url: 补丁地址
+        :type patch_url: str
+        :param repair_priority: 修复优先级 Critical 紧急 High 高 Medium 中 Low 低
+        :type repair_priority: str
+        :param hosts_num: 
+        :type hosts_num: :class:`huaweicloudsdkhss.v5.VulnerabilityHostNumberInfo`
+        :param repair_success_num: 修复成功次数
+        :type repair_success_num: int
+        :param fixed_num: 修复数量
+        :type fixed_num: int
+        :param ignored_num: 忽略数量
+        :type ignored_num: int
         """
         
         
@@ -96,6 +124,13 @@ class VulInfo:
         self._description = None
         self._type = None
         self._host_id_list = None
+        self._cve_list = None
+        self._patch_url = None
+        self._repair_priority = None
+        self._hosts_num = None
+        self._repair_success_num = None
+        self._fixed_num = None
+        self._ignored_num = None
         self.discriminator = None
 
         if vul_name is not None:
@@ -124,6 +159,20 @@ class VulInfo:
             self.type = type
         if host_id_list is not None:
             self.host_id_list = host_id_list
+        if cve_list is not None:
+            self.cve_list = cve_list
+        if patch_url is not None:
+            self.patch_url = patch_url
+        if repair_priority is not None:
+            self.repair_priority = repair_priority
+        if hosts_num is not None:
+            self.hosts_num = hosts_num
+        if repair_success_num is not None:
+            self.repair_success_num = repair_success_num
+        if fixed_num is not None:
+            self.fixed_num = fixed_num
+        if ignored_num is not None:
+            self.ignored_num = ignored_num
 
     @property
     def vul_name(self):
@@ -371,7 +420,7 @@ class VulInfo:
     def type(self):
         """Gets the type of this VulInfo.
 
-        漏洞类型，包含如下：   -linux_vul : linux漏洞   -windows_vul : windows漏洞   -web_cms : Web-CMS漏洞
+        漏洞类型，包含如下：   -linux_vul : linux漏洞   -windows_vul : windows漏洞   -web_cms : Web-CMS漏洞   -app_vul : 应用漏洞
 
         :return: The type of this VulInfo.
         :rtype: str
@@ -382,7 +431,7 @@ class VulInfo:
     def type(self, type):
         """Sets the type of this VulInfo.
 
-        漏洞类型，包含如下：   -linux_vul : linux漏洞   -windows_vul : windows漏洞   -web_cms : Web-CMS漏洞
+        漏洞类型，包含如下：   -linux_vul : linux漏洞   -windows_vul : windows漏洞   -web_cms : Web-CMS漏洞   -app_vul : 应用漏洞
 
         :param type: The type of this VulInfo.
         :type type: str
@@ -410,6 +459,156 @@ class VulInfo:
         :type host_id_list: list[str]
         """
         self._host_id_list = host_id_list
+
+    @property
+    def cve_list(self):
+        """Gets the cve_list of this VulInfo.
+
+        CVE列表
+
+        :return: The cve_list of this VulInfo.
+        :rtype: list[:class:`huaweicloudsdkhss.v5.VulInfoCveList`]
+        """
+        return self._cve_list
+
+    @cve_list.setter
+    def cve_list(self, cve_list):
+        """Sets the cve_list of this VulInfo.
+
+        CVE列表
+
+        :param cve_list: The cve_list of this VulInfo.
+        :type cve_list: list[:class:`huaweicloudsdkhss.v5.VulInfoCveList`]
+        """
+        self._cve_list = cve_list
+
+    @property
+    def patch_url(self):
+        """Gets the patch_url of this VulInfo.
+
+        补丁地址
+
+        :return: The patch_url of this VulInfo.
+        :rtype: str
+        """
+        return self._patch_url
+
+    @patch_url.setter
+    def patch_url(self, patch_url):
+        """Sets the patch_url of this VulInfo.
+
+        补丁地址
+
+        :param patch_url: The patch_url of this VulInfo.
+        :type patch_url: str
+        """
+        self._patch_url = patch_url
+
+    @property
+    def repair_priority(self):
+        """Gets the repair_priority of this VulInfo.
+
+        修复优先级 Critical 紧急 High 高 Medium 中 Low 低
+
+        :return: The repair_priority of this VulInfo.
+        :rtype: str
+        """
+        return self._repair_priority
+
+    @repair_priority.setter
+    def repair_priority(self, repair_priority):
+        """Sets the repair_priority of this VulInfo.
+
+        修复优先级 Critical 紧急 High 高 Medium 中 Low 低
+
+        :param repair_priority: The repair_priority of this VulInfo.
+        :type repair_priority: str
+        """
+        self._repair_priority = repair_priority
+
+    @property
+    def hosts_num(self):
+        """Gets the hosts_num of this VulInfo.
+
+        :return: The hosts_num of this VulInfo.
+        :rtype: :class:`huaweicloudsdkhss.v5.VulnerabilityHostNumberInfo`
+        """
+        return self._hosts_num
+
+    @hosts_num.setter
+    def hosts_num(self, hosts_num):
+        """Sets the hosts_num of this VulInfo.
+
+        :param hosts_num: The hosts_num of this VulInfo.
+        :type hosts_num: :class:`huaweicloudsdkhss.v5.VulnerabilityHostNumberInfo`
+        """
+        self._hosts_num = hosts_num
+
+    @property
+    def repair_success_num(self):
+        """Gets the repair_success_num of this VulInfo.
+
+        修复成功次数
+
+        :return: The repair_success_num of this VulInfo.
+        :rtype: int
+        """
+        return self._repair_success_num
+
+    @repair_success_num.setter
+    def repair_success_num(self, repair_success_num):
+        """Sets the repair_success_num of this VulInfo.
+
+        修复成功次数
+
+        :param repair_success_num: The repair_success_num of this VulInfo.
+        :type repair_success_num: int
+        """
+        self._repair_success_num = repair_success_num
+
+    @property
+    def fixed_num(self):
+        """Gets the fixed_num of this VulInfo.
+
+        修复数量
+
+        :return: The fixed_num of this VulInfo.
+        :rtype: int
+        """
+        return self._fixed_num
+
+    @fixed_num.setter
+    def fixed_num(self, fixed_num):
+        """Sets the fixed_num of this VulInfo.
+
+        修复数量
+
+        :param fixed_num: The fixed_num of this VulInfo.
+        :type fixed_num: int
+        """
+        self._fixed_num = fixed_num
+
+    @property
+    def ignored_num(self):
+        """Gets the ignored_num of this VulInfo.
+
+        忽略数量
+
+        :return: The ignored_num of this VulInfo.
+        :rtype: int
+        """
+        return self._ignored_num
+
+    @ignored_num.setter
+    def ignored_num(self, ignored_num):
+        """Sets the ignored_num of this VulInfo.
+
+        忽略数量
+
+        :param ignored_num: The ignored_num of this VulInfo.
+        :type ignored_num: int
+        """
+        self._ignored_num = ignored_num
 
     def to_dict(self):
         """Returns the model properties as a dict"""

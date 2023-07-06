@@ -34,11 +34,11 @@ class UpdateBlackWhiteListResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param code: 编码
+        :param code: 响应码，200：成功，400，失败。
         :type code: str
-        :param result: 结果
+        :param result: 响应结果。
         :type result: str
-        :param data: 数据
+        :param data: 响应体返回内容。
         :type data: object
         """
         
@@ -60,7 +60,7 @@ class UpdateBlackWhiteListResponse(SdkResponse):
     def code(self):
         """Gets the code of this UpdateBlackWhiteListResponse.
 
-        编码
+        响应码，200：成功，400，失败。
 
         :return: The code of this UpdateBlackWhiteListResponse.
         :rtype: str
@@ -71,7 +71,7 @@ class UpdateBlackWhiteListResponse(SdkResponse):
     def code(self, code):
         """Sets the code of this UpdateBlackWhiteListResponse.
 
-        编码
+        响应码，200：成功，400，失败。
 
         :param code: The code of this UpdateBlackWhiteListResponse.
         :type code: str
@@ -82,7 +82,7 @@ class UpdateBlackWhiteListResponse(SdkResponse):
     def result(self):
         """Gets the result of this UpdateBlackWhiteListResponse.
 
-        结果
+        响应结果。
 
         :return: The result of this UpdateBlackWhiteListResponse.
         :rtype: str
@@ -93,7 +93,7 @@ class UpdateBlackWhiteListResponse(SdkResponse):
     def result(self, result):
         """Sets the result of this UpdateBlackWhiteListResponse.
 
-        结果
+        响应结果。
 
         :param result: The result of this UpdateBlackWhiteListResponse.
         :type result: str
@@ -104,7 +104,7 @@ class UpdateBlackWhiteListResponse(SdkResponse):
     def data(self):
         """Gets the data of this UpdateBlackWhiteListResponse.
 
-        数据
+        响应体返回内容。
 
         :return: The data of this UpdateBlackWhiteListResponse.
         :rtype: object
@@ -115,7 +115,7 @@ class UpdateBlackWhiteListResponse(SdkResponse):
     def data(self, data):
         """Sets the data of this UpdateBlackWhiteListResponse.
 
-        数据
+        响应体返回内容。
 
         :param data: The data of this UpdateBlackWhiteListResponse.
         :type data: object

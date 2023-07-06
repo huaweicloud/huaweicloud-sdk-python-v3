@@ -31,9 +31,9 @@ class Follow302StatusBody:
 
         The model defined in huaweicloud sdk
 
-        :param domain_id: 加速域名id。获取方法请参见查询加速域名。
+        :param domain_id: 加速域名id。
         :type domain_id: str
-        :param follow_status: follow302状态（\&quot;off\&quot;/\&quot;on\&quot;）
+        :param follow_status: follow302状态，off：关闭，on：开启。
         :type follow_status: str
         """
         
@@ -52,7 +52,7 @@ class Follow302StatusBody:
     def domain_id(self):
         """Gets the domain_id of this Follow302StatusBody.
 
-        加速域名id。获取方法请参见查询加速域名。
+        加速域名id。
 
         :return: The domain_id of this Follow302StatusBody.
         :rtype: str
@@ -63,7 +63,7 @@ class Follow302StatusBody:
     def domain_id(self, domain_id):
         """Sets the domain_id of this Follow302StatusBody.
 
-        加速域名id。获取方法请参见查询加速域名。
+        加速域名id。
 
         :param domain_id: The domain_id of this Follow302StatusBody.
         :type domain_id: str
@@ -74,7 +74,7 @@ class Follow302StatusBody:
     def follow_status(self):
         """Gets the follow_status of this Follow302StatusBody.
 
-        follow302状态（\"off\"/\"on\"）
+        follow302状态，off：关闭，on：开启。
 
         :return: The follow_status of this Follow302StatusBody.
         :rtype: str
@@ -85,7 +85,7 @@ class Follow302StatusBody:
     def follow_status(self, follow_status):
         """Sets the follow_status of this Follow302StatusBody.
 
-        follow302状态（\"off\"/\"on\"）
+        follow302状态，off：关闭，on：开启。
 
         :param follow_status: The follow_status of this Follow302StatusBody.
         :type follow_status: str

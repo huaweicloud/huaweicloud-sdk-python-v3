@@ -1476,6 +1476,8 @@ class VpcClient(Client):
             query_params.append(('limit', local_var_params['limit']))
         if 'security_group_id' in local_var_params:
             query_params.append(('security_group_id', local_var_params['security_group_id']))
+        if 'remote_ip_prefix' in local_var_params:
+            query_params.append(('remote_ip_prefix', local_var_params['remote_ip_prefix']))
 
         header_params = {}
 

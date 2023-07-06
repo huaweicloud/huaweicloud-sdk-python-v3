@@ -29,7 +29,7 @@ class CompressRequest:
 
         The model defined in huaweicloud sdk
 
-        :param compress_switch: GZIP压缩开关。0关闭。1打开
+        :param compress_switch: GZIP压缩开关。0关闭。1打开。
         :type compress_switch: int
         """
         
@@ -45,7 +45,7 @@ class CompressRequest:
     def compress_switch(self):
         """Gets the compress_switch of this CompressRequest.
 
-        GZIP压缩开关。0关闭。1打开
+        GZIP压缩开关。0关闭。1打开。
 
         :return: The compress_switch of this CompressRequest.
         :rtype: int
@@ -56,7 +56,7 @@ class CompressRequest:
     def compress_switch(self, compress_switch):
         """Sets the compress_switch of this CompressRequest.
 
-        GZIP压缩开关。0关闭。1打开
+        GZIP压缩开关。0关闭。1打开。
 
         :param compress_switch: The compress_switch of this CompressRequest.
         :type compress_switch: int

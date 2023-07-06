@@ -35,7 +35,19 @@ class ProtectionServerInfo:
         'backup_protection_status': 'str',
         'count_protect_event': 'int',
         'count_backuped': 'int',
-        'agent_status': 'str'
+        'agent_status': 'str',
+        'version': 'str',
+        'vault_id': 'str',
+        'vault_name': 'str',
+        'vault_size': 'int',
+        'vault_used': 'int',
+        'vault_allocated': 'int',
+        'vault_charging_mode': 'str',
+        'vault_status': 'str',
+        'backup_policy_id': 'str',
+        'backup_policy_name': 'str',
+        'backup_policy_enabled': 'bool',
+        'resources_num': 'int'
     }
 
     attribute_map = {
@@ -57,10 +69,22 @@ class ProtectionServerInfo:
         'backup_protection_status': 'backup_protection_status',
         'count_protect_event': 'count_protect_event',
         'count_backuped': 'count_backuped',
-        'agent_status': 'agent_status'
+        'agent_status': 'agent_status',
+        'version': 'version',
+        'vault_id': 'vault_id',
+        'vault_name': 'vault_name',
+        'vault_size': 'vault_size',
+        'vault_used': 'vault_used',
+        'vault_allocated': 'vault_allocated',
+        'vault_charging_mode': 'vault_charging_mode',
+        'vault_status': 'vault_status',
+        'backup_policy_id': 'backup_policy_id',
+        'backup_policy_name': 'backup_policy_name',
+        'backup_policy_enabled': 'backup_policy_enabled',
+        'resources_num': 'resources_num'
     }
 
-    def __init__(self, host_id=None, agent_id=None, host_name=None, host_ip=None, private_ip=None, os_type=None, os_name=None, host_status=None, ransom_protection_status=None, protect_status=None, group_id=None, group_name=None, protect_policy_id=None, protect_policy_name=None, backup_error=None, backup_protection_status=None, count_protect_event=None, count_backuped=None, agent_status=None):
+    def __init__(self, host_id=None, agent_id=None, host_name=None, host_ip=None, private_ip=None, os_type=None, os_name=None, host_status=None, ransom_protection_status=None, protect_status=None, group_id=None, group_name=None, protect_policy_id=None, protect_policy_name=None, backup_error=None, backup_protection_status=None, count_protect_event=None, count_backuped=None, agent_status=None, version=None, vault_id=None, vault_name=None, vault_size=None, vault_used=None, vault_allocated=None, vault_charging_mode=None, vault_status=None, backup_policy_id=None, backup_policy_name=None, backup_policy_enabled=None, resources_num=None):
         """ProtectionServerInfo
 
         The model defined in huaweicloud sdk
@@ -89,9 +113,9 @@ class ProtectionServerInfo:
         :type group_id: str
         :param group_name: 服务器组名称
         :type group_name: str
-        :param protect_policy_id: 策略ID
+        :param protect_policy_id: 防护策略ID
         :type protect_policy_id: str
-        :param protect_policy_name: 策略名称
+        :param protect_policy_name: 防护策略名称
         :type protect_policy_name: str
         :param backup_error: 
         :type backup_error: :class:`huaweicloudsdkhss.v5.ProtectionServerInfoBackupError`
@@ -103,6 +127,30 @@ class ProtectionServerInfo:
         :type count_backuped: int
         :param agent_status: Agent状态
         :type agent_status: str
+        :param version: 主机开通的版本，包含如下7种输入。   - hss.version.null ：无。   - hss.version.basic ：基础版。   - hss.version.advanced ：专业版。   - hss.version.enterprise ：企业版。   - hss.version.premium ：旗舰版。   - hss.version.wtp ：网页防篡改版。   - hss.version.container.enterprise ：容器版。
+        :type version: str
+        :param vault_id: 存储库ID
+        :type vault_id: str
+        :param vault_name: 存储库名称
+        :type vault_name: str
+        :param vault_size: 总容量，单位GB
+        :type vault_size: int
+        :param vault_used: 已使用容量，单位MB
+        :type vault_used: int
+        :param vault_allocated: 已分配容量，单位GB，指绑定的服务器大小
+        :type vault_allocated: int
+        :param vault_charging_mode: 存储库创建模式，按需：post_paid，包周期：pre_paid
+        :type vault_charging_mode: str
+        :param vault_status: 存储库状态。   - available ：可用。   - lock ：被锁定。   - frozen：冻结。   - deleting：删除中。   - error：错误。
+        :type vault_status: str
+        :param backup_policy_id: 备份策略ID，若为空，则为未绑定状态，若不为空，通过backup_policy_enabled字段判断策略是否启用
+        :type backup_policy_id: str
+        :param backup_policy_name: 备份策略名称
+        :type backup_policy_name: str
+        :param backup_policy_enabled: 策略是否启用
+        :type backup_policy_enabled: bool
+        :param resources_num: 已绑定服务器（个）
+        :type resources_num: int
         """
         
         
@@ -126,6 +174,18 @@ class ProtectionServerInfo:
         self._count_protect_event = None
         self._count_backuped = None
         self._agent_status = None
+        self._version = None
+        self._vault_id = None
+        self._vault_name = None
+        self._vault_size = None
+        self._vault_used = None
+        self._vault_allocated = None
+        self._vault_charging_mode = None
+        self._vault_status = None
+        self._backup_policy_id = None
+        self._backup_policy_name = None
+        self._backup_policy_enabled = None
+        self._resources_num = None
         self.discriminator = None
 
         if host_id is not None:
@@ -166,6 +226,30 @@ class ProtectionServerInfo:
             self.count_backuped = count_backuped
         if agent_status is not None:
             self.agent_status = agent_status
+        if version is not None:
+            self.version = version
+        if vault_id is not None:
+            self.vault_id = vault_id
+        if vault_name is not None:
+            self.vault_name = vault_name
+        if vault_size is not None:
+            self.vault_size = vault_size
+        if vault_used is not None:
+            self.vault_used = vault_used
+        if vault_allocated is not None:
+            self.vault_allocated = vault_allocated
+        if vault_charging_mode is not None:
+            self.vault_charging_mode = vault_charging_mode
+        if vault_status is not None:
+            self.vault_status = vault_status
+        if backup_policy_id is not None:
+            self.backup_policy_id = backup_policy_id
+        if backup_policy_name is not None:
+            self.backup_policy_name = backup_policy_name
+        if backup_policy_enabled is not None:
+            self.backup_policy_enabled = backup_policy_enabled
+        if resources_num is not None:
+            self.resources_num = resources_num
 
     @property
     def host_id(self):
@@ -435,7 +519,7 @@ class ProtectionServerInfo:
     def protect_policy_id(self):
         """Gets the protect_policy_id of this ProtectionServerInfo.
 
-        策略ID
+        防护策略ID
 
         :return: The protect_policy_id of this ProtectionServerInfo.
         :rtype: str
@@ -446,7 +530,7 @@ class ProtectionServerInfo:
     def protect_policy_id(self, protect_policy_id):
         """Sets the protect_policy_id of this ProtectionServerInfo.
 
-        策略ID
+        防护策略ID
 
         :param protect_policy_id: The protect_policy_id of this ProtectionServerInfo.
         :type protect_policy_id: str
@@ -457,7 +541,7 @@ class ProtectionServerInfo:
     def protect_policy_name(self):
         """Gets the protect_policy_name of this ProtectionServerInfo.
 
-        策略名称
+        防护策略名称
 
         :return: The protect_policy_name of this ProtectionServerInfo.
         :rtype: str
@@ -468,7 +552,7 @@ class ProtectionServerInfo:
     def protect_policy_name(self, protect_policy_name):
         """Sets the protect_policy_name of this ProtectionServerInfo.
 
-        策略名称
+        防护策略名称
 
         :param protect_policy_name: The protect_policy_name of this ProtectionServerInfo.
         :type protect_policy_name: str
@@ -580,6 +664,270 @@ class ProtectionServerInfo:
         :type agent_status: str
         """
         self._agent_status = agent_status
+
+    @property
+    def version(self):
+        """Gets the version of this ProtectionServerInfo.
+
+        主机开通的版本，包含如下7种输入。   - hss.version.null ：无。   - hss.version.basic ：基础版。   - hss.version.advanced ：专业版。   - hss.version.enterprise ：企业版。   - hss.version.premium ：旗舰版。   - hss.version.wtp ：网页防篡改版。   - hss.version.container.enterprise ：容器版。
+
+        :return: The version of this ProtectionServerInfo.
+        :rtype: str
+        """
+        return self._version
+
+    @version.setter
+    def version(self, version):
+        """Sets the version of this ProtectionServerInfo.
+
+        主机开通的版本，包含如下7种输入。   - hss.version.null ：无。   - hss.version.basic ：基础版。   - hss.version.advanced ：专业版。   - hss.version.enterprise ：企业版。   - hss.version.premium ：旗舰版。   - hss.version.wtp ：网页防篡改版。   - hss.version.container.enterprise ：容器版。
+
+        :param version: The version of this ProtectionServerInfo.
+        :type version: str
+        """
+        self._version = version
+
+    @property
+    def vault_id(self):
+        """Gets the vault_id of this ProtectionServerInfo.
+
+        存储库ID
+
+        :return: The vault_id of this ProtectionServerInfo.
+        :rtype: str
+        """
+        return self._vault_id
+
+    @vault_id.setter
+    def vault_id(self, vault_id):
+        """Sets the vault_id of this ProtectionServerInfo.
+
+        存储库ID
+
+        :param vault_id: The vault_id of this ProtectionServerInfo.
+        :type vault_id: str
+        """
+        self._vault_id = vault_id
+
+    @property
+    def vault_name(self):
+        """Gets the vault_name of this ProtectionServerInfo.
+
+        存储库名称
+
+        :return: The vault_name of this ProtectionServerInfo.
+        :rtype: str
+        """
+        return self._vault_name
+
+    @vault_name.setter
+    def vault_name(self, vault_name):
+        """Sets the vault_name of this ProtectionServerInfo.
+
+        存储库名称
+
+        :param vault_name: The vault_name of this ProtectionServerInfo.
+        :type vault_name: str
+        """
+        self._vault_name = vault_name
+
+    @property
+    def vault_size(self):
+        """Gets the vault_size of this ProtectionServerInfo.
+
+        总容量，单位GB
+
+        :return: The vault_size of this ProtectionServerInfo.
+        :rtype: int
+        """
+        return self._vault_size
+
+    @vault_size.setter
+    def vault_size(self, vault_size):
+        """Sets the vault_size of this ProtectionServerInfo.
+
+        总容量，单位GB
+
+        :param vault_size: The vault_size of this ProtectionServerInfo.
+        :type vault_size: int
+        """
+        self._vault_size = vault_size
+
+    @property
+    def vault_used(self):
+        """Gets the vault_used of this ProtectionServerInfo.
+
+        已使用容量，单位MB
+
+        :return: The vault_used of this ProtectionServerInfo.
+        :rtype: int
+        """
+        return self._vault_used
+
+    @vault_used.setter
+    def vault_used(self, vault_used):
+        """Sets the vault_used of this ProtectionServerInfo.
+
+        已使用容量，单位MB
+
+        :param vault_used: The vault_used of this ProtectionServerInfo.
+        :type vault_used: int
+        """
+        self._vault_used = vault_used
+
+    @property
+    def vault_allocated(self):
+        """Gets the vault_allocated of this ProtectionServerInfo.
+
+        已分配容量，单位GB，指绑定的服务器大小
+
+        :return: The vault_allocated of this ProtectionServerInfo.
+        :rtype: int
+        """
+        return self._vault_allocated
+
+    @vault_allocated.setter
+    def vault_allocated(self, vault_allocated):
+        """Sets the vault_allocated of this ProtectionServerInfo.
+
+        已分配容量，单位GB，指绑定的服务器大小
+
+        :param vault_allocated: The vault_allocated of this ProtectionServerInfo.
+        :type vault_allocated: int
+        """
+        self._vault_allocated = vault_allocated
+
+    @property
+    def vault_charging_mode(self):
+        """Gets the vault_charging_mode of this ProtectionServerInfo.
+
+        存储库创建模式，按需：post_paid，包周期：pre_paid
+
+        :return: The vault_charging_mode of this ProtectionServerInfo.
+        :rtype: str
+        """
+        return self._vault_charging_mode
+
+    @vault_charging_mode.setter
+    def vault_charging_mode(self, vault_charging_mode):
+        """Sets the vault_charging_mode of this ProtectionServerInfo.
+
+        存储库创建模式，按需：post_paid，包周期：pre_paid
+
+        :param vault_charging_mode: The vault_charging_mode of this ProtectionServerInfo.
+        :type vault_charging_mode: str
+        """
+        self._vault_charging_mode = vault_charging_mode
+
+    @property
+    def vault_status(self):
+        """Gets the vault_status of this ProtectionServerInfo.
+
+        存储库状态。   - available ：可用。   - lock ：被锁定。   - frozen：冻结。   - deleting：删除中。   - error：错误。
+
+        :return: The vault_status of this ProtectionServerInfo.
+        :rtype: str
+        """
+        return self._vault_status
+
+    @vault_status.setter
+    def vault_status(self, vault_status):
+        """Sets the vault_status of this ProtectionServerInfo.
+
+        存储库状态。   - available ：可用。   - lock ：被锁定。   - frozen：冻结。   - deleting：删除中。   - error：错误。
+
+        :param vault_status: The vault_status of this ProtectionServerInfo.
+        :type vault_status: str
+        """
+        self._vault_status = vault_status
+
+    @property
+    def backup_policy_id(self):
+        """Gets the backup_policy_id of this ProtectionServerInfo.
+
+        备份策略ID，若为空，则为未绑定状态，若不为空，通过backup_policy_enabled字段判断策略是否启用
+
+        :return: The backup_policy_id of this ProtectionServerInfo.
+        :rtype: str
+        """
+        return self._backup_policy_id
+
+    @backup_policy_id.setter
+    def backup_policy_id(self, backup_policy_id):
+        """Sets the backup_policy_id of this ProtectionServerInfo.
+
+        备份策略ID，若为空，则为未绑定状态，若不为空，通过backup_policy_enabled字段判断策略是否启用
+
+        :param backup_policy_id: The backup_policy_id of this ProtectionServerInfo.
+        :type backup_policy_id: str
+        """
+        self._backup_policy_id = backup_policy_id
+
+    @property
+    def backup_policy_name(self):
+        """Gets the backup_policy_name of this ProtectionServerInfo.
+
+        备份策略名称
+
+        :return: The backup_policy_name of this ProtectionServerInfo.
+        :rtype: str
+        """
+        return self._backup_policy_name
+
+    @backup_policy_name.setter
+    def backup_policy_name(self, backup_policy_name):
+        """Sets the backup_policy_name of this ProtectionServerInfo.
+
+        备份策略名称
+
+        :param backup_policy_name: The backup_policy_name of this ProtectionServerInfo.
+        :type backup_policy_name: str
+        """
+        self._backup_policy_name = backup_policy_name
+
+    @property
+    def backup_policy_enabled(self):
+        """Gets the backup_policy_enabled of this ProtectionServerInfo.
+
+        策略是否启用
+
+        :return: The backup_policy_enabled of this ProtectionServerInfo.
+        :rtype: bool
+        """
+        return self._backup_policy_enabled
+
+    @backup_policy_enabled.setter
+    def backup_policy_enabled(self, backup_policy_enabled):
+        """Sets the backup_policy_enabled of this ProtectionServerInfo.
+
+        策略是否启用
+
+        :param backup_policy_enabled: The backup_policy_enabled of this ProtectionServerInfo.
+        :type backup_policy_enabled: bool
+        """
+        self._backup_policy_enabled = backup_policy_enabled
+
+    @property
+    def resources_num(self):
+        """Gets the resources_num of this ProtectionServerInfo.
+
+        已绑定服务器（个）
+
+        :return: The resources_num of this ProtectionServerInfo.
+        :rtype: int
+        """
+        return self._resources_num
+
+    @resources_num.setter
+    def resources_num(self, resources_num):
+        """Sets the resources_num of this ProtectionServerInfo.
+
+        已绑定服务器（个）
+
+        :param resources_num: The resources_num of this ProtectionServerInfo.
+        :type resources_num: int
+        """
+        self._resources_num = resources_num
 
     def to_dict(self):
         """Returns the model properties as a dict"""

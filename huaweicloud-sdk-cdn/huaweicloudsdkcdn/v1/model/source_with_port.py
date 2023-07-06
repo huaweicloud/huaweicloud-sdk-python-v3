@@ -45,9 +45,9 @@ class SourceWithPort:
         :type domain_id: str
         :param ip_or_domain: 源站IP（非内网IP）或者域名。
         :type ip_or_domain: str
-        :param origin_type: 源站类型（\&quot;ipaddr\&quot;： \&quot;IP源站\&quot;；\&quot;domain\&quot;： \&quot;域名源站\&quot;；\&quot;obs_bucket\&quot;： \&quot;OBS Bucket源站\&quot;）
+        :param origin_type: 源站类型，ipaddr：源站IP、 domain：源站域名、obs_bucket：OBS桶域名。
         :type origin_type: str
-        :param active_standby: 主备状态（1代表主站；0代表备站）；主源站必须存在，备源站可选。
+        :param active_standby: 主备状态（1代表主源站；0代表备源站）。
         :type active_standby: int
         :param enable_obs_web_hosting: 是否开启Obs静态网站托管(0表示关闭,1表示则为开启)，源站类型为obs_bucket时传递。
         :type enable_obs_web_hosting: int
@@ -128,7 +128,7 @@ class SourceWithPort:
     def origin_type(self):
         """Gets the origin_type of this SourceWithPort.
 
-        源站类型（\"ipaddr\"： \"IP源站\"；\"domain\"： \"域名源站\"；\"obs_bucket\"： \"OBS Bucket源站\"）
+        源站类型，ipaddr：源站IP、 domain：源站域名、obs_bucket：OBS桶域名。
 
         :return: The origin_type of this SourceWithPort.
         :rtype: str
@@ -139,7 +139,7 @@ class SourceWithPort:
     def origin_type(self, origin_type):
         """Sets the origin_type of this SourceWithPort.
 
-        源站类型（\"ipaddr\"： \"IP源站\"；\"domain\"： \"域名源站\"；\"obs_bucket\"： \"OBS Bucket源站\"）
+        源站类型，ipaddr：源站IP、 domain：源站域名、obs_bucket：OBS桶域名。
 
         :param origin_type: The origin_type of this SourceWithPort.
         :type origin_type: str
@@ -150,7 +150,7 @@ class SourceWithPort:
     def active_standby(self):
         """Gets the active_standby of this SourceWithPort.
 
-        主备状态（1代表主站；0代表备站）；主源站必须存在，备源站可选。
+        主备状态（1代表主源站；0代表备源站）。
 
         :return: The active_standby of this SourceWithPort.
         :rtype: int
@@ -161,7 +161,7 @@ class SourceWithPort:
     def active_standby(self, active_standby):
         """Sets the active_standby of this SourceWithPort.
 
-        主备状态（1代表主站；0代表备站）；主源站必须存在，备源站可选。
+        主备状态（1代表主源站；0代表备源站）。
 
         :param active_standby: The active_standby of this SourceWithPort.
         :type active_standby: int

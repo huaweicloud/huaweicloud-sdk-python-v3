@@ -36,11 +36,11 @@ class ShowUrlTaskInfoResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param total: 查询结果总数
+        :param total: 查询结果总数。
         :type total: int
-        :param count: 查询当前页总数
+        :param count: 查询当前页总数。
         :type count: int
-        :param result: url信息
+        :param result: url信息。
         :type result: list[:class:`huaweicloudsdkcdn.v1.Urls`]
         :param x_request_id: 
         :type x_request_id: str
@@ -67,7 +67,7 @@ class ShowUrlTaskInfoResponse(SdkResponse):
     def total(self):
         """Gets the total of this ShowUrlTaskInfoResponse.
 
-        查询结果总数
+        查询结果总数。
 
         :return: The total of this ShowUrlTaskInfoResponse.
         :rtype: int
@@ -78,7 +78,7 @@ class ShowUrlTaskInfoResponse(SdkResponse):
     def total(self, total):
         """Sets the total of this ShowUrlTaskInfoResponse.
 
-        查询结果总数
+        查询结果总数。
 
         :param total: The total of this ShowUrlTaskInfoResponse.
         :type total: int
@@ -89,7 +89,7 @@ class ShowUrlTaskInfoResponse(SdkResponse):
     def count(self):
         """Gets the count of this ShowUrlTaskInfoResponse.
 
-        查询当前页总数
+        查询当前页总数。
 
         :return: The count of this ShowUrlTaskInfoResponse.
         :rtype: int
@@ -100,7 +100,7 @@ class ShowUrlTaskInfoResponse(SdkResponse):
     def count(self, count):
         """Sets the count of this ShowUrlTaskInfoResponse.
 
-        查询当前页总数
+        查询当前页总数。
 
         :param count: The count of this ShowUrlTaskInfoResponse.
         :type count: int
@@ -111,7 +111,7 @@ class ShowUrlTaskInfoResponse(SdkResponse):
     def result(self):
         """Gets the result of this ShowUrlTaskInfoResponse.
 
-        url信息
+        url信息。
 
         :return: The result of this ShowUrlTaskInfoResponse.
         :rtype: list[:class:`huaweicloudsdkcdn.v1.Urls`]
@@ -122,7 +122,7 @@ class ShowUrlTaskInfoResponse(SdkResponse):
     def result(self, result):
         """Sets the result of this ShowUrlTaskInfoResponse.
 
-        url信息
+        url信息。
 
         :param result: The result of this ShowUrlTaskInfoResponse.
         :type result: list[:class:`huaweicloudsdkcdn.v1.Urls`]

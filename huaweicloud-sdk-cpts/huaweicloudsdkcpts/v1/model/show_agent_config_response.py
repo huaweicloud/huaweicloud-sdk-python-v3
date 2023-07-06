@@ -36,11 +36,11 @@ class ShowAgentConfigResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param code: 
+        :param code: 响应码
         :type code: str
-        :param message: 
+        :param message: 响应消息
         :type message: str
-        :param extend: 
+        :param extend: 扩展信息
         :type extend: object
         :param result: 
         :type result: :class:`huaweicloudsdkcpts.v1.AgentConfig`
@@ -67,6 +67,8 @@ class ShowAgentConfigResponse(SdkResponse):
     def code(self):
         """Gets the code of this ShowAgentConfigResponse.
 
+        响应码
+
         :return: The code of this ShowAgentConfigResponse.
         :rtype: str
         """
@@ -75,6 +77,8 @@ class ShowAgentConfigResponse(SdkResponse):
     @code.setter
     def code(self, code):
         """Sets the code of this ShowAgentConfigResponse.
+
+        响应码
 
         :param code: The code of this ShowAgentConfigResponse.
         :type code: str
@@ -85,6 +89,8 @@ class ShowAgentConfigResponse(SdkResponse):
     def message(self):
         """Gets the message of this ShowAgentConfigResponse.
 
+        响应消息
+
         :return: The message of this ShowAgentConfigResponse.
         :rtype: str
         """
@@ -93,6 +99,8 @@ class ShowAgentConfigResponse(SdkResponse):
     @message.setter
     def message(self, message):
         """Sets the message of this ShowAgentConfigResponse.
+
+        响应消息
 
         :param message: The message of this ShowAgentConfigResponse.
         :type message: str
@@ -103,6 +111,8 @@ class ShowAgentConfigResponse(SdkResponse):
     def extend(self):
         """Gets the extend of this ShowAgentConfigResponse.
 
+        扩展信息
+
         :return: The extend of this ShowAgentConfigResponse.
         :rtype: object
         """
@@ -111,6 +121,8 @@ class ShowAgentConfigResponse(SdkResponse):
     @extend.setter
     def extend(self, extend):
         """Sets the extend of this ShowAgentConfigResponse.
+
+        扩展信息
 
         :param extend: The extend of this ShowAgentConfigResponse.
         :type extend: object

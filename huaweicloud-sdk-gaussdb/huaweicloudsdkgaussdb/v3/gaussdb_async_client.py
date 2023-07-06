@@ -1111,9 +1111,9 @@ class GaussDBAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def delete_gauss_my_sql_instance_async(self, request):
-        """删除实例
+        """删除/退订数据库实例
 
-        删除数据库实例，不支持删除包周期实例。
+        删除/退订数据库实例。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1231,9 +1231,9 @@ class GaussDBAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def delete_gauss_my_sql_readonly_node_async(self, request):
-        """删除只读节点
+        """删除/退订只读节点
 
-        删除实例的只读节点。多可用区模式删除只读节点时，要保证删除后，剩余的只读节点和主节点在不同的可用区中，否则无法删除该只读节点。
+        删除/退订实例的只读节点。多可用区模式删除/退订只读节点时，要保证删除/退订后，剩余的只读节点和主节点在不同的可用区中，否则无法删除/退订该只读节点。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -5140,8 +5140,8 @@ class GaussDBAsyncClient(Client):
         query_params = []
         if 'node_id' in local_var_params:
             query_params.append(('node_id', local_var_params['node_id']))
-        if 'type' in local_var_params:
-            query_params.append(('type', local_var_params['type']))
+        if 'sql_type' in local_var_params:
+            query_params.append(('sql_type', local_var_params['sql_type']))
 
         header_params = {}
         if 'x_language' in local_var_params:

@@ -35,13 +35,13 @@ class BandwidthInfoResp:
 
         The model defined in huaweicloud sdk
 
-        :param bandwidth_name: 带宽名称
+        :param bandwidth_name: - 功能说明：带宽名称
         :type bandwidth_name: str
-        :param bandwidth_number: 带宽大小
+        :param bandwidth_number: - 功能说明：带宽大小
         :type bandwidth_number: int
-        :param bandwidth_type: 带宽类型
+        :param bandwidth_type: - 功能说明：带宽类型
         :type bandwidth_type: str
-        :param bandwidth_id: 带宽id
+        :param bandwidth_id: - 功能说明：带宽id
         :type bandwidth_id: str
         """
         
@@ -66,7 +66,7 @@ class BandwidthInfoResp:
     def bandwidth_name(self):
         """Gets the bandwidth_name of this BandwidthInfoResp.
 
-        带宽名称
+        - 功能说明：带宽名称
 
         :return: The bandwidth_name of this BandwidthInfoResp.
         :rtype: str
@@ -77,7 +77,7 @@ class BandwidthInfoResp:
     def bandwidth_name(self, bandwidth_name):
         """Sets the bandwidth_name of this BandwidthInfoResp.
 
-        带宽名称
+        - 功能说明：带宽名称
 
         :param bandwidth_name: The bandwidth_name of this BandwidthInfoResp.
         :type bandwidth_name: str
@@ -88,7 +88,7 @@ class BandwidthInfoResp:
     def bandwidth_number(self):
         """Gets the bandwidth_number of this BandwidthInfoResp.
 
-        带宽大小
+        - 功能说明：带宽大小
 
         :return: The bandwidth_number of this BandwidthInfoResp.
         :rtype: int
@@ -99,7 +99,7 @@ class BandwidthInfoResp:
     def bandwidth_number(self, bandwidth_number):
         """Sets the bandwidth_number of this BandwidthInfoResp.
 
-        带宽大小
+        - 功能说明：带宽大小
 
         :param bandwidth_number: The bandwidth_number of this BandwidthInfoResp.
         :type bandwidth_number: int
@@ -110,7 +110,7 @@ class BandwidthInfoResp:
     def bandwidth_type(self):
         """Gets the bandwidth_type of this BandwidthInfoResp.
 
-        带宽类型
+        - 功能说明：带宽类型
 
         :return: The bandwidth_type of this BandwidthInfoResp.
         :rtype: str
@@ -121,7 +121,7 @@ class BandwidthInfoResp:
     def bandwidth_type(self, bandwidth_type):
         """Sets the bandwidth_type of this BandwidthInfoResp.
 
-        带宽类型
+        - 功能说明：带宽类型
 
         :param bandwidth_type: The bandwidth_type of this BandwidthInfoResp.
         :type bandwidth_type: str
@@ -132,7 +132,7 @@ class BandwidthInfoResp:
     def bandwidth_id(self):
         """Gets the bandwidth_id of this BandwidthInfoResp.
 
-        带宽id
+        - 功能说明：带宽id
 
         :return: The bandwidth_id of this BandwidthInfoResp.
         :rtype: str
@@ -143,7 +143,7 @@ class BandwidthInfoResp:
     def bandwidth_id(self, bandwidth_id):
         """Sets the bandwidth_id of this BandwidthInfoResp.
 
-        带宽id
+        - 功能说明：带宽id
 
         :param bandwidth_id: The bandwidth_id of this BandwidthInfoResp.
         :type bandwidth_id: str

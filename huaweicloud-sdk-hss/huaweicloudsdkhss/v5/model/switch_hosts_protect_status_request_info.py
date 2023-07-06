@@ -37,7 +37,7 @@ class SwitchHostsProtectStatusRequestInfo:
 
         The model defined in huaweicloud sdk
 
-        :param version: 主机开通的版本，包含如下:   - hss.version.null ：无，代表关闭防护。   - hss.version.basic ：基础版。   - hss.version.enterprise ：企业版。   - hss.version.premium ：旗舰版。   - hss.version.wtp ：网页防篡改版。
+        :param version: 主机开通的版本，包含如下:   - hss.version.null ：无，代表关闭防护。   - hss.version.basic ：基础版。   - hss.version.advanced ：专业版。   - hss.version.enterprise ：企业版。   - hss.version.premium ：旗舰版。   - hss.version.wtp ：网页防篡改版。
         :type version: str
         :param charging_mode: 付费模式，当version不为“hss.version.null”时，则需必填该参数   - packet_cycle : 包周期   - on_demand : 按需
         :type charging_mode: str
@@ -71,7 +71,7 @@ class SwitchHostsProtectStatusRequestInfo:
     def version(self):
         """Gets the version of this SwitchHostsProtectStatusRequestInfo.
 
-        主机开通的版本，包含如下:   - hss.version.null ：无，代表关闭防护。   - hss.version.basic ：基础版。   - hss.version.enterprise ：企业版。   - hss.version.premium ：旗舰版。   - hss.version.wtp ：网页防篡改版。
+        主机开通的版本，包含如下:   - hss.version.null ：无，代表关闭防护。   - hss.version.basic ：基础版。   - hss.version.advanced ：专业版。   - hss.version.enterprise ：企业版。   - hss.version.premium ：旗舰版。   - hss.version.wtp ：网页防篡改版。
 
         :return: The version of this SwitchHostsProtectStatusRequestInfo.
         :rtype: str
@@ -82,7 +82,7 @@ class SwitchHostsProtectStatusRequestInfo:
     def version(self, version):
         """Sets the version of this SwitchHostsProtectStatusRequestInfo.
 
-        主机开通的版本，包含如下:   - hss.version.null ：无，代表关闭防护。   - hss.version.basic ：基础版。   - hss.version.enterprise ：企业版。   - hss.version.premium ：旗舰版。   - hss.version.wtp ：网页防篡改版。
+        主机开通的版本，包含如下:   - hss.version.null ：无，代表关闭防护。   - hss.version.basic ：基础版。   - hss.version.advanced ：专业版。   - hss.version.enterprise ：企业版。   - hss.version.premium ：旗舰版。   - hss.version.wtp ：网页防篡改版。
 
         :param version: The version of this SwitchHostsProtectStatusRequestInfo.
         :type version: str

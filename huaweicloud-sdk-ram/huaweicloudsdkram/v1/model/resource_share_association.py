@@ -24,7 +24,8 @@ class ResourceShareAssociation:
         'external': 'bool',
         'resource_share_id': 'str',
         'resource_share_name': 'str',
-        'status': 'str'
+        'status': 'str',
+        'status_message': 'str'
     }
 
     attribute_map = {
@@ -35,10 +36,11 @@ class ResourceShareAssociation:
         'external': 'external',
         'resource_share_id': 'resource_share_id',
         'resource_share_name': 'resource_share_name',
-        'status': 'status'
+        'status': 'status',
+        'status_message': 'status_message'
     }
 
-    def __init__(self, associated_entity=None, association_type=None, created_at=None, updated_at=None, external=None, resource_share_id=None, resource_share_name=None, status=None):
+    def __init__(self, associated_entity=None, association_type=None, created_at=None, updated_at=None, external=None, resource_share_id=None, resource_share_name=None, status=None, status_message=None):
         """ResourceShareAssociation
 
         The model defined in huaweicloud sdk
@@ -59,6 +61,8 @@ class ResourceShareAssociation:
         :type resource_share_name: str
         :param status: 绑定的当前状态。
         :type status: str
+        :param status_message: 绑定的当前状态的描述。
+        :type status_message: str
         """
         
         
@@ -71,6 +75,7 @@ class ResourceShareAssociation:
         self._resource_share_id = None
         self._resource_share_name = None
         self._status = None
+        self._status_message = None
         self.discriminator = None
 
         self.associated_entity = associated_entity
@@ -82,6 +87,8 @@ class ResourceShareAssociation:
         self.resource_share_id = resource_share_id
         self.resource_share_name = resource_share_name
         self.status = status
+        if status_message is not None:
+            self.status_message = status_message
 
     @property
     def associated_entity(self):
@@ -258,6 +265,28 @@ class ResourceShareAssociation:
         :type status: str
         """
         self._status = status
+
+    @property
+    def status_message(self):
+        """Gets the status_message of this ResourceShareAssociation.
+
+        绑定的当前状态的描述。
+
+        :return: The status_message of this ResourceShareAssociation.
+        :rtype: str
+        """
+        return self._status_message
+
+    @status_message.setter
+    def status_message(self, status_message):
+        """Sets the status_message of this ResourceShareAssociation.
+
+        绑定的当前状态的描述。
+
+        :param status_message: The status_message of this ResourceShareAssociation.
+        :type status_message: str
+        """
+        self._status_message = status_message
 
     def to_dict(self):
         """Returns the model properties as a dict"""

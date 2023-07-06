@@ -31,9 +31,9 @@ class CreateTagsRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param resource_id: 资源id
+        :param resource_id: 资源id。  &gt; 域名ID
         :type resource_id: str
-        :param tags: 标签列表
+        :param tags: 标签列表。
         :type tags: list[:class:`huaweicloudsdkcdn.v1.Map`]
         """
         
@@ -50,7 +50,7 @@ class CreateTagsRequestBody:
     def resource_id(self):
         """Gets the resource_id of this CreateTagsRequestBody.
 
-        资源id
+        资源id。  > 域名ID
 
         :return: The resource_id of this CreateTagsRequestBody.
         :rtype: str
@@ -61,7 +61,7 @@ class CreateTagsRequestBody:
     def resource_id(self, resource_id):
         """Sets the resource_id of this CreateTagsRequestBody.
 
-        资源id
+        资源id。  > 域名ID
 
         :param resource_id: The resource_id of this CreateTagsRequestBody.
         :type resource_id: str
@@ -72,7 +72,7 @@ class CreateTagsRequestBody:
     def tags(self):
         """Gets the tags of this CreateTagsRequestBody.
 
-        标签列表
+        标签列表。
 
         :return: The tags of this CreateTagsRequestBody.
         :rtype: list[:class:`huaweicloudsdkcdn.v1.Map`]
@@ -83,7 +83,7 @@ class CreateTagsRequestBody:
     def tags(self, tags):
         """Sets the tags of this CreateTagsRequestBody.
 
-        标签列表
+        标签列表。
 
         :param tags: The tags of this CreateTagsRequestBody.
         :type tags: list[:class:`huaweicloudsdkcdn.v1.Map`]

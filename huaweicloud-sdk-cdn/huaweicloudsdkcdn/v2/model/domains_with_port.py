@@ -61,7 +61,7 @@ class DomainsWithPort:
         :type domain_status: str
         :param cname: 加速域名对应的CNAME。
         :type cname: str
-        :param sources: 源站域名或源站IP，源站为IP类型时，仅支持IPv4，如需传入多个源站IP，以多个源站对象传入，除IP其他参数请保持一致，主源站最多支持15个源站IP对象，备源站最多支持15个源站IP对象；源站为域名类型时仅支持1个源站对象。不支持IP源站和域名源站混用。
+        :param sources: 源站配置。
         :type sources: list[:class:`huaweicloudsdkcdn.v2.SourcesConfig`]
         :param https_status: 是否开启HTTPS加速。 0：代表未开启HTTPS加速； 1：代表开启HTTPS加速，且回源方式为协议跟随； 2：代表开启HTTPS加速，且回源方式为HTTP； 3：代表开启HTTPS加速，且回源方式为HTTPS。
         :type https_status: int
@@ -232,7 +232,7 @@ class DomainsWithPort:
     def sources(self):
         """Gets the sources of this DomainsWithPort.
 
-        源站域名或源站IP，源站为IP类型时，仅支持IPv4，如需传入多个源站IP，以多个源站对象传入，除IP其他参数请保持一致，主源站最多支持15个源站IP对象，备源站最多支持15个源站IP对象；源站为域名类型时仅支持1个源站对象。不支持IP源站和域名源站混用。
+        源站配置。
 
         :return: The sources of this DomainsWithPort.
         :rtype: list[:class:`huaweicloudsdkcdn.v2.SourcesConfig`]
@@ -243,7 +243,7 @@ class DomainsWithPort:
     def sources(self, sources):
         """Sets the sources of this DomainsWithPort.
 
-        源站域名或源站IP，源站为IP类型时，仅支持IPv4，如需传入多个源站IP，以多个源站对象传入，除IP其他参数请保持一致，主源站最多支持15个源站IP对象，备源站最多支持15个源站IP对象；源站为域名类型时仅支持1个源站对象。不支持IP源站和域名源站混用。
+        源站配置。
 
         :param sources: The sources of this DomainsWithPort.
         :type sources: list[:class:`huaweicloudsdkcdn.v2.SourcesConfig`]

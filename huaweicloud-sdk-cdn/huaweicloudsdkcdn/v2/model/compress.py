@@ -35,9 +35,9 @@ class Compress:
 
         :param status: 智能压缩开关（on：开启，off：关闭）。
         :type status: str
-        :param type: 智能压缩类型（gzip：gzip压缩，br：br压缩）。
+        :param type: 智能压缩类型（gzip：gzip压缩，brotli：brotli压缩）。
         :type type: str
-        :param file_type: 压缩格式，内容总长度不可超过200个字符， 使用\&quot;,\&quot;分隔，每组内容不可超过50个字符， 开启状态下，首次传空时默认值为.js,.html,.css,.xml,.json,.shtml,.htm，否则为上次设置的结果。
+        :param file_type: 压缩格式，内容总长度不可超过200个字符，  多种格式用“,”分割，每组内容不可超过50个字符， 开启状态下，首次传空时默认值为.js,.html,.css,.xml,.json,.shtml,.htm，否则为上次设置的结果。
         :type file_type: str
         """
         
@@ -79,7 +79,7 @@ class Compress:
     def type(self):
         """Gets the type of this Compress.
 
-        智能压缩类型（gzip：gzip压缩，br：br压缩）。
+        智能压缩类型（gzip：gzip压缩，brotli：brotli压缩）。
 
         :return: The type of this Compress.
         :rtype: str
@@ -90,7 +90,7 @@ class Compress:
     def type(self, type):
         """Sets the type of this Compress.
 
-        智能压缩类型（gzip：gzip压缩，br：br压缩）。
+        智能压缩类型（gzip：gzip压缩，brotli：brotli压缩）。
 
         :param type: The type of this Compress.
         :type type: str
@@ -101,7 +101,7 @@ class Compress:
     def file_type(self):
         """Gets the file_type of this Compress.
 
-        压缩格式，内容总长度不可超过200个字符， 使用\",\"分隔，每组内容不可超过50个字符， 开启状态下，首次传空时默认值为.js,.html,.css,.xml,.json,.shtml,.htm，否则为上次设置的结果。
+        压缩格式，内容总长度不可超过200个字符，  多种格式用“,”分割，每组内容不可超过50个字符， 开启状态下，首次传空时默认值为.js,.html,.css,.xml,.json,.shtml,.htm，否则为上次设置的结果。
 
         :return: The file_type of this Compress.
         :rtype: str
@@ -112,7 +112,7 @@ class Compress:
     def file_type(self, file_type):
         """Sets the file_type of this Compress.
 
-        压缩格式，内容总长度不可超过200个字符， 使用\",\"分隔，每组内容不可超过50个字符， 开启状态下，首次传空时默认值为.js,.html,.css,.xml,.json,.shtml,.htm，否则为上次设置的结果。
+        压缩格式，内容总长度不可超过200个字符，  多种格式用“,”分割，每组内容不可超过50个字符， 开启状态下，首次传空时默认值为.js,.html,.css,.xml,.json,.shtml,.htm，否则为上次设置的结果。
 
         :param file_type: The file_type of this Compress.
         :type file_type: str

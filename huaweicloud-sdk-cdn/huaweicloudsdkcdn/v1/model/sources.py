@@ -18,32 +18,32 @@ class Sources:
 
     openapi_types = {
         'domain_id': 'str',
-        'ip_or_domain': 'str',
         'origin_type': 'str',
+        'ip_or_domain': 'str',
         'active_standby': 'int',
         'enable_obs_web_hosting': 'int'
     }
 
     attribute_map = {
         'domain_id': 'domain_id',
-        'ip_or_domain': 'ip_or_domain',
         'origin_type': 'origin_type',
+        'ip_or_domain': 'ip_or_domain',
         'active_standby': 'active_standby',
         'enable_obs_web_hosting': 'enable_obs_web_hosting'
     }
 
-    def __init__(self, domain_id=None, ip_or_domain=None, origin_type=None, active_standby=None, enable_obs_web_hosting=None):
+    def __init__(self, domain_id=None, origin_type=None, ip_or_domain=None, active_standby=None, enable_obs_web_hosting=None):
         """Sources
 
         The model defined in huaweicloud sdk
 
         :param domain_id: 加速域名id。
         :type domain_id: str
+        :param origin_type: 源站类型取值：ipaddr：源站IP、 domain：源站域名、obs_bucket：OBS桶域名。源站为ipaddr时，仅支持IPv4，如需传入多个源站IP，以多个源站对象传入，除IP其他参数请保持一致，主源站最多支持50个源站IP对象，备源站最多支持50个源站IP对象；源站为domain时，仅支持1个源站对象。不支持IP源站和域名源站混用。
+        :type origin_type: str
         :param ip_or_domain: 源站IP（非内网IP）或者域名。
         :type ip_or_domain: str
-        :param origin_type: 源站类型取值：ipaddr、 domain、obs_bucket，分别表示：源站IP、源站域名、OBS桶访问域名。
-        :type origin_type: str
-        :param active_standby: 主备状态（1代表主站；0代表备站）,主源站必须存在，备源站可选，OBS桶不能有备源站。
+        :param active_standby: 主备状态，1代表主源站，0代表备源站。
         :type active_standby: int
         :param enable_obs_web_hosting: 是否开启Obs静态网站托管(0表示关闭,1表示则为开启)，源站类型为obs_bucket时传递。
         :type enable_obs_web_hosting: int
@@ -52,16 +52,16 @@ class Sources:
         
 
         self._domain_id = None
-        self._ip_or_domain = None
         self._origin_type = None
+        self._ip_or_domain = None
         self._active_standby = None
         self._enable_obs_web_hosting = None
         self.discriminator = None
 
         if domain_id is not None:
             self.domain_id = domain_id
-        self.ip_or_domain = ip_or_domain
         self.origin_type = origin_type
+        self.ip_or_domain = ip_or_domain
         self.active_standby = active_standby
         if enable_obs_web_hosting is not None:
             self.enable_obs_web_hosting = enable_obs_web_hosting
@@ -89,6 +89,28 @@ class Sources:
         self._domain_id = domain_id
 
     @property
+    def origin_type(self):
+        """Gets the origin_type of this Sources.
+
+        源站类型取值：ipaddr：源站IP、 domain：源站域名、obs_bucket：OBS桶域名。源站为ipaddr时，仅支持IPv4，如需传入多个源站IP，以多个源站对象传入，除IP其他参数请保持一致，主源站最多支持50个源站IP对象，备源站最多支持50个源站IP对象；源站为domain时，仅支持1个源站对象。不支持IP源站和域名源站混用。
+
+        :return: The origin_type of this Sources.
+        :rtype: str
+        """
+        return self._origin_type
+
+    @origin_type.setter
+    def origin_type(self, origin_type):
+        """Sets the origin_type of this Sources.
+
+        源站类型取值：ipaddr：源站IP、 domain：源站域名、obs_bucket：OBS桶域名。源站为ipaddr时，仅支持IPv4，如需传入多个源站IP，以多个源站对象传入，除IP其他参数请保持一致，主源站最多支持50个源站IP对象，备源站最多支持50个源站IP对象；源站为domain时，仅支持1个源站对象。不支持IP源站和域名源站混用。
+
+        :param origin_type: The origin_type of this Sources.
+        :type origin_type: str
+        """
+        self._origin_type = origin_type
+
+    @property
     def ip_or_domain(self):
         """Gets the ip_or_domain of this Sources.
 
@@ -111,32 +133,10 @@ class Sources:
         self._ip_or_domain = ip_or_domain
 
     @property
-    def origin_type(self):
-        """Gets the origin_type of this Sources.
-
-        源站类型取值：ipaddr、 domain、obs_bucket，分别表示：源站IP、源站域名、OBS桶访问域名。
-
-        :return: The origin_type of this Sources.
-        :rtype: str
-        """
-        return self._origin_type
-
-    @origin_type.setter
-    def origin_type(self, origin_type):
-        """Sets the origin_type of this Sources.
-
-        源站类型取值：ipaddr、 domain、obs_bucket，分别表示：源站IP、源站域名、OBS桶访问域名。
-
-        :param origin_type: The origin_type of this Sources.
-        :type origin_type: str
-        """
-        self._origin_type = origin_type
-
-    @property
     def active_standby(self):
         """Gets the active_standby of this Sources.
 
-        主备状态（1代表主站；0代表备站）,主源站必须存在，备源站可选，OBS桶不能有备源站。
+        主备状态，1代表主源站，0代表备源站。
 
         :return: The active_standby of this Sources.
         :rtype: int
@@ -147,7 +147,7 @@ class Sources:
     def active_standby(self, active_standby):
         """Sets the active_standby of this Sources.
 
-        主备状态（1代表主站；0代表备站）,主源站必须存在，备源站可选，OBS桶不能有备源站。
+        主备状态，1代表主源站，0代表备源站。
 
         :param active_standby: The active_standby of this Sources.
         :type active_standby: int

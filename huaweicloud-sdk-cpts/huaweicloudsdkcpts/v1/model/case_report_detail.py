@@ -791,7 +791,7 @@ class CaseReportDetail:
         :type update_time: str
         :param url: aw的http url
         :type url: str
-        :param user_concur: 反应实时vuser数数据
+        :param user_concur: 反应实时vuser数据
         :type user_concur: int
         :param version_uri: 分支uri
         :type version_uri: str
@@ -5554,7 +5554,7 @@ class CaseReportDetail:
     def user_concur(self):
         """Gets the user_concur of this CaseReportDetail.
 
-        反应实时vuser数数据
+        反应实时vuser数据
 
         :return: The user_concur of this CaseReportDetail.
         :rtype: int
@@ -5565,7 +5565,7 @@ class CaseReportDetail:
     def user_concur(self, user_concur):
         """Sets the user_concur of this CaseReportDetail.
 
-        反应实时vuser数数据
+        反应实时vuser数据
 
         :param user_concur: The user_concur of this CaseReportDetail.
         :type user_concur: int

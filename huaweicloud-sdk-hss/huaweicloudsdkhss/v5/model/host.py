@@ -51,7 +51,8 @@ class Host:
         'agent_version': 'str',
         'upgrade_status': 'str',
         'upgrade_result_code': 'str',
-        'upgradable': 'bool'
+        'upgradable': 'bool',
+        'open_time': 'int'
     }
 
     attribute_map = {
@@ -89,10 +90,11 @@ class Host:
         'agent_version': 'agent_version',
         'upgrade_status': 'upgrade_status',
         'upgrade_result_code': 'upgrade_result_code',
-        'upgradable': 'upgradable'
+        'upgradable': 'upgradable',
+        'open_time': 'open_time'
     }
 
-    def __init__(self, host_name=None, host_id=None, agent_id=None, private_ip=None, public_ip=None, enterprise_project_id=None, enterprise_project_name=None, host_status=None, agent_status=None, install_result_code=None, version=None, protect_status=None, os_image=None, os_type=None, os_bit=None, detect_result=None, charging_mode=None, resource_id=None, outside_host=None, group_id=None, group_name=None, policy_group_id=None, policy_group_name=None, asset=None, vulnerability=None, baseline=None, intrusion=None, asset_value=None, labels=None, agent_create_time=None, agent_update_time=None, agent_version=None, upgrade_status=None, upgrade_result_code=None, upgradable=None):
+    def __init__(self, host_name=None, host_id=None, agent_id=None, private_ip=None, public_ip=None, enterprise_project_id=None, enterprise_project_name=None, host_status=None, agent_status=None, install_result_code=None, version=None, protect_status=None, os_image=None, os_type=None, os_bit=None, detect_result=None, charging_mode=None, resource_id=None, outside_host=None, group_id=None, group_name=None, policy_group_id=None, policy_group_name=None, asset=None, vulnerability=None, baseline=None, intrusion=None, asset_value=None, labels=None, agent_create_time=None, agent_update_time=None, agent_version=None, upgrade_status=None, upgrade_result_code=None, upgradable=None, open_time=None):
         """Host
 
         The model defined in huaweicloud sdk
@@ -117,7 +119,7 @@ class Host:
         :type agent_status: str
         :param install_result_code: 安装结果，包含如下12种。   - install_succeed ：安装成功。   - network_access_timeout ：网络不通，访问超时。   - invalid_port ：无效端口。   - auth_failed ：认证错误，口令不正确。   - permission_denied ：权限错误，被拒绝。   - no_available_vpc ：没有相同VPC的agent在线虚拟机。   - install_exception ：安装异常。   - invalid_param ：参数错误。   - install_failed ：安装失败。   - package_unavailable ：安装包失效。   - os_type_not_support ：系统类型错误。   - os_arch_not_support ：架构类型错误。
         :type install_result_code: str
-        :param version: 主机开通的版本，包含如下6种输入。   - hss.version.null ：无。   - hss.version.basic ：基础版。   - hss.version.enterprise ：企业版。   - hss.version.premium ：旗舰版。   - hss.version.wtp ：网页防篡改版。   - hss.version.container.enterprise ：容器版。
+        :param version: 主机开通的版本，包含如下7种输入。   - hss.version.null ：无。   - hss.version.basic ：基础版。   - hss.version.advanced ：专业版。   - hss.version.enterprise ：企业版。   - hss.version.premium ：旗舰版。   - hss.version.wtp ：网页防篡改版。   - hss.version.container.enterprise ：容器版。
         :type version: str
         :param protect_status: 防护状态，包含如下2种。 - closed ：未防护。 - opened ：防护中。
         :type protect_status: str
@@ -167,6 +169,8 @@ class Host:
         :type upgrade_result_code: str
         :param upgradable: 该服务器agent是否可升级
         :type upgradable: bool
+        :param open_time: 开启防护时间，采用时间戳，默认毫秒，
+        :type open_time: int
         """
         
         
@@ -206,6 +210,7 @@ class Host:
         self._upgrade_status = None
         self._upgrade_result_code = None
         self._upgradable = None
+        self._open_time = None
         self.discriminator = None
 
         if host_name is not None:
@@ -278,6 +283,8 @@ class Host:
             self.upgrade_result_code = upgrade_result_code
         if upgradable is not None:
             self.upgradable = upgradable
+        if open_time is not None:
+            self.open_time = open_time
 
     @property
     def host_name(self):
@@ -503,7 +510,7 @@ class Host:
     def version(self):
         """Gets the version of this Host.
 
-        主机开通的版本，包含如下6种输入。   - hss.version.null ：无。   - hss.version.basic ：基础版。   - hss.version.enterprise ：企业版。   - hss.version.premium ：旗舰版。   - hss.version.wtp ：网页防篡改版。   - hss.version.container.enterprise ：容器版。
+        主机开通的版本，包含如下7种输入。   - hss.version.null ：无。   - hss.version.basic ：基础版。   - hss.version.advanced ：专业版。   - hss.version.enterprise ：企业版。   - hss.version.premium ：旗舰版。   - hss.version.wtp ：网页防篡改版。   - hss.version.container.enterprise ：容器版。
 
         :return: The version of this Host.
         :rtype: str
@@ -514,7 +521,7 @@ class Host:
     def version(self, version):
         """Sets the version of this Host.
 
-        主机开通的版本，包含如下6种输入。   - hss.version.null ：无。   - hss.version.basic ：基础版。   - hss.version.enterprise ：企业版。   - hss.version.premium ：旗舰版。   - hss.version.wtp ：网页防篡改版。   - hss.version.container.enterprise ：容器版。
+        主机开通的版本，包含如下7种输入。   - hss.version.null ：无。   - hss.version.basic ：基础版。   - hss.version.advanced ：专业版。   - hss.version.enterprise ：企业版。   - hss.version.premium ：旗舰版。   - hss.version.wtp ：网页防篡改版。   - hss.version.container.enterprise ：容器版。
 
         :param version: The version of this Host.
         :type version: str
@@ -1048,6 +1055,28 @@ class Host:
         :type upgradable: bool
         """
         self._upgradable = upgradable
+
+    @property
+    def open_time(self):
+        """Gets the open_time of this Host.
+
+        开启防护时间，采用时间戳，默认毫秒，
+
+        :return: The open_time of this Host.
+        :rtype: int
+        """
+        return self._open_time
+
+    @open_time.setter
+    def open_time(self, open_time):
+        """Sets the open_time of this Host.
+
+        开启防护时间，采用时间戳，默认毫秒，
+
+        :param open_time: The open_time of this Host.
+        :type open_time: int
+        """
+        self._open_time = open_time
 
     def to_dict(self):
         """Returns the model properties as a dict"""

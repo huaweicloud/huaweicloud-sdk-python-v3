@@ -57,7 +57,7 @@ class PolicyGroupResponseInfo:
         :type default_group: bool
         :param support_os: 支持的操作系统，包含如下:   - Linux ：支持Linux系统   - Windows : 支持Windows系统
         :type support_os: str
-        :param support_version: 支持的版本，包含如下:   - hss.version.basic ：基础版策略组   - hss.version.enterprise : 企业版策略组   - hss.version.premium : 旗舰版策略组   - hss.version.wtp : 网页防篡改版策略组   - hss.version.container.enterprise : 容器版策略组
+        :param support_version: 支持的版本，包含如下:   - hss.version.basic ：基础版策略组   - hss.version.advanced : 专业版策略组   - hss.version.enterprise : 企业版策略组   - hss.version.premium : 旗舰版策略组   - hss.version.wtp : 网页防篡改版策略组   - hss.version.container.enterprise : 容器版策略组
         :type support_version: str
         """
         
@@ -248,7 +248,7 @@ class PolicyGroupResponseInfo:
     def support_version(self):
         """Gets the support_version of this PolicyGroupResponseInfo.
 
-        支持的版本，包含如下:   - hss.version.basic ：基础版策略组   - hss.version.enterprise : 企业版策略组   - hss.version.premium : 旗舰版策略组   - hss.version.wtp : 网页防篡改版策略组   - hss.version.container.enterprise : 容器版策略组
+        支持的版本，包含如下:   - hss.version.basic ：基础版策略组   - hss.version.advanced : 专业版策略组   - hss.version.enterprise : 企业版策略组   - hss.version.premium : 旗舰版策略组   - hss.version.wtp : 网页防篡改版策略组   - hss.version.container.enterprise : 容器版策略组
 
         :return: The support_version of this PolicyGroupResponseInfo.
         :rtype: str
@@ -259,7 +259,7 @@ class PolicyGroupResponseInfo:
     def support_version(self, support_version):
         """Sets the support_version of this PolicyGroupResponseInfo.
 
-        支持的版本，包含如下:   - hss.version.basic ：基础版策略组   - hss.version.enterprise : 企业版策略组   - hss.version.premium : 旗舰版策略组   - hss.version.wtp : 网页防篡改版策略组   - hss.version.container.enterprise : 容器版策略组
+        支持的版本，包含如下:   - hss.version.basic ：基础版策略组   - hss.version.advanced : 专业版策略组   - hss.version.enterprise : 企业版策略组   - hss.version.premium : 旗舰版策略组   - hss.version.wtp : 网页防篡改版策略组   - hss.version.container.enterprise : 容器版策略组
 
         :param support_version: The support_version of this PolicyGroupResponseInfo.
         :type support_version: str

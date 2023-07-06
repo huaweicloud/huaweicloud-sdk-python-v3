@@ -20,17 +20,17 @@ class ShowSqlFilterRuleRequest:
         'x_language': 'str',
         'instance_id': 'str',
         'node_id': 'str',
-        'type': 'str'
+        'sql_type': 'str'
     }
 
     attribute_map = {
         'x_language': 'X-Language',
         'instance_id': 'instance_id',
         'node_id': 'node_id',
-        'type': 'type'
+        'sql_type': 'sql_type'
     }
 
-    def __init__(self, x_language=None, instance_id=None, node_id=None, type=None):
+    def __init__(self, x_language=None, instance_id=None, node_id=None, sql_type=None):
         """ShowSqlFilterRuleRequest
 
         The model defined in huaweicloud sdk
@@ -41,8 +41,8 @@ class ShowSqlFilterRuleRequest:
         :type instance_id: str
         :param node_id: 节点ID。
         :type node_id: str
-        :param type: SQL限流类型，取值为SELECT、UPDATE、DELETE，不区分大小写；若不传则默认查询所有类型的限流规则。
-        :type type: str
+        :param sql_type: SQL限流类型，取值为SELECT、UPDATE、DELETE，不区分大小写；若不传则默认查询所有类型的限流规则。
+        :type sql_type: str
         """
         
         
@@ -50,15 +50,15 @@ class ShowSqlFilterRuleRequest:
         self._x_language = None
         self._instance_id = None
         self._node_id = None
-        self._type = None
+        self._sql_type = None
         self.discriminator = None
 
         if x_language is not None:
             self.x_language = x_language
         self.instance_id = instance_id
         self.node_id = node_id
-        if type is not None:
-            self.type = type
+        if sql_type is not None:
+            self.sql_type = sql_type
 
     @property
     def x_language(self):
@@ -127,26 +127,26 @@ class ShowSqlFilterRuleRequest:
         self._node_id = node_id
 
     @property
-    def type(self):
-        """Gets the type of this ShowSqlFilterRuleRequest.
+    def sql_type(self):
+        """Gets the sql_type of this ShowSqlFilterRuleRequest.
 
         SQL限流类型，取值为SELECT、UPDATE、DELETE，不区分大小写；若不传则默认查询所有类型的限流规则。
 
-        :return: The type of this ShowSqlFilterRuleRequest.
+        :return: The sql_type of this ShowSqlFilterRuleRequest.
         :rtype: str
         """
-        return self._type
+        return self._sql_type
 
-    @type.setter
-    def type(self, type):
-        """Sets the type of this ShowSqlFilterRuleRequest.
+    @sql_type.setter
+    def sql_type(self, sql_type):
+        """Sets the sql_type of this ShowSqlFilterRuleRequest.
 
         SQL限流类型，取值为SELECT、UPDATE、DELETE，不区分大小写；若不传则默认查询所有类型的限流规则。
 
-        :param type: The type of this ShowSqlFilterRuleRequest.
-        :type type: str
+        :param sql_type: The sql_type of this ShowSqlFilterRuleRequest.
+        :type sql_type: str
         """
-        self._type = type
+        self._sql_type = sql_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

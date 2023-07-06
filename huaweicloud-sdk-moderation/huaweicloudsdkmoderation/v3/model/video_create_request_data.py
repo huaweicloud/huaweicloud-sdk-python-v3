@@ -18,15 +18,17 @@ class VideoCreateRequestData:
 
     openapi_types = {
         'url': 'str',
-        'frame_interval': 'int'
+        'frame_interval': 'int',
+        'language': 'str'
     }
 
     attribute_map = {
         'url': 'url',
-        'frame_interval': 'frame_interval'
+        'frame_interval': 'frame_interval',
+        'language': 'language'
     }
 
-    def __init__(self, url=None, frame_interval=None):
+    def __init__(self, url=None, frame_interval=None, language=None):
         """VideoCreateRequestData
 
         The model defined in huaweicloud sdk
@@ -35,17 +37,22 @@ class VideoCreateRequestData:
         :type url: str
         :param frame_interval: 截帧频率间隔，单位为秒，取值范围为1~60s；若不传递默认5s截帧一次
         :type frame_interval: int
+        :param language: 支持的语言，默认为zh zh：中文
+        :type language: str
         """
         
         
 
         self._url = None
         self._frame_interval = None
+        self._language = None
         self.discriminator = None
 
         self.url = url
         if frame_interval is not None:
             self.frame_interval = frame_interval
+        if language is not None:
+            self.language = language
 
     @property
     def url(self):
@@ -90,6 +97,28 @@ class VideoCreateRequestData:
         :type frame_interval: int
         """
         self._frame_interval = frame_interval
+
+    @property
+    def language(self):
+        """Gets the language of this VideoCreateRequestData.
+
+        支持的语言，默认为zh zh：中文
+
+        :return: The language of this VideoCreateRequestData.
+        :rtype: str
+        """
+        return self._language
+
+    @language.setter
+    def language(self, language):
+        """Sets the language of this VideoCreateRequestData.
+
+        支持的语言，默认为zh zh：中文
+
+        :param language: The language of this VideoCreateRequestData.
+        :type language: str
+        """
+        self._language = language
 
     def to_dict(self):
         """Returns the model properties as a dict"""

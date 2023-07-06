@@ -22,10 +22,12 @@ class UpdateAccessConfigResponse(SdkResponse):
         'access_config_name': 'str',
         'access_config_type': 'str',
         'create_time': 'int',
-        'access_config_detail': 'AccessConfigDeatil',
+        'access_config_detail': 'AccessConfigDeatilCreate',
         'log_info': 'AccessConfigQueryLogInfo',
         'host_group_info': 'AccessConfigHostGroupIdList',
-        'access_config_tag': 'list[AccessConfigTag]'
+        'access_config_tag': 'list[AccessConfigTag]',
+        'log_split': 'bool',
+        'binary_collect': 'bool'
     }
 
     attribute_map = {
@@ -36,10 +38,12 @@ class UpdateAccessConfigResponse(SdkResponse):
         'access_config_detail': 'access_config_detail',
         'log_info': 'log_info',
         'host_group_info': 'host_group_info',
-        'access_config_tag': 'access_config_tag'
+        'access_config_tag': 'access_config_tag',
+        'log_split': 'log_split',
+        'binary_collect': 'binary_collect'
     }
 
-    def __init__(self, access_config_id=None, access_config_name=None, access_config_type=None, create_time=None, access_config_detail=None, log_info=None, host_group_info=None, access_config_tag=None):
+    def __init__(self, access_config_id=None, access_config_name=None, access_config_type=None, create_time=None, access_config_detail=None, log_info=None, host_group_info=None, access_config_tag=None, log_split=None, binary_collect=None):
         """UpdateAccessConfigResponse
 
         The model defined in huaweicloud sdk
@@ -48,18 +52,22 @@ class UpdateAccessConfigResponse(SdkResponse):
         :type access_config_id: str
         :param access_config_name: 日志接入名称
         :type access_config_name: str
-        :param access_config_type: 日志接入类型。AGENT：主机接入
+        :param access_config_type: 日志接入类型。AGENT：ECS接入  K8S_CCE: CCE接入
         :type access_config_type: str
         :param create_time: 创建时间
         :type create_time: int
         :param access_config_detail: 
-        :type access_config_detail: :class:`huaweicloudsdklts.v2.AccessConfigDeatil`
+        :type access_config_detail: :class:`huaweicloudsdklts.v2.AccessConfigDeatilCreate`
         :param log_info: 
         :type log_info: :class:`huaweicloudsdklts.v2.AccessConfigQueryLogInfo`
         :param host_group_info: 
         :type host_group_info: :class:`huaweicloudsdklts.v2.AccessConfigHostGroupIdList`
-        :param access_config_tag: 
+        :param access_config_tag: 标签信息。KEY不能重复,最多20个标签
         :type access_config_tag: list[:class:`huaweicloudsdklts.v2.AccessConfigTag`]
+        :param log_split: 二进制采集
+        :type log_split: bool
+        :param binary_collect: 日志拆分
+        :type binary_collect: bool
         """
         
         super(UpdateAccessConfigResponse, self).__init__()
@@ -72,6 +80,8 @@ class UpdateAccessConfigResponse(SdkResponse):
         self._log_info = None
         self._host_group_info = None
         self._access_config_tag = None
+        self._log_split = None
+        self._binary_collect = None
         self.discriminator = None
 
         if access_config_id is not None:
@@ -90,6 +100,10 @@ class UpdateAccessConfigResponse(SdkResponse):
             self.host_group_info = host_group_info
         if access_config_tag is not None:
             self.access_config_tag = access_config_tag
+        if log_split is not None:
+            self.log_split = log_split
+        if binary_collect is not None:
+            self.binary_collect = binary_collect
 
     @property
     def access_config_id(self):
@@ -139,7 +153,7 @@ class UpdateAccessConfigResponse(SdkResponse):
     def access_config_type(self):
         """Gets the access_config_type of this UpdateAccessConfigResponse.
 
-        日志接入类型。AGENT：主机接入
+        日志接入类型。AGENT：ECS接入  K8S_CCE: CCE接入
 
         :return: The access_config_type of this UpdateAccessConfigResponse.
         :rtype: str
@@ -150,7 +164,7 @@ class UpdateAccessConfigResponse(SdkResponse):
     def access_config_type(self, access_config_type):
         """Sets the access_config_type of this UpdateAccessConfigResponse.
 
-        日志接入类型。AGENT：主机接入
+        日志接入类型。AGENT：ECS接入  K8S_CCE: CCE接入
 
         :param access_config_type: The access_config_type of this UpdateAccessConfigResponse.
         :type access_config_type: str
@@ -184,7 +198,7 @@ class UpdateAccessConfigResponse(SdkResponse):
         """Gets the access_config_detail of this UpdateAccessConfigResponse.
 
         :return: The access_config_detail of this UpdateAccessConfigResponse.
-        :rtype: :class:`huaweicloudsdklts.v2.AccessConfigDeatil`
+        :rtype: :class:`huaweicloudsdklts.v2.AccessConfigDeatilCreate`
         """
         return self._access_config_detail
 
@@ -193,7 +207,7 @@ class UpdateAccessConfigResponse(SdkResponse):
         """Sets the access_config_detail of this UpdateAccessConfigResponse.
 
         :param access_config_detail: The access_config_detail of this UpdateAccessConfigResponse.
-        :type access_config_detail: :class:`huaweicloudsdklts.v2.AccessConfigDeatil`
+        :type access_config_detail: :class:`huaweicloudsdklts.v2.AccessConfigDeatilCreate`
         """
         self._access_config_detail = access_config_detail
 
@@ -237,6 +251,8 @@ class UpdateAccessConfigResponse(SdkResponse):
     def access_config_tag(self):
         """Gets the access_config_tag of this UpdateAccessConfigResponse.
 
+        标签信息。KEY不能重复,最多20个标签
+
         :return: The access_config_tag of this UpdateAccessConfigResponse.
         :rtype: list[:class:`huaweicloudsdklts.v2.AccessConfigTag`]
         """
@@ -246,10 +262,56 @@ class UpdateAccessConfigResponse(SdkResponse):
     def access_config_tag(self, access_config_tag):
         """Sets the access_config_tag of this UpdateAccessConfigResponse.
 
+        标签信息。KEY不能重复,最多20个标签
+
         :param access_config_tag: The access_config_tag of this UpdateAccessConfigResponse.
         :type access_config_tag: list[:class:`huaweicloudsdklts.v2.AccessConfigTag`]
         """
         self._access_config_tag = access_config_tag
+
+    @property
+    def log_split(self):
+        """Gets the log_split of this UpdateAccessConfigResponse.
+
+        二进制采集
+
+        :return: The log_split of this UpdateAccessConfigResponse.
+        :rtype: bool
+        """
+        return self._log_split
+
+    @log_split.setter
+    def log_split(self, log_split):
+        """Sets the log_split of this UpdateAccessConfigResponse.
+
+        二进制采集
+
+        :param log_split: The log_split of this UpdateAccessConfigResponse.
+        :type log_split: bool
+        """
+        self._log_split = log_split
+
+    @property
+    def binary_collect(self):
+        """Gets the binary_collect of this UpdateAccessConfigResponse.
+
+        日志拆分
+
+        :return: The binary_collect of this UpdateAccessConfigResponse.
+        :rtype: bool
+        """
+        return self._binary_collect
+
+    @binary_collect.setter
+    def binary_collect(self, binary_collect):
+        """Sets the binary_collect of this UpdateAccessConfigResponse.
+
+        日志拆分
+
+        :param binary_collect: The binary_collect of this UpdateAccessConfigResponse.
+        :type binary_collect: bool
+        """
+        self._binary_collect = binary_collect
 
     def to_dict(self):
         """Returns the model properties as a dict"""

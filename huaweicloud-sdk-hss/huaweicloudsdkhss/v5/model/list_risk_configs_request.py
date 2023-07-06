@@ -19,6 +19,7 @@ class ListRiskConfigsRequest:
     openapi_types = {
         'enterprise_project_id': 'str',
         'check_name': 'str',
+        'group_id': 'str',
         'severity': 'str',
         'standard': 'str',
         'host_id': 'str',
@@ -29,6 +30,7 @@ class ListRiskConfigsRequest:
     attribute_map = {
         'enterprise_project_id': 'enterprise_project_id',
         'check_name': 'check_name',
+        'group_id': 'group_id',
         'severity': 'severity',
         'standard': 'standard',
         'host_id': 'host_id',
@@ -36,7 +38,7 @@ class ListRiskConfigsRequest:
         'offset': 'offset'
     }
 
-    def __init__(self, enterprise_project_id=None, check_name=None, severity=None, standard=None, host_id=None, limit=None, offset=None):
+    def __init__(self, enterprise_project_id=None, check_name=None, group_id=None, severity=None, standard=None, host_id=None, limit=None, offset=None):
         """ListRiskConfigsRequest
 
         The model defined in huaweicloud sdk
@@ -45,6 +47,8 @@ class ListRiskConfigsRequest:
         :type enterprise_project_id: str
         :param check_name: 基线名称
         :type check_name: str
+        :param group_id: 策略组ID
+        :type group_id: str
         :param severity: 风险等级，包含如下:   - Security : 安全   - Low : 低危   - Medium : 中危   - High : 高危
         :type severity: str
         :param standard: 标准类型，包含如下:   - cn_standard : 等保合规标准   - hw_standard : 华为标准   - qt_standard : 青腾标准
@@ -61,6 +65,7 @@ class ListRiskConfigsRequest:
 
         self._enterprise_project_id = None
         self._check_name = None
+        self._group_id = None
         self._severity = None
         self._standard = None
         self._host_id = None
@@ -72,6 +77,8 @@ class ListRiskConfigsRequest:
             self.enterprise_project_id = enterprise_project_id
         if check_name is not None:
             self.check_name = check_name
+        if group_id is not None:
+            self.group_id = group_id
         if severity is not None:
             self.severity = severity
         if standard is not None:
@@ -126,6 +133,28 @@ class ListRiskConfigsRequest:
         :type check_name: str
         """
         self._check_name = check_name
+
+    @property
+    def group_id(self):
+        """Gets the group_id of this ListRiskConfigsRequest.
+
+        策略组ID
+
+        :return: The group_id of this ListRiskConfigsRequest.
+        :rtype: str
+        """
+        return self._group_id
+
+    @group_id.setter
+    def group_id(self, group_id):
+        """Sets the group_id of this ListRiskConfigsRequest.
+
+        策略组ID
+
+        :param group_id: The group_id of this ListRiskConfigsRequest.
+        :type group_id: str
+        """
+        self._group_id = group_id
 
     @property
     def severity(self):

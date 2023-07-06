@@ -37,11 +37,11 @@ class DomainBody:
 
         The model defined in huaweicloud sdk
 
-        :param domain_name: 加速域名。（ 国际英文域名：域名用字母（A-Z，a-z，大小写等价）、数字（0-9）和连接符（-）组成，各级域名之间用实点（.）连接，国际域名75个字符。注意连接符（-）不能作为域名的开头或结尾字符。）
+        :param domain_name: 加速域名。（ 由字母（A-Z，a-z，大小写等价）、数字（0-9）和连接符（-）组成，各级域名之间用（.）连接，域名长度不超过75个字符。连接符（-）不能作为域名的开头或结尾字符。）
         :type domain_name: str
         :param business_type: 域名业务类型，若为web，则表示类型为网页加速；若为download，则表示业务类型为文件下载加速；若为video，则表示业务类型为点播加速；若为wholeSite，则表示业务类型为全站加速。
         :type business_type: str
-        :param sources: 源站域名或源站IP，源站为IP类型时，仅支持IPv4，如需传入多个源站IP，以多个源站对象传入，除IP其他参数请保持一致，主源站最多支持15个源站IP对象，备源站最多支持15个源站IP对象；源站为域名类型时仅支持1个源站对象。不支持IP源站和域名源站混用。
+        :param sources: 源站配置。
         :type sources: list[:class:`huaweicloudsdkcdn.v1.Sources`]
         :param service_area: 域名服务范围，若为mainland_china，则表示服务范围为中国大陆；若为outside_mainland_china，则表示服务范围为中国大陆境外；若为global，则表示服务范围为全球。
         :type service_area: str
@@ -69,7 +69,7 @@ class DomainBody:
     def domain_name(self):
         """Gets the domain_name of this DomainBody.
 
-        加速域名。（ 国际英文域名：域名用字母（A-Z，a-z，大小写等价）、数字（0-9）和连接符（-）组成，各级域名之间用实点（.）连接，国际域名75个字符。注意连接符（-）不能作为域名的开头或结尾字符。）
+        加速域名。（ 由字母（A-Z，a-z，大小写等价）、数字（0-9）和连接符（-）组成，各级域名之间用（.）连接，域名长度不超过75个字符。连接符（-）不能作为域名的开头或结尾字符。）
 
         :return: The domain_name of this DomainBody.
         :rtype: str
@@ -80,7 +80,7 @@ class DomainBody:
     def domain_name(self, domain_name):
         """Sets the domain_name of this DomainBody.
 
-        加速域名。（ 国际英文域名：域名用字母（A-Z，a-z，大小写等价）、数字（0-9）和连接符（-）组成，各级域名之间用实点（.）连接，国际域名75个字符。注意连接符（-）不能作为域名的开头或结尾字符。）
+        加速域名。（ 由字母（A-Z，a-z，大小写等价）、数字（0-9）和连接符（-）组成，各级域名之间用（.）连接，域名长度不超过75个字符。连接符（-）不能作为域名的开头或结尾字符。）
 
         :param domain_name: The domain_name of this DomainBody.
         :type domain_name: str
@@ -113,7 +113,7 @@ class DomainBody:
     def sources(self):
         """Gets the sources of this DomainBody.
 
-        源站域名或源站IP，源站为IP类型时，仅支持IPv4，如需传入多个源站IP，以多个源站对象传入，除IP其他参数请保持一致，主源站最多支持15个源站IP对象，备源站最多支持15个源站IP对象；源站为域名类型时仅支持1个源站对象。不支持IP源站和域名源站混用。
+        源站配置。
 
         :return: The sources of this DomainBody.
         :rtype: list[:class:`huaweicloudsdkcdn.v1.Sources`]
@@ -124,7 +124,7 @@ class DomainBody:
     def sources(self, sources):
         """Sets the sources of this DomainBody.
 
-        源站域名或源站IP，源站为IP类型时，仅支持IPv4，如需传入多个源站IP，以多个源站对象传入，除IP其他参数请保持一致，主源站最多支持15个源站IP对象，备源站最多支持15个源站IP对象；源站为域名类型时仅支持1个源站对象。不支持IP源站和域名源站混用。
+        源站配置。
 
         :param sources: The sources of this DomainBody.
         :type sources: list[:class:`huaweicloudsdkcdn.v1.Sources`]
