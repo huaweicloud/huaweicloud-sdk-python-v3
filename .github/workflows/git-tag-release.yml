@@ -1,7 +1,5 @@
 name: push && tag && release
 on:
-  push:
-    branches: [ "master-dev" ]
   workflow_dispatch:
 permissions: write-all
 jobs:
@@ -12,6 +10,7 @@ jobs:
       with:
         ssh-key: ${{ secrets.SSH_KEY }}
         fetch-depth: 0
+        ref: master-dev
     - name: config
       run: |
         git config user.name ${{ vars.SDK_USERNAME }}
