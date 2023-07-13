@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import MeetingClient
 from huaweicloudsdkmeeting.v1.meeting_client import MeetingClient
 from huaweicloudsdkmeeting.v1.meeting_async_client import MeetingAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkmeeting.v1.model.active_dto import ActiveDTO
 from huaweicloudsdkmeeting.v1.model.add_corp_admin_request import AddCorpAdminRequest
 from huaweicloudsdkmeeting.v1.model.add_corp_admin_response import AddCorpAdminResponse

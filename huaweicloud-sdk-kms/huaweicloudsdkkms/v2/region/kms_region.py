@@ -43,6 +43,10 @@ class KmsRegion:
                         "https://kms.la-north-2.myhuaweicloud.com")
     CN_NORTH_9 = Region("cn-north-9",
                         "https://kms.cn-north-9.myhuaweicloud.com")
+    AP_SOUTHEAST_4 = Region("ap-southeast-4",
+                        "https://kms.ap-southeast-4.myhuaweicloud.com")
+    TR_WEST_1 = Region("tr-west-1",
+                        "https://kms.tr-west-1.myhuaweicloud.com")
 
     static_fields = {
         "cn-north-4": CN_NORTH_4,
@@ -62,6 +66,8 @@ class KmsRegion:
         "na-mexico-1": NA_MEXICO_1,
         "la-north-2": LA_NORTH_2,
         "cn-north-9": CN_NORTH_9,
+        "ap-southeast-4": AP_SOUTHEAST_4,
+        "tr-west-1": TR_WEST_1,
     }
 
     @classmethod

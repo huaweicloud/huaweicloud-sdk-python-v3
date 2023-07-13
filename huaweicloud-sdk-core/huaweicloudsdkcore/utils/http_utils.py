@@ -120,7 +120,7 @@ def parameters_to_tuples(params, collection_formats):
 
 def select_header_accept(accepts):
     if not accepts:
-        return
+        return ''
     accepts = [x.lower() for x in accepts]
     if 'application/json' in accepts:
         return 'application/json'

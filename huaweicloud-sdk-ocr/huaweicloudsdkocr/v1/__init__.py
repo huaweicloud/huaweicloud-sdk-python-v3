@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import OcrClient
 from huaweicloudsdkocr.v1.ocr_client import OcrClient
 from huaweicloudsdkocr.v1.ocr_async_client import OcrAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkocr.v1.model.auto_classification_request_body import AutoClassificationRequestBody
 from huaweicloudsdkocr.v1.model.auto_classification_result import AutoClassificationResult
 from huaweicloudsdkocr.v1.model.auto_classification_result_status import AutoClassificationResultStatus

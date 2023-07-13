@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import DgcClient
 from huaweicloudsdkdgc.v1.dgc_client import DgcClient
 from huaweicloudsdkdgc.v1.dgc_async_client import DgcAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkdgc.v1.model.basic_info import BasicInfo
 from huaweicloudsdkdgc.v1.model.cancel_script_request import CancelScriptRequest
 from huaweicloudsdkdgc.v1.model.cancel_script_response import CancelScriptResponse

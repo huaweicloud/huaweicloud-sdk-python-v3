@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import FrsClient
 from huaweicloudsdkfrs.v2.frs_client import FrsClient
 from huaweicloudsdkfrs.v2.frs_async_client import FrsAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkfrs.v2.model.actions_list import ActionsList
 from huaweicloudsdkfrs.v2.model.add_faces_base64_req import AddFacesBase64Req
 from huaweicloudsdkfrs.v2.model.add_faces_by_base64_request import AddFacesByBase64Request

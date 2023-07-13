@@ -95,7 +95,7 @@ class HttpConfig(object):
 
     def get_proxy(self):
         if self.proxy_host is None:
-            return None
+            return {}
 
         if six.PY2:
             from urllib import quote_plus

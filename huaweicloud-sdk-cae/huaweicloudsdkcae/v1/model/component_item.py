@@ -19,32 +19,36 @@ class ComponentItem:
     openapi_types = {
         'id': 'str',
         'name': 'str',
-        'status': 'str',
         'annotations': 'dict(str, str)',
+        'created_at': 'datetime',
+        'updated_at': 'datetime',
         'spec': 'ComponentSpec'
     }
 
     attribute_map = {
         'id': 'id',
         'name': 'name',
-        'status': 'status',
         'annotations': 'annotations',
+        'created_at': 'created_at',
+        'updated_at': 'updated_at',
         'spec': 'spec'
     }
 
-    def __init__(self, id=None, name=None, status=None, annotations=None, spec=None):
+    def __init__(self, id=None, name=None, annotations=None, created_at=None, updated_at=None, spec=None):
         """ComponentItem
 
         The model defined in huaweicloud sdk
 
-        :param id: 组件id。
+        :param id: 组件ID。
         :type id: str
         :param name: 组件名称。
         :type name: str
-        :param status: 组件状态。
-        :type status: str
         :param annotations: 资源信息。
         :type annotations: dict(str, str)
+        :param created_at: 创建时间。
+        :type created_at: datetime
+        :param updated_at: 更新时间。
+        :type updated_at: datetime
         :param spec: 
         :type spec: :class:`huaweicloudsdkcae.v1.ComponentSpec`
         """
@@ -53,8 +57,9 @@ class ComponentItem:
 
         self._id = None
         self._name = None
-        self._status = None
         self._annotations = None
+        self._created_at = None
+        self._updated_at = None
         self._spec = None
         self.discriminator = None
 
@@ -62,10 +67,12 @@ class ComponentItem:
             self.id = id
         if name is not None:
             self.name = name
-        if status is not None:
-            self.status = status
         if annotations is not None:
             self.annotations = annotations
+        if created_at is not None:
+            self.created_at = created_at
+        if updated_at is not None:
+            self.updated_at = updated_at
         if spec is not None:
             self.spec = spec
 
@@ -73,7 +80,7 @@ class ComponentItem:
     def id(self):
         """Gets the id of this ComponentItem.
 
-        组件id。
+        组件ID。
 
         :return: The id of this ComponentItem.
         :rtype: str
@@ -84,7 +91,7 @@ class ComponentItem:
     def id(self, id):
         """Sets the id of this ComponentItem.
 
-        组件id。
+        组件ID。
 
         :param id: The id of this ComponentItem.
         :type id: str
@@ -114,28 +121,6 @@ class ComponentItem:
         self._name = name
 
     @property
-    def status(self):
-        """Gets the status of this ComponentItem.
-
-        组件状态。
-
-        :return: The status of this ComponentItem.
-        :rtype: str
-        """
-        return self._status
-
-    @status.setter
-    def status(self, status):
-        """Sets the status of this ComponentItem.
-
-        组件状态。
-
-        :param status: The status of this ComponentItem.
-        :type status: str
-        """
-        self._status = status
-
-    @property
     def annotations(self):
         """Gets the annotations of this ComponentItem.
 
@@ -156,6 +141,50 @@ class ComponentItem:
         :type annotations: dict(str, str)
         """
         self._annotations = annotations
+
+    @property
+    def created_at(self):
+        """Gets the created_at of this ComponentItem.
+
+        创建时间。
+
+        :return: The created_at of this ComponentItem.
+        :rtype: datetime
+        """
+        return self._created_at
+
+    @created_at.setter
+    def created_at(self, created_at):
+        """Sets the created_at of this ComponentItem.
+
+        创建时间。
+
+        :param created_at: The created_at of this ComponentItem.
+        :type created_at: datetime
+        """
+        self._created_at = created_at
+
+    @property
+    def updated_at(self):
+        """Gets the updated_at of this ComponentItem.
+
+        更新时间。
+
+        :return: The updated_at of this ComponentItem.
+        :rtype: datetime
+        """
+        return self._updated_at
+
+    @updated_at.setter
+    def updated_at(self, updated_at):
+        """Sets the updated_at of this ComponentItem.
+
+        更新时间。
+
+        :param updated_at: The updated_at of this ComponentItem.
+        :type updated_at: datetime
+        """
+        self._updated_at = updated_at
 
     @property
     def spec(self):

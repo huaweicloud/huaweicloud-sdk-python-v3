@@ -37,15 +37,15 @@ class ApplicationMetadata:
 
         The model defined in huaweicloud sdk
 
-        :param id: 应用id。
+        :param id: 应用ID。
         :type id: str
         :param name: 应用名称。
         :type name: str
-        :param annotations: 附加应用信息。
+        :param annotations: 应用附加属性，当前只支持description参数。
         :type annotations: dict(str, str)
         :param created_at: 创建时间。
         :type created_at: str
-        :param updated_at: 修改时间。
+        :param updated_at: 更新时间。
         :type updated_at: str
         """
         
@@ -73,7 +73,7 @@ class ApplicationMetadata:
     def id(self):
         """Gets the id of this ApplicationMetadata.
 
-        应用id。
+        应用ID。
 
         :return: The id of this ApplicationMetadata.
         :rtype: str
@@ -84,7 +84,7 @@ class ApplicationMetadata:
     def id(self, id):
         """Sets the id of this ApplicationMetadata.
 
-        应用id。
+        应用ID。
 
         :param id: The id of this ApplicationMetadata.
         :type id: str
@@ -117,7 +117,7 @@ class ApplicationMetadata:
     def annotations(self):
         """Gets the annotations of this ApplicationMetadata.
 
-        附加应用信息。
+        应用附加属性，当前只支持description参数。
 
         :return: The annotations of this ApplicationMetadata.
         :rtype: dict(str, str)
@@ -128,7 +128,7 @@ class ApplicationMetadata:
     def annotations(self, annotations):
         """Sets the annotations of this ApplicationMetadata.
 
-        附加应用信息。
+        应用附加属性，当前只支持description参数。
 
         :param annotations: The annotations of this ApplicationMetadata.
         :type annotations: dict(str, str)
@@ -161,7 +161,7 @@ class ApplicationMetadata:
     def updated_at(self):
         """Gets the updated_at of this ApplicationMetadata.
 
-        修改时间。
+        更新时间。
 
         :return: The updated_at of this ApplicationMetadata.
         :rtype: str
@@ -172,7 +172,7 @@ class ApplicationMetadata:
     def updated_at(self, updated_at):
         """Sets the updated_at of this ApplicationMetadata.
 
-        修改时间。
+        更新时间。
 
         :param updated_at: The updated_at of this ApplicationMetadata.
         :type updated_at: str

@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import CfwClient
 from huaweicloudsdkcfw.v1.cfw_client import CfwClient
 from huaweicloudsdkcfw.v1.cfw_async_client import CfwAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkcfw.v1.model.add_address_items_info_dto import AddAddressItemsInfoDto
 from huaweicloudsdkcfw.v1.model.add_address_items_info_dto_address_items import AddAddressItemsInfoDtoAddressItems
 from huaweicloudsdkcfw.v1.model.add_address_items_using_post_request import AddAddressItemsUsingPostRequest

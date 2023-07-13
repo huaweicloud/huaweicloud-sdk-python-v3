@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import ResClient
 from huaweicloudsdkres.v1.res_client import ResClient
 from huaweicloudsdkres.v1.res_async_client import ResAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkres.v1.model.algorithm_specify_parameters import AlgorithmSpecifyParameters
 from huaweicloudsdkres.v1.model.attr_pair import AttrPair
 from huaweicloudsdkres.v1.model.attr_pair_rules import AttrPairRules

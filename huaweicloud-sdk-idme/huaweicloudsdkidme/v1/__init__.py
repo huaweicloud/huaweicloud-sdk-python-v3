@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import IdmeClient
 from huaweicloudsdkidme.v1.idme_client import IdmeClient
 from huaweicloudsdkidme.v1.idme_async_client import IdmeAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkidme.v1.model.app_user_list import AppUserList
 from huaweicloudsdkidme.v1.model.create_xdm_application_request import CreateXdmApplicationRequest
 from huaweicloudsdkidme.v1.model.create_xdm_application_request_body import CreateXdmApplicationRequestBody

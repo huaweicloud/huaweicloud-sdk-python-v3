@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import DwsClient
 from huaweicloudsdkdws.v2.dws_client import DwsClient
 from huaweicloudsdkdws.v2.dws_async_client import DwsAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkdws.v2.model.add_workload_queue_request import AddWorkloadQueueRequest
 from huaweicloudsdkdws.v2.model.add_workload_queue_response import AddWorkloadQueueResponse
 from huaweicloudsdkdws.v2.model.alarm_config_response import AlarmConfigResponse

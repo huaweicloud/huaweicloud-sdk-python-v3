@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import GesClient
 from huaweicloudsdkges.v1.ges_client import GesClient
 from huaweicloudsdkges.v1.ges_async_client import GesAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkges.v1.model.attach_eip_request import AttachEipRequest
 from huaweicloudsdkges.v1.model.attach_eip_response import AttachEipResponse
 from huaweicloudsdkges.v1.model.backup import Backup

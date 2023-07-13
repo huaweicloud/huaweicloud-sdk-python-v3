@@ -31,9 +31,9 @@ class ConfigurationItem:
 
         The model defined in huaweicloud sdk
 
-        :param type: 配置类型。
+        :param type: 组件配置类型，当前CAE支持组件配置如下8类。  - rds：云数据库RDS。  - cse：微服务引擎CSE。  - env：环境变量。  - access：访问方式。  - scaling：伸缩策略。  - volume：云存储配置。  - healthCheck：健康检查。  - lifecycle：生命周期管理。
         :type type: str
-        :param data: 配置数据
+        :param data: 组件配置数据，详细配置参照请求示例。
         :type data: object
         """
         
@@ -50,7 +50,7 @@ class ConfigurationItem:
     def type(self):
         """Gets the type of this ConfigurationItem.
 
-        配置类型。
+        组件配置类型，当前CAE支持组件配置如下8类。  - rds：云数据库RDS。  - cse：微服务引擎CSE。  - env：环境变量。  - access：访问方式。  - scaling：伸缩策略。  - volume：云存储配置。  - healthCheck：健康检查。  - lifecycle：生命周期管理。
 
         :return: The type of this ConfigurationItem.
         :rtype: str
@@ -61,7 +61,7 @@ class ConfigurationItem:
     def type(self, type):
         """Sets the type of this ConfigurationItem.
 
-        配置类型。
+        组件配置类型，当前CAE支持组件配置如下8类。  - rds：云数据库RDS。  - cse：微服务引擎CSE。  - env：环境变量。  - access：访问方式。  - scaling：伸缩策略。  - volume：云存储配置。  - healthCheck：健康检查。  - lifecycle：生命周期管理。
 
         :param type: The type of this ConfigurationItem.
         :type type: str
@@ -72,7 +72,7 @@ class ConfigurationItem:
     def data(self):
         """Gets the data of this ConfigurationItem.
 
-        配置数据
+        组件配置数据，详细配置参照请求示例。
 
         :return: The data of this ConfigurationItem.
         :rtype: object
@@ -83,7 +83,7 @@ class ConfigurationItem:
     def data(self, data):
         """Sets the data of this ConfigurationItem.
 
-        配置数据
+        组件配置数据，详细配置参照请求示例。
 
         :param data: The data of this ConfigurationItem.
         :type data: object

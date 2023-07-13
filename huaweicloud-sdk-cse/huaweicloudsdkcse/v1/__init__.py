@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import CseClient
 from huaweicloudsdkcse.v1.cse_client import CseClient
 from huaweicloudsdkcse.v1.cse_async_client import CseAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkcse.v1.model.cluster_node import ClusterNode
 from huaweicloudsdkcse.v1.model.create_engine_request import CreateEngineRequest
 from huaweicloudsdkcse.v1.model.create_engine_response import CreateEngineResponse

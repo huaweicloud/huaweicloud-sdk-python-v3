@@ -69,7 +69,7 @@ class PostPaidServerDataVolume:
         :type metadata: :class:`huaweicloudsdkecs.v2.PostPaidServerDataVolumeMetadata`
         :param data_image_id: 数据镜像的ID，UUID格式。  如果使用数据盘镜像创建数据盘，则data_image_id为必选参数，且不支持使用metadata。
         :type data_image_id: str
-        :param delete_on_termination: 弹性公网IP随实例释放策略。  true：弹性公网IP随实例释放。 false：弹性公网IP不随实例释放。 默认值：false。
+        :param delete_on_termination: 数据盘随实例释放策略。  true：数据盘随实例释放。 false：数据盘不随实例释放。 默认值：false。
         :type delete_on_termination: bool
         """
         
@@ -325,7 +325,7 @@ class PostPaidServerDataVolume:
     def delete_on_termination(self):
         """Gets the delete_on_termination of this PostPaidServerDataVolume.
 
-        弹性公网IP随实例释放策略。  true：弹性公网IP随实例释放。 false：弹性公网IP不随实例释放。 默认值：false。
+        数据盘随实例释放策略。  true：数据盘随实例释放。 false：数据盘不随实例释放。 默认值：false。
 
         :return: The delete_on_termination of this PostPaidServerDataVolume.
         :rtype: bool
@@ -336,7 +336,7 @@ class PostPaidServerDataVolume:
     def delete_on_termination(self, delete_on_termination):
         """Sets the delete_on_termination of this PostPaidServerDataVolume.
 
-        弹性公网IP随实例释放策略。  true：弹性公网IP随实例释放。 false：弹性公网IP不随实例释放。 默认值：false。
+        数据盘随实例释放策略。  true：数据盘随实例释放。 false：数据盘不随实例释放。 默认值：false。
 
         :param delete_on_termination: The delete_on_termination of this PostPaidServerDataVolume.
         :type delete_on_termination: bool

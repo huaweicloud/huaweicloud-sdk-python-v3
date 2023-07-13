@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import IdentityCenterClient
 from huaweicloudsdkidentitycenter.v1.identitycenter_client import IdentityCenterClient
 from huaweicloudsdkidentitycenter.v1.identitycenter_async_client import IdentityCenterAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkidentitycenter.v1.model.accessor_dto import AccessorDto
 from huaweicloudsdkidentitycenter.v1.model.account_assignment_dto import AccountAssignmentDto
 from huaweicloudsdkidentitycenter.v1.model.account_assignment_operation_status_dto import AccountAssignmentOperationStatusDto

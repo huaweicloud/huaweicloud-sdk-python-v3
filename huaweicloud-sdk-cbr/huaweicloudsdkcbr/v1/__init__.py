@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import CbrClient
 from huaweicloudsdkcbr.v1.cbr_client import CbrClient
 from huaweicloudsdkcbr.v1.cbr_async_client import CbrAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkcbr.v1.model.add_agent_path_request import AddAgentPathRequest
 from huaweicloudsdkcbr.v1.model.add_agent_path_response import AddAgentPathResponse
 from huaweicloudsdkcbr.v1.model.add_member_request import AddMemberRequest

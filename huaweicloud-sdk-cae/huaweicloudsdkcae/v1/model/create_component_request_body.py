@@ -35,9 +35,9 @@ class CreateComponentRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param api_version: API版本。
+        :param api_version: API版本，固定值“v1”，该值不可修改。
         :type api_version: str
-        :param kind: 资源种类。
+        :param kind: API类型，固定值“Component”，该值不可修改。
         :type kind: str
         :param metadata: 
         :type metadata: :class:`huaweicloudsdkcae.v1.CreateComponentRequestBodyMetadata`
@@ -64,7 +64,7 @@ class CreateComponentRequestBody:
     def api_version(self):
         """Gets the api_version of this CreateComponentRequestBody.
 
-        API版本。
+        API版本，固定值“v1”，该值不可修改。
 
         :return: The api_version of this CreateComponentRequestBody.
         :rtype: str
@@ -75,7 +75,7 @@ class CreateComponentRequestBody:
     def api_version(self, api_version):
         """Sets the api_version of this CreateComponentRequestBody.
 
-        API版本。
+        API版本，固定值“v1”，该值不可修改。
 
         :param api_version: The api_version of this CreateComponentRequestBody.
         :type api_version: str
@@ -86,7 +86,7 @@ class CreateComponentRequestBody:
     def kind(self):
         """Gets the kind of this CreateComponentRequestBody.
 
-        资源种类。
+        API类型，固定值“Component”，该值不可修改。
 
         :return: The kind of this CreateComponentRequestBody.
         :rtype: str
@@ -97,7 +97,7 @@ class CreateComponentRequestBody:
     def kind(self, kind):
         """Sets the kind of this CreateComponentRequestBody.
 
-        资源种类。
+        API类型，固定值“Component”，该值不可修改。
 
         :param kind: The kind of this CreateComponentRequestBody.
         :type kind: str

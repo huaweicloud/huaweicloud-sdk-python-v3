@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import GaClient
 from huaweicloudsdkga.v1.ga_client import GaClient
 from huaweicloudsdkga.v1.ga_async_client import GaAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkga.v1.model.accelerate_ip import AccelerateIp
 from huaweicloudsdkga.v1.model.accelerator_detail import AcceleratorDetail
 from huaweicloudsdkga.v1.model.add_ip_group_ip_request import AddIpGroupIpRequest

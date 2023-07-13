@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import IoTEdgeClient
 from huaweicloudsdkiotedge.v3.iotedge_client import IoTEdgeClient
 from huaweicloudsdkiotedge.v3.iotedge_async_client import IoTEdgeAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkiotedge.v3.model.cluster_node_config import ClusterNodeConfig
 from huaweicloudsdkiotedge.v3.model.create_app_instance_request import CreateAppInstanceRequest
 from huaweicloudsdkiotedge.v3.model.create_app_instance_request_dto import CreateAppInstanceRequestDTO

@@ -1,3 +1,292 @@
+# 3.1.48 2023-07-13
+
+### HuaweiCloud SDK OROAS
+
+- _新增特性_
+  - 支持运筹优化算法服务
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK AS
+
+- _新增特性_
+  - 支持接口`ListGroupScheduledTasks`、`CreateGroupScheduledTask`、`UpdateGroupScheduledTask`、`DeleteGroupScheduledTask`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateScalingPolicy**
+    - 请求参数变更
+      - `+ scheduled_policy.recurrence_type: enum value [DAILY,WEEKLY,MONTHLY]`
+      - `- scheduled_policy.recurrence_type: enum value [Daily,Weekly,Monthly]`
+  - **UpdateScalingPolicy**
+    - 请求参数变更
+      - `+ scheduled_policy.recurrence_type: enum value [DAILY,WEEKLY,MONTHLY]`
+      - `- scheduled_policy.recurrence_type: enum value [Daily,Weekly,Monthly]`
+  - **ShowScalingPolicy**
+    - 响应参数变更
+      - `+ scaling_policy.scheduled_policy.recurrence_type: enum value [DAILY,WEEKLY,MONTHLY]`
+      - `- scaling_policy.scheduled_policy.recurrence_type: enum value [Daily,Weekly,Monthly]`
+  - **ListScalingPolicies**
+    - 响应参数变更
+      - `+ scaling_policies.scheduled_policy.recurrence_type: enum value [DAILY,WEEKLY,MONTHLY]`
+      - `- scaling_policies.scheduled_policy.recurrence_type: enum value [Daily,Weekly,Monthly]`
+  - **CreateScalingV2Policy**
+    - 请求参数变更
+      - `+ scheduled_policy.recurrence_type: enum value [DAILY,WEEKLY,MONTHLY]`
+      - `- scheduled_policy.recurrence_type: enum value [Daily,Weekly,Monthly]`
+  - **ListAllScalingV2Policies**
+    - 响应参数变更
+      - `+ scaling_policies.scheduled_policy.recurrence_type: enum value [DAILY,WEEKLY,MONTHLY]`
+      - `- scaling_policies.scheduled_policy.recurrence_type: enum value [Daily,Weekly,Monthly]`
+  - **UpdateScalingV2Policy**
+    - 请求参数变更
+      - `+ scheduled_policy.recurrence_type: enum value [DAILY,WEEKLY,MONTHLY]`
+      - `- scheduled_policy.recurrence_type: enum value [Daily,Weekly,Monthly]`
+  - **ShowScalingV2Policy**
+    - 响应参数变更
+      - `+ scaling_policy.scheduled_policy.recurrence_type: enum value [DAILY,WEEKLY,MONTHLY]`
+      - `- scaling_policy.scheduled_policy.recurrence_type: enum value [Daily,Weekly,Monthly]`
+  - **ListScalingV2Policies**
+    - 响应参数变更
+      - `+ scaling_policies.scheduled_policy.recurrence_type: enum value [DAILY,WEEKLY,MONTHLY]`
+      - `- scaling_policies.scheduled_policy.recurrence_type: enum value [Daily,Weekly,Monthly]`
+
+### HuaweiCloud SDK AntiDDoS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowNewTaskStatus**
+    - 请求参数变更
+      - `* task_id: optional -> required`
+
+### HuaweiCloud SDK CAE
+
+- _新增特性_
+  - 支持以下接口：
+    - `ListDomains`
+    - `CreateDomain`
+    - `DeleteDomain`
+    - `ListCertificates`
+    - `CreateCertificate`
+    - `UpdateCertificate`
+    - `DeleteCertificate`
+    - `ListTimerRules`
+    - `CreateTimerRule`
+    - `UpdateTimerRule`
+    - `DeleteTimerRule`
+    - `ShowExecutionResult`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **DeleteVolume**
+    - 响应参数变更
+      - `+ kind`
+      - `+ api_version`
+      - `+ items`
+  - **ListAgencies**
+    - 响应参数变更
+      - `+ agencies`
+      - `- items`
+      - `- api_version: enum value [v1]`
+      - `- kind: enum value [Agency]`
+  - **CreateAgency**
+    - 请求参数变更
+      - `- api_version: enum value [v1]`
+      - `- kind: enum value [Agency]`
+      - `- metadata.name: enum value [cae_trust]`
+  - **ListEnvironments**
+    - 响应参数变更
+      - `- items.type`
+      - `- items.status: enum value [error]`
+  - **CreateEnvironment**
+    - 请求参数变更
+      - `- api_version: enum value [v1]`
+      - `- kind: enum value [Environment]`
+      - `- metadata.type`
+    - 响应参数变更
+      - `+ job_id`
+      - `- metadata`
+      - `- kind`
+      - `- api_version`
+  - **CreateApplication**
+    - 请求参数变更
+      - `- api_version: enum value [v1]`
+      - `- kind: enum value [Application]`
+  - **ListApplications**
+    - 响应参数变更
+      - `+ items.annotations`
+      - `+ items.created_at`
+      - `+ items.updated_at`
+  - **ListComponentSnapshots**
+    - 响应参数变更
+      - `- api_version: enum value [v1]`
+      - `- kind: enum value [ComponentSnapshot]`
+      - `+ items.context.app_id`
+      - `+ items.context.available_replica`
+      - `+ items.context.build`
+      - `+ items.context.build_id`
+      - `+ items.context.build_log_id`
+      - `+ items.context.env_id`
+      - `+ items.context.id`
+      - `+ items.context.image_url`
+      - `+ items.context.job_id`
+      - `+ items.context.log_group_id`
+      - `+ items.context.log_stream_id`
+      - `+ items.context.name`
+      - `+ items.context.operation`
+      - `+ items.context.operation_status`
+      - `+ items.context.replica`
+      - `+ items.context.resource_limit`
+      - `+ items.context.runtime`
+      - `+ items.context.source`
+      - `+ items.context.status`
+      - `+ items.context.version`
+      - `+ items.context.created_at`
+      - `+ items.context.updated_at`
+      - `* items.context: object -> object<ComponentSnapshotContext>`
+  - **ListComponentConfigurations**
+    - 响应参数变更
+      - `- kind: enum value [Configuration]`
+      - `+ items.type: enum value [rds,cse,env,access,scaling,volume,healthCheck,lifecycle]`
+  - **CreateComponentConfiguration**
+    - 请求参数变更
+      - `- kind: enum value [Configuration]`
+      - `+ items.type: enum value [rds,cse,env,access,scaling,volume,healthCheck,lifecycle]`
+  - **ListComponentEvents**
+    - 响应参数变更
+      - `- kind: enum value [ComponentEvent]`
+      - `+ items.involved_object_kind`
+      - `- items.involved_object: enum value [Component,ComponentInstance,ComponentScaling]`
+  - **ListComponentInstances**
+    - 响应参数变更
+      - `- api_version: enum value [v1]`
+      - `- kind: enum value [ComponentInstance]`
+  - **ListVolumes**
+    - 请求参数变更
+      - `+ resource_type: enum value [obs]`
+    - 响应参数变更
+      - `- kind: enum value [Volume]`
+      - `- items.resource_type: enum value [obs]`
+  - **CreateVolume**
+    - 请求参数变更
+      - `- kind: enum value [Volume]`
+      - `- spec.resource_type: enum value [obs]`
+  - **RetryJob**
+    - 请求参数变更
+      - `+ X-Enterprise-Project-ID`
+      - `+ X-Environment-ID`
+  - **ShowJob**
+    - 请求参数变更
+      - `+ X-Environment-ID`
+    - 响应参数变更
+      - `- kind: enum value [Job]`
+      - `+ spec.progress`
+  - **ShowComponent**
+    - 响应参数变更
+      - `- api_version: enum value [v1]`
+      - `- kind: enum value [Component]`
+      - `- metadata.jod_id`
+      - `- metadata.status`
+      - `- metadata.type`
+      - `+ spec.resource_limit`
+      - `+ spec.build_log_id`
+      - `- spec.log_strategy`
+      - `+ spec.runtime: enum value [Docker,Java8,Java11,Tomcat8,Tomcat9,Python3,Nodejs8,Php7]`
+  - **UpdateComponent**
+    - 请求参数变更
+      - `- api_version: enum value [v1]`
+      - `- kind: enum value [Component]`
+      - `- metadata.created_at`
+      - `- metadata.id`
+      - `- metadata.jod_id`
+      - `- metadata.status`
+      - `- metadata.type`
+      - `- metadata.updated_at`
+      - `* metadata: object<Metadata> -> object<UpdateComponentRequestMetadata>`
+      - `+ spec.runtime`
+      - `+ spec.replica`
+      - `- spec.log_strategy`
+  - **ExecuteAction**
+    - 请求参数变更
+      - `- api_version: enum value [v1]`
+      - `- kind: enum value [Action]`
+      - `* spec.source: object<Source> -> object<ActionOnComponentSource>`
+  - **CreateComponent**
+    - 请求参数变更
+      - `- api_version: enum value [v1]`
+      - `- kind: enum value [Component]`
+    - 响应参数变更
+      - `- api_version: enum value [v1]`
+      - `- kind: enum value [Component]`
+      - `- metadata.jod_id`
+      - `- metadata.status`
+      - `- metadata.type`
+      - `+ spec.resource_limit`
+      - `- spec.access_info`
+      - `- spec.build_id`
+      - `- spec.image_url`
+      - `- spec.job_id`
+      - `- spec.log_strategy`
+      - `+ spec.runtime: enum value [Docker,Java8,Java11,Tomcat8,Tomcat9,Python3,Nodejs8,Php7]`
+      - `* spec: object<ComponentSpec> -> object<CreateComponentSpec>`
+  - **ListComponents**
+    - 响应参数变更
+      - `+ items.created_at`
+      - `+ items.updated_at`
+      - `- items.status`
+      - `+ items.spec.resource_limit`
+      - `+ items.spec.build_log_id`
+      - `- items.spec.log_strategy`
+      - `+ items.spec.runtime: enum value [Docker,Java8,Java11,Tomcat8,Tomcat9,Python3,Nodejs8,Php7]`
+
+### HuaweiCloud SDK SIS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **PushTranscriberJobs**
+    - 请求参数变更
+      - `+ Enterprise-Project-Id`
+
+### HuaweiCloud SDK VPC
+
+- _新增特性_
+  - 支持以下接口：
+    - `ListApiVersion`
+    - `NeutronListPorts`
+    - `NeutronCreatePort`
+    - `NeutronShowPort`
+    - `NeutronUpdatePort`
+    - `NeutronDeletePort`
+    - `NeutronListNetworks`
+    - `NeutronCreateNetwork`
+    - `NeutronShowNetwork`
+    - `NeutronUpdateNetwork`
+    - `NeutronDeleteNetwork`
+    - `NeutronListSubnets`
+    - `NeutronCreateSubnet`
+    - `NeutronShowSubnet`
+    - `NeutronUpdateSubnet`
+    - `NeutronDeleteSubnet`
+    - `NeutronListRouters`
+    - `NeutronCreateRouter`
+    - `NeutronShowRouter`
+    - `NeutronUpdateRouter`
+    - `NeutronDeleteRouter`
+    - `NeutronAddRouterInterface`
+    - `NeutronRemoveRouterInterface`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
 # 3.1.47 2023-07-06
 
 ### HuaweiCloud SDK CodeCheck

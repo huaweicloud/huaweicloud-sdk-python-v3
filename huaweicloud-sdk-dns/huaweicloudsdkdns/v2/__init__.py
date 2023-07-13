@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import DnsClient
 from huaweicloudsdkdns.v2.dns_client import DnsClient
 from huaweicloudsdkdns.v2.dns_async_client import DnsAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkdns.v2.model.alias_target import AliasTarget
 from huaweicloudsdkdns.v2.model.associate_health_check_req import AssociateHealthCheckReq
 from huaweicloudsdkdns.v2.model.associate_health_check_request import AssociateHealthCheckRequest

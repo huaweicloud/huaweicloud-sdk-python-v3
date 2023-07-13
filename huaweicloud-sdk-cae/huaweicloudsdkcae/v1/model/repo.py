@@ -33,11 +33,11 @@ class Repo:
 
         The model defined in huaweicloud sdk
 
-        :param auth_name: 授权名。
+        :param auth_name: 授权名称。
         :type auth_name: str
         :param branch: 分支。
         :type branch: str
-        :param namespace: 命名空间。
+        :param namespace: 命名空间，需填写命名空间的Base64编码。
         :type namespace: str
         """
         
@@ -59,7 +59,7 @@ class Repo:
     def auth_name(self):
         """Gets the auth_name of this Repo.
 
-        授权名。
+        授权名称。
 
         :return: The auth_name of this Repo.
         :rtype: str
@@ -70,7 +70,7 @@ class Repo:
     def auth_name(self, auth_name):
         """Sets the auth_name of this Repo.
 
-        授权名。
+        授权名称。
 
         :param auth_name: The auth_name of this Repo.
         :type auth_name: str
@@ -103,7 +103,7 @@ class Repo:
     def namespace(self):
         """Gets the namespace of this Repo.
 
-        命名空间。
+        命名空间，需填写命名空间的Base64编码。
 
         :return: The namespace of this Repo.
         :rtype: str
@@ -114,7 +114,7 @@ class Repo:
     def namespace(self, namespace):
         """Sets the namespace of this Repo.
 
-        命名空间。
+        命名空间，需填写命名空间的Base64编码。
 
         :param namespace: The namespace of this Repo.
         :type namespace: str

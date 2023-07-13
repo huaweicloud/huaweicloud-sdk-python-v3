@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import RdsClient
 from huaweicloudsdkrds.v3.rds_client import RdsClient
 from huaweicloudsdkrds.v3.rds_async_client import RdsAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkrds.v3.model.ad_domain_info import ADDomainInfo
 from huaweicloudsdkrds.v3.model.add_msdtc_request_body import AddMsdtcRequestBody
 from huaweicloudsdkrds.v3.model.allow_db_privilege_request import AllowDbPrivilegeRequest

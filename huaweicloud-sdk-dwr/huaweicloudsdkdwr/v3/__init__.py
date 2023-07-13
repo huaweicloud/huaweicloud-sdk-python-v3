@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import DwrClient
 from huaweicloudsdkdwr.v3.dwr_client import DwrClient
 from huaweicloudsdkdwr.v3.dwr_async_client import DwrAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkdwr.v3.model.accept_service_contract_request import AcceptServiceContractRequest
 from huaweicloudsdkdwr.v3.model.accept_service_contract_response import AcceptServiceContractResponse
 from huaweicloudsdkdwr.v3.model.action import Action

@@ -230,6 +230,8 @@ class SisAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
 
         form_params = {}
 

@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import DcsClient
 from huaweicloudsdkdcs.v2.dcs_client import DcsClient
 from huaweicloudsdkdcs.v2.dcs_async_client import DcsAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkdcs.v2.model.attrs_object import AttrsObject
 from huaweicloudsdkdcs.v2.model.autoscan_config_request import AutoscanConfigRequest
 from huaweicloudsdkdcs.v2.model.available_zones import AvailableZones

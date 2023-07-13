@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import ServiceStageClient
 from huaweicloudsdkservicestage.v3.servicestage_client import ServiceStageClient
 from huaweicloudsdkservicestage.v3.servicestage_async_client import ServiceStageAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkservicestage.v3.model.application import Application
 from huaweicloudsdkservicestage.v3.model.application_config_configuration import ApplicationConfigConfiguration
 from huaweicloudsdkservicestage.v3.model.application_config_configuration1 import ApplicationConfigConfiguration1

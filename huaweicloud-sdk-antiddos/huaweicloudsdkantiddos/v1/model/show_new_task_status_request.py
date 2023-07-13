@@ -38,8 +38,7 @@ class ShowNewTaskStatusRequest:
         self._task_id = None
         self.discriminator = None
 
-        if task_id is not None:
-            self.task_id = task_id
+        self.task_id = task_id
 
     @property
     def task_id(self):

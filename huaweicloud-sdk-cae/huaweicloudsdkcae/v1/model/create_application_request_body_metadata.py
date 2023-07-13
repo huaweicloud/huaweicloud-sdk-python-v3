@@ -31,9 +31,9 @@ class CreateApplicationRequestBodyMetadata:
 
         The model defined in huaweicloud sdk
 
-        :param name: 名称。
+        :param name: 应用名称。
         :type name: str
-        :param annotations: 应用信息。
+        :param annotations: 创建应用附加参数，当前只支持description参数。
         :type annotations: dict(str, str)
         """
         
@@ -51,7 +51,7 @@ class CreateApplicationRequestBodyMetadata:
     def name(self):
         """Gets the name of this CreateApplicationRequestBodyMetadata.
 
-        名称。
+        应用名称。
 
         :return: The name of this CreateApplicationRequestBodyMetadata.
         :rtype: str
@@ -62,7 +62,7 @@ class CreateApplicationRequestBodyMetadata:
     def name(self, name):
         """Sets the name of this CreateApplicationRequestBodyMetadata.
 
-        名称。
+        应用名称。
 
         :param name: The name of this CreateApplicationRequestBodyMetadata.
         :type name: str
@@ -73,7 +73,7 @@ class CreateApplicationRequestBodyMetadata:
     def annotations(self):
         """Gets the annotations of this CreateApplicationRequestBodyMetadata.
 
-        应用信息。
+        创建应用附加参数，当前只支持description参数。
 
         :return: The annotations of this CreateApplicationRequestBodyMetadata.
         :rtype: dict(str, str)
@@ -84,7 +84,7 @@ class CreateApplicationRequestBodyMetadata:
     def annotations(self, annotations):
         """Sets the annotations of this CreateApplicationRequestBodyMetadata.
 
-        应用信息。
+        创建应用附加参数，当前只支持description参数。
 
         :param annotations: The annotations of this CreateApplicationRequestBodyMetadata.
         :type annotations: dict(str, str)

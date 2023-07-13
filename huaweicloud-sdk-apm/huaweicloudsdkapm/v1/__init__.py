@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import ApmClient
 from huaweicloudsdkapm.v1.apm_client import ApmClient
 from huaweicloudsdkapm.v1.apm_async_client import ApmAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkapm.v1.model.access_aksk_vo import AccessAkskVO
 from huaweicloudsdkapm.v1.model.agent_delete_param import AgentDeleteParam
 from huaweicloudsdkapm.v1.model.agent_search_param import AgentSearchParam

@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import IvsClient
 from huaweicloudsdkivs.v2.ivs_client import IvsClient
 from huaweicloudsdkivs.v2.ivs_async_client import IvsAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkivs.v2.model.actions_list import ActionsList
 from huaweicloudsdkivs.v2.model.detect_extention_by_id_card_image_request import DetectExtentionByIdCardImageRequest
 from huaweicloudsdkivs.v2.model.detect_extention_by_id_card_image_response import DetectExtentionByIdCardImageResponse

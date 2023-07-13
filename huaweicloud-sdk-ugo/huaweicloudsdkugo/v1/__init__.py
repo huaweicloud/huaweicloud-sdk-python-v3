@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import UgoClient
 from huaweicloudsdkugo.v1.ugo_client import UgoClient
 from huaweicloudsdkugo.v1.ugo_async_client import UgoAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkugo.v1.model.check_permission_request import CheckPermissionRequest
 from huaweicloudsdkugo.v1.model.check_permission_response import CheckPermissionResponse
 from huaweicloudsdkugo.v1.model.commit_syntax_conversion_request import CommitSyntaxConversionRequest

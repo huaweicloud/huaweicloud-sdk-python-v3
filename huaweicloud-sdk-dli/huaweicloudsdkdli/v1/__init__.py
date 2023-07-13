@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import DliClient
 from huaweicloudsdkdli.v1.dli_client import DliClient
 from huaweicloudsdkdli.v1.dli_async_client import DliAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkdli.v1.model.associate_connection_queue_req import AssociateConnectionQueueReq
 from huaweicloudsdkdli.v1.model.associate_connection_queue_request import AssociateConnectionQueueRequest
 from huaweicloudsdkdli.v1.model.associate_connection_queue_response import AssociateConnectionQueueResponse

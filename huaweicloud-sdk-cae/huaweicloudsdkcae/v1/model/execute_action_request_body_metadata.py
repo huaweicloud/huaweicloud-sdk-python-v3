@@ -33,7 +33,7 @@ class ExecuteActionRequestBodyMetadata:
 
         :param annotations: 资源信息。
         :type annotations: dict(str, str)
-        :param name: action名称。
+        :param name: action名称，具体action如下。 - deploy：部署。 - upgrade：升级。 - configure：生效配置。 - scale：伸缩。 - restart：重启。 - start：启动。 - stop：停止。 - rollback：回滚。
         :type name: str
         """
         
@@ -73,7 +73,7 @@ class ExecuteActionRequestBodyMetadata:
     def name(self):
         """Gets the name of this ExecuteActionRequestBodyMetadata.
 
-        action名称。
+        action名称，具体action如下。 - deploy：部署。 - upgrade：升级。 - configure：生效配置。 - scale：伸缩。 - restart：重启。 - start：启动。 - stop：停止。 - rollback：回滚。
 
         :return: The name of this ExecuteActionRequestBodyMetadata.
         :rtype: str
@@ -84,7 +84,7 @@ class ExecuteActionRequestBodyMetadata:
     def name(self, name):
         """Sets the name of this ExecuteActionRequestBodyMetadata.
 
-        action名称。
+        action名称，具体action如下。 - deploy：部署。 - upgrade：升级。 - configure：生效配置。 - scale：伸缩。 - restart：重启。 - start：启动。 - stop：停止。 - rollback：回滚。
 
         :param name: The name of this ExecuteActionRequestBodyMetadata.
         :type name: str

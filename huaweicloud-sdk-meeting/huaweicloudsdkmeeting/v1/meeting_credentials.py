@@ -17,6 +17,7 @@ from enum import Enum
 
 class MeetingCredentials(Credentials):
     def __init__(self, user_name=None, user_password=None):
+        super(MeetingCredentials, self).__init__()
         self._token = None
         self._last_token_date = None
         self._auth_type_enum = None

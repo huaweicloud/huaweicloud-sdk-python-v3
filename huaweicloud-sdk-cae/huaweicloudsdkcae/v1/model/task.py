@@ -17,108 +17,64 @@ class Task:
     sensitive_list = []
 
     openapi_types = {
-        'created_at': 'str',
-        'detail': 'str',
         'index': 'int',
         'name': 'str',
         'status': 'str',
+        'detail': 'str',
+        'created_at': 'str',
         'updated_at': 'str'
     }
 
     attribute_map = {
-        'created_at': 'created_at',
-        'detail': 'detail',
         'index': 'index',
         'name': 'name',
         'status': 'status',
+        'detail': 'detail',
+        'created_at': 'created_at',
         'updated_at': 'updated_at'
     }
 
-    def __init__(self, created_at=None, detail=None, index=None, name=None, status=None, updated_at=None):
+    def __init__(self, index=None, name=None, status=None, detail=None, created_at=None, updated_at=None):
         """Task
 
         The model defined in huaweicloud sdk
 
-        :param created_at: 创建时间。
-        :type created_at: str
-        :param detail: 任务详情。
-        :type detail: str
         :param index: 任务序号。
         :type index: int
-        :param name: 任务名称
+        :param name: 任务名称。
         :type name: str
-        :param status: 任务状态
+        :param status: 任务状态。
         :type status: str
-        :param updated_at: 修改时间
+        :param detail: 任务详情。
+        :type detail: str
+        :param created_at: 创建时间。
+        :type created_at: str
+        :param updated_at: 更新时间。
         :type updated_at: str
         """
         
         
 
-        self._created_at = None
-        self._detail = None
         self._index = None
         self._name = None
         self._status = None
+        self._detail = None
+        self._created_at = None
         self._updated_at = None
         self.discriminator = None
 
-        if created_at is not None:
-            self.created_at = created_at
-        if detail is not None:
-            self.detail = detail
         if index is not None:
             self.index = index
         if name is not None:
             self.name = name
         if status is not None:
             self.status = status
+        if detail is not None:
+            self.detail = detail
+        if created_at is not None:
+            self.created_at = created_at
         if updated_at is not None:
             self.updated_at = updated_at
-
-    @property
-    def created_at(self):
-        """Gets the created_at of this Task.
-
-        创建时间。
-
-        :return: The created_at of this Task.
-        :rtype: str
-        """
-        return self._created_at
-
-    @created_at.setter
-    def created_at(self, created_at):
-        """Sets the created_at of this Task.
-
-        创建时间。
-
-        :param created_at: The created_at of this Task.
-        :type created_at: str
-        """
-        self._created_at = created_at
-
-    @property
-    def detail(self):
-        """Gets the detail of this Task.
-
-        任务详情。
-
-        :return: The detail of this Task.
-        :rtype: str
-        """
-        return self._detail
-
-    @detail.setter
-    def detail(self, detail):
-        """Sets the detail of this Task.
-
-        任务详情。
-
-        :param detail: The detail of this Task.
-        :type detail: str
-        """
-        self._detail = detail
 
     @property
     def index(self):
@@ -146,7 +102,7 @@ class Task:
     def name(self):
         """Gets the name of this Task.
 
-        任务名称
+        任务名称。
 
         :return: The name of this Task.
         :rtype: str
@@ -157,7 +113,7 @@ class Task:
     def name(self, name):
         """Sets the name of this Task.
 
-        任务名称
+        任务名称。
 
         :param name: The name of this Task.
         :type name: str
@@ -168,7 +124,7 @@ class Task:
     def status(self):
         """Gets the status of this Task.
 
-        任务状态
+        任务状态。
 
         :return: The status of this Task.
         :rtype: str
@@ -179,7 +135,7 @@ class Task:
     def status(self, status):
         """Sets the status of this Task.
 
-        任务状态
+        任务状态。
 
         :param status: The status of this Task.
         :type status: str
@@ -187,10 +143,54 @@ class Task:
         self._status = status
 
     @property
+    def detail(self):
+        """Gets the detail of this Task.
+
+        任务详情。
+
+        :return: The detail of this Task.
+        :rtype: str
+        """
+        return self._detail
+
+    @detail.setter
+    def detail(self, detail):
+        """Sets the detail of this Task.
+
+        任务详情。
+
+        :param detail: The detail of this Task.
+        :type detail: str
+        """
+        self._detail = detail
+
+    @property
+    def created_at(self):
+        """Gets the created_at of this Task.
+
+        创建时间。
+
+        :return: The created_at of this Task.
+        :rtype: str
+        """
+        return self._created_at
+
+    @created_at.setter
+    def created_at(self, created_at):
+        """Sets the created_at of this Task.
+
+        创建时间。
+
+        :param created_at: The created_at of this Task.
+        :type created_at: str
+        """
+        self._created_at = created_at
+
+    @property
     def updated_at(self):
         """Gets the updated_at of this Task.
 
-        修改时间
+        更新时间。
 
         :return: The updated_at of this Task.
         :rtype: str
@@ -201,7 +201,7 @@ class Task:
     def updated_at(self, updated_at):
         """Sets the updated_at of this Task.
 
-        修改时间
+        更新时间。
 
         :param updated_at: The updated_at of this Task.
         :type updated_at: str

@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import CssClient
 from huaweicloudsdkcss.v2.css_client import CssClient
 from huaweicloudsdkcss.v2.css_async_client import CssAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkcss.v2.model.create_cluster_backup_strategy_body import CreateClusterBackupStrategyBody
 from huaweicloudsdkcss.v2.model.create_cluster_body import CreateClusterBody
 from huaweicloudsdkcss.v2.model.create_cluster_datastore_body import CreateClusterDatastoreBody

@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import MsgsmsClient
 from huaweicloudsdkmsgsms.v2.msgsms_client import MsgsmsClient
 from huaweicloudsdkmsgsms.v2.msgsms_async_client import MsgsmsAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkmsgsms.v2.model.api_template_variable import ApiTemplateVariable
 from huaweicloudsdkmsgsms.v2.model.create_app_request import CreateAppRequest
 from huaweicloudsdkmsgsms.v2.model.create_app_response import CreateAppResponse

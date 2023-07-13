@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import BssintlClient
 from huaweicloudsdkbssintl.v2.bssintl_client import BssintlClient
 from huaweicloudsdkbssintl.v2.bssintl_async_client import BssintlAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkbssintl.v2.model.account_balance_v3 import AccountBalanceV3
 from huaweicloudsdkbssintl.v2.model.account_manager import AccountManager
 from huaweicloudsdkbssintl.v2.model.amount_infomation_v2 import AmountInfomationV2

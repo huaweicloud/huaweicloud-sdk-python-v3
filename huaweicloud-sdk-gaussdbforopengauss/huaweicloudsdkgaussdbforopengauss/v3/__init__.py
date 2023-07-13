@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import GaussDBforopenGaussClient
 from huaweicloudsdkgaussdbforopengauss.v3.gaussdbforopengauss_client import GaussDBforopenGaussClient
 from huaweicloudsdkgaussdbforopengauss.v3.gaussdbforopengauss_async_client import GaussDBforopenGaussAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkgaussdbforopengauss.v3.model.add_instance_tags_request import AddInstanceTagsRequest
 from huaweicloudsdkgaussdbforopengauss.v3.model.add_instance_tags_response import AddInstanceTagsResponse
 from huaweicloudsdkgaussdbforopengauss.v3.model.add_tags_request_body import AddTagsRequestBody

@@ -86,15 +86,7 @@ class AsAsyncClient(Client):
     def batch_add_scaling_instances_async(self, request):
         """批量添加实例
 
-        批量移出伸缩组中的实例或批量添加伸缩组外的实例。批量对伸缩组中的实例设置或取消其实例保护属性。批量将伸缩组中的实例转入或移出备用状态。
-        说明：
-        - 单次最多批量操作实例个数为10。批量添加后实例数不能大于伸缩组的最大实例数，批量移出后实例数不能小于伸缩组的最小实例数。
-        - 当伸缩组处于INSERVICE状态且没有伸缩活动时，才能添加实例。
-        - 当伸缩组没有伸缩活动时，才能移出实例。
-        - 向伸缩组中添加实例时，必须保证实例所在的可用区包含于伸缩组的可用区内。
-        - 实例处于INSERVICE状态时才可以进行移出、设置或取消实例保护属性等操作。
-        - 当伸缩组发生自动缩容活动时，设置了实例保护的实例不会被移出伸缩组。
-        - 批量移出弹性伸缩组中的实例时，若该实例加入伸缩组时绑定的监听器和伸缩组本身的监听器相同，会解绑定实例和监听器。若该实例加入伸缩组时绑定的监听器和伸缩组本身的监听器不同，会保留实例和监听器的绑定关系。
+        批量移出伸缩组中的实例或批量添加伸缩组外的实例。批量对伸缩组中的实例设置或取消其实例保护属性。批量将伸缩组中的实例转入或移出备用状态。说明：- 单次最多批量操作实例个数为10。批量添加后实例数不能大于伸缩组的最大实例数，批量移出后实例数不能小于伸缩组的最小实例数。- 当伸缩组处于INSERVICE状态且没有伸缩活动时，才能添加实例。- 当伸缩组没有伸缩活动时，才能移出实例。- 向伸缩组中添加实例时，必须保证实例所在的可用区包含于伸缩组的可用区内。- 实例处于INSERVICE状态时才可以进行移出、设置或取消实例保护属性等操作。- 当伸缩组发生自动缩容活动时，设置了实例保护的实例不会被移出伸缩组。- 批量移出弹性伸缩组中的实例时，若该实例加入伸缩组时绑定的监听器和伸缩组本身的监听器相同，会解绑定实例和监听器。若该实例加入伸缩组时绑定的监听器和伸缩组本身的监听器不同，会保留实例和监听器的绑定关系。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -673,6 +665,65 @@ class AsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def create_group_scheduled_task_async(self, request):
+        """创建计划任务
+
+        创建计划任务
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateGroupScheduledTask
+        :type request: :class:`huaweicloudsdkas.v1.CreateGroupScheduledTaskRequest`
+        :rtype: :class:`huaweicloudsdkas.v1.CreateGroupScheduledTaskResponse`
+        """
+        return self._create_group_scheduled_task_with_http_info(request)
+
+    def _create_group_scheduled_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'scaling_group_id' in local_var_params:
+            path_params['scaling_group_id'] = local_var_params['scaling_group_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/autoscaling-api/v1/{project_id}/scaling-groups/{scaling_group_id}/scheduled-tasks',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateGroupScheduledTaskResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def create_lify_cycle_hook_async(self, request):
         """创建生命周期挂钩
 
@@ -1018,6 +1069,65 @@ class AsAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='CreateScalingTagInfoResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_group_scheduled_task_async(self, request):
+        """删除计划任务
+
+        删除计划任务
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteGroupScheduledTask
+        :type request: :class:`huaweicloudsdkas.v1.DeleteGroupScheduledTaskRequest`
+        :rtype: :class:`huaweicloudsdkas.v1.DeleteGroupScheduledTaskResponse`
+        """
+        return self._delete_group_scheduled_task_with_http_info(request)
+
+    def _delete_group_scheduled_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'scaling_group_id' in local_var_params:
+            path_params['scaling_group_id'] = local_var_params['scaling_group_id']
+        if 'scheduled_task_id' in local_var_params:
+            path_params['scheduled_task_id'] = local_var_params['scheduled_task_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/autoscaling-api/v1/{project_id}/scaling-groups/{scaling_group_id}/scheduled-tasks/{scheduled_task_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteGroupScheduledTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1488,6 +1598,67 @@ class AsAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ExecuteScalingPolicyResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_group_scheduled_tasks_async(self, request):
+        """查询计划任务列表
+
+        查询计划任务列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListGroupScheduledTasks
+        :type request: :class:`huaweicloudsdkas.v1.ListGroupScheduledTasksRequest`
+        :rtype: :class:`huaweicloudsdkas.v1.ListGroupScheduledTasksResponse`
+        """
+        return self._list_group_scheduled_tasks_with_http_info(request)
+
+    def _list_group_scheduled_tasks_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'scaling_group_id' in local_var_params:
+            path_params['scaling_group_id'] = local_var_params['scaling_group_id']
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/autoscaling-api/v1/{project_id}/scaling-groups/{scaling_group_id}/scheduled-tasks',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListGroupScheduledTasksResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -2887,6 +3058,67 @@ class AsAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ShowScalingPolicyResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_group_scheduled_task_async(self, request):
+        """更新计划任务
+
+        更新计划任务
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateGroupScheduledTask
+        :type request: :class:`huaweicloudsdkas.v1.UpdateGroupScheduledTaskRequest`
+        :rtype: :class:`huaweicloudsdkas.v1.UpdateGroupScheduledTaskResponse`
+        """
+        return self._update_group_scheduled_task_with_http_info(request)
+
+    def _update_group_scheduled_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'scaling_group_id' in local_var_params:
+            path_params['scaling_group_id'] = local_var_params['scaling_group_id']
+        if 'scheduled_task_id' in local_var_params:
+            path_params['scheduled_task_id'] = local_var_params['scheduled_task_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/autoscaling-api/v1/{project_id}/scaling-groups/{scaling_group_id}/scheduled-tasks/{scheduled_task_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateGroupScheduledTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

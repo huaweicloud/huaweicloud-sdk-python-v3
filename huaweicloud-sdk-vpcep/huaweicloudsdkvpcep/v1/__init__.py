@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import VpcepClient
 from huaweicloudsdkvpcep.v1.vpcep_client import VpcepClient
 from huaweicloudsdkvpcep.v1.vpcep_async_client import VpcepAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkvpcep.v1.model.accept_or_reject_endpoint_request import AcceptOrRejectEndpointRequest
 from huaweicloudsdkvpcep.v1.model.accept_or_reject_endpoint_request_body import AcceptOrRejectEndpointRequestBody
 from huaweicloudsdkvpcep.v1.model.accept_or_reject_endpoint_response import AcceptOrRejectEndpointResponse

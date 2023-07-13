@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import RmsClient
 from huaweicloudsdkrms.v1.rms_client import RmsClient
 from huaweicloudsdkrms.v1.rms_async_client import RmsAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkrms.v1.model.account_aggregation_source import AccountAggregationSource
 from huaweicloudsdkrms.v1.model.aggregate_compliance_detail_request import AggregateComplianceDetailRequest
 from huaweicloudsdkrms.v1.model.aggregate_discovered_resource_counts_request import AggregateDiscoveredResourceCountsRequest

@@ -27,7 +27,7 @@ class CaeAsyncClient(Client):
     def create_agency_async(self, request):
         """创建委托
 
-        本接口用于创建cae_trust委托
+        创建委托。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -81,21 +81,21 @@ class CaeAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-    def show_agency_async(self, request):
-        """获取委托
+    def list_agencies_async(self, request):
+        """获取委托列表
 
-        本接口用于获取cae_trust委托，如果委托不存在则创建委托
+        获取委托列表。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
 
-        :param request: Request instance for ShowAgency
-        :type request: :class:`huaweicloudsdkcae.v1.ShowAgencyRequest`
-        :rtype: :class:`huaweicloudsdkcae.v1.ShowAgencyResponse`
+        :param request: Request instance for ListAgencies
+        :type request: :class:`huaweicloudsdkcae.v1.ListAgenciesRequest`
+        :rtype: :class:`huaweicloudsdkcae.v1.ListAgenciesResponse`
         """
-        return self._show_agency_with_http_info(request)
+        return self._list_agencies_with_http_info(request)
 
-    def _show_agency_with_http_info(self, request):
+    def _list_agencies_with_http_info(self, request):
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -130,7 +130,7 @@ class CaeAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             cname=cname,
-            response_type='ShowAgencyResponse',
+            response_type='ListAgenciesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -139,7 +139,7 @@ class CaeAsyncClient(Client):
     def create_application_async(self, request):
         """创建应用
 
-        本接口用于创建一个应用
+        创建应用。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -162,10 +162,10 @@ class CaeAsyncClient(Client):
         query_params = []
 
         header_params = {}
-        if 'x_environment_id' in local_var_params:
-            header_params['X-Environment-ID'] = local_var_params['x_environment_id']
         if 'x_enterprise_project_id' in local_var_params:
             header_params['X-Enterprise-Project-ID'] = local_var_params['x_enterprise_project_id']
+        if 'x_environment_id' in local_var_params:
+            header_params['X-Environment-ID'] = local_var_params['x_environment_id']
 
         form_params = {}
 
@@ -200,7 +200,7 @@ class CaeAsyncClient(Client):
     def delete_application_async(self, request):
         """删除应用
 
-        本接口用于删除指定应用
+        删除应用。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -225,10 +225,10 @@ class CaeAsyncClient(Client):
         query_params = []
 
         header_params = {}
-        if 'x_environment_id' in local_var_params:
-            header_params['X-Environment-ID'] = local_var_params['x_environment_id']
         if 'x_enterprise_project_id' in local_var_params:
             header_params['X-Enterprise-Project-ID'] = local_var_params['x_enterprise_project_id']
+        if 'x_environment_id' in local_var_params:
+            header_params['X-Environment-ID'] = local_var_params['x_environment_id']
 
         form_params = {}
 
@@ -261,7 +261,7 @@ class CaeAsyncClient(Client):
     def list_applications_async(self, request):
         """获取应用列表
 
-        本接口用于获取当前环境下的应用列表
+        获取应用列表。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -284,10 +284,10 @@ class CaeAsyncClient(Client):
         query_params = []
 
         header_params = {}
-        if 'x_environment_id' in local_var_params:
-            header_params['X-Environment-ID'] = local_var_params['x_environment_id']
         if 'x_enterprise_project_id' in local_var_params:
             header_params['X-Enterprise-Project-ID'] = local_var_params['x_enterprise_project_id']
+        if 'x_environment_id' in local_var_params:
+            header_params['X-Environment-ID'] = local_var_params['x_environment_id']
 
         form_params = {}
 
@@ -318,9 +318,9 @@ class CaeAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def show_application_async(self, request):
-        """获取应用
+        """获取应用详情
 
-        本接口用于获取指定应用详情
+        获取应用详情。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -345,10 +345,10 @@ class CaeAsyncClient(Client):
         query_params = []
 
         header_params = {}
-        if 'x_environment_id' in local_var_params:
-            header_params['X-Environment-ID'] = local_var_params['x_environment_id']
         if 'x_enterprise_project_id' in local_var_params:
             header_params['X-Enterprise-Project-ID'] = local_var_params['x_enterprise_project_id']
+        if 'x_environment_id' in local_var_params:
+            header_params['X-Environment-ID'] = local_var_params['x_environment_id']
 
         form_params = {}
 
@@ -378,10 +378,254 @@ class CaeAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def create_certificate_async(self, request):
+        """创建证书
+
+        创建证书。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateCertificate
+        :type request: :class:`huaweicloudsdkcae.v1.CreateCertificateRequest`
+        :rtype: :class:`huaweicloudsdkcae.v1.CreateCertificateResponse`
+        """
+        return self._create_certificate_with_http_info(request)
+
+    def _create_certificate_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_enterprise_project_id' in local_var_params:
+            header_params['X-Enterprise-Project-ID'] = local_var_params['x_enterprise_project_id']
+        if 'x_environment_id' in local_var_params:
+            header_params['X-Environment-ID'] = local_var_params['x_environment_id']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/cae/certificates',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateCertificateResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_certificate_async(self, request):
+        """删除证书
+
+        删除证书。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteCertificate
+        :type request: :class:`huaweicloudsdkcae.v1.DeleteCertificateRequest`
+        :rtype: :class:`huaweicloudsdkcae.v1.DeleteCertificateResponse`
+        """
+        return self._delete_certificate_with_http_info(request)
+
+    def _delete_certificate_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'certificate_id' in local_var_params:
+            path_params['certificate_id'] = local_var_params['certificate_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_enterprise_project_id' in local_var_params:
+            header_params['X-Enterprise-Project-ID'] = local_var_params['x_enterprise_project_id']
+        if 'x_environment_id' in local_var_params:
+            header_params['X-Environment-ID'] = local_var_params['x_environment_id']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/cae/certificates/{certificate_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteCertificateResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_certificates_async(self, request):
+        """获取证书列表
+
+        获取证书列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListCertificates
+        :type request: :class:`huaweicloudsdkcae.v1.ListCertificatesRequest`
+        :rtype: :class:`huaweicloudsdkcae.v1.ListCertificatesResponse`
+        """
+        return self._list_certificates_with_http_info(request)
+
+    def _list_certificates_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_enterprise_project_id' in local_var_params:
+            header_params['X-Enterprise-Project-ID'] = local_var_params['x_enterprise_project_id']
+        if 'x_environment_id' in local_var_params:
+            header_params['X-Environment-ID'] = local_var_params['x_environment_id']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/cae/certificates',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListCertificatesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_certificate_async(self, request):
+        """修改证书
+
+        修改证书。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateCertificate
+        :type request: :class:`huaweicloudsdkcae.v1.UpdateCertificateRequest`
+        :rtype: :class:`huaweicloudsdkcae.v1.UpdateCertificateResponse`
+        """
+        return self._update_certificate_with_http_info(request)
+
+    def _update_certificate_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'certificate_id' in local_var_params:
+            path_params['certificate_id'] = local_var_params['certificate_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_enterprise_project_id' in local_var_params:
+            header_params['X-Enterprise-Project-ID'] = local_var_params['x_enterprise_project_id']
+        if 'x_environment_id' in local_var_params:
+            header_params['X-Environment-ID'] = local_var_params['x_environment_id']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/cae/certificates/{certificate_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateCertificateResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def create_component_async(self, request):
         """创建组件
 
-        本接口用于创建一个组件，组件是CAE的最小部署单位，支持将用户的源码，部署包，镜像等资源部署到组件上
+        创建组件。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -406,10 +650,10 @@ class CaeAsyncClient(Client):
         query_params = []
 
         header_params = {}
-        if 'x_environment_id' in local_var_params:
-            header_params['X-Environment-ID'] = local_var_params['x_environment_id']
         if 'x_enterprise_project_id' in local_var_params:
             header_params['X-Enterprise-Project-ID'] = local_var_params['x_enterprise_project_id']
+        if 'x_environment_id' in local_var_params:
+            header_params['X-Environment-ID'] = local_var_params['x_environment_id']
 
         form_params = {}
 
@@ -444,7 +688,7 @@ class CaeAsyncClient(Client):
     def delete_component_async(self, request):
         """删除组件
 
-        本接口用于删除指定的组件，组件是CAE的最小部署单位，支持将用户的源码，部署包，镜像等资源部署到组件上
+        删除组件。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -463,18 +707,18 @@ class CaeAsyncClient(Client):
         collection_formats = {}
 
         path_params = {}
-        if 'component_id' in local_var_params:
-            path_params['component_id'] = local_var_params['component_id']
         if 'application_id' in local_var_params:
             path_params['application_id'] = local_var_params['application_id']
+        if 'component_id' in local_var_params:
+            path_params['component_id'] = local_var_params['component_id']
 
         query_params = []
 
         header_params = {}
-        if 'x_environment_id' in local_var_params:
-            header_params['X-Environment-ID'] = local_var_params['x_environment_id']
         if 'x_enterprise_project_id' in local_var_params:
             header_params['X-Enterprise-Project-ID'] = local_var_params['x_enterprise_project_id']
+        if 'x_environment_id' in local_var_params:
+            header_params['X-Environment-ID'] = local_var_params['x_environment_id']
 
         form_params = {}
 
@@ -507,7 +751,7 @@ class CaeAsyncClient(Client):
     def execute_action_async(self, request):
         """操作组件
 
-        本接口用于对组件执行指定操作，如部署、升级、重启、停止、启动、伸缩、重试、配置、回滚
+        对组件执行指定操作，如部署、升级、重启、停止、启动、伸缩、配置、回滚。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -526,18 +770,18 @@ class CaeAsyncClient(Client):
         collection_formats = {}
 
         path_params = {}
-        if 'component_id' in local_var_params:
-            path_params['component_id'] = local_var_params['component_id']
         if 'application_id' in local_var_params:
             path_params['application_id'] = local_var_params['application_id']
+        if 'component_id' in local_var_params:
+            path_params['component_id'] = local_var_params['component_id']
 
         query_params = []
 
         header_params = {}
-        if 'x_environment_id' in local_var_params:
-            header_params['X-Environment-ID'] = local_var_params['x_environment_id']
         if 'x_enterprise_project_id' in local_var_params:
             header_params['X-Enterprise-Project-ID'] = local_var_params['x_enterprise_project_id']
+        if 'x_environment_id' in local_var_params:
+            header_params['X-Environment-ID'] = local_var_params['x_environment_id']
 
         form_params = {}
 
@@ -569,10 +813,136 @@ class CaeAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_component_events_async(self, request):
+        """获取组件事件列表
+
+        获取组件事件列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListComponentEvents
+        :type request: :class:`huaweicloudsdkcae.v1.ListComponentEventsRequest`
+        :rtype: :class:`huaweicloudsdkcae.v1.ListComponentEventsResponse`
+        """
+        return self._list_component_events_with_http_info(request)
+
+    def _list_component_events_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'application_id' in local_var_params:
+            path_params['application_id'] = local_var_params['application_id']
+        if 'component_id' in local_var_params:
+            path_params['component_id'] = local_var_params['component_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_enterprise_project_id' in local_var_params:
+            header_params['X-Enterprise-Project-ID'] = local_var_params['x_enterprise_project_id']
+        if 'x_environment_id' in local_var_params:
+            header_params['X-Environment-ID'] = local_var_params['x_environment_id']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/cae/applications/{application_id}/components/{component_id}/events',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListComponentEventsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_component_instances_async(self, request):
+        """获取组件实例列表
+
+        获取组件实例列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListComponentInstances
+        :type request: :class:`huaweicloudsdkcae.v1.ListComponentInstancesRequest`
+        :rtype: :class:`huaweicloudsdkcae.v1.ListComponentInstancesResponse`
+        """
+        return self._list_component_instances_with_http_info(request)
+
+    def _list_component_instances_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'application_id' in local_var_params:
+            path_params['application_id'] = local_var_params['application_id']
+        if 'component_id' in local_var_params:
+            path_params['component_id'] = local_var_params['component_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_enterprise_project_id' in local_var_params:
+            header_params['X-Enterprise-Project-ID'] = local_var_params['x_enterprise_project_id']
+        if 'x_environment_id' in local_var_params:
+            header_params['X-Environment-ID'] = local_var_params['x_environment_id']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/cae/applications/{application_id}/components/{component_id}/instances',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListComponentInstancesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_component_snapshots_async(self, request):
         """获取组件快照列表
 
-        本接口用于获取组件快照版本
+        获取组件快照列表。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -591,18 +961,18 @@ class CaeAsyncClient(Client):
         collection_formats = {}
 
         path_params = {}
-        if 'component_id' in local_var_params:
-            path_params['component_id'] = local_var_params['component_id']
         if 'application_id' in local_var_params:
             path_params['application_id'] = local_var_params['application_id']
+        if 'component_id' in local_var_params:
+            path_params['component_id'] = local_var_params['component_id']
 
         query_params = []
 
         header_params = {}
-        if 'x_environment_id' in local_var_params:
-            header_params['X-Environment-ID'] = local_var_params['x_environment_id']
         if 'x_enterprise_project_id' in local_var_params:
             header_params['X-Enterprise-Project-ID'] = local_var_params['x_enterprise_project_id']
+        if 'x_environment_id' in local_var_params:
+            header_params['X-Environment-ID'] = local_var_params['x_environment_id']
 
         form_params = {}
 
@@ -635,7 +1005,7 @@ class CaeAsyncClient(Client):
     def list_components_async(self, request):
         """获取组件列表
 
-        本接口用于获取组件列表，组件是CAE的最小部署单位，支持将用户的源码，部署包，镜像等资源部署到组件上
+        获取组件列表。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -664,10 +1034,10 @@ class CaeAsyncClient(Client):
             query_params.append(('offset', local_var_params['offset']))
 
         header_params = {}
-        if 'x_environment_id' in local_var_params:
-            header_params['X-Environment-ID'] = local_var_params['x_environment_id']
         if 'x_enterprise_project_id' in local_var_params:
             header_params['X-Enterprise-Project-ID'] = local_var_params['x_enterprise_project_id']
+        if 'x_environment_id' in local_var_params:
+            header_params['X-Environment-ID'] = local_var_params['x_environment_id']
 
         form_params = {}
 
@@ -697,135 +1067,10 @@ class CaeAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-    def list_events_async(self, request):
-        """获取事件列表
-
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ListEvents
-        :type request: :class:`huaweicloudsdkcae.v1.ListEventsRequest`
-        :rtype: :class:`huaweicloudsdkcae.v1.ListEventsResponse`
-        """
-        return self._list_events_with_http_info(request)
-
-    def _list_events_with_http_info(self, request):
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'component_id' in local_var_params:
-            path_params['component_id'] = local_var_params['component_id']
-        if 'application_id' in local_var_params:
-            path_params['application_id'] = local_var_params['application_id']
-
-        query_params = []
-
-        header_params = {}
-        if 'x_environment_id' in local_var_params:
-            header_params['X-Environment-ID'] = local_var_params['x_environment_id']
-        if 'x_enterprise_project_id' in local_var_params:
-            header_params['X-Enterprise-Project-ID'] = local_var_params['x_enterprise_project_id']
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v1/{project_id}/cae/applications/{application_id}/components/{component_id}/events',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListEventsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-    def list_instances_async(self, request):
-        """获取组件实例列表
-
-        本接口用于获取组件实例列表
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ListInstances
-        :type request: :class:`huaweicloudsdkcae.v1.ListInstancesRequest`
-        :rtype: :class:`huaweicloudsdkcae.v1.ListInstancesResponse`
-        """
-        return self._list_instances_with_http_info(request)
-
-    def _list_instances_with_http_info(self, request):
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'component_id' in local_var_params:
-            path_params['component_id'] = local_var_params['component_id']
-        if 'application_id' in local_var_params:
-            path_params['application_id'] = local_var_params['application_id']
-
-        query_params = []
-
-        header_params = {}
-        if 'x_environment_id' in local_var_params:
-            header_params['X-Environment-ID'] = local_var_params['x_environment_id']
-        if 'x_enterprise_project_id' in local_var_params:
-            header_params['X-Enterprise-Project-ID'] = local_var_params['x_enterprise_project_id']
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v1/{project_id}/cae/applications/{application_id}/components/{component_id}/instances',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListInstancesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
     def show_component_async(self, request):
-        """获取组件
+        """获取组件详情
 
-        本接口用于获取指定的组件，组件是CAE的最小部署单位，支持将用户的源码，部署包，镜像等资源部署到组件上
+        获取组件详情。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -844,18 +1089,18 @@ class CaeAsyncClient(Client):
         collection_formats = {}
 
         path_params = {}
-        if 'component_id' in local_var_params:
-            path_params['component_id'] = local_var_params['component_id']
         if 'application_id' in local_var_params:
             path_params['application_id'] = local_var_params['application_id']
+        if 'component_id' in local_var_params:
+            path_params['component_id'] = local_var_params['component_id']
 
         query_params = []
 
         header_params = {}
-        if 'x_environment_id' in local_var_params:
-            header_params['X-Environment-ID'] = local_var_params['x_environment_id']
         if 'x_enterprise_project_id' in local_var_params:
             header_params['X-Enterprise-Project-ID'] = local_var_params['x_enterprise_project_id']
+        if 'x_environment_id' in local_var_params:
+            header_params['X-Environment-ID'] = local_var_params['x_environment_id']
 
         form_params = {}
 
@@ -888,7 +1133,7 @@ class CaeAsyncClient(Client):
     def update_component_async(self, request):
         """更新组件
 
-        本接口用于更新指定的组件，组件是CAE的最小部署单位，支持将用户的源码，部署包，镜像等资源部署到组件上
+        更新组件。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -907,18 +1152,18 @@ class CaeAsyncClient(Client):
         collection_formats = {}
 
         path_params = {}
-        if 'component_id' in local_var_params:
-            path_params['component_id'] = local_var_params['component_id']
         if 'application_id' in local_var_params:
             path_params['application_id'] = local_var_params['application_id']
+        if 'component_id' in local_var_params:
+            path_params['component_id'] = local_var_params['component_id']
 
         query_params = []
 
         header_params = {}
-        if 'x_environment_id' in local_var_params:
-            header_params['X-Environment-ID'] = local_var_params['x_environment_id']
         if 'x_enterprise_project_id' in local_var_params:
             header_params['X-Enterprise-Project-ID'] = local_var_params['x_enterprise_project_id']
+        if 'x_environment_id' in local_var_params:
+            header_params['X-Environment-ID'] = local_var_params['x_environment_id']
 
         form_params = {}
 
@@ -953,7 +1198,7 @@ class CaeAsyncClient(Client):
     def create_component_configuration_async(self, request):
         """创建组件配置
 
-        本接口用于创建组件配置
+        创建组件配置。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -972,18 +1217,18 @@ class CaeAsyncClient(Client):
         collection_formats = {}
 
         path_params = {}
-        if 'component_id' in local_var_params:
-            path_params['component_id'] = local_var_params['component_id']
         if 'application_id' in local_var_params:
             path_params['application_id'] = local_var_params['application_id']
+        if 'component_id' in local_var_params:
+            path_params['component_id'] = local_var_params['component_id']
 
         query_params = []
 
         header_params = {}
-        if 'x_environment_id' in local_var_params:
-            header_params['X-Environment-ID'] = local_var_params['x_environment_id']
         if 'x_enterprise_project_id' in local_var_params:
             header_params['X-Enterprise-Project-ID'] = local_var_params['x_enterprise_project_id']
+        if 'x_environment_id' in local_var_params:
+            header_params['X-Environment-ID'] = local_var_params['x_environment_id']
 
         form_params = {}
 
@@ -1018,6 +1263,7 @@ class CaeAsyncClient(Client):
     def delete_component_configuration_async(self, request):
         """删除组件配置
 
+        删除组件配置。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1036,18 +1282,18 @@ class CaeAsyncClient(Client):
         collection_formats = {}
 
         path_params = {}
-        if 'component_id' in local_var_params:
-            path_params['component_id'] = local_var_params['component_id']
         if 'application_id' in local_var_params:
             path_params['application_id'] = local_var_params['application_id']
+        if 'component_id' in local_var_params:
+            path_params['component_id'] = local_var_params['component_id']
 
         query_params = []
 
         header_params = {}
-        if 'x_environment_id' in local_var_params:
-            header_params['X-Environment-ID'] = local_var_params['x_environment_id']
         if 'x_enterprise_project_id' in local_var_params:
             header_params['X-Enterprise-Project-ID'] = local_var_params['x_enterprise_project_id']
+        if 'x_environment_id' in local_var_params:
+            header_params['X-Environment-ID'] = local_var_params['x_environment_id']
 
         form_params = {}
 
@@ -1077,21 +1323,21 @@ class CaeAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-    def list_configurations_async(self, request):
+    def list_component_configurations_async(self, request):
         """获取组件配置列表
 
-        本接口用于获取组件配置
+        获取组件配置列表。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
 
-        :param request: Request instance for ListConfigurations
-        :type request: :class:`huaweicloudsdkcae.v1.ListConfigurationsRequest`
-        :rtype: :class:`huaweicloudsdkcae.v1.ListConfigurationsResponse`
+        :param request: Request instance for ListComponentConfigurations
+        :type request: :class:`huaweicloudsdkcae.v1.ListComponentConfigurationsRequest`
+        :rtype: :class:`huaweicloudsdkcae.v1.ListComponentConfigurationsResponse`
         """
-        return self._list_configurations_with_http_info(request)
+        return self._list_component_configurations_with_http_info(request)
 
-    def _list_configurations_with_http_info(self, request):
+    def _list_component_configurations_with_http_info(self, request):
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1099,18 +1345,18 @@ class CaeAsyncClient(Client):
         collection_formats = {}
 
         path_params = {}
-        if 'component_id' in local_var_params:
-            path_params['component_id'] = local_var_params['component_id']
         if 'application_id' in local_var_params:
             path_params['application_id'] = local_var_params['application_id']
+        if 'component_id' in local_var_params:
+            path_params['component_id'] = local_var_params['component_id']
 
         query_params = []
 
         header_params = {}
-        if 'x_environment_id' in local_var_params:
-            header_params['X-Environment-ID'] = local_var_params['x_environment_id']
         if 'x_enterprise_project_id' in local_var_params:
             header_params['X-Enterprise-Project-ID'] = local_var_params['x_enterprise_project_id']
+        if 'x_environment_id' in local_var_params:
+            header_params['X-Environment-ID'] = local_var_params['x_environment_id']
 
         form_params = {}
 
@@ -1134,7 +1380,188 @@ class CaeAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             cname=cname,
-            response_type='ListConfigurationsResponse',
+            response_type='ListComponentConfigurationsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_domain_async(self, request):
+        """创建域名
+
+        创建域名。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateDomain
+        :type request: :class:`huaweicloudsdkcae.v1.CreateDomainRequest`
+        :rtype: :class:`huaweicloudsdkcae.v1.CreateDomainResponse`
+        """
+        return self._create_domain_with_http_info(request)
+
+    def _create_domain_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_enterprise_project_id' in local_var_params:
+            header_params['X-Enterprise-Project-ID'] = local_var_params['x_enterprise_project_id']
+        if 'x_environment_id' in local_var_params:
+            header_params['X-Environment-ID'] = local_var_params['x_environment_id']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/cae/domains',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateDomainResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_domain_async(self, request):
+        """删除域名
+
+        删除域名。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteDomain
+        :type request: :class:`huaweicloudsdkcae.v1.DeleteDomainRequest`
+        :rtype: :class:`huaweicloudsdkcae.v1.DeleteDomainResponse`
+        """
+        return self._delete_domain_with_http_info(request)
+
+    def _delete_domain_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'domain_id' in local_var_params:
+            path_params['domain_id'] = local_var_params['domain_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_enterprise_project_id' in local_var_params:
+            header_params['X-Enterprise-Project-ID'] = local_var_params['x_enterprise_project_id']
+        if 'x_environment_id' in local_var_params:
+            header_params['X-Environment-ID'] = local_var_params['x_environment_id']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/cae/domains/{domain_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteDomainResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_domains_async(self, request):
+        """获取域名列表
+
+        获取域名列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListDomains
+        :type request: :class:`huaweicloudsdkcae.v1.ListDomainsRequest`
+        :rtype: :class:`huaweicloudsdkcae.v1.ListDomainsResponse`
+        """
+        return self._list_domains_with_http_info(request)
+
+    def _list_domains_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_enterprise_project_id' in local_var_params:
+            header_params['X-Enterprise-Project-ID'] = local_var_params['x_enterprise_project_id']
+        if 'x_environment_id' in local_var_params:
+            header_params['X-Environment-ID'] = local_var_params['x_environment_id']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/cae/domains',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListDomainsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1143,7 +1570,7 @@ class CaeAsyncClient(Client):
     def create_environment_async(self, request):
         """创建环境
 
-        本接口用于创建一个环境，环境是CAE定义的一个资源维度，所有的用户组件都放在环境下
+        创建环境。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1202,7 +1629,7 @@ class CaeAsyncClient(Client):
     def delete_environment_async(self, request):
         """删除环境
 
-        本接口用于删除环境，暂未开放。
+        删除环境。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1261,7 +1688,7 @@ class CaeAsyncClient(Client):
     def list_environments_async(self, request):
         """获取环境列表
 
-        本接口用于获取当前租户环境信息，环境是CAE定义的一个资源维度，所有的用户组件都放在环境下
+        获取环境列表。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1318,7 +1745,7 @@ class CaeAsyncClient(Client):
     def retry_job_async(self, request):
         """重试任务
 
-        本接口用于重试任务
+        重试任务。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1343,6 +1770,10 @@ class CaeAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_enterprise_project_id' in local_var_params:
+            header_params['X-Enterprise-Project-ID'] = local_var_params['x_enterprise_project_id']
+        if 'x_environment_id' in local_var_params:
+            header_params['X-Environment-ID'] = local_var_params['x_environment_id']
 
         form_params = {}
 
@@ -1375,7 +1806,7 @@ class CaeAsyncClient(Client):
     def show_job_async(self, request):
         """获取任务详情
 
-        本接口用于获取任务详情
+        获取任务详情。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1402,6 +1833,8 @@ class CaeAsyncClient(Client):
         header_params = {}
         if 'x_enterprise_project_id' in local_var_params:
             header_params['X-Enterprise-Project-ID'] = local_var_params['x_enterprise_project_id']
+        if 'x_environment_id' in local_var_params:
+            header_params['X-Environment-ID'] = local_var_params['x_environment_id']
 
         form_params = {}
 
@@ -1432,9 +1865,9 @@ class CaeAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def create_volume_async(self, request):
-        """创建卷
+        """授权云存储
 
-        本接口用于创建卷
+        授权云存储。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1457,10 +1890,10 @@ class CaeAsyncClient(Client):
         query_params = []
 
         header_params = {}
-        if 'x_environment_id' in local_var_params:
-            header_params['X-Environment-ID'] = local_var_params['x_environment_id']
         if 'x_enterprise_project_id' in local_var_params:
             header_params['X-Enterprise-Project-ID'] = local_var_params['x_enterprise_project_id']
+        if 'x_environment_id' in local_var_params:
+            header_params['X-Environment-ID'] = local_var_params['x_environment_id']
 
         form_params = {}
 
@@ -1493,9 +1926,9 @@ class CaeAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def delete_volume_async(self, request):
-        """删除卷
+        """解绑云存储
 
-        本接口用于创建卷
+        解绑云存储。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1520,10 +1953,10 @@ class CaeAsyncClient(Client):
         query_params = []
 
         header_params = {}
-        if 'x_environment_id' in local_var_params:
-            header_params['X-Environment-ID'] = local_var_params['x_environment_id']
         if 'x_enterprise_project_id' in local_var_params:
             header_params['X-Enterprise-Project-ID'] = local_var_params['x_enterprise_project_id']
+        if 'x_environment_id' in local_var_params:
+            header_params['X-Environment-ID'] = local_var_params['x_environment_id']
 
         form_params = {}
 
@@ -1554,9 +1987,9 @@ class CaeAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def list_volumes_async(self, request):
-        """获取卷列表
+        """获取云存储列表
 
-        本接口用于获取卷列表
+        获取云存储列表。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1581,10 +2014,10 @@ class CaeAsyncClient(Client):
             query_params.append(('resource_type', local_var_params['resource_type']))
 
         header_params = {}
-        if 'x_environment_id' in local_var_params:
-            header_params['X-Environment-ID'] = local_var_params['x_environment_id']
         if 'x_enterprise_project_id' in local_var_params:
             header_params['X-Enterprise-Project-ID'] = local_var_params['x_enterprise_project_id']
+        if 'x_environment_id' in local_var_params:
+            header_params['X-Environment-ID'] = local_var_params['x_environment_id']
 
         form_params = {}
 
@@ -1609,6 +2042,311 @@ class CaeAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ListVolumesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_timer_rule_async(self, request):
+        """创建定时启停任务
+
+        创建定时启停任务。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateTimerRule
+        :type request: :class:`huaweicloudsdkcae.v1.CreateTimerRuleRequest`
+        :rtype: :class:`huaweicloudsdkcae.v1.CreateTimerRuleResponse`
+        """
+        return self._create_timer_rule_with_http_info(request)
+
+    def _create_timer_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_enterprise_project_id' in local_var_params:
+            header_params['X-Enterprise-Project-ID'] = local_var_params['x_enterprise_project_id']
+        if 'x_environment_id' in local_var_params:
+            header_params['X-Environment-ID'] = local_var_params['x_environment_id']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/cae/timer-rules',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateTimerRuleResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_timer_rule_async(self, request):
+        """删除定时启停规则
+
+        删除定时启停规则。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteTimerRule
+        :type request: :class:`huaweicloudsdkcae.v1.DeleteTimerRuleRequest`
+        :rtype: :class:`huaweicloudsdkcae.v1.DeleteTimerRuleResponse`
+        """
+        return self._delete_timer_rule_with_http_info(request)
+
+    def _delete_timer_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'timer_rule_id' in local_var_params:
+            path_params['timer_rule_id'] = local_var_params['timer_rule_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_enterprise_project_id' in local_var_params:
+            header_params['X-Enterprise-Project-ID'] = local_var_params['x_enterprise_project_id']
+        if 'x_environment_id' in local_var_params:
+            header_params['X-Environment-ID'] = local_var_params['x_environment_id']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/cae/timer-rules/{timer_rule_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteTimerRuleResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_timer_rules_async(self, request):
+        """获取定时启停规则列表
+
+        获取定时启停规则列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListTimerRules
+        :type request: :class:`huaweicloudsdkcae.v1.ListTimerRulesRequest`
+        :rtype: :class:`huaweicloudsdkcae.v1.ListTimerRulesResponse`
+        """
+        return self._list_timer_rules_with_http_info(request)
+
+    def _list_timer_rules_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_enterprise_project_id' in local_var_params:
+            header_params['X-Enterprise-Project-ID'] = local_var_params['x_enterprise_project_id']
+        if 'x_environment_id' in local_var_params:
+            header_params['X-Environment-ID'] = local_var_params['x_environment_id']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/cae/timer-rules',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListTimerRulesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_execution_result_async(self, request):
+        """获取上次定时启停规则的执行情况
+
+        获取上次定时启停规则的执行情况。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowExecutionResult
+        :type request: :class:`huaweicloudsdkcae.v1.ShowExecutionResultRequest`
+        :rtype: :class:`huaweicloudsdkcae.v1.ShowExecutionResultResponse`
+        """
+        return self._show_execution_result_with_http_info(request)
+
+    def _show_execution_result_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'timer_rule_id' in local_var_params:
+            path_params['timer_rule_id'] = local_var_params['timer_rule_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_enterprise_project_id' in local_var_params:
+            header_params['X-Enterprise-Project-ID'] = local_var_params['x_enterprise_project_id']
+        if 'x_environment_id' in local_var_params:
+            header_params['X-Environment-ID'] = local_var_params['x_environment_id']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/cae/timer-rules/{timer_rule_id}/execution-results',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowExecutionResultResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_timer_rule_async(self, request):
+        """修改定时启停规则
+
+        修改定时启停规则。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateTimerRule
+        :type request: :class:`huaweicloudsdkcae.v1.UpdateTimerRuleRequest`
+        :rtype: :class:`huaweicloudsdkcae.v1.UpdateTimerRuleResponse`
+        """
+        return self._update_timer_rule_with_http_info(request)
+
+    def _update_timer_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'timer_rule_id' in local_var_params:
+            path_params['timer_rule_id'] = local_var_params['timer_rule_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_enterprise_project_id' in local_var_params:
+            header_params['X-Enterprise-Project-ID'] = local_var_params['x_enterprise_project_id']
+        if 'x_environment_id' in local_var_params:
+            header_params['X-Environment-ID'] = local_var_params['x_environment_id']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/cae/timer-rules/{timer_rule_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateTimerRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

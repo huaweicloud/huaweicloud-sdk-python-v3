@@ -34,11 +34,11 @@ class ListVolumesResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param api_version: API版本。
+        :param api_version: API版本，固定值“v1”，该值不可修改。
         :type api_version: str
-        :param kind: 资源种类。
+        :param kind: API类型，固定值“Volume”，该值不可修改。
         :type kind: str
-        :param items: 数据卷列表。
+        :param items: 云存储列表。
         :type items: list[:class:`huaweicloudsdkcae.v1.Volume`]
         """
         
@@ -60,7 +60,7 @@ class ListVolumesResponse(SdkResponse):
     def api_version(self):
         """Gets the api_version of this ListVolumesResponse.
 
-        API版本。
+        API版本，固定值“v1”，该值不可修改。
 
         :return: The api_version of this ListVolumesResponse.
         :rtype: str
@@ -71,7 +71,7 @@ class ListVolumesResponse(SdkResponse):
     def api_version(self, api_version):
         """Sets the api_version of this ListVolumesResponse.
 
-        API版本。
+        API版本，固定值“v1”，该值不可修改。
 
         :param api_version: The api_version of this ListVolumesResponse.
         :type api_version: str
@@ -82,7 +82,7 @@ class ListVolumesResponse(SdkResponse):
     def kind(self):
         """Gets the kind of this ListVolumesResponse.
 
-        资源种类。
+        API类型，固定值“Volume”，该值不可修改。
 
         :return: The kind of this ListVolumesResponse.
         :rtype: str
@@ -93,7 +93,7 @@ class ListVolumesResponse(SdkResponse):
     def kind(self, kind):
         """Sets the kind of this ListVolumesResponse.
 
-        资源种类。
+        API类型，固定值“Volume”，该值不可修改。
 
         :param kind: The kind of this ListVolumesResponse.
         :type kind: str
@@ -104,7 +104,7 @@ class ListVolumesResponse(SdkResponse):
     def items(self):
         """Gets the items of this ListVolumesResponse.
 
-        数据卷列表。
+        云存储列表。
 
         :return: The items of this ListVolumesResponse.
         :rtype: list[:class:`huaweicloudsdkcae.v1.Volume`]
@@ -115,7 +115,7 @@ class ListVolumesResponse(SdkResponse):
     def items(self, items):
         """Sets the items of this ListVolumesResponse.
 
-        数据卷列表。
+        云存储列表。
 
         :param items: The items of this ListVolumesResponse.
         :type items: list[:class:`huaweicloudsdkcae.v1.Volume`]

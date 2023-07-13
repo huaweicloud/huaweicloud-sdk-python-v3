@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import KooMessageClient
 from huaweicloudsdkkoomessage.v1.koomessage_client import KooMessageClient
 from huaweicloudsdkkoomessage.v1.koomessage_async_client import KooMessageAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkkoomessage.v1.model.aim_resolve_detail import AIMResolveDetail
 from huaweicloudsdkkoomessage.v1.model.aim_resolve_task import AIMResolveTask
 from huaweicloudsdkkoomessage.v1.model.aim_resolve_task_mode import AIMResolveTaskMode

@@ -65,7 +65,7 @@ class InstanceConfig:
         :type image_ref: str
         :param disk: 磁盘组信息，系统盘必选，数据盘可选。
         :type disk: list[:class:`huaweicloudsdkas.v1.DiskInfo`]
-        :param key_name: 登录云服务器的SSH密钥名称。  获取密钥对方式请参考[创建及导入SSH密钥对](https://support.huaweicloud.com/api-dew/CreateKeypair.html)。  说明： 当key_name与user_data同时指定时，user_data只做用户数据注入。
+        :param key_name: 登录云服务器的SSH密钥名称。获取密钥对方式请参考[创建及导入SSH密钥对](https://support.huaweicloud.com/api-dew/CreateKeypair.html)。说明：当key_name与user_data同时指定时，user_data只做用户数据注入。
         :type key_name: str
         :param personality: 注入文件信息。仅支持注入文本文件，最大支持注入5个文件，每个文件最大1KB。
         :type personality: list[:class:`huaweicloudsdkas.v1.PersonalityInfo`]
@@ -231,7 +231,7 @@ class InstanceConfig:
     def key_name(self):
         """Gets the key_name of this InstanceConfig.
 
-        登录云服务器的SSH密钥名称。  获取密钥对方式请参考[创建及导入SSH密钥对](https://support.huaweicloud.com/api-dew/CreateKeypair.html)。  说明： 当key_name与user_data同时指定时，user_data只做用户数据注入。
+        登录云服务器的SSH密钥名称。获取密钥对方式请参考[创建及导入SSH密钥对](https://support.huaweicloud.com/api-dew/CreateKeypair.html)。说明：当key_name与user_data同时指定时，user_data只做用户数据注入。
 
         :return: The key_name of this InstanceConfig.
         :rtype: str
@@ -242,7 +242,7 @@ class InstanceConfig:
     def key_name(self, key_name):
         """Sets the key_name of this InstanceConfig.
 
-        登录云服务器的SSH密钥名称。  获取密钥对方式请参考[创建及导入SSH密钥对](https://support.huaweicloud.com/api-dew/CreateKeypair.html)。  说明： 当key_name与user_data同时指定时，user_data只做用户数据注入。
+        登录云服务器的SSH密钥名称。获取密钥对方式请参考[创建及导入SSH密钥对](https://support.huaweicloud.com/api-dew/CreateKeypair.html)。说明：当key_name与user_data同时指定时，user_data只做用户数据注入。
 
         :param key_name: The key_name of this InstanceConfig.
         :type key_name: str

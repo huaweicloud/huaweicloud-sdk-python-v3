@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import SecMasterClient
 from huaweicloudsdksecmaster.v1.secmaster_client import SecMasterClient
 from huaweicloudsdksecmaster.v1.secmaster_async_client import SecMasterAsyncClient
-# import models into sdk package
+
 from huaweicloudsdksecmaster.v1.model.check_product_healthy_request import CheckProductHealthyRequest
 from huaweicloudsdksecmaster.v1.model.check_product_healthy_response import CheckProductHealthyResponse
 from huaweicloudsdksecmaster.v1.model.compliance import Compliance

@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import FunctionGraphClient
 from huaweicloudsdkfunctiongraph.v2.functiongraph_client import FunctionGraphClient
 from huaweicloudsdkfunctiongraph.v2.functiongraph_async_client import FunctionGraphAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkfunctiongraph.v2.model.action import Action
 from huaweicloudsdkfunctiongraph.v2.model.async_invoke_function_request import AsyncInvokeFunctionRequest
 from huaweicloudsdkfunctiongraph.v2.model.async_invoke_function_response import AsyncInvokeFunctionResponse

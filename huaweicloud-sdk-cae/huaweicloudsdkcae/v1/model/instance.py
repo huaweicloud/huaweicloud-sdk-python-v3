@@ -33,7 +33,7 @@ class Instance:
 
         The model defined in huaweicloud sdk
 
-        :param id: id
+        :param id: 实例ID。
         :type id: str
         :param name: 实例名称。
         :type name: str
@@ -59,7 +59,7 @@ class Instance:
     def id(self):
         """Gets the id of this Instance.
 
-        id
+        实例ID。
 
         :return: The id of this Instance.
         :rtype: str
@@ -70,7 +70,7 @@ class Instance:
     def id(self, id):
         """Sets the id of this Instance.
 
-        id
+        实例ID。
 
         :param id: The id of this Instance.
         :type id: str

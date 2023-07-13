@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import CtsClient
 from huaweicloudsdkcts.v3.cts_client import CtsClient
 from huaweicloudsdkcts.v3.cts_async_client import CtsAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkcts.v3.model.base_user import BaseUser
 from huaweicloudsdkcts.v3.model.create_notification_request import CreateNotificationRequest
 from huaweicloudsdkcts.v3.model.create_notification_request_body import CreateNotificationRequestBody

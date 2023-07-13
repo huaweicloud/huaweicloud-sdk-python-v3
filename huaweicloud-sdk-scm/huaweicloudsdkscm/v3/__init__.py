@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import ScmClient
 from huaweicloudsdkscm.v3.scm_client import ScmClient
 from huaweicloudsdkscm.v3.scm_async_client import ScmAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkscm.v3.model.authentification import Authentification
 from huaweicloudsdkscm.v3.model.certificate_detail import CertificateDetail
 from huaweicloudsdkscm.v3.model.delete_certificate_request import DeleteCertificateRequest

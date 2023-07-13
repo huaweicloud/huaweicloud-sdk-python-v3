@@ -37,13 +37,13 @@ class Configuration:
 
         The model defined in huaweicloud sdk
 
-        :param data: 数据。
+        :param data: 组件配置数据。
         :type data: object
         :param operated_at: 操作时间。
         :type operated_at: datetime
-        :param operation_id: 操作id。
+        :param operation_id: 操作ID。
         :type operation_id: str
-        :param type: 配置类型。
+        :param type: 组件配置类型，当前CAE支持组件配置如下8类。  - rds：云数据库RDS。  - cse：微服务引擎CSE。  - env：环境变量。  - access：访问方式。  - scaling：伸缩策略。  - volume：云存储配置。  - healthCheck：健康检查。  - lifecycle：生命周期管理。
         :type type: str
         :param is_activated: 配置是否生效。
         :type is_activated: bool
@@ -73,7 +73,7 @@ class Configuration:
     def data(self):
         """Gets the data of this Configuration.
 
-        数据。
+        组件配置数据。
 
         :return: The data of this Configuration.
         :rtype: object
@@ -84,7 +84,7 @@ class Configuration:
     def data(self, data):
         """Sets the data of this Configuration.
 
-        数据。
+        组件配置数据。
 
         :param data: The data of this Configuration.
         :type data: object
@@ -117,7 +117,7 @@ class Configuration:
     def operation_id(self):
         """Gets the operation_id of this Configuration.
 
-        操作id。
+        操作ID。
 
         :return: The operation_id of this Configuration.
         :rtype: str
@@ -128,7 +128,7 @@ class Configuration:
     def operation_id(self, operation_id):
         """Sets the operation_id of this Configuration.
 
-        操作id。
+        操作ID。
 
         :param operation_id: The operation_id of this Configuration.
         :type operation_id: str
@@ -139,7 +139,7 @@ class Configuration:
     def type(self):
         """Gets the type of this Configuration.
 
-        配置类型。
+        组件配置类型，当前CAE支持组件配置如下8类。  - rds：云数据库RDS。  - cse：微服务引擎CSE。  - env：环境变量。  - access：访问方式。  - scaling：伸缩策略。  - volume：云存储配置。  - healthCheck：健康检查。  - lifecycle：生命周期管理。
 
         :return: The type of this Configuration.
         :rtype: str
@@ -150,7 +150,7 @@ class Configuration:
     def type(self, type):
         """Sets the type of this Configuration.
 
-        配置类型。
+        组件配置类型，当前CAE支持组件配置如下8类。  - rds：云数据库RDS。  - cse：微服务引擎CSE。  - env：环境变量。  - access：访问方式。  - scaling：伸缩策略。  - volume：云存储配置。  - healthCheck：健康检查。  - lifecycle：生命周期管理。
 
         :param type: The type of this Configuration.
         :type type: str

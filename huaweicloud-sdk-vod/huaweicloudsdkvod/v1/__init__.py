@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import VodClient
 from huaweicloudsdkvod.v1.vod_client import VodClient
 from huaweicloudsdkvod.v1.vod_async_client import VodAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkvod.v1.model.add_subtitle import AddSubtitle
 from huaweicloudsdkvod.v1.model.asset_details import AssetDetails
 from huaweicloudsdkvod.v1.model.asset_info import AssetInfo

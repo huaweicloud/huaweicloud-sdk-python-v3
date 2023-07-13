@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import CodeArtsDeployClient
 from huaweicloudsdkcodeartsdeploy.v2.codeartsdeploy_client import CodeArtsDeployClient
 from huaweicloudsdkcodeartsdeploy.v2.codeartsdeploy_async_client import CodeArtsDeployAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkcodeartsdeploy.v2.model.app_component_dao import AppComponentDao
 from huaweicloudsdkcodeartsdeploy.v2.model.config_info_do import ConfigInfoDO
 from huaweicloudsdkcodeartsdeploy.v2.model.create_deploy_task_by_template_request import CreateDeployTaskByTemplateRequest

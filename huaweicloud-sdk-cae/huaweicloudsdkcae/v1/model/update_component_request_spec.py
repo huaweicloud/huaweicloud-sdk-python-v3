@@ -17,49 +17,78 @@ class UpdateComponentRequestSpec:
     sensitive_list = []
 
     openapi_types = {
+        'runtime': 'str',
         'source': 'Source',
         'build': 'Build',
         'resource_limit': 'ResourceLimit',
-        'log_strategy': 'LogStrategy'
+        'replica': 'int'
     }
 
     attribute_map = {
+        'runtime': 'runtime',
         'source': 'source',
         'build': 'build',
         'resource_limit': 'resource_limit',
-        'log_strategy': 'log_strategy'
+        'replica': 'replica'
     }
 
-    def __init__(self, source=None, build=None, resource_limit=None, log_strategy=None):
+    def __init__(self, runtime=None, source=None, build=None, resource_limit=None, replica=None):
         """UpdateComponentRequestSpec
 
         The model defined in huaweicloud sdk
 
+        :param runtime: 语言/运行时。
+        :type runtime: str
         :param source: 
         :type source: :class:`huaweicloudsdkcae.v1.Source`
         :param build: 
         :type build: :class:`huaweicloudsdkcae.v1.Build`
         :param resource_limit: 
         :type resource_limit: :class:`huaweicloudsdkcae.v1.ResourceLimit`
-        :param log_strategy: 
-        :type log_strategy: :class:`huaweicloudsdkcae.v1.LogStrategy`
+        :param replica: 实例个数。
+        :type replica: int
         """
         
         
 
+        self._runtime = None
         self._source = None
         self._build = None
         self._resource_limit = None
-        self._log_strategy = None
+        self._replica = None
         self.discriminator = None
 
+        if runtime is not None:
+            self.runtime = runtime
         if source is not None:
             self.source = source
         if build is not None:
             self.build = build
         self.resource_limit = resource_limit
-        if log_strategy is not None:
-            self.log_strategy = log_strategy
+        if replica is not None:
+            self.replica = replica
+
+    @property
+    def runtime(self):
+        """Gets the runtime of this UpdateComponentRequestSpec.
+
+        语言/运行时。
+
+        :return: The runtime of this UpdateComponentRequestSpec.
+        :rtype: str
+        """
+        return self._runtime
+
+    @runtime.setter
+    def runtime(self, runtime):
+        """Sets the runtime of this UpdateComponentRequestSpec.
+
+        语言/运行时。
+
+        :param runtime: The runtime of this UpdateComponentRequestSpec.
+        :type runtime: str
+        """
+        self._runtime = runtime
 
     @property
     def source(self):
@@ -116,22 +145,26 @@ class UpdateComponentRequestSpec:
         self._resource_limit = resource_limit
 
     @property
-    def log_strategy(self):
-        """Gets the log_strategy of this UpdateComponentRequestSpec.
+    def replica(self):
+        """Gets the replica of this UpdateComponentRequestSpec.
 
-        :return: The log_strategy of this UpdateComponentRequestSpec.
-        :rtype: :class:`huaweicloudsdkcae.v1.LogStrategy`
+        实例个数。
+
+        :return: The replica of this UpdateComponentRequestSpec.
+        :rtype: int
         """
-        return self._log_strategy
+        return self._replica
 
-    @log_strategy.setter
-    def log_strategy(self, log_strategy):
-        """Sets the log_strategy of this UpdateComponentRequestSpec.
+    @replica.setter
+    def replica(self, replica):
+        """Sets the replica of this UpdateComponentRequestSpec.
 
-        :param log_strategy: The log_strategy of this UpdateComponentRequestSpec.
-        :type log_strategy: :class:`huaweicloudsdkcae.v1.LogStrategy`
+        实例个数。
+
+        :param replica: The replica of this UpdateComponentRequestSpec.
+        :type replica: int
         """
-        self._log_strategy = log_strategy
+        self._replica = replica
 
     def to_dict(self):
         """Returns the model properties as a dict"""

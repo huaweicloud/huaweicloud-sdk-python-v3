@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import EipClient
 from huaweicloudsdkeip.v2.eip_client import EipClient
 from huaweicloudsdkeip.v2.eip_async_client import EipAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkeip.v2.model.add_publicips_into_shared_bandwidth_option import AddPublicipsIntoSharedBandwidthOption
 from huaweicloudsdkeip.v2.model.add_publicips_into_shared_bandwidth_request import AddPublicipsIntoSharedBandwidthRequest
 from huaweicloudsdkeip.v2.model.add_publicips_into_shared_bandwidth_request_body import AddPublicipsIntoSharedBandwidthRequestBody

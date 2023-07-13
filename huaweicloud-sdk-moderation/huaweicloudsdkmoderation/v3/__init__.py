@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import ModerationClient
 from huaweicloudsdkmoderation.v3.moderation_client import ModerationClient
 from huaweicloudsdkmoderation.v3.moderation_async_client import ModerationAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkmoderation.v3.model.audio_create_request import AudioCreateRequest
 from huaweicloudsdkmoderation.v3.model.audio_input_body import AudioInputBody
 from huaweicloudsdkmoderation.v3.model.audio_moderation_result_detail import AudioModerationResultDetail

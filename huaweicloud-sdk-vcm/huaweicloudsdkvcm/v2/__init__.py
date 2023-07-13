@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import VcmClient
 from huaweicloudsdkvcm.v2.vcm_client import VcmClient
 from huaweicloudsdkvcm.v2.vcm_async_client import VcmAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkvcm.v2.model.audio_input_data import AudioInputData
 from huaweicloudsdkvcm.v2.model.audio_output import AudioOutput
 from huaweicloudsdkvcm.v2.model.audio_output_hosting import AudioOutputHosting

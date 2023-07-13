@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import DdmClient
 from huaweicloudsdkddm.v1.ddm_client import DdmClient
 from huaweicloudsdkddm.v1.ddm_async_client import DdmAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkddm.v1.model.admin_user_info_req import AdminUserInfoReq
 from huaweicloudsdkddm.v1.model.compute_flavor_groups_info import ComputeFlavorGroupsInfo
 from huaweicloudsdkddm.v1.model.compute_flavors import ComputeFlavors

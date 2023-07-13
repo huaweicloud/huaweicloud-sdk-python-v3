@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import HiLensClient
 from huaweicloudsdkhilens.v3.hilens_client import HiLensClient
 from huaweicloudsdkhilens.v3.hilens_async_client import HiLensAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkhilens.v3.model.activate_node_request_body import ActivateNodeRequestBody
 from huaweicloudsdkhilens.v3.model.activate_record_records import ActivateRecordRecords
 from huaweicloudsdkhilens.v3.model.add_deployment_nodes_request import AddDeploymentNodesRequest

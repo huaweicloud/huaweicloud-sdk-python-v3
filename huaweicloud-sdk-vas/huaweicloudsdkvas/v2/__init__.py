@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import VasClient
 from huaweicloudsdkvas.v2.vas_client import VasClient
 from huaweicloudsdkvas.v2.vas_async_client import VasAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkvas.v2.model.create_response_body import CreateResponseBody
 from huaweicloudsdkvas.v2.model.create_tasks_request import CreateTasksRequest
 from huaweicloudsdkvas.v2.model.create_tasks_request_body import CreateTasksRequestBody

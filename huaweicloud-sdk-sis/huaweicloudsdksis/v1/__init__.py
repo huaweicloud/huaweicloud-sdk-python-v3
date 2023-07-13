@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import SisClient
 from huaweicloudsdksis.v1.sis_client import SisClient
 from huaweicloudsdksis.v1.sis_async_client import SisAsyncClient
-# import models into sdk package
+
 from huaweicloudsdksis.v1.model.analysis_info import AnalysisInfo
 from huaweicloudsdksis.v1.model.analysis_info_result import AnalysisInfoResult
 from huaweicloudsdksis.v1.model.audio_config import AudioConfig

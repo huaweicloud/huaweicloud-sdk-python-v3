@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import EcsClient
 from huaweicloudsdkecs.v2.ecs_client import EcsClient
 from huaweicloudsdkecs.v2.ecs_async_client import EcsAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkecs.v2.model.add_server_group_member_request import AddServerGroupMemberRequest
 from huaweicloudsdkecs.v2.model.add_server_group_member_request_body import AddServerGroupMemberRequestBody
 from huaweicloudsdkecs.v2.model.add_server_group_member_response import AddServerGroupMemberResponse

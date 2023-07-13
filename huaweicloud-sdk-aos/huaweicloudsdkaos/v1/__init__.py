@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import AosClient
 from huaweicloudsdkaos.v1.aos_client import AosClient
 from huaweicloudsdkaos.v1.aos_async_client import AosAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkaos.v1.model.agencies_primitive_type_holder import AgenciesPrimitiveTypeHolder
 from huaweicloudsdkaos.v1.model.agency import Agency
 from huaweicloudsdkaos.v1.model.apply_execution_plan_request import ApplyExecutionPlanRequest

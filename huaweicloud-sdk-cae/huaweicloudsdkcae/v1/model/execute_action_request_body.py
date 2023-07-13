@@ -35,9 +35,9 @@ class ExecuteActionRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param api_version: API版本。
+        :param api_version: API版本，固定值“v1”，该值不可修改。
         :type api_version: str
-        :param kind: 资源种类。
+        :param kind: API类型，固定值“Action”，该值不可修改。
         :type kind: str
         :param metadata: 
         :type metadata: :class:`huaweicloudsdkcae.v1.ExecuteActionRequestBodyMetadata`
@@ -64,7 +64,7 @@ class ExecuteActionRequestBody:
     def api_version(self):
         """Gets the api_version of this ExecuteActionRequestBody.
 
-        API版本。
+        API版本，固定值“v1”，该值不可修改。
 
         :return: The api_version of this ExecuteActionRequestBody.
         :rtype: str
@@ -75,7 +75,7 @@ class ExecuteActionRequestBody:
     def api_version(self, api_version):
         """Sets the api_version of this ExecuteActionRequestBody.
 
-        API版本。
+        API版本，固定值“v1”，该值不可修改。
 
         :param api_version: The api_version of this ExecuteActionRequestBody.
         :type api_version: str
@@ -86,7 +86,7 @@ class ExecuteActionRequestBody:
     def kind(self):
         """Gets the kind of this ExecuteActionRequestBody.
 
-        资源种类。
+        API类型，固定值“Action”，该值不可修改。
 
         :return: The kind of this ExecuteActionRequestBody.
         :rtype: str
@@ -97,7 +97,7 @@ class ExecuteActionRequestBody:
     def kind(self, kind):
         """Sets the kind of this ExecuteActionRequestBody.
 
-        资源种类。
+        API类型，固定值“Action”，该值不可修改。
 
         :param kind: The kind of this ExecuteActionRequestBody.
         :type kind: str

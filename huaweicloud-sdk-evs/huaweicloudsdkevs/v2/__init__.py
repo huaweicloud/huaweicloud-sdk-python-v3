@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import EvsClient
 from huaweicloudsdkevs.v2.evs_client import EvsClient
 from huaweicloudsdkevs.v2.evs_async_client import EvsAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkevs.v2.model.attachment import Attachment
 from huaweicloudsdkevs.v2.model.az_info import AzInfo
 from huaweicloudsdkevs.v2.model.batch_create_volume_tags_request import BatchCreateVolumeTagsRequest

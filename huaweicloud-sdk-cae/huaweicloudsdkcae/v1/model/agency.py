@@ -33,9 +33,9 @@ class Agency:
 
         The model defined in huaweicloud sdk
 
-        :param api_version: API版本。
+        :param api_version: API版本，固定值“v1”，该值不可修改。
         :type api_version: str
-        :param kind: 资源类型。
+        :param kind: API类型，固定值“Agency”，该值不可修改。
         :type kind: str
         :param metadata: 
         :type metadata: :class:`huaweicloudsdkcae.v1.AgencyMetadata`
@@ -50,14 +50,13 @@ class Agency:
 
         self.api_version = api_version
         self.kind = kind
-        if metadata is not None:
-            self.metadata = metadata
+        self.metadata = metadata
 
     @property
     def api_version(self):
         """Gets the api_version of this Agency.
 
-        API版本。
+        API版本，固定值“v1”，该值不可修改。
 
         :return: The api_version of this Agency.
         :rtype: str
@@ -68,7 +67,7 @@ class Agency:
     def api_version(self, api_version):
         """Sets the api_version of this Agency.
 
-        API版本。
+        API版本，固定值“v1”，该值不可修改。
 
         :param api_version: The api_version of this Agency.
         :type api_version: str
@@ -79,7 +78,7 @@ class Agency:
     def kind(self):
         """Gets the kind of this Agency.
 
-        资源类型。
+        API类型，固定值“Agency”，该值不可修改。
 
         :return: The kind of this Agency.
         :rtype: str
@@ -90,7 +89,7 @@ class Agency:
     def kind(self, kind):
         """Sets the kind of this Agency.
 
-        资源类型。
+        API类型，固定值“Agency”，该值不可修改。
 
         :param kind: The kind of this Agency.
         :type kind: str

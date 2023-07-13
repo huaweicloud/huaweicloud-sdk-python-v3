@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import CptsClient
 from huaweicloudsdkcpts.v1.cpts_client import CptsClient
 from huaweicloudsdkcpts.v1.cpts_async_client import CptsAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkcpts.v1.model.agent_config import AgentConfig
 from huaweicloudsdkcpts.v1.model.aw_info_dto import AwInfoDTO
 from huaweicloudsdkcpts.v1.model.batch_update_task_status_request import BatchUpdateTaskStatusRequest

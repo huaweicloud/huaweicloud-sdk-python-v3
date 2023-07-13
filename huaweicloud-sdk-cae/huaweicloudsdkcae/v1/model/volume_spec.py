@@ -33,7 +33,7 @@ class VolumeSpec:
 
         The model defined in huaweicloud sdk
 
-        :param resource_type: 资源类型。
+        :param resource_type: 资源类型，当前只支持“obs”。
         :type resource_type: str
         :param resource_sub_type: 对象存储类型，例如：并行文件系统、存储桶。
         :type resource_sub_type: str
@@ -56,7 +56,7 @@ class VolumeSpec:
     def resource_type(self):
         """Gets the resource_type of this VolumeSpec.
 
-        资源类型。
+        资源类型，当前只支持“obs”。
 
         :return: The resource_type of this VolumeSpec.
         :rtype: str
@@ -67,7 +67,7 @@ class VolumeSpec:
     def resource_type(self, resource_type):
         """Sets the resource_type of this VolumeSpec.
 
-        资源类型。
+        资源类型，当前只支持“obs”。
 
         :param resource_type: The resource_type of this VolumeSpec.
         :type resource_type: str

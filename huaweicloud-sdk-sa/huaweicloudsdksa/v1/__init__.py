@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import SaClient
 from huaweicloudsdksa.v1.sa_client import SaClient
 from huaweicloudsdksa.v1.sa_async_client import SaAsyncClient
-# import models into sdk package
+
 from huaweicloudsdksa.v1.model.check_product_healthy_request import CheckProductHealthyRequest
 from huaweicloudsdksa.v1.model.check_product_healthy_response import CheckProductHealthyResponse
 from huaweicloudsdksa.v1.model.compliance import Compliance

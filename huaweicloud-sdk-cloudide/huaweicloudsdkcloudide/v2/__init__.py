@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import CloudIDEClient
 from huaweicloudsdkcloudide.v2.cloudide_client import CloudIDEClient
 from huaweicloudsdkcloudide.v2.cloudide_async_client import CloudIDEAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkcloudide.v2.model.acceptance_schema import AcceptanceSchema
 from huaweicloudsdkcloudide.v2.model.account_status import AccountStatus
 from huaweicloudsdkcloudide.v2.model.add_extension_evaluation_reply_request import AddExtensionEvaluationReplyRequest

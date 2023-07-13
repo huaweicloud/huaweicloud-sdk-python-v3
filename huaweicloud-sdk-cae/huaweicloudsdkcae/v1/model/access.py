@@ -31,9 +31,9 @@ class Access:
 
         The model defined in huaweicloud sdk
 
-        :param address: 地址。
+        :param address: 访问地址。
         :type address: str
-        :param type: 类型。
+        :param type: 访问方式类型。
         :type type: str
         """
         
@@ -52,7 +52,7 @@ class Access:
     def address(self):
         """Gets the address of this Access.
 
-        地址。
+        访问地址。
 
         :return: The address of this Access.
         :rtype: str
@@ -63,7 +63,7 @@ class Access:
     def address(self, address):
         """Sets the address of this Access.
 
-        地址。
+        访问地址。
 
         :param address: The address of this Access.
         :type address: str
@@ -74,7 +74,7 @@ class Access:
     def type(self):
         """Gets the type of this Access.
 
-        类型。
+        访问方式类型。
 
         :return: The type of this Access.
         :rtype: str
@@ -85,7 +85,7 @@ class Access:
     def type(self, type):
         """Sets the type of this Access.
 
-        类型。
+        访问方式类型。
 
         :param type: The type of this Access.
         :type type: str

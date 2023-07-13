@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import IoTEdgeClient
 from huaweicloudsdkiotedge.v2.iotedge_client import IoTEdgeClient
 from huaweicloudsdkiotedge.v2.iotedge_async_client import IoTEdgeAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkiotedge.v2.model.access_roma_brief_info import AccessRomaBriefInfo
 from huaweicloudsdkiotedge.v2.model.access_roma_info import AccessRomaInfo
 from huaweicloudsdkiotedge.v2.model.active_standby_config_dto import ActiveStandbyConfigDTO

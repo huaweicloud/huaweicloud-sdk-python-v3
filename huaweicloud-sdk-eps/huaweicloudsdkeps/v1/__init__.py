@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import EpsClient
 from huaweicloudsdkeps.v1.eps_client import EpsClient
 from huaweicloudsdkeps.v1.eps_async_client import EpsAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkeps.v1.model.create_enterprise_project_request import CreateEnterpriseProjectRequest
 from huaweicloudsdkeps.v1.model.create_enterprise_project_response import CreateEnterpriseProjectResponse
 from huaweicloudsdkeps.v1.model.disable_action import DisableAction

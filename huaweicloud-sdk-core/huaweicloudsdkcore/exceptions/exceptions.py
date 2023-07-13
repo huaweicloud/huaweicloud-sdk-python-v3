@@ -26,7 +26,7 @@ class SdkException(Exception):
         """
         The base exception class.
         """
-        pass
+        super(SdkException).__init__()
 
 
 class ConnectionException(SdkException):
@@ -145,6 +145,7 @@ class ServiceResponseException(SdkException):
         """
         The base exception class of service response exceptions.
         """
+        super(ServiceResponseException, self).__init__()
         self.status_code = status_code
         self.error_msg = sdk_error.error_msg
         self.error_code = sdk_error.error_code
@@ -192,7 +193,7 @@ class RequestTimeoutException(SdkException):
         """
         The base exception class of timeout exceptions.
         """
-        super(self)
+        super(RequestTimeoutException, self).__init__()
         self.err_message = err_message
 
     def __str__(self):

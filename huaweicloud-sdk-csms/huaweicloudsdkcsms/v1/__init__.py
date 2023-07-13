@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import CsmsClient
 from huaweicloudsdkcsms.v1.csms_client import CsmsClient
 from huaweicloudsdkcsms.v1.csms_async_client import CsmsAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkcsms.v1.model.action_resources import ActionResources
 from huaweicloudsdkcsms.v1.model.batch_create_or_delete_tags_request import BatchCreateOrDeleteTagsRequest
 from huaweicloudsdkcsms.v1.model.batch_create_or_delete_tags_request_body import BatchCreateOrDeleteTagsRequestBody

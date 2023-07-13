@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import KpsClient
 from huaweicloudsdkkps.v3.kps_client import KpsClient
 from huaweicloudsdkkps.v3.kps_async_client import KpsAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkkps.v3.model.associate_keypair_request import AssociateKeypairRequest
 from huaweicloudsdkkps.v3.model.associate_keypair_request_body import AssociateKeypairRequestBody
 from huaweicloudsdkkps.v3.model.associate_keypair_response import AssociateKeypairResponse

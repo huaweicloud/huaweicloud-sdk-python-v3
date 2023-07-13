@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import CloudtestClient
 from huaweicloudsdkcloudtest.v1.cloudtest_client import CloudtestClient
 from huaweicloudsdkcloudtest.v1.cloudtest_async_client import CloudtestAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkcloudtest.v1.model.api_error import ApiError
 from huaweicloudsdkcloudtest.v1.model.assigned_user_info import AssignedUserInfo
 from huaweicloudsdkcloudtest.v1.model.attribute_change import AttributeChange

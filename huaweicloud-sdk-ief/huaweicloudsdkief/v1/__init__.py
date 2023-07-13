@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import IefClient
 from huaweicloudsdkief.v1.ief_client import IefClient
 from huaweicloudsdkief.v1.ief_async_client import IefAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkief.v1.model.access_config import AccessConfig
 from huaweicloudsdkief.v1.model.action import Action
 from huaweicloudsdkief.v1.model.affinity import Affinity

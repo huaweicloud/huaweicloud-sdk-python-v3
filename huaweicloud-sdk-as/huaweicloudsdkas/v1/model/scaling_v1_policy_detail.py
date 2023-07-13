@@ -53,7 +53,7 @@ class ScalingV1PolicyDetail:
         :type scaling_policy_name: str
         :param scaling_policy_id: 伸缩策略ID。
         :type scaling_policy_id: str
-        :param policy_status: 伸缩策略状态  INSERVICE：已启用 PAUSED：已停用 EXECUTING：执行中
+        :param policy_status: 伸缩策略状态 INSERVICE：已启用 PAUSED：已停用 EXECUTING：执行中
         :type policy_status: str
         :param scaling_policy_type: 伸缩策略类型：ALARM：告警策略，此时alarm_id有返回，scheduled_policy不会返回。SCHEDULED：定时策略，此时alarm_id不会返回，scheduled_policy有返回，并且recurrence_type、recurrence_value、start_time和end_time不会返回。RECURRENCE：周期策略，此时alarm_id不会返回，scheduled_policy有返回，并且recurrence_type、recurrence_value、start_time和end_time有返回。
         :type scaling_policy_type: str
@@ -174,7 +174,7 @@ class ScalingV1PolicyDetail:
     def policy_status(self):
         """Gets the policy_status of this ScalingV1PolicyDetail.
 
-        伸缩策略状态  INSERVICE：已启用 PAUSED：已停用 EXECUTING：执行中
+        伸缩策略状态 INSERVICE：已启用 PAUSED：已停用 EXECUTING：执行中
 
         :return: The policy_status of this ScalingV1PolicyDetail.
         :rtype: str
@@ -185,7 +185,7 @@ class ScalingV1PolicyDetail:
     def policy_status(self, policy_status):
         """Sets the policy_status of this ScalingV1PolicyDetail.
 
-        伸缩策略状态  INSERVICE：已启用 PAUSED：已停用 EXECUTING：执行中
+        伸缩策略状态 INSERVICE：已启用 PAUSED：已停用 EXECUTING：执行中
 
         :param policy_status: The policy_status of this ScalingV1PolicyDetail.
         :type policy_status: str

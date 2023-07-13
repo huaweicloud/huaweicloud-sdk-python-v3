@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import OsmClient
 from huaweicloudsdkosm.v2.osm_client import OsmClient
 from huaweicloudsdkosm.v2.osm_async_client import OsmAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkosm.v2.model.accessory_json_format_req import AccessoryJsonFormatReq
 from huaweicloudsdkosm.v2.model.accessory_limit_vo import AccessoryLimitVo
 from huaweicloudsdkosm.v2.model.accessory_url import AccessoryUrl

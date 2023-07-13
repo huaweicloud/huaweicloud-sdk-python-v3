@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import MpcClient
 from huaweicloudsdkmpc.v1.mpc_client import MpcClient
 from huaweicloudsdkmpc.v1.mpc_async_client import MpcAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkmpc.v1.model.agencies_task_req import AgenciesTaskReq
 from huaweicloudsdkmpc.v1.model.animated_graphics_output_param import AnimatedGraphicsOutputParam
 from huaweicloudsdkmpc.v1.model.animated_graphics_task import AnimatedGraphicsTask

@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import NlpClient
 from huaweicloudsdknlp.v2.nlp_client import NlpClient
 from huaweicloudsdknlp.v2.nlp_async_client import NlpAsyncClient
-# import models into sdk package
+
 from huaweicloudsdknlp.v2.model.aspect_advance_opinion import AspectAdvanceOpinion
 from huaweicloudsdknlp.v2.model.aspect_opinion import AspectOpinion
 from huaweicloudsdknlp.v2.model.aspect_sentiment_advance_request import AspectSentimentAdvanceRequest

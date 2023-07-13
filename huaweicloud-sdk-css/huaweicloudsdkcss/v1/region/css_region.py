@@ -45,6 +45,10 @@ class CssRegion:
                         "https://css.la-south-2.myhuaweicloud.com")
     CN_SOUTH_2 = Region("cn-south-2",
                         "https://css.cn-south-2.myhuaweicloud.com")
+    TR_WEST_1 = Region("tr-west-1",
+                        "https://css.tr-west-1.myhuaweicloud.com")
+    AP_SOUTHEAST_4 = Region("ap-southeast-4",
+                        "https://css.ap-southeast-4.myhuaweicloud.com")
 
     static_fields = {
         "cn-south-1": CN_SOUTH_1,
@@ -65,6 +69,8 @@ class CssRegion:
         "af-south-1": AF_SOUTH_1,
         "la-south-2": LA_SOUTH_2,
         "cn-south-2": CN_SOUTH_2,
+        "tr-west-1": TR_WEST_1,
+        "ap-southeast-4": AP_SOUTHEAST_4,
     }
 
     @classmethod

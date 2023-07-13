@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import AomClient
 from huaweicloudsdkaom.v2.aom_client import AomClient
 from huaweicloudsdkaom.v2.aom_async_client import AomAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkaom.v2.model.action_rule import ActionRule
 from huaweicloudsdkaom.v2.model.add_action_rule_request import AddActionRuleRequest
 from huaweicloudsdkaom.v2.model.add_action_rule_response import AddActionRuleResponse

@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import OmsClient
 from huaweicloudsdkoms.v2.oms_client import OmsClient
 from huaweicloudsdkoms.v2.oms_async_client import OmsAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkoms.v2.model.bandwidth_policy_dto import BandwidthPolicyDto
 from huaweicloudsdkoms.v2.model.create_sync_events_request import CreateSyncEventsRequest
 from huaweicloudsdkoms.v2.model.create_sync_events_response import CreateSyncEventsResponse

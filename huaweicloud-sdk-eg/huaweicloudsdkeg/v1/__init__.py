@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import EgClient
 from huaweicloudsdkeg.v1.eg_client import EgClient
 from huaweicloudsdkeg.v1.eg_async_client import EgAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkeg.v1.model.agency_create_req import AgencyCreateReq
 from huaweicloudsdkeg.v1.model.api_versions_links import ApiVersionsLinks
 from huaweicloudsdkeg.v1.model.api_versions_versions import ApiVersionsVersions

@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import DrisClient
 from huaweicloudsdkdris.v1.dris_client import DrisClient
 from huaweicloudsdkdris.v1.dris_async_client import DrisAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkdris.v1.model.add_forwarding_config_request_dto import AddForwardingConfigRequestDTO
 from huaweicloudsdkdris.v1.model.add_forwarding_configs_request import AddForwardingConfigsRequest
 from huaweicloudsdkdris.v1.model.add_forwarding_configs_response import AddForwardingConfigsResponse

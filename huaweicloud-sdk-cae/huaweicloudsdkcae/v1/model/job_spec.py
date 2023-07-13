@@ -17,42 +17,71 @@ class JobSpec:
     sensitive_list = []
 
     openapi_types = {
+        'progress': 'float',
         'status': 'str',
         'tasks': 'list[Task]'
     }
 
     attribute_map = {
+        'progress': 'progress',
         'status': 'status',
         'tasks': 'tasks'
     }
 
-    def __init__(self, status=None, tasks=None):
+    def __init__(self, progress=None, status=None, tasks=None):
         """JobSpec
 
         The model defined in huaweicloud sdk
 
-        :param status: 任务状态
+        :param progress: 任务进度。
+        :type progress: float
+        :param status: 任务状态。
         :type status: str
-        :param tasks: 子任务
+        :param tasks: 子任务。
         :type tasks: list[:class:`huaweicloudsdkcae.v1.Task`]
         """
         
         
 
+        self._progress = None
         self._status = None
         self._tasks = None
         self.discriminator = None
 
+        if progress is not None:
+            self.progress = progress
         if status is not None:
             self.status = status
         if tasks is not None:
             self.tasks = tasks
 
     @property
+    def progress(self):
+        """Gets the progress of this JobSpec.
+
+        任务进度。
+
+        :return: The progress of this JobSpec.
+        :rtype: float
+        """
+        return self._progress
+
+    @progress.setter
+    def progress(self, progress):
+        """Sets the progress of this JobSpec.
+
+        任务进度。
+
+        :param progress: The progress of this JobSpec.
+        :type progress: float
+        """
+        self._progress = progress
+
+    @property
     def status(self):
         """Gets the status of this JobSpec.
 
-        任务状态
+        任务状态。
 
         :return: The status of this JobSpec.
         :rtype: str
@@ -63,7 +92,7 @@ class JobSpec:
     def status(self, status):
         """Sets the status of this JobSpec.
 
-        任务状态
+        任务状态。
 
         :param status: The status of this JobSpec.
         :type status: str
@@ -74,7 +103,7 @@ class JobSpec:
     def tasks(self):
         """Gets the tasks of this JobSpec.
 
-        子任务
+        子任务。
 
         :return: The tasks of this JobSpec.
         :rtype: list[:class:`huaweicloudsdkcae.v1.Task`]
@@ -85,7 +114,7 @@ class JobSpec:
     def tasks(self, tasks):
         """Sets the tasks of this JobSpec.
 
-        子任务
+        子任务。
 
         :param tasks: The tasks of this JobSpec.
         :type tasks: list[:class:`huaweicloudsdkcae.v1.Task`]

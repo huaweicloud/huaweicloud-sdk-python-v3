@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import MrsClient
 from huaweicloudsdkmrs.v2.mrs_client import MrsClient
 from huaweicloudsdkmrs.v2.mrs_async_client import MrsAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkmrs.v2.model.add_jobs_req_v11 import AddJobsReqV11
 from huaweicloudsdkmrs.v2.model.agency_mapping import AgencyMapping
 from huaweicloudsdkmrs.v2.model.agency_mapping_array import AgencyMappingArray

@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import EiHealthClient
 from huaweicloudsdkeihealth.v2.eihealth_client import EiHealthClient
 from huaweicloudsdkeihealth.v2.eihealth_async_client import EiHealthAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkeihealth.v2.model.admet_property_dict_with_custom import AdmetPropertyDictWithCustom
 from huaweicloudsdkeihealth.v2.model.admet_with_custom_request import AdmetWithCustomRequest
 from huaweicloudsdkeihealth.v2.model.custom_prop import CustomProp

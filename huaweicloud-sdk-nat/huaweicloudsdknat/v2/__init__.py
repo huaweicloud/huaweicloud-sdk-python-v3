@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import NatClient
 from huaweicloudsdknat.v2.nat_client import NatClient
 from huaweicloudsdknat.v2.nat_async_client import NatAsyncClient
-# import models into sdk package
+
 from huaweicloudsdknat.v2.model.associated_transit_ip import AssociatedTransitIp
 from huaweicloudsdknat.v2.model.batch_create_delete_private_nat_tags_request import BatchCreateDeletePrivateNatTagsRequest
 from huaweicloudsdknat.v2.model.batch_create_delete_private_nat_tags_response import BatchCreateDeletePrivateNatTagsResponse

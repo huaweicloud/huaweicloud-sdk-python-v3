@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import CloudRTCClient
 from huaweicloudsdkcloudrtc.v1.cloudrtc_client import CloudRTCClient
 from huaweicloudsdkcloudrtc.v1.cloudrtc_async_client import CloudRTCAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkcloudrtc.v1.model.abnormal_event import AbnormalEvent
 from huaweicloudsdkcloudrtc.v1.model.abnormal_event_dimension_value import AbnormalEventDimensionValue
 from huaweicloudsdkcloudrtc.v1.model.list_rtc_abnormal_event_dimension_request import ListRtcAbnormalEventDimensionRequest

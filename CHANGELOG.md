@@ -1,3 +1,292 @@
+# 3.1.48 2023-07-13
+
+### HuaweiCloud SDK OROAS
+
+- _Features_
+  - Support `OROAS`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK AS
+
+- _Features_
+  - Support the interfaces `ListGroupScheduledTasks`, `CreateGroupScheduledTask`, `UpdateGroupScheduledTask`, `DeleteGroupScheduledTask`
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateScalingPolicy**
+    - changes of request param
+      - `+ scheduled_policy.recurrence_type: enum value [DAILY,WEEKLY,MONTHLY]`
+      - `- scheduled_policy.recurrence_type: enum value [Daily,Weekly,Monthly]`
+  - **UpdateScalingPolicy**
+    - changes of request param
+      - `+ scheduled_policy.recurrence_type: enum value [DAILY,WEEKLY,MONTHLY]`
+      - `- scheduled_policy.recurrence_type: enum value [Daily,Weekly,Monthly]`
+  - **ShowScalingPolicy**
+    - changes of response param
+      - `+ scaling_policy.scheduled_policy.recurrence_type: enum value [DAILY,WEEKLY,MONTHLY]`
+      - `- scaling_policy.scheduled_policy.recurrence_type: enum value [Daily,Weekly,Monthly]`
+  - **ListScalingPolicies**
+    - changes of response param
+      - `+ scaling_policies.scheduled_policy.recurrence_type: enum value [DAILY,WEEKLY,MONTHLY]`
+      - `- scaling_policies.scheduled_policy.recurrence_type: enum value [Daily,Weekly,Monthly]`
+  - **CreateScalingV2Policy**
+    - changes of request param
+      - `+ scheduled_policy.recurrence_type: enum value [DAILY,WEEKLY,MONTHLY]`
+      - `- scheduled_policy.recurrence_type: enum value [Daily,Weekly,Monthly]`
+  - **ListAllScalingV2Policies**
+    - changes of response param
+      - `+ scaling_policies.scheduled_policy.recurrence_type: enum value [DAILY,WEEKLY,MONTHLY]`
+      - `- scaling_policies.scheduled_policy.recurrence_type: enum value [Daily,Weekly,Monthly]`
+  - **UpdateScalingV2Policy**
+    - changes of request param
+      - `+ scheduled_policy.recurrence_type: enum value [DAILY,WEEKLY,MONTHLY]`
+      - `- scheduled_policy.recurrence_type: enum value [Daily,Weekly,Monthly]`
+  - **ShowScalingV2Policy**
+    - changes of response param
+      - `+ scaling_policy.scheduled_policy.recurrence_type: enum value [DAILY,WEEKLY,MONTHLY]`
+      - `- scaling_policy.scheduled_policy.recurrence_type: enum value [Daily,Weekly,Monthly]`
+  - **ListScalingV2Policies**
+    - changes of response param
+      - `+ scaling_policies.scheduled_policy.recurrence_type: enum value [DAILY,WEEKLY,MONTHLY]`
+      - `- scaling_policies.scheduled_policy.recurrence_type: enum value [Daily,Weekly,Monthly]`
+
+### HuaweiCloud SDK AntiDDoS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowNewTaskStatus**
+    - changes of request param
+      - `* task_id: optional -> required`
+
+### HuaweiCloud SDK CAE
+
+- _Features_
+  - Support the following interfaces：
+    - `ListDomains`
+    - `CreateDomain`
+    - `DeleteDomain`
+    - `ListCertificates`
+    - `CreateCertificate`
+    - `UpdateCertificate`
+    - `DeleteCertificate`
+    - `ListTimerRules`
+    - `CreateTimerRule`
+    - `UpdateTimerRule`
+    - `DeleteTimerRule`
+    - `ShowExecutionResult`
+- _Bug Fix_
+  - None
+- _Change_
+  - **DeleteVolume**
+    - changes of response param
+      - `+ kind`
+      - `+ api_version`
+      - `+ items`
+  - **ListAgencies**
+    - changes of response param
+      - `+ agencies`
+      - `- items`
+      - `- api_version: enum value [v1]`
+      - `- kind: enum value [Agency]`
+  - **CreateAgency**
+    - changes of request param
+      - `- api_version: enum value [v1]`
+      - `- kind: enum value [Agency]`
+      - `- metadata.name: enum value [cae_trust]`
+  - **ListEnvironments**
+    - changes of response param
+      - `- items.type`
+      - `- items.status: enum value [error]`
+  - **CreateEnvironment**
+    - changes of request param
+      - `- api_version: enum value [v1]`
+      - `- kind: enum value [Environment]`
+      - `- metadata.type`
+    - changes of response param
+      - `+ job_id`
+      - `- metadata`
+      - `- kind`
+      - `- api_version`
+  - **CreateApplication**
+    - changes of request param
+      - `- api_version: enum value [v1]`
+      - `- kind: enum value [Application]`
+  - **ListApplications**
+    - changes of response param
+      - `+ items.annotations`
+      - `+ items.created_at`
+      - `+ items.updated_at`
+  - **ListComponentSnapshots**
+    - changes of response param
+      - `- api_version: enum value [v1]`
+      - `- kind: enum value [ComponentSnapshot]`
+      - `+ items.context.app_id`
+      - `+ items.context.available_replica`
+      - `+ items.context.build`
+      - `+ items.context.build_id`
+      - `+ items.context.build_log_id`
+      - `+ items.context.env_id`
+      - `+ items.context.id`
+      - `+ items.context.image_url`
+      - `+ items.context.job_id`
+      - `+ items.context.log_group_id`
+      - `+ items.context.log_stream_id`
+      - `+ items.context.name`
+      - `+ items.context.operation`
+      - `+ items.context.operation_status`
+      - `+ items.context.replica`
+      - `+ items.context.resource_limit`
+      - `+ items.context.runtime`
+      - `+ items.context.source`
+      - `+ items.context.status`
+      - `+ items.context.version`
+      - `+ items.context.created_at`
+      - `+ items.context.updated_at`
+      - `* items.context: object -> object<ComponentSnapshotContext>`
+  - **ListComponentConfigurations**
+    - changes of response param
+      - `- kind: enum value [Configuration]`
+      - `+ items.type: enum value [rds,cse,env,access,scaling,volume,healthCheck,lifecycle]`
+  - **CreateComponentConfiguration**
+    - changes of request param
+      - `- kind: enum value [Configuration]`
+      - `+ items.type: enum value [rds,cse,env,access,scaling,volume,healthCheck,lifecycle]`
+  - **ListComponentEvents**
+    - changes of response param
+      - `- kind: enum value [ComponentEvent]`
+      - `+ items.involved_object_kind`
+      - `- items.involved_object: enum value [Component,ComponentInstance,ComponentScaling]`
+  - **ListComponentInstances**
+    - changes of response param
+      - `- api_version: enum value [v1]`
+      - `- kind: enum value [ComponentInstance]`
+  - **ListVolumes**
+    - changes of request param
+      - `+ resource_type: enum value [obs]`
+    - changes of response param
+      - `- kind: enum value [Volume]`
+      - `- items.resource_type: enum value [obs]`
+  - **CreateVolume**
+    - changes of request param
+      - `- kind: enum value [Volume]`
+      - `- spec.resource_type: enum value [obs]`
+  - **RetryJob**
+    - changes of request param
+      - `+ X-Enterprise-Project-ID`
+      - `+ X-Environment-ID`
+  - **ShowJob**
+    - changes of request param
+      - `+ X-Environment-ID`
+    - changes of response param
+      - `- kind: enum value [Job]`
+      - `+ spec.progress`
+  - **ShowComponent**
+    - changes of response param
+      - `- api_version: enum value [v1]`
+      - `- kind: enum value [Component]`
+      - `- metadata.jod_id`
+      - `- metadata.status`
+      - `- metadata.type`
+      - `+ spec.resource_limit`
+      - `+ spec.build_log_id`
+      - `- spec.log_strategy`
+      - `+ spec.runtime: enum value [Docker,Java8,Java11,Tomcat8,Tomcat9,Python3,Nodejs8,Php7]`
+  - **UpdateComponent**
+    - changes of request param
+      - `- api_version: enum value [v1]`
+      - `- kind: enum value [Component]`
+      - `- metadata.created_at`
+      - `- metadata.id`
+      - `- metadata.jod_id`
+      - `- metadata.status`
+      - `- metadata.type`
+      - `- metadata.updated_at`
+      - `* metadata: object<Metadata> -> object<UpdateComponentRequestMetadata>`
+      - `+ spec.runtime`
+      - `+ spec.replica`
+      - `- spec.log_strategy`
+  - **ExecuteAction**
+    - changes of request param
+      - `- api_version: enum value [v1]`
+      - `- kind: enum value [Action]`
+      - `* spec.source: object<Source> -> object<ActionOnComponentSource>`
+  - **CreateComponent**
+    - changes of request param
+      - `- api_version: enum value [v1]`
+      - `- kind: enum value [Component]`
+    - changes of response param
+      - `- api_version: enum value [v1]`
+      - `- kind: enum value [Component]`
+      - `- metadata.jod_id`
+      - `- metadata.status`
+      - `- metadata.type`
+      - `+ spec.resource_limit`
+      - `- spec.access_info`
+      - `- spec.build_id`
+      - `- spec.image_url`
+      - `- spec.job_id`
+      - `- spec.log_strategy`
+      - `+ spec.runtime: enum value [Docker,Java8,Java11,Tomcat8,Tomcat9,Python3,Nodejs8,Php7]`
+      - `* spec: object<ComponentSpec> -> object<CreateComponentSpec>`
+  - **ListComponents**
+    - changes of response param
+      - `+ items.created_at`
+      - `+ items.updated_at`
+      - `- items.status`
+      - `+ items.spec.resource_limit`
+      - `+ items.spec.build_log_id`
+      - `- items.spec.log_strategy`
+      - `+ items.spec.runtime: enum value [Docker,Java8,Java11,Tomcat8,Tomcat9,Python3,Nodejs8,Php7]`
+
+### HuaweiCloud SDK SIS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **PushTranscriberJobs**
+    - changes of request param
+      - `+ Enterprise-Project-Id`
+
+### HuaweiCloud SDK VPC
+
+- _Features_
+  - Support the following interfaces：
+    - `ListApiVersion`
+    - `NeutronListPorts`
+    - `NeutronCreatePort`
+    - `NeutronShowPort`
+    - `NeutronUpdatePort`
+    - `NeutronDeletePort`
+    - `NeutronListNetworks`
+    - `NeutronCreateNetwork`
+    - `NeutronShowNetwork`
+    - `NeutronUpdateNetwork`
+    - `NeutronDeleteNetwork`
+    - `NeutronListSubnets`
+    - `NeutronCreateSubnet`
+    - `NeutronShowSubnet`
+    - `NeutronUpdateSubnet`
+    - `NeutronDeleteSubnet`
+    - `NeutronListRouters`
+    - `NeutronCreateRouter`
+    - `NeutronShowRouter`
+    - `NeutronUpdateRouter`
+    - `NeutronDeleteRouter`
+    - `NeutronAddRouterInterface`
+    - `NeutronRemoveRouterInterface`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
 # 3.1.47 2023-07-06
 
 ### HuaweiCloud SDK CodeCheck

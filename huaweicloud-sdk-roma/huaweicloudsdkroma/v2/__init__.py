@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import RomaClient
 from huaweicloudsdkroma.v2.roma_client import RomaClient
 from huaweicloudsdkroma.v2.roma_async_client import RomaAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkroma.v2.model.acl_api_binding_create import AclApiBindingCreate
 from huaweicloudsdkroma.v2.model.acl_api_binding_info import AclApiBindingInfo
 from huaweicloudsdkroma.v2.model.acl_batch_delete import AclBatchDelete

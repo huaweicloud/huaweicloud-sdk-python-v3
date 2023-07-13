@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import CcmClient
 from huaweicloudsdkccm.v1.ccm_client import CcmClient
 from huaweicloudsdkccm.v1.ccm_async_client import CcmAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkccm.v1.model.batch_create_ca_tags_request import BatchCreateCaTagsRequest
 from huaweicloudsdkccm.v1.model.batch_create_ca_tags_response import BatchCreateCaTagsResponse
 from huaweicloudsdkccm.v1.model.batch_create_cert_tags_request import BatchCreateCertTagsRequest

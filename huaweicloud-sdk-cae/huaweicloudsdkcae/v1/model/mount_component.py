@@ -39,15 +39,15 @@ class MountComponent:
 
         The model defined in huaweicloud sdk
 
-        :param env_id: 环境id。
+        :param env_id: 环境ID。
         :type env_id: str
         :param env_name: 环境名称。
         :type env_name: str
-        :param app_id: 应用id。
+        :param app_id: 应用ID。
         :type app_id: str
         :param app_name: 应用名称。
         :type app_name: str
-        :param component_id: 组件id。
+        :param component_id: 组件ID。
         :type component_id: str
         :param component_name: 组件名称。
         :type component_name: str
@@ -80,7 +80,7 @@ class MountComponent:
     def env_id(self):
         """Gets the env_id of this MountComponent.
 
-        环境id。
+        环境ID。
 
         :return: The env_id of this MountComponent.
         :rtype: str
@@ -91,7 +91,7 @@ class MountComponent:
     def env_id(self, env_id):
         """Sets the env_id of this MountComponent.
 
-        环境id。
+        环境ID。
 
         :param env_id: The env_id of this MountComponent.
         :type env_id: str
@@ -124,7 +124,7 @@ class MountComponent:
     def app_id(self):
         """Gets the app_id of this MountComponent.
 
-        应用id。
+        应用ID。
 
         :return: The app_id of this MountComponent.
         :rtype: str
@@ -135,7 +135,7 @@ class MountComponent:
     def app_id(self, app_id):
         """Sets the app_id of this MountComponent.
 
-        应用id。
+        应用ID。
 
         :param app_id: The app_id of this MountComponent.
         :type app_id: str
@@ -168,7 +168,7 @@ class MountComponent:
     def component_id(self):
         """Gets the component_id of this MountComponent.
 
-        组件id。
+        组件ID。
 
         :return: The component_id of this MountComponent.
         :rtype: str
@@ -179,7 +179,7 @@ class MountComponent:
     def component_id(self, component_id):
         """Sets the component_id of this MountComponent.
 
-        组件id。
+        组件ID。
 
         :param component_id: The component_id of this MountComponent.
         :type component_id: str

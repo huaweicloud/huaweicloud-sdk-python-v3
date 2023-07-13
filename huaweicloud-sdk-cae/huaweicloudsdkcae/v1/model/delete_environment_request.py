@@ -31,9 +31,9 @@ class DeleteEnvironmentRequest:
 
         The model defined in huaweicloud sdk
 
-        :param environment_id: 环境id。
+        :param environment_id: 环境ID。
         :type environment_id: str
-        :param x_enterprise_project_id: 租户的企业项目id。
+        :param x_enterprise_project_id: 企业项目ID。  - 创建环境时，环境会绑定企业项目ID。      - 最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。     - 该字段不传（或传为字符串“0”）时，则查询默认企业项目下的资源。  &gt; 关于企业项目ID的获取及企业项目特性的详细信息，请参见《[企业管理服务用户指南](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0126101490.html)》。
         :type x_enterprise_project_id: str
         """
         
@@ -51,7 +51,7 @@ class DeleteEnvironmentRequest:
     def environment_id(self):
         """Gets the environment_id of this DeleteEnvironmentRequest.
 
-        环境id。
+        环境ID。
 
         :return: The environment_id of this DeleteEnvironmentRequest.
         :rtype: str
@@ -62,7 +62,7 @@ class DeleteEnvironmentRequest:
     def environment_id(self, environment_id):
         """Sets the environment_id of this DeleteEnvironmentRequest.
 
-        环境id。
+        环境ID。
 
         :param environment_id: The environment_id of this DeleteEnvironmentRequest.
         :type environment_id: str
@@ -73,7 +73,7 @@ class DeleteEnvironmentRequest:
     def x_enterprise_project_id(self):
         """Gets the x_enterprise_project_id of this DeleteEnvironmentRequest.
 
-        租户的企业项目id。
+        企业项目ID。  - 创建环境时，环境会绑定企业项目ID。      - 最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。     - 该字段不传（或传为字符串“0”）时，则查询默认企业项目下的资源。  > 关于企业项目ID的获取及企业项目特性的详细信息，请参见《[企业管理服务用户指南](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0126101490.html)》。
 
         :return: The x_enterprise_project_id of this DeleteEnvironmentRequest.
         :rtype: str
@@ -84,7 +84,7 @@ class DeleteEnvironmentRequest:
     def x_enterprise_project_id(self, x_enterprise_project_id):
         """Sets the x_enterprise_project_id of this DeleteEnvironmentRequest.
 
-        租户的企业项目id。
+        企业项目ID。  - 创建环境时，环境会绑定企业项目ID。      - 最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。     - 该字段不传（或传为字符串“0”）时，则查询默认企业项目下的资源。  > 关于企业项目ID的获取及企业项目特性的详细信息，请参见《[企业管理服务用户指南](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0126101490.html)》。
 
         :param x_enterprise_project_id: The x_enterprise_project_id of this DeleteEnvironmentRequest.
         :type x_enterprise_project_id: str

@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import DevSecurityClient
 from huaweicloudsdkdevsecurity.v1.devsecurity_client import DevSecurityClient
 from huaweicloudsdkdevsecurity.v1.devsecurity_async_client import DevSecurityAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkdevsecurity.v1.model.action_with_entities import ActionWithEntities
 from huaweicloudsdkdevsecurity.v1.model.apk_component_info import ApkComponentInfo
 from huaweicloudsdkdevsecurity.v1.model.apk_component_item import ApkComponentItem

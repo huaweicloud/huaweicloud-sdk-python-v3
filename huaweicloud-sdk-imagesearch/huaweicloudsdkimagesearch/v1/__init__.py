@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import ImageSearchClient
 from huaweicloudsdkimagesearch.v1.imagesearch_client import ImageSearchClient
 from huaweicloudsdkimagesearch.v1.imagesearch_async_client import ImageSearchAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkimagesearch.v1.model.add_picture_request_req import AddPictureRequestReq
 from huaweicloudsdkimagesearch.v1.model.create_instance_req import CreateInstanceReq
 from huaweicloudsdkimagesearch.v1.model.delete_picture_req import DeletePictureReq

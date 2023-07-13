@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import ElbClient
 from huaweicloudsdkelb.v2.elb_client import ElbClient
 from huaweicloudsdkelb.v2.elb_async_client import ElbAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkelb.v2.model.action_match import ActionMatch
 from huaweicloudsdkelb.v2.model.action_tag import ActionTag
 from huaweicloudsdkelb.v2.model.batch_create_listener_tags_request import BatchCreateListenerTagsRequest

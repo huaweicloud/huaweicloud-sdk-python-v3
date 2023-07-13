@@ -306,13 +306,11 @@ class Client(object):
         path_params = self._post_process_params(path_params) or {}
         if path_params:
             path_params = http_utils.sanitize_for_serialization(path_params)
-            path_params = http_utils.parameters_to_tuples(path_params, collection_formats)
-            for k, v in path_params:
+            for k, v in http_utils.parameters_to_tuples(path_params, collection_formats):
                 resource_path = resource_path.replace('{%s}' % k, quote(str(v), safe=''))
         if update_path_params:
             update_path_params = http_utils.sanitize_for_serialization(update_path_params)
-            update_path_params = http_utils.parameters_to_tuples(update_path_params, collection_formats)
-            for k, v in update_path_params:
+            for k, v in http_utils.parameters_to_tuples(update_path_params, collection_formats):
                 resource_path = resource_path.replace('{%s}' % k, quote(str(v), safe=''))
         return resource_path
 
@@ -327,7 +325,7 @@ class Client(object):
         post_params = self._post_process_params(post_params) if post_params else {}
         if post_params:
             post_params = http_utils.sanitize_for_serialization(post_params)
-            post_params = http_utils.parameters_to_tuples(post_params, collection_formats)
+            return http_utils.parameters_to_tuples(post_params, collection_formats)
         return post_params
 
     @classmethod

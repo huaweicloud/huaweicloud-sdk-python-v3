@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import OrganizationsClient
 from huaweicloudsdkorganizations.v1.organizations_client import OrganizationsClient
 from huaweicloudsdkorganizations.v1.organizations_async_client import OrganizationsAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkorganizations.v1.model.accept_handshake_request import AcceptHandshakeRequest
 from huaweicloudsdkorganizations.v1.model.accept_handshake_response import AcceptHandshakeResponse
 from huaweicloudsdkorganizations.v1.model.account_dto import AccountDto

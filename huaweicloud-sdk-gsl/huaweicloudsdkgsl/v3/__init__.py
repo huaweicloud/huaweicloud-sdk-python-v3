@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import GslClient
 from huaweicloudsdkgsl.v3.gsl_client import GslClient
 from huaweicloudsdkgsl.v3.gsl_async_client import GslAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkgsl.v3.model.add_or_modify_attribute_req import AddOrModifyAttributeReq
 from huaweicloudsdkgsl.v3.model.add_or_modify_tag_req import AddOrModifyTagReq
 from huaweicloudsdkgsl.v3.model.attribute_req import AttributeReq

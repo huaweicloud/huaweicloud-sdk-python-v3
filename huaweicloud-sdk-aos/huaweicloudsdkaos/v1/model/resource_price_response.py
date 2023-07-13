@@ -39,7 +39,7 @@ class ResourcePriceResponse:
 
         The model defined in huaweicloud sdk
 
-        :param charge_mode: 计费模式  * &#x60;PRE_PAID&#x60; - 包周期计费 * &#x60;POST_PAID&#x60; - 按需计费 * &#x60;FREE&#x60; - 免费 
+        :param charge_mode: 计费模式  * &#x60;PRE_PAID&#x60; - 包周期计费 * &#x60;POST_PAID&#x60; - 按需计费 * &#x60;FREE&#x60; - 免费
         :type charge_mode: str
         :param sale_price: 该资源最终优惠后的金额（只考虑官网折扣、商务折扣以及伙伴折扣，不包含促销折扣及优惠券），保留小数点后2位，向上取整，默认单位是元。
         :type sale_price: float
@@ -47,9 +47,9 @@ class ResourcePriceResponse:
         :type discount: float
         :param original_price: 该资源的原价，保留小数点后2位，向上取整，默认单位是元。
         :type original_price: float
-        :param period_type: 计费单位  若该资源支持包周期计费或按需计费，则会返回该字段；若该资源为免费资源，则不返回该字段。  * &#x60;HOUR&#x60; - 小时，按需计费的单位 * &#x60;DAY&#x60; - 天，按需计费的单位 * &#x60;MONTH&#x60; - 月，包周期计费的单位 * &#x60;YEAR&#x60; - 年，包周期计费的单位 * &#x60;BYTE&#x60; - 字节，按需计费的单位 * &#x60;MB&#x60; - 百万字节，包周期计费和按需计费的单位 * &#x60;GB&#x60; - 千兆字节，包周期计费和按需计费的单位 
+        :param period_type: 计费单位  若该资源支持包周期计费或按需计费，则会返回该字段；若该资源为免费资源，则不返回该字段。  * &#x60;HOUR&#x60; - 小时，按需计费的单位 * &#x60;DAY&#x60; - 天，按需计费的单位 * &#x60;MONTH&#x60; - 月，包周期计费的单位 * &#x60;YEAR&#x60; - 年，包周期计费的单位 * &#x60;BYTE&#x60; - 字节，按需计费的单位 * &#x60;MB&#x60; - 百万字节，包周期计费和按需计费的单位 * &#x60;GB&#x60; - 千兆字节，包周期计费和按需计费的单位
         :type period_type: str
-        :param period_count: 该资源的计费数量，需要和period_type搭配使用  若该资源支持包周期计费或按需计费，则会返回该字段；若该资源为免费资源，则不返回该字段。  * 对于按需计费资源，此值默认返回1，代表在1个计费单位下，该资源的价格 * 对于包周期计费资源，此值与模板中该资源的period字段保持一致 
+        :param period_count: 该资源的计费数量，需要和period_type搭配使用  若该资源支持包周期计费或按需计费，则会返回该字段；若该资源为免费资源，则不返回该字段。  * 对于按需计费资源，此值默认返回1，代表在1个计费单位下，该资源的价格 * 对于包周期计费资源，此值与模板中该资源的period字段保持一致
         :type period_count: int
         """
         
@@ -80,7 +80,7 @@ class ResourcePriceResponse:
     def charge_mode(self):
         """Gets the charge_mode of this ResourcePriceResponse.
 
-        计费模式  * `PRE_PAID` - 包周期计费 * `POST_PAID` - 按需计费 * `FREE` - 免费 
+        计费模式  * `PRE_PAID` - 包周期计费 * `POST_PAID` - 按需计费 * `FREE` - 免费
 
         :return: The charge_mode of this ResourcePriceResponse.
         :rtype: str
@@ -91,7 +91,7 @@ class ResourcePriceResponse:
     def charge_mode(self, charge_mode):
         """Sets the charge_mode of this ResourcePriceResponse.
 
-        计费模式  * `PRE_PAID` - 包周期计费 * `POST_PAID` - 按需计费 * `FREE` - 免费 
+        计费模式  * `PRE_PAID` - 包周期计费 * `POST_PAID` - 按需计费 * `FREE` - 免费
 
         :param charge_mode: The charge_mode of this ResourcePriceResponse.
         :type charge_mode: str
@@ -168,7 +168,7 @@ class ResourcePriceResponse:
     def period_type(self):
         """Gets the period_type of this ResourcePriceResponse.
 
-        计费单位  若该资源支持包周期计费或按需计费，则会返回该字段；若该资源为免费资源，则不返回该字段。  * `HOUR` - 小时，按需计费的单位 * `DAY` - 天，按需计费的单位 * `MONTH` - 月，包周期计费的单位 * `YEAR` - 年，包周期计费的单位 * `BYTE` - 字节，按需计费的单位 * `MB` - 百万字节，包周期计费和按需计费的单位 * `GB` - 千兆字节，包周期计费和按需计费的单位 
+        计费单位  若该资源支持包周期计费或按需计费，则会返回该字段；若该资源为免费资源，则不返回该字段。  * `HOUR` - 小时，按需计费的单位 * `DAY` - 天，按需计费的单位 * `MONTH` - 月，包周期计费的单位 * `YEAR` - 年，包周期计费的单位 * `BYTE` - 字节，按需计费的单位 * `MB` - 百万字节，包周期计费和按需计费的单位 * `GB` - 千兆字节，包周期计费和按需计费的单位
 
         :return: The period_type of this ResourcePriceResponse.
         :rtype: str
@@ -179,7 +179,7 @@ class ResourcePriceResponse:
     def period_type(self, period_type):
         """Sets the period_type of this ResourcePriceResponse.
 
-        计费单位  若该资源支持包周期计费或按需计费，则会返回该字段；若该资源为免费资源，则不返回该字段。  * `HOUR` - 小时，按需计费的单位 * `DAY` - 天，按需计费的单位 * `MONTH` - 月，包周期计费的单位 * `YEAR` - 年，包周期计费的单位 * `BYTE` - 字节，按需计费的单位 * `MB` - 百万字节，包周期计费和按需计费的单位 * `GB` - 千兆字节，包周期计费和按需计费的单位 
+        计费单位  若该资源支持包周期计费或按需计费，则会返回该字段；若该资源为免费资源，则不返回该字段。  * `HOUR` - 小时，按需计费的单位 * `DAY` - 天，按需计费的单位 * `MONTH` - 月，包周期计费的单位 * `YEAR` - 年，包周期计费的单位 * `BYTE` - 字节，按需计费的单位 * `MB` - 百万字节，包周期计费和按需计费的单位 * `GB` - 千兆字节，包周期计费和按需计费的单位
 
         :param period_type: The period_type of this ResourcePriceResponse.
         :type period_type: str
@@ -190,7 +190,7 @@ class ResourcePriceResponse:
     def period_count(self):
         """Gets the period_count of this ResourcePriceResponse.
 
-        该资源的计费数量，需要和period_type搭配使用  若该资源支持包周期计费或按需计费，则会返回该字段；若该资源为免费资源，则不返回该字段。  * 对于按需计费资源，此值默认返回1，代表在1个计费单位下，该资源的价格 * 对于包周期计费资源，此值与模板中该资源的period字段保持一致 
+        该资源的计费数量，需要和period_type搭配使用  若该资源支持包周期计费或按需计费，则会返回该字段；若该资源为免费资源，则不返回该字段。  * 对于按需计费资源，此值默认返回1，代表在1个计费单位下，该资源的价格 * 对于包周期计费资源，此值与模板中该资源的period字段保持一致
 
         :return: The period_count of this ResourcePriceResponse.
         :rtype: int
@@ -201,7 +201,7 @@ class ResourcePriceResponse:
     def period_count(self, period_count):
         """Sets the period_count of this ResourcePriceResponse.
 
-        该资源的计费数量，需要和period_type搭配使用  若该资源支持包周期计费或按需计费，则会返回该字段；若该资源为免费资源，则不返回该字段。  * 对于按需计费资源，此值默认返回1，代表在1个计费单位下，该资源的价格 * 对于包周期计费资源，此值与模板中该资源的period字段保持一致 
+        该资源的计费数量，需要和period_type搭配使用  若该资源支持包周期计费或按需计费，则会返回该字段；若该资源为免费资源，则不返回该字段。  * 对于按需计费资源，此值默认返回1，代表在1个计费单位下，该资源的价格 * 对于包周期计费资源，此值与模板中该资源的period字段保持一致
 
         :param period_count: The period_count of this ResourcePriceResponse.
         :type period_count: int

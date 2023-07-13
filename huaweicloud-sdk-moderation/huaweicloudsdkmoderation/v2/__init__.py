@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import ModerationClient
 from huaweicloudsdkmoderation.v2.moderation_client import ModerationClient
 from huaweicloudsdkmoderation.v2.moderation_async_client import ModerationAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkmoderation.v2.model.check_result_items_body import CheckResultItemsBody
 from huaweicloudsdkmoderation.v2.model.check_result_result_body import CheckResultResultBody
 from huaweicloudsdkmoderation.v2.model.check_task_jobs_items_body import CheckTaskJobsItemsBody

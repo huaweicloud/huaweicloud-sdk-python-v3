@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import ConfigClient
 from huaweicloudsdkconfig.v1.config_client import ConfigClient
 from huaweicloudsdkconfig.v1.config_async_client import ConfigAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkconfig.v1.model.account_aggregation_source import AccountAggregationSource
 from huaweicloudsdkconfig.v1.model.aggregate_compliance_detail_request import AggregateComplianceDetailRequest
 from huaweicloudsdkconfig.v1.model.aggregate_discovered_resource_counts_request import AggregateDiscoveredResourceCountsRequest

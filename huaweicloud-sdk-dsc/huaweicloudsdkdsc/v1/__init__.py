@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import DscClient
 from huaweicloudsdkdsc.v1.dsc_client import DscClient
 from huaweicloudsdkdsc.v1.dsc_async_client import DscAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkdsc.v1.model.add_buckets_request import AddBucketsRequest
 from huaweicloudsdkdsc.v1.model.add_buckets_response import AddBucketsResponse
 from huaweicloudsdkdsc.v1.model.add_rule_group_request import AddRuleGroupRequest

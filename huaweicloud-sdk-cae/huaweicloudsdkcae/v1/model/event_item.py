@@ -18,6 +18,7 @@ class EventItem:
 
     openapi_types = {
         'name': 'str',
+        'involved_object_kind': 'str',
         'involved_object': 'str',
         'message': 'str',
         'created_at': 'str',
@@ -28,6 +29,7 @@ class EventItem:
 
     attribute_map = {
         'name': 'name',
+        'involved_object_kind': 'involved_object_kind',
         'involved_object': 'involved_object',
         'message': 'message',
         'created_at': 'created_at',
@@ -36,20 +38,22 @@ class EventItem:
         'count': 'count'
     }
 
-    def __init__(self, name=None, involved_object=None, message=None, created_at=None, updated_at=None, status=None, count=None):
+    def __init__(self, name=None, involved_object_kind=None, involved_object=None, message=None, created_at=None, updated_at=None, status=None, count=None):
         """EventItem
 
         The model defined in huaweicloud sdk
 
-        :param name: 事件名。
+        :param name: 事件名称。
         :type name: str
+        :param involved_object_kind: 涉及对象类型。
+        :type involved_object_kind: str
         :param involved_object: 涉及对象。
         :type involved_object: str
         :param message: 组件事件信息。
         :type message: str
         :param created_at: 创建时间。
         :type created_at: str
-        :param updated_at: 修改时间。
+        :param updated_at: 更新时间。
         :type updated_at: str
         :param status: 组件事件状态。
         :type status: str
@@ -60,6 +64,7 @@ class EventItem:
         
 
         self._name = None
+        self._involved_object_kind = None
         self._involved_object = None
         self._message = None
         self._created_at = None
@@ -70,6 +75,8 @@ class EventItem:
 
         if name is not None:
             self.name = name
+        if involved_object_kind is not None:
+            self.involved_object_kind = involved_object_kind
         if involved_object is not None:
             self.involved_object = involved_object
         if message is not None:
@@ -87,7 +94,7 @@ class EventItem:
     def name(self):
         """Gets the name of this EventItem.
 
-        事件名。
+        事件名称。
 
         :return: The name of this EventItem.
         :rtype: str
@@ -98,12 +105,34 @@ class EventItem:
     def name(self, name):
         """Sets the name of this EventItem.
 
-        事件名。
+        事件名称。
 
         :param name: The name of this EventItem.
         :type name: str
         """
         self._name = name
+
+    @property
+    def involved_object_kind(self):
+        """Gets the involved_object_kind of this EventItem.
+
+        涉及对象类型。
+
+        :return: The involved_object_kind of this EventItem.
+        :rtype: str
+        """
+        return self._involved_object_kind
+
+    @involved_object_kind.setter
+    def involved_object_kind(self, involved_object_kind):
+        """Sets the involved_object_kind of this EventItem.
+
+        涉及对象类型。
+
+        :param involved_object_kind: The involved_object_kind of this EventItem.
+        :type involved_object_kind: str
+        """
+        self._involved_object_kind = involved_object_kind
 
     @property
     def involved_object(self):
@@ -175,7 +204,7 @@ class EventItem:
     def updated_at(self):
         """Gets the updated_at of this EventItem.
 
-        修改时间。
+        更新时间。
 
         :return: The updated_at of this EventItem.
         :rtype: str
@@ -186,7 +215,7 @@ class EventItem:
     def updated_at(self, updated_at):
         """Sets the updated_at of this EventItem.
 
-        修改时间。
+        更新时间。
 
         :param updated_at: The updated_at of this EventItem.
         :type updated_at: str

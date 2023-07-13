@@ -18,41 +18,62 @@ class ApplicationItem:
 
     openapi_types = {
         'id': 'str',
-        'name': 'str'
+        'name': 'str',
+        'annotations': 'dict(str, str)',
+        'created_at': 'datetime',
+        'updated_at': 'datetime'
     }
 
     attribute_map = {
         'id': 'id',
-        'name': 'name'
+        'name': 'name',
+        'annotations': 'annotations',
+        'created_at': 'created_at',
+        'updated_at': 'updated_at'
     }
 
-    def __init__(self, id=None, name=None):
+    def __init__(self, id=None, name=None, annotations=None, created_at=None, updated_at=None):
         """ApplicationItem
 
         The model defined in huaweicloud sdk
 
-        :param id: ID。
+        :param id: 应用ID。
         :type id: str
-        :param name: 名称。
+        :param name: 应用名称。
         :type name: str
+        :param annotations: 应用附加属性，当前只支持description参数。
+        :type annotations: dict(str, str)
+        :param created_at: 创建时间。
+        :type created_at: datetime
+        :param updated_at: 更新时间。
+        :type updated_at: datetime
         """
         
         
 
         self._id = None
         self._name = None
+        self._annotations = None
+        self._created_at = None
+        self._updated_at = None
         self.discriminator = None
 
         if id is not None:
             self.id = id
         if name is not None:
             self.name = name
+        if annotations is not None:
+            self.annotations = annotations
+        if created_at is not None:
+            self.created_at = created_at
+        if updated_at is not None:
+            self.updated_at = updated_at
 
     @property
     def id(self):
         """Gets the id of this ApplicationItem.
 
-        ID。
+        应用ID。
 
         :return: The id of this ApplicationItem.
         :rtype: str
@@ -63,7 +84,7 @@ class ApplicationItem:
     def id(self, id):
         """Sets the id of this ApplicationItem.
 
-        ID。
+        应用ID。
 
         :param id: The id of this ApplicationItem.
         :type id: str
@@ -74,7 +95,7 @@ class ApplicationItem:
     def name(self):
         """Gets the name of this ApplicationItem.
 
-        名称。
+        应用名称。
 
         :return: The name of this ApplicationItem.
         :rtype: str
@@ -85,12 +106,78 @@ class ApplicationItem:
     def name(self, name):
         """Sets the name of this ApplicationItem.
 
-        名称。
+        应用名称。
 
         :param name: The name of this ApplicationItem.
         :type name: str
         """
         self._name = name
+
+    @property
+    def annotations(self):
+        """Gets the annotations of this ApplicationItem.
+
+        应用附加属性，当前只支持description参数。
+
+        :return: The annotations of this ApplicationItem.
+        :rtype: dict(str, str)
+        """
+        return self._annotations
+
+    @annotations.setter
+    def annotations(self, annotations):
+        """Sets the annotations of this ApplicationItem.
+
+        应用附加属性，当前只支持description参数。
+
+        :param annotations: The annotations of this ApplicationItem.
+        :type annotations: dict(str, str)
+        """
+        self._annotations = annotations
+
+    @property
+    def created_at(self):
+        """Gets the created_at of this ApplicationItem.
+
+        创建时间。
+
+        :return: The created_at of this ApplicationItem.
+        :rtype: datetime
+        """
+        return self._created_at
+
+    @created_at.setter
+    def created_at(self, created_at):
+        """Sets the created_at of this ApplicationItem.
+
+        创建时间。
+
+        :param created_at: The created_at of this ApplicationItem.
+        :type created_at: datetime
+        """
+        self._created_at = created_at
+
+    @property
+    def updated_at(self):
+        """Gets the updated_at of this ApplicationItem.
+
+        更新时间。
+
+        :return: The updated_at of this ApplicationItem.
+        :rtype: datetime
+        """
+        return self._updated_at
+
+    @updated_at.setter
+    def updated_at(self, updated_at):
+        """Sets the updated_at of this ApplicationItem.
+
+        更新时间。
+
+        :param updated_at: The updated_at of this ApplicationItem.
+        :type updated_at: datetime
+        """
+        self._updated_at = updated_at
 
     def to_dict(self):
         """Returns the model properties as a dict"""

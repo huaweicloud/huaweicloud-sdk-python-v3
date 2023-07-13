@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import KafkaClient
 from huaweicloudsdkkafka.v2.kafka_client import KafkaClient
 from huaweicloudsdkkafka.v2.kafka_async_client import KafkaAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkkafka.v2.model.access_policy_entity import AccessPolicyEntity
 from huaweicloudsdkkafka.v2.model.access_policy_topic_entity import AccessPolicyTopicEntity
 from huaweicloudsdkkafka.v2.model.batch_create_or_delete_kafka_tag_request import BatchCreateOrDeleteKafkaTagRequest

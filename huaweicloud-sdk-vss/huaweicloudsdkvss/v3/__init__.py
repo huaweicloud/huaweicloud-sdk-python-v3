@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import VssClient
 from huaweicloudsdkvss.v3.vss_client import VssClient
 from huaweicloudsdkvss.v3.vss_async_client import VssAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkvss.v3.model.authorize_domains_request import AuthorizeDomainsRequest
 from huaweicloudsdkvss.v3.model.authorize_domains_request_body import AuthorizeDomainsRequestBody
 from huaweicloudsdkvss.v3.model.authorize_domains_response import AuthorizeDomainsResponse

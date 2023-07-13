@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import IesClient
 from huaweicloudsdkies.v1.ies_client import IesClient
 from huaweicloudsdkies.v1.ies_async_client import IesAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkies.v1.model.charge_mode import ChargeMode
 from huaweicloudsdkies.v1.model.compute_spec import ComputeSpec
 from huaweicloudsdkies.v1.model.condition import Condition

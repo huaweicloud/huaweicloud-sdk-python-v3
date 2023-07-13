@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import LiveClient
 from huaweicloudsdklive.v2.live_client import LiveClient
 from huaweicloudsdklive.v2.live_async_client import LiveAsyncClient
-# import models into sdk package
+
 from huaweicloudsdklive.v2.model.area_detail import AreaDetail
 from huaweicloudsdklive.v2.model.area_time_value import AreaTimeValue
 from huaweicloudsdklive.v2.model.history_stream_info import HistoryStreamInfo

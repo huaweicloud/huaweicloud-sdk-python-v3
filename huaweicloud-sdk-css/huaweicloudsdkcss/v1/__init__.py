@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import CssClient
 from huaweicloudsdkcss.v1.css_client import CssClient
 from huaweicloudsdkcss.v1.css_async_client import CssAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkcss.v1.model.actions import Actions
 from huaweicloudsdkcss.v1.model.add_favorite_req import AddFavoriteReq
 from huaweicloudsdkcss.v1.model.add_favorite_req_template import AddFavoriteReqTemplate

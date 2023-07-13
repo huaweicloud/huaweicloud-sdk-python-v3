@@ -35,7 +35,7 @@ class VarsStructure:
 
         :param var_key: 参数的名字
         :type var_key: str
-        :param var_value: 参数的值。  注意，参数需要以字符串形式存在，如果是数字，也需要以字符串形式存在，如&#39;10&#39;。  如果需要支持不同类型，或者复杂结构，请使用vars_uri或vars_body 
+        :param var_value: 参数的值。  注意，参数需要以字符串形式存在，如果是数字，也需要以字符串形式存在，如&#39;10&#39;。  如果需要支持不同类型，或者复杂结构，请使用vars_uri或vars_body
         :type var_value: str
         :param encryption: 
         :type encryption: :class:`huaweicloudsdkaos.v1.EncryptionStructure`
@@ -79,7 +79,7 @@ class VarsStructure:
     def var_value(self):
         """Gets the var_value of this VarsStructure.
 
-        参数的值。  注意，参数需要以字符串形式存在，如果是数字，也需要以字符串形式存在，如'10'。  如果需要支持不同类型，或者复杂结构，请使用vars_uri或vars_body 
+        参数的值。  注意，参数需要以字符串形式存在，如果是数字，也需要以字符串形式存在，如'10'。  如果需要支持不同类型，或者复杂结构，请使用vars_uri或vars_body
 
         :return: The var_value of this VarsStructure.
         :rtype: str
@@ -90,7 +90,7 @@ class VarsStructure:
     def var_value(self, var_value):
         """Sets the var_value of this VarsStructure.
 
-        参数的值。  注意，参数需要以字符串形式存在，如果是数字，也需要以字符串形式存在，如'10'。  如果需要支持不同类型，或者复杂结构，请使用vars_uri或vars_body 
+        参数的值。  注意，参数需要以字符串形式存在，如果是数字，也需要以字符串形式存在，如'10'。  如果需要支持不同类型，或者复杂结构，请使用vars_uri或vars_body
 
         :param var_value: The var_value of this VarsStructure.
         :type var_value: str

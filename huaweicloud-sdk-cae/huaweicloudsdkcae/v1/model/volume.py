@@ -39,17 +39,17 @@ class Volume:
 
         The model defined in huaweicloud sdk
 
-        :param id: id。
+        :param id: 云存储ID。
         :type id: str
-        :param resource_info: 资源信息。
+        :param resource_info: 存储资源详情。
         :type resource_info: dict(str, str)
         :param resource_name: 并行文件系统或存储桶名称。
         :type resource_name: str
-        :param resource_type: 资源类型。
+        :param resource_type: 资源类型，当前只支持“obs”。
         :type resource_type: str
-        :param resource_sub_type: 对象存储类型，例如：并行文件系统、存储桶。
+        :param resource_sub_type: 存储资源子类型，例如：并行文件系统、存储桶。
         :type resource_sub_type: str
-        :param time: 时间。
+        :param time: 创建时间。
         :type time: str
         """
         
@@ -80,7 +80,7 @@ class Volume:
     def id(self):
         """Gets the id of this Volume.
 
-        id。
+        云存储ID。
 
         :return: The id of this Volume.
         :rtype: str
@@ -91,7 +91,7 @@ class Volume:
     def id(self, id):
         """Sets the id of this Volume.
 
-        id。
+        云存储ID。
 
         :param id: The id of this Volume.
         :type id: str
@@ -102,7 +102,7 @@ class Volume:
     def resource_info(self):
         """Gets the resource_info of this Volume.
 
-        资源信息。
+        存储资源详情。
 
         :return: The resource_info of this Volume.
         :rtype: dict(str, str)
@@ -113,7 +113,7 @@ class Volume:
     def resource_info(self, resource_info):
         """Sets the resource_info of this Volume.
 
-        资源信息。
+        存储资源详情。
 
         :param resource_info: The resource_info of this Volume.
         :type resource_info: dict(str, str)
@@ -146,7 +146,7 @@ class Volume:
     def resource_type(self):
         """Gets the resource_type of this Volume.
 
-        资源类型。
+        资源类型，当前只支持“obs”。
 
         :return: The resource_type of this Volume.
         :rtype: str
@@ -157,7 +157,7 @@ class Volume:
     def resource_type(self, resource_type):
         """Sets the resource_type of this Volume.
 
-        资源类型。
+        资源类型，当前只支持“obs”。
 
         :param resource_type: The resource_type of this Volume.
         :type resource_type: str
@@ -168,7 +168,7 @@ class Volume:
     def resource_sub_type(self):
         """Gets the resource_sub_type of this Volume.
 
-        对象存储类型，例如：并行文件系统、存储桶。
+        存储资源子类型，例如：并行文件系统、存储桶。
 
         :return: The resource_sub_type of this Volume.
         :rtype: str
@@ -179,7 +179,7 @@ class Volume:
     def resource_sub_type(self, resource_sub_type):
         """Sets the resource_sub_type of this Volume.
 
-        对象存储类型，例如：并行文件系统、存储桶。
+        存储资源子类型，例如：并行文件系统、存储桶。
 
         :param resource_sub_type: The resource_sub_type of this Volume.
         :type resource_sub_type: str
@@ -190,7 +190,7 @@ class Volume:
     def time(self):
         """Gets the time of this Volume.
 
-        时间。
+        创建时间。
 
         :return: The time of this Volume.
         :rtype: str
@@ -201,7 +201,7 @@ class Volume:
     def time(self, time):
         """Sets the time of this Volume.
 
-        时间。
+        创建时间。
 
         :param time: The time of this Volume.
         :type time: str

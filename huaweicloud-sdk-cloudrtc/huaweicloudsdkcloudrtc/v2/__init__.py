@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import CloudRTCClient
 from huaweicloudsdkcloudrtc.v2.cloudrtc_client import CloudRTCClient
 from huaweicloudsdkcloudrtc.v2.cloudrtc_async_client import CloudRTCAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkcloudrtc.v2.model.app import App
 from huaweicloudsdkcloudrtc.v2.model.app_auth import AppAuth
 from huaweicloudsdkcloudrtc.v2.model.app_auth_req import AppAuthReq

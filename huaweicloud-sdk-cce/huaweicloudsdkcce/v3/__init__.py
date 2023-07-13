@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import CceClient
 from huaweicloudsdkcce.v3.cce_client import CceClient
 from huaweicloudsdkcce.v3.cce_async_client import CceAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkcce.v3.model.api_version_detail import APIVersionDetail
 from huaweicloudsdkcce.v3.model.api_version_link import APIVersionLink
 from huaweicloudsdkcce.v3.model.add_node import AddNode

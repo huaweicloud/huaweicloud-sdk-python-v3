@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import SFSTurboClient
 from huaweicloudsdksfsturbo.v1.sfsturbo_client import SFSTurboClient
 from huaweicloudsdksfsturbo.v1.sfsturbo_async_client import SFSTurboAsyncClient
-# import models into sdk package
+
 from huaweicloudsdksfsturbo.v1.model.action_progress import ActionProgress
 from huaweicloudsdksfsturbo.v1.model.batch_add_shared_tags_request import BatchAddSharedTagsRequest
 from huaweicloudsdksfsturbo.v1.model.batch_add_shared_tags_request_body import BatchAddSharedTagsRequestBody

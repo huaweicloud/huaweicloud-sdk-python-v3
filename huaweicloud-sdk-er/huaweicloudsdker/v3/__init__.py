@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import ErClient
 from huaweicloudsdker.v3.er_client import ErClient
 from huaweicloudsdker.v3.er_async_client import ErAsyncClient
-# import models into sdk package
+
 from huaweicloudsdker.v3.model.associate_route_table_request import AssociateRouteTableRequest
 from huaweicloudsdker.v3.model.associate_route_table_response import AssociateRouteTableResponse
 from huaweicloudsdker.v3.model.association import Association

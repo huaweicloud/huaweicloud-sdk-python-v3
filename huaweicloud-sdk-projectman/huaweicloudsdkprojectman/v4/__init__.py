@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import ProjectManClient
 from huaweicloudsdkprojectman.v4.projectman_client import ProjectManClient
 from huaweicloudsdkprojectman.v4.projectman_async_client import ProjectManAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkprojectman.v4.model.add_apply_join_project_for_agc_request import AddApplyJoinProjectForAgcRequest
 from huaweicloudsdkprojectman.v4.model.add_apply_join_project_for_agc_response import AddApplyJoinProjectForAgcResponse
 from huaweicloudsdkprojectman.v4.model.add_issue_work_hours_request import AddIssueWorkHoursRequest

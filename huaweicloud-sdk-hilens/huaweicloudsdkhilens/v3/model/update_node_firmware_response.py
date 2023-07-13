@@ -18,20 +18,24 @@ class UpdateNodeFirmwareResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'body': 'object',
         'firmware_name': 'str',
         'firmware_id': 'str'
     }
 
     attribute_map = {
+        'body': 'body',
         'firmware_name': 'firmware_name',
         'firmware_id': 'firmware_id'
     }
 
-    def __init__(self, firmware_name=None, firmware_id=None):
+    def __init__(self, body=None, firmware_name=None, firmware_id=None):
         """UpdateNodeFirmwareResponse
 
         The model defined in huaweicloud sdk
 
+        :param body: 
+        :type body: object
         :param firmware_name: 
         :type firmware_name: str
         :param firmware_id: 
@@ -40,14 +44,35 @@ class UpdateNodeFirmwareResponse(SdkResponse):
         
         super(UpdateNodeFirmwareResponse, self).__init__()
 
+        self._body = None
         self._firmware_name = None
         self._firmware_id = None
         self.discriminator = None
 
+        if body is not None:
+            self.body = body
         if firmware_name is not None:
             self.firmware_name = firmware_name
         if firmware_id is not None:
             self.firmware_id = firmware_id
+
+    @property
+    def body(self):
+        """Gets the body of this UpdateNodeFirmwareResponse.
+
+        :return: The body of this UpdateNodeFirmwareResponse.
+        :rtype: object
+        """
+        return self._body
+
+    @body.setter
+    def body(self, body):
+        """Sets the body of this UpdateNodeFirmwareResponse.
+
+        :param body: The body of this UpdateNodeFirmwareResponse.
+        :type body: object
+        """
+        self._body = body
 
     @property
     def firmware_name(self):

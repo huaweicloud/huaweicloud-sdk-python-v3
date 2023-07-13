@@ -36,9 +36,9 @@ class ListComponentsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param api_version: API版本。
+        :param api_version: API版本，固定值“v1”，该值不可修改。
         :type api_version: str
-        :param kind: 资源种类。
+        :param kind: API类型，固定值“Component”，该值不可修改。
         :type kind: str
         :param items: 组件列表。
         :type items: list[:class:`huaweicloudsdkcae.v1.ComponentItem`]
@@ -67,7 +67,7 @@ class ListComponentsResponse(SdkResponse):
     def api_version(self):
         """Gets the api_version of this ListComponentsResponse.
 
-        API版本。
+        API版本，固定值“v1”，该值不可修改。
 
         :return: The api_version of this ListComponentsResponse.
         :rtype: str
@@ -78,7 +78,7 @@ class ListComponentsResponse(SdkResponse):
     def api_version(self, api_version):
         """Sets the api_version of this ListComponentsResponse.
 
-        API版本。
+        API版本，固定值“v1”，该值不可修改。
 
         :param api_version: The api_version of this ListComponentsResponse.
         :type api_version: str
@@ -89,7 +89,7 @@ class ListComponentsResponse(SdkResponse):
     def kind(self):
         """Gets the kind of this ListComponentsResponse.
 
-        资源种类。
+        API类型，固定值“Component”，该值不可修改。
 
         :return: The kind of this ListComponentsResponse.
         :rtype: str
@@ -100,7 +100,7 @@ class ListComponentsResponse(SdkResponse):
     def kind(self, kind):
         """Sets the kind of this ListComponentsResponse.
 
-        资源种类。
+        API类型，固定值“Component”，该值不可修改。
 
         :param kind: The kind of this ListComponentsResponse.
         :type kind: str

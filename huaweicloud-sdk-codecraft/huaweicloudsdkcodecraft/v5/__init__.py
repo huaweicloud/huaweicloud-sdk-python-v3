@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import CodeCraftClient
 from huaweicloudsdkcodecraft.v5.codecraft_client import CodeCraftClient
 from huaweicloudsdkcodecraft.v5.codecraft_async_client import CodeCraftAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkcodecraft.v5.model.create_competition_score_request import CreateCompetitionScoreRequest
 from huaweicloudsdkcodecraft.v5.model.create_competition_score_response import CreateCompetitionScoreResponse
 from huaweicloudsdkcodecraft.v5.model.create_scores_request_model import CreateScoresRequestModel

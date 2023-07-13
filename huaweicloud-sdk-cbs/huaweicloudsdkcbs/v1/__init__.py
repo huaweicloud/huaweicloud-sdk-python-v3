@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import CbsClient
 from huaweicloudsdkcbs.v1.cbs_client import CbsClient
 from huaweicloudsdkcbs.v1.cbs_async_client import CbsAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkcbs.v1.model.answers import Answers
 from huaweicloudsdkcbs.v1.model.basic_list_resp import BasicListResp
 from huaweicloudsdkcbs.v1.model.candidate_intention import CandidateIntention

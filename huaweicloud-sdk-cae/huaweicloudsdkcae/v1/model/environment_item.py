@@ -21,7 +21,6 @@ class EnvironmentItem:
         'name': 'str',
         'job_id': 'str',
         'status': 'str',
-        'type': 'str',
         'annotations': 'dict(str, str)',
         'created_at': 'str',
         'updated_at': 'str'
@@ -32,32 +31,29 @@ class EnvironmentItem:
         'name': 'name',
         'job_id': 'job_id',
         'status': 'status',
-        'type': 'type',
         'annotations': 'annotations',
         'created_at': 'created_at',
         'updated_at': 'updated_at'
     }
 
-    def __init__(self, id=None, name=None, job_id=None, status=None, type=None, annotations=None, created_at=None, updated_at=None):
+    def __init__(self, id=None, name=None, job_id=None, status=None, annotations=None, created_at=None, updated_at=None):
         """EnvironmentItem
 
         The model defined in huaweicloud sdk
 
-        :param id: 环境id。
+        :param id: 环境ID。
         :type id: str
         :param name: 环境名称。
         :type name: str
-        :param job_id: 任务id。
+        :param job_id: 任务ID。
         :type job_id: str
         :param status: 环境状态。
         :type status: str
-        :param type: 环境类型。
-        :type type: str
-        :param annotations: 环境信息。
+        :param annotations: 环境附加属性。 - cluster_id：CCE集群ID。 - description: 环境描述信息。 - enterprise_project_id：企业项目ID。 - group_name：主环境绑定的SWR组织名称。 - inbound_eip_addr：负载均衡绑定EIP地址。 - namespace：CCE集群命名空间。 - public_elb_id：ELB ID，主环境绑定的负载均衡ID。 - type：环境类型，当前仅支持exclusive类型。 - vpc_id：主环境绑定的VPC ID。
         :type annotations: dict(str, str)
         :param created_at: 创建时间。
         :type created_at: str
-        :param updated_at: 修改时间。
+        :param updated_at: 更新时间。
         :type updated_at: str
         """
         
@@ -67,7 +63,6 @@ class EnvironmentItem:
         self._name = None
         self._job_id = None
         self._status = None
-        self._type = None
         self._annotations = None
         self._created_at = None
         self._updated_at = None
@@ -81,8 +76,6 @@ class EnvironmentItem:
             self.job_id = job_id
         if status is not None:
             self.status = status
-        if type is not None:
-            self.type = type
         if annotations is not None:
             self.annotations = annotations
         if created_at is not None:
@@ -94,7 +87,7 @@ class EnvironmentItem:
     def id(self):
         """Gets the id of this EnvironmentItem.
 
-        环境id。
+        环境ID。
 
         :return: The id of this EnvironmentItem.
         :rtype: str
@@ -105,7 +98,7 @@ class EnvironmentItem:
     def id(self, id):
         """Sets the id of this EnvironmentItem.
 
-        环境id。
+        环境ID。
 
         :param id: The id of this EnvironmentItem.
         :type id: str
@@ -138,7 +131,7 @@ class EnvironmentItem:
     def job_id(self):
         """Gets the job_id of this EnvironmentItem.
 
-        任务id。
+        任务ID。
 
         :return: The job_id of this EnvironmentItem.
         :rtype: str
@@ -149,7 +142,7 @@ class EnvironmentItem:
     def job_id(self, job_id):
         """Sets the job_id of this EnvironmentItem.
 
-        任务id。
+        任务ID。
 
         :param job_id: The job_id of this EnvironmentItem.
         :type job_id: str
@@ -179,32 +172,10 @@ class EnvironmentItem:
         self._status = status
 
     @property
-    def type(self):
-        """Gets the type of this EnvironmentItem.
-
-        环境类型。
-
-        :return: The type of this EnvironmentItem.
-        :rtype: str
-        """
-        return self._type
-
-    @type.setter
-    def type(self, type):
-        """Sets the type of this EnvironmentItem.
-
-        环境类型。
-
-        :param type: The type of this EnvironmentItem.
-        :type type: str
-        """
-        self._type = type
-
-    @property
     def annotations(self):
         """Gets the annotations of this EnvironmentItem.
 
-        环境信息。
+        环境附加属性。 - cluster_id：CCE集群ID。 - description: 环境描述信息。 - enterprise_project_id：企业项目ID。 - group_name：主环境绑定的SWR组织名称。 - inbound_eip_addr：负载均衡绑定EIP地址。 - namespace：CCE集群命名空间。 - public_elb_id：ELB ID，主环境绑定的负载均衡ID。 - type：环境类型，当前仅支持exclusive类型。 - vpc_id：主环境绑定的VPC ID。
 
         :return: The annotations of this EnvironmentItem.
         :rtype: dict(str, str)
@@ -215,7 +186,7 @@ class EnvironmentItem:
     def annotations(self, annotations):
         """Sets the annotations of this EnvironmentItem.
 
-        环境信息。
+        环境附加属性。 - cluster_id：CCE集群ID。 - description: 环境描述信息。 - enterprise_project_id：企业项目ID。 - group_name：主环境绑定的SWR组织名称。 - inbound_eip_addr：负载均衡绑定EIP地址。 - namespace：CCE集群命名空间。 - public_elb_id：ELB ID，主环境绑定的负载均衡ID。 - type：环境类型，当前仅支持exclusive类型。 - vpc_id：主环境绑定的VPC ID。
 
         :param annotations: The annotations of this EnvironmentItem.
         :type annotations: dict(str, str)
@@ -248,7 +219,7 @@ class EnvironmentItem:
     def updated_at(self):
         """Gets the updated_at of this EnvironmentItem.
 
-        修改时间。
+        更新时间。
 
         :return: The updated_at of this EnvironmentItem.
         :rtype: str
@@ -259,7 +230,7 @@ class EnvironmentItem:
     def updated_at(self, updated_at):
         """Sets the updated_at of this EnvironmentItem.
 
-        修改时间。
+        更新时间。
 
         :param updated_at: The updated_at of this EnvironmentItem.
         :type updated_at: str

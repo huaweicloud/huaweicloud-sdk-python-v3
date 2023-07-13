@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import RabbitMQClient
 from huaweicloudsdkrabbitmq.v2.rabbitmq_client import RabbitMQClient
 from huaweicloudsdkrabbitmq.v2.rabbitmq_async_client import RabbitMQAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkrabbitmq.v2.model.batch_create_or_delete_rabbit_mq_tag_request import BatchCreateOrDeleteRabbitMqTagRequest
 from huaweicloudsdkrabbitmq.v2.model.batch_create_or_delete_rabbit_mq_tag_response import BatchCreateOrDeleteRabbitMqTagResponse
 from huaweicloudsdkrabbitmq.v2.model.batch_create_or_delete_tag_req import BatchCreateOrDeleteTagReq

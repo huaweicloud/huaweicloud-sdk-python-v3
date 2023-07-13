@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import ClassroomClient
 from huaweicloudsdkclassroom.v3.classroom_client import ClassroomClient
 from huaweicloudsdkclassroom.v3.classroom_async_client import ClassroomAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkclassroom.v3.model.apply_judgement_request import ApplyJudgementRequest
 from huaweicloudsdkclassroom.v3.model.apply_judgement_response import ApplyJudgementResponse
 from huaweicloudsdkclassroom.v3.model.classroom_card import ClassroomCard

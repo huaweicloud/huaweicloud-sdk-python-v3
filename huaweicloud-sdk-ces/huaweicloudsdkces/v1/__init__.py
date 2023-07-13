@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import CesClient
 from huaweicloudsdkces.v1.ces_client import CesClient
 from huaweicloudsdkces.v1.ces_async_client import CesAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkces.v1.model.additional_info import AdditionalInfo
 from huaweicloudsdkces.v1.model.alarm_actions import AlarmActions
 from huaweicloudsdkces.v1.model.alarm_history_info import AlarmHistoryInfo

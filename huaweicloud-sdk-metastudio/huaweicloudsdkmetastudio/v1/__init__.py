@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import MetaStudioClient
 from huaweicloudsdkmetastudio.v1.metastudio_client import MetaStudioClient
 from huaweicloudsdkmetastudio.v1.metastudio_async_client import MetaStudioAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkmetastudio.v1.model.animation_asset_meta import AnimationAssetMeta
 from huaweicloudsdkmetastudio.v1.model.animation_item import AnimationItem
 from huaweicloudsdkmetastudio.v1.model.asset_extra_meta import AssetExtraMeta

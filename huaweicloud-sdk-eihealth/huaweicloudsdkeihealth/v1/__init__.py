@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import EiHealthClient
 from huaweicloudsdkeihealth.v1.eihealth_client import EiHealthClient
 from huaweicloudsdkeihealth.v1.eihealth_async_client import EiHealthAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkeihealth.v1.model.action_type import ActionType
 from huaweicloudsdkeihealth.v1.model.admet_request import AdmetRequest
 from huaweicloudsdkeihealth.v1.model.app_filter_dto import AppFilterDto

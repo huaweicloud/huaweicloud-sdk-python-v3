@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import RocketMQClient
 from huaweicloudsdkrocketmq.v2.rocketmq_client import RocketMQClient
 from huaweicloudsdkrocketmq.v2.rocketmq_async_client import RocketMQAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkrocketmq.v2.model.batch_create_or_delete_rocketmq_tag_request import BatchCreateOrDeleteRocketmqTagRequest
 from huaweicloudsdkrocketmq.v2.model.batch_create_or_delete_rocketmq_tag_response import BatchCreateOrDeleteRocketmqTagResponse
 from huaweicloudsdkrocketmq.v2.model.batch_create_or_delete_tag_req import BatchCreateOrDeleteTagReq

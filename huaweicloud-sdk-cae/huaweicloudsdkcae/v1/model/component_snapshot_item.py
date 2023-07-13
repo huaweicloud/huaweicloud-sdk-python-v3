@@ -18,61 +18,61 @@ class ComponentSnapshotItem:
 
     openapi_types = {
         'component_id': 'str',
-        'context': 'object',
-        'created_at': 'datetime',
-        'description': 'str',
         'index': 'int',
+        'description': 'str',
+        'context': 'ComponentSnapshotContext',
+        'created_at': 'datetime',
         'updated_at': 'datetime'
     }
 
     attribute_map = {
         'component_id': 'component_id',
+        'index': 'index',
+        'description': 'description',
         'context': 'context',
         'created_at': 'created_at',
-        'description': 'description',
-        'index': 'index',
         'updated_at': 'updated_at'
     }
 
-    def __init__(self, component_id=None, context=None, created_at=None, description=None, index=None, updated_at=None):
+    def __init__(self, component_id=None, index=None, description=None, context=None, created_at=None, updated_at=None):
         """ComponentSnapshotItem
 
         The model defined in huaweicloud sdk
 
-        :param component_id: 组件id。
+        :param component_id: 组件ID。
         :type component_id: str
-        :param context: 上下文信息。
-        :type context: object
-        :param created_at: 创建时间。
-        :type created_at: datetime
-        :param description: 描述。
-        :type description: str
         :param index: 快照索引。
         :type index: int
-        :param updated_at: 修改时间。
+        :param description: 描述信息。
+        :type description: str
+        :param context: 
+        :type context: :class:`huaweicloudsdkcae.v1.ComponentSnapshotContext`
+        :param created_at: 创建时间。
+        :type created_at: datetime
+        :param updated_at: 更新时间。
         :type updated_at: datetime
         """
         
         
 
         self._component_id = None
+        self._index = None
+        self._description = None
         self._context = None
         self._created_at = None
-        self._description = None
-        self._index = None
         self._updated_at = None
         self.discriminator = None
 
         if component_id is not None:
             self.component_id = component_id
+        if index is not None:
+            self.index = index
+        if description is not None:
+            self.description = description
         if context is not None:
             self.context = context
         if created_at is not None:
             self.created_at = created_at
-        if description is not None:
-            self.description = description
-        if index is not None:
-            self.index = index
         if updated_at is not None:
             self.updated_at = updated_at
 
@@ -80,7 +80,7 @@ class ComponentSnapshotItem:
     def component_id(self):
         """Gets the component_id of this ComponentSnapshotItem.
 
-        组件id。
+        组件ID。
 
         :return: The component_id of this ComponentSnapshotItem.
         :rtype: str
@@ -91,7 +91,7 @@ class ComponentSnapshotItem:
     def component_id(self, component_id):
         """Sets the component_id of this ComponentSnapshotItem.
 
-        组件id。
+        组件ID。
 
         :param component_id: The component_id of this ComponentSnapshotItem.
         :type component_id: str
@@ -99,13 +99,55 @@ class ComponentSnapshotItem:
         self._component_id = component_id
 
     @property
+    def index(self):
+        """Gets the index of this ComponentSnapshotItem.
+
+        快照索引。
+
+        :return: The index of this ComponentSnapshotItem.
+        :rtype: int
+        """
+        return self._index
+
+    @index.setter
+    def index(self, index):
+        """Sets the index of this ComponentSnapshotItem.
+
+        快照索引。
+
+        :param index: The index of this ComponentSnapshotItem.
+        :type index: int
+        """
+        self._index = index
+
+    @property
+    def description(self):
+        """Gets the description of this ComponentSnapshotItem.
+
+        描述信息。
+
+        :return: The description of this ComponentSnapshotItem.
+        :rtype: str
+        """
+        return self._description
+
+    @description.setter
+    def description(self, description):
+        """Sets the description of this ComponentSnapshotItem.
+
+        描述信息。
+
+        :param description: The description of this ComponentSnapshotItem.
+        :type description: str
+        """
+        self._description = description
+
+    @property
     def context(self):
         """Gets the context of this ComponentSnapshotItem.
 
-        上下文信息。
-
         :return: The context of this ComponentSnapshotItem.
-        :rtype: object
+        :rtype: :class:`huaweicloudsdkcae.v1.ComponentSnapshotContext`
         """
         return self._context
 
@@ -113,10 +155,8 @@ class ComponentSnapshotItem:
     def context(self, context):
         """Sets the context of this ComponentSnapshotItem.
 
-        上下文信息。
-
         :param context: The context of this ComponentSnapshotItem.
-        :type context: object
+        :type context: :class:`huaweicloudsdkcae.v1.ComponentSnapshotContext`
         """
         self._context = context
 
@@ -143,54 +183,10 @@ class ComponentSnapshotItem:
         self._created_at = created_at
 
     @property
-    def description(self):
-        """Gets the description of this ComponentSnapshotItem.
-
-        描述。
-
-        :return: The description of this ComponentSnapshotItem.
-        :rtype: str
-        """
-        return self._description
-
-    @description.setter
-    def description(self, description):
-        """Sets the description of this ComponentSnapshotItem.
-
-        描述。
-
-        :param description: The description of this ComponentSnapshotItem.
-        :type description: str
-        """
-        self._description = description
-
-    @property
-    def index(self):
-        """Gets the index of this ComponentSnapshotItem.
-
-        快照索引。
-
-        :return: The index of this ComponentSnapshotItem.
-        :rtype: int
-        """
-        return self._index
-
-    @index.setter
-    def index(self, index):
-        """Sets the index of this ComponentSnapshotItem.
-
-        快照索引。
-
-        :param index: The index of this ComponentSnapshotItem.
-        :type index: int
-        """
-        self._index = index
-
-    @property
     def updated_at(self):
         """Gets the updated_at of this ComponentSnapshotItem.
 
-        修改时间。
+        更新时间。
 
         :return: The updated_at of this ComponentSnapshotItem.
         :rtype: datetime
@@ -201,7 +197,7 @@ class ComponentSnapshotItem:
     def updated_at(self, updated_at):
         """Sets the updated_at of this ComponentSnapshotItem.
 
-        修改时间。
+        更新时间。
 
         :param updated_at: The updated_at of this ComponentSnapshotItem.
         :type updated_at: datetime

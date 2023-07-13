@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import WorkspaceClient
 from huaweicloudsdkworkspace.v2.workspace_client import WorkspaceClient
 from huaweicloudsdkworkspace.v2.workspace_async_client import WorkspaceAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkworkspace.v2.model.access_policy_detail_info import AccessPolicyDetailInfo
 from huaweicloudsdkworkspace.v2.model.access_policy_info import AccessPolicyInfo
 from huaweicloudsdkworkspace.v2.model.access_policy_object import AccessPolicyObject

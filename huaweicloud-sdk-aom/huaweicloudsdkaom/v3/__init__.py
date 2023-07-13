@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import AomClient
 from huaweicloudsdkaom.v3.aom_client import AomClient
 from huaweicloudsdkaom.v3.aom_async_client import AomAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkaom.v3.model.biz_app_param import BizAppParam
 from huaweicloudsdkaom.v3.model.component_param import ComponentParam
 from huaweicloudsdkaom.v3.model.component_update_param import ComponentUpdateParam

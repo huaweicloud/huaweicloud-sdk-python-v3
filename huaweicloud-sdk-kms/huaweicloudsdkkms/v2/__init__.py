@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import KmsClient
 from huaweicloudsdkkms.v2.kms_client import KmsClient
 from huaweicloudsdkkms.v2.kms_async_client import KmsAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkkms.v2.model.action_resources import ActionResources
 from huaweicloudsdkkms.v2.model.api_link import ApiLink
 from huaweicloudsdkkms.v2.model.api_version_detail import ApiVersionDetail

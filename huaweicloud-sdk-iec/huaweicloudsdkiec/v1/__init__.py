@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import IecClient
 from huaweicloudsdkiec.v1.iec_client import IecClient
 from huaweicloudsdkiec.v1.iec_async_client import IecAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkiec.v1.model.add_nics_request import AddNicsRequest
 from huaweicloudsdkiec.v1.model.add_nics_request_body import AddNicsRequestBody
 from huaweicloudsdkiec.v1.model.add_nics_response import AddNicsResponse

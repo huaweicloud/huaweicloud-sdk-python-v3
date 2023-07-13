@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import CdmClient
 from huaweicloudsdkcdm.v1.cdm_client import CdmClient
 from huaweicloudsdkcdm.v1.cdm_async_client import CdmAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkcdm.v1.model.action_progress import ActionProgress
 from huaweicloudsdkcdm.v1.model.cdm_create_and_update_link_req import CdmCreateAndUpdateLinkReq
 from huaweicloudsdkcdm.v1.model.cdm_create_cluster_req import CdmCreateClusterReq

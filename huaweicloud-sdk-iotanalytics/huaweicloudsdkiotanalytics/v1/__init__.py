@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import IoTAnalyticsClient
 from huaweicloudsdkiotanalytics.v1.iotanalytics_client import IoTAnalyticsClient
 from huaweicloudsdkiotanalytics.v1.iotanalytics_async_client import IoTAnalyticsAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkiotanalytics.v1.model.add_dev_data_request import AddDevDataRequest
 from huaweicloudsdkiotanalytics.v1.model.add_dev_data_response import AddDevDataResponse
 from huaweicloudsdkiotanalytics.v1.model.add_pipeline_job_request import AddPipelineJobRequest

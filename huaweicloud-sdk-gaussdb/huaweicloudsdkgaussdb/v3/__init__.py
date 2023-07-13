@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import GaussDBClient
 from huaweicloudsdkgaussdb.v3.gaussdb_client import GaussDBClient
 from huaweicloudsdkgaussdb.v3.gaussdb_async_client import GaussDBAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkgaussdb.v3.model.add_database_permission_request import AddDatabasePermissionRequest
 from huaweicloudsdkgaussdb.v3.model.add_database_permission_response import AddDatabasePermissionResponse
 from huaweicloudsdkgaussdb.v3.model.apply_configuration_request_body import ApplyConfigurationRequestBody

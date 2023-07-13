@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import HssClient
 from huaweicloudsdkhss.v5.hss_client import HssClient
 from huaweicloudsdkhss.v5.hss_async_client import HssAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkhss.v5.model.add_hosts_group_request import AddHostsGroupRequest
 from huaweicloudsdkhss.v5.model.add_hosts_group_request_info import AddHostsGroupRequestInfo
 from huaweicloudsdkhss.v5.model.add_hosts_group_response import AddHostsGroupResponse

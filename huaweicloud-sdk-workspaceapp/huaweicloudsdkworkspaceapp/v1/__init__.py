@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import WorkspaceAppClient
 from huaweicloudsdkworkspaceapp.v1.workspaceapp_client import WorkspaceAppClient
 from huaweicloudsdkworkspaceapp.v1.workspaceapp_async_client import WorkspaceAppAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkworkspaceapp.v1.model.account_info import AccountInfo
 from huaweicloudsdkworkspaceapp.v1.model.account_type_enum import AccountTypeEnum
 from huaweicloudsdkworkspaceapp.v1.model.add_app_group_authorization_request import AddAppGroupAuthorizationRequest

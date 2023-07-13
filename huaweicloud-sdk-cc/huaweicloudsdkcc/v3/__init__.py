@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import CcClient
 from huaweicloudsdkcc.v3.cc_client import CcClient
 from huaweicloudsdkcc.v3.cc_async_client import CcAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkcc.v3.model.agg_tag import AggTag
 from huaweicloudsdkcc.v3.model.associate_bandwidth_package import AssociateBandwidthPackage
 from huaweicloudsdkcc.v3.model.associate_bandwidth_package_request import AssociateBandwidthPackageRequest

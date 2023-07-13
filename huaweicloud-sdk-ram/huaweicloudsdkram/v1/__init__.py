@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import RamClient
 from huaweicloudsdkram.v1.ram_client import RamClient
 from huaweicloudsdkram.v1.ram_async_client import RamAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkram.v1.model.accept_resource_share_invitation_request import AcceptResourceShareInvitationRequest
 from huaweicloudsdkram.v1.model.accept_resource_share_invitation_response import AcceptResourceShareInvitationResponse
 from huaweicloudsdkram.v1.model.associate_permission_req_body import AssociatePermissionReqBody

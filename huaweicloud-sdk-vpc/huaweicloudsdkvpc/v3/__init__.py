@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import VpcClient
 from huaweicloudsdkvpc.v3.vpc_client import VpcClient
 from huaweicloudsdkvpc.v3.vpc_async_client import VpcAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkvpc.v3.model.add_extend_cidr_option import AddExtendCidrOption
 from huaweicloudsdkvpc.v3.model.add_vpc_extend_cidr_request import AddVpcExtendCidrRequest
 from huaweicloudsdkvpc.v3.model.add_vpc_extend_cidr_request_body import AddVpcExtendCidrRequestBody

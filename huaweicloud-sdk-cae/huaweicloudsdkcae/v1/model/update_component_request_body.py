@@ -19,7 +19,7 @@ class UpdateComponentRequestBody:
     openapi_types = {
         'api_version': 'str',
         'kind': 'str',
-        'metadata': 'Metadata',
+        'metadata': 'UpdateComponentRequestMetadata',
         'spec': 'UpdateComponentRequestSpec'
     }
 
@@ -35,12 +35,12 @@ class UpdateComponentRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param api_version: API版本。
+        :param api_version: API版本，固定值“v1”，该值不可修改。
         :type api_version: str
-        :param kind: 资源种类。
+        :param kind: API类型，固定值“Component”，该值不可修改。
         :type kind: str
         :param metadata: 
-        :type metadata: :class:`huaweicloudsdkcae.v1.Metadata`
+        :type metadata: :class:`huaweicloudsdkcae.v1.UpdateComponentRequestMetadata`
         :param spec: 
         :type spec: :class:`huaweicloudsdkcae.v1.UpdateComponentRequestSpec`
         """
@@ -64,7 +64,7 @@ class UpdateComponentRequestBody:
     def api_version(self):
         """Gets the api_version of this UpdateComponentRequestBody.
 
-        API版本。
+        API版本，固定值“v1”，该值不可修改。
 
         :return: The api_version of this UpdateComponentRequestBody.
         :rtype: str
@@ -75,7 +75,7 @@ class UpdateComponentRequestBody:
     def api_version(self, api_version):
         """Sets the api_version of this UpdateComponentRequestBody.
 
-        API版本。
+        API版本，固定值“v1”，该值不可修改。
 
         :param api_version: The api_version of this UpdateComponentRequestBody.
         :type api_version: str
@@ -86,7 +86,7 @@ class UpdateComponentRequestBody:
     def kind(self):
         """Gets the kind of this UpdateComponentRequestBody.
 
-        资源种类。
+        API类型，固定值“Component”，该值不可修改。
 
         :return: The kind of this UpdateComponentRequestBody.
         :rtype: str
@@ -97,7 +97,7 @@ class UpdateComponentRequestBody:
     def kind(self, kind):
         """Sets the kind of this UpdateComponentRequestBody.
 
-        资源种类。
+        API类型，固定值“Component”，该值不可修改。
 
         :param kind: The kind of this UpdateComponentRequestBody.
         :type kind: str
@@ -109,7 +109,7 @@ class UpdateComponentRequestBody:
         """Gets the metadata of this UpdateComponentRequestBody.
 
         :return: The metadata of this UpdateComponentRequestBody.
-        :rtype: :class:`huaweicloudsdkcae.v1.Metadata`
+        :rtype: :class:`huaweicloudsdkcae.v1.UpdateComponentRequestMetadata`
         """
         return self._metadata
 
@@ -118,7 +118,7 @@ class UpdateComponentRequestBody:
         """Sets the metadata of this UpdateComponentRequestBody.
 
         :param metadata: The metadata of this UpdateComponentRequestBody.
-        :type metadata: :class:`huaweicloudsdkcae.v1.Metadata`
+        :type metadata: :class:`huaweicloudsdkcae.v1.UpdateComponentRequestMetadata`
         """
         self._metadata = metadata
 

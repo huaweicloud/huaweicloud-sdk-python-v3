@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import CodeArtsBuildClient
 from huaweicloudsdkcodeartsbuild.v3.codeartsbuild_client import CodeArtsBuildClient
 from huaweicloudsdkcodeartsbuild.v3.codeartsbuild_async_client import CodeArtsBuildAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkcodeartsbuild.v3.model.build_step import BuildStep
 from huaweicloudsdkcodeartsbuild.v3.model.download_keystore_request import DownloadKeystoreRequest
 from huaweicloudsdkcodeartsbuild.v3.model.download_keystore_response import DownloadKeystoreResponse

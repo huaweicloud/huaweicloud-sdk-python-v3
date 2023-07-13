@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import BmsClient
 from huaweicloudsdkbms.v1.bms_client import BmsClient
 from huaweicloudsdkbms.v1.bms_async_client import BmsAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkbms.v1.model.absolute import Absolute
 from huaweicloudsdkbms.v1.model.add_server_nics_req import AddServerNicsReq
 from huaweicloudsdkbms.v1.model.add_server_nics_request import AddServerNicsRequest

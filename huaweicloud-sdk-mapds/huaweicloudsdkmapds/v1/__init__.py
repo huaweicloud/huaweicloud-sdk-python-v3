@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import MapDSClient
 from huaweicloudsdkmapds.v1.mapds_client import MapDSClient
 from huaweicloudsdkmapds.v1.mapds_async_client import MapDSAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkmapds.v1.model.create_credential_request import CreateCredentialRequest
 from huaweicloudsdkmapds.v1.model.create_credential_request_body import CreateCredentialRequestBody
 from huaweicloudsdkmapds.v1.model.create_credential_request_body_credential import CreateCredentialRequestBodyCredential

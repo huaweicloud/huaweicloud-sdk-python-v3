@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import EipClient
 from huaweicloudsdkeip.v3.eip_client import EipClient
 from huaweicloudsdkeip.v3.eip_async_client import EipAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkeip.v3.model.associate_publicips_option import AssociatePublicipsOption
 from huaweicloudsdkeip.v3.model.associate_publicips_request import AssociatePublicipsRequest
 from huaweicloudsdkeip.v3.model.associate_publicips_request_body import AssociatePublicipsRequestBody

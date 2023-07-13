@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import SmsClient
 from huaweicloudsdksms.v3.sms_client import SmsClient
 from huaweicloudsdksms.v3.sms_async_client import SmsAsyncClient
-# import models into sdk package
+
 from huaweicloudsdksms.v3.model.btrfs_file_system import BtrfsFileSystem
 from huaweicloudsdksms.v3.model.btrfs_subvolumn import BtrfsSubvolumn
 from huaweicloudsdksms.v3.model.check_net_acl_request import CheckNetAclRequest

@@ -20,61 +20,65 @@ class ComponentSpec:
         'runtime': 'str',
         'env_id': 'str',
         'replica': 'int',
-        'available_replica': 'int',
         'source': 'Source',
         'build': 'Build',
+        'resource_limit': 'ResourceLimit',
         'access_info': 'list[Access]',
-        'build_id': 'str',
         'image_url': 'str',
+        'available_replica': 'int',
         'job_id': 'str',
-        'log_strategy': 'list[LogStrategy]',
-        'status': 'str'
+        'build_id': 'str',
+        'status': 'str',
+        'build_log_id': 'str'
     }
 
     attribute_map = {
         'runtime': 'runtime',
         'env_id': 'env_id',
         'replica': 'replica',
-        'available_replica': 'available_replica',
         'source': 'source',
         'build': 'build',
+        'resource_limit': 'resource_limit',
         'access_info': 'access_info',
-        'build_id': 'build_id',
         'image_url': 'image_url',
+        'available_replica': 'available_replica',
         'job_id': 'job_id',
-        'log_strategy': 'log_strategy',
-        'status': 'status'
+        'build_id': 'build_id',
+        'status': 'status',
+        'build_log_id': 'build_log_id'
     }
 
-    def __init__(self, runtime=None, env_id=None, replica=None, available_replica=None, source=None, build=None, access_info=None, build_id=None, image_url=None, job_id=None, log_strategy=None, status=None):
+    def __init__(self, runtime=None, env_id=None, replica=None, source=None, build=None, resource_limit=None, access_info=None, image_url=None, available_replica=None, job_id=None, build_id=None, status=None, build_log_id=None):
         """ComponentSpec
 
         The model defined in huaweicloud sdk
 
-        :param runtime: 语言/运行时，例如：Java8、tomcat8。
+        :param runtime: 语言/运行时。
         :type runtime: str
-        :param env_id: 环境id。
+        :param env_id: 环境ID。
         :type env_id: str
-        :param replica: 副本。
+        :param replica: 实例个数。
         :type replica: int
-        :param available_replica: 可用副本。
-        :type available_replica: int
         :param source: 
         :type source: :class:`huaweicloudsdkcae.v1.Source`
         :param build: 
         :type build: :class:`huaweicloudsdkcae.v1.Build`
-        :param access_info: 
+        :param resource_limit: 
+        :type resource_limit: :class:`huaweicloudsdkcae.v1.ResourceLimit`
+        :param access_info: 访问方式列表。
         :type access_info: list[:class:`huaweicloudsdkcae.v1.Access`]
-        :param build_id: 构建id。
-        :type build_id: str
         :param image_url: 镜像地址。
         :type image_url: str
-        :param job_id: 任务id。
+        :param available_replica: 可用实例个数。
+        :type available_replica: int
+        :param job_id: 任务ID。
         :type job_id: str
-        :param log_strategy: 日志策略。
-        :type log_strategy: list[:class:`huaweicloudsdkcae.v1.LogStrategy`]
-        :param status: 组件状态
+        :param build_id: 构建任务ID。
+        :type build_id: str
+        :param status: 组件状态。
         :type status: str
+        :param build_log_id: 构建日志ID。
+        :type build_log_id: str
         """
         
         
@@ -82,15 +86,16 @@ class ComponentSpec:
         self._runtime = None
         self._env_id = None
         self._replica = None
-        self._available_replica = None
         self._source = None
         self._build = None
+        self._resource_limit = None
         self._access_info = None
-        self._build_id = None
         self._image_url = None
+        self._available_replica = None
         self._job_id = None
-        self._log_strategy = None
+        self._build_id = None
         self._status = None
+        self._build_log_id = None
         self.discriminator = None
 
         if runtime is not None:
@@ -99,30 +104,32 @@ class ComponentSpec:
             self.env_id = env_id
         if replica is not None:
             self.replica = replica
-        if available_replica is not None:
-            self.available_replica = available_replica
         if source is not None:
             self.source = source
         if build is not None:
             self.build = build
+        if resource_limit is not None:
+            self.resource_limit = resource_limit
         if access_info is not None:
             self.access_info = access_info
-        if build_id is not None:
-            self.build_id = build_id
         if image_url is not None:
             self.image_url = image_url
+        if available_replica is not None:
+            self.available_replica = available_replica
         if job_id is not None:
             self.job_id = job_id
-        if log_strategy is not None:
-            self.log_strategy = log_strategy
+        if build_id is not None:
+            self.build_id = build_id
         if status is not None:
             self.status = status
+        if build_log_id is not None:
+            self.build_log_id = build_log_id
 
     @property
     def runtime(self):
         """Gets the runtime of this ComponentSpec.
 
-        语言/运行时，例如：Java8、tomcat8。
+        语言/运行时。
 
         :return: The runtime of this ComponentSpec.
         :rtype: str
@@ -133,7 +140,7 @@ class ComponentSpec:
     def runtime(self, runtime):
         """Sets the runtime of this ComponentSpec.
 
-        语言/运行时，例如：Java8、tomcat8。
+        语言/运行时。
 
         :param runtime: The runtime of this ComponentSpec.
         :type runtime: str
@@ -144,7 +151,7 @@ class ComponentSpec:
     def env_id(self):
         """Gets the env_id of this ComponentSpec.
 
-        环境id。
+        环境ID。
 
         :return: The env_id of this ComponentSpec.
         :rtype: str
@@ -155,7 +162,7 @@ class ComponentSpec:
     def env_id(self, env_id):
         """Sets the env_id of this ComponentSpec.
 
-        环境id。
+        环境ID。
 
         :param env_id: The env_id of this ComponentSpec.
         :type env_id: str
@@ -166,7 +173,7 @@ class ComponentSpec:
     def replica(self):
         """Gets the replica of this ComponentSpec.
 
-        副本。
+        实例个数。
 
         :return: The replica of this ComponentSpec.
         :rtype: int
@@ -177,34 +184,12 @@ class ComponentSpec:
     def replica(self, replica):
         """Sets the replica of this ComponentSpec.
 
-        副本。
+        实例个数。
 
         :param replica: The replica of this ComponentSpec.
         :type replica: int
         """
         self._replica = replica
-
-    @property
-    def available_replica(self):
-        """Gets the available_replica of this ComponentSpec.
-
-        可用副本。
-
-        :return: The available_replica of this ComponentSpec.
-        :rtype: int
-        """
-        return self._available_replica
-
-    @available_replica.setter
-    def available_replica(self, available_replica):
-        """Sets the available_replica of this ComponentSpec.
-
-        可用副本。
-
-        :param available_replica: The available_replica of this ComponentSpec.
-        :type available_replica: int
-        """
-        self._available_replica = available_replica
 
     @property
     def source(self):
@@ -243,8 +228,28 @@ class ComponentSpec:
         self._build = build
 
     @property
+    def resource_limit(self):
+        """Gets the resource_limit of this ComponentSpec.
+
+        :return: The resource_limit of this ComponentSpec.
+        :rtype: :class:`huaweicloudsdkcae.v1.ResourceLimit`
+        """
+        return self._resource_limit
+
+    @resource_limit.setter
+    def resource_limit(self, resource_limit):
+        """Sets the resource_limit of this ComponentSpec.
+
+        :param resource_limit: The resource_limit of this ComponentSpec.
+        :type resource_limit: :class:`huaweicloudsdkcae.v1.ResourceLimit`
+        """
+        self._resource_limit = resource_limit
+
+    @property
     def access_info(self):
         """Gets the access_info of this ComponentSpec.
+
+        访问方式列表。
 
         :return: The access_info of this ComponentSpec.
         :rtype: list[:class:`huaweicloudsdkcae.v1.Access`]
@@ -255,32 +260,12 @@ class ComponentSpec:
     def access_info(self, access_info):
         """Sets the access_info of this ComponentSpec.
 
+        访问方式列表。
+
         :param access_info: The access_info of this ComponentSpec.
         :type access_info: list[:class:`huaweicloudsdkcae.v1.Access`]
         """
         self._access_info = access_info
-
-    @property
-    def build_id(self):
-        """Gets the build_id of this ComponentSpec.
-
-        构建id。
-
-        :return: The build_id of this ComponentSpec.
-        :rtype: str
-        """
-        return self._build_id
-
-    @build_id.setter
-    def build_id(self, build_id):
-        """Sets the build_id of this ComponentSpec.
-
-        构建id。
-
-        :param build_id: The build_id of this ComponentSpec.
-        :type build_id: str
-        """
-        self._build_id = build_id
 
     @property
     def image_url(self):
@@ -305,10 +290,32 @@ class ComponentSpec:
         self._image_url = image_url
 
     @property
+    def available_replica(self):
+        """Gets the available_replica of this ComponentSpec.
+
+        可用实例个数。
+
+        :return: The available_replica of this ComponentSpec.
+        :rtype: int
+        """
+        return self._available_replica
+
+    @available_replica.setter
+    def available_replica(self, available_replica):
+        """Sets the available_replica of this ComponentSpec.
+
+        可用实例个数。
+
+        :param available_replica: The available_replica of this ComponentSpec.
+        :type available_replica: int
+        """
+        self._available_replica = available_replica
+
+    @property
     def job_id(self):
         """Gets the job_id of this ComponentSpec.
 
-        任务id。
+        任务ID。
 
         :return: The job_id of this ComponentSpec.
         :rtype: str
@@ -319,7 +326,7 @@ class ComponentSpec:
     def job_id(self, job_id):
         """Sets the job_id of this ComponentSpec.
 
-        任务id。
+        任务ID。
 
         :param job_id: The job_id of this ComponentSpec.
         :type job_id: str
@@ -327,32 +334,32 @@ class ComponentSpec:
         self._job_id = job_id
 
     @property
-    def log_strategy(self):
-        """Gets the log_strategy of this ComponentSpec.
+    def build_id(self):
+        """Gets the build_id of this ComponentSpec.
 
-        日志策略。
+        构建任务ID。
 
-        :return: The log_strategy of this ComponentSpec.
-        :rtype: list[:class:`huaweicloudsdkcae.v1.LogStrategy`]
+        :return: The build_id of this ComponentSpec.
+        :rtype: str
         """
-        return self._log_strategy
+        return self._build_id
 
-    @log_strategy.setter
-    def log_strategy(self, log_strategy):
-        """Sets the log_strategy of this ComponentSpec.
+    @build_id.setter
+    def build_id(self, build_id):
+        """Sets the build_id of this ComponentSpec.
 
-        日志策略。
+        构建任务ID。
 
-        :param log_strategy: The log_strategy of this ComponentSpec.
-        :type log_strategy: list[:class:`huaweicloudsdkcae.v1.LogStrategy`]
+        :param build_id: The build_id of this ComponentSpec.
+        :type build_id: str
         """
-        self._log_strategy = log_strategy
+        self._build_id = build_id
 
     @property
     def status(self):
         """Gets the status of this ComponentSpec.
 
-        组件状态
+        组件状态。
 
         :return: The status of this ComponentSpec.
         :rtype: str
@@ -363,12 +370,34 @@ class ComponentSpec:
     def status(self, status):
         """Sets the status of this ComponentSpec.
 
-        组件状态
+        组件状态。
 
         :param status: The status of this ComponentSpec.
         :type status: str
         """
         self._status = status
+
+    @property
+    def build_log_id(self):
+        """Gets the build_log_id of this ComponentSpec.
+
+        构建日志ID。
+
+        :return: The build_log_id of this ComponentSpec.
+        :rtype: str
+        """
+        return self._build_log_id
+
+    @build_log_id.setter
+    def build_log_id(self, build_log_id):
+        """Sets the build_log_id of this ComponentSpec.
+
+        构建日志ID。
+
+        :param build_log_id: The build_log_id of this ComponentSpec.
+        :type build_log_id: str
+        """
+        self._build_log_id = build_log_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

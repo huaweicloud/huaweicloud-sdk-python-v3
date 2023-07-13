@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import DataArtsStudioClient
 from huaweicloudsdkdataartsstudio.v1.dataartsstudio_client import DataArtsStudioClient
 from huaweicloudsdkdataartsstudio.v1.dataartsstudio_async_client import DataArtsStudioAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkdataartsstudio.v1.model.add_tag_to_asset_request import AddTagToAssetRequest
 from huaweicloudsdkdataartsstudio.v1.model.add_tag_to_asset_response import AddTagToAssetResponse
 from huaweicloudsdkdataartsstudio.v1.model.add_work_space_users_request import AddWorkSpaceUsersRequest

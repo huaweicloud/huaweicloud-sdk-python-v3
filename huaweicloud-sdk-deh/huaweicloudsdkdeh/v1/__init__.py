@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import DeHClient
 from huaweicloudsdkdeh.v1.deh_client import DeHClient
 from huaweicloudsdkdeh.v1.deh_async_client import DeHAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkdeh.v1.model.batch_create_dedicated_host_tags_request import BatchCreateDedicatedHostTagsRequest
 from huaweicloudsdkdeh.v1.model.batch_create_dedicated_host_tags_response import BatchCreateDedicatedHostTagsResponse
 from huaweicloudsdkdeh.v1.model.batch_delete_dedicated_host_tags_request import BatchDeleteDedicatedHostTagsRequest

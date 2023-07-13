@@ -41,6 +41,8 @@ from huaweicloudsdkas.v1.model.batch_unprotect_scaling_instances_response import
 from huaweicloudsdkas.v1.model.batch_unset_scaling_instances_stantby_request import BatchUnsetScalingInstancesStantbyRequest
 from huaweicloudsdkas.v1.model.batch_unset_scaling_instances_stantby_response import BatchUnsetScalingInstancesStantbyResponse
 from huaweicloudsdkas.v1.model.callback_life_cycle_hook_option import CallbackLifeCycleHookOption
+from huaweicloudsdkas.v1.model.create_group_scheduled_task_request import CreateGroupScheduledTaskRequest
+from huaweicloudsdkas.v1.model.create_group_scheduled_task_response import CreateGroupScheduledTaskResponse
 from huaweicloudsdkas.v1.model.create_life_cycle_hook_option import CreateLifeCycleHookOption
 from huaweicloudsdkas.v1.model.create_lify_cycle_hook_request import CreateLifyCycleHookRequest
 from huaweicloudsdkas.v1.model.create_lify_cycle_hook_response import CreateLifyCycleHookResponse
@@ -61,7 +63,10 @@ from huaweicloudsdkas.v1.model.create_scaling_tag_info_request import CreateScal
 from huaweicloudsdkas.v1.model.create_scaling_tag_info_response import CreateScalingTagInfoResponse
 from huaweicloudsdkas.v1.model.create_scaling_v2_policy_request import CreateScalingV2PolicyRequest
 from huaweicloudsdkas.v1.model.create_scaling_v2_policy_response import CreateScalingV2PolicyResponse
+from huaweicloudsdkas.v1.model.create_scheduled_task_option import CreateScheduledTaskOption
 from huaweicloudsdkas.v1.model.create_tags_option import CreateTagsOption
+from huaweicloudsdkas.v1.model.delete_group_scheduled_task_request import DeleteGroupScheduledTaskRequest
+from huaweicloudsdkas.v1.model.delete_group_scheduled_task_response import DeleteGroupScheduledTaskResponse
 from huaweicloudsdkas.v1.model.delete_lifecycle_hook_request import DeleteLifecycleHookRequest
 from huaweicloudsdkas.v1.model.delete_lifecycle_hook_response import DeleteLifecycleHookResponse
 from huaweicloudsdkas.v1.model.delete_scaling_config_request import DeleteScalingConfigRequest
@@ -88,6 +93,7 @@ from huaweicloudsdkas.v1.model.execute_scaling_policy_response import ExecuteSca
 from huaweicloudsdkas.v1.model.instance_config import InstanceConfig
 from huaweicloudsdkas.v1.model.instance_config_result import InstanceConfigResult
 from huaweicloudsdkas.v1.model.instance_hanging_infos import InstanceHangingInfos
+from huaweicloudsdkas.v1.model.integer_range import IntegerRange
 from huaweicloudsdkas.v1.model.ipv6_bandwidth import Ipv6Bandwidth
 from huaweicloudsdkas.v1.model.job_records import JobRecords
 from huaweicloudsdkas.v1.model.lbaas_listener import LbaasListener
@@ -99,6 +105,8 @@ from huaweicloudsdkas.v1.model.list_all_scaling_v2_policies_request import ListA
 from huaweicloudsdkas.v1.model.list_all_scaling_v2_policies_response import ListAllScalingV2PoliciesResponse
 from huaweicloudsdkas.v1.model.list_api_versions_request import ListApiVersionsRequest
 from huaweicloudsdkas.v1.model.list_api_versions_response import ListApiVersionsResponse
+from huaweicloudsdkas.v1.model.list_group_scheduled_tasks_request import ListGroupScheduledTasksRequest
+from huaweicloudsdkas.v1.model.list_group_scheduled_tasks_response import ListGroupScheduledTasksResponse
 from huaweicloudsdkas.v1.model.list_hook_instances_request import ListHookInstancesRequest
 from huaweicloudsdkas.v1.model.list_hook_instances_response import ListHookInstancesResponse
 from huaweicloudsdkas.v1.model.list_life_cycle_hooks_request import ListLifeCycleHooksRequest
@@ -132,6 +140,7 @@ from huaweicloudsdkas.v1.model.meta_data import MetaData
 from huaweicloudsdkas.v1.model.modify_lb import ModifyLb
 from huaweicloudsdkas.v1.model.networks import Networks
 from huaweicloudsdkas.v1.model.networks_result import NetworksResult
+from huaweicloudsdkas.v1.model.page_info import PageInfo
 from huaweicloudsdkas.v1.model.pause_scaling_group_option import PauseScalingGroupOption
 from huaweicloudsdkas.v1.model.pause_scaling_group_request import PauseScalingGroupRequest
 from huaweicloudsdkas.v1.model.pause_scaling_group_response import PauseScalingGroupResponse
@@ -168,6 +177,7 @@ from huaweicloudsdkas.v1.model.scaling_policy_v2_meta_data import ScalingPolicyV
 from huaweicloudsdkas.v1.model.scaling_v1_policy_detail import ScalingV1PolicyDetail
 from huaweicloudsdkas.v1.model.scaling_v2_policy_detail import ScalingV2PolicyDetail
 from huaweicloudsdkas.v1.model.scheduled_policy import ScheduledPolicy
+from huaweicloudsdkas.v1.model.scheduled_task_detail import ScheduledTaskDetail
 from huaweicloudsdkas.v1.model.security_group import SecurityGroup
 from huaweicloudsdkas.v1.model.security_groups import SecurityGroups
 from huaweicloudsdkas.v1.model.security_groups_result import SecurityGroupsResult
@@ -190,6 +200,8 @@ from huaweicloudsdkas.v1.model.show_scaling_v2_policy_response import ShowScalin
 from huaweicloudsdkas.v1.model.tags_multi_value import TagsMultiValue
 from huaweicloudsdkas.v1.model.tags_single_value import TagsSingleValue
 from huaweicloudsdkas.v1.model.topics import Topics
+from huaweicloudsdkas.v1.model.update_group_scheduled_task_request import UpdateGroupScheduledTaskRequest
+from huaweicloudsdkas.v1.model.update_group_scheduled_task_response import UpdateGroupScheduledTaskResponse
 from huaweicloudsdkas.v1.model.update_life_cycle_hook_option import UpdateLifeCycleHookOption
 from huaweicloudsdkas.v1.model.update_life_cycle_hook_request import UpdateLifeCycleHookRequest
 from huaweicloudsdkas.v1.model.update_life_cycle_hook_response import UpdateLifeCycleHookResponse
@@ -202,5 +214,6 @@ from huaweicloudsdkas.v1.model.update_scaling_policy_response import UpdateScali
 from huaweicloudsdkas.v1.model.update_scaling_v2_policy_option import UpdateScalingV2PolicyOption
 from huaweicloudsdkas.v1.model.update_scaling_v2_policy_request import UpdateScalingV2PolicyRequest
 from huaweicloudsdkas.v1.model.update_scaling_v2_policy_response import UpdateScalingV2PolicyResponse
+from huaweicloudsdkas.v1.model.update_scheduled_task_option import UpdateScheduledTaskOption
 from huaweicloudsdkas.v1.model.version_info import VersionInfo
 from huaweicloudsdkas.v1.model.vm_meta_data import VmMetaData

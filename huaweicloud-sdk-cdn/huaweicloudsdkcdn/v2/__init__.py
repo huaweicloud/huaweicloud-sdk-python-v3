@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import CdnClient
 from huaweicloudsdkcdn.v2.cdn_client import CdnClient
 from huaweicloudsdkcdn.v2.cdn_async_client import CdnAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkcdn.v2.model.back_sources import BackSources
 from huaweicloudsdkcdn.v2.model.batch_copy_configs import BatchCopyConfigs
 from huaweicloudsdkcdn.v2.model.batch_copy_d_request_body import BatchCopyDRequestBody

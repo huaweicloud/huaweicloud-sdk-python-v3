@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import ElbClient
 from huaweicloudsdkelb.v3.elb_client import ElbClient
 from huaweicloudsdkelb.v3.elb_async_client import ElbAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkelb.v3.model.api_version_info import ApiVersionInfo
 from huaweicloudsdkelb.v3.model.autoscaling_ref import AutoscalingRef
 from huaweicloudsdkelb.v3.model.availability_zone import AvailabilityZone

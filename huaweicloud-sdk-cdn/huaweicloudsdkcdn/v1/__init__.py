@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import CdnClient
 from huaweicloudsdkcdn.v1.cdn_client import CdnClient
 from huaweicloudsdkcdn.v1.cdn_async_client import CdnAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkcdn.v1.model.batch_delete_tags_request import BatchDeleteTagsRequest
 from huaweicloudsdkcdn.v1.model.batch_delete_tags_response import BatchDeleteTagsResponse
 from huaweicloudsdkcdn.v1.model.black_white_list_body import BlackWhiteListBody

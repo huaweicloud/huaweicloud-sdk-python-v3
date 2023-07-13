@@ -33,7 +33,7 @@ class CreateComponentRequestBodyMetadata:
 
         :param name: 组件名称。
         :type name: str
-        :param annotations: 组件信息。
+        :param annotations: 创建组件请求体附加参数，当前只支持version参数，此参数必填。
         :type annotations: dict(str, str)
         """
         
@@ -44,8 +44,7 @@ class CreateComponentRequestBodyMetadata:
         self.discriminator = None
 
         self.name = name
-        if annotations is not None:
-            self.annotations = annotations
+        self.annotations = annotations
 
     @property
     def name(self):
@@ -73,7 +72,7 @@ class CreateComponentRequestBodyMetadata:
     def annotations(self):
         """Gets the annotations of this CreateComponentRequestBodyMetadata.
 
-        组件信息。
+        创建组件请求体附加参数，当前只支持version参数，此参数必填。
 
         :return: The annotations of this CreateComponentRequestBodyMetadata.
         :rtype: dict(str, str)
@@ -84,7 +83,7 @@ class CreateComponentRequestBodyMetadata:
     def annotations(self, annotations):
         """Sets the annotations of this CreateComponentRequestBodyMetadata.
 
-        组件信息。
+        创建组件请求体附加参数，当前只支持version参数，此参数必填。
 
         :param annotations: The annotations of this CreateComponentRequestBodyMetadata.
         :type annotations: dict(str, str)

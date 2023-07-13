@@ -39,9 +39,9 @@ class CreateComponentRequestBodySpec:
 
         The model defined in huaweicloud sdk
 
-        :param runtime: 语言/运行时，例如：Java8、tomcat8。
+        :param runtime: 语言/运行时。
         :type runtime: str
-        :param replica: 副本数目。
+        :param replica: 实例个数。
         :type replica: int
         :param build: 
         :type build: :class:`huaweicloudsdkcae.v1.Build`
@@ -76,7 +76,7 @@ class CreateComponentRequestBodySpec:
     def runtime(self):
         """Gets the runtime of this CreateComponentRequestBodySpec.
 
-        语言/运行时，例如：Java8、tomcat8。
+        语言/运行时。
 
         :return: The runtime of this CreateComponentRequestBodySpec.
         :rtype: str
@@ -87,7 +87,7 @@ class CreateComponentRequestBodySpec:
     def runtime(self, runtime):
         """Sets the runtime of this CreateComponentRequestBodySpec.
 
-        语言/运行时，例如：Java8、tomcat8。
+        语言/运行时。
 
         :param runtime: The runtime of this CreateComponentRequestBodySpec.
         :type runtime: str
@@ -98,7 +98,7 @@ class CreateComponentRequestBodySpec:
     def replica(self):
         """Gets the replica of this CreateComponentRequestBodySpec.
 
-        副本数目。
+        实例个数。
 
         :return: The replica of this CreateComponentRequestBodySpec.
         :rtype: int
@@ -109,7 +109,7 @@ class CreateComponentRequestBodySpec:
     def replica(self, replica):
         """Sets the replica of this CreateComponentRequestBodySpec.
 
-        副本数目。
+        实例个数。
 
         :param replica: The replica of this CreateComponentRequestBodySpec.
         :type replica: int

@@ -18,105 +18,51 @@ class CreateEnvironmentResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'api_version': 'str',
-        'kind': 'str',
-        'metadata': 'EnvironmentMetadata'
+        'job_id': 'str'
     }
 
     attribute_map = {
-        'api_version': 'api_version',
-        'kind': 'kind',
-        'metadata': 'metadata'
+        'job_id': 'job_id'
     }
 
-    def __init__(self, api_version=None, kind=None, metadata=None):
+    def __init__(self, job_id=None):
         """CreateEnvironmentResponse
 
         The model defined in huaweicloud sdk
 
-        :param api_version: API版本。
-        :type api_version: str
-        :param kind: 资源种类
-        :type kind: str
-        :param metadata: 
-        :type metadata: :class:`huaweicloudsdkcae.v1.EnvironmentMetadata`
+        :param job_id: 任务ID。
+        :type job_id: str
         """
         
         super(CreateEnvironmentResponse, self).__init__()
 
-        self._api_version = None
-        self._kind = None
-        self._metadata = None
+        self._job_id = None
         self.discriminator = None
 
-        if api_version is not None:
-            self.api_version = api_version
-        if kind is not None:
-            self.kind = kind
-        if metadata is not None:
-            self.metadata = metadata
+        if job_id is not None:
+            self.job_id = job_id
 
     @property
-    def api_version(self):
-        """Gets the api_version of this CreateEnvironmentResponse.
+    def job_id(self):
+        """Gets the job_id of this CreateEnvironmentResponse.
 
-        API版本。
+        任务ID。
 
-        :return: The api_version of this CreateEnvironmentResponse.
+        :return: The job_id of this CreateEnvironmentResponse.
         :rtype: str
         """
-        return self._api_version
+        return self._job_id
 
-    @api_version.setter
-    def api_version(self, api_version):
-        """Sets the api_version of this CreateEnvironmentResponse.
+    @job_id.setter
+    def job_id(self, job_id):
+        """Sets the job_id of this CreateEnvironmentResponse.
 
-        API版本。
+        任务ID。
 
-        :param api_version: The api_version of this CreateEnvironmentResponse.
-        :type api_version: str
+        :param job_id: The job_id of this CreateEnvironmentResponse.
+        :type job_id: str
         """
-        self._api_version = api_version
-
-    @property
-    def kind(self):
-        """Gets the kind of this CreateEnvironmentResponse.
-
-        资源种类
-
-        :return: The kind of this CreateEnvironmentResponse.
-        :rtype: str
-        """
-        return self._kind
-
-    @kind.setter
-    def kind(self, kind):
-        """Sets the kind of this CreateEnvironmentResponse.
-
-        资源种类
-
-        :param kind: The kind of this CreateEnvironmentResponse.
-        :type kind: str
-        """
-        self._kind = kind
-
-    @property
-    def metadata(self):
-        """Gets the metadata of this CreateEnvironmentResponse.
-
-        :return: The metadata of this CreateEnvironmentResponse.
-        :rtype: :class:`huaweicloudsdkcae.v1.EnvironmentMetadata`
-        """
-        return self._metadata
-
-    @metadata.setter
-    def metadata(self, metadata):
-        """Sets the metadata of this CreateEnvironmentResponse.
-
-        :param metadata: The metadata of this CreateEnvironmentResponse.
-        :type metadata: :class:`huaweicloudsdkcae.v1.EnvironmentMetadata`
-        """
-        self._metadata = metadata
+        self._job_id = job_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

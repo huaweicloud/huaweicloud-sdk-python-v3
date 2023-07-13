@@ -17,84 +17,107 @@ class MetadataResponse:
     sensitive_list = []
 
     openapi_types = {
+        'id': 'str',
+        'name': 'str',
         'annotations': 'dict(str, str)',
         'created_at': 'datetime',
-        'id': 'str',
-        'jod_id': 'str',
-        'name': 'str',
-        'status': 'str',
-        'type': 'str',
         'updated_at': 'datetime'
     }
 
     attribute_map = {
+        'id': 'id',
+        'name': 'name',
         'annotations': 'annotations',
         'created_at': 'created_at',
-        'id': 'id',
-        'jod_id': 'jod_id',
-        'name': 'name',
-        'status': 'status',
-        'type': 'type',
         'updated_at': 'updated_at'
     }
 
-    def __init__(self, annotations=None, created_at=None, id=None, jod_id=None, name=None, status=None, type=None, updated_at=None):
+    def __init__(self, id=None, name=None, annotations=None, created_at=None, updated_at=None):
         """MetadataResponse
 
         The model defined in huaweicloud sdk
 
-        :param annotations: 属性信息。
+        :param id: 组件ID。
+        :type id: str
+        :param name: 组件名称。
+        :type name: str
+        :param annotations: 组件附加属性。 - log_group_id：LTS日志组的ID。 - log_stream_id：LTS日志流的ID。 - version：组件版本。
         :type annotations: dict(str, str)
         :param created_at: 创建时间。
         :type created_at: datetime
-        :param id: 组件id。
-        :type id: str
-        :param jod_id: 任务id。
-        :type jod_id: str
-        :param name: 名称。
-        :type name: str
-        :param status: 状态。
-        :type status: str
-        :param type: 组件类型。
-        :type type: str
         :param updated_at: 更新时间。
         :type updated_at: datetime
         """
         
         
 
+        self._id = None
+        self._name = None
         self._annotations = None
         self._created_at = None
-        self._id = None
-        self._jod_id = None
-        self._name = None
-        self._status = None
-        self._type = None
         self._updated_at = None
         self.discriminator = None
 
+        if id is not None:
+            self.id = id
+        if name is not None:
+            self.name = name
         if annotations is not None:
             self.annotations = annotations
         if created_at is not None:
             self.created_at = created_at
-        if id is not None:
-            self.id = id
-        if jod_id is not None:
-            self.jod_id = jod_id
-        if name is not None:
-            self.name = name
-        if status is not None:
-            self.status = status
-        if type is not None:
-            self.type = type
         if updated_at is not None:
             self.updated_at = updated_at
+
+    @property
+    def id(self):
+        """Gets the id of this MetadataResponse.
+
+        组件ID。
+
+        :return: The id of this MetadataResponse.
+        :rtype: str
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """Sets the id of this MetadataResponse.
+
+        组件ID。
+
+        :param id: The id of this MetadataResponse.
+        :type id: str
+        """
+        self._id = id
+
+    @property
+    def name(self):
+        """Gets the name of this MetadataResponse.
+
+        组件名称。
+
+        :return: The name of this MetadataResponse.
+        :rtype: str
+        """
+        return self._name
+
+    @name.setter
+    def name(self, name):
+        """Sets the name of this MetadataResponse.
+
+        组件名称。
+
+        :param name: The name of this MetadataResponse.
+        :type name: str
+        """
+        self._name = name
 
     @property
     def annotations(self):
         """Gets the annotations of this MetadataResponse.
 
-        属性信息。
+        组件附加属性。 - log_group_id：LTS日志组的ID。 - log_stream_id：LTS日志流的ID。 - version：组件版本。
 
         :return: The annotations of this MetadataResponse.
         :rtype: dict(str, str)
@@ -105,7 +128,7 @@ class MetadataResponse:
     def annotations(self, annotations):
         """Sets the annotations of this MetadataResponse.
 
-        属性信息。
+        组件附加属性。 - log_group_id：LTS日志组的ID。 - log_stream_id：LTS日志流的ID。 - version：组件版本。
 
         :param annotations: The annotations of this MetadataResponse.
         :type annotations: dict(str, str)
@@ -133,116 +156,6 @@ class MetadataResponse:
         :type created_at: datetime
         """
         self._created_at = created_at
-
-    @property
-    def id(self):
-        """Gets the id of this MetadataResponse.
-
-        组件id。
-
-        :return: The id of this MetadataResponse.
-        :rtype: str
-        """
-        return self._id
-
-    @id.setter
-    def id(self, id):
-        """Sets the id of this MetadataResponse.
-
-        组件id。
-
-        :param id: The id of this MetadataResponse.
-        :type id: str
-        """
-        self._id = id
-
-    @property
-    def jod_id(self):
-        """Gets the jod_id of this MetadataResponse.
-
-        任务id。
-
-        :return: The jod_id of this MetadataResponse.
-        :rtype: str
-        """
-        return self._jod_id
-
-    @jod_id.setter
-    def jod_id(self, jod_id):
-        """Sets the jod_id of this MetadataResponse.
-
-        任务id。
-
-        :param jod_id: The jod_id of this MetadataResponse.
-        :type jod_id: str
-        """
-        self._jod_id = jod_id
-
-    @property
-    def name(self):
-        """Gets the name of this MetadataResponse.
-
-        名称。
-
-        :return: The name of this MetadataResponse.
-        :rtype: str
-        """
-        return self._name
-
-    @name.setter
-    def name(self, name):
-        """Sets the name of this MetadataResponse.
-
-        名称。
-
-        :param name: The name of this MetadataResponse.
-        :type name: str
-        """
-        self._name = name
-
-    @property
-    def status(self):
-        """Gets the status of this MetadataResponse.
-
-        状态。
-
-        :return: The status of this MetadataResponse.
-        :rtype: str
-        """
-        return self._status
-
-    @status.setter
-    def status(self, status):
-        """Sets the status of this MetadataResponse.
-
-        状态。
-
-        :param status: The status of this MetadataResponse.
-        :type status: str
-        """
-        self._status = status
-
-    @property
-    def type(self):
-        """Gets the type of this MetadataResponse.
-
-        组件类型。
-
-        :return: The type of this MetadataResponse.
-        :rtype: str
-        """
-        return self._type
-
-    @type.setter
-    def type(self, type):
-        """Sets the type of this MetadataResponse.
-
-        组件类型。
-
-        :param type: The type of this MetadataResponse.
-        :type type: str
-        """
-        self._type = type
 
     @property
     def updated_at(self):

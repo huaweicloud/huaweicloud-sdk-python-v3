@@ -29,7 +29,7 @@ class Archive:
 
         The model defined in huaweicloud sdk
 
-        :param artifact_namespace: 镜像命名空间。
+        :param artifact_namespace: 产物纳管SWR组织。
         :type artifact_namespace: str
         """
         
@@ -45,7 +45,7 @@ class Archive:
     def artifact_namespace(self):
         """Gets the artifact_namespace of this Archive.
 
-        镜像命名空间。
+        产物纳管SWR组织。
 
         :return: The artifact_namespace of this Archive.
         :rtype: str
@@ -56,7 +56,7 @@ class Archive:
     def artifact_namespace(self, artifact_namespace):
         """Sets the artifact_namespace of this Archive.
 
-        镜像命名空间。
+        产物纳管SWR组织。
 
         :param artifact_namespace: The artifact_namespace of this Archive.
         :type artifact_namespace: str

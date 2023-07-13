@@ -3002,6 +3002,236 @@ class VpcAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def neutron_add_router_interface_async(self, request):
+        """路由器添加接口
+
+        添加路由器接口。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for NeutronAddRouterInterface
+        :type request: :class:`huaweicloudsdkvpc.v2.NeutronAddRouterInterfaceRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.NeutronAddRouterInterfaceResponse`
+        """
+        return self._neutron_add_router_interface_with_http_info(request)
+
+    def _neutron_add_router_interface_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'router_id' in local_var_params:
+            path_params['router_id'] = local_var_params['router_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/routers/{router_id}/add_router_interface',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='NeutronAddRouterInterfaceResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def neutron_create_network_async(self, request):
+        """创建网络
+
+        创建网络
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for NeutronCreateNetwork
+        :type request: :class:`huaweicloudsdkvpc.v2.NeutronCreateNetworkRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.NeutronCreateNetworkResponse`
+        """
+        return self._neutron_create_network_with_http_info(request)
+
+    def _neutron_create_network_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/networks',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='NeutronCreateNetworkResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def neutron_create_port_async(self, request):
+        """创建端口
+
+        创建端口。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for NeutronCreatePort
+        :type request: :class:`huaweicloudsdkvpc.v2.NeutronCreatePortRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.NeutronCreatePortResponse`
+        """
+        return self._neutron_create_port_with_http_info(request)
+
+    def _neutron_create_port_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/ports',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='NeutronCreatePortResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def neutron_create_router_async(self, request):
+        """创建路由器
+
+        创建路由器。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for NeutronCreateRouter
+        :type request: :class:`huaweicloudsdkvpc.v2.NeutronCreateRouterRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.NeutronCreateRouterResponse`
+        """
+        return self._neutron_create_router_with_http_info(request)
+
+    def _neutron_create_router_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/routers',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='NeutronCreateRouterResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def neutron_create_security_group_async(self, request):
         """创建安全组
 
@@ -3116,6 +3346,234 @@ class VpcAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def neutron_create_subnet_async(self, request):
+        """创建子网
+
+        创建子网。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for NeutronCreateSubnet
+        :type request: :class:`huaweicloudsdkvpc.v2.NeutronCreateSubnetRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.NeutronCreateSubnetResponse`
+        """
+        return self._neutron_create_subnet_with_http_info(request)
+
+    def _neutron_create_subnet_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/subnets',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='NeutronCreateSubnetResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def neutron_delete_network_async(self, request):
+        """删除网络
+
+        删除网络
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for NeutronDeleteNetwork
+        :type request: :class:`huaweicloudsdkvpc.v2.NeutronDeleteNetworkRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.NeutronDeleteNetworkResponse`
+        """
+        return self._neutron_delete_network_with_http_info(request)
+
+    def _neutron_delete_network_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'network_id' in local_var_params:
+            path_params['network_id'] = local_var_params['network_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/networks/{network_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='NeutronDeleteNetworkResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def neutron_delete_port_async(self, request):
+        """删除端口
+
+        删除端口。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for NeutronDeletePort
+        :type request: :class:`huaweicloudsdkvpc.v2.NeutronDeletePortRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.NeutronDeletePortResponse`
+        """
+        return self._neutron_delete_port_with_http_info(request)
+
+    def _neutron_delete_port_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'port_id' in local_var_params:
+            path_params['port_id'] = local_var_params['port_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/ports/{port_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='NeutronDeletePortResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def neutron_delete_router_async(self, request):
+        """删除路由器
+
+        删除路由器
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for NeutronDeleteRouter
+        :type request: :class:`huaweicloudsdkvpc.v2.NeutronDeleteRouterRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.NeutronDeleteRouterResponse`
+        """
+        return self._neutron_delete_router_with_http_info(request)
+
+    def _neutron_delete_router_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'router_id' in local_var_params:
+            path_params['router_id'] = local_var_params['router_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/routers/{router_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='NeutronDeleteRouterResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def neutron_delete_security_group_async(self, request):
         """删除安全组
 
@@ -3225,6 +3683,288 @@ class VpcAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='NeutronDeleteSecurityGroupRuleResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def neutron_delete_subnet_async(self, request):
+        """删除子网
+
+        删除子网
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for NeutronDeleteSubnet
+        :type request: :class:`huaweicloudsdkvpc.v2.NeutronDeleteSubnetRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.NeutronDeleteSubnetResponse`
+        """
+        return self._neutron_delete_subnet_with_http_info(request)
+
+    def _neutron_delete_subnet_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'subnet_id' in local_var_params:
+            path_params['subnet_id'] = local_var_params['subnet_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/subnets/{subnet_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='NeutronDeleteSubnetResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def neutron_list_networks_async(self, request):
+        """查询网络列表
+
+        查询提交请求的租户的所有网络，单次查询最多返回2000条数据，超过2000后会返回分页标记。分页查询请参考分页查询。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for NeutronListNetworks
+        :type request: :class:`huaweicloudsdkvpc.v2.NeutronListNetworksRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.NeutronListNetworksResponse`
+        """
+        return self._neutron_list_networks_with_http_info(request)
+
+    def _neutron_list_networks_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'shared' in local_var_params:
+            query_params.append(('shared', local_var_params['shared']))
+        if 'routerexternal' in local_var_params:
+            query_params.append(('router:external', local_var_params['routerexternal']))
+        if 'admin_state_up' in local_var_params:
+            query_params.append(('admin_state_up', local_var_params['admin_state_up']))
+        if 'providernetwork_type' in local_var_params:
+            query_params.append(('provider:network_type', local_var_params['providernetwork_type']))
+        if 'tenant_id' in local_var_params:
+            query_params.append(('tenant_id', local_var_params['tenant_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/networks',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='NeutronListNetworksResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def neutron_list_ports_async(self, request):
+        """查询端口列表
+
+        查询提交请求的租户的所有端口，单次查询最多返回2000条数据，超过2000后会返回分页标记。分页查询请参考分页查询。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for NeutronListPorts
+        :type request: :class:`huaweicloudsdkvpc.v2.NeutronListPortsRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.NeutronListPortsResponse`
+        """
+        return self._neutron_list_ports_with_http_info(request)
+
+    def _neutron_list_ports_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'admin_state_up' in local_var_params:
+            query_params.append(('admin_state_up', local_var_params['admin_state_up']))
+        if 'network_id' in local_var_params:
+            query_params.append(('network_id', local_var_params['network_id']))
+        if 'mac_address' in local_var_params:
+            query_params.append(('mac_address', local_var_params['mac_address']))
+        if 'device_id' in local_var_params:
+            query_params.append(('device_id', local_var_params['device_id']))
+        if 'device_owner' in local_var_params:
+            query_params.append(('device_owner', local_var_params['device_owner']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'security_groups' in local_var_params:
+            query_params.append(('security_groups', local_var_params['security_groups']))
+            collection_formats['security_groups'] = 'multi'
+        if 'fixed_ips' in local_var_params:
+            query_params.append(('fixed_ips', local_var_params['fixed_ips']))
+            collection_formats['fixed_ips'] = 'multi'
+        if 'tenant_id' in local_var_params:
+            query_params.append(('tenant_id', local_var_params['tenant_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/ports',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='NeutronListPortsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def neutron_list_routers_async(self, request):
+        """查询路由器列表
+
+        查询提交请求的租户有权限操作的所有路由器信息，单次查询最多返回2000条数据，超过2000后会返回分页标记。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for NeutronListRouters
+        :type request: :class:`huaweicloudsdkvpc.v2.NeutronListRoutersRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.NeutronListRoutersResponse`
+        """
+        return self._neutron_list_routers_with_http_info(request)
+
+    def _neutron_list_routers_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'tenant_id' in local_var_params:
+            query_params.append(('tenant_id', local_var_params['tenant_id']))
+        if 'admin_state_up' in local_var_params:
+            query_params.append(('admin_state_up', local_var_params['admin_state_up']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/routers',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='NeutronListRoutersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -3378,6 +4118,311 @@ class VpcAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def neutron_list_subnets_async(self, request):
+        """查询子网列表
+
+        查询提交请求租户的所有子网，单次查询最多返回2000条数据，超过2000后会返回分页标记。分页查询请参考分页查询 。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for NeutronListSubnets
+        :type request: :class:`huaweicloudsdkvpc.v2.NeutronListSubnetsRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.NeutronListSubnetsResponse`
+        """
+        return self._neutron_list_subnets_with_http_info(request)
+
+    def _neutron_list_subnets_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+        if 'cidr' in local_var_params:
+            query_params.append(('cidr', local_var_params['cidr']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'enable_dhcp' in local_var_params:
+            query_params.append(('enable_dhcp', local_var_params['enable_dhcp']))
+        if 'network_id' in local_var_params:
+            query_params.append(('network_id', local_var_params['network_id']))
+        if 'ip_version' in local_var_params:
+            query_params.append(('ip_version', local_var_params['ip_version']))
+        if 'gateway_ip' in local_var_params:
+            query_params.append(('gateway_ip', local_var_params['gateway_ip']))
+        if 'tenant_id' in local_var_params:
+            query_params.append(('tenant_id', local_var_params['tenant_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/subnets',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='NeutronListSubnetsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def neutron_remove_router_interface_async(self, request):
+        """路由器删除接口
+
+        删除路由器接口。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for NeutronRemoveRouterInterface
+        :type request: :class:`huaweicloudsdkvpc.v2.NeutronRemoveRouterInterfaceRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.NeutronRemoveRouterInterfaceResponse`
+        """
+        return self._neutron_remove_router_interface_with_http_info(request)
+
+    def _neutron_remove_router_interface_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'router_id' in local_var_params:
+            path_params['router_id'] = local_var_params['router_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/routers/{router_id}/remove_router_interface',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='NeutronRemoveRouterInterfaceResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def neutron_show_network_async(self, request):
+        """查询网络
+
+        查询指定的网络详情
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for NeutronShowNetwork
+        :type request: :class:`huaweicloudsdkvpc.v2.NeutronShowNetworkRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.NeutronShowNetworkResponse`
+        """
+        return self._neutron_show_network_with_http_info(request)
+
+    def _neutron_show_network_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'network_id' in local_var_params:
+            path_params['network_id'] = local_var_params['network_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/networks/{network_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='NeutronShowNetworkResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def neutron_show_port_async(self, request):
+        """查询端口
+
+        查询端口详情。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for NeutronShowPort
+        :type request: :class:`huaweicloudsdkvpc.v2.NeutronShowPortRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.NeutronShowPortResponse`
+        """
+        return self._neutron_show_port_with_http_info(request)
+
+    def _neutron_show_port_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'port_id' in local_var_params:
+            path_params['port_id'] = local_var_params['port_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/ports/{port_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='NeutronShowPortResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def neutron_show_router_async(self, request):
+        """查询路由器
+
+        查询路由器详情。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for NeutronShowRouter
+        :type request: :class:`huaweicloudsdkvpc.v2.NeutronShowRouterRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.NeutronShowRouterResponse`
+        """
+        return self._neutron_show_router_with_http_info(request)
+
+    def _neutron_show_router_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'router_id' in local_var_params:
+            path_params['router_id'] = local_var_params['router_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/routers/{router_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='NeutronShowRouterResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def neutron_show_security_group_async(self, request):
         """查询安全组
 
@@ -3492,6 +4537,240 @@ class VpcAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def neutron_show_subnet_async(self, request):
+        """查询子网
+
+        查询子网详情
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for NeutronShowSubnet
+        :type request: :class:`huaweicloudsdkvpc.v2.NeutronShowSubnetRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.NeutronShowSubnetResponse`
+        """
+        return self._neutron_show_subnet_with_http_info(request)
+
+    def _neutron_show_subnet_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'subnet_id' in local_var_params:
+            path_params['subnet_id'] = local_var_params['subnet_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/subnets/{subnet_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='NeutronShowSubnetResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def neutron_update_network_async(self, request):
+        """更新网络
+
+        更新网络
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for NeutronUpdateNetwork
+        :type request: :class:`huaweicloudsdkvpc.v2.NeutronUpdateNetworkRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.NeutronUpdateNetworkResponse`
+        """
+        return self._neutron_update_network_with_http_info(request)
+
+    def _neutron_update_network_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'network_id' in local_var_params:
+            path_params['network_id'] = local_var_params['network_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/networks/{network_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='NeutronUpdateNetworkResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def neutron_update_port_async(self, request):
+        """更新端口
+
+        更新端口
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for NeutronUpdatePort
+        :type request: :class:`huaweicloudsdkvpc.v2.NeutronUpdatePortRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.NeutronUpdatePortResponse`
+        """
+        return self._neutron_update_port_with_http_info(request)
+
+    def _neutron_update_port_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'port_id' in local_var_params:
+            path_params['port_id'] = local_var_params['port_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/ports/{port_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='NeutronUpdatePortResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def neutron_update_router_async(self, request):
+        """更新路由器
+
+        更新路由器。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for NeutronUpdateRouter
+        :type request: :class:`huaweicloudsdkvpc.v2.NeutronUpdateRouterRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.NeutronUpdateRouterResponse`
+        """
+        return self._neutron_update_router_with_http_info(request)
+
+    def _neutron_update_router_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'router_id' in local_var_params:
+            path_params['router_id'] = local_var_params['router_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/routers/{router_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='NeutronUpdateRouterResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def neutron_update_security_group_async(self, request):
         """更新安全组
 
@@ -3546,6 +4825,65 @@ class VpcAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='NeutronUpdateSecurityGroupResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def neutron_update_subnet_async(self, request):
+        """更新子网
+
+        更新子网
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for NeutronUpdateSubnet
+        :type request: :class:`huaweicloudsdkvpc.v2.NeutronUpdateSubnetRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.NeutronUpdateSubnetResponse`
+        """
+        return self._neutron_update_subnet_with_http_info(request)
+
+    def _neutron_update_subnet_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'subnet_id' in local_var_params:
+            path_params['subnet_id'] = local_var_params['subnet_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/subnets/{subnet_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='NeutronUpdateSubnetResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -4568,6 +5906,61 @@ class VpcAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='NeutronUpdateFirewallRuleResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_api_version_async(self, request):
+        """查询API版本信息列表
+
+        返回当前API所有可用的版本（仅针对OpenStack原生接口）。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListApiVersion
+        :type request: :class:`huaweicloudsdkvpc.v2.ListApiVersionRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v2.ListApiVersionResponse`
+        """
+        return self._list_api_version_with_http_info(request)
+
+    def _list_api_version_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListApiVersionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

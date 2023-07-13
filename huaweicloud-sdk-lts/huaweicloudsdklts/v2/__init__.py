@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import LtsClient
 from huaweicloudsdklts.v2.lts_client import LtsClient
 from huaweicloudsdklts.v2.lts_async_client import LtsAsyncClient
-# import models into sdk package
+
 from huaweicloudsdklts.v2.model.access_config_base_log_info import AccessConfigBaseLogInfo
 from huaweicloudsdklts.v2.model.access_config_base_log_info_create import AccessConfigBaseLogInfoCreate
 from huaweicloudsdklts.v2.model.access_config_deatil_create import AccessConfigDeatilCreate

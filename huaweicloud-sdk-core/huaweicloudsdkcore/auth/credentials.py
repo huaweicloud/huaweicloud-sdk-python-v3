@@ -75,6 +75,7 @@ class Credentials(DerivedCredentials, TempCredentials, FederalCredentials):
     _X_AUTH_TOKEN = "X-Auth-Token"
 
     def __init__(self, ak=None, sk=None):
+        super(Credentials, self).__init__()
         self.ak = ak
         self.sk = sk
         self.idp_id = None

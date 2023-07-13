@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import CbhClient
 from huaweicloudsdkcbh.v1.cbh_client import CbhClient
 from huaweicloudsdkcbh.v1.cbh_async_client import CbhAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkcbh.v1.model.availability_zones import AvailabilityZones
 from huaweicloudsdkcbh.v1.model.cbh_instances import CBHInstances
 from huaweicloudsdkcbh.v1.model.change_instance_network import ChangeInstanceNetwork

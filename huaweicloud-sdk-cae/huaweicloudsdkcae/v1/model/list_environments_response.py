@@ -34,11 +34,11 @@ class ListEnvironmentsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param api_version: API版本。
+        :param api_version: API版本，固定值“v1”，该值不可修改。
         :type api_version: str
-        :param kind: 资源种类。
+        :param kind: API类型，固定值“Environment”，该值不可修改。
         :type kind: str
-        :param items: 环境信息列表。
+        :param items: 环境列表。
         :type items: list[:class:`huaweicloudsdkcae.v1.EnvironmentItem`]
         """
         
@@ -60,7 +60,7 @@ class ListEnvironmentsResponse(SdkResponse):
     def api_version(self):
         """Gets the api_version of this ListEnvironmentsResponse.
 
-        API版本。
+        API版本，固定值“v1”，该值不可修改。
 
         :return: The api_version of this ListEnvironmentsResponse.
         :rtype: str
@@ -71,7 +71,7 @@ class ListEnvironmentsResponse(SdkResponse):
     def api_version(self, api_version):
         """Sets the api_version of this ListEnvironmentsResponse.
 
-        API版本。
+        API版本，固定值“v1”，该值不可修改。
 
         :param api_version: The api_version of this ListEnvironmentsResponse.
         :type api_version: str
@@ -82,7 +82,7 @@ class ListEnvironmentsResponse(SdkResponse):
     def kind(self):
         """Gets the kind of this ListEnvironmentsResponse.
 
-        资源种类。
+        API类型，固定值“Environment”，该值不可修改。
 
         :return: The kind of this ListEnvironmentsResponse.
         :rtype: str
@@ -93,7 +93,7 @@ class ListEnvironmentsResponse(SdkResponse):
     def kind(self, kind):
         """Sets the kind of this ListEnvironmentsResponse.
 
-        资源种类。
+        API类型，固定值“Environment”，该值不可修改。
 
         :param kind: The kind of this ListEnvironmentsResponse.
         :type kind: str
@@ -104,7 +104,7 @@ class ListEnvironmentsResponse(SdkResponse):
     def items(self):
         """Gets the items of this ListEnvironmentsResponse.
 
-        环境信息列表。
+        环境列表。
 
         :return: The items of this ListEnvironmentsResponse.
         :rtype: list[:class:`huaweicloudsdkcae.v1.EnvironmentItem`]
@@ -115,7 +115,7 @@ class ListEnvironmentsResponse(SdkResponse):
     def items(self, items):
         """Sets the items of this ListEnvironmentsResponse.
 
-        环境信息列表。
+        环境列表。
 
         :param items: The items of this ListEnvironmentsResponse.
         :type items: list[:class:`huaweicloudsdkcae.v1.EnvironmentItem`]

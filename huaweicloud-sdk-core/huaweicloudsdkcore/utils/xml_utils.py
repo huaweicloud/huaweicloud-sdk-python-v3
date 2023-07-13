@@ -39,32 +39,30 @@ class XmlTransfer:
         value = _dict.get(root_name)
         root = ET.Element(root_name)
 
-        str_value = self._to_string(value)
-        if str_value is not None:
-            root.text = str_value
-        elif isinstance(value, dict):
+        if isinstance(value, dict):
             for k, v in value.items():
                 self._make_element(root, k, v)
         else:
-            raise ValueError("parse error: type " + type(value))
+            root.text = self._to_string(value)
         return root
 
     def _make_element(self, element, key, value):
         if self._fill_element_attr_and_text(element, key, value):
             return
 
-        str_value = self._to_string(value)
-        if str_value is not None:
+        try:
+            str_value = self._to_string(value)
             ET.SubElement(element, key).text = str_value
-        elif isinstance(value, list):
-            for item in value:
-                self._make_element(element, key, item)
-        elif isinstance(value, dict):
-            sub = ET.SubElement(element, key)
-            for k, v in value.items():
-                self._make_element(sub, k, v)
-        else:
-            ET.SubElement(element, key)
+        except TypeError:
+            if isinstance(value, list):
+                for item in value:
+                    self._make_element(element, key, item)
+            elif isinstance(value, dict):
+                sub = ET.SubElement(element, key)
+                for k, v in value.items():
+                    self._make_element(sub, k, v)
+            else:
+                ET.SubElement(element, key)
 
     def to_dict(self, string, ignore_root=False):
         _dict = {}
@@ -160,7 +158,7 @@ class XmlTransfer:
         elif isinstance(data, (float, Decimal) + six.integer_types):
             return str(data)
         else:
-            return None
+            raise TypeError("parse error: type " + type(data))
 
     def _fill_element_attr_and_text(self, element, key, value):
         flag = False

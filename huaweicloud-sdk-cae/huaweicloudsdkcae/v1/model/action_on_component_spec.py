@@ -19,7 +19,7 @@ class ActionOnComponentSpec:
     openapi_types = {
         'snapshot_index': 'int',
         'replica': 'int',
-        'source': 'Source',
+        'source': 'ActionOnComponentSource',
         'resource_limit': 'ResourceLimitForUpgrade'
     }
 
@@ -37,10 +37,10 @@ class ActionOnComponentSpec:
 
         :param snapshot_index: 快照序号。
         :type snapshot_index: int
-        :param replica: 副本数目。
+        :param replica: 实例个数。
         :type replica: int
         :param source: 
-        :type source: :class:`huaweicloudsdkcae.v1.Source`
+        :type source: :class:`huaweicloudsdkcae.v1.ActionOnComponentSource`
         :param resource_limit: 
         :type resource_limit: :class:`huaweicloudsdkcae.v1.ResourceLimitForUpgrade`
         """
@@ -88,7 +88,7 @@ class ActionOnComponentSpec:
     def replica(self):
         """Gets the replica of this ActionOnComponentSpec.
 
-        副本数目。
+        实例个数。
 
         :return: The replica of this ActionOnComponentSpec.
         :rtype: int
@@ -99,7 +99,7 @@ class ActionOnComponentSpec:
     def replica(self, replica):
         """Sets the replica of this ActionOnComponentSpec.
 
-        副本数目。
+        实例个数。
 
         :param replica: The replica of this ActionOnComponentSpec.
         :type replica: int
@@ -111,7 +111,7 @@ class ActionOnComponentSpec:
         """Gets the source of this ActionOnComponentSpec.
 
         :return: The source of this ActionOnComponentSpec.
-        :rtype: :class:`huaweicloudsdkcae.v1.Source`
+        :rtype: :class:`huaweicloudsdkcae.v1.ActionOnComponentSource`
         """
         return self._source
 
@@ -120,7 +120,7 @@ class ActionOnComponentSpec:
         """Sets the source of this ActionOnComponentSpec.
 
         :param source: The source of this ActionOnComponentSpec.
-        :type source: :class:`huaweicloudsdkcae.v1.Source`
+        :type source: :class:`huaweicloudsdkcae.v1.ActionOnComponentSource`
         """
         self._source = source
 

@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import DcClient
 from huaweicloudsdkdc.v3.dc_client import DcClient
 from huaweicloudsdkdc.v3.dc_async_client import DcAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkdc.v3.model.batch_create_resource_tags_request import BatchCreateResourceTagsRequest
 from huaweicloudsdkdc.v3.model.batch_create_resource_tags_response import BatchCreateResourceTagsResponse
 from huaweicloudsdkdc.v3.model.batch_operate_resource_tags_request_body import BatchOperateResourceTagsRequestBody

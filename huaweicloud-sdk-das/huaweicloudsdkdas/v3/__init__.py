@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import DasClient
 from huaweicloudsdkdas.v3.das_client import DasClient
 from huaweicloudsdkdas.v3.das_async_client import DasAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkdas.v3.model.api_version import ApiVersion
 from huaweicloudsdkdas.v3.model.cancel_share_connections_request import CancelShareConnectionsRequest
 from huaweicloudsdkdas.v3.model.cancel_share_connections_request_body import CancelShareConnectionsRequestBody

@@ -47,7 +47,7 @@ class CreateScalingPolicyV2Option:
 
         :param scaling_policy_name: 策略名称（1-64）字符，可以用中文、字母、数字、下划线、中划线的组合。
         :type scaling_policy_name: str
-        :param scaling_resource_id: 伸缩资源ID，伸缩组唯一标识或带宽唯一标识。如果scaling_resource_type为SCALING_GROUP，对应伸缩组唯一标识。如果scaling_resource_type为BANDWIDTH，对应带宽唯一标识。 说明： - 弹性伸缩不支持对包年包月的带宽进行调整。
+        :param scaling_resource_id: 伸缩资源ID，伸缩组唯一标识或带宽唯一标识。如果scaling_resource_type为SCALING_GROUP，对应伸缩组唯一标识。如果scaling_resource_type为BANDWIDTH，对应带宽唯一标识。说明：- 弹性伸缩不支持对包年包月的带宽进行调整。
         :type scaling_resource_id: str
         :param scaling_resource_type: 伸缩资源类型。伸缩组：SCALING_GROUP。带宽：BANDWIDTH。
         :type scaling_resource_type: str
@@ -119,7 +119,7 @@ class CreateScalingPolicyV2Option:
     def scaling_resource_id(self):
         """Gets the scaling_resource_id of this CreateScalingPolicyV2Option.
 
-        伸缩资源ID，伸缩组唯一标识或带宽唯一标识。如果scaling_resource_type为SCALING_GROUP，对应伸缩组唯一标识。如果scaling_resource_type为BANDWIDTH，对应带宽唯一标识。 说明： - 弹性伸缩不支持对包年包月的带宽进行调整。
+        伸缩资源ID，伸缩组唯一标识或带宽唯一标识。如果scaling_resource_type为SCALING_GROUP，对应伸缩组唯一标识。如果scaling_resource_type为BANDWIDTH，对应带宽唯一标识。说明：- 弹性伸缩不支持对包年包月的带宽进行调整。
 
         :return: The scaling_resource_id of this CreateScalingPolicyV2Option.
         :rtype: str
@@ -130,7 +130,7 @@ class CreateScalingPolicyV2Option:
     def scaling_resource_id(self, scaling_resource_id):
         """Sets the scaling_resource_id of this CreateScalingPolicyV2Option.
 
-        伸缩资源ID，伸缩组唯一标识或带宽唯一标识。如果scaling_resource_type为SCALING_GROUP，对应伸缩组唯一标识。如果scaling_resource_type为BANDWIDTH，对应带宽唯一标识。 说明： - 弹性伸缩不支持对包年包月的带宽进行调整。
+        伸缩资源ID，伸缩组唯一标识或带宽唯一标识。如果scaling_resource_type为SCALING_GROUP，对应伸缩组唯一标识。如果scaling_resource_type为BANDWIDTH，对应带宽唯一标识。说明：- 弹性伸缩不支持对包年包月的带宽进行调整。
 
         :param scaling_resource_id: The scaling_resource_id of this CreateScalingPolicyV2Option.
         :type scaling_resource_id: str

@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import LakeFormationClient
 from huaweicloudsdklakeformation.v1.lakeformation_client import LakeFormationClient
 from huaweicloudsdklakeformation.v1.lakeformation_async_client import LakeFormationAsyncClient
-# import models into sdk package
+
 from huaweicloudsdklakeformation.v1.model.access_info import AccessInfo
 from huaweicloudsdklakeformation.v1.model.access_policy_input import AccessPolicyInput
 from huaweicloudsdklakeformation.v1.model.access_request_info import AccessRequestInfo

@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import AomClient
 from huaweicloudsdkaom.v1.aom_client import AomClient
 from huaweicloudsdkaom.v1.aom_async_client import AomAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkaom.v1.model.approve_info import ApproveInfo
 from huaweicloudsdkaom.v1.model.create_fast_execute_script_request import CreateFastExecuteScriptRequest
 from huaweicloudsdkaom.v1.model.create_fast_execute_script_response import CreateFastExecuteScriptResponse

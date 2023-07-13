@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import SmnClient
 from huaweicloudsdksmn.v2.smn_client import SmnClient
 from huaweicloudsdksmn.v2.smn_async_client import SmnAsyncClient
-# import models into sdk package
+
 from huaweicloudsdksmn.v2.model.access_policy import AccessPolicy
 from huaweicloudsdksmn.v2.model.add_subscription_request import AddSubscriptionRequest
 from huaweicloudsdksmn.v2.model.add_subscription_request_body import AddSubscriptionRequestBody

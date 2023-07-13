@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import IamClient
 from huaweicloudsdkiam.v3.iam_client import IamClient
 from huaweicloudsdkiam.v3.iam_async_client import IamAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkiam.v3.model.acl_policy_option import AclPolicyOption
 from huaweicloudsdkiam.v3.model.acl_policy_result import AclPolicyResult
 from huaweicloudsdkiam.v3.model.agency_all_project_role import AgencyAllProjectRole

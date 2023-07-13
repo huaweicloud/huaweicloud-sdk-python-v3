@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import BcsClient
 from huaweicloudsdkbcs.v2.bcs_client import BcsClient
 from huaweicloudsdkbcs.v2.bcs_async_client import BcsAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkbcs.v2.model.basic_info import BasicInfo
 from huaweicloudsdkbcs.v2.model.batch_add_peers_to_channel_request import BatchAddPeersToChannelRequest
 from huaweicloudsdkbcs.v2.model.batch_add_peers_to_channel_request_body import BatchAddPeersToChannelRequestBody

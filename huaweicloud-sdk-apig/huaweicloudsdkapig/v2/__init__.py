@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import ApigClient
 from huaweicloudsdkapig.v2.apig_client import ApigClient
 from huaweicloudsdkapig.v2.apig_async_client import ApigAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkapig.v2.model.acl_api_binding_create import AclApiBindingCreate
 from huaweicloudsdkapig.v2.model.acl_api_binding_info import AclApiBindingInfo
 from huaweicloudsdkapig.v2.model.acl_batch_delete import AclBatchDelete

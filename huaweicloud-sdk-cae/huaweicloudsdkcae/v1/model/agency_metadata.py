@@ -29,7 +29,7 @@ class AgencyMetadata:
 
         The model defined in huaweicloud sdk
 
-        :param name: 委托名称。
+        :param name: 委托名称，固定值“cae_trust”，该值不可修改。
         :type name: str
         """
         
@@ -44,7 +44,7 @@ class AgencyMetadata:
     def name(self):
         """Gets the name of this AgencyMetadata.
 
-        委托名称。
+        委托名称，固定值“cae_trust”，该值不可修改。
 
         :return: The name of this AgencyMetadata.
         :rtype: str
@@ -55,7 +55,7 @@ class AgencyMetadata:
     def name(self, name):
         """Sets the name of this AgencyMetadata.
 
-        委托名称。
+        委托名称，固定值“cae_trust”，该值不可修改。
 
         :param name: The name of this AgencyMetadata.
         :type name: str

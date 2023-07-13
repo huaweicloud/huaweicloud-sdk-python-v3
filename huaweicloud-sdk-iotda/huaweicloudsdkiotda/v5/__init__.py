@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import IoTDAClient
 from huaweicloudsdkiotda.v5.iotda_client import IoTDAClient
 from huaweicloudsdkiotda.v5.iotda_async_client import IoTDAAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkiotda.v5.model.action_device_alarm import ActionDeviceAlarm
 from huaweicloudsdkiotda.v5.model.action_device_command import ActionDeviceCommand
 from huaweicloudsdkiotda.v5.model.action_smn_forwarding import ActionSmnForwarding

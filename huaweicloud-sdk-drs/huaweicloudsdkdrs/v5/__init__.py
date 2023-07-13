@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import DrsClient
 from huaweicloudsdkdrs.v5.drs_client import DrsClient
 from huaweicloudsdkdrs.v5.drs_async_client import DrsAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkdrs.v5.model.action_params import ActionParams
 from huaweicloudsdkdrs.v5.model.action_req import ActionReq
 from huaweicloudsdkdrs.v5.model.alarm_notify_config import AlarmNotifyConfig

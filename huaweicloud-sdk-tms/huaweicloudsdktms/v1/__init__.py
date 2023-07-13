@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import TmsClient
 from huaweicloudsdktms.v1.tms_client import TmsClient
 from huaweicloudsdktms.v1.tms_async_client import TmsAsyncClient
-# import models into sdk package
+
 from huaweicloudsdktms.v1.model.create_predefine_tags_request import CreatePredefineTagsRequest
 from huaweicloudsdktms.v1.model.create_predefine_tags_response import CreatePredefineTagsResponse
 from huaweicloudsdktms.v1.model.create_resource_tag_request import CreateResourceTagRequest

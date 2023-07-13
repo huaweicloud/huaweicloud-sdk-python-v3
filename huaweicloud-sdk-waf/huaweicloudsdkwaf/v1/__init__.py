@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import WafClient
 from huaweicloudsdkwaf.v1.waf_client import WafClient
 from huaweicloudsdkwaf.v1.waf_async_client import WafAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkwaf.v1.model.access_progress import AccessProgress
 from huaweicloudsdkwaf.v1.model.action import Action
 from huaweicloudsdkwaf.v1.model.advanced import Advanced

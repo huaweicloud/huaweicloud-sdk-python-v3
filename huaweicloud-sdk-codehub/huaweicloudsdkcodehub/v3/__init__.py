@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import CodeHubClient
 from huaweicloudsdkcodehub.v3.codehub_client import CodeHubClient
 from huaweicloudsdkcodehub.v3.codehub_async_client import CodeHubAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkcodehub.v3.model.add_deploy_key_request import AddDeployKeyRequest
 from huaweicloudsdkcodehub.v3.model.add_deploy_key_request_body import AddDeployKeyRequestBody
 from huaweicloudsdkcodehub.v3.model.add_deploy_key_response import AddDeployKeyResponse

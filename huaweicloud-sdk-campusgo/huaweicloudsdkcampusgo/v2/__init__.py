@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import CampusGoClient
 from huaweicloudsdkcampusgo.v2.campusgo_client import CampusGoClient
 from huaweicloudsdkcampusgo.v2.campusgo_async_client import CampusGoAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkcampusgo.v2.model.create_response_body import CreateResponseBody
 from huaweicloudsdkcampusgo.v2.model.create_tasks_request import CreateTasksRequest
 from huaweicloudsdkcampusgo.v2.model.create_tasks_request_body import CreateTasksRequestBody

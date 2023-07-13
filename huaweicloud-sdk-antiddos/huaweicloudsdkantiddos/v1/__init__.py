@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import AntiDDoSClient
 from huaweicloudsdkantiddos.v1.antiddos_client import AntiDDoSClient
 from huaweicloudsdkantiddos.v1.antiddos_async_client import AntiDDoSAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkantiddos.v1.model.alert_config_resp_warn_config import AlertConfigRespWarnConfig
 from huaweicloudsdkantiddos.v1.model.clean_limit_dict import CleanLimitDict
 from huaweicloudsdkantiddos.v1.model.create_default_config_request import CreateDefaultConfigRequest

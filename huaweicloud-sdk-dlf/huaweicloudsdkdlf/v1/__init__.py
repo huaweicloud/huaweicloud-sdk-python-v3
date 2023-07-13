@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import DlfClient
 from huaweicloudsdkdlf.v1.dlf_client import DlfClient
 from huaweicloudsdkdlf.v1.dlf_async_client import DlfAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkdlf.v1.model.basic_info import BasicInfo
 from huaweicloudsdkdlf.v1.model.cancel_script_request import CancelScriptRequest
 from huaweicloudsdkdlf.v1.model.cancel_script_response import CancelScriptResponse

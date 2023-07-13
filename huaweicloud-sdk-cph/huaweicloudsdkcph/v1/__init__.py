@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import CphClient
 from huaweicloudsdkcph.v1.cph_client import CphClient
 from huaweicloudsdkcph.v1.cph_async_client import CphAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkcph.v1.model.address import Address
 from huaweicloudsdkcph.v1.model.bandwidth import Bandwidth
 from huaweicloudsdkcph.v1.model.batch_create_tags_request import BatchCreateTagsRequest

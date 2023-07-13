@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import SdrsClient
 from huaweicloudsdksdrs.v1.sdrs_client import SdrsClient
 from huaweicloudsdksdrs.v1.sdrs_async_client import SdrsAsyncClient
-# import models into sdk package
+
 from huaweicloudsdksdrs.v1.model.add_protected_instance_nic_request import AddProtectedInstanceNicRequest
 from huaweicloudsdksdrs.v1.model.add_protected_instance_nic_response import AddProtectedInstanceNicResponse
 from huaweicloudsdksdrs.v1.model.add_protected_instance_tags_request import AddProtectedInstanceTagsRequest

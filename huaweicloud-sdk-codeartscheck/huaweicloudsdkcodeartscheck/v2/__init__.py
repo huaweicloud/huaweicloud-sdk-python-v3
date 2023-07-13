@@ -2,10 +2,9 @@
 
 from __future__ import absolute_import
 
-# import CodeArtsCheckClient
 from huaweicloudsdkcodeartscheck.v2.codeartscheck_client import CodeArtsCheckClient
 from huaweicloudsdkcodeartscheck.v2.codeartscheck_async_client import CodeArtsCheckAsyncClient
-# import models into sdk package
+
 from huaweicloudsdkcodeartscheck.v2.model.check_config_info import CheckConfigInfo
 from huaweicloudsdkcodeartscheck.v2.model.check_parameters_request import CheckParametersRequest
 from huaweicloudsdkcodeartscheck.v2.model.check_parameters_response import CheckParametersResponse
