@@ -1,0 +1,61 @@
+name: push && tag && release
+on:
+  push:
+    branches: [ "master-dev" ]
+  workflow_dispatch:
+permissions: write-all
+jobs:
+  release:
+    runs-on: ubuntu-22.04
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        ssh-key: ${{ secrets.SSH_KEY }}
+        fetch-depth: 0
+    - name: config
+      run: |
+        git config user.name ${{ vars.SDK_USERNAME }}
+        git config user.email ${{ vars.SDK_EMAIL }}
+    - name: push && tag && release
+      shell: bash
+      run: |
+        version=$(cat VERSION)
+        echo "version ${version} found on branch ${GITHUB_REF_NAME}"
+        tag_name="v${version}"
+        for tag in $(git tag --list)
+        do
+          if [[ "$tag" == "$tag_name" ]]; then echo "tag ${tag_name} exists, skip" && exit 0; fi
+        done
+        mkdir ../temp || exit 1
+        find . -maxdepth 1 -mindepth 1  | grep -Ev '*git*|.cid|.codecheck|buildscript' | xargs -I '{}' cp -a '{}' ../temp
+        git checkout master
+        find . -maxdepth 1 -mindepth 1  | grep -Ev '*git*' | xargs -I '{}' rm -rf '{}'
+        mv ../temp/* .
+        echo '-----BEGIN CONTENTS IN CURRENT DIR-----'
+        ls -a
+        echo '-----END CONTENTS IN CURRENT DIR-----'
+        git add -A .
+        if [[ "$(git status | grep 'nothing to commit')" ]]; then echo 'nothing to commit, skip' && exit 0; fi
+        git commit -m "release version: $version"
+        echo "git commit finished."
+        git push origin master
+        echo "git push finished."
+        commit_sha=$(git rev-parse HEAD)
+        curl -L \
+        -X POST \
+        -H 'Accept: application/vnd.github+json' \
+        -H 'content-type: application/json' \
+        -H 'Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}' \
+        -H 'X-GitHub-Api-Version: 2022-11-28' \
+        -d '{\"tag\":\"${tag_name}\",\"message\":\"\",\"object\":\"${commit_sha}\",\"type\":\"commit\"}' \
+        https://api.github.com/repos/${{ github.repository }}/git/tags || exit 1
+        echo "create tag ${tag_name} finished."
+        curl -L \
+        -X POST \
+        -H 'Accept: application/vnd.github+json' \
+        -H 'content-type: application/json' \
+        -H 'Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}' \
+        -H 'X-GitHub-Api-Version: 2022-11-28' \
+        -d "{\"tag_name\":\"${tag_name}\",\"name\":\"${tag_name}\",\"body\":\"Release ${version}\"}" \
+        https://api.github.com/repos/${{ github.repository }}/releases || exit 1
+        echo "create release ${version} finished."
