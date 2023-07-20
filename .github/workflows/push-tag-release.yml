@@ -79,6 +79,7 @@ jobs:
               -L "https://api.github.com/repos/${github_repo}/actions/workflows/${workflow}/dispatches"
               echo "workflow triggered: ${workflow}"
             done
+          fi
         fi
       env:
         source_repo: ${{ secrets.SOURCE_REPO }}
