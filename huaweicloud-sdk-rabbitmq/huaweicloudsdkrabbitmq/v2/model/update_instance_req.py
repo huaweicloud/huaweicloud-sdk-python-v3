@@ -51,7 +51,7 @@ class UpdateInstanceReq:
         :type maintain_begin: str
         :param maintain_end: 维护时间窗结束时间，格式为HH:mm:ss。   - 维护时间窗开始和结束时间必须为指定的时间段。   - 结束时间在开始时间基础上加四个小时，即当开始时间为22:00:00时，结束时间为02:00:00。   - 该参数不能单独为空，若该值为空，则开始时间也为空。系统分配一个默认结束时间06:00:00。
         :type maintain_end: str
-        :param security_group_id: 安全组ID。
+        :param security_group_id: 安全组ID。  获取方法如下：登录虚拟私有云服务的控制台界面，在安全组的详情页面查找安全组ID。
         :type security_group_id: str
         :param enable_publicip: RabbitMQ实例是否开启公网访问功能。   - true：开启   - false：不开启
         :type enable_publicip: bool
@@ -182,7 +182,7 @@ class UpdateInstanceReq:
     def security_group_id(self):
         """Gets the security_group_id of this UpdateInstanceReq.
 
-        安全组ID。
+        安全组ID。  获取方法如下：登录虚拟私有云服务的控制台界面，在安全组的详情页面查找安全组ID。
 
         :return: The security_group_id of this UpdateInstanceReq.
         :rtype: str
@@ -193,7 +193,7 @@ class UpdateInstanceReq:
     def security_group_id(self, security_group_id):
         """Sets the security_group_id of this UpdateInstanceReq.
 
-        安全组ID。
+        安全组ID。  获取方法如下：登录虚拟私有云服务的控制台界面，在安全组的详情页面查找安全组ID。
 
         :param security_group_id: The security_group_id of this UpdateInstanceReq.
         :type security_group_id: str

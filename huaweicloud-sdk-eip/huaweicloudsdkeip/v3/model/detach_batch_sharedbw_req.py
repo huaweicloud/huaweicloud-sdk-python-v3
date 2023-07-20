@@ -5,7 +5,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class ErrorResponse:
+class DetachBatchSharedbwReq:
 
     """
     Attributes:
@@ -17,78 +17,51 @@ class ErrorResponse:
     sensitive_list = []
 
     openapi_types = {
-        'error_code': 'str',
-        'error_msg': 'str'
+        'publicips': 'list[DetachBatchSharedbwReqPublicips]'
     }
 
     attribute_map = {
-        'error_code': 'error_code',
-        'error_msg': 'error_msg'
+        'publicips': 'publicips'
     }
 
-    def __init__(self, error_code=None, error_msg=None):
-        """ErrorResponse
+    def __init__(self, publicips=None):
+        """DetachBatchSharedbwReq
 
         The model defined in huaweicloud sdk
 
-        :param error_code: 错误码。
-        :type error_code: str
-        :param error_msg: 错误消息。
-        :type error_msg: str
+        :param publicips: 共享带宽批量移出弹性公网IP请求对象
+        :type publicips: list[:class:`huaweicloudsdkeip.v3.DetachBatchSharedbwReqPublicips`]
         """
         
         
 
-        self._error_code = None
-        self._error_msg = None
+        self._publicips = None
         self.discriminator = None
 
-        self.error_code = error_code
-        self.error_msg = error_msg
+        if publicips is not None:
+            self.publicips = publicips
 
     @property
-    def error_code(self):
-        """Gets the error_code of this ErrorResponse.
+    def publicips(self):
+        """Gets the publicips of this DetachBatchSharedbwReq.
 
-        错误码。
+        共享带宽批量移出弹性公网IP请求对象
 
-        :return: The error_code of this ErrorResponse.
-        :rtype: str
+        :return: The publicips of this DetachBatchSharedbwReq.
+        :rtype: list[:class:`huaweicloudsdkeip.v3.DetachBatchSharedbwReqPublicips`]
         """
-        return self._error_code
+        return self._publicips
 
-    @error_code.setter
-    def error_code(self, error_code):
-        """Sets the error_code of this ErrorResponse.
+    @publicips.setter
+    def publicips(self, publicips):
+        """Sets the publicips of this DetachBatchSharedbwReq.
 
-        错误码。
+        共享带宽批量移出弹性公网IP请求对象
 
-        :param error_code: The error_code of this ErrorResponse.
-        :type error_code: str
+        :param publicips: The publicips of this DetachBatchSharedbwReq.
+        :type publicips: list[:class:`huaweicloudsdkeip.v3.DetachBatchSharedbwReqPublicips`]
         """
-        self._error_code = error_code
-
-    @property
-    def error_msg(self):
-        """Gets the error_msg of this ErrorResponse.
-
-        错误消息。
-
-        :return: The error_msg of this ErrorResponse.
-        :rtype: str
-        """
-        return self._error_msg
-
-    @error_msg.setter
-    def error_msg(self, error_msg):
-        """Sets the error_msg of this ErrorResponse.
-
-        错误消息。
-
-        :param error_msg: The error_msg of this ErrorResponse.
-        :type error_msg: str
-        """
-        self._error_msg = error_msg
+        self._publicips = publicips
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -132,7 +105,7 @@ class ErrorResponse:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ErrorResponse):
+        if not isinstance(other, DetachBatchSharedbwReq):
             return False
 
         return self.__dict__ == other.__dict__

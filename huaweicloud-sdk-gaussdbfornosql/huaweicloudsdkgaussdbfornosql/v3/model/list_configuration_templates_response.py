@@ -19,21 +19,25 @@ class ListConfigurationTemplatesResponse(SdkResponse):
 
     openapi_types = {
         'count': 'int',
+        'quota': 'int',
         'configurations': 'list[ListConfigurationsResult]'
     }
 
     attribute_map = {
         'count': 'count',
+        'quota': 'quota',
         'configurations': 'configurations'
     }
 
-    def __init__(self, count=None, configurations=None):
+    def __init__(self, count=None, quota=None, configurations=None):
         """ListConfigurationTemplatesResponse
 
         The model defined in huaweicloud sdk
 
         :param count: 总记录数。
         :type count: int
+        :param quota: 用户可创建的自定义参数模板最大数量。
+        :type quota: int
         :param configurations: 
         :type configurations: list[:class:`huaweicloudsdkgaussdbfornosql.v3.ListConfigurationsResult`]
         """
@@ -41,11 +45,14 @@ class ListConfigurationTemplatesResponse(SdkResponse):
         super(ListConfigurationTemplatesResponse, self).__init__()
 
         self._count = None
+        self._quota = None
         self._configurations = None
         self.discriminator = None
 
         if count is not None:
             self.count = count
+        if quota is not None:
+            self.quota = quota
         if configurations is not None:
             self.configurations = configurations
 
@@ -70,6 +77,28 @@ class ListConfigurationTemplatesResponse(SdkResponse):
         :type count: int
         """
         self._count = count
+
+    @property
+    def quota(self):
+        """Gets the quota of this ListConfigurationTemplatesResponse.
+
+        用户可创建的自定义参数模板最大数量。
+
+        :return: The quota of this ListConfigurationTemplatesResponse.
+        :rtype: int
+        """
+        return self._quota
+
+    @quota.setter
+    def quota(self, quota):
+        """Sets the quota of this ListConfigurationTemplatesResponse.
+
+        用户可创建的自定义参数模板最大数量。
+
+        :param quota: The quota of this ListConfigurationTemplatesResponse.
+        :type quota: int
+        """
+        self._quota = quota
 
     @property
     def configurations(self):

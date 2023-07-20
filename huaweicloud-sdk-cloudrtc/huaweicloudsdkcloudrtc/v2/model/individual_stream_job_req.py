@@ -23,7 +23,6 @@ class IndividualStreamJobReq:
         'video_type': 'str',
         'select_stream_type': 'str',
         'max_idle_time': 'int',
-        'publish_param': 'PublishParam',
         'record_param': 'RecordParam'
     }
 
@@ -34,11 +33,10 @@ class IndividualStreamJobReq:
         'video_type': 'video_type',
         'select_stream_type': 'select_stream_type',
         'max_idle_time': 'max_idle_time',
-        'publish_param': 'publish_param',
         'record_param': 'record_param'
     }
 
-    def __init__(self, room_id=None, user_id=None, is_record_audio=None, video_type=None, select_stream_type=None, max_idle_time=None, publish_param=None, record_param=None):
+    def __init__(self, room_id=None, user_id=None, is_record_audio=None, video_type=None, select_stream_type=None, max_idle_time=None, record_param=None):
         """IndividualStreamJobReq
 
         The model defined in huaweicloud sdk
@@ -55,8 +53,6 @@ class IndividualStreamJobReq:
         :type select_stream_type: str
         :param max_idle_time: 最长空闲频道时间。  取值范围：[5，43200]，默认值为30。  单位：秒。  如果频道内无连麦方的状态持续超过该时间，录制程序会自动退出。退出后，再次调用start请求，会产生新的录制任务。  连麦方指：joiner或者publisher的用户。 
         :type max_idle_time: int
-        :param publish_param: 
-        :type publish_param: :class:`huaweicloudsdkcloudrtc.v2.PublishParam`
         :param record_param: 
         :type record_param: :class:`huaweicloudsdkcloudrtc.v2.RecordParam`
         """
@@ -69,7 +65,6 @@ class IndividualStreamJobReq:
         self._video_type = None
         self._select_stream_type = None
         self._max_idle_time = None
-        self._publish_param = None
         self._record_param = None
         self.discriminator = None
 
@@ -83,8 +78,6 @@ class IndividualStreamJobReq:
             self.select_stream_type = select_stream_type
         if max_idle_time is not None:
             self.max_idle_time = max_idle_time
-        if publish_param is not None:
-            self.publish_param = publish_param
         if record_param is not None:
             self.record_param = record_param
 
@@ -219,24 +212,6 @@ class IndividualStreamJobReq:
         :type max_idle_time: int
         """
         self._max_idle_time = max_idle_time
-
-    @property
-    def publish_param(self):
-        """Gets the publish_param of this IndividualStreamJobReq.
-
-        :return: The publish_param of this IndividualStreamJobReq.
-        :rtype: :class:`huaweicloudsdkcloudrtc.v2.PublishParam`
-        """
-        return self._publish_param
-
-    @publish_param.setter
-    def publish_param(self, publish_param):
-        """Sets the publish_param of this IndividualStreamJobReq.
-
-        :param publish_param: The publish_param of this IndividualStreamJobReq.
-        :type publish_param: :class:`huaweicloudsdkcloudrtc.v2.PublishParam`
-        """
-        self._publish_param = publish_param
 
     @property
     def record_param(self):

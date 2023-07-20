@@ -9,6 +9,8 @@ from huaweicloudsdkcore.region.provider import RegionProviderChain
 class GesRegion:
     _PROVIDER = RegionProviderChain.get_default_region_provider_chain("GES")
 
+    EU_WEST_101 = Region("eu-west-101",
+                        "https://ges.eu-west-101.myhuaweicloud.eu")
     CN_NORTH_2 = Region("cn-north-2",
                         "https://ges.cn-north-2.myhuaweicloud.com")
     CN_NORTH_4 = Region("cn-north-4",
@@ -25,6 +27,7 @@ class GesRegion:
                         "https://ges.ap-southeast-3.myhuaweicloud.com")
 
     static_fields = {
+        "eu-west-101": EU_WEST_101,
         "cn-north-2": CN_NORTH_2,
         "cn-north-4": CN_NORTH_4,
         "cn-north-1": CN_NORTH_1,

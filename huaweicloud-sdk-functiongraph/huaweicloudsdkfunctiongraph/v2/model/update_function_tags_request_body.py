@@ -18,8 +18,8 @@ class UpdateFunctionTagsRequestBody:
 
     openapi_types = {
         'action': 'str',
-        'tags': 'list[dict(str, str)]',
-        'sys_tags': 'list[dict(str, str)]'
+        'tags': 'list[KvItem]',
+        'sys_tags': 'list[KvItem]'
     }
 
     attribute_map = {
@@ -36,9 +36,9 @@ class UpdateFunctionTagsRequestBody:
         :param action: action名称
         :type action: str
         :param tags: 标签列表
-        :type tags: list[dict(str, str)]
+        :type tags: list[:class:`huaweicloudsdkfunctiongraph.v2.KvItem`]
         :param sys_tags: 系统标签列表
-        :type sys_tags: list[dict(str, str)]
+        :type sys_tags: list[:class:`huaweicloudsdkfunctiongraph.v2.KvItem`]
         """
         
         
@@ -84,7 +84,7 @@ class UpdateFunctionTagsRequestBody:
         标签列表
 
         :return: The tags of this UpdateFunctionTagsRequestBody.
-        :rtype: list[dict(str, str)]
+        :rtype: list[:class:`huaweicloudsdkfunctiongraph.v2.KvItem`]
         """
         return self._tags
 
@@ -95,7 +95,7 @@ class UpdateFunctionTagsRequestBody:
         标签列表
 
         :param tags: The tags of this UpdateFunctionTagsRequestBody.
-        :type tags: list[dict(str, str)]
+        :type tags: list[:class:`huaweicloudsdkfunctiongraph.v2.KvItem`]
         """
         self._tags = tags
 
@@ -106,7 +106,7 @@ class UpdateFunctionTagsRequestBody:
         系统标签列表
 
         :return: The sys_tags of this UpdateFunctionTagsRequestBody.
-        :rtype: list[dict(str, str)]
+        :rtype: list[:class:`huaweicloudsdkfunctiongraph.v2.KvItem`]
         """
         return self._sys_tags
 
@@ -117,7 +117,7 @@ class UpdateFunctionTagsRequestBody:
         系统标签列表
 
         :param sys_tags: The sys_tags of this UpdateFunctionTagsRequestBody.
-        :type sys_tags: list[dict(str, str)]
+        :type sys_tags: list[:class:`huaweicloudsdkfunctiongraph.v2.KvItem`]
         """
         self._sys_tags = sys_tags
 

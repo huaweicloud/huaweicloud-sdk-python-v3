@@ -741,8 +741,6 @@ class MetaStudioAsyncClient(Client):
             form_params['file'] = local_var_params['file']
         if 'style_id' in local_var_params:
             form_params['style_id'] = local_var_params['style_id']
-        if 'model_asset_id' in local_var_params:
-            form_params['model_asset_id'] = local_var_params['model_asset_id']
         if 'name' in local_var_params:
             form_params['name'] = local_var_params['name']
         if 'notify_url' in local_var_params:

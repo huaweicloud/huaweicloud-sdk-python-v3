@@ -22,7 +22,9 @@ class CreateInstanceTopicReq:
         'sync_message_flush': 'bool',
         'partition': 'int',
         'sync_replication': 'bool',
-        'retention_time': 'int'
+        'retention_time': 'int',
+        'topic_other_configs': 'list[CreateInstanceTopicReqTopicOtherConfigs]',
+        'topic_desc': 'str'
     }
 
     attribute_map = {
@@ -31,10 +33,12 @@ class CreateInstanceTopicReq:
         'sync_message_flush': 'sync_message_flush',
         'partition': 'partition',
         'sync_replication': 'sync_replication',
-        'retention_time': 'retention_time'
+        'retention_time': 'retention_time',
+        'topic_other_configs': 'topic_other_configs',
+        'topic_desc': 'topic_desc'
     }
 
-    def __init__(self, id=None, replication=None, sync_message_flush=None, partition=None, sync_replication=None, retention_time=None):
+    def __init__(self, id=None, replication=None, sync_message_flush=None, partition=None, sync_replication=None, retention_time=None, topic_other_configs=None, topic_desc=None):
         """CreateInstanceTopicReq
 
         The model defined in huaweicloud sdk
@@ -51,6 +55,10 @@ class CreateInstanceTopicReq:
         :type sync_replication: bool
         :param retention_time: 消息老化时间。默认值为72。 取值范围[1~168](tag:hws,hws_hk,hws_ocb,ctc,sbc,hk_sbc,hws_eu,g42,tm,hk_g42,hk_tm)[1-720](tag:ocb,otc)，单位小时。
         :type retention_time: int
+        :param topic_other_configs: topic配置
+        :type topic_other_configs: list[:class:`huaweicloudsdkkafka.v2.CreateInstanceTopicReqTopicOtherConfigs`]
+        :param topic_desc: topic描述
+        :type topic_desc: str
         """
         
         
@@ -61,6 +69,8 @@ class CreateInstanceTopicReq:
         self._partition = None
         self._sync_replication = None
         self._retention_time = None
+        self._topic_other_configs = None
+        self._topic_desc = None
         self.discriminator = None
 
         self.id = id
@@ -74,6 +84,10 @@ class CreateInstanceTopicReq:
             self.sync_replication = sync_replication
         if retention_time is not None:
             self.retention_time = retention_time
+        if topic_other_configs is not None:
+            self.topic_other_configs = topic_other_configs
+        if topic_desc is not None:
+            self.topic_desc = topic_desc
 
     @property
     def id(self):
@@ -206,6 +220,50 @@ class CreateInstanceTopicReq:
         :type retention_time: int
         """
         self._retention_time = retention_time
+
+    @property
+    def topic_other_configs(self):
+        """Gets the topic_other_configs of this CreateInstanceTopicReq.
+
+        topic配置
+
+        :return: The topic_other_configs of this CreateInstanceTopicReq.
+        :rtype: list[:class:`huaweicloudsdkkafka.v2.CreateInstanceTopicReqTopicOtherConfigs`]
+        """
+        return self._topic_other_configs
+
+    @topic_other_configs.setter
+    def topic_other_configs(self, topic_other_configs):
+        """Sets the topic_other_configs of this CreateInstanceTopicReq.
+
+        topic配置
+
+        :param topic_other_configs: The topic_other_configs of this CreateInstanceTopicReq.
+        :type topic_other_configs: list[:class:`huaweicloudsdkkafka.v2.CreateInstanceTopicReqTopicOtherConfigs`]
+        """
+        self._topic_other_configs = topic_other_configs
+
+    @property
+    def topic_desc(self):
+        """Gets the topic_desc of this CreateInstanceTopicReq.
+
+        topic描述
+
+        :return: The topic_desc of this CreateInstanceTopicReq.
+        :rtype: str
+        """
+        return self._topic_desc
+
+    @topic_desc.setter
+    def topic_desc(self, topic_desc):
+        """Sets the topic_desc of this CreateInstanceTopicReq.
+
+        topic描述
+
+        :param topic_desc: The topic_desc of this CreateInstanceTopicReq.
+        :type topic_desc: str
+        """
+        self._topic_desc = topic_desc
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -24,6 +24,7 @@ class ListConfigurationsResult:
         'datastore_name': 'str',
         'created': 'str',
         'updated': 'str',
+        'mode': 'str',
         'user_defined': 'bool'
     }
 
@@ -35,10 +36,11 @@ class ListConfigurationsResult:
         'datastore_name': 'datastore_name',
         'created': 'created',
         'updated': 'updated',
+        'mode': 'mode',
         'user_defined': 'user_defined'
     }
 
-    def __init__(self, id=None, name=None, description=None, datastore_version_name=None, datastore_name=None, created=None, updated=None, user_defined=None):
+    def __init__(self, id=None, name=None, description=None, datastore_version_name=None, datastore_name=None, created=None, updated=None, mode=None, user_defined=None):
         """ListConfigurationsResult
 
         The model defined in huaweicloud sdk
@@ -57,6 +59,8 @@ class ListConfigurationsResult:
         :type created: str
         :param updated: 更新时间，格式为\&quot;yyyy-MM-ddTHH:mm:ssZ\&quot;。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
         :type updated: str
+        :param mode: 数据库实例类型。 GaussDB(for Cassandra)集群类型为\&quot;Cluster\&quot;。 GaussDB(for Mongo)副本集类型为\&quot;ReplicaSet\&quot;。 GaussDB(for Mongo)集群类型为\&quot;Sharding\&quot;。 GaussDB(for Influx)集群类型为\&quot;Cluster\&quot;。 GaussDB(for Influx)单节点类型为\&quot;InfluxdbSingle\&quot;。
+        :type mode: str
         :param user_defined: 是否是用户自定义参数模板： - false，表示为系统默认参数模板。 - true，表示为用户自定义参数模板。
         :type user_defined: bool
         """
@@ -70,6 +74,7 @@ class ListConfigurationsResult:
         self._datastore_name = None
         self._created = None
         self._updated = None
+        self._mode = None
         self._user_defined = None
         self.discriminator = None
 
@@ -81,6 +86,7 @@ class ListConfigurationsResult:
         self.datastore_name = datastore_name
         self.created = created
         self.updated = updated
+        self.mode = mode
         self.user_defined = user_defined
 
     @property
@@ -236,6 +242,28 @@ class ListConfigurationsResult:
         :type updated: str
         """
         self._updated = updated
+
+    @property
+    def mode(self):
+        """Gets the mode of this ListConfigurationsResult.
+
+        数据库实例类型。 GaussDB(for Cassandra)集群类型为\"Cluster\"。 GaussDB(for Mongo)副本集类型为\"ReplicaSet\"。 GaussDB(for Mongo)集群类型为\"Sharding\"。 GaussDB(for Influx)集群类型为\"Cluster\"。 GaussDB(for Influx)单节点类型为\"InfluxdbSingle\"。
+
+        :return: The mode of this ListConfigurationsResult.
+        :rtype: str
+        """
+        return self._mode
+
+    @mode.setter
+    def mode(self, mode):
+        """Sets the mode of this ListConfigurationsResult.
+
+        数据库实例类型。 GaussDB(for Cassandra)集群类型为\"Cluster\"。 GaussDB(for Mongo)副本集类型为\"ReplicaSet\"。 GaussDB(for Mongo)集群类型为\"Sharding\"。 GaussDB(for Influx)集群类型为\"Cluster\"。 GaussDB(for Influx)单节点类型为\"InfluxdbSingle\"。
+
+        :param mode: The mode of this ListConfigurationsResult.
+        :type mode: str
+        """
+        self._mode = mode
 
     @property
     def user_defined(self):

@@ -38,7 +38,6 @@ from huaweicloudsdkcloudrtc.v2.model.mix_job_req import MixJobReq
 from huaweicloudsdkcloudrtc.v2.model.mix_layout_pane import MixLayoutPane
 from huaweicloudsdkcloudrtc.v2.model.mix_param import MixParam
 from huaweicloudsdkcloudrtc.v2.model.mix_user_background_image import MixUserBackgroundImage
-from huaweicloudsdkcloudrtc.v2.model.publish_param import PublishParam
 from huaweicloudsdkcloudrtc.v2.model.record_obs_file_addr import RecordObsFileAddr
 from huaweicloudsdkcloudrtc.v2.model.record_param import RecordParam
 from huaweicloudsdkcloudrtc.v2.model.record_rule import RecordRule

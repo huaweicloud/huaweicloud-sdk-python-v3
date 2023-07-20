@@ -1,3 +1,182 @@
+# 3.1.49 2023-07-20
+
+### HuaweiCloud SDK CloudRTC
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateIndividualStreamJob**
+    - changes of request param
+      - `- publish_param`
+  - **UpdateIndividualStreamJob**
+    - changes of request param
+      - `- publish_param`
+  - **CreateMixJob**
+    - changes of request param
+      - `- publish_param`
+
+### HuaweiCloud SDK EIP
+
+- _Features_
+  - Support the following interfaces：
+    - `AttachShareBandwidth`
+    - `AttachBatchPublicIp`
+    - `DetachShareBandwidth`
+    - `DetachBatchPublicIp`
+    - `EnableNat64`
+    - `DisableNat64`
+    - `ListBandwidth`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK ER
+
+- _Features_
+  - Support the following interfaces：
+    - `BatchCreateResourceTags`
+    - `ShowQuotas`
+    - `ListFlowLogs`
+    - `CreateFlowLog`
+    - `ShowFlowLog`
+    - `UpdateFlowLog`
+    - `DeleteFlowLog`
+    - `EnableFlowLog`
+    - `DisableFlowLog`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListProjectTags**
+    - changes of request param
+      - `+ resource_type: enum value [ecn-attachment,connect-attachment,cfw-attachment]`
+    - changes of response param
+      - `+ tags`
+  - **DeleteResourceTag**
+    - changes of request param
+      - `+ resource_type: enum value [ecn-attachment,connect-attachment,cfw-attachment]`
+  - **ShowResourceTag**
+    - changes of request param
+      - `+ resource_type: enum value [ecn-attachment,connect-attachment,cfw-attachment]`
+    - changes of response param
+      - `+ tags`
+  - **CreateResourceTag**
+    - changes of request param
+      - `+ resource_type: enum value [ecn-attachment,connect-attachment,cfw-attachment]`
+  - **ListEnterpriseRouters**
+    - changes of request param
+      - `+ owned_by_self`
+  - **ShowStaticRoute**
+    - changes of response param
+      - `+ route.attachments.priority`
+  - **UpdateStaticRoute**
+    - changes of response param
+      - `+ route.attachments.priority`
+  - **ListStaticRoutes**
+    - changes of response param
+      - `+ routes.attachments.priority`
+  - **CreateStaticRoute**
+    - changes of response param
+      - `+ route.attachments.priority`
+  - **ListEffectiveRoutes**
+    - changes of response param
+      - `+ routes.address_group_id`
+      - `+ routes.next_hops.priority`
+
+### HuaweiCloud SDK IoTDA
+
+- _Features_
+  - Support the interface `DeleteBatchTask`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK Kafka
+
+- _Features_
+  - Support the interfaces `ListTopicPartitions`, `ListTopicProducers`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListProducts**
+    - changes of request param
+      - `+ engine: enum value [kafka]`
+  - **UpdateInstanceTopic**
+    - changes of request param
+      - `+ topics.topic_other_configs`
+      - `+ topics.topic_desc`
+  - **CreateInstanceTopic**
+    - changes of request param
+      - `+ topic_other_configs`
+      - `+ topic_desc`
+    - changes of response param
+      - `+ id`
+  - **ListInstanceTopics**
+    - changes of request param
+      - `- offset`
+      - `- limit`
+    - changes of response param
+      - `+ topics.topic_other_configs`
+      - `+ topics.topic_desc`
+      - `+ topics.created_at`
+  - **ListInstances**
+    - changes of request param
+      - `+ engine: enum value [kafka]`
+  - **ResizeEngineInstance**
+    - changes of request param
+      - `+ engine: enum value [kafka]`
+
+### HuaweiCloud SDK MetaStudio
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreatePictureModelingJob**
+    - changes of request param
+      - `- model_asset_id`
+
+### HuaweiCloud SDK RabbitMQ
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowInstanceExtendProductInfo**
+    - changes of request param
+      - `+ engine: enum value [rabbitmq]`
+    - changes of response param
+      - `+ engine`
+      - `+ versions`
+      - `+ products`
+      - `- monthly`
+      - `- hourly`
+  - **ListProducts**
+    - changes of request param
+      - `+ engine: enum value [rabbitmq]`
+  - **ResizeEngineInstance**
+    - changes of request param
+      - `+ engine: enum value [rabbitmq]`
+  - **ShowEngineInstanceExtendProductInfo**
+    - changes of request param
+      - `+ engine: enum value [rabbitmq]`
+
+### HuaweiCloud SDK RDS
+
+- _Features_
+  - Support the interface `ListInstancesSupportFastRestore`
+- _Bug Fix_
+  - None
+- _Change_
+  - **RestoreTables**
+    - changes of request param
+      - `+ is_fast_restore`
+
 # 3.1.48 2023-07-13
 
 ### HuaweiCloud SDK OROAS

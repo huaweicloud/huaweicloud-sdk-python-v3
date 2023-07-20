@@ -45,7 +45,7 @@ class CreateLifeCycleHookOption:
         :type lifecycle_hook_type: str
         :param default_result: 生命周期挂钩默认回调操作。默认情况下，到达超时时间后执行的操作。ABANDON；CONTINUE；如果实例正在启动，则 CONTINUE 表示用户自定义操作已成功，可将实例投入使用。否则，ABANDON 表示用户自定义操作未成功，终止实例，伸缩活动置为失败，重新创建新实例。如果实例正在终止，则 ABANDON 和 CONTINUE 都允许终止实例。不过，ABANDON 将停止其他生命周期挂钩，而 CONTINUE 将允许完成其他生命周期挂钩。该字段缺省时默认为 ABANDON。
         :type default_result: str
-        :param default_timeout: 生命周期挂钩超时时间，取值范围300-86400，默认为3600，单位是秒。默认情况下，实例保持等待状态的时间。您可以延长超时时间，也可以在超时时间结束前进行 CONTINUE 或 ABANDON 操作。
+        :param default_timeout: 生命周期挂钩超时时间，取值范围60-86400，默认为3600，单位是秒。默认情况下，实例保持等待状态的时间。您可以延长超时时间，也可以在超时时间结束前进行 CONTINUE 或 ABANDON 操作。
         :type default_timeout: int
         :param notification_topic_urn: SMN 服务中 Topic 的唯一的资源标识。为生命周期挂钩定义一个通知目标，当实例被生命周期挂钩挂起时向该通知目标发送消息。该消息包含实例的基本信息、用户自定义通知消息，以及可用于控制生命周期操作的令牌信息。
         :type notification_topic_urn: str
@@ -143,7 +143,7 @@ class CreateLifeCycleHookOption:
     def default_timeout(self):
         """Gets the default_timeout of this CreateLifeCycleHookOption.
 
-        生命周期挂钩超时时间，取值范围300-86400，默认为3600，单位是秒。默认情况下，实例保持等待状态的时间。您可以延长超时时间，也可以在超时时间结束前进行 CONTINUE 或 ABANDON 操作。
+        生命周期挂钩超时时间，取值范围60-86400，默认为3600，单位是秒。默认情况下，实例保持等待状态的时间。您可以延长超时时间，也可以在超时时间结束前进行 CONTINUE 或 ABANDON 操作。
 
         :return: The default_timeout of this CreateLifeCycleHookOption.
         :rtype: int
@@ -154,7 +154,7 @@ class CreateLifeCycleHookOption:
     def default_timeout(self, default_timeout):
         """Sets the default_timeout of this CreateLifeCycleHookOption.
 
-        生命周期挂钩超时时间，取值范围300-86400，默认为3600，单位是秒。默认情况下，实例保持等待状态的时间。您可以延长超时时间，也可以在超时时间结束前进行 CONTINUE 或 ABANDON 操作。
+        生命周期挂钩超时时间，取值范围60-86400，默认为3600，单位是秒。默认情况下，实例保持等待状态的时间。您可以延长超时时间，也可以在超时时间结束前进行 CONTINUE 或 ABANDON 操作。
 
         :param default_timeout: The default_timeout of this CreateLifeCycleHookOption.
         :type default_timeout: int

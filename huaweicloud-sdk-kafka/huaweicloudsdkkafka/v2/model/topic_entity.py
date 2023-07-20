@@ -25,7 +25,10 @@ class TopicEntity:
         'sync_replication': 'bool',
         'sync_message_flush': 'bool',
         'external_configs': 'object',
-        'topic_type': 'int'
+        'topic_type': 'int',
+        'topic_other_configs': 'list[TopicEntityTopicOtherConfigs]',
+        'topic_desc': 'str',
+        'created_at': 'int'
     }
 
     attribute_map = {
@@ -37,10 +40,13 @@ class TopicEntity:
         'sync_replication': 'sync_replication',
         'sync_message_flush': 'sync_message_flush',
         'external_configs': 'external_configs',
-        'topic_type': 'topic_type'
+        'topic_type': 'topic_type',
+        'topic_other_configs': 'topic_other_configs',
+        'topic_desc': 'topic_desc',
+        'created_at': 'created_at'
     }
 
-    def __init__(self, policies_only=None, name=None, replication=None, partition=None, retention_time=None, sync_replication=None, sync_message_flush=None, external_configs=None, topic_type=None):
+    def __init__(self, policies_only=None, name=None, replication=None, partition=None, retention_time=None, sync_replication=None, sync_message_flush=None, external_configs=None, topic_type=None, topic_other_configs=None, topic_desc=None, created_at=None):
         """TopicEntity
 
         The model defined in huaweicloud sdk
@@ -63,6 +69,12 @@ class TopicEntity:
         :type external_configs: object
         :param topic_type: topic类型(0:普通Topic 1:系统(内部)Topic)。
         :type topic_type: int
+        :param topic_other_configs: topic其他配置
+        :type topic_other_configs: list[:class:`huaweicloudsdkkafka.v2.TopicEntityTopicOtherConfigs`]
+        :param topic_desc: topic描述
+        :type topic_desc: str
+        :param created_at: topic创建时间
+        :type created_at: int
         """
         
         
@@ -76,6 +88,9 @@ class TopicEntity:
         self._sync_message_flush = None
         self._external_configs = None
         self._topic_type = None
+        self._topic_other_configs = None
+        self._topic_desc = None
+        self._created_at = None
         self.discriminator = None
 
         if policies_only is not None:
@@ -96,6 +111,12 @@ class TopicEntity:
             self.external_configs = external_configs
         if topic_type is not None:
             self.topic_type = topic_type
+        if topic_other_configs is not None:
+            self.topic_other_configs = topic_other_configs
+        if topic_desc is not None:
+            self.topic_desc = topic_desc
+        if created_at is not None:
+            self.created_at = created_at
 
     @property
     def policies_only(self):
@@ -294,6 +315,72 @@ class TopicEntity:
         :type topic_type: int
         """
         self._topic_type = topic_type
+
+    @property
+    def topic_other_configs(self):
+        """Gets the topic_other_configs of this TopicEntity.
+
+        topic其他配置
+
+        :return: The topic_other_configs of this TopicEntity.
+        :rtype: list[:class:`huaweicloudsdkkafka.v2.TopicEntityTopicOtherConfigs`]
+        """
+        return self._topic_other_configs
+
+    @topic_other_configs.setter
+    def topic_other_configs(self, topic_other_configs):
+        """Sets the topic_other_configs of this TopicEntity.
+
+        topic其他配置
+
+        :param topic_other_configs: The topic_other_configs of this TopicEntity.
+        :type topic_other_configs: list[:class:`huaweicloudsdkkafka.v2.TopicEntityTopicOtherConfigs`]
+        """
+        self._topic_other_configs = topic_other_configs
+
+    @property
+    def topic_desc(self):
+        """Gets the topic_desc of this TopicEntity.
+
+        topic描述
+
+        :return: The topic_desc of this TopicEntity.
+        :rtype: str
+        """
+        return self._topic_desc
+
+    @topic_desc.setter
+    def topic_desc(self, topic_desc):
+        """Sets the topic_desc of this TopicEntity.
+
+        topic描述
+
+        :param topic_desc: The topic_desc of this TopicEntity.
+        :type topic_desc: str
+        """
+        self._topic_desc = topic_desc
+
+    @property
+    def created_at(self):
+        """Gets the created_at of this TopicEntity.
+
+        topic创建时间
+
+        :return: The created_at of this TopicEntity.
+        :rtype: int
+        """
+        return self._created_at
+
+    @created_at.setter
+    def created_at(self, created_at):
+        """Sets the created_at of this TopicEntity.
+
+        topic创建时间
+
+        :param created_at: The created_at of this TopicEntity.
+        :type created_at: int
+        """
+        self._created_at = created_at
 
     def to_dict(self):
         """Returns the model properties as a dict"""

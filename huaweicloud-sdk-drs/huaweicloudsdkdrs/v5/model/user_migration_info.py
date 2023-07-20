@@ -39,7 +39,7 @@ class UserMigrationInfo:
 
         :param is_migrate_user: 是否迁移用户。
         :type is_migrate_user: bool
-        :param is_set_password: 是否统一重置密码。取值： - true：重置密码为统一密码。 - false：不统一重置密码。 当前支持的场景：  - 实时迁移场景：MySQL迁移。
+        :param is_set_password: 是否统一重置密码。取值： - true：重置密码为统一密码。 - false：不统一重置密码。 当前支持的场景： - 实时迁移场景：MySQL迁移。
         :type is_set_password: bool
         :param password: 重置后的统一密码。统一重置密码为true时必填。 约束：密码不能为空。
         :type password: str
@@ -93,7 +93,7 @@ class UserMigrationInfo:
     def is_set_password(self):
         """Gets the is_set_password of this UserMigrationInfo.
 
-        是否统一重置密码。取值： - true：重置密码为统一密码。 - false：不统一重置密码。 当前支持的场景：  - 实时迁移场景：MySQL迁移。
+        是否统一重置密码。取值： - true：重置密码为统一密码。 - false：不统一重置密码。 当前支持的场景： - 实时迁移场景：MySQL迁移。
 
         :return: The is_set_password of this UserMigrationInfo.
         :rtype: bool
@@ -104,7 +104,7 @@ class UserMigrationInfo:
     def is_set_password(self, is_set_password):
         """Sets the is_set_password of this UserMigrationInfo.
 
-        是否统一重置密码。取值： - true：重置密码为统一密码。 - false：不统一重置密码。 当前支持的场景：  - 实时迁移场景：MySQL迁移。
+        是否统一重置密码。取值： - true：重置密码为统一密码。 - false：不统一重置密码。 当前支持的场景： - 实时迁移场景：MySQL迁移。
 
         :param is_set_password: The is_set_password of this UserMigrationInfo.
         :type is_set_password: bool

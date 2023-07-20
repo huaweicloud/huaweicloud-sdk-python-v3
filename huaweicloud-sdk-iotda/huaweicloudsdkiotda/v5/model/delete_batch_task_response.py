@@ -2,10 +2,11 @@
 
 import six
 
+from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class PublishParam:
+class DeleteBatchTaskResponse(SdkResponse):
 
     """
     Attributes:
@@ -17,50 +18,47 @@ class PublishParam:
     sensitive_list = []
 
     openapi_types = {
-        'rtmp_urls': 'list[str]'
+        'body': 'str'
     }
 
     attribute_map = {
-        'rtmp_urls': 'rtmp_urls'
+        'body': 'body'
     }
 
-    def __init__(self, rtmp_urls=None):
-        """PublishParam
+    def __init__(self, body=None):
+        """DeleteBatchTaskResponse
 
         The model defined in huaweicloud sdk
 
-        :param rtmp_urls: 合流任务完成后，转推的RTMP推流地址。
-        :type rtmp_urls: list[str]
+        :param body: 
+        :type body: str
         """
         
-        
+        super(DeleteBatchTaskResponse, self).__init__()
 
-        self._rtmp_urls = None
+        self._body = None
         self.discriminator = None
 
-        self.rtmp_urls = rtmp_urls
+        if body is not None:
+            self.body = body
 
     @property
-    def rtmp_urls(self):
-        """Gets the rtmp_urls of this PublishParam.
+    def body(self):
+        """Gets the body of this DeleteBatchTaskResponse.
 
-        合流任务完成后，转推的RTMP推流地址。
-
-        :return: The rtmp_urls of this PublishParam.
-        :rtype: list[str]
+        :return: The body of this DeleteBatchTaskResponse.
+        :rtype: str
         """
-        return self._rtmp_urls
+        return self._body
 
-    @rtmp_urls.setter
-    def rtmp_urls(self, rtmp_urls):
-        """Sets the rtmp_urls of this PublishParam.
+    @body.setter
+    def body(self, body):
+        """Sets the body of this DeleteBatchTaskResponse.
 
-        合流任务完成后，转推的RTMP推流地址。
-
-        :param rtmp_urls: The rtmp_urls of this PublishParam.
-        :type rtmp_urls: list[str]
+        :param body: The body of this DeleteBatchTaskResponse.
+        :type body: str
         """
-        self._rtmp_urls = rtmp_urls
+        self._body = body
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -104,7 +102,7 @@ class PublishParam:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, PublishParam):
+        if not isinstance(other, DeleteBatchTaskResponse):
             return False
 
         return self.__dict__ == other.__dict__

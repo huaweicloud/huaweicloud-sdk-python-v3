@@ -18,15 +18,17 @@ class JobNodeInfo:
 
     openapi_types = {
         'spec': 'JobNodeSpecInfo',
-        'vpc': 'JobNodeVpcInfo'
+        'vpc': 'JobNodeVpcInfo',
+        'base_info': 'JobNodeBaseInfo'
     }
 
     attribute_map = {
         'spec': 'spec',
-        'vpc': 'vpc'
+        'vpc': 'vpc',
+        'base_info': 'base_info'
     }
 
-    def __init__(self, spec=None, vpc=None):
+    def __init__(self, spec=None, vpc=None, base_info=None):
         """JobNodeInfo
 
         The model defined in huaweicloud sdk
@@ -35,17 +37,22 @@ class JobNodeInfo:
         :type spec: :class:`huaweicloudsdkdrs.v5.JobNodeSpecInfo`
         :param vpc: 
         :type vpc: :class:`huaweicloudsdkdrs.v5.JobNodeVpcInfo`
+        :param base_info: 
+        :type base_info: :class:`huaweicloudsdkdrs.v5.JobNodeBaseInfo`
         """
         
         
 
         self._spec = None
         self._vpc = None
+        self._base_info = None
         self.discriminator = None
 
         self.spec = spec
         if vpc is not None:
             self.vpc = vpc
+        if base_info is not None:
+            self.base_info = base_info
 
     @property
     def spec(self):
@@ -82,6 +89,24 @@ class JobNodeInfo:
         :type vpc: :class:`huaweicloudsdkdrs.v5.JobNodeVpcInfo`
         """
         self._vpc = vpc
+
+    @property
+    def base_info(self):
+        """Gets the base_info of this JobNodeInfo.
+
+        :return: The base_info of this JobNodeInfo.
+        :rtype: :class:`huaweicloudsdkdrs.v5.JobNodeBaseInfo`
+        """
+        return self._base_info
+
+    @base_info.setter
+    def base_info(self, base_info):
+        """Sets the base_info of this JobNodeInfo.
+
+        :param base_info: The base_info of this JobNodeInfo.
+        :type base_info: :class:`huaweicloudsdkdrs.v5.JobNodeBaseInfo`
+        """
+        self._base_info = base_info
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -18,80 +18,109 @@ class ShowInstanceExtendProductInfoResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'hourly': 'list[ListProductsRespHourly]',
-        'monthly': 'list[ListProductsRespHourly]'
+        'engine': 'str',
+        'versions': 'list[str]',
+        'products': 'list[RabbitMQExtendProductInfoEntity]'
     }
 
     attribute_map = {
-        'hourly': 'hourly',
-        'monthly': 'monthly'
+        'engine': 'engine',
+        'versions': 'versions',
+        'products': 'products'
     }
 
-    def __init__(self, hourly=None, monthly=None):
+    def __init__(self, engine=None, versions=None, products=None):
         """ShowInstanceExtendProductInfoResponse
 
         The model defined in huaweicloud sdk
 
-        :param hourly: 表示按需付费的产品列表。
-        :type hourly: list[:class:`huaweicloudsdkrabbitmq.v2.ListProductsRespHourly`]
-        :param monthly: 表示包年包月的产品列表。当前暂不支持通过API创建包年包月的Rabbitmq实例。
-        :type monthly: list[:class:`huaweicloudsdkrabbitmq.v2.ListProductsRespHourly`]
+        :param engine: 消息引擎类型。
+        :type engine: str
+        :param versions: 消息引擎支持的版本
+        :type versions: list[str]
+        :param products: 规格变更的产品信息。
+        :type products: list[:class:`huaweicloudsdkrabbitmq.v2.RabbitMQExtendProductInfoEntity`]
         """
         
         super(ShowInstanceExtendProductInfoResponse, self).__init__()
 
-        self._hourly = None
-        self._monthly = None
+        self._engine = None
+        self._versions = None
+        self._products = None
         self.discriminator = None
 
-        if hourly is not None:
-            self.hourly = hourly
-        if monthly is not None:
-            self.monthly = monthly
+        if engine is not None:
+            self.engine = engine
+        if versions is not None:
+            self.versions = versions
+        if products is not None:
+            self.products = products
 
     @property
-    def hourly(self):
-        """Gets the hourly of this ShowInstanceExtendProductInfoResponse.
+    def engine(self):
+        """Gets the engine of this ShowInstanceExtendProductInfoResponse.
 
-        表示按需付费的产品列表。
+        消息引擎类型。
 
-        :return: The hourly of this ShowInstanceExtendProductInfoResponse.
-        :rtype: list[:class:`huaweicloudsdkrabbitmq.v2.ListProductsRespHourly`]
+        :return: The engine of this ShowInstanceExtendProductInfoResponse.
+        :rtype: str
         """
-        return self._hourly
+        return self._engine
 
-    @hourly.setter
-    def hourly(self, hourly):
-        """Sets the hourly of this ShowInstanceExtendProductInfoResponse.
+    @engine.setter
+    def engine(self, engine):
+        """Sets the engine of this ShowInstanceExtendProductInfoResponse.
 
-        表示按需付费的产品列表。
+        消息引擎类型。
 
-        :param hourly: The hourly of this ShowInstanceExtendProductInfoResponse.
-        :type hourly: list[:class:`huaweicloudsdkrabbitmq.v2.ListProductsRespHourly`]
+        :param engine: The engine of this ShowInstanceExtendProductInfoResponse.
+        :type engine: str
         """
-        self._hourly = hourly
+        self._engine = engine
 
     @property
-    def monthly(self):
-        """Gets the monthly of this ShowInstanceExtendProductInfoResponse.
+    def versions(self):
+        """Gets the versions of this ShowInstanceExtendProductInfoResponse.
 
-        表示包年包月的产品列表。当前暂不支持通过API创建包年包月的Rabbitmq实例。
+        消息引擎支持的版本
 
-        :return: The monthly of this ShowInstanceExtendProductInfoResponse.
-        :rtype: list[:class:`huaweicloudsdkrabbitmq.v2.ListProductsRespHourly`]
+        :return: The versions of this ShowInstanceExtendProductInfoResponse.
+        :rtype: list[str]
         """
-        return self._monthly
+        return self._versions
 
-    @monthly.setter
-    def monthly(self, monthly):
-        """Sets the monthly of this ShowInstanceExtendProductInfoResponse.
+    @versions.setter
+    def versions(self, versions):
+        """Sets the versions of this ShowInstanceExtendProductInfoResponse.
 
-        表示包年包月的产品列表。当前暂不支持通过API创建包年包月的Rabbitmq实例。
+        消息引擎支持的版本
 
-        :param monthly: The monthly of this ShowInstanceExtendProductInfoResponse.
-        :type monthly: list[:class:`huaweicloudsdkrabbitmq.v2.ListProductsRespHourly`]
+        :param versions: The versions of this ShowInstanceExtendProductInfoResponse.
+        :type versions: list[str]
         """
-        self._monthly = monthly
+        self._versions = versions
+
+    @property
+    def products(self):
+        """Gets the products of this ShowInstanceExtendProductInfoResponse.
+
+        规格变更的产品信息。
+
+        :return: The products of this ShowInstanceExtendProductInfoResponse.
+        :rtype: list[:class:`huaweicloudsdkrabbitmq.v2.RabbitMQExtendProductInfoEntity`]
+        """
+        return self._products
+
+    @products.setter
+    def products(self, products):
+        """Sets the products of this ShowInstanceExtendProductInfoResponse.
+
+        规格变更的产品信息。
+
+        :param products: The products of this ShowInstanceExtendProductInfoResponse.
+        :type products: list[:class:`huaweicloudsdkrabbitmq.v2.RabbitMQExtendProductInfoEntity`]
+        """
+        self._products = products
 
     def to_dict(self):
         """Returns the model properties as a dict"""

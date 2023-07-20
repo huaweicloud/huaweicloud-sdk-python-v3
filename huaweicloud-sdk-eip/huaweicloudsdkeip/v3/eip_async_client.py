@@ -24,6 +24,93 @@ class EipAsyncClient(Client):
 
         return ClientBuilder(clazz)
 
+    def list_bandwidth_async(self, request):
+        """查询带宽列表
+
+        查询带宽列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListBandwidth
+        :type request: :class:`huaweicloudsdkeip.v3.ListBandwidthRequest`
+        :rtype: :class:`huaweicloudsdkeip.v3.ListBandwidthResponse`
+        """
+        return self._list_bandwidth_with_http_info(request)
+
+    def _list_bandwidth_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+        if 'bandwidth_type' in local_var_params:
+            query_params.append(('bandwidth_type', local_var_params['bandwidth_type']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'name_like' in local_var_params:
+            query_params.append(('name_like', local_var_params['name_like']))
+        if 'ingress_size' in local_var_params:
+            query_params.append(('ingress_size', local_var_params['ingress_size']))
+        if 'admin_state' in local_var_params:
+            query_params.append(('admin_state', local_var_params['admin_state']))
+        if 'billing_info' in local_var_params:
+            query_params.append(('billing_info', local_var_params['billing_info']))
+        if 'tags' in local_var_params:
+            query_params.append(('tags', local_var_params['tags']))
+        if 'enable_bandwidth_rules' in local_var_params:
+            query_params.append(('enable_bandwidth_rules', local_var_params['enable_bandwidth_rules']))
+        if 'rule_quota' in local_var_params:
+            query_params.append(('rule_quota', local_var_params['rule_quota']))
+        if 'public_border_group' in local_var_params:
+            query_params.append(('public_border_group', local_var_params['public_border_group']))
+        if 'charge_mode' in local_var_params:
+            query_params.append(('charge_mode', local_var_params['charge_mode']))
+        if 'size' in local_var_params:
+            query_params.append(('size', local_var_params['size']))
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/eip/bandwidths',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListBandwidthResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_common_pools_async(self, request):
         """查询公共池列表
 
@@ -420,6 +507,122 @@ class EipAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def attach_batch_public_ip_async(self, request):
+        """共享带宽批量加入弹性公网IP
+
+        共享带宽批量加入弹性公网IP
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for AttachBatchPublicIp
+        :type request: :class:`huaweicloudsdkeip.v3.AttachBatchPublicIpRequest`
+        :rtype: :class:`huaweicloudsdkeip.v3.AttachBatchPublicIpResponse`
+        """
+        return self._attach_batch_public_ip_with_http_info(request)
+
+    def _attach_batch_public_ip_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/eip/publicips/attach-share-bandwidth',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='AttachBatchPublicIpResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def attach_share_bandwidth_async(self, request):
+        """共享带宽加入弹性公网IP
+
+        共享带宽加入弹性公网IP
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for AttachShareBandwidth
+        :type request: :class:`huaweicloudsdkeip.v3.AttachShareBandwidthRequest`
+        :rtype: :class:`huaweicloudsdkeip.v3.AttachShareBandwidthResponse`
+        """
+        return self._attach_share_bandwidth_with_http_info(request)
+
+    def _attach_share_bandwidth_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'publicip_id' in local_var_params:
+            path_params['publicip_id'] = local_var_params['publicip_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/eip/publicips/{publicip_id}/attach-share-bandwidth',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='AttachShareBandwidthResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def count_eip_available_resources_async(self, request):
         """查询弹性公网IP可用数
 
@@ -477,6 +680,179 @@ class EipAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def detach_batch_public_ip_async(self, request):
+        """共享带宽批量移出弹性公网IP
+
+        共享带宽批量移出弹性公网IP
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DetachBatchPublicIp
+        :type request: :class:`huaweicloudsdkeip.v3.DetachBatchPublicIpRequest`
+        :rtype: :class:`huaweicloudsdkeip.v3.DetachBatchPublicIpResponse`
+        """
+        return self._detach_batch_public_ip_with_http_info(request)
+
+    def _detach_batch_public_ip_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/eip/publicips/detach-share-bandwidth',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DetachBatchPublicIpResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def detach_share_bandwidth_async(self, request):
+        """共享带宽移出弹性公网IP
+
+        共享带宽移出弹性公网IP
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DetachShareBandwidth
+        :type request: :class:`huaweicloudsdkeip.v3.DetachShareBandwidthRequest`
+        :rtype: :class:`huaweicloudsdkeip.v3.DetachShareBandwidthResponse`
+        """
+        return self._detach_share_bandwidth_with_http_info(request)
+
+    def _detach_share_bandwidth_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'publicip_id' in local_var_params:
+            path_params['publicip_id'] = local_var_params['publicip_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/eip/publicips/{publicip_id}/detach-share-bandwidth',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DetachShareBandwidthResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def disable_nat64_async(self, request):
+        """弹性公网IP关闭NAT64
+
+        弹性公网IP关闭NAT64
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DisableNat64
+        :type request: :class:`huaweicloudsdkeip.v3.DisableNat64Request`
+        :rtype: :class:`huaweicloudsdkeip.v3.DisableNat64Response`
+        """
+        return self._disable_nat64_with_http_info(request)
+
+    def _disable_nat64_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'publicip_id' in local_var_params:
+            path_params['publicip_id'] = local_var_params['publicip_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/eip/publicips/{publicip_id}/disable-nat64',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DisableNat64Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def disassociate_publicips_async(self, request):
         """解绑弹性公网IP
 
@@ -529,6 +905,63 @@ class EipAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='DisassociatePublicipsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def enable_nat64_async(self, request):
+        """弹性公网IP开启NAT64
+
+        弹性公网IP开启NAT64
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for EnableNat64
+        :type request: :class:`huaweicloudsdkeip.v3.EnableNat64Request`
+        :rtype: :class:`huaweicloudsdkeip.v3.EnableNat64Response`
+        """
+        return self._enable_nat64_with_http_info(request)
+
+    def _enable_nat64_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'publicip_id' in local_var_params:
+            path_params['publicip_id'] = local_var_params['publicip_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/eip/publicips/{publicip_id}/enable-nat64',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='EnableNat64Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

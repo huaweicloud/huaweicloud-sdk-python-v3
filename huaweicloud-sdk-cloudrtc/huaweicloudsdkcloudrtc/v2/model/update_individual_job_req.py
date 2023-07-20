@@ -17,54 +17,29 @@ class UpdateIndividualJobReq:
     sensitive_list = []
 
     openapi_types = {
-        'publish_param': 'PublishParam',
         'record_param': 'RecordParam'
     }
 
     attribute_map = {
-        'publish_param': 'publish_param',
         'record_param': 'record_param'
     }
 
-    def __init__(self, publish_param=None, record_param=None):
+    def __init__(self, record_param=None):
         """UpdateIndividualJobReq
 
         The model defined in huaweicloud sdk
 
-        :param publish_param: 
-        :type publish_param: :class:`huaweicloudsdkcloudrtc.v2.PublishParam`
         :param record_param: 
         :type record_param: :class:`huaweicloudsdkcloudrtc.v2.RecordParam`
         """
         
         
 
-        self._publish_param = None
         self._record_param = None
         self.discriminator = None
 
-        if publish_param is not None:
-            self.publish_param = publish_param
         if record_param is not None:
             self.record_param = record_param
-
-    @property
-    def publish_param(self):
-        """Gets the publish_param of this UpdateIndividualJobReq.
-
-        :return: The publish_param of this UpdateIndividualJobReq.
-        :rtype: :class:`huaweicloudsdkcloudrtc.v2.PublishParam`
-        """
-        return self._publish_param
-
-    @publish_param.setter
-    def publish_param(self, publish_param):
-        """Sets the publish_param of this UpdateIndividualJobReq.
-
-        :param publish_param: The publish_param of this UpdateIndividualJobReq.
-        :type publish_param: :class:`huaweicloudsdkcloudrtc.v2.PublishParam`
-        """
-        self._publish_param = publish_param
 
     @property
     def record_param(self):

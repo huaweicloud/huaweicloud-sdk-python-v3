@@ -3716,6 +3716,62 @@ class GaussDBforNoSQLClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def show_instance_biactive_regions(self, request):
+        """查询实例可搭建双活关系的Region
+
+        查询实例可搭建双活关系的Region。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowInstanceBiactiveRegions
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ShowInstanceBiactiveRegionsRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ShowInstanceBiactiveRegionsResponse`
+        """
+        return self._show_instance_biactive_regions_with_http_info(request)
+
+    def _show_instance_biactive_regions_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/disaster-recovery/regions',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowInstanceBiactiveRegionsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def show_instance_configuration(self, request):
         """获取指定实例的参数
 
@@ -4029,6 +4085,10 @@ class GaussDBforNoSQLClient(Client):
         path_params = {}
 
         query_params = []
+        if 'datastore_type' in local_var_params:
+            query_params.append(('datastore_type', local_var_params['datastore_type']))
+        if 'mode' in local_var_params:
+            query_params.append(('mode', local_var_params['mode']))
 
         header_params = {}
 

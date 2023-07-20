@@ -61,7 +61,7 @@ class AttachmentDetails:
         :type name: str
         :param description: 描述信息
         :type description: str
-        :param state: 连接状态:pending|available|modifying|deleting|deleted|failed|pending_acceptance|rejected|initiating_request
+        :param state: 连接状态:pending|available|modifying|deleting|deleted|failed|pending_acceptance|rejected|initiating_request|freezed
         :type state: str
         :param created_at: 创建时间
         :type created_at: datetime
@@ -75,7 +75,7 @@ class AttachmentDetails:
         :type er_id: str
         :param resource_id: 内部连接关联的资源ID
         :type resource_id: str
-        :param resource_type: - vgw：云专线的虚拟网关 - vpn：vpn网关 - peering：对等连接，通过云连接CC加载不同区域的企业路由器来创建“对等连接（Peering）”连接
+        :param resource_type: 内部连接关联的资源类型: - vgw：云专线的虚拟网关 - vpn：vpn网关 -  - peering：对等连接，通过云连接CC加载不同区域的企业路由器来创建“对等连接（Peering）”连接 -  -  - vpc：虚拟私有云 -
         :type resource_type: str
         :param resource_project_id: 资源所属项目ID
         :type resource_project_id: str
@@ -197,7 +197,7 @@ class AttachmentDetails:
     def state(self):
         """Gets the state of this AttachmentDetails.
 
-        连接状态:pending|available|modifying|deleting|deleted|failed|pending_acceptance|rejected|initiating_request
+        连接状态:pending|available|modifying|deleting|deleted|failed|pending_acceptance|rejected|initiating_request|freezed
 
         :return: The state of this AttachmentDetails.
         :rtype: str
@@ -208,7 +208,7 @@ class AttachmentDetails:
     def state(self, state):
         """Sets the state of this AttachmentDetails.
 
-        连接状态:pending|available|modifying|deleting|deleted|failed|pending_acceptance|rejected|initiating_request
+        连接状态:pending|available|modifying|deleting|deleted|failed|pending_acceptance|rejected|initiating_request|freezed
 
         :param state: The state of this AttachmentDetails.
         :type state: str
@@ -351,7 +351,7 @@ class AttachmentDetails:
     def resource_type(self):
         """Gets the resource_type of this AttachmentDetails.
 
-        - vgw：云专线的虚拟网关 - vpn：vpn网关 - peering：对等连接，通过云连接CC加载不同区域的企业路由器来创建“对等连接（Peering）”连接
+        内部连接关联的资源类型: - vgw：云专线的虚拟网关 - vpn：vpn网关 -  - peering：对等连接，通过云连接CC加载不同区域的企业路由器来创建“对等连接（Peering）”连接 -  -  - vpc：虚拟私有云 -
 
         :return: The resource_type of this AttachmentDetails.
         :rtype: str
@@ -362,7 +362,7 @@ class AttachmentDetails:
     def resource_type(self, resource_type):
         """Sets the resource_type of this AttachmentDetails.
 
-        - vgw：云专线的虚拟网关 - vpn：vpn网关 - peering：对等连接，通过云连接CC加载不同区域的企业路由器来创建“对等连接（Peering）”连接
+        内部连接关联的资源类型: - vgw：云专线的虚拟网关 - vpn：vpn网关 -  - peering：对等连接，通过云连接CC加载不同区域的企业路由器来创建“对等连接（Peering）”连接 -  -  - vpc：虚拟私有云 -
 
         :param resource_type: The resource_type of this AttachmentDetails.
         :type resource_type: str

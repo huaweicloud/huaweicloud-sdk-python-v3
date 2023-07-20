@@ -18,25 +18,21 @@ class MixJobReq:
 
     openapi_types = {
         'mix_param': 'MixParam',
-        'publish_param': 'PublishParam',
         'record_param': 'RecordParam'
     }
 
     attribute_map = {
         'mix_param': 'mix_param',
-        'publish_param': 'publish_param',
         'record_param': 'record_param'
     }
 
-    def __init__(self, mix_param=None, publish_param=None, record_param=None):
+    def __init__(self, mix_param=None, record_param=None):
         """MixJobReq
 
         The model defined in huaweicloud sdk
 
         :param mix_param: 
         :type mix_param: :class:`huaweicloudsdkcloudrtc.v2.MixParam`
-        :param publish_param: 
-        :type publish_param: :class:`huaweicloudsdkcloudrtc.v2.PublishParam`
         :param record_param: 
         :type record_param: :class:`huaweicloudsdkcloudrtc.v2.RecordParam`
         """
@@ -44,13 +40,10 @@ class MixJobReq:
         
 
         self._mix_param = None
-        self._publish_param = None
         self._record_param = None
         self.discriminator = None
 
         self.mix_param = mix_param
-        if publish_param is not None:
-            self.publish_param = publish_param
         if record_param is not None:
             self.record_param = record_param
 
@@ -71,24 +64,6 @@ class MixJobReq:
         :type mix_param: :class:`huaweicloudsdkcloudrtc.v2.MixParam`
         """
         self._mix_param = mix_param
-
-    @property
-    def publish_param(self):
-        """Gets the publish_param of this MixJobReq.
-
-        :return: The publish_param of this MixJobReq.
-        :rtype: :class:`huaweicloudsdkcloudrtc.v2.PublishParam`
-        """
-        return self._publish_param
-
-    @publish_param.setter
-    def publish_param(self, publish_param):
-        """Sets the publish_param of this MixJobReq.
-
-        :param publish_param: The publish_param of this MixJobReq.
-        :type publish_param: :class:`huaweicloudsdkcloudrtc.v2.PublishParam`
-        """
-        self._publish_param = publish_param
 
     @property
     def record_param(self):

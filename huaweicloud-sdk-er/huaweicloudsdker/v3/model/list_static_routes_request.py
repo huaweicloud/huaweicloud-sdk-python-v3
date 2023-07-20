@@ -53,7 +53,7 @@ class ListStaticRoutesRequest:
         :type destination: list[str]
         :param attachment_id: 连接ID
         :type attachment_id: list[str]
-        :param resource_type: 连接资源类型:vpc|vpn|vgw|peering
+        :param resource_type: - vpc：虚拟私有云 - vpn：vpn网关 - vgw：云专线的虚拟网关 - peering：对等连接，通过云连接CC加载不同区域的企业路由器来创建“对等连接（Peering）”连接 -  -  -  -
         :type resource_type: list[str]
         :param sort_key: 按关键字排序，默认按照id排序，可选值:id|name|state
         :type sort_key: list[str]
@@ -203,7 +203,7 @@ class ListStaticRoutesRequest:
     def resource_type(self):
         """Gets the resource_type of this ListStaticRoutesRequest.
 
-        连接资源类型:vpc|vpn|vgw|peering
+        - vpc：虚拟私有云 - vpn：vpn网关 - vgw：云专线的虚拟网关 - peering：对等连接，通过云连接CC加载不同区域的企业路由器来创建“对等连接（Peering）”连接 -  -  -  -
 
         :return: The resource_type of this ListStaticRoutesRequest.
         :rtype: list[str]
@@ -214,7 +214,7 @@ class ListStaticRoutesRequest:
     def resource_type(self, resource_type):
         """Sets the resource_type of this ListStaticRoutesRequest.
 
-        连接资源类型:vpc|vpn|vgw|peering
+        - vpc：虚拟私有云 - vpn：vpn网关 - vgw：云专线的虚拟网关 - peering：对等连接，通过云连接CC加载不同区域的企业路由器来创建“对等连接（Peering）”连接 -  -  -  -
 
         :param resource_type: The resource_type of this ListStaticRoutesRequest.
         :type resource_type: list[str]

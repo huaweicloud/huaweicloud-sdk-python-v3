@@ -37,7 +37,7 @@ class ShowKafkaTopicPartitionDiskusageRequest:
 
         :param instance_id: 实例ID。
         :type instance_id: str
-        :param min_size: 占用磁盘大小，默认值1G (1K ,1M , 1G)。
+        :param min_size: 占用磁盘大小，默认值1G (1K，1M，1G)。
         :type min_size: str
         :param top: 占用磁盘大小，查询top N。
         :type top: str
@@ -87,7 +87,7 @@ class ShowKafkaTopicPartitionDiskusageRequest:
     def min_size(self):
         """Gets the min_size of this ShowKafkaTopicPartitionDiskusageRequest.
 
-        占用磁盘大小，默认值1G (1K ,1M , 1G)。
+        占用磁盘大小，默认值1G (1K，1M，1G)。
 
         :return: The min_size of this ShowKafkaTopicPartitionDiskusageRequest.
         :rtype: str
@@ -98,7 +98,7 @@ class ShowKafkaTopicPartitionDiskusageRequest:
     def min_size(self, min_size):
         """Sets the min_size of this ShowKafkaTopicPartitionDiskusageRequest.
 
-        占用磁盘大小，默认值1G (1K ,1M , 1G)。
+        占用磁盘大小，默认值1G (1K，1M，1G)。
 
         :param min_size: The min_size of this ShowKafkaTopicPartitionDiskusageRequest.
         :type min_size: str

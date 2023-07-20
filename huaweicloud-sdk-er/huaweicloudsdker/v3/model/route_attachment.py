@@ -19,26 +19,30 @@ class RouteAttachment:
     openapi_types = {
         'resource_id': 'str',
         'resource_type': 'str',
-        'attachment_id': 'str'
+        'attachment_id': 'str',
+        'priority': 'int'
     }
 
     attribute_map = {
         'resource_id': 'resource_id',
         'resource_type': 'resource_type',
-        'attachment_id': 'attachment_id'
+        'attachment_id': 'attachment_id',
+        'priority': 'priority'
     }
 
-    def __init__(self, resource_id=None, resource_type=None, attachment_id=None):
+    def __init__(self, resource_id=None, resource_type=None, attachment_id=None, priority=None):
         """RouteAttachment
 
         The model defined in huaweicloud sdk
 
         :param resource_id: 连接关联的资源ID
         :type resource_id: str
-        :param resource_type: 连接关联的资源类型：vpc|vgw|vpn|peering
+        :param resource_type: 连接关联的资源类型: - vpc：虚拟私有云 - vpn：vpn网关 - vgw：云专线的虚拟网关 - vpn：vpn网关 - vgw：云专线的虚拟网关 - peering：对等连接，通过云连接CC加载不同区域的企业路由器来创建“对等连接（Peering）”连接 -  -  -
         :type resource_type: str
         :param attachment_id: 连接ID
         :type attachment_id: str
+        :param priority: 路由优先级，普通路由固定值为1
+        :type priority: int
         """
         
         
@@ -46,11 +50,14 @@ class RouteAttachment:
         self._resource_id = None
         self._resource_type = None
         self._attachment_id = None
+        self._priority = None
         self.discriminator = None
 
         self.resource_id = resource_id
         self.resource_type = resource_type
         self.attachment_id = attachment_id
+        if priority is not None:
+            self.priority = priority
 
     @property
     def resource_id(self):
@@ -78,7 +85,7 @@ class RouteAttachment:
     def resource_type(self):
         """Gets the resource_type of this RouteAttachment.
 
-        连接关联的资源类型：vpc|vgw|vpn|peering
+        连接关联的资源类型: - vpc：虚拟私有云 - vpn：vpn网关 - vgw：云专线的虚拟网关 - vpn：vpn网关 - vgw：云专线的虚拟网关 - peering：对等连接，通过云连接CC加载不同区域的企业路由器来创建“对等连接（Peering）”连接 -  -  -
 
         :return: The resource_type of this RouteAttachment.
         :rtype: str
@@ -89,7 +96,7 @@ class RouteAttachment:
     def resource_type(self, resource_type):
         """Sets the resource_type of this RouteAttachment.
 
-        连接关联的资源类型：vpc|vgw|vpn|peering
+        连接关联的资源类型: - vpc：虚拟私有云 - vpn：vpn网关 - vgw：云专线的虚拟网关 - vpn：vpn网关 - vgw：云专线的虚拟网关 - peering：对等连接，通过云连接CC加载不同区域的企业路由器来创建“对等连接（Peering）”连接 -  -  -
 
         :param resource_type: The resource_type of this RouteAttachment.
         :type resource_type: str
@@ -117,6 +124,28 @@ class RouteAttachment:
         :type attachment_id: str
         """
         self._attachment_id = attachment_id
+
+    @property
+    def priority(self):
+        """Gets the priority of this RouteAttachment.
+
+        路由优先级，普通路由固定值为1
+
+        :return: The priority of this RouteAttachment.
+        :rtype: int
+        """
+        return self._priority
+
+    @priority.setter
+    def priority(self, priority):
+        """Sets the priority of this RouteAttachment.
+
+        路由优先级，普通路由固定值为1
+
+        :param priority: The priority of this RouteAttachment.
+        :type priority: int
+        """
+        self._priority = priority
 
     def to_dict(self):
         """Returns the model properties as a dict"""

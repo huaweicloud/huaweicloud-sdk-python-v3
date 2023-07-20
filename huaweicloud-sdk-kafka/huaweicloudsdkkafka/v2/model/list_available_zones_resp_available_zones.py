@@ -55,7 +55,7 @@ class ListAvailableZonesRespAvailableZones:
         :type name: str
         :param port: 可用区端口号。
         :type port: str
-        :param resource_availability: 分区上是否还有可用资源。
+        :param resource_availability: 可用区上是否还有可用资源。
         :type resource_availability: str
         :param default_az: 是否为默认可用区。
         :type default_az: bool
@@ -211,7 +211,7 @@ class ListAvailableZonesRespAvailableZones:
     def resource_availability(self):
         """Gets the resource_availability of this ListAvailableZonesRespAvailableZones.
 
-        分区上是否还有可用资源。
+        可用区上是否还有可用资源。
 
         :return: The resource_availability of this ListAvailableZonesRespAvailableZones.
         :rtype: str
@@ -222,7 +222,7 @@ class ListAvailableZonesRespAvailableZones:
     def resource_availability(self, resource_availability):
         """Sets the resource_availability of this ListAvailableZonesRespAvailableZones.
 
-        分区上是否还有可用资源。
+        可用区上是否还有可用资源。
 
         :param resource_availability: The resource_availability of this ListAvailableZonesRespAvailableZones.
         :type resource_availability: str

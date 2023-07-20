@@ -21,7 +21,9 @@ class UpdateInstanceTopicReqTopics:
         'retention_time': 'int',
         'sync_replication': 'bool',
         'sync_message_flush': 'bool',
-        'new_partition_numbers': 'int'
+        'new_partition_numbers': 'int',
+        'topic_other_configs': 'list[CreateInstanceTopicReqTopicOtherConfigs]',
+        'topic_desc': 'str'
     }
 
     attribute_map = {
@@ -29,10 +31,12 @@ class UpdateInstanceTopicReqTopics:
         'retention_time': 'retention_time',
         'sync_replication': 'sync_replication',
         'sync_message_flush': 'sync_message_flush',
-        'new_partition_numbers': 'new_partition_numbers'
+        'new_partition_numbers': 'new_partition_numbers',
+        'topic_other_configs': 'topic_other_configs',
+        'topic_desc': 'topic_desc'
     }
 
-    def __init__(self, id=None, retention_time=None, sync_replication=None, sync_message_flush=None, new_partition_numbers=None):
+    def __init__(self, id=None, retention_time=None, sync_replication=None, sync_message_flush=None, new_partition_numbers=None, topic_other_configs=None, topic_desc=None):
         """UpdateInstanceTopicReqTopics
 
         The model defined in huaweicloud sdk
@@ -47,6 +51,10 @@ class UpdateInstanceTopicReqTopics:
         :type sync_message_flush: bool
         :param new_partition_numbers: 分区数。
         :type new_partition_numbers: int
+        :param topic_other_configs: topic配置
+        :type topic_other_configs: list[:class:`huaweicloudsdkkafka.v2.CreateInstanceTopicReqTopicOtherConfigs`]
+        :param topic_desc: topic描述
+        :type topic_desc: str
         """
         
         
@@ -56,6 +64,8 @@ class UpdateInstanceTopicReqTopics:
         self._sync_replication = None
         self._sync_message_flush = None
         self._new_partition_numbers = None
+        self._topic_other_configs = None
+        self._topic_desc = None
         self.discriminator = None
 
         self.id = id
@@ -67,6 +77,10 @@ class UpdateInstanceTopicReqTopics:
             self.sync_message_flush = sync_message_flush
         if new_partition_numbers is not None:
             self.new_partition_numbers = new_partition_numbers
+        if topic_other_configs is not None:
+            self.topic_other_configs = topic_other_configs
+        if topic_desc is not None:
+            self.topic_desc = topic_desc
 
     @property
     def id(self):
@@ -177,6 +191,50 @@ class UpdateInstanceTopicReqTopics:
         :type new_partition_numbers: int
         """
         self._new_partition_numbers = new_partition_numbers
+
+    @property
+    def topic_other_configs(self):
+        """Gets the topic_other_configs of this UpdateInstanceTopicReqTopics.
+
+        topic配置
+
+        :return: The topic_other_configs of this UpdateInstanceTopicReqTopics.
+        :rtype: list[:class:`huaweicloudsdkkafka.v2.CreateInstanceTopicReqTopicOtherConfigs`]
+        """
+        return self._topic_other_configs
+
+    @topic_other_configs.setter
+    def topic_other_configs(self, topic_other_configs):
+        """Sets the topic_other_configs of this UpdateInstanceTopicReqTopics.
+
+        topic配置
+
+        :param topic_other_configs: The topic_other_configs of this UpdateInstanceTopicReqTopics.
+        :type topic_other_configs: list[:class:`huaweicloudsdkkafka.v2.CreateInstanceTopicReqTopicOtherConfigs`]
+        """
+        self._topic_other_configs = topic_other_configs
+
+    @property
+    def topic_desc(self):
+        """Gets the topic_desc of this UpdateInstanceTopicReqTopics.
+
+        topic描述
+
+        :return: The topic_desc of this UpdateInstanceTopicReqTopics.
+        :rtype: str
+        """
+        return self._topic_desc
+
+    @topic_desc.setter
+    def topic_desc(self, topic_desc):
+        """Sets the topic_desc of this UpdateInstanceTopicReqTopics.
+
+        topic描述
+
+        :param topic_desc: The topic_desc of this UpdateInstanceTopicReqTopics.
+        :type topic_desc: str
+        """
+        self._topic_desc = topic_desc
 
     def to_dict(self):
         """Returns the model properties as a dict"""

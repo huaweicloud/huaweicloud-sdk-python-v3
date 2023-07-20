@@ -143,7 +143,7 @@ class KafkaClient(Client):
     def batch_delete_instance_topic(self, request):
         """Kafka实例批量删除Topic
 
-        该接口用于向Kafka实例批量删除Topic。批量删除多个消费组时，部分删除成功，部分失败，此时接口返回删除成功，并在返回中显示删除失败的消费组信息。
+        该接口用于向Kafka实例批量删除Topic。批量删除多个Topic时，部分删除成功，部分失败，此时接口返回删除成功，并在返回中显示删除失败的Topic信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1449,10 +1449,6 @@ class KafkaClient(Client):
             path_params['instance_id'] = local_var_params['instance_id']
 
         query_params = []
-        if 'offset' in local_var_params:
-            query_params.append(('offset', local_var_params['offset']))
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
 
         header_params = {}
 
@@ -1565,7 +1561,7 @@ class KafkaClient(Client):
         
         同时，unavailable_zones字段表示资源不足的可用区列表，如果为空，则表示所有可用区都有资源，如果不为空，则表示字段值的可用区没有资源。所以必须确保您购买的资源所在的可用区有资源，不在该字段列表内。
         
-        [例如，响应消息中bandwidth字段为1200MB的记录，unavailable_zones字段包含cn-east-2b、cn-east-2a和cn-east-2d，表示在华东-上海2的可用区1、可用区2、可用区3都没有该资源。](tag:hc,hws)
+        [例如，响应消息中bandwidth字段为1200MB的记录，unavailable_zones字段包含cn-east-2b、cn-east-2a和cn-east-2d，表示在华东-上海2的可用区1、可用区2、可用区3都没有该资源。](tag:hws)
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1669,6 +1665,130 @@ class KafkaClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ListSinkTasksResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_topic_partitions(self, request):
+        """查询Topic的分区列表
+
+        查询Topic的分区列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListTopicPartitions
+        :type request: :class:`huaweicloudsdkkafka.v2.ListTopicPartitionsRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.ListTopicPartitionsResponse`
+        """
+        return self._list_topic_partitions_with_http_info(request)
+
+    def _list_topic_partitions_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'topic' in local_var_params:
+            path_params['topic'] = local_var_params['topic']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['IAM_AUTH_TYPE_NEW']
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/kafka/instances/{instance_id}/topics/{topic}/partitions',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListTopicPartitionsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_topic_producers(self, request):
+        """查询Topic的当前生产者列表
+
+        查询Topic的当前生产者列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListTopicProducers
+        :type request: :class:`huaweicloudsdkkafka.v2.ListTopicProducersRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.ListTopicProducersResponse`
+        """
+        return self._list_topic_producers_with_http_info(request)
+
+    def _list_topic_producers_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'topic' in local_var_params:
+            path_params['topic'] = local_var_params['topic']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['IAM_AUTH_TYPE_NEW']
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/kafka/instances/{instance_id}/topics/{topic}/producers',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListTopicProducersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

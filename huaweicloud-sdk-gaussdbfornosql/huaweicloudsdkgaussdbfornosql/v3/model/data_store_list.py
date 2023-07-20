@@ -18,15 +18,17 @@ class DataStoreList:
 
     openapi_types = {
         'datastore_name': 'str',
-        'version': 'str'
+        'version': 'str',
+        'mode': 'str'
     }
 
     attribute_map = {
         'datastore_name': 'datastore_name',
-        'version': 'version'
+        'version': 'version',
+        'mode': 'mode'
     }
 
-    def __init__(self, datastore_name=None, version=None):
+    def __init__(self, datastore_name=None, version=None, mode=None):
         """DataStoreList
 
         The model defined in huaweicloud sdk
@@ -35,16 +37,20 @@ class DataStoreList:
         :type datastore_name: str
         :param version: 数据库引擎版本。
         :type version: str
+        :param mode: 实例类型。 取值为“Cluster”，表示GaussDB(for Cassandra)、GaussDB(for Influx)、GaussDB(for Redis)集群实例类型。 取值为“InfluxdbSingle”，表示GaussDB(for Influx)单节点实例类型。 取值为“ReplicaSet”，表示GaussDB(for Mongo)副本集实例类型。
+        :type mode: str
         """
         
         
 
         self._datastore_name = None
         self._version = None
+        self._mode = None
         self.discriminator = None
 
         self.datastore_name = datastore_name
         self.version = version
+        self.mode = mode
 
     @property
     def datastore_name(self):
@@ -89,6 +95,28 @@ class DataStoreList:
         :type version: str
         """
         self._version = version
+
+    @property
+    def mode(self):
+        """Gets the mode of this DataStoreList.
+
+        实例类型。 取值为“Cluster”，表示GaussDB(for Cassandra)、GaussDB(for Influx)、GaussDB(for Redis)集群实例类型。 取值为“InfluxdbSingle”，表示GaussDB(for Influx)单节点实例类型。 取值为“ReplicaSet”，表示GaussDB(for Mongo)副本集实例类型。
+
+        :return: The mode of this DataStoreList.
+        :rtype: str
+        """
+        return self._mode
+
+    @mode.setter
+    def mode(self, mode):
+        """Sets the mode of this DataStoreList.
+
+        实例类型。 取值为“Cluster”，表示GaussDB(for Cassandra)、GaussDB(for Influx)、GaussDB(for Redis)集群实例类型。 取值为“InfluxdbSingle”，表示GaussDB(for Influx)单节点实例类型。 取值为“ReplicaSet”，表示GaussDB(for Mongo)副本集实例类型。
+
+        :param mode: The mode of this DataStoreList.
+        :type mode: str
+        """
+        self._mode = mode
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -31,7 +31,7 @@ class DeleteSinkTaskRequest:
 
         The model defined in huaweicloud sdk
 
-        :param connector_id: 实例转储ID。 请参考[实例生命周期][查询实例]接口返回的数据。
+        :param connector_id: 实例转储ID。  请参考[查询实例](ShowInstance.xml)返回的数据。
         :type connector_id: str
         :param task_id: 转储任务ID。
         :type task_id: str
@@ -50,7 +50,7 @@ class DeleteSinkTaskRequest:
     def connector_id(self):
         """Gets the connector_id of this DeleteSinkTaskRequest.
 
-        实例转储ID。 请参考[实例生命周期][查询实例]接口返回的数据。
+        实例转储ID。  请参考[查询实例](ShowInstance.xml)返回的数据。
 
         :return: The connector_id of this DeleteSinkTaskRequest.
         :rtype: str
@@ -61,7 +61,7 @@ class DeleteSinkTaskRequest:
     def connector_id(self, connector_id):
         """Sets the connector_id of this DeleteSinkTaskRequest.
 
-        实例转储ID。 请参考[实例生命周期][查询实例]接口返回的数据。
+        实例转储ID。  请参考[查询实例](ShowInstance.xml)返回的数据。
 
         :param connector_id: The connector_id of this DeleteSinkTaskRequest.
         :type connector_id: str

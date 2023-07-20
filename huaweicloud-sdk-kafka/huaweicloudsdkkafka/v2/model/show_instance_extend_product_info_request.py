@@ -35,7 +35,7 @@ class ShowInstanceExtendProductInfoRequest:
 
         :param instance_id: 实例ID。
         :type instance_id: str
-        :param type: [产品的类型。 - advanced: 专享版 - platinum: 铂金版 - dec: 专属云版 - exp: 体验版](tag:hc,hk,hws,hws_hk,ctc,sbc,hk_sbc,cmcc,hws_eu)
+        :param type: [产品的类型。 - advanced: 专享版 - platinum: 铂金版 - dec: 专属云版 - exp: 体验版](tag:hws,hws_hk,ctc,sbc,hk_sbc,cmcc,hws_eu)
         :type type: str
         :param engine: 消息引擎的类型。当前支持的类型为kafka。
         :type engine: str
@@ -78,7 +78,7 @@ class ShowInstanceExtendProductInfoRequest:
     def type(self):
         """Gets the type of this ShowInstanceExtendProductInfoRequest.
 
-        [产品的类型。 - advanced: 专享版 - platinum: 铂金版 - dec: 专属云版 - exp: 体验版](tag:hc,hk,hws,hws_hk,ctc,sbc,hk_sbc,cmcc,hws_eu)
+        [产品的类型。 - advanced: 专享版 - platinum: 铂金版 - dec: 专属云版 - exp: 体验版](tag:hws,hws_hk,ctc,sbc,hk_sbc,cmcc,hws_eu)
 
         :return: The type of this ShowInstanceExtendProductInfoRequest.
         :rtype: str
@@ -89,7 +89,7 @@ class ShowInstanceExtendProductInfoRequest:
     def type(self, type):
         """Sets the type of this ShowInstanceExtendProductInfoRequest.
 
-        [产品的类型。 - advanced: 专享版 - platinum: 铂金版 - dec: 专属云版 - exp: 体验版](tag:hc,hk,hws,hws_hk,ctc,sbc,hk_sbc,cmcc,hws_eu)
+        [产品的类型。 - advanced: 专享版 - platinum: 铂金版 - dec: 专属云版 - exp: 体验版](tag:hws,hws_hk,ctc,sbc,hk_sbc,cmcc,hws_eu)
 
         :param type: The type of this ShowInstanceExtendProductInfoRequest.
         :type type: str

@@ -683,6 +683,8 @@ class ErClient(Client):
         if 'resource_id' in local_var_params:
             query_params.append(('resource_id', local_var_params['resource_id']))
             collection_formats['resource_id'] = 'multi'
+        if 'owned_by_self' in local_var_params:
+            query_params.append(('owned_by_self', local_var_params['owned_by_self']))
         if 'sort_key' in local_var_params:
             query_params.append(('sort_key', local_var_params['sort_key']))
             collection_formats['sort_key'] = 'multi'
@@ -829,6 +831,429 @@ class ErClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='UpdateEnterpriseRouterResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_flow_log(self, request):
+        """创建流日志
+
+        给ER实例创建流日志。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateFlowLog
+        :type request: :class:`huaweicloudsdker.v3.CreateFlowLogRequest`
+        :rtype: :class:`huaweicloudsdker.v3.CreateFlowLogResponse`
+        """
+        return self._create_flow_log_with_http_info(request)
+
+    def _create_flow_log_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'er_id' in local_var_params:
+            path_params['er_id'] = local_var_params['er_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_client_token' in local_var_params:
+            header_params['X-Client-Token'] = local_var_params['x_client_token']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = ["X-Client-Token", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/enterprise-router/{er_id}/flow-logs',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateFlowLogResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_flow_log(self, request):
+        """删除流日志
+
+        删除流日志
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteFlowLog
+        :type request: :class:`huaweicloudsdker.v3.DeleteFlowLogRequest`
+        :rtype: :class:`huaweicloudsdker.v3.DeleteFlowLogResponse`
+        """
+        return self._delete_flow_log_with_http_info(request)
+
+    def _delete_flow_log_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'er_id' in local_var_params:
+            path_params['er_id'] = local_var_params['er_id']
+        if 'flow_log_id' in local_var_params:
+            path_params['flow_log_id'] = local_var_params['flow_log_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/enterprise-router/{er_id}/flow-logs/{flow_log_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteFlowLogResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def disable_flow_log(self, request):
+        """关闭流日志
+
+        关闭流日志
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DisableFlowLog
+        :type request: :class:`huaweicloudsdker.v3.DisableFlowLogRequest`
+        :rtype: :class:`huaweicloudsdker.v3.DisableFlowLogResponse`
+        """
+        return self._disable_flow_log_with_http_info(request)
+
+    def _disable_flow_log_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'er_id' in local_var_params:
+            path_params['er_id'] = local_var_params['er_id']
+        if 'flow_log_id' in local_var_params:
+            path_params['flow_log_id'] = local_var_params['flow_log_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/enterprise-router/{er_id}/flow-logs/{flow_log_id}/disable',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DisableFlowLogResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def enable_flow_log(self, request):
+        """开启流日志
+
+        开启流日志
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for EnableFlowLog
+        :type request: :class:`huaweicloudsdker.v3.EnableFlowLogRequest`
+        :rtype: :class:`huaweicloudsdker.v3.EnableFlowLogResponse`
+        """
+        return self._enable_flow_log_with_http_info(request)
+
+    def _enable_flow_log_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'er_id' in local_var_params:
+            path_params['er_id'] = local_var_params['er_id']
+        if 'flow_log_id' in local_var_params:
+            path_params['flow_log_id'] = local_var_params['flow_log_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/enterprise-router/{er_id}/flow-logs/{flow_log_id}/enable',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='EnableFlowLogResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_flow_logs(self, request):
+        """查询流日志列表
+
+        查询企业路由器实例下的流日志列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListFlowLogs
+        :type request: :class:`huaweicloudsdker.v3.ListFlowLogsRequest`
+        :rtype: :class:`huaweicloudsdker.v3.ListFlowLogsResponse`
+        """
+        return self._list_flow_logs_with_http_info(request)
+
+    def _list_flow_logs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'er_id' in local_var_params:
+            path_params['er_id'] = local_var_params['er_id']
+
+        query_params = []
+        if 'resource_type' in local_var_params:
+            query_params.append(('resource_type', local_var_params['resource_type']))
+        if 'resource_id' in local_var_params:
+            query_params.append(('resource_id', local_var_params['resource_id']))
+            collection_formats['resource_id'] = 'multi'
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'sort_key' in local_var_params:
+            query_params.append(('sort_key', local_var_params['sort_key']))
+            collection_formats['sort_key'] = 'multi'
+        if 'sort_dir' in local_var_params:
+            query_params.append(('sort_dir', local_var_params['sort_dir']))
+            collection_formats['sort_dir'] = 'multi'
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/enterprise-router/{er_id}/flow-logs',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListFlowLogsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_flow_log(self, request):
+        """查询流日志详情
+
+        查询流日志详情
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowFlowLog
+        :type request: :class:`huaweicloudsdker.v3.ShowFlowLogRequest`
+        :rtype: :class:`huaweicloudsdker.v3.ShowFlowLogResponse`
+        """
+        return self._show_flow_log_with_http_info(request)
+
+    def _show_flow_log_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'er_id' in local_var_params:
+            path_params['er_id'] = local_var_params['er_id']
+        if 'flow_log_id' in local_var_params:
+            path_params['flow_log_id'] = local_var_params['flow_log_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/enterprise-router/{er_id}/flow-logs/{flow_log_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowFlowLogResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_flow_log(self, request):
+        """更新流日志基本信息
+
+        更新流日志基本信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateFlowLog
+        :type request: :class:`huaweicloudsdker.v3.UpdateFlowLogRequest`
+        :rtype: :class:`huaweicloudsdker.v3.UpdateFlowLogResponse`
+        """
+        return self._update_flow_log_with_http_info(request)
+
+    def _update_flow_log_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'er_id' in local_var_params:
+            path_params['er_id'] = local_var_params['er_id']
+        if 'flow_log_id' in local_var_params:
+            path_params['flow_log_id'] = local_var_params['flow_log_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/enterprise-router/{er_id}/flow-logs/{flow_log_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateFlowLogResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1028,6 +1453,72 @@ class ErClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ListPropagationsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_quotas(self, request):
+        """查询配额
+
+        查询租户各类资源的使用情况，如企业路由器的使用量，VPC连接的使用量等。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowQuotas
+        :type request: :class:`huaweicloudsdker.v3.ShowQuotasRequest`
+        :rtype: :class:`huaweicloudsdker.v3.ShowQuotasResponse`
+        """
+        return self._show_quotas_with_http_info(request)
+
+    def _show_quotas_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+            collection_formats['type'] = 'multi'
+        if 'er_id' in local_var_params:
+            query_params.append(('erId', local_var_params['er_id']))
+            collection_formats['erId'] = 'multi'
+        if 'route_table_id' in local_var_params:
+            query_params.append(('routeTableId', local_var_params['route_table_id']))
+            collection_formats['routeTableId'] = 'multi'
+        if 'vpc_id' in local_var_params:
+            query_params.append(('vpcId', local_var_params['vpc_id']))
+            collection_formats['vpcId'] = 'multi'
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/enterprise-router/quotas',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowQuotasResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1714,6 +2205,68 @@ class ErClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='UpdateRouteTableResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def batch_create_resource_tags(self, request):
+        """批量添加删除资源标签
+
+        - 为指定实例批量添加或删除标签
+        - 标签管理服务需要使用该接口批量管理实例的标签。
+        - 一个资源上最多有10个标签。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchCreateResourceTags
+        :type request: :class:`huaweicloudsdker.v3.BatchCreateResourceTagsRequest`
+        :rtype: :class:`huaweicloudsdker.v3.BatchCreateResourceTagsResponse`
+        """
+        return self._batch_create_resource_tags_with_http_info(request)
+
+    def _batch_create_resource_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'resource_id' in local_var_params:
+            path_params['resource_id'] = local_var_params['resource_id']
+        if 'resource_type' in local_var_params:
+            path_params['resource_type'] = local_var_params['resource_type']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/{resource_type}/{resource_id}/tags/action',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='BatchCreateResourceTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

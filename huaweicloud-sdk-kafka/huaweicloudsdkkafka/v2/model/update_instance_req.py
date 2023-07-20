@@ -49,9 +49,9 @@ class UpdateInstanceReq:
         :type maintain_begin: str
         :param maintain_end: 维护时间窗结束时间，格式为HH:mm:ss。   - 维护时间窗开始和结束时间必须为指定的时间段。   - 结束时间在开始时间基础上加四个小时，即当开始时间为22:00:00时，结束时间为02:00:00。   - 该参数不能单独为空，若该值为空，则开始时间也为空。系统分配一个默认结束时间06:00:00。
         :type maintain_end: str
-        :param security_group_id: 安全组ID。
+        :param security_group_id: 安全组ID。  获取方法如下：登录虚拟私有云服务的控制台界面，在安全组的详情页面查找安全组ID。
         :type security_group_id: str
-        :param retention_policy: 容量阈值策略。 支持两种策略模式： - produce_reject: 生产受限 - time_base: 自动删除 
+        :param retention_policy: 容量阈值策略。  支持两种策略模式： - produce_reject: 生产受限 - time_base: 自动删除 
         :type retention_policy: str
         :param enterprise_project_id: 企业项目。
         :type enterprise_project_id: str
@@ -175,7 +175,7 @@ class UpdateInstanceReq:
     def security_group_id(self):
         """Gets the security_group_id of this UpdateInstanceReq.
 
-        安全组ID。
+        安全组ID。  获取方法如下：登录虚拟私有云服务的控制台界面，在安全组的详情页面查找安全组ID。
 
         :return: The security_group_id of this UpdateInstanceReq.
         :rtype: str
@@ -186,7 +186,7 @@ class UpdateInstanceReq:
     def security_group_id(self, security_group_id):
         """Sets the security_group_id of this UpdateInstanceReq.
 
-        安全组ID。
+        安全组ID。  获取方法如下：登录虚拟私有云服务的控制台界面，在安全组的详情页面查找安全组ID。
 
         :param security_group_id: The security_group_id of this UpdateInstanceReq.
         :type security_group_id: str
@@ -197,7 +197,7 @@ class UpdateInstanceReq:
     def retention_policy(self):
         """Gets the retention_policy of this UpdateInstanceReq.
 
-        容量阈值策略。 支持两种策略模式： - produce_reject: 生产受限 - time_base: 自动删除 
+        容量阈值策略。  支持两种策略模式： - produce_reject: 生产受限 - time_base: 自动删除 
 
         :return: The retention_policy of this UpdateInstanceReq.
         :rtype: str
@@ -208,7 +208,7 @@ class UpdateInstanceReq:
     def retention_policy(self, retention_policy):
         """Sets the retention_policy of this UpdateInstanceReq.
 
-        容量阈值策略。 支持两种策略模式： - produce_reject: 生产受限 - time_base: 自动删除 
+        容量阈值策略。  支持两种策略模式： - produce_reject: 生产受限 - time_base: 自动删除 
 
         :param retention_policy: The retention_policy of this UpdateInstanceReq.
         :type retention_policy: str

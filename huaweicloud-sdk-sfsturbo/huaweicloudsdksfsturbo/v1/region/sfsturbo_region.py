@@ -9,6 +9,8 @@ from huaweicloudsdkcore.region.provider import RegionProviderChain
 class SFSTurboRegion:
     _PROVIDER = RegionProviderChain.get_default_region_provider_chain("SFSTURBO")
 
+    EU_WEST_101 = Region("eu-west-101",
+                        "https://sfs-turbo.eu-west-101.myhuaweicloud.eu")
     CN_EAST_2 = Region("cn-east-2",
                         "https://sfs-turbo.cn-east-2.myhuaweicloud.com")
     CN_EAST_3 = Region("cn-east-3",
@@ -49,6 +51,7 @@ class SFSTurboRegion:
                         "https://sfs-turbo.ap-southeast-4.myhuaweicloud.com")
 
     static_fields = {
+        "eu-west-101": EU_WEST_101,
         "cn-east-2": CN_EAST_2,
         "cn-east-3": CN_EAST_3,
         "cn-north-1": CN_NORTH_1,

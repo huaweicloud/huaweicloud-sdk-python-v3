@@ -43,9 +43,9 @@ class ResizeEngineInstanceReq:
         :type new_storage_space: int
         :param new_broker_num: 当oper_type参数为horizontal时，该参数有效。  取值范围：最多支持30个broker。
         :type new_broker_num: int
-        :param new_product_id: 垂直扩容时的新产品ID。  当oper_type类型是vertical时，该参数才有效且必填。
+        :param new_product_id: 垂直扩容时的新产品ID。  当oper_type类型是vertical时，该参数才有效且必填。  产品ID可以从[查询产品规格列表](ListEngineProducts.xml)获取。
         :type new_product_id: str
-        :param publicip_id: 实例绑定的弹性IP地址的ID。 以英文逗号隔开多个弹性IP地址的ID。 当oper_type类型是horizontal时，该参数必填。
+        :param publicip_id: 实例绑定的弹性IP地址的ID。  以英文逗号隔开多个弹性IP地址的ID。  当oper_type类型是horizontal时，该参数必填。
         :type publicip_id: str
         """
         
@@ -138,7 +138,7 @@ class ResizeEngineInstanceReq:
     def new_product_id(self):
         """Gets the new_product_id of this ResizeEngineInstanceReq.
 
-        垂直扩容时的新产品ID。  当oper_type类型是vertical时，该参数才有效且必填。
+        垂直扩容时的新产品ID。  当oper_type类型是vertical时，该参数才有效且必填。  产品ID可以从[查询产品规格列表](ListEngineProducts.xml)获取。
 
         :return: The new_product_id of this ResizeEngineInstanceReq.
         :rtype: str
@@ -149,7 +149,7 @@ class ResizeEngineInstanceReq:
     def new_product_id(self, new_product_id):
         """Sets the new_product_id of this ResizeEngineInstanceReq.
 
-        垂直扩容时的新产品ID。  当oper_type类型是vertical时，该参数才有效且必填。
+        垂直扩容时的新产品ID。  当oper_type类型是vertical时，该参数才有效且必填。  产品ID可以从[查询产品规格列表](ListEngineProducts.xml)获取。
 
         :param new_product_id: The new_product_id of this ResizeEngineInstanceReq.
         :type new_product_id: str
@@ -160,7 +160,7 @@ class ResizeEngineInstanceReq:
     def publicip_id(self):
         """Gets the publicip_id of this ResizeEngineInstanceReq.
 
-        实例绑定的弹性IP地址的ID。 以英文逗号隔开多个弹性IP地址的ID。 当oper_type类型是horizontal时，该参数必填。
+        实例绑定的弹性IP地址的ID。  以英文逗号隔开多个弹性IP地址的ID。  当oper_type类型是horizontal时，该参数必填。
 
         :return: The publicip_id of this ResizeEngineInstanceReq.
         :rtype: str
@@ -171,7 +171,7 @@ class ResizeEngineInstanceReq:
     def publicip_id(self, publicip_id):
         """Sets the publicip_id of this ResizeEngineInstanceReq.
 
-        实例绑定的弹性IP地址的ID。 以英文逗号隔开多个弹性IP地址的ID。 当oper_type类型是horizontal时，该参数必填。
+        实例绑定的弹性IP地址的ID。  以英文逗号隔开多个弹性IP地址的ID。  当oper_type类型是horizontal时，该参数必填。
 
         :param publicip_id: The publicip_id of this ResizeEngineInstanceReq.
         :type publicip_id: str

@@ -1,3 +1,182 @@
+# 3.1.49 2023-07-20
+
+### HuaweiCloud SDK CloudRTC
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateIndividualStreamJob**
+    - 请求参数变更
+      - `- publish_param`
+  - **UpdateIndividualStreamJob**
+    - 请求参数变更
+      - `- publish_param`
+  - **CreateMixJob**
+    - 请求参数变更
+      - `- publish_param`
+
+### HuaweiCloud SDK EIP
+
+- _新增特性_
+  - 支持以下接口：
+    - `AttachShareBandwidth`
+    - `AttachBatchPublicIp`
+    - `DetachShareBandwidth`
+    - `DetachBatchPublicIp`
+    - `EnableNat64`
+    - `DisableNat64`
+    - `ListBandwidth`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK ER
+
+- _新增特性_
+  - 支持以下接口：
+    - `BatchCreateResourceTags`
+    - `ShowQuotas`
+    - `ListFlowLogs`
+    - `CreateFlowLog`
+    - `ShowFlowLog`
+    - `UpdateFlowLog`
+    - `DeleteFlowLog`
+    - `EnableFlowLog`
+    - `DisableFlowLog`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListProjectTags**
+    - 请求参数变更
+      - `+ resource_type: enum value [ecn-attachment,connect-attachment,cfw-attachment]`
+    - 响应参数变更
+      - `+ tags`
+  - **DeleteResourceTag**
+    - 请求参数变更
+      - `+ resource_type: enum value [ecn-attachment,connect-attachment,cfw-attachment]`
+  - **ShowResourceTag**
+    - 请求参数变更
+      - `+ resource_type: enum value [ecn-attachment,connect-attachment,cfw-attachment]`
+    - 响应参数变更
+      - `+ tags`
+  - **CreateResourceTag**
+    - 请求参数变更
+      - `+ resource_type: enum value [ecn-attachment,connect-attachment,cfw-attachment]`
+  - **ListEnterpriseRouters**
+    - 请求参数变更
+      - `+ owned_by_self`
+  - **ShowStaticRoute**
+    - 响应参数变更
+      - `+ route.attachments.priority`
+  - **UpdateStaticRoute**
+    - 响应参数变更
+      - `+ route.attachments.priority`
+  - **ListStaticRoutes**
+    - 响应参数变更
+      - `+ routes.attachments.priority`
+  - **CreateStaticRoute**
+    - 响应参数变更
+      - `+ route.attachments.priority`
+  - **ListEffectiveRoutes**
+    - 响应参数变更
+      - `+ routes.address_group_id`
+      - `+ routes.next_hops.priority`
+
+### HuaweiCloud SDK IoTDA
+
+- _新增特性_
+  - 支持接口`DeleteBatchTask`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK Kafka
+
+- _新增特性_
+  - 支持接口`ListTopicPartitions`、`ListTopicProducers`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListProducts**
+    - 请求参数变更
+      - `+ engine: enum value [kafka]`
+  - **UpdateInstanceTopic**
+    - 请求参数变更
+      - `+ topics.topic_other_configs`
+      - `+ topics.topic_desc`
+  - **CreateInstanceTopic**
+    - 请求参数变更
+      - `+ topic_other_configs`
+      - `+ topic_desc`
+    - 响应参数变更
+      - `+ id`
+  - **ListInstanceTopics**
+    - 请求参数变更
+      - `- offset`
+      - `- limit`
+    - 响应参数变更
+      - `+ topics.topic_other_configs`
+      - `+ topics.topic_desc`
+      - `+ topics.created_at`
+  - **ListInstances**
+    - 请求参数变更
+      - `+ engine: enum value [kafka]`
+  - **ResizeEngineInstance**
+    - 请求参数变更
+      - `+ engine: enum value [kafka]`
+
+### HuaweiCloud SDK MetaStudio
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreatePictureModelingJob**
+    - 请求参数变更
+      - `- model_asset_id`
+
+### HuaweiCloud SDK RabbitMQ
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowInstanceExtendProductInfo**
+    - 请求参数变更
+      - `+ engine: enum value [rabbitmq]`
+    - 响应参数变更
+      - `+ engine`
+      - `+ versions`
+      - `+ products`
+      - `- monthly`
+      - `- hourly`
+  - **ListProducts**
+    - 请求参数变更
+      - `+ engine: enum value [rabbitmq]`
+  - **ResizeEngineInstance**
+    - 请求参数变更
+      - `+ engine: enum value [rabbitmq]`
+  - **ShowEngineInstanceExtendProductInfo**
+    - 请求参数变更
+      - `+ engine: enum value [rabbitmq]`
+
+### HuaweiCloud SDK RDS
+
+- _新增特性_
+  - 支持接口`ListInstancesSupportFastRestore`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **RestoreTables**
+    - 请求参数变更
+      - `+ is_fast_restore`
+
 # 3.1.48 2023-07-13
 
 ### HuaweiCloud SDK OROAS

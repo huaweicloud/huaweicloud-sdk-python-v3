@@ -98,20 +98,16 @@ class WorkflowRequestBody:
         self._task_type = None
         self.discriminator = None
 
-        if name is not None:
-            self.name = name
-        if type is not None:
-            self.type = type
+        self.name = name
+        self.type = type
         if description is not None:
             self.description = description
         if tags is not None:
             self.tags = tags
         if template_name is not None:
             self.template_name = template_name
-        if template_id is not None:
-            self.template_id = template_id
-        if input is not None:
-            self.input = input
+        self.template_id = template_id
+        self.input = input
         if quote is not None:
             self.quote = quote
         if job_name is not None:
@@ -122,8 +118,7 @@ class WorkflowRequestBody:
             self.service_scenario = service_scenario
         if service_name is not None:
             self.service_name = service_name
-        if task_type is not None:
-            self.task_type = task_type
+        self.task_type = task_type
 
     @property
     def name(self):

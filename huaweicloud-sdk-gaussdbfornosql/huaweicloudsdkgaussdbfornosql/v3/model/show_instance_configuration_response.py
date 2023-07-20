@@ -22,6 +22,8 @@ class ShowInstanceConfigurationResponse(SdkResponse):
         'datastore_name': 'str',
         'created': 'str',
         'updated': 'str',
+        'id': 'str',
+        'mode': 'str',
         'configuration_parameters': 'list[ConfigurationParameterResult]'
     }
 
@@ -30,10 +32,12 @@ class ShowInstanceConfigurationResponse(SdkResponse):
         'datastore_name': 'datastore_name',
         'created': 'created',
         'updated': 'updated',
+        'id': 'id',
+        'mode': 'mode',
         'configuration_parameters': 'configuration_parameters'
     }
 
-    def __init__(self, datastore_version_name=None, datastore_name=None, created=None, updated=None, configuration_parameters=None):
+    def __init__(self, datastore_version_name=None, datastore_name=None, created=None, updated=None, id=None, mode=None, configuration_parameters=None):
         """ShowInstanceConfigurationResponse
 
         The model defined in huaweicloud sdk
@@ -46,6 +50,10 @@ class ShowInstanceConfigurationResponse(SdkResponse):
         :type created: str
         :param updated: 更新时间，格式为\&quot;yyyy-MM-ddTHH:mm:ssZ\&quot;。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
         :type updated: str
+        :param id: 参数模板ID。
+        :type id: str
+        :param mode: 数据库实例类型。 GaussDB(for Cassandra)集群类型为\&quot;Cluster\&quot;。 GaussDB(for Mongo)副本集类型为\&quot;ReplicaSet\&quot;。 GaussDB(for Mongo)集群类型为\&quot;Sharding\&quot;。 GaussDB(for Influx)集群类型为\&quot;Cluster\&quot;。 GaussDB(for Influx)单节点类型为\&quot;InfluxdbSingle\&quot;。
+        :type mode: str
         :param configuration_parameters: 参数对象，用户基于默认参数模板自定义的参数配置。
         :type configuration_parameters: list[:class:`huaweicloudsdkgaussdbfornosql.v3.ConfigurationParameterResult`]
         """
@@ -56,6 +64,8 @@ class ShowInstanceConfigurationResponse(SdkResponse):
         self._datastore_name = None
         self._created = None
         self._updated = None
+        self._id = None
+        self._mode = None
         self._configuration_parameters = None
         self.discriminator = None
 
@@ -67,6 +77,10 @@ class ShowInstanceConfigurationResponse(SdkResponse):
             self.created = created
         if updated is not None:
             self.updated = updated
+        if id is not None:
+            self.id = id
+        if mode is not None:
+            self.mode = mode
         if configuration_parameters is not None:
             self.configuration_parameters = configuration_parameters
 
@@ -157,6 +171,50 @@ class ShowInstanceConfigurationResponse(SdkResponse):
         :type updated: str
         """
         self._updated = updated
+
+    @property
+    def id(self):
+        """Gets the id of this ShowInstanceConfigurationResponse.
+
+        参数模板ID。
+
+        :return: The id of this ShowInstanceConfigurationResponse.
+        :rtype: str
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """Sets the id of this ShowInstanceConfigurationResponse.
+
+        参数模板ID。
+
+        :param id: The id of this ShowInstanceConfigurationResponse.
+        :type id: str
+        """
+        self._id = id
+
+    @property
+    def mode(self):
+        """Gets the mode of this ShowInstanceConfigurationResponse.
+
+        数据库实例类型。 GaussDB(for Cassandra)集群类型为\"Cluster\"。 GaussDB(for Mongo)副本集类型为\"ReplicaSet\"。 GaussDB(for Mongo)集群类型为\"Sharding\"。 GaussDB(for Influx)集群类型为\"Cluster\"。 GaussDB(for Influx)单节点类型为\"InfluxdbSingle\"。
+
+        :return: The mode of this ShowInstanceConfigurationResponse.
+        :rtype: str
+        """
+        return self._mode
+
+    @mode.setter
+    def mode(self, mode):
+        """Sets the mode of this ShowInstanceConfigurationResponse.
+
+        数据库实例类型。 GaussDB(for Cassandra)集群类型为\"Cluster\"。 GaussDB(for Mongo)副本集类型为\"ReplicaSet\"。 GaussDB(for Mongo)集群类型为\"Sharding\"。 GaussDB(for Influx)集群类型为\"Cluster\"。 GaussDB(for Influx)单节点类型为\"InfluxdbSingle\"。
+
+        :param mode: The mode of this ShowInstanceConfigurationResponse.
+        :type mode: str
+        """
+        self._mode = mode
 
     @property
     def configuration_parameters(self):

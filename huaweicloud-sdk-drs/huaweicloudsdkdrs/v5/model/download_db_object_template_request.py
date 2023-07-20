@@ -18,15 +18,17 @@ class DownloadDbObjectTemplateRequest:
 
     openapi_types = {
         'job_id': 'str',
-        'x_language': 'str'
+        'x_language': 'str',
+        'file_import_db_level': 'str'
     }
 
     attribute_map = {
         'job_id': 'job_id',
-        'x_language': 'X-Language'
+        'x_language': 'X-Language',
+        'file_import_db_level': 'file_import_db_level'
     }
 
-    def __init__(self, job_id=None, x_language=None):
+    def __init__(self, job_id=None, x_language=None, file_import_db_level=None):
         """DownloadDbObjectTemplateRequest
 
         The model defined in huaweicloud sdk
@@ -35,17 +37,22 @@ class DownloadDbObjectTemplateRequest:
         :type job_id: str
         :param x_language: 请求语言类型。
         :type x_language: str
+        :param file_import_db_level: 文件模板支持数据同步级别，不填默认为table表级。 - database：库级 - table：表级
+        :type file_import_db_level: str
         """
         
         
 
         self._job_id = None
         self._x_language = None
+        self._file_import_db_level = None
         self.discriminator = None
 
         self.job_id = job_id
         if x_language is not None:
             self.x_language = x_language
+        if file_import_db_level is not None:
+            self.file_import_db_level = file_import_db_level
 
     @property
     def job_id(self):
@@ -90,6 +97,28 @@ class DownloadDbObjectTemplateRequest:
         :type x_language: str
         """
         self._x_language = x_language
+
+    @property
+    def file_import_db_level(self):
+        """Gets the file_import_db_level of this DownloadDbObjectTemplateRequest.
+
+        文件模板支持数据同步级别，不填默认为table表级。 - database：库级 - table：表级
+
+        :return: The file_import_db_level of this DownloadDbObjectTemplateRequest.
+        :rtype: str
+        """
+        return self._file_import_db_level
+
+    @file_import_db_level.setter
+    def file_import_db_level(self, file_import_db_level):
+        """Sets the file_import_db_level of this DownloadDbObjectTemplateRequest.
+
+        文件模板支持数据同步级别，不填默认为table表级。 - database：库级 - table：表级
+
+        :param file_import_db_level: The file_import_db_level of this DownloadDbObjectTemplateRequest.
+        :type file_import_db_level: str
+        """
+        self._file_import_db_level = file_import_db_level
 
     def to_dict(self):
         """Returns the model properties as a dict"""

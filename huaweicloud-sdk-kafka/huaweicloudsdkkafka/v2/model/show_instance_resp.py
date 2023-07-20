@@ -207,13 +207,13 @@ class ShowInstanceResp:
         :type connect_address: str
         :param port: 实例连接端口。
         :type port: int
-        :param status: 实例的状态。 [详细状态说明见[实例状态说明](https://support.huaweicloud.com/api-kafka/kafka-api-180514012.html)。](tag:hws)[详细状态说明见[实例状态说明](https://support.huaweicloud.com/intl/zh-cn/api-kafka/kafka-api-180514012.html)。](tag:hws_hk)
+        :param status: 实例的状态。详细状态说明请参考[实例状态说明](kafka-api-180514012.xml)。
         :type status: str
         :param instance_id: 实例ID。
         :type instance_id: str
         :param resource_spec_code: 资源规格标识。   - dms.instance.kafka.cluster.c3.mini：Kafka实例的基准带宽为100MByte/秒。   - dms.instance.kafka.cluster.c3.small.2：Kafka实例的基准带宽为300MByte/秒。   - dms.instance.kafka.cluster.c3.middle.2：Kafka实例的基准带宽为600MByte/秒。   - dms.instance.kafka.cluster.c3.high.2：Kafka实例的基准带宽为1200MByte/秒。
         :type resource_spec_code: str
-        :param charging_mode: &#39;[付费模式，1表示按需计费，0表示包年/包月计费。](tag:hc,hk,hws,hws_hk,ctc,sbc,hk_sbc,cmcc,hws_eu)[付费模式，暂未使用。](tag:hws_ocb,ocb) [付费模式，1表示按需计费。](tag:otc,dt,g42,tm,hk_g42,hk_tm)&#39;
+        :param charging_mode: [付费模式，1表示按需计费，0表示包年/包月计费。](tag:hws,hws_hk,ctc,sbc,hk_sbc,cmcc,hws_eu)[付费模式，暂未使用。](tag:hws_ocb,ocb) [付费模式，1表示按需计费。](tag:otc,dt,g42,tm,hk_g42,hk_tm)
         :type charging_mode: int
         :param vpc_id: VPC ID。
         :type vpc_id: str
@@ -818,7 +818,7 @@ class ShowInstanceResp:
     def status(self):
         """Gets the status of this ShowInstanceResp.
 
-        实例的状态。 [详细状态说明见[实例状态说明](https://support.huaweicloud.com/api-kafka/kafka-api-180514012.html)。](tag:hws)[详细状态说明见[实例状态说明](https://support.huaweicloud.com/intl/zh-cn/api-kafka/kafka-api-180514012.html)。](tag:hws_hk)
+        实例的状态。详细状态说明请参考[实例状态说明](kafka-api-180514012.xml)。
 
         :return: The status of this ShowInstanceResp.
         :rtype: str
@@ -829,7 +829,7 @@ class ShowInstanceResp:
     def status(self, status):
         """Sets the status of this ShowInstanceResp.
 
-        实例的状态。 [详细状态说明见[实例状态说明](https://support.huaweicloud.com/api-kafka/kafka-api-180514012.html)。](tag:hws)[详细状态说明见[实例状态说明](https://support.huaweicloud.com/intl/zh-cn/api-kafka/kafka-api-180514012.html)。](tag:hws_hk)
+        实例的状态。详细状态说明请参考[实例状态说明](kafka-api-180514012.xml)。
 
         :param status: The status of this ShowInstanceResp.
         :type status: str
@@ -884,7 +884,7 @@ class ShowInstanceResp:
     def charging_mode(self):
         """Gets the charging_mode of this ShowInstanceResp.
 
-        '[付费模式，1表示按需计费，0表示包年/包月计费。](tag:hc,hk,hws,hws_hk,ctc,sbc,hk_sbc,cmcc,hws_eu)[付费模式，暂未使用。](tag:hws_ocb,ocb) [付费模式，1表示按需计费。](tag:otc,dt,g42,tm,hk_g42,hk_tm)'
+        [付费模式，1表示按需计费，0表示包年/包月计费。](tag:hws,hws_hk,ctc,sbc,hk_sbc,cmcc,hws_eu)[付费模式，暂未使用。](tag:hws_ocb,ocb) [付费模式，1表示按需计费。](tag:otc,dt,g42,tm,hk_g42,hk_tm)
 
         :return: The charging_mode of this ShowInstanceResp.
         :rtype: int
@@ -895,7 +895,7 @@ class ShowInstanceResp:
     def charging_mode(self, charging_mode):
         """Sets the charging_mode of this ShowInstanceResp.
 
-        '[付费模式，1表示按需计费，0表示包年/包月计费。](tag:hc,hk,hws,hws_hk,ctc,sbc,hk_sbc,cmcc,hws_eu)[付费模式，暂未使用。](tag:hws_ocb,ocb) [付费模式，1表示按需计费。](tag:otc,dt,g42,tm,hk_g42,hk_tm)'
+        [付费模式，1表示按需计费，0表示包年/包月计费。](tag:hws,hws_hk,ctc,sbc,hk_sbc,cmcc,hws_eu)[付费模式，暂未使用。](tag:hws_ocb,ocb) [付费模式，1表示按需计费。](tag:otc,dt,g42,tm,hk_g42,hk_tm)
 
         :param charging_mode: The charging_mode of this ShowInstanceResp.
         :type charging_mode: int

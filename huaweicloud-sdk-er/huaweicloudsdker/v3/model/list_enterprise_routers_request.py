@@ -23,6 +23,7 @@ class ListEnterpriseRoutersRequest:
         'state': 'list[str]',
         'id': 'list[str]',
         'resource_id': 'list[str]',
+        'owned_by_self': 'bool',
         'sort_key': 'list[str]',
         'sort_dir': 'list[str]'
     }
@@ -34,11 +35,12 @@ class ListEnterpriseRoutersRequest:
         'state': 'state',
         'id': 'id',
         'resource_id': 'resource_id',
+        'owned_by_self': 'owned_by_self',
         'sort_key': 'sort_key',
         'sort_dir': 'sort_dir'
     }
 
-    def __init__(self, limit=None, marker=None, enterprise_project_id=None, state=None, id=None, resource_id=None, sort_key=None, sort_dir=None):
+    def __init__(self, limit=None, marker=None, enterprise_project_id=None, state=None, id=None, resource_id=None, owned_by_self=None, sort_key=None, sort_dir=None):
         """ListEnterpriseRoutersRequest
 
         The model defined in huaweicloud sdk
@@ -55,6 +57,8 @@ class ListEnterpriseRoutersRequest:
         :type id: list[str]
         :param resource_id: 连接对应的资源ID列表
         :type resource_id: list[str]
+        :param owned_by_self: 过滤资源是否属于当前租户；取值为true时，只查属于当前租户的资源，不包括共享资源；为false时，查询当前租户及共享给该租户的资源；
+        :type owned_by_self: bool
         :param sort_key: 按关键字排序，默认按照id排序，可选值:id|name|state
         :type sort_key: list[str]
         :param sort_dir: 返回结果按照升序或降序排列，默认为asc,降序为desc
@@ -69,6 +73,7 @@ class ListEnterpriseRoutersRequest:
         self._state = None
         self._id = None
         self._resource_id = None
+        self._owned_by_self = None
         self._sort_key = None
         self._sort_dir = None
         self.discriminator = None
@@ -85,6 +90,8 @@ class ListEnterpriseRoutersRequest:
             self.id = id
         if resource_id is not None:
             self.resource_id = resource_id
+        if owned_by_self is not None:
+            self.owned_by_self = owned_by_self
         if sort_key is not None:
             self.sort_key = sort_key
         if sort_dir is not None:
@@ -221,6 +228,28 @@ class ListEnterpriseRoutersRequest:
         :type resource_id: list[str]
         """
         self._resource_id = resource_id
+
+    @property
+    def owned_by_self(self):
+        """Gets the owned_by_self of this ListEnterpriseRoutersRequest.
+
+        过滤资源是否属于当前租户；取值为true时，只查属于当前租户的资源，不包括共享资源；为false时，查询当前租户及共享给该租户的资源；
+
+        :return: The owned_by_self of this ListEnterpriseRoutersRequest.
+        :rtype: bool
+        """
+        return self._owned_by_self
+
+    @owned_by_self.setter
+    def owned_by_self(self, owned_by_self):
+        """Sets the owned_by_self of this ListEnterpriseRoutersRequest.
+
+        过滤资源是否属于当前租户；取值为true时，只查属于当前租户的资源，不包括共享资源；为false时，查询当前租户及共享给该租户的资源；
+
+        :param owned_by_self: The owned_by_self of this ListEnterpriseRoutersRequest.
+        :type owned_by_self: bool
+        """
+        self._owned_by_self = owned_by_self
 
     @property
     def sort_key(self):

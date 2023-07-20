@@ -745,6 +745,65 @@ class IoTDAAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def delete_batch_task_async(self, request):
+        """删除批量任务
+
+        应用服务器可调用此接口删除物联网平台中已经完成（状态为成功，失败，部分成功，已停止）的批量任务。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteBatchTask
+        :type request: :class:`huaweicloudsdkiotda.v5.DeleteBatchTaskRequest`
+        :rtype: :class:`huaweicloudsdkiotda.v5.DeleteBatchTaskResponse`
+        """
+        return self._delete_batch_task_with_http_info(request)
+
+    def _delete_batch_task_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v5/iot/{project_id}/batchtasks/{task_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteBatchTaskResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_batch_tasks_async(self, request):
         """查询批量任务列表
 

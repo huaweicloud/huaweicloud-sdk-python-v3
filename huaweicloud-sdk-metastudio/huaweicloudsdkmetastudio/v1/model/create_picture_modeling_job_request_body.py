@@ -19,7 +19,6 @@ class CreatePictureModelingJobRequestBody:
     openapi_types = {
         'file': 'file',
         'style_id': 'str',
-        'model_asset_id': 'str',
         'name': 'str',
         'notify_url': 'str'
     }
@@ -27,12 +26,11 @@ class CreatePictureModelingJobRequestBody:
     attribute_map = {
         'file': 'file',
         'style_id': 'style_id',
-        'model_asset_id': 'model_asset_id',
         'name': 'name',
         'notify_url': 'notify_url'
     }
 
-    def __init__(self, file=None, style_id=None, model_asset_id=None, name=None, notify_url=None):
+    def __init__(self, file=None, style_id=None, name=None, notify_url=None):
         """CreatePictureModelingJobRequestBody
 
         The model defined in huaweicloud sdk
@@ -41,8 +39,6 @@ class CreatePictureModelingJobRequestBody:
         :type file: :class:`huaweicloudsdkcore.http.formdata.FormFile`
         :param style_id: 数字人风格ID。 * system_male_001: 男性风格01 * system_female_001: 女性风格01 * system_male_002：男性风格02 * system_female_002: 女性风格02
         :type style_id: str
-        :param model_asset_id: 数字人模型资产ID，重复创建时使用。
-        :type model_asset_id: str
         :param name: 数字人模型名称，首次创建时使用。
         :type name: str
         :param notify_url: 照片建模任务结束的回调地址。
@@ -53,15 +49,12 @@ class CreatePictureModelingJobRequestBody:
 
         self._file = None
         self._style_id = None
-        self._model_asset_id = None
         self._name = None
         self._notify_url = None
         self.discriminator = None
 
         self.file = file
         self.style_id = style_id
-        if model_asset_id is not None:
-            self.model_asset_id = model_asset_id
         self.name = name
         if notify_url is not None:
             self.notify_url = notify_url
@@ -109,28 +102,6 @@ class CreatePictureModelingJobRequestBody:
         :type style_id: str
         """
         self._style_id = style_id
-
-    @property
-    def model_asset_id(self):
-        """Gets the model_asset_id of this CreatePictureModelingJobRequestBody.
-
-        数字人模型资产ID，重复创建时使用。
-
-        :return: The model_asset_id of this CreatePictureModelingJobRequestBody.
-        :rtype: str
-        """
-        return self._model_asset_id
-
-    @model_asset_id.setter
-    def model_asset_id(self, model_asset_id):
-        """Sets the model_asset_id of this CreatePictureModelingJobRequestBody.
-
-        数字人模型资产ID，重复创建时使用。
-
-        :param model_asset_id: The model_asset_id of this CreatePictureModelingJobRequestBody.
-        :type model_asset_id: str
-        """
-        self._model_asset_id = model_asset_id
 
     @property
     def name(self):

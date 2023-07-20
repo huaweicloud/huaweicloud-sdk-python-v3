@@ -21,7 +21,7 @@ class ListEnterpriseResourceRequestBody:
         'limit': 'str',
         'offset': 'str',
         'action': 'str',
-        'matches': 'list[dict(str, str)]',
+        'matches': 'list[KvItem]',
         'sys_tags': 'list[TagItem]'
     }
 
@@ -48,7 +48,7 @@ class ListEnterpriseResourceRequestBody:
         :param action: 查询指定action
         :type action: str
         :param matches: 查询指定键值对
-        :type matches: list[dict(str, str)]
+        :type matches: list[:class:`huaweicloudsdkfunctiongraph.v2.KvItem`]
         :param sys_tags: 查询指定系统标签列表
         :type sys_tags: list[:class:`huaweicloudsdkfunctiongraph.v2.TagItem`]
         """
@@ -171,7 +171,7 @@ class ListEnterpriseResourceRequestBody:
         查询指定键值对
 
         :return: The matches of this ListEnterpriseResourceRequestBody.
-        :rtype: list[dict(str, str)]
+        :rtype: list[:class:`huaweicloudsdkfunctiongraph.v2.KvItem`]
         """
         return self._matches
 
@@ -182,7 +182,7 @@ class ListEnterpriseResourceRequestBody:
         查询指定键值对
 
         :param matches: The matches of this ListEnterpriseResourceRequestBody.
-        :type matches: list[dict(str, str)]
+        :type matches: list[:class:`huaweicloudsdkfunctiongraph.v2.KvItem`]
         """
         self._matches = matches
 

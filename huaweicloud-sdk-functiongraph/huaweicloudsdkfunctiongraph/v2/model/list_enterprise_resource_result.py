@@ -19,8 +19,8 @@ class ListEnterpriseResourceResult:
     openapi_types = {
         'resource_id': 'str',
         'resource_detail': 'ListFunctionResult',
-        'tags': 'list[dict(str, str)]',
-        'sys_tags': 'list[dict(str, str)]',
+        'tags': 'list[KvItem]',
+        'sys_tags': 'list[KvItem]',
         'resource_name': 'str'
     }
 
@@ -42,9 +42,9 @@ class ListEnterpriseResourceResult:
         :param resource_detail: 
         :type resource_detail: :class:`huaweicloudsdkfunctiongraph.v2.ListFunctionResult`
         :param tags: 标签列表
-        :type tags: list[dict(str, str)]
+        :type tags: list[:class:`huaweicloudsdkfunctiongraph.v2.KvItem`]
         :param sys_tags: 系统标签列表
-        :type sys_tags: list[dict(str, str)]
+        :type sys_tags: list[:class:`huaweicloudsdkfunctiongraph.v2.KvItem`]
         :param resource_name: 资源名称
         :type resource_name: str
         """
@@ -116,7 +116,7 @@ class ListEnterpriseResourceResult:
         标签列表
 
         :return: The tags of this ListEnterpriseResourceResult.
-        :rtype: list[dict(str, str)]
+        :rtype: list[:class:`huaweicloudsdkfunctiongraph.v2.KvItem`]
         """
         return self._tags
 
@@ -127,7 +127,7 @@ class ListEnterpriseResourceResult:
         标签列表
 
         :param tags: The tags of this ListEnterpriseResourceResult.
-        :type tags: list[dict(str, str)]
+        :type tags: list[:class:`huaweicloudsdkfunctiongraph.v2.KvItem`]
         """
         self._tags = tags
 
@@ -138,7 +138,7 @@ class ListEnterpriseResourceResult:
         系统标签列表
 
         :return: The sys_tags of this ListEnterpriseResourceResult.
-        :rtype: list[dict(str, str)]
+        :rtype: list[:class:`huaweicloudsdkfunctiongraph.v2.KvItem`]
         """
         return self._sys_tags
 
@@ -149,7 +149,7 @@ class ListEnterpriseResourceResult:
         系统标签列表
 
         :param sys_tags: The sys_tags of this ListEnterpriseResourceResult.
-        :type sys_tags: list[dict(str, str)]
+        :type sys_tags: list[:class:`huaweicloudsdkfunctiongraph.v2.KvItem`]
         """
         self._sys_tags = sys_tags
 

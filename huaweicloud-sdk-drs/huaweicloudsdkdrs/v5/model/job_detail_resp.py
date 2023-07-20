@@ -39,7 +39,10 @@ class JobDetailResp:
         'progress_info': 'JobProgressInfo',
         'migration_object_progress_info': 'QueryMigrationObjectProgressInfo',
         'metrics': 'QueryMetricResult',
-        'compare_result': 'CompareResultInfo'
+        'compare_result': 'CompareResultInfo',
+        'support_import_file_resp': 'SupportImportFileResult',
+        'instance_features': 'dict(str, str)',
+        'task_version': 'str'
     }
 
     attribute_map = {
@@ -65,10 +68,13 @@ class JobDetailResp:
         'progress_info': 'progress_info',
         'migration_object_progress_info': 'migration_object_progress_info',
         'metrics': 'metrics',
-        'compare_result': 'compare_result'
+        'compare_result': 'compare_result',
+        'support_import_file_resp': 'support_import_file_resp',
+        'instance_features': 'instance_features',
+        'task_version': 'task_version'
     }
 
-    def __init__(self, id=None, status=None, create_time=None, total_count=None, master_job_id=None, base_info=None, source_endpoint=None, target_endpoint=None, alarm_notify=None, speed_limit=None, user_migration=None, policy_config=None, db_param=None, tuning_params=None, period_order=None, node_info=None, logs=None, network_results=None, precheck_result=None, progress_info=None, migration_object_progress_info=None, metrics=None, compare_result=None):
+    def __init__(self, id=None, status=None, create_time=None, total_count=None, master_job_id=None, base_info=None, source_endpoint=None, target_endpoint=None, alarm_notify=None, speed_limit=None, user_migration=None, policy_config=None, db_param=None, tuning_params=None, period_order=None, node_info=None, logs=None, network_results=None, precheck_result=None, progress_info=None, migration_object_progress_info=None, metrics=None, compare_result=None, support_import_file_resp=None, instance_features=None, task_version=None):
         """JobDetailResp
 
         The model defined in huaweicloud sdk
@@ -91,7 +97,7 @@ class JobDetailResp:
         :type target_endpoint: list[:class:`huaweicloudsdkdrs.v5.JobEndpointInfo`]
         :param alarm_notify: 
         :type alarm_notify: :class:`huaweicloudsdkdrs.v5.AlarmNotifyConfig`
-        :param speed_limit: 限速信息体。 - 限速：自定义的最大迁移速度，迁移过程中的迁移速度将不会超过该速度。  - 不限速：对迁移速度不进行限制，通常会最大化使用源数据库的出口带宽。该流速模式同时会对源数据库造成读消耗，消耗取决于源数据库的出口带宽。比如：源数据库的出口带宽为100MB/s，假设高速模式使用了80%带宽，则迁移对源数据库将造成80MB/s的读操作IO消耗。
+        :param speed_limit: 限速信息体。 - 限速：自定义的最大迁移速度，迁移过程中的迁移速度将不会超过该速度。 - 不限速：对迁移速度不进行限制，通常会最大化使用源数据库的出口带宽。该流速模式同时会对源数据库造成读消耗，消耗取决于源数据库的出口带宽。比如：源数据库的出口带宽为100MB/s，假设高速模式使用了80%带宽，则迁移对源数据库将造成80MB/s的读操作IO消耗。
         :type speed_limit: list[:class:`huaweicloudsdkdrs.v5.SpeedLimitInfo`]
         :param user_migration: 
         :type user_migration: :class:`huaweicloudsdkdrs.v5.UserMigrationInfo`
@@ -119,6 +125,12 @@ class JobDetailResp:
         :type metrics: :class:`huaweicloudsdkdrs.v5.QueryMetricResult`
         :param compare_result: 
         :type compare_result: :class:`huaweicloudsdkdrs.v5.CompareResultInfo`
+        :param support_import_file_resp: 
+        :type support_import_file_resp: :class:`huaweicloudsdkdrs.v5.SupportImportFileResult`
+        :param instance_features: 由开关和版本共同控制的任务级别的功能列表。
+        :type instance_features: dict(str, str)
+        :param task_version: 任务版本。
+        :type task_version: str
         """
         
         
@@ -146,6 +158,9 @@ class JobDetailResp:
         self._migration_object_progress_info = None
         self._metrics = None
         self._compare_result = None
+        self._support_import_file_resp = None
+        self._instance_features = None
+        self._task_version = None
         self.discriminator = None
 
         if id is not None:
@@ -194,6 +209,12 @@ class JobDetailResp:
             self.metrics = metrics
         if compare_result is not None:
             self.compare_result = compare_result
+        if support_import_file_resp is not None:
+            self.support_import_file_resp = support_import_file_resp
+        if instance_features is not None:
+            self.instance_features = instance_features
+        if task_version is not None:
+            self.task_version = task_version
 
     @property
     def id(self):
@@ -389,7 +410,7 @@ class JobDetailResp:
     def speed_limit(self):
         """Gets the speed_limit of this JobDetailResp.
 
-        限速信息体。 - 限速：自定义的最大迁移速度，迁移过程中的迁移速度将不会超过该速度。  - 不限速：对迁移速度不进行限制，通常会最大化使用源数据库的出口带宽。该流速模式同时会对源数据库造成读消耗，消耗取决于源数据库的出口带宽。比如：源数据库的出口带宽为100MB/s，假设高速模式使用了80%带宽，则迁移对源数据库将造成80MB/s的读操作IO消耗。
+        限速信息体。 - 限速：自定义的最大迁移速度，迁移过程中的迁移速度将不会超过该速度。 - 不限速：对迁移速度不进行限制，通常会最大化使用源数据库的出口带宽。该流速模式同时会对源数据库造成读消耗，消耗取决于源数据库的出口带宽。比如：源数据库的出口带宽为100MB/s，假设高速模式使用了80%带宽，则迁移对源数据库将造成80MB/s的读操作IO消耗。
 
         :return: The speed_limit of this JobDetailResp.
         :rtype: list[:class:`huaweicloudsdkdrs.v5.SpeedLimitInfo`]
@@ -400,7 +421,7 @@ class JobDetailResp:
     def speed_limit(self, speed_limit):
         """Sets the speed_limit of this JobDetailResp.
 
-        限速信息体。 - 限速：自定义的最大迁移速度，迁移过程中的迁移速度将不会超过该速度。  - 不限速：对迁移速度不进行限制，通常会最大化使用源数据库的出口带宽。该流速模式同时会对源数据库造成读消耗，消耗取决于源数据库的出口带宽。比如：源数据库的出口带宽为100MB/s，假设高速模式使用了80%带宽，则迁移对源数据库将造成80MB/s的读操作IO消耗。
+        限速信息体。 - 限速：自定义的最大迁移速度，迁移过程中的迁移速度将不会超过该速度。 - 不限速：对迁移速度不进行限制，通常会最大化使用源数据库的出口带宽。该流速模式同时会对源数据库造成读消耗，消耗取决于源数据库的出口带宽。比如：源数据库的出口带宽为100MB/s，假设高速模式使用了80%带宽，则迁移对源数据库将造成80MB/s的读操作IO消耗。
 
         :param speed_limit: The speed_limit of this JobDetailResp.
         :type speed_limit: list[:class:`huaweicloudsdkdrs.v5.SpeedLimitInfo`]
@@ -648,6 +669,68 @@ class JobDetailResp:
         :type compare_result: :class:`huaweicloudsdkdrs.v5.CompareResultInfo`
         """
         self._compare_result = compare_result
+
+    @property
+    def support_import_file_resp(self):
+        """Gets the support_import_file_resp of this JobDetailResp.
+
+        :return: The support_import_file_resp of this JobDetailResp.
+        :rtype: :class:`huaweicloudsdkdrs.v5.SupportImportFileResult`
+        """
+        return self._support_import_file_resp
+
+    @support_import_file_resp.setter
+    def support_import_file_resp(self, support_import_file_resp):
+        """Sets the support_import_file_resp of this JobDetailResp.
+
+        :param support_import_file_resp: The support_import_file_resp of this JobDetailResp.
+        :type support_import_file_resp: :class:`huaweicloudsdkdrs.v5.SupportImportFileResult`
+        """
+        self._support_import_file_resp = support_import_file_resp
+
+    @property
+    def instance_features(self):
+        """Gets the instance_features of this JobDetailResp.
+
+        由开关和版本共同控制的任务级别的功能列表。
+
+        :return: The instance_features of this JobDetailResp.
+        :rtype: dict(str, str)
+        """
+        return self._instance_features
+
+    @instance_features.setter
+    def instance_features(self, instance_features):
+        """Sets the instance_features of this JobDetailResp.
+
+        由开关和版本共同控制的任务级别的功能列表。
+
+        :param instance_features: The instance_features of this JobDetailResp.
+        :type instance_features: dict(str, str)
+        """
+        self._instance_features = instance_features
+
+    @property
+    def task_version(self):
+        """Gets the task_version of this JobDetailResp.
+
+        任务版本。
+
+        :return: The task_version of this JobDetailResp.
+        :rtype: str
+        """
+        return self._task_version
+
+    @task_version.setter
+    def task_version(self, task_version):
+        """Sets the task_version of this JobDetailResp.
+
+        任务版本。
+
+        :param task_version: The task_version of this JobDetailResp.
+        :type task_version: str
+        """
+        self._task_version = task_version
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -9,6 +9,8 @@ from huaweicloudsdkcore.region.provider import RegionProviderChain
 class EvsRegion:
     _PROVIDER = RegionProviderChain.get_default_region_provider_chain("EVS")
 
+    EU_WEST_101 = Region("eu-west-101",
+                        "https://evs.eu-west-101.myhuaweicloud.eu")
     AF_SOUTH_1 = Region("af-south-1",
                         "https://evs.af-south-1.myhuaweicloud.com")
     CN_NORTH_4 = Region("cn-north-4",
@@ -45,8 +47,11 @@ class EvsRegion:
                         "https://evs.cn-north-9.myhuaweicloud.com")
     AP_SOUTHEAST_4 = Region("ap-southeast-4",
                         "https://evs.ap-southeast-4.myhuaweicloud.com")
+    TR_WEST_1 = Region("tr-west-1",
+                        "https://evs.tr-west-1.myhuaweicloud.com")
 
     static_fields = {
+        "eu-west-101": EU_WEST_101,
         "af-south-1": AF_SOUTH_1,
         "cn-north-4": CN_NORTH_4,
         "cn-north-1": CN_NORTH_1,
@@ -65,6 +70,7 @@ class EvsRegion:
         "na-mexico-1": NA_MEXICO_1,
         "cn-north-9": CN_NORTH_9,
         "ap-southeast-4": AP_SOUTHEAST_4,
+        "tr-west-1": TR_WEST_1,
     }
 
     @classmethod

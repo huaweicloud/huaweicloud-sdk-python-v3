@@ -9,6 +9,8 @@ from huaweicloudsdkcore.region.provider import RegionProviderChain
 class KmsRegion:
     _PROVIDER = RegionProviderChain.get_default_region_provider_chain("KMS")
 
+    EU_WEST_101 = Region("eu-west-101",
+                        "https://kms.eu-west-101.myhuaweicloud.eu")
     CN_NORTH_4 = Region("cn-north-4",
                         "https://kms.cn-north-4.myhuaweicloud.com")
     CN_NORTH_1 = Region("cn-north-1",
@@ -49,6 +51,7 @@ class KmsRegion:
                         "https://kms.tr-west-1.myhuaweicloud.com")
 
     static_fields = {
+        "eu-west-101": EU_WEST_101,
         "cn-north-4": CN_NORTH_4,
         "cn-north-1": CN_NORTH_1,
         "cn-north-2": CN_NORTH_2,

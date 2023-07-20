@@ -57,7 +57,7 @@ class ActionParams:
         :type compare_task_param: :class:`huaweicloudsdkdrs.v5.CompareTaskParams`
         :param is_sync_re_edit: 再编辑任务启动时取值true。
         :type is_sync_re_edit: bool
-        :param force_delete: 强制结束任务时取值true。
+        :param force_delete: 强制结束时取值为true。
         :type force_delete: bool
         """
         
@@ -240,7 +240,7 @@ class ActionParams:
     def force_delete(self):
         """Gets the force_delete of this ActionParams.
 
-        强制结束任务时取值true。
+        强制结束时取值为true。
 
         :return: The force_delete of this ActionParams.
         :rtype: bool
@@ -251,7 +251,7 @@ class ActionParams:
     def force_delete(self, force_delete):
         """Sets the force_delete of this ActionParams.
 
-        强制结束任务时取值true。
+        强制结束时取值为true。
 
         :param force_delete: The force_delete of this ActionParams.
         :type force_delete: bool

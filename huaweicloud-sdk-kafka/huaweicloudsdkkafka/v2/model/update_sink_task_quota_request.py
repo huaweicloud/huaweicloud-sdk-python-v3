@@ -31,7 +31,7 @@ class UpdateSinkTaskQuotaRequest:
 
         The model defined in huaweicloud sdk
 
-        :param connector_id: 实例转储ID。 请参考[实例生命周期][查询实例]接口返回的数据。
+        :param connector_id: 实例转储ID。  请参考[查询实例](ShowInstance.xml)返回的数据。
         :type connector_id: str
         :param body: Body of the UpdateSinkTaskQuotaRequest
         :type body: :class:`huaweicloudsdkkafka.v2.UpdateSinkTaskQuotaReq`
@@ -51,7 +51,7 @@ class UpdateSinkTaskQuotaRequest:
     def connector_id(self):
         """Gets the connector_id of this UpdateSinkTaskQuotaRequest.
 
-        实例转储ID。 请参考[实例生命周期][查询实例]接口返回的数据。
+        实例转储ID。  请参考[查询实例](ShowInstance.xml)返回的数据。
 
         :return: The connector_id of this UpdateSinkTaskQuotaRequest.
         :rtype: str
@@ -62,7 +62,7 @@ class UpdateSinkTaskQuotaRequest:
     def connector_id(self, connector_id):
         """Sets the connector_id of this UpdateSinkTaskQuotaRequest.
 
-        实例转储ID。 请参考[实例生命周期][查询实例]接口返回的数据。
+        实例转储ID。  请参考[查询实例](ShowInstance.xml)返回的数据。
 
         :param connector_id: The connector_id of this UpdateSinkTaskQuotaRequest.
         :type connector_id: str

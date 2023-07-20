@@ -9,6 +9,8 @@ from huaweicloudsdkcore.region.provider import RegionProviderChain
 class KafkaRegion:
     _PROVIDER = RegionProviderChain.get_default_region_provider_chain("KAFKA")
 
+    EU_WEST_101 = Region("eu-west-101",
+                        "https://dms.eu-west-101.myhuaweicloud.eu")
     CN_NORTH_1 = Region("cn-north-1",
                         "https://dms.cn-north-1.myhuaweicloud.com")
     CN_NORTH_2 = Region("cn-north-2",
@@ -51,6 +53,7 @@ class KafkaRegion:
                         "https://dms.tr-west-1.myhuaweicloud.com")
 
     static_fields = {
+        "eu-west-101": EU_WEST_101,
         "cn-north-1": CN_NORTH_1,
         "cn-north-2": CN_NORTH_2,
         "cn-north-4": CN_NORTH_4,

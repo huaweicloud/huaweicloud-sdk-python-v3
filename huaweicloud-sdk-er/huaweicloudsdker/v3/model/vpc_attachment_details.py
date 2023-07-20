@@ -61,7 +61,7 @@ class VpcAttachmentDetails:
         :type virsubnet_id: str
         :param auto_create_vpc_routes: 默认为false,当设置true时，会自动为VPC配置10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16三条路由，下一跳指向企业路由器。
         :type auto_create_vpc_routes: bool
-        :param state: VPC连接状态:pending|available|modifying|deleting|deleted|failed|initiating_request|rejected|pending_acceptance
+        :param state: VPC连接状态:pending|available|modifying|deleting|deleted|failed|initiating_request|rejected|pending_acceptance|freezed
         :type state: str
         :param created_at: 创建时间
         :type created_at: datetime
@@ -225,7 +225,7 @@ class VpcAttachmentDetails:
     def state(self):
         """Gets the state of this VpcAttachmentDetails.
 
-        VPC连接状态:pending|available|modifying|deleting|deleted|failed|initiating_request|rejected|pending_acceptance
+        VPC连接状态:pending|available|modifying|deleting|deleted|failed|initiating_request|rejected|pending_acceptance|freezed
 
         :return: The state of this VpcAttachmentDetails.
         :rtype: str
@@ -236,7 +236,7 @@ class VpcAttachmentDetails:
     def state(self, state):
         """Sets the state of this VpcAttachmentDetails.
 
-        VPC连接状态:pending|available|modifying|deleting|deleted|failed|initiating_request|rejected|pending_acceptance
+        VPC连接状态:pending|available|modifying|deleting|deleted|failed|initiating_request|rejected|pending_acceptance|freezed
 
         :param state: The state of this VpcAttachmentDetails.
         :type state: str

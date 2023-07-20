@@ -43,9 +43,9 @@ class JobEndpointInfo:
 
         The model defined in huaweicloud sdk
 
-        :param db_type: 数据库类型。取值：  - oracle：Oracle。 - gaussdbv5：GaussDB分布式版。
+        :param db_type: 数据库类型。取值： - oracle：Oracle。 - gaussdbv5：GaussDB分布式版。
         :type db_type: str
-        :param endpoint_type: 数据库实例类型。取值：  - offline：自建数据库。 - ecs：华为云ECS自建数据库。 - cloud：华为云数据库。
+        :param endpoint_type: 数据库实例类型。取值： - offline：自建数据库。 - ecs：华为云ECS自建数据库。 - cloud：华为云数据库。
         :type endpoint_type: str
         :param endpoint_role: 数据库实例角色。取值： - so：源库。 - ta：目标库。
         :type endpoint_role: str
@@ -90,7 +90,7 @@ class JobEndpointInfo:
     def db_type(self):
         """Gets the db_type of this JobEndpointInfo.
 
-        数据库类型。取值：  - oracle：Oracle。 - gaussdbv5：GaussDB分布式版。
+        数据库类型。取值： - oracle：Oracle。 - gaussdbv5：GaussDB分布式版。
 
         :return: The db_type of this JobEndpointInfo.
         :rtype: str
@@ -101,7 +101,7 @@ class JobEndpointInfo:
     def db_type(self, db_type):
         """Sets the db_type of this JobEndpointInfo.
 
-        数据库类型。取值：  - oracle：Oracle。 - gaussdbv5：GaussDB分布式版。
+        数据库类型。取值： - oracle：Oracle。 - gaussdbv5：GaussDB分布式版。
 
         :param db_type: The db_type of this JobEndpointInfo.
         :type db_type: str
@@ -112,7 +112,7 @@ class JobEndpointInfo:
     def endpoint_type(self):
         """Gets the endpoint_type of this JobEndpointInfo.
 
-        数据库实例类型。取值：  - offline：自建数据库。 - ecs：华为云ECS自建数据库。 - cloud：华为云数据库。
+        数据库实例类型。取值： - offline：自建数据库。 - ecs：华为云ECS自建数据库。 - cloud：华为云数据库。
 
         :return: The endpoint_type of this JobEndpointInfo.
         :rtype: str
@@ -123,7 +123,7 @@ class JobEndpointInfo:
     def endpoint_type(self, endpoint_type):
         """Sets the endpoint_type of this JobEndpointInfo.
 
-        数据库实例类型。取值：  - offline：自建数据库。 - ecs：华为云ECS自建数据库。 - cloud：华为云数据库。
+        数据库实例类型。取值： - offline：自建数据库。 - ecs：华为云ECS自建数据库。 - cloud：华为云数据库。
 
         :param endpoint_type: The endpoint_type of this JobEndpointInfo.
         :type endpoint_type: str

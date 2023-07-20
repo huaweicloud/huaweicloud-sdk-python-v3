@@ -9,6 +9,8 @@ from huaweicloudsdkcore.region.provider import RegionProviderChain
 class DdmRegion:
     _PROVIDER = RegionProviderChain.get_default_region_provider_chain("DDM")
 
+    EU_WEST_101 = Region("eu-west-101",
+                        "https://ddm.eu-west-101.myhuaweicloud.eu")
     CN_SOUTHWEST_2 = Region("cn-southwest-2",
                         "https://ddm.cn-southwest-2.myhuaweicloud.com")
     CN_SOUTH_2 = Region("cn-south-2",
@@ -33,6 +35,7 @@ class DdmRegion:
                         "https://ddm.la-south-2.myhuaweicloud.com")
 
     static_fields = {
+        "eu-west-101": EU_WEST_101,
         "cn-southwest-2": CN_SOUTHWEST_2,
         "cn-south-2": CN_SOUTH_2,
         "cn-north-4": CN_NORTH_4,

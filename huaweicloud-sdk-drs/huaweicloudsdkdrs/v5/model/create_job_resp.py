@@ -20,17 +20,19 @@ class CreateJobResp:
         'id': 'str',
         'name': 'str',
         'status': 'str',
-        'create_time': 'str'
+        'create_time': 'str',
+        'is_clone_job': 'str'
     }
 
     attribute_map = {
         'id': 'id',
         'name': 'name',
         'status': 'status',
-        'create_time': 'create_time'
+        'create_time': 'create_time',
+        'is_clone_job': 'is_clone_job'
     }
 
-    def __init__(self, id=None, name=None, status=None, create_time=None):
+    def __init__(self, id=None, name=None, status=None, create_time=None, is_clone_job=None):
         """CreateJobResp
 
         The model defined in huaweicloud sdk
@@ -43,6 +45,8 @@ class CreateJobResp:
         :type status: str
         :param create_time: 任务创建时间。
         :type create_time: str
+        :param is_clone_job: 是否为克隆任务。
+        :type is_clone_job: str
         """
         
         
@@ -51,12 +55,15 @@ class CreateJobResp:
         self._name = None
         self._status = None
         self._create_time = None
+        self._is_clone_job = None
         self.discriminator = None
 
         self.id = id
         self.name = name
         self.status = status
         self.create_time = create_time
+        if is_clone_job is not None:
+            self.is_clone_job = is_clone_job
 
     @property
     def id(self):
@@ -145,6 +152,28 @@ class CreateJobResp:
         :type create_time: str
         """
         self._create_time = create_time
+
+    @property
+    def is_clone_job(self):
+        """Gets the is_clone_job of this CreateJobResp.
+
+        是否为克隆任务。
+
+        :return: The is_clone_job of this CreateJobResp.
+        :rtype: str
+        """
+        return self._is_clone_job
+
+    @is_clone_job.setter
+    def is_clone_job(self, is_clone_job):
+        """Sets the is_clone_job of this CreateJobResp.
+
+        是否为克隆任务。
+
+        :param is_clone_job: The is_clone_job of this CreateJobResp.
+        :type is_clone_job: str
+        """
+        self._is_clone_job = is_clone_job
 
     def to_dict(self):
         """Returns the model properties as a dict"""

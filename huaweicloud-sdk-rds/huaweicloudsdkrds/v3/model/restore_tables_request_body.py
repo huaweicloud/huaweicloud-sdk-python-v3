@@ -18,15 +18,17 @@ class RestoreTablesRequestBody:
 
     openapi_types = {
         'restore_time': 'int',
-        'restore_tables': 'list[RestoreDatabasesInfo]'
+        'restore_tables': 'list[RestoreDatabasesInfo]',
+        'is_fast_restore': 'bool'
     }
 
     attribute_map = {
         'restore_time': 'restoreTime',
-        'restore_tables': 'restoreTables'
+        'restore_tables': 'restoreTables',
+        'is_fast_restore': 'is_fast_restore'
     }
 
-    def __init__(self, restore_time=None, restore_tables=None):
+    def __init__(self, restore_time=None, restore_tables=None, is_fast_restore=None):
         """RestoreTablesRequestBody
 
         The model defined in huaweicloud sdk
@@ -35,16 +37,21 @@ class RestoreTablesRequestBody:
         :type restore_time: int
         :param restore_tables: 表信息
         :type restore_tables: list[:class:`huaweicloudsdkrds.v3.RestoreDatabasesInfo`]
+        :param is_fast_restore: 是否使用极速恢复，可先根据”获取实例是否能使用极速恢复“接口判断本次恢复是否能使用急速恢复。 如果实例使用了XA事务，则不可使用极速恢复！使用恢复会导致恢复失败！
+        :type is_fast_restore: bool
         """
         
         
 
         self._restore_time = None
         self._restore_tables = None
+        self._is_fast_restore = None
         self.discriminator = None
 
         self.restore_time = restore_time
         self.restore_tables = restore_tables
+        if is_fast_restore is not None:
+            self.is_fast_restore = is_fast_restore
 
     @property
     def restore_time(self):
@@ -89,6 +96,28 @@ class RestoreTablesRequestBody:
         :type restore_tables: list[:class:`huaweicloudsdkrds.v3.RestoreDatabasesInfo`]
         """
         self._restore_tables = restore_tables
+
+    @property
+    def is_fast_restore(self):
+        """Gets the is_fast_restore of this RestoreTablesRequestBody.
+
+        是否使用极速恢复，可先根据”获取实例是否能使用极速恢复“接口判断本次恢复是否能使用急速恢复。 如果实例使用了XA事务，则不可使用极速恢复！使用恢复会导致恢复失败！
+
+        :return: The is_fast_restore of this RestoreTablesRequestBody.
+        :rtype: bool
+        """
+        return self._is_fast_restore
+
+    @is_fast_restore.setter
+    def is_fast_restore(self, is_fast_restore):
+        """Sets the is_fast_restore of this RestoreTablesRequestBody.
+
+        是否使用极速恢复，可先根据”获取实例是否能使用极速恢复“接口判断本次恢复是否能使用急速恢复。 如果实例使用了XA事务，则不可使用极速恢复！使用恢复会导致恢复失败！
+
+        :param is_fast_restore: The is_fast_restore of this RestoreTablesRequestBody.
+        :type is_fast_restore: bool
+        """
+        self._is_fast_restore = is_fast_restore
 
     def to_dict(self):
         """Returns the model properties as a dict"""

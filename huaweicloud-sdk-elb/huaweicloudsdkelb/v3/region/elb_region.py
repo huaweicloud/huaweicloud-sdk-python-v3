@@ -9,6 +9,8 @@ from huaweicloudsdkcore.region.provider import RegionProviderChain
 class ElbRegion:
     _PROVIDER = RegionProviderChain.get_default_region_provider_chain("ELB")
 
+    EU_WEST_101 = Region("eu-west-101",
+                        "https://elb.eu-west-101.myhuaweicloud.eu")
     AF_SOUTH_1 = Region("af-south-1",
                         "https://elb.af-south-1.myhuaweicloud.com")
     CN_NORTH_4 = Region("cn-north-4",
@@ -49,6 +51,7 @@ class ElbRegion:
                         "https://elb.tr-west-1.myhuaweicloud.com")
 
     static_fields = {
+        "eu-west-101": EU_WEST_101,
         "af-south-1": AF_SOUTH_1,
         "cn-north-4": CN_NORTH_4,
         "cn-north-1": CN_NORTH_1,
