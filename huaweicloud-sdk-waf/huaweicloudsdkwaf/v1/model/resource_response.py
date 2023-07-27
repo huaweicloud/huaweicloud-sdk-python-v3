@@ -45,7 +45,7 @@ class ResourceResponse:
         :type resource_id: str
         :param cloud_service_type: 云服务产品对应的云服务类型
         :type cloud_service_type: str
-        :param resource_type: 云服务产品的资源类型   - hws.resource.type.waf: 云模式waf   - hws.resource.type.waf.domain: 域名扩展包   - hws.resource.type.waf.bandwidth：带宽扩展包   - hws.resource.type.waf.rule：规则扩展包
+        :param resource_type: 云服务产品的资源类型   - hws.resource.type.waf.payperuserequest : Web应用防火墙按需请求   - hws.resource.type.waf.payperusedomain：Web应用防火墙按需域名   - hws.resource.type.waf.payperuserule: Web应用防火墙按需规则
         :type resource_type: str
         :param resource_spec_code: 云服务产品的资源规格
         :type resource_spec_code: str
@@ -131,7 +131,7 @@ class ResourceResponse:
     def resource_type(self):
         """Gets the resource_type of this ResourceResponse.
 
-        云服务产品的资源类型   - hws.resource.type.waf: 云模式waf   - hws.resource.type.waf.domain: 域名扩展包   - hws.resource.type.waf.bandwidth：带宽扩展包   - hws.resource.type.waf.rule：规则扩展包
+        云服务产品的资源类型   - hws.resource.type.waf.payperuserequest : Web应用防火墙按需请求   - hws.resource.type.waf.payperusedomain：Web应用防火墙按需域名   - hws.resource.type.waf.payperuserule: Web应用防火墙按需规则
 
         :return: The resource_type of this ResourceResponse.
         :rtype: str
@@ -142,7 +142,7 @@ class ResourceResponse:
     def resource_type(self, resource_type):
         """Sets the resource_type of this ResourceResponse.
 
-        云服务产品的资源类型   - hws.resource.type.waf: 云模式waf   - hws.resource.type.waf.domain: 域名扩展包   - hws.resource.type.waf.bandwidth：带宽扩展包   - hws.resource.type.waf.rule：规则扩展包
+        云服务产品的资源类型   - hws.resource.type.waf.payperuserequest : Web应用防火墙按需请求   - hws.resource.type.waf.payperusedomain：Web应用防火墙按需域名   - hws.resource.type.waf.payperuserule: Web应用防火墙按需规则
 
         :param resource_type: The resource_type of this ResourceResponse.
         :type resource_type: str

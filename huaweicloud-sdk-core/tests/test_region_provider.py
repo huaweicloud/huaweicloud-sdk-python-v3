@@ -20,7 +20,7 @@
 
 import stat
 
-from huaweicloudsdkcore.utils import path_utils
+from huaweicloudsdkcore.utils import filepath_utils
 from huaweicloudsdkcore.region.cache import EnvRegionCache, ProfileRegionCache
 from huaweicloudsdkcore.region.provider import EnvRegionProvider, ProfileRegionProvider, RegionProviderChain
 from huaweicloudsdkcore.region.region import Region
@@ -54,7 +54,7 @@ def test_env_region_provider():
 
 
 def test_profile_region_provider():
-    home_path = path_utils.get_home_path()
+    home_path = filepath_utils.get_home_path()
     if not home_path:
         home_path = os.path.abspath(os.curdir)
     filename = "test_regions.yaml"

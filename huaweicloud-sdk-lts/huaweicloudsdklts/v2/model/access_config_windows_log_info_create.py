@@ -48,9 +48,12 @@ class AccessConfigWindowsLogInfoCreate:
         self._event_level = None
         self.discriminator = None
 
-        self.categorys = categorys
-        self.time_offset = time_offset
-        self.event_level = event_level
+        if categorys is not None:
+            self.categorys = categorys
+        if time_offset is not None:
+            self.time_offset = time_offset
+        if event_level is not None:
+            self.event_level = event_level
 
     @property
     def categorys(self):

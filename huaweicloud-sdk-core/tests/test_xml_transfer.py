@@ -105,13 +105,13 @@ class TestXmlTransfer:
         with open(os.path.join(self.DATA_DIR, "xmls", "ListAllMyBucketsResult.xml"), "rb") as f:
             resp.content = f.read()
 
-        resp_model = client.deserialize(resp, "ListBucketsResponse")
+        resp_model = client.deserialize(resp, "ListBucketsResponse", None)
         assert mock_list_buckets_response() == resp_model
 
         with open(os.path.join(self.DATA_DIR, "xmls", "ListAllMyBucketsResult1.xml"), "rb") as f:
             resp.content = f.read()
 
-        resp_model1 = client.deserialize(resp, "ListBucketsResponse")
+        resp_model1 = client.deserialize(resp, "ListBucketsResponse", None)
         assert mock_list_buckets_response1() == resp_model1
 
 

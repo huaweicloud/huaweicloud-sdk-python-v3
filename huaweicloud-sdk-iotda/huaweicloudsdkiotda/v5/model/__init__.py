@@ -22,6 +22,9 @@ from huaweicloudsdkiotda.v5.model.add_product import AddProduct
 from huaweicloudsdkiotda.v5.model.add_queue_request import AddQueueRequest
 from huaweicloudsdkiotda.v5.model.add_queue_response import AddQueueResponse
 from huaweicloudsdkiotda.v5.model.add_rule_req import AddRuleReq
+from huaweicloudsdkiotda.v5.model.add_tunnel_dto import AddTunnelDto
+from huaweicloudsdkiotda.v5.model.add_tunnel_request import AddTunnelRequest
+from huaweicloudsdkiotda.v5.model.add_tunnel_response import AddTunnelResponse
 from huaweicloudsdkiotda.v5.model.amqp_forwarding import AmqpForwarding
 from huaweicloudsdkiotda.v5.model.application_dto import ApplicationDTO
 from huaweicloudsdkiotda.v5.model.async_device_command_request import AsyncDeviceCommandRequest
@@ -41,9 +44,12 @@ from huaweicloudsdkiotda.v5.model.change_rule_status_response import ChangeRuleS
 from huaweicloudsdkiotda.v5.model.channel_detail import ChannelDetail
 from huaweicloudsdkiotda.v5.model.check_certificate_request import CheckCertificateRequest
 from huaweicloudsdkiotda.v5.model.check_certificate_response import CheckCertificateResponse
+from huaweicloudsdkiotda.v5.model.close_device_tunnel_request import CloseDeviceTunnelRequest
+from huaweicloudsdkiotda.v5.model.close_device_tunnel_response import CloseDeviceTunnelResponse
 from huaweicloudsdkiotda.v5.model.cmd import Cmd
 from huaweicloudsdkiotda.v5.model.column_mapping import ColumnMapping
 from huaweicloudsdkiotda.v5.model.condition_group import ConditionGroup
+from huaweicloudsdkiotda.v5.model.connect_state import ConnectState
 from huaweicloudsdkiotda.v5.model.create_access_code_request import CreateAccessCodeRequest
 from huaweicloudsdkiotda.v5.model.create_access_code_request_body import CreateAccessCodeRequestBody
 from huaweicloudsdkiotda.v5.model.create_access_code_response import CreateAccessCodeResponse
@@ -83,6 +89,8 @@ from huaweicloudsdkiotda.v5.model.delete_device_group_request import DeleteDevic
 from huaweicloudsdkiotda.v5.model.delete_device_group_response import DeleteDeviceGroupResponse
 from huaweicloudsdkiotda.v5.model.delete_device_request import DeleteDeviceRequest
 from huaweicloudsdkiotda.v5.model.delete_device_response import DeleteDeviceResponse
+from huaweicloudsdkiotda.v5.model.delete_device_tunnel_request import DeleteDeviceTunnelRequest
+from huaweicloudsdkiotda.v5.model.delete_device_tunnel_response import DeleteDeviceTunnelResponse
 from huaweicloudsdkiotda.v5.model.delete_ota_package_request import DeleteOtaPackageRequest
 from huaweicloudsdkiotda.v5.model.delete_ota_package_response import DeleteOtaPackageResponse
 from huaweicloudsdkiotda.v5.model.delete_product_request import DeleteProductRequest
@@ -128,6 +136,8 @@ from huaweicloudsdkiotda.v5.model.list_device_groups_request import ListDeviceGr
 from huaweicloudsdkiotda.v5.model.list_device_groups_response import ListDeviceGroupsResponse
 from huaweicloudsdkiotda.v5.model.list_device_messages_request import ListDeviceMessagesRequest
 from huaweicloudsdkiotda.v5.model.list_device_messages_response import ListDeviceMessagesResponse
+from huaweicloudsdkiotda.v5.model.list_device_tunnels_request import ListDeviceTunnelsRequest
+from huaweicloudsdkiotda.v5.model.list_device_tunnels_response import ListDeviceTunnelsResponse
 from huaweicloudsdkiotda.v5.model.list_devices_request import ListDevicesRequest
 from huaweicloudsdkiotda.v5.model.list_devices_response import ListDevicesResponse
 from huaweicloudsdkiotda.v5.model.list_ota_package_info_request import ListOtaPackageInfoRequest
@@ -204,6 +214,8 @@ from huaweicloudsdkiotda.v5.model.show_device_request import ShowDeviceRequest
 from huaweicloudsdkiotda.v5.model.show_device_response import ShowDeviceResponse
 from huaweicloudsdkiotda.v5.model.show_device_shadow_request import ShowDeviceShadowRequest
 from huaweicloudsdkiotda.v5.model.show_device_shadow_response import ShowDeviceShadowResponse
+from huaweicloudsdkiotda.v5.model.show_device_tunnel_request import ShowDeviceTunnelRequest
+from huaweicloudsdkiotda.v5.model.show_device_tunnel_response import ShowDeviceTunnelResponse
 from huaweicloudsdkiotda.v5.model.show_devices_in_group_request import ShowDevicesInGroupRequest
 from huaweicloudsdkiotda.v5.model.show_devices_in_group_response import ShowDevicesInGroupResponse
 from huaweicloudsdkiotda.v5.model.show_ota_package_request import ShowOtaPackageRequest
@@ -231,6 +243,7 @@ from huaweicloudsdkiotda.v5.model.task_detail import TaskDetail
 from huaweicloudsdkiotda.v5.model.task_policy import TaskPolicy
 from huaweicloudsdkiotda.v5.model.task_progress import TaskProgress
 from huaweicloudsdkiotda.v5.model.time_range import TimeRange
+from huaweicloudsdkiotda.v5.model.tunnel_info import TunnelInfo
 from huaweicloudsdkiotda.v5.model.unbind_tags_dto import UnbindTagsDTO
 from huaweicloudsdkiotda.v5.model.unfreeze_device_request import UnfreezeDeviceRequest
 from huaweicloudsdkiotda.v5.model.unfreeze_device_response import UnfreezeDeviceResponse

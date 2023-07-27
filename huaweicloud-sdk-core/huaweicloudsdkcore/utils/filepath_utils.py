@@ -35,3 +35,18 @@ def is_path_exist(path):
     if not path:
         return False
     return os.path.exists(path)
+
+
+def ensure_file_in_rb_mode(_file):
+    if isinstance(_file, str):
+        if not os.path.isfile(_file):
+            raise ValueError("invalid file path: " + _file)
+        return open(_file, "rb")
+
+    if not hasattr(_file, "read") or not hasattr(_file, "mode"):
+        raise TypeError("invalid file type")
+
+    if _file.mode != "rb":
+        _file.close()
+        raise ValueError("invalid file mode, please open the file in 'rb' mode")
+    return _file

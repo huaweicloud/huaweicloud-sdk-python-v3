@@ -39,7 +39,7 @@ class GetAllRepositoryByProjectIdRequest:
         :type page_index: int
         :param page_size: 每页条目数
         :type page_size: int
-        :param project_uuid: 项目的uuid
+        :param project_uuid: 项目ID，获取方式请参见[获取项目ID](codehub_api_0014.xml)。
         :type project_uuid: str
         :param search: 搜索关键字
         :type search: str
@@ -109,7 +109,7 @@ class GetAllRepositoryByProjectIdRequest:
     def project_uuid(self):
         """Gets the project_uuid of this GetAllRepositoryByProjectIdRequest.
 
-        项目的uuid
+        项目ID，获取方式请参见[获取项目ID](codehub_api_0014.xml)。
 
         :return: The project_uuid of this GetAllRepositoryByProjectIdRequest.
         :rtype: str
@@ -120,7 +120,7 @@ class GetAllRepositoryByProjectIdRequest:
     def project_uuid(self, project_uuid):
         """Sets the project_uuid of this GetAllRepositoryByProjectIdRequest.
 
-        项目的uuid
+        项目ID，获取方式请参见[获取项目ID](codehub_api_0014.xml)。
 
         :param project_uuid: The project_uuid of this GetAllRepositoryByProjectIdRequest.
         :type project_uuid: str

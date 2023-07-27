@@ -18,58 +18,58 @@ class ListRegionsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'area_regions': 'list[AreaRegion]',
+        'regions': 'list[Region]',
         'request_id': 'str'
     }
 
     attribute_map = {
-        'area_regions': 'area_regions',
+        'regions': 'regions',
         'request_id': 'request_id'
     }
 
-    def __init__(self, area_regions=None, request_id=None):
+    def __init__(self, regions=None, request_id=None):
         """ListRegionsResponse
 
         The model defined in huaweicloud sdk
 
-        :param area_regions: 区域列表。
-        :type area_regions: list[:class:`huaweicloudsdkga.v1.AreaRegion`]
+        :param regions: 区域列表。
+        :type regions: list[:class:`huaweicloudsdkga.v1.Region`]
         :param request_id: 请求ID。
         :type request_id: str
         """
         
         super(ListRegionsResponse, self).__init__()
 
-        self._area_regions = None
+        self._regions = None
         self._request_id = None
         self.discriminator = None
 
-        if area_regions is not None:
-            self.area_regions = area_regions
+        if regions is not None:
+            self.regions = regions
         if request_id is not None:
             self.request_id = request_id
 
     @property
-    def area_regions(self):
-        """Gets the area_regions of this ListRegionsResponse.
+    def regions(self):
+        """Gets the regions of this ListRegionsResponse.
 
         区域列表。
 
-        :return: The area_regions of this ListRegionsResponse.
-        :rtype: list[:class:`huaweicloudsdkga.v1.AreaRegion`]
+        :return: The regions of this ListRegionsResponse.
+        :rtype: list[:class:`huaweicloudsdkga.v1.Region`]
         """
-        return self._area_regions
+        return self._regions
 
-    @area_regions.setter
-    def area_regions(self, area_regions):
-        """Sets the area_regions of this ListRegionsResponse.
+    @regions.setter
+    def regions(self, regions):
+        """Sets the regions of this ListRegionsResponse.
 
         区域列表。
 
-        :param area_regions: The area_regions of this ListRegionsResponse.
-        :type area_regions: list[:class:`huaweicloudsdkga.v1.AreaRegion`]
+        :param regions: The regions of this ListRegionsResponse.
+        :type regions: list[:class:`huaweicloudsdkga.v1.Region`]
         """
-        self._area_regions = area_regions
+        self._regions = regions
 
     @property
     def request_id(self):

@@ -51,7 +51,7 @@ class RepoInfo:
 
         :param create_at: 创建时间
         :type create_at: str
-        :param group_name: 仓库组名(克隆地址中域名后面项目名前的一段 示例：git@repo.alpha.devcloud.inhuawei.com:Demo00228/testword.git  组名：Demo00228)
+        :param group_name: 仓库组名(克隆地址中域名后面仓库名前的一段 示例：git@repo.alpha.devcloud.inhuawei.com:Demo00228/testword.git  组名：Demo00228)
         :type group_name: str
         :param http_url: https url
         :type http_url: str
@@ -59,7 +59,7 @@ class RepoInfo:
         :type id: str
         :param name: 仓库名
         :type name: str
-        :param project_id: 项目的uuid
+        :param project_id: 项目ID，获取方式请参见[获取项目ID](codehub_api_0014.xml)。
         :type project_id: str
         :param project_is_delete: 项目是否被删除
         :type project_is_delete: str
@@ -137,7 +137,7 @@ class RepoInfo:
     def group_name(self):
         """Gets the group_name of this RepoInfo.
 
-        仓库组名(克隆地址中域名后面项目名前的一段 示例：git@repo.alpha.devcloud.inhuawei.com:Demo00228/testword.git  组名：Demo00228)
+        仓库组名(克隆地址中域名后面仓库名前的一段 示例：git@repo.alpha.devcloud.inhuawei.com:Demo00228/testword.git  组名：Demo00228)
 
         :return: The group_name of this RepoInfo.
         :rtype: str
@@ -148,7 +148,7 @@ class RepoInfo:
     def group_name(self, group_name):
         """Sets the group_name of this RepoInfo.
 
-        仓库组名(克隆地址中域名后面项目名前的一段 示例：git@repo.alpha.devcloud.inhuawei.com:Demo00228/testword.git  组名：Demo00228)
+        仓库组名(克隆地址中域名后面仓库名前的一段 示例：git@repo.alpha.devcloud.inhuawei.com:Demo00228/testword.git  组名：Demo00228)
 
         :param group_name: The group_name of this RepoInfo.
         :type group_name: str
@@ -225,7 +225,7 @@ class RepoInfo:
     def project_id(self):
         """Gets the project_id of this RepoInfo.
 
-        项目的uuid
+        项目ID，获取方式请参见[获取项目ID](codehub_api_0014.xml)。
 
         :return: The project_id of this RepoInfo.
         :rtype: str
@@ -236,7 +236,7 @@ class RepoInfo:
     def project_id(self, project_id):
         """Sets the project_id of this RepoInfo.
 
-        项目的uuid
+        项目ID，获取方式请参见[获取项目ID](codehub_api_0014.xml)。
 
         :param project_id: The project_id of this RepoInfo.
         :type project_id: str

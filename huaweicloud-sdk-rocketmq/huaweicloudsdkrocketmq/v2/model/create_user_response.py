@@ -44,9 +44,9 @@ class CreateUserResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param access_key: 用户名。
+        :param access_key: 用户名，只能英文字母开头，且由英文字母、数字、中划线、下划线组成，长度为7~64个字符。
         :type access_key: str
-        :param secret_key: 密钥。
+        :param secret_key: 密钥。 8-32个字符。 至少包含以下字符中的3种：   - 大写字母   - 小写字母   - 数字   - 特殊字符&#x60;~!@#$%^&amp;*()-_&#x3D;+\\\\|[{}];:\\&#39;\\\&quot;,&lt;.&gt;/?密钥。 不能与名称或倒序的名称相同。
         :type secret_key: str
         :param white_remote_address: IP白名单。
         :type white_remote_address: str
@@ -95,7 +95,7 @@ class CreateUserResponse(SdkResponse):
     def access_key(self):
         """Gets the access_key of this CreateUserResponse.
 
-        用户名。
+        用户名，只能英文字母开头，且由英文字母、数字、中划线、下划线组成，长度为7~64个字符。
 
         :return: The access_key of this CreateUserResponse.
         :rtype: str
@@ -106,7 +106,7 @@ class CreateUserResponse(SdkResponse):
     def access_key(self, access_key):
         """Sets the access_key of this CreateUserResponse.
 
-        用户名。
+        用户名，只能英文字母开头，且由英文字母、数字、中划线、下划线组成，长度为7~64个字符。
 
         :param access_key: The access_key of this CreateUserResponse.
         :type access_key: str
@@ -117,7 +117,7 @@ class CreateUserResponse(SdkResponse):
     def secret_key(self):
         """Gets the secret_key of this CreateUserResponse.
 
-        密钥。
+        密钥。 8-32个字符。 至少包含以下字符中的3种：   - 大写字母   - 小写字母   - 数字   - 特殊字符`~!@#$%^&*()-_=+\\\\|[{}];:\\'\\\",<.>/?密钥。 不能与名称或倒序的名称相同。
 
         :return: The secret_key of this CreateUserResponse.
         :rtype: str
@@ -128,7 +128,7 @@ class CreateUserResponse(SdkResponse):
     def secret_key(self, secret_key):
         """Sets the secret_key of this CreateUserResponse.
 
-        密钥。
+        密钥。 8-32个字符。 至少包含以下字符中的3种：   - 大写字母   - 小写字母   - 数字   - 特殊字符`~!@#$%^&*()-_=+\\\\|[{}];:\\'\\\",<.>/?密钥。 不能与名称或倒序的名称相同。
 
         :param secret_key: The secret_key of this CreateUserResponse.
         :type secret_key: str

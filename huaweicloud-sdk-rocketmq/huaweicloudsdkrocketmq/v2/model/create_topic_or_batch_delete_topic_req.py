@@ -37,11 +37,11 @@ class CreateTopicOrBatchDeleteTopicReq:
 
         The model defined in huaweicloud sdk
 
-        :param name: 主题名称。
+        :param name: 主题名称，只能由英文字母、数字、百分号、竖线、中划线、下划线组成，长度3~64个字符。
         :type name: str
         :param brokers: 关联的代理。
         :type brokers: list[str]
-        :param queue_num: 队列数。
+        :param queue_num: 队列数，范围1~50。
         :type queue_num: float
         :param permission: 权限。
         :type permission: str
@@ -73,7 +73,7 @@ class CreateTopicOrBatchDeleteTopicReq:
     def name(self):
         """Gets the name of this CreateTopicOrBatchDeleteTopicReq.
 
-        主题名称。
+        主题名称，只能由英文字母、数字、百分号、竖线、中划线、下划线组成，长度3~64个字符。
 
         :return: The name of this CreateTopicOrBatchDeleteTopicReq.
         :rtype: str
@@ -84,7 +84,7 @@ class CreateTopicOrBatchDeleteTopicReq:
     def name(self, name):
         """Sets the name of this CreateTopicOrBatchDeleteTopicReq.
 
-        主题名称。
+        主题名称，只能由英文字母、数字、百分号、竖线、中划线、下划线组成，长度3~64个字符。
 
         :param name: The name of this CreateTopicOrBatchDeleteTopicReq.
         :type name: str
@@ -117,7 +117,7 @@ class CreateTopicOrBatchDeleteTopicReq:
     def queue_num(self):
         """Gets the queue_num of this CreateTopicOrBatchDeleteTopicReq.
 
-        队列数。
+        队列数，范围1~50。
 
         :return: The queue_num of this CreateTopicOrBatchDeleteTopicReq.
         :rtype: float
@@ -128,7 +128,7 @@ class CreateTopicOrBatchDeleteTopicReq:
     def queue_num(self, queue_num):
         """Sets the queue_num of this CreateTopicOrBatchDeleteTopicReq.
 
-        队列数。
+        队列数，范围1~50。
 
         :param queue_num: The queue_num of this CreateTopicOrBatchDeleteTopicReq.
         :type queue_num: float

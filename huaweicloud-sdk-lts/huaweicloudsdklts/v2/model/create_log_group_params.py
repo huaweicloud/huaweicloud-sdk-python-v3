@@ -18,15 +18,17 @@ class CreateLogGroupParams:
 
     openapi_types = {
         'log_group_name': 'str',
-        'ttl_in_days': 'int'
+        'ttl_in_days': 'int',
+        'tags': 'list[TagsBody]'
     }
 
     attribute_map = {
         'log_group_name': 'log_group_name',
-        'ttl_in_days': 'ttl_in_days'
+        'ttl_in_days': 'ttl_in_days',
+        'tags': 'tags'
     }
 
-    def __init__(self, log_group_name=None, ttl_in_days=None):
+    def __init__(self, log_group_name=None, ttl_in_days=None, tags=None):
         """CreateLogGroupParams
 
         The model defined in huaweicloud sdk
@@ -35,16 +37,21 @@ class CreateLogGroupParams:
         :type log_group_name: str
         :param ttl_in_days: 日志存储时间（天），取值范围：1-30。
         :type ttl_in_days: int
+        :param tags: 标签字段信息
+        :type tags: list[:class:`huaweicloudsdklts.v2.TagsBody`]
         """
         
         
 
         self._log_group_name = None
         self._ttl_in_days = None
+        self._tags = None
         self.discriminator = None
 
         self.log_group_name = log_group_name
         self.ttl_in_days = ttl_in_days
+        if tags is not None:
+            self.tags = tags
 
     @property
     def log_group_name(self):
@@ -89,6 +96,28 @@ class CreateLogGroupParams:
         :type ttl_in_days: int
         """
         self._ttl_in_days = ttl_in_days
+
+    @property
+    def tags(self):
+        """Gets the tags of this CreateLogGroupParams.
+
+        标签字段信息
+
+        :return: The tags of this CreateLogGroupParams.
+        :rtype: list[:class:`huaweicloudsdklts.v2.TagsBody`]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this CreateLogGroupParams.
+
+        标签字段信息
+
+        :param tags: The tags of this CreateLogGroupParams.
+        :type tags: list[:class:`huaweicloudsdklts.v2.TagsBody`]
+        """
+        self._tags = tags
 
     def to_dict(self):
         """Returns the model properties as a dict"""

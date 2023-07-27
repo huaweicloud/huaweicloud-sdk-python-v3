@@ -45,7 +45,7 @@ class ConsumerGroup:
         :type broadcast: bool
         :param brokers: 关联的代理列表。
         :type brokers: list[str]
-        :param name: 消费组名称。
+        :param name: 消费组名称，只能由英文字母、数字、百分号、竖线、中划线、下划线组成，长度3~64个字符。
         :type name: str
         :param retry_max_time: 最大重试次数。
         :type retry_max_time: float
@@ -146,7 +146,7 @@ class ConsumerGroup:
     def name(self):
         """Gets the name of this ConsumerGroup.
 
-        消费组名称。
+        消费组名称，只能由英文字母、数字、百分号、竖线、中划线、下划线组成，长度3~64个字符。
 
         :return: The name of this ConsumerGroup.
         :rtype: str
@@ -157,7 +157,7 @@ class ConsumerGroup:
     def name(self, name):
         """Sets the name of this ConsumerGroup.
 
-        消费组名称。
+        消费组名称，只能由英文字母、数字、百分号、竖线、中划线、下划线组成，长度3~64个字符。
 
         :param name: The name of this ConsumerGroup.
         :type name: str

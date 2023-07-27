@@ -36,7 +36,8 @@ class VulInfo:
         'hosts_num': 'VulnerabilityHostNumberInfo',
         'repair_success_num': 'int',
         'fixed_num': 'int',
-        'ignored_num': 'int'
+        'ignored_num': 'int',
+        'verify_num': 'int'
     }
 
     attribute_map = {
@@ -59,10 +60,11 @@ class VulInfo:
         'hosts_num': 'hosts_num',
         'repair_success_num': 'repair_success_num',
         'fixed_num': 'fixed_num',
-        'ignored_num': 'ignored_num'
+        'ignored_num': 'ignored_num',
+        'verify_num': 'verify_num'
     }
 
-    def __init__(self, vul_name=None, vul_id=None, label_list=None, repair_necessity=None, severity_level=None, host_num=None, unhandle_host_num=None, scan_time=None, solution_detail=None, url=None, description=None, type=None, host_id_list=None, cve_list=None, patch_url=None, repair_priority=None, hosts_num=None, repair_success_num=None, fixed_num=None, ignored_num=None):
+    def __init__(self, vul_name=None, vul_id=None, label_list=None, repair_necessity=None, severity_level=None, host_num=None, unhandle_host_num=None, scan_time=None, solution_detail=None, url=None, description=None, type=None, host_id_list=None, cve_list=None, patch_url=None, repair_priority=None, hosts_num=None, repair_success_num=None, fixed_num=None, ignored_num=None, verify_num=None):
         """VulInfo
 
         The model defined in huaweicloud sdk
@@ -107,6 +109,8 @@ class VulInfo:
         :type fixed_num: int
         :param ignored_num: 忽略数量
         :type ignored_num: int
+        :param verify_num: 验证数量
+        :type verify_num: int
         """
         
         
@@ -131,6 +135,7 @@ class VulInfo:
         self._repair_success_num = None
         self._fixed_num = None
         self._ignored_num = None
+        self._verify_num = None
         self.discriminator = None
 
         if vul_name is not None:
@@ -173,6 +178,8 @@ class VulInfo:
             self.fixed_num = fixed_num
         if ignored_num is not None:
             self.ignored_num = ignored_num
+        if verify_num is not None:
+            self.verify_num = verify_num
 
     @property
     def vul_name(self):
@@ -609,6 +616,28 @@ class VulInfo:
         :type ignored_num: int
         """
         self._ignored_num = ignored_num
+
+    @property
+    def verify_num(self):
+        """Gets the verify_num of this VulInfo.
+
+        验证数量
+
+        :return: The verify_num of this VulInfo.
+        :rtype: int
+        """
+        return self._verify_num
+
+    @verify_num.setter
+    def verify_num(self, verify_num):
+        """Sets the verify_num of this VulInfo.
+
+        验证数量
+
+        :param verify_num: The verify_num of this VulInfo.
+        :type verify_num: int
+        """
+        self._verify_num = verify_num
 
     def to_dict(self):
         """Returns the model properties as a dict"""

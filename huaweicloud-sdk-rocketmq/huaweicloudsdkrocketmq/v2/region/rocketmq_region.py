@@ -39,6 +39,10 @@ class RocketMQRegion:
                         "https://dms.ru-northwest-2.myhuaweicloud.com")
     CN_NORTH_9 = Region("cn-north-9",
                         "https://dms.cn-north-9.myhuaweicloud.com")
+    LA_SOUTH_2 = Region("la-south-2",
+                        "https://dms.la-south-2.myhuaweicloud.com")
+    LA_NORTH_2 = Region("la-north-2",
+                        "https://dms.la-north-2.myhuaweicloud.com")
     AP_SOUTHEAST_4 = Region("ap-southeast-4",
                         "https://dms.ap-southeast-4.myhuaweicloud.com")
     TR_WEST_1 = Region("tr-west-1",
@@ -60,6 +64,8 @@ class RocketMQRegion:
         "af-south-1": AF_SOUTH_1,
         "ru-northwest-2": RU_NORTHWEST_2,
         "cn-north-9": CN_NORTH_9,
+        "la-south-2": LA_SOUTH_2,
+        "la-north-2": LA_NORTH_2,
         "ap-southeast-4": AP_SOUTHEAST_4,
         "tr-west-1": TR_WEST_1,
     }

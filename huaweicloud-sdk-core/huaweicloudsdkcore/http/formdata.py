@@ -17,9 +17,9 @@
  specific language governing permissions and limitations
  under the LICENSE.
 """
-
 import os
 from mimetypes import MimeTypes
+from huaweicloudsdkcore.utils.filepath_utils import ensure_file_in_rb_mode
 
 
 class FormFile(object):
@@ -33,23 +33,8 @@ class FormFile(object):
         :param content_type: the content type of the file
         :type content_type: str
         """
-        self._file = self._ensure_file_in_rb_mode(f)
+        self._file = ensure_file_in_rb_mode(f)
         self._content_type = content_type
-
-    @classmethod
-    def _ensure_file_in_rb_mode(cls, _file):
-        if isinstance(_file, str):
-            if not os.path.isfile(_file):
-                raise ValueError("invalid file path: " + _file)
-            return open(_file, "rb")
-
-        if not hasattr(_file, "read") or not hasattr(_file, "mode"):
-            raise TypeError("invalid file type")
-
-        if _file.mode != "rb":
-            _file.close()
-            raise ValueError("invalid file mode, please open the file in 'rb' mode")
-        return _file
 
     def close(self):
         if hasattr(self._file, "closed") and not self._file.closed:

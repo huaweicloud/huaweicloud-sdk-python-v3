@@ -984,6 +984,65 @@ class GaussDBforopenGaussAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def download_backup_async(self, request):
+        """获取备份下载链接
+
+        获取备份下载链接。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DownloadBackup
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.DownloadBackupRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.DownloadBackupResponse`
+        """
+        return self._download_backup_with_http_info(request)
+
+    def _download_backup_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'backup_id' in local_var_params:
+            query_params.append(('backup_id', local_var_params['backup_id']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/backup-files',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DownloadBackupResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_applicable_instances_async(self, request):
         """查询可应用实例列表
 

@@ -5,7 +5,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class AreaRegion:
+class NameAndIdVo:
 
     """
     Attributes:
@@ -17,80 +17,80 @@ class AreaRegion:
     sensitive_list = []
 
     openapi_types = {
-        'area': 'str',
-        'regions': 'list[str]'
+        'id': 'str',
+        'name': 'str'
     }
 
     attribute_map = {
-        'area': 'area',
-        'regions': 'regions'
+        'id': 'id',
+        'name': 'name'
     }
 
-    def __init__(self, area=None, regions=None):
-        """AreaRegion
+    def __init__(self, id=None, name=None):
+        """NameAndIdVo
 
         The model defined in huaweicloud sdk
 
-        :param area: 区域所属地区，取值： - OUTOFCM： 中国大陆以外 - CM：中国大陆
-        :type area: str
-        :param regions: 区域ID列表。
-        :type regions: list[str]
+        :param id: ID
+        :type id: str
+        :param name: 名称
+        :type name: str
         """
         
         
 
-        self._area = None
-        self._regions = None
+        self._id = None
+        self._name = None
         self.discriminator = None
 
-        if area is not None:
-            self.area = area
-        if regions is not None:
-            self.regions = regions
+        if id is not None:
+            self.id = id
+        if name is not None:
+            self.name = name
 
     @property
-    def area(self):
-        """Gets the area of this AreaRegion.
+    def id(self):
+        """Gets the id of this NameAndIdVo.
 
-        区域所属地区，取值： - OUTOFCM： 中国大陆以外 - CM：中国大陆
+        ID
 
-        :return: The area of this AreaRegion.
+        :return: The id of this NameAndIdVo.
         :rtype: str
         """
-        return self._area
+        return self._id
 
-    @area.setter
-    def area(self, area):
-        """Sets the area of this AreaRegion.
+    @id.setter
+    def id(self, id):
+        """Sets the id of this NameAndIdVo.
 
-        区域所属地区，取值： - OUTOFCM： 中国大陆以外 - CM：中国大陆
+        ID
 
-        :param area: The area of this AreaRegion.
-        :type area: str
+        :param id: The id of this NameAndIdVo.
+        :type id: str
         """
-        self._area = area
+        self._id = id
 
     @property
-    def regions(self):
-        """Gets the regions of this AreaRegion.
+    def name(self):
+        """Gets the name of this NameAndIdVo.
 
-        区域ID列表。
+        名称
 
-        :return: The regions of this AreaRegion.
-        :rtype: list[str]
+        :return: The name of this NameAndIdVo.
+        :rtype: str
         """
-        return self._regions
+        return self._name
 
-    @regions.setter
-    def regions(self, regions):
-        """Sets the regions of this AreaRegion.
+    @name.setter
+    def name(self, name):
+        """Sets the name of this NameAndIdVo.
 
-        区域ID列表。
+        名称
 
-        :param regions: The regions of this AreaRegion.
-        :type regions: list[str]
+        :param name: The name of this NameAndIdVo.
+        :type name: str
         """
-        self._regions = regions
+        self._name = name
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -134,7 +134,7 @@ class AreaRegion:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, AreaRegion):
+        if not isinstance(other, NameAndIdVo):
             return False
 
         return self.__dict__ == other.__dict__

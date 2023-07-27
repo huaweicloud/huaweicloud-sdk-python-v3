@@ -43,7 +43,7 @@ class ListCompositeHostsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_project_id: 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
+        :param enterprise_project_id: 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。默认值为0，表示默认企业项目。  缺省值：0
         :type enterprise_project_id: str
         :param page: 分页查询时，返回第几页数据。默认值为1，表示返回第1页数据。
         :type page: int
@@ -94,7 +94,7 @@ class ListCompositeHostsRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListCompositeHostsRequest.
 
-        您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
+        您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。默认值为0，表示默认企业项目。  缺省值：0
 
         :return: The enterprise_project_id of this ListCompositeHostsRequest.
         :rtype: str
@@ -105,7 +105,7 @@ class ListCompositeHostsRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListCompositeHostsRequest.
 
-        您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
+        您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。默认值为0，表示默认企业项目。  缺省值：0
 
         :param enterprise_project_id: The enterprise_project_id of this ListCompositeHostsRequest.
         :type enterprise_project_id: str

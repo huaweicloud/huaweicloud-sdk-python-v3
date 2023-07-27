@@ -11,7 +11,6 @@ from huaweicloudsdkga.v1.model.add_ip_group_ip_request import AddIpGroupIpReques
 from huaweicloudsdkga.v1.model.add_ip_group_ip_request_body import AddIpGroupIpRequestBody
 from huaweicloudsdkga.v1.model.add_ip_group_ip_response import AddIpGroupIpResponse
 from huaweicloudsdkga.v1.model.area import Area
-from huaweicloudsdkga.v1.model.area_region import AreaRegion
 from huaweicloudsdkga.v1.model.associate_listener_request import AssociateListenerRequest
 from huaweicloudsdkga.v1.model.associate_listener_request_body import AssociateListenerRequestBody
 from huaweicloudsdkga.v1.model.associate_listener_response import AssociateListenerResponse
@@ -94,6 +93,7 @@ from huaweicloudsdkga.v1.model.listener_detail import ListenerDetail
 from huaweicloudsdkga.v1.model.listener_protocol import ListenerProtocol
 from huaweicloudsdkga.v1.model.page_info import PageInfo
 from huaweicloudsdkga.v1.model.port_range import PortRange
+from huaweicloudsdkga.v1.model.region import Region
 from huaweicloudsdkga.v1.model.remove_ip_group_ip_request import RemoveIpGroupIpRequest
 from huaweicloudsdkga.v1.model.remove_ip_group_ip_request_body import RemoveIpGroupIpRequestBody
 from huaweicloudsdkga.v1.model.remove_ip_group_ip_response import RemoveIpGroupIpResponse

@@ -1,3 +1,363 @@
+# 3.1.50 2023-07-27
+
+### HuaweiCloud SDK Cloudtest
+
+- _Features_
+  - Support the interfaces `ListTestCases`, `ListTestCaseHistories`, `ListBranches`, `ShowApiTestcaseHistories`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowPlans**
+    - changes of response param
+      - `* expire_day: string -> int32`
+  - **ShowPlanList**
+    - changes of response param
+      - `* expire_day: string -> int32`
+
+### HuaweiCloud SDK CodeHub
+
+- _Features_
+  - Support the interfaces `CreateMergeRequestDiscussion`, `CreateMergeRequestDiscussionNote`, `ShowReviewSetting`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK DRS
+
+- _Features_
+  - Support the following interfaces：
+    - `DownloadBatchCreateTemplate`
+    - `ImportBatchCreateJobs`
+    - `CopyJob`
+    - `ShowMetering`
+    - `ShowDirtyData`
+    - `ShowComparePolicy`
+    - `ShowHealthCompareJobList`
+    - `ShowProgressData`
+    - `ShowObjectMapping`
+    - `ShowActions`
+    - `ValidateJobName`
+    - `ShowEnterpriseProject`
+- _Bug Fix_
+  - None
+- _Change_
+  - **DownloadDbObjectTemplate**
+    - changes of request param
+      - `+ file_import_db_level`
+  - **UploadDbObjectTemplate**
+    - changes of request param
+      - `+ file_import_db_level`
+  - **ListAsyncJobs**
+    - changes of response param
+      - `+ jobs.status: enum value [AUTO_PARAM_VALIDATE_SUCCESS,COMMIT_SUCCESS]`
+      - `- jobs.status: enum value [ASYNC_JOB_CREATING,ASYNC_JOB_CREATE_FAILED,ASYNC_JOB_COMPLETED]`
+  - **CreateJob**
+    - changes of request param
+      - `+ job.node_info.base_info`
+    - changes of response param
+      - `+ is_clone_job`
+      - `+ create_time`
+      - `+ name`
+      - `+ id`
+      - `+ status`
+      - `+ job.is_clone_job`
+  - **BatchCreateJobsAsync**
+    - changes of request param
+      - `+ jobs.node_info.base_info`
+  - **ListAsyncJobDetail**
+    - changes of response param
+      - `+ jobs.support_import_file_resp`
+      - `+ jobs.instance_features`
+      - `+ jobs.task_version`
+      - `+ jobs.node_info.base_info`
+  - **UpdateBatchAsyncJobs**
+    - changes of request param
+      - `+ jobs.type: enum value [policy]`
+      - `- jobs.type: enum value [policy_config]`
+      - `+ jobs.params.node_info.base_info`
+  - **ShowJobDetail**
+    - changes of request param
+      - `+ type: enum value [file]`
+    - changes of response param
+      - `+ job.support_import_file_resp`
+      - `+ job.instance_features`
+      - `+ job.task_version`
+      - `+ job.node_info.base_info`
+  - **UpdateJob**
+    - changes of request param
+      - `+ job.type: enum value [policy]`
+      - `- job.type: enum value [policy_config]`
+      - `+ job.params.node_info.base_info`
+
+### HuaweiCloud SDK EIP
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **AttachShareBandwidth**
+    - changes of response param
+      - `+ publicip.vnic.vtep`
+      - `+ publicip.vnic.vni`
+      - `+ publicip.vnic.port_profile`
+  - **DetachShareBandwidth**
+    - changes of response param
+      - `+ publicip.vnic.vtep`
+      - `+ publicip.vnic.vni`
+      - `+ publicip.vnic.port_profile`
+  - **EnableNat64**
+    - changes of response param
+      - `+ publicip.vnic.vtep`
+      - `+ publicip.vnic.vni`
+      - `+ publicip.vnic.port_profile`
+  - **DisableNat64**
+    - changes of response param
+      - `+ publicip.vnic.vtep`
+      - `+ publicip.vnic.vni`
+      - `+ publicip.vnic.port_profile`
+  - **AttachBatchPublicIp**
+    - changes of response param
+      - `+ publicips.publicip.vnic.vtep`
+      - `+ publicips.publicip.vnic.vni`
+      - `+ publicips.publicip.vnic.port_profile`
+  - **DetachBatchPublicIp**
+    - changes of response param
+      - `+ publicips.publicip.vnic.vtep`
+      - `+ publicips.publicip.vnic.vni`
+      - `+ publicips.publicip.vnic.port_profile`
+
+### HuaweiCloud SDK ER
+
+- _Features_
+  - Support the following interfaces：
+    - `BatchCreateResourceTags`
+    - `ShowQuotas`
+    - `ListFlowLogs`
+    - `CreateFlowLog`
+    - `ShowFlowLog`
+    - `UpdateFlowLog`
+    - `DeleteFlowLog`
+    - `EnableFlowLog`
+    - `DisableFlowLog`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListProjectTags**
+    - changes of request param
+      - `+ resource_type: enum value [ecn-attachment,connect-attachment,cfw-attachment]`
+    - changes of response param
+      - `+ tags`
+  - **DeleteResourceTag**
+    - changes of request param
+      - `+ resource_type: enum value [ecn-attachment,connect-attachment,cfw-attachment]`
+  - **ShowResourceTag**
+    - changes of request param
+      - `+ resource_type: enum value [ecn-attachment,connect-attachment,cfw-attachment]`
+    - changes of response param
+      - `+ tags`
+  - **CreateResourceTag**
+    - changes of request param
+      - `+ resource_type: enum value [ecn-attachment,connect-attachment,cfw-attachment]`
+  - **ListEnterpriseRouters**
+    - changes of request param
+      - `+ owned_by_self`
+  - **ShowStaticRoute**
+    - changes of response param
+      - `+ route.attachments.priority`
+  - **UpdateStaticRoute**
+    - changes of response param
+      - `+ route.attachments.priority`
+  - **ListStaticRoutes**
+    - changes of response param
+      - `+ routes.attachments.priority`
+  - **CreateStaticRoute**
+    - changes of response param
+      - `+ route.attachments.priority`
+  - **ListEffectiveRoutes**
+    - changes of response param
+      - `+ routes.address_group_id`
+      - `+ routes.next_hops.priority`
+
+### HuaweiCloud SDK FunctionGraph
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateTags**
+    - changes of request param
+      - `+ tags.key`
+      - `+ tags.value`
+      - `* tags: list<Kv> -> list<KvItem>`
+  - **DeleteTags**
+    - changes of request param
+      - `+ tags.key`
+      - `+ tags.value`
+      - `* tags: list<Kv> -> list<KvItem>`
+  - **ShowResInstanceInfo**
+    - changes of request param
+      - `+ matches.key`
+      - `+ matches.value`
+      - `* matches: list<Kv> -> list<KvItem>`
+    - changes of response param
+      - `+ resources.tags.key`
+      - `+ resources.tags.value`
+      - `* resources.tags: list<Kv> -> list<KvItem>`
+
+### HuaweiCloud SDK GA
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListRegions**
+    - changes of response param
+      - `+ regions`
+      - `- area_regions`
+
+### HuaweiCloud SDK GaussDBforNoSQL
+
+- _Features_
+  - Support the interface `ShowInstanceBiactiveRegions`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListConfigurations**
+    - changes of response param
+      - `+ quota`
+      - `+ configurations.mode`
+  - **ListConfigurationTemplates**
+    - changes of response param
+      - `+ quota`
+      - `+ configurations.mode`
+  - **ShowInstanceConfiguration**
+    - changes of response param
+      - `+ mode`
+      - `+ id`
+  - **ListConfigurationDatastores**
+    - changes of response param
+      - `+ datastores.mode`
+  - **ShowQuotas**
+    - changes of request param
+      - `+ datastore_type`
+      - `+ mode`
+  - **ListInstances**
+    - changes of response param
+      - `+ instances.datastore.whole_version`
+
+### HuaweiCloud SDK GaussDBforopenGauss
+
+- _Features_
+  - Support the interface `DownloadBackup`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK HSS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListPorts**
+    - changes of request param
+      - `* host_id: optional -> required`
+  - **ListVulnerabilities**
+    - changes of response param
+      - `+ data_list.verify_num`
+
+### HuaweiCloud SDK IoTDA
+
+- _Features_
+  - Support the following interfaces：
+    - `ListDeviceTunnels`
+    - `AddTunnel`
+    - `ShowDeviceTunnel`
+    - `CloseDeviceTunnel`
+    - `DeleteDeviceTunnel`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK Kafka
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateInstanceByEngine**
+    - changes of request param
+      - `+ disk_encrypted_enable`
+      - `+ disk_encrypted_key`
+
+### HuaweiCloud SDK LTS
+
+- _Features_
+  - Support the interface `UpdateLogStream`
+- _Bug Fix_
+  - None
+- _Change_
+  - **UpdateLogGroup**
+    - changes of request param
+      - `+ tags`
+  - **CreateLogGroup**
+    - changes of request param
+      - `+ tags`
+  - **CreateLogStream**
+    - changes of request param
+      - `+ enterprise_project_name`
+      - `+ ttl_in_days`
+      - `+ tags`
+      - `+ log_stream_name: enum value [lts-stream-13ci]`
+
+### HuaweiCloud SDK RabbitMQ
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowInstanceExtendProductInfo**
+    - changes of response param
+      - `+ monthly`
+      - `+ hourly`
+      - `- engine`
+      - `- versions`
+      - `- products`
+
+### HuaweiCloud SDK RocketMQ
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ValidateConsumedMessage**
+    - changes of request param
+      - `+ engine: enum value [reliability]`
+  - **ListInstances**
+    - changes of request param
+      - `+ engine: enum value [reliability]`
+
+### HuaweiCloud SDK SMS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowConfigSetting**
+    - changes of response param
+      - `* configurations: string -> list<ConfigBody>`
+
 # 3.1.49 2023-07-20
 
 ### HuaweiCloud SDK CloudRTC

@@ -1381,9 +1381,9 @@ class HssClient(Client):
             request_type=request.__class__.__name__)
 
     def list_jar_package_host_info(self, request):
-        """资产管理-资产指纹-Jar包的服务器列表
+        """查询指定中间件的服务器列表
 
-        资产管理-资产指纹-Jar包的服务器列表
+        查询指定中间件的服务器列表，通过传入中间件名称参数，返回对应的中间件服务器列表
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1707,9 +1707,9 @@ class HssClient(Client):
             request_type=request.__class__.__name__)
 
     def list_ports(self, request):
-        """查询开放端口的服务器列表
+        """查询单服务器的开放端口列表
 
-        查询开放端口的服务器列表
+        查询单服务器的开放端口列表
         
         Please refer to HUAWEI cloud API Explorer for details.
 

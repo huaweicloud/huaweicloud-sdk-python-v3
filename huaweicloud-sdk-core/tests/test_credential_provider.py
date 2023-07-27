@@ -24,7 +24,7 @@ import stat
 import pytest
 
 from huaweicloudsdkcore.auth import provider
-from huaweicloudsdkcore.utils import path_utils
+from huaweicloudsdkcore.utils import filepath_utils
 from huaweicloudsdkcore.auth.credentials import BasicCredentials, GlobalCredentials
 from huaweicloudsdkcore.exceptions.exceptions import ApiValueError
 
@@ -59,7 +59,7 @@ def _clear_envs():
 
 
 def _get_credentials_file_dir():
-    home_path = path_utils.get_home_path()
+    home_path = filepath_utils.get_home_path()
     if home_path:
         return home_path
     return os.path.abspath(os.curdir)

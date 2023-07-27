@@ -20,7 +20,7 @@ class ShowConfigSettingResponse(SdkResponse):
     openapi_types = {
         'task_id': 'str',
         'migrate_type': 'str',
-        'configurations': 'str'
+        'configurations': 'list[ConfigBody]'
     }
 
     attribute_map = {
@@ -39,7 +39,7 @@ class ShowConfigSettingResponse(SdkResponse):
         :param migrate_type: 迁移类型
         :type migrate_type: str
         :param configurations: 配置项的具体配置信息
-        :type configurations: str
+        :type configurations: list[:class:`huaweicloudsdksms.v3.ConfigBody`]
         """
         
         super(ShowConfigSettingResponse, self).__init__()
@@ -107,7 +107,7 @@ class ShowConfigSettingResponse(SdkResponse):
         配置项的具体配置信息
 
         :return: The configurations of this ShowConfigSettingResponse.
-        :rtype: str
+        :rtype: list[:class:`huaweicloudsdksms.v3.ConfigBody`]
         """
         return self._configurations
 
@@ -118,7 +118,7 @@ class ShowConfigSettingResponse(SdkResponse):
         配置项的具体配置信息
 
         :param configurations: The configurations of this ShowConfigSettingResponse.
-        :type configurations: str
+        :type configurations: list[:class:`huaweicloudsdksms.v3.ConfigBody`]
         """
         self._configurations = configurations
 

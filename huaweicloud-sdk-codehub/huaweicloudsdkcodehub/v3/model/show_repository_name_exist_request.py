@@ -31,7 +31,7 @@ class ShowRepositoryNameExistRequest:
 
         The model defined in huaweicloud sdk
 
-        :param project_uuid: 项目的uuid
+        :param project_uuid: 项目ID，获取方式请参见[获取项目ID](codehub_api_0014.xml)。
         :type project_uuid: str
         :param repository_name: 仓库名
         :type repository_name: str
@@ -50,7 +50,7 @@ class ShowRepositoryNameExistRequest:
     def project_uuid(self):
         """Gets the project_uuid of this ShowRepositoryNameExistRequest.
 
-        项目的uuid
+        项目ID，获取方式请参见[获取项目ID](codehub_api_0014.xml)。
 
         :return: The project_uuid of this ShowRepositoryNameExistRequest.
         :rtype: str
@@ -61,7 +61,7 @@ class ShowRepositoryNameExistRequest:
     def project_uuid(self, project_uuid):
         """Sets the project_uuid of this ShowRepositoryNameExistRequest.
 
-        项目的uuid
+        项目ID，获取方式请参见[获取项目ID](codehub_api_0014.xml)。
 
         :param project_uuid: The project_uuid of this ShowRepositoryNameExistRequest.
         :type project_uuid: str

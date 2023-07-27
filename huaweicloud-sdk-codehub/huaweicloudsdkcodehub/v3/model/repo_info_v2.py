@@ -75,7 +75,7 @@ class RepoInfoV2:
         :type creator_name: str
         :param domain_name: 创建者的租户名
         :type domain_name: str
-        :param group_name: 仓库组名(克隆地址中域名后面项目名前的一段 示例：git@repo.alpha.devcloud.inhuawei.com:Demo00228/testword.git  组名：Demo00228 )
+        :param group_name: 仓库组名(克隆地址中域名后面仓库名前的一段 示例：git@repo.alpha.devcloud.inhuawei.com:Demo00228/testword.git  组名：Demo00228 )
         :type group_name: str
         :param https_url: 使用 https 克隆仓库时所使用的 url
         :type https_url: str
@@ -87,7 +87,7 @@ class RepoInfoV2:
         :type lfs_size: str
         :param project_is_deleted: 项目是否被删除
         :type project_is_deleted: str
-        :param project_uuid: 项目的uuid
+        :param project_uuid: 项目ID，获取方式请参见[获取项目ID](codehub_api_0014.xml)。
         :type project_uuid: str
         :param repository_id: 仓库主键id
         :type repository_id: int
@@ -251,7 +251,7 @@ class RepoInfoV2:
     def group_name(self):
         """Gets the group_name of this RepoInfoV2.
 
-        仓库组名(克隆地址中域名后面项目名前的一段 示例：git@repo.alpha.devcloud.inhuawei.com:Demo00228/testword.git  组名：Demo00228 )
+        仓库组名(克隆地址中域名后面仓库名前的一段 示例：git@repo.alpha.devcloud.inhuawei.com:Demo00228/testword.git  组名：Demo00228 )
 
         :return: The group_name of this RepoInfoV2.
         :rtype: str
@@ -262,7 +262,7 @@ class RepoInfoV2:
     def group_name(self, group_name):
         """Sets the group_name of this RepoInfoV2.
 
-        仓库组名(克隆地址中域名后面项目名前的一段 示例：git@repo.alpha.devcloud.inhuawei.com:Demo00228/testword.git  组名：Demo00228 )
+        仓库组名(克隆地址中域名后面仓库名前的一段 示例：git@repo.alpha.devcloud.inhuawei.com:Demo00228/testword.git  组名：Demo00228 )
 
         :param group_name: The group_name of this RepoInfoV2.
         :type group_name: str
@@ -383,7 +383,7 @@ class RepoInfoV2:
     def project_uuid(self):
         """Gets the project_uuid of this RepoInfoV2.
 
-        项目的uuid
+        项目ID，获取方式请参见[获取项目ID](codehub_api_0014.xml)。
 
         :return: The project_uuid of this RepoInfoV2.
         :rtype: str
@@ -394,7 +394,7 @@ class RepoInfoV2:
     def project_uuid(self, project_uuid):
         """Sets the project_uuid of this RepoInfoV2.
 
-        项目的uuid
+        项目ID，获取方式请参见[获取项目ID](codehub_api_0014.xml)。
 
         :param project_uuid: The project_uuid of this RepoInfoV2.
         :type project_uuid: str

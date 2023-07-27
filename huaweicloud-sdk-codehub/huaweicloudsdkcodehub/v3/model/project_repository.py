@@ -31,9 +31,9 @@ class ProjectRepository:
 
         The model defined in huaweicloud sdk
 
-        :param project_uuid: 创建项目的UUID
+        :param project_uuid: 项目ID，获取方式请参见[获取项目ID](codehub_api_0014.xml)。
         :type project_uuid: str
-        :param repository_uuid: 创建仓库的UUID
+        :param repository_uuid: 仓库UUID
         :type repository_uuid: str
         """
         
@@ -52,7 +52,7 @@ class ProjectRepository:
     def project_uuid(self):
         """Gets the project_uuid of this ProjectRepository.
 
-        创建项目的UUID
+        项目ID，获取方式请参见[获取项目ID](codehub_api_0014.xml)。
 
         :return: The project_uuid of this ProjectRepository.
         :rtype: str
@@ -63,7 +63,7 @@ class ProjectRepository:
     def project_uuid(self, project_uuid):
         """Sets the project_uuid of this ProjectRepository.
 
-        创建项目的UUID
+        项目ID，获取方式请参见[获取项目ID](codehub_api_0014.xml)。
 
         :param project_uuid: The project_uuid of this ProjectRepository.
         :type project_uuid: str
@@ -74,7 +74,7 @@ class ProjectRepository:
     def repository_uuid(self):
         """Gets the repository_uuid of this ProjectRepository.
 
-        创建仓库的UUID
+        仓库UUID
 
         :return: The repository_uuid of this ProjectRepository.
         :rtype: str
@@ -85,7 +85,7 @@ class ProjectRepository:
     def repository_uuid(self, repository_uuid):
         """Sets the repository_uuid of this ProjectRepository.
 
-        创建仓库的UUID
+        仓库UUID
 
         :param repository_uuid: The repository_uuid of this ProjectRepository.
         :type repository_uuid: str

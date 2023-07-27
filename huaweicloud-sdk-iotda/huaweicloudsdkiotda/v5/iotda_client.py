@@ -4913,6 +4913,296 @@ class IoTDAClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def add_tunnel(self, request):
+        """创建设备隧道
+
+        创建设备隧道接口
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for AddTunnel
+        :type request: :class:`huaweicloudsdkiotda.v5.AddTunnelRequest`
+        :rtype: :class:`huaweicloudsdkiotda.v5.AddTunnelResponse`
+        """
+        return self._add_tunnel_with_http_info(request)
+
+    def _add_tunnel_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v5/iot/{project_id}/tunnels',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='AddTunnelResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def close_device_tunnel(self, request):
+        """关闭设备隧道
+
+        关闭设备隧道接口
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CloseDeviceTunnel
+        :type request: :class:`huaweicloudsdkiotda.v5.CloseDeviceTunnelRequest`
+        :rtype: :class:`huaweicloudsdkiotda.v5.CloseDeviceTunnelResponse`
+        """
+        return self._close_device_tunnel_with_http_info(request)
+
+    def _close_device_tunnel_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'tunnel_id' in local_var_params:
+            path_params['tunnel_id'] = local_var_params['tunnel_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v5/iot/{project_id}/tunnels/{tunnel_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CloseDeviceTunnelResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_device_tunnel(self, request):
+        """删除设备隧道
+
+        删除设备隧道接口
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteDeviceTunnel
+        :type request: :class:`huaweicloudsdkiotda.v5.DeleteDeviceTunnelRequest`
+        :rtype: :class:`huaweicloudsdkiotda.v5.DeleteDeviceTunnelResponse`
+        """
+        return self._delete_device_tunnel_with_http_info(request)
+
+    def _delete_device_tunnel_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'tunnel_id' in local_var_params:
+            path_params['tunnel_id'] = local_var_params['tunnel_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v5/iot/{project_id}/tunnels/{tunnel_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteDeviceTunnelResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_device_tunnels(self, request):
+        """查询设备所有隧道
+
+        查询设备所有隧道接口
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListDeviceTunnels
+        :type request: :class:`huaweicloudsdkiotda.v5.ListDeviceTunnelsRequest`
+        :rtype: :class:`huaweicloudsdkiotda.v5.ListDeviceTunnelsResponse`
+        """
+        return self._list_device_tunnels_with_http_info(request)
+
+    def _list_device_tunnels_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'device_id' in local_var_params:
+            query_params.append(('device_id', local_var_params['device_id']))
+
+        header_params = {}
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v5/iot/{project_id}/tunnels',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListDeviceTunnelsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_device_tunnel(self, request):
+        """查询设备隧道
+
+        查询设备隧道信息接口
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowDeviceTunnel
+        :type request: :class:`huaweicloudsdkiotda.v5.ShowDeviceTunnelRequest`
+        :rtype: :class:`huaweicloudsdkiotda.v5.ShowDeviceTunnelResponse`
+        """
+        return self._show_device_tunnel_with_http_info(request)
+
+    def _show_device_tunnel_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'tunnel_id' in local_var_params:
+            path_params['tunnel_id'] = local_var_params['tunnel_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v5/iot/{project_id}/tunnels/{tunnel_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowDeviceTunnelResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):

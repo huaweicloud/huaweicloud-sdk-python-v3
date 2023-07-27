@@ -276,6 +276,187 @@ class CodeHubAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def create_merge_request_discussion_async(self, request):
+        """创建MR检视意见
+
+        创建MR检视意见
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateMergeRequestDiscussion
+        :type request: :class:`huaweicloudsdkcodehub.v3.CreateMergeRequestDiscussionRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v3.CreateMergeRequestDiscussionResponse`
+        """
+        return self._create_merge_request_discussion_with_http_info(request)
+
+    def _create_merge_request_discussion_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'repository_id' in local_var_params:
+            path_params['repository_id'] = local_var_params['repository_id']
+        if 'merge_request_iid' in local_var_params:
+            path_params['merge_request_iid'] = local_var_params['merge_request_iid']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v2/repositories/{repository_id}/merge_requests/{merge_request_iid}/discussions',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateMergeRequestDiscussionResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_merge_request_discussion_note_async(self, request):
+        """回复MR检视意见
+
+        回复MR检视意见
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateMergeRequestDiscussionNote
+        :type request: :class:`huaweicloudsdkcodehub.v3.CreateMergeRequestDiscussionNoteRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v3.CreateMergeRequestDiscussionNoteResponse`
+        """
+        return self._create_merge_request_discussion_note_with_http_info(request)
+
+    def _create_merge_request_discussion_note_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'repository_id' in local_var_params:
+            path_params['repository_id'] = local_var_params['repository_id']
+        if 'merge_request_iid' in local_var_params:
+            path_params['merge_request_iid'] = local_var_params['merge_request_iid']
+        if 'discussion_id' in local_var_params:
+            path_params['discussion_id'] = local_var_params['discussion_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v2/repositories/{repository_id}/merge_requests/{merge_request_iid}/discussions/{discussion_id}/notes',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateMergeRequestDiscussionNoteResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_review_setting_async(self, request):
+        """获取检视意见设置
+
+        获取检视意见设置
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowReviewSetting
+        :type request: :class:`huaweicloudsdkcodehub.v3.ShowReviewSettingRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v3.ShowReviewSettingResponse`
+        """
+        return self._show_review_setting_with_http_info(request)
+
+    def _show_review_setting_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'repository_id' in local_var_params:
+            path_params['repository_id'] = local_var_params['repository_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v2/repositories/{repository_id}/review_setting',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowReviewSettingResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_files_by_query_async(self, request):
         """查询某个仓库的文件信息
 
@@ -586,7 +767,7 @@ class CodeHubAsyncClient(Client):
     def show_repository_name_exist_async(self, request):
         """校验指定项目下的仓库名
 
-        一般创建仓库时调用。通过传入项目uuid,仓库名，来判断仓库是否重名。仓库存在result:false,仓库不存在result:true。
+        一般创建仓库时调用。通过传入项目ID，获取方式请参见[获取项目ID](codehub_api_0014.xml)。,仓库名，来判断仓库是否重名。仓库存在result:false,仓库不存在result:true。
         
         Please refer to HUAWEI cloud API Explorer for details.
 

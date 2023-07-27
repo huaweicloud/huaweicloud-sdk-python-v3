@@ -45,7 +45,7 @@ class ListInstancesRequest:
 
         The model defined in huaweicloud sdk
 
-        :param engine: 消息引擎：reliability。
+        :param engine: 消息引擎。
         :type engine: str
         :param name: 实例名称。
         :type name: str
@@ -101,7 +101,7 @@ class ListInstancesRequest:
     def engine(self):
         """Gets the engine of this ListInstancesRequest.
 
-        消息引擎：reliability。
+        消息引擎。
 
         :return: The engine of this ListInstancesRequest.
         :rtype: str
@@ -112,7 +112,7 @@ class ListInstancesRequest:
     def engine(self, engine):
         """Sets the engine of this ListInstancesRequest.
 
-        消息引擎：reliability。
+        消息引擎。
 
         :param engine: The engine of this ListInstancesRequest.
         :type engine: str

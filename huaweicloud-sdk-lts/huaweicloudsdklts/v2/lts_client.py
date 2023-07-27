@@ -3402,6 +3402,66 @@ class LtsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def update_log_stream(self, request):
+        """修改日志流
+
+        该接口用于修改指定日志流下的日志存储时长。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateLogStream
+        :type request: :class:`huaweicloudsdklts.v2.UpdateLogStreamRequest`
+        :rtype: :class:`huaweicloudsdklts.v2.UpdateLogStreamResponse`
+        """
+        return self._update_log_stream_with_http_info(request)
+
+    def _update_log_stream_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'log_group_id' in local_var_params:
+            path_params['log_group_id'] = local_var_params['log_group_id']
+        if 'log_stream_id' in local_var_params:
+            path_params['log_stream_id'] = local_var_params['log_stream_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/groups/{log_group_id}/streams_ttl/{log_stream_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateLogStreamResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def update_notification_template(self, request):
         """修改消息模板
 

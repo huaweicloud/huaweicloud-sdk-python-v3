@@ -787,7 +787,7 @@ class KafkaClient(Client):
     def create_post_paid_instance(self, request):
         """创建实例
 
-        [创建按需计费类型的Kafka实例。](tag:hc,hk,hws,hws_hk,ctc,sbc,hk_sbc,cmcc,hws_eu)[创建kafka实例。](tag:otc,ocb,hws_ocb)
+        [创建按需计费类型的Kafka实例。](tag:sbc,hk_sbc,cmcc)[创建kafka实例。](tag:otc)
         
         Please refer to HUAWEI cloud API Explorer for details.
 

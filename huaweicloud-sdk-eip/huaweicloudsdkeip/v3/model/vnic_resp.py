@@ -20,8 +20,11 @@ class VnicResp:
         'private_ip_address': 'str',
         'device_id': 'str',
         'device_owner': 'str',
+        'vtep': 'str',
+        'vni': 'str',
         'vpc_id': 'str',
         'port_id': 'str',
+        'port_profile': 'str',
         'mac': 'str',
         'instance_id': 'str',
         'instance_type': 'str'
@@ -31,14 +34,17 @@ class VnicResp:
         'private_ip_address': 'private_ip_address',
         'device_id': 'device_id',
         'device_owner': 'device_owner',
+        'vtep': 'vtep',
+        'vni': 'vni',
         'vpc_id': 'vpc_id',
         'port_id': 'port_id',
+        'port_profile': 'port_profile',
         'mac': 'mac',
         'instance_id': 'instance_id',
         'instance_type': 'instance_type'
     }
 
-    def __init__(self, private_ip_address=None, device_id=None, device_owner=None, vpc_id=None, port_id=None, mac=None, instance_id=None, instance_type=None):
+    def __init__(self, private_ip_address=None, device_id=None, device_owner=None, vtep=None, vni=None, vpc_id=None, port_id=None, port_profile=None, mac=None, instance_id=None, instance_type=None):
         """VnicResp
 
         The model defined in huaweicloud sdk
@@ -49,10 +55,16 @@ class VnicResp:
         :type device_id: str
         :param device_owner: - 功能说明：PORT的device_owner - 约束：存在PORT时，此字段和associate_instance_type都可区分实例类型
         :type device_owner: str
+        :param vtep: - 功能说明：VTEP IP
+        :type vtep: str
+        :param vni: - 功能说明：VXLAN ID
+        :type vni: str
         :param vpc_id: - 功能说明：PORT所在VPC的ID
         :type vpc_id: str
         :param port_id: - 功能说明：PORT的唯一标识
         :type port_id: str
+        :param port_profile: - 功能说明：端口profile信息
+        :type port_profile: str
         :param mac: - 功能说明：PORT的MAC信息
         :type mac: str
         :param instance_id: - 功能说明：PORT的使用者，不同于device_id的归属者。举例：vip port的device_owner为vip，但是这个port实际使用者可能是虚机或其他
@@ -66,8 +78,11 @@ class VnicResp:
         self._private_ip_address = None
         self._device_id = None
         self._device_owner = None
+        self._vtep = None
+        self._vni = None
         self._vpc_id = None
         self._port_id = None
+        self._port_profile = None
         self._mac = None
         self._instance_id = None
         self._instance_type = None
@@ -79,10 +94,16 @@ class VnicResp:
             self.device_id = device_id
         if device_owner is not None:
             self.device_owner = device_owner
+        if vtep is not None:
+            self.vtep = vtep
+        if vni is not None:
+            self.vni = vni
         if vpc_id is not None:
             self.vpc_id = vpc_id
         if port_id is not None:
             self.port_id = port_id
+        if port_profile is not None:
+            self.port_profile = port_profile
         if mac is not None:
             self.mac = mac
         if instance_id is not None:
@@ -157,6 +178,50 @@ class VnicResp:
         self._device_owner = device_owner
 
     @property
+    def vtep(self):
+        """Gets the vtep of this VnicResp.
+
+        - 功能说明：VTEP IP
+
+        :return: The vtep of this VnicResp.
+        :rtype: str
+        """
+        return self._vtep
+
+    @vtep.setter
+    def vtep(self, vtep):
+        """Sets the vtep of this VnicResp.
+
+        - 功能说明：VTEP IP
+
+        :param vtep: The vtep of this VnicResp.
+        :type vtep: str
+        """
+        self._vtep = vtep
+
+    @property
+    def vni(self):
+        """Gets the vni of this VnicResp.
+
+        - 功能说明：VXLAN ID
+
+        :return: The vni of this VnicResp.
+        :rtype: str
+        """
+        return self._vni
+
+    @vni.setter
+    def vni(self, vni):
+        """Sets the vni of this VnicResp.
+
+        - 功能说明：VXLAN ID
+
+        :param vni: The vni of this VnicResp.
+        :type vni: str
+        """
+        self._vni = vni
+
+    @property
     def vpc_id(self):
         """Gets the vpc_id of this VnicResp.
 
@@ -199,6 +264,28 @@ class VnicResp:
         :type port_id: str
         """
         self._port_id = port_id
+
+    @property
+    def port_profile(self):
+        """Gets the port_profile of this VnicResp.
+
+        - 功能说明：端口profile信息
+
+        :return: The port_profile of this VnicResp.
+        :rtype: str
+        """
+        return self._port_profile
+
+    @port_profile.setter
+    def port_profile(self, port_profile):
+        """Sets the port_profile of this VnicResp.
+
+        - 功能说明：端口profile信息
+
+        :param port_profile: The port_profile of this VnicResp.
+        :type port_profile: str
+        """
+        self._port_profile = port_profile
 
     @property
     def mac(self):

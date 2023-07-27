@@ -45,9 +45,9 @@ class CreateCustomRuleRequestBody:
 
         :param time: 精准防护规则生效时间:  - “false”：表示该规则立即生效。   - “true”：表示自定义生效时间。
         :type time: bool
-        :param start: 精准防护规则生效的起始时间戳（毫秒）。当time&#x3D;true，才需要填写该参数。
+        :param start: 精准防护规则生效的起始时间戳（秒）。当time&#x3D;true，才需要填写该参数。
         :type start: int
-        :param terminal: 精准防护规则生效的终止时间戳（毫秒）。当time&#x3D;true，才需要填写该参数。
+        :param terminal: 精准防护规则生效的终止时间戳（秒）。当time&#x3D;true，才需要填写该参数。
         :type terminal: int
         :param description: 规则描述
         :type description: str
@@ -111,7 +111,7 @@ class CreateCustomRuleRequestBody:
     def start(self):
         """Gets the start of this CreateCustomRuleRequestBody.
 
-        精准防护规则生效的起始时间戳（毫秒）。当time=true，才需要填写该参数。
+        精准防护规则生效的起始时间戳（秒）。当time=true，才需要填写该参数。
 
         :return: The start of this CreateCustomRuleRequestBody.
         :rtype: int
@@ -122,7 +122,7 @@ class CreateCustomRuleRequestBody:
     def start(self, start):
         """Sets the start of this CreateCustomRuleRequestBody.
 
-        精准防护规则生效的起始时间戳（毫秒）。当time=true，才需要填写该参数。
+        精准防护规则生效的起始时间戳（秒）。当time=true，才需要填写该参数。
 
         :param start: The start of this CreateCustomRuleRequestBody.
         :type start: int
@@ -133,7 +133,7 @@ class CreateCustomRuleRequestBody:
     def terminal(self):
         """Gets the terminal of this CreateCustomRuleRequestBody.
 
-        精准防护规则生效的终止时间戳（毫秒）。当time=true，才需要填写该参数。
+        精准防护规则生效的终止时间戳（秒）。当time=true，才需要填写该参数。
 
         :return: The terminal of this CreateCustomRuleRequestBody.
         :rtype: int
@@ -144,7 +144,7 @@ class CreateCustomRuleRequestBody:
     def terminal(self, terminal):
         """Sets the terminal of this CreateCustomRuleRequestBody.
 
-        精准防护规则生效的终止时间戳（毫秒）。当time=true，才需要填写该参数。
+        精准防护规则生效的终止时间戳（秒）。当time=true，才需要填写该参数。
 
         :param terminal: The terminal of this CreateCustomRuleRequestBody.
         :type terminal: int

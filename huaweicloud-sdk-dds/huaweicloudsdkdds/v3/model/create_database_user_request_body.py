@@ -41,7 +41,7 @@ class CreateDatabaseUserRequestBody:
         :type user_pwd: str
         :param db_name: 新用户所在的数据库，默认为“admin”。 - 长度为1~64位，可以包含大写字母（A~Z）、小写字母（a~z）、数字（0~9）、下划线。
         :type db_name: str
-        :param roles: 新用户所拥有的角色。
+        :param roles: 新用户所拥有的角色。 roles限制了该帐户所具有的权限。若指定一个空数组，表示该帐户不具有任何权限。
         :type roles: list[:class:`huaweicloudsdkdds.v3.RolesOption`]
         """
         
@@ -129,7 +129,7 @@ class CreateDatabaseUserRequestBody:
     def roles(self):
         """Gets the roles of this CreateDatabaseUserRequestBody.
 
-        新用户所拥有的角色。
+        新用户所拥有的角色。 roles限制了该帐户所具有的权限。若指定一个空数组，表示该帐户不具有任何权限。
 
         :return: The roles of this CreateDatabaseUserRequestBody.
         :rtype: list[:class:`huaweicloudsdkdds.v3.RolesOption`]
@@ -140,7 +140,7 @@ class CreateDatabaseUserRequestBody:
     def roles(self, roles):
         """Sets the roles of this CreateDatabaseUserRequestBody.
 
-        新用户所拥有的角色。
+        新用户所拥有的角色。 roles限制了该帐户所具有的权限。若指定一个空数组，表示该帐户不具有任何权限。
 
         :param roles: The roles of this CreateDatabaseUserRequestBody.
         :type roles: list[:class:`huaweicloudsdkdds.v3.RolesOption`]

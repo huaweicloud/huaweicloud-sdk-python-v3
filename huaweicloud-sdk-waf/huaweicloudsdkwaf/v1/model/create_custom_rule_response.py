@@ -78,9 +78,9 @@ class CreateCustomRuleResponse(SdkResponse):
         :type timestamp: int
         :param time: 精准防护规则生效时间:  - “false”：表示该规则立即生效。   - “true”：表示自定义生效时间。
         :type time: bool
-        :param start: 精准防护规则生效的起始时间戳（毫秒）。当time&#x3D;true，才会返回该参数。
+        :param start: 精准防护规则生效的起始时间戳（秒）。当time&#x3D;true，才会返回该参数。
         :type start: int
-        :param terminal: 精准防护规则生效的终止时间戳（毫秒）。当time&#x3D;true，才会返回该参数。
+        :param terminal: 精准防护规则生效的终止时间戳（秒）。当time&#x3D;true，才会返回该参数。
         :type terminal: int
         :param producer: 规则创建对象，该参数为预留参数，用于后续功能扩展，当前请用户忽略该参数
         :type producer: int
@@ -375,7 +375,7 @@ class CreateCustomRuleResponse(SdkResponse):
     def start(self):
         """Gets the start of this CreateCustomRuleResponse.
 
-        精准防护规则生效的起始时间戳（毫秒）。当time=true，才会返回该参数。
+        精准防护规则生效的起始时间戳（秒）。当time=true，才会返回该参数。
 
         :return: The start of this CreateCustomRuleResponse.
         :rtype: int
@@ -386,7 +386,7 @@ class CreateCustomRuleResponse(SdkResponse):
     def start(self, start):
         """Sets the start of this CreateCustomRuleResponse.
 
-        精准防护规则生效的起始时间戳（毫秒）。当time=true，才会返回该参数。
+        精准防护规则生效的起始时间戳（秒）。当time=true，才会返回该参数。
 
         :param start: The start of this CreateCustomRuleResponse.
         :type start: int
@@ -397,7 +397,7 @@ class CreateCustomRuleResponse(SdkResponse):
     def terminal(self):
         """Gets the terminal of this CreateCustomRuleResponse.
 
-        精准防护规则生效的终止时间戳（毫秒）。当time=true，才会返回该参数。
+        精准防护规则生效的终止时间戳（秒）。当time=true，才会返回该参数。
 
         :return: The terminal of this CreateCustomRuleResponse.
         :rtype: int
@@ -408,7 +408,7 @@ class CreateCustomRuleResponse(SdkResponse):
     def terminal(self, terminal):
         """Sets the terminal of this CreateCustomRuleResponse.
 
-        精准防护规则生效的终止时间戳（毫秒）。当time=true，才会返回该参数。
+        精准防护规则生效的终止时间戳（秒）。当time=true，才会返回该参数。
 
         :param terminal: The terminal of this CreateCustomRuleResponse.
         :type terminal: int

@@ -19,11 +19,10 @@
 """
 
 import os
-import sys
 import yaml
 
 from huaweicloudsdkcore.region.region import Region
-from huaweicloudsdkcore.utils import six_utils, path_utils
+from huaweicloudsdkcore.utils import six_utils, filepath_utils
 
 
 class EnvRegionCache(six_utils.get_singleton_meta_class()):
@@ -53,7 +52,7 @@ class ProfileRegionCache(six_utils.get_singleton_meta_class()):
         result = {}
 
         path = cls._get_regions_file_path()
-        if not path_utils.is_path_exist(path):
+        if not filepath_utils.is_path_exist(path):
             return result
 
         with open(path, "r") as f:
@@ -75,6 +74,6 @@ class ProfileRegionCache(six_utils.get_singleton_meta_class()):
         if regions_file:
             return regions_file
 
-        home_path = path_utils.get_home_path()
+        home_path = filepath_utils.get_home_path()
         return os.path.join(home_path,
                             cls._DEFAULT_REGIONS_FILE_DIR, cls._DEFAULT_REGIONS_FILE) if home_path else home_path

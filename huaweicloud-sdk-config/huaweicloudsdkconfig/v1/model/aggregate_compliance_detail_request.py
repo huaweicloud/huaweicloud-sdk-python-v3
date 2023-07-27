@@ -64,10 +64,12 @@ class AggregateComplianceDetailRequest:
         self.discriminator = None
 
         self.aggregator_id = aggregator_id
-        self.account_id = account_id
+        if account_id is not None:
+            self.account_id = account_id
         if compliance_state is not None:
             self.compliance_state = compliance_state
-        self.policy_assignment_name = policy_assignment_name
+        if policy_assignment_name is not None:
+            self.policy_assignment_name = policy_assignment_name
         if resource_name is not None:
             self.resource_name = resource_name
         if resource_id is not None:

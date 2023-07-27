@@ -40,6 +40,8 @@ class CreateInstanceByEngineReq:
         'kafka_security_protocol': 'str',
         'sasl_enabled_mechanisms': 'list[str]',
         'retention_policy': 'str',
+        'disk_encrypted_enable': 'bool',
+        'disk_encrypted_key': 'str',
         'connector_enable': 'bool',
         'enable_auto_topic': 'bool',
         'storage_spec_code': 'str',
@@ -74,6 +76,8 @@ class CreateInstanceByEngineReq:
         'kafka_security_protocol': 'kafka_security_protocol',
         'sasl_enabled_mechanisms': 'sasl_enabled_mechanisms',
         'retention_policy': 'retention_policy',
+        'disk_encrypted_enable': 'disk_encrypted_enable',
+        'disk_encrypted_key': 'disk_encrypted_key',
         'connector_enable': 'connector_enable',
         'enable_auto_topic': 'enable_auto_topic',
         'storage_spec_code': 'storage_spec_code',
@@ -84,7 +88,7 @@ class CreateInstanceByEngineReq:
         'bss_param': 'bss_param'
     }
 
-    def __init__(self, name=None, description=None, engine=None, engine_version=None, broker_num=None, storage_space=None, access_user=None, password=None, vpc_id=None, security_group_id=None, subnet_id=None, available_zones=None, product_id=None, kafka_manager_user=None, kafka_manager_password=None, maintain_begin=None, maintain_end=None, enable_publicip=None, publicip_id=None, ssl_enable=None, kafka_security_protocol=None, sasl_enabled_mechanisms=None, retention_policy=None, connector_enable=None, enable_auto_topic=None, storage_spec_code=None, enterprise_project_id=None, tags=None, arch_type=None, vpc_client_plain=None, bss_param=None):
+    def __init__(self, name=None, description=None, engine=None, engine_version=None, broker_num=None, storage_space=None, access_user=None, password=None, vpc_id=None, security_group_id=None, subnet_id=None, available_zones=None, product_id=None, kafka_manager_user=None, kafka_manager_password=None, maintain_begin=None, maintain_end=None, enable_publicip=None, publicip_id=None, ssl_enable=None, kafka_security_protocol=None, sasl_enabled_mechanisms=None, retention_policy=None, disk_encrypted_enable=None, disk_encrypted_key=None, connector_enable=None, enable_auto_topic=None, storage_spec_code=None, enterprise_project_id=None, tags=None, arch_type=None, vpc_client_plain=None, bss_param=None):
         """CreateInstanceByEngineReq
 
         The model defined in huaweicloud sdk
@@ -95,7 +99,7 @@ class CreateInstanceByEngineReq:
         :type description: str
         :param engine: 消息引擎。取值填写为：kafka。
         :type engine: str
-        :param engine_version: 消息引擎的版本。取值填写为：   - 1.1.0   - 2.3.0   - 2.7
+        :param engine_version: 消息引擎的版本。取值填写为：   - 1.1.0   [- 2.3.0](tag:g42,tm,hk_g42,ctc,hk_tm)   - 2.7
         :type engine_version: str
         :param broker_num: 代理个数。
         :type broker_num: int
@@ -135,6 +139,10 @@ class CreateInstanceByEngineReq:
         :type sasl_enabled_mechanisms: list[str]
         :param retention_policy: 磁盘的容量到达容量阈值后，对于消息的处理策略。  取值如下： - produce_reject：表示拒绝消息写入。 - time_base：表示自动删除最老消息。
         :type retention_policy: str
+        :param disk_encrypted_enable: 是否开启磁盘加密。
+        :type disk_encrypted_enable: bool
+        :param disk_encrypted_key: 磁盘加密key，未开启磁盘加密时为空
+        :type disk_encrypted_key: str
         :param connector_enable: 是否开启消息转储功能。  默认不开启消息转储。
         :type connector_enable: bool
         :param enable_auto_topic: 是否打开kafka自动创建topic功能。 - true：开启 - false：关闭  当您选择开启，表示生产或消费一个未创建的Topic时，会自动创建一个包含3个分区和3个副本的Topic。  默认是false关闭。
@@ -178,6 +186,8 @@ class CreateInstanceByEngineReq:
         self._kafka_security_protocol = None
         self._sasl_enabled_mechanisms = None
         self._retention_policy = None
+        self._disk_encrypted_enable = None
+        self._disk_encrypted_key = None
         self._connector_enable = None
         self._enable_auto_topic = None
         self._storage_spec_code = None
@@ -224,6 +234,10 @@ class CreateInstanceByEngineReq:
             self.sasl_enabled_mechanisms = sasl_enabled_mechanisms
         if retention_policy is not None:
             self.retention_policy = retention_policy
+        if disk_encrypted_enable is not None:
+            self.disk_encrypted_enable = disk_encrypted_enable
+        if disk_encrypted_key is not None:
+            self.disk_encrypted_key = disk_encrypted_key
         if connector_enable is not None:
             self.connector_enable = connector_enable
         if enable_auto_topic is not None:
@@ -310,7 +324,7 @@ class CreateInstanceByEngineReq:
     def engine_version(self):
         """Gets the engine_version of this CreateInstanceByEngineReq.
 
-        消息引擎的版本。取值填写为：   - 1.1.0   - 2.3.0   - 2.7
+        消息引擎的版本。取值填写为：   - 1.1.0   [- 2.3.0](tag:g42,tm,hk_g42,ctc,hk_tm)   - 2.7
 
         :return: The engine_version of this CreateInstanceByEngineReq.
         :rtype: str
@@ -321,7 +335,7 @@ class CreateInstanceByEngineReq:
     def engine_version(self, engine_version):
         """Sets the engine_version of this CreateInstanceByEngineReq.
 
-        消息引擎的版本。取值填写为：   - 1.1.0   - 2.3.0   - 2.7
+        消息引擎的版本。取值填写为：   - 1.1.0   [- 2.3.0](tag:g42,tm,hk_g42,ctc,hk_tm)   - 2.7
 
         :param engine_version: The engine_version of this CreateInstanceByEngineReq.
         :type engine_version: str
@@ -745,6 +759,50 @@ class CreateInstanceByEngineReq:
         :type retention_policy: str
         """
         self._retention_policy = retention_policy
+
+    @property
+    def disk_encrypted_enable(self):
+        """Gets the disk_encrypted_enable of this CreateInstanceByEngineReq.
+
+        是否开启磁盘加密。
+
+        :return: The disk_encrypted_enable of this CreateInstanceByEngineReq.
+        :rtype: bool
+        """
+        return self._disk_encrypted_enable
+
+    @disk_encrypted_enable.setter
+    def disk_encrypted_enable(self, disk_encrypted_enable):
+        """Sets the disk_encrypted_enable of this CreateInstanceByEngineReq.
+
+        是否开启磁盘加密。
+
+        :param disk_encrypted_enable: The disk_encrypted_enable of this CreateInstanceByEngineReq.
+        :type disk_encrypted_enable: bool
+        """
+        self._disk_encrypted_enable = disk_encrypted_enable
+
+    @property
+    def disk_encrypted_key(self):
+        """Gets the disk_encrypted_key of this CreateInstanceByEngineReq.
+
+        磁盘加密key，未开启磁盘加密时为空
+
+        :return: The disk_encrypted_key of this CreateInstanceByEngineReq.
+        :rtype: str
+        """
+        return self._disk_encrypted_key
+
+    @disk_encrypted_key.setter
+    def disk_encrypted_key(self, disk_encrypted_key):
+        """Sets the disk_encrypted_key of this CreateInstanceByEngineReq.
+
+        磁盘加密key，未开启磁盘加密时为空
+
+        :param disk_encrypted_key: The disk_encrypted_key of this CreateInstanceByEngineReq.
+        :type disk_encrypted_key: str
+        """
+        self._disk_encrypted_key = disk_encrypted_key
 
     @property
     def connector_enable(self):

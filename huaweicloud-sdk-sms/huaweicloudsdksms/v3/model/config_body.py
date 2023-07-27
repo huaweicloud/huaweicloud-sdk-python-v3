@@ -33,7 +33,7 @@ class ConfigBody:
 
         The model defined in huaweicloud sdk
 
-        :param config_key: 配置类型，分为：”EXCLUDE_MIGRATE_PATH\&quot;，\&quot;EXCLUDE_SYNC_PATH\&quot;，\&quot;ONLY_SYNC_PATH\&quot;,\&quot;OTHERS\&quot;
+        :param config_key: 配置类型，分为：\&quot;EXCLUDE_MIGRATE_PATH\&quot;，\&quot;SYNC_EXCLUDE_PATH\&quot;，\&quot;ONLY_SYNC_PATH\&quot;等
         :type config_key: str
         :param config_value: 具体配置参数字段，保存于数据库，最终在agent端进行解析
         :type config_value: str
@@ -57,7 +57,7 @@ class ConfigBody:
     def config_key(self):
         """Gets the config_key of this ConfigBody.
 
-        配置类型，分为：”EXCLUDE_MIGRATE_PATH\"，\"EXCLUDE_SYNC_PATH\"，\"ONLY_SYNC_PATH\",\"OTHERS\"
+        配置类型，分为：\"EXCLUDE_MIGRATE_PATH\"，\"SYNC_EXCLUDE_PATH\"，\"ONLY_SYNC_PATH\"等
 
         :return: The config_key of this ConfigBody.
         :rtype: str
@@ -68,7 +68,7 @@ class ConfigBody:
     def config_key(self, config_key):
         """Sets the config_key of this ConfigBody.
 
-        配置类型，分为：”EXCLUDE_MIGRATE_PATH\"，\"EXCLUDE_SYNC_PATH\"，\"ONLY_SYNC_PATH\",\"OTHERS\"
+        配置类型，分为：\"EXCLUDE_MIGRATE_PATH\"，\"SYNC_EXCLUDE_PATH\"，\"ONLY_SYNC_PATH\"等
 
         :param config_key: The config_key of this ConfigBody.
         :type config_key: str

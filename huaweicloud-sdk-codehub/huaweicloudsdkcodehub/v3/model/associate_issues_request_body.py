@@ -37,7 +37,7 @@ class AssociateIssuesRequestBody:
 
         :param branch: 分支名
         :type branch: str
-        :param project_id: 项目id
+        :param project_id: 项目ID，获取方式请参见[获取项目ID](codehub_api_0014.xml)。
         :type project_id: str
         :param related_id: 工作项集合
         :type related_id: list[str]
@@ -84,7 +84,7 @@ class AssociateIssuesRequestBody:
     def project_id(self):
         """Gets the project_id of this AssociateIssuesRequestBody.
 
-        项目id
+        项目ID，获取方式请参见[获取项目ID](codehub_api_0014.xml)。
 
         :return: The project_id of this AssociateIssuesRequestBody.
         :rtype: str
@@ -95,7 +95,7 @@ class AssociateIssuesRequestBody:
     def project_id(self, project_id):
         """Sets the project_id of this AssociateIssuesRequestBody.
 
-        项目id
+        项目ID，获取方式请参见[获取项目ID](codehub_api_0014.xml)。
 
         :param project_id: The project_id of this AssociateIssuesRequestBody.
         :type project_id: str

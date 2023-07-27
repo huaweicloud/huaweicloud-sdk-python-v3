@@ -73,8 +73,7 @@ class ListPortsRequest:
         self._offset = None
         self.discriminator = None
 
-        if host_id is not None:
-            self.host_id = host_id
+        self.host_id = host_id
         if host_name is not None:
             self.host_name = host_name
         if host_ip is not None:

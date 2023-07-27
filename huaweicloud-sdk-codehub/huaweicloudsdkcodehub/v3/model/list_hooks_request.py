@@ -33,7 +33,7 @@ class ListHooksRequest:
 
         The model defined in huaweicloud sdk
 
-        :param group_name: 组名(克隆地址中域名后面项目名前的一段 示例：git@repo.alpha.devcloud.inhuawei.com:Demo00228/testword.git  组名：Demo00228 )
+        :param group_name: 组名(克隆地址中域名后面仓库名前的一段 示例：git@repo.alpha.devcloud.inhuawei.com:Demo00228/testword.git  组名：Demo00228 )
         :type group_name: str
         :param hook_id: hook id
         :type hook_id: str
@@ -57,7 +57,7 @@ class ListHooksRequest:
     def group_name(self):
         """Gets the group_name of this ListHooksRequest.
 
-        组名(克隆地址中域名后面项目名前的一段 示例：git@repo.alpha.devcloud.inhuawei.com:Demo00228/testword.git  组名：Demo00228 )
+        组名(克隆地址中域名后面仓库名前的一段 示例：git@repo.alpha.devcloud.inhuawei.com:Demo00228/testword.git  组名：Demo00228 )
 
         :return: The group_name of this ListHooksRequest.
         :rtype: str
@@ -68,7 +68,7 @@ class ListHooksRequest:
     def group_name(self, group_name):
         """Sets the group_name of this ListHooksRequest.
 
-        组名(克隆地址中域名后面项目名前的一段 示例：git@repo.alpha.devcloud.inhuawei.com:Demo00228/testword.git  组名：Demo00228 )
+        组名(克隆地址中域名后面仓库名前的一段 示例：git@repo.alpha.devcloud.inhuawei.com:Demo00228/testword.git  组名：Demo00228 )
 
         :param group_name: The group_name of this ListHooksRequest.
         :type group_name: str

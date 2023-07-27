@@ -53,7 +53,7 @@ class CreateRepoRequest:
         :type import_members: int
         :param name: 仓库名称，取值范围：可以输入英文大小写字母、数字、连字符、下划线，且必须以字母开头
         :type name: str
-        :param project_uuid: 指定项目的UUID
+        :param project_uuid: 指定项目ID，获取方式请参见[获取项目ID](codehub_api_0014.xml)。
         :type project_uuid: str
         :param template_id: 复制模板的ID
         :type template_id: str
@@ -157,7 +157,7 @@ class CreateRepoRequest:
     def project_uuid(self):
         """Gets the project_uuid of this CreateRepoRequest.
 
-        指定项目的UUID
+        指定项目ID，获取方式请参见[获取项目ID](codehub_api_0014.xml)。
 
         :return: The project_uuid of this CreateRepoRequest.
         :rtype: str
@@ -168,7 +168,7 @@ class CreateRepoRequest:
     def project_uuid(self, project_uuid):
         """Sets the project_uuid of this CreateRepoRequest.
 
-        指定项目的UUID
+        指定项目ID，获取方式请参见[获取项目ID](codehub_api_0014.xml)。
 
         :param project_uuid: The project_uuid of this CreateRepoRequest.
         :type project_uuid: str

@@ -31,7 +31,7 @@ class CreateApiTestSuiteByRepoFileRequest:
 
         The model defined in huaweicloud sdk
 
-        :param project_id: 项目ID
+        :param project_id: 项目ID，固定长度32位字符（字母和数字）。
         :type project_id: str
         :param body: Body of the CreateApiTestSuiteByRepoFileRequest
         :type body: :class:`huaweicloudsdkcloudtest.v1.CreateTestSuitByRepoFileInfo`
@@ -51,7 +51,7 @@ class CreateApiTestSuiteByRepoFileRequest:
     def project_id(self):
         """Gets the project_id of this CreateApiTestSuiteByRepoFileRequest.
 
-        项目ID
+        项目ID，固定长度32位字符（字母和数字）。
 
         :return: The project_id of this CreateApiTestSuiteByRepoFileRequest.
         :rtype: str
@@ -62,7 +62,7 @@ class CreateApiTestSuiteByRepoFileRequest:
     def project_id(self, project_id):
         """Sets the project_id of this CreateApiTestSuiteByRepoFileRequest.
 
-        项目ID
+        项目ID，固定长度32位字符（字母和数字）。
 
         :param project_id: The project_id of this CreateApiTestSuiteByRepoFileRequest.
         :type project_id: str

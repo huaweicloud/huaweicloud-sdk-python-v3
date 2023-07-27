@@ -24,7 +24,7 @@ class TestPlanDetail:
         'finish_date': 'date',
         'project_id': 'str',
         'current_stage': 'str',
-        'expire_day': 'str',
+        'expire_day': 'int',
         'creator': 'TestPlanDetailCreator',
         'owner': 'TestPlanDetailOwner',
         'design_stage': 'TestPlanDetailDesignStage',
@@ -70,7 +70,7 @@ class TestPlanDetail:
         :param current_stage: 当前测试计划所处的阶段
         :type current_stage: str
         :param expire_day: 获取超期时间,正值表示已超期
-        :type expire_day: str
+        :type expire_day: int
         :param creator: 
         :type creator: :class:`huaweicloudsdkcloudtest.v1.TestPlanDetailCreator`
         :param owner: 
@@ -293,7 +293,7 @@ class TestPlanDetail:
         获取超期时间,正值表示已超期
 
         :return: The expire_day of this TestPlanDetail.
-        :rtype: str
+        :rtype: int
         """
         return self._expire_day
 
@@ -304,7 +304,7 @@ class TestPlanDetail:
         获取超期时间,正值表示已超期
 
         :param expire_day: The expire_day of this TestPlanDetail.
-        :type expire_day: str
+        :type expire_day: int
         """
         self._expire_day = expire_day
 

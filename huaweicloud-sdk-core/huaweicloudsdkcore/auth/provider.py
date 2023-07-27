@@ -20,7 +20,7 @@
 import os
 import six
 from abc import abstractmethod
-from huaweicloudsdkcore.utils import six_utils, path_utils
+from huaweicloudsdkcore.utils import six_utils, filepath_utils
 from huaweicloudsdkcore.auth.credentials import BasicCredentials, GlobalCredentials
 from huaweicloudsdkcore.exceptions.exceptions import ApiTypeError, ApiValueError, SdkException
 
@@ -114,7 +114,7 @@ class ProfileCredentialProvider(CredentialProvider):
             parser = configparser.SafeConfigParser()
 
         path = self._get_credentials_file_path()
-        if not path_utils.is_path_exist(path) or not parser.read(path, encoding=self._ENCODING):
+        if not filepath_utils.is_path_exist(path) or not parser.read(path, encoding=self._ENCODING):
             raise ApiValueError("credentials file '%s' does not exist" % path)
 
         if not parser.has_section(self._credential_type):
@@ -157,7 +157,7 @@ class ProfileCredentialProvider(CredentialProvider):
         if credentials_file:
             return credentials_file
 
-        home_path = path_utils.get_home_path()
+        home_path = filepath_utils.get_home_path()
         return os.path.join(home_path, cls._DEFAULT_CREDENTIALS_FILE_DIR, cls._DEFAULT_CREDENTIALS_FILE_NAME
                             ) if home_path else home_path
 

@@ -128,10 +128,12 @@ class AccessConfigDeatilCreate:
         self._log_k8s = None
         self.discriminator = None
 
-        self.paths = paths
+        if paths is not None:
+            self.paths = paths
         if black_paths is not None:
             self.black_paths = black_paths
-        self.format = format
+        if format is not None:
+            self.format = format
         if windows_log_info is not None:
             self.windows_log_info = windows_log_info
         if stdout is not None:
