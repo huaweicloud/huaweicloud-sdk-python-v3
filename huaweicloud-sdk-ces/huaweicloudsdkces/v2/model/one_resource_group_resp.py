@@ -45,7 +45,7 @@ class OneResourceGroupResp:
         :type create_time: datetime
         :param enterprise_project_id: 资源分组归属企业项目ID
         :type enterprise_project_id: str
-        :param type: 资源分组创建方式，取值只能为EPS（同步企业项目）,TAG（标签动态匹配）,Manual（手动添加）
+        :param type: 资源分组添加资源方式，取值只能为EPS（同步企业项目）,TAG（标签动态匹配）,Manual（手动添加）
         :type type: str
         """
         
@@ -156,7 +156,7 @@ class OneResourceGroupResp:
     def type(self):
         """Gets the type of this OneResourceGroupResp.
 
-        资源分组创建方式，取值只能为EPS（同步企业项目）,TAG（标签动态匹配）,Manual（手动添加）
+        资源分组添加资源方式，取值只能为EPS（同步企业项目）,TAG（标签动态匹配）,Manual（手动添加）
 
         :return: The type of this OneResourceGroupResp.
         :rtype: str
@@ -167,7 +167,7 @@ class OneResourceGroupResp:
     def type(self, type):
         """Sets the type of this OneResourceGroupResp.
 
-        资源分组创建方式，取值只能为EPS（同步企业项目）,TAG（标签动态匹配）,Manual（手动添加）
+        资源分组添加资源方式，取值只能为EPS（同步企业项目）,TAG（标签动态匹配）,Manual（手动添加）
 
         :param type: The type of this OneResourceGroupResp.
         :type type: str

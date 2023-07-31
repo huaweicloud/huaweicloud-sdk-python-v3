@@ -20,17 +20,19 @@ class ActionOnComponentSpec:
         'snapshot_index': 'int',
         'replica': 'int',
         'source': 'ActionOnComponentSource',
-        'resource_limit': 'ResourceLimitForUpgrade'
+        'resource_limit': 'ResourceLimitForUpgrade',
+        'build': 'ActionOnComponentBuild'
     }
 
     attribute_map = {
         'snapshot_index': 'snapshot_index',
         'replica': 'replica',
         'source': 'source',
-        'resource_limit': 'resource_limit'
+        'resource_limit': 'resource_limit',
+        'build': 'build'
     }
 
-    def __init__(self, snapshot_index=None, replica=None, source=None, resource_limit=None):
+    def __init__(self, snapshot_index=None, replica=None, source=None, resource_limit=None, build=None):
         """ActionOnComponentSpec
 
         The model defined in huaweicloud sdk
@@ -43,6 +45,8 @@ class ActionOnComponentSpec:
         :type source: :class:`huaweicloudsdkcae.v1.ActionOnComponentSource`
         :param resource_limit: 
         :type resource_limit: :class:`huaweicloudsdkcae.v1.ResourceLimitForUpgrade`
+        :param build: 
+        :type build: :class:`huaweicloudsdkcae.v1.ActionOnComponentBuild`
         """
         
         
@@ -51,6 +55,7 @@ class ActionOnComponentSpec:
         self._replica = None
         self._source = None
         self._resource_limit = None
+        self._build = None
         self.discriminator = None
 
         if snapshot_index is not None:
@@ -61,6 +66,8 @@ class ActionOnComponentSpec:
             self.source = source
         if resource_limit is not None:
             self.resource_limit = resource_limit
+        if build is not None:
+            self.build = build
 
     @property
     def snapshot_index(self):
@@ -141,6 +148,24 @@ class ActionOnComponentSpec:
         :type resource_limit: :class:`huaweicloudsdkcae.v1.ResourceLimitForUpgrade`
         """
         self._resource_limit = resource_limit
+
+    @property
+    def build(self):
+        """Gets the build of this ActionOnComponentSpec.
+
+        :return: The build of this ActionOnComponentSpec.
+        :rtype: :class:`huaweicloudsdkcae.v1.ActionOnComponentBuild`
+        """
+        return self._build
+
+    @build.setter
+    def build(self, build):
+        """Sets the build of this ActionOnComponentSpec.
+
+        :param build: The build of this ActionOnComponentSpec.
+        :type build: :class:`huaweicloudsdkcae.v1.ActionOnComponentBuild`
+        """
+        self._build = build
 
     def to_dict(self):
         """Returns the model properties as a dict"""

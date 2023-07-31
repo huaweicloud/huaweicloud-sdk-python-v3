@@ -33,7 +33,7 @@ class PutResourceGroupReq:
 
         :param group_name: 资源分组名称，只能为字母、数字、汉字、-、_，最大长度为128
         :type group_name: str
-        :param tags: 标签动态匹配时的关联标签
+        :param tags: 标签动态匹配时的关联标签,type为TAG时必传
         :type tags: list[:class:`huaweicloudsdkces.v2.ResourceGroupTagRelation`]
         """
         
@@ -73,7 +73,7 @@ class PutResourceGroupReq:
     def tags(self):
         """Gets the tags of this PutResourceGroupReq.
 
-        标签动态匹配时的关联标签
+        标签动态匹配时的关联标签,type为TAG时必传
 
         :return: The tags of this PutResourceGroupReq.
         :rtype: list[:class:`huaweicloudsdkces.v2.ResourceGroupTagRelation`]
@@ -84,7 +84,7 @@ class PutResourceGroupReq:
     def tags(self, tags):
         """Sets the tags of this PutResourceGroupReq.
 
-        标签动态匹配时的关联标签
+        标签动态匹配时的关联标签,type为TAG时必传
 
         :param tags: The tags of this PutResourceGroupReq.
         :type tags: list[:class:`huaweicloudsdkces.v2.ResourceGroupTagRelation`]

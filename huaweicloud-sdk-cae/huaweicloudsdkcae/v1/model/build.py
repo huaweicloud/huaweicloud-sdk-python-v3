@@ -33,7 +33,7 @@ class Build:
 
         :param archive: 
         :type archive: :class:`huaweicloudsdkcae.v1.Archive`
-        :param parameters: 构建附加参数。 - base_image：基础镜像地址。 - build_cmd：自定义构建命令。
+        :param parameters: 构建附加参数。 - base_image：基础镜像地址。 - build_cmd：自定义构建命令。 - dockerfile_path：自定义dockerfile文件路径 - dockerfile_content：自定义dockerfile内容
         :type parameters: dict(str, str)
         """
         
@@ -68,7 +68,7 @@ class Build:
     def parameters(self):
         """Gets the parameters of this Build.
 
-        构建附加参数。 - base_image：基础镜像地址。 - build_cmd：自定义构建命令。
+        构建附加参数。 - base_image：基础镜像地址。 - build_cmd：自定义构建命令。 - dockerfile_path：自定义dockerfile文件路径 - dockerfile_content：自定义dockerfile内容
 
         :return: The parameters of this Build.
         :rtype: dict(str, str)
@@ -79,7 +79,7 @@ class Build:
     def parameters(self, parameters):
         """Sets the parameters of this Build.
 
-        构建附加参数。 - base_image：基础镜像地址。 - build_cmd：自定义构建命令。
+        构建附加参数。 - base_image：基础镜像地址。 - build_cmd：自定义构建命令。 - dockerfile_path：自定义dockerfile文件路径 - dockerfile_content：自定义dockerfile内容
 
         :param parameters: The parameters of this Build.
         :type parameters: dict(str, str)

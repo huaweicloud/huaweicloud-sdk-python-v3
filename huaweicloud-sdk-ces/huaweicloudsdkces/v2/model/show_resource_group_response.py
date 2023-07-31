@@ -50,11 +50,11 @@ class ShowResourceGroupResponse(SdkResponse):
         :type create_time: datetime
         :param enterprise_project_id: 资源分组归属企业项目ID
         :type enterprise_project_id: str
-        :param type: 资源分组创建方式，取值只能为EPS（同步企业项目）,TAG（标签动态匹配）,Manual（手动添加）
+        :param type: 资源分组添加资源方式，取值只能为EPS（同步企业项目）,TAG（标签动态匹配）,Manual（手动添加）
         :type type: str
         :param association_ep_ids: 该资源分组内包含的资源来源的企业项目ID，type为EPS时必传
         :type association_ep_ids: list[str]
-        :param tags: 标签动态匹配时的关联标签,type为TAG时必传
+        :param tags: 标签动态匹配时的关联标签,type为TAG时该字段不为空
         :type tags: list[:class:`huaweicloudsdkces.v2.ResourceGroupTagRelation`]
         """
         
@@ -176,7 +176,7 @@ class ShowResourceGroupResponse(SdkResponse):
     def type(self):
         """Gets the type of this ShowResourceGroupResponse.
 
-        资源分组创建方式，取值只能为EPS（同步企业项目）,TAG（标签动态匹配）,Manual（手动添加）
+        资源分组添加资源方式，取值只能为EPS（同步企业项目）,TAG（标签动态匹配）,Manual（手动添加）
 
         :return: The type of this ShowResourceGroupResponse.
         :rtype: str
@@ -187,7 +187,7 @@ class ShowResourceGroupResponse(SdkResponse):
     def type(self, type):
         """Sets the type of this ShowResourceGroupResponse.
 
-        资源分组创建方式，取值只能为EPS（同步企业项目）,TAG（标签动态匹配）,Manual（手动添加）
+        资源分组添加资源方式，取值只能为EPS（同步企业项目）,TAG（标签动态匹配）,Manual（手动添加）
 
         :param type: The type of this ShowResourceGroupResponse.
         :type type: str
@@ -220,7 +220,7 @@ class ShowResourceGroupResponse(SdkResponse):
     def tags(self):
         """Gets the tags of this ShowResourceGroupResponse.
 
-        标签动态匹配时的关联标签,type为TAG时必传
+        标签动态匹配时的关联标签,type为TAG时该字段不为空
 
         :return: The tags of this ShowResourceGroupResponse.
         :rtype: list[:class:`huaweicloudsdkces.v2.ResourceGroupTagRelation`]
@@ -231,7 +231,7 @@ class ShowResourceGroupResponse(SdkResponse):
     def tags(self, tags):
         """Sets the tags of this ShowResourceGroupResponse.
 
-        标签动态匹配时的关联标签,type为TAG时必传
+        标签动态匹配时的关联标签,type为TAG时该字段不为空
 
         :param tags: The tags of this ShowResourceGroupResponse.
         :type tags: list[:class:`huaweicloudsdkces.v2.ResourceGroupTagRelation`]

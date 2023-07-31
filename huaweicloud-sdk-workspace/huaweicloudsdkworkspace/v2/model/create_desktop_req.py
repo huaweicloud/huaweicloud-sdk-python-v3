@@ -25,7 +25,7 @@ class CreateDesktopReq:
         'root_volume': 'Volume',
         'data_volumes': 'list[Volume]',
         'nics': 'list[Nic]',
-        'security_groups': 'list[SecurityGroup]',
+        'security_groups': 'list[SecurityGroupInfo]',
         'desktops': 'list[Desktop]',
         'email_notification': 'bool',
         'tags': 'list[Tag]',
@@ -70,7 +70,7 @@ class CreateDesktopReq:
         :param nics: 桌面对应的网卡信息，如果不指定则使用默认网卡。
         :type nics: list[:class:`huaweicloudsdkworkspace.v2.Nic`]
         :param security_groups: 桌面使用的安全组，如果不指定则默认使用桌面代理中指定的安全组。
-        :type security_groups: list[:class:`huaweicloudsdkworkspace.v2.SecurityGroup`]
+        :type security_groups: list[:class:`huaweicloudsdkworkspace.v2.SecurityGroupInfo`]
         :param desktops: 创建桌面使用的参数列表。长度为1-100。  当前不支持一批桌面不同配置，所有桌面的配置和第一台的一致，如果第一台未设置参数，则取外层的同名参数。
         :type desktops: list[:class:`huaweicloudsdkworkspace.v2.Desktop`]
         :param email_notification: 创建成功后是否发送邮件通知桌面用户，默认为true。
@@ -298,7 +298,7 @@ class CreateDesktopReq:
         桌面使用的安全组，如果不指定则默认使用桌面代理中指定的安全组。
 
         :return: The security_groups of this CreateDesktopReq.
-        :rtype: list[:class:`huaweicloudsdkworkspace.v2.SecurityGroup`]
+        :rtype: list[:class:`huaweicloudsdkworkspace.v2.SecurityGroupInfo`]
         """
         return self._security_groups
 
@@ -309,7 +309,7 @@ class CreateDesktopReq:
         桌面使用的安全组，如果不指定则默认使用桌面代理中指定的安全组。
 
         :param security_groups: The security_groups of this CreateDesktopReq.
-        :type security_groups: list[:class:`huaweicloudsdkworkspace.v2.SecurityGroup`]
+        :type security_groups: list[:class:`huaweicloudsdkworkspace.v2.SecurityGroupInfo`]
         """
         self._security_groups = security_groups
 

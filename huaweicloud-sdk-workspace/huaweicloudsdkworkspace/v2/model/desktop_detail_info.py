@@ -27,7 +27,7 @@ class DesktopDetailInfo:
         'status': 'str',
         'task_status': 'str',
         'created': 'str',
-        'security_groups': 'list[SecurityGroup]',
+        'security_groups': 'list[SecurityGroupInfo]',
         'login_status': 'str',
         'user_name': 'str',
         'product_id': 'str',
@@ -104,7 +104,7 @@ class DesktopDetailInfo:
         :param created: 桌面创建时间。
         :type created: str
         :param security_groups: 桌面安全组。
-        :type security_groups: list[:class:`huaweicloudsdkworkspace.v2.SecurityGroup`]
+        :type security_groups: list[:class:`huaweicloudsdkworkspace.v2.SecurityGroupInfo`]
         :param login_status: 桌面的登录状态。  - UNREGISTER：表示桌面未注册时的状态（桌面启动后，会自动注册）。关机后也会出现未注册的状态。 - REGISTERED：表示桌面注册以后，等待用户连接的状态。 - CONNECTED：表示用户已经成功登录，正在使用桌面。 - DISCONNECTED：表示桌面与客户端断开会话后显示的状态，可能为关闭客户端窗口，或客户端与桌面网络断开引起。
         :type login_status: str
         :param user_name: 桌面所属用户。
@@ -453,7 +453,7 @@ class DesktopDetailInfo:
         桌面安全组。
 
         :return: The security_groups of this DesktopDetailInfo.
-        :rtype: list[:class:`huaweicloudsdkworkspace.v2.SecurityGroup`]
+        :rtype: list[:class:`huaweicloudsdkworkspace.v2.SecurityGroupInfo`]
         """
         return self._security_groups
 
@@ -464,7 +464,7 @@ class DesktopDetailInfo:
         桌面安全组。
 
         :param security_groups: The security_groups of this DesktopDetailInfo.
-        :type security_groups: list[:class:`huaweicloudsdkworkspace.v2.SecurityGroup`]
+        :type security_groups: list[:class:`huaweicloudsdkworkspace.v2.SecurityGroupInfo`]
         """
         self._security_groups = security_groups
 

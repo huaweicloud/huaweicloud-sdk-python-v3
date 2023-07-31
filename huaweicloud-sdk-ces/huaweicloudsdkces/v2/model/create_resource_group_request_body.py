@@ -41,7 +41,7 @@ class CreateResourceGroupRequestBody:
         :type group_name: str
         :param enterprise_project_id: 资源分组归属企业项目ID
         :type enterprise_project_id: str
-        :param type: 资源分组创建方式，取值只能为EPS（同步企业项目）,TAG（标签动态匹配）,不传为手动添加
+        :param type: 资源分组添加资源方式，取值只能为EPS（同步企业项目）,TAG（标签动态匹配）,不传为手动添加
         :type type: str
         :param tags: 标签动态匹配时的关联标签,type为TAG时必传
         :type tags: list[:class:`huaweicloudsdkces.v2.ResourceGroupTagRelation`]
@@ -116,7 +116,7 @@ class CreateResourceGroupRequestBody:
     def type(self):
         """Gets the type of this CreateResourceGroupRequestBody.
 
-        资源分组创建方式，取值只能为EPS（同步企业项目）,TAG（标签动态匹配）,不传为手动添加
+        资源分组添加资源方式，取值只能为EPS（同步企业项目）,TAG（标签动态匹配）,不传为手动添加
 
         :return: The type of this CreateResourceGroupRequestBody.
         :rtype: str
@@ -127,7 +127,7 @@ class CreateResourceGroupRequestBody:
     def type(self, type):
         """Sets the type of this CreateResourceGroupRequestBody.
 
-        资源分组创建方式，取值只能为EPS（同步企业项目）,TAG（标签动态匹配）,不传为手动添加
+        资源分组添加资源方式，取值只能为EPS（同步企业项目）,TAG（标签动态匹配）,不传为手动添加
 
         :param type: The type of this CreateResourceGroupRequestBody.
         :type type: str

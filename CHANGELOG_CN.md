@@ -1,3 +1,70 @@
+# 3.1.51 2023-07-31
+
+### HuaweiCloud SDK CAE
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ExecuteAction**
+    - 请求参数变更
+      - `+ spec.build`
+
+### HuaweiCloud SDK ProjectMan
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **UpdateIssueV4**
+    - 响应参数变更
+      - `+ find_release_dev`
+      - `+ order`
+      - `+ release_dev`
+      - `+ env`
+  - **ListIssuesV4**
+    - 响应参数变更
+      - `+ find_release_dev`
+      - `+ order`
+      - `+ release_dev`
+      - `+ env`
+      - `+ issues.order`
+      - `+ issues.release_dev`
+      - `+ issues.find_release_dev`
+      - `+ issues.env`
+  - **ListChildIssuesV4**
+    - 响应参数变更
+      - `+ find_release_dev`
+      - `+ order`
+      - `+ release_dev`
+      - `+ env`
+      - `+ issues.order`
+      - `+ issues.release_dev`
+      - `+ issues.find_release_dev`
+      - `+ issues.env`
+
+### HuaweiCloud SDK Workspace
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateDesktop**
+    - 请求参数变更
+      - `- security_groups.name`
+      - `* security_groups: list<SecurityGroup> -> list<SecurityGroupInfo>`
+  - **ShowDesktopDetail**
+    - 响应参数变更
+      - `- desktop.security_groups.name`
+      - `* desktop.security_groups: list<SecurityGroup> -> list<SecurityGroupInfo>`
+  - **ListDesktopsDetail**
+    - 响应参数变更
+      - `- desktops.security_groups.name`
+      - `* desktops.security_groups: list<SecurityGroup> -> list<SecurityGroupInfo>`
+
 # 3.1.50 2023-07-27
 
 ### HuaweiCloud SDK Cloudtest

@@ -110,6 +110,8 @@ from huaweicloudsdkprojectman.v4.model.issue_record_v4_details import IssueRecor
 from huaweicloudsdkprojectman.v4.model.issue_record_v4_user import IssueRecordV4User
 from huaweicloudsdkprojectman.v4.model.issue_request_v4 import IssueRequestV4
 from huaweicloudsdkprojectman.v4.model.issue_response_v4 import IssueResponseV4
+from huaweicloudsdkprojectman.v4.model.issue_response_v4_env import IssueResponseV4Env
+from huaweicloudsdkprojectman.v4.model.issue_response_v4_order import IssueResponseV4Order
 from huaweicloudsdkprojectman.v4.model.issue_status import IssueStatus
 from huaweicloudsdkprojectman.v4.model.issue_status_response_v4 import IssueStatusResponseV4
 from huaweicloudsdkprojectman.v4.model.issue_user import IssueUser

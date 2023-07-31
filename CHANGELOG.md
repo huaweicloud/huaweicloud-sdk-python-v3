@@ -1,3 +1,70 @@
+# 3.1.51 2023-07-31
+
+### HuaweiCloud SDK CAE
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ExecuteAction**
+    - changes of request param
+      - `+ spec.build`
+
+### HuaweiCloud SDK ProjectMan
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **UpdateIssueV4**
+    - changes of response param
+      - `+ find_release_dev`
+      - `+ order`
+      - `+ release_dev`
+      - `+ env`
+  - **ListIssuesV4**
+    - changes of response param
+      - `+ find_release_dev`
+      - `+ order`
+      - `+ release_dev`
+      - `+ env`
+      - `+ issues.order`
+      - `+ issues.release_dev`
+      - `+ issues.find_release_dev`
+      - `+ issues.env`
+  - **ListChildIssuesV4**
+    - changes of response param
+      - `+ find_release_dev`
+      - `+ order`
+      - `+ release_dev`
+      - `+ env`
+      - `+ issues.order`
+      - `+ issues.release_dev`
+      - `+ issues.find_release_dev`
+      - `+ issues.env`
+
+### HuaweiCloud SDK Workspace
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateDesktop**
+    - changes of request param
+      - `- security_groups.name`
+      - `* security_groups: list<SecurityGroup> -> list<SecurityGroupInfo>`
+  - **ShowDesktopDetail**
+    - changes of response param
+      - `- desktop.security_groups.name`
+      - `* desktop.security_groups: list<SecurityGroup> -> list<SecurityGroupInfo>`
+  - **ListDesktopsDetail**
+    - changes of response param
+      - `- desktops.security_groups.name`
+      - `* desktops.security_groups: list<SecurityGroup> -> list<SecurityGroupInfo>`
+
 # 3.1.50 2023-07-27
 
 ### HuaweiCloud SDK Cloudtest

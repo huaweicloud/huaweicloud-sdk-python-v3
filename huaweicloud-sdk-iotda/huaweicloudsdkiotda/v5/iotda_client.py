@@ -5090,7 +5090,7 @@ class IoTDAClient(Client):
     def list_device_tunnels(self, request):
         """查询设备所有隧道
 
-        查询设备所有隧道接口
+        用户可通过该接口查询某项目下的所有设备隧道，以实现对设备管理。应用服务器可通过此接口向平台查询设备隧道建立的情况。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -5148,7 +5148,7 @@ class IoTDAClient(Client):
     def show_device_tunnel(self, request):
         """查询设备隧道
 
-        查询设备隧道信息接口
+        用户可通过该接口查询某项目中的某个设备隧道，查看该设备隧道的信息与连接情况。应用服务器可调用此接口向平台查询设备隧道建立情况。
         
         Please refer to HUAWEI cloud API Explorer for details.
 

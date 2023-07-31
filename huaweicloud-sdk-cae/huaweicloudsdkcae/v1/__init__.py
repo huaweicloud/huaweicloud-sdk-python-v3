@@ -6,6 +6,7 @@ from huaweicloudsdkcae.v1.cae_client import CaeClient
 from huaweicloudsdkcae.v1.cae_async_client import CaeAsyncClient
 
 from huaweicloudsdkcae.v1.model.access import Access
+from huaweicloudsdkcae.v1.model.action_on_component_build import ActionOnComponentBuild
 from huaweicloudsdkcae.v1.model.action_on_component_source import ActionOnComponentSource
 from huaweicloudsdkcae.v1.model.action_on_component_spec import ActionOnComponentSpec
 from huaweicloudsdkcae.v1.model.agency import Agency

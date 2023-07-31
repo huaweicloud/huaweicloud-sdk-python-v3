@@ -2048,9 +2048,9 @@ class CaeAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def create_timer_rule_async(self, request):
-        """创建定时启停任务
+        """创建定时启停规则
 
-        创建定时启停任务。
+        创建定时启停规则。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
