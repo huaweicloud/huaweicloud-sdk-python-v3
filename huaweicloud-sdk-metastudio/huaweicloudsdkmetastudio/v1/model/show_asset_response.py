@@ -60,9 +60,9 @@ class ShowAssetResponse(SdkResponse):
         :type create_time: str
         :param update_time: 资产更新时间。
         :type update_time: str
-        :param asset_type: 资产类型。 * HUMAN_MODEL:数字人模型 * VOICE_MODEL:音色模型 * SCENE:场景模型 * ANIMATION:动作动画 * VIDEO:视频文件 * IMAGE:图片文件 * PPT:幻灯片文件 * MATERIAL:风格化素材
+        :param asset_type: 资产类型。 * HUMAN_MODEL：数字人模型 * VOICE_MODEL：音色模型 * SCENE：场景模型 * ANIMATION：动作动画 * VIDEO：视频文件 * IMAGE：图片文件 * PPT：幻灯片文件 * MATERIAL：风格化素材 * NORMAL_MODEL: 普通模型 * COMMON_FILE：通用文件 * HUMAN_MODEL_2D:2D数字人网络模型 * BUSINESS_CARD_TEMPLET: 数字人名片模板
         :type asset_type: str
-        :param asset_state: 资产状态。 * CREATING:资产创建中，主文件尚未上传 * FAILED:主文件上传失败 * UNACTIVED:主文件上传成功，资产未激活，资产不可用于其他业务(用户可更新状态) * ACTIVED:主文件上传成功，资产激活，资产可用于其他业务(用户可更新状态) * DELETING:资产删除中，资产不可用，资产可恢复 * DELETED:资产文件已删除，资产不可用，资产不可恢复
+        :param asset_state: 资产状态。 * CREATING：资产创建中，主文件尚未上传 * FAILED：主文件上传失败 * UNACTIVED：主文件上传成功，资产未激活，资产不可用于其他业务（用户可更新状态） * ACTIVED：主文件上传成功，资产激活，资产可用于其他业务（用户可更新状态） * DELETING：资产删除中，资产不可用，资产可恢复 * DELETED：资产文件已删除，资产不可用，资产不可恢复
         :type asset_state: str
         :param tags: 标签列表。
         :type tags: list[str]
@@ -226,7 +226,7 @@ class ShowAssetResponse(SdkResponse):
     def asset_type(self):
         """Gets the asset_type of this ShowAssetResponse.
 
-        资产类型。 * HUMAN_MODEL:数字人模型 * VOICE_MODEL:音色模型 * SCENE:场景模型 * ANIMATION:动作动画 * VIDEO:视频文件 * IMAGE:图片文件 * PPT:幻灯片文件 * MATERIAL:风格化素材
+        资产类型。 * HUMAN_MODEL：数字人模型 * VOICE_MODEL：音色模型 * SCENE：场景模型 * ANIMATION：动作动画 * VIDEO：视频文件 * IMAGE：图片文件 * PPT：幻灯片文件 * MATERIAL：风格化素材 * NORMAL_MODEL: 普通模型 * COMMON_FILE：通用文件 * HUMAN_MODEL_2D:2D数字人网络模型 * BUSINESS_CARD_TEMPLET: 数字人名片模板
 
         :return: The asset_type of this ShowAssetResponse.
         :rtype: str
@@ -237,7 +237,7 @@ class ShowAssetResponse(SdkResponse):
     def asset_type(self, asset_type):
         """Sets the asset_type of this ShowAssetResponse.
 
-        资产类型。 * HUMAN_MODEL:数字人模型 * VOICE_MODEL:音色模型 * SCENE:场景模型 * ANIMATION:动作动画 * VIDEO:视频文件 * IMAGE:图片文件 * PPT:幻灯片文件 * MATERIAL:风格化素材
+        资产类型。 * HUMAN_MODEL：数字人模型 * VOICE_MODEL：音色模型 * SCENE：场景模型 * ANIMATION：动作动画 * VIDEO：视频文件 * IMAGE：图片文件 * PPT：幻灯片文件 * MATERIAL：风格化素材 * NORMAL_MODEL: 普通模型 * COMMON_FILE：通用文件 * HUMAN_MODEL_2D:2D数字人网络模型 * BUSINESS_CARD_TEMPLET: 数字人名片模板
 
         :param asset_type: The asset_type of this ShowAssetResponse.
         :type asset_type: str
@@ -248,7 +248,7 @@ class ShowAssetResponse(SdkResponse):
     def asset_state(self):
         """Gets the asset_state of this ShowAssetResponse.
 
-        资产状态。 * CREATING:资产创建中，主文件尚未上传 * FAILED:主文件上传失败 * UNACTIVED:主文件上传成功，资产未激活，资产不可用于其他业务(用户可更新状态) * ACTIVED:主文件上传成功，资产激活，资产可用于其他业务(用户可更新状态) * DELETING:资产删除中，资产不可用，资产可恢复 * DELETED:资产文件已删除，资产不可用，资产不可恢复
+        资产状态。 * CREATING：资产创建中，主文件尚未上传 * FAILED：主文件上传失败 * UNACTIVED：主文件上传成功，资产未激活，资产不可用于其他业务（用户可更新状态） * ACTIVED：主文件上传成功，资产激活，资产可用于其他业务（用户可更新状态） * DELETING：资产删除中，资产不可用，资产可恢复 * DELETED：资产文件已删除，资产不可用，资产不可恢复
 
         :return: The asset_state of this ShowAssetResponse.
         :rtype: str
@@ -259,7 +259,7 @@ class ShowAssetResponse(SdkResponse):
     def asset_state(self, asset_state):
         """Sets the asset_state of this ShowAssetResponse.
 
-        资产状态。 * CREATING:资产创建中，主文件尚未上传 * FAILED:主文件上传失败 * UNACTIVED:主文件上传成功，资产未激活，资产不可用于其他业务(用户可更新状态) * ACTIVED:主文件上传成功，资产激活，资产可用于其他业务(用户可更新状态) * DELETING:资产删除中，资产不可用，资产可恢复 * DELETED:资产文件已删除，资产不可用，资产不可恢复
+        资产状态。 * CREATING：资产创建中，主文件尚未上传 * FAILED：主文件上传失败 * UNACTIVED：主文件上传成功，资产未激活，资产不可用于其他业务（用户可更新状态） * ACTIVED：主文件上传成功，资产激活，资产可用于其他业务（用户可更新状态） * DELETING：资产删除中，资产不可用，资产可恢复 * DELETED：资产文件已删除，资产不可用，资产不可恢复
 
         :param asset_state: The asset_state of this ShowAssetResponse.
         :type asset_state: str

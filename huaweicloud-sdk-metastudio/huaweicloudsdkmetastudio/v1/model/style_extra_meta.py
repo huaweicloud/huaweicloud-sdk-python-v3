@@ -20,6 +20,7 @@ class StyleExtraMeta:
         'picture_modeling_enable': 'bool',
         'edit_enable': 'bool',
         'edit_engine': 'str',
+        'model_id': 'str',
         'edit_value_items': 'dict(str, StyleExtraMetaEditValueItems)',
         'edit_color_items': 'dict(str, StyleExtraMetaEditColorItems)',
         'edit_components': 'dict(str, StyleExtraMetaEditComponents)',
@@ -30,13 +31,14 @@ class StyleExtraMeta:
         'picture_modeling_enable': 'picture_modeling_enable',
         'edit_enable': 'edit_enable',
         'edit_engine': 'edit_engine',
+        'model_id': 'model_id',
         'edit_value_items': 'edit_value_items',
         'edit_color_items': 'edit_color_items',
         'edit_components': 'edit_components',
         'modelling_algorithm': 'modelling_algorithm'
     }
 
-    def __init__(self, picture_modeling_enable=None, edit_enable=None, edit_engine=None, edit_value_items=None, edit_color_items=None, edit_components=None, modelling_algorithm=None):
+    def __init__(self, picture_modeling_enable=None, edit_enable=None, edit_engine=None, model_id=None, edit_value_items=None, edit_color_items=None, edit_components=None, modelling_algorithm=None):
         """StyleExtraMeta
 
         The model defined in huaweicloud sdk
@@ -47,13 +49,15 @@ class StyleExtraMeta:
         :type edit_enable: bool
         :param edit_engine: 编辑使用引擎
         :type edit_engine: str
+        :param model_id: 照片建模算法调用的模型类型
+        :type model_id: str
         :param edit_value_items: 值可设置条目列表
         :type edit_value_items: dict(str, StyleExtraMetaEditValueItems)
         :param edit_color_items: 颜色可设置条目列表
         :type edit_color_items: dict(str, StyleExtraMetaEditColorItems)
         :param edit_components: 可替换组件列表
         :type edit_components: dict(str, StyleExtraMetaEditComponents)
-        :param modelling_algorithm: 
+        :param modelling_algorithm: 分类算法列表
         :type modelling_algorithm: dict(str, StyleExtraMetaModellingAlgorithm)
         """
         
@@ -62,6 +66,7 @@ class StyleExtraMeta:
         self._picture_modeling_enable = None
         self._edit_enable = None
         self._edit_engine = None
+        self._model_id = None
         self._edit_value_items = None
         self._edit_color_items = None
         self._edit_components = None
@@ -74,6 +79,8 @@ class StyleExtraMeta:
             self.edit_enable = edit_enable
         if edit_engine is not None:
             self.edit_engine = edit_engine
+        if model_id is not None:
+            self.model_id = model_id
         if edit_value_items is not None:
             self.edit_value_items = edit_value_items
         if edit_color_items is not None:
@@ -150,6 +157,28 @@ class StyleExtraMeta:
         self._edit_engine = edit_engine
 
     @property
+    def model_id(self):
+        """Gets the model_id of this StyleExtraMeta.
+
+        照片建模算法调用的模型类型
+
+        :return: The model_id of this StyleExtraMeta.
+        :rtype: str
+        """
+        return self._model_id
+
+    @model_id.setter
+    def model_id(self, model_id):
+        """Sets the model_id of this StyleExtraMeta.
+
+        照片建模算法调用的模型类型
+
+        :param model_id: The model_id of this StyleExtraMeta.
+        :type model_id: str
+        """
+        self._model_id = model_id
+
+    @property
     def edit_value_items(self):
         """Gets the edit_value_items of this StyleExtraMeta.
 
@@ -219,6 +248,8 @@ class StyleExtraMeta:
     def modelling_algorithm(self):
         """Gets the modelling_algorithm of this StyleExtraMeta.
 
+        分类算法列表
+
         :return: The modelling_algorithm of this StyleExtraMeta.
         :rtype: dict(str, StyleExtraMetaModellingAlgorithm)
         """
@@ -227,6 +258,8 @@ class StyleExtraMeta:
     @modelling_algorithm.setter
     def modelling_algorithm(self, modelling_algorithm):
         """Sets the modelling_algorithm of this StyleExtraMeta.
+
+        分类算法列表
 
         :param modelling_algorithm: The modelling_algorithm of this StyleExtraMeta.
         :type modelling_algorithm: dict(str, StyleExtraMetaModellingAlgorithm)

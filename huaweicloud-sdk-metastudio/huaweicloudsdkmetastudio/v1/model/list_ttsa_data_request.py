@@ -33,7 +33,7 @@ class ListTtsaDataRequest:
 
         :param job_id: 任务ID。
         :type job_id: str
-        :param offset: 偏移量，表示生成内容时间偏移，目前每次返回2S内容
+        :param offset: 偏移量，表示生成内容时间偏移，目前每次返回2秒内容。
         :type offset: int
         """
         
@@ -73,7 +73,7 @@ class ListTtsaDataRequest:
     def offset(self):
         """Gets the offset of this ListTtsaDataRequest.
 
-        偏移量，表示生成内容时间偏移，目前每次返回2S内容
+        偏移量，表示生成内容时间偏移，目前每次返回2秒内容。
 
         :return: The offset of this ListTtsaDataRequest.
         :rtype: int
@@ -84,7 +84,7 @@ class ListTtsaDataRequest:
     def offset(self, offset):
         """Sets the offset of this ListTtsaDataRequest.
 
-        偏移量，表示生成内容时间偏移，目前每次返回2S内容
+        偏移量，表示生成内容时间偏移，目前每次返回2秒内容。
 
         :param offset: The offset of this ListTtsaDataRequest.
         :type offset: int

@@ -31,7 +31,7 @@ class ControlDigitalHumanLiveReq:
 
         The model defined in huaweicloud sdk
 
-        :param command: 命令名称。 - BODY_POS_RESET: 视觉驱动复位 - HIPS_POS_ADJUST: 模型位移调整 - EYE_POS: 眼神锁定/解锁 - SKELETON_ROTATION_ADJUST: 骨骼旋转 - LOCK_SKELETONS: 骨骼锁定 - UNLOCK_SKELETONS: 骨骼解锁
+        :param command: 命令名称。 - BODY_POS_RESET：视觉驱动复位 - HIPS_POS_ADJUST：模型位移调整 - EYE_POS：眼神锁定/解锁 - SKELETON_ROTATION_ADJUST：骨骼旋转 - LOCK_SKELETONS：骨骼锁定 - UNLOCK_SKELETONS：骨骼解锁
         :type command: str
         :param params: 命令参数。
         :type params: object
@@ -51,7 +51,7 @@ class ControlDigitalHumanLiveReq:
     def command(self):
         """Gets the command of this ControlDigitalHumanLiveReq.
 
-        命令名称。 - BODY_POS_RESET: 视觉驱动复位 - HIPS_POS_ADJUST: 模型位移调整 - EYE_POS: 眼神锁定/解锁 - SKELETON_ROTATION_ADJUST: 骨骼旋转 - LOCK_SKELETONS: 骨骼锁定 - UNLOCK_SKELETONS: 骨骼解锁
+        命令名称。 - BODY_POS_RESET：视觉驱动复位 - HIPS_POS_ADJUST：模型位移调整 - EYE_POS：眼神锁定/解锁 - SKELETON_ROTATION_ADJUST：骨骼旋转 - LOCK_SKELETONS：骨骼锁定 - UNLOCK_SKELETONS：骨骼解锁
 
         :return: The command of this ControlDigitalHumanLiveReq.
         :rtype: str
@@ -62,7 +62,7 @@ class ControlDigitalHumanLiveReq:
     def command(self, command):
         """Sets the command of this ControlDigitalHumanLiveReq.
 
-        命令名称。 - BODY_POS_RESET: 视觉驱动复位 - HIPS_POS_ADJUST: 模型位移调整 - EYE_POS: 眼神锁定/解锁 - SKELETON_ROTATION_ADJUST: 骨骼旋转 - LOCK_SKELETONS: 骨骼锁定 - UNLOCK_SKELETONS: 骨骼解锁
+        命令名称。 - BODY_POS_RESET：视觉驱动复位 - HIPS_POS_ADJUST：模型位移调整 - EYE_POS：眼神锁定/解锁 - SKELETON_ROTATION_ADJUST：骨骼旋转 - LOCK_SKELETONS：骨骼锁定 - UNLOCK_SKELETONS：骨骼解锁
 
         :param command: The command of this ControlDigitalHumanLiveReq.
         :type command: str

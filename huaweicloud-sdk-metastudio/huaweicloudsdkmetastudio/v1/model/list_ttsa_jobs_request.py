@@ -18,41 +18,48 @@ class ListTtsaJobsRequest:
 
     openapi_types = {
         'offset': 'int',
-        'limit': 'int'
+        'limit': 'int',
+        'x_app_user_id': 'str'
     }
 
     attribute_map = {
         'offset': 'offset',
-        'limit': 'limit'
+        'limit': 'limit',
+        'x_app_user_id': 'X-App-UserId'
     }
 
-    def __init__(self, offset=None, limit=None):
+    def __init__(self, offset=None, limit=None, x_app_user_id=None):
         """ListTtsaJobsRequest
 
         The model defined in huaweicloud sdk
 
-        :param offset: 偏移量，表示从此偏移量开始查询
+        :param offset: 偏移量，表示从此偏移量开始查询。
         :type offset: int
-        :param limit: 每页显示的条目数量
+        :param limit: 每页显示的条目数量。
         :type limit: int
+        :param x_app_user_id: 开发者应用作为资产权属的可选字段。
+        :type x_app_user_id: str
         """
         
         
 
         self._offset = None
         self._limit = None
+        self._x_app_user_id = None
         self.discriminator = None
 
         if offset is not None:
             self.offset = offset
         if limit is not None:
             self.limit = limit
+        if x_app_user_id is not None:
+            self.x_app_user_id = x_app_user_id
 
     @property
     def offset(self):
         """Gets the offset of this ListTtsaJobsRequest.
 
-        偏移量，表示从此偏移量开始查询
+        偏移量，表示从此偏移量开始查询。
 
         :return: The offset of this ListTtsaJobsRequest.
         :rtype: int
@@ -63,7 +70,7 @@ class ListTtsaJobsRequest:
     def offset(self, offset):
         """Sets the offset of this ListTtsaJobsRequest.
 
-        偏移量，表示从此偏移量开始查询
+        偏移量，表示从此偏移量开始查询。
 
         :param offset: The offset of this ListTtsaJobsRequest.
         :type offset: int
@@ -74,7 +81,7 @@ class ListTtsaJobsRequest:
     def limit(self):
         """Gets the limit of this ListTtsaJobsRequest.
 
-        每页显示的条目数量
+        每页显示的条目数量。
 
         :return: The limit of this ListTtsaJobsRequest.
         :rtype: int
@@ -85,12 +92,34 @@ class ListTtsaJobsRequest:
     def limit(self, limit):
         """Sets the limit of this ListTtsaJobsRequest.
 
-        每页显示的条目数量
+        每页显示的条目数量。
 
         :param limit: The limit of this ListTtsaJobsRequest.
         :type limit: int
         """
         self._limit = limit
+
+    @property
+    def x_app_user_id(self):
+        """Gets the x_app_user_id of this ListTtsaJobsRequest.
+
+        开发者应用作为资产权属的可选字段。
+
+        :return: The x_app_user_id of this ListTtsaJobsRequest.
+        :rtype: str
+        """
+        return self._x_app_user_id
+
+    @x_app_user_id.setter
+    def x_app_user_id(self, x_app_user_id):
+        """Sets the x_app_user_id of this ListTtsaJobsRequest.
+
+        开发者应用作为资产权属的可选字段。
+
+        :param x_app_user_id: The x_app_user_id of this ListTtsaJobsRequest.
+        :type x_app_user_id: str
+        """
+        self._x_app_user_id = x_app_user_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

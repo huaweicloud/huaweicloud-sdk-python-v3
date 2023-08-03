@@ -39,7 +39,7 @@ class PictureModelingByUrlReq:
         :type picture_url: str
         :param style_id: 风格ID
         :type style_id: str
-        :param name: 风格ID
+        :param name: 模型名称
         :type name: str
         :param notify_url: 照片建模任务结束的回调地址。
         :type notify_url: str
@@ -55,8 +55,7 @@ class PictureModelingByUrlReq:
 
         self.picture_url = picture_url
         self.style_id = style_id
-        if name is not None:
-            self.name = name
+        self.name = name
         if notify_url is not None:
             self.notify_url = notify_url
 
@@ -108,7 +107,7 @@ class PictureModelingByUrlReq:
     def name(self):
         """Gets the name of this PictureModelingByUrlReq.
 
-        风格ID
+        模型名称
 
         :return: The name of this PictureModelingByUrlReq.
         :rtype: str
@@ -119,7 +118,7 @@ class PictureModelingByUrlReq:
     def name(self, name):
         """Sets the name of this PictureModelingByUrlReq.
 
-        风格ID
+        模型名称
 
         :param name: The name of this PictureModelingByUrlReq.
         :type name: str

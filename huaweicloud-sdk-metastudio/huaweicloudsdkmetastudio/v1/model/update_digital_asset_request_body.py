@@ -47,11 +47,11 @@ class UpdateDigitalAssetRequestBody:
         :type asset_name: str
         :param asset_description: 资产描述。
         :type asset_description: str
-        :param asset_type: 资产类型。 * HUMAN_MODEL:数字人模型 * VOICE_MODEL:音色模型(仅系统管理员可更新) * SCENE:场景模型 * ANIMATION:动作动画 * VIDEO:视频文件 * IMAGE:图片文件 * PPT:幻灯片文件 * MATERIAL:风格化素材
+        :param asset_type: 资产类型。 * HUMAN_MODEL：数字人模型 * VOICE_MODEL：音色模型（仅系统管理员可更新） * SCENE：场景模型 * ANIMATION：动作动画 * VIDEO：视频文件 * IMAGE：图片文件 * PPT：幻灯片文件 * MATERIAL：风格化素材 * NORMAL_MODEL: 普通模型 * COMMON_FILE：通用文件 * HUMAN_MODEL_2D:2D数字人网络模型 * BUSINESS_CARD_TEMPLET: 数字人名片模板
         :type asset_type: str
-        :param asset_state: 资产状态。 * UNACTIVED: 取消激活。未激活的资产不可用于其他业务 * ACTIVED: 激活。激活后的资产科用于其他业务
+        :param asset_state: 资产状态。 * UNACTIVED：取消激活。未激活的资产不可用于其他业务 * ACTIVED：激活。激活后的资产可用于其他业务
         :type asset_state: str
-        :param asset_owner: 资产所属者。填租户的project id。
+        :param asset_owner: 项目ID。
         :type asset_owner: str
         :param tags: 标签列表。
         :type tags: list[str]
@@ -138,7 +138,7 @@ class UpdateDigitalAssetRequestBody:
     def asset_type(self):
         """Gets the asset_type of this UpdateDigitalAssetRequestBody.
 
-        资产类型。 * HUMAN_MODEL:数字人模型 * VOICE_MODEL:音色模型(仅系统管理员可更新) * SCENE:场景模型 * ANIMATION:动作动画 * VIDEO:视频文件 * IMAGE:图片文件 * PPT:幻灯片文件 * MATERIAL:风格化素材
+        资产类型。 * HUMAN_MODEL：数字人模型 * VOICE_MODEL：音色模型（仅系统管理员可更新） * SCENE：场景模型 * ANIMATION：动作动画 * VIDEO：视频文件 * IMAGE：图片文件 * PPT：幻灯片文件 * MATERIAL：风格化素材 * NORMAL_MODEL: 普通模型 * COMMON_FILE：通用文件 * HUMAN_MODEL_2D:2D数字人网络模型 * BUSINESS_CARD_TEMPLET: 数字人名片模板
 
         :return: The asset_type of this UpdateDigitalAssetRequestBody.
         :rtype: str
@@ -149,7 +149,7 @@ class UpdateDigitalAssetRequestBody:
     def asset_type(self, asset_type):
         """Sets the asset_type of this UpdateDigitalAssetRequestBody.
 
-        资产类型。 * HUMAN_MODEL:数字人模型 * VOICE_MODEL:音色模型(仅系统管理员可更新) * SCENE:场景模型 * ANIMATION:动作动画 * VIDEO:视频文件 * IMAGE:图片文件 * PPT:幻灯片文件 * MATERIAL:风格化素材
+        资产类型。 * HUMAN_MODEL：数字人模型 * VOICE_MODEL：音色模型（仅系统管理员可更新） * SCENE：场景模型 * ANIMATION：动作动画 * VIDEO：视频文件 * IMAGE：图片文件 * PPT：幻灯片文件 * MATERIAL：风格化素材 * NORMAL_MODEL: 普通模型 * COMMON_FILE：通用文件 * HUMAN_MODEL_2D:2D数字人网络模型 * BUSINESS_CARD_TEMPLET: 数字人名片模板
 
         :param asset_type: The asset_type of this UpdateDigitalAssetRequestBody.
         :type asset_type: str
@@ -160,7 +160,7 @@ class UpdateDigitalAssetRequestBody:
     def asset_state(self):
         """Gets the asset_state of this UpdateDigitalAssetRequestBody.
 
-        资产状态。 * UNACTIVED: 取消激活。未激活的资产不可用于其他业务 * ACTIVED: 激活。激活后的资产科用于其他业务
+        资产状态。 * UNACTIVED：取消激活。未激活的资产不可用于其他业务 * ACTIVED：激活。激活后的资产可用于其他业务
 
         :return: The asset_state of this UpdateDigitalAssetRequestBody.
         :rtype: str
@@ -171,7 +171,7 @@ class UpdateDigitalAssetRequestBody:
     def asset_state(self, asset_state):
         """Sets the asset_state of this UpdateDigitalAssetRequestBody.
 
-        资产状态。 * UNACTIVED: 取消激活。未激活的资产不可用于其他业务 * ACTIVED: 激活。激活后的资产科用于其他业务
+        资产状态。 * UNACTIVED：取消激活。未激活的资产不可用于其他业务 * ACTIVED：激活。激活后的资产可用于其他业务
 
         :param asset_state: The asset_state of this UpdateDigitalAssetRequestBody.
         :type asset_state: str
@@ -182,7 +182,7 @@ class UpdateDigitalAssetRequestBody:
     def asset_owner(self):
         """Gets the asset_owner of this UpdateDigitalAssetRequestBody.
 
-        资产所属者。填租户的project id。
+        项目ID。
 
         :return: The asset_owner of this UpdateDigitalAssetRequestBody.
         :rtype: str
@@ -193,7 +193,7 @@ class UpdateDigitalAssetRequestBody:
     def asset_owner(self, asset_owner):
         """Sets the asset_owner of this UpdateDigitalAssetRequestBody.
 
-        资产所属者。填租户的project id。
+        项目ID。
 
         :param asset_owner: The asset_owner of this UpdateDigitalAssetRequestBody.
         :type asset_owner: str

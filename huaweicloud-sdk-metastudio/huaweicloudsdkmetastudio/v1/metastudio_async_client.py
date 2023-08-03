@@ -86,7 +86,7 @@ class MetaStudioAsyncClient(Client):
     def delete_asset_async(self, request):
         """删除资产
 
-        该接口用于删除资产库中的媒体资产列表。第一次调用删除接口，将指定资产放入回收站；第二次调用删除接口，将指定资产彻底删除。
+        该接口用于删除资产库中的媒体资产。第一次调用删除接口，将指定资产放入回收站；第二次调用删除接口，将指定资产彻底删除。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -109,6 +109,8 @@ class MetaStudioAsyncClient(Client):
             path_params['asset_id'] = local_var_params['asset_id']
 
         query_params = []
+        if 'mode' in local_var_params:
+            query_params.append(('mode', local_var_params['mode']))
 
         header_params = {}
         if 'x_app_user_id' in local_var_params:
@@ -251,8 +253,8 @@ class MetaStudioAsyncClient(Client):
             query_params.append(('render_engine', local_var_params['render_engine']))
         if 'sex' in local_var_params:
             query_params.append(('sex', local_var_params['sex']))
-        if 'lanuage' in local_var_params:
-            query_params.append(('lanuage', local_var_params['lanuage']))
+        if 'language' in local_var_params:
+            query_params.append(('language', local_var_params['language']))
         if 'system_property' in local_var_params:
             query_params.append(('system_property', local_var_params['system_property']))
 
@@ -409,7 +411,7 @@ class MetaStudioAsyncClient(Client):
     def update_digital_asset_async(self, request):
         """更新资产
 
-        该接口用于更新资产库中的媒体资产列表。
+        该接口用于更新资产库中的媒体资产信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1001,6 +1003,8 @@ class MetaStudioAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
 
         form_params = {}
 
@@ -1121,6 +1125,8 @@ class MetaStudioAsyncClient(Client):
             query_params.append(('limit', local_var_params['limit']))
 
         header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
 
         form_params = {}
 
@@ -1145,69 +1151,6 @@ class MetaStudioAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ListTtsaJobsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-    def list_self_privileges_async(self, request):
-        """查看租户自己权限列表
-
-        查看租户自己权限列表
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ListSelfPrivileges
-        :type request: :class:`huaweicloudsdkmetastudio.v1.ListSelfPrivilegesRequest`
-        :rtype: :class:`huaweicloudsdkmetastudio.v1.ListSelfPrivilegesResponse`
-        """
-        return self._list_self_privileges_with_http_info(request)
-
-    def _list_self_privileges_with_http_info(self, request):
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-        if 'offset' in local_var_params:
-            query_params.append(('offset', local_var_params['offset']))
-        if 'privilege_type' in local_var_params:
-            query_params.append(('privilege_type', local_var_params['privilege_type']))
-
-        header_params = {}
-        if 'x_app_user_id' in local_var_params:
-            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v1/{project_id}/privileges',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListSelfPrivilegesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

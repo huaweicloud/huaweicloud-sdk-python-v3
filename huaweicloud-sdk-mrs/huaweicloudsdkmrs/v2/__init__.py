@@ -22,8 +22,15 @@ from huaweicloudsdkmrs.v2.model.config import Config
 from huaweicloudsdkmrs.v2.model.create_cluster_req_v2 import CreateClusterReqV2
 from huaweicloudsdkmrs.v2.model.create_cluster_request import CreateClusterRequest
 from huaweicloudsdkmrs.v2.model.create_cluster_response import CreateClusterResponse
+from huaweicloudsdkmrs.v2.model.create_data_connector_request import CreateDataConnectorRequest
+from huaweicloudsdkmrs.v2.model.create_data_connector_response import CreateDataConnectorResponse
 from huaweicloudsdkmrs.v2.model.create_execute_job_request import CreateExecuteJobRequest
 from huaweicloudsdkmrs.v2.model.create_execute_job_response import CreateExecuteJobResponse
+from huaweicloudsdkmrs.v2.model.data_connector import DataConnector
+from huaweicloudsdkmrs.v2.model.data_connector_detail import DataConnectorDetail
+from huaweicloudsdkmrs.v2.model.data_connector_req import DataConnectorReq
+from huaweicloudsdkmrs.v2.model.delete_data_connector_request import DeleteDataConnectorRequest
+from huaweicloudsdkmrs.v2.model.delete_data_connector_response import DeleteDataConnectorResponse
 from huaweicloudsdkmrs.v2.model.execute_sql_request import ExecuteSqlRequest
 from huaweicloudsdkmrs.v2.model.execute_sql_response import ExecuteSqlResponse
 from huaweicloudsdkmrs.v2.model.file_status_v2 import FileStatusV2
@@ -31,6 +38,8 @@ from huaweicloudsdkmrs.v2.model.job_batch_delete import JobBatchDelete
 from huaweicloudsdkmrs.v2.model.job_execution import JobExecution
 from huaweicloudsdkmrs.v2.model.job_query_bean import JobQueryBean
 from huaweicloudsdkmrs.v2.model.job_submit_result import JobSubmitResult
+from huaweicloudsdkmrs.v2.model.list_data_connector_request import ListDataConnectorRequest
+from huaweicloudsdkmrs.v2.model.list_data_connector_response import ListDataConnectorResponse
 from huaweicloudsdkmrs.v2.model.node_group_v2 import NodeGroupV2
 from huaweicloudsdkmrs.v2.model.resources_plan import ResourcesPlan
 from huaweicloudsdkmrs.v2.model.rule import Rule
@@ -63,5 +72,7 @@ from huaweicloudsdkmrs.v2.model.update_agency_mapping_response import UpdateAgen
 from huaweicloudsdkmrs.v2.model.update_cluster_name_request import UpdateClusterNameRequest
 from huaweicloudsdkmrs.v2.model.update_cluster_name_response import UpdateClusterNameResponse
 from huaweicloudsdkmrs.v2.model.update_cluster_req import UpdateClusterReq
+from huaweicloudsdkmrs.v2.model.update_data_connector_request import UpdateDataConnectorRequest
+from huaweicloudsdkmrs.v2.model.update_data_connector_response import UpdateDataConnectorResponse
 from huaweicloudsdkmrs.v2.model.volume import Volume
 

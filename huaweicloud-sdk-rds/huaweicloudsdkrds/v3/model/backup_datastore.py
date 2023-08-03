@@ -31,7 +31,7 @@ class BackupDatastore:
 
         The model defined in huaweicloud sdk
 
-        :param type: 数据库引擎，不区分大小写：  - MySQL - PostgreSQL - SQLServer
+        :param type: 数据库引擎，不区分大小写： - MySQL - PostgreSQL - SQLServer - MariaDB
         :type type: str
         :param version: 数据库版本。
         :type version: str
@@ -50,7 +50,7 @@ class BackupDatastore:
     def type(self):
         """Gets the type of this BackupDatastore.
 
-        数据库引擎，不区分大小写：  - MySQL - PostgreSQL - SQLServer
+        数据库引擎，不区分大小写： - MySQL - PostgreSQL - SQLServer - MariaDB
 
         :return: The type of this BackupDatastore.
         :rtype: str
@@ -61,7 +61,7 @@ class BackupDatastore:
     def type(self, type):
         """Sets the type of this BackupDatastore.
 
-        数据库引擎，不区分大小写：  - MySQL - PostgreSQL - SQLServer
+        数据库引擎，不区分大小写： - MySQL - PostgreSQL - SQLServer - MariaDB
 
         :param type: The type of this BackupDatastore.
         :type type: str

@@ -19,6 +19,7 @@ class ConfigsGetBody:
     openapi_types = {
         'business_type': 'str',
         'service_area': 'str',
+        'remark': 'str',
         'origin_request_header': 'list[OriginRequestHeader]',
         'http_response_header': 'list[HttpResponseHeader]',
         'url_auth': 'UrlAuthGetBody',
@@ -31,7 +32,7 @@ class ConfigsGetBody:
         'referer': 'RefererConfig',
         'force_redirect': 'ForceRedirectConfig',
         'compress': 'Compress',
-        'cache_url_parameter_filter': 'CacheUrlParameterFilter',
+        'cache_url_parameter_filter': 'CacheUrlParameterFilterGetBody',
         'ipv6_accelerate': 'int',
         'error_code_cache': 'list[ErrorCodeCache]',
         'origin_range_status': 'str',
@@ -44,12 +45,16 @@ class ConfigsGetBody:
         'websocket': 'WebSocketSeek',
         'video_seek': 'VideoSeek',
         'request_limit_rules': 'list[RequestLimitRules]',
+        'ip_frequency_limit': 'IpFrequencyLimitQuery',
+        'hsts': 'HstsQuery',
+        'quic': 'Quic',
         'error_code_redirect_rules': 'list[ErrorCodeRedirectRules]'
     }
 
     attribute_map = {
         'business_type': 'business_type',
         'service_area': 'service_area',
+        'remark': 'remark',
         'origin_request_header': 'origin_request_header',
         'http_response_header': 'http_response_header',
         'url_auth': 'url_auth',
@@ -75,18 +80,23 @@ class ConfigsGetBody:
         'websocket': 'websocket',
         'video_seek': 'video_seek',
         'request_limit_rules': 'request_limit_rules',
+        'ip_frequency_limit': 'ip_frequency_limit',
+        'hsts': 'hsts',
+        'quic': 'quic',
         'error_code_redirect_rules': 'error_code_redirect_rules'
     }
 
-    def __init__(self, business_type=None, service_area=None, origin_request_header=None, http_response_header=None, url_auth=None, https=None, sources=None, origin_protocol=None, origin_follow302_status=None, cache_rules=None, ip_filter=None, referer=None, force_redirect=None, compress=None, cache_url_parameter_filter=None, ipv6_accelerate=None, error_code_cache=None, origin_range_status=None, user_agent_filter=None, origin_request_url_rewrite=None, flexible_origin=None, slice_etag_status=None, origin_receive_timeout=None, remote_auth=None, websocket=None, video_seek=None, request_limit_rules=None, error_code_redirect_rules=None):
+    def __init__(self, business_type=None, service_area=None, remark=None, origin_request_header=None, http_response_header=None, url_auth=None, https=None, sources=None, origin_protocol=None, origin_follow302_status=None, cache_rules=None, ip_filter=None, referer=None, force_redirect=None, compress=None, cache_url_parameter_filter=None, ipv6_accelerate=None, error_code_cache=None, origin_range_status=None, user_agent_filter=None, origin_request_url_rewrite=None, flexible_origin=None, slice_etag_status=None, origin_receive_timeout=None, remote_auth=None, websocket=None, video_seek=None, request_limit_rules=None, ip_frequency_limit=None, hsts=None, quic=None, error_code_redirect_rules=None):
         """ConfigsGetBody
 
         The model defined in huaweicloud sdk
 
-        :param business_type: 业务类型，web：网站加速，download：文件下载加速，video：点播加速，wholesit：全站加速。
+        :param business_type: 业务类型： - web：网站加速； - download：文件下载加速； - video：点播加速； - wholesite：全站加速。
         :type business_type: str
-        :param service_area: 服务区域，mainland_china：中国大陆，global：全球，outside_mainland_china：中国大陆境外。
+        :param service_area: 服务区域： - mainland_china：中国大陆； - global：全球； - outside_mainland_china：中国大陆境外。
         :type service_area: str
+        :param remark: 域名备注。
+        :type remark: str
         :param origin_request_header: 回源请求头配置
         :type origin_request_header: list[:class:`huaweicloudsdkcdn.v2.OriginRequestHeader`]
         :param http_response_header: http header配置
@@ -112,7 +122,7 @@ class ConfigsGetBody:
         :param compress: 
         :type compress: :class:`huaweicloudsdkcdn.v2.Compress`
         :param cache_url_parameter_filter: 
-        :type cache_url_parameter_filter: :class:`huaweicloudsdkcdn.v2.CacheUrlParameterFilter`
+        :type cache_url_parameter_filter: :class:`huaweicloudsdkcdn.v2.CacheUrlParameterFilterGetBody`
         :param ipv6_accelerate: ipv6设置，1：打开；0：关闭。
         :type ipv6_accelerate: int
         :param error_code_cache: 状态码缓存时间。
@@ -137,6 +147,12 @@ class ConfigsGetBody:
         :type video_seek: :class:`huaweicloudsdkcdn.v2.VideoSeek`
         :param request_limit_rules: 请求限速。
         :type request_limit_rules: list[:class:`huaweicloudsdkcdn.v2.RequestLimitRules`]
+        :param ip_frequency_limit: 
+        :type ip_frequency_limit: :class:`huaweicloudsdkcdn.v2.IpFrequencyLimitQuery`
+        :param hsts: 
+        :type hsts: :class:`huaweicloudsdkcdn.v2.HstsQuery`
+        :param quic: 
+        :type quic: :class:`huaweicloudsdkcdn.v2.Quic`
         :param error_code_redirect_rules: 自定义错误页面
         :type error_code_redirect_rules: list[:class:`huaweicloudsdkcdn.v2.ErrorCodeRedirectRules`]
         """
@@ -145,6 +161,7 @@ class ConfigsGetBody:
 
         self._business_type = None
         self._service_area = None
+        self._remark = None
         self._origin_request_header = None
         self._http_response_header = None
         self._url_auth = None
@@ -170,6 +187,9 @@ class ConfigsGetBody:
         self._websocket = None
         self._video_seek = None
         self._request_limit_rules = None
+        self._ip_frequency_limit = None
+        self._hsts = None
+        self._quic = None
         self._error_code_redirect_rules = None
         self.discriminator = None
 
@@ -177,6 +197,8 @@ class ConfigsGetBody:
             self.business_type = business_type
         if service_area is not None:
             self.service_area = service_area
+        if remark is not None:
+            self.remark = remark
         if origin_request_header is not None:
             self.origin_request_header = origin_request_header
         if http_response_header is not None:
@@ -227,6 +249,12 @@ class ConfigsGetBody:
             self.video_seek = video_seek
         if request_limit_rules is not None:
             self.request_limit_rules = request_limit_rules
+        if ip_frequency_limit is not None:
+            self.ip_frequency_limit = ip_frequency_limit
+        if hsts is not None:
+            self.hsts = hsts
+        if quic is not None:
+            self.quic = quic
         if error_code_redirect_rules is not None:
             self.error_code_redirect_rules = error_code_redirect_rules
 
@@ -234,7 +262,7 @@ class ConfigsGetBody:
     def business_type(self):
         """Gets the business_type of this ConfigsGetBody.
 
-        业务类型，web：网站加速，download：文件下载加速，video：点播加速，wholesit：全站加速。
+        业务类型： - web：网站加速； - download：文件下载加速； - video：点播加速； - wholesite：全站加速。
 
         :return: The business_type of this ConfigsGetBody.
         :rtype: str
@@ -245,7 +273,7 @@ class ConfigsGetBody:
     def business_type(self, business_type):
         """Sets the business_type of this ConfigsGetBody.
 
-        业务类型，web：网站加速，download：文件下载加速，video：点播加速，wholesit：全站加速。
+        业务类型： - web：网站加速； - download：文件下载加速； - video：点播加速； - wholesite：全站加速。
 
         :param business_type: The business_type of this ConfigsGetBody.
         :type business_type: str
@@ -256,7 +284,7 @@ class ConfigsGetBody:
     def service_area(self):
         """Gets the service_area of this ConfigsGetBody.
 
-        服务区域，mainland_china：中国大陆，global：全球，outside_mainland_china：中国大陆境外。
+        服务区域： - mainland_china：中国大陆； - global：全球； - outside_mainland_china：中国大陆境外。
 
         :return: The service_area of this ConfigsGetBody.
         :rtype: str
@@ -267,12 +295,34 @@ class ConfigsGetBody:
     def service_area(self, service_area):
         """Sets the service_area of this ConfigsGetBody.
 
-        服务区域，mainland_china：中国大陆，global：全球，outside_mainland_china：中国大陆境外。
+        服务区域： - mainland_china：中国大陆； - global：全球； - outside_mainland_china：中国大陆境外。
 
         :param service_area: The service_area of this ConfigsGetBody.
         :type service_area: str
         """
         self._service_area = service_area
+
+    @property
+    def remark(self):
+        """Gets the remark of this ConfigsGetBody.
+
+        域名备注。
+
+        :return: The remark of this ConfigsGetBody.
+        :rtype: str
+        """
+        return self._remark
+
+    @remark.setter
+    def remark(self, remark):
+        """Sets the remark of this ConfigsGetBody.
+
+        域名备注。
+
+        :param remark: The remark of this ConfigsGetBody.
+        :type remark: str
+        """
+        self._remark = remark
 
     @property
     def origin_request_header(self):
@@ -519,7 +569,7 @@ class ConfigsGetBody:
         """Gets the cache_url_parameter_filter of this ConfigsGetBody.
 
         :return: The cache_url_parameter_filter of this ConfigsGetBody.
-        :rtype: :class:`huaweicloudsdkcdn.v2.CacheUrlParameterFilter`
+        :rtype: :class:`huaweicloudsdkcdn.v2.CacheUrlParameterFilterGetBody`
         """
         return self._cache_url_parameter_filter
 
@@ -528,7 +578,7 @@ class ConfigsGetBody:
         """Sets the cache_url_parameter_filter of this ConfigsGetBody.
 
         :param cache_url_parameter_filter: The cache_url_parameter_filter of this ConfigsGetBody.
-        :type cache_url_parameter_filter: :class:`huaweicloudsdkcdn.v2.CacheUrlParameterFilter`
+        :type cache_url_parameter_filter: :class:`huaweicloudsdkcdn.v2.CacheUrlParameterFilterGetBody`
         """
         self._cache_url_parameter_filter = cache_url_parameter_filter
 
@@ -779,6 +829,60 @@ class ConfigsGetBody:
         :type request_limit_rules: list[:class:`huaweicloudsdkcdn.v2.RequestLimitRules`]
         """
         self._request_limit_rules = request_limit_rules
+
+    @property
+    def ip_frequency_limit(self):
+        """Gets the ip_frequency_limit of this ConfigsGetBody.
+
+        :return: The ip_frequency_limit of this ConfigsGetBody.
+        :rtype: :class:`huaweicloudsdkcdn.v2.IpFrequencyLimitQuery`
+        """
+        return self._ip_frequency_limit
+
+    @ip_frequency_limit.setter
+    def ip_frequency_limit(self, ip_frequency_limit):
+        """Sets the ip_frequency_limit of this ConfigsGetBody.
+
+        :param ip_frequency_limit: The ip_frequency_limit of this ConfigsGetBody.
+        :type ip_frequency_limit: :class:`huaweicloudsdkcdn.v2.IpFrequencyLimitQuery`
+        """
+        self._ip_frequency_limit = ip_frequency_limit
+
+    @property
+    def hsts(self):
+        """Gets the hsts of this ConfigsGetBody.
+
+        :return: The hsts of this ConfigsGetBody.
+        :rtype: :class:`huaweicloudsdkcdn.v2.HstsQuery`
+        """
+        return self._hsts
+
+    @hsts.setter
+    def hsts(self, hsts):
+        """Sets the hsts of this ConfigsGetBody.
+
+        :param hsts: The hsts of this ConfigsGetBody.
+        :type hsts: :class:`huaweicloudsdkcdn.v2.HstsQuery`
+        """
+        self._hsts = hsts
+
+    @property
+    def quic(self):
+        """Gets the quic of this ConfigsGetBody.
+
+        :return: The quic of this ConfigsGetBody.
+        :rtype: :class:`huaweicloudsdkcdn.v2.Quic`
+        """
+        return self._quic
+
+    @quic.setter
+    def quic(self, quic):
+        """Sets the quic of this ConfigsGetBody.
+
+        :param quic: The quic of this ConfigsGetBody.
+        :type quic: :class:`huaweicloudsdkcdn.v2.Quic`
+        """
+        self._quic = quic
 
     @property
     def error_code_redirect_rules(self):

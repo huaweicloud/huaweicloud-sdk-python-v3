@@ -18,8 +18,8 @@ class ShowInstanceExtendProductInfoResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'hourly': 'list[ListProductsRespHourly]',
-        'monthly': 'list[ListProductsRespHourly]'
+        'hourly': 'list[ShowInstanceExtendProductInfoRespHourly]',
+        'monthly': 'list[ShowInstanceExtendProductInfoRespHourly]'
     }
 
     attribute_map = {
@@ -33,9 +33,9 @@ class ShowInstanceExtendProductInfoResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param hourly: 表示按需付费的产品列表。
-        :type hourly: list[:class:`huaweicloudsdkrabbitmq.v2.ListProductsRespHourly`]
+        :type hourly: list[:class:`huaweicloudsdkrabbitmq.v2.ShowInstanceExtendProductInfoRespHourly`]
         :param monthly: 表示包年包月的产品列表。当前暂不支持通过API创建包年包月的Rabbitmq实例。
-        :type monthly: list[:class:`huaweicloudsdkrabbitmq.v2.ListProductsRespHourly`]
+        :type monthly: list[:class:`huaweicloudsdkrabbitmq.v2.ShowInstanceExtendProductInfoRespHourly`]
         """
         
         super(ShowInstanceExtendProductInfoResponse, self).__init__()
@@ -56,7 +56,7 @@ class ShowInstanceExtendProductInfoResponse(SdkResponse):
         表示按需付费的产品列表。
 
         :return: The hourly of this ShowInstanceExtendProductInfoResponse.
-        :rtype: list[:class:`huaweicloudsdkrabbitmq.v2.ListProductsRespHourly`]
+        :rtype: list[:class:`huaweicloudsdkrabbitmq.v2.ShowInstanceExtendProductInfoRespHourly`]
         """
         return self._hourly
 
@@ -67,7 +67,7 @@ class ShowInstanceExtendProductInfoResponse(SdkResponse):
         表示按需付费的产品列表。
 
         :param hourly: The hourly of this ShowInstanceExtendProductInfoResponse.
-        :type hourly: list[:class:`huaweicloudsdkrabbitmq.v2.ListProductsRespHourly`]
+        :type hourly: list[:class:`huaweicloudsdkrabbitmq.v2.ShowInstanceExtendProductInfoRespHourly`]
         """
         self._hourly = hourly
 
@@ -78,7 +78,7 @@ class ShowInstanceExtendProductInfoResponse(SdkResponse):
         表示包年包月的产品列表。当前暂不支持通过API创建包年包月的Rabbitmq实例。
 
         :return: The monthly of this ShowInstanceExtendProductInfoResponse.
-        :rtype: list[:class:`huaweicloudsdkrabbitmq.v2.ListProductsRespHourly`]
+        :rtype: list[:class:`huaweicloudsdkrabbitmq.v2.ShowInstanceExtendProductInfoRespHourly`]
         """
         return self._monthly
 
@@ -89,7 +89,7 @@ class ShowInstanceExtendProductInfoResponse(SdkResponse):
         表示包年包月的产品列表。当前暂不支持通过API创建包年包月的Rabbitmq实例。
 
         :param monthly: The monthly of this ShowInstanceExtendProductInfoResponse.
-        :type monthly: list[:class:`huaweicloudsdkrabbitmq.v2.ListProductsRespHourly`]
+        :type monthly: list[:class:`huaweicloudsdkrabbitmq.v2.ShowInstanceExtendProductInfoRespHourly`]
         """
         self._monthly = monthly
 

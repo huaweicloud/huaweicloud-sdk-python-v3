@@ -37,7 +37,7 @@ class PPTAssetMeta:
 
         :param auto_analysis: PPT是否需要自动解析。
         :type auto_analysis: bool
-        :param ppt_analysis_status: PPT解析状态。 * INITIALIZE： 初始 * WAITING： 等待 * CONVERTING： 解析中 * FAILED： 失败 * SUCCEEDED： 成功 * CANCELED： 取消
+        :param ppt_analysis_status: PPT解析状态。 * INITIALIZE：初始 * WAITING：等待 * CONVERTING：解析中 * FAILED：失败 * SUCCEEDED：成功 * CANCELED：取消
         :type ppt_analysis_status: str
         :param page_count: PPT页面总数。
         :type page_count: int
@@ -88,7 +88,7 @@ class PPTAssetMeta:
     def ppt_analysis_status(self):
         """Gets the ppt_analysis_status of this PPTAssetMeta.
 
-        PPT解析状态。 * INITIALIZE： 初始 * WAITING： 等待 * CONVERTING： 解析中 * FAILED： 失败 * SUCCEEDED： 成功 * CANCELED： 取消
+        PPT解析状态。 * INITIALIZE：初始 * WAITING：等待 * CONVERTING：解析中 * FAILED：失败 * SUCCEEDED：成功 * CANCELED：取消
 
         :return: The ppt_analysis_status of this PPTAssetMeta.
         :rtype: str
@@ -99,7 +99,7 @@ class PPTAssetMeta:
     def ppt_analysis_status(self, ppt_analysis_status):
         """Sets the ppt_analysis_status of this PPTAssetMeta.
 
-        PPT解析状态。 * INITIALIZE： 初始 * WAITING： 等待 * CONVERTING： 解析中 * FAILED： 失败 * SUCCEEDED： 成功 * CANCELED： 取消
+        PPT解析状态。 * INITIALIZE：初始 * WAITING：等待 * CONVERTING：解析中 * FAILED：失败 * SUCCEEDED：成功 * CANCELED：取消
 
         :param ppt_analysis_status: The ppt_analysis_status of this PPTAssetMeta.
         :type ppt_analysis_status: str

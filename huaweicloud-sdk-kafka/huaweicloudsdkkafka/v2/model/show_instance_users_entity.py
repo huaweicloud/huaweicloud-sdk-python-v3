@@ -35,7 +35,7 @@ class ShowInstanceUsersEntity:
 
         The model defined in huaweicloud sdk
 
-        :param user_name: 用户名称。
+        :param user_name: 用户名称。  由英文字符开头，只能由英文字母、数字、中划线、下划线组成，长度为4~64的字符。
         :type user_name: str
         :param role: 用户角色。
         :type role: str
@@ -66,7 +66,7 @@ class ShowInstanceUsersEntity:
     def user_name(self):
         """Gets the user_name of this ShowInstanceUsersEntity.
 
-        用户名称。
+        用户名称。  由英文字符开头，只能由英文字母、数字、中划线、下划线组成，长度为4~64的字符。
 
         :return: The user_name of this ShowInstanceUsersEntity.
         :rtype: str
@@ -77,7 +77,7 @@ class ShowInstanceUsersEntity:
     def user_name(self, user_name):
         """Sets the user_name of this ShowInstanceUsersEntity.
 
-        用户名称。
+        用户名称。  由英文字符开头，只能由英文字母、数字、中划线、下划线组成，长度为4~64的字符。
 
         :param user_name: The user_name of this ShowInstanceUsersEntity.
         :type user_name: str

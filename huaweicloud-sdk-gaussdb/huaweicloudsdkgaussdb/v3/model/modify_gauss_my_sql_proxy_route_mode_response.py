@@ -2,10 +2,11 @@
 
 import six
 
+from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class IssueResponseV4Env:
+class ModifyGaussMySqlProxyRouteModeResponse(SdkResponse):
 
     """
     Attributes:
@@ -17,80 +18,51 @@ class IssueResponseV4Env:
     sensitive_list = []
 
     openapi_types = {
-        'id': 'int',
-        'name': 'str'
+        'job_id': 'str'
     }
 
     attribute_map = {
-        'id': 'id',
-        'name': 'name'
+        'job_id': 'job_id'
     }
 
-    def __init__(self, id=None, name=None):
-        """IssueResponseV4Env
+    def __init__(self, job_id=None):
+        """ModifyGaussMySqlProxyRouteModeResponse
 
         The model defined in huaweicloud sdk
 
-        :param id: 缺陷发现环境id
-        :type id: int
-        :param name: 缺陷发现环境名称
-        :type name: str
+        :param job_id: 任务ID。
+        :type job_id: str
         """
         
-        
+        super(ModifyGaussMySqlProxyRouteModeResponse, self).__init__()
 
-        self._id = None
-        self._name = None
+        self._job_id = None
         self.discriminator = None
 
-        if id is not None:
-            self.id = id
-        if name is not None:
-            self.name = name
+        if job_id is not None:
+            self.job_id = job_id
 
     @property
-    def id(self):
-        """Gets the id of this IssueResponseV4Env.
+    def job_id(self):
+        """Gets the job_id of this ModifyGaussMySqlProxyRouteModeResponse.
 
-        缺陷发现环境id
+        任务ID。
 
-        :return: The id of this IssueResponseV4Env.
-        :rtype: int
-        """
-        return self._id
-
-    @id.setter
-    def id(self, id):
-        """Sets the id of this IssueResponseV4Env.
-
-        缺陷发现环境id
-
-        :param id: The id of this IssueResponseV4Env.
-        :type id: int
-        """
-        self._id = id
-
-    @property
-    def name(self):
-        """Gets the name of this IssueResponseV4Env.
-
-        缺陷发现环境名称
-
-        :return: The name of this IssueResponseV4Env.
+        :return: The job_id of this ModifyGaussMySqlProxyRouteModeResponse.
         :rtype: str
         """
-        return self._name
+        return self._job_id
 
-    @name.setter
-    def name(self, name):
-        """Sets the name of this IssueResponseV4Env.
+    @job_id.setter
+    def job_id(self, job_id):
+        """Sets the job_id of this ModifyGaussMySqlProxyRouteModeResponse.
 
-        缺陷发现环境名称
+        任务ID。
 
-        :param name: The name of this IssueResponseV4Env.
-        :type name: str
+        :param job_id: The job_id of this ModifyGaussMySqlProxyRouteModeResponse.
+        :type job_id: str
         """
-        self._name = name
+        self._job_id = job_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -134,7 +106,7 @@ class IssueResponseV4Env:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, IssueResponseV4Env):
+        if not isinstance(other, ModifyGaussMySqlProxyRouteModeResponse):
             return False
 
         return self.__dict__ == other.__dict__

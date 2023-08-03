@@ -39,13 +39,13 @@ class TTSAJob:
 
         :param job_id: 语音驱动任务ID。
         :type job_id: str
-        :param state: 任务的状态。 * WAITING * PROCESSING * SUCCEED * FAILED
+        :param state: 任务的状态。 * WAITING：等待 * PROCESSING：处理中 * SUCCEED：成功 * FAILED：失败
         :type state: str
-        :param start_time: 任务开始时间,格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”。
+        :param start_time: 任务开始时间，格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”。
         :type start_time: str
-        :param end_time: 任务结束时间,格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”。
+        :param end_time: 任务结束时间，格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”。
         :type end_time: str
-        :param content_duration: 语音驱动内容时长，单位:秒。
+        :param content_duration: 语音驱动内容时长。  单位:秒。
         :type content_duration: float
         """
         
@@ -95,7 +95,7 @@ class TTSAJob:
     def state(self):
         """Gets the state of this TTSAJob.
 
-        任务的状态。 * WAITING * PROCESSING * SUCCEED * FAILED
+        任务的状态。 * WAITING：等待 * PROCESSING：处理中 * SUCCEED：成功 * FAILED：失败
 
         :return: The state of this TTSAJob.
         :rtype: str
@@ -106,7 +106,7 @@ class TTSAJob:
     def state(self, state):
         """Sets the state of this TTSAJob.
 
-        任务的状态。 * WAITING * PROCESSING * SUCCEED * FAILED
+        任务的状态。 * WAITING：等待 * PROCESSING：处理中 * SUCCEED：成功 * FAILED：失败
 
         :param state: The state of this TTSAJob.
         :type state: str
@@ -117,7 +117,7 @@ class TTSAJob:
     def start_time(self):
         """Gets the start_time of this TTSAJob.
 
-        任务开始时间,格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”。
+        任务开始时间，格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”。
 
         :return: The start_time of this TTSAJob.
         :rtype: str
@@ -128,7 +128,7 @@ class TTSAJob:
     def start_time(self, start_time):
         """Sets the start_time of this TTSAJob.
 
-        任务开始时间,格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”。
+        任务开始时间，格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”。
 
         :param start_time: The start_time of this TTSAJob.
         :type start_time: str
@@ -139,7 +139,7 @@ class TTSAJob:
     def end_time(self):
         """Gets the end_time of this TTSAJob.
 
-        任务结束时间,格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”。
+        任务结束时间，格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”。
 
         :return: The end_time of this TTSAJob.
         :rtype: str
@@ -150,7 +150,7 @@ class TTSAJob:
     def end_time(self, end_time):
         """Sets the end_time of this TTSAJob.
 
-        任务结束时间,格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”。
+        任务结束时间，格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”。
 
         :param end_time: The end_time of this TTSAJob.
         :type end_time: str
@@ -161,7 +161,7 @@ class TTSAJob:
     def content_duration(self):
         """Gets the content_duration of this TTSAJob.
 
-        语音驱动内容时长，单位:秒。
+        语音驱动内容时长。  单位:秒。
 
         :return: The content_duration of this TTSAJob.
         :rtype: float
@@ -172,7 +172,7 @@ class TTSAJob:
     def content_duration(self, content_duration):
         """Sets the content_duration of this TTSAJob.
 
-        语音驱动内容时长，单位:秒。
+        语音驱动内容时长。  单位:秒。
 
         :param content_duration: The content_duration of this TTSAJob.
         :type content_duration: float

@@ -44,6 +44,7 @@ from huaweicloudsdkeg.v1.model.customize_source_create_req import CustomizeSourc
 from huaweicloudsdkeg.v1.model.customize_source_info import CustomizeSourceInfo
 from huaweicloudsdkeg.v1.model.customize_source_info_event_types import CustomizeSourceInfoEventTypes
 from huaweicloudsdkeg.v1.model.customize_source_update_req import CustomizeSourceUpdateReq
+from huaweicloudsdkeg.v1.model.dead_letter_queue import DeadLetterQueue
 from huaweicloudsdkeg.v1.model.delete_channel_request import DeleteChannelRequest
 from huaweicloudsdkeg.v1.model.delete_channel_response import DeleteChannelResponse
 from huaweicloudsdkeg.v1.model.delete_connection_request import DeleteConnectionRequest
@@ -65,6 +66,7 @@ from huaweicloudsdkeg.v1.model.endpoint_connection import EndpointConnection
 from huaweicloudsdkeg.v1.model.endpoint_create_req import EndpointCreateReq
 from huaweicloudsdkeg.v1.model.endpoint_info import EndpointInfo
 from huaweicloudsdkeg.v1.model.endpoint_update_req import EndpointUpdateReq
+from huaweicloudsdkeg.v1.model.error_info import ErrorInfo
 from huaweicloudsdkeg.v1.model.event_pub_metrics_item import EventPubMetricsItem
 from huaweicloudsdkeg.v1.model.event_streaming_create_req import EventStreamingCreateReq
 from huaweicloudsdkeg.v1.model.event_streaming_create_req_rule_config import EventStreamingCreateReqRuleConfig
@@ -142,6 +144,8 @@ from huaweicloudsdkeg.v1.model.show_detail_of_subscription_target_response impor
 from huaweicloudsdkeg.v1.model.show_event_streaming_request import ShowEventStreamingRequest
 from huaweicloudsdkeg.v1.model.show_event_streaming_response import ShowEventStreamingResponse
 from huaweicloudsdkeg.v1.model.sink_fg_parameters import SinkFGParameters
+from huaweicloudsdkeg.v1.model.smn_target_detail import SmnTargetDetail
+from huaweicloudsdkeg.v1.model.smn_target_detail_subject_transform import SmnTargetDetailSubjectTransform
 from huaweicloudsdkeg.v1.model.source_kafka_mq_parameters import SourceKafkaMQParameters
 from huaweicloudsdkeg.v1.model.subscription_create_req import SubscriptionCreateReq
 from huaweicloudsdkeg.v1.model.subscription_info import SubscriptionInfo

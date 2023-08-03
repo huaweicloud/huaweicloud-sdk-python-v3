@@ -30,7 +30,8 @@ class ShowDetailOfEventSourceResponse(SdkResponse):
         'channel_name': 'str',
         'type': 'str',
         'detail': 'object',
-        'status': 'str'
+        'status': 'str',
+        'error_info': 'ErrorInfo'
     }
 
     attribute_map = {
@@ -46,10 +47,11 @@ class ShowDetailOfEventSourceResponse(SdkResponse):
         'channel_name': 'channel_name',
         'type': 'type',
         'detail': 'detail',
-        'status': 'status'
+        'status': 'status',
+        'error_info': 'error_info'
     }
 
-    def __init__(self, id=None, name=None, label=None, description=None, provider_type=None, event_types=None, created_time=None, updated_time=None, channel_id=None, channel_name=None, type=None, detail=None, status=None):
+    def __init__(self, id=None, name=None, label=None, description=None, provider_type=None, event_types=None, created_time=None, updated_time=None, channel_id=None, channel_name=None, type=None, detail=None, status=None, error_info=None):
         """ShowDetailOfEventSourceResponse
 
         The model defined in huaweicloud sdk
@@ -80,6 +82,8 @@ class ShowDetailOfEventSourceResponse(SdkResponse):
         :type detail: object
         :param status: 自定义事件源状态
         :type status: str
+        :param error_info: 
+        :type error_info: :class:`huaweicloudsdkeg.v1.ErrorInfo`
         """
         
         super(ShowDetailOfEventSourceResponse, self).__init__()
@@ -97,6 +101,7 @@ class ShowDetailOfEventSourceResponse(SdkResponse):
         self._type = None
         self._detail = None
         self._status = None
+        self._error_info = None
         self.discriminator = None
 
         if id is not None:
@@ -125,6 +130,8 @@ class ShowDetailOfEventSourceResponse(SdkResponse):
             self.detail = detail
         if status is not None:
             self.status = status
+        if error_info is not None:
+            self.error_info = error_info
 
     @property
     def id(self):
@@ -411,6 +418,24 @@ class ShowDetailOfEventSourceResponse(SdkResponse):
         :type status: str
         """
         self._status = status
+
+    @property
+    def error_info(self):
+        """Gets the error_info of this ShowDetailOfEventSourceResponse.
+
+        :return: The error_info of this ShowDetailOfEventSourceResponse.
+        :rtype: :class:`huaweicloudsdkeg.v1.ErrorInfo`
+        """
+        return self._error_info
+
+    @error_info.setter
+    def error_info(self, error_info):
+        """Sets the error_info of this ShowDetailOfEventSourceResponse.
+
+        :param error_info: The error_info of this ShowDetailOfEventSourceResponse.
+        :type error_info: :class:`huaweicloudsdkeg.v1.ErrorInfo`
+        """
+        self._error_info = error_info
 
     def to_dict(self):
         """Returns the model properties as a dict"""

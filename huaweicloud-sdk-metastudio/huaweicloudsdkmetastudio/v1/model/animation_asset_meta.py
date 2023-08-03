@@ -43,9 +43,9 @@ class AnimationAssetMeta:
         :type duration: float
         :param auto_analysis: 动作是否需要自动解析。
         :type auto_analysis: bool
-        :param voice_delay: 语音延迟播放时长，单位秒。使用场景举例：入场动画3秒，voice_delay设置成4秒，则语音从入场动画开始后第4秒开始播放。
+        :param voice_delay: 语音延迟播放时长。  单位秒。  使用场景举例：入场动画3秒，voice_delay设置成4秒，则语音从入场动画开始后第4秒开始播放。
         :type voice_delay: float
-        :param animation_insert_restriction: 动画插入位置限制。 * ONLY_BEGINNING： 视频制作时，动画只允许出现在起始位置。 * ONLY_END： 视频制作时，动画只允许许出现在结束位置。
+        :param animation_insert_restriction: 动画插入位置限制。 * ONLY_BEGINNING：视频制作时，动画只允许出现在起始位置。 * ONLY_END：视频制作时，动画只允许出现在结束位置。
         :type animation_insert_restriction: str
         """
         
@@ -139,7 +139,7 @@ class AnimationAssetMeta:
     def voice_delay(self):
         """Gets the voice_delay of this AnimationAssetMeta.
 
-        语音延迟播放时长，单位秒。使用场景举例：入场动画3秒，voice_delay设置成4秒，则语音从入场动画开始后第4秒开始播放。
+        语音延迟播放时长。  单位秒。  使用场景举例：入场动画3秒，voice_delay设置成4秒，则语音从入场动画开始后第4秒开始播放。
 
         :return: The voice_delay of this AnimationAssetMeta.
         :rtype: float
@@ -150,7 +150,7 @@ class AnimationAssetMeta:
     def voice_delay(self, voice_delay):
         """Sets the voice_delay of this AnimationAssetMeta.
 
-        语音延迟播放时长，单位秒。使用场景举例：入场动画3秒，voice_delay设置成4秒，则语音从入场动画开始后第4秒开始播放。
+        语音延迟播放时长。  单位秒。  使用场景举例：入场动画3秒，voice_delay设置成4秒，则语音从入场动画开始后第4秒开始播放。
 
         :param voice_delay: The voice_delay of this AnimationAssetMeta.
         :type voice_delay: float
@@ -161,7 +161,7 @@ class AnimationAssetMeta:
     def animation_insert_restriction(self):
         """Gets the animation_insert_restriction of this AnimationAssetMeta.
 
-        动画插入位置限制。 * ONLY_BEGINNING： 视频制作时，动画只允许出现在起始位置。 * ONLY_END： 视频制作时，动画只允许许出现在结束位置。
+        动画插入位置限制。 * ONLY_BEGINNING：视频制作时，动画只允许出现在起始位置。 * ONLY_END：视频制作时，动画只允许出现在结束位置。
 
         :return: The animation_insert_restriction of this AnimationAssetMeta.
         :rtype: str
@@ -172,7 +172,7 @@ class AnimationAssetMeta:
     def animation_insert_restriction(self, animation_insert_restriction):
         """Sets the animation_insert_restriction of this AnimationAssetMeta.
 
-        动画插入位置限制。 * ONLY_BEGINNING： 视频制作时，动画只允许出现在起始位置。 * ONLY_END： 视频制作时，动画只允许许出现在结束位置。
+        动画插入位置限制。 * ONLY_BEGINNING：视频制作时，动画只允许出现在起始位置。 * ONLY_END：视频制作时，动画只允许出现在结束位置。
 
         :param animation_insert_restriction: The animation_insert_restriction of this AnimationAssetMeta.
         :type animation_insert_restriction: str

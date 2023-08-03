@@ -34,7 +34,9 @@ class MysqlProxyV3:
         'name': 'str',
         'transaction_split': 'str',
         'connection_pool_type': 'str',
-        'switch_connection_pool_type_enabled': 'bool'
+        'switch_connection_pool_type_enabled': 'bool',
+        'route_mode': 'int',
+        'balance_route_mode_enabled': 'bool'
     }
 
     attribute_map = {
@@ -55,10 +57,12 @@ class MysqlProxyV3:
         'name': 'name',
         'transaction_split': 'transaction_split',
         'connection_pool_type': 'connection_pool_type',
-        'switch_connection_pool_type_enabled': 'switch_connection_pool_type_enabled'
+        'switch_connection_pool_type_enabled': 'switch_connection_pool_type_enabled',
+        'route_mode': 'route_mode',
+        'balance_route_mode_enabled': 'balance_route_mode_enabled'
     }
 
-    def __init__(self, pool_id=None, status=None, address=None, port=None, pool_status=None, delay_threshold_in_seconds=None, elb_vip=None, eip=None, vcpus=None, ram=None, node_num=None, mode=None, nodes=None, flavor_ref=None, name=None, transaction_split=None, connection_pool_type=None, switch_connection_pool_type_enabled=None):
+    def __init__(self, pool_id=None, status=None, address=None, port=None, pool_status=None, delay_threshold_in_seconds=None, elb_vip=None, eip=None, vcpus=None, ram=None, node_num=None, mode=None, nodes=None, flavor_ref=None, name=None, transaction_split=None, connection_pool_type=None, switch_connection_pool_type_enabled=None, route_mode=None, balance_route_mode_enabled=None):
         """MysqlProxyV3
 
         The model defined in huaweicloud sdk
@@ -99,6 +103,10 @@ class MysqlProxyV3:
         :type connection_pool_type: str
         :param switch_connection_pool_type_enabled: 数据库代理版本是否支持会话级连接池。  取值范围: - true: 支持。 - false: 不支持。
         :type switch_connection_pool_type_enabled: bool
+        :param route_mode: 数据库代理路由模式，默认为权重负载模式。  取值范围: - 0，表示权重负载模式; - 1，表示负载均衡模式（数据库主节点不接受读请求）； - 2，表示负载均衡模式（数据库主节点接受读请求）。
+        :type route_mode: int
+        :param balance_route_mode_enabled: 数据库代理版本是否支持负载均衡模式。  取值范围: - true 支持; - false 不支持。
+        :type balance_route_mode_enabled: bool
         """
         
         
@@ -121,6 +129,8 @@ class MysqlProxyV3:
         self._transaction_split = None
         self._connection_pool_type = None
         self._switch_connection_pool_type_enabled = None
+        self._route_mode = None
+        self._balance_route_mode_enabled = None
         self.discriminator = None
 
         if pool_id is not None:
@@ -159,6 +169,10 @@ class MysqlProxyV3:
             self.connection_pool_type = connection_pool_type
         if switch_connection_pool_type_enabled is not None:
             self.switch_connection_pool_type_enabled = switch_connection_pool_type_enabled
+        if route_mode is not None:
+            self.route_mode = route_mode
+        if balance_route_mode_enabled is not None:
+            self.balance_route_mode_enabled = balance_route_mode_enabled
 
     @property
     def pool_id(self):
@@ -555,6 +569,50 @@ class MysqlProxyV3:
         :type switch_connection_pool_type_enabled: bool
         """
         self._switch_connection_pool_type_enabled = switch_connection_pool_type_enabled
+
+    @property
+    def route_mode(self):
+        """Gets the route_mode of this MysqlProxyV3.
+
+        数据库代理路由模式，默认为权重负载模式。  取值范围: - 0，表示权重负载模式; - 1，表示负载均衡模式（数据库主节点不接受读请求）； - 2，表示负载均衡模式（数据库主节点接受读请求）。
+
+        :return: The route_mode of this MysqlProxyV3.
+        :rtype: int
+        """
+        return self._route_mode
+
+    @route_mode.setter
+    def route_mode(self, route_mode):
+        """Sets the route_mode of this MysqlProxyV3.
+
+        数据库代理路由模式，默认为权重负载模式。  取值范围: - 0，表示权重负载模式; - 1，表示负载均衡模式（数据库主节点不接受读请求）； - 2，表示负载均衡模式（数据库主节点接受读请求）。
+
+        :param route_mode: The route_mode of this MysqlProxyV3.
+        :type route_mode: int
+        """
+        self._route_mode = route_mode
+
+    @property
+    def balance_route_mode_enabled(self):
+        """Gets the balance_route_mode_enabled of this MysqlProxyV3.
+
+        数据库代理版本是否支持负载均衡模式。  取值范围: - true 支持; - false 不支持。
+
+        :return: The balance_route_mode_enabled of this MysqlProxyV3.
+        :rtype: bool
+        """
+        return self._balance_route_mode_enabled
+
+    @balance_route_mode_enabled.setter
+    def balance_route_mode_enabled(self, balance_route_mode_enabled):
+        """Sets the balance_route_mode_enabled of this MysqlProxyV3.
+
+        数据库代理版本是否支持负载均衡模式。  取值范围: - true 支持; - false 不支持。
+
+        :param balance_route_mode_enabled: The balance_route_mode_enabled of this MysqlProxyV3.
+        :type balance_route_mode_enabled: bool
+        """
+        self._balance_route_mode_enabled = balance_route_mode_enabled
 
     def to_dict(self):
         """Returns the model properties as a dict"""

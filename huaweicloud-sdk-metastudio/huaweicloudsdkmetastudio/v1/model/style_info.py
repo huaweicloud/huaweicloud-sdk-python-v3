@@ -55,7 +55,7 @@ class StyleInfo:
         :type name: str
         :param description: 数字人风格化描述
         :type description: str
-        :param project_id: 租户id
+        :param project_id: 租户ID
         :type project_id: str
         :param status: 状态
         :type status: str
@@ -69,11 +69,11 @@ class StyleInfo:
         :type extra_meta: :class:`huaweicloudsdkmetastudio.v1.StyleExtraMeta`
         :param style_id: 数字人风格ID
         :type style_id: str
-        :param create_time: 数字人风格创建时间,格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”。
+        :param create_time: 数字人风格创建时间，格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”。
         :type create_time: str
-        :param update_time: 数字人风格更新时间,格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”。
+        :param update_time: 数字人风格更新时间，格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”。
         :type update_time: str
-        :param state: 数字人风格状态枚举
+        :param state: 数字人风格状态枚举 * CREATING：创建中 * PUBLISHED：已发布 * DELETED：已删除 * UNPUBLISHED：未发布 * PUBLISHING：发布中
         :type state: str
         """
         
@@ -165,7 +165,7 @@ class StyleInfo:
     def project_id(self):
         """Gets the project_id of this StyleInfo.
 
-        租户id
+        租户ID
 
         :return: The project_id of this StyleInfo.
         :rtype: str
@@ -176,7 +176,7 @@ class StyleInfo:
     def project_id(self, project_id):
         """Sets the project_id of this StyleInfo.
 
-        租户id
+        租户ID
 
         :param project_id: The project_id of this StyleInfo.
         :type project_id: str
@@ -315,7 +315,7 @@ class StyleInfo:
     def create_time(self):
         """Gets the create_time of this StyleInfo.
 
-        数字人风格创建时间,格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”。
+        数字人风格创建时间，格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”。
 
         :return: The create_time of this StyleInfo.
         :rtype: str
@@ -326,7 +326,7 @@ class StyleInfo:
     def create_time(self, create_time):
         """Sets the create_time of this StyleInfo.
 
-        数字人风格创建时间,格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”。
+        数字人风格创建时间，格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”。
 
         :param create_time: The create_time of this StyleInfo.
         :type create_time: str
@@ -337,7 +337,7 @@ class StyleInfo:
     def update_time(self):
         """Gets the update_time of this StyleInfo.
 
-        数字人风格更新时间,格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”。
+        数字人风格更新时间，格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”。
 
         :return: The update_time of this StyleInfo.
         :rtype: str
@@ -348,7 +348,7 @@ class StyleInfo:
     def update_time(self, update_time):
         """Sets the update_time of this StyleInfo.
 
-        数字人风格更新时间,格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”。
+        数字人风格更新时间，格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”。
 
         :param update_time: The update_time of this StyleInfo.
         :type update_time: str
@@ -359,7 +359,7 @@ class StyleInfo:
     def state(self):
         """Gets the state of this StyleInfo.
 
-        数字人风格状态枚举
+        数字人风格状态枚举 * CREATING：创建中 * PUBLISHED：已发布 * DELETED：已删除 * UNPUBLISHED：未发布 * PUBLISHING：发布中
 
         :return: The state of this StyleInfo.
         :rtype: str
@@ -370,7 +370,7 @@ class StyleInfo:
     def state(self, state):
         """Sets the state of this StyleInfo.
 
-        数字人风格状态枚举
+        数字人风格状态枚举 * CREATING：创建中 * PUBLISHED：已发布 * DELETED：已删除 * UNPUBLISHED：未发布 * PUBLISHING：发布中
 
         :param state: The state of this StyleInfo.
         :type state: str

@@ -21,6 +21,7 @@ class OpenMysqlProxyRequestBody:
         'node_num': 'int',
         'proxy_name': 'str',
         'proxy_mode': 'str',
+        'route_mode': 'int',
         'nodes_read_weight': 'list[NodesWeight]'
     }
 
@@ -29,10 +30,11 @@ class OpenMysqlProxyRequestBody:
         'node_num': 'node_num',
         'proxy_name': 'proxy_name',
         'proxy_mode': 'proxy_mode',
+        'route_mode': 'route_mode',
         'nodes_read_weight': 'nodes_read_weight'
     }
 
-    def __init__(self, flavor_ref=None, node_num=None, proxy_name=None, proxy_mode=None, nodes_read_weight=None):
+    def __init__(self, flavor_ref=None, node_num=None, proxy_name=None, proxy_mode=None, route_mode=None, nodes_read_weight=None):
         """OpenMysqlProxyRequestBody
 
         The model defined in huaweicloud sdk
@@ -45,6 +47,8 @@ class OpenMysqlProxyRequestBody:
         :type proxy_name: str
         :param proxy_mode: 代理实例类型。默认类型为readwrite。
         :type proxy_mode: str
+        :param route_mode: 数据库代理路由模式，默认为权重负载模式。  取值范围: - 0，表示权重负载模式; - 1，表示负载均衡模式（数据库主节点不接受读请求）； - 2，表示负载均衡模式（数据库主节点接受读请求）。
+        :type route_mode: int
         :param nodes_read_weight: 数据库节点的读权重设置。
         :type nodes_read_weight: list[:class:`huaweicloudsdkgaussdb.v3.NodesWeight`]
         """
@@ -55,6 +59,7 @@ class OpenMysqlProxyRequestBody:
         self._node_num = None
         self._proxy_name = None
         self._proxy_mode = None
+        self._route_mode = None
         self._nodes_read_weight = None
         self.discriminator = None
 
@@ -64,6 +69,8 @@ class OpenMysqlProxyRequestBody:
             self.proxy_name = proxy_name
         if proxy_mode is not None:
             self.proxy_mode = proxy_mode
+        if route_mode is not None:
+            self.route_mode = route_mode
         if nodes_read_weight is not None:
             self.nodes_read_weight = nodes_read_weight
 
@@ -154,6 +161,28 @@ class OpenMysqlProxyRequestBody:
         :type proxy_mode: str
         """
         self._proxy_mode = proxy_mode
+
+    @property
+    def route_mode(self):
+        """Gets the route_mode of this OpenMysqlProxyRequestBody.
+
+        数据库代理路由模式，默认为权重负载模式。  取值范围: - 0，表示权重负载模式; - 1，表示负载均衡模式（数据库主节点不接受读请求）； - 2，表示负载均衡模式（数据库主节点接受读请求）。
+
+        :return: The route_mode of this OpenMysqlProxyRequestBody.
+        :rtype: int
+        """
+        return self._route_mode
+
+    @route_mode.setter
+    def route_mode(self, route_mode):
+        """Sets the route_mode of this OpenMysqlProxyRequestBody.
+
+        数据库代理路由模式，默认为权重负载模式。  取值范围: - 0，表示权重负载模式; - 1，表示负载均衡模式（数据库主节点不接受读请求）； - 2，表示负载均衡模式（数据库主节点接受读请求）。
+
+        :param route_mode: The route_mode of this OpenMysqlProxyRequestBody.
+        :type route_mode: int
+        """
+        self._route_mode = route_mode
 
     @property
     def nodes_read_weight(self):

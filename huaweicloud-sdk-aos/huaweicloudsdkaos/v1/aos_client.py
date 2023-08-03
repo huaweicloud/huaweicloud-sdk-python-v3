@@ -848,8 +848,6 @@ class AosClient(Client):
         
         * 当触发的部署失败时，如果资源栈开启了自动回滚，会触发自动回滚的流程，否则就会停留在部署失败时的状态
         
-        * 资源栈状态是DELETION_FAILED时，用户可根据StackEvents信息修复当前模板中的错误后，重新触发部署。
-        
         Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for DeployStack
@@ -1356,6 +1354,16 @@ class AosClient(Client):
         注：所有属性的更新都是覆盖式更新。即，所给予的参数将被完全覆盖至资源栈已有的属性上
         
         例如，若要新增agencies，请通过GetStackMetadata获取该资源栈原有的agencies信息，将新旧agencies信息进行整合后再调用UpdateStack
+        
+        * 如果资源栈状态处于非终态（状态以&#x60;IN_PROGRESS&#x60;结尾）状态时，则不允许更新。包括但不限于以下状态：
+          * 正在部署（DEPLOYMENT_IN_PROGRESS）
+          * 正在删除（DELETION_IN_PROGRESS）
+          * 正在回滚（ROLLBACK_IN_PROGRESS）
+        
+        * 对于“enable_auto_rollback”属性从false到true的更新操作，资源栈状态判定将更加严格，在失败（状态以&#x60;_FAILED&#x60;结尾）状态时也不允许更新，包括但不限于以下状态：
+          * 部署失败（DEPLOYMENT_FAILED）
+          * 回滚失败（ROLLBACK_FAILED）
+          * 删除失败（DELETION_FAILED）
         
         Please refer to HUAWEI cloud API Explorer for details.
 

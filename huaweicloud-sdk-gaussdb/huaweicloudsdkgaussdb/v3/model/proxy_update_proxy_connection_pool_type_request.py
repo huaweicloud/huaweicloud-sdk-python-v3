@@ -29,7 +29,7 @@ class ProxyUpdateProxyConnectionPoolTypeRequest:
 
         The model defined in huaweicloud sdk
 
-        :param connection_pool_type: 连接池类型。CLOSED：关闭连接池；SESSION：开启会话级连接池
+        :param connection_pool_type: 连接池类型。 - CLOSED：关闭连接池。 - SESSION：开启会话级连接池
         :type connection_pool_type: str
         """
         
@@ -44,7 +44,7 @@ class ProxyUpdateProxyConnectionPoolTypeRequest:
     def connection_pool_type(self):
         """Gets the connection_pool_type of this ProxyUpdateProxyConnectionPoolTypeRequest.
 
-        连接池类型。CLOSED：关闭连接池；SESSION：开启会话级连接池
+        连接池类型。 - CLOSED：关闭连接池。 - SESSION：开启会话级连接池
 
         :return: The connection_pool_type of this ProxyUpdateProxyConnectionPoolTypeRequest.
         :rtype: str
@@ -55,7 +55,7 @@ class ProxyUpdateProxyConnectionPoolTypeRequest:
     def connection_pool_type(self, connection_pool_type):
         """Sets the connection_pool_type of this ProxyUpdateProxyConnectionPoolTypeRequest.
 
-        连接池类型。CLOSED：关闭连接池；SESSION：开启会话级连接池
+        连接池类型。 - CLOSED：关闭连接池。 - SESSION：开启会话级连接池
 
         :param connection_pool_type: The connection_pool_type of this ProxyUpdateProxyConnectionPoolTypeRequest.
         :type connection_pool_type: str

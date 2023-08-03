@@ -23,7 +23,9 @@ class SubscriptionTarget:
         'connection_id': 'str',
         'detail': 'object',
         'kafka_detail': 'KafkaTargetDetail',
-        'transform': 'TransForm'
+        'smn_detail': 'SmnTargetDetail',
+        'transform': 'TransForm',
+        'dead_letter_queue': 'DeadLetterQueue'
     }
 
     attribute_map = {
@@ -33,10 +35,12 @@ class SubscriptionTarget:
         'connection_id': 'connection_id',
         'detail': 'detail',
         'kafka_detail': 'kafka_detail',
-        'transform': 'transform'
+        'smn_detail': 'smn_detail',
+        'transform': 'transform',
+        'dead_letter_queue': 'dead_letter_queue'
     }
 
-    def __init__(self, id=None, name=None, provider_type=None, connection_id=None, detail=None, kafka_detail=None, transform=None):
+    def __init__(self, id=None, name=None, provider_type=None, connection_id=None, detail=None, kafka_detail=None, smn_detail=None, transform=None, dead_letter_queue=None):
         """SubscriptionTarget
 
         The model defined in huaweicloud sdk
@@ -49,12 +53,16 @@ class SubscriptionTarget:
         :type provider_type: str
         :param connection_id: 订阅的事件目标使用的目标链接ID
         :type connection_id: str
-        :param detail: 订阅的事件目标参数列表，该字段序列化后总长度不超过1024字节
+        :param detail: 订阅的事件目标参数列表，该字段序列化后总长度不超过1024字节，函数、函数流、webhook订阅目标必填，其中函数、函数流委托名称必填
         :type detail: object
         :param kafka_detail: 
         :type kafka_detail: :class:`huaweicloudsdkeg.v1.KafkaTargetDetail`
+        :param smn_detail: 
+        :type smn_detail: :class:`huaweicloudsdkeg.v1.SmnTargetDetail`
         :param transform: 
         :type transform: :class:`huaweicloudsdkeg.v1.TransForm`
+        :param dead_letter_queue: 
+        :type dead_letter_queue: :class:`huaweicloudsdkeg.v1.DeadLetterQueue`
         """
         
         
@@ -65,7 +73,9 @@ class SubscriptionTarget:
         self._connection_id = None
         self._detail = None
         self._kafka_detail = None
+        self._smn_detail = None
         self._transform = None
+        self._dead_letter_queue = None
         self.discriminator = None
 
         if id is not None:
@@ -74,10 +84,15 @@ class SubscriptionTarget:
         self.provider_type = provider_type
         if connection_id is not None:
             self.connection_id = connection_id
-        self.detail = detail
+        if detail is not None:
+            self.detail = detail
         if kafka_detail is not None:
             self.kafka_detail = kafka_detail
+        if smn_detail is not None:
+            self.smn_detail = smn_detail
         self.transform = transform
+        if dead_letter_queue is not None:
+            self.dead_letter_queue = dead_letter_queue
 
     @property
     def id(self):
@@ -171,7 +186,7 @@ class SubscriptionTarget:
     def detail(self):
         """Gets the detail of this SubscriptionTarget.
 
-        订阅的事件目标参数列表，该字段序列化后总长度不超过1024字节
+        订阅的事件目标参数列表，该字段序列化后总长度不超过1024字节，函数、函数流、webhook订阅目标必填，其中函数、函数流委托名称必填
 
         :return: The detail of this SubscriptionTarget.
         :rtype: object
@@ -182,7 +197,7 @@ class SubscriptionTarget:
     def detail(self, detail):
         """Sets the detail of this SubscriptionTarget.
 
-        订阅的事件目标参数列表，该字段序列化后总长度不超过1024字节
+        订阅的事件目标参数列表，该字段序列化后总长度不超过1024字节，函数、函数流、webhook订阅目标必填，其中函数、函数流委托名称必填
 
         :param detail: The detail of this SubscriptionTarget.
         :type detail: object
@@ -208,6 +223,24 @@ class SubscriptionTarget:
         self._kafka_detail = kafka_detail
 
     @property
+    def smn_detail(self):
+        """Gets the smn_detail of this SubscriptionTarget.
+
+        :return: The smn_detail of this SubscriptionTarget.
+        :rtype: :class:`huaweicloudsdkeg.v1.SmnTargetDetail`
+        """
+        return self._smn_detail
+
+    @smn_detail.setter
+    def smn_detail(self, smn_detail):
+        """Sets the smn_detail of this SubscriptionTarget.
+
+        :param smn_detail: The smn_detail of this SubscriptionTarget.
+        :type smn_detail: :class:`huaweicloudsdkeg.v1.SmnTargetDetail`
+        """
+        self._smn_detail = smn_detail
+
+    @property
     def transform(self):
         """Gets the transform of this SubscriptionTarget.
 
@@ -224,6 +257,24 @@ class SubscriptionTarget:
         :type transform: :class:`huaweicloudsdkeg.v1.TransForm`
         """
         self._transform = transform
+
+    @property
+    def dead_letter_queue(self):
+        """Gets the dead_letter_queue of this SubscriptionTarget.
+
+        :return: The dead_letter_queue of this SubscriptionTarget.
+        :rtype: :class:`huaweicloudsdkeg.v1.DeadLetterQueue`
+        """
+        return self._dead_letter_queue
+
+    @dead_letter_queue.setter
+    def dead_letter_queue(self, dead_letter_queue):
+        """Sets the dead_letter_queue of this SubscriptionTarget.
+
+        :param dead_letter_queue: The dead_letter_queue of this SubscriptionTarget.
+        :type dead_letter_queue: :class:`huaweicloudsdkeg.v1.DeadLetterQueue`
+        """
+        self._dead_letter_queue = dead_letter_queue
 
     def to_dict(self):
         """Returns the model properties as a dict"""

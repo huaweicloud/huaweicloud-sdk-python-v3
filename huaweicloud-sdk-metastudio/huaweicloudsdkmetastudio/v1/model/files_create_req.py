@@ -39,7 +39,7 @@ class FilesCreateReq:
 
         The model defined in huaweicloud sdk
 
-        :param file_name: 文件名。创建文件时候不区分大小写，最大长度256，最小长度1。
+        :param file_name: 文件名，不区分大小写，最大长度256，最小长度1。
         :type file_name: str
         :param file_md5: 文件内容MD5值，MD5值需要进行Base64编码。
         :type file_md5: str
@@ -49,7 +49,7 @@ class FilesCreateReq:
         :type file_type: str
         :param asset_id: 资产ID。
         :type asset_id: str
-        :param asset_file_category: 文件在资产中的分类。每种资产类型包含的文件分类不同。 * MAIN： 主文件 * COVER： 封面文件 * PAGE: 内容页图片 * SAMPLE：样例音频 * OTHER： 其他文件 &gt; * 资产类型为SCENE、ANIMATION、VIDEO、IMAGE、MATERIAL时，包含MAIN、COVER和OTHER &gt; * 资产类型为PPT时，包含MAIN、COVER、PAGE和OTHER &gt; * 资产类型为HUMAN_MODEL时，包含MAIN、COVER和OTHER &gt; * 资产类型为VOICE_MODEL时，包含MAIN、SAMPLE和OTHER
+        :param asset_file_category: 文件在资产中的分类。每种资产类型包含的文件分类不同。 * MAIN：主文件 * COVER：封面文件 * PAGE：内容页图片 * SAMPLE：样例音频 * OTHER：其他文件 &gt; * 资产类型为SCENE、ANIMATION、VIDEO、IMAGE、MATERIAL时，包含MAIN、COVER和OTHER &gt; * 资产类型为PPT时，包含MAIN、COVER、PAGE和OTHER &gt; * 资产类型为HUMAN_MODEL时，包含MAIN、COVER和OTHER &gt; * 资产类型为VOICE_MODEL时，包含MAIN、SAMPLE和OTHER
         :type asset_file_category: str
         """
         
@@ -74,7 +74,7 @@ class FilesCreateReq:
     def file_name(self):
         """Gets the file_name of this FilesCreateReq.
 
-        文件名。创建文件时候不区分大小写，最大长度256，最小长度1。
+        文件名，不区分大小写，最大长度256，最小长度1。
 
         :return: The file_name of this FilesCreateReq.
         :rtype: str
@@ -85,7 +85,7 @@ class FilesCreateReq:
     def file_name(self, file_name):
         """Sets the file_name of this FilesCreateReq.
 
-        文件名。创建文件时候不区分大小写，最大长度256，最小长度1。
+        文件名，不区分大小写，最大长度256，最小长度1。
 
         :param file_name: The file_name of this FilesCreateReq.
         :type file_name: str
@@ -184,7 +184,7 @@ class FilesCreateReq:
     def asset_file_category(self):
         """Gets the asset_file_category of this FilesCreateReq.
 
-        文件在资产中的分类。每种资产类型包含的文件分类不同。 * MAIN： 主文件 * COVER： 封面文件 * PAGE: 内容页图片 * SAMPLE：样例音频 * OTHER： 其他文件 > * 资产类型为SCENE、ANIMATION、VIDEO、IMAGE、MATERIAL时，包含MAIN、COVER和OTHER > * 资产类型为PPT时，包含MAIN、COVER、PAGE和OTHER > * 资产类型为HUMAN_MODEL时，包含MAIN、COVER和OTHER > * 资产类型为VOICE_MODEL时，包含MAIN、SAMPLE和OTHER
+        文件在资产中的分类。每种资产类型包含的文件分类不同。 * MAIN：主文件 * COVER：封面文件 * PAGE：内容页图片 * SAMPLE：样例音频 * OTHER：其他文件 > * 资产类型为SCENE、ANIMATION、VIDEO、IMAGE、MATERIAL时，包含MAIN、COVER和OTHER > * 资产类型为PPT时，包含MAIN、COVER、PAGE和OTHER > * 资产类型为HUMAN_MODEL时，包含MAIN、COVER和OTHER > * 资产类型为VOICE_MODEL时，包含MAIN、SAMPLE和OTHER
 
         :return: The asset_file_category of this FilesCreateReq.
         :rtype: str
@@ -195,7 +195,7 @@ class FilesCreateReq:
     def asset_file_category(self, asset_file_category):
         """Sets the asset_file_category of this FilesCreateReq.
 
-        文件在资产中的分类。每种资产类型包含的文件分类不同。 * MAIN： 主文件 * COVER： 封面文件 * PAGE: 内容页图片 * SAMPLE：样例音频 * OTHER： 其他文件 > * 资产类型为SCENE、ANIMATION、VIDEO、IMAGE、MATERIAL时，包含MAIN、COVER和OTHER > * 资产类型为PPT时，包含MAIN、COVER、PAGE和OTHER > * 资产类型为HUMAN_MODEL时，包含MAIN、COVER和OTHER > * 资产类型为VOICE_MODEL时，包含MAIN、SAMPLE和OTHER
+        文件在资产中的分类。每种资产类型包含的文件分类不同。 * MAIN：主文件 * COVER：封面文件 * PAGE：内容页图片 * SAMPLE：样例音频 * OTHER：其他文件 > * 资产类型为SCENE、ANIMATION、VIDEO、IMAGE、MATERIAL时，包含MAIN、COVER和OTHER > * 资产类型为PPT时，包含MAIN、COVER、PAGE和OTHER > * 资产类型为HUMAN_MODEL时，包含MAIN、COVER和OTHER > * 资产类型为VOICE_MODEL时，包含MAIN、SAMPLE和OTHER
 
         :param asset_file_category: The asset_file_category of this FilesCreateReq.
         :type asset_file_category: str

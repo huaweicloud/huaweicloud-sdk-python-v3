@@ -18,15 +18,17 @@ class DeleteAssetRequest:
 
     openapi_types = {
         'x_app_user_id': 'str',
-        'asset_id': 'str'
+        'asset_id': 'str',
+        'mode': 'str'
     }
 
     attribute_map = {
         'x_app_user_id': 'X-App-UserId',
-        'asset_id': 'asset_id'
+        'asset_id': 'asset_id',
+        'mode': 'mode'
     }
 
-    def __init__(self, x_app_user_id=None, asset_id=None):
+    def __init__(self, x_app_user_id=None, asset_id=None, mode=None):
         """DeleteAssetRequest
 
         The model defined in huaweicloud sdk
@@ -35,17 +37,22 @@ class DeleteAssetRequest:
         :type x_app_user_id: str
         :param asset_id: 资产ID。
         :type asset_id: str
+        :param mode: 删除模式
+        :type mode: str
         """
         
         
 
         self._x_app_user_id = None
         self._asset_id = None
+        self._mode = None
         self.discriminator = None
 
         if x_app_user_id is not None:
             self.x_app_user_id = x_app_user_id
         self.asset_id = asset_id
+        if mode is not None:
+            self.mode = mode
 
     @property
     def x_app_user_id(self):
@@ -90,6 +97,28 @@ class DeleteAssetRequest:
         :type asset_id: str
         """
         self._asset_id = asset_id
+
+    @property
+    def mode(self):
+        """Gets the mode of this DeleteAssetRequest.
+
+        删除模式
+
+        :return: The mode of this DeleteAssetRequest.
+        :rtype: str
+        """
+        return self._mode
+
+    @mode.setter
+    def mode(self, mode):
+        """Sets the mode of this DeleteAssetRequest.
+
+        删除模式
+
+        :param mode: The mode of this DeleteAssetRequest.
+        :type mode: str
+        """
+        self._mode = mode
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -18,29 +18,21 @@ class CreateMessageDoV2:
 
     openapi_types = {
         'content': 'str',
-        'is_authorized': 'int',
-        'authorization_content': 'str',
         'accessory_ids': 'list[str]'
     }
 
     attribute_map = {
         'content': 'content',
-        'is_authorized': 'is_authorized',
-        'authorization_content': 'authorization_content',
         'accessory_ids': 'accessory_ids'
     }
 
-    def __init__(self, content=None, is_authorized=None, authorization_content=None, accessory_ids=None):
+    def __init__(self, content=None, accessory_ids=None):
         """CreateMessageDoV2
 
         The model defined in huaweicloud sdk
 
         :param content: 留言内容
         :type content: str
-        :param is_authorized: 是否授权
-        :type is_authorized: int
-        :param authorization_content: 机密信息
-        :type authorization_content: str
         :param accessory_ids: 附件id
         :type accessory_ids: list[str]
         """
@@ -48,16 +40,10 @@ class CreateMessageDoV2:
         
 
         self._content = None
-        self._is_authorized = None
-        self._authorization_content = None
         self._accessory_ids = None
         self.discriminator = None
 
         self.content = content
-        if is_authorized is not None:
-            self.is_authorized = is_authorized
-        if authorization_content is not None:
-            self.authorization_content = authorization_content
         if accessory_ids is not None:
             self.accessory_ids = accessory_ids
 
@@ -82,50 +68,6 @@ class CreateMessageDoV2:
         :type content: str
         """
         self._content = content
-
-    @property
-    def is_authorized(self):
-        """Gets the is_authorized of this CreateMessageDoV2.
-
-        是否授权
-
-        :return: The is_authorized of this CreateMessageDoV2.
-        :rtype: int
-        """
-        return self._is_authorized
-
-    @is_authorized.setter
-    def is_authorized(self, is_authorized):
-        """Sets the is_authorized of this CreateMessageDoV2.
-
-        是否授权
-
-        :param is_authorized: The is_authorized of this CreateMessageDoV2.
-        :type is_authorized: int
-        """
-        self._is_authorized = is_authorized
-
-    @property
-    def authorization_content(self):
-        """Gets the authorization_content of this CreateMessageDoV2.
-
-        机密信息
-
-        :return: The authorization_content of this CreateMessageDoV2.
-        :rtype: str
-        """
-        return self._authorization_content
-
-    @authorization_content.setter
-    def authorization_content(self, authorization_content):
-        """Sets the authorization_content of this CreateMessageDoV2.
-
-        机密信息
-
-        :param authorization_content: The authorization_content of this CreateMessageDoV2.
-        :type authorization_content: str
-        """
-        self._authorization_content = authorization_content
 
     @property
     def accessory_ids(self):

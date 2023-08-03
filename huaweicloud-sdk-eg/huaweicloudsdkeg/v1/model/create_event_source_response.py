@@ -31,6 +31,7 @@ class CreateEventSourceResponse(SdkResponse):
         'type': 'str',
         'detail': 'object',
         'status': 'str',
+        'error_info': 'ErrorInfo',
         'x_request_id': 'str'
     }
 
@@ -48,10 +49,11 @@ class CreateEventSourceResponse(SdkResponse):
         'type': 'type',
         'detail': 'detail',
         'status': 'status',
+        'error_info': 'error_info',
         'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, id=None, name=None, label=None, description=None, provider_type=None, event_types=None, created_time=None, updated_time=None, channel_id=None, channel_name=None, type=None, detail=None, status=None, x_request_id=None):
+    def __init__(self, id=None, name=None, label=None, description=None, provider_type=None, event_types=None, created_time=None, updated_time=None, channel_id=None, channel_name=None, type=None, detail=None, status=None, error_info=None, x_request_id=None):
         """CreateEventSourceResponse
 
         The model defined in huaweicloud sdk
@@ -82,6 +84,8 @@ class CreateEventSourceResponse(SdkResponse):
         :type detail: object
         :param status: 自定义事件源状态
         :type status: str
+        :param error_info: 
+        :type error_info: :class:`huaweicloudsdkeg.v1.ErrorInfo`
         :param x_request_id: 
         :type x_request_id: str
         """
@@ -101,6 +105,7 @@ class CreateEventSourceResponse(SdkResponse):
         self._type = None
         self._detail = None
         self._status = None
+        self._error_info = None
         self._x_request_id = None
         self.discriminator = None
 
@@ -130,6 +135,8 @@ class CreateEventSourceResponse(SdkResponse):
             self.detail = detail
         if status is not None:
             self.status = status
+        if error_info is not None:
+            self.error_info = error_info
         if x_request_id is not None:
             self.x_request_id = x_request_id
 
@@ -418,6 +425,24 @@ class CreateEventSourceResponse(SdkResponse):
         :type status: str
         """
         self._status = status
+
+    @property
+    def error_info(self):
+        """Gets the error_info of this CreateEventSourceResponse.
+
+        :return: The error_info of this CreateEventSourceResponse.
+        :rtype: :class:`huaweicloudsdkeg.v1.ErrorInfo`
+        """
+        return self._error_info
+
+    @error_info.setter
+    def error_info(self, error_info):
+        """Sets the error_info of this CreateEventSourceResponse.
+
+        :param error_info: The error_info of this CreateEventSourceResponse.
+        :type error_info: :class:`huaweicloudsdkeg.v1.ErrorInfo`
+        """
+        self._error_info = error_info
 
     @property
     def x_request_id(self):

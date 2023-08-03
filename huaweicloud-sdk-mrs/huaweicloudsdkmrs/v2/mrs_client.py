@@ -748,6 +748,242 @@ class MrsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def create_data_connector(self, request):
+        """创建数据连接
+
+        创建数据连接
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateDataConnector
+        :type request: :class:`huaweicloudsdkmrs.v2.CreateDataConnectorRequest`
+        :rtype: :class:`huaweicloudsdkmrs.v2.CreateDataConnectorResponse`
+        """
+        return self._create_data_connector_with_http_info(request)
+
+    def _create_data_connector_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/data-connectors',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateDataConnectorResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_data_connector(self, request):
+        """删除数据连接
+
+        删除数据连接
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteDataConnector
+        :type request: :class:`huaweicloudsdkmrs.v2.DeleteDataConnectorRequest`
+        :rtype: :class:`huaweicloudsdkmrs.v2.DeleteDataConnectorResponse`
+        """
+        return self._delete_data_connector_with_http_info(request)
+
+    def _delete_data_connector_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'connector_id' in local_var_params:
+            path_params['connector_id'] = local_var_params['connector_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/data-connectors/{connector_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteDataConnectorResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_data_connector(self, request):
+        """查询数据连接列表
+
+        查询数据连接列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListDataConnector
+        :type request: :class:`huaweicloudsdkmrs.v2.ListDataConnectorRequest`
+        :rtype: :class:`huaweicloudsdkmrs.v2.ListDataConnectorResponse`
+        """
+        return self._list_data_connector_with_http_info(request)
+
+    def _list_data_connector_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'connector_id' in local_var_params:
+            query_params.append(('connector_id', local_var_params['connector_id']))
+        if 'source_type' in local_var_params:
+            query_params.append(('source_type', local_var_params['source_type']))
+        if 'connector_name' in local_var_params:
+            query_params.append(('connector_name', local_var_params['connector_name']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'available' in local_var_params:
+            query_params.append(('available', local_var_params['available']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/data-connectors',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListDataConnectorResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_data_connector(self, request):
+        """更新数据连接
+
+        更新数据连接
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateDataConnector
+        :type request: :class:`huaweicloudsdkmrs.v2.UpdateDataConnectorRequest`
+        :rtype: :class:`huaweicloudsdkmrs.v2.UpdateDataConnectorResponse`
+        """
+        return self._update_data_connector_with_http_info(request)
+
+    def _update_data_connector_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'connector_id' in local_var_params:
+            path_params['connector_id'] = local_var_params['connector_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/data-connectors/{connector_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateDataConnectorResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def show_hdfs_file_list(self, request):
         """获取指定目录文件列表
 

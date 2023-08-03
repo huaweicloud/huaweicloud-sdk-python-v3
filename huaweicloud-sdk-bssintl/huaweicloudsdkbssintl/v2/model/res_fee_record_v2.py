@@ -38,6 +38,7 @@ class ResFeeRecordV2:
         'spec_size': 'float',
         'spec_size_measure_id': 'int',
         'trade_id': 'str',
+        'id': 'str',
         'trade_time': 'str',
         'enterprise_project_id': 'str',
         'enterprise_project_name': 'str',
@@ -96,6 +97,7 @@ class ResFeeRecordV2:
         'spec_size': 'spec_size',
         'spec_size_measure_id': 'spec_size_measure_id',
         'trade_id': 'trade_id',
+        'id': 'id',
         'trade_time': 'trade_time',
         'enterprise_project_id': 'enterprise_project_id',
         'enterprise_project_name': 'enterprise_project_name',
@@ -132,7 +134,7 @@ class ResFeeRecordV2:
         'sub_resource_name': 'sub_resource_name'
     }
 
-    def __init__(self, bill_date=None, bill_type=None, customer_id=None, region=None, region_name=None, cloud_service_type=None, resource_type=None, cloud_service_type_name=None, resource_type_name=None, effective_time=None, expire_time=None, resource_id=None, resource_name=None, resource_tag=None, product_id=None, product_name=None, product_spec_desc=None, sku_code=None, spec_size=None, spec_size_measure_id=None, trade_id=None, trade_time=None, enterprise_project_id=None, enterprise_project_name=None, charge_mode=None, order_id=None, period_type=None, usage_type=None, usage=None, usage_measure_id=None, free_resource_usage=None, free_resource_measure_id=None, ri_usage=None, ri_usage_measure_id=None, unit_price=None, unit=None, official_amount=None, discount_amount=None, amount=None, cash_amount=None, credit_amount=None, coupon_amount=None, flexipurchase_coupon_amount=None, stored_card_amount=None, bonus_amount=None, debt_amount=None, adjustment_amount=None, measure_id=None, formula=None, sub_service_type_code=None, sub_service_type_name=None, sub_resource_type_code=None, sub_resource_type_name=None, sub_resource_id=None, sub_resource_name=None):
+    def __init__(self, bill_date=None, bill_type=None, customer_id=None, region=None, region_name=None, cloud_service_type=None, resource_type=None, cloud_service_type_name=None, resource_type_name=None, effective_time=None, expire_time=None, resource_id=None, resource_name=None, resource_tag=None, product_id=None, product_name=None, product_spec_desc=None, sku_code=None, spec_size=None, spec_size_measure_id=None, trade_id=None, id=None, trade_time=None, enterprise_project_id=None, enterprise_project_name=None, charge_mode=None, order_id=None, period_type=None, usage_type=None, usage=None, usage_measure_id=None, free_resource_usage=None, free_resource_measure_id=None, ri_usage=None, ri_usage_measure_id=None, unit_price=None, unit=None, official_amount=None, discount_amount=None, amount=None, cash_amount=None, credit_amount=None, coupon_amount=None, flexipurchase_coupon_amount=None, stored_card_amount=None, bonus_amount=None, debt_amount=None, adjustment_amount=None, measure_id=None, formula=None, sub_service_type_code=None, sub_service_type_name=None, sub_resource_type_code=None, sub_resource_type_name=None, sub_resource_id=None, sub_resource_name=None):
         """ResFeeRecordV2
 
         The model defined in huaweicloud sdk
@@ -179,6 +181,8 @@ class ResFeeRecordV2:
         :type spec_size_measure_id: int
         :param trade_id: 订单ID或交易ID，扣费维度的唯一标识。
         :type trade_id: str
+        :param id: |参数名称：唯一标识。|
+        :type id: str
         :param trade_time: 交易时间。
         :type trade_time: str
         :param enterprise_project_id: 企业项目标识（企业项目ID）。 default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：null
@@ -272,6 +276,7 @@ class ResFeeRecordV2:
         self._spec_size = None
         self._spec_size_measure_id = None
         self._trade_id = None
+        self._id = None
         self._trade_time = None
         self._enterprise_project_id = None
         self._enterprise_project_name = None
@@ -350,6 +355,8 @@ class ResFeeRecordV2:
             self.spec_size_measure_id = spec_size_measure_id
         if trade_id is not None:
             self.trade_id = trade_id
+        if id is not None:
+            self.id = id
         if trade_time is not None:
             self.trade_time = trade_time
         if enterprise_project_id is not None:
@@ -880,6 +887,28 @@ class ResFeeRecordV2:
         :type trade_id: str
         """
         self._trade_id = trade_id
+
+    @property
+    def id(self):
+        """Gets the id of this ResFeeRecordV2.
+
+        |参数名称：唯一标识。|
+
+        :return: The id of this ResFeeRecordV2.
+        :rtype: str
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """Sets the id of this ResFeeRecordV2.
+
+        |参数名称：唯一标识。|
+
+        :param id: The id of this ResFeeRecordV2.
+        :type id: str
+        """
+        self._id = id
 
     @property
     def trade_time(self):

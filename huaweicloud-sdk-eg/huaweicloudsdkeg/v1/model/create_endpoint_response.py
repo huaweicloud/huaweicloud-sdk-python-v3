@@ -25,6 +25,7 @@ class CreateEndpointResponse(SdkResponse):
         'domain': 'str',
         'description': 'str',
         'status': 'str',
+        'error_info': 'ErrorInfo',
         'type': 'str',
         'scalable': 'bool',
         'created_time': 'str',
@@ -41,6 +42,7 @@ class CreateEndpointResponse(SdkResponse):
         'domain': 'domain',
         'description': 'description',
         'status': 'status',
+        'error_info': 'error_info',
         'type': 'type',
         'scalable': 'scalable',
         'created_time': 'created_time',
@@ -49,7 +51,7 @@ class CreateEndpointResponse(SdkResponse):
         'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, id=None, name=None, vpc_id=None, subnet_id=None, domain=None, description=None, status=None, type=None, scalable=None, created_time=None, updated_time=None, endpoints=None, x_request_id=None):
+    def __init__(self, id=None, name=None, vpc_id=None, subnet_id=None, domain=None, description=None, status=None, error_info=None, type=None, scalable=None, created_time=None, updated_time=None, endpoints=None, x_request_id=None):
         """CreateEndpointResponse
 
         The model defined in huaweicloud sdk
@@ -68,6 +70,8 @@ class CreateEndpointResponse(SdkResponse):
         :type description: str
         :param status: 访问端点状态
         :type status: str
+        :param error_info: 
+        :type error_info: :class:`huaweicloudsdkeg.v1.ErrorInfo`
         :param type: 访问端点类型
         :type type: str
         :param scalable: 是否可更新
@@ -91,6 +95,7 @@ class CreateEndpointResponse(SdkResponse):
         self._domain = None
         self._description = None
         self._status = None
+        self._error_info = None
         self._type = None
         self._scalable = None
         self._created_time = None
@@ -113,6 +118,8 @@ class CreateEndpointResponse(SdkResponse):
             self.description = description
         if status is not None:
             self.status = status
+        if error_info is not None:
+            self.error_info = error_info
         if type is not None:
             self.type = type
         if scalable is not None:
@@ -279,6 +286,24 @@ class CreateEndpointResponse(SdkResponse):
         :type status: str
         """
         self._status = status
+
+    @property
+    def error_info(self):
+        """Gets the error_info of this CreateEndpointResponse.
+
+        :return: The error_info of this CreateEndpointResponse.
+        :rtype: :class:`huaweicloudsdkeg.v1.ErrorInfo`
+        """
+        return self._error_info
+
+    @error_info.setter
+    def error_info(self, error_info):
+        """Sets the error_info of this CreateEndpointResponse.
+
+        :param error_info: The error_info of this CreateEndpointResponse.
+        :type error_info: :class:`huaweicloudsdkeg.v1.ErrorInfo`
+        """
+        self._error_info = error_info
 
     @property
     def type(self):

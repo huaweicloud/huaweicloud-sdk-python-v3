@@ -2,11 +2,10 @@
 
 import six
 
-from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class CreateAuthorizationResponse(SdkResponse):
+class ModifyProxyRouteWeightReadonlyNode:
 
     """
     Attributes:
@@ -18,80 +17,78 @@ class CreateAuthorizationResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'error_code': 'str',
-        'error_msg': 'str'
+        'id': 'str',
+        'weight': 'int'
     }
 
     attribute_map = {
-        'error_code': 'error_code',
-        'error_msg': 'error_msg'
+        'id': 'id',
+        'weight': 'weight'
     }
 
-    def __init__(self, error_code=None, error_msg=None):
-        """CreateAuthorizationResponse
+    def __init__(self, id=None, weight=None):
+        """ModifyProxyRouteWeightReadonlyNode
 
         The model defined in huaweicloud sdk
 
-        :param error_code: 错误码
-        :type error_code: str
-        :param error_msg: 错误描述
-        :type error_msg: str
+        :param id: 只读节点id
+        :type id: str
+        :param weight: 只读节点权重： - 如果路由模式为0，取值为0~1000； - 如果路由模式为1或2，取值为0或1。
+        :type weight: int
         """
         
-        super(CreateAuthorizationResponse, self).__init__()
+        
 
-        self._error_code = None
-        self._error_msg = None
+        self._id = None
+        self._weight = None
         self.discriminator = None
 
-        if error_code is not None:
-            self.error_code = error_code
-        if error_msg is not None:
-            self.error_msg = error_msg
+        self.id = id
+        self.weight = weight
 
     @property
-    def error_code(self):
-        """Gets the error_code of this CreateAuthorizationResponse.
+    def id(self):
+        """Gets the id of this ModifyProxyRouteWeightReadonlyNode.
 
-        错误码
+        只读节点id
 
-        :return: The error_code of this CreateAuthorizationResponse.
+        :return: The id of this ModifyProxyRouteWeightReadonlyNode.
         :rtype: str
         """
-        return self._error_code
+        return self._id
 
-    @error_code.setter
-    def error_code(self, error_code):
-        """Sets the error_code of this CreateAuthorizationResponse.
+    @id.setter
+    def id(self, id):
+        """Sets the id of this ModifyProxyRouteWeightReadonlyNode.
 
-        错误码
+        只读节点id
 
-        :param error_code: The error_code of this CreateAuthorizationResponse.
-        :type error_code: str
+        :param id: The id of this ModifyProxyRouteWeightReadonlyNode.
+        :type id: str
         """
-        self._error_code = error_code
+        self._id = id
 
     @property
-    def error_msg(self):
-        """Gets the error_msg of this CreateAuthorizationResponse.
+    def weight(self):
+        """Gets the weight of this ModifyProxyRouteWeightReadonlyNode.
 
-        错误描述
+        只读节点权重： - 如果路由模式为0，取值为0~1000； - 如果路由模式为1或2，取值为0或1。
 
-        :return: The error_msg of this CreateAuthorizationResponse.
-        :rtype: str
+        :return: The weight of this ModifyProxyRouteWeightReadonlyNode.
+        :rtype: int
         """
-        return self._error_msg
+        return self._weight
 
-    @error_msg.setter
-    def error_msg(self, error_msg):
-        """Sets the error_msg of this CreateAuthorizationResponse.
+    @weight.setter
+    def weight(self, weight):
+        """Sets the weight of this ModifyProxyRouteWeightReadonlyNode.
 
-        错误描述
+        只读节点权重： - 如果路由模式为0，取值为0~1000； - 如果路由模式为1或2，取值为0或1。
 
-        :param error_msg: The error_msg of this CreateAuthorizationResponse.
-        :type error_msg: str
+        :param weight: The weight of this ModifyProxyRouteWeightReadonlyNode.
+        :type weight: int
         """
-        self._error_msg = error_msg
+        self._weight = weight
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -135,7 +132,7 @@ class CreateAuthorizationResponse(SdkResponse):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, CreateAuthorizationResponse):
+        if not isinstance(other, ModifyProxyRouteWeightReadonlyNode):
             return False
 
         return self.__dict__ == other.__dict__

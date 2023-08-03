@@ -50,8 +50,7 @@ class ListMessageTraceRequest:
 
         self.engine = engine
         self.instance_id = instance_id
-        if msg_id is not None:
-            self.msg_id = msg_id
+        self.msg_id = msg_id
 
     @property
     def engine(self):

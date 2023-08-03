@@ -19,15 +19,17 @@ class DeleteAimPersonalTemplateResponse(SdkResponse):
 
     openapi_types = {
         'status': 'str',
-        'message': 'str'
+        'message': 'str',
+        'data': 'object'
     }
 
     attribute_map = {
         'status': 'status',
-        'message': 'message'
+        'message': 'message',
+        'data': 'data'
     }
 
-    def __init__(self, status=None, message=None):
+    def __init__(self, status=None, message=None, data=None):
         """DeleteAimPersonalTemplateResponse
 
         The model defined in huaweicloud sdk
@@ -36,18 +38,23 @@ class DeleteAimPersonalTemplateResponse(SdkResponse):
         :type status: str
         :param message: 响应消息。
         :type message: str
+        :param data: 固定为null
+        :type data: object
         """
         
         super(DeleteAimPersonalTemplateResponse, self).__init__()
 
         self._status = None
         self._message = None
+        self._data = None
         self.discriminator = None
 
         if status is not None:
             self.status = status
         if message is not None:
             self.message = message
+        if data is not None:
+            self.data = data
 
     @property
     def status(self):
@@ -92,6 +99,28 @@ class DeleteAimPersonalTemplateResponse(SdkResponse):
         :type message: str
         """
         self._message = message
+
+    @property
+    def data(self):
+        """Gets the data of this DeleteAimPersonalTemplateResponse.
+
+        固定为null
+
+        :return: The data of this DeleteAimPersonalTemplateResponse.
+        :rtype: object
+        """
+        return self._data
+
+    @data.setter
+    def data(self, data):
+        """Sets the data of this DeleteAimPersonalTemplateResponse.
+
+        固定为null
+
+        :param data: The data of this DeleteAimPersonalTemplateResponse.
+        :type data: object
+        """
+        self._data = data
 
     def to_dict(self):
         """Returns the model properties as a dict"""

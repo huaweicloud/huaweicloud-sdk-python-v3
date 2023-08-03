@@ -24,7 +24,7 @@ class CreateResolveTaskRequestBody:
         'generation_type': 'str',
         'domain': 'str',
         'expiration_time': 'int',
-        'params': 'list[CreateResolveTaskParam]'
+        'params': 'list[CreateShortChainParam]'
     }
 
     attribute_map = {
@@ -58,7 +58,7 @@ class CreateResolveTaskRequestBody:
         :param expiration_time: 失效时间（天）。aim_code_type为group时，取值范围为1~100；aim_code_type为individual个性化时，取值范围为1~7。  &gt; 失效时间精确到秒，例如参数设置为1，创建时间为2022-07-22 21:10:12，过期时间为2022-07-23 21:10:12。 
         :type expiration_time: int
         :param params: 短链参数列表。一次请求最多生成100个短链。  &gt; OPPO模板一次最多申请10个短链。 
-        :type params: list[:class:`huaweicloudsdkkoomessage.v1.CreateResolveTaskParam`]
+        :type params: list[:class:`huaweicloudsdkkoomessage.v1.CreateShortChainParam`]
         """
         
         
@@ -245,7 +245,7 @@ class CreateResolveTaskRequestBody:
         短链参数列表。一次请求最多生成100个短链。  > OPPO模板一次最多申请10个短链。 
 
         :return: The params of this CreateResolveTaskRequestBody.
-        :rtype: list[:class:`huaweicloudsdkkoomessage.v1.CreateResolveTaskParam`]
+        :rtype: list[:class:`huaweicloudsdkkoomessage.v1.CreateShortChainParam`]
         """
         return self._params
 
@@ -256,7 +256,7 @@ class CreateResolveTaskRequestBody:
         短链参数列表。一次请求最多生成100个短链。  > OPPO模板一次最多申请10个短链。 
 
         :param params: The params of this CreateResolveTaskRequestBody.
-        :type params: list[:class:`huaweicloudsdkkoomessage.v1.CreateResolveTaskParam`]
+        :type params: list[:class:`huaweicloudsdkkoomessage.v1.CreateShortChainParam`]
         """
         self._params = params
 

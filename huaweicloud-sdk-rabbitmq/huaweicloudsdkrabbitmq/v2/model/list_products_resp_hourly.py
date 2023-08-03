@@ -35,7 +35,7 @@ class ListProductsRespHourly:
 
         :param name: 消息引擎的名称，该字段显示为rabbitmq。
         :type name: str
-        :param version: 消息引擎的版本，当前支持3.8.35和3.7.17。
+        :param version: 消息引擎的版本，当前支持3.8.35[和3.7.17](tag:sbc,hk_sbc)。
         :type version: str
         :param values: 产品规格列表。
         :type values: list[:class:`huaweicloudsdkrabbitmq.v2.ListProductsRespValues`]
@@ -81,7 +81,7 @@ class ListProductsRespHourly:
     def version(self):
         """Gets the version of this ListProductsRespHourly.
 
-        消息引擎的版本，当前支持3.8.35和3.7.17。
+        消息引擎的版本，当前支持3.8.35[和3.7.17](tag:sbc,hk_sbc)。
 
         :return: The version of this ListProductsRespHourly.
         :rtype: str
@@ -92,7 +92,7 @@ class ListProductsRespHourly:
     def version(self, version):
         """Sets the version of this ListProductsRespHourly.
 
-        消息引擎的版本，当前支持3.8.35和3.7.17。
+        消息引擎的版本，当前支持3.8.35[和3.7.17](tag:sbc,hk_sbc)。
 
         :param version: The version of this ListProductsRespHourly.
         :type version: str

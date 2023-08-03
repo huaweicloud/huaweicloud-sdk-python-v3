@@ -35,9 +35,9 @@ class ListVideoMotionCaptureJobsRequest:
 
         :param x_app_user_id: 开发者应用作为资产权属的可选字段。
         :type x_app_user_id: str
-        :param offset: 偏移量，表示从此偏移量开始查询
+        :param offset: 偏移量，表示从此偏移量开始查询。
         :type offset: int
-        :param limit: 每页显示的条目数量
+        :param limit: 每页显示的条目数量。
         :type limit: int
         """
         
@@ -81,7 +81,7 @@ class ListVideoMotionCaptureJobsRequest:
     def offset(self):
         """Gets the offset of this ListVideoMotionCaptureJobsRequest.
 
-        偏移量，表示从此偏移量开始查询
+        偏移量，表示从此偏移量开始查询。
 
         :return: The offset of this ListVideoMotionCaptureJobsRequest.
         :rtype: int
@@ -92,7 +92,7 @@ class ListVideoMotionCaptureJobsRequest:
     def offset(self, offset):
         """Sets the offset of this ListVideoMotionCaptureJobsRequest.
 
-        偏移量，表示从此偏移量开始查询
+        偏移量，表示从此偏移量开始查询。
 
         :param offset: The offset of this ListVideoMotionCaptureJobsRequest.
         :type offset: int
@@ -103,7 +103,7 @@ class ListVideoMotionCaptureJobsRequest:
     def limit(self):
         """Gets the limit of this ListVideoMotionCaptureJobsRequest.
 
-        每页显示的条目数量
+        每页显示的条目数量。
 
         :return: The limit of this ListVideoMotionCaptureJobsRequest.
         :rtype: int
@@ -114,7 +114,7 @@ class ListVideoMotionCaptureJobsRequest:
     def limit(self, limit):
         """Sets the limit of this ListVideoMotionCaptureJobsRequest.
 
-        每页显示的条目数量
+        每页显示的条目数量。
 
         :param limit: The limit of this ListVideoMotionCaptureJobsRequest.
         :type limit: int

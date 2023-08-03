@@ -18,27 +18,31 @@ class MotionItem:
 
     openapi_types = {
         'timestamp': 'float',
-        'root': 'list[object]',
-        'joints': 'list[object]'
+        'root': 'list[float]',
+        'joints': 'list[float]',
+        'eyes': 'list[float]'
     }
 
     attribute_map = {
         'timestamp': 'timestamp',
         'root': 'root',
-        'joints': 'joints'
+        'joints': 'joints',
+        'eyes': 'eyes'
     }
 
-    def __init__(self, timestamp=None, root=None, joints=None):
+    def __init__(self, timestamp=None, root=None, joints=None, eyes=None):
         """MotionItem
 
         The model defined in huaweicloud sdk
 
-        :param timestamp: 时间戳，相对时间戳，单位S，保留3位小数。
+        :param timestamp: 时间戳，相对时间戳。  单位秒。  保留3位小数。
         :type timestamp: float
         :param root: root 3维坐标。
-        :type root: list[object]
-        :param joints: 75个关节点,四元数。
-        :type joints: list[object]
+        :type root: list[float]
+        :param joints: 75个关节点，四元数。
+        :type joints: list[float]
+        :param eyes: 眼动数据
+        :type eyes: list[float]
         """
         
         
@@ -46,6 +50,7 @@ class MotionItem:
         self._timestamp = None
         self._root = None
         self._joints = None
+        self._eyes = None
         self.discriminator = None
 
         if timestamp is not None:
@@ -54,12 +59,14 @@ class MotionItem:
             self.root = root
         if joints is not None:
             self.joints = joints
+        if eyes is not None:
+            self.eyes = eyes
 
     @property
     def timestamp(self):
         """Gets the timestamp of this MotionItem.
 
-        时间戳，相对时间戳，单位S，保留3位小数。
+        时间戳，相对时间戳。  单位秒。  保留3位小数。
 
         :return: The timestamp of this MotionItem.
         :rtype: float
@@ -70,7 +77,7 @@ class MotionItem:
     def timestamp(self, timestamp):
         """Sets the timestamp of this MotionItem.
 
-        时间戳，相对时间戳，单位S，保留3位小数。
+        时间戳，相对时间戳。  单位秒。  保留3位小数。
 
         :param timestamp: The timestamp of this MotionItem.
         :type timestamp: float
@@ -84,7 +91,7 @@ class MotionItem:
         root 3维坐标。
 
         :return: The root of this MotionItem.
-        :rtype: list[object]
+        :rtype: list[float]
         """
         return self._root
 
@@ -95,7 +102,7 @@ class MotionItem:
         root 3维坐标。
 
         :param root: The root of this MotionItem.
-        :type root: list[object]
+        :type root: list[float]
         """
         self._root = root
 
@@ -103,10 +110,10 @@ class MotionItem:
     def joints(self):
         """Gets the joints of this MotionItem.
 
-        75个关节点,四元数。
+        75个关节点，四元数。
 
         :return: The joints of this MotionItem.
-        :rtype: list[object]
+        :rtype: list[float]
         """
         return self._joints
 
@@ -114,12 +121,34 @@ class MotionItem:
     def joints(self, joints):
         """Sets the joints of this MotionItem.
 
-        75个关节点,四元数。
+        75个关节点，四元数。
 
         :param joints: The joints of this MotionItem.
-        :type joints: list[object]
+        :type joints: list[float]
         """
         self._joints = joints
+
+    @property
+    def eyes(self):
+        """Gets the eyes of this MotionItem.
+
+        眼动数据
+
+        :return: The eyes of this MotionItem.
+        :rtype: list[float]
+        """
+        return self._eyes
+
+    @eyes.setter
+    def eyes(self, eyes):
+        """Sets the eyes of this MotionItem.
+
+        眼动数据
+
+        :param eyes: The eyes of this MotionItem.
+        :type eyes: list[float]
+        """
+        self._eyes = eyes
 
     def to_dict(self):
         """Returns the model properties as a dict"""

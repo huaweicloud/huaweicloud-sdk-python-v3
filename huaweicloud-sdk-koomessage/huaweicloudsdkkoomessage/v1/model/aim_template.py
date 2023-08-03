@@ -61,7 +61,7 @@ class AIMTemplate:
         :type tpl_name: str
         :param scene: 场景类型。 
         :type scene: str
-        :param tpl_state: 模板状态。  - 0：禁用 - 1：启用  &gt; 智能信息模板启动、禁用暂为运营管理功能，Console页面与API暂未开放此功能。 
+        :param tpl_state: 模板状态。  - 0：禁用 - 1：启用 
         :type tpl_state: int
         :param disable_desc: 禁用原因。
         :type disable_desc: str
@@ -202,7 +202,7 @@ class AIMTemplate:
     def tpl_state(self):
         """Gets the tpl_state of this AIMTemplate.
 
-        模板状态。  - 0：禁用 - 1：启用  > 智能信息模板启动、禁用暂为运营管理功能，Console页面与API暂未开放此功能。 
+        模板状态。  - 0：禁用 - 1：启用 
 
         :return: The tpl_state of this AIMTemplate.
         :rtype: int
@@ -213,7 +213,7 @@ class AIMTemplate:
     def tpl_state(self, tpl_state):
         """Sets the tpl_state of this AIMTemplate.
 
-        模板状态。  - 0：禁用 - 1：启用  > 智能信息模板启动、禁用暂为运营管理功能，Console页面与API暂未开放此功能。 
+        模板状态。  - 0：禁用 - 1：启用 
 
         :param tpl_state: The tpl_state of this AIMTemplate.
         :type tpl_state: int

@@ -2369,6 +2369,69 @@ class GaussDBAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def modify_gauss_my_sql_proxy_route_mode_async(self, request):
+        """设置读写分离路由模式
+
+        设置读写分离路由模式。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ModifyGaussMySqlProxyRouteMode
+        :type request: :class:`huaweicloudsdkgaussdb.v3.ModifyGaussMySqlProxyRouteModeRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ModifyGaussMySqlProxyRouteModeResponse`
+        """
+        return self._modify_gauss_my_sql_proxy_route_mode_with_http_info(request)
+
+    def _modify_gauss_my_sql_proxy_route_mode_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'proxy_id' in local_var_params:
+            path_params['proxy_id'] = local_var_params['proxy_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/proxy/{proxy_id}/route-mode',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ModifyGaussMySqlProxyRouteModeResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def reset_gauss_my_sql_database_password_async(self, request):
         """修改数据库用户密码
 
@@ -4686,7 +4749,7 @@ class GaussDBAsyncClient(Client):
     def update_proxy_connection_pool_type_async(self, request):
         """更改数据库代理连接池类型
 
-        更改数据库代理连接池类型
+        更改数据库代理连接池类型。
         
         Please refer to HUAWEI cloud API Explorer for details.
 

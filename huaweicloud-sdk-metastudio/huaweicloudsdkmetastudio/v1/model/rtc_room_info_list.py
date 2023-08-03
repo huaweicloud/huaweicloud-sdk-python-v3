@@ -37,7 +37,7 @@ class RTCRoomInfoList:
         :type app_id: str
         :param room_id: RTC房间ID。
         :type room_id: str
-        :param users: 
+        :param users: 接入RTC的用户信息。
         :type users: list[:class:`huaweicloudsdkmetastudio.v1.RTCUserInfo`]
         """
         
@@ -103,6 +103,8 @@ class RTCRoomInfoList:
     def users(self):
         """Gets the users of this RTCRoomInfoList.
 
+        接入RTC的用户信息。
+
         :return: The users of this RTCRoomInfoList.
         :rtype: list[:class:`huaweicloudsdkmetastudio.v1.RTCUserInfo`]
         """
@@ -111,6 +113,8 @@ class RTCRoomInfoList:
     @users.setter
     def users(self, users):
         """Sets the users of this RTCRoomInfoList.
+
+        接入RTC的用户信息。
 
         :param users: The users of this RTCRoomInfoList.
         :type users: list[:class:`huaweicloudsdkmetastudio.v1.RTCUserInfo`]

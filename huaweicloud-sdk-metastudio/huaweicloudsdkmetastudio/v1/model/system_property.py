@@ -33,9 +33,9 @@ class SystemProperty:
 
         The model defined in huaweicloud sdk
 
-        :param action: 操作。 - ADD： 增加 - DELETE： 删除
+        :param action: 操作。 - ADD：增加 - DELETE：删除
         :type action: str
-        :param key: 系统属性。 * STYLE_ID * DH_ID * PLATFORM_AVAILABLE * RENDER_ENGINE： 引擎类型。value可选UE或MetaEngine。 * BACKGROUND_IMG: 视频制作的2D背景图片。value设置成Yes * BACKGROUND_SCENE: 视频制作的2D背景场景。value可选Horizontal（横屏）或者Vertical（竖屏）
+        :param key: 系统属性。 * STYLE_ID：风格Id。 * DH_ID：数字人ID(尚未启用)。 * PLATFORM_AVAILABLE：是否平台可用(尚未启用)。 * RENDER_ENGINE：引擎类型。value可选UE或MetaEngine。 * BACKGROUND_IMG：视频制作的2D背景图片。value设置成Yes * BACKGROUND_SCENE：视频制作的2D背景场景。value可选Horizontal（横屏）或者Vertical（竖屏） * CREATED_BY_PLATFORM： 是否平台生成
         :type key: str
         :param value: 属性值。
         :type value: str
@@ -59,7 +59,7 @@ class SystemProperty:
     def action(self):
         """Gets the action of this SystemProperty.
 
-        操作。 - ADD： 增加 - DELETE： 删除
+        操作。 - ADD：增加 - DELETE：删除
 
         :return: The action of this SystemProperty.
         :rtype: str
@@ -70,7 +70,7 @@ class SystemProperty:
     def action(self, action):
         """Sets the action of this SystemProperty.
 
-        操作。 - ADD： 增加 - DELETE： 删除
+        操作。 - ADD：增加 - DELETE：删除
 
         :param action: The action of this SystemProperty.
         :type action: str
@@ -81,7 +81,7 @@ class SystemProperty:
     def key(self):
         """Gets the key of this SystemProperty.
 
-        系统属性。 * STYLE_ID * DH_ID * PLATFORM_AVAILABLE * RENDER_ENGINE： 引擎类型。value可选UE或MetaEngine。 * BACKGROUND_IMG: 视频制作的2D背景图片。value设置成Yes * BACKGROUND_SCENE: 视频制作的2D背景场景。value可选Horizontal（横屏）或者Vertical（竖屏）
+        系统属性。 * STYLE_ID：风格Id。 * DH_ID：数字人ID(尚未启用)。 * PLATFORM_AVAILABLE：是否平台可用(尚未启用)。 * RENDER_ENGINE：引擎类型。value可选UE或MetaEngine。 * BACKGROUND_IMG：视频制作的2D背景图片。value设置成Yes * BACKGROUND_SCENE：视频制作的2D背景场景。value可选Horizontal（横屏）或者Vertical（竖屏） * CREATED_BY_PLATFORM： 是否平台生成
 
         :return: The key of this SystemProperty.
         :rtype: str
@@ -92,7 +92,7 @@ class SystemProperty:
     def key(self, key):
         """Sets the key of this SystemProperty.
 
-        系统属性。 * STYLE_ID * DH_ID * PLATFORM_AVAILABLE * RENDER_ENGINE： 引擎类型。value可选UE或MetaEngine。 * BACKGROUND_IMG: 视频制作的2D背景图片。value设置成Yes * BACKGROUND_SCENE: 视频制作的2D背景场景。value可选Horizontal（横屏）或者Vertical（竖屏）
+        系统属性。 * STYLE_ID：风格Id。 * DH_ID：数字人ID(尚未启用)。 * PLATFORM_AVAILABLE：是否平台可用(尚未启用)。 * RENDER_ENGINE：引擎类型。value可选UE或MetaEngine。 * BACKGROUND_IMG：视频制作的2D背景图片。value设置成Yes * BACKGROUND_SCENE：视频制作的2D背景场景。value可选Horizontal（横屏）或者Vertical（竖屏） * CREATED_BY_PLATFORM： 是否平台生成
 
         :param key: The key of this SystemProperty.
         :type key: str

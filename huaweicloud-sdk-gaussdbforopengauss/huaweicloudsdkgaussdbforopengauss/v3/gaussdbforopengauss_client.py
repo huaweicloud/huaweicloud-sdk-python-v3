@@ -1373,6 +1373,10 @@ class GaussDBforopenGaussClient(Client):
             query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
+        if 'component_type' in local_var_params:
+            query_params.append(('component_type', local_var_params['component_type']))
+        if 'availability_zone_id' in local_var_params:
+            query_params.append(('availability_zone_id', local_var_params['availability_zone_id']))
 
         header_params = {}
         if 'x_language' in local_var_params:

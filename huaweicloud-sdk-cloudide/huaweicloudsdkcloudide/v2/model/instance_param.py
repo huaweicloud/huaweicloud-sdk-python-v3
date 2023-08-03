@@ -83,7 +83,7 @@ class InstanceParam:
         :type label_tag: str
         :param plugin_enable_list: 预装插件列表
         :type plugin_enable_list: list[str]
-        :param plugin_vars: 预装插件参数
+        :param plugin_vars: 预装插件参数，请注意敏感信息保护，若涉及敏感信息，请自行加密
         :type plugin_vars: dict(str, str)
         :param port_id: 云服务器对应的portId，小网连接ecs的场景下使用
         :type port_id: str
@@ -349,7 +349,7 @@ class InstanceParam:
     def plugin_vars(self):
         """Gets the plugin_vars of this InstanceParam.
 
-        预装插件参数
+        预装插件参数，请注意敏感信息保护，若涉及敏感信息，请自行加密
 
         :return: The plugin_vars of this InstanceParam.
         :rtype: dict(str, str)
@@ -360,7 +360,7 @@ class InstanceParam:
     def plugin_vars(self, plugin_vars):
         """Sets the plugin_vars of this InstanceParam.
 
-        预装插件参数
+        预装插件参数，请注意敏感信息保护，若涉及敏感信息，请自行加密
 
         :param plugin_vars: The plugin_vars of this InstanceParam.
         :type plugin_vars: dict(str, str)

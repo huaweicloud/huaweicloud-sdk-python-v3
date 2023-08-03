@@ -47,7 +47,8 @@ class ListInstanceResult:
         'charge_info': 'OpenGaussChargeInfoListResponse',
         'time_zone': 'str',
         'tags': 'list[TagResult]',
-        'disk_usage': 'str'
+        'disk_usage': 'str',
+        'backup_used_space': 'str'
     }
 
     attribute_map = {
@@ -81,10 +82,11 @@ class ListInstanceResult:
         'charge_info': 'charge_info',
         'time_zone': 'time_zone',
         'tags': 'tags',
-        'disk_usage': 'disk_usage'
+        'disk_usage': 'disk_usage',
+        'backup_used_space': 'backup_used_space'
     }
 
-    def __init__(self, id=None, name=None, status=None, private_ips=None, public_ips=None, port=None, type=None, ha=None, replica_num=None, region=None, datastore=None, created=None, updated=None, db_user_name=None, vpc_id=None, subnet_id=None, security_group_id=None, flavor_ref=None, flavor_info=None, volume=None, switch_strategy=None, backup_strategy=None, maintenance_window=None, nodes=None, enterprise_project_id=None, instance_mode=None, disk_encryption_id=None, charge_info=None, time_zone=None, tags=None, disk_usage=None):
+    def __init__(self, id=None, name=None, status=None, private_ips=None, public_ips=None, port=None, type=None, ha=None, replica_num=None, region=None, datastore=None, created=None, updated=None, db_user_name=None, vpc_id=None, subnet_id=None, security_group_id=None, flavor_ref=None, flavor_info=None, volume=None, switch_strategy=None, backup_strategy=None, maintenance_window=None, nodes=None, enterprise_project_id=None, instance_mode=None, disk_encryption_id=None, charge_info=None, time_zone=None, tags=None, disk_usage=None, backup_used_space=None):
         """ListInstanceResult
 
         The model defined in huaweicloud sdk
@@ -151,6 +153,8 @@ class ListInstanceResult:
         :type tags: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.TagResult`]
         :param disk_usage: 实例磁盘的可使用率，值范围[0-1]，值保留四位小数。
         :type disk_usage: str
+        :param backup_used_space: 备份空间使用量，单位KB。
+        :type backup_used_space: str
         """
         
         
@@ -186,6 +190,7 @@ class ListInstanceResult:
         self._time_zone = None
         self._tags = None
         self._disk_usage = None
+        self._backup_used_space = None
         self.discriminator = None
 
         self.id = id
@@ -221,6 +226,8 @@ class ListInstanceResult:
         self.tags = tags
         if disk_usage is not None:
             self.disk_usage = disk_usage
+        if backup_used_space is not None:
+            self.backup_used_space = backup_used_space
 
     @property
     def id(self):
@@ -879,6 +886,28 @@ class ListInstanceResult:
         :type disk_usage: str
         """
         self._disk_usage = disk_usage
+
+    @property
+    def backup_used_space(self):
+        """Gets the backup_used_space of this ListInstanceResult.
+
+        备份空间使用量，单位KB。
+
+        :return: The backup_used_space of this ListInstanceResult.
+        :rtype: str
+        """
+        return self._backup_used_space
+
+    @backup_used_space.setter
+    def backup_used_space(self, backup_used_space):
+        """Sets the backup_used_space of this ListInstanceResult.
+
+        备份空间使用量，单位KB。
+
+        :param backup_used_space: The backup_used_space of this ListInstanceResult.
+        :type backup_used_space: str
+        """
+        self._backup_used_space = backup_used_space
 
     def to_dict(self):
         """Returns the model properties as a dict"""

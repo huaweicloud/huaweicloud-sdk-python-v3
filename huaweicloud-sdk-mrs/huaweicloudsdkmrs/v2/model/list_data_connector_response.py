@@ -2,10 +2,11 @@
 
 import six
 
+from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class CreateAuthorizationRequest:
+class ListDataConnectorResponse(SdkResponse):
 
     """
     Attributes:
@@ -17,75 +18,80 @@ class CreateAuthorizationRequest:
     sensitive_list = []
 
     openapi_types = {
-        'case_id': 'str',
-        'body': 'CreateUserCenterAuthorizationV2Req'
+        'total_count': 'int',
+        'data_connectors': 'list[DataConnectorDetail]'
     }
 
     attribute_map = {
-        'case_id': 'case_id',
-        'body': 'body'
+        'total_count': 'total_count',
+        'data_connectors': 'data_connectors'
     }
 
-    def __init__(self, case_id=None, body=None):
-        """CreateAuthorizationRequest
+    def __init__(self, total_count=None, data_connectors=None):
+        """ListDataConnectorResponse
 
         The model defined in huaweicloud sdk
 
-        :param case_id: 事件id
-        :type case_id: str
-        :param body: Body of the CreateAuthorizationRequest
-        :type body: :class:`huaweicloudsdkosm.v2.CreateUserCenterAuthorizationV2Req`
+        :param total_count: 数据连接总数
+        :type total_count: int
+        :param data_connectors: 数据连接详情列表
+        :type data_connectors: list[:class:`huaweicloudsdkmrs.v2.DataConnectorDetail`]
         """
         
-        
+        super(ListDataConnectorResponse, self).__init__()
 
-        self._case_id = None
-        self._body = None
+        self._total_count = None
+        self._data_connectors = None
         self.discriminator = None
 
-        self.case_id = case_id
-        if body is not None:
-            self.body = body
+        if total_count is not None:
+            self.total_count = total_count
+        if data_connectors is not None:
+            self.data_connectors = data_connectors
 
     @property
-    def case_id(self):
-        """Gets the case_id of this CreateAuthorizationRequest.
+    def total_count(self):
+        """Gets the total_count of this ListDataConnectorResponse.
 
-        事件id
+        数据连接总数
 
-        :return: The case_id of this CreateAuthorizationRequest.
-        :rtype: str
+        :return: The total_count of this ListDataConnectorResponse.
+        :rtype: int
         """
-        return self._case_id
+        return self._total_count
 
-    @case_id.setter
-    def case_id(self, case_id):
-        """Sets the case_id of this CreateAuthorizationRequest.
+    @total_count.setter
+    def total_count(self, total_count):
+        """Sets the total_count of this ListDataConnectorResponse.
 
-        事件id
+        数据连接总数
 
-        :param case_id: The case_id of this CreateAuthorizationRequest.
-        :type case_id: str
+        :param total_count: The total_count of this ListDataConnectorResponse.
+        :type total_count: int
         """
-        self._case_id = case_id
+        self._total_count = total_count
 
     @property
-    def body(self):
-        """Gets the body of this CreateAuthorizationRequest.
+    def data_connectors(self):
+        """Gets the data_connectors of this ListDataConnectorResponse.
 
-        :return: The body of this CreateAuthorizationRequest.
-        :rtype: :class:`huaweicloudsdkosm.v2.CreateUserCenterAuthorizationV2Req`
+        数据连接详情列表
+
+        :return: The data_connectors of this ListDataConnectorResponse.
+        :rtype: list[:class:`huaweicloudsdkmrs.v2.DataConnectorDetail`]
         """
-        return self._body
+        return self._data_connectors
 
-    @body.setter
-    def body(self, body):
-        """Sets the body of this CreateAuthorizationRequest.
+    @data_connectors.setter
+    def data_connectors(self, data_connectors):
+        """Sets the data_connectors of this ListDataConnectorResponse.
 
-        :param body: The body of this CreateAuthorizationRequest.
-        :type body: :class:`huaweicloudsdkosm.v2.CreateUserCenterAuthorizationV2Req`
+        数据连接详情列表
+
+        :param data_connectors: The data_connectors of this ListDataConnectorResponse.
+        :type data_connectors: list[:class:`huaweicloudsdkmrs.v2.DataConnectorDetail`]
         """
-        self._body = body
+        self._data_connectors = data_connectors
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -129,7 +135,7 @@ class CreateAuthorizationRequest:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, CreateAuthorizationRequest):
+        if not isinstance(other, ListDataConnectorResponse):
             return False
 
         return self.__dict__ == other.__dict__

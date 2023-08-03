@@ -38,7 +38,8 @@ class Port:
         'instance_id': 'str',
         'instance_type': 'str',
         'port_security_enabled': 'bool',
-        'zone_id': 'str'
+        'zone_id': 'str',
+        'enable_efi': 'bool'
     }
 
     attribute_map = {
@@ -63,10 +64,11 @@ class Port:
         'instance_id': 'instance_id',
         'instance_type': 'instance_type',
         'port_security_enabled': 'port_security_enabled',
-        'zone_id': 'zone_id'
+        'zone_id': 'zone_id',
+        'enable_efi': 'enable_efi'
     }
 
-    def __init__(self, id=None, name=None, network_id=None, admin_state_up=None, mac_address=None, fixed_ips=None, device_id=None, device_owner=None, tenant_id=None, status=None, security_groups=None, allowed_address_pairs=None, extra_dhcp_opts=None, bindingvnic_type=None, dns_assignment=None, dns_name=None, bindingvif_details=None, bindingprofile=None, instance_id=None, instance_type=None, port_security_enabled=None, zone_id=None):
+    def __init__(self, id=None, name=None, network_id=None, admin_state_up=None, mac_address=None, fixed_ips=None, device_id=None, device_owner=None, tenant_id=None, status=None, security_groups=None, allowed_address_pairs=None, extra_dhcp_opts=None, bindingvnic_type=None, dns_assignment=None, dns_name=None, bindingvif_details=None, bindingprofile=None, instance_id=None, instance_type=None, port_security_enabled=None, zone_id=None, enable_efi=None):
         """Port
 
         The model defined in huaweicloud sdk
@@ -115,6 +117,8 @@ class Port:
         :type port_security_enabled: bool
         :param zone_id: 功能说明：port所属的可用分区
         :type zone_id: str
+        :param enable_efi: 功能说明：是否使能efi，使能则表示端口支持vRoCE能力，默认为false
+        :type enable_efi: bool
         """
         
         
@@ -141,6 +145,7 @@ class Port:
         self._instance_type = None
         self._port_security_enabled = None
         self._zone_id = None
+        self._enable_efi = None
         self.discriminator = None
 
         self.id = id
@@ -165,6 +170,7 @@ class Port:
         self.instance_type = instance_type
         self.port_security_enabled = port_security_enabled
         self.zone_id = zone_id
+        self.enable_efi = enable_efi
 
     @property
     def id(self):
@@ -645,6 +651,28 @@ class Port:
         :type zone_id: str
         """
         self._zone_id = zone_id
+
+    @property
+    def enable_efi(self):
+        """Gets the enable_efi of this Port.
+
+        功能说明：是否使能efi，使能则表示端口支持vRoCE能力，默认为false
+
+        :return: The enable_efi of this Port.
+        :rtype: bool
+        """
+        return self._enable_efi
+
+    @enable_efi.setter
+    def enable_efi(self, enable_efi):
+        """Sets the enable_efi of this Port.
+
+        功能说明：是否使能efi，使能则表示端口支持vRoCE能力，默认为false
+
+        :param enable_efi: The enable_efi of this Port.
+        :type enable_efi: bool
+        """
+        self._enable_efi = enable_efi
 
     def to_dict(self):
         """Returns the model properties as a dict"""

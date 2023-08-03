@@ -33,7 +33,7 @@ class VideoMotionCaptureJobReq:
 
         The model defined in huaweicloud sdk
 
-        :param motion_capture_mode: 视频驱动模式。 * HEAD: 头部 * HALF_BODY: 半身 * FULL_BODY: 全身 * AUTO: 自动
+        :param motion_capture_mode: 视频驱动模式。 * HEAD：头部 * HALF_BODY：半身 * FULL_BODY：全身 * AUTO：自动
         :type motion_capture_mode: str
         :param input_info: 
         :type input_info: :class:`huaweicloudsdkmetastudio.v1.InputInfo`
@@ -59,7 +59,7 @@ class VideoMotionCaptureJobReq:
     def motion_capture_mode(self):
         """Gets the motion_capture_mode of this VideoMotionCaptureJobReq.
 
-        视频驱动模式。 * HEAD: 头部 * HALF_BODY: 半身 * FULL_BODY: 全身 * AUTO: 自动
+        视频驱动模式。 * HEAD：头部 * HALF_BODY：半身 * FULL_BODY：全身 * AUTO：自动
 
         :return: The motion_capture_mode of this VideoMotionCaptureJobReq.
         :rtype: str
@@ -70,7 +70,7 @@ class VideoMotionCaptureJobReq:
     def motion_capture_mode(self, motion_capture_mode):
         """Sets the motion_capture_mode of this VideoMotionCaptureJobReq.
 
-        视频驱动模式。 * HEAD: 头部 * HALF_BODY: 半身 * FULL_BODY: 全身 * AUTO: 自动
+        视频驱动模式。 * HEAD：头部 * HALF_BODY：半身 * FULL_BODY：全身 * AUTO：自动
 
         :param motion_capture_mode: The motion_capture_mode of this VideoMotionCaptureJobReq.
         :type motion_capture_mode: str

@@ -46,7 +46,8 @@ class ListInstanceResponse:
         'disk_encryption_id': 'str',
         'charge_info': 'OpenGaussChargeInfoListResponse',
         'time_zone': 'str',
-        'tags': 'list[object]'
+        'tags': 'list[object]',
+        'backup_used_space': 'str'
     }
 
     attribute_map = {
@@ -79,10 +80,11 @@ class ListInstanceResponse:
         'disk_encryption_id': 'disk_encryption_id',
         'charge_info': 'charge_info',
         'time_zone': 'time_zone',
-        'tags': 'tags'
+        'tags': 'tags',
+        'backup_used_space': 'backup_used_space'
     }
 
-    def __init__(self, id=None, name=None, status=None, private_ips=None, public_ips=None, port=None, type=None, ha=None, replica_num=None, region=None, datastore=None, created=None, updated=None, db_user_name=None, vpc_id=None, subnet_id=None, security_group_id=None, flavor_ref=None, flavor_info=None, volume=None, switch_strategy=None, backup_strategy=None, maintenance_window=None, nodes=None, enterprise_project_id=None, instance_mode=None, disk_encryption_id=None, charge_info=None, time_zone=None, tags=None):
+    def __init__(self, id=None, name=None, status=None, private_ips=None, public_ips=None, port=None, type=None, ha=None, replica_num=None, region=None, datastore=None, created=None, updated=None, db_user_name=None, vpc_id=None, subnet_id=None, security_group_id=None, flavor_ref=None, flavor_info=None, volume=None, switch_strategy=None, backup_strategy=None, maintenance_window=None, nodes=None, enterprise_project_id=None, instance_mode=None, disk_encryption_id=None, charge_info=None, time_zone=None, tags=None, backup_used_space=None):
         """ListInstanceResponse
 
         The model defined in huaweicloud sdk
@@ -147,6 +149,8 @@ class ListInstanceResponse:
         :type time_zone: str
         :param tags: 标签列表，没有标签不返回该参数。
         :type tags: list[object]
+        :param backup_used_space: 备份空间使用量，单位KB。
+        :type backup_used_space: str
         """
         
         
@@ -181,6 +185,7 @@ class ListInstanceResponse:
         self._charge_info = None
         self._time_zone = None
         self._tags = None
+        self._backup_used_space = None
         self.discriminator = None
 
         self.id = id
@@ -214,6 +219,8 @@ class ListInstanceResponse:
         self.charge_info = charge_info
         self.time_zone = time_zone
         self.tags = tags
+        if backup_used_space is not None:
+            self.backup_used_space = backup_used_space
 
     @property
     def id(self):
@@ -850,6 +857,28 @@ class ListInstanceResponse:
         :type tags: list[object]
         """
         self._tags = tags
+
+    @property
+    def backup_used_space(self):
+        """Gets the backup_used_space of this ListInstanceResponse.
+
+        备份空间使用量，单位KB。
+
+        :return: The backup_used_space of this ListInstanceResponse.
+        :rtype: str
+        """
+        return self._backup_used_space
+
+    @backup_used_space.setter
+    def backup_used_space(self, backup_used_space):
+        """Sets the backup_used_space of this ListInstanceResponse.
+
+        备份空间使用量，单位KB。
+
+        :param backup_used_space: The backup_used_space of this ListInstanceResponse.
+        :type backup_used_space: str
+        """
+        self._backup_used_space = backup_used_space
 
     def to_dict(self):
         """Returns the model properties as a dict"""

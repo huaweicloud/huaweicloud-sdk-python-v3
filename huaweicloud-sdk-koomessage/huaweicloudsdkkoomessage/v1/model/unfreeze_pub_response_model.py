@@ -17,47 +17,51 @@ class UnfreezePubResponseModel:
     sensitive_list = []
 
     openapi_types = {
-        'data': 'FreezePubResponseModelData'
+        'pub_id': 'str'
     }
 
     attribute_map = {
-        'data': 'data'
+        'pub_id': 'pub_id'
     }
 
-    def __init__(self, data=None):
+    def __init__(self, pub_id=None):
         """UnfreezePubResponseModel
 
         The model defined in huaweicloud sdk
 
-        :param data: 
-        :type data: :class:`huaweicloudsdkkoomessage.v1.FreezePubResponseModelData`
+        :param pub_id: 服务号ID。
+        :type pub_id: str
         """
         
         
 
-        self._data = None
+        self._pub_id = None
         self.discriminator = None
 
-        if data is not None:
-            self.data = data
+        if pub_id is not None:
+            self.pub_id = pub_id
 
     @property
-    def data(self):
-        """Gets the data of this UnfreezePubResponseModel.
+    def pub_id(self):
+        """Gets the pub_id of this UnfreezePubResponseModel.
 
-        :return: The data of this UnfreezePubResponseModel.
-        :rtype: :class:`huaweicloudsdkkoomessage.v1.FreezePubResponseModelData`
+        服务号ID。
+
+        :return: The pub_id of this UnfreezePubResponseModel.
+        :rtype: str
         """
-        return self._data
+        return self._pub_id
 
-    @data.setter
-    def data(self, data):
-        """Sets the data of this UnfreezePubResponseModel.
+    @pub_id.setter
+    def pub_id(self, pub_id):
+        """Sets the pub_id of this UnfreezePubResponseModel.
 
-        :param data: The data of this UnfreezePubResponseModel.
-        :type data: :class:`huaweicloudsdkkoomessage.v1.FreezePubResponseModelData`
+        服务号ID。
+
+        :param pub_id: The pub_id of this UnfreezePubResponseModel.
+        :type pub_id: str
         """
-        self._data = data
+        self._pub_id = pub_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

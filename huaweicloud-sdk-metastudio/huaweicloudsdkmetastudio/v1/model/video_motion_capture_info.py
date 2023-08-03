@@ -41,7 +41,7 @@ class VideoMotionCaptureInfo:
 
         The model defined in huaweicloud sdk
 
-        :param motion_capture_mode: 视频驱动模式。 * HEAD: 头部 * HALF_BODY: 半身 * FULL_BODY: 全身 * AUTO: 自动
+        :param motion_capture_mode: 视频驱动模式。 * HEAD：头部 * HALF_BODY：半身 * FULL_BODY：全身 * AUTO：自动
         :type motion_capture_mode: str
         :param input_info: 
         :type input_info: :class:`huaweicloudsdkmetastudio.v1.InputInfo`
@@ -49,11 +49,11 @@ class VideoMotionCaptureInfo:
         :type output_info: :class:`huaweicloudsdkmetastudio.v1.OutputInfo`
         :param job_id: 视频驱动任务ID。
         :type job_id: str
-        :param state: 任务的状态。 * WAITING: 等待中 * PROCESSING: 处理中 * SUCCEED: 成功 * FAILED: 失败
+        :param state: 任务的状态。 * WAITING：等待中 * PROCESSING：处理中 * SUCCEED：成功 * FAILED：失败
         :type state: str
-        :param start_time: 任务开始时间,格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”。
+        :param start_time: 任务开始时间，格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”。
         :type start_time: str
-        :param end_time: 任务结束时间,格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”。
+        :param end_time: 任务结束时间，格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”。
         :type end_time: str
         """
         
@@ -87,7 +87,7 @@ class VideoMotionCaptureInfo:
     def motion_capture_mode(self):
         """Gets the motion_capture_mode of this VideoMotionCaptureInfo.
 
-        视频驱动模式。 * HEAD: 头部 * HALF_BODY: 半身 * FULL_BODY: 全身 * AUTO: 自动
+        视频驱动模式。 * HEAD：头部 * HALF_BODY：半身 * FULL_BODY：全身 * AUTO：自动
 
         :return: The motion_capture_mode of this VideoMotionCaptureInfo.
         :rtype: str
@@ -98,7 +98,7 @@ class VideoMotionCaptureInfo:
     def motion_capture_mode(self, motion_capture_mode):
         """Sets the motion_capture_mode of this VideoMotionCaptureInfo.
 
-        视频驱动模式。 * HEAD: 头部 * HALF_BODY: 半身 * FULL_BODY: 全身 * AUTO: 自动
+        视频驱动模式。 * HEAD：头部 * HALF_BODY：半身 * FULL_BODY：全身 * AUTO：自动
 
         :param motion_capture_mode: The motion_capture_mode of this VideoMotionCaptureInfo.
         :type motion_capture_mode: str
@@ -167,7 +167,7 @@ class VideoMotionCaptureInfo:
     def state(self):
         """Gets the state of this VideoMotionCaptureInfo.
 
-        任务的状态。 * WAITING: 等待中 * PROCESSING: 处理中 * SUCCEED: 成功 * FAILED: 失败
+        任务的状态。 * WAITING：等待中 * PROCESSING：处理中 * SUCCEED：成功 * FAILED：失败
 
         :return: The state of this VideoMotionCaptureInfo.
         :rtype: str
@@ -178,7 +178,7 @@ class VideoMotionCaptureInfo:
     def state(self, state):
         """Sets the state of this VideoMotionCaptureInfo.
 
-        任务的状态。 * WAITING: 等待中 * PROCESSING: 处理中 * SUCCEED: 成功 * FAILED: 失败
+        任务的状态。 * WAITING：等待中 * PROCESSING：处理中 * SUCCEED：成功 * FAILED：失败
 
         :param state: The state of this VideoMotionCaptureInfo.
         :type state: str
@@ -189,7 +189,7 @@ class VideoMotionCaptureInfo:
     def start_time(self):
         """Gets the start_time of this VideoMotionCaptureInfo.
 
-        任务开始时间,格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”。
+        任务开始时间，格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”。
 
         :return: The start_time of this VideoMotionCaptureInfo.
         :rtype: str
@@ -200,7 +200,7 @@ class VideoMotionCaptureInfo:
     def start_time(self, start_time):
         """Sets the start_time of this VideoMotionCaptureInfo.
 
-        任务开始时间,格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”。
+        任务开始时间，格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”。
 
         :param start_time: The start_time of this VideoMotionCaptureInfo.
         :type start_time: str
@@ -211,7 +211,7 @@ class VideoMotionCaptureInfo:
     def end_time(self):
         """Gets the end_time of this VideoMotionCaptureInfo.
 
-        任务结束时间,格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”。
+        任务结束时间，格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”。
 
         :return: The end_time of this VideoMotionCaptureInfo.
         :rtype: str
@@ -222,7 +222,7 @@ class VideoMotionCaptureInfo:
     def end_time(self, end_time):
         """Sets the end_time of this VideoMotionCaptureInfo.
 
-        任务结束时间,格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”。
+        任务结束时间，格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”。
 
         :param end_time: The end_time of this VideoMotionCaptureInfo.
         :type end_time: str

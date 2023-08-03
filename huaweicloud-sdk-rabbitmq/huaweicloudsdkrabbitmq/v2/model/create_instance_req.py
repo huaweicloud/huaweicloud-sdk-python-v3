@@ -77,11 +77,11 @@ class CreateInstanceReq:
         :type description: str
         :param engine: 消息引擎：rabbitmq。
         :type engine: str
-        :param engine_version: 消息引擎的版本。   - RabbitMQ版本有：3.8.35和3.7.17 
+        :param engine_version: 消息引擎的版本。   - RabbitMQ版本有：3.8.35[和3.7.17](tag:g42,hk_g42,tm,hk_tm)。 
         :type engine_version: str
         :param storage_space: 消息存储空间，单位GB。   - 单机RabbitMQ实例的存储空间的取值范围100GB~90000GB。   - 集群RabbitMQ实例的存储空间的取值范围为100GB*节点数~90000GB、200GB*节点数~90000GB、300GB*节点数~90000GB。 
         :type storage_space: int
-        :param access_user: 认证用户名，只能由英文字母、数字、中划线组成，长度为4~64的字符。
+        :param access_user: 认证用户名，只能由英文字母开头且由英文字母、数字、中划线、下划线组成，长度为4~64的字符。
         :type access_user: str
         :param password: 实例的认证密码。  复杂度要求： - 输入长度为8到32位的字符串。 - 必须包含如下四种字符中的两种组合：   - 小写字母   - 大写字母   - 数字   - 特殊字符包括（&#x60;~!@#$%^&amp;*()-_&#x3D;+\\|[{}]:&#39;\&quot;,&lt;.&gt;/?）
         :type password: str
@@ -246,7 +246,7 @@ class CreateInstanceReq:
     def engine_version(self):
         """Gets the engine_version of this CreateInstanceReq.
 
-        消息引擎的版本。   - RabbitMQ版本有：3.8.35和3.7.17 
+        消息引擎的版本。   - RabbitMQ版本有：3.8.35[和3.7.17](tag:g42,hk_g42,tm,hk_tm)。 
 
         :return: The engine_version of this CreateInstanceReq.
         :rtype: str
@@ -257,7 +257,7 @@ class CreateInstanceReq:
     def engine_version(self, engine_version):
         """Sets the engine_version of this CreateInstanceReq.
 
-        消息引擎的版本。   - RabbitMQ版本有：3.8.35和3.7.17 
+        消息引擎的版本。   - RabbitMQ版本有：3.8.35[和3.7.17](tag:g42,hk_g42,tm,hk_tm)。 
 
         :param engine_version: The engine_version of this CreateInstanceReq.
         :type engine_version: str
@@ -290,7 +290,7 @@ class CreateInstanceReq:
     def access_user(self):
         """Gets the access_user of this CreateInstanceReq.
 
-        认证用户名，只能由英文字母、数字、中划线组成，长度为4~64的字符。
+        认证用户名，只能由英文字母开头且由英文字母、数字、中划线、下划线组成，长度为4~64的字符。
 
         :return: The access_user of this CreateInstanceReq.
         :rtype: str
@@ -301,7 +301,7 @@ class CreateInstanceReq:
     def access_user(self, access_user):
         """Sets the access_user of this CreateInstanceReq.
 
-        认证用户名，只能由英文字母、数字、中划线组成，长度为4~64的字符。
+        认证用户名，只能由英文字母开头且由英文字母、数字、中划线、下划线组成，长度为4~64的字符。
 
         :param access_user: The access_user of this CreateInstanceReq.
         :type access_user: str

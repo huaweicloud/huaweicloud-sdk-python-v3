@@ -23,7 +23,8 @@ class ListEndpointsRequest:
         'type': 'str',
         'name': 'str',
         'vpc_id': 'str',
-        'fuzzy_name': 'str'
+        'fuzzy_name': 'str',
+        'subnet_id': 'str'
     }
 
     attribute_map = {
@@ -33,10 +34,11 @@ class ListEndpointsRequest:
         'type': 'type',
         'name': 'name',
         'vpc_id': 'vpc_id',
-        'fuzzy_name': 'fuzzy_name'
+        'fuzzy_name': 'fuzzy_name',
+        'subnet_id': 'subnet_id'
     }
 
-    def __init__(self, offset=None, limit=None, sort=None, type=None, name=None, vpc_id=None, fuzzy_name=None):
+    def __init__(self, offset=None, limit=None, sort=None, type=None, name=None, vpc_id=None, fuzzy_name=None, subnet_id=None):
         """ListEndpointsRequest
 
         The model defined in huaweicloud sdk
@@ -55,6 +57,8 @@ class ListEndpointsRequest:
         :type vpc_id: str
         :param fuzzy_name: 指定查询访问端点的名称,模糊查询
         :type fuzzy_name: str
+        :param subnet_id: 指定查询访问端点的SubnetId
+        :type subnet_id: str
         """
         
         
@@ -66,6 +70,7 @@ class ListEndpointsRequest:
         self._name = None
         self._vpc_id = None
         self._fuzzy_name = None
+        self._subnet_id = None
         self.discriminator = None
 
         if offset is not None:
@@ -82,6 +87,8 @@ class ListEndpointsRequest:
             self.vpc_id = vpc_id
         if fuzzy_name is not None:
             self.fuzzy_name = fuzzy_name
+        if subnet_id is not None:
+            self.subnet_id = subnet_id
 
     @property
     def offset(self):
@@ -236,6 +243,28 @@ class ListEndpointsRequest:
         :type fuzzy_name: str
         """
         self._fuzzy_name = fuzzy_name
+
+    @property
+    def subnet_id(self):
+        """Gets the subnet_id of this ListEndpointsRequest.
+
+        指定查询访问端点的SubnetId
+
+        :return: The subnet_id of this ListEndpointsRequest.
+        :rtype: str
+        """
+        return self._subnet_id
+
+    @subnet_id.setter
+    def subnet_id(self, subnet_id):
+        """Sets the subnet_id of this ListEndpointsRequest.
+
+        指定查询访问端点的SubnetId
+
+        :param subnet_id: The subnet_id of this ListEndpointsRequest.
+        :type subnet_id: str
+        """
+        self._subnet_id = subnet_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

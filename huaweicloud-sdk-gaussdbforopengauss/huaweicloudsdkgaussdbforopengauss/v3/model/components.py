@@ -19,16 +19,18 @@ class Components:
     openapi_types = {
         'id': 'str',
         'role': 'str',
-        'status': 'str'
+        'status': 'str',
+        'distributed_id': 'str'
     }
 
     attribute_map = {
         'id': 'id',
         'role': 'role',
-        'status': 'status'
+        'status': 'status',
+        'distributed_id': 'distributed_id'
     }
 
-    def __init__(self, id=None, role=None, status=None):
+    def __init__(self, id=None, role=None, status=None, distributed_id=None):
         """Components
 
         The model defined in huaweicloud sdk
@@ -37,8 +39,10 @@ class Components:
         :type id: str
         :param role: 节点类型，取值为“master”、“slave”，分别对应于主节点、备节点。
         :type role: str
-        :param status: 节点状态。
+        :param status: 组件状态。 Primary：该组件为主。 Normal：该组件状态正常。 Down：该组件处于宕机状态。 Standby：该组件为备。 StateFollower：该ETCD为备。 StateLeader：该ETCD为主。 StateCandidate：该ETCD为仲裁。
         :type status: str
+        :param distributed_id: 分组id，只有dn组件有分组id，用于区分是否是同一个分片下的组件。其他组件为空字符串。
+        :type distributed_id: str
         """
         
         
@@ -46,6 +50,7 @@ class Components:
         self._id = None
         self._role = None
         self._status = None
+        self._distributed_id = None
         self.discriminator = None
 
         if id is not None:
@@ -54,6 +59,8 @@ class Components:
             self.role = role
         if status is not None:
             self.status = status
+        if distributed_id is not None:
+            self.distributed_id = distributed_id
 
     @property
     def id(self):
@@ -103,7 +110,7 @@ class Components:
     def status(self):
         """Gets the status of this Components.
 
-        节点状态。
+        组件状态。 Primary：该组件为主。 Normal：该组件状态正常。 Down：该组件处于宕机状态。 Standby：该组件为备。 StateFollower：该ETCD为备。 StateLeader：该ETCD为主。 StateCandidate：该ETCD为仲裁。
 
         :return: The status of this Components.
         :rtype: str
@@ -114,12 +121,34 @@ class Components:
     def status(self, status):
         """Sets the status of this Components.
 
-        节点状态。
+        组件状态。 Primary：该组件为主。 Normal：该组件状态正常。 Down：该组件处于宕机状态。 Standby：该组件为备。 StateFollower：该ETCD为备。 StateLeader：该ETCD为主。 StateCandidate：该ETCD为仲裁。
 
         :param status: The status of this Components.
         :type status: str
         """
         self._status = status
+
+    @property
+    def distributed_id(self):
+        """Gets the distributed_id of this Components.
+
+        分组id，只有dn组件有分组id，用于区分是否是同一个分片下的组件。其他组件为空字符串。
+
+        :return: The distributed_id of this Components.
+        :rtype: str
+        """
+        return self._distributed_id
+
+    @distributed_id.setter
+    def distributed_id(self, distributed_id):
+        """Sets the distributed_id of this Components.
+
+        分组id，只有dn组件有分组id，用于区分是否是同一个分片下的组件。其他组件为空字符串。
+
+        :param distributed_id: The distributed_id of this Components.
+        :type distributed_id: str
+        """
+        self._distributed_id = distributed_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -20,17 +20,21 @@ class ListComponentInfosRequest:
         'x_language': 'str',
         'instance_id': 'str',
         'offset': 'int',
-        'limit': 'int'
+        'limit': 'int',
+        'component_type': 'str',
+        'availability_zone_id': 'str'
     }
 
     attribute_map = {
         'x_language': 'X-Language',
         'instance_id': 'instance_id',
         'offset': 'offset',
-        'limit': 'limit'
+        'limit': 'limit',
+        'component_type': 'component_type',
+        'availability_zone_id': 'availability_zone_id'
     }
 
-    def __init__(self, x_language=None, instance_id=None, offset=None, limit=None):
+    def __init__(self, x_language=None, instance_id=None, offset=None, limit=None, component_type=None, availability_zone_id=None):
         """ListComponentInfosRequest
 
         The model defined in huaweicloud sdk
@@ -43,6 +47,10 @@ class ListComponentInfosRequest:
         :type offset: int
         :param limit: 查询记录数。默认为100，不能为负数，最小值为1，最大值为100
         :type limit: int
+        :param component_type: 组件类型，过滤拿到需要的组件类型的组件信息，默认为ALL，传参数会查询对应组件信息。 枚举值：   \&quot;ALL\&quot;: 查询所有组件类型。   \&quot;CN\&quot;: 查询CN组件类型。   \&quot;DN\&quot;: 查询DN组件类型。   \&quot;CM\&quot;: 查询CMS组件类型。   \&quot;GTM\&quot;: 查询GTM组件类型。   \&quot;ETCD\&quot;: 查询ETCD组件类型。
+        :type component_type: str
+        :param availability_zone_id: 主组件所在可用区编号，筛选符合条件的组件，默认为ALL，查询实例所有可用区上的节点的组件信息。 当调用接口传入可用区编号时：   相对于DN组件，会查询出的DN分片中的主组件在该可用区上的这个分片的所有副本的组件信息。   相对于CN组件，CN组件没有主备关系，会查询出该可用区上的CN组件信息。   相对于其他组件，会查询该可用区上有没有某个组件类型的主组件，有则会返回该组件类型的所有组件信息，没有则不返回该组件类型的信息。
+        :type availability_zone_id: str
         """
         
         
@@ -51,6 +59,8 @@ class ListComponentInfosRequest:
         self._instance_id = None
         self._offset = None
         self._limit = None
+        self._component_type = None
+        self._availability_zone_id = None
         self.discriminator = None
 
         if x_language is not None:
@@ -60,6 +70,10 @@ class ListComponentInfosRequest:
             self.offset = offset
         if limit is not None:
             self.limit = limit
+        if component_type is not None:
+            self.component_type = component_type
+        if availability_zone_id is not None:
+            self.availability_zone_id = availability_zone_id
 
     @property
     def x_language(self):
@@ -148,6 +162,50 @@ class ListComponentInfosRequest:
         :type limit: int
         """
         self._limit = limit
+
+    @property
+    def component_type(self):
+        """Gets the component_type of this ListComponentInfosRequest.
+
+        组件类型，过滤拿到需要的组件类型的组件信息，默认为ALL，传参数会查询对应组件信息。 枚举值：   \"ALL\": 查询所有组件类型。   \"CN\": 查询CN组件类型。   \"DN\": 查询DN组件类型。   \"CM\": 查询CMS组件类型。   \"GTM\": 查询GTM组件类型。   \"ETCD\": 查询ETCD组件类型。
+
+        :return: The component_type of this ListComponentInfosRequest.
+        :rtype: str
+        """
+        return self._component_type
+
+    @component_type.setter
+    def component_type(self, component_type):
+        """Sets the component_type of this ListComponentInfosRequest.
+
+        组件类型，过滤拿到需要的组件类型的组件信息，默认为ALL，传参数会查询对应组件信息。 枚举值：   \"ALL\": 查询所有组件类型。   \"CN\": 查询CN组件类型。   \"DN\": 查询DN组件类型。   \"CM\": 查询CMS组件类型。   \"GTM\": 查询GTM组件类型。   \"ETCD\": 查询ETCD组件类型。
+
+        :param component_type: The component_type of this ListComponentInfosRequest.
+        :type component_type: str
+        """
+        self._component_type = component_type
+
+    @property
+    def availability_zone_id(self):
+        """Gets the availability_zone_id of this ListComponentInfosRequest.
+
+        主组件所在可用区编号，筛选符合条件的组件，默认为ALL，查询实例所有可用区上的节点的组件信息。 当调用接口传入可用区编号时：   相对于DN组件，会查询出的DN分片中的主组件在该可用区上的这个分片的所有副本的组件信息。   相对于CN组件，CN组件没有主备关系，会查询出该可用区上的CN组件信息。   相对于其他组件，会查询该可用区上有没有某个组件类型的主组件，有则会返回该组件类型的所有组件信息，没有则不返回该组件类型的信息。
+
+        :return: The availability_zone_id of this ListComponentInfosRequest.
+        :rtype: str
+        """
+        return self._availability_zone_id
+
+    @availability_zone_id.setter
+    def availability_zone_id(self, availability_zone_id):
+        """Sets the availability_zone_id of this ListComponentInfosRequest.
+
+        主组件所在可用区编号，筛选符合条件的组件，默认为ALL，查询实例所有可用区上的节点的组件信息。 当调用接口传入可用区编号时：   相对于DN组件，会查询出的DN分片中的主组件在该可用区上的这个分片的所有副本的组件信息。   相对于CN组件，CN组件没有主备关系，会查询出该可用区上的CN组件信息。   相对于其他组件，会查询该可用区上有没有某个组件类型的主组件，有则会返回该组件类型的所有组件信息，没有则不返回该组件类型的信息。
+
+        :param availability_zone_id: The availability_zone_id of this ListComponentInfosRequest.
+        :type availability_zone_id: str
+        """
+        self._availability_zone_id = availability_zone_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

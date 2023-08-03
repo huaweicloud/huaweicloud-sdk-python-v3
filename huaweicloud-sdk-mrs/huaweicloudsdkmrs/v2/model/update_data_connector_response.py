@@ -2,10 +2,11 @@
 
 import six
 
+from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class FreezePubResponseModelData:
+class UpdateDataConnectorResponse(SdkResponse):
 
     """
     Attributes:
@@ -17,51 +18,51 @@ class FreezePubResponseModelData:
     sensitive_list = []
 
     openapi_types = {
-        'pub_id': 'str'
+        'result': 'str'
     }
 
     attribute_map = {
-        'pub_id': 'pub_id'
+        'result': 'result'
     }
 
-    def __init__(self, pub_id=None):
-        """FreezePubResponseModelData
+    def __init__(self, result=None):
+        """UpdateDataConnectorResponse
 
         The model defined in huaweicloud sdk
 
-        :param pub_id: 服务号ID。
-        :type pub_id: str
+        :param result: 更新映射请求操作结果，succeeded为操作成功，failed为操作失败
+        :type result: str
         """
         
-        
+        super(UpdateDataConnectorResponse, self).__init__()
 
-        self._pub_id = None
+        self._result = None
         self.discriminator = None
 
-        if pub_id is not None:
-            self.pub_id = pub_id
+        if result is not None:
+            self.result = result
 
     @property
-    def pub_id(self):
-        """Gets the pub_id of this FreezePubResponseModelData.
+    def result(self):
+        """Gets the result of this UpdateDataConnectorResponse.
 
-        服务号ID。
+        更新映射请求操作结果，succeeded为操作成功，failed为操作失败
 
-        :return: The pub_id of this FreezePubResponseModelData.
+        :return: The result of this UpdateDataConnectorResponse.
         :rtype: str
         """
-        return self._pub_id
+        return self._result
 
-    @pub_id.setter
-    def pub_id(self, pub_id):
-        """Sets the pub_id of this FreezePubResponseModelData.
+    @result.setter
+    def result(self, result):
+        """Sets the result of this UpdateDataConnectorResponse.
 
-        服务号ID。
+        更新映射请求操作结果，succeeded为操作成功，failed为操作失败
 
-        :param pub_id: The pub_id of this FreezePubResponseModelData.
-        :type pub_id: str
+        :param result: The result of this UpdateDataConnectorResponse.
+        :type result: str
         """
-        self._pub_id = pub_id
+        self._result = result
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -105,7 +106,7 @@ class FreezePubResponseModelData:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, FreezePubResponseModelData):
+        if not isinstance(other, UpdateDataConnectorResponse):
             return False
 
         return self.__dict__ == other.__dict__

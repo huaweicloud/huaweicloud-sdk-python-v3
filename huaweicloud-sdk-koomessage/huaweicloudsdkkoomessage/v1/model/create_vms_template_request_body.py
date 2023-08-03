@@ -22,7 +22,6 @@ class CreateVmsTemplateRequestBody:
         'title': 'str',
         'reslist': 'list[ResourceInfo]',
         'remarks': 'str',
-        'reminders': 'str',
         'callbackurl': 'str'
     }
 
@@ -32,11 +31,10 @@ class CreateVmsTemplateRequestBody:
         'title': 'title',
         'reslist': 'reslist',
         'remarks': 'remarks',
-        'reminders': 'reminders',
         'callbackurl': 'callbackurl'
     }
 
-    def __init__(self, expiration_time=None, tpl_name=None, title=None, reslist=None, remarks=None, reminders=None, callbackurl=None):
+    def __init__(self, expiration_time=None, tpl_name=None, title=None, reslist=None, remarks=None, callbackurl=None):
         """CreateVmsTemplateRequestBody
 
         The model defined in huaweicloud sdk
@@ -51,8 +49,6 @@ class CreateVmsTemplateRequestBody:
         :type reslist: list[:class:`huaweicloudsdkkoomessage.v1.ResourceInfo`]
         :param remarks: 智能信息基础版模板备注信息，用于填写对模板审核的期望或要求，最大不超过200个字。例如：希望这个模板绑定的通道类型是三网合一通道，默认优先绑定三网合一通道。
         :type remarks: str
-        :param reminders: 用于发送提醒短信，将智能信息基础版模板审批的结果和意见及时通知到指定对象，目前仅支持11位纯数字国内手机号码，多个号码用英文逗号分隔，最多支持5个手机号。
-        :type reminders: str
         :param callbackurl: 客户系统回调URL，可用于通知对端模板审核状态信息。  &gt; 接口规格需参照定义智能信息基础版模板状态回执完成实现。 
         :type callbackurl: str
         """
@@ -64,7 +60,6 @@ class CreateVmsTemplateRequestBody:
         self._title = None
         self._reslist = None
         self._remarks = None
-        self._reminders = None
         self._callbackurl = None
         self.discriminator = None
 
@@ -74,8 +69,6 @@ class CreateVmsTemplateRequestBody:
         self.reslist = reslist
         if remarks is not None:
             self.remarks = remarks
-        if reminders is not None:
-            self.reminders = reminders
         if callbackurl is not None:
             self.callbackurl = callbackurl
 
@@ -188,28 +181,6 @@ class CreateVmsTemplateRequestBody:
         :type remarks: str
         """
         self._remarks = remarks
-
-    @property
-    def reminders(self):
-        """Gets the reminders of this CreateVmsTemplateRequestBody.
-
-        用于发送提醒短信，将智能信息基础版模板审批的结果和意见及时通知到指定对象，目前仅支持11位纯数字国内手机号码，多个号码用英文逗号分隔，最多支持5个手机号。
-
-        :return: The reminders of this CreateVmsTemplateRequestBody.
-        :rtype: str
-        """
-        return self._reminders
-
-    @reminders.setter
-    def reminders(self, reminders):
-        """Sets the reminders of this CreateVmsTemplateRequestBody.
-
-        用于发送提醒短信，将智能信息基础版模板审批的结果和意见及时通知到指定对象，目前仅支持11位纯数字国内手机号码，多个号码用英文逗号分隔，最多支持5个手机号。
-
-        :param reminders: The reminders of this CreateVmsTemplateRequestBody.
-        :type reminders: str
-        """
-        self._reminders = reminders
 
     @property
     def callbackurl(self):

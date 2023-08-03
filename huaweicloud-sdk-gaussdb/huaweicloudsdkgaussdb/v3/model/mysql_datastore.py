@@ -18,33 +18,40 @@ class MysqlDatastore:
 
     openapi_types = {
         'type': 'str',
-        'version': 'str'
+        'version': 'str',
+        'kernel_version': 'str'
     }
 
     attribute_map = {
         'type': 'type',
-        'version': 'version'
+        'version': 'version',
+        'kernel_version': 'kernel_version'
     }
 
-    def __init__(self, type=None, version=None):
+    def __init__(self, type=None, version=None, kernel_version=None):
         """MysqlDatastore
 
         The model defined in huaweicloud sdk
 
         :param type: 数据库引擎，现在只支持gaussdb-mysql
         :type type: str
-        :param version: 数据库版本。  数据库支持的详细版本信息，可调用查询数据库引擎的版本接口获取。
+        :param version: 数据库版本。  两位数的大版本号，获取方法请参见[查询数据库引擎的版本](https://support.huaweicloud.com/api-gaussdb/ShowGaussMySqlEngineVersion.html)返回的name字段。
         :type version: str
+        :param kernel_version: 内核数据库版本。  完整的四位内核数据库版本，获取方法请参见[查询数据库引擎的版本](https://support.huaweicloud.com/api-gaussdb/ShowGaussMySqlEngineVersion.html)返回的kernel_version字段。
+        :type kernel_version: str
         """
         
         
 
         self._type = None
         self._version = None
+        self._kernel_version = None
         self.discriminator = None
 
         self.type = type
         self.version = version
+        if kernel_version is not None:
+            self.kernel_version = kernel_version
 
     @property
     def type(self):
@@ -72,7 +79,7 @@ class MysqlDatastore:
     def version(self):
         """Gets the version of this MysqlDatastore.
 
-        数据库版本。  数据库支持的详细版本信息，可调用查询数据库引擎的版本接口获取。
+        数据库版本。  两位数的大版本号，获取方法请参见[查询数据库引擎的版本](https://support.huaweicloud.com/api-gaussdb/ShowGaussMySqlEngineVersion.html)返回的name字段。
 
         :return: The version of this MysqlDatastore.
         :rtype: str
@@ -83,12 +90,34 @@ class MysqlDatastore:
     def version(self, version):
         """Sets the version of this MysqlDatastore.
 
-        数据库版本。  数据库支持的详细版本信息，可调用查询数据库引擎的版本接口获取。
+        数据库版本。  两位数的大版本号，获取方法请参见[查询数据库引擎的版本](https://support.huaweicloud.com/api-gaussdb/ShowGaussMySqlEngineVersion.html)返回的name字段。
 
         :param version: The version of this MysqlDatastore.
         :type version: str
         """
         self._version = version
+
+    @property
+    def kernel_version(self):
+        """Gets the kernel_version of this MysqlDatastore.
+
+        内核数据库版本。  完整的四位内核数据库版本，获取方法请参见[查询数据库引擎的版本](https://support.huaweicloud.com/api-gaussdb/ShowGaussMySqlEngineVersion.html)返回的kernel_version字段。
+
+        :return: The kernel_version of this MysqlDatastore.
+        :rtype: str
+        """
+        return self._kernel_version
+
+    @kernel_version.setter
+    def kernel_version(self, kernel_version):
+        """Sets the kernel_version of this MysqlDatastore.
+
+        内核数据库版本。  完整的四位内核数据库版本，获取方法请参见[查询数据库引擎的版本](https://support.huaweicloud.com/api-gaussdb/ShowGaussMySqlEngineVersion.html)返回的kernel_version字段。
+
+        :param kernel_version: The kernel_version of this MysqlDatastore.
+        :type kernel_version: str
+        """
+        self._kernel_version = kernel_version
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -29,7 +29,8 @@ class ListPortsRequest:
         'security_groups': 'list[str]',
         'marker': 'str',
         'fixed_ips': 'list[str]',
-        'enterprise_project_id': 'str'
+        'enterprise_project_id': 'str',
+        'enable_efi': 'bool'
     }
 
     attribute_map = {
@@ -45,10 +46,11 @@ class ListPortsRequest:
         'security_groups': 'security_groups',
         'marker': 'marker',
         'fixed_ips': 'fixed_ips',
-        'enterprise_project_id': 'enterprise_project_id'
+        'enterprise_project_id': 'enterprise_project_id',
+        'enable_efi': 'enable_efi'
     }
 
-    def __init__(self, name=None, id=None, limit=None, admin_state_up=None, network_id=None, mac_address=None, device_id=None, device_owner=None, status=None, security_groups=None, marker=None, fixed_ips=None, enterprise_project_id=None):
+    def __init__(self, name=None, id=None, limit=None, admin_state_up=None, network_id=None, mac_address=None, device_id=None, device_owner=None, status=None, security_groups=None, marker=None, fixed_ips=None, enterprise_project_id=None, enable_efi=None):
         """ListPortsRequest
 
         The model defined in huaweicloud sdk
@@ -79,6 +81,8 @@ class ListPortsRequest:
         :type fixed_ips: list[str]
         :param enterprise_project_id: 功能说明：企业项目ID，用于基于企业项目的权限管理。  取值范围：最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。  若需要查询当前用户所有企业项目绑定的端口，请传参all_granted_eps。
         :type enterprise_project_id: str
+        :param enable_efi: 功能说明：是否使能efi，使能则表示端口支持vRoCE能力，默认为false
+        :type enable_efi: bool
         """
         
         
@@ -96,6 +100,7 @@ class ListPortsRequest:
         self._marker = None
         self._fixed_ips = None
         self._enterprise_project_id = None
+        self._enable_efi = None
         self.discriminator = None
 
         if name is not None:
@@ -124,6 +129,8 @@ class ListPortsRequest:
             self.fixed_ips = fixed_ips
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
+        if enable_efi is not None:
+            self.enable_efi = enable_efi
 
     @property
     def name(self):
@@ -410,6 +417,28 @@ class ListPortsRequest:
         :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def enable_efi(self):
+        """Gets the enable_efi of this ListPortsRequest.
+
+        功能说明：是否使能efi，使能则表示端口支持vRoCE能力，默认为false
+
+        :return: The enable_efi of this ListPortsRequest.
+        :rtype: bool
+        """
+        return self._enable_efi
+
+    @enable_efi.setter
+    def enable_efi(self, enable_efi):
+        """Sets the enable_efi of this ListPortsRequest.
+
+        功能说明：是否使能efi，使能则表示端口支持vRoCE能力，默认为false
+
+        :param enable_efi: The enable_efi of this ListPortsRequest.
+        :type enable_efi: bool
+        """
+        self._enable_efi = enable_efi
 
     def to_dict(self):
         """Returns the model properties as a dict"""

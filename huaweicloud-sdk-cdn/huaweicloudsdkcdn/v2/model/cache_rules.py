@@ -43,21 +43,21 @@ class CacheRules:
 
         The model defined in huaweicloud sdk
 
-        :param match_type: 类型,all：匹配所有文件， file_extension：按文件后缀匹配， catalog：按目录匹配， full_path：全路径匹配， home_page：按首页匹配。
+        :param match_type: 匹配类型: - all：匹配所有文件， - file_extension：按文件后缀匹配， - catalog：按目录匹配， - full_path：全路径匹配， - home_page：按首页匹配。   &gt; 配置单条缓存规则时，可不传，默认为all。   &gt; 配置多条缓存规则时，此参数必传。
         :type match_type: str
         :param match_value: 缓存匹配设置， 当match_type为all时，为空。当match_type为file_extension时，为文件后缀，输入首字符为“.”，以“,”进行分隔， 如.jpg,.zip,.exe，并且输入的文 件名后缀总数不超过20个。 当match_type为catalog时，为目录，输入要求以“/”作为首字符， 以“,”进行分隔，如/test/folder01,/test/folder02，并且输入的目录路径总数不超过20个。  当match_type为full_path时，为全路径，输入要求以“/”作为首字符，支持匹配指定目录下的具体文件，或者带通配符“\\*”的文件， 如/test/index.html,/test/\\*.jpg。 当match_type为home_page时，为空。
         :type match_value: str
-        :param ttl: 缓存过期时间，最大支持365天。
+        :param ttl: 缓存过期时间，最大支持365天。  &gt; 默认值为0。
         :type ttl: int
         :param ttl_unit: 缓存过期时间单位，s：秒；m：分；h：小时；d：天。
         :type ttl_unit: str
         :param priority: 此条缓存规则的优先级, 默认值1，数值越大，优先级越高，取值范围为1-100，优先级不能相同。
         :type priority: int
-        :param follow_origin: 缓存遵循源站开关，on：打开，off：关闭。
+        :param follow_origin: 缓存遵循源站开关，on：打开，off：关闭。  &gt; 默认值为off。
         :type follow_origin: str
-        :param url_parameter_type: URL参数， del_params：忽略指定URL参数， reserve_params：保留指定URL参数， ignore_url_params：忽略全部URL参数， full_url：使用完整URL参数。
+        :param url_parameter_type: URL参数： - del_params：忽略指定URL参数， - reserve_params：保留指定URL参数， - ignore_url_params：忽略全部URL参数， - full_url：使用完整URL参数。   &gt; 不传此参数时，默认为full_url。
         :type url_parameter_type: str
-        :param url_parameter_value: URL参数值，最多设置10条，以\&quot;,\&quot;分隔。
+        :param url_parameter_value: URL参数值，最多设置10条，以\&quot;,\&quot;分隔。  &gt; 当url_parameter_type为del_params或reserve_params时必填。
         :type url_parameter_value: str
         """
         
@@ -73,14 +73,18 @@ class CacheRules:
         self._url_parameter_value = None
         self.discriminator = None
 
-        self.match_type = match_type
+        if match_type is not None:
+            self.match_type = match_type
         if match_value is not None:
             self.match_value = match_value
-        self.ttl = ttl
+        if ttl is not None:
+            self.ttl = ttl
         self.ttl_unit = ttl_unit
         self.priority = priority
-        self.follow_origin = follow_origin
-        self.url_parameter_type = url_parameter_type
+        if follow_origin is not None:
+            self.follow_origin = follow_origin
+        if url_parameter_type is not None:
+            self.url_parameter_type = url_parameter_type
         if url_parameter_value is not None:
             self.url_parameter_value = url_parameter_value
 
@@ -88,7 +92,7 @@ class CacheRules:
     def match_type(self):
         """Gets the match_type of this CacheRules.
 
-        类型,all：匹配所有文件， file_extension：按文件后缀匹配， catalog：按目录匹配， full_path：全路径匹配， home_page：按首页匹配。
+        匹配类型: - all：匹配所有文件， - file_extension：按文件后缀匹配， - catalog：按目录匹配， - full_path：全路径匹配， - home_page：按首页匹配。   > 配置单条缓存规则时，可不传，默认为all。   > 配置多条缓存规则时，此参数必传。
 
         :return: The match_type of this CacheRules.
         :rtype: str
@@ -99,7 +103,7 @@ class CacheRules:
     def match_type(self, match_type):
         """Sets the match_type of this CacheRules.
 
-        类型,all：匹配所有文件， file_extension：按文件后缀匹配， catalog：按目录匹配， full_path：全路径匹配， home_page：按首页匹配。
+        匹配类型: - all：匹配所有文件， - file_extension：按文件后缀匹配， - catalog：按目录匹配， - full_path：全路径匹配， - home_page：按首页匹配。   > 配置单条缓存规则时，可不传，默认为all。   > 配置多条缓存规则时，此参数必传。
 
         :param match_type: The match_type of this CacheRules.
         :type match_type: str
@@ -132,7 +136,7 @@ class CacheRules:
     def ttl(self):
         """Gets the ttl of this CacheRules.
 
-        缓存过期时间，最大支持365天。
+        缓存过期时间，最大支持365天。  > 默认值为0。
 
         :return: The ttl of this CacheRules.
         :rtype: int
@@ -143,7 +147,7 @@ class CacheRules:
     def ttl(self, ttl):
         """Sets the ttl of this CacheRules.
 
-        缓存过期时间，最大支持365天。
+        缓存过期时间，最大支持365天。  > 默认值为0。
 
         :param ttl: The ttl of this CacheRules.
         :type ttl: int
@@ -198,7 +202,7 @@ class CacheRules:
     def follow_origin(self):
         """Gets the follow_origin of this CacheRules.
 
-        缓存遵循源站开关，on：打开，off：关闭。
+        缓存遵循源站开关，on：打开，off：关闭。  > 默认值为off。
 
         :return: The follow_origin of this CacheRules.
         :rtype: str
@@ -209,7 +213,7 @@ class CacheRules:
     def follow_origin(self, follow_origin):
         """Sets the follow_origin of this CacheRules.
 
-        缓存遵循源站开关，on：打开，off：关闭。
+        缓存遵循源站开关，on：打开，off：关闭。  > 默认值为off。
 
         :param follow_origin: The follow_origin of this CacheRules.
         :type follow_origin: str
@@ -220,7 +224,7 @@ class CacheRules:
     def url_parameter_type(self):
         """Gets the url_parameter_type of this CacheRules.
 
-        URL参数， del_params：忽略指定URL参数， reserve_params：保留指定URL参数， ignore_url_params：忽略全部URL参数， full_url：使用完整URL参数。
+        URL参数： - del_params：忽略指定URL参数， - reserve_params：保留指定URL参数， - ignore_url_params：忽略全部URL参数， - full_url：使用完整URL参数。   > 不传此参数时，默认为full_url。
 
         :return: The url_parameter_type of this CacheRules.
         :rtype: str
@@ -231,7 +235,7 @@ class CacheRules:
     def url_parameter_type(self, url_parameter_type):
         """Sets the url_parameter_type of this CacheRules.
 
-        URL参数， del_params：忽略指定URL参数， reserve_params：保留指定URL参数， ignore_url_params：忽略全部URL参数， full_url：使用完整URL参数。
+        URL参数： - del_params：忽略指定URL参数， - reserve_params：保留指定URL参数， - ignore_url_params：忽略全部URL参数， - full_url：使用完整URL参数。   > 不传此参数时，默认为full_url。
 
         :param url_parameter_type: The url_parameter_type of this CacheRules.
         :type url_parameter_type: str
@@ -242,7 +246,7 @@ class CacheRules:
     def url_parameter_value(self):
         """Gets the url_parameter_value of this CacheRules.
 
-        URL参数值，最多设置10条，以\",\"分隔。
+        URL参数值，最多设置10条，以\",\"分隔。  > 当url_parameter_type为del_params或reserve_params时必填。
 
         :return: The url_parameter_value of this CacheRules.
         :rtype: str
@@ -253,7 +257,7 @@ class CacheRules:
     def url_parameter_value(self, url_parameter_value):
         """Sets the url_parameter_value of this CacheRules.
 
-        URL参数值，最多设置10条，以\",\"分隔。
+        URL参数值，最多设置10条，以\",\"分隔。  > 当url_parameter_type为del_params或reserve_params时必填。
 
         :param url_parameter_value: The url_parameter_value of this CacheRules.
         :type url_parameter_value: str

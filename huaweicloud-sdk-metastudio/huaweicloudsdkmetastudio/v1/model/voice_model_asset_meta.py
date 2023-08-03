@@ -19,26 +19,34 @@ class VoiceModelAssetMeta:
     openapi_types = {
         'model_type': 'str',
         'sex': 'str',
-        'language': 'str'
+        'language': 'str',
+        'tts_mode': 'str',
+        'external_voice_meta': 'ExternalVoiceAssetMeta'
     }
 
     attribute_map = {
         'model_type': 'model_type',
         'sex': 'sex',
-        'language': 'language'
+        'language': 'language',
+        'tts_mode': 'tts_mode',
+        'external_voice_meta': 'external_voice_meta'
     }
 
-    def __init__(self, model_type=None, sex=None, language=None):
+    def __init__(self, model_type=None, sex=None, language=None, tts_mode=None, external_voice_meta=None):
         """VoiceModelAssetMeta
 
         The model defined in huaweicloud sdk
 
         :param model_type: 音色资产类型。 * COMMON：通用情感模型 * CLONE：语音克隆模型
         :type model_type: str
-        :param sex: 音色性别。默认UNKNOW。 * UNKNOW： 中性音色 * MALE： 男性音色 * FEMALE： 女性音色
+        :param sex: 音色性别。 * UNKNOW：中性音色 * MALE：男性音色 * FEMALE：女性音色  默认UNKNOW。
         :type sex: str
-        :param language: 音色语言。默认UNKNOW。 * UNKNOW： 未知 * CN： 中文 * EN： 英文
+        :param language: 音色语言。 * UNKNOW：未知 * CN：中文 * EN：英文  默认UNKNOW。
         :type language: str
+        :param tts_mode: 自研TTS运行模式，包括CPU模式和GPU模式。此参数仅内部使用，不对外开放。 * UNKNOW：未知 * TTS_V1：V1版本TTS，运行在CPU上 * TTS_V2：V2版本TTS，运行在GPU上  默认UNKNOW。
+        :type tts_mode: str
+        :param external_voice_meta: 
+        :type external_voice_meta: :class:`huaweicloudsdkmetastudio.v1.ExternalVoiceAssetMeta`
         """
         
         
@@ -46,6 +54,8 @@ class VoiceModelAssetMeta:
         self._model_type = None
         self._sex = None
         self._language = None
+        self._tts_mode = None
+        self._external_voice_meta = None
         self.discriminator = None
 
         if model_type is not None:
@@ -54,6 +64,10 @@ class VoiceModelAssetMeta:
             self.sex = sex
         if language is not None:
             self.language = language
+        if tts_mode is not None:
+            self.tts_mode = tts_mode
+        if external_voice_meta is not None:
+            self.external_voice_meta = external_voice_meta
 
     @property
     def model_type(self):
@@ -81,7 +95,7 @@ class VoiceModelAssetMeta:
     def sex(self):
         """Gets the sex of this VoiceModelAssetMeta.
 
-        音色性别。默认UNKNOW。 * UNKNOW： 中性音色 * MALE： 男性音色 * FEMALE： 女性音色
+        音色性别。 * UNKNOW：中性音色 * MALE：男性音色 * FEMALE：女性音色  默认UNKNOW。
 
         :return: The sex of this VoiceModelAssetMeta.
         :rtype: str
@@ -92,7 +106,7 @@ class VoiceModelAssetMeta:
     def sex(self, sex):
         """Sets the sex of this VoiceModelAssetMeta.
 
-        音色性别。默认UNKNOW。 * UNKNOW： 中性音色 * MALE： 男性音色 * FEMALE： 女性音色
+        音色性别。 * UNKNOW：中性音色 * MALE：男性音色 * FEMALE：女性音色  默认UNKNOW。
 
         :param sex: The sex of this VoiceModelAssetMeta.
         :type sex: str
@@ -103,7 +117,7 @@ class VoiceModelAssetMeta:
     def language(self):
         """Gets the language of this VoiceModelAssetMeta.
 
-        音色语言。默认UNKNOW。 * UNKNOW： 未知 * CN： 中文 * EN： 英文
+        音色语言。 * UNKNOW：未知 * CN：中文 * EN：英文  默认UNKNOW。
 
         :return: The language of this VoiceModelAssetMeta.
         :rtype: str
@@ -114,12 +128,52 @@ class VoiceModelAssetMeta:
     def language(self, language):
         """Sets the language of this VoiceModelAssetMeta.
 
-        音色语言。默认UNKNOW。 * UNKNOW： 未知 * CN： 中文 * EN： 英文
+        音色语言。 * UNKNOW：未知 * CN：中文 * EN：英文  默认UNKNOW。
 
         :param language: The language of this VoiceModelAssetMeta.
         :type language: str
         """
         self._language = language
+
+    @property
+    def tts_mode(self):
+        """Gets the tts_mode of this VoiceModelAssetMeta.
+
+        自研TTS运行模式，包括CPU模式和GPU模式。此参数仅内部使用，不对外开放。 * UNKNOW：未知 * TTS_V1：V1版本TTS，运行在CPU上 * TTS_V2：V2版本TTS，运行在GPU上  默认UNKNOW。
+
+        :return: The tts_mode of this VoiceModelAssetMeta.
+        :rtype: str
+        """
+        return self._tts_mode
+
+    @tts_mode.setter
+    def tts_mode(self, tts_mode):
+        """Sets the tts_mode of this VoiceModelAssetMeta.
+
+        自研TTS运行模式，包括CPU模式和GPU模式。此参数仅内部使用，不对外开放。 * UNKNOW：未知 * TTS_V1：V1版本TTS，运行在CPU上 * TTS_V2：V2版本TTS，运行在GPU上  默认UNKNOW。
+
+        :param tts_mode: The tts_mode of this VoiceModelAssetMeta.
+        :type tts_mode: str
+        """
+        self._tts_mode = tts_mode
+
+    @property
+    def external_voice_meta(self):
+        """Gets the external_voice_meta of this VoiceModelAssetMeta.
+
+        :return: The external_voice_meta of this VoiceModelAssetMeta.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ExternalVoiceAssetMeta`
+        """
+        return self._external_voice_meta
+
+    @external_voice_meta.setter
+    def external_voice_meta(self, external_voice_meta):
+        """Sets the external_voice_meta of this VoiceModelAssetMeta.
+
+        :param external_voice_meta: The external_voice_meta of this VoiceModelAssetMeta.
+        :type external_voice_meta: :class:`huaweicloudsdkmetastudio.v1.ExternalVoiceAssetMeta`
+        """
+        self._external_voice_meta = external_voice_meta
 
     def to_dict(self):
         """Returns the model properties as a dict"""

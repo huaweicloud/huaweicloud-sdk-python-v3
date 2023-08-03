@@ -41,7 +41,7 @@ class BackSources:
         :type sources_type: str
         :param ip_or_domain: 源站IP或者域名。
         :type ip_or_domain: str
-        :param obs_bucket_type: obs桶类型， “private”： 私有桶， “public”： 公有桶。
+        :param obs_bucket_type: OBS桶类型： - “private”， 私有桶： - “public”，公有桶。
         :type obs_bucket_type: str
         :param http_port: HTTP端口，取值范围：1-65535。
         :type http_port: int
@@ -115,7 +115,7 @@ class BackSources:
     def obs_bucket_type(self):
         """Gets the obs_bucket_type of this BackSources.
 
-        obs桶类型， “private”： 私有桶， “public”： 公有桶。
+        OBS桶类型： - “private”， 私有桶： - “public”，公有桶。
 
         :return: The obs_bucket_type of this BackSources.
         :rtype: str
@@ -126,7 +126,7 @@ class BackSources:
     def obs_bucket_type(self, obs_bucket_type):
         """Sets the obs_bucket_type of this BackSources.
 
-        obs桶类型， “private”： 私有桶， “public”： 公有桶。
+        OBS桶类型： - “private”， 私有桶： - “public”，公有桶。
 
         :param obs_bucket_type: The obs_bucket_type of this BackSources.
         :type obs_bucket_type: str

@@ -28,7 +28,7 @@ class AIMResolveDetail:
         'generate_date': 'str',
         'expire_date': 'str',
         'resolved_time': 'str',
-        'resolved_status': 'object'
+        'resolved_status': 'str'
     }
 
     attribute_map = {
@@ -74,7 +74,7 @@ class AIMResolveDetail:
         :param resolved_time: 解析时间。样例为：2019-10-12T07:20:50Z。
         :type resolved_time: str
         :param resolved_status: 解析状态。 - success：解析成功 - fail：解析失败 - unresolved：未解析 
-        :type resolved_status: object
+        :type resolved_status: str
         """
         
         
@@ -367,7 +367,7 @@ class AIMResolveDetail:
         解析状态。 - success：解析成功 - fail：解析失败 - unresolved：未解析 
 
         :return: The resolved_status of this AIMResolveDetail.
-        :rtype: object
+        :rtype: str
         """
         return self._resolved_status
 
@@ -378,7 +378,7 @@ class AIMResolveDetail:
         解析状态。 - success：解析成功 - fail：解析失败 - unresolved：未解析 
 
         :param resolved_status: The resolved_status of this AIMResolveDetail.
-        :type resolved_status: object
+        :type resolved_status: str
         """
         self._resolved_status = resolved_status
 

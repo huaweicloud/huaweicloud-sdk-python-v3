@@ -39,7 +39,7 @@ class SceneComponentInfo:
         :type index: int
         :param component_name: 组件名称。
         :type component_name: str
-        :param component_type: 组件类型。 * CAMERA： 摄像机 * PANEL： 屏幕 * LIGHT： 灯光
+        :param component_type: 组件类型。 * CAMERA：摄像机 * PANEL：屏幕 * LIGHT：灯光
         :type component_type: str
         :param component_desc: 组件描述。
         :type component_desc: str
@@ -108,7 +108,7 @@ class SceneComponentInfo:
     def component_type(self):
         """Gets the component_type of this SceneComponentInfo.
 
-        组件类型。 * CAMERA： 摄像机 * PANEL： 屏幕 * LIGHT： 灯光
+        组件类型。 * CAMERA：摄像机 * PANEL：屏幕 * LIGHT：灯光
 
         :return: The component_type of this SceneComponentInfo.
         :rtype: str
@@ -119,7 +119,7 @@ class SceneComponentInfo:
     def component_type(self, component_type):
         """Sets the component_type of this SceneComponentInfo.
 
-        组件类型。 * CAMERA： 摄像机 * PANEL： 屏幕 * LIGHT： 灯光
+        组件类型。 * CAMERA：摄像机 * PANEL：屏幕 * LIGHT：灯光
 
         :param component_type: The component_type of this SceneComponentInfo.
         :type component_type: str

@@ -20,6 +20,7 @@ class HumanModelAssetMeta:
         'style_id': 'str',
         'modeling_type': 'str',
         'modeling_job_id': 'str',
+        'model_properties': 'HumanModelMetaProperties',
         'components': 'list[ComponentInfo]'
     }
 
@@ -27,20 +28,23 @@ class HumanModelAssetMeta:
         'style_id': 'style_id',
         'modeling_type': 'modeling_type',
         'modeling_job_id': 'modeling_job_id',
+        'model_properties': 'model_properties',
         'components': 'components'
     }
 
-    def __init__(self, style_id=None, modeling_type=None, modeling_job_id=None, components=None):
+    def __init__(self, style_id=None, modeling_type=None, modeling_job_id=None, model_properties=None, components=None):
         """HumanModelAssetMeta
 
         The model defined in huaweicloud sdk
 
-        :param style_id: 数字人模型风格ID。 * system_male_001: 男性风格01 * system_female_001: 女性风格01 * system_male_002：男性风格02  * system_female_002: 女性风格02
+        :param style_id: 数字人模型风格ID。 * system_male_001：男性风格01 * system_female_001：女性风格01 * system_male_002：男性风格02  * system_female_002：女性风格02
         :type style_id: str
         :param modeling_type: 数字人模型建模类型。 * UPLOADED：租户上传的模型 * PICTURE_MODELING：照片建模生成的模型 * CHARACTER_CUSTOMIZATION_MODELING：捏脸生成的模型
         :type modeling_type: str
         :param modeling_job_id: 建模任务ID。
         :type modeling_job_id: str
+        :param model_properties: 
+        :type model_properties: :class:`huaweicloudsdkmetastudio.v1.HumanModelMetaProperties`
         :param components: 可替换组件列表。
         :type components: list[:class:`huaweicloudsdkmetastudio.v1.ComponentInfo`]
         """
@@ -50,6 +54,7 @@ class HumanModelAssetMeta:
         self._style_id = None
         self._modeling_type = None
         self._modeling_job_id = None
+        self._model_properties = None
         self._components = None
         self.discriminator = None
 
@@ -59,6 +64,8 @@ class HumanModelAssetMeta:
             self.modeling_type = modeling_type
         if modeling_job_id is not None:
             self.modeling_job_id = modeling_job_id
+        if model_properties is not None:
+            self.model_properties = model_properties
         if components is not None:
             self.components = components
 
@@ -66,7 +73,7 @@ class HumanModelAssetMeta:
     def style_id(self):
         """Gets the style_id of this HumanModelAssetMeta.
 
-        数字人模型风格ID。 * system_male_001: 男性风格01 * system_female_001: 女性风格01 * system_male_002：男性风格02  * system_female_002: 女性风格02
+        数字人模型风格ID。 * system_male_001：男性风格01 * system_female_001：女性风格01 * system_male_002：男性风格02  * system_female_002：女性风格02
 
         :return: The style_id of this HumanModelAssetMeta.
         :rtype: str
@@ -77,7 +84,7 @@ class HumanModelAssetMeta:
     def style_id(self, style_id):
         """Sets the style_id of this HumanModelAssetMeta.
 
-        数字人模型风格ID。 * system_male_001: 男性风格01 * system_female_001: 女性风格01 * system_male_002：男性风格02  * system_female_002: 女性风格02
+        数字人模型风格ID。 * system_male_001：男性风格01 * system_female_001：女性风格01 * system_male_002：男性风格02  * system_female_002：女性风格02
 
         :param style_id: The style_id of this HumanModelAssetMeta.
         :type style_id: str
@@ -127,6 +134,24 @@ class HumanModelAssetMeta:
         :type modeling_job_id: str
         """
         self._modeling_job_id = modeling_job_id
+
+    @property
+    def model_properties(self):
+        """Gets the model_properties of this HumanModelAssetMeta.
+
+        :return: The model_properties of this HumanModelAssetMeta.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.HumanModelMetaProperties`
+        """
+        return self._model_properties
+
+    @model_properties.setter
+    def model_properties(self, model_properties):
+        """Sets the model_properties of this HumanModelAssetMeta.
+
+        :param model_properties: The model_properties of this HumanModelAssetMeta.
+        :type model_properties: :class:`huaweicloudsdkmetastudio.v1.HumanModelMetaProperties`
+        """
+        self._model_properties = model_properties
 
     @property
     def components(self):

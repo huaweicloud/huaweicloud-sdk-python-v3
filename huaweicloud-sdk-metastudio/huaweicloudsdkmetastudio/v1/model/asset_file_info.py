@@ -45,15 +45,15 @@ class AssetFileInfo:
         :type file_id: str
         :param file_name: 文件名创建文件时候不区分大小写，最大长度256，最小长度1。
         :type file_name: str
-        :param file_md5: 文件内容MD5值,固定32位。
+        :param file_md5: 文件内容MD5值，固定24位。
         :type file_md5: str
         :param file_size: 文件总的大小，最小1，最大5368709120。
         :type file_size: int
         :param file_type: 文件类型（默认提取文件后缀）。
         :type file_type: str
-        :param asset_file_category: 文件在资产中的分类。每种资产类型包含的文件分类不同。 * MAIN： 主文件 * COVER： 封面文件 * PAGE: 内容页图片 * SAMPLE：样例音频 * OTHER： 其他文件 &gt; * 资产类型为SCENE、ANIMATION、VIDEO、IMAGE、MATERIAL时，包含MAIN、COVER和OTHER &gt; * 资产类型为PPT时，包含MAIN、COVER、PAGE和OTHER &gt; * 资产类型为HUMAN_MODEL时，包含MAIN、COVER和OTHER &gt; * 资产类型为VOICE_MODEL时，包含MAIN、SAMPLE和OTHER
+        :param asset_file_category: 文件在资产中的分类。每种资产类型包含的文件分类不同。 * MAIN：主文件 * COVER：封面文件 * PAGE：内容页图片 * SAMPLE：样例音频 * OTHER：其他文件 * WHOLE_MODEL：全模型 * USER_MODIFIED_MODEL：用户上传模型 &gt; * 资产类型为SCENE、ANIMATION、VIDEO、IMAGE、MATERIAL时，包含MAIN、COVER和OTHER &gt; * 资产类型为PPT时，包含MAIN、COVER、PAGE和OTHER &gt; * 资产类型为HUMAN_MODEL时，包含MAIN、COVER、WHOLE_MODEL、USER_MODIFIED_MODEL和OTHER &gt; * 资产类型为VOICE_MODEL时，包含MAIN、SAMPLE和OTHER
         :type asset_file_category: str
-        :param download_url: 文件下载URL,有效期为24小时。
+        :param download_url: 文件下载URL，有效期为24小时。
         :type download_url: str
         """
         
@@ -131,7 +131,7 @@ class AssetFileInfo:
     def file_md5(self):
         """Gets the file_md5 of this AssetFileInfo.
 
-        文件内容MD5值,固定32位。
+        文件内容MD5值，固定24位。
 
         :return: The file_md5 of this AssetFileInfo.
         :rtype: str
@@ -142,7 +142,7 @@ class AssetFileInfo:
     def file_md5(self, file_md5):
         """Sets the file_md5 of this AssetFileInfo.
 
-        文件内容MD5值,固定32位。
+        文件内容MD5值，固定24位。
 
         :param file_md5: The file_md5 of this AssetFileInfo.
         :type file_md5: str
@@ -197,7 +197,7 @@ class AssetFileInfo:
     def asset_file_category(self):
         """Gets the asset_file_category of this AssetFileInfo.
 
-        文件在资产中的分类。每种资产类型包含的文件分类不同。 * MAIN： 主文件 * COVER： 封面文件 * PAGE: 内容页图片 * SAMPLE：样例音频 * OTHER： 其他文件 > * 资产类型为SCENE、ANIMATION、VIDEO、IMAGE、MATERIAL时，包含MAIN、COVER和OTHER > * 资产类型为PPT时，包含MAIN、COVER、PAGE和OTHER > * 资产类型为HUMAN_MODEL时，包含MAIN、COVER和OTHER > * 资产类型为VOICE_MODEL时，包含MAIN、SAMPLE和OTHER
+        文件在资产中的分类。每种资产类型包含的文件分类不同。 * MAIN：主文件 * COVER：封面文件 * PAGE：内容页图片 * SAMPLE：样例音频 * OTHER：其他文件 * WHOLE_MODEL：全模型 * USER_MODIFIED_MODEL：用户上传模型 > * 资产类型为SCENE、ANIMATION、VIDEO、IMAGE、MATERIAL时，包含MAIN、COVER和OTHER > * 资产类型为PPT时，包含MAIN、COVER、PAGE和OTHER > * 资产类型为HUMAN_MODEL时，包含MAIN、COVER、WHOLE_MODEL、USER_MODIFIED_MODEL和OTHER > * 资产类型为VOICE_MODEL时，包含MAIN、SAMPLE和OTHER
 
         :return: The asset_file_category of this AssetFileInfo.
         :rtype: str
@@ -208,7 +208,7 @@ class AssetFileInfo:
     def asset_file_category(self, asset_file_category):
         """Sets the asset_file_category of this AssetFileInfo.
 
-        文件在资产中的分类。每种资产类型包含的文件分类不同。 * MAIN： 主文件 * COVER： 封面文件 * PAGE: 内容页图片 * SAMPLE：样例音频 * OTHER： 其他文件 > * 资产类型为SCENE、ANIMATION、VIDEO、IMAGE、MATERIAL时，包含MAIN、COVER和OTHER > * 资产类型为PPT时，包含MAIN、COVER、PAGE和OTHER > * 资产类型为HUMAN_MODEL时，包含MAIN、COVER和OTHER > * 资产类型为VOICE_MODEL时，包含MAIN、SAMPLE和OTHER
+        文件在资产中的分类。每种资产类型包含的文件分类不同。 * MAIN：主文件 * COVER：封面文件 * PAGE：内容页图片 * SAMPLE：样例音频 * OTHER：其他文件 * WHOLE_MODEL：全模型 * USER_MODIFIED_MODEL：用户上传模型 > * 资产类型为SCENE、ANIMATION、VIDEO、IMAGE、MATERIAL时，包含MAIN、COVER和OTHER > * 资产类型为PPT时，包含MAIN、COVER、PAGE和OTHER > * 资产类型为HUMAN_MODEL时，包含MAIN、COVER、WHOLE_MODEL、USER_MODIFIED_MODEL和OTHER > * 资产类型为VOICE_MODEL时，包含MAIN、SAMPLE和OTHER
 
         :param asset_file_category: The asset_file_category of this AssetFileInfo.
         :type asset_file_category: str
@@ -219,7 +219,7 @@ class AssetFileInfo:
     def download_url(self):
         """Gets the download_url of this AssetFileInfo.
 
-        文件下载URL,有效期为24小时。
+        文件下载URL，有效期为24小时。
 
         :return: The download_url of this AssetFileInfo.
         :rtype: str
@@ -230,7 +230,7 @@ class AssetFileInfo:
     def download_url(self, download_url):
         """Sets the download_url of this AssetFileInfo.
 
-        文件下载URL,有效期为24小时。
+        文件下载URL，有效期为24小时。
 
         :param download_url: The download_url of this AssetFileInfo.
         :type download_url: str

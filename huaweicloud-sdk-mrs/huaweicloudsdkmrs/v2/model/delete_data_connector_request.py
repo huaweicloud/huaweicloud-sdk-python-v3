@@ -2,11 +2,10 @@
 
 import six
 
-from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class ListSelfPrivilegesResponse(SdkResponse):
+class DeleteDataConnectorRequest:
 
     """
     Attributes:
@@ -18,80 +17,50 @@ class ListSelfPrivilegesResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'count': 'int',
-        'user_privileges': 'list[UserPrivilegeInfo]'
+        'connector_id': 'str'
     }
 
     attribute_map = {
-        'count': 'count',
-        'user_privileges': 'user_privileges'
+        'connector_id': 'connector_id'
     }
 
-    def __init__(self, count=None, user_privileges=None):
-        """ListSelfPrivilegesResponse
+    def __init__(self, connector_id=None):
+        """DeleteDataConnectorRequest
 
         The model defined in huaweicloud sdk
 
-        :param count: 总数
-        :type count: int
-        :param user_privileges: 权限列表信息
-        :type user_privileges: list[:class:`huaweicloudsdkmetastudio.v1.UserPrivilegeInfo`]
+        :param connector_id: 数据连接id
+        :type connector_id: str
         """
         
-        super(ListSelfPrivilegesResponse, self).__init__()
+        
 
-        self._count = None
-        self._user_privileges = None
+        self._connector_id = None
         self.discriminator = None
 
-        if count is not None:
-            self.count = count
-        if user_privileges is not None:
-            self.user_privileges = user_privileges
+        self.connector_id = connector_id
 
     @property
-    def count(self):
-        """Gets the count of this ListSelfPrivilegesResponse.
+    def connector_id(self):
+        """Gets the connector_id of this DeleteDataConnectorRequest.
 
-        总数
+        数据连接id
 
-        :return: The count of this ListSelfPrivilegesResponse.
-        :rtype: int
+        :return: The connector_id of this DeleteDataConnectorRequest.
+        :rtype: str
         """
-        return self._count
+        return self._connector_id
 
-    @count.setter
-    def count(self, count):
-        """Sets the count of this ListSelfPrivilegesResponse.
+    @connector_id.setter
+    def connector_id(self, connector_id):
+        """Sets the connector_id of this DeleteDataConnectorRequest.
 
-        总数
+        数据连接id
 
-        :param count: The count of this ListSelfPrivilegesResponse.
-        :type count: int
+        :param connector_id: The connector_id of this DeleteDataConnectorRequest.
+        :type connector_id: str
         """
-        self._count = count
-
-    @property
-    def user_privileges(self):
-        """Gets the user_privileges of this ListSelfPrivilegesResponse.
-
-        权限列表信息
-
-        :return: The user_privileges of this ListSelfPrivilegesResponse.
-        :rtype: list[:class:`huaweicloudsdkmetastudio.v1.UserPrivilegeInfo`]
-        """
-        return self._user_privileges
-
-    @user_privileges.setter
-    def user_privileges(self, user_privileges):
-        """Sets the user_privileges of this ListSelfPrivilegesResponse.
-
-        权限列表信息
-
-        :param user_privileges: The user_privileges of this ListSelfPrivilegesResponse.
-        :type user_privileges: list[:class:`huaweicloudsdkmetastudio.v1.UserPrivilegeInfo`]
-        """
-        self._user_privileges = user_privileges
+        self._connector_id = connector_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -135,7 +104,7 @@ class ListSelfPrivilegesResponse(SdkResponse):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ListSelfPrivilegesResponse):
+        if not isinstance(other, DeleteDataConnectorRequest):
             return False
 
         return self.__dict__ == other.__dict__

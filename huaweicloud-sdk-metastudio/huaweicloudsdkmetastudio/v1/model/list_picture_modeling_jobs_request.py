@@ -49,15 +49,15 @@ class ListPictureModelingJobsRequest:
         :type offset: int
         :param limit: 每页显示的条目数量。
         :type limit: int
-        :param state: 任务状态，默认所有状态，可多个状态查询，使用英文逗号分隔。 * WAITING：等待任务调度 * PROCESSING：正在处理 * PARTIAL_SUCCEED: 部分成功（模型生成，截图失败） * SUCCEED：成功 * FAILED：失败 * CANCELED：取消
+        :param state: 任务状态，默认所有状态。  可多个状态查询，使用英文逗号分隔。  如state&#x3D;CREATING,PUBLISHED
         :type state: str
-        :param sort_key: 排序字段。
+        :param sort_key: 排序字段，目前只支持create_time。
         :type sort_key: str
-        :param sort_dir: 升序还是降序，默认升序。 * asc：升序 * desc：降序
+        :param sort_dir: 排序方式。 * asc：升序 * desc：降序  默认asc升序。
         :type sort_dir: str
-        :param create_until: 过滤创建时间&lt;&#x3D;输入时间的记录。格式遵循：RFC 3339 如\&quot;2021-01-10T10:43:17Z\&quot;&#39;&#39;。
+        :param create_until: 过滤创建时间&lt;&#x3D;输入时间的记录。
         :type create_until: str
-        :param create_since: 过滤创建时间&gt;&#x3D;输入时间的记录。格式遵循：RFC 3339 如\&quot;2021-01-10T10:43:17Z\&quot;&#39;&#39;。
+        :param create_since: 过滤创建时间&gt;&#x3D;输入时间的记录。
         :type create_since: str
         """
         
@@ -160,7 +160,7 @@ class ListPictureModelingJobsRequest:
     def state(self):
         """Gets the state of this ListPictureModelingJobsRequest.
 
-        任务状态，默认所有状态，可多个状态查询，使用英文逗号分隔。 * WAITING：等待任务调度 * PROCESSING：正在处理 * PARTIAL_SUCCEED: 部分成功（模型生成，截图失败） * SUCCEED：成功 * FAILED：失败 * CANCELED：取消
+        任务状态，默认所有状态。  可多个状态查询，使用英文逗号分隔。  如state=CREATING,PUBLISHED
 
         :return: The state of this ListPictureModelingJobsRequest.
         :rtype: str
@@ -171,7 +171,7 @@ class ListPictureModelingJobsRequest:
     def state(self, state):
         """Sets the state of this ListPictureModelingJobsRequest.
 
-        任务状态，默认所有状态，可多个状态查询，使用英文逗号分隔。 * WAITING：等待任务调度 * PROCESSING：正在处理 * PARTIAL_SUCCEED: 部分成功（模型生成，截图失败） * SUCCEED：成功 * FAILED：失败 * CANCELED：取消
+        任务状态，默认所有状态。  可多个状态查询，使用英文逗号分隔。  如state=CREATING,PUBLISHED
 
         :param state: The state of this ListPictureModelingJobsRequest.
         :type state: str
@@ -182,7 +182,7 @@ class ListPictureModelingJobsRequest:
     def sort_key(self):
         """Gets the sort_key of this ListPictureModelingJobsRequest.
 
-        排序字段。
+        排序字段，目前只支持create_time。
 
         :return: The sort_key of this ListPictureModelingJobsRequest.
         :rtype: str
@@ -193,7 +193,7 @@ class ListPictureModelingJobsRequest:
     def sort_key(self, sort_key):
         """Sets the sort_key of this ListPictureModelingJobsRequest.
 
-        排序字段。
+        排序字段，目前只支持create_time。
 
         :param sort_key: The sort_key of this ListPictureModelingJobsRequest.
         :type sort_key: str
@@ -204,7 +204,7 @@ class ListPictureModelingJobsRequest:
     def sort_dir(self):
         """Gets the sort_dir of this ListPictureModelingJobsRequest.
 
-        升序还是降序，默认升序。 * asc：升序 * desc：降序
+        排序方式。 * asc：升序 * desc：降序  默认asc升序。
 
         :return: The sort_dir of this ListPictureModelingJobsRequest.
         :rtype: str
@@ -215,7 +215,7 @@ class ListPictureModelingJobsRequest:
     def sort_dir(self, sort_dir):
         """Sets the sort_dir of this ListPictureModelingJobsRequest.
 
-        升序还是降序，默认升序。 * asc：升序 * desc：降序
+        排序方式。 * asc：升序 * desc：降序  默认asc升序。
 
         :param sort_dir: The sort_dir of this ListPictureModelingJobsRequest.
         :type sort_dir: str
@@ -226,7 +226,7 @@ class ListPictureModelingJobsRequest:
     def create_until(self):
         """Gets the create_until of this ListPictureModelingJobsRequest.
 
-        过滤创建时间<=输入时间的记录。格式遵循：RFC 3339 如\"2021-01-10T10:43:17Z\"''。
+        过滤创建时间<=输入时间的记录。
 
         :return: The create_until of this ListPictureModelingJobsRequest.
         :rtype: str
@@ -237,7 +237,7 @@ class ListPictureModelingJobsRequest:
     def create_until(self, create_until):
         """Sets the create_until of this ListPictureModelingJobsRequest.
 
-        过滤创建时间<=输入时间的记录。格式遵循：RFC 3339 如\"2021-01-10T10:43:17Z\"''。
+        过滤创建时间<=输入时间的记录。
 
         :param create_until: The create_until of this ListPictureModelingJobsRequest.
         :type create_until: str
@@ -248,7 +248,7 @@ class ListPictureModelingJobsRequest:
     def create_since(self):
         """Gets the create_since of this ListPictureModelingJobsRequest.
 
-        过滤创建时间>=输入时间的记录。格式遵循：RFC 3339 如\"2021-01-10T10:43:17Z\"''。
+        过滤创建时间>=输入时间的记录。
 
         :return: The create_since of this ListPictureModelingJobsRequest.
         :rtype: str
@@ -259,7 +259,7 @@ class ListPictureModelingJobsRequest:
     def create_since(self, create_since):
         """Sets the create_since of this ListPictureModelingJobsRequest.
 
-        过滤创建时间>=输入时间的记录。格式遵循：RFC 3339 如\"2021-01-10T10:43:17Z\"''。
+        过滤创建时间>=输入时间的记录。
 
         :param create_since: The create_since of this ListPictureModelingJobsRequest.
         :type create_since: str

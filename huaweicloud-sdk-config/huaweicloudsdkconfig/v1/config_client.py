@@ -1122,6 +1122,598 @@ class ConfigClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def collect_conformance_pack_compliance_summary(self, request):
+        """列举合规规则包的结果概览
+
+        列举用户的合规规则包的合规结果概览。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CollectConformancePackComplianceSummary
+        :type request: :class:`huaweicloudsdkconfig.v1.CollectConformancePackComplianceSummaryRequest`
+        :rtype: :class:`huaweicloudsdkconfig.v1.CollectConformancePackComplianceSummaryResponse`
+        """
+        return self._collect_conformance_pack_compliance_summary_with_http_info(request)
+
+    def _collect_conformance_pack_compliance_summary_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'conformance_pack_name' in local_var_params:
+            query_params.append(('conformance_pack_name', local_var_params['conformance_pack_name']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/resource-manager/domains/{domain_id}/conformance-packs/compliance/summary',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CollectConformancePackComplianceSummaryResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_conformance_pack(self, request):
+        """创建合规规则包
+
+        创建新的合规规则包。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateConformancePack
+        :type request: :class:`huaweicloudsdkconfig.v1.CreateConformancePackRequest`
+        :rtype: :class:`huaweicloudsdkconfig.v1.CreateConformancePackResponse`
+        """
+        return self._create_conformance_pack_with_http_info(request)
+
+    def _create_conformance_pack_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/resource-manager/domains/{domain_id}/conformance-packs',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateConformancePackResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_conformance_pack(self, request):
+        """删除合规规则包
+
+        删除用户的合规规则包。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteConformancePack
+        :type request: :class:`huaweicloudsdkconfig.v1.DeleteConformancePackRequest`
+        :rtype: :class:`huaweicloudsdkconfig.v1.DeleteConformancePackResponse`
+        """
+        return self._delete_conformance_pack_with_http_info(request)
+
+    def _delete_conformance_pack_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'conformance_pack_id' in local_var_params:
+            path_params['conformance_pack_id'] = local_var_params['conformance_pack_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/resource-manager/domains/{domain_id}/conformance-packs/{conformance_pack_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteConformancePackResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_built_in_conformance_pack_templates(self, request):
+        """列举预定义合规规则包模板
+
+        列举预定义的合规规则包的模板。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListBuiltInConformancePackTemplates
+        :type request: :class:`huaweicloudsdkconfig.v1.ListBuiltInConformancePackTemplatesRequest`
+        :rtype: :class:`huaweicloudsdkconfig.v1.ListBuiltInConformancePackTemplatesResponse`
+        """
+        return self._list_built_in_conformance_pack_templates_with_http_info(request)
+
+    def _list_built_in_conformance_pack_templates_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'template_key' in local_var_params:
+            query_params.append(('template_key', local_var_params['template_key']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/resource-manager/conformance-packs/templates',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListBuiltInConformancePackTemplatesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_conformance_pack_compliance_by_pack_id(self, request):
+        """列举合规规则包的评估结果
+
+        列举合规规则包的合规规则评估结果。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListConformancePackComplianceByPackId
+        :type request: :class:`huaweicloudsdkconfig.v1.ListConformancePackComplianceByPackIdRequest`
+        :rtype: :class:`huaweicloudsdkconfig.v1.ListConformancePackComplianceByPackIdResponse`
+        """
+        return self._list_conformance_pack_compliance_by_pack_id_with_http_info(request)
+
+    def _list_conformance_pack_compliance_by_pack_id_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'conformance_pack_id' in local_var_params:
+            path_params['conformance_pack_id'] = local_var_params['conformance_pack_id']
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'policy_assignment_name' in local_var_params:
+            query_params.append(('policy_assignment_name', local_var_params['policy_assignment_name']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/resource-manager/domains/{domain_id}/conformance-packs/{conformance_pack_id}/compliance',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListConformancePackComplianceByPackIdResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_conformance_pack_compliance_details_by_pack_id(self, request):
+        """列举合规规则包的评估结果详情
+
+        列举合规规则包的合规规则评估结果详情。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListConformancePackComplianceDetailsByPackId
+        :type request: :class:`huaweicloudsdkconfig.v1.ListConformancePackComplianceDetailsByPackIdRequest`
+        :rtype: :class:`huaweicloudsdkconfig.v1.ListConformancePackComplianceDetailsByPackIdResponse`
+        """
+        return self._list_conformance_pack_compliance_details_by_pack_id_with_http_info(request)
+
+    def _list_conformance_pack_compliance_details_by_pack_id_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'conformance_pack_id' in local_var_params:
+            path_params['conformance_pack_id'] = local_var_params['conformance_pack_id']
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'policy_assignment_name' in local_var_params:
+            query_params.append(('policy_assignment_name', local_var_params['policy_assignment_name']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/resource-manager/domains/{domain_id}/conformance-packs/{conformance_pack_id}/compliance/details',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListConformancePackComplianceDetailsByPackIdResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_conformance_pack_compliance_scores(self, request):
+        """列举合规规则包分数
+
+        列举用户的合规规则包分数。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListConformancePackComplianceScores
+        :type request: :class:`huaweicloudsdkconfig.v1.ListConformancePackComplianceScoresRequest`
+        :rtype: :class:`huaweicloudsdkconfig.v1.ListConformancePackComplianceScoresResponse`
+        """
+        return self._list_conformance_pack_compliance_scores_with_http_info(request)
+
+    def _list_conformance_pack_compliance_scores_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'conformance_pack_name' in local_var_params:
+            query_params.append(('conformance_pack_name', local_var_params['conformance_pack_name']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/resource-manager/domains/{domain_id}/conformance-packs/scores',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListConformancePackComplianceScoresResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_conformance_packs(self, request):
+        """列举合规规则包
+
+        列举用户的合规规则包。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListConformancePacks
+        :type request: :class:`huaweicloudsdkconfig.v1.ListConformancePacksRequest`
+        :rtype: :class:`huaweicloudsdkconfig.v1.ListConformancePacksResponse`
+        """
+        return self._list_conformance_packs_with_http_info(request)
+
+    def _list_conformance_packs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'conformance_pack_name' in local_var_params:
+            query_params.append(('conformance_pack_name', local_var_params['conformance_pack_name']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/resource-manager/domains/{domain_id}/conformance-packs',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListConformancePacksResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_built_in_conformance_pack_template(self, request):
+        """查看预定义合规规则包模板
+
+        根据ID获取单个预定义合规规则包模板。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowBuiltInConformancePackTemplate
+        :type request: :class:`huaweicloudsdkconfig.v1.ShowBuiltInConformancePackTemplateRequest`
+        :rtype: :class:`huaweicloudsdkconfig.v1.ShowBuiltInConformancePackTemplateResponse`
+        """
+        return self._show_built_in_conformance_pack_template_with_http_info(request)
+
+    def _show_built_in_conformance_pack_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'template_id' in local_var_params:
+            path_params['template_id'] = local_var_params['template_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/resource-manager/conformance-packs/templates/{template_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowBuiltInConformancePackTemplateResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_conformance_pack(self, request):
+        """查看合规规则包
+
+        根据ID获取单个合规规则包。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowConformancePack
+        :type request: :class:`huaweicloudsdkconfig.v1.ShowConformancePackRequest`
+        :rtype: :class:`huaweicloudsdkconfig.v1.ShowConformancePackResponse`
+        """
+        return self._show_conformance_pack_with_http_info(request)
+
+    def _show_conformance_pack_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'conformance_pack_id' in local_var_params:
+            path_params['conformance_pack_id'] = local_var_params['conformance_pack_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/resource-manager/domains/{domain_id}/conformance-packs/{conformance_pack_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowConformancePackResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def show_resource_history(self, request):
         """查询资源历史
 

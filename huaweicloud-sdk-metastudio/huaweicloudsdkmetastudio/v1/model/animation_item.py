@@ -33,7 +33,7 @@ class AnimationItem:
 
         :param animation_asset_id: 动作资产ID。
         :type animation_asset_id: str
-        :param timestamp: 时间戳，相对时间戳，单位S，保留3位小数。
+        :param timestamp: 时间戳，相对时间戳。  单位秒。  保留3位小数。
         :type timestamp: float
         """
         
@@ -74,7 +74,7 @@ class AnimationItem:
     def timestamp(self):
         """Gets the timestamp of this AnimationItem.
 
-        时间戳，相对时间戳，单位S，保留3位小数。
+        时间戳，相对时间戳。  单位秒。  保留3位小数。
 
         :return: The timestamp of this AnimationItem.
         :rtype: float
@@ -85,7 +85,7 @@ class AnimationItem:
     def timestamp(self, timestamp):
         """Sets the timestamp of this AnimationItem.
 
-        时间戳，相对时间戳，单位S，保留3位小数。
+        时间戳，相对时间戳。  单位秒。  保留3位小数。
 
         :param timestamp: The timestamp of this AnimationItem.
         :type timestamp: float

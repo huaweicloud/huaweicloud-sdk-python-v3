@@ -93,6 +93,7 @@ from huaweicloudsdkprojectman.v4.model.issue_completion_rate_v4_issue_completion
 from huaweicloudsdkprojectman.v4.model.issue_completion_rate_v4_issue_status import IssueCompletionRateV4IssueStatus
 from huaweicloudsdkprojectman.v4.model.issue_custom_field import IssueCustomField
 from huaweicloudsdkprojectman.v4.model.issue_detail_custom_field import IssueDetailCustomField
+from huaweicloudsdkprojectman.v4.model.issue_detail_response_v4_env import IssueDetailResponseV4Env
 from huaweicloudsdkprojectman.v4.model.issue_detail_response_v4_story_point import IssueDetailResponseV4StoryPoint
 from huaweicloudsdkprojectman.v4.model.issue_item_sf_v4 import IssueItemSfV4
 from huaweicloudsdkprojectman.v4.model.issue_item_sf_v4_domain import IssueItemSfV4Domain
@@ -110,7 +111,6 @@ from huaweicloudsdkprojectman.v4.model.issue_record_v4_details import IssueRecor
 from huaweicloudsdkprojectman.v4.model.issue_record_v4_user import IssueRecordV4User
 from huaweicloudsdkprojectman.v4.model.issue_request_v4 import IssueRequestV4
 from huaweicloudsdkprojectman.v4.model.issue_response_v4 import IssueResponseV4
-from huaweicloudsdkprojectman.v4.model.issue_response_v4_env import IssueResponseV4Env
 from huaweicloudsdkprojectman.v4.model.issue_response_v4_order import IssueResponseV4Order
 from huaweicloudsdkprojectman.v4.model.issue_status import IssueStatus
 from huaweicloudsdkprojectman.v4.model.issue_status_response_v4 import IssueStatusResponseV4

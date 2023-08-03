@@ -22,6 +22,7 @@ class UpdateConnectionResponse(SdkResponse):
         'name': 'str',
         'description': 'str',
         'status': 'str',
+        'error_info': 'ErrorInfo',
         'vpc_id': 'str',
         'subnet_id': 'str',
         'agency': 'str',
@@ -38,6 +39,7 @@ class UpdateConnectionResponse(SdkResponse):
         'name': 'name',
         'description': 'description',
         'status': 'status',
+        'error_info': 'error_info',
         'vpc_id': 'vpc_id',
         'subnet_id': 'subnet_id',
         'agency': 'agency',
@@ -49,7 +51,7 @@ class UpdateConnectionResponse(SdkResponse):
         'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, id=None, name=None, description=None, status=None, vpc_id=None, subnet_id=None, agency=None, flavor=None, type=None, kafka_detail=None, created_time=None, updated_time=None, x_request_id=None):
+    def __init__(self, id=None, name=None, description=None, status=None, error_info=None, vpc_id=None, subnet_id=None, agency=None, flavor=None, type=None, kafka_detail=None, created_time=None, updated_time=None, x_request_id=None):
         """UpdateConnectionResponse
 
         The model defined in huaweicloud sdk
@@ -62,6 +64,8 @@ class UpdateConnectionResponse(SdkResponse):
         :type description: str
         :param status: 目标连接状态
         :type status: str
+        :param error_info: 
+        :type error_info: :class:`huaweicloudsdkeg.v1.ErrorInfo`
         :param vpc_id: 待连接的VPC ID
         :type vpc_id: str
         :param subnet_id: 待连接的子网ID
@@ -88,6 +92,7 @@ class UpdateConnectionResponse(SdkResponse):
         self._name = None
         self._description = None
         self._status = None
+        self._error_info = None
         self._vpc_id = None
         self._subnet_id = None
         self._agency = None
@@ -107,6 +112,8 @@ class UpdateConnectionResponse(SdkResponse):
             self.description = description
         if status is not None:
             self.status = status
+        if error_info is not None:
+            self.error_info = error_info
         if vpc_id is not None:
             self.vpc_id = vpc_id
         if subnet_id is not None:
@@ -213,6 +220,24 @@ class UpdateConnectionResponse(SdkResponse):
         :type status: str
         """
         self._status = status
+
+    @property
+    def error_info(self):
+        """Gets the error_info of this UpdateConnectionResponse.
+
+        :return: The error_info of this UpdateConnectionResponse.
+        :rtype: :class:`huaweicloudsdkeg.v1.ErrorInfo`
+        """
+        return self._error_info
+
+    @error_info.setter
+    def error_info(self, error_info):
+        """Sets the error_info of this UpdateConnectionResponse.
+
+        :param error_info: The error_info of this UpdateConnectionResponse.
+        :type error_info: :class:`huaweicloudsdkeg.v1.ErrorInfo`
+        """
+        self._error_info = error_info
 
     @property
     def vpc_id(self):

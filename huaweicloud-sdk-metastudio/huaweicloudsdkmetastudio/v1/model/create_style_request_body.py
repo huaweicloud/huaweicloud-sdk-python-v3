@@ -47,7 +47,7 @@ class CreateStyleRequestBody:
         :type name: str
         :param description: 数字人风格化描述
         :type description: str
-        :param project_id: 租户id
+        :param project_id: 租户ID
         :type project_id: str
         :param status: 状态
         :type status: str
@@ -137,7 +137,7 @@ class CreateStyleRequestBody:
     def project_id(self):
         """Gets the project_id of this CreateStyleRequestBody.
 
-        租户id
+        租户ID
 
         :return: The project_id of this CreateStyleRequestBody.
         :rtype: str
@@ -148,7 +148,7 @@ class CreateStyleRequestBody:
     def project_id(self, project_id):
         """Sets the project_id of this CreateStyleRequestBody.
 
-        租户id
+        租户ID
 
         :param project_id: The project_id of this CreateStyleRequestBody.
         :type project_id: str

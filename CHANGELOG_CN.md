@@ -1,3 +1,572 @@
+# 3.1.52 2023-08-03
+
+### HuaweiCloud SDK BSS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListCustomerselfResourceRecords**
+    - 响应参数变更
+      - `+ fee_records.id`
+
+### HuaweiCloud SDK BSSINTL
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListCustomerselfResourceRecords**
+    - 响应参数变更
+      - `+ fee_records.id`
+
+### HuaweiCloud SDK CCE
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowNode**
+    - 响应参数变更
+      - `- spec.extendParam.enterprise_project_id`
+  - **UpdateNode**
+    - 响应参数变更
+      - `- spec.extendParam.enterprise_project_id`
+  - **DeleteNode**
+    - 响应参数变更
+      - `- spec.extendParam.enterprise_project_id`
+  - **CreateNode**
+    - 请求参数变更
+      - `- spec.extendParam.enterprise_project_id`
+    - 响应参数变更
+      - `- spec.extendParam.enterprise_project_id`
+  - **ListNodes**
+    - 响应参数变更
+      - `- items.spec.extendParam.enterprise_project_id`
+  - **ShowNodePool**
+    - 响应参数变更
+      - `- spec.nodeTemplate.extendParam.enterprise_project_id`
+  - **UpdateNodePool**
+    - 响应参数变更
+      - `- spec.nodeTemplate.extendParam.enterprise_project_id`
+  - **DeleteNodePool**
+    - 响应参数变更
+      - `- spec.nodeTemplate.extendParam.enterprise_project_id`
+  - **CreateNodePool**
+    - 请求参数变更
+      - `- spec.nodeTemplate.extendParam.enterprise_project_id`
+    - 响应参数变更
+      - `- spec.nodeTemplate.extendParam.enterprise_project_id`
+  - **ListNodePools**
+    - 响应参数变更
+      - `- items.spec.nodeTemplate.extendParam.enterprise_project_id`
+
+### HuaweiCloud SDK CDN
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowDomainDetailByName**
+    - 响应参数变更
+      - `- domain.sources.weight`
+      - `* domain.sources: list<SourcesConfig> -> list<SourcesDomainConfig>`
+  - **ShowDomainFullConfig**
+    - 响应参数变更
+      - `+ configs.remark`
+      - `+ configs.ip_frequency_limit`
+      - `+ configs.hsts`
+      - `+ configs.quic`
+      - `+ configs.url_auth.inherit_config`
+      - `+ configs.sources.bucket_access_key`
+      - `+ configs.sources.bucket_secret_key`
+      - `+ configs.sources.bucket_region`
+      - `+ configs.sources.bucket_name`
+      - `+ configs.request_limit_rules.priority`
+      - `+ configs.request_limit_rules.match_type`
+      - `+ configs.request_limit_rules.match_value`
+  - **UpdateDomainFullConfig**
+    - 请求参数变更
+      - `+ configs.remark`
+      - `+ configs.ip_frequency_limit`
+      - `+ configs.hsts`
+      - `+ configs.quic`
+      - `+ configs.url_auth.inherit_config`
+      - `+ configs.sources.bucket_access_key`
+      - `+ configs.sources.bucket_secret_key`
+      - `+ configs.sources.bucket_region`
+      - `+ configs.sources.bucket_name`
+      - `+ configs.request_limit_rules.priority`
+      - `+ configs.request_limit_rules.match_type`
+      - `+ configs.request_limit_rules.match_value`
+
+### HuaweiCloud SDK Config
+
+- _新增特性_
+  - 支持以下接口：
+    - `ListConformancePacks`
+    - `CreateConformancePack`
+    - `ShowConformancePack`
+    - `DeleteConformancePack`
+    - `CollectConformancePackComplianceSummary`
+    - `ListConformancePackComplianceByPackId`
+    - `ListConformancePackComplianceDetailsByPackId`
+    - `ListConformancePackComplianceScores`
+    - `ListBuiltInConformancePackTemplates`
+    - `ShowBuiltInConformancePackTemplate`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK CPTS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowAgentConfig**
+    - 请求参数变更
+      - `+ alias`
+
+### HuaweiCloud SDK CTS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **DeleteTracker**
+    - 请求参数变更
+      - `+ tracker_type: enum value [system]`
+
+### HuaweiCloud SDK EG
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowDetailOfEventSource**
+    - 响应参数变更
+      - `+ error_info`
+  - **UpdateEventSource**
+    - 响应参数变更
+      - `+ error_info`
+  - **CreateEventSource**
+    - 响应参数变更
+      - `+ error_info`
+  - **ListEventSources**
+    - 响应参数变更
+      - `+ error_info`
+      - `+ items.error_info`
+  - **CreateSubscriptionTarget**
+    - 请求参数变更
+      - `+ smn_detail`
+      - `+ dead_letter_queue`
+    - 响应参数变更
+      - `+ dead_letter_queue`
+  - **ShowDetailOfSubscriptionTarget**
+    - 响应参数变更
+      - `+ dead_letter_queue`
+  - **UpdateSubscriptionTarget**
+    - 请求参数变更
+      - `+ smn_detail`
+      - `+ dead_letter_queue`
+    - 响应参数变更
+      - `+ dead_letter_queue`
+  - **ShowDetailOfConnection**
+    - 响应参数变更
+      - `+ error_info`
+  - **UpdateConnection**
+    - 响应参数变更
+      - `+ error_info`
+  - **UpdateEndpoint**
+    - 响应参数变更
+      - `+ error_info`
+  - **ShowDetailOfSubscription**
+    - 响应参数变更
+      - `+ dead_letter_queue`
+      - `+ targets.dead_letter_queue`
+  - **UpdateSubscription**
+    - 请求参数变更
+      - `+ targets.smn_detail`
+      - `+ targets.dead_letter_queue`
+    - 响应参数变更
+      - `+ dead_letter_queue`
+      - `+ targets.dead_letter_queue`
+  - **CreateConnection**
+    - 响应参数变更
+      - `+ error_info`
+  - **ListConnections**
+    - 请求参数变更
+      - `+ instance_id`
+    - 响应参数变更
+      - `+ error_info`
+      - `+ items.error_info`
+  - **CreateEndpoint**
+    - 响应参数变更
+      - `+ error_info`
+  - **ListEndpoints**
+    - 请求参数变更
+      - `+ subnet_id`
+    - 响应参数变更
+      - `+ error_info`
+      - `+ items.error_info`
+  - **ShowEventStreaming**
+    - 响应参数变更
+      - `+ source.source_kafka.seek_to: enum value [latest,earliest]`
+      - `+ source.source_kafka.sasl_mechanism: enum value [SCRAM-SHA-512,PLAIN]`
+  - **UpdateEventStreaming**
+    - 请求参数变更
+      - `+ source.source_kafka.seek_to: enum value [latest,earliest]`
+      - `+ source.source_kafka.sasl_mechanism: enum value [SCRAM-SHA-512,PLAIN]`
+  - **CreateSubscription**
+    - 请求参数变更
+      - `+ targets.smn_detail`
+      - `+ targets.dead_letter_queue`
+    - 响应参数变更
+      - `+ dead_letter_queue`
+      - `+ targets.dead_letter_queue`
+  - **ListSubscriptions**
+    - 响应参数变更
+      - `+ dead_letter_queue`
+      - `+ items.targets.dead_letter_queue`
+  - **ListTriggers**
+    - 响应参数变更
+      - `+ dead_letter_queue`
+      - `+ items.targets.dead_letter_queue`
+  - **ListWorkflowTriggers**
+    - 响应参数变更
+      - `+ dead_letter_queue`
+      - `+ items.targets.dead_letter_queue`
+  - **CreateEventStreaming**
+    - 请求参数变更
+      - `+ source.source_kafka.seek_to: enum value [latest,earliest]`
+      - `+ source.source_kafka.sasl_mechanism: enum value [SCRAM-SHA-512,PLAIN]`
+  - **ListEventStreaming**
+    - 响应参数变更
+      - `+ source.source_kafka.seek_to: enum value [latest,earliest]`
+      - `+ source.source_kafka.sasl_mechanism: enum value [SCRAM-SHA-512,PLAIN]`
+
+### HuaweiCloud SDK GaussDB
+
+- _新增特性_
+  - 支持接口`ModifyGaussMySqlProxyRouteMode`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowGaussMySqlEngineVersion**
+    - 响应参数变更
+      - `+ datastores.version`
+      - `+ datastores.kernel_version`
+  - **CreateGaussMySqlProxy**
+    - 请求参数变更
+      - `+ route_mode`
+  - **CreateGaussMySqlInstance**
+    - 请求参数变更
+      - `+ datastore.kernel_version`
+    - 响应参数变更
+      - `+ instance.datastore.kernel_version`
+  - **ShowGaussMySqlBackupList**
+    - 响应参数变更
+      - `+ backups.datastore.kernel_version`
+  - **ShowGaussMySqlProxyList**
+    - 响应参数变更
+      - `+ proxy_list.proxy.route_mode`
+      - `+ proxy_list.proxy.balance_route_mode_enabled`
+
+### HuaweiCloud SDK GaussDBforopenGauss
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListInstances**
+    - 响应参数变更
+      - `+ instances.backup_used_space`
+  - **ListComponentInfos**
+    - 请求参数变更
+      - `+ component_type`
+      - `+ availability_zone_id`
+    - 响应参数变更
+      - `+ nodes.name`
+      - `+ nodes.availability_zone_id`
+      - `+ nodes.description`
+      - `+ nodes.status`
+      - `+ nodes.components.distributed_id`
+  - **ListInstancesDetails**
+    - 响应参数变更
+      - `+ instances.backup_used_space`
+
+### HuaweiCloud SDK KooMessage
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **DeleteTemplateMaterial**
+    - 响应参数变更
+      - `+ data`
+  - **DeleteAimPersonalTemplate**
+    - 响应参数变更
+      - `+ data`
+  - **UnfreezePub**
+    - 响应参数变更
+      - `+ data.pub_id`
+      - `- data.data`
+  - **FreezePub**
+    - 响应参数变更
+      - `+ data.pub_id`
+      - `- data.data`
+  - **ListAimResolveDetails**
+    - 响应参数变更
+      - `* resolve_details.resolved_status: object -> string`
+  - **CreateResolveTask**
+    - 请求参数变更
+      - `- params.sms_params`
+      - `* params: list<CreateResolveTaskParam> -> list<CreateShortChainParam>`
+  - **ListAimTemplates**
+    - 响应参数变更
+      - `+ templates.factory_info.version`
+  - **CreateVmsTemplate**
+    - 请求参数变更
+      - `- reminders`
+
+### HuaweiCloud SDK MetaStudio
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 移除接口`ListSelfPrivileges`
+  - **CreateFile**
+    - 响应参数变更
+      - `+ file_id`
+      - `+ upload_url`
+  - **ListAssetSummary**
+    - 响应参数变更
+      - `+ asset_list.asset_type: enum value [HUMAN_MODEL_2D,BUSINESS_CARD_TEMPLET]`
+  - **CreateTtsa**
+    - 请求参数变更
+      - `+ X-App-UserId`
+      - `+ X-User-Privilege`
+  - **ListTtsaJobs**
+    - 请求参数变更
+      - `+ X-App-UserId`
+  - **ListTtsaData**
+    - 响应参数变更
+      - `+ motions.eyes`
+      - `* motions.root: list<object> -> list<number>`
+      - `* motions.joints: list<object> -> list<number>`
+  - **CreatePictureModelingJob**
+    - 响应参数变更
+      - `+ model_asset_id`
+      - `+ job_id`
+  - **ListPictureModelingJobs**
+    - 请求参数变更
+      - `+ sort_dir: enum value [asc,desc]`
+  - **DeleteAsset**
+    - 请求参数变更
+      - `+ mode`
+  - **ShowAsset**
+    - 响应参数变更
+      - `+ asset_type: enum value [HUMAN_MODEL_2D,BUSINESS_CARD_TEMPLET]`
+      - `+ system_properties.key: enum value [CREATED_BY_PLATFORM]`
+      - `+ asset_extra_meta.voice_model_meta.tts_mode`
+      - `+ asset_extra_meta.voice_model_meta.external_voice_meta`
+      - `+ asset_extra_meta.human_model_meta.model_properties`
+  - **UpdateDigitalAsset**
+    - 请求参数变更
+      - `+ asset_type: enum value [HUMAN_MODEL_2D,BUSINESS_CARD_TEMPLET]`
+      - `+ system_properties.key: enum value [CREATED_BY_PLATFORM]`
+      - `+ asset_extra_meta.voice_model_meta.tts_mode`
+      - `+ asset_extra_meta.voice_model_meta.external_voice_meta`
+      - `+ asset_extra_meta.human_model_meta.model_properties`
+    - 响应参数变更
+      - `+ asset_type: enum value [HUMAN_MODEL_2D,BUSINESS_CARD_TEMPLET]`
+      - `+ system_properties.key: enum value [CREATED_BY_PLATFORM]`
+      - `+ asset_extra_meta.voice_model_meta.tts_mode`
+      - `+ asset_extra_meta.voice_model_meta.external_voice_meta`
+      - `+ asset_extra_meta.human_model_meta.model_properties`
+  - **ListStyles**
+    - 请求参数变更
+      - `+ sort_dir: enum value [asc,desc]`
+    - 响应参数变更
+      - `+ styles.extra_meta.model_id`
+  - **CreateVideoMotionCaptureJob**
+    - 响应参数变更
+      - `+ rtc_room_info`
+      - `+ job_id`
+  - **CreateDigitalAsset**
+    - 请求参数变更
+      - `+ asset_type: enum value [HUMAN_MODEL_2D,BUSINESS_CARD_TEMPLET]`
+      - `+ system_properties.key: enum value [CREATED_BY_PLATFORM]`
+      - `+ asset_extra_meta.voice_model_meta.tts_mode`
+      - `+ asset_extra_meta.voice_model_meta.external_voice_meta`
+      - `+ asset_extra_meta.human_model_meta.model_properties`
+  - **ListAssets**
+    - 请求参数变更
+      - `+ language`
+      - `- lanuage`
+      - `+ sort_dir: enum value [asc,desc]`
+    - 响应参数变更
+      - `+ assets.asset_type: enum value [HUMAN_MODEL_2D,BUSINESS_CARD_TEMPLET]`
+      - `+ assets.system_properties.key: enum value [CREATED_BY_PLATFORM]`
+      - `+ assets.asset_extra_meta.voice_model_meta.tts_mode`
+      - `+ assets.asset_extra_meta.voice_model_meta.external_voice_meta`
+      - `+ assets.asset_extra_meta.human_model_meta.model_properties`
+
+### HuaweiCloud SDK MRS
+
+- _新增特性_
+  - 支持接口`ListDataConnector`、`CreateDataConnector`、`UpdateDataConnector`、`DeleteDataConnector`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateCluster**
+    - 请求参数变更
+      - `+ charge_info.period_type`
+      - `+ charge_info.period_num`
+      - `+ charge_info.is_auto_pay`
+  - **RunJobFlow**
+    - 请求参数变更
+      - `+ charge_info.period_type`
+      - `+ charge_info.period_num`
+      - `+ charge_info.is_auto_pay`
+
+### HuaweiCloud SDK OSM
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 移除接口`CreateAuthorization`
+  - **CreateMessages**
+    - 请求参数变更
+      - `- message.is_authorized`
+      - `- message.authorization_content`
+  - **CreateCases**
+    - 请求参数变更
+      - `- is_authorized`
+      - `- authorization_content`
+  - **ShowCaseDetail**
+    - 响应参数变更
+      - `- incident_detail_info.is_authorized`
+
+### HuaweiCloud SDK ProjectMan
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowIssueV4**
+    - 响应参数变更
+      - `+ find_release_dev`
+      - `+ release_dev`
+      - `+ env`
+
+### HuaweiCloud SDK RDS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListDatastores**
+    - 请求参数变更
+      - `+ database_name: enum value [MariaDB]`
+  - **ListConfigurations**
+    - 响应参数变更
+      - `+ configurations.datastore_name: enum value [mariadb]`
+  - **CreateConfiguration**
+    - 请求参数变更
+      - `+ datastore.type: enum value [MariaDB]`
+    - 响应参数变更
+      - `+ configuration.datastore_name: enum value [mariadb]`
+  - **ShowConfiguration**
+    - 响应参数变更
+      - `+ datastore_name: enum value [mariadb]`
+  - **ShowInstanceConfiguration**
+    - 响应参数变更
+      - `+ datastore_name: enum value [mariadb]`
+  - **ListFlavors**
+    - 请求参数变更
+      - `+ database_name: enum value [MariaDB]`
+  - **ListStorageTypes**
+    - 请求参数变更
+      - `+ database_name: enum value [MariaDB]`
+  - **ListInstances**
+    - 请求参数变更
+      - `+ datastore_type: enum value [MariaDB]`
+    - 响应参数变更
+      - `+ instances.datastore.type: enum value [MariaDB]`
+  - **CreateInstance**
+    - 请求参数变更
+      - `+ datastore.type: enum value [MariaDB]`
+    - 响应参数变更
+      - `+ instance.datastore.type: enum value [MariaDB]`
+  - **CreateRestoreInstance**
+    - 请求参数变更
+      - `+ datastore.type: enum value [MariaDB]`
+    - 响应参数变更
+      - `+ instance.datastore.type: enum value [MariaDB]`
+  - **ListBackups**
+    - 响应参数变更
+      - `+ backups.datastore.type: enum value [MariaDB]`
+  - **ListOffSiteBackups**
+    - 响应参数变更
+      - `+ backups.datastore.type: enum value [MariaDB]`
+  - **ListOffSiteInstances**
+    - 响应参数变更
+      - `+ offsite_backup_instances.datastore.type: enum value [MariaDB]`
+
+### HuaweiCloud SDK RocketMQ
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListMessageTrace**
+    - 请求参数变更
+      - `* msg_id: optional -> required`
+  - **ListMessages**
+    - 请求参数变更
+      - `+ key`
+
+### HuaweiCloud SDK VPC
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListPorts**
+    - 请求参数变更
+      - `+ enable_efi`
+    - 响应参数变更
+      - `+ ports.enable_efi`
+  - **CreatePort**
+    - 响应参数变更
+      - `+ port.enable_efi`
+  - **ShowPort**
+    - 响应参数变更
+      - `+ port.enable_efi`
+  - **UpdatePort**
+    - 响应参数变更
+      - `+ port.enable_efi`
+
 # 3.1.51 2023-07-31
 
 ### HuaweiCloud SDK CAE

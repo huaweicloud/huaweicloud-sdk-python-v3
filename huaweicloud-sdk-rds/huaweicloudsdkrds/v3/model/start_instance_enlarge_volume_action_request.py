@@ -19,7 +19,7 @@ class StartInstanceEnlargeVolumeActionRequest:
     openapi_types = {
         'x_language': 'str',
         'instance_id': 'str',
-        'body': 'EnlargeVolume'
+        'body': 'EnlargeVolumeRequestBody'
     }
 
     attribute_map = {
@@ -38,7 +38,7 @@ class StartInstanceEnlargeVolumeActionRequest:
         :param instance_id: 实例ID。
         :type instance_id: str
         :param body: Body of the StartInstanceEnlargeVolumeActionRequest
-        :type body: :class:`huaweicloudsdkrds.v3.EnlargeVolume`
+        :type body: :class:`huaweicloudsdkrds.v3.EnlargeVolumeRequestBody`
         """
         
         
@@ -103,7 +103,7 @@ class StartInstanceEnlargeVolumeActionRequest:
         """Gets the body of this StartInstanceEnlargeVolumeActionRequest.
 
         :return: The body of this StartInstanceEnlargeVolumeActionRequest.
-        :rtype: :class:`huaweicloudsdkrds.v3.EnlargeVolume`
+        :rtype: :class:`huaweicloudsdkrds.v3.EnlargeVolumeRequestBody`
         """
         return self._body
 
@@ -112,7 +112,7 @@ class StartInstanceEnlargeVolumeActionRequest:
         """Sets the body of this StartInstanceEnlargeVolumeActionRequest.
 
         :param body: The body of this StartInstanceEnlargeVolumeActionRequest.
-        :type body: :class:`huaweicloudsdkrds.v3.EnlargeVolume`
+        :type body: :class:`huaweicloudsdkrds.v3.EnlargeVolumeRequestBody`
         """
         self._body = body
 

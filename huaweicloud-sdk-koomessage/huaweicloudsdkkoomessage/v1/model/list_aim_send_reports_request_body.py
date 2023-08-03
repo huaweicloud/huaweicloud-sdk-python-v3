@@ -68,7 +68,8 @@ class ListAimSendReportsRequestBody:
         self._limit = None
         self.discriminator = None
 
-        self.report_type = report_type
+        if report_type is not None:
+            self.report_type = report_type
         if tpl_id is not None:
             self.tpl_id = tpl_id
         if tpl_name is not None:

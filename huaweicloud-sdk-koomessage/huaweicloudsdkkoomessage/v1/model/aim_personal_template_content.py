@@ -134,7 +134,8 @@ class AimPersonalTemplateContent:
             self.vivo_background = vivo_background
         if ratio is not None:
             self.ratio = ratio
-        self.action = action
+        if action is not None:
+            self.action = action
 
     @property
     def type(self):

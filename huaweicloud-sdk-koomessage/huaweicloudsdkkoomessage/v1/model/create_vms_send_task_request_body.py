@@ -72,7 +72,8 @@ class CreateVmsSendTaskRequestBody:
         self.tpl_id = tpl_id
         if expiration_time is not None:
             self.expiration_time = expiration_time
-        self.mobiles = mobiles
+        if mobiles is not None:
+            self.mobiles = mobiles
         if dync_params is not None:
             self.dync_params = dync_params
         if individual_params is not None:

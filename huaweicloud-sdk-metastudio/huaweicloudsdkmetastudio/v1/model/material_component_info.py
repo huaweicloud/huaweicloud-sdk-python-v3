@@ -35,7 +35,7 @@ class MaterialComponentInfo:
 
         :param component_name: 素材组件名称。
         :type component_name: str
-        :param component_type: 素材组件类型。 * CLOTHES： 衣服 * PANTS： 裤子 * SHOES： 鞋子 * HAIR： 头发 * EYELASH： 睫毛 * EYEBROW： 眉毛
+        :param component_type: 素材组件类型。 * CLOTHES：衣服 * PANTS：裤子 * SHOES：鞋子 * HAIR：头发 * EYELASH：睫毛 * EYEBROW：眉毛
         :type component_type: str
         :param component_desc: 素材组件描述。
         :type component_desc: str
@@ -79,7 +79,7 @@ class MaterialComponentInfo:
     def component_type(self):
         """Gets the component_type of this MaterialComponentInfo.
 
-        素材组件类型。 * CLOTHES： 衣服 * PANTS： 裤子 * SHOES： 鞋子 * HAIR： 头发 * EYELASH： 睫毛 * EYEBROW： 眉毛
+        素材组件类型。 * CLOTHES：衣服 * PANTS：裤子 * SHOES：鞋子 * HAIR：头发 * EYELASH：睫毛 * EYEBROW：眉毛
 
         :return: The component_type of this MaterialComponentInfo.
         :rtype: str
@@ -90,7 +90,7 @@ class MaterialComponentInfo:
     def component_type(self, component_type):
         """Sets the component_type of this MaterialComponentInfo.
 
-        素材组件类型。 * CLOTHES： 衣服 * PANTS： 裤子 * SHOES： 鞋子 * HAIR： 头发 * EYELASH： 睫毛 * EYEBROW： 眉毛
+        素材组件类型。 * CLOTHES：衣服 * PANTS：裤子 * SHOES：鞋子 * HAIR：头发 * EYELASH：睫毛 * EYEBROW：眉毛
 
         :param component_type: The component_type of this MaterialComponentInfo.
         :type component_type: str

@@ -5,7 +5,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class CreateUserCenterAuthorizationV2Req:
+class ShowConformancePackRequest:
 
     """
     Attributes:
@@ -17,80 +17,50 @@ class CreateUserCenterAuthorizationV2Req:
     sensitive_list = []
 
     openapi_types = {
-        'is_authorized': 'int',
-        'authorization_content': 'str'
+        'conformance_pack_id': 'str'
     }
 
     attribute_map = {
-        'is_authorized': 'is_authorized',
-        'authorization_content': 'authorization_content'
+        'conformance_pack_id': 'conformance_pack_id'
     }
 
-    def __init__(self, is_authorized=None, authorization_content=None):
-        """CreateUserCenterAuthorizationV2Req
+    def __init__(self, conformance_pack_id=None):
+        """ShowConformancePackRequest
 
         The model defined in huaweicloud sdk
 
-        :param is_authorized: 是否同意 0不同意 1同意
-        :type is_authorized: int
-        :param authorization_content: 机密信息内容
-        :type authorization_content: str
+        :param conformance_pack_id: 合规规则包ID。
+        :type conformance_pack_id: str
         """
         
         
 
-        self._is_authorized = None
-        self._authorization_content = None
+        self._conformance_pack_id = None
         self.discriminator = None
 
-        if is_authorized is not None:
-            self.is_authorized = is_authorized
-        if authorization_content is not None:
-            self.authorization_content = authorization_content
+        self.conformance_pack_id = conformance_pack_id
 
     @property
-    def is_authorized(self):
-        """Gets the is_authorized of this CreateUserCenterAuthorizationV2Req.
+    def conformance_pack_id(self):
+        """Gets the conformance_pack_id of this ShowConformancePackRequest.
 
-        是否同意 0不同意 1同意
+        合规规则包ID。
 
-        :return: The is_authorized of this CreateUserCenterAuthorizationV2Req.
-        :rtype: int
-        """
-        return self._is_authorized
-
-    @is_authorized.setter
-    def is_authorized(self, is_authorized):
-        """Sets the is_authorized of this CreateUserCenterAuthorizationV2Req.
-
-        是否同意 0不同意 1同意
-
-        :param is_authorized: The is_authorized of this CreateUserCenterAuthorizationV2Req.
-        :type is_authorized: int
-        """
-        self._is_authorized = is_authorized
-
-    @property
-    def authorization_content(self):
-        """Gets the authorization_content of this CreateUserCenterAuthorizationV2Req.
-
-        机密信息内容
-
-        :return: The authorization_content of this CreateUserCenterAuthorizationV2Req.
+        :return: The conformance_pack_id of this ShowConformancePackRequest.
         :rtype: str
         """
-        return self._authorization_content
+        return self._conformance_pack_id
 
-    @authorization_content.setter
-    def authorization_content(self, authorization_content):
-        """Sets the authorization_content of this CreateUserCenterAuthorizationV2Req.
+    @conformance_pack_id.setter
+    def conformance_pack_id(self, conformance_pack_id):
+        """Sets the conformance_pack_id of this ShowConformancePackRequest.
 
-        机密信息内容
+        合规规则包ID。
 
-        :param authorization_content: The authorization_content of this CreateUserCenterAuthorizationV2Req.
-        :type authorization_content: str
+        :param conformance_pack_id: The conformance_pack_id of this ShowConformancePackRequest.
+        :type conformance_pack_id: str
         """
-        self._authorization_content = authorization_content
+        self._conformance_pack_id = conformance_pack_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -134,7 +104,7 @@ class CreateUserCenterAuthorizationV2Req:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, CreateUserCenterAuthorizationV2Req):
+        if not isinstance(other, ShowConformancePackRequest):
             return False
 
         return self.__dict__ == other.__dict__

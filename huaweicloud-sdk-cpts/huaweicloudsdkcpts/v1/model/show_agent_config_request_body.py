@@ -20,17 +20,19 @@ class ShowAgentConfigRequestBody:
         'app_id': 'int',
         'address': 'str',
         'version': 'str',
-        'agent_id': 'str'
+        'agent_id': 'str',
+        'alias': 'str'
     }
 
     attribute_map = {
         'app_id': 'app_id',
         'address': 'address',
         'version': 'version',
-        'agent_id': 'agent_id'
+        'agent_id': 'agent_id',
+        'alias': 'alias'
     }
 
-    def __init__(self, app_id=None, address=None, version=None, agent_id=None):
+    def __init__(self, app_id=None, address=None, version=None, agent_id=None, alias=None):
         """ShowAgentConfigRequestBody
 
         The model defined in huaweicloud sdk
@@ -43,6 +45,8 @@ class ShowAgentConfigRequestBody:
         :type version: str
         :param agent_id: 探针id，非必填，不填是注册探针，填了是更新探针配置
         :type agent_id: str
+        :param alias: 探针别名
+        :type alias: str
         """
         
         
@@ -51,6 +55,7 @@ class ShowAgentConfigRequestBody:
         self._address = None
         self._version = None
         self._agent_id = None
+        self._alias = None
         self.discriminator = None
 
         self.app_id = app_id
@@ -58,6 +63,8 @@ class ShowAgentConfigRequestBody:
         self.version = version
         if agent_id is not None:
             self.agent_id = agent_id
+        if alias is not None:
+            self.alias = alias
 
     @property
     def app_id(self):
@@ -146,6 +153,28 @@ class ShowAgentConfigRequestBody:
         :type agent_id: str
         """
         self._agent_id = agent_id
+
+    @property
+    def alias(self):
+        """Gets the alias of this ShowAgentConfigRequestBody.
+
+        探针别名
+
+        :return: The alias of this ShowAgentConfigRequestBody.
+        :rtype: str
+        """
+        return self._alias
+
+    @alias.setter
+    def alias(self, alias):
+        """Sets the alias of this ShowAgentConfigRequestBody.
+
+        探针别名
+
+        :param alias: The alias of this ShowAgentConfigRequestBody.
+        :type alias: str
+        """
+        self._alias = alias
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -23,8 +23,6 @@ class CreateOrderIncidentV2Req:
         'region_id': 'str',
         'simple_description': 'str',
         'source_id': 'str',
-        'is_authorized': 'int',
-        'authorization_content': 'str',
         'remind_mobile': 'str',
         'remind_mail': 'str',
         'remind_time': 'str',
@@ -44,8 +42,6 @@ class CreateOrderIncidentV2Req:
         'region_id': 'region_id',
         'simple_description': 'simple_description',
         'source_id': 'source_id',
-        'is_authorized': 'is_authorized',
-        'authorization_content': 'authorization_content',
         'remind_mobile': 'remind_mobile',
         'remind_mail': 'remind_mail',
         'remind_time': 'remind_time',
@@ -58,7 +54,7 @@ class CreateOrderIncidentV2Req:
         'area_code': 'area_code'
     }
 
-    def __init__(self, incident_sub_type_id=None, product_category_id=None, business_type_id=None, region_id=None, simple_description=None, source_id=None, is_authorized=None, authorization_content=None, remind_mobile=None, remind_mail=None, remind_time=None, project_id=None, accessory_ids=None, extends_map=None, extension_map=None, severity_id=None, verify_code=None, area_code=None):
+    def __init__(self, incident_sub_type_id=None, product_category_id=None, business_type_id=None, region_id=None, simple_description=None, source_id=None, remind_mobile=None, remind_mail=None, remind_time=None, project_id=None, accessory_ids=None, extends_map=None, extension_map=None, severity_id=None, verify_code=None, area_code=None):
         """CreateOrderIncidentV2Req
 
         The model defined in huaweicloud sdk
@@ -75,10 +71,6 @@ class CreateOrderIncidentV2Req:
         :type simple_description: str
         :param source_id: 工单来源，当前固定为83aeb0f2834c4df49826c781d32a963e
         :type source_id: str
-        :param is_authorized: 是否授权
-        :type is_authorized: int
-        :param authorization_content: 机密信息内容
-        :type authorization_content: str
         :param remind_mobile: 提醒手机号
         :type remind_mobile: str
         :param remind_mail: 提醒邮箱
@@ -109,8 +101,6 @@ class CreateOrderIncidentV2Req:
         self._region_id = None
         self._simple_description = None
         self._source_id = None
-        self._is_authorized = None
-        self._authorization_content = None
         self._remind_mobile = None
         self._remind_mail = None
         self._remind_time = None
@@ -132,10 +122,6 @@ class CreateOrderIncidentV2Req:
             self.region_id = region_id
         self.simple_description = simple_description
         self.source_id = source_id
-        if is_authorized is not None:
-            self.is_authorized = is_authorized
-        if authorization_content is not None:
-            self.authorization_content = authorization_content
         if remind_mobile is not None:
             self.remind_mobile = remind_mobile
         if remind_mail is not None:
@@ -288,50 +274,6 @@ class CreateOrderIncidentV2Req:
         :type source_id: str
         """
         self._source_id = source_id
-
-    @property
-    def is_authorized(self):
-        """Gets the is_authorized of this CreateOrderIncidentV2Req.
-
-        是否授权
-
-        :return: The is_authorized of this CreateOrderIncidentV2Req.
-        :rtype: int
-        """
-        return self._is_authorized
-
-    @is_authorized.setter
-    def is_authorized(self, is_authorized):
-        """Sets the is_authorized of this CreateOrderIncidentV2Req.
-
-        是否授权
-
-        :param is_authorized: The is_authorized of this CreateOrderIncidentV2Req.
-        :type is_authorized: int
-        """
-        self._is_authorized = is_authorized
-
-    @property
-    def authorization_content(self):
-        """Gets the authorization_content of this CreateOrderIncidentV2Req.
-
-        机密信息内容
-
-        :return: The authorization_content of this CreateOrderIncidentV2Req.
-        :rtype: str
-        """
-        return self._authorization_content
-
-    @authorization_content.setter
-    def authorization_content(self, authorization_content):
-        """Sets the authorization_content of this CreateOrderIncidentV2Req.
-
-        机密信息内容
-
-        :param authorization_content: The authorization_content of this CreateOrderIncidentV2Req.
-        :type authorization_content: str
-        """
-        self._authorization_content = authorization_content
 
     @property
     def remind_mobile(self):

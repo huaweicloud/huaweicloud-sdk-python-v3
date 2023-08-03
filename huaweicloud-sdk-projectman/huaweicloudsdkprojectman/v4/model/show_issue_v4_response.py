@@ -41,6 +41,9 @@ class ShowIssueV4Response(SdkResponse):
         'priority': 'IssueItemSfV4Priority',
         'severity': 'IssueItemSfV4Severity',
         'status': 'IssueItemSfV4Status',
+        'release_dev': 'str',
+        'find_release_dev': 'str',
+        'env': 'IssueDetailResponseV4Env',
         'tracker': 'CreateIssueResponseV4Tracker',
         'updated_time': 'str',
         'closed_time': 'str',
@@ -73,6 +76,9 @@ class ShowIssueV4Response(SdkResponse):
         'priority': 'priority',
         'severity': 'severity',
         'status': 'status',
+        'release_dev': 'release_dev',
+        'find_release_dev': 'find_release_dev',
+        'env': 'env',
         'tracker': 'tracker',
         'updated_time': 'updated_time',
         'closed_time': 'closed_time',
@@ -81,7 +87,7 @@ class ShowIssueV4Response(SdkResponse):
         'accessories': 'accessories'
     }
 
-    def __init__(self, actual_work_hours=None, assigned_cc_user=None, assigned_user=None, begin_time=None, created_time=None, creator=None, custom_fields=None, new_custom_fields=None, developer=None, domain=None, done_ratio=None, end_time=None, expected_work_hours=None, id=None, project=None, iteration=None, story_point=None, module=None, name=None, parent_issue=None, priority=None, severity=None, status=None, tracker=None, updated_time=None, closed_time=None, description=None, order=None, accessories=None):
+    def __init__(self, actual_work_hours=None, assigned_cc_user=None, assigned_user=None, begin_time=None, created_time=None, creator=None, custom_fields=None, new_custom_fields=None, developer=None, domain=None, done_ratio=None, end_time=None, expected_work_hours=None, id=None, project=None, iteration=None, story_point=None, module=None, name=None, parent_issue=None, priority=None, severity=None, status=None, release_dev=None, find_release_dev=None, env=None, tracker=None, updated_time=None, closed_time=None, description=None, order=None, accessories=None):
         """ShowIssueV4Response
 
         The model defined in huaweicloud sdk
@@ -132,6 +138,12 @@ class ShowIssueV4Response(SdkResponse):
         :type severity: :class:`huaweicloudsdkprojectman.v4.IssueItemSfV4Severity`
         :param status: 
         :type status: :class:`huaweicloudsdkprojectman.v4.IssueItemSfV4Status`
+        :param release_dev: 工作项发布版本号
+        :type release_dev: str
+        :param find_release_dev: 缺陷发现版本号（仅Bug类型工作项具备该字段）
+        :type find_release_dev: str
+        :param env: 
+        :type env: :class:`huaweicloudsdkprojectman.v4.IssueDetailResponseV4Env`
         :param tracker: 
         :type tracker: :class:`huaweicloudsdkprojectman.v4.CreateIssueResponseV4Tracker`
         :param updated_time: 更新时间 年-月-日 时:分:秒
@@ -171,6 +183,9 @@ class ShowIssueV4Response(SdkResponse):
         self._priority = None
         self._severity = None
         self._status = None
+        self._release_dev = None
+        self._find_release_dev = None
+        self._env = None
         self._tracker = None
         self._updated_time = None
         self._closed_time = None
@@ -225,6 +240,12 @@ class ShowIssueV4Response(SdkResponse):
             self.severity = severity
         if status is not None:
             self.status = status
+        if release_dev is not None:
+            self.release_dev = release_dev
+        if find_release_dev is not None:
+            self.find_release_dev = find_release_dev
+        if env is not None:
+            self.env = env
         if tracker is not None:
             self.tracker = tracker
         if updated_time is not None:
@@ -695,6 +716,68 @@ class ShowIssueV4Response(SdkResponse):
         :type status: :class:`huaweicloudsdkprojectman.v4.IssueItemSfV4Status`
         """
         self._status = status
+
+    @property
+    def release_dev(self):
+        """Gets the release_dev of this ShowIssueV4Response.
+
+        工作项发布版本号
+
+        :return: The release_dev of this ShowIssueV4Response.
+        :rtype: str
+        """
+        return self._release_dev
+
+    @release_dev.setter
+    def release_dev(self, release_dev):
+        """Sets the release_dev of this ShowIssueV4Response.
+
+        工作项发布版本号
+
+        :param release_dev: The release_dev of this ShowIssueV4Response.
+        :type release_dev: str
+        """
+        self._release_dev = release_dev
+
+    @property
+    def find_release_dev(self):
+        """Gets the find_release_dev of this ShowIssueV4Response.
+
+        缺陷发现版本号（仅Bug类型工作项具备该字段）
+
+        :return: The find_release_dev of this ShowIssueV4Response.
+        :rtype: str
+        """
+        return self._find_release_dev
+
+    @find_release_dev.setter
+    def find_release_dev(self, find_release_dev):
+        """Sets the find_release_dev of this ShowIssueV4Response.
+
+        缺陷发现版本号（仅Bug类型工作项具备该字段）
+
+        :param find_release_dev: The find_release_dev of this ShowIssueV4Response.
+        :type find_release_dev: str
+        """
+        self._find_release_dev = find_release_dev
+
+    @property
+    def env(self):
+        """Gets the env of this ShowIssueV4Response.
+
+        :return: The env of this ShowIssueV4Response.
+        :rtype: :class:`huaweicloudsdkprojectman.v4.IssueDetailResponseV4Env`
+        """
+        return self._env
+
+    @env.setter
+    def env(self, env):
+        """Sets the env of this ShowIssueV4Response.
+
+        :param env: The env of this ShowIssueV4Response.
+        :type env: :class:`huaweicloudsdkprojectman.v4.IssueDetailResponseV4Env`
+        """
+        self._env = env
 
     @property
     def tracker(self):

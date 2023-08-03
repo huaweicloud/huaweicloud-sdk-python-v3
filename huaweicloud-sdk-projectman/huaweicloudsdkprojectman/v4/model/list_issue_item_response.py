@@ -42,7 +42,7 @@ class ListIssueItemResponse:
         'status': 'IssueItemSfV4Status',
         'release_dev': 'str',
         'find_release_dev': 'str',
-        'env': 'IssueResponseV4Env',
+        'env': 'IssueDetailResponseV4Env',
         'tracker': 'CreateIssueResponseV4Tracker',
         'updated_time': 'str',
         'closed_time': 'str',
@@ -138,7 +138,7 @@ class ListIssueItemResponse:
         :param find_release_dev: 缺陷发现版本号（仅Bug类型工作项具备该字段）
         :type find_release_dev: str
         :param env: 
-        :type env: :class:`huaweicloudsdkprojectman.v4.IssueResponseV4Env`
+        :type env: :class:`huaweicloudsdkprojectman.v4.IssueDetailResponseV4Env`
         :param tracker: 
         :type tracker: :class:`huaweicloudsdkprojectman.v4.CreateIssueResponseV4Tracker`
         :param updated_time: 更新时间 年-月-日 时:分:秒
@@ -751,7 +751,7 @@ class ListIssueItemResponse:
         """Gets the env of this ListIssueItemResponse.
 
         :return: The env of this ListIssueItemResponse.
-        :rtype: :class:`huaweicloudsdkprojectman.v4.IssueResponseV4Env`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.IssueDetailResponseV4Env`
         """
         return self._env
 
@@ -760,7 +760,7 @@ class ListIssueItemResponse:
         """Sets the env of this ListIssueItemResponse.
 
         :param env: The env of this ListIssueItemResponse.
-        :type env: :class:`huaweicloudsdkprojectman.v4.IssueResponseV4Env`
+        :type env: :class:`huaweicloudsdkprojectman.v4.IssueDetailResponseV4Env`
         """
         self._env = env
 

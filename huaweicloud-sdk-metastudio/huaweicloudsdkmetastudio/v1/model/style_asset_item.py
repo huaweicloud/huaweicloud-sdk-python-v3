@@ -35,7 +35,7 @@ class StyleAssetItem:
 
         :param asset_id: 资产ID
         :type asset_id: str
-        :param asset_type: 资产类型
+        :param asset_type: 资产类型 * ANIMATION：动作 * MATERIAL：素材
         :type asset_type: str
         :param cover_url: 封面图URL
         :type cover_url: str
@@ -81,7 +81,7 @@ class StyleAssetItem:
     def asset_type(self):
         """Gets the asset_type of this StyleAssetItem.
 
-        资产类型
+        资产类型 * ANIMATION：动作 * MATERIAL：素材
 
         :return: The asset_type of this StyleAssetItem.
         :rtype: str
@@ -92,7 +92,7 @@ class StyleAssetItem:
     def asset_type(self, asset_type):
         """Sets the asset_type of this StyleAssetItem.
 
-        资产类型
+        资产类型 * ANIMATION：动作 * MATERIAL：素材
 
         :param asset_type: The asset_type of this StyleAssetItem.
         :type asset_type: str

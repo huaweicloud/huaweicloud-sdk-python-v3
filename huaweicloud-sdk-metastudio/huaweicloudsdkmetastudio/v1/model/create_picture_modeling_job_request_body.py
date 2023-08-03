@@ -37,7 +37,7 @@ class CreatePictureModelingJobRequestBody:
 
         :param file: 照片文件。 &gt; 只能上传jpg/jpeg/png格式文件， 最大分辨率为3840*2160
         :type file: :class:`huaweicloudsdkcore.http.formdata.FormFile`
-        :param style_id: 数字人风格ID。 * system_male_001: 男性风格01 * system_female_001: 女性风格01 * system_male_002：男性风格02 * system_female_002: 女性风格02
+        :param style_id: 数字人风格ID。 * system_male_001：男性风格01 * system_female_001：女性风格01 * system_male_002：男性风格02 * system_female_002：女性风格02
         :type style_id: str
         :param name: 数字人模型名称，首次创建时使用。
         :type name: str
@@ -85,7 +85,7 @@ class CreatePictureModelingJobRequestBody:
     def style_id(self):
         """Gets the style_id of this CreatePictureModelingJobRequestBody.
 
-        数字人风格ID。 * system_male_001: 男性风格01 * system_female_001: 女性风格01 * system_male_002：男性风格02 * system_female_002: 女性风格02
+        数字人风格ID。 * system_male_001：男性风格01 * system_female_001：女性风格01 * system_male_002：男性风格02 * system_female_002：女性风格02
 
         :return: The style_id of this CreatePictureModelingJobRequestBody.
         :rtype: str
@@ -96,7 +96,7 @@ class CreatePictureModelingJobRequestBody:
     def style_id(self, style_id):
         """Sets the style_id of this CreatePictureModelingJobRequestBody.
 
-        数字人风格ID。 * system_male_001: 男性风格01 * system_female_001: 女性风格01 * system_male_002：男性风格02 * system_female_002: 女性风格02
+        数字人风格ID。 * system_male_001：男性风格01 * system_female_001：女性风格01 * system_male_002：男性风格02 * system_female_002：女性风格02
 
         :param style_id: The style_id of this CreatePictureModelingJobRequestBody.
         :type style_id: str

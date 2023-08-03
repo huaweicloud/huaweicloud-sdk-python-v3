@@ -32,7 +32,7 @@ class ListAssetsRequest:
         'style_id': 'str',
         'render_engine': 'str',
         'sex': 'str',
-        'lanuage': 'str',
+        'language': 'str',
         'system_property': 'str'
     }
 
@@ -52,11 +52,11 @@ class ListAssetsRequest:
         'style_id': 'style_id',
         'render_engine': 'render_engine',
         'sex': 'sex',
-        'lanuage': 'lanuage',
+        'language': 'language',
         'system_property': 'system_property'
     }
 
-    def __init__(self, x_app_user_id=None, limit=None, offset=None, name=None, tag=None, start_time=None, end_time=None, asset_type=None, sort_key=None, sort_dir=None, asset_source=None, asset_state=None, style_id=None, render_engine=None, sex=None, lanuage=None, system_property=None):
+    def __init__(self, x_app_user_id=None, limit=None, offset=None, name=None, tag=None, start_time=None, end_time=None, asset_type=None, sort_key=None, sort_dir=None, asset_source=None, asset_state=None, style_id=None, render_engine=None, sex=None, language=None, system_property=None):
         """ListAssetsRequest
 
         The model defined in huaweicloud sdk
@@ -75,25 +75,25 @@ class ListAssetsRequest:
         :type start_time: str
         :param end_time: 结束时间。格式遵循：RFC 3339 如\&quot;2021-01-10T10:43:17Z\&quot;。
         :type end_time: str
-        :param asset_type: 资产类型。 * HUMAN_MODEL:数字人模型 * VOICE_MODEL:音色模型(仅系统管理员可上传) * SCENE:场景模型 * ANIMATION:动作动画 * VIDEO:视频文件 * IMAGE:图片文件 * PPT:幻灯片文件 * MATERIAL:风格化素材 多个类型使用英文逗号分割
+        :param asset_type: 资产类型。多个类型使用英文逗号分割。 * HUMAN_MODEL：数字人模型 * VOICE_MODEL：音色模型（仅系统管理员可上传） * SCENE：场景模型 * ANIMATION：动作动画 * VIDEO：视频文件 * IMAGE：图片文件 * PPT：幻灯片文件 * MATERIAL：风格化素材 * HUMAN_MODEL_2D: 2D数字人网络模型 * BUSINESS_CARD_TEMPLET: 数字人名片模板
         :type asset_type: str
         :param sort_key: 排序字段，目前只支持create_time。
         :type sort_key: str
-        :param sort_dir: 升序还是降序，默认升序。 * asc：升序 * desc：降序
+        :param sort_dir: 排序方式。 * asc：升序 * desc：降序  默认asc升序。
         :type sort_dir: str
-        :param asset_source: 资产来源，默认查询租户资产。 * SYSTEM： 系统资产 * CUSTOMIZATION： 租户资产 - ALL： 所有资产
+        :param asset_source: 资产来源。 * SYSTEM：系统资产 * CUSTOMIZATION：租户资产 * ALL：所有资产  默认查询租户资产。
         :type asset_source: str
-        :param asset_state: 资产状态。默认查询所有状态的资产。 * CREATING:资产创建中，主文件尚未上传 * FAILED:主文件上传失败 * UNACTIVED:主文件上传成功，资产未激活，资产不可用于其他业务(用户可更新状态) * ACTIVED:主文件上传成功，资产激活，资产可用于其他业务(用户可更新状态) * DELETING:资产删除中，资产不可用，资产可恢复 * DELETED:资产文件已删除，资产不可用，资产不可恢复 多个资产状态使用英文逗号分割
+        :param asset_state: 资产状态。多个资产状态使用英文逗号分割。 * CREATING：资产创建中，主文件尚未上传 * FAILED：主文件上传失败 * UNACTIVED：主文件上传成功，资产未激活，资产不可用于其他业务（用户可更新状态） * ACTIVED：主文件上传成功，资产激活，资产可用于其他业务（用户可更新状态） * DELETING：资产删除中，资产不可用，资产可恢复 * DELETED：资产文件已删除，资产不可用，资产不可恢复  默认查询所有状态的资产。
         :type asset_state: str
-        :param style_id: 基于风格化ID查询关联资产。 * system_male_001: 男性风格01 * system_female_001: 女性风格01 * system_male_002：男性风格02  * system_female_002: 女性风格02
+        :param style_id: 基于风格化ID查询关联资产。 * system_male_001：男性风格01 * system_female_001：女性风格01 * system_male_002：男性风格02  * system_female_002：女性风格02
         :type style_id: str
-        :param render_engine: 可用引擎。 * UE * MetaEngine  &gt; 该字段当前只对MetaEngine白名单用户生效
+        :param render_engine: 可用引擎。 * UE：UE引擎 * MetaEngine：MetaEngine引擎 &gt; 该字段当前只对MetaEngine白名单用户生效
         :type render_engine: str
-        :param sex: 性别 多选使用英文逗号分隔
+        :param sex: 性别。多选使用英文逗号分隔。
         :type sex: str
-        :param lanuage: 语言 多选使用英文逗号分隔
-        :type lanuage: str
-        :param system_property: 系统属性。key和value间用\&quot;:\&quot;分隔，多个key之间用\&quot;,\&quot;分隔。如system_property&#x3D;BACKGROUND_IMG:Yes,RENDER_ENGINE:MetaEngine。 不同Key对应Value取值如下： * STYLE_ID * DH_ID * PLATFORM_AVAILABLE * RENDER_ENGINE： 引擎类型，可取值UE或MetaEngine * BACKGROUND_IMG: 视频制作的2D背景图片，可取值Yes * BACKGROUND_SCENE: 视频制作的2D背景场景，可取值Horizontal（横屏）或者Vertical（竖屏）
+        :param language: 语言。多选使用英文逗号分隔。
+        :type language: str
+        :param system_property: 系统属性。  key和value间用\&quot;:\&quot;分隔，多个key之间用\&quot;,\&quot;分隔。  如system_property&#x3D;BACKGROUND_IMG:Yes,RENDER_ENGINE:MetaEngine。  不同Key对应Value取值如下： * STYLE_ID：风格Id * RENDER_ENGINE：引擎类型，可取值UE或MetaEngine * BACKGROUND_IMG：视频制作的2D背景图片，可取值Yes * BACKGROUND_SCENE：视频制作的2D背景场景，可取值Horizontal（横屏）或者Vertical（竖屏）
         :type system_property: str
         """
         
@@ -114,7 +114,7 @@ class ListAssetsRequest:
         self._style_id = None
         self._render_engine = None
         self._sex = None
-        self._lanuage = None
+        self._language = None
         self._system_property = None
         self.discriminator = None
 
@@ -148,8 +148,8 @@ class ListAssetsRequest:
             self.render_engine = render_engine
         if sex is not None:
             self.sex = sex
-        if lanuage is not None:
-            self.lanuage = lanuage
+        if language is not None:
+            self.language = language
         if system_property is not None:
             self.system_property = system_property
 
@@ -311,7 +311,7 @@ class ListAssetsRequest:
     def asset_type(self):
         """Gets the asset_type of this ListAssetsRequest.
 
-        资产类型。 * HUMAN_MODEL:数字人模型 * VOICE_MODEL:音色模型(仅系统管理员可上传) * SCENE:场景模型 * ANIMATION:动作动画 * VIDEO:视频文件 * IMAGE:图片文件 * PPT:幻灯片文件 * MATERIAL:风格化素材 多个类型使用英文逗号分割
+        资产类型。多个类型使用英文逗号分割。 * HUMAN_MODEL：数字人模型 * VOICE_MODEL：音色模型（仅系统管理员可上传） * SCENE：场景模型 * ANIMATION：动作动画 * VIDEO：视频文件 * IMAGE：图片文件 * PPT：幻灯片文件 * MATERIAL：风格化素材 * HUMAN_MODEL_2D: 2D数字人网络模型 * BUSINESS_CARD_TEMPLET: 数字人名片模板
 
         :return: The asset_type of this ListAssetsRequest.
         :rtype: str
@@ -322,7 +322,7 @@ class ListAssetsRequest:
     def asset_type(self, asset_type):
         """Sets the asset_type of this ListAssetsRequest.
 
-        资产类型。 * HUMAN_MODEL:数字人模型 * VOICE_MODEL:音色模型(仅系统管理员可上传) * SCENE:场景模型 * ANIMATION:动作动画 * VIDEO:视频文件 * IMAGE:图片文件 * PPT:幻灯片文件 * MATERIAL:风格化素材 多个类型使用英文逗号分割
+        资产类型。多个类型使用英文逗号分割。 * HUMAN_MODEL：数字人模型 * VOICE_MODEL：音色模型（仅系统管理员可上传） * SCENE：场景模型 * ANIMATION：动作动画 * VIDEO：视频文件 * IMAGE：图片文件 * PPT：幻灯片文件 * MATERIAL：风格化素材 * HUMAN_MODEL_2D: 2D数字人网络模型 * BUSINESS_CARD_TEMPLET: 数字人名片模板
 
         :param asset_type: The asset_type of this ListAssetsRequest.
         :type asset_type: str
@@ -355,7 +355,7 @@ class ListAssetsRequest:
     def sort_dir(self):
         """Gets the sort_dir of this ListAssetsRequest.
 
-        升序还是降序，默认升序。 * asc：升序 * desc：降序
+        排序方式。 * asc：升序 * desc：降序  默认asc升序。
 
         :return: The sort_dir of this ListAssetsRequest.
         :rtype: str
@@ -366,7 +366,7 @@ class ListAssetsRequest:
     def sort_dir(self, sort_dir):
         """Sets the sort_dir of this ListAssetsRequest.
 
-        升序还是降序，默认升序。 * asc：升序 * desc：降序
+        排序方式。 * asc：升序 * desc：降序  默认asc升序。
 
         :param sort_dir: The sort_dir of this ListAssetsRequest.
         :type sort_dir: str
@@ -377,7 +377,7 @@ class ListAssetsRequest:
     def asset_source(self):
         """Gets the asset_source of this ListAssetsRequest.
 
-        资产来源，默认查询租户资产。 * SYSTEM： 系统资产 * CUSTOMIZATION： 租户资产 - ALL： 所有资产
+        资产来源。 * SYSTEM：系统资产 * CUSTOMIZATION：租户资产 * ALL：所有资产  默认查询租户资产。
 
         :return: The asset_source of this ListAssetsRequest.
         :rtype: str
@@ -388,7 +388,7 @@ class ListAssetsRequest:
     def asset_source(self, asset_source):
         """Sets the asset_source of this ListAssetsRequest.
 
-        资产来源，默认查询租户资产。 * SYSTEM： 系统资产 * CUSTOMIZATION： 租户资产 - ALL： 所有资产
+        资产来源。 * SYSTEM：系统资产 * CUSTOMIZATION：租户资产 * ALL：所有资产  默认查询租户资产。
 
         :param asset_source: The asset_source of this ListAssetsRequest.
         :type asset_source: str
@@ -399,7 +399,7 @@ class ListAssetsRequest:
     def asset_state(self):
         """Gets the asset_state of this ListAssetsRequest.
 
-        资产状态。默认查询所有状态的资产。 * CREATING:资产创建中，主文件尚未上传 * FAILED:主文件上传失败 * UNACTIVED:主文件上传成功，资产未激活，资产不可用于其他业务(用户可更新状态) * ACTIVED:主文件上传成功，资产激活，资产可用于其他业务(用户可更新状态) * DELETING:资产删除中，资产不可用，资产可恢复 * DELETED:资产文件已删除，资产不可用，资产不可恢复 多个资产状态使用英文逗号分割
+        资产状态。多个资产状态使用英文逗号分割。 * CREATING：资产创建中，主文件尚未上传 * FAILED：主文件上传失败 * UNACTIVED：主文件上传成功，资产未激活，资产不可用于其他业务（用户可更新状态） * ACTIVED：主文件上传成功，资产激活，资产可用于其他业务（用户可更新状态） * DELETING：资产删除中，资产不可用，资产可恢复 * DELETED：资产文件已删除，资产不可用，资产不可恢复  默认查询所有状态的资产。
 
         :return: The asset_state of this ListAssetsRequest.
         :rtype: str
@@ -410,7 +410,7 @@ class ListAssetsRequest:
     def asset_state(self, asset_state):
         """Sets the asset_state of this ListAssetsRequest.
 
-        资产状态。默认查询所有状态的资产。 * CREATING:资产创建中，主文件尚未上传 * FAILED:主文件上传失败 * UNACTIVED:主文件上传成功，资产未激活，资产不可用于其他业务(用户可更新状态) * ACTIVED:主文件上传成功，资产激活，资产可用于其他业务(用户可更新状态) * DELETING:资产删除中，资产不可用，资产可恢复 * DELETED:资产文件已删除，资产不可用，资产不可恢复 多个资产状态使用英文逗号分割
+        资产状态。多个资产状态使用英文逗号分割。 * CREATING：资产创建中，主文件尚未上传 * FAILED：主文件上传失败 * UNACTIVED：主文件上传成功，资产未激活，资产不可用于其他业务（用户可更新状态） * ACTIVED：主文件上传成功，资产激活，资产可用于其他业务（用户可更新状态） * DELETING：资产删除中，资产不可用，资产可恢复 * DELETED：资产文件已删除，资产不可用，资产不可恢复  默认查询所有状态的资产。
 
         :param asset_state: The asset_state of this ListAssetsRequest.
         :type asset_state: str
@@ -421,7 +421,7 @@ class ListAssetsRequest:
     def style_id(self):
         """Gets the style_id of this ListAssetsRequest.
 
-        基于风格化ID查询关联资产。 * system_male_001: 男性风格01 * system_female_001: 女性风格01 * system_male_002：男性风格02  * system_female_002: 女性风格02
+        基于风格化ID查询关联资产。 * system_male_001：男性风格01 * system_female_001：女性风格01 * system_male_002：男性风格02  * system_female_002：女性风格02
 
         :return: The style_id of this ListAssetsRequest.
         :rtype: str
@@ -432,7 +432,7 @@ class ListAssetsRequest:
     def style_id(self, style_id):
         """Sets the style_id of this ListAssetsRequest.
 
-        基于风格化ID查询关联资产。 * system_male_001: 男性风格01 * system_female_001: 女性风格01 * system_male_002：男性风格02  * system_female_002: 女性风格02
+        基于风格化ID查询关联资产。 * system_male_001：男性风格01 * system_female_001：女性风格01 * system_male_002：男性风格02  * system_female_002：女性风格02
 
         :param style_id: The style_id of this ListAssetsRequest.
         :type style_id: str
@@ -443,7 +443,7 @@ class ListAssetsRequest:
     def render_engine(self):
         """Gets the render_engine of this ListAssetsRequest.
 
-        可用引擎。 * UE * MetaEngine  > 该字段当前只对MetaEngine白名单用户生效
+        可用引擎。 * UE：UE引擎 * MetaEngine：MetaEngine引擎 > 该字段当前只对MetaEngine白名单用户生效
 
         :return: The render_engine of this ListAssetsRequest.
         :rtype: str
@@ -454,7 +454,7 @@ class ListAssetsRequest:
     def render_engine(self, render_engine):
         """Sets the render_engine of this ListAssetsRequest.
 
-        可用引擎。 * UE * MetaEngine  > 该字段当前只对MetaEngine白名单用户生效
+        可用引擎。 * UE：UE引擎 * MetaEngine：MetaEngine引擎 > 该字段当前只对MetaEngine白名单用户生效
 
         :param render_engine: The render_engine of this ListAssetsRequest.
         :type render_engine: str
@@ -465,7 +465,7 @@ class ListAssetsRequest:
     def sex(self):
         """Gets the sex of this ListAssetsRequest.
 
-        性别 多选使用英文逗号分隔
+        性别。多选使用英文逗号分隔。
 
         :return: The sex of this ListAssetsRequest.
         :rtype: str
@@ -476,7 +476,7 @@ class ListAssetsRequest:
     def sex(self, sex):
         """Sets the sex of this ListAssetsRequest.
 
-        性别 多选使用英文逗号分隔
+        性别。多选使用英文逗号分隔。
 
         :param sex: The sex of this ListAssetsRequest.
         :type sex: str
@@ -484,32 +484,32 @@ class ListAssetsRequest:
         self._sex = sex
 
     @property
-    def lanuage(self):
-        """Gets the lanuage of this ListAssetsRequest.
+    def language(self):
+        """Gets the language of this ListAssetsRequest.
 
-        语言 多选使用英文逗号分隔
+        语言。多选使用英文逗号分隔。
 
-        :return: The lanuage of this ListAssetsRequest.
+        :return: The language of this ListAssetsRequest.
         :rtype: str
         """
-        return self._lanuage
+        return self._language
 
-    @lanuage.setter
-    def lanuage(self, lanuage):
-        """Sets the lanuage of this ListAssetsRequest.
+    @language.setter
+    def language(self, language):
+        """Sets the language of this ListAssetsRequest.
 
-        语言 多选使用英文逗号分隔
+        语言。多选使用英文逗号分隔。
 
-        :param lanuage: The lanuage of this ListAssetsRequest.
-        :type lanuage: str
+        :param language: The language of this ListAssetsRequest.
+        :type language: str
         """
-        self._lanuage = lanuage
+        self._language = language
 
     @property
     def system_property(self):
         """Gets the system_property of this ListAssetsRequest.
 
-        系统属性。key和value间用\":\"分隔，多个key之间用\",\"分隔。如system_property=BACKGROUND_IMG:Yes,RENDER_ENGINE:MetaEngine。 不同Key对应Value取值如下： * STYLE_ID * DH_ID * PLATFORM_AVAILABLE * RENDER_ENGINE： 引擎类型，可取值UE或MetaEngine * BACKGROUND_IMG: 视频制作的2D背景图片，可取值Yes * BACKGROUND_SCENE: 视频制作的2D背景场景，可取值Horizontal（横屏）或者Vertical（竖屏）
+        系统属性。  key和value间用\":\"分隔，多个key之间用\",\"分隔。  如system_property=BACKGROUND_IMG:Yes,RENDER_ENGINE:MetaEngine。  不同Key对应Value取值如下： * STYLE_ID：风格Id * RENDER_ENGINE：引擎类型，可取值UE或MetaEngine * BACKGROUND_IMG：视频制作的2D背景图片，可取值Yes * BACKGROUND_SCENE：视频制作的2D背景场景，可取值Horizontal（横屏）或者Vertical（竖屏）
 
         :return: The system_property of this ListAssetsRequest.
         :rtype: str
@@ -520,7 +520,7 @@ class ListAssetsRequest:
     def system_property(self, system_property):
         """Sets the system_property of this ListAssetsRequest.
 
-        系统属性。key和value间用\":\"分隔，多个key之间用\",\"分隔。如system_property=BACKGROUND_IMG:Yes,RENDER_ENGINE:MetaEngine。 不同Key对应Value取值如下： * STYLE_ID * DH_ID * PLATFORM_AVAILABLE * RENDER_ENGINE： 引擎类型，可取值UE或MetaEngine * BACKGROUND_IMG: 视频制作的2D背景图片，可取值Yes * BACKGROUND_SCENE: 视频制作的2D背景场景，可取值Horizontal（横屏）或者Vertical（竖屏）
+        系统属性。  key和value间用\":\"分隔，多个key之间用\",\"分隔。  如system_property=BACKGROUND_IMG:Yes,RENDER_ENGINE:MetaEngine。  不同Key对应Value取值如下： * STYLE_ID：风格Id * RENDER_ENGINE：引擎类型，可取值UE或MetaEngine * BACKGROUND_IMG：视频制作的2D背景图片，可取值Yes * BACKGROUND_SCENE：视频制作的2D背景场景，可取值Horizontal（横屏）或者Vertical（竖屏）
 
         :param system_property: The system_property of this ListAssetsRequest.
         :type system_property: str

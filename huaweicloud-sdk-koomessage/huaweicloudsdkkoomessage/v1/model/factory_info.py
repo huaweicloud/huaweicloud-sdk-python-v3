@@ -18,15 +18,17 @@ class FactoryInfo:
 
     openapi_types = {
         'factory_type': 'str',
-        'state': 'int'
+        'state': 'int',
+        'version': 'str'
     }
 
     attribute_map = {
         'factory_type': 'factory_type',
-        'state': 'state'
+        'state': 'state',
+        'version': 'version'
     }
 
-    def __init__(self, factory_type=None, state=None):
+    def __init__(self, factory_type=None, state=None, version=None):
         """FactoryInfo
 
         The model defined in huaweicloud sdk
@@ -35,16 +37,21 @@ class FactoryInfo:
         :type factory_type: str
         :param state: 模板状态。  - 1：激活  - 其他：未激活 
         :type state: int
+        :param version: 厂商版本
+        :type version: str
         """
         
         
 
         self._factory_type = None
         self._state = None
+        self._version = None
         self.discriminator = None
 
         self.factory_type = factory_type
         self.state = state
+        if version is not None:
+            self.version = version
 
     @property
     def factory_type(self):
@@ -89,6 +96,28 @@ class FactoryInfo:
         :type state: int
         """
         self._state = state
+
+    @property
+    def version(self):
+        """Gets the version of this FactoryInfo.
+
+        厂商版本
+
+        :return: The version of this FactoryInfo.
+        :rtype: str
+        """
+        return self._version
+
+    @version.setter
+    def version(self, version):
+        """Sets the version of this FactoryInfo.
+
+        厂商版本
+
+        :param version: The version of this FactoryInfo.
+        :type version: str
+        """
+        self._version = version
 
     def to_dict(self):
         """Returns the model properties as a dict"""

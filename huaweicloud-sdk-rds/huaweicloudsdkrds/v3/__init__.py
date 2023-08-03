@@ -137,8 +137,8 @@ from huaweicloudsdkrds.v3.model.dss_pool_info import DssPoolInfo
 from huaweicloudsdkrds.v3.model.enable_configuration_request import EnableConfigurationRequest
 from huaweicloudsdkrds.v3.model.enable_configuration_response import EnableConfigurationResponse
 from huaweicloudsdkrds.v3.model.engine_flavor_data import EngineFlavorData
-from huaweicloudsdkrds.v3.model.enlarge_volume import EnlargeVolume
 from huaweicloudsdkrds.v3.model.enlarge_volume_object import EnlargeVolumeObject
+from huaweicloudsdkrds.v3.model.enlarge_volume_request_body import EnlargeVolumeRequestBody
 from huaweicloudsdkrds.v3.model.error_log import ErrorLog
 from huaweicloudsdkrds.v3.model.error_log_item import ErrorLogItem
 from huaweicloudsdkrds.v3.model.error_response import ErrorResponse

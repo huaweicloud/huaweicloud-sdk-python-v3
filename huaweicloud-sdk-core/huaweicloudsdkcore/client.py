@@ -462,7 +462,11 @@ class Client(object):
         query_params = self._parse_query_params(collection_formats, query_params)
         post_params = self._parse_post_params(collection_formats, post_params)
 
-        content_type = header_params.setdefault(self._CONTENT_TYPE, self._APPLICATION_JSON)
+        if self._config.ignore_content_type_for_get_request and method == "GET" and not request_body:
+            content_type = header_params.pop(self._CONTENT_TYPE, None)
+        else:
+            content_type = header_params.setdefault(self._CONTENT_TYPE, self._APPLICATION_JSON)
+
         if content_type == self._MULTIPART_FORM_DATA:
             body = self._parse_formdata_body(request_body)
             header_params[self._CONTENT_TYPE] = body.content_type

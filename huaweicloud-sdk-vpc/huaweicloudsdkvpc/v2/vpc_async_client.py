@@ -1375,6 +1375,8 @@ class VpcAsyncClient(Client):
             collection_formats['fixed_ips'] = 'multi'
         if 'enterprise_project_id' in local_var_params:
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'enable_efi' in local_var_params:
+            query_params.append(('enable_efi', local_var_params['enable_efi']))
 
         header_params = {}
 

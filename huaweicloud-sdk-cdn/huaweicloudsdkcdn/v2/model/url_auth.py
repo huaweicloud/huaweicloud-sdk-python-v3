@@ -22,6 +22,7 @@ class UrlAuth:
         'expire_time': 'int',
         'sign_method': 'str',
         'match_type': 'str',
+        'inherit_config': 'InheritConfig',
         'key': 'str',
         'backup_key': 'str',
         'sign_arg': 'str',
@@ -34,18 +35,19 @@ class UrlAuth:
         'expire_time': 'expire_time',
         'sign_method': 'sign_method',
         'match_type': 'match_type',
+        'inherit_config': 'inherit_config',
         'key': 'key',
         'backup_key': 'backup_key',
         'sign_arg': 'sign_arg',
         'time_format': 'time_format'
     }
 
-    def __init__(self, status=None, type=None, expire_time=None, sign_method=None, match_type=None, key=None, backup_key=None, sign_arg=None, time_format=None):
+    def __init__(self, status=None, type=None, expire_time=None, sign_method=None, match_type=None, inherit_config=None, key=None, backup_key=None, sign_arg=None, time_format=None):
         """UrlAuth
 
         The model defined in huaweicloud sdk
 
-        :param status: 是否开启URL鉴权，off：开启,on：关闭。
+        :param status: 是否开启URL鉴权，on：开启,off：关闭。
         :type status: str
         :param type: 鉴权方式 type_a：鉴权方式A type_b：鉴权方式B type_c1：鉴权方式C1 type_c2：鉴权方式C2
         :type type: str
@@ -55,6 +57,8 @@ class UrlAuth:
         :type sign_method: str
         :param match_type: 鉴权范围，目前仅支持配置所有文件参与鉴权，all：所有文件。
         :type match_type: str
+        :param inherit_config: 
+        :type inherit_config: :class:`huaweicloudsdkcdn.v2.InheritConfig`
         :param key: 鉴权KEY 由6-32位大小写字母、数字构成。
         :type key: str
         :param backup_key: 鉴权KEY（备） 由6-32位大小写字母、数字构成。
@@ -72,6 +76,7 @@ class UrlAuth:
         self._expire_time = None
         self._sign_method = None
         self._match_type = None
+        self._inherit_config = None
         self._key = None
         self._backup_key = None
         self._sign_arg = None
@@ -85,6 +90,8 @@ class UrlAuth:
             self.sign_method = sign_method
         if match_type is not None:
             self.match_type = match_type
+        if inherit_config is not None:
+            self.inherit_config = inherit_config
         if key is not None:
             self.key = key
         if backup_key is not None:
@@ -97,7 +104,7 @@ class UrlAuth:
     def status(self):
         """Gets the status of this UrlAuth.
 
-        是否开启URL鉴权，off：开启,on：关闭。
+        是否开启URL鉴权，on：开启,off：关闭。
 
         :return: The status of this UrlAuth.
         :rtype: str
@@ -108,7 +115,7 @@ class UrlAuth:
     def status(self, status):
         """Sets the status of this UrlAuth.
 
-        是否开启URL鉴权，off：开启,on：关闭。
+        是否开启URL鉴权，on：开启,off：关闭。
 
         :param status: The status of this UrlAuth.
         :type status: str
@@ -202,6 +209,24 @@ class UrlAuth:
         :type match_type: str
         """
         self._match_type = match_type
+
+    @property
+    def inherit_config(self):
+        """Gets the inherit_config of this UrlAuth.
+
+        :return: The inherit_config of this UrlAuth.
+        :rtype: :class:`huaweicloudsdkcdn.v2.InheritConfig`
+        """
+        return self._inherit_config
+
+    @inherit_config.setter
+    def inherit_config(self, inherit_config):
+        """Sets the inherit_config of this UrlAuth.
+
+        :param inherit_config: The inherit_config of this UrlAuth.
+        :type inherit_config: :class:`huaweicloudsdkcdn.v2.InheritConfig`
+        """
+        self._inherit_config = inherit_config
 
     @property
     def key(self):

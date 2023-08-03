@@ -27,7 +27,7 @@ class EgAsyncClient(Client):
     def check_put_events_async(self, request):
         """预校验指定事件源发布事件成功
 
-        发布事件到事件源成功需要有订阅等条件，预先校验
+        发布事件到事件源成功需要有订阅等条件，预先校验。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -84,7 +84,7 @@ class EgAsyncClient(Client):
     def create_agencies_async(self, request):
         """创建服务委托
 
-        按照业务场景，一键创建服务委托授权
+        按照业务场景，一键创建服务委托授权。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -141,7 +141,7 @@ class EgAsyncClient(Client):
     def create_channel_async(self, request):
         """创建自定义事件通道
 
-        创建自定义事件通道
+        创建自定义事件通道。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -198,7 +198,7 @@ class EgAsyncClient(Client):
     def create_connection_async(self, request):
         """创建目标连接
 
-        创建目标连接
+        创建目标连接。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -255,7 +255,7 @@ class EgAsyncClient(Client):
     def create_endpoint_async(self, request):
         """创建访问端点
 
-        创建访问端点
+        创建访问端点。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -312,7 +312,7 @@ class EgAsyncClient(Client):
     def create_event_source_async(self, request):
         """创建自定义事件源
 
-        创建用户自定义类型的事件源，只能指定自定义通道，不能指定系统通道
+        创建用户自定义类型的事件源，只能指定自定义通道，不能指定系统通道。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -369,7 +369,7 @@ class EgAsyncClient(Client):
     def create_event_streaming_async(self, request):
         """创建事件流
 
-        创建事件流
+        创建事件流。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -426,7 +426,7 @@ class EgAsyncClient(Client):
     def create_subscription_async(self, request):
         """创建事件订阅
 
-        创建事件订阅
+        创建事件订阅。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -483,7 +483,7 @@ class EgAsyncClient(Client):
     def create_subscription_target_async(self, request):
         """创建事件订阅目标
 
-        创建单个事件订阅目标
+        创建单个事件订阅目标。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -542,7 +542,7 @@ class EgAsyncClient(Client):
     def delete_channel_async(self, request):
         """删除自定义事件通道
 
-        删除指定自定义事件通道
+        删除指定自定义事件通道。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -599,7 +599,7 @@ class EgAsyncClient(Client):
     def delete_connection_async(self, request):
         """删除目标连接
 
-        删除目标连接
+        删除目标连接。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -656,7 +656,7 @@ class EgAsyncClient(Client):
     def delete_endpoint_async(self, request):
         """删除访问端点
 
-        删除访问端点
+        删除访问端点。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -713,7 +713,7 @@ class EgAsyncClient(Client):
     def delete_event_source_async(self, request):
         """删除自定义事件源
 
-        删除指定的自定义事件源
+        删除指定的自定义事件源。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -770,7 +770,7 @@ class EgAsyncClient(Client):
     def delete_event_streaming_async(self, request):
         """删除事件流
 
-        删除事件流
+        删除事件流。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -827,7 +827,7 @@ class EgAsyncClient(Client):
     def delete_subscription_async(self, request):
         """删除事件订阅
 
-        删除事件订阅
+        删除事件订阅。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -884,7 +884,7 @@ class EgAsyncClient(Client):
     def delete_subscription_target_async(self, request):
         """删除事件订阅目标
 
-        删除事件订阅目标
+        删除事件订阅目标。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -943,7 +943,7 @@ class EgAsyncClient(Client):
     def list_agencies_async(self, request):
         """查询服务委托
 
-        查询服务委托
+        查询服务委托。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1000,7 +1000,7 @@ class EgAsyncClient(Client):
     def list_channels_async(self, request):
         """查询事件通道列表
 
-        查询事件通道列表，包括系统通道和自定义通道
+        查询事件通道列表，包括系统通道和自定义通道。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1067,7 +1067,7 @@ class EgAsyncClient(Client):
     def list_connections_async(self, request):
         """查询目标连接列表
 
-        查询目标连接列表
+        查询目标连接列表。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1098,6 +1098,8 @@ class EgAsyncClient(Client):
             query_params.append(('name', local_var_params['name']))
         if 'fuzzy_name' in local_var_params:
             query_params.append(('fuzzy_name', local_var_params['fuzzy_name']))
+        if 'instance_id' in local_var_params:
+            query_params.append(('instance_id', local_var_params['instance_id']))
 
         header_params = {}
 
@@ -1132,7 +1134,7 @@ class EgAsyncClient(Client):
     def list_endpoints_async(self, request):
         """查询访问端点
 
-        查询访问端点
+        查询访问端点。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1167,6 +1169,8 @@ class EgAsyncClient(Client):
             query_params.append(('vpc_id', local_var_params['vpc_id']))
         if 'fuzzy_name' in local_var_params:
             query_params.append(('fuzzy_name', local_var_params['fuzzy_name']))
+        if 'subnet_id' in local_var_params:
+            query_params.append(('subnet_id', local_var_params['subnet_id']))
 
         header_params = {}
 
@@ -1201,7 +1205,7 @@ class EgAsyncClient(Client):
     def list_event_sources_async(self, request):
         """查询事件源列表
 
-        支持条件查询，如可以指定事件通道ID来查询某个事件通道下的所有事件源
+        支持条件查询，如可以指定事件通道ID来查询某个事件通道下的所有事件源。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1272,7 +1276,7 @@ class EgAsyncClient(Client):
     def list_event_streaming_async(self, request):
         """查询事件流列表
 
-        查询事件流列表
+        查询事件流列表。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1331,7 +1335,7 @@ class EgAsyncClient(Client):
     def list_event_target_async(self, request):
         """查询事件目标分类
 
-        查询预置的事件目标分类，获取每个事件目标分类的字段定义
+        查询预置的事件目标分类，获取每个事件目标分类的字段定义。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1397,7 +1401,7 @@ class EgAsyncClient(Client):
     def list_pub_metrics_async(self, request):
         """查询事件通道监控指标数据
 
-        查询事件通道监控指标数据
+        查询事件通道监控指标数据。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1466,7 +1470,7 @@ class EgAsyncClient(Client):
     def list_quotas_async(self, request):
         """查询配额
 
-        查询当前租户的配额，未特殊配置过的会返回默认配额
+        查询当前租户的配额，未特殊配置过的会返回默认配额。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1523,7 +1527,7 @@ class EgAsyncClient(Client):
     def list_sub_metrics_async(self, request):
         """查询事件订阅监控指标数据
 
-        查询事件订阅监控指标数据
+        查询事件订阅监控指标数据。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1592,7 +1596,7 @@ class EgAsyncClient(Client):
     def list_subscriptions_async(self, request):
         """查询事件订阅列表
 
-        查询事件订阅列表，支持指定事件通道
+        查询事件订阅列表，支持指定事件通道。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1661,7 +1665,7 @@ class EgAsyncClient(Client):
     def list_traced_events_async(self, request):
         """查询事件追踪列表
 
-        查询事件追踪列表
+        查询事件追踪列表。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1734,7 +1738,7 @@ class EgAsyncClient(Client):
     def list_triggers_async(self, request):
         """查询单个函数的EG触发器
 
-        查询触发器，支持指定函数urn。一个以函数urn为目标的订阅为一个触发器。
+        查询触发器，支持指定函数urn，一个以函数urn为目标的订阅为一个触发器。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1797,7 +1801,7 @@ class EgAsyncClient(Client):
     def list_workflow_triggers_async(self, request):
         """查询单个函数流的EG触发器
 
-        查询触发器，支持指定函数流id。一个以函数流id为目标的订阅为一个触发器。
+        查询触发器，支持指定函数流id，一个以函数流id为目标的订阅为一个触发器。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1860,7 +1864,7 @@ class EgAsyncClient(Client):
     def operate_subscription_async(self, request):
         """操作事件订阅
 
-        操作事件订阅，支持启用、禁用
+        操作事件订阅，支持启用、禁用。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1917,7 +1921,7 @@ class EgAsyncClient(Client):
     def put_events_async(self, request):
         """发布事件到事件通道
 
-        发布事件到事件通道
+        发布事件到事件通道。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1976,7 +1980,7 @@ class EgAsyncClient(Client):
     def put_official_events_async(self, request):
         """发布官方事件到事件通道
 
-        发布官方事件到事件通道
+        发布官方事件到事件通道。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2035,7 +2039,7 @@ class EgAsyncClient(Client):
     def resume_event_streaming_async(self, request):
         """操作事件流
 
-        操作事件流
+        操作事件流。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2094,7 +2098,7 @@ class EgAsyncClient(Client):
     def show_detail_of_channel_async(self, request):
         """查询事件通道详情
 
-        查询指定事件通道详情
+        查询指定事件通道详情。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2151,7 +2155,7 @@ class EgAsyncClient(Client):
     def show_detail_of_connection_async(self, request):
         """查询目标连接详情
 
-        查询目标连接详情
+        查询目标连接详情。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2208,7 +2212,7 @@ class EgAsyncClient(Client):
     def show_detail_of_event_async(self, request):
         """查询发送事件的内容
 
-        根据事件ID查询事件详情
+        根据事件ID查询事件详情。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2265,7 +2269,7 @@ class EgAsyncClient(Client):
     def show_detail_of_event_source_async(self, request):
         """查询事件源详情
 
-        查询事件源详情信息
+        查询事件源详情信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2322,7 +2326,7 @@ class EgAsyncClient(Client):
     def show_detail_of_event_trace_async(self, request):
         """事件轨迹详情
 
-        事件轨迹详情，展示事件源到投递目标的投递情况
+        事件轨迹详情，展示事件源到投递目标的投递情况。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2381,7 +2385,7 @@ class EgAsyncClient(Client):
     def show_detail_of_subscription_async(self, request):
         """查询事件订阅详情
 
-        查询事件订阅详情
+        查询事件订阅详情。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2438,7 +2442,7 @@ class EgAsyncClient(Client):
     def show_detail_of_subscription_target_async(self, request):
         """查询事件订阅目标详情
 
-        查询事件订阅目标详情
+        查询事件订阅目标详情。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2497,7 +2501,7 @@ class EgAsyncClient(Client):
     def show_event_streaming_async(self, request):
         """查询事件流详情
 
-        查询事件流详情
+        查询事件流详情。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2554,7 +2558,7 @@ class EgAsyncClient(Client):
     def update_channel_async(self, request):
         """更新自定义事件通道
 
-        更新自定义事件通道定义
+        更新自定义事件通道定义。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2613,7 +2617,7 @@ class EgAsyncClient(Client):
     def update_connection_async(self, request):
         """更新目标连接
 
-        更新目标连接
+        更新目标连接。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2672,7 +2676,7 @@ class EgAsyncClient(Client):
     def update_endpoint_async(self, request):
         """更新访问端点
 
-        更新访问端点
+        更新访问端点。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2731,7 +2735,7 @@ class EgAsyncClient(Client):
     def update_event_source_async(self, request):
         """更新自定义事件源
 
-        更新自定义事件源定义
+        更新自定义事件源定义。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2790,7 +2794,7 @@ class EgAsyncClient(Client):
     def update_event_streaming_async(self, request):
         """更新事件流
 
-        更新事件流
+        更新事件流。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2849,7 +2853,7 @@ class EgAsyncClient(Client):
     def update_subscription_async(self, request):
         """更新事件订阅
 
-        更新事件订阅定义
+        更新事件订阅定义。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2969,7 +2973,7 @@ class EgAsyncClient(Client):
     def update_subscription_target_async(self, request):
         """更新事件订阅目标
 
-        更新事件订阅目标定义
+        更新事件订阅目标定义。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3030,7 +3034,7 @@ class EgAsyncClient(Client):
     def list_api_versions_async(self, request):
         """获取API版本列表
 
-        获取服务支持的API版本列表
+        获取服务支持的API版本列表。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3085,7 +3089,7 @@ class EgAsyncClient(Client):
     def list_obs_buckets_async(self, request):
         """获取obs桶列表
 
-        获取obs桶列表
+        获取obs桶列表。
         
         Please refer to HUAWEI cloud API Explorer for details.
 

@@ -611,7 +611,7 @@ class KafkaClient(Client):
     def create_instance_user(self, request):
         """创建用户
 
-        创建Kafka实例的用户，用户可连接开启SASL的Kafka实例。
+        创建Kafka实例的用户，用户可连接开启SASL的Kafka实例。 [ 2023年7月15日前创建的Kafka实例，一个实例最多创建20个用户。2023年7月15日及以后创建的Kafka实例，一个实例最多创建500个用户。](tag:hws,hws_hk)
         
         Please refer to HUAWEI cloud API Explorer for details.
 

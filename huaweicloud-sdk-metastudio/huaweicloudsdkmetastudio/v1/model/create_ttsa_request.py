@@ -17,29 +17,58 @@ class CreateTtsaRequest:
     sensitive_list = []
 
     openapi_types = {
+        'x_app_user_id': 'str',
         'body': 'CreateTTSAReq'
     }
 
     attribute_map = {
+        'x_app_user_id': 'X-App-UserId',
         'body': 'body'
     }
 
-    def __init__(self, body=None):
+    def __init__(self, x_app_user_id=None, body=None):
         """CreateTtsaRequest
 
         The model defined in huaweicloud sdk
 
+        :param x_app_user_id: 开发者应用作为资产权属的可选字段。
+        :type x_app_user_id: str
         :param body: Body of the CreateTtsaRequest
         :type body: :class:`huaweicloudsdkmetastudio.v1.CreateTTSAReq`
         """
         
         
 
+        self._x_app_user_id = None
         self._body = None
         self.discriminator = None
 
+        if x_app_user_id is not None:
+            self.x_app_user_id = x_app_user_id
         if body is not None:
             self.body = body
+
+    @property
+    def x_app_user_id(self):
+        """Gets the x_app_user_id of this CreateTtsaRequest.
+
+        开发者应用作为资产权属的可选字段。
+
+        :return: The x_app_user_id of this CreateTtsaRequest.
+        :rtype: str
+        """
+        return self._x_app_user_id
+
+    @x_app_user_id.setter
+    def x_app_user_id(self, x_app_user_id):
+        """Sets the x_app_user_id of this CreateTtsaRequest.
+
+        开发者应用作为资产权属的可选字段。
+
+        :param x_app_user_id: The x_app_user_id of this CreateTtsaRequest.
+        :type x_app_user_id: str
+        """
+        self._x_app_user_id = x_app_user_id
 
     @property
     def body(self):

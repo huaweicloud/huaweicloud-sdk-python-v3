@@ -29,7 +29,7 @@ class ConfirmFileUploadRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param state: 文件上传状态。 - CREATED： 上传完成 - FAILED： 上传失败 - CANCELLED： 取消上传
+        :param state: 文件上传状态。 - CREATED：上传完成 - FAILED：上传失败 - CANCELLED：取消上传
         :type state: str
         """
         
@@ -44,7 +44,7 @@ class ConfirmFileUploadRequestBody:
     def state(self):
         """Gets the state of this ConfirmFileUploadRequestBody.
 
-        文件上传状态。 - CREATED： 上传完成 - FAILED： 上传失败 - CANCELLED： 取消上传
+        文件上传状态。 - CREATED：上传完成 - FAILED：上传失败 - CANCELLED：取消上传
 
         :return: The state of this ConfirmFileUploadRequestBody.
         :rtype: str
@@ -55,7 +55,7 @@ class ConfirmFileUploadRequestBody:
     def state(self, state):
         """Sets the state of this ConfirmFileUploadRequestBody.
 
-        文件上传状态。 - CREATED： 上传完成 - FAILED： 上传失败 - CANCELLED： 取消上传
+        文件上传状态。 - CREATED：上传完成 - FAILED：上传失败 - CANCELLED：取消上传
 
         :param state: The state of this ConfirmFileUploadRequestBody.
         :type state: str

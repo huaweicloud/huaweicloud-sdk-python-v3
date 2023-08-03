@@ -40,7 +40,7 @@ class ListTtsaDataResponse(SdkResponse):
 
         :param job_id: 任务ID。
         :type job_id: str
-        :param audio: 音频数据，Base64编码，1s内的数据。
+        :param audio: 音频数据，Base64编码，1秒内的数据。
         :type audio: str
         :param blendshapes: 语音驱动的表情基数据。
         :type blendshapes: list[str]
@@ -96,7 +96,7 @@ class ListTtsaDataResponse(SdkResponse):
     def audio(self):
         """Gets the audio of this ListTtsaDataResponse.
 
-        音频数据，Base64编码，1s内的数据。
+        音频数据，Base64编码，1秒内的数据。
 
         :return: The audio of this ListTtsaDataResponse.
         :rtype: str
@@ -107,7 +107,7 @@ class ListTtsaDataResponse(SdkResponse):
     def audio(self, audio):
         """Sets the audio of this ListTtsaDataResponse.
 
-        音频数据，Base64编码，1s内的数据。
+        音频数据，Base64编码，1秒内的数据。
 
         :param audio: The audio of this ListTtsaDataResponse.
         :type audio: str

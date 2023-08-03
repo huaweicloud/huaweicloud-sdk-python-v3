@@ -21,7 +21,8 @@ class ListConnectionsRequest:
         'limit': 'int',
         'sort': 'str',
         'name': 'str',
-        'fuzzy_name': 'str'
+        'fuzzy_name': 'str',
+        'instance_id': 'str'
     }
 
     attribute_map = {
@@ -29,10 +30,11 @@ class ListConnectionsRequest:
         'limit': 'limit',
         'sort': 'sort',
         'name': 'name',
-        'fuzzy_name': 'fuzzy_name'
+        'fuzzy_name': 'fuzzy_name',
+        'instance_id': 'instance_id'
     }
 
-    def __init__(self, offset=None, limit=None, sort=None, name=None, fuzzy_name=None):
+    def __init__(self, offset=None, limit=None, sort=None, name=None, fuzzy_name=None, instance_id=None):
         """ListConnectionsRequest
 
         The model defined in huaweicloud sdk
@@ -47,6 +49,8 @@ class ListConnectionsRequest:
         :type name: str
         :param fuzzy_name: 指定查询的目标连接名称，模糊匹配
         :type fuzzy_name: str
+        :param instance_id: 指定查询的目标连接，队列的实例id
+        :type instance_id: str
         """
         
         
@@ -56,6 +60,7 @@ class ListConnectionsRequest:
         self._sort = None
         self._name = None
         self._fuzzy_name = None
+        self._instance_id = None
         self.discriminator = None
 
         if offset is not None:
@@ -68,6 +73,8 @@ class ListConnectionsRequest:
             self.name = name
         if fuzzy_name is not None:
             self.fuzzy_name = fuzzy_name
+        if instance_id is not None:
+            self.instance_id = instance_id
 
     @property
     def offset(self):
@@ -178,6 +185,28 @@ class ListConnectionsRequest:
         :type fuzzy_name: str
         """
         self._fuzzy_name = fuzzy_name
+
+    @property
+    def instance_id(self):
+        """Gets the instance_id of this ListConnectionsRequest.
+
+        指定查询的目标连接，队列的实例id
+
+        :return: The instance_id of this ListConnectionsRequest.
+        :rtype: str
+        """
+        return self._instance_id
+
+    @instance_id.setter
+    def instance_id(self, instance_id):
+        """Sets the instance_id of this ListConnectionsRequest.
+
+        指定查询的目标连接，队列的实例id
+
+        :param instance_id: The instance_id of this ListConnectionsRequest.
+        :type instance_id: str
+        """
+        self._instance_id = instance_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

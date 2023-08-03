@@ -22,7 +22,7 @@ class DomainsWithPort:
         'business_type': 'str',
         'domain_status': 'str',
         'cname': 'str',
-        'sources': 'list[SourcesConfig]',
+        'sources': 'list[SourcesDomainConfig]',
         'https_status': 'int',
         'create_time': 'int',
         'update_time': 'int',
@@ -62,7 +62,7 @@ class DomainsWithPort:
         :param cname: 加速域名对应的CNAME。
         :type cname: str
         :param sources: 源站配置。
-        :type sources: list[:class:`huaweicloudsdkcdn.v2.SourcesConfig`]
+        :type sources: list[:class:`huaweicloudsdkcdn.v2.SourcesDomainConfig`]
         :param https_status: 是否开启HTTPS加速。 0：代表未开启HTTPS加速； 1：代表开启HTTPS加速，且回源方式为协议跟随； 2：代表开启HTTPS加速，且回源方式为HTTP； 3：代表开启HTTPS加速，且回源方式为HTTPS。
         :type https_status: int
         :param create_time: 域名创建时间，相对于UTC 1970-01-01到当前时间相隔的毫秒数。
@@ -235,7 +235,7 @@ class DomainsWithPort:
         源站配置。
 
         :return: The sources of this DomainsWithPort.
-        :rtype: list[:class:`huaweicloudsdkcdn.v2.SourcesConfig`]
+        :rtype: list[:class:`huaweicloudsdkcdn.v2.SourcesDomainConfig`]
         """
         return self._sources
 
@@ -246,7 +246,7 @@ class DomainsWithPort:
         源站配置。
 
         :param sources: The sources of this DomainsWithPort.
-        :type sources: list[:class:`huaweicloudsdkcdn.v2.SourcesConfig`]
+        :type sources: list[:class:`huaweicloudsdkcdn.v2.SourcesDomainConfig`]
         """
         self._sources = sources
 

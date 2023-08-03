@@ -24,6 +24,7 @@ class ShowDetailOfSubscriptionTargetResponse(SdkResponse):
         'connection_id': 'str',
         'detail': 'object',
         'transform': 'TransForm',
+        'dead_letter_queue': 'DeadLetterQueue',
         'created_time': 'str',
         'updated_time': 'str'
     }
@@ -35,11 +36,12 @@ class ShowDetailOfSubscriptionTargetResponse(SdkResponse):
         'connection_id': 'connection_id',
         'detail': 'detail',
         'transform': 'transform',
+        'dead_letter_queue': 'dead_letter_queue',
         'created_time': 'created_time',
         'updated_time': 'updated_time'
     }
 
-    def __init__(self, id=None, name=None, provider_type=None, connection_id=None, detail=None, transform=None, created_time=None, updated_time=None):
+    def __init__(self, id=None, name=None, provider_type=None, connection_id=None, detail=None, transform=None, dead_letter_queue=None, created_time=None, updated_time=None):
         """ShowDetailOfSubscriptionTargetResponse
 
         The model defined in huaweicloud sdk
@@ -56,6 +58,8 @@ class ShowDetailOfSubscriptionTargetResponse(SdkResponse):
         :type detail: object
         :param transform: 
         :type transform: :class:`huaweicloudsdkeg.v1.TransForm`
+        :param dead_letter_queue: 
+        :type dead_letter_queue: :class:`huaweicloudsdkeg.v1.DeadLetterQueue`
         :param created_time: 创建时间
         :type created_time: str
         :param updated_time: 更新时间
@@ -70,6 +74,7 @@ class ShowDetailOfSubscriptionTargetResponse(SdkResponse):
         self._connection_id = None
         self._detail = None
         self._transform = None
+        self._dead_letter_queue = None
         self._created_time = None
         self._updated_time = None
         self.discriminator = None
@@ -86,6 +91,8 @@ class ShowDetailOfSubscriptionTargetResponse(SdkResponse):
             self.detail = detail
         if transform is not None:
             self.transform = transform
+        if dead_letter_queue is not None:
+            self.dead_letter_queue = dead_letter_queue
         if created_time is not None:
             self.created_time = created_time
         if updated_time is not None:
@@ -218,6 +225,24 @@ class ShowDetailOfSubscriptionTargetResponse(SdkResponse):
         :type transform: :class:`huaweicloudsdkeg.v1.TransForm`
         """
         self._transform = transform
+
+    @property
+    def dead_letter_queue(self):
+        """Gets the dead_letter_queue of this ShowDetailOfSubscriptionTargetResponse.
+
+        :return: The dead_letter_queue of this ShowDetailOfSubscriptionTargetResponse.
+        :rtype: :class:`huaweicloudsdkeg.v1.DeadLetterQueue`
+        """
+        return self._dead_letter_queue
+
+    @dead_letter_queue.setter
+    def dead_letter_queue(self, dead_letter_queue):
+        """Sets the dead_letter_queue of this ShowDetailOfSubscriptionTargetResponse.
+
+        :param dead_letter_queue: The dead_letter_queue of this ShowDetailOfSubscriptionTargetResponse.
+        :type dead_letter_queue: :class:`huaweicloudsdkeg.v1.DeadLetterQueue`
+        """
+        self._dead_letter_queue = dead_letter_queue
 
     @property
     def created_time(self):

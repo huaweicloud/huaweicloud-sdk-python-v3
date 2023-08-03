@@ -48,11 +48,11 @@ class ShowPictureModelingJobResponse(SdkResponse):
 
         :param job_id: 照片建模任务ID。
         :type job_id: str
-        :param state: 任务的状态。 * WAITING：等待任务调度 * PROCESSING：正在处理 * PARTIAL_SUCCEED: 部分成功（模型生成，截图失败） * SUCCEED：成功 * FAILED：失败 * CANCELED：取消
+        :param state: 任务的状态。 * WAITING：等待任务调度 * PROCESSING：正在处理 * PARTIAL_SUCCEED：部分成功（模型生成，截图失败） * SUCCEED：成功 * FAILED：失败 * CANCELED：取消
         :type state: str
-        :param start_time: 任务开始时间,格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”。
+        :param start_time: 任务开始时间，格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”。
         :type start_time: str
-        :param end_time: 任务结束时间,格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”。
+        :param end_time: 任务结束时间，格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”。
         :type end_time: str
         :param error_info: 
         :type error_info: :class:`huaweicloudsdkmetastudio.v1.ErrorResponse`
@@ -122,7 +122,7 @@ class ShowPictureModelingJobResponse(SdkResponse):
     def state(self):
         """Gets the state of this ShowPictureModelingJobResponse.
 
-        任务的状态。 * WAITING：等待任务调度 * PROCESSING：正在处理 * PARTIAL_SUCCEED: 部分成功（模型生成，截图失败） * SUCCEED：成功 * FAILED：失败 * CANCELED：取消
+        任务的状态。 * WAITING：等待任务调度 * PROCESSING：正在处理 * PARTIAL_SUCCEED：部分成功（模型生成，截图失败） * SUCCEED：成功 * FAILED：失败 * CANCELED：取消
 
         :return: The state of this ShowPictureModelingJobResponse.
         :rtype: str
@@ -133,7 +133,7 @@ class ShowPictureModelingJobResponse(SdkResponse):
     def state(self, state):
         """Sets the state of this ShowPictureModelingJobResponse.
 
-        任务的状态。 * WAITING：等待任务调度 * PROCESSING：正在处理 * PARTIAL_SUCCEED: 部分成功（模型生成，截图失败） * SUCCEED：成功 * FAILED：失败 * CANCELED：取消
+        任务的状态。 * WAITING：等待任务调度 * PROCESSING：正在处理 * PARTIAL_SUCCEED：部分成功（模型生成，截图失败） * SUCCEED：成功 * FAILED：失败 * CANCELED：取消
 
         :param state: The state of this ShowPictureModelingJobResponse.
         :type state: str
@@ -144,7 +144,7 @@ class ShowPictureModelingJobResponse(SdkResponse):
     def start_time(self):
         """Gets the start_time of this ShowPictureModelingJobResponse.
 
-        任务开始时间,格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”。
+        任务开始时间，格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”。
 
         :return: The start_time of this ShowPictureModelingJobResponse.
         :rtype: str
@@ -155,7 +155,7 @@ class ShowPictureModelingJobResponse(SdkResponse):
     def start_time(self, start_time):
         """Sets the start_time of this ShowPictureModelingJobResponse.
 
-        任务开始时间,格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”。
+        任务开始时间，格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”。
 
         :param start_time: The start_time of this ShowPictureModelingJobResponse.
         :type start_time: str
@@ -166,7 +166,7 @@ class ShowPictureModelingJobResponse(SdkResponse):
     def end_time(self):
         """Gets the end_time of this ShowPictureModelingJobResponse.
 
-        任务结束时间,格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”。
+        任务结束时间，格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”。
 
         :return: The end_time of this ShowPictureModelingJobResponse.
         :rtype: str
@@ -177,7 +177,7 @@ class ShowPictureModelingJobResponse(SdkResponse):
     def end_time(self, end_time):
         """Sets the end_time of this ShowPictureModelingJobResponse.
 
-        任务结束时间,格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”。
+        任务结束时间，格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”。
 
         :param end_time: The end_time of this ShowPictureModelingJobResponse.
         :type end_time: str

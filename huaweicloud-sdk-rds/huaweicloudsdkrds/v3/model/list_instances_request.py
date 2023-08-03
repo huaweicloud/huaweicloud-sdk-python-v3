@@ -55,7 +55,7 @@ class ListInstancesRequest:
         :type name: str
         :param type: 按照实例类型查询。取值Single、Ha、Replica，分别对应于单实例、主备实例和只读实例。
         :type type: str
-        :param datastore_type: 数据库类型，区分大小写。  - MySQL - PostgreSQL - SQLServer
+        :param datastore_type: 数据库类型，区分大小写。 - MySQL - PostgreSQL - SQLServer - MariaDB
         :type datastore_type: str
         :param vpc_id: 虚拟私有云ID。
         :type vpc_id: str
@@ -196,7 +196,7 @@ class ListInstancesRequest:
     def datastore_type(self):
         """Gets the datastore_type of this ListInstancesRequest.
 
-        数据库类型，区分大小写。  - MySQL - PostgreSQL - SQLServer
+        数据库类型，区分大小写。 - MySQL - PostgreSQL - SQLServer - MariaDB
 
         :return: The datastore_type of this ListInstancesRequest.
         :rtype: str
@@ -207,7 +207,7 @@ class ListInstancesRequest:
     def datastore_type(self, datastore_type):
         """Sets the datastore_type of this ListInstancesRequest.
 
-        数据库类型，区分大小写。  - MySQL - PostgreSQL - SQLServer
+        数据库类型，区分大小写。 - MySQL - PostgreSQL - SQLServer - MariaDB
 
         :param datastore_type: The datastore_type of this ListInstancesRequest.
         :type datastore_type: str

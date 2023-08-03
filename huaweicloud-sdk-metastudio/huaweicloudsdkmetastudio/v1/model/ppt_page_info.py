@@ -37,7 +37,7 @@ class PPTPageInfo:
         :type page_no: int
         :param file_id: 页面对应图片文件ID。
         :type file_id: str
-        :param page_content: 讲解词 (从备注中提取)。
+        :param page_content: 讲解词（从备注中提取）。
         :type page_content: str
         """
         
@@ -103,7 +103,7 @@ class PPTPageInfo:
     def page_content(self):
         """Gets the page_content of this PPTPageInfo.
 
-        讲解词 (从备注中提取)。
+        讲解词（从备注中提取）。
 
         :return: The page_content of this PPTPageInfo.
         :rtype: str
@@ -114,7 +114,7 @@ class PPTPageInfo:
     def page_content(self, page_content):
         """Sets the page_content of this PPTPageInfo.
 
-        讲解词 (从备注中提取)。
+        讲解词（从备注中提取）。
 
         :param page_content: The page_content of this PPTPageInfo.
         :type page_content: str

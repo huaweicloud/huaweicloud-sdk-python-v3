@@ -31,7 +31,6 @@ class IncidentDetailInfoV2:
         'create_time': 'datetime',
         'message_list': 'list[IncidentMessageV2]',
         'incident_satisfaction': 'list[IncidentSatisfactionV2Do]',
-        'is_authorized': 'int',
         'severity_name': 'str',
         'business_ownership': 'int',
         'resolve_time': 'int',
@@ -53,14 +52,13 @@ class IncidentDetailInfoV2:
         'create_time': 'create_time',
         'message_list': 'message_list',
         'incident_satisfaction': 'incident_satisfaction',
-        'is_authorized': 'is_authorized',
         'severity_name': 'severity_name',
         'business_ownership': 'business_ownership',
         'resolve_time': 'resolve_time',
         'ext_info': 'ext_info'
     }
 
-    def __init__(self, xcustomer_id=None, xcustomer_name=None, status=None, judgement=None, incident_id=None, business_type_name=None, incident_type_name=None, customer_id=None, dc_name=None, simple_description=None, source_name=None, create_time=None, message_list=None, incident_satisfaction=None, is_authorized=None, severity_name=None, business_ownership=None, resolve_time=None, ext_info=None):
+    def __init__(self, xcustomer_id=None, xcustomer_name=None, status=None, judgement=None, incident_id=None, business_type_name=None, incident_type_name=None, customer_id=None, dc_name=None, simple_description=None, source_name=None, create_time=None, message_list=None, incident_satisfaction=None, severity_name=None, business_ownership=None, resolve_time=None, ext_info=None):
         """IncidentDetailInfoV2
 
         The model defined in huaweicloud sdk
@@ -93,8 +91,6 @@ class IncidentDetailInfoV2:
         :type message_list: list[:class:`huaweicloudsdkosm.v2.IncidentMessageV2`]
         :param incident_satisfaction: 满意度列表
         :type incident_satisfaction: list[:class:`huaweicloudsdkosm.v2.IncidentSatisfactionV2Do`]
-        :param is_authorized: 是否授权
-        :type is_authorized: int
         :param severity_name: 严重性名称
         :type severity_name: str
         :param business_ownership: 业务归属 0华为云 1BP伙伴 2ISV
@@ -121,7 +117,6 @@ class IncidentDetailInfoV2:
         self._create_time = None
         self._message_list = None
         self._incident_satisfaction = None
-        self._is_authorized = None
         self._severity_name = None
         self._business_ownership = None
         self._resolve_time = None
@@ -145,7 +140,6 @@ class IncidentDetailInfoV2:
         self.create_time = create_time
         self.message_list = message_list
         self.incident_satisfaction = incident_satisfaction
-        self.is_authorized = is_authorized
         if severity_name is not None:
             self.severity_name = severity_name
         if business_ownership is not None:
@@ -462,28 +456,6 @@ class IncidentDetailInfoV2:
         :type incident_satisfaction: list[:class:`huaweicloudsdkosm.v2.IncidentSatisfactionV2Do`]
         """
         self._incident_satisfaction = incident_satisfaction
-
-    @property
-    def is_authorized(self):
-        """Gets the is_authorized of this IncidentDetailInfoV2.
-
-        是否授权
-
-        :return: The is_authorized of this IncidentDetailInfoV2.
-        :rtype: int
-        """
-        return self._is_authorized
-
-    @is_authorized.setter
-    def is_authorized(self, is_authorized):
-        """Sets the is_authorized of this IncidentDetailInfoV2.
-
-        是否授权
-
-        :param is_authorized: The is_authorized of this IncidentDetailInfoV2.
-        :type is_authorized: int
-        """
-        self._is_authorized = is_authorized
 
     @property
     def severity_name(self):

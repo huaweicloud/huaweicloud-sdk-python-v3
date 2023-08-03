@@ -5,7 +5,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class EnlargeVolume:
+class IpFrequencyLimitQuery:
 
     """
     Attributes:
@@ -17,46 +17,79 @@ class EnlargeVolume:
     sensitive_list = []
 
     openapi_types = {
-        'enlarge_volume': 'EnlargeVolumeObject'
+        'status': 'str',
+        'qps': 'int'
     }
 
     attribute_map = {
-        'enlarge_volume': 'enlarge_volume'
+        'status': 'status',
+        'qps': 'qps'
     }
 
-    def __init__(self, enlarge_volume=None):
-        """EnlargeVolume
+    def __init__(self, status=None, qps=None):
+        """IpFrequencyLimitQuery
 
         The model defined in huaweicloud sdk
 
-        :param enlarge_volume: 
-        :type enlarge_volume: :class:`huaweicloudsdkrds.v3.EnlargeVolumeObject`
+        :param status: 状态，on：打开，off：关闭。
+        :type status: str
+        :param qps: 访问阈值，单位：次/秒。
+        :type qps: int
         """
         
         
 
-        self._enlarge_volume = None
+        self._status = None
+        self._qps = None
         self.discriminator = None
 
-        self.enlarge_volume = enlarge_volume
+        self.status = status
+        if qps is not None:
+            self.qps = qps
 
     @property
-    def enlarge_volume(self):
-        """Gets the enlarge_volume of this EnlargeVolume.
+    def status(self):
+        """Gets the status of this IpFrequencyLimitQuery.
 
-        :return: The enlarge_volume of this EnlargeVolume.
-        :rtype: :class:`huaweicloudsdkrds.v3.EnlargeVolumeObject`
+        状态，on：打开，off：关闭。
+
+        :return: The status of this IpFrequencyLimitQuery.
+        :rtype: str
         """
-        return self._enlarge_volume
+        return self._status
 
-    @enlarge_volume.setter
-    def enlarge_volume(self, enlarge_volume):
-        """Sets the enlarge_volume of this EnlargeVolume.
+    @status.setter
+    def status(self, status):
+        """Sets the status of this IpFrequencyLimitQuery.
 
-        :param enlarge_volume: The enlarge_volume of this EnlargeVolume.
-        :type enlarge_volume: :class:`huaweicloudsdkrds.v3.EnlargeVolumeObject`
+        状态，on：打开，off：关闭。
+
+        :param status: The status of this IpFrequencyLimitQuery.
+        :type status: str
         """
-        self._enlarge_volume = enlarge_volume
+        self._status = status
+
+    @property
+    def qps(self):
+        """Gets the qps of this IpFrequencyLimitQuery.
+
+        访问阈值，单位：次/秒。
+
+        :return: The qps of this IpFrequencyLimitQuery.
+        :rtype: int
+        """
+        return self._qps
+
+    @qps.setter
+    def qps(self, qps):
+        """Sets the qps of this IpFrequencyLimitQuery.
+
+        访问阈值，单位：次/秒。
+
+        :param qps: The qps of this IpFrequencyLimitQuery.
+        :type qps: int
+        """
+        self._qps = qps
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -100,7 +133,7 @@ class EnlargeVolume:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, EnlargeVolume):
+        if not isinstance(other, IpFrequencyLimitQuery):
             return False
 
         return self.__dict__ == other.__dict__

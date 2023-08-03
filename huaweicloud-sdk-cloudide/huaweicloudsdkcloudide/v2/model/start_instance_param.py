@@ -33,7 +33,7 @@ class StartInstanceParam:
 
         :param plugin_enable_list: 插件列表
         :type plugin_enable_list: list[str]
-        :param plugin_vars: 插件参数
+        :param plugin_vars: 插件参数，请注意敏感信息保护，若涉及敏感信息，请自行加密
         :type plugin_vars: dict(str, str)
         """
         
@@ -74,7 +74,7 @@ class StartInstanceParam:
     def plugin_vars(self):
         """Gets the plugin_vars of this StartInstanceParam.
 
-        插件参数
+        插件参数，请注意敏感信息保护，若涉及敏感信息，请自行加密
 
         :return: The plugin_vars of this StartInstanceParam.
         :rtype: dict(str, str)
@@ -85,7 +85,7 @@ class StartInstanceParam:
     def plugin_vars(self, plugin_vars):
         """Sets the plugin_vars of this StartInstanceParam.
 
-        插件参数
+        插件参数，请注意敏感信息保护，若涉及敏感信息，请自行加密
 
         :param plugin_vars: The plugin_vars of this StartInstanceParam.
         :type plugin_vars: dict(str, str)

@@ -53,7 +53,7 @@ class ListAimTemplatesRequest:
         :type tpl_name: str
         :param tpl_type: 模板分类。  - public：查公共模板 - private：查个人模板  &gt; 不传查全部模板。 
         :type tpl_type: str
-        :param factory_type: 厂商类型。 - HUAWEI：华为 - Xiaomi：小米 - OPPO：OPPO - MEIZU：魅族 - VIVO：VIVO 
+        :param factory_type: 厂商类型。 - HUAWEI：华为 - XIAOMI：小米 - OPPO：OPPO - MEIZU：魅族 - VIVO：VIVO 
         :type factory_type: list[str]
         :param has_param: 模板是否携带参数。  - true：是 - false：否 
         :type has_param: bool
@@ -174,7 +174,7 @@ class ListAimTemplatesRequest:
     def factory_type(self):
         """Gets the factory_type of this ListAimTemplatesRequest.
 
-        厂商类型。 - HUAWEI：华为 - Xiaomi：小米 - OPPO：OPPO - MEIZU：魅族 - VIVO：VIVO 
+        厂商类型。 - HUAWEI：华为 - XIAOMI：小米 - OPPO：OPPO - MEIZU：魅族 - VIVO：VIVO 
 
         :return: The factory_type of this ListAimTemplatesRequest.
         :rtype: list[str]
@@ -185,7 +185,7 @@ class ListAimTemplatesRequest:
     def factory_type(self, factory_type):
         """Sets the factory_type of this ListAimTemplatesRequest.
 
-        厂商类型。 - HUAWEI：华为 - Xiaomi：小米 - OPPO：OPPO - MEIZU：魅族 - VIVO：VIVO 
+        厂商类型。 - HUAWEI：华为 - XIAOMI：小米 - OPPO：OPPO - MEIZU：魅族 - VIVO：VIVO 
 
         :param factory_type: The factory_type of this ListAimTemplatesRequest.
         :type factory_type: list[str]
