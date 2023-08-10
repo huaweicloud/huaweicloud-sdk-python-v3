@@ -25,6 +25,7 @@ class ComputingResourceFlavorsRsp:
         'min_rate': 'str',
         'max_pps': 'str',
         'sold_out': 'bool',
+        'az': 'str',
         'cpu_detail': 'str',
         'disk_detail': 'str',
         'memory_detail': 'str',
@@ -41,6 +42,7 @@ class ComputingResourceFlavorsRsp:
         'min_rate': 'min_rate',
         'max_pps': 'max_pps',
         'sold_out': 'sold_out',
+        'az': 'az',
         'cpu_detail': 'cpu_detail',
         'disk_detail': 'disk_detail',
         'memory_detail': 'memory_detail',
@@ -48,7 +50,7 @@ class ComputingResourceFlavorsRsp:
         'cpu_arch': 'cpu_arch'
     }
 
-    def __init__(self, code=None, name=None, ram=None, vcpus=None, max_rate=None, min_rate=None, max_pps=None, sold_out=None, cpu_detail=None, disk_detail=None, memory_detail=None, netcard_detail=None, cpu_arch=None):
+    def __init__(self, code=None, name=None, ram=None, vcpus=None, max_rate=None, min_rate=None, max_pps=None, sold_out=None, az=None, cpu_detail=None, disk_detail=None, memory_detail=None, netcard_detail=None, cpu_arch=None):
         """ComputingResourceFlavorsRsp
 
         The model defined in huaweicloud sdk
@@ -69,6 +71,8 @@ class ComputingResourceFlavorsRsp:
         :type max_pps: str
         :param sold_out: 是否售罄
         :type sold_out: bool
+        :param az: 可用区
+        :type az: str
         :param cpu_detail: CPU物理规格描述信息
         :type cpu_detail: str
         :param disk_detail: 磁盘物理规格描述信息
@@ -91,6 +95,7 @@ class ComputingResourceFlavorsRsp:
         self._min_rate = None
         self._max_pps = None
         self._sold_out = None
+        self._az = None
         self._cpu_detail = None
         self._disk_detail = None
         self._memory_detail = None
@@ -109,6 +114,8 @@ class ComputingResourceFlavorsRsp:
         if max_pps is not None:
             self.max_pps = max_pps
         self.sold_out = sold_out
+        if az is not None:
+            self.az = az
         if cpu_detail is not None:
             self.cpu_detail = cpu_detail
         if disk_detail is not None:
@@ -295,6 +302,28 @@ class ComputingResourceFlavorsRsp:
         :type sold_out: bool
         """
         self._sold_out = sold_out
+
+    @property
+    def az(self):
+        """Gets the az of this ComputingResourceFlavorsRsp.
+
+        可用区
+
+        :return: The az of this ComputingResourceFlavorsRsp.
+        :rtype: str
+        """
+        return self._az
+
+    @az.setter
+    def az(self, az):
+        """Sets the az of this ComputingResourceFlavorsRsp.
+
+        可用区
+
+        :param az: The az of this ComputingResourceFlavorsRsp.
+        :type az: str
+        """
+        self._az = az
 
     @property
     def cpu_detail(self):

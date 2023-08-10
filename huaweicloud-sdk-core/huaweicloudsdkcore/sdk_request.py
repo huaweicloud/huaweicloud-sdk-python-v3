@@ -21,7 +21,7 @@
 
 class SdkRequest(object):
     def __init__(self, method='GET', schema=None, host=None, resource_path=None, uri=None, query_params=None,
-                 header_params=None, body=None, stream=False):
+                 header_params=None, body=None, stream=False, signing_algorithm=None):
         self.method = method
         self.schema = schema
         self.host = host
@@ -31,3 +31,4 @@ class SdkRequest(object):
         self.header_params = header_params
         self.body = body
         self.stream = stream
+        self.signing_algorithm = signing_algorithm

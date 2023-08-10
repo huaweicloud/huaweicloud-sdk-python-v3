@@ -19,23 +19,27 @@ class ExecuteJobResponse(SdkResponse):
 
     openapi_types = {
         'id': 'str',
+        'max_platform_flavor': 'TaskResourceDto',
         'app_infos': 'list[AppFilterDto]',
         'job_info': 'JobFilterDto'
     }
 
     attribute_map = {
         'id': 'id',
+        'max_platform_flavor': 'max_platform_flavor',
         'app_infos': 'app_infos',
         'job_info': 'job_info'
     }
 
-    def __init__(self, id=None, app_infos=None, job_info=None):
+    def __init__(self, id=None, max_platform_flavor=None, app_infos=None, job_info=None):
         """ExecuteJobResponse
 
         The model defined in huaweicloud sdk
 
         :param id: 作业id
         :type id: str
+        :param max_platform_flavor: 
+        :type max_platform_flavor: :class:`huaweicloudsdkeihealth.v1.TaskResourceDto`
         :param app_infos: 筛选后的app集合
         :type app_infos: list[:class:`huaweicloudsdkeihealth.v1.AppFilterDto`]
         :param job_info: 
@@ -45,12 +49,15 @@ class ExecuteJobResponse(SdkResponse):
         super(ExecuteJobResponse, self).__init__()
 
         self._id = None
+        self._max_platform_flavor = None
         self._app_infos = None
         self._job_info = None
         self.discriminator = None
 
         if id is not None:
             self.id = id
+        if max_platform_flavor is not None:
+            self.max_platform_flavor = max_platform_flavor
         if app_infos is not None:
             self.app_infos = app_infos
         if job_info is not None:
@@ -77,6 +84,24 @@ class ExecuteJobResponse(SdkResponse):
         :type id: str
         """
         self._id = id
+
+    @property
+    def max_platform_flavor(self):
+        """Gets the max_platform_flavor of this ExecuteJobResponse.
+
+        :return: The max_platform_flavor of this ExecuteJobResponse.
+        :rtype: :class:`huaweicloudsdkeihealth.v1.TaskResourceDto`
+        """
+        return self._max_platform_flavor
+
+    @max_platform_flavor.setter
+    def max_platform_flavor(self, max_platform_flavor):
+        """Sets the max_platform_flavor of this ExecuteJobResponse.
+
+        :param max_platform_flavor: The max_platform_flavor of this ExecuteJobResponse.
+        :type max_platform_flavor: :class:`huaweicloudsdkeihealth.v1.TaskResourceDto`
+        """
+        self._max_platform_flavor = max_platform_flavor
 
     @property
     def app_infos(self):

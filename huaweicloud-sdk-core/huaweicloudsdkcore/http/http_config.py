@@ -20,12 +20,14 @@
 
 import six
 
+from huaweicloudsdkcore.signer.algorithm import SigningAlgorithm
+
 
 class HttpConfig(object):
     def __init__(self, proxy_protocol=None, proxy_host=None, proxy_port=None, proxy_user=None, proxy_password=None,
                  ignore_ssl_verification=False, ssl_ca_cert=None, cert_file=None, key_file=None, timeout=(60, 120),
                  retry_times=0, pool_connections=10, pool_maxsize=10, allow_redirects=False,
-                 ignore_content_type_for_get_request=False):
+                 ignore_content_type_for_get_request=False, signing_algorithm=SigningAlgorithm.get_default()):
         """
         :param proxy_protocol(optional) : proxy protocol, http or https
         :type proxy_protocol: str
@@ -36,10 +38,10 @@ class HttpConfig(object):
         :param proxy_port(optional) : port of proxy server
         :type proxy_port: str
 
-        :param proxy_user(optional) : user name used for proxy authentication
+        :param proxy_user(optional) : username used for proxy authentication
         :type proxy_user: str
 
-        :param proxy_password(optional) : user name used for proxy authentication
+        :param proxy_password(optional) : username used for proxy authentication
         :type proxy_password: str
 
         :param ignore_ssl_verification: whether skip SSL certificate validation while sending https request,
@@ -79,6 +81,10 @@ class HttpConfig(object):
         :param ignore_content_type_for_get_request: Ignore the request header Content-Type when sending a GET request,
          default, value is False
         :type ignore_ssl_verification: bool
+
+        :param signing_algorithm: signing algorithm of request
+         default, value is HMAC_SHA256
+        :type signing_algorithm: SigningAlgorithm
         """
         self.proxy_protocol = proxy_protocol
         self.proxy_host = proxy_host
@@ -98,6 +104,7 @@ class HttpConfig(object):
         self.pool_connections = pool_connections
         self.pool_maxsize = pool_maxsize
         self.ignore_content_type_for_get_request = ignore_content_type_for_get_request
+        self.signing_algorithm = signing_algorithm
 
     def get_proxy(self):
         if self.proxy_host is None:

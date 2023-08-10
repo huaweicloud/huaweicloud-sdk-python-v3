@@ -23,7 +23,8 @@ class MyanmarIdcardRequestBody:
         'return_confidence': 'bool',
         'return_portrait_image': 'bool',
         'return_portrait_location': 'bool',
-        'return_idcard_type': 'bool'
+        'return_idcard_type': 'bool',
+        'return_translation': 'bool'
     }
 
     attribute_map = {
@@ -33,10 +34,11 @@ class MyanmarIdcardRequestBody:
         'return_confidence': 'return_confidence',
         'return_portrait_image': 'return_portrait_image',
         'return_portrait_location': 'return_portrait_location',
-        'return_idcard_type': 'return_idcard_type'
+        'return_idcard_type': 'return_idcard_type',
+        'return_translation': 'return_translation'
     }
 
-    def __init__(self, image=None, url=None, convert_unicode=None, return_confidence=None, return_portrait_image=None, return_portrait_location=None, return_idcard_type=None):
+    def __init__(self, image=None, url=None, convert_unicode=None, return_confidence=None, return_portrait_image=None, return_portrait_location=None, return_idcard_type=None, return_translation=None):
         """MyanmarIdcardRequestBody
 
         The model defined in huaweicloud sdk
@@ -55,6 +57,8 @@ class MyanmarIdcardRequestBody:
         :type return_portrait_location: bool
         :param return_idcard_type: 是否返回身份证类型的开关，可选值如下所示： - true：返回身份证的类型，类型包括身份证原件以及身份证复印件 - false：不返回身份证的类型 未传入该参数时默认为false，即不返回身份证头像照片的 base64 编码。 
         :type return_idcard_type: bool
+        :param return_translation: 是否返回转译信息的开关，可选值如下所示： - true: 返回转译信息。 - false：不返回转译信息。 
+        :type return_translation: bool
         """
         
         
@@ -66,6 +70,7 @@ class MyanmarIdcardRequestBody:
         self._return_portrait_image = None
         self._return_portrait_location = None
         self._return_idcard_type = None
+        self._return_translation = None
         self.discriminator = None
 
         if image is not None:
@@ -82,6 +87,8 @@ class MyanmarIdcardRequestBody:
             self.return_portrait_location = return_portrait_location
         if return_idcard_type is not None:
             self.return_idcard_type = return_idcard_type
+        if return_translation is not None:
+            self.return_translation = return_translation
 
     @property
     def image(self):
@@ -236,6 +243,28 @@ class MyanmarIdcardRequestBody:
         :type return_idcard_type: bool
         """
         self._return_idcard_type = return_idcard_type
+
+    @property
+    def return_translation(self):
+        """Gets the return_translation of this MyanmarIdcardRequestBody.
+
+        是否返回转译信息的开关，可选值如下所示： - true: 返回转译信息。 - false：不返回转译信息。 
+
+        :return: The return_translation of this MyanmarIdcardRequestBody.
+        :rtype: bool
+        """
+        return self._return_translation
+
+    @return_translation.setter
+    def return_translation(self, return_translation):
+        """Sets the return_translation of this MyanmarIdcardRequestBody.
+
+        是否返回转译信息的开关，可选值如下所示： - true: 返回转译信息。 - false：不返回转译信息。 
+
+        :param return_translation: The return_translation of this MyanmarIdcardRequestBody.
+        :type return_translation: bool
+        """
+        self._return_translation = return_translation
 
     def to_dict(self):
         """Returns the model properties as a dict"""

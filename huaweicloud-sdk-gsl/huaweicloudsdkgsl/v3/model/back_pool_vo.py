@@ -75,7 +75,7 @@ class BackPoolVO:
         :type expired_time: datetime
         :param billing_cycle: 账期
         :type billing_cycle: str
-        :param pool_status: 流量池状态: 2-在用,-1-欠费停用
+        :param pool_status: 流量池状态: 2-在用,-1-已停用,-2已废弃
         :type pool_status: int
         :param flow_used: 已用流量(查询账期所在月份), 单位MB
         :type flow_used: float
@@ -311,7 +311,7 @@ class BackPoolVO:
     def pool_status(self):
         """Gets the pool_status of this BackPoolVO.
 
-        流量池状态: 2-在用,-1-欠费停用
+        流量池状态: 2-在用,-1-已停用,-2已废弃
 
         :return: The pool_status of this BackPoolVO.
         :rtype: int
@@ -322,7 +322,7 @@ class BackPoolVO:
     def pool_status(self, pool_status):
         """Sets the pool_status of this BackPoolVO.
 
-        流量池状态: 2-在用,-1-欠费停用
+        流量池状态: 2-在用,-1-已停用,-2已废弃
 
         :param pool_status: The pool_status of this BackPoolVO.
         :type pool_status: int

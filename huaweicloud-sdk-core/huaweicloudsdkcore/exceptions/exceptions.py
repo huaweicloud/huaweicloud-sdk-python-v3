@@ -22,47 +22,102 @@ import six
 
 
 class SdkException(Exception):
-    def __init__(self):
+    def __init__(self, error_msg):
         """
         The base exception class.
         """
-        super(SdkException).__init__()
+        super(SdkException, self).__init__()
+        self.error_msg = error_msg
+
+    def __str__(self):
+        return "%s - %s" % (self.__class__.__name__, self.error_msg)
 
 
 class ConnectionException(SdkException):
-    def __init__(self, err_message):
+    def __init__(self, error_msg):
         """
         The base exception class of connection exceptions.
         """
-        super(ConnectionException, self).__init__()
-        self.err_message = err_message
-
-    def __str__(self):
-        return "ConnectionException - %s" % self.err_message
+        super(ConnectionException, self).__init__(error_msg)
 
 
 class HostUnreachableException(ConnectionException):
-    def __init__(self, err_message):
+    def __init__(self, error_msg):
         """
         Host Unreachable Exception
         """
-        super(HostUnreachableException, self).__init__(err_message)
-        self.err_message = err_message
-
-    def __str__(self):
-        return "HostUnreachableException - %s" % self.err_message
+        super(HostUnreachableException, self).__init__(error_msg)
 
 
 class SslHandShakeException(ConnectionException):
-    def __init__(self, err_message):
+    def __init__(self, error_msg):
         """
         Ssl HandShake Exception
         """
-        super(SslHandShakeException, self).__init__(err_message)
-        self.err_message = err_message
+        super(SslHandShakeException, self).__init__(error_msg)
+
+
+class ServiceResponseException(SdkException):
+    def __init__(self, status_code, sdk_error):
+        """
+        The base exception class of service response exceptions.
+        """
+        super(ServiceResponseException, self).__init__(sdk_error.error_msg)
+        self.status_code = status_code
+        self.error_code = sdk_error.error_code
+        self.request_id = sdk_error.request_id
 
     def __str__(self):
-        return "SslHandShakeException - %s" % self.err_message
+        return "%s - {status_code:%s,request_id:%s,error_code:%s,error_msg:%s }" % (
+            self.__class__.__name__, self.status_code, self.request_id, self.error_code, self.error_msg)
+
+
+class ClientRequestException(ServiceResponseException):
+    def __init__(self, status_code, sdk_error):
+        """
+        Client Request Exception
+        """
+        super(ClientRequestException, self).__init__(status_code, sdk_error)
+
+
+class ServerResponseException(ServiceResponseException):
+    def __init__(self, status_code, sdk_error):
+        """
+        Server Response Exception
+        """
+        super(ServerResponseException, self).__init__(status_code, sdk_error)
+
+
+class RequestTimeoutException(SdkException):
+    def __init__(self, error_msg):
+        """
+        The base exception class of timeout exceptions.
+        """
+        super(RequestTimeoutException, self).__init__(error_msg)
+
+
+class CallTimeoutException(RequestTimeoutException):
+    def __init__(self, error_msg):
+        """
+        Call Timeout Exception
+        """
+        super(CallTimeoutException, self).__init__(error_msg)
+
+
+class RetryOutageException(RequestTimeoutException):
+    def __init__(self, error_msg):
+        """
+        Retry Outage Exception
+        """
+        super(RetryOutageException, self).__init__(error_msg)
+
+
+class SdkError(object):
+    def __init__(self, request_id=None, error_code=None, error_msg=None, encoded_authorization_message=None):
+        self.error_msg = error_msg
+        self.error_code = error_code
+        self.request_id = request_id
+        self.encoded_authorization_message = encoded_authorization_message
 
 
 def render_path(path_to_item):
@@ -138,95 +193,3 @@ class ApiKeyError(KeyError):
         if path_to_item:
             full_msg = "%s at %s" % (msg, render_path(path_to_item))
         super(ApiKeyError, self).__init__(full_msg)
-
-
-class ServiceResponseException(SdkException):
-    def __init__(self, status_code, sdk_error):
-        """
-        The base exception class of service response exceptions.
-        """
-        super(ServiceResponseException, self).__init__()
-        self.status_code = status_code
-        self.error_msg = sdk_error.error_msg
-        self.error_code = sdk_error.error_code
-        self.request_id = sdk_error.request_id
-
-    def __str__(self):
-        return "ServiceResponseException - {status_code:%s,request_id:%s,error_code:%s,error_msg:%s }" % (
-            self.status_code, self.request_id, self.error_code, self.error_msg)
-
-
-class ClientRequestException(ServiceResponseException):
-    def __init__(self, status_code, sdk_error):
-        """
-        Client Request Exception
-        """
-        super(ClientRequestException, self).__init__(status_code, sdk_error)
-        self.status_code = status_code
-        self.error_msg = sdk_error.error_msg
-        self.error_code = sdk_error.error_code
-        self.request_id = sdk_error.request_id
-
-    def __str__(self):
-        return "ClientRequestException - {status_code:%s,request_id:%s,error_code:%s,error_msg:%s }" % (
-            self.status_code, self.request_id, self.error_code, self.error_msg)
-
-
-class ServerResponseException(ServiceResponseException):
-    def __init__(self, status_code, sdk_error):
-        """
-        Server Response Exception
-        """
-        super(ServerResponseException, self).__init__(status_code, sdk_error)
-        self.status_code = status_code
-        self.error_msg = sdk_error.error_msg
-        self.error_code = sdk_error.error_code
-        self.request_id = sdk_error.request_id
-
-    def __str__(self):
-        return "ServerResponseException - {status_code:%s,request_id:%s,error_code:%s,error_msg:%s }" % (
-            self.status_code, self.request_id, self.error_code, self.error_msg)
-
-
-class RequestTimeoutException(SdkException):
-    def __init__(self, err_message):
-        """
-        The base exception class of timeout exceptions.
-        """
-        super(RequestTimeoutException, self).__init__()
-        self.err_message = err_message
-
-    def __str__(self):
-        return "RequestTimeoutException - %s" % self.err_message
-
-
-class CallTimeoutException(RequestTimeoutException):
-    def __init__(self, err_message):
-        """
-        Call Timeout Exception
-        """
-        super(CallTimeoutException, self).__init__(err_message)
-        self.err_message = err_message
-
-    def __str__(self):
-        return "CallTimeoutException - %s" % self.err_message
-
-
-class RetryOutageException(RequestTimeoutException):
-    def __init__(self, err_message):
-        """
-        Retry Outage Exception
-        """
-        super(RetryOutageException, self).__init__(err_message)
-        self.err_message = err_message
-
-    def __str__(self):
-        return "RetryOutageException - %s" % self.err_message
-
-
-class SdkError(object):
-    def __init__(self, request_id=None, error_code=None, error_msg=None, encoded_authorization_message=None):
-        self.error_msg = error_msg
-        self.error_code = error_code
-        self.request_id = request_id
-        self.encoded_authorization_message = encoded_authorization_message

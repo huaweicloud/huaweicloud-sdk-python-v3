@@ -24,207 +24,6 @@ class GslAsyncClient(Client):
 
         return ClientBuilder(clazz)
 
-    def list_back_pool_members_async(self, request):
-        """查询后向流量池成员列表
-
-        查询后向流量池成员列表
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ListBackPoolMembers
-        :type request: :class:`huaweicloudsdkgsl.v3.ListBackPoolMembersRequest`
-        :rtype: :class:`huaweicloudsdkgsl.v3.ListBackPoolMembersResponse`
-        """
-        return self._list_back_pool_members_with_http_info(request)
-
-    def _list_back_pool_members_with_http_info(self, request):
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'back_pool_id' in local_var_params:
-            path_params['back_pool_id'] = local_var_params['back_pool_id']
-
-        query_params = []
-        if 'cid' in local_var_params:
-            query_params.append(('cid', local_var_params['cid']))
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-        if 'offset' in local_var_params:
-            query_params.append(('offset', local_var_params['offset']))
-        if 'billing_cycle' in local_var_params:
-            query_params.append(('billing_cycle', local_var_params['billing_cycle']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v1/back-pools/{back_pool_id}/members',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListBackPoolMembersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-    def list_back_pools_async(self, request):
-        """查询后向流量池列表
-
-        查询后向流量池列表
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ListBackPools
-        :type request: :class:`huaweicloudsdkgsl.v3.ListBackPoolsRequest`
-        :rtype: :class:`huaweicloudsdkgsl.v3.ListBackPoolsResponse`
-        """
-        return self._list_back_pools_with_http_info(request)
-
-    def _list_back_pools_with_http_info(self, request):
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'pool_name' in local_var_params:
-            query_params.append(('pool_name', local_var_params['pool_name']))
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-        if 'offset' in local_var_params:
-            query_params.append(('offset', local_var_params['offset']))
-        if 'billing_cycle' in local_var_params:
-            query_params.append(('billing_cycle', local_var_params['billing_cycle']))
-        if 'all_billing_cycle' in local_var_params:
-            query_params.append(('all_billing_cycle', local_var_params['all_billing_cycle']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v1/back-pools',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListBackPoolsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-    def list_pro_price_plans_async(self, request):
-        """查询套餐列表信息
-
-        查询套餐列表信息
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ListProPricePlans
-        :type request: :class:`huaweicloudsdkgsl.v3.ListProPricePlansRequest`
-        :rtype: :class:`huaweicloudsdkgsl.v3.ListProPricePlansResponse`
-        """
-        return self._list_pro_price_plans_with_http_info(request)
-
-    def _list_pro_price_plans_with_http_info(self, request):
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-        if 'offset' in local_var_params:
-            query_params.append(('offset', local_var_params['offset']))
-        if 'main_search_key' in local_var_params:
-            query_params.append(('main_search_key', local_var_params['main_search_key']))
-        if 'flow_total' in local_var_params:
-            query_params.append(('flow_total', local_var_params['flow_total']))
-        if 'network_type' in local_var_params:
-            query_params.append(('network_type', local_var_params['network_type']))
-        if 'location_type' in local_var_params:
-            query_params.append(('location_type', local_var_params['location_type']))
-        if 'carrier_type' in local_var_params:
-            query_params.append(('carrier_type', local_var_params['carrier_type']))
-        if 'country_type' in local_var_params:
-            query_params.append(('country_type', local_var_params['country_type']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v1/price-plans',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListProPricePlansResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
     def batch_set_attributes_async(self, request):
         """批量设置自定义属性接口
 
@@ -575,10 +374,211 @@ class GslAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_back_pool_members_async(self, request):
+        """查询后向流量池成员列表
+
+        查询后向流量池成员列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListBackPoolMembers
+        :type request: :class:`huaweicloudsdkgsl.v3.ListBackPoolMembersRequest`
+        :rtype: :class:`huaweicloudsdkgsl.v3.ListBackPoolMembersResponse`
+        """
+        return self._list_back_pool_members_with_http_info(request)
+
+    def _list_back_pool_members_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'back_pool_id' in local_var_params:
+            path_params['back_pool_id'] = local_var_params['back_pool_id']
+
+        query_params = []
+        if 'cid' in local_var_params:
+            query_params.append(('cid', local_var_params['cid']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'billing_cycle' in local_var_params:
+            query_params.append(('billing_cycle', local_var_params['billing_cycle']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/back-pools/{back_pool_id}/members',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListBackPoolMembersResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_back_pools_async(self, request):
+        """查询后向流量池列表
+
+        查询后向流量池列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListBackPools
+        :type request: :class:`huaweicloudsdkgsl.v3.ListBackPoolsRequest`
+        :rtype: :class:`huaweicloudsdkgsl.v3.ListBackPoolsResponse`
+        """
+        return self._list_back_pools_with_http_info(request)
+
+    def _list_back_pools_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'pool_name' in local_var_params:
+            query_params.append(('pool_name', local_var_params['pool_name']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'billing_cycle' in local_var_params:
+            query_params.append(('billing_cycle', local_var_params['billing_cycle']))
+        if 'all_billing_cycle' in local_var_params:
+            query_params.append(('all_billing_cycle', local_var_params['all_billing_cycle']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/back-pools',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListBackPoolsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_pro_price_plans_async(self, request):
+        """查询套餐列表信息
+
+        查询套餐列表信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListProPricePlans
+        :type request: :class:`huaweicloudsdkgsl.v3.ListProPricePlansRequest`
+        :rtype: :class:`huaweicloudsdkgsl.v3.ListProPricePlansResponse`
+        """
+        return self._list_pro_price_plans_with_http_info(request)
+
+    def _list_pro_price_plans_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'main_search_key' in local_var_params:
+            query_params.append(('main_search_key', local_var_params['main_search_key']))
+        if 'flow_total' in local_var_params:
+            query_params.append(('flow_total', local_var_params['flow_total']))
+        if 'network_type' in local_var_params:
+            query_params.append(('network_type', local_var_params['network_type']))
+        if 'location_type' in local_var_params:
+            query_params.append(('location_type', local_var_params['location_type']))
+        if 'carrier_type' in local_var_params:
+            query_params.append(('carrier_type', local_var_params['carrier_type']))
+        if 'country_type' in local_var_params:
+            query_params.append(('country_type', local_var_params['country_type']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/price-plans',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListProPricePlansResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def delete_real_name_async(self, request):
         """清除实名认证信息
 
-        清除实名认证信息，接口只支持电信卡调用
+        清除实名认证信息，接口仅支持中国电信卡调用。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -802,7 +802,7 @@ class GslAsyncClient(Client):
     def register_imei_async(self, request):
         """SIM卡机卡重绑
 
-        支持固定机卡重绑(需要上传IMEI，将SIM卡绑定到指定IMEI的设备)和普通机卡重绑(会清除之前绑定的设备,将SIM卡绑定到正在使用的设备)，单卡每月只允许重绑2次，接口只支持电信卡调用。
+        支持固定机卡重绑(需要上传IMEI，将SIM卡绑定到指定IMEI的设备)和普通机卡重绑(会清除之前绑定的设备,将SIM卡绑定到正在使用的设备)，接口仅支持中国电信卡，中国移动卡调用。中国电信卡单卡每月只允许重绑2次，中国移动卡仅支持普通机卡重绑。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -918,9 +918,9 @@ class GslAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def set_exceed_cut_net_async(self, request):
-        """SIM卡达量断网/恢复在用
+        """SIM卡达量断网/取消达量断网
 
-        SIM卡达量断网/恢复在用,只支持电信卡。
+        SIM卡达量断网/取消达量断网，接口仅支持中国电信的卡以及中国联通、中国移动的组池卡调用。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -979,7 +979,7 @@ class GslAsyncClient(Client):
     def set_speed_value_async(self, request):
         """实体卡限速
 
-        实体卡限速接口,支持电信和联通实体卡调用。联通卡需要个人实名认证后才能使用限速功能。
+        实体卡限速接口，接口仅支持中国电信和中国联通实体卡调用。中国联通卡需要个人实名认证后才能使用限速功能。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1095,7 +1095,7 @@ class GslAsyncClient(Client):
     def show_real_named_async(self, request):
         """查询SIM卡实名认证信息
 
-        实时查询SIM卡实名认证信息。
+        实时查询SIM卡实名认证信息，接口仅支持查询中国大陆运营商卡片的实名认证信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1209,7 +1209,7 @@ class GslAsyncClient(Client):
     def start_stop_net_async(self, request):
         """SIM卡申请断网/恢复在用
 
-        SIM卡申请断网/恢复在用,只支持电信卡。
+        SIM卡申请断网/恢复在用，接口仅支持中国电信卡调用。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1811,7 +1811,7 @@ class GslAsyncClient(Client):
     def list_sms_details_async(self, request):
         """短信发送详情
 
-        短信发送详情
+        短信发送详情，接口仅支持开通短信套餐的中国移动与中国电信卡调用
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1876,7 +1876,7 @@ class GslAsyncClient(Client):
     def send_sms_async(self, request):
         """发送短信
 
-        发送短信
+        发送短信，接口仅支持开通短信套餐的中国移动与中国电信卡调用。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1925,6 +1925,140 @@ class GslAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='SendSmsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_work_order_details_async(self, request):
+        """分页查询业务受理明细
+
+        分页查询业务受理明细
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListWorkOrderDetails
+        :type request: :class:`huaweicloudsdkgsl.v3.ListWorkOrderDetailsRequest`
+        :rtype: :class:`huaweicloudsdkgsl.v3.ListWorkOrderDetailsResponse`
+        """
+        return self._list_work_order_details_with_http_info(request)
+
+    def _list_work_order_details_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'work_order_id' in local_var_params:
+            path_params['work_order_id'] = local_var_params['work_order_id']
+
+        query_params = []
+        if 'main_search_key' in local_var_params:
+            query_params.append(('main_search_key', local_var_params['main_search_key']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'sim_type' in local_var_params:
+            query_params.append(('sim_type', local_var_params['sim_type']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/work-orders/{work_order_id}/details',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListWorkOrderDetailsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_work_orders_async(self, request):
+        """分页查询业务受理单
+
+        分页查询业务受理单
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListWorkOrders
+        :type request: :class:`huaweicloudsdkgsl.v3.ListWorkOrdersRequest`
+        :rtype: :class:`huaweicloudsdkgsl.v3.ListWorkOrdersResponse`
+        """
+        return self._list_work_orders_with_http_info(request)
+
+    def _list_work_orders_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'main_search_key' in local_var_params:
+            query_params.append(('main_search_key', local_var_params['main_search_key']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'sim_type' in local_var_params:
+            query_params.append(('sim_type', local_var_params['sim_type']))
+        if 'work_order_type' in local_var_params:
+            query_params.append(('work_order_type', local_var_params['work_order_type']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/work-orders',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListWorkOrdersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

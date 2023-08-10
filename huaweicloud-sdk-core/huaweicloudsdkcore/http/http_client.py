@@ -36,13 +36,9 @@ class HttpClient(object):
         self._logger = logger
         self._exception_handler = exception_handler
         self._http_handler = http_handler
-
-        self._timeout = config.timeout
+        self._config = config
         self._proxy = config.get_proxy()
-        self._retry_times = config.retry_times
-        self._pool_connections = config.pool_connections
-        self._pool_maxsize = config.pool_maxsize
-        self.allow_redirects = config.allow_redirects
+
         if config.ssl_ca_cert is not None:
             self._verify = config.ssl_ca_cert if not config.ignore_ssl_verification else config.ignore_ssl_verification
         else:
@@ -59,8 +55,9 @@ class HttpClient(object):
 
     def _init_session(self):
         sdk_session = requests.Session()
-        sdk_adapter = HTTPAdapter(pool_connections=self._pool_connections, pool_maxsize=self._pool_maxsize,
-                                  max_retries=Retry(total=self._retry_times, status_forcelist=self._retry_status_list))
+        retry = Retry(total=self._config.retry_times, status_forcelist=self._retry_status_list)
+        sdk_adapter = HTTPAdapter(pool_connections=self._config.pool_connections,
+                                  pool_maxsize=self._config.pool_maxsize, max_retries=retry)
         sdk_session.mount('https://', sdk_adapter)
         sdk_session.mount('http://', sdk_adapter)
         return sdk_session
@@ -68,6 +65,10 @@ class HttpClient(object):
     @property
     def executor(self):
         return self._executor
+
+    @property
+    def config(self):
+        return self._config
 
     def do_request_sync(self, request):
         invoke = getattr(self._session, request.method.lower())
@@ -78,14 +79,14 @@ class HttpClient(object):
             url = "%s://%s%s" % (request.schema, request.host, request.uri)
             response = invoke(
                 url,
-                timeout=self._timeout,
+                timeout=self._config.timeout,
                 headers=request.header_params,
                 proxies=self._proxy,
                 verify=self._verify,
                 cert=self._cert,
                 data=request.body,
                 stream=request.stream,
-                allow_redirects=self.allow_redirects
+                allow_redirects=self._config.allow_redirects
             )
         except ConnectionError as connectionError:
             for each in connectionError.args:
@@ -110,14 +111,14 @@ class HttpClient(object):
 
         future = fun(
             "%s://%s%s" % (request.schema, request.host, request.uri),
-            timeout=self._timeout,
+            timeout=self._config.timeout,
             headers=request.header_params,
             proxies=self._proxy,
             verify=self._verify,
             cert=self._cert,
             data=request.body,
             stream=request.stream,
-            allow_redirects=self.allow_redirects,
+            allow_redirects=self._config.allow_redirects,
             hooks={'response': hooks}
         )
         return future

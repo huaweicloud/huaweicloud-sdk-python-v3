@@ -43,7 +43,7 @@ class CreateUserReq:
 
         :param name: 用户名，长度5~31之间，首位不能为数字，特殊字符只能包含下划线“_”、中划线“-”和空格
         :type name: str
-        :param password: 用户密码，在8-32位之间支持用户自定义密码长度，至少包含以下四种字符中的三种： 大写字母、小写字母、数字和特殊字符。
+        :param password: 用户密码，在8-32位之间支持用户自定义密码长度，至少包含以下四种字符中的两种： 大写字母、小写字母、数字和特殊字符。
         :type password: str
         :param role: 角色类型：管理员(ADMIN)、操作者(OPERATOR)
         :type role: str
@@ -106,7 +106,7 @@ class CreateUserReq:
     def password(self):
         """Gets the password of this CreateUserReq.
 
-        用户密码，在8-32位之间支持用户自定义密码长度，至少包含以下四种字符中的三种： 大写字母、小写字母、数字和特殊字符。
+        用户密码，在8-32位之间支持用户自定义密码长度，至少包含以下四种字符中的两种： 大写字母、小写字母、数字和特殊字符。
 
         :return: The password of this CreateUserReq.
         :rtype: str
@@ -117,7 +117,7 @@ class CreateUserReq:
     def password(self, password):
         """Sets the password of this CreateUserReq.
 
-        用户密码，在8-32位之间支持用户自定义密码长度，至少包含以下四种字符中的三种： 大写字母、小写字母、数字和特殊字符。
+        用户密码，在8-32位之间支持用户自定义密码长度，至少包含以下四种字符中的两种： 大写字母、小写字母、数字和特殊字符。
 
         :param password: The password of this CreateUserReq.
         :type password: str

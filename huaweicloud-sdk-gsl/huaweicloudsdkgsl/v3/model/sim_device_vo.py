@@ -169,9 +169,9 @@ class SimDeviceVO:
         :type customer_attribute6: str
         :param real_named: 是否已实名认证: true表示是，false表示否，系统SIM卡实名认证状态非实时。
         :type real_named: bool
-        :param cut_net_flag: 是否单独断网 true:断网，false:未断网 （当前仅电信卡支持）
+        :param cut_net_flag: 是否单独断网 true:断网，false:未断网 （当前只支持联通、移动的组池卡，电信卡不限制）
         :type cut_net_flag: bool
-        :param exceed_cut_net_flag: 是否达量断网 true:达量断网，false:未达量断网 （当前仅电信卡支持）
+        :param exceed_cut_net_flag: 是否达量断网 true:达量断网，false:未达量断网 （当前只支持联通、移动的组池卡，电信卡不限制）
         :type exceed_cut_net_flag: bool
         :param exceed_cut_net_quota: 达量断网阈值（单位MB 当前仅电信卡支持）
         :type exceed_cut_net_quota: int
@@ -1030,7 +1030,7 @@ class SimDeviceVO:
     def cut_net_flag(self):
         """Gets the cut_net_flag of this SimDeviceVO.
 
-        是否单独断网 true:断网，false:未断网 （当前仅电信卡支持）
+        是否单独断网 true:断网，false:未断网 （当前只支持联通、移动的组池卡，电信卡不限制）
 
         :return: The cut_net_flag of this SimDeviceVO.
         :rtype: bool
@@ -1041,7 +1041,7 @@ class SimDeviceVO:
     def cut_net_flag(self, cut_net_flag):
         """Sets the cut_net_flag of this SimDeviceVO.
 
-        是否单独断网 true:断网，false:未断网 （当前仅电信卡支持）
+        是否单独断网 true:断网，false:未断网 （当前只支持联通、移动的组池卡，电信卡不限制）
 
         :param cut_net_flag: The cut_net_flag of this SimDeviceVO.
         :type cut_net_flag: bool
@@ -1052,7 +1052,7 @@ class SimDeviceVO:
     def exceed_cut_net_flag(self):
         """Gets the exceed_cut_net_flag of this SimDeviceVO.
 
-        是否达量断网 true:达量断网，false:未达量断网 （当前仅电信卡支持）
+        是否达量断网 true:达量断网，false:未达量断网 （当前只支持联通、移动的组池卡，电信卡不限制）
 
         :return: The exceed_cut_net_flag of this SimDeviceVO.
         :rtype: bool
@@ -1063,7 +1063,7 @@ class SimDeviceVO:
     def exceed_cut_net_flag(self, exceed_cut_net_flag):
         """Sets the exceed_cut_net_flag of this SimDeviceVO.
 
-        是否达量断网 true:达量断网，false:未达量断网 （当前仅电信卡支持）
+        是否达量断网 true:达量断网，false:未达量断网 （当前只支持联通、移动的组池卡，电信卡不限制）
 
         :param exceed_cut_net_flag: The exceed_cut_net_flag of this SimDeviceVO.
         :type exceed_cut_net_flag: bool

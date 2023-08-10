@@ -17,28 +17,35 @@ class ModifyProxyConsistRequest:
     sensitive_list = []
 
     openapi_types = {
-        'session_consistence': 'str'
+        'session_consistence': 'str',
+        'consistence_mode': 'str'
     }
 
     attribute_map = {
-        'session_consistence': 'session_consistence'
+        'session_consistence': 'session_consistence',
+        'consistence_mode': 'consistence_mode'
     }
 
-    def __init__(self, session_consistence=None):
+    def __init__(self, session_consistence=None, consistence_mode=None):
         """ModifyProxyConsistRequest
 
         The model defined in huaweicloud sdk
 
         :param session_consistence: 会话一致性。 - 取值\&quot;true\&quot;时表示会话一致性开启。 - 取值\&quot;false\&quot;时表示会话一致性关闭。
         :type session_consistence: str
+        :param consistence_mode: 一致性模式。默认值为空，此时以会话一致性参数session_consistence为准。 - session: 会话一致性 - global: 全局一致性 - eventual: 最终一致性
+        :type consistence_mode: str
         """
         
         
 
         self._session_consistence = None
+        self._consistence_mode = None
         self.discriminator = None
 
         self.session_consistence = session_consistence
+        if consistence_mode is not None:
+            self.consistence_mode = consistence_mode
 
     @property
     def session_consistence(self):
@@ -61,6 +68,28 @@ class ModifyProxyConsistRequest:
         :type session_consistence: str
         """
         self._session_consistence = session_consistence
+
+    @property
+    def consistence_mode(self):
+        """Gets the consistence_mode of this ModifyProxyConsistRequest.
+
+        一致性模式。默认值为空，此时以会话一致性参数session_consistence为准。 - session: 会话一致性 - global: 全局一致性 - eventual: 最终一致性
+
+        :return: The consistence_mode of this ModifyProxyConsistRequest.
+        :rtype: str
+        """
+        return self._consistence_mode
+
+    @consistence_mode.setter
+    def consistence_mode(self, consistence_mode):
+        """Sets the consistence_mode of this ModifyProxyConsistRequest.
+
+        一致性模式。默认值为空，此时以会话一致性参数session_consistence为准。 - session: 会话一致性 - global: 全局一致性 - eventual: 最终一致性
+
+        :param consistence_mode: The consistence_mode of this ModifyProxyConsistRequest.
+        :type consistence_mode: str
+        """
+        self._consistence_mode = consistence_mode
 
     def to_dict(self):
         """Returns the model properties as a dict"""

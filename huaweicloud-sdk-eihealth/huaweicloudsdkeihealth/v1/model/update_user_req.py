@@ -36,9 +36,9 @@ class UpdateUserReq:
 
         The model defined in huaweicloud sdk
 
-        :param mobile: 用户手机号，纯数字，长度小于等于32位。必须与国家码同时存在。
+        :param mobile: 用户手机号，纯数字，长度小于等于32位，当且仅当重置手机号时传入空串。必须与国家码同时存在。
         :type mobile: str
-        :param areacode: 国家码。中国大陆为“0086”
+        :param areacode: 国家码，当且仅当重置手机号时传入空串。中国大陆为“0086”
         :type areacode: str
         :param email: 用户邮箱，需符合邮箱格式
         :type email: str
@@ -67,7 +67,7 @@ class UpdateUserReq:
     def mobile(self):
         """Gets the mobile of this UpdateUserReq.
 
-        用户手机号，纯数字，长度小于等于32位。必须与国家码同时存在。
+        用户手机号，纯数字，长度小于等于32位，当且仅当重置手机号时传入空串。必须与国家码同时存在。
 
         :return: The mobile of this UpdateUserReq.
         :rtype: str
@@ -78,7 +78,7 @@ class UpdateUserReq:
     def mobile(self, mobile):
         """Sets the mobile of this UpdateUserReq.
 
-        用户手机号，纯数字，长度小于等于32位。必须与国家码同时存在。
+        用户手机号，纯数字，长度小于等于32位，当且仅当重置手机号时传入空串。必须与国家码同时存在。
 
         :param mobile: The mobile of this UpdateUserReq.
         :type mobile: str
@@ -89,7 +89,7 @@ class UpdateUserReq:
     def areacode(self):
         """Gets the areacode of this UpdateUserReq.
 
-        国家码。中国大陆为“0086”
+        国家码，当且仅当重置手机号时传入空串。中国大陆为“0086”
 
         :return: The areacode of this UpdateUserReq.
         :rtype: str
@@ -100,7 +100,7 @@ class UpdateUserReq:
     def areacode(self, areacode):
         """Sets the areacode of this UpdateUserReq.
 
-        国家码。中国大陆为“0086”
+        国家码，当且仅当重置手机号时传入空串。中国大陆为“0086”
 
         :param areacode: The areacode of this UpdateUserReq.
         :type areacode: str

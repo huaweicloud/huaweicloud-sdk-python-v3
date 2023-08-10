@@ -72,7 +72,7 @@ class Iam(object):
         return iam_endpoint if iam_endpoint else cls.DEFAULT_ENDPOINT
 
     @classmethod
-    def get_keystone_list_projects_request(cls, iam_endpoint=None, region_id=None):
+    def get_keystone_list_projects_request(cls, config, iam_endpoint=None, region_id=None):
         url_parse_result = urlparse(iam_endpoint)
         schema = url_parse_result.scheme
         host = url_parse_result.netloc
@@ -80,12 +80,12 @@ class Iam(object):
         query_params = [('name', region_id)]
 
         sdk_request = SdkRequest(method="GET", schema=schema, host=host, resource_path=resource_path, header_params={},
-                                 query_params=query_params, body="")
+                                 query_params=query_params, body="", signing_algorithm=config.signing_algorithm)
 
         return sdk_request
 
     @staticmethod
-    def get_create_token_by_id_token_request(iam_endpoint, idp_id, id_token, project_id=None, domain_id=None):
+    def get_create_token_by_id_token_request(config, iam_endpoint, idp_id, id_token, project_id=None, domain_id=None):
         scope, _id = ("project", project_id) if project_id else ("domain", domain_id)
         request_body = {
             "auth": {
@@ -105,7 +105,8 @@ class Iam(object):
         resource_path = Iam.CREATE_TOKEN_BY_ID_TOKEN_URI
         header_params = {"X-Idp-Id": idp_id, "Content-Type": "application/json;charset=UTF-8"}
         return SdkRequest(method="POST", schema=schema, host=host, resource_path=resource_path, uri=resource_path,
-                          header_params=header_params, query_params=[], body=json.dumps(request_body), stream=False)
+                          header_params=header_params, query_params=[], body=json.dumps(request_body), stream=False,
+                          signing_algorithm=config.signing_algorithm)
 
     @classmethod
     def create_token_by_id_token(cls, http_client, request):
@@ -139,14 +140,14 @@ class Iam(object):
                                            "please specify project_id manually when initializing the credentials.")
 
     @classmethod
-    def get_keystone_list_auth_domains_request(cls, iam_endpoint=None):
+    def get_keystone_list_auth_domains_request(cls, config, iam_endpoint=None):
         url_parse_result = urlparse(iam_endpoint)
         schema = url_parse_result.scheme
         host = url_parse_result.netloc
         resource_path = cls.KEYSTONE_LIST_AUTH_DOMAINS_URI
 
         sdk_request = SdkRequest(method="GET", schema=schema, host=host, resource_path=resource_path, header_params={},
-                                 query_params=[], body="")
+                                 query_params=[], body="", signing_algorithm=config.signing_algorithm)
 
         return sdk_request
 

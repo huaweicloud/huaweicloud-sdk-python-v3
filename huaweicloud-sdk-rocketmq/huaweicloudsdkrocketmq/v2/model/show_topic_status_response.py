@@ -18,29 +18,87 @@ class ShowTopicStatusResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'max_offset': 'int',
+        'min_offset': 'int',
         'brokers': 'list[ShowTopicStatusRespBrokers]'
     }
 
     attribute_map = {
+        'max_offset': 'max_offset',
+        'min_offset': 'min_offset',
         'brokers': 'brokers'
     }
 
-    def __init__(self, brokers=None):
+    def __init__(self, max_offset=None, min_offset=None, brokers=None):
         """ShowTopicStatusResponse
 
         The model defined in huaweicloud sdk
 
+        :param max_offset: 最大偏移量。
+        :type max_offset: int
+        :param min_offset: 最小偏移量。
+        :type min_offset: int
         :param brokers: 代理。
         :type brokers: list[:class:`huaweicloudsdkrocketmq.v2.ShowTopicStatusRespBrokers`]
         """
         
         super(ShowTopicStatusResponse, self).__init__()
 
+        self._max_offset = None
+        self._min_offset = None
         self._brokers = None
         self.discriminator = None
 
+        if max_offset is not None:
+            self.max_offset = max_offset
+        if min_offset is not None:
+            self.min_offset = min_offset
         if brokers is not None:
             self.brokers = brokers
+
+    @property
+    def max_offset(self):
+        """Gets the max_offset of this ShowTopicStatusResponse.
+
+        最大偏移量。
+
+        :return: The max_offset of this ShowTopicStatusResponse.
+        :rtype: int
+        """
+        return self._max_offset
+
+    @max_offset.setter
+    def max_offset(self, max_offset):
+        """Sets the max_offset of this ShowTopicStatusResponse.
+
+        最大偏移量。
+
+        :param max_offset: The max_offset of this ShowTopicStatusResponse.
+        :type max_offset: int
+        """
+        self._max_offset = max_offset
+
+    @property
+    def min_offset(self):
+        """Gets the min_offset of this ShowTopicStatusResponse.
+
+        最小偏移量。
+
+        :return: The min_offset of this ShowTopicStatusResponse.
+        :rtype: int
+        """
+        return self._min_offset
+
+    @min_offset.setter
+    def min_offset(self, min_offset):
+        """Sets the min_offset of this ShowTopicStatusResponse.
+
+        最小偏移量。
+
+        :param min_offset: The min_offset of this ShowTopicStatusResponse.
+        :type min_offset: int
+        """
+        self._min_offset = min_offset
 
     @property
     def brokers(self):

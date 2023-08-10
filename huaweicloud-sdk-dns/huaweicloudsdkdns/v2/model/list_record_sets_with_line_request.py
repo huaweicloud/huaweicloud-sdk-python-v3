@@ -85,7 +85,7 @@ class ListRecordSetsWithLineRequest:
         :type sort_dir: str
         :param health_check_id: 健康检查ID。  搜索模式默认为模糊搜索。  默认值为空。
         :type health_check_id: str
-        :param search_mode: 查询条件搜索模式。  取值范围：  like：模糊搜索 equal：精确搜索 默认值为like。
+        :param search_mode: 查询条件搜索模式。  取值范围：  like：模糊搜索 equal：精确搜索
         :type search_mode: str
         """
         
@@ -451,7 +451,7 @@ class ListRecordSetsWithLineRequest:
     def search_mode(self):
         """Gets the search_mode of this ListRecordSetsWithLineRequest.
 
-        查询条件搜索模式。  取值范围：  like：模糊搜索 equal：精确搜索 默认值为like。
+        查询条件搜索模式。  取值范围：  like：模糊搜索 equal：精确搜索
 
         :return: The search_mode of this ListRecordSetsWithLineRequest.
         :rtype: str
@@ -462,7 +462,7 @@ class ListRecordSetsWithLineRequest:
     def search_mode(self, search_mode):
         """Sets the search_mode of this ListRecordSetsWithLineRequest.
 
-        查询条件搜索模式。  取值范围：  like：模糊搜索 equal：精确搜索 默认值为like。
+        查询条件搜索模式。  取值范围：  like：模糊搜索 equal：精确搜索
 
         :param search_mode: The search_mode of this ListRecordSetsWithLineRequest.
         :type search_mode: str

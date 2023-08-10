@@ -430,7 +430,7 @@ class Client(object):
                                                        body, post_params, cname, response_type, collection_formats,
                                                        progress_callback)
             future_response = self._http_client.executor.submit(self._do_http_request_async, future_request,
-                                                                response_type, response_headers)
+                                                                response_type, response_headers, progress_callback)
             return FutureSdkResponse(future_response, self._logger)
 
         while True:
@@ -480,7 +480,8 @@ class Client(object):
 
         stream = self._is_stream(response_type)
         sdk_request = SdkRequest(method=method, schema=schema, host=host, resource_path=resource_path,
-                                 query_params=query_params, header_params=header_params, body=body, stream=stream)
+                                 query_params=query_params, header_params=header_params, body=body, stream=stream,
+                                 signing_algorithm=self._config.signing_algorithm)
         if self._AUTHORIZATION not in header_params:
             return self._credentials.process_auth_request(sdk_request, self._http_client)
         else:
@@ -490,10 +491,11 @@ class Client(object):
         response = self._http_client.do_request_sync(request)
         return response
 
-    def _do_http_request_async(self, future_request, response_type, response_headers):
+    def _do_http_request_async(self, future_request, response_type, response_headers, progress_callback):
         request = future_request.result()
         future_response = self._http_client.do_request_async(
-            request=request, hooks=[self.async_response_hook_factory(response_type, response_headers)]
+            request=request,
+            hooks=[self.async_response_hook_factory(response_type, response_headers, progress_callback)]
         )
         return future_response
 
@@ -509,9 +511,9 @@ class Client(object):
 
         return concrete_response
 
-    def async_response_hook_factory(self, response_type, response_headers):
+    def async_response_hook_factory(self, response_type, response_headers, progress_callback):
         def response_hook(resp, *args, **kwargs):
-            resp.data = self.sync_response_handler(resp, response_type, response_headers)
+            resp.data = self.sync_response_handler(resp, response_type, response_headers, progress_callback)
 
         return response_hook
 

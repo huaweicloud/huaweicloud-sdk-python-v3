@@ -69,7 +69,7 @@ class CreatePostPaidInstanceReq:
         :type description: str
         :param engine: 消息引擎。取值填写为：reliability。
         :type engine: str
-        :param engine_version: 消息引擎的版本。取值填写为：4.8.0。
+        :param engine_version: 消息引擎的版本。取值填写为：4.8.0[和5.x](tag:hws)。
         :type engine_version: str
         :param storage_space: 存储空间。
         :type storage_space: int
@@ -219,7 +219,7 @@ class CreatePostPaidInstanceReq:
     def engine_version(self):
         """Gets the engine_version of this CreatePostPaidInstanceReq.
 
-        消息引擎的版本。取值填写为：4.8.0。
+        消息引擎的版本。取值填写为：4.8.0[和5.x](tag:hws)。
 
         :return: The engine_version of this CreatePostPaidInstanceReq.
         :rtype: str
@@ -230,7 +230,7 @@ class CreatePostPaidInstanceReq:
     def engine_version(self, engine_version):
         """Sets the engine_version of this CreatePostPaidInstanceReq.
 
-        消息引擎的版本。取值填写为：4.8.0。
+        消息引擎的版本。取值填写为：4.8.0[和5.x](tag:hws)。
 
         :param engine_version: The engine_version of this CreatePostPaidInstanceReq.
         :type engine_version: str

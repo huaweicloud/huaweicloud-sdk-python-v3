@@ -65,6 +65,8 @@ class ShowInstanceResp:
         'broker_address': 'str',
         'public_namesrv_address': 'str',
         'public_broker_address': 'str',
+        'grpc_address': 'str',
+        'public_grpc_address': 'str',
         'tags': 'list[TagEntity]',
         'total_storage_space': 'int',
         'resource_spec_code': 'str'
@@ -119,12 +121,14 @@ class ShowInstanceResp:
         'broker_address': 'broker_address',
         'public_namesrv_address': 'public_namesrv_address',
         'public_broker_address': 'public_broker_address',
+        'grpc_address': 'grpc_address',
+        'public_grpc_address': 'public_grpc_address',
         'tags': 'tags',
         'total_storage_space': 'total_storage_space',
         'resource_spec_code': 'resource_spec_code'
     }
 
-    def __init__(self, name=None, engine=None, status=None, description=None, type=None, specification=None, engine_version=None, instance_id=None, charging_mode=None, vpc_id=None, vpc_name=None, created_at=None, product_id=None, security_group_id=None, security_group_name=None, subnet_id=None, subnet_name=None, subnet_cidr=None, available_zones=None, user_id=None, user_name=None, maintain_begin=None, maintain_end=None, enable_log_collection=None, storage_space=None, used_storage_space=None, enable_publicip=None, publicip_id=None, publicip_address=None, ssl_enable=None, cross_vpc_info=None, storage_resource_id=None, storage_spec_code=None, service_type=None, storage_type=None, extend_times=None, ipv6_enable=None, support_features=None, disk_encrypted=None, ces_version=None, node_num=None, new_spec_billing_enable=None, enable_acl=None, broker_num=None, namesrv_address=None, broker_address=None, public_namesrv_address=None, public_broker_address=None, tags=None, total_storage_space=None, resource_spec_code=None):
+    def __init__(self, name=None, engine=None, status=None, description=None, type=None, specification=None, engine_version=None, instance_id=None, charging_mode=None, vpc_id=None, vpc_name=None, created_at=None, product_id=None, security_group_id=None, security_group_name=None, subnet_id=None, subnet_name=None, subnet_cidr=None, available_zones=None, user_id=None, user_name=None, maintain_begin=None, maintain_end=None, enable_log_collection=None, storage_space=None, used_storage_space=None, enable_publicip=None, publicip_id=None, publicip_address=None, ssl_enable=None, cross_vpc_info=None, storage_resource_id=None, storage_spec_code=None, service_type=None, storage_type=None, extend_times=None, ipv6_enable=None, support_features=None, disk_encrypted=None, ces_version=None, node_num=None, new_spec_billing_enable=None, enable_acl=None, broker_num=None, namesrv_address=None, broker_address=None, public_namesrv_address=None, public_broker_address=None, grpc_address=None, public_grpc_address=None, tags=None, total_storage_space=None, resource_spec_code=None):
         """ShowInstanceResp
 
         The model defined in huaweicloud sdk
@@ -225,6 +229,10 @@ class ShowInstanceResp:
         :type public_namesrv_address: str
         :param public_broker_address: 公网业务数据地址。
         :type public_broker_address: str
+        :param grpc_address: grpc连接地址。
+        :type grpc_address: str
+        :param public_grpc_address: 公网grpc连接地址。
+        :type public_grpc_address: str
         :param tags: 标签列表。
         :type tags: list[:class:`huaweicloudsdkrocketmq.v2.TagEntity`]
         :param total_storage_space: 总存储空间。
@@ -283,6 +291,8 @@ class ShowInstanceResp:
         self._broker_address = None
         self._public_namesrv_address = None
         self._public_broker_address = None
+        self._grpc_address = None
+        self._public_grpc_address = None
         self._tags = None
         self._total_storage_space = None
         self._resource_spec_code = None
@@ -384,6 +394,10 @@ class ShowInstanceResp:
             self.public_namesrv_address = public_namesrv_address
         if public_broker_address is not None:
             self.public_broker_address = public_broker_address
+        if grpc_address is not None:
+            self.grpc_address = grpc_address
+        if public_grpc_address is not None:
+            self.public_grpc_address = public_grpc_address
         if tags is not None:
             self.tags = tags
         if total_storage_space is not None:
@@ -1446,6 +1460,50 @@ class ShowInstanceResp:
         :type public_broker_address: str
         """
         self._public_broker_address = public_broker_address
+
+    @property
+    def grpc_address(self):
+        """Gets the grpc_address of this ShowInstanceResp.
+
+        grpc连接地址。
+
+        :return: The grpc_address of this ShowInstanceResp.
+        :rtype: str
+        """
+        return self._grpc_address
+
+    @grpc_address.setter
+    def grpc_address(self, grpc_address):
+        """Sets the grpc_address of this ShowInstanceResp.
+
+        grpc连接地址。
+
+        :param grpc_address: The grpc_address of this ShowInstanceResp.
+        :type grpc_address: str
+        """
+        self._grpc_address = grpc_address
+
+    @property
+    def public_grpc_address(self):
+        """Gets the public_grpc_address of this ShowInstanceResp.
+
+        公网grpc连接地址。
+
+        :return: The public_grpc_address of this ShowInstanceResp.
+        :rtype: str
+        """
+        return self._public_grpc_address
+
+    @public_grpc_address.setter
+    def public_grpc_address(self, public_grpc_address):
+        """Sets the public_grpc_address of this ShowInstanceResp.
+
+        公网grpc连接地址。
+
+        :param public_grpc_address: The public_grpc_address of this ShowInstanceResp.
+        :type public_grpc_address: str
+        """
+        self._public_grpc_address = public_grpc_address
 
     @property
     def tags(self):

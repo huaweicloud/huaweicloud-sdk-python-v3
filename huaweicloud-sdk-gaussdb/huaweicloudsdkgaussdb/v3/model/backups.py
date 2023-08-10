@@ -25,7 +25,7 @@ class Backups:
         'take_up_time': 'int',
         'type': 'str',
         'size': 'int',
-        'datastore': 'MysqlDatastore',
+        'datastore': 'MysqlDatastoreInBackup',
         'instance_id': 'str',
         'backup_level': 'str',
         'description': 'str'
@@ -68,7 +68,7 @@ class Backups:
         :param size: 备份大小，(单位：MB)
         :type size: int
         :param datastore: 
-        :type datastore: :class:`huaweicloudsdkgaussdb.v3.MysqlDatastore`
+        :type datastore: :class:`huaweicloudsdkgaussdb.v3.MysqlDatastoreInBackup`
         :param instance_id: 实例ID。
         :type instance_id: str
         :param backup_level: 备份级别。当开启一级备份开关时，返回该参数。  取值： - 0：备份正在创建中或者备份失败。 - 1：一级备份。 - 2：二级备份。
@@ -299,7 +299,7 @@ class Backups:
         """Gets the datastore of this Backups.
 
         :return: The datastore of this Backups.
-        :rtype: :class:`huaweicloudsdkgaussdb.v3.MysqlDatastore`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.MysqlDatastoreInBackup`
         """
         return self._datastore
 
@@ -308,7 +308,7 @@ class Backups:
         """Sets the datastore of this Backups.
 
         :param datastore: The datastore of this Backups.
-        :type datastore: :class:`huaweicloudsdkgaussdb.v3.MysqlDatastore`
+        :type datastore: :class:`huaweicloudsdkgaussdb.v3.MysqlDatastoreInBackup`
         """
         self._datastore = datastore
 

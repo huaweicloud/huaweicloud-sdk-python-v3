@@ -22,15 +22,15 @@ class Message:
         'topic': 'str',
         'store_timestamp': 'float',
         'born_timestamp': 'float',
-        'reconsume_times': 'str',
+        'reconsume_times': 'int',
         'body': 'str',
         'body_crc': 'float',
         'store_size': 'float',
         'property_list': 'list[MessagePropertyList]',
         'born_host': 'str',
         'store_host': 'str',
-        'queue_id': 'str',
-        'queue_offset': 'str'
+        'queue_id': 'int',
+        'queue_offset': 'int'
     }
 
     attribute_map = {
@@ -66,7 +66,7 @@ class Message:
         :param born_timestamp: 产生消息的时间。
         :type born_timestamp: float
         :param reconsume_times: 重试次数。
-        :type reconsume_times: str
+        :type reconsume_times: int
         :param body: 消息体。
         :type body: str
         :param body_crc: 消息体校验和。
@@ -80,9 +80,9 @@ class Message:
         :param store_host: 存储消息的主机IP。
         :type store_host: str
         :param queue_id: 队列ID。
-        :type queue_id: str
+        :type queue_id: int
         :param queue_offset: 在队列中的偏移量。
-        :type queue_offset: str
+        :type queue_offset: int
         """
         
         
@@ -249,7 +249,7 @@ class Message:
         重试次数。
 
         :return: The reconsume_times of this Message.
-        :rtype: str
+        :rtype: int
         """
         return self._reconsume_times
 
@@ -260,7 +260,7 @@ class Message:
         重试次数。
 
         :param reconsume_times: The reconsume_times of this Message.
-        :type reconsume_times: str
+        :type reconsume_times: int
         """
         self._reconsume_times = reconsume_times
 
@@ -403,7 +403,7 @@ class Message:
         队列ID。
 
         :return: The queue_id of this Message.
-        :rtype: str
+        :rtype: int
         """
         return self._queue_id
 
@@ -414,7 +414,7 @@ class Message:
         队列ID。
 
         :param queue_id: The queue_id of this Message.
-        :type queue_id: str
+        :type queue_id: int
         """
         self._queue_id = queue_id
 
@@ -425,7 +425,7 @@ class Message:
         在队列中的偏移量。
 
         :return: The queue_offset of this Message.
-        :rtype: str
+        :rtype: int
         """
         return self._queue_offset
 
@@ -436,7 +436,7 @@ class Message:
         在队列中的偏移量。
 
         :param queue_offset: The queue_offset of this Message.
-        :type queue_offset: str
+        :type queue_offset: int
         """
         self._queue_offset = queue_offset
 

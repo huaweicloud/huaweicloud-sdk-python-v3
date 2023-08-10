@@ -60,6 +60,10 @@ from huaweicloudsdkgsl.v3.model.list_sms_details_request import ListSmsDetailsRe
 from huaweicloudsdkgsl.v3.model.list_sms_details_response import ListSmsDetailsResponse
 from huaweicloudsdkgsl.v3.model.list_tags_request import ListTagsRequest
 from huaweicloudsdkgsl.v3.model.list_tags_response import ListTagsResponse
+from huaweicloudsdkgsl.v3.model.list_work_order_details_request import ListWorkOrderDetailsRequest
+from huaweicloudsdkgsl.v3.model.list_work_order_details_response import ListWorkOrderDetailsResponse
+from huaweicloudsdkgsl.v3.model.list_work_orders_request import ListWorkOrdersRequest
+from huaweicloudsdkgsl.v3.model.list_work_orders_response import ListWorkOrdersResponse
 from huaweicloudsdkgsl.v3.model.month_usage_vo import MonthUsageVo
 from huaweicloudsdkgsl.v3.model.pool_mem_vo import PoolMemVO
 from huaweicloudsdkgsl.v3.model.pro_price_plan_vo import ProPricePlanVo
@@ -93,4 +97,6 @@ from huaweicloudsdkgsl.v3.model.stop_sim_card_request import StopSimCardRequest
 from huaweicloudsdkgsl.v3.model.stop_sim_card_response import StopSimCardResponse
 from huaweicloudsdkgsl.v3.model.update_attribute_request import UpdateAttributeRequest
 from huaweicloudsdkgsl.v3.model.update_attribute_response import UpdateAttributeResponse
+from huaweicloudsdkgsl.v3.model.work_order_detail_vo import WorkOrderDetailVo
+from huaweicloudsdkgsl.v3.model.work_order_vo import WorkOrderVo
 

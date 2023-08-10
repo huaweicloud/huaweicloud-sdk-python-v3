@@ -20,7 +20,7 @@ class MysqlInstanceResponse:
         'id': 'str',
         'name': 'str',
         'status': 'str',
-        'datastore': 'MysqlDatastore',
+        'datastore': 'MysqlDatastoreInRes',
         'mode': 'str',
         'configuration_id': 'str',
         'port': 'str',
@@ -68,7 +68,7 @@ class MysqlInstanceResponse:
         :param status: 实例状态。
         :type status: str
         :param datastore: 
-        :type datastore: :class:`huaweicloudsdkgaussdb.v3.MysqlDatastore`
+        :type datastore: :class:`huaweicloudsdkgaussdb.v3.MysqlDatastoreInRes`
         :param mode: 实例类型，仅支持Cluster。
         :type mode: str
         :param configuration_id: 参数组ID。
@@ -222,7 +222,7 @@ class MysqlInstanceResponse:
         """Gets the datastore of this MysqlInstanceResponse.
 
         :return: The datastore of this MysqlInstanceResponse.
-        :rtype: :class:`huaweicloudsdkgaussdb.v3.MysqlDatastore`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.MysqlDatastoreInRes`
         """
         return self._datastore
 
@@ -231,7 +231,7 @@ class MysqlInstanceResponse:
         """Sets the datastore of this MysqlInstanceResponse.
 
         :param datastore: The datastore of this MysqlInstanceResponse.
-        :type datastore: :class:`huaweicloudsdkgaussdb.v3.MysqlDatastore`
+        :type datastore: :class:`huaweicloudsdkgaussdb.v3.MysqlDatastoreInRes`
         """
         self._datastore = datastore
 

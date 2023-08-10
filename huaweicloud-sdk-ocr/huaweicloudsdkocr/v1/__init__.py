@@ -81,6 +81,7 @@ from huaweicloudsdkocr.v1.model.myanmar_driver_license_result import MyanmarDriv
 from huaweicloudsdkocr.v1.model.myanmar_idcard_confidence import MyanmarIdcardConfidence
 from huaweicloudsdkocr.v1.model.myanmar_idcard_request_body import MyanmarIdcardRequestBody
 from huaweicloudsdkocr.v1.model.myanmar_idcard_result import MyanmarIdcardResult
+from huaweicloudsdkocr.v1.model.myanmar_idcard_translation_info import MyanmarIdcardTranslationInfo
 from huaweicloudsdkocr.v1.model.passport_request_body import PassportRequestBody
 from huaweicloudsdkocr.v1.model.passport_result import PassportResult
 from huaweicloudsdkocr.v1.model.pcr_test_record_confidence import PcrTestRecordConfidence

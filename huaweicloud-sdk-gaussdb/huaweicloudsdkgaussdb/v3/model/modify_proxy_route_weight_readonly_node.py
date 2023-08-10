@@ -31,7 +31,7 @@ class ModifyProxyRouteWeightReadonlyNode:
 
         The model defined in huaweicloud sdk
 
-        :param id: 只读节点id
+        :param id: 只读节点ID。
         :type id: str
         :param weight: 只读节点权重： - 如果路由模式为0，取值为0~1000； - 如果路由模式为1或2，取值为0或1。
         :type weight: int
@@ -50,7 +50,7 @@ class ModifyProxyRouteWeightReadonlyNode:
     def id(self):
         """Gets the id of this ModifyProxyRouteWeightReadonlyNode.
 
-        只读节点id
+        只读节点ID。
 
         :return: The id of this ModifyProxyRouteWeightReadonlyNode.
         :rtype: str
@@ -61,7 +61,7 @@ class ModifyProxyRouteWeightReadonlyNode:
     def id(self, id):
         """Sets the id of this ModifyProxyRouteWeightReadonlyNode.
 
-        只读节点id
+        只读节点ID。
 
         :param id: The id of this ModifyProxyRouteWeightReadonlyNode.
         :type id: str

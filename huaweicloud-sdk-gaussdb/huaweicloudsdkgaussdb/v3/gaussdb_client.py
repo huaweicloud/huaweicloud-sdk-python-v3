@@ -1328,6 +1328,64 @@ class GaussDBClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def describe_backup_encrypt_status(self, request):
+        """查询实例是否开启备份加密功能
+
+        查询实例是否开启备份加密功能。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DescribeBackupEncryptStatus
+        :type request: :class:`huaweicloudsdkgaussdb.v3.DescribeBackupEncryptStatusRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.DescribeBackupEncryptStatusResponse`
+        """
+        return self._describe_backup_encrypt_status_with_http_info(request)
+
+    def _describe_backup_encrypt_status_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/backups/encryption',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DescribeBackupEncryptStatusResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def expand_gauss_my_sql_instance_volume(self, request):
         """包周期存储扩容
 
@@ -2326,6 +2384,66 @@ class GaussDBClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ListScheduleJobsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def modify_backup_encrypt_status(self, request):
+        """打开或关闭备份加密
+
+        打开或关闭备份加密。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ModifyBackupEncryptStatus
+        :type request: :class:`huaweicloudsdkgaussdb.v3.ModifyBackupEncryptStatusRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ModifyBackupEncryptStatusResponse`
+        """
+        return self._modify_backup_encrypt_status_with_http_info(request)
+
+    def _modify_backup_encrypt_status_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/backups/encryption',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ModifyBackupEncryptStatusResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -4726,6 +4844,68 @@ class GaussDBClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='UpdateProxyConnectionPoolTypeResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_proxy_port(self, request):
+        """修改读写分离端口号
+
+        修改读写分离端口号。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateProxyPort
+        :type request: :class:`huaweicloudsdkgaussdb.v3.UpdateProxyPortRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.UpdateProxyPortResponse`
+        """
+        return self._update_proxy_port_with_http_info(request)
+
+    def _update_proxy_port_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'proxy_id' in local_var_params:
+            path_params['proxy_id'] = local_var_params['proxy_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/proxy/{proxy_id}/port',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateProxyPortResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

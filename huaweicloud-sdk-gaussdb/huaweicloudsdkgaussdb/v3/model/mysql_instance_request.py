@@ -20,7 +20,7 @@ class MysqlInstanceRequest:
         'charge_info': 'MysqlChargeInfo',
         'region': 'str',
         'name': 'str',
-        'datastore': 'MysqlDatastore',
+        'datastore': 'MysqlDatastoreInReq',
         'mode': 'str',
         'flavor_ref': 'str',
         'vpc_id': 'str',
@@ -78,7 +78,7 @@ class MysqlInstanceRequest:
         :param name: 实例名称。用于表示实例的名称，同一租户下，同类型的实例名可重名。  取值范围：4~64个字符之间，必须以字母开头，区分大小写，可以包含字母、数字、中划线或者下划线，不能包含其他的特殊字符。
         :type name: str
         :param datastore: 
-        :type datastore: :class:`huaweicloudsdkgaussdb.v3.MysqlDatastore`
+        :type datastore: :class:`huaweicloudsdkgaussdb.v3.MysqlDatastoreInReq`
         :param mode: 实例类型，目前仅支持Cluster。
         :type mode: str
         :param flavor_ref: 规格码。
@@ -245,7 +245,7 @@ class MysqlInstanceRequest:
         """Gets the datastore of this MysqlInstanceRequest.
 
         :return: The datastore of this MysqlInstanceRequest.
-        :rtype: :class:`huaweicloudsdkgaussdb.v3.MysqlDatastore`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.MysqlDatastoreInReq`
         """
         return self._datastore
 
@@ -254,7 +254,7 @@ class MysqlInstanceRequest:
         """Sets the datastore of this MysqlInstanceRequest.
 
         :param datastore: The datastore of this MysqlInstanceRequest.
-        :type datastore: :class:`huaweicloudsdkgaussdb.v3.MysqlDatastore`
+        :type datastore: :class:`huaweicloudsdkgaussdb.v3.MysqlDatastoreInReq`
         """
         self._datastore = datastore
 

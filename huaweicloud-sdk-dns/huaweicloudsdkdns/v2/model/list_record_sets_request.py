@@ -57,7 +57,7 @@ class ListRecordSetsRequest:
         :type zone_type: str
         :param marker: 分页查询起始的资源ID，为空时为查询第一页。  默认值为空。
         :type marker: str
-        :param search_mode: 查询条件搜索模式。  取值范围：  like：模糊搜索 equal：精确搜索 默认值为equal。
+        :param search_mode: 查询条件搜索模式。  取值范围：  like：模糊搜索 equal：精确搜索
         :type search_mode: str
         :param limit: 每页返回的资源个数。  取值范围：0~500  取值一般为10，20，50。默认值为500。
         :type limit: int
@@ -173,7 +173,7 @@ class ListRecordSetsRequest:
     def search_mode(self):
         """Gets the search_mode of this ListRecordSetsRequest.
 
-        查询条件搜索模式。  取值范围：  like：模糊搜索 equal：精确搜索 默认值为equal。
+        查询条件搜索模式。  取值范围：  like：模糊搜索 equal：精确搜索
 
         :return: The search_mode of this ListRecordSetsRequest.
         :rtype: str
@@ -184,7 +184,7 @@ class ListRecordSetsRequest:
     def search_mode(self, search_mode):
         """Sets the search_mode of this ListRecordSetsRequest.
 
-        查询条件搜索模式。  取值范围：  like：模糊搜索 equal：精确搜索 默认值为equal。
+        查询条件搜索模式。  取值范围：  like：模糊搜索 equal：精确搜索
 
         :param search_mode: The search_mode of this ListRecordSetsRequest.
         :type search_mode: str

@@ -21,6 +21,7 @@ class CreateTopicOrBatchDeleteTopicReq:
         'brokers': 'list[str]',
         'queue_num': 'float',
         'permission': 'str',
+        'message_type': 'str',
         'topics': 'list[str]'
     }
 
@@ -29,10 +30,11 @@ class CreateTopicOrBatchDeleteTopicReq:
         'brokers': 'brokers',
         'queue_num': 'queue_num',
         'permission': 'permission',
+        'message_type': 'message_type',
         'topics': 'topics'
     }
 
-    def __init__(self, name=None, brokers=None, queue_num=None, permission=None, topics=None):
+    def __init__(self, name=None, brokers=None, queue_num=None, permission=None, message_type=None, topics=None):
         """CreateTopicOrBatchDeleteTopicReq
 
         The model defined in huaweicloud sdk
@@ -45,6 +47,8 @@ class CreateTopicOrBatchDeleteTopicReq:
         :type queue_num: float
         :param permission: 权限。
         :type permission: str
+        :param message_type: 消息类型。
+        :type message_type: str
         :param topics: 主题列表，当批量删除主题时使用。
         :type topics: list[str]
         """
@@ -55,6 +59,7 @@ class CreateTopicOrBatchDeleteTopicReq:
         self._brokers = None
         self._queue_num = None
         self._permission = None
+        self._message_type = None
         self._topics = None
         self.discriminator = None
 
@@ -66,6 +71,8 @@ class CreateTopicOrBatchDeleteTopicReq:
             self.queue_num = queue_num
         if permission is not None:
             self.permission = permission
+        if message_type is not None:
+            self.message_type = message_type
         if topics is not None:
             self.topics = topics
 
@@ -156,6 +163,28 @@ class CreateTopicOrBatchDeleteTopicReq:
         :type permission: str
         """
         self._permission = permission
+
+    @property
+    def message_type(self):
+        """Gets the message_type of this CreateTopicOrBatchDeleteTopicReq.
+
+        消息类型。
+
+        :return: The message_type of this CreateTopicOrBatchDeleteTopicReq.
+        :rtype: str
+        """
+        return self._message_type
+
+    @message_type.setter
+    def message_type(self, message_type):
+        """Sets the message_type of this CreateTopicOrBatchDeleteTopicReq.
+
+        消息类型。
+
+        :param message_type: The message_type of this CreateTopicOrBatchDeleteTopicReq.
+        :type message_type: str
+        """
+        self._message_type = message_type
 
     @property
     def topics(self):

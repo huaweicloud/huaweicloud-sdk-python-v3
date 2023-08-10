@@ -33,7 +33,7 @@ class MysqlDatastoreWithKernelVersion:
 
         The model defined in huaweicloud sdk
 
-        :param type: 数据库引擎，现在只支持gaussdb-mysql
+        :param type: 数据库引擎，现在只支持gaussdb-mysql。
         :type type: str
         :param version: 数据库版本。  数据库支持的详细版本信息，可调用查询数据库引擎的版本接口获取。
         :type version: str
@@ -56,7 +56,7 @@ class MysqlDatastoreWithKernelVersion:
     def type(self):
         """Gets the type of this MysqlDatastoreWithKernelVersion.
 
-        数据库引擎，现在只支持gaussdb-mysql
+        数据库引擎，现在只支持gaussdb-mysql。
 
         :return: The type of this MysqlDatastoreWithKernelVersion.
         :rtype: str
@@ -67,7 +67,7 @@ class MysqlDatastoreWithKernelVersion:
     def type(self, type):
         """Sets the type of this MysqlDatastoreWithKernelVersion.
 
-        数据库引擎，现在只支持gaussdb-mysql
+        数据库引擎，现在只支持gaussdb-mysql。
 
         :param type: The type of this MysqlDatastoreWithKernelVersion.
         :type type: str

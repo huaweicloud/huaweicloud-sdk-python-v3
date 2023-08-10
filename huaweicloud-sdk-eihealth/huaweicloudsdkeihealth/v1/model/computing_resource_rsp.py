@@ -19,6 +19,7 @@ class ComputingResourceRsp:
     openapi_types = {
         'id': 'str',
         'resource_id': 'str',
+        'evs_resource_id': 'str',
         'name': 'str',
         'spec': 'ComputingSpecDto',
         'system_disk': 'DiskDto',
@@ -36,6 +37,7 @@ class ComputingResourceRsp:
     attribute_map = {
         'id': 'id',
         'resource_id': 'resource_id',
+        'evs_resource_id': 'evs_resource_id',
         'name': 'name',
         'spec': 'spec',
         'system_disk': 'system_disk',
@@ -50,7 +52,7 @@ class ComputingResourceRsp:
         'node_labels': 'node_labels'
     }
 
-    def __init__(self, id=None, resource_id=None, name=None, spec=None, system_disk=None, data_disks=None, image=None, charge_mode=None, create_time=None, failure_reason=None, status=None, availability_zone_id=None, schedulable=None, node_labels=None):
+    def __init__(self, id=None, resource_id=None, evs_resource_id=None, name=None, spec=None, system_disk=None, data_disks=None, image=None, charge_mode=None, create_time=None, failure_reason=None, status=None, availability_zone_id=None, schedulable=None, node_labels=None):
         """ComputingResourceRsp
 
         The model defined in huaweicloud sdk
@@ -59,6 +61,8 @@ class ComputingResourceRsp:
         :type id: str
         :param resource_id: 资源ID
         :type resource_id: str
+        :param evs_resource_id: 额外盘资源ID
+        :type evs_resource_id: str
         :param name: 实例名称
         :type name: str
         :param spec: 
@@ -89,6 +93,7 @@ class ComputingResourceRsp:
 
         self._id = None
         self._resource_id = None
+        self._evs_resource_id = None
         self._name = None
         self._spec = None
         self._system_disk = None
@@ -105,6 +110,8 @@ class ComputingResourceRsp:
 
         self.id = id
         self.resource_id = resource_id
+        if evs_resource_id is not None:
+            self.evs_resource_id = evs_resource_id
         self.name = name
         if spec is not None:
             self.spec = spec
@@ -166,6 +173,28 @@ class ComputingResourceRsp:
         :type resource_id: str
         """
         self._resource_id = resource_id
+
+    @property
+    def evs_resource_id(self):
+        """Gets the evs_resource_id of this ComputingResourceRsp.
+
+        额外盘资源ID
+
+        :return: The evs_resource_id of this ComputingResourceRsp.
+        :rtype: str
+        """
+        return self._evs_resource_id
+
+    @evs_resource_id.setter
+    def evs_resource_id(self, evs_resource_id):
+        """Sets the evs_resource_id of this ComputingResourceRsp.
+
+        额外盘资源ID
+
+        :param evs_resource_id: The evs_resource_id of this ComputingResourceRsp.
+        :type evs_resource_id: str
+        """
+        self._evs_resource_id = evs_resource_id
 
     @property
     def name(self):

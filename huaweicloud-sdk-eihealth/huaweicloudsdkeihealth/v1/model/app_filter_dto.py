@@ -20,6 +20,7 @@ class AppFilterDto:
         'app_id': 'str',
         'app_name': 'str',
         'app_version': 'str',
+        'app_resource': 'TaskResourceDto',
         'app_node_labels': 'list[str]'
     }
 
@@ -27,10 +28,11 @@ class AppFilterDto:
         'app_id': 'app_id',
         'app_name': 'app_name',
         'app_version': 'app_version',
+        'app_resource': 'app_resource',
         'app_node_labels': 'app_node_labels'
     }
 
-    def __init__(self, app_id=None, app_name=None, app_version=None, app_node_labels=None):
+    def __init__(self, app_id=None, app_name=None, app_version=None, app_resource=None, app_node_labels=None):
         """AppFilterDto
 
         The model defined in huaweicloud sdk
@@ -41,6 +43,8 @@ class AppFilterDto:
         :type app_name: str
         :param app_version: 应用版本
         :type app_version: str
+        :param app_resource: 
+        :type app_resource: :class:`huaweicloudsdkeihealth.v1.TaskResourceDto`
         :param app_node_labels: 计算节点标签
         :type app_node_labels: list[str]
         """
@@ -50,6 +54,7 @@ class AppFilterDto:
         self._app_id = None
         self._app_name = None
         self._app_version = None
+        self._app_resource = None
         self._app_node_labels = None
         self.discriminator = None
 
@@ -59,6 +64,8 @@ class AppFilterDto:
             self.app_name = app_name
         if app_version is not None:
             self.app_version = app_version
+        if app_resource is not None:
+            self.app_resource = app_resource
         if app_node_labels is not None:
             self.app_node_labels = app_node_labels
 
@@ -127,6 +134,24 @@ class AppFilterDto:
         :type app_version: str
         """
         self._app_version = app_version
+
+    @property
+    def app_resource(self):
+        """Gets the app_resource of this AppFilterDto.
+
+        :return: The app_resource of this AppFilterDto.
+        :rtype: :class:`huaweicloudsdkeihealth.v1.TaskResourceDto`
+        """
+        return self._app_resource
+
+    @app_resource.setter
+    def app_resource(self, app_resource):
+        """Sets the app_resource of this AppFilterDto.
+
+        :param app_resource: The app_resource of this AppFilterDto.
+        :type app_resource: :class:`huaweicloudsdkeihealth.v1.TaskResourceDto`
+        """
+        self._app_resource = app_resource
 
     @property
     def app_node_labels(self):

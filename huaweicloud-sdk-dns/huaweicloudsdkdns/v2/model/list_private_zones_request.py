@@ -59,7 +59,7 @@ class ListPrivateZonesRequest:
         :type name: str
         :param status: 资源状态。
         :type status: str
-        :param search_mode: 查询条件搜索模式。  取值范围：  like：模糊搜索 equal：精确搜索 默认值为equal。
+        :param search_mode: 查询条件搜索模式。  取值范围：  like：模糊搜索 equal：精确搜索
         :type search_mode: str
         :param enterprise_project_id: 域名关联的企业项目ID，长度不超过36个字符。  默认值为0。
         :type enterprise_project_id: str
@@ -78,8 +78,7 @@ class ListPrivateZonesRequest:
         self._enterprise_project_id = None
         self.discriminator = None
 
-        if type is not None:
-            self.type = type
+        self.type = type
         if limit is not None:
             self.limit = limit
         if marker is not None:
@@ -255,7 +254,7 @@ class ListPrivateZonesRequest:
     def search_mode(self):
         """Gets the search_mode of this ListPrivateZonesRequest.
 
-        查询条件搜索模式。  取值范围：  like：模糊搜索 equal：精确搜索 默认值为equal。
+        查询条件搜索模式。  取值范围：  like：模糊搜索 equal：精确搜索
 
         :return: The search_mode of this ListPrivateZonesRequest.
         :rtype: str
@@ -266,7 +265,7 @@ class ListPrivateZonesRequest:
     def search_mode(self, search_mode):
         """Sets the search_mode of this ListPrivateZonesRequest.
 
-        查询条件搜索模式。  取值范围：  like：模糊搜索 equal：精确搜索 默认值为equal。
+        查询条件搜索模式。  取值范围：  like：模糊搜索 equal：精确搜索
 
         :param search_mode: The search_mode of this ListPrivateZonesRequest.
         :type search_mode: str

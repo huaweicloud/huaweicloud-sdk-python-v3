@@ -23,8 +23,9 @@ import os
 from abc import abstractmethod
 
 from huaweicloudsdkcore.auth.internal import Iam, Metadata
-from huaweicloudsdkcore.exceptions.exceptions import ApiValueError, ServiceResponseException
-from huaweicloudsdkcore.signer.signer import Signer, DerivationAKSKSigner
+from huaweicloudsdkcore.exceptions.exceptions import ApiValueError, ServiceResponseException, SdkException
+from huaweicloudsdkcore.signer.signer import Signer, SM3Signer, DerivationAKSKSigner
+from huaweicloudsdkcore.signer.algorithm import SigningAlgorithm
 from huaweicloudsdkcore.auth.cache import AuthCache
 from huaweicloudsdkcore.utils import time_utils, six_utils
 
@@ -138,8 +139,15 @@ class Credentials(DerivedCredentials, TempCredentials, FederalCredentials):
                 "application/json"):
             request.header_params["X-Sdk-Content-Sha256"] = "UNSIGNED-PAYLOAD"
 
-        return DerivationAKSKSigner(self).sign(request, self._derived_auth_service_name, self._region_id) \
-            if self._is_derived_auth(request) else Signer(self).sign(request)
+        if self._is_derived_auth(request):
+            return DerivationAKSKSigner(self).sign(request, self._derived_auth_service_name, self._region_id)
+
+        if request.signing_algorithm == SigningAlgorithm.HMAC_SHA256:
+            return Signer(self).sign(request)
+        elif request.signing_algorithm == SigningAlgorithm.HMAC_SM3:
+            return SM3Signer(self).sign(request)
+
+        raise SdkException("unsupported signing algorithm: " + str(request.signing_algorithm))
 
     def _is_derived_auth(self, request):
         if not self._derived_predicate:
@@ -241,8 +249,8 @@ class BasicCredentials(Credentials):
 
         if self.iam_endpoint is None:
             self.iam_endpoint = Iam.get_iam_endpoint()
-        future_request = self.process_auth_request(
-            Iam.get_keystone_list_projects_request(self.iam_endpoint, region_id=region_id), http_client)
+        req = Iam.get_keystone_list_projects_request(http_client.config, self.iam_endpoint, region_id=region_id)
+        future_request = self.process_auth_request(req, http_client)
         request = future_request.result()
         try:
             self.project_id = Iam.keystone_list_projects(http_client, request)
@@ -262,8 +270,8 @@ class BasicCredentials(Credentials):
 
     def _update_auth_token_by_id_token(self, http_client):
         iam_endpoint = self.iam_endpoint if self.iam_endpoint else Iam.get_iam_endpoint()
-        request = Iam.get_create_token_by_id_token_request(iam_endpoint, self.idp_id, self._get_id_token(),
-                                                           project_id=self.project_id)
+        request = Iam.get_create_token_by_id_token_request(http_client.config, iam_endpoint, self.idp_id,
+                                                           self._get_id_token(), project_id=self.project_id)
         token, expired_str = Iam.create_token_by_id_token(http_client, request)
         self._expired_at = time_utils.get_timestamp_from_str(expired_str, self._TIME_FORMAT)
         self._auth_token = token
@@ -314,8 +322,8 @@ class GlobalCredentials(Credentials):
 
         if self.iam_endpoint is None:
             self.iam_endpoint = Iam.get_iam_endpoint()
-        future_request = self.process_auth_request(Iam.get_keystone_list_auth_domains_request(self.iam_endpoint),
-                                                   http_client)
+        req = Iam.get_keystone_list_auth_domains_request(http_client.config, self.iam_endpoint)
+        future_request = self.process_auth_request(req, http_client)
         request = future_request.result()
         try:
             self.domain_id = Iam.keystone_list_auth_domains(http_client, request)
@@ -342,8 +350,8 @@ class GlobalCredentials(Credentials):
 
     def _update_auth_token_by_id_token(self, http_client):
         iam_endpoint = self.iam_endpoint if self.iam_endpoint else Iam.get_iam_endpoint()
-        request = Iam.get_create_token_by_id_token_request(iam_endpoint, self.idp_id, self._get_id_token(),
-                                                           domain_id=self.domain_id)
+        request = Iam.get_create_token_by_id_token_request(http_client.config, iam_endpoint, self.idp_id,
+                                                           self._get_id_token(), domain_id=self.domain_id)
         token, expired_str = Iam.create_token_by_id_token(http_client, request)
         self._expired_at = time_utils.get_timestamp_from_str(expired_str, self._TIME_FORMAT)
         self._auth_token = token

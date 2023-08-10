@@ -21,7 +21,8 @@ class Topic:
         'total_read_queue_num': 'float',
         'total_write_queue_num': 'float',
         'permission': 'str',
-        'brokers': 'list[TopicBrokers]'
+        'brokers': 'list[TopicBrokers]',
+        'message_type': 'str'
     }
 
     attribute_map = {
@@ -29,10 +30,11 @@ class Topic:
         'total_read_queue_num': 'total_read_queue_num',
         'total_write_queue_num': 'total_write_queue_num',
         'permission': 'permission',
-        'brokers': 'brokers'
+        'brokers': 'brokers',
+        'message_type': 'message_type'
     }
 
-    def __init__(self, name=None, total_read_queue_num=None, total_write_queue_num=None, permission=None, brokers=None):
+    def __init__(self, name=None, total_read_queue_num=None, total_write_queue_num=None, permission=None, brokers=None, message_type=None):
         """Topic
 
         The model defined in huaweicloud sdk
@@ -47,6 +49,8 @@ class Topic:
         :type permission: str
         :param brokers: 关联的代理。
         :type brokers: list[:class:`huaweicloudsdkrocketmq.v2.TopicBrokers`]
+        :param message_type: 消息类型。
+        :type message_type: str
         """
         
         
@@ -56,6 +60,7 @@ class Topic:
         self._total_write_queue_num = None
         self._permission = None
         self._brokers = None
+        self._message_type = None
         self.discriminator = None
 
         if name is not None:
@@ -68,6 +73,8 @@ class Topic:
             self.permission = permission
         if brokers is not None:
             self.brokers = brokers
+        if message_type is not None:
+            self.message_type = message_type
 
     @property
     def name(self):
@@ -178,6 +185,28 @@ class Topic:
         :type brokers: list[:class:`huaweicloudsdkrocketmq.v2.TopicBrokers`]
         """
         self._brokers = brokers
+
+    @property
+    def message_type(self):
+        """Gets the message_type of this Topic.
+
+        消息类型。
+
+        :return: The message_type of this Topic.
+        :rtype: str
+        """
+        return self._message_type
+
+    @message_type.setter
+    def message_type(self, message_type):
+        """Sets the message_type of this Topic.
+
+        消息类型。
+
+        :param message_type: The message_type of this Topic.
+        :type message_type: str
+        """
+        self._message_type = message_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

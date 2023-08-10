@@ -20,17 +20,19 @@ class CreateTopicReq:
         'name': 'str',
         'brokers': 'list[str]',
         'queue_num': 'float',
-        'permission': 'str'
+        'permission': 'str',
+        'message_type': 'str'
     }
 
     attribute_map = {
         'name': 'name',
         'brokers': 'brokers',
         'queue_num': 'queue_num',
-        'permission': 'permission'
+        'permission': 'permission',
+        'message_type': 'message_type'
     }
 
-    def __init__(self, name=None, brokers=None, queue_num=None, permission=None):
+    def __init__(self, name=None, brokers=None, queue_num=None, permission=None, message_type=None):
         """CreateTopicReq
 
         The model defined in huaweicloud sdk
@@ -43,6 +45,8 @@ class CreateTopicReq:
         :type queue_num: float
         :param permission: 权限。
         :type permission: str
+        :param message_type: 消息类型。
+        :type message_type: str
         """
         
         
@@ -51,6 +55,7 @@ class CreateTopicReq:
         self._brokers = None
         self._queue_num = None
         self._permission = None
+        self._message_type = None
         self.discriminator = None
 
         if name is not None:
@@ -61,6 +66,8 @@ class CreateTopicReq:
             self.queue_num = queue_num
         if permission is not None:
             self.permission = permission
+        if message_type is not None:
+            self.message_type = message_type
 
     @property
     def name(self):
@@ -149,6 +156,28 @@ class CreateTopicReq:
         :type permission: str
         """
         self._permission = permission
+
+    @property
+    def message_type(self):
+        """Gets the message_type of this CreateTopicReq.
+
+        消息类型。
+
+        :return: The message_type of this CreateTopicReq.
+        :rtype: str
+        """
+        return self._message_type
+
+    @message_type.setter
+    def message_type(self, message_type):
+        """Sets the message_type of this CreateTopicReq.
+
+        消息类型。
+
+        :param message_type: The message_type of this CreateTopicReq.
+        :type message_type: str
+        """
+        self._message_type = message_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

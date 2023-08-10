@@ -27,6 +27,7 @@ class SubCustomerMonthlyBillDetail:
         'charging_mode': 'int',
         'trade_time': 'str',
         'trade_id': 'str',
+        'id': 'str',
         'bill_detail_type': 'int',
         'resource_id': 'str',
         'resource_name': 'str',
@@ -76,6 +77,7 @@ class SubCustomerMonthlyBillDetail:
         'charging_mode': 'charging_mode',
         'trade_time': 'trade_time',
         'trade_id': 'trade_id',
+        'id': 'id',
         'bill_detail_type': 'bill_detail_type',
         'resource_id': 'resource_id',
         'resource_name': 'resource_name',
@@ -114,7 +116,7 @@ class SubCustomerMonthlyBillDetail:
         'sub_resource_name': 'sub_resource_name'
     }
 
-    def __init__(self, bill_cycle=None, customer_id=None, association_type=None, service_type_code=None, resource_type_code=None, service_type_name=None, resource_type_name=None, charging_mode=None, trade_time=None, trade_id=None, bill_detail_type=None, resource_id=None, resource_name=None, product_spec_desc=None, region_code=None, product_id=None, product_name=None, resource_tag=None, consume_time=None, usage_type=None, usage_amount=None, usage_measure_id=None, free_resource_usage=None, free_resource_measure_id=None, ri_usage=None, ri_usage_measure_id=None, official_amount=None, official_discount_amount=None, payment_amount=None, cash_amount=None, credit_amount=None, coupon_amount=None, flexipurchase_coupon_amount=None, stored_value_card_amount=None, debt_amount=None, writeoff_amount=None, period_type=None, account_manager_id=None, partner_id=None, region_name=None, sub_service_type_code=None, sub_service_type_name=None, sub_resource_type_code=None, sub_resource_type_name=None, sub_resource_id=None, sub_resource_name=None):
+    def __init__(self, bill_cycle=None, customer_id=None, association_type=None, service_type_code=None, resource_type_code=None, service_type_name=None, resource_type_name=None, charging_mode=None, trade_time=None, trade_id=None, id=None, bill_detail_type=None, resource_id=None, resource_name=None, product_spec_desc=None, region_code=None, product_id=None, product_name=None, resource_tag=None, consume_time=None, usage_type=None, usage_amount=None, usage_measure_id=None, free_resource_usage=None, free_resource_measure_id=None, ri_usage=None, ri_usage_measure_id=None, official_amount=None, official_discount_amount=None, payment_amount=None, cash_amount=None, credit_amount=None, coupon_amount=None, flexipurchase_coupon_amount=None, stored_value_card_amount=None, debt_amount=None, writeoff_amount=None, period_type=None, account_manager_id=None, partner_id=None, region_name=None, sub_service_type_code=None, sub_service_type_name=None, sub_resource_type_code=None, sub_resource_type_name=None, sub_resource_id=None, sub_resource_name=None):
         """SubCustomerMonthlyBillDetail
 
         The model defined in huaweicloud sdk
@@ -139,6 +141,8 @@ class SubCustomerMonthlyBillDetail:
         :type trade_time: str
         :param trade_id: 订单ID或交易ID，扣费维度的唯一标识。 账单类型为1，2，3，4，8时为订单ID。其它场景下为交易ID。非月末扣费：应收ID月末扣费：账单ID
         :type trade_id: str
+        :param id: 唯一标识。
+        :type id: str
         :param bill_detail_type: 账单类型。 1：消费-新购2：消费-续订3：消费-变更8：消费-自动续订5：消费-使用12：消费-按时计费4：退款-退订9：调账-补偿13：消费-退订手续费增收14：消费-服务支持计划月末补扣16：调账-扣费18：消费-按月付费20：退款-变更 100：退款-退订税金101：调账-补偿税金102：调账-扣费税金
         :type bill_detail_type: int
         :param resource_id: 资源ID。
@@ -225,6 +229,7 @@ class SubCustomerMonthlyBillDetail:
         self._charging_mode = None
         self._trade_time = None
         self._trade_id = None
+        self._id = None
         self._bill_detail_type = None
         self._resource_id = None
         self._resource_name = None
@@ -283,6 +288,8 @@ class SubCustomerMonthlyBillDetail:
             self.trade_time = trade_time
         if trade_id is not None:
             self.trade_id = trade_id
+        if id is not None:
+            self.id = id
         if bill_detail_type is not None:
             self.bill_detail_type = bill_detail_type
         if resource_id is not None:
@@ -575,6 +582,28 @@ class SubCustomerMonthlyBillDetail:
         :type trade_id: str
         """
         self._trade_id = trade_id
+
+    @property
+    def id(self):
+        """Gets the id of this SubCustomerMonthlyBillDetail.
+
+        唯一标识。
+
+        :return: The id of this SubCustomerMonthlyBillDetail.
+        :rtype: str
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """Sets the id of this SubCustomerMonthlyBillDetail.
+
+        唯一标识。
+
+        :param id: The id of this SubCustomerMonthlyBillDetail.
+        :type id: str
+        """
+        self._id = id
 
     @property
     def bill_detail_type(self):

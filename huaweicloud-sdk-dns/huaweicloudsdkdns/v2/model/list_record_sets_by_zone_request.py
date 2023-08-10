@@ -53,7 +53,7 @@ class ListRecordSetsByZoneRequest:
 
         :param zone_id: 所属zone id。
         :type zone_id: str
-        :param search_mode: 查询条件搜索模式。  取值范围：  like：模糊搜索 equal：精确搜索 默认值为equal。
+        :param search_mode: 查询条件搜索模式。  取值范围：  like：模糊搜索 equal：精确搜索
         :type search_mode: str
         :param marker: 分页查询起始的资源ID，为空时为查询第一页。  默认值为空。
         :type marker: str
@@ -143,7 +143,7 @@ class ListRecordSetsByZoneRequest:
     def search_mode(self):
         """Gets the search_mode of this ListRecordSetsByZoneRequest.
 
-        查询条件搜索模式。  取值范围：  like：模糊搜索 equal：精确搜索 默认值为equal。
+        查询条件搜索模式。  取值范围：  like：模糊搜索 equal：精确搜索
 
         :return: The search_mode of this ListRecordSetsByZoneRequest.
         :rtype: str
@@ -154,7 +154,7 @@ class ListRecordSetsByZoneRequest:
     def search_mode(self, search_mode):
         """Sets the search_mode of this ListRecordSetsByZoneRequest.
 
-        查询条件搜索模式。  取值范围：  like：模糊搜索 equal：精确搜索 默认值为equal。
+        查询条件搜索模式。  取值范围：  like：模糊搜索 equal：精确搜索
 
         :param search_mode: The search_mode of this ListRecordSetsByZoneRequest.
         :type search_mode: str

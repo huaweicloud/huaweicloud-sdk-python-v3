@@ -34,7 +34,8 @@ class MyanmarIdcardResult:
         'confidence': 'MyanmarIdcardConfidence',
         'portrait_image': 'str',
         'portrait_location': 'list[list[int]]',
-        'idcard_type': 'str'
+        'idcard_type': 'str',
+        'translation_info': 'MyanmarIdcardTranslationInfo'
     }
 
     attribute_map = {
@@ -55,10 +56,11 @@ class MyanmarIdcardResult:
         'confidence': 'confidence',
         'portrait_image': 'portrait_image',
         'portrait_location': 'portrait_location',
-        'idcard_type': 'idcard_type'
+        'idcard_type': 'idcard_type',
+        'translation_info': 'translation_info'
     }
 
-    def __init__(self, side=None, _class=None, nrc_id=None, issue_date=None, name=None, father_name=None, birth=None, bloodlines_religion=None, height=None, blood_group=None, card_id=None, nrc_id_back=None, profession=None, address=None, confidence=None, portrait_image=None, portrait_location=None, idcard_type=None):
+    def __init__(self, side=None, _class=None, nrc_id=None, issue_date=None, name=None, father_name=None, birth=None, bloodlines_religion=None, height=None, blood_group=None, card_id=None, nrc_id_back=None, profession=None, address=None, confidence=None, portrait_image=None, portrait_location=None, idcard_type=None, translation_info=None):
         """MyanmarIdcardResult
 
         The model defined in huaweicloud sdk
@@ -99,6 +101,8 @@ class MyanmarIdcardResult:
         :type portrait_location: list[list[int]]
         :param idcard_type: 身份证的类型。取值如下所示： - normal：身份证原件 - copy：复印的身份证 当输入参数“return_idcard_type”为“true”时，才返回该参数。 
         :type idcard_type: str
+        :param translation_info: 
+        :type translation_info: :class:`huaweicloudsdkocr.v1.MyanmarIdcardTranslationInfo`
         """
         
         
@@ -121,6 +125,7 @@ class MyanmarIdcardResult:
         self._portrait_image = None
         self._portrait_location = None
         self._idcard_type = None
+        self._translation_info = None
         self.discriminator = None
 
         if side is not None:
@@ -159,6 +164,8 @@ class MyanmarIdcardResult:
             self.portrait_location = portrait_location
         if idcard_type is not None:
             self.idcard_type = idcard_type
+        if translation_info is not None:
+            self.translation_info = translation_info
 
     @property
     def side(self):
@@ -551,6 +558,24 @@ class MyanmarIdcardResult:
         :type idcard_type: str
         """
         self._idcard_type = idcard_type
+
+    @property
+    def translation_info(self):
+        """Gets the translation_info of this MyanmarIdcardResult.
+
+        :return: The translation_info of this MyanmarIdcardResult.
+        :rtype: :class:`huaweicloudsdkocr.v1.MyanmarIdcardTranslationInfo`
+        """
+        return self._translation_info
+
+    @translation_info.setter
+    def translation_info(self, translation_info):
+        """Sets the translation_info of this MyanmarIdcardResult.
+
+        :param translation_info: The translation_info of this MyanmarIdcardResult.
+        :type translation_info: :class:`huaweicloudsdkocr.v1.MyanmarIdcardTranslationInfo`
+        """
+        self._translation_info = translation_info
 
     def to_dict(self):
         """Returns the model properties as a dict"""

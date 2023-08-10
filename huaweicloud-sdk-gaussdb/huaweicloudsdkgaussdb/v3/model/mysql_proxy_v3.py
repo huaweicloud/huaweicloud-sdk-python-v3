@@ -36,7 +36,8 @@ class MysqlProxyV3:
         'connection_pool_type': 'str',
         'switch_connection_pool_type_enabled': 'bool',
         'route_mode': 'int',
-        'balance_route_mode_enabled': 'bool'
+        'balance_route_mode_enabled': 'bool',
+        'consistence_mode': 'str'
     }
 
     attribute_map = {
@@ -59,10 +60,11 @@ class MysqlProxyV3:
         'connection_pool_type': 'connection_pool_type',
         'switch_connection_pool_type_enabled': 'switch_connection_pool_type_enabled',
         'route_mode': 'route_mode',
-        'balance_route_mode_enabled': 'balance_route_mode_enabled'
+        'balance_route_mode_enabled': 'balance_route_mode_enabled',
+        'consistence_mode': 'consistence_mode'
     }
 
-    def __init__(self, pool_id=None, status=None, address=None, port=None, pool_status=None, delay_threshold_in_seconds=None, elb_vip=None, eip=None, vcpus=None, ram=None, node_num=None, mode=None, nodes=None, flavor_ref=None, name=None, transaction_split=None, connection_pool_type=None, switch_connection_pool_type_enabled=None, route_mode=None, balance_route_mode_enabled=None):
+    def __init__(self, pool_id=None, status=None, address=None, port=None, pool_status=None, delay_threshold_in_seconds=None, elb_vip=None, eip=None, vcpus=None, ram=None, node_num=None, mode=None, nodes=None, flavor_ref=None, name=None, transaction_split=None, connection_pool_type=None, switch_connection_pool_type_enabled=None, route_mode=None, balance_route_mode_enabled=None, consistence_mode=None):
         """MysqlProxyV3
 
         The model defined in huaweicloud sdk
@@ -107,6 +109,8 @@ class MysqlProxyV3:
         :type route_mode: int
         :param balance_route_mode_enabled: 数据库代理版本是否支持负载均衡模式。  取值范围: - true 支持; - false 不支持。
         :type balance_route_mode_enabled: bool
+        :param consistence_mode: 一致性模式。默认值为空，此时以会话一致性参数session_consistence为准。 - session: 会话一致性 - global: 全局一致性 - eventual: 最终一致性
+        :type consistence_mode: str
         """
         
         
@@ -131,6 +135,7 @@ class MysqlProxyV3:
         self._switch_connection_pool_type_enabled = None
         self._route_mode = None
         self._balance_route_mode_enabled = None
+        self._consistence_mode = None
         self.discriminator = None
 
         if pool_id is not None:
@@ -173,6 +178,8 @@ class MysqlProxyV3:
             self.route_mode = route_mode
         if balance_route_mode_enabled is not None:
             self.balance_route_mode_enabled = balance_route_mode_enabled
+        if consistence_mode is not None:
+            self.consistence_mode = consistence_mode
 
     @property
     def pool_id(self):
@@ -613,6 +620,28 @@ class MysqlProxyV3:
         :type balance_route_mode_enabled: bool
         """
         self._balance_route_mode_enabled = balance_route_mode_enabled
+
+    @property
+    def consistence_mode(self):
+        """Gets the consistence_mode of this MysqlProxyV3.
+
+        一致性模式。默认值为空，此时以会话一致性参数session_consistence为准。 - session: 会话一致性 - global: 全局一致性 - eventual: 最终一致性
+
+        :return: The consistence_mode of this MysqlProxyV3.
+        :rtype: str
+        """
+        return self._consistence_mode
+
+    @consistence_mode.setter
+    def consistence_mode(self, consistence_mode):
+        """Sets the consistence_mode of this MysqlProxyV3.
+
+        一致性模式。默认值为空，此时以会话一致性参数session_consistence为准。 - session: 会话一致性 - global: 全局一致性 - eventual: 最终一致性
+
+        :param consistence_mode: The consistence_mode of this MysqlProxyV3.
+        :type consistence_mode: str
+        """
+        self._consistence_mode = consistence_mode
 
     def to_dict(self):
         """Returns the model properties as a dict"""

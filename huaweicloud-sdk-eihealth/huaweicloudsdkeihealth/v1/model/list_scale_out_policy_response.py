@@ -34,7 +34,7 @@ class ListScaleOutPolicyResponse(SdkResponse):
 
         :param count: 总数
         :type count: int
-        :param policies: 计算资源列表
+        :param policies: 扩容策略列表
         :type policies: list[:class:`huaweicloudsdkeihealth.v1.ScaleOutPolicyRsp`]
         """
         
@@ -75,7 +75,7 @@ class ListScaleOutPolicyResponse(SdkResponse):
     def policies(self):
         """Gets the policies of this ListScaleOutPolicyResponse.
 
-        计算资源列表
+        扩容策略列表
 
         :return: The policies of this ListScaleOutPolicyResponse.
         :rtype: list[:class:`huaweicloudsdkeihealth.v1.ScaleOutPolicyRsp`]
@@ -86,7 +86,7 @@ class ListScaleOutPolicyResponse(SdkResponse):
     def policies(self, policies):
         """Sets the policies of this ListScaleOutPolicyResponse.
 
-        计算资源列表
+        扩容策略列表
 
         :param policies: The policies of this ListScaleOutPolicyResponse.
         :type policies: list[:class:`huaweicloudsdkeihealth.v1.ScaleOutPolicyRsp`]

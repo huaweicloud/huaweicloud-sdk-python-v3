@@ -35,11 +35,11 @@ class UpdateUserByDomainReq:
 
         The model defined in huaweicloud sdk
 
-        :param password: 新密码，在8-32位之间支持用户自定义密码长度，至少包含以下四种字符中的三种： 大写字母、小写字母、数字和特殊字符。
+        :param password: 新密码，在8-32位之间支持用户自定义密码长度，至少包含以下四种字符中的两种： 大写字母、小写字母、数字和特殊字符。
         :type password: str
-        :param mobile: 用户手机号，纯数字，长度小于等于32位。必须与国家码同时存在。
+        :param mobile: 用户手机号，纯数字，长度小于等于32位，当且仅当重置手机号时传入空串。必须与国家码同时存在。
         :type mobile: str
-        :param areacode: 国家码。中国大陆为“0086”
+        :param areacode: 国家码，当且仅当重置手机号时传入空串。中国大陆为“0086”
         :type areacode: str
         :param email: 用户邮箱，需符合邮箱格式
         :type email: str
@@ -66,7 +66,7 @@ class UpdateUserByDomainReq:
     def password(self):
         """Gets the password of this UpdateUserByDomainReq.
 
-        新密码，在8-32位之间支持用户自定义密码长度，至少包含以下四种字符中的三种： 大写字母、小写字母、数字和特殊字符。
+        新密码，在8-32位之间支持用户自定义密码长度，至少包含以下四种字符中的两种： 大写字母、小写字母、数字和特殊字符。
 
         :return: The password of this UpdateUserByDomainReq.
         :rtype: str
@@ -77,7 +77,7 @@ class UpdateUserByDomainReq:
     def password(self, password):
         """Sets the password of this UpdateUserByDomainReq.
 
-        新密码，在8-32位之间支持用户自定义密码长度，至少包含以下四种字符中的三种： 大写字母、小写字母、数字和特殊字符。
+        新密码，在8-32位之间支持用户自定义密码长度，至少包含以下四种字符中的两种： 大写字母、小写字母、数字和特殊字符。
 
         :param password: The password of this UpdateUserByDomainReq.
         :type password: str
@@ -88,7 +88,7 @@ class UpdateUserByDomainReq:
     def mobile(self):
         """Gets the mobile of this UpdateUserByDomainReq.
 
-        用户手机号，纯数字，长度小于等于32位。必须与国家码同时存在。
+        用户手机号，纯数字，长度小于等于32位，当且仅当重置手机号时传入空串。必须与国家码同时存在。
 
         :return: The mobile of this UpdateUserByDomainReq.
         :rtype: str
@@ -99,7 +99,7 @@ class UpdateUserByDomainReq:
     def mobile(self, mobile):
         """Sets the mobile of this UpdateUserByDomainReq.
 
-        用户手机号，纯数字，长度小于等于32位。必须与国家码同时存在。
+        用户手机号，纯数字，长度小于等于32位，当且仅当重置手机号时传入空串。必须与国家码同时存在。
 
         :param mobile: The mobile of this UpdateUserByDomainReq.
         :type mobile: str
@@ -110,7 +110,7 @@ class UpdateUserByDomainReq:
     def areacode(self):
         """Gets the areacode of this UpdateUserByDomainReq.
 
-        国家码。中国大陆为“0086”
+        国家码，当且仅当重置手机号时传入空串。中国大陆为“0086”
 
         :return: The areacode of this UpdateUserByDomainReq.
         :rtype: str
@@ -121,7 +121,7 @@ class UpdateUserByDomainReq:
     def areacode(self, areacode):
         """Sets the areacode of this UpdateUserByDomainReq.
 
-        国家码。中国大陆为“0086”
+        国家码，当且仅当重置手机号时传入空串。中国大陆为“0086”
 
         :param areacode: The areacode of this UpdateUserByDomainReq.
         :type areacode: str
