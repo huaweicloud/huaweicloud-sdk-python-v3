@@ -12,7 +12,7 @@ jobs:
         fetch-depth: 0
     - name: config
       run: |
-        git config --global http.postBuffer 524288000
+        git lfs install
         git config user.name ${{ vars.SDK_USERNAME }}
         git config user.email ${{ vars.SDK_EMAIL }}
     - name: push && tag && release
