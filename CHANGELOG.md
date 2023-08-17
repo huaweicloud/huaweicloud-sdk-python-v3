@@ -1,3 +1,359 @@
+# 3.1.54 2023-08-17
+
+### HuaweiCloud SDK AOS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **UpdateStack**
+    - changes of request param
+      - `+ agencies.agency_urn`
+  - **GetStackMetadata**
+    - changes of response param
+      - `+ agencies.agency_urn`
+  - **CreateStack**
+    - changes of request param
+      - `+ agencies.agency_urn`
+
+### HuaweiCloud SDK APIG
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListApiRuntimeDefinitionV2**
+    - changes of response param
+      - `+ req_protocol: enum value [GRPCS]`
+      - `+ backend_type: enum value [GRPC]`
+  - **ShowDetailsOfApiV2**
+    - changes of response param
+      - `+ req_protocol: enum value [GRPCS]`
+      - `+ backend_type: enum value [GRPC]`
+      - `+ policy_https.req_protocol: enum value [GRPCS]`
+      - `+ backend_api.req_protocol: enum value [GRPCS]`
+  - **UpdateApiV2**
+    - changes of request param
+      - `+ req_protocol: enum value [GRPCS]`
+      - `+ backend_type: enum value [GRPC]`
+      - `+ policy_https.req_protocol: enum value [GRPCS]`
+      - `+ backend_api.req_protocol: enum value [GRPCS]`
+    - changes of response param
+      - `+ req_protocol: enum value [GRPCS]`
+      - `+ backend_type: enum value [GRPC]`
+      - `+ policy_https.req_protocol: enum value [GRPCS]`
+      - `+ backend_api.req_protocol: enum value [GRPCS]`
+  - **ListApiVersionDetailV2**
+    - changes of response param
+      - `+ req_protocol: enum value [GRPCS]`
+      - `+ backend_type: enum value [GRPC]`
+      - `+ policy_https.req_protocol: enum value [GRPCS]`
+      - `+ backend_api.req_protocol: enum value [GRPCS]`
+  - **CreateApiV2**
+    - changes of request param
+      - `+ req_protocol: enum value [GRPCS]`
+      - `+ backend_type: enum value [GRPC]`
+      - `+ policy_https.req_protocol: enum value [GRPCS]`
+      - `+ backend_api.req_protocol: enum value [GRPCS]`
+    - changes of response param
+      - `+ req_protocol: enum value [GRPCS]`
+      - `+ backend_type: enum value [GRPC]`
+      - `+ policy_https.req_protocol: enum value [GRPCS]`
+      - `+ backend_api.req_protocol: enum value [GRPCS]`
+  - **ListApisV2**
+    - changes of response param
+      - `+ apis.req_protocol: enum value [GRPCS]`
+      - `+ apis.backend_type: enum value [GRPC]`
+      - `+ apis.backend_api.req_protocol: enum value [GRPCS]`
+
+### HuaweiCloud SDK CloudRTC
+
+- _Features_
+  - Support the interfaces `ListRtcAbnormalEvent`, `ListRtcEvent`, `ListObsBuckets`, `ListObsBucketObjects`, `UpdateObsBucketAuthority`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK Cloudtest
+
+- _Features_
+  - Support the interfaces `ShowUserExecuteTestCaseInfo`, `ShowTestCaseAndDefectInfo`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK DCS
+
+- _Features_
+  - Support the interface `ShowNodesInformation`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowInstance**
+    - changes of response param
+      - `+ cloud_service_type_code`
+      - `+ inquery_spec_code`
+      - `+ cloud_resource_type_code`
+
+### HuaweiCloud SDK ECS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateServers**
+    - changes of request param
+      - `+ server.root_volume.iops`
+      - `+ server.root_volume.throughput`
+      - `+ server.root_volume.volumetype: enum value [GPSSD2,ESSD2]`
+      - `+ server.data_volumes.iops`
+      - `+ server.data_volumes.throughput`
+      - `+ server.data_volumes.volumetype: enum value [GPSSD2,ESSD2]`
+  - **CreatePostPaidServers**
+    - changes of request param
+      - `+ server.data_volumes.iops`
+      - `+ server.data_volumes.throughput`
+      - `+ server.data_volumes.volumetype: enum value [GPSSD2,ESSD2]`
+      - `+ server.root_volume.iops`
+      - `+ server.root_volume.throughput`
+      - `+ server.root_volume.volumetype: enum value [GPSSD2,ESSD2]`
+
+### HuaweiCloud SDK eiHealth
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowEnv**
+    - changes of response param
+      - `+ public_bucket_path`
+
+### HuaweiCloud SDK GaussDB
+
+- _Features_
+  - Support the interfaces `ModifyGaussMysqlDns`, `CreateGaussMysqlDns`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowGaussMySqlInstanceInfo**
+    - changes of response param
+      - `+ instance.private_dns_names`
+  - **ListGaussMySqlInstanceDetailInfo**
+    - changes of response param
+      - `+ instances.private_dns_names`
+
+### HuaweiCloud SDK ImageSearch
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the following interfaces：
+    - `RunCreateInstance`
+    - `RunModifyPicture`
+    - `RunAddPicture`
+    - `RunDeletePicture`
+    - `RunSearchPicture`
+    - `RunCheckPicture`
+    - `RunQueryInstance`
+    - `RunDeleteInstance`
+
+### HuaweiCloud SDK Kafka
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **BatchRestartOrDeleteInstances**
+    - changes of request param
+      - `+ allFailure`
+      - `- all_failure`
+  - **CreateInstanceByEngine**
+    - changes of request param
+      - `- engine_version: enum value [2.3.0]`
+  - **CreatePostPaidInstance**
+    - changes of request param
+      - `- engine_version: enum value [2.3.0]`
+
+### HuaweiCloud SDK Live
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListSnapshotConfigs**
+    - changes of response param
+      - `* body: object<LiveSnapshotConfig> -> list<LiveSnapshotConfig>`
+
+### HuaweiCloud SDK MetaStudio
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListAssetSummary**
+    - changes of response param
+      - `+ asset_list.asset_type: enum value [MUSIC]`
+  - **ShowAsset**
+    - changes of response param
+      - `+ asset_type: enum value [MUSIC]`
+      - `+ asset_state: enum value [BLOCK]`
+      - `+ asset_extra_meta.human_model_2d_meta`
+  - **UpdateDigitalAsset**
+    - changes of request param
+      - `+ asset_type: enum value [MUSIC]`
+      - `+ asset_extra_meta.human_model_2d_meta`
+    - changes of response param
+      - `+ asset_type: enum value [MUSIC]`
+      - `+ asset_state: enum value [BLOCK]`
+      - `+ asset_extra_meta.human_model_2d_meta`
+  - **CreateDigitalAsset**
+    - changes of request param
+      - `+ asset_type: enum value [MATERIAL,MUSIC]`
+      - `+ asset_extra_meta.human_model_2d_meta`
+  - **ListAssets**
+    - changes of request param
+      - `+ X-User-MePrivilege`
+      - `+ action_editable`
+    - changes of response param
+      - `+ assets.asset_type: enum value [MUSIC]`
+      - `+ assets.asset_state: enum value [BLOCK]`
+      - `+ assets.asset_extra_meta.human_model_2d_meta`
+
+### HuaweiCloud SDK MPC
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateThumbnailsTask**
+    - changes of request param
+      - `+ thumbnail_para.dots_ms`
+      - `+ thumbnail_para.type: enum value [DOTS_MS]`
+  - **CreateTranscodingTask**
+    - changes of request param
+      - `+ thumbnail.params.dots_ms`
+      - `+ thumbnail.params.type: enum value [DOTS_MS]`
+
+### HuaweiCloud SDK RabbitMQ
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **BatchRestartOrDeleteInstances**
+    - changes of request param
+      - `+ allFailure`
+      - `- all_failure`
+  - **CreatePostPaidInstanceByEngine**
+    - changes of request param
+      - `- engine_version: enum value [3.7.17]`
+  - **CreatePostPaidInstance**
+    - changes of request param
+      - `- engine_version: enum value [3.7.17]`
+
+### HuaweiCloud SDK RocketMQ
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **BatchDeleteInstances**
+    - changes of request param
+      - `+ allFailure`
+      - `- all_failure`
+  - **CreatePostPaidInstance**
+    - changes of request param
+      - `- engine_version: enum value [5.x]`
+
+### HuaweiCloud SDK ServiceStage
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ModifyApplication**
+    - changes of request param
+      - `+ enterprise_project_id`
+  - **CreateEnvironment**
+    - changes of response param
+      - `+ project_id`
+      - `- resources`
+  - **ShowEnvironments**
+    - changes of response param
+      - `+ environments.project_id`
+  - **ShowEnvironmentInfo**
+    - changes of response param
+      - `+ project_id`
+  - **ModifyEnvironment**
+    - changes of request param
+      - `- enterprise_project_id`
+    - changes of response param
+      - `+ project_id`
+  - **ShowComponentInfo**
+    - changes of response param
+      - `+ affinity.az`
+      - `+ affinity.node`
+      - `+ affinity.component`
+      - `- affinity.kind`
+      - `- affinity.condition`
+      - `- affinity.weight`
+      - `- affinity.match_expressions`
+  - **ModifyComponent**
+    - changes of request param
+      - `+ affinity.az`
+      - `+ affinity.node`
+      - `+ affinity.component`
+      - `- affinity.kind`
+      - `- affinity.condition`
+      - `- affinity.weight`
+      - `- affinity.match_expressions`
+    - changes of response param
+      - `- component_id`
+  - **CreateComponent**
+    - changes of request param
+      - `+ affinity.az`
+      - `+ affinity.node`
+      - `+ affinity.component`
+      - `- affinity.kind`
+      - `- affinity.condition`
+      - `- affinity.weight`
+      - `- affinity.match_expressions`
+  - **ShowComponentsInApplication**
+    - changes of response param
+      - `+ components.external_accesses`
+  - **ShowComponents**
+    - changes of response param
+      - `+ components.external_accesses`
+
+### HuaweiCloud SDK VPC
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateSecurityGroupRule**
+    - changes of request param
+      - `+ security_group_rule.remote_address_group_id`
+  - **NeutronCreateSecurityGroupRule**
+    - changes of request param
+      - `+ security_group_rule.remote_address_group_id`
+
 # 3.1.53 2023-08-10
 
 ### HuaweiCloud SDK BSS

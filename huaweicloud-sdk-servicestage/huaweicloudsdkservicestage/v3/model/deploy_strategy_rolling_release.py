@@ -38,8 +38,7 @@ class DeployStrategyRollingRelease:
         self._batches = None
         self.discriminator = None
 
-        if batches is not None:
-            self.batches = batches
+        self.batches = batches
 
     @property
     def batches(self):

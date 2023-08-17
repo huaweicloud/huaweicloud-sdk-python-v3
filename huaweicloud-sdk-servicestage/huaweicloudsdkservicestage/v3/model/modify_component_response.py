@@ -18,58 +18,29 @@ class ModifyComponentResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'component_id': 'str',
         'job_id': 'str'
     }
 
     attribute_map = {
-        'component_id': 'component_id',
         'job_id': 'job_id'
     }
 
-    def __init__(self, component_id=None, job_id=None):
+    def __init__(self, job_id=None):
         """ModifyComponentResponse
 
         The model defined in huaweicloud sdk
 
-        :param component_id: 组件id
-        :type component_id: str
         :param job_id: 任务id
         :type job_id: str
         """
         
         super(ModifyComponentResponse, self).__init__()
 
-        self._component_id = None
         self._job_id = None
         self.discriminator = None
 
-        if component_id is not None:
-            self.component_id = component_id
         if job_id is not None:
             self.job_id = job_id
-
-    @property
-    def component_id(self):
-        """Gets the component_id of this ModifyComponentResponse.
-
-        组件id
-
-        :return: The component_id of this ModifyComponentResponse.
-        :rtype: str
-        """
-        return self._component_id
-
-    @component_id.setter
-    def component_id(self, component_id):
-        """Sets the component_id of this ModifyComponentResponse.
-
-        组件id
-
-        :param component_id: The component_id of this ModifyComponentResponse.
-        :type component_id: str
-        """
-        self._component_id = component_id
 
     @property
     def job_id(self):

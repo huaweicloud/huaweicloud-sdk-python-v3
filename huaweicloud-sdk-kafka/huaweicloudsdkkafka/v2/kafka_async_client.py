@@ -3752,6 +3752,8 @@ class KafkaAsyncClient(Client):
 
         修改转储任务的配额。
         
+        2022年9月前创建的实例支持调用此接口新增转储任务配额，2022年9月及以后创建的实例，转储任务配额默认为最大值，由于转储任务配额不支持减少，调用此接口修改转储任务配额会报错。
+        
         Please refer to HUAWEI cloud API Explorer for details.
 
 

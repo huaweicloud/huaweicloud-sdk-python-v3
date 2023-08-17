@@ -55,11 +55,11 @@ class ApiPolicyHttpCreate:
 
         :param url_domain: 策略后端的Endpoint。  由域名（或IP地址）和端口号组成，总长度不超过255。格式为域名:端口（如：apig.example.com:7443）。如果不写端口，则HTTPS默认端口号为443， HTTP默认端口号为80。  支持环境变量，使用环境变量时，每个变量名的长度为3 ~ 32位的字符串，字符串由英文字母、数字、“_”、“-”组成，且只能以英文开头。
         :type url_domain: str
-        :param req_protocol: 请求协议：HTTP、HTTPS
+        :param req_protocol: 请求协议：HTTP、HTTPS、GRPCS，后端类型为GRPC时可选GRPCS
         :type req_protocol: str
-        :param req_method: 请求方式：GET、POST、PUT、DELETE、HEAD、PATCH、OPTIONS、ANY
+        :param req_method: 请求方式：GET、POST、PUT、DELETE、HEAD、PATCH、OPTIONS、ANY，后端类型为GRPC时固定为POST
         :type req_method: str
-        :param req_uri: 请求地址。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ . 等特殊字符，总长度不超过512，且满足URI规范。   支持环境变量，使用环境变量时，每个变量名的长度为3 ~ 32位的字符串，字符串由英文字母、数字、中划线、下划线组成，且只能以英文开头。  &gt; 需要服从URI规范。
+        :param req_uri: 请求地址。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ . 等特殊字符，总长度不超过512，且满足URI规范。   支持环境变量，使用环境变量时，每个变量名的长度为3 ~ 32位的字符串，字符串由英文字母、数字、中划线、下划线组成，且只能以英文开头。  &gt; 需要服从URI规范。  后端类型为GRPC时请求地址固定为/
         :type req_uri: str
         :param timeout: API网关请求后端服务的超时时间。最大超时时间可通过实例特性backend_timeout配置修改，可修改的上限为600000。  单位：毫秒。
         :type timeout: int
@@ -69,11 +69,11 @@ class ApiPolicyHttpCreate:
         :type effect_mode: str
         :param name: 策略后端名称。字符串由中文、英文字母、数字、下划线组成，且只能以中文或英文开头。
         :type name: str
-        :param backend_params: 后端参数列表
+        :param backend_params: 后端参数列表，后端类型为GRPC时不支持配置
         :type backend_params: list[:class:`huaweicloudsdkapig.v2.BackendParamBase`]
         :param conditions: 策略条件列表
         :type conditions: list[:class:`huaweicloudsdkapig.v2.ApiConditionBase`]
-        :param authorizer_id: 后端自定义认证对象的ID
+        :param authorizer_id: 后端自定义认证对象的ID，后端类型为GRPC时不支持后端自定义认证
         :type authorizer_id: str
         :param vpc_channel_info: 
         :type vpc_channel_info: :class:`huaweicloudsdkapig.v2.ApiBackendVpcReq`
@@ -145,7 +145,7 @@ class ApiPolicyHttpCreate:
     def req_protocol(self):
         """Gets the req_protocol of this ApiPolicyHttpCreate.
 
-        请求协议：HTTP、HTTPS
+        请求协议：HTTP、HTTPS、GRPCS，后端类型为GRPC时可选GRPCS
 
         :return: The req_protocol of this ApiPolicyHttpCreate.
         :rtype: str
@@ -156,7 +156,7 @@ class ApiPolicyHttpCreate:
     def req_protocol(self, req_protocol):
         """Sets the req_protocol of this ApiPolicyHttpCreate.
 
-        请求协议：HTTP、HTTPS
+        请求协议：HTTP、HTTPS、GRPCS，后端类型为GRPC时可选GRPCS
 
         :param req_protocol: The req_protocol of this ApiPolicyHttpCreate.
         :type req_protocol: str
@@ -167,7 +167,7 @@ class ApiPolicyHttpCreate:
     def req_method(self):
         """Gets the req_method of this ApiPolicyHttpCreate.
 
-        请求方式：GET、POST、PUT、DELETE、HEAD、PATCH、OPTIONS、ANY
+        请求方式：GET、POST、PUT、DELETE、HEAD、PATCH、OPTIONS、ANY，后端类型为GRPC时固定为POST
 
         :return: The req_method of this ApiPolicyHttpCreate.
         :rtype: str
@@ -178,7 +178,7 @@ class ApiPolicyHttpCreate:
     def req_method(self, req_method):
         """Sets the req_method of this ApiPolicyHttpCreate.
 
-        请求方式：GET、POST、PUT、DELETE、HEAD、PATCH、OPTIONS、ANY
+        请求方式：GET、POST、PUT、DELETE、HEAD、PATCH、OPTIONS、ANY，后端类型为GRPC时固定为POST
 
         :param req_method: The req_method of this ApiPolicyHttpCreate.
         :type req_method: str
@@ -189,7 +189,7 @@ class ApiPolicyHttpCreate:
     def req_uri(self):
         """Gets the req_uri of this ApiPolicyHttpCreate.
 
-        请求地址。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ . 等特殊字符，总长度不超过512，且满足URI规范。   支持环境变量，使用环境变量时，每个变量名的长度为3 ~ 32位的字符串，字符串由英文字母、数字、中划线、下划线组成，且只能以英文开头。  > 需要服从URI规范。
+        请求地址。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ . 等特殊字符，总长度不超过512，且满足URI规范。   支持环境变量，使用环境变量时，每个变量名的长度为3 ~ 32位的字符串，字符串由英文字母、数字、中划线、下划线组成，且只能以英文开头。  > 需要服从URI规范。  后端类型为GRPC时请求地址固定为/
 
         :return: The req_uri of this ApiPolicyHttpCreate.
         :rtype: str
@@ -200,7 +200,7 @@ class ApiPolicyHttpCreate:
     def req_uri(self, req_uri):
         """Sets the req_uri of this ApiPolicyHttpCreate.
 
-        请求地址。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ . 等特殊字符，总长度不超过512，且满足URI规范。   支持环境变量，使用环境变量时，每个变量名的长度为3 ~ 32位的字符串，字符串由英文字母、数字、中划线、下划线组成，且只能以英文开头。  > 需要服从URI规范。
+        请求地址。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ . 等特殊字符，总长度不超过512，且满足URI规范。   支持环境变量，使用环境变量时，每个变量名的长度为3 ~ 32位的字符串，字符串由英文字母、数字、中划线、下划线组成，且只能以英文开头。  > 需要服从URI规范。  后端类型为GRPC时请求地址固定为/
 
         :param req_uri: The req_uri of this ApiPolicyHttpCreate.
         :type req_uri: str
@@ -299,7 +299,7 @@ class ApiPolicyHttpCreate:
     def backend_params(self):
         """Gets the backend_params of this ApiPolicyHttpCreate.
 
-        后端参数列表
+        后端参数列表，后端类型为GRPC时不支持配置
 
         :return: The backend_params of this ApiPolicyHttpCreate.
         :rtype: list[:class:`huaweicloudsdkapig.v2.BackendParamBase`]
@@ -310,7 +310,7 @@ class ApiPolicyHttpCreate:
     def backend_params(self, backend_params):
         """Sets the backend_params of this ApiPolicyHttpCreate.
 
-        后端参数列表
+        后端参数列表，后端类型为GRPC时不支持配置
 
         :param backend_params: The backend_params of this ApiPolicyHttpCreate.
         :type backend_params: list[:class:`huaweicloudsdkapig.v2.BackendParamBase`]
@@ -343,7 +343,7 @@ class ApiPolicyHttpCreate:
     def authorizer_id(self):
         """Gets the authorizer_id of this ApiPolicyHttpCreate.
 
-        后端自定义认证对象的ID
+        后端自定义认证对象的ID，后端类型为GRPC时不支持后端自定义认证
 
         :return: The authorizer_id of this ApiPolicyHttpCreate.
         :rtype: str
@@ -354,7 +354,7 @@ class ApiPolicyHttpCreate:
     def authorizer_id(self, authorizer_id):
         """Sets the authorizer_id of this ApiPolicyHttpCreate.
 
-        后端自定义认证对象的ID
+        后端自定义认证对象的ID，后端类型为GRPC时不支持后端自定义认证
 
         :param authorizer_id: The authorizer_id of this ApiPolicyHttpCreate.
         :type authorizer_id: str

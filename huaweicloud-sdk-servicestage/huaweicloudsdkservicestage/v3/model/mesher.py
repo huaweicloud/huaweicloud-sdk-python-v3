@@ -38,8 +38,7 @@ class Mesher:
         self._port = None
         self.discriminator = None
 
-        if port is not None:
-            self.port = port
+        self.port = port
 
     @property
     def port(self):

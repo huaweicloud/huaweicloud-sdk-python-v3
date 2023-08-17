@@ -41,11 +41,11 @@ class ApiPolicyHttpBase:
 
         :param url_domain: 策略后端的Endpoint。  由域名（或IP地址）和端口号组成，总长度不超过255。格式为域名:端口（如：apig.example.com:7443）。如果不写端口，则HTTPS默认端口号为443， HTTP默认端口号为80。  支持环境变量，使用环境变量时，每个变量名的长度为3 ~ 32位的字符串，字符串由英文字母、数字、“_”、“-”组成，且只能以英文开头。
         :type url_domain: str
-        :param req_protocol: 请求协议：HTTP、HTTPS
+        :param req_protocol: 请求协议：HTTP、HTTPS、GRPCS，后端类型为GRPC时可选GRPCS
         :type req_protocol: str
-        :param req_method: 请求方式：GET、POST、PUT、DELETE、HEAD、PATCH、OPTIONS、ANY
+        :param req_method: 请求方式：GET、POST、PUT、DELETE、HEAD、PATCH、OPTIONS、ANY，后端类型为GRPC时固定为POST
         :type req_method: str
-        :param req_uri: 请求地址。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ . 等特殊字符，总长度不超过512，且满足URI规范。   支持环境变量，使用环境变量时，每个变量名的长度为3 ~ 32位的字符串，字符串由英文字母、数字、中划线、下划线组成，且只能以英文开头。  &gt; 需要服从URI规范。
+        :param req_uri: 请求地址。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ . 等特殊字符，总长度不超过512，且满足URI规范。   支持环境变量，使用环境变量时，每个变量名的长度为3 ~ 32位的字符串，字符串由英文字母、数字、中划线、下划线组成，且只能以英文开头。  &gt; 需要服从URI规范。  后端类型为GRPC时请求地址固定为/
         :type req_uri: str
         :param timeout: API网关请求后端服务的超时时间。最大超时时间可通过实例特性backend_timeout配置修改，可修改的上限为600000。  单位：毫秒。
         :type timeout: int
@@ -99,7 +99,7 @@ class ApiPolicyHttpBase:
     def req_protocol(self):
         """Gets the req_protocol of this ApiPolicyHttpBase.
 
-        请求协议：HTTP、HTTPS
+        请求协议：HTTP、HTTPS、GRPCS，后端类型为GRPC时可选GRPCS
 
         :return: The req_protocol of this ApiPolicyHttpBase.
         :rtype: str
@@ -110,7 +110,7 @@ class ApiPolicyHttpBase:
     def req_protocol(self, req_protocol):
         """Sets the req_protocol of this ApiPolicyHttpBase.
 
-        请求协议：HTTP、HTTPS
+        请求协议：HTTP、HTTPS、GRPCS，后端类型为GRPC时可选GRPCS
 
         :param req_protocol: The req_protocol of this ApiPolicyHttpBase.
         :type req_protocol: str
@@ -121,7 +121,7 @@ class ApiPolicyHttpBase:
     def req_method(self):
         """Gets the req_method of this ApiPolicyHttpBase.
 
-        请求方式：GET、POST、PUT、DELETE、HEAD、PATCH、OPTIONS、ANY
+        请求方式：GET、POST、PUT、DELETE、HEAD、PATCH、OPTIONS、ANY，后端类型为GRPC时固定为POST
 
         :return: The req_method of this ApiPolicyHttpBase.
         :rtype: str
@@ -132,7 +132,7 @@ class ApiPolicyHttpBase:
     def req_method(self, req_method):
         """Sets the req_method of this ApiPolicyHttpBase.
 
-        请求方式：GET、POST、PUT、DELETE、HEAD、PATCH、OPTIONS、ANY
+        请求方式：GET、POST、PUT、DELETE、HEAD、PATCH、OPTIONS、ANY，后端类型为GRPC时固定为POST
 
         :param req_method: The req_method of this ApiPolicyHttpBase.
         :type req_method: str
@@ -143,7 +143,7 @@ class ApiPolicyHttpBase:
     def req_uri(self):
         """Gets the req_uri of this ApiPolicyHttpBase.
 
-        请求地址。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ . 等特殊字符，总长度不超过512，且满足URI规范。   支持环境变量，使用环境变量时，每个变量名的长度为3 ~ 32位的字符串，字符串由英文字母、数字、中划线、下划线组成，且只能以英文开头。  > 需要服从URI规范。
+        请求地址。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ . 等特殊字符，总长度不超过512，且满足URI规范。   支持环境变量，使用环境变量时，每个变量名的长度为3 ~ 32位的字符串，字符串由英文字母、数字、中划线、下划线组成，且只能以英文开头。  > 需要服从URI规范。  后端类型为GRPC时请求地址固定为/
 
         :return: The req_uri of this ApiPolicyHttpBase.
         :rtype: str
@@ -154,7 +154,7 @@ class ApiPolicyHttpBase:
     def req_uri(self, req_uri):
         """Sets the req_uri of this ApiPolicyHttpBase.
 
-        请求地址。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ . 等特殊字符，总长度不超过512，且满足URI规范。   支持环境变量，使用环境变量时，每个变量名的长度为3 ~ 32位的字符串，字符串由英文字母、数字、中划线、下划线组成，且只能以英文开头。  > 需要服从URI规范。
+        请求地址。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ . 等特殊字符，总长度不超过512，且满足URI规范。   支持环境变量，使用环境变量时，每个变量名的长度为3 ~ 32位的字符串，字符串由英文字母、数字、中划线、下划线组成，且只能以英文开头。  > 需要服从URI规范。  后端类型为GRPC时请求地址固定为/
 
         :param req_uri: The req_uri of this ApiPolicyHttpBase.
         :type req_uri: str

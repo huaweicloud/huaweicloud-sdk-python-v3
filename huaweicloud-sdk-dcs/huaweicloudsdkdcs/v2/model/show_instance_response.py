@@ -75,7 +75,10 @@ class ShowInstanceResponse(SdkResponse):
         'db_number': 'int',
         'replica_count': 'int',
         'sharding_count': 'int',
-        'bandwidth_info': 'BandwidthInfo'
+        'bandwidth_info': 'BandwidthInfo',
+        'cloud_service_type_code': 'str',
+        'cloud_resource_type_code': 'str',
+        'inquery_spec_code': 'str'
     }
 
     attribute_map = {
@@ -136,10 +139,13 @@ class ShowInstanceResponse(SdkResponse):
         'db_number': 'db_number',
         'replica_count': 'replica_count',
         'sharding_count': 'sharding_count',
-        'bandwidth_info': 'bandwidth_info'
+        'bandwidth_info': 'bandwidth_info',
+        'cloud_service_type_code': 'cloud_service_type_code',
+        'cloud_resource_type_code': 'cloud_resource_type_code',
+        'inquery_spec_code': 'inquery_spec_code'
     }
 
-    def __init__(self, vpc_name=None, charging_mode=None, vpc_id=None, user_name=None, created_at=None, description=None, security_group_id=None, security_group_name=None, max_memory=None, used_memory=None, capacity=None, capacity_minor=None, maintain_begin=None, maintain_end=None, engine=None, no_password_access=None, ip=None, instance_backup_policy=None, az_codes=None, access_user=None, instance_id=None, port=None, user_id=None, name=None, spec_code=None, subnet_id=None, subnet_name=None, subnet_cidr=None, engine_version=None, order_id=None, status=None, domain_name=None, readonly_domain_name=None, enable_publicip=None, publicip_id=None, publicip_address=None, enable_ssl=None, service_upgrade=None, service_task_id=None, enterprise_project_id=None, backend_addrs=None, features=None, domain_name_info=None, transparent_client_ip_enable=None, sub_status=None, tags=None, cpu_type=None, enterprise_project_name=None, update_at=None, product_type=None, storage_type=None, launched_at=None, cache_mode=None, support_slow_log_flag=None, db_number=None, replica_count=None, sharding_count=None, bandwidth_info=None):
+    def __init__(self, vpc_name=None, charging_mode=None, vpc_id=None, user_name=None, created_at=None, description=None, security_group_id=None, security_group_name=None, max_memory=None, used_memory=None, capacity=None, capacity_minor=None, maintain_begin=None, maintain_end=None, engine=None, no_password_access=None, ip=None, instance_backup_policy=None, az_codes=None, access_user=None, instance_id=None, port=None, user_id=None, name=None, spec_code=None, subnet_id=None, subnet_name=None, subnet_cidr=None, engine_version=None, order_id=None, status=None, domain_name=None, readonly_domain_name=None, enable_publicip=None, publicip_id=None, publicip_address=None, enable_ssl=None, service_upgrade=None, service_task_id=None, enterprise_project_id=None, backend_addrs=None, features=None, domain_name_info=None, transparent_client_ip_enable=None, sub_status=None, tags=None, cpu_type=None, enterprise_project_name=None, update_at=None, product_type=None, storage_type=None, launched_at=None, cache_mode=None, support_slow_log_flag=None, db_number=None, replica_count=None, sharding_count=None, bandwidth_info=None, cloud_service_type_code=None, cloud_resource_type_code=None, inquery_spec_code=None):
         """ShowInstanceResponse
 
         The model defined in huaweicloud sdk
@@ -260,6 +266,12 @@ class ShowInstanceResponse(SdkResponse):
         :type sharding_count: int
         :param bandwidth_info: 
         :type bandwidth_info: :class:`huaweicloudsdkdcs.v2.BandwidthInfo`
+        :param cloud_service_type_code: 云服务类型编码。
+        :type cloud_service_type_code: str
+        :param cloud_resource_type_code: 云资源类型编码。
+        :type cloud_resource_type_code: str
+        :param inquery_spec_code: 运营系统中的规格编码
+        :type inquery_spec_code: str
         """
         
         super(ShowInstanceResponse, self).__init__()
@@ -322,6 +334,9 @@ class ShowInstanceResponse(SdkResponse):
         self._replica_count = None
         self._sharding_count = None
         self._bandwidth_info = None
+        self._cloud_service_type_code = None
+        self._cloud_resource_type_code = None
+        self._inquery_spec_code = None
         self.discriminator = None
 
         if vpc_name is not None:
@@ -440,6 +455,12 @@ class ShowInstanceResponse(SdkResponse):
             self.sharding_count = sharding_count
         if bandwidth_info is not None:
             self.bandwidth_info = bandwidth_info
+        if cloud_service_type_code is not None:
+            self.cloud_service_type_code = cloud_service_type_code
+        if cloud_resource_type_code is not None:
+            self.cloud_resource_type_code = cloud_resource_type_code
+        if inquery_spec_code is not None:
+            self.inquery_spec_code = inquery_spec_code
 
     @property
     def vpc_name(self):
@@ -1700,6 +1721,72 @@ class ShowInstanceResponse(SdkResponse):
         :type bandwidth_info: :class:`huaweicloudsdkdcs.v2.BandwidthInfo`
         """
         self._bandwidth_info = bandwidth_info
+
+    @property
+    def cloud_service_type_code(self):
+        """Gets the cloud_service_type_code of this ShowInstanceResponse.
+
+        云服务类型编码。
+
+        :return: The cloud_service_type_code of this ShowInstanceResponse.
+        :rtype: str
+        """
+        return self._cloud_service_type_code
+
+    @cloud_service_type_code.setter
+    def cloud_service_type_code(self, cloud_service_type_code):
+        """Sets the cloud_service_type_code of this ShowInstanceResponse.
+
+        云服务类型编码。
+
+        :param cloud_service_type_code: The cloud_service_type_code of this ShowInstanceResponse.
+        :type cloud_service_type_code: str
+        """
+        self._cloud_service_type_code = cloud_service_type_code
+
+    @property
+    def cloud_resource_type_code(self):
+        """Gets the cloud_resource_type_code of this ShowInstanceResponse.
+
+        云资源类型编码。
+
+        :return: The cloud_resource_type_code of this ShowInstanceResponse.
+        :rtype: str
+        """
+        return self._cloud_resource_type_code
+
+    @cloud_resource_type_code.setter
+    def cloud_resource_type_code(self, cloud_resource_type_code):
+        """Sets the cloud_resource_type_code of this ShowInstanceResponse.
+
+        云资源类型编码。
+
+        :param cloud_resource_type_code: The cloud_resource_type_code of this ShowInstanceResponse.
+        :type cloud_resource_type_code: str
+        """
+        self._cloud_resource_type_code = cloud_resource_type_code
+
+    @property
+    def inquery_spec_code(self):
+        """Gets the inquery_spec_code of this ShowInstanceResponse.
+
+        运营系统中的规格编码
+
+        :return: The inquery_spec_code of this ShowInstanceResponse.
+        :rtype: str
+        """
+        return self._inquery_spec_code
+
+    @inquery_spec_code.setter
+    def inquery_spec_code(self, inquery_spec_code):
+        """Sets the inquery_spec_code of this ShowInstanceResponse.
+
+        运营系统中的规格编码
+
+        :param inquery_spec_code: The inquery_spec_code of this ShowInstanceResponse.
+        :type inquery_spec_code: str
+        """
+        self._inquery_spec_code = inquery_spec_code
 
     def to_dict(self):
         """Returns the model properties as a dict"""

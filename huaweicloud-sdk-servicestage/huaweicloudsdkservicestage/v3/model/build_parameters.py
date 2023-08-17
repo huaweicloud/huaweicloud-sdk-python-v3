@@ -67,8 +67,7 @@ class BuildParameters:
             self.artifact_namespace = artifact_namespace
         if build_cmd is not None:
             self.build_cmd = build_cmd
-        if cluster_id is not None:
-            self.cluster_id = cluster_id
+        self.cluster_id = cluster_id
         if dockerfile_path is not None:
             self.dockerfile_path = dockerfile_path
         if environment_id is not None:

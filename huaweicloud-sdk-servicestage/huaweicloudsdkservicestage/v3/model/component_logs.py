@@ -53,14 +53,10 @@ class ComponentLogs:
         self._host_extend_path = None
         self.discriminator = None
 
-        if log_path is not None:
-            self.log_path = log_path
-        if rotate is not None:
-            self.rotate = rotate
-        if host_path is not None:
-            self.host_path = host_path
-        if host_extend_path is not None:
-            self.host_extend_path = host_extend_path
+        self.log_path = log_path
+        self.rotate = rotate
+        self.host_path = host_path
+        self.host_extend_path = host_extend_path
 
     @property
     def log_path(self):

@@ -53,14 +53,10 @@ class DeployStrategyGrayRelease:
         self._remaining_batch = None
         self.discriminator = None
 
-        if type is not None:
-            self.type = type
-        if first_batch_weight is not None:
-            self.first_batch_weight = first_batch_weight
-        if first_batch_replica is not None:
-            self.first_batch_replica = first_batch_replica
-        if remaining_batch is not None:
-            self.remaining_batch = remaining_batch
+        self.type = type
+        self.first_batch_weight = first_batch_weight
+        self.first_batch_replica = first_batch_replica
+        self.remaining_batch = remaining_batch
 
     @property
     def type(self):

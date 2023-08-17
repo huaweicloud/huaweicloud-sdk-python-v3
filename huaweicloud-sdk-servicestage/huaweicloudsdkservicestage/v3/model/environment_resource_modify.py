@@ -38,8 +38,7 @@ class EnvironmentResourceModify:
         self._resources = None
         self.discriminator = None
 
-        if resources is not None:
-            self.resources = resources
+        self.resources = resources
 
     @property
     def resources(self):

@@ -48,8 +48,7 @@ class ComponentEnvironment:
         self._value_from = None
         self.discriminator = None
 
-        if name is not None:
-            self.name = name
+        self.name = name
         if value is not None:
             self.value = value
         if value_from is not None:

@@ -124,13 +124,13 @@ class UpdateApiV2Response(SdkResponse):
         :type type: int
         :param version: API的版本
         :type version: str
-        :param req_protocol: API的请求协议 - HTTP - HTTPS - BOTH：同时支持HTTP和HTTPS
+        :param req_protocol: API的请求协议 - HTTP - HTTPS - BOTH：同时支持HTTP和HTTPS - GRPCS
         :type req_protocol: str
-        :param req_method: API的请求方式
+        :param req_method: API的请求方式，当API的请求协议为GRPC类型协议时请求方式固定为POST。
         :type req_method: str
         :param req_uri: 请求地址。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ . 等特殊字符，总长度不超过512，且满足URI规范。  &gt; 需要服从URI规范。
         :type req_uri: str
-        :param auth_type: API的认证方式 - NONE：无认证 - APP：APP认证 - IAM：IAM认证 - AUTHORIZER：自定义认证
+        :param auth_type: API的认证方式 - NONE：无认证 - APP：APP认证 - IAM：IAM认证 - AUTHORIZER：自定义认证  当API的请求协议为GRPC类型时不支持自定义认证。
         :type auth_type: str
         :param auth_opt: 
         :type auth_opt: :class:`huaweicloudsdkapig.v2.AuthOpt`
@@ -138,7 +138,7 @@ class UpdateApiV2Response(SdkResponse):
         :type cors: bool
         :param match_mode: API的匹配方式 - SWA：前缀匹配 - NORMAL：正常匹配（绝对匹配） 默认：NORMAL
         :type match_mode: str
-        :param backend_type: 后端类型 - HTTP：web后端 - FUNCTION：函数工作流 - MOCK：模拟的后端
+        :param backend_type: 后端类型 - HTTP：web后端 - FUNCTION：函数工作流 - MOCK：模拟的后端 - GRPC：grpc后端
         :type backend_type: str
         :param remark: API描述。字符长度不超过255 &gt; 中文字符必须为UTF-8或者unicode编码。
         :type remark: str
@@ -146,11 +146,11 @@ class UpdateApiV2Response(SdkResponse):
         :type group_id: str
         :param body_remark: API请求体描述，可以是请求体示例、媒体类型、参数等信息。字符长度不超过20480 &gt; 中文字符必须为UTF-8或者unicode编码。
         :type body_remark: str
-        :param result_normal_sample: 正常响应示例，描述API的正常返回信息。字符长度不超过20480 &gt; 中文字符必须为UTF-8或者unicode编码。
+        :param result_normal_sample: 正常响应示例，描述API的正常返回信息。字符长度不超过20480 &gt; 中文字符必须为UTF-8或者unicode编码。  当API的请求协议为GRPC类型时不支持配置。
         :type result_normal_sample: str
-        :param result_failure_sample: 失败返回示例，描述API的异常返回信息。字符长度不超过20480 &gt; 中文字符必须为UTF-8或者unicode编码。
+        :param result_failure_sample: 失败返回示例，描述API的异常返回信息。字符长度不超过20480 &gt; 中文字符必须为UTF-8或者unicode编码。  当API的请求协议为GRPC类型时不支持配置。
         :type result_failure_sample: str
-        :param authorizer_id: 前端自定义认证对象的ID
+        :param authorizer_id: 前端自定义认证对象的ID，API请求协议为GRPC类型时不支持前端自定义认证
         :type authorizer_id: str
         :param tags: 标签。  支持英文，数字，中文，特殊符号（-*#%.:_），且只能以中文或英文开头。  默认支持10个标签，如需扩大配额请联系技术工程师修改API_TAG_NUM_LIMIT配置。 
         :type tags: list[str]
@@ -412,7 +412,7 @@ class UpdateApiV2Response(SdkResponse):
     def req_protocol(self):
         """Gets the req_protocol of this UpdateApiV2Response.
 
-        API的请求协议 - HTTP - HTTPS - BOTH：同时支持HTTP和HTTPS
+        API的请求协议 - HTTP - HTTPS - BOTH：同时支持HTTP和HTTPS - GRPCS
 
         :return: The req_protocol of this UpdateApiV2Response.
         :rtype: str
@@ -423,7 +423,7 @@ class UpdateApiV2Response(SdkResponse):
     def req_protocol(self, req_protocol):
         """Sets the req_protocol of this UpdateApiV2Response.
 
-        API的请求协议 - HTTP - HTTPS - BOTH：同时支持HTTP和HTTPS
+        API的请求协议 - HTTP - HTTPS - BOTH：同时支持HTTP和HTTPS - GRPCS
 
         :param req_protocol: The req_protocol of this UpdateApiV2Response.
         :type req_protocol: str
@@ -434,7 +434,7 @@ class UpdateApiV2Response(SdkResponse):
     def req_method(self):
         """Gets the req_method of this UpdateApiV2Response.
 
-        API的请求方式
+        API的请求方式，当API的请求协议为GRPC类型协议时请求方式固定为POST。
 
         :return: The req_method of this UpdateApiV2Response.
         :rtype: str
@@ -445,7 +445,7 @@ class UpdateApiV2Response(SdkResponse):
     def req_method(self, req_method):
         """Sets the req_method of this UpdateApiV2Response.
 
-        API的请求方式
+        API的请求方式，当API的请求协议为GRPC类型协议时请求方式固定为POST。
 
         :param req_method: The req_method of this UpdateApiV2Response.
         :type req_method: str
@@ -478,7 +478,7 @@ class UpdateApiV2Response(SdkResponse):
     def auth_type(self):
         """Gets the auth_type of this UpdateApiV2Response.
 
-        API的认证方式 - NONE：无认证 - APP：APP认证 - IAM：IAM认证 - AUTHORIZER：自定义认证
+        API的认证方式 - NONE：无认证 - APP：APP认证 - IAM：IAM认证 - AUTHORIZER：自定义认证  当API的请求协议为GRPC类型时不支持自定义认证。
 
         :return: The auth_type of this UpdateApiV2Response.
         :rtype: str
@@ -489,7 +489,7 @@ class UpdateApiV2Response(SdkResponse):
     def auth_type(self, auth_type):
         """Sets the auth_type of this UpdateApiV2Response.
 
-        API的认证方式 - NONE：无认证 - APP：APP认证 - IAM：IAM认证 - AUTHORIZER：自定义认证
+        API的认证方式 - NONE：无认证 - APP：APP认证 - IAM：IAM认证 - AUTHORIZER：自定义认证  当API的请求协议为GRPC类型时不支持自定义认证。
 
         :param auth_type: The auth_type of this UpdateApiV2Response.
         :type auth_type: str
@@ -562,7 +562,7 @@ class UpdateApiV2Response(SdkResponse):
     def backend_type(self):
         """Gets the backend_type of this UpdateApiV2Response.
 
-        后端类型 - HTTP：web后端 - FUNCTION：函数工作流 - MOCK：模拟的后端
+        后端类型 - HTTP：web后端 - FUNCTION：函数工作流 - MOCK：模拟的后端 - GRPC：grpc后端
 
         :return: The backend_type of this UpdateApiV2Response.
         :rtype: str
@@ -573,7 +573,7 @@ class UpdateApiV2Response(SdkResponse):
     def backend_type(self, backend_type):
         """Sets the backend_type of this UpdateApiV2Response.
 
-        后端类型 - HTTP：web后端 - FUNCTION：函数工作流 - MOCK：模拟的后端
+        后端类型 - HTTP：web后端 - FUNCTION：函数工作流 - MOCK：模拟的后端 - GRPC：grpc后端
 
         :param backend_type: The backend_type of this UpdateApiV2Response.
         :type backend_type: str
@@ -650,7 +650,7 @@ class UpdateApiV2Response(SdkResponse):
     def result_normal_sample(self):
         """Gets the result_normal_sample of this UpdateApiV2Response.
 
-        正常响应示例，描述API的正常返回信息。字符长度不超过20480 > 中文字符必须为UTF-8或者unicode编码。
+        正常响应示例，描述API的正常返回信息。字符长度不超过20480 > 中文字符必须为UTF-8或者unicode编码。  当API的请求协议为GRPC类型时不支持配置。
 
         :return: The result_normal_sample of this UpdateApiV2Response.
         :rtype: str
@@ -661,7 +661,7 @@ class UpdateApiV2Response(SdkResponse):
     def result_normal_sample(self, result_normal_sample):
         """Sets the result_normal_sample of this UpdateApiV2Response.
 
-        正常响应示例，描述API的正常返回信息。字符长度不超过20480 > 中文字符必须为UTF-8或者unicode编码。
+        正常响应示例，描述API的正常返回信息。字符长度不超过20480 > 中文字符必须为UTF-8或者unicode编码。  当API的请求协议为GRPC类型时不支持配置。
 
         :param result_normal_sample: The result_normal_sample of this UpdateApiV2Response.
         :type result_normal_sample: str
@@ -672,7 +672,7 @@ class UpdateApiV2Response(SdkResponse):
     def result_failure_sample(self):
         """Gets the result_failure_sample of this UpdateApiV2Response.
 
-        失败返回示例，描述API的异常返回信息。字符长度不超过20480 > 中文字符必须为UTF-8或者unicode编码。
+        失败返回示例，描述API的异常返回信息。字符长度不超过20480 > 中文字符必须为UTF-8或者unicode编码。  当API的请求协议为GRPC类型时不支持配置。
 
         :return: The result_failure_sample of this UpdateApiV2Response.
         :rtype: str
@@ -683,7 +683,7 @@ class UpdateApiV2Response(SdkResponse):
     def result_failure_sample(self, result_failure_sample):
         """Sets the result_failure_sample of this UpdateApiV2Response.
 
-        失败返回示例，描述API的异常返回信息。字符长度不超过20480 > 中文字符必须为UTF-8或者unicode编码。
+        失败返回示例，描述API的异常返回信息。字符长度不超过20480 > 中文字符必须为UTF-8或者unicode编码。  当API的请求协议为GRPC类型时不支持配置。
 
         :param result_failure_sample: The result_failure_sample of this UpdateApiV2Response.
         :type result_failure_sample: str
@@ -694,7 +694,7 @@ class UpdateApiV2Response(SdkResponse):
     def authorizer_id(self):
         """Gets the authorizer_id of this UpdateApiV2Response.
 
-        前端自定义认证对象的ID
+        前端自定义认证对象的ID，API请求协议为GRPC类型时不支持前端自定义认证
 
         :return: The authorizer_id of this UpdateApiV2Response.
         :rtype: str
@@ -705,7 +705,7 @@ class UpdateApiV2Response(SdkResponse):
     def authorizer_id(self, authorizer_id):
         """Sets the authorizer_id of this UpdateApiV2Response.
 
-        前端自定义认证对象的ID
+        前端自定义认证对象的ID，API请求协议为GRPC类型时不支持前端自定义认证
 
         :param authorizer_id: The authorizer_id of this UpdateApiV2Response.
         :type authorizer_id: str

@@ -48,12 +48,9 @@ class ComponentMount:
         self._read_only = None
         self.discriminator = None
 
-        if path is not None:
-            self.path = path
-        if sub_path is not None:
-            self.sub_path = sub_path
-        if read_only is not None:
-            self.read_only = read_only
+        self.path = path
+        self.sub_path = sub_path
+        self.read_only = read_only
 
     @property
     def path(self):

@@ -19,7 +19,7 @@ class ListSnapshotConfigsResponse(SdkResponse):
 
     openapi_types = {
         'total': 'int',
-        'snapshot_config_list': 'LiveSnapshotConfig',
+        'snapshot_config_list': 'list[LiveSnapshotConfig]',
         'limit': 'int',
         'offset': 'int'
     }
@@ -38,8 +38,8 @@ class ListSnapshotConfigsResponse(SdkResponse):
 
         :param total: 总条目数
         :type total: int
-        :param snapshot_config_list: 
-        :type snapshot_config_list: :class:`huaweicloudsdklive.v1.LiveSnapshotConfig`
+        :param snapshot_config_list: 截图配置
+        :type snapshot_config_list: list[:class:`huaweicloudsdklive.v1.LiveSnapshotConfig`]
         :param limit: 每页记录数
         :type limit: int
         :param offset: 偏移量
@@ -89,8 +89,10 @@ class ListSnapshotConfigsResponse(SdkResponse):
     def snapshot_config_list(self):
         """Gets the snapshot_config_list of this ListSnapshotConfigsResponse.
 
+        截图配置
+
         :return: The snapshot_config_list of this ListSnapshotConfigsResponse.
-        :rtype: :class:`huaweicloudsdklive.v1.LiveSnapshotConfig`
+        :rtype: list[:class:`huaweicloudsdklive.v1.LiveSnapshotConfig`]
         """
         return self._snapshot_config_list
 
@@ -98,8 +100,10 @@ class ListSnapshotConfigsResponse(SdkResponse):
     def snapshot_config_list(self, snapshot_config_list):
         """Sets the snapshot_config_list of this ListSnapshotConfigsResponse.
 
+        截图配置
+
         :param snapshot_config_list: The snapshot_config_list of this ListSnapshotConfigsResponse.
-        :type snapshot_config_list: :class:`huaweicloudsdklive.v1.LiveSnapshotConfig`
+        :type snapshot_config_list: list[:class:`huaweicloudsdklive.v1.LiveSnapshotConfig`]
         """
         self._snapshot_config_list = snapshot_config_list
 

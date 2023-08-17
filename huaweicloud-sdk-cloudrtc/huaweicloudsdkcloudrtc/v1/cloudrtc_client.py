@@ -24,6 +24,134 @@ class CloudRTCClient(Client):
 
         return ClientBuilder(clazz)
 
+    def list_rtc_abnormal_event(self, request):
+        """查询用户异常体验事件接口
+
+        查询指定APP下通话的异常明细数据。可查询5天内的数据。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListRtcAbnormalEvent
+        :type request: :class:`huaweicloudsdkcloudrtc.v1.ListRtcAbnormalEventRequest`
+        :rtype: :class:`huaweicloudsdkcloudrtc.v1.ListRtcAbnormalEventResponse`
+        """
+        return self._list_rtc_abnormal_event_with_http_info(request)
+
+    def _list_rtc_abnormal_event_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+        if 'app_id' in local_var_params:
+            query_params.append(('app_id', local_var_params['app_id']))
+        if 'room_id' in local_var_params:
+            query_params.append(('room_id', local_var_params['room_id']))
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/rtc/client/abnormalevent',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListRtcAbnormalEventResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_rtc_event(self, request):
+        """查询详情事件接口
+
+        查询指定APP下通话的异常明细数据。可查询5天内的数据。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListRtcEvent
+        :type request: :class:`huaweicloudsdkcloudrtc.v1.ListRtcEventRequest`
+        :rtype: :class:`huaweicloudsdkcloudrtc.v1.ListRtcEventResponse`
+        """
+        return self._list_rtc_event_with_http_info(request)
+
+    def _list_rtc_event_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+        if 'app_id' in local_var_params:
+            query_params.append(('app_id', local_var_params['app_id']))
+        if 'room_id' in local_var_params:
+            query_params.append(('room_id', local_var_params['room_id']))
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/rtc/client/event',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListRtcEventResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_rtc_abnormal_event_dimension(self, request):
         """查询异常事件用户分布
 

@@ -3675,6 +3675,65 @@ class DcsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def show_nodes_information_async(self, request):
+        """查询实例节点信息
+
+        查询指定实例的节点信息。
+        仅支持Redis4.0和Redis5.0实例查询。
+        创建中实例不返回节点信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowNodesInformation
+        :type request: :class:`huaweicloudsdkdcs.v2.ShowNodesInformationRequest`
+        :rtype: :class:`huaweicloudsdkdcs.v2.ShowNodesInformationResponse`
+        """
+        return self._show_nodes_information_with_http_info(request)
+
+    def _show_nodes_information_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/instances/{instance_id}/logical-nodes',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowNodesInformationResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def show_quota_of_tenant_async(self, request):
         """查询租户配额
 

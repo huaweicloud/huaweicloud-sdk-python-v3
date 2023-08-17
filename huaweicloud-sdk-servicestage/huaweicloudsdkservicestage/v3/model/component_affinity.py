@@ -17,130 +17,97 @@ class ComponentAffinity:
     sensitive_list = []
 
     openapi_types = {
-        'kind': 'str',
-        'condition': 'str',
-        'weight': 'int',
-        'match_expressions': 'list[ComponentAffinityMatchExpressions]'
+        'az': 'list[str]',
+        'node': 'list[str]',
+        'component': 'list[ComponentAffinityAppInnerParameters]'
     }
 
     attribute_map = {
-        'kind': 'kind',
-        'condition': 'condition',
-        'weight': 'weight',
-        'match_expressions': 'match_expressions'
+        'az': 'az',
+        'node': 'node',
+        'component': 'component'
     }
 
-    def __init__(self, kind=None, condition=None, weight=None, match_expressions=None):
+    def __init__(self, az=None, node=None, component=None):
         """ComponentAffinity
 
         The model defined in huaweicloud sdk
 
-        :param kind: 指定亲和和反亲和的类型
-        :type kind: str
-        :param condition: 
-        :type condition: str
-        :param weight: 
-        :type weight: int
-        :param match_expressions: 匹配的条件列表
-        :type match_expressions: list[:class:`huaweicloudsdkservicestage.v3.ComponentAffinityMatchExpressions`]
+        :param az: 
+        :type az: list[str]
+        :param node: 
+        :type node: list[str]
+        :param component: 
+        :type component: list[:class:`huaweicloudsdkservicestage.v3.ComponentAffinityAppInnerParameters`]
         """
         
         
 
-        self._kind = None
-        self._condition = None
-        self._weight = None
-        self._match_expressions = None
+        self._az = None
+        self._node = None
+        self._component = None
         self.discriminator = None
 
-        if kind is not None:
-            self.kind = kind
-        if condition is not None:
-            self.condition = condition
-        if weight is not None:
-            self.weight = weight
-        if match_expressions is not None:
-            self.match_expressions = match_expressions
+        if az is not None:
+            self.az = az
+        if node is not None:
+            self.node = node
+        if component is not None:
+            self.component = component
 
     @property
-    def kind(self):
-        """Gets the kind of this ComponentAffinity.
+    def az(self):
+        """Gets the az of this ComponentAffinity.
 
-        指定亲和和反亲和的类型
-
-        :return: The kind of this ComponentAffinity.
-        :rtype: str
+        :return: The az of this ComponentAffinity.
+        :rtype: list[str]
         """
-        return self._kind
+        return self._az
 
-    @kind.setter
-    def kind(self, kind):
-        """Sets the kind of this ComponentAffinity.
+    @az.setter
+    def az(self, az):
+        """Sets the az of this ComponentAffinity.
 
-        指定亲和和反亲和的类型
-
-        :param kind: The kind of this ComponentAffinity.
-        :type kind: str
+        :param az: The az of this ComponentAffinity.
+        :type az: list[str]
         """
-        self._kind = kind
+        self._az = az
 
     @property
-    def condition(self):
-        """Gets the condition of this ComponentAffinity.
+    def node(self):
+        """Gets the node of this ComponentAffinity.
 
-        :return: The condition of this ComponentAffinity.
-        :rtype: str
+        :return: The node of this ComponentAffinity.
+        :rtype: list[str]
         """
-        return self._condition
+        return self._node
 
-    @condition.setter
-    def condition(self, condition):
-        """Sets the condition of this ComponentAffinity.
+    @node.setter
+    def node(self, node):
+        """Sets the node of this ComponentAffinity.
 
-        :param condition: The condition of this ComponentAffinity.
-        :type condition: str
+        :param node: The node of this ComponentAffinity.
+        :type node: list[str]
         """
-        self._condition = condition
+        self._node = node
 
     @property
-    def weight(self):
-        """Gets the weight of this ComponentAffinity.
+    def component(self):
+        """Gets the component of this ComponentAffinity.
 
-        :return: The weight of this ComponentAffinity.
-        :rtype: int
+        :return: The component of this ComponentAffinity.
+        :rtype: list[:class:`huaweicloudsdkservicestage.v3.ComponentAffinityAppInnerParameters`]
         """
-        return self._weight
+        return self._component
 
-    @weight.setter
-    def weight(self, weight):
-        """Sets the weight of this ComponentAffinity.
+    @component.setter
+    def component(self, component):
+        """Sets the component of this ComponentAffinity.
 
-        :param weight: The weight of this ComponentAffinity.
-        :type weight: int
+        :param component: The component of this ComponentAffinity.
+        :type component: list[:class:`huaweicloudsdkservicestage.v3.ComponentAffinityAppInnerParameters`]
         """
-        self._weight = weight
-
-    @property
-    def match_expressions(self):
-        """Gets the match_expressions of this ComponentAffinity.
-
-        匹配的条件列表
-
-        :return: The match_expressions of this ComponentAffinity.
-        :rtype: list[:class:`huaweicloudsdkservicestage.v3.ComponentAffinityMatchExpressions`]
-        """
-        return self._match_expressions
-
-    @match_expressions.setter
-    def match_expressions(self, match_expressions):
-        """Sets the match_expressions of this ComponentAffinity.
-
-        匹配的条件列表
-
-        :param match_expressions: The match_expressions of this ComponentAffinity.
-        :type match_expressions: list[:class:`huaweicloudsdkservicestage.v3.ComponentAffinityMatchExpressions`]
-        """
-        self._match_expressions = match_expressions
+        self._component = component
 
     def to_dict(self):
         """Returns the model properties as a dict"""

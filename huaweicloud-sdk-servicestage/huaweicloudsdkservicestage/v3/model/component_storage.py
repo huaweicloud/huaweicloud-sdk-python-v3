@@ -53,14 +53,10 @@ class ComponentStorage:
         self._mounts = None
         self.discriminator = None
 
-        if type is not None:
-            self.type = type
-        if name is not None:
-            self.name = name
-        if parameters is not None:
-            self.parameters = parameters
-        if mounts is not None:
-            self.mounts = mounts
+        self.type = type
+        self.name = name
+        self.parameters = parameters
+        self.mounts = mounts
 
     @property
     def type(self):

@@ -38,8 +38,7 @@ class MetadataDeleteReq:
         self._task_ids = None
         self.discriminator = None
 
-        if task_ids is not None:
-            self.task_ids = task_ids
+        self.task_ids = task_ids
 
     @property
     def task_ids(self):

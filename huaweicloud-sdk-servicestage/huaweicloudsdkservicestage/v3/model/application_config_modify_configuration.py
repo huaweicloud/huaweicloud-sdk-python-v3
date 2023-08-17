@@ -17,7 +17,7 @@ class ApplicationConfigModifyConfiguration:
     sensitive_list = []
 
     openapi_types = {
-        'env': 'list[DnsConfigOptions]'
+        'env': 'list[ApplicationConfigModifyConfigurationEnv]'
     }
 
     attribute_map = {
@@ -30,7 +30,7 @@ class ApplicationConfigModifyConfiguration:
         The model defined in huaweicloud sdk
 
         :param env: application environment parameters
-        :type env: list[:class:`huaweicloudsdkservicestage.v3.DnsConfigOptions`]
+        :type env: list[:class:`huaweicloudsdkservicestage.v3.ApplicationConfigModifyConfigurationEnv`]
         """
         
         
@@ -38,8 +38,7 @@ class ApplicationConfigModifyConfiguration:
         self._env = None
         self.discriminator = None
 
-        if env is not None:
-            self.env = env
+        self.env = env
 
     @property
     def env(self):
@@ -48,7 +47,7 @@ class ApplicationConfigModifyConfiguration:
         application environment parameters
 
         :return: The env of this ApplicationConfigModifyConfiguration.
-        :rtype: list[:class:`huaweicloudsdkservicestage.v3.DnsConfigOptions`]
+        :rtype: list[:class:`huaweicloudsdkservicestage.v3.ApplicationConfigModifyConfigurationEnv`]
         """
         return self._env
 
@@ -59,7 +58,7 @@ class ApplicationConfigModifyConfiguration:
         application environment parameters
 
         :param env: The env of this ApplicationConfigModifyConfiguration.
-        :type env: list[:class:`huaweicloudsdkservicestage.v3.DnsConfigOptions`]
+        :type env: list[:class:`huaweicloudsdkservicestage.v3.ApplicationConfigModifyConfigurationEnv`]
         """
         self._env = env
 

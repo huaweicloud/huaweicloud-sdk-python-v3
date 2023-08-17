@@ -19,6 +19,7 @@ class CreateEnvironmentResponse(SdkResponse):
 
     openapi_types = {
         'id': 'str',
+        'project_id': 'str',
         'name': 'str',
         'description': 'str',
         'enterprise_project_id': 'str',
@@ -27,12 +28,12 @@ class CreateEnvironmentResponse(SdkResponse):
         'create_time': 'int',
         'update_time': 'int',
         'deploy_mode': 'str',
-        'resources': 'list[Resource]',
         'labels': 'list[EnvironmentViewLabels]'
     }
 
     attribute_map = {
         'id': 'id',
+        'project_id': 'project_id',
         'name': 'name',
         'description': 'description',
         'enterprise_project_id': 'enterprise_project_id',
@@ -41,17 +42,18 @@ class CreateEnvironmentResponse(SdkResponse):
         'create_time': 'create_time',
         'update_time': 'update_time',
         'deploy_mode': 'deploy_mode',
-        'resources': 'resources',
         'labels': 'labels'
     }
 
-    def __init__(self, id=None, name=None, description=None, enterprise_project_id=None, vpc_id=None, creator=None, create_time=None, update_time=None, deploy_mode=None, resources=None, labels=None):
+    def __init__(self, id=None, project_id=None, name=None, description=None, enterprise_project_id=None, vpc_id=None, creator=None, create_time=None, update_time=None, deploy_mode=None, labels=None):
         """CreateEnvironmentResponse
 
         The model defined in huaweicloud sdk
 
         :param id: 环境id
         :type id: str
+        :param project_id: 
+        :type project_id: str
         :param name: 环境名称
         :type name: str
         :param description: 环境描述
@@ -68,8 +70,6 @@ class CreateEnvironmentResponse(SdkResponse):
         :type update_time: int
         :param deploy_mode: 环境类型
         :type deploy_mode: str
-        :param resources: 
-        :type resources: list[:class:`huaweicloudsdkservicestage.v3.Resource`]
         :param labels: 
         :type labels: list[:class:`huaweicloudsdkservicestage.v3.EnvironmentViewLabels`]
         """
@@ -77,6 +77,7 @@ class CreateEnvironmentResponse(SdkResponse):
         super(CreateEnvironmentResponse, self).__init__()
 
         self._id = None
+        self._project_id = None
         self._name = None
         self._description = None
         self._enterprise_project_id = None
@@ -85,12 +86,13 @@ class CreateEnvironmentResponse(SdkResponse):
         self._create_time = None
         self._update_time = None
         self._deploy_mode = None
-        self._resources = None
         self._labels = None
         self.discriminator = None
 
         if id is not None:
             self.id = id
+        if project_id is not None:
+            self.project_id = project_id
         if name is not None:
             self.name = name
         if description is not None:
@@ -107,8 +109,6 @@ class CreateEnvironmentResponse(SdkResponse):
             self.update_time = update_time
         if deploy_mode is not None:
             self.deploy_mode = deploy_mode
-        if resources is not None:
-            self.resources = resources
         if labels is not None:
             self.labels = labels
 
@@ -133,6 +133,24 @@ class CreateEnvironmentResponse(SdkResponse):
         :type id: str
         """
         self._id = id
+
+    @property
+    def project_id(self):
+        """Gets the project_id of this CreateEnvironmentResponse.
+
+        :return: The project_id of this CreateEnvironmentResponse.
+        :rtype: str
+        """
+        return self._project_id
+
+    @project_id.setter
+    def project_id(self, project_id):
+        """Sets the project_id of this CreateEnvironmentResponse.
+
+        :param project_id: The project_id of this CreateEnvironmentResponse.
+        :type project_id: str
+        """
+        self._project_id = project_id
 
     @property
     def name(self):
@@ -309,24 +327,6 @@ class CreateEnvironmentResponse(SdkResponse):
         :type deploy_mode: str
         """
         self._deploy_mode = deploy_mode
-
-    @property
-    def resources(self):
-        """Gets the resources of this CreateEnvironmentResponse.
-
-        :return: The resources of this CreateEnvironmentResponse.
-        :rtype: list[:class:`huaweicloudsdkservicestage.v3.Resource`]
-        """
-        return self._resources
-
-    @resources.setter
-    def resources(self, resources):
-        """Sets the resources of this CreateEnvironmentResponse.
-
-        :param resources: The resources of this CreateEnvironmentResponse.
-        :type resources: list[:class:`huaweicloudsdkservicestage.v3.Resource`]
-        """
-        self._resources = resources
 
     @property
     def labels(self):

@@ -1835,6 +1835,178 @@ class CloudRTCClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_obs_bucket_objects(self, request):
+        """查询OBS桶下对象列表
+
+        查询OBS桶下对象列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListObsBucketObjects
+        :type request: :class:`huaweicloudsdkcloudrtc.v2.ListObsBucketObjectsRequest`
+        :rtype: :class:`huaweicloudsdkcloudrtc.v2.ListObsBucketObjectsResponse`
+        """
+        return self._list_obs_bucket_objects_with_http_info(request)
+
+    def _list_obs_bucket_objects_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'bucket' in local_var_params:
+            query_params.append(('bucket', local_var_params['bucket']))
+        if 'prefix' in local_var_params:
+            query_params.append(('prefix', local_var_params['prefix']))
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+        if 'location' in local_var_params:
+            query_params.append(('location', local_var_params['location']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = ["X-request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/rtc-ops/buckets/objects',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListObsBucketObjectsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_obs_buckets(self, request):
+        """查询OBS桶列表
+
+        查询OBS桶列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListObsBuckets
+        :type request: :class:`huaweicloudsdkcloudrtc.v2.ListObsBucketsRequest`
+        :rtype: :class:`huaweicloudsdkcloudrtc.v2.ListObsBucketsResponse`
+        """
+        return self._list_obs_buckets_with_http_info(request)
+
+    def _list_obs_buckets_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = ["X-request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/rtc-ops/buckets',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListObsBucketsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_obs_bucket_authority(self, request):
+        """OBS桶授权及取消授权
+
+        OBS桶授权及取消授权
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateObsBucketAuthority
+        :type request: :class:`huaweicloudsdkcloudrtc.v2.UpdateObsBucketAuthorityRequest`
+        :rtype: :class:`huaweicloudsdkcloudrtc.v2.UpdateObsBucketAuthorityResponse`
+        """
+        return self._update_obs_bucket_authority_with_http_info(request)
+
+    def _update_obs_bucket_authority_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = ["X-request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/rtc-ops/buckets/authentication',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateObsBucketAuthorityResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):

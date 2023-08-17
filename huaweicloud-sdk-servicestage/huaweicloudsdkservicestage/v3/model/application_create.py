@@ -20,7 +20,7 @@ class ApplicationCreate:
         'name': 'str',
         'description': 'str',
         'enterprise_project_id': 'str',
-        'labels': 'list[EnvironmentViewLabels]'
+        'labels': 'list[EnvironmentCreateLabels]'
     }
 
     attribute_map = {
@@ -42,7 +42,7 @@ class ApplicationCreate:
         :param enterprise_project_id: 
         :type enterprise_project_id: str
         :param labels: 
-        :type labels: list[:class:`huaweicloudsdkservicestage.v3.EnvironmentViewLabels`]
+        :type labels: list[:class:`huaweicloudsdkservicestage.v3.EnvironmentCreateLabels`]
         """
         
         
@@ -120,7 +120,7 @@ class ApplicationCreate:
         """Gets the labels of this ApplicationCreate.
 
         :return: The labels of this ApplicationCreate.
-        :rtype: list[:class:`huaweicloudsdkservicestage.v3.EnvironmentViewLabels`]
+        :rtype: list[:class:`huaweicloudsdkservicestage.v3.EnvironmentCreateLabels`]
         """
         return self._labels
 
@@ -129,7 +129,7 @@ class ApplicationCreate:
         """Sets the labels of this ApplicationCreate.
 
         :param labels: The labels of this ApplicationCreate.
-        :type labels: list[:class:`huaweicloudsdkservicestage.v3.EnvironmentViewLabels`]
+        :type labels: list[:class:`huaweicloudsdkservicestage.v3.EnvironmentCreateLabels`]
         """
         self._labels = labels
 

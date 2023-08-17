@@ -22,6 +22,7 @@ class ThumbnailPara:
         'start_time': 'int',
         'duration': 'int',
         'dots': 'list[int]',
+        'dots_ms': 'list[int]',
         'output_filename': 'str',
         'format': 'int',
         'width': 'int',
@@ -35,6 +36,7 @@ class ThumbnailPara:
         'start_time': 'start_time',
         'duration': 'duration',
         'dots': 'dots',
+        'dots_ms': 'dots_ms',
         'output_filename': 'output_filename',
         'format': 'format',
         'width': 'width',
@@ -42,12 +44,12 @@ class ThumbnailPara:
         'max_length': 'max_length'
     }
 
-    def __init__(self, type=None, time=None, start_time=None, duration=None, dots=None, output_filename=None, format=None, width=None, height=None, max_length=None):
+    def __init__(self, type=None, time=None, start_time=None, duration=None, dots=None, dots_ms=None, output_filename=None, format=None, width=None, height=None, max_length=None):
         """ThumbnailPara
 
         The model defined in huaweicloud sdk
 
-        :param type: 采样类型。  取值如下： - \&quot;TIME\&quot;：根据时间间隔采样截图。 - \&quot;DOTS\&quot;：指定时间点截图。选择同步截图时，需指定此类型。  默认值：\&quot;TIME\&quot; 
+        :param type: 采样类型。  取值如下： - \&quot;TIME\&quot;：根据时间间隔采样截图。 - \&quot;DOTS\&quot;：指定时间点截图。选择同步截图时，需指定此类型。 - \&quot;DOTS_MS\&quot;：同步截图指定时间点毫秒值。  默认值：\&quot;TIME\&quot; 
         :type type: str
         :param time: 采样截图的时间间隔值。  默认值：12。  单位：秒 
         :type time: int
@@ -57,6 +59,8 @@ class ThumbnailPara:
         :type duration: int
         :param dots: 指定时间截图时的时间点数组，最多支持10个。 
         :type dots: list[int]
+        :param dots_ms: 同步截图下，指定时间截图的时间点数组，单位毫秒  例如输入[1000]，截取视频第1000毫秒位置的图像帧，仅支持一个时间点 
+        :type dots_ms: list[int]
         :param output_filename: 截图输出文件名。  - 如果只抽一张图（即：按DOTS方式，指定1个时间点）则按该指定文件名输出图片。  - 如果抽多张图（即：按DOTS方式指定多个时间点或按TIME间隔截图）则输出图片名在该指定文件名基础上在增加时间点（示例：output_filename_10.jpg）。  - 如果指定了压缩抽帧图片生成tar包，则tar包按该指定文件名输出。 
         :type output_filename: str
         :param format: 截图文件格式。  取值如下：  1：表示jpg格式 
@@ -76,6 +80,7 @@ class ThumbnailPara:
         self._start_time = None
         self._duration = None
         self._dots = None
+        self._dots_ms = None
         self._output_filename = None
         self._format = None
         self._width = None
@@ -93,6 +98,8 @@ class ThumbnailPara:
             self.duration = duration
         if dots is not None:
             self.dots = dots
+        if dots_ms is not None:
+            self.dots_ms = dots_ms
         if output_filename is not None:
             self.output_filename = output_filename
         if format is not None:
@@ -108,7 +115,7 @@ class ThumbnailPara:
     def type(self):
         """Gets the type of this ThumbnailPara.
 
-        采样类型。  取值如下： - \"TIME\"：根据时间间隔采样截图。 - \"DOTS\"：指定时间点截图。选择同步截图时，需指定此类型。  默认值：\"TIME\" 
+        采样类型。  取值如下： - \"TIME\"：根据时间间隔采样截图。 - \"DOTS\"：指定时间点截图。选择同步截图时，需指定此类型。 - \"DOTS_MS\"：同步截图指定时间点毫秒值。  默认值：\"TIME\" 
 
         :return: The type of this ThumbnailPara.
         :rtype: str
@@ -119,7 +126,7 @@ class ThumbnailPara:
     def type(self, type):
         """Sets the type of this ThumbnailPara.
 
-        采样类型。  取值如下： - \"TIME\"：根据时间间隔采样截图。 - \"DOTS\"：指定时间点截图。选择同步截图时，需指定此类型。  默认值：\"TIME\" 
+        采样类型。  取值如下： - \"TIME\"：根据时间间隔采样截图。 - \"DOTS\"：指定时间点截图。选择同步截图时，需指定此类型。 - \"DOTS_MS\"：同步截图指定时间点毫秒值。  默认值：\"TIME\" 
 
         :param type: The type of this ThumbnailPara.
         :type type: str
@@ -213,6 +220,28 @@ class ThumbnailPara:
         :type dots: list[int]
         """
         self._dots = dots
+
+    @property
+    def dots_ms(self):
+        """Gets the dots_ms of this ThumbnailPara.
+
+        同步截图下，指定时间截图的时间点数组，单位毫秒  例如输入[1000]，截取视频第1000毫秒位置的图像帧，仅支持一个时间点 
+
+        :return: The dots_ms of this ThumbnailPara.
+        :rtype: list[int]
+        """
+        return self._dots_ms
+
+    @dots_ms.setter
+    def dots_ms(self, dots_ms):
+        """Sets the dots_ms of this ThumbnailPara.
+
+        同步截图下，指定时间截图的时间点数组，单位毫秒  例如输入[1000]，截取视频第1000毫秒位置的图像帧，仅支持一个时间点 
+
+        :param dots_ms: The dots_ms of this ThumbnailPara.
+        :type dots_ms: list[int]
+        """
+        self._dots_ms = dots_ms
 
     @property
     def output_filename(self):

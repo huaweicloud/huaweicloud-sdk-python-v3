@@ -20,25 +20,17 @@ class StyleExtraMeta:
         'picture_modeling_enable': 'bool',
         'edit_enable': 'bool',
         'edit_engine': 'str',
-        'model_id': 'str',
-        'edit_value_items': 'dict(str, StyleExtraMetaEditValueItems)',
-        'edit_color_items': 'dict(str, StyleExtraMetaEditColorItems)',
-        'edit_components': 'dict(str, StyleExtraMetaEditComponents)',
-        'modelling_algorithm': 'dict(str, StyleExtraMetaModellingAlgorithm)'
+        'model_id': 'str'
     }
 
     attribute_map = {
         'picture_modeling_enable': 'picture_modeling_enable',
         'edit_enable': 'edit_enable',
         'edit_engine': 'edit_engine',
-        'model_id': 'model_id',
-        'edit_value_items': 'edit_value_items',
-        'edit_color_items': 'edit_color_items',
-        'edit_components': 'edit_components',
-        'modelling_algorithm': 'modelling_algorithm'
+        'model_id': 'model_id'
     }
 
-    def __init__(self, picture_modeling_enable=None, edit_enable=None, edit_engine=None, model_id=None, edit_value_items=None, edit_color_items=None, edit_components=None, modelling_algorithm=None):
+    def __init__(self, picture_modeling_enable=None, edit_enable=None, edit_engine=None, model_id=None):
         """StyleExtraMeta
 
         The model defined in huaweicloud sdk
@@ -51,14 +43,6 @@ class StyleExtraMeta:
         :type edit_engine: str
         :param model_id: 照片建模算法调用的模型类型
         :type model_id: str
-        :param edit_value_items: 值可设置条目列表
-        :type edit_value_items: dict(str, StyleExtraMetaEditValueItems)
-        :param edit_color_items: 颜色可设置条目列表
-        :type edit_color_items: dict(str, StyleExtraMetaEditColorItems)
-        :param edit_components: 可替换组件列表
-        :type edit_components: dict(str, StyleExtraMetaEditComponents)
-        :param modelling_algorithm: 分类算法列表
-        :type modelling_algorithm: dict(str, StyleExtraMetaModellingAlgorithm)
         """
         
         
@@ -67,10 +51,6 @@ class StyleExtraMeta:
         self._edit_enable = None
         self._edit_engine = None
         self._model_id = None
-        self._edit_value_items = None
-        self._edit_color_items = None
-        self._edit_components = None
-        self._modelling_algorithm = None
         self.discriminator = None
 
         if picture_modeling_enable is not None:
@@ -81,14 +61,6 @@ class StyleExtraMeta:
             self.edit_engine = edit_engine
         if model_id is not None:
             self.model_id = model_id
-        if edit_value_items is not None:
-            self.edit_value_items = edit_value_items
-        if edit_color_items is not None:
-            self.edit_color_items = edit_color_items
-        if edit_components is not None:
-            self.edit_components = edit_components
-        if modelling_algorithm is not None:
-            self.modelling_algorithm = modelling_algorithm
 
     @property
     def picture_modeling_enable(self):
@@ -177,94 +149,6 @@ class StyleExtraMeta:
         :type model_id: str
         """
         self._model_id = model_id
-
-    @property
-    def edit_value_items(self):
-        """Gets the edit_value_items of this StyleExtraMeta.
-
-        值可设置条目列表
-
-        :return: The edit_value_items of this StyleExtraMeta.
-        :rtype: dict(str, StyleExtraMetaEditValueItems)
-        """
-        return self._edit_value_items
-
-    @edit_value_items.setter
-    def edit_value_items(self, edit_value_items):
-        """Sets the edit_value_items of this StyleExtraMeta.
-
-        值可设置条目列表
-
-        :param edit_value_items: The edit_value_items of this StyleExtraMeta.
-        :type edit_value_items: dict(str, StyleExtraMetaEditValueItems)
-        """
-        self._edit_value_items = edit_value_items
-
-    @property
-    def edit_color_items(self):
-        """Gets the edit_color_items of this StyleExtraMeta.
-
-        颜色可设置条目列表
-
-        :return: The edit_color_items of this StyleExtraMeta.
-        :rtype: dict(str, StyleExtraMetaEditColorItems)
-        """
-        return self._edit_color_items
-
-    @edit_color_items.setter
-    def edit_color_items(self, edit_color_items):
-        """Sets the edit_color_items of this StyleExtraMeta.
-
-        颜色可设置条目列表
-
-        :param edit_color_items: The edit_color_items of this StyleExtraMeta.
-        :type edit_color_items: dict(str, StyleExtraMetaEditColorItems)
-        """
-        self._edit_color_items = edit_color_items
-
-    @property
-    def edit_components(self):
-        """Gets the edit_components of this StyleExtraMeta.
-
-        可替换组件列表
-
-        :return: The edit_components of this StyleExtraMeta.
-        :rtype: dict(str, StyleExtraMetaEditComponents)
-        """
-        return self._edit_components
-
-    @edit_components.setter
-    def edit_components(self, edit_components):
-        """Sets the edit_components of this StyleExtraMeta.
-
-        可替换组件列表
-
-        :param edit_components: The edit_components of this StyleExtraMeta.
-        :type edit_components: dict(str, StyleExtraMetaEditComponents)
-        """
-        self._edit_components = edit_components
-
-    @property
-    def modelling_algorithm(self):
-        """Gets the modelling_algorithm of this StyleExtraMeta.
-
-        分类算法列表
-
-        :return: The modelling_algorithm of this StyleExtraMeta.
-        :rtype: dict(str, StyleExtraMetaModellingAlgorithm)
-        """
-        return self._modelling_algorithm
-
-    @modelling_algorithm.setter
-    def modelling_algorithm(self, modelling_algorithm):
-        """Sets the modelling_algorithm of this StyleExtraMeta.
-
-        分类算法列表
-
-        :param modelling_algorithm: The modelling_algorithm of this StyleExtraMeta.
-        :type modelling_algorithm: dict(str, StyleExtraMetaModellingAlgorithm)
-        """
-        self._modelling_algorithm = modelling_algorithm
 
     def to_dict(self):
         """Returns the model properties as a dict"""

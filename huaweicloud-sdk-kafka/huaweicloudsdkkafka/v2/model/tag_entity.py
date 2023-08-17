@@ -33,7 +33,7 @@ class TagEntity:
 
         :param key: 键。  key不能为空，长度1~128个字符（中文也可以输入128个字符）。  可用UTF-8格式表示的字母、数字和空格，以及以下字符： _ . : &#x3D; + - @  key两头不能有空格字符。
         :type key: str
-        :param value: 值。  长度0~255个字符（中文也可以输入255个字符）。  可用UTF-8格式表示的字母、数字和空格，以及以下字符： _ . : / &#x3D; + - @。  value可以为空字符串。
+        :param value: 值。  长度0~255个字符（中文也可以输入255个字符）。  可用UTF-8格式表示的字母、数字和空格，以及以下字符： _ . : / &#x3D; + - @  value可以为空字符串。
         :type value: str
         """
         
@@ -74,7 +74,7 @@ class TagEntity:
     def value(self):
         """Gets the value of this TagEntity.
 
-        值。  长度0~255个字符（中文也可以输入255个字符）。  可用UTF-8格式表示的字母、数字和空格，以及以下字符： _ . : / = + - @。  value可以为空字符串。
+        值。  长度0~255个字符（中文也可以输入255个字符）。  可用UTF-8格式表示的字母、数字和空格，以及以下字符： _ . : / = + - @  value可以为空字符串。
 
         :return: The value of this TagEntity.
         :rtype: str
@@ -85,7 +85,7 @@ class TagEntity:
     def value(self, value):
         """Sets the value of this TagEntity.
 
-        值。  长度0~255个字符（中文也可以输入255个字符）。  可用UTF-8格式表示的字母、数字和空格，以及以下字符： _ . : / = + - @。  value可以为空字符串。
+        值。  长度0~255个字符（中文也可以输入255个字符）。  可用UTF-8格式表示的字母、数字和空格，以及以下字符： _ . : / = + - @  value可以为空字符串。
 
         :param value: The value of this TagEntity.
         :type value: str

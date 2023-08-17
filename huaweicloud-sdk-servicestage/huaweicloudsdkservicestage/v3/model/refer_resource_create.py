@@ -48,8 +48,7 @@ class ReferResourceCreate:
         self._parameters = None
         self.discriminator = None
 
-        if id is not None:
-            self.id = id
+        self.id = id
         self.type = type
         if parameters is not None:
             self.parameters = parameters

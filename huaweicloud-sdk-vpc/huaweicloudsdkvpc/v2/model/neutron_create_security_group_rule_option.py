@@ -25,6 +25,7 @@ class NeutronCreateSecurityGroupRuleOption:
         'protocol': 'str',
         'remote_group_id': 'str',
         'remote_ip_prefix': 'str',
+        'remote_address_group_id': 'str',
         'security_group_id': 'str'
     }
 
@@ -37,10 +38,11 @@ class NeutronCreateSecurityGroupRuleOption:
         'protocol': 'protocol',
         'remote_group_id': 'remote_group_id',
         'remote_ip_prefix': 'remote_ip_prefix',
+        'remote_address_group_id': 'remote_address_group_id',
         'security_group_id': 'security_group_id'
     }
 
-    def __init__(self, description=None, direction=None, ethertype=None, port_range_max=None, port_range_min=None, protocol=None, remote_group_id=None, remote_ip_prefix=None, security_group_id=None):
+    def __init__(self, description=None, direction=None, ethertype=None, port_range_max=None, port_range_min=None, protocol=None, remote_group_id=None, remote_ip_prefix=None, remote_address_group_id=None, security_group_id=None):
         """NeutronCreateSecurityGroupRuleOption
 
         The model defined in huaweicloud sdk
@@ -61,6 +63,8 @@ class NeutronCreateSecurityGroupRuleOption:
         :type remote_group_id: str
         :param remote_ip_prefix: 功能说明：目的端ip网段 取值范围：cidr格式，如10.10.0.0/16
         :type remote_ip_prefix: str
+        :param remote_address_group_id: 功能说明：远端地址组的ID
+        :type remote_address_group_id: str
         :param security_group_id: 所属安全组ID
         :type security_group_id: str
         """
@@ -75,6 +79,7 @@ class NeutronCreateSecurityGroupRuleOption:
         self._protocol = None
         self._remote_group_id = None
         self._remote_ip_prefix = None
+        self._remote_address_group_id = None
         self._security_group_id = None
         self.discriminator = None
 
@@ -93,6 +98,8 @@ class NeutronCreateSecurityGroupRuleOption:
             self.remote_group_id = remote_group_id
         if remote_ip_prefix is not None:
             self.remote_ip_prefix = remote_ip_prefix
+        if remote_address_group_id is not None:
+            self.remote_address_group_id = remote_address_group_id
         self.security_group_id = security_group_id
 
     @property
@@ -270,6 +277,28 @@ class NeutronCreateSecurityGroupRuleOption:
         :type remote_ip_prefix: str
         """
         self._remote_ip_prefix = remote_ip_prefix
+
+    @property
+    def remote_address_group_id(self):
+        """Gets the remote_address_group_id of this NeutronCreateSecurityGroupRuleOption.
+
+        功能说明：远端地址组的ID
+
+        :return: The remote_address_group_id of this NeutronCreateSecurityGroupRuleOption.
+        :rtype: str
+        """
+        return self._remote_address_group_id
+
+    @remote_address_group_id.setter
+    def remote_address_group_id(self, remote_address_group_id):
+        """Sets the remote_address_group_id of this NeutronCreateSecurityGroupRuleOption.
+
+        功能说明：远端地址组的ID
+
+        :param remote_address_group_id: The remote_address_group_id of this NeutronCreateSecurityGroupRuleOption.
+        :type remote_address_group_id: str
+        """
+        self._remote_address_group_id = remote_address_group_id
 
     @property
     def security_group_id(self):

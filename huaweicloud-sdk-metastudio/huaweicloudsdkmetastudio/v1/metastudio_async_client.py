@@ -257,6 +257,8 @@ class MetaStudioAsyncClient(Client):
             query_params.append(('language', local_var_params['language']))
         if 'system_property' in local_var_params:
             query_params.append(('system_property', local_var_params['system_property']))
+        if 'action_editable' in local_var_params:
+            query_params.append(('action_editable', local_var_params['action_editable']))
 
         header_params = {}
         if 'x_app_user_id' in local_var_params:

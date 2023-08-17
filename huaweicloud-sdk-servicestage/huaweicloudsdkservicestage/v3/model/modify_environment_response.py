@@ -19,6 +19,7 @@ class ModifyEnvironmentResponse(SdkResponse):
 
     openapi_types = {
         'id': 'str',
+        'project_id': 'str',
         'name': 'str',
         'description': 'str',
         'enterprise_project_id': 'str',
@@ -33,6 +34,7 @@ class ModifyEnvironmentResponse(SdkResponse):
 
     attribute_map = {
         'id': 'id',
+        'project_id': 'project_id',
         'name': 'name',
         'description': 'description',
         'enterprise_project_id': 'enterprise_project_id',
@@ -45,13 +47,15 @@ class ModifyEnvironmentResponse(SdkResponse):
         'labels': 'labels'
     }
 
-    def __init__(self, id=None, name=None, description=None, enterprise_project_id=None, vpc_id=None, creator=None, create_time=None, update_time=None, deploy_mode=None, resources=None, labels=None):
+    def __init__(self, id=None, project_id=None, name=None, description=None, enterprise_project_id=None, vpc_id=None, creator=None, create_time=None, update_time=None, deploy_mode=None, resources=None, labels=None):
         """ModifyEnvironmentResponse
 
         The model defined in huaweicloud sdk
 
         :param id: 环境id
         :type id: str
+        :param project_id: 
+        :type project_id: str
         :param name: 环境名称
         :type name: str
         :param description: 环境描述
@@ -77,6 +81,7 @@ class ModifyEnvironmentResponse(SdkResponse):
         super(ModifyEnvironmentResponse, self).__init__()
 
         self._id = None
+        self._project_id = None
         self._name = None
         self._description = None
         self._enterprise_project_id = None
@@ -91,6 +96,8 @@ class ModifyEnvironmentResponse(SdkResponse):
 
         if id is not None:
             self.id = id
+        if project_id is not None:
+            self.project_id = project_id
         if name is not None:
             self.name = name
         if description is not None:
@@ -133,6 +140,24 @@ class ModifyEnvironmentResponse(SdkResponse):
         :type id: str
         """
         self._id = id
+
+    @property
+    def project_id(self):
+        """Gets the project_id of this ModifyEnvironmentResponse.
+
+        :return: The project_id of this ModifyEnvironmentResponse.
+        :rtype: str
+        """
+        return self._project_id
+
+    @project_id.setter
+    def project_id(self, project_id):
+        """Sets the project_id of this ModifyEnvironmentResponse.
+
+        :param project_id: The project_id of this ModifyEnvironmentResponse.
+        :type project_id: str
+        """
+        self._project_id = project_id
 
     @property
     def name(self):

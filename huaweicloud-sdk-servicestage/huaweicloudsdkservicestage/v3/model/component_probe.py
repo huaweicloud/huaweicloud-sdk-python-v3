@@ -73,12 +73,9 @@ class ComponentProbe:
         self._command = None
         self.discriminator = None
 
-        if type is not None:
-            self.type = type
-        if delay is not None:
-            self.delay = delay
-        if timeout is not None:
-            self.timeout = timeout
+        self.type = type
+        self.delay = delay
+        self.timeout = timeout
         if scheme is not None:
             self.scheme = scheme
         if host is not None:

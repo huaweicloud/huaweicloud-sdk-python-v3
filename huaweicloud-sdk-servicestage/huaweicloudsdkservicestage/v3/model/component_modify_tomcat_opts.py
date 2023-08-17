@@ -48,8 +48,7 @@ class ComponentModifyTomcatOpts:
         self._context_path = None
         self.discriminator = None
 
-        if server_xml is not None:
-            self.server_xml = server_xml
+        self.server_xml = server_xml
         if http_port is not None:
             self.http_port = http_port
         if context_path is not None:

@@ -31,6 +31,7 @@ class MysqlInstanceInfoDetail:
         'created': 'str',
         'updated': 'str',
         'private_write_ips': 'list[str]',
+        'private_dns_names': 'list[str]',
         'public_ips': 'str',
         'db_user_name': 'str',
         'vpc_id': 'str',
@@ -64,6 +65,7 @@ class MysqlInstanceInfoDetail:
         'created': 'created',
         'updated': 'updated',
         'private_write_ips': 'private_write_ips',
+        'private_dns_names': 'private_dns_names',
         'public_ips': 'public_ips',
         'db_user_name': 'db_user_name',
         'vpc_id': 'vpc_id',
@@ -82,7 +84,7 @@ class MysqlInstanceInfoDetail:
         'proxies': 'proxies'
     }
 
-    def __init__(self, id=None, name=None, project_id=None, status=None, port=None, alias=None, type=None, charge_info=None, node_count=None, datastore=None, backup_used_space=None, created=None, updated=None, private_write_ips=None, public_ips=None, db_user_name=None, vpc_id=None, subnet_id=None, security_group_id=None, configuration_id=None, backup_strategy=None, nodes=None, enterprise_project_id=None, time_zone=None, az_mode=None, master_az_code=None, maintenance_window=None, tags=None, dedicated_resource_id=None, proxies=None):
+    def __init__(self, id=None, name=None, project_id=None, status=None, port=None, alias=None, type=None, charge_info=None, node_count=None, datastore=None, backup_used_space=None, created=None, updated=None, private_write_ips=None, private_dns_names=None, public_ips=None, db_user_name=None, vpc_id=None, subnet_id=None, security_group_id=None, configuration_id=None, backup_strategy=None, nodes=None, enterprise_project_id=None, time_zone=None, az_mode=None, master_az_code=None, maintenance_window=None, tags=None, dedicated_resource_id=None, proxies=None):
         """MysqlInstanceInfoDetail
 
         The model defined in huaweicloud sdk
@@ -115,6 +117,8 @@ class MysqlInstanceInfoDetail:
         :type updated: str
         :param private_write_ips: 实例的写内网IP。
         :type private_write_ips: list[str]
+        :param private_dns_names: 实例内网域名列表。实例创建成功后，需要手动申请内网域名，否则查询内网域名为空。
+        :type private_dns_names: list[str]
         :param public_ips: 实例的公网IP。
         :type public_ips: str
         :param db_user_name: 默认用户名。
@@ -165,6 +169,7 @@ class MysqlInstanceInfoDetail:
         self._created = None
         self._updated = None
         self._private_write_ips = None
+        self._private_dns_names = None
         self._public_ips = None
         self._db_user_name = None
         self._vpc_id = None
@@ -208,6 +213,8 @@ class MysqlInstanceInfoDetail:
             self.updated = updated
         if private_write_ips is not None:
             self.private_write_ips = private_write_ips
+        if private_dns_names is not None:
+            self.private_dns_names = private_dns_names
         if public_ips is not None:
             self.public_ips = public_ips
         if db_user_name is not None:
@@ -540,6 +547,28 @@ class MysqlInstanceInfoDetail:
         :type private_write_ips: list[str]
         """
         self._private_write_ips = private_write_ips
+
+    @property
+    def private_dns_names(self):
+        """Gets the private_dns_names of this MysqlInstanceInfoDetail.
+
+        实例内网域名列表。实例创建成功后，需要手动申请内网域名，否则查询内网域名为空。
+
+        :return: The private_dns_names of this MysqlInstanceInfoDetail.
+        :rtype: list[str]
+        """
+        return self._private_dns_names
+
+    @private_dns_names.setter
+    def private_dns_names(self, private_dns_names):
+        """Sets the private_dns_names of this MysqlInstanceInfoDetail.
+
+        实例内网域名列表。实例创建成功后，需要手动申请内网域名，否则查询内网域名为空。
+
+        :param private_dns_names: The private_dns_names of this MysqlInstanceInfoDetail.
+        :type private_dns_names: list[str]
+        """
+        self._private_dns_names = private_dns_names
 
     @property
     def public_ips(self):

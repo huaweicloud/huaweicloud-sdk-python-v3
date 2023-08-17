@@ -20,6 +20,7 @@ class EnvironmentListView:
         'id': 'str',
         'name': 'str',
         'description': 'str',
+        'project_id': 'str',
         'enterprise_project_id': 'str',
         'vpc_id': 'str',
         'creator': 'str',
@@ -33,6 +34,7 @@ class EnvironmentListView:
         'id': 'id',
         'name': 'name',
         'description': 'description',
+        'project_id': 'project_id',
         'enterprise_project_id': 'enterprise_project_id',
         'vpc_id': 'vpc_id',
         'creator': 'creator',
@@ -42,7 +44,7 @@ class EnvironmentListView:
         'labels': 'labels'
     }
 
-    def __init__(self, id=None, name=None, description=None, enterprise_project_id=None, vpc_id=None, creator=None, create_time=None, update_time=None, deploy_mode=None, labels=None):
+    def __init__(self, id=None, name=None, description=None, project_id=None, enterprise_project_id=None, vpc_id=None, creator=None, create_time=None, update_time=None, deploy_mode=None, labels=None):
         """EnvironmentListView
 
         The model defined in huaweicloud sdk
@@ -53,6 +55,8 @@ class EnvironmentListView:
         :type name: str
         :param description: 
         :type description: str
+        :param project_id: 
+        :type project_id: str
         :param enterprise_project_id: 
         :type enterprise_project_id: str
         :param vpc_id: 
@@ -74,6 +78,7 @@ class EnvironmentListView:
         self._id = None
         self._name = None
         self._description = None
+        self._project_id = None
         self._enterprise_project_id = None
         self._vpc_id = None
         self._creator = None
@@ -89,6 +94,8 @@ class EnvironmentListView:
             self.name = name
         if description is not None:
             self.description = description
+        if project_id is not None:
+            self.project_id = project_id
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
         if vpc_id is not None:
@@ -157,6 +164,24 @@ class EnvironmentListView:
         :type description: str
         """
         self._description = description
+
+    @property
+    def project_id(self):
+        """Gets the project_id of this EnvironmentListView.
+
+        :return: The project_id of this EnvironmentListView.
+        :rtype: str
+        """
+        return self._project_id
+
+    @project_id.setter
+    def project_id(self, project_id):
+        """Sets the project_id of this EnvironmentListView.
+
+        :param project_id: The project_id of this EnvironmentListView.
+        :type project_id: str
+        """
+        self._project_id = project_id
 
     @property
     def enterprise_project_id(self):

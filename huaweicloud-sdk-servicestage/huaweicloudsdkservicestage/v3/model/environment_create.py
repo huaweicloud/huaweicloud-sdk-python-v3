@@ -22,7 +22,7 @@ class EnvironmentCreate:
         'enterprise_project_id': 'str',
         'vpc_id': 'str',
         'deploy_mode': 'str',
-        'labels': 'list[EnvironmentViewLabels]'
+        'labels': 'list[EnvironmentCreateLabels]'
     }
 
     attribute_map = {
@@ -50,7 +50,7 @@ class EnvironmentCreate:
         :param deploy_mode: 
         :type deploy_mode: str
         :param labels: 
-        :type labels: list[:class:`huaweicloudsdkservicestage.v3.EnvironmentViewLabels`]
+        :type labels: list[:class:`huaweicloudsdkservicestage.v3.EnvironmentCreateLabels`]
         """
         
         
@@ -69,8 +69,7 @@ class EnvironmentCreate:
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
         self.vpc_id = vpc_id
-        if deploy_mode is not None:
-            self.deploy_mode = deploy_mode
+        self.deploy_mode = deploy_mode
         if labels is not None:
             self.labels = labels
 
@@ -169,7 +168,7 @@ class EnvironmentCreate:
         """Gets the labels of this EnvironmentCreate.
 
         :return: The labels of this EnvironmentCreate.
-        :rtype: list[:class:`huaweicloudsdkservicestage.v3.EnvironmentViewLabels`]
+        :rtype: list[:class:`huaweicloudsdkservicestage.v3.EnvironmentCreateLabels`]
         """
         return self._labels
 
@@ -178,7 +177,7 @@ class EnvironmentCreate:
         """Sets the labels of this EnvironmentCreate.
 
         :param labels: The labels of this EnvironmentCreate.
-        :type labels: list[:class:`huaweicloudsdkservicestage.v3.EnvironmentViewLabels`]
+        :type labels: list[:class:`huaweicloudsdkservicestage.v3.EnvironmentCreateLabels`]
         """
         self._labels = labels
 

@@ -53,14 +53,10 @@ class RuntimeStack:
         self._deploy_mode = None
         self.discriminator = None
 
-        if name is not None:
-            self.name = name
-        if type is not None:
-            self.type = type
-        if version is not None:
-            self.version = version
-        if deploy_mode is not None:
-            self.deploy_mode = deploy_mode
+        self.name = name
+        self.type = type
+        self.version = version
+        self.deploy_mode = deploy_mode
 
     @property
     def name(self):

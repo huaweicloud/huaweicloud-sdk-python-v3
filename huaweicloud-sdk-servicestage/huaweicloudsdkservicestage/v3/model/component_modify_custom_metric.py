@@ -48,12 +48,9 @@ class ComponentModifyCustomMetric:
         self._dimensions = None
         self.discriminator = None
 
-        if path is not None:
-            self.path = path
-        if port is not None:
-            self.port = port
-        if dimensions is not None:
-            self.dimensions = dimensions
+        self.path = path
+        self.port = port
+        self.dimensions = dimensions
 
     @property
     def path(self):

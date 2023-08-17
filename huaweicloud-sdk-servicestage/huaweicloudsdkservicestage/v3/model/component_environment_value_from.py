@@ -53,10 +53,8 @@ class ComponentEnvironmentValueFrom:
         self._optional = None
         self.discriminator = None
 
-        if reference_type is not None:
-            self.reference_type = reference_type
-        if name is not None:
-            self.name = name
+        self.reference_type = reference_type
+        self.name = name
         if key is not None:
             self.key = key
         if optional is not None:

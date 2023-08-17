@@ -47,19 +47,19 @@ class BackendApiBaseInfo:
 
         The model defined in huaweicloud sdk
 
-        :param authorizer_id: 后端自定义认证对象的ID
+        :param authorizer_id: 后端自定义认证对象的ID，后端类型为GRPC时不支持后端自定义认证
         :type authorizer_id: str
         :param url_domain: 后端服务的地址。   由主机（IP或域名）和端口号组成，总长度不超过255。格式为主机:端口（如：apig.example.com:7443）。如果不写端口，则HTTPS默认端口号为443，HTTP默认端口号为80。   支持环境变量，使用环境变量时，每个变量名的长度为3 ~ 32位的字符串，字符串由英文字母、数字、下划线、中划线组成，且只能以英文开头
         :type url_domain: str
-        :param req_protocol: 请求协议
+        :param req_protocol: 请求协议，后端类型为GRPC时请求协议可选GRPCS
         :type req_protocol: str
         :param remark: 描述。字符长度不超过255 &gt; 中文字符必须为UTF-8或者unicode编码。
         :type remark: str
-        :param req_method: 请求方式
+        :param req_method: 请求方式，后端类型为GRPC时请求方式固定为POST
         :type req_method: str
         :param version: web后端版本，字符长度不超过16
         :type version: str
-        :param req_uri: 请求地址。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ . 等特殊字符，总长度不超过512，且满足URI规范。   支持环境变量，使用环境变量时，每个变量名的长度为3 ~ 32位的字符串，字符串由英文字母、数字、中划线、下划线组成，且只能以英文开头。  &gt; 需要服从URI规范。
+        :param req_uri: 请求地址。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ . 等特殊字符，总长度不超过512，且满足URI规范。   支持环境变量，使用环境变量时，每个变量名的长度为3 ~ 32位的字符串，字符串由英文字母、数字、中划线、下划线组成，且只能以英文开头。  &gt; 需要服从URI规范。  后端类型为GRPC时请求地址固定为/
         :type req_uri: str
         :param timeout: API网关请求后端服务的超时时间。最大超时时间可通过实例特性backend_timeout配置修改，可修改的上限为600000。  单位：毫秒。
         :type timeout: int
@@ -104,7 +104,7 @@ class BackendApiBaseInfo:
     def authorizer_id(self):
         """Gets the authorizer_id of this BackendApiBaseInfo.
 
-        后端自定义认证对象的ID
+        后端自定义认证对象的ID，后端类型为GRPC时不支持后端自定义认证
 
         :return: The authorizer_id of this BackendApiBaseInfo.
         :rtype: str
@@ -115,7 +115,7 @@ class BackendApiBaseInfo:
     def authorizer_id(self, authorizer_id):
         """Sets the authorizer_id of this BackendApiBaseInfo.
 
-        后端自定义认证对象的ID
+        后端自定义认证对象的ID，后端类型为GRPC时不支持后端自定义认证
 
         :param authorizer_id: The authorizer_id of this BackendApiBaseInfo.
         :type authorizer_id: str
@@ -148,7 +148,7 @@ class BackendApiBaseInfo:
     def req_protocol(self):
         """Gets the req_protocol of this BackendApiBaseInfo.
 
-        请求协议
+        请求协议，后端类型为GRPC时请求协议可选GRPCS
 
         :return: The req_protocol of this BackendApiBaseInfo.
         :rtype: str
@@ -159,7 +159,7 @@ class BackendApiBaseInfo:
     def req_protocol(self, req_protocol):
         """Sets the req_protocol of this BackendApiBaseInfo.
 
-        请求协议
+        请求协议，后端类型为GRPC时请求协议可选GRPCS
 
         :param req_protocol: The req_protocol of this BackendApiBaseInfo.
         :type req_protocol: str
@@ -192,7 +192,7 @@ class BackendApiBaseInfo:
     def req_method(self):
         """Gets the req_method of this BackendApiBaseInfo.
 
-        请求方式
+        请求方式，后端类型为GRPC时请求方式固定为POST
 
         :return: The req_method of this BackendApiBaseInfo.
         :rtype: str
@@ -203,7 +203,7 @@ class BackendApiBaseInfo:
     def req_method(self, req_method):
         """Sets the req_method of this BackendApiBaseInfo.
 
-        请求方式
+        请求方式，后端类型为GRPC时请求方式固定为POST
 
         :param req_method: The req_method of this BackendApiBaseInfo.
         :type req_method: str
@@ -236,7 +236,7 @@ class BackendApiBaseInfo:
     def req_uri(self):
         """Gets the req_uri of this BackendApiBaseInfo.
 
-        请求地址。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ . 等特殊字符，总长度不超过512，且满足URI规范。   支持环境变量，使用环境变量时，每个变量名的长度为3 ~ 32位的字符串，字符串由英文字母、数字、中划线、下划线组成，且只能以英文开头。  > 需要服从URI规范。
+        请求地址。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ . 等特殊字符，总长度不超过512，且满足URI规范。   支持环境变量，使用环境变量时，每个变量名的长度为3 ~ 32位的字符串，字符串由英文字母、数字、中划线、下划线组成，且只能以英文开头。  > 需要服从URI规范。  后端类型为GRPC时请求地址固定为/
 
         :return: The req_uri of this BackendApiBaseInfo.
         :rtype: str
@@ -247,7 +247,7 @@ class BackendApiBaseInfo:
     def req_uri(self, req_uri):
         """Sets the req_uri of this BackendApiBaseInfo.
 
-        请求地址。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ . 等特殊字符，总长度不超过512，且满足URI规范。   支持环境变量，使用环境变量时，每个变量名的长度为3 ~ 32位的字符串，字符串由英文字母、数字、中划线、下划线组成，且只能以英文开头。  > 需要服从URI规范。
+        请求地址。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ . 等特殊字符，总长度不超过512，且满足URI规范。   支持环境变量，使用环境变量时，每个变量名的长度为3 ~ 32位的字符串，字符串由英文字母、数字、中划线、下划线组成，且只能以英文开头。  > 需要服从URI规范。  后端类型为GRPC时请求地址固定为/
 
         :param req_uri: The req_uri of this BackendApiBaseInfo.
         :type req_uri: str

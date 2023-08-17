@@ -81,7 +81,7 @@ class ListPortsRequest:
         :type fixed_ips: list[str]
         :param enterprise_project_id: 功能说明：企业项目ID，用于基于企业项目的权限管理。  取值范围：最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。  若需要查询当前用户所有企业项目绑定的端口，请传参all_granted_eps。
         :type enterprise_project_id: str
-        :param enable_efi: 功能说明：是否使能efi，使能则表示端口支持vRoCE能力，默认为false
+        :param enable_efi: 按照是否使能efi过滤查询
         :type enable_efi: bool
         """
         
@@ -422,7 +422,7 @@ class ListPortsRequest:
     def enable_efi(self):
         """Gets the enable_efi of this ListPortsRequest.
 
-        功能说明：是否使能efi，使能则表示端口支持vRoCE能力，默认为false
+        按照是否使能efi过滤查询
 
         :return: The enable_efi of this ListPortsRequest.
         :rtype: bool
@@ -433,7 +433,7 @@ class ListPortsRequest:
     def enable_efi(self, enable_efi):
         """Sets the enable_efi of this ListPortsRequest.
 
-        功能说明：是否使能efi，使能则表示端口支持vRoCE能力，默认为false
+        按照是否使能efi过滤查询
 
         :param enable_efi: The enable_efi of this ListPortsRequest.
         :type enable_efi: bool

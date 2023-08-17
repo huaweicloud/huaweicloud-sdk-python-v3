@@ -88,8 +88,7 @@ class SourceObject:
         self._repo_url = None
         self.discriminator = None
 
-        if kind is not None:
-            self.kind = kind
+        self.kind = kind
         if url is not None:
             self.url = url
         if version is not None:

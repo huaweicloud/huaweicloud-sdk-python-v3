@@ -19,6 +19,8 @@ class PrePaidServerRootVolume:
     openapi_types = {
         'volumetype': 'str',
         'size': 'int',
+        'iops': 'int',
+        'throughput': 'int',
         'extendparam': 'PrePaidServerRootVolumeExtendParam',
         'metadata': 'PrePaidServerRootVolumeMetadata',
         'cluster_type': 'str',
@@ -29,6 +31,8 @@ class PrePaidServerRootVolume:
     attribute_map = {
         'volumetype': 'volumetype',
         'size': 'size',
+        'iops': 'iops',
+        'throughput': 'throughput',
         'extendparam': 'extendparam',
         'metadata': 'metadata',
         'cluster_type': 'cluster_type',
@@ -36,15 +40,19 @@ class PrePaidServerRootVolume:
         'hwpassthrough': 'hw:passthrough'
     }
 
-    def __init__(self, volumetype=None, size=None, extendparam=None, metadata=None, cluster_type=None, cluster_id=None, hwpassthrough=None):
+    def __init__(self, volumetype=None, size=None, iops=None, throughput=None, extendparam=None, metadata=None, cluster_type=None, cluster_id=None, hwpassthrough=None):
         """PrePaidServerRootVolume
 
         The model defined in huaweicloud sdk
 
-        :param volumetype: 云服务器系统盘对应的磁盘类型，需要与系统所提供的磁盘类型相匹配。  - SATA：普通IO磁盘类型。 - SAS：高IO磁盘类型。 - SSD：超高IO磁盘类型。 - co-p1：高IO (性能优化Ⅰ型) - uh-l1：超高IO (时延优化)  &gt; 说明： &gt;  &gt; 对于HANA云服务器、HL1型云服务器、HL2型云服务器，需使用co-p1和uh-l1两种磁盘类型。对于其他类型的云服务器，不能使用co-p1和uh-l1两种磁盘类型。
+        :param volumetype: 云服务器系统盘对应的磁盘类型，需要与系统所提供的磁盘类型相匹配。   - SATA：普通IO磁盘类型。  - SAS：高IO磁盘类型。  - SSD：超高IO磁盘类型。  - co-p1：高IO (性能优化Ⅰ型)。  - uh-l1：超高IO (时延优化)。  - GPSSD2：通用型SSD V2磁盘类型。  - ESSD2：极速型SSD V2磁盘类型。   &gt; 说明： &gt;  &gt; 对于HANA云服务器、HL1型云服务器、HL2型云服务器，需使用co-p1和uh-l1两种磁盘类型。对于其他类型的云服务器，不能使用co-p1和uh-l1两种磁盘类型。  了解不同磁盘类型的详细信息，请参见 [磁盘类型及性能介绍](https://support.huaweicloud.com/productdesc-evs/zh-cn_topic_0044524691.html)。  获取region可用的卷类型，请参见[查询云硬盘类型列表](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product&#x3D;EVS&amp;api&#x3D;CinderListVolumeTypes)
         :type volumetype: str
         :param size: 系统盘大小，容量单位为GB， 输入大小范围为[1,1024]。  约束：  - 系统盘大小取值应不小于镜像支持的系统盘的最小值(镜像的min_disk属性)。 - 若该参数没有指定或者指定为0时，系统盘大小默认取值为镜像中系统盘的最小值(镜像的min_disk属性)。  &gt; 说明：  &gt; 镜像系统盘的最小值(镜像的min_disk属性)可在控制台中点击镜像详情查看。或通过调用“查询镜像详情（OpenStack原生）”API获取，详细操作请参考[《镜像服务API参考》](https://support.huaweicloud.com/api-ims/ims_03_0702.html)中“查询镜像详情（OpenStack原生）”章节。
         :type size: int
+        :param iops: 给云硬盘配置iops，购买GPSSD2、ESSD2类型的云硬盘时必填，其他类型不能设置。  说明： 1、了解GPSSD2、ESSD2类型的iops大小范围，请参见 [云硬盘类型及性能介绍里面的云硬盘性能数据表](https://support.huaweicloud.com/productdesc-evs/zh-cn_topic_0044524691.html)。 2、只支持按需计费。
+        :type iops: int
+        :param throughput: 给云硬盘配置吞吐量，单位是MiB/s，购买GPSSD2类型云盘时必填，其他类型不能设置。  说明： 1、了解GPSSD2类型的吞吐量大小范围，请参见 [云硬盘类型及性能介绍里面的云硬盘性能数据表](https://support.huaweicloud.com/productdesc-evs/zh-cn_topic_0044524691.html)。 2、只支持按需计费。
+        :type throughput: int
         :param extendparam: 
         :type extendparam: :class:`huaweicloudsdkecs.v2.PrePaidServerRootVolumeExtendParam`
         :param metadata: 
@@ -61,6 +69,8 @@ class PrePaidServerRootVolume:
 
         self._volumetype = None
         self._size = None
+        self._iops = None
+        self._throughput = None
         self._extendparam = None
         self._metadata = None
         self._cluster_type = None
@@ -71,6 +81,10 @@ class PrePaidServerRootVolume:
         self.volumetype = volumetype
         if size is not None:
             self.size = size
+        if iops is not None:
+            self.iops = iops
+        if throughput is not None:
+            self.throughput = throughput
         if extendparam is not None:
             self.extendparam = extendparam
         if metadata is not None:
@@ -86,7 +100,7 @@ class PrePaidServerRootVolume:
     def volumetype(self):
         """Gets the volumetype of this PrePaidServerRootVolume.
 
-        云服务器系统盘对应的磁盘类型，需要与系统所提供的磁盘类型相匹配。  - SATA：普通IO磁盘类型。 - SAS：高IO磁盘类型。 - SSD：超高IO磁盘类型。 - co-p1：高IO (性能优化Ⅰ型) - uh-l1：超高IO (时延优化)  > 说明： >  > 对于HANA云服务器、HL1型云服务器、HL2型云服务器，需使用co-p1和uh-l1两种磁盘类型。对于其他类型的云服务器，不能使用co-p1和uh-l1两种磁盘类型。
+        云服务器系统盘对应的磁盘类型，需要与系统所提供的磁盘类型相匹配。   - SATA：普通IO磁盘类型。  - SAS：高IO磁盘类型。  - SSD：超高IO磁盘类型。  - co-p1：高IO (性能优化Ⅰ型)。  - uh-l1：超高IO (时延优化)。  - GPSSD2：通用型SSD V2磁盘类型。  - ESSD2：极速型SSD V2磁盘类型。   > 说明： >  > 对于HANA云服务器、HL1型云服务器、HL2型云服务器，需使用co-p1和uh-l1两种磁盘类型。对于其他类型的云服务器，不能使用co-p1和uh-l1两种磁盘类型。  了解不同磁盘类型的详细信息，请参见 [磁盘类型及性能介绍](https://support.huaweicloud.com/productdesc-evs/zh-cn_topic_0044524691.html)。  获取region可用的卷类型，请参见[查询云硬盘类型列表](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=EVS&api=CinderListVolumeTypes)
 
         :return: The volumetype of this PrePaidServerRootVolume.
         :rtype: str
@@ -97,7 +111,7 @@ class PrePaidServerRootVolume:
     def volumetype(self, volumetype):
         """Sets the volumetype of this PrePaidServerRootVolume.
 
-        云服务器系统盘对应的磁盘类型，需要与系统所提供的磁盘类型相匹配。  - SATA：普通IO磁盘类型。 - SAS：高IO磁盘类型。 - SSD：超高IO磁盘类型。 - co-p1：高IO (性能优化Ⅰ型) - uh-l1：超高IO (时延优化)  > 说明： >  > 对于HANA云服务器、HL1型云服务器、HL2型云服务器，需使用co-p1和uh-l1两种磁盘类型。对于其他类型的云服务器，不能使用co-p1和uh-l1两种磁盘类型。
+        云服务器系统盘对应的磁盘类型，需要与系统所提供的磁盘类型相匹配。   - SATA：普通IO磁盘类型。  - SAS：高IO磁盘类型。  - SSD：超高IO磁盘类型。  - co-p1：高IO (性能优化Ⅰ型)。  - uh-l1：超高IO (时延优化)。  - GPSSD2：通用型SSD V2磁盘类型。  - ESSD2：极速型SSD V2磁盘类型。   > 说明： >  > 对于HANA云服务器、HL1型云服务器、HL2型云服务器，需使用co-p1和uh-l1两种磁盘类型。对于其他类型的云服务器，不能使用co-p1和uh-l1两种磁盘类型。  了解不同磁盘类型的详细信息，请参见 [磁盘类型及性能介绍](https://support.huaweicloud.com/productdesc-evs/zh-cn_topic_0044524691.html)。  获取region可用的卷类型，请参见[查询云硬盘类型列表](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=EVS&api=CinderListVolumeTypes)
 
         :param volumetype: The volumetype of this PrePaidServerRootVolume.
         :type volumetype: str
@@ -125,6 +139,50 @@ class PrePaidServerRootVolume:
         :type size: int
         """
         self._size = size
+
+    @property
+    def iops(self):
+        """Gets the iops of this PrePaidServerRootVolume.
+
+        给云硬盘配置iops，购买GPSSD2、ESSD2类型的云硬盘时必填，其他类型不能设置。  说明： 1、了解GPSSD2、ESSD2类型的iops大小范围，请参见 [云硬盘类型及性能介绍里面的云硬盘性能数据表](https://support.huaweicloud.com/productdesc-evs/zh-cn_topic_0044524691.html)。 2、只支持按需计费。
+
+        :return: The iops of this PrePaidServerRootVolume.
+        :rtype: int
+        """
+        return self._iops
+
+    @iops.setter
+    def iops(self, iops):
+        """Sets the iops of this PrePaidServerRootVolume.
+
+        给云硬盘配置iops，购买GPSSD2、ESSD2类型的云硬盘时必填，其他类型不能设置。  说明： 1、了解GPSSD2、ESSD2类型的iops大小范围，请参见 [云硬盘类型及性能介绍里面的云硬盘性能数据表](https://support.huaweicloud.com/productdesc-evs/zh-cn_topic_0044524691.html)。 2、只支持按需计费。
+
+        :param iops: The iops of this PrePaidServerRootVolume.
+        :type iops: int
+        """
+        self._iops = iops
+
+    @property
+    def throughput(self):
+        """Gets the throughput of this PrePaidServerRootVolume.
+
+        给云硬盘配置吞吐量，单位是MiB/s，购买GPSSD2类型云盘时必填，其他类型不能设置。  说明： 1、了解GPSSD2类型的吞吐量大小范围，请参见 [云硬盘类型及性能介绍里面的云硬盘性能数据表](https://support.huaweicloud.com/productdesc-evs/zh-cn_topic_0044524691.html)。 2、只支持按需计费。
+
+        :return: The throughput of this PrePaidServerRootVolume.
+        :rtype: int
+        """
+        return self._throughput
+
+    @throughput.setter
+    def throughput(self, throughput):
+        """Sets the throughput of this PrePaidServerRootVolume.
+
+        给云硬盘配置吞吐量，单位是MiB/s，购买GPSSD2类型云盘时必填，其他类型不能设置。  说明： 1、了解GPSSD2类型的吞吐量大小范围，请参见 [云硬盘类型及性能介绍里面的云硬盘性能数据表](https://support.huaweicloud.com/productdesc-evs/zh-cn_topic_0044524691.html)。 2、只支持按需计费。
+
+        :param throughput: The throughput of this PrePaidServerRootVolume.
+        :type throughput: int
+        """
+        self._throughput = throughput
 
     @property
     def extendparam(self):

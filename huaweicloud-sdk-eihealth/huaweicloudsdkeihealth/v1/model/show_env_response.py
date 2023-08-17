@@ -23,7 +23,8 @@ class ShowEnvResponse(SdkResponse):
         'has_drug': 'bool',
         'has_encryption_button': 'bool',
         'deploy_mode': 'str',
-        'enable_cold_archive': 'bool'
+        'enable_cold_archive': 'bool',
+        'public_bucket_path': 'str'
     }
 
     attribute_map = {
@@ -32,10 +33,11 @@ class ShowEnvResponse(SdkResponse):
         'has_drug': 'has_drug',
         'has_encryption_button': 'has_encryption_button',
         'deploy_mode': 'deploy_mode',
-        'enable_cold_archive': 'enable_cold_archive'
+        'enable_cold_archive': 'enable_cold_archive',
+        'public_bucket_path': 'public_bucket_path'
     }
 
-    def __init__(self, dev_user_pool=None, has_dev=None, has_drug=None, has_encryption_button=None, deploy_mode=None, enable_cold_archive=None):
+    def __init__(self, dev_user_pool=None, has_dev=None, has_drug=None, has_encryption_button=None, deploy_mode=None, enable_cold_archive=None, public_bucket_path=None):
         """ShowEnvResponse
 
         The model defined in huaweicloud sdk
@@ -52,6 +54,8 @@ class ShowEnvResponse(SdkResponse):
         :type deploy_mode: str
         :param enable_cold_archive: 是否支持归档类型存储
         :type enable_cold_archive: bool
+        :param public_bucket_path: 医疗智能体公共数据桶https路径
+        :type public_bucket_path: str
         """
         
         super(ShowEnvResponse, self).__init__()
@@ -62,6 +66,7 @@ class ShowEnvResponse(SdkResponse):
         self._has_encryption_button = None
         self._deploy_mode = None
         self._enable_cold_archive = None
+        self._public_bucket_path = None
         self.discriminator = None
 
         if dev_user_pool is not None:
@@ -76,6 +81,8 @@ class ShowEnvResponse(SdkResponse):
             self.deploy_mode = deploy_mode
         if enable_cold_archive is not None:
             self.enable_cold_archive = enable_cold_archive
+        if public_bucket_path is not None:
+            self.public_bucket_path = public_bucket_path
 
     @property
     def dev_user_pool(self):
@@ -208,6 +215,28 @@ class ShowEnvResponse(SdkResponse):
         :type enable_cold_archive: bool
         """
         self._enable_cold_archive = enable_cold_archive
+
+    @property
+    def public_bucket_path(self):
+        """Gets the public_bucket_path of this ShowEnvResponse.
+
+        医疗智能体公共数据桶https路径
+
+        :return: The public_bucket_path of this ShowEnvResponse.
+        :rtype: str
+        """
+        return self._public_bucket_path
+
+    @public_bucket_path.setter
+    def public_bucket_path(self, public_bucket_path):
+        """Sets the public_bucket_path of this ShowEnvResponse.
+
+        医疗智能体公共数据桶https路径
+
+        :param public_bucket_path: The public_bucket_path of this ShowEnvResponse.
+        :type public_bucket_path: str
+        """
+        self._public_bucket_path = public_bucket_path
 
     def to_dict(self):
         """Returns the model properties as a dict"""

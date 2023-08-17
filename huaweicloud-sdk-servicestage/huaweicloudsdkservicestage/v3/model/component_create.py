@@ -41,7 +41,7 @@ class ComponentCreate:
         'jvm_opts': 'str',
         'tomcat_opts': 'ComponentCreateTomcatOpts',
         'logs': 'list[ComponentLogs]',
-        'custom_metric': 'ComponentModifyCustomMetric',
+        'custom_metric': 'ComponentCreateCustomMetric',
         'affinity': 'ComponentAffinity',
         'anti_affinity': 'ComponentAffinity',
         'liveness_probe': 'ComponentProbe',
@@ -136,7 +136,7 @@ class ComponentCreate:
         :param logs: 
         :type logs: list[:class:`huaweicloudsdkservicestage.v3.ComponentLogs`]
         :param custom_metric: 
-        :type custom_metric: :class:`huaweicloudsdkservicestage.v3.ComponentModifyCustomMetric`
+        :type custom_metric: :class:`huaweicloudsdkservicestage.v3.ComponentCreateCustomMetric`
         :param affinity: 
         :type affinity: :class:`huaweicloudsdkservicestage.v3.ComponentAffinity`
         :param anti_affinity: 
@@ -701,7 +701,7 @@ class ComponentCreate:
         """Gets the custom_metric of this ComponentCreate.
 
         :return: The custom_metric of this ComponentCreate.
-        :rtype: :class:`huaweicloudsdkservicestage.v3.ComponentModifyCustomMetric`
+        :rtype: :class:`huaweicloudsdkservicestage.v3.ComponentCreateCustomMetric`
         """
         return self._custom_metric
 
@@ -710,7 +710,7 @@ class ComponentCreate:
         """Sets the custom_metric of this ComponentCreate.
 
         :param custom_metric: The custom_metric of this ComponentCreate.
-        :type custom_metric: :class:`huaweicloudsdkservicestage.v3.ComponentModifyCustomMetric`
+        :type custom_metric: :class:`huaweicloudsdkservicestage.v3.ComponentCreateCustomMetric`
         """
         self._custom_metric = custom_metric
 

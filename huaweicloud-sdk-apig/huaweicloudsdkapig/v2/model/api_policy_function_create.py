@@ -65,11 +65,11 @@ class ApiPolicyFunctionCreate:
         :type effect_mode: str
         :param name: 策略后端名称。字符串由中文、英文字母、数字、下划线组成，且只能以中文或英文开头。
         :type name: str
-        :param backend_params: 后端参数列表
+        :param backend_params: 后端参数列表，后端类型为GRPC时不支持配置
         :type backend_params: list[:class:`huaweicloudsdkapig.v2.BackendParamBase`]
         :param conditions: 策略条件列表
         :type conditions: list[:class:`huaweicloudsdkapig.v2.ApiConditionBase`]
-        :param authorizer_id: 后端自定义认证对象的ID
+        :param authorizer_id: 后端自定义认证对象的ID，后端类型为GRPC时不支持后端自定义认证
         :type authorizer_id: str
         """
         
@@ -285,7 +285,7 @@ class ApiPolicyFunctionCreate:
     def backend_params(self):
         """Gets the backend_params of this ApiPolicyFunctionCreate.
 
-        后端参数列表
+        后端参数列表，后端类型为GRPC时不支持配置
 
         :return: The backend_params of this ApiPolicyFunctionCreate.
         :rtype: list[:class:`huaweicloudsdkapig.v2.BackendParamBase`]
@@ -296,7 +296,7 @@ class ApiPolicyFunctionCreate:
     def backend_params(self, backend_params):
         """Sets the backend_params of this ApiPolicyFunctionCreate.
 
-        后端参数列表
+        后端参数列表，后端类型为GRPC时不支持配置
 
         :param backend_params: The backend_params of this ApiPolicyFunctionCreate.
         :type backend_params: list[:class:`huaweicloudsdkapig.v2.BackendParamBase`]
@@ -329,7 +329,7 @@ class ApiPolicyFunctionCreate:
     def authorizer_id(self):
         """Gets the authorizer_id of this ApiPolicyFunctionCreate.
 
-        后端自定义认证对象的ID
+        后端自定义认证对象的ID，后端类型为GRPC时不支持后端自定义认证
 
         :return: The authorizer_id of this ApiPolicyFunctionCreate.
         :rtype: str
@@ -340,7 +340,7 @@ class ApiPolicyFunctionCreate:
     def authorizer_id(self, authorizer_id):
         """Sets the authorizer_id of this ApiPolicyFunctionCreate.
 
-        后端自定义认证对象的ID
+        后端自定义认证对象的ID，后端类型为GRPC时不支持后端自定义认证
 
         :param authorizer_id: The authorizer_id of this ApiPolicyFunctionCreate.
         :type authorizer_id: str

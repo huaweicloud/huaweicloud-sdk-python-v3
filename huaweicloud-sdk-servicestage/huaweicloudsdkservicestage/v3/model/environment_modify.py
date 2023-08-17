@@ -19,18 +19,16 @@ class EnvironmentModify:
     openapi_types = {
         'name': 'str',
         'description': 'str',
-        'enterprise_project_id': 'str',
-        'labels': 'list[EnvironmentViewLabels]'
+        'labels': 'list[EnvironmentCreateLabels]'
     }
 
     attribute_map = {
         'name': 'name',
         'description': 'description',
-        'enterprise_project_id': 'enterprise_project_id',
         'labels': 'labels'
     }
 
-    def __init__(self, name=None, description=None, enterprise_project_id=None, labels=None):
+    def __init__(self, name=None, description=None, labels=None):
         """EnvironmentModify
 
         The model defined in huaweicloud sdk
@@ -39,26 +37,20 @@ class EnvironmentModify:
         :type name: str
         :param description: 
         :type description: str
-        :param enterprise_project_id: 
-        :type enterprise_project_id: str
         :param labels: 
-        :type labels: list[:class:`huaweicloudsdkservicestage.v3.EnvironmentViewLabels`]
+        :type labels: list[:class:`huaweicloudsdkservicestage.v3.EnvironmentCreateLabels`]
         """
         
         
 
         self._name = None
         self._description = None
-        self._enterprise_project_id = None
         self._labels = None
         self.discriminator = None
 
-        if name is not None:
-            self.name = name
+        self.name = name
         if description is not None:
             self.description = description
-        if enterprise_project_id is not None:
-            self.enterprise_project_id = enterprise_project_id
         if labels is not None:
             self.labels = labels
 
@@ -99,29 +91,11 @@ class EnvironmentModify:
         self._description = description
 
     @property
-    def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this EnvironmentModify.
-
-        :return: The enterprise_project_id of this EnvironmentModify.
-        :rtype: str
-        """
-        return self._enterprise_project_id
-
-    @enterprise_project_id.setter
-    def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this EnvironmentModify.
-
-        :param enterprise_project_id: The enterprise_project_id of this EnvironmentModify.
-        :type enterprise_project_id: str
-        """
-        self._enterprise_project_id = enterprise_project_id
-
-    @property
     def labels(self):
         """Gets the labels of this EnvironmentModify.
 
         :return: The labels of this EnvironmentModify.
-        :rtype: list[:class:`huaweicloudsdkservicestage.v3.EnvironmentViewLabels`]
+        :rtype: list[:class:`huaweicloudsdkservicestage.v3.EnvironmentCreateLabels`]
         """
         return self._labels
 
@@ -130,7 +104,7 @@ class EnvironmentModify:
         """Sets the labels of this EnvironmentModify.
 
         :param labels: The labels of this EnvironmentModify.
-        :type labels: list[:class:`huaweicloudsdkservicestage.v3.EnvironmentViewLabels`]
+        :type labels: list[:class:`huaweicloudsdkservicestage.v3.EnvironmentCreateLabels`]
         """
         self._labels = labels
 

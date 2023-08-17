@@ -183,10 +183,8 @@ class ComponentModify:
             self.description = description
         if labels is not None:
             self.labels = labels
-        if runtime_stack is not None:
-            self.runtime_stack = runtime_stack
-        if source is not None:
-            self.source = source
+        self.runtime_stack = runtime_stack
+        self.source = source
         if build is not None:
             self.build = build
         if limit_cpu is not None:
@@ -197,10 +195,8 @@ class ComponentModify:
             self.request_cpu = request_cpu
         if request_memory is not None:
             self.request_memory = request_memory
-        if replica is not None:
-            self.replica = replica
-        if version is not None:
-            self.version = version
+        self.replica = replica
+        self.version = version
         if envs is not None:
             self.envs = envs
         if storages is not None:

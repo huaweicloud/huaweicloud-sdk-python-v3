@@ -117,8 +117,7 @@ class NeutronSecurityGroupRule:
         self.protocol = protocol
         self.remote_group_id = remote_group_id
         self.remote_ip_prefix = remote_ip_prefix
-        if remote_address_group_id is not None:
-            self.remote_address_group_id = remote_address_group_id
+        self.remote_address_group_id = remote_address_group_id
         self.security_group_id = security_group_id
         self.tenant_id = tenant_id
         self.project_id = project_id

@@ -22,7 +22,8 @@ class AssetExtraMeta:
         'ppt_meta': 'PPTAssetMeta',
         'animation_meta': 'AnimationAssetMeta',
         'scene_meta': 'SceneAssetMeta',
-        'material_meta': 'MaterialAssetMeta'
+        'material_meta': 'MaterialAssetMeta',
+        'human_model_2d_meta': 'HumanModel2DAssetMeta'
     }
 
     attribute_map = {
@@ -31,10 +32,11 @@ class AssetExtraMeta:
         'ppt_meta': 'ppt_meta',
         'animation_meta': 'animation_meta',
         'scene_meta': 'scene_meta',
-        'material_meta': 'material_meta'
+        'material_meta': 'material_meta',
+        'human_model_2d_meta': 'human_model_2d_meta'
     }
 
-    def __init__(self, human_model_meta=None, voice_model_meta=None, ppt_meta=None, animation_meta=None, scene_meta=None, material_meta=None):
+    def __init__(self, human_model_meta=None, voice_model_meta=None, ppt_meta=None, animation_meta=None, scene_meta=None, material_meta=None, human_model_2d_meta=None):
         """AssetExtraMeta
 
         The model defined in huaweicloud sdk
@@ -51,6 +53,8 @@ class AssetExtraMeta:
         :type scene_meta: :class:`huaweicloudsdkmetastudio.v1.SceneAssetMeta`
         :param material_meta: 
         :type material_meta: :class:`huaweicloudsdkmetastudio.v1.MaterialAssetMeta`
+        :param human_model_2d_meta: 
+        :type human_model_2d_meta: :class:`huaweicloudsdkmetastudio.v1.HumanModel2DAssetMeta`
         """
         
         
@@ -61,6 +65,7 @@ class AssetExtraMeta:
         self._animation_meta = None
         self._scene_meta = None
         self._material_meta = None
+        self._human_model_2d_meta = None
         self.discriminator = None
 
         if human_model_meta is not None:
@@ -75,6 +80,8 @@ class AssetExtraMeta:
             self.scene_meta = scene_meta
         if material_meta is not None:
             self.material_meta = material_meta
+        if human_model_2d_meta is not None:
+            self.human_model_2d_meta = human_model_2d_meta
 
     @property
     def human_model_meta(self):
@@ -183,6 +190,24 @@ class AssetExtraMeta:
         :type material_meta: :class:`huaweicloudsdkmetastudio.v1.MaterialAssetMeta`
         """
         self._material_meta = material_meta
+
+    @property
+    def human_model_2d_meta(self):
+        """Gets the human_model_2d_meta of this AssetExtraMeta.
+
+        :return: The human_model_2d_meta of this AssetExtraMeta.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.HumanModel2DAssetMeta`
+        """
+        return self._human_model_2d_meta
+
+    @human_model_2d_meta.setter
+    def human_model_2d_meta(self, human_model_2d_meta):
+        """Sets the human_model_2d_meta of this AssetExtraMeta.
+
+        :param human_model_2d_meta: The human_model_2d_meta of this AssetExtraMeta.
+        :type human_model_2d_meta: :class:`huaweicloudsdkmetastudio.v1.HumanModel2DAssetMeta`
+        """
+        self._human_model_2d_meta = human_model_2d_meta
 
     def to_dict(self):
         """Returns the model properties as a dict"""

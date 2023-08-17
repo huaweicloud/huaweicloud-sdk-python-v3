@@ -141,9 +141,9 @@ class ServiceStageAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def delete_application_configuration_async(self, request):
-        """删除应用配置
+        """根据应用ID删除应用配置
 
-        通过此API删除应用配置信息。
+        此API通过应用ID删除应用配置。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -200,7 +200,7 @@ class ServiceStageAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def modify_application_async(self, request):
-        """修改应用信息
+        """根据应用ID修改应用信息
 
         此API通过应用ID修改应用信息。
         
@@ -259,9 +259,9 @@ class ServiceStageAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def modify_application_configuration_async(self, request):
-        """修改应用配置信息
+        """根据应用ID修改应用配置
 
-        通过此API修改应用配置信息。
+        此API通过应用ID修改应用配置。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -318,9 +318,9 @@ class ServiceStageAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def show_application_configuration_async(self, request):
-        """获取应用配置
+        """根据应用ID获取应用配置
 
-        通过此API获取应用配置信息。
+        此API通过应用ID获取应用配置信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -497,9 +497,9 @@ class ServiceStageAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def create_component_async(self, request):
-        """创建组件
+        """应用中创建组件
 
-        通过此API创建组件。
+        此API用来在应用中创建组件。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -556,9 +556,9 @@ class ServiceStageAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def delete_component_async(self, request):
-        """根据应用组件ID删除应用组件
+        """根据组件ID删除组件
 
-        此API通过应用组件ID删除应用组件。
+        此API通过组件ID删除组件。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -676,9 +676,9 @@ class ServiceStageAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def show_component_info_async(self, request):
-        """根据组件ID获取应用组件信息
+        """根据组件ID获取组件信息
 
-        通过组件ID获取应用组件信息。
+        通过组件ID获取组件信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -936,9 +936,9 @@ class ServiceStageAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def update_component_action_async(self, request):
-        """对组件的操作
+        """根据组件ID下发组件任务
 
-        通过此API获取对组件的操作。
+        通过组件ID下发组件任务。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1113,9 +1113,9 @@ class ServiceStageAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def modify_environment_async(self, request):
-        """修改环境信息
+        """根据环境ID修改环境
 
-        此API通过环境ID修改环境信息。
+        此API通过环境ID修改环境。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1172,9 +1172,9 @@ class ServiceStageAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def modify_resource_in_environment_async(self, request):
-        """修改环境资源
+        """根据环境ID修改环境资源
 
-        此API用来修改环境资源
+        此API用来通过环境ID修改环境资源。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1288,9 +1288,9 @@ class ServiceStageAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def show_environment_resources_async(self, request):
-        """获取环境资源
+        """根据环境ID查询环境资源
 
-        此API用来获取环境资源
+        此API用来根据环境ID查询环境资源。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1478,9 +1478,9 @@ class ServiceStageAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def show_runtime_stacks_async(self, request):
-        """获取所有技术栈
+        """查询运行时栈
 
-        获取所有技术栈
+        获取运行时信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 

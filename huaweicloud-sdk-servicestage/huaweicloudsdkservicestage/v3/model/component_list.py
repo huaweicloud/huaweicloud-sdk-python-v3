@@ -29,7 +29,8 @@ class ComponentList:
         'creator': 'str',
         'source': 'SourceObject',
         'version': 'str',
-        'platform_type': 'str'
+        'platform_type': 'str',
+        'external_accesses': 'list[ExternalAccesses]'
     }
 
     attribute_map = {
@@ -45,10 +46,11 @@ class ComponentList:
         'creator': 'creator',
         'source': 'source',
         'version': 'version',
-        'platform_type': 'platform_type'
+        'platform_type': 'platform_type',
+        'external_accesses': 'external_accesses'
     }
 
-    def __init__(self, name=None, labels=None, runtime_stack=None, status=None, environment_name=None, application_name=None, environment_id=None, application_id=None, id=None, creator=None, source=None, version=None, platform_type=None):
+    def __init__(self, name=None, labels=None, runtime_stack=None, status=None, environment_name=None, application_name=None, environment_id=None, application_id=None, id=None, creator=None, source=None, version=None, platform_type=None, external_accesses=None):
         """ComponentList
 
         The model defined in huaweicloud sdk
@@ -79,6 +81,8 @@ class ComponentList:
         :type version: str
         :param platform_type: 
         :type platform_type: str
+        :param external_accesses: 
+        :type external_accesses: list[:class:`huaweicloudsdkservicestage.v3.ExternalAccesses`]
         """
         
         
@@ -96,6 +100,7 @@ class ComponentList:
         self._source = None
         self._version = None
         self._platform_type = None
+        self._external_accesses = None
         self.discriminator = None
 
         self.name = name
@@ -122,6 +127,8 @@ class ComponentList:
             self.version = version
         if platform_type is not None:
             self.platform_type = platform_type
+        if external_accesses is not None:
+            self.external_accesses = external_accesses
 
     @property
     def name(self):
@@ -356,6 +363,24 @@ class ComponentList:
         :type platform_type: str
         """
         self._platform_type = platform_type
+
+    @property
+    def external_accesses(self):
+        """Gets the external_accesses of this ComponentList.
+
+        :return: The external_accesses of this ComponentList.
+        :rtype: list[:class:`huaweicloudsdkservicestage.v3.ExternalAccesses`]
+        """
+        return self._external_accesses
+
+    @external_accesses.setter
+    def external_accesses(self, external_accesses):
+        """Sets the external_accesses of this ComponentList.
+
+        :param external_accesses: The external_accesses of this ComponentList.
+        :type external_accesses: list[:class:`huaweicloudsdkservicestage.v3.ExternalAccesses`]
+        """
+        self._external_accesses = external_accesses
 
     def to_dict(self):
         """Returns the model properties as a dict"""

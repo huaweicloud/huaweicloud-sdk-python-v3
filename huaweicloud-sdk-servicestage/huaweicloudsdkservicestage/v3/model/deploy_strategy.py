@@ -48,10 +48,8 @@ class DeployStrategy:
         self._gray_release = None
         self.discriminator = None
 
-        if type is not None:
-            self.type = type
-        if rolling_release is not None:
-            self.rolling_release = rolling_release
+        self.type = type
+        self.rolling_release = rolling_release
         if gray_release is not None:
             self.gray_release = gray_release
 

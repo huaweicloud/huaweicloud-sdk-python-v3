@@ -63,8 +63,7 @@ class ComponentLifecycle:
         self._command = None
         self.discriminator = None
 
-        if type is not None:
-            self.type = type
+        self.type = type
         if scheme is not None:
             self.scheme = scheme
         if host is not None:

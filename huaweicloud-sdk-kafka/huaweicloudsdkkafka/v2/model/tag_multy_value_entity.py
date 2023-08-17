@@ -33,7 +33,7 @@ class TagMultyValueEntity:
 
         :param key: 键。  key不能为空，长度1~128个字符（中文也可以输入128个字符）。  可用UTF-8格式表示的字母、数字和空格，以及以下字符： _ . : &#x3D; + - @  key两头不能有空格字符。
         :type key: str
-        :param values: 值列表。  值长度0~255个字符（中文也可以输入255个字符）。  值可用UTF-8格式表示的字母、数字和空格，以及以下字符： _ . : / &#x3D; + - @。  值可以为空字符串。
+        :param values: 值列表。  值长度0~255个字符（中文也可以输入255个字符）。  值可用UTF-8格式表示的字母、数字和空格，以及以下字符： _ . : / &#x3D; + - @  值可以为空字符串。
         :type values: list[str]
         """
         
@@ -74,7 +74,7 @@ class TagMultyValueEntity:
     def values(self):
         """Gets the values of this TagMultyValueEntity.
 
-        值列表。  值长度0~255个字符（中文也可以输入255个字符）。  值可用UTF-8格式表示的字母、数字和空格，以及以下字符： _ . : / = + - @。  值可以为空字符串。
+        值列表。  值长度0~255个字符（中文也可以输入255个字符）。  值可用UTF-8格式表示的字母、数字和空格，以及以下字符： _ . : / = + - @  值可以为空字符串。
 
         :return: The values of this TagMultyValueEntity.
         :rtype: list[str]
@@ -85,7 +85,7 @@ class TagMultyValueEntity:
     def values(self, values):
         """Sets the values of this TagMultyValueEntity.
 
-        值列表。  值长度0~255个字符（中文也可以输入255个字符）。  值可用UTF-8格式表示的字母、数字和空格，以及以下字符： _ . : / = + - @。  值可以为空字符串。
+        值列表。  值长度0~255个字符（中文也可以输入255个字符）。  值可用UTF-8格式表示的字母、数字和空格，以及以下字符： _ . : / = + - @  值可以为空字符串。
 
         :param values: The values of this TagMultyValueEntity.
         :type values: list[str]

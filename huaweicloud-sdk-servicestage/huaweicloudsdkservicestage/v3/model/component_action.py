@@ -43,8 +43,7 @@ class ComponentAction:
         self._parameters = None
         self.discriminator = None
 
-        if action is not None:
-            self.action = action
+        self.action = action
         if parameters is not None:
             self.parameters = parameters
 

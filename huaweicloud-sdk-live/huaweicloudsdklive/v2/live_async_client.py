@@ -1124,7 +1124,7 @@ class LiveAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def list_single_stream_detail_async(self, request):
-        """查询流监控数据接口
+        """查询推流监控数据接口
 
         查询流监控数据接口，包括帧率码率断流情况。
         

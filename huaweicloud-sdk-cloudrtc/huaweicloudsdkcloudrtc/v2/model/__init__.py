@@ -29,6 +29,10 @@ from huaweicloudsdkcloudrtc.v2.model.hls_record_config import HLSRecordConfig
 from huaweicloudsdkcloudrtc.v2.model.individual_stream_job_req import IndividualStreamJobReq
 from huaweicloudsdkcloudrtc.v2.model.list_apps_request import ListAppsRequest
 from huaweicloudsdkcloudrtc.v2.model.list_apps_response import ListAppsResponse
+from huaweicloudsdkcloudrtc.v2.model.list_obs_bucket_objects_request import ListObsBucketObjectsRequest
+from huaweicloudsdkcloudrtc.v2.model.list_obs_bucket_objects_response import ListObsBucketObjectsResponse
+from huaweicloudsdkcloudrtc.v2.model.list_obs_buckets_request import ListObsBucketsRequest
+from huaweicloudsdkcloudrtc.v2.model.list_obs_buckets_response import ListObsBucketsResponse
 from huaweicloudsdkcloudrtc.v2.model.list_record_rules_request import ListRecordRulesRequest
 from huaweicloudsdkcloudrtc.v2.model.list_record_rules_response import ListRecordRulesResponse
 from huaweicloudsdkcloudrtc.v2.model.mp4_record_config import MP4RecordConfig
@@ -36,6 +40,9 @@ from huaweicloudsdkcloudrtc.v2.model.mix_job_req import MixJobReq
 from huaweicloudsdkcloudrtc.v2.model.mix_layout_pane import MixLayoutPane
 from huaweicloudsdkcloudrtc.v2.model.mix_param import MixParam
 from huaweicloudsdkcloudrtc.v2.model.mix_user_background_image import MixUserBackgroundImage
+from huaweicloudsdkcloudrtc.v2.model.obs_authority_config import ObsAuthorityConfig
+from huaweicloudsdkcloudrtc.v2.model.obs_bucket import ObsBucket
+from huaweicloudsdkcloudrtc.v2.model.obs_object import ObsObject
 from huaweicloudsdkcloudrtc.v2.model.record_obs_file_addr import RecordObsFileAddr
 from huaweicloudsdkcloudrtc.v2.model.record_param import RecordParam
 from huaweicloudsdkcloudrtc.v2.model.record_rule import RecordRule
@@ -76,6 +83,8 @@ from huaweicloudsdkcloudrtc.v2.model.update_mix_job_req import UpdateMixJobReq
 from huaweicloudsdkcloudrtc.v2.model.update_mix_job_request import UpdateMixJobRequest
 from huaweicloudsdkcloudrtc.v2.model.update_mix_job_response import UpdateMixJobResponse
 from huaweicloudsdkcloudrtc.v2.model.update_mix_param import UpdateMixParam
+from huaweicloudsdkcloudrtc.v2.model.update_obs_bucket_authority_request import UpdateObsBucketAuthorityRequest
+from huaweicloudsdkcloudrtc.v2.model.update_obs_bucket_authority_response import UpdateObsBucketAuthorityResponse
 from huaweicloudsdkcloudrtc.v2.model.update_record_callback_request import UpdateRecordCallbackRequest
 from huaweicloudsdkcloudrtc.v2.model.update_record_callback_response import UpdateRecordCallbackResponse
 from huaweicloudsdkcloudrtc.v2.model.update_record_rule_request import UpdateRecordRuleRequest

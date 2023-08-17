@@ -43,10 +43,8 @@ class ApplicationConfigModify:
         self._configuration = None
         self.discriminator = None
 
-        if environment_id is not None:
-            self.environment_id = environment_id
-        if configuration is not None:
-            self.configuration = configuration
+        self.environment_id = environment_id
+        self.configuration = configuration
 
     @property
     def environment_id(self):
