@@ -19,7 +19,7 @@ jobs:
       shell: bash
       run: |
         # Pull the code from the source repository
-        git clone --branch=master-dev --depth=1 $source_repo ../source_repo
+        git lfs clone --branch=master-dev --depth=1 $source_repo ../source_repo
         version=$(cat ../source_repo/VERSION)
         echo "version ${version} found."
         # Organize the content
