@@ -1,3 +1,132 @@
+# 3.1.55 2023-08-21
+
+### HuaweiCloud SDK EdgeSec
+
+- _Features_
+  - Support `EdgeSec`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK IEF
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListEdgeNodes**
+    - changes of request param
+      - `+ group_id`
+  - **UpdateDeviceTwin**
+    - changes of response param
+      - `- property_visitors.register_type`
+      - `- property_visitors.access_mode`
+      - `- property_visitors.register_index`
+      - `- property_visitors.register_num`
+      - `- property_visitors.scale_index`
+      - `- property_visitors.original_datatype`
+      - `- property_visitors.expected_datatype`
+      - `- property_visitors.is_registerswap`
+      - `- property_visitors.is_swap`
+      - `- property_visitors.sample_interval`
+      - `- property_visitors.data_min`
+      - `- property_visitors.data_max`
+      - `- property_visitors.node_id`
+      - `- property_visitors.browse_name`
+      - `* property_visitors: object<ValueInPropertyVisitors> -> map<string, ValueInPropertyVisitors>`
+      - `- twin.excepted`
+      - `- twin.actual`
+      - `- twin.metadata`
+      - `- twin.optional`
+      - `* twin: object<ValueInTwinResponse> -> map<string, ValueInTwinResponse>`
+  - **ListAppVersions**
+    - changes of response param
+      - `+ versions.configs.dns_policy`
+  - **CreateAppVersions**
+    - changes of request param
+      - `+ version.configs.dns_policy`
+    - changes of response param
+      - `+ version.configs.dns_policy`
+  - **ShowAppVersionDetail**
+    - changes of response param
+      - `+ version.configs.dns_policy`
+  - **UpdateAppVersion**
+    - changes of request param
+      - `+ version.configs.dns_policy`
+    - changes of response param
+      - `+ version.configs.dns_policy`
+  - **ListPods**
+    - changes of request param
+      - `+ plugin_instance_name`
+    - changes of response param
+      - `+ pods.configs.dns_policy`
+  - **ListApps**
+    - changes of response param
+      - `+ apps.app_versions.configs.dns_policy`
+  - **CreateApp**
+    - changes of response param
+      - `+ app.app_versions.configs.dns_policy`
+  - **ShowAppDetail**
+    - changes of response param
+      - `+ app.app_versions.configs.dns_policy`
+  - **UpdateApp**
+    - changes of response param
+      - `+ app.app_versions.configs.dns_policy`
+  - **ListDeployments**
+    - changes of response param
+      - `+ deployments.template.configs.dns_policy`
+  - **CreateDeployments**
+    - changes of request param
+      - `+ deployment.template.configs.dns_policy`
+    - changes of response param
+      - `+ template.configs.dns_policy`
+  - **ShowDeployment**
+    - changes of response param
+      - `+ template.configs.dns_policy`
+  - **UpdateDeployment**
+    - changes of request param
+      - `+ deployment.template.configs.dns_policy`
+    - changes of response param
+      - `+ template.configs.dns_policy`
+
+### HuaweiCloud SDK LTS
+
+- _Features_
+  - Support the interface `DeleteDashboard`
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateDashBoard**
+    - changes of response param
+      - `* last_update_time: string -> int64`
+      - `* useSystemTemplate: string -> boolean`
+  - **CreateLogStream**
+    - changes of request param
+      - `- enterprise_project_name`
+      - `- log_stream_name: enum value [lts-stream-13ci]`
+      - `* ttl_in_days: string -> int32`
+      - `* tags: list<tagsBody> -> object<tagsBody>`
+  - **ListAccessConfig**
+    - changes of response param
+      - `+ cluster_id`
+      - `+ result.cluster_id`
+  - **UpdateAccessConfig**
+    - changes of request param
+      - `+ cluster_id`
+    - changes of response param
+      - `+ cluster_id`
+  - **CreateAccessConfig**
+    - changes of request param
+      - `+ cluster_id`
+    - changes of response param
+      - `+ cluster_id`
+  - **DeleteAccessConfig**
+    - changes of response param
+      - `+ cluster_id`
+      - `+ result.cluster_id`
+
 # 3.1.54 2023-08-17
 
 ### HuaweiCloud SDK AOS

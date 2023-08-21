@@ -24,7 +24,8 @@ class CreateAccessConfigRequestBody:
         'host_group_info': 'AccessConfigHostGroupIdListCreate',
         'access_config_tag': 'list[AccessConfigTag]',
         'binary_collect': 'bool',
-        'log_split': 'bool'
+        'log_split': 'bool',
+        'cluster_id': 'str'
     }
 
     attribute_map = {
@@ -35,10 +36,11 @@ class CreateAccessConfigRequestBody:
         'host_group_info': 'host_group_info',
         'access_config_tag': 'access_config_tag',
         'binary_collect': 'binary_collect',
-        'log_split': 'log_split'
+        'log_split': 'log_split',
+        'cluster_id': 'cluster_id'
     }
 
-    def __init__(self, access_config_name=None, access_config_type=None, access_config_detail=None, log_info=None, host_group_info=None, access_config_tag=None, binary_collect=None, log_split=None):
+    def __init__(self, access_config_name=None, access_config_type=None, access_config_detail=None, log_info=None, host_group_info=None, access_config_tag=None, binary_collect=None, log_split=None, cluster_id=None):
         """CreateAccessConfigRequestBody
 
         The model defined in huaweicloud sdk
@@ -59,6 +61,8 @@ class CreateAccessConfigRequestBody:
         :type binary_collect: bool
         :param log_split: 日志拆分
         :type log_split: bool
+        :param cluster_id: CCE集群ID，当CCE类型时，为必填
+        :type cluster_id: str
         """
         
         
@@ -71,6 +75,7 @@ class CreateAccessConfigRequestBody:
         self._access_config_tag = None
         self._binary_collect = None
         self._log_split = None
+        self._cluster_id = None
         self.discriminator = None
 
         self.access_config_name = access_config_name
@@ -85,6 +90,8 @@ class CreateAccessConfigRequestBody:
             self.binary_collect = binary_collect
         if log_split is not None:
             self.log_split = log_split
+        if cluster_id is not None:
+            self.cluster_id = cluster_id
 
     @property
     def access_config_name(self):
@@ -249,6 +256,28 @@ class CreateAccessConfigRequestBody:
         :type log_split: bool
         """
         self._log_split = log_split
+
+    @property
+    def cluster_id(self):
+        """Gets the cluster_id of this CreateAccessConfigRequestBody.
+
+        CCE集群ID，当CCE类型时，为必填
+
+        :return: The cluster_id of this CreateAccessConfigRequestBody.
+        :rtype: str
+        """
+        return self._cluster_id
+
+    @cluster_id.setter
+    def cluster_id(self, cluster_id):
+        """Sets the cluster_id of this CreateAccessConfigRequestBody.
+
+        CCE集群ID，当CCE类型时，为必填
+
+        :param cluster_id: The cluster_id of this CreateAccessConfigRequestBody.
+        :type cluster_id: str
+        """
+        self._cluster_id = cluster_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

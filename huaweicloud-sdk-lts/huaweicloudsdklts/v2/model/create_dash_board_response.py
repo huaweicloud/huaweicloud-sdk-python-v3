@@ -22,10 +22,10 @@ class CreateDashBoardResponse(SdkResponse):
         'filters': 'list[str]',
         'group_name': 'str',
         'id': 'str',
-        'last_update_time': 'str',
+        'last_update_time': 'int',
         'project_id': 'str',
         'title': 'str',
-        'use_system_template': 'str'
+        'use_system_template': 'bool'
     }
 
     attribute_map = {
@@ -53,13 +53,13 @@ class CreateDashBoardResponse(SdkResponse):
         :param id: 仪表盘id
         :type id: str
         :param last_update_time: 最近修改时间
-        :type last_update_time: str
+        :type last_update_time: int
         :param project_id: 项目id
         :type project_id: str
         :param title: 仪表盘名称
         :type title: str
         :param use_system_template: 是否使用模板
-        :type use_system_template: str
+        :type use_system_template: bool
         """
         
         super(CreateDashBoardResponse, self).__init__()
@@ -186,7 +186,7 @@ class CreateDashBoardResponse(SdkResponse):
         最近修改时间
 
         :return: The last_update_time of this CreateDashBoardResponse.
-        :rtype: str
+        :rtype: int
         """
         return self._last_update_time
 
@@ -197,7 +197,7 @@ class CreateDashBoardResponse(SdkResponse):
         最近修改时间
 
         :param last_update_time: The last_update_time of this CreateDashBoardResponse.
-        :type last_update_time: str
+        :type last_update_time: int
         """
         self._last_update_time = last_update_time
 
@@ -252,7 +252,7 @@ class CreateDashBoardResponse(SdkResponse):
         是否使用模板
 
         :return: The use_system_template of this CreateDashBoardResponse.
-        :rtype: str
+        :rtype: bool
         """
         return self._use_system_template
 
@@ -263,7 +263,7 @@ class CreateDashBoardResponse(SdkResponse):
         是否使用模板
 
         :param use_system_template: The use_system_template of this CreateDashBoardResponse.
-        :type use_system_template: str
+        :type use_system_template: bool
         """
         self._use_system_template = use_system_template
 

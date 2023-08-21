@@ -73,7 +73,7 @@ class PodResp:
         :type message: str
         :param created_at: 应用实例创建时间
         :type created_at: str
-        :param state: 应用实例状态
+        :param state: 应用实例状态： - RUNNING：实例运行中 - PENDING：实例等待创建 - SUCCEEDED：实例执行成功 - FAILED：实例运行失败 - CREATE_FAIL：实例创建失败 - TERMINATING：实例终止中 - PENDING_DELETE：实例等待删除 - DELETE_FAILED：实例删除失败 - FREEZE：实例冻结 - UNKNOWN：实例状态未知
         :type state: str
         """
         
@@ -349,7 +349,7 @@ class PodResp:
     def state(self):
         """Gets the state of this PodResp.
 
-        应用实例状态
+        应用实例状态： - RUNNING：实例运行中 - PENDING：实例等待创建 - SUCCEEDED：实例执行成功 - FAILED：实例运行失败 - CREATE_FAIL：实例创建失败 - TERMINATING：实例终止中 - PENDING_DELETE：实例等待删除 - DELETE_FAILED：实例删除失败 - FREEZE：实例冻结 - UNKNOWN：实例状态未知
 
         :return: The state of this PodResp.
         :rtype: str
@@ -360,7 +360,7 @@ class PodResp:
     def state(self, state):
         """Sets the state of this PodResp.
 
-        应用实例状态
+        应用实例状态： - RUNNING：实例运行中 - PENDING：实例等待创建 - SUCCEEDED：实例执行成功 - FAILED：实例运行失败 - CREATE_FAIL：实例创建失败 - TERMINATING：实例终止中 - PENDING_DELETE：实例等待删除 - DELETE_FAILED：实例删除失败 - FREEZE：实例冻结 - UNKNOWN：实例状态未知
 
         :param state: The state of this PodResp.
         :type state: str

@@ -3183,6 +3183,8 @@ class IefClient(Client):
             query_params.append(('state', local_var_params['state']))
         if 'tags' in local_var_params:
             query_params.append(('tags', local_var_params['tags']))
+        if 'group_id' in local_var_params:
+            query_params.append(('group_id', local_var_params['group_id']))
 
         header_params = {}
         if 'ief_instance_id' in local_var_params:
@@ -3501,6 +3503,8 @@ class IefClient(Client):
             query_params.append(('deployment_id', local_var_params['deployment_id']))
         if 'deployment_ids' in local_var_params:
             query_params.append(('deployment_ids', local_var_params['deployment_ids']))
+        if 'plugin_instance_name' in local_var_params:
+            query_params.append(('plugin_instance_name', local_var_params['plugin_instance_name']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
         if 'offset' in local_var_params:

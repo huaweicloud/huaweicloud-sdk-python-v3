@@ -21,7 +21,8 @@ class PodConfigs:
         'host_pid': 'bool',
         'migration': 'bool',
         'restart_policy': 'str',
-        'toleration_seconds': 'int'
+        'toleration_seconds': 'int',
+        'dns_policy': 'str'
     }
 
     attribute_map = {
@@ -29,10 +30,11 @@ class PodConfigs:
         'host_pid': 'host_pid',
         'migration': 'migration',
         'restart_policy': 'restart_policy',
-        'toleration_seconds': 'toleration_seconds'
+        'toleration_seconds': 'toleration_seconds',
+        'dns_policy': 'dns_policy'
     }
 
-    def __init__(self, host_network=None, host_pid=None, migration=None, restart_policy=None, toleration_seconds=None):
+    def __init__(self, host_network=None, host_pid=None, migration=None, restart_policy=None, toleration_seconds=None, dns_policy=None):
         """PodConfigs
 
         The model defined in huaweicloud sdk
@@ -47,6 +49,8 @@ class PodConfigs:
         :type restart_policy: str
         :param toleration_seconds: 应用实例故障容忍时间，容忍时间到达后迁移应用实例，只在指定节点组部署时生效
         :type toleration_seconds: int
+        :param dns_policy: 应用实例DNS策略，可选值Default、ClusterFirst、ClusterFirstWithHostNet，默认为Default。应用实例启用主机网络时只能选填Default、ClusterFirstWithHostNet，不启用主机网络时只能选填Default、ClusterFirst
+        :type dns_policy: str
         """
         
         
@@ -56,6 +60,7 @@ class PodConfigs:
         self._migration = None
         self._restart_policy = None
         self._toleration_seconds = None
+        self._dns_policy = None
         self.discriminator = None
 
         if host_network is not None:
@@ -67,6 +72,8 @@ class PodConfigs:
         self.restart_policy = restart_policy
         if toleration_seconds is not None:
             self.toleration_seconds = toleration_seconds
+        if dns_policy is not None:
+            self.dns_policy = dns_policy
 
     @property
     def host_network(self):
@@ -177,6 +184,28 @@ class PodConfigs:
         :type toleration_seconds: int
         """
         self._toleration_seconds = toleration_seconds
+
+    @property
+    def dns_policy(self):
+        """Gets the dns_policy of this PodConfigs.
+
+        应用实例DNS策略，可选值Default、ClusterFirst、ClusterFirstWithHostNet，默认为Default。应用实例启用主机网络时只能选填Default、ClusterFirstWithHostNet，不启用主机网络时只能选填Default、ClusterFirst
+
+        :return: The dns_policy of this PodConfigs.
+        :rtype: str
+        """
+        return self._dns_policy
+
+    @dns_policy.setter
+    def dns_policy(self, dns_policy):
+        """Sets the dns_policy of this PodConfigs.
+
+        应用实例DNS策略，可选值Default、ClusterFirst、ClusterFirstWithHostNet，默认为Default。应用实例启用主机网络时只能选填Default、ClusterFirstWithHostNet，不启用主机网络时只能选填Default、ClusterFirst
+
+        :param dns_policy: The dns_policy of this PodConfigs.
+        :type dns_policy: str
+        """
+        self._dns_policy = dns_policy
 
     def to_dict(self):
         """Returns the model properties as a dict"""

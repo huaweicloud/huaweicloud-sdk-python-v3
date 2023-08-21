@@ -26,7 +26,8 @@ class ListEdgeNodesRequest:
         'device_name': 'str',
         'app_name': 'str',
         'state': 'str',
-        'tags': 'str'
+        'tags': 'str',
+        'group_id': 'str'
     }
 
     attribute_map = {
@@ -39,10 +40,11 @@ class ListEdgeNodesRequest:
         'device_name': 'device_name',
         'app_name': 'app_name',
         'state': 'state',
-        'tags': 'tags'
+        'tags': 'tags',
+        'group_id': 'group_id'
     }
 
-    def __init__(self, ief_instance_id=None, name=None, limit=None, offset=None, sort=None, device_id=None, device_name=None, app_name=None, state=None, tags=None):
+    def __init__(self, ief_instance_id=None, name=None, limit=None, offset=None, sort=None, device_id=None, device_name=None, app_name=None, state=None, tags=None, group_id=None):
         """ListEdgeNodesRequest
 
         The model defined in huaweicloud sdk
@@ -67,6 +69,8 @@ class ListEdgeNodesRequest:
         :type state: str
         :param tags: 标签的key和value通过点连接， 多个标签通过逗号连接，如：tags&#x3D;key1.value1,key2.value2
         :type tags: str
+        :param group_id: 按边缘节点组ID查找。仅支持在铂金版实例中使用
+        :type group_id: str
         """
         
         
@@ -81,6 +85,7 @@ class ListEdgeNodesRequest:
         self._app_name = None
         self._state = None
         self._tags = None
+        self._group_id = None
         self.discriminator = None
 
         if ief_instance_id is not None:
@@ -103,6 +108,8 @@ class ListEdgeNodesRequest:
             self.state = state
         if tags is not None:
             self.tags = tags
+        if group_id is not None:
+            self.group_id = group_id
 
     @property
     def ief_instance_id(self):
@@ -323,6 +330,28 @@ class ListEdgeNodesRequest:
         :type tags: str
         """
         self._tags = tags
+
+    @property
+    def group_id(self):
+        """Gets the group_id of this ListEdgeNodesRequest.
+
+        按边缘节点组ID查找。仅支持在铂金版实例中使用
+
+        :return: The group_id of this ListEdgeNodesRequest.
+        :rtype: str
+        """
+        return self._group_id
+
+    @group_id.setter
+    def group_id(self, group_id):
+        """Sets the group_id of this ListEdgeNodesRequest.
+
+        按边缘节点组ID查找。仅支持在铂金版实例中使用
+
+        :param group_id: The group_id of this ListEdgeNodesRequest.
+        :type group_id: str
+        """
+        self._group_id = group_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

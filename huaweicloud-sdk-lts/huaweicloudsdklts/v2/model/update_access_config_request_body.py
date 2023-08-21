@@ -22,7 +22,8 @@ class UpdateAccessConfigRequestBody:
         'host_group_info': 'AccessConfigHostGroupIdList',
         'access_config_tag': 'list[AccessConfigTag]',
         'log_split': 'bool',
-        'binary_collect': 'bool'
+        'binary_collect': 'bool',
+        'cluster_id': 'str'
     }
 
     attribute_map = {
@@ -31,10 +32,11 @@ class UpdateAccessConfigRequestBody:
         'host_group_info': 'host_group_info',
         'access_config_tag': 'access_config_tag',
         'log_split': 'log_split',
-        'binary_collect': 'binary_collect'
+        'binary_collect': 'binary_collect',
+        'cluster_id': 'cluster_id'
     }
 
-    def __init__(self, access_config_id=None, access_config_detail=None, host_group_info=None, access_config_tag=None, log_split=None, binary_collect=None):
+    def __init__(self, access_config_id=None, access_config_detail=None, host_group_info=None, access_config_tag=None, log_split=None, binary_collect=None, cluster_id=None):
         """UpdateAccessConfigRequestBody
 
         The model defined in huaweicloud sdk
@@ -51,6 +53,8 @@ class UpdateAccessConfigRequestBody:
         :type log_split: bool
         :param binary_collect: 二进制采集
         :type binary_collect: bool
+        :param cluster_id: CCE集群ID，CCE类型时，为必填
+        :type cluster_id: str
         """
         
         
@@ -61,6 +65,7 @@ class UpdateAccessConfigRequestBody:
         self._access_config_tag = None
         self._log_split = None
         self._binary_collect = None
+        self._cluster_id = None
         self.discriminator = None
 
         self.access_config_id = access_config_id
@@ -74,6 +79,8 @@ class UpdateAccessConfigRequestBody:
             self.log_split = log_split
         if binary_collect is not None:
             self.binary_collect = binary_collect
+        if cluster_id is not None:
+            self.cluster_id = cluster_id
 
     @property
     def access_config_id(self):
@@ -198,6 +205,28 @@ class UpdateAccessConfigRequestBody:
         :type binary_collect: bool
         """
         self._binary_collect = binary_collect
+
+    @property
+    def cluster_id(self):
+        """Gets the cluster_id of this UpdateAccessConfigRequestBody.
+
+        CCE集群ID，CCE类型时，为必填
+
+        :return: The cluster_id of this UpdateAccessConfigRequestBody.
+        :rtype: str
+        """
+        return self._cluster_id
+
+    @cluster_id.setter
+    def cluster_id(self, cluster_id):
+        """Sets the cluster_id of this UpdateAccessConfigRequestBody.
+
+        CCE集群ID，CCE类型时，为必填
+
+        :param cluster_id: The cluster_id of this UpdateAccessConfigRequestBody.
+        :type cluster_id: str
+        """
+        self._cluster_id = cluster_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

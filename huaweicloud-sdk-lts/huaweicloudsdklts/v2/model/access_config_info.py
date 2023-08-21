@@ -26,7 +26,8 @@ class AccessConfigInfo:
         'host_group_info': 'AccessConfigHostGroupIdList',
         'access_config_tag': 'list[AccessConfigTag]',
         'log_split': 'bool',
-        'binary_collect': 'bool'
+        'binary_collect': 'bool',
+        'cluster_id': 'str'
     }
 
     attribute_map = {
@@ -39,10 +40,11 @@ class AccessConfigInfo:
         'host_group_info': 'host_group_info',
         'access_config_tag': 'access_config_tag',
         'log_split': 'log_split',
-        'binary_collect': 'binary_collect'
+        'binary_collect': 'binary_collect',
+        'cluster_id': 'cluster_id'
     }
 
-    def __init__(self, access_config_id=None, access_config_name=None, access_config_type=None, create_time=None, access_config_detail=None, log_info=None, host_group_info=None, access_config_tag=None, log_split=None, binary_collect=None):
+    def __init__(self, access_config_id=None, access_config_name=None, access_config_type=None, create_time=None, access_config_detail=None, log_info=None, host_group_info=None, access_config_tag=None, log_split=None, binary_collect=None, cluster_id=None):
         """AccessConfigInfo
 
         The model defined in huaweicloud sdk
@@ -67,6 +69,8 @@ class AccessConfigInfo:
         :type log_split: bool
         :param binary_collect: 日志拆分
         :type binary_collect: bool
+        :param cluster_id: CCE集群ID
+        :type cluster_id: str
         """
         
         
@@ -81,6 +85,7 @@ class AccessConfigInfo:
         self._access_config_tag = None
         self._log_split = None
         self._binary_collect = None
+        self._cluster_id = None
         self.discriminator = None
 
         if access_config_id is not None:
@@ -103,6 +108,8 @@ class AccessConfigInfo:
             self.log_split = log_split
         if binary_collect is not None:
             self.binary_collect = binary_collect
+        if cluster_id is not None:
+            self.cluster_id = cluster_id
 
     @property
     def access_config_id(self):
@@ -311,6 +318,28 @@ class AccessConfigInfo:
         :type binary_collect: bool
         """
         self._binary_collect = binary_collect
+
+    @property
+    def cluster_id(self):
+        """Gets the cluster_id of this AccessConfigInfo.
+
+        CCE集群ID
+
+        :return: The cluster_id of this AccessConfigInfo.
+        :rtype: str
+        """
+        return self._cluster_id
+
+    @cluster_id.setter
+    def cluster_id(self, cluster_id):
+        """Sets the cluster_id of this AccessConfigInfo.
+
+        CCE集群ID
+
+        :param cluster_id: The cluster_id of this AccessConfigInfo.
+        :type cluster_id: str
+        """
+        self._cluster_id = cluster_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

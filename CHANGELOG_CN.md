@@ -1,3 +1,132 @@
+# 3.1.55 2023-08-21
+
+### HuaweiCloud SDK EdgeSec
+
+- _新增特性_
+  - 支持边缘安全服务
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK IEF
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListEdgeNodes**
+    - 请求参数变更
+      - `+ group_id`
+  - **UpdateDeviceTwin**
+    - 响应参数变更
+      - `- property_visitors.register_type`
+      - `- property_visitors.access_mode`
+      - `- property_visitors.register_index`
+      - `- property_visitors.register_num`
+      - `- property_visitors.scale_index`
+      - `- property_visitors.original_datatype`
+      - `- property_visitors.expected_datatype`
+      - `- property_visitors.is_registerswap`
+      - `- property_visitors.is_swap`
+      - `- property_visitors.sample_interval`
+      - `- property_visitors.data_min`
+      - `- property_visitors.data_max`
+      - `- property_visitors.node_id`
+      - `- property_visitors.browse_name`
+      - `* property_visitors: object<ValueInPropertyVisitors> -> map<string, ValueInPropertyVisitors>`
+      - `- twin.excepted`
+      - `- twin.actual`
+      - `- twin.metadata`
+      - `- twin.optional`
+      - `* twin: object<ValueInTwinResponse> -> map<string, ValueInTwinResponse>`
+  - **ListAppVersions**
+    - 响应参数变更
+      - `+ versions.configs.dns_policy`
+  - **CreateAppVersions**
+    - 请求参数变更
+      - `+ version.configs.dns_policy`
+    - 响应参数变更
+      - `+ version.configs.dns_policy`
+  - **ShowAppVersionDetail**
+    - 响应参数变更
+      - `+ version.configs.dns_policy`
+  - **UpdateAppVersion**
+    - 请求参数变更
+      - `+ version.configs.dns_policy`
+    - 响应参数变更
+      - `+ version.configs.dns_policy`
+  - **ListPods**
+    - 请求参数变更
+      - `+ plugin_instance_name`
+    - 响应参数变更
+      - `+ pods.configs.dns_policy`
+  - **ListApps**
+    - 响应参数变更
+      - `+ apps.app_versions.configs.dns_policy`
+  - **CreateApp**
+    - 响应参数变更
+      - `+ app.app_versions.configs.dns_policy`
+  - **ShowAppDetail**
+    - 响应参数变更
+      - `+ app.app_versions.configs.dns_policy`
+  - **UpdateApp**
+    - 响应参数变更
+      - `+ app.app_versions.configs.dns_policy`
+  - **ListDeployments**
+    - 响应参数变更
+      - `+ deployments.template.configs.dns_policy`
+  - **CreateDeployments**
+    - 请求参数变更
+      - `+ deployment.template.configs.dns_policy`
+    - 响应参数变更
+      - `+ template.configs.dns_policy`
+  - **ShowDeployment**
+    - 响应参数变更
+      - `+ template.configs.dns_policy`
+  - **UpdateDeployment**
+    - 请求参数变更
+      - `+ deployment.template.configs.dns_policy`
+    - 响应参数变更
+      - `+ template.configs.dns_policy`
+
+### HuaweiCloud SDK LTS
+
+- _新增特性_
+  - 支持接口`DeleteDashboard`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateDashBoard**
+    - 响应参数变更
+      - `* last_update_time: string -> int64`
+      - `* useSystemTemplate: string -> boolean`
+  - **CreateLogStream**
+    - 请求参数变更
+      - `- enterprise_project_name`
+      - `- log_stream_name: enum value [lts-stream-13ci]`
+      - `* ttl_in_days: string -> int32`
+      - `* tags: list<tagsBody> -> object<tagsBody>`
+  - **ListAccessConfig**
+    - 响应参数变更
+      - `+ cluster_id`
+      - `+ result.cluster_id`
+  - **UpdateAccessConfig**
+    - 请求参数变更
+      - `+ cluster_id`
+    - 响应参数变更
+      - `+ cluster_id`
+  - **CreateAccessConfig**
+    - 请求参数变更
+      - `+ cluster_id`
+    - 响应参数变更
+      - `+ cluster_id`
+  - **DeleteAccessConfig**
+    - 响应参数变更
+      - `+ cluster_id`
+      - `+ result.cluster_id`
+
 # 3.1.54 2023-08-17
 
 ### HuaweiCloud SDK AOS

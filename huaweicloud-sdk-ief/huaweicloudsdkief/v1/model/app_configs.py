@@ -22,7 +22,8 @@ class AppConfigs:
         'host_network': 'bool',
         'restart_policy': 'str',
         'ports': 'list[Ports]',
-        'host_pid': 'bool'
+        'host_pid': 'bool',
+        'dns_policy': 'str'
     }
 
     attribute_map = {
@@ -31,10 +32,11 @@ class AppConfigs:
         'host_network': 'host_network',
         'restart_policy': 'restart_policy',
         'ports': 'ports',
-        'host_pid': 'host_pid'
+        'host_pid': 'host_pid',
+        'dns_policy': 'dns_policy'
     }
 
-    def __init__(self, privileged=None, run_as_user=None, host_network=None, restart_policy=None, ports=None, host_pid=None):
+    def __init__(self, privileged=None, run_as_user=None, host_network=None, restart_policy=None, ports=None, host_pid=None, dns_policy=None):
         """AppConfigs
 
         The model defined in huaweicloud sdk
@@ -51,6 +53,8 @@ class AppConfigs:
         :type ports: list[:class:`huaweicloudsdkief.v1.Ports`]
         :param host_pid: 应用实例是否与主机共PID命名空间，默认值false
         :type host_pid: bool
+        :param dns_policy: 应用实例DNS策略，可选值Default、ClusterFirst、ClusterFirstWithHostNet，默认为Default。应用实例启用主机网络时只能选填Default、ClusterFirstWithHostNet，不启用主机网络时只能选填Default、ClusterFirst
+        :type dns_policy: str
         """
         
         
@@ -61,6 +65,7 @@ class AppConfigs:
         self._restart_policy = None
         self._ports = None
         self._host_pid = None
+        self._dns_policy = None
         self.discriminator = None
 
         if privileged is not None:
@@ -75,6 +80,8 @@ class AppConfigs:
             self.ports = ports
         if host_pid is not None:
             self.host_pid = host_pid
+        if dns_policy is not None:
+            self.dns_policy = dns_policy
 
     @property
     def privileged(self):
@@ -207,6 +214,28 @@ class AppConfigs:
         :type host_pid: bool
         """
         self._host_pid = host_pid
+
+    @property
+    def dns_policy(self):
+        """Gets the dns_policy of this AppConfigs.
+
+        应用实例DNS策略，可选值Default、ClusterFirst、ClusterFirstWithHostNet，默认为Default。应用实例启用主机网络时只能选填Default、ClusterFirstWithHostNet，不启用主机网络时只能选填Default、ClusterFirst
+
+        :return: The dns_policy of this AppConfigs.
+        :rtype: str
+        """
+        return self._dns_policy
+
+    @dns_policy.setter
+    def dns_policy(self, dns_policy):
+        """Sets the dns_policy of this AppConfigs.
+
+        应用实例DNS策略，可选值Default、ClusterFirst、ClusterFirstWithHostNet，默认为Default。应用实例启用主机网络时只能选填Default、ClusterFirstWithHostNet，不启用主机网络时只能选填Default、ClusterFirst
+
+        :param dns_policy: The dns_policy of this AppConfigs.
+        :type dns_policy: str
+        """
+        self._dns_policy = dns_policy
 
     def to_dict(self):
         """Returns the model properties as a dict"""

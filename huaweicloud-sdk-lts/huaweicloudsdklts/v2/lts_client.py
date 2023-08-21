@@ -990,6 +990,64 @@ class LtsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def delete_dashboard(self, request):
+        """删除仪表盘
+
+        删除仪表盘
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteDashboard
+        :type request: :class:`huaweicloudsdklts.v2.DeleteDashboardRequest`
+        :rtype: :class:`huaweicloudsdklts.v2.DeleteDashboardResponse`
+        """
+        return self._delete_dashboard_with_http_info(request)
+
+    def _delete_dashboard_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+        if 'is_delete_charts' in local_var_params:
+            query_params.append(('is_delete_charts', local_var_params['is_delete_charts']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/dashboard',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteDashboardResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def delete_host_group(self, request):
         """删除主机组
 

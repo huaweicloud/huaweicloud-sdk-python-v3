@@ -18,8 +18,8 @@ class UpdateDeviceTwinResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'property_visitors': 'ValueInPropertyVisitors',
-        'twin': 'ValueInTwinResponse'
+        'property_visitors': 'dict(str, ValueInPropertyVisitors)',
+        'twin': 'dict(str, ValueInTwinResponse)'
     }
 
     attribute_map = {
@@ -32,10 +32,10 @@ class UpdateDeviceTwinResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param property_visitors: 
-        :type property_visitors: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitors`
-        :param twin: 
-        :type twin: :class:`huaweicloudsdkief.v1.ValueInTwinResponse`
+        :param property_visitors: 孪生属性配置
+        :type property_visitors: dict(str, ValueInPropertyVisitors)
+        :param twin: 终端设备动态属性
+        :type twin: dict(str, ValueInTwinResponse)
         """
         
         super(UpdateDeviceTwinResponse, self).__init__()
@@ -53,8 +53,10 @@ class UpdateDeviceTwinResponse(SdkResponse):
     def property_visitors(self):
         """Gets the property_visitors of this UpdateDeviceTwinResponse.
 
+        孪生属性配置
+
         :return: The property_visitors of this UpdateDeviceTwinResponse.
-        :rtype: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitors`
+        :rtype: dict(str, ValueInPropertyVisitors)
         """
         return self._property_visitors
 
@@ -62,8 +64,10 @@ class UpdateDeviceTwinResponse(SdkResponse):
     def property_visitors(self, property_visitors):
         """Sets the property_visitors of this UpdateDeviceTwinResponse.
 
+        孪生属性配置
+
         :param property_visitors: The property_visitors of this UpdateDeviceTwinResponse.
-        :type property_visitors: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitors`
+        :type property_visitors: dict(str, ValueInPropertyVisitors)
         """
         self._property_visitors = property_visitors
 
@@ -71,8 +75,10 @@ class UpdateDeviceTwinResponse(SdkResponse):
     def twin(self):
         """Gets the twin of this UpdateDeviceTwinResponse.
 
+        终端设备动态属性
+
         :return: The twin of this UpdateDeviceTwinResponse.
-        :rtype: :class:`huaweicloudsdkief.v1.ValueInTwinResponse`
+        :rtype: dict(str, ValueInTwinResponse)
         """
         return self._twin
 
@@ -80,8 +86,10 @@ class UpdateDeviceTwinResponse(SdkResponse):
     def twin(self, twin):
         """Sets the twin of this UpdateDeviceTwinResponse.
 
+        终端设备动态属性
+
         :param twin: The twin of this UpdateDeviceTwinResponse.
-        :type twin: :class:`huaweicloudsdkief.v1.ValueInTwinResponse`
+        :type twin: dict(str, ValueInTwinResponse)
         """
         self._twin = twin
 

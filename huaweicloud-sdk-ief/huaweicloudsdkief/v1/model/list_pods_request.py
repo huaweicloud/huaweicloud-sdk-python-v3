@@ -21,6 +21,7 @@ class ListPodsRequest:
         'group_id': 'str',
         'deployment_id': 'str',
         'deployment_ids': 'str',
+        'plugin_instance_name': 'str',
         'limit': 'int',
         'offset': 'int',
         'ief_instance_id': 'str'
@@ -31,12 +32,13 @@ class ListPodsRequest:
         'group_id': 'group_id',
         'deployment_id': 'deployment_id',
         'deployment_ids': 'deployment_ids',
+        'plugin_instance_name': 'plugin_instance_name',
         'limit': 'limit',
         'offset': 'offset',
         'ief_instance_id': 'ief-instance-id'
     }
 
-    def __init__(self, node_id=None, group_id=None, deployment_id=None, deployment_ids=None, limit=None, offset=None, ief_instance_id=None):
+    def __init__(self, node_id=None, group_id=None, deployment_id=None, deployment_ids=None, plugin_instance_name=None, limit=None, offset=None, ief_instance_id=None):
         """ListPodsRequest
 
         The model defined in huaweicloud sdk
@@ -49,6 +51,8 @@ class ListPodsRequest:
         :type deployment_id: str
         :param deployment_ids: 指定应用部署ID列表查询应用实例，多个ID使用逗号分隔，可选， 与node_id、group_id、deployment_id四选一
         :type deployment_ids: str
+        :param plugin_instance_name: 指定插件实例名称查询对应的应用实例列表，可选
+        :type plugin_instance_name: str
         :param limit: 查询返回记录的数量限制
         :type limit: int
         :param offset: 偏移量，表示查询该偏移量后面的记录
@@ -63,6 +67,7 @@ class ListPodsRequest:
         self._group_id = None
         self._deployment_id = None
         self._deployment_ids = None
+        self._plugin_instance_name = None
         self._limit = None
         self._offset = None
         self._ief_instance_id = None
@@ -76,6 +81,8 @@ class ListPodsRequest:
             self.deployment_id = deployment_id
         if deployment_ids is not None:
             self.deployment_ids = deployment_ids
+        if plugin_instance_name is not None:
+            self.plugin_instance_name = plugin_instance_name
         if limit is not None:
             self.limit = limit
         if offset is not None:
@@ -170,6 +177,28 @@ class ListPodsRequest:
         :type deployment_ids: str
         """
         self._deployment_ids = deployment_ids
+
+    @property
+    def plugin_instance_name(self):
+        """Gets the plugin_instance_name of this ListPodsRequest.
+
+        指定插件实例名称查询对应的应用实例列表，可选
+
+        :return: The plugin_instance_name of this ListPodsRequest.
+        :rtype: str
+        """
+        return self._plugin_instance_name
+
+    @plugin_instance_name.setter
+    def plugin_instance_name(self, plugin_instance_name):
+        """Sets the plugin_instance_name of this ListPodsRequest.
+
+        指定插件实例名称查询对应的应用实例列表，可选
+
+        :param plugin_instance_name: The plugin_instance_name of this ListPodsRequest.
+        :type plugin_instance_name: str
+        """
+        self._plugin_instance_name = plugin_instance_name
 
     @property
     def limit(self):
