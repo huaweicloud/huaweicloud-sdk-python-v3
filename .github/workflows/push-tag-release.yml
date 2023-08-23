@@ -1,4 +1,4 @@
-name: push && tag && release
+name: push & tag & release
 on:
   workflow_dispatch:
 permissions: write-all
@@ -6,25 +6,32 @@ jobs:
   release:
     runs-on: ubuntu-22.04
     steps:
-    - uses: actions/checkout@v3
+    - name: Configure
+      run: |
+        git config --global user.name ${{ vars.SDK_USERNAME }}
+        git config --global user.email ${{ vars.SDK_EMAIL }}
+    - name: Pull source
+      uses: actions/checkout@v3
+      with:
+        github-server-url: https://gitee.com
+        repository: ${{ vars.SOURCE_REPO }}
+        ssh-key: ${{ secrets.SSH_KEY }}
+        ssh-known-hosts: ${{ secrets.KNOWN_HOSTS }}
+        path: source
+    - name: Pull target
+      uses: actions/checkout@v3
       with:
         ssh-key: ${{ secrets.SSH_KEY }}
-        fetch-depth: 0
-    - name: config
-      run: |
-        git lfs install
-        git config user.name ${{ vars.SDK_USERNAME }}
-        git config user.email ${{ vars.SDK_EMAIL }}
-    - name: push && tag && release
+        path: target
+    - name: Push & Tag & Release
       shell: bash
       run: |
-        # Pull the code from the source repository
-        git lfs clone --branch=master-dev --depth=1 $source_repo ../source_repo
-        version=$(cat ../source_repo/VERSION)
+        version=$(cat source/VERSION)
         echo "version ${version} found."
         # Organize the content
-        find . -maxdepth 1 -mindepth 1  | grep -Ev '*git*' | xargs -I '{}' rm -rf '{}'
-        find ../source_repo -maxdepth 1 -mindepth 1  | grep -Ev '*git*|.cid|.codecheck|buildscript' | xargs -I '{}' cp -a '{}' .
+        find target/ -maxdepth 1 -mindepth 1  | grep -Ev '*git*' | xargs -I '{}' rm -rf '{}'
+        find source/ -maxdepth 1 -mindepth 1  | grep -Ev '*git*|.cid|.codecheck|buildscript' | xargs -I '{}' cp -a '{}' target/
+        cd target || exit 1
         echo '-----BEGIN CONTENTS IN CURRENT DIR-----'
         ls -a
         echo '-----END CONTENTS IN CURRENT DIR-----'
@@ -83,9 +90,7 @@ jobs:
           fi
         fi
       env:
-        source_repo: ${{ secrets.SOURCE_REPO }}
         github_repo: ${{ github.repository }}
         github_token: ${{ secrets.GITHUB_TOKEN }}
         github_workflow: ${{ github.event.workflow }}
         publish_workflows: ${{ vars.PUBLISH_WORKFLOWS }}
-
