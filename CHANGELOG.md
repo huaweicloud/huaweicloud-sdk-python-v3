@@ -1,3 +1,418 @@
+# 3.1.56 2023-08-24
+
+HuaweiCloud SDK APIG
+
+- Features
+  - Support the following interfaces：
+    - ListEndpointConnections
+    - AcceptOrRejectEndpointConnections
+    - ListEndpointPermissions
+    - AddEndpointPermissions
+    - DeleteEndpointPermissions
+- Bug Fix
+  - None
+- Change
+  - AssociateSignatureKeyV2
+    - changes of response param
+      - + bindings.req_method
+  - ListSignatureKeysBindedToApiV2
+    - changes of response param
+      - + bindings.req_method
+  - ListApisNotBoundWithSignatureKeyV2
+    - changes of response param
+      - + apis.req_method
+  - ListApisBindedToSignatureKeyV2
+    - changes of response param
+      - + bindings.req_method
+  - ListApisBindedToRequestThrottlingPolicyV2
+    - changes of response param
+      - + apis.req_method
+  - ListApisUnbindedToRequestThrottlingPolicyV2
+    - changes of response param
+      - + apis.req_method
+  - ListApiRuntimeDefinitionV2
+    - changes of response param
+      - + content_type: enum value [multipart/form-data]
+      - - content_type: enum value [multipart/form-date]
+  - ListApisBindedToAclPolicyV2
+    - changes of response param
+      - + apis.req_method
+  - ListApisUnbindedToAclPolicyV2
+    - changes of response param
+      - + apis.req_method
+  - ShowDetailsOfCustomAuthorizersV2
+    - changes of response param
+      - + network_type
+  - UpdateCustomAuthorizerV2
+    - changes of request param
+      - + network_type
+    - changes of response param
+      - + network_type
+  - ListInstancesV2
+    - changes of response param
+      - + instances.cbc_operation_locks
+      - + instances.status: enum value [Resizing,ResizeFailed,ResizeTimeout]
+      - + instances.instance_status: enum value [42,43,44]
+      - + instances.spec: enum value [PLATINUM_X2,PLATINUM_X3,PLATINUM_X4,PLATINUM_X5,PLATINUM_X6,PLATINUM_X7,PLATINUM_X8]
+  - CreateInstanceV2
+    - changes of request param
+      - + spec_id: enum value [PLATINUM_X2,PLATINUM_X3,PLATINUM_X4,PLATINUM_X5,PLATINUM_X6,PLATINUM_X7,PLATINUM_X8]
+  - ShowDetailsOfInstanceV2
+    - changes of response param
+      - + cbc_operation_locks
+      - + status: enum value [Resizing,ResizeFailed,ResizeTimeout]
+      - + instance_status: enum value [42,43,44]
+      - + spec: enum value [PLATINUM_X2,PLATINUM_X3,PLATINUM_X4,PLATINUM_X5,PLATINUM_X6,PLATINUM_X7,PLATINUM_X8]
+  - UpdateInstanceV2
+    - changes of response param
+      - + cbc_operation_locks
+      - + status: enum value [Resizing,ResizeFailed,ResizeTimeout]
+      - + instance_status: enum value [42,43,44]
+      - + spec: enum value [PLATINUM_X2,PLATINUM_X3,PLATINUM_X4,PLATINUM_X5,PLATINUM_X6,PLATINUM_X7,PLATINUM_X8]
+  - ShowDetailsOfApiV2
+    - changes of response param
+      - + content_type: enum value [multipart/form-data]
+      - - content_type: enum value [multipart/form-date]
+  - UpdateApiV2
+    - changes of request param
+      - + content_type: enum value [multipart/form-data]
+      - - content_type: enum value [multipart/form-date]
+    - changes of response param
+      - + content_type: enum value [multipart/form-data]
+      - - content_type: enum value [multipart/form-date]
+  - ListApiVersionDetailV2
+    - changes of response param
+      - + content_type: enum value [multipart/form-data]
+      - - content_type: enum value [multipart/form-date]
+  - CreateCustomAuthorizerV2
+    - changes of request param
+      - + network_type
+    - changes of response param
+      - + network_type
+  - ListCustomAuthorizersV2
+    - changes of response param
+      - + network_type
+      - + authorizer_list.network_type
+  - CreateApiV2
+    - changes of request param
+      - + content_type: enum value [multipart/form-data]
+      - - content_type: enum value [multipart/form-date]
+    - changes of response param
+      - + content_type: enum value [multipart/form-data]
+      - - content_type: enum value [multipart/form-date]
+  - ListApisV2
+    - changes of response param
+      - + apis.content_type: enum value [multipart/form-data]
+      - - apis.content_type: enum value [multipart/form-date]
+
+### HuaweiCloud SDK CBR
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **RestoreBackup**
+    - changes of request param
+      - `+ restore.details`
+
+### HuaweiCloud SDK CCM
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowCertificateAuthority**
+    - changes of response param
+      - `+ enterprise_project_id`
+  - **ShowCertificate**
+    - changes of response param
+      - `+ enterprise_project_id`
+  - **CreateCertificateAuthority**
+    - changes of request param
+      - `+ enterprise_project_id`
+  - **ListCertificateAuthority**
+    - changes of response param
+      - `+ enterprise_project_id`
+      - `+ certificate_authorities.enterprise_project_id`
+  - **CreateCertificate**
+    - changes of request param
+      - `+ enterprise_project_id`
+  - **ListCertificate**
+    - changes of response param
+      - `+ enterprise_project_id`
+      - `+ certificates.enterprise_project_id`
+
+### HuaweiCloud SDK CPTS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowAgentConfig**
+    - changes of response param
+      - `+ result.clickhouse_enable`
+      - `+ result.clickhouse_shadow_type`
+      - `+ result.clickhouse_shadow_repository`
+  - **UpdateAgentHealthStatus**
+    - changes of response param
+      - `+ result.result.clickhouse_enable`
+      - `+ result.result.clickhouse_shadow_type`
+      - `+ result.result.clickhouse_shadow_repository`
+
+### HuaweiCloud SDK EG
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateSubscriptionTarget**
+    - changes of request param
+      - `+ detail.url`
+      - `+ detail.agency_name`
+      - `+ detail.invocation_http_parameters`
+      - `* detail: object -> object<Detail>`
+  - **UpdateSubscriptionTarget**
+    - changes of request param
+      - `+ detail.url`
+      - `+ detail.agency_name`
+      - `+ detail.invocation_http_parameters`
+      - `* detail: object -> object<Detail>`
+  - **UpdateSubscription**
+    - changes of request param
+      - `+ targets.detail.url`
+      - `+ targets.detail.agency_name`
+      - `+ targets.detail.invocation_http_parameters`
+      - `* targets.detail: object -> object<Detail>`
+  - **CreateSubscription**
+    - changes of request param
+      - `+ targets.detail.url`
+      - `+ targets.detail.agency_name`
+      - `+ targets.detail.invocation_http_parameters`
+      - `* targets.detail: object -> object<Detail>`
+
+### HuaweiCloud SDK ER
+
+- _Features_
+  - Support the interfaces `AcceptAttachment`, `RejectAttachment`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK HSS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListJarPackageHostInfo**
+    - changes of response param
+      - `* data_list.record_time: int32 -> int64`
+
+### HuaweiCloud SDK IMS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **GlanceListImages**
+    - changes of response param
+      - `- __root_origin`
+      - `- min_disk`
+      - `- __image_source_type`
+      - `- container_format`
+      - `- __image_size`
+      - `- __support_xen_gpu_type`
+      - `- protected`
+      - `- __support_kvm_gpu_type`
+      - `- max_ram`
+      - `- id`
+      - `- __isregistered`
+      - `- __lazyloading`
+      - `- __data_origin`
+      - `- hw_firmware_type`
+      - `- __os_type`
+      - `- hw_vif_multiqueue_enabled`
+      - `- visibility`
+      - `- virtual_env_type`
+      - `- __image_location`
+      - `- __support_kvm`
+      - `- __support_highperformance`
+      - `- tags`
+      - `- __backup_id`
+      - `- __platform`
+      - `- enterprise_project_id`
+      - `- size`
+      - `- __support_arm`
+      - `- __support_diskintensive`
+      - `- __os_version`
+      - `- name`
+      - `- active_at`
+      - `- status`
+      - `- schema`
+      - `- __is_offshelved`
+      - `- __support_kvm_infiniband`
+      - `- created_at`
+      - `- __originalimagename`
+      - `- __support_agent_list`
+      - `- __support_amd`
+      - `- file`
+      - `- updated_at`
+      - `- __productcode`
+      - `- checksum`
+      - `- __support_fc_inject`
+      - `- __description`
+      - `- min_ram`
+      - `- owner`
+      - `- __imagetype`
+      - `- __support_xen`
+      - `- __is_config_init`
+      - `- __account_code`
+      - `- __system__cmkid`
+      - `- __os_bit`
+      - `- __support_xen_hana`
+      - `- disk_format`
+      - `- self`
+      - `- __support_largememory`
+      - `- __os_feature_list`
+      - `- virtual_size`
+      - `- __sequence_num`
+      - `+ images._sys_enterprise_project_id`
+      - `* images: list<GlanceShowImageResponseBody> -> list<GlanceShowImageListResponseBody>`
+
+### HuaweiCloud SDK IoTEdge
+
+- _Features_
+  - Support the following interfaces：
+    - `BatchListAppConfigsTemplates`
+    - `AddAppConfigsTemplates`
+    - `ShowAppConfigsTemplate`
+    - `DeleteAppConfigsTemplate`
+    - `AddGeneralAppConfigsTemplate`
+    - `ShowModuleShadow`
+    - `UpdateModuleShadow`
+- _Bug Fix_
+  - None
+- _Change_
+  - **UpdateModule**
+    - changes of request param
+      - `+ desired_state`
+
+### HuaweiCloud SDK KooMessage
+
+- _Features_
+  - Support the following interfaces：
+    - `ListAimMsgTemplate`
+    - `CreateAimMsgTemplate`
+    - `ShowAimMsgTemplateVariable`
+    - `SendAimBatchMessages`
+    - `SendAimBatchDifferentMessages`
+    - `DeleteAimMsgSignature`
+    - `ShowAimMsgTemplateDetail`
+    - `UpdateAimMsgTemplate`
+    - `DeleteAimMsgTemplate`
+    - `ListAimMsgSignature`
+    - `AddAimMsgSignature`
+    - `ListAimMsgApp`
+    - `CreateSmsApp`
+    - `ListAimMsgAppDetail`
+    - `UpdateAimMsgApp`
+    - `ShowAimMsgSignatureFileInfo`
+    - `UploadAimMsgSignatureFile`
+    - `ListAimMsgSignatureDetail`
+    - `UpdateAimMsgSignature`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListAimResolveDetails**
+    - changes of request param
+      - `+ task_name`
+    - changes of response param
+      - `+ resolve_details.task_name`
+  - **ListResolveTasks**
+    - changes of request param
+      - `+ task_name`
+    - changes of response param
+      - `+ resolve_tasks.task_name`
+
+### HuaweiCloud SDK LTS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateLogStream**
+    - changes of request param
+      - `* tags: object<tagsBody> -> list<tagsBody>`
+
+### HuaweiCloud SDK NAT
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListNatGateways**
+    - changes of response param
+      - `+ nat_gateways.session_conf`
+  - **CreateNatGateway**
+    - changes of request param
+      - `+ nat_gateway.session_conf`
+    - changes of response param
+      - `+ nat_gateway.session_conf`
+  - **ShowNatGateway**
+    - changes of response param
+      - `+ nat_gateway.session_conf`
+  - **UpdateNatGateway**
+    - changes of request param
+      - `+ nat_gateway.session_conf`
+    - changes of response param
+      - `+ nat_gateway.session_conf`
+
+### HuaweiCloud SDK OCR
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **RecognizeVatInvoice**
+    - changes of request param
+      - `+ page_num`
+    - changes of response param
+      - `+ result.invoice_tag`
+      - `+ result.sum_amount`
+      - `+ result.sum_tax`
+
+### HuaweiCloud SDK OSM
+
+- _Features_
+  - Support the interface `ShowLoginType`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK SIS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **RunTts**
+    - changes of request param
+      - `+ config.property: enum value [chinese_huaxiaoman_common,chinese_huaxiaofang_common,chinese_huaxiaojun_common]`
+
+### HuaweiCloud SDK VPC
+
 # 3.1.55 2023-08-21
 
 ### HuaweiCloud SDK EdgeSec

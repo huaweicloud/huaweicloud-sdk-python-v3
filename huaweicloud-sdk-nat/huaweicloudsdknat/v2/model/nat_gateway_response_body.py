@@ -27,7 +27,8 @@ class NatGatewayResponseBody:
         'created_at': 'str',
         'router_id': 'str',
         'internal_network_id': 'str',
-        'enterprise_project_id': 'str'
+        'enterprise_project_id': 'str',
+        'session_conf': 'SessionConfiguration'
     }
 
     attribute_map = {
@@ -41,10 +42,11 @@ class NatGatewayResponseBody:
         'created_at': 'created_at',
         'router_id': 'router_id',
         'internal_network_id': 'internal_network_id',
-        'enterprise_project_id': 'enterprise_project_id'
+        'enterprise_project_id': 'enterprise_project_id',
+        'session_conf': 'session_conf'
     }
 
-    def __init__(self, id=None, tenant_id=None, name=None, description=None, spec=None, status=None, admin_state_up=None, created_at=None, router_id=None, internal_network_id=None, enterprise_project_id=None):
+    def __init__(self, id=None, tenant_id=None, name=None, description=None, spec=None, status=None, admin_state_up=None, created_at=None, router_id=None, internal_network_id=None, enterprise_project_id=None, session_conf=None):
         """NatGatewayResponseBody
 
         The model defined in huaweicloud sdk
@@ -71,6 +73,8 @@ class NatGatewayResponseBody:
         :type internal_network_id: str
         :param enterprise_project_id: 企业项目ID。 创建公网NAT网关实例时，关联的企业项目ID。
         :type enterprise_project_id: str
+        :param session_conf: 
+        :type session_conf: :class:`huaweicloudsdknat.v2.SessionConfiguration`
         """
         
         
@@ -86,6 +90,7 @@ class NatGatewayResponseBody:
         self._router_id = None
         self._internal_network_id = None
         self._enterprise_project_id = None
+        self._session_conf = None
         self.discriminator = None
 
         self.id = id
@@ -99,6 +104,7 @@ class NatGatewayResponseBody:
         self.router_id = router_id
         self.internal_network_id = internal_network_id
         self.enterprise_project_id = enterprise_project_id
+        self.session_conf = session_conf
 
     @property
     def id(self):
@@ -341,6 +347,24 @@ class NatGatewayResponseBody:
         :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def session_conf(self):
+        """Gets the session_conf of this NatGatewayResponseBody.
+
+        :return: The session_conf of this NatGatewayResponseBody.
+        :rtype: :class:`huaweicloudsdknat.v2.SessionConfiguration`
+        """
+        return self._session_conf
+
+    @session_conf.setter
+    def session_conf(self, session_conf):
+        """Sets the session_conf of this NatGatewayResponseBody.
+
+        :param session_conf: The session_conf of this NatGatewayResponseBody.
+        :type session_conf: :class:`huaweicloudsdknat.v2.SessionConfiguration`
+        """
+        self._session_conf = session_conf
 
     def to_dict(self):
         """Returns the model properties as a dict"""

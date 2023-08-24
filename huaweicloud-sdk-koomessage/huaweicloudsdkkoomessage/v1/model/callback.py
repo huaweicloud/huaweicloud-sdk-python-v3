@@ -37,7 +37,7 @@ class Callback:
         :type callback_url: str
         :param id: 注册回调的唯一标识ID。
         :type id: str
-        :param url_type: 回调类型。  - 0：智能信息发送回调 - 1：模板状态回调 
+        :param url_type: 回调类型。  - 0：智能信息单条发送回调 - 1：模板状态回调 - 2：智能信息批量发送回调 
         :type url_type: int
         """
         
@@ -103,7 +103,7 @@ class Callback:
     def url_type(self):
         """Gets the url_type of this Callback.
 
-        回调类型。  - 0：智能信息发送回调 - 1：模板状态回调 
+        回调类型。  - 0：智能信息单条发送回调 - 1：模板状态回调 - 2：智能信息批量发送回调 
 
         :return: The url_type of this Callback.
         :rtype: int
@@ -114,7 +114,7 @@ class Callback:
     def url_type(self, url_type):
         """Sets the url_type of this Callback.
 
-        回调类型。  - 0：智能信息发送回调 - 1：模板状态回调 
+        回调类型。  - 0：智能信息单条发送回调 - 1：模板状态回调 - 2：智能信息批量发送回调 
 
         :param url_type: The url_type of this Callback.
         :type url_type: int

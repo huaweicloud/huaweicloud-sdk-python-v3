@@ -19,6 +19,7 @@ class AIMResolveDetail:
     openapi_types = {
         'resolve_id': 'str',
         'task_id': 'str',
+        'task_name': 'str',
         'send_account': 'str',
         'tpl_id': 'str',
         'tpl_name': 'str',
@@ -34,6 +35,7 @@ class AIMResolveDetail:
     attribute_map = {
         'resolve_id': 'resolve_id',
         'task_id': 'task_id',
+        'task_name': 'task_name',
         'send_account': 'send_account',
         'tpl_id': 'tpl_id',
         'tpl_name': 'tpl_name',
@@ -46,7 +48,7 @@ class AIMResolveDetail:
         'resolved_status': 'resolved_status'
     }
 
-    def __init__(self, resolve_id=None, task_id=None, send_account=None, tpl_id=None, tpl_name=None, cust_flag=None, aim_url=None, result_code=None, generate_date=None, expire_date=None, resolved_time=None, resolved_status=None):
+    def __init__(self, resolve_id=None, task_id=None, task_name=None, send_account=None, tpl_id=None, tpl_name=None, cust_flag=None, aim_url=None, result_code=None, generate_date=None, expire_date=None, resolved_time=None, resolved_status=None):
         """AIMResolveDetail
 
         The model defined in huaweicloud sdk
@@ -55,6 +57,8 @@ class AIMResolveDetail:
         :type resolve_id: str
         :param task_id: 任务ID。
         :type task_id: str
+        :param task_name: 任务名称。
+        :type task_name: str
         :param send_account: 发送的用户名。
         :type send_account: str
         :param tpl_id: 智能信息模板ID。
@@ -81,6 +85,7 @@ class AIMResolveDetail:
 
         self._resolve_id = None
         self._task_id = None
+        self._task_name = None
         self._send_account = None
         self._tpl_id = None
         self._tpl_name = None
@@ -97,6 +102,8 @@ class AIMResolveDetail:
             self.resolve_id = resolve_id
         if task_id is not None:
             self.task_id = task_id
+        if task_name is not None:
+            self.task_name = task_name
         if send_account is not None:
             self.send_account = send_account
         if tpl_id is not None:
@@ -161,6 +168,28 @@ class AIMResolveDetail:
         :type task_id: str
         """
         self._task_id = task_id
+
+    @property
+    def task_name(self):
+        """Gets the task_name of this AIMResolveDetail.
+
+        任务名称。
+
+        :return: The task_name of this AIMResolveDetail.
+        :rtype: str
+        """
+        return self._task_name
+
+    @task_name.setter
+    def task_name(self, task_name):
+        """Sets the task_name of this AIMResolveDetail.
+
+        任务名称。
+
+        :param task_name: The task_name of this AIMResolveDetail.
+        :type task_name: str
+        """
+        self._task_name = task_name
 
     @property
     def send_account(self):

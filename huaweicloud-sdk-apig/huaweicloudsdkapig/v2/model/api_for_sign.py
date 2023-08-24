@@ -28,7 +28,8 @@ class ApiForSign:
         'id': 'str',
         'req_uri': 'str',
         'type': 'int',
-        'signature_name': 'str'
+        'signature_name': 'str',
+        'req_method': 'str'
     }
 
     attribute_map = {
@@ -43,10 +44,11 @@ class ApiForSign:
         'id': 'id',
         'req_uri': 'req_uri',
         'type': 'type',
-        'signature_name': 'signature_name'
+        'signature_name': 'signature_name',
+        'req_method': 'req_method'
     }
 
-    def __init__(self, auth_type=None, run_env_name=None, group_name=None, publish_id=None, group_id=None, name=None, remark=None, run_env_id=None, id=None, req_uri=None, type=None, signature_name=None):
+    def __init__(self, auth_type=None, run_env_name=None, group_name=None, publish_id=None, group_id=None, name=None, remark=None, run_env_id=None, id=None, req_uri=None, type=None, signature_name=None, req_method=None):
         """ApiForSign
 
         The model defined in huaweicloud sdk
@@ -75,6 +77,8 @@ class ApiForSign:
         :type type: int
         :param signature_name: 已绑定的签名密钥名称
         :type signature_name: str
+        :param req_method: API请求方法
+        :type req_method: str
         """
         
         
@@ -91,6 +95,7 @@ class ApiForSign:
         self._req_uri = None
         self._type = None
         self._signature_name = None
+        self._req_method = None
         self.discriminator = None
 
         if auth_type is not None:
@@ -117,6 +122,8 @@ class ApiForSign:
             self.type = type
         if signature_name is not None:
             self.signature_name = signature_name
+        if req_method is not None:
+            self.req_method = req_method
 
     @property
     def auth_type(self):
@@ -381,6 +388,28 @@ class ApiForSign:
         :type signature_name: str
         """
         self._signature_name = signature_name
+
+    @property
+    def req_method(self):
+        """Gets the req_method of this ApiForSign.
+
+        API请求方法
+
+        :return: The req_method of this ApiForSign.
+        :rtype: str
+        """
+        return self._req_method
+
+    @req_method.setter
+    def req_method(self, req_method):
+        """Sets the req_method of this ApiForSign.
+
+        API请求方法
+
+        :param req_method: The req_method of this ApiForSign.
+        :type req_method: str
+        """
+        self._req_method = req_method
 
     def to_dict(self):
         """Returns the model properties as a dict"""

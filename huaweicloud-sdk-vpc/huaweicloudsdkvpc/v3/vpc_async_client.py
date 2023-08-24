@@ -1054,6 +1054,603 @@ class VpcAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def add_firewall_rules_async(self, request):
+        """网络ACL插入规则
+
+        网络ACL插入规则
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for AddFirewallRules
+        :type request: :class:`huaweicloudsdkvpc.v3.AddFirewallRulesRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.AddFirewallRulesResponse`
+        """
+        return self._add_firewall_rules_with_http_info(request)
+
+    def _add_firewall_rules_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'firewall_id' in local_var_params:
+            path_params['firewall_id'] = local_var_params['firewall_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/vpc/firewalls/{firewall_id}/insert-rules',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='AddFirewallRulesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def associate_subnet_firewall_async(self, request):
+        """网络ACL绑定子网
+
+        网络ACL绑定子网
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for AssociateSubnetFirewall
+        :type request: :class:`huaweicloudsdkvpc.v3.AssociateSubnetFirewallRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.AssociateSubnetFirewallResponse`
+        """
+        return self._associate_subnet_firewall_with_http_info(request)
+
+    def _associate_subnet_firewall_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'firewall_id' in local_var_params:
+            path_params['firewall_id'] = local_var_params['firewall_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/vpc/firewalls/{firewall_id}/associate-subnets',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='AssociateSubnetFirewallResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_firewall_async(self, request):
+        """创建网络ACL
+
+        创建网络ACL
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateFirewall
+        :type request: :class:`huaweicloudsdkvpc.v3.CreateFirewallRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.CreateFirewallResponse`
+        """
+        return self._create_firewall_with_http_info(request)
+
+    def _create_firewall_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/vpc/firewalls',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateFirewallResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_firewall_async(self, request):
+        """删除网络ACL
+
+        删除网络ACL
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteFirewall
+        :type request: :class:`huaweicloudsdkvpc.v3.DeleteFirewallRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.DeleteFirewallResponse`
+        """
+        return self._delete_firewall_with_http_info(request)
+
+    def _delete_firewall_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'firewall_id' in local_var_params:
+            path_params['firewall_id'] = local_var_params['firewall_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/vpc/firewalls/{firewall_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteFirewallResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def disassociate_subnet_firewall_async(self, request):
+        """网络ACL解绑子网
+
+        网络ACL解绑子网
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DisassociateSubnetFirewall
+        :type request: :class:`huaweicloudsdkvpc.v3.DisassociateSubnetFirewallRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.DisassociateSubnetFirewallResponse`
+        """
+        return self._disassociate_subnet_firewall_with_http_info(request)
+
+    def _disassociate_subnet_firewall_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'firewall_id' in local_var_params:
+            path_params['firewall_id'] = local_var_params['firewall_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/vpc/firewalls/{firewall_id}/disassociate-subnets',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DisassociateSubnetFirewallResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_firewall_async(self, request):
+        """查询网络ACL列表
+
+        查询网络ACL列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListFirewall
+        :type request: :class:`huaweicloudsdkvpc.v3.ListFirewallRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.ListFirewallResponse`
+        """
+        return self._list_firewall_with_http_info(request)
+
+    def _list_firewall_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+            collection_formats['id'] = 'multi'
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+            collection_formats['name'] = 'multi'
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'admin_state_up' in local_var_params:
+            query_params.append(('admin_state_up', local_var_params['admin_state_up']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+            collection_formats['enterprise_project_id'] = 'multi'
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/vpc/firewalls',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListFirewallResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def remove_firewall_rules_async(self, request):
+        """网络ACL移除规则
+
+        网络ACL移除规则
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for RemoveFirewallRules
+        :type request: :class:`huaweicloudsdkvpc.v3.RemoveFirewallRulesRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.RemoveFirewallRulesResponse`
+        """
+        return self._remove_firewall_rules_with_http_info(request)
+
+    def _remove_firewall_rules_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'firewall_id' in local_var_params:
+            path_params['firewall_id'] = local_var_params['firewall_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/vpc/firewalls/{firewall_id}/remove-rules',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='RemoveFirewallRulesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_firewall_async(self, request):
+        """查询网络ACL详情
+
+        查询网络ACL详情
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowFirewall
+        :type request: :class:`huaweicloudsdkvpc.v3.ShowFirewallRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.ShowFirewallResponse`
+        """
+        return self._show_firewall_with_http_info(request)
+
+    def _show_firewall_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'firewall_id' in local_var_params:
+            path_params['firewall_id'] = local_var_params['firewall_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/vpc/firewalls/{firewall_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowFirewallResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_firewall_async(self, request):
+        """更新网络ACL
+
+        更新网络ACL
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateFirewall
+        :type request: :class:`huaweicloudsdkvpc.v3.UpdateFirewallRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.UpdateFirewallResponse`
+        """
+        return self._update_firewall_with_http_info(request)
+
+    def _update_firewall_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'firewall_id' in local_var_params:
+            path_params['firewall_id'] = local_var_params['firewall_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/vpc/firewalls/{firewall_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateFirewallResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_firewall_rules_async(self, request):
+        """网络ACL更新规则
+
+        网络ACL更新规则
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateFirewallRules
+        :type request: :class:`huaweicloudsdkvpc.v3.UpdateFirewallRulesRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.UpdateFirewallRulesResponse`
+        """
+        return self._update_firewall_rules_with_http_info(request)
+
+    def _update_firewall_rules_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'firewall_id' in local_var_params:
+            path_params['firewall_id'] = local_var_params['firewall_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/vpc/firewalls/{firewall_id}/update-rules',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateFirewallRulesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def create_address_group_async(self, request):
         """创建地址组
 

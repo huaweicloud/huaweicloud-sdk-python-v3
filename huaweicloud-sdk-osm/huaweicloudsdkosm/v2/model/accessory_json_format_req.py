@@ -53,10 +53,8 @@ class AccessoryJsonFormatReq:
         self._accessory_data = None
         self.discriminator = None
 
-        if accessory_name is not None:
-            self.accessory_name = accessory_name
-        if accessory_from is not None:
-            self.accessory_from = accessory_from
+        self.accessory_name = accessory_name
+        self.accessory_from = accessory_from
         if upload_type is not None:
             self.upload_type = upload_type
         self.accessory_data = accessory_data

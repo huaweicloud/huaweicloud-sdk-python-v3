@@ -22,7 +22,8 @@ class CreateNatGatewayOption:
         'internal_network_id': 'str',
         'description': 'str',
         'spec': 'str',
-        'enterprise_project_id': 'str'
+        'enterprise_project_id': 'str',
+        'session_conf': 'SessionConfiguration'
     }
 
     attribute_map = {
@@ -31,10 +32,11 @@ class CreateNatGatewayOption:
         'internal_network_id': 'internal_network_id',
         'description': 'description',
         'spec': 'spec',
-        'enterprise_project_id': 'enterprise_project_id'
+        'enterprise_project_id': 'enterprise_project_id',
+        'session_conf': 'session_conf'
     }
 
-    def __init__(self, name=None, router_id=None, internal_network_id=None, description=None, spec=None, enterprise_project_id=None):
+    def __init__(self, name=None, router_id=None, internal_network_id=None, description=None, spec=None, enterprise_project_id=None, session_conf=None):
         """CreateNatGatewayOption
 
         The model defined in huaweicloud sdk
@@ -51,6 +53,8 @@ class CreateNatGatewayOption:
         :type spec: str
         :param enterprise_project_id: 企业项目ID 创建公网NAT网关实例时，关联的企业项目ID。 关于企业项目ID的获取及企业项目特性的详细信息，请参考《企业管理用户指南》。
         :type enterprise_project_id: str
+        :param session_conf: 
+        :type session_conf: :class:`huaweicloudsdknat.v2.SessionConfiguration`
         """
         
         
@@ -61,6 +65,7 @@ class CreateNatGatewayOption:
         self._description = None
         self._spec = None
         self._enterprise_project_id = None
+        self._session_conf = None
         self.discriminator = None
 
         self.name = name
@@ -71,6 +76,8 @@ class CreateNatGatewayOption:
         self.spec = spec
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
+        if session_conf is not None:
+            self.session_conf = session_conf
 
     @property
     def name(self):
@@ -203,6 +210,24 @@ class CreateNatGatewayOption:
         :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def session_conf(self):
+        """Gets the session_conf of this CreateNatGatewayOption.
+
+        :return: The session_conf of this CreateNatGatewayOption.
+        :rtype: :class:`huaweicloudsdknat.v2.SessionConfiguration`
+        """
+        return self._session_conf
+
+    @session_conf.setter
+    def session_conf(self, session_conf):
+        """Sets the session_conf of this CreateNatGatewayOption.
+
+        :param session_conf: The session_conf of this CreateNatGatewayOption.
+        :type session_conf: :class:`huaweicloudsdknat.v2.SessionConfiguration`
+        """
+        self._session_conf = session_conf
 
     def to_dict(self):
         """Returns the model properties as a dict"""

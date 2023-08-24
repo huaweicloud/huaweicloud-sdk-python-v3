@@ -19,7 +19,7 @@ class CreateLogStreamParams:
     openapi_types = {
         'log_stream_name': 'str',
         'ttl_in_days': 'int',
-        'tags': 'TagsBody'
+        'tags': 'list[TagsBody]'
     }
 
     attribute_map = {
@@ -37,8 +37,8 @@ class CreateLogStreamParams:
         :type log_stream_name: str
         :param ttl_in_days: 日志存储时间 说明： 该参数仅对华东-上海一、华北-北京四、华南-广州用户开放。
         :type ttl_in_days: int
-        :param tags: 
-        :type tags: :class:`huaweicloudsdklts.v2.TagsBody`
+        :param tags: 标签字段信息
+        :type tags: list[:class:`huaweicloudsdklts.v2.TagsBody`]
         """
         
         
@@ -102,8 +102,10 @@ class CreateLogStreamParams:
     def tags(self):
         """Gets the tags of this CreateLogStreamParams.
 
+        标签字段信息
+
         :return: The tags of this CreateLogStreamParams.
-        :rtype: :class:`huaweicloudsdklts.v2.TagsBody`
+        :rtype: list[:class:`huaweicloudsdklts.v2.TagsBody`]
         """
         return self._tags
 
@@ -111,8 +113,10 @@ class CreateLogStreamParams:
     def tags(self, tags):
         """Sets the tags of this CreateLogStreamParams.
 
+        标签字段信息
+
         :param tags: The tags of this CreateLogStreamParams.
-        :type tags: :class:`huaweicloudsdklts.v2.TagsBody`
+        :type tags: list[:class:`huaweicloudsdklts.v2.TagsBody`]
         """
         self._tags = tags
 

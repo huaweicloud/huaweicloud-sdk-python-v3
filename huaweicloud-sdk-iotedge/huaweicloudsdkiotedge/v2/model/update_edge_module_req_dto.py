@@ -19,16 +19,18 @@ class UpdateEdgeModuleReqDTO:
     openapi_types = {
         'app_version': 'str',
         'module_name': 'str',
-        'container_settings': 'ContainerSettingsReqDTO'
+        'container_settings': 'ContainerSettingsReqDTO',
+        'desired_state': 'str'
     }
 
     attribute_map = {
         'app_version': 'app_version',
         'module_name': 'module_name',
-        'container_settings': 'container_settings'
+        'container_settings': 'container_settings',
+        'desired_state': 'desired_state'
     }
 
-    def __init__(self, app_version=None, module_name=None, container_settings=None):
+    def __init__(self, app_version=None, module_name=None, container_settings=None, desired_state=None):
         """UpdateEdgeModuleReqDTO
 
         The model defined in huaweicloud sdk
@@ -39,6 +41,8 @@ class UpdateEdgeModuleReqDTO:
         :type module_name: str
         :param container_settings: 
         :type container_settings: :class:`huaweicloudsdkiotedge.v2.ContainerSettingsReqDTO`
+        :param desired_state: 模块期望状态: RUNNING(升级后期望模块运行)，STOPPED(升级后期望模块停止)，空值默认继承升级前模块期望状态
+        :type desired_state: str
         """
         
         
@@ -46,6 +50,7 @@ class UpdateEdgeModuleReqDTO:
         self._app_version = None
         self._module_name = None
         self._container_settings = None
+        self._desired_state = None
         self.discriminator = None
 
         if app_version is not None:
@@ -54,6 +59,8 @@ class UpdateEdgeModuleReqDTO:
             self.module_name = module_name
         if container_settings is not None:
             self.container_settings = container_settings
+        if desired_state is not None:
+            self.desired_state = desired_state
 
     @property
     def app_version(self):
@@ -116,6 +123,28 @@ class UpdateEdgeModuleReqDTO:
         :type container_settings: :class:`huaweicloudsdkiotedge.v2.ContainerSettingsReqDTO`
         """
         self._container_settings = container_settings
+
+    @property
+    def desired_state(self):
+        """Gets the desired_state of this UpdateEdgeModuleReqDTO.
+
+        模块期望状态: RUNNING(升级后期望模块运行)，STOPPED(升级后期望模块停止)，空值默认继承升级前模块期望状态
+
+        :return: The desired_state of this UpdateEdgeModuleReqDTO.
+        :rtype: str
+        """
+        return self._desired_state
+
+    @desired_state.setter
+    def desired_state(self, desired_state):
+        """Sets the desired_state of this UpdateEdgeModuleReqDTO.
+
+        模块期望状态: RUNNING(升级后期望模块运行)，STOPPED(升级后期望模块停止)，空值默认继承升级前模块期望状态
+
+        :param desired_state: The desired_state of this UpdateEdgeModuleReqDTO.
+        :type desired_state: str
+        """
+        self._desired_state = desired_state
 
     def to_dict(self):
         """Returns the model properties as a dict"""

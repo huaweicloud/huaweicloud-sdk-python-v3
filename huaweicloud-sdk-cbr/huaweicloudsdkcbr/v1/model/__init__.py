@@ -162,6 +162,7 @@ from huaweicloudsdkcbr.v1.model.resource_extra_info_include_volumes import Resou
 from huaweicloudsdkcbr.v1.model.resource_resp import ResourceResp
 from huaweicloudsdkcbr.v1.model.restore_backup_request import RestoreBackupRequest
 from huaweicloudsdkcbr.v1.model.restore_backup_response import RestoreBackupResponse
+from huaweicloudsdkcbr.v1.model.restore_details import RestoreDetails
 from huaweicloudsdkcbr.v1.model.self_links_info import SelfLinksInfo
 from huaweicloudsdkcbr.v1.model.set_vault_resource_request import SetVaultResourceRequest
 from huaweicloudsdkcbr.v1.model.set_vault_resource_response import SetVaultResourceResponse

@@ -57,9 +57,9 @@ class ShowInstanceMessagesRequest:
         :type start_time: str
         :param end_time: 结束时间。  Unix毫秒时间戳。  查询消息偏移量时，为必选参数。
         :type end_time: str
-        :param limit: 分页大小。取值范围为0~50。
+        :param limit: 每一页显示的message数量。
         :type limit: str
-        :param offset: 偏移量，表示从此偏移量开始查询， offset大于等于0。
+        :param offset: 页数。
         :type offset: str
         :param download: 是否下载。
         :type download: bool
@@ -216,7 +216,7 @@ class ShowInstanceMessagesRequest:
     def limit(self):
         """Gets the limit of this ShowInstanceMessagesRequest.
 
-        分页大小。取值范围为0~50。
+        每一页显示的message数量。
 
         :return: The limit of this ShowInstanceMessagesRequest.
         :rtype: str
@@ -227,7 +227,7 @@ class ShowInstanceMessagesRequest:
     def limit(self, limit):
         """Sets the limit of this ShowInstanceMessagesRequest.
 
-        分页大小。取值范围为0~50。
+        每一页显示的message数量。
 
         :param limit: The limit of this ShowInstanceMessagesRequest.
         :type limit: str
@@ -238,7 +238,7 @@ class ShowInstanceMessagesRequest:
     def offset(self):
         """Gets the offset of this ShowInstanceMessagesRequest.
 
-        偏移量，表示从此偏移量开始查询， offset大于等于0。
+        页数。
 
         :return: The offset of this ShowInstanceMessagesRequest.
         :rtype: str
@@ -249,7 +249,7 @@ class ShowInstanceMessagesRequest:
     def offset(self, offset):
         """Sets the offset of this ShowInstanceMessagesRequest.
 
-        偏移量，表示从此偏移量开始查询， offset大于等于0。
+        页数。
 
         :param offset: The offset of this ShowInstanceMessagesRequest.
         :type offset: str

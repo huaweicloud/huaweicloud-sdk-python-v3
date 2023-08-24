@@ -61,7 +61,8 @@ class CustomizeSourceCreateReq:
         self.name = name
         if description is not None:
             self.description = description
-        self.channel_id = channel_id
+        if channel_id is not None:
+            self.channel_id = channel_id
         if type is not None:
             self.type = type
         if detail is not None:

@@ -5,7 +5,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class GlanceShowImageResponseBody:
+class GlanceShowImageListResponseBody:
 
     """
     Attributes:
@@ -61,6 +61,7 @@ class GlanceShowImageResponseBody:
         'visibility': 'str',
         'support_fc_inject': 'str',
         'enterprise_project_id': 'str',
+        'sys_enterprise_project_id': 'str',
         'hw_firmware_type': 'str',
         'support_arm': 'str',
         'is_offshelved': 'str',
@@ -124,6 +125,7 @@ class GlanceShowImageResponseBody:
         'visibility': 'visibility',
         'support_fc_inject': '__support_fc_inject',
         'enterprise_project_id': 'enterprise_project_id',
+        'sys_enterprise_project_id': '_sys_enterprise_project_id',
         'hw_firmware_type': 'hw_firmware_type',
         'support_arm': '__support_arm',
         'is_offshelved': '__is_offshelved',
@@ -142,8 +144,8 @@ class GlanceShowImageResponseBody:
         'support_amd': '__support_amd'
     }
 
-    def __init__(self, backup_id=None, data_origin=None, description=None, image_size=None, image_source_type=None, imagetype=None, isregistered=None, originalimagename=None, os_bit=None, os_type=None, os_version=None, platform=None, productcode=None, support_diskintensive=None, support_highperformance=None, support_kvm=None, support_kvm_gpu_type=None, support_kvm_infiniband=None, support_largememory=None, support_xen=None, support_xen_gpu_type=None, support_xen_hana=None, checksum=None, container_format=None, created_at=None, disk_format=None, file=None, id=None, min_disk=None, min_ram=None, name=None, owner=None, protected=None, schema=None, _self=None, size=None, status=None, tags=None, updated_at=None, virtual_env_type=None, virtual_size=None, visibility=None, support_fc_inject=None, enterprise_project_id=None, hw_firmware_type=None, support_arm=None, is_offshelved=None, lazyloading=None, os_feature_list=None, root_origin=None, sequence_num=None, support_agent_list=None, system__cmkid=None, active_at=None, hw_vif_multiqueue_enabled=None, max_ram=None, image_location=None, is_config_init=None, account_code=None, support_amd=None):
-        """GlanceShowImageResponseBody
+    def __init__(self, backup_id=None, data_origin=None, description=None, image_size=None, image_source_type=None, imagetype=None, isregistered=None, originalimagename=None, os_bit=None, os_type=None, os_version=None, platform=None, productcode=None, support_diskintensive=None, support_highperformance=None, support_kvm=None, support_kvm_gpu_type=None, support_kvm_infiniband=None, support_largememory=None, support_xen=None, support_xen_gpu_type=None, support_xen_hana=None, checksum=None, container_format=None, created_at=None, disk_format=None, file=None, id=None, min_disk=None, min_ram=None, name=None, owner=None, protected=None, schema=None, _self=None, size=None, status=None, tags=None, updated_at=None, virtual_env_type=None, virtual_size=None, visibility=None, support_fc_inject=None, enterprise_project_id=None, sys_enterprise_project_id=None, hw_firmware_type=None, support_arm=None, is_offshelved=None, lazyloading=None, os_feature_list=None, root_origin=None, sequence_num=None, support_agent_list=None, system__cmkid=None, active_at=None, hw_vif_multiqueue_enabled=None, max_ram=None, image_location=None, is_config_init=None, account_code=None, support_amd=None):
+        """GlanceShowImageListResponseBody
 
         The model defined in huaweicloud sdk
 
@@ -235,6 +237,8 @@ class GlanceShowImageResponseBody:
         :type support_fc_inject: str
         :param enterprise_project_id: 表示当前镜像所属的企业项目。 取值为0或无该值，表示属于default企业项目。 取值为UUID，表示属于该UUID对应的企业项目。 关于企业项目ID的获取及企业项目特性的详细信息，请参考《企业管理用户指南》。
         :type enterprise_project_id: str
+        :param sys_enterprise_project_id: 表示当前镜像所属的企业项目。 取值为0或无该值，表示属于default企业项目。 取值为UUID，表示属于该UUID对应的企业项目。 关于企业项目ID的获取及企业项目特性的详细信息，请参考《企业管理用户指南》。
+        :type sys_enterprise_project_id: str
         :param hw_firmware_type: 云主机云服务器的启动方式。目前支持： bios：表示bios引导启动。 uefi：表示uefi引导启动。
         :type hw_firmware_type: str
         :param support_arm: 是否为ARM架构类型的镜像，取值为“true”或者“false”。
@@ -315,6 +319,7 @@ class GlanceShowImageResponseBody:
         self._visibility = None
         self._support_fc_inject = None
         self._enterprise_project_id = None
+        self._sys_enterprise_project_id = None
         self._hw_firmware_type = None
         self._support_arm = None
         self._is_offshelved = None
@@ -399,6 +404,8 @@ class GlanceShowImageResponseBody:
             self.support_fc_inject = support_fc_inject
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
+        if sys_enterprise_project_id is not None:
+            self.sys_enterprise_project_id = sys_enterprise_project_id
         if hw_firmware_type is not None:
             self.hw_firmware_type = hw_firmware_type
         if support_arm is not None:
@@ -434,1320 +441,1342 @@ class GlanceShowImageResponseBody:
 
     @property
     def backup_id(self):
-        """Gets the backup_id of this GlanceShowImageResponseBody.
+        """Gets the backup_id of this GlanceShowImageListResponseBody.
 
         备份ID。如果是备份创建的镜像，则填写为备份的ID，否则为空。
 
-        :return: The backup_id of this GlanceShowImageResponseBody.
+        :return: The backup_id of this GlanceShowImageListResponseBody.
         :rtype: str
         """
         return self._backup_id
 
     @backup_id.setter
     def backup_id(self, backup_id):
-        """Sets the backup_id of this GlanceShowImageResponseBody.
+        """Sets the backup_id of this GlanceShowImageListResponseBody.
 
         备份ID。如果是备份创建的镜像，则填写为备份的ID，否则为空。
 
-        :param backup_id: The backup_id of this GlanceShowImageResponseBody.
+        :param backup_id: The backup_id of this GlanceShowImageListResponseBody.
         :type backup_id: str
         """
         self._backup_id = backup_id
 
     @property
     def data_origin(self):
-        """Gets the data_origin of this GlanceShowImageResponseBody.
+        """Gets the data_origin of this GlanceShowImageListResponseBody.
 
         镜像来源。公共镜像为空。
 
-        :return: The data_origin of this GlanceShowImageResponseBody.
+        :return: The data_origin of this GlanceShowImageListResponseBody.
         :rtype: str
         """
         return self._data_origin
 
     @data_origin.setter
     def data_origin(self, data_origin):
-        """Sets the data_origin of this GlanceShowImageResponseBody.
+        """Sets the data_origin of this GlanceShowImageListResponseBody.
 
         镜像来源。公共镜像为空。
 
-        :param data_origin: The data_origin of this GlanceShowImageResponseBody.
+        :param data_origin: The data_origin of this GlanceShowImageListResponseBody.
         :type data_origin: str
         """
         self._data_origin = data_origin
 
     @property
     def description(self):
-        """Gets the description of this GlanceShowImageResponseBody.
+        """Gets the description of this GlanceShowImageListResponseBody.
 
         镜像描述信息。
 
-        :return: The description of this GlanceShowImageResponseBody.
+        :return: The description of this GlanceShowImageListResponseBody.
         :rtype: str
         """
         return self._description
 
     @description.setter
     def description(self, description):
-        """Sets the description of this GlanceShowImageResponseBody.
+        """Sets the description of this GlanceShowImageListResponseBody.
 
         镜像描述信息。
 
-        :param description: The description of this GlanceShowImageResponseBody.
+        :param description: The description of this GlanceShowImageListResponseBody.
         :type description: str
         """
         self._description = description
 
     @property
     def image_size(self):
-        """Gets the image_size of this GlanceShowImageResponseBody.
+        """Gets the image_size of this GlanceShowImageListResponseBody.
 
         镜像文件的大小，单位为字节。目前取值为大于0的字符串。
 
-        :return: The image_size of this GlanceShowImageResponseBody.
+        :return: The image_size of this GlanceShowImageListResponseBody.
         :rtype: str
         """
         return self._image_size
 
     @image_size.setter
     def image_size(self, image_size):
-        """Sets the image_size of this GlanceShowImageResponseBody.
+        """Sets the image_size of this GlanceShowImageListResponseBody.
 
         镜像文件的大小，单位为字节。目前取值为大于0的字符串。
 
-        :param image_size: The image_size of this GlanceShowImageResponseBody.
+        :param image_size: The image_size of this GlanceShowImageListResponseBody.
         :type image_size: str
         """
         self._image_size = image_size
 
     @property
     def image_source_type(self):
-        """Gets the image_source_type of this GlanceShowImageResponseBody.
+        """Gets the image_source_type of this GlanceShowImageListResponseBody.
 
         镜像后端存储类型，目前只支持uds
 
-        :return: The image_source_type of this GlanceShowImageResponseBody.
+        :return: The image_source_type of this GlanceShowImageListResponseBody.
         :rtype: str
         """
         return self._image_source_type
 
     @image_source_type.setter
     def image_source_type(self, image_source_type):
-        """Sets the image_source_type of this GlanceShowImageResponseBody.
+        """Sets the image_source_type of this GlanceShowImageListResponseBody.
 
         镜像后端存储类型，目前只支持uds
 
-        :param image_source_type: The image_source_type of this GlanceShowImageResponseBody.
+        :param image_source_type: The image_source_type of this GlanceShowImageListResponseBody.
         :type image_source_type: str
         """
         self._image_source_type = image_source_type
 
     @property
     def imagetype(self):
-        """Gets the imagetype of this GlanceShowImageResponseBody.
+        """Gets the imagetype of this GlanceShowImageListResponseBody.
 
         镜像类型，目前支持以下类型：公共镜像：gold私有镜像：private共享镜像：shared 市场镜像：market
 
-        :return: The imagetype of this GlanceShowImageResponseBody.
+        :return: The imagetype of this GlanceShowImageListResponseBody.
         :rtype: str
         """
         return self._imagetype
 
     @imagetype.setter
     def imagetype(self, imagetype):
-        """Sets the imagetype of this GlanceShowImageResponseBody.
+        """Sets the imagetype of this GlanceShowImageListResponseBody.
 
         镜像类型，目前支持以下类型：公共镜像：gold私有镜像：private共享镜像：shared 市场镜像：market
 
-        :param imagetype: The imagetype of this GlanceShowImageResponseBody.
+        :param imagetype: The imagetype of this GlanceShowImageListResponseBody.
         :type imagetype: str
         """
         self._imagetype = imagetype
 
     @property
     def isregistered(self):
-        """Gets the isregistered of this GlanceShowImageResponseBody.
+        """Gets the isregistered of this GlanceShowImageListResponseBody.
 
         是否是注册过的镜像，取值为“true”或者“false”。
 
-        :return: The isregistered of this GlanceShowImageResponseBody.
+        :return: The isregistered of this GlanceShowImageListResponseBody.
         :rtype: str
         """
         return self._isregistered
 
     @isregistered.setter
     def isregistered(self, isregistered):
-        """Sets the isregistered of this GlanceShowImageResponseBody.
+        """Sets the isregistered of this GlanceShowImageListResponseBody.
 
         是否是注册过的镜像，取值为“true”或者“false”。
 
-        :param isregistered: The isregistered of this GlanceShowImageResponseBody.
+        :param isregistered: The isregistered of this GlanceShowImageListResponseBody.
         :type isregistered: str
         """
         self._isregistered = isregistered
 
     @property
     def originalimagename(self):
-        """Gets the originalimagename of this GlanceShowImageResponseBody.
+        """Gets the originalimagename of this GlanceShowImageListResponseBody.
 
         父镜像ID。公共镜像或通过文件创建的私有镜像，取值为空。
 
-        :return: The originalimagename of this GlanceShowImageResponseBody.
+        :return: The originalimagename of this GlanceShowImageListResponseBody.
         :rtype: str
         """
         return self._originalimagename
 
     @originalimagename.setter
     def originalimagename(self, originalimagename):
-        """Sets the originalimagename of this GlanceShowImageResponseBody.
+        """Sets the originalimagename of this GlanceShowImageListResponseBody.
 
         父镜像ID。公共镜像或通过文件创建的私有镜像，取值为空。
 
-        :param originalimagename: The originalimagename of this GlanceShowImageResponseBody.
+        :param originalimagename: The originalimagename of this GlanceShowImageListResponseBody.
         :type originalimagename: str
         """
         self._originalimagename = originalimagename
 
     @property
     def os_bit(self):
-        """Gets the os_bit of this GlanceShowImageResponseBody.
+        """Gets the os_bit of this GlanceShowImageListResponseBody.
 
         操作系统位数，一般取值为“32”或者“64”。
 
-        :return: The os_bit of this GlanceShowImageResponseBody.
+        :return: The os_bit of this GlanceShowImageListResponseBody.
         :rtype: str
         """
         return self._os_bit
 
     @os_bit.setter
     def os_bit(self, os_bit):
-        """Sets the os_bit of this GlanceShowImageResponseBody.
+        """Sets the os_bit of this GlanceShowImageListResponseBody.
 
         操作系统位数，一般取值为“32”或者“64”。
 
-        :param os_bit: The os_bit of this GlanceShowImageResponseBody.
+        :param os_bit: The os_bit of this GlanceShowImageListResponseBody.
         :type os_bit: str
         """
         self._os_bit = os_bit
 
     @property
     def os_type(self):
-        """Gets the os_type of this GlanceShowImageResponseBody.
+        """Gets the os_type of this GlanceShowImageListResponseBody.
 
         操作系统类型，目前取值Linux， Windows，Other。
 
-        :return: The os_type of this GlanceShowImageResponseBody.
+        :return: The os_type of this GlanceShowImageListResponseBody.
         :rtype: str
         """
         return self._os_type
 
     @os_type.setter
     def os_type(self, os_type):
-        """Sets the os_type of this GlanceShowImageResponseBody.
+        """Sets the os_type of this GlanceShowImageListResponseBody.
 
         操作系统类型，目前取值Linux， Windows，Other。
 
-        :param os_type: The os_type of this GlanceShowImageResponseBody.
+        :param os_type: The os_type of this GlanceShowImageListResponseBody.
         :type os_type: str
         """
         self._os_type = os_type
 
     @property
     def os_version(self):
-        """Gets the os_version of this GlanceShowImageResponseBody.
+        """Gets the os_version of this GlanceShowImageListResponseBody.
 
         操作系统具体版本。
 
-        :return: The os_version of this GlanceShowImageResponseBody.
+        :return: The os_version of this GlanceShowImageListResponseBody.
         :rtype: str
         """
         return self._os_version
 
     @os_version.setter
     def os_version(self, os_version):
-        """Sets the os_version of this GlanceShowImageResponseBody.
+        """Sets the os_version of this GlanceShowImageListResponseBody.
 
         操作系统具体版本。
 
-        :param os_version: The os_version of this GlanceShowImageResponseBody.
+        :param os_version: The os_version of this GlanceShowImageListResponseBody.
         :type os_version: str
         """
         self._os_version = os_version
 
     @property
     def platform(self):
-        """Gets the platform of this GlanceShowImageResponseBody.
+        """Gets the platform of this GlanceShowImageListResponseBody.
 
         镜像平台分类，取值为Windows，Ubuntu，RedHat，SUSE，CentOS，Debian，OpenSUSE, Oracle Linux，Fedora，Other，CoreOS和EulerOS。
 
-        :return: The platform of this GlanceShowImageResponseBody.
+        :return: The platform of this GlanceShowImageListResponseBody.
         :rtype: str
         """
         return self._platform
 
     @platform.setter
     def platform(self, platform):
-        """Sets the platform of this GlanceShowImageResponseBody.
+        """Sets the platform of this GlanceShowImageListResponseBody.
 
         镜像平台分类，取值为Windows，Ubuntu，RedHat，SUSE，CentOS，Debian，OpenSUSE, Oracle Linux，Fedora，Other，CoreOS和EulerOS。
 
-        :param platform: The platform of this GlanceShowImageResponseBody.
+        :param platform: The platform of this GlanceShowImageListResponseBody.
         :type platform: str
         """
         self._platform = platform
 
     @property
     def productcode(self):
-        """Gets the productcode of this GlanceShowImageResponseBody.
+        """Gets the productcode of this GlanceShowImageListResponseBody.
 
         市场镜像的产品ID。
 
-        :return: The productcode of this GlanceShowImageResponseBody.
+        :return: The productcode of this GlanceShowImageListResponseBody.
         :rtype: str
         """
         return self._productcode
 
     @productcode.setter
     def productcode(self, productcode):
-        """Sets the productcode of this GlanceShowImageResponseBody.
+        """Sets the productcode of this GlanceShowImageListResponseBody.
 
         市场镜像的产品ID。
 
-        :param productcode: The productcode of this GlanceShowImageResponseBody.
+        :param productcode: The productcode of this GlanceShowImageListResponseBody.
         :type productcode: str
         """
         self._productcode = productcode
 
     @property
     def support_diskintensive(self):
-        """Gets the support_diskintensive of this GlanceShowImageResponseBody.
+        """Gets the support_diskintensive of this GlanceShowImageListResponseBody.
 
         表示该镜像支持密集存储。如果镜像支持密集存储性能，则值为true，否则无需增加该属性。
 
-        :return: The support_diskintensive of this GlanceShowImageResponseBody.
+        :return: The support_diskintensive of this GlanceShowImageListResponseBody.
         :rtype: str
         """
         return self._support_diskintensive
 
     @support_diskintensive.setter
     def support_diskintensive(self, support_diskintensive):
-        """Sets the support_diskintensive of this GlanceShowImageResponseBody.
+        """Sets the support_diskintensive of this GlanceShowImageListResponseBody.
 
         表示该镜像支持密集存储。如果镜像支持密集存储性能，则值为true，否则无需增加该属性。
 
-        :param support_diskintensive: The support_diskintensive of this GlanceShowImageResponseBody.
+        :param support_diskintensive: The support_diskintensive of this GlanceShowImageListResponseBody.
         :type support_diskintensive: str
         """
         self._support_diskintensive = support_diskintensive
 
     @property
     def support_highperformance(self):
-        """Gets the support_highperformance of this GlanceShowImageResponseBody.
+        """Gets the support_highperformance of this GlanceShowImageListResponseBody.
 
         表示该镜像支持高计算性能。如果镜像支持高计算性能，则值为true，否则无需增加该属性。
 
-        :return: The support_highperformance of this GlanceShowImageResponseBody.
+        :return: The support_highperformance of this GlanceShowImageListResponseBody.
         :rtype: str
         """
         return self._support_highperformance
 
     @support_highperformance.setter
     def support_highperformance(self, support_highperformance):
-        """Sets the support_highperformance of this GlanceShowImageResponseBody.
+        """Sets the support_highperformance of this GlanceShowImageListResponseBody.
 
         表示该镜像支持高计算性能。如果镜像支持高计算性能，则值为true，否则无需增加该属性。
 
-        :param support_highperformance: The support_highperformance of this GlanceShowImageResponseBody.
+        :param support_highperformance: The support_highperformance of this GlanceShowImageListResponseBody.
         :type support_highperformance: str
         """
         self._support_highperformance = support_highperformance
 
     @property
     def support_kvm(self):
-        """Gets the support_kvm of this GlanceShowImageResponseBody.
+        """Gets the support_kvm of this GlanceShowImageListResponseBody.
 
         如果镜像支持KVM，取值为true，否则无需增加该属性。
 
-        :return: The support_kvm of this GlanceShowImageResponseBody.
+        :return: The support_kvm of this GlanceShowImageListResponseBody.
         :rtype: str
         """
         return self._support_kvm
 
     @support_kvm.setter
     def support_kvm(self, support_kvm):
-        """Sets the support_kvm of this GlanceShowImageResponseBody.
+        """Sets the support_kvm of this GlanceShowImageListResponseBody.
 
         如果镜像支持KVM，取值为true，否则无需增加该属性。
 
-        :param support_kvm: The support_kvm of this GlanceShowImageResponseBody.
+        :param support_kvm: The support_kvm of this GlanceShowImageListResponseBody.
         :type support_kvm: str
         """
         self._support_kvm = support_kvm
 
     @property
     def support_kvm_gpu_type(self):
-        """Gets the support_kvm_gpu_type of this GlanceShowImageResponseBody.
+        """Gets the support_kvm_gpu_type of this GlanceShowImageListResponseBody.
 
         表示该镜像是支持KVM虚拟化平台下的GPU类型，如果不支持KVM虚拟机下GPU类型，无需添加该属性。该属性与“__support_xen”和“__support_kvm”属性不共存。
 
-        :return: The support_kvm_gpu_type of this GlanceShowImageResponseBody.
+        :return: The support_kvm_gpu_type of this GlanceShowImageListResponseBody.
         :rtype: str
         """
         return self._support_kvm_gpu_type
 
     @support_kvm_gpu_type.setter
     def support_kvm_gpu_type(self, support_kvm_gpu_type):
-        """Sets the support_kvm_gpu_type of this GlanceShowImageResponseBody.
+        """Sets the support_kvm_gpu_type of this GlanceShowImageListResponseBody.
 
         表示该镜像是支持KVM虚拟化平台下的GPU类型，如果不支持KVM虚拟机下GPU类型，无需添加该属性。该属性与“__support_xen”和“__support_kvm”属性不共存。
 
-        :param support_kvm_gpu_type: The support_kvm_gpu_type of this GlanceShowImageResponseBody.
+        :param support_kvm_gpu_type: The support_kvm_gpu_type of this GlanceShowImageListResponseBody.
         :type support_kvm_gpu_type: str
         """
         self._support_kvm_gpu_type = support_kvm_gpu_type
 
     @property
     def support_kvm_infiniband(self):
-        """Gets the support_kvm_infiniband of this GlanceShowImageResponseBody.
+        """Gets the support_kvm_infiniband of this GlanceShowImageListResponseBody.
 
         如果镜像支持KVM虚拟化下Infiniband网卡类型，取值为true。否则，无需添加该属性。该属性与“__support_xen”属性不共存。
 
-        :return: The support_kvm_infiniband of this GlanceShowImageResponseBody.
+        :return: The support_kvm_infiniband of this GlanceShowImageListResponseBody.
         :rtype: str
         """
         return self._support_kvm_infiniband
 
     @support_kvm_infiniband.setter
     def support_kvm_infiniband(self, support_kvm_infiniband):
-        """Sets the support_kvm_infiniband of this GlanceShowImageResponseBody.
+        """Sets the support_kvm_infiniband of this GlanceShowImageListResponseBody.
 
         如果镜像支持KVM虚拟化下Infiniband网卡类型，取值为true。否则，无需添加该属性。该属性与“__support_xen”属性不共存。
 
-        :param support_kvm_infiniband: The support_kvm_infiniband of this GlanceShowImageResponseBody.
+        :param support_kvm_infiniband: The support_kvm_infiniband of this GlanceShowImageListResponseBody.
         :type support_kvm_infiniband: str
         """
         self._support_kvm_infiniband = support_kvm_infiniband
 
     @property
     def support_largememory(self):
-        """Gets the support_largememory of this GlanceShowImageResponseBody.
+        """Gets the support_largememory of this GlanceShowImageListResponseBody.
 
         表示该镜像支持超大内存。如果镜像支持超大内存，取值为true，否则无需增加该属性
 
-        :return: The support_largememory of this GlanceShowImageResponseBody.
+        :return: The support_largememory of this GlanceShowImageListResponseBody.
         :rtype: str
         """
         return self._support_largememory
 
     @support_largememory.setter
     def support_largememory(self, support_largememory):
-        """Sets the support_largememory of this GlanceShowImageResponseBody.
+        """Sets the support_largememory of this GlanceShowImageListResponseBody.
 
         表示该镜像支持超大内存。如果镜像支持超大内存，取值为true，否则无需增加该属性
 
-        :param support_largememory: The support_largememory of this GlanceShowImageResponseBody.
+        :param support_largememory: The support_largememory of this GlanceShowImageListResponseBody.
         :type support_largememory: str
         """
         self._support_largememory = support_largememory
 
     @property
     def support_xen(self):
-        """Gets the support_xen of this GlanceShowImageResponseBody.
+        """Gets the support_xen of this GlanceShowImageListResponseBody.
 
         如果镜像支持XEN，取值为true，否则无需增加该属性。
 
-        :return: The support_xen of this GlanceShowImageResponseBody.
+        :return: The support_xen of this GlanceShowImageListResponseBody.
         :rtype: str
         """
         return self._support_xen
 
     @support_xen.setter
     def support_xen(self, support_xen):
-        """Sets the support_xen of this GlanceShowImageResponseBody.
+        """Sets the support_xen of this GlanceShowImageListResponseBody.
 
         如果镜像支持XEN，取值为true，否则无需增加该属性。
 
-        :param support_xen: The support_xen of this GlanceShowImageResponseBody.
+        :param support_xen: The support_xen of this GlanceShowImageListResponseBody.
         :type support_xen: str
         """
         self._support_xen = support_xen
 
     @property
     def support_xen_gpu_type(self):
-        """Gets the support_xen_gpu_type of this GlanceShowImageResponseBody.
+        """Gets the support_xen_gpu_type of this GlanceShowImageListResponseBody.
 
         表示该镜像是支持XEN虚拟化平台下的GPU优化类型，取值参考8.10-表 镜像支持的GPU类型说明。镜像操作系统类型请参考8.10-表 镜像类型。如果不支持XEN虚拟化下GPU类型，无需添加该属性。该属性与“__support_xen”和“__support_kvm”属性不共存。
 
-        :return: The support_xen_gpu_type of this GlanceShowImageResponseBody.
+        :return: The support_xen_gpu_type of this GlanceShowImageListResponseBody.
         :rtype: str
         """
         return self._support_xen_gpu_type
 
     @support_xen_gpu_type.setter
     def support_xen_gpu_type(self, support_xen_gpu_type):
-        """Sets the support_xen_gpu_type of this GlanceShowImageResponseBody.
+        """Sets the support_xen_gpu_type of this GlanceShowImageListResponseBody.
 
         表示该镜像是支持XEN虚拟化平台下的GPU优化类型，取值参考8.10-表 镜像支持的GPU类型说明。镜像操作系统类型请参考8.10-表 镜像类型。如果不支持XEN虚拟化下GPU类型，无需添加该属性。该属性与“__support_xen”和“__support_kvm”属性不共存。
 
-        :param support_xen_gpu_type: The support_xen_gpu_type of this GlanceShowImageResponseBody.
+        :param support_xen_gpu_type: The support_xen_gpu_type of this GlanceShowImageListResponseBody.
         :type support_xen_gpu_type: str
         """
         self._support_xen_gpu_type = support_xen_gpu_type
 
     @property
     def support_xen_hana(self):
-        """Gets the support_xen_hana of this GlanceShowImageResponseBody.
+        """Gets the support_xen_hana of this GlanceShowImageListResponseBody.
 
         如果镜像支持XEN虚拟化下HANA类型，取值为true。否则，无需添加该属性。该属性与“__support_xen”和“__support_kvm”属性不共存。
 
-        :return: The support_xen_hana of this GlanceShowImageResponseBody.
+        :return: The support_xen_hana of this GlanceShowImageListResponseBody.
         :rtype: str
         """
         return self._support_xen_hana
 
     @support_xen_hana.setter
     def support_xen_hana(self, support_xen_hana):
-        """Sets the support_xen_hana of this GlanceShowImageResponseBody.
+        """Sets the support_xen_hana of this GlanceShowImageListResponseBody.
 
         如果镜像支持XEN虚拟化下HANA类型，取值为true。否则，无需添加该属性。该属性与“__support_xen”和“__support_kvm”属性不共存。
 
-        :param support_xen_hana: The support_xen_hana of this GlanceShowImageResponseBody.
+        :param support_xen_hana: The support_xen_hana of this GlanceShowImageListResponseBody.
         :type support_xen_hana: str
         """
         self._support_xen_hana = support_xen_hana
 
     @property
     def checksum(self):
-        """Gets the checksum of this GlanceShowImageResponseBody.
+        """Gets the checksum of this GlanceShowImageListResponseBody.
 
         目前暂时不使用。
 
-        :return: The checksum of this GlanceShowImageResponseBody.
+        :return: The checksum of this GlanceShowImageListResponseBody.
         :rtype: str
         """
         return self._checksum
 
     @checksum.setter
     def checksum(self, checksum):
-        """Sets the checksum of this GlanceShowImageResponseBody.
+        """Sets the checksum of this GlanceShowImageListResponseBody.
 
         目前暂时不使用。
 
-        :param checksum: The checksum of this GlanceShowImageResponseBody.
+        :param checksum: The checksum of this GlanceShowImageListResponseBody.
         :type checksum: str
         """
         self._checksum = checksum
 
     @property
     def container_format(self):
-        """Gets the container_format of this GlanceShowImageResponseBody.
+        """Gets the container_format of this GlanceShowImageListResponseBody.
 
         容器类型。
 
-        :return: The container_format of this GlanceShowImageResponseBody.
+        :return: The container_format of this GlanceShowImageListResponseBody.
         :rtype: str
         """
         return self._container_format
 
     @container_format.setter
     def container_format(self, container_format):
-        """Sets the container_format of this GlanceShowImageResponseBody.
+        """Sets the container_format of this GlanceShowImageListResponseBody.
 
         容器类型。
 
-        :param container_format: The container_format of this GlanceShowImageResponseBody.
+        :param container_format: The container_format of this GlanceShowImageListResponseBody.
         :type container_format: str
         """
         self._container_format = container_format
 
     @property
     def created_at(self):
-        """Gets the created_at of this GlanceShowImageResponseBody.
+        """Gets the created_at of this GlanceShowImageListResponseBody.
 
         创建时间。格式为UTC时间。
 
-        :return: The created_at of this GlanceShowImageResponseBody.
+        :return: The created_at of this GlanceShowImageListResponseBody.
         :rtype: str
         """
         return self._created_at
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this GlanceShowImageResponseBody.
+        """Sets the created_at of this GlanceShowImageListResponseBody.
 
         创建时间。格式为UTC时间。
 
-        :param created_at: The created_at of this GlanceShowImageResponseBody.
+        :param created_at: The created_at of this GlanceShowImageListResponseBody.
         :type created_at: str
         """
         self._created_at = created_at
 
     @property
     def disk_format(self):
-        """Gets the disk_format of this GlanceShowImageResponseBody.
+        """Gets the disk_format of this GlanceShowImageListResponseBody.
 
         镜像的格式，目前支持vhd，zvhd、raw，qcow2,zvhd2。默认值是vhd。
 
-        :return: The disk_format of this GlanceShowImageResponseBody.
+        :return: The disk_format of this GlanceShowImageListResponseBody.
         :rtype: str
         """
         return self._disk_format
 
     @disk_format.setter
     def disk_format(self, disk_format):
-        """Sets the disk_format of this GlanceShowImageResponseBody.
+        """Sets the disk_format of this GlanceShowImageListResponseBody.
 
         镜像的格式，目前支持vhd，zvhd、raw，qcow2,zvhd2。默认值是vhd。
 
-        :param disk_format: The disk_format of this GlanceShowImageResponseBody.
+        :param disk_format: The disk_format of this GlanceShowImageListResponseBody.
         :type disk_format: str
         """
         self._disk_format = disk_format
 
     @property
     def file(self):
-        """Gets the file of this GlanceShowImageResponseBody.
+        """Gets the file of this GlanceShowImageListResponseBody.
 
         镜像文件下载和上传链接。
 
-        :return: The file of this GlanceShowImageResponseBody.
+        :return: The file of this GlanceShowImageListResponseBody.
         :rtype: str
         """
         return self._file
 
     @file.setter
     def file(self, file):
-        """Sets the file of this GlanceShowImageResponseBody.
+        """Sets the file of this GlanceShowImageListResponseBody.
 
         镜像文件下载和上传链接。
 
-        :param file: The file of this GlanceShowImageResponseBody.
+        :param file: The file of this GlanceShowImageListResponseBody.
         :type file: str
         """
         self._file = file
 
     @property
     def id(self):
-        """Gets the id of this GlanceShowImageResponseBody.
+        """Gets the id of this GlanceShowImageListResponseBody.
 
         镜像ID。
 
-        :return: The id of this GlanceShowImageResponseBody.
+        :return: The id of this GlanceShowImageListResponseBody.
         :rtype: str
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        """Sets the id of this GlanceShowImageResponseBody.
+        """Sets the id of this GlanceShowImageListResponseBody.
 
         镜像ID。
 
-        :param id: The id of this GlanceShowImageResponseBody.
+        :param id: The id of this GlanceShowImageListResponseBody.
         :type id: str
         """
         self._id = id
 
     @property
     def min_disk(self):
-        """Gets the min_disk of this GlanceShowImageResponseBody.
+        """Gets the min_disk of this GlanceShowImageListResponseBody.
 
         镜像运行需要的最小磁盘容量，单位为GB 
 
-        :return: The min_disk of this GlanceShowImageResponseBody.
+        :return: The min_disk of this GlanceShowImageListResponseBody.
         :rtype: int
         """
         return self._min_disk
 
     @min_disk.setter
     def min_disk(self, min_disk):
-        """Sets the min_disk of this GlanceShowImageResponseBody.
+        """Sets the min_disk of this GlanceShowImageListResponseBody.
 
         镜像运行需要的最小磁盘容量，单位为GB 
 
-        :param min_disk: The min_disk of this GlanceShowImageResponseBody.
+        :param min_disk: The min_disk of this GlanceShowImageListResponseBody.
         :type min_disk: int
         """
         self._min_disk = min_disk
 
     @property
     def min_ram(self):
-        """Gets the min_ram of this GlanceShowImageResponseBody.
+        """Gets the min_ram of this GlanceShowImageListResponseBody.
 
         镜像运行最小内存，单位为MB。
 
-        :return: The min_ram of this GlanceShowImageResponseBody.
+        :return: The min_ram of this GlanceShowImageListResponseBody.
         :rtype: int
         """
         return self._min_ram
 
     @min_ram.setter
     def min_ram(self, min_ram):
-        """Sets the min_ram of this GlanceShowImageResponseBody.
+        """Sets the min_ram of this GlanceShowImageListResponseBody.
 
         镜像运行最小内存，单位为MB。
 
-        :param min_ram: The min_ram of this GlanceShowImageResponseBody.
+        :param min_ram: The min_ram of this GlanceShowImageListResponseBody.
         :type min_ram: int
         """
         self._min_ram = min_ram
 
     @property
     def name(self):
-        """Gets the name of this GlanceShowImageResponseBody.
+        """Gets the name of this GlanceShowImageListResponseBody.
 
         镜像名称。
 
-        :return: The name of this GlanceShowImageResponseBody.
+        :return: The name of this GlanceShowImageListResponseBody.
         :rtype: str
         """
         return self._name
 
     @name.setter
     def name(self, name):
-        """Sets the name of this GlanceShowImageResponseBody.
+        """Sets the name of this GlanceShowImageListResponseBody.
 
         镜像名称。
 
-        :param name: The name of this GlanceShowImageResponseBody.
+        :param name: The name of this GlanceShowImageListResponseBody.
         :type name: str
         """
         self._name = name
 
     @property
     def owner(self):
-        """Gets the owner of this GlanceShowImageResponseBody.
+        """Gets the owner of this GlanceShowImageListResponseBody.
 
         镜像属于哪个租户。
 
-        :return: The owner of this GlanceShowImageResponseBody.
+        :return: The owner of this GlanceShowImageListResponseBody.
         :rtype: str
         """
         return self._owner
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this GlanceShowImageResponseBody.
+        """Sets the owner of this GlanceShowImageListResponseBody.
 
         镜像属于哪个租户。
 
-        :param owner: The owner of this GlanceShowImageResponseBody.
+        :param owner: The owner of this GlanceShowImageListResponseBody.
         :type owner: str
         """
         self._owner = owner
 
     @property
     def protected(self):
-        """Gets the protected of this GlanceShowImageResponseBody.
+        """Gets the protected of this GlanceShowImageListResponseBody.
 
         是否是受保护的，受保护的镜像不允许删除。取值为true或false。
 
-        :return: The protected of this GlanceShowImageResponseBody.
+        :return: The protected of this GlanceShowImageListResponseBody.
         :rtype: bool
         """
         return self._protected
 
     @protected.setter
     def protected(self, protected):
-        """Sets the protected of this GlanceShowImageResponseBody.
+        """Sets the protected of this GlanceShowImageListResponseBody.
 
         是否是受保护的，受保护的镜像不允许删除。取值为true或false。
 
-        :param protected: The protected of this GlanceShowImageResponseBody.
+        :param protected: The protected of this GlanceShowImageListResponseBody.
         :type protected: bool
         """
         self._protected = protected
 
     @property
     def schema(self):
-        """Gets the schema of this GlanceShowImageResponseBody.
+        """Gets the schema of this GlanceShowImageListResponseBody.
 
         镜像视图。
 
-        :return: The schema of this GlanceShowImageResponseBody.
+        :return: The schema of this GlanceShowImageListResponseBody.
         :rtype: str
         """
         return self._schema
 
     @schema.setter
     def schema(self, schema):
-        """Sets the schema of this GlanceShowImageResponseBody.
+        """Sets the schema of this GlanceShowImageListResponseBody.
 
         镜像视图。
 
-        :param schema: The schema of this GlanceShowImageResponseBody.
+        :param schema: The schema of this GlanceShowImageListResponseBody.
         :type schema: str
         """
         self._schema = schema
 
     @property
     def _self(self):
-        """Gets the _self of this GlanceShowImageResponseBody.
+        """Gets the _self of this GlanceShowImageListResponseBody.
 
         镜像链接信息。
 
-        :return: The _self of this GlanceShowImageResponseBody.
+        :return: The _self of this GlanceShowImageListResponseBody.
         :rtype: str
         """
         return self.__self
 
     @_self.setter
     def _self(self, _self):
-        """Sets the _self of this GlanceShowImageResponseBody.
+        """Sets the _self of this GlanceShowImageListResponseBody.
 
         镜像链接信息。
 
-        :param _self: The _self of this GlanceShowImageResponseBody.
+        :param _self: The _self of this GlanceShowImageListResponseBody.
         :type _self: str
         """
         self.__self = _self
 
     @property
     def size(self):
-        """Gets the size of this GlanceShowImageResponseBody.
+        """Gets the size of this GlanceShowImageListResponseBody.
 
         目前暂时不使用。
 
-        :return: The size of this GlanceShowImageResponseBody.
+        :return: The size of this GlanceShowImageListResponseBody.
         :rtype: int
         """
         return self._size
 
     @size.setter
     def size(self, size):
-        """Sets the size of this GlanceShowImageResponseBody.
+        """Sets the size of this GlanceShowImageListResponseBody.
 
         目前暂时不使用。
 
-        :param size: The size of this GlanceShowImageResponseBody.
+        :param size: The size of this GlanceShowImageListResponseBody.
         :type size: int
         """
         self._size = size
 
     @property
     def status(self):
-        """Gets the status of this GlanceShowImageResponseBody.
+        """Gets the status of this GlanceShowImageListResponseBody.
 
         镜像状态。取值如下：queued：表示镜像元数据已经创建成功，等待上传镜像文件。saving：表示镜像正在上传文件到后端存储。deleted：表示镜像已经删除。killed：表示镜像上传错误。active：表示镜像可以正常使用。
 
-        :return: The status of this GlanceShowImageResponseBody.
+        :return: The status of this GlanceShowImageListResponseBody.
         :rtype: str
         """
         return self._status
 
     @status.setter
     def status(self, status):
-        """Sets the status of this GlanceShowImageResponseBody.
+        """Sets the status of this GlanceShowImageListResponseBody.
 
         镜像状态。取值如下：queued：表示镜像元数据已经创建成功，等待上传镜像文件。saving：表示镜像正在上传文件到后端存储。deleted：表示镜像已经删除。killed：表示镜像上传错误。active：表示镜像可以正常使用。
 
-        :param status: The status of this GlanceShowImageResponseBody.
+        :param status: The status of this GlanceShowImageListResponseBody.
         :type status: str
         """
         self._status = status
 
     @property
     def tags(self):
-        """Gets the tags of this GlanceShowImageResponseBody.
+        """Gets the tags of this GlanceShowImageListResponseBody.
 
         镜像标签列表，提供用户可以自定义管理私有镜像的能力。用户可以通过镜像标签接口为每个镜像增加不同的标签，在查询接口中可以根据标签进行过滤。
 
-        :return: The tags of this GlanceShowImageResponseBody.
+        :return: The tags of this GlanceShowImageListResponseBody.
         :rtype: list[str]
         """
         return self._tags
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this GlanceShowImageResponseBody.
+        """Sets the tags of this GlanceShowImageListResponseBody.
 
         镜像标签列表，提供用户可以自定义管理私有镜像的能力。用户可以通过镜像标签接口为每个镜像增加不同的标签，在查询接口中可以根据标签进行过滤。
 
-        :param tags: The tags of this GlanceShowImageResponseBody.
+        :param tags: The tags of this GlanceShowImageListResponseBody.
         :type tags: list[str]
         """
         self._tags = tags
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this GlanceShowImageResponseBody.
+        """Gets the updated_at of this GlanceShowImageListResponseBody.
 
         更新时间。格式为UTC时间。
 
-        :return: The updated_at of this GlanceShowImageResponseBody.
+        :return: The updated_at of this GlanceShowImageListResponseBody.
         :rtype: str
         """
         return self._updated_at
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this GlanceShowImageResponseBody.
+        """Sets the updated_at of this GlanceShowImageListResponseBody.
 
         更新时间。格式为UTC时间。
 
-        :param updated_at: The updated_at of this GlanceShowImageResponseBody.
+        :param updated_at: The updated_at of this GlanceShowImageListResponseBody.
         :type updated_at: str
         """
         self._updated_at = updated_at
 
     @property
     def virtual_env_type(self):
-        """Gets the virtual_env_type of this GlanceShowImageResponseBody.
+        """Gets the virtual_env_type of this GlanceShowImageListResponseBody.
 
         镜像使用环境类型：FusionCompute，Ironic，DataImage。
 
-        :return: The virtual_env_type of this GlanceShowImageResponseBody.
+        :return: The virtual_env_type of this GlanceShowImageListResponseBody.
         :rtype: str
         """
         return self._virtual_env_type
 
     @virtual_env_type.setter
     def virtual_env_type(self, virtual_env_type):
-        """Sets the virtual_env_type of this GlanceShowImageResponseBody.
+        """Sets the virtual_env_type of this GlanceShowImageListResponseBody.
 
         镜像使用环境类型：FusionCompute，Ironic，DataImage。
 
-        :param virtual_env_type: The virtual_env_type of this GlanceShowImageResponseBody.
+        :param virtual_env_type: The virtual_env_type of this GlanceShowImageListResponseBody.
         :type virtual_env_type: str
         """
         self._virtual_env_type = virtual_env_type
 
     @property
     def virtual_size(self):
-        """Gets the virtual_size of this GlanceShowImageResponseBody.
+        """Gets the virtual_size of this GlanceShowImageListResponseBody.
 
         目前暂时不使用。
 
-        :return: The virtual_size of this GlanceShowImageResponseBody.
+        :return: The virtual_size of this GlanceShowImageListResponseBody.
         :rtype: int
         """
         return self._virtual_size
 
     @virtual_size.setter
     def virtual_size(self, virtual_size):
-        """Sets the virtual_size of this GlanceShowImageResponseBody.
+        """Sets the virtual_size of this GlanceShowImageListResponseBody.
 
         目前暂时不使用。
 
-        :param virtual_size: The virtual_size of this GlanceShowImageResponseBody.
+        :param virtual_size: The virtual_size of this GlanceShowImageListResponseBody.
         :type virtual_size: int
         """
         self._virtual_size = virtual_size
 
     @property
     def visibility(self):
-        """Gets the visibility of this GlanceShowImageResponseBody.
+        """Gets the visibility of this GlanceShowImageListResponseBody.
 
         是否被其他租户可见，取值如下：private：私有镜像public：公共镜像shared：共享镜像
 
-        :return: The visibility of this GlanceShowImageResponseBody.
+        :return: The visibility of this GlanceShowImageListResponseBody.
         :rtype: str
         """
         return self._visibility
 
     @visibility.setter
     def visibility(self, visibility):
-        """Sets the visibility of this GlanceShowImageResponseBody.
+        """Sets the visibility of this GlanceShowImageListResponseBody.
 
         是否被其他租户可见，取值如下：private：私有镜像public：公共镜像shared：共享镜像
 
-        :param visibility: The visibility of this GlanceShowImageResponseBody.
+        :param visibility: The visibility of this GlanceShowImageListResponseBody.
         :type visibility: str
         """
         self._visibility = visibility
 
     @property
     def support_fc_inject(self):
-        """Gets the support_fc_inject of this GlanceShowImageResponseBody.
+        """Gets the support_fc_inject of this GlanceShowImageListResponseBody.
 
         表示当前镜像支持CloudInit密码/密钥注入方式，建议设置为\"true\"或者\"false\"。如果取值为\"true\"，表示该镜像不支持CloudInit注入密码/密钥，其他取值时表示支持CloudInit注入密钥/密码。
 
-        :return: The support_fc_inject of this GlanceShowImageResponseBody.
+        :return: The support_fc_inject of this GlanceShowImageListResponseBody.
         :rtype: str
         """
         return self._support_fc_inject
 
     @support_fc_inject.setter
     def support_fc_inject(self, support_fc_inject):
-        """Sets the support_fc_inject of this GlanceShowImageResponseBody.
+        """Sets the support_fc_inject of this GlanceShowImageListResponseBody.
 
         表示当前镜像支持CloudInit密码/密钥注入方式，建议设置为\"true\"或者\"false\"。如果取值为\"true\"，表示该镜像不支持CloudInit注入密码/密钥，其他取值时表示支持CloudInit注入密钥/密码。
 
-        :param support_fc_inject: The support_fc_inject of this GlanceShowImageResponseBody.
+        :param support_fc_inject: The support_fc_inject of this GlanceShowImageListResponseBody.
         :type support_fc_inject: str
         """
         self._support_fc_inject = support_fc_inject
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this GlanceShowImageResponseBody.
+        """Gets the enterprise_project_id of this GlanceShowImageListResponseBody.
 
         表示当前镜像所属的企业项目。 取值为0或无该值，表示属于default企业项目。 取值为UUID，表示属于该UUID对应的企业项目。 关于企业项目ID的获取及企业项目特性的详细信息，请参考《企业管理用户指南》。
 
-        :return: The enterprise_project_id of this GlanceShowImageResponseBody.
+        :return: The enterprise_project_id of this GlanceShowImageListResponseBody.
         :rtype: str
         """
         return self._enterprise_project_id
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this GlanceShowImageResponseBody.
+        """Sets the enterprise_project_id of this GlanceShowImageListResponseBody.
 
         表示当前镜像所属的企业项目。 取值为0或无该值，表示属于default企业项目。 取值为UUID，表示属于该UUID对应的企业项目。 关于企业项目ID的获取及企业项目特性的详细信息，请参考《企业管理用户指南》。
 
-        :param enterprise_project_id: The enterprise_project_id of this GlanceShowImageResponseBody.
+        :param enterprise_project_id: The enterprise_project_id of this GlanceShowImageListResponseBody.
         :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
     @property
+    def sys_enterprise_project_id(self):
+        """Gets the sys_enterprise_project_id of this GlanceShowImageListResponseBody.
+
+        表示当前镜像所属的企业项目。 取值为0或无该值，表示属于default企业项目。 取值为UUID，表示属于该UUID对应的企业项目。 关于企业项目ID的获取及企业项目特性的详细信息，请参考《企业管理用户指南》。
+
+        :return: The sys_enterprise_project_id of this GlanceShowImageListResponseBody.
+        :rtype: str
+        """
+        return self._sys_enterprise_project_id
+
+    @sys_enterprise_project_id.setter
+    def sys_enterprise_project_id(self, sys_enterprise_project_id):
+        """Sets the sys_enterprise_project_id of this GlanceShowImageListResponseBody.
+
+        表示当前镜像所属的企业项目。 取值为0或无该值，表示属于default企业项目。 取值为UUID，表示属于该UUID对应的企业项目。 关于企业项目ID的获取及企业项目特性的详细信息，请参考《企业管理用户指南》。
+
+        :param sys_enterprise_project_id: The sys_enterprise_project_id of this GlanceShowImageListResponseBody.
+        :type sys_enterprise_project_id: str
+        """
+        self._sys_enterprise_project_id = sys_enterprise_project_id
+
+    @property
     def hw_firmware_type(self):
-        """Gets the hw_firmware_type of this GlanceShowImageResponseBody.
+        """Gets the hw_firmware_type of this GlanceShowImageListResponseBody.
 
         云主机云服务器的启动方式。目前支持： bios：表示bios引导启动。 uefi：表示uefi引导启动。
 
-        :return: The hw_firmware_type of this GlanceShowImageResponseBody.
+        :return: The hw_firmware_type of this GlanceShowImageListResponseBody.
         :rtype: str
         """
         return self._hw_firmware_type
 
     @hw_firmware_type.setter
     def hw_firmware_type(self, hw_firmware_type):
-        """Sets the hw_firmware_type of this GlanceShowImageResponseBody.
+        """Sets the hw_firmware_type of this GlanceShowImageListResponseBody.
 
         云主机云服务器的启动方式。目前支持： bios：表示bios引导启动。 uefi：表示uefi引导启动。
 
-        :param hw_firmware_type: The hw_firmware_type of this GlanceShowImageResponseBody.
+        :param hw_firmware_type: The hw_firmware_type of this GlanceShowImageListResponseBody.
         :type hw_firmware_type: str
         """
         self._hw_firmware_type = hw_firmware_type
 
     @property
     def support_arm(self):
-        """Gets the support_arm of this GlanceShowImageResponseBody.
+        """Gets the support_arm of this GlanceShowImageListResponseBody.
 
         是否为ARM架构类型的镜像，取值为“true”或者“false”。
 
-        :return: The support_arm of this GlanceShowImageResponseBody.
+        :return: The support_arm of this GlanceShowImageListResponseBody.
         :rtype: str
         """
         return self._support_arm
 
     @support_arm.setter
     def support_arm(self, support_arm):
-        """Sets the support_arm of this GlanceShowImageResponseBody.
+        """Sets the support_arm of this GlanceShowImageListResponseBody.
 
         是否为ARM架构类型的镜像，取值为“true”或者“false”。
 
-        :param support_arm: The support_arm of this GlanceShowImageResponseBody.
+        :param support_arm: The support_arm of this GlanceShowImageListResponseBody.
         :type support_arm: str
         """
         self._support_arm = support_arm
 
     @property
     def is_offshelved(self):
-        """Gets the is_offshelved of this GlanceShowImageResponseBody.
+        """Gets the is_offshelved of this GlanceShowImageListResponseBody.
 
         表示当前市场镜像是否下架。 true：已下架 false：未下架
 
-        :return: The is_offshelved of this GlanceShowImageResponseBody.
+        :return: The is_offshelved of this GlanceShowImageListResponseBody.
         :rtype: str
         """
         return self._is_offshelved
 
     @is_offshelved.setter
     def is_offshelved(self, is_offshelved):
-        """Sets the is_offshelved of this GlanceShowImageResponseBody.
+        """Sets the is_offshelved of this GlanceShowImageListResponseBody.
 
         表示当前市场镜像是否下架。 true：已下架 false：未下架
 
-        :param is_offshelved: The is_offshelved of this GlanceShowImageResponseBody.
+        :param is_offshelved: The is_offshelved of this GlanceShowImageListResponseBody.
         :type is_offshelved: str
         """
         self._is_offshelved = is_offshelved
 
     @property
     def lazyloading(self):
-        """Gets the lazyloading of this GlanceShowImageResponseBody.
+        """Gets the lazyloading of this GlanceShowImageListResponseBody.
 
         镜像是否支持延迟加载。取值为True或False。
 
-        :return: The lazyloading of this GlanceShowImageResponseBody.
+        :return: The lazyloading of this GlanceShowImageListResponseBody.
         :rtype: str
         """
         return self._lazyloading
 
     @lazyloading.setter
     def lazyloading(self, lazyloading):
-        """Sets the lazyloading of this GlanceShowImageResponseBody.
+        """Sets the lazyloading of this GlanceShowImageListResponseBody.
 
         镜像是否支持延迟加载。取值为True或False。
 
-        :param lazyloading: The lazyloading of this GlanceShowImageResponseBody.
+        :param lazyloading: The lazyloading of this GlanceShowImageListResponseBody.
         :type lazyloading: str
         """
         self._lazyloading = lazyloading
 
     @property
     def os_feature_list(self):
-        """Gets the os_feature_list of this GlanceShowImageResponseBody.
+        """Gets the os_feature_list of this GlanceShowImageListResponseBody.
 
         镜像附加属性。该属性采用JSON格式来标识镜像支持的高级特性清单。
 
-        :return: The os_feature_list of this GlanceShowImageResponseBody.
+        :return: The os_feature_list of this GlanceShowImageListResponseBody.
         :rtype: str
         """
         return self._os_feature_list
 
     @os_feature_list.setter
     def os_feature_list(self, os_feature_list):
-        """Sets the os_feature_list of this GlanceShowImageResponseBody.
+        """Sets the os_feature_list of this GlanceShowImageListResponseBody.
 
         镜像附加属性。该属性采用JSON格式来标识镜像支持的高级特性清单。
 
-        :param os_feature_list: The os_feature_list of this GlanceShowImageResponseBody.
+        :param os_feature_list: The os_feature_list of this GlanceShowImageListResponseBody.
         :type os_feature_list: str
         """
         self._os_feature_list = os_feature_list
 
     @property
     def root_origin(self):
-        """Gets the root_origin of this GlanceShowImageResponseBody.
+        """Gets the root_origin of this GlanceShowImageListResponseBody.
 
         表示当前镜像来源是从外部导入。取值：file。
 
-        :return: The root_origin of this GlanceShowImageResponseBody.
+        :return: The root_origin of this GlanceShowImageListResponseBody.
         :rtype: str
         """
         return self._root_origin
 
     @root_origin.setter
     def root_origin(self, root_origin):
-        """Sets the root_origin of this GlanceShowImageResponseBody.
+        """Sets the root_origin of this GlanceShowImageListResponseBody.
 
         表示当前镜像来源是从外部导入。取值：file。
 
-        :param root_origin: The root_origin of this GlanceShowImageResponseBody.
+        :param root_origin: The root_origin of this GlanceShowImageListResponseBody.
         :type root_origin: str
         """
         self._root_origin = root_origin
 
     @property
     def sequence_num(self):
-        """Gets the sequence_num of this GlanceShowImageResponseBody.
+        """Gets the sequence_num of this GlanceShowImageListResponseBody.
 
         目前暂时不用
 
-        :return: The sequence_num of this GlanceShowImageResponseBody.
+        :return: The sequence_num of this GlanceShowImageListResponseBody.
         :rtype: str
         """
         return self._sequence_num
 
     @sequence_num.setter
     def sequence_num(self, sequence_num):
-        """Sets the sequence_num of this GlanceShowImageResponseBody.
+        """Sets the sequence_num of this GlanceShowImageListResponseBody.
 
         目前暂时不用
 
-        :param sequence_num: The sequence_num of this GlanceShowImageResponseBody.
+        :param sequence_num: The sequence_num of this GlanceShowImageListResponseBody.
         :type sequence_num: str
         """
         self._sequence_num = sequence_num
 
     @property
     def support_agent_list(self):
-        """Gets the support_agent_list of this GlanceShowImageResponseBody.
+        """Gets the support_agent_list of this GlanceShowImageListResponseBody.
 
         镜像是否支持企业主机安全或主机监控。 hss：企业主机安全 ces：主机监控
 
-        :return: The support_agent_list of this GlanceShowImageResponseBody.
+        :return: The support_agent_list of this GlanceShowImageListResponseBody.
         :rtype: str
         """
         return self._support_agent_list
 
     @support_agent_list.setter
     def support_agent_list(self, support_agent_list):
-        """Sets the support_agent_list of this GlanceShowImageResponseBody.
+        """Sets the support_agent_list of this GlanceShowImageListResponseBody.
 
         镜像是否支持企业主机安全或主机监控。 hss：企业主机安全 ces：主机监控
 
-        :param support_agent_list: The support_agent_list of this GlanceShowImageResponseBody.
+        :param support_agent_list: The support_agent_list of this GlanceShowImageListResponseBody.
         :type support_agent_list: str
         """
         self._support_agent_list = support_agent_list
 
     @property
     def system__cmkid(self):
-        """Gets the system__cmkid of this GlanceShowImageResponseBody.
+        """Gets the system__cmkid of this GlanceShowImageListResponseBody.
 
         加密镜像所使用的密钥ID。
 
-        :return: The system__cmkid of this GlanceShowImageResponseBody.
+        :return: The system__cmkid of this GlanceShowImageListResponseBody.
         :rtype: str
         """
         return self._system__cmkid
 
     @system__cmkid.setter
     def system__cmkid(self, system__cmkid):
-        """Sets the system__cmkid of this GlanceShowImageResponseBody.
+        """Sets the system__cmkid of this GlanceShowImageListResponseBody.
 
         加密镜像所使用的密钥ID。
 
-        :param system__cmkid: The system__cmkid of this GlanceShowImageResponseBody.
+        :param system__cmkid: The system__cmkid of this GlanceShowImageListResponseBody.
         :type system__cmkid: str
         """
         self._system__cmkid = system__cmkid
 
     @property
     def active_at(self):
-        """Gets the active_at of this GlanceShowImageResponseBody.
+        """Gets the active_at of this GlanceShowImageListResponseBody.
 
         镜像状态变为正常的时间。
 
-        :return: The active_at of this GlanceShowImageResponseBody.
+        :return: The active_at of this GlanceShowImageListResponseBody.
         :rtype: str
         """
         return self._active_at
 
     @active_at.setter
     def active_at(self, active_at):
-        """Sets the active_at of this GlanceShowImageResponseBody.
+        """Sets the active_at of this GlanceShowImageListResponseBody.
 
         镜像状态变为正常的时间。
 
-        :param active_at: The active_at of this GlanceShowImageResponseBody.
+        :param active_at: The active_at of this GlanceShowImageListResponseBody.
         :type active_at: str
         """
         self._active_at = active_at
 
     @property
     def hw_vif_multiqueue_enabled(self):
-        """Gets the hw_vif_multiqueue_enabled of this GlanceShowImageResponseBody.
+        """Gets the hw_vif_multiqueue_enabled of this GlanceShowImageListResponseBody.
 
         镜像是否支持网卡多队列。取值为true或者false。
 
-        :return: The hw_vif_multiqueue_enabled of this GlanceShowImageResponseBody.
+        :return: The hw_vif_multiqueue_enabled of this GlanceShowImageListResponseBody.
         :rtype: str
         """
         return self._hw_vif_multiqueue_enabled
 
     @hw_vif_multiqueue_enabled.setter
     def hw_vif_multiqueue_enabled(self, hw_vif_multiqueue_enabled):
-        """Sets the hw_vif_multiqueue_enabled of this GlanceShowImageResponseBody.
+        """Sets the hw_vif_multiqueue_enabled of this GlanceShowImageListResponseBody.
 
         镜像是否支持网卡多队列。取值为true或者false。
 
-        :param hw_vif_multiqueue_enabled: The hw_vif_multiqueue_enabled of this GlanceShowImageResponseBody.
+        :param hw_vif_multiqueue_enabled: The hw_vif_multiqueue_enabled of this GlanceShowImageListResponseBody.
         :type hw_vif_multiqueue_enabled: str
         """
         self._hw_vif_multiqueue_enabled = hw_vif_multiqueue_enabled
 
     @property
     def max_ram(self):
-        """Gets the max_ram of this GlanceShowImageResponseBody.
+        """Gets the max_ram of this GlanceShowImageListResponseBody.
 
         镜像支持的最大内存，单位为MB。取值可以参考云服务器规格限制，一般不设置。
 
-        :return: The max_ram of this GlanceShowImageResponseBody.
+        :return: The max_ram of this GlanceShowImageListResponseBody.
         :rtype: str
         """
         return self._max_ram
 
     @max_ram.setter
     def max_ram(self, max_ram):
-        """Sets the max_ram of this GlanceShowImageResponseBody.
+        """Sets the max_ram of this GlanceShowImageListResponseBody.
 
         镜像支持的最大内存，单位为MB。取值可以参考云服务器规格限制，一般不设置。
 
-        :param max_ram: The max_ram of this GlanceShowImageResponseBody.
+        :param max_ram: The max_ram of this GlanceShowImageListResponseBody.
         :type max_ram: str
         """
         self._max_ram = max_ram
 
     @property
     def image_location(self):
-        """Gets the image_location of this GlanceShowImageResponseBody.
+        """Gets the image_location of this GlanceShowImageListResponseBody.
 
         镜像的存储位置。
 
-        :return: The image_location of this GlanceShowImageResponseBody.
+        :return: The image_location of this GlanceShowImageListResponseBody.
         :rtype: str
         """
         return self._image_location
 
     @image_location.setter
     def image_location(self, image_location):
-        """Sets the image_location of this GlanceShowImageResponseBody.
+        """Sets the image_location of this GlanceShowImageListResponseBody.
 
         镜像的存储位置。
 
-        :param image_location: The image_location of this GlanceShowImageResponseBody.
+        :param image_location: The image_location of this GlanceShowImageListResponseBody.
         :type image_location: str
         """
         self._image_location = image_location
 
     @property
     def is_config_init(self):
-        """Gets the is_config_init of this GlanceShowImageResponseBody.
+        """Gets the is_config_init of this GlanceShowImageListResponseBody.
 
         是否完成了初始化配置。取值为true或false
 
-        :return: The is_config_init of this GlanceShowImageResponseBody.
+        :return: The is_config_init of this GlanceShowImageListResponseBody.
         :rtype: str
         """
         return self._is_config_init
 
     @is_config_init.setter
     def is_config_init(self, is_config_init):
-        """Sets the is_config_init of this GlanceShowImageResponseBody.
+        """Sets the is_config_init of this GlanceShowImageListResponseBody.
 
         是否完成了初始化配置。取值为true或false
 
-        :param is_config_init: The is_config_init of this GlanceShowImageResponseBody.
+        :param is_config_init: The is_config_init of this GlanceShowImageListResponseBody.
         :type is_config_init: str
         """
         self._is_config_init = is_config_init
 
     @property
     def account_code(self):
-        """Gets the account_code of this GlanceShowImageResponseBody.
+        """Gets the account_code of this GlanceShowImageListResponseBody.
 
         收费镜像标识。
 
-        :return: The account_code of this GlanceShowImageResponseBody.
+        :return: The account_code of this GlanceShowImageListResponseBody.
         :rtype: str
         """
         return self._account_code
 
     @account_code.setter
     def account_code(self, account_code):
-        """Sets the account_code of this GlanceShowImageResponseBody.
+        """Sets the account_code of this GlanceShowImageListResponseBody.
 
         收费镜像标识。
 
-        :param account_code: The account_code of this GlanceShowImageResponseBody.
+        :param account_code: The account_code of this GlanceShowImageListResponseBody.
         :type account_code: str
         """
         self._account_code = account_code
 
     @property
     def support_amd(self):
-        """Gets the support_amd of this GlanceShowImageResponseBody.
+        """Gets the support_amd of this GlanceShowImageListResponseBody.
 
         是否是AMD架构类型的镜像。取值为“true”或者“false”。
 
-        :return: The support_amd of this GlanceShowImageResponseBody.
+        :return: The support_amd of this GlanceShowImageListResponseBody.
         :rtype: str
         """
         return self._support_amd
 
     @support_amd.setter
     def support_amd(self, support_amd):
-        """Sets the support_amd of this GlanceShowImageResponseBody.
+        """Sets the support_amd of this GlanceShowImageListResponseBody.
 
         是否是AMD架构类型的镜像。取值为“true”或者“false”。
 
-        :param support_amd: The support_amd of this GlanceShowImageResponseBody.
+        :param support_amd: The support_amd of this GlanceShowImageListResponseBody.
         :type support_amd: str
         """
         self._support_amd = support_amd
@@ -1794,7 +1823,7 @@ class GlanceShowImageResponseBody:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, GlanceShowImageResponseBody):
+        if not isinstance(other, GlanceShowImageListResponseBody):
             return False
 
         return self.__dict__ == other.__dict__

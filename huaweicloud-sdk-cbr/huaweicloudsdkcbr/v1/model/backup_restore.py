@@ -21,7 +21,8 @@ class BackupRestore:
         'power_on': 'bool',
         'server_id': 'str',
         'volume_id': 'str',
-        'resource_id': 'str'
+        'resource_id': 'str',
+        'details': 'RestoreDetails'
     }
 
     attribute_map = {
@@ -29,10 +30,11 @@ class BackupRestore:
         'power_on': 'power_on',
         'server_id': 'server_id',
         'volume_id': 'volume_id',
-        'resource_id': 'resource_id'
+        'resource_id': 'resource_id',
+        'details': 'details'
     }
 
-    def __init__(self, mappings=None, power_on=None, server_id=None, volume_id=None, resource_id=None):
+    def __init__(self, mappings=None, power_on=None, server_id=None, volume_id=None, resource_id=None, details=None):
         """BackupRestore
 
         The model defined in huaweicloud sdk
@@ -47,6 +49,8 @@ class BackupRestore:
         :type volume_id: str
         :param resource_id: 待恢复的目标资源ID
         :type resource_id: str
+        :param details: 
+        :type details: :class:`huaweicloudsdkcbr.v1.RestoreDetails`
         """
         
         
@@ -56,6 +60,7 @@ class BackupRestore:
         self._server_id = None
         self._volume_id = None
         self._resource_id = None
+        self._details = None
         self.discriminator = None
 
         if mappings is not None:
@@ -68,6 +73,8 @@ class BackupRestore:
             self.volume_id = volume_id
         if resource_id is not None:
             self.resource_id = resource_id
+        if details is not None:
+            self.details = details
 
     @property
     def mappings(self):
@@ -178,6 +185,24 @@ class BackupRestore:
         :type resource_id: str
         """
         self._resource_id = resource_id
+
+    @property
+    def details(self):
+        """Gets the details of this BackupRestore.
+
+        :return: The details of this BackupRestore.
+        :rtype: :class:`huaweicloudsdkcbr.v1.RestoreDetails`
+        """
+        return self._details
+
+    @details.setter
+    def details(self, details):
+        """Sets the details of this BackupRestore.
+
+        :param details: The details of this BackupRestore.
+        :type details: :class:`huaweicloudsdkcbr.v1.RestoreDetails`
+        """
+        self._details = details
 
     def to_dict(self):
         """Returns the model properties as a dict"""

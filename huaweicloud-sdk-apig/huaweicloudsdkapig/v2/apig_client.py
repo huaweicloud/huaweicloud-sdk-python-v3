@@ -24,6 +24,64 @@ class ApigClient(Client):
 
         return ClientBuilder(clazz)
 
+    def accept_or_reject_endpoint_connections(self, request):
+        """接受或拒绝终端节点连接
+
+        接受或拒绝实例节点连接。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for AcceptOrRejectEndpointConnections
+        :type request: :class:`huaweicloudsdkapig.v2.AcceptOrRejectEndpointConnectionsRequest`
+        :rtype: :class:`huaweicloudsdkapig.v2.AcceptOrRejectEndpointConnectionsResponse`
+        """
+        return self._accept_or_reject_endpoint_connections_with_http_info(request)
+
+    def _accept_or_reject_endpoint_connections_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = ["x-request-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/vpc-endpoint/connections/action',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='AcceptOrRejectEndpointConnectionsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def add_eip_v2(self, request):
         """实例更新或绑定EIP
 
@@ -77,6 +135,64 @@ class ApigClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='AddEipV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def add_endpoint_permissions(self, request):
+        """批量添加实例终端节点连接白名单
+
+        批量添加实例终端节点连接白名单。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for AddEndpointPermissions
+        :type request: :class:`huaweicloudsdkapig.v2.AddEndpointPermissionsRequest`
+        :rtype: :class:`huaweicloudsdkapig.v2.AddEndpointPermissionsResponse`
+        """
+        return self._add_endpoint_permissions_with_http_info(request)
+
+    def _add_endpoint_permissions_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = ["x-request-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/vpc-endpoint/permissions/batch-add',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='AddEndpointPermissionsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1240,6 +1356,64 @@ class ApigClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='DeleteCustomAuthorizerV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_endpoint_permissions(self, request):
+        """批量删除实例终端节点连接白名单
+
+        批量删除实例终端节点连接白名单。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteEndpointPermissions
+        :type request: :class:`huaweicloudsdkapig.v2.DeleteEndpointPermissionsRequest`
+        :rtype: :class:`huaweicloudsdkapig.v2.DeleteEndpointPermissionsResponse`
+        """
+        return self._delete_endpoint_permissions_with_http_info(request)
+
+    def _delete_endpoint_permissions_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = ["x-request-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/vpc-endpoint/permissions/batch-delete',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteEndpointPermissionsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -2708,6 +2882,134 @@ class ApigClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ListCustomAuthorizersV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_endpoint_connections(self, request):
+        """查询实例终端节点连接列表
+
+        查询实例终端节点连接列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListEndpointConnections
+        :type request: :class:`huaweicloudsdkapig.v2.ListEndpointConnectionsRequest`
+        :rtype: :class:`huaweicloudsdkapig.v2.ListEndpointConnectionsResponse`
+        """
+        return self._list_endpoint_connections_with_http_info(request)
+
+    def _list_endpoint_connections_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+        if 'marker_id' in local_var_params:
+            query_params.append(('marker_id', local_var_params['marker_id']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = ["x-request-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/vpc-endpoint/connections',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListEndpointConnectionsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_endpoint_permissions(self, request):
+        """查询实例的终端节点服务的白名单列表
+
+        查询当前实例终端节点服务的白名单列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListEndpointPermissions
+        :type request: :class:`huaweicloudsdkapig.v2.ListEndpointPermissionsRequest`
+        :rtype: :class:`huaweicloudsdkapig.v2.ListEndpointPermissionsResponse`
+        """
+        return self._list_endpoint_permissions_with_http_info(request)
+
+    def _list_endpoint_permissions_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'permission' in local_var_params:
+            query_params.append(('permission', local_var_params['permission']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = ["x-request-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/vpc-endpoint/permissions',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListEndpointPermissionsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

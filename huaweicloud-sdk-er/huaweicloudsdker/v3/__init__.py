@@ -5,6 +5,8 @@ from __future__ import absolute_import
 from huaweicloudsdker.v3.er_client import ErClient
 from huaweicloudsdker.v3.er_async_client import ErAsyncClient
 
+from huaweicloudsdker.v3.model.accept_attachment_request import AcceptAttachmentRequest
+from huaweicloudsdker.v3.model.accept_attachment_response import AcceptAttachmentResponse
 from huaweicloudsdker.v3.model.associate_route_table_request import AssociateRouteTableRequest
 from huaweicloudsdker.v3.model.associate_route_table_response import AssociateRouteTableResponse
 from huaweicloudsdker.v3.model.association import Association
@@ -93,6 +95,8 @@ from huaweicloudsdker.v3.model.page_info import PageInfo
 from huaweicloudsdker.v3.model.propagation import Propagation
 from huaweicloudsdker.v3.model.propagation_request_body import PropagationRequestBody
 from huaweicloudsdker.v3.model.quota import Quota
+from huaweicloudsdker.v3.model.reject_attachment_request import RejectAttachmentRequest
+from huaweicloudsdker.v3.model.reject_attachment_response import RejectAttachmentResponse
 from huaweicloudsdker.v3.model.route import Route
 from huaweicloudsdker.v3.model.route_attachment import RouteAttachment
 from huaweicloudsdker.v3.model.route_table import RouteTable

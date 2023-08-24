@@ -25,7 +25,8 @@ class CreateCertificateAuthorityRequestBody:
         'path_length': 'int',
         'signature_algorithm': 'str',
         'key_usages': 'list[str]',
-        'crl_configuration': 'CrlConfiguration'
+        'crl_configuration': 'CrlConfiguration',
+        'enterprise_project_id': 'str'
     }
 
     attribute_map = {
@@ -37,10 +38,11 @@ class CreateCertificateAuthorityRequestBody:
         'path_length': 'path_length',
         'signature_algorithm': 'signature_algorithm',
         'key_usages': 'key_usages',
-        'crl_configuration': 'crl_configuration'
+        'crl_configuration': 'crl_configuration',
+        'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, type=None, distinguished_name=None, key_algorithm=None, validity=None, issuer_id=None, path_length=None, signature_algorithm=None, key_usages=None, crl_configuration=None):
+    def __init__(self, type=None, distinguished_name=None, key_algorithm=None, validity=None, issuer_id=None, path_length=None, signature_algorithm=None, key_usages=None, crl_configuration=None, enterprise_project_id=None):
         """CreateCertificateAuthorityRequestBody
 
         The model defined in huaweicloud sdk
@@ -63,6 +65,8 @@ class CreateCertificateAuthorityRequestBody:
         :type key_usages: list[str]
         :param crl_configuration: 
         :type crl_configuration: :class:`huaweicloudsdkccm.v1.CrlConfiguration`
+        :param enterprise_project_id: 企业多项目ID。用户未开通企业多项目时，不需要输入该字段。 用户开通企业多项目时，查询资源可以输入该字段。 若用户不输入该字段，默认查询租户所有有权限的企业多项目下的资源。 此时“enterprise_project_id”取值为“all”。 若用户输入该字段，取值满足以下任一条件.   取值为“all”   取值为“0”   满足正则匹配：“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”
+        :type enterprise_project_id: str
         """
         
         
@@ -76,6 +80,7 @@ class CreateCertificateAuthorityRequestBody:
         self._signature_algorithm = None
         self._key_usages = None
         self._crl_configuration = None
+        self._enterprise_project_id = None
         self.discriminator = None
 
         self.type = type
@@ -93,6 +98,8 @@ class CreateCertificateAuthorityRequestBody:
             self.key_usages = key_usages
         if crl_configuration is not None:
             self.crl_configuration = crl_configuration
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
 
     @property
     def type(self):
@@ -279,6 +286,28 @@ class CreateCertificateAuthorityRequestBody:
         :type crl_configuration: :class:`huaweicloudsdkccm.v1.CrlConfiguration`
         """
         self._crl_configuration = crl_configuration
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this CreateCertificateAuthorityRequestBody.
+
+        企业多项目ID。用户未开通企业多项目时，不需要输入该字段。 用户开通企业多项目时，查询资源可以输入该字段。 若用户不输入该字段，默认查询租户所有有权限的企业多项目下的资源。 此时“enterprise_project_id”取值为“all”。 若用户输入该字段，取值满足以下任一条件.   取值为“all”   取值为“0”   满足正则匹配：“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”
+
+        :return: The enterprise_project_id of this CreateCertificateAuthorityRequestBody.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this CreateCertificateAuthorityRequestBody.
+
+        企业多项目ID。用户未开通企业多项目时，不需要输入该字段。 用户开通企业多项目时，查询资源可以输入该字段。 若用户不输入该字段，默认查询租户所有有权限的企业多项目下的资源。 此时“enterprise_project_id”取值为“all”。 若用户输入该字段，取值满足以下任一条件.   取值为“all”   取值为“0”   满足正则匹配：“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”
+
+        :param enterprise_project_id: The enterprise_project_id of this CreateCertificateAuthorityRequestBody.
+        :type enterprise_project_id: str
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

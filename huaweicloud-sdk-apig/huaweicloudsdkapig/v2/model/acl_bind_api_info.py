@@ -26,7 +26,8 @@ class AclBindApiInfo:
         'bind_id': 'str',
         'group_name': 'str',
         'bind_time': 'datetime',
-        'publish_id': 'str'
+        'publish_id': 'str',
+        'req_method': 'str'
     }
 
     attribute_map = {
@@ -39,10 +40,11 @@ class AclBindApiInfo:
         'bind_id': 'bind_id',
         'group_name': 'group_name',
         'bind_time': 'bind_time',
-        'publish_id': 'publish_id'
+        'publish_id': 'publish_id',
+        'req_method': 'req_method'
     }
 
-    def __init__(self, api_id=None, api_name=None, api_type=None, api_remark=None, env_id=None, env_name=None, bind_id=None, group_name=None, bind_time=None, publish_id=None):
+    def __init__(self, api_id=None, api_name=None, api_type=None, api_remark=None, env_id=None, env_name=None, bind_id=None, group_name=None, bind_time=None, publish_id=None, req_method=None):
         """AclBindApiInfo
 
         The model defined in huaweicloud sdk
@@ -67,6 +69,8 @@ class AclBindApiInfo:
         :type bind_time: datetime
         :param publish_id: API发布记录编号
         :type publish_id: str
+        :param req_method: API请求方法
+        :type req_method: str
         """
         
         
@@ -81,6 +85,7 @@ class AclBindApiInfo:
         self._group_name = None
         self._bind_time = None
         self._publish_id = None
+        self._req_method = None
         self.discriminator = None
 
         if api_id is not None:
@@ -103,6 +108,8 @@ class AclBindApiInfo:
             self.bind_time = bind_time
         if publish_id is not None:
             self.publish_id = publish_id
+        if req_method is not None:
+            self.req_method = req_method
 
     @property
     def api_id(self):
@@ -323,6 +330,28 @@ class AclBindApiInfo:
         :type publish_id: str
         """
         self._publish_id = publish_id
+
+    @property
+    def req_method(self):
+        """Gets the req_method of this AclBindApiInfo.
+
+        API请求方法
+
+        :return: The req_method of this AclBindApiInfo.
+        :rtype: str
+        """
+        return self._req_method
+
+    @req_method.setter
+    def req_method(self, req_method):
+        """Sets the req_method of this AclBindApiInfo.
+
+        API请求方法
+
+        :param req_method: The req_method of this AclBindApiInfo.
+        :type req_method: str
+        """
+        self._req_method = req_method
 
     def to_dict(self):
         """Returns the model properties as a dict"""

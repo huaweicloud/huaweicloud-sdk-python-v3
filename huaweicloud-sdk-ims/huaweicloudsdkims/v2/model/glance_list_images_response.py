@@ -19,7 +19,7 @@ class GlanceListImagesResponse(SdkResponse):
 
     openapi_types = {
         'first': 'str',
-        'images': 'list[GlanceShowImageResponseBody]',
+        'images': 'list[GlanceShowImageListResponseBody]',
         'schema': 'str',
         'next': 'str'
     }
@@ -39,7 +39,7 @@ class GlanceListImagesResponse(SdkResponse):
         :param first: 查询首页的URL。
         :type first: str
         :param images: 资源类型。
-        :type images: list[:class:`huaweicloudsdkims.v2.GlanceShowImageResponseBody`]
+        :type images: list[:class:`huaweicloudsdkims.v2.GlanceShowImageListResponseBody`]
         :param schema: 描述镜像列表模式的URL。
         :type schema: str
         :param next: 查询下一页的URL。当查询镜像列表最后一页时，不存在next。
@@ -92,7 +92,7 @@ class GlanceListImagesResponse(SdkResponse):
         资源类型。
 
         :return: The images of this GlanceListImagesResponse.
-        :rtype: list[:class:`huaweicloudsdkims.v2.GlanceShowImageResponseBody`]
+        :rtype: list[:class:`huaweicloudsdkims.v2.GlanceShowImageListResponseBody`]
         """
         return self._images
 
@@ -103,7 +103,7 @@ class GlanceListImagesResponse(SdkResponse):
         资源类型。
 
         :param images: The images of this GlanceListImagesResponse.
-        :type images: list[:class:`huaweicloudsdkims.v2.GlanceShowImageResponseBody`]
+        :type images: list[:class:`huaweicloudsdkims.v2.GlanceShowImageListResponseBody`]
         """
         self._images = images
 

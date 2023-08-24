@@ -20,17 +20,19 @@ class VatInvoiceRequestBody:
         'image': 'str',
         'url': 'str',
         'advanced_mode': 'bool',
-        'return_text_location': 'bool'
+        'return_text_location': 'bool',
+        'page_num': 'int'
     }
 
     attribute_map = {
         'image': 'image',
         'url': 'url',
         'advanced_mode': 'advanced_mode',
-        'return_text_location': 'return_text_location'
+        'return_text_location': 'return_text_location',
+        'page_num': 'page_num'
     }
 
-    def __init__(self, image=None, url=None, advanced_mode=None, return_text_location=None):
+    def __init__(self, image=None, url=None, advanced_mode=None, return_text_location=None, page_num=None):
         """VatInvoiceRequestBody
 
         The model defined in huaweicloud sdk
@@ -43,6 +45,8 @@ class VatInvoiceRequestBody:
         :type advanced_mode: bool
         :param return_text_location: 识别到的文字块的区域位置信息。可选值包括：  - true：返回各个文字块区域  - false：不返回各个文字块区域  如果无该参数，系统默认不返回文字块区域。如果输入参数不是Boolean类型，则会报非法参数错误。 
         :type return_text_location: bool
+        :param page_num: 页码，默认为1，返回第一页结果。如果传参不大于PDF页数，则返回对应PDF页的结果。 
+        :type page_num: int
         """
         
         
@@ -51,6 +55,7 @@ class VatInvoiceRequestBody:
         self._url = None
         self._advanced_mode = None
         self._return_text_location = None
+        self._page_num = None
         self.discriminator = None
 
         if image is not None:
@@ -61,6 +66,8 @@ class VatInvoiceRequestBody:
             self.advanced_mode = advanced_mode
         if return_text_location is not None:
             self.return_text_location = return_text_location
+        if page_num is not None:
+            self.page_num = page_num
 
     @property
     def image(self):
@@ -149,6 +156,28 @@ class VatInvoiceRequestBody:
         :type return_text_location: bool
         """
         self._return_text_location = return_text_location
+
+    @property
+    def page_num(self):
+        """Gets the page_num of this VatInvoiceRequestBody.
+
+        页码，默认为1，返回第一页结果。如果传参不大于PDF页数，则返回对应PDF页的结果。 
+
+        :return: The page_num of this VatInvoiceRequestBody.
+        :rtype: int
+        """
+        return self._page_num
+
+    @page_num.setter
+    def page_num(self, page_num):
+        """Sets the page_num of this VatInvoiceRequestBody.
+
+        页码，默认为1，返回第一页结果。如果传参不大于PDF页数，则返回对应PDF页的结果。 
+
+        :param page_num: The page_num of this VatInvoiceRequestBody.
+        :type page_num: int
+        """
+        self._page_num = page_num
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -5282,6 +5282,64 @@ class OsmClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def show_login_type(self, request):
+        """查询登录类型
+
+        查询登录类型
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowLoginType
+        :type request: :class:`huaweicloudsdkosm.v2.ShowLoginTypeRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.ShowLoginTypeResponse`
+        """
+        return self._show_login_type_with_http_info(request)
+
+    def _show_login_type_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+        if 'x_time_zone' in local_var_params:
+            header_params['X-Time-Zone'] = local_var_params['x_time_zone']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/servicerequest/authorizations/login-type',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowLoginTypeResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def show_partners_cases_privilege(self, request):
         """查询伙伴工单权限
 

@@ -18,6 +18,7 @@ class ListAimResolveDetailsRequest:
 
     openapi_types = {
         'task_id': 'str',
+        'task_name': 'str',
         'tpl_id': 'str',
         'tpl_name': 'str',
         'cust_flag': 'str',
@@ -32,6 +33,7 @@ class ListAimResolveDetailsRequest:
 
     attribute_map = {
         'task_id': 'task_id',
+        'task_name': 'task_name',
         'tpl_id': 'tpl_id',
         'tpl_name': 'tpl_name',
         'cust_flag': 'cust_flag',
@@ -44,13 +46,15 @@ class ListAimResolveDetailsRequest:
         'limit': 'limit'
     }
 
-    def __init__(self, task_id=None, tpl_id=None, tpl_name=None, cust_flag=None, sms_sign=None, aim_url=None, resolved_status=None, begin_time=None, end_time=None, offset=None, limit=None):
+    def __init__(self, task_id=None, task_name=None, tpl_id=None, tpl_name=None, cust_flag=None, sms_sign=None, aim_url=None, resolved_status=None, begin_time=None, end_time=None, offset=None, limit=None):
         """ListAimResolveDetailsRequest
 
         The model defined in huaweicloud sdk
 
         :param task_id: 解析任务ID或者发送任务ID。
         :type task_id: str
+        :param task_name: 任务名称。
+        :type task_name: str
         :param tpl_id: 智能信息模板ID。
         :type tpl_id: str
         :param tpl_name: 智能信息模板名称。
@@ -76,6 +80,7 @@ class ListAimResolveDetailsRequest:
         
 
         self._task_id = None
+        self._task_name = None
         self._tpl_id = None
         self._tpl_name = None
         self._cust_flag = None
@@ -90,6 +95,8 @@ class ListAimResolveDetailsRequest:
 
         if task_id is not None:
             self.task_id = task_id
+        if task_name is not None:
+            self.task_name = task_name
         if tpl_id is not None:
             self.tpl_id = tpl_id
         if tpl_name is not None:
@@ -130,6 +137,28 @@ class ListAimResolveDetailsRequest:
         :type task_id: str
         """
         self._task_id = task_id
+
+    @property
+    def task_name(self):
+        """Gets the task_name of this ListAimResolveDetailsRequest.
+
+        任务名称。
+
+        :return: The task_name of this ListAimResolveDetailsRequest.
+        :rtype: str
+        """
+        return self._task_name
+
+    @task_name.setter
+    def task_name(self, task_name):
+        """Sets the task_name of this ListAimResolveDetailsRequest.
+
+        任务名称。
+
+        :param task_name: The task_name of this ListAimResolveDetailsRequest.
+        :type task_name: str
+        """
+        self._task_name = task_name
 
     @property
     def tpl_id(self):

@@ -101,6 +101,7 @@ from huaweicloudsdknat.v2.model.private_snat import PrivateSnat
 from huaweicloudsdknat.v2.model.private_tag import PrivateTag
 from huaweicloudsdknat.v2.model.resource import Resource
 from huaweicloudsdknat.v2.model.resource_tag import ResourceTag
+from huaweicloudsdknat.v2.model.session_configuration import SessionConfiguration
 from huaweicloudsdknat.v2.model.show_nat_gateway_dnat_rule_request import ShowNatGatewayDnatRuleRequest
 from huaweicloudsdknat.v2.model.show_nat_gateway_dnat_rule_response import ShowNatGatewayDnatRuleResponse
 from huaweicloudsdknat.v2.model.show_nat_gateway_request import ShowNatGatewayRequest

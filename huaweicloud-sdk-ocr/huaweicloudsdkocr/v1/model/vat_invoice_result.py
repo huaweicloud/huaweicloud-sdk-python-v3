@@ -19,6 +19,9 @@ class VatInvoiceResult:
     openapi_types = {
         'title': 'str',
         'type': 'str',
+        'invoice_tag': 'str',
+        'sum_amount': 'str',
+        'sum_tax': 'str',
         'serial_number': 'str',
         'attribution': 'str',
         'supervision_seal': 'list[str]',
@@ -55,6 +58,9 @@ class VatInvoiceResult:
     attribute_map = {
         'title': 'title',
         'type': 'type',
+        'invoice_tag': 'invoice_tag',
+        'sum_amount': 'sum_amount',
+        'sum_tax': 'sum_tax',
         'serial_number': 'serial_number',
         'attribution': 'attribution',
         'supervision_seal': 'supervision_seal',
@@ -88,7 +94,7 @@ class VatInvoiceResult:
         'text_location': 'text_location'
     }
 
-    def __init__(self, title=None, type=None, serial_number=None, attribution=None, supervision_seal=None, code=None, print_code=None, machine_number=None, print_number=None, check_code=None, number=None, issue_date=None, encryption_block=None, buyer_name=None, buyer_id=None, buyer_address=None, buyer_bank=None, seller_name=None, seller_id=None, seller_address=None, seller_bank=None, subtotal_amount=None, subtotal_tax=None, total=None, total_in_words=None, remarks=None, receiver=None, reviewer=None, issuer=None, seller_seal=None, item_list=None, confidence=None, text_location=None):
+    def __init__(self, title=None, type=None, invoice_tag=None, sum_amount=None, sum_tax=None, serial_number=None, attribution=None, supervision_seal=None, code=None, print_code=None, machine_number=None, print_number=None, check_code=None, number=None, issue_date=None, encryption_block=None, buyer_name=None, buyer_id=None, buyer_address=None, buyer_bank=None, seller_name=None, seller_id=None, seller_address=None, seller_bank=None, subtotal_amount=None, subtotal_tax=None, total=None, total_in_words=None, remarks=None, receiver=None, reviewer=None, issuer=None, seller_seal=None, item_list=None, confidence=None, text_location=None):
         """VatInvoiceResult
 
         The model defined in huaweicloud sdk
@@ -97,6 +103,12 @@ class VatInvoiceResult:
         :type title: str
         :param type: 增值税发票类型，可选值包括： - special: 增值税专用发票  - normal: 增值税普通发票  - electronic: 增值税电子普通发票  - special_electronic: 增值税电子专用发票  - toll: 增值税电子普通发票（通行费）  - roll: 增值税普通发票（卷票）  - fully_digitalized_special_electronic: 全电专用发票  - fully_digitalized_normal_electronic: 全电普通发票 
         :type type: str
+        :param invoice_tag: 增值税发票左上角标志。当“advanced_mode”设置为“true”时才返回。包含：通行费、代开。 
+        :type invoice_tag: str
+        :param sum_amount: 小计金额，当传入多页PDF时返回此字段。 
+        :type sum_amount: str
+        :param sum_tax: 小计税额，当传入多页PDF时返回此字段。 
+        :type sum_tax: str
         :param serial_number: 发票联次。 当“advanced_mode”设置为“true”时才返回。 
         :type serial_number: str
         :param attribution: 发票归属地。 当“advanced_mode”设置为“true”时才返回。 
@@ -165,6 +177,9 @@ class VatInvoiceResult:
 
         self._title = None
         self._type = None
+        self._invoice_tag = None
+        self._sum_amount = None
+        self._sum_tax = None
         self._serial_number = None
         self._attribution = None
         self._supervision_seal = None
@@ -202,6 +217,12 @@ class VatInvoiceResult:
             self.title = title
         if type is not None:
             self.type = type
+        if invoice_tag is not None:
+            self.invoice_tag = invoice_tag
+        if sum_amount is not None:
+            self.sum_amount = sum_amount
+        if sum_tax is not None:
+            self.sum_tax = sum_tax
         if serial_number is not None:
             self.serial_number = serial_number
         if attribution is not None:
@@ -308,6 +329,72 @@ class VatInvoiceResult:
         :type type: str
         """
         self._type = type
+
+    @property
+    def invoice_tag(self):
+        """Gets the invoice_tag of this VatInvoiceResult.
+
+        增值税发票左上角标志。当“advanced_mode”设置为“true”时才返回。包含：通行费、代开。 
+
+        :return: The invoice_tag of this VatInvoiceResult.
+        :rtype: str
+        """
+        return self._invoice_tag
+
+    @invoice_tag.setter
+    def invoice_tag(self, invoice_tag):
+        """Sets the invoice_tag of this VatInvoiceResult.
+
+        增值税发票左上角标志。当“advanced_mode”设置为“true”时才返回。包含：通行费、代开。 
+
+        :param invoice_tag: The invoice_tag of this VatInvoiceResult.
+        :type invoice_tag: str
+        """
+        self._invoice_tag = invoice_tag
+
+    @property
+    def sum_amount(self):
+        """Gets the sum_amount of this VatInvoiceResult.
+
+        小计金额，当传入多页PDF时返回此字段。 
+
+        :return: The sum_amount of this VatInvoiceResult.
+        :rtype: str
+        """
+        return self._sum_amount
+
+    @sum_amount.setter
+    def sum_amount(self, sum_amount):
+        """Sets the sum_amount of this VatInvoiceResult.
+
+        小计金额，当传入多页PDF时返回此字段。 
+
+        :param sum_amount: The sum_amount of this VatInvoiceResult.
+        :type sum_amount: str
+        """
+        self._sum_amount = sum_amount
+
+    @property
+    def sum_tax(self):
+        """Gets the sum_tax of this VatInvoiceResult.
+
+        小计税额，当传入多页PDF时返回此字段。 
+
+        :return: The sum_tax of this VatInvoiceResult.
+        :rtype: str
+        """
+        return self._sum_tax
+
+    @sum_tax.setter
+    def sum_tax(self, sum_tax):
+        """Sets the sum_tax of this VatInvoiceResult.
+
+        小计税额，当传入多页PDF时返回此字段。 
+
+        :param sum_tax: The sum_tax of this VatInvoiceResult.
+        :type sum_tax: str
+        """
+        self._sum_tax = sum_tax
 
     @property
     def serial_number(self):

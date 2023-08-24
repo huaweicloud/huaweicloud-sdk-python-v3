@@ -10,10 +10,13 @@ class IoTEdgeRegion:
     _PROVIDER = RegionProviderChain.get_default_region_provider_chain("IOTEDGE")
 
     CN_NORTH_4 = Region("cn-north-4",
-                        "https://iotedge-api.cn-north-4.myhuaweicloud.cn")
+                        "https://iotedge-api.cn-north-4.myhuaweicloud.com")
+    CN_EAST_3 = Region("cn-east-3",
+                        "https://iotedge-api.cn-east-3.myhuaweicloud.com")
 
     static_fields = {
         "cn-north-4": CN_NORTH_4,
+        "cn-east-3": CN_EAST_3,
     }
 
     @classmethod

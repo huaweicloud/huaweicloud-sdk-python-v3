@@ -21,7 +21,7 @@ class SubscriptionTarget:
         'name': 'str',
         'provider_type': 'str',
         'connection_id': 'str',
-        'detail': 'object',
+        'detail': 'Detail',
         'kafka_detail': 'KafkaTargetDetail',
         'smn_detail': 'SmnTargetDetail',
         'transform': 'TransForm',
@@ -53,8 +53,8 @@ class SubscriptionTarget:
         :type provider_type: str
         :param connection_id: 订阅的事件目标使用的目标链接ID
         :type connection_id: str
-        :param detail: 订阅的事件目标参数列表，该字段序列化后总长度不超过1024字节，函数、函数流、webhook订阅目标必填，其中函数、函数流委托名称必填
-        :type detail: object
+        :param detail: 
+        :type detail: :class:`huaweicloudsdkeg.v1.Detail`
         :param kafka_detail: 
         :type kafka_detail: :class:`huaweicloudsdkeg.v1.KafkaTargetDetail`
         :param smn_detail: 
@@ -186,10 +186,8 @@ class SubscriptionTarget:
     def detail(self):
         """Gets the detail of this SubscriptionTarget.
 
-        订阅的事件目标参数列表，该字段序列化后总长度不超过1024字节，函数、函数流、webhook订阅目标必填，其中函数、函数流委托名称必填
-
         :return: The detail of this SubscriptionTarget.
-        :rtype: object
+        :rtype: :class:`huaweicloudsdkeg.v1.Detail`
         """
         return self._detail
 
@@ -197,10 +195,8 @@ class SubscriptionTarget:
     def detail(self, detail):
         """Sets the detail of this SubscriptionTarget.
 
-        订阅的事件目标参数列表，该字段序列化后总长度不超过1024字节，函数、函数流、webhook订阅目标必填，其中函数、函数流委托名称必填
-
         :param detail: The detail of this SubscriptionTarget.
-        :type detail: object
+        :type detail: :class:`huaweicloudsdkeg.v1.Detail`
         """
         self._detail = detail
 

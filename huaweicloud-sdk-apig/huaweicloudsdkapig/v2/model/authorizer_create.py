@@ -21,6 +21,7 @@ class AuthorizerCreate:
         'type': 'str',
         'authorizer_type': 'str',
         'authorizer_uri': 'str',
+        'network_type': 'str',
         'authorizer_version': 'str',
         'authorizer_alias_uri': 'str',
         'identities': 'list[Identity]',
@@ -35,6 +36,7 @@ class AuthorizerCreate:
         'type': 'type',
         'authorizer_type': 'authorizer_type',
         'authorizer_uri': 'authorizer_uri',
+        'network_type': 'network_type',
         'authorizer_version': 'authorizer_version',
         'authorizer_alias_uri': 'authorizer_alias_uri',
         'identities': 'identities',
@@ -44,7 +46,7 @@ class AuthorizerCreate:
         'need_body': 'need_body'
     }
 
-    def __init__(self, name=None, type=None, authorizer_type=None, authorizer_uri=None, authorizer_version=None, authorizer_alias_uri=None, identities=None, ttl=None, user_data=None, ld_api_id=None, need_body=None):
+    def __init__(self, name=None, type=None, authorizer_type=None, authorizer_uri=None, network_type=None, authorizer_version=None, authorizer_alias_uri=None, identities=None, ttl=None, user_data=None, ld_api_id=None, need_body=None):
         """AuthorizerCreate
 
         The model defined in huaweicloud sdk
@@ -57,6 +59,8 @@ class AuthorizerCreate:
         :type authorizer_type: str
         :param authorizer_uri: 函数地址。
         :type authorizer_uri: str
+        :param network_type: 对接函数的网络架构类型 - V1：非VPC网络架构 - V2：VPC网络架构
+        :type network_type: str
         :param authorizer_version: 函数版本。  当函数别名URN和函数版本同时传入时，函数版本将被忽略，只会使用函数别名URN
         :type authorizer_version: str
         :param authorizer_alias_uri: 函数别名地址。  当函数别名URN和函数版本同时传入时，函数版本将被忽略，只会使用函数别名URN
@@ -79,6 +83,7 @@ class AuthorizerCreate:
         self._type = None
         self._authorizer_type = None
         self._authorizer_uri = None
+        self._network_type = None
         self._authorizer_version = None
         self._authorizer_alias_uri = None
         self._identities = None
@@ -92,6 +97,8 @@ class AuthorizerCreate:
         self.type = type
         self.authorizer_type = authorizer_type
         self.authorizer_uri = authorizer_uri
+        if network_type is not None:
+            self.network_type = network_type
         if authorizer_version is not None:
             self.authorizer_version = authorizer_version
         if authorizer_alias_uri is not None:
@@ -194,6 +201,28 @@ class AuthorizerCreate:
         :type authorizer_uri: str
         """
         self._authorizer_uri = authorizer_uri
+
+    @property
+    def network_type(self):
+        """Gets the network_type of this AuthorizerCreate.
+
+        对接函数的网络架构类型 - V1：非VPC网络架构 - V2：VPC网络架构
+
+        :return: The network_type of this AuthorizerCreate.
+        :rtype: str
+        """
+        return self._network_type
+
+    @network_type.setter
+    def network_type(self, network_type):
+        """Sets the network_type of this AuthorizerCreate.
+
+        对接函数的网络架构类型 - V1：非VPC网络架构 - V2：VPC网络架构
+
+        :param network_type: The network_type of this AuthorizerCreate.
+        :type network_type: str
+        """
+        self._network_type = network_type
 
     @property
     def authorizer_version(self):

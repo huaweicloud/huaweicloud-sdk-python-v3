@@ -223,6 +223,64 @@ class ErClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def accept_attachment(self, request):
+        """接受共享连接创建
+
+        接受共享连接创建
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for AcceptAttachment
+        :type request: :class:`huaweicloudsdker.v3.AcceptAttachmentRequest`
+        :rtype: :class:`huaweicloudsdker.v3.AcceptAttachmentResponse`
+        """
+        return self._accept_attachment_with_http_info(request)
+
+    def _accept_attachment_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'er_id' in local_var_params:
+            path_params['er_id'] = local_var_params['er_id']
+        if 'attachment_id' in local_var_params:
+            path_params['attachment_id'] = local_var_params['attachment_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/enterprise-router/{er_id}/attachments/{attachment_id}/accept',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='AcceptAttachmentResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_attachments(self, request):
         """查询连接列表
 
@@ -293,6 +351,64 @@ class ErClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ListAttachmentsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def reject_attachment(self, request):
+        """拒绝共享连接创建
+
+        拒绝共享连接创建
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for RejectAttachment
+        :type request: :class:`huaweicloudsdker.v3.RejectAttachmentRequest`
+        :rtype: :class:`huaweicloudsdker.v3.RejectAttachmentResponse`
+        """
+        return self._reject_attachment_with_http_info(request)
+
+    def _reject_attachment_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'er_id' in local_var_params:
+            path_params['er_id'] = local_var_params['er_id']
+        if 'attachment_id' in local_var_params:
+            path_params['attachment_id'] = local_var_params['attachment_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/enterprise-router/{er_id}/attachments/{attachment_id}/reject',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='RejectAttachmentResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

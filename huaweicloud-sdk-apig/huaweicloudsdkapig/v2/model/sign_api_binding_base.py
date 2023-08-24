@@ -28,7 +28,8 @@ class SignApiBindingBase:
         'id': 'str',
         'api_remark': 'str',
         'sign_id': 'str',
-        'sign_name': 'str'
+        'sign_name': 'str',
+        'req_method': 'str'
     }
 
     attribute_map = {
@@ -43,10 +44,11 @@ class SignApiBindingBase:
         'id': 'id',
         'api_remark': 'api_remark',
         'sign_id': 'sign_id',
-        'sign_name': 'sign_name'
+        'sign_name': 'sign_name',
+        'req_method': 'req_method'
     }
 
-    def __init__(self, publish_id=None, api_id=None, group_name=None, binding_time=None, env_id=None, env_name=None, api_type=None, api_name=None, id=None, api_remark=None, sign_id=None, sign_name=None):
+    def __init__(self, publish_id=None, api_id=None, group_name=None, binding_time=None, env_id=None, env_name=None, api_type=None, api_name=None, id=None, api_remark=None, sign_id=None, sign_name=None, req_method=None):
         """SignApiBindingBase
 
         The model defined in huaweicloud sdk
@@ -75,6 +77,8 @@ class SignApiBindingBase:
         :type sign_id: str
         :param sign_name: 签名密钥的名称。支持汉字，英文，数字，下划线，且只能以英文和汉字开头，3 ~ 64字符。 &gt; 中文字符必须为UTF-8或者unicode编码。
         :type sign_name: str
+        :param req_method: API请求方法
+        :type req_method: str
         """
         
         
@@ -91,6 +95,7 @@ class SignApiBindingBase:
         self._api_remark = None
         self._sign_id = None
         self._sign_name = None
+        self._req_method = None
         self.discriminator = None
 
         if publish_id is not None:
@@ -117,6 +122,8 @@ class SignApiBindingBase:
             self.sign_id = sign_id
         if sign_name is not None:
             self.sign_name = sign_name
+        if req_method is not None:
+            self.req_method = req_method
 
     @property
     def publish_id(self):
@@ -381,6 +388,28 @@ class SignApiBindingBase:
         :type sign_name: str
         """
         self._sign_name = sign_name
+
+    @property
+    def req_method(self):
+        """Gets the req_method of this SignApiBindingBase.
+
+        API请求方法
+
+        :return: The req_method of this SignApiBindingBase.
+        :rtype: str
+        """
+        return self._req_method
+
+    @req_method.setter
+    def req_method(self, req_method):
+        """Sets the req_method of this SignApiBindingBase.
+
+        API请求方法
+
+        :param req_method: The req_method of this SignApiBindingBase.
+        :type req_method: str
+        """
+        self._req_method = req_method
 
     def to_dict(self):
         """Returns the model properties as a dict"""

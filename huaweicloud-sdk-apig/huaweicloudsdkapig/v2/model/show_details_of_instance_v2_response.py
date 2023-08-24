@@ -31,6 +31,7 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
         'charging_mode': 'int',
         'cbc_metadata': 'str',
         'loadbalancer_provider': 'str',
+        'cbc_operation_locks': 'list[CbcOperationLock]',
         'description': 'str',
         'vpc_id': 'str',
         'subnet_id': 'str',
@@ -74,6 +75,7 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
         'charging_mode': 'charging_mode',
         'cbc_metadata': 'cbc_metadata',
         'loadbalancer_provider': 'loadbalancer_provider',
+        'cbc_operation_locks': 'cbc_operation_locks',
         'description': 'description',
         'vpc_id': 'vpc_id',
         'subnet_id': 'subnet_id',
@@ -103,7 +105,7 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
         'ingress_bandwidth_charging_mode': 'ingress_bandwidth_charging_mode'
     }
 
-    def __init__(self, id=None, project_id=None, instance_name=None, status=None, instance_status=None, type=None, spec=None, create_time=None, enterprise_project_id=None, eip_address=None, charging_mode=None, cbc_metadata=None, loadbalancer_provider=None, description=None, vpc_id=None, subnet_id=None, security_group_id=None, maintain_begin=None, maintain_end=None, ingress_ip=None, ingress_ip_v6=None, user_id=None, nat_eip_ipv6_cidr=None, eip_ipv6_address=None, nat_eip_address=None, bandwidth_size=None, bandwidth_charging_mode=None, available_zone_ids=None, instance_version=None, virsubnet_id=None, roma_eip_address=None, listeners=None, supported_features=None, endpoint_service=None, endpoint_services=None, node_ips=None, publicips=None, privateips=None, is_releasable=None, ingress_bandwidth_charging_mode=None):
+    def __init__(self, id=None, project_id=None, instance_name=None, status=None, instance_status=None, type=None, spec=None, create_time=None, enterprise_project_id=None, eip_address=None, charging_mode=None, cbc_metadata=None, loadbalancer_provider=None, cbc_operation_locks=None, description=None, vpc_id=None, subnet_id=None, security_group_id=None, maintain_begin=None, maintain_end=None, ingress_ip=None, ingress_ip_v6=None, user_id=None, nat_eip_ipv6_cidr=None, eip_ipv6_address=None, nat_eip_address=None, bandwidth_size=None, bandwidth_charging_mode=None, available_zone_ids=None, instance_version=None, virsubnet_id=None, roma_eip_address=None, listeners=None, supported_features=None, endpoint_service=None, endpoint_services=None, node_ips=None, publicips=None, privateips=None, is_releasable=None, ingress_bandwidth_charging_mode=None):
         """ShowDetailsOfInstanceV2Response
 
         The model defined in huaweicloud sdk
@@ -114,9 +116,9 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
         :type project_id: str
         :param instance_name: 实例名称
         :type instance_name: str
-        :param status: 实例状态： - Creating：创建中 - CreateSuccess：创建成功 - CreateFail：创建失败 - Initing：初始化中 - Registering：注册中 - Running：运行中 - InitingFailed：初始化失败 - RegisterFailed：注册失败 - Installing：安装中 - InstallFailed：安装失败 - Updating：升级中 - UpdateFailed：升级失败 - Rollbacking：回滚中 - RollbackSuccess：回滚成功 - RollbackFailed：回滚失败 - Deleting：删除中 - DeleteFailed：删除失败 - Unregistering：注销中 - UnRegisterFailed：注销失败 - CreateTimeout：创建超时 - InitTimeout：初始化超时 - RegisterTimeout：注册超时 - InstallTimeout：安装超时 - UpdateTimeout：升级超时 - RollbackTimeout：回滚超时 - DeleteTimeout：删除超时 - UnregisterTimeout：注销超时 - Starting：启动中 - Freezing：冻结中 - Frozen：已冻结 - Restarting：重启中 - RestartFail：重启失败 - Unhealthy：实例异常 - RestartTimeout：重启超时
+        :param status: 实例状态： - Creating：创建中 - CreateSuccess：创建成功 - CreateFail：创建失败 - Initing：初始化中 - Registering：注册中 - Running：运行中 - InitingFailed：初始化失败 - RegisterFailed：注册失败 - Installing：安装中 - InstallFailed：安装失败 - Updating：升级中 - UpdateFailed：升级失败 - Rollbacking：回滚中 - RollbackSuccess：回滚成功 - RollbackFailed：回滚失败 - Deleting：删除中 - DeleteFailed：删除失败 - Unregistering：注销中 - UnRegisterFailed：注销失败 - CreateTimeout：创建超时 - InitTimeout：初始化超时 - RegisterTimeout：注册超时 - InstallTimeout：安装超时 - UpdateTimeout：升级超时 - RollbackTimeout：回滚超时 - DeleteTimeout：删除超时 - UnregisterTimeout：注销超时 - Starting：启动中 - Freezing：冻结中 - Frozen：已冻结 - Restarting：重启中 - RestartFail：重启失败 - Unhealthy：实例异常 - RestartTimeout：重启超时 - Resizing：规格变更中 - ResizeFailed：规格变更失败 - ResizeTimeout：规格变更超时
         :type status: str
-        :param instance_status: 实例状态对应编号 - 1：创建中 - 2：创建成功 - 3：创建失败 - 4：初始化中 - 5：注册中 - 6：运行中 - 7：初始化失败 - 8：注册失败 - 10：安装中 - 11：安装失败 - 12：升级中 - 13：升级失败 - 20：回滚中 - 21：回滚成功 - 22：回滚失败 - 23：删除中 - 24：删除失败 - 25：注销中 - 26：注销失败 - 27：创建超时 - 28：初始化超时 - 29：注册超时 - 30：安装超时 - 31：升级超时 - 32：回滚超时 - 33：删除超时 - 34：注销超时 - 35：启动中 - 36：冻结中 - 37：已冻结 - 38：重启中 - 39：重启失败 - 40：实例异常 - 41：重启超时
+        :param instance_status: 实例状态对应编号 - 1：创建中 - 2：创建成功 - 3：创建失败 - 4：初始化中 - 5：注册中 - 6：运行中 - 7：初始化失败 - 8：注册失败 - 10：安装中 - 11：安装失败 - 12：升级中 - 13：升级失败 - 20：回滚中 - 21：回滚成功 - 22：回滚失败 - 23：删除中 - 24：删除失败 - 25：注销中 - 26：注销失败 - 27：创建超时 - 28：初始化超时 - 29：注册超时 - 30：安装超时 - 31：升级超时 - 32：回滚超时 - 33：删除超时 - 34：注销超时 - 35：启动中 - 36：冻结中 - 37：已冻结 - 38：重启中 - 39：重启失败 - 40：实例异常 - 41：重启超时 - 42：规格变更中 - 43：规格变更失败 - 44：规格变更超时
         :type instance_status: int
         :param type: 实例类型  默认apig
         :type type: str
@@ -134,6 +136,8 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
         :type cbc_metadata: str
         :param loadbalancer_provider: 实例使用的负载均衡器类型 - lvs Linux虚拟服务器 - elb 弹性负载均衡，elb仅部分region支持
         :type loadbalancer_provider: str
+        :param cbc_operation_locks: 云运营限制操作锁
+        :type cbc_operation_locks: list[:class:`huaweicloudsdkapig.v2.CbcOperationLock`]
         :param description: 实例描述
         :type description: str
         :param vpc_id: 虚拟私有云ID。  获取方法如下：   - 方法1：登录虚拟私有云服务的控制台界面，在虚拟私有云的详情页面查找VPC ID。   - 方法2：通过虚拟私有云服务的API接口查询，具体方法请参见《虚拟私有云服务API参考》的“查询VPC列表”章节。 
@@ -148,7 +152,7 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
         :type maintain_end: str
         :param ingress_ip: 实例入口，虚拟私有云访问地址
         :type ingress_ip: str
-        :param ingress_ip_v6: 实例入口，虚拟私有云访问地址 (IPv6)
+        :param ingress_ip_v6: 实例入口，虚拟私有云访问地址 (IPv6) 
         :type ingress_ip_v6: str
         :param user_id: 实例所属用户ID
         :type user_id: str
@@ -205,6 +209,7 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
         self._charging_mode = None
         self._cbc_metadata = None
         self._loadbalancer_provider = None
+        self._cbc_operation_locks = None
         self._description = None
         self._vpc_id = None
         self._subnet_id = None
@@ -260,6 +265,8 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
             self.cbc_metadata = cbc_metadata
         if loadbalancer_provider is not None:
             self.loadbalancer_provider = loadbalancer_provider
+        if cbc_operation_locks is not None:
+            self.cbc_operation_locks = cbc_operation_locks
         if description is not None:
             self.description = description
         if vpc_id is not None:
@@ -385,7 +392,7 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
     def status(self):
         """Gets the status of this ShowDetailsOfInstanceV2Response.
 
-        实例状态： - Creating：创建中 - CreateSuccess：创建成功 - CreateFail：创建失败 - Initing：初始化中 - Registering：注册中 - Running：运行中 - InitingFailed：初始化失败 - RegisterFailed：注册失败 - Installing：安装中 - InstallFailed：安装失败 - Updating：升级中 - UpdateFailed：升级失败 - Rollbacking：回滚中 - RollbackSuccess：回滚成功 - RollbackFailed：回滚失败 - Deleting：删除中 - DeleteFailed：删除失败 - Unregistering：注销中 - UnRegisterFailed：注销失败 - CreateTimeout：创建超时 - InitTimeout：初始化超时 - RegisterTimeout：注册超时 - InstallTimeout：安装超时 - UpdateTimeout：升级超时 - RollbackTimeout：回滚超时 - DeleteTimeout：删除超时 - UnregisterTimeout：注销超时 - Starting：启动中 - Freezing：冻结中 - Frozen：已冻结 - Restarting：重启中 - RestartFail：重启失败 - Unhealthy：实例异常 - RestartTimeout：重启超时
+        实例状态： - Creating：创建中 - CreateSuccess：创建成功 - CreateFail：创建失败 - Initing：初始化中 - Registering：注册中 - Running：运行中 - InitingFailed：初始化失败 - RegisterFailed：注册失败 - Installing：安装中 - InstallFailed：安装失败 - Updating：升级中 - UpdateFailed：升级失败 - Rollbacking：回滚中 - RollbackSuccess：回滚成功 - RollbackFailed：回滚失败 - Deleting：删除中 - DeleteFailed：删除失败 - Unregistering：注销中 - UnRegisterFailed：注销失败 - CreateTimeout：创建超时 - InitTimeout：初始化超时 - RegisterTimeout：注册超时 - InstallTimeout：安装超时 - UpdateTimeout：升级超时 - RollbackTimeout：回滚超时 - DeleteTimeout：删除超时 - UnregisterTimeout：注销超时 - Starting：启动中 - Freezing：冻结中 - Frozen：已冻结 - Restarting：重启中 - RestartFail：重启失败 - Unhealthy：实例异常 - RestartTimeout：重启超时 - Resizing：规格变更中 - ResizeFailed：规格变更失败 - ResizeTimeout：规格变更超时
 
         :return: The status of this ShowDetailsOfInstanceV2Response.
         :rtype: str
@@ -396,7 +403,7 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
     def status(self, status):
         """Sets the status of this ShowDetailsOfInstanceV2Response.
 
-        实例状态： - Creating：创建中 - CreateSuccess：创建成功 - CreateFail：创建失败 - Initing：初始化中 - Registering：注册中 - Running：运行中 - InitingFailed：初始化失败 - RegisterFailed：注册失败 - Installing：安装中 - InstallFailed：安装失败 - Updating：升级中 - UpdateFailed：升级失败 - Rollbacking：回滚中 - RollbackSuccess：回滚成功 - RollbackFailed：回滚失败 - Deleting：删除中 - DeleteFailed：删除失败 - Unregistering：注销中 - UnRegisterFailed：注销失败 - CreateTimeout：创建超时 - InitTimeout：初始化超时 - RegisterTimeout：注册超时 - InstallTimeout：安装超时 - UpdateTimeout：升级超时 - RollbackTimeout：回滚超时 - DeleteTimeout：删除超时 - UnregisterTimeout：注销超时 - Starting：启动中 - Freezing：冻结中 - Frozen：已冻结 - Restarting：重启中 - RestartFail：重启失败 - Unhealthy：实例异常 - RestartTimeout：重启超时
+        实例状态： - Creating：创建中 - CreateSuccess：创建成功 - CreateFail：创建失败 - Initing：初始化中 - Registering：注册中 - Running：运行中 - InitingFailed：初始化失败 - RegisterFailed：注册失败 - Installing：安装中 - InstallFailed：安装失败 - Updating：升级中 - UpdateFailed：升级失败 - Rollbacking：回滚中 - RollbackSuccess：回滚成功 - RollbackFailed：回滚失败 - Deleting：删除中 - DeleteFailed：删除失败 - Unregistering：注销中 - UnRegisterFailed：注销失败 - CreateTimeout：创建超时 - InitTimeout：初始化超时 - RegisterTimeout：注册超时 - InstallTimeout：安装超时 - UpdateTimeout：升级超时 - RollbackTimeout：回滚超时 - DeleteTimeout：删除超时 - UnregisterTimeout：注销超时 - Starting：启动中 - Freezing：冻结中 - Frozen：已冻结 - Restarting：重启中 - RestartFail：重启失败 - Unhealthy：实例异常 - RestartTimeout：重启超时 - Resizing：规格变更中 - ResizeFailed：规格变更失败 - ResizeTimeout：规格变更超时
 
         :param status: The status of this ShowDetailsOfInstanceV2Response.
         :type status: str
@@ -407,7 +414,7 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
     def instance_status(self):
         """Gets the instance_status of this ShowDetailsOfInstanceV2Response.
 
-        实例状态对应编号 - 1：创建中 - 2：创建成功 - 3：创建失败 - 4：初始化中 - 5：注册中 - 6：运行中 - 7：初始化失败 - 8：注册失败 - 10：安装中 - 11：安装失败 - 12：升级中 - 13：升级失败 - 20：回滚中 - 21：回滚成功 - 22：回滚失败 - 23：删除中 - 24：删除失败 - 25：注销中 - 26：注销失败 - 27：创建超时 - 28：初始化超时 - 29：注册超时 - 30：安装超时 - 31：升级超时 - 32：回滚超时 - 33：删除超时 - 34：注销超时 - 35：启动中 - 36：冻结中 - 37：已冻结 - 38：重启中 - 39：重启失败 - 40：实例异常 - 41：重启超时
+        实例状态对应编号 - 1：创建中 - 2：创建成功 - 3：创建失败 - 4：初始化中 - 5：注册中 - 6：运行中 - 7：初始化失败 - 8：注册失败 - 10：安装中 - 11：安装失败 - 12：升级中 - 13：升级失败 - 20：回滚中 - 21：回滚成功 - 22：回滚失败 - 23：删除中 - 24：删除失败 - 25：注销中 - 26：注销失败 - 27：创建超时 - 28：初始化超时 - 29：注册超时 - 30：安装超时 - 31：升级超时 - 32：回滚超时 - 33：删除超时 - 34：注销超时 - 35：启动中 - 36：冻结中 - 37：已冻结 - 38：重启中 - 39：重启失败 - 40：实例异常 - 41：重启超时 - 42：规格变更中 - 43：规格变更失败 - 44：规格变更超时
 
         :return: The instance_status of this ShowDetailsOfInstanceV2Response.
         :rtype: int
@@ -418,7 +425,7 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
     def instance_status(self, instance_status):
         """Sets the instance_status of this ShowDetailsOfInstanceV2Response.
 
-        实例状态对应编号 - 1：创建中 - 2：创建成功 - 3：创建失败 - 4：初始化中 - 5：注册中 - 6：运行中 - 7：初始化失败 - 8：注册失败 - 10：安装中 - 11：安装失败 - 12：升级中 - 13：升级失败 - 20：回滚中 - 21：回滚成功 - 22：回滚失败 - 23：删除中 - 24：删除失败 - 25：注销中 - 26：注销失败 - 27：创建超时 - 28：初始化超时 - 29：注册超时 - 30：安装超时 - 31：升级超时 - 32：回滚超时 - 33：删除超时 - 34：注销超时 - 35：启动中 - 36：冻结中 - 37：已冻结 - 38：重启中 - 39：重启失败 - 40：实例异常 - 41：重启超时
+        实例状态对应编号 - 1：创建中 - 2：创建成功 - 3：创建失败 - 4：初始化中 - 5：注册中 - 6：运行中 - 7：初始化失败 - 8：注册失败 - 10：安装中 - 11：安装失败 - 12：升级中 - 13：升级失败 - 20：回滚中 - 21：回滚成功 - 22：回滚失败 - 23：删除中 - 24：删除失败 - 25：注销中 - 26：注销失败 - 27：创建超时 - 28：初始化超时 - 29：注册超时 - 30：安装超时 - 31：升级超时 - 32：回滚超时 - 33：删除超时 - 34：注销超时 - 35：启动中 - 36：冻结中 - 37：已冻结 - 38：重启中 - 39：重启失败 - 40：实例异常 - 41：重启超时 - 42：规格变更中 - 43：规格变更失败 - 44：规格变更超时
 
         :param instance_status: The instance_status of this ShowDetailsOfInstanceV2Response.
         :type instance_status: int
@@ -602,6 +609,28 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
         self._loadbalancer_provider = loadbalancer_provider
 
     @property
+    def cbc_operation_locks(self):
+        """Gets the cbc_operation_locks of this ShowDetailsOfInstanceV2Response.
+
+        云运营限制操作锁
+
+        :return: The cbc_operation_locks of this ShowDetailsOfInstanceV2Response.
+        :rtype: list[:class:`huaweicloudsdkapig.v2.CbcOperationLock`]
+        """
+        return self._cbc_operation_locks
+
+    @cbc_operation_locks.setter
+    def cbc_operation_locks(self, cbc_operation_locks):
+        """Sets the cbc_operation_locks of this ShowDetailsOfInstanceV2Response.
+
+        云运营限制操作锁
+
+        :param cbc_operation_locks: The cbc_operation_locks of this ShowDetailsOfInstanceV2Response.
+        :type cbc_operation_locks: list[:class:`huaweicloudsdkapig.v2.CbcOperationLock`]
+        """
+        self._cbc_operation_locks = cbc_operation_locks
+
+    @property
     def description(self):
         """Gets the description of this ShowDetailsOfInstanceV2Response.
 
@@ -759,7 +788,7 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
     def ingress_ip_v6(self):
         """Gets the ingress_ip_v6 of this ShowDetailsOfInstanceV2Response.
 
-        实例入口，虚拟私有云访问地址 (IPv6)
+        实例入口，虚拟私有云访问地址 (IPv6) 
 
         :return: The ingress_ip_v6 of this ShowDetailsOfInstanceV2Response.
         :rtype: str
@@ -770,7 +799,7 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
     def ingress_ip_v6(self, ingress_ip_v6):
         """Sets the ingress_ip_v6 of this ShowDetailsOfInstanceV2Response.
 
-        实例入口，虚拟私有云访问地址 (IPv6)
+        实例入口，虚拟私有云访问地址 (IPv6) 
 
         :param ingress_ip_v6: The ingress_ip_v6 of this ShowDetailsOfInstanceV2Response.
         :type ingress_ip_v6: str

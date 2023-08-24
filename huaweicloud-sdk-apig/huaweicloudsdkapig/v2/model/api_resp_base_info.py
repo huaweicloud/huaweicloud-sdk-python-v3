@@ -115,7 +115,7 @@ class ApiRespBaseInfo:
         :type req_method: str
         :param req_uri: 请求地址。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ . 等特殊字符，总长度不超过512，且满足URI规范。  &gt; 需要服从URI规范。
         :type req_uri: str
-        :param auth_type: API的认证方式 - NONE：无认证 - APP：APP认证 - IAM：IAM认证 - AUTHORIZER：自定义认证  当API的请求协议为GRPC类型时不支持自定义认证。
+        :param auth_type: API的认证方式 - NONE：无认证 - APP：APP认证 - IAM：IAM认证 - AUTHORIZER：自定义认证，当auth_type取值为AUTHORIZER时，authorizer_id字段必须传入  当API的请求协议为GRPC类型时不支持自定义认证。
         :type auth_type: str
         :param auth_opt: 
         :type auth_opt: :class:`huaweicloudsdkapig.v2.AuthOpt`
@@ -123,7 +123,7 @@ class ApiRespBaseInfo:
         :type cors: bool
         :param match_mode: API的匹配方式 - SWA：前缀匹配 - NORMAL：正常匹配（绝对匹配） 默认：NORMAL
         :type match_mode: str
-        :param backend_type: 后端类型 - HTTP：web后端 - FUNCTION：函数工作流 - MOCK：模拟的后端 - GRPC：grpc后端
+        :param backend_type: 后端类型 - HTTP：web后端 - FUNCTION：函数工作流，当backend_type取值为FUNCTION时，func_info字段必须传入 - MOCK：模拟的后端，当backend_type取值为MOCK时，mock_info字段必须传入 - GRPC：grpc后端
         :type backend_type: str
         :param remark: API描述。字符长度不超过255 &gt; 中文字符必须为UTF-8或者unicode编码。
         :type remark: str
@@ -147,7 +147,7 @@ class ApiRespBaseInfo:
         :type domain_name: str
         :param tag: 标签  待废弃，优先使用tags字段
         :type tag: str
-        :param content_type: 请求内容格式类型：  application/json application/xml multipart/form-date text/plain  暂不支持
+        :param content_type: 请求内容格式类型：  application/json application/xml multipart/form-data text/plain  暂不支持
         :type content_type: str
         :param id: API编号
         :type id: str
@@ -428,7 +428,7 @@ class ApiRespBaseInfo:
     def auth_type(self):
         """Gets the auth_type of this ApiRespBaseInfo.
 
-        API的认证方式 - NONE：无认证 - APP：APP认证 - IAM：IAM认证 - AUTHORIZER：自定义认证  当API的请求协议为GRPC类型时不支持自定义认证。
+        API的认证方式 - NONE：无认证 - APP：APP认证 - IAM：IAM认证 - AUTHORIZER：自定义认证，当auth_type取值为AUTHORIZER时，authorizer_id字段必须传入  当API的请求协议为GRPC类型时不支持自定义认证。
 
         :return: The auth_type of this ApiRespBaseInfo.
         :rtype: str
@@ -439,7 +439,7 @@ class ApiRespBaseInfo:
     def auth_type(self, auth_type):
         """Sets the auth_type of this ApiRespBaseInfo.
 
-        API的认证方式 - NONE：无认证 - APP：APP认证 - IAM：IAM认证 - AUTHORIZER：自定义认证  当API的请求协议为GRPC类型时不支持自定义认证。
+        API的认证方式 - NONE：无认证 - APP：APP认证 - IAM：IAM认证 - AUTHORIZER：自定义认证，当auth_type取值为AUTHORIZER时，authorizer_id字段必须传入  当API的请求协议为GRPC类型时不支持自定义认证。
 
         :param auth_type: The auth_type of this ApiRespBaseInfo.
         :type auth_type: str
@@ -512,7 +512,7 @@ class ApiRespBaseInfo:
     def backend_type(self):
         """Gets the backend_type of this ApiRespBaseInfo.
 
-        后端类型 - HTTP：web后端 - FUNCTION：函数工作流 - MOCK：模拟的后端 - GRPC：grpc后端
+        后端类型 - HTTP：web后端 - FUNCTION：函数工作流，当backend_type取值为FUNCTION时，func_info字段必须传入 - MOCK：模拟的后端，当backend_type取值为MOCK时，mock_info字段必须传入 - GRPC：grpc后端
 
         :return: The backend_type of this ApiRespBaseInfo.
         :rtype: str
@@ -523,7 +523,7 @@ class ApiRespBaseInfo:
     def backend_type(self, backend_type):
         """Sets the backend_type of this ApiRespBaseInfo.
 
-        后端类型 - HTTP：web后端 - FUNCTION：函数工作流 - MOCK：模拟的后端 - GRPC：grpc后端
+        后端类型 - HTTP：web后端 - FUNCTION：函数工作流，当backend_type取值为FUNCTION时，func_info字段必须传入 - MOCK：模拟的后端，当backend_type取值为MOCK时，mock_info字段必须传入 - GRPC：grpc后端
 
         :param backend_type: The backend_type of this ApiRespBaseInfo.
         :type backend_type: str
@@ -776,7 +776,7 @@ class ApiRespBaseInfo:
     def content_type(self):
         """Gets the content_type of this ApiRespBaseInfo.
 
-        请求内容格式类型：  application/json application/xml multipart/form-date text/plain  暂不支持
+        请求内容格式类型：  application/json application/xml multipart/form-data text/plain  暂不支持
 
         :return: The content_type of this ApiRespBaseInfo.
         :rtype: str
@@ -787,7 +787,7 @@ class ApiRespBaseInfo:
     def content_type(self, content_type):
         """Sets the content_type of this ApiRespBaseInfo.
 
-        请求内容格式类型：  application/json application/xml multipart/form-date text/plain  暂不支持
+        请求内容格式类型：  application/json application/xml multipart/form-data text/plain  暂不支持
 
         :param content_type: The content_type of this ApiRespBaseInfo.
         :type content_type: str

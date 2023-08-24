@@ -28,7 +28,8 @@ class UnbindApiForAcl:
         'publish_id': 'str',
         'acl_name': 'str',
         'req_uri': 'str',
-        'auth_type': 'str'
+        'auth_type': 'str',
+        'req_method': 'str'
     }
 
     attribute_map = {
@@ -43,10 +44,11 @@ class UnbindApiForAcl:
         'publish_id': 'publish_id',
         'acl_name': 'acl_name',
         'req_uri': 'req_uri',
-        'auth_type': 'auth_type'
+        'auth_type': 'auth_type',
+        'req_method': 'req_method'
     }
 
-    def __init__(self, id=None, name=None, group_id=None, group_name=None, type=None, remark=None, run_env_name=None, run_env_id=None, publish_id=None, acl_name=None, req_uri=None, auth_type=None):
+    def __init__(self, id=None, name=None, group_id=None, group_name=None, type=None, remark=None, run_env_name=None, run_env_id=None, publish_id=None, acl_name=None, req_uri=None, auth_type=None, req_method=None):
         """UnbindApiForAcl
 
         The model defined in huaweicloud sdk
@@ -75,6 +77,8 @@ class UnbindApiForAcl:
         :type req_uri: str
         :param auth_type: API的认证方式
         :type auth_type: str
+        :param req_method: API请求方法
+        :type req_method: str
         """
         
         
@@ -91,6 +95,7 @@ class UnbindApiForAcl:
         self._acl_name = None
         self._req_uri = None
         self._auth_type = None
+        self._req_method = None
         self.discriminator = None
 
         if id is not None:
@@ -117,6 +122,8 @@ class UnbindApiForAcl:
             self.req_uri = req_uri
         if auth_type is not None:
             self.auth_type = auth_type
+        if req_method is not None:
+            self.req_method = req_method
 
     @property
     def id(self):
@@ -381,6 +388,28 @@ class UnbindApiForAcl:
         :type auth_type: str
         """
         self._auth_type = auth_type
+
+    @property
+    def req_method(self):
+        """Gets the req_method of this UnbindApiForAcl.
+
+        API请求方法
+
+        :return: The req_method of this UnbindApiForAcl.
+        :rtype: str
+        """
+        return self._req_method
+
+    @req_method.setter
+    def req_method(self, req_method):
+        """Sets the req_method of this UnbindApiForAcl.
+
+        API请求方法
+
+        :param req_method: The req_method of this UnbindApiForAcl.
+        :type req_method: str
+        """
+        self._req_method = req_method
 
     def to_dict(self):
         """Returns the model properties as a dict"""

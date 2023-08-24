@@ -1,3 +1,418 @@
+# 3.1.56 2023-08-24
+
+HuaweiCloud SDK APIG
+
+- 新增特性
+  - 支持以下接口：
+    - ListEndpointConnections
+    - AcceptOrRejectEndpointConnections
+    - ListEndpointPermissions
+    - AddEndpointPermissions
+    - DeleteEndpointPermissions
+- 解决问题
+  - 无
+- 特性变更
+  - AssociateSignatureKeyV2
+    - 响应参数变更
+      - + bindings.req_method
+  - ListSignatureKeysBindedToApiV2
+    - 响应参数变更
+      - + bindings.req_method
+  - ListApisNotBoundWithSignatureKeyV2
+    - 响应参数变更
+      - + apis.req_method
+  - ListApisBindedToSignatureKeyV2
+    - 响应参数变更
+      - + bindings.req_method
+  - ListApisBindedToRequestThrottlingPolicyV2
+    - 响应参数变更
+      - + apis.req_method
+  - ListApisUnbindedToRequestThrottlingPolicyV2
+    - 响应参数变更
+      - + apis.req_method
+  - ListApiRuntimeDefinitionV2
+    - 响应参数变更
+      - + content_type: enum value [multipart/form-data]
+      - - content_type: enum value [multipart/form-date]
+  - ListApisBindedToAclPolicyV2
+    - 响应参数变更
+      - + apis.req_method
+  - ListApisUnbindedToAclPolicyV2
+    - 响应参数变更
+      - + apis.req_method
+  - ShowDetailsOfCustomAuthorizersV2
+    - 响应参数变更
+      - + network_type
+  - UpdateCustomAuthorizerV2
+    - 请求参数变更
+      - + network_type
+    - 响应参数变更
+      - + network_type
+  - ListInstancesV2
+    - 响应参数变更
+      - + instances.cbc_operation_locks
+      - + instances.status: enum value [Resizing,ResizeFailed,ResizeTimeout]
+      - + instances.instance_status: enum value [42,43,44]
+      - + instances.spec: enum value [PLATINUM_X2,PLATINUM_X3,PLATINUM_X4,PLATINUM_X5,PLATINUM_X6,PLATINUM_X7,PLATINUM_X8]
+  - CreateInstanceV2
+    - 请求参数变更
+      - + spec_id: enum value [PLATINUM_X2,PLATINUM_X3,PLATINUM_X4,PLATINUM_X5,PLATINUM_X6,PLATINUM_X7,PLATINUM_X8]
+  - ShowDetailsOfInstanceV2
+    - 响应参数变更
+      - + cbc_operation_locks
+      - + status: enum value [Resizing,ResizeFailed,ResizeTimeout]
+      - + instance_status: enum value [42,43,44]
+      - + spec: enum value [PLATINUM_X2,PLATINUM_X3,PLATINUM_X4,PLATINUM_X5,PLATINUM_X6,PLATINUM_X7,PLATINUM_X8]
+  - UpdateInstanceV2
+    - 响应参数变更
+      - + cbc_operation_locks
+      - + status: enum value [Resizing,ResizeFailed,ResizeTimeout]
+      - + instance_status: enum value [42,43,44]
+      - + spec: enum value [PLATINUM_X2,PLATINUM_X3,PLATINUM_X4,PLATINUM_X5,PLATINUM_X6,PLATINUM_X7,PLATINUM_X8]
+  - ShowDetailsOfApiV2
+    - 响应参数变更
+      - + content_type: enum value [multipart/form-data]
+      - - content_type: enum value [multipart/form-date]
+  - UpdateApiV2
+    - 请求参数变更
+      - + content_type: enum value [multipart/form-data]
+      - - content_type: enum value [multipart/form-date]
+    - 响应参数变更
+      - + content_type: enum value [multipart/form-data]
+      - - content_type: enum value [multipart/form-date]
+  - ListApiVersionDetailV2
+    - 响应参数变更
+      - + content_type: enum value [multipart/form-data]
+      - - content_type: enum value [multipart/form-date]
+  - CreateCustomAuthorizerV2
+    - 请求参数变更
+      - + network_type
+    - 响应参数变更
+      - + network_type
+  - ListCustomAuthorizersV2
+    - 响应参数变更
+      - + network_type
+      - + authorizer_list.network_type
+  - CreateApiV2
+    - 请求参数变更
+      - + content_type: enum value [multipart/form-data]
+      - - content_type: enum value [multipart/form-date]
+    - 响应参数变更
+      - + content_type: enum value [multipart/form-data]
+      - - content_type: enum value [multipart/form-date]
+  - ListApisV2
+    - 响应参数变更
+      - + apis.content_type: enum value [multipart/form-data]
+      - - apis.content_type: enum value [multipart/form-date]
+
+### HuaweiCloud SDK CBR
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **RestoreBackup**
+    - 请求参数变更
+      - `+ restore.details`
+
+### HuaweiCloud SDK CCM
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowCertificateAuthority**
+    - 响应参数变更
+      - `+ enterprise_project_id`
+  - **ShowCertificate**
+    - 响应参数变更
+      - `+ enterprise_project_id`
+  - **CreateCertificateAuthority**
+    - 请求参数变更
+      - `+ enterprise_project_id`
+  - **ListCertificateAuthority**
+    - 响应参数变更
+      - `+ enterprise_project_id`
+      - `+ certificate_authorities.enterprise_project_id`
+  - **CreateCertificate**
+    - 请求参数变更
+      - `+ enterprise_project_id`
+  - **ListCertificate**
+    - 响应参数变更
+      - `+ enterprise_project_id`
+      - `+ certificates.enterprise_project_id`
+
+### HuaweiCloud SDK CPTS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowAgentConfig**
+    - 响应参数变更
+      - `+ result.clickhouse_enable`
+      - `+ result.clickhouse_shadow_type`
+      - `+ result.clickhouse_shadow_repository`
+  - **UpdateAgentHealthStatus**
+    - 响应参数变更
+      - `+ result.result.clickhouse_enable`
+      - `+ result.result.clickhouse_shadow_type`
+      - `+ result.result.clickhouse_shadow_repository`
+
+### HuaweiCloud SDK EG
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateSubscriptionTarget**
+    - 请求参数变更
+      - `+ detail.url`
+      - `+ detail.agency_name`
+      - `+ detail.invocation_http_parameters`
+      - `* detail: object -> object<Detail>`
+  - **UpdateSubscriptionTarget**
+    - 请求参数变更
+      - `+ detail.url`
+      - `+ detail.agency_name`
+      - `+ detail.invocation_http_parameters`
+      - `* detail: object -> object<Detail>`
+  - **UpdateSubscription**
+    - 请求参数变更
+      - `+ targets.detail.url`
+      - `+ targets.detail.agency_name`
+      - `+ targets.detail.invocation_http_parameters`
+      - `* targets.detail: object -> object<Detail>`
+  - **CreateSubscription**
+    - 请求参数变更
+      - `+ targets.detail.url`
+      - `+ targets.detail.agency_name`
+      - `+ targets.detail.invocation_http_parameters`
+      - `* targets.detail: object -> object<Detail>`
+
+### HuaweiCloud SDK ER
+
+- _新增特性_
+  - 支持接口`AcceptAttachment`、`RejectAttachment`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK HSS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListJarPackageHostInfo**
+    - 响应参数变更
+      - `* data_list.record_time: int32 -> int64`
+
+### HuaweiCloud SDK IMS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **GlanceListImages**
+    - 响应参数变更
+      - `- __root_origin`
+      - `- min_disk`
+      - `- __image_source_type`
+      - `- container_format`
+      - `- __image_size`
+      - `- __support_xen_gpu_type`
+      - `- protected`
+      - `- __support_kvm_gpu_type`
+      - `- max_ram`
+      - `- id`
+      - `- __isregistered`
+      - `- __lazyloading`
+      - `- __data_origin`
+      - `- hw_firmware_type`
+      - `- __os_type`
+      - `- hw_vif_multiqueue_enabled`
+      - `- visibility`
+      - `- virtual_env_type`
+      - `- __image_location`
+      - `- __support_kvm`
+      - `- __support_highperformance`
+      - `- tags`
+      - `- __backup_id`
+      - `- __platform`
+      - `- enterprise_project_id`
+      - `- size`
+      - `- __support_arm`
+      - `- __support_diskintensive`
+      - `- __os_version`
+      - `- name`
+      - `- active_at`
+      - `- status`
+      - `- schema`
+      - `- __is_offshelved`
+      - `- __support_kvm_infiniband`
+      - `- created_at`
+      - `- __originalimagename`
+      - `- __support_agent_list`
+      - `- __support_amd`
+      - `- file`
+      - `- updated_at`
+      - `- __productcode`
+      - `- checksum`
+      - `- __support_fc_inject`
+      - `- __description`
+      - `- min_ram`
+      - `- owner`
+      - `- __imagetype`
+      - `- __support_xen`
+      - `- __is_config_init`
+      - `- __account_code`
+      - `- __system__cmkid`
+      - `- __os_bit`
+      - `- __support_xen_hana`
+      - `- disk_format`
+      - `- self`
+      - `- __support_largememory`
+      - `- __os_feature_list`
+      - `- virtual_size`
+      - `- __sequence_num`
+      - `+ images._sys_enterprise_project_id`
+      - `* images: list<GlanceShowImageResponseBody> -> list<GlanceShowImageListResponseBody>`
+
+### HuaweiCloud SDK IoTEdge
+
+- _新增特性_
+  - 支持以下接口：
+    - `BatchListAppConfigsTemplates`
+    - `AddAppConfigsTemplates`
+    - `ShowAppConfigsTemplate`
+    - `DeleteAppConfigsTemplate`
+    - `AddGeneralAppConfigsTemplate`
+    - `ShowModuleShadow`
+    - `UpdateModuleShadow`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **UpdateModule**
+    - 请求参数变更
+      - `+ desired_state`
+
+### HuaweiCloud SDK KooMessage
+
+- _新增特性_
+  - 支持以下接口：
+    - `ListAimMsgTemplate`
+    - `CreateAimMsgTemplate`
+    - `ShowAimMsgTemplateVariable`
+    - `SendAimBatchMessages`
+    - `SendAimBatchDifferentMessages`
+    - `DeleteAimMsgSignature`
+    - `ShowAimMsgTemplateDetail`
+    - `UpdateAimMsgTemplate`
+    - `DeleteAimMsgTemplate`
+    - `ListAimMsgSignature`
+    - `AddAimMsgSignature`
+    - `ListAimMsgApp`
+    - `CreateSmsApp`
+    - `ListAimMsgAppDetail`
+    - `UpdateAimMsgApp`
+    - `ShowAimMsgSignatureFileInfo`
+    - `UploadAimMsgSignatureFile`
+    - `ListAimMsgSignatureDetail`
+    - `UpdateAimMsgSignature`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListAimResolveDetails**
+    - 请求参数变更
+      - `+ task_name`
+    - 响应参数变更
+      - `+ resolve_details.task_name`
+  - **ListResolveTasks**
+    - 请求参数变更
+      - `+ task_name`
+    - 响应参数变更
+      - `+ resolve_tasks.task_name`
+
+### HuaweiCloud SDK LTS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateLogStream**
+    - 请求参数变更
+      - `* tags: object<tagsBody> -> list<tagsBody>`
+
+### HuaweiCloud SDK NAT
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListNatGateways**
+    - 响应参数变更
+      - `+ nat_gateways.session_conf`
+  - **CreateNatGateway**
+    - 请求参数变更
+      - `+ nat_gateway.session_conf`
+    - 响应参数变更
+      - `+ nat_gateway.session_conf`
+  - **ShowNatGateway**
+    - 响应参数变更
+      - `+ nat_gateway.session_conf`
+  - **UpdateNatGateway**
+    - 请求参数变更
+      - `+ nat_gateway.session_conf`
+    - 响应参数变更
+      - `+ nat_gateway.session_conf`
+
+### HuaweiCloud SDK OCR
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **RecognizeVatInvoice**
+    - 请求参数变更
+      - `+ page_num`
+    - 响应参数变更
+      - `+ result.invoice_tag`
+      - `+ result.sum_amount`
+      - `+ result.sum_tax`
+
+### HuaweiCloud SDK OSM
+
+- _新增特性_
+  - 支持接口`ShowLoginType`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK SIS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **RunTts**
+    - 请求参数变更
+      - `+ config.property: enum value [chinese_huaxiaoman_common,chinese_huaxiaofang_common,chinese_huaxiaojun_common]`
+
+### HuaweiCloud SDK VPC
+
 # 3.1.55 2023-08-21
 
 ### HuaweiCloud SDK EdgeSec

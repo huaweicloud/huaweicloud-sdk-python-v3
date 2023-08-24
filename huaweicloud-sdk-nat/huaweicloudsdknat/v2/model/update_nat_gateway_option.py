@@ -19,16 +19,18 @@ class UpdateNatGatewayOption:
     openapi_types = {
         'name': 'str',
         'description': 'str',
-        'spec': 'str'
+        'spec': 'str',
+        'session_conf': 'SessionConfiguration'
     }
 
     attribute_map = {
         'name': 'name',
         'description': 'description',
-        'spec': 'spec'
+        'spec': 'spec',
+        'session_conf': 'session_conf'
     }
 
-    def __init__(self, name=None, description=None, spec=None):
+    def __init__(self, name=None, description=None, spec=None, session_conf=None):
         """UpdateNatGatewayOption
 
         The model defined in huaweicloud sdk
@@ -39,6 +41,8 @@ class UpdateNatGatewayOption:
         :type description: str
         :param spec: 公网NAT网关的规格。 取值为： \&quot;1\&quot;：小型，SNAT最大连接数10000 \&quot;2\&quot;：中型，SNAT最大连接数50000 \&quot;3\&quot;：大型，SNAT最大连接数200000 \&quot;4\&quot;：超大型，SNAT最大连接数1000000 
         :type spec: str
+        :param session_conf: 
+        :type session_conf: :class:`huaweicloudsdknat.v2.SessionConfiguration`
         """
         
         
@@ -46,6 +50,7 @@ class UpdateNatGatewayOption:
         self._name = None
         self._description = None
         self._spec = None
+        self._session_conf = None
         self.discriminator = None
 
         if name is not None:
@@ -54,6 +59,8 @@ class UpdateNatGatewayOption:
             self.description = description
         if spec is not None:
             self.spec = spec
+        if session_conf is not None:
+            self.session_conf = session_conf
 
     @property
     def name(self):
@@ -120,6 +127,24 @@ class UpdateNatGatewayOption:
         :type spec: str
         """
         self._spec = spec
+
+    @property
+    def session_conf(self):
+        """Gets the session_conf of this UpdateNatGatewayOption.
+
+        :return: The session_conf of this UpdateNatGatewayOption.
+        :rtype: :class:`huaweicloudsdknat.v2.SessionConfiguration`
+        """
+        return self._session_conf
+
+    @session_conf.setter
+    def session_conf(self, session_conf):
+        """Sets the session_conf of this UpdateNatGatewayOption.
+
+        :param session_conf: The session_conf of this UpdateNatGatewayOption.
+        :type session_conf: :class:`huaweicloudsdknat.v2.SessionConfiguration`
+        """
+        self._session_conf = session_conf
 
     def to_dict(self):
         """Returns the model properties as a dict"""

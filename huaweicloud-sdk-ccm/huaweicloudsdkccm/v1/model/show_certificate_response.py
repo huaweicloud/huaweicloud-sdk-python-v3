@@ -32,7 +32,8 @@ class ShowCertificateResponse(SdkResponse):
         'not_before': 'int',
         'not_after': 'int',
         'distinguished_name': 'DistinguishedName',
-        'enc_cert_info': 'EncCertInfo'
+        'enc_cert_info': 'EncCertInfo',
+        'enterprise_project_id': 'str'
     }
 
     attribute_map = {
@@ -50,10 +51,11 @@ class ShowCertificateResponse(SdkResponse):
         'not_before': 'not_before',
         'not_after': 'not_after',
         'distinguished_name': 'distinguished_name',
-        'enc_cert_info': 'enc_cert_info'
+        'enc_cert_info': 'enc_cert_info',
+        'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, certificate_id=None, status=None, issuer_id=None, issuer_name=None, key_algorithm=None, signature_algorithm=None, freeze_flag=None, gen_mode=None, serial_number=None, create_time=None, delete_time=None, not_before=None, not_after=None, distinguished_name=None, enc_cert_info=None):
+    def __init__(self, certificate_id=None, status=None, issuer_id=None, issuer_name=None, key_algorithm=None, signature_algorithm=None, freeze_flag=None, gen_mode=None, serial_number=None, create_time=None, delete_time=None, not_before=None, not_after=None, distinguished_name=None, enc_cert_info=None, enterprise_project_id=None):
         """ShowCertificateResponse
 
         The model defined in huaweicloud sdk
@@ -88,6 +90,8 @@ class ShowCertificateResponse(SdkResponse):
         :type distinguished_name: :class:`huaweicloudsdkccm.v1.DistinguishedName`
         :param enc_cert_info: 
         :type enc_cert_info: :class:`huaweicloudsdkccm.v1.EncCertInfo`
+        :param enterprise_project_id: 企业项目ID，默认为“0”。 对于开通企业项目的用户，表示资源处于默认企业项目下。 对于未开通企业项目的用户，表示资源未处于企业项目下。
+        :type enterprise_project_id: str
         """
         
         super(ShowCertificateResponse, self).__init__()
@@ -107,6 +111,7 @@ class ShowCertificateResponse(SdkResponse):
         self._not_after = None
         self._distinguished_name = None
         self._enc_cert_info = None
+        self._enterprise_project_id = None
         self.discriminator = None
 
         if certificate_id is not None:
@@ -139,6 +144,8 @@ class ShowCertificateResponse(SdkResponse):
             self.distinguished_name = distinguished_name
         if enc_cert_info is not None:
             self.enc_cert_info = enc_cert_info
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
 
     @property
     def certificate_id(self):
@@ -461,6 +468,28 @@ class ShowCertificateResponse(SdkResponse):
         :type enc_cert_info: :class:`huaweicloudsdkccm.v1.EncCertInfo`
         """
         self._enc_cert_info = enc_cert_info
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this ShowCertificateResponse.
+
+        企业项目ID，默认为“0”。 对于开通企业项目的用户，表示资源处于默认企业项目下。 对于未开通企业项目的用户，表示资源未处于企业项目下。
+
+        :return: The enterprise_project_id of this ShowCertificateResponse.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this ShowCertificateResponse.
+
+        企业项目ID，默认为“0”。 对于开通企业项目的用户，表示资源处于默认企业项目下。 对于未开通企业项目的用户，表示资源未处于企业项目下。
+
+        :param enterprise_project_id: The enterprise_project_id of this ShowCertificateResponse.
+        :type enterprise_project_id: str
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

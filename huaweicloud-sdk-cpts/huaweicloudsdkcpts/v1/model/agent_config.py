@@ -32,7 +32,10 @@ class AgentConfig:
         'kafka_shadow_topic_prefix': 'str',
         'app_log_level': 'str',
         'app_log_path': 'str',
-        'mock_rule_list': 'list[MockRuleConfig]'
+        'mock_rule_list': 'list[MockRuleConfig]',
+        'clickhouse_enable': 'bool',
+        'clickhouse_shadow_type': 'str',
+        'clickhouse_shadow_repository': 'str'
     }
 
     attribute_map = {
@@ -51,10 +54,13 @@ class AgentConfig:
         'kafka_shadow_topic_prefix': 'kafka_shadow_topic_prefix',
         'app_log_level': 'app_log_level',
         'app_log_path': 'app_log_path',
-        'mock_rule_list': 'mock_rule_list'
+        'mock_rule_list': 'mock_rule_list',
+        'clickhouse_enable': 'clickhouse_enable',
+        'clickhouse_shadow_type': 'clickhouse_shadow_type',
+        'clickhouse_shadow_repository': 'clickhouse_shadow_repository'
     }
 
-    def __init__(self, agent_id=None, db_enable=None, db_shadow_repository=None, db_shadow_type=None, log_level=None, log_path=None, main_switch=None, redis_enable=None, redis_shadow_key_prefix=None, redis_shadow_repository=None, redis_shadow_type=None, kafka_enable=None, kafka_shadow_topic_prefix=None, app_log_level=None, app_log_path=None, mock_rule_list=None):
+    def __init__(self, agent_id=None, db_enable=None, db_shadow_repository=None, db_shadow_type=None, log_level=None, log_path=None, main_switch=None, redis_enable=None, redis_shadow_key_prefix=None, redis_shadow_repository=None, redis_shadow_type=None, kafka_enable=None, kafka_shadow_topic_prefix=None, app_log_level=None, app_log_path=None, mock_rule_list=None, clickhouse_enable=None, clickhouse_shadow_type=None, clickhouse_shadow_repository=None):
         """AgentConfig
 
         The model defined in huaweicloud sdk
@@ -91,6 +97,12 @@ class AgentConfig:
         :type app_log_path: str
         :param mock_rule_list: mock规则列表
         :type mock_rule_list: list[:class:`huaweicloudsdkcpts.v1.MockRuleConfig`]
+        :param clickhouse_enable: clickhouse影子规则开关
+        :type clickhouse_enable: bool
+        :param clickhouse_shadow_type: clickhouse影子规则类型
+        :type clickhouse_shadow_type: str
+        :param clickhouse_shadow_repository: clickhouse影子库映射信息
+        :type clickhouse_shadow_repository: str
         """
         
         
@@ -111,6 +123,9 @@ class AgentConfig:
         self._app_log_level = None
         self._app_log_path = None
         self._mock_rule_list = None
+        self._clickhouse_enable = None
+        self._clickhouse_shadow_type = None
+        self._clickhouse_shadow_repository = None
         self.discriminator = None
 
         if agent_id is not None:
@@ -145,6 +160,12 @@ class AgentConfig:
             self.app_log_path = app_log_path
         if mock_rule_list is not None:
             self.mock_rule_list = mock_rule_list
+        if clickhouse_enable is not None:
+            self.clickhouse_enable = clickhouse_enable
+        if clickhouse_shadow_type is not None:
+            self.clickhouse_shadow_type = clickhouse_shadow_type
+        if clickhouse_shadow_repository is not None:
+            self.clickhouse_shadow_repository = clickhouse_shadow_repository
 
     @property
     def agent_id(self):
@@ -497,6 +518,72 @@ class AgentConfig:
         :type mock_rule_list: list[:class:`huaweicloudsdkcpts.v1.MockRuleConfig`]
         """
         self._mock_rule_list = mock_rule_list
+
+    @property
+    def clickhouse_enable(self):
+        """Gets the clickhouse_enable of this AgentConfig.
+
+        clickhouse影子规则开关
+
+        :return: The clickhouse_enable of this AgentConfig.
+        :rtype: bool
+        """
+        return self._clickhouse_enable
+
+    @clickhouse_enable.setter
+    def clickhouse_enable(self, clickhouse_enable):
+        """Sets the clickhouse_enable of this AgentConfig.
+
+        clickhouse影子规则开关
+
+        :param clickhouse_enable: The clickhouse_enable of this AgentConfig.
+        :type clickhouse_enable: bool
+        """
+        self._clickhouse_enable = clickhouse_enable
+
+    @property
+    def clickhouse_shadow_type(self):
+        """Gets the clickhouse_shadow_type of this AgentConfig.
+
+        clickhouse影子规则类型
+
+        :return: The clickhouse_shadow_type of this AgentConfig.
+        :rtype: str
+        """
+        return self._clickhouse_shadow_type
+
+    @clickhouse_shadow_type.setter
+    def clickhouse_shadow_type(self, clickhouse_shadow_type):
+        """Sets the clickhouse_shadow_type of this AgentConfig.
+
+        clickhouse影子规则类型
+
+        :param clickhouse_shadow_type: The clickhouse_shadow_type of this AgentConfig.
+        :type clickhouse_shadow_type: str
+        """
+        self._clickhouse_shadow_type = clickhouse_shadow_type
+
+    @property
+    def clickhouse_shadow_repository(self):
+        """Gets the clickhouse_shadow_repository of this AgentConfig.
+
+        clickhouse影子库映射信息
+
+        :return: The clickhouse_shadow_repository of this AgentConfig.
+        :rtype: str
+        """
+        return self._clickhouse_shadow_repository
+
+    @clickhouse_shadow_repository.setter
+    def clickhouse_shadow_repository(self, clickhouse_shadow_repository):
+        """Sets the clickhouse_shadow_repository of this AgentConfig.
+
+        clickhouse影子库映射信息
+
+        :param clickhouse_shadow_repository: The clickhouse_shadow_repository of this AgentConfig.
+        :type clickhouse_shadow_repository: str
+        """
+        self._clickhouse_shadow_repository = clickhouse_shadow_repository
 
     def to_dict(self):
         """Returns the model properties as a dict"""

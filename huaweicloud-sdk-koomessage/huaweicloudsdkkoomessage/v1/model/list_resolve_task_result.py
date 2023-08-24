@@ -18,6 +18,7 @@ class ListResolveTaskResult:
 
     openapi_types = {
         'task_id': 'str',
+        'task_name': 'str',
         'tpl_id': 'str',
         'sms_signs': 'list[str]',
         'resolving_times': 'int',
@@ -30,6 +31,7 @@ class ListResolveTaskResult:
 
     attribute_map = {
         'task_id': 'task_id',
+        'task_name': 'task_name',
         'tpl_id': 'tpl_id',
         'sms_signs': 'sms_signs',
         'resolving_times': 'resolving_times',
@@ -40,13 +42,15 @@ class ListResolveTaskResult:
         'params': 'params'
     }
 
-    def __init__(self, task_id=None, tpl_id=None, sms_signs=None, resolving_times=None, resolved_times=None, aim_code_type=None, domain=None, expiration_time=None, params=None):
+    def __init__(self, task_id=None, task_name=None, tpl_id=None, sms_signs=None, resolving_times=None, resolved_times=None, aim_code_type=None, domain=None, expiration_time=None, params=None):
         """ListResolveTaskResult
 
         The model defined in huaweicloud sdk
 
         :param task_id: 任务ID。
         :type task_id: str
+        :param task_name: 任务名称。
+        :type task_name: str
         :param tpl_id: 智能信息模板ID，由9位数字组成。
         :type tpl_id: str
         :param sms_signs: 短信签名列表。
@@ -68,6 +72,7 @@ class ListResolveTaskResult:
         
 
         self._task_id = None
+        self._task_name = None
         self._tpl_id = None
         self._sms_signs = None
         self._resolving_times = None
@@ -80,6 +85,8 @@ class ListResolveTaskResult:
 
         if task_id is not None:
             self.task_id = task_id
+        if task_name is not None:
+            self.task_name = task_name
         if tpl_id is not None:
             self.tpl_id = tpl_id
         if sms_signs is not None:
@@ -118,6 +125,28 @@ class ListResolveTaskResult:
         :type task_id: str
         """
         self._task_id = task_id
+
+    @property
+    def task_name(self):
+        """Gets the task_name of this ListResolveTaskResult.
+
+        任务名称。
+
+        :return: The task_name of this ListResolveTaskResult.
+        :rtype: str
+        """
+        return self._task_name
+
+    @task_name.setter
+    def task_name(self, task_name):
+        """Sets the task_name of this ListResolveTaskResult.
+
+        任务名称。
+
+        :param task_name: The task_name of this ListResolveTaskResult.
+        :type task_name: str
+        """
+        self._task_name = task_name
 
     @property
     def tpl_id(self):

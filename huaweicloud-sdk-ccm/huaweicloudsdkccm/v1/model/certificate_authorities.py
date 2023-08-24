@@ -33,7 +33,8 @@ class CertificateAuthorities:
         'not_before': 'int',
         'not_after': 'int',
         'distinguished_name': 'DistinguishedName',
-        'crl_configuration': 'ListCrlConfiguration'
+        'crl_configuration': 'ListCrlConfiguration',
+        'enterprise_project_id': 'str'
     }
 
     attribute_map = {
@@ -53,10 +54,11 @@ class CertificateAuthorities:
         'not_before': 'not_before',
         'not_after': 'not_after',
         'distinguished_name': 'distinguished_name',
-        'crl_configuration': 'crl_configuration'
+        'crl_configuration': 'crl_configuration',
+        'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, ca_id=None, type=None, status=None, path_length=None, issuer_id=None, issuer_name=None, key_algorithm=None, signature_algorithm=None, freeze_flag=None, gen_mode=None, serial_number=None, create_time=None, delete_time=None, not_before=None, not_after=None, distinguished_name=None, crl_configuration=None):
+    def __init__(self, ca_id=None, type=None, status=None, path_length=None, issuer_id=None, issuer_name=None, key_algorithm=None, signature_algorithm=None, freeze_flag=None, gen_mode=None, serial_number=None, create_time=None, delete_time=None, not_before=None, not_after=None, distinguished_name=None, crl_configuration=None, enterprise_project_id=None):
         """CertificateAuthorities
 
         The model defined in huaweicloud sdk
@@ -95,6 +97,8 @@ class CertificateAuthorities:
         :type distinguished_name: :class:`huaweicloudsdkccm.v1.DistinguishedName`
         :param crl_configuration: 
         :type crl_configuration: :class:`huaweicloudsdkccm.v1.ListCrlConfiguration`
+        :param enterprise_project_id: 企业项目ID，默认为“0”。 对于开通企业项目的用户，表示资源处于默认企业项目下。 对于未开通企业项目的用户，表示资源未处于企业项目下。
+        :type enterprise_project_id: str
         """
         
         
@@ -116,6 +120,7 @@ class CertificateAuthorities:
         self._not_after = None
         self._distinguished_name = None
         self._crl_configuration = None
+        self._enterprise_project_id = None
         self.discriminator = None
 
         self.ca_id = ca_id
@@ -135,6 +140,7 @@ class CertificateAuthorities:
         self.not_after = not_after
         self.distinguished_name = distinguished_name
         self.crl_configuration = crl_configuration
+        self.enterprise_project_id = enterprise_project_id
 
     @property
     def ca_id(self):
@@ -501,6 +507,28 @@ class CertificateAuthorities:
         :type crl_configuration: :class:`huaweicloudsdkccm.v1.ListCrlConfiguration`
         """
         self._crl_configuration = crl_configuration
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this CertificateAuthorities.
+
+        企业项目ID，默认为“0”。 对于开通企业项目的用户，表示资源处于默认企业项目下。 对于未开通企业项目的用户，表示资源未处于企业项目下。
+
+        :return: The enterprise_project_id of this CertificateAuthorities.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this CertificateAuthorities.
+
+        企业项目ID，默认为“0”。 对于开通企业项目的用户，表示资源处于默认企业项目下。 对于未开通企业项目的用户，表示资源未处于企业项目下。
+
+        :param enterprise_project_id: The enterprise_project_id of this CertificateAuthorities.
+        :type enterprise_project_id: str
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

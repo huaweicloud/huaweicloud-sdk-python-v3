@@ -25,7 +25,8 @@ class CreateCertificateRequestBody:
         'key_usages': 'list[str]',
         'subject_alternative_names': 'list[SubjectAlternativeName]',
         'extended_key_usage': 'ExtendedKeyUsage',
-        'customized_extension': 'CustomizedExtension'
+        'customized_extension': 'CustomizedExtension',
+        'enterprise_project_id': 'str'
     }
 
     attribute_map = {
@@ -37,10 +38,11 @@ class CreateCertificateRequestBody:
         'key_usages': 'key_usages',
         'subject_alternative_names': 'subject_alternative_names',
         'extended_key_usage': 'extended_key_usage',
-        'customized_extension': 'customized_extension'
+        'customized_extension': 'customized_extension',
+        'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, issuer_id=None, key_algorithm=None, signature_algorithm=None, distinguished_name=None, validity=None, key_usages=None, subject_alternative_names=None, extended_key_usage=None, customized_extension=None):
+    def __init__(self, issuer_id=None, key_algorithm=None, signature_algorithm=None, distinguished_name=None, validity=None, key_usages=None, subject_alternative_names=None, extended_key_usage=None, customized_extension=None, enterprise_project_id=None):
         """CreateCertificateRequestBody
 
         The model defined in huaweicloud sdk
@@ -63,6 +65,8 @@ class CreateCertificateRequestBody:
         :type extended_key_usage: :class:`huaweicloudsdkccm.v1.ExtendedKeyUsage`
         :param customized_extension: 
         :type customized_extension: :class:`huaweicloudsdkccm.v1.CustomizedExtension`
+        :param enterprise_project_id: 企业多项目ID。用户未开通企业多项目时，不需要输入该字段。 用户开通企业多项目时，查询资源可以输入该字段。 若用户不输入该字段，默认查询租户所有有权限的企业多项目下的资源。 此时“enterprise_project_id”取值为“all”。 若用户输入该字段，取值满足以下任一条件.   取值为“all”   取值为“0”   满足正则匹配：“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”
+        :type enterprise_project_id: str
         """
         
         
@@ -76,6 +80,7 @@ class CreateCertificateRequestBody:
         self._subject_alternative_names = None
         self._extended_key_usage = None
         self._customized_extension = None
+        self._enterprise_project_id = None
         self.discriminator = None
 
         self.issuer_id = issuer_id
@@ -91,6 +96,8 @@ class CreateCertificateRequestBody:
             self.extended_key_usage = extended_key_usage
         if customized_extension is not None:
             self.customized_extension = customized_extension
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
 
     @property
     def issuer_id(self):
@@ -273,6 +280,28 @@ class CreateCertificateRequestBody:
         :type customized_extension: :class:`huaweicloudsdkccm.v1.CustomizedExtension`
         """
         self._customized_extension = customized_extension
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this CreateCertificateRequestBody.
+
+        企业多项目ID。用户未开通企业多项目时，不需要输入该字段。 用户开通企业多项目时，查询资源可以输入该字段。 若用户不输入该字段，默认查询租户所有有权限的企业多项目下的资源。 此时“enterprise_project_id”取值为“all”。 若用户输入该字段，取值满足以下任一条件.   取值为“all”   取值为“0”   满足正则匹配：“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”
+
+        :return: The enterprise_project_id of this CreateCertificateRequestBody.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this CreateCertificateRequestBody.
+
+        企业多项目ID。用户未开通企业多项目时，不需要输入该字段。 用户开通企业多项目时，查询资源可以输入该字段。 若用户不输入该字段，默认查询租户所有有权限的企业多项目下的资源。 此时“enterprise_project_id”取值为“all”。 若用户输入该字段，取值满足以下任一条件.   取值为“all”   取值为“0”   满足正则匹配：“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”
+
+        :param enterprise_project_id: The enterprise_project_id of this CreateCertificateRequestBody.
+        :type enterprise_project_id: str
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -30,7 +30,8 @@ class ApiForThrottle:
         'run_env_name': 'str',
         'group_id': 'str',
         'name': 'str',
-        'id': 'str'
+        'id': 'str',
+        'req_method': 'str'
     }
 
     attribute_map = {
@@ -47,10 +48,11 @@ class ApiForThrottle:
         'run_env_name': 'run_env_name',
         'group_id': 'group_id',
         'name': 'name',
-        'id': 'id'
+        'id': 'id',
+        'req_method': 'req_method'
     }
 
-    def __init__(self, auth_type=None, group_name=None, publish_id=None, throttle_apply_id=None, apply_time=None, remark=None, run_env_id=None, type=None, throttle_name=None, req_uri=None, run_env_name=None, group_id=None, name=None, id=None):
+    def __init__(self, auth_type=None, group_name=None, publish_id=None, throttle_apply_id=None, apply_time=None, remark=None, run_env_id=None, type=None, throttle_name=None, req_uri=None, run_env_name=None, group_id=None, name=None, id=None, req_method=None):
         """ApiForThrottle
 
         The model defined in huaweicloud sdk
@@ -83,6 +85,8 @@ class ApiForThrottle:
         :type name: str
         :param id: API编号
         :type id: str
+        :param req_method: API请求方法
+        :type req_method: str
         """
         
         
@@ -101,6 +105,7 @@ class ApiForThrottle:
         self._group_id = None
         self._name = None
         self._id = None
+        self._req_method = None
         self.discriminator = None
 
         if auth_type is not None:
@@ -131,6 +136,8 @@ class ApiForThrottle:
             self.name = name
         if id is not None:
             self.id = id
+        if req_method is not None:
+            self.req_method = req_method
 
     @property
     def auth_type(self):
@@ -439,6 +446,28 @@ class ApiForThrottle:
         :type id: str
         """
         self._id = id
+
+    @property
+    def req_method(self):
+        """Gets the req_method of this ApiForThrottle.
+
+        API请求方法
+
+        :return: The req_method of this ApiForThrottle.
+        :rtype: str
+        """
+        return self._req_method
+
+    @req_method.setter
+    def req_method(self, req_method):
+        """Sets the req_method of this ApiForThrottle.
+
+        API请求方法
+
+        :param req_method: The req_method of this ApiForThrottle.
+        :type req_method: str
+        """
+        self._req_method = req_method
 
     def to_dict(self):
         """Returns the model properties as a dict"""

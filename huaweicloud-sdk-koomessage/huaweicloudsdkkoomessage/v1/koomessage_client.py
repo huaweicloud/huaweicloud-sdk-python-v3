@@ -271,6 +271,8 @@ class KooMessageClient(Client):
         query_params = []
         if 'task_id' in local_var_params:
             query_params.append(('task_id', local_var_params['task_id']))
+        if 'task_name' in local_var_params:
+            query_params.append(('task_name', local_var_params['task_name']))
         if 'tpl_id' in local_var_params:
             query_params.append(('tpl_id', local_var_params['tpl_id']))
         if 'tpl_name' in local_var_params:
@@ -351,6 +353,8 @@ class KooMessageClient(Client):
         query_params = []
         if 'task_id' in local_var_params:
             query_params.append(('task_id', local_var_params['task_id']))
+        if 'task_name' in local_var_params:
+            query_params.append(('task_name', local_var_params['task_name']))
         if 'tpl_id' in local_var_params:
             query_params.append(('tpl_id', local_var_params['tpl_id']))
         if 'tpl_name' in local_var_params:
@@ -2159,6 +2163,1146 @@ class KooMessageClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='UploadMediaResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_sms_app(self, request):
+        """创建短信应用
+
+        该接口用于用户创建短信应用。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateSmsApp
+        :type request: :class:`huaweicloudsdkkoomessage.v1.CreateSmsAppRequest`
+        :rtype: :class:`huaweicloudsdkkoomessage.v1.CreateSmsAppResponse`
+        """
+        return self._create_sms_app_with_http_info(request)
+
+    def _create_sms_app_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v1/sms/apps',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateSmsAppResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_aim_msg_app(self, request):
+        """查询短信应用
+
+        该接口用于用户查询已创建的短信应用。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListAimMsgApp
+        :type request: :class:`huaweicloudsdkkoomessage.v1.ListAimMsgAppRequest`
+        :rtype: :class:`huaweicloudsdkkoomessage.v1.ListAimMsgAppResponse`
+        """
+        return self._list_aim_msg_app_with_http_info(request)
+
+    def _list_aim_msg_app_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'app_name' in local_var_params:
+            query_params.append(('app_name', local_var_params['app_name']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'begin_time' in local_var_params:
+            query_params.append(('begin_time', local_var_params['begin_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v1/sms/apps',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListAimMsgAppResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_aim_msg_app_detail(self, request):
+        """获取短信应用详情
+
+        该接口用于用户获取已创建的短信应用详情。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListAimMsgAppDetail
+        :type request: :class:`huaweicloudsdkkoomessage.v1.ListAimMsgAppDetailRequest`
+        :rtype: :class:`huaweicloudsdkkoomessage.v1.ListAimMsgAppDetailResponse`
+        """
+        return self._list_aim_msg_app_detail_with_http_info(request)
+
+    def _list_aim_msg_app_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'app_id' in local_var_params:
+            path_params['app_id'] = local_var_params['app_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v1/sms/apps/{app_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListAimMsgAppDetailResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_aim_msg_app(self, request):
+        """修改短信应用
+
+        该接口用于用户修改短信应用。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateAimMsgApp
+        :type request: :class:`huaweicloudsdkkoomessage.v1.UpdateAimMsgAppRequest`
+        :rtype: :class:`huaweicloudsdkkoomessage.v1.UpdateAimMsgAppResponse`
+        """
+        return self._update_aim_msg_app_with_http_info(request)
+
+    def _update_aim_msg_app_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'app_id' in local_var_params:
+            path_params['app_id'] = local_var_params['app_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v1/sms/apps/{app_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateAimMsgAppResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def send_aim_batch_different_messages(self, request):
+        """发送分批短信
+
+        该接口用于向不同用户发送不同内容的短信。
+        
+        - 前提条件
+        
+        1. 已创建短信应用。
+        2. 已申请短信签名，获取签名通道号。
+        3. 已申请短信模板，获取模板ID。
+        
+        - 注意事项
+        
+        单条短信最多允许携带500个号码，每个号码最大长度为21位。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for SendAimBatchDifferentMessages
+        :type request: :class:`huaweicloudsdkkoomessage.v1.SendAimBatchDifferentMessagesRequest`
+        :rtype: :class:`huaweicloudsdkkoomessage.v1.SendAimBatchDifferentMessagesResponse`
+        """
+        return self._send_aim_batch_different_messages_with_http_info(request)
+
+    def _send_aim_batch_different_messages_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v1/aim/sms/diff-messages',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='SendAimBatchDifferentMessagesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def send_aim_batch_messages(self, request):
+        """发送短信
+
+        向单个或多个用户发送相同内容的短信。
+        
+        - 前提条件
+        
+        1. 已创建短信应用。
+        2. 已申请短信签名，获取签名通道号。
+        3. 已申请短信模板，获取模板ID。
+        
+        - 注意事项
+        
+        最多允许携带500个号码，每个号码最大长度为21位。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for SendAimBatchMessages
+        :type request: :class:`huaweicloudsdkkoomessage.v1.SendAimBatchMessagesRequest`
+        :rtype: :class:`huaweicloudsdkkoomessage.v1.SendAimBatchMessagesResponse`
+        """
+        return self._send_aim_batch_messages_with_http_info(request)
+
+    def _send_aim_batch_messages_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v1/aim/sms/messages',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='SendAimBatchMessagesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def add_aim_msg_signature(self, request):
+        """创建短信签名
+
+        该接口用于用户创建短信签名。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for AddAimMsgSignature
+        :type request: :class:`huaweicloudsdkkoomessage.v1.AddAimMsgSignatureRequest`
+        :rtype: :class:`huaweicloudsdkkoomessage.v1.AddAimMsgSignatureResponse`
+        """
+        return self._add_aim_msg_signature_with_http_info(request)
+
+    def _add_aim_msg_signature_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v1/sms/signatures',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='AddAimMsgSignatureResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_aim_msg_signature(self, request):
+        """删除短信签名
+
+        该接口用于用户删除已创建的短信签名。删除已审核通过的签名，会同步删除该签名对应的通道号和该签名下的所有短信模板，请谨慎操作。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteAimMsgSignature
+        :type request: :class:`huaweicloudsdkkoomessage.v1.DeleteAimMsgSignatureRequest`
+        :rtype: :class:`huaweicloudsdkkoomessage.v1.DeleteAimMsgSignatureResponse`
+        """
+        return self._delete_aim_msg_signature_with_http_info(request)
+
+    def _delete_aim_msg_signature_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'signature_id' in local_var_params:
+            path_params['signature_id'] = local_var_params['signature_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v1/aim/sms/signatures/{signature_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteAimMsgSignatureResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_aim_msg_signature(self, request):
+        """查询短信签名
+
+        该接口用于用户查询已创建的短信签名。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListAimMsgSignature
+        :type request: :class:`huaweicloudsdkkoomessage.v1.ListAimMsgSignatureRequest`
+        :rtype: :class:`huaweicloudsdkkoomessage.v1.ListAimMsgSignatureResponse`
+        """
+        return self._list_aim_msg_signature_with_http_info(request)
+
+    def _list_aim_msg_signature_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'app_name' in local_var_params:
+            query_params.append(('app_name', local_var_params['app_name']))
+        if 'signature_id' in local_var_params:
+            query_params.append(('signature_id', local_var_params['signature_id']))
+        if 'signature_name' in local_var_params:
+            query_params.append(('signature_name', local_var_params['signature_name']))
+        if 'signature_type' in local_var_params:
+            query_params.append(('signature_type', local_var_params['signature_type']))
+        if 'begin_time' in local_var_params:
+            query_params.append(('begin_time', local_var_params['begin_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v1/sms/signatures',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListAimMsgSignatureResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_aim_msg_signature_detail(self, request):
+        """获取短信签名详情
+
+        该接口用于用户获取已创建的短信签名详情。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListAimMsgSignatureDetail
+        :type request: :class:`huaweicloudsdkkoomessage.v1.ListAimMsgSignatureDetailRequest`
+        :rtype: :class:`huaweicloudsdkkoomessage.v1.ListAimMsgSignatureDetailResponse`
+        """
+        return self._list_aim_msg_signature_detail_with_http_info(request)
+
+    def _list_aim_msg_signature_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'signature_id' in local_var_params:
+            path_params['signature_id'] = local_var_params['signature_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v1/sms/signatures/{signature_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListAimMsgSignatureDetailResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_aim_msg_signature_file_info(self, request):
+        """查询申请文件
+
+        该接口用于用户查询创建短信签名时上传的营业执照/授权委托书文件信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowAimMsgSignatureFileInfo
+        :type request: :class:`huaweicloudsdkkoomessage.v1.ShowAimMsgSignatureFileInfoRequest`
+        :rtype: :class:`huaweicloudsdkkoomessage.v1.ShowAimMsgSignatureFileInfoResponse`
+        """
+        return self._show_aim_msg_signature_file_info_with_http_info(request)
+
+    def _show_aim_msg_signature_file_info_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'file_id' in local_var_params:
+            query_params.append(('file_id', local_var_params['file_id']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v1/sms/signatures/files',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowAimMsgSignatureFileInfoResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_aim_msg_signature(self, request):
+        """修改短信签名
+
+        该接口用于用户更新短信签名信息，目前仅支持审核不通过的短信签名重新修改。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateAimMsgSignature
+        :type request: :class:`huaweicloudsdkkoomessage.v1.UpdateAimMsgSignatureRequest`
+        :rtype: :class:`huaweicloudsdkkoomessage.v1.UpdateAimMsgSignatureResponse`
+        """
+        return self._update_aim_msg_signature_with_http_info(request)
+
+    def _update_aim_msg_signature_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'signature_id' in local_var_params:
+            path_params['signature_id'] = local_var_params['signature_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v1/sms/signatures/{signature_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateAimMsgSignatureResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def upload_aim_msg_signature_file(self, request):
+        """上传申请文件
+
+        该接口用于用户上传创建短信签名所需的营业执照/授权委托书文件。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UploadAimMsgSignatureFile
+        :type request: :class:`huaweicloudsdkkoomessage.v1.UploadAimMsgSignatureFileRequest`
+        :rtype: :class:`huaweicloudsdkkoomessage.v1.UploadAimMsgSignatureFileResponse`
+        """
+        return self._upload_aim_msg_signature_file_with_http_info(request)
+
+    def _upload_aim_msg_signature_file_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'file_desc' in local_var_params:
+            query_params.append(('file_desc', local_var_params['file_desc']))
+
+        header_params = {}
+
+        form_params = {}
+        if 'file' in local_var_params:
+            form_params['file'] = local_var_params['file']
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['multipart/form-data'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v1/sms/signatures/files',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UploadAimMsgSignatureFileResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_aim_msg_template(self, request):
+        """创建短信模板
+
+        该接口用于用户创建短信模板。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateAimMsgTemplate
+        :type request: :class:`huaweicloudsdkkoomessage.v1.CreateAimMsgTemplateRequest`
+        :rtype: :class:`huaweicloudsdkkoomessage.v1.CreateAimMsgTemplateResponse`
+        """
+        return self._create_aim_msg_template_with_http_info(request)
+
+    def _create_aim_msg_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v1/sms/templates',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateAimMsgTemplateResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_aim_msg_template(self, request):
+        """删除短信模板
+
+        该接口用于用户删除已创建的短信模板。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteAimMsgTemplate
+        :type request: :class:`huaweicloudsdkkoomessage.v1.DeleteAimMsgTemplateRequest`
+        :rtype: :class:`huaweicloudsdkkoomessage.v1.DeleteAimMsgTemplateResponse`
+        """
+        return self._delete_aim_msg_template_with_http_info(request)
+
+    def _delete_aim_msg_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'template_id' in local_var_params:
+            path_params['template_id'] = local_var_params['template_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v1/sms/templates/{template_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteAimMsgTemplateResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_aim_msg_template(self, request):
+        """查询短信模板
+
+        该接口用于用户查询已创建的短信模板。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListAimMsgTemplate
+        :type request: :class:`huaweicloudsdkkoomessage.v1.ListAimMsgTemplateRequest`
+        :rtype: :class:`huaweicloudsdkkoomessage.v1.ListAimMsgTemplateResponse`
+        """
+        return self._list_aim_msg_template_with_http_info(request)
+
+    def _list_aim_msg_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'app_name' in local_var_params:
+            query_params.append(('app_name', local_var_params['app_name']))
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+        if 'flow_status' in local_var_params:
+            query_params.append(('flow_status', local_var_params['flow_status']))
+        if 'template_id' in local_var_params:
+            query_params.append(('template_id', local_var_params['template_id']))
+        if 'template_name' in local_var_params:
+            query_params.append(('template_name', local_var_params['template_name']))
+        if 'template_type' in local_var_params:
+            query_params.append(('template_type', local_var_params['template_type']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v1/sms/templates',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListAimMsgTemplateResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_aim_msg_template_detail(self, request):
+        """获取短信模板详情
+
+        该接口用于用户获取已创建的短信模板详情。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowAimMsgTemplateDetail
+        :type request: :class:`huaweicloudsdkkoomessage.v1.ShowAimMsgTemplateDetailRequest`
+        :rtype: :class:`huaweicloudsdkkoomessage.v1.ShowAimMsgTemplateDetailResponse`
+        """
+        return self._show_aim_msg_template_detail_with_http_info(request)
+
+    def _show_aim_msg_template_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'template_id' in local_var_params:
+            path_params['template_id'] = local_var_params['template_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v1/sms/templates/{template_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowAimMsgTemplateDetailResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_aim_msg_template_variable(self, request):
+        """查询短信模板变量
+
+        该接口用于用户查询短信模板变量。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowAimMsgTemplateVariable
+        :type request: :class:`huaweicloudsdkkoomessage.v1.ShowAimMsgTemplateVariableRequest`
+        :rtype: :class:`huaweicloudsdkkoomessage.v1.ShowAimMsgTemplateVariableResponse`
+        """
+        return self._show_aim_msg_template_variable_with_http_info(request)
+
+    def _show_aim_msg_template_variable_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'template_id' in local_var_params:
+            path_params['template_id'] = local_var_params['template_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v1/sms/templates/{template_id}/variable',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowAimMsgTemplateVariableResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_aim_msg_template(self, request):
+        """修改短信模板
+
+        该接口用于用户修改短信模板信息，目前仅支持审核不通过的短信模板重新修改。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateAimMsgTemplate
+        :type request: :class:`huaweicloudsdkkoomessage.v1.UpdateAimMsgTemplateRequest`
+        :rtype: :class:`huaweicloudsdkkoomessage.v1.UpdateAimMsgTemplateResponse`
+        """
+        return self._update_aim_msg_template_with_http_info(request)
+
+    def _update_aim_msg_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'template_id' in local_var_params:
+            path_params['template_id'] = local_var_params['template_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v1/sms/templates/{template_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateAimMsgTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

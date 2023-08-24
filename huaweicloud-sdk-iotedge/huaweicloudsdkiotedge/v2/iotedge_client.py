@@ -621,6 +621,286 @@ class IoTEdgeClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def add_app_configs_templates(self, request):
+        """添加应用配置模板
+
+        添加应用配置模板
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for AddAppConfigsTemplates
+        :type request: :class:`huaweicloudsdkiotedge.v2.AddAppConfigsTemplatesRequest`
+        :rtype: :class:`huaweicloudsdkiotedge.v2.AddAppConfigsTemplatesResponse`
+        """
+        return self._add_app_configs_templates_with_http_info(request)
+
+    def _add_app_configs_templates_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/templates/apps/configs',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='AddAppConfigsTemplatesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def add_general_app_configs_template(self, request):
+        """导入标准应用配置模板
+
+        导入标准应用配置模板
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for AddGeneralAppConfigsTemplate
+        :type request: :class:`huaweicloudsdkiotedge.v2.AddGeneralAppConfigsTemplateRequest`
+        :rtype: :class:`huaweicloudsdkiotedge.v2.AddGeneralAppConfigsTemplateResponse`
+        """
+        return self._add_general_app_configs_template_with_http_info(request)
+
+    def _add_general_app_configs_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/templates/apps/configs/import',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='AddGeneralAppConfigsTemplateResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def batch_list_app_configs_templates(self, request):
+        """查询应用配置模板列表
+
+        查询应用配置模板列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchListAppConfigsTemplates
+        :type request: :class:`huaweicloudsdkiotedge.v2.BatchListAppConfigsTemplatesRequest`
+        :rtype: :class:`huaweicloudsdkiotedge.v2.BatchListAppConfigsTemplatesResponse`
+        """
+        return self._batch_list_app_configs_templates_with_http_info(request)
+
+    def _batch_list_app_configs_templates_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/templates/apps/configs',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='BatchListAppConfigsTemplatesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_app_configs_template(self, request):
+        """删除应用配置模板
+
+        删除应用配置模板
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteAppConfigsTemplate
+        :type request: :class:`huaweicloudsdkiotedge.v2.DeleteAppConfigsTemplateRequest`
+        :rtype: :class:`huaweicloudsdkiotedge.v2.DeleteAppConfigsTemplateResponse`
+        """
+        return self._delete_app_configs_template_with_http_info(request)
+
+    def _delete_app_configs_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'tpl_id' in local_var_params:
+            path_params['tpl_id'] = local_var_params['tpl_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/templates/apps/configs/{tpl_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteAppConfigsTemplateResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_app_configs_template(self, request):
+        """查询应用配置模板详情
+
+        查询应用配置模板详情
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowAppConfigsTemplate
+        :type request: :class:`huaweicloudsdkiotedge.v2.ShowAppConfigsTemplateRequest`
+        :rtype: :class:`huaweicloudsdkiotedge.v2.ShowAppConfigsTemplateResponse`
+        """
+        return self._show_app_configs_template_with_http_info(request)
+
+    def _show_app_configs_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'tpl_id' in local_var_params:
+            path_params['tpl_id'] = local_var_params['tpl_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/templates/apps/configs/{tpl_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowAppConfigsTemplateResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def batch_list_edge_apps(self, request):
         """查询应用列表
 
@@ -2542,6 +2822,124 @@ class IoTEdgeClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='UpdateModuleStateResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_module_shadow(self, request):
+        """获取模块影子
+
+        获取模块影子信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowModuleShadow
+        :type request: :class:`huaweicloudsdkiotedge.v2.ShowModuleShadowRequest`
+        :rtype: :class:`huaweicloudsdkiotedge.v2.ShowModuleShadowResponse`
+        """
+        return self._show_module_shadow_with_http_info(request)
+
+    def _show_module_shadow_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'edge_node_id' in local_var_params:
+            path_params['edge_node_id'] = local_var_params['edge_node_id']
+        if 'module_id' in local_var_params:
+            path_params['module_id'] = local_var_params['module_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/edge-nodes/{edge_node_id}/modules/{module_id}/shadow',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowModuleShadowResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_module_shadow(self, request):
+        """更新模块影子
+
+        更新模块影子信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateModuleShadow
+        :type request: :class:`huaweicloudsdkiotedge.v2.UpdateModuleShadowRequest`
+        :rtype: :class:`huaweicloudsdkiotedge.v2.UpdateModuleShadowResponse`
+        """
+        return self._update_module_shadow_with_http_info(request)
+
+    def _update_module_shadow_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'edge_node_id' in local_var_params:
+            path_params['edge_node_id'] = local_var_params['edge_node_id']
+        if 'module_id' in local_var_params:
+            path_params['module_id'] = local_var_params['module_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/edge-nodes/{edge_node_id}/modules/{module_id}/shadow',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateModuleShadowResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

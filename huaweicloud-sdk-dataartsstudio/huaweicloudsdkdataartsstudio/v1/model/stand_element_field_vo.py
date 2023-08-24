@@ -98,8 +98,7 @@ class StandElementFieldVO:
             self.description = description
         if id is not None:
             self.id = id
-        if actived is not None:
-            self.actived = actived
+        self.actived = actived
         if required is not None:
             self.required = required
         if searchable is not None:

@@ -39,7 +39,7 @@ class CreatePubFastappModel:
 
         :param name: 快应用名。  &gt; 长度范围为1-30个字符，中文占2个字符，英文占1个字符。 
         :type name: str
-        :param logo_img: 快应用LOGO图片资源ID。  &gt; 图片格式为jpg、bmp、jpeg，分辨率大于等于192*192，比例+-0.15，大小不超过5M。参数值为上传智能信息服务号图片资源API返回的resource_id。 
+        :param logo_img: 快应用LOGO图片资源ID。  &gt; 图片格式为jpg、bmp、jpeg，分辨率大于等于192*192，大小不超过4M。参数值为上传智能信息服务号图片资源API返回的resource_id。 
         :type logo_img: str
         :param description: 快应用描述。  &gt; 长度范围为1-38个字符，中文占2个字符，英文占1个字符。 
         :type description: str
@@ -91,7 +91,7 @@ class CreatePubFastappModel:
     def logo_img(self):
         """Gets the logo_img of this CreatePubFastappModel.
 
-        快应用LOGO图片资源ID。  > 图片格式为jpg、bmp、jpeg，分辨率大于等于192*192，比例+-0.15，大小不超过5M。参数值为上传智能信息服务号图片资源API返回的resource_id。 
+        快应用LOGO图片资源ID。  > 图片格式为jpg、bmp、jpeg，分辨率大于等于192*192，大小不超过4M。参数值为上传智能信息服务号图片资源API返回的resource_id。 
 
         :return: The logo_img of this CreatePubFastappModel.
         :rtype: str
@@ -102,7 +102,7 @@ class CreatePubFastappModel:
     def logo_img(self, logo_img):
         """Sets the logo_img of this CreatePubFastappModel.
 
-        快应用LOGO图片资源ID。  > 图片格式为jpg、bmp、jpeg，分辨率大于等于192*192，比例+-0.15，大小不超过5M。参数值为上传智能信息服务号图片资源API返回的resource_id。 
+        快应用LOGO图片资源ID。  > 图片格式为jpg、bmp、jpeg，分辨率大于等于192*192，大小不超过4M。参数值为上传智能信息服务号图片资源API返回的resource_id。 
 
         :param logo_img: The logo_img of this CreatePubFastappModel.
         :type logo_img: str
