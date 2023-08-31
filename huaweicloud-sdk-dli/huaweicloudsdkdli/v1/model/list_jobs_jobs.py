@@ -35,7 +35,9 @@ class ListJobsJobs:
         'statement': 'str',
         'tags': 'list[TmsTagEntity]',
         'message': 'str',
-        'end_time': 'int'
+        'end_time': 'int',
+        'cpu_cost': 'str',
+        'output_byte': 'str'
     }
 
     attribute_map = {
@@ -57,10 +59,12 @@ class ListJobsJobs:
         'statement': 'statement',
         'tags': 'tags',
         'message': 'message',
-        'end_time': 'end_time'
+        'end_time': 'end_time',
+        'cpu_cost': 'cpu_cost',
+        'output_byte': 'output_byte'
     }
 
-    def __init__(self, job_id=None, job_type=None, queue_name=None, owner=None, start_time=None, duration=None, status=None, input_row_count=None, bad_row_count=None, input_size=None, result_count=None, database_name=None, table_name=None, with_column_header=None, detail=None, statement=None, tags=None, message=None, end_time=None):
+    def __init__(self, job_id=None, job_type=None, queue_name=None, owner=None, start_time=None, duration=None, status=None, input_row_count=None, bad_row_count=None, input_size=None, result_count=None, database_name=None, table_name=None, with_column_header=None, detail=None, statement=None, tags=None, message=None, end_time=None, cpu_cost=None, output_byte=None):
         """ListJobsJobs
 
         The model defined in huaweicloud sdk
@@ -103,6 +107,10 @@ class ListJobsJobs:
         :type message: str
         :param end_time: 作业结束的时间。是单位为“毫秒”的时间戳。
         :type end_time: int
+        :param cpu_cost: 作业的CPU累计使用量
+        :type cpu_cost: str
+        :param output_byte: 作业的输出字节数
+        :type output_byte: str
         """
         
         
@@ -126,6 +134,8 @@ class ListJobsJobs:
         self._tags = None
         self._message = None
         self._end_time = None
+        self._cpu_cost = None
+        self._output_byte = None
         self.discriminator = None
 
         self.job_id = job_id
@@ -156,6 +166,10 @@ class ListJobsJobs:
             self.message = message
         if end_time is not None:
             self.end_time = end_time
+        if cpu_cost is not None:
+            self.cpu_cost = cpu_cost
+        if output_byte is not None:
+            self.output_byte = output_byte
 
     @property
     def job_id(self):
@@ -574,6 +588,50 @@ class ListJobsJobs:
         :type end_time: int
         """
         self._end_time = end_time
+
+    @property
+    def cpu_cost(self):
+        """Gets the cpu_cost of this ListJobsJobs.
+
+        作业的CPU累计使用量
+
+        :return: The cpu_cost of this ListJobsJobs.
+        :rtype: str
+        """
+        return self._cpu_cost
+
+    @cpu_cost.setter
+    def cpu_cost(self, cpu_cost):
+        """Sets the cpu_cost of this ListJobsJobs.
+
+        作业的CPU累计使用量
+
+        :param cpu_cost: The cpu_cost of this ListJobsJobs.
+        :type cpu_cost: str
+        """
+        self._cpu_cost = cpu_cost
+
+    @property
+    def output_byte(self):
+        """Gets the output_byte of this ListJobsJobs.
+
+        作业的输出字节数
+
+        :return: The output_byte of this ListJobsJobs.
+        :rtype: str
+        """
+        return self._output_byte
+
+    @output_byte.setter
+    def output_byte(self, output_byte):
+        """Sets the output_byte of this ListJobsJobs.
+
+        作业的输出字节数
+
+        :param output_byte: The output_byte of this ListJobsJobs.
+        :type output_byte: str
+        """
+        self._output_byte = output_byte
 
     def to_dict(self):
         """Returns the model properties as a dict"""

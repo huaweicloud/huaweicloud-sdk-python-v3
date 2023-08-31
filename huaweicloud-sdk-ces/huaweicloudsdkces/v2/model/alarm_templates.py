@@ -21,11 +21,7 @@ class AlarmTemplates:
         'template_name': 'str',
         'template_type': 'TemplateType',
         'create_time': 'datetime',
-        'template_description': 'str',
-        'association_alarm_total': 'int',
-        'policy_total': 'int',
-        'policy_statistics': 'list[PolicyStatistics]',
-        'association_resource_groups': 'list[AssociationResourceGroup]'
+        'template_description': 'str'
     }
 
     attribute_map = {
@@ -33,14 +29,10 @@ class AlarmTemplates:
         'template_name': 'template_name',
         'template_type': 'template_type',
         'create_time': 'create_time',
-        'template_description': 'template_description',
-        'association_alarm_total': 'association_alarm_total',
-        'policy_total': 'policy_total',
-        'policy_statistics': 'policy_statistics',
-        'association_resource_groups': 'association_resource_groups'
+        'template_description': 'template_description'
     }
 
-    def __init__(self, template_id=None, template_name=None, template_type=None, create_time=None, template_description=None, association_alarm_total=None, policy_total=None, policy_statistics=None, association_resource_groups=None):
+    def __init__(self, template_id=None, template_name=None, template_type=None, create_time=None, template_description=None):
         """AlarmTemplates
 
         The model defined in huaweicloud sdk
@@ -55,14 +47,6 @@ class AlarmTemplates:
         :type create_time: datetime
         :param template_description: 告警模板的描述，长度范围[0,256]，该字段默认值为空字符串
         :type template_description: str
-        :param association_alarm_total: 告警模板关联的告警规则数目
-        :type association_alarm_total: int
-        :param policy_total: 告警模板的告警策略总数
-        :type policy_total: int
-        :param policy_statistics: 服务列表告警策略数目统计
-        :type policy_statistics: list[:class:`huaweicloudsdkces.v2.PolicyStatistics`]
-        :param association_resource_groups: 关联的资源分组
-        :type association_resource_groups: list[:class:`huaweicloudsdkces.v2.AssociationResourceGroup`]
         """
         
         
@@ -72,23 +56,14 @@ class AlarmTemplates:
         self._template_type = None
         self._create_time = None
         self._template_description = None
-        self._association_alarm_total = None
-        self._policy_total = None
-        self._policy_statistics = None
-        self._association_resource_groups = None
         self.discriminator = None
 
         self.template_id = template_id
         self.template_name = template_name
         self.template_type = template_type
         self.create_time = create_time
-        self.template_description = template_description
-        if association_alarm_total is not None:
-            self.association_alarm_total = association_alarm_total
-        self.policy_total = policy_total
-        self.policy_statistics = policy_statistics
-        if association_resource_groups is not None:
-            self.association_resource_groups = association_resource_groups
+        if template_description is not None:
+            self.template_description = template_description
 
     @property
     def template_id(self):
@@ -195,94 +170,6 @@ class AlarmTemplates:
         :type template_description: str
         """
         self._template_description = template_description
-
-    @property
-    def association_alarm_total(self):
-        """Gets the association_alarm_total of this AlarmTemplates.
-
-        告警模板关联的告警规则数目
-
-        :return: The association_alarm_total of this AlarmTemplates.
-        :rtype: int
-        """
-        return self._association_alarm_total
-
-    @association_alarm_total.setter
-    def association_alarm_total(self, association_alarm_total):
-        """Sets the association_alarm_total of this AlarmTemplates.
-
-        告警模板关联的告警规则数目
-
-        :param association_alarm_total: The association_alarm_total of this AlarmTemplates.
-        :type association_alarm_total: int
-        """
-        self._association_alarm_total = association_alarm_total
-
-    @property
-    def policy_total(self):
-        """Gets the policy_total of this AlarmTemplates.
-
-        告警模板的告警策略总数
-
-        :return: The policy_total of this AlarmTemplates.
-        :rtype: int
-        """
-        return self._policy_total
-
-    @policy_total.setter
-    def policy_total(self, policy_total):
-        """Sets the policy_total of this AlarmTemplates.
-
-        告警模板的告警策略总数
-
-        :param policy_total: The policy_total of this AlarmTemplates.
-        :type policy_total: int
-        """
-        self._policy_total = policy_total
-
-    @property
-    def policy_statistics(self):
-        """Gets the policy_statistics of this AlarmTemplates.
-
-        服务列表告警策略数目统计
-
-        :return: The policy_statistics of this AlarmTemplates.
-        :rtype: list[:class:`huaweicloudsdkces.v2.PolicyStatistics`]
-        """
-        return self._policy_statistics
-
-    @policy_statistics.setter
-    def policy_statistics(self, policy_statistics):
-        """Sets the policy_statistics of this AlarmTemplates.
-
-        服务列表告警策略数目统计
-
-        :param policy_statistics: The policy_statistics of this AlarmTemplates.
-        :type policy_statistics: list[:class:`huaweicloudsdkces.v2.PolicyStatistics`]
-        """
-        self._policy_statistics = policy_statistics
-
-    @property
-    def association_resource_groups(self):
-        """Gets the association_resource_groups of this AlarmTemplates.
-
-        关联的资源分组
-
-        :return: The association_resource_groups of this AlarmTemplates.
-        :rtype: list[:class:`huaweicloudsdkces.v2.AssociationResourceGroup`]
-        """
-        return self._association_resource_groups
-
-    @association_resource_groups.setter
-    def association_resource_groups(self, association_resource_groups):
-        """Sets the association_resource_groups of this AlarmTemplates.
-
-        关联的资源分组
-
-        :param association_resource_groups: The association_resource_groups of this AlarmTemplates.
-        :type association_resource_groups: list[:class:`huaweicloudsdkces.v2.AssociationResourceGroup`]
-        """
-        self._association_resource_groups = association_resource_groups
 
     def to_dict(self):
         """Returns the model properties as a dict"""

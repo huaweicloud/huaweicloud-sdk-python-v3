@@ -1759,6 +1759,64 @@ class OcrClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def recognize_smart_document_recognizer(self, request):
+        """智能文档解析
+
+        对证件、票据、表单等任意版式文档进行键值对提取、文字识别、以及表格识别等任务，实现进阶高效的自动化结构化返回。该接口的使用限制请参见[约束与限制](https://support.huaweicloud.com/productdesc-ocr/ocr_01_0006.html#section11)，详细使用指导请参见[OCR服务使用简介](https://support.huaweicloud.com/qs-ocr/ocr_05_0001.html)章节。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for RecognizeSmartDocumentRecognizer
+        :type request: :class:`huaweicloudsdkocr.v1.RecognizeSmartDocumentRecognizerRequest`
+        :rtype: :class:`huaweicloudsdkocr.v1.RecognizeSmartDocumentRecognizerResponse`
+        """
+        return self._recognize_smart_document_recognizer_with_http_info(request)
+
+    def _recognize_smart_document_recognizer_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/ocr/smart-document-recognizer',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='RecognizeSmartDocumentRecognizerResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def recognize_taxi_invoice(self, request):
         """出租车发票识别
 

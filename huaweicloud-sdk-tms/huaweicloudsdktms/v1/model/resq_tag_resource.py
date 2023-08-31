@@ -20,6 +20,7 @@ class ResqTagResource:
         'project_id': 'str',
         'resource_types': 'list[str]',
         'tags': 'list[Tag]',
+        'without_any_tag': 'bool',
         'offset': 'int',
         'limit': 'int'
     }
@@ -28,11 +29,12 @@ class ResqTagResource:
         'project_id': 'project_id',
         'resource_types': 'resource_types',
         'tags': 'tags',
+        'without_any_tag': 'without_any_tag',
         'offset': 'offset',
         'limit': 'limit'
     }
 
-    def __init__(self, project_id=None, resource_types=None, tags=None, offset=None, limit=None):
+    def __init__(self, project_id=None, resource_types=None, tags=None, without_any_tag=None, offset=None, limit=None):
         """ResqTagResource
 
         The model defined in huaweicloud sdk
@@ -43,6 +45,8 @@ class ResqTagResource:
         :type resource_types: list[str]
         :param tags: 标签列表
         :type tags: list[:class:`huaweicloudsdktms.v1.Tag`]
+        :param without_any_tag: 是否仅查询未带标签的资源。该字段为true时查询不带标签的资源。
+        :type without_any_tag: bool
         :param offset: 索引位置， 从offset指定的下一条数据开始查询，必须为数字，不能为负数，默认为0。
         :type offset: int
         :param limit: 查询记录数，不传默认为200，limit最多为200, 最小值为1。
@@ -54,6 +58,7 @@ class ResqTagResource:
         self._project_id = None
         self._resource_types = None
         self._tags = None
+        self._without_any_tag = None
         self._offset = None
         self._limit = None
         self.discriminator = None
@@ -62,6 +67,8 @@ class ResqTagResource:
             self.project_id = project_id
         self.resource_types = resource_types
         self.tags = tags
+        if without_any_tag is not None:
+            self.without_any_tag = without_any_tag
         if offset is not None:
             self.offset = offset
         if limit is not None:
@@ -132,6 +139,28 @@ class ResqTagResource:
         :type tags: list[:class:`huaweicloudsdktms.v1.Tag`]
         """
         self._tags = tags
+
+    @property
+    def without_any_tag(self):
+        """Gets the without_any_tag of this ResqTagResource.
+
+        是否仅查询未带标签的资源。该字段为true时查询不带标签的资源。
+
+        :return: The without_any_tag of this ResqTagResource.
+        :rtype: bool
+        """
+        return self._without_any_tag
+
+    @without_any_tag.setter
+    def without_any_tag(self, without_any_tag):
+        """Sets the without_any_tag of this ResqTagResource.
+
+        是否仅查询未带标签的资源。该字段为true时查询不带标签的资源。
+
+        :param without_any_tag: The without_any_tag of this ResqTagResource.
+        :type without_any_tag: bool
+        """
+        self._without_any_tag = without_any_tag
 
     @property
     def offset(self):

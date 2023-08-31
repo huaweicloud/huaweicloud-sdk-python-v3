@@ -37,6 +37,7 @@ class ShowInstanceResponse(SdkResponse):
         'ip': 'str',
         'instance_backup_policy': 'InstanceBackupPolicy',
         'az_codes': 'list[str]',
+        'available_zones': 'list[str]',
         'access_user': 'str',
         'instance_id': 'str',
         'port': 'int',
@@ -101,6 +102,7 @@ class ShowInstanceResponse(SdkResponse):
         'ip': 'ip',
         'instance_backup_policy': 'instance_backup_policy',
         'az_codes': 'az_codes',
+        'available_zones': 'available_zones',
         'access_user': 'access_user',
         'instance_id': 'instance_id',
         'port': 'port',
@@ -145,7 +147,7 @@ class ShowInstanceResponse(SdkResponse):
         'inquery_spec_code': 'inquery_spec_code'
     }
 
-    def __init__(self, vpc_name=None, charging_mode=None, vpc_id=None, user_name=None, created_at=None, description=None, security_group_id=None, security_group_name=None, max_memory=None, used_memory=None, capacity=None, capacity_minor=None, maintain_begin=None, maintain_end=None, engine=None, no_password_access=None, ip=None, instance_backup_policy=None, az_codes=None, access_user=None, instance_id=None, port=None, user_id=None, name=None, spec_code=None, subnet_id=None, subnet_name=None, subnet_cidr=None, engine_version=None, order_id=None, status=None, domain_name=None, readonly_domain_name=None, enable_publicip=None, publicip_id=None, publicip_address=None, enable_ssl=None, service_upgrade=None, service_task_id=None, enterprise_project_id=None, backend_addrs=None, features=None, domain_name_info=None, transparent_client_ip_enable=None, sub_status=None, tags=None, cpu_type=None, enterprise_project_name=None, update_at=None, product_type=None, storage_type=None, launched_at=None, cache_mode=None, support_slow_log_flag=None, db_number=None, replica_count=None, sharding_count=None, bandwidth_info=None, cloud_service_type_code=None, cloud_resource_type_code=None, inquery_spec_code=None):
+    def __init__(self, vpc_name=None, charging_mode=None, vpc_id=None, user_name=None, created_at=None, description=None, security_group_id=None, security_group_name=None, max_memory=None, used_memory=None, capacity=None, capacity_minor=None, maintain_begin=None, maintain_end=None, engine=None, no_password_access=None, ip=None, instance_backup_policy=None, az_codes=None, available_zones=None, access_user=None, instance_id=None, port=None, user_id=None, name=None, spec_code=None, subnet_id=None, subnet_name=None, subnet_cidr=None, engine_version=None, order_id=None, status=None, domain_name=None, readonly_domain_name=None, enable_publicip=None, publicip_id=None, publicip_address=None, enable_ssl=None, service_upgrade=None, service_task_id=None, enterprise_project_id=None, backend_addrs=None, features=None, domain_name_info=None, transparent_client_ip_enable=None, sub_status=None, tags=None, cpu_type=None, enterprise_project_name=None, update_at=None, product_type=None, storage_type=None, launched_at=None, cache_mode=None, support_slow_log_flag=None, db_number=None, replica_count=None, sharding_count=None, bandwidth_info=None, cloud_service_type_code=None, cloud_resource_type_code=None, inquery_spec_code=None):
         """ShowInstanceResponse
 
         The model defined in huaweicloud sdk
@@ -188,6 +190,8 @@ class ShowInstanceResponse(SdkResponse):
         :type instance_backup_policy: :class:`huaweicloudsdkdcs.v2.InstanceBackupPolicy`
         :param az_codes: 实例所在的可用区。返回“可用区Code”
         :type az_codes: list[str]
+        :param available_zones: 实例所在的可用区id。返回\&quot;可用区ID\&quot;
+        :type available_zones: list[str]
         :param access_user: 通过密码认证访问缓存实例的认证用户名。
         :type access_user: str
         :param instance_id: 实例ID。
@@ -295,6 +299,7 @@ class ShowInstanceResponse(SdkResponse):
         self._ip = None
         self._instance_backup_policy = None
         self._az_codes = None
+        self._available_zones = None
         self._access_user = None
         self._instance_id = None
         self._port = None
@@ -377,6 +382,8 @@ class ShowInstanceResponse(SdkResponse):
             self.instance_backup_policy = instance_backup_policy
         if az_codes is not None:
             self.az_codes = az_codes
+        if available_zones is not None:
+            self.available_zones = available_zones
         if access_user is not None:
             self.access_user = access_user
         if instance_id is not None:
@@ -875,6 +882,28 @@ class ShowInstanceResponse(SdkResponse):
         :type az_codes: list[str]
         """
         self._az_codes = az_codes
+
+    @property
+    def available_zones(self):
+        """Gets the available_zones of this ShowInstanceResponse.
+
+        实例所在的可用区id。返回\"可用区ID\"
+
+        :return: The available_zones of this ShowInstanceResponse.
+        :rtype: list[str]
+        """
+        return self._available_zones
+
+    @available_zones.setter
+    def available_zones(self, available_zones):
+        """Sets the available_zones of this ShowInstanceResponse.
+
+        实例所在的可用区id。返回\"可用区ID\"
+
+        :param available_zones: The available_zones of this ShowInstanceResponse.
+        :type available_zones: list[str]
+        """
+        self._available_zones = available_zones
 
     @property
     def access_user(self):

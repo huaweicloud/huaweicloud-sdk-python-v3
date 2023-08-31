@@ -20,17 +20,19 @@ class ExportGraphReq:
         'graph_export_path': 'str',
         'edge_set_name': 'str',
         'vertex_set_name': 'str',
-        'schema_name': 'str'
+        'schema_name': 'str',
+        'paginate': 'ExportGraphReqPaginate'
     }
 
     attribute_map = {
         'graph_export_path': 'graph_export_path',
         'edge_set_name': 'edge_set_name',
         'vertex_set_name': 'vertex_set_name',
-        'schema_name': 'schema_name'
+        'schema_name': 'schema_name',
+        'paginate': 'paginate'
     }
 
-    def __init__(self, graph_export_path=None, edge_set_name=None, vertex_set_name=None, schema_name=None):
+    def __init__(self, graph_export_path=None, edge_set_name=None, vertex_set_name=None, schema_name=None, paginate=None):
         """ExportGraphReq
 
         The model defined in huaweicloud sdk
@@ -43,6 +45,8 @@ class ExportGraphReq:
         :type vertex_set_name: str
         :param schema_name: 导出元数据文件名。
         :type schema_name: str
+        :param paginate: 
+        :type paginate: :class:`huaweicloudsdkges.v2.ExportGraphReqPaginate`
         """
         
         
@@ -51,12 +55,15 @@ class ExportGraphReq:
         self._edge_set_name = None
         self._vertex_set_name = None
         self._schema_name = None
+        self._paginate = None
         self.discriminator = None
 
         self.graph_export_path = graph_export_path
         self.edge_set_name = edge_set_name
         self.vertex_set_name = vertex_set_name
         self.schema_name = schema_name
+        if paginate is not None:
+            self.paginate = paginate
 
     @property
     def graph_export_path(self):
@@ -145,6 +152,24 @@ class ExportGraphReq:
         :type schema_name: str
         """
         self._schema_name = schema_name
+
+    @property
+    def paginate(self):
+        """Gets the paginate of this ExportGraphReq.
+
+        :return: The paginate of this ExportGraphReq.
+        :rtype: :class:`huaweicloudsdkges.v2.ExportGraphReqPaginate`
+        """
+        return self._paginate
+
+    @paginate.setter
+    def paginate(self, paginate):
+        """Sets the paginate of this ExportGraphReq.
+
+        :param paginate: The paginate of this ExportGraphReq.
+        :type paginate: :class:`huaweicloudsdkges.v2.ExportGraphReqPaginate`
+        """
+        self._paginate = paginate
 
     def to_dict(self):
         """Returns the model properties as a dict"""

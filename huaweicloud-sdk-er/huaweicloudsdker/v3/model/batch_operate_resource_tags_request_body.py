@@ -18,17 +18,15 @@ class BatchOperateResourceTagsRequestBody:
 
     openapi_types = {
         'action': 'str',
-        'tags': 'list[Tag]',
-        'sys_tags': 'list[Tag]'
+        'tags': 'list[Tag]'
     }
 
     attribute_map = {
         'action': 'action',
-        'tags': 'tags',
-        'sys_tags': 'sys_tags'
+        'tags': 'tags'
     }
 
-    def __init__(self, action=None, tags=None, sys_tags=None):
+    def __init__(self, action=None, tags=None):
         """BatchOperateResourceTagsRequestBody
 
         The model defined in huaweicloud sdk
@@ -37,22 +35,17 @@ class BatchOperateResourceTagsRequestBody:
         :type action: str
         :param tags: 标签列表。
         :type tags: list[:class:`huaweicloudsdker.v3.Tag`]
-        :param sys_tags: 标签列表。
-        :type sys_tags: list[:class:`huaweicloudsdker.v3.Tag`]
         """
         
         
 
         self._action = None
         self._tags = None
-        self._sys_tags = None
         self.discriminator = None
 
         self.action = action
         if tags is not None:
             self.tags = tags
-        if sys_tags is not None:
-            self.sys_tags = sys_tags
 
     @property
     def action(self):
@@ -97,28 +90,6 @@ class BatchOperateResourceTagsRequestBody:
         :type tags: list[:class:`huaweicloudsdker.v3.Tag`]
         """
         self._tags = tags
-
-    @property
-    def sys_tags(self):
-        """Gets the sys_tags of this BatchOperateResourceTagsRequestBody.
-
-        标签列表。
-
-        :return: The sys_tags of this BatchOperateResourceTagsRequestBody.
-        :rtype: list[:class:`huaweicloudsdker.v3.Tag`]
-        """
-        return self._sys_tags
-
-    @sys_tags.setter
-    def sys_tags(self, sys_tags):
-        """Sets the sys_tags of this BatchOperateResourceTagsRequestBody.
-
-        标签列表。
-
-        :param sys_tags: The sys_tags of this BatchOperateResourceTagsRequestBody.
-        :type sys_tags: list[:class:`huaweicloudsdker.v3.Tag`]
-        """
-        self._sys_tags = sys_tags
 
     def to_dict(self):
         """Returns the model properties as a dict"""

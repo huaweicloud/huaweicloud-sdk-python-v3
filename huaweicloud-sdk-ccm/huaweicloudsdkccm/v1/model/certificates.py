@@ -129,7 +129,8 @@ class Certificates:
         self.distinguished_name = distinguished_name
         if enc_cert_info is not None:
             self.enc_cert_info = enc_cert_info
-        self.enterprise_project_id = enterprise_project_id
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
 
     @property
     def certificate_id(self):

@@ -18,17 +18,15 @@ class CreateSpecCert:
 
     openapi_types = {
         'crt': 'str',
-        'key': 'str',
-        'policy': 'str'
+        'key': 'str'
     }
 
     attribute_map = {
         'crt': 'crt',
-        'key': 'key',
-        'policy': 'policy'
+        'key': 'key'
     }
 
-    def __init__(self, crt=None, key=None, policy=None):
+    def __init__(self, crt=None, key=None):
         """CreateSpecCert
 
         The model defined in huaweicloud sdk
@@ -37,20 +35,16 @@ class CreateSpecCert:
         :type crt: str
         :param key: 私钥内容。
         :type key: str
-        :param policy: 安全策略。 - tls-1-2-strict - tls-1-2 - tls-1-1 - tls-1-0
-        :type policy: str
         """
         
         
 
         self._crt = None
         self._key = None
-        self._policy = None
         self.discriminator = None
 
         self.crt = crt
         self.key = key
-        self.policy = policy
 
     @property
     def crt(self):
@@ -95,28 +89,6 @@ class CreateSpecCert:
         :type key: str
         """
         self._key = key
-
-    @property
-    def policy(self):
-        """Gets the policy of this CreateSpecCert.
-
-        安全策略。 - tls-1-2-strict - tls-1-2 - tls-1-1 - tls-1-0
-
-        :return: The policy of this CreateSpecCert.
-        :rtype: str
-        """
-        return self._policy
-
-    @policy.setter
-    def policy(self, policy):
-        """Sets the policy of this CreateSpecCert.
-
-        安全策略。 - tls-1-2-strict - tls-1-2 - tls-1-1 - tls-1-0
-
-        :param policy: The policy of this CreateSpecCert.
-        :type policy: str
-        """
-        self._policy = policy
 
     def to_dict(self):
         """Returns the model properties as a dict"""

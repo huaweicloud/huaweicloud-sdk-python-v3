@@ -45,7 +45,7 @@ class PermissionGroupDetail:
         :type can_delete: bool
         :param can_add_host: 是否有添加主机权限
         :type can_add_host: bool
-        :param can_manage: 是否有管理权限
+        :param can_manage: 是否有编辑主机集群权限矩阵的权限
         :type can_manage: bool
         """
         
@@ -161,7 +161,7 @@ class PermissionGroupDetail:
     def can_manage(self):
         """Gets the can_manage of this PermissionGroupDetail.
 
-        是否有管理权限
+        是否有编辑主机集群权限矩阵的权限
 
         :return: The can_manage of this PermissionGroupDetail.
         :rtype: bool
@@ -172,7 +172,7 @@ class PermissionGroupDetail:
     def can_manage(self, can_manage):
         """Sets the can_manage of this PermissionGroupDetail.
 
-        是否有管理权限
+        是否有编辑主机集群权限矩阵的权限
 
         :param can_manage: The can_manage of this PermissionGroupDetail.
         :type can_manage: bool

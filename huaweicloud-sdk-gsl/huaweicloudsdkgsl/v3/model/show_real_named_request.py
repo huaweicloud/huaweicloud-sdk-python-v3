@@ -17,34 +17,41 @@ class ShowRealNamedRequest:
     sensitive_list = []
 
     openapi_types = {
-        'sim_card_id': 'int'
+        'sim_card_id': 'int',
+        'iccid': 'str'
     }
 
     attribute_map = {
-        'sim_card_id': 'sim_card_id'
+        'sim_card_id': 'sim_card_id',
+        'iccid': 'iccid'
     }
 
-    def __init__(self, sim_card_id=None):
+    def __init__(self, sim_card_id=None, iccid=None):
         """ShowRealNamedRequest
 
         The model defined in huaweicloud sdk
 
-        :param sim_card_id: SIM卡标识，可通过[查询SIM卡列表接口](https://support.huaweicloud.com/api-ocgsl/gsl_07_0008.html)获取
+        :param sim_card_id: SIM卡标识，如果SIM卡标识传0则表示需要根据iccid处理。可通过[查询SIM卡列表接口](https://support.huaweicloud.com/api-ocgsl/gsl_07_0008.html)获取
         :type sim_card_id: int
+        :param iccid: iccid，传入的sim_card_id为0,则根据iccid进行处理
+        :type iccid: str
         """
         
         
 
         self._sim_card_id = None
+        self._iccid = None
         self.discriminator = None
 
         self.sim_card_id = sim_card_id
+        if iccid is not None:
+            self.iccid = iccid
 
     @property
     def sim_card_id(self):
         """Gets the sim_card_id of this ShowRealNamedRequest.
 
-        SIM卡标识，可通过[查询SIM卡列表接口](https://support.huaweicloud.com/api-ocgsl/gsl_07_0008.html)获取
+        SIM卡标识，如果SIM卡标识传0则表示需要根据iccid处理。可通过[查询SIM卡列表接口](https://support.huaweicloud.com/api-ocgsl/gsl_07_0008.html)获取
 
         :return: The sim_card_id of this ShowRealNamedRequest.
         :rtype: int
@@ -55,12 +62,34 @@ class ShowRealNamedRequest:
     def sim_card_id(self, sim_card_id):
         """Sets the sim_card_id of this ShowRealNamedRequest.
 
-        SIM卡标识，可通过[查询SIM卡列表接口](https://support.huaweicloud.com/api-ocgsl/gsl_07_0008.html)获取
+        SIM卡标识，如果SIM卡标识传0则表示需要根据iccid处理。可通过[查询SIM卡列表接口](https://support.huaweicloud.com/api-ocgsl/gsl_07_0008.html)获取
 
         :param sim_card_id: The sim_card_id of this ShowRealNamedRequest.
         :type sim_card_id: int
         """
         self._sim_card_id = sim_card_id
+
+    @property
+    def iccid(self):
+        """Gets the iccid of this ShowRealNamedRequest.
+
+        iccid，传入的sim_card_id为0,则根据iccid进行处理
+
+        :return: The iccid of this ShowRealNamedRequest.
+        :rtype: str
+        """
+        return self._iccid
+
+    @iccid.setter
+    def iccid(self, iccid):
+        """Sets the iccid of this ShowRealNamedRequest.
+
+        iccid，传入的sim_card_id为0,则根据iccid进行处理
+
+        :param iccid: The iccid of this ShowRealNamedRequest.
+        :type iccid: str
+        """
+        self._iccid = iccid
 
     def to_dict(self):
         """Returns the model properties as a dict"""

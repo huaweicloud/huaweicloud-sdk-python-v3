@@ -19,16 +19,18 @@ class ResourceGroup:
     openapi_types = {
         'namespace': 'str',
         'dimensions': 'list[MetricsDimension]',
-        'status': 'str'
+        'status': 'str',
+        'event_type': 'int'
     }
 
     attribute_map = {
         'namespace': 'namespace',
         'dimensions': 'dimensions',
-        'status': 'status'
+        'status': 'status',
+        'event_type': 'event_type'
     }
 
-    def __init__(self, namespace=None, dimensions=None, status=None):
+    def __init__(self, namespace=None, dimensions=None, status=None, event_type=None):
         """ResourceGroup
 
         The model defined in huaweicloud sdk
@@ -39,6 +41,8 @@ class ResourceGroup:
         :type dimensions: list[:class:`huaweicloudsdkces.v1.MetricsDimension`]
         :param status: 资源分组中该资源的当前状态，值可为health、unhealth、no_alarm_rule；health表示健康，unhealth表示不健康，no_alarm_rule表示未设置告警规则。
         :type status: str
+        :param event_type: 事件类型，默认为0。
+        :type event_type: int
         """
         
         
@@ -46,6 +50,7 @@ class ResourceGroup:
         self._namespace = None
         self._dimensions = None
         self._status = None
+        self._event_type = None
         self.discriminator = None
 
         if namespace is not None:
@@ -54,6 +59,8 @@ class ResourceGroup:
             self.dimensions = dimensions
         if status is not None:
             self.status = status
+        if event_type is not None:
+            self.event_type = event_type
 
     @property
     def namespace(self):
@@ -120,6 +127,28 @@ class ResourceGroup:
         :type status: str
         """
         self._status = status
+
+    @property
+    def event_type(self):
+        """Gets the event_type of this ResourceGroup.
+
+        事件类型，默认为0。
+
+        :return: The event_type of this ResourceGroup.
+        :rtype: int
+        """
+        return self._event_type
+
+    @event_type.setter
+    def event_type(self, event_type):
+        """Sets the event_type of this ResourceGroup.
+
+        事件类型，默认为0。
+
+        :param event_type: The event_type of this ResourceGroup.
+        :type event_type: int
+        """
+        self._event_type = event_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

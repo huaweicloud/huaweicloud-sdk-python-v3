@@ -18,29 +18,39 @@ class ResourceGroupInfo:
 
     openapi_types = {
         'group_name': 'str',
+        'type': 'str',
+        'relation_ids': 'list[str]',
         'group_id': 'str',
         'create_time': 'int',
         'instance_statistics': 'InstanceStatistics',
         'status': 'str',
-        'enterprise_project_id': 'str'
+        'enterprise_project_id': 'str',
+        'resources': 'list[Resource]'
     }
 
     attribute_map = {
         'group_name': 'group_name',
+        'type': 'type',
+        'relation_ids': 'relation_ids',
         'group_id': 'group_id',
         'create_time': 'create_time',
         'instance_statistics': 'instance_statistics',
         'status': 'status',
-        'enterprise_project_id': 'enterprise_project_id'
+        'enterprise_project_id': 'enterprise_project_id',
+        'resources': 'resources'
     }
 
-    def __init__(self, group_name=None, group_id=None, create_time=None, instance_statistics=None, status=None, enterprise_project_id=None):
+    def __init__(self, group_name=None, type=None, relation_ids=None, group_id=None, create_time=None, instance_statistics=None, status=None, enterprise_project_id=None, resources=None):
         """ResourceGroupInfo
 
         The model defined in huaweicloud sdk
 
         :param group_name: 资源分组的名称，如：ResourceGroup-Test01。
         :type group_name: str
+        :param type: 资源分组添加资源方式，EPS：同步企业项目，TAG：标签动态匹配，空值：手动添加；
+        :type type: str
+        :param relation_ids: 企业项目ID列表
+        :type relation_ids: list[str]
         :param group_id: 资源分组的ID，如：rg1603786526428bWbVmk4rP。
         :type group_id: str
         :param create_time: 资源分组的创建时间，UNIX时间戳，单位毫秒；如：1603819753000。
@@ -51,20 +61,29 @@ class ResourceGroupInfo:
         :type status: str
         :param enterprise_project_id: 创建资源分组时关联的企业项目，默认值为0，表示企业项目为default。
         :type enterprise_project_id: str
+        :param resources: 一组或者多个资源信息，默认为空。
+        :type resources: list[:class:`huaweicloudsdkces.v1.Resource`]
         """
         
         
 
         self._group_name = None
+        self._type = None
+        self._relation_ids = None
         self._group_id = None
         self._create_time = None
         self._instance_statistics = None
         self._status = None
         self._enterprise_project_id = None
+        self._resources = None
         self.discriminator = None
 
         if group_name is not None:
             self.group_name = group_name
+        if type is not None:
+            self.type = type
+        if relation_ids is not None:
+            self.relation_ids = relation_ids
         if group_id is not None:
             self.group_id = group_id
         if create_time is not None:
@@ -75,6 +94,8 @@ class ResourceGroupInfo:
             self.status = status
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
+        if resources is not None:
+            self.resources = resources
 
     @property
     def group_name(self):
@@ -97,6 +118,50 @@ class ResourceGroupInfo:
         :type group_name: str
         """
         self._group_name = group_name
+
+    @property
+    def type(self):
+        """Gets the type of this ResourceGroupInfo.
+
+        资源分组添加资源方式，EPS：同步企业项目，TAG：标签动态匹配，空值：手动添加；
+
+        :return: The type of this ResourceGroupInfo.
+        :rtype: str
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        """Sets the type of this ResourceGroupInfo.
+
+        资源分组添加资源方式，EPS：同步企业项目，TAG：标签动态匹配，空值：手动添加；
+
+        :param type: The type of this ResourceGroupInfo.
+        :type type: str
+        """
+        self._type = type
+
+    @property
+    def relation_ids(self):
+        """Gets the relation_ids of this ResourceGroupInfo.
+
+        企业项目ID列表
+
+        :return: The relation_ids of this ResourceGroupInfo.
+        :rtype: list[str]
+        """
+        return self._relation_ids
+
+    @relation_ids.setter
+    def relation_ids(self, relation_ids):
+        """Sets the relation_ids of this ResourceGroupInfo.
+
+        企业项目ID列表
+
+        :param relation_ids: The relation_ids of this ResourceGroupInfo.
+        :type relation_ids: list[str]
+        """
+        self._relation_ids = relation_ids
 
     @property
     def group_id(self):
@@ -203,6 +268,28 @@ class ResourceGroupInfo:
         :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def resources(self):
+        """Gets the resources of this ResourceGroupInfo.
+
+        一组或者多个资源信息，默认为空。
+
+        :return: The resources of this ResourceGroupInfo.
+        :rtype: list[:class:`huaweicloudsdkces.v1.Resource`]
+        """
+        return self._resources
+
+    @resources.setter
+    def resources(self, resources):
+        """Sets the resources of this ResourceGroupInfo.
+
+        一组或者多个资源信息，默认为空。
+
+        :param resources: The resources of this ResourceGroupInfo.
+        :type resources: list[:class:`huaweicloudsdkces.v1.Resource`]
+        """
+        self._resources = resources
 
     def to_dict(self):
         """Returns the model properties as a dict"""

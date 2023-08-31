@@ -143,7 +143,7 @@ class TaskInfo:
         :type can_execute: bool
         :param can_copy: 是否有复制权限
         :type can_copy: bool
-        :param can_manage: 是否有管理权限，包含增删改查部署以及权限修改
+        :param can_manage: 是否有编辑应用权限矩阵的权限
         :type can_manage: bool
         :param app_component_list: 应用和AOM应用组件对应关系
         :type app_component_list: list[:class:`huaweicloudsdkcodeartsdeploy.v2.AppComponentDao`]
@@ -804,7 +804,7 @@ class TaskInfo:
     def can_manage(self):
         """Gets the can_manage of this TaskInfo.
 
-        是否有管理权限，包含增删改查部署以及权限修改
+        是否有编辑应用权限矩阵的权限
 
         :return: The can_manage of this TaskInfo.
         :rtype: bool
@@ -815,7 +815,7 @@ class TaskInfo:
     def can_manage(self, can_manage):
         """Sets the can_manage of this TaskInfo.
 
-        是否有管理权限，包含增删改查部署以及权限修改
+        是否有编辑应用权限矩阵的权限
 
         :param can_manage: The can_manage of this TaskInfo.
         :type can_manage: bool

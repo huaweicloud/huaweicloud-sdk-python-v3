@@ -422,6 +422,62 @@ class CesClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def batch_update_widgets(self, request):
+        """批量更新监控视图
+
+        批量更新监控视图
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchUpdateWidgets
+        :type request: :class:`huaweicloudsdkces.v2.BatchUpdateWidgetsRequest`
+        :rtype: :class:`huaweicloudsdkces.v2.BatchUpdateWidgetsResponse`
+        """
+        return self._batch_update_widgets_with_http_info(request)
+
+    def _batch_update_widgets_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/widgets/batch-update',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='BatchUpdateWidgetsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def create_alarm_rules(self, request):
         """创建告警规则
 
@@ -529,6 +585,120 @@ class CesClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='CreateAlarmTemplateResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_dashboard_widgets(self, request):
+        """创建/复制/批量创建监控视图到指定的监控面板
+
+        创建/复制/批量创建监控视图到指定的监控面板
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateDashboardWidgets
+        :type request: :class:`huaweicloudsdkces.v2.CreateDashboardWidgetsRequest`
+        :rtype: :class:`huaweicloudsdkces.v2.CreateDashboardWidgetsResponse`
+        """
+        return self._create_dashboard_widgets_with_http_info(request)
+
+    def _create_dashboard_widgets_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'dashboard_id' in local_var_params:
+            path_params['dashboard_id'] = local_var_params['dashboard_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/dashboards/{dashboard_id}/widgets',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateDashboardWidgetsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_one_dashboard(self, request):
+        """创建/复制监控面板
+
+        创建/复制监控面板
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateOneDashboard
+        :type request: :class:`huaweicloudsdkces.v2.CreateOneDashboardRequest`
+        :rtype: :class:`huaweicloudsdkces.v2.CreateOneDashboardResponse`
+        """
+        return self._create_one_dashboard_with_http_info(request)
+
+    def _create_one_dashboard_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/dashboards',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateOneDashboardResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -643,6 +813,118 @@ class CesClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='DeleteAlarmRuleResourcesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_dashboards(self, request):
+        """批量删除监控面板
+
+        批量删除监控面板
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteDashboards
+        :type request: :class:`huaweicloudsdkces.v2.DeleteDashboardsRequest`
+        :rtype: :class:`huaweicloudsdkces.v2.DeleteDashboardsResponse`
+        """
+        return self._delete_dashboards_with_http_info(request)
+
+    def _delete_dashboards_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/dashboards/batch-delete',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteDashboardsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_one_widget(self, request):
+        """删除指定监控视图
+
+        删除指定监控视图
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteOneWidget
+        :type request: :class:`huaweicloudsdkces.v2.DeleteOneWidgetRequest`
+        :rtype: :class:`huaweicloudsdkces.v2.DeleteOneWidgetResponse`
+        """
+        return self._delete_one_widget_with_http_info(request)
+
+    def _delete_one_widget_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'widget_id' in local_var_params:
+            path_params['widget_id'] = local_var_params['widget_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/widgets/{widget_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteOneWidgetResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1100,6 +1382,124 @@ class CesClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_dashboard_infos(self, request):
+        """查询监控面板列表
+
+        查询监控面板列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListDashboardInfos
+        :type request: :class:`huaweicloudsdkces.v2.ListDashboardInfosRequest`
+        :rtype: :class:`huaweicloudsdkces.v2.ListDashboardInfosResponse`
+        """
+        return self._list_dashboard_infos_with_http_info(request)
+
+    def _list_dashboard_infos_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'enterprise_id' in local_var_params:
+            query_params.append(('enterprise_id', local_var_params['enterprise_id']))
+        if 'is_favorite' in local_var_params:
+            query_params.append(('is_favorite', local_var_params['is_favorite']))
+        if 'dashboard_name' in local_var_params:
+            query_params.append(('dashboard_name', local_var_params['dashboard_name']))
+        if 'dashboard_id' in local_var_params:
+            query_params.append(('dashboard_id', local_var_params['dashboard_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/dashboards',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListDashboardInfosResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_dashboard_widgets(self, request):
+        """查询指定监控面板下的监控视图列表
+
+        查询指定监控面板下的监控视图列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListDashboardWidgets
+        :type request: :class:`huaweicloudsdkces.v2.ListDashboardWidgetsRequest`
+        :rtype: :class:`huaweicloudsdkces.v2.ListDashboardWidgetsResponse`
+        """
+        return self._list_dashboard_widgets_with_http_info(request)
+
+    def _list_dashboard_widgets_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'dashboard_id' in local_var_params:
+            path_params['dashboard_id'] = local_var_params['dashboard_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/dashboards/{dashboard_id}/widgets',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListDashboardWidgetsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_resource_groups(self, request):
         """查询资源分组列表
 
@@ -1346,6 +1746,62 @@ class CesClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def show_widget(self, request):
+        """查询指定监控视图信息
+
+        查询指定监控视图信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowWidget
+        :type request: :class:`huaweicloudsdkces.v2.ShowWidgetRequest`
+        :rtype: :class:`huaweicloudsdkces.v2.ShowWidgetResponse`
+        """
+        return self._show_widget_with_http_info(request)
+
+    def _show_widget_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'widget_id' in local_var_params:
+            path_params['widget_id'] = local_var_params['widget_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/widgets/{widget_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowWidgetResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def update_alarm_rule_policies(self, request):
         """修改告警规则策略(全量修改)
 
@@ -1457,6 +1913,64 @@ class CesClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='UpdateAlarmTemplateResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_dashboard(self, request):
+        """修改监控面板
+
+        修改监控面板
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateDashboard
+        :type request: :class:`huaweicloudsdkces.v2.UpdateDashboardRequest`
+        :rtype: :class:`huaweicloudsdkces.v2.UpdateDashboardResponse`
+        """
+        return self._update_dashboard_with_http_info(request)
+
+    def _update_dashboard_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'dashboard_id' in local_var_params:
+            path_params['dashboard_id'] = local_var_params['dashboard_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/dashboards/{dashboard_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateDashboardResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

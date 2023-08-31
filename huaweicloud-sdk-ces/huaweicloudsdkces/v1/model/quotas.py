@@ -17,7 +17,7 @@ class Quotas:
     sensitive_list = []
 
     openapi_types = {
-        'resources': 'list[Resource]'
+        'resources': 'list[ResourceQuotas]'
     }
 
     attribute_map = {
@@ -30,7 +30,7 @@ class Quotas:
         The model defined in huaweicloud sdk
 
         :param resources: 资源配额列表。
-        :type resources: list[:class:`huaweicloudsdkces.v1.Resource`]
+        :type resources: list[:class:`huaweicloudsdkces.v1.ResourceQuotas`]
         """
         
         
@@ -47,7 +47,7 @@ class Quotas:
         资源配额列表。
 
         :return: The resources of this Quotas.
-        :rtype: list[:class:`huaweicloudsdkces.v1.Resource`]
+        :rtype: list[:class:`huaweicloudsdkces.v1.ResourceQuotas`]
         """
         return self._resources
 
@@ -58,7 +58,7 @@ class Quotas:
         资源配额列表。
 
         :param resources: The resources of this Quotas.
-        :type resources: list[:class:`huaweicloudsdkces.v1.Resource`]
+        :type resources: list[:class:`huaweicloudsdkces.v1.ResourceQuotas`]
         """
         self._resources = resources
 

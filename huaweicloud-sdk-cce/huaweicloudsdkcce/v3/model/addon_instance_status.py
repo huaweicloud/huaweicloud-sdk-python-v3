@@ -21,7 +21,9 @@ class AddonInstanceStatus:
         'reason': 'str',
         'message': 'str',
         'target_versions': 'list[str]',
-        'current_version': 'Versions'
+        'current_version': 'Versions',
+        'is_rollbackable': 'bool',
+        'previous_version': 'str'
     }
 
     attribute_map = {
@@ -29,10 +31,12 @@ class AddonInstanceStatus:
         'reason': 'Reason',
         'message': 'message',
         'target_versions': 'targetVersions',
-        'current_version': 'currentVersion'
+        'current_version': 'currentVersion',
+        'is_rollbackable': 'isRollbackable',
+        'previous_version': 'previousVersion'
     }
 
-    def __init__(self, status=None, reason=None, message=None, target_versions=None, current_version=None):
+    def __init__(self, status=None, reason=None, message=None, target_versions=None, current_version=None, is_rollbackable=None, previous_version=None):
         """AddonInstanceStatus
 
         The model defined in huaweicloud sdk
@@ -47,6 +51,10 @@ class AddonInstanceStatus:
         :type target_versions: list[str]
         :param current_version: 
         :type current_version: :class:`huaweicloudsdkcce.v3.Versions`
+        :param is_rollbackable: 是否支持回滚到插件升级前的插件版本
+        :type is_rollbackable: bool
+        :param previous_version: 插件升级或回滚前的版本
+        :type previous_version: str
         """
         
         
@@ -56,6 +64,8 @@ class AddonInstanceStatus:
         self._message = None
         self._target_versions = None
         self._current_version = None
+        self._is_rollbackable = None
+        self._previous_version = None
         self.discriminator = None
 
         self.status = status
@@ -64,6 +74,10 @@ class AddonInstanceStatus:
         if target_versions is not None:
             self.target_versions = target_versions
         self.current_version = current_version
+        if is_rollbackable is not None:
+            self.is_rollbackable = is_rollbackable
+        if previous_version is not None:
+            self.previous_version = previous_version
 
     @property
     def status(self):
@@ -170,6 +184,50 @@ class AddonInstanceStatus:
         :type current_version: :class:`huaweicloudsdkcce.v3.Versions`
         """
         self._current_version = current_version
+
+    @property
+    def is_rollbackable(self):
+        """Gets the is_rollbackable of this AddonInstanceStatus.
+
+        是否支持回滚到插件升级前的插件版本
+
+        :return: The is_rollbackable of this AddonInstanceStatus.
+        :rtype: bool
+        """
+        return self._is_rollbackable
+
+    @is_rollbackable.setter
+    def is_rollbackable(self, is_rollbackable):
+        """Sets the is_rollbackable of this AddonInstanceStatus.
+
+        是否支持回滚到插件升级前的插件版本
+
+        :param is_rollbackable: The is_rollbackable of this AddonInstanceStatus.
+        :type is_rollbackable: bool
+        """
+        self._is_rollbackable = is_rollbackable
+
+    @property
+    def previous_version(self):
+        """Gets the previous_version of this AddonInstanceStatus.
+
+        插件升级或回滚前的版本
+
+        :return: The previous_version of this AddonInstanceStatus.
+        :rtype: str
+        """
+        return self._previous_version
+
+    @previous_version.setter
+    def previous_version(self, previous_version):
+        """Sets the previous_version of this AddonInstanceStatus.
+
+        插件升级或回滚前的版本
+
+        :param previous_version: The previous_version of this AddonInstanceStatus.
+        :type previous_version: str
+        """
+        self._previous_version = previous_version
 
     def to_dict(self):
         """Returns the model properties as a dict"""

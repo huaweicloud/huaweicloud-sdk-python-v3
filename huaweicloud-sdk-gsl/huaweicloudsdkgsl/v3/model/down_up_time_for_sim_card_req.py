@@ -17,29 +17,36 @@ class DownUpTimeForSimCardReq:
     sensitive_list = []
 
     openapi_types = {
-        'down_up_switch': 'int'
+        'down_up_switch': 'int',
+        'iccid': 'str'
     }
 
     attribute_map = {
-        'down_up_switch': 'down_up_switch'
+        'down_up_switch': 'down_up_switch',
+        'iccid': 'iccid'
     }
 
-    def __init__(self, down_up_switch=None):
+    def __init__(self, down_up_switch=None, iccid=None):
         """DownUpTimeForSimCardReq
 
         The model defined in huaweicloud sdk
 
         :param down_up_switch: 启用停用开关
         :type down_up_switch: int
+        :param iccid: iccid，传入的sim_card_id为0,则根据iccid进行处理
+        :type iccid: str
         """
         
         
 
         self._down_up_switch = None
+        self._iccid = None
         self.discriminator = None
 
         if down_up_switch is not None:
             self.down_up_switch = down_up_switch
+        if iccid is not None:
+            self.iccid = iccid
 
     @property
     def down_up_switch(self):
@@ -62,6 +69,28 @@ class DownUpTimeForSimCardReq:
         :type down_up_switch: int
         """
         self._down_up_switch = down_up_switch
+
+    @property
+    def iccid(self):
+        """Gets the iccid of this DownUpTimeForSimCardReq.
+
+        iccid，传入的sim_card_id为0,则根据iccid进行处理
+
+        :return: The iccid of this DownUpTimeForSimCardReq.
+        :rtype: str
+        """
+        return self._iccid
+
+    @iccid.setter
+    def iccid(self, iccid):
+        """Sets the iccid of this DownUpTimeForSimCardReq.
+
+        iccid，传入的sim_card_id为0,则根据iccid进行处理
+
+        :param iccid: The iccid of this DownUpTimeForSimCardReq.
+        :type iccid: str
+        """
+        self._iccid = iccid
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -22,7 +22,8 @@ class CreateCertificateByCsrRequestBody:
         'validity': 'Validity',
         'type': 'str',
         'path_length': 'int',
-        'subject_alternative_names': 'list[SubjectAlternativeName]'
+        'subject_alternative_names': 'list[SubjectAlternativeName]',
+        'enterprise_project_id': 'str'
     }
 
     attribute_map = {
@@ -31,10 +32,11 @@ class CreateCertificateByCsrRequestBody:
         'validity': 'validity',
         'type': 'type',
         'path_length': 'path_length',
-        'subject_alternative_names': 'subject_alternative_names'
+        'subject_alternative_names': 'subject_alternative_names',
+        'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, issuer_id=None, csr=None, validity=None, type=None, path_length=None, subject_alternative_names=None):
+    def __init__(self, issuer_id=None, csr=None, validity=None, type=None, path_length=None, subject_alternative_names=None, enterprise_project_id=None):
         """CreateCertificateByCsrRequestBody
 
         The model defined in huaweicloud sdk
@@ -51,6 +53,8 @@ class CreateCertificateByCsrRequestBody:
         :type path_length: int
         :param subject_alternative_names: 主体备用名称(本接口预留参数，当前在后端被忽略)，详情请参见**SubjectAlternativeName**字段数据结构说明。
         :type subject_alternative_names: list[:class:`huaweicloudsdkccm.v1.SubjectAlternativeName`]
+        :param enterprise_project_id: 企业多项目ID。用户未开通企业多项目时，不需要输入该字段。 用户开通企业多项目时，查询资源可以输入该字段。 若用户不输入该字段，默认查询租户所有有权限的企业多项目下的资源。 此时“enterprise_project_id”取值为“all”。 若用户输入该字段，取值满足以下任一条件.   取值为“all”   取值为“0”   满足正则匹配：“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”
+        :type enterprise_project_id: str
         """
         
         
@@ -61,6 +65,7 @@ class CreateCertificateByCsrRequestBody:
         self._type = None
         self._path_length = None
         self._subject_alternative_names = None
+        self._enterprise_project_id = None
         self.discriminator = None
 
         self.issuer_id = issuer_id
@@ -72,6 +77,8 @@ class CreateCertificateByCsrRequestBody:
             self.path_length = path_length
         if subject_alternative_names is not None:
             self.subject_alternative_names = subject_alternative_names
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
 
     @property
     def issuer_id(self):
@@ -200,6 +207,28 @@ class CreateCertificateByCsrRequestBody:
         :type subject_alternative_names: list[:class:`huaweicloudsdkccm.v1.SubjectAlternativeName`]
         """
         self._subject_alternative_names = subject_alternative_names
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this CreateCertificateByCsrRequestBody.
+
+        企业多项目ID。用户未开通企业多项目时，不需要输入该字段。 用户开通企业多项目时，查询资源可以输入该字段。 若用户不输入该字段，默认查询租户所有有权限的企业多项目下的资源。 此时“enterprise_project_id”取值为“all”。 若用户输入该字段，取值满足以下任一条件.   取值为“all”   取值为“0”   满足正则匹配：“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”
+
+        :return: The enterprise_project_id of this CreateCertificateByCsrRequestBody.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this CreateCertificateByCsrRequestBody.
+
+        企业多项目ID。用户未开通企业多项目时，不需要输入该字段。 用户开通企业多项目时，查询资源可以输入该字段。 若用户不输入该字段，默认查询租户所有有权限的企业多项目下的资源。 此时“enterprise_project_id”取值为“all”。 若用户输入该字段，取值满足以下任一条件.   取值为“all”   取值为“0”   满足正则匹配：“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”
+
+        :param enterprise_project_id: The enterprise_project_id of this CreateCertificateByCsrRequestBody.
+        :type enterprise_project_id: str
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -22,17 +22,20 @@ import hashlib
 import hmac
 from datetime import datetime
 
+import ecdsa
 import six
 
 from huaweicloudsdkcore.exceptions.exceptions import SdkException
 from huaweicloudsdkcore.sdk_request import SdkRequest
 from huaweicloudsdkcore.signer import hkdf
-from huaweicloudsdkcore.signer.sm3 import new_sm3_hash
+from huaweicloudsdkcore.signer.gm import new_sm3_hash, CURVE_SM2, SM2SigningKey
 
-if six.PY2:
-    from urllib import quote, unquote
-else:
+if six.PY3:
     from urllib.parse import quote, unquote
+else:
+    from urllib import quote, unquote
+
+_SIGNING_KEY_CACHE = {}
 
 
 class Signer(object):
@@ -43,11 +46,13 @@ class Signer(object):
     _HEADER_X_DATE = "X-Sdk-Date"
     _HEADER_HOST = "Host"
     _HEADER_AUTHORIZATION = "Authorization"
-    _HEADER_CONTENT_SHA256 = "X-Sdk-Content-Sha256"
+    _HEADER_CONTENT = "X-Sdk-Content-Sha256"
+    _EMPTY_HASH = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
 
     def __init__(self, credentials):
         self._ak = credentials.ak
         self._sk = credentials.sk
+        self._hash_func = hashlib.sha256
 
     def _verify_required(self):
         if not self._ak:
@@ -75,22 +80,20 @@ class Signer(object):
 
         return request
 
-    @classmethod
-    def process_request_uri(cls, request):
+    def process_request_uri(self, request):
         # type: (SdkRequest) -> None
-        canonical_query_string = cls._process_canonical_query_string(request)
+        canonical_query_string = self._process_canonical_query_string(request)
         request.uri = "%s?%s" % (request.resource_path, canonical_query_string) \
             if canonical_query_string != "" else request.resource_path
 
-    @classmethod
-    def _process_header_time(cls, request):
+    def _process_header_time(self, request):
         # type: (SdkRequest) -> datetime
-        header_time = cls._find_header(request, cls._HEADER_X_DATE)
+        header_time = self._get_header_ignore_case(request, self._HEADER_X_DATE)
         if header_time is None:
             t = datetime.utcnow()
-            request.header_params[cls._HEADER_X_DATE] = datetime.strftime(t, cls._BASIC_DATE_FORMAT)
+            request.header_params[self._HEADER_X_DATE] = datetime.strftime(t, self._BASIC_DATE_FORMAT)
         else:
-            t = datetime.strptime(header_time, cls._BASIC_DATE_FORMAT)
+            t = datetime.strptime(header_time, self._BASIC_DATE_FORMAT)
         return t
 
     @classmethod
@@ -104,24 +107,21 @@ class Signer(object):
         if not has_host_header:
             request.header_params["Host"] = request.host
 
-    @classmethod
-    def _hash_hex_string(cls, data):
+    def _hash_hex_string(self, data):
         # type: (bytes) -> str
-        sha256 = hashlib.sha256(data)
-        return sha256.hexdigest()
+        _hash = self._hash_func(data)
+        return _hash.hexdigest()
 
-    @classmethod
-    def _hmac(cls, key_byte, message):
-        # type: (bytes|str, bytes|str) -> str
-        return hmac.new(six.ensure_binary(key_byte), six.ensure_binary(message), digestmod=hashlib.sha256).hexdigest()
+    def _hmac(self, key, data):
+        # type: (bytes, bytes) -> bytes
+        return hmac.new(key, data, digestmod=self._hash_func).digest()
 
-    @classmethod
-    def _process_string_to_sign(cls, canonical_request, time):
+    def _process_string_to_sign(self, canonical_request, time):
         # type: (str, datetime) -> str
         return "%s\n%s\n%s" % (
-            cls._ALGORITHM,
-            datetime.strftime(time, cls._BASIC_DATE_FORMAT),
-            cls._hash_hex_string(six.ensure_binary(canonical_request))
+            self._ALGORITHM,
+            datetime.strftime(time, self._BASIC_DATE_FORMAT),
+            self._hash_hex_string(six.ensure_binary(canonical_request))
         )
 
     @classmethod
@@ -130,15 +130,14 @@ class Signer(object):
         return quote(s, safe='~')
 
     @classmethod
-    def _find_header(cls, r, header):
-        # type: (SdkRequest, str) -> str
+    def _get_header_ignore_case(cls, r, header):
+        # type: (SdkRequest, str) -> str|None
         for k in r.header_params:
             if k.lower() == header.lower():
                 return r.header_params[k]
         return None
 
-    @classmethod
-    def _process_canonical_request(cls, request, signed_headers):
+    def _process_canonical_request(self, request, signed_headers):
         # type: (SdkRequest, dict) -> str
         """
         Build a CanonicalRequest from a regular request string
@@ -151,22 +150,31 @@ class Signer(object):
           Part 5 SignedHeaders
           Part 6 HexEncode(Hash(RequestPayload))
         """
-        canonical_headers = cls._process_canonical_headers(request, signed_headers)
-        hex_encode = cls._find_header(request, cls._HEADER_CONTENT_SHA256)
-        if hex_encode is None:
-            hex_encode = cls._hash_hex_string(request.body)
-        canonical_uri = cls._process_canonical_uri(request)
-        canonical_query_string = cls._process_canonical_query_string(request)
+        canonical_headers = self._process_canonical_headers(request, signed_headers)
+
+        hex_encode = self._process_hash_payload(request)
+        canonical_uri = self._process_canonical_uri(request)
+        canonical_query_string = self._process_canonical_query_string(request)
         return "%s\n%s\n%s\n%s\n%s\n%s" % (request.method.upper(), canonical_uri, canonical_query_string,
                                            canonical_headers, ";".join(signed_headers), hex_encode)
 
-    @classmethod
-    def _process_canonical_uri(cls, request):
+    def _process_hash_payload(self, request):
+        # type: (SdkRequest) -> str
+        if not request.body:
+            return self._EMPTY_HASH
+
+        hex_encode = self._get_header_ignore_case(request, self._HEADER_CONTENT)
+        if hex_encode:
+            return hex_encode
+
+        return self._hash_hex_string(request.body)
+
+    def _process_canonical_uri(self, request):
         # type: (SdkRequest) -> str
         pattens = unquote(request.resource_path).split('/')
         uri = []
         for v in pattens:
-            uri.append(cls._url_encode(v))
+            uri.append(self._url_encode(v))
         url_path = "/".join(uri)
 
         if url_path[-1] != '/':
@@ -174,8 +182,7 @@ class Signer(object):
 
         return url_path
 
-    @classmethod
-    def _process_canonical_query_string(cls, request):
+    def _process_canonical_query_string(self, request):
         # type: (SdkRequest) -> str
         params = []
         for param in request.query_params:
@@ -184,23 +191,22 @@ class Signer(object):
 
         canonical_query_param = []
         for (key, value) in params:
-            k = cls._url_encode(key)
+            k = self._url_encode(key)
             if isinstance(value, list):
                 value.sort()
                 for v in value:
-                    kv = "%s=%s" % (k, cls._url_encode(str(v)))
+                    kv = "%s=%s" % (k, self._url_encode(str(v)))
                     canonical_query_param.append(kv)
             elif isinstance(value, bool):
-                kv = "%s=%s" % (k, cls._url_encode(str(value).lower()))
+                kv = "%s=%s" % (k, self._url_encode(str(value).lower()))
                 canonical_query_param.append(kv)
             else:
-                kv = "%s=%s" % (k, cls._url_encode(str(value)))
+                kv = "%s=%s" % (k, self._url_encode(str(value)))
                 canonical_query_param.append(kv)
 
         return '&'.join(canonical_query_param)
 
-    @classmethod
-    def _process_canonical_headers(cls, request, signed_headers):
+    def _process_canonical_headers(self, request, signed_headers):
         # type: (SdkRequest, dict) -> str
         canonical_headers = []
         __headers = {}
@@ -210,7 +216,7 @@ class Signer(object):
             value_encoded = str(value).strip()
             __headers[key_encoded] = value_encoded
             if six.PY3:
-                request.header_params[key] = value_encoded.encode(cls._ENCODE_UTF8).decode('iso-8859-1')
+                request.header_params[key] = value_encoded.encode(self._ENCODE_UTF8).decode('iso-8859-1')
 
         for key in signed_headers:
             canonical_headers.append(key + ":" + __headers.get(key))
@@ -226,57 +232,48 @@ class Signer(object):
         signed_headers.sort()
         return signed_headers
 
-    @classmethod
-    def _sign_string_to_sign(cls, string_to_sign, key):
+    def _sign_string_to_sign(self, string_to_sign, key):
         # type: (str, str) -> str
-        return cls._hmac(key, string_to_sign)
+        return self._hmac(six.ensure_binary(key), six.ensure_binary(string_to_sign)).hex()
 
-    @classmethod
-    def _process_auth_header_value(cls, signature, app_key, signed_headers):
+    def _process_auth_header_value(self, signature, app_key, signed_headers):
         # type: (str, str, list) -> str
         return "%s Access=%s, SignedHeaders=%s, Signature=%s" % (
-            cls._ALGORITHM, app_key, ";".join(signed_headers), signature)
+            self._ALGORITHM, app_key, ";".join(signed_headers), signature)
 
 
 class SM3Signer(Signer):
     _ALGORITHM = "SDK-HMAC-SM3"
+    _HEADER_CONTENT = "X-Sdk-Content-Sm3"
+    _EMPTY_HASH = "1ab21d8355cfa17f8e61194831e81a8f22bec8c728fefb747ed035eb5082aa2b"
+
+    def __init__(self, credentials):
+        super(SM3Signer, self).__init__(credentials)
+        self._hash_func = new_sm3_hash
 
     def _verify_required(self):
         super(SM3Signer, self)._verify_required()
         if six.PY2:
-            raise SdkException("Signing algorithm SM3 is not supported in python2")
-
-    @classmethod
-    def _hash_hex_string(cls, data):
-        # type: (bytes) -> str
-        sm3 = new_sm3_hash(data)
-        return sm3.hexdigest()
-
-    @classmethod
-    def _hmac(cls, key_byte, message):
-        # type: (bytes|str, bytes|str) -> str
-        return hmac.new(six.ensure_binary(key_byte), six.ensure_binary(message), digestmod=new_sm3_hash).hexdigest()
+            raise SdkException("Signing algorithm %s is not supported in python2" % self._ALGORITHM)
 
 
 class DerivationAKSKSigner(Signer):
     BasicISODateFormat = "%Y%m%d"
     _ALGORITHM = "V11-HMAC-SHA256"
 
-    @classmethod
-    def _process_string_to_sign(cls, canonical_request, time, info=None):
+    def _process_string_to_sign(self, canonical_request, time, info=None):
         # type: (str, datetime, str) -> str
         return "%s\n%s\n%s\n%s" % (
-            cls._ALGORITHM,
-            datetime.strftime(time, cls._BASIC_DATE_FORMAT),
+            self._ALGORITHM,
+            datetime.strftime(time, self._BASIC_DATE_FORMAT),
             info,
-            cls._hash_hex_string(six.ensure_binary(canonical_request))
+            self._hash_hex_string(six.ensure_binary(canonical_request))
         )
 
-    @classmethod
-    def _process_auth_header_value(cls, signature, app_key, signed_headers, info=None):
+    def _process_auth_header_value(self, signature, app_key, signed_headers, info=None):
         # type: (str, str, list, str) -> str
         return "%s Credential=%s/%s, SignedHeaders=%s, Signature=%s" % (
-            cls._ALGORITHM, app_key, info, ";".join(signed_headers), signature)
+            self._ALGORITHM, app_key, info, ";".join(signed_headers), signature)
 
     def sign(self, request, derived_auth_service_name=None, region_id=None):
         # type: (SdkRequest, str, str) -> SdkRequest
@@ -304,3 +301,78 @@ class DerivationAKSKSigner(Signer):
         self.process_request_uri(request)
 
         return request
+
+
+class P256SHA256Signer(Signer):
+    _ALGORITHM = "SDK-ECDSA-P256-SHA256"
+    _CURVE = ecdsa.NIST256p
+    _N_MINUS_TWO = _CURVE.order - 2
+
+    def _verify_required(self):
+        super(P256SHA256Signer, self)._verify_required()
+        if six.PY2:
+            raise SdkException("Signing algorithm %s is not supported in python2" % self._ALGORITHM)
+
+    def _sign_string_to_sign(self, data, key=None):
+        # type: (str, str) -> str
+        signing_key = self.get_signing_key()
+        sig = signing_key.sign(six.ensure_binary(data), hashfunc=self._hash_func, sigencode=ecdsa.util.sigencode_der)
+        return sig.hex()
+
+    def _derive_key_bytes(self):
+        # type: () -> bytes
+        context = bytearray()
+        data = bytearray()
+        for counter in range(0xff):
+            context.clear()
+            data.clear()
+
+            context.extend(six.ensure_binary(self._ak))
+            context.append(counter)
+
+            data.extend(b'\x00\x00\x00\x01')
+            data.extend(six.ensure_binary(self._ALGORITHM))
+            data.append(0x00)
+            data.extend(context)
+            data.extend(b'\x00\x00\x01\x00')
+
+            candidate = int.from_bytes(self._hmac(six.ensure_binary(self._sk), bytes(data)), 'big')
+            if candidate <= self._N_MINUS_TWO:
+                secret_key = candidate + 1
+                return int.to_bytes(secret_key, length=(secret_key.bit_length() + 7) // 8, byteorder='big')
+
+        raise SdkException("derive candidate failed, counter out of range")
+
+    def _generate_signing_key(self, key_bytes):
+        return ecdsa.SigningKey.from_string(key_bytes, curve=self._CURVE, hashfunc=self._hash_func)
+
+    def get_signing_key(self):
+        key = self._ALGORITHM + self._ak
+        if key in _SIGNING_KEY_CACHE:
+            return _SIGNING_KEY_CACHE.get(key)
+
+        key_bytes = self._derive_key_bytes()
+        signing_key = self._generate_signing_key(key_bytes)
+        _SIGNING_KEY_CACHE[key] = signing_key
+        return signing_key
+
+
+class SM2SM3Signer(P256SHA256Signer):
+    _ALGORITHM = "SDK-SM2-SM3"
+    _HEADER_CONTENT = "X-Sdk-Content-Sm3"
+    _EMPTY_HASH = "1ab21d8355cfa17f8e61194831e81a8f22bec8c728fefb747ed035eb5082aa2b"
+    _CURVE = CURVE_SM2
+    _N_MINUS_TWO = _CURVE.order - 2
+
+    def __init__(self, credentials):
+        super(SM2SM3Signer, self).__init__(credentials)
+        self._hash_func = new_sm3_hash
+
+    def _sign_string_to_sign(self, data, key=None):
+        # type: (str, str) -> str
+        signing_key = self.get_signing_key()
+        signature = signing_key.sign(six.ensure_binary(data))
+        return signature.hex()
+
+    def _generate_signing_key(self, key_bytes):
+        return SM2SigningKey(key_bytes)

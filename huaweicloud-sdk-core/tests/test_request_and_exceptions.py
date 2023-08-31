@@ -31,9 +31,9 @@ from tests.model.vpc import ListVpcsResponse
 
 @pytest.fixture()
 def client():
-    ak = "my ak"
-    sk = "my sk"
-    project_id = "my project_id"
+    ak = "AccessKey"
+    sk = "SecretKey"
+    project_id = "ProjectId"
     endpoint = "https://vpc.cn-north-x.myhuaweicloud.com"
 
     config = HttpConfig.get_default_config()

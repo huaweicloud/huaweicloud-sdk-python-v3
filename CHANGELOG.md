@@ -1,3 +1,467 @@
+# 3.1.57 2023-08-31
+
+### HuaweiCloud SDK BSS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListCustomerselfResourceRecordDetails**
+    - changes of request param
+      - `+ query_type`
+      - `+ bill_cycle_begin`
+      - `+ bill_cycle_end`
+
+### HuaweiCloud SDK CAE
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListComponentConfigurations**
+    - changes of response param
+      - `+ items.type: enum value [apm2,log]`
+  - **CreateComponentConfiguration**
+    - changes of request param
+      - `+ items.type: enum value [apm2,log]`
+  - **ListVolumes**
+    - changes of response param
+      - `+ items.resource_sub_type: enum value [sfs3.0]`
+  - **CreateVolume**
+    - changes of request param
+      - `+ spec.resource_sub_type: enum value [sfs3.0]`
+  - **UpdateCertificate**
+    - changes of request param
+      - `- spec.policy`
+  - **ListDomains**
+    - changes of response param
+      - `- items.metadata.zone_id`
+      - `- items.metadata.zone_type`
+  - **CreateDomain**
+    - changes of response param
+      - `- items.metadata.zone_id`
+      - `- items.metadata.zone_type`
+  - **ListCertificates**
+    - changes of response param
+      - `- items.spec.policy`
+  - **CreateCertificate**
+    - changes of request param
+      - `- spec.policy`
+    - changes of response param
+      - `- items.spec.policy`
+  - **CreateComponent**
+    - changes of request param
+      - `+ spec.runtime: enum value [Java17,Nodejs14,Nodejs16]`
+
+### HuaweiCloud SDK CCE
+
+- _Features_
+  - Support the interfaces `RollbackAddonInstance`, `ResizeCluster`, `BatchCreateClusterTags`, `BatchDeleteClusterTags`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowAddonInstance**
+    - changes of response param
+      - `+ status.isRollbackable`
+      - `+ status.previousVersion`
+      - `+ status.status: enum value [rollbackFailed]`
+  - **UpdateAddonInstance**
+    - changes of response param
+      - `+ status.isRollbackable`
+      - `+ status.previousVersion`
+      - `+ status.status: enum value [rollbackFailed]`
+  - **CreateAddonInstance**
+    - changes of response param
+      - `+ status.isRollbackable`
+      - `+ status.previousVersion`
+      - `+ status.status: enum value [rollbackFailed]`
+  - **ListAddonInstances**
+    - changes of response param
+      - `+ items.status.isRollbackable`
+      - `+ items.status.previousVersion`
+      - `+ items.status.status: enum value [rollbackFailed]`
+
+### HuaweiCloud SDK CCM
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **IssueCertificateAuthorityCertificate**
+    - changes of request param
+      - `+ enterprise_project_id`
+  - **CreateCertificateByCsr**
+    - changes of request param
+      - `+ enterprise_project_id`
+
+### HuaweiCloud SDK CES
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowResourceGroup**
+    - changes of response param
+      - `+ resources.event_type`
+  - **ListResourceGroup**
+    - changes of response param
+      - `+ resource_groups.type`
+      - `+ resource_groups.relation_ids`
+      - `+ resource_groups.resources`
+  - **ListEventDetail**
+    - changes of response param
+      - `+ dimensions`
+
+### HuaweiCloud SDK CES
+
+- _Features_
+  - Support the following interfaces：
+    - `ListDashboardInfos`
+    - `CreateOneDashboard`
+    - `UpdateDashboard`
+    - `DeleteDashboards`
+    - `ListDashboardWidgets`
+    - `CreateDashboardWidgets`
+    - `ShowWidget`
+    - `DeleteOneWidget`
+    - `BatchUpdateWidgets`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListAlarmRulePolicies**
+    - changes of response param
+      - `+ policies.extra_info`
+      - `+ policies.type`
+      - `* policies: list<Policy> -> list<ListPolicy>`
+  - **UpdateAlarmRulePolicies**
+    - changes of request param
+      - `+ policies.type`
+      - `* policies: list<Policy> -> list<UpdatePolicy>`
+    - changes of response param
+      - `+ policies.type`
+      - `* policies: list<Policy> -> list<UpdatePolicy>`
+  - **ListAlarmTemplates**
+    - changes of response param
+      - `- alarm_templates.association_alarm_total`
+      - `- alarm_templates.policy_total`
+      - `- alarm_templates.policy_statistics`
+      - `- alarm_templates.association_resource_groups`
+  - **ShowAlarmTemplate**
+    - changes of response param
+      - `- association_alarm_total`
+
+### HuaweiCloud SDK CodeArtsDeploy
+
+- _Features_
+  - Support the following interfaces：
+    - `ListHostClusters`
+    - `CreateHostCluster`
+    - `ShowHostClusterDetail`
+    - `ListNewHosts`
+    - `CreateHost`
+    - `ShowHostDetail`
+    - `ListEnvironments`
+    - `CreateEnvironment`
+    - `ShowEnvironmentDetail`
+    - `DeleteEnvironment`
+    - `ImportHostToEnvironment`
+    - `DeleteHostFromEnvironment`
+    - `ListAllApp`
+    - `CreateApp`
+    - `ShowAppDetailById`
+    - `DeleteApplication`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK DAS
+
+- _Features_
+  - Support the interfaces `CreateTuning`, `ShowTuning`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK DCS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowInstance**
+    - changes of response param
+      - `+ available_zones`
+
+### HuaweiCloud SDK DGC
+
+- _Features_
+  - Support the interfaces `ListSupplementdata`, `CreateSupplementdata`, `StopSupplementdata`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowJob**
+    - changes of response param
+      - `* basicConfig.priority: string -> int32`
+      - `* basicConfig.instanceTimeout: string -> int32`
+  - **UpdateJob**
+    - changes of request param
+      - `* basicConfig.priority: string -> int32`
+      - `* basicConfig.instanceTimeout: string -> int32`
+  - **CreateJob**
+    - changes of request param
+      - `* basicConfig.priority: string -> int32`
+      - `* basicConfig.instanceTimeout: string -> int32`
+  - **ListJobs**
+    - changes of response param
+      - `* jobs.basicConfig.priority: string -> int32`
+      - `* jobs.basicConfig.instanceTimeout: string -> int32`
+
+### HuaweiCloud SDK DLF
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowJob**
+    - changes of response param
+      - `* basicConfig.priority: string -> int32`
+      - `* basicConfig.instanceTimeout: string -> int32`
+  - **UpdateJob**
+    - changes of request param
+      - `* basicConfig.priority: string -> int32`
+      - `* basicConfig.instanceTimeout: string -> int32`
+  - **CreateJob**
+    - changes of request param
+      - `* basicConfig.priority: string -> int32`
+      - `* basicConfig.instanceTimeout: string -> int32`
+  - **ListJobs**
+    - changes of response param
+      - `* jobs.basicConfig.priority: string -> int32`
+      - `* jobs.basicConfig.instanceTimeout: string -> int32`
+
+### HuaweiCloud SDK DLI
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListSqlJobs**
+    - changes of response param
+      - `+ jobs.cpu_cost`
+      - `+ jobs.output_byte`
+
+### HuaweiCloud SDK ECS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowJob**
+    - changes of response param
+      - `+ entities.server_id`
+      - `+ entities.nic_id`
+  - **CreateServers**
+    - changes of request param
+      - `+ server.extendparam.CB_CSBS_BACKUP`
+
+### HuaweiCloud SDK ER
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **BatchCreateResourceTags**
+    - changes of request param
+      - `- sys_tags`
+  - **ShowStaticRoute**
+    - changes of response param
+      - `- route.attachments.priority`
+  - **UpdateStaticRoute**
+    - changes of response param
+      - `- route.attachments.priority`
+  - **ListStaticRoutes**
+    - changes of response param
+      - `- routes.attachments.priority`
+  - **CreateStaticRoute**
+    - changes of response param
+      - `- route.attachments.priority`
+  - **ListEffectiveRoutes**
+    - changes of response param
+      - `- routes.address_group_id`
+      - `- routes.next_hops.priority`
+
+### HuaweiCloud SDK FRS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **DetectFaceByFile**
+    - changes of response param
+      - `+ faces.attributes.gender`
+  - **DetectFaceByFileIntl**
+    - changes of response param
+      - `+ faces.attributes.gender`
+  - **DetectFaceByUrl**
+    - changes of response param
+      - `+ faces.attributes.gender`
+  - **DetectFaceByUrlIntl**
+    - changes of response param
+      - `+ faces.attributes.gender`
+  - **DetectFaceByBase64**
+    - changes of response param
+      - `+ faces.attributes.gender`
+  - **DetectFaceByBase64Intl**
+    - changes of response param
+      - `+ faces.attributes.gender`
+
+### HuaweiCloud SDK GES
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ExportGraph2**
+    - changes of request param
+      - `+ paginate`
+
+### HuaweiCloud SDK GSL
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **StopSimCard**
+    - changes of request param
+      - `+ iccid`
+  - **ResetSimCard**
+    - changes of request param
+      - `+ iccid`
+  - **ShowSimCard**
+    - changes of request param
+      - `+ iccid`
+  - **EnableSimCard**
+    - changes of request param
+      - `+ iccid`
+  - **ShowRealNamed**
+    - changes of request param
+      - `+ iccid`
+  - **StartStopNet**
+    - changes of request param
+      - `+ iccid`
+  - **SetExceedCutNet**
+    - changes of request param
+      - `+ iccid`
+  - **RegisterImei**
+    - changes of request param
+      - `+ iccid`
+  - **DeleteRealName**
+    - changes of request param
+      - `+ iccid`
+  - **SetSpeedValue**
+    - changes of request param
+      - `+ iccid`
+  - **ListSimPricePlans**
+    - changes of request param
+      - `+ iccid`
+  - **BatchSetTags**
+    - changes of request param
+      - `+ iccids`
+  - **BatchSetAttributes**
+    - changes of request param
+      - `+ attributes.iccid`
+  - **ShowMonthUsages**
+    - changes of request param
+      - `+ iccids`
+    - changes of response param
+      - `+ month_usages.iccid`
+
+### HuaweiCloud SDK Kafka
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateInstanceByEngine**
+    - changes of request param
+      - `- engine_version: enum value [1.1.0,2.7]`
+  - **CreatePostPaidInstance**
+    - changes of request param
+      - `- engine_version: enum value [1.1.0,2.7]`
+
+### HuaweiCloud SDK KooMessage
+
+- _Features_
+  - Support the interfaces `ShowTemplateVideoThumbnail`, `SetPrimaryVideoThumbnail`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK MRS
+
+- _Features_
+  - Support the interface `ShowMrsVersionList`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK OCR
+
+- _Features_
+  - Support the interface `RecognizeSmartDocumentRecognizer`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK RAM
+
+- _Features_
+  - Support the interface `ListResourceTypes`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK RDS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListInstances**
+    - changes of response param
+      - `+ instances.public_dns_names`
+
+### HuaweiCloud SDK ServiceStage
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ChangeResourceInEnvironment**
+    - changes of response param
+      - `+ deploy_mode`
+
 # 3.1.56 2023-08-24
 
 HuaweiCloud SDK APIG

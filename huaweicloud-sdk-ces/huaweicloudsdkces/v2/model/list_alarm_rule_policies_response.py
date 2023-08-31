@@ -18,7 +18,7 @@ class ListAlarmRulePoliciesResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'policies': 'list[Policy]',
+        'policies': 'list[ListPolicy]',
         'count': 'int'
     }
 
@@ -33,7 +33,7 @@ class ListAlarmRulePoliciesResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param policies: 策略信息
-        :type policies: list[:class:`huaweicloudsdkces.v2.Policy`]
+        :type policies: list[:class:`huaweicloudsdkces.v2.ListPolicy`]
         :param count: 指定告警规则对应的策略总数
         :type count: int
         """
@@ -56,7 +56,7 @@ class ListAlarmRulePoliciesResponse(SdkResponse):
         策略信息
 
         :return: The policies of this ListAlarmRulePoliciesResponse.
-        :rtype: list[:class:`huaweicloudsdkces.v2.Policy`]
+        :rtype: list[:class:`huaweicloudsdkces.v2.ListPolicy`]
         """
         return self._policies
 
@@ -67,7 +67,7 @@ class ListAlarmRulePoliciesResponse(SdkResponse):
         策略信息
 
         :param policies: The policies of this ListAlarmRulePoliciesResponse.
-        :type policies: list[:class:`huaweicloudsdkces.v2.Policy`]
+        :type policies: list[:class:`huaweicloudsdkces.v2.ListPolicy`]
         """
         self._policies = policies
 

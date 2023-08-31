@@ -23,7 +23,6 @@ class ShowAlarmTemplateResponse(SdkResponse):
         'template_type': 'TemplateType',
         'create_time': 'datetime',
         'template_description': 'str',
-        'association_alarm_total': 'int',
         'policies': 'list[AlarmTemplatePolicies]'
     }
 
@@ -33,11 +32,10 @@ class ShowAlarmTemplateResponse(SdkResponse):
         'template_type': 'template_type',
         'create_time': 'create_time',
         'template_description': 'template_description',
-        'association_alarm_total': 'association_alarm_total',
         'policies': 'policies'
     }
 
-    def __init__(self, template_id=None, template_name=None, template_type=None, create_time=None, template_description=None, association_alarm_total=None, policies=None):
+    def __init__(self, template_id=None, template_name=None, template_type=None, create_time=None, template_description=None, policies=None):
         """ShowAlarmTemplateResponse
 
         The model defined in huaweicloud sdk
@@ -52,8 +50,6 @@ class ShowAlarmTemplateResponse(SdkResponse):
         :type create_time: datetime
         :param template_description: 告警模板的描述，长度范围[0,256]，该字段默认值为空字符串
         :type template_description: str
-        :param association_alarm_total: 告警模板关联的告警规则数目
-        :type association_alarm_total: int
         :param policies: 告警模板策略列表
         :type policies: list[:class:`huaweicloudsdkces.v2.AlarmTemplatePolicies`]
         """
@@ -65,7 +61,6 @@ class ShowAlarmTemplateResponse(SdkResponse):
         self._template_type = None
         self._create_time = None
         self._template_description = None
-        self._association_alarm_total = None
         self._policies = None
         self.discriminator = None
 
@@ -79,8 +74,6 @@ class ShowAlarmTemplateResponse(SdkResponse):
             self.create_time = create_time
         if template_description is not None:
             self.template_description = template_description
-        if association_alarm_total is not None:
-            self.association_alarm_total = association_alarm_total
         if policies is not None:
             self.policies = policies
 
@@ -189,28 +182,6 @@ class ShowAlarmTemplateResponse(SdkResponse):
         :type template_description: str
         """
         self._template_description = template_description
-
-    @property
-    def association_alarm_total(self):
-        """Gets the association_alarm_total of this ShowAlarmTemplateResponse.
-
-        告警模板关联的告警规则数目
-
-        :return: The association_alarm_total of this ShowAlarmTemplateResponse.
-        :rtype: int
-        """
-        return self._association_alarm_total
-
-    @association_alarm_total.setter
-    def association_alarm_total(self, association_alarm_total):
-        """Sets the association_alarm_total of this ShowAlarmTemplateResponse.
-
-        告警模板关联的告警规则数目
-
-        :param association_alarm_total: The association_alarm_total of this ShowAlarmTemplateResponse.
-        :type association_alarm_total: int
-        """
-        self._association_alarm_total = association_alarm_total
 
     @property
     def policies(self):

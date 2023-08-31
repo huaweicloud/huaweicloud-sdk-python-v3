@@ -30,10 +30,10 @@ from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.http.http_client import HttpClient
 from huaweicloudsdkcore.http.http_config import HttpConfig
 
-ak = "my ak"
-sk = "my sk"
-endpoint = "my endpoint"
-project_id = "my project_id"
+ak = "AccessKey"
+sk = "SecretKey"
+endpoint = "Endpoint"
+project_id = "ProjectId"
 logger_name = 'HuaweiCloud-SDK-Client'
 config = HttpConfig.get_default_config()
 config.ignore_ssl_verification = True
@@ -49,12 +49,12 @@ def test_build_client_by_client_builder():
 
     assert isinstance(client, Client)
     assert client.get_agent() == {"User-Agent": "huaweicloud-usdk-python/3.0"}
-    assert client.get_credentials().ak == "my ak"
-    assert client.get_credentials().sk == "my sk"
+    assert client.get_credentials().ak == "AccessKey"
+    assert client.get_credentials().sk == "SecretKey"
 
     assert isinstance(client.get_http_client(), HttpClient)
-    assert client.get_http_client()._timeout == (60, 120)
-    assert client.get_http_client()._verify is False
+    assert client.get_http_client().config.timeout == (60, 120)
+    assert client.get_http_client().config.ignore_ssl_verification
 
 
 def test_default_sdk_logger():

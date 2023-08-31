@@ -31,7 +31,7 @@ class ResetSimCardRequest:
 
         The model defined in huaweicloud sdk
 
-        :param sim_card_id: SIM卡标识，可通过[查询SIM卡列表接口](https://support.huaweicloud.com/api-ocgsl/gsl_07_0008.html)获取
+        :param sim_card_id: SIM卡标识，如果SIM卡标识传0则表示需要根据iccid处理。可通过[查询SIM卡列表接口](https://support.huaweicloud.com/api-ocgsl/gsl_07_0008.html)获取
         :type sim_card_id: int
         :param body: Body of the ResetSimCardRequest
         :type body: :class:`huaweicloudsdkgsl.v3.DownUpTimeForSimCardReq`
@@ -51,7 +51,7 @@ class ResetSimCardRequest:
     def sim_card_id(self):
         """Gets the sim_card_id of this ResetSimCardRequest.
 
-        SIM卡标识，可通过[查询SIM卡列表接口](https://support.huaweicloud.com/api-ocgsl/gsl_07_0008.html)获取
+        SIM卡标识，如果SIM卡标识传0则表示需要根据iccid处理。可通过[查询SIM卡列表接口](https://support.huaweicloud.com/api-ocgsl/gsl_07_0008.html)获取
 
         :return: The sim_card_id of this ResetSimCardRequest.
         :rtype: int
@@ -62,7 +62,7 @@ class ResetSimCardRequest:
     def sim_card_id(self, sim_card_id):
         """Sets the sim_card_id of this ResetSimCardRequest.
 
-        SIM卡标识，可通过[查询SIM卡列表接口](https://support.huaweicloud.com/api-ocgsl/gsl_07_0008.html)获取
+        SIM卡标识，如果SIM卡标识传0则表示需要根据iccid处理。可通过[查询SIM卡列表接口](https://support.huaweicloud.com/api-ocgsl/gsl_07_0008.html)获取
 
         :param sim_card_id: The sim_card_id of this ResetSimCardRequest.
         :type sim_card_id: int

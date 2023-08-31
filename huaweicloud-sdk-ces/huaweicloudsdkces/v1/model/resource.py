@@ -17,134 +17,20 @@ class Resource:
     sensitive_list = []
 
     openapi_types = {
-        'type': 'str',
-        'used': 'int',
-        'unit': 'str',
-        'quota': 'int'
     }
 
     attribute_map = {
-        'type': 'type',
-        'used': 'used',
-        'unit': 'unit',
-        'quota': 'quota'
     }
 
-    def __init__(self, type=None, used=None, unit=None, quota=None):
+    def __init__(self):
         """Resource
 
         The model defined in huaweicloud sdk
 
-        :param type: 配额类型。  枚举值说明：  alarm，告警规则
-        :type type: str
-        :param used: 已使用配额数。
-        :type used: int
-        :param unit: 单位。
-        :type unit: str
-        :param quota: 配额总数。
-        :type quota: int
         """
         
         
-
-        self._type = None
-        self._used = None
-        self._unit = None
-        self._quota = None
         self.discriminator = None
-
-        self.type = type
-        self.used = used
-        self.unit = unit
-        self.quota = quota
-
-    @property
-    def type(self):
-        """Gets the type of this Resource.
-
-        配额类型。  枚举值说明：  alarm，告警规则
-
-        :return: The type of this Resource.
-        :rtype: str
-        """
-        return self._type
-
-    @type.setter
-    def type(self, type):
-        """Sets the type of this Resource.
-
-        配额类型。  枚举值说明：  alarm，告警规则
-
-        :param type: The type of this Resource.
-        :type type: str
-        """
-        self._type = type
-
-    @property
-    def used(self):
-        """Gets the used of this Resource.
-
-        已使用配额数。
-
-        :return: The used of this Resource.
-        :rtype: int
-        """
-        return self._used
-
-    @used.setter
-    def used(self, used):
-        """Sets the used of this Resource.
-
-        已使用配额数。
-
-        :param used: The used of this Resource.
-        :type used: int
-        """
-        self._used = used
-
-    @property
-    def unit(self):
-        """Gets the unit of this Resource.
-
-        单位。
-
-        :return: The unit of this Resource.
-        :rtype: str
-        """
-        return self._unit
-
-    @unit.setter
-    def unit(self, unit):
-        """Sets the unit of this Resource.
-
-        单位。
-
-        :param unit: The unit of this Resource.
-        :type unit: str
-        """
-        self._unit = unit
-
-    @property
-    def quota(self):
-        """Gets the quota of this Resource.
-
-        配额总数。
-
-        :return: The quota of this Resource.
-        :rtype: int
-        """
-        return self._quota
-
-    @quota.setter
-    def quota(self, quota):
-        """Sets the quota of this Resource.
-
-        配额总数。
-
-        :param quota: The quota of this Resource.
-        :type quota: int
-        """
-        self._quota = quota
 
     def to_dict(self):
         """Returns the model properties as a dict"""

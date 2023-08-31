@@ -17,7 +17,7 @@ class PoliciesReqV2:
     sensitive_list = []
 
     openapi_types = {
-        'policies': 'list[Policy]'
+        'policies': 'list[UpdatePolicy]'
     }
 
     attribute_map = {
@@ -30,7 +30,7 @@ class PoliciesReqV2:
         The model defined in huaweicloud sdk
 
         :param policies: 策略信息
-        :type policies: list[:class:`huaweicloudsdkces.v2.Policy`]
+        :type policies: list[:class:`huaweicloudsdkces.v2.UpdatePolicy`]
         """
         
         
@@ -47,7 +47,7 @@ class PoliciesReqV2:
         策略信息
 
         :return: The policies of this PoliciesReqV2.
-        :rtype: list[:class:`huaweicloudsdkces.v2.Policy`]
+        :rtype: list[:class:`huaweicloudsdkces.v2.UpdatePolicy`]
         """
         return self._policies
 
@@ -58,7 +58,7 @@ class PoliciesReqV2:
         策略信息
 
         :param policies: The policies of this PoliciesReqV2.
-        :type policies: list[:class:`huaweicloudsdkces.v2.Policy`]
+        :type policies: list[:class:`huaweicloudsdkces.v2.UpdatePolicy`]
         """
         self._policies = policies
 

@@ -18,15 +18,17 @@ class ExceedCutNetReq:
 
     openapi_types = {
         'action': 'int',
-        'quota': 'str'
+        'quota': 'str',
+        'iccid': 'str'
     }
 
     attribute_map = {
         'action': 'action',
-        'quota': 'quota'
+        'quota': 'quota',
+        'iccid': 'iccid'
     }
 
-    def __init__(self, action=None, quota=None):
+    def __init__(self, action=None, quota=None, iccid=None):
         """ExceedCutNetReq
 
         The model defined in huaweicloud sdk
@@ -35,17 +37,22 @@ class ExceedCutNetReq:
         :type action: int
         :param quota: 阈值,只能是0,-1,正整数，-1表示无限制，0表示有上网流量产生就会立即断网，取消达量断网功能时可不传，单位MB
         :type quota: str
+        :param iccid: iccid，传入的sim_card_id为0,则根据iccid进行处理
+        :type iccid: str
         """
         
         
 
         self._action = None
         self._quota = None
+        self._iccid = None
         self.discriminator = None
 
         self.action = action
         if quota is not None:
             self.quota = quota
+        if iccid is not None:
+            self.iccid = iccid
 
     @property
     def action(self):
@@ -90,6 +97,28 @@ class ExceedCutNetReq:
         :type quota: str
         """
         self._quota = quota
+
+    @property
+    def iccid(self):
+        """Gets the iccid of this ExceedCutNetReq.
+
+        iccid，传入的sim_card_id为0,则根据iccid进行处理
+
+        :return: The iccid of this ExceedCutNetReq.
+        :rtype: str
+        """
+        return self._iccid
+
+    @iccid.setter
+    def iccid(self, iccid):
+        """Sets the iccid of this ExceedCutNetReq.
+
+        iccid，传入的sim_card_id为0,则根据iccid进行处理
+
+        :param iccid: The iccid of this ExceedCutNetReq.
+        :type iccid: str
+        """
+        self._iccid = iccid
 
     def to_dict(self):
         """Returns the model properties as a dict"""

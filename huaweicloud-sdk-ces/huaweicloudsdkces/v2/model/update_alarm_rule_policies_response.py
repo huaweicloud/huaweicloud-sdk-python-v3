@@ -18,7 +18,7 @@ class UpdateAlarmRulePoliciesResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'policies': 'list[Policy]'
+        'policies': 'list[UpdatePolicy]'
     }
 
     attribute_map = {
@@ -31,7 +31,7 @@ class UpdateAlarmRulePoliciesResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param policies: 策略信息
-        :type policies: list[:class:`huaweicloudsdkces.v2.Policy`]
+        :type policies: list[:class:`huaweicloudsdkces.v2.UpdatePolicy`]
         """
         
         super(UpdateAlarmRulePoliciesResponse, self).__init__()
@@ -49,7 +49,7 @@ class UpdateAlarmRulePoliciesResponse(SdkResponse):
         策略信息
 
         :return: The policies of this UpdateAlarmRulePoliciesResponse.
-        :rtype: list[:class:`huaweicloudsdkces.v2.Policy`]
+        :rtype: list[:class:`huaweicloudsdkces.v2.UpdatePolicy`]
         """
         return self._policies
 
@@ -60,7 +60,7 @@ class UpdateAlarmRulePoliciesResponse(SdkResponse):
         策略信息
 
         :param policies: The policies of this UpdateAlarmRulePoliciesResponse.
-        :type policies: list[:class:`huaweicloudsdkces.v2.Policy`]
+        :type policies: list[:class:`huaweicloudsdkces.v2.UpdatePolicy`]
         """
         self._policies = policies
 

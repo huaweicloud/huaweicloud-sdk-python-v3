@@ -3,6 +3,7 @@
 from __future__ import absolute_import
 
 # import models into model package
+from huaweicloudsdkdas.v3.model.advice_result import AdviceResult
 from huaweicloudsdkdas.v3.model.api_version import ApiVersion
 from huaweicloudsdkdas.v3.model.cancel_share_connections_request import CancelShareConnectionsRequest
 from huaweicloudsdkdas.v3.model.cancel_share_connections_request_body import CancelShareConnectionsRequestBody
@@ -23,6 +24,9 @@ from huaweicloudsdkdas.v3.model.create_sql_limit_rule_option import CreateSqlLim
 from huaweicloudsdkdas.v3.model.create_sql_limit_rules_body import CreateSqlLimitRulesBody
 from huaweicloudsdkdas.v3.model.create_sql_limit_rules_request import CreateSqlLimitRulesRequest
 from huaweicloudsdkdas.v3.model.create_sql_limit_rules_response import CreateSqlLimitRulesResponse
+from huaweicloudsdkdas.v3.model.create_tuning_req import CreateTuningReq
+from huaweicloudsdkdas.v3.model.create_tuning_request import CreateTuningRequest
+from huaweicloudsdkdas.v3.model.create_tuning_response import CreateTuningResponse
 from huaweicloudsdkdas.v3.model.db_object_space_info import DbObjectSpaceInfo
 from huaweicloudsdkdas.v3.model.db_user import DbUser
 from huaweicloudsdkdas.v3.model.delete_db_user_request import DeleteDbUserRequest
@@ -34,6 +38,7 @@ from huaweicloudsdkdas.v3.model.delete_sql_limit_rules_body import DeleteSqlLimi
 from huaweicloudsdkdas.v3.model.delete_sql_limit_rules_request import DeleteSqlLimitRulesRequest
 from huaweicloudsdkdas.v3.model.delete_sql_limit_rules_response import DeleteSqlLimitRulesResponse
 from huaweicloudsdkdas.v3.model.execution_plan import ExecutionPlan
+from huaweicloudsdkdas.v3.model.explain import Explain
 from huaweicloudsdkdas.v3.model.export_slow_query_logs_request import ExportSlowQueryLogsRequest
 from huaweicloudsdkdas.v3.model.export_slow_query_logs_response import ExportSlowQueryLogsResponse
 from huaweicloudsdkdas.v3.model.export_slow_sql_templates_details_request import ExportSlowSqlTemplatesDetailsRequest
@@ -44,7 +49,9 @@ from huaweicloudsdkdas.v3.model.export_top_sql_templates_details_request import 
 from huaweicloudsdkdas.v3.model.export_top_sql_templates_details_response import ExportTopSqlTemplatesDetailsResponse
 from huaweicloudsdkdas.v3.model.export_top_sql_trend_details_request import ExportTopSqlTrendDetailsRequest
 from huaweicloudsdkdas.v3.model.export_top_sql_trend_details_response import ExportTopSqlTrendDetailsResponse
+from huaweicloudsdkdas.v3.model.feedback_info import FeedbackInfo
 from huaweicloudsdkdas.v3.model.full_sql import FullSql
+from huaweicloudsdkdas.v3.model.index_advice_info import IndexAdviceInfo
 from huaweicloudsdkdas.v3.model.innodb_lock import InnodbLock
 from huaweicloudsdkdas.v3.model.innodb_lock_waits import InnodbLockWaits
 from huaweicloudsdkdas.v3.model.innodb_trx import InnodbTrx
@@ -88,9 +95,12 @@ from huaweicloudsdkdas.v3.model.show_sql_limit_switch_status_request import Show
 from huaweicloudsdkdas.v3.model.show_sql_limit_switch_status_response import ShowSqlLimitSwitchStatusResponse
 from huaweicloudsdkdas.v3.model.show_sql_switch_status_request import ShowSqlSwitchStatusRequest
 from huaweicloudsdkdas.v3.model.show_sql_switch_status_response import ShowSqlSwitchStatusResponse
+from huaweicloudsdkdas.v3.model.show_tuning_request import ShowTuningRequest
+from huaweicloudsdkdas.v3.model.show_tuning_response import ShowTuningResponse
 from huaweicloudsdkdas.v3.model.slow_log import SlowLog
 from huaweicloudsdkdas.v3.model.slow_sql_template import SlowSqlTemplate
 from huaweicloudsdkdas.v3.model.sql_limit_rule import SqlLimitRule
+from huaweicloudsdkdas.v3.model.tb_pos_info import TbPosInfo
 from huaweicloudsdkdas.v3.model.top_sql_template import TopSqlTemplate
 from huaweicloudsdkdas.v3.model.top_sql_trend_item import TopSqlTrendItem
 from huaweicloudsdkdas.v3.model.update_db_user_request import UpdateDbUserRequest

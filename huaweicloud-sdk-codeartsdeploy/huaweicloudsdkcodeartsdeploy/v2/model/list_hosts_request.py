@@ -47,7 +47,7 @@ class ListHostsRequest:
         :type group_id: str
         :param as_proxy: 是否为代理机
         :type as_proxy: bool
-        :param offset: 偏移量,表示从此偏移量开始查询,offset大于等于0
+        :param offset: 偏移量，表示从此偏移量开始查询，offset大于等于0
         :type offset: int
         :param limit: 每页显示的条目数量，默认为1000
         :type limit: int
@@ -137,7 +137,7 @@ class ListHostsRequest:
     def offset(self):
         """Gets the offset of this ListHostsRequest.
 
-        偏移量,表示从此偏移量开始查询,offset大于等于0
+        偏移量，表示从此偏移量开始查询，offset大于等于0
 
         :return: The offset of this ListHostsRequest.
         :rtype: int
@@ -148,7 +148,7 @@ class ListHostsRequest:
     def offset(self, offset):
         """Sets the offset of this ListHostsRequest.
 
-        偏移量,表示从此偏移量开始查询,offset大于等于0
+        偏移量，表示从此偏移量开始查询，offset大于等于0
 
         :param offset: The offset of this ListHostsRequest.
         :type offset: int

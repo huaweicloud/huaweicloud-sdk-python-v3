@@ -1,3 +1,467 @@
+# 3.1.57 2023-08-31
+
+### HuaweiCloud SDK BSS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListCustomerselfResourceRecordDetails**
+    - 请求参数变更
+      - `+ query_type`
+      - `+ bill_cycle_begin`
+      - `+ bill_cycle_end`
+
+### HuaweiCloud SDK CAE
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListComponentConfigurations**
+    - 响应参数变更
+      - `+ items.type: enum value [apm2,log]`
+  - **CreateComponentConfiguration**
+    - 请求参数变更
+      - `+ items.type: enum value [apm2,log]`
+  - **ListVolumes**
+    - 响应参数变更
+      - `+ items.resource_sub_type: enum value [sfs3.0]`
+  - **CreateVolume**
+    - 请求参数变更
+      - `+ spec.resource_sub_type: enum value [sfs3.0]`
+  - **UpdateCertificate**
+    - 请求参数变更
+      - `- spec.policy`
+  - **ListDomains**
+    - 响应参数变更
+      - `- items.metadata.zone_id`
+      - `- items.metadata.zone_type`
+  - **CreateDomain**
+    - 响应参数变更
+      - `- items.metadata.zone_id`
+      - `- items.metadata.zone_type`
+  - **ListCertificates**
+    - 响应参数变更
+      - `- items.spec.policy`
+  - **CreateCertificate**
+    - 请求参数变更
+      - `- spec.policy`
+    - 响应参数变更
+      - `- items.spec.policy`
+  - **CreateComponent**
+    - 请求参数变更
+      - `+ spec.runtime: enum value [Java17,Nodejs14,Nodejs16]`
+
+### HuaweiCloud SDK CCE
+
+- _新增特性_
+  - 支持接口`RollbackAddonInstance`、`ResizeCluster`、`BatchCreateClusterTags`、`BatchDeleteClusterTags`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowAddonInstance**
+    - 响应参数变更
+      - `+ status.isRollbackable`
+      - `+ status.previousVersion`
+      - `+ status.status: enum value [rollbackFailed]`
+  - **UpdateAddonInstance**
+    - 响应参数变更
+      - `+ status.isRollbackable`
+      - `+ status.previousVersion`
+      - `+ status.status: enum value [rollbackFailed]`
+  - **CreateAddonInstance**
+    - 响应参数变更
+      - `+ status.isRollbackable`
+      - `+ status.previousVersion`
+      - `+ status.status: enum value [rollbackFailed]`
+  - **ListAddonInstances**
+    - 响应参数变更
+      - `+ items.status.isRollbackable`
+      - `+ items.status.previousVersion`
+      - `+ items.status.status: enum value [rollbackFailed]`
+
+### HuaweiCloud SDK CCM
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **IssueCertificateAuthorityCertificate**
+    - 请求参数变更
+      - `+ enterprise_project_id`
+  - **CreateCertificateByCsr**
+    - 请求参数变更
+      - `+ enterprise_project_id`
+
+### HuaweiCloud SDK CES
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowResourceGroup**
+    - 响应参数变更
+      - `+ resources.event_type`
+  - **ListResourceGroup**
+    - 响应参数变更
+      - `+ resource_groups.type`
+      - `+ resource_groups.relation_ids`
+      - `+ resource_groups.resources`
+  - **ListEventDetail**
+    - 响应参数变更
+      - `+ dimensions`
+
+### HuaweiCloud SDK CES
+
+- _新增特性_
+  - 支持以下接口：
+    - `ListDashboardInfos`
+    - `CreateOneDashboard`
+    - `UpdateDashboard`
+    - `DeleteDashboards`
+    - `ListDashboardWidgets`
+    - `CreateDashboardWidgets`
+    - `ShowWidget`
+    - `DeleteOneWidget`
+    - `BatchUpdateWidgets`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListAlarmRulePolicies**
+    - 响应参数变更
+      - `+ policies.extra_info`
+      - `+ policies.type`
+      - `* policies: list<Policy> -> list<ListPolicy>`
+  - **UpdateAlarmRulePolicies**
+    - 请求参数变更
+      - `+ policies.type`
+      - `* policies: list<Policy> -> list<UpdatePolicy>`
+    - 响应参数变更
+      - `+ policies.type`
+      - `* policies: list<Policy> -> list<UpdatePolicy>`
+  - **ListAlarmTemplates**
+    - 响应参数变更
+      - `- alarm_templates.association_alarm_total`
+      - `- alarm_templates.policy_total`
+      - `- alarm_templates.policy_statistics`
+      - `- alarm_templates.association_resource_groups`
+  - **ShowAlarmTemplate**
+    - 响应参数变更
+      - `- association_alarm_total`
+
+### HuaweiCloud SDK CodeArtsDeploy
+
+- _新增特性_
+  - 支持以下接口：
+    - `ListHostClusters`
+    - `CreateHostCluster`
+    - `ShowHostClusterDetail`
+    - `ListNewHosts`
+    - `CreateHost`
+    - `ShowHostDetail`
+    - `ListEnvironments`
+    - `CreateEnvironment`
+    - `ShowEnvironmentDetail`
+    - `DeleteEnvironment`
+    - `ImportHostToEnvironment`
+    - `DeleteHostFromEnvironment`
+    - `ListAllApp`
+    - `CreateApp`
+    - `ShowAppDetailById`
+    - `DeleteApplication`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK DAS
+
+- _新增特性_
+  - 支持接口`CreateTuning`、`ShowTuning`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK DCS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowInstance**
+    - 响应参数变更
+      - `+ available_zones`
+
+### HuaweiCloud SDK DGC
+
+- _新增特性_
+  - 支持接口`ListSupplementdata`、`CreateSupplementdata`、`StopSupplementdata`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowJob**
+    - 响应参数变更
+      - `* basicConfig.priority: string -> int32`
+      - `* basicConfig.instanceTimeout: string -> int32`
+  - **UpdateJob**
+    - 请求参数变更
+      - `* basicConfig.priority: string -> int32`
+      - `* basicConfig.instanceTimeout: string -> int32`
+  - **CreateJob**
+    - 请求参数变更
+      - `* basicConfig.priority: string -> int32`
+      - `* basicConfig.instanceTimeout: string -> int32`
+  - **ListJobs**
+    - 响应参数变更
+      - `* jobs.basicConfig.priority: string -> int32`
+      - `* jobs.basicConfig.instanceTimeout: string -> int32`
+
+### HuaweiCloud SDK DLF
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowJob**
+    - 响应参数变更
+      - `* basicConfig.priority: string -> int32`
+      - `* basicConfig.instanceTimeout: string -> int32`
+  - **UpdateJob**
+    - 请求参数变更
+      - `* basicConfig.priority: string -> int32`
+      - `* basicConfig.instanceTimeout: string -> int32`
+  - **CreateJob**
+    - 请求参数变更
+      - `* basicConfig.priority: string -> int32`
+      - `* basicConfig.instanceTimeout: string -> int32`
+  - **ListJobs**
+    - 响应参数变更
+      - `* jobs.basicConfig.priority: string -> int32`
+      - `* jobs.basicConfig.instanceTimeout: string -> int32`
+
+### HuaweiCloud SDK DLI
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListSqlJobs**
+    - 响应参数变更
+      - `+ jobs.cpu_cost`
+      - `+ jobs.output_byte`
+
+### HuaweiCloud SDK ECS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowJob**
+    - 响应参数变更
+      - `+ entities.server_id`
+      - `+ entities.nic_id`
+  - **CreateServers**
+    - 请求参数变更
+      - `+ server.extendparam.CB_CSBS_BACKUP`
+
+### HuaweiCloud SDK ER
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **BatchCreateResourceTags**
+    - 请求参数变更
+      - `- sys_tags`
+  - **ShowStaticRoute**
+    - 响应参数变更
+      - `- route.attachments.priority`
+  - **UpdateStaticRoute**
+    - 响应参数变更
+      - `- route.attachments.priority`
+  - **ListStaticRoutes**
+    - 响应参数变更
+      - `- routes.attachments.priority`
+  - **CreateStaticRoute**
+    - 响应参数变更
+      - `- route.attachments.priority`
+  - **ListEffectiveRoutes**
+    - 响应参数变更
+      - `- routes.address_group_id`
+      - `- routes.next_hops.priority`
+
+### HuaweiCloud SDK FRS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **DetectFaceByFile**
+    - 响应参数变更
+      - `+ faces.attributes.gender`
+  - **DetectFaceByFileIntl**
+    - 响应参数变更
+      - `+ faces.attributes.gender`
+  - **DetectFaceByUrl**
+    - 响应参数变更
+      - `+ faces.attributes.gender`
+  - **DetectFaceByUrlIntl**
+    - 响应参数变更
+      - `+ faces.attributes.gender`
+  - **DetectFaceByBase64**
+    - 响应参数变更
+      - `+ faces.attributes.gender`
+  - **DetectFaceByBase64Intl**
+    - 响应参数变更
+      - `+ faces.attributes.gender`
+
+### HuaweiCloud SDK GES
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ExportGraph2**
+    - 请求参数变更
+      - `+ paginate`
+
+### HuaweiCloud SDK GSL
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **StopSimCard**
+    - 请求参数变更
+      - `+ iccid`
+  - **ResetSimCard**
+    - 请求参数变更
+      - `+ iccid`
+  - **ShowSimCard**
+    - 请求参数变更
+      - `+ iccid`
+  - **EnableSimCard**
+    - 请求参数变更
+      - `+ iccid`
+  - **ShowRealNamed**
+    - 请求参数变更
+      - `+ iccid`
+  - **StartStopNet**
+    - 请求参数变更
+      - `+ iccid`
+  - **SetExceedCutNet**
+    - 请求参数变更
+      - `+ iccid`
+  - **RegisterImei**
+    - 请求参数变更
+      - `+ iccid`
+  - **DeleteRealName**
+    - 请求参数变更
+      - `+ iccid`
+  - **SetSpeedValue**
+    - 请求参数变更
+      - `+ iccid`
+  - **ListSimPricePlans**
+    - 请求参数变更
+      - `+ iccid`
+  - **BatchSetTags**
+    - 请求参数变更
+      - `+ iccids`
+  - **BatchSetAttributes**
+    - 请求参数变更
+      - `+ attributes.iccid`
+  - **ShowMonthUsages**
+    - 请求参数变更
+      - `+ iccids`
+    - 响应参数变更
+      - `+ month_usages.iccid`
+
+### HuaweiCloud SDK Kafka
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateInstanceByEngine**
+    - 请求参数变更
+      - `- engine_version: enum value [1.1.0,2.7]`
+  - **CreatePostPaidInstance**
+    - 请求参数变更
+      - `- engine_version: enum value [1.1.0,2.7]`
+
+### HuaweiCloud SDK KooMessage
+
+- _新增特性_
+  - 支持接口`ShowTemplateVideoThumbnail`、`SetPrimaryVideoThumbnail`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK MRS
+
+- _新增特性_
+  - 支持接口`ShowMrsVersionList`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK OCR
+
+- _新增特性_
+  - 支持接口`RecognizeSmartDocumentRecognizer`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK RAM
+
+- _新增特性_
+  - 支持接口`ListResourceTypes`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK RDS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListInstances**
+    - 响应参数变更
+      - `+ instances.public_dns_names`
+
+### HuaweiCloud SDK ServiceStage
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ChangeResourceInEnvironment**
+    - 响应参数变更
+      - `+ deploy_mode`
+
 # 3.1.56 2023-08-24
 
 HuaweiCloud SDK APIG

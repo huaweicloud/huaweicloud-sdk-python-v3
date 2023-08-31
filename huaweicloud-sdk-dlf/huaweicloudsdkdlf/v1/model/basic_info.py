@@ -18,9 +18,9 @@ class BasicInfo:
 
     openapi_types = {
         'owner': 'str',
-        'priority': 'str',
+        'priority': 'int',
         'execute_user': 'str',
-        'instance_timeout': 'str',
+        'instance_timeout': 'int',
         'custom_fields': 'object'
     }
 
@@ -40,11 +40,11 @@ class BasicInfo:
         :param owner: 作业责任人
         :type owner: str
         :param priority: 作业优先级
-        :type priority: str
+        :type priority: int
         :param execute_user: 作业执行用户
         :type execute_user: str
         :param instance_timeout: 实例超时时间
-        :type instance_timeout: str
+        :type instance_timeout: int
         :param custom_fields: 用户自定义属性字段
         :type custom_fields: object
         """
@@ -98,7 +98,7 @@ class BasicInfo:
         作业优先级
 
         :return: The priority of this BasicInfo.
-        :rtype: str
+        :rtype: int
         """
         return self._priority
 
@@ -109,7 +109,7 @@ class BasicInfo:
         作业优先级
 
         :param priority: The priority of this BasicInfo.
-        :type priority: str
+        :type priority: int
         """
         self._priority = priority
 
@@ -142,7 +142,7 @@ class BasicInfo:
         实例超时时间
 
         :return: The instance_timeout of this BasicInfo.
-        :rtype: str
+        :rtype: int
         """
         return self._instance_timeout
 
@@ -153,7 +153,7 @@ class BasicInfo:
         实例超时时间
 
         :param instance_timeout: The instance_timeout of this BasicInfo.
-        :type instance_timeout: str
+        :type instance_timeout: int
         """
         self._instance_timeout = instance_timeout
 

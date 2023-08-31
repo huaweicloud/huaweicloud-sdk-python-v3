@@ -21,8 +21,7 @@ class EffectiveRoute:
         'destination': 'str',
         'next_hops': 'list[RouteAttachment]',
         'is_blackhole': 'bool',
-        'route_type': 'str',
-        'address_group_id': 'str'
+        'route_type': 'str'
     }
 
     attribute_map = {
@@ -30,11 +29,10 @@ class EffectiveRoute:
         'destination': 'destination',
         'next_hops': 'next_hops',
         'is_blackhole': 'is_blackhole',
-        'route_type': 'route_type',
-        'address_group_id': 'address_group_id'
+        'route_type': 'route_type'
     }
 
-    def __init__(self, route_id=None, destination=None, next_hops=None, is_blackhole=None, route_type=None, address_group_id=None):
+    def __init__(self, route_id=None, destination=None, next_hops=None, is_blackhole=None, route_type=None):
         """EffectiveRoute
 
         The model defined in huaweicloud sdk
@@ -49,8 +47,6 @@ class EffectiveRoute:
         :type is_blackhole: bool
         :param route_type: 路由类型
         :type route_type: str
-        :param address_group_id: IP地址组id
-        :type address_group_id: str
         """
         
         
@@ -60,7 +56,6 @@ class EffectiveRoute:
         self._next_hops = None
         self._is_blackhole = None
         self._route_type = None
-        self._address_group_id = None
         self.discriminator = None
 
         if route_id is not None:
@@ -73,8 +68,6 @@ class EffectiveRoute:
             self.is_blackhole = is_blackhole
         if route_type is not None:
             self.route_type = route_type
-        if address_group_id is not None:
-            self.address_group_id = address_group_id
 
     @property
     def route_id(self):
@@ -185,28 +178,6 @@ class EffectiveRoute:
         :type route_type: str
         """
         self._route_type = route_type
-
-    @property
-    def address_group_id(self):
-        """Gets the address_group_id of this EffectiveRoute.
-
-        IP地址组id
-
-        :return: The address_group_id of this EffectiveRoute.
-        :rtype: str
-        """
-        return self._address_group_id
-
-    @address_group_id.setter
-    def address_group_id(self, address_group_id):
-        """Sets the address_group_id of this EffectiveRoute.
-
-        IP地址组id
-
-        :param address_group_id: The address_group_id of this EffectiveRoute.
-        :type address_group_id: str
-        """
-        self._address_group_id = address_group_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

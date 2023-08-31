@@ -22,6 +22,7 @@ class EnvironmentCreate:
         'description': 'str',
         'enterprise_project_id': 'str',
         'charge_mode': 'ChargeMode',
+        'deploy_mode': 'str',
         'vpc_id': 'str',
         'base_resources': 'list[Resource]',
         'optional_resources': 'list[Resource]'
@@ -33,12 +34,13 @@ class EnvironmentCreate:
         'description': 'description',
         'enterprise_project_id': 'enterprise_project_id',
         'charge_mode': 'charge_mode',
+        'deploy_mode': 'deploy_mode',
         'vpc_id': 'vpc_id',
         'base_resources': 'base_resources',
         'optional_resources': 'optional_resources'
     }
 
-    def __init__(self, name=None, alias=None, description=None, enterprise_project_id=None, charge_mode=None, vpc_id=None, base_resources=None, optional_resources=None):
+    def __init__(self, name=None, alias=None, description=None, enterprise_project_id=None, charge_mode=None, deploy_mode=None, vpc_id=None, base_resources=None, optional_resources=None):
         """EnvironmentCreate
 
         The model defined in huaweicloud sdk
@@ -53,6 +55,8 @@ class EnvironmentCreate:
         :type enterprise_project_id: str
         :param charge_mode: 
         :type charge_mode: :class:`huaweicloudsdkservicestage.v2.ChargeMode`
+        :param deploy_mode: 
+        :type deploy_mode: str
         :param vpc_id: 虚拟私有云ID。
         :type vpc_id: str
         :param base_resources: 基础资源。
@@ -68,6 +72,7 @@ class EnvironmentCreate:
         self._description = None
         self._enterprise_project_id = None
         self._charge_mode = None
+        self._deploy_mode = None
         self._vpc_id = None
         self._base_resources = None
         self._optional_resources = None
@@ -82,6 +87,7 @@ class EnvironmentCreate:
             self.enterprise_project_id = enterprise_project_id
         if charge_mode is not None:
             self.charge_mode = charge_mode
+        self.deploy_mode = deploy_mode
         self.vpc_id = vpc_id
         self.base_resources = base_resources
         if optional_resources is not None:
@@ -192,6 +198,24 @@ class EnvironmentCreate:
         :type charge_mode: :class:`huaweicloudsdkservicestage.v2.ChargeMode`
         """
         self._charge_mode = charge_mode
+
+    @property
+    def deploy_mode(self):
+        """Gets the deploy_mode of this EnvironmentCreate.
+
+        :return: The deploy_mode of this EnvironmentCreate.
+        :rtype: str
+        """
+        return self._deploy_mode
+
+    @deploy_mode.setter
+    def deploy_mode(self, deploy_mode):
+        """Sets the deploy_mode of this EnvironmentCreate.
+
+        :param deploy_mode: The deploy_mode of this EnvironmentCreate.
+        :type deploy_mode: str
+        """
+        self._deploy_mode = deploy_mode
 
     @property
     def vpc_id(self):

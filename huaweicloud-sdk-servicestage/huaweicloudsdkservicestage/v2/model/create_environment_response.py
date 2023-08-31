@@ -25,6 +25,7 @@ class CreateEnvironmentResponse(SdkResponse):
         'project_id': 'str',
         'enterprise_project_id': 'str',
         'charge_mode': 'str',
+        'deploy_mode': 'str',
         'vpc_id': 'str',
         'base_resources': 'list[Resource]',
         'optional_resources': 'list[Resource]',
@@ -41,6 +42,7 @@ class CreateEnvironmentResponse(SdkResponse):
         'project_id': 'project_id',
         'enterprise_project_id': 'enterprise_project_id',
         'charge_mode': 'charge_mode',
+        'deploy_mode': 'deploy_mode',
         'vpc_id': 'vpc_id',
         'base_resources': 'base_resources',
         'optional_resources': 'optional_resources',
@@ -49,7 +51,7 @@ class CreateEnvironmentResponse(SdkResponse):
         'update_time': 'update_time'
     }
 
-    def __init__(self, id=None, name=None, alias=None, description=None, project_id=None, enterprise_project_id=None, charge_mode=None, vpc_id=None, base_resources=None, optional_resources=None, creator=None, create_time=None, update_time=None):
+    def __init__(self, id=None, name=None, alias=None, description=None, project_id=None, enterprise_project_id=None, charge_mode=None, deploy_mode=None, vpc_id=None, base_resources=None, optional_resources=None, creator=None, create_time=None, update_time=None):
         """CreateEnvironmentResponse
 
         The model defined in huaweicloud sdk
@@ -68,6 +70,8 @@ class CreateEnvironmentResponse(SdkResponse):
         :type enterprise_project_id: str
         :param charge_mode: 收费模式。
         :type charge_mode: str
+        :param deploy_mode: 环境类型
+        :type deploy_mode: str
         :param vpc_id: 虚拟私有云ID。
         :type vpc_id: str
         :param base_resources: 基础资源。
@@ -91,6 +95,7 @@ class CreateEnvironmentResponse(SdkResponse):
         self._project_id = None
         self._enterprise_project_id = None
         self._charge_mode = None
+        self._deploy_mode = None
         self._vpc_id = None
         self._base_resources = None
         self._optional_resources = None
@@ -113,6 +118,8 @@ class CreateEnvironmentResponse(SdkResponse):
             self.enterprise_project_id = enterprise_project_id
         if charge_mode is not None:
             self.charge_mode = charge_mode
+        if deploy_mode is not None:
+            self.deploy_mode = deploy_mode
         if vpc_id is not None:
             self.vpc_id = vpc_id
         if base_resources is not None:
@@ -279,6 +286,28 @@ class CreateEnvironmentResponse(SdkResponse):
         :type charge_mode: str
         """
         self._charge_mode = charge_mode
+
+    @property
+    def deploy_mode(self):
+        """Gets the deploy_mode of this CreateEnvironmentResponse.
+
+        环境类型
+
+        :return: The deploy_mode of this CreateEnvironmentResponse.
+        :rtype: str
+        """
+        return self._deploy_mode
+
+    @deploy_mode.setter
+    def deploy_mode(self, deploy_mode):
+        """Sets the deploy_mode of this CreateEnvironmentResponse.
+
+        环境类型
+
+        :param deploy_mode: The deploy_mode of this CreateEnvironmentResponse.
+        :type deploy_mode: str
+        """
+        self._deploy_mode = deploy_mode
 
     @property
     def vpc_id(self):

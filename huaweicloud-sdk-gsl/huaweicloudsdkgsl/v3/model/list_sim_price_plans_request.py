@@ -18,6 +18,7 @@ class ListSimPricePlansRequest:
 
     openapi_types = {
         'sim_card_id': 'int',
+        'iccid': 'str',
         'real_time': 'bool',
         'limit': 'int',
         'offset': 'int'
@@ -25,18 +26,21 @@ class ListSimPricePlansRequest:
 
     attribute_map = {
         'sim_card_id': 'sim_card_id',
+        'iccid': 'iccid',
         'real_time': 'real_time',
         'limit': 'limit',
         'offset': 'offset'
     }
 
-    def __init__(self, sim_card_id=None, real_time=None, limit=None, offset=None):
+    def __init__(self, sim_card_id=None, iccid=None, real_time=None, limit=None, offset=None):
         """ListSimPricePlansRequest
 
         The model defined in huaweicloud sdk
 
         :param sim_card_id: SIM卡标识，可通过[查询SIM卡列表接口](https://support.huaweicloud.com/api-ocgsl/gsl_07_0008.html)获取
         :type sim_card_id: int
+        :param iccid: iccid，传入的SIM卡标识（sim_card_id）为0,则根据iccid进行处理
+        :type iccid: str
         :param real_time: 是否查实时流量
         :type real_time: bool
         :param limit: 分页查询时每页显示的记录数，默认值为10，取值范围为10-500的整数
@@ -48,12 +52,15 @@ class ListSimPricePlansRequest:
         
 
         self._sim_card_id = None
+        self._iccid = None
         self._real_time = None
         self._limit = None
         self._offset = None
         self.discriminator = None
 
         self.sim_card_id = sim_card_id
+        if iccid is not None:
+            self.iccid = iccid
         if real_time is not None:
             self.real_time = real_time
         if limit is not None:
@@ -82,6 +89,28 @@ class ListSimPricePlansRequest:
         :type sim_card_id: int
         """
         self._sim_card_id = sim_card_id
+
+    @property
+    def iccid(self):
+        """Gets the iccid of this ListSimPricePlansRequest.
+
+        iccid，传入的SIM卡标识（sim_card_id）为0,则根据iccid进行处理
+
+        :return: The iccid of this ListSimPricePlansRequest.
+        :rtype: str
+        """
+        return self._iccid
+
+    @iccid.setter
+    def iccid(self, iccid):
+        """Sets the iccid of this ListSimPricePlansRequest.
+
+        iccid，传入的SIM卡标识（sim_card_id）为0,则根据iccid进行处理
+
+        :param iccid: The iccid of this ListSimPricePlansRequest.
+        :type iccid: str
+        """
+        self._iccid = iccid
 
     @property
     def real_time(self):

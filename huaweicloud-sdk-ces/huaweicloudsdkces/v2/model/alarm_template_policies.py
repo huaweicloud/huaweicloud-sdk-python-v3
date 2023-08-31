@@ -59,7 +59,7 @@ class AlarmTemplatePolicies:
         :type period: int
         :param filter: 数据聚合方式
         :type filter: str
-        :param comparison_operator: 告警阈值的比较条件
+        :param comparison_operator: 告警阈值的比较条件，支持的值为(&gt;|&lt;|&gt;&#x3D;|&lt;&#x3D;|&#x3D;|&gt;&lt;|cycle_decrease|cycle_increase|cycle_wave)，cycle_decrease为环比下降，cycle_increase为环比上升，cycle_wave为环比波动
         :type comparison_operator: str
         :param value: 告警阈值
         :type value: float
@@ -214,7 +214,7 @@ class AlarmTemplatePolicies:
     def comparison_operator(self):
         """Gets the comparison_operator of this AlarmTemplatePolicies.
 
-        告警阈值的比较条件
+        告警阈值的比较条件，支持的值为(>|<|>=|<=|=|><|cycle_decrease|cycle_increase|cycle_wave)，cycle_decrease为环比下降，cycle_increase为环比上升，cycle_wave为环比波动
 
         :return: The comparison_operator of this AlarmTemplatePolicies.
         :rtype: str
@@ -225,7 +225,7 @@ class AlarmTemplatePolicies:
     def comparison_operator(self, comparison_operator):
         """Sets the comparison_operator of this AlarmTemplatePolicies.
 
-        告警阈值的比较条件
+        告警阈值的比较条件，支持的值为(>|<|>=|<=|=|><|cycle_decrease|cycle_increase|cycle_wave)，cycle_decrease为环比下降，cycle_increase为环比上升，cycle_wave为环比波动
 
         :param comparison_operator: The comparison_operator of this AlarmTemplatePolicies.
         :type comparison_operator: str

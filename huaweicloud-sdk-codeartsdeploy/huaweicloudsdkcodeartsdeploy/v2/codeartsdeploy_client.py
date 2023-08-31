@@ -142,10 +142,66 @@ class CodeArtsDeployClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def create_app(self, request):
+        """新建应用
+
+        新建应用。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateApp
+        :type request: :class:`huaweicloudsdkcodeartsdeploy.v2.CreateAppRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.CreateAppResponse`
+        """
+        return self._create_app_with_http_info(request)
+
+    def _create_app_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/applications',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateAppResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def create_deploy_task_by_template(self, request):
         """通过模板新建应用
 
-        通过模板新建应用。
+        通过模板新建应用。该接口于2024年09月30日后不再维护，推荐使用新版CreateApp接口。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -198,10 +254,66 @@ class CodeArtsDeployClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def delete_application(self, request):
+        """删除应用
+
+        根据应用id删除应用。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteApplication
+        :type request: :class:`huaweicloudsdkcodeartsdeploy.v2.DeleteApplicationRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.DeleteApplicationResponse`
+        """
+        return self._delete_application_with_http_info(request)
+
+    def _delete_application_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'app_id' in local_var_params:
+            path_params['app_id'] = local_var_params['app_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/applications/{app_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteApplicationResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def delete_deploy_task(self, request):
         """删除应用
 
-        根据部署任务id删除应用。
+        根据部署任务id删除应用。该接口于2024年09月30日后不再维护，推荐使用新版DeleteApplication接口。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -249,6 +361,62 @@ class CodeArtsDeployClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='DeleteDeployTaskResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_all_app(self, request):
+        """获取应用列表
+
+        查询项目下应用列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListAllApp
+        :type request: :class:`huaweicloudsdkcodeartsdeploy.v2.ListAllAppRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.ListAllAppResponse`
+        """
+        return self._list_all_app_with_http_info(request)
+
+    def _list_all_app_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/applications/list',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListAllAppResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -323,7 +491,7 @@ class CodeArtsDeployClient(Client):
     def list_deploy_tasks(self, request):
         """获取应用列表
 
-        查询项目下应用列表
+        查询项目下应用列表。该接口于2024年09月30日后不再维护，推荐使用新版ListAllApp接口。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -380,10 +548,66 @@ class CodeArtsDeployClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def show_app_detail_by_id(self, request):
+        """获取应用详情
+
+        根据应用id获取应用详情。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowAppDetailById
+        :type request: :class:`huaweicloudsdkcodeartsdeploy.v2.ShowAppDetailByIdRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.ShowAppDetailByIdResponse`
+        """
+        return self._show_app_detail_by_id_with_http_info(request)
+
+    def _show_app_detail_by_id_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'app_id' in local_var_params:
+            path_params['app_id'] = local_var_params['app_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/applications/{app_id}/info',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowAppDetailByIdResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def show_deploy_task_detail(self, request):
         """获取应用详情
 
-        根据部署任务id获取应用详情。
+        根据部署任务id获取应用详情。该接口于2024年09月30日后不再维护，推荐使用新版ShowAppDetailById接口。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -494,10 +718,372 @@ class CodeArtsDeployClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def create_environment(self, request):
+        """应用下创建环境
+
+        应用下创建环境
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateEnvironment
+        :type request: :class:`huaweicloudsdkcodeartsdeploy.v2.CreateEnvironmentRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.CreateEnvironmentResponse`
+        """
+        return self._create_environment_with_http_info(request)
+
+    def _create_environment_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'application_id' in local_var_params:
+            path_params['application_id'] = local_var_params['application_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/applications/{application_id}/environments',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateEnvironmentResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_environment(self, request):
+        """删除应用下的环境
+
+        删除应用下的环境
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteEnvironment
+        :type request: :class:`huaweicloudsdkcodeartsdeploy.v2.DeleteEnvironmentRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.DeleteEnvironmentResponse`
+        """
+        return self._delete_environment_with_http_info(request)
+
+    def _delete_environment_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'application_id' in local_var_params:
+            path_params['application_id'] = local_var_params['application_id']
+        if 'environment_id' in local_var_params:
+            path_params['environment_id'] = local_var_params['environment_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/applications/{application_id}/environments/{environment_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteEnvironmentResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_host_from_environment(self, request):
+        """环境下删除主机
+
+        环境下删除主机
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteHostFromEnvironment
+        :type request: :class:`huaweicloudsdkcodeartsdeploy.v2.DeleteHostFromEnvironmentRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.DeleteHostFromEnvironmentResponse`
+        """
+        return self._delete_host_from_environment_with_http_info(request)
+
+    def _delete_host_from_environment_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'application_id' in local_var_params:
+            path_params['application_id'] = local_var_params['application_id']
+        if 'environment_id' in local_var_params:
+            path_params['environment_id'] = local_var_params['environment_id']
+        if 'host_id' in local_var_params:
+            path_params['host_id'] = local_var_params['host_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/applications/{application_id}/environments/{environment_id}/{host_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteHostFromEnvironmentResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def import_host_to_environment(self, request):
+        """环境下导入主机
+
+        环境下导入主机
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ImportHostToEnvironment
+        :type request: :class:`huaweicloudsdkcodeartsdeploy.v2.ImportHostToEnvironmentRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.ImportHostToEnvironmentResponse`
+        """
+        return self._import_host_to_environment_with_http_info(request)
+
+    def _import_host_to_environment_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'application_id' in local_var_params:
+            path_params['application_id'] = local_var_params['application_id']
+        if 'environment_id' in local_var_params:
+            path_params['environment_id'] = local_var_params['environment_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/applications/{application_id}/environments/{environment_id}/hosts/import',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ImportHostToEnvironmentResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_environments(self, request):
+        """查询应用下环境列表
+
+        查询应用下环境列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListEnvironments
+        :type request: :class:`huaweicloudsdkcodeartsdeploy.v2.ListEnvironmentsRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.ListEnvironmentsResponse`
+        """
+        return self._list_environments_with_http_info(request)
+
+    def _list_environments_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'application_id' in local_var_params:
+            path_params['application_id'] = local_var_params['application_id']
+
+        query_params = []
+        if 'project_id' in local_var_params:
+            query_params.append(('project_id', local_var_params['project_id']))
+        if 'page_index' in local_var_params:
+            query_params.append(('page_index', local_var_params['page_index']))
+        if 'page_size' in local_var_params:
+            query_params.append(('page_size', local_var_params['page_size']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'sort_key' in local_var_params:
+            query_params.append(('sort_key', local_var_params['sort_key']))
+        if 'sort_dir' in local_var_params:
+            query_params.append(('sort_dir', local_var_params['sort_dir']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/applications/{application_id}/environments',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListEnvironmentsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_environment_detail(self, request):
+        """查询环境详情
+
+        查询环境详情
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowEnvironmentDetail
+        :type request: :class:`huaweicloudsdkcodeartsdeploy.v2.ShowEnvironmentDetailRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.ShowEnvironmentDetailResponse`
+        """
+        return self._show_environment_detail_with_http_info(request)
+
+    def _show_environment_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'application_id' in local_var_params:
+            path_params['application_id'] = local_var_params['application_id']
+        if 'environment_id' in local_var_params:
+            path_params['environment_id'] = local_var_params['environment_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/applications/{application_id}/environments/{environment_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowEnvironmentDetailResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def create_deployment_host(self, request):
         """新建主机
 
-        在指定主机集群下新建主机。
+        在指定主机集群下新建主机。该接口于2024年09月30日后不再维护，推荐使用新版CreateHost接口。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -547,6 +1133,64 @@ class CodeArtsDeployClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='CreateDeploymentHostResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_host(self, request):
+        """新建主机
+
+        在指定主机集群下新建主机。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateHost
+        :type request: :class:`huaweicloudsdkcodeartsdeploy.v2.CreateHostRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.CreateHostResponse`
+        """
+        return self._create_host_with_http_info(request)
+
+    def _create_host_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/resources/host-groups/{group_id}/hosts',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateHostResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -613,7 +1257,7 @@ class CodeArtsDeployClient(Client):
     def list_hosts(self, request):
         """查询主机列表
 
-        根据主机集群id查询指定主机集群下的主机列表。
+        根据主机集群id查询指定主机集群下的主机列表。该接口于2024年09月30日后不再维护，推荐使用新版ListNewHosts接口。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -680,10 +1324,80 @@ class CodeArtsDeployClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_new_hosts(self, request):
+        """查询主机列表
+
+        根据主机集群id查询指定主机集群下的主机列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListNewHosts
+        :type request: :class:`huaweicloudsdkcodeartsdeploy.v2.ListNewHostsRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.ListNewHostsResponse`
+        """
+        return self._list_new_hosts_with_http_info(request)
+
+    def _list_new_hosts_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
+
+        query_params = []
+        if 'key_field' in local_var_params:
+            query_params.append(('key_field', local_var_params['key_field']))
+        if 'environment_id' in local_var_params:
+            query_params.append(('environment_id', local_var_params['environment_id']))
+        if 'page_index' in local_var_params:
+            query_params.append(('page_index', local_var_params['page_index']))
+        if 'page_size' in local_var_params:
+            query_params.append(('page_size', local_var_params['page_size']))
+        if 'sort_key' in local_var_params:
+            query_params.append(('sort_key', local_var_params['sort_key']))
+        if 'sort_dir' in local_var_params:
+            query_params.append(('sort_dir', local_var_params['sort_dir']))
+        if 'as_proxy' in local_var_params:
+            query_params.append(('as_proxy', local_var_params['as_proxy']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/resources/host-groups/{group_id}/hosts',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListNewHostsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def show_deployment_host_detail(self, request):
         """查询主机详情
 
-        根据主机id查询主机详情。
+        根据主机id查询主机详情。该接口于2024年09月30日后不再维护，推荐使用新版ShowHostDetail接口。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -733,6 +1447,64 @@ class CodeArtsDeployClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ShowDeploymentHostDetailResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_host_detail(self, request):
+        """查询主机详情
+
+        根据主机id查询主机详情。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowHostDetail
+        :type request: :class:`huaweicloudsdkcodeartsdeploy.v2.ShowHostDetailRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.ShowHostDetailResponse`
+        """
+        return self._show_host_detail_with_http_info(request)
+
+    def _show_host_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
+        if 'host_id' in local_var_params:
+            path_params['host_id'] = local_var_params['host_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/resources/host-groups/{group_id}/hosts/{host_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowHostDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -801,7 +1573,7 @@ class CodeArtsDeployClient(Client):
     def create_deployment_group(self, request):
         """新建主机集群
 
-        在项目下新建主机集群。
+        在项目下新建主机集群。该接口于2024年09月30日后不再维护，推荐使用新版CreateHostCluster接口。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -849,6 +1621,62 @@ class CodeArtsDeployClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='CreateDeploymentGroupResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_host_cluster(self, request):
+        """新建主机集群
+
+        在项目下新建主机集群。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateHostCluster
+        :type request: :class:`huaweicloudsdkcodeartsdeploy.v2.CreateHostClusterRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.CreateHostClusterResponse`
+        """
+        return self._create_host_cluster_with_http_info(request)
+
+    def _create_host_cluster_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/resources/host-groups',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateHostClusterResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -910,10 +1738,82 @@ class CodeArtsDeployClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-    def list_host_groups(self, request):
+    def list_host_clusters(self, request):
         """查询主机集群列表
 
         按条件查询主机集群列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListHostClusters
+        :type request: :class:`huaweicloudsdkcodeartsdeploy.v2.ListHostClustersRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.ListHostClustersResponse`
+        """
+        return self._list_host_clusters_with_http_info(request)
+
+    def _list_host_clusters_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'project_id' in local_var_params:
+            query_params.append(('project_id', local_var_params['project_id']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'os' in local_var_params:
+            query_params.append(('os', local_var_params['os']))
+        if 'page_index' in local_var_params:
+            query_params.append(('page_index', local_var_params['page_index']))
+        if 'page_size' in local_var_params:
+            query_params.append(('page_size', local_var_params['page_size']))
+        if 'sort_field' in local_var_params:
+            query_params.append(('sort_field', local_var_params['sort_field']))
+        if 'sort_type' in local_var_params:
+            query_params.append(('sort_type', local_var_params['sort_type']))
+        if 'is_proxy_mode' in local_var_params:
+            query_params.append(('is_proxy_mode', local_var_params['is_proxy_mode']))
+        if 'slave_cluster_id' in local_var_params:
+            query_params.append(('slave_cluster_id', local_var_params['slave_cluster_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/resources/host-groups',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListHostClustersResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_host_groups(self, request):
+        """查询主机集群列表
+
+        按条件查询主机集群列表。该接口于2024年09月30日后不再维护，推荐使用新版ListHostClusters接口。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -983,7 +1883,7 @@ class CodeArtsDeployClient(Client):
     def show_deployment_group_detail(self, request):
         """查询主机集群
 
-        根据主机集群id查询主机集群详情。
+        根据主机集群id查询主机集群详情。该接口于2024年09月30日后不再维护，推荐使用新版ShowHostClusterDetail接口。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1031,6 +1931,62 @@ class CodeArtsDeployClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ShowDeploymentGroupDetailResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_host_cluster_detail(self, request):
+        """查询主机集群
+
+        根据主机集群id查询主机集群详情。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowHostClusterDetail
+        :type request: :class:`huaweicloudsdkcodeartsdeploy.v2.ShowHostClusterDetailRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.ShowHostClusterDetailResponse`
+        """
+        return self._show_host_cluster_detail_with_http_info(request)
+
+    def _show_host_cluster_detail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/resources/host-groups/{group_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowHostClusterDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

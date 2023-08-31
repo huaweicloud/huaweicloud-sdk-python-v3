@@ -672,7 +672,7 @@ class KooMessageAsyncClient(Client):
 
         用于用户创建个人模板。
         
-        &gt; 请求中所有字符串不允许携带“&lt;”、“&gt;”或多个空格。
+        &gt; 请求中所有字符串不允许携带“&lt;”、“&gt;”、“\\&amp;amp;amp;”或多个空格。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -729,7 +729,7 @@ class KooMessageAsyncClient(Client):
     def delete_aim_personal_template_async(self, request):
         """删除模板实例
 
-        根据客户提供的模板ID，删除智能信息个人模板。
+        根据用户提供的模板ID，删除智能信息个人模板。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -786,7 +786,7 @@ class KooMessageAsyncClient(Client):
     def delete_template_material_async(self, request):
         """删除模板素材
 
-        根据客户提供的模板ID，删除模板素材。
+        根据用户提供的模板ID，删除模板素材。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -843,7 +843,7 @@ class KooMessageAsyncClient(Client):
     def list_aim_template_materials_async(self, request):
         """查询智能消息模板素材列表
 
-        根据客户提供的过滤条件，查询模板素材列表。
+        根据用户提供的过滤条件，查询模板素材列表。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1041,10 +1041,124 @@ class KooMessageAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def set_primary_video_thumbnail_async(self, request):
+        """设置视频模板封面图
+
+        根据用户提供的视频封面图资源ID和AIM视频资源ID设置视频模板的封面图。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for SetPrimaryVideoThumbnail
+        :type request: :class:`huaweicloudsdkkoomessage.v1.SetPrimaryVideoThumbnailRequest`
+        :rtype: :class:`huaweicloudsdkkoomessage.v1.SetPrimaryVideoThumbnailResponse`
+        """
+        return self._set_primary_video_thumbnail_with_http_info(request)
+
+    def _set_primary_video_thumbnail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v1/aim/template-material-thumbnails',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='SetPrimaryVideoThumbnailResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_template_video_thumbnail_async(self, request):
+        """查询视频模板封面图
+
+        根据用户提供的过滤条件，查询视频模板封面图资源列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowTemplateVideoThumbnail
+        :type request: :class:`huaweicloudsdkkoomessage.v1.ShowTemplateVideoThumbnailRequest`
+        :rtype: :class:`huaweicloudsdkkoomessage.v1.ShowTemplateVideoThumbnailResponse`
+        """
+        return self._show_template_video_thumbnail_with_http_info(request)
+
+    def _show_template_video_thumbnail_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'aim_resource_id' in local_var_params:
+            query_params.append(('aim_resource_id', local_var_params['aim_resource_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v1/aim/template-material-thumbnails',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowTemplateVideoThumbnailResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def update_personal_template_state_async(self, request):
         """启用或禁用模板实例
 
-        根据客户提供的模板ID，启用或禁用智能信息个人模板。
+        根据用户提供的模板ID，启用或禁用智能信息个人模板。
         
         Please refer to HUAWEI cloud API Explorer for details.
 

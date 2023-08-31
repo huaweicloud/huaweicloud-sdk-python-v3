@@ -94,7 +94,8 @@ class SlowSqlTemplate:
         self.discriminator = None
 
         self.sql_template = sql_template
-        self.sql_sample = sql_sample
+        if sql_sample is not None:
+            self.sql_sample = sql_sample
         self.db_names = db_names
         self.execute_count = execute_count
         self.avg_execute_time = avg_execute_time

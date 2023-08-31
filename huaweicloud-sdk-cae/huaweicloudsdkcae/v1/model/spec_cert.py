@@ -19,18 +19,16 @@ class SpecCert:
     openapi_types = {
         'crt': 'str',
         'key': 'str',
-        'policy': 'str',
         'created_at': 'datetime'
     }
 
     attribute_map = {
         'crt': 'crt',
         'key': 'key',
-        'policy': 'policy',
         'created_at': 'created_at'
     }
 
-    def __init__(self, crt=None, key=None, policy=None, created_at=None):
+    def __init__(self, crt=None, key=None, created_at=None):
         """SpecCert
 
         The model defined in huaweicloud sdk
@@ -39,8 +37,6 @@ class SpecCert:
         :type crt: str
         :param key: 私钥内容。
         :type key: str
-        :param policy: 安全策略。 - tls-1-2-strict - tls-1-2 - tls-1-1 - tls-1-0
-        :type policy: str
         :param created_at: 创建时间。
         :type created_at: datetime
         """
@@ -49,7 +45,6 @@ class SpecCert:
 
         self._crt = None
         self._key = None
-        self._policy = None
         self._created_at = None
         self.discriminator = None
 
@@ -57,8 +52,6 @@ class SpecCert:
             self.crt = crt
         if key is not None:
             self.key = key
-        if policy is not None:
-            self.policy = policy
         if created_at is not None:
             self.created_at = created_at
 
@@ -105,28 +98,6 @@ class SpecCert:
         :type key: str
         """
         self._key = key
-
-    @property
-    def policy(self):
-        """Gets the policy of this SpecCert.
-
-        安全策略。 - tls-1-2-strict - tls-1-2 - tls-1-1 - tls-1-0
-
-        :return: The policy of this SpecCert.
-        :rtype: str
-        """
-        return self._policy
-
-    @policy.setter
-    def policy(self, policy):
-        """Sets the policy of this SpecCert.
-
-        安全策略。 - tls-1-2-strict - tls-1-2 - tls-1-1 - tls-1-0
-
-        :param policy: The policy of this SpecCert.
-        :type policy: str
-        """
-        self._policy = policy
 
     @property
     def created_at(self):

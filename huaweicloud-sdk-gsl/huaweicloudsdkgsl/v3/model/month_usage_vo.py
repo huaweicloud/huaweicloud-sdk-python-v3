@@ -18,21 +18,25 @@ class MonthUsageVo:
 
     openapi_types = {
         'sim_card_id': 'int',
+        'iccid': 'str',
         'flow_usages': 'list[FlowUsageVo]'
     }
 
     attribute_map = {
         'sim_card_id': 'sim_card_id',
+        'iccid': 'iccid',
         'flow_usages': 'flow_usages'
     }
 
-    def __init__(self, sim_card_id=None, flow_usages=None):
+    def __init__(self, sim_card_id=None, iccid=None, flow_usages=None):
         """MonthUsageVo
 
         The model defined in huaweicloud sdk
 
         :param sim_card_id: SIM卡ID
         :type sim_card_id: int
+        :param iccid: iccid
+        :type iccid: str
         :param flow_usages: 月用量
         :type flow_usages: list[:class:`huaweicloudsdkgsl.v3.FlowUsageVo`]
         """
@@ -40,11 +44,14 @@ class MonthUsageVo:
         
 
         self._sim_card_id = None
+        self._iccid = None
         self._flow_usages = None
         self.discriminator = None
 
         if sim_card_id is not None:
             self.sim_card_id = sim_card_id
+        if iccid is not None:
+            self.iccid = iccid
         if flow_usages is not None:
             self.flow_usages = flow_usages
 
@@ -69,6 +76,28 @@ class MonthUsageVo:
         :type sim_card_id: int
         """
         self._sim_card_id = sim_card_id
+
+    @property
+    def iccid(self):
+        """Gets the iccid of this MonthUsageVo.
+
+        iccid
+
+        :return: The iccid of this MonthUsageVo.
+        :rtype: str
+        """
+        return self._iccid
+
+    @iccid.setter
+    def iccid(self, iccid):
+        """Sets the iccid of this MonthUsageVo.
+
+        iccid
+
+        :param iccid: The iccid of this MonthUsageVo.
+        :type iccid: str
+        """
+        self._iccid = iccid
 
     @property
     def flow_usages(self):

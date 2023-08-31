@@ -19,6 +19,8 @@ from huaweicloudsdkdgc.v1.model.create_resource_request import CreateResourceReq
 from huaweicloudsdkdgc.v1.model.create_resource_response import CreateResourceResponse
 from huaweicloudsdkdgc.v1.model.create_script_request import CreateScriptRequest
 from huaweicloudsdkdgc.v1.model.create_script_response import CreateScriptResponse
+from huaweicloudsdkdgc.v1.model.create_supplementdata_request import CreateSupplementdataRequest
+from huaweicloudsdkdgc.v1.model.create_supplementdata_response import CreateSupplementdataResponse
 from huaweicloudsdkdgc.v1.model.cron import Cron
 from huaweicloudsdkdgc.v1.model.delete_connction_request import DeleteConnctionRequest
 from huaweicloudsdkdgc.v1.model.delete_connction_response import DeleteConnctionResponse
@@ -63,6 +65,8 @@ from huaweicloudsdkdgc.v1.model.list_script_results_request import ListScriptRes
 from huaweicloudsdkdgc.v1.model.list_script_results_response import ListScriptResultsResponse
 from huaweicloudsdkdgc.v1.model.list_scripts_request import ListScriptsRequest
 from huaweicloudsdkdgc.v1.model.list_scripts_response import ListScriptsResponse
+from huaweicloudsdkdgc.v1.model.list_supplementdata_request import ListSupplementdataRequest
+from huaweicloudsdkdgc.v1.model.list_supplementdata_response import ListSupplementdataResponse
 from huaweicloudsdkdgc.v1.model.list_system_tasks_request import ListSystemTasksRequest
 from huaweicloudsdkdgc.v1.model.list_system_tasks_response import ListSystemTasksResponse
 from huaweicloudsdkdgc.v1.model.location import Location
@@ -99,7 +103,11 @@ from huaweicloudsdkdgc.v1.model.stop_job_instance_request import StopJobInstance
 from huaweicloudsdkdgc.v1.model.stop_job_instance_response import StopJobInstanceResponse
 from huaweicloudsdkdgc.v1.model.stop_job_request import StopJobRequest
 from huaweicloudsdkdgc.v1.model.stop_job_response import StopJobResponse
+from huaweicloudsdkdgc.v1.model.stop_supplementdata_request import StopSupplementdataRequest
+from huaweicloudsdkdgc.v1.model.stop_supplementdata_response import StopSupplementdataResponse
 from huaweicloudsdkdgc.v1.model.sub_task_status import SubTaskStatus
+from huaweicloudsdkdgc.v1.model.supplement_data_info import SupplementDataInfo
+from huaweicloudsdkdgc.v1.model.supplement_data_resp import SupplementDataResp
 from huaweicloudsdkdgc.v1.model.update_connection_request import UpdateConnectionRequest
 from huaweicloudsdkdgc.v1.model.update_connection_response import UpdateConnectionResponse
 from huaweicloudsdkdgc.v1.model.update_job_request import UpdateJobRequest

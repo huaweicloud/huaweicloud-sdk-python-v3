@@ -140,7 +140,8 @@ class CertificateAuthorities:
         self.not_after = not_after
         self.distinguished_name = distinguished_name
         self.crl_configuration = crl_configuration
-        self.enterprise_project_id = enterprise_project_id
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
 
     @property
     def ca_id(self):

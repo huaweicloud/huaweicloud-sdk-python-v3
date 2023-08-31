@@ -24,7 +24,7 @@ from abc import abstractmethod
 
 from huaweicloudsdkcore.auth.internal import Iam, Metadata
 from huaweicloudsdkcore.exceptions.exceptions import ApiValueError, ServiceResponseException, SdkException
-from huaweicloudsdkcore.signer.signer import Signer, SM3Signer, DerivationAKSKSigner
+from huaweicloudsdkcore.signer.signer import Signer, SM3Signer, DerivationAKSKSigner, P256SHA256Signer, SM2SM3Signer
 from huaweicloudsdkcore.signer.algorithm import SigningAlgorithm
 from huaweicloudsdkcore.auth.cache import AuthCache
 from huaweicloudsdkcore.utils import time_utils, six_utils
@@ -74,6 +74,13 @@ class Credentials(DerivedCredentials, TempCredentials, FederalCredentials):
     _TIME_FORMAT = "%Y-%m-%dT%H:%M:%S.%fZ"
     _X_SECURITY_TOKEN = "X-Security-Token"
     _X_AUTH_TOKEN = "X-Auth-Token"
+    _SIGNER_CACHE = {}
+    _SIGNER_CASE = {
+        SigningAlgorithm.HMAC_SHA256: Signer,
+        SigningAlgorithm.HMAC_SM3: SM3Signer,
+        SigningAlgorithm.ECDSA_P256_SHA256: P256SHA256Signer,
+        SigningAlgorithm.SM2_SM3: SM2SM3Signer
+    }
 
     def __init__(self, ak=None, sk=None):
         super(Credentials, self).__init__()
@@ -142,12 +149,18 @@ class Credentials(DerivedCredentials, TempCredentials, FederalCredentials):
         if self._is_derived_auth(request):
             return DerivationAKSKSigner(self).sign(request, self._derived_auth_service_name, self._region_id)
 
-        if request.signing_algorithm == SigningAlgorithm.HMAC_SHA256:
-            return Signer(self).sign(request)
-        elif request.signing_algorithm == SigningAlgorithm.HMAC_SM3:
-            return SM3Signer(self).sign(request)
+        signer_key = str(request.signing_algorithm) + self.ak
+        if signer_key in self._SIGNER_CACHE:
+            signer = self._SIGNER_CACHE.get(signer_key)
+        else:
+            signer_cls = self._SIGNER_CASE.get(request.signing_algorithm)
+            if not signer_cls:
+                raise SdkException("unsupported signing algorithm: " + str(request.signing_algorithm))
 
-        raise SdkException("unsupported signing algorithm: " + str(request.signing_algorithm))
+            signer = signer_cls(self)
+            self._SIGNER_CACHE[signer_key] = signer
+
+        return signer.sign(request)
 
     def _is_derived_auth(self, request):
         if not self._derived_predicate:

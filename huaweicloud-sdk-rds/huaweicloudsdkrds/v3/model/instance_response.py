@@ -22,6 +22,7 @@ class InstanceResponse:
         'enable_ssl': 'bool',
         'private_ips': 'list[str]',
         'private_dns_names': 'list[str]',
+        'public_dns_names': 'list[str]',
         'public_ips': 'list[str]',
         'type': 'str',
         'created': 'str',
@@ -65,6 +66,7 @@ class InstanceResponse:
         'enable_ssl': 'enable_ssl',
         'private_ips': 'private_ips',
         'private_dns_names': 'private_dns_names',
+        'public_dns_names': 'public_dns_names',
         'public_ips': 'public_ips',
         'type': 'type',
         'created': 'created',
@@ -102,7 +104,7 @@ class InstanceResponse:
         'expiration_time': 'expiration_time'
     }
 
-    def __init__(self, id=None, status=None, enable_ssl=None, private_ips=None, private_dns_names=None, public_ips=None, type=None, created=None, updated=None, db_user_name=None, switch_strategy=None, read_only_by_user=None, maintenance_window=None, nodes=None, related_instance=None, name=None, datastore=None, ha=None, port=None, backup_strategy=None, enterprise_project_id=None, disk_encryption_id=None, flavor_ref=None, cpu=None, mem=None, volume=None, region=None, vpc_id=None, subnet_id=None, security_group_id=None, charge_info=None, time_zone=None, tags=None, backup_used_space=None, storage_used_space=None, order_id=None, associated_with_ddm=None, alias=None, max_iops=None, expiration_time=None):
+    def __init__(self, id=None, status=None, enable_ssl=None, private_ips=None, private_dns_names=None, public_dns_names=None, public_ips=None, type=None, created=None, updated=None, db_user_name=None, switch_strategy=None, read_only_by_user=None, maintenance_window=None, nodes=None, related_instance=None, name=None, datastore=None, ha=None, port=None, backup_strategy=None, enterprise_project_id=None, disk_encryption_id=None, flavor_ref=None, cpu=None, mem=None, volume=None, region=None, vpc_id=None, subnet_id=None, security_group_id=None, charge_info=None, time_zone=None, tags=None, backup_used_space=None, storage_used_space=None, order_id=None, associated_with_ddm=None, alias=None, max_iops=None, expiration_time=None):
         """InstanceResponse
 
         The model defined in huaweicloud sdk
@@ -115,8 +117,10 @@ class InstanceResponse:
         :type enable_ssl: bool
         :param private_ips: 实例内网IP地址列表。弹性云服务器创建成功后该值存在，其他情况下为空字符串。
         :type private_ips: list[str]
-        :param private_dns_names: 
+        :param private_dns_names: 内网域名列表
         :type private_dns_names: list[str]
+        :param public_dns_names: 公网域名列表
+        :type public_dns_names: list[str]
         :param public_ips: 实例外网IP地址列表。
         :type public_ips: list[str]
         :param type: 实例类型，取值为“Single”，“Ha”或“Replica”，分别对应于单机实例、主备实例、只读实例。
@@ -196,6 +200,7 @@ class InstanceResponse:
         self._enable_ssl = None
         self._private_ips = None
         self._private_dns_names = None
+        self._public_dns_names = None
         self._public_ips = None
         self._type = None
         self._created = None
@@ -239,6 +244,8 @@ class InstanceResponse:
         self.private_ips = private_ips
         if private_dns_names is not None:
             self.private_dns_names = private_dns_names
+        if public_dns_names is not None:
+            self.public_dns_names = public_dns_names
         self.public_ips = public_ips
         self.type = type
         self.created = created
@@ -378,6 +385,8 @@ class InstanceResponse:
     def private_dns_names(self):
         """Gets the private_dns_names of this InstanceResponse.
 
+        内网域名列表
+
         :return: The private_dns_names of this InstanceResponse.
         :rtype: list[str]
         """
@@ -387,10 +396,34 @@ class InstanceResponse:
     def private_dns_names(self, private_dns_names):
         """Sets the private_dns_names of this InstanceResponse.
 
+        内网域名列表
+
         :param private_dns_names: The private_dns_names of this InstanceResponse.
         :type private_dns_names: list[str]
         """
         self._private_dns_names = private_dns_names
+
+    @property
+    def public_dns_names(self):
+        """Gets the public_dns_names of this InstanceResponse.
+
+        公网域名列表
+
+        :return: The public_dns_names of this InstanceResponse.
+        :rtype: list[str]
+        """
+        return self._public_dns_names
+
+    @public_dns_names.setter
+    def public_dns_names(self, public_dns_names):
+        """Sets the public_dns_names of this InstanceResponse.
+
+        公网域名列表
+
+        :param public_dns_names: The public_dns_names of this InstanceResponse.
+        :type public_dns_names: list[str]
+        """
+        self._public_dns_names = public_dns_names
 
     @property
     def public_ips(self):

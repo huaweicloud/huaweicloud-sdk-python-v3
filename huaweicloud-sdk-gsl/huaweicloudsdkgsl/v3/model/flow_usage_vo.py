@@ -33,7 +33,7 @@ class FlowUsageVo:
 
         :param billing_cycle: 账期
         :type billing_cycle: str
-        :param flow_used: 已用流量
+        :param flow_used: 已用流量（MB）
         :type flow_used: float
         """
         
@@ -74,7 +74,7 @@ class FlowUsageVo:
     def flow_used(self):
         """Gets the flow_used of this FlowUsageVo.
 
-        已用流量
+        已用流量（MB）
 
         :return: The flow_used of this FlowUsageVo.
         :rtype: float
@@ -85,7 +85,7 @@ class FlowUsageVo:
     def flow_used(self, flow_used):
         """Sets the flow_used of this FlowUsageVo.
 
-        已用流量
+        已用流量（MB）
 
         :param flow_used: The flow_used of this FlowUsageVo.
         :type flow_used: float

@@ -46,6 +46,7 @@ from huaweicloudsdkges.v2.model.expand_graph_req_expand import ExpandGraphReqExp
 from huaweicloudsdkges.v2.model.export_graph2_request import ExportGraph2Request
 from huaweicloudsdkges.v2.model.export_graph2_response import ExportGraph2Response
 from huaweicloudsdkges.v2.model.export_graph_req import ExportGraphReq
+from huaweicloudsdkges.v2.model.export_graph_req_paginate import ExportGraphReqPaginate
 from huaweicloudsdkges.v2.model.import_graph2_request import ImportGraph2Request
 from huaweicloudsdkges.v2.model.import_graph2_response import ImportGraph2Response
 from huaweicloudsdkges.v2.model.import_graph_req import ImportGraphReq

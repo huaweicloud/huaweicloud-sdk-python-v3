@@ -63,9 +63,9 @@ class AimPersonalTemplateContent:
         :type content: str
         :param content_child: 子内容。非必填，文本长度限制请参考智能信息模板标准版式要求。  &gt; 智能信息模板标准版式要求可登录KooMessage控制台，在创建智能信息模板中查看。 
         :type content_child: str
-        :param src_type: src类型。资源类型为Image或Video时，该项为必填项。 - 1：指资源ID  - 2：指资源地址 
+        :param src_type: src类型。资源类型为Image或Video时，该项为必填项。 - 1：指资源ID  - 2：指资源地址  &gt; src_type为2，即资源地址时，src或cover内容必须是存储在客户侧服务器上的资源地址。 
         :type src_type: int
-        :param src: 资源来源，资源类型为Image或Video时，为必填。  &gt; - 如上src_type为1，即资源ID时，参数填入上传模板素材接口中返回的aim_resource_id，如：691996319597764608 &gt; - 如上src_type为2，即资源地址时，参数填写资源完整的URL，最大长度不超过1000个字符  
+        :param src: 资源来源，资源类型为Image或Video时，为必填，通过设置视频模板封面图接口设置视频封面。 &gt; - 如上src_type为1，即资源ID时，参数填入上传模板素材接口中返回的aim_resource_id，如：691996319597764608 &gt; - 如上src_type为2，即资源地址时，参数填写资源完整的URL，最大长度不超过1000个字符  
         :type src: str
         :param cover: 视频封面。 &gt; 资源类型为Video时，为必填。 &gt; - 如上src_type为1，即资源ID时，参数填入上传模板素材接口中返回的aim_resource_id，如：691996319597764608 &gt; - 如上src_type为2，即资源地址时，参数填写资源完整的URL，最大长度不超过1000个字符 
         :type cover: str
@@ -207,7 +207,7 @@ class AimPersonalTemplateContent:
     def src_type(self):
         """Gets the src_type of this AimPersonalTemplateContent.
 
-        src类型。资源类型为Image或Video时，该项为必填项。 - 1：指资源ID  - 2：指资源地址 
+        src类型。资源类型为Image或Video时，该项为必填项。 - 1：指资源ID  - 2：指资源地址  > src_type为2，即资源地址时，src或cover内容必须是存储在客户侧服务器上的资源地址。 
 
         :return: The src_type of this AimPersonalTemplateContent.
         :rtype: int
@@ -218,7 +218,7 @@ class AimPersonalTemplateContent:
     def src_type(self, src_type):
         """Sets the src_type of this AimPersonalTemplateContent.
 
-        src类型。资源类型为Image或Video时，该项为必填项。 - 1：指资源ID  - 2：指资源地址 
+        src类型。资源类型为Image或Video时，该项为必填项。 - 1：指资源ID  - 2：指资源地址  > src_type为2，即资源地址时，src或cover内容必须是存储在客户侧服务器上的资源地址。 
 
         :param src_type: The src_type of this AimPersonalTemplateContent.
         :type src_type: int
@@ -229,7 +229,7 @@ class AimPersonalTemplateContent:
     def src(self):
         """Gets the src of this AimPersonalTemplateContent.
 
-        资源来源，资源类型为Image或Video时，为必填。  > - 如上src_type为1，即资源ID时，参数填入上传模板素材接口中返回的aim_resource_id，如：691996319597764608 > - 如上src_type为2，即资源地址时，参数填写资源完整的URL，最大长度不超过1000个字符  
+        资源来源，资源类型为Image或Video时，为必填，通过设置视频模板封面图接口设置视频封面。 > - 如上src_type为1，即资源ID时，参数填入上传模板素材接口中返回的aim_resource_id，如：691996319597764608 > - 如上src_type为2，即资源地址时，参数填写资源完整的URL，最大长度不超过1000个字符  
 
         :return: The src of this AimPersonalTemplateContent.
         :rtype: str
@@ -240,7 +240,7 @@ class AimPersonalTemplateContent:
     def src(self, src):
         """Sets the src of this AimPersonalTemplateContent.
 
-        资源来源，资源类型为Image或Video时，为必填。  > - 如上src_type为1，即资源ID时，参数填入上传模板素材接口中返回的aim_resource_id，如：691996319597764608 > - 如上src_type为2，即资源地址时，参数填写资源完整的URL，最大长度不超过1000个字符  
+        资源来源，资源类型为Image或Video时，为必填，通过设置视频模板封面图接口设置视频封面。 > - 如上src_type为1，即资源ID时，参数填入上传模板素材接口中返回的aim_resource_id，如：691996319597764608 > - 如上src_type为2，即资源地址时，参数填写资源完整的URL，最大长度不超过1000个字符  
 
         :param src: The src of this AimPersonalTemplateContent.
         :type src: str

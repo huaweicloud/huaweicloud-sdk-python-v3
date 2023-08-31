@@ -311,6 +311,63 @@ class DgcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def create_supplementdata(self, request):
+        """创建补数据实例
+
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateSupplementdata
+        :type request: :class:`huaweicloudsdkdgc.v1.CreateSupplementdataRequest`
+        :rtype: :class:`huaweicloudsdkdgc.v1.CreateSupplementdataResponse`
+        """
+        return self._create_supplementdata_with_http_info(request)
+
+    def _create_supplementdata_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1.0/{project_id}/supplementdata',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateSupplementdataResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def delete_connction(self, request):
         """删除连接
 
@@ -1213,6 +1270,61 @@ class DgcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_supplementdata(self, request):
+        """查询补数据实例
+
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListSupplementdata
+        :type request: :class:`huaweicloudsdkdgc.v1.ListSupplementdataRequest`
+        :rtype: :class:`huaweicloudsdkdgc.v1.ListSupplementdataResponse`
+        """
+        return self._list_supplementdata_with_http_info(request)
+
+    def _list_supplementdata_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1.0/{project_id}/supplementdata',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListSupplementdataResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_system_tasks(self, request):
         """查询系统任务详情
 
@@ -1959,6 +2071,63 @@ class DgcClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='StopJobInstanceResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def stop_supplementdata(self, request):
+        """停止补数据实例
+
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for StopSupplementdata
+        :type request: :class:`huaweicloudsdkdgc.v1.StopSupplementdataRequest`
+        :rtype: :class:`huaweicloudsdkdgc.v1.StopSupplementdataResponse`
+        """
+        return self._stop_supplementdata_with_http_info(request)
+
+    def _stop_supplementdata_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_name' in local_var_params:
+            path_params['instance_name'] = local_var_params['instance_name']
+
+        query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1.0/{project_id}/supplementdata/{instance_name}/stop',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='StopSupplementdataResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

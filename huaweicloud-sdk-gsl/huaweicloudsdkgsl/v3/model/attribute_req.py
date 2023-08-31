@@ -18,6 +18,7 @@ class AttributeReq:
 
     openapi_types = {
         'sim_card_id': 'int',
+        'iccid': 'str',
         'customer_attribute1': 'str',
         'customer_attribute2': 'str',
         'customer_attribute3': 'str',
@@ -28,6 +29,7 @@ class AttributeReq:
 
     attribute_map = {
         'sim_card_id': 'sim_card_id',
+        'iccid': 'iccid',
         'customer_attribute1': 'customer_attribute1',
         'customer_attribute2': 'customer_attribute2',
         'customer_attribute3': 'customer_attribute3',
@@ -36,13 +38,15 @@ class AttributeReq:
         'customer_attribute6': 'customer_attribute6'
     }
 
-    def __init__(self, sim_card_id=None, customer_attribute1=None, customer_attribute2=None, customer_attribute3=None, customer_attribute4=None, customer_attribute5=None, customer_attribute6=None):
+    def __init__(self, sim_card_id=None, iccid=None, customer_attribute1=None, customer_attribute2=None, customer_attribute3=None, customer_attribute4=None, customer_attribute5=None, customer_attribute6=None):
         """AttributeReq
 
         The model defined in huaweicloud sdk
 
-        :param sim_card_id: SIM卡标识
+        :param sim_card_id: SIM卡标识，如果SIM卡标识传0则表示需要根据iccid处理。
         :type sim_card_id: int
+        :param iccid: iccid，如果SIM卡标识传0则表示需要根据iccid处理。
+        :type iccid: str
         :param customer_attribute1: 自定义属性一
         :type customer_attribute1: str
         :param customer_attribute2: 自定义属性二
@@ -60,6 +64,7 @@ class AttributeReq:
         
 
         self._sim_card_id = None
+        self._iccid = None
         self._customer_attribute1 = None
         self._customer_attribute2 = None
         self._customer_attribute3 = None
@@ -69,6 +74,8 @@ class AttributeReq:
         self.discriminator = None
 
         self.sim_card_id = sim_card_id
+        if iccid is not None:
+            self.iccid = iccid
         if customer_attribute1 is not None:
             self.customer_attribute1 = customer_attribute1
         if customer_attribute2 is not None:
@@ -86,7 +93,7 @@ class AttributeReq:
     def sim_card_id(self):
         """Gets the sim_card_id of this AttributeReq.
 
-        SIM卡标识
+        SIM卡标识，如果SIM卡标识传0则表示需要根据iccid处理。
 
         :return: The sim_card_id of this AttributeReq.
         :rtype: int
@@ -97,12 +104,34 @@ class AttributeReq:
     def sim_card_id(self, sim_card_id):
         """Sets the sim_card_id of this AttributeReq.
 
-        SIM卡标识
+        SIM卡标识，如果SIM卡标识传0则表示需要根据iccid处理。
 
         :param sim_card_id: The sim_card_id of this AttributeReq.
         :type sim_card_id: int
         """
         self._sim_card_id = sim_card_id
+
+    @property
+    def iccid(self):
+        """Gets the iccid of this AttributeReq.
+
+        iccid，如果SIM卡标识传0则表示需要根据iccid处理。
+
+        :return: The iccid of this AttributeReq.
+        :rtype: str
+        """
+        return self._iccid
+
+    @iccid.setter
+    def iccid(self, iccid):
+        """Sets the iccid of this AttributeReq.
+
+        iccid，如果SIM卡标识传0则表示需要根据iccid处理。
+
+        :param iccid: The iccid of this AttributeReq.
+        :type iccid: str
+        """
+        self._iccid = iccid
 
     @property
     def customer_attribute1(self):

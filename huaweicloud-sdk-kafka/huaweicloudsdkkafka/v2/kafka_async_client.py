@@ -361,7 +361,7 @@ class KafkaAsyncClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['apig-auth-iam']
+        auth_settings = []
 
         return self.call_api(
             resource_path='/v2/{project_id}/kafka/instances/{instance_id}/management',

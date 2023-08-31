@@ -19,20 +19,16 @@ class MetaDomain:
     openapi_types = {
         'id': 'str',
         'name': 'str',
-        'zone_id': 'str',
-        'zone_type': 'str',
         'created_at': 'datetime'
     }
 
     attribute_map = {
         'id': 'id',
         'name': 'name',
-        'zone_id': 'zone_id',
-        'zone_type': 'zone_type',
         'created_at': 'created_at'
     }
 
-    def __init__(self, id=None, name=None, zone_id=None, zone_type=None, created_at=None):
+    def __init__(self, id=None, name=None, created_at=None):
         """MetaDomain
 
         The model defined in huaweicloud sdk
@@ -41,10 +37,6 @@ class MetaDomain:
         :type id: str
         :param name: 域名名称。
         :type name: str
-        :param zone_id: 区域ID。
-        :type zone_id: str
-        :param zone_type: 域名类型，默认是公网域名public
-        :type zone_type: str
         :param created_at: 创建时间。
         :type created_at: datetime
         """
@@ -53,8 +45,6 @@ class MetaDomain:
 
         self._id = None
         self._name = None
-        self._zone_id = None
-        self._zone_type = None
         self._created_at = None
         self.discriminator = None
 
@@ -62,10 +52,6 @@ class MetaDomain:
             self.id = id
         if name is not None:
             self.name = name
-        if zone_id is not None:
-            self.zone_id = zone_id
-        if zone_type is not None:
-            self.zone_type = zone_type
         if created_at is not None:
             self.created_at = created_at
 
@@ -112,50 +98,6 @@ class MetaDomain:
         :type name: str
         """
         self._name = name
-
-    @property
-    def zone_id(self):
-        """Gets the zone_id of this MetaDomain.
-
-        区域ID。
-
-        :return: The zone_id of this MetaDomain.
-        :rtype: str
-        """
-        return self._zone_id
-
-    @zone_id.setter
-    def zone_id(self, zone_id):
-        """Sets the zone_id of this MetaDomain.
-
-        区域ID。
-
-        :param zone_id: The zone_id of this MetaDomain.
-        :type zone_id: str
-        """
-        self._zone_id = zone_id
-
-    @property
-    def zone_type(self):
-        """Gets the zone_type of this MetaDomain.
-
-        域名类型，默认是公网域名public
-
-        :return: The zone_type of this MetaDomain.
-        :rtype: str
-        """
-        return self._zone_type
-
-    @zone_type.setter
-    def zone_type(self, zone_type):
-        """Sets the zone_type of this MetaDomain.
-
-        域名类型，默认是公网域名public
-
-        :param zone_type: The zone_type of this MetaDomain.
-        :type zone_type: str
-        """
-        self._zone_type = zone_type
 
     @property
     def created_at(self):

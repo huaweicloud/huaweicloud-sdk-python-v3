@@ -29,6 +29,8 @@ except ImportError:
 class SigningAlgorithm(_ENUM_CLS):
     HMAC_SHA256 = 1
     HMAC_SM3 = 2
+    ECDSA_P256_SHA256 = 3
+    SM2_SM3 = 4
 
     @classmethod
     def get_default(cls):

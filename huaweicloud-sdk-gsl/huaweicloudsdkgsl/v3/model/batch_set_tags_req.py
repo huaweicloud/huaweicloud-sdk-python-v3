@@ -19,24 +19,28 @@ class BatchSetTagsReq:
     openapi_types = {
         'file_temp_id': 'int',
         'sim_card_ids': 'list[int]',
+        'iccids': 'list[str]',
         'tag_ids': 'list[int]'
     }
 
     attribute_map = {
         'file_temp_id': 'file_temp_id',
         'sim_card_ids': 'sim_card_ids',
+        'iccids': 'iccids',
         'tag_ids': 'tag_ids'
     }
 
-    def __init__(self, file_temp_id=None, sim_card_ids=None, tag_ids=None):
+    def __init__(self, file_temp_id=None, sim_card_ids=None, iccids=None, tag_ids=None):
         """BatchSetTagsReq
 
         The model defined in huaweicloud sdk
 
         :param file_temp_id: 临时文件ID
         :type file_temp_id: int
-        :param sim_card_ids: SIM卡id列表，最多500
+        :param sim_card_ids: SIM卡id列表，最多500.sim_card_ids与iccids不能同时为空，sim_card_ids参数为空则根据iccids参数处理
         :type sim_card_ids: list[int]
+        :param iccids: iccid列表，最多支持传入500个iccid。sim_card_ids与iccids不能同时为空，sim_card_ids参数为空则根据iccids参数处理
+        :type iccids: list[str]
         :param tag_ids: 绑定的标签id列表，最多10
         :type tag_ids: list[int]
         """
@@ -45,6 +49,7 @@ class BatchSetTagsReq:
 
         self._file_temp_id = None
         self._sim_card_ids = None
+        self._iccids = None
         self._tag_ids = None
         self.discriminator = None
 
@@ -52,6 +57,8 @@ class BatchSetTagsReq:
             self.file_temp_id = file_temp_id
         if sim_card_ids is not None:
             self.sim_card_ids = sim_card_ids
+        if iccids is not None:
+            self.iccids = iccids
         if tag_ids is not None:
             self.tag_ids = tag_ids
 
@@ -81,7 +88,7 @@ class BatchSetTagsReq:
     def sim_card_ids(self):
         """Gets the sim_card_ids of this BatchSetTagsReq.
 
-        SIM卡id列表，最多500
+        SIM卡id列表，最多500.sim_card_ids与iccids不能同时为空，sim_card_ids参数为空则根据iccids参数处理
 
         :return: The sim_card_ids of this BatchSetTagsReq.
         :rtype: list[int]
@@ -92,12 +99,34 @@ class BatchSetTagsReq:
     def sim_card_ids(self, sim_card_ids):
         """Sets the sim_card_ids of this BatchSetTagsReq.
 
-        SIM卡id列表，最多500
+        SIM卡id列表，最多500.sim_card_ids与iccids不能同时为空，sim_card_ids参数为空则根据iccids参数处理
 
         :param sim_card_ids: The sim_card_ids of this BatchSetTagsReq.
         :type sim_card_ids: list[int]
         """
         self._sim_card_ids = sim_card_ids
+
+    @property
+    def iccids(self):
+        """Gets the iccids of this BatchSetTagsReq.
+
+        iccid列表，最多支持传入500个iccid。sim_card_ids与iccids不能同时为空，sim_card_ids参数为空则根据iccids参数处理
+
+        :return: The iccids of this BatchSetTagsReq.
+        :rtype: list[str]
+        """
+        return self._iccids
+
+    @iccids.setter
+    def iccids(self, iccids):
+        """Sets the iccids of this BatchSetTagsReq.
+
+        iccid列表，最多支持传入500个iccid。sim_card_ids与iccids不能同时为空，sim_card_ids参数为空则根据iccids参数处理
+
+        :param iccids: The iccids of this BatchSetTagsReq.
+        :type iccids: list[str]
+        """
+        self._iccids = iccids
 
     @property
     def tag_ids(self):

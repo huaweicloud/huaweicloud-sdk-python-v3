@@ -39,9 +39,9 @@ class ComponentCreate:
         'mesher': 'Mesher',
         'timezone': 'str',
         'jvm_opts': 'str',
-        'tomcat_opts': 'ComponentCreateTomcatOpts',
+        'tomcat_opts': 'ComponentModifyTomcatOpts',
         'logs': 'list[ComponentLogs]',
-        'custom_metric': 'ComponentCreateCustomMetric',
+        'custom_metric': 'ComponentModifyCustomMetric',
         'affinity': 'ComponentAffinity',
         'anti_affinity': 'ComponentAffinity',
         'liveness_probe': 'ComponentProbe',
@@ -132,11 +132,11 @@ class ComponentCreate:
         :param jvm_opts: jvm参数
         :type jvm_opts: str
         :param tomcat_opts: 
-        :type tomcat_opts: :class:`huaweicloudsdkservicestage.v3.ComponentCreateTomcatOpts`
+        :type tomcat_opts: :class:`huaweicloudsdkservicestage.v3.ComponentModifyTomcatOpts`
         :param logs: 
         :type logs: list[:class:`huaweicloudsdkservicestage.v3.ComponentLogs`]
         :param custom_metric: 
-        :type custom_metric: :class:`huaweicloudsdkservicestage.v3.ComponentCreateCustomMetric`
+        :type custom_metric: :class:`huaweicloudsdkservicestage.v3.ComponentModifyCustomMetric`
         :param affinity: 
         :type affinity: :class:`huaweicloudsdkservicestage.v3.ComponentAffinity`
         :param anti_affinity: 
@@ -192,7 +192,8 @@ class ComponentCreate:
         self.source = source
         if build is not None:
             self.build = build
-        self.environment_id = environment_id
+        if environment_id is not None:
+            self.environment_id = environment_id
         if limit_cpu is not None:
             self.limit_cpu = limit_cpu
         if limit_memory is not None:
@@ -201,10 +202,8 @@ class ComponentCreate:
             self.request_cpu = request_cpu
         if request_memory is not None:
             self.request_memory = request_memory
-        if replica is not None:
-            self.replica = replica
-        if version is not None:
-            self.version = version
+        self.replica = replica
+        self.version = version
         if envs is not None:
             self.envs = envs
         if storages is not None:
@@ -237,8 +236,7 @@ class ComponentCreate:
             self.liveness_probe = liveness_probe
         if readiness_probe is not None:
             self.readiness_probe = readiness_probe
-        if refer_resources is not None:
-            self.refer_resources = refer_resources
+        self.refer_resources = refer_resources
 
     @property
     def name(self):
@@ -665,7 +663,7 @@ class ComponentCreate:
         """Gets the tomcat_opts of this ComponentCreate.
 
         :return: The tomcat_opts of this ComponentCreate.
-        :rtype: :class:`huaweicloudsdkservicestage.v3.ComponentCreateTomcatOpts`
+        :rtype: :class:`huaweicloudsdkservicestage.v3.ComponentModifyTomcatOpts`
         """
         return self._tomcat_opts
 
@@ -674,7 +672,7 @@ class ComponentCreate:
         """Sets the tomcat_opts of this ComponentCreate.
 
         :param tomcat_opts: The tomcat_opts of this ComponentCreate.
-        :type tomcat_opts: :class:`huaweicloudsdkservicestage.v3.ComponentCreateTomcatOpts`
+        :type tomcat_opts: :class:`huaweicloudsdkservicestage.v3.ComponentModifyTomcatOpts`
         """
         self._tomcat_opts = tomcat_opts
 
@@ -701,7 +699,7 @@ class ComponentCreate:
         """Gets the custom_metric of this ComponentCreate.
 
         :return: The custom_metric of this ComponentCreate.
-        :rtype: :class:`huaweicloudsdkservicestage.v3.ComponentCreateCustomMetric`
+        :rtype: :class:`huaweicloudsdkservicestage.v3.ComponentModifyCustomMetric`
         """
         return self._custom_metric
 
@@ -710,7 +708,7 @@ class ComponentCreate:
         """Sets the custom_metric of this ComponentCreate.
 
         :param custom_metric: The custom_metric of this ComponentCreate.
-        :type custom_metric: :class:`huaweicloudsdkservicestage.v3.ComponentCreateCustomMetric`
+        :type custom_metric: :class:`huaweicloudsdkservicestage.v3.ComponentModifyCustomMetric`
         """
         self._custom_metric = custom_metric
 

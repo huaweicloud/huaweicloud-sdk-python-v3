@@ -30,6 +30,7 @@ class PrePaidServerExtendParam:
         'disk_prior': 'str',
         'spot_duration_hours': 'int',
         'interruption_policy': 'str',
+        'cb_csbs_backup': 'str',
         'spot_duration_count': 'int'
     }
 
@@ -47,10 +48,11 @@ class PrePaidServerExtendParam:
         'disk_prior': 'diskPrior',
         'spot_duration_hours': 'spot_duration_hours',
         'interruption_policy': 'interruption_policy',
+        'cb_csbs_backup': 'CB_CSBS_BACKUP',
         'spot_duration_count': 'spot_duration_count'
     }
 
-    def __init__(self, charging_mode=None, region_id=None, period_type=None, period_num=None, is_auto_renew=None, is_auto_pay=None, enterprise_project_id=None, support_auto_recovery=None, market_type=None, spot_price=None, disk_prior=None, spot_duration_hours=None, interruption_policy=None, spot_duration_count=None):
+    def __init__(self, charging_mode=None, region_id=None, period_type=None, period_num=None, is_auto_renew=None, is_auto_pay=None, enterprise_project_id=None, support_auto_recovery=None, market_type=None, spot_price=None, disk_prior=None, spot_duration_hours=None, interruption_policy=None, cb_csbs_backup=None, spot_duration_count=None):
         """PrePaidServerExtendParam
 
         The model defined in huaweicloud sdk
@@ -81,6 +83,8 @@ class PrePaidServerExtendParam:
         :type spot_duration_hours: int
         :param interruption_policy: 竞价实例中断策略，当前支持immediate。  - 当interruption_policy&#x3D;immediate时表示释放策略为立即释放。 
         :type interruption_policy: str
+        :param cb_csbs_backup: 云备份策略和云备份存储库详情，取值包含：备份策略ID和云备份存储库ID。
+        :type cb_csbs_backup: str
         :param spot_duration_count: 表示购买的“竞价实例时长”的个数。  - 仅spot_duration_hours&gt;0 时该字段有效。 - spot_duration_hours小于6时，spot_duration_count值必须为1。 - spot_duration_hours等于6时，spot_duration_count大于等于1。  spot_duration_count的最大值由预测系统给出可以从flavor的extra_specs的cond:spot_block:operation:longest_duration_count字段中查询。  
         :type spot_duration_count: int
         """
@@ -100,6 +104,7 @@ class PrePaidServerExtendParam:
         self._disk_prior = None
         self._spot_duration_hours = None
         self._interruption_policy = None
+        self._cb_csbs_backup = None
         self._spot_duration_count = None
         self.discriminator = None
 
@@ -129,6 +134,8 @@ class PrePaidServerExtendParam:
             self.spot_duration_hours = spot_duration_hours
         if interruption_policy is not None:
             self.interruption_policy = interruption_policy
+        if cb_csbs_backup is not None:
+            self.cb_csbs_backup = cb_csbs_backup
         if spot_duration_count is not None:
             self.spot_duration_count = spot_duration_count
 
@@ -417,6 +424,28 @@ class PrePaidServerExtendParam:
         :type interruption_policy: str
         """
         self._interruption_policy = interruption_policy
+
+    @property
+    def cb_csbs_backup(self):
+        """Gets the cb_csbs_backup of this PrePaidServerExtendParam.
+
+        云备份策略和云备份存储库详情，取值包含：备份策略ID和云备份存储库ID。
+
+        :return: The cb_csbs_backup of this PrePaidServerExtendParam.
+        :rtype: str
+        """
+        return self._cb_csbs_backup
+
+    @cb_csbs_backup.setter
+    def cb_csbs_backup(self, cb_csbs_backup):
+        """Sets the cb_csbs_backup of this PrePaidServerExtendParam.
+
+        云备份策略和云备份存储库详情，取值包含：备份策略ID和云备份存储库ID。
+
+        :param cb_csbs_backup: The cb_csbs_backup of this PrePaidServerExtendParam.
+        :type cb_csbs_backup: str
+        """
+        self._cb_csbs_backup = cb_csbs_backup
 
     @property
     def spot_duration_count(self):

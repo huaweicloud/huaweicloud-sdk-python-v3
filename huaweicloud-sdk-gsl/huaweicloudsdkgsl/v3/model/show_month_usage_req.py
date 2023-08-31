@@ -18,21 +18,25 @@ class ShowMonthUsageReq:
 
     openapi_types = {
         'sim_card_ids': 'list[int]',
+        'iccids': 'list[str]',
         'billing_cycles': 'list[str]'
     }
 
     attribute_map = {
         'sim_card_ids': 'sim_card_ids',
+        'iccids': 'iccids',
         'billing_cycles': 'billing_cycles'
     }
 
-    def __init__(self, sim_card_ids=None, billing_cycles=None):
+    def __init__(self, sim_card_ids=None, iccids=None, billing_cycles=None):
         """ShowMonthUsageReq
 
         The model defined in huaweicloud sdk
 
-        :param sim_card_ids: sim卡id列表，最多支持传入500个SIM卡id。
+        :param sim_card_ids: sim卡id列表，最多支持传入500个SIM卡id。sim_card_ids与iccids不能同时为空，sim_card_ids参数为空则根据iccids参数处理
         :type sim_card_ids: list[int]
+        :param iccids: iccid列表，最多支持传入500个iccid。sim_card_ids与iccids不能同时为空，sim_card_ids参数为空则根据iccids参数处理
+        :type iccids: list[str]
         :param billing_cycles: 账期，最多支持传入本月在内的6个月账期，例如[2022-07, 2022-06]，不支持传入未来账期。
         :type billing_cycles: list[str]
         """
@@ -40,17 +44,21 @@ class ShowMonthUsageReq:
         
 
         self._sim_card_ids = None
+        self._iccids = None
         self._billing_cycles = None
         self.discriminator = None
 
-        self.sim_card_ids = sim_card_ids
+        if sim_card_ids is not None:
+            self.sim_card_ids = sim_card_ids
+        if iccids is not None:
+            self.iccids = iccids
         self.billing_cycles = billing_cycles
 
     @property
     def sim_card_ids(self):
         """Gets the sim_card_ids of this ShowMonthUsageReq.
 
-        sim卡id列表，最多支持传入500个SIM卡id。
+        sim卡id列表，最多支持传入500个SIM卡id。sim_card_ids与iccids不能同时为空，sim_card_ids参数为空则根据iccids参数处理
 
         :return: The sim_card_ids of this ShowMonthUsageReq.
         :rtype: list[int]
@@ -61,12 +69,34 @@ class ShowMonthUsageReq:
     def sim_card_ids(self, sim_card_ids):
         """Sets the sim_card_ids of this ShowMonthUsageReq.
 
-        sim卡id列表，最多支持传入500个SIM卡id。
+        sim卡id列表，最多支持传入500个SIM卡id。sim_card_ids与iccids不能同时为空，sim_card_ids参数为空则根据iccids参数处理
 
         :param sim_card_ids: The sim_card_ids of this ShowMonthUsageReq.
         :type sim_card_ids: list[int]
         """
         self._sim_card_ids = sim_card_ids
+
+    @property
+    def iccids(self):
+        """Gets the iccids of this ShowMonthUsageReq.
+
+        iccid列表，最多支持传入500个iccid。sim_card_ids与iccids不能同时为空，sim_card_ids参数为空则根据iccids参数处理
+
+        :return: The iccids of this ShowMonthUsageReq.
+        :rtype: list[str]
+        """
+        return self._iccids
+
+    @iccids.setter
+    def iccids(self, iccids):
+        """Sets the iccids of this ShowMonthUsageReq.
+
+        iccid列表，最多支持传入500个iccid。sim_card_ids与iccids不能同时为空，sim_card_ids参数为空则根据iccids参数处理
+
+        :param iccids: The iccids of this ShowMonthUsageReq.
+        :type iccids: list[str]
+        """
+        self._iccids = iccids
 
     @property
     def billing_cycles(self):

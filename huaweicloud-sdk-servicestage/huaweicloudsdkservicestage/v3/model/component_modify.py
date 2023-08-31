@@ -45,6 +45,7 @@ class ComponentModify:
         'anti_affinity': 'ComponentAffinity',
         'liveness_probe': 'ComponentProbe',
         'readiness_probe': 'ComponentProbe',
+        'external_accesses': 'list[ExternalAccesses]',
         'refer_resources': 'list[ReferResourceCreate]'
     }
 
@@ -77,10 +78,11 @@ class ComponentModify:
         'anti_affinity': 'anti_affinity',
         'liveness_probe': 'liveness_probe',
         'readiness_probe': 'readiness_probe',
+        'external_accesses': 'external_accesses',
         'refer_resources': 'refer_resources'
     }
 
-    def __init__(self, name=None, description=None, labels=None, runtime_stack=None, source=None, build=None, limit_cpu=None, limit_memory=None, request_cpu=None, request_memory=None, replica=None, version=None, envs=None, storages=None, deploy_strategy=None, command=None, post_start=None, pre_stop=None, timezone=None, mesher=None, jvm_opts=None, tomcat_opts=None, logs=None, custom_metric=None, affinity=None, anti_affinity=None, liveness_probe=None, readiness_probe=None, refer_resources=None):
+    def __init__(self, name=None, description=None, labels=None, runtime_stack=None, source=None, build=None, limit_cpu=None, limit_memory=None, request_cpu=None, request_memory=None, replica=None, version=None, envs=None, storages=None, deploy_strategy=None, command=None, post_start=None, pre_stop=None, timezone=None, mesher=None, jvm_opts=None, tomcat_opts=None, logs=None, custom_metric=None, affinity=None, anti_affinity=None, liveness_probe=None, readiness_probe=None, external_accesses=None, refer_resources=None):
         """ComponentModify
 
         The model defined in huaweicloud sdk
@@ -141,6 +143,8 @@ class ComponentModify:
         :type liveness_probe: :class:`huaweicloudsdkservicestage.v3.ComponentProbe`
         :param readiness_probe: 
         :type readiness_probe: :class:`huaweicloudsdkservicestage.v3.ComponentProbe`
+        :param external_accesses: 
+        :type external_accesses: list[:class:`huaweicloudsdkservicestage.v3.ExternalAccesses`]
         :param refer_resources: 
         :type refer_resources: list[:class:`huaweicloudsdkservicestage.v3.ReferResourceCreate`]
         """
@@ -175,6 +179,7 @@ class ComponentModify:
         self._anti_affinity = None
         self._liveness_probe = None
         self._readiness_probe = None
+        self._external_accesses = None
         self._refer_resources = None
         self.discriminator = None
 
@@ -229,6 +234,8 @@ class ComponentModify:
             self.liveness_probe = liveness_probe
         if readiness_probe is not None:
             self.readiness_probe = readiness_probe
+        if external_accesses is not None:
+            self.external_accesses = external_accesses
         if refer_resources is not None:
             self.refer_resources = refer_resources
 
@@ -759,6 +766,24 @@ class ComponentModify:
         :type readiness_probe: :class:`huaweicloudsdkservicestage.v3.ComponentProbe`
         """
         self._readiness_probe = readiness_probe
+
+    @property
+    def external_accesses(self):
+        """Gets the external_accesses of this ComponentModify.
+
+        :return: The external_accesses of this ComponentModify.
+        :rtype: list[:class:`huaweicloudsdkservicestage.v3.ExternalAccesses`]
+        """
+        return self._external_accesses
+
+    @external_accesses.setter
+    def external_accesses(self, external_accesses):
+        """Sets the external_accesses of this ComponentModify.
+
+        :param external_accesses: The external_accesses of this ComponentModify.
+        :type external_accesses: list[:class:`huaweicloudsdkservicestage.v3.ExternalAccesses`]
+        """
+        self._external_accesses = external_accesses
 
     @property
     def refer_resources(self):

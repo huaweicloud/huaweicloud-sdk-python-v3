@@ -18,15 +18,17 @@ class RegisterImeiReq:
 
     openapi_types = {
         'bind_type': 'int',
-        'imei': 'str'
+        'imei': 'str',
+        'iccid': 'str'
     }
 
     attribute_map = {
         'bind_type': 'bind_type',
-        'imei': 'imei'
+        'imei': 'imei',
+        'iccid': 'iccid'
     }
 
-    def __init__(self, bind_type=None, imei=None):
+    def __init__(self, bind_type=None, imei=None, iccid=None):
         """RegisterImeiReq
 
         The model defined in huaweicloud sdk
@@ -35,17 +37,22 @@ class RegisterImeiReq:
         :type bind_type: int
         :param imei: 设备IMEI,84584xxxxxx
         :type imei: str
+        :param iccid: iccid，传入的sim_card_id为0,则根据iccid进行处理
+        :type iccid: str
         """
         
         
 
         self._bind_type = None
         self._imei = None
+        self._iccid = None
         self.discriminator = None
 
         self.bind_type = bind_type
         if imei is not None:
             self.imei = imei
+        if iccid is not None:
+            self.iccid = iccid
 
     @property
     def bind_type(self):
@@ -90,6 +97,28 @@ class RegisterImeiReq:
         :type imei: str
         """
         self._imei = imei
+
+    @property
+    def iccid(self):
+        """Gets the iccid of this RegisterImeiReq.
+
+        iccid，传入的sim_card_id为0,则根据iccid进行处理
+
+        :return: The iccid of this RegisterImeiReq.
+        :rtype: str
+        """
+        return self._iccid
+
+    @iccid.setter
+    def iccid(self, iccid):
+        """Sets the iccid of this RegisterImeiReq.
+
+        iccid，传入的sim_card_id为0,则根据iccid进行处理
+
+        :param iccid: The iccid of this RegisterImeiReq.
+        :type iccid: str
+        """
+        self._iccid = iccid
 
     def to_dict(self):
         """Returns the model properties as a dict"""

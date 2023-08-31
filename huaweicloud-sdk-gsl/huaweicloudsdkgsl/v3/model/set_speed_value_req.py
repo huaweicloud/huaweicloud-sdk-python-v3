@@ -17,28 +17,35 @@ class SetSpeedValueReq:
     sensitive_list = []
 
     openapi_types = {
-        'speed_value': 'int'
+        'speed_value': 'int',
+        'iccid': 'str'
     }
 
     attribute_map = {
-        'speed_value': 'speed_value'
+        'speed_value': 'speed_value',
+        'iccid': 'iccid'
     }
 
-    def __init__(self, speed_value=None):
+    def __init__(self, speed_value=None, iccid=None):
         """SetSpeedValueReq
 
         The model defined in huaweicloud sdk
 
         :param speed_value: 限制带宽速率，单位 Kbps，-1表示不限速,1Mbps&#x3D;1024Kbps。正整数表示限制到当前速率，电信支持限制速率:1Kbps,64 Kbps,256 Kbps,512Kbps,1Mbs，3Mbs,5Mbs,7Mbs,10Mbs,20Mbs,30Mbs,40Mbs,50Mbs,60Mbs,70Mbs,80Mbs,90Mbs,100Mbs,110Mbs,120Mbs,130Mbs,140Mbs,150Mbs。联通支持限制速率:256Kbps,512Kbps,1Mbps,2Mbps,7.25Mbps。
         :type speed_value: int
+        :param iccid: iccid，传入的sim_card_id为0,则根据iccid进行处理
+        :type iccid: str
         """
         
         
 
         self._speed_value = None
+        self._iccid = None
         self.discriminator = None
 
         self.speed_value = speed_value
+        if iccid is not None:
+            self.iccid = iccid
 
     @property
     def speed_value(self):
@@ -61,6 +68,28 @@ class SetSpeedValueReq:
         :type speed_value: int
         """
         self._speed_value = speed_value
+
+    @property
+    def iccid(self):
+        """Gets the iccid of this SetSpeedValueReq.
+
+        iccid，传入的sim_card_id为0,则根据iccid进行处理
+
+        :return: The iccid of this SetSpeedValueReq.
+        :rtype: str
+        """
+        return self._iccid
+
+    @iccid.setter
+    def iccid(self, iccid):
+        """Sets the iccid of this SetSpeedValueReq.
+
+        iccid，传入的sim_card_id为0,则根据iccid进行处理
+
+        :param iccid: The iccid of this SetSpeedValueReq.
+        :type iccid: str
+        """
+        self._iccid = iccid
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -73,8 +73,7 @@ class ListHostGroupsRequest:
         self._sort_dir = None
         self.discriminator = None
 
-        if project_id is not None:
-            self.project_id = project_id
+        self.project_id = project_id
         self.region_name = region_name
         if os is not None:
             self.os = os

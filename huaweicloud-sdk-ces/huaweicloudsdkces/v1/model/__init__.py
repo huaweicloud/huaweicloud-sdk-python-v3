@@ -71,6 +71,7 @@ from huaweicloudsdkces.v1.model.quotas import Quotas
 from huaweicloudsdkces.v1.model.resource import Resource
 from huaweicloudsdkces.v1.model.resource_group import ResourceGroup
 from huaweicloudsdkces.v1.model.resource_group_info import ResourceGroupInfo
+from huaweicloudsdkces.v1.model.resource_quotas import ResourceQuotas
 from huaweicloudsdkces.v1.model.show_alarm_request import ShowAlarmRequest
 from huaweicloudsdkces.v1.model.show_alarm_response import ShowAlarmResponse
 from huaweicloudsdkces.v1.model.show_event_data_request import ShowEventDataRequest

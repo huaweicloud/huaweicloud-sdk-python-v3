@@ -17,6 +17,7 @@ class Attributes:
     sensitive_list = []
 
     openapi_types = {
+        'gender': 'str',
         'dress': 'Dress',
         'glass': 'str',
         'hat': 'str',
@@ -31,6 +32,7 @@ class Attributes:
     }
 
     attribute_map = {
+        'gender': 'gender',
         'dress': 'dress',
         'glass': 'glass',
         'hat': 'hat',
@@ -44,11 +46,13 @@ class Attributes:
         'face_angle': 'face_angle'
     }
 
-    def __init__(self, dress=None, glass=None, hat=None, age=None, mask=None, beard=None, phototype=None, quality=None, hair=None, expression=None, face_angle=None):
+    def __init__(self, gender=None, dress=None, glass=None, hat=None, age=None, mask=None, beard=None, phototype=None, quality=None, hair=None, expression=None, face_angle=None):
         """Attributes
 
         The model defined in huaweicloud sdk
 
+        :param gender: 性别： • male：男性 • female：女性
+        :type gender: str
         :param dress: 
         :type dress: :class:`huaweicloudsdkfrs.v2.Dress`
         :param glass: 是否带眼镜： • yes：带眼镜 • dark：带墨镜 • none：未戴眼镜 • unknown：未知
@@ -75,6 +79,7 @@ class Attributes:
         
         
 
+        self._gender = None
         self._dress = None
         self._glass = None
         self._hat = None
@@ -88,6 +93,7 @@ class Attributes:
         self._face_angle = None
         self.discriminator = None
 
+        self.gender = gender
         self.dress = dress
         self.glass = glass
         self.hat = hat
@@ -99,6 +105,28 @@ class Attributes:
         self.hair = hair
         self.expression = expression
         self.face_angle = face_angle
+
+    @property
+    def gender(self):
+        """Gets the gender of this Attributes.
+
+        性别： • male：男性 • female：女性
+
+        :return: The gender of this Attributes.
+        :rtype: str
+        """
+        return self._gender
+
+    @gender.setter
+    def gender(self, gender):
+        """Sets the gender of this Attributes.
+
+        性别： • male：男性 • female：女性
+
+        :param gender: The gender of this Attributes.
+        :type gender: str
+        """
+        self._gender = gender
 
     @property
     def dress(self):

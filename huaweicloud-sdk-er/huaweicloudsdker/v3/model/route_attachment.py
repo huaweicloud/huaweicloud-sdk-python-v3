@@ -19,18 +19,16 @@ class RouteAttachment:
     openapi_types = {
         'resource_id': 'str',
         'resource_type': 'str',
-        'attachment_id': 'str',
-        'priority': 'int'
+        'attachment_id': 'str'
     }
 
     attribute_map = {
         'resource_id': 'resource_id',
         'resource_type': 'resource_type',
-        'attachment_id': 'attachment_id',
-        'priority': 'priority'
+        'attachment_id': 'attachment_id'
     }
 
-    def __init__(self, resource_id=None, resource_type=None, attachment_id=None, priority=None):
+    def __init__(self, resource_id=None, resource_type=None, attachment_id=None):
         """RouteAttachment
 
         The model defined in huaweicloud sdk
@@ -41,8 +39,6 @@ class RouteAttachment:
         :type resource_type: str
         :param attachment_id: 连接ID
         :type attachment_id: str
-        :param priority: 路由优先级，普通路由固定值为1
-        :type priority: int
         """
         
         
@@ -50,14 +46,11 @@ class RouteAttachment:
         self._resource_id = None
         self._resource_type = None
         self._attachment_id = None
-        self._priority = None
         self.discriminator = None
 
         self.resource_id = resource_id
         self.resource_type = resource_type
         self.attachment_id = attachment_id
-        if priority is not None:
-            self.priority = priority
 
     @property
     def resource_id(self):
@@ -124,28 +117,6 @@ class RouteAttachment:
         :type attachment_id: str
         """
         self._attachment_id = attachment_id
-
-    @property
-    def priority(self):
-        """Gets the priority of this RouteAttachment.
-
-        路由优先级，普通路由固定值为1
-
-        :return: The priority of this RouteAttachment.
-        :rtype: int
-        """
-        return self._priority
-
-    @priority.setter
-    def priority(self, priority):
-        """Sets the priority of this RouteAttachment.
-
-        路由优先级，普通路由固定值为1
-
-        :param priority: The priority of this RouteAttachment.
-        :type priority: int
-        """
-        self._priority = priority
 
     def to_dict(self):
         """Returns the model properties as a dict"""

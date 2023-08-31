@@ -17,42 +17,28 @@ class ComponentModifyTomcatOpts:
     sensitive_list = []
 
     openapi_types = {
-        'server_xml': 'str',
-        'http_port': 'int',
-        'context_path': 'str'
+        'server_xml': 'str'
     }
 
     attribute_map = {
-        'server_xml': 'server_xml',
-        'http_port': 'http_port',
-        'context_path': 'context_path'
+        'server_xml': 'server_xml'
     }
 
-    def __init__(self, server_xml=None, http_port=None, context_path=None):
+    def __init__(self, server_xml=None):
         """ComponentModifyTomcatOpts
 
         The model defined in huaweicloud sdk
 
         :param server_xml: 
         :type server_xml: str
-        :param http_port: 
-        :type http_port: int
-        :param context_path: 
-        :type context_path: str
         """
         
         
 
         self._server_xml = None
-        self._http_port = None
-        self._context_path = None
         self.discriminator = None
 
         self.server_xml = server_xml
-        if http_port is not None:
-            self.http_port = http_port
-        if context_path is not None:
-            self.context_path = context_path
 
     @property
     def server_xml(self):
@@ -71,42 +57,6 @@ class ComponentModifyTomcatOpts:
         :type server_xml: str
         """
         self._server_xml = server_xml
-
-    @property
-    def http_port(self):
-        """Gets the http_port of this ComponentModifyTomcatOpts.
-
-        :return: The http_port of this ComponentModifyTomcatOpts.
-        :rtype: int
-        """
-        return self._http_port
-
-    @http_port.setter
-    def http_port(self, http_port):
-        """Sets the http_port of this ComponentModifyTomcatOpts.
-
-        :param http_port: The http_port of this ComponentModifyTomcatOpts.
-        :type http_port: int
-        """
-        self._http_port = http_port
-
-    @property
-    def context_path(self):
-        """Gets the context_path of this ComponentModifyTomcatOpts.
-
-        :return: The context_path of this ComponentModifyTomcatOpts.
-        :rtype: str
-        """
-        return self._context_path
-
-    @context_path.setter
-    def context_path(self, context_path):
-        """Sets the context_path of this ComponentModifyTomcatOpts.
-
-        :param context_path: The context_path of this ComponentModifyTomcatOpts.
-        :type context_path: str
-        """
-        self._context_path = context_path
 
     def to_dict(self):
         """Returns the model properties as a dict"""

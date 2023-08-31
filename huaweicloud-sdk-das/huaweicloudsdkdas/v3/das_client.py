@@ -500,6 +500,67 @@ class DasClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def create_tuning(self, request):
+        """执行SQL诊断
+
+        执行SQL诊断，
+        用于用户执行SQL诊断。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateTuning
+        :type request: :class:`huaweicloudsdkdas.v3.CreateTuningRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.CreateTuningResponse`
+        """
+        return self._create_tuning_with_http_info(request)
+
+    def _create_tuning_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'connection_id' in local_var_params:
+            path_params['connection_id'] = local_var_params['connection_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/connections/{connection_id}/tuning/create-tuning',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateTuningResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def delete_db_user(self, request):
         """删除数据库用户
 
@@ -1908,6 +1969,66 @@ class DasClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ShowSqlSwitchStatusResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_tuning(self, request):
+        """获取诊断结果
+
+        获取诊断结果
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowTuning
+        :type request: :class:`huaweicloudsdkdas.v3.ShowTuningRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.ShowTuningResponse`
+        """
+        return self._show_tuning_with_http_info(request)
+
+    def _show_tuning_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'message_id' in local_var_params:
+            path_params['message_id'] = local_var_params['message_id']
+        if 'connection_id' in local_var_params:
+            path_params['connection_id'] = local_var_params['connection_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/connections/{connection_id}/tuning/{message_id}/show-tuning-result',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowTuningResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

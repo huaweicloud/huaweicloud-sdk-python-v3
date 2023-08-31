@@ -17,28 +17,35 @@ class CutNetReq:
     sensitive_list = []
 
     openapi_types = {
-        'action': 'str'
+        'action': 'str',
+        'iccid': 'str'
     }
 
     attribute_map = {
-        'action': 'action'
+        'action': 'action',
+        'iccid': 'iccid'
     }
 
-    def __init__(self, action=None):
+    def __init__(self, action=None, iccid=None):
         """CutNetReq
 
         The model defined in huaweicloud sdk
 
         :param action: 操作类型(ADD：断网，DEL:取消断网)
         :type action: str
+        :param iccid: iccid，传入的sim_card_id为0,则根据iccid进行处理
+        :type iccid: str
         """
         
         
 
         self._action = None
+        self._iccid = None
         self.discriminator = None
 
         self.action = action
+        if iccid is not None:
+            self.iccid = iccid
 
     @property
     def action(self):
@@ -61,6 +68,28 @@ class CutNetReq:
         :type action: str
         """
         self._action = action
+
+    @property
+    def iccid(self):
+        """Gets the iccid of this CutNetReq.
+
+        iccid，传入的sim_card_id为0,则根据iccid进行处理
+
+        :return: The iccid of this CutNetReq.
+        :rtype: str
+        """
+        return self._iccid
+
+    @iccid.setter
+    def iccid(self, iccid):
+        """Sets the iccid of this CutNetReq.
+
+        iccid，传入的sim_card_id为0,则根据iccid进行处理
+
+        :param iccid: The iccid of this CutNetReq.
+        :type iccid: str
+        """
+        self._iccid = iccid
 
     def to_dict(self):
         """Returns the model properties as a dict"""

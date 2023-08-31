@@ -41,9 +41,9 @@ class ShowComponentInfoResponse(SdkResponse):
         'mesher': 'Mesher',
         'deploy_strategy': 'DeployStrategy',
         'jvm_opts': 'str',
-        'tomcat_opts': 'ComponentCreateTomcatOpts',
+        'tomcat_opts': 'ComponentInfoTomcatOpts',
         'logs': 'list[ComponentLogs]',
-        'custom_metric': 'ComponentCreateCustomMetric',
+        'custom_metric': 'ComponentInfoCustomMetric',
         'affinity': 'ComponentAffinity',
         'anti_affinity': 'ComponentAffinity',
         'liveness_probe': 'ComponentProbe',
@@ -139,11 +139,11 @@ class ShowComponentInfoResponse(SdkResponse):
         :param jvm_opts: jvm参数
         :type jvm_opts: str
         :param tomcat_opts: 
-        :type tomcat_opts: :class:`huaweicloudsdkservicestage.v3.ComponentCreateTomcatOpts`
+        :type tomcat_opts: :class:`huaweicloudsdkservicestage.v3.ComponentInfoTomcatOpts`
         :param logs: 
         :type logs: list[:class:`huaweicloudsdkservicestage.v3.ComponentLogs`]
         :param custom_metric: 
-        :type custom_metric: :class:`huaweicloudsdkservicestage.v3.ComponentCreateCustomMetric`
+        :type custom_metric: :class:`huaweicloudsdkservicestage.v3.ComponentInfoCustomMetric`
         :param affinity: 
         :type affinity: :class:`huaweicloudsdkservicestage.v3.ComponentAffinity`
         :param anti_affinity: 
@@ -702,7 +702,7 @@ class ShowComponentInfoResponse(SdkResponse):
         """Gets the tomcat_opts of this ShowComponentInfoResponse.
 
         :return: The tomcat_opts of this ShowComponentInfoResponse.
-        :rtype: :class:`huaweicloudsdkservicestage.v3.ComponentCreateTomcatOpts`
+        :rtype: :class:`huaweicloudsdkservicestage.v3.ComponentInfoTomcatOpts`
         """
         return self._tomcat_opts
 
@@ -711,7 +711,7 @@ class ShowComponentInfoResponse(SdkResponse):
         """Sets the tomcat_opts of this ShowComponentInfoResponse.
 
         :param tomcat_opts: The tomcat_opts of this ShowComponentInfoResponse.
-        :type tomcat_opts: :class:`huaweicloudsdkservicestage.v3.ComponentCreateTomcatOpts`
+        :type tomcat_opts: :class:`huaweicloudsdkservicestage.v3.ComponentInfoTomcatOpts`
         """
         self._tomcat_opts = tomcat_opts
 
@@ -738,7 +738,7 @@ class ShowComponentInfoResponse(SdkResponse):
         """Gets the custom_metric of this ShowComponentInfoResponse.
 
         :return: The custom_metric of this ShowComponentInfoResponse.
-        :rtype: :class:`huaweicloudsdkservicestage.v3.ComponentCreateCustomMetric`
+        :rtype: :class:`huaweicloudsdkservicestage.v3.ComponentInfoCustomMetric`
         """
         return self._custom_metric
 
@@ -747,7 +747,7 @@ class ShowComponentInfoResponse(SdkResponse):
         """Sets the custom_metric of this ShowComponentInfoResponse.
 
         :param custom_metric: The custom_metric of this ShowComponentInfoResponse.
-        :type custom_metric: :class:`huaweicloudsdkservicestage.v3.ComponentCreateCustomMetric`
+        :type custom_metric: :class:`huaweicloudsdkservicestage.v3.ComponentInfoCustomMetric`
         """
         self._custom_metric = custom_metric
 
