@@ -5,7 +5,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class BasicInfo:
+class BasicConfig:
 
     """
     Attributes:
@@ -33,7 +33,7 @@ class BasicInfo:
     }
 
     def __init__(self, owner=None, priority=None, execute_user=None, instance_timeout=None, custom_fields=None):
-        """BasicInfo
+        """BasicConfig
 
         The model defined in huaweicloud sdk
 
@@ -71,110 +71,110 @@ class BasicInfo:
 
     @property
     def owner(self):
-        """Gets the owner of this BasicInfo.
+        """Gets the owner of this BasicConfig.
 
         作业责任人
 
-        :return: The owner of this BasicInfo.
+        :return: The owner of this BasicConfig.
         :rtype: str
         """
         return self._owner
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this BasicInfo.
+        """Sets the owner of this BasicConfig.
 
         作业责任人
 
-        :param owner: The owner of this BasicInfo.
+        :param owner: The owner of this BasicConfig.
         :type owner: str
         """
         self._owner = owner
 
     @property
     def priority(self):
-        """Gets the priority of this BasicInfo.
+        """Gets the priority of this BasicConfig.
 
         作业优先级
 
-        :return: The priority of this BasicInfo.
+        :return: The priority of this BasicConfig.
         :rtype: int
         """
         return self._priority
 
     @priority.setter
     def priority(self, priority):
-        """Sets the priority of this BasicInfo.
+        """Sets the priority of this BasicConfig.
 
         作业优先级
 
-        :param priority: The priority of this BasicInfo.
+        :param priority: The priority of this BasicConfig.
         :type priority: int
         """
         self._priority = priority
 
     @property
     def execute_user(self):
-        """Gets the execute_user of this BasicInfo.
+        """Gets the execute_user of this BasicConfig.
 
         作业执行用户
 
-        :return: The execute_user of this BasicInfo.
+        :return: The execute_user of this BasicConfig.
         :rtype: str
         """
         return self._execute_user
 
     @execute_user.setter
     def execute_user(self, execute_user):
-        """Sets the execute_user of this BasicInfo.
+        """Sets the execute_user of this BasicConfig.
 
         作业执行用户
 
-        :param execute_user: The execute_user of this BasicInfo.
+        :param execute_user: The execute_user of this BasicConfig.
         :type execute_user: str
         """
         self._execute_user = execute_user
 
     @property
     def instance_timeout(self):
-        """Gets the instance_timeout of this BasicInfo.
+        """Gets the instance_timeout of this BasicConfig.
 
         实例超时时间
 
-        :return: The instance_timeout of this BasicInfo.
+        :return: The instance_timeout of this BasicConfig.
         :rtype: int
         """
         return self._instance_timeout
 
     @instance_timeout.setter
     def instance_timeout(self, instance_timeout):
-        """Sets the instance_timeout of this BasicInfo.
+        """Sets the instance_timeout of this BasicConfig.
 
         实例超时时间
 
-        :param instance_timeout: The instance_timeout of this BasicInfo.
+        :param instance_timeout: The instance_timeout of this BasicConfig.
         :type instance_timeout: int
         """
         self._instance_timeout = instance_timeout
 
     @property
     def custom_fields(self):
-        """Gets the custom_fields of this BasicInfo.
+        """Gets the custom_fields of this BasicConfig.
 
         用户自定义属性字段
 
-        :return: The custom_fields of this BasicInfo.
+        :return: The custom_fields of this BasicConfig.
         :rtype: object
         """
         return self._custom_fields
 
     @custom_fields.setter
     def custom_fields(self, custom_fields):
-        """Sets the custom_fields of this BasicInfo.
+        """Sets the custom_fields of this BasicConfig.
 
         用户自定义属性字段
 
-        :param custom_fields: The custom_fields of this BasicInfo.
+        :param custom_fields: The custom_fields of this BasicConfig.
         :type custom_fields: object
         """
         self._custom_fields = custom_fields
@@ -221,7 +221,7 @@ class BasicInfo:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, BasicInfo):
+        if not isinstance(other, BasicConfig):
             return False
 
         return self.__dict__ == other.__dict__

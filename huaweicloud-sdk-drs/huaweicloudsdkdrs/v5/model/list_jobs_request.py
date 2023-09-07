@@ -27,7 +27,9 @@ class ListJobsRequest:
         'offset': 'int',
         'limit': 'int',
         'sort_key': 'str',
-        'sort_dir': 'str'
+        'sort_dir': 'str',
+        'instance_ids': 'list[str]',
+        'instance_ip': 'str'
     }
 
     attribute_map = {
@@ -41,10 +43,12 @@ class ListJobsRequest:
         'offset': 'offset',
         'limit': 'limit',
         'sort_key': 'sort_key',
-        'sort_dir': 'sort_dir'
+        'sort_dir': 'sort_dir',
+        'instance_ids': 'instance_ids',
+        'instance_ip': 'instance_ip'
     }
 
-    def __init__(self, x_language=None, job_type=None, name=None, status=None, engine_type=None, net_type=None, enterprise_project_id=None, offset=None, limit=None, sort_key=None, sort_dir=None):
+    def __init__(self, x_language=None, job_type=None, name=None, status=None, engine_type=None, net_type=None, enterprise_project_id=None, offset=None, limit=None, sort_key=None, sort_dir=None, instance_ids=None, instance_ip=None):
         """ListJobsRequest
 
         The model defined in huaweicloud sdk
@@ -71,6 +75,10 @@ class ListJobsRequest:
         :type sort_key: str
         :param sort_dir: 降序或升序（分别对应desc和asc，默认为“desc”）。
         :type sort_dir: str
+        :param instance_ids: 数据库实例ID列表，最多支持10个
+        :type instance_ids: list[str]
+        :param instance_ip: 数据库实例IP
+        :type instance_ip: str
         """
         
         
@@ -86,6 +94,8 @@ class ListJobsRequest:
         self._limit = None
         self._sort_key = None
         self._sort_dir = None
+        self._instance_ids = None
+        self._instance_ip = None
         self.discriminator = None
 
         if x_language is not None:
@@ -109,6 +119,10 @@ class ListJobsRequest:
             self.sort_key = sort_key
         if sort_dir is not None:
             self.sort_dir = sort_dir
+        if instance_ids is not None:
+            self.instance_ids = instance_ids
+        if instance_ip is not None:
+            self.instance_ip = instance_ip
 
     @property
     def x_language(self):
@@ -351,6 +365,50 @@ class ListJobsRequest:
         :type sort_dir: str
         """
         self._sort_dir = sort_dir
+
+    @property
+    def instance_ids(self):
+        """Gets the instance_ids of this ListJobsRequest.
+
+        数据库实例ID列表，最多支持10个
+
+        :return: The instance_ids of this ListJobsRequest.
+        :rtype: list[str]
+        """
+        return self._instance_ids
+
+    @instance_ids.setter
+    def instance_ids(self, instance_ids):
+        """Sets the instance_ids of this ListJobsRequest.
+
+        数据库实例ID列表，最多支持10个
+
+        :param instance_ids: The instance_ids of this ListJobsRequest.
+        :type instance_ids: list[str]
+        """
+        self._instance_ids = instance_ids
+
+    @property
+    def instance_ip(self):
+        """Gets the instance_ip of this ListJobsRequest.
+
+        数据库实例IP
+
+        :return: The instance_ip of this ListJobsRequest.
+        :rtype: str
+        """
+        return self._instance_ip
+
+    @instance_ip.setter
+    def instance_ip(self, instance_ip):
+        """Sets the instance_ip of this ListJobsRequest.
+
+        数据库实例IP
+
+        :param instance_ip: The instance_ip of this ListJobsRequest.
+        :type instance_ip: str
+        """
+        self._instance_ip = instance_ip
 
     def to_dict(self):
         """Returns the model properties as a dict"""

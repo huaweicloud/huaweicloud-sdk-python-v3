@@ -19,16 +19,16 @@ class JobParam:
     openapi_types = {
         'name': 'str',
         'value': 'str',
-        'param_type': 'str'
+        'type': 'str'
     }
 
     attribute_map = {
         'name': 'name',
         'value': 'value',
-        'param_type': 'paramType'
+        'type': 'type'
     }
 
-    def __init__(self, name=None, value=None, param_type=None):
+    def __init__(self, name=None, value=None, type=None):
         """JobParam
 
         The model defined in huaweicloud sdk
@@ -37,23 +37,21 @@ class JobParam:
         :type name: str
         :param value: 
         :type value: str
-        :param param_type: 
-        :type param_type: str
+        :param type: 参数类型
+        :type type: str
         """
         
         
 
         self._name = None
         self._value = None
-        self._param_type = None
+        self._type = None
         self.discriminator = None
 
-        if name is not None:
-            self.name = name
-        if value is not None:
-            self.value = value
-        if param_type is not None:
-            self.param_type = param_type
+        self.name = name
+        self.value = value
+        if type is not None:
+            self.type = type
 
     @property
     def name(self):
@@ -92,22 +90,26 @@ class JobParam:
         self._value = value
 
     @property
-    def param_type(self):
-        """Gets the param_type of this JobParam.
+    def type(self):
+        """Gets the type of this JobParam.
 
-        :return: The param_type of this JobParam.
+        参数类型
+
+        :return: The type of this JobParam.
         :rtype: str
         """
-        return self._param_type
+        return self._type
 
-    @param_type.setter
-    def param_type(self, param_type):
-        """Sets the param_type of this JobParam.
+    @type.setter
+    def type(self, type):
+        """Sets the type of this JobParam.
 
-        :param param_type: The param_type of this JobParam.
-        :type param_type: str
+        参数类型
+
+        :param type: The type of this JobParam.
+        :type type: str
         """
-        self._param_type = param_type
+        self._type = type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

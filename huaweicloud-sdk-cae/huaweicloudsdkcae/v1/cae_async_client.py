@@ -1567,6 +1567,126 @@ class CaeAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_eips_async(self, request):
+        """获取集群节点弹性公网IP列表
+
+        获取集群节点弹性公网IP列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListEips
+        :type request: :class:`huaweicloudsdkcae.v1.ListEipsRequest`
+        :rtype: :class:`huaweicloudsdkcae.v1.ListEipsResponse`
+        """
+        return self._list_eips_with_http_info(request)
+
+    def _list_eips_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_enterprise_project_id' in local_var_params:
+            header_params['X-Enterprise-Project-ID'] = local_var_params['x_enterprise_project_id']
+        if 'x_environment_id' in local_var_params:
+            header_params['X-Environment-ID'] = local_var_params['x_environment_id']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/cae/eips',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListEipsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_eip_async(self, request):
+        """修改带宽
+
+        修改带宽。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateEip
+        :type request: :class:`huaweicloudsdkcae.v1.UpdateEipRequest`
+        :rtype: :class:`huaweicloudsdkcae.v1.UpdateEipResponse`
+        """
+        return self._update_eip_with_http_info(request)
+
+    def _update_eip_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_enterprise_project_id' in local_var_params:
+            header_params['X-Enterprise-Project-ID'] = local_var_params['x_enterprise_project_id']
+        if 'x_environment_id' in local_var_params:
+            header_params['X-Environment-ID'] = local_var_params['x_environment_id']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/cae/eips',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateEipResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def create_environment_async(self, request):
         """创建环境
 

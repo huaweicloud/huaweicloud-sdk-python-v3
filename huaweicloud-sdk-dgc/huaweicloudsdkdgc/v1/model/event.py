@@ -45,7 +45,7 @@ class Event:
         :type fail_policy: str
         :param concurrent: 调度并发数
         :type concurrent: int
-        :param read_policy: 读取策略
+        :param read_policy: 读取策略，LAST ：从上次位置读取，NEW- 从最新位置读取，默认为LAST
         :type read_policy: str
         """
         
@@ -58,10 +58,8 @@ class Event:
         self._read_policy = None
         self.discriminator = None
 
-        if event_type is not None:
-            self.event_type = event_type
-        if channel is not None:
-            self.channel = channel
+        self.event_type = event_type
+        self.channel = channel
         if fail_policy is not None:
             self.fail_policy = fail_policy
         if concurrent is not None:
@@ -161,7 +159,7 @@ class Event:
     def read_policy(self):
         """Gets the read_policy of this Event.
 
-        读取策略
+        读取策略，LAST ：从上次位置读取，NEW- 从最新位置读取，默认为LAST
 
         :return: The read_policy of this Event.
         :rtype: str
@@ -172,7 +170,7 @@ class Event:
     def read_policy(self, read_policy):
         """Sets the read_policy of this Event.
 
-        读取策略
+        读取策略，LAST ：从上次位置读取，NEW- 从最新位置读取，默认为LAST
 
         :param read_policy: The read_policy of this Event.
         :type read_policy: str

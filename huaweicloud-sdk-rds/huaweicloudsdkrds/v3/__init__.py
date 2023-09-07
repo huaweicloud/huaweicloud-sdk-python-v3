@@ -146,6 +146,7 @@ from huaweicloudsdkrds.v3.model.enlarge_volume_request_body import EnlargeVolume
 from huaweicloudsdkrds.v3.model.error_log import ErrorLog
 from huaweicloudsdkrds.v3.model.error_log_item import ErrorLogItem
 from huaweicloudsdkrds.v3.model.error_response import ErrorResponse
+from huaweicloudsdkrds.v3.model.error_rsp import ErrorRsp
 from huaweicloudsdkrds.v3.model.errorlog_for_lts_request import ErrorlogForLtsRequest
 from huaweicloudsdkrds.v3.model.extension_request import ExtensionRequest
 from huaweicloudsdkrds.v3.model.extensions_response import ExtensionsResponse
@@ -168,6 +169,7 @@ from huaweicloudsdkrds.v3.model.instance_dr_relation import InstanceDrRelation
 from huaweicloudsdkrds.v3.model.instance_request import InstanceRequest
 from huaweicloudsdkrds.v3.model.instance_response import InstanceResponse
 from huaweicloudsdkrds.v3.model.instance_restart_requset_body import InstanceRestartRequsetBody
+from huaweicloudsdkrds.v3.model.instance_state import InstanceState
 from huaweicloudsdkrds.v3.model.l_datastore import LDatastore
 from huaweicloudsdkrds.v3.model.links_info_response import LinksInfoResponse
 from huaweicloudsdkrds.v3.model.list_api_version_new_request import ListApiVersionNewRequest
@@ -210,7 +212,11 @@ from huaweicloudsdkrds.v3.model.list_instance_param_histories_request import Lis
 from huaweicloudsdkrds.v3.model.list_instance_param_histories_response import ListInstanceParamHistoriesResponse
 from huaweicloudsdkrds.v3.model.list_instance_tags_request import ListInstanceTagsRequest
 from huaweicloudsdkrds.v3.model.list_instance_tags_response import ListInstanceTagsResponse
+from huaweicloudsdkrds.v3.model.list_instances_recommendation_request import ListInstancesRecommendationRequest
+from huaweicloudsdkrds.v3.model.list_instances_recommendation_response import ListInstancesRecommendationResponse
 from huaweicloudsdkrds.v3.model.list_instances_request import ListInstancesRequest
+from huaweicloudsdkrds.v3.model.list_instances_resource_metrics_request import ListInstancesResourceMetricsRequest
+from huaweicloudsdkrds.v3.model.list_instances_resource_metrics_response import ListInstancesResourceMetricsResponse
 from huaweicloudsdkrds.v3.model.list_instances_response import ListInstancesResponse
 from huaweicloudsdkrds.v3.model.list_instances_support_fast_restore_request import ListInstancesSupportFastRestoreRequest
 from huaweicloudsdkrds.v3.model.list_instances_support_fast_restore_request_body import ListInstancesSupportFastRestoreRequestBody
@@ -306,6 +312,8 @@ from huaweicloudsdkrds.v3.model.proxy_readonly_instances import ProxyReadonlyIns
 from huaweicloudsdkrds.v3.model.pwd_reset_request import PwdResetRequest
 from huaweicloudsdkrds.v3.model.quotas import Quotas
 from huaweicloudsdkrds.v3.model.readonly_instances import ReadonlyInstances
+from huaweicloudsdkrds.v3.model.recommend_flavor import RecommendFlavor
+from huaweicloudsdkrds.v3.model.recommended_product import RecommendedProduct
 from huaweicloudsdkrds.v3.model.recycle_instsance_v3 import RecycleInstsanceV3
 from huaweicloudsdkrds.v3.model.recycle_policy import RecyclePolicy
 from huaweicloudsdkrds.v3.model.recycle_policy_request_body import RecyclePolicyRequestBody
@@ -314,6 +322,7 @@ from huaweicloudsdkrds.v3.model.reset_pwd_request import ResetPwdRequest
 from huaweicloudsdkrds.v3.model.reset_pwd_response import ResetPwdResponse
 from huaweicloudsdkrds.v3.model.resize_flavor_object import ResizeFlavorObject
 from huaweicloudsdkrds.v3.model.resize_flavor_request import ResizeFlavorRequest
+from huaweicloudsdkrds.v3.model.resource_monitoring_info import ResourceMonitoringInfo
 from huaweicloudsdkrds.v3.model.resource_tag import ResourceTag
 from huaweicloudsdkrds.v3.model.resources import Resources
 from huaweicloudsdkrds.v3.model.restore_databases_info import RestoreDatabasesInfo
@@ -502,4 +511,5 @@ from huaweicloudsdkrds.v3.model.user_for_creation import UserForCreation
 from huaweicloudsdkrds.v3.model.user_for_list import UserForList
 from huaweicloudsdkrds.v3.model.user_with_privilege import UserWithPrivilege
 from huaweicloudsdkrds.v3.model.volume import Volume
+from huaweicloudsdkrds.v3.model.volume_flavor import VolumeFlavor
 

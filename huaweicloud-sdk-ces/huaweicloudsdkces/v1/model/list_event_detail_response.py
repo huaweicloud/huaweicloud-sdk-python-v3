@@ -23,8 +23,7 @@ class ListEventDetailResponse(SdkResponse):
         'event_users': 'list[str]',
         'event_sources': 'list[str]',
         'event_info': 'list[EventInfoDetail]',
-        'meta_data': 'TotalMetaData',
-        'dimensions': 'MetricsDimension'
+        'meta_data': 'TotalMetaData'
     }
 
     attribute_map = {
@@ -33,11 +32,10 @@ class ListEventDetailResponse(SdkResponse):
         'event_users': 'event_users',
         'event_sources': 'event_sources',
         'event_info': 'event_info',
-        'meta_data': 'meta_data',
-        'dimensions': 'dimensions'
+        'meta_data': 'meta_data'
     }
 
-    def __init__(self, event_name=None, event_type=None, event_users=None, event_sources=None, event_info=None, meta_data=None, dimensions=None):
+    def __init__(self, event_name=None, event_type=None, event_users=None, event_sources=None, event_info=None, meta_data=None):
         """ListEventDetailResponse
 
         The model defined in huaweicloud sdk
@@ -54,8 +52,6 @@ class ListEventDetailResponse(SdkResponse):
         :type event_info: list[:class:`huaweicloudsdkces.v1.EventInfoDetail`]
         :param meta_data: 
         :type meta_data: :class:`huaweicloudsdkces.v1.TotalMetaData`
-        :param dimensions: 
-        :type dimensions: :class:`huaweicloudsdkces.v1.MetricsDimension`
         """
         
         super(ListEventDetailResponse, self).__init__()
@@ -66,7 +62,6 @@ class ListEventDetailResponse(SdkResponse):
         self._event_sources = None
         self._event_info = None
         self._meta_data = None
-        self._dimensions = None
         self.discriminator = None
 
         if event_name is not None:
@@ -81,8 +76,6 @@ class ListEventDetailResponse(SdkResponse):
             self.event_info = event_info
         if meta_data is not None:
             self.meta_data = meta_data
-        if dimensions is not None:
-            self.dimensions = dimensions
 
     @property
     def event_name(self):
@@ -211,24 +204,6 @@ class ListEventDetailResponse(SdkResponse):
         :type meta_data: :class:`huaweicloudsdkces.v1.TotalMetaData`
         """
         self._meta_data = meta_data
-
-    @property
-    def dimensions(self):
-        """Gets the dimensions of this ListEventDetailResponse.
-
-        :return: The dimensions of this ListEventDetailResponse.
-        :rtype: :class:`huaweicloudsdkces.v1.MetricsDimension`
-        """
-        return self._dimensions
-
-    @dimensions.setter
-    def dimensions(self, dimensions):
-        """Sets the dimensions of this ListEventDetailResponse.
-
-        :param dimensions: The dimensions of this ListEventDetailResponse.
-        :type dimensions: :class:`huaweicloudsdkces.v1.MetricsDimension`
-        """
-        self._dimensions = dimensions
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -37,7 +37,7 @@ class ShowDbObjectTemplateResultRequest:
         :type job_id: str
         :param x_language: 请求语言类型。
         :type x_language: str
-        :param type: 导入的结果类型。取值： - detail：获取最新导入的文件与校验结果，上传后的文件若存在错误，会同时将错误原因标记在文件内。 - synchronized：获取已同步的（已下发的）对象文件结果。
+        :param type: 导入的结果类型。取值： - detail：获取最新导入的文件与校验结果，上传后的文件若存在错误，会同时将错误原因标记在文件内。 - synchronized：获取已同步的（已下发的）对象文件结果。 - change: 获取新增和删除的对象结果（当再编辑时使用）
         :type type: str
         """
         
@@ -101,7 +101,7 @@ class ShowDbObjectTemplateResultRequest:
     def type(self):
         """Gets the type of this ShowDbObjectTemplateResultRequest.
 
-        导入的结果类型。取值： - detail：获取最新导入的文件与校验结果，上传后的文件若存在错误，会同时将错误原因标记在文件内。 - synchronized：获取已同步的（已下发的）对象文件结果。
+        导入的结果类型。取值： - detail：获取最新导入的文件与校验结果，上传后的文件若存在错误，会同时将错误原因标记在文件内。 - synchronized：获取已同步的（已下发的）对象文件结果。 - change: 获取新增和删除的对象结果（当再编辑时使用）
 
         :return: The type of this ShowDbObjectTemplateResultRequest.
         :rtype: str
@@ -112,7 +112,7 @@ class ShowDbObjectTemplateResultRequest:
     def type(self, type):
         """Sets the type of this ShowDbObjectTemplateResultRequest.
 
-        导入的结果类型。取值： - detail：获取最新导入的文件与校验结果，上传后的文件若存在错误，会同时将错误原因标记在文件内。 - synchronized：获取已同步的（已下发的）对象文件结果。
+        导入的结果类型。取值： - detail：获取最新导入的文件与校验结果，上传后的文件若存在错误，会同时将错误原因标记在文件内。 - synchronized：获取已同步的（已下发的）对象文件结果。 - change: 获取新增和删除的对象结果（当再编辑时使用）
 
         :param type: The type of this ShowDbObjectTemplateResultRequest.
         :type type: str

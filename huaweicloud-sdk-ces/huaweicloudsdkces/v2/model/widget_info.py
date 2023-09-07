@@ -65,7 +65,7 @@ class WidgetInfo:
         :type location: :class:`huaweicloudsdkces.v2.BaseWidgetInfoLocation`
         :param unit: 单位
         :type unit: str
-        :param create_time: 监控面板创建时间
+        :param create_time: 监控看板创建时间
         :type create_time: int
         """
         
@@ -298,7 +298,7 @@ class WidgetInfo:
     def create_time(self):
         """Gets the create_time of this WidgetInfo.
 
-        监控面板创建时间
+        监控看板创建时间
 
         :return: The create_time of this WidgetInfo.
         :rtype: int
@@ -309,7 +309,7 @@ class WidgetInfo:
     def create_time(self, create_time):
         """Sets the create_time of this WidgetInfo.
 
-        监控面板创建时间
+        监控看板创建时间
 
         :param create_time: The create_time of this WidgetInfo.
         :type create_time: int

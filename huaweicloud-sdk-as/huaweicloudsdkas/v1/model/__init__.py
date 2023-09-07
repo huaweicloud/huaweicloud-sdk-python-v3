@@ -178,6 +178,7 @@ from huaweicloudsdkas.v1.model.scaling_v1_policy_detail import ScalingV1PolicyDe
 from huaweicloudsdkas.v1.model.scaling_v2_policy_detail import ScalingV2PolicyDetail
 from huaweicloudsdkas.v1.model.scheduled_policy import ScheduledPolicy
 from huaweicloudsdkas.v1.model.scheduled_task_detail import ScheduledTaskDetail
+from huaweicloudsdkas.v1.model.scheduled_task_policy import ScheduledTaskPolicy
 from huaweicloudsdkas.v1.model.security_group import SecurityGroup
 from huaweicloudsdkas.v1.model.security_groups import SecurityGroups
 from huaweicloudsdkas.v1.model.security_groups_result import SecurityGroupsResult

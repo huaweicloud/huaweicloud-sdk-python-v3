@@ -17,24 +17,24 @@ class Schedule:
     sensitive_list = []
 
     openapi_types = {
-        'sche_type': 'str',
+        'type': 'str',
         'cron': 'Cron',
         'event': 'Event'
     }
 
     attribute_map = {
-        'sche_type': 'scheType',
+        'type': 'type',
         'cron': 'cron',
         'event': 'event'
     }
 
-    def __init__(self, sche_type=None, cron=None, event=None):
+    def __init__(self, type=None, cron=None, event=None):
         """Schedule
 
         The model defined in huaweicloud sdk
 
-        :param sche_type: 
-        :type sche_type: str
+        :param type: 
+        :type type: str
         :param cron: 
         :type cron: :class:`huaweicloudsdkdgc.v1.Cron`
         :param event: 
@@ -43,35 +43,35 @@ class Schedule:
         
         
 
-        self._sche_type = None
+        self._type = None
         self._cron = None
         self._event = None
         self.discriminator = None
 
-        if sche_type is not None:
-            self.sche_type = sche_type
+        if type is not None:
+            self.type = type
         if cron is not None:
             self.cron = cron
         if event is not None:
             self.event = event
 
     @property
-    def sche_type(self):
-        """Gets the sche_type of this Schedule.
+    def type(self):
+        """Gets the type of this Schedule.
 
-        :return: The sche_type of this Schedule.
+        :return: The type of this Schedule.
         :rtype: str
         """
-        return self._sche_type
+        return self._type
 
-    @sche_type.setter
-    def sche_type(self, sche_type):
-        """Sets the sche_type of this Schedule.
+    @type.setter
+    def type(self, type):
+        """Sets the type of this Schedule.
 
-        :param sche_type: The sche_type of this Schedule.
-        :type sche_type: str
+        :param type: The type of this Schedule.
+        :type type: str
         """
-        self._sche_type = sche_type
+        self._type = type
 
     @property
     def cron(self):

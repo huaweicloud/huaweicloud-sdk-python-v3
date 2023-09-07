@@ -18,7 +18,7 @@ class CreateDomainResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'api_version': 'str',
+        'api_version': 'ApiVersionObj',
         'items': 'list[DomainItem]',
         'kind': 'str'
     }
@@ -34,8 +34,8 @@ class CreateDomainResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param api_version: API版本，固定值“v1”，该值不可修改。
-        :type api_version: str
+        :param api_version: 
+        :type api_version: :class:`huaweicloudsdkcae.v1.ApiVersionObj`
         :param items: 域名列表。
         :type items: list[:class:`huaweicloudsdkcae.v1.DomainItem`]
         :param kind: API类型，固定值“Domain”，该值不可修改。
@@ -60,10 +60,8 @@ class CreateDomainResponse(SdkResponse):
     def api_version(self):
         """Gets the api_version of this CreateDomainResponse.
 
-        API版本，固定值“v1”，该值不可修改。
-
         :return: The api_version of this CreateDomainResponse.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkcae.v1.ApiVersionObj`
         """
         return self._api_version
 
@@ -71,10 +69,8 @@ class CreateDomainResponse(SdkResponse):
     def api_version(self, api_version):
         """Sets the api_version of this CreateDomainResponse.
 
-        API版本，固定值“v1”，该值不可修改。
-
         :param api_version: The api_version of this CreateDomainResponse.
-        :type api_version: str
+        :type api_version: :class:`huaweicloudsdkcae.v1.ApiVersionObj`
         """
         self._api_version = api_version
 

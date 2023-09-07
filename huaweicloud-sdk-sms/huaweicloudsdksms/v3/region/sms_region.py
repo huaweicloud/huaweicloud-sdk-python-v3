@@ -11,9 +11,12 @@ class SmsRegion:
 
     AP_SOUTHEAST_1 = Region("ap-southeast-1",
                         "https://sms.ap-southeast-1.myhuaweicloud.com")
+    AP_SOUTHEAST_3 = Region("ap-southeast-3",
+                        "https://sms.ap-southeast-3.myhuaweicloud.com")
 
     static_fields = {
         "ap-southeast-1": AP_SOUTHEAST_1,
+        "ap-southeast-3": AP_SOUTHEAST_3,
     }
 
     @classmethod

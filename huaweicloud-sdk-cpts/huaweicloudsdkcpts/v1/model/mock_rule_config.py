@@ -25,7 +25,11 @@ class MockRuleConfig:
         'enable': 'bool',
         'name': 'str',
         'project_id': 'str',
-        'id': 'int'
+        'id': 'int',
+        'response_header': 'dict(str, str)',
+        'response_body': 'str',
+        'response_time': 'int',
+        'response_code': 'int'
     }
 
     attribute_map = {
@@ -37,10 +41,14 @@ class MockRuleConfig:
         'enable': 'enable',
         'name': 'name',
         'project_id': 'project_id',
-        'id': 'id'
+        'id': 'id',
+        'response_header': 'response_header',
+        'response_body': 'response_body',
+        'response_time': 'response_time',
+        'response_code': 'response_code'
     }
 
-    def __init__(self, service_type=None, request_url=None, request_method=None, redirect_url=None, mock_strategy=None, enable=None, name=None, project_id=None, id=None):
+    def __init__(self, service_type=None, request_url=None, request_method=None, redirect_url=None, mock_strategy=None, enable=None, name=None, project_id=None, id=None, response_header=None, response_body=None, response_time=None, response_code=None):
         """MockRuleConfig
 
         The model defined in huaweicloud sdk
@@ -53,7 +61,7 @@ class MockRuleConfig:
         :type request_method: str
         :param redirect_url: 重定向地址
         :type redirect_url: str
-        :param mock_strategy: mock策略（当前只支持redirect）
+        :param mock_strategy: mock策略（redirect/json）
         :type mock_strategy: str
         :param enable: 是否启用
         :type enable: bool
@@ -63,6 +71,14 @@ class MockRuleConfig:
         :type project_id: str
         :param id: 规则id
         :type id: int
+        :param response_header: 自定义响应头
+        :type response_header: dict(str, str)
+        :param response_body: 自定义响应体
+        :type response_body: str
+        :param response_time: 自定义响应时长
+        :type response_time: int
+        :param response_code: 自定义响应码
+        :type response_code: int
         """
         
         
@@ -76,6 +92,10 @@ class MockRuleConfig:
         self._name = None
         self._project_id = None
         self._id = None
+        self._response_header = None
+        self._response_body = None
+        self._response_time = None
+        self._response_code = None
         self.discriminator = None
 
         if service_type is not None:
@@ -96,6 +116,14 @@ class MockRuleConfig:
             self.project_id = project_id
         if id is not None:
             self.id = id
+        if response_header is not None:
+            self.response_header = response_header
+        if response_body is not None:
+            self.response_body = response_body
+        if response_time is not None:
+            self.response_time = response_time
+        if response_code is not None:
+            self.response_code = response_code
 
     @property
     def service_type(self):
@@ -189,7 +217,7 @@ class MockRuleConfig:
     def mock_strategy(self):
         """Gets the mock_strategy of this MockRuleConfig.
 
-        mock策略（当前只支持redirect）
+        mock策略（redirect/json）
 
         :return: The mock_strategy of this MockRuleConfig.
         :rtype: str
@@ -200,7 +228,7 @@ class MockRuleConfig:
     def mock_strategy(self, mock_strategy):
         """Sets the mock_strategy of this MockRuleConfig.
 
-        mock策略（当前只支持redirect）
+        mock策略（redirect/json）
 
         :param mock_strategy: The mock_strategy of this MockRuleConfig.
         :type mock_strategy: str
@@ -294,6 +322,94 @@ class MockRuleConfig:
         :type id: int
         """
         self._id = id
+
+    @property
+    def response_header(self):
+        """Gets the response_header of this MockRuleConfig.
+
+        自定义响应头
+
+        :return: The response_header of this MockRuleConfig.
+        :rtype: dict(str, str)
+        """
+        return self._response_header
+
+    @response_header.setter
+    def response_header(self, response_header):
+        """Sets the response_header of this MockRuleConfig.
+
+        自定义响应头
+
+        :param response_header: The response_header of this MockRuleConfig.
+        :type response_header: dict(str, str)
+        """
+        self._response_header = response_header
+
+    @property
+    def response_body(self):
+        """Gets the response_body of this MockRuleConfig.
+
+        自定义响应体
+
+        :return: The response_body of this MockRuleConfig.
+        :rtype: str
+        """
+        return self._response_body
+
+    @response_body.setter
+    def response_body(self, response_body):
+        """Sets the response_body of this MockRuleConfig.
+
+        自定义响应体
+
+        :param response_body: The response_body of this MockRuleConfig.
+        :type response_body: str
+        """
+        self._response_body = response_body
+
+    @property
+    def response_time(self):
+        """Gets the response_time of this MockRuleConfig.
+
+        自定义响应时长
+
+        :return: The response_time of this MockRuleConfig.
+        :rtype: int
+        """
+        return self._response_time
+
+    @response_time.setter
+    def response_time(self, response_time):
+        """Sets the response_time of this MockRuleConfig.
+
+        自定义响应时长
+
+        :param response_time: The response_time of this MockRuleConfig.
+        :type response_time: int
+        """
+        self._response_time = response_time
+
+    @property
+    def response_code(self):
+        """Gets the response_code of this MockRuleConfig.
+
+        自定义响应码
+
+        :return: The response_code of this MockRuleConfig.
+        :rtype: int
+        """
+        return self._response_code
+
+    @response_code.setter
+    def response_code(self, response_code):
+        """Sets the response_code of this MockRuleConfig.
+
+        自定义响应码
+
+        :param response_code: The response_code of this MockRuleConfig.
+        :type response_code: int
+        """
+        self._response_code = response_code
 
     def to_dict(self):
         """Returns the model properties as a dict"""

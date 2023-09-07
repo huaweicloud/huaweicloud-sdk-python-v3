@@ -23,8 +23,12 @@ class ShowJobResponse(SdkResponse):
         'schedule': 'Schedule',
         'params': 'list[JobParam]',
         'directory': 'str',
-        'job_type': 'str',
-        'basic_config': 'BasicInfo'
+        'process_type': 'str',
+        'last_update_user': 'str',
+        'log_path': 'str',
+        'basic_config': 'BasicConfig',
+        'target_status': 'str',
+        'approvers': 'list[JobApprover]'
     }
 
     attribute_map = {
@@ -33,29 +37,41 @@ class ShowJobResponse(SdkResponse):
         'schedule': 'schedule',
         'params': 'params',
         'directory': 'directory',
-        'job_type': 'jobType',
-        'basic_config': 'basicConfig'
+        'process_type': 'processType',
+        'last_update_user': 'lastUpdateUser',
+        'log_path': 'logPath',
+        'basic_config': 'basicConfig',
+        'target_status': 'targetStatus',
+        'approvers': 'approvers'
     }
 
-    def __init__(self, name=None, nodes=None, schedule=None, params=None, directory=None, job_type=None, basic_config=None):
+    def __init__(self, name=None, nodes=None, schedule=None, params=None, directory=None, process_type=None, last_update_user=None, log_path=None, basic_config=None, target_status=None, approvers=None):
         """ShowJobResponse
 
         The model defined in huaweicloud sdk
 
-        :param name: 
+        :param name: 作业名称
         :type name: str
-        :param nodes: 
+        :param nodes: 节点定义
         :type nodes: list[:class:`huaweicloudsdkdgc.v1.Node`]
         :param schedule: 
         :type schedule: :class:`huaweicloudsdkdgc.v1.Schedule`
-        :param params: 
+        :param params: 作业参数定义
         :type params: list[:class:`huaweicloudsdkdgc.v1.JobParam`]
-        :param directory: 
+        :param directory: 作业在目录树上的路径。创建作业时如果路径目录不存在，会自动创建目录，如/dir/a/，默认在根目录/。
         :type directory: str
-        :param job_type: 
-        :type job_type: str
+        :param process_type: 作业类型，REAL_TIME： 实时处理，BATCH：批处理
+        :type process_type: str
+        :param last_update_user: 作业最后修改人
+        :type last_update_user: str
+        :param log_path: 作业运行日志存放的OBS路径。
+        :type log_path: str
         :param basic_config: 
-        :type basic_config: :class:`huaweicloudsdkdgc.v1.BasicInfo`
+        :type basic_config: :class:`huaweicloudsdkdgc.v1.BasicConfig`
+        :param target_status: 在开启审批开关后，需要填写该字段。表示创建作业的目标状态，有三种状态：SAVED、SUBMITTED和PRODUCTION，分别表示作业创建后是保存态，提交态，生产态。
+        :type target_status: str
+        :param approvers: 在开启审批开关后，需要填写该字段，表示作业审批人。
+        :type approvers: list[:class:`huaweicloudsdkdgc.v1.JobApprover`]
         """
         
         super(ShowJobResponse, self).__init__()
@@ -65,8 +81,12 @@ class ShowJobResponse(SdkResponse):
         self._schedule = None
         self._params = None
         self._directory = None
-        self._job_type = None
+        self._process_type = None
+        self._last_update_user = None
+        self._log_path = None
         self._basic_config = None
+        self._target_status = None
+        self._approvers = None
         self.discriminator = None
 
         if name is not None:
@@ -79,14 +99,24 @@ class ShowJobResponse(SdkResponse):
             self.params = params
         if directory is not None:
             self.directory = directory
-        if job_type is not None:
-            self.job_type = job_type
+        if process_type is not None:
+            self.process_type = process_type
+        if last_update_user is not None:
+            self.last_update_user = last_update_user
+        if log_path is not None:
+            self.log_path = log_path
         if basic_config is not None:
             self.basic_config = basic_config
+        if target_status is not None:
+            self.target_status = target_status
+        if approvers is not None:
+            self.approvers = approvers
 
     @property
     def name(self):
         """Gets the name of this ShowJobResponse.
+
+        作业名称
 
         :return: The name of this ShowJobResponse.
         :rtype: str
@@ -97,6 +127,8 @@ class ShowJobResponse(SdkResponse):
     def name(self, name):
         """Sets the name of this ShowJobResponse.
 
+        作业名称
+
         :param name: The name of this ShowJobResponse.
         :type name: str
         """
@@ -106,6 +138,8 @@ class ShowJobResponse(SdkResponse):
     def nodes(self):
         """Gets the nodes of this ShowJobResponse.
 
+        节点定义
+
         :return: The nodes of this ShowJobResponse.
         :rtype: list[:class:`huaweicloudsdkdgc.v1.Node`]
         """
@@ -114,6 +148,8 @@ class ShowJobResponse(SdkResponse):
     @nodes.setter
     def nodes(self, nodes):
         """Sets the nodes of this ShowJobResponse.
+
+        节点定义
 
         :param nodes: The nodes of this ShowJobResponse.
         :type nodes: list[:class:`huaweicloudsdkdgc.v1.Node`]
@@ -142,6 +178,8 @@ class ShowJobResponse(SdkResponse):
     def params(self):
         """Gets the params of this ShowJobResponse.
 
+        作业参数定义
+
         :return: The params of this ShowJobResponse.
         :rtype: list[:class:`huaweicloudsdkdgc.v1.JobParam`]
         """
@@ -150,6 +188,8 @@ class ShowJobResponse(SdkResponse):
     @params.setter
     def params(self, params):
         """Sets the params of this ShowJobResponse.
+
+        作业参数定义
 
         :param params: The params of this ShowJobResponse.
         :type params: list[:class:`huaweicloudsdkdgc.v1.JobParam`]
@@ -160,6 +200,8 @@ class ShowJobResponse(SdkResponse):
     def directory(self):
         """Gets the directory of this ShowJobResponse.
 
+        作业在目录树上的路径。创建作业时如果路径目录不存在，会自动创建目录，如/dir/a/，默认在根目录/。
+
         :return: The directory of this ShowJobResponse.
         :rtype: str
         """
@@ -169,35 +211,85 @@ class ShowJobResponse(SdkResponse):
     def directory(self, directory):
         """Sets the directory of this ShowJobResponse.
 
+        作业在目录树上的路径。创建作业时如果路径目录不存在，会自动创建目录，如/dir/a/，默认在根目录/。
+
         :param directory: The directory of this ShowJobResponse.
         :type directory: str
         """
         self._directory = directory
 
     @property
-    def job_type(self):
-        """Gets the job_type of this ShowJobResponse.
+    def process_type(self):
+        """Gets the process_type of this ShowJobResponse.
 
-        :return: The job_type of this ShowJobResponse.
+        作业类型，REAL_TIME： 实时处理，BATCH：批处理
+
+        :return: The process_type of this ShowJobResponse.
         :rtype: str
         """
-        return self._job_type
+        return self._process_type
 
-    @job_type.setter
-    def job_type(self, job_type):
-        """Sets the job_type of this ShowJobResponse.
+    @process_type.setter
+    def process_type(self, process_type):
+        """Sets the process_type of this ShowJobResponse.
 
-        :param job_type: The job_type of this ShowJobResponse.
-        :type job_type: str
+        作业类型，REAL_TIME： 实时处理，BATCH：批处理
+
+        :param process_type: The process_type of this ShowJobResponse.
+        :type process_type: str
         """
-        self._job_type = job_type
+        self._process_type = process_type
+
+    @property
+    def last_update_user(self):
+        """Gets the last_update_user of this ShowJobResponse.
+
+        作业最后修改人
+
+        :return: The last_update_user of this ShowJobResponse.
+        :rtype: str
+        """
+        return self._last_update_user
+
+    @last_update_user.setter
+    def last_update_user(self, last_update_user):
+        """Sets the last_update_user of this ShowJobResponse.
+
+        作业最后修改人
+
+        :param last_update_user: The last_update_user of this ShowJobResponse.
+        :type last_update_user: str
+        """
+        self._last_update_user = last_update_user
+
+    @property
+    def log_path(self):
+        """Gets the log_path of this ShowJobResponse.
+
+        作业运行日志存放的OBS路径。
+
+        :return: The log_path of this ShowJobResponse.
+        :rtype: str
+        """
+        return self._log_path
+
+    @log_path.setter
+    def log_path(self, log_path):
+        """Sets the log_path of this ShowJobResponse.
+
+        作业运行日志存放的OBS路径。
+
+        :param log_path: The log_path of this ShowJobResponse.
+        :type log_path: str
+        """
+        self._log_path = log_path
 
     @property
     def basic_config(self):
         """Gets the basic_config of this ShowJobResponse.
 
         :return: The basic_config of this ShowJobResponse.
-        :rtype: :class:`huaweicloudsdkdgc.v1.BasicInfo`
+        :rtype: :class:`huaweicloudsdkdgc.v1.BasicConfig`
         """
         return self._basic_config
 
@@ -206,9 +298,53 @@ class ShowJobResponse(SdkResponse):
         """Sets the basic_config of this ShowJobResponse.
 
         :param basic_config: The basic_config of this ShowJobResponse.
-        :type basic_config: :class:`huaweicloudsdkdgc.v1.BasicInfo`
+        :type basic_config: :class:`huaweicloudsdkdgc.v1.BasicConfig`
         """
         self._basic_config = basic_config
+
+    @property
+    def target_status(self):
+        """Gets the target_status of this ShowJobResponse.
+
+        在开启审批开关后，需要填写该字段。表示创建作业的目标状态，有三种状态：SAVED、SUBMITTED和PRODUCTION，分别表示作业创建后是保存态，提交态，生产态。
+
+        :return: The target_status of this ShowJobResponse.
+        :rtype: str
+        """
+        return self._target_status
+
+    @target_status.setter
+    def target_status(self, target_status):
+        """Sets the target_status of this ShowJobResponse.
+
+        在开启审批开关后，需要填写该字段。表示创建作业的目标状态，有三种状态：SAVED、SUBMITTED和PRODUCTION，分别表示作业创建后是保存态，提交态，生产态。
+
+        :param target_status: The target_status of this ShowJobResponse.
+        :type target_status: str
+        """
+        self._target_status = target_status
+
+    @property
+    def approvers(self):
+        """Gets the approvers of this ShowJobResponse.
+
+        在开启审批开关后，需要填写该字段，表示作业审批人。
+
+        :return: The approvers of this ShowJobResponse.
+        :rtype: list[:class:`huaweicloudsdkdgc.v1.JobApprover`]
+        """
+        return self._approvers
+
+    @approvers.setter
+    def approvers(self, approvers):
+        """Sets the approvers of this ShowJobResponse.
+
+        在开启审批开关后，需要填写该字段，表示作业审批人。
+
+        :param approvers: The approvers of this ShowJobResponse.
+        :type approvers: list[:class:`huaweicloudsdkdgc.v1.JobApprover`]
+        """
+        self._approvers = approvers
 
     def to_dict(self):
         """Returns the model properties as a dict"""

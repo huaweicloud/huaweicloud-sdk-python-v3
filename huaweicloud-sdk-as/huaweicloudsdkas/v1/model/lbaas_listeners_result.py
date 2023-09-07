@@ -20,17 +20,19 @@ class LbaasListenersResult:
         'listener_id': 'str',
         'pool_id': 'str',
         'protocol_port': 'int',
-        'weight': 'int'
+        'weight': 'int',
+        'protocol_version': 'str'
     }
 
     attribute_map = {
         'listener_id': 'listener_id',
         'pool_id': 'pool_id',
         'protocol_port': 'protocol_port',
-        'weight': 'weight'
+        'weight': 'weight',
+        'protocol_version': 'protocol_version'
     }
 
-    def __init__(self, listener_id=None, pool_id=None, protocol_port=None, weight=None):
+    def __init__(self, listener_id=None, pool_id=None, protocol_port=None, weight=None, protocol_version=None):
         """LbaasListenersResult
 
         The model defined in huaweicloud sdk
@@ -43,6 +45,8 @@ class LbaasListenersResult:
         :type protocol_port: int
         :param weight: 权重，指后端云服务器经分发得到的请求数量比例，取值范围[0,1]，默认为1。
         :type weight: int
+        :param protocol_version: 指定ip协议版本
+        :type protocol_version: str
         """
         
         
@@ -51,6 +55,7 @@ class LbaasListenersResult:
         self._pool_id = None
         self._protocol_port = None
         self._weight = None
+        self._protocol_version = None
         self.discriminator = None
 
         if listener_id is not None:
@@ -61,6 +66,8 @@ class LbaasListenersResult:
             self.protocol_port = protocol_port
         if weight is not None:
             self.weight = weight
+        if protocol_version is not None:
+            self.protocol_version = protocol_version
 
     @property
     def listener_id(self):
@@ -149,6 +156,28 @@ class LbaasListenersResult:
         :type weight: int
         """
         self._weight = weight
+
+    @property
+    def protocol_version(self):
+        """Gets the protocol_version of this LbaasListenersResult.
+
+        指定ip协议版本
+
+        :return: The protocol_version of this LbaasListenersResult.
+        :rtype: str
+        """
+        return self._protocol_version
+
+    @protocol_version.setter
+    def protocol_version(self, protocol_version):
+        """Sets the protocol_version of this LbaasListenersResult.
+
+        指定ip协议版本
+
+        :param protocol_version: The protocol_version of this LbaasListenersResult.
+        :type protocol_version: str
+        """
+        self._protocol_version = protocol_version
 
     def to_dict(self):
         """Returns the model properties as a dict"""

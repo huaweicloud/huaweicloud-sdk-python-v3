@@ -66,6 +66,7 @@ class Signer(object):
         if isinstance(request.body, six.text_type):
             request.body = six.ensure_binary(request.body)
 
+        self._process_content_header(request)
         t = self._process_header_time(request)
         self._process_header_host(request)
 
@@ -80,20 +81,29 @@ class Signer(object):
 
         return request
 
-    def process_request_uri(self, request):
+    @classmethod
+    def _process_content_header(cls, request):
         # type: (SdkRequest) -> None
-        canonical_query_string = self._process_canonical_query_string(request)
+        content_type = request.header_params.get("Content-Type")
+        if content_type and not content_type.startswith("application/json"):
+            request.header_params[cls._HEADER_CONTENT] = "UNSIGNED-PAYLOAD"
+
+    @classmethod
+    def process_request_uri(cls, request):
+        # type: (SdkRequest) -> None
+        canonical_query_string = cls._process_canonical_query_string(request)
         request.uri = "%s?%s" % (request.resource_path, canonical_query_string) \
             if canonical_query_string != "" else request.resource_path
 
-    def _process_header_time(self, request):
+    @classmethod
+    def _process_header_time(cls, request):
         # type: (SdkRequest) -> datetime
-        header_time = self._get_header_ignore_case(request, self._HEADER_X_DATE)
+        header_time = cls._get_header_ignore_case(request, cls._HEADER_X_DATE)
         if header_time is None:
             t = datetime.utcnow()
-            request.header_params[self._HEADER_X_DATE] = datetime.strftime(t, self._BASIC_DATE_FORMAT)
+            request.header_params[cls._HEADER_X_DATE] = datetime.strftime(t, cls._BASIC_DATE_FORMAT)
         else:
-            t = datetime.strptime(header_time, self._BASIC_DATE_FORMAT)
+            t = datetime.strptime(header_time, cls._BASIC_DATE_FORMAT)
         return t
 
     @classmethod
@@ -182,7 +192,8 @@ class Signer(object):
 
         return url_path
 
-    def _process_canonical_query_string(self, request):
+    @classmethod
+    def _process_canonical_query_string(cls, request):
         # type: (SdkRequest) -> str
         params = []
         for param in request.query_params:
@@ -191,17 +202,17 @@ class Signer(object):
 
         canonical_query_param = []
         for (key, value) in params:
-            k = self._url_encode(key)
+            k = cls._url_encode(key)
             if isinstance(value, list):
                 value.sort()
                 for v in value:
-                    kv = "%s=%s" % (k, self._url_encode(str(v)))
+                    kv = "%s=%s" % (k, cls._url_encode(str(v)))
                     canonical_query_param.append(kv)
             elif isinstance(value, bool):
-                kv = "%s=%s" % (k, self._url_encode(str(value).lower()))
+                kv = "%s=%s" % (k, cls._url_encode(str(value).lower()))
                 canonical_query_param.append(kv)
             else:
-                kv = "%s=%s" % (k, self._url_encode(str(value)))
+                kv = "%s=%s" % (k, cls._url_encode(str(value)))
                 canonical_query_param.append(kv)
 
         return '&'.join(canonical_query_param)
@@ -285,6 +296,7 @@ class DerivationAKSKSigner(Signer):
 
         request.body = six.ensure_binary(request.body)
 
+        self._process_content_header(request)
         t = self._process_header_time(request)
         self._process_header_host(request)
 

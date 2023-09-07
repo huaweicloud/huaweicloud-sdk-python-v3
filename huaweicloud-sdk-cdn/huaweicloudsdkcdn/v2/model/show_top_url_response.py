@@ -32,7 +32,7 @@ class ShowTopUrlResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param service_area: 服务区域
+        :param service_area: 服务区域：mainland_china(中国大陆)，outside_mainland_china(中国大陆境外)，默认为mainland_china。
         :type service_area: str
         :param top_url_summary: 详情数据对象。
         :type top_url_summary: list[:class:`huaweicloudsdkcdn.v2.TopUrlSummary`]
@@ -53,7 +53,7 @@ class ShowTopUrlResponse(SdkResponse):
     def service_area(self):
         """Gets the service_area of this ShowTopUrlResponse.
 
-        服务区域
+        服务区域：mainland_china(中国大陆)，outside_mainland_china(中国大陆境外)，默认为mainland_china。
 
         :return: The service_area of this ShowTopUrlResponse.
         :rtype: str
@@ -64,7 +64,7 @@ class ShowTopUrlResponse(SdkResponse):
     def service_area(self, service_area):
         """Sets the service_area of this ShowTopUrlResponse.
 
-        服务区域
+        服务区域：mainland_china(中国大陆)，outside_mainland_china(中国大陆境外)，默认为mainland_china。
 
         :param service_area: The service_area of this ShowTopUrlResponse.
         :type service_area: str

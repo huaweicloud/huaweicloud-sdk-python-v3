@@ -1199,7 +1199,7 @@ class CodeArtsDeployClient(Client):
     def delete_deployment_host(self, request):
         """删除主机
 
-        根据主机id删除主机。
+        根据主机id删除主机。该接口于2024年9月30日后不再维护。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1513,7 +1513,7 @@ class CodeArtsDeployClient(Client):
     def update_deployment_host(self, request):
         """修改主机
 
-        根据主机id修改主机信息。
+        根据主机id修改主机信息。该接口于2024年9月30日后不再维护。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1685,7 +1685,7 @@ class CodeArtsDeployClient(Client):
     def delete_deployment_group(self, request):
         """删除主机集群
 
-        根据主机集群id删除主机集群。
+        根据主机集群id删除主机集群。该接口于2024年9月30日后不再维护。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1995,7 +1995,7 @@ class CodeArtsDeployClient(Client):
     def update_deployment_group(self, request):
         """修改主机集群
 
-        根据主机集群id修改主机集群信息。
+        根据主机集群id修改主机集群信息。该接口于2024年9月30日后不再维护。
         
         Please refer to HUAWEI cloud API Explorer for details.
 

@@ -97,7 +97,7 @@ class JobDetailResp:
         :type target_endpoint: list[:class:`huaweicloudsdkdrs.v5.JobEndpointInfo`]
         :param alarm_notify: 
         :type alarm_notify: :class:`huaweicloudsdkdrs.v5.AlarmNotifyConfig`
-        :param speed_limit: 限速信息体。 - 限速：自定义的最大迁移速度，迁移过程中的迁移速度将不会超过该速度。 - 不限速：对迁移速度不进行限制，通常会最大化使用源数据库的出口带宽。该流速模式同时会对源数据库造成读消耗，消耗取决于源数据库的出口带宽。比如：源数据库的出口带宽为100MB/s，假设高速模式使用了80%带宽，则迁移对源数据库将造成80MB/s的读操作IO消耗。
+        :param speed_limit: 限速信息体。 - 限速：自定义的最大迁移速度，迁移过程中的迁移速度将不会超过该速度。  - 不限速：对迁移速度不进行限制，通常会最大化使用源数据库的出口带宽。该流速模式同时会对源数据库造成读消耗，消耗取决于源数据库的出口带宽。比如：源数据库的出口带宽为100MB/s，假设高速模式使用了80%带宽，则迁移对源数据库将造成80MB/s的读操作IO消耗。
         :type speed_limit: list[:class:`huaweicloudsdkdrs.v5.SpeedLimitInfo`]
         :param user_migration: 
         :type user_migration: :class:`huaweicloudsdkdrs.v5.UserMigrationInfo`
@@ -410,7 +410,7 @@ class JobDetailResp:
     def speed_limit(self):
         """Gets the speed_limit of this JobDetailResp.
 
-        限速信息体。 - 限速：自定义的最大迁移速度，迁移过程中的迁移速度将不会超过该速度。 - 不限速：对迁移速度不进行限制，通常会最大化使用源数据库的出口带宽。该流速模式同时会对源数据库造成读消耗，消耗取决于源数据库的出口带宽。比如：源数据库的出口带宽为100MB/s，假设高速模式使用了80%带宽，则迁移对源数据库将造成80MB/s的读操作IO消耗。
+        限速信息体。 - 限速：自定义的最大迁移速度，迁移过程中的迁移速度将不会超过该速度。  - 不限速：对迁移速度不进行限制，通常会最大化使用源数据库的出口带宽。该流速模式同时会对源数据库造成读消耗，消耗取决于源数据库的出口带宽。比如：源数据库的出口带宽为100MB/s，假设高速模式使用了80%带宽，则迁移对源数据库将造成80MB/s的读操作IO消耗。
 
         :return: The speed_limit of this JobDetailResp.
         :rtype: list[:class:`huaweicloudsdkdrs.v5.SpeedLimitInfo`]
@@ -421,7 +421,7 @@ class JobDetailResp:
     def speed_limit(self, speed_limit):
         """Sets the speed_limit of this JobDetailResp.
 
-        限速信息体。 - 限速：自定义的最大迁移速度，迁移过程中的迁移速度将不会超过该速度。 - 不限速：对迁移速度不进行限制，通常会最大化使用源数据库的出口带宽。该流速模式同时会对源数据库造成读消耗，消耗取决于源数据库的出口带宽。比如：源数据库的出口带宽为100MB/s，假设高速模式使用了80%带宽，则迁移对源数据库将造成80MB/s的读操作IO消耗。
+        限速信息体。 - 限速：自定义的最大迁移速度，迁移过程中的迁移速度将不会超过该速度。  - 不限速：对迁移速度不进行限制，通常会最大化使用源数据库的出口带宽。该流速模式同时会对源数据库造成读消耗，消耗取决于源数据库的出口带宽。比如：源数据库的出口带宽为100MB/s，假设高速模式使用了80%带宽，则迁移对源数据库将造成80MB/s的读操作IO消耗。
 
         :param speed_limit: The speed_limit of this JobDetailResp.
         :type speed_limit: list[:class:`huaweicloudsdkdrs.v5.SpeedLimitInfo`]

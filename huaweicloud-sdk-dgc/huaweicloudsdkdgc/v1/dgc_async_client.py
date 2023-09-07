@@ -1033,6 +1033,22 @@ class DgcAsyncClient(Client):
         path_params = {}
 
         query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'min_plan_time' in local_var_params:
+            query_params.append(('minPlanTime', local_var_params['min_plan_time']))
+        if 'max_plan_time' in local_var_params:
+            query_params.append(('maxPlanTime', local_var_params['max_plan_time']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'precise_query' in local_var_params:
+            query_params.append(('preciseQuery', local_var_params['precise_query']))
+        if 'job_name' in local_var_params:
+            query_params.append(('jobName', local_var_params['job_name']))
+        if 'instance_type' in local_var_params:
+            query_params.append(('instanceType', local_var_params['instance_type']))
 
         header_params = {}
         if 'workspace' in local_var_params:

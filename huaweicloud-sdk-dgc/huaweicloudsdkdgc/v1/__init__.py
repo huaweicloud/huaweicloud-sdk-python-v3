@@ -5,7 +5,7 @@ from __future__ import absolute_import
 from huaweicloudsdkdgc.v1.dgc_client import DgcClient
 from huaweicloudsdkdgc.v1.dgc_async_client import DgcAsyncClient
 
-from huaweicloudsdkdgc.v1.model.basic_info import BasicInfo
+from huaweicloudsdkdgc.v1.model.basic_config import BasicConfig
 from huaweicloudsdkdgc.v1.model.cancel_script_request import CancelScriptRequest
 from huaweicloudsdkdgc.v1.model.cancel_script_response import CancelScriptResponse
 from huaweicloudsdkdgc.v1.model.condition import Condition
@@ -22,6 +22,7 @@ from huaweicloudsdkdgc.v1.model.create_script_response import CreateScriptRespon
 from huaweicloudsdkdgc.v1.model.create_supplementdata_request import CreateSupplementdataRequest
 from huaweicloudsdkdgc.v1.model.create_supplementdata_response import CreateSupplementdataResponse
 from huaweicloudsdkdgc.v1.model.cron import Cron
+from huaweicloudsdkdgc.v1.model.cron_trigger import CronTrigger
 from huaweicloudsdkdgc.v1.model.delete_connction_request import DeleteConnctionRequest
 from huaweicloudsdkdgc.v1.model.delete_connction_response import DeleteConnctionResponse
 from huaweicloudsdkdgc.v1.model.delete_job_request import DeleteJobRequest
@@ -30,7 +31,7 @@ from huaweicloudsdkdgc.v1.model.delete_resource_request import DeleteResourceReq
 from huaweicloudsdkdgc.v1.model.delete_resource_response import DeleteResourceResponse
 from huaweicloudsdkdgc.v1.model.delete_script_request import DeleteScriptRequest
 from huaweicloudsdkdgc.v1.model.delete_script_response import DeleteScriptResponse
-from huaweicloudsdkdgc.v1.model.depend_job import DependJob
+from huaweicloudsdkdgc.v1.model.depend_jobs import DependJobs
 from huaweicloudsdkdgc.v1.model.event import Event
 from huaweicloudsdkdgc.v1.model.execute_script_req import ExecuteScriptReq
 from huaweicloudsdkdgc.v1.model.execute_script_request import ExecuteScriptRequest
@@ -50,9 +51,12 @@ from huaweicloudsdkdgc.v1.model.import_file_req import ImportFileReq
 from huaweicloudsdkdgc.v1.model.import_job_request import ImportJobRequest
 from huaweicloudsdkdgc.v1.model.import_job_response import ImportJobResponse
 from huaweicloudsdkdgc.v1.model.job import Job
+from huaweicloudsdkdgc.v1.model.job_alarm import JobAlarm
+from huaweicloudsdkdgc.v1.model.job_approver import JobApprover
 from huaweicloudsdkdgc.v1.model.job_info import JobInfo
 from huaweicloudsdkdgc.v1.model.job_instance import JobInstance
 from huaweicloudsdkdgc.v1.model.job_param import JobParam
+from huaweicloudsdkdgc.v1.model.job_result import JobResult
 from huaweicloudsdkdgc.v1.model.list_connections_request import ListConnectionsRequest
 from huaweicloudsdkdgc.v1.model.list_connections_response import ListConnectionsResponse
 from huaweicloudsdkdgc.v1.model.list_job_instances_request import ListJobInstancesRequest
@@ -70,6 +74,7 @@ from huaweicloudsdkdgc.v1.model.list_supplementdata_response import ListSuppleme
 from huaweicloudsdkdgc.v1.model.list_system_tasks_request import ListSystemTasksRequest
 from huaweicloudsdkdgc.v1.model.list_system_tasks_response import ListSystemTasksResponse
 from huaweicloudsdkdgc.v1.model.location import Location
+from huaweicloudsdkdgc.v1.model.model_property import ModelProperty
 from huaweicloudsdkdgc.v1.model.node import Node
 from huaweicloudsdkdgc.v1.model.node_instance import NodeInstance
 from huaweicloudsdkdgc.v1.model.real_time_node_status import RealTimeNodeStatus

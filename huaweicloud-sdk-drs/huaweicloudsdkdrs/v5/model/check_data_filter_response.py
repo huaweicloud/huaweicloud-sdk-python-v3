@@ -2,10 +2,11 @@
 
 import six
 
+from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class DependJob:
+class CheckDataFilterResponse(SdkResponse):
 
     """
     Attributes:
@@ -17,97 +18,80 @@ class DependJob:
     sensitive_list = []
 
     openapi_types = {
-        'jobs': 'str',
-        'depend_period': 'str',
-        'depend_fail_policy': 'str'
+        'id': 'str',
+        'status': 'str'
     }
 
     attribute_map = {
-        'jobs': 'jobs',
-        'depend_period': 'dependPeriod',
-        'depend_fail_policy': 'dependFailPolicy'
+        'id': 'id',
+        'status': 'status'
     }
 
-    def __init__(self, jobs=None, depend_period=None, depend_fail_policy=None):
-        """DependJob
+    def __init__(self, id=None, status=None):
+        """CheckDataFilterResponse
 
         The model defined in huaweicloud sdk
 
-        :param jobs: 
-        :type jobs: str
-        :param depend_period: 
-        :type depend_period: str
-        :param depend_fail_policy: 
-        :type depend_fail_policy: str
+        :param id: 查询结果id
+        :type id: str
+        :param status: 查询状态
+        :type status: str
         """
         
-        
+        super(CheckDataFilterResponse, self).__init__()
 
-        self._jobs = None
-        self._depend_period = None
-        self._depend_fail_policy = None
+        self._id = None
+        self._status = None
         self.discriminator = None
 
-        if jobs is not None:
-            self.jobs = jobs
-        if depend_period is not None:
-            self.depend_period = depend_period
-        if depend_fail_policy is not None:
-            self.depend_fail_policy = depend_fail_policy
+        if id is not None:
+            self.id = id
+        if status is not None:
+            self.status = status
 
     @property
-    def jobs(self):
-        """Gets the jobs of this DependJob.
+    def id(self):
+        """Gets the id of this CheckDataFilterResponse.
 
-        :return: The jobs of this DependJob.
+        查询结果id
+
+        :return: The id of this CheckDataFilterResponse.
         :rtype: str
         """
-        return self._jobs
+        return self._id
 
-    @jobs.setter
-    def jobs(self, jobs):
-        """Sets the jobs of this DependJob.
+    @id.setter
+    def id(self, id):
+        """Sets the id of this CheckDataFilterResponse.
 
-        :param jobs: The jobs of this DependJob.
-        :type jobs: str
+        查询结果id
+
+        :param id: The id of this CheckDataFilterResponse.
+        :type id: str
         """
-        self._jobs = jobs
+        self._id = id
 
     @property
-    def depend_period(self):
-        """Gets the depend_period of this DependJob.
+    def status(self):
+        """Gets the status of this CheckDataFilterResponse.
 
-        :return: The depend_period of this DependJob.
+        查询状态
+
+        :return: The status of this CheckDataFilterResponse.
         :rtype: str
         """
-        return self._depend_period
+        return self._status
 
-    @depend_period.setter
-    def depend_period(self, depend_period):
-        """Sets the depend_period of this DependJob.
+    @status.setter
+    def status(self, status):
+        """Sets the status of this CheckDataFilterResponse.
 
-        :param depend_period: The depend_period of this DependJob.
-        :type depend_period: str
+        查询状态
+
+        :param status: The status of this CheckDataFilterResponse.
+        :type status: str
         """
-        self._depend_period = depend_period
-
-    @property
-    def depend_fail_policy(self):
-        """Gets the depend_fail_policy of this DependJob.
-
-        :return: The depend_fail_policy of this DependJob.
-        :rtype: str
-        """
-        return self._depend_fail_policy
-
-    @depend_fail_policy.setter
-    def depend_fail_policy(self, depend_fail_policy):
-        """Sets the depend_fail_policy of this DependJob.
-
-        :param depend_fail_policy: The depend_fail_policy of this DependJob.
-        :type depend_fail_policy: str
-        """
-        self._depend_fail_policy = depend_fail_policy
+        self._status = status
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -151,7 +135,7 @@ class DependJob:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, DependJob):
+        if not isinstance(other, CheckDataFilterResponse):
             return False
 
         return self.__dict__ == other.__dict__

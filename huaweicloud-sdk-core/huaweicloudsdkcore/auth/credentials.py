@@ -142,10 +142,6 @@ class Credentials(DerivedCredentials, TempCredentials, FederalCredentials):
         if self.security_token is not None:
             request.header_params["X-Security-Token"] = self.security_token
 
-        if "Content-Type" in request.header_params and not request.header_params["Content-Type"].startswith(
-                "application/json"):
-            request.header_params["X-Sdk-Content-Sha256"] = "UNSIGNED-PAYLOAD"
-
         if self._is_derived_auth(request):
             return DerivationAKSKSigner(self).sign(request, self._derived_auth_service_name, self._region_id)
 

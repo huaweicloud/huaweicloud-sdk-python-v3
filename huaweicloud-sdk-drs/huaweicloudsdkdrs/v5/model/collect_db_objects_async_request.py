@@ -49,9 +49,9 @@ class CollectDbObjectsAsyncRequest:
         :type offset: int
         :param limit: 查询返回记录的数量限制。
         :type limit: int
-        :param type: 查询对象信息类型。取值： - source：查询源库对象信息。 - modified：查询已选择的（已同步的和未下发的）对象信息。 - synchronized：查询已同步的（已下发的）对象信息 ， 使用场景在任务处于全量中或者增量中。
+        :param type: 查询对象信息类型。 取值： - source：查询源库对象信息。 - modified：查询已选择的（已同步的和未下发的）对象信息。 - synchronized：查询已同步的（已下发的）对象信息 ， 使用场景在任务处于全量中或者增量中。
         :type type: str
-        :param is_refresh: 是否强制刷新。取值： - true：是，表示从源库重新查询。 - false：否，表示从已缓存中数据查询。
+        :param is_refresh: 是否强制刷新。 取值： - true：是，表示从源库重新查询。    - false：否，表示从已缓存中数据查询。
         :type is_refresh: bool
         :param db_names: 查询指定库的信息。
         :type db_names: list[str]
@@ -173,7 +173,7 @@ class CollectDbObjectsAsyncRequest:
     def type(self):
         """Gets the type of this CollectDbObjectsAsyncRequest.
 
-        查询对象信息类型。取值： - source：查询源库对象信息。 - modified：查询已选择的（已同步的和未下发的）对象信息。 - synchronized：查询已同步的（已下发的）对象信息 ， 使用场景在任务处于全量中或者增量中。
+        查询对象信息类型。 取值： - source：查询源库对象信息。 - modified：查询已选择的（已同步的和未下发的）对象信息。 - synchronized：查询已同步的（已下发的）对象信息 ， 使用场景在任务处于全量中或者增量中。
 
         :return: The type of this CollectDbObjectsAsyncRequest.
         :rtype: str
@@ -184,7 +184,7 @@ class CollectDbObjectsAsyncRequest:
     def type(self, type):
         """Sets the type of this CollectDbObjectsAsyncRequest.
 
-        查询对象信息类型。取值： - source：查询源库对象信息。 - modified：查询已选择的（已同步的和未下发的）对象信息。 - synchronized：查询已同步的（已下发的）对象信息 ， 使用场景在任务处于全量中或者增量中。
+        查询对象信息类型。 取值： - source：查询源库对象信息。 - modified：查询已选择的（已同步的和未下发的）对象信息。 - synchronized：查询已同步的（已下发的）对象信息 ， 使用场景在任务处于全量中或者增量中。
 
         :param type: The type of this CollectDbObjectsAsyncRequest.
         :type type: str
@@ -195,7 +195,7 @@ class CollectDbObjectsAsyncRequest:
     def is_refresh(self):
         """Gets the is_refresh of this CollectDbObjectsAsyncRequest.
 
-        是否强制刷新。取值： - true：是，表示从源库重新查询。 - false：否，表示从已缓存中数据查询。
+        是否强制刷新。 取值： - true：是，表示从源库重新查询。    - false：否，表示从已缓存中数据查询。
 
         :return: The is_refresh of this CollectDbObjectsAsyncRequest.
         :rtype: bool
@@ -206,7 +206,7 @@ class CollectDbObjectsAsyncRequest:
     def is_refresh(self, is_refresh):
         """Sets the is_refresh of this CollectDbObjectsAsyncRequest.
 
-        是否强制刷新。取值： - true：是，表示从源库重新查询。 - false：否，表示从已缓存中数据查询。
+        是否强制刷新。 取值： - true：是，表示从源库重新查询。    - false：否，表示从已缓存中数据查询。
 
         :param is_refresh: The is_refresh of this CollectDbObjectsAsyncRequest.
         :type is_refresh: bool

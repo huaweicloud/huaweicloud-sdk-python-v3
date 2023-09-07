@@ -31,7 +31,7 @@ class CreateDashboardWidgetsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param dashboard_id: 监控面板id，以db开头，包含22个字母和数字例：db16564943172807wjOmoLyn&#39;
+        :param dashboard_id: 监控看板id，以db开头，包含22个字母和数字例：db16564943172807wjOmoLyn&#39;
         :type dashboard_id: str
         :param body: Body of the CreateDashboardWidgetsRequest
         :type body: list[:class:`huaweicloudsdkces.v2.BaseWidgetInfo`]
@@ -51,7 +51,7 @@ class CreateDashboardWidgetsRequest:
     def dashboard_id(self):
         """Gets the dashboard_id of this CreateDashboardWidgetsRequest.
 
-        监控面板id，以db开头，包含22个字母和数字例：db16564943172807wjOmoLyn'
+        监控看板id，以db开头，包含22个字母和数字例：db16564943172807wjOmoLyn'
 
         :return: The dashboard_id of this CreateDashboardWidgetsRequest.
         :rtype: str
@@ -62,7 +62,7 @@ class CreateDashboardWidgetsRequest:
     def dashboard_id(self, dashboard_id):
         """Sets the dashboard_id of this CreateDashboardWidgetsRequest.
 
-        监控面板id，以db开头，包含22个字母和数字例：db16564943172807wjOmoLyn'
+        监控看板id，以db开头，包含22个字母和数字例：db16564943172807wjOmoLyn'
 
         :param dashboard_id: The dashboard_id of this CreateDashboardWidgetsRequest.
         :type dashboard_id: str

@@ -17,8 +17,8 @@ class UpdateTimerRuleReq:
     sensitive_list = []
 
     openapi_types = {
-        'api_version': 'str',
-        'kind': 'str',
+        'api_version': 'ApiVersionObj',
+        'kind': 'TimeRuleKindObj',
         'spec': 'UpdateTimerRuleDetails'
     }
 
@@ -33,10 +33,10 @@ class UpdateTimerRuleReq:
 
         The model defined in huaweicloud sdk
 
-        :param api_version: API版本，固定值“v1”，该值不可修改。
-        :type api_version: str
-        :param kind: 资源种类。
-        :type kind: str
+        :param api_version: 
+        :type api_version: :class:`huaweicloudsdkcae.v1.ApiVersionObj`
+        :param kind: 
+        :type kind: :class:`huaweicloudsdkcae.v1.TimeRuleKindObj`
         :param spec: 
         :type spec: :class:`huaweicloudsdkcae.v1.UpdateTimerRuleDetails`
         """
@@ -56,10 +56,8 @@ class UpdateTimerRuleReq:
     def api_version(self):
         """Gets the api_version of this UpdateTimerRuleReq.
 
-        API版本，固定值“v1”，该值不可修改。
-
         :return: The api_version of this UpdateTimerRuleReq.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkcae.v1.ApiVersionObj`
         """
         return self._api_version
 
@@ -67,10 +65,8 @@ class UpdateTimerRuleReq:
     def api_version(self, api_version):
         """Sets the api_version of this UpdateTimerRuleReq.
 
-        API版本，固定值“v1”，该值不可修改。
-
         :param api_version: The api_version of this UpdateTimerRuleReq.
-        :type api_version: str
+        :type api_version: :class:`huaweicloudsdkcae.v1.ApiVersionObj`
         """
         self._api_version = api_version
 
@@ -78,10 +74,8 @@ class UpdateTimerRuleReq:
     def kind(self):
         """Gets the kind of this UpdateTimerRuleReq.
 
-        资源种类。
-
         :return: The kind of this UpdateTimerRuleReq.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkcae.v1.TimeRuleKindObj`
         """
         return self._kind
 
@@ -89,10 +83,8 @@ class UpdateTimerRuleReq:
     def kind(self, kind):
         """Sets the kind of this UpdateTimerRuleReq.
 
-        资源种类。
-
         :param kind: The kind of this UpdateTimerRuleReq.
-        :type kind: str
+        :type kind: :class:`huaweicloudsdkcae.v1.TimeRuleKindObj`
         """
         self._kind = kind
 

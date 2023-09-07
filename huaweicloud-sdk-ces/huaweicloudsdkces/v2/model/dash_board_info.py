@@ -41,19 +41,19 @@ class DashBoardInfo:
 
         The model defined in huaweicloud sdk
 
-        :param dashboard_id: 监控面板id
+        :param dashboard_id: 监控看板id
         :type dashboard_id: str
-        :param dashboard_name: 自定义监控面板名称
+        :param dashboard_name: 自定义监控看板名称
         :type dashboard_name: str
         :param enterprise_id: 企业项目Id
         :type enterprise_id: str
         :param row_widget_num: 监控视图展示模式，0表示自定义坐标，1代表每行一个
         :type row_widget_num: int
-        :param is_favorite: 监控面板是否标记收藏, true: 收藏, false: 未收藏
+        :param is_favorite: 监控看板是否标记收藏, true: 收藏, false: 未收藏
         :type is_favorite: bool
-        :param creator_name: 监控面板的创建用户名
+        :param creator_name: 监控看板的创建用户名
         :type creator_name: str
-        :param create_time: 监控面板创建时间
+        :param create_time: 监控看板创建时间
         :type create_time: int
         """
         
@@ -87,7 +87,7 @@ class DashBoardInfo:
     def dashboard_id(self):
         """Gets the dashboard_id of this DashBoardInfo.
 
-        监控面板id
+        监控看板id
 
         :return: The dashboard_id of this DashBoardInfo.
         :rtype: str
@@ -98,7 +98,7 @@ class DashBoardInfo:
     def dashboard_id(self, dashboard_id):
         """Sets the dashboard_id of this DashBoardInfo.
 
-        监控面板id
+        监控看板id
 
         :param dashboard_id: The dashboard_id of this DashBoardInfo.
         :type dashboard_id: str
@@ -109,7 +109,7 @@ class DashBoardInfo:
     def dashboard_name(self):
         """Gets the dashboard_name of this DashBoardInfo.
 
-        自定义监控面板名称
+        自定义监控看板名称
 
         :return: The dashboard_name of this DashBoardInfo.
         :rtype: str
@@ -120,7 +120,7 @@ class DashBoardInfo:
     def dashboard_name(self, dashboard_name):
         """Sets the dashboard_name of this DashBoardInfo.
 
-        自定义监控面板名称
+        自定义监控看板名称
 
         :param dashboard_name: The dashboard_name of this DashBoardInfo.
         :type dashboard_name: str
@@ -175,7 +175,7 @@ class DashBoardInfo:
     def is_favorite(self):
         """Gets the is_favorite of this DashBoardInfo.
 
-        监控面板是否标记收藏, true: 收藏, false: 未收藏
+        监控看板是否标记收藏, true: 收藏, false: 未收藏
 
         :return: The is_favorite of this DashBoardInfo.
         :rtype: bool
@@ -186,7 +186,7 @@ class DashBoardInfo:
     def is_favorite(self, is_favorite):
         """Sets the is_favorite of this DashBoardInfo.
 
-        监控面板是否标记收藏, true: 收藏, false: 未收藏
+        监控看板是否标记收藏, true: 收藏, false: 未收藏
 
         :param is_favorite: The is_favorite of this DashBoardInfo.
         :type is_favorite: bool
@@ -197,7 +197,7 @@ class DashBoardInfo:
     def creator_name(self):
         """Gets the creator_name of this DashBoardInfo.
 
-        监控面板的创建用户名
+        监控看板的创建用户名
 
         :return: The creator_name of this DashBoardInfo.
         :rtype: str
@@ -208,7 +208,7 @@ class DashBoardInfo:
     def creator_name(self, creator_name):
         """Sets the creator_name of this DashBoardInfo.
 
-        监控面板的创建用户名
+        监控看板的创建用户名
 
         :param creator_name: The creator_name of this DashBoardInfo.
         :type creator_name: str
@@ -219,7 +219,7 @@ class DashBoardInfo:
     def create_time(self):
         """Gets the create_time of this DashBoardInfo.
 
-        监控面板创建时间
+        监控看板创建时间
 
         :return: The create_time of this DashBoardInfo.
         :rtype: int
@@ -230,7 +230,7 @@ class DashBoardInfo:
     def create_time(self, create_time):
         """Sets the create_time of this DashBoardInfo.
 
-        监控面板创建时间
+        监控看板创建时间
 
         :param create_time: The create_time of this DashBoardInfo.
         :type create_time: int

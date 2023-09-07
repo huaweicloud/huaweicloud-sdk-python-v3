@@ -23,7 +23,14 @@ class JobInstance:
         'start_time': 'int',
         'end_time': 'int',
         'execute_time': 'int',
-        'instances_id': 'str'
+        'submit_time': 'int',
+        'instance_id': 'int',
+        'job_id': 'int',
+        'job_instance_name': 'str',
+        'instance_type': 'int',
+        'version': 'int',
+        'ignore_success': 'bool',
+        'force_success': 'bool'
     }
 
     attribute_map = {
@@ -33,28 +40,49 @@ class JobInstance:
         'start_time': 'startTime',
         'end_time': 'endTime',
         'execute_time': 'executeTime',
-        'instances_id': 'instancesId'
+        'submit_time': 'submitTime',
+        'instance_id': 'instanceId',
+        'job_id': 'jobId',
+        'job_instance_name': 'jobInstanceName',
+        'instance_type': 'instanceType',
+        'version': 'version',
+        'ignore_success': 'ignoreSuccess',
+        'force_success': 'forceSuccess'
     }
 
-    def __init__(self, job_name=None, status=None, plan_time=None, start_time=None, end_time=None, execute_time=None, instances_id=None):
+    def __init__(self, job_name=None, status=None, plan_time=None, start_time=None, end_time=None, execute_time=None, submit_time=None, instance_id=None, job_id=None, job_instance_name=None, instance_type=None, version=None, ignore_success=None, force_success=None):
         """JobInstance
 
         The model defined in huaweicloud sdk
 
-        :param job_name: 
+        :param job_name: 作业名称。如果要查询指定批处理作业的实例列表，jobName就是批处理作业名。如果要查询实时作业下某个节点关联的子作业，jobName格式为[实时作业名称]_[节点名称]。
         :type job_name: str
-        :param status: 
+        :param status: 实例运行状态： - waiting：等待运行 - running：运行中 - success：运行成功 - fail： 运行失败 - running-exception：运行异常 - pause： 暂停 - manual-stop：取消
         :type status: str
-        :param plan_time: 
+        :param plan_time: 作业实例计划执行时间
         :type plan_time: int
-        :param start_time: 
+        :param start_time: 作业实例实际执行开始时间
         :type start_time: int
-        :param end_time: 
+        :param end_time: 作业实例实际执行结束时间
         :type end_time: int
-        :param execute_time: 
+        :param execute_time: 执行耗时，单位：毫秒
         :type execute_time: int
-        :param instances_id: 
-        :type instances_id: str
+        :param submit_time: 作业提交运行时间
+        :type submit_time: int
+        :param instance_id: 作业实例ID
+        :type instance_id: int
+        :param job_id: 作业ID
+        :type job_id: int
+        :param job_instance_name: 作业实例运行时日志记录的实例名称, 非作业定义的名称
+        :type job_instance_name: str
+        :param instance_type: 作业实例类型
+        :type instance_type: int
+        :param version: 作业版本号
+        :type version: int
+        :param ignore_success: 作业成功状态，是否忽略成功
+        :type ignore_success: bool
+        :param force_success: 作业成功状态，是否强制成功
+        :type force_success: bool
         """
         
         
@@ -65,7 +93,14 @@ class JobInstance:
         self._start_time = None
         self._end_time = None
         self._execute_time = None
-        self._instances_id = None
+        self._submit_time = None
+        self._instance_id = None
+        self._job_id = None
+        self._job_instance_name = None
+        self._instance_type = None
+        self._version = None
+        self._ignore_success = None
+        self._force_success = None
         self.discriminator = None
 
         if job_name is not None:
@@ -80,12 +115,28 @@ class JobInstance:
             self.end_time = end_time
         if execute_time is not None:
             self.execute_time = execute_time
-        if instances_id is not None:
-            self.instances_id = instances_id
+        if submit_time is not None:
+            self.submit_time = submit_time
+        if instance_id is not None:
+            self.instance_id = instance_id
+        if job_id is not None:
+            self.job_id = job_id
+        if job_instance_name is not None:
+            self.job_instance_name = job_instance_name
+        if instance_type is not None:
+            self.instance_type = instance_type
+        if version is not None:
+            self.version = version
+        if ignore_success is not None:
+            self.ignore_success = ignore_success
+        if force_success is not None:
+            self.force_success = force_success
 
     @property
     def job_name(self):
         """Gets the job_name of this JobInstance.
+
+        作业名称。如果要查询指定批处理作业的实例列表，jobName就是批处理作业名。如果要查询实时作业下某个节点关联的子作业，jobName格式为[实时作业名称]_[节点名称]。
 
         :return: The job_name of this JobInstance.
         :rtype: str
@@ -96,6 +147,8 @@ class JobInstance:
     def job_name(self, job_name):
         """Sets the job_name of this JobInstance.
 
+        作业名称。如果要查询指定批处理作业的实例列表，jobName就是批处理作业名。如果要查询实时作业下某个节点关联的子作业，jobName格式为[实时作业名称]_[节点名称]。
+
         :param job_name: The job_name of this JobInstance.
         :type job_name: str
         """
@@ -104,6 +157,8 @@ class JobInstance:
     @property
     def status(self):
         """Gets the status of this JobInstance.
+
+        实例运行状态： - waiting：等待运行 - running：运行中 - success：运行成功 - fail： 运行失败 - running-exception：运行异常 - pause： 暂停 - manual-stop：取消
 
         :return: The status of this JobInstance.
         :rtype: str
@@ -114,6 +169,8 @@ class JobInstance:
     def status(self, status):
         """Sets the status of this JobInstance.
 
+        实例运行状态： - waiting：等待运行 - running：运行中 - success：运行成功 - fail： 运行失败 - running-exception：运行异常 - pause： 暂停 - manual-stop：取消
+
         :param status: The status of this JobInstance.
         :type status: str
         """
@@ -122,6 +179,8 @@ class JobInstance:
     @property
     def plan_time(self):
         """Gets the plan_time of this JobInstance.
+
+        作业实例计划执行时间
 
         :return: The plan_time of this JobInstance.
         :rtype: int
@@ -132,6 +191,8 @@ class JobInstance:
     def plan_time(self, plan_time):
         """Sets the plan_time of this JobInstance.
 
+        作业实例计划执行时间
+
         :param plan_time: The plan_time of this JobInstance.
         :type plan_time: int
         """
@@ -140,6 +201,8 @@ class JobInstance:
     @property
     def start_time(self):
         """Gets the start_time of this JobInstance.
+
+        作业实例实际执行开始时间
 
         :return: The start_time of this JobInstance.
         :rtype: int
@@ -150,6 +213,8 @@ class JobInstance:
     def start_time(self, start_time):
         """Sets the start_time of this JobInstance.
 
+        作业实例实际执行开始时间
+
         :param start_time: The start_time of this JobInstance.
         :type start_time: int
         """
@@ -158,6 +223,8 @@ class JobInstance:
     @property
     def end_time(self):
         """Gets the end_time of this JobInstance.
+
+        作业实例实际执行结束时间
 
         :return: The end_time of this JobInstance.
         :rtype: int
@@ -168,6 +235,8 @@ class JobInstance:
     def end_time(self, end_time):
         """Sets the end_time of this JobInstance.
 
+        作业实例实际执行结束时间
+
         :param end_time: The end_time of this JobInstance.
         :type end_time: int
         """
@@ -176,6 +245,8 @@ class JobInstance:
     @property
     def execute_time(self):
         """Gets the execute_time of this JobInstance.
+
+        执行耗时，单位：毫秒
 
         :return: The execute_time of this JobInstance.
         :rtype: int
@@ -186,28 +257,188 @@ class JobInstance:
     def execute_time(self, execute_time):
         """Sets the execute_time of this JobInstance.
 
+        执行耗时，单位：毫秒
+
         :param execute_time: The execute_time of this JobInstance.
         :type execute_time: int
         """
         self._execute_time = execute_time
 
     @property
-    def instances_id(self):
-        """Gets the instances_id of this JobInstance.
+    def submit_time(self):
+        """Gets the submit_time of this JobInstance.
 
-        :return: The instances_id of this JobInstance.
+        作业提交运行时间
+
+        :return: The submit_time of this JobInstance.
+        :rtype: int
+        """
+        return self._submit_time
+
+    @submit_time.setter
+    def submit_time(self, submit_time):
+        """Sets the submit_time of this JobInstance.
+
+        作业提交运行时间
+
+        :param submit_time: The submit_time of this JobInstance.
+        :type submit_time: int
+        """
+        self._submit_time = submit_time
+
+    @property
+    def instance_id(self):
+        """Gets the instance_id of this JobInstance.
+
+        作业实例ID
+
+        :return: The instance_id of this JobInstance.
+        :rtype: int
+        """
+        return self._instance_id
+
+    @instance_id.setter
+    def instance_id(self, instance_id):
+        """Sets the instance_id of this JobInstance.
+
+        作业实例ID
+
+        :param instance_id: The instance_id of this JobInstance.
+        :type instance_id: int
+        """
+        self._instance_id = instance_id
+
+    @property
+    def job_id(self):
+        """Gets the job_id of this JobInstance.
+
+        作业ID
+
+        :return: The job_id of this JobInstance.
+        :rtype: int
+        """
+        return self._job_id
+
+    @job_id.setter
+    def job_id(self, job_id):
+        """Sets the job_id of this JobInstance.
+
+        作业ID
+
+        :param job_id: The job_id of this JobInstance.
+        :type job_id: int
+        """
+        self._job_id = job_id
+
+    @property
+    def job_instance_name(self):
+        """Gets the job_instance_name of this JobInstance.
+
+        作业实例运行时日志记录的实例名称, 非作业定义的名称
+
+        :return: The job_instance_name of this JobInstance.
         :rtype: str
         """
-        return self._instances_id
+        return self._job_instance_name
 
-    @instances_id.setter
-    def instances_id(self, instances_id):
-        """Sets the instances_id of this JobInstance.
+    @job_instance_name.setter
+    def job_instance_name(self, job_instance_name):
+        """Sets the job_instance_name of this JobInstance.
 
-        :param instances_id: The instances_id of this JobInstance.
-        :type instances_id: str
+        作业实例运行时日志记录的实例名称, 非作业定义的名称
+
+        :param job_instance_name: The job_instance_name of this JobInstance.
+        :type job_instance_name: str
         """
-        self._instances_id = instances_id
+        self._job_instance_name = job_instance_name
+
+    @property
+    def instance_type(self):
+        """Gets the instance_type of this JobInstance.
+
+        作业实例类型
+
+        :return: The instance_type of this JobInstance.
+        :rtype: int
+        """
+        return self._instance_type
+
+    @instance_type.setter
+    def instance_type(self, instance_type):
+        """Sets the instance_type of this JobInstance.
+
+        作业实例类型
+
+        :param instance_type: The instance_type of this JobInstance.
+        :type instance_type: int
+        """
+        self._instance_type = instance_type
+
+    @property
+    def version(self):
+        """Gets the version of this JobInstance.
+
+        作业版本号
+
+        :return: The version of this JobInstance.
+        :rtype: int
+        """
+        return self._version
+
+    @version.setter
+    def version(self, version):
+        """Sets the version of this JobInstance.
+
+        作业版本号
+
+        :param version: The version of this JobInstance.
+        :type version: int
+        """
+        self._version = version
+
+    @property
+    def ignore_success(self):
+        """Gets the ignore_success of this JobInstance.
+
+        作业成功状态，是否忽略成功
+
+        :return: The ignore_success of this JobInstance.
+        :rtype: bool
+        """
+        return self._ignore_success
+
+    @ignore_success.setter
+    def ignore_success(self, ignore_success):
+        """Sets the ignore_success of this JobInstance.
+
+        作业成功状态，是否忽略成功
+
+        :param ignore_success: The ignore_success of this JobInstance.
+        :type ignore_success: bool
+        """
+        self._ignore_success = ignore_success
+
+    @property
+    def force_success(self):
+        """Gets the force_success of this JobInstance.
+
+        作业成功状态，是否强制成功
+
+        :return: The force_success of this JobInstance.
+        :rtype: bool
+        """
+        return self._force_success
+
+    @force_success.setter
+    def force_success(self, force_success):
+        """Sets the force_success of this JobInstance.
+
+        作业成功状态，是否强制成功
+
+        :param force_success: The force_success of this JobInstance.
+        :type force_success: bool
+        """
+        self._force_success = force_success
 
     def to_dict(self):
         """Returns the model properties as a dict"""

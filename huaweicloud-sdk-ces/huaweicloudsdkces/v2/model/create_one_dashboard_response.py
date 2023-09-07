@@ -30,7 +30,7 @@ class CreateOneDashboardResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param dashboard_id: 监控面板id
+        :param dashboard_id: 监控看板id
         :type dashboard_id: str
         """
         
@@ -46,7 +46,7 @@ class CreateOneDashboardResponse(SdkResponse):
     def dashboard_id(self):
         """Gets the dashboard_id of this CreateOneDashboardResponse.
 
-        监控面板id
+        监控看板id
 
         :return: The dashboard_id of this CreateOneDashboardResponse.
         :rtype: str
@@ -57,7 +57,7 @@ class CreateOneDashboardResponse(SdkResponse):
     def dashboard_id(self, dashboard_id):
         """Sets the dashboard_id of this CreateOneDashboardResponse.
 
-        监控面板id
+        监控看板id
 
         :param dashboard_id: The dashboard_id of this CreateOneDashboardResponse.
         :type dashboard_id: str

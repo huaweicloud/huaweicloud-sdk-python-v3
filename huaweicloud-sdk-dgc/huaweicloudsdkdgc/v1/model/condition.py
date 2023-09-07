@@ -31,9 +31,9 @@ class Condition:
 
         The model defined in huaweicloud sdk
 
-        :param pre_node_name: 
+        :param pre_node_name: 本节点依赖的前一个节点名称
         :type pre_node_name: str
-        :param expression: 
+        :param expression: EL表达式，如果EL表达式的计算结果为true，则触发执行本节点
         :type expression: str
         """
         
@@ -43,14 +43,14 @@ class Condition:
         self._expression = None
         self.discriminator = None
 
-        if pre_node_name is not None:
-            self.pre_node_name = pre_node_name
-        if expression is not None:
-            self.expression = expression
+        self.pre_node_name = pre_node_name
+        self.expression = expression
 
     @property
     def pre_node_name(self):
         """Gets the pre_node_name of this Condition.
+
+        本节点依赖的前一个节点名称
 
         :return: The pre_node_name of this Condition.
         :rtype: str
@@ -61,6 +61,8 @@ class Condition:
     def pre_node_name(self, pre_node_name):
         """Sets the pre_node_name of this Condition.
 
+        本节点依赖的前一个节点名称
+
         :param pre_node_name: The pre_node_name of this Condition.
         :type pre_node_name: str
         """
@@ -70,6 +72,8 @@ class Condition:
     def expression(self):
         """Gets the expression of this Condition.
 
+        EL表达式，如果EL表达式的计算结果为true，则触发执行本节点
+
         :return: The expression of this Condition.
         :rtype: str
         """
@@ -78,6 +82,8 @@ class Condition:
     @expression.setter
     def expression(self, expression):
         """Sets the expression of this Condition.
+
+        EL表达式，如果EL表达式的计算结果为true，则触发执行本节点
 
         :param expression: The expression of this Condition.
         :type expression: str

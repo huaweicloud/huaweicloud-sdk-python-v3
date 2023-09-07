@@ -1,3 +1,512 @@
+# 3.1.58 2023-09-07
+
+### HuaweiCloud SDK AOS
+
+- _Features_
+  - Support the interface `DeleteStackEnhanced`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK AS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListScalingActivityLogs**
+    - changes of response param
+      - `* scaling_activity_log.scaling_value: string -> int32`
+  - **CreateScalingPolicy**
+    - changes of request param
+      - `+ scheduled_policy.recurrence_type: enum value [Daily,Weekly,Monthly]`
+      - `- scheduled_policy.recurrence_type: enum value [DAILY,WEEKLY,MONTHLY]`
+  - **UpdateScalingPolicy**
+    - changes of request param
+      - `+ scheduled_policy.recurrence_type: enum value [Daily,Weekly,Monthly]`
+      - `- scheduled_policy.recurrence_type: enum value [DAILY,WEEKLY,MONTHLY]`
+  - **ShowScalingPolicy**
+    - changes of response param
+      - `+ scaling_policy.scheduled_policy.recurrence_type: enum value [Daily,Weekly,Monthly]`
+      - `- scaling_policy.scheduled_policy.recurrence_type: enum value [DAILY,WEEKLY,MONTHLY]`
+  - **ListScalingPolicies**
+    - changes of response param
+      - `+ scaling_policies.scheduled_policy.recurrence_type: enum value [Daily,Weekly,Monthly]`
+      - `- scaling_policies.scheduled_policy.recurrence_type: enum value [DAILY,WEEKLY,MONTHLY]`
+  - **CreateScalingV2Policy**
+    - changes of request param
+      - `+ scheduled_policy.recurrence_type: enum value [Daily,Weekly,Monthly]`
+      - `- scheduled_policy.recurrence_type: enum value [DAILY,WEEKLY,MONTHLY]`
+  - **ListAllScalingV2Policies**
+    - changes of response param
+      - `+ scaling_policies.scheduled_policy.recurrence_type: enum value [Daily,Weekly,Monthly]`
+      - `- scaling_policies.scheduled_policy.recurrence_type: enum value [DAILY,WEEKLY,MONTHLY]`
+  - **UpdateScalingV2Policy**
+    - changes of request param
+      - `+ scheduled_policy.recurrence_type: enum value [Daily,Weekly,Monthly]`
+      - `- scheduled_policy.recurrence_type: enum value [DAILY,WEEKLY,MONTHLY]`
+  - **ShowScalingV2Policy**
+    - changes of response param
+      - `+ scaling_policy.scheduled_policy.recurrence_type: enum value [Daily,Weekly,Monthly]`
+      - `- scaling_policy.scheduled_policy.recurrence_type: enum value [DAILY,WEEKLY,MONTHLY]`
+  - **ListScalingV2Policies**
+    - changes of response param
+      - `+ scaling_policies.scheduled_policy.recurrence_type: enum value [Daily,Weekly,Monthly]`
+      - `- scaling_policies.scheduled_policy.recurrence_type: enum value [DAILY,WEEKLY,MONTHLY]`
+  - **ListScalingActivityV2Logs**
+    - changes of response param
+      - `* scaling_activity_log.scaling_value: string -> int32`
+  - **CreateScalingGroup**
+    - changes of request param
+      - `+ lbaas_listeners.protocol_version`
+  - **ListScalingGroups**
+    - changes of response param
+      - `+ scaling_groups.lbaas_listeners.protocol_version`
+  - **UpdateScalingGroup**
+    - changes of request param
+      - `+ lbaas_listeners.protocol_version`
+  - **ShowScalingGroup**
+    - changes of response param
+      - `+ scaling_group.lbaas_listeners.protocol_version`
+
+### HuaweiCloud SDK CAE
+
+- _Features_
+  - Support the interfaces `ListEips`, `UpdateEip`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowApplication**
+    - changes of response param
+      - `+ api_version: enum value [v1]`
+      - `+ kind: enum value [Application]`
+  - **CreateAgency**
+    - changes of request param
+      - `+ api_version: enum value [v1]`
+      - `+ kind: enum value [Agency]`
+  - **ListAgencies**
+    - changes of response param
+      - `+ api_version: enum value [v1]`
+      - `+ kind: enum value [Agency]`
+  - **ListEnvironments**
+    - changes of response param
+      - `+ kind`
+      - `- Kind`
+      - `+ api_version: enum value [v1]`
+  - **CreateEnvironment**
+    - changes of request param
+      - `+ api_version: enum value [v1]`
+      - `+ kind: enum value [Environment]`
+  - **CreateApplication**
+    - changes of request param
+      - `+ api_version: enum value [v1]`
+      - `+ kind: enum value [Application]`
+    - changes of response param
+      - `+ api_version: enum value [v1]`
+      - `+ kind: enum value [Application]`
+  - **ListApplications**
+    - changes of response param
+      - `+ api_version: enum value [v1]`
+      - `+ kind: enum value [Application]`
+  - **ListComponentConfigurations**
+    - changes of response param
+      - `+ items.type: enum value [customMetric]`
+  - **CreateComponentConfiguration**
+    - changes of request param
+      - `+ api_version: enum value [v1]`
+      - `+ kind: enum value [ComponentConfiguration]`
+  - **ListComponentEvents**
+    - changes of response param
+      - `+ api_version: enum value [v1]`
+      - `+ kind: enum value [ComponentEvent]`
+  - **ListComponentInstances**
+    - changes of response param
+      - `+ api_version: enum value [v1]`
+      - `+ kind: enum value [ComponentConfiguration]`
+  - **ListVolumes**
+    - changes of response param
+      - `+ api_version: enum value [v1]`
+      - `+ kind: enum value [Volume]`
+  - **CreateVolume**
+    - changes of request param
+      - `+ api_version: enum value [v1]`
+      - `+ kind: enum value [Volume]`
+  - **DeleteVolume**
+    - changes of response param
+      - `+ api_version: enum value [v1]`
+      - `+ kind: enum value [Component]`
+  - **UpdateCertificate**
+    - changes of request param
+      - `+ api_version: enum value [v1]`
+      - `+ kind: enum value [Certificate]`
+  - **ListComponentSnapshots**
+    - changes of response param
+      - `+ api_version: enum value [v1]`
+      - `+ kind: enum value [ComponentSnapshot]`
+  - **ShowJob**
+    - changes of response param
+      - `+ api_version: enum value [v1]`
+      - `+ kind: enum value [Job]`
+  - **ListDomains**
+    - changes of response param
+      - `+ api_version: enum value [v1]`
+  - **CreateDomain**
+    - changes of request param
+      - `+ api_version: enum value [v1]`
+      - `+ kind: enum value [Domain]`
+    - changes of response param
+      - `+ api_version: enum value [v1]`
+  - **ListCertificates**
+    - changes of response param
+      - `+ api_version: enum value [v1]`
+      - `+ kind: enum value [Certificate]`
+  - **CreateCertificate**
+    - changes of request param
+      - `+ api_version: enum value [v1]`
+      - `+ kind: enum value [Certificate]`
+    - changes of response param
+      - `+ api_version: enum value [v1]`
+      - `+ kind: enum value [Certificate]`
+  - **ListTimerRules**
+    - changes of response param
+      - `+ api_version: enum value [v1]`
+      - `+ kind: enum value [TimerRule]`
+  - **CreateTimerRule**
+    - changes of request param
+      - `+ api_version: enum value [v1]`
+      - `+ kind: enum value [TimerRule]`
+    - changes of response param
+      - `+ api_version: enum value [v1]`
+      - `+ kind: enum value [TimerRule]`
+  - **UpdateTimerRule**
+    - changes of request param
+      - `+ api_version: enum value [v1]`
+      - `+ kind: enum value [TimerRule]`
+  - **ShowExecutionResult**
+    - changes of response param
+      - `+ api_version: enum value [v1]`
+      - `+ kind: enum value [TimerRule]`
+  - **ShowComponent**
+    - changes of response param
+      - `+ api_version: enum value [v1]`
+      - `+ kind: enum value [Component]`
+  - **UpdateComponent**
+    - changes of request param
+      - `+ api_version: enum value [v1]`
+      - `+ kind: enum value [Component]`
+  - **ExecuteAction**
+    - changes of request param
+      - `+ api_version: enum value [v1]`
+      - `+ kind: enum value [Action]`
+  - **CreateComponent**
+    - changes of request param
+      - `+ api_version: enum value [v1]`
+      - `+ kind: enum value [Component]`
+    - changes of response param
+      - `+ api_version: enum value [v1]`
+      - `+ kind: enum value [Component]`
+  - **ListComponents**
+    - changes of response param
+      - `+ api_version: enum value [v1]`
+      - `+ kind: enum value [Component]`
+
+### HuaweiCloud SDK CES
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateEvents**
+    - changes of request param
+      - `+ detail.dimensions`
+  - **ListEventDetail**
+    - changes of response param
+      - `- dimensions`
+      - `+ event_info.detail.dimensions`
+
+### HuaweiCloud SDK CPTS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowAgentConfig**
+    - changes of response param
+      - `+ result.pulsar_enable`
+      - `+ result.pulsar_shadow_topic_prefix`
+      - `+ result.mock_rule_list.response_header`
+      - `+ result.mock_rule_list.response_body`
+      - `+ result.mock_rule_list.response_time`
+      - `+ result.mock_rule_list.response_code`
+  - **UpdateAgentHealthStatus**
+    - changes of response param
+      - `+ result.result.pulsar_enable`
+      - `+ result.result.pulsar_shadow_topic_prefix`
+      - `+ result.result.mock_rule_list.response_header`
+      - `+ result.result.mock_rule_list.response_body`
+      - `+ result.result.mock_rule_list.response_time`
+      - `+ result.result.mock_rule_list.response_code`
+
+### HuaweiCloud SDK DGC
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **StartJob**
+    - changes of request param
+      - `+ jobParams.type`
+      - `- jobParams.paramType`
+  - **RunOnce**
+    - changes of request param
+      - `+ jobParams.type`
+      - `- jobParams.paramType`
+  - **ListJobInstances**
+    - changes of request param
+      - `+ limit`
+      - `+ offset`
+      - `+ minPlanTime`
+      - `+ maxPlanTime`
+      - `+ status`
+      - `+ preciseQuery`
+      - `+ jobName`
+      - `+ instanceType`
+    - changes of response param
+      - `+ instances.submitTime`
+      - `+ instances.instanceId`
+      - `+ instances.jobId`
+      - `+ instances.jobInstanceName`
+      - `+ instances.instanceType`
+      - `+ instances.version`
+      - `+ instances.ignoreSuccess`
+      - `+ instances.forceSuccess`
+      - `- instances.instancesId`
+      - `+ instances.status: enum value [waiting,running,success,fail,running-exception,pause,manual-stop]`
+      - `* instances.planTime: int32 -> int64`
+      - `* instances.startTime: int32 -> int64`
+      - `* instances.endTime: int32 -> int64`
+      - `* instances.executeTime: int32 -> int64`
+  - **ListJobs**
+    - changes of response param
+      - `- schedule`
+      - `- nodes`
+      - `- basicConfig`
+      - `- name`
+      - `- params`
+      - `- jobType`
+      - `- directory`
+      - `+ jobs.owner`
+      - `+ jobs.priority`
+      - `+ jobs.status`
+      - `+ jobs.createUser`
+      - `+ jobs.createTime`
+      - `+ jobs.startTime`
+      - `+ jobs.endTime`
+      - `+ jobs.lastInstanceStatus`
+      - `+ jobs.lastInstanceEndTime`
+      - `+ jobs.lastUpdateTime`
+      - `+ jobs.lastUpdateUser`
+      - `+ jobs.path`
+      - `+ jobs.singleNodeJobFlag`
+      - `+ jobs.flinkJobInfo`
+      - `+ jobs.alarms`
+      - `- jobs.nodes`
+      - `- jobs.schedule`
+      - `- jobs.params`
+      - `- jobs.directory`
+      - `- jobs.basicConfig`
+      - `- jobs.jobType: enum value [BATCH,REAL_TIME]`
+      - `* jobs: list<JobInfo> -> list<JobResult>`
+  - **CreateJob**
+    - changes of request param
+      - `+ logPath`
+      - `+ lastUpdateUser`
+      - `+ approvers`
+      - `+ processType`
+      - `+ targetStatus`
+      - `- jobType`
+      - `+ schedule.type`
+      - `- schedule.scheType`
+      - `+ params.type`
+      - `- params.paramType`
+      - `+ nodes.type`
+      - `+ nodes.preNodeName`
+      - `+ nodes.conditions`
+      - `+ nodes.properties`
+      - `- nodes.nodeType`
+      - `- nodes.preNodeNames`
+      - `- nodes.condition`
+      - `- nodes.nodeProperties`
+      - `+ nodes.failPolicy: enum value [FAIL_CHILD]`
+      - `* nodes.location.x: int32 -> string`
+      - `* nodes.location.y: int32 -> string`
+      - `+ nodes.cronTrigger.expressionTimeZone`
+      - `+ nodes.cronTrigger.period`
+      - `+ nodes.cronTrigger.concurrent`
+      - `* nodes.cronTrigger.dependJobs.jobs: string -> list<string>`
+      - `- nodes.cronTrigger.dependJobs.dependFailPolicy: enum value [FAIL,IGNORE,SUSPEND]`
+      - `* nodes.cronTrigger.dependJobs: list<DependJob> -> list<DependJobs>`
+      - `* nodes.cronTrigger: object<Cron> -> object<CronTrigger>`
+  - **ShowJob**
+    - changes of response param
+      - `+ logPath`
+      - `+ lastUpdateUser`
+      - `+ approvers`
+      - `+ processType`
+      - `+ targetStatus`
+      - `- jobType`
+      - `+ schedule.type`
+      - `- schedule.scheType`
+      - `+ params.type`
+      - `- params.paramType`
+      - `+ nodes.type`
+      - `+ nodes.preNodeName`
+      - `+ nodes.conditions`
+      - `+ nodes.properties`
+      - `- nodes.nodeType`
+      - `- nodes.preNodeNames`
+      - `- nodes.condition`
+      - `- nodes.nodeProperties`
+      - `+ nodes.failPolicy: enum value [FAIL_CHILD]`
+      - `* nodes.location.x: int32 -> string`
+      - `* nodes.location.y: int32 -> string`
+      - `+ nodes.cronTrigger.expressionTimeZone`
+      - `+ nodes.cronTrigger.period`
+      - `+ nodes.cronTrigger.concurrent`
+      - `* nodes.cronTrigger.dependJobs.jobs: string -> list<string>`
+      - `- nodes.cronTrigger.dependJobs.dependFailPolicy: enum value [FAIL,IGNORE,SUSPEND]`
+      - `* nodes.cronTrigger.dependJobs: list<DependJob> -> list<DependJobs>`
+      - `* nodes.cronTrigger: object<Cron> -> object<CronTrigger>`
+  - **UpdateJob**
+    - changes of request param
+      - `+ logPath`
+      - `+ lastUpdateUser`
+      - `+ approvers`
+      - `+ processType`
+      - `+ targetStatus`
+      - `- jobType`
+      - `+ schedule.type`
+      - `- schedule.scheType`
+      - `+ params.type`
+      - `- params.paramType`
+      - `+ nodes.type`
+      - `+ nodes.preNodeName`
+      - `+ nodes.conditions`
+      - `+ nodes.properties`
+      - `- nodes.nodeType`
+      - `- nodes.preNodeNames`
+      - `- nodes.condition`
+      - `- nodes.nodeProperties`
+      - `+ nodes.failPolicy: enum value [FAIL_CHILD]`
+      - `* nodes.location.x: int32 -> string`
+      - `* nodes.location.y: int32 -> string`
+      - `+ nodes.cronTrigger.expressionTimeZone`
+      - `+ nodes.cronTrigger.period`
+      - `+ nodes.cronTrigger.concurrent`
+      - `* nodes.cronTrigger.dependJobs.jobs: string -> list<string>`
+      - `- nodes.cronTrigger.dependJobs.dependFailPolicy: enum value [FAIL,IGNORE,SUSPEND]`
+      - `* nodes.cronTrigger.dependJobs: list<DependJob> -> list<DependJobs>`
+      - `* nodes.cronTrigger: object<Cron> -> object<CronTrigger>`
+  - **CreateSupplementdata**
+    - changes of request param
+      - `+ logPath`
+      - `+ lastUpdateUser`
+      - `+ approvers`
+      - `+ processType`
+      - `+ targetStatus`
+      - `- jobType`
+      - `+ dependJobs.processType`
+      - `+ dependJobs.lastUpdateUser`
+      - `+ dependJobs.logPath`
+      - `+ dependJobs.targetStatus`
+      - `+ dependJobs.approvers`
+      - `- dependJobs.jobType`
+      - `+ dependJobs.schedule.type`
+      - `- dependJobs.schedule.scheType`
+      - `+ dependJobs.params.type`
+      - `- dependJobs.params.paramType`
+      - `+ dependJobs.nodes.type`
+      - `+ dependJobs.nodes.preNodeName`
+      - `+ dependJobs.nodes.conditions`
+      - `+ dependJobs.nodes.properties`
+      - `- dependJobs.nodes.nodeType`
+      - `- dependJobs.nodes.preNodeNames`
+      - `- dependJobs.nodes.condition`
+      - `- dependJobs.nodes.nodeProperties`
+      - `+ dependJobs.nodes.failPolicy: enum value [FAIL_CHILD]`
+      - `* dependJobs.nodes.location.x: int32 -> string`
+      - `* dependJobs.nodes.location.y: int32 -> string`
+      - `+ dependJobs.nodes.cronTrigger.expressionTimeZone`
+      - `+ dependJobs.nodes.cronTrigger.period`
+      - `+ dependJobs.nodes.cronTrigger.concurrent`
+      - `* dependJobs.nodes.cronTrigger.dependJobs.jobs: string -> list<string>`
+      - `- dependJobs.nodes.cronTrigger.dependJobs.dependFailPolicy: enum value [FAIL,IGNORE,SUSPEND]`
+      - `* dependJobs.nodes.cronTrigger.dependJobs: list<DependJob> -> list<DependJobs>`
+      - `* dependJobs.nodes.cronTrigger: object<Cron> -> object<CronTrigger>`
+
+### HuaweiCloud SDK DRS
+
+- _Features_
+  - Support the following interfaces：
+    - `StopJobAction`
+    - `ShowDataProgress`
+    - `UpdateDataProgress`
+    - `ShowDataProcessingRulesResult`
+    - `CheckDataFilter`
+    - `ShowDataFilteringResult`
+    - `CollectColumns`
+    - `ShowColumnInfoResult`
+    - `BatchStopJobsAction`
+    - `ExportOperationInfo`
+    - `BatchTagAction`
+    - `ListProjectTags`
+    - `ShowInstanceTags`
+    - `UpdateStartPosition`
+    - `ShowMonitorData`
+    - `ShowSupportObjectType`
+    - `ShowIncrementComponentsDetail`
+    - `CollectDbObjectsInfo`
+    - `ShowDbObjectsList`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowDbObjectTemplateResult**
+    - changes of request param
+      - `+ type: enum value [change]`
+  - **ShowUpdateObjectSavingStatus**
+    - changes of request param
+      - `+ X-Language: enum value [en-us,zh-cn]`
+  - **ShowObjectMapping**
+    - changes of request param
+      - `+ X-Language: enum value [en-us,zh-cn]`
+  - **ListJobs**
+    - changes of request param
+      - `+ instance_ids`
+      - `+ instance_ip`
+  - **ShowDbObjectCollectionStatus**
+    - changes of request param
+      - `+ X-Language: enum value [en-us,zh-cn]`
+  - **UpdateBatchAsyncJobs**
+    - changes of request param
+      - `+ jobs.type: enum value [re_create,expired_days]`
+  - **UpdateJob**
+    - changes of request param
+      - `+ job.type: enum value [re_create,expired_days]`
+
+### HuaweiCloud SDK RDS
+
+- _Features_
+  - Support the interfaces `ListInstancesResourceMetrics`, `ListInstancesRecommendation`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
 # 3.1.57 2023-08-31
 
 ### HuaweiCloud SDK BSS

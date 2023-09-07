@@ -63,7 +63,8 @@ class BatchCreateInvocationRequestBody:
         self._origin = None
         self.discriminator = None
 
-        self.instance_ids = instance_ids
+        if instance_ids is not None:
+            self.instance_ids = instance_ids
         self.invocation_type = invocation_type
         if invocation_target is not None:
             self.invocation_target = invocation_target

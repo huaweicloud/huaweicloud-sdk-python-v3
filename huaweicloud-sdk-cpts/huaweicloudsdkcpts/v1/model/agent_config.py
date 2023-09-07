@@ -35,7 +35,9 @@ class AgentConfig:
         'mock_rule_list': 'list[MockRuleConfig]',
         'clickhouse_enable': 'bool',
         'clickhouse_shadow_type': 'str',
-        'clickhouse_shadow_repository': 'str'
+        'clickhouse_shadow_repository': 'str',
+        'pulsar_enable': 'bool',
+        'pulsar_shadow_topic_prefix': 'str'
     }
 
     attribute_map = {
@@ -57,10 +59,12 @@ class AgentConfig:
         'mock_rule_list': 'mock_rule_list',
         'clickhouse_enable': 'clickhouse_enable',
         'clickhouse_shadow_type': 'clickhouse_shadow_type',
-        'clickhouse_shadow_repository': 'clickhouse_shadow_repository'
+        'clickhouse_shadow_repository': 'clickhouse_shadow_repository',
+        'pulsar_enable': 'pulsar_enable',
+        'pulsar_shadow_topic_prefix': 'pulsar_shadow_topic_prefix'
     }
 
-    def __init__(self, agent_id=None, db_enable=None, db_shadow_repository=None, db_shadow_type=None, log_level=None, log_path=None, main_switch=None, redis_enable=None, redis_shadow_key_prefix=None, redis_shadow_repository=None, redis_shadow_type=None, kafka_enable=None, kafka_shadow_topic_prefix=None, app_log_level=None, app_log_path=None, mock_rule_list=None, clickhouse_enable=None, clickhouse_shadow_type=None, clickhouse_shadow_repository=None):
+    def __init__(self, agent_id=None, db_enable=None, db_shadow_repository=None, db_shadow_type=None, log_level=None, log_path=None, main_switch=None, redis_enable=None, redis_shadow_key_prefix=None, redis_shadow_repository=None, redis_shadow_type=None, kafka_enable=None, kafka_shadow_topic_prefix=None, app_log_level=None, app_log_path=None, mock_rule_list=None, clickhouse_enable=None, clickhouse_shadow_type=None, clickhouse_shadow_repository=None, pulsar_enable=None, pulsar_shadow_topic_prefix=None):
         """AgentConfig
 
         The model defined in huaweicloud sdk
@@ -103,6 +107,10 @@ class AgentConfig:
         :type clickhouse_shadow_type: str
         :param clickhouse_shadow_repository: clickhouse影子库映射信息
         :type clickhouse_shadow_repository: str
+        :param pulsar_enable: 是否开启pulsar影子库规则
+        :type pulsar_enable: bool
+        :param pulsar_shadow_topic_prefix: pulsar影子库前缀
+        :type pulsar_shadow_topic_prefix: str
         """
         
         
@@ -126,6 +134,8 @@ class AgentConfig:
         self._clickhouse_enable = None
         self._clickhouse_shadow_type = None
         self._clickhouse_shadow_repository = None
+        self._pulsar_enable = None
+        self._pulsar_shadow_topic_prefix = None
         self.discriminator = None
 
         if agent_id is not None:
@@ -166,6 +176,10 @@ class AgentConfig:
             self.clickhouse_shadow_type = clickhouse_shadow_type
         if clickhouse_shadow_repository is not None:
             self.clickhouse_shadow_repository = clickhouse_shadow_repository
+        if pulsar_enable is not None:
+            self.pulsar_enable = pulsar_enable
+        if pulsar_shadow_topic_prefix is not None:
+            self.pulsar_shadow_topic_prefix = pulsar_shadow_topic_prefix
 
     @property
     def agent_id(self):
@@ -584,6 +598,50 @@ class AgentConfig:
         :type clickhouse_shadow_repository: str
         """
         self._clickhouse_shadow_repository = clickhouse_shadow_repository
+
+    @property
+    def pulsar_enable(self):
+        """Gets the pulsar_enable of this AgentConfig.
+
+        是否开启pulsar影子库规则
+
+        :return: The pulsar_enable of this AgentConfig.
+        :rtype: bool
+        """
+        return self._pulsar_enable
+
+    @pulsar_enable.setter
+    def pulsar_enable(self, pulsar_enable):
+        """Sets the pulsar_enable of this AgentConfig.
+
+        是否开启pulsar影子库规则
+
+        :param pulsar_enable: The pulsar_enable of this AgentConfig.
+        :type pulsar_enable: bool
+        """
+        self._pulsar_enable = pulsar_enable
+
+    @property
+    def pulsar_shadow_topic_prefix(self):
+        """Gets the pulsar_shadow_topic_prefix of this AgentConfig.
+
+        pulsar影子库前缀
+
+        :return: The pulsar_shadow_topic_prefix of this AgentConfig.
+        :rtype: str
+        """
+        return self._pulsar_shadow_topic_prefix
+
+    @pulsar_shadow_topic_prefix.setter
+    def pulsar_shadow_topic_prefix(self, pulsar_shadow_topic_prefix):
+        """Sets the pulsar_shadow_topic_prefix of this AgentConfig.
+
+        pulsar影子库前缀
+
+        :param pulsar_shadow_topic_prefix: The pulsar_shadow_topic_prefix of this AgentConfig.
+        :type pulsar_shadow_topic_prefix: str
+        """
+        self._pulsar_shadow_topic_prefix = pulsar_shadow_topic_prefix
 
     def to_dict(self):
         """Returns the model properties as a dict"""

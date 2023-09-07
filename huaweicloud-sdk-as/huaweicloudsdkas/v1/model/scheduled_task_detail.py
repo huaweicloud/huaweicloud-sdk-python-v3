@@ -20,7 +20,7 @@ class ScheduledTaskDetail:
         'task_id': 'str',
         'scaling_group_id': 'str',
         'name': 'str',
-        'scheduled_policy': 'ScheduledPolicy',
+        'scheduled_policy': 'ScheduledTaskPolicy',
         'instance_number': 'IntegerRange',
         'create_time': 'str',
         'tenant_id': 'str',
@@ -52,7 +52,7 @@ class ScheduledTaskDetail:
         :param name: 名称
         :type name: str
         :param scheduled_policy: 
-        :type scheduled_policy: :class:`huaweicloudsdkas.v1.ScheduledPolicy`
+        :type scheduled_policy: :class:`huaweicloudsdkas.v1.ScheduledTaskPolicy`
         :param instance_number: 
         :type instance_number: :class:`huaweicloudsdkas.v1.IntegerRange`
         :param create_time: 创建时间
@@ -168,7 +168,7 @@ class ScheduledTaskDetail:
         """Gets the scheduled_policy of this ScheduledTaskDetail.
 
         :return: The scheduled_policy of this ScheduledTaskDetail.
-        :rtype: :class:`huaweicloudsdkas.v1.ScheduledPolicy`
+        :rtype: :class:`huaweicloudsdkas.v1.ScheduledTaskPolicy`
         """
         return self._scheduled_policy
 
@@ -177,7 +177,7 @@ class ScheduledTaskDetail:
         """Sets the scheduled_policy of this ScheduledTaskDetail.
 
         :param scheduled_policy: The scheduled_policy of this ScheduledTaskDetail.
-        :type scheduled_policy: :class:`huaweicloudsdkas.v1.ScheduledPolicy`
+        :type scheduled_policy: :class:`huaweicloudsdkas.v1.ScheduledTaskPolicy`
         """
         self._scheduled_policy = scheduled_policy
 

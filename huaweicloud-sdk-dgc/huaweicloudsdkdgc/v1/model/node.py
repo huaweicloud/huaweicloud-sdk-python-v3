@@ -18,27 +18,27 @@ class Node:
 
     openapi_types = {
         'name': 'str',
-        'node_type': 'str',
+        'type': 'str',
         'location': 'Location',
-        'pre_node_names': 'str',
-        'condition': 'list[Condition]',
-        'node_properties': 'str',
+        'pre_node_name': 'list[str]',
+        'conditions': 'list[Condition]',
+        'properties': 'list[ModelProperty]',
         'polling_interval': 'int',
         'max_execution_time': 'int',
         'retry_times': 'int',
         'retry_interval': 'int',
         'fail_policy': 'str',
         'event_trigger': 'Event',
-        'cron_trigger': 'Cron'
+        'cron_trigger': 'CronTrigger'
     }
 
     attribute_map = {
         'name': 'name',
-        'node_type': 'nodeType',
+        'type': 'type',
         'location': 'location',
-        'pre_node_names': 'preNodeNames',
-        'condition': 'condition',
-        'node_properties': 'nodeProperties',
+        'pre_node_name': 'preNodeName',
+        'conditions': 'conditions',
+        'properties': 'properties',
         'polling_interval': 'pollingInterval',
         'max_execution_time': 'maxExecutionTime',
         'retry_times': 'retryTimes',
@@ -48,23 +48,23 @@ class Node:
         'cron_trigger': 'cronTrigger'
     }
 
-    def __init__(self, name=None, node_type=None, location=None, pre_node_names=None, condition=None, node_properties=None, polling_interval=None, max_execution_time=None, retry_times=None, retry_interval=None, fail_policy=None, event_trigger=None, cron_trigger=None):
+    def __init__(self, name=None, type=None, location=None, pre_node_name=None, conditions=None, properties=None, polling_interval=None, max_execution_time=None, retry_times=None, retry_interval=None, fail_policy=None, event_trigger=None, cron_trigger=None):
         """Node
 
         The model defined in huaweicloud sdk
 
-        :param name: 
+        :param name: 节点名称，只能包含六种字符：英文字母、数字、中文、中划线、下划线和点号，且长度小于等于128个字符。同一个作业中节点名称不能重复。
         :type name: str
-        :param node_type: 节点的类型
-        :type node_type: str
+        :param type: 节点的类型
+        :type type: str
         :param location: 
         :type location: :class:`huaweicloudsdkdgc.v1.Location`
-        :param pre_node_names: 本节点依赖的前一个节点名称
-        :type pre_node_names: str
-        :param condition: 节点执行条件
-        :type condition: list[:class:`huaweicloudsdkdgc.v1.Condition`]
-        :param node_properties: 节点的属性
-        :type node_properties: str
+        :param pre_node_name: 本本节点依赖的前面的节点名称列表
+        :type pre_node_name: list[str]
+        :param conditions: 节点执行条件，如果配置此参数，本节点是否执行由condition的字段expression所保存的EL表达式计算结果决定
+        :type conditions: list[:class:`huaweicloudsdkdgc.v1.Condition`]
+        :param properties: 节点属性
+        :type properties: list[:class:`huaweicloudsdkdgc.v1.ModelProperty`]
         :param polling_interval: 轮询节点执行结果时间间隔
         :type polling_interval: int
         :param max_execution_time: 节点最大执行时间
@@ -78,17 +78,17 @@ class Node:
         :param event_trigger: 
         :type event_trigger: :class:`huaweicloudsdkdgc.v1.Event`
         :param cron_trigger: 
-        :type cron_trigger: :class:`huaweicloudsdkdgc.v1.Cron`
+        :type cron_trigger: :class:`huaweicloudsdkdgc.v1.CronTrigger`
         """
         
         
 
         self._name = None
-        self._node_type = None
+        self._type = None
         self._location = None
-        self._pre_node_names = None
-        self._condition = None
-        self._node_properties = None
+        self._pre_node_name = None
+        self._conditions = None
+        self._properties = None
         self._polling_interval = None
         self._max_execution_time = None
         self._retry_times = None
@@ -98,18 +98,14 @@ class Node:
         self._cron_trigger = None
         self.discriminator = None
 
-        if name is not None:
-            self.name = name
-        if node_type is not None:
-            self.node_type = node_type
-        if location is not None:
-            self.location = location
-        if pre_node_names is not None:
-            self.pre_node_names = pre_node_names
-        if condition is not None:
-            self.condition = condition
-        if node_properties is not None:
-            self.node_properties = node_properties
+        self.name = name
+        self.type = type
+        self.location = location
+        if pre_node_name is not None:
+            self.pre_node_name = pre_node_name
+        if conditions is not None:
+            self.conditions = conditions
+        self.properties = properties
         if polling_interval is not None:
             self.polling_interval = polling_interval
         if max_execution_time is not None:
@@ -129,6 +125,8 @@ class Node:
     def name(self):
         """Gets the name of this Node.
 
+        节点名称，只能包含六种字符：英文字母、数字、中文、中划线、下划线和点号，且长度小于等于128个字符。同一个作业中节点名称不能重复。
+
         :return: The name of this Node.
         :rtype: str
         """
@@ -138,32 +136,34 @@ class Node:
     def name(self, name):
         """Sets the name of this Node.
 
+        节点名称，只能包含六种字符：英文字母、数字、中文、中划线、下划线和点号，且长度小于等于128个字符。同一个作业中节点名称不能重复。
+
         :param name: The name of this Node.
         :type name: str
         """
         self._name = name
 
     @property
-    def node_type(self):
-        """Gets the node_type of this Node.
+    def type(self):
+        """Gets the type of this Node.
 
         节点的类型
 
-        :return: The node_type of this Node.
+        :return: The type of this Node.
         :rtype: str
         """
-        return self._node_type
+        return self._type
 
-    @node_type.setter
-    def node_type(self, node_type):
-        """Sets the node_type of this Node.
+    @type.setter
+    def type(self, type):
+        """Sets the type of this Node.
 
         节点的类型
 
-        :param node_type: The node_type of this Node.
-        :type node_type: str
+        :param type: The type of this Node.
+        :type type: str
         """
-        self._node_type = node_type
+        self._type = type
 
     @property
     def location(self):
@@ -184,70 +184,70 @@ class Node:
         self._location = location
 
     @property
-    def pre_node_names(self):
-        """Gets the pre_node_names of this Node.
+    def pre_node_name(self):
+        """Gets the pre_node_name of this Node.
 
-        本节点依赖的前一个节点名称
+        本本节点依赖的前面的节点名称列表
 
-        :return: The pre_node_names of this Node.
-        :rtype: str
+        :return: The pre_node_name of this Node.
+        :rtype: list[str]
         """
-        return self._pre_node_names
+        return self._pre_node_name
 
-    @pre_node_names.setter
-    def pre_node_names(self, pre_node_names):
-        """Sets the pre_node_names of this Node.
+    @pre_node_name.setter
+    def pre_node_name(self, pre_node_name):
+        """Sets the pre_node_name of this Node.
 
-        本节点依赖的前一个节点名称
+        本本节点依赖的前面的节点名称列表
 
-        :param pre_node_names: The pre_node_names of this Node.
-        :type pre_node_names: str
+        :param pre_node_name: The pre_node_name of this Node.
+        :type pre_node_name: list[str]
         """
-        self._pre_node_names = pre_node_names
+        self._pre_node_name = pre_node_name
 
     @property
-    def condition(self):
-        """Gets the condition of this Node.
+    def conditions(self):
+        """Gets the conditions of this Node.
 
-        节点执行条件
+        节点执行条件，如果配置此参数，本节点是否执行由condition的字段expression所保存的EL表达式计算结果决定
 
-        :return: The condition of this Node.
+        :return: The conditions of this Node.
         :rtype: list[:class:`huaweicloudsdkdgc.v1.Condition`]
         """
-        return self._condition
+        return self._conditions
 
-    @condition.setter
-    def condition(self, condition):
-        """Sets the condition of this Node.
+    @conditions.setter
+    def conditions(self, conditions):
+        """Sets the conditions of this Node.
 
-        节点执行条件
+        节点执行条件，如果配置此参数，本节点是否执行由condition的字段expression所保存的EL表达式计算结果决定
 
-        :param condition: The condition of this Node.
-        :type condition: list[:class:`huaweicloudsdkdgc.v1.Condition`]
+        :param conditions: The conditions of this Node.
+        :type conditions: list[:class:`huaweicloudsdkdgc.v1.Condition`]
         """
-        self._condition = condition
+        self._conditions = conditions
 
     @property
-    def node_properties(self):
-        """Gets the node_properties of this Node.
+    def properties(self):
+        """Gets the properties of this Node.
 
-        节点的属性
+        节点属性
 
-        :return: The node_properties of this Node.
-        :rtype: str
+        :return: The properties of this Node.
+        :rtype: list[:class:`huaweicloudsdkdgc.v1.ModelProperty`]
         """
-        return self._node_properties
+        return self._properties
 
-    @node_properties.setter
-    def node_properties(self, node_properties):
-        """Sets the node_properties of this Node.
+    @properties.setter
+    def properties(self, properties):
+        """Sets the properties of this Node.
 
-        节点的属性
+        节点属性
 
-        :param node_properties: The node_properties of this Node.
-        :type node_properties: str
+        :param properties: The properties of this Node.
+        :type properties: list[:class:`huaweicloudsdkdgc.v1.ModelProperty`]
         """
-        self._node_properties = node_properties
+        self._properties = properties
 
     @property
     def polling_interval(self):
@@ -382,7 +382,7 @@ class Node:
         """Gets the cron_trigger of this Node.
 
         :return: The cron_trigger of this Node.
-        :rtype: :class:`huaweicloudsdkdgc.v1.Cron`
+        :rtype: :class:`huaweicloudsdkdgc.v1.CronTrigger`
         """
         return self._cron_trigger
 
@@ -391,7 +391,7 @@ class Node:
         """Sets the cron_trigger of this Node.
 
         :param cron_trigger: The cron_trigger of this Node.
-        :type cron_trigger: :class:`huaweicloudsdkdgc.v1.Cron`
+        :type cron_trigger: :class:`huaweicloudsdkdgc.v1.CronTrigger`
         """
         self._cron_trigger = cron_trigger
 

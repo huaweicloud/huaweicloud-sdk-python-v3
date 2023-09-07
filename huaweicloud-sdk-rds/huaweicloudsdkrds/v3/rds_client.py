@@ -2151,6 +2151,128 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_instances_recommendation(self, request):
+        """查询购买推荐
+
+        查询购买推荐
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListInstancesRecommendation
+        :type request: :class:`huaweicloudsdkrds.v3.ListInstancesRecommendationRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ListInstancesRecommendationResponse`
+        """
+        return self._list_instances_recommendation_with_http_info(request)
+
+    def _list_instances_recommendation_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'engine' in local_var_params:
+            query_params.append(('engine', local_var_params['engine']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/product-recommendation',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListInstancesRecommendationResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_instances_resource_metrics(self, request):
+        """查询监控大盘列表
+
+        查询监控大盘列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListInstancesResourceMetrics
+        :type request: :class:`huaweicloudsdkrds.v3.ListInstancesResourceMetricsRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ListInstancesResourceMetricsResponse`
+        """
+        return self._list_instances_resource_metrics_with_http_info(request)
+
+    def _list_instances_resource_metrics_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'engine' in local_var_params:
+            query_params.append(('engine', local_var_params['engine']))
+        if 'search_field' in local_var_params:
+            query_params.append(('search_field', local_var_params['search_field']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'order' in local_var_params:
+            query_params.append(('order', local_var_params['order']))
+        if 'sort_field' in local_var_params:
+            query_params.append(('sort_field', local_var_params['sort_field']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/resource-monitoring',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListInstancesResourceMetricsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_instances_support_fast_restore(self, request):
         """获取实例是否能使用极速恢复
 

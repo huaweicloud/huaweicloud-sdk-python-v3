@@ -19,7 +19,7 @@ class ListJobsResponse(SdkResponse):
 
     openapi_types = {
         'total': 'int',
-        'jobs': 'list[JobInfo]'
+        'jobs': 'list[JobResult]'
     }
 
     attribute_map = {
@@ -32,10 +32,10 @@ class ListJobsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param total: 
+        :param total: 作业数量
         :type total: int
-        :param jobs: 
-        :type jobs: list[:class:`huaweicloudsdkdgc.v1.JobInfo`]
+        :param jobs: 作业信息
+        :type jobs: list[:class:`huaweicloudsdkdgc.v1.JobResult`]
         """
         
         super(ListJobsResponse, self).__init__()
@@ -53,6 +53,8 @@ class ListJobsResponse(SdkResponse):
     def total(self):
         """Gets the total of this ListJobsResponse.
 
+        作业数量
+
         :return: The total of this ListJobsResponse.
         :rtype: int
         """
@@ -61,6 +63,8 @@ class ListJobsResponse(SdkResponse):
     @total.setter
     def total(self, total):
         """Sets the total of this ListJobsResponse.
+
+        作业数量
 
         :param total: The total of this ListJobsResponse.
         :type total: int
@@ -71,8 +75,10 @@ class ListJobsResponse(SdkResponse):
     def jobs(self):
         """Gets the jobs of this ListJobsResponse.
 
+        作业信息
+
         :return: The jobs of this ListJobsResponse.
-        :rtype: list[:class:`huaweicloudsdkdgc.v1.JobInfo`]
+        :rtype: list[:class:`huaweicloudsdkdgc.v1.JobResult`]
         """
         return self._jobs
 
@@ -80,8 +86,10 @@ class ListJobsResponse(SdkResponse):
     def jobs(self, jobs):
         """Sets the jobs of this ListJobsResponse.
 
+        作业信息
+
         :param jobs: The jobs of this ListJobsResponse.
-        :type jobs: list[:class:`huaweicloudsdkdgc.v1.JobInfo`]
+        :type jobs: list[:class:`huaweicloudsdkdgc.v1.JobResult`]
         """
         self._jobs = jobs
 

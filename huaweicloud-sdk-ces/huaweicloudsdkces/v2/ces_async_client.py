@@ -601,9 +601,9 @@ class CesAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def create_dashboard_widgets_async(self, request):
-        """创建/复制/批量创建监控视图到指定的监控面板
+        """创建/复制/批量创建监控视图到指定的监控看板
 
-        创建/复制/批量创建监控视图到指定的监控面板
+        创建/复制/批量创建监控视图到指定的监控看板
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -660,9 +660,9 @@ class CesAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def create_one_dashboard_async(self, request):
-        """创建/复制监控面板
+        """创建/复制监控看板
 
-        创建/复制监控面板
+        创建/复制监控看板
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -833,9 +833,9 @@ class CesAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def delete_dashboards_async(self, request):
-        """批量删除监控面板
+        """批量删除监控看板
 
-        批量删除监控面板
+        批量删除监控看板
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1406,9 +1406,9 @@ class CesAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def list_dashboard_infos_async(self, request):
-        """查询监控面板列表
+        """查询监控看板列表
 
-        查询监控面板列表
+        查询监控看板列表
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1469,9 +1469,9 @@ class CesAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def list_dashboard_widgets_async(self, request):
-        """查询指定监控面板下的监控视图列表
+        """查询指定监控看板下的监控视图列表
 
-        查询指定监控面板下的监控视图列表
+        查询指定监控看板下的监控视图列表
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1951,9 +1951,9 @@ class CesAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def update_dashboard_async(self, request):
-        """修改监控面板
+        """修改监控看板
 
-        修改监控面板
+        修改监控看板
         
         Please refer to HUAWEI cloud API Explorer for details.
 

@@ -24,7 +24,7 @@ class ScalingActivityLogList:
         'instance_removed_list': 'str',
         'instance_deleted_list': 'str',
         'instance_added_list': 'str',
-        'scaling_value': 'str',
+        'scaling_value': 'int',
         'description': 'str',
         'instance_value': 'int',
         'desire_value': 'int'
@@ -64,7 +64,7 @@ class ScalingActivityLogList:
         :param instance_added_list: 完成伸缩活动且被加入弹性伸缩组的云服务器名称列表，云服务器名之间以逗号分割。
         :type instance_added_list: str
         :param scaling_value: 伸缩活动中变化（增加或减少）的云服务器数量。
-        :type scaling_value: str
+        :type scaling_value: int
         :param description: 伸缩活动的描述信息。
         :type description: str
         :param instance_value: 伸缩组当前instance值。
@@ -272,7 +272,7 @@ class ScalingActivityLogList:
         伸缩活动中变化（增加或减少）的云服务器数量。
 
         :return: The scaling_value of this ScalingActivityLogList.
-        :rtype: str
+        :rtype: int
         """
         return self._scaling_value
 
@@ -283,7 +283,7 @@ class ScalingActivityLogList:
         伸缩活动中变化（增加或减少）的云服务器数量。
 
         :param scaling_value: The scaling_value of this ScalingActivityLogList.
-        :type scaling_value: str
+        :type scaling_value: int
         """
         self._scaling_value = scaling_value
 

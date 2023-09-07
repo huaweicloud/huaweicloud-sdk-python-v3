@@ -67,7 +67,7 @@ class ShowJobDetailRequest:
         :type limit: int
         :param compare_type: 对比任务类型 - object_compare：对象对比。 - line_compare：行对比。 - content_compare：内容对比。 - data_compare：数据对比。
         :type compare_type: str
-        :param query_type: 查询对比内容。取值： - overview：对比任务概览。 - list：数据对比任务列表。 - detail：对比详情。
+        :param query_type: 查询对比内容。取值： - overview：对比任务概览。 - list：数据对比任务列表。 - detail：对比详情。 - diff：不一致详情。
         :type query_type: str
         :param object_type: 查询对象对比详情类型。取值： - DB：库级对比详情。 - TABLE：表级对比详情。 - INDEX：索引对比详情。
         :type object_type: str
@@ -281,7 +281,7 @@ class ShowJobDetailRequest:
     def query_type(self):
         """Gets the query_type of this ShowJobDetailRequest.
 
-        查询对比内容。取值： - overview：对比任务概览。 - list：数据对比任务列表。 - detail：对比详情。
+        查询对比内容。取值： - overview：对比任务概览。 - list：数据对比任务列表。 - detail：对比详情。 - diff：不一致详情。
 
         :return: The query_type of this ShowJobDetailRequest.
         :rtype: str
@@ -292,7 +292,7 @@ class ShowJobDetailRequest:
     def query_type(self, query_type):
         """Sets the query_type of this ShowJobDetailRequest.
 
-        查询对比内容。取值： - overview：对比任务概览。 - list：数据对比任务列表。 - detail：对比详情。
+        查询对比内容。取值： - overview：对比任务概览。 - list：数据对比任务列表。 - detail：对比详情。 - diff：不一致详情。
 
         :param query_type: The query_type of this ShowJobDetailRequest.
         :type query_type: str

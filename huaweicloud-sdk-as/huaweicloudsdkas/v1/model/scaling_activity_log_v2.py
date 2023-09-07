@@ -26,7 +26,7 @@ class ScalingActivityLogV2:
         'instance_added_list': 'list[ScalingInstance]',
         'instance_failed_list': 'list[ScalingInstance]',
         'instance_standby_list': 'list[ScalingInstance]',
-        'scaling_value': 'str',
+        'scaling_value': 'int',
         'description': 'str',
         'instance_value': 'int',
         'desire_value': 'int',
@@ -82,7 +82,7 @@ class ScalingActivityLogV2:
         :param instance_standby_list: 完成伸缩活动且被转入/移出备用状态的云服务器列表
         :type instance_standby_list: list[:class:`huaweicloudsdkas.v1.ScalingInstance`]
         :param scaling_value: 伸缩活动中变化（增加或减少）的云服务器数量。
-        :type scaling_value: str
+        :type scaling_value: int
         :param description: 伸缩活动的描述信息。
         :type description: str
         :param instance_value: 伸缩组当前instance值。
@@ -365,7 +365,7 @@ class ScalingActivityLogV2:
         伸缩活动中变化（增加或减少）的云服务器数量。
 
         :return: The scaling_value of this ScalingActivityLogV2.
-        :rtype: str
+        :rtype: int
         """
         return self._scaling_value
 
@@ -376,7 +376,7 @@ class ScalingActivityLogV2:
         伸缩活动中变化（增加或减少）的云服务器数量。
 
         :param scaling_value: The scaling_value of this ScalingActivityLogV2.
-        :type scaling_value: str
+        :type scaling_value: int
         """
         self._scaling_value = scaling_value
 

@@ -37,11 +37,11 @@ class ListDashboardInfosRequest:
 
         :param enterprise_id: 企业项目Id
         :type enterprise_id: str
-        :param is_favorite: 指定企业项目下监控面板是否收藏，true:收藏，false:未收藏，填此参数时，enterprise_id必填
+        :param is_favorite: 指定企业项目下监控看板是否收藏，true:收藏，false:未收藏，填此参数时，enterprise_id必填
         :type is_favorite: bool
-        :param dashboard_name: 监控面板名称
+        :param dashboard_name: 监控看板名称
         :type dashboard_name: str
-        :param dashboard_id: 监控面板id
+        :param dashboard_id: 监控看板id
         :type dashboard_id: str
         """
         
@@ -88,7 +88,7 @@ class ListDashboardInfosRequest:
     def is_favorite(self):
         """Gets the is_favorite of this ListDashboardInfosRequest.
 
-        指定企业项目下监控面板是否收藏，true:收藏，false:未收藏，填此参数时，enterprise_id必填
+        指定企业项目下监控看板是否收藏，true:收藏，false:未收藏，填此参数时，enterprise_id必填
 
         :return: The is_favorite of this ListDashboardInfosRequest.
         :rtype: bool
@@ -99,7 +99,7 @@ class ListDashboardInfosRequest:
     def is_favorite(self, is_favorite):
         """Sets the is_favorite of this ListDashboardInfosRequest.
 
-        指定企业项目下监控面板是否收藏，true:收藏，false:未收藏，填此参数时，enterprise_id必填
+        指定企业项目下监控看板是否收藏，true:收藏，false:未收藏，填此参数时，enterprise_id必填
 
         :param is_favorite: The is_favorite of this ListDashboardInfosRequest.
         :type is_favorite: bool
@@ -110,7 +110,7 @@ class ListDashboardInfosRequest:
     def dashboard_name(self):
         """Gets the dashboard_name of this ListDashboardInfosRequest.
 
-        监控面板名称
+        监控看板名称
 
         :return: The dashboard_name of this ListDashboardInfosRequest.
         :rtype: str
@@ -121,7 +121,7 @@ class ListDashboardInfosRequest:
     def dashboard_name(self, dashboard_name):
         """Sets the dashboard_name of this ListDashboardInfosRequest.
 
-        监控面板名称
+        监控看板名称
 
         :param dashboard_name: The dashboard_name of this ListDashboardInfosRequest.
         :type dashboard_name: str
@@ -132,7 +132,7 @@ class ListDashboardInfosRequest:
     def dashboard_id(self):
         """Gets the dashboard_id of this ListDashboardInfosRequest.
 
-        监控面板id
+        监控看板id
 
         :return: The dashboard_id of this ListDashboardInfosRequest.
         :rtype: str
@@ -143,7 +143,7 @@ class ListDashboardInfosRequest:
     def dashboard_id(self, dashboard_id):
         """Sets the dashboard_id of this ListDashboardInfosRequest.
 
-        监控面板id
+        监控看板id
 
         :param dashboard_id: The dashboard_id of this ListDashboardInfosRequest.
         :type dashboard_id: str

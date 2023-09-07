@@ -18,7 +18,7 @@ class CreateScheduledTaskOption:
 
     openapi_types = {
         'name': 'str',
-        'scheduled_policy': 'ScheduledPolicy',
+        'scheduled_policy': 'ScheduledTaskPolicy',
         'instance_number': 'IntegerRange'
     }
 
@@ -36,7 +36,7 @@ class CreateScheduledTaskOption:
         :param name: 计划任务名称
         :type name: str
         :param scheduled_policy: 
-        :type scheduled_policy: :class:`huaweicloudsdkas.v1.ScheduledPolicy`
+        :type scheduled_policy: :class:`huaweicloudsdkas.v1.ScheduledTaskPolicy`
         :param instance_number: 
         :type instance_number: :class:`huaweicloudsdkas.v1.IntegerRange`
         """
@@ -79,7 +79,7 @@ class CreateScheduledTaskOption:
         """Gets the scheduled_policy of this CreateScheduledTaskOption.
 
         :return: The scheduled_policy of this CreateScheduledTaskOption.
-        :rtype: :class:`huaweicloudsdkas.v1.ScheduledPolicy`
+        :rtype: :class:`huaweicloudsdkas.v1.ScheduledTaskPolicy`
         """
         return self._scheduled_policy
 
@@ -88,7 +88,7 @@ class CreateScheduledTaskOption:
         """Sets the scheduled_policy of this CreateScheduledTaskOption.
 
         :param scheduled_policy: The scheduled_policy of this CreateScheduledTaskOption.
-        :type scheduled_policy: :class:`huaweicloudsdkas.v1.ScheduledPolicy`
+        :type scheduled_policy: :class:`huaweicloudsdkas.v1.ScheduledTaskPolicy`
         """
         self._scheduled_policy = scheduled_policy
 

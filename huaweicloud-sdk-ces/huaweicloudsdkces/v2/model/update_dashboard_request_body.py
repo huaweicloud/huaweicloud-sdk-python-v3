@@ -33,9 +33,9 @@ class UpdateDashboardRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param dashboard_name: 自定义监控面板名称
+        :param dashboard_name: 自定义监控看板名称
         :type dashboard_name: str
-        :param is_favorite: 监控面板是否标记收藏, true: 收藏, false: 未收藏
+        :param is_favorite: 监控看板是否标记收藏, true: 收藏, false: 未收藏
         :type is_favorite: bool
         :param row_widget_num: 监控视图展示模式，0表示自定义坐标，1代表每行一个
         :type row_widget_num: int
@@ -59,7 +59,7 @@ class UpdateDashboardRequestBody:
     def dashboard_name(self):
         """Gets the dashboard_name of this UpdateDashboardRequestBody.
 
-        自定义监控面板名称
+        自定义监控看板名称
 
         :return: The dashboard_name of this UpdateDashboardRequestBody.
         :rtype: str
@@ -70,7 +70,7 @@ class UpdateDashboardRequestBody:
     def dashboard_name(self, dashboard_name):
         """Sets the dashboard_name of this UpdateDashboardRequestBody.
 
-        自定义监控面板名称
+        自定义监控看板名称
 
         :param dashboard_name: The dashboard_name of this UpdateDashboardRequestBody.
         :type dashboard_name: str
@@ -81,7 +81,7 @@ class UpdateDashboardRequestBody:
     def is_favorite(self):
         """Gets the is_favorite of this UpdateDashboardRequestBody.
 
-        监控面板是否标记收藏, true: 收藏, false: 未收藏
+        监控看板是否标记收藏, true: 收藏, false: 未收藏
 
         :return: The is_favorite of this UpdateDashboardRequestBody.
         :rtype: bool
@@ -92,7 +92,7 @@ class UpdateDashboardRequestBody:
     def is_favorite(self, is_favorite):
         """Sets the is_favorite of this UpdateDashboardRequestBody.
 
-        监控面板是否标记收藏, true: 收藏, false: 未收藏
+        监控看板是否标记收藏, true: 收藏, false: 未收藏
 
         :param is_favorite: The is_favorite of this UpdateDashboardRequestBody.
         :type is_favorite: bool

@@ -17,8 +17,8 @@ class Location:
     sensitive_list = []
 
     openapi_types = {
-        'x': 'int',
-        'y': 'int'
+        'x': 'str',
+        'y': 'str'
     }
 
     attribute_map = {
@@ -32,9 +32,9 @@ class Location:
         The model defined in huaweicloud sdk
 
         :param x: 
-        :type x: int
+        :type x: str
         :param y: 
-        :type y: int
+        :type y: str
         """
         
         
@@ -43,17 +43,15 @@ class Location:
         self._y = None
         self.discriminator = None
 
-        if x is not None:
-            self.x = x
-        if y is not None:
-            self.y = y
+        self.x = x
+        self.y = y
 
     @property
     def x(self):
         """Gets the x of this Location.
 
         :return: The x of this Location.
-        :rtype: int
+        :rtype: str
         """
         return self._x
 
@@ -62,7 +60,7 @@ class Location:
         """Sets the x of this Location.
 
         :param x: The x of this Location.
-        :type x: int
+        :type x: str
         """
         self._x = x
 
@@ -71,7 +69,7 @@ class Location:
         """Gets the y of this Location.
 
         :return: The y of this Location.
-        :rtype: int
+        :rtype: str
         """
         return self._y
 
@@ -80,7 +78,7 @@ class Location:
         """Sets the y of this Location.
 
         :param y: The y of this Location.
-        :type y: int
+        :type y: str
         """
         self._y = y
 

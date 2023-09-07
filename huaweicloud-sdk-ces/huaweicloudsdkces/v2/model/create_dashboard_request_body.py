@@ -35,11 +35,11 @@ class CreateDashboardRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param dashboard_name: 自定义监控面板名称
+        :param dashboard_name: 自定义监控看板名称
         :type dashboard_name: str
         :param enterprise_id: 企业项目Id
         :type enterprise_id: str
-        :param dashboard_id: 监控面板id
+        :param dashboard_id: 监控看板id
         :type dashboard_id: str
         :param row_widget_num: 监控视图展示模式，0表示自定义坐标，1代表每行一个
         :type row_widget_num: int
@@ -66,7 +66,7 @@ class CreateDashboardRequestBody:
     def dashboard_name(self):
         """Gets the dashboard_name of this CreateDashboardRequestBody.
 
-        自定义监控面板名称
+        自定义监控看板名称
 
         :return: The dashboard_name of this CreateDashboardRequestBody.
         :rtype: str
@@ -77,7 +77,7 @@ class CreateDashboardRequestBody:
     def dashboard_name(self, dashboard_name):
         """Sets the dashboard_name of this CreateDashboardRequestBody.
 
-        自定义监控面板名称
+        自定义监控看板名称
 
         :param dashboard_name: The dashboard_name of this CreateDashboardRequestBody.
         :type dashboard_name: str
@@ -110,7 +110,7 @@ class CreateDashboardRequestBody:
     def dashboard_id(self):
         """Gets the dashboard_id of this CreateDashboardRequestBody.
 
-        监控面板id
+        监控看板id
 
         :return: The dashboard_id of this CreateDashboardRequestBody.
         :rtype: str
@@ -121,7 +121,7 @@ class CreateDashboardRequestBody:
     def dashboard_id(self, dashboard_id):
         """Sets the dashboard_id of this CreateDashboardRequestBody.
 
-        监控面板id
+        监控看板id
 
         :param dashboard_id: The dashboard_id of this CreateDashboardRequestBody.
         :type dashboard_id: str

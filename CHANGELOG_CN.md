@@ -1,3 +1,512 @@
+# 3.1.58 2023-09-07
+
+### HuaweiCloud SDK AOS
+
+- _新增特性_
+  - 支持接口`DeleteStackEnhanced`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK AS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListScalingActivityLogs**
+    - 响应参数变更
+      - `* scaling_activity_log.scaling_value: string -> int32`
+  - **CreateScalingPolicy**
+    - 请求参数变更
+      - `+ scheduled_policy.recurrence_type: enum value [Daily,Weekly,Monthly]`
+      - `- scheduled_policy.recurrence_type: enum value [DAILY,WEEKLY,MONTHLY]`
+  - **UpdateScalingPolicy**
+    - 请求参数变更
+      - `+ scheduled_policy.recurrence_type: enum value [Daily,Weekly,Monthly]`
+      - `- scheduled_policy.recurrence_type: enum value [DAILY,WEEKLY,MONTHLY]`
+  - **ShowScalingPolicy**
+    - 响应参数变更
+      - `+ scaling_policy.scheduled_policy.recurrence_type: enum value [Daily,Weekly,Monthly]`
+      - `- scaling_policy.scheduled_policy.recurrence_type: enum value [DAILY,WEEKLY,MONTHLY]`
+  - **ListScalingPolicies**
+    - 响应参数变更
+      - `+ scaling_policies.scheduled_policy.recurrence_type: enum value [Daily,Weekly,Monthly]`
+      - `- scaling_policies.scheduled_policy.recurrence_type: enum value [DAILY,WEEKLY,MONTHLY]`
+  - **CreateScalingV2Policy**
+    - 请求参数变更
+      - `+ scheduled_policy.recurrence_type: enum value [Daily,Weekly,Monthly]`
+      - `- scheduled_policy.recurrence_type: enum value [DAILY,WEEKLY,MONTHLY]`
+  - **ListAllScalingV2Policies**
+    - 响应参数变更
+      - `+ scaling_policies.scheduled_policy.recurrence_type: enum value [Daily,Weekly,Monthly]`
+      - `- scaling_policies.scheduled_policy.recurrence_type: enum value [DAILY,WEEKLY,MONTHLY]`
+  - **UpdateScalingV2Policy**
+    - 请求参数变更
+      - `+ scheduled_policy.recurrence_type: enum value [Daily,Weekly,Monthly]`
+      - `- scheduled_policy.recurrence_type: enum value [DAILY,WEEKLY,MONTHLY]`
+  - **ShowScalingV2Policy**
+    - 响应参数变更
+      - `+ scaling_policy.scheduled_policy.recurrence_type: enum value [Daily,Weekly,Monthly]`
+      - `- scaling_policy.scheduled_policy.recurrence_type: enum value [DAILY,WEEKLY,MONTHLY]`
+  - **ListScalingV2Policies**
+    - 响应参数变更
+      - `+ scaling_policies.scheduled_policy.recurrence_type: enum value [Daily,Weekly,Monthly]`
+      - `- scaling_policies.scheduled_policy.recurrence_type: enum value [DAILY,WEEKLY,MONTHLY]`
+  - **ListScalingActivityV2Logs**
+    - 响应参数变更
+      - `* scaling_activity_log.scaling_value: string -> int32`
+  - **CreateScalingGroup**
+    - 请求参数变更
+      - `+ lbaas_listeners.protocol_version`
+  - **ListScalingGroups**
+    - 响应参数变更
+      - `+ scaling_groups.lbaas_listeners.protocol_version`
+  - **UpdateScalingGroup**
+    - 请求参数变更
+      - `+ lbaas_listeners.protocol_version`
+  - **ShowScalingGroup**
+    - 响应参数变更
+      - `+ scaling_group.lbaas_listeners.protocol_version`
+
+### HuaweiCloud SDK CAE
+
+- _新增特性_
+  - 支持接口`ListEips`、`UpdateEip`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowApplication**
+    - 响应参数变更
+      - `+ api_version: enum value [v1]`
+      - `+ kind: enum value [Application]`
+  - **CreateAgency**
+    - 请求参数变更
+      - `+ api_version: enum value [v1]`
+      - `+ kind: enum value [Agency]`
+  - **ListAgencies**
+    - 响应参数变更
+      - `+ api_version: enum value [v1]`
+      - `+ kind: enum value [Agency]`
+  - **ListEnvironments**
+    - 响应参数变更
+      - `+ kind`
+      - `- Kind`
+      - `+ api_version: enum value [v1]`
+  - **CreateEnvironment**
+    - 请求参数变更
+      - `+ api_version: enum value [v1]`
+      - `+ kind: enum value [Environment]`
+  - **CreateApplication**
+    - 请求参数变更
+      - `+ api_version: enum value [v1]`
+      - `+ kind: enum value [Application]`
+    - 响应参数变更
+      - `+ api_version: enum value [v1]`
+      - `+ kind: enum value [Application]`
+  - **ListApplications**
+    - 响应参数变更
+      - `+ api_version: enum value [v1]`
+      - `+ kind: enum value [Application]`
+  - **ListComponentConfigurations**
+    - 响应参数变更
+      - `+ items.type: enum value [customMetric]`
+  - **CreateComponentConfiguration**
+    - 请求参数变更
+      - `+ api_version: enum value [v1]`
+      - `+ kind: enum value [ComponentConfiguration]`
+  - **ListComponentEvents**
+    - 响应参数变更
+      - `+ api_version: enum value [v1]`
+      - `+ kind: enum value [ComponentEvent]`
+  - **ListComponentInstances**
+    - 响应参数变更
+      - `+ api_version: enum value [v1]`
+      - `+ kind: enum value [ComponentConfiguration]`
+  - **ListVolumes**
+    - 响应参数变更
+      - `+ api_version: enum value [v1]`
+      - `+ kind: enum value [Volume]`
+  - **CreateVolume**
+    - 请求参数变更
+      - `+ api_version: enum value [v1]`
+      - `+ kind: enum value [Volume]`
+  - **DeleteVolume**
+    - 响应参数变更
+      - `+ api_version: enum value [v1]`
+      - `+ kind: enum value [Component]`
+  - **UpdateCertificate**
+    - 请求参数变更
+      - `+ api_version: enum value [v1]`
+      - `+ kind: enum value [Certificate]`
+  - **ListComponentSnapshots**
+    - 响应参数变更
+      - `+ api_version: enum value [v1]`
+      - `+ kind: enum value [ComponentSnapshot]`
+  - **ShowJob**
+    - 响应参数变更
+      - `+ api_version: enum value [v1]`
+      - `+ kind: enum value [Job]`
+  - **ListDomains**
+    - 响应参数变更
+      - `+ api_version: enum value [v1]`
+  - **CreateDomain**
+    - 请求参数变更
+      - `+ api_version: enum value [v1]`
+      - `+ kind: enum value [Domain]`
+    - 响应参数变更
+      - `+ api_version: enum value [v1]`
+  - **ListCertificates**
+    - 响应参数变更
+      - `+ api_version: enum value [v1]`
+      - `+ kind: enum value [Certificate]`
+  - **CreateCertificate**
+    - 请求参数变更
+      - `+ api_version: enum value [v1]`
+      - `+ kind: enum value [Certificate]`
+    - 响应参数变更
+      - `+ api_version: enum value [v1]`
+      - `+ kind: enum value [Certificate]`
+  - **ListTimerRules**
+    - 响应参数变更
+      - `+ api_version: enum value [v1]`
+      - `+ kind: enum value [TimerRule]`
+  - **CreateTimerRule**
+    - 请求参数变更
+      - `+ api_version: enum value [v1]`
+      - `+ kind: enum value [TimerRule]`
+    - 响应参数变更
+      - `+ api_version: enum value [v1]`
+      - `+ kind: enum value [TimerRule]`
+  - **UpdateTimerRule**
+    - 请求参数变更
+      - `+ api_version: enum value [v1]`
+      - `+ kind: enum value [TimerRule]`
+  - **ShowExecutionResult**
+    - 响应参数变更
+      - `+ api_version: enum value [v1]`
+      - `+ kind: enum value [TimerRule]`
+  - **ShowComponent**
+    - 响应参数变更
+      - `+ api_version: enum value [v1]`
+      - `+ kind: enum value [Component]`
+  - **UpdateComponent**
+    - 请求参数变更
+      - `+ api_version: enum value [v1]`
+      - `+ kind: enum value [Component]`
+  - **ExecuteAction**
+    - 请求参数变更
+      - `+ api_version: enum value [v1]`
+      - `+ kind: enum value [Action]`
+  - **CreateComponent**
+    - 请求参数变更
+      - `+ api_version: enum value [v1]`
+      - `+ kind: enum value [Component]`
+    - 响应参数变更
+      - `+ api_version: enum value [v1]`
+      - `+ kind: enum value [Component]`
+  - **ListComponents**
+    - 响应参数变更
+      - `+ api_version: enum value [v1]`
+      - `+ kind: enum value [Component]`
+
+### HuaweiCloud SDK CES
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateEvents**
+    - 请求参数变更
+      - `+ detail.dimensions`
+  - **ListEventDetail**
+    - 响应参数变更
+      - `- dimensions`
+      - `+ event_info.detail.dimensions`
+
+### HuaweiCloud SDK CPTS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowAgentConfig**
+    - 响应参数变更
+      - `+ result.pulsar_enable`
+      - `+ result.pulsar_shadow_topic_prefix`
+      - `+ result.mock_rule_list.response_header`
+      - `+ result.mock_rule_list.response_body`
+      - `+ result.mock_rule_list.response_time`
+      - `+ result.mock_rule_list.response_code`
+  - **UpdateAgentHealthStatus**
+    - 响应参数变更
+      - `+ result.result.pulsar_enable`
+      - `+ result.result.pulsar_shadow_topic_prefix`
+      - `+ result.result.mock_rule_list.response_header`
+      - `+ result.result.mock_rule_list.response_body`
+      - `+ result.result.mock_rule_list.response_time`
+      - `+ result.result.mock_rule_list.response_code`
+
+### HuaweiCloud SDK DGC
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **StartJob**
+    - 请求参数变更
+      - `+ jobParams.type`
+      - `- jobParams.paramType`
+  - **RunOnce**
+    - 请求参数变更
+      - `+ jobParams.type`
+      - `- jobParams.paramType`
+  - **ListJobInstances**
+    - 请求参数变更
+      - `+ limit`
+      - `+ offset`
+      - `+ minPlanTime`
+      - `+ maxPlanTime`
+      - `+ status`
+      - `+ preciseQuery`
+      - `+ jobName`
+      - `+ instanceType`
+    - 响应参数变更
+      - `+ instances.submitTime`
+      - `+ instances.instanceId`
+      - `+ instances.jobId`
+      - `+ instances.jobInstanceName`
+      - `+ instances.instanceType`
+      - `+ instances.version`
+      - `+ instances.ignoreSuccess`
+      - `+ instances.forceSuccess`
+      - `- instances.instancesId`
+      - `+ instances.status: enum value [waiting,running,success,fail,running-exception,pause,manual-stop]`
+      - `* instances.planTime: int32 -> int64`
+      - `* instances.startTime: int32 -> int64`
+      - `* instances.endTime: int32 -> int64`
+      - `* instances.executeTime: int32 -> int64`
+  - **ListJobs**
+    - 响应参数变更
+      - `- schedule`
+      - `- nodes`
+      - `- basicConfig`
+      - `- name`
+      - `- params`
+      - `- jobType`
+      - `- directory`
+      - `+ jobs.owner`
+      - `+ jobs.priority`
+      - `+ jobs.status`
+      - `+ jobs.createUser`
+      - `+ jobs.createTime`
+      - `+ jobs.startTime`
+      - `+ jobs.endTime`
+      - `+ jobs.lastInstanceStatus`
+      - `+ jobs.lastInstanceEndTime`
+      - `+ jobs.lastUpdateTime`
+      - `+ jobs.lastUpdateUser`
+      - `+ jobs.path`
+      - `+ jobs.singleNodeJobFlag`
+      - `+ jobs.flinkJobInfo`
+      - `+ jobs.alarms`
+      - `- jobs.nodes`
+      - `- jobs.schedule`
+      - `- jobs.params`
+      - `- jobs.directory`
+      - `- jobs.basicConfig`
+      - `- jobs.jobType: enum value [BATCH,REAL_TIME]`
+      - `* jobs: list<JobInfo> -> list<JobResult>`
+  - **CreateJob**
+    - 请求参数变更
+      - `+ logPath`
+      - `+ lastUpdateUser`
+      - `+ approvers`
+      - `+ processType`
+      - `+ targetStatus`
+      - `- jobType`
+      - `+ schedule.type`
+      - `- schedule.scheType`
+      - `+ params.type`
+      - `- params.paramType`
+      - `+ nodes.type`
+      - `+ nodes.preNodeName`
+      - `+ nodes.conditions`
+      - `+ nodes.properties`
+      - `- nodes.nodeType`
+      - `- nodes.preNodeNames`
+      - `- nodes.condition`
+      - `- nodes.nodeProperties`
+      - `+ nodes.failPolicy: enum value [FAIL_CHILD]`
+      - `* nodes.location.x: int32 -> string`
+      - `* nodes.location.y: int32 -> string`
+      - `+ nodes.cronTrigger.expressionTimeZone`
+      - `+ nodes.cronTrigger.period`
+      - `+ nodes.cronTrigger.concurrent`
+      - `* nodes.cronTrigger.dependJobs.jobs: string -> list<string>`
+      - `- nodes.cronTrigger.dependJobs.dependFailPolicy: enum value [FAIL,IGNORE,SUSPEND]`
+      - `* nodes.cronTrigger.dependJobs: list<DependJob> -> list<DependJobs>`
+      - `* nodes.cronTrigger: object<Cron> -> object<CronTrigger>`
+  - **ShowJob**
+    - 响应参数变更
+      - `+ logPath`
+      - `+ lastUpdateUser`
+      - `+ approvers`
+      - `+ processType`
+      - `+ targetStatus`
+      - `- jobType`
+      - `+ schedule.type`
+      - `- schedule.scheType`
+      - `+ params.type`
+      - `- params.paramType`
+      - `+ nodes.type`
+      - `+ nodes.preNodeName`
+      - `+ nodes.conditions`
+      - `+ nodes.properties`
+      - `- nodes.nodeType`
+      - `- nodes.preNodeNames`
+      - `- nodes.condition`
+      - `- nodes.nodeProperties`
+      - `+ nodes.failPolicy: enum value [FAIL_CHILD]`
+      - `* nodes.location.x: int32 -> string`
+      - `* nodes.location.y: int32 -> string`
+      - `+ nodes.cronTrigger.expressionTimeZone`
+      - `+ nodes.cronTrigger.period`
+      - `+ nodes.cronTrigger.concurrent`
+      - `* nodes.cronTrigger.dependJobs.jobs: string -> list<string>`
+      - `- nodes.cronTrigger.dependJobs.dependFailPolicy: enum value [FAIL,IGNORE,SUSPEND]`
+      - `* nodes.cronTrigger.dependJobs: list<DependJob> -> list<DependJobs>`
+      - `* nodes.cronTrigger: object<Cron> -> object<CronTrigger>`
+  - **UpdateJob**
+    - 请求参数变更
+      - `+ logPath`
+      - `+ lastUpdateUser`
+      - `+ approvers`
+      - `+ processType`
+      - `+ targetStatus`
+      - `- jobType`
+      - `+ schedule.type`
+      - `- schedule.scheType`
+      - `+ params.type`
+      - `- params.paramType`
+      - `+ nodes.type`
+      - `+ nodes.preNodeName`
+      - `+ nodes.conditions`
+      - `+ nodes.properties`
+      - `- nodes.nodeType`
+      - `- nodes.preNodeNames`
+      - `- nodes.condition`
+      - `- nodes.nodeProperties`
+      - `+ nodes.failPolicy: enum value [FAIL_CHILD]`
+      - `* nodes.location.x: int32 -> string`
+      - `* nodes.location.y: int32 -> string`
+      - `+ nodes.cronTrigger.expressionTimeZone`
+      - `+ nodes.cronTrigger.period`
+      - `+ nodes.cronTrigger.concurrent`
+      - `* nodes.cronTrigger.dependJobs.jobs: string -> list<string>`
+      - `- nodes.cronTrigger.dependJobs.dependFailPolicy: enum value [FAIL,IGNORE,SUSPEND]`
+      - `* nodes.cronTrigger.dependJobs: list<DependJob> -> list<DependJobs>`
+      - `* nodes.cronTrigger: object<Cron> -> object<CronTrigger>`
+  - **CreateSupplementdata**
+    - 请求参数变更
+      - `+ logPath`
+      - `+ lastUpdateUser`
+      - `+ approvers`
+      - `+ processType`
+      - `+ targetStatus`
+      - `- jobType`
+      - `+ dependJobs.processType`
+      - `+ dependJobs.lastUpdateUser`
+      - `+ dependJobs.logPath`
+      - `+ dependJobs.targetStatus`
+      - `+ dependJobs.approvers`
+      - `- dependJobs.jobType`
+      - `+ dependJobs.schedule.type`
+      - `- dependJobs.schedule.scheType`
+      - `+ dependJobs.params.type`
+      - `- dependJobs.params.paramType`
+      - `+ dependJobs.nodes.type`
+      - `+ dependJobs.nodes.preNodeName`
+      - `+ dependJobs.nodes.conditions`
+      - `+ dependJobs.nodes.properties`
+      - `- dependJobs.nodes.nodeType`
+      - `- dependJobs.nodes.preNodeNames`
+      - `- dependJobs.nodes.condition`
+      - `- dependJobs.nodes.nodeProperties`
+      - `+ dependJobs.nodes.failPolicy: enum value [FAIL_CHILD]`
+      - `* dependJobs.nodes.location.x: int32 -> string`
+      - `* dependJobs.nodes.location.y: int32 -> string`
+      - `+ dependJobs.nodes.cronTrigger.expressionTimeZone`
+      - `+ dependJobs.nodes.cronTrigger.period`
+      - `+ dependJobs.nodes.cronTrigger.concurrent`
+      - `* dependJobs.nodes.cronTrigger.dependJobs.jobs: string -> list<string>`
+      - `- dependJobs.nodes.cronTrigger.dependJobs.dependFailPolicy: enum value [FAIL,IGNORE,SUSPEND]`
+      - `* dependJobs.nodes.cronTrigger.dependJobs: list<DependJob> -> list<DependJobs>`
+      - `* dependJobs.nodes.cronTrigger: object<Cron> -> object<CronTrigger>`
+
+### HuaweiCloud SDK DRS
+
+- _新增特性_
+  - 支持以下接口：
+    - `StopJobAction`
+    - `ShowDataProgress`
+    - `UpdateDataProgress`
+    - `ShowDataProcessingRulesResult`
+    - `CheckDataFilter`
+    - `ShowDataFilteringResult`
+    - `CollectColumns`
+    - `ShowColumnInfoResult`
+    - `BatchStopJobsAction`
+    - `ExportOperationInfo`
+    - `BatchTagAction`
+    - `ListProjectTags`
+    - `ShowInstanceTags`
+    - `UpdateStartPosition`
+    - `ShowMonitorData`
+    - `ShowSupportObjectType`
+    - `ShowIncrementComponentsDetail`
+    - `CollectDbObjectsInfo`
+    - `ShowDbObjectsList`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowDbObjectTemplateResult**
+    - 请求参数变更
+      - `+ type: enum value [change]`
+  - **ShowUpdateObjectSavingStatus**
+    - 请求参数变更
+      - `+ X-Language: enum value [en-us,zh-cn]`
+  - **ShowObjectMapping**
+    - 请求参数变更
+      - `+ X-Language: enum value [en-us,zh-cn]`
+  - **ListJobs**
+    - 请求参数变更
+      - `+ instance_ids`
+      - `+ instance_ip`
+  - **ShowDbObjectCollectionStatus**
+    - 请求参数变更
+      - `+ X-Language: enum value [en-us,zh-cn]`
+  - **UpdateBatchAsyncJobs**
+    - 请求参数变更
+      - `+ jobs.type: enum value [re_create,expired_days]`
+  - **UpdateJob**
+    - 请求参数变更
+      - `+ job.type: enum value [re_create,expired_days]`
+
+### HuaweiCloud SDK RDS
+
+- _新增特性_
+  - 支持接口`ListInstancesResourceMetrics`、`ListInstancesRecommendation`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
 # 3.1.57 2023-08-31
 
 ### HuaweiCloud SDK BSS

@@ -45,7 +45,7 @@ class ShowTopDomainNamesRequest:
         :type end_time: int
         :param stat_type: - 统计类型 - 目前只支持bw（带宽），flux（流量），req_num（请求总数）
         :type stat_type: str
-        :param service_area: 服务区域：mainland_china（默认）、outside_mainland_china，当查询回源类指标时该参数无效。
+        :param service_area: 服务区域：mainland_china(中国大陆)，outside_mainland_china(中国大陆境外)，默认为mainland_china，当查询回源类指标时该参数无效。
         :type service_area: str
         :param limit: top域名查询数量,默认为20,最大为500，最小为0
         :type limit: int
@@ -143,7 +143,7 @@ class ShowTopDomainNamesRequest:
     def service_area(self):
         """Gets the service_area of this ShowTopDomainNamesRequest.
 
-        服务区域：mainland_china（默认）、outside_mainland_china，当查询回源类指标时该参数无效。
+        服务区域：mainland_china(中国大陆)，outside_mainland_china(中国大陆境外)，默认为mainland_china，当查询回源类指标时该参数无效。
 
         :return: The service_area of this ShowTopDomainNamesRequest.
         :rtype: str
@@ -154,7 +154,7 @@ class ShowTopDomainNamesRequest:
     def service_area(self, service_area):
         """Sets the service_area of this ShowTopDomainNamesRequest.
 
-        服务区域：mainland_china（默认）、outside_mainland_china，当查询回源类指标时该参数无效。
+        服务区域：mainland_china(中国大陆)，outside_mainland_china(中国大陆境外)，默认为mainland_china，当查询回源类指标时该参数无效。
 
         :param service_area: The service_area of this ShowTopDomainNamesRequest.
         :type service_area: str

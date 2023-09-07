@@ -29,7 +29,7 @@ class BatchDeleteDashboardRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param dashboard_ids: 监控面板id列表
+        :param dashboard_ids: 监控看板id列表
         :type dashboard_ids: list[str]
         """
         
@@ -45,7 +45,7 @@ class BatchDeleteDashboardRequestBody:
     def dashboard_ids(self):
         """Gets the dashboard_ids of this BatchDeleteDashboardRequestBody.
 
-        监控面板id列表
+        监控看板id列表
 
         :return: The dashboard_ids of this BatchDeleteDashboardRequestBody.
         :rtype: list[str]
@@ -56,7 +56,7 @@ class BatchDeleteDashboardRequestBody:
     def dashboard_ids(self, dashboard_ids):
         """Sets the dashboard_ids of this BatchDeleteDashboardRequestBody.
 
-        监控面板id列表
+        监控看板id列表
 
         :param dashboard_ids: The dashboard_ids of this BatchDeleteDashboardRequestBody.
         :type dashboard_ids: list[str]

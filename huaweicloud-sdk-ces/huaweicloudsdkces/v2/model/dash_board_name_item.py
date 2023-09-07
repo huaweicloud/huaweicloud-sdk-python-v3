@@ -29,7 +29,7 @@ class DashBoardNameItem:
 
         The model defined in huaweicloud sdk
 
-        :param dashboard_name: 自定义监控面板名称
+        :param dashboard_name: 自定义监控看板名称
         :type dashboard_name: str
         """
         
@@ -45,7 +45,7 @@ class DashBoardNameItem:
     def dashboard_name(self):
         """Gets the dashboard_name of this DashBoardNameItem.
 
-        自定义监控面板名称
+        自定义监控看板名称
 
         :return: The dashboard_name of this DashBoardNameItem.
         :rtype: str
@@ -56,7 +56,7 @@ class DashBoardNameItem:
     def dashboard_name(self, dashboard_name):
         """Sets the dashboard_name of this DashBoardNameItem.
 
-        自定义监控面板名称
+        自定义监控看板名称
 
         :param dashboard_name: The dashboard_name of this DashBoardNameItem.
         :type dashboard_name: str

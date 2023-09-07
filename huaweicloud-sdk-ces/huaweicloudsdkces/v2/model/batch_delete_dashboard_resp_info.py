@@ -33,7 +33,7 @@ class BatchDeleteDashboardRespInfo:
 
         The model defined in huaweicloud sdk
 
-        :param dashboard_id: 监控面板id
+        :param dashboard_id: 监控看板id
         :type dashboard_id: str
         :param ret_status: 处理结果, successful: 成功, error: 失败
         :type ret_status: str
@@ -59,7 +59,7 @@ class BatchDeleteDashboardRespInfo:
     def dashboard_id(self):
         """Gets the dashboard_id of this BatchDeleteDashboardRespInfo.
 
-        监控面板id
+        监控看板id
 
         :return: The dashboard_id of this BatchDeleteDashboardRespInfo.
         :rtype: str
@@ -70,7 +70,7 @@ class BatchDeleteDashboardRespInfo:
     def dashboard_id(self, dashboard_id):
         """Sets the dashboard_id of this BatchDeleteDashboardRespInfo.
 
-        监控面板id
+        监控看板id
 
         :param dashboard_id: The dashboard_id of this BatchDeleteDashboardRespInfo.
         :type dashboard_id: str
