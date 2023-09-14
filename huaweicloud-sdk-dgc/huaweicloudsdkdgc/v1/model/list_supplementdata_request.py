@@ -17,29 +17,85 @@ class ListSupplementdataRequest:
     sensitive_list = []
 
     openapi_types = {
-        'workspace': 'str'
+        'workspace': 'str',
+        'sort': 'str',
+        'page': 'str',
+        'size': 'str',
+        'name': 'str',
+        'user_name': 'str',
+        'status': 'str',
+        'start_date': 'str',
+        'end_date': 'str'
     }
 
     attribute_map = {
-        'workspace': 'workspace'
+        'workspace': 'workspace',
+        'sort': 'sort',
+        'page': 'page',
+        'size': 'size',
+        'name': 'name',
+        'user_name': 'userName',
+        'status': 'status',
+        'start_date': 'startDate',
+        'end_date': 'endDate'
     }
 
-    def __init__(self, workspace=None):
+    def __init__(self, workspace=None, sort=None, page=None, size=None, name=None, user_name=None, status=None, start_date=None, end_date=None):
         """ListSupplementdataRequest
 
         The model defined in huaweicloud sdk
 
         :param workspace: 工作空间id
         :type workspace: str
+        :param sort: 排序字段:desc：创建时间按照降序展示asc ：创建时间按照升序展示默认值：desc
+        :type sort: str
+        :param page: 分页列表的起始页，默认值为0。取值范围大于等于0。
+        :type page: str
+        :param size: 分页返回结果，指定每页最大记录数。默认值：10
+        :type size: str
+        :param name: 补数据名称
+        :type name: str
+        :param user_name: 用户名
+        :type user_name: str
+        :param status: 实例状态：SUCCESS：成功RUNNING ：运行中CANCLE：取消
+        :type status: str
+        :param start_date: 查询作业的开始日期 13位时间戳
+        :type start_date: str
+        :param end_date: 查询作业的结束日期 13位时间戳
+        :type end_date: str
         """
         
         
 
         self._workspace = None
+        self._sort = None
+        self._page = None
+        self._size = None
+        self._name = None
+        self._user_name = None
+        self._status = None
+        self._start_date = None
+        self._end_date = None
         self.discriminator = None
 
         if workspace is not None:
             self.workspace = workspace
+        if sort is not None:
+            self.sort = sort
+        if page is not None:
+            self.page = page
+        if size is not None:
+            self.size = size
+        if name is not None:
+            self.name = name
+        if user_name is not None:
+            self.user_name = user_name
+        if status is not None:
+            self.status = status
+        if start_date is not None:
+            self.start_date = start_date
+        if end_date is not None:
+            self.end_date = end_date
 
     @property
     def workspace(self):
@@ -62,6 +118,182 @@ class ListSupplementdataRequest:
         :type workspace: str
         """
         self._workspace = workspace
+
+    @property
+    def sort(self):
+        """Gets the sort of this ListSupplementdataRequest.
+
+        排序字段:desc：创建时间按照降序展示asc ：创建时间按照升序展示默认值：desc
+
+        :return: The sort of this ListSupplementdataRequest.
+        :rtype: str
+        """
+        return self._sort
+
+    @sort.setter
+    def sort(self, sort):
+        """Sets the sort of this ListSupplementdataRequest.
+
+        排序字段:desc：创建时间按照降序展示asc ：创建时间按照升序展示默认值：desc
+
+        :param sort: The sort of this ListSupplementdataRequest.
+        :type sort: str
+        """
+        self._sort = sort
+
+    @property
+    def page(self):
+        """Gets the page of this ListSupplementdataRequest.
+
+        分页列表的起始页，默认值为0。取值范围大于等于0。
+
+        :return: The page of this ListSupplementdataRequest.
+        :rtype: str
+        """
+        return self._page
+
+    @page.setter
+    def page(self, page):
+        """Sets the page of this ListSupplementdataRequest.
+
+        分页列表的起始页，默认值为0。取值范围大于等于0。
+
+        :param page: The page of this ListSupplementdataRequest.
+        :type page: str
+        """
+        self._page = page
+
+    @property
+    def size(self):
+        """Gets the size of this ListSupplementdataRequest.
+
+        分页返回结果，指定每页最大记录数。默认值：10
+
+        :return: The size of this ListSupplementdataRequest.
+        :rtype: str
+        """
+        return self._size
+
+    @size.setter
+    def size(self, size):
+        """Sets the size of this ListSupplementdataRequest.
+
+        分页返回结果，指定每页最大记录数。默认值：10
+
+        :param size: The size of this ListSupplementdataRequest.
+        :type size: str
+        """
+        self._size = size
+
+    @property
+    def name(self):
+        """Gets the name of this ListSupplementdataRequest.
+
+        补数据名称
+
+        :return: The name of this ListSupplementdataRequest.
+        :rtype: str
+        """
+        return self._name
+
+    @name.setter
+    def name(self, name):
+        """Sets the name of this ListSupplementdataRequest.
+
+        补数据名称
+
+        :param name: The name of this ListSupplementdataRequest.
+        :type name: str
+        """
+        self._name = name
+
+    @property
+    def user_name(self):
+        """Gets the user_name of this ListSupplementdataRequest.
+
+        用户名
+
+        :return: The user_name of this ListSupplementdataRequest.
+        :rtype: str
+        """
+        return self._user_name
+
+    @user_name.setter
+    def user_name(self, user_name):
+        """Sets the user_name of this ListSupplementdataRequest.
+
+        用户名
+
+        :param user_name: The user_name of this ListSupplementdataRequest.
+        :type user_name: str
+        """
+        self._user_name = user_name
+
+    @property
+    def status(self):
+        """Gets the status of this ListSupplementdataRequest.
+
+        实例状态：SUCCESS：成功RUNNING ：运行中CANCLE：取消
+
+        :return: The status of this ListSupplementdataRequest.
+        :rtype: str
+        """
+        return self._status
+
+    @status.setter
+    def status(self, status):
+        """Sets the status of this ListSupplementdataRequest.
+
+        实例状态：SUCCESS：成功RUNNING ：运行中CANCLE：取消
+
+        :param status: The status of this ListSupplementdataRequest.
+        :type status: str
+        """
+        self._status = status
+
+    @property
+    def start_date(self):
+        """Gets the start_date of this ListSupplementdataRequest.
+
+        查询作业的开始日期 13位时间戳
+
+        :return: The start_date of this ListSupplementdataRequest.
+        :rtype: str
+        """
+        return self._start_date
+
+    @start_date.setter
+    def start_date(self, start_date):
+        """Sets the start_date of this ListSupplementdataRequest.
+
+        查询作业的开始日期 13位时间戳
+
+        :param start_date: The start_date of this ListSupplementdataRequest.
+        :type start_date: str
+        """
+        self._start_date = start_date
+
+    @property
+    def end_date(self):
+        """Gets the end_date of this ListSupplementdataRequest.
+
+        查询作业的结束日期 13位时间戳
+
+        :return: The end_date of this ListSupplementdataRequest.
+        :rtype: str
+        """
+        return self._end_date
+
+    @end_date.setter
+    def end_date(self, end_date):
+        """Sets the end_date of this ListSupplementdataRequest.
+
+        查询作业的结束日期 13位时间戳
+
+        :param end_date: The end_date of this ListSupplementdataRequest.
+        :type end_date: str
+        """
+        self._end_date = end_date
 
     def to_dict(self):
         """Returns the model properties as a dict"""

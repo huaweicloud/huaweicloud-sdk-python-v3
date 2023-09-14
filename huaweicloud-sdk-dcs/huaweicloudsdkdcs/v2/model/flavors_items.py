@@ -32,7 +32,8 @@ class FlavorsItems:
         'pricing_type': 'str',
         'is_dec': 'bool',
         'attrs': 'list[AttrsObject]',
-        'flavors_available_zones': 'list[FlavorAzObject]'
+        'flavors_available_zones': 'list[FlavorAzObject]',
+        'replica_count': 'int'
     }
 
     attribute_map = {
@@ -51,10 +52,11 @@ class FlavorsItems:
         'pricing_type': 'pricing_type',
         'is_dec': 'is_dec',
         'attrs': 'attrs',
-        'flavors_available_zones': 'flavors_available_zones'
+        'flavors_available_zones': 'flavors_available_zones',
+        'replica_count': 'replica_count'
     }
 
-    def __init__(self, spec_code=None, cloud_service_type_code=None, cloud_resource_type_code=None, cache_mode=None, engine=None, engine_version=None, product_type=None, cpu_type=None, storage_type=None, capacity=None, billing_mode=None, tenant_ip_count=None, pricing_type=None, is_dec=None, attrs=None, flavors_available_zones=None):
+    def __init__(self, spec_code=None, cloud_service_type_code=None, cloud_resource_type_code=None, cache_mode=None, engine=None, engine_version=None, product_type=None, cpu_type=None, storage_type=None, capacity=None, billing_mode=None, tenant_ip_count=None, pricing_type=None, is_dec=None, attrs=None, flavors_available_zones=None, replica_count=None):
         """FlavorsItems
 
         The model defined in huaweicloud sdk
@@ -91,6 +93,8 @@ class FlavorsItems:
         :type attrs: list[:class:`huaweicloudsdkdcs.v2.AttrsObject`]
         :param flavors_available_zones: 有资源的可用区。
         :type flavors_available_zones: list[:class:`huaweicloudsdkdcs.v2.FlavorAzObject`]
+        :param replica_count: 副本数
+        :type replica_count: int
         """
         
         
@@ -111,6 +115,7 @@ class FlavorsItems:
         self._is_dec = None
         self._attrs = None
         self._flavors_available_zones = None
+        self._replica_count = None
         self.discriminator = None
 
         if spec_code is not None:
@@ -145,6 +150,8 @@ class FlavorsItems:
             self.attrs = attrs
         if flavors_available_zones is not None:
             self.flavors_available_zones = flavors_available_zones
+        if replica_count is not None:
+            self.replica_count = replica_count
 
     @property
     def spec_code(self):
@@ -497,6 +504,28 @@ class FlavorsItems:
         :type flavors_available_zones: list[:class:`huaweicloudsdkdcs.v2.FlavorAzObject`]
         """
         self._flavors_available_zones = flavors_available_zones
+
+    @property
+    def replica_count(self):
+        """Gets the replica_count of this FlavorsItems.
+
+        副本数
+
+        :return: The replica_count of this FlavorsItems.
+        :rtype: int
+        """
+        return self._replica_count
+
+    @replica_count.setter
+    def replica_count(self, replica_count):
+        """Sets the replica_count of this FlavorsItems.
+
+        副本数
+
+        :param replica_count: The replica_count of this FlavorsItems.
+        :type replica_count: int
+        """
+        self._replica_count = replica_count
 
     def to_dict(self):
         """Returns the model properties as a dict"""

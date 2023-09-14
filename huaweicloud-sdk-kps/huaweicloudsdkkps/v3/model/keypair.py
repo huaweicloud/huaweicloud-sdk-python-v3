@@ -45,7 +45,7 @@ class Keypair:
         :type name: str
         :param type: SSH密钥对的类型，值为“ssh”或“x509”
         :type type: str
-        :param scope: 租户级或者用户级
+        :param scope: 租户级或者用户级。domain或user。
         :type scope: str
         :param public_key: SSH密钥对对应的publicKey信息
         :type public_key: str
@@ -131,7 +131,7 @@ class Keypair:
     def scope(self):
         """Gets the scope of this Keypair.
 
-        租户级或者用户级
+        租户级或者用户级。domain或user。
 
         :return: The scope of this Keypair.
         :rtype: str
@@ -142,7 +142,7 @@ class Keypair:
     def scope(self, scope):
         """Sets the scope of this Keypair.
 
-        租户级或者用户级
+        租户级或者用户级。domain或user。
 
         :param scope: The scope of this Keypair.
         :type scope: str

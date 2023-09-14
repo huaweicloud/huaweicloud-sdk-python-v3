@@ -612,6 +612,65 @@ class FunctionGraphAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def create_function_url_async(self, request):
+        """创建函数URL
+
+        创建函数URL
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateFunctionUrl
+        :type request: :class:`huaweicloudsdkfunctiongraph.v2.CreateFunctionUrlRequest`
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.CreateFunctionUrlResponse`
+        """
+        return self._create_function_url_with_http_info(request)
+
+    def _create_function_url_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'function_urn' in local_var_params:
+            path_params['function_urn'] = local_var_params['function_urn']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/fgs/functions/{function_urn}/function-url',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateFunctionUrlResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def create_function_version_async(self, request):
         """发布函数版本
 
@@ -1253,6 +1312,63 @@ class FunctionGraphAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='DeleteFunctionTriggerResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_function_url_async(self, request):
+        """删除函数URL
+
+        删除函数URL
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteFunctionUrl
+        :type request: :class:`huaweicloudsdkfunctiongraph.v2.DeleteFunctionUrlRequest`
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.DeleteFunctionUrlResponse`
+        """
+        return self._delete_function_url_with_http_info(request)
+
+    def _delete_function_url_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'function_urn' in local_var_params:
+            path_params['function_urn'] = local_var_params['function_urn']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/fgs/functions/{function_urn}/function-url',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteFunctionUrlResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -2981,6 +3097,8 @@ class FunctionGraphAsyncClient(Client):
         path_params = {}
         if 'function_urn' in local_var_params:
             path_params['function_urn'] = local_var_params['function_urn']
+        if 'action' in local_var_params:
+            path_params['action'] = local_var_params['action']
 
         query_params = []
 
@@ -3000,7 +3118,7 @@ class FunctionGraphAsyncClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v2/{project_id}/fgs/functions/{function_urn}/snapshots/state',
+            resource_path='/v2/{project_id}/fgs/functions/{function_urn}/snapshots/{action}',
             method='GET',
             path_params=path_params,
             query_params=query_params,
@@ -3241,6 +3359,63 @@ class FunctionGraphAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ShowFunctionTriggerResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_function_url_async(self, request):
+        """获取指定函数的URL
+
+        获取指定函数的URL
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowFunctionUrl
+        :type request: :class:`huaweicloudsdkfunctiongraph.v2.ShowFunctionUrlRequest`
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ShowFunctionUrlResponse`
+        """
+        return self._show_function_url_with_http_info(request)
+
+    def _show_function_url_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'function_urn' in local_var_params:
+            path_params['function_urn'] = local_var_params['function_urn']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/fgs/functions/{function_urn}/function-url',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowFunctionUrlResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -4498,6 +4673,65 @@ class FunctionGraphAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='UpdateFunctionReservedInstancesCountResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_function_url_async(self, request):
+        """更新函数URL
+
+        更新函数URL
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateFunctionUrl
+        :type request: :class:`huaweicloudsdkfunctiongraph.v2.UpdateFunctionUrlRequest`
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.UpdateFunctionUrlResponse`
+        """
+        return self._update_function_url_with_http_info(request)
+
+    def _update_function_url_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'function_urn' in local_var_params:
+            path_params['function_urn'] = local_var_params['function_urn']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/fgs/functions/{function_urn}/function-url',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateFunctionUrlResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

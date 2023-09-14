@@ -20,17 +20,19 @@ class TextDetectionReq:
         'event_type': 'str',
         'glossary_names': 'list[str]',
         'data': 'TextDetectionDataReq',
-        'white_glossary_names': 'list[str]'
+        'white_glossary_names': 'list[str]',
+        'biz_type': 'str'
     }
 
     attribute_map = {
         'event_type': 'event_type',
         'glossary_names': 'glossary_names',
         'data': 'data',
-        'white_glossary_names': 'white_glossary_names'
+        'white_glossary_names': 'white_glossary_names',
+        'biz_type': 'biz_type'
     }
 
-    def __init__(self, event_type=None, glossary_names=None, data=None, white_glossary_names=None):
+    def __init__(self, event_type=None, glossary_names=None, data=None, white_glossary_names=None, biz_type=None):
         """TextDetectionReq
 
         The model defined in huaweicloud sdk
@@ -43,6 +45,8 @@ class TextDetectionReq:
         :type data: :class:`huaweicloudsdkmoderation.v3.TextDetectionDataReq`
         :param white_glossary_names: 检测时使用的自定义白名单词库列表。自定义白词库的创建和使用请参见[配置定义白名单词库](https://support.huaweicloud.com/api-moderation/moderation_03_0027.html#moderation_03_0027__section178844141394)。
         :type white_glossary_names: list[str]
+        :param biz_type: 自定义审核策略名称，可在控制台配置;如果请求参数中传了biz_type则优先使用biz_type,如果用户没传biz_type则event_type必须传。
+        :type biz_type: str
         """
         
         
@@ -51,14 +55,18 @@ class TextDetectionReq:
         self._glossary_names = None
         self._data = None
         self._white_glossary_names = None
+        self._biz_type = None
         self.discriminator = None
 
-        self.event_type = event_type
+        if event_type is not None:
+            self.event_type = event_type
         if glossary_names is not None:
             self.glossary_names = glossary_names
         self.data = data
         if white_glossary_names is not None:
             self.white_glossary_names = white_glossary_names
+        if biz_type is not None:
+            self.biz_type = biz_type
 
     @property
     def event_type(self):
@@ -143,6 +151,28 @@ class TextDetectionReq:
         :type white_glossary_names: list[str]
         """
         self._white_glossary_names = white_glossary_names
+
+    @property
+    def biz_type(self):
+        """Gets the biz_type of this TextDetectionReq.
+
+        自定义审核策略名称，可在控制台配置;如果请求参数中传了biz_type则优先使用biz_type,如果用户没传biz_type则event_type必须传。
+
+        :return: The biz_type of this TextDetectionReq.
+        :rtype: str
+        """
+        return self._biz_type
+
+    @biz_type.setter
+    def biz_type(self, biz_type):
+        """Sets the biz_type of this TextDetectionReq.
+
+        自定义审核策略名称，可在控制台配置;如果请求参数中传了biz_type则优先使用biz_type,如果用户没传biz_type则event_type必须传。
+
+        :param biz_type: The biz_type of this TextDetectionReq.
+        :type biz_type: str
+        """
+        self._biz_type = biz_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

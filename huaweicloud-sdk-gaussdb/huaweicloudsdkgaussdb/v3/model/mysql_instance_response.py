@@ -33,7 +33,8 @@ class MysqlInstanceResponse:
         'security_group_id': 'str',
         'subnet_id': 'str',
         'flavor_ref': 'str',
-        'charge_info': 'MysqlChargeInfo'
+        'charge_info': 'MysqlChargeInfo',
+        'volume': 'MysqlVolumeResp'
     }
 
     attribute_map = {
@@ -53,10 +54,11 @@ class MysqlInstanceResponse:
         'security_group_id': 'security_group_id',
         'subnet_id': 'subnet_id',
         'flavor_ref': 'flavor_ref',
-        'charge_info': 'charge_info'
+        'charge_info': 'charge_info',
+        'volume': 'volume'
     }
 
-    def __init__(self, id=None, name=None, status=None, datastore=None, mode=None, configuration_id=None, port=None, backup_strategy=None, enterprise_project_id=None, region=None, availability_zone_mode=None, master_availability_zone=None, vpc_id=None, security_group_id=None, subnet_id=None, flavor_ref=None, charge_info=None):
+    def __init__(self, id=None, name=None, status=None, datastore=None, mode=None, configuration_id=None, port=None, backup_strategy=None, enterprise_project_id=None, region=None, availability_zone_mode=None, master_availability_zone=None, vpc_id=None, security_group_id=None, subnet_id=None, flavor_ref=None, charge_info=None, volume=None):
         """MysqlInstanceResponse
 
         The model defined in huaweicloud sdk
@@ -95,6 +97,8 @@ class MysqlInstanceResponse:
         :type flavor_ref: str
         :param charge_info: 
         :type charge_info: :class:`huaweicloudsdkgaussdb.v3.MysqlChargeInfo`
+        :param volume: 
+        :type volume: :class:`huaweicloudsdkgaussdb.v3.MysqlVolumeResp`
         """
         
         
@@ -116,6 +120,7 @@ class MysqlInstanceResponse:
         self._subnet_id = None
         self._flavor_ref = None
         self._charge_info = None
+        self._volume = None
         self.discriminator = None
 
         self.id = id
@@ -150,6 +155,8 @@ class MysqlInstanceResponse:
             self.flavor_ref = flavor_ref
         if charge_info is not None:
             self.charge_info = charge_info
+        if volume is not None:
+            self.volume = volume
 
     @property
     def id(self):
@@ -512,6 +519,24 @@ class MysqlInstanceResponse:
         :type charge_info: :class:`huaweicloudsdkgaussdb.v3.MysqlChargeInfo`
         """
         self._charge_info = charge_info
+
+    @property
+    def volume(self):
+        """Gets the volume of this MysqlInstanceResponse.
+
+        :return: The volume of this MysqlInstanceResponse.
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.MysqlVolumeResp`
+        """
+        return self._volume
+
+    @volume.setter
+    def volume(self, volume):
+        """Sets the volume of this MysqlInstanceResponse.
+
+        :param volume: The volume of this MysqlInstanceResponse.
+        :type volume: :class:`huaweicloudsdkgaussdb.v3.MysqlVolumeResp`
+        """
+        self._volume = volume
 
     def to_dict(self):
         """Returns the model properties as a dict"""

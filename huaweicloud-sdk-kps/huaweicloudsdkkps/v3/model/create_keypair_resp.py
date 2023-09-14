@@ -41,7 +41,7 @@ class CreateKeypairResp:
 
         :param name: SSH密钥对的名称
         :type name: str
-        :param type: SSH密钥对的类型
+        :param type: SSH密钥对的类型。ssh或x509。
         :type type: str
         :param public_key: SSH密钥对对应的publicKey信息
         :type public_key: str
@@ -102,7 +102,7 @@ class CreateKeypairResp:
     def type(self):
         """Gets the type of this CreateKeypairResp.
 
-        SSH密钥对的类型
+        SSH密钥对的类型。ssh或x509。
 
         :return: The type of this CreateKeypairResp.
         :rtype: str
@@ -113,7 +113,7 @@ class CreateKeypairResp:
     def type(self, type):
         """Sets the type of this CreateKeypairResp.
 
-        SSH密钥对的类型
+        SSH密钥对的类型。ssh或x509。
 
         :param type: The type of this CreateKeypairResp.
         :type type: str

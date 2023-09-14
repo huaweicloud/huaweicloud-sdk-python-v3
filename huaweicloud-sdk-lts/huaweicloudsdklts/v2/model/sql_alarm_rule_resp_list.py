@@ -21,7 +21,7 @@ class SqlAlarmRuleRespList:
         'sql_alarm_rule_id': 'str',
         'sql_alarm_rule_description': 'str',
         'sql_requests': 'list[SqlRequest]',
-        'frequency': 'Frequency',
+        'frequency': 'object',
         'condition_expression': 'str',
         'topics': 'list[Topics]',
         'sql_alarm_level': 'str',
@@ -72,7 +72,7 @@ class SqlAlarmRuleRespList:
         :param sql_requests: SQL详细信息
         :type sql_requests: list[:class:`huaweicloudsdklts.v2.SqlRequest`]
         :param frequency: 告警统计周期
-        :type frequency: :class:`huaweicloudsdklts.v2.Frequency`
+        :type frequency: object
         :param condition_expression: 条件表达式
         :type condition_expression: str
         :param topics: 主题信息
@@ -243,7 +243,7 @@ class SqlAlarmRuleRespList:
         告警统计周期
 
         :return: The frequency of this SqlAlarmRuleRespList.
-        :rtype: :class:`huaweicloudsdklts.v2.Frequency`
+        :rtype: object
         """
         return self._frequency
 
@@ -254,7 +254,7 @@ class SqlAlarmRuleRespList:
         告警统计周期
 
         :param frequency: The frequency of this SqlAlarmRuleRespList.
-        :type frequency: :class:`huaweicloudsdklts.v2.Frequency`
+        :type frequency: object
         """
         self._frequency = frequency
 

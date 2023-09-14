@@ -38,11 +38,11 @@ class ListSupplementdataResponse(SdkResponse):
 
         :param msg: 
         :type msg: str
-        :param rows: 
+        :param rows: 包含若干补数据实例信息
         :type rows: list[:class:`huaweicloudsdkdgc.v1.SupplementDataResp`]
-        :param success: 
+        :param success: 查询是否成功，取值为true或者false
         :type success: bool
-        :param total: 
+        :param total: 补数据实例数量
         :type total: int
         """
         
@@ -85,6 +85,8 @@ class ListSupplementdataResponse(SdkResponse):
     def rows(self):
         """Gets the rows of this ListSupplementdataResponse.
 
+        包含若干补数据实例信息
+
         :return: The rows of this ListSupplementdataResponse.
         :rtype: list[:class:`huaweicloudsdkdgc.v1.SupplementDataResp`]
         """
@@ -93,6 +95,8 @@ class ListSupplementdataResponse(SdkResponse):
     @rows.setter
     def rows(self, rows):
         """Sets the rows of this ListSupplementdataResponse.
+
+        包含若干补数据实例信息
 
         :param rows: The rows of this ListSupplementdataResponse.
         :type rows: list[:class:`huaweicloudsdkdgc.v1.SupplementDataResp`]
@@ -103,6 +107,8 @@ class ListSupplementdataResponse(SdkResponse):
     def success(self):
         """Gets the success of this ListSupplementdataResponse.
 
+        查询是否成功，取值为true或者false
+
         :return: The success of this ListSupplementdataResponse.
         :rtype: bool
         """
@@ -111,6 +117,8 @@ class ListSupplementdataResponse(SdkResponse):
     @success.setter
     def success(self, success):
         """Sets the success of this ListSupplementdataResponse.
+
+        查询是否成功，取值为true或者false
 
         :param success: The success of this ListSupplementdataResponse.
         :type success: bool
@@ -121,6 +129,8 @@ class ListSupplementdataResponse(SdkResponse):
     def total(self):
         """Gets the total of this ListSupplementdataResponse.
 
+        补数据实例数量
+
         :return: The total of this ListSupplementdataResponse.
         :rtype: int
         """
@@ -129,6 +139,8 @@ class ListSupplementdataResponse(SdkResponse):
     @total.setter
     def total(self, total):
         """Sets the total of this ListSupplementdataResponse.
+
+        补数据实例数量
 
         :param total: The total of this ListSupplementdataResponse.
         :type total: int

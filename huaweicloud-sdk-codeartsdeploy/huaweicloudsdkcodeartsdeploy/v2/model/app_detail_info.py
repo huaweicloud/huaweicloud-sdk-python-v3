@@ -39,7 +39,7 @@ class AppDetailInfo:
         'create_time': 'str',
         'update_time': 'str',
         'permission_level': 'str',
-        'arrange_infos': 'object'
+        'arrange_infos': 'list[TaskV2Info]'
     }
 
     attribute_map = {
@@ -118,7 +118,7 @@ class AppDetailInfo:
         :param permission_level: 权限等级
         :type permission_level: str
         :param arrange_infos: 部署任务信息
-        :type arrange_infos: object
+        :type arrange_infos: list[:class:`huaweicloudsdkcodeartsdeploy.v2.TaskV2Info`]
         """
         
         
@@ -686,7 +686,7 @@ class AppDetailInfo:
         部署任务信息
 
         :return: The arrange_infos of this AppDetailInfo.
-        :rtype: object
+        :rtype: list[:class:`huaweicloudsdkcodeartsdeploy.v2.TaskV2Info`]
         """
         return self._arrange_infos
 
@@ -697,7 +697,7 @@ class AppDetailInfo:
         部署任务信息
 
         :param arrange_infos: The arrange_infos of this AppDetailInfo.
-        :type arrange_infos: object
+        :type arrange_infos: list[:class:`huaweicloudsdkcodeartsdeploy.v2.TaskV2Info`]
         """
         self._arrange_infos = arrange_infos
 

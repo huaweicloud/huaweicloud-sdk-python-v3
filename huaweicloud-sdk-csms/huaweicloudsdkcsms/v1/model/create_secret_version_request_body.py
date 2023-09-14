@@ -19,16 +19,18 @@ class CreateSecretVersionRequestBody:
     openapi_types = {
         'secret_binary': 'str',
         'secret_string': 'str',
-        'version_stages': 'list[str]'
+        'version_stages': 'list[str]',
+        'expire_time': 'int'
     }
 
     attribute_map = {
         'secret_binary': 'secret_binary',
         'secret_string': 'secret_string',
-        'version_stages': 'version_stages'
+        'version_stages': 'version_stages',
+        'expire_time': 'expire_time'
     }
 
-    def __init__(self, secret_binary=None, secret_string=None, version_stages=None):
+    def __init__(self, secret_binary=None, secret_string=None, version_stages=None, expire_time=None):
         """CreateSecretVersionRequestBody
 
         The model defined in huaweicloud sdk
@@ -39,6 +41,8 @@ class CreateSecretVersionRequestBody:
         :type secret_string: str
         :param version_stages: 凭据版本在存入时需要被同时标记的版本状态。如果您不指定此参数，凭据管家默认为新版本标记SYSCURRENT  约束：数组大小：最小1，最大12。stage长度：最小1字节，最大64字节。 
         :type version_stages: list[str]
+        :param expire_time: 凭据版本过期时间，时间戳，即从1970年1月1日至该时间的总秒数。默认为空，凭据订阅“版本过期”事件类型时，有效期判断所依据的值。 
+        :type expire_time: int
         """
         
         
@@ -46,6 +50,7 @@ class CreateSecretVersionRequestBody:
         self._secret_binary = None
         self._secret_string = None
         self._version_stages = None
+        self._expire_time = None
         self.discriminator = None
 
         if secret_binary is not None:
@@ -54,6 +59,8 @@ class CreateSecretVersionRequestBody:
             self.secret_string = secret_string
         if version_stages is not None:
             self.version_stages = version_stages
+        if expire_time is not None:
+            self.expire_time = expire_time
 
     @property
     def secret_binary(self):
@@ -120,6 +127,28 @@ class CreateSecretVersionRequestBody:
         :type version_stages: list[str]
         """
         self._version_stages = version_stages
+
+    @property
+    def expire_time(self):
+        """Gets the expire_time of this CreateSecretVersionRequestBody.
+
+        凭据版本过期时间，时间戳，即从1970年1月1日至该时间的总秒数。默认为空，凭据订阅“版本过期”事件类型时，有效期判断所依据的值。 
+
+        :return: The expire_time of this CreateSecretVersionRequestBody.
+        :rtype: int
+        """
+        return self._expire_time
+
+    @expire_time.setter
+    def expire_time(self, expire_time):
+        """Sets the expire_time of this CreateSecretVersionRequestBody.
+
+        凭据版本过期时间，时间戳，即从1970年1月1日至该时间的总秒数。默认为空，凭据订阅“版本过期”事件类型时，有效期判断所依据的值。 
+
+        :param expire_time: The expire_time of this CreateSecretVersionRequestBody.
+        :type expire_time: int
+        """
+        self._expire_time = expire_time
 
     def to_dict(self):
         """Returns the model properties as a dict"""

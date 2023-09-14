@@ -22,7 +22,7 @@ class HostInfo:
         'os': 'str',
         'port': 'int',
         'authorization': 'HostAuthorizationBody',
-        'permission': 'PermissionHostDetail',
+        'permission': 'PermissionHostDetailNew',
         'host_name': 'str',
         'as_proxy': 'bool',
         'group_id': 'str',
@@ -78,7 +78,7 @@ class HostInfo:
         :param authorization: 
         :type authorization: :class:`huaweicloudsdkcodeartsdeploy.v2.HostAuthorizationBody`
         :param permission: 
-        :type permission: :class:`huaweicloudsdkcodeartsdeploy.v2.PermissionHostDetail`
+        :type permission: :class:`huaweicloudsdkcodeartsdeploy.v2.PermissionHostDetailNew`
         :param host_name: 主机名称
         :type host_name: str
         :param as_proxy: 是否为代理机
@@ -285,7 +285,7 @@ class HostInfo:
         """Gets the permission of this HostInfo.
 
         :return: The permission of this HostInfo.
-        :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.PermissionHostDetail`
+        :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.PermissionHostDetailNew`
         """
         return self._permission
 
@@ -294,7 +294,7 @@ class HostInfo:
         """Sets the permission of this HostInfo.
 
         :param permission: The permission of this HostInfo.
-        :type permission: :class:`huaweicloudsdkcodeartsdeploy.v2.PermissionHostDetail`
+        :type permission: :class:`huaweicloudsdkcodeartsdeploy.v2.PermissionHostDetailNew`
         """
         self._permission = permission
 

@@ -22,13 +22,13 @@ class HostInfoDetail:
         'os': 'str',
         'port': 'int',
         'authorization': 'HostAuthorizationBody',
-        'permission': 'PermissionHostDetail',
+        'permission': 'PermissionHostDetailNew',
         'group_id': 'str',
         'host_name': 'str',
         'as_proxy': 'bool',
         'proxy_host_id': 'str',
         'owner_name': 'str',
-        'proxy_host': 'str',
+        'proxy_host': 'HostInfoDetail',
         'connection_status': 'str',
         'create_time': 'str',
         'update_time': 'str',
@@ -76,7 +76,7 @@ class HostInfoDetail:
         :param authorization: 
         :type authorization: :class:`huaweicloudsdkcodeartsdeploy.v2.HostAuthorizationBody`
         :param permission: 
-        :type permission: :class:`huaweicloudsdkcodeartsdeploy.v2.PermissionHostDetail`
+        :type permission: :class:`huaweicloudsdkcodeartsdeploy.v2.PermissionHostDetailNew`
         :param group_id: 主机集群id
         :type group_id: str
         :param host_name: 主机名
@@ -87,8 +87,8 @@ class HostInfoDetail:
         :type proxy_host_id: str
         :param owner_name: 主机所属人名称
         :type owner_name: str
-        :param proxy_host: 代理机
-        :type proxy_host: str
+        :param proxy_host: 
+        :type proxy_host: :class:`huaweicloudsdkcodeartsdeploy.v2.HostInfoDetail`
         :param connection_status: 连通性状态
         :type connection_status: str
         :param create_time: 创建时间
@@ -278,7 +278,7 @@ class HostInfoDetail:
         """Gets the permission of this HostInfoDetail.
 
         :return: The permission of this HostInfoDetail.
-        :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.PermissionHostDetail`
+        :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.PermissionHostDetailNew`
         """
         return self._permission
 
@@ -287,7 +287,7 @@ class HostInfoDetail:
         """Sets the permission of this HostInfoDetail.
 
         :param permission: The permission of this HostInfoDetail.
-        :type permission: :class:`huaweicloudsdkcodeartsdeploy.v2.PermissionHostDetail`
+        :type permission: :class:`huaweicloudsdkcodeartsdeploy.v2.PermissionHostDetailNew`
         """
         self._permission = permission
 
@@ -405,10 +405,8 @@ class HostInfoDetail:
     def proxy_host(self):
         """Gets the proxy_host of this HostInfoDetail.
 
-        代理机
-
         :return: The proxy_host of this HostInfoDetail.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.HostInfoDetail`
         """
         return self._proxy_host
 
@@ -416,10 +414,8 @@ class HostInfoDetail:
     def proxy_host(self, proxy_host):
         """Sets the proxy_host of this HostInfoDetail.
 
-        代理机
-
         :param proxy_host: The proxy_host of this HostInfoDetail.
-        :type proxy_host: str
+        :type proxy_host: :class:`huaweicloudsdkcodeartsdeploy.v2.HostInfoDetail`
         """
         self._proxy_host = proxy_host
 

@@ -45,7 +45,7 @@ class ShowDomainItemDetailsRequest:
         :type start_time: int
         :param end_time: 查询结束时间戳，必须设为5分钟整时刻点
         :type end_time: int
-        :param domain_name: 域名列表，多个域名以逗号（半角）分隔，如：www.test1.com,www.test2.com，all表示查询名下全部域名
+        :param domain_name: 域名列表，多个域名以逗号（半角）分隔，如：www.test1.com,www.test2.com，all表示查询名下全部域名。如果域名在查询时间段内无数据，结果将不返回该域名的信息。
         :type domain_name: str
         :param service_area: mainland_china(中国大陆)，outside_mainland_china(中国大陆境外)，默认为mainland_china。
         :type service_area: str
@@ -142,7 +142,7 @@ class ShowDomainItemDetailsRequest:
     def domain_name(self):
         """Gets the domain_name of this ShowDomainItemDetailsRequest.
 
-        域名列表，多个域名以逗号（半角）分隔，如：www.test1.com,www.test2.com，all表示查询名下全部域名
+        域名列表，多个域名以逗号（半角）分隔，如：www.test1.com,www.test2.com，all表示查询名下全部域名。如果域名在查询时间段内无数据，结果将不返回该域名的信息。
 
         :return: The domain_name of this ShowDomainItemDetailsRequest.
         :rtype: str
@@ -153,7 +153,7 @@ class ShowDomainItemDetailsRequest:
     def domain_name(self, domain_name):
         """Sets the domain_name of this ShowDomainItemDetailsRequest.
 
-        域名列表，多个域名以逗号（半角）分隔，如：www.test1.com,www.test2.com，all表示查询名下全部域名
+        域名列表，多个域名以逗号（半角）分隔，如：www.test1.com,www.test2.com，all表示查询名下全部域名。如果域名在查询时间段内无数据，结果将不返回该域名的信息。
 
         :param domain_name: The domain_name of this ShowDomainItemDetailsRequest.
         :type domain_name: str

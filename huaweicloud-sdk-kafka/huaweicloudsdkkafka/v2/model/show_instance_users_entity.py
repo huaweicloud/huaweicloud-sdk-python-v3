@@ -18,6 +18,7 @@ class ShowInstanceUsersEntity:
 
     openapi_types = {
         'user_name': 'str',
+        'user_desc': 'str',
         'role': 'str',
         'default_app': 'bool',
         'created_time': 'int'
@@ -25,18 +26,21 @@ class ShowInstanceUsersEntity:
 
     attribute_map = {
         'user_name': 'user_name',
+        'user_desc': 'user_desc',
         'role': 'role',
         'default_app': 'default_app',
         'created_time': 'created_time'
     }
 
-    def __init__(self, user_name=None, role=None, default_app=None, created_time=None):
+    def __init__(self, user_name=None, user_desc=None, role=None, default_app=None, created_time=None):
         """ShowInstanceUsersEntity
 
         The model defined in huaweicloud sdk
 
         :param user_name: 用户名称。  由英文字符开头，只能由英文字母、数字、中划线、下划线组成，长度为4~64的字符。
         :type user_name: str
+        :param user_desc: 用户描述。
+        :type user_desc: str
         :param role: 用户角色。
         :type role: str
         :param default_app: 是否为默认应用。
@@ -48,6 +52,7 @@ class ShowInstanceUsersEntity:
         
 
         self._user_name = None
+        self._user_desc = None
         self._role = None
         self._default_app = None
         self._created_time = None
@@ -55,6 +60,8 @@ class ShowInstanceUsersEntity:
 
         if user_name is not None:
             self.user_name = user_name
+        if user_desc is not None:
+            self.user_desc = user_desc
         if role is not None:
             self.role = role
         if default_app is not None:
@@ -83,6 +90,28 @@ class ShowInstanceUsersEntity:
         :type user_name: str
         """
         self._user_name = user_name
+
+    @property
+    def user_desc(self):
+        """Gets the user_desc of this ShowInstanceUsersEntity.
+
+        用户描述。
+
+        :return: The user_desc of this ShowInstanceUsersEntity.
+        :rtype: str
+        """
+        return self._user_desc
+
+    @user_desc.setter
+    def user_desc(self, user_desc):
+        """Sets the user_desc of this ShowInstanceUsersEntity.
+
+        用户描述。
+
+        :param user_desc: The user_desc of this ShowInstanceUsersEntity.
+        :type user_desc: str
+        """
+        self._user_desc = user_desc
 
     @property
     def role(self):

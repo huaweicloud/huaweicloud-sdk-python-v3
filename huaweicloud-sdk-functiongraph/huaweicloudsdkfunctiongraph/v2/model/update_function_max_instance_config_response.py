@@ -118,7 +118,7 @@ class UpdateFunctionMaxInstanceConfigResponse(SdkResponse):
         :type package: str
         :param runtime: FunctionGraph函数的执行环境 Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Python3.9: Python语言3.9版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Java8: Java语言8版本。 Java11: Java语言11版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 Node.js14.18: Nodejs语言14.18版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本。 http: HTTP函数。
         :type runtime: str
-        :param timeout: 函数执行超时时间，超时函数将被强行停止，范围3～900秒，可以通过白名单配置延长到12小时，具体可以咨询华为云函数工作流服务进行配置
+        :param timeout: 函数执行超时时间，超时函数将被强行停止，范围3～900秒，可以通过白名单配置延长到12小时，具体可以咨询客服进行配置
         :type timeout: int
         :param handler: 函数执行入口 规则：xx.xx，必须包含“. ” 举例：对于node.js函数：myfunction.handler，则表示函数的文件名为myfunction.js，执行的入口函数名为handler。
         :type handler: str
@@ -459,7 +459,7 @@ class UpdateFunctionMaxInstanceConfigResponse(SdkResponse):
     def timeout(self):
         """Gets the timeout of this UpdateFunctionMaxInstanceConfigResponse.
 
-        函数执行超时时间，超时函数将被强行停止，范围3～900秒，可以通过白名单配置延长到12小时，具体可以咨询华为云函数工作流服务进行配置
+        函数执行超时时间，超时函数将被强行停止，范围3～900秒，可以通过白名单配置延长到12小时，具体可以咨询客服进行配置
 
         :return: The timeout of this UpdateFunctionMaxInstanceConfigResponse.
         :rtype: int
@@ -470,7 +470,7 @@ class UpdateFunctionMaxInstanceConfigResponse(SdkResponse):
     def timeout(self, timeout):
         """Sets the timeout of this UpdateFunctionMaxInstanceConfigResponse.
 
-        函数执行超时时间，超时函数将被强行停止，范围3～900秒，可以通过白名单配置延长到12小时，具体可以咨询华为云函数工作流服务进行配置
+        函数执行超时时间，超时函数将被强行停止，范围3～900秒，可以通过白名单配置延长到12小时，具体可以咨询客服进行配置
 
         :param timeout: The timeout of this UpdateFunctionMaxInstanceConfigResponse.
         :type timeout: int

@@ -19,16 +19,18 @@ class EcsServerInfo:
     openapi_types = {
         'id': 'str',
         'auth': 'Auth',
-        'disable_password': 'bool'
+        'disable_password': 'bool',
+        'port': 'int'
     }
 
     attribute_map = {
         'id': 'id',
         'auth': 'auth',
-        'disable_password': 'disable_password'
+        'disable_password': 'disable_password',
+        'port': 'port'
     }
 
-    def __init__(self, id=None, auth=None, disable_password=None):
+    def __init__(self, id=None, auth=None, disable_password=None, port=None):
         """EcsServerInfo
 
         The model defined in huaweicloud sdk
@@ -37,8 +39,10 @@ class EcsServerInfo:
         :type id: str
         :param auth: 
         :type auth: :class:`huaweicloudsdkkps.v3.Auth`
-        :param disable_password: - true：禁用虚拟机的ssh登陆。 - false：不禁用虚拟机的ssh登陆。
+        :param disable_password: - true：禁用虚拟机的ssh登录。 - false：不禁用虚拟机的ssh登录。
         :type disable_password: bool
+        :param port: SSH监听端口。
+        :type port: int
         """
         
         
@@ -46,6 +50,7 @@ class EcsServerInfo:
         self._id = None
         self._auth = None
         self._disable_password = None
+        self._port = None
         self.discriminator = None
 
         self.id = id
@@ -53,6 +58,8 @@ class EcsServerInfo:
             self.auth = auth
         if disable_password is not None:
             self.disable_password = disable_password
+        if port is not None:
+            self.port = port
 
     @property
     def id(self):
@@ -98,7 +105,7 @@ class EcsServerInfo:
     def disable_password(self):
         """Gets the disable_password of this EcsServerInfo.
 
-        - true：禁用虚拟机的ssh登陆。 - false：不禁用虚拟机的ssh登陆。
+        - true：禁用虚拟机的ssh登录。 - false：不禁用虚拟机的ssh登录。
 
         :return: The disable_password of this EcsServerInfo.
         :rtype: bool
@@ -109,12 +116,34 @@ class EcsServerInfo:
     def disable_password(self, disable_password):
         """Sets the disable_password of this EcsServerInfo.
 
-        - true：禁用虚拟机的ssh登陆。 - false：不禁用虚拟机的ssh登陆。
+        - true：禁用虚拟机的ssh登录。 - false：不禁用虚拟机的ssh登录。
 
         :param disable_password: The disable_password of this EcsServerInfo.
         :type disable_password: bool
         """
         self._disable_password = disable_password
+
+    @property
+    def port(self):
+        """Gets the port of this EcsServerInfo.
+
+        SSH监听端口。
+
+        :return: The port of this EcsServerInfo.
+        :rtype: int
+        """
+        return self._port
+
+    @port.setter
+    def port(self, port):
+        """Sets the port of this EcsServerInfo.
+
+        SSH监听端口。
+
+        :param port: The port of this EcsServerInfo.
+        :type port: int
+        """
+        self._port = port
 
     def to_dict(self):
         """Returns the model properties as a dict"""

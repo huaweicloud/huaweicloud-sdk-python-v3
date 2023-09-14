@@ -17,52 +17,69 @@ class ResourceInfo:
     sensitive_list = []
 
     openapi_types = {
+        'id': 'str',
         'name': 'str',
         'type': 'str',
         'location': 'str',
         'depend_files': 'list[str]',
         'desc': 'str',
-        'directory': 'str'
+        'directory': 'str',
+        'depend_packages': 'list[DependPackage]',
+        'job_relation': 'list[Relation]'
     }
 
     attribute_map = {
+        'id': 'id',
         'name': 'name',
         'type': 'type',
         'location': 'location',
         'depend_files': 'dependFiles',
         'desc': 'desc',
-        'directory': 'directory'
+        'directory': 'directory',
+        'depend_packages': 'dependPackages',
+        'job_relation': 'jobRelation'
     }
 
-    def __init__(self, name=None, type=None, location=None, depend_files=None, desc=None, directory=None):
+    def __init__(self, id=None, name=None, type=None, location=None, depend_files=None, desc=None, directory=None, depend_packages=None, job_relation=None):
         """ResourceInfo
 
         The model defined in huaweicloud sdk
 
-        :param name: 
+        :param id: 资源id
+        :type id: str
+        :param name: 资源名称，只能包含英文字母、数字、中文字符、下划线或中划线。
         :type name: str
-        :param type: 
+        :param type: 资源类型:   - archive: 压缩包   - file: 文件   - jar: jar文件   - pyFile：python文件
         :type type: str
         :param location: 资源文件所在OBS路径
         :type location: str
-        :param depend_files: 
+        :param depend_files: 主Jar包所依赖的JAR包、properties文件
         :type depend_files: list[str]
-        :param desc: 
+        :param desc: 资源描述
         :type desc: str
         :param directory: 资源所在目录
         :type directory: str
+        :param depend_packages: 主Jar包所依赖的JAR包、properties文件。同时存在dependFiles和dependPackages时，优先解析该字段。
+        :type depend_packages: list[:class:`huaweicloudsdkdgc.v1.DependPackage`]
+        :param job_relation: 通过jar包名称查询相关的job
+        :type job_relation: list[:class:`huaweicloudsdkdgc.v1.Relation`]
         """
         
         
 
+        self._id = None
         self._name = None
         self._type = None
         self._location = None
         self._depend_files = None
         self._desc = None
         self._directory = None
+        self._depend_packages = None
+        self._job_relation = None
         self.discriminator = None
 
+        if id is not None:
+            self.id = id
         if name is not None:
             self.name = name
         if type is not None:
@@ -75,10 +92,38 @@ class ResourceInfo:
             self.desc = desc
         if directory is not None:
             self.directory = directory
+        if depend_packages is not None:
+            self.depend_packages = depend_packages
+        if job_relation is not None:
+            self.job_relation = job_relation
+
+    @property
+    def id(self):
+        """Gets the id of this ResourceInfo.
+
+        资源id
+
+        :return: The id of this ResourceInfo.
+        :rtype: str
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """Sets the id of this ResourceInfo.
+
+        资源id
+
+        :param id: The id of this ResourceInfo.
+        :type id: str
+        """
+        self._id = id
 
     @property
     def name(self):
         """Gets the name of this ResourceInfo.
+
+        资源名称，只能包含英文字母、数字、中文字符、下划线或中划线。
 
         :return: The name of this ResourceInfo.
         :rtype: str
@@ -89,6 +134,8 @@ class ResourceInfo:
     def name(self, name):
         """Sets the name of this ResourceInfo.
 
+        资源名称，只能包含英文字母、数字、中文字符、下划线或中划线。
+
         :param name: The name of this ResourceInfo.
         :type name: str
         """
@@ -98,6 +145,8 @@ class ResourceInfo:
     def type(self):
         """Gets the type of this ResourceInfo.
 
+        资源类型:   - archive: 压缩包   - file: 文件   - jar: jar文件   - pyFile：python文件
+
         :return: The type of this ResourceInfo.
         :rtype: str
         """
@@ -106,6 +155,8 @@ class ResourceInfo:
     @type.setter
     def type(self, type):
         """Sets the type of this ResourceInfo.
+
+        资源类型:   - archive: 压缩包   - file: 文件   - jar: jar文件   - pyFile：python文件
 
         :param type: The type of this ResourceInfo.
         :type type: str
@@ -138,6 +189,8 @@ class ResourceInfo:
     def depend_files(self):
         """Gets the depend_files of this ResourceInfo.
 
+        主Jar包所依赖的JAR包、properties文件
+
         :return: The depend_files of this ResourceInfo.
         :rtype: list[str]
         """
@@ -146,6 +199,8 @@ class ResourceInfo:
     @depend_files.setter
     def depend_files(self, depend_files):
         """Sets the depend_files of this ResourceInfo.
+
+        主Jar包所依赖的JAR包、properties文件
 
         :param depend_files: The depend_files of this ResourceInfo.
         :type depend_files: list[str]
@@ -156,6 +211,8 @@ class ResourceInfo:
     def desc(self):
         """Gets the desc of this ResourceInfo.
 
+        资源描述
+
         :return: The desc of this ResourceInfo.
         :rtype: str
         """
@@ -164,6 +221,8 @@ class ResourceInfo:
     @desc.setter
     def desc(self, desc):
         """Sets the desc of this ResourceInfo.
+
+        资源描述
 
         :param desc: The desc of this ResourceInfo.
         :type desc: str
@@ -191,6 +250,50 @@ class ResourceInfo:
         :type directory: str
         """
         self._directory = directory
+
+    @property
+    def depend_packages(self):
+        """Gets the depend_packages of this ResourceInfo.
+
+        主Jar包所依赖的JAR包、properties文件。同时存在dependFiles和dependPackages时，优先解析该字段。
+
+        :return: The depend_packages of this ResourceInfo.
+        :rtype: list[:class:`huaweicloudsdkdgc.v1.DependPackage`]
+        """
+        return self._depend_packages
+
+    @depend_packages.setter
+    def depend_packages(self, depend_packages):
+        """Sets the depend_packages of this ResourceInfo.
+
+        主Jar包所依赖的JAR包、properties文件。同时存在dependFiles和dependPackages时，优先解析该字段。
+
+        :param depend_packages: The depend_packages of this ResourceInfo.
+        :type depend_packages: list[:class:`huaweicloudsdkdgc.v1.DependPackage`]
+        """
+        self._depend_packages = depend_packages
+
+    @property
+    def job_relation(self):
+        """Gets the job_relation of this ResourceInfo.
+
+        通过jar包名称查询相关的job
+
+        :return: The job_relation of this ResourceInfo.
+        :rtype: list[:class:`huaweicloudsdkdgc.v1.Relation`]
+        """
+        return self._job_relation
+
+    @job_relation.setter
+    def job_relation(self, job_relation):
+        """Sets the job_relation of this ResourceInfo.
+
+        通过jar包名称查询相关的job
+
+        :param job_relation: The job_relation of this ResourceInfo.
+        :type job_relation: list[:class:`huaweicloudsdkdgc.v1.Relation`]
+        """
+        self._job_relation = job_relation
 
     def to_dict(self):
         """Returns the model properties as a dict"""

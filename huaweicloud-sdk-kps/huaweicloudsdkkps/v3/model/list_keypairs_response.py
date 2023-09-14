@@ -32,7 +32,7 @@ class ListKeypairsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param keypairs: SSH密钥对信息详情
+        :param keypairs: SSH密钥对信息列表
         :type keypairs: list[:class:`huaweicloudsdkkps.v3.Keypairs`]
         :param page_info: 
         :type page_info: :class:`huaweicloudsdkkps.v3.PageInfo`
@@ -53,7 +53,7 @@ class ListKeypairsResponse(SdkResponse):
     def keypairs(self):
         """Gets the keypairs of this ListKeypairsResponse.
 
-        SSH密钥对信息详情
+        SSH密钥对信息列表
 
         :return: The keypairs of this ListKeypairsResponse.
         :rtype: list[:class:`huaweicloudsdkkps.v3.Keypairs`]
@@ -64,7 +64,7 @@ class ListKeypairsResponse(SdkResponse):
     def keypairs(self, keypairs):
         """Sets the keypairs of this ListKeypairsResponse.
 
-        SSH密钥对信息详情
+        SSH密钥对信息列表
 
         :param keypairs: The keypairs of this ListKeypairsResponse.
         :type keypairs: list[:class:`huaweicloudsdkkps.v3.Keypairs`]

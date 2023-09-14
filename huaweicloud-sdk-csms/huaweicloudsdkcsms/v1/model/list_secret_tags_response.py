@@ -19,7 +19,7 @@ class ListSecretTagsResponse(SdkResponse):
 
     openapi_types = {
         'tags': 'list[TagItem]',
-        'sys_tags': 'list[TagItem]'
+        'sys_tags': 'list[SysTag]'
     }
 
     attribute_map = {
@@ -32,10 +32,10 @@ class ListSecretTagsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param tags: 标签列表，key和value键值对的集合。  - key：表示标签键，一个凭据下最多包含10个key，key不能为空，不能重复，同一个key中value不能重复。key最大长度为36个字符。  - value：表示标签值。每个值最大长度43个字符，value之间为“与”的关系。
+        :param tags: 标签列表，key和value键值对的集合。  - key：表示标签键，一个凭据下最多包含20个key，key不能为空，不能重复，同一个key中value不能重复。key最大长度为128个字符。  - value：表示标签值。每个值最大长度255个字符，value之间为“与”的关系。
         :type tags: list[:class:`huaweicloudsdkcsms.v1.TagItem`]
-        :param sys_tags: 标签列表，key和value键值对的集合。  - key：表示标签键，一个凭据下最多包含10个key，key不能为空，不能重复，同一个key中value不能重复。key最大长度为36个字符。  - value：表示标签值。每个值最大长度43个字符，value之间为“与”的关系。
-        :type sys_tags: list[:class:`huaweicloudsdkcsms.v1.TagItem`]
+        :param sys_tags: 系统标签列表。
+        :type sys_tags: list[:class:`huaweicloudsdkcsms.v1.SysTag`]
         """
         
         super(ListSecretTagsResponse, self).__init__()
@@ -53,7 +53,7 @@ class ListSecretTagsResponse(SdkResponse):
     def tags(self):
         """Gets the tags of this ListSecretTagsResponse.
 
-        标签列表，key和value键值对的集合。  - key：表示标签键，一个凭据下最多包含10个key，key不能为空，不能重复，同一个key中value不能重复。key最大长度为36个字符。  - value：表示标签值。每个值最大长度43个字符，value之间为“与”的关系。
+        标签列表，key和value键值对的集合。  - key：表示标签键，一个凭据下最多包含20个key，key不能为空，不能重复，同一个key中value不能重复。key最大长度为128个字符。  - value：表示标签值。每个值最大长度255个字符，value之间为“与”的关系。
 
         :return: The tags of this ListSecretTagsResponse.
         :rtype: list[:class:`huaweicloudsdkcsms.v1.TagItem`]
@@ -64,7 +64,7 @@ class ListSecretTagsResponse(SdkResponse):
     def tags(self, tags):
         """Sets the tags of this ListSecretTagsResponse.
 
-        标签列表，key和value键值对的集合。  - key：表示标签键，一个凭据下最多包含10个key，key不能为空，不能重复，同一个key中value不能重复。key最大长度为36个字符。  - value：表示标签值。每个值最大长度43个字符，value之间为“与”的关系。
+        标签列表，key和value键值对的集合。  - key：表示标签键，一个凭据下最多包含20个key，key不能为空，不能重复，同一个key中value不能重复。key最大长度为128个字符。  - value：表示标签值。每个值最大长度255个字符，value之间为“与”的关系。
 
         :param tags: The tags of this ListSecretTagsResponse.
         :type tags: list[:class:`huaweicloudsdkcsms.v1.TagItem`]
@@ -75,10 +75,10 @@ class ListSecretTagsResponse(SdkResponse):
     def sys_tags(self):
         """Gets the sys_tags of this ListSecretTagsResponse.
 
-        标签列表，key和value键值对的集合。  - key：表示标签键，一个凭据下最多包含10个key，key不能为空，不能重复，同一个key中value不能重复。key最大长度为36个字符。  - value：表示标签值。每个值最大长度43个字符，value之间为“与”的关系。
+        系统标签列表。
 
         :return: The sys_tags of this ListSecretTagsResponse.
-        :rtype: list[:class:`huaweicloudsdkcsms.v1.TagItem`]
+        :rtype: list[:class:`huaweicloudsdkcsms.v1.SysTag`]
         """
         return self._sys_tags
 
@@ -86,10 +86,10 @@ class ListSecretTagsResponse(SdkResponse):
     def sys_tags(self, sys_tags):
         """Sets the sys_tags of this ListSecretTagsResponse.
 
-        标签列表，key和value键值对的集合。  - key：表示标签键，一个凭据下最多包含10个key，key不能为空，不能重复，同一个key中value不能重复。key最大长度为36个字符。  - value：表示标签值。每个值最大长度43个字符，value之间为“与”的关系。
+        系统标签列表。
 
         :param sys_tags: The sys_tags of this ListSecretTagsResponse.
-        :type sys_tags: list[:class:`huaweicloudsdkcsms.v1.TagItem`]
+        :type sys_tags: list[:class:`huaweicloudsdkcsms.v1.SysTag`]
         """
         self._sys_tags = sys_tags
 

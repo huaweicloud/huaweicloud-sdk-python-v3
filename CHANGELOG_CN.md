@@ -1,3 +1,632 @@
+# 3.1.59 2023-09-14
+
+### HuaweiCloud SDK BMS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateBareMetalServers**
+    - 请求参数变更
+      - `+ server.nics.allowed_address_pairs`
+
+### HuaweiCloud SDK CBR
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateVault**
+    - 请求参数变更
+      - `- vault.billing.promotion_info`
+      - `- vault.billing.purchase_mode`
+      - `- vault.billing.order_id`
+  - **CreatePostPaidVault**
+    - 请求参数变更
+      - `- vault.billing.promotion_info`
+      - `- vault.billing.purchase_mode`
+      - `- vault.billing.order_id`
+
+### HuaweiCloud SDK CES
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateEvents**
+    - 请求参数变更
+      - `- detail.dimensions`
+  - **ListEventDetail**
+    - 响应参数变更
+      - `* event_info.detail.dimensions: object<MetricsDimension> -> list<MetricsDimension>`
+      - `* event_info.detail: object<EventItemDetail> -> object<ShowEventItemDetail>`
+
+### HuaweiCloud SDK CodeArtsDeploy
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowAppDetailById**
+    - 响应参数变更
+      - `* result.arrange_infos: object -> list<TaskV2Info>`
+  - **ListNewHosts**
+    - 响应参数变更
+      - `+ result.permission.can_copy`
+      - `- result.permission.can_connection_test`
+      - `* result.permission: object<PermissionHostDetail> -> object<PermissionHostDetailNew>`
+  - **ShowHostDetail**
+    - 响应参数变更
+      - `* result.proxy_host: string -> object<HostInfoDetail>`
+      - `+ result.permission.can_copy`
+      - `- result.permission.can_connection_test`
+      - `* result.permission: object<PermissionHostDetail> -> object<PermissionHostDetailNew>`
+
+### HuaweiCloud SDK CPTS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowAgentConfig**
+    - 响应参数变更
+      - `+ result.elasticsearch_enable`
+      - `+ result.elasticsearch_shadow_type`
+      - `+ result.elasticsearch_shadow_repository`
+  - **UpdateAgentHealthStatus**
+    - 响应参数变更
+      - `+ result.result.elasticsearch_enable`
+      - `+ result.result.elasticsearch_shadow_type`
+      - `+ result.result.elasticsearch_shadow_repository`
+
+### HuaweiCloud SDK CSMS
+
+- _新增特性_
+  - 支持以下接口：
+    - `ListSecretEvents`
+    - `CreateSecretEvent`
+    - `ShowSecretEvent`
+    - `UpdateSecretEvent`
+    - `DeleteSecretEvent`
+    - `ListNotificationRecords`
+    - `UpdateVersion`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListSecrets**
+    - 请求参数变更
+      - `+ event_name`
+    - 响应参数变更
+      - `+ secrets.secret_type`
+      - `+ secrets.auto_rotation`
+      - `+ secrets.rotation_period`
+      - `+ secrets.rotation_config`
+      - `+ secrets.rotation_time`
+      - `+ secrets.next_rotation_time`
+      - `+ secrets.event_subscriptions`
+      - `+ secrets.enterprise_project_id`
+  - **CreateSecret**
+    - 请求参数变更
+      - `+ secret_type`
+      - `+ auto_rotation`
+      - `+ rotation_period`
+      - `+ rotation_config`
+      - `+ event_subscriptions`
+      - `+ enterprise_project_id`
+    - 响应参数变更
+      - `+ secret.secret_type`
+      - `+ secret.auto_rotation`
+      - `+ secret.rotation_period`
+      - `+ secret.rotation_config`
+      - `+ secret.rotation_time`
+      - `+ secret.next_rotation_time`
+      - `+ secret.event_subscriptions`
+      - `+ secret.enterprise_project_id`
+  - **ShowSecret**
+    - 响应参数变更
+      - `+ secret.secret_type`
+      - `+ secret.auto_rotation`
+      - `+ secret.rotation_period`
+      - `+ secret.rotation_config`
+      - `+ secret.rotation_time`
+      - `+ secret.next_rotation_time`
+      - `+ secret.event_subscriptions`
+      - `+ secret.enterprise_project_id`
+  - **UpdateSecret**
+    - 请求参数变更
+      - `+ auto_rotation`
+      - `+ rotation_period`
+      - `+ event_subscriptions`
+    - 响应参数变更
+      - `+ secret.secret_type`
+      - `+ secret.auto_rotation`
+      - `+ secret.rotation_period`
+      - `+ secret.rotation_config`
+      - `+ secret.rotation_time`
+      - `+ secret.next_rotation_time`
+      - `+ secret.event_subscriptions`
+      - `+ secret.enterprise_project_id`
+  - **UploadSecretBlob**
+    - 响应参数变更
+      - `+ secret.secret_type`
+      - `+ secret.auto_rotation`
+      - `+ secret.rotation_period`
+      - `+ secret.rotation_config`
+      - `+ secret.rotation_time`
+      - `+ secret.next_rotation_time`
+      - `+ secret.event_subscriptions`
+      - `+ secret.enterprise_project_id`
+  - **ListSecretVersions**
+    - 响应参数变更
+      - `+ version_metadatas.expire_time`
+  - **CreateSecretVersion**
+    - 请求参数变更
+      - `+ expire_time`
+    - 响应参数变更
+      - `+ version_metadata.expire_time`
+  - **DeleteSecretForSchedule**
+    - 响应参数变更
+      - `+ secret.secret_type`
+      - `+ secret.auto_rotation`
+      - `+ secret.rotation_period`
+      - `+ secret.rotation_config`
+      - `+ secret.rotation_time`
+      - `+ secret.next_rotation_time`
+      - `+ secret.event_subscriptions`
+      - `+ secret.enterprise_project_id`
+  - **RestoreSecret**
+    - 响应参数变更
+      - `+ secret.secret_type`
+      - `+ secret.auto_rotation`
+      - `+ secret.rotation_period`
+      - `+ secret.rotation_config`
+      - `+ secret.rotation_time`
+      - `+ secret.next_rotation_time`
+      - `+ secret.event_subscriptions`
+      - `+ secret.enterprise_project_id`
+  - **ListSecretTags**
+    - 响应参数变更
+      - `* sys_tags: list<TagItem> -> list<SysTag>`
+  - **ListProjectSecretsTags**
+    - 响应参数变更
+      - `* tags: list<Tag> -> list<TagResponse>`
+  - **ShowSecretVersion**
+    - 响应参数变更
+      - `+ version.version_metadata.expire_time`
+  - **ListResourceInstances**
+    - 请求参数变更
+      - `* matches: list<TagItem> -> list<TagMatches>`
+    - 响应参数变更
+      - `- resources.sys_tags`
+      - `+ resources.resource_detail.secret_type`
+      - `+ resources.resource_detail.auto_rotation`
+      - `+ resources.resource_detail.rotation_period`
+      - `+ resources.resource_detail.rotation_config`
+      - `+ resources.resource_detail.rotation_time`
+      - `+ resources.resource_detail.next_rotation_time`
+      - `+ resources.resource_detail.event_subscriptions`
+      - `+ resources.resource_detail.enterprise_project_id`
+
+### HuaweiCloud SDK DCS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListFlavors**
+    - 响应参数变更
+      - `+ flavors.replica_count`
+
+### HuaweiCloud SDK DGC
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateResource**
+    - 请求参数变更
+      - `+ jobRelation`
+      - `+ dependPackages`
+      - `+ id`
+      - `+ type: enum value [pyFile]`
+  - **ShowResource**
+    - 响应参数变更
+      - `+ jobRelation`
+      - `+ dependPackages`
+      - `+ id`
+      - `+ type: enum value [pyFile]`
+  - **UpdateResource**
+    - 请求参数变更
+      - `+ jobRelation`
+      - `+ dependPackages`
+      - `+ id`
+      - `+ type: enum value [pyFile]`
+  - **ListConnections**
+    - 请求参数变更
+      - `+ limit`
+      - `+ offset`
+      - `+ connectionName`
+  - **ListScripts**
+    - 请求参数变更
+      - `+ limit`
+      - `+ offset`
+      - `+ scriptName`
+  - **ListJobs**
+    - 请求参数变更
+      - `+ limit`
+      - `+ offset`
+      - `+ jobType`
+      - `+ jobName`
+  - **ListSupplementdata**
+    - 请求参数变更
+      - `+ sort`
+      - `+ page`
+      - `+ size`
+      - `+ name`
+      - `+ userName`
+      - `+ status`
+      - `+ startDate`
+      - `+ endDate`
+    - 响应参数变更
+      - `* rows.endDate: number -> int64`
+      - `* rows.startDate: number -> int64`
+      - `* rows.submittedDate: number -> int64`
+      - `+ rows.supplement_data_instance_time.days`
+      - `+ rows.supplement_data_instance_time.time_of_day`
+      - `+ rows.supplement_data_run_time.time_of_day`
+      - `+ rows.supplement_data_run_time.day_of_week`
+      - `+ rows.supplement_data_run_time.day_of_month`
+  - **CreateSupplementdata**
+    - 请求参数变更
+      - `+ supplement_data_run_time`
+      - `+ supplement_data_instance_time`
+
+### HuaweiCloud SDK EVS
+
+- _新增特性_
+  - 支持接口`ModifyVolumeQoS`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK FunctionGraph
+
+- _新增特性_
+  - 支持接口`ShowFunctionUrl`、`UpdateFunctionUrl`、`CreateFunctionUrl`、`DeleteFunctionUrl`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **UpdateFuncSnapshot**
+    - 请求参数变更
+      - `+ action: enum value [enable,disable]`
+  - **CreateFunction**
+    - 请求参数变更
+      - `+ custom_image`
+      - `+ code_type: enum value [Custom-Image-Swr]`
+
+### HuaweiCloud SDK GaussDB
+
+- _新增特性_
+  - 支持接口`ListAuditLogDownloadLink`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateGaussMySqlInstance**
+    - 响应参数变更
+      - `+ instance.volume`
+
+### HuaweiCloud SDK Image
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 移除以下接口：
+    - `RunImageDescription`
+    - `RunImageSuperResolution`
+    - `CreateVideoTaggingMediaTask`
+    - `ShowVideoTaggingMediaTask`
+    - `CreateImageHighresolutionMattingTask`
+    - `ShowImageHighresolutionMattingTask`
+
+### HuaweiCloud SDK IoTEdge
+
+- _新增特性_
+  - 支持以下接口：
+    - `CreateSchedule`
+    - `UpdateSchedule`
+    - `DeleteSchedule`
+    - `ExecuteDeviceControlsSet`
+    - `ExecuteDeviceControlsRelease`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK Kafka
+
+- _新增特性_
+  - 支持接口`UpdateInstanceConsumerGroup`、`UpdateInstanceUser`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateKafkaConsumerGroup**
+    - 请求参数变更
+      - `+ group_desc`
+  - **CreateInstanceUser**
+    - 请求参数变更
+      - `+ user_desc`
+  - **ShowInstanceUsers**
+    - 响应参数变更
+      - `+ users.user_desc`
+  - **ShowInstanceMessages**
+    - 请求参数变更
+      - `+ keyword`
+
+### HuaweiCloud SDK KPS
+
+- _新增特性_
+  - 支持接口`ImportPrivateKey`、`ExportPrivateKey`、`BatchAssociateKeypair`、`ClearPrivateKey`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListKeypairDetail**
+    - 响应参数变更
+      - `+ keypair.key_id`
+      - `+ keypair.algorithm`
+  - **ListFailedTask**
+    - 请求参数变更
+      - `* limit: string -> int32`
+      - `* offset: string -> int32`
+  - **AssociateKeypair**
+    - 请求参数变更
+      - `+ server.port`
+    - 响应参数变更
+      - `+ error_msg`
+      - `+ error_code`
+      - `+ server_id`
+      - `+ status`
+  - **DisassociateKeypair**
+    - 响应参数变更
+      - `+ error_msg`
+      - `+ error_code`
+      - `+ server_id`
+      - `+ status`
+
+### HuaweiCloud SDK LTS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListCharts**
+    - 响应参数变更
+      - `- config.can_sort`
+      - `- config.can_search`
+      - `- config.page_size`
+  - **ShowNotificationTemplate**
+    - 响应参数变更
+      - `+ body`
+      - `- create_time`
+      - `- project_id`
+      - `- templates`
+      - `- modify_time`
+      - `- name`
+      - `- source`
+      - `- type`
+      - `- locale`
+      - `- desc`
+  - **ListLogStream**
+    - 请求参数变更
+      - `- tag`
+    - 响应参数变更
+      - `* log_streams: list<LogStream> -> list<LogStreamResBody>`
+  - **ListStructuredLogsWithTimeRange**
+    - 响应参数变更
+      - `+ context`
+      - `- body`
+  - **DeleteTransfer**
+    - 响应参数变更
+      - `- log_transfer_info.log_transfer_detail.obs_period`
+      - `- log_transfer_info.log_transfer_detail.obs_encrypted_id`
+      - `- log_transfer_info.log_transfer_detail.obs_prefix_name`
+      - `- log_transfer_info.log_transfer_detail.obs_period_unit`
+      - `- log_transfer_info.log_transfer_detail.obs_transfer_path`
+      - `- log_transfer_info.log_transfer_detail.obs_eps_id`
+      - `- log_transfer_info.log_transfer_detail.obs_bucket_name`
+      - `- log_transfer_info.log_transfer_detail.obs_encrypted_enable`
+      - `- log_transfer_info.log_transfer_detail.obs_dir_pre_fix_name`
+      - `- log_transfer_info.log_transfer_detail.dis_id`
+      - `- log_transfer_info.log_transfer_detail.dis_name`
+      - `- log_transfer_info.log_transfer_detail.kafka_id`
+      - `- log_transfer_info.log_transfer_detail.kafka_topic`
+      - `- log_transfer_info.log_transfer_detail.obs_time_zone`
+      - `- log_transfer_info.log_transfer_detail.obs_time_zone_id`
+      - `- log_transfer_info.log_transfer_detail.tags`
+  - **ListTransfers**
+    - 响应参数变更
+      - `- log_transfers.log_transfer_info.log_transfer_detail.obs_period`
+      - `- log_transfers.log_transfer_info.log_transfer_detail.obs_encrypted_id`
+      - `- log_transfers.log_transfer_info.log_transfer_detail.obs_prefix_name`
+      - `- log_transfers.log_transfer_info.log_transfer_detail.obs_period_unit`
+      - `- log_transfers.log_transfer_info.log_transfer_detail.obs_transfer_path`
+      - `- log_transfers.log_transfer_info.log_transfer_detail.obs_eps_id`
+      - `- log_transfers.log_transfer_info.log_transfer_detail.obs_bucket_name`
+      - `- log_transfers.log_transfer_info.log_transfer_detail.obs_encrypted_enable`
+      - `- log_transfers.log_transfer_info.log_transfer_detail.obs_dir_pre_fix_name`
+      - `- log_transfers.log_transfer_info.log_transfer_detail.dis_id`
+      - `- log_transfers.log_transfer_info.log_transfer_detail.dis_name`
+      - `- log_transfers.log_transfer_info.log_transfer_detail.kafka_id`
+      - `- log_transfers.log_transfer_info.log_transfer_detail.kafka_topic`
+      - `- log_transfers.log_transfer_info.log_transfer_detail.obs_time_zone`
+      - `- log_transfers.log_transfer_info.log_transfer_detail.obs_time_zone_id`
+      - `- log_transfers.log_transfer_info.log_transfer_detail.tags`
+  - **UpdateTransfer**
+    - 响应参数变更
+      - `- log_transfer_info.log_transfer_detail.obs_period`
+      - `- log_transfer_info.log_transfer_detail.obs_encrypted_id`
+      - `- log_transfer_info.log_transfer_detail.obs_prefix_name`
+      - `- log_transfer_info.log_transfer_detail.obs_period_unit`
+      - `- log_transfer_info.log_transfer_detail.obs_transfer_path`
+      - `- log_transfer_info.log_transfer_detail.obs_eps_id`
+      - `- log_transfer_info.log_transfer_detail.obs_bucket_name`
+      - `- log_transfer_info.log_transfer_detail.obs_encrypted_enable`
+      - `- log_transfer_info.log_transfer_detail.obs_dir_pre_fix_name`
+      - `- log_transfer_info.log_transfer_detail.dis_id`
+      - `- log_transfer_info.log_transfer_detail.dis_name`
+      - `- log_transfer_info.log_transfer_detail.kafka_id`
+      - `- log_transfer_info.log_transfer_detail.kafka_topic`
+      - `- log_transfer_info.log_transfer_detail.obs_time_zone`
+      - `- log_transfer_info.log_transfer_detail.obs_time_zone_id`
+      - `- log_transfer_info.log_transfer_detail.tags`
+  - **CreateTransfer**
+    - 响应参数变更
+      - `- log_transfer_info.log_transfer_detail.obs_period`
+      - `- log_transfer_info.log_transfer_detail.obs_encrypted_id`
+      - `- log_transfer_info.log_transfer_detail.obs_prefix_name`
+      - `- log_transfer_info.log_transfer_detail.obs_period_unit`
+      - `- log_transfer_info.log_transfer_detail.obs_transfer_path`
+      - `- log_transfer_info.log_transfer_detail.obs_eps_id`
+      - `- log_transfer_info.log_transfer_detail.obs_bucket_name`
+      - `- log_transfer_info.log_transfer_detail.obs_encrypted_enable`
+      - `- log_transfer_info.log_transfer_detail.obs_dir_pre_fix_name`
+      - `- log_transfer_info.log_transfer_detail.dis_id`
+      - `- log_transfer_info.log_transfer_detail.dis_name`
+      - `- log_transfer_info.log_transfer_detail.kafka_id`
+      - `- log_transfer_info.log_transfer_detail.kafka_topic`
+      - `- log_transfer_info.log_transfer_detail.obs_time_zone`
+      - `- log_transfer_info.log_transfer_detail.obs_time_zone_id`
+      - `- log_transfer_info.log_transfer_detail.tags`
+  - **ListNotificationTemplates**
+    - 响应参数变更
+      - `+ body`
+      - `- create_time`
+      - `- project_id`
+      - `- templates`
+      - `- modify_time`
+      - `- name`
+      - `- source`
+      - `- type`
+      - `- locale`
+      - `- desc`
+  - **UpdateSqlAlarmRule**
+    - 请求参数变更
+      - `- frequency.type`
+      - `- frequency.cron_expr`
+      - `- frequency.hour_of_day`
+      - `- frequency.day_of_week`
+      - `- frequency.fixed_rate`
+      - `- frequency.fixed_rate_unit`
+      - `- notification_save_rule.language`
+      - `- notification_save_rule.timezone`
+      - `- notification_save_rule.user_name`
+      - `- notification_save_rule.topics`
+      - `- notification_save_rule.template_name`
+    - 响应参数变更
+      - `- frequency.type`
+      - `- frequency.cron_expr`
+      - `- frequency.hour_of_day`
+      - `- frequency.day_of_week`
+      - `- frequency.fixed_rate`
+      - `- frequency.fixed_rate_unit`
+  - **CreateSqlAlarmRule**
+    - 请求参数变更
+      - `- frequency.type`
+      - `- frequency.cron_expr`
+      - `- frequency.hour_of_day`
+      - `- frequency.day_of_week`
+      - `- frequency.fixed_rate`
+      - `- frequency.fixed_rate_unit`
+      - `- notification_save_rule.language`
+      - `- notification_save_rule.timezone`
+      - `- notification_save_rule.user_name`
+      - `- notification_save_rule.topics`
+      - `- notification_save_rule.template_name`
+  - **ListSqlAlarmRules**
+    - 响应参数变更
+      - `- sql_alarm_rules.frequency.type`
+      - `- sql_alarm_rules.frequency.cron_expr`
+      - `- sql_alarm_rules.frequency.hour_of_day`
+      - `- sql_alarm_rules.frequency.day_of_week`
+      - `- sql_alarm_rules.frequency.fixed_rate`
+      - `- sql_alarm_rules.frequency.fixed_rate_unit`
+  - **UpdateKeywordsAlarmRule**
+    - 请求参数变更
+      - `- frequency.type`
+      - `- frequency.cron_expr`
+      - `- frequency.hour_of_day`
+      - `- frequency.day_of_week`
+      - `- frequency.fixed_rate`
+      - `- frequency.fixed_rate_unit`
+      - `- notification_save_rule.language`
+      - `- notification_save_rule.timezone`
+      - `- notification_save_rule.user_name`
+      - `- notification_save_rule.topics`
+      - `- notification_save_rule.template_name`
+  - **CreateKeywordsAlarmRule**
+    - 请求参数变更
+      - `- notification_save_rule.language`
+      - `- notification_save_rule.timezone`
+      - `- notification_save_rule.user_name`
+      - `- notification_save_rule.topics`
+      - `- notification_save_rule.template_name`
+  - **ListKeywordsAlarmRules**
+    - 响应参数变更
+      - `- keywords_alarm_rules.frequency.type`
+      - `- keywords_alarm_rules.frequency.cron_expr`
+      - `- keywords_alarm_rules.frequency.hour_of_day`
+      - `- keywords_alarm_rules.frequency.day_of_week`
+      - `- keywords_alarm_rules.frequency.fixed_rate`
+      - `- keywords_alarm_rules.frequency.fixed_rate_unit`
+
+### HuaweiCloud SDK Meeting
+
+- _新增特性_
+  - 支持接口`DeleteToken`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK Moderation
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **RunCreateVideoModerationJob**
+    - 请求参数变更
+      - `+ biz_type`
+  - **RunCreateAudioModerationJob**
+    - 请求参数变更
+      - `+ biz_type`
+  - **RunTextModeration**
+    - 请求参数变更
+      - `+ biz_type`
+  - **CheckImageModeration**
+    - 请求参数变更
+      - `+ biz_type`
+
+### HuaweiCloud SDK RDS
+
+- _新增特性_
+  - 支持接口`RestoreTablesNew`、`UpgradeDbVersionNew`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
 # 3.1.58 2023-09-07
 
 ### HuaweiCloud SDK AOS

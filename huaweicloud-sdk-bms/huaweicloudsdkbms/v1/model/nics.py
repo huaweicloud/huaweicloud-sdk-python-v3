@@ -18,15 +18,17 @@ class Nics:
 
     openapi_types = {
         'subnet_id': 'str',
-        'ip_address': 'str'
+        'ip_address': 'str',
+        'allowed_address_pairs': 'list[CreateServerNicAllowedAddressPairs]'
     }
 
     attribute_map = {
         'subnet_id': 'subnet_id',
-        'ip_address': 'ip_address'
+        'ip_address': 'ip_address',
+        'allowed_address_pairs': 'allowed_address_pairs'
     }
 
-    def __init__(self, subnet_id=None, ip_address=None):
+    def __init__(self, subnet_id=None, ip_address=None, allowed_address_pairs=None):
         """Nics
 
         The model defined in huaweicloud sdk
@@ -35,17 +37,22 @@ class Nics:
         :type subnet_id: str
         :param ip_address: 创建裸金属服务器网卡的IP地址，IPv4格式,约束：不填或空字符串，默认在网络（network）对应的子网中自动分配一个未使用的IP作网卡的IP地址。若指定IP地址，该IP地址必须在网络（network）对应的子网的网段内，且未被使用。
         :type ip_address: str
+        :param allowed_address_pairs: IP/Mac对列表， 约束：IP地址不允许为 “0.0.0.0/0” 如果allowed_address_pairs配置地址池较大的CIDR（掩码小于24位），建议为该port配置一个单独的安全组 如果allowed_address_pairs为“1.1.1.1/0”，表示关闭源目地址检查开关 被绑定的云服务器网卡allowed_address_pairs填“1.1.1.1/0”
+        :type allowed_address_pairs: list[:class:`huaweicloudsdkbms.v1.CreateServerNicAllowedAddressPairs`]
         """
         
         
 
         self._subnet_id = None
         self._ip_address = None
+        self._allowed_address_pairs = None
         self.discriminator = None
 
         self.subnet_id = subnet_id
         if ip_address is not None:
             self.ip_address = ip_address
+        if allowed_address_pairs is not None:
+            self.allowed_address_pairs = allowed_address_pairs
 
     @property
     def subnet_id(self):
@@ -90,6 +97,28 @@ class Nics:
         :type ip_address: str
         """
         self._ip_address = ip_address
+
+    @property
+    def allowed_address_pairs(self):
+        """Gets the allowed_address_pairs of this Nics.
+
+        IP/Mac对列表， 约束：IP地址不允许为 “0.0.0.0/0” 如果allowed_address_pairs配置地址池较大的CIDR（掩码小于24位），建议为该port配置一个单独的安全组 如果allowed_address_pairs为“1.1.1.1/0”，表示关闭源目地址检查开关 被绑定的云服务器网卡allowed_address_pairs填“1.1.1.1/0”
+
+        :return: The allowed_address_pairs of this Nics.
+        :rtype: list[:class:`huaweicloudsdkbms.v1.CreateServerNicAllowedAddressPairs`]
+        """
+        return self._allowed_address_pairs
+
+    @allowed_address_pairs.setter
+    def allowed_address_pairs(self, allowed_address_pairs):
+        """Sets the allowed_address_pairs of this Nics.
+
+        IP/Mac对列表， 约束：IP地址不允许为 “0.0.0.0/0” 如果allowed_address_pairs配置地址池较大的CIDR（掩码小于24位），建议为该port配置一个单独的安全组 如果allowed_address_pairs为“1.1.1.1/0”，表示关闭源目地址检查开关 被绑定的云服务器网卡allowed_address_pairs填“1.1.1.1/0”
+
+        :param allowed_address_pairs: The allowed_address_pairs of this Nics.
+        :type allowed_address_pairs: list[:class:`huaweicloudsdkbms.v1.CreateServerNicAllowedAddressPairs`]
+        """
+        self._allowed_address_pairs = allowed_address_pairs
 
     def to_dict(self):
         """Returns the model properties as a dict"""

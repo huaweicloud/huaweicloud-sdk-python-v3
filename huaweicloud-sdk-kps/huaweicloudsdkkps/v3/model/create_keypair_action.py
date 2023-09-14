@@ -41,11 +41,11 @@ class CreateKeypairAction:
 
         :param name: SSH密钥对的名称。 - 新创建的密钥对名称不能和已有密钥对的名称相同。 - SSH密钥对名称由英文字母、数字、下划线、中划线组成，长度不能超过64个字节
         :type name: str
-        :param type: SSH密钥对的类型
+        :param type: SSH密钥对的类型。ssh或x509。
         :type type: str
         :param public_key: 导入公钥的字符串信息。
         :type public_key: str
-        :param scope: 租户级或者用户级
+        :param scope: 租户级或者用户级。domain或user。
         :type scope: str
         :param user_id: SSH密钥对所属的用户信息
         :type user_id: str
@@ -101,7 +101,7 @@ class CreateKeypairAction:
     def type(self):
         """Gets the type of this CreateKeypairAction.
 
-        SSH密钥对的类型
+        SSH密钥对的类型。ssh或x509。
 
         :return: The type of this CreateKeypairAction.
         :rtype: str
@@ -112,7 +112,7 @@ class CreateKeypairAction:
     def type(self, type):
         """Sets the type of this CreateKeypairAction.
 
-        SSH密钥对的类型
+        SSH密钥对的类型。ssh或x509。
 
         :param type: The type of this CreateKeypairAction.
         :type type: str
@@ -145,7 +145,7 @@ class CreateKeypairAction:
     def scope(self):
         """Gets the scope of this CreateKeypairAction.
 
-        租户级或者用户级
+        租户级或者用户级。domain或user。
 
         :return: The scope of this CreateKeypairAction.
         :rtype: str
@@ -156,7 +156,7 @@ class CreateKeypairAction:
     def scope(self, scope):
         """Sets the scope of this CreateKeypairAction.
 
-        租户级或者用户级
+        租户级或者用户级。domain或user。
 
         :param scope: The scope of this CreateKeypairAction.
         :type scope: str

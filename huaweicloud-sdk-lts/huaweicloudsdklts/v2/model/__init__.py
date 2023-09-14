@@ -3,7 +3,6 @@
 from __future__ import absolute_import
 
 # import models into model package
-from huaweicloudsdklts.v2.model.access_config_base_log_info import AccessConfigBaseLogInfo
 from huaweicloudsdklts.v2.model.access_config_base_log_info_create import AccessConfigBaseLogInfoCreate
 from huaweicloudsdklts.v2.model.access_config_deatil_create import AccessConfigDeatilCreate
 from huaweicloudsdklts.v2.model.access_config_format_create import AccessConfigFormatCreate
@@ -24,7 +23,6 @@ from huaweicloudsdklts.v2.model.aom_mapping_rule_resp import AomMappingRuleResp
 from huaweicloudsdklts.v2.model.aom_mappingfiles_info import AomMappingfilesInfo
 from huaweicloudsdklts.v2.model.brief_struct_template_model import BriefStructTemplateModel
 from huaweicloudsdklts.v2.model.change_alarm_rule_status import ChangeAlarmRuleStatus
-from huaweicloudsdklts.v2.model.chart_config import ChartConfig
 from huaweicloudsdklts.v2.model.create_access_config_request import CreateAccessConfigRequest
 from huaweicloudsdklts.v2.model.create_access_config_request_body import CreateAccessConfigRequestBody
 from huaweicloudsdklts.v2.model.create_access_config_response import CreateAccessConfigResponse
@@ -114,7 +112,6 @@ from huaweicloudsdklts.v2.model.delete_transfer_request import DeleteTransferReq
 from huaweicloudsdklts.v2.model.delete_transfer_response import DeleteTransferResponse
 from huaweicloudsdklts.v2.model.deletefavorite_request import DeletefavoriteRequest
 from huaweicloudsdklts.v2.model.deletefavorite_response import DeletefavoriteResponse
-from huaweicloudsdklts.v2.model.demo_field import DemoField
 from huaweicloudsdklts.v2.model.disable_log_collection_request import DisableLogCollectionRequest
 from huaweicloudsdklts.v2.model.disable_log_collection_response import DisableLogCollectionResponse
 from huaweicloudsdklts.v2.model.enable_log_collection_request import EnableLogCollectionRequest
@@ -189,7 +186,7 @@ from huaweicloudsdklts.v2.model.list_transfers_request import ListTransfersReque
 from huaweicloudsdklts.v2.model.list_transfers_response import ListTransfersResponse
 from huaweicloudsdklts.v2.model.log_contents import LogContents
 from huaweicloudsdklts.v2.model.log_group import LogGroup
-from huaweicloudsdklts.v2.model.log_stream import LogStream
+from huaweicloudsdklts.v2.model.log_stream_res_body import LogStreamResBody
 from huaweicloudsdklts.v2.model.lts_struct_template_info import LtsStructTemplateInfo
 from huaweicloudsdklts.v2.model.metadata import Metadata
 from huaweicloudsdklts.v2.model.notification_template import NotificationTemplate
@@ -220,20 +217,16 @@ from huaweicloudsdklts.v2.model.show_struct_template_rule import ShowStructTempl
 from huaweicloudsdklts.v2.model.show_struct_templatecluster_info import ShowStructTemplateclusterInfo
 from huaweicloudsdklts.v2.model.sort import Sort
 from huaweicloudsdklts.v2.model.sql_alarm_rule_resp_list import SqlAlarmRuleRespList
-from huaweicloudsdklts.v2.model.sql_notification_save_rule import SqlNotificationSaveRule
 from huaweicloudsdklts.v2.model.sql_request import SqlRequest
 from huaweicloudsdklts.v2.model.struct_config import StructConfig
 from huaweicloudsdklts.v2.model.struct_field_info import StructFieldInfo
 from huaweicloudsdklts.v2.model.struct_field_info_return import StructFieldInfoReturn
 from huaweicloudsdklts.v2.model.struct_log_contents import StructLogContents
-from huaweicloudsdklts.v2.model.struct_template import StructTemplate
 from huaweicloudsdklts.v2.model.struct_template_model import StructTemplateModel
 from huaweicloudsdklts.v2.model.sub_template import SubTemplate
 from huaweicloudsdklts.v2.model.tag_field import TagField
-from huaweicloudsdklts.v2.model.tag_field_new import TagFieldNew
 from huaweicloudsdklts.v2.model.tag_fields_info import TagFieldsInfo
 from huaweicloudsdklts.v2.model.tags_body import TagsBody
-from huaweicloudsdklts.v2.model.template_rule import TemplateRule
 from huaweicloudsdklts.v2.model.time_range import TimeRange
 from huaweicloudsdklts.v2.model.timeline_traffic_statistics_request_body import TimelineTrafficStatisticsRequestBody
 from huaweicloudsdklts.v2.model.topics import Topics

@@ -48,10 +48,8 @@ class BatchCreateKmsTagsRequestBody:
         self._sequence = None
         self.discriminator = None
 
-        if tags is not None:
-            self.tags = tags
-        if action is not None:
-            self.action = action
+        self.tags = tags
+        self.action = action
         if sequence is not None:
             self.sequence = sequence
 

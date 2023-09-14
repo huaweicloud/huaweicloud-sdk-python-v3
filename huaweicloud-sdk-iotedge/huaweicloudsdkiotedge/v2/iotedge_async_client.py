@@ -330,6 +330,128 @@ class IoTEdgeAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def execute_device_controls_release_async(self, request):
+        """设备控制释放
+
+        设备控制释放
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ExecuteDeviceControlsRelease
+        :type request: :class:`huaweicloudsdkiotedge.v2.ExecuteDeviceControlsReleaseRequest`
+        :rtype: :class:`huaweicloudsdkiotedge.v2.ExecuteDeviceControlsReleaseResponse`
+        """
+        return self._execute_device_controls_release_with_http_info(request)
+
+    def _execute_device_controls_release_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'edge_node_id' in local_var_params:
+            path_params['edge_node_id'] = local_var_params['edge_node_id']
+        if 'device_id' in local_var_params:
+            path_params['device_id'] = local_var_params['device_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/edge-nodes/{edge_node_id}/devices/{device_id}/controls/release',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ExecuteDeviceControlsReleaseResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def execute_device_controls_set_async(self, request):
+        """设备控制设置
+
+        设备控制设置
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ExecuteDeviceControlsSet
+        :type request: :class:`huaweicloudsdkiotedge.v2.ExecuteDeviceControlsSetRequest`
+        :rtype: :class:`huaweicloudsdkiotedge.v2.ExecuteDeviceControlsSetResponse`
+        """
+        return self._execute_device_controls_set_with_http_info(request)
+
+    def _execute_device_controls_set_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'edge_node_id' in local_var_params:
+            path_params['edge_node_id'] = local_var_params['edge_node_id']
+        if 'device_id' in local_var_params:
+            path_params['device_id'] = local_var_params['device_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/edge-nodes/{edge_node_id}/devices/{device_id}/controls/set',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ExecuteDeviceControlsSetResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def add_device_async(self, request):
         """添加设备
 
@@ -3575,6 +3697,185 @@ class IoTEdgeAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ShowPointsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_schedule_async(self, request):
+        """创建调度计划
+
+        用户通过北向接口在指定边缘节点上创建调度计划
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateSchedule
+        :type request: :class:`huaweicloudsdkiotedge.v2.CreateScheduleRequest`
+        :rtype: :class:`huaweicloudsdkiotedge.v2.CreateScheduleResponse`
+        """
+        return self._create_schedule_with_http_info(request)
+
+    def _create_schedule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'edge_node_id' in local_var_params:
+            path_params['edge_node_id'] = local_var_params['edge_node_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/edge-nodes/{edge_node_id}/schedules',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateScheduleResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_schedule_async(self, request):
+        """删除调度计划
+
+        用户通过北向接口删除边缘节点上调度计划
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteSchedule
+        :type request: :class:`huaweicloudsdkiotedge.v2.DeleteScheduleRequest`
+        :rtype: :class:`huaweicloudsdkiotedge.v2.DeleteScheduleResponse`
+        """
+        return self._delete_schedule_with_http_info(request)
+
+    def _delete_schedule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'edge_node_id' in local_var_params:
+            path_params['edge_node_id'] = local_var_params['edge_node_id']
+        if 'schedule_id' in local_var_params:
+            path_params['schedule_id'] = local_var_params['schedule_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/edge-nodes/{edge_node_id}/schedules/{schedule_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteScheduleResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_schedule_async(self, request):
+        """更新调度计划，机机接口，全量更新字段
+
+        用户通过北向接口修改边缘节点上调度计划
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateSchedule
+        :type request: :class:`huaweicloudsdkiotedge.v2.UpdateScheduleRequest`
+        :rtype: :class:`huaweicloudsdkiotedge.v2.UpdateScheduleResponse`
+        """
+        return self._update_schedule_with_http_info(request)
+
+    def _update_schedule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'edge_node_id' in local_var_params:
+            path_params['edge_node_id'] = local_var_params['edge_node_id']
+        if 'schedule_id' in local_var_params:
+            path_params['schedule_id'] = local_var_params['schedule_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/edge-nodes/{edge_node_id}/schedules/{schedule_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateScheduleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

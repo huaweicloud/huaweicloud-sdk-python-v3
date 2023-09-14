@@ -2323,8 +2323,6 @@ class LtsClient(Client):
             path_params['log_group_id'] = local_var_params['log_group_id']
 
         query_params = []
-        if 'tag' in local_var_params:
-            query_params.append(('tag', local_var_params['tag']))
 
         header_params = {}
 

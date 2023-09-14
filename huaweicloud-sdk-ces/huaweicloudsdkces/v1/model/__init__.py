@@ -76,6 +76,8 @@ from huaweicloudsdkces.v1.model.show_alarm_request import ShowAlarmRequest
 from huaweicloudsdkces.v1.model.show_alarm_response import ShowAlarmResponse
 from huaweicloudsdkces.v1.model.show_event_data_request import ShowEventDataRequest
 from huaweicloudsdkces.v1.model.show_event_data_response import ShowEventDataResponse
+from huaweicloudsdkces.v1.model.show_event_item import ShowEventItem
+from huaweicloudsdkces.v1.model.show_event_item_detail import ShowEventItemDetail
 from huaweicloudsdkces.v1.model.show_metric_data_request import ShowMetricDataRequest
 from huaweicloudsdkces.v1.model.show_metric_data_response import ShowMetricDataResponse
 from huaweicloudsdkces.v1.model.show_quotas_request import ShowQuotasRequest

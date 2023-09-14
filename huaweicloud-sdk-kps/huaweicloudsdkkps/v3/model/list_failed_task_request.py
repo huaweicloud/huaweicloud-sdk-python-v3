@@ -17,8 +17,8 @@ class ListFailedTaskRequest:
     sensitive_list = []
 
     openapi_types = {
-        'limit': 'str',
-        'offset': 'str'
+        'limit': 'int',
+        'offset': 'int'
     }
 
     attribute_map = {
@@ -31,10 +31,10 @@ class ListFailedTaskRequest:
 
         The model defined in huaweicloud sdk
 
-        :param limit: 每页返回的个数。 默认值：50。 
-        :type limit: str
-        :param offset: 偏移量，表示从此偏移量开始查询， offset大于等于0 
-        :type offset: str
+        :param limit: 每页显示的条目数量。默认值1000。
+        :type limit: int
+        :param offset: 失败的任务信息列表的偏移量
+        :type offset: int
         """
         
         
@@ -52,10 +52,10 @@ class ListFailedTaskRequest:
     def limit(self):
         """Gets the limit of this ListFailedTaskRequest.
 
-        每页返回的个数。 默认值：50。 
+        每页显示的条目数量。默认值1000。
 
         :return: The limit of this ListFailedTaskRequest.
-        :rtype: str
+        :rtype: int
         """
         return self._limit
 
@@ -63,10 +63,10 @@ class ListFailedTaskRequest:
     def limit(self, limit):
         """Sets the limit of this ListFailedTaskRequest.
 
-        每页返回的个数。 默认值：50。 
+        每页显示的条目数量。默认值1000。
 
         :param limit: The limit of this ListFailedTaskRequest.
-        :type limit: str
+        :type limit: int
         """
         self._limit = limit
 
@@ -74,10 +74,10 @@ class ListFailedTaskRequest:
     def offset(self):
         """Gets the offset of this ListFailedTaskRequest.
 
-        偏移量，表示从此偏移量开始查询， offset大于等于0 
+        失败的任务信息列表的偏移量
 
         :return: The offset of this ListFailedTaskRequest.
-        :rtype: str
+        :rtype: int
         """
         return self._offset
 
@@ -85,10 +85,10 @@ class ListFailedTaskRequest:
     def offset(self, offset):
         """Sets the offset of this ListFailedTaskRequest.
 
-        偏移量，表示从此偏移量开始查询， offset大于等于0 
+        失败的任务信息列表的偏移量
 
         :param offset: The offset of this ListFailedTaskRequest.
-        :type offset: str
+        :type offset: int
         """
         self._offset = offset
 

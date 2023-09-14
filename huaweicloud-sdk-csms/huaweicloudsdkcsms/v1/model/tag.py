@@ -31,9 +31,9 @@ class Tag:
 
         The model defined in huaweicloud sdk
 
-        :param key: 键。 最大长度36个unicode字符。 key不能为空。不能包含非打印字符“ASCII(0-31)”、“*”、“&lt;”、“&gt;”、“\\”、“&#x3D;”。
+        :param key: 标签键。
         :type key: str
-        :param values: 标签值集合
+        :param values: 标签值集合。  约束：最多包含10个value。标签列表中的标签value值不允许重复。标签列表如果为空列表，表示匹配任意值。标签列表中多个value之间是“或”的关系，在key已经满足要求的前提下，满足请求中的某个value就会匹配出来。
         :type values: list[str]
         """
         
@@ -52,7 +52,7 @@ class Tag:
     def key(self):
         """Gets the key of this Tag.
 
-        键。 最大长度36个unicode字符。 key不能为空。不能包含非打印字符“ASCII(0-31)”、“*”、“<”、“>”、“\\”、“=”。
+        标签键。
 
         :return: The key of this Tag.
         :rtype: str
@@ -63,7 +63,7 @@ class Tag:
     def key(self, key):
         """Sets the key of this Tag.
 
-        键。 最大长度36个unicode字符。 key不能为空。不能包含非打印字符“ASCII(0-31)”、“*”、“<”、“>”、“\\”、“=”。
+        标签键。
 
         :param key: The key of this Tag.
         :type key: str
@@ -74,7 +74,7 @@ class Tag:
     def values(self):
         """Gets the values of this Tag.
 
-        标签值集合
+        标签值集合。  约束：最多包含10个value。标签列表中的标签value值不允许重复。标签列表如果为空列表，表示匹配任意值。标签列表中多个value之间是“或”的关系，在key已经满足要求的前提下，满足请求中的某个value就会匹配出来。
 
         :return: The values of this Tag.
         :rtype: list[str]
@@ -85,7 +85,7 @@ class Tag:
     def values(self, values):
         """Sets the values of this Tag.
 
-        标签值集合
+        标签值集合。  约束：最多包含10个value。标签列表中的标签value值不允许重复。标签列表如果为空列表，表示匹配任意值。标签列表中多个value之间是“或”的关系，在key已经满足要求的前提下，满足请求中的某个value就会匹配出来。
 
         :param values: The values of this Tag.
         :type values: list[str]

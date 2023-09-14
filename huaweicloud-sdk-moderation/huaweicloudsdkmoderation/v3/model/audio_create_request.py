@@ -18,6 +18,7 @@ class AudioCreateRequest:
 
     openapi_types = {
         'data': 'AudioInputBody',
+        'biz_type': 'str',
         'event_type': 'str',
         'categories': 'list[str]',
         'param_callback': 'str'
@@ -25,18 +26,21 @@ class AudioCreateRequest:
 
     attribute_map = {
         'data': 'data',
+        'biz_type': 'biz_type',
         'event_type': 'event_type',
         'categories': 'categories',
         'param_callback': 'callback'
     }
 
-    def __init__(self, data=None, event_type=None, categories=None, param_callback=None):
+    def __init__(self, data=None, biz_type=None, event_type=None, categories=None, param_callback=None):
         """AudioCreateRequest
 
         The model defined in huaweicloud sdk
 
         :param data: 
         :type data: :class:`huaweicloudsdkmoderation.v3.AudioInputBody`
+        :param biz_type: 用户在控制台界面创建的biz_type名称，如果请求参数中传了biz_type则优先使用biz_type；如果用户没传biz_type则event_type和categories必须传。
+        :type biz_type: str
         :param event_type: 事件类型，可选值如下： default：默认事件 audiobook：有声书 education：教育音频 game：游戏语音房 live：秀场直播 ecommerce：电商直播 voiceroom：交友语音房 private：私密语音聊天
         :type event_type: str
         :param categories: 需要检测的风险类型，列表不能为空。 风险类型如下： - porn：涉黄检测 - ad：广告检测 - moan：娇喘检测 - abuse：辱骂检测
@@ -48,14 +52,19 @@ class AudioCreateRequest:
         
 
         self._data = None
+        self._biz_type = None
         self._event_type = None
         self._categories = None
         self._param_callback = None
         self.discriminator = None
 
         self.data = data
-        self.event_type = event_type
-        self.categories = categories
+        if biz_type is not None:
+            self.biz_type = biz_type
+        if event_type is not None:
+            self.event_type = event_type
+        if categories is not None:
+            self.categories = categories
         if param_callback is not None:
             self.param_callback = param_callback
 
@@ -76,6 +85,28 @@ class AudioCreateRequest:
         :type data: :class:`huaweicloudsdkmoderation.v3.AudioInputBody`
         """
         self._data = data
+
+    @property
+    def biz_type(self):
+        """Gets the biz_type of this AudioCreateRequest.
+
+        用户在控制台界面创建的biz_type名称，如果请求参数中传了biz_type则优先使用biz_type；如果用户没传biz_type则event_type和categories必须传。
+
+        :return: The biz_type of this AudioCreateRequest.
+        :rtype: str
+        """
+        return self._biz_type
+
+    @biz_type.setter
+    def biz_type(self, biz_type):
+        """Sets the biz_type of this AudioCreateRequest.
+
+        用户在控制台界面创建的biz_type名称，如果请求参数中传了biz_type则优先使用biz_type；如果用户没传biz_type则event_type和categories必须传。
+
+        :param biz_type: The biz_type of this AudioCreateRequest.
+        :type biz_type: str
+        """
+        self._biz_type = biz_type
 
     @property
     def event_type(self):

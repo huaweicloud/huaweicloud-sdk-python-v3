@@ -66,6 +66,10 @@ from huaweicloudsdkevs.v2.model.list_volumes_request import ListVolumesRequest
 from huaweicloudsdkevs.v2.model.list_volumes_response import ListVolumesResponse
 from huaweicloudsdkevs.v2.model.match import Match
 from huaweicloudsdkevs.v2.model.media_types import MediaTypes
+from huaweicloudsdkevs.v2.model.modify_volume_qo_s_option import ModifyVolumeQoSOption
+from huaweicloudsdkevs.v2.model.modify_volume_qo_s_request import ModifyVolumeQoSRequest
+from huaweicloudsdkevs.v2.model.modify_volume_qo_s_request_body import ModifyVolumeQoSRequestBody
+from huaweicloudsdkevs.v2.model.modify_volume_qo_s_response import ModifyVolumeQoSResponse
 from huaweicloudsdkevs.v2.model.os_extend import OsExtend
 from huaweicloudsdkevs.v2.model.quota_detail import QuotaDetail
 from huaweicloudsdkevs.v2.model.quota_detail_backup_gigabytes import QuotaDetailBackupGigabytes

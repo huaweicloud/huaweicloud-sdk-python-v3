@@ -45,8 +45,7 @@ class KeyProtection:
 
         if private_key is not None:
             self.private_key = private_key
-        if encryption is not None:
-            self.encryption = encryption
+        self.encryption = encryption
 
     @property
     def private_key(self):

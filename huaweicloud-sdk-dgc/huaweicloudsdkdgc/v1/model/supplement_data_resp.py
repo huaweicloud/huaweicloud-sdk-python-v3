@@ -17,15 +17,15 @@ class SupplementDataResp:
     sensitive_list = []
 
     openapi_types = {
-        'end_date': 'float',
+        'end_date': 'int',
         'job_list': 'list[str]',
         'name': 'str',
         'parallel': 'int',
-        'start_date': 'float',
+        'start_date': 'int',
         'status': 'str',
-        'submitted_date': 'float',
-        'supplement_data_instance_time': 'object',
-        'supplement_data_run_time': 'object',
+        'submitted_date': 'int',
+        'supplement_data_instance_time': 'SupplementDataRespSupplementDataInstanceTime',
+        'supplement_data_run_time': 'SupplementDataRespSupplementDataRunTime',
         'type': 'int',
         'user_name': 'str'
     }
@@ -49,27 +49,27 @@ class SupplementDataResp:
 
         The model defined in huaweicloud sdk
 
-        :param end_date: 
-        :type end_date: float
-        :param job_list: 
+        :param end_date: 作业的开始日期 13位时间戳
+        :type end_date: int
+        :param job_list: 补数据作业名称，可能有依赖的作业，故会有多个作业的情况。
         :type job_list: list[str]
-        :param name: 
+        :param name: 补数据名称
         :type name: str
-        :param parallel: 
+        :param parallel: 并行周期数，取值范围[1,5]
         :type parallel: int
-        :param start_date: 
-        :type start_date: float
-        :param status: 
+        :param start_date: 作业的结束日期 13位时间戳
+        :type start_date: int
+        :param status: 实例状态：SUCCESS：成功RUNNING ：运行中CANCLE：取消
         :type status: str
-        :param submitted_date: 
-        :type submitted_date: float
+        :param submitted_date: 作业提交时间，13位时间戳
+        :type submitted_date: int
         :param supplement_data_instance_time: 
-        :type supplement_data_instance_time: object
+        :type supplement_data_instance_time: :class:`huaweicloudsdkdgc.v1.SupplementDataRespSupplementDataInstanceTime`
         :param supplement_data_run_time: 
-        :type supplement_data_run_time: object
-        :param type: 
+        :type supplement_data_run_time: :class:`huaweicloudsdkdgc.v1.SupplementDataRespSupplementDataRunTime`
+        :param type: 触发补数据的类型，取值范围[0, 1]。0代表作业监控界面触发的补数据，1代表恢复动作触发的补数据
         :type type: int
-        :param user_name: 
+        :param user_name: 用户名称
         :type user_name: str
         """
         
@@ -115,8 +115,10 @@ class SupplementDataResp:
     def end_date(self):
         """Gets the end_date of this SupplementDataResp.
 
+        作业的开始日期 13位时间戳
+
         :return: The end_date of this SupplementDataResp.
-        :rtype: float
+        :rtype: int
         """
         return self._end_date
 
@@ -124,14 +126,18 @@ class SupplementDataResp:
     def end_date(self, end_date):
         """Sets the end_date of this SupplementDataResp.
 
+        作业的开始日期 13位时间戳
+
         :param end_date: The end_date of this SupplementDataResp.
-        :type end_date: float
+        :type end_date: int
         """
         self._end_date = end_date
 
     @property
     def job_list(self):
         """Gets the job_list of this SupplementDataResp.
+
+        补数据作业名称，可能有依赖的作业，故会有多个作业的情况。
 
         :return: The job_list of this SupplementDataResp.
         :rtype: list[str]
@@ -142,6 +148,8 @@ class SupplementDataResp:
     def job_list(self, job_list):
         """Sets the job_list of this SupplementDataResp.
 
+        补数据作业名称，可能有依赖的作业，故会有多个作业的情况。
+
         :param job_list: The job_list of this SupplementDataResp.
         :type job_list: list[str]
         """
@@ -150,6 +158,8 @@ class SupplementDataResp:
     @property
     def name(self):
         """Gets the name of this SupplementDataResp.
+
+        补数据名称
 
         :return: The name of this SupplementDataResp.
         :rtype: str
@@ -160,6 +170,8 @@ class SupplementDataResp:
     def name(self, name):
         """Sets the name of this SupplementDataResp.
 
+        补数据名称
+
         :param name: The name of this SupplementDataResp.
         :type name: str
         """
@@ -168,6 +180,8 @@ class SupplementDataResp:
     @property
     def parallel(self):
         """Gets the parallel of this SupplementDataResp.
+
+        并行周期数，取值范围[1,5]
 
         :return: The parallel of this SupplementDataResp.
         :rtype: int
@@ -178,6 +192,8 @@ class SupplementDataResp:
     def parallel(self, parallel):
         """Sets the parallel of this SupplementDataResp.
 
+        并行周期数，取值范围[1,5]
+
         :param parallel: The parallel of this SupplementDataResp.
         :type parallel: int
         """
@@ -187,8 +203,10 @@ class SupplementDataResp:
     def start_date(self):
         """Gets the start_date of this SupplementDataResp.
 
+        作业的结束日期 13位时间戳
+
         :return: The start_date of this SupplementDataResp.
-        :rtype: float
+        :rtype: int
         """
         return self._start_date
 
@@ -196,14 +214,18 @@ class SupplementDataResp:
     def start_date(self, start_date):
         """Sets the start_date of this SupplementDataResp.
 
+        作业的结束日期 13位时间戳
+
         :param start_date: The start_date of this SupplementDataResp.
-        :type start_date: float
+        :type start_date: int
         """
         self._start_date = start_date
 
     @property
     def status(self):
         """Gets the status of this SupplementDataResp.
+
+        实例状态：SUCCESS：成功RUNNING ：运行中CANCLE：取消
 
         :return: The status of this SupplementDataResp.
         :rtype: str
@@ -214,6 +236,8 @@ class SupplementDataResp:
     def status(self, status):
         """Sets the status of this SupplementDataResp.
 
+        实例状态：SUCCESS：成功RUNNING ：运行中CANCLE：取消
+
         :param status: The status of this SupplementDataResp.
         :type status: str
         """
@@ -223,8 +247,10 @@ class SupplementDataResp:
     def submitted_date(self):
         """Gets the submitted_date of this SupplementDataResp.
 
+        作业提交时间，13位时间戳
+
         :return: The submitted_date of this SupplementDataResp.
-        :rtype: float
+        :rtype: int
         """
         return self._submitted_date
 
@@ -232,8 +258,10 @@ class SupplementDataResp:
     def submitted_date(self, submitted_date):
         """Sets the submitted_date of this SupplementDataResp.
 
+        作业提交时间，13位时间戳
+
         :param submitted_date: The submitted_date of this SupplementDataResp.
-        :type submitted_date: float
+        :type submitted_date: int
         """
         self._submitted_date = submitted_date
 
@@ -242,7 +270,7 @@ class SupplementDataResp:
         """Gets the supplement_data_instance_time of this SupplementDataResp.
 
         :return: The supplement_data_instance_time of this SupplementDataResp.
-        :rtype: object
+        :rtype: :class:`huaweicloudsdkdgc.v1.SupplementDataRespSupplementDataInstanceTime`
         """
         return self._supplement_data_instance_time
 
@@ -251,7 +279,7 @@ class SupplementDataResp:
         """Sets the supplement_data_instance_time of this SupplementDataResp.
 
         :param supplement_data_instance_time: The supplement_data_instance_time of this SupplementDataResp.
-        :type supplement_data_instance_time: object
+        :type supplement_data_instance_time: :class:`huaweicloudsdkdgc.v1.SupplementDataRespSupplementDataInstanceTime`
         """
         self._supplement_data_instance_time = supplement_data_instance_time
 
@@ -260,7 +288,7 @@ class SupplementDataResp:
         """Gets the supplement_data_run_time of this SupplementDataResp.
 
         :return: The supplement_data_run_time of this SupplementDataResp.
-        :rtype: object
+        :rtype: :class:`huaweicloudsdkdgc.v1.SupplementDataRespSupplementDataRunTime`
         """
         return self._supplement_data_run_time
 
@@ -269,13 +297,15 @@ class SupplementDataResp:
         """Sets the supplement_data_run_time of this SupplementDataResp.
 
         :param supplement_data_run_time: The supplement_data_run_time of this SupplementDataResp.
-        :type supplement_data_run_time: object
+        :type supplement_data_run_time: :class:`huaweicloudsdkdgc.v1.SupplementDataRespSupplementDataRunTime`
         """
         self._supplement_data_run_time = supplement_data_run_time
 
     @property
     def type(self):
         """Gets the type of this SupplementDataResp.
+
+        触发补数据的类型，取值范围[0, 1]。0代表作业监控界面触发的补数据，1代表恢复动作触发的补数据
 
         :return: The type of this SupplementDataResp.
         :rtype: int
@@ -286,6 +316,8 @@ class SupplementDataResp:
     def type(self, type):
         """Sets the type of this SupplementDataResp.
 
+        触发补数据的类型，取值范围[0, 1]。0代表作业监控界面触发的补数据，1代表恢复动作触发的补数据
+
         :param type: The type of this SupplementDataResp.
         :type type: int
         """
@@ -295,6 +327,8 @@ class SupplementDataResp:
     def user_name(self):
         """Gets the user_name of this SupplementDataResp.
 
+        用户名称
+
         :return: The user_name of this SupplementDataResp.
         :rtype: str
         """
@@ -303,6 +337,8 @@ class SupplementDataResp:
     @user_name.setter
     def user_name(self, user_name):
         """Sets the user_name of this SupplementDataResp.
+
+        用户名称
 
         :param user_name: The user_name of this SupplementDataResp.
         :type user_name: str

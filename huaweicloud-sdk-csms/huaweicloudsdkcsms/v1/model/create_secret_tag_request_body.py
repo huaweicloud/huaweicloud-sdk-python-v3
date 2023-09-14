@@ -38,8 +38,7 @@ class CreateSecretTagRequestBody:
         self._tag = None
         self.discriminator = None
 
-        if tag is not None:
-            self.tag = tag
+        self.tag = tag
 
     @property
     def tag(self):

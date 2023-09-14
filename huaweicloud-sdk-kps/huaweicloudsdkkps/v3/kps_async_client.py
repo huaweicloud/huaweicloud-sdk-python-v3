@@ -81,6 +81,120 @@ class KpsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def batch_associate_keypair_async(self, request):
+        """批量绑定SSH密钥对
+
+        给指定的虚拟机批量绑定新的SSH密钥对。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchAssociateKeypair
+        :type request: :class:`huaweicloudsdkkps.v3.BatchAssociateKeypairRequest`
+        :rtype: :class:`huaweicloudsdkkps.v3.BatchAssociateKeypairResponse`
+        """
+        return self._batch_associate_keypair_with_http_info(request)
+
+    def _batch_associate_keypair_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/keypairs/batch-associate',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='BatchAssociateKeypairResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def clear_private_key_async(self, request):
+        """清除私钥
+
+        清除SSH密钥对私钥。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ClearPrivateKey
+        :type request: :class:`huaweicloudsdkkps.v3.ClearPrivateKeyRequest`
+        :rtype: :class:`huaweicloudsdkkps.v3.ClearPrivateKeyResponse`
+        """
+        return self._clear_private_key_with_http_info(request)
+
+    def _clear_private_key_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'keypair_name' in local_var_params:
+            path_params['keypair_name'] = local_var_params['keypair_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/keypairs/{keypair_name}/private-key',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ClearPrivateKeyResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def create_keypair_async(self, request):
         """创建和导入SSH密钥对
 
@@ -359,6 +473,120 @@ class KpsAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='DisassociateKeypairResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def export_private_key_async(self, request):
+        """导出私钥
+
+        导出指定密钥对的私钥。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ExportPrivateKey
+        :type request: :class:`huaweicloudsdkkps.v3.ExportPrivateKeyRequest`
+        :rtype: :class:`huaweicloudsdkkps.v3.ExportPrivateKeyResponse`
+        """
+        return self._export_private_key_with_http_info(request)
+
+    def _export_private_key_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/keypairs/private-key/export',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ExportPrivateKeyResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def import_private_key_async(self, request):
+        """导入私钥
+
+        导入私钥到指定密钥对。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ImportPrivateKey
+        :type request: :class:`huaweicloudsdkkps.v3.ImportPrivateKeyRequest`
+        :rtype: :class:`huaweicloudsdkkps.v3.ImportPrivateKeyResponse`
+        """
+        return self._import_private_key_with_http_info(request)
+
+    def _import_private_key_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/keypairs/private-key/import',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ImportPrivateKeyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

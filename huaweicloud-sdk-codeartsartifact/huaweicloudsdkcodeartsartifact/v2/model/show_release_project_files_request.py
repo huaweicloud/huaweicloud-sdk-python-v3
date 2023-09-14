@@ -41,7 +41,7 @@ class ShowReleaseProjectFilesRequest:
         :type limit: int
         :param offset: 偏移量，表示从此偏移量开始查询， offset大于等于0
         :type offset: int
-        :param project_id: 华为云devcloud的项目id
+        :param project_id: 项目id
         :type project_id: str
         """
         
@@ -130,7 +130,7 @@ class ShowReleaseProjectFilesRequest:
     def project_id(self):
         """Gets the project_id of this ShowReleaseProjectFilesRequest.
 
-        华为云devcloud的项目id
+        项目id
 
         :return: The project_id of this ShowReleaseProjectFilesRequest.
         :rtype: str
@@ -141,7 +141,7 @@ class ShowReleaseProjectFilesRequest:
     def project_id(self, project_id):
         """Sets the project_id of this ShowReleaseProjectFilesRequest.
 
-        华为云devcloud的项目id
+        项目id
 
         :param project_id: The project_id of this ShowReleaseProjectFilesRequest.
         :type project_id: str

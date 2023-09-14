@@ -79,7 +79,8 @@ class CreateElasticResourcePoolRequestBody:
         if cidr_in_vpc is not None:
             self.cidr_in_vpc = cidr_in_vpc
         self.max_cu = max_cu
-        self.charging_mode = charging_mode
+        if charging_mode is not None:
+            self.charging_mode = charging_mode
         self.min_cu = min_cu
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id

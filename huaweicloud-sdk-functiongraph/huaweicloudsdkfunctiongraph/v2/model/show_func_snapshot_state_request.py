@@ -17,28 +17,34 @@ class ShowFuncSnapshotStateRequest:
     sensitive_list = []
 
     openapi_types = {
-        'function_urn': 'str'
+        'function_urn': 'str',
+        'action': 'str'
     }
 
     attribute_map = {
-        'function_urn': 'function_urn'
+        'function_urn': 'function_urn',
+        'action': 'action'
     }
 
-    def __init__(self, function_urn=None):
+    def __init__(self, function_urn=None, action=None):
         """ShowFuncSnapshotStateRequest
 
         The model defined in huaweicloud sdk
 
         :param function_urn: 函数的URN，详细解释见FunctionGraph函数模型的描述。
         :type function_urn: str
+        :param action: 查询快照制作开关状态
+        :type action: str
         """
         
         
 
         self._function_urn = None
+        self._action = None
         self.discriminator = None
 
         self.function_urn = function_urn
+        self.action = action
 
     @property
     def function_urn(self):
@@ -61,6 +67,28 @@ class ShowFuncSnapshotStateRequest:
         :type function_urn: str
         """
         self._function_urn = function_urn
+
+    @property
+    def action(self):
+        """Gets the action of this ShowFuncSnapshotStateRequest.
+
+        查询快照制作开关状态
+
+        :return: The action of this ShowFuncSnapshotStateRequest.
+        :rtype: str
+        """
+        return self._action
+
+    @action.setter
+    def action(self, action):
+        """Sets the action of this ShowFuncSnapshotStateRequest.
+
+        查询快照制作开关状态
+
+        :param action: The action of this ShowFuncSnapshotStateRequest.
+        :type action: str
+        """
+        self._action = action
 
     def to_dict(self):
         """Returns the model properties as a dict"""

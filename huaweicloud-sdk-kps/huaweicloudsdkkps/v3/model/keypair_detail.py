@@ -30,7 +30,9 @@ class KeypairDetail:
         'create_time': 'int',
         'delete_time': 'int',
         'update_time': 'int',
-        'frozen_state': 'int'
+        'frozen_state': 'int',
+        'key_id': 'str',
+        'algorithm': 'str'
     }
 
     attribute_map = {
@@ -47,10 +49,12 @@ class KeypairDetail:
         'create_time': 'create_time',
         'delete_time': 'delete_time',
         'update_time': 'update_time',
-        'frozen_state': 'frozen_state'
+        'frozen_state': 'frozen_state',
+        'key_id': 'key_id',
+        'algorithm': 'algorithm'
     }
 
-    def __init__(self, name=None, id=None, type=None, scope=None, public_key=None, fingerprint=None, is_key_protection=None, deleted=None, description=None, user_id=None, create_time=None, delete_time=None, update_time=None, frozen_state=None):
+    def __init__(self, name=None, id=None, type=None, scope=None, public_key=None, fingerprint=None, is_key_protection=None, deleted=None, description=None, user_id=None, create_time=None, delete_time=None, update_time=None, frozen_state=None, key_id=None, algorithm=None):
         """KeypairDetail
 
         The model defined in huaweicloud sdk
@@ -59,9 +63,9 @@ class KeypairDetail:
         :type name: str
         :param id: SSH密钥对的ID
         :type id: int
-        :param type: SSH密钥对的类型
+        :param type: SSH密钥对的类型。ssh或x509。
         :type type: str
-        :param scope: 租户级或者用户级
+        :param scope: 租户级或者用户级。domain或user。
         :type scope: str
         :param public_key: SSH密钥对对应的publicKey信息
         :type public_key: str
@@ -83,6 +87,10 @@ class KeypairDetail:
         :type update_time: int
         :param frozen_state: 冻结状态 - 0：正常状态 - 1：普通冻结 - 2：公安冻结 - 3：普通冻结及公安冻结 - 4：违规冻结 - 5：普通冻结及违规冻结 - 6：公安冻结及违规冻结 - 7：普通冻结、公安冻结及违规冻结 - 8：未实名认证冻结 - 9：普通冻结及未实名认证冻结 - 10：公安冻结及未实名认证冻结
         :type frozen_state: int
+        :param key_id: 密钥ID。
+        :type key_id: str
+        :param algorithm: 生成算法。
+        :type algorithm: str
         """
         
         
@@ -101,6 +109,8 @@ class KeypairDetail:
         self._delete_time = None
         self._update_time = None
         self._frozen_state = None
+        self._key_id = None
+        self._algorithm = None
         self.discriminator = None
 
         if name is not None:
@@ -131,6 +141,10 @@ class KeypairDetail:
             self.update_time = update_time
         if frozen_state is not None:
             self.frozen_state = frozen_state
+        if key_id is not None:
+            self.key_id = key_id
+        if algorithm is not None:
+            self.algorithm = algorithm
 
     @property
     def name(self):
@@ -180,7 +194,7 @@ class KeypairDetail:
     def type(self):
         """Gets the type of this KeypairDetail.
 
-        SSH密钥对的类型
+        SSH密钥对的类型。ssh或x509。
 
         :return: The type of this KeypairDetail.
         :rtype: str
@@ -191,7 +205,7 @@ class KeypairDetail:
     def type(self, type):
         """Sets the type of this KeypairDetail.
 
-        SSH密钥对的类型
+        SSH密钥对的类型。ssh或x509。
 
         :param type: The type of this KeypairDetail.
         :type type: str
@@ -202,7 +216,7 @@ class KeypairDetail:
     def scope(self):
         """Gets the scope of this KeypairDetail.
 
-        租户级或者用户级
+        租户级或者用户级。domain或user。
 
         :return: The scope of this KeypairDetail.
         :rtype: str
@@ -213,7 +227,7 @@ class KeypairDetail:
     def scope(self, scope):
         """Sets the scope of this KeypairDetail.
 
-        租户级或者用户级
+        租户级或者用户级。domain或user。
 
         :param scope: The scope of this KeypairDetail.
         :type scope: str
@@ -439,6 +453,50 @@ class KeypairDetail:
         :type frozen_state: int
         """
         self._frozen_state = frozen_state
+
+    @property
+    def key_id(self):
+        """Gets the key_id of this KeypairDetail.
+
+        密钥ID。
+
+        :return: The key_id of this KeypairDetail.
+        :rtype: str
+        """
+        return self._key_id
+
+    @key_id.setter
+    def key_id(self, key_id):
+        """Sets the key_id of this KeypairDetail.
+
+        密钥ID。
+
+        :param key_id: The key_id of this KeypairDetail.
+        :type key_id: str
+        """
+        self._key_id = key_id
+
+    @property
+    def algorithm(self):
+        """Gets the algorithm of this KeypairDetail.
+
+        生成算法。
+
+        :return: The algorithm of this KeypairDetail.
+        :rtype: str
+        """
+        return self._algorithm
+
+    @algorithm.setter
+    def algorithm(self, algorithm):
+        """Sets the algorithm of this KeypairDetail.
+
+        生成算法。
+
+        :param algorithm: The algorithm of this KeypairDetail.
+        :type algorithm: str
+        """
+        self._algorithm = algorithm
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -30,6 +30,7 @@ from huaweicloudsdkdgc.v1.model.delete_resource_response import DeleteResourceRe
 from huaweicloudsdkdgc.v1.model.delete_script_request import DeleteScriptRequest
 from huaweicloudsdkdgc.v1.model.delete_script_response import DeleteScriptResponse
 from huaweicloudsdkdgc.v1.model.depend_jobs import DependJobs
+from huaweicloudsdkdgc.v1.model.depend_package import DependPackage
 from huaweicloudsdkdgc.v1.model.event import Event
 from huaweicloudsdkdgc.v1.model.execute_script_req import ExecuteScriptReq
 from huaweicloudsdkdgc.v1.model.execute_script_request import ExecuteScriptRequest
@@ -76,6 +77,7 @@ from huaweicloudsdkdgc.v1.model.model_property import ModelProperty
 from huaweicloudsdkdgc.v1.model.node import Node
 from huaweicloudsdkdgc.v1.model.node_instance import NodeInstance
 from huaweicloudsdkdgc.v1.model.real_time_node_status import RealTimeNodeStatus
+from huaweicloudsdkdgc.v1.model.relation import Relation
 from huaweicloudsdkdgc.v1.model.resource_info import ResourceInfo
 from huaweicloudsdkdgc.v1.model.restore_job_instance_request import RestoreJobInstanceRequest
 from huaweicloudsdkdgc.v1.model.restore_job_instance_response import RestoreJobInstanceResponse
@@ -110,7 +112,11 @@ from huaweicloudsdkdgc.v1.model.stop_supplementdata_request import StopSupplemen
 from huaweicloudsdkdgc.v1.model.stop_supplementdata_response import StopSupplementdataResponse
 from huaweicloudsdkdgc.v1.model.sub_task_status import SubTaskStatus
 from huaweicloudsdkdgc.v1.model.supplement_data_info import SupplementDataInfo
+from huaweicloudsdkdgc.v1.model.supplement_data_info_supplement_data_instance_time import SupplementDataInfoSupplementDataInstanceTime
+from huaweicloudsdkdgc.v1.model.supplement_data_info_supplement_data_run_time import SupplementDataInfoSupplementDataRunTime
 from huaweicloudsdkdgc.v1.model.supplement_data_resp import SupplementDataResp
+from huaweicloudsdkdgc.v1.model.supplement_data_resp_supplement_data_instance_time import SupplementDataRespSupplementDataInstanceTime
+from huaweicloudsdkdgc.v1.model.supplement_data_resp_supplement_data_run_time import SupplementDataRespSupplementDataRunTime
 from huaweicloudsdkdgc.v1.model.update_connection_request import UpdateConnectionRequest
 from huaweicloudsdkdgc.v1.model.update_connection_response import UpdateConnectionResponse
 from huaweicloudsdkdgc.v1.model.update_job_request import UpdateJobRequest

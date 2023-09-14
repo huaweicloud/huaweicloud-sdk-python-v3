@@ -31,9 +31,9 @@ class TagItem:
 
         The model defined in huaweicloud sdk
 
-        :param key: 键。 最大长度36个unicode字符。 key不能为空。不能包含非打印字符“ASCII(0-31)”、“*”、“&lt;”、“&gt;”、“\\”、“&#x3D;”。
+        :param key: 标签的名称。 同一个凭据，一个标签键只能对应一个标签值；不同的凭据可以使用相同的标签键。 用户最多可以给单个凭据添加20个标签。  约束：取值范围为1到128个字符，满足正则匹配\&quot;^((?!\\\\s)(?!_sys_)[\\\\p{L}\\\\p{Z}\\\\p{N}_.:&#x3D;+\\\\-@]*)(?&lt;!\\\\s)$\&quot;
         :type key: str
-        :param value: 值。 每个值最大长度43个unicode字符，可以为空字符串。 不能包含非打印字符“ASCII(0-31)”、“*”、“&lt;”、“&gt;”、“\\”、“&#x3D;”。
+        :param value: 标签的值。  约束：取值范围不超过255个字符，满足正则匹配\&quot;^([\\\\p{L}\\\\p{Z}\\\\p{N}_.:\\/&#x3D;+\\\\-@]*)$\&quot;
         :type value: str
         """
         
@@ -43,8 +43,7 @@ class TagItem:
         self._value = None
         self.discriminator = None
 
-        if key is not None:
-            self.key = key
+        self.key = key
         if value is not None:
             self.value = value
 
@@ -52,7 +51,7 @@ class TagItem:
     def key(self):
         """Gets the key of this TagItem.
 
-        键。 最大长度36个unicode字符。 key不能为空。不能包含非打印字符“ASCII(0-31)”、“*”、“<”、“>”、“\\”、“=”。
+        标签的名称。 同一个凭据，一个标签键只能对应一个标签值；不同的凭据可以使用相同的标签键。 用户最多可以给单个凭据添加20个标签。  约束：取值范围为1到128个字符，满足正则匹配\"^((?!\\\\s)(?!_sys_)[\\\\p{L}\\\\p{Z}\\\\p{N}_.:=+\\\\-@]*)(?<!\\\\s)$\"
 
         :return: The key of this TagItem.
         :rtype: str
@@ -63,7 +62,7 @@ class TagItem:
     def key(self, key):
         """Sets the key of this TagItem.
 
-        键。 最大长度36个unicode字符。 key不能为空。不能包含非打印字符“ASCII(0-31)”、“*”、“<”、“>”、“\\”、“=”。
+        标签的名称。 同一个凭据，一个标签键只能对应一个标签值；不同的凭据可以使用相同的标签键。 用户最多可以给单个凭据添加20个标签。  约束：取值范围为1到128个字符，满足正则匹配\"^((?!\\\\s)(?!_sys_)[\\\\p{L}\\\\p{Z}\\\\p{N}_.:=+\\\\-@]*)(?<!\\\\s)$\"
 
         :param key: The key of this TagItem.
         :type key: str
@@ -74,7 +73,7 @@ class TagItem:
     def value(self):
         """Gets the value of this TagItem.
 
-        值。 每个值最大长度43个unicode字符，可以为空字符串。 不能包含非打印字符“ASCII(0-31)”、“*”、“<”、“>”、“\\”、“=”。
+        标签的值。  约束：取值范围不超过255个字符，满足正则匹配\"^([\\\\p{L}\\\\p{Z}\\\\p{N}_.:\\/=+\\\\-@]*)$\"
 
         :return: The value of this TagItem.
         :rtype: str
@@ -85,7 +84,7 @@ class TagItem:
     def value(self, value):
         """Sets the value of this TagItem.
 
-        值。 每个值最大长度43个unicode字符，可以为空字符串。 不能包含非打印字符“ASCII(0-31)”、“*”、“<”、“>”、“\\”、“=”。
+        标签的值。  约束：取值范围不超过255个字符，满足正则匹配\"^([\\\\p{L}\\\\p{Z}\\\\p{N}_.:\\/=+\\\\-@]*)$\"
 
         :param value: The value of this TagItem.
         :type value: str

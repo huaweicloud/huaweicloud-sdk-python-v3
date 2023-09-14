@@ -17,28 +17,35 @@ class CreateGroupReq:
     sensitive_list = []
 
     openapi_types = {
-        'group_name': 'str'
+        'group_name': 'str',
+        'group_desc': 'str'
     }
 
     attribute_map = {
-        'group_name': 'group_name'
+        'group_name': 'group_name',
+        'group_desc': 'group_desc'
     }
 
-    def __init__(self, group_name=None):
+    def __init__(self, group_name=None, group_desc=None):
         """CreateGroupReq
 
         The model defined in huaweicloud sdk
 
         :param group_name: 消费组名称
         :type group_name: str
+        :param group_desc: 消费组描述
+        :type group_desc: str
         """
         
         
 
         self._group_name = None
+        self._group_desc = None
         self.discriminator = None
 
         self.group_name = group_name
+        if group_desc is not None:
+            self.group_desc = group_desc
 
     @property
     def group_name(self):
@@ -61,6 +68,28 @@ class CreateGroupReq:
         :type group_name: str
         """
         self._group_name = group_name
+
+    @property
+    def group_desc(self):
+        """Gets the group_desc of this CreateGroupReq.
+
+        消费组描述
+
+        :return: The group_desc of this CreateGroupReq.
+        :rtype: str
+        """
+        return self._group_desc
+
+    @group_desc.setter
+    def group_desc(self, group_desc):
+        """Sets the group_desc of this CreateGroupReq.
+
+        消费组描述
+
+        :param group_desc: The group_desc of this CreateGroupReq.
+        :type group_desc: str
+        """
+        self._group_desc = group_desc
 
     def to_dict(self):
         """Returns the model properties as a dict"""

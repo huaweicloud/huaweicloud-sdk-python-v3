@@ -21,7 +21,8 @@ class ImageDetectionReq:
         'categories': 'list[str]',
         'image_text_config': 'ImgTextConfig',
         'url': 'str',
-        'image': 'str'
+        'image': 'str',
+        'biz_type': 'str'
     }
 
     attribute_map = {
@@ -29,10 +30,11 @@ class ImageDetectionReq:
         'categories': 'categories',
         'image_text_config': 'image_text_config',
         'url': 'url',
-        'image': 'image'
+        'image': 'image',
+        'biz_type': 'biz_type'
     }
 
-    def __init__(self, event_type=None, categories=None, image_text_config=None, url=None, image=None):
+    def __init__(self, event_type=None, categories=None, image_text_config=None, url=None, image=None, biz_type=None):
         """ImageDetectionReq
 
         The model defined in huaweicloud sdk
@@ -47,6 +49,8 @@ class ImageDetectionReq:
         :type url: str
         :param image: 与url二选一，图片文件Base64编码字符串，要求base64编码后大小不超过10M，支持JPG/PNG/JPEG/WEBP/GIF/TIFF/TIF/HEIF等格式。
         :type image: str
+        :param biz_type: 自定义审核策略名称，可在控制台配置;如果请求参数中传了biz_type则优先使用biz_type,如果用户没传biz_type则event_type和categories必须传。
+        :type biz_type: str
         """
         
         
@@ -56,16 +60,21 @@ class ImageDetectionReq:
         self._image_text_config = None
         self._url = None
         self._image = None
+        self._biz_type = None
         self.discriminator = None
 
-        self.event_type = event_type
-        self.categories = categories
+        if event_type is not None:
+            self.event_type = event_type
+        if categories is not None:
+            self.categories = categories
         if image_text_config is not None:
             self.image_text_config = image_text_config
         if url is not None:
             self.url = url
         if image is not None:
             self.image = image
+        if biz_type is not None:
+            self.biz_type = biz_type
 
     @property
     def event_type(self):
@@ -172,6 +181,28 @@ class ImageDetectionReq:
         :type image: str
         """
         self._image = image
+
+    @property
+    def biz_type(self):
+        """Gets the biz_type of this ImageDetectionReq.
+
+        自定义审核策略名称，可在控制台配置;如果请求参数中传了biz_type则优先使用biz_type,如果用户没传biz_type则event_type和categories必须传。
+
+        :return: The biz_type of this ImageDetectionReq.
+        :rtype: str
+        """
+        return self._biz_type
+
+    @biz_type.setter
+    def biz_type(self, biz_type):
+        """Sets the biz_type of this ImageDetectionReq.
+
+        自定义审核策略名称，可在控制台配置;如果请求参数中传了biz_type则优先使用biz_type,如果用户没传biz_type则event_type和categories必须传。
+
+        :param biz_type: The biz_type of this ImageDetectionReq.
+        :type biz_type: str
+        """
+        self._biz_type = biz_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

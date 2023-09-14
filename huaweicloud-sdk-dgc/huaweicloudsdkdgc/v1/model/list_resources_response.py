@@ -32,9 +32,9 @@ class ListResourcesResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param total: 
+        :param total: 总的资源个数
         :type total: int
-        :param resources: 
+        :param resources: 资源列表
         :type resources: list[:class:`huaweicloudsdkdgc.v1.ResourceInfo`]
         """
         
@@ -53,6 +53,8 @@ class ListResourcesResponse(SdkResponse):
     def total(self):
         """Gets the total of this ListResourcesResponse.
 
+        总的资源个数
+
         :return: The total of this ListResourcesResponse.
         :rtype: int
         """
@@ -61,6 +63,8 @@ class ListResourcesResponse(SdkResponse):
     @total.setter
     def total(self, total):
         """Sets the total of this ListResourcesResponse.
+
+        总的资源个数
 
         :param total: The total of this ListResourcesResponse.
         :type total: int
@@ -71,6 +75,8 @@ class ListResourcesResponse(SdkResponse):
     def resources(self):
         """Gets the resources of this ListResourcesResponse.
 
+        资源列表
+
         :return: The resources of this ListResourcesResponse.
         :rtype: list[:class:`huaweicloudsdkdgc.v1.ResourceInfo`]
         """
@@ -79,6 +85,8 @@ class ListResourcesResponse(SdkResponse):
     @resources.setter
     def resources(self, resources):
         """Sets the resources of this ListResourcesResponse.
+
+        资源列表
 
         :param resources: The resources of this ListResourcesResponse.
         :type resources: list[:class:`huaweicloudsdkdgc.v1.ResourceInfo`]

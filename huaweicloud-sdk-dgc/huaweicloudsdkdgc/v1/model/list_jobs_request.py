@@ -17,29 +17,57 @@ class ListJobsRequest:
     sensitive_list = []
 
     openapi_types = {
-        'workspace': 'str'
+        'workspace': 'str',
+        'limit': 'int',
+        'offset': 'int',
+        'job_type': 'str',
+        'job_name': 'str'
     }
 
     attribute_map = {
-        'workspace': 'workspace'
+        'workspace': 'workspace',
+        'limit': 'limit',
+        'offset': 'offset',
+        'job_type': 'jobType',
+        'job_name': 'jobName'
     }
 
-    def __init__(self, workspace=None):
+    def __init__(self, workspace=None, limit=None, offset=None, job_type=None, job_name=None):
         """ListJobsRequest
 
         The model defined in huaweicloud sdk
 
         :param workspace: 工作空间id
         :type workspace: str
+        :param limit: 分页参数：每页限定数量
+        :type limit: int
+        :param offset: 分页参数：页数
+        :type offset: int
+        :param job_type: 作业类型:  - REAL_TIME: 实时处理   - BATCH: 批处理
+        :type job_type: str
+        :param job_name: 作业名称
+        :type job_name: str
         """
         
         
 
         self._workspace = None
+        self._limit = None
+        self._offset = None
+        self._job_type = None
+        self._job_name = None
         self.discriminator = None
 
         if workspace is not None:
             self.workspace = workspace
+        if limit is not None:
+            self.limit = limit
+        if offset is not None:
+            self.offset = offset
+        if job_type is not None:
+            self.job_type = job_type
+        if job_name is not None:
+            self.job_name = job_name
 
     @property
     def workspace(self):
@@ -62,6 +90,94 @@ class ListJobsRequest:
         :type workspace: str
         """
         self._workspace = workspace
+
+    @property
+    def limit(self):
+        """Gets the limit of this ListJobsRequest.
+
+        分页参数：每页限定数量
+
+        :return: The limit of this ListJobsRequest.
+        :rtype: int
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        """Sets the limit of this ListJobsRequest.
+
+        分页参数：每页限定数量
+
+        :param limit: The limit of this ListJobsRequest.
+        :type limit: int
+        """
+        self._limit = limit
+
+    @property
+    def offset(self):
+        """Gets the offset of this ListJobsRequest.
+
+        分页参数：页数
+
+        :return: The offset of this ListJobsRequest.
+        :rtype: int
+        """
+        return self._offset
+
+    @offset.setter
+    def offset(self, offset):
+        """Sets the offset of this ListJobsRequest.
+
+        分页参数：页数
+
+        :param offset: The offset of this ListJobsRequest.
+        :type offset: int
+        """
+        self._offset = offset
+
+    @property
+    def job_type(self):
+        """Gets the job_type of this ListJobsRequest.
+
+        作业类型:  - REAL_TIME: 实时处理   - BATCH: 批处理
+
+        :return: The job_type of this ListJobsRequest.
+        :rtype: str
+        """
+        return self._job_type
+
+    @job_type.setter
+    def job_type(self, job_type):
+        """Sets the job_type of this ListJobsRequest.
+
+        作业类型:  - REAL_TIME: 实时处理   - BATCH: 批处理
+
+        :param job_type: The job_type of this ListJobsRequest.
+        :type job_type: str
+        """
+        self._job_type = job_type
+
+    @property
+    def job_name(self):
+        """Gets the job_name of this ListJobsRequest.
+
+        作业名称
+
+        :return: The job_name of this ListJobsRequest.
+        :rtype: str
+        """
+        return self._job_name
+
+    @job_name.setter
+    def job_name(self, job_name):
+        """Sets the job_name of this ListJobsRequest.
+
+        作业名称
+
+        :param job_name: The job_name of this ListJobsRequest.
+        :type job_name: str
+        """
+        self._job_name = job_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

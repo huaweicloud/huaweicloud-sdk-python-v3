@@ -23,7 +23,7 @@ class StopSupplementdataRequest:
 
     attribute_map = {
         'workspace': 'workspace',
-        'instance_name': 'instance_name'
+        'instance_name': 'instanceName'
     }
 
     def __init__(self, workspace=None, instance_name=None):

@@ -2710,6 +2710,8 @@ class KafkaClient(Client):
             query_params.append(('message_offset', local_var_params['message_offset']))
         if 'partition' in local_var_params:
             query_params.append(('partition', local_var_params['partition']))
+        if 'keyword' in local_var_params:
+            query_params.append(('keyword', local_var_params['keyword']))
 
         header_params = {}
 
@@ -3569,6 +3571,68 @@ class KafkaClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def update_instance_consumer_group(self, request):
+        """编辑消费组
+
+        编辑消费组
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateInstanceConsumerGroup
+        :type request: :class:`huaweicloudsdkkafka.v2.UpdateInstanceConsumerGroupRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.UpdateInstanceConsumerGroupResponse`
+        """
+        return self._update_instance_consumer_group_with_http_info(request)
+
+    def _update_instance_consumer_group_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'engine' in local_var_params:
+            path_params['engine'] = local_var_params['engine']
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'group' in local_var_params:
+            path_params['group'] = local_var_params['group']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{engine}/{project_id}/instances/{instance_id}/groups/{group}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateInstanceConsumerGroupResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def update_instance_cross_vpc_ip(self, request):
         """修改实例跨VPC访问的内网IP
 
@@ -3680,6 +3744,68 @@ class KafkaClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='UpdateInstanceTopicResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_instance_user(self, request):
+        """修改用户参数
+
+        修改用户参数
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateInstanceUser
+        :type request: :class:`huaweicloudsdkkafka.v2.UpdateInstanceUserRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.UpdateInstanceUserResponse`
+        """
+        return self._update_instance_user_with_http_info(request)
+
+    def _update_instance_user_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'engine' in local_var_params:
+            path_params['engine'] = local_var_params['engine']
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'user_name' in local_var_params:
+            path_params['user_name'] = local_var_params['user_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v2/{engine}/{project_id}/instances/{instance_id}/users/{user_name}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateInstanceUserResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

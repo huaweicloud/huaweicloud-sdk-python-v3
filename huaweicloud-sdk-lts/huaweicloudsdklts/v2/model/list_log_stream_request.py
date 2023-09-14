@@ -17,41 +17,34 @@ class ListLogStreamRequest:
     sensitive_list = []
 
     openapi_types = {
-        'log_group_id': 'str',
-        'tag': 'str'
+        'log_group_id': 'str'
     }
 
     attribute_map = {
-        'log_group_id': 'log_group_id',
-        'tag': 'tag'
+        'log_group_id': 'log_group_id'
     }
 
-    def __init__(self, log_group_id=None, tag=None):
+    def __init__(self, log_group_id=None):
         """ListLogStreamRequest
 
         The model defined in huaweicloud sdk
 
-        :param log_group_id: 租户想查询的日志流所在的日志组的groupid，一般为36位字符串。 
+        :param log_group_id: 租户想查询的日志流所在的日志组的groupid，一般为36位字符串。
         :type log_group_id: str
-        :param tag: 按条件搜索，内容设置为日志流的tag键值对，比如k1&#x3D;v1； 
-        :type tag: str
         """
         
         
 
         self._log_group_id = None
-        self._tag = None
         self.discriminator = None
 
         self.log_group_id = log_group_id
-        if tag is not None:
-            self.tag = tag
 
     @property
     def log_group_id(self):
         """Gets the log_group_id of this ListLogStreamRequest.
 
-        租户想查询的日志流所在的日志组的groupid，一般为36位字符串。 
+        租户想查询的日志流所在的日志组的groupid，一般为36位字符串。
 
         :return: The log_group_id of this ListLogStreamRequest.
         :rtype: str
@@ -62,34 +55,12 @@ class ListLogStreamRequest:
     def log_group_id(self, log_group_id):
         """Sets the log_group_id of this ListLogStreamRequest.
 
-        租户想查询的日志流所在的日志组的groupid，一般为36位字符串。 
+        租户想查询的日志流所在的日志组的groupid，一般为36位字符串。
 
         :param log_group_id: The log_group_id of this ListLogStreamRequest.
         :type log_group_id: str
         """
         self._log_group_id = log_group_id
-
-    @property
-    def tag(self):
-        """Gets the tag of this ListLogStreamRequest.
-
-        按条件搜索，内容设置为日志流的tag键值对，比如k1=v1； 
-
-        :return: The tag of this ListLogStreamRequest.
-        :rtype: str
-        """
-        return self._tag
-
-    @tag.setter
-    def tag(self, tag):
-        """Sets the tag of this ListLogStreamRequest.
-
-        按条件搜索，内容设置为日志流的tag键值对，比如k1=v1； 
-
-        :param tag: The tag of this ListLogStreamRequest.
-        :type tag: str
-        """
-        self._tag = tag
 
     def to_dict(self):
         """Returns the model properties as a dict"""

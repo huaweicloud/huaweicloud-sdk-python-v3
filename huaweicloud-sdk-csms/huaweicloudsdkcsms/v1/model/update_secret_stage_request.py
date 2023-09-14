@@ -35,7 +35,7 @@ class UpdateSecretStageRequest:
 
         :param secret_name: 凭据名称。
         :type secret_name: str
-        :param stage_name: 凭据版本状态的名称。满足 &#39;^[a-zA-Z0-9._-]{1,64}$&#39;
+        :param stage_name: 凭据版本状态的名称。满足 &#39;^[a-zA-Z0-9_-]{1,64}$&#39;
         :type stage_name: str
         :param body: Body of the UpdateSecretStageRequest
         :type body: :class:`huaweicloudsdkcsms.v1.UpdateSecretStageRequestBody`
@@ -79,7 +79,7 @@ class UpdateSecretStageRequest:
     def stage_name(self):
         """Gets the stage_name of this UpdateSecretStageRequest.
 
-        凭据版本状态的名称。满足 '^[a-zA-Z0-9._-]{1,64}$'
+        凭据版本状态的名称。满足 '^[a-zA-Z0-9_-]{1,64}$'
 
         :return: The stage_name of this UpdateSecretStageRequest.
         :rtype: str
@@ -90,7 +90,7 @@ class UpdateSecretStageRequest:
     def stage_name(self, stage_name):
         """Sets the stage_name of this UpdateSecretStageRequest.
 
-        凭据版本状态的名称。满足 '^[a-zA-Z0-9._-]{1,64}$'
+        凭据版本状态的名称。满足 '^[a-zA-Z0-9_-]{1,64}$'
 
         :param stage_name: The stage_name of this UpdateSecretStageRequest.
         :type stage_name: str

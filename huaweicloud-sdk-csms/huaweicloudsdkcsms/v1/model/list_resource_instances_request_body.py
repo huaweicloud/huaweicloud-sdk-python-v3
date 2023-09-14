@@ -21,7 +21,7 @@ class ListResourceInstancesRequestBody:
         'offset': 'str',
         'action': 'str',
         'tags': 'list[Tag]',
-        'matches': 'list[TagItem]',
+        'matches': 'list[TagMatches]',
         'sequence': 'str'
     }
 
@@ -45,10 +45,10 @@ class ListResourceInstancesRequestBody:
         :type offset: str
         :param action: 操作标识（可设置为“filter”或者“count”）。  - filter：表示过滤。  - count：表示查询总条数。
         :type action: str
-        :param tags: 标签列表，key和value键值对的集合。  - key：表示标签键，一个凭据下最多包含20个key，key不能为空，不能重复，同一个key中value不能重复。key最大长度为36个字符。key之间是“与”的关系  - value：表示标签值。每个值最大长度43个字符，value之间为“或”的关系。
+        :param tags: 标签列表，key和value键值对的集合。最多不超过10个。
         :type tags: list[:class:`huaweicloudsdkcsms.v1.Tag`]
         :param matches: 搜索字段。  - key为搜索的字段，目前仅支持搜索凭据名称，值为“resource_name”。  - value为模糊匹配的值，最大长度为255个字符。为空返回空值。
-        :type matches: list[:class:`huaweicloudsdkcsms.v1.TagItem`]
+        :type matches: list[:class:`huaweicloudsdkcsms.v1.TagMatches`]
         :param sequence: 请求消息序列号，36字节序列号。 例如：919c82d4-8046-4722-9094-35c3c6524cff
         :type sequence: str
         """
@@ -67,8 +67,7 @@ class ListResourceInstancesRequestBody:
             self.limit = limit
         if offset is not None:
             self.offset = offset
-        if action is not None:
-            self.action = action
+        self.action = action
         if tags is not None:
             self.tags = tags
         if matches is not None:
@@ -146,7 +145,7 @@ class ListResourceInstancesRequestBody:
     def tags(self):
         """Gets the tags of this ListResourceInstancesRequestBody.
 
-        标签列表，key和value键值对的集合。  - key：表示标签键，一个凭据下最多包含20个key，key不能为空，不能重复，同一个key中value不能重复。key最大长度为36个字符。key之间是“与”的关系  - value：表示标签值。每个值最大长度43个字符，value之间为“或”的关系。
+        标签列表，key和value键值对的集合。最多不超过10个。
 
         :return: The tags of this ListResourceInstancesRequestBody.
         :rtype: list[:class:`huaweicloudsdkcsms.v1.Tag`]
@@ -157,7 +156,7 @@ class ListResourceInstancesRequestBody:
     def tags(self, tags):
         """Sets the tags of this ListResourceInstancesRequestBody.
 
-        标签列表，key和value键值对的集合。  - key：表示标签键，一个凭据下最多包含20个key，key不能为空，不能重复，同一个key中value不能重复。key最大长度为36个字符。key之间是“与”的关系  - value：表示标签值。每个值最大长度43个字符，value之间为“或”的关系。
+        标签列表，key和value键值对的集合。最多不超过10个。
 
         :param tags: The tags of this ListResourceInstancesRequestBody.
         :type tags: list[:class:`huaweicloudsdkcsms.v1.Tag`]
@@ -171,7 +170,7 @@ class ListResourceInstancesRequestBody:
         搜索字段。  - key为搜索的字段，目前仅支持搜索凭据名称，值为“resource_name”。  - value为模糊匹配的值，最大长度为255个字符。为空返回空值。
 
         :return: The matches of this ListResourceInstancesRequestBody.
-        :rtype: list[:class:`huaweicloudsdkcsms.v1.TagItem`]
+        :rtype: list[:class:`huaweicloudsdkcsms.v1.TagMatches`]
         """
         return self._matches
 
@@ -182,7 +181,7 @@ class ListResourceInstancesRequestBody:
         搜索字段。  - key为搜索的字段，目前仅支持搜索凭据名称，值为“resource_name”。  - value为模糊匹配的值，最大长度为255个字符。为空返回空值。
 
         :param matches: The matches of this ListResourceInstancesRequestBody.
-        :type matches: list[:class:`huaweicloudsdkcsms.v1.TagItem`]
+        :type matches: list[:class:`huaweicloudsdkcsms.v1.TagMatches`]
         """
         self._matches = matches
 

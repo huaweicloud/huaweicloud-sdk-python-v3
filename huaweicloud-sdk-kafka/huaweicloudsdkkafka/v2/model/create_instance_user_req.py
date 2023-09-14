@@ -18,21 +18,25 @@ class CreateInstanceUserReq:
 
     openapi_types = {
         'user_name': 'str',
+        'user_desc': 'str',
         'user_passwd': 'str'
     }
 
     attribute_map = {
         'user_name': 'user_name',
+        'user_desc': 'user_desc',
         'user_passwd': 'user_passwd'
     }
 
-    def __init__(self, user_name=None, user_passwd=None):
+    def __init__(self, user_name=None, user_desc=None, user_passwd=None):
         """CreateInstanceUserReq
 
         The model defined in huaweicloud sdk
 
         :param user_name: 用户名称。
         :type user_name: str
+        :param user_desc: 用户描述。
+        :type user_desc: str
         :param user_passwd: 用户密码。  密码不能和用户名相同。 复杂度要求： - 输入长度为8到32位的字符串。 - 必须包含如下四种字符中的两种组合：   - 小写字母   - 大写字母   - 数字   - 特殊字符包括（&#x60;~!@#$%^&amp;*()-_&#x3D;+\\|[{}]:&#39;\&quot;,&lt;.&gt;/?）
         :type user_passwd: str
         """
@@ -40,11 +44,14 @@ class CreateInstanceUserReq:
         
 
         self._user_name = None
+        self._user_desc = None
         self._user_passwd = None
         self.discriminator = None
 
         if user_name is not None:
             self.user_name = user_name
+        if user_desc is not None:
+            self.user_desc = user_desc
         if user_passwd is not None:
             self.user_passwd = user_passwd
 
@@ -69,6 +76,28 @@ class CreateInstanceUserReq:
         :type user_name: str
         """
         self._user_name = user_name
+
+    @property
+    def user_desc(self):
+        """Gets the user_desc of this CreateInstanceUserReq.
+
+        用户描述。
+
+        :return: The user_desc of this CreateInstanceUserReq.
+        :rtype: str
+        """
+        return self._user_desc
+
+    @user_desc.setter
+    def user_desc(self, user_desc):
+        """Sets the user_desc of this CreateInstanceUserReq.
+
+        用户描述。
+
+        :param user_desc: The user_desc of this CreateInstanceUserReq.
+        :type user_desc: str
+        """
+        self._user_desc = user_desc
 
     @property
     def user_passwd(self):

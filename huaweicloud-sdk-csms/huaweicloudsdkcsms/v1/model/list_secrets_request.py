@@ -18,41 +18,48 @@ class ListSecretsRequest:
 
     openapi_types = {
         'limit': 'str',
-        'marker': 'str'
+        'marker': 'str',
+        'event_name': 'str'
     }
 
     attribute_map = {
         'limit': 'limit',
-        'marker': 'marker'
+        'marker': 'marker',
+        'event_name': 'event_name'
     }
 
-    def __init__(self, limit=None, marker=None):
+    def __init__(self, limit=None, marker=None, event_name=None):
         """ListSecretsRequest
 
         The model defined in huaweicloud sdk
 
-        :param limit: 每页返回的个数。  默认值：50。 
+        :param limit: 每页返回的个数。  默认值：50。
         :type limit: str
-        :param marker: 分页查询起始的凭据名称，为空时为查询第一页 
+        :param marker: 分页查询起始的凭据名称，为空时为查询第一页
         :type marker: str
+        :param event_name: 指定事件名称时，仅返回关联该事件的凭据
+        :type event_name: str
         """
         
         
 
         self._limit = None
         self._marker = None
+        self._event_name = None
         self.discriminator = None
 
         if limit is not None:
             self.limit = limit
         if marker is not None:
             self.marker = marker
+        if event_name is not None:
+            self.event_name = event_name
 
     @property
     def limit(self):
         """Gets the limit of this ListSecretsRequest.
 
-        每页返回的个数。  默认值：50。 
+        每页返回的个数。  默认值：50。
 
         :return: The limit of this ListSecretsRequest.
         :rtype: str
@@ -63,7 +70,7 @@ class ListSecretsRequest:
     def limit(self, limit):
         """Sets the limit of this ListSecretsRequest.
 
-        每页返回的个数。  默认值：50。 
+        每页返回的个数。  默认值：50。
 
         :param limit: The limit of this ListSecretsRequest.
         :type limit: str
@@ -74,7 +81,7 @@ class ListSecretsRequest:
     def marker(self):
         """Gets the marker of this ListSecretsRequest.
 
-        分页查询起始的凭据名称，为空时为查询第一页 
+        分页查询起始的凭据名称，为空时为查询第一页
 
         :return: The marker of this ListSecretsRequest.
         :rtype: str
@@ -85,12 +92,34 @@ class ListSecretsRequest:
     def marker(self, marker):
         """Sets the marker of this ListSecretsRequest.
 
-        分页查询起始的凭据名称，为空时为查询第一页 
+        分页查询起始的凭据名称，为空时为查询第一页
 
         :param marker: The marker of this ListSecretsRequest.
         :type marker: str
         """
         self._marker = marker
+
+    @property
+    def event_name(self):
+        """Gets the event_name of this ListSecretsRequest.
+
+        指定事件名称时，仅返回关联该事件的凭据
+
+        :return: The event_name of this ListSecretsRequest.
+        :rtype: str
+        """
+        return self._event_name
+
+    @event_name.setter
+    def event_name(self, event_name):
+        """Sets the event_name of this ListSecretsRequest.
+
+        指定事件名称时，仅返回关联该事件的凭据
+
+        :param event_name: The event_name of this ListSecretsRequest.
+        :type event_name: str
+        """
+        self._event_name = event_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

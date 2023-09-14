@@ -31,6 +31,7 @@ class ShowBatchInfoResponse(SdkResponse):
         'kind': 'str',
         'queue': 'str',
         'image': 'str',
+        'req_body': 'str',
         'update_time': 'int',
         'feature': 'str',
         'spark_version': 'str'
@@ -50,12 +51,13 @@ class ShowBatchInfoResponse(SdkResponse):
         'kind': 'kind',
         'queue': 'queue',
         'image': 'image',
+        'req_body': 'req_body',
         'update_time': 'update_time',
         'feature': 'feature',
         'spark_version': 'spark_version'
     }
 
-    def __init__(self, id=None, state=None, app_id=None, log=None, sc_type=None, cluster_name=None, create_time=None, name=None, owner=None, proxy_user=None, kind=None, queue=None, image=None, update_time=None, feature=None, spark_version=None):
+    def __init__(self, id=None, state=None, app_id=None, log=None, sc_type=None, cluster_name=None, create_time=None, name=None, owner=None, proxy_user=None, kind=None, queue=None, image=None, req_body=None, update_time=None, feature=None, spark_version=None):
         """ShowBatchInfoResponse
 
         The model defined in huaweicloud sdk
@@ -86,6 +88,8 @@ class ShowBatchInfoResponse(SdkResponse):
         :type queue: str
         :param image: 自定义镜像。格式为：组织名/镜像名:镜像版本。
         :type image: str
+        :param req_body: 请求参数详情
+        :type req_body: str
         :param update_time: 更新时间
         :type update_time: int
         :param feature: 作业特性。表示用户作业使用的Spark镜像类型。  basic：表示使用DLI提供的基础Spark镜像。 custom：表示使用用户自定义的Spark镜像。 ai：表示使用DLI提供的AI镜像。
@@ -109,6 +113,7 @@ class ShowBatchInfoResponse(SdkResponse):
         self._kind = None
         self._queue = None
         self._image = None
+        self._req_body = None
         self._update_time = None
         self._feature = None
         self._spark_version = None
@@ -140,6 +145,8 @@ class ShowBatchInfoResponse(SdkResponse):
             self.queue = queue
         if image is not None:
             self.image = image
+        if req_body is not None:
+            self.req_body = req_body
         if update_time is not None:
             self.update_time = update_time
         if feature is not None:
@@ -432,6 +439,28 @@ class ShowBatchInfoResponse(SdkResponse):
         :type image: str
         """
         self._image = image
+
+    @property
+    def req_body(self):
+        """Gets the req_body of this ShowBatchInfoResponse.
+
+        请求参数详情
+
+        :return: The req_body of this ShowBatchInfoResponse.
+        :rtype: str
+        """
+        return self._req_body
+
+    @req_body.setter
+    def req_body(self, req_body):
+        """Sets the req_body of this ShowBatchInfoResponse.
+
+        请求参数详情
+
+        :param req_body: The req_body of this ShowBatchInfoResponse.
+        :type req_body: str
+        """
+        self._req_body = req_body
 
     @property
     def update_time(self):

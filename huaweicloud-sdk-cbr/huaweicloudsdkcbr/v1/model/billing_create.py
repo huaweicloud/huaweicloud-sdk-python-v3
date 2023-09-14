@@ -28,10 +28,7 @@ class BillingCreate:
         'is_auto_renew': 'bool',
         'is_auto_pay': 'bool',
         'console_url': 'str',
-        'is_multi_az': 'bool',
-        'promotion_info': 'str',
-        'purchase_mode': 'str',
-        'order_id': 'str'
+        'is_multi_az': 'bool'
     }
 
     attribute_map = {
@@ -46,13 +43,10 @@ class BillingCreate:
         'is_auto_renew': 'is_auto_renew',
         'is_auto_pay': 'is_auto_pay',
         'console_url': 'console_url',
-        'is_multi_az': 'is_multi_az',
-        'promotion_info': 'promotion_info',
-        'purchase_mode': 'purchase_mode',
-        'order_id': 'order_id'
+        'is_multi_az': 'is_multi_az'
     }
 
-    def __init__(self, cloud_type=None, consistent_level=None, object_type=None, protect_type=None, size=None, charging_mode=None, period_type=None, period_num=None, is_auto_renew=None, is_auto_pay=None, console_url=None, is_multi_az=None, promotion_info=None, purchase_mode=None, order_id=None):
+    def __init__(self, cloud_type=None, consistent_level=None, object_type=None, protect_type=None, size=None, charging_mode=None, period_type=None, period_num=None, is_auto_renew=None, is_auto_pay=None, console_url=None, is_multi_az=None):
         """BillingCreate
 
         The model defined in huaweicloud sdk
@@ -81,12 +75,6 @@ class BillingCreate:
         :type console_url: str
         :param is_multi_az: 存储库多az属性，默认为false
         :type is_multi_az: bool
-        :param promotion_info: 促销信息，包周期时可选参数
-        :type promotion_info: str
-        :param purchase_mode: 购买模式，包周期时可选参数
-        :type purchase_mode: str
-        :param order_id: 订单 ID，包周期时可选参数
-        :type order_id: str
         """
         
         
@@ -103,9 +91,6 @@ class BillingCreate:
         self._is_auto_pay = None
         self._console_url = None
         self._is_multi_az = None
-        self._promotion_info = None
-        self._purchase_mode = None
-        self._order_id = None
         self.discriminator = None
 
         if cloud_type is not None:
@@ -128,12 +113,6 @@ class BillingCreate:
             self.console_url = console_url
         if is_multi_az is not None:
             self.is_multi_az = is_multi_az
-        if promotion_info is not None:
-            self.promotion_info = promotion_info
-        if purchase_mode is not None:
-            self.purchase_mode = purchase_mode
-        if order_id is not None:
-            self.order_id = order_id
 
     @property
     def cloud_type(self):
@@ -398,72 +377,6 @@ class BillingCreate:
         :type is_multi_az: bool
         """
         self._is_multi_az = is_multi_az
-
-    @property
-    def promotion_info(self):
-        """Gets the promotion_info of this BillingCreate.
-
-        促销信息，包周期时可选参数
-
-        :return: The promotion_info of this BillingCreate.
-        :rtype: str
-        """
-        return self._promotion_info
-
-    @promotion_info.setter
-    def promotion_info(self, promotion_info):
-        """Sets the promotion_info of this BillingCreate.
-
-        促销信息，包周期时可选参数
-
-        :param promotion_info: The promotion_info of this BillingCreate.
-        :type promotion_info: str
-        """
-        self._promotion_info = promotion_info
-
-    @property
-    def purchase_mode(self):
-        """Gets the purchase_mode of this BillingCreate.
-
-        购买模式，包周期时可选参数
-
-        :return: The purchase_mode of this BillingCreate.
-        :rtype: str
-        """
-        return self._purchase_mode
-
-    @purchase_mode.setter
-    def purchase_mode(self, purchase_mode):
-        """Sets the purchase_mode of this BillingCreate.
-
-        购买模式，包周期时可选参数
-
-        :param purchase_mode: The purchase_mode of this BillingCreate.
-        :type purchase_mode: str
-        """
-        self._purchase_mode = purchase_mode
-
-    @property
-    def order_id(self):
-        """Gets the order_id of this BillingCreate.
-
-        订单 ID，包周期时可选参数
-
-        :return: The order_id of this BillingCreate.
-        :rtype: str
-        """
-        return self._order_id
-
-    @order_id.setter
-    def order_id(self, order_id):
-        """Sets the order_id of this BillingCreate.
-
-        订单 ID，包周期时可选参数
-
-        :param order_id: The order_id of this BillingCreate.
-        :type order_id: str
-        """
-        self._order_id = order_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

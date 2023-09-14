@@ -18,51 +18,51 @@ class ListStructuredLogsWithTimeRangeResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'body': 'dict(str, list[object])'
+        'context': 'list[str]'
     }
 
     attribute_map = {
-        'body': 'body'
+        'context': 'context'
     }
 
-    def __init__(self, body=None):
+    def __init__(self, context=None):
         """ListStructuredLogsWithTimeRangeResponse
 
         The model defined in huaweicloud sdk
 
-        :param body: 此参数在请求实体中，采用json字符串格式。
-        :type body: dict(str, list[object])
+        :param context: 查询结构化日志结果信息。 此处仅为示例，具体参数名称取决于查询的字段。
+        :type context: list[str]
         """
         
         super(ListStructuredLogsWithTimeRangeResponse, self).__init__()
 
-        self._body = None
+        self._context = None
         self.discriminator = None
 
-        if body is not None:
-            self.body = body
+        if context is not None:
+            self.context = context
 
     @property
-    def body(self):
-        """Gets the body of this ListStructuredLogsWithTimeRangeResponse.
+    def context(self):
+        """Gets the context of this ListStructuredLogsWithTimeRangeResponse.
 
-        此参数在请求实体中，采用json字符串格式。
+        查询结构化日志结果信息。 此处仅为示例，具体参数名称取决于查询的字段。
 
-        :return: The body of this ListStructuredLogsWithTimeRangeResponse.
-        :rtype: dict(str, list[object])
+        :return: The context of this ListStructuredLogsWithTimeRangeResponse.
+        :rtype: list[str]
         """
-        return self._body
+        return self._context
 
-    @body.setter
-    def body(self, body):
-        """Sets the body of this ListStructuredLogsWithTimeRangeResponse.
+    @context.setter
+    def context(self, context):
+        """Sets the context of this ListStructuredLogsWithTimeRangeResponse.
 
-        此参数在请求实体中，采用json字符串格式。
+        查询结构化日志结果信息。 此处仅为示例，具体参数名称取决于查询的字段。
 
-        :param body: The body of this ListStructuredLogsWithTimeRangeResponse.
-        :type body: dict(str, list[object])
+        :param context: The context of this ListStructuredLogsWithTimeRangeResponse.
+        :type context: list[str]
         """
-        self._body = body
+        self._context = context
 
     def to_dict(self):
         """Returns the model properties as a dict"""

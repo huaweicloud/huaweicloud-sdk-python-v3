@@ -20,7 +20,7 @@ class EventInfoDetail:
         'event_name': 'str',
         'event_source': 'str',
         'time': 'int',
-        'detail': 'EventItemDetail',
+        'detail': 'ShowEventItemDetail',
         'event_id': 'str'
     }
 
@@ -44,7 +44,7 @@ class EventInfoDetail:
         :param time: 事件发生时间。UNIX时间戳，单位毫秒。  说明： 因为客户端到服务器端有延时，因此插入数据的时间戳应该在[当前时间-1小时+20秒，当前时间+10分钟-20秒]区间内，保证到达服务器时不会因为传输时延造成数据不能插入数据库。
         :type time: int
         :param detail: 
-        :type detail: :class:`huaweicloudsdkces.v1.EventItemDetail`
+        :type detail: :class:`huaweicloudsdkces.v1.ShowEventItemDetail`
         :param event_id: 事件ID。
         :type event_id: str
         """
@@ -136,7 +136,7 @@ class EventInfoDetail:
         """Gets the detail of this EventInfoDetail.
 
         :return: The detail of this EventInfoDetail.
-        :rtype: :class:`huaweicloudsdkces.v1.EventItemDetail`
+        :rtype: :class:`huaweicloudsdkces.v1.ShowEventItemDetail`
         """
         return self._detail
 
@@ -145,7 +145,7 @@ class EventInfoDetail:
         """Sets the detail of this EventInfoDetail.
 
         :param detail: The detail of this EventInfoDetail.
-        :type detail: :class:`huaweicloudsdkces.v1.EventItemDetail`
+        :type detail: :class:`huaweicloudsdkces.v1.ShowEventItemDetail`
         """
         self._detail = detail
 

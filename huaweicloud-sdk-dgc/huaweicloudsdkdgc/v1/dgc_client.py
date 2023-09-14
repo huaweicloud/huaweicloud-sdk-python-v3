@@ -960,6 +960,12 @@ class DgcClient(Client):
         path_params = {}
 
         query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'connection_name' in local_var_params:
+            query_params.append(('connectionName', local_var_params['connection_name']))
 
         header_params = {}
         if 'workspace' in local_var_params:
@@ -1067,6 +1073,7 @@ class DgcClient(Client):
     def list_jobs(self, request):
         """查询作业列表
 
+        查询作业列表清单
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1086,6 +1093,14 @@ class DgcClient(Client):
         path_params = {}
 
         query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'job_type' in local_var_params:
+            query_params.append(('jobType', local_var_params['job_type']))
+        if 'job_name' in local_var_params:
+            query_params.append(('jobName', local_var_params['job_name']))
 
         header_params = {}
         if 'workspace' in local_var_params:
@@ -1139,6 +1154,12 @@ class DgcClient(Client):
         path_params = {}
 
         query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'resource_name' in local_var_params:
+            query_params.append(('resourceName', local_var_params['resource_name']))
 
         header_params = {}
         if 'workspace' in local_var_params:
@@ -1253,6 +1274,12 @@ class DgcClient(Client):
         path_params = {}
 
         query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'script_name' in local_var_params:
+            query_params.append(('scriptName', local_var_params['script_name']))
 
         header_params = {}
         if 'workspace' in local_var_params:
@@ -1308,6 +1335,22 @@ class DgcClient(Client):
         path_params = {}
 
         query_params = []
+        if 'sort' in local_var_params:
+            query_params.append(('sort', local_var_params['sort']))
+        if 'page' in local_var_params:
+            query_params.append(('page', local_var_params['page']))
+        if 'size' in local_var_params:
+            query_params.append(('size', local_var_params['size']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'user_name' in local_var_params:
+            query_params.append(('userName', local_var_params['user_name']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'start_date' in local_var_params:
+            query_params.append(('startDate', local_var_params['start_date']))
+        if 'end_date' in local_var_params:
+            query_params.append(('endDate', local_var_params['end_date']))
 
         header_params = {}
         if 'workspace' in local_var_params:
@@ -2113,7 +2156,7 @@ class DgcClient(Client):
 
         path_params = {}
         if 'instance_name' in local_var_params:
-            path_params['instance_name'] = local_var_params['instance_name']
+            path_params['instanceName'] = local_var_params['instance_name']
 
         query_params = []
 
@@ -2135,7 +2178,7 @@ class DgcClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v1.0/{project_id}/supplementdata/{instance_name}/stop',
+            resource_path='/v1.0/{project_id}/supplementdata/{instanceName}/stop',
             method='PUT',
             path_params=path_params,
             query_params=query_params,

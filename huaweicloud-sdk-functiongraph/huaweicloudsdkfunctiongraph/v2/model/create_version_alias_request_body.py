@@ -35,7 +35,7 @@ class CreateVersionAliasRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param name: 要获取的别名名称。
+        :param name: 别名名称。
         :type name: str
         :param version: 别名对应的版本名称。
         :type version: str
@@ -64,7 +64,7 @@ class CreateVersionAliasRequestBody:
     def name(self):
         """Gets the name of this CreateVersionAliasRequestBody.
 
-        要获取的别名名称。
+        别名名称。
 
         :return: The name of this CreateVersionAliasRequestBody.
         :rtype: str
@@ -75,7 +75,7 @@ class CreateVersionAliasRequestBody:
     def name(self, name):
         """Sets the name of this CreateVersionAliasRequestBody.
 
-        要获取的别名名称。
+        别名名称。
 
         :param name: The name of this CreateVersionAliasRequestBody.
         :type name: str

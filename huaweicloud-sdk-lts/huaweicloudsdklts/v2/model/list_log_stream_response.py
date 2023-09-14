@@ -18,7 +18,7 @@ class ListLogStreamResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'log_streams': 'list[LogStream]'
+        'log_streams': 'list[LogStreamResBody]'
     }
 
     attribute_map = {
@@ -30,8 +30,8 @@ class ListLogStreamResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param log_streams: 日志组数组。
-        :type log_streams: list[:class:`huaweicloudsdklts.v2.LogStream`]
+        :param log_streams: 
+        :type log_streams: list[:class:`huaweicloudsdklts.v2.LogStreamResBody`]
         """
         
         super(ListLogStreamResponse, self).__init__()
@@ -46,10 +46,8 @@ class ListLogStreamResponse(SdkResponse):
     def log_streams(self):
         """Gets the log_streams of this ListLogStreamResponse.
 
-        日志组数组。
-
         :return: The log_streams of this ListLogStreamResponse.
-        :rtype: list[:class:`huaweicloudsdklts.v2.LogStream`]
+        :rtype: list[:class:`huaweicloudsdklts.v2.LogStreamResBody`]
         """
         return self._log_streams
 
@@ -57,10 +55,8 @@ class ListLogStreamResponse(SdkResponse):
     def log_streams(self, log_streams):
         """Sets the log_streams of this ListLogStreamResponse.
 
-        日志组数组。
-
         :param log_streams: The log_streams of this ListLogStreamResponse.
-        :type log_streams: list[:class:`huaweicloudsdklts.v2.LogStream`]
+        :type log_streams: list[:class:`huaweicloudsdklts.v2.LogStreamResBody`]
         """
         self._log_streams = log_streams
 

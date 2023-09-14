@@ -1099,6 +1099,64 @@ class EvsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def modify_volume_qo_s(self, request):
+        """修改云硬盘QoS
+
+        调整云硬盘的iops或者吞吐量。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ModifyVolumeQoS
+        :type request: :class:`huaweicloudsdkevs.v2.ModifyVolumeQoSRequest`
+        :rtype: :class:`huaweicloudsdkevs.v2.ModifyVolumeQoSResponse`
+        """
+        return self._modify_volume_qo_s_with_http_info(request)
+
+    def _modify_volume_qo_s_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'volume_id' in local_var_params:
+            path_params['volume_id'] = local_var_params['volume_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v5/{project_id}/cloudvolumes/{volume_id}/qos',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ModifyVolumeQoSResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def resize_volume(self, request):
         """扩容云硬盘
 

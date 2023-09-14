@@ -30,6 +30,7 @@ class ShowBatchJobDetailResp:
         'kind': 'str',
         'queue': 'str',
         'image': 'str',
+        'req_body': 'str',
         'update_time': 'int',
         'duration': 'int'
     }
@@ -48,11 +49,12 @@ class ShowBatchJobDetailResp:
         'kind': 'kind',
         'queue': 'queue',
         'image': 'image',
+        'req_body': 'req_body',
         'update_time': 'update_time',
         'duration': 'duration'
     }
 
-    def __init__(self, id=None, state=None, app_id=None, log=None, sc_type=None, cluster_name=None, create_time=None, name=None, owner=None, proxy_user=None, kind=None, queue=None, image=None, update_time=None, duration=None):
+    def __init__(self, id=None, state=None, app_id=None, log=None, sc_type=None, cluster_name=None, create_time=None, name=None, owner=None, proxy_user=None, kind=None, queue=None, image=None, req_body=None, update_time=None, duration=None):
         """ShowBatchJobDetailResp
 
         The model defined in huaweicloud sdk
@@ -83,6 +85,8 @@ class ShowBatchJobDetailResp:
         :type queue: str
         :param image: 自定义镜像。格式为：组织名/镜像名:镜像版本。
         :type image: str
+        :param req_body: 请求参数详情
+        :type req_body: str
         :param update_time: 更新时间
         :type update_time: int
         :param duration: 作业运行时长，单位毫秒。
@@ -104,6 +108,7 @@ class ShowBatchJobDetailResp:
         self._kind = None
         self._queue = None
         self._image = None
+        self._req_body = None
         self._update_time = None
         self._duration = None
         self.discriminator = None
@@ -134,6 +139,8 @@ class ShowBatchJobDetailResp:
             self.queue = queue
         if image is not None:
             self.image = image
+        if req_body is not None:
+            self.req_body = req_body
         if update_time is not None:
             self.update_time = update_time
         if duration is not None:
@@ -424,6 +431,28 @@ class ShowBatchJobDetailResp:
         :type image: str
         """
         self._image = image
+
+    @property
+    def req_body(self):
+        """Gets the req_body of this ShowBatchJobDetailResp.
+
+        请求参数详情
+
+        :return: The req_body of this ShowBatchJobDetailResp.
+        :rtype: str
+        """
+        return self._req_body
+
+    @req_body.setter
+    def req_body(self, req_body):
+        """Sets the req_body of this ShowBatchJobDetailResp.
+
+        请求参数详情
+
+        :param req_body: The req_body of this ShowBatchJobDetailResp.
+        :type req_body: str
+        """
+        self._req_body = req_body
 
     @property
     def update_time(self):

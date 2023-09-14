@@ -144,10 +144,67 @@ class CsmsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def create_secret_event_async(self, request):
+        """创建事件
+
+        创建事件，事件可配置在一个或多个凭据对象上。当事件为启用状态且包含的基础事件类型在凭据对象上触发时，云服务会将对应的事件通知发送至事件指定的通知主题上。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateSecretEvent
+        :type request: :class:`huaweicloudsdkcsms.v1.CreateSecretEventRequest`
+        :rtype: :class:`huaweicloudsdkcsms.v1.CreateSecretEventResponse`
+        """
+        return self._create_secret_event_with_http_info(request)
+
+    def _create_secret_event_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/csms/events',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateSecretEventResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def create_secret_tag_async(self, request):
         """添加凭据标签
 
-        - 功能介绍：添加凭据标签。
+        添加凭据标签。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -319,6 +376,63 @@ class CsmsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def delete_secret_event_async(self, request):
+        """立即删除事件
+
+        立即删除指定的事件，且无法恢复。如事件存在凭据引用，则无法删除，请先解除关联。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteSecretEvent
+        :type request: :class:`huaweicloudsdkcsms.v1.DeleteSecretEventRequest`
+        :rtype: :class:`huaweicloudsdkcsms.v1.DeleteSecretEventResponse`
+        """
+        return self._delete_secret_event_with_http_info(request)
+
+    def _delete_secret_event_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'event_name' in local_var_params:
+            path_params['event_name'] = local_var_params['event_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/csms/events/{event_name}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteSecretEventResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def delete_secret_for_schedule_async(self, request):
         """创建凭据的定时删除任务
 
@@ -440,7 +554,7 @@ class CsmsAsyncClient(Client):
     def delete_secret_tag_async(self, request):
         """删除凭据标签
 
-        - 功能介绍：删除凭据标签。
+        删除凭据标签。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -553,10 +667,65 @@ class CsmsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_notification_records_async(self, request):
+        """查询已触发的事件通知记录
+
+        查询三个月内所有已触发的事件通知记录。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListNotificationRecords
+        :type request: :class:`huaweicloudsdkcsms.v1.ListNotificationRecordsRequest`
+        :rtype: :class:`huaweicloudsdkcsms.v1.ListNotificationRecordsResponse`
+        """
+        return self._list_notification_records_with_http_info(request)
+
+    def _list_notification_records_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/csms/notification-records',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListNotificationRecordsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_project_secrets_tags_async(self, request):
         """查询项目标签
 
-        - 功能介绍：查询用户在指定项目下的所有凭据标签集合。
+        查询用户在指定项目下的所有凭据标签集合。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -611,7 +780,7 @@ class CsmsAsyncClient(Client):
     def list_resource_instances_async(self, request):
         """查询凭据实例
 
-        - 功能介绍：查询凭据实例。通过标签过滤，筛选用户凭据,返回凭据列表。
+        查询凭据实例。通过标签过滤，筛选用户凭据，返回凭据列表。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -667,10 +836,69 @@ class CsmsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_secret_events_async(self, request):
+        """查询事件列表
+
+        查询当前用户在本项目下创建的所有事件。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListSecretEvents
+        :type request: :class:`huaweicloudsdkcsms.v1.ListSecretEventsRequest`
+        :rtype: :class:`huaweicloudsdkcsms.v1.ListSecretEventsResponse`
+        """
+        return self._list_secret_events_with_http_info(request)
+
+    def _list_secret_events_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/csms/events',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListSecretEventsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_secret_tags_async(self, request):
         """查询凭据标签
 
-        - 功能介绍：查询凭据标签。
+        查询凭据标签。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -813,6 +1041,8 @@ class CsmsAsyncClient(Client):
             query_params.append(('limit', local_var_params['limit']))
         if 'marker' in local_var_params:
             query_params.append(('marker', local_var_params['marker']))
+        if 'event_name' in local_var_params:
+            query_params.append(('event_name', local_var_params['event_name']))
 
         header_params = {}
 
@@ -953,6 +1183,63 @@ class CsmsAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ShowSecretResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_secret_event_async(self, request):
+        """查询事件
+
+        查询指定事件的信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowSecretEvent
+        :type request: :class:`huaweicloudsdkcsms.v1.ShowSecretEventRequest`
+        :rtype: :class:`huaweicloudsdkcsms.v1.ShowSecretEventResponse`
+        """
+        return self._show_secret_event_with_http_info(request)
+
+    def _show_secret_event_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'event_name' in local_var_params:
+            path_params['event_name'] = local_var_params['event_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/csms/events/{event_name}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowSecretEventResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1136,6 +1423,65 @@ class CsmsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def update_secret_event_async(self, request):
+        """更新事件
+
+        更新指定事件的元数据信息。支持更新的元数据包含事件启用状态、基础类型列表、通知主题。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateSecretEvent
+        :type request: :class:`huaweicloudsdkcsms.v1.UpdateSecretEventRequest`
+        :rtype: :class:`huaweicloudsdkcsms.v1.UpdateSecretEventResponse`
+        """
+        return self._update_secret_event_with_http_info(request)
+
+    def _update_secret_event_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'event_name' in local_var_params:
+            path_params['event_name'] = local_var_params['event_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/csms/events/{event_name}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateSecretEventResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def update_secret_stage_async(self, request):
         """更新凭据的版本状态
 
@@ -1192,6 +1538,67 @@ class CsmsAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='UpdateSecretStageResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_version_async(self, request):
+        """更新凭据版本
+
+        当前支持更新指定凭据版本的有效期，只能更新ENABLED状态的凭据。在关联订阅的事件包含“版本过期”基础事件类型时，每次更新版本有效期后仅会触发一次事件通知。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateVersion
+        :type request: :class:`huaweicloudsdkcsms.v1.UpdateVersionRequest`
+        :rtype: :class:`huaweicloudsdkcsms.v1.UpdateVersionResponse`
+        """
+        return self._update_version_with_http_info(request)
+
+    def _update_version_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'secret_name' in local_var_params:
+            path_params['secret_name'] = local_var_params['secret_name']
+        if 'version_id' in local_var_params:
+            path_params['version_id'] = local_var_params['version_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/secrets/{secret_name}/versions/{version_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateVersionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

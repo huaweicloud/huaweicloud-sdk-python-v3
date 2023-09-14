@@ -31,7 +31,7 @@ class Auth:
 
         The model defined in huaweicloud sdk
 
-        :param type: 取值为枚举类型。
+        :param type: 取值为枚举类型。password或keypair。
         :type type: str
         :param key: - type为枚举值password时，key表示密码； - type为枚举值keypair时，key表示私钥；
         :type key: str
@@ -52,7 +52,7 @@ class Auth:
     def type(self):
         """Gets the type of this Auth.
 
-        取值为枚举类型。
+        取值为枚举类型。password或keypair。
 
         :return: The type of this Auth.
         :rtype: str
@@ -63,7 +63,7 @@ class Auth:
     def type(self, type):
         """Sets the type of this Auth.
 
-        取值为枚举类型。
+        取值为枚举类型。password或keypair。
 
         :param type: The type of this Auth.
         :type type: str

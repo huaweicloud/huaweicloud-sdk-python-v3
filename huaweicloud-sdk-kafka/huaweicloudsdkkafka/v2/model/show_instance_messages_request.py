@@ -26,7 +26,8 @@ class ShowInstanceMessagesRequest:
         'offset': 'str',
         'download': 'bool',
         'message_offset': 'str',
-        'partition': 'str'
+        'partition': 'str',
+        'keyword': 'str'
     }
 
     attribute_map = {
@@ -39,10 +40,11 @@ class ShowInstanceMessagesRequest:
         'offset': 'offset',
         'download': 'download',
         'message_offset': 'message_offset',
-        'partition': 'partition'
+        'partition': 'partition',
+        'keyword': 'keyword'
     }
 
-    def __init__(self, instance_id=None, topic=None, asc=None, start_time=None, end_time=None, limit=None, offset=None, download=None, message_offset=None, partition=None):
+    def __init__(self, instance_id=None, topic=None, asc=None, start_time=None, end_time=None, limit=None, offset=None, download=None, message_offset=None, partition=None, keyword=None):
         """ShowInstanceMessagesRequest
 
         The model defined in huaweicloud sdk
@@ -67,6 +69,8 @@ class ShowInstanceMessagesRequest:
         :type message_offset: str
         :param partition: 分区。  **查询消息内容时，为必选参数。**  若start_time、end_time参数不为空，该参数无效。
         :type partition: str
+        :param keyword: 关键词。 取值范围为0~50。
+        :type keyword: str
         """
         
         
@@ -81,6 +85,7 @@ class ShowInstanceMessagesRequest:
         self._download = None
         self._message_offset = None
         self._partition = None
+        self._keyword = None
         self.discriminator = None
 
         self.instance_id = instance_id
@@ -101,6 +106,8 @@ class ShowInstanceMessagesRequest:
             self.message_offset = message_offset
         if partition is not None:
             self.partition = partition
+        if keyword is not None:
+            self.keyword = keyword
 
     @property
     def instance_id(self):
@@ -321,6 +328,28 @@ class ShowInstanceMessagesRequest:
         :type partition: str
         """
         self._partition = partition
+
+    @property
+    def keyword(self):
+        """Gets the keyword of this ShowInstanceMessagesRequest.
+
+        关键词。 取值范围为0~50。
+
+        :return: The keyword of this ShowInstanceMessagesRequest.
+        :rtype: str
+        """
+        return self._keyword
+
+    @keyword.setter
+    def keyword(self, keyword):
+        """Sets the keyword of this ShowInstanceMessagesRequest.
+
+        关键词。 取值范围为0~50。
+
+        :param keyword: The keyword of this ShowInstanceMessagesRequest.
+        :type keyword: str
+        """
+        self._keyword = keyword
 
     def to_dict(self):
         """Returns the model properties as a dict"""

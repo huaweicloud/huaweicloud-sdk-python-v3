@@ -45,7 +45,7 @@ class ShowTopUrlRequest:
         :type start_time: int
         :param end_time: 查询结束时间戳（单位：毫秒）。该时间戳的取值在转化为日期格式后须满足以下格式：XXXX-XX-XX 00:00:00
         :type end_time: int
-        :param domain_name: 域名列表，多个域名以逗号（半角）分隔，如：www.test1.com,www.test2.com ，ALL表示查询名下全部域名。
+        :param domain_name: 域名列表，多个域名以逗号（半角）分隔，如：www.test1.com,www.test2.com，all表示查询名下全部域名。如果域名在查询时间段内无数据，结果将不返回该域名的信息。
         :type domain_name: str
         :param service_area: mainland_china(中国大陆)，outside_mainland_china(中国大陆境外)，默认为mainland_china。
         :type service_area: str
@@ -142,7 +142,7 @@ class ShowTopUrlRequest:
     def domain_name(self):
         """Gets the domain_name of this ShowTopUrlRequest.
 
-        域名列表，多个域名以逗号（半角）分隔，如：www.test1.com,www.test2.com ，ALL表示查询名下全部域名。
+        域名列表，多个域名以逗号（半角）分隔，如：www.test1.com,www.test2.com，all表示查询名下全部域名。如果域名在查询时间段内无数据，结果将不返回该域名的信息。
 
         :return: The domain_name of this ShowTopUrlRequest.
         :rtype: str
@@ -153,7 +153,7 @@ class ShowTopUrlRequest:
     def domain_name(self, domain_name):
         """Sets the domain_name of this ShowTopUrlRequest.
 
-        域名列表，多个域名以逗号（半角）分隔，如：www.test1.com,www.test2.com ，ALL表示查询名下全部域名。
+        域名列表，多个域名以逗号（半角）分隔，如：www.test1.com,www.test2.com，all表示查询名下全部域名。如果域名在查询时间段内无数据，结果将不返回该域名的信息。
 
         :param domain_name: The domain_name of this ShowTopUrlRequest.
         :type domain_name: str

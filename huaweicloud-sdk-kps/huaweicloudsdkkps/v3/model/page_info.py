@@ -35,9 +35,9 @@ class PageInfo:
 
         :param next_marker: 返回下一页的查询地址
         :type next_marker: str
-        :param previous_marker: 返回前一页查询地址
+        :param previous_marker: 返回上一页的查询地址
         :type previous_marker: str
-        :param current_count: 本页返回条目数量
+        :param current_count: 返回条目数量
         :type current_count: int
         """
         
@@ -81,7 +81,7 @@ class PageInfo:
     def previous_marker(self):
         """Gets the previous_marker of this PageInfo.
 
-        返回前一页查询地址
+        返回上一页的查询地址
 
         :return: The previous_marker of this PageInfo.
         :rtype: str
@@ -92,7 +92,7 @@ class PageInfo:
     def previous_marker(self, previous_marker):
         """Sets the previous_marker of this PageInfo.
 
-        返回前一页查询地址
+        返回上一页的查询地址
 
         :param previous_marker: The previous_marker of this PageInfo.
         :type previous_marker: str
@@ -103,7 +103,7 @@ class PageInfo:
     def current_count(self):
         """Gets the current_count of this PageInfo.
 
-        本页返回条目数量
+        返回条目数量
 
         :return: The current_count of this PageInfo.
         :rtype: int
@@ -114,7 +114,7 @@ class PageInfo:
     def current_count(self, current_count):
         """Sets the current_count of this PageInfo.
 
-        本页返回条目数量
+        返回条目数量
 
         :param current_count: The current_count of this PageInfo.
         :type current_count: int

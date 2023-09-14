@@ -24,8 +24,7 @@ class EventItemDetail:
         'event_state': 'str',
         'event_level': 'str',
         'event_user': 'str',
-        'event_type': 'str',
-        'dimensions': 'MetricsDimension'
+        'event_type': 'str'
     }
 
     attribute_map = {
@@ -36,11 +35,10 @@ class EventItemDetail:
         'event_state': 'event_state',
         'event_level': 'event_level',
         'event_user': 'event_user',
-        'event_type': 'event_type',
-        'dimensions': 'dimensions'
+        'event_type': 'event_type'
     }
 
-    def __init__(self, content=None, group_id=None, resource_id=None, resource_name=None, event_state=None, event_level=None, event_user=None, event_type=None, dimensions=None):
+    def __init__(self, content=None, group_id=None, resource_id=None, resource_name=None, event_state=None, event_level=None, event_user=None, event_type=None):
         """EventItemDetail
 
         The model defined in huaweicloud sdk
@@ -61,8 +59,6 @@ class EventItemDetail:
         :type event_user: str
         :param event_type: 事件类型。 枚举类型，EVENT.SYS或EVENT.CUSTOM，EVENT.SYS为系统事件，用户自已不能上报，只能传EVENT.CUSTOM。
         :type event_type: str
-        :param dimensions: 
-        :type dimensions: :class:`huaweicloudsdkces.v1.MetricsDimension`
         """
         
         
@@ -75,7 +71,6 @@ class EventItemDetail:
         self._event_level = None
         self._event_user = None
         self._event_type = None
-        self._dimensions = None
         self.discriminator = None
 
         if content is not None:
@@ -94,8 +89,6 @@ class EventItemDetail:
             self.event_user = event_user
         if event_type is not None:
             self.event_type = event_type
-        if dimensions is not None:
-            self.dimensions = dimensions
 
     @property
     def content(self):
@@ -272,24 +265,6 @@ class EventItemDetail:
         :type event_type: str
         """
         self._event_type = event_type
-
-    @property
-    def dimensions(self):
-        """Gets the dimensions of this EventItemDetail.
-
-        :return: The dimensions of this EventItemDetail.
-        :rtype: :class:`huaweicloudsdkces.v1.MetricsDimension`
-        """
-        return self._dimensions
-
-    @dimensions.setter
-    def dimensions(self, dimensions):
-        """Sets the dimensions of this EventItemDetail.
-
-        :param dimensions: The dimensions of this EventItemDetail.
-        :type dimensions: :class:`huaweicloudsdkces.v1.MetricsDimension`
-        """
-        self._dimensions = dimensions
 
     def to_dict(self):
         """Returns the model properties as a dict"""

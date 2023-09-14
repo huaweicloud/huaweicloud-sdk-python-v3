@@ -29,6 +29,7 @@ class CreateFunctionRequestBody:
         'code_type': 'str',
         'code_url': 'str',
         'code_filename': 'str',
+        'custom_image': 'CustomImage',
         'user_data': 'str',
         'xrole': 'str',
         'app_xrole': 'str',
@@ -55,6 +56,7 @@ class CreateFunctionRequestBody:
         'code_type': 'code_type',
         'code_url': 'code_url',
         'code_filename': 'code_filename',
+        'custom_image': 'custom_image',
         'user_data': 'user_data',
         'xrole': 'xrole',
         'app_xrole': 'app_xrole',
@@ -68,7 +70,7 @@ class CreateFunctionRequestBody:
         'network_controller': 'network_controller'
     }
 
-    def __init__(self, func_name=None, package=None, runtime=None, timeout=None, handler=None, depend_version_list=None, func_vpc=None, memory_size=None, gpu_memory=None, code_type=None, code_url=None, code_filename=None, user_data=None, xrole=None, app_xrole=None, description=None, func_code=None, initializer_handler=None, initializer_timeout=None, enterprise_project_id=None, type=None, log_config=None, network_controller=None):
+    def __init__(self, func_name=None, package=None, runtime=None, timeout=None, handler=None, depend_version_list=None, func_vpc=None, memory_size=None, gpu_memory=None, code_type=None, code_url=None, code_filename=None, custom_image=None, user_data=None, xrole=None, app_xrole=None, description=None, func_code=None, initializer_handler=None, initializer_timeout=None, enterprise_project_id=None, type=None, log_config=None, network_controller=None):
         """CreateFunctionRequestBody
 
         The model defined in huaweicloud sdk
@@ -79,9 +81,9 @@ class CreateFunctionRequestBody:
         :type package: str
         :param runtime: FunctionGraph函数的执行环境 Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Python3.9: Python语言3.9版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Java8: Java语言8版本。 Java11: Java语言11版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 Node.js14.18: Nodejs语言14.18版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本。 http: HTTP函数。
         :type runtime: str
-        :param timeout: 函数执行超时时间，超时函数将被强行停止，范围3～900秒，可以通过白名单配置延长到12小时，具体可以咨询华为云函数工作流服务进行配置
+        :param timeout: 函数执行超时时间，超时函数将被强行停止，范围3～900秒，可以通过白名单配置延长到12小时，具体可以咨询客服进行配置
         :type timeout: int
-        :param handler: 函数执行入口 规则：xx.xx，必须包含“. ” 举例：对于node.js函数：myfunction.handler，则表示函数的文件名为myfunction.js，执行的入口函数名为handler。
+        :param handler: 函数执行入口 规则：xx.xx，必须包含“. ”；自定义镜像函数handler为“-” 举例：对于node.js函数：myfunction.handler，则表示函数的文件名为myfunction.js，执行的入口函数名为handler。
         :type handler: str
         :param depend_version_list: 依赖版本id列表
         :type depend_version_list: list[str]
@@ -95,8 +97,10 @@ class CreateFunctionRequestBody:
         :type code_type: str
         :param code_url: 当CodeType为obs时，该值为函数代码包在OBS上的地址，CodeType为其他值时，该字段为空。
         :type code_url: str
-        :param code_filename: 函数的文件名，当CodeType为jar/zip时必须提供该字段，inline和obs不需要提供。
+        :param code_filename: 函数的文件名，当CodeType为jar/zip时必须提供该字段，CodeType为其他值时不需要提供。
         :type code_filename: str
+        :param custom_image: 
+        :type custom_image: :class:`huaweicloudsdkfunctiongraph.v2.CustomImage`
         :param user_data: 用户自定义的name/value信息。 在函数中使用的参数。 举例：如函数要访问某个主机，可以设置自定义参数：Host&#x3D;{host_ip}，最多定义20个，总长度不超过4KB。
         :type user_data: str
         :param xrole: 函数使用的权限委托名称，需要IAM支持，并在IAM界面创建委托，当函数需要访问其他服务时，必须提供该字段。
@@ -135,6 +139,7 @@ class CreateFunctionRequestBody:
         self._code_type = None
         self._code_url = None
         self._code_filename = None
+        self._custom_image = None
         self._user_data = None
         self._xrole = None
         self._app_xrole = None
@@ -165,6 +170,8 @@ class CreateFunctionRequestBody:
             self.code_url = code_url
         if code_filename is not None:
             self.code_filename = code_filename
+        if custom_image is not None:
+            self.custom_image = custom_image
         if user_data is not None:
             self.user_data = user_data
         if xrole is not None:
@@ -258,7 +265,7 @@ class CreateFunctionRequestBody:
     def timeout(self):
         """Gets the timeout of this CreateFunctionRequestBody.
 
-        函数执行超时时间，超时函数将被强行停止，范围3～900秒，可以通过白名单配置延长到12小时，具体可以咨询华为云函数工作流服务进行配置
+        函数执行超时时间，超时函数将被强行停止，范围3～900秒，可以通过白名单配置延长到12小时，具体可以咨询客服进行配置
 
         :return: The timeout of this CreateFunctionRequestBody.
         :rtype: int
@@ -269,7 +276,7 @@ class CreateFunctionRequestBody:
     def timeout(self, timeout):
         """Sets the timeout of this CreateFunctionRequestBody.
 
-        函数执行超时时间，超时函数将被强行停止，范围3～900秒，可以通过白名单配置延长到12小时，具体可以咨询华为云函数工作流服务进行配置
+        函数执行超时时间，超时函数将被强行停止，范围3～900秒，可以通过白名单配置延长到12小时，具体可以咨询客服进行配置
 
         :param timeout: The timeout of this CreateFunctionRequestBody.
         :type timeout: int
@@ -280,7 +287,7 @@ class CreateFunctionRequestBody:
     def handler(self):
         """Gets the handler of this CreateFunctionRequestBody.
 
-        函数执行入口 规则：xx.xx，必须包含“. ” 举例：对于node.js函数：myfunction.handler，则表示函数的文件名为myfunction.js，执行的入口函数名为handler。
+        函数执行入口 规则：xx.xx，必须包含“. ”；自定义镜像函数handler为“-” 举例：对于node.js函数：myfunction.handler，则表示函数的文件名为myfunction.js，执行的入口函数名为handler。
 
         :return: The handler of this CreateFunctionRequestBody.
         :rtype: str
@@ -291,7 +298,7 @@ class CreateFunctionRequestBody:
     def handler(self, handler):
         """Sets the handler of this CreateFunctionRequestBody.
 
-        函数执行入口 规则：xx.xx，必须包含“. ” 举例：对于node.js函数：myfunction.handler，则表示函数的文件名为myfunction.js，执行的入口函数名为handler。
+        函数执行入口 规则：xx.xx，必须包含“. ”；自定义镜像函数handler为“-” 举例：对于node.js函数：myfunction.handler，则表示函数的文件名为myfunction.js，执行的入口函数名为handler。
 
         :param handler: The handler of this CreateFunctionRequestBody.
         :type handler: str
@@ -430,7 +437,7 @@ class CreateFunctionRequestBody:
     def code_filename(self):
         """Gets the code_filename of this CreateFunctionRequestBody.
 
-        函数的文件名，当CodeType为jar/zip时必须提供该字段，inline和obs不需要提供。
+        函数的文件名，当CodeType为jar/zip时必须提供该字段，CodeType为其他值时不需要提供。
 
         :return: The code_filename of this CreateFunctionRequestBody.
         :rtype: str
@@ -441,12 +448,30 @@ class CreateFunctionRequestBody:
     def code_filename(self, code_filename):
         """Sets the code_filename of this CreateFunctionRequestBody.
 
-        函数的文件名，当CodeType为jar/zip时必须提供该字段，inline和obs不需要提供。
+        函数的文件名，当CodeType为jar/zip时必须提供该字段，CodeType为其他值时不需要提供。
 
         :param code_filename: The code_filename of this CreateFunctionRequestBody.
         :type code_filename: str
         """
         self._code_filename = code_filename
+
+    @property
+    def custom_image(self):
+        """Gets the custom_image of this CreateFunctionRequestBody.
+
+        :return: The custom_image of this CreateFunctionRequestBody.
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.CustomImage`
+        """
+        return self._custom_image
+
+    @custom_image.setter
+    def custom_image(self, custom_image):
+        """Sets the custom_image of this CreateFunctionRequestBody.
+
+        :param custom_image: The custom_image of this CreateFunctionRequestBody.
+        :type custom_image: :class:`huaweicloudsdkfunctiongraph.v2.CustomImage`
+        """
+        self._custom_image = custom_image
 
     @property
     def user_data(self):

@@ -31,7 +31,7 @@ class Encryption:
 
         The model defined in huaweicloud sdk
 
-        :param type: 取值范围：“kms”或“default”。 - “default”为默认加密方式，适用于没有kms服务的局点。 - “kms”为采用kms服务加密方式。若局点没有kms服务，请填“default”。
+        :param type: 取值范围：“kms”或“default”。 - “default”为默认加密方式，适用于没有kms服务的局点。 - “kms”为采用kms服务加密方式。 若局点没有kms服务，请填“default”。
         :type type: str
         :param kms_key_name: kms密钥的名称。  - 若“type”为“kms”，则必须填入kms服务密钥名称。
         :type kms_key_name: str
@@ -43,16 +43,14 @@ class Encryption:
         self._kms_key_name = None
         self.discriminator = None
 
-        if type is not None:
-            self.type = type
-        if kms_key_name is not None:
-            self.kms_key_name = kms_key_name
+        self.type = type
+        self.kms_key_name = kms_key_name
 
     @property
     def type(self):
         """Gets the type of this Encryption.
 
-        取值范围：“kms”或“default”。 - “default”为默认加密方式，适用于没有kms服务的局点。 - “kms”为采用kms服务加密方式。若局点没有kms服务，请填“default”。
+        取值范围：“kms”或“default”。 - “default”为默认加密方式，适用于没有kms服务的局点。 - “kms”为采用kms服务加密方式。 若局点没有kms服务，请填“default”。
 
         :return: The type of this Encryption.
         :rtype: str
@@ -63,7 +61,7 @@ class Encryption:
     def type(self, type):
         """Sets the type of this Encryption.
 
-        取值范围：“kms”或“default”。 - “default”为默认加密方式，适用于没有kms服务的局点。 - “kms”为采用kms服务加密方式。若局点没有kms服务，请填“default”。
+        取值范围：“kms”或“default”。 - “default”为默认加密方式，适用于没有kms服务的局点。 - “kms”为采用kms服务加密方式。 若局点没有kms服务，请填“default”。
 
         :param type: The type of this Encryption.
         :type type: str

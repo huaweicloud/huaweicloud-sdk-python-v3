@@ -38,6 +38,7 @@ from huaweicloudsdkbms.v1.model.create_bare_metal_servers_request import CreateB
 from huaweicloudsdkbms.v1.model.create_bare_metal_servers_response import CreateBareMetalServersResponse
 from huaweicloudsdkbms.v1.model.create_baremetal_servers_body import CreateBaremetalServersBody
 from huaweicloudsdkbms.v1.model.create_scheduler_hints import CreateSchedulerHints
+from huaweicloudsdkbms.v1.model.create_server_nic_allowed_address_pairs import CreateServerNicAllowedAddressPairs
 from huaweicloudsdkbms.v1.model.create_servers import CreateServers
 from huaweicloudsdkbms.v1.model.data_volumes import DataVolumes
 from huaweicloudsdkbms.v1.model.delete_server_nics_req import DeleteServerNicsReq

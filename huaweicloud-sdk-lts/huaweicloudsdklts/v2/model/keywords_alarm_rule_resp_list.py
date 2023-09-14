@@ -23,7 +23,7 @@ class KeywordsAlarmRuleRespList:
         'keywords_alarm_rule_description': 'str',
         'condition_expression': 'str',
         'keywords_requests': 'list[KeywordsRequest]',
-        'frequency': 'Frequency',
+        'frequency': 'object',
         'keywords_alarm_level': 'str',
         'keywords_alarm_send': 'bool',
         'domain_id': 'str',
@@ -78,7 +78,7 @@ class KeywordsAlarmRuleRespList:
         :param keywords_requests: 关键词详细信息
         :type keywords_requests: list[:class:`huaweicloudsdklts.v2.KeywordsRequest`]
         :param frequency: 告警统计周期
-        :type frequency: :class:`huaweicloudsdklts.v2.Frequency`
+        :type frequency: object
         :param keywords_alarm_level: 告警级别
         :type keywords_alarm_level: str
         :param keywords_alarm_send: 是否发送
@@ -293,7 +293,7 @@ class KeywordsAlarmRuleRespList:
         告警统计周期
 
         :return: The frequency of this KeywordsAlarmRuleRespList.
-        :rtype: :class:`huaweicloudsdklts.v2.Frequency`
+        :rtype: object
         """
         return self._frequency
 
@@ -304,7 +304,7 @@ class KeywordsAlarmRuleRespList:
         告警统计周期
 
         :param frequency: The frequency of this KeywordsAlarmRuleRespList.
-        :type frequency: :class:`huaweicloudsdklts.v2.Frequency`
+        :type frequency: object
         """
         self._frequency = frequency
 
