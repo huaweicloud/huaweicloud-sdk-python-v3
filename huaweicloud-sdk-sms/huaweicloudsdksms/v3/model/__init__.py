@@ -17,6 +17,8 @@ from huaweicloudsdksms.v3.model.config_body import ConfigBody
 from huaweicloudsdksms.v3.model.configuration_request_body import ConfigurationRequestBody
 from huaweicloudsdksms.v3.model.create_migproject_request import CreateMigprojectRequest
 from huaweicloudsdksms.v3.model.create_migproject_response import CreateMigprojectResponse
+from huaweicloudsdksms.v3.model.create_privacy_agreements_request import CreatePrivacyAgreementsRequest
+from huaweicloudsdksms.v3.model.create_privacy_agreements_response import CreatePrivacyAgreementsResponse
 from huaweicloudsdksms.v3.model.create_task_request import CreateTaskRequest
 from huaweicloudsdksms.v3.model.create_task_response import CreateTaskResponse
 from huaweicloudsdksms.v3.model.create_template_req import CreateTemplateReq
@@ -98,6 +100,8 @@ from huaweicloudsdksms.v3.model.show_overview_request import ShowOverviewRequest
 from huaweicloudsdksms.v3.model.show_overview_response import ShowOverviewResponse
 from huaweicloudsdksms.v3.model.show_passphrase_request import ShowPassphraseRequest
 from huaweicloudsdksms.v3.model.show_passphrase_response import ShowPassphraseResponse
+from huaweicloudsdksms.v3.model.show_privacy_agreements_request import ShowPrivacyAgreementsRequest
+from huaweicloudsdksms.v3.model.show_privacy_agreements_response import ShowPrivacyAgreementsResponse
 from huaweicloudsdksms.v3.model.show_server_request import ShowServerRequest
 from huaweicloudsdksms.v3.model.show_server_response import ShowServerResponse
 from huaweicloudsdksms.v3.model.show_sha256_request import ShowSha256Request

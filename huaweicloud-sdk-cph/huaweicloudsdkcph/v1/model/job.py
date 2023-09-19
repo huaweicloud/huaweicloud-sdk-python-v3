@@ -47,25 +47,25 @@ class Job:
 
         The model defined in huaweicloud sdk
 
-        :param phone_id: 云手机的唯一标识，云手机相关任务包含此字段
+        :param phone_id: 云手机的唯一标识，云手机相关任务包含此字段。
         :type phone_id: str
-        :param server_id: 云手机服务器的唯一标识ID，云手机服务器相关任务包含此字段
+        :param server_id: 云手机服务器的唯一标识ID，云手机服务器相关任务包含此字段。
         :type server_id: str
-        :param node_id: （已废弃）云手机服务器的唯一标识ID，云手机服务 含此字段
+        :param node_id: （已废弃）云手机服务器的唯一标识ID，云手机服务含此字段。
         :type node_id: str
-        :param job_id: 任务的唯一标识
+        :param job_id: 任务的唯一标识。
         :type job_id: str
-        :param begin_time: 任务处理开始时间 时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ
+        :param begin_time: 任务处理开始时间， 时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ。
         :type begin_time: str
-        :param end_time: 任务处理结束时间 时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ
+        :param end_time: 任务处理结束时间， 时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ。
         :type end_time: str
-        :param status: 任务状态 - 1 ：运行中 - 2 ： 成功 - -1 ：失败
+        :param status: 任务状态。 - 1 ：运行中 - 2 ： 成功 - -1 ：失败
         :type status: int
-        :param error_code: 任务错误码
+        :param error_code: 任务错误码。
         :type error_code: str
-        :param error_msg: 任务错误码说明
+        :param error_msg: 任务错误码说明。
         :type error_msg: str
-        :param execute_msg: 任务执行返回内容，最长1024个字节
+        :param execute_msg: 任务执行返回内容，最长1024个字节。
         :type execute_msg: str
         """
         
@@ -108,7 +108,7 @@ class Job:
     def phone_id(self):
         """Gets the phone_id of this Job.
 
-        云手机的唯一标识，云手机相关任务包含此字段
+        云手机的唯一标识，云手机相关任务包含此字段。
 
         :return: The phone_id of this Job.
         :rtype: str
@@ -119,7 +119,7 @@ class Job:
     def phone_id(self, phone_id):
         """Sets the phone_id of this Job.
 
-        云手机的唯一标识，云手机相关任务包含此字段
+        云手机的唯一标识，云手机相关任务包含此字段。
 
         :param phone_id: The phone_id of this Job.
         :type phone_id: str
@@ -130,7 +130,7 @@ class Job:
     def server_id(self):
         """Gets the server_id of this Job.
 
-        云手机服务器的唯一标识ID，云手机服务器相关任务包含此字段
+        云手机服务器的唯一标识ID，云手机服务器相关任务包含此字段。
 
         :return: The server_id of this Job.
         :rtype: str
@@ -141,7 +141,7 @@ class Job:
     def server_id(self, server_id):
         """Sets the server_id of this Job.
 
-        云手机服务器的唯一标识ID，云手机服务器相关任务包含此字段
+        云手机服务器的唯一标识ID，云手机服务器相关任务包含此字段。
 
         :param server_id: The server_id of this Job.
         :type server_id: str
@@ -152,7 +152,7 @@ class Job:
     def node_id(self):
         """Gets the node_id of this Job.
 
-        （已废弃）云手机服务器的唯一标识ID，云手机服务 含此字段
+        （已废弃）云手机服务器的唯一标识ID，云手机服务含此字段。
 
         :return: The node_id of this Job.
         :rtype: str
@@ -163,7 +163,7 @@ class Job:
     def node_id(self, node_id):
         """Sets the node_id of this Job.
 
-        （已废弃）云手机服务器的唯一标识ID，云手机服务 含此字段
+        （已废弃）云手机服务器的唯一标识ID，云手机服务含此字段。
 
         :param node_id: The node_id of this Job.
         :type node_id: str
@@ -174,7 +174,7 @@ class Job:
     def job_id(self):
         """Gets the job_id of this Job.
 
-        任务的唯一标识
+        任务的唯一标识。
 
         :return: The job_id of this Job.
         :rtype: str
@@ -185,7 +185,7 @@ class Job:
     def job_id(self, job_id):
         """Sets the job_id of this Job.
 
-        任务的唯一标识
+        任务的唯一标识。
 
         :param job_id: The job_id of this Job.
         :type job_id: str
@@ -196,7 +196,7 @@ class Job:
     def begin_time(self):
         """Gets the begin_time of this Job.
 
-        任务处理开始时间 时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ
+        任务处理开始时间， 时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ。
 
         :return: The begin_time of this Job.
         :rtype: str
@@ -207,7 +207,7 @@ class Job:
     def begin_time(self, begin_time):
         """Sets the begin_time of this Job.
 
-        任务处理开始时间 时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ
+        任务处理开始时间， 时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ。
 
         :param begin_time: The begin_time of this Job.
         :type begin_time: str
@@ -218,7 +218,7 @@ class Job:
     def end_time(self):
         """Gets the end_time of this Job.
 
-        任务处理结束时间 时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ
+        任务处理结束时间， 时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ。
 
         :return: The end_time of this Job.
         :rtype: str
@@ -229,7 +229,7 @@ class Job:
     def end_time(self, end_time):
         """Sets the end_time of this Job.
 
-        任务处理结束时间 时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ
+        任务处理结束时间， 时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ。
 
         :param end_time: The end_time of this Job.
         :type end_time: str
@@ -240,7 +240,7 @@ class Job:
     def status(self):
         """Gets the status of this Job.
 
-        任务状态 - 1 ：运行中 - 2 ： 成功 - -1 ：失败
+        任务状态。 - 1 ：运行中 - 2 ： 成功 - -1 ：失败
 
         :return: The status of this Job.
         :rtype: int
@@ -251,7 +251,7 @@ class Job:
     def status(self, status):
         """Sets the status of this Job.
 
-        任务状态 - 1 ：运行中 - 2 ： 成功 - -1 ：失败
+        任务状态。 - 1 ：运行中 - 2 ： 成功 - -1 ：失败
 
         :param status: The status of this Job.
         :type status: int
@@ -262,7 +262,7 @@ class Job:
     def error_code(self):
         """Gets the error_code of this Job.
 
-        任务错误码
+        任务错误码。
 
         :return: The error_code of this Job.
         :rtype: str
@@ -273,7 +273,7 @@ class Job:
     def error_code(self, error_code):
         """Sets the error_code of this Job.
 
-        任务错误码
+        任务错误码。
 
         :param error_code: The error_code of this Job.
         :type error_code: str
@@ -284,7 +284,7 @@ class Job:
     def error_msg(self):
         """Gets the error_msg of this Job.
 
-        任务错误码说明
+        任务错误码说明。
 
         :return: The error_msg of this Job.
         :rtype: str
@@ -295,7 +295,7 @@ class Job:
     def error_msg(self, error_msg):
         """Sets the error_msg of this Job.
 
-        任务错误码说明
+        任务错误码说明。
 
         :param error_msg: The error_msg of this Job.
         :type error_msg: str
@@ -306,7 +306,7 @@ class Job:
     def execute_msg(self):
         """Gets the execute_msg of this Job.
 
-        任务执行返回内容，最长1024个字节
+        任务执行返回内容，最长1024个字节。
 
         :return: The execute_msg of this Job.
         :rtype: str
@@ -317,7 +317,7 @@ class Job:
     def execute_msg(self, execute_msg):
         """Sets the execute_msg of this Job.
 
-        任务执行返回内容，最长1024个字节
+        任务执行返回内容，最长1024个字节。
 
         :param execute_msg: The execute_msg of this Job.
         :type execute_msg: str

@@ -19,15 +19,17 @@ class CreatePictureModelingJobResponse(SdkResponse):
 
     openapi_types = {
         'job_id': 'str',
-        'model_asset_id': 'str'
+        'model_asset_id': 'str',
+        'x_request_id': 'str'
     }
 
     attribute_map = {
         'job_id': 'job_id',
-        'model_asset_id': 'model_asset_id'
+        'model_asset_id': 'model_asset_id',
+        'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, job_id=None, model_asset_id=None):
+    def __init__(self, job_id=None, model_asset_id=None, x_request_id=None):
         """CreatePictureModelingJobResponse
 
         The model defined in huaweicloud sdk
@@ -36,18 +38,23 @@ class CreatePictureModelingJobResponse(SdkResponse):
         :type job_id: str
         :param model_asset_id: 数字人资产ID。
         :type model_asset_id: str
+        :param x_request_id: 
+        :type x_request_id: str
         """
         
         super(CreatePictureModelingJobResponse, self).__init__()
 
         self._job_id = None
         self._model_asset_id = None
+        self._x_request_id = None
         self.discriminator = None
 
         if job_id is not None:
             self.job_id = job_id
         if model_asset_id is not None:
             self.model_asset_id = model_asset_id
+        if x_request_id is not None:
+            self.x_request_id = x_request_id
 
     @property
     def job_id(self):
@@ -92,6 +99,24 @@ class CreatePictureModelingJobResponse(SdkResponse):
         :type model_asset_id: str
         """
         self._model_asset_id = model_asset_id
+
+    @property
+    def x_request_id(self):
+        """Gets the x_request_id of this CreatePictureModelingJobResponse.
+
+        :return: The x_request_id of this CreatePictureModelingJobResponse.
+        :rtype: str
+        """
+        return self._x_request_id
+
+    @x_request_id.setter
+    def x_request_id(self, x_request_id):
+        """Sets the x_request_id of this CreatePictureModelingJobResponse.
+
+        :param x_request_id: The x_request_id of this CreatePictureModelingJobResponse.
+        :type x_request_id: str
+        """
+        self._x_request_id = x_request_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

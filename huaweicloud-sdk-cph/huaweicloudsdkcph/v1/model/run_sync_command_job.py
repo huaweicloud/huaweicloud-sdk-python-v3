@@ -39,17 +39,17 @@ class RunSyncCommandJob:
 
         The model defined in huaweicloud sdk
 
-        :param phone_id: 云手机的唯一标识，云手机相关任务包含此字段
+        :param phone_id: 云手机的唯一标识，云手机相关任务包含此字段。
         :type phone_id: str
-        :param job_id: 任务的唯一标识
+        :param job_id: 任务的唯一标识。
         :type job_id: str
         :param status: 任务状态 - 2：成功 - 1：运行中 - -1：失败
         :type status: int
-        :param error_code: 任务错误码
+        :param error_code: 任务错误码。
         :type error_code: str
-        :param error_msg: 任务错误码说明
+        :param error_msg: 任务错误码说明。
         :type error_msg: str
-        :param execute_msg: 任务执行返回内容，最长1024字节
+        :param execute_msg: 任务执行返回内容，最长1024字节。
         :type execute_msg: str
         """
         
@@ -80,7 +80,7 @@ class RunSyncCommandJob:
     def phone_id(self):
         """Gets the phone_id of this RunSyncCommandJob.
 
-        云手机的唯一标识，云手机相关任务包含此字段
+        云手机的唯一标识，云手机相关任务包含此字段。
 
         :return: The phone_id of this RunSyncCommandJob.
         :rtype: str
@@ -91,7 +91,7 @@ class RunSyncCommandJob:
     def phone_id(self, phone_id):
         """Sets the phone_id of this RunSyncCommandJob.
 
-        云手机的唯一标识，云手机相关任务包含此字段
+        云手机的唯一标识，云手机相关任务包含此字段。
 
         :param phone_id: The phone_id of this RunSyncCommandJob.
         :type phone_id: str
@@ -102,7 +102,7 @@ class RunSyncCommandJob:
     def job_id(self):
         """Gets the job_id of this RunSyncCommandJob.
 
-        任务的唯一标识
+        任务的唯一标识。
 
         :return: The job_id of this RunSyncCommandJob.
         :rtype: str
@@ -113,7 +113,7 @@ class RunSyncCommandJob:
     def job_id(self, job_id):
         """Sets the job_id of this RunSyncCommandJob.
 
-        任务的唯一标识
+        任务的唯一标识。
 
         :param job_id: The job_id of this RunSyncCommandJob.
         :type job_id: str
@@ -146,7 +146,7 @@ class RunSyncCommandJob:
     def error_code(self):
         """Gets the error_code of this RunSyncCommandJob.
 
-        任务错误码
+        任务错误码。
 
         :return: The error_code of this RunSyncCommandJob.
         :rtype: str
@@ -157,7 +157,7 @@ class RunSyncCommandJob:
     def error_code(self, error_code):
         """Sets the error_code of this RunSyncCommandJob.
 
-        任务错误码
+        任务错误码。
 
         :param error_code: The error_code of this RunSyncCommandJob.
         :type error_code: str
@@ -168,7 +168,7 @@ class RunSyncCommandJob:
     def error_msg(self):
         """Gets the error_msg of this RunSyncCommandJob.
 
-        任务错误码说明
+        任务错误码说明。
 
         :return: The error_msg of this RunSyncCommandJob.
         :rtype: str
@@ -179,7 +179,7 @@ class RunSyncCommandJob:
     def error_msg(self, error_msg):
         """Sets the error_msg of this RunSyncCommandJob.
 
-        任务错误码说明
+        任务错误码说明。
 
         :param error_msg: The error_msg of this RunSyncCommandJob.
         :type error_msg: str
@@ -190,7 +190,7 @@ class RunSyncCommandJob:
     def execute_msg(self):
         """Gets the execute_msg of this RunSyncCommandJob.
 
-        任务执行返回内容，最长1024字节
+        任务执行返回内容，最长1024字节。
 
         :return: The execute_msg of this RunSyncCommandJob.
         :rtype: str
@@ -201,7 +201,7 @@ class RunSyncCommandJob:
     def execute_msg(self, execute_msg):
         """Sets the execute_msg of this RunSyncCommandJob.
 
-        任务执行返回内容，最长1024字节
+        任务执行返回内容，最长1024字节。
 
         :param execute_msg: The execute_msg of this RunSyncCommandJob.
         :type execute_msg: str

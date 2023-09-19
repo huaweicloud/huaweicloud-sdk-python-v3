@@ -75,7 +75,7 @@ class PassportResult:
         :type date_of_birth: str
         :param date_of_expiry: 护照有效期（英文）。 
         :type date_of_expiry: str
-        :param date_of_issue: 护照签发日期（英文）。 
+        :param date_of_issue: 护照签发日期（英文）。只有中国护照才返回此字段。 
         :type date_of_issue: str
         :param place_of_birth: 出生地（英文）。 
         :type place_of_birth: str
@@ -341,7 +341,7 @@ class PassportResult:
     def date_of_issue(self):
         """Gets the date_of_issue of this PassportResult.
 
-        护照签发日期（英文）。 
+        护照签发日期（英文）。只有中国护照才返回此字段。 
 
         :return: The date_of_issue of this PassportResult.
         :rtype: str
@@ -352,7 +352,7 @@ class PassportResult:
     def date_of_issue(self, date_of_issue):
         """Sets the date_of_issue of this PassportResult.
 
-        护照签发日期（英文）。 
+        护照签发日期（英文）。只有中国护照才返回此字段。 
 
         :param date_of_issue: The date_of_issue of this PassportResult.
         :type date_of_issue: str

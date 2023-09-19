@@ -29,7 +29,7 @@ class ShowSha256Request:
 
         The model defined in huaweicloud sdk
 
-        :param key: 关键字
+        :param key: 关键字，加密字段值为uuid。
         :type key: str
         """
         
@@ -44,7 +44,7 @@ class ShowSha256Request:
     def key(self):
         """Gets the key of this ShowSha256Request.
 
-        关键字
+        关键字，加密字段值为uuid。
 
         :return: The key of this ShowSha256Request.
         :rtype: str
@@ -55,7 +55,7 @@ class ShowSha256Request:
     def key(self, key):
         """Sets the key of this ShowSha256Request.
 
-        关键字
+        关键字，加密字段值为uuid。
 
         :param key: The key of this ShowSha256Request.
         :type key: str

@@ -18,47 +18,51 @@ class CreateRocketMqMigrationTaskResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'body': 'str'
+        'task_id': 'str'
     }
 
     attribute_map = {
-        'body': 'body'
+        'task_id': 'task_id'
     }
 
-    def __init__(self, body=None):
+    def __init__(self, task_id=None):
         """CreateRocketMqMigrationTaskResponse
 
         The model defined in huaweicloud sdk
 
-        :param body: 
-        :type body: str
+        :param task_id: 任务ID
+        :type task_id: str
         """
         
         super(CreateRocketMqMigrationTaskResponse, self).__init__()
 
-        self._body = None
+        self._task_id = None
         self.discriminator = None
 
-        if body is not None:
-            self.body = body
+        if task_id is not None:
+            self.task_id = task_id
 
     @property
-    def body(self):
-        """Gets the body of this CreateRocketMqMigrationTaskResponse.
+    def task_id(self):
+        """Gets the task_id of this CreateRocketMqMigrationTaskResponse.
 
-        :return: The body of this CreateRocketMqMigrationTaskResponse.
+        任务ID
+
+        :return: The task_id of this CreateRocketMqMigrationTaskResponse.
         :rtype: str
         """
-        return self._body
+        return self._task_id
 
-    @body.setter
-    def body(self, body):
-        """Sets the body of this CreateRocketMqMigrationTaskResponse.
+    @task_id.setter
+    def task_id(self, task_id):
+        """Sets the task_id of this CreateRocketMqMigrationTaskResponse.
 
-        :param body: The body of this CreateRocketMqMigrationTaskResponse.
-        :type body: str
+        任务ID
+
+        :param task_id: The task_id of this CreateRocketMqMigrationTaskResponse.
+        :type task_id: str
         """
-        self._body = body
+        self._task_id = task_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

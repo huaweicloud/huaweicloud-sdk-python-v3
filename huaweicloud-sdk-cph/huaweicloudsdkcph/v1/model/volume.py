@@ -39,17 +39,17 @@ class Volume:
 
         The model defined in huaweicloud sdk
 
-        :param volume_name: 云手机服务器的硬盘名称
+        :param volume_name: 云手机服务器的硬盘名称。
         :type volume_name: str
-        :param volume_id: 云手机服务器的硬盘唯一标识
+        :param volume_id: 云手机服务器的硬盘唯一标识。
         :type volume_id: str
-        :param volume_size: 云手机服务器的硬盘大小，单位G
+        :param volume_size: 云手机服务器的硬盘大小，单位G。
         :type volume_size: int
-        :param volume_type: 云手机服务器的硬盘类型
+        :param volume_type: 云手机服务器的硬盘类型。
         :type volume_type: str
-        :param create_time: 硬盘创建时间  时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ
+        :param create_time: 硬盘创建时间，  时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ。
         :type create_time: str
-        :param update_time: 硬盘更新时间  时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ
+        :param update_time: 硬盘更新时间，  时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ。
         :type update_time: str
         """
         
@@ -80,7 +80,7 @@ class Volume:
     def volume_name(self):
         """Gets the volume_name of this Volume.
 
-        云手机服务器的硬盘名称
+        云手机服务器的硬盘名称。
 
         :return: The volume_name of this Volume.
         :rtype: str
@@ -91,7 +91,7 @@ class Volume:
     def volume_name(self, volume_name):
         """Sets the volume_name of this Volume.
 
-        云手机服务器的硬盘名称
+        云手机服务器的硬盘名称。
 
         :param volume_name: The volume_name of this Volume.
         :type volume_name: str
@@ -102,7 +102,7 @@ class Volume:
     def volume_id(self):
         """Gets the volume_id of this Volume.
 
-        云手机服务器的硬盘唯一标识
+        云手机服务器的硬盘唯一标识。
 
         :return: The volume_id of this Volume.
         :rtype: str
@@ -113,7 +113,7 @@ class Volume:
     def volume_id(self, volume_id):
         """Sets the volume_id of this Volume.
 
-        云手机服务器的硬盘唯一标识
+        云手机服务器的硬盘唯一标识。
 
         :param volume_id: The volume_id of this Volume.
         :type volume_id: str
@@ -124,7 +124,7 @@ class Volume:
     def volume_size(self):
         """Gets the volume_size of this Volume.
 
-        云手机服务器的硬盘大小，单位G
+        云手机服务器的硬盘大小，单位G。
 
         :return: The volume_size of this Volume.
         :rtype: int
@@ -135,7 +135,7 @@ class Volume:
     def volume_size(self, volume_size):
         """Sets the volume_size of this Volume.
 
-        云手机服务器的硬盘大小，单位G
+        云手机服务器的硬盘大小，单位G。
 
         :param volume_size: The volume_size of this Volume.
         :type volume_size: int
@@ -146,7 +146,7 @@ class Volume:
     def volume_type(self):
         """Gets the volume_type of this Volume.
 
-        云手机服务器的硬盘类型
+        云手机服务器的硬盘类型。
 
         :return: The volume_type of this Volume.
         :rtype: str
@@ -157,7 +157,7 @@ class Volume:
     def volume_type(self, volume_type):
         """Sets the volume_type of this Volume.
 
-        云手机服务器的硬盘类型
+        云手机服务器的硬盘类型。
 
         :param volume_type: The volume_type of this Volume.
         :type volume_type: str
@@ -168,7 +168,7 @@ class Volume:
     def create_time(self):
         """Gets the create_time of this Volume.
 
-        硬盘创建时间  时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ
+        硬盘创建时间，  时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ。
 
         :return: The create_time of this Volume.
         :rtype: str
@@ -179,7 +179,7 @@ class Volume:
     def create_time(self, create_time):
         """Sets the create_time of this Volume.
 
-        硬盘创建时间  时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ
+        硬盘创建时间，  时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ。
 
         :param create_time: The create_time of this Volume.
         :type create_time: str
@@ -190,7 +190,7 @@ class Volume:
     def update_time(self):
         """Gets the update_time of this Volume.
 
-        硬盘更新时间  时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ
+        硬盘更新时间，  时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ。
 
         :return: The update_time of this Volume.
         :rtype: str
@@ -201,7 +201,7 @@ class Volume:
     def update_time(self, update_time):
         """Sets the update_time of this Volume.
 
-        硬盘更新时间  时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ
+        硬盘更新时间，  时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ。
 
         :param update_time: The update_time of this Volume.
         :type update_time: str

@@ -32,9 +32,9 @@ class RestartEncodeServerResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param request_id: 请求的唯一标识ID
+        :param request_id: 请求的唯一标识ID。
         :type request_id: str
-        :param jobs: 任务信息
+        :param jobs: 任务信息。
         :type jobs: list[:class:`huaweicloudsdkcph.v1.EncodeServerJob`]
         """
         
@@ -53,7 +53,7 @@ class RestartEncodeServerResponse(SdkResponse):
     def request_id(self):
         """Gets the request_id of this RestartEncodeServerResponse.
 
-        请求的唯一标识ID
+        请求的唯一标识ID。
 
         :return: The request_id of this RestartEncodeServerResponse.
         :rtype: str
@@ -64,7 +64,7 @@ class RestartEncodeServerResponse(SdkResponse):
     def request_id(self, request_id):
         """Sets the request_id of this RestartEncodeServerResponse.
 
-        请求的唯一标识ID
+        请求的唯一标识ID。
 
         :param request_id: The request_id of this RestartEncodeServerResponse.
         :type request_id: str
@@ -75,7 +75,7 @@ class RestartEncodeServerResponse(SdkResponse):
     def jobs(self):
         """Gets the jobs of this RestartEncodeServerResponse.
 
-        任务信息
+        任务信息。
 
         :return: The jobs of this RestartEncodeServerResponse.
         :rtype: list[:class:`huaweicloudsdkcph.v1.EncodeServerJob`]
@@ -86,7 +86,7 @@ class RestartEncodeServerResponse(SdkResponse):
     def jobs(self, jobs):
         """Sets the jobs of this RestartEncodeServerResponse.
 
-        任务信息
+        任务信息。
 
         :param jobs: The jobs of this RestartEncodeServerResponse.
         :type jobs: list[:class:`huaweicloudsdkcph.v1.EncodeServerJob`]

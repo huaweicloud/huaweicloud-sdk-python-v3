@@ -31,9 +31,9 @@ class ShowCloudPhoneServerDetailResponseBodyMetadata:
 
         The model defined in huaweicloud sdk
 
-        :param product_id: 订单ID，不超过64个字节
+        :param product_id: 订单ID，不超过64个字节。
         :type product_id: str
-        :param order_id: 产品ID，不超过64个字节
+        :param order_id: 产品ID，不超过64个字节。
         :type order_id: str
         """
         
@@ -52,7 +52,7 @@ class ShowCloudPhoneServerDetailResponseBodyMetadata:
     def product_id(self):
         """Gets the product_id of this ShowCloudPhoneServerDetailResponseBodyMetadata.
 
-        订单ID，不超过64个字节
+        订单ID，不超过64个字节。
 
         :return: The product_id of this ShowCloudPhoneServerDetailResponseBodyMetadata.
         :rtype: str
@@ -63,7 +63,7 @@ class ShowCloudPhoneServerDetailResponseBodyMetadata:
     def product_id(self, product_id):
         """Sets the product_id of this ShowCloudPhoneServerDetailResponseBodyMetadata.
 
-        订单ID，不超过64个字节
+        订单ID，不超过64个字节。
 
         :param product_id: The product_id of this ShowCloudPhoneServerDetailResponseBodyMetadata.
         :type product_id: str
@@ -74,7 +74,7 @@ class ShowCloudPhoneServerDetailResponseBodyMetadata:
     def order_id(self):
         """Gets the order_id of this ShowCloudPhoneServerDetailResponseBodyMetadata.
 
-        产品ID，不超过64个字节
+        产品ID，不超过64个字节。
 
         :return: The order_id of this ShowCloudPhoneServerDetailResponseBodyMetadata.
         :rtype: str
@@ -85,7 +85,7 @@ class ShowCloudPhoneServerDetailResponseBodyMetadata:
     def order_id(self, order_id):
         """Sets the order_id of this ShowCloudPhoneServerDetailResponseBodyMetadata.
 
-        产品ID，不超过64个字节
+        产品ID，不超过64个字节。
 
         :param order_id: The order_id of this ShowCloudPhoneServerDetailResponseBodyMetadata.
         :type order_id: str

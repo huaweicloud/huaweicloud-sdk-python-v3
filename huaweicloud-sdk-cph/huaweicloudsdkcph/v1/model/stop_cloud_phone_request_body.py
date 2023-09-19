@@ -29,7 +29,7 @@ class StopCloudPhoneRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param phone_ids: 云手机id列表
+        :param phone_ids: 云手机id列表。
         :type phone_ids: list[str]
         """
         
@@ -44,7 +44,7 @@ class StopCloudPhoneRequestBody:
     def phone_ids(self):
         """Gets the phone_ids of this StopCloudPhoneRequestBody.
 
-        云手机id列表
+        云手机id列表。
 
         :return: The phone_ids of this StopCloudPhoneRequestBody.
         :rtype: list[str]
@@ -55,7 +55,7 @@ class StopCloudPhoneRequestBody:
     def phone_ids(self, phone_ids):
         """Sets the phone_ids of this StopCloudPhoneRequestBody.
 
-        云手机id列表
+        云手机id列表。
 
         :param phone_ids: The phone_ids of this StopCloudPhoneRequestBody.
         :type phone_ids: list[str]

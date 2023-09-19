@@ -29,7 +29,7 @@ class CreateNet2CloudPhoneServerRequestBodyPublicIpEip:
 
         The model defined in huaweicloud sdk
 
-        :param type: 弹性公网IP的类型，取值范围：5_telcom（电信），5_union（联通），5_bgp（全动态BGP），5_sbgp（静态BGP）
+        :param type: 弹性公网IP的类型。 - 5_telcom：电信 - 5_union：联通 - 5_bgp：全动态BGP - 5_sbgp：静态BGP
         :type type: str
         """
         
@@ -44,7 +44,7 @@ class CreateNet2CloudPhoneServerRequestBodyPublicIpEip:
     def type(self):
         """Gets the type of this CreateNet2CloudPhoneServerRequestBodyPublicIpEip.
 
-        弹性公网IP的类型，取值范围：5_telcom（电信），5_union（联通），5_bgp（全动态BGP），5_sbgp（静态BGP）
+        弹性公网IP的类型。 - 5_telcom：电信 - 5_union：联通 - 5_bgp：全动态BGP - 5_sbgp：静态BGP
 
         :return: The type of this CreateNet2CloudPhoneServerRequestBodyPublicIpEip.
         :rtype: str
@@ -55,7 +55,7 @@ class CreateNet2CloudPhoneServerRequestBodyPublicIpEip:
     def type(self, type):
         """Sets the type of this CreateNet2CloudPhoneServerRequestBodyPublicIpEip.
 
-        弹性公网IP的类型，取值范围：5_telcom（电信），5_union（联通），5_bgp（全动态BGP），5_sbgp（静态BGP）
+        弹性公网IP的类型。 - 5_telcom：电信 - 5_union：联通 - 5_bgp：全动态BGP - 5_sbgp：静态BGP
 
         :param type: The type of this CreateNet2CloudPhoneServerRequestBodyPublicIpEip.
         :type type: str

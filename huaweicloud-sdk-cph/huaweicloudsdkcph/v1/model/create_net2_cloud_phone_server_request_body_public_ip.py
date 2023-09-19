@@ -31,7 +31,7 @@ class CreateNet2CloudPhoneServerRequestBodyPublicIp:
 
         The model defined in huaweicloud sdk
 
-        :param ids: 指定已有的EIP进行服务器创建，当前只支持传入一个已有的EIP ID
+        :param ids: 指定已有的EIP进行服务器创建，当前只支持传入一个已有的EIP ID。
         :type ids: list[str]
         :param eip: 
         :type eip: :class:`huaweicloudsdkcph.v1.CreateNet2CloudPhoneServerRequestBodyPublicIpEip`
@@ -52,7 +52,7 @@ class CreateNet2CloudPhoneServerRequestBodyPublicIp:
     def ids(self):
         """Gets the ids of this CreateNet2CloudPhoneServerRequestBodyPublicIp.
 
-        指定已有的EIP进行服务器创建，当前只支持传入一个已有的EIP ID
+        指定已有的EIP进行服务器创建，当前只支持传入一个已有的EIP ID。
 
         :return: The ids of this CreateNet2CloudPhoneServerRequestBodyPublicIp.
         :rtype: list[str]
@@ -63,7 +63,7 @@ class CreateNet2CloudPhoneServerRequestBodyPublicIp:
     def ids(self, ids):
         """Sets the ids of this CreateNet2CloudPhoneServerRequestBodyPublicIp.
 
-        指定已有的EIP进行服务器创建，当前只支持传入一个已有的EIP ID
+        指定已有的EIP进行服务器创建，当前只支持传入一个已有的EIP ID。
 
         :param ids: The ids of this CreateNet2CloudPhoneServerRequestBodyPublicIp.
         :type ids: list[str]

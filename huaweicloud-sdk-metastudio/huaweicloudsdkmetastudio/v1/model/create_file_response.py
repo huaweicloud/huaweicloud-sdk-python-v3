@@ -19,15 +19,17 @@ class CreateFileResponse(SdkResponse):
 
     openapi_types = {
         'file_id': 'str',
-        'upload_url': 'str'
+        'upload_url': 'str',
+        'x_request_id': 'str'
     }
 
     attribute_map = {
         'file_id': 'file_id',
-        'upload_url': 'upload_url'
+        'upload_url': 'upload_url',
+        'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, file_id=None, upload_url=None):
+    def __init__(self, file_id=None, upload_url=None, x_request_id=None):
         """CreateFileResponse
 
         The model defined in huaweicloud sdk
@@ -36,18 +38,23 @@ class CreateFileResponse(SdkResponse):
         :type file_id: str
         :param upload_url: 文件上传地址，有效期为24小时。 &gt; * 调用OBS的[\&quot;PUT上传\&quot;](https://support.huaweicloud.com/api-obs/obs_04_0080.html)接口上传文件。 &gt; * 调用上述接口时，Content-MD5头必须填写，填写的值跟file_md5中的值相同。
         :type upload_url: str
+        :param x_request_id: 
+        :type x_request_id: str
         """
         
         super(CreateFileResponse, self).__init__()
 
         self._file_id = None
         self._upload_url = None
+        self._x_request_id = None
         self.discriminator = None
 
         if file_id is not None:
             self.file_id = file_id
         if upload_url is not None:
             self.upload_url = upload_url
+        if x_request_id is not None:
+            self.x_request_id = x_request_id
 
     @property
     def file_id(self):
@@ -92,6 +99,24 @@ class CreateFileResponse(SdkResponse):
         :type upload_url: str
         """
         self._upload_url = upload_url
+
+    @property
+    def x_request_id(self):
+        """Gets the x_request_id of this CreateFileResponse.
+
+        :return: The x_request_id of this CreateFileResponse.
+        :rtype: str
+        """
+        return self._x_request_id
+
+    @x_request_id.setter
+    def x_request_id(self, x_request_id):
+        """Sets the x_request_id of this CreateFileResponse.
+
+        :param x_request_id: The x_request_id of this CreateFileResponse.
+        :type x_request_id: str
+        """
+        self._x_request_id = x_request_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

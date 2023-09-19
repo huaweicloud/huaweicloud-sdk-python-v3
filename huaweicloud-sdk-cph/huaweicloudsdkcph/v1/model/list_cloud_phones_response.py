@@ -19,41 +19,48 @@ class ListCloudPhonesResponse(SdkResponse):
 
     openapi_types = {
         'phones': 'list[Phone]',
-        'request_id': 'str'
+        'request_id': 'str',
+        'count': 'int'
     }
 
     attribute_map = {
         'phones': 'phones',
-        'request_id': 'request_id'
+        'request_id': 'request_id',
+        'count': 'count'
     }
 
-    def __init__(self, phones=None, request_id=None):
+    def __init__(self, phones=None, request_id=None, count=None):
         """ListCloudPhonesResponse
 
         The model defined in huaweicloud sdk
 
-        :param phones: 云手机信息
+        :param phones: 云手机信息。
         :type phones: list[:class:`huaweicloudsdkcph.v1.Phone`]
         :param request_id: 请求的唯一标识ID。
         :type request_id: str
+        :param count: 实例总数。
+        :type count: int
         """
         
         super(ListCloudPhonesResponse, self).__init__()
 
         self._phones = None
         self._request_id = None
+        self._count = None
         self.discriminator = None
 
         if phones is not None:
             self.phones = phones
         if request_id is not None:
             self.request_id = request_id
+        if count is not None:
+            self.count = count
 
     @property
     def phones(self):
         """Gets the phones of this ListCloudPhonesResponse.
 
-        云手机信息
+        云手机信息。
 
         :return: The phones of this ListCloudPhonesResponse.
         :rtype: list[:class:`huaweicloudsdkcph.v1.Phone`]
@@ -64,7 +71,7 @@ class ListCloudPhonesResponse(SdkResponse):
     def phones(self, phones):
         """Sets the phones of this ListCloudPhonesResponse.
 
-        云手机信息
+        云手机信息。
 
         :param phones: The phones of this ListCloudPhonesResponse.
         :type phones: list[:class:`huaweicloudsdkcph.v1.Phone`]
@@ -92,6 +99,28 @@ class ListCloudPhonesResponse(SdkResponse):
         :type request_id: str
         """
         self._request_id = request_id
+
+    @property
+    def count(self):
+        """Gets the count of this ListCloudPhonesResponse.
+
+        实例总数。
+
+        :return: The count of this ListCloudPhonesResponse.
+        :rtype: int
+        """
+        return self._count
+
+    @count.setter
+    def count(self, count):
+        """Sets the count of this ListCloudPhonesResponse.
+
+        实例总数。
+
+        :param count: The count of this ListCloudPhonesResponse.
+        :type count: int
+        """
+        self._count = count
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -31,9 +31,9 @@ class RestartCloudPhoneRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param image_id: 云手机镜像
+        :param image_id: 云手机镜像。
         :type image_id: str
-        :param phones: 云手机列表
+        :param phones: 云手机列表。
         :type phones: list[:class:`huaweicloudsdkcph.v1.PhoneProperty`]
         """
         
@@ -51,7 +51,7 @@ class RestartCloudPhoneRequestBody:
     def image_id(self):
         """Gets the image_id of this RestartCloudPhoneRequestBody.
 
-        云手机镜像
+        云手机镜像。
 
         :return: The image_id of this RestartCloudPhoneRequestBody.
         :rtype: str
@@ -62,7 +62,7 @@ class RestartCloudPhoneRequestBody:
     def image_id(self, image_id):
         """Sets the image_id of this RestartCloudPhoneRequestBody.
 
-        云手机镜像
+        云手机镜像。
 
         :param image_id: The image_id of this RestartCloudPhoneRequestBody.
         :type image_id: str
@@ -73,7 +73,7 @@ class RestartCloudPhoneRequestBody:
     def phones(self):
         """Gets the phones of this RestartCloudPhoneRequestBody.
 
-        云手机列表
+        云手机列表。
 
         :return: The phones of this RestartCloudPhoneRequestBody.
         :rtype: list[:class:`huaweicloudsdkcph.v1.PhoneProperty`]
@@ -84,7 +84,7 @@ class RestartCloudPhoneRequestBody:
     def phones(self, phones):
         """Sets the phones of this RestartCloudPhoneRequestBody.
 
-        云手机列表
+        云手机列表。
 
         :param phones: The phones of this RestartCloudPhoneRequestBody.
         :type phones: list[:class:`huaweicloudsdkcph.v1.PhoneProperty`]

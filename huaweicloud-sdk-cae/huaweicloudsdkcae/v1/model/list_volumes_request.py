@@ -37,7 +37,7 @@ class ListVolumesRequest:
         :type x_enterprise_project_id: str
         :param x_environment_id: 环境ID。      - 获取环境ID，通过《[云应用引擎API参考](https://support.huaweicloud.com/api-cae/ListEnvironments.html)》的“获取环境列表”章节获取环境信息。     - 请求响应成功后在响应体的items数组中的一个元素即为一个环境的信息，其中id字段即是环境ID。
         :type x_environment_id: str
-        :param resource_type: 资源类型，当前只支持“obs”。
+        :param resource_type: 资源类型，当前只支持“obs”和“sfs”。
         :type resource_type: str
         """
         
@@ -101,7 +101,7 @@ class ListVolumesRequest:
     def resource_type(self):
         """Gets the resource_type of this ListVolumesRequest.
 
-        资源类型，当前只支持“obs”。
+        资源类型，当前只支持“obs”和“sfs”。
 
         :return: The resource_type of this ListVolumesRequest.
         :rtype: str
@@ -112,7 +112,7 @@ class ListVolumesRequest:
     def resource_type(self, resource_type):
         """Sets the resource_type of this ListVolumesRequest.
 
-        资源类型，当前只支持“obs”。
+        资源类型，当前只支持“obs”和“sfs”。
 
         :param resource_type: The resource_type of this ListVolumesRequest.
         :type resource_type: str

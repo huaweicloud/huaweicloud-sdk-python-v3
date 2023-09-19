@@ -43,11 +43,11 @@ class Volume:
         :type id: str
         :param resource_info: 存储资源详情。
         :type resource_info: dict(str, str)
-        :param resource_name: 并行文件系统或存储桶名称。
+        :param resource_name: 云存储名称。
         :type resource_name: str
-        :param resource_type: 资源类型，当前只支持“obs”。
+        :param resource_type: 资源类型，当前只支持“obs”和“sfs”。
         :type resource_type: str
-        :param resource_sub_type: 存储资源子类型，例如：并行文件系统、存储桶。
+        :param resource_sub_type: 存储资源子类型，包括：并行文件系统、存储桶、SFS3.0容量型。
         :type resource_sub_type: str
         :param time: 创建时间。
         :type time: str
@@ -124,7 +124,7 @@ class Volume:
     def resource_name(self):
         """Gets the resource_name of this Volume.
 
-        并行文件系统或存储桶名称。
+        云存储名称。
 
         :return: The resource_name of this Volume.
         :rtype: str
@@ -135,7 +135,7 @@ class Volume:
     def resource_name(self, resource_name):
         """Sets the resource_name of this Volume.
 
-        并行文件系统或存储桶名称。
+        云存储名称。
 
         :param resource_name: The resource_name of this Volume.
         :type resource_name: str
@@ -146,7 +146,7 @@ class Volume:
     def resource_type(self):
         """Gets the resource_type of this Volume.
 
-        资源类型，当前只支持“obs”。
+        资源类型，当前只支持“obs”和“sfs”。
 
         :return: The resource_type of this Volume.
         :rtype: str
@@ -157,7 +157,7 @@ class Volume:
     def resource_type(self, resource_type):
         """Sets the resource_type of this Volume.
 
-        资源类型，当前只支持“obs”。
+        资源类型，当前只支持“obs”和“sfs”。
 
         :param resource_type: The resource_type of this Volume.
         :type resource_type: str
@@ -168,7 +168,7 @@ class Volume:
     def resource_sub_type(self):
         """Gets the resource_sub_type of this Volume.
 
-        存储资源子类型，例如：并行文件系统、存储桶。
+        存储资源子类型，包括：并行文件系统、存储桶、SFS3.0容量型。
 
         :return: The resource_sub_type of this Volume.
         :rtype: str
@@ -179,7 +179,7 @@ class Volume:
     def resource_sub_type(self, resource_sub_type):
         """Sets the resource_sub_type of this Volume.
 
-        存储资源子类型，例如：并行文件系统、存储桶。
+        存储资源子类型，包括：并行文件系统、存储桶、SFS3.0容量型。
 
         :param resource_sub_type: The resource_sub_type of this Volume.
         :type resource_sub_type: str

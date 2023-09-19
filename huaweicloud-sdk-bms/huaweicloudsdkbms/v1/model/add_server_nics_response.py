@@ -18,20 +18,51 @@ class AddServerNicsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'job_id': 'str'
     }
 
     attribute_map = {
+        'job_id': 'job_id'
     }
 
-    def __init__(self):
+    def __init__(self, job_id=None):
         """AddServerNicsResponse
 
         The model defined in huaweicloud sdk
 
+        :param job_id: 提交任务成功后返回的任务ID，用户可以使用该ID对任务执行情况进行查询
+        :type job_id: str
         """
         
         super(AddServerNicsResponse, self).__init__()
+
+        self._job_id = None
         self.discriminator = None
+
+        if job_id is not None:
+            self.job_id = job_id
+
+    @property
+    def job_id(self):
+        """Gets the job_id of this AddServerNicsResponse.
+
+        提交任务成功后返回的任务ID，用户可以使用该ID对任务执行情况进行查询
+
+        :return: The job_id of this AddServerNicsResponse.
+        :rtype: str
+        """
+        return self._job_id
+
+    @job_id.setter
+    def job_id(self, job_id):
+        """Sets the job_id of this AddServerNicsResponse.
+
+        提交任务成功后返回的任务ID，用户可以使用该ID对任务执行情况进行查询
+
+        :param job_id: The job_id of this AddServerNicsResponse.
+        :type job_id: str
+        """
+        self._job_id = job_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

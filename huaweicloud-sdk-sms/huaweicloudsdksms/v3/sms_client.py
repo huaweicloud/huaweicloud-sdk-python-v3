@@ -200,6 +200,60 @@ class SmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def create_privacy_agreements(self, request):
+        """同意隐私协议
+
+        同意隐私协议接口。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreatePrivacyAgreements
+        :type request: :class:`huaweicloudsdksms.v3.CreatePrivacyAgreementsRequest`
+        :rtype: :class:`huaweicloudsdksms.v3.CreatePrivacyAgreementsResponse`
+        """
+        return self._create_privacy_agreements_with_http_info(request)
+
+    def _create_privacy_agreements_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/privacy-agreements',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreatePrivacyAgreementsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def create_task(self, request):
         """创建迁移任务
 
@@ -1422,6 +1476,60 @@ class SmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def show_privacy_agreements(self, request):
+        """查询用户是否同意隐私协议
+
+        查询用户是否同意隐私协议接口。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowPrivacyAgreements
+        :type request: :class:`huaweicloudsdksms.v3.ShowPrivacyAgreementsRequest`
+        :rtype: :class:`huaweicloudsdksms.v3.ShowPrivacyAgreementsResponse`
+        """
+        return self._show_privacy_agreements_with_http_info(request)
+
+    def _show_privacy_agreements_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/privacy-agreements',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowPrivacyAgreementsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def show_server(self, request):
         """查询指定ID的源端服务器
 
@@ -1481,7 +1589,7 @@ class SmsClient(Client):
     def show_sha256(self, request):
         """计算sha256
 
-        计算sha256
+        计算sha256，加密字段值为uuid。
         
         Please refer to HUAWEI cloud API Explorer for details.
 

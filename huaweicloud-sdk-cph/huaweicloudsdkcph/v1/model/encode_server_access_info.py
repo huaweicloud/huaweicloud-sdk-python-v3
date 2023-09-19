@@ -23,7 +23,8 @@ class EncodeServerAccessInfo:
         'public_ip': 'str',
         'server_ip': 'str',
         'access_port': 'int',
-        'type': 'str'
+        'type': 'str',
+        'server_ipv6': 'str'
     }
 
     attribute_map = {
@@ -33,28 +34,31 @@ class EncodeServerAccessInfo:
         'public_ip': 'public_ip',
         'server_ip': 'server_ip',
         'access_port': 'access_port',
-        'type': 'type'
+        'type': 'type',
+        'server_ipv6': 'server_ipv6'
     }
 
-    def __init__(self, listen_port=None, access_ip=None, intranet_ip=None, public_ip=None, server_ip=None, access_port=None, type=None):
+    def __init__(self, listen_port=None, access_ip=None, intranet_ip=None, public_ip=None, server_ip=None, access_port=None, type=None, server_ipv6=None):
         """EncodeServerAccessInfo
 
         The model defined in huaweicloud sdk
 
-        :param listen_port: 编码服务监听端口
+        :param listen_port: 编码服务监听端口。
         :type listen_port: int
-        :param access_ip: 编码服务访问的公网IP（过期）
+        :param access_ip: 编码服务访问的公网IP（过期）。
         :type access_ip: str
-        :param intranet_ip: 编码服务访问的内网IP（过期）
+        :param intranet_ip: 编码服务访问的内网IP（过期）。
         :type intranet_ip: str
-        :param public_ip: 编码服务访问的公网IP（新增）
+        :param public_ip: 编码服务访问的公网IP（新增）。
         :type public_ip: str
-        :param server_ip: 编码服务访问的内网IP（新增）
+        :param server_ip: 编码服务访问的内网IP（新增）。
         :type server_ip: str
-        :param access_port: 编码服务公网的访问端口
+        :param access_port: 编码服务公网的访问端口。
         :type access_port: int
         :param type: 编码服务的端口类型，取值如下： - adb：云手机的ADB端口 - vnc：云手机的VNC端口 - cph_app_server：云游戏客户端接入端 - cph_h5_server：云游戏H5 web网页接入端口 - 其他值：用户自定义端口
         :type type: str
+        :param server_ipv6: 编码服务访问的内网IPv6 IP（新增）。
+        :type server_ipv6: str
         """
         
         
@@ -66,6 +70,7 @@ class EncodeServerAccessInfo:
         self._server_ip = None
         self._access_port = None
         self._type = None
+        self._server_ipv6 = None
         self.discriminator = None
 
         if listen_port is not None:
@@ -82,12 +87,14 @@ class EncodeServerAccessInfo:
             self.access_port = access_port
         if type is not None:
             self.type = type
+        if server_ipv6 is not None:
+            self.server_ipv6 = server_ipv6
 
     @property
     def listen_port(self):
         """Gets the listen_port of this EncodeServerAccessInfo.
 
-        编码服务监听端口
+        编码服务监听端口。
 
         :return: The listen_port of this EncodeServerAccessInfo.
         :rtype: int
@@ -98,7 +105,7 @@ class EncodeServerAccessInfo:
     def listen_port(self, listen_port):
         """Sets the listen_port of this EncodeServerAccessInfo.
 
-        编码服务监听端口
+        编码服务监听端口。
 
         :param listen_port: The listen_port of this EncodeServerAccessInfo.
         :type listen_port: int
@@ -109,7 +116,7 @@ class EncodeServerAccessInfo:
     def access_ip(self):
         """Gets the access_ip of this EncodeServerAccessInfo.
 
-        编码服务访问的公网IP（过期）
+        编码服务访问的公网IP（过期）。
 
         :return: The access_ip of this EncodeServerAccessInfo.
         :rtype: str
@@ -120,7 +127,7 @@ class EncodeServerAccessInfo:
     def access_ip(self, access_ip):
         """Sets the access_ip of this EncodeServerAccessInfo.
 
-        编码服务访问的公网IP（过期）
+        编码服务访问的公网IP（过期）。
 
         :param access_ip: The access_ip of this EncodeServerAccessInfo.
         :type access_ip: str
@@ -131,7 +138,7 @@ class EncodeServerAccessInfo:
     def intranet_ip(self):
         """Gets the intranet_ip of this EncodeServerAccessInfo.
 
-        编码服务访问的内网IP（过期）
+        编码服务访问的内网IP（过期）。
 
         :return: The intranet_ip of this EncodeServerAccessInfo.
         :rtype: str
@@ -142,7 +149,7 @@ class EncodeServerAccessInfo:
     def intranet_ip(self, intranet_ip):
         """Sets the intranet_ip of this EncodeServerAccessInfo.
 
-        编码服务访问的内网IP（过期）
+        编码服务访问的内网IP（过期）。
 
         :param intranet_ip: The intranet_ip of this EncodeServerAccessInfo.
         :type intranet_ip: str
@@ -153,7 +160,7 @@ class EncodeServerAccessInfo:
     def public_ip(self):
         """Gets the public_ip of this EncodeServerAccessInfo.
 
-        编码服务访问的公网IP（新增）
+        编码服务访问的公网IP（新增）。
 
         :return: The public_ip of this EncodeServerAccessInfo.
         :rtype: str
@@ -164,7 +171,7 @@ class EncodeServerAccessInfo:
     def public_ip(self, public_ip):
         """Sets the public_ip of this EncodeServerAccessInfo.
 
-        编码服务访问的公网IP（新增）
+        编码服务访问的公网IP（新增）。
 
         :param public_ip: The public_ip of this EncodeServerAccessInfo.
         :type public_ip: str
@@ -175,7 +182,7 @@ class EncodeServerAccessInfo:
     def server_ip(self):
         """Gets the server_ip of this EncodeServerAccessInfo.
 
-        编码服务访问的内网IP（新增）
+        编码服务访问的内网IP（新增）。
 
         :return: The server_ip of this EncodeServerAccessInfo.
         :rtype: str
@@ -186,7 +193,7 @@ class EncodeServerAccessInfo:
     def server_ip(self, server_ip):
         """Sets the server_ip of this EncodeServerAccessInfo.
 
-        编码服务访问的内网IP（新增）
+        编码服务访问的内网IP（新增）。
 
         :param server_ip: The server_ip of this EncodeServerAccessInfo.
         :type server_ip: str
@@ -197,7 +204,7 @@ class EncodeServerAccessInfo:
     def access_port(self):
         """Gets the access_port of this EncodeServerAccessInfo.
 
-        编码服务公网的访问端口
+        编码服务公网的访问端口。
 
         :return: The access_port of this EncodeServerAccessInfo.
         :rtype: int
@@ -208,7 +215,7 @@ class EncodeServerAccessInfo:
     def access_port(self, access_port):
         """Sets the access_port of this EncodeServerAccessInfo.
 
-        编码服务公网的访问端口
+        编码服务公网的访问端口。
 
         :param access_port: The access_port of this EncodeServerAccessInfo.
         :type access_port: int
@@ -236,6 +243,28 @@ class EncodeServerAccessInfo:
         :type type: str
         """
         self._type = type
+
+    @property
+    def server_ipv6(self):
+        """Gets the server_ipv6 of this EncodeServerAccessInfo.
+
+        编码服务访问的内网IPv6 IP（新增）。
+
+        :return: The server_ipv6 of this EncodeServerAccessInfo.
+        :rtype: str
+        """
+        return self._server_ipv6
+
+    @server_ipv6.setter
+    def server_ipv6(self, server_ipv6):
+        """Sets the server_ipv6 of this EncodeServerAccessInfo.
+
+        编码服务访问的内网IPv6 IP（新增）。
+
+        :param server_ipv6: The server_ipv6 of this EncodeServerAccessInfo.
+        :type server_ipv6: str
+        """
+        self._server_ipv6 = server_ipv6
 
     def to_dict(self):
         """Returns the model properties as a dict"""

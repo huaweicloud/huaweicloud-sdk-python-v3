@@ -19,15 +19,17 @@ class CreateVideoMotionCaptureJobResponse(SdkResponse):
 
     openapi_types = {
         'job_id': 'str',
-        'rtc_room_info': 'RTCRoomInfoList'
+        'rtc_room_info': 'RTCRoomInfoList',
+        'x_request_id': 'str'
     }
 
     attribute_map = {
         'job_id': 'job_id',
-        'rtc_room_info': 'rtc_room_info'
+        'rtc_room_info': 'rtc_room_info',
+        'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, job_id=None, rtc_room_info=None):
+    def __init__(self, job_id=None, rtc_room_info=None, x_request_id=None):
         """CreateVideoMotionCaptureJobResponse
 
         The model defined in huaweicloud sdk
@@ -36,18 +38,23 @@ class CreateVideoMotionCaptureJobResponse(SdkResponse):
         :type job_id: str
         :param rtc_room_info: 
         :type rtc_room_info: :class:`huaweicloudsdkmetastudio.v1.RTCRoomInfoList`
+        :param x_request_id: 
+        :type x_request_id: str
         """
         
         super(CreateVideoMotionCaptureJobResponse, self).__init__()
 
         self._job_id = None
         self._rtc_room_info = None
+        self._x_request_id = None
         self.discriminator = None
 
         if job_id is not None:
             self.job_id = job_id
         if rtc_room_info is not None:
             self.rtc_room_info = rtc_room_info
+        if x_request_id is not None:
+            self.x_request_id = x_request_id
 
     @property
     def job_id(self):
@@ -88,6 +95,24 @@ class CreateVideoMotionCaptureJobResponse(SdkResponse):
         :type rtc_room_info: :class:`huaweicloudsdkmetastudio.v1.RTCRoomInfoList`
         """
         self._rtc_room_info = rtc_room_info
+
+    @property
+    def x_request_id(self):
+        """Gets the x_request_id of this CreateVideoMotionCaptureJobResponse.
+
+        :return: The x_request_id of this CreateVideoMotionCaptureJobResponse.
+        :rtype: str
+        """
+        return self._x_request_id
+
+    @x_request_id.setter
+    def x_request_id(self, x_request_id):
+        """Sets the x_request_id of this CreateVideoMotionCaptureJobResponse.
+
+        :param x_request_id: The x_request_id of this CreateVideoMotionCaptureJobResponse.
+        :type x_request_id: str
+        """
+        self._x_request_id = x_request_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

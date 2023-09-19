@@ -41,9 +41,9 @@ class ListEncodeServersRequest:
         :type offset: int
         :param limit: 每页返回的资源个数。取值范围：1~100（默认值为100），一般设置为10、20、50。
         :type limit: int
-        :param type: 编码服务类型 - 0：服务器 - 1：容器
+        :param type: 编码服务类型。 - 0：服务器 - 1：容器
         :type type: int
-        :param status: 状态列表 - 1：运行中 - 2：异常 - 3：重启中 - 4：冻结 - 5：关机 - 100、1014、0：创建中
+        :param status: 状态列表。 - 1：运行中 - 2：异常 - 3：重启中 - 4：冻结 - 5：关机 - 100、1014、0：创建中
         :type status: int
         :param server_id: 云手机服务器的唯一标识。
         :type server_id: str
@@ -117,7 +117,7 @@ class ListEncodeServersRequest:
     def type(self):
         """Gets the type of this ListEncodeServersRequest.
 
-        编码服务类型 - 0：服务器 - 1：容器
+        编码服务类型。 - 0：服务器 - 1：容器
 
         :return: The type of this ListEncodeServersRequest.
         :rtype: int
@@ -128,7 +128,7 @@ class ListEncodeServersRequest:
     def type(self, type):
         """Sets the type of this ListEncodeServersRequest.
 
-        编码服务类型 - 0：服务器 - 1：容器
+        编码服务类型。 - 0：服务器 - 1：容器
 
         :param type: The type of this ListEncodeServersRequest.
         :type type: int
@@ -139,7 +139,7 @@ class ListEncodeServersRequest:
     def status(self):
         """Gets the status of this ListEncodeServersRequest.
 
-        状态列表 - 1：运行中 - 2：异常 - 3：重启中 - 4：冻结 - 5：关机 - 100、1014、0：创建中
+        状态列表。 - 1：运行中 - 2：异常 - 3：重启中 - 4：冻结 - 5：关机 - 100、1014、0：创建中
 
         :return: The status of this ListEncodeServersRequest.
         :rtype: int
@@ -150,7 +150,7 @@ class ListEncodeServersRequest:
     def status(self, status):
         """Sets the status of this ListEncodeServersRequest.
 
-        状态列表 - 1：运行中 - 2：异常 - 3：重启中 - 4：冻结 - 5：关机 - 100、1014、0：创建中
+        状态列表。 - 1：运行中 - 2：异常 - 3：重启中 - 4：冻结 - 5：关机 - 100、1014、0：创建中
 
         :param status: The status of this ListEncodeServersRequest.
         :type status: int

@@ -22,7 +22,8 @@ class ListTtsaDataResponse(SdkResponse):
         'audio': 'str',
         'blendshapes': 'list[str]',
         'animations': 'list[AnimationItem]',
-        'motions': 'list[MotionItem]'
+        'motions': 'list[MotionItem]',
+        'x_request_id': 'str'
     }
 
     attribute_map = {
@@ -30,10 +31,11 @@ class ListTtsaDataResponse(SdkResponse):
         'audio': 'audio',
         'blendshapes': 'blendshapes',
         'animations': 'animations',
-        'motions': 'motions'
+        'motions': 'motions',
+        'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, job_id=None, audio=None, blendshapes=None, animations=None, motions=None):
+    def __init__(self, job_id=None, audio=None, blendshapes=None, animations=None, motions=None, x_request_id=None):
         """ListTtsaDataResponse
 
         The model defined in huaweicloud sdk
@@ -48,6 +50,8 @@ class ListTtsaDataResponse(SdkResponse):
         :type animations: list[:class:`huaweicloudsdkmetastudio.v1.AnimationItem`]
         :param motions: 语义驱动的智能动作数据。
         :type motions: list[:class:`huaweicloudsdkmetastudio.v1.MotionItem`]
+        :param x_request_id: 
+        :type x_request_id: str
         """
         
         super(ListTtsaDataResponse, self).__init__()
@@ -57,6 +61,7 @@ class ListTtsaDataResponse(SdkResponse):
         self._blendshapes = None
         self._animations = None
         self._motions = None
+        self._x_request_id = None
         self.discriminator = None
 
         if job_id is not None:
@@ -69,6 +74,8 @@ class ListTtsaDataResponse(SdkResponse):
             self.animations = animations
         if motions is not None:
             self.motions = motions
+        if x_request_id is not None:
+            self.x_request_id = x_request_id
 
     @property
     def job_id(self):
@@ -179,6 +186,24 @@ class ListTtsaDataResponse(SdkResponse):
         :type motions: list[:class:`huaweicloudsdkmetastudio.v1.MotionItem`]
         """
         self._motions = motions
+
+    @property
+    def x_request_id(self):
+        """Gets the x_request_id of this ListTtsaDataResponse.
+
+        :return: The x_request_id of this ListTtsaDataResponse.
+        :rtype: str
+        """
+        return self._x_request_id
+
+    @x_request_id.setter
+    def x_request_id(self, x_request_id):
+        """Sets the x_request_id of this ListTtsaDataResponse.
+
+        :param x_request_id: The x_request_id of this ListTtsaDataResponse.
+        :type x_request_id: str
+        """
+        self._x_request_id = x_request_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

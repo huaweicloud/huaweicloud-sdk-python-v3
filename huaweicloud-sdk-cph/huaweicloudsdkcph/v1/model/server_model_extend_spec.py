@@ -43,21 +43,21 @@ class ServerModelExtendSpec:
 
         The model defined in huaweicloud sdk
 
-        :param cpu: 云手机服务器cpu类型
+        :param cpu: 云手机服务器cpu类型。
         :type cpu: str
-        :param memory: 云手机服务器内存类型
+        :param memory: 云手机服务器内存类型。
         :type memory: str
-        :param disk: 云手机服务器磁盘类型
+        :param disk: 云手机服务器磁盘类型。
         :type disk: str
-        :param network_interface: 云手机服务器网络类型
+        :param network_interface: 云手机服务器网络类型。
         :type network_interface: str
-        :param gpu: 云手机服务器gpu类型
+        :param gpu: 云手机服务器gpu类型。
         :type gpu: str
-        :param bms_flavor: 云手机服务器bms规格
+        :param bms_flavor: 云手机服务器bms规格。
         :type bms_flavor: str
-        :param gpu_count: 云手机服务器gpu数量
+        :param gpu_count: 云手机服务器gpu数量。
         :type gpu_count: int
-        :param numa_count: 云手机服务器numa数量
+        :param numa_count: 云手机服务器numa数量。
         :type numa_count: int
         """
         
@@ -94,7 +94,7 @@ class ServerModelExtendSpec:
     def cpu(self):
         """Gets the cpu of this ServerModelExtendSpec.
 
-        云手机服务器cpu类型
+        云手机服务器cpu类型。
 
         :return: The cpu of this ServerModelExtendSpec.
         :rtype: str
@@ -105,7 +105,7 @@ class ServerModelExtendSpec:
     def cpu(self, cpu):
         """Sets the cpu of this ServerModelExtendSpec.
 
-        云手机服务器cpu类型
+        云手机服务器cpu类型。
 
         :param cpu: The cpu of this ServerModelExtendSpec.
         :type cpu: str
@@ -116,7 +116,7 @@ class ServerModelExtendSpec:
     def memory(self):
         """Gets the memory of this ServerModelExtendSpec.
 
-        云手机服务器内存类型
+        云手机服务器内存类型。
 
         :return: The memory of this ServerModelExtendSpec.
         :rtype: str
@@ -127,7 +127,7 @@ class ServerModelExtendSpec:
     def memory(self, memory):
         """Sets the memory of this ServerModelExtendSpec.
 
-        云手机服务器内存类型
+        云手机服务器内存类型。
 
         :param memory: The memory of this ServerModelExtendSpec.
         :type memory: str
@@ -138,7 +138,7 @@ class ServerModelExtendSpec:
     def disk(self):
         """Gets the disk of this ServerModelExtendSpec.
 
-        云手机服务器磁盘类型
+        云手机服务器磁盘类型。
 
         :return: The disk of this ServerModelExtendSpec.
         :rtype: str
@@ -149,7 +149,7 @@ class ServerModelExtendSpec:
     def disk(self, disk):
         """Sets the disk of this ServerModelExtendSpec.
 
-        云手机服务器磁盘类型
+        云手机服务器磁盘类型。
 
         :param disk: The disk of this ServerModelExtendSpec.
         :type disk: str
@@ -160,7 +160,7 @@ class ServerModelExtendSpec:
     def network_interface(self):
         """Gets the network_interface of this ServerModelExtendSpec.
 
-        云手机服务器网络类型
+        云手机服务器网络类型。
 
         :return: The network_interface of this ServerModelExtendSpec.
         :rtype: str
@@ -171,7 +171,7 @@ class ServerModelExtendSpec:
     def network_interface(self, network_interface):
         """Sets the network_interface of this ServerModelExtendSpec.
 
-        云手机服务器网络类型
+        云手机服务器网络类型。
 
         :param network_interface: The network_interface of this ServerModelExtendSpec.
         :type network_interface: str
@@ -182,7 +182,7 @@ class ServerModelExtendSpec:
     def gpu(self):
         """Gets the gpu of this ServerModelExtendSpec.
 
-        云手机服务器gpu类型
+        云手机服务器gpu类型。
 
         :return: The gpu of this ServerModelExtendSpec.
         :rtype: str
@@ -193,7 +193,7 @@ class ServerModelExtendSpec:
     def gpu(self, gpu):
         """Sets the gpu of this ServerModelExtendSpec.
 
-        云手机服务器gpu类型
+        云手机服务器gpu类型。
 
         :param gpu: The gpu of this ServerModelExtendSpec.
         :type gpu: str
@@ -204,7 +204,7 @@ class ServerModelExtendSpec:
     def bms_flavor(self):
         """Gets the bms_flavor of this ServerModelExtendSpec.
 
-        云手机服务器bms规格
+        云手机服务器bms规格。
 
         :return: The bms_flavor of this ServerModelExtendSpec.
         :rtype: str
@@ -215,7 +215,7 @@ class ServerModelExtendSpec:
     def bms_flavor(self, bms_flavor):
         """Sets the bms_flavor of this ServerModelExtendSpec.
 
-        云手机服务器bms规格
+        云手机服务器bms规格。
 
         :param bms_flavor: The bms_flavor of this ServerModelExtendSpec.
         :type bms_flavor: str
@@ -226,7 +226,7 @@ class ServerModelExtendSpec:
     def gpu_count(self):
         """Gets the gpu_count of this ServerModelExtendSpec.
 
-        云手机服务器gpu数量
+        云手机服务器gpu数量。
 
         :return: The gpu_count of this ServerModelExtendSpec.
         :rtype: int
@@ -237,7 +237,7 @@ class ServerModelExtendSpec:
     def gpu_count(self, gpu_count):
         """Sets the gpu_count of this ServerModelExtendSpec.
 
-        云手机服务器gpu数量
+        云手机服务器gpu数量。
 
         :param gpu_count: The gpu_count of this ServerModelExtendSpec.
         :type gpu_count: int
@@ -248,7 +248,7 @@ class ServerModelExtendSpec:
     def numa_count(self):
         """Gets the numa_count of this ServerModelExtendSpec.
 
-        云手机服务器numa数量
+        云手机服务器numa数量。
 
         :return: The numa_count of this ServerModelExtendSpec.
         :rtype: int
@@ -259,7 +259,7 @@ class ServerModelExtendSpec:
     def numa_count(self, numa_count):
         """Sets the numa_count of this ServerModelExtendSpec.
 
-        云手机服务器numa数量
+        云手机服务器numa数量。
 
         :param numa_count: The numa_count of this ServerModelExtendSpec.
         :type numa_count: int

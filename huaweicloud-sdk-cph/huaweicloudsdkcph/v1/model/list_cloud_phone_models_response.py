@@ -34,7 +34,7 @@ class ListCloudPhoneModelsResponse(SdkResponse):
 
         :param request_id: 请求的唯一标识ID。
         :type request_id: str
-        :param phone_models: 云手机的规格信息
+        :param phone_models: 云手机的规格信息。
         :type phone_models: list[:class:`huaweicloudsdkcph.v1.PhoneModel`]
         """
         
@@ -75,7 +75,7 @@ class ListCloudPhoneModelsResponse(SdkResponse):
     def phone_models(self):
         """Gets the phone_models of this ListCloudPhoneModelsResponse.
 
-        云手机的规格信息
+        云手机的规格信息。
 
         :return: The phone_models of this ListCloudPhoneModelsResponse.
         :rtype: list[:class:`huaweicloudsdkcph.v1.PhoneModel`]
@@ -86,7 +86,7 @@ class ListCloudPhoneModelsResponse(SdkResponse):
     def phone_models(self, phone_models):
         """Sets the phone_models of this ListCloudPhoneModelsResponse.
 
-        云手机的规格信息
+        云手机的规格信息。
 
         :param phone_models: The phone_models of this ListCloudPhoneModelsResponse.
         :type phone_models: list[:class:`huaweicloudsdkcph.v1.PhoneModel`]

@@ -123,6 +123,7 @@ from huaweicloudsdkrocketmq.v2.model.tag_entity import TagEntity
 from huaweicloudsdkrocketmq.v2.model.tag_multy_value_entity import TagMultyValueEntity
 from huaweicloudsdkrocketmq.v2.model.topic import Topic
 from huaweicloudsdkrocketmq.v2.model.topic_brokers import TopicBrokers
+from huaweicloudsdkrocketmq.v2.model.update_consumer_group import UpdateConsumerGroup
 from huaweicloudsdkrocketmq.v2.model.update_consumer_group_request import UpdateConsumerGroupRequest
 from huaweicloudsdkrocketmq.v2.model.update_consumer_group_response import UpdateConsumerGroupResponse
 from huaweicloudsdkrocketmq.v2.model.update_instance_req import UpdateInstanceReq

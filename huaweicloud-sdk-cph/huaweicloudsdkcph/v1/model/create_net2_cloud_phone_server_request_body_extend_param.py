@@ -39,15 +39,15 @@ class CreateNet2CloudPhoneServerRequestBodyExtendParam:
 
         The model defined in huaweicloud sdk
 
-        :param charging_mode: 计费类型  0 表示包周期
+        :param charging_mode: 计费类型。  - 0：包周期
         :type charging_mode: int
-        :param period_type: 订购周期类型 2 表示月 3 表示年
+        :param period_type: 订购周期类型。 - 2：月 - 3：年
         :type period_type: int
-        :param period_num: 订购周期数 当订购周期为月时，取值范围[1, 9]。 当订购周期为年时，取值范围[1,10]
+        :param period_num: 订购周期数。 当订购周期为月时，取值范围[1, 9]。 当订购周期为年时，取值范围[1,10]。
         :type period_num: int
-        :param is_auto_pay: 是否自动付款。默认不自动付款。 1 表示自动付款 0 表示不自动付款
+        :param is_auto_pay: 是否自动付款。默认不自动付款。 - 1：自动付款 - 0：不自动付款
         :type is_auto_pay: int
-        :param is_auto_renew: 是否自动续订。默认不自动续订。 1 表示自动续订 0 表示不自动续订
+        :param is_auto_renew: 是否自动续订。默认不自动续订。 - 1：自动续订 - 0：不自动续订
         :type is_auto_renew: int
         :param enterprise_project_id: 企业项目ID。 该字段不传（或传为字符串“0”），则将资源绑定给默认企业项目。
         :type enterprise_project_id: str
@@ -77,7 +77,7 @@ class CreateNet2CloudPhoneServerRequestBodyExtendParam:
     def charging_mode(self):
         """Gets the charging_mode of this CreateNet2CloudPhoneServerRequestBodyExtendParam.
 
-        计费类型  0 表示包周期
+        计费类型。  - 0：包周期
 
         :return: The charging_mode of this CreateNet2CloudPhoneServerRequestBodyExtendParam.
         :rtype: int
@@ -88,7 +88,7 @@ class CreateNet2CloudPhoneServerRequestBodyExtendParam:
     def charging_mode(self, charging_mode):
         """Sets the charging_mode of this CreateNet2CloudPhoneServerRequestBodyExtendParam.
 
-        计费类型  0 表示包周期
+        计费类型。  - 0：包周期
 
         :param charging_mode: The charging_mode of this CreateNet2CloudPhoneServerRequestBodyExtendParam.
         :type charging_mode: int
@@ -99,7 +99,7 @@ class CreateNet2CloudPhoneServerRequestBodyExtendParam:
     def period_type(self):
         """Gets the period_type of this CreateNet2CloudPhoneServerRequestBodyExtendParam.
 
-        订购周期类型 2 表示月 3 表示年
+        订购周期类型。 - 2：月 - 3：年
 
         :return: The period_type of this CreateNet2CloudPhoneServerRequestBodyExtendParam.
         :rtype: int
@@ -110,7 +110,7 @@ class CreateNet2CloudPhoneServerRequestBodyExtendParam:
     def period_type(self, period_type):
         """Sets the period_type of this CreateNet2CloudPhoneServerRequestBodyExtendParam.
 
-        订购周期类型 2 表示月 3 表示年
+        订购周期类型。 - 2：月 - 3：年
 
         :param period_type: The period_type of this CreateNet2CloudPhoneServerRequestBodyExtendParam.
         :type period_type: int
@@ -121,7 +121,7 @@ class CreateNet2CloudPhoneServerRequestBodyExtendParam:
     def period_num(self):
         """Gets the period_num of this CreateNet2CloudPhoneServerRequestBodyExtendParam.
 
-        订购周期数 当订购周期为月时，取值范围[1, 9]。 当订购周期为年时，取值范围[1,10]
+        订购周期数。 当订购周期为月时，取值范围[1, 9]。 当订购周期为年时，取值范围[1,10]。
 
         :return: The period_num of this CreateNet2CloudPhoneServerRequestBodyExtendParam.
         :rtype: int
@@ -132,7 +132,7 @@ class CreateNet2CloudPhoneServerRequestBodyExtendParam:
     def period_num(self, period_num):
         """Sets the period_num of this CreateNet2CloudPhoneServerRequestBodyExtendParam.
 
-        订购周期数 当订购周期为月时，取值范围[1, 9]。 当订购周期为年时，取值范围[1,10]
+        订购周期数。 当订购周期为月时，取值范围[1, 9]。 当订购周期为年时，取值范围[1,10]。
 
         :param period_num: The period_num of this CreateNet2CloudPhoneServerRequestBodyExtendParam.
         :type period_num: int
@@ -143,7 +143,7 @@ class CreateNet2CloudPhoneServerRequestBodyExtendParam:
     def is_auto_pay(self):
         """Gets the is_auto_pay of this CreateNet2CloudPhoneServerRequestBodyExtendParam.
 
-        是否自动付款。默认不自动付款。 1 表示自动付款 0 表示不自动付款
+        是否自动付款。默认不自动付款。 - 1：自动付款 - 0：不自动付款
 
         :return: The is_auto_pay of this CreateNet2CloudPhoneServerRequestBodyExtendParam.
         :rtype: int
@@ -154,7 +154,7 @@ class CreateNet2CloudPhoneServerRequestBodyExtendParam:
     def is_auto_pay(self, is_auto_pay):
         """Sets the is_auto_pay of this CreateNet2CloudPhoneServerRequestBodyExtendParam.
 
-        是否自动付款。默认不自动付款。 1 表示自动付款 0 表示不自动付款
+        是否自动付款。默认不自动付款。 - 1：自动付款 - 0：不自动付款
 
         :param is_auto_pay: The is_auto_pay of this CreateNet2CloudPhoneServerRequestBodyExtendParam.
         :type is_auto_pay: int
@@ -165,7 +165,7 @@ class CreateNet2CloudPhoneServerRequestBodyExtendParam:
     def is_auto_renew(self):
         """Gets the is_auto_renew of this CreateNet2CloudPhoneServerRequestBodyExtendParam.
 
-        是否自动续订。默认不自动续订。 1 表示自动续订 0 表示不自动续订
+        是否自动续订。默认不自动续订。 - 1：自动续订 - 0：不自动续订
 
         :return: The is_auto_renew of this CreateNet2CloudPhoneServerRequestBodyExtendParam.
         :rtype: int
@@ -176,7 +176,7 @@ class CreateNet2CloudPhoneServerRequestBodyExtendParam:
     def is_auto_renew(self, is_auto_renew):
         """Sets the is_auto_renew of this CreateNet2CloudPhoneServerRequestBodyExtendParam.
 
-        是否自动续订。默认不自动续订。 1 表示自动续订 0 表示不自动续订
+        是否自动续订。默认不自动续订。 - 1：自动续订 - 0：不自动续订
 
         :param is_auto_renew: The is_auto_renew of this CreateNet2CloudPhoneServerRequestBodyExtendParam.
         :type is_auto_renew: int

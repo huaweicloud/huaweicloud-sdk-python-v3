@@ -35,13 +35,13 @@ class Address:
 
         The model defined in huaweicloud sdk
 
-        :param intranet_ip: 云手机服务器的内网IP，过期字段
+        :param intranet_ip: 云手机服务器的内网IP，过期字段。
         :type intranet_ip: str
-        :param access_ip: 云手机服务器的公网IP，过期字段
+        :param access_ip: 云手机服务器的公网IP，过期字段。
         :type access_ip: str
-        :param server_ip: 云手机服务器的内网IP，新增字段
+        :param server_ip: 云手机服务器的内网IP，新增字段。
         :type server_ip: str
-        :param public_ip: 云手机服务器的公网IP，新增字段
+        :param public_ip: 云手机服务器的公网IP，新增字段。
         :type public_ip: str
         """
         
@@ -66,7 +66,7 @@ class Address:
     def intranet_ip(self):
         """Gets the intranet_ip of this Address.
 
-        云手机服务器的内网IP，过期字段
+        云手机服务器的内网IP，过期字段。
 
         :return: The intranet_ip of this Address.
         :rtype: str
@@ -77,7 +77,7 @@ class Address:
     def intranet_ip(self, intranet_ip):
         """Sets the intranet_ip of this Address.
 
-        云手机服务器的内网IP，过期字段
+        云手机服务器的内网IP，过期字段。
 
         :param intranet_ip: The intranet_ip of this Address.
         :type intranet_ip: str
@@ -88,7 +88,7 @@ class Address:
     def access_ip(self):
         """Gets the access_ip of this Address.
 
-        云手机服务器的公网IP，过期字段
+        云手机服务器的公网IP，过期字段。
 
         :return: The access_ip of this Address.
         :rtype: str
@@ -99,7 +99,7 @@ class Address:
     def access_ip(self, access_ip):
         """Sets the access_ip of this Address.
 
-        云手机服务器的公网IP，过期字段
+        云手机服务器的公网IP，过期字段。
 
         :param access_ip: The access_ip of this Address.
         :type access_ip: str
@@ -110,7 +110,7 @@ class Address:
     def server_ip(self):
         """Gets the server_ip of this Address.
 
-        云手机服务器的内网IP，新增字段
+        云手机服务器的内网IP，新增字段。
 
         :return: The server_ip of this Address.
         :rtype: str
@@ -121,7 +121,7 @@ class Address:
     def server_ip(self, server_ip):
         """Sets the server_ip of this Address.
 
-        云手机服务器的内网IP，新增字段
+        云手机服务器的内网IP，新增字段。
 
         :param server_ip: The server_ip of this Address.
         :type server_ip: str
@@ -132,7 +132,7 @@ class Address:
     def public_ip(self):
         """Gets the public_ip of this Address.
 
-        云手机服务器的公网IP，新增字段
+        云手机服务器的公网IP，新增字段。
 
         :return: The public_ip of this Address.
         :rtype: str
@@ -143,7 +143,7 @@ class Address:
     def public_ip(self, public_ip):
         """Sets the public_ip of this Address.
 
-        云手机服务器的公网IP，新增字段
+        云手机服务器的公网IP，新增字段。
 
         :param public_ip: The public_ip of this Address.
         :type public_ip: str

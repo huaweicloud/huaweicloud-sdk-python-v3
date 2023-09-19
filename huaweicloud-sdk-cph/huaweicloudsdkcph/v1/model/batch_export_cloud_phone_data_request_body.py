@@ -29,7 +29,7 @@ class BatchExportCloudPhoneDataRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param storage_infos: 待导出数据的云手机信息
+        :param storage_infos: 待导出数据的云手机信息。
         :type storage_infos: list[:class:`huaweicloudsdkcph.v1.StorageInfo`]
         """
         
@@ -44,7 +44,7 @@ class BatchExportCloudPhoneDataRequestBody:
     def storage_infos(self):
         """Gets the storage_infos of this BatchExportCloudPhoneDataRequestBody.
 
-        待导出数据的云手机信息
+        待导出数据的云手机信息。
 
         :return: The storage_infos of this BatchExportCloudPhoneDataRequestBody.
         :rtype: list[:class:`huaweicloudsdkcph.v1.StorageInfo`]
@@ -55,7 +55,7 @@ class BatchExportCloudPhoneDataRequestBody:
     def storage_infos(self, storage_infos):
         """Sets the storage_infos of this BatchExportCloudPhoneDataRequestBody.
 
-        待导出数据的云手机信息
+        待导出数据的云手机信息。
 
         :param storage_infos: The storage_infos of this BatchExportCloudPhoneDataRequestBody.
         :type storage_infos: list[:class:`huaweicloudsdkcph.v1.StorageInfo`]

@@ -53,31 +53,31 @@ class CreateNet2CloudPhoneServerRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param server_name: 云手机服务器名称  不超过60个字符，只支持英文字母、数字、汉字、下划线和中划线。  批量购买会在服务器名称后自动添加序号，比如设置此参数为server-1，那么创建的云手机服务器名称会自动按序增加数字后缀，比如为server-1-0001
+        :param server_name: 云手机服务器名称，  不超过60个字符，只支持英文字母、数字、汉字、下划线和中划线。  批量购买会在服务器名称后自动添加序号，比如设置此参数为server-1，那么创建的云手机服务器名称会自动按序增加数字后缀，比如为server-1-0001。
         :type server_name: str
-        :param server_model_name: 云手机服务器规格，不超过64个字节
+        :param server_model_name: 云手机服务器规格，不超过64个字节。
         :type server_model_name: str
-        :param phone_model_name: 云手机规格，不超过64个字节
+        :param phone_model_name: 云手机规格，不超过64个字节。
         :type phone_model_name: str
-        :param image_id: 云手机镜像ID，不超过32个字节
+        :param image_id: 云手机镜像ID，不超过32个字节。
         :type image_id: str
-        :param count: 购买的云手机服务器个数，最多可购买10台
+        :param count: 购买的云手机服务器个数，最多可购买10台。
         :type count: int
-        :param keypair_name: 密钥对名称，不超过64个字节，用于云手机ADB登录
+        :param keypair_name: 密钥对名称，不超过64个字节，用于云手机ADB登录。
         :type keypair_name: str
-        :param ports: 云手机启用的应用端口，云手机服务会做端口转发
+        :param ports: 云手机启用的应用端口，云手机服务会做端口转发。
         :type ports: list[:class:`huaweicloudsdkcph.v1.Port`]
         :param extend_param: 
         :type extend_param: :class:`huaweicloudsdkcph.v1.CreateNet2CloudPhoneServerRequestBodyExtendParam`
-        :param tenant_vpc_id: 租户自定义的VPC ID，为待创建的云服务器所属的虚拟私有云（简称VPC），需要指定已创建VPC的ID，UUID格式
+        :param tenant_vpc_id: 租户自定义的VPC ID，为待创建的云服务器所属的虚拟私有云（简称VPC），需要指定已创建VPC的ID，UUID格式。
         :type tenant_vpc_id: str
-        :param nics: 租户自定义的网卡的结构体，为待创建的云服务器的网卡信息
+        :param nics: 租户自定义的网卡的结构体，为待创建的云服务器的网卡信息。
         :type nics: list[:class:`huaweicloudsdkcph.v1.Nic`]
         :param public_ip: 
         :type public_ip: :class:`huaweicloudsdkcph.v1.CreateNet2CloudPhoneServerRequestBodyPublicIp`
         :param band_width: 
         :type band_width: :class:`huaweicloudsdkcph.v1.CreateNet2CloudPhoneServerRequestBodyBandWidth`
-        :param availability_zone: 待创建云服务器所在的可用区，需要指定可用区（AZ）的名称
+        :param availability_zone: 待创建云服务器所在的可用区，需要指定可用区（AZ）的名称。
         :type availability_zone: str
         """
         
@@ -119,7 +119,7 @@ class CreateNet2CloudPhoneServerRequestBody:
     def server_name(self):
         """Gets the server_name of this CreateNet2CloudPhoneServerRequestBody.
 
-        云手机服务器名称  不超过60个字符，只支持英文字母、数字、汉字、下划线和中划线。  批量购买会在服务器名称后自动添加序号，比如设置此参数为server-1，那么创建的云手机服务器名称会自动按序增加数字后缀，比如为server-1-0001
+        云手机服务器名称，  不超过60个字符，只支持英文字母、数字、汉字、下划线和中划线。  批量购买会在服务器名称后自动添加序号，比如设置此参数为server-1，那么创建的云手机服务器名称会自动按序增加数字后缀，比如为server-1-0001。
 
         :return: The server_name of this CreateNet2CloudPhoneServerRequestBody.
         :rtype: str
@@ -130,7 +130,7 @@ class CreateNet2CloudPhoneServerRequestBody:
     def server_name(self, server_name):
         """Sets the server_name of this CreateNet2CloudPhoneServerRequestBody.
 
-        云手机服务器名称  不超过60个字符，只支持英文字母、数字、汉字、下划线和中划线。  批量购买会在服务器名称后自动添加序号，比如设置此参数为server-1，那么创建的云手机服务器名称会自动按序增加数字后缀，比如为server-1-0001
+        云手机服务器名称，  不超过60个字符，只支持英文字母、数字、汉字、下划线和中划线。  批量购买会在服务器名称后自动添加序号，比如设置此参数为server-1，那么创建的云手机服务器名称会自动按序增加数字后缀，比如为server-1-0001。
 
         :param server_name: The server_name of this CreateNet2CloudPhoneServerRequestBody.
         :type server_name: str
@@ -141,7 +141,7 @@ class CreateNet2CloudPhoneServerRequestBody:
     def server_model_name(self):
         """Gets the server_model_name of this CreateNet2CloudPhoneServerRequestBody.
 
-        云手机服务器规格，不超过64个字节
+        云手机服务器规格，不超过64个字节。
 
         :return: The server_model_name of this CreateNet2CloudPhoneServerRequestBody.
         :rtype: str
@@ -152,7 +152,7 @@ class CreateNet2CloudPhoneServerRequestBody:
     def server_model_name(self, server_model_name):
         """Sets the server_model_name of this CreateNet2CloudPhoneServerRequestBody.
 
-        云手机服务器规格，不超过64个字节
+        云手机服务器规格，不超过64个字节。
 
         :param server_model_name: The server_model_name of this CreateNet2CloudPhoneServerRequestBody.
         :type server_model_name: str
@@ -163,7 +163,7 @@ class CreateNet2CloudPhoneServerRequestBody:
     def phone_model_name(self):
         """Gets the phone_model_name of this CreateNet2CloudPhoneServerRequestBody.
 
-        云手机规格，不超过64个字节
+        云手机规格，不超过64个字节。
 
         :return: The phone_model_name of this CreateNet2CloudPhoneServerRequestBody.
         :rtype: str
@@ -174,7 +174,7 @@ class CreateNet2CloudPhoneServerRequestBody:
     def phone_model_name(self, phone_model_name):
         """Sets the phone_model_name of this CreateNet2CloudPhoneServerRequestBody.
 
-        云手机规格，不超过64个字节
+        云手机规格，不超过64个字节。
 
         :param phone_model_name: The phone_model_name of this CreateNet2CloudPhoneServerRequestBody.
         :type phone_model_name: str
@@ -185,7 +185,7 @@ class CreateNet2CloudPhoneServerRequestBody:
     def image_id(self):
         """Gets the image_id of this CreateNet2CloudPhoneServerRequestBody.
 
-        云手机镜像ID，不超过32个字节
+        云手机镜像ID，不超过32个字节。
 
         :return: The image_id of this CreateNet2CloudPhoneServerRequestBody.
         :rtype: str
@@ -196,7 +196,7 @@ class CreateNet2CloudPhoneServerRequestBody:
     def image_id(self, image_id):
         """Sets the image_id of this CreateNet2CloudPhoneServerRequestBody.
 
-        云手机镜像ID，不超过32个字节
+        云手机镜像ID，不超过32个字节。
 
         :param image_id: The image_id of this CreateNet2CloudPhoneServerRequestBody.
         :type image_id: str
@@ -207,7 +207,7 @@ class CreateNet2CloudPhoneServerRequestBody:
     def count(self):
         """Gets the count of this CreateNet2CloudPhoneServerRequestBody.
 
-        购买的云手机服务器个数，最多可购买10台
+        购买的云手机服务器个数，最多可购买10台。
 
         :return: The count of this CreateNet2CloudPhoneServerRequestBody.
         :rtype: int
@@ -218,7 +218,7 @@ class CreateNet2CloudPhoneServerRequestBody:
     def count(self, count):
         """Sets the count of this CreateNet2CloudPhoneServerRequestBody.
 
-        购买的云手机服务器个数，最多可购买10台
+        购买的云手机服务器个数，最多可购买10台。
 
         :param count: The count of this CreateNet2CloudPhoneServerRequestBody.
         :type count: int
@@ -229,7 +229,7 @@ class CreateNet2CloudPhoneServerRequestBody:
     def keypair_name(self):
         """Gets the keypair_name of this CreateNet2CloudPhoneServerRequestBody.
 
-        密钥对名称，不超过64个字节，用于云手机ADB登录
+        密钥对名称，不超过64个字节，用于云手机ADB登录。
 
         :return: The keypair_name of this CreateNet2CloudPhoneServerRequestBody.
         :rtype: str
@@ -240,7 +240,7 @@ class CreateNet2CloudPhoneServerRequestBody:
     def keypair_name(self, keypair_name):
         """Sets the keypair_name of this CreateNet2CloudPhoneServerRequestBody.
 
-        密钥对名称，不超过64个字节，用于云手机ADB登录
+        密钥对名称，不超过64个字节，用于云手机ADB登录。
 
         :param keypair_name: The keypair_name of this CreateNet2CloudPhoneServerRequestBody.
         :type keypair_name: str
@@ -251,7 +251,7 @@ class CreateNet2CloudPhoneServerRequestBody:
     def ports(self):
         """Gets the ports of this CreateNet2CloudPhoneServerRequestBody.
 
-        云手机启用的应用端口，云手机服务会做端口转发
+        云手机启用的应用端口，云手机服务会做端口转发。
 
         :return: The ports of this CreateNet2CloudPhoneServerRequestBody.
         :rtype: list[:class:`huaweicloudsdkcph.v1.Port`]
@@ -262,7 +262,7 @@ class CreateNet2CloudPhoneServerRequestBody:
     def ports(self, ports):
         """Sets the ports of this CreateNet2CloudPhoneServerRequestBody.
 
-        云手机启用的应用端口，云手机服务会做端口转发
+        云手机启用的应用端口，云手机服务会做端口转发。
 
         :param ports: The ports of this CreateNet2CloudPhoneServerRequestBody.
         :type ports: list[:class:`huaweicloudsdkcph.v1.Port`]
@@ -291,7 +291,7 @@ class CreateNet2CloudPhoneServerRequestBody:
     def tenant_vpc_id(self):
         """Gets the tenant_vpc_id of this CreateNet2CloudPhoneServerRequestBody.
 
-        租户自定义的VPC ID，为待创建的云服务器所属的虚拟私有云（简称VPC），需要指定已创建VPC的ID，UUID格式
+        租户自定义的VPC ID，为待创建的云服务器所属的虚拟私有云（简称VPC），需要指定已创建VPC的ID，UUID格式。
 
         :return: The tenant_vpc_id of this CreateNet2CloudPhoneServerRequestBody.
         :rtype: str
@@ -302,7 +302,7 @@ class CreateNet2CloudPhoneServerRequestBody:
     def tenant_vpc_id(self, tenant_vpc_id):
         """Sets the tenant_vpc_id of this CreateNet2CloudPhoneServerRequestBody.
 
-        租户自定义的VPC ID，为待创建的云服务器所属的虚拟私有云（简称VPC），需要指定已创建VPC的ID，UUID格式
+        租户自定义的VPC ID，为待创建的云服务器所属的虚拟私有云（简称VPC），需要指定已创建VPC的ID，UUID格式。
 
         :param tenant_vpc_id: The tenant_vpc_id of this CreateNet2CloudPhoneServerRequestBody.
         :type tenant_vpc_id: str
@@ -313,7 +313,7 @@ class CreateNet2CloudPhoneServerRequestBody:
     def nics(self):
         """Gets the nics of this CreateNet2CloudPhoneServerRequestBody.
 
-        租户自定义的网卡的结构体，为待创建的云服务器的网卡信息
+        租户自定义的网卡的结构体，为待创建的云服务器的网卡信息。
 
         :return: The nics of this CreateNet2CloudPhoneServerRequestBody.
         :rtype: list[:class:`huaweicloudsdkcph.v1.Nic`]
@@ -324,7 +324,7 @@ class CreateNet2CloudPhoneServerRequestBody:
     def nics(self, nics):
         """Sets the nics of this CreateNet2CloudPhoneServerRequestBody.
 
-        租户自定义的网卡的结构体，为待创建的云服务器的网卡信息
+        租户自定义的网卡的结构体，为待创建的云服务器的网卡信息。
 
         :param nics: The nics of this CreateNet2CloudPhoneServerRequestBody.
         :type nics: list[:class:`huaweicloudsdkcph.v1.Nic`]
@@ -371,7 +371,7 @@ class CreateNet2CloudPhoneServerRequestBody:
     def availability_zone(self):
         """Gets the availability_zone of this CreateNet2CloudPhoneServerRequestBody.
 
-        待创建云服务器所在的可用区，需要指定可用区（AZ）的名称
+        待创建云服务器所在的可用区，需要指定可用区（AZ）的名称。
 
         :return: The availability_zone of this CreateNet2CloudPhoneServerRequestBody.
         :rtype: str
@@ -382,7 +382,7 @@ class CreateNet2CloudPhoneServerRequestBody:
     def availability_zone(self, availability_zone):
         """Sets the availability_zone of this CreateNet2CloudPhoneServerRequestBody.
 
-        待创建云服务器所在的可用区，需要指定可用区（AZ）的名称
+        待创建云服务器所在的可用区，需要指定可用区（AZ）的名称。
 
         :param availability_zone: The availability_zone of this CreateNet2CloudPhoneServerRequestBody.
         :type availability_zone: str

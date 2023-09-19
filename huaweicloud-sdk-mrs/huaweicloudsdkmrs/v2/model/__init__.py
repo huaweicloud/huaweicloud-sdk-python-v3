@@ -31,6 +31,9 @@ from huaweicloudsdkmrs.v2.model.delete_data_connector_request import DeleteDataC
 from huaweicloudsdkmrs.v2.model.delete_data_connector_response import DeleteDataConnectorResponse
 from huaweicloudsdkmrs.v2.model.execute_sql_request import ExecuteSqlRequest
 from huaweicloudsdkmrs.v2.model.execute_sql_response import ExecuteSqlResponse
+from huaweicloudsdkmrs.v2.model.expand_cluster_request import ExpandClusterRequest
+from huaweicloudsdkmrs.v2.model.expand_cluster_response import ExpandClusterResponse
+from huaweicloudsdkmrs.v2.model.expand_param import ExpandParam
 from huaweicloudsdkmrs.v2.model.file_status_v2 import FileStatusV2
 from huaweicloudsdkmrs.v2.model.job_batch_delete import JobBatchDelete
 from huaweicloudsdkmrs.v2.model.job_execution import JobExecution
@@ -61,6 +64,9 @@ from huaweicloudsdkmrs.v2.model.show_sql_result_request import ShowSqlResultRequ
 from huaweicloudsdkmrs.v2.model.show_sql_result_response import ShowSqlResultResponse
 from huaweicloudsdkmrs.v2.model.show_sql_result_with_job_request import ShowSqlResultWithJobRequest
 from huaweicloudsdkmrs.v2.model.show_sql_result_with_job_response import ShowSqlResultWithJobResponse
+from huaweicloudsdkmrs.v2.model.shrink_cluster_request import ShrinkClusterRequest
+from huaweicloudsdkmrs.v2.model.shrink_cluster_response import ShrinkClusterResponse
+from huaweicloudsdkmrs.v2.model.shrink_param import ShrinkParam
 from huaweicloudsdkmrs.v2.model.sql_execution_req import SqlExecutionReq
 from huaweicloudsdkmrs.v2.model.step_config import StepConfig
 from huaweicloudsdkmrs.v2.model.stop_job_request import StopJobRequest

@@ -26,7 +26,7 @@ class ListChartsResponse(SdkResponse):
         'log_group_name': 'str',
         'log_stream_id': 'str',
         'log_stream_name': 'str',
-        'config': 'object'
+        'config': 'ChartConfig'
     }
 
     attribute_map = {
@@ -62,8 +62,8 @@ class ListChartsResponse(SdkResponse):
         :type log_stream_id: str
         :param log_stream_name: 日志流名称
         :type log_stream_name: str
-        :param config: 图表配置详情
-        :type config: object
+        :param config: 
+        :type config: :class:`huaweicloudsdklts.v2.ChartConfig`
         """
         
         super(ListChartsResponse, self).__init__()
@@ -278,10 +278,8 @@ class ListChartsResponse(SdkResponse):
     def config(self):
         """Gets the config of this ListChartsResponse.
 
-        图表配置详情
-
         :return: The config of this ListChartsResponse.
-        :rtype: object
+        :rtype: :class:`huaweicloudsdklts.v2.ChartConfig`
         """
         return self._config
 
@@ -289,10 +287,8 @@ class ListChartsResponse(SdkResponse):
     def config(self, config):
         """Sets the config of this ListChartsResponse.
 
-        图表配置详情
-
         :param config: The config of this ListChartsResponse.
-        :type config: object
+        :type config: :class:`huaweicloudsdklts.v2.ChartConfig`
         """
         self._config = config
 

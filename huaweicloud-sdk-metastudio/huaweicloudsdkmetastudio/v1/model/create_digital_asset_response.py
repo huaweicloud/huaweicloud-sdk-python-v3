@@ -18,29 +18,36 @@ class CreateDigitalAssetResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'asset_id': 'str'
+        'asset_id': 'str',
+        'x_request_id': 'str'
     }
 
     attribute_map = {
-        'asset_id': 'asset_id'
+        'asset_id': 'asset_id',
+        'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, asset_id=None):
+    def __init__(self, asset_id=None, x_request_id=None):
         """CreateDigitalAssetResponse
 
         The model defined in huaweicloud sdk
 
         :param asset_id: 数字资产ID。
         :type asset_id: str
+        :param x_request_id: 
+        :type x_request_id: str
         """
         
         super(CreateDigitalAssetResponse, self).__init__()
 
         self._asset_id = None
+        self._x_request_id = None
         self.discriminator = None
 
         if asset_id is not None:
             self.asset_id = asset_id
+        if x_request_id is not None:
+            self.x_request_id = x_request_id
 
     @property
     def asset_id(self):
@@ -63,6 +70,24 @@ class CreateDigitalAssetResponse(SdkResponse):
         :type asset_id: str
         """
         self._asset_id = asset_id
+
+    @property
+    def x_request_id(self):
+        """Gets the x_request_id of this CreateDigitalAssetResponse.
+
+        :return: The x_request_id of this CreateDigitalAssetResponse.
+        :rtype: str
+        """
+        return self._x_request_id
+
+    @x_request_id.setter
+    def x_request_id(self, x_request_id):
+        """Sets the x_request_id of this CreateDigitalAssetResponse.
+
+        :param x_request_id: The x_request_id of this CreateDigitalAssetResponse.
+        :type x_request_id: str
+        """
+        self._x_request_id = x_request_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

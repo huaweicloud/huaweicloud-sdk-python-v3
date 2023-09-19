@@ -45,7 +45,7 @@ class ListCloudPhoneServersRequest:
         :type server_name: str
         :param server_id: 云手机服务器的唯一标识。
         :type server_id: str
-        :param network_version: 云手机服务器是否为自定义网络标识 - v1：系统定义网络的云手机服务器。 - v2：自定义网络的云手机服务器。
+        :param network_version: 云手机服务器是否为自定义网络标识。 - v1：系统定义网络的云手机服务器 - v2：自定义网络的云手机服务器
         :type network_version: str
         """
         
@@ -161,7 +161,7 @@ class ListCloudPhoneServersRequest:
     def network_version(self):
         """Gets the network_version of this ListCloudPhoneServersRequest.
 
-        云手机服务器是否为自定义网络标识 - v1：系统定义网络的云手机服务器。 - v2：自定义网络的云手机服务器。
+        云手机服务器是否为自定义网络标识。 - v1：系统定义网络的云手机服务器 - v2：自定义网络的云手机服务器
 
         :return: The network_version of this ListCloudPhoneServersRequest.
         :rtype: str
@@ -172,7 +172,7 @@ class ListCloudPhoneServersRequest:
     def network_version(self, network_version):
         """Sets the network_version of this ListCloudPhoneServersRequest.
 
-        云手机服务器是否为自定义网络标识 - v1：系统定义网络的云手机服务器。 - v2：自定义网络的云手机服务器。
+        云手机服务器是否为自定义网络标识。 - v1：系统定义网络的云手机服务器 - v2：自定义网络的云手机服务器
 
         :param network_version: The network_version of this ListCloudPhoneServersRequest.
         :type network_version: str

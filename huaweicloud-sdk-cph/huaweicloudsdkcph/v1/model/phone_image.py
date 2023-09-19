@@ -39,17 +39,17 @@ class PhoneImage:
 
         The model defined in huaweicloud sdk
 
-        :param image_name: 手机镜像名称，不超过128个字节
+        :param image_name: 手机镜像名称，不超过128个字节。
         :type image_name: str
-        :param os_type: 镜像操作系统类型，不超过16个字节
+        :param os_type: 镜像操作系统类型，不超过16个字节。
         :type os_type: str
-        :param is_public: 镜像类型 - 1：公有镜像 - 2 ：私有镜像
+        :param is_public: 镜像类型。 - 1：公有镜像 - 2 ：私有镜像
         :type is_public: int
-        :param os_name: 手机操作系统，不超过36个字节
+        :param os_name: 手机操作系统，不超过36个字节。
         :type os_name: str
-        :param image_label: 镜像适用的云手机规格 - cloud_phone：适用于physical.rx1.xlarge 类型云手机服务器 - cloud_phone_1620：适用于physical.kg1.4xlarge.cp类型云手机服务器 - cloud_game：适用于physical.rx1.xlarge.cg 类型云手游服务器 - cloud_game_1620：适用于physical.kg1.4xlarge.cg 类型云手游服务器 - qemu_phone： 适用于physical.rx1.xlarge 类型云手机服务器中 qemu类型云手机规格
+        :param image_label: 镜像适用的云手机规格。 - cloud_phone：适用于physical.rx1.xlarge 类型云手机服务器 - cloud_phone_1620：适用于physical.kg1.4xlarge.cp类型云手机服务器 - cloud_game：适用于physical.rx1.xlarge.cg 类型云手游服务器 - cloud_game_1620：适用于physical.kg1.4xlarge.cg 类型云手游服务器 - qemu_phone： 适用于physical.rx1.xlarge 类型云手机服务器中 qemu类型云手机规格
         :type image_label: str
-        :param image_id: 手机镜像唯一标识ID，不超过32个字节
+        :param image_id: 手机镜像唯一标识ID，不超过32个字节。
         :type image_id: str
         """
         
@@ -80,7 +80,7 @@ class PhoneImage:
     def image_name(self):
         """Gets the image_name of this PhoneImage.
 
-        手机镜像名称，不超过128个字节
+        手机镜像名称，不超过128个字节。
 
         :return: The image_name of this PhoneImage.
         :rtype: str
@@ -91,7 +91,7 @@ class PhoneImage:
     def image_name(self, image_name):
         """Sets the image_name of this PhoneImage.
 
-        手机镜像名称，不超过128个字节
+        手机镜像名称，不超过128个字节。
 
         :param image_name: The image_name of this PhoneImage.
         :type image_name: str
@@ -102,7 +102,7 @@ class PhoneImage:
     def os_type(self):
         """Gets the os_type of this PhoneImage.
 
-        镜像操作系统类型，不超过16个字节
+        镜像操作系统类型，不超过16个字节。
 
         :return: The os_type of this PhoneImage.
         :rtype: str
@@ -113,7 +113,7 @@ class PhoneImage:
     def os_type(self, os_type):
         """Sets the os_type of this PhoneImage.
 
-        镜像操作系统类型，不超过16个字节
+        镜像操作系统类型，不超过16个字节。
 
         :param os_type: The os_type of this PhoneImage.
         :type os_type: str
@@ -124,7 +124,7 @@ class PhoneImage:
     def is_public(self):
         """Gets the is_public of this PhoneImage.
 
-        镜像类型 - 1：公有镜像 - 2 ：私有镜像
+        镜像类型。 - 1：公有镜像 - 2 ：私有镜像
 
         :return: The is_public of this PhoneImage.
         :rtype: int
@@ -135,7 +135,7 @@ class PhoneImage:
     def is_public(self, is_public):
         """Sets the is_public of this PhoneImage.
 
-        镜像类型 - 1：公有镜像 - 2 ：私有镜像
+        镜像类型。 - 1：公有镜像 - 2 ：私有镜像
 
         :param is_public: The is_public of this PhoneImage.
         :type is_public: int
@@ -146,7 +146,7 @@ class PhoneImage:
     def os_name(self):
         """Gets the os_name of this PhoneImage.
 
-        手机操作系统，不超过36个字节
+        手机操作系统，不超过36个字节。
 
         :return: The os_name of this PhoneImage.
         :rtype: str
@@ -157,7 +157,7 @@ class PhoneImage:
     def os_name(self, os_name):
         """Sets the os_name of this PhoneImage.
 
-        手机操作系统，不超过36个字节
+        手机操作系统，不超过36个字节。
 
         :param os_name: The os_name of this PhoneImage.
         :type os_name: str
@@ -168,7 +168,7 @@ class PhoneImage:
     def image_label(self):
         """Gets the image_label of this PhoneImage.
 
-        镜像适用的云手机规格 - cloud_phone：适用于physical.rx1.xlarge 类型云手机服务器 - cloud_phone_1620：适用于physical.kg1.4xlarge.cp类型云手机服务器 - cloud_game：适用于physical.rx1.xlarge.cg 类型云手游服务器 - cloud_game_1620：适用于physical.kg1.4xlarge.cg 类型云手游服务器 - qemu_phone： 适用于physical.rx1.xlarge 类型云手机服务器中 qemu类型云手机规格
+        镜像适用的云手机规格。 - cloud_phone：适用于physical.rx1.xlarge 类型云手机服务器 - cloud_phone_1620：适用于physical.kg1.4xlarge.cp类型云手机服务器 - cloud_game：适用于physical.rx1.xlarge.cg 类型云手游服务器 - cloud_game_1620：适用于physical.kg1.4xlarge.cg 类型云手游服务器 - qemu_phone： 适用于physical.rx1.xlarge 类型云手机服务器中 qemu类型云手机规格
 
         :return: The image_label of this PhoneImage.
         :rtype: str
@@ -179,7 +179,7 @@ class PhoneImage:
     def image_label(self, image_label):
         """Sets the image_label of this PhoneImage.
 
-        镜像适用的云手机规格 - cloud_phone：适用于physical.rx1.xlarge 类型云手机服务器 - cloud_phone_1620：适用于physical.kg1.4xlarge.cp类型云手机服务器 - cloud_game：适用于physical.rx1.xlarge.cg 类型云手游服务器 - cloud_game_1620：适用于physical.kg1.4xlarge.cg 类型云手游服务器 - qemu_phone： 适用于physical.rx1.xlarge 类型云手机服务器中 qemu类型云手机规格
+        镜像适用的云手机规格。 - cloud_phone：适用于physical.rx1.xlarge 类型云手机服务器 - cloud_phone_1620：适用于physical.kg1.4xlarge.cp类型云手机服务器 - cloud_game：适用于physical.rx1.xlarge.cg 类型云手游服务器 - cloud_game_1620：适用于physical.kg1.4xlarge.cg 类型云手游服务器 - qemu_phone： 适用于physical.rx1.xlarge 类型云手机服务器中 qemu类型云手机规格
 
         :param image_label: The image_label of this PhoneImage.
         :type image_label: str
@@ -190,7 +190,7 @@ class PhoneImage:
     def image_id(self):
         """Gets the image_id of this PhoneImage.
 
-        手机镜像唯一标识ID，不超过32个字节
+        手机镜像唯一标识ID，不超过32个字节。
 
         :return: The image_id of this PhoneImage.
         :rtype: str
@@ -201,7 +201,7 @@ class PhoneImage:
     def image_id(self, image_id):
         """Sets the image_id of this PhoneImage.
 
-        手机镜像唯一标识ID，不超过32个字节
+        手机镜像唯一标识ID，不超过32个字节。
 
         :param image_id: The image_id of this PhoneImage.
         :type image_id: str

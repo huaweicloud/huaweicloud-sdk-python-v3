@@ -35,8 +35,6 @@ if six.PY3:
 else:
     from urllib import quote, unquote
 
-_SIGNING_KEY_CACHE = {}
-
 
 class Signer(object):
     _ENCODE_UTF8 = "utf-8"
@@ -294,7 +292,8 @@ class DerivationAKSKSigner(Signer):
         if not region_id:
             raise ValueError("regionId is required in credentials when using derived auth")
 
-        request.body = six.ensure_binary(request.body)
+        if isinstance(request.body, six.text_type):
+            request.body = six.ensure_binary(request.body)
 
         self._process_content_header(request)
         t = self._process_header_time(request)
@@ -359,14 +358,8 @@ class P256SHA256Signer(Signer):
         return ecdsa.SigningKey.from_string(key_bytes, curve=self._CURVE, hashfunc=self._hash_func)
 
     def get_signing_key(self):
-        key = self._ALGORITHM + self._ak
-        if key in _SIGNING_KEY_CACHE:
-            return _SIGNING_KEY_CACHE.get(key)
-
         key_bytes = self._derive_key_bytes()
-        signing_key = self._generate_signing_key(key_bytes)
-        _SIGNING_KEY_CACHE[key] = signing_key
-        return signing_key
+        return self._generate_signing_key(key_bytes)
 
 
 class SM2SM3Signer(P256SHA256Signer):

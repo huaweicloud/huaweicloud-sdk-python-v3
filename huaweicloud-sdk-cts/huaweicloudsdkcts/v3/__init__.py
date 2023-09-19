@@ -29,6 +29,7 @@ from huaweicloudsdkcts.v3.model.list_traces_response import ListTracesResponse
 from huaweicloudsdkcts.v3.model.list_trackers_request import ListTrackersRequest
 from huaweicloudsdkcts.v3.model.list_trackers_response import ListTrackersResponse
 from huaweicloudsdkcts.v3.model.lts import Lts
+from huaweicloudsdkcts.v3.model.management_event_selector import ManagementEventSelector
 from huaweicloudsdkcts.v3.model.meta_data import MetaData
 from huaweicloudsdkcts.v3.model.notification_users import NotificationUsers
 from huaweicloudsdkcts.v3.model.notifications_response_body import NotificationsResponseBody

@@ -20,12 +20,12 @@ class CreateSqlAlarmRuleRequestBody:
         'sql_alarm_rule_name': 'str',
         'sql_alarm_rule_description': 'str',
         'sql_requests': 'list[SqlRequest]',
-        'frequency': 'object',
+        'frequency': 'Frequency',
         'condition_expression': 'str',
         'sql_alarm_level': 'str',
         'sql_alarm_send': 'bool',
         'domain_id': 'str',
-        'notification_save_rule': 'object',
+        'notification_save_rule': 'SqlNotificationSaveRule',
         'trigger_condition_count': 'int',
         'trigger_condition_frequency': 'int',
         'whether_recovery_policy': 'bool',
@@ -59,8 +59,8 @@ class CreateSqlAlarmRuleRequestBody:
         :type sql_alarm_rule_description: str
         :param sql_requests: SQL详细信息
         :type sql_requests: list[:class:`huaweicloudsdklts.v2.SqlRequest`]
-        :param frequency: 告警统计周期
-        :type frequency: object
+        :param frequency: 
+        :type frequency: :class:`huaweicloudsdklts.v2.Frequency`
         :param condition_expression: 条件表达式
         :type condition_expression: str
         :param sql_alarm_level: 告警级别
@@ -69,8 +69,8 @@ class CreateSqlAlarmRuleRequestBody:
         :type sql_alarm_send: bool
         :param domain_id: domainId
         :type domain_id: str
-        :param notification_save_rule: 通知主题
-        :type notification_save_rule: object
+        :param notification_save_rule: 
+        :type notification_save_rule: :class:`huaweicloudsdklts.v2.SqlNotificationSaveRule`
         :param trigger_condition_count: 触发条件：触发次数;默认为1
         :type trigger_condition_count: int
         :param trigger_condition_frequency: 触发条件：触发周期;默认为1
@@ -188,10 +188,8 @@ class CreateSqlAlarmRuleRequestBody:
     def frequency(self):
         """Gets the frequency of this CreateSqlAlarmRuleRequestBody.
 
-        告警统计周期
-
         :return: The frequency of this CreateSqlAlarmRuleRequestBody.
-        :rtype: object
+        :rtype: :class:`huaweicloudsdklts.v2.Frequency`
         """
         return self._frequency
 
@@ -199,10 +197,8 @@ class CreateSqlAlarmRuleRequestBody:
     def frequency(self, frequency):
         """Sets the frequency of this CreateSqlAlarmRuleRequestBody.
 
-        告警统计周期
-
         :param frequency: The frequency of this CreateSqlAlarmRuleRequestBody.
-        :type frequency: object
+        :type frequency: :class:`huaweicloudsdklts.v2.Frequency`
         """
         self._frequency = frequency
 
@@ -298,10 +294,8 @@ class CreateSqlAlarmRuleRequestBody:
     def notification_save_rule(self):
         """Gets the notification_save_rule of this CreateSqlAlarmRuleRequestBody.
 
-        通知主题
-
         :return: The notification_save_rule of this CreateSqlAlarmRuleRequestBody.
-        :rtype: object
+        :rtype: :class:`huaweicloudsdklts.v2.SqlNotificationSaveRule`
         """
         return self._notification_save_rule
 
@@ -309,10 +303,8 @@ class CreateSqlAlarmRuleRequestBody:
     def notification_save_rule(self, notification_save_rule):
         """Sets the notification_save_rule of this CreateSqlAlarmRuleRequestBody.
 
-        通知主题
-
         :param notification_save_rule: The notification_save_rule of this CreateSqlAlarmRuleRequestBody.
-        :type notification_save_rule: object
+        :type notification_save_rule: :class:`huaweicloudsdklts.v2.SqlNotificationSaveRule`
         """
         self._notification_save_rule = notification_save_rule
 

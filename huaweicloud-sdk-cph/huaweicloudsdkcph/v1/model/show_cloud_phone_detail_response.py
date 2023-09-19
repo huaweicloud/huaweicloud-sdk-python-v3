@@ -56,29 +56,29 @@ class ShowCloudPhoneDetailResponse(SdkResponse):
 
         :param request_id: 请求的唯一标识ID，不超过32个字节。
         :type request_id: str
-        :param phone_name: 云手机名称，不超过65个字符
+        :param phone_name: 云手机名称，不超过65个字符。
         :type phone_name: str
-        :param server_id: 云手机服务器ID，不超过32个字节
+        :param server_id: 云手机服务器ID，不超过32个字节。
         :type server_id: str
-        :param phone_id: 云手机的唯一标识，不超过32个字节
+        :param phone_id: 云手机的唯一标识，不超过32个字节。
         :type phone_id: str
-        :param image_id: 云手机镜像ID，不超过32个字节
+        :param image_id: 云手机镜像ID，不超过32个字节。
         :type image_id: str
-        :param vnc_enable: 云手机是否开启VNC服务 - true：开启 - false：关闭
+        :param vnc_enable: 云手机是否开启VNC服务（过期） - true：开启 - false：关闭
         :type vnc_enable: str
-        :param phone_model_name: 云手机规格名称，不超过64个字节
+        :param phone_model_name: 云手机规格名称，不超过64个字节。
         :type phone_model_name: str
-        :param status: 云手机状态 - 0：创建中 - 1：创建中 - 2：运行中 - 3：重置中 - 4：重启中 - 6：冻结 - 7：正在关机 - 8：已关机 - -5：重置失败 - -6：重启失败 - -7：手机异常 - -8：创建失败 - -9：关机失败
+        :param status: 云手机状态。 - 0：创建中 - 1：创建中 - 2：运行中 - 3：重置中 - 4：重启中 - 6：冻结 - 7：正在关机 - 8：已关机 - -5：重置失败 - -6：重启失败 - -7：手机异常 - -8：创建失败 - -9：关机失败
         :type status: int
-        :param access_infos: 云手机访问信息
+        :param access_infos: 云手机访问信息。
         :type access_infos: list[:class:`huaweicloudsdkcph.v1.PhoneAccessInfo`]
-        :param _property: 云手机属性字符串，不超过2048个字节
+        :param _property: 云手机属性字符串，不超过2048个字节。
         :type _property: str
         :param metadata: 
         :type metadata: :class:`huaweicloudsdkcph.v1.ShowCloudPhoneDetailResponseBodyMetadata`
-        :param create_time: 创建时间 时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ
+        :param create_time: 创建时间， 时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ。
         :type create_time: str
-        :param update_time: 更新时间 时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ。
+        :param update_time: 更新时间， 时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ。
         :type update_time: str
         """
         
@@ -152,7 +152,7 @@ class ShowCloudPhoneDetailResponse(SdkResponse):
     def phone_name(self):
         """Gets the phone_name of this ShowCloudPhoneDetailResponse.
 
-        云手机名称，不超过65个字符
+        云手机名称，不超过65个字符。
 
         :return: The phone_name of this ShowCloudPhoneDetailResponse.
         :rtype: str
@@ -163,7 +163,7 @@ class ShowCloudPhoneDetailResponse(SdkResponse):
     def phone_name(self, phone_name):
         """Sets the phone_name of this ShowCloudPhoneDetailResponse.
 
-        云手机名称，不超过65个字符
+        云手机名称，不超过65个字符。
 
         :param phone_name: The phone_name of this ShowCloudPhoneDetailResponse.
         :type phone_name: str
@@ -174,7 +174,7 @@ class ShowCloudPhoneDetailResponse(SdkResponse):
     def server_id(self):
         """Gets the server_id of this ShowCloudPhoneDetailResponse.
 
-        云手机服务器ID，不超过32个字节
+        云手机服务器ID，不超过32个字节。
 
         :return: The server_id of this ShowCloudPhoneDetailResponse.
         :rtype: str
@@ -185,7 +185,7 @@ class ShowCloudPhoneDetailResponse(SdkResponse):
     def server_id(self, server_id):
         """Sets the server_id of this ShowCloudPhoneDetailResponse.
 
-        云手机服务器ID，不超过32个字节
+        云手机服务器ID，不超过32个字节。
 
         :param server_id: The server_id of this ShowCloudPhoneDetailResponse.
         :type server_id: str
@@ -196,7 +196,7 @@ class ShowCloudPhoneDetailResponse(SdkResponse):
     def phone_id(self):
         """Gets the phone_id of this ShowCloudPhoneDetailResponse.
 
-        云手机的唯一标识，不超过32个字节
+        云手机的唯一标识，不超过32个字节。
 
         :return: The phone_id of this ShowCloudPhoneDetailResponse.
         :rtype: str
@@ -207,7 +207,7 @@ class ShowCloudPhoneDetailResponse(SdkResponse):
     def phone_id(self, phone_id):
         """Sets the phone_id of this ShowCloudPhoneDetailResponse.
 
-        云手机的唯一标识，不超过32个字节
+        云手机的唯一标识，不超过32个字节。
 
         :param phone_id: The phone_id of this ShowCloudPhoneDetailResponse.
         :type phone_id: str
@@ -218,7 +218,7 @@ class ShowCloudPhoneDetailResponse(SdkResponse):
     def image_id(self):
         """Gets the image_id of this ShowCloudPhoneDetailResponse.
 
-        云手机镜像ID，不超过32个字节
+        云手机镜像ID，不超过32个字节。
 
         :return: The image_id of this ShowCloudPhoneDetailResponse.
         :rtype: str
@@ -229,7 +229,7 @@ class ShowCloudPhoneDetailResponse(SdkResponse):
     def image_id(self, image_id):
         """Sets the image_id of this ShowCloudPhoneDetailResponse.
 
-        云手机镜像ID，不超过32个字节
+        云手机镜像ID，不超过32个字节。
 
         :param image_id: The image_id of this ShowCloudPhoneDetailResponse.
         :type image_id: str
@@ -240,7 +240,7 @@ class ShowCloudPhoneDetailResponse(SdkResponse):
     def vnc_enable(self):
         """Gets the vnc_enable of this ShowCloudPhoneDetailResponse.
 
-        云手机是否开启VNC服务 - true：开启 - false：关闭
+        云手机是否开启VNC服务（过期） - true：开启 - false：关闭
 
         :return: The vnc_enable of this ShowCloudPhoneDetailResponse.
         :rtype: str
@@ -251,7 +251,7 @@ class ShowCloudPhoneDetailResponse(SdkResponse):
     def vnc_enable(self, vnc_enable):
         """Sets the vnc_enable of this ShowCloudPhoneDetailResponse.
 
-        云手机是否开启VNC服务 - true：开启 - false：关闭
+        云手机是否开启VNC服务（过期） - true：开启 - false：关闭
 
         :param vnc_enable: The vnc_enable of this ShowCloudPhoneDetailResponse.
         :type vnc_enable: str
@@ -262,7 +262,7 @@ class ShowCloudPhoneDetailResponse(SdkResponse):
     def phone_model_name(self):
         """Gets the phone_model_name of this ShowCloudPhoneDetailResponse.
 
-        云手机规格名称，不超过64个字节
+        云手机规格名称，不超过64个字节。
 
         :return: The phone_model_name of this ShowCloudPhoneDetailResponse.
         :rtype: str
@@ -273,7 +273,7 @@ class ShowCloudPhoneDetailResponse(SdkResponse):
     def phone_model_name(self, phone_model_name):
         """Sets the phone_model_name of this ShowCloudPhoneDetailResponse.
 
-        云手机规格名称，不超过64个字节
+        云手机规格名称，不超过64个字节。
 
         :param phone_model_name: The phone_model_name of this ShowCloudPhoneDetailResponse.
         :type phone_model_name: str
@@ -284,7 +284,7 @@ class ShowCloudPhoneDetailResponse(SdkResponse):
     def status(self):
         """Gets the status of this ShowCloudPhoneDetailResponse.
 
-        云手机状态 - 0：创建中 - 1：创建中 - 2：运行中 - 3：重置中 - 4：重启中 - 6：冻结 - 7：正在关机 - 8：已关机 - -5：重置失败 - -6：重启失败 - -7：手机异常 - -8：创建失败 - -9：关机失败
+        云手机状态。 - 0：创建中 - 1：创建中 - 2：运行中 - 3：重置中 - 4：重启中 - 6：冻结 - 7：正在关机 - 8：已关机 - -5：重置失败 - -6：重启失败 - -7：手机异常 - -8：创建失败 - -9：关机失败
 
         :return: The status of this ShowCloudPhoneDetailResponse.
         :rtype: int
@@ -295,7 +295,7 @@ class ShowCloudPhoneDetailResponse(SdkResponse):
     def status(self, status):
         """Sets the status of this ShowCloudPhoneDetailResponse.
 
-        云手机状态 - 0：创建中 - 1：创建中 - 2：运行中 - 3：重置中 - 4：重启中 - 6：冻结 - 7：正在关机 - 8：已关机 - -5：重置失败 - -6：重启失败 - -7：手机异常 - -8：创建失败 - -9：关机失败
+        云手机状态。 - 0：创建中 - 1：创建中 - 2：运行中 - 3：重置中 - 4：重启中 - 6：冻结 - 7：正在关机 - 8：已关机 - -5：重置失败 - -6：重启失败 - -7：手机异常 - -8：创建失败 - -9：关机失败
 
         :param status: The status of this ShowCloudPhoneDetailResponse.
         :type status: int
@@ -306,7 +306,7 @@ class ShowCloudPhoneDetailResponse(SdkResponse):
     def access_infos(self):
         """Gets the access_infos of this ShowCloudPhoneDetailResponse.
 
-        云手机访问信息
+        云手机访问信息。
 
         :return: The access_infos of this ShowCloudPhoneDetailResponse.
         :rtype: list[:class:`huaweicloudsdkcph.v1.PhoneAccessInfo`]
@@ -317,7 +317,7 @@ class ShowCloudPhoneDetailResponse(SdkResponse):
     def access_infos(self, access_infos):
         """Sets the access_infos of this ShowCloudPhoneDetailResponse.
 
-        云手机访问信息
+        云手机访问信息。
 
         :param access_infos: The access_infos of this ShowCloudPhoneDetailResponse.
         :type access_infos: list[:class:`huaweicloudsdkcph.v1.PhoneAccessInfo`]
@@ -328,7 +328,7 @@ class ShowCloudPhoneDetailResponse(SdkResponse):
     def _property(self):
         """Gets the _property of this ShowCloudPhoneDetailResponse.
 
-        云手机属性字符串，不超过2048个字节
+        云手机属性字符串，不超过2048个字节。
 
         :return: The _property of this ShowCloudPhoneDetailResponse.
         :rtype: str
@@ -339,7 +339,7 @@ class ShowCloudPhoneDetailResponse(SdkResponse):
     def _property(self, _property):
         """Sets the _property of this ShowCloudPhoneDetailResponse.
 
-        云手机属性字符串，不超过2048个字节
+        云手机属性字符串，不超过2048个字节。
 
         :param _property: The _property of this ShowCloudPhoneDetailResponse.
         :type _property: str
@@ -368,7 +368,7 @@ class ShowCloudPhoneDetailResponse(SdkResponse):
     def create_time(self):
         """Gets the create_time of this ShowCloudPhoneDetailResponse.
 
-        创建时间 时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ
+        创建时间， 时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ。
 
         :return: The create_time of this ShowCloudPhoneDetailResponse.
         :rtype: str
@@ -379,7 +379,7 @@ class ShowCloudPhoneDetailResponse(SdkResponse):
     def create_time(self, create_time):
         """Sets the create_time of this ShowCloudPhoneDetailResponse.
 
-        创建时间 时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ
+        创建时间， 时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ。
 
         :param create_time: The create_time of this ShowCloudPhoneDetailResponse.
         :type create_time: str
@@ -390,7 +390,7 @@ class ShowCloudPhoneDetailResponse(SdkResponse):
     def update_time(self):
         """Gets the update_time of this ShowCloudPhoneDetailResponse.
 
-        更新时间 时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ。
+        更新时间， 时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ。
 
         :return: The update_time of this ShowCloudPhoneDetailResponse.
         :rtype: str
@@ -401,7 +401,7 @@ class ShowCloudPhoneDetailResponse(SdkResponse):
     def update_time(self, update_time):
         """Sets the update_time of this ShowCloudPhoneDetailResponse.
 
-        更新时间 时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ。
+        更新时间， 时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ。
 
         :param update_time: The update_time of this ShowCloudPhoneDetailResponse.
         :type update_time: str

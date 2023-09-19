@@ -29,7 +29,7 @@ class RestartEncodeServerRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param encode_server_ids: 待重启的编码服务的ID
+        :param encode_server_ids: 待重启的编码服务的ID。
         :type encode_server_ids: list[str]
         """
         
@@ -44,7 +44,7 @@ class RestartEncodeServerRequestBody:
     def encode_server_ids(self):
         """Gets the encode_server_ids of this RestartEncodeServerRequestBody.
 
-        待重启的编码服务的ID
+        待重启的编码服务的ID。
 
         :return: The encode_server_ids of this RestartEncodeServerRequestBody.
         :rtype: list[str]
@@ -55,7 +55,7 @@ class RestartEncodeServerRequestBody:
     def encode_server_ids(self, encode_server_ids):
         """Sets the encode_server_ids of this RestartEncodeServerRequestBody.
 
-        待重启的编码服务的ID
+        待重启的编码服务的ID。
 
         :param encode_server_ids: The encode_server_ids of this RestartEncodeServerRequestBody.
         :type encode_server_ids: list[str]

@@ -34,7 +34,7 @@ class ListJobsResponse(SdkResponse):
 
         :param request_id: 请求的唯一标识ID。
         :type request_id: str
-        :param jobs: 任务信息
+        :param jobs: 任务信息。
         :type jobs: list[:class:`huaweicloudsdkcph.v1.Job`]
         """
         
@@ -75,7 +75,7 @@ class ListJobsResponse(SdkResponse):
     def jobs(self):
         """Gets the jobs of this ListJobsResponse.
 
-        任务信息
+        任务信息。
 
         :return: The jobs of this ListJobsResponse.
         :rtype: list[:class:`huaweicloudsdkcph.v1.Job`]
@@ -86,7 +86,7 @@ class ListJobsResponse(SdkResponse):
     def jobs(self, jobs):
         """Sets the jobs of this ListJobsResponse.
 
-        任务信息
+        任务信息。
 
         :param jobs: The jobs of this ListJobsResponse.
         :type jobs: list[:class:`huaweicloudsdkcph.v1.Job`]

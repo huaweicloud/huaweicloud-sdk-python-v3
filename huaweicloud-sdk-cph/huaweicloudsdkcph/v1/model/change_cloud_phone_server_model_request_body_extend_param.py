@@ -29,7 +29,7 @@ class ChangeCloudPhoneServerModelRequestBodyExtendParam:
 
         The model defined in huaweicloud sdk
 
-        :param is_auto_pay: 否自动付款。默认不自动付款。如果是规格升配的变更，则需要支付额外的费用，如果是降配的变更，则会自动退款。 - 1 表示自动付款 - 0 表示不自动付款
+        :param is_auto_pay: 否自动付款。默认不自动付款。如果是规格升配的变更，则需要支付额外的费用，如果是降配的变更，则会自动退款。 - 1 ：自动付款 - 0 ：不自动付款
         :type is_auto_pay: int
         """
         
@@ -45,7 +45,7 @@ class ChangeCloudPhoneServerModelRequestBodyExtendParam:
     def is_auto_pay(self):
         """Gets the is_auto_pay of this ChangeCloudPhoneServerModelRequestBodyExtendParam.
 
-        否自动付款。默认不自动付款。如果是规格升配的变更，则需要支付额外的费用，如果是降配的变更，则会自动退款。 - 1 表示自动付款 - 0 表示不自动付款
+        否自动付款。默认不自动付款。如果是规格升配的变更，则需要支付额外的费用，如果是降配的变更，则会自动退款。 - 1 ：自动付款 - 0 ：不自动付款
 
         :return: The is_auto_pay of this ChangeCloudPhoneServerModelRequestBodyExtendParam.
         :rtype: int
@@ -56,7 +56,7 @@ class ChangeCloudPhoneServerModelRequestBodyExtendParam:
     def is_auto_pay(self, is_auto_pay):
         """Sets the is_auto_pay of this ChangeCloudPhoneServerModelRequestBodyExtendParam.
 
-        否自动付款。默认不自动付款。如果是规格升配的变更，则需要支付额外的费用，如果是降配的变更，则会自动退款。 - 1 表示自动付款 - 0 表示不自动付款
+        否自动付款。默认不自动付款。如果是规格升配的变更，则需要支付额外的费用，如果是降配的变更，则会自动退款。 - 1 ：自动付款 - 0 ：不自动付款
 
         :param is_auto_pay: The is_auto_pay of this ChangeCloudPhoneServerModelRequestBodyExtendParam.
         :type is_auto_pay: int

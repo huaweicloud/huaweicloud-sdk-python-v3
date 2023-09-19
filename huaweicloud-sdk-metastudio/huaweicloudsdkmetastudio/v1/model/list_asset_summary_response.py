@@ -18,29 +18,36 @@ class ListAssetSummaryResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'asset_list': 'list[DigitalAssetSummary]'
+        'asset_list': 'list[DigitalAssetSummary]',
+        'x_request_id': 'str'
     }
 
     attribute_map = {
-        'asset_list': 'asset_list'
+        'asset_list': 'asset_list',
+        'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, asset_list=None):
+    def __init__(self, asset_list=None, x_request_id=None):
         """ListAssetSummaryResponse
 
         The model defined in huaweicloud sdk
 
         :param asset_list: 资产列表。
         :type asset_list: list[:class:`huaweicloudsdkmetastudio.v1.DigitalAssetSummary`]
+        :param x_request_id: 
+        :type x_request_id: str
         """
         
         super(ListAssetSummaryResponse, self).__init__()
 
         self._asset_list = None
+        self._x_request_id = None
         self.discriminator = None
 
         if asset_list is not None:
             self.asset_list = asset_list
+        if x_request_id is not None:
+            self.x_request_id = x_request_id
 
     @property
     def asset_list(self):
@@ -63,6 +70,24 @@ class ListAssetSummaryResponse(SdkResponse):
         :type asset_list: list[:class:`huaweicloudsdkmetastudio.v1.DigitalAssetSummary`]
         """
         self._asset_list = asset_list
+
+    @property
+    def x_request_id(self):
+        """Gets the x_request_id of this ListAssetSummaryResponse.
+
+        :return: The x_request_id of this ListAssetSummaryResponse.
+        :rtype: str
+        """
+        return self._x_request_id
+
+    @x_request_id.setter
+    def x_request_id(self, x_request_id):
+        """Sets the x_request_id of this ListAssetSummaryResponse.
+
+        :param x_request_id: The x_request_id of this ListAssetSummaryResponse.
+        :type x_request_id: str
+        """
+        self._x_request_id = x_request_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -31,9 +31,9 @@ class ModelProperty:
 
         The model defined in huaweicloud sdk
 
-        :param phone_id: 云手机id
+        :param phone_id: 云手机id，不超过32个字节。
         :type phone_id: str
-        :param _property: 云手机属性列表
+        :param _property: 云手机属性列表，为Json格式字符串。
         :type _property: str
         """
         
@@ -50,7 +50,7 @@ class ModelProperty:
     def phone_id(self):
         """Gets the phone_id of this ModelProperty.
 
-        云手机id
+        云手机id，不超过32个字节。
 
         :return: The phone_id of this ModelProperty.
         :rtype: str
@@ -61,7 +61,7 @@ class ModelProperty:
     def phone_id(self, phone_id):
         """Sets the phone_id of this ModelProperty.
 
-        云手机id
+        云手机id，不超过32个字节。
 
         :param phone_id: The phone_id of this ModelProperty.
         :type phone_id: str
@@ -72,7 +72,7 @@ class ModelProperty:
     def _property(self):
         """Gets the _property of this ModelProperty.
 
-        云手机属性列表
+        云手机属性列表，为Json格式字符串。
 
         :return: The _property of this ModelProperty.
         :rtype: str
@@ -83,7 +83,7 @@ class ModelProperty:
     def _property(self, _property):
         """Sets the _property of this ModelProperty.
 
-        云手机属性列表
+        云手机属性列表，为Json格式字符串。
 
         :param _property: The _property of this ModelProperty.
         :type _property: str

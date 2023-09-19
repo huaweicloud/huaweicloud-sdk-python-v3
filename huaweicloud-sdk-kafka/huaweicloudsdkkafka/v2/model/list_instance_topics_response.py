@@ -22,6 +22,7 @@ class ListInstanceTopicsResponse(SdkResponse):
         'size': 'int',
         'remain_partitions': 'int',
         'max_partitions': 'int',
+        'topic_max_partitions': 'int',
         'topics': 'list[TopicEntity]'
     }
 
@@ -30,10 +31,11 @@ class ListInstanceTopicsResponse(SdkResponse):
         'size': 'size',
         'remain_partitions': 'remain_partitions',
         'max_partitions': 'max_partitions',
+        'topic_max_partitions': 'topic_max_partitions',
         'topics': 'topics'
     }
 
-    def __init__(self, total=None, size=None, remain_partitions=None, max_partitions=None, topics=None):
+    def __init__(self, total=None, size=None, remain_partitions=None, max_partitions=None, topic_max_partitions=None, topics=None):
         """ListInstanceTopicsResponse
 
         The model defined in huaweicloud sdk
@@ -46,6 +48,8 @@ class ListInstanceTopicsResponse(SdkResponse):
         :type remain_partitions: int
         :param max_partitions: 分区总数。
         :type max_partitions: int
+        :param topic_max_partitions: 单个topic最大占用分区数。
+        :type topic_max_partitions: int
         :param topics: topic列表。
         :type topics: list[:class:`huaweicloudsdkkafka.v2.TopicEntity`]
         """
@@ -56,6 +60,7 @@ class ListInstanceTopicsResponse(SdkResponse):
         self._size = None
         self._remain_partitions = None
         self._max_partitions = None
+        self._topic_max_partitions = None
         self._topics = None
         self.discriminator = None
 
@@ -67,6 +72,8 @@ class ListInstanceTopicsResponse(SdkResponse):
             self.remain_partitions = remain_partitions
         if max_partitions is not None:
             self.max_partitions = max_partitions
+        if topic_max_partitions is not None:
+            self.topic_max_partitions = topic_max_partitions
         if topics is not None:
             self.topics = topics
 
@@ -157,6 +164,28 @@ class ListInstanceTopicsResponse(SdkResponse):
         :type max_partitions: int
         """
         self._max_partitions = max_partitions
+
+    @property
+    def topic_max_partitions(self):
+        """Gets the topic_max_partitions of this ListInstanceTopicsResponse.
+
+        单个topic最大占用分区数。
+
+        :return: The topic_max_partitions of this ListInstanceTopicsResponse.
+        :rtype: int
+        """
+        return self._topic_max_partitions
+
+    @topic_max_partitions.setter
+    def topic_max_partitions(self, topic_max_partitions):
+        """Sets the topic_max_partitions of this ListInstanceTopicsResponse.
+
+        单个topic最大占用分区数。
+
+        :param topic_max_partitions: The topic_max_partitions of this ListInstanceTopicsResponse.
+        :type topic_max_partitions: int
+        """
+        self._topic_max_partitions = topic_max_partitions
 
     @property
     def topics(self):

@@ -34,7 +34,7 @@ class ResetCloudPhoneResponse(SdkResponse):
 
         :param request_id: 请求的唯一标识ID。
         :type request_id: str
-        :param jobs: 任务信息
+        :param jobs: 任务信息。
         :type jobs: list[:class:`huaweicloudsdkcph.v1.PhoneJob`]
         """
         
@@ -75,7 +75,7 @@ class ResetCloudPhoneResponse(SdkResponse):
     def jobs(self):
         """Gets the jobs of this ResetCloudPhoneResponse.
 
-        任务信息
+        任务信息。
 
         :return: The jobs of this ResetCloudPhoneResponse.
         :rtype: list[:class:`huaweicloudsdkcph.v1.PhoneJob`]
@@ -86,7 +86,7 @@ class ResetCloudPhoneResponse(SdkResponse):
     def jobs(self, jobs):
         """Sets the jobs of this ResetCloudPhoneResponse.
 
-        任务信息
+        任务信息。
 
         :param jobs: The jobs of this ResetCloudPhoneResponse.
         :type jobs: list[:class:`huaweicloudsdkcph.v1.PhoneJob`]

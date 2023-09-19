@@ -41,7 +41,7 @@ class Resource:
         :type resource_detail: str
         :param resource_name: 资源名称。
         :type resource_name: str
-        :param tags: 标签列表
+        :param tags: 标签列表。
         :type tags: list[:class:`huaweicloudsdkcph.v1.Tag`]
         """
         
@@ -132,7 +132,7 @@ class Resource:
     def tags(self):
         """Gets the tags of this Resource.
 
-        标签列表
+        标签列表。
 
         :return: The tags of this Resource.
         :rtype: list[:class:`huaweicloudsdkcph.v1.Tag`]
@@ -143,7 +143,7 @@ class Resource:
     def tags(self, tags):
         """Sets the tags of this Resource.
 
-        标签列表
+        标签列表。
 
         :param tags: The tags of this Resource.
         :type tags: list[:class:`huaweicloudsdkcph.v1.Tag`]

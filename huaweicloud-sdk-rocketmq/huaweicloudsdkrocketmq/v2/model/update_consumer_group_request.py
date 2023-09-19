@@ -19,7 +19,7 @@ class UpdateConsumerGroupRequest:
     openapi_types = {
         'instance_id': 'str',
         'group': 'str',
-        'body': 'ConsumerGroup'
+        'body': 'UpdateConsumerGroup'
     }
 
     attribute_map = {
@@ -38,7 +38,7 @@ class UpdateConsumerGroupRequest:
         :param group: 消费组名称。
         :type group: str
         :param body: Body of the UpdateConsumerGroupRequest
-        :type body: :class:`huaweicloudsdkrocketmq.v2.ConsumerGroup`
+        :type body: :class:`huaweicloudsdkrocketmq.v2.UpdateConsumerGroup`
         """
         
         
@@ -102,7 +102,7 @@ class UpdateConsumerGroupRequest:
         """Gets the body of this UpdateConsumerGroupRequest.
 
         :return: The body of this UpdateConsumerGroupRequest.
-        :rtype: :class:`huaweicloudsdkrocketmq.v2.ConsumerGroup`
+        :rtype: :class:`huaweicloudsdkrocketmq.v2.UpdateConsumerGroup`
         """
         return self._body
 
@@ -111,7 +111,7 @@ class UpdateConsumerGroupRequest:
         """Sets the body of this UpdateConsumerGroupRequest.
 
         :param body: The body of this UpdateConsumerGroupRequest.
-        :type body: :class:`huaweicloudsdkrocketmq.v2.ConsumerGroup`
+        :type body: :class:`huaweicloudsdkrocketmq.v2.UpdateConsumerGroup`
         """
         self._body = body
 

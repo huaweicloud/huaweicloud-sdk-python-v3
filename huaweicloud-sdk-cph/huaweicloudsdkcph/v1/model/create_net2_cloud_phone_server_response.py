@@ -38,11 +38,11 @@ class CreateNet2CloudPhoneServerResponse(SdkResponse):
 
         :param request_id: 请求的唯一标识ID。
         :type request_id: str
-        :param order_id: 订单ID，不超过64个字节
+        :param order_id: 订单ID，不超过64个字节。
         :type order_id: str
-        :param product_id: 产品ID，不超过64个字节
+        :param product_id: 产品ID，不超过64个字节。
         :type product_id: str
-        :param server_ids: 服务器ID列表
+        :param server_ids: 服务器ID列表。
         :type server_ids: list[str]
         """
         
@@ -89,7 +89,7 @@ class CreateNet2CloudPhoneServerResponse(SdkResponse):
     def order_id(self):
         """Gets the order_id of this CreateNet2CloudPhoneServerResponse.
 
-        订单ID，不超过64个字节
+        订单ID，不超过64个字节。
 
         :return: The order_id of this CreateNet2CloudPhoneServerResponse.
         :rtype: str
@@ -100,7 +100,7 @@ class CreateNet2CloudPhoneServerResponse(SdkResponse):
     def order_id(self, order_id):
         """Sets the order_id of this CreateNet2CloudPhoneServerResponse.
 
-        订单ID，不超过64个字节
+        订单ID，不超过64个字节。
 
         :param order_id: The order_id of this CreateNet2CloudPhoneServerResponse.
         :type order_id: str
@@ -111,7 +111,7 @@ class CreateNet2CloudPhoneServerResponse(SdkResponse):
     def product_id(self):
         """Gets the product_id of this CreateNet2CloudPhoneServerResponse.
 
-        产品ID，不超过64个字节
+        产品ID，不超过64个字节。
 
         :return: The product_id of this CreateNet2CloudPhoneServerResponse.
         :rtype: str
@@ -122,7 +122,7 @@ class CreateNet2CloudPhoneServerResponse(SdkResponse):
     def product_id(self, product_id):
         """Sets the product_id of this CreateNet2CloudPhoneServerResponse.
 
-        产品ID，不超过64个字节
+        产品ID，不超过64个字节。
 
         :param product_id: The product_id of this CreateNet2CloudPhoneServerResponse.
         :type product_id: str
@@ -133,7 +133,7 @@ class CreateNet2CloudPhoneServerResponse(SdkResponse):
     def server_ids(self):
         """Gets the server_ids of this CreateNet2CloudPhoneServerResponse.
 
-        服务器ID列表
+        服务器ID列表。
 
         :return: The server_ids of this CreateNet2CloudPhoneServerResponse.
         :rtype: list[str]
@@ -144,7 +144,7 @@ class CreateNet2CloudPhoneServerResponse(SdkResponse):
     def server_ids(self, server_ids):
         """Sets the server_ids of this CreateNet2CloudPhoneServerResponse.
 
-        服务器ID列表
+        服务器ID列表。
 
         :param server_ids: The server_ids of this CreateNet2CloudPhoneServerResponse.
         :type server_ids: list[str]

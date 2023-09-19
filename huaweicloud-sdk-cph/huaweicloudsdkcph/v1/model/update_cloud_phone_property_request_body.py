@@ -29,7 +29,7 @@ class UpdateCloudPhonePropertyRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param phones: 手机列表
+        :param phones: 手机列表。
         :type phones: list[:class:`huaweicloudsdkcph.v1.ModelProperty`]
         """
         
@@ -44,7 +44,7 @@ class UpdateCloudPhonePropertyRequestBody:
     def phones(self):
         """Gets the phones of this UpdateCloudPhonePropertyRequestBody.
 
-        手机列表
+        手机列表。
 
         :return: The phones of this UpdateCloudPhonePropertyRequestBody.
         :rtype: list[:class:`huaweicloudsdkcph.v1.ModelProperty`]
@@ -55,7 +55,7 @@ class UpdateCloudPhonePropertyRequestBody:
     def phones(self, phones):
         """Sets the phones of this UpdateCloudPhonePropertyRequestBody.
 
-        手机列表
+        手机列表。
 
         :param phones: The phones of this UpdateCloudPhonePropertyRequestBody.
         :type phones: list[:class:`huaweicloudsdkcph.v1.ModelProperty`]

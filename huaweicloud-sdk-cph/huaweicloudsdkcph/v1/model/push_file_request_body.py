@@ -37,7 +37,7 @@ class PushFileRequestBody:
 
         :param command: 推送文件固定填写push。
         :type command: str
-        :param content: 推送的文件只支持tar文件类型，指定OBS桶中的tar文件。 最大长度为1024字节，只支持大小写字母、数字、下划线（_）、点（.）、斜线（/）、冒号（:）、中划线（-）。
+        :param content: 推送的文件只支持tar文件类型，指定OBS桶中的tar文件。 最大长度为1024字节，只支持大小写字母、数字、下划线（_）、点（.）、斜线（/）、冒号（:）、中划线（-）。文件格式：obs://obs-bucket-name/obs-file-path/file.tar。
         :type content: str
         :param phone_ids: 云手机ID列表。 server_ids参数不存在时必选，同时存在只处理phone_ids。
         :type phone_ids: list[str]
@@ -86,7 +86,7 @@ class PushFileRequestBody:
     def content(self):
         """Gets the content of this PushFileRequestBody.
 
-        推送的文件只支持tar文件类型，指定OBS桶中的tar文件。 最大长度为1024字节，只支持大小写字母、数字、下划线（_）、点（.）、斜线（/）、冒号（:）、中划线（-）。
+        推送的文件只支持tar文件类型，指定OBS桶中的tar文件。 最大长度为1024字节，只支持大小写字母、数字、下划线（_）、点（.）、斜线（/）、冒号（:）、中划线（-）。文件格式：obs://obs-bucket-name/obs-file-path/file.tar。
 
         :return: The content of this PushFileRequestBody.
         :rtype: str
@@ -97,7 +97,7 @@ class PushFileRequestBody:
     def content(self, content):
         """Sets the content of this PushFileRequestBody.
 
-        推送的文件只支持tar文件类型，指定OBS桶中的tar文件。 最大长度为1024字节，只支持大小写字母、数字、下划线（_）、点（.）、斜线（/）、冒号（:）、中划线（-）。
+        推送的文件只支持tar文件类型，指定OBS桶中的tar文件。 最大长度为1024字节，只支持大小写字母、数字、下划线（_）、点（.）、斜线（/）、冒号（:）、中划线（-）。文件格式：obs://obs-bucket-name/obs-file-path/file.tar。
 
         :param content: The content of this PushFileRequestBody.
         :type content: str

@@ -28,7 +28,8 @@ class UpdateDigitalAssetResponse(SdkResponse):
         'tags': 'list[str]',
         'asset_extra_meta': 'AssetExtraMeta',
         'system_properties': 'list[SystemProperty]',
-        'files': 'list[AssetFileInfo]'
+        'files': 'list[AssetFileInfo]',
+        'x_request_id': 'str'
     }
 
     attribute_map = {
@@ -42,10 +43,11 @@ class UpdateDigitalAssetResponse(SdkResponse):
         'tags': 'tags',
         'asset_extra_meta': 'asset_extra_meta',
         'system_properties': 'system_properties',
-        'files': 'files'
+        'files': 'files',
+        'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, asset_id=None, asset_name=None, asset_description=None, create_time=None, update_time=None, asset_type=None, asset_state=None, tags=None, asset_extra_meta=None, system_properties=None, files=None):
+    def __init__(self, asset_id=None, asset_name=None, asset_description=None, create_time=None, update_time=None, asset_type=None, asset_state=None, tags=None, asset_extra_meta=None, system_properties=None, files=None, x_request_id=None):
         """UpdateDigitalAssetResponse
 
         The model defined in huaweicloud sdk
@@ -72,6 +74,8 @@ class UpdateDigitalAssetResponse(SdkResponse):
         :type system_properties: list[:class:`huaweicloudsdkmetastudio.v1.SystemProperty`]
         :param files: 资产下的文件。
         :type files: list[:class:`huaweicloudsdkmetastudio.v1.AssetFileInfo`]
+        :param x_request_id: 
+        :type x_request_id: str
         """
         
         super(UpdateDigitalAssetResponse, self).__init__()
@@ -87,6 +91,7 @@ class UpdateDigitalAssetResponse(SdkResponse):
         self._asset_extra_meta = None
         self._system_properties = None
         self._files = None
+        self._x_request_id = None
         self.discriminator = None
 
         if asset_id is not None:
@@ -111,6 +116,8 @@ class UpdateDigitalAssetResponse(SdkResponse):
             self.system_properties = system_properties
         if files is not None:
             self.files = files
+        if x_request_id is not None:
+            self.x_request_id = x_request_id
 
     @property
     def asset_id(self):
@@ -349,6 +356,24 @@ class UpdateDigitalAssetResponse(SdkResponse):
         :type files: list[:class:`huaweicloudsdkmetastudio.v1.AssetFileInfo`]
         """
         self._files = files
+
+    @property
+    def x_request_id(self):
+        """Gets the x_request_id of this UpdateDigitalAssetResponse.
+
+        :return: The x_request_id of this UpdateDigitalAssetResponse.
+        :rtype: str
+        """
+        return self._x_request_id
+
+    @x_request_id.setter
+    def x_request_id(self, x_request_id):
+        """Sets the x_request_id of this UpdateDigitalAssetResponse.
+
+        :param x_request_id: The x_request_id of this UpdateDigitalAssetResponse.
+        :type x_request_id: str
+        """
+        self._x_request_id = x_request_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

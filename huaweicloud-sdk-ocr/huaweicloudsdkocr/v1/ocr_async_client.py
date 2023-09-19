@@ -24,6 +24,65 @@ class OcrAsyncClient(Client):
 
         return ClientBuilder(clazz)
 
+    def recognize_acceptance_bill_async(self, request):
+        """电子承兑汇票识别
+
+        识别电子承兑汇票识别中的关键字段, 并以json格式返回结构化结果
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for RecognizeAcceptanceBill
+        :type request: :class:`huaweicloudsdkocr.v1.RecognizeAcceptanceBillRequest`
+        :rtype: :class:`huaweicloudsdkocr.v1.RecognizeAcceptanceBillResponse`
+        """
+        return self._recognize_acceptance_bill_with_http_info(request)
+
+    def _recognize_acceptance_bill_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/ocr/acceptance-bill',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='RecognizeAcceptanceBillResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def recognize_auto_classification_async(self, request):
         """智能分类识别
 
@@ -1788,6 +1847,66 @@ class OcrAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def recognize_real_estate_certificate_async(self, request):
+        """不动产证识别
+
+        识别不动产证中的文字信息，并返回识别的结构化结果。该接口的使用限制请参见[约束与限制](https://support.huaweicloud.com/productdesc-ocr/ocr_01_0006.html#section11)，详细使用指导请参见[OCR服务使用简介](https://support.huaweicloud.com/qs-ocr/ocr_05_0001.html)章节。
+        说明： 如果图片中包含多张卡证票据，请调用[智能分类识别](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product&#x3D;OCR&amp;api&#x3D;AutoClassification)服务。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for RecognizeRealEstateCertificate
+        :type request: :class:`huaweicloudsdkocr.v1.RecognizeRealEstateCertificateRequest`
+        :rtype: :class:`huaweicloudsdkocr.v1.RecognizeRealEstateCertificateResponse`
+        """
+        return self._recognize_real_estate_certificate_with_http_info(request)
+
+    def _recognize_real_estate_certificate_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/ocr/real-estate-certificate',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='RecognizeRealEstateCertificateResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def recognize_smart_document_recognizer_async(self, request):
         """智能文档解析
 
@@ -2272,6 +2391,65 @@ class OcrAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def recognize_vehicle_certificate_async(self, request):
+        """车辆合格证识别
+
+        识别车辆合格证中的文字信息，并返回识别的结构化结果。该接口的使用限制请参见[约束与限制](https://support.huaweicloud.com/productdesc-ocr/ocr_01_0006.html#section11)，详细使用指导请参见[OCR服务使用简介](https://support.huaweicloud.com/qs-ocr/ocr_05_0001.html)章节。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for RecognizeVehicleCertificate
+        :type request: :class:`huaweicloudsdkocr.v1.RecognizeVehicleCertificateRequest`
+        :rtype: :class:`huaweicloudsdkocr.v1.RecognizeVehicleCertificateResponse`
+        """
+        return self._recognize_vehicle_certificate_with_http_info(request)
+
+    def _recognize_vehicle_certificate_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/ocr/vehicle-certificate',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='RecognizeVehicleCertificateResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def recognize_vehicle_license_async(self, request):
         """行驶证识别
 
@@ -2328,6 +2506,65 @@ class OcrAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='RecognizeVehicleLicenseResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def recognize_vietnam_id_card_async(self, request):
+        """越南身份证识别
+
+        识别越南身份证中的文字信息，并将识别的结构化结果返回给用户。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for RecognizeVietnamIdCard
+        :type request: :class:`huaweicloudsdkocr.v1.RecognizeVietnamIdCardRequest`
+        :rtype: :class:`huaweicloudsdkocr.v1.RecognizeVietnamIdCardResponse`
+        """
+        return self._recognize_vietnam_id_card_with_http_info(request)
+
+    def _recognize_vietnam_id_card_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/ocr/vietnam-id-card',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='RecognizeVietnamIdCardResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

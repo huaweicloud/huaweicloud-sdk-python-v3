@@ -26,7 +26,8 @@ class ShowPictureModelingJobResponse(SdkResponse):
         'model_asset_id': 'str',
         'name': 'str',
         'style_id': 'str',
-        'model_cover_url': 'str'
+        'model_cover_url': 'str',
+        'x_request_id': 'str'
     }
 
     attribute_map = {
@@ -38,10 +39,11 @@ class ShowPictureModelingJobResponse(SdkResponse):
         'model_asset_id': 'model_asset_id',
         'name': 'name',
         'style_id': 'style_id',
-        'model_cover_url': 'model_cover_url'
+        'model_cover_url': 'model_cover_url',
+        'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, job_id=None, state=None, start_time=None, end_time=None, error_info=None, model_asset_id=None, name=None, style_id=None, model_cover_url=None):
+    def __init__(self, job_id=None, state=None, start_time=None, end_time=None, error_info=None, model_asset_id=None, name=None, style_id=None, model_cover_url=None, x_request_id=None):
         """ShowPictureModelingJobResponse
 
         The model defined in huaweicloud sdk
@@ -64,6 +66,8 @@ class ShowPictureModelingJobResponse(SdkResponse):
         :type style_id: str
         :param model_cover_url: 模型封面URL。
         :type model_cover_url: str
+        :param x_request_id: 
+        :type x_request_id: str
         """
         
         super(ShowPictureModelingJobResponse, self).__init__()
@@ -77,6 +81,7 @@ class ShowPictureModelingJobResponse(SdkResponse):
         self._name = None
         self._style_id = None
         self._model_cover_url = None
+        self._x_request_id = None
         self.discriminator = None
 
         self.job_id = job_id
@@ -95,6 +100,8 @@ class ShowPictureModelingJobResponse(SdkResponse):
             self.style_id = style_id
         if model_cover_url is not None:
             self.model_cover_url = model_cover_url
+        if x_request_id is not None:
+            self.x_request_id = x_request_id
 
     @property
     def job_id(self):
@@ -289,6 +296,24 @@ class ShowPictureModelingJobResponse(SdkResponse):
         :type model_cover_url: str
         """
         self._model_cover_url = model_cover_url
+
+    @property
+    def x_request_id(self):
+        """Gets the x_request_id of this ShowPictureModelingJobResponse.
+
+        :return: The x_request_id of this ShowPictureModelingJobResponse.
+        :rtype: str
+        """
+        return self._x_request_id
+
+    @x_request_id.setter
+    def x_request_id(self, x_request_id):
+        """Sets the x_request_id of this ShowPictureModelingJobResponse.
+
+        :param x_request_id: The x_request_id of this ShowPictureModelingJobResponse.
+        :type x_request_id: str
+        """
+        self._x_request_id = x_request_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

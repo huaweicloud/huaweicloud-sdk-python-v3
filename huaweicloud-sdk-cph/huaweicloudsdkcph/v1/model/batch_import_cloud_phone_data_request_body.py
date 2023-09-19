@@ -29,7 +29,7 @@ class BatchImportCloudPhoneDataRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param restore_infos: 待导入数据的云手机信息
+        :param restore_infos: 待导入数据的云手机信息。
         :type restore_infos: list[:class:`huaweicloudsdkcph.v1.RestoreInfo`]
         """
         
@@ -44,7 +44,7 @@ class BatchImportCloudPhoneDataRequestBody:
     def restore_infos(self):
         """Gets the restore_infos of this BatchImportCloudPhoneDataRequestBody.
 
-        待导入数据的云手机信息
+        待导入数据的云手机信息。
 
         :return: The restore_infos of this BatchImportCloudPhoneDataRequestBody.
         :rtype: list[:class:`huaweicloudsdkcph.v1.RestoreInfo`]
@@ -55,7 +55,7 @@ class BatchImportCloudPhoneDataRequestBody:
     def restore_infos(self, restore_infos):
         """Sets the restore_infos of this BatchImportCloudPhoneDataRequestBody.
 
-        待导入数据的云手机信息
+        待导入数据的云手机信息。
 
         :param restore_infos: The restore_infos of this BatchImportCloudPhoneDataRequestBody.
         :type restore_infos: list[:class:`huaweicloudsdkcph.v1.RestoreInfo`]

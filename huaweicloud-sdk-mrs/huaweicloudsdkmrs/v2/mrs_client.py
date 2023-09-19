@@ -748,6 +748,122 @@ class MrsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def expand_cluster(self, request):
+        """扩容集群
+
+        对MRS集群进行扩容。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ExpandCluster
+        :type request: :class:`huaweicloudsdkmrs.v2.ExpandClusterRequest`
+        :rtype: :class:`huaweicloudsdkmrs.v2.ExpandClusterResponse`
+        """
+        return self._expand_cluster_with_http_info(request)
+
+    def _expand_cluster_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/clusters/{cluster_id}/expand',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ExpandClusterResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def shrink_cluster(self, request):
+        """缩容集群
+
+        对MRS集群进行缩容。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShrinkCluster
+        :type request: :class:`huaweicloudsdkmrs.v2.ShrinkClusterRequest`
+        :rtype: :class:`huaweicloudsdkmrs.v2.ShrinkClusterResponse`
+        """
+        return self._shrink_cluster_with_http_info(request)
+
+    def _shrink_cluster_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/clusters/{cluster_id}/shrink',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShrinkClusterResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def create_data_connector(self, request):
         """创建数据连接
 

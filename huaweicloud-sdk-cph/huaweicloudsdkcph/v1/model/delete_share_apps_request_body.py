@@ -31,9 +31,9 @@ class DeleteShareAppsRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param package_name: 所需删除的共享应用的合法包名
+        :param package_name: 所需删除的共享应用的合法包名。最大长度128字节。只支持包含大小写字母、数字、下划线、点，其中不允许以数字和下划线开头，点不能作为结尾且包名中至少有一个点。
         :type package_name: str
-        :param server_ids: 云手机服务器ID列表
+        :param server_ids: 云手机服务器ID列表。
         :type server_ids: list[str]
         """
         
@@ -50,7 +50,7 @@ class DeleteShareAppsRequestBody:
     def package_name(self):
         """Gets the package_name of this DeleteShareAppsRequestBody.
 
-        所需删除的共享应用的合法包名
+        所需删除的共享应用的合法包名。最大长度128字节。只支持包含大小写字母、数字、下划线、点，其中不允许以数字和下划线开头，点不能作为结尾且包名中至少有一个点。
 
         :return: The package_name of this DeleteShareAppsRequestBody.
         :rtype: str
@@ -61,7 +61,7 @@ class DeleteShareAppsRequestBody:
     def package_name(self, package_name):
         """Sets the package_name of this DeleteShareAppsRequestBody.
 
-        所需删除的共享应用的合法包名
+        所需删除的共享应用的合法包名。最大长度128字节。只支持包含大小写字母、数字、下划线、点，其中不允许以数字和下划线开头，点不能作为结尾且包名中至少有一个点。
 
         :param package_name: The package_name of this DeleteShareAppsRequestBody.
         :type package_name: str
@@ -72,7 +72,7 @@ class DeleteShareAppsRequestBody:
     def server_ids(self):
         """Gets the server_ids of this DeleteShareAppsRequestBody.
 
-        云手机服务器ID列表
+        云手机服务器ID列表。
 
         :return: The server_ids of this DeleteShareAppsRequestBody.
         :rtype: list[str]
@@ -83,7 +83,7 @@ class DeleteShareAppsRequestBody:
     def server_ids(self, server_ids):
         """Sets the server_ids of this DeleteShareAppsRequestBody.
 
-        云手机服务器ID列表
+        云手机服务器ID列表。
 
         :param server_ids: The server_ids of this DeleteShareAppsRequestBody.
         :type server_ids: list[str]

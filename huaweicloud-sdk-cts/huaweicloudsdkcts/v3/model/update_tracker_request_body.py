@@ -20,6 +20,8 @@ class UpdateTrackerRequestBody:
         'tracker_type': 'str',
         'tracker_name': 'str',
         'status': 'str',
+        'is_organization_tracker': 'bool',
+        'management_event_selector': 'ManagementEventSelector',
         'is_lts_enabled': 'bool',
         'obs_info': 'TrackerObsInfo',
         'is_support_trace_files_encryption': 'bool',
@@ -32,6 +34,8 @@ class UpdateTrackerRequestBody:
         'tracker_type': 'tracker_type',
         'tracker_name': 'tracker_name',
         'status': 'status',
+        'is_organization_tracker': 'is_organization_tracker',
+        'management_event_selector': 'management_event_selector',
         'is_lts_enabled': 'is_lts_enabled',
         'obs_info': 'obs_info',
         'is_support_trace_files_encryption': 'is_support_trace_files_encryption',
@@ -40,7 +44,7 @@ class UpdateTrackerRequestBody:
         'data_bucket': 'data_bucket'
     }
 
-    def __init__(self, tracker_type=None, tracker_name=None, status=None, is_lts_enabled=None, obs_info=None, is_support_trace_files_encryption=None, kms_id=None, is_support_validate=None, data_bucket=None):
+    def __init__(self, tracker_type=None, tracker_name=None, status=None, is_organization_tracker=None, management_event_selector=None, is_lts_enabled=None, obs_info=None, is_support_trace_files_encryption=None, kms_id=None, is_support_validate=None, data_bucket=None):
         """UpdateTrackerRequestBody
 
         The model defined in huaweicloud sdk
@@ -51,6 +55,10 @@ class UpdateTrackerRequestBody:
         :type tracker_name: str
         :param status: 标识追踪器状态，该接口中可修改的状态包括正常（enabled）和停止（disabled）。如果选择修改状态为停止，则修改成功后追踪器停止记录事件。
         :type status: str
+        :param is_organization_tracker: 是否应用到我的组织。 只针对管理类追踪器。设置为true时，ORG组织下所有成员当前区域的审计日志会转储到该追踪器配置的OBS桶或者LTS日志流，但是事件列表界面不支持查看其它组织成员的审计日志。
+        :type is_organization_tracker: bool
+        :param management_event_selector: 
+        :type management_event_selector: :class:`huaweicloudsdkcts.v3.ManagementEventSelector`
         :param is_lts_enabled: 是否打开事件分析。
         :type is_lts_enabled: bool
         :param obs_info: 
@@ -70,6 +78,8 @@ class UpdateTrackerRequestBody:
         self._tracker_type = None
         self._tracker_name = None
         self._status = None
+        self._is_organization_tracker = None
+        self._management_event_selector = None
         self._is_lts_enabled = None
         self._obs_info = None
         self._is_support_trace_files_encryption = None
@@ -82,6 +92,10 @@ class UpdateTrackerRequestBody:
         self.tracker_name = tracker_name
         if status is not None:
             self.status = status
+        if is_organization_tracker is not None:
+            self.is_organization_tracker = is_organization_tracker
+        if management_event_selector is not None:
+            self.management_event_selector = management_event_selector
         if is_lts_enabled is not None:
             self.is_lts_enabled = is_lts_enabled
         if obs_info is not None:
@@ -160,6 +174,46 @@ class UpdateTrackerRequestBody:
         :type status: str
         """
         self._status = status
+
+    @property
+    def is_organization_tracker(self):
+        """Gets the is_organization_tracker of this UpdateTrackerRequestBody.
+
+        是否应用到我的组织。 只针对管理类追踪器。设置为true时，ORG组织下所有成员当前区域的审计日志会转储到该追踪器配置的OBS桶或者LTS日志流，但是事件列表界面不支持查看其它组织成员的审计日志。
+
+        :return: The is_organization_tracker of this UpdateTrackerRequestBody.
+        :rtype: bool
+        """
+        return self._is_organization_tracker
+
+    @is_organization_tracker.setter
+    def is_organization_tracker(self, is_organization_tracker):
+        """Sets the is_organization_tracker of this UpdateTrackerRequestBody.
+
+        是否应用到我的组织。 只针对管理类追踪器。设置为true时，ORG组织下所有成员当前区域的审计日志会转储到该追踪器配置的OBS桶或者LTS日志流，但是事件列表界面不支持查看其它组织成员的审计日志。
+
+        :param is_organization_tracker: The is_organization_tracker of this UpdateTrackerRequestBody.
+        :type is_organization_tracker: bool
+        """
+        self._is_organization_tracker = is_organization_tracker
+
+    @property
+    def management_event_selector(self):
+        """Gets the management_event_selector of this UpdateTrackerRequestBody.
+
+        :return: The management_event_selector of this UpdateTrackerRequestBody.
+        :rtype: :class:`huaweicloudsdkcts.v3.ManagementEventSelector`
+        """
+        return self._management_event_selector
+
+    @management_event_selector.setter
+    def management_event_selector(self, management_event_selector):
+        """Sets the management_event_selector of this UpdateTrackerRequestBody.
+
+        :param management_event_selector: The management_event_selector of this UpdateTrackerRequestBody.
+        :type management_event_selector: :class:`huaweicloudsdkcts.v3.ManagementEventSelector`
+        """
+        self._management_event_selector = management_event_selector
 
     @property
     def is_lts_enabled(self):

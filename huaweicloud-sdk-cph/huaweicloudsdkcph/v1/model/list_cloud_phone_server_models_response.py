@@ -32,9 +32,9 @@ class ListCloudPhoneServerModelsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param request_id: 请求的唯一标识ID
+        :param request_id: 请求的唯一标识ID。
         :type request_id: str
-        :param server_models: 云手机服务器的规格信息
+        :param server_models: 云手机服务器的规格信息。
         :type server_models: list[:class:`huaweicloudsdkcph.v1.ServerModel`]
         """
         
@@ -53,7 +53,7 @@ class ListCloudPhoneServerModelsResponse(SdkResponse):
     def request_id(self):
         """Gets the request_id of this ListCloudPhoneServerModelsResponse.
 
-        请求的唯一标识ID
+        请求的唯一标识ID。
 
         :return: The request_id of this ListCloudPhoneServerModelsResponse.
         :rtype: str
@@ -64,7 +64,7 @@ class ListCloudPhoneServerModelsResponse(SdkResponse):
     def request_id(self, request_id):
         """Sets the request_id of this ListCloudPhoneServerModelsResponse.
 
-        请求的唯一标识ID
+        请求的唯一标识ID。
 
         :param request_id: The request_id of this ListCloudPhoneServerModelsResponse.
         :type request_id: str
@@ -75,7 +75,7 @@ class ListCloudPhoneServerModelsResponse(SdkResponse):
     def server_models(self):
         """Gets the server_models of this ListCloudPhoneServerModelsResponse.
 
-        云手机服务器的规格信息
+        云手机服务器的规格信息。
 
         :return: The server_models of this ListCloudPhoneServerModelsResponse.
         :rtype: list[:class:`huaweicloudsdkcph.v1.ServerModel`]
@@ -86,7 +86,7 @@ class ListCloudPhoneServerModelsResponse(SdkResponse):
     def server_models(self, server_models):
         """Sets the server_models of this ListCloudPhoneServerModelsResponse.
 
-        云手机服务器的规格信息
+        云手机服务器的规格信息。
 
         :param server_models: The server_models of this ListCloudPhoneServerModelsResponse.
         :type server_models: list[:class:`huaweicloudsdkcph.v1.ServerModel`]

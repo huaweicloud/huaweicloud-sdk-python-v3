@@ -34,7 +34,7 @@ class ListCloudPhoneImagesResponse(SdkResponse):
 
         :param request_id: 请求的唯一标识ID。
         :type request_id: str
-        :param phone_images: 手机镜像信息
+        :param phone_images: 手机镜像信息。
         :type phone_images: list[:class:`huaweicloudsdkcph.v1.PhoneImage`]
         """
         
@@ -75,7 +75,7 @@ class ListCloudPhoneImagesResponse(SdkResponse):
     def phone_images(self):
         """Gets the phone_images of this ListCloudPhoneImagesResponse.
 
-        手机镜像信息
+        手机镜像信息。
 
         :return: The phone_images of this ListCloudPhoneImagesResponse.
         :rtype: list[:class:`huaweicloudsdkcph.v1.PhoneImage`]
@@ -86,7 +86,7 @@ class ListCloudPhoneImagesResponse(SdkResponse):
     def phone_images(self, phone_images):
         """Sets the phone_images of this ListCloudPhoneImagesResponse.
 
-        手机镜像信息
+        手机镜像信息。
 
         :param phone_images: The phone_images of this ListCloudPhoneImagesResponse.
         :type phone_images: list[:class:`huaweicloudsdkcph.v1.PhoneImage`]

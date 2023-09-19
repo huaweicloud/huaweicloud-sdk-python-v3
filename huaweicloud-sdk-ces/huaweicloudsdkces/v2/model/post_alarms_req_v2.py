@@ -115,7 +115,8 @@ class PostAlarmsReqV2:
         if resource_group_id is not None:
             self.resource_group_id = resource_group_id
         self.resources = resources
-        self.policies = policies
+        if policies is not None:
+            self.policies = policies
         self.type = type
         if alarm_notifications is not None:
             self.alarm_notifications = alarm_notifications

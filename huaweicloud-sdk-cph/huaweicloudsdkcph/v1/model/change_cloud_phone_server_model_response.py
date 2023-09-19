@@ -36,9 +36,9 @@ class ChangeCloudPhoneServerModelResponse(SdkResponse):
 
         :param request_id: 请求的唯一标识ID。
         :type request_id: str
-        :param order_id: 订单ID，不超过64个字节
+        :param order_id: 订单ID，不超过64个字节。
         :type order_id: str
-        :param product_id: 产品ID，不超过64个字节
+        :param product_id: 产品ID，不超过64个字节。
         :type product_id: str
         """
         
@@ -82,7 +82,7 @@ class ChangeCloudPhoneServerModelResponse(SdkResponse):
     def order_id(self):
         """Gets the order_id of this ChangeCloudPhoneServerModelResponse.
 
-        订单ID，不超过64个字节
+        订单ID，不超过64个字节。
 
         :return: The order_id of this ChangeCloudPhoneServerModelResponse.
         :rtype: str
@@ -93,7 +93,7 @@ class ChangeCloudPhoneServerModelResponse(SdkResponse):
     def order_id(self, order_id):
         """Sets the order_id of this ChangeCloudPhoneServerModelResponse.
 
-        订单ID，不超过64个字节
+        订单ID，不超过64个字节。
 
         :param order_id: The order_id of this ChangeCloudPhoneServerModelResponse.
         :type order_id: str
@@ -104,7 +104,7 @@ class ChangeCloudPhoneServerModelResponse(SdkResponse):
     def product_id(self):
         """Gets the product_id of this ChangeCloudPhoneServerModelResponse.
 
-        产品ID，不超过64个字节
+        产品ID，不超过64个字节。
 
         :return: The product_id of this ChangeCloudPhoneServerModelResponse.
         :rtype: str
@@ -115,7 +115,7 @@ class ChangeCloudPhoneServerModelResponse(SdkResponse):
     def product_id(self, product_id):
         """Sets the product_id of this ChangeCloudPhoneServerModelResponse.
 
-        产品ID，不超过64个字节
+        产品ID，不超过64个字节。
 
         :param product_id: The product_id of this ChangeCloudPhoneServerModelResponse.
         :type product_id: str

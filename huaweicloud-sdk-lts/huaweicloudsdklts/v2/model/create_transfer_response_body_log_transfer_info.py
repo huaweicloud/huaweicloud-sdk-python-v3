@@ -20,7 +20,7 @@ class CreateTransferResponseBodyLogTransferInfo:
         'log_agency_transfer': 'CreateTransferResponseBodyLogTransferInfoLogAgencyTransfer',
         'log_create_time': 'int',
         'log_storage_format': 'str',
-        'log_transfer_detail': 'object',
+        'log_transfer_detail': 'TransferDetail',
         'log_transfer_mode': 'str',
         'log_transfer_status': 'str',
         'log_transfer_type': 'str'
@@ -47,8 +47,8 @@ class CreateTransferResponseBodyLogTransferInfo:
         :type log_create_time: int
         :param log_storage_format: 日志转储格式。只支持\&quot;RAW\&quot;, \&quot;JSON\&quot;。RAW是指原始日志格式，JSON是指JSON日志格式。OBS转储和DIS转储支持JSON和RAW，DMS转储仅支持RAW
         :type log_storage_format: str
-        :param log_transfer_detail: 日志转储详细信息
-        :type log_transfer_detail: object
+        :param log_transfer_detail: 
+        :type log_transfer_detail: :class:`huaweicloudsdklts.v2.TransferDetail`
         :param log_transfer_mode: 日志转储方式。cycle是指周期性转储，realTime是指实时转储。OBS转储只支持\&quot;cycle\&quot;，DIS转储和DMS转储只支持\&quot;realTime\&quot;。
         :type log_transfer_mode: str
         :param log_transfer_status: 日志转储状态，ENABLE是指日志转储开启状态，DISABLE是指日志转储关闭状态，EXCEPTION是指日志转储异常状态
@@ -143,10 +143,8 @@ class CreateTransferResponseBodyLogTransferInfo:
     def log_transfer_detail(self):
         """Gets the log_transfer_detail of this CreateTransferResponseBodyLogTransferInfo.
 
-        日志转储详细信息
-
         :return: The log_transfer_detail of this CreateTransferResponseBodyLogTransferInfo.
-        :rtype: object
+        :rtype: :class:`huaweicloudsdklts.v2.TransferDetail`
         """
         return self._log_transfer_detail
 
@@ -154,10 +152,8 @@ class CreateTransferResponseBodyLogTransferInfo:
     def log_transfer_detail(self, log_transfer_detail):
         """Sets the log_transfer_detail of this CreateTransferResponseBodyLogTransferInfo.
 
-        日志转储详细信息
-
         :param log_transfer_detail: The log_transfer_detail of this CreateTransferResponseBodyLogTransferInfo.
-        :type log_transfer_detail: object
+        :type log_transfer_detail: :class:`huaweicloudsdklts.v2.TransferDetail`
         """
         self._log_transfer_detail = log_transfer_detail
 

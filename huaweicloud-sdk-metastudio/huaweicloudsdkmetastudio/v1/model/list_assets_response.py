@@ -19,15 +19,17 @@ class ListAssetsResponse(SdkResponse):
 
     openapi_types = {
         'count': 'int',
-        'assets': 'list[DigitalAssetInfo]'
+        'assets': 'list[DigitalAssetInfo]',
+        'x_request_id': 'str'
     }
 
     attribute_map = {
         'count': 'count',
-        'assets': 'assets'
+        'assets': 'assets',
+        'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, count=None, assets=None):
+    def __init__(self, count=None, assets=None, x_request_id=None):
         """ListAssetsResponse
 
         The model defined in huaweicloud sdk
@@ -36,18 +38,23 @@ class ListAssetsResponse(SdkResponse):
         :type count: int
         :param assets: 资产信息列表。
         :type assets: list[:class:`huaweicloudsdkmetastudio.v1.DigitalAssetInfo`]
+        :param x_request_id: 
+        :type x_request_id: str
         """
         
         super(ListAssetsResponse, self).__init__()
 
         self._count = None
         self._assets = None
+        self._x_request_id = None
         self.discriminator = None
 
         if count is not None:
             self.count = count
         if assets is not None:
             self.assets = assets
+        if x_request_id is not None:
+            self.x_request_id = x_request_id
 
     @property
     def count(self):
@@ -92,6 +99,24 @@ class ListAssetsResponse(SdkResponse):
         :type assets: list[:class:`huaweicloudsdkmetastudio.v1.DigitalAssetInfo`]
         """
         self._assets = assets
+
+    @property
+    def x_request_id(self):
+        """Gets the x_request_id of this ListAssetsResponse.
+
+        :return: The x_request_id of this ListAssetsResponse.
+        :rtype: str
+        """
+        return self._x_request_id
+
+    @x_request_id.setter
+    def x_request_id(self, x_request_id):
+        """Sets the x_request_id of this ListAssetsResponse.
+
+        :param x_request_id: The x_request_id of this ListAssetsResponse.
+        :type x_request_id: str
+        """
+        self._x_request_id = x_request_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

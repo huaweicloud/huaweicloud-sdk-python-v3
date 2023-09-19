@@ -21,6 +21,8 @@ class TrackerResponseBody:
         'create_time': 'int',
         'kms_id': 'str',
         'is_support_validate': 'bool',
+        'is_organization_tracker': 'bool',
+        'management_event_selector': 'ManagementEventSelector',
         'lts': 'Lts',
         'tracker_type': 'str',
         'domain_id': 'str',
@@ -40,6 +42,8 @@ class TrackerResponseBody:
         'create_time': 'create_time',
         'kms_id': 'kms_id',
         'is_support_validate': 'is_support_validate',
+        'is_organization_tracker': 'is_organization_tracker',
+        'management_event_selector': 'management_event_selector',
         'lts': 'lts',
         'tracker_type': 'tracker_type',
         'domain_id': 'domain_id',
@@ -54,7 +58,7 @@ class TrackerResponseBody:
         'data_bucket': 'data_bucket'
     }
 
-    def __init__(self, id=None, create_time=None, kms_id=None, is_support_validate=None, lts=None, tracker_type=None, domain_id=None, project_id=None, tracker_name=None, status=None, detail=None, is_support_trace_files_encryption=None, group_id=None, stream_id=None, obs_info=None, data_bucket=None):
+    def __init__(self, id=None, create_time=None, kms_id=None, is_support_validate=None, is_organization_tracker=None, management_event_selector=None, lts=None, tracker_type=None, domain_id=None, project_id=None, tracker_name=None, status=None, detail=None, is_support_trace_files_encryption=None, group_id=None, stream_id=None, obs_info=None, data_bucket=None):
         """TrackerResponseBody
 
         The model defined in huaweicloud sdk
@@ -67,6 +71,10 @@ class TrackerResponseBody:
         :type kms_id: str
         :param is_support_validate: 是否打开事件文件校验。
         :type is_support_validate: bool
+        :param is_organization_tracker: 是否应用到我的组织。 只针对管理类追踪器。设置为true时，ORG组织下所有成员当前区域的审计日志会转储到该追踪器配置的OBS桶或者LTS日志流，但是事件列表界面不支持查看其它组织成员的审计日志。
+        :type is_organization_tracker: bool
+        :param management_event_selector: 
+        :type management_event_selector: :class:`huaweicloudsdkcts.v3.ManagementEventSelector`
         :param lts: 
         :type lts: :class:`huaweicloudsdkcts.v3.Lts`
         :param tracker_type: 标识追踪器类型。 目前支持系统追踪器类型有管理类追踪器（system）和数据类追踪器（data）。
@@ -99,6 +107,8 @@ class TrackerResponseBody:
         self._create_time = None
         self._kms_id = None
         self._is_support_validate = None
+        self._is_organization_tracker = None
+        self._management_event_selector = None
         self._lts = None
         self._tracker_type = None
         self._domain_id = None
@@ -121,6 +131,10 @@ class TrackerResponseBody:
             self.kms_id = kms_id
         if is_support_validate is not None:
             self.is_support_validate = is_support_validate
+        if is_organization_tracker is not None:
+            self.is_organization_tracker = is_organization_tracker
+        if management_event_selector is not None:
+            self.management_event_selector = management_event_selector
         if lts is not None:
             self.lts = lts
         if tracker_type is not None:
@@ -233,6 +247,46 @@ class TrackerResponseBody:
         :type is_support_validate: bool
         """
         self._is_support_validate = is_support_validate
+
+    @property
+    def is_organization_tracker(self):
+        """Gets the is_organization_tracker of this TrackerResponseBody.
+
+        是否应用到我的组织。 只针对管理类追踪器。设置为true时，ORG组织下所有成员当前区域的审计日志会转储到该追踪器配置的OBS桶或者LTS日志流，但是事件列表界面不支持查看其它组织成员的审计日志。
+
+        :return: The is_organization_tracker of this TrackerResponseBody.
+        :rtype: bool
+        """
+        return self._is_organization_tracker
+
+    @is_organization_tracker.setter
+    def is_organization_tracker(self, is_organization_tracker):
+        """Sets the is_organization_tracker of this TrackerResponseBody.
+
+        是否应用到我的组织。 只针对管理类追踪器。设置为true时，ORG组织下所有成员当前区域的审计日志会转储到该追踪器配置的OBS桶或者LTS日志流，但是事件列表界面不支持查看其它组织成员的审计日志。
+
+        :param is_organization_tracker: The is_organization_tracker of this TrackerResponseBody.
+        :type is_organization_tracker: bool
+        """
+        self._is_organization_tracker = is_organization_tracker
+
+    @property
+    def management_event_selector(self):
+        """Gets the management_event_selector of this TrackerResponseBody.
+
+        :return: The management_event_selector of this TrackerResponseBody.
+        :rtype: :class:`huaweicloudsdkcts.v3.ManagementEventSelector`
+        """
+        return self._management_event_selector
+
+    @management_event_selector.setter
+    def management_event_selector(self, management_event_selector):
+        """Sets the management_event_selector of this TrackerResponseBody.
+
+        :param management_event_selector: The management_event_selector of this TrackerResponseBody.
+        :type management_event_selector: :class:`huaweicloudsdkcts.v3.ManagementEventSelector`
+        """
+        self._management_event_selector = management_event_selector
 
     @property
     def lts(self):

@@ -1761,6 +1761,74 @@ class FunctionGraphClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_active_async_invocations(self, request):
+        """获取函数活跃异步调用请求列表
+
+        获取函数异步调用活跃请求列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListActiveAsyncInvocations
+        :type request: :class:`huaweicloudsdkfunctiongraph.v2.ListActiveAsyncInvocationsRequest`
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ListActiveAsyncInvocationsResponse`
+        """
+        return self._list_active_async_invocations_with_http_info(request)
+
+    def _list_active_async_invocations_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'function_urn' in local_var_params:
+            path_params['function_urn'] = local_var_params['function_urn']
+
+        query_params = []
+        if 'requests' in local_var_params:
+            query_params.append(('requests', local_var_params['requests']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'query_begin_time' in local_var_params:
+            query_params.append(('query_begin_time', local_var_params['query_begin_time']))
+        if 'query_end_time' in local_var_params:
+            query_params.append(('query_end_time', local_var_params['query_end_time']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/fgs/functions/{function_urn}/active-async-invocations',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListActiveAsyncInvocationsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_async_invocations(self, request):
         """获取函数异步调用请求列表
 

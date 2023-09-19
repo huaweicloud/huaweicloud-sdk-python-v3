@@ -35,7 +35,7 @@ class ChangeCloudPhoneServerModelRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param server_id: 云手机服务器的唯一标识。只有特定的服务器才能操作变更规格
+        :param server_id: 云手机服务器的唯一标识。只有特定的服务器才能操作变更规格。
         :type server_id: str
         :param server_model_name: 目标云手机服务器规格，不超过64个字节。仅允许相同代系服务器之间的规格切换。
         :type server_model_name: str
@@ -63,7 +63,7 @@ class ChangeCloudPhoneServerModelRequestBody:
     def server_id(self):
         """Gets the server_id of this ChangeCloudPhoneServerModelRequestBody.
 
-        云手机服务器的唯一标识。只有特定的服务器才能操作变更规格
+        云手机服务器的唯一标识。只有特定的服务器才能操作变更规格。
 
         :return: The server_id of this ChangeCloudPhoneServerModelRequestBody.
         :rtype: str
@@ -74,7 +74,7 @@ class ChangeCloudPhoneServerModelRequestBody:
     def server_id(self, server_id):
         """Sets the server_id of this ChangeCloudPhoneServerModelRequestBody.
 
-        云手机服务器的唯一标识。只有特定的服务器才能操作变更规格
+        云手机服务器的唯一标识。只有特定的服务器才能操作变更规格。
 
         :param server_id: The server_id of this ChangeCloudPhoneServerModelRequestBody.
         :type server_id: str

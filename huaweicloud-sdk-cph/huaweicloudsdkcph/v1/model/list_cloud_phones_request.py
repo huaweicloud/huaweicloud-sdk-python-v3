@@ -43,13 +43,13 @@ class ListCloudPhonesRequest:
         :type offset: int
         :param limit: 每页返回的资源个数。取值范围：1~100（默认值为100），一般设置为10、20、50。
         :type limit: int
-        :param phone_name: 云手机名称，支持模糊查询
+        :param phone_name: 云手机名称，支持模糊查询。
         :type phone_name: str
         :param server_id: 云手机服务器的唯一标识。
         :type server_id: str
-        :param status: 云手机状态 - 0：创建中 - 1：创建中 - 2：运行中 - 3：重置中 - 4：重启中 - 6：冻结 - 7：正在关机 - 8：已关机 - -5：重置失败 - -6：重启失败 - -7：手机异常 - -8：创建失败 - -9：关机失败
+        :param status: 云手机状态。 - 0：创建中 - 1：创建中 - 2：运行中 - 3：重置中 - 4：重启中 - 6：冻结 - 7：正在关机 - 8：已关机 - -5：重置失败 - -6：重启失败 - -7：手机异常 - -8：创建失败 - -9：关机失败
         :type status: int
-        :param type: 云手机类型 - 0：普通云手机 - 1：试玩云手机
+        :param type: 云手机类型。 - 0：普通云手机 - 1：试玩云手机
         :type type: int
         """
         
@@ -124,7 +124,7 @@ class ListCloudPhonesRequest:
     def phone_name(self):
         """Gets the phone_name of this ListCloudPhonesRequest.
 
-        云手机名称，支持模糊查询
+        云手机名称，支持模糊查询。
 
         :return: The phone_name of this ListCloudPhonesRequest.
         :rtype: str
@@ -135,7 +135,7 @@ class ListCloudPhonesRequest:
     def phone_name(self, phone_name):
         """Sets the phone_name of this ListCloudPhonesRequest.
 
-        云手机名称，支持模糊查询
+        云手机名称，支持模糊查询。
 
         :param phone_name: The phone_name of this ListCloudPhonesRequest.
         :type phone_name: str
@@ -168,7 +168,7 @@ class ListCloudPhonesRequest:
     def status(self):
         """Gets the status of this ListCloudPhonesRequest.
 
-        云手机状态 - 0：创建中 - 1：创建中 - 2：运行中 - 3：重置中 - 4：重启中 - 6：冻结 - 7：正在关机 - 8：已关机 - -5：重置失败 - -6：重启失败 - -7：手机异常 - -8：创建失败 - -9：关机失败
+        云手机状态。 - 0：创建中 - 1：创建中 - 2：运行中 - 3：重置中 - 4：重启中 - 6：冻结 - 7：正在关机 - 8：已关机 - -5：重置失败 - -6：重启失败 - -7：手机异常 - -8：创建失败 - -9：关机失败
 
         :return: The status of this ListCloudPhonesRequest.
         :rtype: int
@@ -179,7 +179,7 @@ class ListCloudPhonesRequest:
     def status(self, status):
         """Sets the status of this ListCloudPhonesRequest.
 
-        云手机状态 - 0：创建中 - 1：创建中 - 2：运行中 - 3：重置中 - 4：重启中 - 6：冻结 - 7：正在关机 - 8：已关机 - -5：重置失败 - -6：重启失败 - -7：手机异常 - -8：创建失败 - -9：关机失败
+        云手机状态。 - 0：创建中 - 1：创建中 - 2：运行中 - 3：重置中 - 4：重启中 - 6：冻结 - 7：正在关机 - 8：已关机 - -5：重置失败 - -6：重启失败 - -7：手机异常 - -8：创建失败 - -9：关机失败
 
         :param status: The status of this ListCloudPhonesRequest.
         :type status: int
@@ -190,7 +190,7 @@ class ListCloudPhonesRequest:
     def type(self):
         """Gets the type of this ListCloudPhonesRequest.
 
-        云手机类型 - 0：普通云手机 - 1：试玩云手机
+        云手机类型。 - 0：普通云手机 - 1：试玩云手机
 
         :return: The type of this ListCloudPhonesRequest.
         :rtype: int
@@ -201,7 +201,7 @@ class ListCloudPhonesRequest:
     def type(self, type):
         """Sets the type of this ListCloudPhonesRequest.
 
-        云手机类型 - 0：普通云手机 - 1：试玩云手机
+        云手机类型。 - 0：普通云手机 - 1：试玩云手机
 
         :param type: The type of this ListCloudPhonesRequest.
         :type type: int

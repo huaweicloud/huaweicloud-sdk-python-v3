@@ -19,33 +19,40 @@ class ListCloudPhoneServersResponse(SdkResponse):
 
     openapi_types = {
         'request_id': 'str',
+        'count': 'int',
         'servers': 'list[Server]'
     }
 
     attribute_map = {
         'request_id': 'request_id',
+        'count': 'count',
         'servers': 'servers'
     }
 
-    def __init__(self, request_id=None, servers=None):
+    def __init__(self, request_id=None, count=None, servers=None):
         """ListCloudPhoneServersResponse
 
         The model defined in huaweicloud sdk
 
         :param request_id: 请求的唯一标识ID。
         :type request_id: str
-        :param servers: 云手机服务器信息
+        :param count: 实例总数。
+        :type count: int
+        :param servers: 云手机服务器信息。
         :type servers: list[:class:`huaweicloudsdkcph.v1.Server`]
         """
         
         super(ListCloudPhoneServersResponse, self).__init__()
 
         self._request_id = None
+        self._count = None
         self._servers = None
         self.discriminator = None
 
         if request_id is not None:
             self.request_id = request_id
+        if count is not None:
+            self.count = count
         if servers is not None:
             self.servers = servers
 
@@ -72,10 +79,32 @@ class ListCloudPhoneServersResponse(SdkResponse):
         self._request_id = request_id
 
     @property
+    def count(self):
+        """Gets the count of this ListCloudPhoneServersResponse.
+
+        实例总数。
+
+        :return: The count of this ListCloudPhoneServersResponse.
+        :rtype: int
+        """
+        return self._count
+
+    @count.setter
+    def count(self, count):
+        """Sets the count of this ListCloudPhoneServersResponse.
+
+        实例总数。
+
+        :param count: The count of this ListCloudPhoneServersResponse.
+        :type count: int
+        """
+        self._count = count
+
+    @property
     def servers(self):
         """Gets the servers of this ListCloudPhoneServersResponse.
 
-        云手机服务器信息
+        云手机服务器信息。
 
         :return: The servers of this ListCloudPhoneServersResponse.
         :rtype: list[:class:`huaweicloudsdkcph.v1.Server`]
@@ -86,7 +115,7 @@ class ListCloudPhoneServersResponse(SdkResponse):
     def servers(self, servers):
         """Sets the servers of this ListCloudPhoneServersResponse.
 
-        云手机服务器信息
+        云手机服务器信息。
 
         :param servers: The servers of this ListCloudPhoneServersResponse.
         :type servers: list[:class:`huaweicloudsdkcph.v1.Server`]

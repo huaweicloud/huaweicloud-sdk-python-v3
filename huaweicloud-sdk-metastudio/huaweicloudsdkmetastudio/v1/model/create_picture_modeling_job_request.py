@@ -18,25 +18,21 @@ class CreatePictureModelingJobRequest:
 
     openapi_types = {
         'x_app_user_id': 'str',
-        'x_user_privilege': 'str',
         'body': 'CreatePictureModelingJobRequestBody'
     }
 
     attribute_map = {
         'x_app_user_id': 'X-App-UserId',
-        'x_user_privilege': 'X-User-Privilege',
         'body': 'body'
     }
 
-    def __init__(self, x_app_user_id=None, x_user_privilege=None, body=None):
+    def __init__(self, x_app_user_id=None, body=None):
         """CreatePictureModelingJobRequest
 
         The model defined in huaweicloud sdk
 
         :param x_app_user_id: 开发者应用作为资产权属的可选字段。
         :type x_app_user_id: str
-        :param x_user_privilege: 测试用户判断。
-        :type x_user_privilege: str
         :param body: Body of the CreatePictureModelingJobRequest
         :type body: :class:`huaweicloudsdkmetastudio.v1.CreatePictureModelingJobRequestBody`
         """
@@ -44,14 +40,11 @@ class CreatePictureModelingJobRequest:
         
 
         self._x_app_user_id = None
-        self._x_user_privilege = None
         self._body = None
         self.discriminator = None
 
         if x_app_user_id is not None:
             self.x_app_user_id = x_app_user_id
-        if x_user_privilege is not None:
-            self.x_user_privilege = x_user_privilege
         if body is not None:
             self.body = body
 
@@ -76,28 +69,6 @@ class CreatePictureModelingJobRequest:
         :type x_app_user_id: str
         """
         self._x_app_user_id = x_app_user_id
-
-    @property
-    def x_user_privilege(self):
-        """Gets the x_user_privilege of this CreatePictureModelingJobRequest.
-
-        测试用户判断。
-
-        :return: The x_user_privilege of this CreatePictureModelingJobRequest.
-        :rtype: str
-        """
-        return self._x_user_privilege
-
-    @x_user_privilege.setter
-    def x_user_privilege(self, x_user_privilege):
-        """Sets the x_user_privilege of this CreatePictureModelingJobRequest.
-
-        测试用户判断。
-
-        :param x_user_privilege: The x_user_privilege of this CreatePictureModelingJobRequest.
-        :type x_user_privilege: str
-        """
-        self._x_user_privilege = x_user_privilege
 
     @property
     def body(self):

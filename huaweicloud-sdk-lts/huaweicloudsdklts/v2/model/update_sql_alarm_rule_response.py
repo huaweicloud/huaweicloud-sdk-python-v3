@@ -26,7 +26,7 @@ class UpdateSqlAlarmRuleResponse(SdkResponse):
         'sql_alarm_rule_id': 'str',
         'sql_alarm_rule_description': 'str',
         'sql_requests': 'list[SqlRequest]',
-        'frequency': 'object',
+        'frequency': 'Frequency',
         'condition_expression': 'str',
         'sql_alarm_level': 'str',
         'sql_alarm_send': 'bool',
@@ -76,8 +76,8 @@ class UpdateSqlAlarmRuleResponse(SdkResponse):
         :type sql_alarm_rule_description: str
         :param sql_requests: SQL详细信息
         :type sql_requests: list[:class:`huaweicloudsdklts.v2.SqlRequest`]
-        :param frequency: 告警统计周期
-        :type frequency: object
+        :param frequency: 
+        :type frequency: :class:`huaweicloudsdklts.v2.Frequency`
         :param condition_expression: 条件表达式
         :type condition_expression: str
         :param sql_alarm_level: 告警级别
@@ -327,10 +327,8 @@ class UpdateSqlAlarmRuleResponse(SdkResponse):
     def frequency(self):
         """Gets the frequency of this UpdateSqlAlarmRuleResponse.
 
-        告警统计周期
-
         :return: The frequency of this UpdateSqlAlarmRuleResponse.
-        :rtype: object
+        :rtype: :class:`huaweicloudsdklts.v2.Frequency`
         """
         return self._frequency
 
@@ -338,10 +336,8 @@ class UpdateSqlAlarmRuleResponse(SdkResponse):
     def frequency(self, frequency):
         """Sets the frequency of this UpdateSqlAlarmRuleResponse.
 
-        告警统计周期
-
         :param frequency: The frequency of this UpdateSqlAlarmRuleResponse.
-        :type frequency: object
+        :type frequency: :class:`huaweicloudsdklts.v2.Frequency`
         """
         self._frequency = frequency
 

@@ -34,7 +34,8 @@ class CreateInstanceRequestBody:
         'ssl_option': 'str',
         'charge_info': 'ChargeInfoOption',
         'restore_info': 'RestoreInfo',
-        'port': 'str'
+        'port': 'str',
+        'availability_zone_detail': 'AvailabilityZoneDetail'
     }
 
     attribute_map = {
@@ -55,10 +56,11 @@ class CreateInstanceRequestBody:
         'ssl_option': 'ssl_option',
         'charge_info': 'charge_info',
         'restore_info': 'restore_info',
-        'port': 'port'
+        'port': 'port',
+        'availability_zone_detail': 'availability_zone_detail'
     }
 
-    def __init__(self, name=None, datastore=None, region=None, availability_zone=None, vpc_id=None, subnet_id=None, security_group_id=None, password=None, mode=None, flavor=None, configuration_id=None, backup_strategy=None, enterprise_project_id=None, dedicated_resource_id=None, ssl_option=None, charge_info=None, restore_info=None, port=None):
+    def __init__(self, name=None, datastore=None, region=None, availability_zone=None, vpc_id=None, subnet_id=None, security_group_id=None, password=None, mode=None, flavor=None, configuration_id=None, backup_strategy=None, enterprise_project_id=None, dedicated_resource_id=None, ssl_option=None, charge_info=None, restore_info=None, port=None, availability_zone_detail=None):
         """CreateInstanceRequestBody
 
         The model defined in huaweicloud sdk
@@ -79,7 +81,7 @@ class CreateInstanceRequestBody:
         :type security_group_id: str
         :param password: 数据库密码。 取值范围：长度为8~32位，必须是大写字母（A~Z）、小写字母（a~z）、数字（0~9）、特殊字符~!@#%^*-_&#x3D;+?的组合。 建议您输入高强度密码，以提高安全性，防止出现密码被暴力破解等安全风险。
         :type password: str
-        :param mode: 实例类型。   - GaussDB(for Cassandra)支持集群类型，取值为“Cluster”。   - GaussDB(for Mongo)4.0版本支持副本集类型，取值为“ReplicaSet”。   - GaussDB(for Influx)支持集群类型，取值为“Cluster”。
+        :param mode: 实例类型。   - GaussDB(for Cassandra)支持集群类型，取值为“Cluster”。   - GaussDB(for Mongo)4.0版本支持副本集类型，取值为“ReplicaSet”。   - GaussDB(for Influx)支持集群类型，取值为“Cluster”。   - GaussDB(for Influx)支持单节点类型，取值为“InfluxdbSingle”。   - GaussDB(for redis)支持集群类型，取值为“Cluster”。   - GaussDB(for redis)支持主备类型，取值为“Replication”。
         :type mode: str
         :param flavor: 实例规格详情。获取方法请参见查询所有实例规格信息中响应“flavors”字段下参数的值。
         :type flavor: list[:class:`huaweicloudsdkgaussdbfornosql.v3.CreateInstanceFlavorOption`]
@@ -99,6 +101,8 @@ class CreateInstanceRequestBody:
         :type restore_info: :class:`huaweicloudsdkgaussdbfornosql.v3.RestoreInfo`
         :param port: 数据库访问端口号。 目前仅支持GaussDB(for Redis)实例支持自定义端口，取值范围为：1024~65535，禁用端口号为：2180、2887、3887、6377、6378、6380、8018、8079、8091、8479、8484、8999、12017、12333、50069。 不指定端口时，创建GaussDB(for Redis)实例的访问端口默认为6379。 如果该实例计划用于搭建双活容灾场景，请配置为8635端口。
         :type port: str
+        :param availability_zone_detail: 
+        :type availability_zone_detail: :class:`huaweicloudsdkgaussdbfornosql.v3.AvailabilityZoneDetail`
         """
         
         
@@ -121,6 +125,7 @@ class CreateInstanceRequestBody:
         self._charge_info = None
         self._restore_info = None
         self._port = None
+        self._availability_zone_detail = None
         self.discriminator = None
 
         self.name = name
@@ -149,6 +154,8 @@ class CreateInstanceRequestBody:
             self.restore_info = restore_info
         if port is not None:
             self.port = port
+        if availability_zone_detail is not None:
+            self.availability_zone_detail = availability_zone_detail
 
     @property
     def name(self):
@@ -326,7 +333,7 @@ class CreateInstanceRequestBody:
     def mode(self):
         """Gets the mode of this CreateInstanceRequestBody.
 
-        实例类型。   - GaussDB(for Cassandra)支持集群类型，取值为“Cluster”。   - GaussDB(for Mongo)4.0版本支持副本集类型，取值为“ReplicaSet”。   - GaussDB(for Influx)支持集群类型，取值为“Cluster”。
+        实例类型。   - GaussDB(for Cassandra)支持集群类型，取值为“Cluster”。   - GaussDB(for Mongo)4.0版本支持副本集类型，取值为“ReplicaSet”。   - GaussDB(for Influx)支持集群类型，取值为“Cluster”。   - GaussDB(for Influx)支持单节点类型，取值为“InfluxdbSingle”。   - GaussDB(for redis)支持集群类型，取值为“Cluster”。   - GaussDB(for redis)支持主备类型，取值为“Replication”。
 
         :return: The mode of this CreateInstanceRequestBody.
         :rtype: str
@@ -337,7 +344,7 @@ class CreateInstanceRequestBody:
     def mode(self, mode):
         """Sets the mode of this CreateInstanceRequestBody.
 
-        实例类型。   - GaussDB(for Cassandra)支持集群类型，取值为“Cluster”。   - GaussDB(for Mongo)4.0版本支持副本集类型，取值为“ReplicaSet”。   - GaussDB(for Influx)支持集群类型，取值为“Cluster”。
+        实例类型。   - GaussDB(for Cassandra)支持集群类型，取值为“Cluster”。   - GaussDB(for Mongo)4.0版本支持副本集类型，取值为“ReplicaSet”。   - GaussDB(for Influx)支持集群类型，取值为“Cluster”。   - GaussDB(for Influx)支持单节点类型，取值为“InfluxdbSingle”。   - GaussDB(for redis)支持集群类型，取值为“Cluster”。   - GaussDB(for redis)支持主备类型，取值为“Replication”。
 
         :param mode: The mode of this CreateInstanceRequestBody.
         :type mode: str
@@ -529,6 +536,24 @@ class CreateInstanceRequestBody:
         :type port: str
         """
         self._port = port
+
+    @property
+    def availability_zone_detail(self):
+        """Gets the availability_zone_detail of this CreateInstanceRequestBody.
+
+        :return: The availability_zone_detail of this CreateInstanceRequestBody.
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.AvailabilityZoneDetail`
+        """
+        return self._availability_zone_detail
+
+    @availability_zone_detail.setter
+    def availability_zone_detail(self, availability_zone_detail):
+        """Sets the availability_zone_detail of this CreateInstanceRequestBody.
+
+        :param availability_zone_detail: The availability_zone_detail of this CreateInstanceRequestBody.
+        :type availability_zone_detail: :class:`huaweicloudsdkgaussdbfornosql.v3.AvailabilityZoneDetail`
+        """
+        self._availability_zone_detail = availability_zone_detail
 
     def to_dict(self):
         """Returns the model properties as a dict"""

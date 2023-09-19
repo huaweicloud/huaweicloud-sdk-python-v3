@@ -35,7 +35,7 @@ class PushShareFilesRequestBody:
 
         :param bucket_name: 合法的OBS桶名，3-63个字符，只能由小写字母、数字、中划线（-）和小数点组成。仅推送共享存储接口使用。
         :type bucket_name: str
-        :param object_path: 合法的OBS对象key，最大长度1024字符。 推送的文件只支持tar文件类型。推送时，按tar文件解压后的文件目录结构推送到手机。当前只支持/data和/cache目录推送。仅推送共享存储接口使用。
+        :param object_path: 合法的OBS对象路径，最大长度1024字符。仅支持大小写字母、数字、小数点（.）、斜线（/）、中划线（-）、下划线（_）、加号（+）、井号（#）、等号等这些字符。 推送的文件只支持tar文件类型。推送时，按tar文件解压后的文件目录结构推送到手机。当前只支持/data和/cache目录推送。仅推送共享存储接口使用。
         :type object_path: str
         :param server_ids: 云手机服务器ID列表。
         :type server_ids: list[str]
@@ -78,7 +78,7 @@ class PushShareFilesRequestBody:
     def object_path(self):
         """Gets the object_path of this PushShareFilesRequestBody.
 
-        合法的OBS对象key，最大长度1024字符。 推送的文件只支持tar文件类型。推送时，按tar文件解压后的文件目录结构推送到手机。当前只支持/data和/cache目录推送。仅推送共享存储接口使用。
+        合法的OBS对象路径，最大长度1024字符。仅支持大小写字母、数字、小数点（.）、斜线（/）、中划线（-）、下划线（_）、加号（+）、井号（#）、等号等这些字符。 推送的文件只支持tar文件类型。推送时，按tar文件解压后的文件目录结构推送到手机。当前只支持/data和/cache目录推送。仅推送共享存储接口使用。
 
         :return: The object_path of this PushShareFilesRequestBody.
         :rtype: str
@@ -89,7 +89,7 @@ class PushShareFilesRequestBody:
     def object_path(self, object_path):
         """Sets the object_path of this PushShareFilesRequestBody.
 
-        合法的OBS对象key，最大长度1024字符。 推送的文件只支持tar文件类型。推送时，按tar文件解压后的文件目录结构推送到手机。当前只支持/data和/cache目录推送。仅推送共享存储接口使用。
+        合法的OBS对象路径，最大长度1024字符。仅支持大小写字母、数字、小数点（.）、斜线（/）、中划线（-）、下划线（_）、加号（+）、井号（#）、等号等这些字符。 推送的文件只支持tar文件类型。推送时，按tar文件解压后的文件目录结构推送到手机。当前只支持/data和/cache目录推送。仅推送共享存储接口使用。
 
         :param object_path: The object_path of this PushShareFilesRequestBody.
         :type object_path: str

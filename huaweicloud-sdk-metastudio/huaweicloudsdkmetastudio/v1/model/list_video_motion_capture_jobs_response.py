@@ -19,15 +19,17 @@ class ListVideoMotionCaptureJobsResponse(SdkResponse):
 
     openapi_types = {
         'total': 'int',
-        'video_motion_capture_jobs': 'list[VideoMotionCaptureInfo]'
+        'video_motion_capture_jobs': 'list[VideoMotionCaptureInfo]',
+        'x_request_id': 'str'
     }
 
     attribute_map = {
         'total': 'total',
-        'video_motion_capture_jobs': 'video_motion_capture_jobs'
+        'video_motion_capture_jobs': 'video_motion_capture_jobs',
+        'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, total=None, video_motion_capture_jobs=None):
+    def __init__(self, total=None, video_motion_capture_jobs=None, x_request_id=None):
         """ListVideoMotionCaptureJobsResponse
 
         The model defined in huaweicloud sdk
@@ -36,18 +38,23 @@ class ListVideoMotionCaptureJobsResponse(SdkResponse):
         :type total: int
         :param video_motion_capture_jobs: 视频驱动任务列表。
         :type video_motion_capture_jobs: list[:class:`huaweicloudsdkmetastudio.v1.VideoMotionCaptureInfo`]
+        :param x_request_id: 
+        :type x_request_id: str
         """
         
         super(ListVideoMotionCaptureJobsResponse, self).__init__()
 
         self._total = None
         self._video_motion_capture_jobs = None
+        self._x_request_id = None
         self.discriminator = None
 
         if total is not None:
             self.total = total
         if video_motion_capture_jobs is not None:
             self.video_motion_capture_jobs = video_motion_capture_jobs
+        if x_request_id is not None:
+            self.x_request_id = x_request_id
 
     @property
     def total(self):
@@ -92,6 +99,24 @@ class ListVideoMotionCaptureJobsResponse(SdkResponse):
         :type video_motion_capture_jobs: list[:class:`huaweicloudsdkmetastudio.v1.VideoMotionCaptureInfo`]
         """
         self._video_motion_capture_jobs = video_motion_capture_jobs
+
+    @property
+    def x_request_id(self):
+        """Gets the x_request_id of this ListVideoMotionCaptureJobsResponse.
+
+        :return: The x_request_id of this ListVideoMotionCaptureJobsResponse.
+        :rtype: str
+        """
+        return self._x_request_id
+
+    @x_request_id.setter
+    def x_request_id(self, x_request_id):
+        """Sets the x_request_id of this ListVideoMotionCaptureJobsResponse.
+
+        :param x_request_id: The x_request_id of this ListVideoMotionCaptureJobsResponse.
+        :type x_request_id: str
+        """
+        self._x_request_id = x_request_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

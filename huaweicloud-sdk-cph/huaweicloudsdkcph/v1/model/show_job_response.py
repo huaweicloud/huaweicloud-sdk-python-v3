@@ -46,19 +46,19 @@ class ShowJobResponse(SdkResponse):
 
         :param request_id: 请求的唯一标识ID。
         :type request_id: str
-        :param job_id: 任务的唯一标识
+        :param job_id: 任务的唯一标识。
         :type job_id: str
-        :param begin_time: 任务处理开始时间 时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ
+        :param begin_time: 任务处理开始时间，时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ。
         :type begin_time: str
-        :param end_time: 任务处理结束时间 时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ
+        :param end_time: 任务处理结束时间，时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ。
         :type end_time: str
-        :param status: 任务状态 - 1： 运行中 - 2： 成功 - -1： 失败
+        :param status: 任务状态。 - 1： 运行中 - 2： 成功 - -1： 失败
         :type status: int
         :param error_msg: 任务错误码说明。
         :type error_msg: str
-        :param error_code: 任务错误码
+        :param error_code: 任务错误码。
         :type error_code: str
-        :param execute_msg: 任务执行返回内容，最长1024个字节
+        :param execute_msg: 任务执行返回内容，最长1024个字节。
         :type execute_msg: str
         """
         
@@ -117,7 +117,7 @@ class ShowJobResponse(SdkResponse):
     def job_id(self):
         """Gets the job_id of this ShowJobResponse.
 
-        任务的唯一标识
+        任务的唯一标识。
 
         :return: The job_id of this ShowJobResponse.
         :rtype: str
@@ -128,7 +128,7 @@ class ShowJobResponse(SdkResponse):
     def job_id(self, job_id):
         """Sets the job_id of this ShowJobResponse.
 
-        任务的唯一标识
+        任务的唯一标识。
 
         :param job_id: The job_id of this ShowJobResponse.
         :type job_id: str
@@ -139,7 +139,7 @@ class ShowJobResponse(SdkResponse):
     def begin_time(self):
         """Gets the begin_time of this ShowJobResponse.
 
-        任务处理开始时间 时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ
+        任务处理开始时间，时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ。
 
         :return: The begin_time of this ShowJobResponse.
         :rtype: str
@@ -150,7 +150,7 @@ class ShowJobResponse(SdkResponse):
     def begin_time(self, begin_time):
         """Sets the begin_time of this ShowJobResponse.
 
-        任务处理开始时间 时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ
+        任务处理开始时间，时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ。
 
         :param begin_time: The begin_time of this ShowJobResponse.
         :type begin_time: str
@@ -161,7 +161,7 @@ class ShowJobResponse(SdkResponse):
     def end_time(self):
         """Gets the end_time of this ShowJobResponse.
 
-        任务处理结束时间 时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ
+        任务处理结束时间，时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ。
 
         :return: The end_time of this ShowJobResponse.
         :rtype: str
@@ -172,7 +172,7 @@ class ShowJobResponse(SdkResponse):
     def end_time(self, end_time):
         """Sets the end_time of this ShowJobResponse.
 
-        任务处理结束时间 时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ
+        任务处理结束时间，时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ。
 
         :param end_time: The end_time of this ShowJobResponse.
         :type end_time: str
@@ -183,7 +183,7 @@ class ShowJobResponse(SdkResponse):
     def status(self):
         """Gets the status of this ShowJobResponse.
 
-        任务状态 - 1： 运行中 - 2： 成功 - -1： 失败
+        任务状态。 - 1： 运行中 - 2： 成功 - -1： 失败
 
         :return: The status of this ShowJobResponse.
         :rtype: int
@@ -194,7 +194,7 @@ class ShowJobResponse(SdkResponse):
     def status(self, status):
         """Sets the status of this ShowJobResponse.
 
-        任务状态 - 1： 运行中 - 2： 成功 - -1： 失败
+        任务状态。 - 1： 运行中 - 2： 成功 - -1： 失败
 
         :param status: The status of this ShowJobResponse.
         :type status: int
@@ -227,7 +227,7 @@ class ShowJobResponse(SdkResponse):
     def error_code(self):
         """Gets the error_code of this ShowJobResponse.
 
-        任务错误码
+        任务错误码。
 
         :return: The error_code of this ShowJobResponse.
         :rtype: str
@@ -238,7 +238,7 @@ class ShowJobResponse(SdkResponse):
     def error_code(self, error_code):
         """Sets the error_code of this ShowJobResponse.
 
-        任务错误码
+        任务错误码。
 
         :param error_code: The error_code of this ShowJobResponse.
         :type error_code: str
@@ -249,7 +249,7 @@ class ShowJobResponse(SdkResponse):
     def execute_msg(self):
         """Gets the execute_msg of this ShowJobResponse.
 
-        任务执行返回内容，最长1024个字节
+        任务执行返回内容，最长1024个字节。
 
         :return: The execute_msg of this ShowJobResponse.
         :rtype: str
@@ -260,7 +260,7 @@ class ShowJobResponse(SdkResponse):
     def execute_msg(self, execute_msg):
         """Sets the execute_msg of this ShowJobResponse.
 
-        任务执行返回内容，最长1024个字节
+        任务执行返回内容，最长1024个字节。
 
         :param execute_msg: The execute_msg of this ShowJobResponse.
         :type execute_msg: str

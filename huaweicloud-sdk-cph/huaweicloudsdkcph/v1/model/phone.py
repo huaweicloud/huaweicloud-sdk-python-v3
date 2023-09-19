@@ -49,27 +49,27 @@ class Phone:
 
         The model defined in huaweicloud sdk
 
-        :param phone_name: 云手机的名称，不超过65个字符
+        :param phone_name: 云手机的名称，不超过65个字符。
         :type phone_name: str
-        :param server_id: 云手机所在的服务器ID，不超过32个字节
+        :param server_id: 云手机所在的服务器ID，不超过32个字节。
         :type server_id: str
-        :param phone_id: 云手机的唯一标识，不超过32个字节
+        :param phone_id: 云手机的唯一标识，不超过32个字节。
         :type phone_id: str
-        :param phone_model_name: 云手机规格名称，不超过64个字节
+        :param phone_model_name: 云手机规格名称，不超过64个字节。
         :type phone_model_name: str
-        :param image_id: 云手机镜像ID，不超过32个字节
+        :param image_id: 云手机镜像ID，不超过32个字节。
         :type image_id: str
-        :param vnc_enable: 云手机是否开启VNC服务 - true表示开启 - false表示不开启
+        :param vnc_enable: 云手机是否开启VNC服务。 - true：开启 - false：不开启
         :type vnc_enable: str
-        :param status: 云手机状态 - 0: 创建中 - 1：创建中 - 2：运行中 - 3：重置中 - 4：重启中 - 6：冻结 - 7：正在关机 - 8：已关机 - -5：重置失败 - -6：重启失败 - -7：手机异常 - -8：创建失败 - -9：关机失败
+        :param status: 云手机状态。 - 0: 创建中 - 1：创建中 - 2：运行中 - 3：重置中 - 4：重启中 - 6：冻结 - 7：正在关机 - 8：已关机 - -5：重置失败 - -6：重启失败 - -7：手机异常 - -8：创建失败 - -9：关机失败
         :type status: int
-        :param type: 云手机类型 - 0：普通云手机 - 1：试玩云手机
+        :param type: 云手机类型。 - 0：普通云手机 - 1：试玩云手机
         :type type: int
         :param metadata: 
         :type metadata: :class:`huaweicloudsdkcph.v1.PhoneMetadata`
-        :param create_time: 创建时间 时间格式为UTC
+        :param create_time: 创建时间， 时间格式为UTC。
         :type create_time: str
-        :param update_time: 更新时间 时间格式为UTC
+        :param update_time: 更新时间， 时间格式为UTC。
         :type update_time: str
         """
         
@@ -115,7 +115,7 @@ class Phone:
     def phone_name(self):
         """Gets the phone_name of this Phone.
 
-        云手机的名称，不超过65个字符
+        云手机的名称，不超过65个字符。
 
         :return: The phone_name of this Phone.
         :rtype: str
@@ -126,7 +126,7 @@ class Phone:
     def phone_name(self, phone_name):
         """Sets the phone_name of this Phone.
 
-        云手机的名称，不超过65个字符
+        云手机的名称，不超过65个字符。
 
         :param phone_name: The phone_name of this Phone.
         :type phone_name: str
@@ -137,7 +137,7 @@ class Phone:
     def server_id(self):
         """Gets the server_id of this Phone.
 
-        云手机所在的服务器ID，不超过32个字节
+        云手机所在的服务器ID，不超过32个字节。
 
         :return: The server_id of this Phone.
         :rtype: str
@@ -148,7 +148,7 @@ class Phone:
     def server_id(self, server_id):
         """Sets the server_id of this Phone.
 
-        云手机所在的服务器ID，不超过32个字节
+        云手机所在的服务器ID，不超过32个字节。
 
         :param server_id: The server_id of this Phone.
         :type server_id: str
@@ -159,7 +159,7 @@ class Phone:
     def phone_id(self):
         """Gets the phone_id of this Phone.
 
-        云手机的唯一标识，不超过32个字节
+        云手机的唯一标识，不超过32个字节。
 
         :return: The phone_id of this Phone.
         :rtype: str
@@ -170,7 +170,7 @@ class Phone:
     def phone_id(self, phone_id):
         """Sets the phone_id of this Phone.
 
-        云手机的唯一标识，不超过32个字节
+        云手机的唯一标识，不超过32个字节。
 
         :param phone_id: The phone_id of this Phone.
         :type phone_id: str
@@ -181,7 +181,7 @@ class Phone:
     def phone_model_name(self):
         """Gets the phone_model_name of this Phone.
 
-        云手机规格名称，不超过64个字节
+        云手机规格名称，不超过64个字节。
 
         :return: The phone_model_name of this Phone.
         :rtype: str
@@ -192,7 +192,7 @@ class Phone:
     def phone_model_name(self, phone_model_name):
         """Sets the phone_model_name of this Phone.
 
-        云手机规格名称，不超过64个字节
+        云手机规格名称，不超过64个字节。
 
         :param phone_model_name: The phone_model_name of this Phone.
         :type phone_model_name: str
@@ -203,7 +203,7 @@ class Phone:
     def image_id(self):
         """Gets the image_id of this Phone.
 
-        云手机镜像ID，不超过32个字节
+        云手机镜像ID，不超过32个字节。
 
         :return: The image_id of this Phone.
         :rtype: str
@@ -214,7 +214,7 @@ class Phone:
     def image_id(self, image_id):
         """Sets the image_id of this Phone.
 
-        云手机镜像ID，不超过32个字节
+        云手机镜像ID，不超过32个字节。
 
         :param image_id: The image_id of this Phone.
         :type image_id: str
@@ -225,7 +225,7 @@ class Phone:
     def vnc_enable(self):
         """Gets the vnc_enable of this Phone.
 
-        云手机是否开启VNC服务 - true表示开启 - false表示不开启
+        云手机是否开启VNC服务。 - true：开启 - false：不开启
 
         :return: The vnc_enable of this Phone.
         :rtype: str
@@ -236,7 +236,7 @@ class Phone:
     def vnc_enable(self, vnc_enable):
         """Sets the vnc_enable of this Phone.
 
-        云手机是否开启VNC服务 - true表示开启 - false表示不开启
+        云手机是否开启VNC服务。 - true：开启 - false：不开启
 
         :param vnc_enable: The vnc_enable of this Phone.
         :type vnc_enable: str
@@ -247,7 +247,7 @@ class Phone:
     def status(self):
         """Gets the status of this Phone.
 
-        云手机状态 - 0: 创建中 - 1：创建中 - 2：运行中 - 3：重置中 - 4：重启中 - 6：冻结 - 7：正在关机 - 8：已关机 - -5：重置失败 - -6：重启失败 - -7：手机异常 - -8：创建失败 - -9：关机失败
+        云手机状态。 - 0: 创建中 - 1：创建中 - 2：运行中 - 3：重置中 - 4：重启中 - 6：冻结 - 7：正在关机 - 8：已关机 - -5：重置失败 - -6：重启失败 - -7：手机异常 - -8：创建失败 - -9：关机失败
 
         :return: The status of this Phone.
         :rtype: int
@@ -258,7 +258,7 @@ class Phone:
     def status(self, status):
         """Sets the status of this Phone.
 
-        云手机状态 - 0: 创建中 - 1：创建中 - 2：运行中 - 3：重置中 - 4：重启中 - 6：冻结 - 7：正在关机 - 8：已关机 - -5：重置失败 - -6：重启失败 - -7：手机异常 - -8：创建失败 - -9：关机失败
+        云手机状态。 - 0: 创建中 - 1：创建中 - 2：运行中 - 3：重置中 - 4：重启中 - 6：冻结 - 7：正在关机 - 8：已关机 - -5：重置失败 - -6：重启失败 - -7：手机异常 - -8：创建失败 - -9：关机失败
 
         :param status: The status of this Phone.
         :type status: int
@@ -269,7 +269,7 @@ class Phone:
     def type(self):
         """Gets the type of this Phone.
 
-        云手机类型 - 0：普通云手机 - 1：试玩云手机
+        云手机类型。 - 0：普通云手机 - 1：试玩云手机
 
         :return: The type of this Phone.
         :rtype: int
@@ -280,7 +280,7 @@ class Phone:
     def type(self, type):
         """Sets the type of this Phone.
 
-        云手机类型 - 0：普通云手机 - 1：试玩云手机
+        云手机类型。 - 0：普通云手机 - 1：试玩云手机
 
         :param type: The type of this Phone.
         :type type: int
@@ -309,7 +309,7 @@ class Phone:
     def create_time(self):
         """Gets the create_time of this Phone.
 
-        创建时间 时间格式为UTC
+        创建时间， 时间格式为UTC。
 
         :return: The create_time of this Phone.
         :rtype: str
@@ -320,7 +320,7 @@ class Phone:
     def create_time(self, create_time):
         """Sets the create_time of this Phone.
 
-        创建时间 时间格式为UTC
+        创建时间， 时间格式为UTC。
 
         :param create_time: The create_time of this Phone.
         :type create_time: str
@@ -331,7 +331,7 @@ class Phone:
     def update_time(self):
         """Gets the update_time of this Phone.
 
-        更新时间 时间格式为UTC
+        更新时间， 时间格式为UTC。
 
         :return: The update_time of this Phone.
         :rtype: str
@@ -342,7 +342,7 @@ class Phone:
     def update_time(self, update_time):
         """Sets the update_time of this Phone.
 
-        更新时间 时间格式为UTC
+        更新时间， 时间格式为UTC。
 
         :param update_time: The update_time of this Phone.
         :type update_time: str

@@ -37,15 +37,15 @@ class StorageInfo:
 
         The model defined in huaweicloud sdk
 
-        :param phone_id: 云手机ID
+        :param phone_id: 云手机ID。
         :type phone_id: str
-        :param include_files: 需要导出数据的存储路径 绝对路径，最大长度4096字节；目前只支持大小写字母、数字、小数点（.）、斜线（/）、中划线（-）、空格这些字符
+        :param include_files: 需要导出数据的存储路径，绝对路径，最大长度4096字节。仅支持导出/data和、cache目录下的数据。目前只支持大小写字母、数字、小数点（.）、斜线（/）、中划线（-）、下划线（_）、加号（+）、井号（#）、等号这些字符。
         :type include_files: list[str]
-        :param exclude_files: 不能导出数据的存储路径。exclude_files优先级比include_files高，如果冲突，exclude_files生效。 参数可选，如果指定参数，则不能为空。 路径要求同include_files
+        :param exclude_files: 不能导出数据的存储路径。exclude_files优先级比include_files高，如果冲突，exclude_files生效。 参数可选，如果指定参数，则不能为空。 路径要求同include_files。
         :type exclude_files: list[str]
-        :param bucket_name: 导出数据存储的OBS桶名。 合法的OBS桶名，3-63个字符，只能由小写字母、数字、中划线（-）和小数点（.）组成
+        :param bucket_name: 导出数据存储的OBS桶名。 合法的OBS桶名，3-63个字符，只能由小写字母、数字、中划线（-）和小数点（.）组成。
         :type bucket_name: str
-        :param object_path: 导出数据存储的OBS路径名。 符合OBS的路径名规范，最大长度1024字符
+        :param object_path: 导出数据存储的OBS路径名。 符合OBS的路径名规范，最大长度1024字符。目前只支持大小写字母、数字、小数点（.）、斜线（/）、中划线（-）、下划线（_）、加号（+）、井号（#）、等号这些字符。
         :type object_path: str
         """
         
@@ -69,7 +69,7 @@ class StorageInfo:
     def phone_id(self):
         """Gets the phone_id of this StorageInfo.
 
-        云手机ID
+        云手机ID。
 
         :return: The phone_id of this StorageInfo.
         :rtype: str
@@ -80,7 +80,7 @@ class StorageInfo:
     def phone_id(self, phone_id):
         """Sets the phone_id of this StorageInfo.
 
-        云手机ID
+        云手机ID。
 
         :param phone_id: The phone_id of this StorageInfo.
         :type phone_id: str
@@ -91,7 +91,7 @@ class StorageInfo:
     def include_files(self):
         """Gets the include_files of this StorageInfo.
 
-        需要导出数据的存储路径 绝对路径，最大长度4096字节；目前只支持大小写字母、数字、小数点（.）、斜线（/）、中划线（-）、空格这些字符
+        需要导出数据的存储路径，绝对路径，最大长度4096字节。仅支持导出/data和、cache目录下的数据。目前只支持大小写字母、数字、小数点（.）、斜线（/）、中划线（-）、下划线（_）、加号（+）、井号（#）、等号这些字符。
 
         :return: The include_files of this StorageInfo.
         :rtype: list[str]
@@ -102,7 +102,7 @@ class StorageInfo:
     def include_files(self, include_files):
         """Sets the include_files of this StorageInfo.
 
-        需要导出数据的存储路径 绝对路径，最大长度4096字节；目前只支持大小写字母、数字、小数点（.）、斜线（/）、中划线（-）、空格这些字符
+        需要导出数据的存储路径，绝对路径，最大长度4096字节。仅支持导出/data和、cache目录下的数据。目前只支持大小写字母、数字、小数点（.）、斜线（/）、中划线（-）、下划线（_）、加号（+）、井号（#）、等号这些字符。
 
         :param include_files: The include_files of this StorageInfo.
         :type include_files: list[str]
@@ -113,7 +113,7 @@ class StorageInfo:
     def exclude_files(self):
         """Gets the exclude_files of this StorageInfo.
 
-        不能导出数据的存储路径。exclude_files优先级比include_files高，如果冲突，exclude_files生效。 参数可选，如果指定参数，则不能为空。 路径要求同include_files
+        不能导出数据的存储路径。exclude_files优先级比include_files高，如果冲突，exclude_files生效。 参数可选，如果指定参数，则不能为空。 路径要求同include_files。
 
         :return: The exclude_files of this StorageInfo.
         :rtype: list[str]
@@ -124,7 +124,7 @@ class StorageInfo:
     def exclude_files(self, exclude_files):
         """Sets the exclude_files of this StorageInfo.
 
-        不能导出数据的存储路径。exclude_files优先级比include_files高，如果冲突，exclude_files生效。 参数可选，如果指定参数，则不能为空。 路径要求同include_files
+        不能导出数据的存储路径。exclude_files优先级比include_files高，如果冲突，exclude_files生效。 参数可选，如果指定参数，则不能为空。 路径要求同include_files。
 
         :param exclude_files: The exclude_files of this StorageInfo.
         :type exclude_files: list[str]
@@ -135,7 +135,7 @@ class StorageInfo:
     def bucket_name(self):
         """Gets the bucket_name of this StorageInfo.
 
-        导出数据存储的OBS桶名。 合法的OBS桶名，3-63个字符，只能由小写字母、数字、中划线（-）和小数点（.）组成
+        导出数据存储的OBS桶名。 合法的OBS桶名，3-63个字符，只能由小写字母、数字、中划线（-）和小数点（.）组成。
 
         :return: The bucket_name of this StorageInfo.
         :rtype: str
@@ -146,7 +146,7 @@ class StorageInfo:
     def bucket_name(self, bucket_name):
         """Sets the bucket_name of this StorageInfo.
 
-        导出数据存储的OBS桶名。 合法的OBS桶名，3-63个字符，只能由小写字母、数字、中划线（-）和小数点（.）组成
+        导出数据存储的OBS桶名。 合法的OBS桶名，3-63个字符，只能由小写字母、数字、中划线（-）和小数点（.）组成。
 
         :param bucket_name: The bucket_name of this StorageInfo.
         :type bucket_name: str
@@ -157,7 +157,7 @@ class StorageInfo:
     def object_path(self):
         """Gets the object_path of this StorageInfo.
 
-        导出数据存储的OBS路径名。 符合OBS的路径名规范，最大长度1024字符
+        导出数据存储的OBS路径名。 符合OBS的路径名规范，最大长度1024字符。目前只支持大小写字母、数字、小数点（.）、斜线（/）、中划线（-）、下划线（_）、加号（+）、井号（#）、等号这些字符。
 
         :return: The object_path of this StorageInfo.
         :rtype: str
@@ -168,7 +168,7 @@ class StorageInfo:
     def object_path(self, object_path):
         """Sets the object_path of this StorageInfo.
 
-        导出数据存储的OBS路径名。 符合OBS的路径名规范，最大长度1024字符
+        导出数据存储的OBS路径名。 符合OBS的路径名规范，最大长度1024字符。目前只支持大小写字母、数字、小数点（.）、斜线（/）、中划线（-）、下划线（_）、加号（+）、井号（#）、等号这些字符。
 
         :param object_path: The object_path of this StorageInfo.
         :type object_path: str

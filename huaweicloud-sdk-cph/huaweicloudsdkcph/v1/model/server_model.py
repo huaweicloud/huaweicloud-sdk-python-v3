@@ -22,7 +22,8 @@ class ServerModel:
         'cpu': 'int',
         'memory': 'int',
         'extend_spec': 'ServerModelExtendSpec',
-        'product_type': 'int'
+        'product_type': 'int',
+        'free_size': 'int'
     }
 
     attribute_map = {
@@ -31,26 +32,29 @@ class ServerModel:
         'cpu': 'cpu',
         'memory': 'memory',
         'extend_spec': 'extend_spec',
-        'product_type': 'product_type'
+        'product_type': 'product_type',
+        'free_size': 'free_size'
     }
 
-    def __init__(self, server_model_name=None, server_type=None, cpu=None, memory=None, extend_spec=None, product_type=None):
+    def __init__(self, server_model_name=None, server_type=None, cpu=None, memory=None, extend_spec=None, product_type=None, free_size=None):
         """ServerModel
 
         The model defined in huaweicloud sdk
 
-        :param server_model_name: 云手机服务器的规格名称，不超过64字节
+        :param server_model_name: 云手机服务器的规格名称，不超过64字节。
         :type server_model_name: str
-        :param server_type: 云手机服务器的型号，如Hi1616。不超过32字节
+        :param server_type: 云手机服务器的型号，如Hi1616。不超过32字节。
         :type server_type: str
-        :param cpu: 云手机服务器的CPU核数
+        :param cpu: 云手机服务器的CPU核数。
         :type cpu: int
-        :param memory: 云手机服务器的内存大小，单位G
+        :param memory: 云手机服务器的内存大小，单位G。
         :type memory: int
         :param extend_spec: 
         :type extend_spec: :class:`huaweicloudsdkcph.v1.ServerModelExtendSpec`
-        :param product_type: 产品类型 - 0：云手机 - 1：云手游
+        :param product_type: 产品类型。 - 0：云手机 - 1：云手游
         :type product_type: int
+        :param free_size: 服务器磁盘的免费配额。
+        :type free_size: int
         """
         
         
@@ -61,6 +65,7 @@ class ServerModel:
         self._memory = None
         self._extend_spec = None
         self._product_type = None
+        self._free_size = None
         self.discriminator = None
 
         if server_model_name is not None:
@@ -75,12 +80,14 @@ class ServerModel:
             self.extend_spec = extend_spec
         if product_type is not None:
             self.product_type = product_type
+        if free_size is not None:
+            self.free_size = free_size
 
     @property
     def server_model_name(self):
         """Gets the server_model_name of this ServerModel.
 
-        云手机服务器的规格名称，不超过64字节
+        云手机服务器的规格名称，不超过64字节。
 
         :return: The server_model_name of this ServerModel.
         :rtype: str
@@ -91,7 +98,7 @@ class ServerModel:
     def server_model_name(self, server_model_name):
         """Sets the server_model_name of this ServerModel.
 
-        云手机服务器的规格名称，不超过64字节
+        云手机服务器的规格名称，不超过64字节。
 
         :param server_model_name: The server_model_name of this ServerModel.
         :type server_model_name: str
@@ -102,7 +109,7 @@ class ServerModel:
     def server_type(self):
         """Gets the server_type of this ServerModel.
 
-        云手机服务器的型号，如Hi1616。不超过32字节
+        云手机服务器的型号，如Hi1616。不超过32字节。
 
         :return: The server_type of this ServerModel.
         :rtype: str
@@ -113,7 +120,7 @@ class ServerModel:
     def server_type(self, server_type):
         """Sets the server_type of this ServerModel.
 
-        云手机服务器的型号，如Hi1616。不超过32字节
+        云手机服务器的型号，如Hi1616。不超过32字节。
 
         :param server_type: The server_type of this ServerModel.
         :type server_type: str
@@ -124,7 +131,7 @@ class ServerModel:
     def cpu(self):
         """Gets the cpu of this ServerModel.
 
-        云手机服务器的CPU核数
+        云手机服务器的CPU核数。
 
         :return: The cpu of this ServerModel.
         :rtype: int
@@ -135,7 +142,7 @@ class ServerModel:
     def cpu(self, cpu):
         """Sets the cpu of this ServerModel.
 
-        云手机服务器的CPU核数
+        云手机服务器的CPU核数。
 
         :param cpu: The cpu of this ServerModel.
         :type cpu: int
@@ -146,7 +153,7 @@ class ServerModel:
     def memory(self):
         """Gets the memory of this ServerModel.
 
-        云手机服务器的内存大小，单位G
+        云手机服务器的内存大小，单位G。
 
         :return: The memory of this ServerModel.
         :rtype: int
@@ -157,7 +164,7 @@ class ServerModel:
     def memory(self, memory):
         """Sets the memory of this ServerModel.
 
-        云手机服务器的内存大小，单位G
+        云手机服务器的内存大小，单位G。
 
         :param memory: The memory of this ServerModel.
         :type memory: int
@@ -186,7 +193,7 @@ class ServerModel:
     def product_type(self):
         """Gets the product_type of this ServerModel.
 
-        产品类型 - 0：云手机 - 1：云手游
+        产品类型。 - 0：云手机 - 1：云手游
 
         :return: The product_type of this ServerModel.
         :rtype: int
@@ -197,12 +204,34 @@ class ServerModel:
     def product_type(self, product_type):
         """Sets the product_type of this ServerModel.
 
-        产品类型 - 0：云手机 - 1：云手游
+        产品类型。 - 0：云手机 - 1：云手游
 
         :param product_type: The product_type of this ServerModel.
         :type product_type: int
         """
         self._product_type = product_type
+
+    @property
+    def free_size(self):
+        """Gets the free_size of this ServerModel.
+
+        服务器磁盘的免费配额。
+
+        :return: The free_size of this ServerModel.
+        :rtype: int
+        """
+        return self._free_size
+
+    @free_size.setter
+    def free_size(self, free_size):
+        """Sets the free_size of this ServerModel.
+
+        服务器磁盘的免费配额。
+
+        :param free_size: The free_size of this ServerModel.
+        :type free_size: int
+        """
+        self._free_size = free_size
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -34,7 +34,7 @@ class ShowBandwidthDetailResponse(SdkResponse):
 
         :param request_id: 请求的唯一标识ID。
         :type request_id: str
-        :param band_widths: 带宽信息
+        :param band_widths: 带宽信息。
         :type band_widths: list[:class:`huaweicloudsdkcph.v1.Bandwidth`]
         """
         
@@ -75,7 +75,7 @@ class ShowBandwidthDetailResponse(SdkResponse):
     def band_widths(self):
         """Gets the band_widths of this ShowBandwidthDetailResponse.
 
-        带宽信息
+        带宽信息。
 
         :return: The band_widths of this ShowBandwidthDetailResponse.
         :rtype: list[:class:`huaweicloudsdkcph.v1.Bandwidth`]
@@ -86,7 +86,7 @@ class ShowBandwidthDetailResponse(SdkResponse):
     def band_widths(self, band_widths):
         """Sets the band_widths of this ShowBandwidthDetailResponse.
 
-        带宽信息
+        带宽信息。
 
         :param band_widths: The band_widths of this ShowBandwidthDetailResponse.
         :type band_widths: list[:class:`huaweicloudsdkcph.v1.Bandwidth`]

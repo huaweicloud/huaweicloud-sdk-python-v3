@@ -31,9 +31,9 @@ class ImportTrafficRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param traffic_type: 手机路由类型 direct：默认路由 routing：路由到编码容器
+        :param traffic_type: 手机路由类型。 - direct：默认路由 - routing：路由到编码容器
         :type traffic_type: str
-        :param phone_ids: 手机id列表 一次调用最多支持100个
+        :param phone_ids: 手机id列表，一次调用最多支持100个。
         :type phone_ids: list[str]
         """
         
@@ -50,7 +50,7 @@ class ImportTrafficRequestBody:
     def traffic_type(self):
         """Gets the traffic_type of this ImportTrafficRequestBody.
 
-        手机路由类型 direct：默认路由 routing：路由到编码容器
+        手机路由类型。 - direct：默认路由 - routing：路由到编码容器
 
         :return: The traffic_type of this ImportTrafficRequestBody.
         :rtype: str
@@ -61,7 +61,7 @@ class ImportTrafficRequestBody:
     def traffic_type(self, traffic_type):
         """Sets the traffic_type of this ImportTrafficRequestBody.
 
-        手机路由类型 direct：默认路由 routing：路由到编码容器
+        手机路由类型。 - direct：默认路由 - routing：路由到编码容器
 
         :param traffic_type: The traffic_type of this ImportTrafficRequestBody.
         :type traffic_type: str
@@ -72,7 +72,7 @@ class ImportTrafficRequestBody:
     def phone_ids(self):
         """Gets the phone_ids of this ImportTrafficRequestBody.
 
-        手机id列表 一次调用最多支持100个
+        手机id列表，一次调用最多支持100个。
 
         :return: The phone_ids of this ImportTrafficRequestBody.
         :rtype: list[str]
@@ -83,7 +83,7 @@ class ImportTrafficRequestBody:
     def phone_ids(self, phone_ids):
         """Sets the phone_ids of this ImportTrafficRequestBody.
 
-        手机id列表 一次调用最多支持100个
+        手机id列表，一次调用最多支持100个。
 
         :param phone_ids: The phone_ids of this ImportTrafficRequestBody.
         :type phone_ids: list[str]

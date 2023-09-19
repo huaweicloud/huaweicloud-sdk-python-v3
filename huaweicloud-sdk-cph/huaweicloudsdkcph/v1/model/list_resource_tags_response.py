@@ -30,7 +30,7 @@ class ListResourceTagsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param tags: 资源标签列表
+        :param tags: 资源标签列表。
         :type tags: list[:class:`huaweicloudsdkcph.v1.Tag`]
         """
         
@@ -46,7 +46,7 @@ class ListResourceTagsResponse(SdkResponse):
     def tags(self):
         """Gets the tags of this ListResourceTagsResponse.
 
-        资源标签列表
+        资源标签列表。
 
         :return: The tags of this ListResourceTagsResponse.
         :rtype: list[:class:`huaweicloudsdkcph.v1.Tag`]
@@ -57,7 +57,7 @@ class ListResourceTagsResponse(SdkResponse):
     def tags(self, tags):
         """Sets the tags of this ListResourceTagsResponse.
 
-        资源标签列表
+        资源标签列表。
 
         :param tags: The tags of this ListResourceTagsResponse.
         :type tags: list[:class:`huaweicloudsdkcph.v1.Tag`]

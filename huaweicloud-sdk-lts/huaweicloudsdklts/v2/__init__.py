@@ -5,6 +5,7 @@ from __future__ import absolute_import
 from huaweicloudsdklts.v2.lts_client import LtsClient
 from huaweicloudsdklts.v2.lts_async_client import LtsAsyncClient
 
+from huaweicloudsdklts.v2.model.access_config_base_log_info import AccessConfigBaseLogInfo
 from huaweicloudsdklts.v2.model.access_config_base_log_info_create import AccessConfigBaseLogInfoCreate
 from huaweicloudsdklts.v2.model.access_config_deatil_create import AccessConfigDeatilCreate
 from huaweicloudsdklts.v2.model.access_config_format_create import AccessConfigFormatCreate
@@ -25,6 +26,7 @@ from huaweicloudsdklts.v2.model.aom_mapping_rule_resp import AomMappingRuleResp
 from huaweicloudsdklts.v2.model.aom_mappingfiles_info import AomMappingfilesInfo
 from huaweicloudsdklts.v2.model.brief_struct_template_model import BriefStructTemplateModel
 from huaweicloudsdklts.v2.model.change_alarm_rule_status import ChangeAlarmRuleStatus
+from huaweicloudsdklts.v2.model.chart_config import ChartConfig
 from huaweicloudsdklts.v2.model.create_access_config_request import CreateAccessConfigRequest
 from huaweicloudsdklts.v2.model.create_access_config_request_body import CreateAccessConfigRequestBody
 from huaweicloudsdklts.v2.model.create_access_config_response import CreateAccessConfigResponse
@@ -114,6 +116,7 @@ from huaweicloudsdklts.v2.model.delete_transfer_request import DeleteTransferReq
 from huaweicloudsdklts.v2.model.delete_transfer_response import DeleteTransferResponse
 from huaweicloudsdklts.v2.model.deletefavorite_request import DeletefavoriteRequest
 from huaweicloudsdklts.v2.model.deletefavorite_response import DeletefavoriteResponse
+from huaweicloudsdklts.v2.model.demo_field import DemoField
 from huaweicloudsdklts.v2.model.disable_log_collection_request import DisableLogCollectionRequest
 from huaweicloudsdklts.v2.model.disable_log_collection_response import DisableLogCollectionResponse
 from huaweicloudsdklts.v2.model.enable_log_collection_request import EnableLogCollectionRequest
@@ -188,8 +191,12 @@ from huaweicloudsdklts.v2.model.list_transfers_request import ListTransfersReque
 from huaweicloudsdklts.v2.model.list_transfers_response import ListTransfersResponse
 from huaweicloudsdklts.v2.model.log_contents import LogContents
 from huaweicloudsdklts.v2.model.log_group import LogGroup
+from huaweicloudsdklts.v2.model.log_mapping_config import LogMappingConfig
+from huaweicloudsdklts.v2.model.log_mapping_stream_info import LogMappingStreamInfo
 from huaweicloudsdklts.v2.model.log_stream_res_body import LogStreamResBody
 from huaweicloudsdklts.v2.model.lts_struct_template_info import LtsStructTemplateInfo
+from huaweicloudsdklts.v2.model.member_groupand_stream_log_streams import MemberGroupandStreamLogStreams
+from huaweicloudsdklts.v2.model.member_groupand_stream_results import MemberGroupandStreamResults
 from huaweicloudsdklts.v2.model.metadata import Metadata
 from huaweicloudsdklts.v2.model.notification_template import NotificationTemplate
 from huaweicloudsdklts.v2.model.page_info import PageInfo
@@ -207,10 +214,16 @@ from huaweicloudsdklts.v2.model.resulits import Resulits
 from huaweicloudsdklts.v2.model.results_topn_body import ResultsTopnBody
 from huaweicloudsdklts.v2.model.rule import Rule
 from huaweicloudsdklts.v2.model.search_criterias_body import SearchCriteriasBody
+from huaweicloudsdklts.v2.model.show_admin_config_request import ShowAdminConfigRequest
+from huaweicloudsdklts.v2.model.show_admin_config_response import ShowAdminConfigResponse
 from huaweicloudsdklts.v2.model.show_aom_mapping_rule_request import ShowAomMappingRuleRequest
 from huaweicloudsdklts.v2.model.show_aom_mapping_rule_response import ShowAomMappingRuleResponse
 from huaweicloudsdklts.v2.model.show_aom_mapping_rules_request import ShowAomMappingRulesRequest
 from huaweicloudsdklts.v2.model.show_aom_mapping_rules_response import ShowAomMappingRulesResponse
+from huaweicloudsdklts.v2.model.show_log_converge_config_request import ShowLogConvergeConfigRequest
+from huaweicloudsdklts.v2.model.show_log_converge_config_response import ShowLogConvergeConfigResponse
+from huaweicloudsdklts.v2.model.show_member_group_and_stream_request import ShowMemberGroupAndStreamRequest
+from huaweicloudsdklts.v2.model.show_member_group_and_stream_response import ShowMemberGroupAndStreamResponse
 from huaweicloudsdklts.v2.model.show_notification_template_request import ShowNotificationTemplateRequest
 from huaweicloudsdklts.v2.model.show_notification_template_response import ShowNotificationTemplateResponse
 from huaweicloudsdklts.v2.model.show_struct_template_request import ShowStructTemplateRequest
@@ -219,16 +232,20 @@ from huaweicloudsdklts.v2.model.show_struct_template_rule import ShowStructTempl
 from huaweicloudsdklts.v2.model.show_struct_templatecluster_info import ShowStructTemplateclusterInfo
 from huaweicloudsdklts.v2.model.sort import Sort
 from huaweicloudsdklts.v2.model.sql_alarm_rule_resp_list import SqlAlarmRuleRespList
+from huaweicloudsdklts.v2.model.sql_notification_save_rule import SqlNotificationSaveRule
 from huaweicloudsdklts.v2.model.sql_request import SqlRequest
 from huaweicloudsdklts.v2.model.struct_config import StructConfig
 from huaweicloudsdklts.v2.model.struct_field_info import StructFieldInfo
 from huaweicloudsdklts.v2.model.struct_field_info_return import StructFieldInfoReturn
 from huaweicloudsdklts.v2.model.struct_log_contents import StructLogContents
+from huaweicloudsdklts.v2.model.struct_template import StructTemplate
 from huaweicloudsdklts.v2.model.struct_template_model import StructTemplateModel
 from huaweicloudsdklts.v2.model.sub_template import SubTemplate
 from huaweicloudsdklts.v2.model.tag_field import TagField
+from huaweicloudsdklts.v2.model.tag_field_new import TagFieldNew
 from huaweicloudsdklts.v2.model.tag_fields_info import TagFieldsInfo
 from huaweicloudsdklts.v2.model.tags_body import TagsBody
+from huaweicloudsdklts.v2.model.template_rule import TemplateRule
 from huaweicloudsdklts.v2.model.time_range import TimeRange
 from huaweicloudsdklts.v2.model.timeline_traffic_statistics_request_body import TimelineTrafficStatisticsRequestBody
 from huaweicloudsdklts.v2.model.topics import Topics
@@ -248,6 +265,8 @@ from huaweicloudsdklts.v2.model.update_host_group_response import UpdateHostGrou
 from huaweicloudsdklts.v2.model.update_keywords_alarm_rule_request import UpdateKeywordsAlarmRuleRequest
 from huaweicloudsdklts.v2.model.update_keywords_alarm_rule_request_body import UpdateKeywordsAlarmRuleRequestBody
 from huaweicloudsdklts.v2.model.update_keywords_alarm_rule_response import UpdateKeywordsAlarmRuleResponse
+from huaweicloudsdklts.v2.model.update_log_converge_config_request import UpdateLogConvergeConfigRequest
+from huaweicloudsdklts.v2.model.update_log_converge_config_response import UpdateLogConvergeConfigResponse
 from huaweicloudsdklts.v2.model.update_log_group_params import UpdateLogGroupParams
 from huaweicloudsdklts.v2.model.update_log_group_request import UpdateLogGroupRequest
 from huaweicloudsdklts.v2.model.update_log_group_response import UpdateLogGroupResponse
@@ -263,8 +282,11 @@ from huaweicloudsdklts.v2.model.update_struct_config_request import UpdateStruct
 from huaweicloudsdklts.v2.model.update_struct_config_response import UpdateStructConfigResponse
 from huaweicloudsdklts.v2.model.update_struct_template_request import UpdateStructTemplateRequest
 from huaweicloudsdklts.v2.model.update_struct_template_response import UpdateStructTemplateResponse
+from huaweicloudsdklts.v2.model.update_switch_request import UpdateSwitchRequest
+from huaweicloudsdklts.v2.model.update_switch_response import UpdateSwitchResponse
 from huaweicloudsdklts.v2.model.update_transfer_request import UpdateTransferRequest
 from huaweicloudsdklts.v2.model.update_transfer_request_body import UpdateTransferRequestBody
 from huaweicloudsdklts.v2.model.update_transfer_request_body_log_transfer_info import UpdateTransferRequestBodyLogTransferInfo
 from huaweicloudsdklts.v2.model.update_transfer_response import UpdateTransferResponse
+from huaweicloudsdklts.v2.model.updatelog_converge_config import UpdatelogConvergeConfig
 

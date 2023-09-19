@@ -51,29 +51,29 @@ class PhoneModel:
 
         The model defined in huaweicloud sdk
 
-        :param server_model_name: 云手机服务器的规格名称，不超过64个字节
+        :param server_model_name: 云手机服务器的规格名称，不超过64个字节。
         :type server_model_name: str
-        :param phone_model_name: 云手机的规格名称，不超过64个字节
+        :param phone_model_name: 云手机的规格名称，不超过64个字节。
         :type phone_model_name: str
-        :param status: 规格状态 - 1 表示正常使用状态 - 0 表示已下线状态 已下线的规格不可用来购买云手机服务器
+        :param status: 规格状态。 - 1 表示正常使用状态 - 0 表示已下线状态 已下线的规格不可用来购买云手机服务器
         :type status: int
-        :param cpu: CPU核数
+        :param cpu: CPU核数。
         :type cpu: int
-        :param memory: 内存大小，单位：MB
+        :param memory: 内存大小，单位：MB。
         :type memory: int
-        :param disk: 系统存储大小，单位：GB
+        :param disk: 系统存储大小，单位：GB。
         :type disk: int
-        :param resolution: 分辨率，不超过16个字节
+        :param resolution: 分辨率，不超过16个字节。
         :type resolution: str
-        :param extend_spec: 扩展描述，不超过512个字节
+        :param extend_spec: 扩展描述，不超过512个字节。
         :type extend_spec: str
-        :param spec_code: 规格名称，不超过64个字节
+        :param spec_code: 规格名称，不超过64个字节。
         :type spec_code: str
-        :param phone_capacity: 当前云手机规格包含的云手机个数
+        :param phone_capacity: 当前云手机规格包含的云手机个数。
         :type phone_capacity: int
         :param image_label: 镜像类型，只支持如下类型： - qemu_phone - cloud_phone - cloud_game
         :type image_label: str
-        :param product_type: 产品类型 - 0：云手机 - 1：云手游
+        :param product_type: 产品类型。 - 0：云手机 - 1：云手游
         :type product_type: int
         """
         
@@ -122,7 +122,7 @@ class PhoneModel:
     def server_model_name(self):
         """Gets the server_model_name of this PhoneModel.
 
-        云手机服务器的规格名称，不超过64个字节
+        云手机服务器的规格名称，不超过64个字节。
 
         :return: The server_model_name of this PhoneModel.
         :rtype: str
@@ -133,7 +133,7 @@ class PhoneModel:
     def server_model_name(self, server_model_name):
         """Sets the server_model_name of this PhoneModel.
 
-        云手机服务器的规格名称，不超过64个字节
+        云手机服务器的规格名称，不超过64个字节。
 
         :param server_model_name: The server_model_name of this PhoneModel.
         :type server_model_name: str
@@ -144,7 +144,7 @@ class PhoneModel:
     def phone_model_name(self):
         """Gets the phone_model_name of this PhoneModel.
 
-        云手机的规格名称，不超过64个字节
+        云手机的规格名称，不超过64个字节。
 
         :return: The phone_model_name of this PhoneModel.
         :rtype: str
@@ -155,7 +155,7 @@ class PhoneModel:
     def phone_model_name(self, phone_model_name):
         """Sets the phone_model_name of this PhoneModel.
 
-        云手机的规格名称，不超过64个字节
+        云手机的规格名称，不超过64个字节。
 
         :param phone_model_name: The phone_model_name of this PhoneModel.
         :type phone_model_name: str
@@ -166,7 +166,7 @@ class PhoneModel:
     def status(self):
         """Gets the status of this PhoneModel.
 
-        规格状态 - 1 表示正常使用状态 - 0 表示已下线状态 已下线的规格不可用来购买云手机服务器
+        规格状态。 - 1 表示正常使用状态 - 0 表示已下线状态 已下线的规格不可用来购买云手机服务器
 
         :return: The status of this PhoneModel.
         :rtype: int
@@ -177,7 +177,7 @@ class PhoneModel:
     def status(self, status):
         """Sets the status of this PhoneModel.
 
-        规格状态 - 1 表示正常使用状态 - 0 表示已下线状态 已下线的规格不可用来购买云手机服务器
+        规格状态。 - 1 表示正常使用状态 - 0 表示已下线状态 已下线的规格不可用来购买云手机服务器
 
         :param status: The status of this PhoneModel.
         :type status: int
@@ -188,7 +188,7 @@ class PhoneModel:
     def cpu(self):
         """Gets the cpu of this PhoneModel.
 
-        CPU核数
+        CPU核数。
 
         :return: The cpu of this PhoneModel.
         :rtype: int
@@ -199,7 +199,7 @@ class PhoneModel:
     def cpu(self, cpu):
         """Sets the cpu of this PhoneModel.
 
-        CPU核数
+        CPU核数。
 
         :param cpu: The cpu of this PhoneModel.
         :type cpu: int
@@ -210,7 +210,7 @@ class PhoneModel:
     def memory(self):
         """Gets the memory of this PhoneModel.
 
-        内存大小，单位：MB
+        内存大小，单位：MB。
 
         :return: The memory of this PhoneModel.
         :rtype: int
@@ -221,7 +221,7 @@ class PhoneModel:
     def memory(self, memory):
         """Sets the memory of this PhoneModel.
 
-        内存大小，单位：MB
+        内存大小，单位：MB。
 
         :param memory: The memory of this PhoneModel.
         :type memory: int
@@ -232,7 +232,7 @@ class PhoneModel:
     def disk(self):
         """Gets the disk of this PhoneModel.
 
-        系统存储大小，单位：GB
+        系统存储大小，单位：GB。
 
         :return: The disk of this PhoneModel.
         :rtype: int
@@ -243,7 +243,7 @@ class PhoneModel:
     def disk(self, disk):
         """Sets the disk of this PhoneModel.
 
-        系统存储大小，单位：GB
+        系统存储大小，单位：GB。
 
         :param disk: The disk of this PhoneModel.
         :type disk: int
@@ -254,7 +254,7 @@ class PhoneModel:
     def resolution(self):
         """Gets the resolution of this PhoneModel.
 
-        分辨率，不超过16个字节
+        分辨率，不超过16个字节。
 
         :return: The resolution of this PhoneModel.
         :rtype: str
@@ -265,7 +265,7 @@ class PhoneModel:
     def resolution(self, resolution):
         """Sets the resolution of this PhoneModel.
 
-        分辨率，不超过16个字节
+        分辨率，不超过16个字节。
 
         :param resolution: The resolution of this PhoneModel.
         :type resolution: str
@@ -276,7 +276,7 @@ class PhoneModel:
     def extend_spec(self):
         """Gets the extend_spec of this PhoneModel.
 
-        扩展描述，不超过512个字节
+        扩展描述，不超过512个字节。
 
         :return: The extend_spec of this PhoneModel.
         :rtype: str
@@ -287,7 +287,7 @@ class PhoneModel:
     def extend_spec(self, extend_spec):
         """Sets the extend_spec of this PhoneModel.
 
-        扩展描述，不超过512个字节
+        扩展描述，不超过512个字节。
 
         :param extend_spec: The extend_spec of this PhoneModel.
         :type extend_spec: str
@@ -298,7 +298,7 @@ class PhoneModel:
     def spec_code(self):
         """Gets the spec_code of this PhoneModel.
 
-        规格名称，不超过64个字节
+        规格名称，不超过64个字节。
 
         :return: The spec_code of this PhoneModel.
         :rtype: str
@@ -309,7 +309,7 @@ class PhoneModel:
     def spec_code(self, spec_code):
         """Sets the spec_code of this PhoneModel.
 
-        规格名称，不超过64个字节
+        规格名称，不超过64个字节。
 
         :param spec_code: The spec_code of this PhoneModel.
         :type spec_code: str
@@ -320,7 +320,7 @@ class PhoneModel:
     def phone_capacity(self):
         """Gets the phone_capacity of this PhoneModel.
 
-        当前云手机规格包含的云手机个数
+        当前云手机规格包含的云手机个数。
 
         :return: The phone_capacity of this PhoneModel.
         :rtype: int
@@ -331,7 +331,7 @@ class PhoneModel:
     def phone_capacity(self, phone_capacity):
         """Sets the phone_capacity of this PhoneModel.
 
-        当前云手机规格包含的云手机个数
+        当前云手机规格包含的云手机个数。
 
         :param phone_capacity: The phone_capacity of this PhoneModel.
         :type phone_capacity: int
@@ -364,7 +364,7 @@ class PhoneModel:
     def product_type(self):
         """Gets the product_type of this PhoneModel.
 
-        产品类型 - 0：云手机 - 1：云手游
+        产品类型。 - 0：云手机 - 1：云手游
 
         :return: The product_type of this PhoneModel.
         :rtype: int
@@ -375,7 +375,7 @@ class PhoneModel:
     def product_type(self, product_type):
         """Sets the product_type of this PhoneModel.
 
-        产品类型 - 0：云手机 - 1：云手游
+        产品类型。 - 0：云手机 - 1：云手游
 
         :param product_type: The product_type of this PhoneModel.
         :type product_type: int

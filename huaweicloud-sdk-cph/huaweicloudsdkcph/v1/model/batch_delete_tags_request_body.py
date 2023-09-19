@@ -31,7 +31,7 @@ class BatchDeleteTagsRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param action: 操作标识： - delete，刪除
+        :param action: 操作标识。 - delete：刪除
         :type action: str
         :param tags: 标签列表。
         :type tags: list[:class:`huaweicloudsdkcph.v1.Tag`]
@@ -50,7 +50,7 @@ class BatchDeleteTagsRequestBody:
     def action(self):
         """Gets the action of this BatchDeleteTagsRequestBody.
 
-        操作标识： - delete，刪除
+        操作标识。 - delete：刪除
 
         :return: The action of this BatchDeleteTagsRequestBody.
         :rtype: str
@@ -61,7 +61,7 @@ class BatchDeleteTagsRequestBody:
     def action(self, action):
         """Sets the action of this BatchDeleteTagsRequestBody.
 
-        操作标识： - delete，刪除
+        操作标识。 - delete：刪除
 
         :param action: The action of this BatchDeleteTagsRequestBody.
         :type action: str

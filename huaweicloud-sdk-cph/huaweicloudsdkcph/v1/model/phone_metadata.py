@@ -31,9 +31,9 @@ class PhoneMetadata:
 
         The model defined in huaweicloud sdk
 
-        :param order_id: 订单ID，不超过64个字节
+        :param order_id: 订单ID，不超过64个字节。
         :type order_id: str
-        :param product_id: 产品ID，不超过64个字节
+        :param product_id: 产品ID，不超过64个字节。
         :type product_id: str
         """
         
@@ -52,7 +52,7 @@ class PhoneMetadata:
     def order_id(self):
         """Gets the order_id of this PhoneMetadata.
 
-        订单ID，不超过64个字节
+        订单ID，不超过64个字节。
 
         :return: The order_id of this PhoneMetadata.
         :rtype: str
@@ -63,7 +63,7 @@ class PhoneMetadata:
     def order_id(self, order_id):
         """Sets the order_id of this PhoneMetadata.
 
-        订单ID，不超过64个字节
+        订单ID，不超过64个字节。
 
         :param order_id: The order_id of this PhoneMetadata.
         :type order_id: str
@@ -74,7 +74,7 @@ class PhoneMetadata:
     def product_id(self):
         """Gets the product_id of this PhoneMetadata.
 
-        产品ID，不超过64个字节
+        产品ID，不超过64个字节。
 
         :return: The product_id of this PhoneMetadata.
         :rtype: str
@@ -85,7 +85,7 @@ class PhoneMetadata:
     def product_id(self, product_id):
         """Sets the product_id of this PhoneMetadata.
 
-        产品ID，不超过64个字节
+        产品ID，不超过64个字节。
 
         :param product_id: The product_id of this PhoneMetadata.
         :type product_id: str

@@ -65,43 +65,43 @@ class Server:
 
         The model defined in huaweicloud sdk
 
-        :param server_name: 云手机服务器名称 不超过65字符，只支持英文字母、数字、汉字、下划线和中划线
+        :param server_name: 云手机服务器名称，不超过65字符，只支持英文字母、数字、汉字、下划线和中划线。
         :type server_name: str
-        :param availability_zone: 云手机服务器所在的可用区
+        :param availability_zone: 云手机服务器所在的可用区。
         :type availability_zone: str
-        :param server_id: 云手机服务器的唯一标识，不超过32个字节
+        :param server_id: 云手机服务器的唯一标识，不超过32个字节。
         :type server_id: str
-        :param server_model_name: 云手机服务器规格名称，不超过64个字节
+        :param server_model_name: 云手机服务器规格名称，不超过64个字节。
         :type server_model_name: str
-        :param phone_model_name: 云手机规格名称，不超过64个字节
+        :param phone_model_name: 云手机规格名称，不超过64个字节。
         :type phone_model_name: str
-        :param keypair_name: 连接云手机所使用的密钥对的名称，不超过64个字节
+        :param keypair_name: 连接云手机所使用的密钥对的名称，不超过64个字节。
         :type keypair_name: str
-        :param status: 服务器状态 - 0、1、3、4：创建中 - 2：异常 - 5：正常 - 8：冻结 - 10：关机 - 11：关机中 - 12：关机失败 - 13：开机中
+        :param status: 服务器状态。 - 0、1、3、4：创建中 - 2：异常 - 5：正常 - 8：冻结 - 10：关机 - 11：关机中 - 12：关机失败 - 13：开机中
         :type status: int
-        :param vpc_id: 云手机服务器所属虚拟私有云（简称VPC  网络版本 network_version 取值为“v1”时，表示云手机服务器所属资源租户的VPC ID；取值为“v2”时，表示租户创建服务器时指定 VPC 的 VPC ID
+        :param vpc_id: 云手机服务器所属虚拟私有云（简称VPC）的ID。 网络版本network_version取值为“v1”时，表示云手机服务器所属资源租户的VPC ID；取值为“v2”时，表示租户创建服务器时指定VPC的 VPC ID。
         :type vpc_id: str
-        :param cidr: 云手机服务器所属虚拟私有云（简称VPC  网络版本 network_version 取值为“v1”时，表示云手机服务器所属资源租户的VPC CIDR；取值为“v2”时，表示租户创建服务器时指定 VPC 的 VPC CIDR
+        :param cidr: 云手机服务器所属虚拟私有云（简称VPC）的网段。网络版本 network_version 取值为“v1”时，表示云手机服务器所属资源租户的VPC CIDR；取值为“v2”时，表示租户创建服务器时指定 VPC 的 VPC CIDR。
         :type cidr: str
         :param vpc_cidr: 云手机服务器所属虚拟私有云（简称VPC  网络版本 network_version 取值为“v1”时，表示云手机服务器所属资源租户的VPC CIDR；取值为“v2”时，表示租户创建服务器时指定 VPC 的 VPC CIDR
         :type vpc_cidr: str
-        :param subnet_id: 云手机服务器所属子   仅在网络版本 network_version 取值为“v2”时，该取值表示租户创建服务器时指定子网的 ID，网络版本取值为“v1”时，该字段表示云手机服务器所属资源租户的子网ID
+        :param subnet_id: 云手机服务器所属子网的ID。仅在网络版本 network_version 取值为“v2”时，该取值表示租户创建服务器时指定子网的 ID，网络版本取值为“v1”时，该字段表示云手机服务器所属资源租户的子网ID。
         :type subnet_id: str
-        :param subnet_cidr: 云手机服务器所属子   网络版本 network_version 取值为“v2”时，表示租户创建服务器时指定子网的 CIDR; 取值为“v1”时，表示云手机服务器所属资源租户的子网CIDR
+        :param subnet_cidr: 云手机服务器所属子网网段。网络版本 network_version 取值为“v2”时，表示租户创建服务器时指定子网的 CIDR; 取值为“v1”时，表示云手机服务器所属资源租户的子网CIDR。
         :type subnet_cidr: str
-        :param addresses: 云手机服务器的IP相关信息
+        :param addresses: 云手机服务器的IP相关信息。
         :type addresses: list[:class:`huaweicloudsdkcph.v1.Address`]
-        :param resource_project_id: 云手机服务器的项目ID
+        :param resource_project_id: 云手机服务器的项目ID。
         :type resource_project_id: str
         :param metadata: 
         :type metadata: :class:`huaweicloudsdkcph.v1.ServerMetadata`
-        :param network_version: 是否为自定义网络的云手机服务器标识。  \&quot;v1\&quot;，非自定义网络的云手机服务器。  v2\&quot;，自定义网络的云手机服务器。 支持按照网络版本字段进行筛选
+        :param network_version: 是否为自定义网络的云手机服务器标识。\&quot;v1\&quot;，非自定义网络的云手机服务器。  \&quot;v2\&quot;，自定义网络的云手机服务器。支持按照网络版本字段进行筛选。
         :type network_version: str
         :param enterprise_project_id: 云手机服务器所属企业项目ID。
         :type enterprise_project_id: str
-        :param create_time: 创建时间 时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ
+        :param create_time: 创建时间， 时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ。
         :type create_time: str
-        :param update_time: 更新时间 时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ
+        :param update_time: 更新时间， 时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ。
         :type update_time: str
         """
         
@@ -171,7 +171,7 @@ class Server:
     def server_name(self):
         """Gets the server_name of this Server.
 
-        云手机服务器名称 不超过65字符，只支持英文字母、数字、汉字、下划线和中划线
+        云手机服务器名称，不超过65字符，只支持英文字母、数字、汉字、下划线和中划线。
 
         :return: The server_name of this Server.
         :rtype: str
@@ -182,7 +182,7 @@ class Server:
     def server_name(self, server_name):
         """Sets the server_name of this Server.
 
-        云手机服务器名称 不超过65字符，只支持英文字母、数字、汉字、下划线和中划线
+        云手机服务器名称，不超过65字符，只支持英文字母、数字、汉字、下划线和中划线。
 
         :param server_name: The server_name of this Server.
         :type server_name: str
@@ -193,7 +193,7 @@ class Server:
     def availability_zone(self):
         """Gets the availability_zone of this Server.
 
-        云手机服务器所在的可用区
+        云手机服务器所在的可用区。
 
         :return: The availability_zone of this Server.
         :rtype: str
@@ -204,7 +204,7 @@ class Server:
     def availability_zone(self, availability_zone):
         """Sets the availability_zone of this Server.
 
-        云手机服务器所在的可用区
+        云手机服务器所在的可用区。
 
         :param availability_zone: The availability_zone of this Server.
         :type availability_zone: str
@@ -215,7 +215,7 @@ class Server:
     def server_id(self):
         """Gets the server_id of this Server.
 
-        云手机服务器的唯一标识，不超过32个字节
+        云手机服务器的唯一标识，不超过32个字节。
 
         :return: The server_id of this Server.
         :rtype: str
@@ -226,7 +226,7 @@ class Server:
     def server_id(self, server_id):
         """Sets the server_id of this Server.
 
-        云手机服务器的唯一标识，不超过32个字节
+        云手机服务器的唯一标识，不超过32个字节。
 
         :param server_id: The server_id of this Server.
         :type server_id: str
@@ -237,7 +237,7 @@ class Server:
     def server_model_name(self):
         """Gets the server_model_name of this Server.
 
-        云手机服务器规格名称，不超过64个字节
+        云手机服务器规格名称，不超过64个字节。
 
         :return: The server_model_name of this Server.
         :rtype: str
@@ -248,7 +248,7 @@ class Server:
     def server_model_name(self, server_model_name):
         """Sets the server_model_name of this Server.
 
-        云手机服务器规格名称，不超过64个字节
+        云手机服务器规格名称，不超过64个字节。
 
         :param server_model_name: The server_model_name of this Server.
         :type server_model_name: str
@@ -259,7 +259,7 @@ class Server:
     def phone_model_name(self):
         """Gets the phone_model_name of this Server.
 
-        云手机规格名称，不超过64个字节
+        云手机规格名称，不超过64个字节。
 
         :return: The phone_model_name of this Server.
         :rtype: str
@@ -270,7 +270,7 @@ class Server:
     def phone_model_name(self, phone_model_name):
         """Sets the phone_model_name of this Server.
 
-        云手机规格名称，不超过64个字节
+        云手机规格名称，不超过64个字节。
 
         :param phone_model_name: The phone_model_name of this Server.
         :type phone_model_name: str
@@ -281,7 +281,7 @@ class Server:
     def keypair_name(self):
         """Gets the keypair_name of this Server.
 
-        连接云手机所使用的密钥对的名称，不超过64个字节
+        连接云手机所使用的密钥对的名称，不超过64个字节。
 
         :return: The keypair_name of this Server.
         :rtype: str
@@ -292,7 +292,7 @@ class Server:
     def keypair_name(self, keypair_name):
         """Sets the keypair_name of this Server.
 
-        连接云手机所使用的密钥对的名称，不超过64个字节
+        连接云手机所使用的密钥对的名称，不超过64个字节。
 
         :param keypair_name: The keypair_name of this Server.
         :type keypair_name: str
@@ -303,7 +303,7 @@ class Server:
     def status(self):
         """Gets the status of this Server.
 
-        服务器状态 - 0、1、3、4：创建中 - 2：异常 - 5：正常 - 8：冻结 - 10：关机 - 11：关机中 - 12：关机失败 - 13：开机中
+        服务器状态。 - 0、1、3、4：创建中 - 2：异常 - 5：正常 - 8：冻结 - 10：关机 - 11：关机中 - 12：关机失败 - 13：开机中
 
         :return: The status of this Server.
         :rtype: int
@@ -314,7 +314,7 @@ class Server:
     def status(self, status):
         """Sets the status of this Server.
 
-        服务器状态 - 0、1、3、4：创建中 - 2：异常 - 5：正常 - 8：冻结 - 10：关机 - 11：关机中 - 12：关机失败 - 13：开机中
+        服务器状态。 - 0、1、3、4：创建中 - 2：异常 - 5：正常 - 8：冻结 - 10：关机 - 11：关机中 - 12：关机失败 - 13：开机中
 
         :param status: The status of this Server.
         :type status: int
@@ -325,7 +325,7 @@ class Server:
     def vpc_id(self):
         """Gets the vpc_id of this Server.
 
-        云手机服务器所属虚拟私有云（简称VPC  网络版本 network_version 取值为“v1”时，表示云手机服务器所属资源租户的VPC ID；取值为“v2”时，表示租户创建服务器时指定 VPC 的 VPC ID
+        云手机服务器所属虚拟私有云（简称VPC）的ID。 网络版本network_version取值为“v1”时，表示云手机服务器所属资源租户的VPC ID；取值为“v2”时，表示租户创建服务器时指定VPC的 VPC ID。
 
         :return: The vpc_id of this Server.
         :rtype: str
@@ -336,7 +336,7 @@ class Server:
     def vpc_id(self, vpc_id):
         """Sets the vpc_id of this Server.
 
-        云手机服务器所属虚拟私有云（简称VPC  网络版本 network_version 取值为“v1”时，表示云手机服务器所属资源租户的VPC ID；取值为“v2”时，表示租户创建服务器时指定 VPC 的 VPC ID
+        云手机服务器所属虚拟私有云（简称VPC）的ID。 网络版本network_version取值为“v1”时，表示云手机服务器所属资源租户的VPC ID；取值为“v2”时，表示租户创建服务器时指定VPC的 VPC ID。
 
         :param vpc_id: The vpc_id of this Server.
         :type vpc_id: str
@@ -347,7 +347,7 @@ class Server:
     def cidr(self):
         """Gets the cidr of this Server.
 
-        云手机服务器所属虚拟私有云（简称VPC  网络版本 network_version 取值为“v1”时，表示云手机服务器所属资源租户的VPC CIDR；取值为“v2”时，表示租户创建服务器时指定 VPC 的 VPC CIDR
+        云手机服务器所属虚拟私有云（简称VPC）的网段。网络版本 network_version 取值为“v1”时，表示云手机服务器所属资源租户的VPC CIDR；取值为“v2”时，表示租户创建服务器时指定 VPC 的 VPC CIDR。
 
         :return: The cidr of this Server.
         :rtype: str
@@ -358,7 +358,7 @@ class Server:
     def cidr(self, cidr):
         """Sets the cidr of this Server.
 
-        云手机服务器所属虚拟私有云（简称VPC  网络版本 network_version 取值为“v1”时，表示云手机服务器所属资源租户的VPC CIDR；取值为“v2”时，表示租户创建服务器时指定 VPC 的 VPC CIDR
+        云手机服务器所属虚拟私有云（简称VPC）的网段。网络版本 network_version 取值为“v1”时，表示云手机服务器所属资源租户的VPC CIDR；取值为“v2”时，表示租户创建服务器时指定 VPC 的 VPC CIDR。
 
         :param cidr: The cidr of this Server.
         :type cidr: str
@@ -391,7 +391,7 @@ class Server:
     def subnet_id(self):
         """Gets the subnet_id of this Server.
 
-        云手机服务器所属子   仅在网络版本 network_version 取值为“v2”时，该取值表示租户创建服务器时指定子网的 ID，网络版本取值为“v1”时，该字段表示云手机服务器所属资源租户的子网ID
+        云手机服务器所属子网的ID。仅在网络版本 network_version 取值为“v2”时，该取值表示租户创建服务器时指定子网的 ID，网络版本取值为“v1”时，该字段表示云手机服务器所属资源租户的子网ID。
 
         :return: The subnet_id of this Server.
         :rtype: str
@@ -402,7 +402,7 @@ class Server:
     def subnet_id(self, subnet_id):
         """Sets the subnet_id of this Server.
 
-        云手机服务器所属子   仅在网络版本 network_version 取值为“v2”时，该取值表示租户创建服务器时指定子网的 ID，网络版本取值为“v1”时，该字段表示云手机服务器所属资源租户的子网ID
+        云手机服务器所属子网的ID。仅在网络版本 network_version 取值为“v2”时，该取值表示租户创建服务器时指定子网的 ID，网络版本取值为“v1”时，该字段表示云手机服务器所属资源租户的子网ID。
 
         :param subnet_id: The subnet_id of this Server.
         :type subnet_id: str
@@ -413,7 +413,7 @@ class Server:
     def subnet_cidr(self):
         """Gets the subnet_cidr of this Server.
 
-        云手机服务器所属子   网络版本 network_version 取值为“v2”时，表示租户创建服务器时指定子网的 CIDR; 取值为“v1”时，表示云手机服务器所属资源租户的子网CIDR
+        云手机服务器所属子网网段。网络版本 network_version 取值为“v2”时，表示租户创建服务器时指定子网的 CIDR; 取值为“v1”时，表示云手机服务器所属资源租户的子网CIDR。
 
         :return: The subnet_cidr of this Server.
         :rtype: str
@@ -424,7 +424,7 @@ class Server:
     def subnet_cidr(self, subnet_cidr):
         """Sets the subnet_cidr of this Server.
 
-        云手机服务器所属子   网络版本 network_version 取值为“v2”时，表示租户创建服务器时指定子网的 CIDR; 取值为“v1”时，表示云手机服务器所属资源租户的子网CIDR
+        云手机服务器所属子网网段。网络版本 network_version 取值为“v2”时，表示租户创建服务器时指定子网的 CIDR; 取值为“v1”时，表示云手机服务器所属资源租户的子网CIDR。
 
         :param subnet_cidr: The subnet_cidr of this Server.
         :type subnet_cidr: str
@@ -435,7 +435,7 @@ class Server:
     def addresses(self):
         """Gets the addresses of this Server.
 
-        云手机服务器的IP相关信息
+        云手机服务器的IP相关信息。
 
         :return: The addresses of this Server.
         :rtype: list[:class:`huaweicloudsdkcph.v1.Address`]
@@ -446,7 +446,7 @@ class Server:
     def addresses(self, addresses):
         """Sets the addresses of this Server.
 
-        云手机服务器的IP相关信息
+        云手机服务器的IP相关信息。
 
         :param addresses: The addresses of this Server.
         :type addresses: list[:class:`huaweicloudsdkcph.v1.Address`]
@@ -457,7 +457,7 @@ class Server:
     def resource_project_id(self):
         """Gets the resource_project_id of this Server.
 
-        云手机服务器的项目ID
+        云手机服务器的项目ID。
 
         :return: The resource_project_id of this Server.
         :rtype: str
@@ -468,7 +468,7 @@ class Server:
     def resource_project_id(self, resource_project_id):
         """Sets the resource_project_id of this Server.
 
-        云手机服务器的项目ID
+        云手机服务器的项目ID。
 
         :param resource_project_id: The resource_project_id of this Server.
         :type resource_project_id: str
@@ -497,7 +497,7 @@ class Server:
     def network_version(self):
         """Gets the network_version of this Server.
 
-        是否为自定义网络的云手机服务器标识。  \"v1\"，非自定义网络的云手机服务器。  v2\"，自定义网络的云手机服务器。 支持按照网络版本字段进行筛选
+        是否为自定义网络的云手机服务器标识。\"v1\"，非自定义网络的云手机服务器。  \"v2\"，自定义网络的云手机服务器。支持按照网络版本字段进行筛选。
 
         :return: The network_version of this Server.
         :rtype: str
@@ -508,7 +508,7 @@ class Server:
     def network_version(self, network_version):
         """Sets the network_version of this Server.
 
-        是否为自定义网络的云手机服务器标识。  \"v1\"，非自定义网络的云手机服务器。  v2\"，自定义网络的云手机服务器。 支持按照网络版本字段进行筛选
+        是否为自定义网络的云手机服务器标识。\"v1\"，非自定义网络的云手机服务器。  \"v2\"，自定义网络的云手机服务器。支持按照网络版本字段进行筛选。
 
         :param network_version: The network_version of this Server.
         :type network_version: str
@@ -541,7 +541,7 @@ class Server:
     def create_time(self):
         """Gets the create_time of this Server.
 
-        创建时间 时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ
+        创建时间， 时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ。
 
         :return: The create_time of this Server.
         :rtype: str
@@ -552,7 +552,7 @@ class Server:
     def create_time(self, create_time):
         """Sets the create_time of this Server.
 
-        创建时间 时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ
+        创建时间， 时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ。
 
         :param create_time: The create_time of this Server.
         :type create_time: str
@@ -563,7 +563,7 @@ class Server:
     def update_time(self):
         """Gets the update_time of this Server.
 
-        更新时间 时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ
+        更新时间， 时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ。
 
         :return: The update_time of this Server.
         :rtype: str
@@ -574,7 +574,7 @@ class Server:
     def update_time(self, update_time):
         """Sets the update_time of this Server.
 
-        更新时间 时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ
+        更新时间， 时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ。
 
         :param update_time: The update_time of this Server.
         :type update_time: str

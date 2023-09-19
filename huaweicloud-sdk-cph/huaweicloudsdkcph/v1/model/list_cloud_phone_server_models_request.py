@@ -29,7 +29,7 @@ class ListCloudPhoneServerModelsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param product_type: 产品类型 - 0：云手机 - 1：云手游
+        :param product_type: 产品类型。 - 0：云手机 - 1：云手游
         :type product_type: int
         """
         
@@ -45,7 +45,7 @@ class ListCloudPhoneServerModelsRequest:
     def product_type(self):
         """Gets the product_type of this ListCloudPhoneServerModelsRequest.
 
-        产品类型 - 0：云手机 - 1：云手游
+        产品类型。 - 0：云手机 - 1：云手游
 
         :return: The product_type of this ListCloudPhoneServerModelsRequest.
         :rtype: int
@@ -56,7 +56,7 @@ class ListCloudPhoneServerModelsRequest:
     def product_type(self, product_type):
         """Sets the product_type of this ListCloudPhoneServerModelsRequest.
 
-        产品类型 - 0：云手机 - 1：云手游
+        产品类型。 - 0：云手机 - 1：云手游
 
         :param product_type: The product_type of this ListCloudPhoneServerModelsRequest.
         :type product_type: int

@@ -4302,6 +4302,284 @@ class LtsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def show_admin_config(self, request):
+        """获取日志汇聚开关
+
+        只能由管理员或者委托管理员调用    获取日志汇聚开关
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowAdminConfig
+        :type request: :class:`huaweicloudsdklts.v2.ShowAdminConfigRequest`
+        :rtype: :class:`huaweicloudsdklts.v2.ShowAdminConfigResponse`
+        """
+        return self._show_admin_config_with_http_info(request)
+
+    def _show_admin_config_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/lts/log-converge-config/switch',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowAdminConfigResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_log_converge_config(self, request):
+        """获取组织成员汇聚配置
+
+        只能由组织管理员或者委托管理员调用    获取组织成员汇聚配置
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowLogConvergeConfig
+        :type request: :class:`huaweicloudsdklts.v2.ShowLogConvergeConfigRequest`
+        :rtype: :class:`huaweicloudsdklts.v2.ShowLogConvergeConfigResponse`
+        """
+        return self._show_log_converge_config_with_http_info(request)
+
+    def _show_log_converge_config_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'member_account_id' in local_var_params:
+            path_params['member_account_id'] = local_var_params['member_account_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/lts/log-converge-config/{member_account_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowLogConvergeConfigResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_member_group_and_stream(self, request):
+        """获取组织成员日志组日志流
+
+        只能由管理员或者委托管理员调用，获取组织成员日志组日志流
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowMemberGroupAndStream
+        :type request: :class:`huaweicloudsdklts.v2.ShowMemberGroupAndStreamRequest`
+        :rtype: :class:`huaweicloudsdklts.v2.ShowMemberGroupAndStreamResponse`
+        """
+        return self._show_member_group_and_stream_with_http_info(request)
+
+    def _show_member_group_and_stream_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'member_account_id' in local_var_params:
+            path_params['member_account_id'] = local_var_params['member_account_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/lts/{member_account_id}/all-streams',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowMemberGroupAndStreamResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_log_converge_config(self, request):
+        """更新汇聚配置
+
+        只能由管理员或者委托管理员 ,更新汇聚配置
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateLogConvergeConfig
+        :type request: :class:`huaweicloudsdklts.v2.UpdateLogConvergeConfigRequest`
+        :rtype: :class:`huaweicloudsdklts.v2.UpdateLogConvergeConfigResponse`
+        """
+        return self._update_log_converge_config_with_http_info(request)
+
+    def _update_log_converge_config_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/lts/log-converge-config',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateLogConvergeConfigResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_switch(self, request):
+        """修改日志汇聚开关
+
+        只能由管理员或者委托管理员调用     修改日志汇聚开关
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateSwitch
+        :type request: :class:`huaweicloudsdklts.v2.UpdateSwitchRequest`
+        :rtype: :class:`huaweicloudsdklts.v2.UpdateSwitchResponse`
+        """
+        return self._update_switch_with_http_info(request)
+
+    def _update_switch_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'log_converge_switch' in local_var_params:
+            query_params.append(('log_converge_switch', local_var_params['log_converge_switch']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/lts/log-converge-config/switch',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateSwitchResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):

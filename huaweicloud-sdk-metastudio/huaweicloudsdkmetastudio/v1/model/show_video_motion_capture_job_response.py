@@ -24,7 +24,8 @@ class ShowVideoMotionCaptureJobResponse(SdkResponse):
         'job_id': 'str',
         'state': 'str',
         'start_time': 'str',
-        'end_time': 'str'
+        'end_time': 'str',
+        'x_request_id': 'str'
     }
 
     attribute_map = {
@@ -34,10 +35,11 @@ class ShowVideoMotionCaptureJobResponse(SdkResponse):
         'job_id': 'job_id',
         'state': 'state',
         'start_time': 'start_time',
-        'end_time': 'end_time'
+        'end_time': 'end_time',
+        'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, motion_capture_mode=None, input_info=None, output_info=None, job_id=None, state=None, start_time=None, end_time=None):
+    def __init__(self, motion_capture_mode=None, input_info=None, output_info=None, job_id=None, state=None, start_time=None, end_time=None, x_request_id=None):
         """ShowVideoMotionCaptureJobResponse
 
         The model defined in huaweicloud sdk
@@ -56,6 +58,8 @@ class ShowVideoMotionCaptureJobResponse(SdkResponse):
         :type start_time: str
         :param end_time: 任务结束时间，格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”。
         :type end_time: str
+        :param x_request_id: 
+        :type x_request_id: str
         """
         
         super(ShowVideoMotionCaptureJobResponse, self).__init__()
@@ -67,6 +71,7 @@ class ShowVideoMotionCaptureJobResponse(SdkResponse):
         self._state = None
         self._start_time = None
         self._end_time = None
+        self._x_request_id = None
         self.discriminator = None
 
         if motion_capture_mode is not None:
@@ -83,6 +88,8 @@ class ShowVideoMotionCaptureJobResponse(SdkResponse):
             self.start_time = start_time
         if end_time is not None:
             self.end_time = end_time
+        if x_request_id is not None:
+            self.x_request_id = x_request_id
 
     @property
     def motion_capture_mode(self):
@@ -229,6 +236,24 @@ class ShowVideoMotionCaptureJobResponse(SdkResponse):
         :type end_time: str
         """
         self._end_time = end_time
+
+    @property
+    def x_request_id(self):
+        """Gets the x_request_id of this ShowVideoMotionCaptureJobResponse.
+
+        :return: The x_request_id of this ShowVideoMotionCaptureJobResponse.
+        :rtype: str
+        """
+        return self._x_request_id
+
+    @x_request_id.setter
+    def x_request_id(self, x_request_id):
+        """Sets the x_request_id of this ShowVideoMotionCaptureJobResponse.
+
+        :param x_request_id: The x_request_id of this ShowVideoMotionCaptureJobResponse.
+        :type x_request_id: str
+        """
+        self._x_request_id = x_request_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

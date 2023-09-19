@@ -19,15 +19,17 @@ class ListStylesResponse(SdkResponse):
 
     openapi_types = {
         'count': 'int',
-        'styles': 'list[StyleInfo]'
+        'styles': 'list[StyleInfo]',
+        'x_request_id': 'str'
     }
 
     attribute_map = {
         'count': 'count',
-        'styles': 'styles'
+        'styles': 'styles',
+        'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, count=None, styles=None):
+    def __init__(self, count=None, styles=None, x_request_id=None):
         """ListStylesResponse
 
         The model defined in huaweicloud sdk
@@ -36,18 +38,23 @@ class ListStylesResponse(SdkResponse):
         :type count: int
         :param styles: 风格信息列表
         :type styles: list[:class:`huaweicloudsdkmetastudio.v1.StyleInfo`]
+        :param x_request_id: 
+        :type x_request_id: str
         """
         
         super(ListStylesResponse, self).__init__()
 
         self._count = None
         self._styles = None
+        self._x_request_id = None
         self.discriminator = None
 
         if count is not None:
             self.count = count
         if styles is not None:
             self.styles = styles
+        if x_request_id is not None:
+            self.x_request_id = x_request_id
 
     @property
     def count(self):
@@ -92,6 +99,24 @@ class ListStylesResponse(SdkResponse):
         :type styles: list[:class:`huaweicloudsdkmetastudio.v1.StyleInfo`]
         """
         self._styles = styles
+
+    @property
+    def x_request_id(self):
+        """Gets the x_request_id of this ListStylesResponse.
+
+        :return: The x_request_id of this ListStylesResponse.
+        :rtype: str
+        """
+        return self._x_request_id
+
+    @x_request_id.setter
+    def x_request_id(self, x_request_id):
+        """Sets the x_request_id of this ListStylesResponse.
+
+        :param x_request_id: The x_request_id of this ListStylesResponse.
+        :type x_request_id: str
+        """
+        self._x_request_id = x_request_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

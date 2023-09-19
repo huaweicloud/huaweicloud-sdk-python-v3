@@ -33,11 +33,11 @@ class VolumeSpec:
 
         The model defined in huaweicloud sdk
 
-        :param resource_type: 资源类型，当前只支持“obs”。
+        :param resource_type: 资源类型，当前只支持“obs”和“sfs”。
         :type resource_type: str
-        :param resource_sub_type: 对象存储类型，例如：并行文件系统、存储桶。
+        :param resource_sub_type: 对象存储类型，包括：并行文件系统、存储桶、SFS3.0容量型。
         :type resource_sub_type: str
-        :param resources: 并行文件系统或存储桶名称。
+        :param resources: 云存储名称。
         :type resources: list[str]
         """
         
@@ -56,7 +56,7 @@ class VolumeSpec:
     def resource_type(self):
         """Gets the resource_type of this VolumeSpec.
 
-        资源类型，当前只支持“obs”。
+        资源类型，当前只支持“obs”和“sfs”。
 
         :return: The resource_type of this VolumeSpec.
         :rtype: str
@@ -67,7 +67,7 @@ class VolumeSpec:
     def resource_type(self, resource_type):
         """Sets the resource_type of this VolumeSpec.
 
-        资源类型，当前只支持“obs”。
+        资源类型，当前只支持“obs”和“sfs”。
 
         :param resource_type: The resource_type of this VolumeSpec.
         :type resource_type: str
@@ -78,7 +78,7 @@ class VolumeSpec:
     def resource_sub_type(self):
         """Gets the resource_sub_type of this VolumeSpec.
 
-        对象存储类型，例如：并行文件系统、存储桶。
+        对象存储类型，包括：并行文件系统、存储桶、SFS3.0容量型。
 
         :return: The resource_sub_type of this VolumeSpec.
         :rtype: str
@@ -89,7 +89,7 @@ class VolumeSpec:
     def resource_sub_type(self, resource_sub_type):
         """Sets the resource_sub_type of this VolumeSpec.
 
-        对象存储类型，例如：并行文件系统、存储桶。
+        对象存储类型，包括：并行文件系统、存储桶、SFS3.0容量型。
 
         :param resource_sub_type: The resource_sub_type of this VolumeSpec.
         :type resource_sub_type: str
@@ -100,7 +100,7 @@ class VolumeSpec:
     def resources(self):
         """Gets the resources of this VolumeSpec.
 
-        并行文件系统或存储桶名称。
+        云存储名称。
 
         :return: The resources of this VolumeSpec.
         :rtype: list[str]
@@ -111,7 +111,7 @@ class VolumeSpec:
     def resources(self, resources):
         """Sets the resources of this VolumeSpec.
 
-        并行文件系统或存储桶名称。
+        云存储名称。
 
         :param resources: The resources of this VolumeSpec.
         :type resources: list[str]

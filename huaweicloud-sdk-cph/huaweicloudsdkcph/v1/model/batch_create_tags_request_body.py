@@ -31,7 +31,7 @@ class BatchCreateTagsRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param action: 操作标识： - create，创建
+        :param action: 操作标识。 - create：创建
         :type action: str
         :param tags: 标签列表。
         :type tags: list[:class:`huaweicloudsdkcph.v1.Tag`]
@@ -50,7 +50,7 @@ class BatchCreateTagsRequestBody:
     def action(self):
         """Gets the action of this BatchCreateTagsRequestBody.
 
-        操作标识： - create，创建
+        操作标识。 - create：创建
 
         :return: The action of this BatchCreateTagsRequestBody.
         :rtype: str
@@ -61,7 +61,7 @@ class BatchCreateTagsRequestBody:
     def action(self, action):
         """Sets the action of this BatchCreateTagsRequestBody.
 
-        操作标识： - create，创建
+        操作标识。 - create：创建
 
         :param action: The action of this BatchCreateTagsRequestBody.
         :type action: str

@@ -41,7 +41,7 @@ class ListShareFilesRequest:
         :type limit: int
         :param server_ids: 云手机服务器ID列表，多个服务器ID用逗号（,）分隔。
         :type server_ids: str
-        :param path: 待查询的目录名称 可以包含大小写字母、数字、“.”、“+”、“-”、“_”、“/”、\&quot;&#x3D;\&quot;；必须以“/”开头，并且不能只包含“/”；不能包含“../”、“//”等。 示例：/data/data
+        :param path: 待查询的目录名称， 可以包含大小写字母、数字、“.”、“+”、“-”、“_”、“/”、\&quot;&#x3D;\&quot;；必须以“/”开头，并且不能只包含“/”；不能包含“../”、“//”等。 示例：/data/data
         :type path: str
         """
         
@@ -130,7 +130,7 @@ class ListShareFilesRequest:
     def path(self):
         """Gets the path of this ListShareFilesRequest.
 
-        待查询的目录名称 可以包含大小写字母、数字、“.”、“+”、“-”、“_”、“/”、\"=\"；必须以“/”开头，并且不能只包含“/”；不能包含“../”、“//”等。 示例：/data/data
+        待查询的目录名称， 可以包含大小写字母、数字、“.”、“+”、“-”、“_”、“/”、\"=\"；必须以“/”开头，并且不能只包含“/”；不能包含“../”、“//”等。 示例：/data/data
 
         :return: The path of this ListShareFilesRequest.
         :rtype: str
@@ -141,7 +141,7 @@ class ListShareFilesRequest:
     def path(self, path):
         """Sets the path of this ListShareFilesRequest.
 
-        待查询的目录名称 可以包含大小写字母、数字、“.”、“+”、“-”、“_”、“/”、\"=\"；必须以“/”开头，并且不能只包含“/”；不能包含“../”、“//”等。 示例：/data/data
+        待查询的目录名称， 可以包含大小写字母、数字、“.”、“+”、“-”、“_”、“/”、\"=\"；必须以“/”开头，并且不能只包含“/”；不能包含“../”、“//”等。 示例：/data/data
 
         :param path: The path of this ListShareFilesRequest.
         :type path: str

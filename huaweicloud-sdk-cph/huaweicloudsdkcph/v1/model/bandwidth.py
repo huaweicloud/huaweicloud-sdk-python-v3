@@ -41,19 +41,19 @@ class Bandwidth:
 
         The model defined in huaweicloud sdk
 
-        :param band_width_name: 云手机服务器的带宽名称
+        :param band_width_name: 云手机服务器的带宽名称。
         :type band_width_name: str
-        :param band_width_id: 云手机服务器的带宽唯一标识
+        :param band_width_id: 云手机服务器的带宽唯一标识。
         :type band_width_id: str
-        :param band_width_size: 云手机服务器的带宽大小
+        :param band_width_size: 云手机服务器的带宽大小。
         :type band_width_size: int
-        :param band_width_charge_mode: 云手机服务器带宽的计费方式  取值范围：  - 0，bandwidth, 按带宽计费  - 1，traffic, 按流量计费
+        :param band_width_charge_mode: 云手机服务器带宽的计费方式。  - 0：bandwidth, 按带宽计费  - 1：traffic, 按流量计费
         :type band_width_charge_mode: int
-        :param band_width_share_type: 云手机服务器的带宽类型  - 0，per，独享带宽 - 1，whole，共享带宽
+        :param band_width_share_type: 云手机服务器的带宽类型。  - 0：per，独享带宽 - 1：whole，共享带宽
         :type band_width_share_type: int
-        :param create_time: 带宽创建时间  时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ
+        :param create_time: 带宽创建时间，  时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ。
         :type create_time: str
-        :param update_time: 带宽更新时间  时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ
+        :param update_time: 带宽更新时间，  时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ。
         :type update_time: str
         """
         
@@ -87,7 +87,7 @@ class Bandwidth:
     def band_width_name(self):
         """Gets the band_width_name of this Bandwidth.
 
-        云手机服务器的带宽名称
+        云手机服务器的带宽名称。
 
         :return: The band_width_name of this Bandwidth.
         :rtype: str
@@ -98,7 +98,7 @@ class Bandwidth:
     def band_width_name(self, band_width_name):
         """Sets the band_width_name of this Bandwidth.
 
-        云手机服务器的带宽名称
+        云手机服务器的带宽名称。
 
         :param band_width_name: The band_width_name of this Bandwidth.
         :type band_width_name: str
@@ -109,7 +109,7 @@ class Bandwidth:
     def band_width_id(self):
         """Gets the band_width_id of this Bandwidth.
 
-        云手机服务器的带宽唯一标识
+        云手机服务器的带宽唯一标识。
 
         :return: The band_width_id of this Bandwidth.
         :rtype: str
@@ -120,7 +120,7 @@ class Bandwidth:
     def band_width_id(self, band_width_id):
         """Sets the band_width_id of this Bandwidth.
 
-        云手机服务器的带宽唯一标识
+        云手机服务器的带宽唯一标识。
 
         :param band_width_id: The band_width_id of this Bandwidth.
         :type band_width_id: str
@@ -131,7 +131,7 @@ class Bandwidth:
     def band_width_size(self):
         """Gets the band_width_size of this Bandwidth.
 
-        云手机服务器的带宽大小
+        云手机服务器的带宽大小。
 
         :return: The band_width_size of this Bandwidth.
         :rtype: int
@@ -142,7 +142,7 @@ class Bandwidth:
     def band_width_size(self, band_width_size):
         """Sets the band_width_size of this Bandwidth.
 
-        云手机服务器的带宽大小
+        云手机服务器的带宽大小。
 
         :param band_width_size: The band_width_size of this Bandwidth.
         :type band_width_size: int
@@ -153,7 +153,7 @@ class Bandwidth:
     def band_width_charge_mode(self):
         """Gets the band_width_charge_mode of this Bandwidth.
 
-        云手机服务器带宽的计费方式  取值范围：  - 0，bandwidth, 按带宽计费  - 1，traffic, 按流量计费
+        云手机服务器带宽的计费方式。  - 0：bandwidth, 按带宽计费  - 1：traffic, 按流量计费
 
         :return: The band_width_charge_mode of this Bandwidth.
         :rtype: int
@@ -164,7 +164,7 @@ class Bandwidth:
     def band_width_charge_mode(self, band_width_charge_mode):
         """Sets the band_width_charge_mode of this Bandwidth.
 
-        云手机服务器带宽的计费方式  取值范围：  - 0，bandwidth, 按带宽计费  - 1，traffic, 按流量计费
+        云手机服务器带宽的计费方式。  - 0：bandwidth, 按带宽计费  - 1：traffic, 按流量计费
 
         :param band_width_charge_mode: The band_width_charge_mode of this Bandwidth.
         :type band_width_charge_mode: int
@@ -175,7 +175,7 @@ class Bandwidth:
     def band_width_share_type(self):
         """Gets the band_width_share_type of this Bandwidth.
 
-        云手机服务器的带宽类型  - 0，per，独享带宽 - 1，whole，共享带宽
+        云手机服务器的带宽类型。  - 0：per，独享带宽 - 1：whole，共享带宽
 
         :return: The band_width_share_type of this Bandwidth.
         :rtype: int
@@ -186,7 +186,7 @@ class Bandwidth:
     def band_width_share_type(self, band_width_share_type):
         """Sets the band_width_share_type of this Bandwidth.
 
-        云手机服务器的带宽类型  - 0，per，独享带宽 - 1，whole，共享带宽
+        云手机服务器的带宽类型。  - 0：per，独享带宽 - 1：whole，共享带宽
 
         :param band_width_share_type: The band_width_share_type of this Bandwidth.
         :type band_width_share_type: int
@@ -197,7 +197,7 @@ class Bandwidth:
     def create_time(self):
         """Gets the create_time of this Bandwidth.
 
-        带宽创建时间  时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ
+        带宽创建时间，  时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ。
 
         :return: The create_time of this Bandwidth.
         :rtype: str
@@ -208,7 +208,7 @@ class Bandwidth:
     def create_time(self, create_time):
         """Sets the create_time of this Bandwidth.
 
-        带宽创建时间  时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ
+        带宽创建时间，  时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ。
 
         :param create_time: The create_time of this Bandwidth.
         :type create_time: str
@@ -219,7 +219,7 @@ class Bandwidth:
     def update_time(self):
         """Gets the update_time of this Bandwidth.
 
-        带宽更新时间  时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ
+        带宽更新时间，  时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ。
 
         :return: The update_time of this Bandwidth.
         :rtype: str
@@ -230,7 +230,7 @@ class Bandwidth:
     def update_time(self, update_time):
         """Sets the update_time of this Bandwidth.
 
-        带宽更新时间  时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ
+        带宽更新时间，  时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ。
 
         :param update_time: The update_time of this Bandwidth.
         :type update_time: str

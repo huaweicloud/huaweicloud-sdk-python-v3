@@ -19,16 +19,18 @@ class VoiceModelAssetMeta:
     openapi_types = {
         'model_type': 'str',
         'sex': 'str',
-        'language': 'str'
+        'language': 'str',
+        'external_voice_meta': 'ExternalVoiceAssetMeta'
     }
 
     attribute_map = {
         'model_type': 'model_type',
         'sex': 'sex',
-        'language': 'language'
+        'language': 'language',
+        'external_voice_meta': 'external_voice_meta'
     }
 
-    def __init__(self, model_type=None, sex=None, language=None):
+    def __init__(self, model_type=None, sex=None, language=None, external_voice_meta=None):
         """VoiceModelAssetMeta
 
         The model defined in huaweicloud sdk
@@ -39,6 +41,8 @@ class VoiceModelAssetMeta:
         :type sex: str
         :param language: 音色语言。 * UNKNOW：未知 * CN：中文 * EN：英文  默认UNKNOW。
         :type language: str
+        :param external_voice_meta: 
+        :type external_voice_meta: :class:`huaweicloudsdkmetastudio.v1.ExternalVoiceAssetMeta`
         """
         
         
@@ -46,6 +50,7 @@ class VoiceModelAssetMeta:
         self._model_type = None
         self._sex = None
         self._language = None
+        self._external_voice_meta = None
         self.discriminator = None
 
         if model_type is not None:
@@ -54,6 +59,8 @@ class VoiceModelAssetMeta:
             self.sex = sex
         if language is not None:
             self.language = language
+        if external_voice_meta is not None:
+            self.external_voice_meta = external_voice_meta
 
     @property
     def model_type(self):
@@ -120,6 +127,24 @@ class VoiceModelAssetMeta:
         :type language: str
         """
         self._language = language
+
+    @property
+    def external_voice_meta(self):
+        """Gets the external_voice_meta of this VoiceModelAssetMeta.
+
+        :return: The external_voice_meta of this VoiceModelAssetMeta.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ExternalVoiceAssetMeta`
+        """
+        return self._external_voice_meta
+
+    @external_voice_meta.setter
+    def external_voice_meta(self, external_voice_meta):
+        """Sets the external_voice_meta of this VoiceModelAssetMeta.
+
+        :param external_voice_meta: The external_voice_meta of this VoiceModelAssetMeta.
+        :type external_voice_meta: :class:`huaweicloudsdkmetastudio.v1.ExternalVoiceAssetMeta`
+        """
+        self._external_voice_meta = external_voice_meta
 
     def to_dict(self):
         """Returns the model properties as a dict"""
